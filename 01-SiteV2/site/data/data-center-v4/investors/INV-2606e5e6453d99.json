@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-08-12",
+    "latest_disclosed_at": "2026-10-15",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "series_e",
@@ -88,12 +88,57 @@
         "name": "Anthropic PBC"
       },
       {
+        "entity_id": "EN-f7d9f5a90479d632",
+        "canonical_entity_id": "",
+        "name": "Ramp"
+      },
+      {
         "entity_id": "EN-f970fd34532919fe",
         "canonical_entity_id": "",
         "name": "Thrive Holdings"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-54f311838ed51deb",
+        "funding_insight_id": "FI-49e5e02e3f1e2d52",
+        "event_ids": [
+          "EV-cc272c08ca12639d"
+        ],
+        "company_entity_id": "EN-f7d9f5a90479d632",
+        "company_canonical_entity_id": "",
+        "company_name": "Ramp",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "$1.85 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1850000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "18.5 亿美元"
+        },
+        "announced_at": "2026-10-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f581afce52cf5bef",
+            "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+            "source_title": "Ramp估值达600亿美元，深入布局AI",
+            "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+            "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+            "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+          }
+        ]
+      },
       {
         "activity_id": "IA-efe1a7906940bdab",
         "funding_insight_id": "FI-208f5f069010d44d",
@@ -249,6 +294,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-f581afce52cf5bef",
+        "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+        "source_title": "Ramp估值达600亿美元，深入布局AI",
+        "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+        "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+        "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+      },
+      {
         "source_id": "FISRC-0afb458e7b0878f0",
         "source_url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
         "source_title": "OpenAI 支持的 Thrive Holdings 融资 20 亿美元，将 AI 引入企业",
@@ -333,16 +386,16 @@
           "source_id": "d1_thrive_2026"
         },
         {
+          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f581afce52cf5bef"
+        },
+        {
           "description": "融资来源记录：Thrive Holdings · 轮次未披露 · 2026-08-12 · 本轮参投 · $2B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0afb458e7b0878f0"
         },
         {
           "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮联合领投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b5e22ae086a6b353"
-        },
-        {
-          "description": "融资来源记录：Anthropic PBC · E轮 · 2025-03-03 · 本轮参投 · $3.5B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-52917ea3c077fbf0"
         }
       ],
       "contacts": [
@@ -380,6 +433,14 @@
           "quote_hash": "1df00a60fbc01bba540532e00066763589daab5a447822ad30edc061bf3401a6"
         },
         {
+          "source_id": "FISRC-f581afce52cf5bef",
+          "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+          "source_title": "Ramp估值达600亿美元，深入布局AI",
+          "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+          "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+          "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+        },
+        {
           "source_id": "FISRC-0afb458e7b0878f0",
           "source_url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
           "source_title": "OpenAI 支持的 Thrive Holdings 融资 20 亿美元，将 AI 引入企业",
@@ -394,14 +455,6 @@
           "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
           "quote": "The round was co-led by Capital Group, Coatue, D1 Capital Partners, GIC, ICONIQ, and XN.",
           "quote_hash": "1b22b552c9476b33e7d3fec3fb8ee93a12aa097bc9379c4f61a9e2e05f08b075"
-        },
-        {
-          "source_id": "FISRC-52917ea3c077fbf0",
-          "source_url": "https://techstartups.com/2025/03/04/amazon-backed-ai-startup-anthropic-hits-61-5b-valuation-after-3-5b-funding-round/",
-          "source_title": "Amazon-backed AI startup Anthropic hits $61.5B valuation after $3.5B funding round - Tech Startups",
-          "source_content_hash": "574df0fdc225fe9e",
-          "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others.",
-          "quote_hash": "b6a7c1a96202c070c7844ca8f575954e5708e3527595fbd4d6510df17ee37161"
         }
       ],
       "identity_status": "verified",

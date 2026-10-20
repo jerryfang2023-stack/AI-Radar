@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,31 +61,78 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-15",
-    "latest_disclosed_at": "2026-06-15",
+    "latest_disclosed_at": "2026-10-19",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "series_a"
+      "series_a",
+      "series_e"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-d74c69db63e4763f",
         "canonical_entity_id": "EN-d74c69db63e4763f",
         "name": "Arcade AI Inc."
+      },
+      {
+        "entity_id": "EN-2301cf6444526934",
+        "canonical_entity_id": "",
+        "name": "Tenstorrent"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-dde8f05dc713429a",
+        "funding_insight_id": "FI-894806f6afae1cc3",
+        "event_ids": [
+          "EV-51f0958b144e699a",
+          "EV-781ee2c31f86be37"
+        ],
+        "company_entity_id": "EN-2301cf6444526934",
+        "company_canonical_entity_id": "",
+        "company_name": "Tenstorrent",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "15亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿美元"
+        },
+        "announced_at": "2026-10-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c79323219068494a",
+            "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
+            "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
+            "source_content_hash": "0f9b3358bba4cf36",
+            "quote": "with participation from new and existing investors including Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price*, Tether Investments, Troluce Capital, Virtu Financial, and XTX Markets.",
+            "quote_hash": "4026adea3fbb1fb46bb8ef63b7dfde23b8fb80d2ea0244ca103bbe6a6a7b54b6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2359de130572b655",
         "funding_insight_id": "FI-07521e792cb3a6b3",
@@ -161,6 +208,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c79323219068494a",
+        "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
+        "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
+        "source_content_hash": "0f9b3358bba4cf36",
+        "quote": "with participation from new and existing investors including Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price*, Tether Investments, Troluce Capital, Virtu Financial, and XTX Markets.",
+        "quote_hash": "4026adea3fbb1fb46bb8ef63b7dfde23b8fb80d2ea0244ca103bbe6a6a7b54b6"
+      },
+      {
         "source_id": "FISRC-0e863445463ffc16",
         "source_url": "https://siliconangle.com/2026/06/15/ai-agent-authorization-startup-arcade-nabs-60m-investment/",
         "source_title": "AI 智能体授权初创公司 Arcade 获 6000 万美元投资",
@@ -205,6 +260,10 @@
       "experience_summary": "",
       "track_record": [
         {
+          "description": "融资来源记录：Tenstorrent · E轮 · 2026-10-19 · 本轮参投 · 15亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c79323219068494a"
+        },
+        {
           "description": "融资来源记录：Arcade AI Inc. · A轮 · 2026-06-15 · 本轮参投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0e863445463ffc16"
         },
@@ -229,6 +288,14 @@
           "source_content_hash": "e97e1bdb655c40be94bedb22b929be3eed7fca7ef4e3d9076e3591899ef15e2f",
           "quote": "Arcade.dev raised $60M in Series A funding, led by SYN Ventures with strategic investment from Morgan Stanley and Wipro",
           "quote_hash": "f9aacf92697af13bcc33c3c6238f930a1316c09e03697f903cc1ce446700c24b"
+        },
+        {
+          "source_id": "FISRC-c79323219068494a",
+          "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
+          "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
+          "source_content_hash": "0f9b3358bba4cf36",
+          "quote": "with participation from new and existing investors including Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price*, Tether Investments, Troluce Capital, Virtu Financial, and XTX Markets.",
+          "quote_hash": "4026adea3fbb1fb46bb8ef63b7dfde23b8fb80d2ea0244ca103bbe6a6a7b54b6"
         },
         {
           "source_id": "FISRC-0e863445463ffc16",

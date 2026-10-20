@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,21 +63,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 29,
+    "current_round_count": 30,
     "historical_or_ambiguous_count": 8,
-    "portfolio_company_count": 24,
+    "portfolio_company_count": 25,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-10-14",
+    "latest_disclosed_at": "2026-10-15",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 8,
       "lead": 12,
-      "participant": 15
+      "participant": 16
     },
     "round_codes": [
       "multi_round",
@@ -179,6 +179,11 @@
         "name": "Profound"
       },
       {
+        "entity_id": "EN-f7d9f5a90479d632",
+        "canonical_entity_id": "",
+        "name": "Ramp"
+      },
+      {
         "entity_id": "EN-0fdf674dcd7e8566",
         "canonical_entity_id": "",
         "name": "Reactor"
@@ -215,6 +220,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-cf453ac8d2d49ad3",
+        "funding_insight_id": "FI-49e5e02e3f1e2d52",
+        "event_ids": [
+          "EV-cc272c08ca12639d"
+        ],
+        "company_entity_id": "EN-f7d9f5a90479d632",
+        "company_canonical_entity_id": "",
+        "company_name": "Ramp",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "$1.85 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1850000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "18.5 亿美元"
+        },
+        "announced_at": "2026-10-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f581afce52cf5bef",
+            "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+            "source_title": "Ramp估值达600亿美元，深入布局AI",
+            "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+            "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+            "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+          }
+        ]
+      },
       {
         "activity_id": "IA-68f9e7634013cac0",
         "funding_insight_id": "FI-b760a22310e48317",
@@ -1650,6 +1695,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-f581afce52cf5bef",
+        "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+        "source_title": "Ramp估值达600亿美元，深入布局AI",
+        "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+        "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+        "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+      },
+      {
         "source_id": "FISRC-bb48149fa1b574d3",
         "source_url": "https://www.calcalistech.com/ctechnews/article/b1zgob6jfe",
         "source_title": "Zenzap raises $33 million Series A to bring AI agents into everyday workplace chats",
@@ -1988,16 +2041,16 @@
           "source_id": "lightspeed_us"
         },
         {
+          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f581afce52cf5bef"
+        },
+        {
           "description": "融资来源记录：Zenzap · 多轮融资 · 2026-10-14 · 本轮联合领投 · $44 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-bb48149fa1b574d3"
         },
         {
           "description": "融资来源记录：Arena · B轮 · 2026-10-08 · 本轮领投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-99134731fc9bfd4f"
-        },
-        {
-          "description": "融资来源记录：Avarra · A轮 · 2026-10-06 · 本轮参投 · $17 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-93b0fab07c02a054"
         }
       ],
       "contacts": [
@@ -2048,6 +2101,14 @@
           "quote_hash": "d2bbae37840bb25a103173bf141ecae89a192e7fedcd89323366cf9032983442"
         },
         {
+          "source_id": "FISRC-f581afce52cf5bef",
+          "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+          "source_title": "Ramp估值达600亿美元，深入布局AI",
+          "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+          "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+          "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+        },
+        {
           "source_id": "FISRC-bb48149fa1b574d3",
           "source_url": "https://www.calcalistech.com/ctechnews/article/b1zgob6jfe",
           "source_title": "Zenzap raises $33 million Series A to bring AI agents into everyday workplace chats",
@@ -2062,14 +2123,6 @@
           "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
           "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
           "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
-        },
-        {
-          "source_id": "FISRC-93b0fab07c02a054",
-          "source_url": "https://www.prnewswire.com/news-releases/avarra-raises-17-million-on-a-contrarian-bet-ai-that-rapidly-upskills-gtm-teams-rather-than-simply-automating-routine-work-302899838.html",
-          "source_title": "Avarra 融资 1700 万美元，押注逆向策略：用 AI 快速提升 GTM 团队技能，而非仅自动化常规工作",
-          "source_content_hash": "418bc4a92b5032ef693633ec382d6afb613da450d956de4564e7d5539a5226ca",
-          "quote": "The round is led by Duration Ventures, with participation from Lightspeed Venture Partners, Draper Associates, the GTMfund, Alumni Ventures, and strategic investment from Zoom.",
-          "quote_hash": "d511ddc9dcf424cba53315b2eb98d2f0a40b8b34a7e5361e15b0336577d96d14"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2080,7 +2133,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[28].role": {
+        "activities[29].role": {
           "text": "Series B 参投（2025年4月）",
           "source_hash": "4170bf75c97ec9f7cd65f42d8ca30a3c3546dd4ade04c117870543b20203c333",
           "provider": "deepseek",
@@ -2088,7 +2141,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[32].role": {
+        "activities[33].role": {
           "text": "Series D 参投",
           "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
           "provider": "deepseek",

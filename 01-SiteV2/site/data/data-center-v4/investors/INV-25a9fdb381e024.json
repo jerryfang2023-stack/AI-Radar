@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 21,
+    "current_round_count": 23,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 20,
+    "portfolio_company_count": 22,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-10-09",
+    "latest_disclosed_at": "2026-10-19",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 4,
       "lead": 12,
-      "participant": 7
+      "participant": 9
     },
     "round_codes": [
       "other",
@@ -84,7 +84,8 @@
       "series_b",
       "series_b_extension",
       "series_c",
-      "series_d"
+      "series_d",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -148,6 +149,11 @@
         "name": "Profound"
       },
       {
+        "entity_id": "EN-f7d9f5a90479d632",
+        "canonical_entity_id": "",
+        "name": "Ramp"
+      },
+      {
         "entity_id": "EN-53b69ef92c836777",
         "canonical_entity_id": "",
         "name": "Replit"
@@ -173,6 +179,11 @@
         "name": "Superpose"
       },
       {
+        "entity_id": "EN-35f90e87170a43fa",
+        "canonical_entity_id": "",
+        "name": "Tolan"
+      },
+      {
         "entity_id": "EN-5f43904e99289cdd",
         "canonical_entity_id": "",
         "name": "Torch Systems"
@@ -189,6 +200,86 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-34f03d9fe99df203",
+        "funding_insight_id": "FI-482ac64d02f31d45",
+        "event_ids": [
+          "EV-59841d8e9da58cd4"
+        ],
+        "company_entity_id": "EN-35f90e87170a43fa",
+        "company_canonical_entity_id": "",
+        "company_name": "Tolan",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "最新一轮",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-10-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7ab42e04cf3b71a3",
+            "source_url": "https://techcrunch.com/2026/10/19/tolan-snags-30m-for-its-ai-companion-that-helps-users-navigate-life/",
+            "source_title": "Tolan 获 3000 万美元融资，用于其帮助用户应对生活的 AI 伴侣",
+            "source_content_hash": "42420c588d2d21785e373ae44c4331815f10a5240a04a5ed0e21bb89da8522d3",
+            "quote": "The startup’s investors in the latest round include Union Square Ventures, Khosla Ventures, and Homebrew",
+            "quote_hash": "a22ee115b953819aae95bd7256069f8f43d48c5729cb906fd96f23e37c07b88e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f95dc5413a819c0e",
+        "funding_insight_id": "FI-49e5e02e3f1e2d52",
+        "event_ids": [
+          "EV-cc272c08ca12639d"
+        ],
+        "company_entity_id": "EN-f7d9f5a90479d632",
+        "company_canonical_entity_id": "",
+        "company_name": "Ramp",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "$1.85 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1850000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "18.5 亿美元"
+        },
+        "announced_at": "2026-10-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f581afce52cf5bef",
+            "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+            "source_title": "Ramp估值达600亿美元，深入布局AI",
+            "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+            "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+            "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+          }
+        ]
+      },
       {
         "activity_id": "IA-bc0f556aae2adf95",
         "funding_insight_id": "FI-208b0a4f6d9ccb22",
@@ -1184,6 +1275,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-7ab42e04cf3b71a3",
+        "source_url": "https://techcrunch.com/2026/10/19/tolan-snags-30m-for-its-ai-companion-that-helps-users-navigate-life/",
+        "source_title": "Tolan 获 3000 万美元融资，用于其帮助用户应对生活的 AI 伴侣",
+        "source_content_hash": "42420c588d2d21785e373ae44c4331815f10a5240a04a5ed0e21bb89da8522d3",
+        "quote": "The startup’s investors in the latest round include Union Square Ventures, Khosla Ventures, and Homebrew",
+        "quote_hash": "a22ee115b953819aae95bd7256069f8f43d48c5729cb906fd96f23e37c07b88e"
+      },
+      {
+        "source_id": "FISRC-f581afce52cf5bef",
+        "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+        "source_title": "Ramp估值达600亿美元，深入布局AI",
+        "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+        "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+        "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+      },
+      {
         "source_id": "FISRC-5c428919070bfce8",
         "source_url": "https://www.globenewswire.com/news-release/2026/10/09/3378310/0/en/sabi-raises-50-million-seed-round-led-by-khosla-ventures-to-put-a-brain-ai-interface-inside-a-baseball-cap.html",
         "source_title": "Sabi 获 Khosla Ventures 领投的 5000 万美元种子轮融资，将脑机 AI 接口植入棒球帽",
@@ -1455,16 +1562,16 @@
           "source_id": "vinod_profile"
         },
         {
+          "description": "融资来源记录：Tolan · 轮次未披露 · 2026-10-19 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7ab42e04cf3b71a3"
+        },
+        {
+          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f581afce52cf5bef"
+        },
+        {
           "description": "融资来源记录：Sabi · 种子轮 · 2026-10-09 · 本轮领投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5c428919070bfce8"
-        },
-        {
-          "description": "融资来源记录：Arena · B轮 · 2026-10-08 · 本轮领投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-99134731fc9bfd4f"
-        },
-        {
-          "description": "融资来源记录：Torch Systems · 其他融资 · 2026-10-06 · 本轮参投 · $11.5 Million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6f2893ccf0aa3194"
         }
       ],
       "contacts": [
@@ -1530,28 +1637,28 @@
           "quote_hash": "381c5ad48bf7857bc3353c25d0ec1d2afd15ba56982fe80b56fae43affb697f6"
         },
         {
+          "source_id": "FISRC-7ab42e04cf3b71a3",
+          "source_url": "https://techcrunch.com/2026/10/19/tolan-snags-30m-for-its-ai-companion-that-helps-users-navigate-life/",
+          "source_title": "Tolan 获 3000 万美元融资，用于其帮助用户应对生活的 AI 伴侣",
+          "source_content_hash": "42420c588d2d21785e373ae44c4331815f10a5240a04a5ed0e21bb89da8522d3",
+          "quote": "The startup’s investors in the latest round include Union Square Ventures, Khosla Ventures, and Homebrew",
+          "quote_hash": "a22ee115b953819aae95bd7256069f8f43d48c5729cb906fd96f23e37c07b88e"
+        },
+        {
+          "source_id": "FISRC-f581afce52cf5bef",
+          "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+          "source_title": "Ramp估值达600亿美元，深入布局AI",
+          "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+          "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+          "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+        },
+        {
           "source_id": "FISRC-5c428919070bfce8",
           "source_url": "https://www.globenewswire.com/news-release/2026/10/09/3378310/0/en/sabi-raises-50-million-seed-round-led-by-khosla-ventures-to-put-a-brain-ai-interface-inside-a-baseball-cap.html",
           "source_title": "Sabi 获 Khosla Ventures 领投的 5000 万美元种子轮融资，将脑机 AI 接口植入棒球帽",
           "source_content_hash": "335b0994edb14a3468e20cde0ee89afc039196155b66c84f2d7d089868b5916f",
           "quote": "Sabi today announced it has raised a $50 million seed round, led by Khosla Ventures",
           "quote_hash": "99655bd95ccb325b680391af2727154dd570c8be00a96e5c1c60407eaaf4ca93"
-        },
-        {
-          "source_id": "FISRC-99134731fc9bfd4f",
-          "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
-          "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
-          "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
-          "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
-          "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
-        },
-        {
-          "source_id": "FISRC-6f2893ccf0aa3194",
-          "source_url": "https://www.trysignalbase.com/news/funding/torch-systems-raises-11-5m-for-outdoor",
-          "source_title": "Torch Systems 为户外业务融资 1150 万美元",
-          "source_content_hash": "e10a903dabd410e20850f12b33dfccc7ba8856df73860d4905ef5eb50db38e41",
-          "quote": "announced the capital infusion from investors including Khosla Ventures, Abstract, Construct Capital, and Starship Ventures.",
-          "quote_hash": "164648e587d11a038dc829862b5afb6ac34d5075cb416a9737cb2efb07ea3842"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1562,7 +1669,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[21].role": {
+        "activities[23].role": {
           "text": "Series C 领投",
           "source_hash": "c55ed79792c5d8940ad622d8d48ba34699b43b78b6c1f267f19f91e6570bbcca",
           "provider": "deepseek",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -71,22 +71,69 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03",
-    "latest_disclosed_at": "2026-09-15",
+    "latest_disclosed_at": "2026-10-13",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
     "round_codes": [
-      "series_a"
+      "series_a",
+      "series_b"
     ],
     "portfolio_companies": [
       {
         "entity_id": "FICO-0ab04bcfc3de286b",
         "canonical_entity_id": "",
         "name": "Euclyd"
+      },
+      {
+        "entity_id": "EN-3eee4f30151db45a",
+        "canonical_entity_id": "EN-3eee4f30151db45a",
+        "name": "Nous Research"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-6538145059585ebd",
+        "funding_insight_id": "FI-f7c9ecb8383857f2",
+        "event_ids": [
+          "EV-d89d39700e57f476"
+        ],
+        "company_entity_id": "EN-3eee4f30151db45a",
+        "company_canonical_entity_id": "EN-3eee4f30151db45a",
+        "company_name": "Nous Research",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "9000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 90000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9000 万美元"
+        },
+        "announced_at": "2026-10-13",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c0e764cbefe9c1e7",
+            "source_url": "https://www.163.com/dy/article/L95FTJ3L05118UGF.html",
+            "source_title": "Nous Research确认完成15亿估值融资，推出企业级AI智能体",
+            "source_content_hash": "5bce55f4335c9e878a7140a3eefc85fd8a46640458fce92d7fbd91811c2dedec",
+            "quote": "本轮融资由Robot Ventures领投，其他参与方包括英伟达、Union Square Ventures、Menlo Ventures、三星，以及唐纳德·特朗普之子担任合伙人的1789 Capital。",
+            "quote_hash": "cfb5cb15e98862c041ccf451333927feb71aa81f07568b16e955d0a503d1b300"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d476ea2feb686d3a",
         "funding_insight_id": "FI-1d043b12be806460",
@@ -163,6 +210,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c0e764cbefe9c1e7",
+        "source_url": "https://www.163.com/dy/article/L95FTJ3L05118UGF.html",
+        "source_title": "Nous Research确认完成15亿估值融资，推出企业级AI智能体",
+        "source_content_hash": "5bce55f4335c9e878a7140a3eefc85fd8a46640458fce92d7fbd91811c2dedec",
+        "quote": "本轮融资由Robot Ventures领投，其他参与方包括英伟达、Union Square Ventures、Menlo Ventures、三星，以及唐纳德·特朗普之子担任合伙人的1789 Capital。",
+        "quote_hash": "cfb5cb15e98862c041ccf451333927feb71aa81f07568b16e955d0a503d1b300"
+      },
+      {
         "source_id": "FISRC-6cbfc1ea08a48a66",
         "source_url": "https://www.cls.cn/detail/2484090",
         "source_title": "三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元融资",
@@ -214,6 +269,10 @@
           "source_id": "samsung_svic_news_201911"
         },
         {
+          "description": "融资来源记录：Nous Research · B轮 · 2026-10-13 · 本轮参投 · 9000万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c0e764cbefe9c1e7"
+        },
+        {
           "description": "融资来源记录：Euclyd · A轮 · 2026-09-15 · 本轮联合领投 · 2亿欧元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6cbfc1ea08a48a66"
         },
@@ -247,6 +306,14 @@
           "source_content_hash": "e4b976df1f40d9471862fd63fc34ff799b512f3ba555177bd078cc66b4fe9011",
           "quote": "Samsung Electronics披露向关联公司Samsung Venture Investment Corporation设立的新技术投资基金追加投资；SVIC 32基金目标规模为2000亿韩元，Samsung Electronics承诺出资1980亿韩元，占99%。该数字属于2016年特定基金，非集团整体或当前规模。",
           "quote_hash": "1aace3f955ea398cc78b04399d4bfd6557ff0443ffbfc995c2ea32dbf17784f2"
+        },
+        {
+          "source_id": "FISRC-c0e764cbefe9c1e7",
+          "source_url": "https://www.163.com/dy/article/L95FTJ3L05118UGF.html",
+          "source_title": "Nous Research确认完成15亿估值融资，推出企业级AI智能体",
+          "source_content_hash": "5bce55f4335c9e878a7140a3eefc85fd8a46640458fce92d7fbd91811c2dedec",
+          "quote": "本轮融资由Robot Ventures领投，其他参与方包括英伟达、Union Square Ventures、Menlo Ventures、三星，以及唐纳德·特朗普之子担任合伙人的1789 Capital。",
+          "quote_hash": "cfb5cb15e98862c041ccf451333927feb71aa81f07568b16e955d0a503d1b300"
         },
         {
           "source_id": "FISRC-6cbfc1ea08a48a66",

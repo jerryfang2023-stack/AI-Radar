@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-06",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-10-14",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "seed"
@@ -82,9 +82,54 @@
         "entity_id": "EN-cfc7b6b058a154a5",
         "canonical_entity_id": "",
         "name": "Comparables.ai"
+      },
+      {
+        "entity_id": "EN-3afb40bf43553530",
+        "canonical_entity_id": "",
+        "name": "FLÆ Robotics"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b39088af09a35cec",
+        "funding_insight_id": "FI-aa6d7049d289c400",
+        "event_ids": [
+          "EV-6ef251e4d28b517c"
+        ],
+        "company_entity_id": "EN-3afb40bf43553530",
+        "company_canonical_entity_id": "",
+        "company_name": "FLÆ Robotics",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "over €1 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1000000,
+          "min_value": 1000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 100 万欧元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0993ac262966fde7",
+            "source_url": "https://www.eu-startups.com/2026/10/flae-robotics-raises-over-e1-million-in-seed-funding-to-develop-its-ai-hospitality-agent/",
+            "source_title": "FLÆ Robotics 为其 AI 酒店服务智能体开发完成超 €1 million 种子轮融资",
+            "source_content_hash": "176130151500d5a4d435b78a00a013d37f4f695c464dcae2e00cbc35d1e7233e",
+            "quote": "Investment came from Purple Ventures and Garage Angels.",
+            "quote_hash": "b14cc2d5f18666875b5e6702dedb1d077e5626ff353ef0cb2d64a015386f6d51"
+          }
+        ]
+      },
       {
         "activity_id": "IA-70577346070e70f6",
         "funding_insight_id": "FI-d0a7be509f4dee86",
@@ -128,6 +173,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-0993ac262966fde7",
+        "source_url": "https://www.eu-startups.com/2026/10/flae-robotics-raises-over-e1-million-in-seed-funding-to-develop-its-ai-hospitality-agent/",
+        "source_title": "FLÆ Robotics 为其 AI 酒店服务智能体开发完成超 €1 million 种子轮融资",
+        "source_content_hash": "176130151500d5a4d435b78a00a013d37f4f695c464dcae2e00cbc35d1e7233e",
+        "quote": "Investment came from Purple Ventures and Garage Angels.",
+        "quote_hash": "b14cc2d5f18666875b5e6702dedb1d077e5626ff353ef0cb2d64a015386f6d51"
+      },
+      {
         "source_id": "FISRC-4918a8b4fc250bf6",
         "source_url": "https://tech.eu/2026/10/06/comparablesai-secures-6m-seed-to-scale-its-ai-platform-for-dealmakers/",
         "source_title": "Comparables.ai 获 600 万美元种子轮融资，以扩展其面向交易撮合者的 AI 平台",
@@ -141,10 +194,14 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Purple Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Purple Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：FLÆ Robotics · 种子轮 · 2026-10-14 · 本轮参投 · over €1 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0993ac262966fde7"
+        },
         {
           "description": "融资来源记录：Comparables.ai · 种子轮 · 2026-10-06 · 本轮参投 · $6 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4918a8b4fc250bf6"
@@ -152,6 +209,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-0993ac262966fde7",
+          "source_url": "https://www.eu-startups.com/2026/10/flae-robotics-raises-over-e1-million-in-seed-funding-to-develop-its-ai-hospitality-agent/",
+          "source_title": "FLÆ Robotics 为其 AI 酒店服务智能体开发完成超 €1 million 种子轮融资",
+          "source_content_hash": "176130151500d5a4d435b78a00a013d37f4f695c464dcae2e00cbc35d1e7233e",
+          "quote": "Investment came from Purple Ventures and Garage Angels.",
+          "quote_hash": "b14cc2d5f18666875b5e6702dedb1d077e5626ff353ef0cb2d64a015386f6d51"
+        },
         {
           "source_id": "FISRC-4918a8b4fc250bf6",
           "source_url": "https://tech.eu/2026/10/06/comparablesai-secures-6m-seed-to-scale-its-ai-platform-for-dealmakers/",

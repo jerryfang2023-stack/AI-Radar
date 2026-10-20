@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-03-11",
     "latest_disclosed_at": "2026-06-04",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "lead": 1,
       "participant": 1
     },
@@ -236,6 +236,39 @@
             "quote_hash": "b6812af23e6e357c139271884956d9b68c050e5a2a4bfdad69c1aee912114291"
           }
         ]
+      },
+      {
+        "activity_id": "IA-9d902c24d8c848ef",
+        "funding_insight_id": "FI-894806f6afae1cc3",
+        "event_ids": [
+          "EV-51f0958b144e699a",
+          "EV-781ee2c31f86be37"
+        ],
+        "company_entity_id": "EN-2301cf6444526934",
+        "company_canonical_entity_id": "",
+        "company_name": "Tenstorrent",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "D轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f5ffb811889637d4",
+            "source_url": "https://georgian.io/posts/why-georgian-invested-in-tenstorrent",
+            "source_title": "Why Georgian Invested in Tenstorrent",
+            "source_content_hash": "85ec630bc1b0cad9",
+            "quote": "Georgian has participated in Tenstorrent’s $693M Series D",
+            "quote_hash": "0ef5a2673a21445f8ffa4831a7665476deef1639c4303beecf62a5479e5139fe"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -262,6 +295,14 @@
         "source_content_hash": "d97a108f575a9b98",
         "quote": "The investment represents a rapid follow-on for Georgian, which first invested in Replit's Series C late last year and is now doubling down as the company expands its position in AI-powered software creation.",
         "quote_hash": "e7bcaf8915704ef04089d6a969c2255cc3b344a26b8f18c77d0a7df3ba2c945b"
+      },
+      {
+        "source_id": "FISRC-f5ffb811889637d4",
+        "source_url": "https://georgian.io/posts/why-georgian-invested-in-tenstorrent",
+        "source_title": "Why Georgian Invested in Tenstorrent",
+        "source_content_hash": "85ec630bc1b0cad9",
+        "quote": "Georgian has participated in Tenstorrent’s $693M Series D",
+        "quote_hash": "0ef5a2673a21445f8ffa4831a7665476deef1639c4303beecf62a5479e5139fe"
       }
     ],
     "public_profile": {
@@ -287,6 +328,10 @@
         {
           "description": "融资来源记录：Replit · D轮 · 2026-03-11 · 本轮领投 · $400M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2220b0e7f33bfc10"
+        },
+        {
+          "description": "融资来源记录：Tenstorrent · 历史轮次未披露 · D轮参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f5ffb811889637d4"
         }
       ],
       "contacts": [],
@@ -318,6 +363,14 @@
           "source_content_hash": "d97a108f575a9b98",
           "quote": "Georgian, a growth-stage B2B investor that builds alongside portfolio companies to unlock value from AI through its in-house AI Lab, today announced it has led a $400 million Series D investment in Replit, valuing the company at $9 billion.",
           "quote_hash": "e347d23fe9ed9260e964427833a9010c6ab952a733e9191d54279e81ebed8ce8"
+        },
+        {
+          "source_id": "FISRC-f5ffb811889637d4",
+          "source_url": "https://georgian.io/posts/why-georgian-invested-in-tenstorrent",
+          "source_title": "Why Georgian Invested in Tenstorrent",
+          "source_content_hash": "85ec630bc1b0cad9",
+          "quote": "Georgian has participated in Tenstorrent’s $693M Series D",
+          "quote_hash": "0ef5a2673a21445f8ffa4831a7665476deef1639c4303beecf62a5479e5139fe"
         }
       ],
       "last_verified_at": "2026-10-02"

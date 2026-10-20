@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-12",
-    "latest_disclosed_at": "2026-09-17",
+    "latest_disclosed_at": "2026-10-15",
     "role_counts": {
-      "co_lead": 3,
+      "co_lead": 4,
       "historical_or_ambiguous": 2,
       "participant": 4
     },
@@ -82,7 +82,8 @@
       "series_d",
       "series_e",
       "series_f",
-      "series_g"
+      "series_g",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -114,9 +115,54 @@
         "entity_id": "EN-b314f58f5f506fd2",
         "canonical_entity_id": "",
         "name": "Poetic"
+      },
+      {
+        "entity_id": "EN-f7d9f5a90479d632",
+        "canonical_entity_id": "",
+        "name": "Ramp"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e288bd67755a422d",
+        "funding_insight_id": "FI-49e5e02e3f1e2d52",
+        "event_ids": [
+          "EV-cc272c08ca12639d"
+        ],
+        "company_entity_id": "EN-f7d9f5a90479d632",
+        "company_canonical_entity_id": "",
+        "company_name": "Ramp",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "$1.85 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1850000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "18.5 亿美元"
+        },
+        "announced_at": "2026-10-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-f581afce52cf5bef",
+            "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+            "source_title": "Ramp估值达600亿美元，深入布局AI",
+            "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+            "quote": "The financing was co-led by Dragoneer Investment Group, Thrive Capital, Founders Fund, Sands Capital, and Avenir Growth.",
+            "quote_hash": "f51f43c20ed94c008d5eb4b1abbcb23d26adeb696bc7b69f874cef8d31d80d73"
+          }
+        ]
+      },
       {
         "activity_id": "IA-cdee850cb4a3afaa",
         "funding_insight_id": "FI-72df07926e3369ef",
@@ -474,6 +520,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-f581afce52cf5bef",
+        "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+        "source_title": "Ramp估值达600亿美元，深入布局AI",
+        "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+        "quote": "The financing was co-led by Dragoneer Investment Group, Thrive Capital, Founders Fund, Sands Capital, and Avenir Growth.",
+        "quote_hash": "f51f43c20ed94c008d5eb4b1abbcb23d26adeb696bc7b69f874cef8d31d80d73"
+      },
+      {
         "source_id": "FISRC-5fc65e3f4fb1b347",
         "source_url": "https://kingliber.com/the-ai-infrastructure-boom-crusoe-secures-3-9-billion-series-f-at-a-30-9-billion-valuation-to-power-the-next-generation-of-compute/",
         "source_title": "The AI Infrastructure Boom: Crusoe Secures $3.9 Billion Series F at a $30.9 Billion Valuation to Power the Next Generation of Compute – King Liber",
@@ -584,16 +638,16 @@
           "source_id": "founders_home"
         },
         {
+          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮联合领投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f581afce52cf5bef"
+        },
+        {
           "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · 本轮参投 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5fc65e3f4fb1b347"
         },
         {
           "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-61aa8db010b34dfa"
-        },
-        {
-          "description": "融资来源记录：Anthropic · G轮 · 2026-08-10 · 本轮联合领投 · $30 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-077b1124fc8e9581"
         }
       ],
       "contacts": [
@@ -638,6 +692,14 @@
           "quote_hash": "e7928b1d51fe1210b92e5c255535528ac724363f322f6c31135b6bb89547dd05"
         },
         {
+          "source_id": "FISRC-f581afce52cf5bef",
+          "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+          "source_title": "Ramp估值达600亿美元，深入布局AI",
+          "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+          "quote": "The financing was co-led by Dragoneer Investment Group, Thrive Capital, Founders Fund, Sands Capital, and Avenir Growth.",
+          "quote_hash": "f51f43c20ed94c008d5eb4b1abbcb23d26adeb696bc7b69f874cef8d31d80d73"
+        },
+        {
           "source_id": "FISRC-5fc65e3f4fb1b347",
           "source_url": "https://kingliber.com/the-ai-infrastructure-boom-crusoe-secures-3-9-billion-series-f-at-a-30-9-billion-valuation-to-power-the-next-generation-of-compute/",
           "source_title": "The AI Infrastructure Boom: Crusoe Secures $3.9 Billion Series F at a $30.9 Billion Valuation to Power the Next Generation of Compute – King Liber",
@@ -652,14 +714,6 @@
           "source_content_hash": "274ba4a54870c633",
           "quote": "existing backers Founders Fund, General Catalyst and Avenir also participating",
           "quote_hash": "7fc61011bd59e8b0029c06294ec01fd0df50815dcca3cb937f5a79169d58ea18"
-        },
-        {
-          "source_id": "FISRC-077b1124fc8e9581",
-          "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
-          "source_title": "GIC-backed OpenAI rival Anthropic finalises US$30 bil funding at US$380 bil value",
-          "source_content_hash": "7ff9bbd6aca29214",
-          "quote": "DE Shaw & Co, Dragoneer Investment Group, Peter Thiel’s Founders Fund, Iconiq and MGX co-led the round",
-          "quote_hash": "bdfd56c7328c8886cb48b941b4f330aff7ca9c83b05f0664f43e60381537841f"
         }
       ],
       "last_verified_at": "2026-09-25",

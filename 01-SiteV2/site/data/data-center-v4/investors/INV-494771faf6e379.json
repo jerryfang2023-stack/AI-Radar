@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,25 +63,26 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-03",
-    "latest_disclosed_at": "2026-10-07",
+    "latest_disclosed_at": "2026-10-15",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 4
+      "participant": 6
     },
     "round_codes": [
       "series_b",
       "series_d",
       "series_e",
-      "series_h"
+      "series_h",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -100,12 +101,97 @@
         "name": "Nous Research"
       },
       {
+        "entity_id": "EN-f7d9f5a90479d632",
+        "canonical_entity_id": "",
+        "name": "Ramp"
+      },
+      {
         "entity_id": "EN-53b69ef92c836777",
         "canonical_entity_id": "",
         "name": "Replit"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-30965605eb0a3046",
+        "funding_insight_id": "FI-49e5e02e3f1e2d52",
+        "event_ids": [
+          "EV-cc272c08ca12639d"
+        ],
+        "company_entity_id": "EN-f7d9f5a90479d632",
+        "company_canonical_entity_id": "",
+        "company_name": "Ramp",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "$1.85 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1850000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "18.5 亿美元"
+        },
+        "announced_at": "2026-10-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f581afce52cf5bef",
+            "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+            "source_title": "Ramp估值达600亿美元，深入布局AI",
+            "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+            "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+            "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7b84e6b29cf5e134",
+        "funding_insight_id": "FI-f7c9ecb8383857f2",
+        "event_ids": [
+          "EV-d89d39700e57f476"
+        ],
+        "company_entity_id": "EN-3eee4f30151db45a",
+        "company_canonical_entity_id": "EN-3eee4f30151db45a",
+        "company_name": "Nous Research",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "9000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 90000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9000 万美元"
+        },
+        "announced_at": "2026-10-13",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c0e764cbefe9c1e7",
+            "source_url": "https://www.163.com/dy/article/L95FTJ3L05118UGF.html",
+            "source_title": "Nous Research确认完成15亿估值融资，推出企业级AI智能体",
+            "source_content_hash": "5bce55f4335c9e878a7140a3eefc85fd8a46640458fce92d7fbd91811c2dedec",
+            "quote": "本轮融资由Robot Ventures领投，其他参与方包括英伟达、Union Square Ventures、Menlo Ventures、三星，以及唐纳德·特朗普之子担任合伙人的1789 Capital。",
+            "quote_hash": "cfb5cb15e98862c041ccf451333927feb71aa81f07568b16e955d0a503d1b300"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8ec5ad1b6946c8a9",
         "funding_insight_id": "FI-4328c217f1203f6f",
@@ -334,6 +420,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-f581afce52cf5bef",
+        "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+        "source_title": "Ramp估值达600亿美元，深入布局AI",
+        "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+        "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+        "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+      },
+      {
+        "source_id": "FISRC-c0e764cbefe9c1e7",
+        "source_url": "https://www.163.com/dy/article/L95FTJ3L05118UGF.html",
+        "source_title": "Nous Research确认完成15亿估值融资，推出企业级AI智能体",
+        "source_content_hash": "5bce55f4335c9e878a7140a3eefc85fd8a46640458fce92d7fbd91811c2dedec",
+        "quote": "本轮融资由Robot Ventures领投，其他参与方包括英伟达、Union Square Ventures、Menlo Ventures、三星，以及唐纳德·特朗普之子担任合伙人的1789 Capital。",
+        "quote_hash": "cfb5cb15e98862c041ccf451333927feb71aa81f07568b16e955d0a503d1b300"
+      },
+      {
         "source_id": "FISRC-295e99df6a40bc79",
         "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
         "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
@@ -406,16 +508,16 @@
       "experience_summary": "公开资料支持其成长型股权投资定位与团队构成；尚未将媒体所报基金规模或单笔交易描述补作机构业绩指标。",
       "track_record": [
         {
+          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f581afce52cf5bef"
+        },
+        {
+          "description": "融资来源记录：Nous Research · B轮 · 2026-10-13 · 本轮参投 · 9000万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c0e764cbefe9c1e7"
+        },
+        {
           "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮参投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-295e99df6a40bc79"
-        },
-        {
-          "description": "融资来源记录：Replit · D轮 · 2026-03-11 · 本轮参投 · $400M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-00ed3d8fd701898b"
-        },
-        {
-          "description": "融资来源记录：Ayar Labs · E轮 · 2026-03-03 · 本轮参投 · $500 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5b6c7c4ae002a992"
         }
       ],
       "contacts": [
@@ -445,28 +547,28 @@
           "quote_hash": "ae8a1a7c9e71f71e026d0f5db8735d882903f90de8398ea8ddab56624bb6cbe2"
         },
         {
+          "source_id": "FISRC-f581afce52cf5bef",
+          "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+          "source_title": "Ramp估值达600亿美元，深入布局AI",
+          "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+          "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+          "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+        },
+        {
+          "source_id": "FISRC-c0e764cbefe9c1e7",
+          "source_url": "https://www.163.com/dy/article/L95FTJ3L05118UGF.html",
+          "source_title": "Nous Research确认完成15亿估值融资，推出企业级AI智能体",
+          "source_content_hash": "5bce55f4335c9e878a7140a3eefc85fd8a46640458fce92d7fbd91811c2dedec",
+          "quote": "本轮融资由Robot Ventures领投，其他参与方包括英伟达、Union Square Ventures、Menlo Ventures、三星，以及唐纳德·特朗普之子担任合伙人的1789 Capital。",
+          "quote_hash": "cfb5cb15e98862c041ccf451333927feb71aa81f07568b16e955d0a503d1b300"
+        },
+        {
           "source_id": "FISRC-295e99df6a40bc79",
           "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
           "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
           "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
           "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
           "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
-        },
-        {
-          "source_id": "FISRC-00ed3d8fd701898b",
-          "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
-          "source_title": "Replit raises $400M at $9B valuation as AI coding platform surges to over 40M users - Tech Startups",
-          "source_content_hash": "c906371275e7a3ca",
-          "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
-          "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
-        },
-        {
-          "source_id": "FISRC-5b6c7c4ae002a992",
-          "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
-          "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
-          "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
-          "quote": "Neuberger Berman leads round joined by premier institutional investors including ARK Invest, Insight Partners, Qatar Investment Authority (QIA), Sequoia Global Equities, and 1789 Capital alongside key commercial strategic investors AMD, Alchip, MediaTek, and NVIDIA",
-          "quote_hash": "fc04a543036e2a2f83e8b6e7ea17ce12310bb4149d8e45c9397e021bc4811d3b"
         }
       ],
       "last_verified_at": "2026-09-26",

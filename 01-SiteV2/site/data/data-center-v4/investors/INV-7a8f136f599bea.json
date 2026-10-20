@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-01",
-    "latest_disclosed_at": "2026-08-01",
+    "latest_disclosed_at": "2026-10-19",
     "role_counts": {
-      "participant": 1
+      "participant": 3
     },
     "round_codes": [
+      "pre_seed",
       "series_a"
     ],
     "portfolio_companies": [
@@ -82,9 +83,94 @@
         "entity_id": "EN-65e9e514ecf0d270",
         "canonical_entity_id": "",
         "name": "Smallest.ai"
+      },
+      {
+        "entity_id": "EN-54856813e7170b52",
+        "canonical_entity_id": "",
+        "name": "Vessla"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-05e51bb1b8f06e48",
+        "funding_insight_id": "FI-b0bdfe9f65e2108a",
+        "event_ids": [
+          "EV-064c7e0a79e6f4e1"
+        ],
+        "company_entity_id": "EN-54856813e7170b52",
+        "company_canonical_entity_id": "",
+        "company_name": "Vessla",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$3.3 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "330 万美元"
+        },
+        "announced_at": "2026-10-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-333dfdc93dda00c9",
+            "source_url": "https://tech.eu/2026/10/19/vessla-exits-stealth-with-33m-to-bring-ai-agents-to-property-management/",
+            "source_title": "Vessla结束隐身模式，获330万美元融资，将AI智能体引入物业管理",
+            "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
+            "quote": "Other participants included Inception Fund, Tiny VC, operators from Lovable and OpenAI, founders Lukas Saari (Tandem Health) and Fredrik Hjelm (Voi, Pit), and several angel investors.",
+            "quote_hash": "a139bfdb6260ed7f091816e38ae148c0e446e24ef1f7c82d79164115a408b5c7"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a4686eb173b5cb8e",
+        "funding_insight_id": "FI-2a19fdf0e999a70c",
+        "event_ids": [
+          "EV-87beb0ebdfa293de"
+        ],
+        "company_entity_id": "EN-54856813e7170b52",
+        "company_canonical_entity_id": "",
+        "company_name": "Vessla",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "€2.94 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 2940000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "294 万欧元"
+        },
+        "announced_at": "2026-10-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-03408b6d796d3c48",
+            "source_url": "https://www.eu-startups.com/2026/10/stockholms-vessla-exits-stealth-with-e2-94-million-to-bring-ai-agents-to-property-management/",
+            "source_title": "斯德哥尔摩的Vessla结束隐身模式，获294万欧元，将AI智能体引入物业管理",
+            "source_content_hash": "26d128952369a51ff8ea80cf41b04bb3bcca39a639bb2a0a43bd58d4071584a9",
+            "quote": "Other investors joining the round include Inception Fund, Tiny VC, operators from Lovable and OpenAI",
+            "quote_hash": "ba963a0f2e08182c2a0b0de97ece7a03f8d847d290998ce9b0c87bed3973c38a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d1dce9bbcc446fda",
         "funding_insight_id": "FI-af45f33c3a9b81b9",
@@ -128,6 +214,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-333dfdc93dda00c9",
+        "source_url": "https://tech.eu/2026/10/19/vessla-exits-stealth-with-33m-to-bring-ai-agents-to-property-management/",
+        "source_title": "Vessla结束隐身模式，获330万美元融资，将AI智能体引入物业管理",
+        "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
+        "quote": "Other participants included Inception Fund, Tiny VC, operators from Lovable and OpenAI, founders Lukas Saari (Tandem Health) and Fredrik Hjelm (Voi, Pit), and several angel investors.",
+        "quote_hash": "a139bfdb6260ed7f091816e38ae148c0e446e24ef1f7c82d79164115a408b5c7"
+      },
+      {
+        "source_id": "FISRC-03408b6d796d3c48",
+        "source_url": "https://www.eu-startups.com/2026/10/stockholms-vessla-exits-stealth-with-e2-94-million-to-bring-ai-agents-to-property-management/",
+        "source_title": "斯德哥尔摩的Vessla结束隐身模式，获294万欧元，将AI智能体引入物业管理",
+        "source_content_hash": "26d128952369a51ff8ea80cf41b04bb3bcca39a639bb2a0a43bd58d4071584a9",
+        "quote": "Other investors joining the round include Inception Fund, Tiny VC, operators from Lovable and OpenAI",
+        "quote_hash": "ba963a0f2e08182c2a0b0de97ece7a03f8d847d290998ce9b0c87bed3973c38a"
+      },
+      {
         "source_id": "FISRC-6b1944359351ee14",
         "source_url": "https://www.cmswire.com/customer-experience/smallestai-lands-13m-series-a-for-voice-ai/",
         "source_title": "Smallest.ai Raises $13M For Real-Time Enterprise Voice AI",
@@ -169,6 +271,14 @@
           "source_id": "PFSRC-INV-7a8f136f599bea-2"
         },
         {
+          "description": "融资来源记录：Vessla · 预种子轮 · 2026-10-19 · 本轮参投 · $3.3 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-333dfdc93dda00c9"
+        },
+        {
+          "description": "融资来源记录：Vessla · 预种子轮 · 2026-10-19 · 本轮参投 · €2.94 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-03408b6d796d3c48"
+        },
+        {
           "description": "融资来源记录：Smallest.ai · A轮 · 2026-08-01 · 本轮参投 · 1300万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6b1944359351ee14"
         }
@@ -198,6 +308,22 @@
           "source_content_hash": "75c4a5bd322be5fb2cfa3cbfccd1ebc20a74ba7c07e7087aa4bcab596359a158",
           "quote": "The company is backed by Seligman Ventures, Sierra Ventures, 3one4 Capital, Better Capital, Upsparks Capital, Schema Ventures, Tiny VC, DeVC, Mission Street Capital, and other angel investors.",
           "quote_hash": "cf7117c9cea44ee1741914c83151a2897c72ac7b8dc3a519514da8c244e84a9d"
+        },
+        {
+          "source_id": "FISRC-333dfdc93dda00c9",
+          "source_url": "https://tech.eu/2026/10/19/vessla-exits-stealth-with-33m-to-bring-ai-agents-to-property-management/",
+          "source_title": "Vessla结束隐身模式，获330万美元融资，将AI智能体引入物业管理",
+          "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
+          "quote": "Other participants included Inception Fund, Tiny VC, operators from Lovable and OpenAI, founders Lukas Saari (Tandem Health) and Fredrik Hjelm (Voi, Pit), and several angel investors.",
+          "quote_hash": "a139bfdb6260ed7f091816e38ae148c0e446e24ef1f7c82d79164115a408b5c7"
+        },
+        {
+          "source_id": "FISRC-03408b6d796d3c48",
+          "source_url": "https://www.eu-startups.com/2026/10/stockholms-vessla-exits-stealth-with-e2-94-million-to-bring-ai-agents-to-property-management/",
+          "source_title": "斯德哥尔摩的Vessla结束隐身模式，获294万欧元，将AI智能体引入物业管理",
+          "source_content_hash": "26d128952369a51ff8ea80cf41b04bb3bcca39a639bb2a0a43bd58d4071584a9",
+          "quote": "Other investors joining the round include Inception Fund, Tiny VC, operators from Lovable and OpenAI",
+          "quote_hash": "ba963a0f2e08182c2a0b0de97ece7a03f8d847d290998ce9b0c87bed3973c38a"
         },
         {
           "source_id": "FISRC-6b1944359351ee14",

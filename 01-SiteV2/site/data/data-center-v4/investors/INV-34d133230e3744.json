@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-10-01",
     "latest_disclosed_at": "2026-10-01",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "lead": 1
     },
     "round_codes": [
@@ -125,6 +126,38 @@
             "quote_hash": "a0593f77e01cfc703c1c9abdd298de910307816ef66fb91956d2145d794dcdc5"
           }
         ]
+      },
+      {
+        "activity_id": "IA-8f9c6adf8f24e54f",
+        "funding_insight_id": "FI-482ac64d02f31d45",
+        "event_ids": [
+          "EV-59841d8e9da58cd4"
+        ],
+        "company_entity_id": "EN-35f90e87170a43fa",
+        "company_canonical_entity_id": "",
+        "company_name": "Tolan",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-013832b797e22531",
+            "source_url": "https://www.tolans.com/",
+            "source_title": "Tolan: Friendly Guide Through Life",
+            "source_content_hash": "2b4a508b8db75ebd",
+            "quote": "backed by $60M+ in capital from investors including USV, Khosla Ventures, Lachy Groom, Nat Friedman, Daniel Gross",
+            "quote_hash": "d98e8cb908500d91b47322ea1c989569003d3f4a0a3d52973a11ecad866641fe"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -135,6 +168,14 @@
         "source_content_hash": "d345eafcaa15d78eb3177366fb76f87f7c735d5a9012d2da287cc1cf7474412d",
         "quote": "The funding round was led by Stripe veteran Lachy Groom and Abstract Ventures.",
         "quote_hash": "a0593f77e01cfc703c1c9abdd298de910307816ef66fb91956d2145d794dcdc5"
+      },
+      {
+        "source_id": "FISRC-013832b797e22531",
+        "source_url": "https://www.tolans.com/",
+        "source_title": "Tolan: Friendly Guide Through Life",
+        "source_content_hash": "2b4a508b8db75ebd",
+        "quote": "backed by $60M+ in capital from investors including USV, Khosla Ventures, Lachy Groom, Nat Friedman, Daniel Gross",
+        "quote_hash": "d98e8cb908500d91b47322ea1c989569003d3f4a0a3d52973a11ecad866641fe"
       }
     ],
     "public_profile": {
@@ -156,6 +197,10 @@
         {
           "description": "融资来源记录：Volantis · A轮 · 2026-10-01 · 本轮领投 · $88 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-23ff312a843cd717"
+        },
+        {
+          "description": "融资来源记录：Tolan · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-013832b797e22531"
         }
       ],
       "contacts": [],
@@ -175,6 +220,14 @@
           "source_content_hash": "d345eafcaa15d78eb3177366fb76f87f7c735d5a9012d2da287cc1cf7474412d",
           "quote": "The funding round was led by Stripe veteran Lachy Groom and Abstract Ventures.",
           "quote_hash": "a0593f77e01cfc703c1c9abdd298de910307816ef66fb91956d2145d794dcdc5"
+        },
+        {
+          "source_id": "FISRC-013832b797e22531",
+          "source_url": "https://www.tolans.com/",
+          "source_title": "Tolan: Friendly Guide Through Life",
+          "source_content_hash": "2b4a508b8db75ebd",
+          "quote": "backed by $60M+ in capital from investors including USV, Khosla Ventures, Lachy Groom, Nat Friedman, Daniel Gross",
+          "quote_hash": "d98e8cb908500d91b47322ea1c989569003d3f4a0a3d52973a11ecad866641fe"
         }
       ],
       "last_verified_at": "2026-10-04",

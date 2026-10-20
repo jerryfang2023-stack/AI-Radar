@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-19",
-    "currentDate": "2026-10-19",
-    "eventCount": 4184,
+    "latestDataDate": "2026-10-20",
+    "currentDate": "2026-10-20",
+    "eventCount": 4201,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,25 +61,31 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-28",
-    "latest_disclosed_at": "2026-10-02",
+    "latest_disclosed_at": "2026-10-13",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "infrastructure",
-      "other"
+      "other",
+      "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-3eee4f30151db45a",
+        "canonical_entity_id": "EN-3eee4f30151db45a",
+        "name": "Nous Research"
+      },
       {
         "entity_id": "EN-7d3194f79e645c42",
         "canonical_entity_id": "EN-7d3194f79e645c42",
@@ -87,6 +93,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-58ee85c782ae39c1",
+        "funding_insight_id": "FI-f7c9ecb8383857f2",
+        "event_ids": [
+          "EV-d89d39700e57f476"
+        ],
+        "company_entity_id": "EN-3eee4f30151db45a",
+        "company_canonical_entity_id": "EN-3eee4f30151db45a",
+        "company_name": "Nous Research",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "9000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 90000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9000 万美元"
+        },
+        "announced_at": "2026-10-13",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c0e764cbefe9c1e7",
+            "source_url": "https://www.163.com/dy/article/L95FTJ3L05118UGF.html",
+            "source_title": "Nous Research确认完成15亿估值融资，推出企业级AI智能体",
+            "source_content_hash": "5bce55f4335c9e878a7140a3eefc85fd8a46640458fce92d7fbd91811c2dedec",
+            "quote": "本轮融资由Robot Ventures领投，其他参与方包括英伟达、Union Square Ventures、Menlo Ventures、三星，以及唐纳德·特朗普之子担任合伙人的1789 Capital。",
+            "quote_hash": "cfb5cb15e98862c041ccf451333927feb71aa81f07568b16e955d0a503d1b300"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d98fedb46d5438fd",
         "funding_insight_id": "FI-58f73c7c17717172",
@@ -202,6 +248,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c0e764cbefe9c1e7",
+        "source_url": "https://www.163.com/dy/article/L95FTJ3L05118UGF.html",
+        "source_title": "Nous Research确认完成15亿估值融资，推出企业级AI智能体",
+        "source_content_hash": "5bce55f4335c9e878a7140a3eefc85fd8a46640458fce92d7fbd91811c2dedec",
+        "quote": "本轮融资由Robot Ventures领投，其他参与方包括英伟达、Union Square Ventures、Menlo Ventures、三星，以及唐纳德·特朗普之子担任合伙人的1789 Capital。",
+        "quote_hash": "cfb5cb15e98862c041ccf451333927feb71aa81f07568b16e955d0a503d1b300"
+      },
+      {
         "source_id": "FISRC-eddae300ed827c09",
         "source_url": "https://www.ithome.com/1/009/270.htm",
         "source_title": "填充 AI 资金弹药：曝 OpenAI 融资再落袋 200 亿美元，英伟达、软银和亚马逊已出资约 90%",
@@ -280,16 +334,16 @@
           "source_id": "nvidia_ventures_cases"
         },
         {
+          "description": "融资来源记录：Nous Research · B轮 · 2026-10-13 · 本轮参投 · 9000万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c0e764cbefe9c1e7"
+        },
+        {
           "description": "融资来源记录：OpenAI · 其他融资 · 2026-10-02 · 本轮参投 · 1,220 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-eddae300ed827c09"
         },
         {
           "description": "融资来源记录：OpenAI · 基础设施融资 · 2026-02-28 · 本轮参投 · 1100亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b4ba4f68908fa080"
-        },
-        {
-          "description": "融资来源记录：OpenEvidence · 历史轮次未披露 · 历史投资者。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-439c5c28066fa1c0"
         }
       ],
       "career": [
@@ -375,6 +429,14 @@
           "quote_hash": "bc3bfe881abfd8efd08e1c9ebc90d8c05578037f305ffe4a0dc22595477e179d"
         },
         {
+          "source_id": "FISRC-c0e764cbefe9c1e7",
+          "source_url": "https://www.163.com/dy/article/L95FTJ3L05118UGF.html",
+          "source_title": "Nous Research确认完成15亿估值融资，推出企业级AI智能体",
+          "source_content_hash": "5bce55f4335c9e878a7140a3eefc85fd8a46640458fce92d7fbd91811c2dedec",
+          "quote": "本轮融资由Robot Ventures领投，其他参与方包括英伟达、Union Square Ventures、Menlo Ventures、三星，以及唐纳德·特朗普之子担任合伙人的1789 Capital。",
+          "quote_hash": "cfb5cb15e98862c041ccf451333927feb71aa81f07568b16e955d0a503d1b300"
+        },
+        {
           "source_id": "FISRC-eddae300ed827c09",
           "source_url": "https://www.ithome.com/1/009/270.htm",
           "source_title": "填充 AI 资金弹药：曝 OpenAI 融资再落袋 200 亿美元，英伟达、软银和亚马逊已出资约 90%",
@@ -389,14 +451,6 @@
           "source_content_hash": "04d6f242a94ce5eb",
           "quote": "300亿美元来自 英伟达",
           "quote_hash": "0f78fe02db1d1dc54accf6eb05709a96767f7097fb31120c1c846815801aaa26"
-        },
-        {
-          "source_id": "FISRC-439c5c28066fa1c0",
-          "source_url": "https://bydrug.pharmcube.com/news/detail/cb482eeed6e1b8e0348aa51009df0536",
-          "source_title": "估值120亿美元！AI医疗公司完成2.5亿美元D轮融资 - ByDrug",
-          "source_content_hash": "7196cfd22bae066b49d9616a33d81dc0aa57057e10c11718ca4b266bf40235e1",
-          "quote": "之前的投资者包括红杉资本、谷歌风险投资公司、英伟达、凯鹏华盈、黑石、Henry Kravis、Coatue、Thrive Capital、Conviction、ICONIQ、Greycroft、Breyer Capital、BOND、Craft Ventures、Goanna、Meritech、Alkeon和Mayo Clinic等。",
-          "quote_hash": "cb9f28050b0a66987d6938cae09d456814d4d27a81fd367ed9eac889ccdc81fa"
         }
       ],
       "last_verified_at": "2026-09-28",
