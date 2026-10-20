@@ -11,7 +11,7 @@
     "generated_at": "2026-10-20T00:46:39.947Z",
     "card_count": 632,
     "china_market_card_count": 142,
-    "duplicate_rounds_removed": 20,
+    "duplicate_rounds_removed": 21,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
@@ -35,7 +35,7 @@
         }
       ]
     },
-    "event_count": 677,
+    "event_count": 676,
     "aggregation_strategy": "reviewed_funding_subject",
     "scope": "all_ai_financing_except_embodied_and_robotics",
     "excluded_count": 78,
@@ -925,6 +925,24 @@
             "quote": "Vessla launched with $3.3 million in pre-seed financing led by Seedcamp",
             "source_content_hash": "b5f71300d8463922",
             "quote_hash": "28d0a0becbe040d1fadb72d3cdff9a8bc003e306c114fd91815935efb100b755"
+          },
+          {
+            "source_id": "FISRC-333dfdc93dda00c9",
+            "quote": "has emerged from stealth with a $3.3 million pre-seed funding round led by Seedcamp.",
+            "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
+            "quote_hash": "c28bf9158579050213f60664400b7ce50f1bc1d465e276568010fe0c1627e65d"
+          },
+          {
+            "source_id": "FISRC-333dfdc93dda00c9",
+            "quote": "Stockholm-based AI startup Vessla has emerged from stealth with a $3.3 million pre-seed funding round led by Seedcamp.",
+            "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
+            "quote_hash": "3bd61021d2c5a8c08d0121dceb86bdce23094b9ff8bad0c37d07a32e9c0a2d35"
+          },
+          {
+            "source_id": "FISRC-c8138f1a8ee7650a",
+            "quote": "$3.3M disclosed financing total",
+            "source_content_hash": "7ec71b430b2fd2c6",
+            "quote_hash": "cd0c53241c49d8aca726cdf7d03916584a67e226131919b84360690c7ff2feb2"
           }
         ],
         "round_code": "pre_seed",
@@ -976,6 +994,32 @@
                 "quote_hash": "28d0a0becbe040d1fadb72d3cdff9a8bc003e306c114fd91815935efb100b755"
               }
             ]
+          },
+          {
+            "event_id": "EV-064c7e0a79e6f4e1",
+            "round_original": "预种子轮",
+            "amount": "$3.3 million",
+            "announced_at": "2026-10-19",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-333dfdc93dda00c9",
+                "quote": "has emerged from stealth with a $3.3 million pre-seed funding round led by Seedcamp.",
+                "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
+                "quote_hash": "c28bf9158579050213f60664400b7ce50f1bc1d465e276568010fe0c1627e65d"
+              },
+              {
+                "source_id": "FISRC-333dfdc93dda00c9",
+                "quote": "Stockholm-based AI startup Vessla has emerged from stealth with a $3.3 million pre-seed funding round led by Seedcamp.",
+                "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
+                "quote_hash": "3bd61021d2c5a8c08d0121dceb86bdce23094b9ff8bad0c37d07a32e9c0a2d35"
+              },
+              {
+                "source_id": "FISRC-c8138f1a8ee7650a",
+                "quote": "$3.3M disclosed financing total",
+                "source_content_hash": "7ec71b430b2fd2c6",
+                "quote_hash": "cd0c53241c49d8aca726cdf7d03916584a67e226131919b84360690c7ff2feb2"
+              }
+            ]
           }
         ],
         "disclosure_status": "disclosed",
@@ -1001,19 +1045,9 @@
               "round_count": 1,
               "status": "exact",
               "display_zh": "294 万欧元"
-            },
-            {
-              "currency": "USD",
-              "value": 3300000,
-              "min_value": null,
-              "max_value": null,
-              "unit": "base",
-              "round_count": 1,
-              "status": "exact",
-              "display_zh": "330 万美元"
             }
           ],
-          "historical_round_count": 2
+          "historical_round_count": 1
         }
       },
       "products": [
@@ -1526,7 +1560,7 @@
       ],
       "aggregation": {
         "key": "EN-54856813e7170b52|pre_seed|EUR:exact:2940000:::|2026-10-19",
-        "event_count": 2,
+        "event_count": 1,
         "strategy": "reviewed_funding_subject",
         "subject_id": "EN-54856813e7170b52",
         "source_card_count": 2
@@ -1536,7 +1570,8 @@
           "funding_insight_id": "FI-2a19fdf0e999a70c",
           "event_ids": [
             "EV-87beb0ebdfa293de",
-            "EV-87beb0ebdfa293de"
+            "EV-87beb0ebdfa293de",
+            "EV-064c7e0a79e6f4e1"
           ],
           "round": "预种子轮",
           "round_code": "pre_seed",
@@ -1646,106 +1681,7 @@
               "quote": "Vessla launched with $3.3 million in pre-seed financing led by Seedcamp",
               "source_content_hash": "b5f71300d8463922",
               "quote_hash": "28d0a0becbe040d1fadb72d3cdff9a8bc003e306c114fd91815935efb100b755"
-            }
-          ]
-        },
-        {
-          "funding_insight_id": "FI-b0bdfe9f65e2108a",
-          "event_ids": [
-            "EV-064c7e0a79e6f4e1",
-            "EV-064c7e0a79e6f4e1"
-          ],
-          "round": "预种子轮",
-          "round_code": "pre_seed",
-          "round_original": "预种子轮",
-          "amount_original": "$3.3 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 3300000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "330 万美元"
-          },
-          "announced_at": "2026-10-19",
-          "disclosure_status": "disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": false,
-          "investors": [
-            {
-              "name": "Seedcamp",
-              "role": "本轮领投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-333dfdc93dda00c9",
-                  "quote": "led by Seedcamp",
-                  "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
-                  "quote_hash": "7ae36abbc58d21fe37b71caa9c3d6316e3a8b8d4bd63f2769abab90d99edebdd"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-d23178130fcd3b"
             },
-            {
-              "name": "Inception Fund",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-333dfdc93dda00c9",
-                  "quote": "Other participants included Inception Fund, Tiny VC, operators from Lovable and OpenAI, founders Lukas Saari (Tandem Health) and Fredrik Hjelm (Voi, Pit), and several angel investors.",
-                  "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
-                  "quote_hash": "a139bfdb6260ed7f091816e38ae148c0e446e24ef1f7c82d79164115a408b5c7"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-69a2374f9fa154"
-            },
-            {
-              "name": "Tiny VC",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-333dfdc93dda00c9",
-                  "quote": "Other participants included Inception Fund, Tiny VC, operators from Lovable and OpenAI, founders Lukas Saari (Tandem Health) and Fredrik Hjelm (Voi, Pit), and several angel investors.",
-                  "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
-                  "quote_hash": "a139bfdb6260ed7f091816e38ae148c0e446e24ef1f7c82d79164115a408b5c7"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-7a8f136f599bea"
-            },
-            {
-              "name": "Lukas Saari",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-333dfdc93dda00c9",
-                  "quote": "founders Lukas Saari (Tandem Health) and Fredrik Hjelm (Voi, Pit)",
-                  "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
-                  "quote_hash": "1f79764a48e54dabed95070392d9afd98edfc71f31495b7df9638fa56e8d83bc"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-f6c2c7b1b61937"
-            },
-            {
-              "name": "Fredrik Hjelm",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-333dfdc93dda00c9",
-                  "quote": "founders Lukas Saari (Tandem Health) and Fredrik Hjelm (Voi, Pit)",
-                  "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
-                  "quote_hash": "1f79764a48e54dabed95070392d9afd98edfc71f31495b7df9638fa56e8d83bc"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-d91d8bc450f9bf"
-            }
-          ],
-          "evidence_refs": [
             {
               "source_id": "FISRC-333dfdc93dda00c9",
               "quote": "has emerged from stealth with a $3.3 million pre-seed funding round led by Seedcamp.",
@@ -587102,7 +587038,8 @@
       "funding_insight_id": "FI-2a19fdf0e999a70c",
       "triggered_by_event_id": "EV-87beb0ebdfa293de",
       "source_event_ids": [
-        "EV-87beb0ebdfa293de"
+        "EV-87beb0ebdfa293de",
+        "EV-064c7e0a79e6f4e1"
       ],
       "subject_card_id": "FI-2a19fdf0e999a70c",
       "as_of_date": "2026-10-20",
@@ -587327,6 +587264,9 @@
       "products": [
         {
           "name": "Vessla agentic operating system"
+        },
+        {
+          "name": "Vessla 物业运营智能体平台"
         }
       ]
     },
@@ -587945,220 +587885,6 @@
         },
         {
           "name": "Tenstorrent Galaxy 服务器"
-        }
-      ]
-    },
-    {
-      "funding_insight_id": "FI-b0bdfe9f65e2108a",
-      "triggered_by_event_id": "EV-064c7e0a79e6f4e1",
-      "source_event_ids": [
-        "EV-064c7e0a79e6f4e1"
-      ],
-      "subject_card_id": "FI-2a19fdf0e999a70c",
-      "as_of_date": "2026-10-20",
-      "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
-        "source_registry_ids": []
-      },
-      "company": {
-        "entity_id": "EN-54856813e7170b52",
-        "application_entity_id": "EN-54856813e7170b52",
-        "name": "Vessla",
-        "full_name": "Vessla",
-        "summary": "Vessla 是一家总部位于斯德哥尔摩的 AI 初创公司，正在构建一个 AI 驱动的平台，旨在自动化住宅和商业物业管理所使用系统之间的工作流。",
-        "website": "https://vessla.ai/",
-        "headquarters": "斯德哥尔摩",
-        "founders": [
-          {
-            "name": "Orman Gazvini",
-            "role": "首席执行官",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c8138f1a8ee7650a",
-                "quote": "Orman Gazvini · CEO",
-                "source_content_hash": "7ec71b430b2fd2c6",
-                "quote_hash": "9643179a771eaa39eae59f22b736eb52829bfce63ce9211e6659f5a635d0cf55"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Kasper Janehag",
-            "role": "首席技术官",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c8138f1a8ee7650a",
-                "quote": "Kasper Janehag · CTO",
-                "source_content_hash": "7ec71b430b2fd2c6",
-                "quote_hash": "aaed15aed906bcdbcdd871d8107d4ee9e4274ef2fc731d2af68f9446a2416a37"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Arash Dabiri",
-            "role": "首席科学家",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c8138f1a8ee7650a",
-                "quote": "Arash Dabiri · Chief scientist",
-                "source_content_hash": "7ec71b430b2fd2c6",
-                "quote_hash": "38154b3ab7e42fd584dd11eb57d8616ea8ed6453c1cd3d51a2330186baec32f1"
-              }
-            ],
-            "entity_id": null
-          }
-        ]
-      },
-      "financing": {
-        "round": "预种子轮",
-        "round_code": "pre_seed",
-        "round_original": "预种子轮",
-        "amount": "$3.3 million",
-        "amount_original": "$3.3 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 3300000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "330 万美元"
-        },
-        "announced_at": "2026-10-19",
-        "disclosure_status": "disclosed",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "Seedcamp",
-            "role": "本轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-333dfdc93dda00c9",
-                "quote": "led by Seedcamp",
-                "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
-                "quote_hash": "7ae36abbc58d21fe37b71caa9c3d6316e3a8b8d4bd63f2769abab90d99edebdd"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-d23178130fcd3b"
-          },
-          {
-            "name": "Inception Fund",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-333dfdc93dda00c9",
-                "quote": "Other participants included Inception Fund, Tiny VC, operators from Lovable and OpenAI, founders Lukas Saari (Tandem Health) and Fredrik Hjelm (Voi, Pit), and several angel investors.",
-                "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
-                "quote_hash": "a139bfdb6260ed7f091816e38ae148c0e446e24ef1f7c82d79164115a408b5c7"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-69a2374f9fa154"
-          },
-          {
-            "name": "Tiny VC",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-333dfdc93dda00c9",
-                "quote": "Other participants included Inception Fund, Tiny VC, operators from Lovable and OpenAI, founders Lukas Saari (Tandem Health) and Fredrik Hjelm (Voi, Pit), and several angel investors.",
-                "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
-                "quote_hash": "a139bfdb6260ed7f091816e38ae148c0e446e24ef1f7c82d79164115a408b5c7"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-7a8f136f599bea"
-          },
-          {
-            "name": "Lukas Saari",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-333dfdc93dda00c9",
-                "quote": "founders Lukas Saari (Tandem Health) and Fredrik Hjelm (Voi, Pit)",
-                "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
-                "quote_hash": "1f79764a48e54dabed95070392d9afd98edfc71f31495b7df9638fa56e8d83bc"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-f6c2c7b1b61937"
-          },
-          {
-            "name": "Fredrik Hjelm",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-333dfdc93dda00c9",
-                "quote": "founders Lukas Saari (Tandem Health) and Fredrik Hjelm (Voi, Pit)",
-                "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
-                "quote_hash": "1f79764a48e54dabed95070392d9afd98edfc71f31495b7df9638fa56e8d83bc"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-d91d8bc450f9bf"
-          }
-        ]
-      },
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "industry",
-          "name": "行业 AI"
-        },
-        "subsector": {
-          "id": "property",
-          "name": "建筑与房地产"
-        },
-        "product_form": {
-          "id": "enterprise-software",
-          "name": "企业软件"
-        },
-        "customers": [
-          {
-            "id": "business",
-            "name": "企业"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-c8138f1a8ee7650a",
-            "quote": "Vessla builds an AI operating layer that connects the software used by property owners and managers so agents and people can run work together across their portfolios."
-          },
-          {
-            "source_id": "FISRC-a352bbed9f4dc95a",
-            "quote": "One operating layer for every property system"
-          },
-          {
-            "source_id": "FISRC-333dfdc93dda00c9",
-            "quote": "Vessla is building an AI-powered platform designed to automate workflows across the systems used by residential and commercial"
-          }
-        ],
-        "rationale": "Vessla 为物业业主与管理者提供连接物业系统的 AI 运营智能体平台，属建筑与房地产行业软件。"
-      },
-      "market_category": {
-        "id": "industry",
-        "name": "行业 AI",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "property",
-        "name": "建筑与房地产",
-        "dimension": "financing_subsector"
-      },
-      "product_form": {
-        "id": "enterprise-software",
-        "name": "企业软件",
-        "dimension": "financing_product_form"
-      },
-      "products": [
-        {
-          "name": "Vessla 物业运营智能体平台"
         }
       ]
     },
@@ -727660,6 +727386,20 @@
         "company": "Moonshot AI",
         "reason": "原文为寻求新估值/拟融资，未证明完成20亿美元新融资，不能计入已完成融资。",
         "source_url": "https://the-decoder.com/moonshot-ai-targets-a-30-billion-valuation-more-than-six-times-its-late-2025-worth"
+      }
+    ],
+    "cross_currency_duplicates": [
+      {
+        "canonical_id": "FI-2a19fdf0e999a70c",
+        "duplicate_id": "FI-b0bdfe9f65e2108a",
+        "reason": "same_round_explicit_source_currency_equivalence",
+        "evidence": {
+          "source_id": "FISRC-03408b6d796d3c48",
+          "quote": "Vessla, a Stockholm-based AI startup building an agentic operating system for real estate, has emerged from stealth with €2.94 million ($3.3 million) pre-Seed funding.",
+          "source_content_hash": "26d128952369a51ff8ea80cf41b04bb3bcca39a639bb2a0a43bd58d4071584a9",
+          "quote_hash": "caba009505982da9be468f3820a9c24dad33c4f4881e8660505e06fb2294cd89",
+          "source_url": "https://www.eu-startups.com/2026/10/stockholms-vessla-exits-stealth-with-e2-94-million-to-bring-ai-agents-to-property-management/"
+        }
       }
     ]
   }
