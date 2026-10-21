@@ -853,7 +853,13 @@ function fundingClaimOrganizationMentions(eventClaims, claimEvidence, title) {
   };
 
   for (const claim of eventClaims || []) {
-    const quote = normalizeSpace(claim.source_quote);
+    // Wire datelines identify the filing location, not the funding recipient.
+    // Strip only a dated, attributed wire prefix for candidate parsing; retain
+    // the original quote and claimEvidence for exact mention/span binding.
+    const quote = normalizeSpace(claim.source_quote).replace(
+      /^[A-Z][A-Z\s.,&/-]{1,100},\s*(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\.?\s+\d{1,2},?\s+20\d{2}\s*\((?:GLOBE NEWSWIRE|BUSINESS WIRE|PR NEWSWIRE|Reuters)\)\s*(?:--|[—–-])\s*/iu,
+      "",
+    );
     const lead = quote.match(
       /^([A-Z0-9][A-Za-z0-9.&'/-]*(?:\s+[A-Z0-9][A-Za-z0-9.&'/-]*){0,5}(?:,\s*(?:Inc\.?|LLC|Ltd\.?|Corp\.?|Corporation|Limited))?)(?=\s*(?:,|has\b|have\b|raises?\b|raised\b|secures?\b|secured\b|closes?\b|closed\b|announces?\b|announced\b))/u
     )?.[1];
