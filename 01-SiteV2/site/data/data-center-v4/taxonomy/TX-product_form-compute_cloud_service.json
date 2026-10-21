@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-20",
-    "currentDate": "2026-10-20",
-    "eventCount": 4201,
+    "generatedAt": "2026-10-21T05:53:32.452Z",
+    "latestDataDate": "2026-10-21",
+    "currentDate": "2026-10-21",
+    "eventCount": 4214,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -86,6 +86,7 @@
       "EV-826c8088c4adf591",
       "EV-0ec219a94317215f",
       "EV-5493c61bcbe58aa2",
+      "EV-1d592d9d6ed402c9",
       "EV-4b44f5eafecf4922",
       "EV-a67071a8550cb1be"
     ],
@@ -113,6 +114,7 @@
       "EN-ebf9032e4009b3d9",
       "EN-042e9398f2cc8902",
       "EN-9d07f526fab9cfe9",
+      "EN-e78bdebae031095b",
       "EN-18b4bbfd60f4137e",
       "EN-a89a94ff38d4dc95"
     ],
@@ -125,7 +127,7 @@
       "HW-9a39a7f449362f96"
     ],
     "firstSeen": "2026-04-30",
-    "lastSeen": "2026-10-02"
+    "lastSeen": "2026-10-21"
   },
   "events": [
     {
@@ -4711,7 +4713,7 @@
           "name": "Featherless.ai",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -6633,6 +6635,124 @@
       "publisher": "datarobot.com"
     },
     {
+      "id": "EV-1d592d9d6ed402c9",
+      "dataDate": "2026-10-21",
+      "date": "2026-10-20",
+      "updatedDate": "2026-10-20",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "SpaceX 的 AI 业务超出预期",
+      "originalTitle": "SpaceX&#8217;s AI business is beating expectations",
+      "subject": "SpaceX",
+      "action": "financial_performance",
+      "object": "$14.6 billion in third-quarter revenue",
+      "metrics": [
+        "$14.6 billion",
+        "$7.5 billion",
+        "$4.4 billion",
+        "$1 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "developer_tool",
+            "name": "开发者工具",
+            "entityIds": [
+              "EN-e78bdebae031095b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-e78bdebae031095b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "developer_tool",
+          "name": "开发者工具",
+          "entityIds": [
+            "EN-e78bdebae031095b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-e78bdebae031095b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "developer_tool",
+          "name": "开发者工具",
+          "entityIds": [
+            "EN-e78bdebae031095b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-e78bdebae031095b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-e78bdebae031095b"
+      ],
+      "entityNames": [
+        "SpaceX"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations/",
+      "publisher": "techcrunch.com"
+    },
+    {
       "id": "EV-4b44f5eafecf4922",
       "dataDate": "2026-07-18",
       "date": "2026-07-17",
@@ -6930,9 +7050,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-industry-manufacturing",
         "TX-product_form-compute_cloud_service",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-ai_market_application-computing_infrastructure",
@@ -6988,6 +7108,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-developer",
@@ -6996,7 +7117,6 @@
         "TX-industry-logistics_supply_chain",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-industry-manufacturing",
         "TX-industry-legal_services",
         "TX-industry-construction_real_estate",
         "TX-industry-aerospace_defense",
@@ -7207,18 +7327,18 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
+        "TX-industry-manufacturing",
         "TX-industry-financial_services",
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
         "TX-use_case-design_engineering",
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-industry-manufacturing",
         "TX-ai_market_subcategory-industrials",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
@@ -7283,8 +7403,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-product_form-model",
+        "TX-target_user-developer",
         "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -7308,6 +7428,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-5fbe1afea8264e75",
         "EV-79fbe4ea3a11c695",
         "EV-1c79bd33ccfafec8",
         "EV-32a04f2071b7aa24",
@@ -7789,18 +7910,18 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
+        "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-product_form-chip_accelerator",
-        "TX-technology-embodied_ai",
         "TX-industry-media_entertainment",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
@@ -7856,7 +7977,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-10-20"
+      "lastSeen": "2026-10-21"
     },
     {
       "id": "EN-8f5ef31ed5125786",
@@ -7919,12 +8040,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-product_form-model",
+        "TX-industry-manufacturing",
         "TX-target_user-developer",
         "TX-target_user-researcher",
-        "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-product_form-chip_accelerator",
-        "TX-industry-manufacturing",
         "TX-product_form-compute_cloud_service",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-ai_compute_system",
@@ -7987,8 +8108,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-target_user-business_user",
         "TX-industry-manufacturing",
+        "TX-target_user-business_user",
         "TX-product_form-compute_cloud_service",
         "TX-technology-guardrails_safety"
       ],
@@ -8070,6 +8191,82 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-05",
       "lastSeen": "2026-06-05"
+    },
+    {
+      "id": "EN-e78bdebae031095b",
+      "name": "SpaceX",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e9b020a1b5f1af14",
+        "EV-5b5237105fc868cd",
+        "EV-792e2a2b3e98399f",
+        "EV-842f6d47e9cae7e7",
+        "EV-086902ad904c1c90",
+        "EV-8018e028f1840136",
+        "EV-fe49d2ee580cfea2",
+        "EV-d57fb9108f2cb220",
+        "EV-1744d0e71176f9a1",
+        "EV-a6cb4aef5284eb68",
+        "EV-9bbe5a98b14acd7f",
+        "EV-cdd55321754ce823",
+        "EV-f669ee8fd74b8269",
+        "EV-3daefecd0453631a",
+        "EV-bb6bc8194a3a50c1",
+        "EV-edcb66d0401cfb8f",
+        "EV-03f661e8dcdf1b58",
+        "EV-ef7346378fcf9746",
+        "EV-6e66bc52494a6b07",
+        "EV-42dbdf8a9207c0a8",
+        "EV-77092089644381a3",
+        "EV-4da18f97771852a9",
+        "EV-f949fd95df58d42d",
+        "EV-e73afa921975ec85",
+        "EV-74db6c0f71f2dad2",
+        "EV-a3b61b3529d9cf79",
+        "EV-c3231f2ea0ae1ebc",
+        "EV-fcbd97e1f30c95e3",
+        "EV-5012364af7480121",
+        "EV-8a91e14f37d32b4d",
+        "EV-31782f0824ae1db1",
+        "EV-3c51bcb5e99d2b68",
+        "EV-1d592d9d6ed402c9",
+        "EV-e100f5876a4f8e36",
+        "EV-b739349cfab7e41c",
+        "EV-9e2c443eae76fb50",
+        "EV-cdc6611d6b115cab",
+        "EV-07388b042db1bad0",
+        "EV-8973f8148205ed35",
+        "EV-ecfc552af7344d65"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-model",
+        "TX-use_case-physical_automation",
+        "TX-target_user-business_user",
+        "TX-industry-logistics_supply_chain",
+        "TX-product_form-robotic_system",
+        "TX-target_user-consumer",
+        "TX-technology-code_generation",
+        "TX-target_user-public_sector_user",
+        "TX-industry-aerospace_defense",
+        "TX-product_form-compute_cloud_service",
+        "TX-ai_market_category-physical_ai",
+        "TX-industry-telecommunications",
+        "TX-product_form-developer_tool",
+        "TX-use_case-software_development"
+      ],
+      "relatedEntityIds": [
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "firstSeen": "2026-02-17",
+      "lastSeen": "2026-10-21"
     },
     {
       "id": "EN-18b4bbfd60f4137e",

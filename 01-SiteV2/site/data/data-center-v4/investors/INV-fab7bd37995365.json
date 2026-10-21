@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-20",
-    "currentDate": "2026-10-20",
-    "eventCount": 4201,
+    "generatedAt": "2026-10-21T05:53:32.452Z",
+    "latestDataDate": "2026-10-21",
+    "currentDate": "2026-10-21",
+    "eventCount": 4214,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-06",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-10-20",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "multi_round"
+      "multi_round",
+      "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-e75a6cd43a16c2f3",
+        "canonical_entity_id": "",
+        "name": "Baba"
+      },
       {
         "entity_id": "EN-d965aa403593d08c",
         "canonical_entity_id": "",
@@ -86,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-3dfc0b058176fed0",
+        "funding_insight_id": "FI-40c83ed3548e17ab",
+        "event_ids": [
+          "EV-5f298468c125d834"
+        ],
+        "company_entity_id": "EN-e75a6cd43a16c2f3",
+        "company_canonical_entity_id": "",
+        "company_name": "Baba",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$40 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-10-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-28715696ca7123d8",
+            "source_url": "https://www.globenewswire.com/news-release/2026/10/20/3384598/0/en/applied-ai-company-baba-raises-40-million-series-a-to-improve-the-medicare-experience.html",
+            "source_title": "应用AI公司Baba完成4000万美元A轮融资，以改善Medicare体验",
+            "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+            "quote": "returning investors General Catalyst, Genius Ventures and Ground Up Ventures",
+            "quote_hash": "28719cf3b3cf27940d78970d6175d054bc0078fd782bc2ef8808175830bf2c9a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b9e7ce7d6433a552",
         "funding_insight_id": "FI-78eb3d598e6e9a99",
@@ -193,6 +239,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-28715696ca7123d8",
+        "source_url": "https://www.globenewswire.com/news-release/2026/10/20/3384598/0/en/applied-ai-company-baba-raises-40-million-series-a-to-improve-the-medicare-experience.html",
+        "source_title": "应用AI公司Baba完成4000万美元A轮融资，以改善Medicare体验",
+        "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+        "quote": "returning investors General Catalyst, Genius Ventures and Ground Up Ventures",
+        "quote_hash": "28719cf3b3cf27940d78970d6175d054bc0078fd782bc2ef8808175830bf2c9a"
+      },
+      {
         "source_id": "FISRC-17b0a4ba7027e6a1",
         "source_url": "https://markets.businessinsider.com/news/stocks/melius-raises-25-million-for-the-first-agents-lab-for-creative-work-1036600860",
         "source_title": "Melius Raises $25 Million for the First Agents Lab for Creative Work",
@@ -236,6 +290,10 @@
           "source_id": "genius_activity"
         },
         {
+          "description": "融资来源记录：Baba · A轮 · 2026-10-20 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-28715696ca7123d8"
+        },
+        {
           "description": "融资来源记录：Melius · 多轮融资 · 2026-10-06 · 本轮参投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-17b0a4ba7027e6a1"
         },
@@ -269,6 +327,14 @@
           "source_content_hash": "b63a305f694ff9380f4e163117018b0283dd0f1ed09d17f0d987ba5e375deb4a",
           "quote": "investors: Abstract, Human Capital, Forerunner, Terrain, Restive, and Genius Ventures, along with some of the best founders and operators in the world",
           "quote_hash": "89ba2ee06d30e4e8bd87874851f64bbbe90fa0b4908f45b396e9fd86813c95e6"
+        },
+        {
+          "source_id": "FISRC-28715696ca7123d8",
+          "source_url": "https://www.globenewswire.com/news-release/2026/10/20/3384598/0/en/applied-ai-company-baba-raises-40-million-series-a-to-improve-the-medicare-experience.html",
+          "source_title": "应用AI公司Baba完成4000万美元A轮融资，以改善Medicare体验",
+          "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+          "quote": "returning investors General Catalyst, Genius Ventures and Ground Up Ventures",
+          "quote_hash": "28719cf3b3cf27940d78970d6175d054bc0078fd782bc2ef8808175830bf2c9a"
         },
         {
           "source_id": "FISRC-17b0a4ba7027e6a1",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-20",
-    "currentDate": "2026-10-20",
-    "eventCount": 4201,
+    "generatedAt": "2026-10-21T05:53:32.452Z",
+    "latestDataDate": "2026-10-21",
+    "currentDate": "2026-10-21",
+    "eventCount": 4214,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -21929,8 +21929,626 @@
   ],
   "events": [
     {
+      "id": "EV-38025644fa182d90",
+      "dataDate": "2026-10-21",
+      "date": "2026-10-21",
+      "updatedDate": "2026-10-21",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "对冲基金融资触及上限 巴克莱内部腾挪资本支持客户押注",
+      "originalTitle": "",
+      "subject": "对冲基金",
+      "action": "融资",
+      "object": "触及上限 巴克莱内部腾挪资本支持客户押注",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9b82bbd3accebc55"
+      ],
+      "entityNames": [
+        "对冲基金"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://finance.sina.com.cn/world/2026-10-21/doc-inivxeww0932767.shtml?cre=tianyi&mod=pchp&loc=16&r=0&rfunc=36&tj=cxvertical_pc_hp&tr=12",
+      "publisher": "finance.sina.com.cn"
+    },
+    {
+      "id": "EV-511f7a03673f6cce",
+      "dataDate": "2026-10-21",
+      "date": "2026-10-21",
+      "updatedDate": "2026-10-21",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "具身智能操作平台与动力系统公司「YITA伊塔动力」完成超亿元种子和种子+轮融资",
+      "originalTitle": "",
+      "subject": "具身智能操作平台与动力系统公司「YITA伊塔动力」",
+      "action": "完成超亿元种子和种子+轮融资",
+      "object": "具身智能操作平台与动力系统公司「YITA伊塔动力」完成超亿元种子和种子+轮融资",
+      "metrics": [
+        "超亿元"
+      ],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8c3dcbdbf4adb47f",
+        "EN-c5456c9421743002"
+      ],
+      "entityNames": [
+        "动力系统公司「YITA伊塔动力」",
+        "银河通用"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202610/570575.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-7c5953aae2767bfa",
+      "dataDate": "2026-10-21",
+      "date": "2026-10-21",
+      "updatedDate": "2026-10-21",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "小派科技获智元旗下觅蜂科技战略融资",
+      "originalTitle": "",
+      "subject": "小派科技获智元旗下觅蜂科技战略",
+      "action": "融资",
+      "object": "小派科技获智元旗下觅蜂科技战略融资",
+      "metrics": [
+        "超亿元"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "regulatory_jurisdiction"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-a23799263cfdbab5",
+          "CL-591812528097b980",
+          "CL-e14f555c48b59e6b"
+        ]
+      },
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-55a5064b725214bf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-55a5064b725214bf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-55a5064b725214bf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-55a5064b725214bf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-55a5064b725214bf"
+      ],
+      "entityNames": [
+        "小派科技获智元旗下觅蜂科技战略"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202610/570582.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-5f298468c125d834",
+      "dataDate": "2026-10-21",
+      "date": "2026-10-20",
+      "updatedDate": "2026-10-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "应用AI公司Baba完成4000万美元A轮融资，以改善Medicare体验",
+      "originalTitle": "Applied AI Company Baba Raises $40 Million Series A to Improve the Medicare Experience",
+      "subject": "Applied AI Company Baba",
+      "action": "Raises",
+      "object": "$40 Million Series A to Improve the Medicare Experience",
+      "metrics": [
+        "$40 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-dc8c5e2353fe9ebe",
+        "EN-e75a6cd43a16c2f3"
+      ],
+      "entityNames": [
+        "Applied AI Company Baba",
+        "Baba"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/10/20/3384598/0/en/applied-ai-company-baba-raises-40-million-series-a-to-improve-the-medicare-experience.html",
+      "publisher": "www.globenewswire.com"
+    },
+    {
+      "id": "EV-5fbe1afea8264e75",
+      "dataDate": "2026-10-21",
+      "date": "2026-10-20",
+      "updatedDate": "2026-10-20",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "OpenAI 收购初创公司 Orchestra Bio 以加强其生物技术业务",
+      "originalTitle": "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business",
+      "subject": "OpenAI",
+      "action": "acquires",
+      "object": "startup Orchestra Bio⁠ to beef up its biotech business",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-8643bc9e4d4f452b",
+      "dataDate": "2026-10-21",
+      "date": "2026-10-20",
+      "updatedDate": "2026-10-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Ganiga 获 €2.5M 融资，用于扩展其 AI 驱动的食物浪费技术",
+      "originalTitle": "Ganiga secures €2.5M to expand its AI-powered food waste technology",
+      "subject": "Ganiga",
+      "action": "secures",
+      "object": "€2.5M to expand its AI-powered food waste technology",
+      "metrics": [
+        "€1.5 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-f2343a46fdbc194e"
+      ],
+      "entityNames": [
+        "Ganiga"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.eu/2026/10/20/ganiga-secures-eur25m-to-expand-its-ai-powered-food-waste-technology/",
+      "publisher": "tech.eu"
+    },
+    {
+      "id": "EV-c66ddcd78c89a643",
+      "dataDate": "2026-10-21",
+      "date": "2026-10-20",
+      "updatedDate": "2026-10-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "哥本哈根的 Plinto 融资 290 万欧元，助力财务团队借助 AI 智能体发现并修复错误",
+      "originalTitle": "Copenhagen’s Plinto raises €2.9 million to help finance teams catch and fix errors with AI agents",
+      "subject": "Copenhagen’s Plinto",
+      "action": "raises",
+      "object": "€2.9 million to help finance teams catch and fix errors with AI agents",
+      "metrics": [
+        "€2.9 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-eba7990af95abefe"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-eba7990af95abefe"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-eba7990af95abefe"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-d2c19f369e44854b",
+        "EN-eba7990af95abefe",
+        "EN-4a2aac1ffda17e54"
+      ],
+      "entityNames": [
+        "Plinto",
+        "Copenhagen’s Plinto",
+        "Danish startup Plinto"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/copenhagens-plinto-raises-e2-9-million-to-help-finance-teams-catch-and-fix-errors-with-ai-agents/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
+      "id": "EV-ea103ce3f64fea8e",
+      "dataDate": "2026-10-21",
+      "date": "2026-10-20",
+      "updatedDate": "2026-10-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Eka 因一款令专家赞不绝口的物理 AI 模型而估值达 $1.45B",
+      "originalTitle": "Eka is worth $1.45B thanks to a physical AI model that has experts raving",
+      "subject": "Eka Robotics",
+      "action": "funding",
+      "object": "$150 million Series A round valuing it at $1.45 billion post-money, led by a16z and F-Prime",
+      "metrics": [
+        "$150 million",
+        "$1.45 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-389589e9fc05afc3"
+      ],
+      "entityNames": [
+        "Eka Robotics"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-edcad9269df083ac",
+      "dataDate": "2026-10-21",
+      "date": "2026-10-20",
+      "updatedDate": "2026-10-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "伦敦的“外科智能”公司XRlabs融资748万欧元，将AI引入手术室",
+      "originalTitle": "London-based “Surgical Intelligence” company XRlabs raises €7.48 million to bring AI into the operating room",
+      "subject": "London-based “Surgical Intelligence” company XRlabs",
+      "action": "raises",
+      "object": "€7.48 million to bring AI into the operating room",
+      "metrics": [
+        "€7.48 million",
+        "$8.4 million",
+        "€2.9 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-0fda346d532b132e",
+        "EN-e45862999c9d1f17"
+      ],
+      "entityNames": [
+        "XRlabs",
+        "London-based “Surgical Intelligence” company XRlabs"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/london-based-surgical-intelligence-company-xrlabs-raises-e7-48-million-to-bring-ai-into-the-operating-room/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
+      "id": "EV-fa58c17e7bde893c",
+      "dataDate": "2026-10-21",
+      "date": "2026-10-20",
+      "updatedDate": "2026-10-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Otter AI 为其会议工具从 General Catalyst 增长基金筹集 3.2 亿美元",
+      "originalTitle": "Otter AI raises $320M from General Catalyst&#8217;s growth fund for its meeting tool",
+      "subject": "Otter AI",
+      "action": "raises",
+      "object": "$320M from General Catalyst&#8217;s growth fund for its meeting tool",
+      "metrics": [
+        "$320 million",
+        "$50 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e8f7acab9d27b492"
+      ],
+      "entityNames": [
+        "Otter AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-47114264f19bc46f",
+      "dataDate": "2026-10-21",
+      "date": "2026-10-19",
+      "updatedDate": "2026-10-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "联发科老兵创办，芯爱科技完成近15亿元融资、胜宏科技及瑞芯微加持",
+      "originalTitle": "",
+      "subject": "联发科老兵创办，芯爱科技",
+      "action": "完成近15亿元融资",
+      "object": "、胜宏科技及瑞芯微加持",
+      "metrics": [
+        "15亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-077bbcba652dc144"
+      ],
+      "entityNames": [
+        "联发科老兵创办"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://m.sohu.com/a/1089999430_121071031?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+      "publisher": "m.sohu.com"
+    },
+    {
       "id": "EV-064c7e0a79e6f4e1",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "funding",
@@ -21976,7 +22594,7 @@
     },
     {
       "id": "EV-51f0958b144e699a",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "funding",
@@ -22027,7 +22645,7 @@
     },
     {
       "id": "EV-59841d8e9da58cd4",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "funding",
@@ -22070,6 +22688,161 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/10/19/tolan-snags-30m-for-its-ai-companion-that-helps-users-navigate-life/",
       "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-72d09299a334d0d9",
+      "dataDate": "2026-10-21",
+      "date": "2026-10-19",
+      "updatedDate": "2026-10-19",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Dream Labs 为任意机器人 AI 模型融资 9000 万美元种子轮",
+      "originalTitle": "Dream Labs Raises $90M Seed for Any-Robot AI Model",
+      "subject": "Dream Labs",
+      "action": "Raises",
+      "object": "$90M Seed for Any-Robot AI Model",
+      "metrics": [
+        "$90M",
+        "$90 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-c2f693f92991bd18"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-c2f693f92991bd18"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-c2f693f92991bd18"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-c2f693f92991bd18"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-c2f693f92991bd18"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-c2f693f92991bd18"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-c2f693f92991bd18"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-c2f693f92991bd18"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-c2f693f92991bd18"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c2f693f92991bd18",
+        "EN-8d4321d936320802",
+        "EN-1b9d4ad74ff113b2"
+      ],
+      "entityNames": [
+        "Dream Labs",
+        "NVIDIA",
+        "Ex-NVIDIA researchers’ Dream Labs"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://shattered.io/dream-labs-90m-seed-robot-foundation-model-2026/",
+      "publisher": "shattered.io"
     },
     {
       "id": "EV-781ee2c31f86be37",
@@ -22122,7 +22895,7 @@
     },
     {
       "id": "EV-79fbe4ea3a11c695",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "funding",
@@ -22176,7 +22949,7 @@
     },
     {
       "id": "EV-87beb0ebdfa293de",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "funding",
@@ -22309,7 +23082,7 @@
     },
     {
       "id": "EV-dbb70aae28663f67",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "funding",
@@ -22617,7 +23390,7 @@
     },
     {
       "id": "EV-0c6afd346f19b0a6",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-15",
       "updatedDate": "2026-10-15",
       "eventType": "funding",
@@ -23181,7 +23954,7 @@
     },
     {
       "id": "EV-3a09e2f76f792423",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-15",
       "updatedDate": "2026-10-15",
       "eventType": "funding",
@@ -23548,7 +24321,7 @@
     },
     {
       "id": "EV-e260188a14619627",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-15",
       "updatedDate": "2026-10-15",
       "eventType": "funding",
@@ -23746,7 +24519,7 @@
     },
     {
       "id": "EV-1a8680342a138dd5",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "funding",
@@ -23794,7 +24567,7 @@
     },
     {
       "id": "EV-40fcb6b8c3d22d2a",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "funding",
@@ -23925,7 +24698,7 @@
     },
     {
       "id": "EV-4825aa01d742cad3",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "funding",
@@ -23971,7 +24744,7 @@
     },
     {
       "id": "EV-4973399a1e386bb5",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "funding",
@@ -24154,7 +24927,7 @@
     },
     {
       "id": "EV-624a5429f93742b9",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "funding",
@@ -24805,7 +25578,7 @@
     },
     {
       "id": "EV-a0f070acd36db2ad",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "funding",
@@ -24853,7 +25626,7 @@
     },
     {
       "id": "EV-b51a67353e247022",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "funding",
@@ -24901,7 +25674,7 @@
     },
     {
       "id": "EV-db5825e75f029641",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "funding",
@@ -24947,7 +25720,7 @@
     },
     {
       "id": "EV-de11eaf439ccee3f",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "funding",
@@ -224084,7 +224857,7 @@
           "name": "Featherless.ai",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -280933,7 +281706,9 @@
         {
           "name": "GPT-6 Astra",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/openai-rolls-out-gpt-6-astra-to-top-tier-chatgpt-plans-at-half-the-rate-of-gpt-5-6-sol",
@@ -320401,7 +321176,7 @@
     },
     {
       "id": "EV-e120eaba7fc9e768",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "product_release",
@@ -320546,7 +321321,7 @@
     },
     {
       "id": "EV-5bfda41262dea3d5",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "product_release",
@@ -320649,7 +321424,7 @@
     },
     {
       "id": "EV-b86890a5d3330971",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-17",
       "updatedDate": "2026-10-17",
       "eventType": "service_change",
@@ -320693,7 +321468,7 @@
     },
     {
       "id": "EV-131ba54baeef4a0a",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-16",
       "updatedDate": "2026-10-16",
       "eventType": "model_release",
@@ -320707,7 +321482,10 @@
       "subject": "Elorian",
       "action": "model_release",
       "object": "Glimpse",
-      "metrics": [],
+      "metrics": [
+        "$55 million",
+        "$300 million"
+      ],
       "locations": [],
       "missingFields": [],
       "conflicts": [],
@@ -320737,7 +321515,7 @@
     },
     {
       "id": "EV-fc95a34161565286",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-16",
       "updatedDate": "2026-10-16",
       "eventType": "product_release",
@@ -320798,7 +321576,7 @@
     },
     {
       "id": "EV-30f226e60b20de03",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "product_release",
@@ -320822,10 +321600,10 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-45c5d1dc171debf3",
-          "CL-f4530a20549733f7",
-          "CL-092a858e58361146",
-          "CL-a3e39dffda8577b5"
+          "CL-7fb2349408b4bd5a",
+          "CL-d76c14ef4a25d3a1",
+          "CL-a43ea0841131d5d5",
+          "CL-6d1e873bd3f6cd53"
         ]
       },
       "missingFields": [],
@@ -321767,7 +322545,7 @@
           "name": "TypeSafe",
           "type": "产品/服务",
           "ownerNames": [
-            "Databricks"
+            "OpenAI"
           ]
         }
       ],
@@ -322209,7 +322987,9 @@
         {
           "name": "GPT-6.1 Sol",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/09/30/openai-releases-gpt-6-1-sol-near-astra-coding-and-computer-use-at-one-fifth-of-astras-token-price",
@@ -322266,7 +323046,7 @@
           "name": "AI Tamagotchis",
           "type": "AI 硬件",
           "ownerNames": [
-            "Apple"
+            "OpenAI"
           ]
         }
       ],
@@ -322757,7 +323537,7 @@
           "name": "Dot",
           "type": "产品/服务",
           "ownerNames": [
-            "Apple"
+            "OpenAI"
           ]
         }
       ],
@@ -322936,7 +323716,9 @@
         {
           "name": "Decisions API",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/09/30/openais-jev-clone-could-help-the-frontier-lab-stop-its-swarming-agents",
@@ -323028,17 +323810,23 @@
         {
           "name": "Decisions API",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Why Dwarkesh",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Computer Use",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://latent.space/p/devday-2026",
@@ -324989,7 +325777,9 @@
         {
           "name": "GPT-6 Astra",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/chatgpt-voice-gets-closer-to-her-with-email-calendar-and-slack-access",
@@ -326811,12 +327601,16 @@
         {
           "name": "GPT-6 Sol",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "GPT-6 Luna",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/1/006/001.htm",
@@ -327226,7 +328020,7 @@
           "name": "GPT-6 Sol",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -327779,12 +328573,16 @@
         {
           "name": "GPT-6 Sol",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "GPT-6 Sol and Luna",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna",
@@ -328033,7 +328831,9 @@
         {
           "name": "System One",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://simonwillison.net/2026/Sep/21/jev",
@@ -329024,12 +329824,16 @@
         {
           "name": "AI Agents News",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "AI operations hub",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://aiagentstore.ai/ai-agent-news/this-week",
@@ -331091,12 +331895,16 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Codex",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/unity-launches-official-plugins-for-claude-code-and-openai-codex-to-stop-ai-agents-from-using-outdated-tutorials",
@@ -332324,12 +333132,16 @@
         {
           "name": "Astra for Law",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Astra",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/1/003/927.htm",
@@ -332429,12 +333241,16 @@
         {
           "name": "Astra for Law",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Astra",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/openai-takes-aim-at-the-legal-market-with-astra-for-law",
@@ -333290,7 +334106,9 @@
         {
           "name": "EOS R8 Mark II",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://sspai.com/post/114658",
@@ -333393,17 +334211,23 @@
         {
           "name": "TypeSafe AI",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Diogo Almeida",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Jev",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/1/003/584.htm",
@@ -334647,14 +335471,14 @@
           "name": "GPT-Live-1",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "OpenAI"
           ]
         },
         {
           "name": "Gemini 3.8 Live",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "OpenAI"
           ]
         }
       ],
@@ -336943,12 +337767,16 @@
         {
           "name": "GPT-6 Astra",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Altmans Critical Warning",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://shattered.io/altman-critical-warning-astra-zero-days-2026",
@@ -337572,12 +338400,16 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "ChatGPT for Financial",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://isystem.ai/blog/ai-brief-2026-09-11",
@@ -338013,12 +338845,16 @@
         {
           "name": "Agents API",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/openais-new-agents-api-gives-developers-the-infrastructure-behind-codex-and-chatgpt",
@@ -338568,7 +339404,9 @@
         {
           "name": "Agents API",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/1/001/072.htm",
@@ -338692,12 +339530,16 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "ChatGPT for Financial",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/1/001/063.htm",
@@ -338749,7 +339591,9 @@
         {
           "name": "Agents API",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://developers.openai.com/api/docs/guides/agents-api/overview",
@@ -339136,7 +339980,9 @@
         {
           "name": "GPT-Live-1",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/1/001/091.htm",
@@ -339248,17 +340094,23 @@
         {
           "name": "GPT-Live-1",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "GPT-Live-1 API",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "GPT-Live-1 as a developer API.",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/openais-gpt-live-1-api-lets-developers-build-apps-that-talk-and-listen-at-the-same-time",
@@ -339346,7 +340198,9 @@
         {
           "name": "ChatGPT Images 2.5",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://bensbites.com/p/everyone-needs-a-muse",
@@ -340218,12 +341072,16 @@
         {
           "name": "GPT-6 Astra",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Pro",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/1/000/305.htm",
@@ -340786,12 +341644,16 @@
         {
           "name": "ChatGPT Images 2.5",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Sketch",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/999/956.htm",
@@ -341523,7 +342385,9 @@
         {
           "name": "GPT-6 Astra",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://readaitime.com/digests/2026-09-08",
@@ -342966,7 +343830,7 @@
           "name": "Astra",
           "type": "产品/服务",
           "ownerNames": [
-            "NVIDIA"
+            "OpenAI"
           ]
         }
       ],
@@ -343788,7 +344652,9 @@
         {
           "name": "GPT-6 Astra",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/998/833.htm",
@@ -344444,7 +345310,9 @@
         {
           "name": "GPT-6 Astra",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/998/661.htm",
@@ -344700,12 +345568,16 @@
         {
           "name": "GPT-6 Astra",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "ChatGPT Work",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/998/626.htm",
@@ -344879,7 +345751,9 @@
         {
           "name": "GPT-6 Astra",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://readhub.cn/daily",
@@ -345599,7 +346473,7 @@
           "name": "GPT-6 Astra",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenRouter"
+            "OpenAI"
           ]
         }
       ],
@@ -345838,7 +346712,7 @@
           "name": "GPT-6 Astra",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -346172,7 +347046,9 @@
         {
           "name": "GPT-6 Astra",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/998/208.htm",
@@ -346266,17 +347142,23 @@
         {
           "name": "CyberAgents Exchange AI Inspector",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "AI Inspector",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "AI Agents News",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://aiagentstore.ai/ai-agent-news/this-week",
@@ -346601,12 +347483,16 @@
         {
           "name": "Daybreak for Frontline Defenders",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Daybreak",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/998/212.htm",
@@ -346892,7 +347778,9 @@
         {
           "name": "Astra",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model",
@@ -347965,7 +348853,7 @@
           "name": "TechRadar",
           "type": "AI 硬件",
           "ownerNames": [
-            "NVIDIA"
+            "OpenAI"
           ]
         }
       ],
@@ -348127,7 +349015,7 @@
           "name": "GPT-6 Astra",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "OpenAI"
           ]
         }
       ],
@@ -348664,21 +349552,21 @@
           "name": "ChatGPT",
           "type": "产品/服务",
           "ownerNames": [
-            "xAI"
+            "OpenAI"
           ]
         },
         {
           "name": "GenAI.mil",
           "type": "产品/服务",
           "ownerNames": [
-            "xAI"
+            "OpenAI"
           ]
         },
         {
           "name": "ChatGPT and Grok",
           "type": "产品/服务",
           "ownerNames": [
-            "xAI"
+            "OpenAI"
           ]
         }
       ],
@@ -351836,7 +352724,9 @@
         {
           "name": "GPT-6",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/996/120.htm",
@@ -353147,7 +354037,9 @@
         {
           "name": "Always-on",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/always-on-and-self-starting-ai-agents-might-be-openais-next-big-play",
@@ -357137,7 +358029,9 @@
         {
           "name": "ChatGPT Work",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/994/294.htm",
@@ -357402,7 +358296,9 @@
         {
           "name": "ChatGPT Plus",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/994/339.htm",
@@ -357710,7 +358606,7 @@
           "name": "Jalape",
           "type": "AI 硬件",
           "ownerNames": [
-            "NVIDIA"
+            "OpenAI"
           ]
         }
       ],
@@ -357789,7 +358685,7 @@
           "name": "GPT-3",
           "type": "产品/服务",
           "ownerNames": [
-            "智谱AI"
+            "OpenAI"
           ]
         }
       ],
@@ -359795,7 +360691,9 @@
         {
           "name": "Python",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://simonwillison.net/2026/Aug/22/llm",
@@ -359895,7 +360793,9 @@
         {
           "name": "Python",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://simonwillison.net/2026/Aug/22/llm",
@@ -360123,7 +361023,9 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/993/301.htm",
@@ -360560,7 +361462,9 @@
         {
           "name": "Codex",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/993/235.htm",
@@ -361613,7 +362517,9 @@
         {
           "name": "Codex Harness",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/992/656.htm",
@@ -361774,7 +362680,7 @@
           "name": "ChatGPT",
           "type": "产品/服务",
           "ownerNames": [
-            "Apple"
+            "OpenAI"
           ]
         }
       ],
@@ -362700,7 +363606,7 @@
           "name": "Agent OS",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -362753,7 +363659,9 @@
         {
           "name": "Private Safety Processing",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/openai-builds-safety-system-that-catches-misuse-without-storing-customer-data",
@@ -364641,7 +365549,7 @@
           "name": "Private Safety Processing",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -365181,7 +366089,9 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/openai-launches-a-chatgpt-version-built-for-teens",
@@ -365233,7 +366143,9 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it",
@@ -365432,7 +366344,7 @@
           "name": "MatrAIx",
           "type": "产品/服务",
           "ownerNames": [
-            "Google DeepMind"
+            "OpenAI"
           ]
         }
       ],
@@ -365572,14 +366484,14 @@
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenRouter"
+            "OpenAI"
           ]
         },
         {
           "name": "GPT-5.6",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenRouter"
+            "OpenAI"
           ]
         }
       ],
@@ -367697,12 +368609,16 @@
         {
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Ultrafast mode powered by Cerebras",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/gpt-5-6-sol-goes-14x-faster-as-openai-launches-ultrafast-mode-powered-by-cerebras",
@@ -368303,12 +369219,16 @@
         {
           "name": "GPT-5.6 Sol Ultrafast",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Ultrafast",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/989/492.htm",
@@ -369513,7 +370433,7 @@
           "name": "Ultrafast",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -371480,12 +372400,16 @@
         {
           "name": "ChatGPT Linux",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "ChatGPT desktop",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/openai-launches-chatgpt-desktop-app-for-linux",
@@ -372012,12 +372936,16 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "ChatGPT for Linux",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/988/562.htm",
@@ -373430,12 +374358,16 @@
         {
           "name": "ChatGPT Business",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Premium Seats for ChatGPT",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/openai-introduces-125-premium-seats-for-chatgpt-business-as-agentic-ai-burns-through-more-tokens",
@@ -374056,7 +374988,7 @@
           "name": "GPT-5.6-Cyber",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -374176,14 +375108,14 @@
           "name": "AI-led",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "As AI-led",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -374980,7 +375912,9 @@
         {
           "name": "GPT-5.6-Cyber",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/openai-launches-gpt-5-6-cyber-to-help-defenders-find-vulnerabilities-before-attackers-do",
@@ -375331,7 +376265,9 @@
         {
           "name": "August 2026 Latest Updates",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://releasebot.io/updates/openai",
@@ -375946,14 +376882,14 @@
           "name": "Pokee-Isaac",
           "type": "产品/服务",
           "ownerNames": [
-            "SGLang"
+            "OpenAI"
           ]
         },
         {
           "name": "Pokee-Isaac 28",
           "type": "产品/服务",
           "ownerNames": [
-            "SGLang"
+            "OpenAI"
           ]
         }
       ],
@@ -378242,7 +379178,9 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/986/957.htm",
@@ -378391,12 +379329,16 @@
         {
           "name": "GPT-4.5",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Astra AI",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/986/789.htm",
@@ -378450,12 +379392,16 @@
         {
           "name": "GPT-5.6 Luna",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "ChatGPT",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/986/776.htm",
@@ -383850,7 +384796,9 @@
         {
           "name": "July 2026 Latest Updates",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://releasebot.io/updates/openai",
@@ -384158,12 +385106,16 @@
         {
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "ARC-AGI-3",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/984/208.htm",
@@ -384940,7 +385892,7 @@
           "name": "GPT-5.6",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "OpenAI"
           ]
         }
       ],
@@ -385569,12 +386521,16 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "ChatGPT for Academic Researchers",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/983/376.htm",
@@ -385885,7 +386841,7 @@
           "name": "Codex Security CLI",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -386203,12 +387159,16 @@
         {
           "name": "GPT-Live-Transcribe",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "GPT-Transcribe",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/982/801.htm",
@@ -386426,7 +387386,9 @@
         {
           "name": "Modal Labs",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/982/800.htm",
@@ -386478,7 +387440,9 @@
         {
           "name": "Codex Security CLI",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/982/823.htm",
@@ -388691,7 +389655,7 @@
           "name": "Claude Opus 5",
           "type": "模型",
           "ownerNames": [
-            "NVIDIA"
+            "OpenAI"
           ]
         }
       ],
@@ -390355,7 +391319,7 @@
           "name": "Presence",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "OpenAI"
           ]
         }
       ],
@@ -391445,7 +392409,9 @@
         {
           "name": "Presence",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://artificialintelligence-news.com/news/openai-presence-enterprise-ai-agents",
@@ -394020,7 +394986,7 @@
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -395580,12 +396546,16 @@
         {
           "name": "Hugging Face",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "GLM-5.2",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/980/837.htm",
@@ -396266,7 +397236,7 @@
           "name": "Presence",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -396690,7 +397660,7 @@
           "name": "Gemini 3.6 Flash",
           "type": "模型",
           "ownerNames": [
-            "Google"
+            "OpenAI"
           ]
         }
       ],
@@ -397114,7 +398084,9 @@
         {
           "name": "GPT-6",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/979/823.htm",
@@ -397819,7 +398791,9 @@
         {
           "name": "Hugging Face",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/979/815.htm",
@@ -400136,7 +401110,9 @@
         {
           "name": "Hugging Face",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/07/21/openai-says-hugging-face-was-breached-by-its-pre-release-models",
@@ -401969,7 +402945,9 @@
         {
           "name": "Codex",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/979/146.htm",
@@ -404553,7 +405531,7 @@
           "name": "Claude Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
@@ -406350,7 +407328,9 @@
         {
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/978/347.htm",
@@ -406529,7 +407509,7 @@
           "name": "ChatGPT",
           "type": "产品/服务",
           "ownerNames": [
-            "Apple"
+            "OpenAI"
           ]
         }
       ],
@@ -412653,7 +413633,9 @@
         {
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/976/792.htm",
@@ -413727,7 +414709,7 @@
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "OpenAI"
           ]
         }
       ],
@@ -416045,12 +417027,16 @@
         {
           "name": "GPT-5.6 Sol",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Claude Opus 4.8",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6",
@@ -416366,7 +417352,7 @@
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -417618,7 +418604,9 @@
         {
           "name": "GPT-5.6 Sol Ultra",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/975/646.htm",
@@ -417844,7 +418832,9 @@
         {
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/975/461.htm",
@@ -418070,7 +419060,9 @@
         {
           "name": "ChatGPT Work",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/openai-admits-it-didnt-get-everything-quite-right-with-chatgpt-work-launch-and-scrambles-to-fix-ux-and-costs",
@@ -418479,7 +419471,7 @@
           "name": "GPT-5.6",
           "type": "模型",
           "ownerNames": [
-            "Intel"
+            "OpenAI"
           ]
         }
       ],
@@ -418818,7 +419810,9 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/974/804.htm",
@@ -418908,7 +419902,9 @@
         {
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/974/792.htm",
@@ -419518,7 +420514,7 @@
           "name": "GPT-5.6",
           "type": "产品/服务",
           "ownerNames": [
-            "xAI"
+            "OpenAI"
           ]
         }
       ],
@@ -419675,7 +420671,9 @@
         {
           "name": "ChatGPT Work",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/974/789.htm",
@@ -420136,12 +421134,16 @@
         {
           "name": "ChatGPT Atlas",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset",
@@ -420416,7 +421418,9 @@
         {
           "name": "SWE-Bench Pro",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/974/531.htm",
@@ -420897,7 +421901,9 @@
         {
           "name": "Introducing GPT",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://simonwillison.net/2026/Jul/8/introducing-gptlive",
@@ -421817,7 +422823,7 @@
           "name": "U.S",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -422052,12 +423058,16 @@
         {
           "name": "GPT-5.6 Sol",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "GPT-5.6 Thursday",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://tldr.tech/ai/2026-07-08",
@@ -432920,14 +433930,14 @@
           "name": "GPT-5.6 Sol",
           "type": "产品/服务",
           "ownerNames": [
-            "Aina"
+            "OpenAI"
           ]
         },
         {
           "name": "Claude Mythos",
           "type": "产品/服务",
           "ownerNames": [
-            "Aina"
+            "OpenAI"
           ]
         }
       ],
@@ -432980,7 +433990,9 @@
         {
           "name": "Quoting OpenAI",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://simonwillison.net/2026/Jun/26/openai",
@@ -433166,17 +434178,23 @@
         {
           "name": "GPT-5.6",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "US AI",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "GPT-5.6 amid US AI regulatory drama",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview",
@@ -434476,12 +435494,16 @@
         {
           "name": "AI Workflow Automation",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Agent Builder",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://techshotsapp.com/artificial-intelligence/openai-launches-agent-builder-to-compete-with-n8n-and-zapier-in-ai-workflow-automation",
@@ -434623,7 +435645,7 @@
           "name": "DevDay 2025",
           "type": "产品/服务",
           "ownerNames": [
-            "Canva"
+            "OpenAI"
           ]
         }
       ],
@@ -436802,7 +437824,7 @@
           "name": "Claude Mythos 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -438303,7 +439325,7 @@
           "name": "Baichuan-M4",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -440122,7 +441144,7 @@
           "name": "GPT-5.6",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -440510,7 +441532,9 @@
         {
           "name": "GPT-5.6",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/966/506.htm",
@@ -442600,7 +443624,9 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/965/700.htm",
@@ -443105,7 +444131,9 @@
         {
           "name": "AgentKit",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://techcrunch.com/2025/10/06/openai-launches-agentkit-to-help-developers-build-and-ship-ai-agents",
@@ -443680,17 +444708,23 @@
         {
           "name": "ChatGPT",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "GPT-Bidi-1",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "GPT-Bidi-1 AI",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/965/407.htm",
@@ -451472,7 +452506,9 @@
         {
           "name": "Oasis 3",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/06/10/decarts-new-world-model-can-simulate-hours-of-photorealistic-driving-with-some-caveats",
@@ -452355,7 +453391,9 @@
         {
           "name": "GPT-2",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://naokishibuya.github.io/blog/2022-12-30-gpt-2-2019",
@@ -455438,7 +456476,7 @@
           "name": "Clive Chan",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -456018,12 +457056,16 @@
         {
           "name": "GPT-5 API",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "GPT-5",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://techcrunch.com/2025/08/08/openai-priced-gpt-5-so-low-it-may-spark-a-price-war",
@@ -456473,7 +457515,9 @@
         {
           "name": "Lockdown Mode",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks",
@@ -458791,12 +459835,16 @@
         {
           "name": "Codex Sites",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Sites",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/959/032.htm",
@@ -459246,7 +460294,9 @@
         {
           "name": "Codex",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/959/028.htm",
@@ -459652,7 +460702,9 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/958/464.htm",
@@ -460064,7 +461116,7 @@
           "name": "Vera",
           "type": "产品/服务",
           "ownerNames": [
-            "NVIDIA"
+            "OpenAI"
           ]
         }
       ],
@@ -462236,7 +463288,7 @@
           "name": "Fara1.5",
           "type": "模型",
           "ownerNames": [
-            "Microsoft"
+            "OpenAI"
           ]
         }
       ],
@@ -462403,12 +463455,16 @@
         {
           "name": "Frontier",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Frontier on February 5",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://www.digitalapplied.com/blog/openai-frontier-enterprise-ai-agent-platform-guide",
@@ -462501,7 +463557,9 @@
         {
           "name": "Frontier in bid",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://www.cnbc.com/2026/02/05/open-ai-frontier-enterprise-customers.html",
@@ -463555,17 +464613,23 @@
         {
           "name": "Becomes First Business",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Automation",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "Native Integration for Coding",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202605120830BIZWIRE_USPRX____20260512_BW960969-1",
@@ -464420,14 +465484,14 @@
           "name": "Open Source Distribution",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "Distribution",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -465608,15 +466672,135 @@
         {
           "name": "Sam Altman 2022",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://simonwillison.net/2026/Jul/20/sam-altman",
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-1d592d9d6ed402c9",
+      "dataDate": "2026-10-21",
+      "date": "2026-10-20",
+      "updatedDate": "2026-10-20",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "SpaceX 的 AI 业务超出预期",
+      "originalTitle": "SpaceX&#8217;s AI business is beating expectations",
+      "subject": "SpaceX",
+      "action": "financial_performance",
+      "object": "$14.6 billion in third-quarter revenue",
+      "metrics": [
+        "$14.6 billion",
+        "$7.5 billion",
+        "$4.4 billion",
+        "$1 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "developer_tool",
+            "name": "开发者工具",
+            "entityIds": [
+              "EN-e78bdebae031095b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-e78bdebae031095b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "developer_tool",
+          "name": "开发者工具",
+          "entityIds": [
+            "EN-e78bdebae031095b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-e78bdebae031095b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "developer_tool",
+          "name": "开发者工具",
+          "entityIds": [
+            "EN-e78bdebae031095b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-e78bdebae031095b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-e78bdebae031095b"
+      ],
+      "entityNames": [
+        "SpaceX"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations/",
+      "publisher": "techcrunch.com"
+    },
+    {
       "id": "EV-5112093b7b857728",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-18",
       "updatedDate": "2026-10-18",
       "eventType": "financial_performance",
@@ -465668,7 +466852,7 @@
     },
     {
       "id": "EV-d35419bc2f596bce",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-18",
       "updatedDate": "2026-10-18",
       "eventType": "capital_investment",
@@ -465683,6 +466867,9 @@
       "action": "capital_investment",
       "object": "Anthropic Public Benefit Fund",
       "metrics": [
+        "5%",
+        "2%",
+        "50%",
         "$200 million"
       ],
       "locations": [],
@@ -465762,7 +466949,7 @@
     },
     {
       "id": "EV-3b5b6781c5cade6b",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-21",
       "date": "2026-10-14",
       "updatedDate": "2026-10-14",
       "eventType": "capital_investment",
@@ -471183,7 +472370,9 @@
         {
           "name": "GPT-6 Astra",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/openais-gpt-6-astra-decrypts-a-nazi-radio-message-in-ten-hours-that-went-unsolved-for-83-years",
@@ -474555,7 +475744,7 @@
           "name": "Navier-Stokes",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -474773,14 +475962,14 @@
           "name": "Navier-Stokes",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "GPT-6 Astra alongside 10",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -475438,7 +476627,9 @@
         {
           "name": "GPT-6 Astra",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/998/927.htm",
@@ -479970,7 +481161,7 @@
           "name": "Jalape",
           "type": "产品/服务",
           "ownerNames": [
-            "NVIDIA"
+            "OpenAI"
           ]
         }
       ],
@@ -496375,7 +497566,9 @@
         {
           "name": "GeneBench-Pro",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/971/383.htm",
@@ -497196,12 +498389,16 @@
         {
           "name": "AA-Omniscience",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         },
         {
           "name": "GPT-5.5",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "OpenAI"
+          ]
         }
       ],
       "sourceUrl": "https://arrowtsx.dev/bigger-models",

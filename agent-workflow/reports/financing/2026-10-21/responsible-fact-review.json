@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-21",
+  "reviewer": "Codex",
+  "reviewed_at": "2026-10-21T05:52:02.990Z",
+  "decisions": [
+    {
+      "event_id": "EV-47114264f19bc46f",
+      "field": "event_time/financing.announced_at",
+      "before": "2026-10-20",
+      "after": "2026-10-19",
+      "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+      "quote": "10月19日，据华兴资本发布，国内AI领域高阶IC封装基板供应商芯爱科技（南京）有限公司（以下简称“芯爱科技”）宣布完成A2轮近15亿元融资。",
+      "reason": "Use the explicit original announcement date; retain source disclosure metadata separately.",
+      "quote_hash": "a16c059f5e629062df09576d431b7d412f7e11e33f2e26a87d3180bf9fd7021c"
+    },
+    {
+      "event_id": "EV-fa58c17e7bde893c",
+      "field": "financing.investors.role",
+      "before": "本轮领投",
+      "after": "本轮融资提供方",
+      "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+      "quote": "it has raised $320 million from General Catalyst’s Customer Value Fund (CVF)",
+      "reason": "The original establishes funding from CVF, not a lead-investor role; financing remains non-dilutive growth capital.",
+      "quote_hash": "1b79eb512da832ba2ffd6231501fff4a814da5290ec5654e58d6070cfc4c3202"
+    }
+  ],
+  "identity_note": "Xin Ai canonical candidate remains unresolved; the public application names the source-proven recipient. No entity merge was approved."
+}

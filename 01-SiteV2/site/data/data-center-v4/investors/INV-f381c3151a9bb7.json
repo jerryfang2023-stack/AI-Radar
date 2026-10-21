@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-20",
-    "currentDate": "2026-10-20",
-    "eventCount": 4201,
+    "generatedAt": "2026-10-21T05:53:32.452Z",
+    "latestDataDate": "2026-10-21",
+    "currentDate": "2026-10-21",
+    "eventCount": 4214,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,21 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 25,
-    "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 22,
+    "current_round_count": 26,
+    "historical_or_ambiguous_count": 6,
+    "portfolio_company_count": 23,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-10-15",
+    "latest_disclosed_at": "2026-10-20",
     "role_counts": {
       "co_lead": 2,
-      "historical_or_ambiguous": 5,
+      "historical_or_ambiguous": 6,
       "lead": 11,
-      "participant": 12
+      "participant": 13
     },
     "round_codes": [
       "multi_round",
@@ -113,6 +113,11 @@
         "entity_id": "EN-2f88f41306209dd7",
         "canonical_entity_id": "",
         "name": "Avoca AI"
+      },
+      {
+        "entity_id": "EN-e75a6cd43a16c2f3",
+        "canonical_entity_id": "",
+        "name": "Baba"
       },
       {
         "entity_id": "EN-73fac6765f991fe7",
@@ -201,6 +206,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-39e1704a2df6041e",
+        "funding_insight_id": "FI-40c83ed3548e17ab",
+        "event_ids": [
+          "EV-5f298468c125d834"
+        ],
+        "company_entity_id": "EN-e75a6cd43a16c2f3",
+        "company_canonical_entity_id": "",
+        "company_name": "Baba",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$40 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-10-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-28715696ca7123d8",
+            "source_url": "https://www.globenewswire.com/news-release/2026/10/20/3384598/0/en/applied-ai-company-baba-raises-40-million-series-a-to-improve-the-medicare-experience.html",
+            "source_title": "应用AI公司Baba完成4000万美元A轮融资，以改善Medicare体验",
+            "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+            "quote": "returning investors General Catalyst, Genius Ventures and Ground Up Ventures",
+            "quote_hash": "28719cf3b3cf27940d78970d6175d054bc0078fd782bc2ef8808175830bf2c9a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d284b0d0f8786926",
         "funding_insight_id": "FI-49e5e02e3f1e2d52",
@@ -1309,6 +1354,38 @@
         ]
       },
       {
+        "activity_id": "IA-b29a32131fe539cb",
+        "funding_insight_id": "FI-40c83ed3548e17ab",
+        "event_ids": [
+          "EV-5f298468c125d834"
+        ],
+        "company_entity_id": "EN-e75a6cd43a16c2f3",
+        "company_canonical_entity_id": "",
+        "company_name": "Baba",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c3949be2eb29f63a",
+            "source_url": "https://www.linkedin.com/posts/vedantsuri_excited-to-partner-with-connor-on-baba-the-activity-7432522188773093377-CtIU",
+            "source_title": "General Catalyst Leads Round in Baba, Healthcare Company | Vedant Suri posted on the topic | LinkedIn",
+            "source_content_hash": "ed124368d88e215c",
+            "quote": "We're also announcing more than $6.5M in funding, led by General Catalyst alongside Genius Ventures, Soma Capital, and Ground Up Ventures",
+            "quote_hash": "5c6bbac5d3f7ce1a411add64a2297c73a6ad8c39861bdb5eb375a46af560a65f"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-0d81706a7318b40c",
         "funding_insight_id": "FI-bff055b65fdb260b",
         "event_ids": [
@@ -1382,6 +1459,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-28715696ca7123d8",
+        "source_url": "https://www.globenewswire.com/news-release/2026/10/20/3384598/0/en/applied-ai-company-baba-raises-40-million-series-a-to-improve-the-medicare-experience.html",
+        "source_title": "应用AI公司Baba完成4000万美元A轮融资，以改善Medicare体验",
+        "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+        "quote": "returning investors General Catalyst, Genius Ventures and Ground Up Ventures",
+        "quote_hash": "28719cf3b3cf27940d78970d6175d054bc0078fd782bc2ef8808175830bf2c9a"
+      },
       {
         "source_id": "FISRC-f581afce52cf5bef",
         "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
@@ -1615,6 +1700,14 @@
         "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
       },
       {
+        "source_id": "FISRC-c3949be2eb29f63a",
+        "source_url": "https://www.linkedin.com/posts/vedantsuri_excited-to-partner-with-connor-on-baba-the-activity-7432522188773093377-CtIU",
+        "source_title": "General Catalyst Leads Round in Baba, Healthcare Company | Vedant Suri posted on the topic | LinkedIn",
+        "source_content_hash": "ed124368d88e215c",
+        "quote": "We're also announcing more than $6.5M in funding, led by General Catalyst alongside Genius Ventures, Soma Capital, and Ground Up Ventures",
+        "quote_hash": "5c6bbac5d3f7ce1a411add64a2297c73a6ad8c39861bdb5eb375a46af560a65f"
+      },
+      {
         "source_id": "FISRC-bcf01fbecb1fbdb6",
         "source_url": "https://www.caplight.com/company/engram",
         "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
@@ -1666,16 +1759,16 @@
           "source_id": "gc_seed"
         },
         {
+          "description": "融资来源记录：Baba · A轮 · 2026-10-20 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-28715696ca7123d8"
+        },
+        {
           "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f581afce52cf5bef"
         },
         {
           "description": "融资来源记录：Melius · 多轮融资 · 2026-10-06 · 本轮领投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-925d3dbfb764eb23"
-        },
-        {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
         }
       ],
       "contacts": [
@@ -1805,6 +1898,14 @@
           "quote_hash": "bf5226b329d256cd8d31955d906e3205e22e5f58dc7c507a43b4ea96c6e7a183"
         },
         {
+          "source_id": "FISRC-28715696ca7123d8",
+          "source_url": "https://www.globenewswire.com/news-release/2026/10/20/3384598/0/en/applied-ai-company-baba-raises-40-million-series-a-to-improve-the-medicare-experience.html",
+          "source_title": "应用AI公司Baba完成4000万美元A轮融资，以改善Medicare体验",
+          "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+          "quote": "returning investors General Catalyst, Genius Ventures and Ground Up Ventures",
+          "quote_hash": "28719cf3b3cf27940d78970d6175d054bc0078fd782bc2ef8808175830bf2c9a"
+        },
+        {
           "source_id": "FISRC-f581afce52cf5bef",
           "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
           "source_title": "Ramp估值达600亿美元，深入布局AI",
@@ -1819,14 +1920,6 @@
           "source_content_hash": "4f8e687bca566f6a98591c0fc9c146b77b2fee7b784fecee26e614eb5ded976c",
           "quote": "a $20 million Series A led by CRV and a $5 million seed round led by General Catalyst",
           "quote_hash": "b61dc1fc46cecd6cfb2613ffafe46aa97efaceb366230220a684d6130fd30711"
-        },
-        {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "existing backers Founders Fund, General Catalyst and Avenir also participating",
-          "quote_hash": "7fc61011bd59e8b0029c06294ec01fd0df50815dcca3cb937f5a79169d58ea18"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1837,7 +1930,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[26].role": {
+        "activities[27].role": {
           "text": "Pre-Seed 轮领投",
           "source_hash": "b679d7fa92689a42e5e3729978cbf6f81b503b4ff4fa9193c6a9694195d14b03",
           "provider": "deepseek",
