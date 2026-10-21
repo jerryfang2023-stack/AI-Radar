@@ -1448,7 +1448,7 @@ function linkedCompanyAnchoredInFundingQuote(event, entities, claims) {
   for (const claim of acceptedClaims) {
     for (const clause of quoteClauses(claim.source_quote)) {
       if (!clauseHasEventFundingAmount(clause, claim, event)
-        || !/(?:融资|募资|筹集|完成|获得|获|raised|funding|financing|round)/iu.test(clause)) continue;
+        || !/(?:融资|募资|筹集|完成|获得|获|raised|funding|financing|round|\bseries\s+[a-h]\b)/iu.test(clause)) continue;
       for (const entity of linked) {
         for (const name of [entity.canonical_name, ...(entity.aliases || [])].filter(Boolean)) {
           const escaped = clean(name).replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
