@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-20",
-    "currentDate": "2026-10-20",
-    "eventCount": 4201,
+    "latestDataDate": "2026-10-21",
+    "currentDate": "2026-10-21",
+    "eventCount": 4214,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -71,13 +71,13 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-10-19",
-    "lastSeen": "2026-10-20",
+    "lastSeen": "2026-10-21",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-51f0958b144e699a",
-        "EV-781ee2c31f86be37",
-        "EV-dbb70aae28663f67"
+        "EV-dbb70aae28663f67",
+        "EV-781ee2c31f86be37"
       ],
       "deployments": [],
       "partnerships": [],
@@ -89,7 +89,7 @@
     "timeline": [
       {
         "id": "EV-51f0958b144e699a",
-        "dataDate": "2026-10-20",
+        "dataDate": "2026-10-21",
         "date": "2026-10-19",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -97,6 +97,21 @@
         "status": "completed",
         "statusLabel": "已完成",
         "title": "Tenstorrent 完成 15 亿美元 E 轮融资，投后估值 62 亿美元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2301cf6444526934"
+        ]
+      },
+      {
+        "id": "EV-dbb70aae28663f67",
+        "dataDate": "2026-10-21",
+        "date": "2026-10-19",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "Tenstorrent 估值达 62 亿美元，以扩展开放权重 AI 芯片",
         "displayTags": [],
         "entityIds": [
           "EN-2301cf6444526934"
@@ -116,21 +131,6 @@
         "entityIds": [
           "EN-2301cf6444526934",
           "EN-e06ff957ed48e868"
-        ]
-      },
-      {
-        "id": "EV-dbb70aae28663f67",
-        "dataDate": "2026-10-20",
-        "date": "2026-10-19",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "rumored",
-        "statusLabel": "rumored",
-        "title": "Tenstorrent 估值达 62 亿美元，以扩展开放权重 AI 芯片",
-        "displayTags": [],
-        "entityIds": [
-          "EN-2301cf6444526934"
         ]
       }
     ],

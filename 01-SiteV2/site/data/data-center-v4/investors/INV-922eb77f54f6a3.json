@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-20",
-    "currentDate": "2026-10-20",
-    "eventCount": 4201,
+    "latestDataDate": "2026-10-21",
+    "currentDate": "2026-10-21",
+    "eventCount": 4214,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-04",
-    "latest_disclosed_at": "2026-04-09",
+    "latest_disclosed_at": "2026-10-20",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "series_a2",
       "undisclosed"
     ],
     "portfolio_companies": [
@@ -83,9 +85,54 @@
         "entity_id": "EN-3309b3b14807f39a",
         "canonical_entity_id": "EN-3309b3b14807f39a",
         "name": "面壁智能"
+      },
+      {
+        "entity_id": "EN-077bbcba652dc144",
+        "canonical_entity_id": "",
+        "name": "芯爱科技（南京）有限公司"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-19b9851a15172a50",
+        "funding_insight_id": "FI-bb001153a5913396",
+        "event_ids": [
+          "EV-47114264f19bc46f"
+        ],
+        "company_entity_id": "EN-077bbcba652dc144",
+        "company_canonical_entity_id": "",
+        "company_name": "芯爱科技（南京）有限公司",
+        "round": "A2轮",
+        "round_code": "series_a2",
+        "round_original": "A2轮",
+        "amount_original": "近15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 15 亿元"
+        },
+        "announced_at": "2026-10-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-016b43d0cd0957da",
+            "source_url": "https://m.sohu.com/a/1089999430_121071031?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "联发科老兵创办，芯爱科技完成近15亿元融资、胜宏科技及瑞芯微加持",
+            "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+            "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+            "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+          }
+        ]
+      },
       {
         "activity_id": "IA-57f1def01678fd78",
         "funding_insight_id": "FI-a7e1a675674f1a0b",
@@ -161,6 +208,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-016b43d0cd0957da",
+        "source_url": "https://m.sohu.com/a/1089999430_121071031?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "联发科老兵创办，芯爱科技完成近15亿元融资、胜宏科技及瑞芯微加持",
+        "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+        "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+        "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+      },
+      {
         "source_id": "FISRC-5e868b9dacd5325c",
         "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
         "source_title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
@@ -216,6 +271,10 @@
           "source_id": "FISRC-5e868b9dacd5325c"
         },
         {
+          "description": "融资来源记录：芯爱科技（南京）有限公司 · A2轮 · 2026-10-20 · 本轮参投 · 近15亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-016b43d0cd0957da"
+        },
+        {
           "description": "融资来源记录：北京面壁智能科技股份有限公司 · 历史轮次未披露 · 2026-04 · 2026年4月D+轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ca5c9f62e4d3f2f3"
         }
@@ -237,6 +296,14 @@
           "source_content_hash": "8956d15b35f495f05f36bd8ad92d5f8faceae2f7fb0d135094b5aa320d774425",
           "quote": "1月8日，黑芝麻智能与知名产业投资机构武岳峰科创及其产业合作伙伴（上海虹桥小镇投资集团）达成战略投资意向。",
           "quote_hash": "40bab6c384340fbc96b3f933e6b3969dc0afde89b62d3868a6597799f3188aa6"
+        },
+        {
+          "source_id": "FISRC-016b43d0cd0957da",
+          "source_url": "https://m.sohu.com/a/1089999430_121071031?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "source_title": "联发科老兵创办，芯爱科技完成近15亿元融资、胜宏科技及瑞芯微加持",
+          "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+          "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+          "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
         },
         {
           "source_id": "FISRC-ca5c9f62e4d3f2f3",

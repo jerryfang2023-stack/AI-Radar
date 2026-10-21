@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-20",
-    "currentDate": "2026-10-20",
-    "eventCount": 4201,
+    "latestDataDate": "2026-10-21",
+    "currentDate": "2026-10-21",
+    "eventCount": 4214,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -155,14 +155,15 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-511f7a03673f6cce",
         "EV-d2409770301edc83"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-physical_automation",
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-product_form-robotic_system",
-        "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-physical_ai"
       ],
@@ -170,7 +171,7 @@
         "EN-0d049cd1e9f619f9"
       ],
       "firstSeen": "2026-03-02",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-10-21"
     }
   ],
   "relationships": [
@@ -203,6 +204,7 @@
       "typeLabel": "产品形态",
       "valueId": "model",
       "eventIds": [
+        "EV-72d09299a334d0d9",
         "EV-61c9891d791417be",
         "EV-858cec7fa8f4c87b",
         "EV-de11eaf439ccee3f",
@@ -612,6 +614,7 @@
         "EV-5208aa6dcd06cecb"
       ],
       "entityIds": [
+        "EN-c2f693f92991bd18",
         "EN-79648183530ff7c5",
         "EN-ce084d4801691907",
         "EN-f2ff9021d7cf42b9",
@@ -885,7 +888,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-20"
+      "lastSeen": "2026-10-21"
     },
     {
       "id": "TX-use_case-physical_automation",
@@ -894,6 +897,7 @@
       "typeLabel": "应用场景",
       "valueId": "physical_automation",
       "eventIds": [
+        "EV-72d09299a334d0d9",
         "EV-6ef251e4d28b517c",
         "EV-439079c4d9694407",
         "EV-ad1a42d4f43e005c",
@@ -1135,6 +1139,7 @@
         "EV-ad64347138da72bb"
       ],
       "entityIds": [
+        "EN-c2f693f92991bd18",
         "EN-3afb40bf43553530",
         "EN-751b001aa17db797",
         "EN-40cd17bb16c8fec1",
@@ -1336,7 +1341,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-20"
+      "lastSeen": "2026-10-21"
     },
     {
       "id": "TX-product_form-robotic_system",

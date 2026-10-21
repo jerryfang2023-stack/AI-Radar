@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-20",
-    "currentDate": "2026-10-20",
-    "eventCount": 4201,
+    "latestDataDate": "2026-10-21",
+    "currentDate": "2026-10-21",
+    "eventCount": 4214,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,31 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-01",
-    "latest_disclosed_at": "2026-07-14",
+    "latest_disclosed_at": "2026-10-20",
     "role_counts": {
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-e75a6cd43a16c2f3",
+        "canonical_entity_id": "",
+        "name": "Baba"
+      },
       {
         "entity_id": "FICO-59328e374e8008a0",
         "canonical_entity_id": "",
@@ -86,6 +93,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ea3c4b3d141b49cd",
+        "funding_insight_id": "FI-40c83ed3548e17ab",
+        "event_ids": [
+          "EV-5f298468c125d834"
+        ],
+        "company_entity_id": "EN-e75a6cd43a16c2f3",
+        "company_canonical_entity_id": "",
+        "company_name": "Baba",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$40 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-10-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-28715696ca7123d8",
+            "source_url": "https://www.globenewswire.com/news-release/2026/10/20/3384598/0/en/applied-ai-company-baba-raises-40-million-series-a-to-improve-the-medicare-experience.html",
+            "source_title": "应用AI公司Baba完成4000万美元A轮融资，以改善Medicare体验",
+            "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+            "quote": "a $40 million Series A led by FirstMark Capital",
+            "quote_hash": "1c01ca4fe00d7cce2d7b2da5b308ca088767b546611b1696168c0f40a4b45553"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1adce88f9cd44a85",
         "funding_insight_id": "FI-69ad89811b62e37c",
@@ -161,6 +208,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-28715696ca7123d8",
+        "source_url": "https://www.globenewswire.com/news-release/2026/10/20/3384598/0/en/applied-ai-company-baba-raises-40-million-series-a-to-improve-the-medicare-experience.html",
+        "source_title": "应用AI公司Baba完成4000万美元A轮融资，以改善Medicare体验",
+        "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+        "quote": "a $40 million Series A led by FirstMark Capital",
+        "quote_hash": "1c01ca4fe00d7cce2d7b2da5b308ca088767b546611b1696168c0f40a4b45553"
+      },
+      {
         "source_id": "FISRC-c9fd5fac8536f13d",
         "source_url": "https://techcrunch.com/2026/07/14/the-founder-of-hinge-raised-18m-to-build-a-new-ai-dating-service-overtone/",
         "source_title": "Hinge 创始人筹集 1800 万美元打造新 AI 约会服务 Overtone",
@@ -214,6 +269,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Baba · A轮 · 2026-10-20 · 本轮领投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-28715696ca7123d8"
+        },
+        {
           "description": "融资来源记录：Overtone · 种子轮 · 2026-07-14 · 本轮参投 · $18M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c9fd5fac8536f13d"
         },
@@ -239,6 +298,14 @@
           "source_content_hash": "e76b06b43504b25103adb0d6457a6ad19cafaf96ad8c559d0b1ac9a45385725d",
           "quote": "FirstMark官网介绍其为纽约早期VC，说明组合公司平台服务，并列举Shopify、Pinterest及Momentum收购案例。",
           "quote_hash": "0f5d07b1e096c0ff381390d53799088ec20f274a0431ba5c476018e9f7156d57"
+        },
+        {
+          "source_id": "FISRC-28715696ca7123d8",
+          "source_url": "https://www.globenewswire.com/news-release/2026/10/20/3384598/0/en/applied-ai-company-baba-raises-40-million-series-a-to-improve-the-medicare-experience.html",
+          "source_title": "应用AI公司Baba完成4000万美元A轮融资，以改善Medicare体验",
+          "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+          "quote": "a $40 million Series A led by FirstMark Capital",
+          "quote_hash": "1c01ca4fe00d7cce2d7b2da5b308ca088767b546611b1696168c0f40a4b45553"
         },
         {
           "source_id": "FISRC-c9fd5fac8536f13d",

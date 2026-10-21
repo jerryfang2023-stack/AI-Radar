@@ -5,17 +5,17 @@
     "site_version": "SITE-V4.6.1-research-retirement",
     "column_version": "FUNDING-INSIGHT-V1.5.0-china-market",
     "taxonomy_version": "AI-FUNDING-TAGS-1.0",
-    "latest_date": "2026-10-20",
-    "last_checked_date": "2026-10-20",
-    "latest_financing_date": "2026-10-19",
-    "generated_at": "2026-10-20T00:46:39.947Z",
-    "card_count": 631,
+    "latest_date": "2026-10-21",
+    "last_checked_date": "2026-10-21",
+    "latest_financing_date": "2026-10-20",
+    "generated_at": "2026-10-21T05:30:57.168Z",
+    "card_count": 635,
     "china_market_card_count": 140,
     "duplicate_rounds_removed": 21,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-10-20T00:47:42.257Z"
+      "generated_at": "2026-10-21T05:32:04.087Z"
     },
     "market_category_framework": {
       "name": "观澜 AI 融资分类",
@@ -35,11 +35,11 @@
         }
       ]
     },
-    "event_count": 675,
+    "event_count": 679,
     "aggregation_strategy": "reviewed_funding_subject",
     "scope": "all_ai_financing_except_embodied_and_robotics",
-    "excluded_count": 78,
-    "pending_classification_count": 18,
+    "excluded_count": 81,
+    "pending_classification_count": 20,
     "pending_publication_count": 37
   },
   "taxonomy": {
@@ -735,6 +735,3296 @@
     ]
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-146795a8062df48b",
+      "triggered_by_event_id": "EV-fa58c17e7bde893c",
+      "as_of_date": "2026-10-21",
+      "company": {
+        "entity_id": "EN-e8f7acab9d27b492",
+        "name": "Otter.ai",
+        "full_name": "Otter.ai",
+        "website": "https://otter.ai/",
+        "summary": "Otter.ai 提供会议 AI 笔记与转录工具，将会议语音转为可搜索知识，并支持会前简报、实时辅助与自动跟进。",
+        "headquarters": "",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2bb6d52be7027111",
+            "quote": "Meeting notetaking tool Otter.ai announced on Tuesday that it has raised $320 million from General Catalyst’s Customer Value Fund (CVF)",
+            "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+            "quote_hash": "6e1ee007fe86e9cb83d033e7a30202880e86df6ba2374ca00b3c8aafb22faaa3"
+          },
+          {
+            "source_id": "FISRC-69db98aad8876371",
+            "quote": "Meeting AI that turns talk into action",
+            "source_content_hash": "dd27194207cffc3e",
+            "quote_hash": "f0ba34f94ab00212b5f75f0f42e775c91f54f4b38ef26a9165b492bde017d2b8"
+          }
+        ],
+        "application_entity_id": "EN-e8f7acab9d27b492",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "其他融资",
+        "amount": "$320 million",
+        "total_raised": "$50 million",
+        "announced_at": "2026-10-20",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "General Catalyst’s Customer Value Fund (CVF)",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2bb6d52be7027111",
+                "quote": "it has raised $320 million from General Catalyst’s Customer Value Fund (CVF), which provides capital to startups without diluting equity and gets returns on the results of marketing spend",
+                "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+                "quote_hash": "82cb0ca5a4a87cc5322aa17892623696fbd213080b59680135bade186aa20361"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-6d609756bfedfd"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2bb6d52be7027111",
+            "quote": "Meeting notetaking tool Otter.ai announced on Tuesday that it has raised $320 million from General Catalyst’s Customer Value Fund (CVF), which provides capital to startups without diluting equity and gets returns on the results of marketing spend.",
+            "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+            "quote_hash": "4ccd6c8f6e764384754c30ff22f4844cca44deaff7fde35e13aff147914e90e1"
+          },
+          {
+            "source_id": "FISRC-2bb6d52be7027111",
+            "quote": "Otter.ai announced on Tuesday that it has raised $320 million from General Catalyst’s Customer Value Fund (CVF)",
+            "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+            "quote_hash": "36f0f9ad80872a2f5210088266245284c79e783643624471fca33e12854ab4f2"
+          },
+          {
+            "source_id": "FISRC-2bb6d52be7027111",
+            "quote": "has raised $50 million in total funding with its last round in 2021",
+            "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+            "quote_hash": "d2b6ebd21a2d4fee85bdd0d85801d2ea1d27c74bc1ab072ed2a2ff2ebd0ddce9"
+          }
+        ],
+        "round_code": "other",
+        "round_original": "General Catalyst Customer Value Fund 增长融资",
+        "amount_original": "$320 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 320000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.2 亿美元"
+        },
+        "total_raised_original": "$50 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-fa58c17e7bde893c",
+            "round_original": "General Catalyst Customer Value Fund 增长融资",
+            "amount": "$320 million",
+            "announced_at": "2026-10-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2bb6d52be7027111",
+                "quote": "Meeting notetaking tool Otter.ai announced on Tuesday that it has raised $320 million from General Catalyst’s Customer Value Fund (CVF), which provides capital to startups without diluting equity and gets returns on the results of marketing spend.",
+                "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+                "quote_hash": "4ccd6c8f6e764384754c30ff22f4844cca44deaff7fde35e13aff147914e90e1"
+              },
+              {
+                "source_id": "FISRC-2bb6d52be7027111",
+                "quote": "Otter.ai announced on Tuesday that it has raised $320 million from General Catalyst’s Customer Value Fund (CVF)",
+                "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+                "quote_hash": "36f0f9ad80872a2f5210088266245284c79e783643624471fca33e12854ab4f2"
+              },
+              {
+                "source_id": "FISRC-2bb6d52be7027111",
+                "quote": "has raised $50 million in total funding with its last round in 2021",
+                "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+                "quote_hash": "d2b6ebd21a2d4fee85bdd0d85801d2ea1d27c74bc1ab072ed2a2ff2ebd0ddce9"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "$50 million",
+          "normalized": {
+            "currency": "USD",
+            "value": 50000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "5000 万美元"
+          },
+          "basis": "source_disclosed",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 320000000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "3.2 亿美元"
+            }
+          ],
+          "historical_round_count": 1
+        }
+      },
+      "products": [
+        {
+          "name": "Otter Meeting Agent",
+          "description": "会议 AI 笔记工具，自动转录会议并生成摘要、行动项与跟进内容。",
+          "target_customers": "销售、教育、媒体等会议密集团队及企业",
+          "features": [
+            "实时转录与说话人识别",
+            "自动摘要与行动项",
+            "会前简报",
+            "Live-Assist 实时辅导",
+            "跨应用搜索与 CRM 同步"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-69db98aad8876371",
+              "quote": "Otter transcribes every meeting, turning it into searchable knowledge that powers your workflow.",
+              "source_content_hash": "dd27194207cffc3e",
+              "quote_hash": "774e2dbc00e0cced95375230b8c7087b546d1b8754cb0f598e5f7336a303de83"
+            },
+            {
+              "source_id": "FISRC-69db98aad8876371",
+              "quote": "Otter briefs you before the call, coaches you live based on what's been said, and automatically follows up in the tools you already use.",
+              "source_content_hash": "dd27194207cffc3e",
+              "quote_hash": "95a7dcaee8808df2ab4d992b920f1244663f687183171a2e41bad72f3d0f27c3"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Fireflies.ai",
+          "product": "会议笔记工具",
+          "scenario": "会议记录与工作流自动化",
+          "target_customer": "企业团队",
+          "funding_summary": "",
+          "core_difference": "来源仅将其列为资金充足的会议笔记竞品，未披露可比较的产品细节。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2bb6d52be7027111",
+              "quote": "There is a lot of competition in the market with well-funded meeting notetakers like Fireflies.ai, Granola, and Read AI",
+              "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+              "quote_hash": "daa2074cf38d1aa9a8b0a9a1404c138455860032631bd3e54ddbff425fbc5bfc"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Granola",
+          "product": "会议笔记工具",
+          "scenario": "会议记录与工作流自动化",
+          "target_customer": "企业团队",
+          "funding_summary": "",
+          "core_difference": "来源仅将其列为资金充足的会议笔记竞品，未披露可比较的产品细节。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2bb6d52be7027111",
+              "quote": "There is a lot of competition in the market with well-funded meeting notetakers like Fireflies.ai, Granola, and Read AI",
+              "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+              "quote_hash": "daa2074cf38d1aa9a8b0a9a1404c138455860032631bd3e54ddbff425fbc5bfc"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Read AI",
+          "product": "会议笔记工具",
+          "scenario": "会议记录与工作流自动化",
+          "target_customer": "企业团队",
+          "funding_summary": "",
+          "core_difference": "来源仅将其列为资金充足的会议笔记竞品，未披露可比较的产品细节。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2bb6d52be7027111",
+              "quote": "There is a lot of competition in the market with well-funded meeting notetakers like Fireflies.ai, Granola, and Read AI",
+              "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+              "quote_hash": "daa2074cf38d1aa9a8b0a9a1404c138455860032631bd3e54ddbff425fbc5bfc"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$320 million",
+          "observed_at": "2026-10-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2bb6d52be7027111",
+              "quote": "it has raised $320 million from General Catalyst’s Customer Value Fund (CVF)",
+              "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+              "quote_hash": "1b79eb512da832ba2ffd6231501fff4a814da5290ec5654e58d6070cfc4c3202"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "$50 million",
+          "observed_at": "2026-10-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2bb6d52be7027111",
+              "quote": "has raised $50 million in total funding with its last round in 2021",
+              "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+              "quote_hash": "d2b6ebd21a2d4fee85bdd0d85801d2ea1d27c74bc1ab072ed2a2ff2ebd0ddce9"
+            }
+          ]
+        },
+        {
+          "label": "年度经常性收入",
+          "value": "超过 $100 million",
+          "observed_at": "2025",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2bb6d52be7027111",
+              "quote": "Otter hit a revenue milestone after crossing $100 million in annual recurring revenue (ARR)",
+              "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+              "quote_hash": "6517ed779990a4eba78786c37b2a12037b098617f1226d7fcee7a3f33f227f71"
+            }
+          ]
+        },
+        {
+          "label": "累计用户数",
+          "value": "4000 万",
+          "observed_at": "2026-10-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2bb6d52be7027111",
+              "quote": "40 million users have used its product to date, up from 25 million last year",
+              "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+              "quote_hash": "d37b1d13423faae8bbfbd752188f99446cd42b48cab085ac7a095171cb19914c"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Pranav Singhvi",
+          "quote": "Voice is one of the biggest untapped opportunities in enterprise AI, and Otter is at the forefront of it — a conviction that’s only deepened watching Otter’s growth",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2bb6d52be7027111",
+              "quote": "“Voice is one of the biggest untapped opportunities in enterprise AI, and Otter is at the forefront of it — a conviction that’s only deepened watching Otter’s growth,” said Pranav Singhvi, partner and co-founder of CVF, General Catalyst.",
+              "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+              "quote_hash": "4dd69ba73daf3ea4270ed1ef238e5bf5500076902247dc9964c043b70f683766"
+            }
+          ]
+        },
+        {
+          "speaker": "Alex Gay",
+          "quote": "we saw this large pain point in meeting-heavy roles, where people are back-to-back in conversations",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2bb6d52be7027111",
+              "quote": "we saw this large pain point in meeting-heavy roles, where people are back-to-back in conversations",
+              "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+              "quote_hash": "459a8c52a93333cf2c77677801c3a620e1e82b4af6505e9588f4c4f3fd6382a8"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "General Catalyst’s Customer Value Fund (CVF)",
+            "speaker": "Pranav Singhvi",
+            "speaker_role": "CVF 合伙人兼联合创始人",
+            "rationale": "认为企业语音数据是尚未充分开发的机会，Otter 能将会议语音转化为可执行洞察并提升组织效率。",
+            "quote": "Voice is one of the biggest untapped opportunities in enterprise AI, and Otter is at the forefront of it — a conviction that’s only deepened watching Otter’s growth",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2bb6d52be7027111",
+                "quote": "“Voice is one of the biggest untapped opportunities in enterprise AI, and Otter is at the forefront of it — a conviction that’s only deepened watching Otter’s growth,” said Pranav Singhvi, partner and co-founder of CVF, General Catalyst.",
+                "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+                "quote_hash": "4dd69ba73daf3ea4270ed1ef238e5bf5500076902247dc9964c043b70f683766"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "本轮资金来自 General Catalyst 的 Customer Value Fund，该基金以不稀释股权、按营销支出结果获取回报的方式提供资本，因此押注核心是 Otter 能否把会议语音数据转化为企业可执行洞察并扩大企业增长。已验证信号包括超过 1 亿美元 ARR 和累计 4000 万用户；但来源未披露月活、流失率及本轮估值，资本判断的证据边界限于收入里程碑与用户规模。",
+        "validated_signals": [
+          "年度经常性收入超过 1 亿美元",
+          "累计用户数达 4000 万",
+          "本轮获得 3.2 亿美元增长资金"
+        ],
+        "risks": [
+          "会议笔记赛道竞争拥挤，来源未披露月活与流失率，客户留存仍待验证",
+          "本轮为不稀释股权的营销结果分成型资金，其回报结构与常规股权融资不同",
+          "来源未披露本轮估值及资金到位后的具体增长目标"
+        ],
+        "sector": "办公、会议与知识管理",
+        "investment_thesis": {
+          "statement": "本轮资金来自 General Catalyst 的 Customer Value Fund，该基金以不稀释股权、按营销支出结果获取回报的方式提供资本，因此押注核心是 Otter 能否把会议语音数据转化为企业可执行洞察并扩大企业增长。已验证信号包括超过 1 亿美元 ARR 和累计 4000 万用户；但来源未披露月活、流失率及本轮估值，资本判断的证据边界限于收入里程碑与用户规模。",
+          "evidence_signals": [
+            "年度经常性收入超过 1 亿美元",
+            "累计用户数达 4000 万",
+            "本轮获得 3.2 亿美元增长资金"
+          ],
+          "risks": [
+            "会议笔记赛道竞争拥挤，来源未披露月活与流失率，客户留存仍待验证",
+            "本轮为不稀释股权的营销结果分成型资金，其回报结构与常规股权融资不同",
+            "来源未披露本轮估值及资金到位后的具体增长目标"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Otter Meeting Agent",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "General Catalyst’s Customer Value Fund (CVF)",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Fireflies.ai",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Granola",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Read AI",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-fa58c17e7bde893c",
+          "date": "2026-10-20",
+          "title": "Otter AI 为其会议工具从 General Catalyst 增长基金筹集 3.2 亿美元",
+          "amount": "$320 million",
+          "source_refs": [
+            "SA-1e21cc41893a8ec8"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-2bb6d52be7027111",
+          "source_url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/",
+          "title": "Otter AI 为其会议工具从 General Catalyst 增长基金筹集 3.2 亿美元",
+          "publisher": "techcrunch.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-21T03:07:35.685Z",
+          "content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+          "source_artifact_id": "SA-1e21cc41893a8ec8",
+          "raw_id": "RAW-9dfa2eb670e05fa2"
+        },
+        {
+          "source_id": "FISRC-69db98aad8876371",
+          "source_url": "https://otter.ai/",
+          "title": "Otter Meeting Agent - AI Notetaker, Transcription, Insights",
+          "publisher": "otter.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-21T03:35:43.788Z",
+          "content_hash": "dd27194207cffc3e",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-21T03:36:13.989Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-21T03:36:13.989Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Otter Meeting Agent"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-fa58c17e7bde893c"
+      ],
+      "aggregation": {
+        "key": "EN-e8f7acab9d27b492|other|USD:exact:320000000:::|2026-10-20",
+        "event_count": 1,
+        "strategy": "reviewed_funding_subject",
+        "subject_id": "EN-e8f7acab9d27b492",
+        "source_card_count": 1
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-146795a8062df48b",
+          "event_ids": [
+            "EV-fa58c17e7bde893c",
+            "EV-fa58c17e7bde893c"
+          ],
+          "round": "其他融资",
+          "round_code": "other",
+          "round_original": "General Catalyst Customer Value Fund 增长融资",
+          "amount_original": "$320 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 320000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.2 亿美元"
+          },
+          "announced_at": "2026-10-20",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true,
+          "investors": [
+            {
+              "name": "General Catalyst’s Customer Value Fund (CVF)",
+              "role": "本轮领投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-2bb6d52be7027111",
+                  "quote": "it has raised $320 million from General Catalyst’s Customer Value Fund (CVF), which provides capital to startups without diluting equity and gets returns on the results of marketing spend",
+                  "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+                  "quote_hash": "82cb0ca5a4a87cc5322aa17892623696fbd213080b59680135bade186aa20361"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-6d609756bfedfd"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2bb6d52be7027111",
+              "quote": "Meeting notetaking tool Otter.ai announced on Tuesday that it has raised $320 million from General Catalyst’s Customer Value Fund (CVF), which provides capital to startups without diluting equity and gets returns on the results of marketing spend.",
+              "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+              "quote_hash": "4ccd6c8f6e764384754c30ff22f4844cca44deaff7fde35e13aff147914e90e1"
+            },
+            {
+              "source_id": "FISRC-2bb6d52be7027111",
+              "quote": "Otter.ai announced on Tuesday that it has raised $320 million from General Catalyst’s Customer Value Fund (CVF)",
+              "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+              "quote_hash": "36f0f9ad80872a2f5210088266245284c79e783643624471fca33e12854ab4f2"
+            },
+            {
+              "source_id": "FISRC-2bb6d52be7027111",
+              "quote": "has raised $50 million in total funding with its last round in 2021",
+              "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+              "quote_hash": "d2b6ebd21a2d4fee85bdd0d85801d2ea1d27c74bc1ab072ed2a2ff2ebd0ddce9"
+            }
+          ]
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "id": "enterprise-software",
+        "name": "企业软件",
+        "dimension": "financing_product_form"
+      },
+      "market_category": {
+        "id": "enterprise",
+        "name": "企业通用 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "productivity",
+        "name": "办公、会议与知识管理",
+        "dimension": "financing_subsector"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-fa58c17e7bde893c"
+      },
+      "translations": {
+        "zh-CN": {
+          "products[0].features[3]": {
+            "text": "Live-Assist 实时辅导",
+            "source_hash": "83a28b9eac28be8f37b5c1c4e901b3f26537735463da2ccd566b79be72cc22ee",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-10-21T05:32:04.087Z",
+            "status": "translated"
+          }
+        }
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "enterprise",
+          "name": "企业通用 AI"
+        },
+        "subsector": {
+          "id": "productivity",
+          "name": "办公、会议与知识管理"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-69db98aad8876371",
+            "quote": "Meeting AI that turns talk into action"
+          },
+          {
+            "source_id": "FISRC-69db98aad8876371",
+            "quote": "Otter transcribes every meeting, turning it into searchable knowledge that powers your workflow."
+          },
+          {
+            "source_id": "FISRC-69db98aad8876371",
+            "quote": "Otter briefs you before the call, coaches you live based on what's been said, and automatically follows up in the tools you already use."
+          }
+        ],
+        "rationale": "Otter.ai 主营会议记录与知识管理 AI 工具，属于企业办公与知识管理赛道。"
+      },
+      "source_card_ids": [
+        "FI-146795a8062df48b"
+      ]
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-40c83ed3548e17ab",
+      "triggered_by_event_id": "EV-5f298468c125d834",
+      "as_of_date": "2026-10-21",
+      "company": {
+        "entity_id": "EN-e75a6cd43a16c2f3",
+        "name": "Baba",
+        "full_name": "Baba",
+        "website": "https://www.callbaba.com",
+        "summary": "应用AI公司，致力于改善Medicare和Medicaid的护理协调体验，为患者及家庭配备由护理协调员和持证治疗师组成的专属护理团队，并以AI辅助连接专科就诊、出院、行为健康、居家支持及住房交通等需求。",
+        "headquarters": "纽约",
+        "founders": [
+          {
+            "name": "Connor Sweeney",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28715696ca7123d8",
+                "quote": "said Connor Sweeney, founder and CEO of Baba",
+                "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                "quote_hash": "f1468ba8f4f07eccd47354839dab9b2a1e5cb988db7ceb344163f6e121404149"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-28715696ca7123d8",
+            "quote": "Baba, an applied AI company modernizing the Medicare and Medicaid experience",
+            "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+            "quote_hash": "9af9225281f192ae822351030c48e1f250abdd030e8262c8478b3e40f1ae857f"
+          },
+          {
+            "source_id": "FISRC-2b081d22c8ea473d",
+            "quote": "Baba is a partner to patients and their families.",
+            "source_content_hash": "f76e668e8ea457c4",
+            "quote_hash": "4d74323193754f054f27e6bb2b15f1f5f2832a5d381cf70f07e077af9c3f563e"
+          }
+        ],
+        "application_entity_id": "EN-e75a6cd43a16c2f3",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "$40 million",
+        "total_raised": "4700万美元",
+        "announced_at": "2026-10-20",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "FirstMark Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28715696ca7123d8",
+                "quote": "a $40 million Series A led by FirstMark Capital",
+                "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                "quote_hash": "1c01ca4fe00d7cce2d7b2da5b308ca088767b546611b1696168c0f40a4b45553"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-587cddc7c698d6"
+          },
+          {
+            "name": "CVS Health Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28715696ca7123d8",
+                "quote": "with participation from CVS Health Ventures and Valtruis",
+                "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                "quote_hash": "2d18ac25674c501e772a65d0993bb37e351057bea16be32b00254fb49d1000c9"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-90577d5cf50f1c"
+          },
+          {
+            "name": "Valtruis",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28715696ca7123d8",
+                "quote": "with participation from CVS Health Ventures and Valtruis",
+                "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                "quote_hash": "2d18ac25674c501e772a65d0993bb37e351057bea16be32b00254fb49d1000c9"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-16fa2e8f135b9c"
+          },
+          {
+            "name": "General Catalyst",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28715696ca7123d8",
+                "quote": "returning investors General Catalyst, Genius Ventures and Ground Up Ventures",
+                "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                "quote_hash": "28719cf3b3cf27940d78970d6175d054bc0078fd782bc2ef8808175830bf2c9a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-f381c3151a9bb7"
+          },
+          {
+            "name": "Genius Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28715696ca7123d8",
+                "quote": "returning investors General Catalyst, Genius Ventures and Ground Up Ventures",
+                "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                "quote_hash": "28719cf3b3cf27940d78970d6175d054bc0078fd782bc2ef8808175830bf2c9a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-fab7bd37995365"
+          },
+          {
+            "name": "Ground Up Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28715696ca7123d8",
+                "quote": "returning investors General Catalyst, Genius Ventures and Ground Up Ventures",
+                "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                "quote_hash": "28719cf3b3cf27940d78970d6175d054bc0078fd782bc2ef8808175830bf2c9a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-8b8bf760f6f089"
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "General Catalyst",
+            "role": "历史轮次领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c3949be2eb29f63a",
+                "quote": "We're also announcing more than $6.5M in funding, led by General Catalyst alongside Genius Ventures, Soma Capital, and Ground Up Ventures",
+                "source_content_hash": "ed124368d88e215c",
+                "quote_hash": "5c6bbac5d3f7ce1a411add64a2297c73a6ad8c39861bdb5eb375a46af560a65f"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-f381c3151a9bb7"
+          },
+          {
+            "name": "Soma Capital",
+            "role": "历史轮次参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c3949be2eb29f63a",
+                "quote": "led by General Catalyst alongside Genius Ventures, Soma Capital, and Ground Up Ventures",
+                "source_content_hash": "ed124368d88e215c",
+                "quote_hash": "20bcd4c50b4e29c73b738ecc9b8f70e3891785e0020f7895a8afcb7ee7e545ed"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-f5cb1792d0108d"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-28715696ca7123d8",
+            "quote": "NEW YORK, Oct. 20, 2026 (GLOBE NEWSWIRE) -- Baba, an applied AI company modernizing the Medicare and Medicaid experience, today announced a $40 million Series A led by FirstMark Capital, with participation from CVS Health Ventures and Valtruis and returning investors General Catalyst, Genius Ventures and Ground Up Ventures.",
+            "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+            "quote_hash": "87f6bccb1e3c4bb0ae03d91c7bc45a6077a131c4c6944319d8b8cec579c60316"
+          },
+          {
+            "source_id": "FISRC-28715696ca7123d8",
+            "quote": "today announced a $40 million Series A led by FirstMark Capital",
+            "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+            "quote_hash": "6fe63297a9068d864e0bdfe94d731a5481332feb2d2c3b339d74f04345c95f2a"
+          },
+          {
+            "source_id": "FISRC-2b081d22c8ea473d",
+            "quote": "This round brings Baba’s total funding to $47M.",
+            "source_content_hash": "f76e668e8ea457c4",
+            "quote_hash": "364b564ed73b1d8d8f3f993c3d4d042220cda7991cc726af54cad1f3e80121af"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$40 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "total_raised_original": "4700万美元",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 47000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4700 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-5f298468c125d834",
+            "round_original": "A轮",
+            "amount": "$40 million",
+            "announced_at": "2026-10-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28715696ca7123d8",
+                "quote": "NEW YORK, Oct. 20, 2026 (GLOBE NEWSWIRE) -- Baba, an applied AI company modernizing the Medicare and Medicaid experience, today announced a $40 million Series A led by FirstMark Capital, with participation from CVS Health Ventures and Valtruis and returning investors General Catalyst, Genius Ventures and Ground Up Ventures.",
+                "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                "quote_hash": "87f6bccb1e3c4bb0ae03d91c7bc45a6077a131c4c6944319d8b8cec579c60316"
+              },
+              {
+                "source_id": "FISRC-28715696ca7123d8",
+                "quote": "today announced a $40 million Series A led by FirstMark Capital",
+                "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                "quote_hash": "6fe63297a9068d864e0bdfe94d731a5481332feb2d2c3b339d74f04345c95f2a"
+              },
+              {
+                "source_id": "FISRC-2b081d22c8ea473d",
+                "quote": "This round brings Baba’s total funding to $47M.",
+                "source_content_hash": "f76e668e8ea457c4",
+                "quote_hash": "364b564ed73b1d8d8f3f993c3d4d042220cda7991cc726af54cad1f3e80121af"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "4700万美元",
+          "normalized": {
+            "currency": "USD",
+            "value": 47000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "4700 万美元"
+          },
+          "basis": "source_disclosed",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 40000000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "4000 万美元"
+            }
+          ],
+          "historical_round_count": 1
+        }
+      },
+      "products": [
+        {
+          "name": "Baba护理平台",
+          "description": "为每位患者配备由护理倡导者和持证治疗师组成的专属护理团队，并以AI辅助，将专科就诊、出院、行为健康、居家支持、住房和交通等护理环节连接起来。",
+          "target_customers": "Medicare和Medicaid患者及其家庭、健康计划",
+          "features": [
+            "专属护理团队",
+            "AI辅助护理协调",
+            "覆盖医疗、财务、社会和行为健康需求"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2b081d22c8ea473d",
+              "quote": "Every patient gets a dedicated care team of advocates and licensed therapists, backed by AI",
+              "source_content_hash": "f76e668e8ea457c4",
+              "quote_hash": "feca831a7391cbbda0d4760f15a16936e5bd4ade7934ffdf64206ad2242d9790"
+            },
+            {
+              "source_id": "FISRC-28715696ca7123d8",
+              "quote": "Baba is a care partner to patients and their families.",
+              "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+              "quote_hash": "267e2ffdf0163689c84cee3f8b62da59455309b2b7a60c3ed0000e299edcca16"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "BabaBench",
+          "description": "衡量前沿AI智能体处理长周期患者维权任务能力的基准，任务包括文书、与保险公司通话、账单以及可能持续数周或数月的后续跟进。",
+          "target_customers": "AI研究与评估",
+          "features": [
+            "测试智能体能否端到端完成任务",
+            "考察隐私违规与禁止行为"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-28715696ca7123d8",
+              "quote": "The company recently released BabaBench, a benchmark that measures how well frontier AI agents handle long-horizon patient advocacy tasks",
+              "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+              "quote_hash": "050c8e4d14b5ca41097d78eb021f4e9229355ce3403e466c4d023143d3dcea40"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "American Stroke Foundation",
+          "industry": "医疗健康",
+          "use_case": "卒中幸存者及家庭支持合作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-28715696ca7123d8",
+              "quote": "recent partnerships with the American Stroke Foundation and the American Breast Cancer Foundation",
+              "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+              "quote_hash": "b86352a4939324ba4570acb74ca14aa7eff04acdb5178d230cbd1ef3f8f833c7"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "American Breast Cancer Foundation",
+          "industry": "医疗健康",
+          "use_case": "乳腺癌患者支持合作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-28715696ca7123d8",
+              "quote": "recent partnerships with the American Stroke Foundation and the American Breast Cancer Foundation",
+              "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+              "quote_hash": "b86352a4939324ba4570acb74ca14aa7eff04acdb5178d230cbd1ef3f8f833c7"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Centers for Medicare & Medicaid Services",
+          "industry": "政府公共部门",
+          "use_case": "入选ACCESS Model，覆盖四条临床路径",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-28715696ca7123d8",
+              "quote": "the Centers for Medicare & Medicaid Services selected Baba for the ACCESS Model",
+              "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+              "quote_hash": "f9cc9aee21de718c5ed9f648526cfd36b62b66105386eacb86d5681c6725b330"
+            }
+          ],
+          "entity_id": "EN-a104dc030979c044"
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "4000万美元",
+          "observed_at": "2026-10-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-28715696ca7123d8",
+              "quote": "a $40 million Series A",
+              "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+              "quote_hash": "3ab16c2e73f532ab6ea04cfba7b1c47fcbb0d21e8c899435760f749ad2bb9992"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "4700万美元",
+          "observed_at": "2026-10-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2b081d22c8ea473d",
+              "quote": "This round brings Baba’s total funding to $47M.",
+              "source_content_hash": "f76e668e8ea457c4",
+              "quote_hash": "364b564ed73b1d8d8f3f993c3d4d042220cda7991cc726af54cad1f3e80121af"
+            }
+          ]
+        },
+        {
+          "label": "已服务患者及家庭数",
+          "value": "超过10000",
+          "observed_at": "2026-10-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-28715696ca7123d8",
+              "quote": "Baba has supported more than 10,000 patients and families across the U.S.",
+              "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+              "quote_hash": "fe87ef04048d442cfa2802d9d66c48be778b285f7ec4251c202c098e9b1aac3b"
+            }
+          ]
+        },
+        {
+          "label": "等候名单家庭数",
+          "value": "超过100000",
+          "observed_at": "2026-10-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-28715696ca7123d8",
+              "quote": "with more than 100,000 families on the waiting list",
+              "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+              "quote_hash": "396e45c22f3fcb140017cdeaedf6e2c8602571d042c759ba8d73326491a85d83"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Connor Sweeney",
+          "quote": "By dramatically lowering the cost of operating and coordinating care, we have an opportunity to make care delivery economically viable for populations that have historically been too expensive to serve.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-28715696ca7123d8",
+              "quote": "By dramatically lowering the cost of operating and coordinating care, we have an opportunity to make care delivery economically viable for populations that have historically been too expensive to serve",
+              "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+              "quote_hash": "ba38badb644f04c26066ee511ae9dbfa00725d8dda91e61faea5ca60bad86715"
+            }
+          ]
+        },
+        {
+          "speaker": "Rick Heitzmann",
+          "quote": "Baba is our latest bet on the consumerization of healthcare, this time for the millions of Americans who are rural, older and have more complex needs.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-28715696ca7123d8",
+              "quote": "Baba is our latest bet on the consumerization of healthcare, this time for the millions of Americans who are rural, older and have more complex needs.",
+              "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+              "quote_hash": "ed2ea05b043c44838f632105fc249a7c1aa568242955e5d431ed1e58dfe11b81"
+            }
+          ]
+        },
+        {
+          "speaker": "Carter Prince",
+          "quote": "Navigating healthcare is not a challenge that can be solved by general AI agents.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-28715696ca7123d8",
+              "quote": "Navigating healthcare is not a challenge that can be solved by general AI agents.",
+              "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+              "quote_hash": "d38df6a6e3bfdaf42b1d052d58c982030db953c364a0b249b8e3a7db36846395"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "FirstMark Capital",
+            "speaker": "Rick Heitzmann",
+            "speaker_role": "联合创始人兼合伙人",
+            "rationale": "FirstMark长期投资以技术改善医疗可及性的数字健康公司，认为Baba面向农村、年长、需求更复杂的美国人群，推动医疗消费化，并已证明AI能为Medicare患者提供协调的礼宾级护理。",
+            "quote": "At FirstMark, we’ve spent years backing category-defining digital health companies that use technology to level the playing field for those shut out of care — whether due to stigma, access, cost or geography",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28715696ca7123d8",
+                "quote": "At FirstMark, we’ve spent years backing category-defining digital health companies that use technology to level the playing field for those shut out of care — whether due to stigma, access, cost or geography",
+                "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                "quote_hash": "a63eea6ebe2b917bf8aa5ecb7d47c5869b6979531dee5f110f4a2a9b94a0bd21"
+              }
+            ]
+          },
+          {
+            "institution": "CVS Health Ventures",
+            "speaker": "Carter Prince",
+            "speaker_role": "合伙人",
+            "rationale": "认为通用AI智能体无法解决医疗导航问题，而Baba针对特定长周期活动训练并让人类深度参与，有望帮助更多患者获得所需护理与支持。",
+            "quote": "Navigating healthcare is not a challenge that can be solved by general AI agents. However, by training on specific long-horizon activities and keeping humans deeply in the loop, I’m excited for how Baba can help more patients get the care and support they need",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28715696ca7123d8",
+                "quote": "Navigating healthcare is not a challenge that can be solved by general AI agents. However, by training on specific long-horizon activities and keeping humans deeply in the loop, I’m excited for how Baba can help more patients get the care and support they need",
+                "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                "quote_hash": "e4fdb06fbea7b31f5aa90e4a033349a9a533e6c6347ce23a27c76006045af33e"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是：AI能否显著降低护理运营与协调成本，使历史上“太贵而难以服务”的Medicare/Medicaid人群在按价值付费模式下具备经济可行性。当前融资依赖的已验证信号包括：公司披露已服务超过1万名患者及家庭、等候名单超过10万户、入选CMS ACCESS Model全部四条临床路径，以及CVS Health Ventures等支付方相关方参与本轮。证据边界在于：患者与等候名单数字由公司提供、未经独立核实；来源未披露估值、合同条款、模型细节与评估结果，价值付费安排仍处早期。",
+        "validated_signals": [
+          "公司披露已服务超过10000名美国患者及家庭",
+          "公司披露等候名单超过100000户家庭",
+          "2026年6月入选CMS ACCESS Model全部四条临床路径",
+          "发布BabaBench基准，已被NeurIPS workshop接收"
+        ],
+        "risks": [
+          "患者数与等候名单为公司自报数据，未经独立核实",
+          "来源未披露估值、价值付费合同条款及AI与人工分工细节",
+          "通用AI工具在护理协调中效果有限，长周期任务仍需大量人工完成最后一公里",
+          "公司自述仍处早期，当前模型仅开始处理常规护理协调步骤"
+        ],
+        "sector": "医疗服务与临床",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：AI能否显著降低护理运营与协调成本，使历史上“太贵而难以服务”的Medicare/Medicaid人群在按价值付费模式下具备经济可行性。当前融资依赖的已验证信号包括：公司披露已服务超过1万名患者及家庭、等候名单超过10万户、入选CMS ACCESS Model全部四条临床路径，以及CVS Health Ventures等支付方相关方参与本轮。证据边界在于：患者与等候名单数字由公司提供、未经独立核实；来源未披露估值、合同条款、模型细节与评估结果，价值付费安排仍处早期。",
+          "evidence_signals": [
+            "公司披露已服务超过10000名美国患者及家庭",
+            "公司披露等候名单超过100000户家庭",
+            "2026年6月入选CMS ACCESS Model全部四条临床路径",
+            "发布BabaBench基准，已被NeurIPS workshop接收"
+          ],
+          "risks": [
+            "患者数与等候名单为公司自报数据，未经独立核实",
+            "来源未披露估值、价值付费合同条款及AI与人工分工细节",
+            "通用AI工具在护理协调中效果有限，长周期任务仍需大量人工完成最后一公里",
+            "公司自述仍处早期，当前模型仅开始处理常规护理协调步骤"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Baba护理平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "BabaBench",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Connor Sweeney",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "FirstMark Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "CVS Health Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Valtruis",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "General Catalyst",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Genius Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Ground Up Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "General Catalyst",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Soma Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "American Stroke Foundation",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "American Breast Cancer Foundation",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Centers for Medicare & Medicaid Services",
+          "canonical_entity_id": "EN-a104dc030979c044",
+          "canonical_name": "Centers for Medicare & Medicaid Services"
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-28715696ca7123d8",
+          "source_url": "https://www.globenewswire.com/news-release/2026/10/20/3384598/0/en/applied-ai-company-baba-raises-40-million-series-a-to-improve-the-medicare-experience.html",
+          "title": "应用AI公司Baba完成4000万美元A轮融资，以改善Medicare体验",
+          "publisher": "www.globenewswire.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-21T03:09:53.886Z",
+          "content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+          "source_artifact_id": "SA-7a28ce44f02c7ca3",
+          "raw_id": "RAW-0c12cc54c2f76f5a"
+        },
+        {
+          "source_id": "FISRC-2b081d22c8ea473d",
+          "source_url": "https://www.callbaba.com/updates/baba-raises-40m-series-a/",
+          "title": "Baba raises $40M Series A",
+          "publisher": "callbaba.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-21T05:30:41.600Z",
+          "content_hash": "f76e668e8ea457c4",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-c3949be2eb29f63a",
+          "source_url": "https://www.linkedin.com/posts/vedantsuri_excited-to-partner-with-connor-on-baba-the-activity-7432522188773093377-CtIU",
+          "title": "General Catalyst Leads Round in Baba, Healthcare Company | Vedant Suri posted on the topic | LinkedIn",
+          "publisher": "linkedin.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-21T05:30:45.627Z",
+          "content_hash": "ed124368d88e215c",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-21T05:30:56.848Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-21T05:30:56.848Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "BabaBench",
+            "Baba护理平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Connor Sweeney"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-5f298468c125d834"
+      ],
+      "aggregation": {
+        "key": "EN-e75a6cd43a16c2f3|series_a|USD:exact:40000000:::|2026-10-20",
+        "event_count": 1,
+        "strategy": "reviewed_funding_subject",
+        "subject_id": "EN-e75a6cd43a16c2f3",
+        "source_card_count": 1
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-40c83ed3548e17ab",
+          "event_ids": [
+            "EV-5f298468c125d834",
+            "EV-5f298468c125d834"
+          ],
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$40 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 40000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "4000 万美元"
+          },
+          "announced_at": "2026-10-20",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true,
+          "investors": [
+            {
+              "name": "FirstMark Capital",
+              "role": "本轮领投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-28715696ca7123d8",
+                  "quote": "a $40 million Series A led by FirstMark Capital",
+                  "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                  "quote_hash": "1c01ca4fe00d7cce2d7b2da5b308ca088767b546611b1696168c0f40a4b45553"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-587cddc7c698d6"
+            },
+            {
+              "name": "CVS Health Ventures",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-28715696ca7123d8",
+                  "quote": "with participation from CVS Health Ventures and Valtruis",
+                  "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                  "quote_hash": "2d18ac25674c501e772a65d0993bb37e351057bea16be32b00254fb49d1000c9"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-90577d5cf50f1c"
+            },
+            {
+              "name": "Valtruis",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-28715696ca7123d8",
+                  "quote": "with participation from CVS Health Ventures and Valtruis",
+                  "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                  "quote_hash": "2d18ac25674c501e772a65d0993bb37e351057bea16be32b00254fb49d1000c9"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-16fa2e8f135b9c"
+            },
+            {
+              "name": "General Catalyst",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-28715696ca7123d8",
+                  "quote": "returning investors General Catalyst, Genius Ventures and Ground Up Ventures",
+                  "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                  "quote_hash": "28719cf3b3cf27940d78970d6175d054bc0078fd782bc2ef8808175830bf2c9a"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-f381c3151a9bb7"
+            },
+            {
+              "name": "Genius Ventures",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-28715696ca7123d8",
+                  "quote": "returning investors General Catalyst, Genius Ventures and Ground Up Ventures",
+                  "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                  "quote_hash": "28719cf3b3cf27940d78970d6175d054bc0078fd782bc2ef8808175830bf2c9a"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-fab7bd37995365"
+            },
+            {
+              "name": "Ground Up Ventures",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-28715696ca7123d8",
+                  "quote": "returning investors General Catalyst, Genius Ventures and Ground Up Ventures",
+                  "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                  "quote_hash": "28719cf3b3cf27940d78970d6175d054bc0078fd782bc2ef8808175830bf2c9a"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-8b8bf760f6f089"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-28715696ca7123d8",
+              "quote": "NEW YORK, Oct. 20, 2026 (GLOBE NEWSWIRE) -- Baba, an applied AI company modernizing the Medicare and Medicaid experience, today announced a $40 million Series A led by FirstMark Capital, with participation from CVS Health Ventures and Valtruis and returning investors General Catalyst, Genius Ventures and Ground Up Ventures.",
+              "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+              "quote_hash": "87f6bccb1e3c4bb0ae03d91c7bc45a6077a131c4c6944319d8b8cec579c60316"
+            },
+            {
+              "source_id": "FISRC-28715696ca7123d8",
+              "quote": "today announced a $40 million Series A led by FirstMark Capital",
+              "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+              "quote_hash": "6fe63297a9068d864e0bdfe94d731a5481332feb2d2c3b339d74f04345c95f2a"
+            },
+            {
+              "source_id": "FISRC-2b081d22c8ea473d",
+              "quote": "This round brings Baba’s total funding to $47M.",
+              "source_content_hash": "f76e668e8ea457c4",
+              "quote_hash": "364b564ed73b1d8d8f3f993c3d4d042220cda7991cc726af54cad1f3e80121af"
+            }
+          ]
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "id": "enterprise-software",
+        "name": "企业软件",
+        "dimension": "financing_product_form"
+      },
+      "market_category": {
+        "id": "industry",
+        "name": "行业 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "healthcare",
+        "name": "医疗服务与临床",
+        "dimension": "financing_subsector"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-5f298468c125d834"
+      },
+      "translations": {
+        "zh-CN": {
+          "products[0].target_customers": {
+            "text": "Medicare和Medicaid患者及其家庭、健康计划",
+            "source_hash": "c63000367bd42473701dde464e83787c4b5b9205b61a8766d88fc7ddf11015bb",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-10-21T05:32:04.087Z",
+            "status": "translated"
+          },
+          "customers[2].use_case": {
+            "text": "入选ACCESS Model，覆盖四条临床路径",
+            "source_hash": "a76fbe45bf3701fdf5bdc0c717b563b502734414488384b385028733bde1053c",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-10-21T05:32:04.087Z",
+            "status": "translated"
+          }
+        }
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "industry",
+          "name": "行业 AI"
+        },
+        "subsector": {
+          "id": "healthcare",
+          "name": "医疗服务与临床"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件"
+        },
+        "customers": [
+          {
+            "id": "consumer",
+            "name": "个人消费者"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-28715696ca7123d8",
+            "quote": "Baba, an applied AI company modernizing the Medicare and Medicaid experience"
+          },
+          {
+            "source_id": "FISRC-2b081d22c8ea473d",
+            "quote": "Every patient gets a dedicated care team of advocates and licensed therapists, backed by AI"
+          },
+          {
+            "source_id": "FISRC-28715696ca7123d8",
+            "quote": "Baba is a care partner to patients and their families."
+          }
+        ],
+        "rationale": "Baba以AI辅助的护理团队服务Medicare/Medicaid患者，属医疗服务行业AI。"
+      },
+      "source_card_ids": [
+        "FI-40c83ed3548e17ab"
+      ]
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-bb001153a5913396",
+      "triggered_by_event_id": "EV-47114264f19bc46f",
+      "as_of_date": "2026-10-21",
+      "company": {
+        "entity_id": "EN-077bbcba652dc144",
+        "name": "芯爱科技（南京）有限公司",
+        "full_name": "芯爱科技（南京）有限公司",
+        "website": "",
+        "summary": "芯爱科技是一家专注于高端IC封装基板研发、生产与销售的企业，产品覆盖AI手机基板、AI/CPU/GPU基板、Coreless ETS、FCCSP、FCBGA等，基板产品贯穿AI云、边、端场景。",
+        "headquarters": "南京浦口经济开发区",
+        "founders": [
+          {
+            "name": "张垂弘",
+            "role": "创始人、董事长兼总经理",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "公司创始人、董事长兼总经理张垂弘",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "b6d7f80687a509e0e2cbeff7bc5ebaf445594b9891ea1ec60c547a8d3b37f421"
+              },
+              {
+                "source_id": "FISRC-04cdd72a5b860358",
+                "quote": "2021年，张垂弘在南京创立芯爱科技",
+                "source_content_hash": "c15eee77ffef8dae",
+                "quote_hash": "17da59276cdd9126ecd138b1955a4001e3730e298a7515bddee7707f8f73f5d6"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-016b43d0cd0957da",
+            "quote": "芯爱科技成立于2021年5月，总部位于南京浦口经济开发区，专注于高端IC封装基板的研发、生产与销售",
+            "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+            "quote_hash": "cfa4f103592ad85c5d565591b20bc9aea8a25c4dc973a795a94ae271efee9c5d"
+          },
+          {
+            "source_id": "FISRC-04cdd72a5b860358",
+            "quote": "芯爱科技成立于2021年5月，总部位于南京浦口经济开发区",
+            "source_content_hash": "c15eee77ffef8dae",
+            "quote_hash": "54f105e07ce86364fdbf3d64e06ad33dc89e4586b022c03226d45b3e182b225d"
+          }
+        ],
+        "application_entity_id": "EN-077bbcba652dc144",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A2轮",
+        "amount": "近15亿元",
+        "total_raised": "超过50亿元",
+        "announced_at": "2026-10-20",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "胜宏科技",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "本轮投资方包括胜宏科技、瑞芯微等多家产业战略投资方",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "9d0d03049ee0bc498539523e8800c90ba30fc65cc767648cc85a6f6fc790c009"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-62941b39e6c4f1"
+          },
+          {
+            "name": "瑞芯微",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "本轮投资方包括胜宏科技、瑞芯微等多家产业战略投资方",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "9d0d03049ee0bc498539523e8800c90ba30fc65cc767648cc85a6f6fc790c009"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-137823af088143"
+          },
+          {
+            "name": "武岳峰科创",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-922eb77f54f6a3"
+          },
+          {
+            "name": "厦门联和资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-184e9b64aeaf6e"
+          },
+          {
+            "name": "越秀产业基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-c3975bd6548308"
+          },
+          {
+            "name": "和利资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-c69fc91cdeb6b6"
+          },
+          {
+            "name": "泰达科投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-1c1f209aea4bfc"
+          },
+          {
+            "name": "领庆投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-91c88e50286625"
+          },
+          {
+            "name": "盟海投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-d81aef10f73a0d"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-016b43d0cd0957da",
+            "quote": "瑞财经 吴文婷10月19日，据华兴资本发布，国内AI领域高阶IC封装基板供应商芯爱科技（南京）有限公司（以下简称“芯爱科技”）宣布完成A2轮近15亿元融资。",
+            "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+            "quote_hash": "577b7d9542af4fe2cdd6825ef260e4c3477334f8f316736225a0416331cae0dd"
+          },
+          {
+            "source_id": "FISRC-016b43d0cd0957da",
+            "quote": "芯爱科技（南京）有限公司（以下简称“芯爱科技”）宣布完成A2轮近15亿元融资",
+            "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+            "quote_hash": "ddbb3c64e26f397e529fc3e35b7d72486beb5deef1c85e3b909fa31bf58fa799"
+          },
+          {
+            "source_id": "FISRC-04cdd72a5b860358",
+            "quote": "南京IC封装基板厂商芯爱科技已于近日完成A2轮近15亿元融资",
+            "source_content_hash": "c15eee77ffef8dae",
+            "quote_hash": "a81d856e9390b8dc1e9255bea57ba9eed8ea1daa1426e143302dc6582f000c4f"
+          }
+        ],
+        "round_code": "series_a2",
+        "round_original": "A2轮",
+        "amount_original": "近15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 15 亿元"
+        },
+        "total_raised_original": "超过50亿元",
+        "total_raised_normalized": {
+          "currency": "CNY",
+          "value": 5000000000,
+          "min_value": 5000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 50 亿元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-47114264f19bc46f",
+            "round_original": "A2轮",
+            "amount": "近15亿元",
+            "announced_at": "2026-10-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "瑞财经 吴文婷10月19日，据华兴资本发布，国内AI领域高阶IC封装基板供应商芯爱科技（南京）有限公司（以下简称“芯爱科技”）宣布完成A2轮近15亿元融资。",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "577b7d9542af4fe2cdd6825ef260e4c3477334f8f316736225a0416331cae0dd"
+              },
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "芯爱科技（南京）有限公司（以下简称“芯爱科技”）宣布完成A2轮近15亿元融资",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "ddbb3c64e26f397e529fc3e35b7d72486beb5deef1c85e3b909fa31bf58fa799"
+              },
+              {
+                "source_id": "FISRC-04cdd72a5b860358",
+                "quote": "南京IC封装基板厂商芯爱科技已于近日完成A2轮近15亿元融资",
+                "source_content_hash": "c15eee77ffef8dae",
+                "quote_hash": "a81d856e9390b8dc1e9255bea57ba9eed8ea1daa1426e143302dc6582f000c4f"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "超过50亿元",
+          "normalized": {
+            "currency": "CNY",
+            "value": 5000000000,
+            "min_value": 5000000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 50 亿元"
+          },
+          "basis": "source_disclosed",
+          "known_round_totals": [
+            {
+              "currency": "CNY",
+              "value": 1500000000,
+              "min_value": 1500000000,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "approximate",
+              "display_zh": "约 15 亿元"
+            }
+          ],
+          "historical_round_count": 1
+        }
+      },
+      "products": [
+        {
+          "name": "FCBGA封装基板",
+          "description": "面向高端CPU、GPU、NPU、AI加速芯片及高性能服务器处理器的封装基板，本轮融资将用于其产能扩充。",
+          "target_customers": "AI芯片设计企业、封测厂",
+          "features": [
+            "应用于高端CPU、GPU、NPU、AI加速芯片、高性能服务器处理器"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-04cdd72a5b860358",
+              "quote": "芯爱科技产品FCBGA，应用于高端CPU、GPU、NPU、AI加速芯片、高性能服务器处理器",
+              "source_content_hash": "c15eee77ffef8dae",
+              "quote_hash": "b761e7cb3a2c47f1e8f2ac8ef65ccf29a0ab85c42f5efdfc7a9a78a89ce3bc14"
+            },
+            {
+              "source_id": "FISRC-04cdd72a5b860358",
+              "quote": "本轮融资将主要用于高阶FCBGA封装基板产能扩充、玻璃基板研发及核心材料国产替代共研",
+              "source_content_hash": "c15eee77ffef8dae",
+              "quote_hash": "11015872449e6204a80c6ab1c4c369689e5ff77ee49565980c2e63cd1eb53a89"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AI/CPU/GPU基板",
+          "description": "覆盖AI服务器CPU、GPU芯片及端侧AI处理器等算力环节的封装基板。",
+          "target_customers": "芯片设计企业、封测厂",
+          "features": [
+            "覆盖AI服务器CPU、GPU芯片",
+            "覆盖端侧AI处理器及各类智能终端"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-016b43d0cd0957da",
+              "quote": "产品涵盖先进AI手机基板、AI/CPU/GPU基板、Coreless ETS、FCCSP、FCBGA等",
+              "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+              "quote_hash": "f0b272695f4d6d05bf0b56c667c523d63cbcdefd344f20a4f8301e5dafbd5c2c"
+            },
+            {
+              "source_id": "FISRC-04cdd72a5b860358",
+              "quote": "算力环节，该公司产品覆盖AI服务器CPU、GPU芯片、高阶AI/5G手机SoC，端侧AI处理器及各类智能终端",
+              "source_content_hash": "c15eee77ffef8dae",
+              "quote_hash": "5f5fc3076f8946613f181b9b83ec21d6f2b02304e35e0196b5a3b0adce66e93a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Coreless ETS",
+          "description": "手机主流基板技术产品，由创始人张垂弘作为主要发明人参与开发。",
+          "target_customers": "手机芯片及终端厂商",
+          "features": [
+            "手机主流基板技术"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-016b43d0cd0957da",
+              "quote": "产品涵盖先进AI手机基板、AI/CPU/GPU基板、Coreless ETS、FCCSP、FCBGA等",
+              "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+              "quote_hash": "f0b272695f4d6d05bf0b56c667c523d63cbcdefd344f20a4f8301e5dafbd5c2c"
+            },
+            {
+              "source_id": "FISRC-016b43d0cd0957da",
+              "quote": "是手机主流基板Coreless ETS技术的主要发明人",
+              "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+              "quote_hash": "beea23ddfee41d6a8c18cc7ec5c92d019905307d92dbf4505a8580163f4a3dbf"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "长电科技",
+          "industry": "",
+          "use_case": "供应商资格认证",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-04cdd72a5b860358",
+              "quote": "通过长电科技、华天科技、通富微电等全部国内头部封测厂的供应商资格认证",
+              "source_content_hash": "c15eee77ffef8dae",
+              "quote_hash": "3107adf7584c7f5325b101a1c00973ccc54cbd8f03dbe70c36ac35e533a1e63d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "华天科技",
+          "industry": "",
+          "use_case": "供应商资格认证",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-04cdd72a5b860358",
+              "quote": "通过长电科技、华天科技、通富微电等全部国内头部封测厂的供应商资格认证",
+              "source_content_hash": "c15eee77ffef8dae",
+              "quote_hash": "3107adf7584c7f5325b101a1c00973ccc54cbd8f03dbe70c36ac35e533a1e63d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "通富微电",
+          "industry": "",
+          "use_case": "供应商资格认证",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-04cdd72a5b860358",
+              "quote": "通过长电科技、华天科技、通富微电等全部国内头部封测厂的供应商资格认证",
+              "source_content_hash": "c15eee77ffef8dae",
+              "quote_hash": "3107adf7584c7f5325b101a1c00973ccc54cbd8f03dbe70c36ac35e533a1e63d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "日月光投控",
+          "industry": "",
+          "use_case": "进入供应体系并规模量产",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-04cdd72a5b860358",
+              "quote": "其进入全球第一大封测集团日月光投控供应体系，取得日月光、矽品合格供应商资质并实现规模量产",
+              "source_content_hash": "c15eee77ffef8dae",
+              "quote_hash": "199147da3e73157edb7ad9cd04f728f4d5c1b1879b1d5bfcdcb7a2a6bab7f4dd"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "揖斐电",
+          "product": "高端封装基板",
+          "scenario": "高端基板产能与材料自主配套",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "芯爱科技在整体产能规模和高端材料自主配套上与揖斐电仍有差距。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-04cdd72a5b860358",
+              "quote": "在整体产能规模和高端材料自主配套上与揖斐电、三星电机等国际龙头仍有差距",
+              "source_content_hash": "c15eee77ffef8dae",
+              "quote_hash": "507161046d12affad3bbf364d1c039abe59719219eda91910bb06c0d495fb7cf"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "三星电机",
+          "product": "高端封装基板",
+          "scenario": "高端基板产能与材料自主配套",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "芯爱科技在整体产能规模和高端材料自主配套上与三星电机仍有差距。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-04cdd72a5b860358",
+              "quote": "在整体产能规模和高端材料自主配套上与揖斐电、三星电机等国际龙头仍有差距",
+              "source_content_hash": "c15eee77ffef8dae",
+              "quote_hash": "507161046d12affad3bbf364d1c039abe59719219eda91910bb06c0d495fb7cf"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "近15亿元",
+          "observed_at": "2026-10-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-016b43d0cd0957da",
+              "quote": "宣布完成A2轮近15亿元融资",
+              "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+              "quote_hash": "06261331fb0f14ecc71e505d79f9d1b8ba32fc988dfb3ae9aad1c52e1105a708"
+            }
+          ]
+        },
+        {
+          "label": "累计社会资本支持",
+          "value": "超过50亿元",
+          "observed_at": "2026-10-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-016b43d0cd0957da",
+              "quote": "公司累计获得社会资本支持已超过50亿元",
+              "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+              "quote_hash": "312e2df55ba5398859ffb17123ee4c04fc54ac3c0c672093530c15c4f1516b98"
+            }
+          ]
+        },
+        {
+          "label": "搭载芯爱基板的智能手机累计出货量",
+          "value": "超过8000万台",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-04cdd72a5b860358",
+              "quote": "搭载芯爱基板的智能手机累计出货量超过8000万台",
+              "source_content_hash": "c15eee77ffef8dae",
+              "quote_hash": "0dd4ce0b99ed984a6c81c95994a7b7f546765c8baf3b0fda2df31215cdd7a356"
+            }
+          ]
+        },
+        {
+          "label": "全系列基板累计配套FinFET工艺芯片",
+          "value": "近2亿颗",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-04cdd72a5b860358",
+              "quote": "该公司全系列基板累计配套FinFET工艺芯片近2亿颗",
+              "source_content_hash": "c15eee77ffef8dae",
+              "quote_hash": "12d1f8d09074f5b1f5fcae3b0ce5317a25f856faeb5f698ed9557cad009e1a3e"
+            }
+          ]
+        },
+        {
+          "label": "2025年产品出口比例",
+          "value": "近70%",
+          "observed_at": "2025",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-04cdd72a5b860358",
+              "quote": "2025年芯爱科技产品出口比例近70%",
+              "source_content_hash": "c15eee77ffef8dae",
+              "quote_hash": "f73ac6e2b7db9685368b74558d3e03dde7d40d47ddff1b538d531761c71b8fbe"
+            }
+          ]
+        },
+        {
+          "label": "送样至通过国内头部封测厂供应商资格认证用时",
+          "value": "7个月",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-04cdd72a5b860358",
+              "quote": "芯爱科技产品启动送样后仅7个月，通过长电科技、华天科技、通富微电等全部国内头部封测厂的供应商资格认证",
+              "source_content_hash": "c15eee77ffef8dae",
+              "quote_hash": "61c69d99cdd23da232a4c2fdadaba97d51d0603ef5f535d10f862239ce9466f4"
+            }
+          ]
+        },
+        {
+          "label": "送样至进入日月光投控供应体系用时",
+          "value": "10个月",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-04cdd72a5b860358",
+              "quote": "送样10个月内，其进入全球第一大封测集团日月光投控供应体系",
+              "source_content_hash": "c15eee77ffef8dae",
+              "quote_hash": "f0bc9e4d8cd7a763063119abe572c2bb7295274553c2e10a8201cda5a359b2d7"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是芯爱科技能否把已通过国内头部AI芯片企业验证、并进入日月光等封测体系的客户认证，转化为高阶FCBGA产能与量产良率。已验证信号包括：产品通过长电科技、华天科技、通富微电等国内头部封测厂供应商资格认证，进入日月光投控供应体系并规模量产，AI服务器用存储主控芯片封装基板已规模量产，高价值光模块芯片基板已进入量产状态。证据边界在于：来源未披露本轮具体估值、各投资方出资金额与持股比例，也未披露FCBGA新增产能的投产时间与良率数据；来源同时指出其在整体产能规模和高端材料自主配套上与国际龙头仍有差距。",
+        "validated_signals": [
+          "产品通过长电科技、华天科技、通富微电等全部国内头部封测厂供应商资格认证",
+          "进入全球第一大封测集团日月光投控供应体系，取得日月光、矽品合格供应商资质并实现规模量产",
+          "AI服务器用存储主控芯片封装基板已实现规模量产",
+          "高价值光模块芯片基板已进入量产状态",
+          "相关产品已通过国内头部AI芯片企业验证",
+          "搭载芯爱基板的智能手机累计出货量超过8000万台"
+        ],
+        "risks": [
+          "FCBGA基板从客户认证到产线满产通常需要数年，产能爬坡与良率仍待验证",
+          "来源指出其在整体产能规模和高端材料自主配套上与揖斐电、三星电机等国际龙头仍有差距",
+          "本轮融资用途中的玻璃基板研发及核心材料国产替代共研尚处推进阶段，商业化结果未披露",
+          "来源未披露本轮估值、各投资方出资金额及持股比例，资本定价依据不完整"
+        ],
+        "sector": "AI 芯片与加速器",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是芯爱科技能否把已通过国内头部AI芯片企业验证、并进入日月光等封测体系的客户认证，转化为高阶FCBGA产能与量产良率。已验证信号包括：产品通过长电科技、华天科技、通富微电等国内头部封测厂供应商资格认证，进入日月光投控供应体系并规模量产，AI服务器用存储主控芯片封装基板已规模量产，高价值光模块芯片基板已进入量产状态。证据边界在于：来源未披露本轮具体估值、各投资方出资金额与持股比例，也未披露FCBGA新增产能的投产时间与良率数据；来源同时指出其在整体产能规模和高端材料自主配套上与国际龙头仍有差距。",
+          "evidence_signals": [
+            "产品通过长电科技、华天科技、通富微电等全部国内头部封测厂供应商资格认证",
+            "进入全球第一大封测集团日月光投控供应体系，取得日月光、矽品合格供应商资质并实现规模量产",
+            "AI服务器用存储主控芯片封装基板已实现规模量产",
+            "高价值光模块芯片基板已进入量产状态",
+            "相关产品已通过国内头部AI芯片企业验证",
+            "搭载芯爱基板的智能手机累计出货量超过8000万台"
+          ],
+          "risks": [
+            "FCBGA基板从客户认证到产线满产通常需要数年，产能爬坡与良率仍待验证",
+            "来源指出其在整体产能规模和高端材料自主配套上与揖斐电、三星电机等国际龙头仍有差距",
+            "本轮融资用途中的玻璃基板研发及核心材料国产替代共研尚处推进阶段，商业化结果未披露",
+            "来源未披露本轮估值、各投资方出资金额及持股比例，资本定价依据不完整"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "FCBGA封装基板",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI/CPU/GPU基板",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Coreless ETS",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "张垂弘",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "胜宏科技",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "瑞芯微",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "武岳峰科创",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "厦门联和资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "越秀产业基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "和利资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "泰达科投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "领庆投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "盟海投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "长电科技",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "华天科技",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "通富微电",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "日月光投控",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "揖斐电",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "三星电机",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-016b43d0cd0957da",
+          "source_url": "https://m.sohu.com/a/1089999430_121071031?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "title": "联发科老兵创办，芯爱科技完成近15亿元融资、胜宏科技及瑞芯微加持",
+          "publisher": "m.sohu.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-21T03:08:21.670Z",
+          "content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+          "source_artifact_id": "SA-6bd57d20d609c7db",
+          "raw_id": "RAW-10be335608b3e118"
+        },
+        {
+          "source_id": "FISRC-04cdd72a5b860358",
+          "source_url": "https://zhidx.com/p/601976.html",
+          "title": "近15亿，南京封装基板商获新融资，联发科老兵创办",
+          "publisher": "zhidx.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-21T03:36:11.299Z",
+          "content_hash": "c15eee77ffef8dae",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-21T03:36:52.049Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-21T03:36:52.049Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "AI/CPU/GPU基板",
+            "Coreless ETS",
+            "FCBGA封装基板"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "张垂弘"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-47114264f19bc46f"
+      ],
+      "aggregation": {
+        "key": "EN-077bbcba652dc144|series_a2|CNY:approximate:1500000000:::|2026-10-20",
+        "event_count": 1,
+        "strategy": "reviewed_funding_subject",
+        "subject_id": "EN-077bbcba652dc144",
+        "source_card_count": 1
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-bb001153a5913396",
+          "event_ids": [
+            "EV-47114264f19bc46f",
+            "EV-47114264f19bc46f"
+          ],
+          "round": "A2轮",
+          "round_code": "series_a2",
+          "round_original": "A2轮",
+          "amount_original": "近15亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1500000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 15 亿元"
+          },
+          "announced_at": "2026-10-20",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true,
+          "investors": [
+            {
+              "name": "胜宏科技",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-016b43d0cd0957da",
+                  "quote": "本轮投资方包括胜宏科技、瑞芯微等多家产业战略投资方",
+                  "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                  "quote_hash": "9d0d03049ee0bc498539523e8800c90ba30fc65cc767648cc85a6f6fc790c009"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-62941b39e6c4f1"
+            },
+            {
+              "name": "瑞芯微",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-016b43d0cd0957da",
+                  "quote": "本轮投资方包括胜宏科技、瑞芯微等多家产业战略投资方",
+                  "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                  "quote_hash": "9d0d03049ee0bc498539523e8800c90ba30fc65cc767648cc85a6f6fc790c009"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-137823af088143"
+            },
+            {
+              "name": "武岳峰科创",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-016b43d0cd0957da",
+                  "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                  "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                  "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-922eb77f54f6a3"
+            },
+            {
+              "name": "厦门联和资本",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-016b43d0cd0957da",
+                  "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                  "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                  "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-184e9b64aeaf6e"
+            },
+            {
+              "name": "越秀产业基金",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-016b43d0cd0957da",
+                  "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                  "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                  "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-c3975bd6548308"
+            },
+            {
+              "name": "和利资本",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-016b43d0cd0957da",
+                  "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                  "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                  "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-c69fc91cdeb6b6"
+            },
+            {
+              "name": "泰达科投",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-016b43d0cd0957da",
+                  "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                  "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                  "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-1c1f209aea4bfc"
+            },
+            {
+              "name": "领庆投资",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-016b43d0cd0957da",
+                  "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                  "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                  "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-91c88e50286625"
+            },
+            {
+              "name": "盟海投资",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-016b43d0cd0957da",
+                  "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                  "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                  "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-d81aef10f73a0d"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-016b43d0cd0957da",
+              "quote": "瑞财经 吴文婷10月19日，据华兴资本发布，国内AI领域高阶IC封装基板供应商芯爱科技（南京）有限公司（以下简称“芯爱科技”）宣布完成A2轮近15亿元融资。",
+              "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+              "quote_hash": "577b7d9542af4fe2cdd6825ef260e4c3477334f8f316736225a0416331cae0dd"
+            },
+            {
+              "source_id": "FISRC-016b43d0cd0957da",
+              "quote": "芯爱科技（南京）有限公司（以下简称“芯爱科技”）宣布完成A2轮近15亿元融资",
+              "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+              "quote_hash": "ddbb3c64e26f397e529fc3e35b7d72486beb5deef1c85e3b909fa31bf58fa799"
+            },
+            {
+              "source_id": "FISRC-04cdd72a5b860358",
+              "quote": "南京IC封装基板厂商芯爱科技已于近日完成A2轮近15亿元融资",
+              "source_content_hash": "c15eee77ffef8dae",
+              "quote_hash": "a81d856e9390b8dc1e9255bea57ba9eed8ea1daa1426e143302dc6582f000c4f"
+            }
+          ]
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "id": "chip-system",
+        "name": "芯片与计算系统",
+        "dimension": "financing_product_form"
+      },
+      "market_category": {
+        "id": "compute",
+        "name": "AI 算力与芯片",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "ai-chips",
+        "name": "AI 芯片与加速器",
+        "dimension": "financing_subsector"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-47114264f19bc46f"
+      },
+      "translations": {
+        "zh-CN": {
+          "products[1].features[0]": {
+            "text": "覆盖AI服务器CPU、GPU芯片",
+            "source_hash": "ee2694788a70581d05c2340146234de64e70dac845ace7bcfdc32a5ea45c18af",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-10-21T05:32:04.087Z",
+            "status": "translated"
+          }
+        }
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "compute",
+          "name": "AI 算力与芯片"
+        },
+        "subsector": {
+          "id": "ai-chips",
+          "name": "AI 芯片与加速器"
+        },
+        "product_form": {
+          "id": "chip-system",
+          "name": "芯片与计算系统"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-04cdd72a5b860358",
+            "quote": "芯爱科技产品FCBGA，应用于高端CPU、GPU、NPU、AI加速芯片、高性能服务器处理器"
+          },
+          {
+            "source_id": "FISRC-016b43d0cd0957da",
+            "quote": "产品涵盖先进AI手机基板、AI/CPU/GPU基板、Coreless ETS、FCCSP、FCBGA等"
+          },
+          {
+            "source_id": "FISRC-04cdd72a5b860358",
+            "quote": "算力环节，该公司产品覆盖AI服务器CPU、GPU芯片、高阶AI/5G手机SoC，端侧AI处理器及各类智能终端"
+          }
+        ],
+        "rationale": "芯爱科技研发生产面向AI加速芯片与服务器的FCBGA封装基板，属AI芯片产业链。"
+      },
+      "source_card_ids": [
+        "FI-bb001153a5913396"
+      ]
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-e02630ae2510d4e9",
+      "triggered_by_event_id": "EV-c66ddcd78c89a643",
+      "as_of_date": "2026-10-21",
+      "company": {
+        "entity_id": "EN-d2c19f369e44854b",
+        "name": "Plinto",
+        "full_name": "Plinto",
+        "website": "https://plinto.ai",
+        "summary": "Plinto 是一家总部位于哥本哈根的初创公司，构建用于实时财务管控的 AI 智能体，帮助财务团队发现、调查并修复交易错误。",
+        "headquarters": "哥本哈根，丹麦",
+        "founders": [
+          {
+            "name": "Nermina Suljevic",
+            "role": "联合创始人兼首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fba2b526c8bbdb19",
+                "quote": "Plinto was founded in early 2025 by Nermina Suljevic, Nielsen, and Sebastian Rehnby",
+                "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+                "quote_hash": "fdc675faa39962dbcc8616dde34295ea1c4c6e0a6ce6fc6ccca84bb2487a4537"
+              },
+              {
+                "source_id": "FISRC-fba2b526c8bbdb19",
+                "quote": "said Suljevic, co-founder and CEO of Plinto",
+                "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+                "quote_hash": "a714bbb412603d40fcbb5540144a2648fdd58f66f8d5bef69eb5b38937b27095"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jakob Nielsen",
+            "role": "联合创始人兼首席数据官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fba2b526c8bbdb19",
+                "quote": "said Jakob Nielsen, co-founder and CDO of Plinto",
+                "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+                "quote_hash": "79134751e47685a1f64d8933e826734394e629006e379e3b929f351a38935e5a"
+              },
+              {
+                "source_id": "FISRC-fba2b526c8bbdb19",
+                "quote": "Plinto was founded in early 2025 by Nermina Suljevic, Nielsen, and Sebastian Rehnby",
+                "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+                "quote_hash": "fdc675faa39962dbcc8616dde34295ea1c4c6e0a6ce6fc6ccca84bb2487a4537"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sebastian Rehnby",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fba2b526c8bbdb19",
+                "quote": "Plinto was founded in early 2025 by Nermina Suljevic, Nielsen, and Sebastian Rehnby",
+                "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+                "quote_hash": "fdc675faa39962dbcc8616dde34295ea1c4c6e0a6ce6fc6ccca84bb2487a4537"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-fba2b526c8bbdb19",
+            "quote": "Plinto, a Copenhagen-based startup building AI for real-time controlling",
+            "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+            "quote_hash": "aeefe6a2d866c6134b209f26f7879c752129fb883a246b800a16f7aaf4b4b8d7"
+          },
+          {
+            "source_id": "FISRC-9e72db53acfc2956",
+            "quote": "Copenhagen-based AI startup Plinto has raised €2.9 million",
+            "source_content_hash": "8e8118728db2ad084977e1b72f58157f8c64228f841c21f0770f0c82dcb8ca7f",
+            "quote_hash": "86d4c7eeed4423c3b759319ee43c1a1790fa1df518fce4c920a18e3a894581d2"
+          }
+        ],
+        "application_entity_id": "EN-d2c19f369e44854b",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "预种子轮",
+        "amount": "€2.9 million",
+        "total_raised": "",
+        "announced_at": "2026-10-20",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "People Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fba2b526c8bbdb19",
+                "quote": "The round was led by People Ventures and Emblem, with participation from a group of business angels.",
+                "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+                "quote_hash": "8a694a275a1be0bcfdfaf649880337182c9fd963d2c00330f6b1c8941018c5a0"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-ad049c2c22d042"
+          },
+          {
+            "name": "Emblem",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fba2b526c8bbdb19",
+                "quote": "The round was led by People Ventures and Emblem, with participation from a group of business angels.",
+                "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+                "quote_hash": "8a694a275a1be0bcfdfaf649880337182c9fd963d2c00330f6b1c8941018c5a0"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-206159110b1728"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-fba2b526c8bbdb19",
+            "quote": "HomeDenmark-StartupsCopenhagen’s Plinto raises €2.9 million to help finance teams catch and fix...",
+            "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+            "quote_hash": "7fb586fc22f5e62e942be14cbb5ac4379a1f4d037ef99688c4779df8d0dd988b"
+          },
+          {
+            "source_id": "FISRC-fba2b526c8bbdb19",
+            "quote": "has secured €2.9 million in pre-Seed funding",
+            "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+            "quote_hash": "b5e8eaee7fb2bcf1ae56a23ac5f77703660bd485b13a5c3338953c610d84d37f"
+          },
+          {
+            "source_id": "FISRC-9e72db53acfc2956",
+            "quote": "has raised €2.9 million in a funding round from People Ventures and Emblem",
+            "source_content_hash": "8e8118728db2ad084977e1b72f58157f8c64228f841c21f0770f0c82dcb8ca7f",
+            "quote_hash": "cef1c3b605d6f8eb81505fe08bfad0816dc511ee792407d222cf53d97d17d296"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "pre-Seed",
+        "amount_original": "€2.9 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 2900000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "290 万欧元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-c66ddcd78c89a643",
+            "round_original": "pre-Seed",
+            "amount": "€2.9 million",
+            "announced_at": "2026-10-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fba2b526c8bbdb19",
+                "quote": "HomeDenmark-StartupsCopenhagen’s Plinto raises €2.9 million to help finance teams catch and fix...",
+                "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+                "quote_hash": "7fb586fc22f5e62e942be14cbb5ac4379a1f4d037ef99688c4779df8d0dd988b"
+              },
+              {
+                "source_id": "FISRC-fba2b526c8bbdb19",
+                "quote": "has secured €2.9 million in pre-Seed funding",
+                "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+                "quote_hash": "b5e8eaee7fb2bcf1ae56a23ac5f77703660bd485b13a5c3338953c610d84d37f"
+              },
+              {
+                "source_id": "FISRC-9e72db53acfc2956",
+                "quote": "has raised €2.9 million in a funding round from People Ventures and Emblem",
+                "source_content_hash": "8e8118728db2ad084977e1b72f58157f8c64228f841c21f0770f0c82dcb8ca7f",
+                "quote_hash": "cef1c3b605d6f8eb81505fe08bfad0816dc511ee792407d222cf53d97d17d296"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "EUR",
+              "value": 2900000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "290 万欧元"
+            }
+          ],
+          "historical_round_count": 1
+        }
+      },
+      "products": [
+        {
+          "name": "Plinto 智能体平台",
+          "description": "AI 智能体叠加在公司现有系统之上，标记交易后进行调查、收集证据并跟进相关人员，可联系供应商处理错误发票、索取贷项通知单或准备更正以供审批。",
+          "target_customers": "大型组织的财务管控团队",
+          "features": [
+            "实时发现交易偏差并调查",
+            "与团队、客户或供应商直接沟通",
+            "从对话中学习并应用于未来交易",
+            "覆盖订单到收款与采购到付款流程"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fba2b526c8bbdb19",
+              "quote": "Plinto wants to solve this problem with AI agents that sit on top of the systems companies already use",
+              "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+              "quote_hash": "1a85444462ab7c3e687476d64b60e5a1d51bd002d2cf96aed286703342035496"
+            },
+            {
+              "source_id": "FISRC-fba2b526c8bbdb19",
+              "quote": "Plinto says the agents are capable of contacting a supplier about a wrongful invoice, requesting a credit note or preparing a correction for approval.",
+              "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+              "quote_hash": "53653d2f024abcbce6a1b6020f95d5ff152a0367480be6961412b24a593b8b57"
+            },
+            {
+              "source_id": "FISRC-11cd2eca8330e81b",
+              "quote": "Plinto's agents manage transactions from start to finish.",
+              "source_content_hash": "165b7e3f578ef9c8",
+              "quote_hash": "274dbcd13c864cd56fce4f4911b7080789b7b323ad8e1c3f40dc52833ab774b2"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "系统集成层",
+          "description": "在 ERP 之上运行，连接银行、工作流、文档与协作工具，并支持通过 MCP 或 API 接入其他系统。",
+          "target_customers": "使用主流 ERP 与银行系统的企业",
+          "features": [
+            "集成 Microsoft Business Central、Xero、Visma 等 ERP",
+            "连接主要斯堪的纳维亚银行及 2,700 多家其他银行",
+            "连接 Slack、Microsoft Teams、邮件等协作工具"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fba2b526c8bbdb19",
+              "quote": "Plinto platform integrates with major ERP platforms, including Microsoft Business Central, Xero, and Visma, and connects to major Scandinavian banks as well as over 2,700 other banks.",
+              "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+              "quote_hash": "f8df900615ef9153f8f40c2c2faca68e96a59a2b617db6909ceb400a7715ed8e"
+            },
+            {
+              "source_id": "FISRC-11cd2eca8330e81b",
+              "quote": "Missing something? Connect any Model Context Protocol (MCP) (opens in a new tab) provider or integrate with our API directly.",
+              "source_content_hash": "165b7e3f578ef9c8",
+              "quote_hash": "41dd4e94a4c39babff8a01e2ebe0f33b83a01a185fe1f9bd9047ea711c46df8f"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "融资额",
+          "value": "€2.9 million",
+          "observed_at": "2026-10-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fba2b526c8bbdb19",
+              "quote": "has secured €2.9 million in pre-Seed funding",
+              "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+              "quote_hash": "b5e8eaee7fb2bcf1ae56a23ac5f77703660bd485b13a5c3338953c610d84d37f"
+            }
+          ]
+        },
+        {
+          "label": "单一业务部门每月发现的偏差数",
+          "value": "约 430",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fba2b526c8bbdb19",
+              "quote": "one of its customers uncovered around 430 deviations per month in a single part of the business",
+              "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+              "quote_hash": "6a9c9cdf6ffef936a7dbde33d0048714fe219fd80a0b95edb70556a74d4fa05a"
+            }
+          ]
+        },
+        {
+          "label": "可连接的银行数量",
+          "value": "2,700+",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fba2b526c8bbdb19",
+              "quote": "connects to major Scandinavian banks as well as over 2,700 other banks",
+              "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+              "quote_hash": "667c0599eac74deb5ddd7010099631604d2f64bc8aef6d5b33d623af3eb23831"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Jakob Nielsen",
+          "quote": "Companies have systems that record every single transaction, but checking whether those transactions actually match agreements and rules is still largely manual. We’re building AI agents that find deviations, investigate them and take action, so errors get fixed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fba2b526c8bbdb19",
+              "quote": "Companies have systems that record every single transaction, but checking whether those transactions actually match agreements and rules is still largely manual. We’re building AI agents that find deviations, investigate them and take action, so errors get fixed",
+              "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+              "quote_hash": "78afc17f18bcdeb980d0c3e9d33686b15087030a4b19c2785da52fe82c179a87"
+            }
+          ]
+        },
+        {
+          "speaker": "Nermina Suljevic",
+          "quote": "Many of our customers work with low margins, so even small errors can quickly add up. The problem is that they’re often only discovered after the money has been paid. We want companies to catch and fix errors before they hit the bottom line",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fba2b526c8bbdb19",
+              "quote": "Many of our customers work with low margins, so even small errors can quickly add up. The problem is that they’re often only discovered after the money has been paid. We want companies to catch and fix errors before they hit the bottom line",
+              "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+              "quote_hash": "630eedfc1c3d83a1b11a21dc72261776b3ddb7af87119316a50fad3df0b546b5"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "本轮资本押注的核心变量是：Plinto 的 AI 智能体能否在大型组织现有 ERP、银行与协作系统之上，把原本依赖人工抽查和月末对账的财务管控变成实时、可执行的纠错流程。已验证信号包括：公司已完成 pre-Seed 融资、平台已集成多家主流 ERP 与 2,700 多家银行、已有付费客户和试点，且单一客户业务部门每月可发现约 430 处偏差。证据边界在于：来源未披露本轮估值、收入、客户数量或留存数据，投资方也未公开说明投资理由，因此无法据此判断商业化规模与单位经济性。",
+        "validated_signals": [
+          "完成 €2.9 million pre-Seed 融资，由 People Ventures 和 Emblem 领投",
+          "平台已集成 Microsoft Business Central、Xero、Visma 等 ERP 及 2,700 多家银行",
+          "在物流、房地产、设施服务和食品生产领域拥有付费客户与试点",
+          "单一客户业务部门每月发现约 430 处偏差",
+          "智能体曾识别出以不同供应商名称提交的重复发票"
+        ],
+        "risks": [
+          "来源未披露本轮估值、收入、客户数量与留存率，商业化规模仍待验证",
+          "智能体需跨 ERP、银行与协作工具执行纠错，集成与权限复杂度可能限制扩展",
+          "财务数据处理的合规与安全要求高，ISO 27001 认证在来源中仍标注为进行中",
+          "客户案例中的偏差数量为单一客户披露，不能直接外推为整体效果"
+        ],
+        "sector": "业务流程与企业智能体",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是：Plinto 的 AI 智能体能否在大型组织现有 ERP、银行与协作系统之上，把原本依赖人工抽查和月末对账的财务管控变成实时、可执行的纠错流程。已验证信号包括：公司已完成 pre-Seed 融资、平台已集成多家主流 ERP 与 2,700 多家银行、已有付费客户和试点，且单一客户业务部门每月可发现约 430 处偏差。证据边界在于：来源未披露本轮估值、收入、客户数量或留存数据，投资方也未公开说明投资理由，因此无法据此判断商业化规模与单位经济性。",
+          "evidence_signals": [
+            "完成 €2.9 million pre-Seed 融资，由 People Ventures 和 Emblem 领投",
+            "平台已集成 Microsoft Business Central、Xero、Visma 等 ERP 及 2,700 多家银行",
+            "在物流、房地产、设施服务和食品生产领域拥有付费客户与试点",
+            "单一客户业务部门每月发现约 430 处偏差",
+            "智能体曾识别出以不同供应商名称提交的重复发票"
+          ],
+          "risks": [
+            "来源未披露本轮估值、收入、客户数量与留存率，商业化规模仍待验证",
+            "智能体需跨 ERP、银行与协作工具执行纠错，集成与权限复杂度可能限制扩展",
+            "财务数据处理的合规与安全要求高，ISO 27001 认证在来源中仍标注为进行中",
+            "客户案例中的偏差数量为单一客户披露，不能直接外推为整体效果"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Plinto 智能体平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "系统集成层",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Nermina Suljevic",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jakob Nielsen",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Sebastian Rehnby",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "People Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Emblem",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-fba2b526c8bbdb19",
+          "source_url": "https://www.eu-startups.com/2026/10/copenhagens-plinto-raises-e2-9-million-to-help-finance-teams-catch-and-fix-errors-with-ai-agents/",
+          "title": "哥本哈根的 Plinto 融资 290 万欧元，助力财务团队借助 AI 智能体发现并修复错误",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-21T03:09:23.441Z",
+          "content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+          "source_artifact_id": "SA-ba4782750404e7a1",
+          "raw_id": "RAW-d84769306241eb2a"
+        },
+        {
+          "source_id": "FISRC-9e72db53acfc2956",
+          "source_url": "https://tech.eu/2026/10/20/danish-startup-plinto-raises-eur29m-to-streamline-financial-controls/",
+          "title": "丹麦初创公司Plinto融资290万欧元，旨在简化财务管控",
+          "publisher": "tech.eu",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-21T03:09:46.667Z",
+          "content_hash": "8e8118728db2ad084977e1b72f58157f8c64228f841c21f0770f0c82dcb8ca7f",
+          "source_artifact_id": "SA-2d5b4dd0a20ff311",
+          "raw_id": "RAW-3b105deca3999f51"
+        },
+        {
+          "source_id": "FISRC-11cd2eca8330e81b",
+          "source_url": "https://plinto.ai/product",
+          "title": "Product | Plinto",
+          "publisher": "plinto.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-21T03:36:58.606Z",
+          "content_hash": "165b7e3f578ef9c8",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-21T03:37:24.859Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-21T03:37:24.859Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Plinto 智能体平台",
+            "系统集成层"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Jakob Nielsen",
+            "Nermina Suljevic",
+            "Sebastian Rehnby"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c66ddcd78c89a643"
+      ],
+      "aggregation": {
+        "key": "EN-d2c19f369e44854b|pre_seed|EUR:exact:2900000:::|2026-10-20",
+        "event_count": 1,
+        "strategy": "reviewed_funding_subject",
+        "subject_id": "EN-d2c19f369e44854b",
+        "source_card_count": 1
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-e02630ae2510d4e9",
+          "event_ids": [
+            "EV-c66ddcd78c89a643",
+            "EV-c66ddcd78c89a643"
+          ],
+          "round": "预种子轮",
+          "round_code": "pre_seed",
+          "round_original": "pre-Seed",
+          "amount_original": "€2.9 million",
+          "amount_normalized": {
+            "currency": "EUR",
+            "value": 2900000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "290 万欧元"
+          },
+          "announced_at": "2026-10-20",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true,
+          "investors": [
+            {
+              "name": "People Ventures",
+              "role": "本轮领投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-fba2b526c8bbdb19",
+                  "quote": "The round was led by People Ventures and Emblem, with participation from a group of business angels.",
+                  "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+                  "quote_hash": "8a694a275a1be0bcfdfaf649880337182c9fd963d2c00330f6b1c8941018c5a0"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-ad049c2c22d042"
+            },
+            {
+              "name": "Emblem",
+              "role": "本轮领投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-fba2b526c8bbdb19",
+                  "quote": "The round was led by People Ventures and Emblem, with participation from a group of business angels.",
+                  "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+                  "quote_hash": "8a694a275a1be0bcfdfaf649880337182c9fd963d2c00330f6b1c8941018c5a0"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-206159110b1728"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fba2b526c8bbdb19",
+              "quote": "HomeDenmark-StartupsCopenhagen’s Plinto raises €2.9 million to help finance teams catch and fix...",
+              "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+              "quote_hash": "7fb586fc22f5e62e942be14cbb5ac4379a1f4d037ef99688c4779df8d0dd988b"
+            },
+            {
+              "source_id": "FISRC-fba2b526c8bbdb19",
+              "quote": "has secured €2.9 million in pre-Seed funding",
+              "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+              "quote_hash": "b5e8eaee7fb2bcf1ae56a23ac5f77703660bd485b13a5c3338953c610d84d37f"
+            },
+            {
+              "source_id": "FISRC-9e72db53acfc2956",
+              "quote": "has raised €2.9 million in a funding round from People Ventures and Emblem",
+              "source_content_hash": "8e8118728db2ad084977e1b72f58157f8c64228f841c21f0770f0c82dcb8ca7f",
+              "quote_hash": "cef1c3b605d6f8eb81505fe08bfad0816dc511ee792407d222cf53d97d17d296"
+            }
+          ]
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "id": "enterprise-software",
+        "name": "企业软件",
+        "dimension": "financing_product_form"
+      },
+      "market_category": {
+        "id": "enterprise",
+        "name": "企业通用 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "operations",
+        "name": "业务流程与企业智能体",
+        "dimension": "financing_subsector"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-c66ddcd78c89a643"
+      },
+      "translations": {
+        "zh-CN": {
+          "products[1].features[0]": {
+            "text": "集成 Microsoft Business Central、Xero、Visma 等 ERP",
+            "source_hash": "9048b1095fe5c5ca49b06cac5cfa52648bd09c0a9abe72fb68b7549219b89fd3",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-10-21T05:32:04.087Z",
+            "status": "translated"
+          },
+          "products[1].features[2]": {
+            "text": "连接 Slack、Microsoft Teams、邮件等协作工具",
+            "source_hash": "eb128b02b26648874590b2ad974ea70d2a6a2d7c06017d8cb7a3e8e9645b6586",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-10-21T05:32:04.087Z",
+            "status": "translated"
+          }
+        }
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "enterprise",
+          "name": "企业通用 AI"
+        },
+        "subsector": {
+          "id": "operations",
+          "name": "业务流程与企业智能体"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-fba2b526c8bbdb19",
+            "quote": "Plinto wants to solve this problem with AI agents that sit on top of the systems companies already use"
+          },
+          {
+            "source_id": "FISRC-fba2b526c8bbdb19",
+            "quote": "Plinto says the agents are capable of contacting a supplier about a wrongful invoice, requesting a credit note or preparing a correction for approval."
+          },
+          {
+            "source_id": "FISRC-fba2b526c8bbdb19",
+            "quote": "Plinto platform integrates with major ERP platforms, including Microsoft Business Central, Xero, and Visma, and connects to major Scandinavian banks as well as over 2,700 other banks."
+          }
+        ],
+        "rationale": "Plinto以AI智能体集成企业ERP与银行系统处理财务交易，属企业业务流程智能体。"
+      },
+      "source_card_ids": [
+        "FI-e02630ae2510d4e9"
+      ]
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-2a19fdf0e999a70c",
@@ -586319,6 +589609,772 @@
   ],
   "event_cards": [
     {
+      "funding_insight_id": "FI-146795a8062df48b",
+      "triggered_by_event_id": "EV-fa58c17e7bde893c",
+      "source_event_ids": [
+        "EV-fa58c17e7bde893c"
+      ],
+      "subject_card_id": "FI-146795a8062df48b",
+      "as_of_date": "2026-10-21",
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "company": {
+        "entity_id": "EN-e8f7acab9d27b492",
+        "application_entity_id": "EN-e8f7acab9d27b492",
+        "name": "Otter.ai",
+        "full_name": "Otter.ai",
+        "summary": "Otter.ai 提供会议 AI 笔记与转录工具，将会议语音转为可搜索知识，并支持会前简报、实时辅助与自动跟进。",
+        "website": "https://otter.ai/",
+        "headquarters": "",
+        "founders": []
+      },
+      "financing": {
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "General Catalyst Customer Value Fund 增长融资",
+        "amount": "$320 million",
+        "amount_original": "$320 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 320000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.2 亿美元"
+        },
+        "announced_at": "2026-10-20",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "General Catalyst’s Customer Value Fund (CVF)",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2bb6d52be7027111",
+                "quote": "it has raised $320 million from General Catalyst’s Customer Value Fund (CVF), which provides capital to startups without diluting equity and gets returns on the results of marketing spend",
+                "source_content_hash": "3ea60a3aacf07dd4721c878aac73831367078592758a00282156657aebb7f069",
+                "quote_hash": "82cb0ca5a4a87cc5322aa17892623696fbd213080b59680135bade186aa20361"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-6d609756bfedfd"
+          }
+        ]
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "enterprise",
+          "name": "企业通用 AI"
+        },
+        "subsector": {
+          "id": "productivity",
+          "name": "办公、会议与知识管理"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-69db98aad8876371",
+            "quote": "Meeting AI that turns talk into action"
+          },
+          {
+            "source_id": "FISRC-69db98aad8876371",
+            "quote": "Otter transcribes every meeting, turning it into searchable knowledge that powers your workflow."
+          },
+          {
+            "source_id": "FISRC-69db98aad8876371",
+            "quote": "Otter briefs you before the call, coaches you live based on what's been said, and automatically follows up in the tools you already use."
+          }
+        ],
+        "rationale": "Otter.ai 主营会议记录与知识管理 AI 工具，属于企业办公与知识管理赛道。"
+      },
+      "market_category": {
+        "id": "enterprise",
+        "name": "企业通用 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "productivity",
+        "name": "办公、会议与知识管理",
+        "dimension": "financing_subsector"
+      },
+      "product_form": {
+        "id": "enterprise-software",
+        "name": "企业软件",
+        "dimension": "financing_product_form"
+      },
+      "products": [
+        {
+          "name": "Otter Meeting Agent"
+        }
+      ]
+    },
+    {
+      "funding_insight_id": "FI-40c83ed3548e17ab",
+      "triggered_by_event_id": "EV-5f298468c125d834",
+      "source_event_ids": [
+        "EV-5f298468c125d834"
+      ],
+      "subject_card_id": "FI-40c83ed3548e17ab",
+      "as_of_date": "2026-10-21",
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "company": {
+        "entity_id": "EN-e75a6cd43a16c2f3",
+        "application_entity_id": "EN-e75a6cd43a16c2f3",
+        "name": "Baba",
+        "full_name": "Baba",
+        "summary": "应用AI公司，致力于改善Medicare和Medicaid的护理协调体验，为患者及家庭配备由护理协调员和持证治疗师组成的专属护理团队，并以AI辅助连接专科就诊、出院、行为健康、居家支持及住房交通等需求。",
+        "website": "https://www.callbaba.com",
+        "headquarters": "纽约",
+        "founders": [
+          {
+            "name": "Connor Sweeney",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28715696ca7123d8",
+                "quote": "said Connor Sweeney, founder and CEO of Baba",
+                "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                "quote_hash": "f1468ba8f4f07eccd47354839dab9b2a1e5cb988db7ceb344163f6e121404149"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount": "$40 million",
+        "amount_original": "$40 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-10-20",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "FirstMark Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28715696ca7123d8",
+                "quote": "a $40 million Series A led by FirstMark Capital",
+                "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                "quote_hash": "1c01ca4fe00d7cce2d7b2da5b308ca088767b546611b1696168c0f40a4b45553"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-587cddc7c698d6"
+          },
+          {
+            "name": "CVS Health Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28715696ca7123d8",
+                "quote": "with participation from CVS Health Ventures and Valtruis",
+                "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                "quote_hash": "2d18ac25674c501e772a65d0993bb37e351057bea16be32b00254fb49d1000c9"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-90577d5cf50f1c"
+          },
+          {
+            "name": "Valtruis",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28715696ca7123d8",
+                "quote": "with participation from CVS Health Ventures and Valtruis",
+                "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                "quote_hash": "2d18ac25674c501e772a65d0993bb37e351057bea16be32b00254fb49d1000c9"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-16fa2e8f135b9c"
+          },
+          {
+            "name": "General Catalyst",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28715696ca7123d8",
+                "quote": "returning investors General Catalyst, Genius Ventures and Ground Up Ventures",
+                "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                "quote_hash": "28719cf3b3cf27940d78970d6175d054bc0078fd782bc2ef8808175830bf2c9a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-f381c3151a9bb7"
+          },
+          {
+            "name": "Genius Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28715696ca7123d8",
+                "quote": "returning investors General Catalyst, Genius Ventures and Ground Up Ventures",
+                "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                "quote_hash": "28719cf3b3cf27940d78970d6175d054bc0078fd782bc2ef8808175830bf2c9a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-fab7bd37995365"
+          },
+          {
+            "name": "Ground Up Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-28715696ca7123d8",
+                "quote": "returning investors General Catalyst, Genius Ventures and Ground Up Ventures",
+                "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
+                "quote_hash": "28719cf3b3cf27940d78970d6175d054bc0078fd782bc2ef8808175830bf2c9a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-8b8bf760f6f089"
+          }
+        ]
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "industry",
+          "name": "行业 AI"
+        },
+        "subsector": {
+          "id": "healthcare",
+          "name": "医疗服务与临床"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件"
+        },
+        "customers": [
+          {
+            "id": "consumer",
+            "name": "个人消费者"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-28715696ca7123d8",
+            "quote": "Baba, an applied AI company modernizing the Medicare and Medicaid experience"
+          },
+          {
+            "source_id": "FISRC-2b081d22c8ea473d",
+            "quote": "Every patient gets a dedicated care team of advocates and licensed therapists, backed by AI"
+          },
+          {
+            "source_id": "FISRC-28715696ca7123d8",
+            "quote": "Baba is a care partner to patients and their families."
+          }
+        ],
+        "rationale": "Baba以AI辅助的护理团队服务Medicare/Medicaid患者，属医疗服务行业AI。"
+      },
+      "market_category": {
+        "id": "industry",
+        "name": "行业 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "healthcare",
+        "name": "医疗服务与临床",
+        "dimension": "financing_subsector"
+      },
+      "product_form": {
+        "id": "enterprise-software",
+        "name": "企业软件",
+        "dimension": "financing_product_form"
+      },
+      "products": [
+        {
+          "name": "Baba护理平台"
+        },
+        {
+          "name": "BabaBench"
+        }
+      ]
+    },
+    {
+      "funding_insight_id": "FI-bb001153a5913396",
+      "triggered_by_event_id": "EV-47114264f19bc46f",
+      "source_event_ids": [
+        "EV-47114264f19bc46f"
+      ],
+      "subject_card_id": "FI-bb001153a5913396",
+      "as_of_date": "2026-10-21",
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "company": {
+        "entity_id": "EN-077bbcba652dc144",
+        "application_entity_id": "EN-077bbcba652dc144",
+        "name": "芯爱科技（南京）有限公司",
+        "full_name": "芯爱科技（南京）有限公司",
+        "summary": "芯爱科技是一家专注于高端IC封装基板研发、生产与销售的企业，产品覆盖AI手机基板、AI/CPU/GPU基板、Coreless ETS、FCCSP、FCBGA等，基板产品贯穿AI云、边、端场景。",
+        "website": "",
+        "headquarters": "南京浦口经济开发区",
+        "founders": [
+          {
+            "name": "张垂弘",
+            "role": "创始人、董事长兼总经理",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "公司创始人、董事长兼总经理张垂弘",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "b6d7f80687a509e0e2cbeff7bc5ebaf445594b9891ea1ec60c547a8d3b37f421"
+              },
+              {
+                "source_id": "FISRC-04cdd72a5b860358",
+                "quote": "2021年，张垂弘在南京创立芯爱科技",
+                "source_content_hash": "c15eee77ffef8dae",
+                "quote_hash": "17da59276cdd9126ecd138b1955a4001e3730e298a7515bddee7707f8f73f5d6"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "A2轮",
+        "round_code": "series_a2",
+        "round_original": "A2轮",
+        "amount": "近15亿元",
+        "amount_original": "近15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 15 亿元"
+        },
+        "announced_at": "2026-10-20",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "胜宏科技",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "本轮投资方包括胜宏科技、瑞芯微等多家产业战略投资方",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "9d0d03049ee0bc498539523e8800c90ba30fc65cc767648cc85a6f6fc790c009"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-62941b39e6c4f1"
+          },
+          {
+            "name": "瑞芯微",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "本轮投资方包括胜宏科技、瑞芯微等多家产业战略投资方",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "9d0d03049ee0bc498539523e8800c90ba30fc65cc767648cc85a6f6fc790c009"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-137823af088143"
+          },
+          {
+            "name": "武岳峰科创",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-922eb77f54f6a3"
+          },
+          {
+            "name": "厦门联和资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-184e9b64aeaf6e"
+          },
+          {
+            "name": "越秀产业基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-c3975bd6548308"
+          },
+          {
+            "name": "和利资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-c69fc91cdeb6b6"
+          },
+          {
+            "name": "泰达科投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-1c1f209aea4bfc"
+          },
+          {
+            "name": "领庆投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-91c88e50286625"
+          },
+          {
+            "name": "盟海投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-016b43d0cd0957da",
+                "quote": "老股东武岳峰科创、厦门联和资本、越秀产业基金、和利资本、泰达科投、领庆投资、盟海投资等持续追加投资",
+                "source_content_hash": "55b4bdd9b091cf66cf3d127de02333fd0311d0b2375cc1b02d8150b00242e686",
+                "quote_hash": "3da284cedefbd28f9ae8f2d7343e9e8beb4cb8b2691808782596458c7c4cfcea"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-d81aef10f73a0d"
+          }
+        ]
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "compute",
+          "name": "AI 算力与芯片"
+        },
+        "subsector": {
+          "id": "ai-chips",
+          "name": "AI 芯片与加速器"
+        },
+        "product_form": {
+          "id": "chip-system",
+          "name": "芯片与计算系统"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-04cdd72a5b860358",
+            "quote": "芯爱科技产品FCBGA，应用于高端CPU、GPU、NPU、AI加速芯片、高性能服务器处理器"
+          },
+          {
+            "source_id": "FISRC-016b43d0cd0957da",
+            "quote": "产品涵盖先进AI手机基板、AI/CPU/GPU基板、Coreless ETS、FCCSP、FCBGA等"
+          },
+          {
+            "source_id": "FISRC-04cdd72a5b860358",
+            "quote": "算力环节，该公司产品覆盖AI服务器CPU、GPU芯片、高阶AI/5G手机SoC，端侧AI处理器及各类智能终端"
+          }
+        ],
+        "rationale": "芯爱科技研发生产面向AI加速芯片与服务器的FCBGA封装基板，属AI芯片产业链。"
+      },
+      "market_category": {
+        "id": "compute",
+        "name": "AI 算力与芯片",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "ai-chips",
+        "name": "AI 芯片与加速器",
+        "dimension": "financing_subsector"
+      },
+      "product_form": {
+        "id": "chip-system",
+        "name": "芯片与计算系统",
+        "dimension": "financing_product_form"
+      },
+      "products": [
+        {
+          "name": "FCBGA封装基板"
+        },
+        {
+          "name": "AI/CPU/GPU基板"
+        },
+        {
+          "name": "Coreless ETS"
+        }
+      ]
+    },
+    {
+      "funding_insight_id": "FI-e02630ae2510d4e9",
+      "triggered_by_event_id": "EV-c66ddcd78c89a643",
+      "source_event_ids": [
+        "EV-c66ddcd78c89a643"
+      ],
+      "subject_card_id": "FI-e02630ae2510d4e9",
+      "as_of_date": "2026-10-21",
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "company": {
+        "entity_id": "EN-d2c19f369e44854b",
+        "application_entity_id": "EN-d2c19f369e44854b",
+        "name": "Plinto",
+        "full_name": "Plinto",
+        "summary": "Plinto 是一家总部位于哥本哈根的初创公司，构建用于实时财务管控的 AI 智能体，帮助财务团队发现、调查并修复交易错误。",
+        "website": "https://plinto.ai",
+        "headquarters": "哥本哈根，丹麦",
+        "founders": [
+          {
+            "name": "Nermina Suljevic",
+            "role": "联合创始人兼首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fba2b526c8bbdb19",
+                "quote": "Plinto was founded in early 2025 by Nermina Suljevic, Nielsen, and Sebastian Rehnby",
+                "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+                "quote_hash": "fdc675faa39962dbcc8616dde34295ea1c4c6e0a6ce6fc6ccca84bb2487a4537"
+              },
+              {
+                "source_id": "FISRC-fba2b526c8bbdb19",
+                "quote": "said Suljevic, co-founder and CEO of Plinto",
+                "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+                "quote_hash": "a714bbb412603d40fcbb5540144a2648fdd58f66f8d5bef69eb5b38937b27095"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jakob Nielsen",
+            "role": "联合创始人兼首席数据官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fba2b526c8bbdb19",
+                "quote": "said Jakob Nielsen, co-founder and CDO of Plinto",
+                "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+                "quote_hash": "79134751e47685a1f64d8933e826734394e629006e379e3b929f351a38935e5a"
+              },
+              {
+                "source_id": "FISRC-fba2b526c8bbdb19",
+                "quote": "Plinto was founded in early 2025 by Nermina Suljevic, Nielsen, and Sebastian Rehnby",
+                "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+                "quote_hash": "fdc675faa39962dbcc8616dde34295ea1c4c6e0a6ce6fc6ccca84bb2487a4537"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sebastian Rehnby",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fba2b526c8bbdb19",
+                "quote": "Plinto was founded in early 2025 by Nermina Suljevic, Nielsen, and Sebastian Rehnby",
+                "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+                "quote_hash": "fdc675faa39962dbcc8616dde34295ea1c4c6e0a6ce6fc6ccca84bb2487a4537"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "pre-Seed",
+        "amount": "€2.9 million",
+        "amount_original": "€2.9 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 2900000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "290 万欧元"
+        },
+        "announced_at": "2026-10-20",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "People Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fba2b526c8bbdb19",
+                "quote": "The round was led by People Ventures and Emblem, with participation from a group of business angels.",
+                "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+                "quote_hash": "8a694a275a1be0bcfdfaf649880337182c9fd963d2c00330f6b1c8941018c5a0"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-ad049c2c22d042"
+          },
+          {
+            "name": "Emblem",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fba2b526c8bbdb19",
+                "quote": "The round was led by People Ventures and Emblem, with participation from a group of business angels.",
+                "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+                "quote_hash": "8a694a275a1be0bcfdfaf649880337182c9fd963d2c00330f6b1c8941018c5a0"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-206159110b1728"
+          }
+        ]
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "enterprise",
+          "name": "企业通用 AI"
+        },
+        "subsector": {
+          "id": "operations",
+          "name": "业务流程与企业智能体"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-fba2b526c8bbdb19",
+            "quote": "Plinto wants to solve this problem with AI agents that sit on top of the systems companies already use"
+          },
+          {
+            "source_id": "FISRC-fba2b526c8bbdb19",
+            "quote": "Plinto says the agents are capable of contacting a supplier about a wrongful invoice, requesting a credit note or preparing a correction for approval."
+          },
+          {
+            "source_id": "FISRC-fba2b526c8bbdb19",
+            "quote": "Plinto platform integrates with major ERP platforms, including Microsoft Business Central, Xero, and Visma, and connects to major Scandinavian banks as well as over 2,700 other banks."
+          }
+        ],
+        "rationale": "Plinto以AI智能体集成企业ERP与银行系统处理财务交易，属企业业务流程智能体。"
+      },
+      "market_category": {
+        "id": "enterprise",
+        "name": "企业通用 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "operations",
+        "name": "业务流程与企业智能体",
+        "dimension": "financing_subsector"
+      },
+      "product_form": {
+        "id": "enterprise-software",
+        "name": "企业软件",
+        "dimension": "financing_product_form"
+      },
+      "products": [
+        {
+          "name": "Plinto 智能体平台"
+        },
+        {
+          "name": "系统集成层"
+        }
+      ]
+    },
+    {
       "funding_insight_id": "FI-2a19fdf0e999a70c",
       "triggered_by_event_id": "EV-87beb0ebdfa293de",
       "source_event_ids": [
@@ -725813,6 +729869,21 @@
   "review": {
     "excluded": [
       {
+        "event_id": "EV-511f7a03673f6cce",
+        "company": "深圳伊塔动力科技有限公司",
+        "reason": "embodied_robotics"
+      },
+      {
+        "event_id": "EV-ea103ce3f64fea8e",
+        "company": "Eka Robotics",
+        "reason": "embodied_robotics"
+      },
+      {
+        "event_id": "EV-72d09299a334d0d9",
+        "company": "Dream Labs",
+        "reason": "embodied_robotics"
+      },
+      {
         "event_id": "EV-b51a67353e247022",
         "company": "广州云蝶科技有限公司",
         "reason": "embodied_robotics"
@@ -726204,6 +730275,16 @@
       }
     ],
     "pending": [
+      {
+        "event_id": "EV-7c5953aae2767bfa",
+        "company": "小派科技",
+        "reason": "主营XR硬件，同时涉足具身数据采集，主营边界不清需人工复核。"
+      },
+      {
+        "event_id": "EV-8643bc9e4d4f452b",
+        "company": "Ganiga",
+        "reason": "产品含机器人垃圾桶与智能桶盖，兼具机器人本体与消费硬件属性，主营边界不清需复核。"
+      },
       {
         "event_id": "EV-db5825e75f029641",
         "company": "Duvo",

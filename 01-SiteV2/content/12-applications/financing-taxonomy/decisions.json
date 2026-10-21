@@ -33226,7 +33226,312 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-20T00:48:41.227Z"
+    },
+    "EV-72d09299a334d0d9": {
+      "id": "EV-72d09299a334d0d9",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "公司核心产品是机器人基础模型与将指令转为电机动作的 API，属于具身智能/机器人本体相关业务。",
+      "input_hash": "f8f3846bb91d5db96c8006776b40bfeb8965112c89ea6b4561102c0465207071",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9460824b44abe360",
+          "quote": "Dream-1, a robot foundation model trained on videos of people performing everyday tasks rather than on robot-specific teleoperation data alone"
+        },
+        {
+          "source_id": "FISRC-9460824b44abe360",
+          "quote": "Dream API takes a robot’s camera feed plus a plain-English instruction and converts both into motor commands, including on hardware the underlying model has never seen before."
+        },
+        {
+          "source_id": "FISRC-f2db783543989a75",
+          "quote": "Developers can connect a robot through the Dream API, which runs Dream Labs’ models in data centres worldwide, or send a small batch of demonstration data to a fine-tuning service that returns a tailored model within hours."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-21T05:33:06.828Z"
+    },
+    "EV-fa58c17e7bde893c": {
+      "id": "EV-fa58c17e7bde893c",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "productivity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Otter.ai 主营会议记录与知识管理 AI 工具，属于企业办公与知识管理赛道。",
+      "input_hash": "ddac707b8472c3457528847f3c06ba8a8bd5ba959e2894d72f762fc56095eb3a",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-69db98aad8876371",
+          "quote": "Meeting AI that turns talk into action"
+        },
+        {
+          "source_id": "FISRC-69db98aad8876371",
+          "quote": "Otter transcribes every meeting, turning it into searchable knowledge that powers your workflow."
+        },
+        {
+          "source_id": "FISRC-69db98aad8876371",
+          "quote": "Otter briefs you before the call, coaches you live based on what's been said, and automatically follows up in the tools you already use."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-21T05:33:06.828Z"
+    },
+    "EV-ea103ce3f64fea8e": {
+      "id": "EV-ea103ce3f64fea8e",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "公司核心交付为视觉-力-动作模型与力敏感夹爪等机器人核心部件，属于具身智能/机器人部件业务。",
+      "input_hash": "8f427ded94a71431a104b71f8913e830d75ea1018cc94947b03ecc34d781cf58",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5c947a61567ff990",
+          "quote": "the schema here is a vision-force-action model, which focuses on the relationship between language, force inputs, and actions."
+        },
+        {
+          "source_id": "FISRC-5c947a61567ff990",
+          "quote": "Eka had to design a unique robotic hand that was more flexible than traditional grippers, and included more force sensors; it reacts to contact, which is why it doesn’t crush the raspberry."
+        },
+        {
+          "source_id": "FISRC-bd8756b401991e3f",
+          "quote": "Its force-sensitive gripper costs less than $1,000 and is rated for 5 million duty cycles, with a goal of reaching the 20 million cycles standard for industrial arms."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-21T05:33:06.828Z"
+    },
+    "EV-5f298468c125d834": {
+      "id": "EV-5f298468c125d834",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Baba以AI辅助的护理团队服务Medicare/Medicaid患者，属医疗服务行业AI。",
+      "input_hash": "952c1c37d94b86f020c9b499d6cc813defb9cef962067bd11da2dc991879737f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-28715696ca7123d8",
+          "quote": "Baba, an applied AI company modernizing the Medicare and Medicaid experience"
+        },
+        {
+          "source_id": "FISRC-2b081d22c8ea473d",
+          "quote": "Every patient gets a dedicated care team of advocates and licensed therapists, backed by AI"
+        },
+        {
+          "source_id": "FISRC-28715696ca7123d8",
+          "quote": "Baba is a care partner to patients and their families."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-21T05:33:07.522Z"
+    },
+    "EV-511f7a03673f6cce": {
+      "id": "EV-511f7a03673f6cce",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "公司主营具身智能操作平台与关节模组等机器人核心部件，属具身智能排除范围。",
+      "input_hash": "b1b1408c38de3c8682c5e46efc99937e50dabb8771275ec5c8f3b0c9d034c425",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-8ed28618f0768c2e",
+          "quote": "深圳伊塔动力科技有限公司（下称“伊塔动力”或“YITA”）是一家具身智能操作平台与动力系统公司。"
+        },
+        {
+          "source_id": "FISRC-61302f1a884284b8",
+          "quote": "伊塔动力成立于2026年5月，致力于构建具身智能硬件底层基础设施，研发了柔顺力控双臂与高性能关节模组。"
+        },
+        {
+          "source_id": "FISRC-8ed28618f0768c2e",
+          "quote": "YITA 以准直驱行星关节模组及成套动力系统方案覆盖机器人高动态运动需求，以复合行星力控关节及仿生力控臂切入高价值操作场景，服务本体主机厂、模型研发企业、灵巧手及末端执行器厂商、数据采集团队和科研机构。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-21T05:33:07.522Z"
+    },
+    "EV-7c5953aae2767bfa": {
+      "id": "EV-7c5953aae2767bfa",
+      "scope": "review",
+      "exclusion_reason": "",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        3,
+        4
+      ],
+      "rationale": "主营XR硬件，同时涉足具身数据采集，主营边界不清需人工复核。",
+      "input_hash": "4fea715870754bcf414944f955bf6d1019f78f87b190f32f266fd52a6b8893b2",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-111666be4b563360",
+          "quote": "小派创新科技（杭州）股份有限公司（下称“小派科技”）（Pimax）成立于2015年，是XR硬件产品研发与制造商。"
+        },
+        {
+          "source_id": "FISRC-111666be4b563360",
+          "quote": "把人在各类场景中意图和全身动作，高保真的连续记录下来，是具身数据领域的“第 一性原理”"
+        },
+        {
+          "source_id": "FISRC-111666be4b563360",
+          "quote": "小派科技在大型沉浸式游戏中，积累的人类在虚拟空间中的精确操控数据，也将成为世界模型的训练重要来源之一"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-21T05:33:07.522Z"
+    },
+    "EV-8643bc9e4d4f452b": {
+      "id": "EV-8643bc9e4d4f452b",
+      "scope": "review",
+      "exclusion_reason": "",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        1,
+        3,
+        4
+      ],
+      "rationale": "产品含机器人垃圾桶与智能桶盖，兼具机器人本体与消费硬件属性，主营边界不清需复核。",
+      "input_hash": "f5f1c322917c682847da05328bc97c9ba64cde01b0921c7b57370abba08aeac7",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ba217f35f2ccc6b0",
+          "quote": "Ganiga combines artificial intelligence, computer vision and robotics to cut waste"
+        },
+        {
+          "source_id": "FISRC-d8f6f372ea7d10d2",
+          "quote": "a fleet of robotic waste bins, called Hoooly, that use generative AI to determine what is trash and what is recycling and sort the waste accordingly"
+        },
+        {
+          "source_id": "FISRC-d8f6f372ea7d10d2",
+          "quote": "a smart lid that can be fitted to existing waste bins with the same functionality as its larger bin counterpart"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-21T05:33:07.522Z"
+    },
+    "EV-c66ddcd78c89a643": {
+      "id": "EV-c66ddcd78c89a643",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        5
+      ],
+      "rationale": "Plinto以AI智能体集成企业ERP与银行系统处理财务交易，属企业业务流程智能体。",
+      "input_hash": "5d221c1b55e40864a031d95d747bf9e5b387bf46cad48600a1f4c804feec0def",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fba2b526c8bbdb19",
+          "quote": "Plinto wants to solve this problem with AI agents that sit on top of the systems companies already use"
+        },
+        {
+          "source_id": "FISRC-fba2b526c8bbdb19",
+          "quote": "Plinto says the agents are capable of contacting a supplier about a wrongful invoice, requesting a credit note or preparing a correction for approval."
+        },
+        {
+          "source_id": "FISRC-fba2b526c8bbdb19",
+          "quote": "Plinto platform integrates with major ERP platforms, including Microsoft Business Central, Xero, and Visma, and connects to major Scandinavian banks as well as over 2,700 other banks."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-21T05:33:07.522Z"
+    },
+    "EV-47114264f19bc46f": {
+      "id": "EV-47114264f19bc46f",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        4,
+        5
+      ],
+      "rationale": "芯爱科技研发生产面向AI加速芯片与服务器的FCBGA封装基板，属AI芯片产业链。",
+      "input_hash": "c2da187dd0727c6c82dbae9321affb4d63523c509f45faf1a510718aa842cfdd",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-04cdd72a5b860358",
+          "quote": "芯爱科技产品FCBGA，应用于高端CPU、GPU、NPU、AI加速芯片、高性能服务器处理器"
+        },
+        {
+          "source_id": "FISRC-016b43d0cd0957da",
+          "quote": "产品涵盖先进AI手机基板、AI/CPU/GPU基板、Coreless ETS、FCCSP、FCBGA等"
+        },
+        {
+          "source_id": "FISRC-04cdd72a5b860358",
+          "quote": "算力环节，该公司产品覆盖AI服务器CPU、GPU芯片、高阶AI/5G手机SoC，端侧AI处理器及各类智能终端"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-21T05:33:07.522Z"
     }
   },
-  "generated_at": "2026-10-20T00:48:41.227Z"
+  "generated_at": "2026-10-21T05:33:07.522Z"
 }

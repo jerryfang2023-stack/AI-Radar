@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-20",
-    "currentDate": "2026-10-20",
-    "eventCount": 4201,
+    "latestDataDate": "2026-10-21",
+    "currentDate": "2026-10-21",
+    "eventCount": 4214,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -95,6 +95,7 @@
       "EV-8a91e14f37d32b4d",
       "EV-31782f0824ae1db1",
       "EV-3c51bcb5e99d2b68",
+      "EV-1d592d9d6ed402c9",
       "EV-e100f5876a4f8e36",
       "EV-b739349cfab7e41c",
       "EV-9e2c443eae76fb50",
@@ -115,6 +116,7 @@
       "TX-technology-code_generation",
       "TX-target_user-public_sector_user",
       "TX-industry-aerospace_defense",
+      "TX-product_form-compute_cloud_service",
       "TX-ai_market_category-physical_ai",
       "TX-industry-telecommunications",
       "TX-product_form-developer_tool",
@@ -124,12 +126,13 @@
       "EN-6fcba5d96a4fadfd"
     ],
     "firstSeen": "2026-02-17",
-    "lastSeen": "2026-10-17",
+    "lastSeen": "2026-10-21",
     "relationIds": [
       "REL2-30051dc5d7668662"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-1d592d9d6ed402c9",
         "EV-e9b020a1b5f1af14",
         "EV-e100f5876a4f8e36",
         "EV-5b5237105fc868cd",
@@ -183,6 +186,44 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-1d592d9d6ed402c9",
+        "dataDate": "2026-10-21",
+        "date": "2026-10-20",
+        "eventType": "financial_performance",
+        "eventTypeLabel": "财务表现",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "SpaceX 的 AI 业务超出预期",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "developer_tool",
+            "name": "开发者工具",
+            "entityIds": [
+              "EN-e78bdebae031095b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-e78bdebae031095b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-e78bdebae031095b"
+        ]
+      },
       {
         "id": "EV-e9b020a1b5f1af14",
         "dataDate": "2026-10-17",
@@ -1325,6 +1366,7 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-c66ddcd78c89a643",
         "EV-87beb0ebdfa293de",
         "EV-ff12e2bb9d4ad359",
         "EV-44261cbca54b2cbb",
@@ -2003,6 +2045,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-eba7990af95abefe",
         "EN-54856813e7170b52",
         "EN-954adfa4d922fa30",
         "EN-7c0378479c6745b0",
@@ -2495,6 +2538,7 @@
       "typeLabel": "产品形态",
       "valueId": "model",
       "eventIds": [
+        "EV-72d09299a334d0d9",
         "EV-61c9891d791417be",
         "EV-858cec7fa8f4c87b",
         "EV-de11eaf439ccee3f",
@@ -2904,6 +2948,7 @@
         "EV-5208aa6dcd06cecb"
       ],
       "entityIds": [
+        "EN-c2f693f92991bd18",
         "EN-79648183530ff7c5",
         "EN-ce084d4801691907",
         "EN-f2ff9021d7cf42b9",
@@ -3177,7 +3222,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-20"
+      "lastSeen": "2026-10-21"
     },
     {
       "id": "TX-use_case-physical_automation",
@@ -3186,6 +3231,7 @@
       "typeLabel": "应用场景",
       "valueId": "physical_automation",
       "eventIds": [
+        "EV-72d09299a334d0d9",
         "EV-6ef251e4d28b517c",
         "EV-439079c4d9694407",
         "EV-ad1a42d4f43e005c",
@@ -3427,6 +3473,7 @@
         "EV-ad64347138da72bb"
       ],
       "entityIds": [
+        "EN-c2f693f92991bd18",
         "EN-3afb40bf43553530",
         "EN-751b001aa17db797",
         "EN-40cd17bb16c8fec1",
@@ -3628,7 +3675,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-20"
+      "lastSeen": "2026-10-21"
     },
     {
       "id": "TX-target_user-business_user",
@@ -5121,6 +5168,83 @@
       "lastSeen": "2026-10-07"
     },
     {
+      "id": "TX-product_form-compute_cloud_service",
+      "name": "算力云服务",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "compute_cloud_service",
+      "eventIds": [
+        "EV-95ba9cc4f4d52ea4",
+        "EV-f53bfa2bb0275904",
+        "EV-40d4ce6d936d4d49",
+        "EV-26a5749d8604455a",
+        "EV-181cd28d97c4e61d",
+        "EV-2dea56b0e97c1685",
+        "EV-e3792591090281c6",
+        "EV-4eaf3aabecae6016",
+        "EV-6e516b6e68def9cf",
+        "EV-13ec78dfdbca678b",
+        "EV-7b1c734882fa1ea6",
+        "EV-327ba605bd9e8307",
+        "EV-24265c0f0fa45343",
+        "EV-4118202ed0f91895",
+        "EV-29eea3f4a8fcd6f5",
+        "EV-1abf0d076d30ec6d",
+        "EV-6011ab83ebd290bd",
+        "EV-bd5b6110559f2fda",
+        "EV-9fe6938336dea2a2",
+        "EV-70fd5918095d6ab8",
+        "EV-0121f0a9e9a975ec",
+        "EV-a86b04e679044c45",
+        "EV-f2750a3d66e06fe7",
+        "EV-49577d438cb6624b",
+        "EV-826c8088c4adf591",
+        "EV-0ec219a94317215f",
+        "EV-5493c61bcbe58aa2",
+        "EV-1d592d9d6ed402c9",
+        "EV-4b44f5eafecf4922",
+        "EV-a67071a8550cb1be"
+      ],
+      "entityIds": [
+        "EN-fc261198a189a8eb",
+        "EN-eb6cf0bb179ca6ed",
+        "EN-d41ebd9f02722fc8",
+        "EN-0b79cf2de0ee6b8e",
+        "EN-6fae0bc5a895aab8",
+        "EN-fdecfc27f301da9c",
+        "EN-0caee180da9d0f3f",
+        "EN-3c1ae4e6276005e7",
+        "EN-816bab802b34b308",
+        "EN-830cefea8ed73a00",
+        "EN-d1a61df8d3146e48",
+        "EN-c04bd5ebd10ab696",
+        "EN-07c370b082ffd370",
+        "EN-ce31f92c521b7b08",
+        "EN-c70eca6b0f88f44d",
+        "EN-8f5ef31ed5125786",
+        "EN-3c7a24d85b4a5835",
+        "EN-29b9f0cae32e7a8a",
+        "EN-7640da40298286a6",
+        "EN-373ac021a2c0bb2c",
+        "EN-ebf9032e4009b3d9",
+        "EN-042e9398f2cc8902",
+        "EN-9d07f526fab9cfe9",
+        "EN-e78bdebae031095b",
+        "EN-18b4bbfd60f4137e",
+        "EN-a89a94ff38d4dc95"
+      ],
+      "fdeIds": [
+        "FDE-3c16927208b7ac37",
+        "FDE-5ea7f3d69a03d417"
+      ],
+      "hardwareIds": [
+        "HW-304c6370cc157449",
+        "HW-9a39a7f449362f96"
+      ],
+      "firstSeen": "2026-04-30",
+      "lastSeen": "2026-10-21"
+    },
+    {
       "id": "TX-ai_market_category-physical_ai",
       "name": "Physical AI",
       "nodeType": "ai_market_category",
@@ -5398,7 +5522,8 @@
         "EV-6993e6a7df339e59",
         "EV-56b9643b245a5ff4",
         "EV-53288fcf18e677e6",
-        "EV-1e0871947289ab6e"
+        "EV-1e0871947289ab6e",
+        "EV-1d592d9d6ed402c9"
       ],
       "entityIds": [
         "EN-34bc69b5df00e2d3",
@@ -5435,7 +5560,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2024-09-05",
-      "lastSeen": "2026-10-02"
+      "lastSeen": "2026-10-21"
     },
     {
       "id": "TX-use_case-software_development",

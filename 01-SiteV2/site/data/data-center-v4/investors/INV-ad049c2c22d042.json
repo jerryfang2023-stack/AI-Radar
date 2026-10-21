@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-20",
-    "currentDate": "2026-10-20",
-    "eventCount": 4201,
+    "latestDataDate": "2026-10-21",
+    "currentDate": "2026-10-21",
+    "eventCount": 4214,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-10-20",
+    "latest_disclosed_at": "2026-10-20",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "lead": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "pre_seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-d2c19f369e44854b",
+        "canonical_entity_id": "",
+        "name": "Plinto"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-e887bee8c41b1c90",
+        "funding_insight_id": "FI-e02630ae2510d4e9",
+        "event_ids": [
+          "EV-c66ddcd78c89a643"
+        ],
+        "company_entity_id": "EN-d2c19f369e44854b",
+        "company_canonical_entity_id": "",
+        "company_name": "Plinto",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "pre-Seed",
+        "amount_original": "€2.9 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 2900000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "290 万欧元"
+        },
+        "announced_at": "2026-10-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-fba2b526c8bbdb19",
+            "source_url": "https://www.eu-startups.com/2026/10/copenhagens-plinto-raises-e2-9-million-to-help-finance-teams-catch-and-fix-errors-with-ai-agents/",
+            "source_title": "哥本哈根的 Plinto 融资 290 万欧元，助力财务团队借助 AI 智能体发现并修复错误",
+            "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+            "quote": "The round was led by People Ventures and Emblem, with participation from a group of business angels.",
+            "quote_hash": "8a694a275a1be0bcfdfaf649880337182c9fd963d2c00330f6b1c8941018c5a0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-593b372fb6af7a17",
         "funding_insight_id": "FI-628ec6bc86b2f968",
@@ -119,6 +168,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-fba2b526c8bbdb19",
+        "source_url": "https://www.eu-startups.com/2026/10/copenhagens-plinto-raises-e2-9-million-to-help-finance-teams-catch-and-fix-errors-with-ai-agents/",
+        "source_title": "哥本哈根的 Plinto 融资 290 万欧元，助力财务团队借助 AI 智能体发现并修复错误",
+        "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+        "quote": "The round was led by People Ventures and Emblem, with participation from a group of business angels.",
+        "quote_hash": "8a694a275a1be0bcfdfaf649880337182c9fd963d2c00330f6b1c8941018c5a0"
+      },
       {
         "source_id": "FISRC-0388d568b8d8ab15",
         "source_url": "https://www.scalecapital.com/stories/our-investment-in-pandektes-building-the-single-source-of-truth-for-law",
@@ -180,6 +237,10 @@
         {
           "description": "Scale Capital官方投资公告称People Ventures参与Pandektes €13.5M Series A。",
           "source_id": "FISRC-0388d568b8d8ab15"
+        },
+        {
+          "description": "融资来源记录：Plinto · 预种子轮 · 2026-10-20 · 本轮领投 · €2.9 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-fba2b526c8bbdb19"
         }
       ],
       "contacts": [
@@ -239,6 +300,14 @@
           "source_content_hash": "159afa21df53f5df83ea2ee6944730ecf4fe211d5996cf058d4ed207fa12b5bd",
           "quote": "The investment is part of a €13.5 million Series A round led by Alstin Capital, with PROfounders, People Ventures and other existing investors also participating",
           "quote_hash": "26d0b7bccc606dd14955fa2bc6e3f8b0fb6c78a7552417f7d9355b21700329f1"
+        },
+        {
+          "source_id": "FISRC-fba2b526c8bbdb19",
+          "source_url": "https://www.eu-startups.com/2026/10/copenhagens-plinto-raises-e2-9-million-to-help-finance-teams-catch-and-fix-errors-with-ai-agents/",
+          "source_title": "哥本哈根的 Plinto 融资 290 万欧元，助力财务团队借助 AI 智能体发现并修复错误",
+          "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
+          "quote": "The round was led by People Ventures and Emblem, with participation from a group of business angels.",
+          "quote_hash": "8a694a275a1be0bcfdfaf649880337182c9fd963d2c00330f6b1c8941018c5a0"
         }
       ],
       "last_verified_at": "2026-10-06"
