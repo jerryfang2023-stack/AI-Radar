@@ -33633,7 +33633,7 @@
       "exclusion_reason": "",
       "sector_id": "compute",
       "subsector_id": "compute-infrastructure",
-      "product_form_id": "compute",
+      "product_form_id": "developer-platform",
       "customer_ids": [
         "business"
       ],
@@ -33642,7 +33642,7 @@
         3,
         4
       ],
-      "rationale": "华瑞指数云以 KV Cache 存储与统一存储底座服务 AI 推理场景，属算力基础设施。",
+      "rationale": "华瑞指数云提供 AI 推理上下文存储与开放数据基础设施软件平台，面向企业部署；不是出售云算力时长的算力服务。",
       "input_hash": "3a22951e5796b35bf2f3bce1a70c911f92017fa209addde9072bf626b4bf3fbc",
       "evidence_refs": [
         {
@@ -33660,7 +33660,15 @@
       ],
       "provider": "deepseek",
       "model": "deepseek-flash",
-      "generated_at": "2026-10-22T05:43:00.769Z"
+      "generated_at": "2026-10-22T05:43:00.769Z",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-22",
+      "review_evidence": {
+        "source_id": "FISRC-e44d32bfb6e73d83",
+        "source_content_hash": "a002bc8d01b7b8dd41948647bce586b7636955843ea576186a0999bba95f1df0",
+        "quote": "公司以开放的软件平台整合不同GPU、DPU、SSD和推理框架，为客户提供多种硬件组合",
+        "quote_hash": "06dd24f2615bfb7a65b89590818425f55bac560ff21f2c72cf7491c0f3dab0e8"
+      }
     },
     "EV-fe4e2cdf3f2a5075": {
       "id": "EV-fe4e2cdf3f2a5075",
