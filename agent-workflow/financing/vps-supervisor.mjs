@@ -252,6 +252,28 @@ async function cycle(args) {
     throw error;
   }
 }
+const waitingStatuses = new Set(['dispatched','running','checks_pending','awaiting_approval',
+  'ready_for_review','awaiting_portal','dispatch_retry_pending','review_retry_pending']);
+
+async function supervise(args) {
+  const deadline=Date.now()+4*60*60*1000;
+  while(true) {
+    const result=await cycle(args);
+    console.log(JSON.stringify(result));
+    if(args.get('watch')!=='true' || args.get('dry-run')==='true' || !waitingStatuses.has(result.status))return;
+    // Follow one accepted day through asynchronous GitHub/CI/Pages transitions.
+    // A hold or deterministic quality failure stops for repair, never bypasses it.
+    args.set('date',result.date);
+    if(Date.now()>=deadline) {
+      const runtime=path.resolve(args.get('runtime-dir') || process.env.GUANLAN_FINANCING_RUNTIME || '/srv/guanlan-financing/runtime');
+      const file=path.join(runtime,result.date,'supervisor.json');
+      write(file,{...read(file,result),status:'needs_attention',previous_status:result.status,
+        error:'supervisor_watch_deadline',updated_at:new Date().toISOString()});
+      throw new Error('supervisor_watch_deadline');
+    }
+    await new Promise(resolve=>setTimeout(resolve,120000));
+  }
+}
 if(process.argv[1] && path.resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
-  cycle(parseArgs()).then(result=>console.log(JSON.stringify(result))).catch(error=>{console.error(error.message);process.exitCode=1;});
+  supervise(parseArgs()).catch(error=>{console.error(error.message);process.exitCode=1;});
 }

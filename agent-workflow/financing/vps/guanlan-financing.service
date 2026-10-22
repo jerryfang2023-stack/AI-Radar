@@ -9,9 +9,9 @@ User=guanlan-financing
 Group=guanlan-financing
 WorkingDirectory=/srv/guanlan-financing/WaveSight
 EnvironmentFile=/etc/guanlan-financing/runtime.env
-ExecStart=/opt/guanlan-financing-tools/run.sh
+ExecStart=/opt/guanlan-financing-tools/run.sh --watch=true
 UMask=0077
-TimeoutStartSec=90min
+TimeoutStartSec=6h
 MemoryMax=1600M
 CPUQuota=100%
 PrivateTmp=false

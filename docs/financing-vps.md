@@ -5,13 +5,15 @@
 ## 当前调度
 
 - 本机 Codex 自动化 `ai` 保留配置并暂停，作为人工恢复入口。原 runner、SSH 入口和本机知识库保留；VPS 的 Vault 更新不会自动写入关机电脑。
-- VPS `guanlan-financing.timer` 每十分钟检查一次，`Persistent=true`；每日 08:10 前不启动新的日期，已有未完成日期可恢复。
+- VPS `guanlan-financing.timer` 在北京时间 08:10 主启动、10:30 幂等兜底，`Persistent=true`。同一服务通过 `--watch=true` 每两分钟跟进本日 GitHub、审核、CI、Pages 和发布状态，最长四小时；不增加发现或待核验队列批次。
 - `/etc/guanlan-financing/runtime.env` 配置 `GUANLAN_VPS_MODE=active`。`standby` 可用于回退，仅调用融资派发器的 `--dry-run=true`，保存观察回执。
 - `active` 模式复用同一 GitHub 融资生产工作流及恢复检查点，Hermes 审核开放的融资 PR，检查精确提交与 CI 后合并，再等 Pages 和 VPS 发布。模型 API ID 固定 `deepseek-flash`（DeepSeek V4.1 Flash）。每日期最多三次不同提交/基线的模型审核；失败或中断记录为未知，不自动重复付费。
-- `funding-health-dispatch.yml` 每日 08:10 云端主触发与 10:30 幂等兜底保留；VPS 同样在 08:10 后派发，两端先查同日接受结果、开放 PR 和在途运行，复用同一工作流。每天只做一次正式发现；十分钟轮询是恢复检查，不是额外复核时段。
+- `funding-health-dispatch.yml` 每日 08:10 云端主触发与 10:30 幂等兜底保留；两端先查同日接受结果、开放 PR 和在途运行，复用同一工作流。每天只做一次正式发现。VPS 同一服务在等待状态持续跟进，已完成、事实 hold、CI 失败或确定性质量错误立即停止；超时写 needs_attention，不能留下假运行状态。
 - Hermes 的 `financing-gate-watch.sh` 使用仓内 `agent-workflow/financing/vps/gate-watch.sh`，仅唤醒正式 `guanlan-financing.service`。服务运行中直接退出；禁止另按 PR 标题批准 CI 或合并。原文审核、精确 head/base、两平台 CI 与发布回读仍由正式控制器负责。
 
 ## 故障接续
+
+2026-10-22：已确认融资但轮次没有披露时，研究字段明确标为“轮次未披露”，仍须通过原文、公司、金额、投资方和分类门禁。不能为填必填字段猜测轮次。Hermes 输出仅允许规范化 JSON 字符串内的 Markdown 美元转义，原响应保留在私有 diagnostics，并记录规范化审计；其他非法 JSON、缺字段、证据不足或 hold 不自动修复为通过。部署 timer 时需备份并停用旧的 11:15 override，否则它会覆盖仓内的两个时刻；通过 systemctl cat/show 核对实际生效配置。
 
 2026-10-15 起，研究阶段仅对 `research_sources_insufficient` / `research_independent_sources_insufficient` 且没有已有卡片的新融资生成 `FINANCING-RESEARCH-DEFERRAL-1` 回执。回执绑定事件、Claims、原文 URL/ID/hash，保存在研究 queue 的 deferral 字段；断言重算绑定，过期、无证据、已有卡片或其他错误仍失败。暂缓事件不进入公开目录，发布收尾把其原文注册进私有复核队列，下一次日运行复用原文补证；不得计作批准或关闭。人工 hold 仍由责任人维护。VPS 最终审核须核对暂缓绑定与队列保留，合格卡片可同批发布。
 
