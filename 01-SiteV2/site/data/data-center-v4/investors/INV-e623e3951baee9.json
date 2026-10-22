@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,30 +54,38 @@
   },
   "institution": {
     "id": "INV-e623e3951baee9",
-    "name": "J.P. Morgan",
-    "aliases": [],
+    "name": "J.P Morgan",
+    "aliases": [
+      "J.P. Morgan"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "unverified_investor",
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-28",
-    "latest_disclosed_at": "2026-09-28",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "series_c"
+      "series_c",
+      "series_e"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-22dc02488a037639",
+        "canonical_entity_id": "",
+        "name": "Legora"
+      },
       {
         "entity_id": "EN-f76a8103e49bcc36",
         "canonical_entity_id": "",
@@ -85,6 +93,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-83f7c925b03041b1",
+        "funding_insight_id": "FI-b875723282f11479",
+        "event_ids": [
+          "EV-07911ca790bdfc5a"
+        ],
+        "company_entity_id": "EN-22dc02488a037639",
+        "company_canonical_entity_id": "",
+        "company_name": "Legora",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "€489 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 489000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4.89 亿欧元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c4c53e6f607010be",
+            "source_url": "https://legora.com/blog/series-e",
+            "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+            "source_content_hash": "f3c7efce8da1beb6",
+            "quote": "with participation from new investors, including Baron Capital, Capital Group, Fidelity Management & Research Company, Glade Brook Capital Partners, and J.P Morgan",
+            "quote_hash": "53b256cbc00c787add4fc6ed2fb5c55f3cdbafe428a00c9bd1e18b2ba37b0f5c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b24d992dd72e60ef",
         "funding_insight_id": "FI-100e345b5bd4b3c6",
@@ -128,6 +176,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c4c53e6f607010be",
+        "source_url": "https://legora.com/blog/series-e",
+        "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+        "source_content_hash": "f3c7efce8da1beb6",
+        "quote": "with participation from new investors, including Baron Capital, Capital Group, Fidelity Management & Research Company, Glade Brook Capital Partners, and J.P Morgan",
+        "quote_hash": "53b256cbc00c787add4fc6ed2fb5c55f3cdbafe428a00c9bd1e18b2ba37b0f5c"
+      },
+      {
         "source_id": "FISRC-926f8f2e0ad24f56",
         "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
         "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
@@ -161,6 +217,10 @@
         {
           "description": "SiMa.ai 2026 年 9 月 Series C 公告将 J.P. Morgan 列为新投资者，未披露具体参与主体或出资额。",
           "source_id": "FISRC-926f8f2e0ad24f56"
+        },
+        {
+          "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4c53e6f607010be"
         }
       ],
       "contacts": [
@@ -192,6 +252,14 @@
           "source_content_hash": "e4a445b8ad5e5db7fe9dd87384cc0fef61131e6be5f0b5f6b45e8c90d37e1889",
           "quote": "J.P. Morgan, and the State of Michigan also joined the round as new investors.",
           "quote_hash": "fb1d598c751d752e98bbc969f213d2e6240694c5176cae71554880b9d5dd0cf6"
+        },
+        {
+          "source_id": "FISRC-c4c53e6f607010be",
+          "source_url": "https://legora.com/blog/series-e",
+          "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+          "source_content_hash": "f3c7efce8da1beb6",
+          "quote": "with participation from new investors, including Baron Capital, Capital Group, Fidelity Management & Research Company, Glade Brook Capital Partners, and J.P Morgan",
+          "quote_hash": "53b256cbc00c787add4fc6ed2fb5c55f3cdbafe428a00c9bd1e18b2ba37b0f5c"
         }
       ]
     },

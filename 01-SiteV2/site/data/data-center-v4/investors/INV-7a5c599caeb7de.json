@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,20 +64,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 36,
-    "historical_or_ambiguous_count": 9,
-    "portfolio_company_count": 35,
+    "current_round_count": 37,
+    "historical_or_ambiguous_count": 10,
+    "portfolio_company_count": 36,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2016-03",
-    "latest_disclosed_at": "2026-10-13",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
-      "historical_or_ambiguous": 9,
+      "historical_or_ambiguous": 10,
       "lead": 4,
-      "participant": 32
+      "participant": 33
     },
     "round_codes": [
       "multi_round",
@@ -106,6 +106,11 @@
         "entity_id": "EN-2f88f41306209dd7",
         "canonical_entity_id": "",
         "name": "Avoca AI"
+      },
+      {
+        "entity_id": "EN-fa64e74622d0a95a",
+        "canonical_entity_id": "",
+        "name": "Blacksmith"
       },
       {
         "entity_id": "EN-9db7cd4f9d5b9566",
@@ -269,6 +274,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-6d8bb13186bffe88",
+        "funding_insight_id": "FI-29972434b39dd262",
+        "event_ids": [
+          "EV-95b8b70ca29ab623"
+        ],
+        "company_entity_id": "EN-fa64e74622d0a95a",
+        "company_canonical_entity_id": "",
+        "company_name": "Blacksmith",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$66 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 66000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6600 万美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0b9a2de412bfecea",
+            "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
+            "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
+            "source_content_hash": "b097b8e1cde199ce",
+            "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
+            "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
+          }
+        ]
+      },
       {
         "activity_id": "IA-fdc43e8ba108d870",
         "funding_insight_id": "FI-78f8b7962d42b13c",
@@ -1894,6 +1939,38 @@
         ]
       },
       {
+        "activity_id": "IA-310aef2b31f672ef",
+        "funding_insight_id": "FI-b875723282f11479",
+        "event_ids": [
+          "EV-07911ca790bdfc5a"
+        ],
+        "company_entity_id": "EN-22dc02488a037639",
+        "company_canonical_entity_id": "",
+        "company_name": "Legora",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7e527e219a6701a1",
+            "source_url": "https://sacra.com/c/legora/",
+            "source_title": "Legora revenue, valuation & funding",
+            "source_content_hash": "5271ff9b31989ef7",
+            "quote": "That round was led by Accel and included existing investors Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Redpoint Ventures, and Y Combinator",
+            "quote_hash": "3c5d64f387dfed0f2eb7eb52d6b537f62744f3c3b8d545732d2954fae7752a86"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-ae41855538894eb0",
         "funding_insight_id": "FI-920fe5e68b71a61c",
         "event_ids": [
@@ -2023,6 +2100,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-0b9a2de412bfecea",
+        "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
+        "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
+        "source_content_hash": "b097b8e1cde199ce",
+        "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
+        "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
+      },
       {
         "source_id": "FISRC-4ee9923e67c28685",
         "source_url": "https://yourstory.com/2026/10/agentic-video-startup-clueso-raises-series-a-funding",
@@ -2376,6 +2461,14 @@
         "quote_hash": "35ec8bf18ee09527e3273be7273a2dcc21d41ab2a2b16400a6280e073174f7da"
       },
       {
+        "source_id": "FISRC-7e527e219a6701a1",
+        "source_url": "https://sacra.com/c/legora/",
+        "source_title": "Legora revenue, valuation & funding",
+        "source_content_hash": "5271ff9b31989ef7",
+        "quote": "That round was led by Accel and included existing investors Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Redpoint Ventures, and Y Combinator",
+        "quote_hash": "3c5d64f387dfed0f2eb7eb52d6b537f62744f3c3b8d545732d2954fae7752a86"
+      },
+      {
         "source_id": "FISRC-1f322d172be14af7",
         "source_url": "https://www.vcbacked.co/company/ontora",
         "source_title": "Ontora Funding & Investors - Pre-Seed - Dover | VCBacked",
@@ -2445,16 +2538,16 @@
           "source_id": "yc_press"
         },
         {
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0b9a2de412bfecea"
+        },
+        {
           "description": "融资来源记录：Clueso · A轮 · 2026-10-13 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4ee9923e67c28685"
         },
         {
           "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮参投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-718f95dbe2208337"
-        },
-        {
-          "description": "融资来源记录：Flai · A轮 · 2026-10-06 · 本轮参投 · $27 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c8bf3839b23b0657"
         }
       ],
       "contacts": [
@@ -2498,6 +2591,14 @@
           "quote_hash": "4ed4875e0047c94acb0efae75ec6e5f47b2b446f507a0d444211c08edd926a82"
         },
         {
+          "source_id": "FISRC-0b9a2de412bfecea",
+          "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
+          "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
+          "source_content_hash": "b097b8e1cde199ce",
+          "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
+          "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
+        },
+        {
           "source_id": "FISRC-4ee9923e67c28685",
           "source_url": "https://yourstory.com/2026/10/agentic-video-startup-clueso-raises-series-a-funding",
           "source_title": "AI 智能体视频初创公司 Clueso 在 A 轮融资中筹集 1000 万美元",
@@ -2512,14 +2613,6 @@
           "source_content_hash": "9a7816e0d0a7df40",
           "quote": "We brought together some of the strongest investors in technology – NVIDIA, Microsoft’s M12, Samsung, Robot Ventures, Union Square Ventures, Y Combinator, and Menlo Ventures among others",
           "quote_hash": "e598666c713d3dbb3685a0b385b18b9a615d68374c9fe49844f9873a5b814571"
-        },
-        {
-          "source_id": "FISRC-c8bf3839b23b0657",
-          "source_url": "https://www.useflai.com/blog/flai-series-a-base10",
-          "source_title": "Flai raises $27M led by Base10 Partners to automate car dealership operations",
-          "source_content_hash": "c53320a25185219c",
-          "quote": "We're excited to announce that Flai has raised a $27 million Series A led by Base10 Partners, with participation from Toyota Ventures, First Round Capital, Y Combinator, The Friedkin Group, and Findlay Automotive Group.",
-          "quote_hash": "27712d3c2c719515c0cdaf37039f50ef13095b51d6dc774c8849eca9f25d94c9"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2530,7 +2623,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[39].role": {
+        "activities[40].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

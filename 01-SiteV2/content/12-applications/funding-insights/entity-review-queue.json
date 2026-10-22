@@ -2,12 +2,12 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.3",
-    "candidate_count": 2569,
-    "product_candidates": 1452,
-    "person_candidates": 1117,
-    "china_market_candidates": 645,
-    "china_market_product_candidates": 528,
-    "china_market_person_candidates": 117,
+    "candidate_count": 2619,
+    "product_candidates": 1479,
+    "person_candidates": 1140,
+    "china_market_candidates": 653,
+    "china_market_product_candidates": 534,
+    "china_market_person_candidates": 119,
     "rule": "Application evidence never mutates canonical V4 entities automatically."
   },
   "candidates": [
@@ -388,12 +388,15 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
-        "EN-8eae6c54657e94be"
+        "EN-8eae6c54657e94be",
+        "EN-fa64e74622d0a95a"
       ],
       "funding_insight_ids": [
+        "FI-aa0c518e2f4d22a0",
         "FI-dc250800fa39a4b6"
       ],
       "source_event_ids": [
+        "EV-95b8b70ca29ab623",
         "EV-cca4bd983a16b8d9"
       ],
       "evidence_refs": [
@@ -402,6 +405,18 @@
           "quote": "Aditya Jayaprakash Co-founder, CEO",
           "source_content_hash": "716df167d49a13d7",
           "quote_hash": "dea7f5c26004fbb35ad77a1bff5c1f74c7d2c7aea7bd3f3fee227e1134d9609d"
+        },
+        {
+          "source_id": "FISRC-5f7eaed02b669920",
+          "quote": "Blacksmith co-founder and CEO Aditya Jayaprakash",
+          "source_content_hash": "4973cf3bc31640caadbb8ff770a32f12a4324ec7e02e464a9a06d1fcb32dc4f7",
+          "quote_hash": "ce06ad4afd048ea268f9c10304b2fead0757af002d42d9a61ebd15af05f401ac"
+        },
+        {
+          "source_id": "FISRC-0b9a2de412bfecea",
+          "quote": "su cofundador y CEO, Aditya Jayaprakash",
+          "source_content_hash": "b097b8e1cde199ce",
+          "quote_hash": "bebe83c8c6879696cb60db47dbcd8cf8d3bc629c31209dcb9e6e721b04af3e66"
         }
       ],
       "market_regions": [
@@ -570,6 +585,40 @@
           "quote": "Ahmed Farghal, who was previously an engineer at Stripe and Meta, joined as the fourth co-founder at the Series A.",
           "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
           "quote_hash": "af9bc10d1286b2113014dfaba2c1b6e817068056d6999e910f96f3b86776c56f"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-1c054fd28f5e3547",
+      "candidate_kind": "person",
+      "research_name": "Aidan Smith",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-c9bd40e58364720b"
+      ],
+      "funding_insight_ids": [
+        "FI-03c767a52ef1fe9b"
+      ],
+      "source_event_ids": [
+        "EV-cd3cf94d0f65aea1"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d40817bd8696706a",
+          "quote": "Smith is a former founder and Thiel fellow who worked at the brain implant company Neuralink during college.",
+          "source_content_hash": "52d288f9f7f1c202",
+          "quote_hash": "76831c0f0c7f9dc4e985d4b7e8bff8d87133d471e2b321c354eb630ef5d37827"
+        },
+        {
+          "source_id": "FISRC-3e0d8ebf1d36cd67",
+          "quote": "ASAidan Smith→Co-founder",
+          "source_content_hash": "baf8b927cc876842",
+          "quote_hash": "d41e3d127997c3a8201db4514e377e0dafb736a2ccf9089beb06456e0bb6bad0"
         }
       ],
       "market_regions": [
@@ -1660,6 +1709,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-cd182bfe5b1f7267",
+      "candidate_kind": "person",
+      "research_name": "Amaresh Tripathy",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-27a9cf2e4e5e38af"
+      ],
+      "funding_insight_ids": [
+        "FI-de13904c232918e2"
+      ],
+      "source_event_ids": [
+        "EV-a68bb74a987a8df4"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1c9f908762bf51c9",
+          "quote": "AuxoAI Co-Founders Arvinder Singh, Amaresh Tripathy, and Kabir Singh",
+          "source_content_hash": "99b6f8984f714789300caf059422f90fd76177fe74496029823367ccc43ffbd3",
+          "quote_hash": "d80a402b5c2ff5fa0a45e075359956bd4ca7306ef13746a9659fa2148b481452"
+        },
+        {
+          "source_id": "FISRC-20bf2a93a7a1549d",
+          "quote": "Founded in 2023 by Amaresh Tripathy, Arvinder Pal Singh and Kabir Singh",
+          "source_content_hash": "60a84de6f0f5b37f",
+          "quote_hash": "543165a456ec934901e96d35d004346ecd26241794cae3e86cb2a9f3c8c36fb8"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-2cb8884cb54bd1c6",
       "candidate_kind": "person",
       "research_name": "Ameer Hamza",
@@ -2057,6 +2140,34 @@
           "quote": "said Andrea Zorzetto , CEO and co-founder of Cato",
           "source_content_hash": "ec2ac823db86c73b",
           "quote_hash": "1a418b1907ca4d8507d9172cacbd933b262de92e4bdd851c4c540250f3250088"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-135c51b4bbb14d3e",
+      "candidate_kind": "person",
+      "research_name": "Andreas Garnæs",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d2c19f369e44854b"
+      ],
+      "funding_insight_ids": [
+        "FI-9e322c9d7ec341d5"
+      ],
+      "source_event_ids": [
+        "EV-6ff06b92efd20922"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-66233dcfc9782a81",
+          "quote": "were joined by CTO Andreas Garnæs",
+          "source_content_hash": "a9c85d45514b67bb",
+          "quote_hash": "842f2da548a27c90afcb55d5bd4cff204ab87f5735e162b70c8e68ce4ee2fa6c"
         }
       ],
       "market_regions": [
@@ -3532,6 +3643,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-1d5fdc2cde14c97a",
+      "candidate_kind": "person",
+      "research_name": "Arvinder Pal Singh",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-27a9cf2e4e5e38af"
+      ],
+      "funding_insight_ids": [
+        "FI-de13904c232918e2"
+      ],
+      "source_event_ids": [
+        "EV-a68bb74a987a8df4"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1c9f908762bf51c9",
+          "quote": "AuxoAI Co-Founders Arvinder Singh, Amaresh Tripathy, and Kabir Singh",
+          "source_content_hash": "99b6f8984f714789300caf059422f90fd76177fe74496029823367ccc43ffbd3",
+          "quote_hash": "d80a402b5c2ff5fa0a45e075359956bd4ca7306ef13746a9659fa2148b481452"
+        },
+        {
+          "source_id": "FISRC-20bf2a93a7a1549d",
+          "quote": "Founded in 2023 by Amaresh Tripathy, Arvinder Pal Singh and Kabir Singh",
+          "source_content_hash": "60a84de6f0f5b37f",
+          "quote_hash": "543165a456ec934901e96d35d004346ecd26241794cae3e86cb2a9f3c8c36fb8"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-49a28cff021c13d8",
       "candidate_kind": "person",
       "research_name": "Asheem Panakkat",
@@ -3552,6 +3697,40 @@
           "quote": "The startup was founded in 2023 by two ex-Google engineers, Asheem Panakkat, who serves as CEO, and Momchil Ivanov, who serves as CTO.",
           "source_content_hash": "7018e7f6eff743a6e2868eaef34ee07f4311388ca318103f18c602e78f804de0",
           "quote_hash": "40f6b7bb40545774f7691cad79884bb320e30cb24114cdeabbf1243ce508cc9d"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-26d068ff6b3eca4d",
+      "candidate_kind": "person",
+      "research_name": "Asher Spector",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-c9bd40e58364720b"
+      ],
+      "funding_insight_ids": [
+        "FI-03c767a52ef1fe9b"
+      ],
+      "source_event_ids": [
+        "EV-cd3cf94d0f65aea1"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d40817bd8696706a",
+          "quote": "Asher Spector was a statistics PhD at Stanford",
+          "source_content_hash": "52d288f9f7f1c202",
+          "quote_hash": "8bec19db0bf471b3a26c40bcd1563bdb15d1a56068cbc3b57278966763dd254e"
+        },
+        {
+          "source_id": "FISRC-2f96846e2986f7df",
+          "quote": "Co-founder of Flapping Airplanes. Brother of Ben Spector.",
+          "source_content_hash": "f7455c6e9095b61f",
+          "quote_hash": "0797ba907abd521ee2e25e09cacff7402265f521aeceb708626bce2edb43c013"
         }
       ],
       "market_regions": [
@@ -4082,6 +4261,40 @@
           "quote": "Zenity was founded in 2021 by Unit 8200 veterans Ben Kliger, the company's CEO, and Michael Bargury, CTO.",
           "source_content_hash": "55625f19578f0cd9",
           "quote_hash": "9748bce5af0834d8354beeaeb79190ab46e7e074c294072e578203e10e584ab2"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-ef8f60a77c800ad1",
+      "candidate_kind": "person",
+      "research_name": "Ben Spector",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-c9bd40e58364720b"
+      ],
+      "funding_insight_ids": [
+        "FI-03c767a52ef1fe9b"
+      ],
+      "source_event_ids": [
+        "EV-cd3cf94d0f65aea1"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6ecc9e9d3c026d5a",
+          "quote": "Ben, as CEO, is a firehose of ambitious ideas",
+          "source_content_hash": "23901e3c9a1849829afc4d2b36da9e75d5e2634d69e746ef68df3d5176ab60b4",
+          "quote_hash": "ba20b534cb129c447d1b681eb75de5a2164fd362d9000bca8863188a7be3e516"
+        },
+        {
+          "source_id": "FISRC-d40817bd8696706a",
+          "quote": "Flapping Airplanes was founded by Aidan Smith and brothers Asher and Ben Spector.",
+          "source_content_hash": "52d288f9f7f1c202",
+          "quote_hash": "eae6dc938041f5c45d6364a490ea72c5214e354a6c0b88fa40562457580d0e79"
         }
       ],
       "market_regions": [
@@ -5516,6 +5729,34 @@
           "quote": "Pictured from left to right: Deepak Mishra, Co-Founder & COO; Arbaaz Khan, Founder & CEO; Clark Zhang, Co-Founder & CTO.",
           "source_content_hash": "d4c067cbdae72c67",
           "quote_hash": "fc74e42171777efffbab5495aae890f7cce0e1f322b0c93e5811c034140d7ac8"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-1c6b5994f6c73e9c",
+      "candidate_kind": "person",
+      "research_name": "Claudio Cama",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-0c11e7e3600959f4"
+      ],
+      "funding_insight_ids": [
+        "FI-ac0e60dab1413abc"
+      ],
+      "source_event_ids": [
+        "EV-93f13acd37600d5d"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-386b12ff6d78515b",
+          "quote": "Launched at the end of 2025 by co-founders Simone Hong and Claudio Cama",
+          "source_content_hash": "a758f09725ce6ae0",
+          "quote_hash": "3fc7d9d163dc7057fbd709db4b7122aaa548313e4e90418b3442b201cdb8dd6d"
         }
       ],
       "market_regions": [
@@ -10861,6 +11102,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-56aa741676128982",
+      "candidate_kind": "person",
+      "research_name": "Helen Murphy",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-867d4a93b90b4039"
+      ],
+      "funding_insight_ids": [
+        "FI-9bc60020a53c62a1"
+      ],
+      "source_event_ids": [
+        "EV-cc12b6b21485b692"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-936af7ecf71c7a4c",
+          "quote": "Founded in 2021 by Helen Murphy and Martin Postel",
+          "source_content_hash": "840a5528a3525fa2",
+          "quote_hash": "43bdb02b8a46fbf4189bf9042e66e2cc2babd61c938e499ccd967031987228f1"
+        },
+        {
+          "source_id": "FISRC-936af7ecf71c7a4c",
+          "quote": "claims Helen Murphy, co-founder and CEO of Opply",
+          "source_content_hash": "840a5528a3525fa2",
+          "quote_hash": "7fbc7bdc23a568cfc105c87946186f702caa7f3cc3f47e38534cbef593c2385c"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-efeb7f52d1c5c977",
       "candidate_kind": "person",
       "research_name": "Henri Liriani",
@@ -12033,9 +12308,11 @@
         "EN-d2c19f369e44854b"
       ],
       "funding_insight_ids": [
+        "FI-9e322c9d7ec341d5",
         "FI-e5cf3ba938119188"
       ],
       "source_event_ids": [
+        "EV-6ff06b92efd20922",
         "EV-c66ddcd78c89a643"
       ],
       "evidence_refs": [
@@ -12050,6 +12327,12 @@
           "quote": "Plinto was founded in early 2025 by Nermina Suljevic, Nielsen, and Sebastian Rehnby",
           "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
           "quote_hash": "fdc675faa39962dbcc8616dde34295ea1c4c6e0a6ce6fc6ccca84bb2487a4537"
+        },
+        {
+          "source_id": "FISRC-9e72db53acfc2956",
+          "quote": "Founded in early 2025 by Jakob Nielsen, Nermina Suljevic and Sebastian Rehnby",
+          "source_content_hash": "8e8118728db2ad084977e1b72f58157f8c64228f841c21f0770f0c82dcb8ca7f",
+          "quote_hash": "9c003c770d3316f044aaffd21b903d58ed6e5c1506c8c94aeb7938fcdd9c1dde"
         }
       ],
       "market_regions": [
@@ -13017,6 +13300,34 @@
           "quote": "Superpose was founded by former TikTok leaders Melody Chu and Jing Liu",
           "source_content_hash": "3148d19b0b6bde06",
           "quote_hash": "dc31a53c220a775de2da9264ca512cee350911eb567727e4e456d340dc83db57"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-e0ff40a7a1ea7b7c",
+      "candidate_kind": "person",
+      "research_name": "Jo Schou Sandåker",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-487fb92ea4a3414b"
+      ],
+      "funding_insight_ids": [
+        "FI-d194fa4066b4a2ca"
+      ],
+      "source_event_ids": [
+        "EV-1d2917d03e728ae3"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-63ad1f6801409355",
+          "quote": "Founded by Remi Bjørnestad (CEO), Jo Schou Sandåker (CTO) and Natnael Belete Seifo (CCO)",
+          "source_content_hash": "ce46f406d8a72f2fe3bf1fe704f2e93c29c820c28ee937bf39f38d2ea17bf4b5",
+          "quote_hash": "d327914c3faae3256851e97d72c379baa742010a6d69fd5af7d31b59dda48b70"
         }
       ],
       "market_regions": [
@@ -14018,6 +14329,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-9cc792c1d62c9389",
+      "candidate_kind": "person",
+      "research_name": "Julian Kögel",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-71318126b97d81bf"
+      ],
+      "funding_insight_ids": [
+        "FI-78cf5e17a0079781"
+      ],
+      "source_event_ids": [
+        "EV-d42d931b1be325de"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c878fb5affb919e7",
+          "quote": "said Julian Kögel, Co-Founder and CEO of YGO",
+          "source_content_hash": "d53efb2536430937",
+          "quote_hash": "c5b5ff3ff9ede8e59e579454e99f7268a8c847174217d326050b368b0ce01e82"
+        },
+        {
+          "source_id": "FISRC-085eb5a3df4bad2e",
+          "quote": "Founded by Julian Kögel, Willi Ibbeken and Sebastian Kreutzberger",
+          "source_content_hash": "c8ef521d256775c4737d3e8ac692bdf3c9644d011a007d4a52337463ebb1f0ce",
+          "quote_hash": "a4ab200f75450793287eb5c4437f95beebab6fb82c77078f98a3aa19ce09434f"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-e18e0a85f151325d",
       "candidate_kind": "person",
       "research_name": "Julien Chaumond",
@@ -14134,6 +14479,40 @@
           "quote": "Justin McLeod, the creator of Hinge, founded the company.",
           "source_content_hash": "bea75d41a180363b",
           "quote_hash": "bbf6f919829b19f2d5626f2b5ee47a9fddcececaf6cbc4f48a3e50eb222b287e"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-62922a59249e97ad",
+      "candidate_kind": "person",
+      "research_name": "Kabir Singh",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-27a9cf2e4e5e38af"
+      ],
+      "funding_insight_ids": [
+        "FI-de13904c232918e2"
+      ],
+      "source_event_ids": [
+        "EV-a68bb74a987a8df4"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1c9f908762bf51c9",
+          "quote": "AuxoAI Co-Founders Arvinder Singh, Amaresh Tripathy, and Kabir Singh",
+          "source_content_hash": "99b6f8984f714789300caf059422f90fd76177fe74496029823367ccc43ffbd3",
+          "quote_hash": "d80a402b5c2ff5fa0a45e075359956bd4ca7306ef13746a9659fa2148b481452"
+        },
+        {
+          "source_id": "FISRC-20bf2a93a7a1549d",
+          "quote": "Founded in 2023 by Amaresh Tripathy, Arvinder Pal Singh and Kabir Singh",
+          "source_content_hash": "60a84de6f0f5b37f",
+          "quote_hash": "543165a456ec934901e96d35d004346ecd26241794cae3e86cb2a9f3c8c36fb8"
         }
       ],
       "market_regions": [
@@ -16328,6 +16707,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-fa3ba1a361844666",
+      "candidate_kind": "person",
+      "research_name": "Martin Postel",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-867d4a93b90b4039"
+      ],
+      "funding_insight_ids": [
+        "FI-9bc60020a53c62a1"
+      ],
+      "source_event_ids": [
+        "EV-cc12b6b21485b692"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-936af7ecf71c7a4c",
+          "quote": "Founded in 2021 by Helen Murphy and Martin Postel",
+          "source_content_hash": "840a5528a3525fa2",
+          "quote_hash": "43bdb02b8a46fbf4189bf9042e66e2cc2babd61c938e499ccd967031987228f1"
+        },
+        {
+          "source_id": "FISRC-86f3241a3c3aff0f",
+          "quote": "Murphy and co-founder Martin Postel, who completed his training at ETH Zurich and has since become chief technology officer",
+          "source_content_hash": "36a0418545159b1c",
+          "quote_hash": "dfa98339c05837e4b1a0f6537d3bd3e4e2bddabbc2fda918c5bc86fdaaee3731"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-86671193306d7fb0",
       "candidate_kind": "person",
       "research_name": "Martin Vorbach",
@@ -16825,6 +17238,40 @@
           "quote": "公司总裁Max Jaderberg博士此前主导了AlphaFold 3等药物设计领域突破性AI模型的研究、开发与落地应用",
           "source_content_hash": "717d3006d5ec7f5050c3d0527a1b81a3948670fad8dda69c00062c8d687a1bfe",
           "quote_hash": "bdcc816ca9267081d84196e5cb937146393f0ff6d125ffaa19a50ba5632dcf8d"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-02aa283fda87ae5b",
+      "candidate_kind": "person",
+      "research_name": "Max Junestrand",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-22dc02488a037639"
+      ],
+      "funding_insight_ids": [
+        "FI-749f09bffd8b04ba"
+      ],
+      "source_event_ids": [
+        "EV-07911ca790bdfc5a"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a4a6fcc88f9aade2",
+          "quote": "says Max Junestrand, CEO and co-founder of Legora",
+          "source_content_hash": "dcc31ed77d9753ddd85a56c51f3c2a470719a3b56450f89e62bf514779144ee0",
+          "quote_hash": "fa1e2bb8a931256baaf5b4d43486fde303a621ff4c58f26ad77f78845e129f39"
+        },
+        {
+          "source_id": "FISRC-c4c53e6f607010be",
+          "quote": "said Max Junestrand, CEO and Co-Founder of Legora",
+          "source_content_hash": "f3c7efce8da1beb6",
+          "quote_hash": "0503f5bcfca0573061ce07496d1ecc38ae0fbe0562915a5df2604c7f2d5189ec"
         }
       ],
       "market_regions": [
@@ -18392,6 +18839,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-aefd73b702e9546f",
+      "candidate_kind": "person",
+      "research_name": "Natnael Belete Seifo",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-487fb92ea4a3414b"
+      ],
+      "funding_insight_ids": [
+        "FI-d194fa4066b4a2ca"
+      ],
+      "source_event_ids": [
+        "EV-1d2917d03e728ae3"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-63ad1f6801409355",
+          "quote": "Founded by Remi Bjørnestad (CEO), Jo Schou Sandåker (CTO) and Natnael Belete Seifo (CCO)",
+          "source_content_hash": "ce46f406d8a72f2fe3bf1fe704f2e93c29c820c28ee937bf39f38d2ea17bf4b5",
+          "quote_hash": "d327914c3faae3256851e97d72c379baa742010a6d69fd5af7d31b59dda48b70"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-846e0f24d731662d",
       "candidate_kind": "person",
       "research_name": "Naveen Verma",
@@ -18671,9 +19146,11 @@
         "EN-d2c19f369e44854b"
       ],
       "funding_insight_ids": [
+        "FI-9e322c9d7ec341d5",
         "FI-e5cf3ba938119188"
       ],
       "source_event_ids": [
+        "EV-6ff06b92efd20922",
         "EV-c66ddcd78c89a643"
       ],
       "evidence_refs": [
@@ -18688,6 +19165,12 @@
           "quote": "said Suljevic, co-founder and CEO of Plinto",
           "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
           "quote_hash": "a714bbb412603d40fcbb5540144a2648fdd58f66f8d5bef69eb5b38937b27095"
+        },
+        {
+          "source_id": "FISRC-9e72db53acfc2956",
+          "quote": "Founded in early 2025 by Jakob Nielsen, Nermina Suljevic and Sebastian Rehnby",
+          "source_content_hash": "8e8118728db2ad084977e1b72f58157f8c64228f841c21f0770f0c82dcb8ca7f",
+          "quote_hash": "9c003c770d3316f044aaffd21b903d58ed6e5c1506c8c94aeb7938fcdd9c1dde"
         }
       ],
       "market_regions": [
@@ -22138,6 +22621,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-3eb5e8c88ee2855f",
+      "candidate_kind": "person",
+      "research_name": "Remi Bjørnestad",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-487fb92ea4a3414b"
+      ],
+      "funding_insight_ids": [
+        "FI-d194fa4066b4a2ca"
+      ],
+      "source_event_ids": [
+        "EV-1d2917d03e728ae3"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-63ad1f6801409355",
+          "quote": "Founded by Remi Bjørnestad (CEO), Jo Schou Sandåker (CTO) and Natnael Belete Seifo (CCO)",
+          "source_content_hash": "ce46f406d8a72f2fe3bf1fe704f2e93c29c820c28ee937bf39f38d2ea17bf4b5",
+          "quote_hash": "d327914c3faae3256851e97d72c379baa742010a6d69fd5af7d31b59dda48b70"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-3bfd1237b329c681",
       "candidate_kind": "person",
       "research_name": "Rex Liu",
@@ -22905,6 +23416,40 @@
           "quote": "The company, founded by Tapa Ghosh and Roy Meade, aims to develop a photonic memory layer",
           "source_content_hash": "80931ef22433b810",
           "quote_hash": "db2c31c0ebe17a9ede13f4998185a0f8d2b8a3ca3ffdb28e4e6d28fd69e8ea69"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-7681659b32a7933a",
+      "candidate_kind": "person",
+      "research_name": "Rui Santos",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-0e5db06740d51f41"
+      ],
+      "funding_insight_ids": [
+        "FI-1475bbea862a59be"
+      ],
+      "source_event_ids": [
+        "EV-fd1294db2784991c"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ebc2c958d4225de5",
+          "quote": "Photon Bridge was founded in 2020 in Eindhoven by Rui Santos and Xaveer Leijtens",
+          "source_content_hash": "92bfdf8610588d07e19a47d652ecc0a36477d6e888f09713ed91499912af525b",
+          "quote_hash": "658ca706a2e52b61d42929d95ae84ffb54d662c3968087d35542e527a90f1514"
+        },
+        {
+          "source_id": "FISRC-c8b02c9c1904bf16",
+          "quote": "interview new CEO Paul Marchal and CTO Rui Santos",
+          "source_content_hash": "4942d58336957d74",
+          "quote_hash": "8cfeecf25c7bf6fde0b7fa70ba5c2e7d8530e64b62fe60a6ad1194f4f41ce70f"
         }
       ],
       "market_regions": [
@@ -24167,6 +24712,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-6499b6303ed9ef49",
+      "candidate_kind": "person",
+      "research_name": "Sebastian Kreutzberger",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-71318126b97d81bf"
+      ],
+      "funding_insight_ids": [
+        "FI-78cf5e17a0079781"
+      ],
+      "source_event_ids": [
+        "EV-d42d931b1be325de"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-085eb5a3df4bad2e",
+          "quote": "Founded by Julian Kögel, Willi Ibbeken and Sebastian Kreutzberger",
+          "source_content_hash": "c8ef521d256775c4737d3e8ac692bdf3c9644d011a007d4a52337463ebb1f0ce",
+          "quote_hash": "a4ab200f75450793287eb5c4437f95beebab6fb82c77078f98a3aa19ce09434f"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-65bba2a77c8886e5",
       "candidate_kind": "person",
       "research_name": "Sebastian Rehnby",
@@ -24176,9 +24749,11 @@
         "EN-d2c19f369e44854b"
       ],
       "funding_insight_ids": [
+        "FI-9e322c9d7ec341d5",
         "FI-e5cf3ba938119188"
       ],
       "source_event_ids": [
+        "EV-6ff06b92efd20922",
         "EV-c66ddcd78c89a643"
       ],
       "evidence_refs": [
@@ -24187,6 +24762,18 @@
           "quote": "Plinto was founded in early 2025 by Nermina Suljevic, Nielsen, and Sebastian Rehnby",
           "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
           "quote_hash": "fdc675faa39962dbcc8616dde34295ea1c4c6e0a6ce6fc6ccca84bb2487a4537"
+        },
+        {
+          "source_id": "FISRC-9e72db53acfc2956",
+          "quote": "Founded in early 2025 by Jakob Nielsen, Nermina Suljevic and Sebastian Rehnby",
+          "source_content_hash": "8e8118728db2ad084977e1b72f58157f8c64228f841c21f0770f0c82dcb8ca7f",
+          "quote_hash": "9c003c770d3316f044aaffd21b903d58ed6e5c1506c8c94aeb7938fcdd9c1dde"
+        },
+        {
+          "source_id": "FISRC-66233dcfc9782a81",
+          "quote": "Nermina Suljevic, Jakob Nielsen and Sebastian Rehnby founded Plinto in early 2025",
+          "source_content_hash": "a9c85d45514b67bb",
+          "quote_hash": "951e7319819bb5048bdf9cd55f6b1e0deb2cc311e549157d28d087c9fd5ea63d"
         }
       ],
       "market_regions": [
@@ -24940,6 +25527,40 @@
           "quote": "SafeWorld, founded by Carnegie Mellon Safe AI Lab director Ding Zhao, Kyle Wong and Simo Rachidi",
           "source_content_hash": "58fca4c121c8b3b4",
           "quote_hash": "3c95f8d87526ab167147ae16a4a82398464da29de099060758ac10c1338a9960"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-8cf25cd4623d3ef0",
+      "candidate_kind": "person",
+      "research_name": "Simone Hong",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-0c11e7e3600959f4"
+      ],
+      "funding_insight_ids": [
+        "FI-ac0e60dab1413abc"
+      ],
+      "source_event_ids": [
+        "EV-93f13acd37600d5d"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-386b12ff6d78515b",
+          "quote": "Launched at the end of 2025 by co-founders Simone Hong and Claudio Cama",
+          "source_content_hash": "a758f09725ce6ae0",
+          "quote_hash": "3fc7d9d163dc7057fbd709db4b7122aaa548313e4e90418b3442b201cdb8dd6d"
+        },
+        {
+          "source_id": "FISRC-4194082613d70b33",
+          "quote": "said co-founder and chief executive officer Simone Hong",
+          "source_content_hash": "d8544835af4c8508",
+          "quote_hash": "ac140e36d277943b747e82468c3330c644e4945c8c095914c378896db7f6a9a1"
         }
       ],
       "market_regions": [
@@ -28389,6 +29010,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-e68053df26803f4a",
+      "candidate_kind": "person",
+      "research_name": "Willi Ibbeken",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-71318126b97d81bf"
+      ],
+      "funding_insight_ids": [
+        "FI-78cf5e17a0079781"
+      ],
+      "source_event_ids": [
+        "EV-d42d931b1be325de"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-085eb5a3df4bad2e",
+          "quote": "Founded by Julian Kögel, Willi Ibbeken and Sebastian Kreutzberger",
+          "source_content_hash": "c8ef521d256775c4737d3e8ac692bdf3c9644d011a007d4a52337463ebb1f0ce",
+          "quote_hash": "a4ab200f75450793287eb5c4437f95beebab6fb82c77078f98a3aa19ce09434f"
+        },
+        {
+          "source_id": "FISRC-dd831d994b885e7c",
+          "quote": "YGO's current Co-Founder & Product is Willi Ibbeken",
+          "source_content_hash": "3e8414242549373b",
+          "quote_hash": "ece2b0b2666d81c10410ec94d05c73308b5d7ab72a1e2ba31ccd5d76f59b063c"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-f9b1a00e539df2d5",
       "candidate_kind": "person",
       "research_name": "William Wang",
@@ -28510,6 +29165,34 @@
           "quote": "Halluminate cofounders CTO Wyatt Marshall (left) and CEO Jerry Wu.",
           "source_content_hash": "bc9abdc4bbc3fc25",
           "quote_hash": "6089ba08e574716ae588f46f7821d25c125b70a5733aa4173642f9dcb0a5296b"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-408569651056f41c",
+      "candidate_kind": "person",
+      "research_name": "Xaveer Leijtens",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-0e5db06740d51f41"
+      ],
+      "funding_insight_ids": [
+        "FI-1475bbea862a59be"
+      ],
+      "source_event_ids": [
+        "EV-fd1294db2784991c"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ebc2c958d4225de5",
+          "quote": "Photon Bridge was founded in 2020 in Eindhoven by Rui Santos and Xaveer Leijtens",
+          "source_content_hash": "92bfdf8610588d07e19a47d652ecc0a36477d6e888f09713ed91499912af525b",
+          "quote_hash": "658ca706a2e52b61d42929d95ae84ffb54d662c3968087d35542e527a90f1514"
         }
       ],
       "market_regions": [
@@ -29796,6 +30479,40 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-9b8ad197045c6e35",
+      "candidate_kind": "person",
+      "research_name": "余恩源",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-3290d9da024ffd8e"
+      ],
+      "funding_insight_ids": [
+        "FI-849f503fd2c5c9fd"
+      ],
+      "source_event_ids": [
+        "EV-d9131693fbf97ab0"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-bfb4ce468feea168",
+          "quote": "创始人余恩源为物流老兵",
+          "source_content_hash": "ebed64ce8512e1ab",
+          "quote_hash": "5ae58f6c1ceaef9355429aca92ff327aa39d8d5e15baaf44d2448968f1ee7ae9"
+        },
+        {
+          "source_id": "FISRC-c6694dbf7471e7bc",
+          "quote": "新石器创始人兼CEO余恩源表示",
+          "source_content_hash": "1848fe9e549bebfd",
+          "quote_hash": "0e4fcac4a3648e59310742831778e7f0ff2de2ecd0419332c006b31d06bd4ad7"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-95d7b246715d5394",
@@ -31224,6 +31941,34 @@
           "quote": "曹炎培，清华大学计算机系本科及博士毕业。其工作涵盖从开创性的实时3D捕捉技术，到引领文本、图像生成3D的Dream3D、Triplane-Gaussian (TGS)等革新方法。",
           "source_content_hash": "a49b3ebda62699ec",
           "quote_hash": "542b07104f3fbb08a1ce1a729fdbca9cbc74e871d1eca8a87429d2f25acad233"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-a108b0290af74458",
+      "candidate_kind": "person",
+      "research_name": "曹羽中",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-858326bb020621c2"
+      ],
+      "funding_insight_ids": [
+        "FI-54fbec95c680a944"
+      ],
+      "source_event_ids": [
+        "EV-9dbf7a6b84a4aa21"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f28fa95bcc212ad9",
+          "quote": "华瑞指数云创始人兼CTO曹羽中先生获评首批“认证专家”荣誉",
+          "source_content_hash": "5b4feae24f829d0c",
+          "quote_hash": "d3a0ddb0a0fa3479e08a97a33eff04db3550582e9d548ce0347f787d5760b23c"
         }
       ],
       "market_regions": [
@@ -33398,6 +34143,34 @@
           "quote": "创始人郭江亮曾为百度智能云创始成员",
           "source_content_hash": "609009b0a465ebb9",
           "quote_hash": "7575a91b38723c706e6492f778a87ab820cd70c27b108bb3a734c2642f3fc1b5"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-5f844db5118e9570",
+      "candidate_kind": "person",
+      "research_name": "钟超",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-48901d83aaf2d3df"
+      ],
+      "funding_insight_ids": [
+        "FI-ecc64838459e052c"
+      ],
+      "source_event_ids": [
+        "EV-fe4e2cdf3f2a5075"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c853fbb5ce244b00",
+          "quote": "由中国科学院深圳先进技术研究院钟超博士创立",
+          "source_content_hash": "16f5e7a14cc87e79d3f91a0541c233abad021af94a1ac47b1978934d4327fdbd",
+          "quote_hash": "fea31ba68c091e52c1dfbd27975bdabc96e7d46fd1eb64b4ff58b2b6373575cd"
         }
       ],
       "market_regions": [
@@ -37488,6 +38261,34 @@
         "GLOBAL"
       ],
       "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-febc5e8eae0d799b",
+      "candidate_kind": "product",
+      "research_name": "AI原生生物材料研发平台（AI-Native Biomaterials R&D Platform）",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-48901d83aaf2d3df"
+      ],
+      "funding_insight_ids": [
+        "FI-ecc64838459e052c"
+      ],
+      "source_event_ids": [
+        "EV-fe4e2cdf3f2a5075"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c853fbb5ce244b00",
+          "quote": "柏垠生物将进一步升级AI原生生物材料研发平台(AI-Native Biomaterials R&D Platform)，结合人工智能驱动的虚拟实验室和高度自动化的智能物理实验室实现端到端的候选分子设计、筛选及功能研究的闭环迭代",
+          "source_content_hash": "16f5e7a14cc87e79d3f91a0541c233abad021af94a1ac47b1978934d4327fdbd",
+          "quote_hash": "27092d4e54ad586aa13cc5539a155194d0fe12c6cef81f3247d846e95cd8959c"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
     },
     {
       "candidate_id": "FIER-e6d06177450f0aea",
@@ -41793,6 +42594,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-136d2fdfc8bbce9b",
+      "candidate_kind": "product",
+      "research_name": "Blacksmith CI 平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-fa64e74622d0a95a"
+      ],
+      "funding_insight_ids": [
+        "FI-aa0c518e2f4d22a0"
+      ],
+      "source_event_ids": [
+        "EV-95b8b70ca29ab623"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5f7eaed02b669920",
+          "quote": "continuous integration (CI) — the process of building, testing, merging, and validating code changes",
+          "source_content_hash": "4973cf3bc31640caadbb8ff770a32f12a4324ec7e02e464a9a06d1fcb32dc4f7",
+          "quote_hash": "b12a1a7b9baa8cd348db661c31ba1cb001594e8b9a25db9226acb89d39c0137b"
+        },
+        {
+          "source_id": "FISRC-0b9a2de412bfecea",
+          "quote": "sus clientes migran sus flujos con un cambio de una línea en el archivo de configuración, sin aprovisionar ni escalar servidores por su cuenta",
+          "source_content_hash": "b097b8e1cde199ce",
+          "quote_hash": "041aa44ece304bf950ca6f916bd766d4088f139b43f0667e7735200c01fb5232"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-9f72da46d952539c",
       "candidate_kind": "product",
       "research_name": "Bland Enterprise Voice AI Platform",
@@ -43440,6 +44275,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-5f11960c8df07e2a",
+      "candidate_kind": "product",
+      "research_name": "Codesmith",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-fa64e74622d0a95a"
+      ],
+      "funding_insight_ids": [
+        "FI-aa0c518e2f4d22a0"
+      ],
+      "source_event_ids": [
+        "EV-95b8b70ca29ab623"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0b9a2de412bfecea",
+          "quote": "el lanzamiento de Codesmith, su agente que diagnostica y corrige chequeos fallidos",
+          "source_content_hash": "b097b8e1cde199ce",
+          "quote_hash": "3d9393efb5697583908261d09b11fc8b7ed87313969356425ff30e106d964888"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-59991c63f9fd264f",
       "candidate_kind": "product",
       "research_name": "Codestral",
@@ -43502,6 +44365,34 @@
         "GLOBAL"
       ],
       "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-3c7ef9d0f28879c7",
+      "candidate_kind": "product",
+      "research_name": "Colamin",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-48901d83aaf2d3df"
+      ],
+      "funding_insight_ids": [
+        "FI-ecc64838459e052c"
+      ],
+      "source_event_ids": [
+        "EV-fe4e2cdf3f2a5075"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c853fbb5ce244b00",
+          "quote": "目前已布局重组贻贝粘蛋白、Colamin等产品及创新分子",
+          "source_content_hash": "16f5e7a14cc87e79d3f91a0541c233abad021af94a1ac47b1978934d4327fdbd",
+          "quote_hash": "7623add6b59f669df8570742335f885938e12187a390a64023f632b1338ffc48"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
     },
     {
       "candidate_id": "FIER-2242cc17f81c88c1",
@@ -44967,6 +45858,74 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-bebeaa2bfead3e7f",
+      "candidate_kind": "product",
+      "research_name": "Damia",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-27a9cf2e4e5e38af"
+      ],
+      "funding_insight_ids": [
+        "FI-de13904c232918e2"
+      ],
+      "source_event_ids": [
+        "EV-a68bb74a987a8df4"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1c9f908762bf51c9",
+          "quote": "AuxoAI accelerates time to value with its proprietary FDE Workbench, Damia, which has codified intelligence for several enterprise AI deployments.",
+          "source_content_hash": "99b6f8984f714789300caf059422f90fd76177fe74496029823367ccc43ffbd3",
+          "quote_hash": "b7d998e84eda1a7ff6e86823720c0e1b37fc5f9302a6aa33743a8377066ef174"
+        },
+        {
+          "source_id": "FISRC-6203fb6e4bf73a2a",
+          "quote": "At the core of the company’s platform is Damia, which the company describes as an FDE Workbench, or “forward-deployed engineer” toolkit that also transforms data into applications and licenses for customers.",
+          "source_content_hash": "e4585051c866fdb2",
+          "quote_hash": "d53d1f8fa32b8694a2621b7b6dcadb51ea073bd08d84cce37d9e9fc0a6526ae0"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-3739a64353a8b748",
+      "candidate_kind": "product",
+      "research_name": "data-efficient model research",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-c9bd40e58364720b"
+      ],
+      "funding_insight_ids": [
+        "FI-03c767a52ef1fe9b"
+      ],
+      "source_event_ids": [
+        "EV-cd3cf94d0f65aea1"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-63c3030bd2abb92e",
+          "quote": "pursuing fundamental research breakthroughs to improve AI training data efficiency by 1000 times",
+          "source_content_hash": "e663947f00994e68",
+          "quote_hash": "f3646017654118342e500d67f852834ab894f2187ff16d692416ad7adbd88e1a"
+        },
+        {
+          "source_id": "FISRC-d40817bd8696706a",
+          "quote": "a mission to find ways to train large models with less data",
+          "source_content_hash": "52d288f9f7f1c202",
+          "quote_hash": "cfd04dd2db0d1a47055f2e266b71a1f5ad1f0de4b0d8202e210c908b36e1848e"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-4931ed38f0724cbc",
@@ -48598,6 +49557,34 @@
           "quote": "Our platform orchestrates multiple frontier AI models across image, video, 3D, spatial ideation, and design workflows.",
           "source_content_hash": "e332f39f80ce13b3",
           "quote_hash": "d56b6c4351b5f5ccddc6a48828b6fb5674ab3f1102fcf76fc1ec612d8d63534b"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-7ca6c904afd44f6e",
+      "candidate_kind": "product",
+      "research_name": "Forward Deployed Experts（前沿部署专家团队）",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-27a9cf2e4e5e38af"
+      ],
+      "funding_insight_ids": [
+        "FI-de13904c232918e2"
+      ],
+      "source_event_ids": [
+        "EV-a68bb74a987a8df4"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1c9f908762bf51c9",
+          "quote": "At the center of AuxoAI's approach are Forward Deployed Experts, a combination of Forward Deployed Strategists and Engineers who work alongside the customer's business to understand how work actually happens, capture enterprise context, identify ways to reimagine work, and build production AI that gets used.",
+          "source_content_hash": "99b6f8984f714789300caf059422f90fd76177fe74496029823367ccc43ffbd3",
+          "quote_hash": "131a0803bcc6c66909807f9fe53db1623b3eb48abb6a47f3a89b6d8ad3169484"
         }
       ],
       "market_regions": [
@@ -52530,6 +53517,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-776d9f64a2e89323",
+      "candidate_kind": "product",
+      "research_name": "Jenz AI coworker platform",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-487fb92ea4a3414b"
+      ],
+      "funding_insight_ids": [
+        "FI-d194fa4066b4a2ca"
+      ],
+      "source_event_ids": [
+        "EV-1d2917d03e728ae3"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-01eb801f31065932",
+          "quote": "Jenz is an AI coworker for e-commerce teams, accessible via Slack. It can retrieve store data, run analysis, generate reports and files, write and execute code, build small web applications, and automate recurring workflows.",
+          "source_content_hash": "fb75562d3fc3a5b8",
+          "quote_hash": "578b80012a9ff7384227db2dbf12ea5eaff6bc13286630b39dd91b9dcdd0103f"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-70efe24ad6ce38f4",
       "candidate_kind": "product",
       "research_name": "Jev",
@@ -53800,6 +54815,40 @@
           "quote": "They feature a dual-speaker system that directs sound toward the wearer while canceling sound that escapes, reducing sound by 99% just a few inches away from the ear.",
           "source_content_hash": "ee31f942397e1de2295d1acc38413e133d72d1ac12d4414155bb5587bfb4ad8b",
           "quote_hash": "4e8fc7101c251a63a1137aef99df339330879389c7a675691253f86dbc8992f0"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-2d5954c3b631043e",
+      "candidate_kind": "product",
+      "research_name": "Legora aOS",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-22dc02488a037639"
+      ],
+      "funding_insight_ids": [
+        "FI-749f09bffd8b04ba"
+      ],
+      "source_event_ids": [
+        "EV-07911ca790bdfc5a"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c4c53e6f607010be",
+          "quote": "the Legora aOS, the agentic operating system that lawyers and their agents work in",
+          "source_content_hash": "f3c7efce8da1beb6",
+          "quote_hash": "f43f3eceeb2ca99d29a86357330af962c114b01b16214c39a8091b3c7341eebf"
+        },
+        {
+          "source_id": "FISRC-a4a6fcc88f9aade2",
+          "quote": "supporting lawyers in research, review, and drafting across complex matters",
+          "source_content_hash": "dcc31ed77d9753ddd85a56c51f3c2a470719a3b56450f89e62bf514779144ee0",
+          "quote_hash": "64f6c3a6ebdbf02e41a3455603cb9d18831ea2c322e97809efd16ed81d2b1705"
         }
       ],
       "market_regions": [
@@ -55358,6 +56407,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-cb9944878f2e2d09",
+      "candidate_kind": "product",
+      "research_name": "megakernel framework",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-c9bd40e58364720b"
+      ],
+      "funding_insight_ids": [
+        "FI-03c767a52ef1fe9b"
+      ],
+      "source_event_ids": [
+        "EV-cd3cf94d0f65aea1"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d40817bd8696706a",
+          "quote": "the world’s most complete megakernel framework. It can perform entire training runs, serve inference, play video games, and even do all three simultaneously in a single kernel.",
+          "source_content_hash": "52d288f9f7f1c202",
+          "quote_hash": "93b99309a75062da20a88fa4ad97b2d530d6268cb1648107b65bb1908762bd66"
+        },
+        {
+          "source_id": "FISRC-6ecc9e9d3c026d5a",
+          "quote": "Flappy’s megakernels, which run an entire program on a GPU as a single kernel, eliminate the wasted time between steps and get more out of every GPU.",
+          "source_content_hash": "23901e3c9a1849829afc4d2b36da9e75d5e2634d69e746ef68df3d5176ab60b4",
+          "quote_hash": "c8c5d169d83208af0621778e6c5d06927347535bbc67e255fddf7819062762c2"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-fe1cff79c9129f9b",
       "candidate_kind": "product",
       "research_name": "Melius agents lab",
@@ -55590,6 +56673,34 @@
           "quote": "Leveraging this technology, Mojo Vision has developed a new class of massively parallel optical interconnects that enable thousands of channels in a compact footprint, delivering ultra-high bandwidth density, low energy per bit, and built-in redundancy for reliable AI-scale performance.",
           "source_content_hash": "ea05a369395533ec3041dd2799cc06ddc2d2b48a056522430b2306d6b4f955a6",
           "quote_hash": "24eaf6009e0ad507726f258c26fb9b6f9cc1a330a55069ff604941462dc62298"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-d7c60a32f3f7ba83",
+      "candidate_kind": "product",
+      "research_name": "Microsoft Word Add-In",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-22dc02488a037639"
+      ],
+      "funding_insight_ids": [
+        "FI-749f09bffd8b04ba"
+      ],
+      "source_event_ids": [
+        "EV-07911ca790bdfc5a"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-7e527e219a6701a1",
+          "quote": "The Microsoft Word Add-In keeps lawyers in their familiar drafting environment while providing AI assistance through a side panel",
+          "source_content_hash": "5271ff9b31989ef7",
+          "quote_hash": "61e4732b2c043bdf72d6519fb74aaacbe2550af968a543cf96cff736f9198ef8"
         }
       ],
       "market_regions": [
@@ -57183,6 +58294,34 @@
           "quote": "Neo gives SecOps teams the inventory, posture intelligence, attribution, and policy control to manage enterprise-wide agentic transformation and secure AI agents, AI-enabled applications, browsers, identities, and traditional software with newly introduced agentic capabilities.",
           "source_content_hash": "9889ba96b2e121cd",
           "quote_hash": "b8684d05b12b4c3ac72b4fad78eca9d16fa92871948594a03e8c8c7c000223ec"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-8cc70db83bcbce86",
+      "candidate_kind": "product",
+      "research_name": "Neolix-Pilot与Neolix-VA",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-3290d9da024ffd8e"
+      ],
+      "funding_insight_ids": [
+        "FI-849f503fd2c5c9fd"
+      ],
+      "source_event_ids": [
+        "EV-d9131693fbf97ab0"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-79ef09618a9f3b3f",
+          "quote": "公司自主研发L4 自动驾驶系统 Neolix-Pilot 与行业首个上车车端自动驾驶模型 Neolix-VA，运转 \"运营 - 数据 - 算法\" 数据飞轮。",
+          "source_content_hash": "e5382f88626831f0",
+          "quote_hash": "87d0a5441bc40d0384ece1b5ad0b3178ea8438997830e03100d8001f2043ba5f"
         }
       ],
       "market_regions": [
@@ -59074,6 +60213,68 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-144457fb6901f7f1",
+      "candidate_kind": "product",
+      "research_name": "Opply Brain",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-867d4a93b90b4039"
+      ],
+      "funding_insight_ids": [
+        "FI-9bc60020a53c62a1"
+      ],
+      "source_event_ids": [
+        "EV-cc12b6b21485b692"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-936af7ecf71c7a4c",
+          "quote": "Its platform, Opply Brain, combines AI agents, proprietary data and a supplier network to execute tasks across the supply chain, from supplier negotiations to deliveries.",
+          "source_content_hash": "840a5528a3525fa2",
+          "quote_hash": "3acf12f60e4239dd2e53d84c3677f65054891cd7d1c65be5402800aead5352b5"
+        },
+        {
+          "source_id": "FISRC-86f3241a3c3aff0f",
+          "quote": "The agents locate suppliers, place and monitor purchase orders, verify compliance documents, and pay suppliers on the brands’ behalf.",
+          "source_content_hash": "36a0418545159b1c",
+          "quote_hash": "4879b15374464f317b2787f51c251216aa54e36700312008b70b8a3e37a99c59"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-3948d797d1e34aba",
+      "candidate_kind": "product",
+      "research_name": "Opply 原料订购平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-867d4a93b90b4039"
+      ],
+      "funding_insight_ids": [
+        "FI-9bc60020a53c62a1"
+      ],
+      "source_event_ids": [
+        "EV-cc12b6b21485b692"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-777e4ac3289a7ae7",
+          "quote": "Opply is an ingredient ordering platform that helps F&B brands source, manage and streamline their ingredient and packaging orders.",
+          "source_content_hash": "cead14b45a0c42d9",
+          "quote_hash": "a99a1477e70b2753a58de825ff5b9f4732ea71c1a5bc966dbc8067a4411348c7"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-52f672851bc06aa1",
       "candidate_kind": "product",
       "research_name": "ORCA Lab",
@@ -60661,6 +61862,40 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-59bbe514bc011454",
+      "candidate_kind": "product",
+      "research_name": "Plinto AI代理财务管控平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d2c19f369e44854b"
+      ],
+      "funding_insight_ids": [
+        "FI-9e322c9d7ec341d5"
+      ],
+      "source_event_ids": [
+        "EV-6ff06b92efd20922"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-66233dcfc9782a81",
+          "quote": "Plinto sells AI agents that sit on top of a company’s existing ERP, banking, document and collaboration tools and verify transactions continuously against contracts, budgets and internal rules.",
+          "source_content_hash": "a9c85d45514b67bb",
+          "quote_hash": "8521de785f4e039076b8eb635af7cf792e4f4fca2ce8c602322ebab09fe077ea"
+        },
+        {
+          "source_id": "FISRC-11cd2eca8330e81b",
+          "quote": "Plinto's agents manage transactions from start to finish.",
+          "source_content_hash": "165b7e3f578ef9c8",
+          "quote_hash": "274dbcd13c864cd56fce4f4911b7080789b7b323ad8e1c3f40dc52833ab774b2"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-adc05bc33fdd0f24",
@@ -63408,6 +64643,40 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-274aaaf1aff8a364",
+      "candidate_kind": "product",
+      "research_name": "Rulen AI运营平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-0c11e7e3600959f4"
+      ],
+      "funding_insight_ids": [
+        "FI-ac0e60dab1413abc"
+      ],
+      "source_event_ids": [
+        "EV-93f13acd37600d5d"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-386b12ff6d78515b",
+          "quote": "Rulen develops an AI operating platform designed to automate tax and accounting workflows.",
+          "source_content_hash": "a758f09725ce6ae0",
+          "quote_hash": "e2dbb7ec7711a282f30717e3928df00667fc6f44efc02292380b74731099b7c3"
+        },
+        {
+          "source_id": "FISRC-4194082613d70b33",
+          "quote": "Rulen's platform integrates with existing software and third-party systems, including the Italian Revenue Agency's online taxpayer records (Cassetto Fiscale).",
+          "source_content_hash": "d8544835af4c8508",
+          "quote_hash": "6b0fbc3e32d3b0028d4c25aba345bc8a901e9b769370b472f19c57b1a5c077ae"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-d5cf2f20d6d48530",
@@ -66706,6 +67975,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-e07f003a9f77b180",
+      "candidate_kind": "product",
+      "research_name": "Tabular Review",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-22dc02488a037639"
+      ],
+      "funding_insight_ids": [
+        "FI-749f09bffd8b04ba"
+      ],
+      "source_event_ids": [
+        "EV-07911ca790bdfc5a"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-7e527e219a6701a1",
+          "quote": "The Tabular Review feature functions like a spreadsheet where legal teams drag folders of contracts into the system",
+          "source_content_hash": "5271ff9b31989ef7",
+          "quote_hash": "ebbd750db5f199f2b61f1ce4cb0a84632dccc9a79c59a598c18ee766e86c56b2"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-c23c1ee06dbfba8f",
       "candidate_kind": "product",
       "research_name": "TacVerse触觉交互数据集",
@@ -69821,6 +71118,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-44da0ff3b7f1304c",
+      "candidate_kind": "product",
+      "research_name": "WADP",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-858326bb020621c2"
+      ],
+      "funding_insight_ids": [
+        "FI-54fbec95c680a944"
+      ],
+      "source_event_ids": [
+        "EV-9dbf7a6b84a4aa21"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e44d32bfb6e73d83",
+          "quote": "在WQS 之外，华瑞指数云以 Universal Storage 理念构建统一存储底座 WADP，涵盖高性能分布式块存储 WDS、并行文件存储 WFS 等核心子产品，已在 200 余家客户的核心生产环境中运行。",
+          "source_content_hash": "a002bc8d01b7b8dd41948647bce586b7636955843ea576186a0999bba95f1df0",
+          "quote_hash": "650c0c040127fd3c8d771598e3ec7a8694c37a1632bc6013b85200f07dd0fb53"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-e2a2d380e95752da",
       "candidate_kind": "product",
       "research_name": "Wafer Scale Engine 3 (WSE-3)",
@@ -70553,6 +71878,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-76d5c4bc18a8cf9c",
+      "candidate_kind": "product",
+      "research_name": "WQS",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-858326bb020621c2"
+      ],
+      "funding_insight_ids": [
+        "FI-54fbec95c680a944"
+      ],
+      "source_event_ids": [
+        "EV-9dbf7a6b84a4aa21"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e44d32bfb6e73d83",
+          "quote": "WQS围绕KV Cache的复用、共享与调度设计，减少重复计算及数据搬运，让更多算力用于有效的Token生成。",
+          "source_content_hash": "a002bc8d01b7b8dd41948647bce586b7636955843ea576186a0999bba95f1df0",
+          "quote_hash": "a26dd72ebcf310d8ac07e20fb1da39f57f50c1b54b6e46e1375288d3e8ad76a0"
+        },
+        {
+          "source_id": "FISRC-4500eb8b2a3ab43a",
+          "quote": "华瑞指数云WQS是一款以“解决KV Cache内存墙问题”为核心的分布式KV存储系统，核心定位为AI推理场景的专用上下文存储层",
+          "source_content_hash": "7cf1bc54ac2bce8c",
+          "quote_hash": "2a30e83657e4610bedd1c18a8eb164faa043edfa3a6f8d48f5f266a3c003c97b"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-5618fcf90c9270e3",
       "candidate_kind": "product",
       "research_name": "Wuyin Capture",
@@ -70903,6 +72262,40 @@
           "quote": "the twist is that Yasa can be easily personalized to proprietary data and applications.",
           "source_content_hash": "b0bfe562440f841d",
           "quote_hash": "2f4b07a716a2b55b18325acdfcc701fe4416a23a6335765c1a91f90b05367df6"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-b2c8eebe83463c19",
+      "candidate_kind": "product",
+      "research_name": "YGO AI编排层",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-71318126b97d81bf"
+      ],
+      "funding_insight_ids": [
+        "FI-78cf5e17a0079781"
+      ],
+      "source_event_ids": [
+        "EV-d42d931b1be325de"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c878fb5affb919e7",
+          "quote": "YGO enables semantic search, personalized recommendations, automated customer service and booking",
+          "source_content_hash": "d53efb2536430937",
+          "quote_hash": "7b1ed062d37f1c05ee484d8f273cb237b016d2e11996cf9026963dba1b763d72"
+        },
+        {
+          "source_id": "FISRC-c878fb5affb919e7",
+          "quote": "YGO enriches and structures fragmented hotel and product information so AI can reliably understand what travel companies have to offer",
+          "source_content_hash": "d53efb2536430937",
+          "quote_hash": "acd04e1f5a960ba527f1fa3f7faa7022b669a7f308419cd4b03b306c43f68c55"
         }
       ],
       "market_regions": [
@@ -73793,6 +75186,74 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-2a6163f25e624066",
+      "candidate_kind": "product",
+      "research_name": "多波长激光光源平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-0e5db06740d51f41"
+      ],
+      "funding_insight_ids": [
+        "FI-1475bbea862a59be"
+      ],
+      "source_event_ids": [
+        "EV-fd1294db2784991c"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ebc2c958d4225de5",
+          "quote": "combines and multiplexes light from multiple lower-power semiconductor lasers",
+          "source_content_hash": "92bfdf8610588d07e19a47d652ecc0a36477d6e888f09713ed91499912af525b",
+          "quote_hash": "c41c045fbf14dfc6b659893d6ae7617ce22032290ef2aa67f5be06c9ccd409b7"
+        },
+        {
+          "source_id": "FISRC-89ac5d37c40ad91c",
+          "quote": "up to 40 milliwatts of optical power per wavelength per fiber, while supporting production across multiple indium phosphide, or InP, foundries",
+          "source_content_hash": "4ee38b603b309b43",
+          "quote_hash": "940273755e3b5782cbd352857548c3387193a31c7378b4693cf8c327384df47d"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-d5c5491f3e277c59",
+      "candidate_kind": "product",
+      "research_name": "多激光复用光源平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-f4f81a0f6378eced"
+      ],
+      "funding_insight_ids": [
+        "FI-048558d08a234a2d"
+      ],
+      "source_event_ids": [
+        "EV-2b59da3844e5fc18"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-671b24b335194533",
+          "quote": "Photon Bridge combines light from multiple lower-power semiconductor lasers to deliver the optical power and wavelength density required by increasingly large AI systems, while enabling high-volume manufacturing across multiple InP foundries.",
+          "source_content_hash": "9972b0634f9623e6",
+          "quote_hash": "5f13c9bc9872c926cbd6b73eb08283d16cad0133562ea379b4020d4c172610c9"
+        },
+        {
+          "source_id": "FISRC-671b24b335194533",
+          "quote": "The platform is designed to deliver high wavelength counts with up to 40 mW of optical power per wavelength per fibre, while enabling production across multiple InP foundries.",
+          "source_content_hash": "9972b0634f9623e6",
+          "quote_hash": "6b5317931de92c36d5291a47a909fae070cbf5f126ae3a19ba63adf420b3a081"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-6880d9d56282d827",
       "candidate_kind": "product",
       "research_name": "多维全感知监测方案",
@@ -74494,6 +75955,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-447bf22e251108fb",
+      "candidate_kind": "product",
+      "research_name": "岳磐推理存储一体机",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-858326bb020621c2"
+      ],
+      "funding_insight_ids": [
+        "FI-54fbec95c680a944"
+      ],
+      "source_event_ids": [
+        "EV-9dbf7a6b84a4aa21"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4500eb8b2a3ab43a",
+          "quote": "华瑞指数云已经与深圳大普微进行战略合作，联合推出针对KV Cache和推理上下文的一体化存储产品：“岳磐”推理存储一体机",
+          "source_content_hash": "7cf1bc54ac2bce8c",
+          "quote_hash": "8e4f829b86aadecbc233125134eadb9b3b413c852aeb790b07c8aa2f22b05cec"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-a9a642d7bb578f76",
       "candidate_kind": "product",
       "research_name": "嵌入式SSCB模块",
@@ -75166,6 +76655,40 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-a2bb9b7d3d945ec9",
+      "candidate_kind": "product",
+      "research_name": "新石器无人配送车（X3/X6）",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-3290d9da024ffd8e"
+      ],
+      "funding_insight_ids": [
+        "FI-849f503fd2c5c9fd"
+      ],
+      "source_event_ids": [
+        "EV-d9131693fbf97ab0"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b6390aa0c4cc68e2",
+          "quote": "X3机动车道50km/h行驶能力，X6机动车道60km/h行驶能力",
+          "source_content_hash": "332e296040f5c73d",
+          "quote_hash": "8795a669cd14a7444d629e5dc823f9da9f40b5f69ea1f6f20171b4d7cd519620"
+        },
+        {
+          "source_id": "FISRC-b6390aa0c4cc68e2",
+          "quote": "X3单次装载 400-500 件，X6单次装载 800-1000 件",
+          "source_content_hash": "332e296040f5c73d",
+          "quote_hash": "558dd072290ffdfbdd8094887df9e89f0076a1d5dc41a904778b23c0ae738d77"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-7e74b03d00cd5399",
@@ -78383,6 +79906,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-307d0d57bd3d1c80",
+      "candidate_kind": "product",
+      "research_name": "紧凑型可调谐激光光子集成电路（PIC）",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-0e5db06740d51f41"
+      ],
+      "funding_insight_ids": [
+        "FI-1475bbea862a59be"
+      ],
+      "source_event_ids": [
+        "EV-fd1294db2784991c"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-435c8fb0801f3213",
+          "quote": "Photon Bridge’s product is a compact tunable laser designed to meet the growing demand for faster and more efficient connections between servers in AI datacenters.",
+          "source_content_hash": "2d659bfe6fa3bfd9",
+          "quote_hash": "a057cb4f75c650317fccbdbe4bb08d322183106972bc58b12bbced3452a83055"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-ba3971a635b363f3",
       "candidate_kind": "product",
       "research_name": "纳泰（NanoTitan）",
@@ -79441,6 +80992,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-28e7bfeafb938597",
+      "candidate_kind": "product",
+      "research_name": "重组贻贝粘蛋白",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-48901d83aaf2d3df"
+      ],
+      "funding_insight_ids": [
+        "FI-ecc64838459e052c"
+      ],
+      "source_event_ids": [
+        "EV-fe4e2cdf3f2a5075"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c853fbb5ce244b00",
+          "quote": "目前已布局重组贻贝粘蛋白、Colamin等产品及创新分子，并持续推进其在美妆、医疗健康、营养等领域的应用开发与产业化",
+          "source_content_hash": "16f5e7a14cc87e79d3f91a0541c233abad021af94a1ac47b1978934d4327fdbd",
+          "quote_hash": "97d2d08e50a6f06ee6529095100cbd532bb3420e1d5c53cbaa873f782424b130"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-02dca0ed155baf63",
       "candidate_kind": "product",
       "research_name": "量子2号（Quanta X2）",
@@ -79905,6 +81484,34 @@
           "quote": "The startup, founded in 2023, is building an integrated light engine for reliable optical connectivity at that scale, with an architecture designed to contain failures rather than propagate them to the workload.",
           "source_content_hash": "eb1bf0b35f9be5b2",
           "quote_hash": "fea777c9eb9f2422467fba7bdee9ac37c74c967d27fef7844255edaec5f62368"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-3352cb72339facc4",
+      "candidate_kind": "product",
+      "research_name": "零售数据整合与自动化平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-487fb92ea4a3414b"
+      ],
+      "funding_insight_ids": [
+        "FI-d194fa4066b4a2ca"
+      ],
+      "source_event_ids": [
+        "EV-1d2917d03e728ae3"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-780e922134598574",
+          "quote": "Retailers keep key information in separate webshop, POS, inventory, accounting and marketing systems, and Jenz’s common data layer lets an AI agent analyze that information and handle routine work while asking for approval before actions that spend money.",
+          "source_content_hash": "dbdeafe5837ee514",
+          "quote_hash": "b4f6a573148bb01f5390f87b8e833093cc56f2493f2e83ce591c1210a156be06"
         }
       ],
       "market_regions": [

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,19 +61,21 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-02-24",
-    "latest_disclosed_at": "2026-09-15",
+    "first_disclosed_at": "2025-01",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "co_lead": 1,
-      "lead": 1
+      "historical_or_ambiguous": 1,
+      "lead": 1,
+      "participant": 2
     },
     "round_codes": [
       "series_a",
@@ -89,9 +91,107 @@
         "entity_id": "FICO-0ab04bcfc3de286b",
         "canonical_entity_id": "",
         "name": "Euclyd"
+      },
+      {
+        "entity_id": "EN-f4f81a0f6378eced",
+        "canonical_entity_id": "",
+        "name": "Photon Bridge"
+      },
+      {
+        "entity_id": "EN-0e5db06740d51f41",
+        "canonical_entity_id": "",
+        "name": "Photon Bridge"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-36f7c4483b584bc8",
+        "funding_insight_id": "FI-21dcafe56bea746f",
+        "event_ids": [
+          "EV-2b59da3844e5fc18"
+        ],
+        "company_entity_id": "EN-f4f81a0f6378eced",
+        "company_canonical_entity_id": "",
+        "company_name": "Photon Bridge",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次名称的1000万欧元融资",
+        "amount_original": "€10 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万欧元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-993e94c7f3d2724a",
+            "source_url": "https://tech.eu/2026/10/21/dutch-photonics-startup-photon-bridge-raises-eur10m-to-tackle-ais-looming-laser-bottleneck/",
+            "source_title": "荷兰光子学初创公司Photon Bridge融资1000万欧元，以解决AI日益逼近的激光瓶颈",
+            "source_content_hash": "84793159f5b6ff28deb8da22395ab17211e3119b62d8a3320ee8057c75a2e113",
+            "quote": "with existing investors Innovation Industries, Faber, and Brabant Development Agency (BOM) also increasing their investment",
+            "quote_hash": "c50c09050242e878b47d6d13e23ef6d86e81d978c3983b6bc1d917964dcf91c7"
+          },
+          {
+            "source_id": "FISRC-671b24b335194533",
+            "source_url": "https://compoundsemiconductor.net/article/125671/Photon_Bridge_raises_%E2%82%AC10M_to_tackle_AI%E2%80%99s_laser_bottleneck",
+            "source_title": "Photon Bridge raises €10M to tackle AI’s laser bottleneck - Compound Semiconductor News",
+            "source_content_hash": "9972b0634f9623e6",
+            "quote": "with existing investors Innovation Industries, Faber, and Brabant Development Agency (BOM) also increasing their investment",
+            "quote_hash": "c50c09050242e878b47d6d13e23ef6d86e81d978c3983b6bc1d917964dcf91c7"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9373dcc8611510b5",
+        "funding_insight_id": "FI-3739ea3ae10f0817",
+        "event_ids": [
+          "EV-fd1294db2784991c"
+        ],
+        "company_entity_id": "EN-0e5db06740d51f41",
+        "company_canonical_entity_id": "",
+        "company_name": "Photon Bridge",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次（本轮）",
+        "amount_original": "€10 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万欧元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ebc2c958d4225de5",
+            "source_url": "https://www.eu-startups.com/2026/10/eindhoven-based-photon-bridge-raises-e10-million-to-build-optical-engines-for-ai-and-telecom/",
+            "source_title": "总部位于埃因霍温的Photon Bridge融资1000万欧元，用于为AI和电信构建光引擎",
+            "source_content_hash": "92bfdf8610588d07e19a47d652ecc0a36477d6e888f09713ed91499912af525b",
+            "quote": "existing investors Innovation Industries, Faber, and Brabant Development Agency (BOM) also increased their investment",
+            "quote_hash": "03799fd3c28d91708c46e07288bf9487b2e145ccb0804008cc8436c56f873f90"
+          }
+        ]
+      },
       {
         "activity_id": "IA-db2bf1a8487ea262",
         "funding_insight_id": "FI-1d043b12be806460",
@@ -171,9 +271,65 @@
             "quote_hash": "c123597dbdaf1d4d19e9dd4ce9d8cbee89fb1a9eea6a544695ba7e516c063989"
           }
         ]
+      },
+      {
+        "activity_id": "IA-a3e11160bd16dcda",
+        "funding_insight_id": "FI-3739ea3ae10f0817",
+        "event_ids": [
+          "EV-fd1294db2784991c"
+        ],
+        "company_entity_id": "EN-0e5db06740d51f41",
+        "company_canonical_entity_id": "",
+        "company_name": "Photon Bridge",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2025-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2025年1月€4.75 million种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ebc2c958d4225de5",
+            "source_url": "https://www.eu-startups.com/2026/10/eindhoven-based-photon-bridge-raises-e10-million-to-build-optical-engines-for-ai-and-telecom/",
+            "source_title": "总部位于埃因霍温的Photon Bridge融资1000万欧元，用于为AI和电信构建光引擎",
+            "source_content_hash": "92bfdf8610588d07e19a47d652ecc0a36477d6e888f09713ed91499912af525b",
+            "quote": "In January 2025, the company announced it had secured a €4.75 million Seed round led by Innovation Industries.",
+            "quote_hash": "b4585d215f502dbc3a106241ca5e41637f115682b65af04dae501370129798d7"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-993e94c7f3d2724a",
+        "source_url": "https://tech.eu/2026/10/21/dutch-photonics-startup-photon-bridge-raises-eur10m-to-tackle-ais-looming-laser-bottleneck/",
+        "source_title": "荷兰光子学初创公司Photon Bridge融资1000万欧元，以解决AI日益逼近的激光瓶颈",
+        "source_content_hash": "84793159f5b6ff28deb8da22395ab17211e3119b62d8a3320ee8057c75a2e113",
+        "quote": "with existing investors Innovation Industries, Faber, and Brabant Development Agency (BOM) also increasing their investment",
+        "quote_hash": "c50c09050242e878b47d6d13e23ef6d86e81d978c3983b6bc1d917964dcf91c7"
+      },
+      {
+        "source_id": "FISRC-671b24b335194533",
+        "source_url": "https://compoundsemiconductor.net/article/125671/Photon_Bridge_raises_%E2%82%AC10M_to_tackle_AI%E2%80%99s_laser_bottleneck",
+        "source_title": "Photon Bridge raises €10M to tackle AI’s laser bottleneck - Compound Semiconductor News",
+        "source_content_hash": "9972b0634f9623e6",
+        "quote": "with existing investors Innovation Industries, Faber, and Brabant Development Agency (BOM) also increasing their investment",
+        "quote_hash": "c50c09050242e878b47d6d13e23ef6d86e81d978c3983b6bc1d917964dcf91c7"
+      },
+      {
+        "source_id": "FISRC-ebc2c958d4225de5",
+        "source_url": "https://www.eu-startups.com/2026/10/eindhoven-based-photon-bridge-raises-e10-million-to-build-optical-engines-for-ai-and-telecom/",
+        "source_title": "总部位于埃因霍温的Photon Bridge融资1000万欧元，用于为AI和电信构建光引擎",
+        "source_content_hash": "92bfdf8610588d07e19a47d652ecc0a36477d6e888f09713ed91499912af525b",
+        "quote": "existing investors Innovation Industries, Faber, and Brabant Development Agency (BOM) also increased their investment",
+        "quote_hash": "03799fd3c28d91708c46e07288bf9487b2e145ccb0804008cc8436c56f873f90"
+      },
       {
         "source_id": "FISRC-6cbfc1ea08a48a66",
         "source_url": "https://www.cls.cn/detail/2484090",
@@ -189,6 +345,14 @@
         "source_content_hash": "d1a88dde81a4f0d1",
         "quote": "funding round led by Innovation Industries",
         "quote_hash": "c123597dbdaf1d4d19e9dd4ce9d8cbee89fb1a9eea6a544695ba7e516c063989"
+      },
+      {
+        "source_id": "FISRC-ebc2c958d4225de5",
+        "source_url": "https://www.eu-startups.com/2026/10/eindhoven-based-photon-bridge-raises-e10-million-to-build-optical-engines-for-ai-and-telecom/",
+        "source_title": "总部位于埃因霍温的Photon Bridge融资1000万欧元，用于为AI和电信构建光引擎",
+        "source_content_hash": "92bfdf8610588d07e19a47d652ecc0a36477d6e888f09713ed91499912af525b",
+        "quote": "In January 2025, the company announced it had secured a €4.75 million Seed round led by Innovation Industries.",
+        "quote_hash": "b4585d215f502dbc3a106241ca5e41637f115682b65af04dae501370129798d7"
       }
     ],
     "public_profile": {
@@ -216,8 +380,8 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Euclyd · A轮 · 2026-09-15 · 本轮联合领投 · 2亿欧元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6cbfc1ea08a48a66"
+          "description": "融资来源记录：Photon Bridge · 轮次未披露 · 2026-10-21 · 本轮参投 · €10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-993e94c7f3d2724a"
         }
       ],
       "profile_type": "organization",
@@ -247,12 +411,28 @@
           "quote_hash": "031d070b01626bf69ba1b9517a847295cf4856548656145639e4fded336c2581"
         },
         {
-          "source_id": "FISRC-6cbfc1ea08a48a66",
-          "source_url": "https://www.cls.cn/detail/2484090",
-          "source_title": "三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元融资",
-          "source_content_hash": "9676197117c46240",
-          "quote": "三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投",
-          "quote_hash": "05040103b8eb124e57e50a7a08bd5189f9de6a169757e0c2708bfb3ebf04d7f2"
+          "source_id": "FISRC-993e94c7f3d2724a",
+          "source_url": "https://tech.eu/2026/10/21/dutch-photonics-startup-photon-bridge-raises-eur10m-to-tackle-ais-looming-laser-bottleneck/",
+          "source_title": "荷兰光子学初创公司Photon Bridge融资1000万欧元，以解决AI日益逼近的激光瓶颈",
+          "source_content_hash": "84793159f5b6ff28deb8da22395ab17211e3119b62d8a3320ee8057c75a2e113",
+          "quote": "with existing investors Innovation Industries, Faber, and Brabant Development Agency (BOM) also increasing their investment",
+          "quote_hash": "c50c09050242e878b47d6d13e23ef6d86e81d978c3983b6bc1d917964dcf91c7"
+        },
+        {
+          "source_id": "FISRC-671b24b335194533",
+          "source_url": "https://compoundsemiconductor.net/article/125671/Photon_Bridge_raises_%E2%82%AC10M_to_tackle_AI%E2%80%99s_laser_bottleneck",
+          "source_title": "Photon Bridge raises €10M to tackle AI’s laser bottleneck - Compound Semiconductor News",
+          "source_content_hash": "9972b0634f9623e6",
+          "quote": "with existing investors Innovation Industries, Faber, and Brabant Development Agency (BOM) also increasing their investment",
+          "quote_hash": "c50c09050242e878b47d6d13e23ef6d86e81d978c3983b6bc1d917964dcf91c7"
+        },
+        {
+          "source_id": "FISRC-ebc2c958d4225de5",
+          "source_url": "https://www.eu-startups.com/2026/10/eindhoven-based-photon-bridge-raises-e10-million-to-build-optical-engines-for-ai-and-telecom/",
+          "source_title": "总部位于埃因霍温的Photon Bridge融资1000万欧元，用于为AI和电信构建光引擎",
+          "source_content_hash": "92bfdf8610588d07e19a47d652ecc0a36477d6e888f09713ed91499912af525b",
+          "quote": "existing investors Innovation Industries, Faber, and Brabant Development Agency (BOM) also increased their investment",
+          "quote_hash": "03799fd3c28d91708c46e07288bf9487b2e145ccb0804008cc8436c56f873f90"
         }
       ],
       "last_verified_at": "2026-10-03"

@@ -33531,7 +33531,505 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-21T05:33:07.522Z"
+    },
+    "EV-93f13acd37600d5d": {
+      "id": "EV-93f13acd37600d5d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "finance-hr",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "Rulen 提供自动化税务与会计工作流的 AI 运营平台，属企业财务职能软件。",
+      "input_hash": "88b54b7ba5e5c7c66212a75f1d02648739d8d65714924e7376b25f8c50938ab1",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-386b12ff6d78515b",
+          "quote": "Rulen develops an AI operating platform designed to automate tax and accounting workflows."
+        },
+        {
+          "source_id": "FISRC-4194082613d70b33",
+          "quote": "Rulen's platform integrates with existing software and third-party systems, including the Italian Revenue Agency's online taxpayer records (Cassetto Fiscale)."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-22T05:43:00.769Z"
+    },
+    "EV-fd1294db2784991c": {
+      "id": "EV-fd1294db2784991c",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        4
+      ],
+      "rationale": "Photon Bridge 为 AI 数据中心服务器互联提供多波长激光光源，属算力基础设施光互连器件。",
+      "input_hash": "0022406a0402f68c426a310e122db493fef95028a5115baafebfdb3f6045bf49",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ebc2c958d4225de5",
+          "quote": "Photon Bridge (formerly Photon IP), an Eindhoven-based startup building optical engines for AI and telecom"
+        },
+        {
+          "source_id": "FISRC-435c8fb0801f3213",
+          "quote": "Photon Bridge’s product is a compact tunable laser designed to meet the growing demand for faster and more efficient connections between servers in AI datacenters."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-22T05:43:00.769Z"
+    },
+    "EV-07911ca790bdfc5a": {
+      "id": "EV-07911ca790bdfc5a",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "legal",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        3
+      ],
+      "rationale": "Legora 面向律师提供研究、审阅与起草的智能体法律工作空间。",
+      "input_hash": "7883b437143eedf6017b5e7158a6c934aae38d81840308df2a8710dbe8d0350b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c4c53e6f607010be",
+          "quote": "Legora, the agentic operating system for legal professionals"
+        },
+        {
+          "source_id": "FISRC-7e527e219a6701a1",
+          "quote": "Legora operates as an AI workspace for lawyers built around four integrated modules"
+        },
+        {
+          "source_id": "FISRC-a4a6fcc88f9aade2",
+          "quote": "supporting lawyers in research, review, and drafting across complex matters"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-22T05:43:00.769Z"
+    },
+    "EV-9dbf7a6b84a4aa21": {
+      "id": "EV-9dbf7a6b84a4aa21",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "compute",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "华瑞指数云以 KV Cache 存储与统一存储底座服务 AI 推理场景，属算力基础设施。",
+      "input_hash": "3a22951e5796b35bf2f3bce1a70c911f92017fa209addde9072bf626b4bf3fbc",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e44d32bfb6e73d83",
+          "quote": "WQS围绕KV Cache的复用、共享与调度设计，减少重复计算及数据搬运，让更多算力用于有效的Token生成。"
+        },
+        {
+          "source_id": "FISRC-4500eb8b2a3ab43a",
+          "quote": "华瑞指数云WQS是一款以“解决KV Cache内存墙问题”为核心的分布式KV存储系统，核心定位为AI推理场景的专用上下文存储层"
+        },
+        {
+          "source_id": "FISRC-e44d32bfb6e73d83",
+          "quote": "在WQS 之外，华瑞指数云以 Universal Storage 理念构建统一存储底座 WADP，涵盖高性能分布式块存储 WDS、并行文件存储 WFS 等核心子产品，已在 200 余家客户的核心生产环境中运行。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-22T05:43:00.769Z"
+    },
+    "EV-fe4e2cdf3f2a5075": {
+      "id": "EV-fe4e2cdf3f2a5075",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "ai-service",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "柏垠生物以 AI 原生平台驱动合成生物材料分子设计与筛选，属生命科学材料研发。",
+      "input_hash": "da1bdd4404eca76c4dc2e34823d5a421207555eae0ce67935686f6986da8d395",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0c943fb83023b15a",
+          "quote": "是一家以合成生物学与人工智能技术为核心驱动力的创新生物材料公司"
+        },
+        {
+          "source_id": "FISRC-c853fbb5ce244b00",
+          "quote": "柏垠生物将进一步升级AI原生生物材料研发平台(AI-Native Biomaterials R&D Platform)，结合人工智能驱动的虚拟实验室和高度自动化的智能物理实验室实现端到端的候选分子设计、筛选及功能研究的闭环迭代"
+        },
+        {
+          "source_id": "FISRC-c853fbb5ce244b00",
+          "quote": "目前已布局重组贻贝粘蛋白、Colamin等产品及创新分子，并持续推进其在美妆、医疗健康、营养等领域的应用开发与产业化"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-22T05:43:00.769Z"
+    },
+    "EV-a68bb74a987a8df4": {
+      "id": "EV-a68bb74a987a8df4",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "ai-service",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "AuxoAI 以前沿部署专家与 Damia 工具包为企业构建生产级 AI 工作流，属企业业务流程服务。",
+      "input_hash": "52340b5dabdde5848533a7fe9980a3cc5613a50fa2a1bd4c5ab1aff23fb7d961",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1c9f908762bf51c9",
+          "quote": "At the center of AuxoAI's approach are Forward Deployed Experts, a combination of Forward Deployed Strategists and Engineers who work alongside the customer's business to understand how work actually happens, capture enterprise context, identify ways to reimagine work, and build production AI that gets used."
+        },
+        {
+          "source_id": "FISRC-1c9f908762bf51c9",
+          "quote": "AuxoAI accelerates time to value with its proprietary FDE Workbench, Damia, which has codified intelligence for several enterprise AI deployments."
+        },
+        {
+          "source_id": "FISRC-6203fb6e4bf73a2a",
+          "quote": "At the core of the company’s platform is Damia, which the company describes as an FDE Workbench, or “forward-deployed engineer” toolkit that also transforms data into applications and licenses for customers."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-22T05:43:00.769Z"
+    },
+    "EV-cc12b6b21485b692": {
+      "id": "EV-cc12b6b21485b692",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "commerce",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Opply 为快消品牌提供 AI 代理驱动的原料采购与供应链执行平台，属电商零售与供应链行业软件。",
+      "input_hash": "f40f3595d21c71c885760e502eb00c69923cdb7ead4365d70ff642e4d3fa3c0f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-2ca21eb263dc4078",
+          "quote": "Opply, a company developing an AI-powered operating platform for consumer packaged goods (CPG) brands"
+        },
+        {
+          "source_id": "FISRC-936af7ecf71c7a4c",
+          "quote": "Its platform, Opply Brain, combines AI agents, proprietary data and a supplier network to execute tasks across the supply chain, from supplier negotiations to deliveries."
+        },
+        {
+          "source_id": "FISRC-86f3241a3c3aff0f",
+          "quote": "The agents locate suppliers, place and monitor purchase orders, verify compliance documents, and pay suppliers on the brands’ behalf."
+        },
+        {
+          "source_id": "FISRC-777e4ac3289a7ae7",
+          "quote": "Opply is an ingredient ordering platform that helps F&B brands source, manage and streamline their ingredient and packaging orders."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-22T05:43:00.901Z"
+    },
+    "EV-cd3cf94d0f65aea1": {
+      "id": "EV-cd3cf94d0f65aea1",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        5
+      ],
+      "rationale": "Flapping Airplanes 是研究数据高效训练范式与 megakernel 框架的 AI 研究实验室，主营基础模型训练技术。",
+      "input_hash": "f74d4271b43495bce05ec2493335af95c25f070bfe2e2724876b01e142bbf4cb",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-63c3030bd2abb92e",
+          "quote": "Flapping Airplanes is an AI research lab advancing data-efficient models and novel learning paradigms to reduce reliance on large-scale datasets and compute."
+        },
+        {
+          "source_id": "FISRC-d40817bd8696706a",
+          "quote": "the world’s most complete megakernel framework. It can perform entire training runs, serve inference, play video games, and even do all three simultaneously in a single kernel."
+        },
+        {
+          "source_id": "FISRC-d40817bd8696706a",
+          "quote": "a mission to find ways to train large models with less data"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-22T05:43:00.901Z"
+    },
+    "EV-6ff06b92efd20922": {
+      "id": "EV-6ff06b92efd20922",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "finance-hr",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Plinto 提供叠加于 ERP 与银行系统的 AI 代理实时财务管控，属企业财务职能软件。",
+      "input_hash": "e59d01810262fcdec91b5e5bb48c8c50b52f396d8e0b57300dab10b4334c74f5",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-00eb2c0889cb9aa5",
+          "quote": "Plinto, a Copenhagen-based startup building AI for real-time financial controlling"
+        },
+        {
+          "source_id": "FISRC-66233dcfc9782a81",
+          "quote": "Plinto sells AI agents that sit on top of a company’s existing ERP, banking, document and collaboration tools and verify transactions continuously against contracts, budgets and internal rules."
+        },
+        {
+          "source_id": "FISRC-11cd2eca8330e81b",
+          "quote": "Plinto's agents manage transactions from start to finish."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-22T05:43:00.901Z"
+    },
+    "EV-1d2917d03e728ae3": {
+      "id": "EV-1d2917d03e728ae3",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "commerce",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Jenz 面向电商零售团队整合店铺系统并自动化后台流程，属零售电商行业软件。",
+      "input_hash": "84620446df339352fa8521ee6daca6640162a90a49ed9e2ced871f023b920160",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-780e922134598574",
+          "quote": "Jenz builds an AI platform for ecommerce and retail teams that connects their store systems and automates the routine back-office work they need to run their business."
+        },
+        {
+          "source_id": "FISRC-01eb801f31065932",
+          "quote": "Jenz is an AI coworker for e-commerce teams, accessible via Slack. It can retrieve store data, run analysis, generate reports and files, write and execute code, build small web applications, and automate recurring workflows."
+        },
+        {
+          "source_id": "FISRC-780e922134598574",
+          "quote": "Retailers keep key information in separate webshop, POS, inventory, accounting and marketing systems, and Jenz’s common data layer lets an AI agent analyze that information and handle routine work while asking for approval before actions that spend money."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-22T05:43:00.901Z"
+    },
+    "EV-d42d931b1be325de": {
+      "id": "EV-d42d931b1be325de",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "mobility",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "YGO 为旅游企业构建连接航司酒店的 AI 编排与搜索预订基础设施，属交通旅游行业软件。",
+      "input_hash": "6aae3248dcba283976e7b3fca72955f325a5734c899bd4e06e7a298a01a7a4e0",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-085eb5a3df4bad2e",
+          "quote": "YGO, a company developing an AI-powered platform connecting travel companies with airlines, hotels and tour operators"
+        },
+        {
+          "source_id": "FISRC-c878fb5affb919e7",
+          "quote": "YGO is building the AI infrastructure for the travel industry"
+        },
+        {
+          "source_id": "FISRC-c878fb5affb919e7",
+          "quote": "YGO enables semantic search, personalized recommendations, automated customer service and booking"
+        },
+        {
+          "source_id": "FISRC-c878fb5affb919e7",
+          "quote": "YGO enriches and structures fragmented hotel and product information so AI can reliably understand what travel companies have to offer"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-22T05:43:00.901Z"
+    },
+    "EV-2b59da3844e5fc18": {
+      "id": "EV-2b59da3844e5fc18",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Photon Bridge 提供多激光复用光源用于连接大规模 AI 处理器集群，属算力基础设施光互连器件。",
+      "input_hash": "e5995a1855f8efbf37d0bc6081aeca3435703750806c345c1bb0169a3e0b754f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-671b24b335194533",
+          "quote": "Dutch photonics startup is combining InP laser sources to connect large clusters of AI processors"
+        },
+        {
+          "source_id": "FISRC-671b24b335194533",
+          "quote": "Photon Bridge combines light from multiple lower-power semiconductor lasers to deliver the optical power and wavelength density required by increasingly large AI systems, while enabling high-volume manufacturing across multiple InP foundries."
+        },
+        {
+          "source_id": "FISRC-671b24b335194533",
+          "quote": "The platform is designed to deliver high wavelength counts with up to 40 mW of optical power per wavelength per fibre, while enabling production across multiple InP foundries."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-22T05:43:00.901Z"
+    },
+    "EV-95b8b70ca29ab623": {
+      "id": "EV-95b8b70ca29ab623",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-coding",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "Blacksmith 提供面向工程团队的 CI 平台与修复失败检查的 AI 智能体，属于 AI 编程与软件研发开发平台。",
+      "input_hash": "078719504553c83ef2405e05abf33625e94f6edcd0ad21c9a6283d5e69b69a99",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5f7eaed02b669920",
+          "quote": "Blacksmith, a platform that helps companies more efficiently build and test software, including code written by AI"
+        },
+        {
+          "source_id": "FISRC-0b9a2de412bfecea",
+          "quote": "La startup vende infraestructura para continuous integration (CI)"
+        },
+        {
+          "source_id": "FISRC-5f7eaed02b669920",
+          "quote": "continuous integration (CI) — the process of building, testing, merging, and validating code changes"
+        },
+        {
+          "source_id": "FISRC-0b9a2de412bfecea",
+          "quote": "el lanzamiento de Codesmith, su agente que diagnostica y corrige chequeos fallidos"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-22T05:43:03.281Z"
+    },
+    "EV-d9131693fbf97ab0": {
+      "id": "EV-d9131693fbf97ab0",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "新石器主营 L4 自动驾驶无人配送车本体及车载自动驾驶系统，属于具身智能/机器人本体业务。",
+      "input_hash": "47aee0482206724043e2de92c332c9451a59de3a3bf244e72ab81a25fcf1a347",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-32f59af3bae42e81",
+          "quote": "自动驾驶科技公司新石器（Neolix）宣布正式完成近4亿美元新一轮融资"
+        },
+        {
+          "source_id": "FISRC-b6390aa0c4cc68e2",
+          "quote": "X3机动车道50km/h行驶能力，X6机动车道60km/h行驶能力"
+        },
+        {
+          "source_id": "FISRC-b6390aa0c4cc68e2",
+          "quote": "X3单次装载 400-500 件，X6单次装载 800-1000 件"
+        },
+        {
+          "source_id": "FISRC-79ef09618a9f3b3f",
+          "quote": "公司自主研发L4 自动驾驶系统 Neolix-Pilot 与行业首个上车车端自动驾驶模型 Neolix-VA，运转 \"运营 - 数据 - 算法\" 数据飞轮。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-22T05:43:03.281Z"
     }
   },
-  "generated_at": "2026-10-21T05:33:07.522Z"
+  "generated_at": "2026-10-22T05:43:03.281Z"
 }

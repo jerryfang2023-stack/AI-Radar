@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-05-08",
-    "latest_disclosed_at": "2026-05-08",
+    "latest_disclosed_at": "2026-10-22",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "angel"
+      "angel",
+      "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-48901d83aaf2d3df",
+        "canonical_entity_id": "",
+        "name": "柏垠生物"
+      },
       {
         "entity_id": "EN-cecdd8369134f75e",
         "canonical_entity_id": "EN-cecdd8369134f75e",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a990fa72aabad484",
+        "funding_insight_id": "FI-35003d4e229c95f9",
+        "event_ids": [
+          "EV-fe4e2cdf3f2a5075"
+        ],
+        "company_entity_id": "EN-48901d83aaf2d3df",
+        "company_canonical_entity_id": "",
+        "company_name": "柏垠生物",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "超2亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": 200000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 2 亿元"
+        },
+        "announced_at": "2026-10-22",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c853fbb5ce244b00",
+            "source_url": "https://news.pedaily.cn/202610/570645.shtml",
+            "source_title": "创新AI原生生物材料企业柏垠生物完成超2亿元A轮系列融资",
+            "source_content_hash": "16f5e7a14cc87e79d3f91a0541c233abad021af94a1ac47b1978934d4327fdbd",
+            "quote": "富华资本、基石资本、星博生辉、君科丹木共同参与",
+            "quote_hash": "eab977988a4b7a9efe4a684489f342eb427f8a1f9e22b82d636e86d34c41b4d8"
+          }
+        ]
+      },
       {
         "activity_id": "IA-357eba0e0826bc36",
         "funding_insight_id": "FI-f15f358f13811b9e",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c853fbb5ce244b00",
+        "source_url": "https://news.pedaily.cn/202610/570645.shtml",
+        "source_title": "创新AI原生生物材料企业柏垠生物完成超2亿元A轮系列融资",
+        "source_content_hash": "16f5e7a14cc87e79d3f91a0541c233abad021af94a1ac47b1978934d4327fdbd",
+        "quote": "富华资本、基石资本、星博生辉、君科丹木共同参与",
+        "quote_hash": "eab977988a4b7a9efe4a684489f342eb427f8a1f9e22b82d636e86d34c41b4d8"
+      },
+      {
         "source_id": "FISRC-ceee1629da3e3cce",
         "source_url": "https://news.pedaily.cn/202605/563553.shtml",
         "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
@@ -157,6 +211,10 @@
           "source_id": "B31-FUHUA-RONGXIN"
         },
         {
+          "description": "融资来源记录：柏垠生物 · A轮 · 2026-10-22 · 本轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c853fbb5ce244b00"
+        },
+        {
           "description": "融资来源记录：容芯致远 · 天使轮 · 2026-05-08 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ceee1629da3e3cce"
         }
@@ -178,6 +236,14 @@
           "source_content_hash": "29dcd08b2c1e67ab1702a6941deedb5e705d37f6240d44a71a254f7c793a89fd",
           "quote": "顺禧基金、富华资本、万利达集团、长江创新投、水木清华校友基金、梅花创投等跟投。",
           "quote_hash": "c3d6ab71cae9a40182cd9479167a934868b9b52d44a5e57accce697660bdbc27"
+        },
+        {
+          "source_id": "FISRC-c853fbb5ce244b00",
+          "source_url": "https://news.pedaily.cn/202610/570645.shtml",
+          "source_title": "创新AI原生生物材料企业柏垠生物完成超2亿元A轮系列融资",
+          "source_content_hash": "16f5e7a14cc87e79d3f91a0541c233abad021af94a1ac47b1978934d4327fdbd",
+          "quote": "富华资本、基石资本、星博生辉、君科丹木共同参与",
+          "quote_hash": "eab977988a4b7a9efe4a684489f342eb427f8a1f9e22b82d636e86d34c41b4d8"
         },
         {
           "source_id": "FISRC-ceee1629da3e3cce",

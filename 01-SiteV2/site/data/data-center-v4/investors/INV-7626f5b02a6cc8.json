@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -55,26 +55,28 @@
   "institution": {
     "id": "INV-7626f5b02a6cc8",
     "name": "Insight Partners",
-    "aliases": [],
+    "aliases": [
+      "Insight Venture Partners"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "investment_institution",
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 14,
+    "current_round_count": 15,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 12,
+    "portfolio_company_count": 13,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-05-06",
-    "latest_disclosed_at": "2026-10-07",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "historical_or_ambiguous": 3,
       "lead": 6,
-      "participant": 8
+      "participant": 9
     },
     "round_codes": [
       "other",
@@ -118,6 +120,11 @@
         "name": "InstaLILY AI"
       },
       {
+        "entity_id": "EN-22dc02488a037639",
+        "canonical_entity_id": "",
+        "name": "Legora"
+      },
+      {
         "entity_id": "EN-0aa3069e184a3bce",
         "canonical_entity_id": "",
         "name": "Metaview"
@@ -149,6 +156,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ae6af805f5280c3b",
+        "funding_insight_id": "FI-b875723282f11479",
+        "event_ids": [
+          "EV-07911ca790bdfc5a"
+        ],
+        "company_entity_id": "EN-22dc02488a037639",
+        "company_canonical_entity_id": "",
+        "company_name": "Legora",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "€489 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 489000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4.89 亿欧元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c4c53e6f607010be",
+            "source_url": "https://legora.com/blog/series-e",
+            "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+            "source_content_hash": "f3c7efce8da1beb6",
+            "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
+            "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f4468878d0f6c743",
         "funding_insight_id": "FI-acb537031ece1db8",
@@ -819,6 +866,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c4c53e6f607010be",
+        "source_url": "https://legora.com/blog/series-e",
+        "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+        "source_content_hash": "f3c7efce8da1beb6",
+        "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
+        "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+      },
+      {
         "source_id": "FISRC-9c9f77e874c57759",
         "source_url": "https://www.unite.ai/zh-cn/stuut-52-5m-series-b-ai-order-to-cash/",
         "source_title": "Stuut 获得 $52.5M B 轮融资，以扩展 AI 代理在订单到收款全流程中的应用",
@@ -1004,16 +1059,16 @@
           "source_id": "insight_media"
         },
         {
+          "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4c53e6f607010be"
+        },
+        {
           "description": "融资来源记录：Stuut · B轮 · 2026-10-07 · 本轮领投 · $52.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9c9f77e874c57759"
         },
         {
           "description": "融资来源记录：Metaview · C轮 · 2026-10-01 · 本轮领投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-62e06e29d2d7be04"
-        },
-        {
-          "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮领投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-16afc5791c45315a"
         }
       ],
       "contacts": [
@@ -1071,6 +1126,14 @@
           "quote_hash": "5384858027688c8f977287dfc08a527d40044033e1bf6d0114bdb609ec48472a"
         },
         {
+          "source_id": "FISRC-c4c53e6f607010be",
+          "source_url": "https://legora.com/blog/series-e",
+          "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+          "source_content_hash": "f3c7efce8da1beb6",
+          "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
+          "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+        },
+        {
           "source_id": "FISRC-9c9f77e874c57759",
           "source_url": "https://www.unite.ai/zh-cn/stuut-52-5m-series-b-ai-order-to-cash/",
           "source_title": "Stuut 获得 $52.5M B 轮融资，以扩展 AI 代理在订单到收款全流程中的应用",
@@ -1085,14 +1148,6 @@
           "source_content_hash": "ba1a5b65bf914bb75a72ed976def420590dbbb69a4197105c1b64ddc982eadfe",
           "quote": "The funding round was led by Insight Partners",
           "quote_hash": "af6e5688857c42bcf8680a735df5157bbf3b10fdf6d60e4a7b4d1cec2d61b172"
-        },
-        {
-          "source_id": "FISRC-16afc5791c45315a",
-          "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
-          "source_title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
-          "source_content_hash": "ad04baf1994708d0",
-          "quote": "The new round, which was led by Insight Partners and S32, valued the seven-year-old startup at nearly triple the $1.3 billion valuation it garnered when it raised $100 million in a Series D 17 months ago.",
-          "quote_hash": "570f3d38da98c770ed63b46c303f26eed84498a651974861af1f95116d94e3a2"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1103,7 +1158,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[14].role": {
+        "activities[15].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

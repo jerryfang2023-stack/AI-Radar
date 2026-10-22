@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-07-01",
     "latest_disclosed_at": "2026-07-01",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -125,6 +126,38 @@
             "quote_hash": "99b67ba060973f701f51587964af955995f6615579746bc14cbe4a1cdccc04b8"
           }
         ]
+      },
+      {
+        "activity_id": "IA-bc53f02de29e0b75",
+        "funding_insight_id": "FI-b875723282f11479",
+        "event_ids": [
+          "EV-07911ca790bdfc5a"
+        ],
+        "company_entity_id": "EN-22dc02488a037639",
+        "company_canonical_entity_id": "",
+        "company_name": "Legora",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series D extension 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7e527e219a6701a1",
+            "source_url": "https://sacra.com/c/legora/",
+            "source_title": "Legora revenue, valuation & funding",
+            "source_content_hash": "5271ff9b31989ef7",
+            "quote": "New investors joining the extension included Atlassian, NVentures (Nvidia's venture arm), Airtree, Barclays, Geodesic, Insight, Liberty Global, and Nikesh Arora",
+            "quote_hash": "45e9b679e248c64ca4a6f3900bb5011c6c6f5e274d07b09f7ea90273f5a597b0"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -135,6 +168,14 @@
         "source_content_hash": "458ee8ff3e8d5ff41a8e17f5ed67badb7598d15dddac9f914e564d6daca98cd7",
         "quote": "Series C funding of $800 million from an incredible group of investors including Aramco Ventures, NVIDIA, Vista Equity, General Catalyst, Emergence Capital, SE Ventures, Pegatron, Salesforce Ventures, March Capital, DTCP Growth, Lux Capital, Geodesic, PSP Partners, and others.",
         "quote_hash": "99b67ba060973f701f51587964af955995f6615579746bc14cbe4a1cdccc04b8"
+      },
+      {
+        "source_id": "FISRC-7e527e219a6701a1",
+        "source_url": "https://sacra.com/c/legora/",
+        "source_title": "Legora revenue, valuation & funding",
+        "source_content_hash": "5271ff9b31989ef7",
+        "quote": "New investors joining the extension included Atlassian, NVentures (Nvidia's venture arm), Airtree, Barclays, Geodesic, Insight, Liberty Global, and Nikesh Arora",
+        "quote_hash": "45e9b679e248c64ca4a6f3900bb5011c6c6f5e274d07b09f7ea90273f5a597b0"
       }
     ],
     "public_profile": {
@@ -166,6 +207,10 @@
         {
           "description": "融资来源记录：Together AI · C轮 · 2026-07-01 · 本轮参投 · $800M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c76c0a4ea6adedb7"
+        },
+        {
+          "description": "融资来源记录：Legora · 历史轮次未披露 · Series D extension 参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7e527e219a6701a1"
         }
       ],
       "contacts": [
@@ -201,12 +246,28 @@
           "source_content_hash": "458ee8ff3e8d5ff41a8e17f5ed67badb7598d15dddac9f914e564d6daca98cd7",
           "quote": "Series C funding of $800 million from an incredible group of investors including Aramco Ventures, NVIDIA, Vista Equity, General Catalyst, Emergence Capital, SE Ventures, Pegatron, Salesforce Ventures, March Capital, DTCP Growth, Lux Capital, Geodesic, PSP Partners, and others.",
           "quote_hash": "99b67ba060973f701f51587964af955995f6615579746bc14cbe4a1cdccc04b8"
+        },
+        {
+          "source_id": "FISRC-7e527e219a6701a1",
+          "source_url": "https://sacra.com/c/legora/",
+          "source_title": "Legora revenue, valuation & funding",
+          "source_content_hash": "5271ff9b31989ef7",
+          "quote": "New investors joining the extension included Atlassian, NVentures (Nvidia's venture arm), Airtree, Barclays, Geodesic, Insight, Liberty Global, and Nikesh Arora",
+          "quote_hash": "45e9b679e248c64ca4a6f3900bb5011c6c6f5e274d07b09f7ea90273f5a597b0"
         }
       ],
       "last_verified_at": "2026-10-05"
     },
     "translations": {
       "zh-CN": {
+        "activities[1].role": {
+          "text": "Series D extension 参投",
+          "source_hash": "e20b9a76b81491aa8ba2e1f48187b5351fcc3ee1ce70129ab6056f9739c85b03",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-22T05:42:14.855Z",
+          "status": "translated"
+        },
         "public_profile.track_record[0].description": {
           "text": "Together AI 公告将 Geodesic 列入其 Series C 投资者名单；公告公布融资额 $800m，但未披露 Geodesic 单独出资额。",
           "source_hash": "6d2b4caa2a0ed28eef21f0285b1b6239bccd3f7e06a64d0606c633bdf20e4412",

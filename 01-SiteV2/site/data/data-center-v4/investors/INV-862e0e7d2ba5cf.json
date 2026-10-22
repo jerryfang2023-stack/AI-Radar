@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,22 +63,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 29,
+    "current_round_count": 31,
     "historical_or_ambiguous_count": 13,
-    "portfolio_company_count": 24,
+    "portfolio_company_count": 26,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-09",
-    "latest_disclosed_at": "2026-10-09",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "co_lead": 3,
       "historical_or_ambiguous": 13,
-      "lead": 12,
+      "lead": 13,
       "other_current_round": 1,
-      "participant": 13
+      "participant": 14
     },
     "round_codes": [
       "multi_round",
@@ -108,6 +108,11 @@
         "entity_id": "EN-ae3d8efc01c7627d",
         "canonical_entity_id": "",
         "name": "Astrocade"
+      },
+      {
+        "entity_id": "EN-fa64e74622d0a95a",
+        "canonical_entity_id": "",
+        "name": "Blacksmith"
       },
       {
         "entity_id": "EN-522656609ff15589",
@@ -143,6 +148,11 @@
         "entity_id": "EN-06c8aaa93d80a768",
         "canonical_entity_id": "",
         "name": "Factory"
+      },
+      {
+        "entity_id": "EN-c9bd40e58364720b",
+        "canonical_entity_id": "",
+        "name": "Flapping Airplanes"
       },
       {
         "entity_id": "EN-50d7f4250bdd8888",
@@ -216,6 +226,94 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-7844b534f40e5cab",
+        "funding_insight_id": "FI-29972434b39dd262",
+        "event_ids": [
+          "EV-95b8b70ca29ab623"
+        ],
+        "company_entity_id": "EN-fa64e74622d0a95a",
+        "company_canonical_entity_id": "",
+        "company_name": "Blacksmith",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$66 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 66000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6600 万美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-5f7eaed02b669920",
+            "source_url": "https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/",
+            "source_title": "Blacksmith 在 Sequoia 领投 C 轮融资后达到独角兽估值",
+            "source_content_hash": "4973cf3bc31640caadbb8ff770a32f12a4324ec7e02e464a9a06d1fcb32dc4f7",
+            "quote": "a $66 million Series C funding round led by Sequoia",
+            "quote_hash": "b1dd4e17bd4d7fa1eab1b54ef64248489b226e0df91e8cc567be12ab3684aabf"
+          },
+          {
+            "source_id": "FISRC-0b9a2de412bfecea",
+            "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
+            "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
+            "source_content_hash": "b097b8e1cde199ce",
+            "quote": "Serie C de US$66 millones liderada por Sequoia Capital",
+            "quote_hash": "a25971a623a948f50c6842d50263e65a8e541c335e6fced94fc14ab433aa49ce"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b5cd1c64e541c0d5",
+        "funding_insight_id": "FI-f6024633a1bff4e3",
+        "event_ids": [
+          "EV-cd3cf94d0f65aea1"
+        ],
+        "company_entity_id": "EN-c9bd40e58364720b",
+        "company_canonical_entity_id": "",
+        "company_name": "Flapping Airplanes",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$1B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d40817bd8696706a",
+            "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+            "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+            "source_content_hash": "52d288f9f7f1c202",
+            "quote": "Other participants in the new round included earlier backers Sequoia, GV, and Kleiner Perkins.",
+            "quote_hash": "7cd08033c748194750d851104567a0f7f2723955079dcda7e05f9131dae3bc43"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6875bc55e4bdc8cc",
         "funding_insight_id": "FI-926f1aad1390b44a",
@@ -1815,6 +1913,30 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-5f7eaed02b669920",
+        "source_url": "https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/",
+        "source_title": "Blacksmith 在 Sequoia 领投 C 轮融资后达到独角兽估值",
+        "source_content_hash": "4973cf3bc31640caadbb8ff770a32f12a4324ec7e02e464a9a06d1fcb32dc4f7",
+        "quote": "a $66 million Series C funding round led by Sequoia",
+        "quote_hash": "b1dd4e17bd4d7fa1eab1b54ef64248489b226e0df91e8cc567be12ab3684aabf"
+      },
+      {
+        "source_id": "FISRC-0b9a2de412bfecea",
+        "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
+        "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
+        "source_content_hash": "b097b8e1cde199ce",
+        "quote": "Serie C de US$66 millones liderada por Sequoia Capital",
+        "quote_hash": "a25971a623a948f50c6842d50263e65a8e541c335e6fced94fc14ab433aa49ce"
+      },
+      {
+        "source_id": "FISRC-d40817bd8696706a",
+        "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+        "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+        "source_content_hash": "52d288f9f7f1c202",
+        "quote": "Other participants in the new round included earlier backers Sequoia, GV, and Kleiner Perkins.",
+        "quote_hash": "7cd08033c748194750d851104567a0f7f2723955079dcda7e05f9131dae3bc43"
+      },
+      {
         "source_id": "FISRC-e4334f02f2e76723",
         "source_url": "https://dealroom.co/news/x-2108956624966844866-typesafe-ai-raises-870m-series-a-at-a-7-5bn-valuation-three-weeks-after/",
         "source_title": "TypeSafe AI raises $870m Series A at a $7.5bn valuation, three weeks after its $40m seed",
@@ -2202,16 +2324,12 @@
           "source_id": "sequoia_history"
         },
         {
-          "description": "融资来源记录：TypeSafe AI · A轮 · 2026-10-09 · 本轮参投 · 约 8.7 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e4334f02f2e76723"
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮领投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5f7eaed02b669920"
         },
         {
-          "description": "融资来源记录：Healthleap · 多轮融资 · 2026-10-07 · 本轮联合领投 · $38 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-576f8703e59d7c0a"
-        },
-        {
-          "description": "融资来源记录：Flow Engineering · B轮 · 2026-09-30 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-131c3b05243369a2"
+          "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d40817bd8696706a"
         }
       ],
       "contacts": [
@@ -2241,28 +2359,28 @@
           "quote_hash": "4a2f68c042b10690a950656cdd8c8d78ddbacadab8cdf2e8a4566b83347cc5ac"
         },
         {
-          "source_id": "FISRC-e4334f02f2e76723",
-          "source_url": "https://dealroom.co/news/x-2108956624966844866-typesafe-ai-raises-870m-series-a-at-a-7-5bn-valuation-three-weeks-after/",
-          "source_title": "TypeSafe AI raises $870m Series A at a $7.5bn valuation, three weeks after its $40m seed",
-          "source_content_hash": "30d0b165361bbd3e",
-          "quote": "a16z led, with Sequoia Capital, existing investor DCVC and angel investors participating, and a16z general partner Martin Casado is joining the board.",
-          "quote_hash": "94524cc0862a80040298a41c9585b3281bd17f9f7c49065c69ed863830e4d5da"
+          "source_id": "FISRC-5f7eaed02b669920",
+          "source_url": "https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/",
+          "source_title": "Blacksmith 在 Sequoia 领投 C 轮融资后达到独角兽估值",
+          "source_content_hash": "4973cf3bc31640caadbb8ff770a32f12a4324ec7e02e464a9a06d1fcb32dc4f7",
+          "quote": "a $66 million Series C funding round led by Sequoia",
+          "quote_hash": "b1dd4e17bd4d7fa1eab1b54ef64248489b226e0df91e8cc567be12ab3684aabf"
         },
         {
-          "source_id": "FISRC-576f8703e59d7c0a",
-          "source_url": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
-          "source_title": "Healthleap 融资 3800 万美元，用于其可标记可能需要进一步关注的医院患者的 AI",
-          "source_content_hash": "dd3f508c26a35a9ea3719adeef20176779a1b8e6ff16bdd776eb136e375ecdf5",
-          "quote": "The financing includes an $8 million seed round co-led by Sequoia Capital and First Round Capital, and a $30 million Series A led by Hummingbird Ventures.",
-          "quote_hash": "6660ddca023debc1bb7701deb7bca612fc2833a3a829d8f27f33bd50478952c9"
+          "source_id": "FISRC-0b9a2de412bfecea",
+          "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
+          "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
+          "source_content_hash": "b097b8e1cde199ce",
+          "quote": "Serie C de US$66 millones liderada por Sequoia Capital",
+          "quote_hash": "a25971a623a948f50c6842d50263e65a8e541c335e6fced94fc14ab433aa49ce"
         },
         {
-          "source_id": "FISRC-131c3b05243369a2",
-          "source_url": "https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/",
-          "source_title": "Flow Engineering 获 5000 万美元 B 轮融资，估值 7.5 亿美元，Valar、Atreides、红杉参投",
-          "source_content_hash": "0528dfbe7386cdee",
-          "quote": "Sequoia Capital, which led Flow’s Series A round last October, also participated",
-          "quote_hash": "e85ce740033a7b86194ab9b2dc5ae4dfa9bc0a3c9888c2b3a10b46363eae4b58"
+          "source_id": "FISRC-d40817bd8696706a",
+          "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+          "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+          "source_content_hash": "52d288f9f7f1c202",
+          "quote": "Other participants in the new round included earlier backers Sequoia, GV, and Kleiner Perkins.",
+          "quote_hash": "7cd08033c748194750d851104567a0f7f2723955079dcda7e05f9131dae3bc43"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2273,7 +2391,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[29].role": {
+        "activities[31].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",
@@ -2281,7 +2399,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[31].role": {
+        "activities[33].role": {
           "text": "Series D 领投",
           "source_hash": "b1ad54c261addee1c044320cc302024b488ee22b0810e11ab5f9b281dda6d2b7",
           "provider": "deepseek",
@@ -2289,7 +2407,7 @@
           "translated_at": "2026-10-03T00:37:44.351Z",
           "status": "translated"
         },
-        "activities[33].role": {
+        "activities[35].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",
@@ -2297,7 +2415,7 @@
           "translated_at": "2026-10-01T19:38:36.584Z",
           "status": "translated"
         },
-        "activities[35].role": {
+        "activities[37].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,34 +61,40 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 14,
+    "current_round_count": 16,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 12,
+    "portfolio_company_count": 14,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2019-03",
-    "latest_disclosed_at": "2026-10-08",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "co_lead": 3,
       "historical_or_ambiguous": 3,
-      "lead": 4,
-      "participant": 7
+      "lead": 5,
+      "participant": 8
     },
     "round_codes": [
       "seed",
       "series_a",
       "series_b",
       "series_c",
-      "series_d"
+      "series_d",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-0caee180da9d0f3f",
         "canonical_entity_id": "",
         "name": "Fireworks AI Inc."
+      },
+      {
+        "entity_id": "EN-c9bd40e58364720b",
+        "canonical_entity_id": "",
+        "name": "Flapping Airplanes"
       },
       {
         "entity_id": "EN-d27608cca9b65f91",
@@ -126,6 +132,11 @@
         "name": "NewCore"
       },
       {
+        "entity_id": "EN-867d4a93b90b4039",
+        "canonical_entity_id": "",
+        "name": "Opply"
+      },
+      {
         "entity_id": "EN-ef292e56955a1c10",
         "canonical_entity_id": "",
         "name": "PointFive Inc."
@@ -147,6 +158,94 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-47f071760f6cb0c4",
+        "funding_insight_id": "FI-f6024633a1bff4e3",
+        "event_ids": [
+          "EV-cd3cf94d0f65aea1"
+        ],
+        "company_entity_id": "EN-c9bd40e58364720b",
+        "company_canonical_entity_id": "",
+        "company_name": "Flapping Airplanes",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$1B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-6ecc9e9d3c026d5a",
+            "source_url": "https://www.indexventures.com/perspectives/toward-more-efficient-ai-leading-flapping-airplanes-1b-series-a/",
+            "source_title": "迈向更高效的AI：领投Flapping Airplanes的10亿美元A轮融资",
+            "source_content_hash": "23901e3c9a1849829afc4d2b36da9e75d5e2634d69e746ef68df3d5176ab60b4",
+            "quote": "We’re thrilled to double down and lead their $1B million Series A, with Mark joining the board.",
+            "quote_hash": "d4af6c9c93786bea701f67ecb1bd340d07ba4af8df1751ab4629ca5c7eb17ef9"
+          },
+          {
+            "source_id": "FISRC-d40817bd8696706a",
+            "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+            "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+            "source_content_hash": "52d288f9f7f1c202",
+            "quote": "raised a $1 billion Series A round, co-led by Index and Lux",
+            "quote_hash": "d4fa2a110c1c7be71e816df0f04b52f2b9f2c5a142a12d3def40d601ba922143"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-dbf5a3071649decf",
+        "funding_insight_id": "FI-383f48fca9f19694",
+        "event_ids": [
+          "EV-cc12b6b21485b692"
+        ],
+        "company_entity_id": "EN-867d4a93b90b4039",
+        "company_canonical_entity_id": "",
+        "company_name": "Opply",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "$7.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 7500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "750 万美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2ca21eb263dc4078",
+            "source_url": "https://tech.eu/2026/10/21/opply-raises-75m-to-expand-its-agentic-ai-platform-for-cpg-brands/",
+            "source_title": "Opply 融资 750 万美元，以扩展面向 CPG 品牌的 AI 智能体平台",
+            "source_content_hash": "1042c65e64d982798af4c5a549d07a4fc11da7ed18278045a4a2eab91c3a67f9",
+            "quote": "has raised $7.5 million in a funding round led by Chalfen Ventures, with participation from Index Ventures, Anthemis, Entrepreneurs First, In This Together and Ventures Together",
+            "quote_hash": "c3a01fae6fa83d7f992e1ba0dd47f8dcf4b8b3a4fd8e36e46fb5117bf0363e06"
+          }
+        ]
+      },
       {
         "activity_id": "IA-289da46b451651f2",
         "funding_insight_id": "FI-a42717e5e5dfeb81",
@@ -812,6 +911,30 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-6ecc9e9d3c026d5a",
+        "source_url": "https://www.indexventures.com/perspectives/toward-more-efficient-ai-leading-flapping-airplanes-1b-series-a/",
+        "source_title": "迈向更高效的AI：领投Flapping Airplanes的10亿美元A轮融资",
+        "source_content_hash": "23901e3c9a1849829afc4d2b36da9e75d5e2634d69e746ef68df3d5176ab60b4",
+        "quote": "We’re thrilled to double down and lead their $1B million Series A, with Mark joining the board.",
+        "quote_hash": "d4af6c9c93786bea701f67ecb1bd340d07ba4af8df1751ab4629ca5c7eb17ef9"
+      },
+      {
+        "source_id": "FISRC-d40817bd8696706a",
+        "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+        "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+        "source_content_hash": "52d288f9f7f1c202",
+        "quote": "raised a $1 billion Series A round, co-led by Index and Lux",
+        "quote_hash": "d4fa2a110c1c7be71e816df0f04b52f2b9f2c5a142a12d3def40d601ba922143"
+      },
+      {
+        "source_id": "FISRC-2ca21eb263dc4078",
+        "source_url": "https://tech.eu/2026/10/21/opply-raises-75m-to-expand-its-agentic-ai-platform-for-cpg-brands/",
+        "source_title": "Opply 融资 750 万美元，以扩展面向 CPG 品牌的 AI 智能体平台",
+        "source_content_hash": "1042c65e64d982798af4c5a549d07a4fc11da7ed18278045a4a2eab91c3a67f9",
+        "quote": "has raised $7.5 million in a funding round led by Chalfen Ventures, with participation from Index Ventures, Anthemis, Entrepreneurs First, In This Together and Ventures Together",
+        "quote_hash": "c3a01fae6fa83d7f992e1ba0dd47f8dcf4b8b3a4fd8e36e46fb5117bf0363e06"
+      },
+      {
         "source_id": "FISRC-8c0d1c03dad4f31e",
         "source_url": "https://m.economictimes.com/tech/artificial-intelligence/former-openai-cognition-staffers-want-ai-agents-running-businesses/amp_articleshow/134794471.cms",
         "source_title": "前OpenAI、Cognition员工希望AI智能体运营企业",
@@ -998,16 +1121,12 @@
           "source_id": "index_companies"
         },
         {
-          "description": "融资来源记录：Hone · 种子轮 · 2026-10-08 · 本轮领投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-8c0d1c03dad4f31e"
+          "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮领投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6ecc9e9d3c026d5a"
         },
         {
-          "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4d11ed62a144a3f4"
-        },
-        {
-          "description": "融资来源记录：Wonderful · C轮 · 2026-09-02 · 本轮参投 · $550 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3bc5a4e973b035eb"
+          "description": "融资来源记录：Opply · 轮次未披露 · 2026-10-21 · 本轮参投 · $7.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2ca21eb263dc4078"
         }
       ],
       "contacts": [
@@ -1080,28 +1199,28 @@
           "quote_hash": "bc6cf3a73c5e4cb585af2fb2c8eff4b8e5d50acc30b9b2ab934de8377b9689cc"
         },
         {
-          "source_id": "FISRC-8c0d1c03dad4f31e",
-          "source_url": "https://m.economictimes.com/tech/artificial-intelligence/former-openai-cognition-staffers-want-ai-agents-running-businesses/amp_articleshow/134794471.cms",
-          "source_title": "前OpenAI、Cognition员工希望AI智能体运营企业",
-          "source_content_hash": "a9357446332666762ff606b668b8241d81676f13bdfe55719ba3f413c3f3f0bb",
-          "quote": "Benchmark and Index Ventures led the financing",
-          "quote_hash": "e18707e5b2b7067aced012102e016be904e4a344e13751575f5ab06cb45b01cb"
+          "source_id": "FISRC-6ecc9e9d3c026d5a",
+          "source_url": "https://www.indexventures.com/perspectives/toward-more-efficient-ai-leading-flapping-airplanes-1b-series-a/",
+          "source_title": "迈向更高效的AI：领投Flapping Airplanes的10亿美元A轮融资",
+          "source_content_hash": "23901e3c9a1849829afc4d2b36da9e75d5e2634d69e746ef68df3d5176ab60b4",
+          "quote": "We’re thrilled to double down and lead their $1B million Series A, with Mark joining the board.",
+          "quote_hash": "d4af6c9c93786bea701f67ecb1bd340d07ba4af8df1751ab4629ca5c7eb17ef9"
         },
         {
-          "source_id": "FISRC-4d11ed62a144a3f4",
-          "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
-          "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
-          "source_content_hash": "714c413ab36c1848",
-          "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
-          "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
+          "source_id": "FISRC-d40817bd8696706a",
+          "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+          "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+          "source_content_hash": "52d288f9f7f1c202",
+          "quote": "raised a $1 billion Series A round, co-led by Index and Lux",
+          "quote_hash": "d4fa2a110c1c7be71e816df0f04b52f2b9f2c5a142a12d3def40d601ba922143"
         },
         {
-          "source_id": "FISRC-3bc5a4e973b035eb",
-          "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
-          "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
-          "source_content_hash": "290d66b36443e7c5",
-          "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
-          "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
+          "source_id": "FISRC-2ca21eb263dc4078",
+          "source_url": "https://tech.eu/2026/10/21/opply-raises-75m-to-expand-its-agentic-ai-platform-for-cpg-brands/",
+          "source_title": "Opply 融资 750 万美元，以扩展面向 CPG 品牌的 AI 智能体平台",
+          "source_content_hash": "1042c65e64d982798af4c5a549d07a4fc11da7ed18278045a4a2eab91c3a67f9",
+          "quote": "has raised $7.5 million in a funding round led by Chalfen Ventures, with participation from Index Ventures, Anthemis, Entrepreneurs First, In This Together and Ventures Together",
+          "quote_hash": "c3a01fae6fa83d7f992e1ba0dd47f8dcf4b8b3a4fd8e36e46fb5117bf0363e06"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1112,7 +1231,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[15].role": {
+        "activities[17].role": {
           "text": "Series B 联合领投",
           "source_hash": "df85403fc7ccc1dfc164ef363e563fceb9055deb495ed979d8fbb70df3719147",
           "provider": "deepseek",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,27 +61,33 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-10-28",
-    "latest_disclosed_at": "2026-08-25",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 3,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "multi_round",
       "seed",
-      "series_a"
+      "series_a",
+      "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-fa64e74622d0a95a",
+        "canonical_entity_id": "",
+        "name": "Blacksmith"
+      },
       {
         "entity_id": "EN-8784fa047aabc687",
         "canonical_entity_id": "",
@@ -114,6 +120,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-608ed14d9960791a",
+        "funding_insight_id": "FI-29972434b39dd262",
+        "event_ids": [
+          "EV-95b8b70ca29ab623"
+        ],
+        "company_entity_id": "EN-fa64e74622d0a95a",
+        "company_canonical_entity_id": "",
+        "company_name": "Blacksmith",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$66 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 66000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6600 万美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0b9a2de412bfecea",
+            "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
+            "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
+            "source_content_hash": "b097b8e1cde199ce",
+            "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
+            "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
+          }
+        ]
+      },
       {
         "activity_id": "IA-62be2dd74905f730",
         "funding_insight_id": "FI-164f373b7879a941",
@@ -405,6 +451,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-0b9a2de412bfecea",
+        "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
+        "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
+        "source_content_hash": "b097b8e1cde199ce",
+        "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
+        "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
+      },
+      {
         "source_id": "FISRC-355d8aee33bd32ed",
         "source_url": "https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-it-pushes-voice-ai-past-the-phone-call/",
         "source_title": "印度Ringg获Peak XV支持，推动语音AI超越电话通话",
@@ -540,6 +594,10 @@
           "source_id": "peakxv_about"
         },
         {
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0b9a2de412bfecea"
+        },
+        {
           "description": "融资来源记录：Ringg · A轮 · 2026-08-25 · 本轮领投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-355d8aee33bd32ed"
         },
@@ -604,6 +662,14 @@
           "quote_hash": "67ccb303d7dacfc126f57f753798fc0534b52fe714db092b70ea868ceb16e9f8"
         },
         {
+          "source_id": "FISRC-0b9a2de412bfecea",
+          "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
+          "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
+          "source_content_hash": "b097b8e1cde199ce",
+          "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
+          "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
+        },
+        {
           "source_id": "FISRC-355d8aee33bd32ed",
           "source_url": "https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-it-pushes-voice-ai-past-the-phone-call/",
           "source_title": "印度Ringg获Peak XV支持，推动语音AI超越电话通话",
@@ -618,14 +684,6 @@
           "source_content_hash": "c3f8c7225d49e92f",
           "quote": "with investment from Peak XV Partners",
           "quote_hash": "86555f8c52b345c108899bf4aee7acef5d74cf1473e4ca456d934e5410c68b4b"
-        },
-        {
-          "source_id": "FISRC-6ad648d48b556138",
-          "source_url": "https://www.finsmes.com/2026/08/discovered-materials-raises-9m-in-seed-funding.html",
-          "source_title": "Discovered Materials Raises $9M in Seed Funding",
-          "source_content_hash": "bd47d3e50a1db886",
-          "quote": "with participation from Y Combinator and Peak XV Partners",
-          "quote_hash": "bfdb759d9e01c1cf272260d0da606631f85518f2a0fcaa9e0a95f0c2f7f544f0"
         }
       ],
       "coverage_status": "researched",

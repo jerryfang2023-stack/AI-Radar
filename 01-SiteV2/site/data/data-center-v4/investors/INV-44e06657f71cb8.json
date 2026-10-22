@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-28",
-    "latest_disclosed_at": "2026-07-08",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "co_lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "series_e",
       "series_f",
       "series_h"
     ],
@@ -86,12 +87,57 @@
         "name": "Anthropic"
       },
       {
+        "entity_id": "EN-22dc02488a037639",
+        "canonical_entity_id": "",
+        "name": "Legora"
+      },
+      {
         "entity_id": "EN-6907a22fafe13a63",
         "canonical_entity_id": "",
         "name": "SambaNova Systems"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f964740089bf25b8",
+        "funding_insight_id": "FI-b875723282f11479",
+        "event_ids": [
+          "EV-07911ca790bdfc5a"
+        ],
+        "company_entity_id": "EN-22dc02488a037639",
+        "company_canonical_entity_id": "",
+        "company_name": "Legora",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "€489 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 489000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4.89 亿欧元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c4c53e6f607010be",
+            "source_url": "https://legora.com/blog/series-e",
+            "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+            "source_content_hash": "f3c7efce8da1beb6",
+            "quote": "with participation from new investors, including Baron Capital, Capital Group, Fidelity Management & Research Company, Glade Brook Capital Partners, and J.P Morgan",
+            "quote_hash": "53b256cbc00c787add4fc6ed2fb5c55f3cdbafe428a00c9bd1e18b2ba37b0f5c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6ef66f79f8a4dda1",
         "funding_insight_id": "FI-02775e1bb32805b0",
@@ -175,6 +221,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c4c53e6f607010be",
+        "source_url": "https://legora.com/blog/series-e",
+        "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+        "source_content_hash": "f3c7efce8da1beb6",
+        "quote": "with participation from new investors, including Baron Capital, Capital Group, Fidelity Management & Research Company, Glade Brook Capital Partners, and J.P Morgan",
+        "quote_hash": "53b256cbc00c787add4fc6ed2fb5c55f3cdbafe428a00c9bd1e18b2ba37b0f5c"
+      },
+      {
         "source_id": "FISRC-dbf8259066547c8e",
         "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
         "source_title": "AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月",
@@ -230,6 +284,10 @@
           "source_id": "FISRC-dbf8259066547c8e"
         },
         {
+          "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4c53e6f607010be"
+        },
+        {
           "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮联合领投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b5e22ae086a6b353"
         }
@@ -275,6 +333,14 @@
           "source_content_hash": "e79999ca03a0833e",
           "quote": "Other investors participating in the round include Seligman Ventures, T. Rowe Price Associates, and Capital Group",
           "quote_hash": "acff2ed86b8e1167ab4139e8981998276858b362a170040a1c2ba5660107bd1d"
+        },
+        {
+          "source_id": "FISRC-c4c53e6f607010be",
+          "source_url": "https://legora.com/blog/series-e",
+          "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+          "source_content_hash": "f3c7efce8da1beb6",
+          "quote": "with participation from new investors, including Baron Capital, Capital Group, Fidelity Management & Research Company, Glade Brook Capital Partners, and J.P Morgan",
+          "quote_hash": "53b256cbc00c787add4fc6ed2fb5c55f3cdbafe428a00c9bd1e18b2ba37b0f5c"
         },
         {
           "source_id": "FISRC-b5e22ae086a6b353",

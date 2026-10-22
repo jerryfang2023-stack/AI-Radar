@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 7,
+    "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-01-21",
-    "latest_disclosed_at": "2026-10-05",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "co_lead": 3,
       "lead": 2,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "multi_round",
@@ -89,6 +89,11 @@
         "entity_id": "EN-6d478f33a9e3cba3",
         "canonical_entity_id": "",
         "name": "BigHat Biosciences"
+      },
+      {
+        "entity_id": "EN-fa64e74622d0a95a",
+        "canonical_entity_id": "",
+        "name": "Blacksmith"
       },
       {
         "entity_id": "EN-dc483de2bd50b2f4",
@@ -122,6 +127,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-67deb754732b93ab",
+        "funding_insight_id": "FI-29972434b39dd262",
+        "event_ids": [
+          "EV-95b8b70ca29ab623"
+        ],
+        "company_entity_id": "EN-fa64e74622d0a95a",
+        "company_canonical_entity_id": "",
+        "company_name": "Blacksmith",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$66 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 66000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6600 万美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0b9a2de412bfecea",
+            "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
+            "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
+            "source_content_hash": "b097b8e1cde199ce",
+            "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
+            "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
+          }
+        ]
+      },
       {
         "activity_id": "IA-c9f8cbb3cb4bfd13",
         "funding_insight_id": "FI-4e41cf72b50bafd3",
@@ -405,6 +450,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-0b9a2de412bfecea",
+        "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
+        "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
+        "source_content_hash": "b097b8e1cde199ce",
+        "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
+        "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
+      },
+      {
         "source_id": "FISRC-bffca0091f22129f",
         "source_url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
         "source_title": "Clockwork.io 融资 3100 万美元，LinkedIn、Together AI 和 WhiteFiber 采用其韧性软件以停止浪费 GPU 小时",
@@ -499,16 +552,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0b9a2de412bfecea"
+        },
+        {
           "description": "融资来源记录：Clockwork.io · 轮次未披露 · 2026-10-05 · 本轮联合领投 · $31M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-bffca0091f22129f"
         },
         {
           "description": "融资来源记录：CScale · C轮 · 2026-09-30 · 本轮联合领投 · $145 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-98f84ad840508b39"
-        },
-        {
-          "description": "融资来源记录：BigHat Biosciences · C轮 · 2026-09-24 · 本轮联合领投 · $75 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3372eff279ee29db"
         }
       ],
       "contacts": [
@@ -556,6 +609,14 @@
           "quote_hash": "4526d04e278c97b0e375c17c63dc63c1a15c030cb464cfdce3e36d65487f12fc"
         },
         {
+          "source_id": "FISRC-0b9a2de412bfecea",
+          "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
+          "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
+          "source_content_hash": "b097b8e1cde199ce",
+          "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
+          "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
+        },
+        {
           "source_id": "FISRC-bffca0091f22129f",
           "source_url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
           "source_title": "Clockwork.io 融资 3100 万美元，LinkedIn、Together AI 和 WhiteFiber 采用其韧性软件以停止浪费 GPU 小时",
@@ -570,14 +631,6 @@
           "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
           "quote": "The round was co-led by Atreides Management, Valor Equity Partners, and Premji Invest.",
           "quote_hash": "60c86cc928a83dca9a72d7c77b5efc8d4b740c887bb5858726dabac4d7d4a85d"
-        },
-        {
-          "source_id": "FISRC-3372eff279ee29db",
-          "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
-          "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
-          "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
-          "quote": "The round was co-led by DFJ Growth & Premji Invest",
-          "quote_hash": "c549e5192a7c3eae0d959c7c805ef06ad83c9c58dd6cf40db4b07347f69526e7"
         }
       ],
       "identity_status": "verified",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -71,11 +71,11 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-17",
-    "latest_disclosed_at": "2026-10-14",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "historical_or_ambiguous": 3,
       "lead": 1,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "pre_seed",
@@ -108,12 +108,57 @@
         "name": "First Concepts"
       },
       {
+        "entity_id": "EN-487fb92ea4a3414b",
+        "canonical_entity_id": "",
+        "name": "Jenz"
+      },
+      {
         "entity_id": "EN-57cbf9481b8ad9b7",
         "canonical_entity_id": "",
         "name": "ProLearn"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1f78212211666ec9",
+        "funding_insight_id": "FI-2a9f86046f2d0bf2",
+        "event_ids": [
+          "EV-1d2917d03e728ae3"
+        ],
+        "company_entity_id": "EN-487fb92ea4a3414b",
+        "company_canonical_entity_id": "",
+        "company_name": "Jenz",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "€540,000",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 540000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "54 万欧元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-63ad1f6801409355",
+            "source_url": "https://tech.eu/2026/10/21/jenz-lands-eur540k-four-months-after-hackathon-win-to-streamline-retail-operations/",
+            "source_title": "Jenz 在黑客松获胜四个月后获得 €540K，用于简化零售运营",
+            "source_content_hash": "ce46f406d8a72f2fe3bf1fe704f2e93c29c820c28ee937bf39f38d2ea17bf4b5",
+            "quote": "Norwegian AI startup Jenz has raised €540,000 in pre-seed funding from Antler and Ada Ventures.",
+            "quote_hash": "045967cd1abc5863a616452123b6fff2e8114ebbc49017a64e39f1325cd884e5"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a010078d0bfbe6ca",
         "funding_insight_id": "FI-8973943a7ff75bad",
@@ -461,6 +506,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-63ad1f6801409355",
+        "source_url": "https://tech.eu/2026/10/21/jenz-lands-eur540k-four-months-after-hackathon-win-to-streamline-retail-operations/",
+        "source_title": "Jenz 在黑客松获胜四个月后获得 €540K，用于简化零售运营",
+        "source_content_hash": "ce46f406d8a72f2fe3bf1fe704f2e93c29c820c28ee937bf39f38d2ea17bf4b5",
+        "quote": "Norwegian AI startup Jenz has raised €540,000 in pre-seed funding from Antler and Ada Ventures.",
+        "quote_hash": "045967cd1abc5863a616452123b6fff2e8114ebbc49017a64e39f1325cd884e5"
+      },
+      {
         "source_id": "FISRC-bb091527618bffba",
         "source_url": "https://tech.eu/2026/10/14/affinity-labs-raises-2m-to-build-ai-powered-software-brands-with-creators/",
         "source_title": "Affinity Labs 融资 200 万美元，与创作者共同打造 AI 驱动的软件品牌",
@@ -555,16 +608,16 @@
           "source_id": "antler-lovable-seriesc-2026"
         },
         {
+          "description": "融资来源记录：Jenz · 预种子轮 · 2026-10-21 · 本轮参投 · €540,000。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-63ad1f6801409355"
+        },
+        {
           "description": "融资来源记录：Affinity Labs · 预种子轮 · 2026-10-14 · 本轮参投 · $2 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-bb091527618bffba"
         },
         {
           "description": "融资来源记录：Aignosis · 种子轮 · 2026-10-01 · 本轮领投 · ₹4 crore。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ff1952b8850f6680"
-        },
-        {
-          "description": "融资来源记录：Dodge AI · 种子轮 · 2026-09-29 · 本轮参投 · $2.65 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-79d7e597795281b6"
         }
       ],
       "contacts": [],
@@ -590,6 +643,14 @@
           "quote_hash": "17dae6719011a6837f9411f516e259e06bc7e2d00a2aee6b64889f1afaf81e59"
         },
         {
+          "source_id": "FISRC-63ad1f6801409355",
+          "source_url": "https://tech.eu/2026/10/21/jenz-lands-eur540k-four-months-after-hackathon-win-to-streamline-retail-operations/",
+          "source_title": "Jenz 在黑客松获胜四个月后获得 €540K，用于简化零售运营",
+          "source_content_hash": "ce46f406d8a72f2fe3bf1fe704f2e93c29c820c28ee937bf39f38d2ea17bf4b5",
+          "quote": "Norwegian AI startup Jenz has raised €540,000 in pre-seed funding from Antler and Ada Ventures.",
+          "quote_hash": "045967cd1abc5863a616452123b6fff2e8114ebbc49017a64e39f1325cd884e5"
+        },
+        {
           "source_id": "FISRC-bb091527618bffba",
           "source_url": "https://tech.eu/2026/10/14/affinity-labs-raises-2m-to-build-ai-powered-software-brands-with-creators/",
           "source_title": "Affinity Labs 融资 200 万美元，与创作者共同打造 AI 驱动的软件品牌",
@@ -604,14 +665,6 @@
           "source_content_hash": "2c11d79204059801e36a2c97b161439e0495580d4d0dade47635c04fe4711b09",
           "quote": "raised ₹4 crore in a seed funding round led by Antler, Nikhil Kamath and angel investors including Varun Dua and IIMA Ventures",
           "quote_hash": "a89ec625e8ff809ede3d21d0982f8abd8b8b49aa1a1cf86e0d55f32ef7158ddf"
-        },
-        {
-          "source_id": "FISRC-79d7e597795281b6",
-          "source_url": "https://techfundingnews.com/dodge-ai-raises-2-65m-from-accel-and-googles-ai-fund-to-cut-reliance-on-sap-consultants/",
-          "source_title": "Dodge AI 从 Accel 和 Google 的 AI 基金筹集 265 万美元，以减少对 SAP 顾问的依赖",
-          "source_content_hash": "db9220a882d5568676eb76971b7b8f7680544810d1ed5a22c24e3a4e043be70f",
-          "quote": "The round also included Schema Ventures, New Build Ventures, Antler, the early-stage investor that has backed more than 1,800 startups, and angels from the SAP ecosystem.",
-          "quote_hash": "8e48a005511f78dcefc3d0cfdd1b04759dcebb524bc0861aca98483043ae90da"
         }
       ],
       "last_verified_at": "2026-10-03"

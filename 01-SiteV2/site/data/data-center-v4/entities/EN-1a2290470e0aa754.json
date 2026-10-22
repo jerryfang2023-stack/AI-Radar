@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-a68bb74a987a8df4",
       "EV-66193b4f82571d48",
       "EV-858cec7fa8f4c87b",
       "EV-3798871486ef5a26",
@@ -82,10 +83,11 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-01-14",
-    "lastSeen": "2026-10-17",
+    "lastSeen": "2026-10-22",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-a68bb74a987a8df4",
         "EV-66193b4f82571d48",
         "EV-858cec7fa8f4c87b",
         "EV-3798871486ef5a26",
@@ -109,6 +111,45 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-a68bb74a987a8df4",
+        "dataDate": "2026-10-22",
+        "date": "2026-10-20",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "AuxoAI 完成 2070 万美元 A 轮融资，打造前沿部署型 AI 公司",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-27a9cf2e4e5e38af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-27a9cf2e4e5e38af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-27a9cf2e4e5e38af",
+          "EN-1a2290470e0aa754"
+        ]
+      },
       {
         "id": "EV-66193b4f82571d48",
         "dataDate": "2026-10-17",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 23,
+    "current_round_count": 24,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 23,
+    "portfolio_company_count": 24,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-03-12",
-    "latest_disclosed_at": "2026-10-09",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 4,
       "lead": 11,
-      "participant": 10
+      "participant": 11
     },
     "round_codes": [
       "multi_round",
@@ -150,6 +150,11 @@
         "name": "Keenable"
       },
       {
+        "entity_id": "EN-22dc02488a037639",
+        "canonical_entity_id": "",
+        "name": "Legora"
+      },
+      {
         "entity_id": "EN-c5803a6e4daa6af4",
         "canonical_entity_id": "",
         "name": "Modal"
@@ -206,6 +211,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-cb770bd6f8364a4e",
+        "funding_insight_id": "FI-b875723282f11479",
+        "event_ids": [
+          "EV-07911ca790bdfc5a"
+        ],
+        "company_entity_id": "EN-22dc02488a037639",
+        "company_canonical_entity_id": "",
+        "company_name": "Legora",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "€489 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 489000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4.89 亿欧元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c4c53e6f607010be",
+            "source_url": "https://legora.com/blog/series-e",
+            "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+            "source_content_hash": "f3c7efce8da1beb6",
+            "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
+            "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+          }
+        ]
+      },
       {
         "activity_id": "IA-0d9fa1a86e62d4e9",
         "funding_insight_id": "FI-208b0a4f6d9ccb22",
@@ -1269,6 +1314,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c4c53e6f607010be",
+        "source_url": "https://legora.com/blog/series-e",
+        "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+        "source_content_hash": "f3c7efce8da1beb6",
+        "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
+        "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+      },
+      {
         "source_id": "FISRC-5c428919070bfce8",
         "source_url": "https://www.globenewswire.com/news-release/2026/10/09/3378310/0/en/sabi-raises-50-million-seed-round-led-by-khosla-ventures-to-put-a-brain-ai-interface-inside-a-baseball-cap.html",
         "source_title": "Sabi 获 Khosla Ventures 领投的 5000 万美元种子轮融资，将脑机 AI 接口植入棒球帽",
@@ -1527,16 +1580,16 @@
           "source_id": "accel_europe"
         },
         {
+          "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4c53e6f607010be"
+        },
+        {
           "description": "融资来源记录：Sabi · 种子轮 · 2026-10-09 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5c428919070bfce8"
         },
         {
           "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮联合领投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dc8fb918b056c843"
-        },
-        {
-          "description": "融资来源记录：Kanu AI · 种子轮 · 2026-09-30 · 本轮参投 · $11.7 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2600408f2e0d32d7"
         }
       ],
       "contacts": [
@@ -1609,6 +1662,14 @@
           "quote_hash": "596b1ee652763f3ce41bb638fabd7df2a7d7c189a53631ad6dd499bf0d48e2bc"
         },
         {
+          "source_id": "FISRC-c4c53e6f607010be",
+          "source_url": "https://legora.com/blog/series-e",
+          "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+          "source_content_hash": "f3c7efce8da1beb6",
+          "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
+          "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+        },
+        {
           "source_id": "FISRC-5c428919070bfce8",
           "source_url": "https://www.globenewswire.com/news-release/2026/10/09/3378310/0/en/sabi-raises-50-million-seed-round-led-by-khosla-ventures-to-put-a-brain-ai-interface-inside-a-baseball-cap.html",
           "source_title": "Sabi 获 Khosla Ventures 领投的 5000 万美元种子轮融资，将脑机 AI 接口植入棒球帽",
@@ -1623,14 +1684,6 @@
           "source_content_hash": "0b4ca5291b20197e1a333b32e3a6fd462793e5829ad8645ade5f6e59221e163d",
           "quote": "today announced it has raised $255.5 million in Series B funding co-led by Andreessen Horowitz (a16z) and Accel",
           "quote_hash": "5a0a2111252fab5f5d876738996841fc302cb4364773d762e40db424c18164d0"
-        },
-        {
-          "source_id": "FISRC-2600408f2e0d32d7",
-          "source_url": "https://www.geekwire.com/2026/kanu-ai-emerges-from-stealth-with-11-7m-to-turn-employee-workflows-into-custom-software/",
-          "source_title": "Kanu AI 结束隐身模式，获 1170 万美元，将员工工作流转化为定制软件",
-          "source_content_hash": "72b0d57fbc3389cbdeb2ae193aabff25a09c59cf93a65c3a6a7a425a5e8e9c1c",
-          "quote": "Trilogy Equity Partners led the round, with participation from Andreessen Horowitz’s a16z speedrun, BMW i Ventures, and Accel.",
-          "quote_hash": "b8e2a52ffb09045701fa83a2302679430bd9f2fc61890479b80241c7a7572dfe"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1641,7 +1694,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[24].role": {
+        "activities[25].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

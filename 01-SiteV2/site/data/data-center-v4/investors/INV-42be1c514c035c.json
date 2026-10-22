@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-28",
-    "latest_disclosed_at": "2026-05-28",
+    "latest_disclosed_at": "2026-10-20",
     "role_counts": {
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
+      "series_a",
       "series_h"
     ],
     "portfolio_companies": [
@@ -82,9 +84,62 @@
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic"
+      },
+      {
+        "entity_id": "EN-27a9cf2e4e5e38af",
+        "canonical_entity_id": "",
+        "name": "AuxoAI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-6fef17d0f5ad2faf",
+        "funding_insight_id": "FI-256dc2b147986aab",
+        "event_ids": [
+          "EV-a68bb74a987a8df4"
+        ],
+        "company_entity_id": "EN-27a9cf2e4e5e38af",
+        "company_canonical_entity_id": "",
+        "company_name": "AuxoAI",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$20.7 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2070 万美元"
+        },
+        "announced_at": "2026-10-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-1c9f908762bf51c9",
+            "source_url": "https://www.prnewswire.com/news-releases/auxoai-raises-20-7m-series-a-to-build-the-forward-deployed-ai-company-302913552.html",
+            "source_title": "AuxoAI 完成 2070 万美元 A 轮融资，打造前沿部署型 AI 公司",
+            "source_content_hash": "99b6f8984f714789300caf059422f90fd76177fe74496029823367ccc43ffbd3",
+            "quote": "AuxoAI today announced a $20.7 million Series A led by NTTVC",
+            "quote_hash": "db8df9e08ece59d12b95b16267711ec02e71d5a6293ebc8d2a826ed42b2039be"
+          },
+          {
+            "source_id": "FISRC-3dcf1968bff49466",
+            "source_url": "https://vcnewsdaily.com/auxoai/venture-capital-funding/xjfjpqsbxd",
+            "source_title": "AuxoAI Raises $20.7M Series A Round",
+            "source_content_hash": "883852522ad0d421",
+            "quote": "AuxoAI has announced a $20.7 million Series A led by NTTVC",
+            "quote_hash": "6ddc9f013d754f5892fb959e49b081bec9d74c8c88d997827d61269c2fd0d49e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-20c8a3f56226efc6",
         "funding_insight_id": "FI-ef9bfb1255d96618",
@@ -128,6 +183,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-1c9f908762bf51c9",
+        "source_url": "https://www.prnewswire.com/news-releases/auxoai-raises-20-7m-series-a-to-build-the-forward-deployed-ai-company-302913552.html",
+        "source_title": "AuxoAI 完成 2070 万美元 A 轮融资，打造前沿部署型 AI 公司",
+        "source_content_hash": "99b6f8984f714789300caf059422f90fd76177fe74496029823367ccc43ffbd3",
+        "quote": "AuxoAI today announced a $20.7 million Series A led by NTTVC",
+        "quote_hash": "db8df9e08ece59d12b95b16267711ec02e71d5a6293ebc8d2a826ed42b2039be"
+      },
+      {
+        "source_id": "FISRC-3dcf1968bff49466",
+        "source_url": "https://vcnewsdaily.com/auxoai/venture-capital-funding/xjfjpqsbxd",
+        "source_title": "AuxoAI Raises $20.7M Series A Round",
+        "source_content_hash": "883852522ad0d421",
+        "quote": "AuxoAI has announced a $20.7 million Series A led by NTTVC",
+        "quote_hash": "6ddc9f013d754f5892fb959e49b081bec9d74c8c88d997827d61269c2fd0d49e"
+      },
+      {
         "source_id": "FISRC-b5e22ae086a6b353",
         "source_url": "https://www.anthropic.com/news/series-h",
         "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
@@ -157,6 +228,10 @@
         {
           "description": "NTTVC官网称其作为重要投资者参与Anthropic的Series H融资。",
           "source_id": "PROFILE-S-INV-42be1c514c035c-2"
+        },
+        {
+          "description": "融资来源记录：AuxoAI · A轮 · 2026-10-20 · 本轮领投 · $20.7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1c9f908762bf51c9"
         },
         {
           "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮参投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
@@ -196,6 +271,22 @@
           "source_content_hash": "4a6790f4614eeeb98bee0dba695220c53c882ad2db1af73d5582ab2f0c48c994",
           "quote": "NTTVC participates as a significant investor in Anthropic’s $65B Series H Round",
           "quote_hash": "bda078074c3ecc59da7d1ba0b7b55776bf45c1d952b21f352dc63579d11f1f08"
+        },
+        {
+          "source_id": "FISRC-1c9f908762bf51c9",
+          "source_url": "https://www.prnewswire.com/news-releases/auxoai-raises-20-7m-series-a-to-build-the-forward-deployed-ai-company-302913552.html",
+          "source_title": "AuxoAI 完成 2070 万美元 A 轮融资，打造前沿部署型 AI 公司",
+          "source_content_hash": "99b6f8984f714789300caf059422f90fd76177fe74496029823367ccc43ffbd3",
+          "quote": "AuxoAI today announced a $20.7 million Series A led by NTTVC",
+          "quote_hash": "db8df9e08ece59d12b95b16267711ec02e71d5a6293ebc8d2a826ed42b2039be"
+        },
+        {
+          "source_id": "FISRC-3dcf1968bff49466",
+          "source_url": "https://vcnewsdaily.com/auxoai/venture-capital-funding/xjfjpqsbxd",
+          "source_title": "AuxoAI Raises $20.7M Series A Round",
+          "source_content_hash": "883852522ad0d421",
+          "quote": "AuxoAI has announced a $20.7 million Series A led by NTTVC",
+          "quote_hash": "6ddc9f013d754f5892fb959e49b081bec9d74c8c88d997827d61269c2fd0d49e"
         },
         {
           "source_id": "FISRC-b5e22ae086a6b353",

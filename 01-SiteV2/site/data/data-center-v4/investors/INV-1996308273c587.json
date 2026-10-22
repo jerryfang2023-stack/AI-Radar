@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,9 +63,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 9,
+    "current_round_count": 10,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -73,12 +73,12 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-04",
-    "latest_disclosed_at": "2026-10-08",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 4,
       "lead": 2,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "seed",
@@ -111,6 +111,11 @@
         "name": "Instinct"
       },
       {
+        "entity_id": "EN-22dc02488a037639",
+        "canonical_entity_id": "",
+        "name": "Legora"
+      },
+      {
         "entity_id": "EN-8d8b8c50b8da244b",
         "canonical_entity_id": "",
         "name": "Spear Street Technology"
@@ -122,6 +127,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-dafba094054b3265",
+        "funding_insight_id": "FI-b875723282f11479",
+        "event_ids": [
+          "EV-07911ca790bdfc5a"
+        ],
+        "company_entity_id": "EN-22dc02488a037639",
+        "company_canonical_entity_id": "",
+        "company_name": "Legora",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "€489 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 489000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4.89 亿欧元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c4c53e6f607010be",
+            "source_url": "https://legora.com/blog/series-e",
+            "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+            "source_content_hash": "f3c7efce8da1beb6",
+            "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
+            "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ab769fd4ed7975af",
         "funding_insight_id": "FI-a42717e5e5dfeb81",
@@ -619,6 +664,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c4c53e6f607010be",
+        "source_url": "https://legora.com/blog/series-e",
+        "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+        "source_content_hash": "f3c7efce8da1beb6",
+        "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
+        "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+      },
+      {
         "source_id": "FISRC-8c0d1c03dad4f31e",
         "source_url": "https://m.economictimes.com/tech/artificial-intelligence/former-openai-cognition-staffers-want-ai-agents-running-businesses/amp_articleshow/134794471.cms",
         "source_title": "前OpenAI、Cognition员工希望AI智能体运营企业",
@@ -772,6 +825,10 @@
           "source_id": "benchmark_instinct"
         },
         {
+          "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4c53e6f607010be"
+        },
+        {
           "description": "融资来源记录：Hone · 种子轮 · 2026-10-08 · 本轮领投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8c0d1c03dad4f31e"
         },
@@ -829,6 +886,14 @@
           "quote_hash": "670df8237bdcca7f69e9383728e8fb609db69e4dc603334230596f80fba3706c"
         },
         {
+          "source_id": "FISRC-c4c53e6f607010be",
+          "source_url": "https://legora.com/blog/series-e",
+          "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+          "source_content_hash": "f3c7efce8da1beb6",
+          "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
+          "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+        },
+        {
           "source_id": "FISRC-8c0d1c03dad4f31e",
           "source_url": "https://m.economictimes.com/tech/artificial-intelligence/former-openai-cognition-staffers-want-ai-agents-running-businesses/amp_articleshow/134794471.cms",
           "source_title": "前OpenAI、Cognition员工希望AI智能体运营企业",
@@ -843,14 +908,6 @@
           "source_content_hash": "c62e4fc4d501edfc55ba361b0d3c29a3f1ba1efa4f33edc8865db074f63a8cde",
           "quote": "本轮融资由红杉资本、基准资本和 Coatue 参与。",
           "quote_hash": "adb0cad199900f3abffc537b237613d60e90dbee78e123f36bc33e66fad71e8e"
-        },
-        {
-          "source_id": "FISRC-560cbbccadfe271d",
-          "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
-          "source_title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
-          "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-          "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
-          "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
         }
       ],
       "last_verified_at": "2026-09-26",
@@ -861,7 +918,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[10].role": {
+        "activities[11].role": {
           "text": "Venture Round 参投",
           "source_hash": "06c87ef49262ae10ee600994008f183c80d7e1cd9788cd80d3ef49509dceba0e",
           "provider": "deepseek",
@@ -869,7 +926,7 @@
           "translated_at": "2026-10-02T06:25:20.177Z",
           "status": "translated"
         },
-        "activities[11].role": {
+        "activities[12].role": {
           "text": "Series B 联合领投",
           "source_hash": "df85403fc7ccc1dfc164ef363e563fceb9055deb495ed979d8fbb70df3719147",
           "provider": "deepseek",
