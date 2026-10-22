@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-21T05:53:32.452Z",
+    "generatedAt": "2026-10-22T06:03:41.747Z",
     "latestDataDate": "2026-10-22",
     "currentDate": "2026-10-22",
     "eventCount": 4230,
@@ -639537,343 +639537,6 @@
       ]
     },
     {
-      "id": "INV-c73d9854fb920b",
-      "name": "Nvidia",
-      "aliases": [
-        "NVIDIA"
-      ],
-      "canonical_entity_id": "EN-8d4321d936320802",
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 31,
-      "historical_or_ambiguous_count": 8,
-      "portfolio_company_count": 27,
-      "market_regions": [
-        "GLOBAL"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2025-09-09",
-      "latest_disclosed_at": "2026-10-21",
-      "role_counts": {
-        "historical_or_ambiguous": 8,
-        "lead": 3,
-        "participant": 28
-      },
-      "round_codes": [
-        "infrastructure",
-        "multi_round",
-        "other",
-        "pre_ipo",
-        "seed",
-        "series_a",
-        "series_a_extension",
-        "series_b",
-        "series_c",
-        "series_d",
-        "series_e",
-        "series_f",
-        "series_g",
-        "undisclosed"
-      ],
-      "public_profile": {
-        "summary": "NVIDIA 是一家设有企业投资职能并运营 NVentures 风险投资部门的科技公司。NVentures 官网介绍其面向 AI 基础设施、机器人、数字生物学、应用 AI 和前沿计算等领域投资。融资活动库中的“Nvidia”名称未必能单独确认交易由 NVentures 还是其他 NVIDIA 投资职能完成。",
-        "facts": [
-          {
-            "field": "venture_arm",
-            "label": "风险投资部门",
-            "value": "NVentures",
-            "source_id": "nvidia_nventures"
-          },
-          {
-            "field": "sectors",
-            "label": "NVentures 官网列示领域",
-            "value": [
-              "AI 基础设施",
-              "机器人",
-              "数字生物学",
-              "应用 AI",
-              "前沿计算"
-            ],
-            "source_id": "nvidia_nventures"
-          },
-          {
-            "field": "organization_structure",
-            "label": "投资职能区分",
-            "value": "NVIDIA 区分企业投资、NVentures 风险投资部门与 NVIDIA Inception 创业生态项目；融资记录名称不足以确认具体投资职能。",
-            "source_id": "nvidia_investments"
-          }
-        ],
-        "milestones": [],
-        "track_record": [
-          {
-            "description": "NVentures 官网列有其组合企业与技术领域案例。本库归在 NVIDIA 名称下的单笔融资不据此自动归属至 NVentures。",
-            "source_id": "nvidia_nventures"
-          },
-          {
-            "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-d40817bd8696706a"
-          },
-          {
-            "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮参投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-295e99df6a40bc79"
-          },
-          {
-            "description": "融资来源记录：Safe Superintelligence Inc. · 其他融资 · 2026-10-05 · 本轮领投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-062aa9e732f0aba2"
-          }
-        ],
-        "contacts": [
-          {
-            "kind": "website",
-            "label": "NVentures 官方介绍",
-            "value": "NVIDIA NVentures",
-            "url": "https://www.nvidia.com/en-us/startups/nventures/",
-            "source_id": "nvidia_nventures"
-          },
-          {
-            "kind": "email",
-            "label": "NVIDIA 媒体联系（非投资申请渠道）",
-            "value": "press@nvidia.com",
-            "url": "https://nvidianews.nvidia.com/contacts",
-            "source_id": "nvidia_press"
-          }
-        ],
-        "sources": [
-          {
-            "source_id": "nvidia_nventures",
-            "source_url": "https://www.nvidia.com/en-us/startups/nventures/",
-            "source_title": "NVentures — NVIDIA’s Venture Capital Arm",
-            "source_content_hash": "d3359c5664cc0744c232347ec30517b0834e716c4a9808c4687212c848fb9be4",
-            "quote": "NVentures is NVIDIA’s venture capital arm. It focuses on AI infrastructure, robotics, digital biology, applied AI, and frontier compute.",
-            "quote_hash": "76a883d3cc2e85af162b76448500782412f39d28a282bb5e328113af0724ca27"
-          },
-          {
-            "source_id": "nvidia_investments",
-            "source_url": "https://blogs.nvidia.com/blog/nvidia-investments/",
-            "source_title": "How NVIDIA Fuels the AI Revolution With Investments",
-            "source_content_hash": "80a65457203d02c3a0dc7374f3b4d23df5b9a0f8db47e5d638bc78da21d5f47d",
-            "quote": "First, through NVIDIA’s corporate investments. Second, through NVentures, our venture capital arm.",
-            "quote_hash": "3ddbba673e7d60baa99d53e1ed1212a5a5e70e0e7bcc8f71deed25c2ec7af278"
-          },
-          {
-            "source_id": "nvidia_press",
-            "source_url": "https://nvidianews.nvidia.com/contacts",
-            "source_title": "Press Contacts | NVIDIA Newsroom",
-            "source_content_hash": "e7685ee0e6b289b1f981e5ff98191c6dde923e9bdf7296e6fb71600a162d45dc",
-            "quote": "Corporate Communications: press@nvidia.com.",
-            "quote_hash": "ee1e54cd9f847ba4c9a860b598e9dfd0b8bd5688c398c80253a8a4aa8f1ef820"
-          },
-          {
-            "source_id": "FISRC-d40817bd8696706a",
-            "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
-            "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
-            "source_content_hash": "52d288f9f7f1c202",
-            "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
-            "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
-          },
-          {
-            "source_id": "FISRC-295e99df6a40bc79",
-            "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
-            "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
-            "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
-            "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
-            "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
-          },
-          {
-            "source_id": "FISRC-062aa9e732f0aba2",
-            "source_url": "https://siliconvalleyinvestclub.com/companies/ssi/",
-            "source_title": "Safe Superintelligence — Funding, Valuation & Leadership",
-            "source_content_hash": "4605e9c942d1f7c4",
-            "quote": "Jul 2026Strategic investment$5B——reported—Lead: NVIDIA",
-            "quote_hash": "36c47924470a36f94154190b3140a4b6ebbed454c2990d25a162d306416cb38b"
-          }
-        ],
-        "last_verified_at": "2026-09-25",
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "researched",
-        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
-      },
-      "activity_count": 39,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-a83a3af1a4866fd5",
-          "canonical_entity_id": "",
-          "name": "Advanced Machine Intelligence Labs (AMI Labs)"
-        },
-        {
-          "entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "name": "Anthropic"
-        },
-        {
-          "entity_id": "EN-ae3d8efc01c7627d",
-          "canonical_entity_id": "",
-          "name": "Astrocade"
-        },
-        {
-          "entity_id": "EN-22389189b08cb05c",
-          "canonical_entity_id": "",
-          "name": "Ayar Labs"
-        },
-        {
-          "entity_id": "EN-6ecf7f43c6c5a2b0",
-          "canonical_entity_id": "",
-          "name": "Basecamp Research"
-        },
-        {
-          "entity_id": "EN-4b6cef91ffb05303",
-          "canonical_entity_id": "",
-          "name": "Cognition AI"
-        },
-        {
-          "entity_id": "EN-d41ebd9f02722fc8",
-          "canonical_entity_id": "EN-d41ebd9f02722fc8",
-          "name": "Crusoe"
-        },
-        {
-          "entity_id": "EN-7b9b33ca95deff50",
-          "canonical_entity_id": "",
-          "name": "CScale"
-        },
-        {
-          "entity_id": "EN-e647c818ac38b6ca",
-          "canonical_entity_id": "EN-e647c818ac38b6ca",
-          "name": "Elorian"
-        },
-        {
-          "entity_id": "EN-c9bd40e58364720b",
-          "canonical_entity_id": "",
-          "name": "Flapping Airplanes"
-        },
-        {
-          "entity_id": "EN-6aa1fcea0024c6ce",
-          "canonical_entity_id": "",
-          "name": "GMI Cloud"
-        },
-        {
-          "entity_id": "FICO-gradium",
-          "canonical_entity_id": "",
-          "name": "Gradium"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-b41a32f36de06527",
-          "funding_insight_id": "FI-f6024633a1bff4e3",
-          "event_ids": [
-            "EV-cd3cf94d0f65aea1"
-          ],
-          "company_entity_id": "EN-c9bd40e58364720b",
-          "company_canonical_entity_id": "",
-          "company_name": "Flapping Airplanes",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
-          "amount_original": "$1B",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿美元"
-          },
-          "announced_at": "2026-10-21",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-a6767ee0529bbe2d",
-          "funding_insight_id": "FI-4328c217f1203f6f",
-          "event_ids": [
-            "EV-e5d1e49e37f2e291"
-          ],
-          "company_entity_id": "EN-3eee4f30151db45a",
-          "company_canonical_entity_id": "EN-3eee4f30151db45a",
-          "company_name": "Nous Research",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "$90 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 90000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "9000 万美元"
-          },
-          "announced_at": "2026-10-07",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-d655173dbe161cc6",
-          "funding_insight_id": "FI-2134347a27ff584f",
-          "event_ids": [
-            "EV-1faa33bcf69dcf47"
-          ],
-          "company_entity_id": "EN-63e533f77a26a8d0",
-          "company_canonical_entity_id": "",
-          "company_name": "Safe Superintelligence Inc.",
-          "round": "其他融资",
-          "round_code": "other",
-          "round_original": "Corporate Minority / Strategic investment",
-          "amount_original": "$5 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 5000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "50 亿美元"
-          },
-          "announced_at": "2026-10-05",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead"
-        }
-      ],
-      "translations": {
-        "zh-CN": {
-          "public_profile.facts[1].label": {
-            "text": "NVentures 官网列示领域",
-            "source_hash": "dac78c0ecd9929e5007bcf482987cff83b81c1bc13c0b6ac10cb2213c29d9bca",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-09-28T00:54:25.166Z",
-            "status": "translated"
-          },
-          "public_profile.contacts[0].label": {
-            "text": "NVentures 官方介绍",
-            "source_hash": "79952b37e413c26dd6d819e7e4b7fcc0f8a810ee56e9b58779c53ce06c288109",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-09-28T00:54:25.166Z",
-            "status": "translated"
-          }
-        }
-      }
-    },
-    {
       "id": "INV-862e0e7d2ba5cf",
       "name": "Sequoia Capital",
       "aliases": [
@@ -640555,6 +640218,339 @@
           "public_profile.contacts[3].label": {
             "text": "Menlo Park 办公室",
             "source_hash": "8bdcb8e550878cada301b810817ca74358c27f1606d9facf6555f2179182c86c",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-09-28T00:54:25.166Z",
+            "status": "translated"
+          }
+        }
+      }
+    },
+    {
+      "id": "INV-c73d9854fb920b",
+      "name": "Nvidia",
+      "aliases": [
+        "NVIDIA"
+      ],
+      "canonical_entity_id": "EN-8d4321d936320802",
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 30,
+      "historical_or_ambiguous_count": 9,
+      "portfolio_company_count": 26,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2025-09-09",
+      "latest_disclosed_at": "2026-10-07",
+      "role_counts": {
+        "historical_or_ambiguous": 9,
+        "lead": 3,
+        "participant": 27
+      },
+      "round_codes": [
+        "infrastructure",
+        "multi_round",
+        "other",
+        "pre_ipo",
+        "seed",
+        "series_a",
+        "series_a_extension",
+        "series_b",
+        "series_c",
+        "series_d",
+        "series_e",
+        "series_f",
+        "series_g",
+        "undisclosed"
+      ],
+      "public_profile": {
+        "summary": "NVIDIA 是一家设有企业投资职能并运营 NVentures 风险投资部门的科技公司。NVentures 官网介绍其面向 AI 基础设施、机器人、数字生物学、应用 AI 和前沿计算等领域投资。融资活动库中的“Nvidia”名称未必能单独确认交易由 NVentures 还是其他 NVIDIA 投资职能完成。",
+        "facts": [
+          {
+            "field": "venture_arm",
+            "label": "风险投资部门",
+            "value": "NVentures",
+            "source_id": "nvidia_nventures"
+          },
+          {
+            "field": "sectors",
+            "label": "NVentures 官网列示领域",
+            "value": [
+              "AI 基础设施",
+              "机器人",
+              "数字生物学",
+              "应用 AI",
+              "前沿计算"
+            ],
+            "source_id": "nvidia_nventures"
+          },
+          {
+            "field": "organization_structure",
+            "label": "投资职能区分",
+            "value": "NVIDIA 区分企业投资、NVentures 风险投资部门与 NVIDIA Inception 创业生态项目；融资记录名称不足以确认具体投资职能。",
+            "source_id": "nvidia_investments"
+          }
+        ],
+        "milestones": [],
+        "track_record": [
+          {
+            "description": "NVentures 官网列有其组合企业与技术领域案例。本库归在 NVIDIA 名称下的单笔融资不据此自动归属至 NVentures。",
+            "source_id": "nvidia_nventures"
+          },
+          {
+            "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮参投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-295e99df6a40bc79"
+          },
+          {
+            "description": "融资来源记录：Safe Superintelligence Inc. · 其他融资 · 2026-10-05 · 本轮领投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-062aa9e732f0aba2"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "NVentures 官方介绍",
+            "value": "NVIDIA NVentures",
+            "url": "https://www.nvidia.com/en-us/startups/nventures/",
+            "source_id": "nvidia_nventures"
+          },
+          {
+            "kind": "email",
+            "label": "NVIDIA 媒体联系（非投资申请渠道）",
+            "value": "press@nvidia.com",
+            "url": "https://nvidianews.nvidia.com/contacts",
+            "source_id": "nvidia_press"
+          }
+        ],
+        "sources": [
+          {
+            "source_id": "nvidia_nventures",
+            "source_url": "https://www.nvidia.com/en-us/startups/nventures/",
+            "source_title": "NVentures — NVIDIA’s Venture Capital Arm",
+            "source_content_hash": "d3359c5664cc0744c232347ec30517b0834e716c4a9808c4687212c848fb9be4",
+            "quote": "NVentures is NVIDIA’s venture capital arm. It focuses on AI infrastructure, robotics, digital biology, applied AI, and frontier compute.",
+            "quote_hash": "76a883d3cc2e85af162b76448500782412f39d28a282bb5e328113af0724ca27"
+          },
+          {
+            "source_id": "nvidia_investments",
+            "source_url": "https://blogs.nvidia.com/blog/nvidia-investments/",
+            "source_title": "How NVIDIA Fuels the AI Revolution With Investments",
+            "source_content_hash": "80a65457203d02c3a0dc7374f3b4d23df5b9a0f8db47e5d638bc78da21d5f47d",
+            "quote": "First, through NVIDIA’s corporate investments. Second, through NVentures, our venture capital arm.",
+            "quote_hash": "3ddbba673e7d60baa99d53e1ed1212a5a5e70e0e7bcc8f71deed25c2ec7af278"
+          },
+          {
+            "source_id": "nvidia_press",
+            "source_url": "https://nvidianews.nvidia.com/contacts",
+            "source_title": "Press Contacts | NVIDIA Newsroom",
+            "source_content_hash": "e7685ee0e6b289b1f981e5ff98191c6dde923e9bdf7296e6fb71600a162d45dc",
+            "quote": "Corporate Communications: press@nvidia.com.",
+            "quote_hash": "ee1e54cd9f847ba4c9a860b598e9dfd0b8bd5688c398c80253a8a4aa8f1ef820"
+          },
+          {
+            "source_id": "FISRC-295e99df6a40bc79",
+            "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
+            "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
+            "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
+            "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
+            "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
+          },
+          {
+            "source_id": "FISRC-062aa9e732f0aba2",
+            "source_url": "https://siliconvalleyinvestclub.com/companies/ssi/",
+            "source_title": "Safe Superintelligence — Funding, Valuation & Leadership",
+            "source_content_hash": "4605e9c942d1f7c4",
+            "quote": "Jul 2026Strategic investment$5B——reported—Lead: NVIDIA",
+            "quote_hash": "36c47924470a36f94154190b3140a4b6ebbed454c2990d25a162d306416cb38b"
+          },
+          {
+            "source_id": "FISRC-ee90c330f9d0f668",
+            "source_url": "https://www.cbinsights.com/company/safe-superintelligence/financials",
+            "source_title": "Safe Superintelligence",
+            "source_content_hash": "f98c52d77de2d0e7",
+            "quote": "Safe Superintelligence's latest funding round was a Corporate Minority for $5,000M on July 27, 2026.",
+            "quote_hash": "617ed1039258d0bf48fcbd53df651d3661c30b7bdefda30141b47c30365c9f53"
+          }
+        ],
+        "last_verified_at": "2026-09-25",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+      },
+      "activity_count": 39,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-a83a3af1a4866fd5",
+          "canonical_entity_id": "",
+          "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+        },
+        {
+          "entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "name": "Anthropic"
+        },
+        {
+          "entity_id": "EN-ae3d8efc01c7627d",
+          "canonical_entity_id": "",
+          "name": "Astrocade"
+        },
+        {
+          "entity_id": "EN-22389189b08cb05c",
+          "canonical_entity_id": "",
+          "name": "Ayar Labs"
+        },
+        {
+          "entity_id": "EN-6ecf7f43c6c5a2b0",
+          "canonical_entity_id": "",
+          "name": "Basecamp Research"
+        },
+        {
+          "entity_id": "EN-4b6cef91ffb05303",
+          "canonical_entity_id": "",
+          "name": "Cognition AI"
+        },
+        {
+          "entity_id": "EN-d41ebd9f02722fc8",
+          "canonical_entity_id": "EN-d41ebd9f02722fc8",
+          "name": "Crusoe"
+        },
+        {
+          "entity_id": "EN-7b9b33ca95deff50",
+          "canonical_entity_id": "",
+          "name": "CScale"
+        },
+        {
+          "entity_id": "EN-e647c818ac38b6ca",
+          "canonical_entity_id": "EN-e647c818ac38b6ca",
+          "name": "Elorian"
+        },
+        {
+          "entity_id": "EN-6aa1fcea0024c6ce",
+          "canonical_entity_id": "",
+          "name": "GMI Cloud"
+        },
+        {
+          "entity_id": "FICO-gradium",
+          "canonical_entity_id": "",
+          "name": "Gradium"
+        },
+        {
+          "entity_id": "EN-0b79cf2de0ee6b8e",
+          "canonical_entity_id": "",
+          "name": "Groq"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-a6767ee0529bbe2d",
+          "funding_insight_id": "FI-4328c217f1203f6f",
+          "event_ids": [
+            "EV-e5d1e49e37f2e291"
+          ],
+          "company_entity_id": "EN-3eee4f30151db45a",
+          "company_canonical_entity_id": "EN-3eee4f30151db45a",
+          "company_name": "Nous Research",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$90 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 90000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "9000 万美元"
+          },
+          "announced_at": "2026-10-07",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-d655173dbe161cc6",
+          "funding_insight_id": "FI-2134347a27ff584f",
+          "event_ids": [
+            "EV-1faa33bcf69dcf47"
+          ],
+          "company_entity_id": "EN-63e533f77a26a8d0",
+          "company_canonical_entity_id": "",
+          "company_name": "Safe Superintelligence Inc.",
+          "round": "其他融资",
+          "round_code": "other",
+          "round_original": "Corporate Minority / Strategic investment",
+          "amount_original": "$5 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 5000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "50 亿美元"
+          },
+          "announced_at": "2026-10-05",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead"
+        },
+        {
+          "activity_id": "IA-0bde0b7bb2e79bde",
+          "funding_insight_id": "FI-e332024760e4f246",
+          "event_ids": [
+            "EV-7f10b7d013a91292"
+          ],
+          "company_entity_id": "EN-6aa1fcea0024c6ce",
+          "company_canonical_entity_id": "",
+          "company_name": "GMI Cloud",
+          "round": "基础设施融资",
+          "round_code": "infrastructure",
+          "round_original": "基础设施融资",
+          "amount_original": "$668 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 668000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "6.68 亿美元"
+          },
+          "announced_at": "2026-10-01",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        }
+      ],
+      "translations": {
+        "zh-CN": {
+          "public_profile.facts[1].label": {
+            "text": "NVentures 官网列示领域",
+            "source_hash": "dac78c0ecd9929e5007bcf482987cff83b81c1bc13c0b6ac10cb2213c29d9bca",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-09-28T00:54:25.166Z",
+            "status": "translated"
+          },
+          "public_profile.contacts[0].label": {
+            "text": "NVentures 官方介绍",
+            "source_hash": "79952b37e413c26dd6d819e7e4b7fcc0f8a810ee56e9b58779c53ce06c288109",
             "provider": "deepseek",
             "model": "deepseek-v4-flash",
             "translated_at": "2026-09-28T00:54:25.166Z",
@@ -642168,9 +642164,9 @@
       "first_disclosed_at": "2019-03",
       "latest_disclosed_at": "2026-10-21",
       "role_counts": {
-        "co_lead": 3,
+        "co_lead": 4,
         "historical_or_ambiguous": 3,
-        "lead": 5,
+        "lead": 4,
         "participant": 8
       },
       "round_codes": [
@@ -642231,7 +642227,7 @@
             "source_id": "index_companies"
           },
           {
-            "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮领投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮联合领投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-6ecc9e9d3c026d5a"
           },
           {
@@ -642404,7 +642400,7 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-47f071760f6cb0c4",
+          "activity_id": "IA-2e913b57d4ee4085",
           "funding_insight_id": "FI-f6024633a1bff4e3",
           "event_ids": [
             "EV-cd3cf94d0f65aea1"
@@ -642430,8 +642426,8 @@
           "china_market_match": false,
           "disclosure_status": "disclosed",
           "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead"
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
         },
         {
           "activity_id": "IA-dbf5a3071649decf",
@@ -687206,213 +687202,6 @@
       }
     },
     {
-      "id": "INV-e6afe9f182c442",
-      "name": "A*",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 3,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 3,
-      "market_regions": [
-        "GLOBAL"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2026-03-19",
-      "latest_disclosed_at": "2026-10-21",
-      "role_counts": {
-        "participant": 3
-      },
-      "round_codes": [
-        "seed",
-        "series_a"
-      ],
-      "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "researched",
-        "coverage_note": "机构定位来自 A* 官网；融资参与来自 TechCrunch报道。未将“A*”与其他同名公司或投资人混并。",
-        "summary": "A* 官网将其定位为早期风险投资公司，强调与创始人建立长期合作关系。TechCrunch 将 A* 列为 DesignArena融资参与方之一。",
-        "facts": [
-          {
-            "field": "stage_and_approach",
-            "label": "官网披露的机构阶段与合作方式",
-            "value": "A* 官网称其为早期风险投资机构，推动投资者与创业者从交易式资本转向实质合作。",
-            "source_id": "PROFILE-da9e02b8376535ed308c"
-          }
-        ],
-        "milestones": [],
-        "track_record": [
-          {
-            "description": "公开融资来源将A*列为Intelligence相关融资的投资参与方。",
-            "source_id": "FISRC-3fa34b4b7b9a1a77"
-          },
-          {
-            "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-d40817bd8696706a"
-          },
-          {
-            "description": "融资来源记录：Edra · A轮 · 2026-03-19 · 本轮参投 · 3000万美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-f0bd0469bbdd29e2"
-          }
-        ],
-        "contacts": [],
-        "sources": [
-          {
-            "source_id": "PROFILE-da9e02b8376535ed308c",
-            "source_url": "https://www.a-star.co/",
-            "source_title": "A* - Guiding Outliers From Idea To IPO",
-            "source_content_hash": "5939baff9e5c6b54f5f284fcf1eccdcbc3e44ee0800753e92abf1685c820dc1e",
-            "quote": "A* is an early stage venture capital firm that is leading the shift from transactional capital to meaningful partnerships.",
-            "quote_hash": "6b3b3c53b2af2a234118e33d4f509d9804c4943dde3f33ec7fff50f5c09961bc"
-          },
-          {
-            "source_id": "FISRC-3fa34b4b7b9a1a77",
-            "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
-            "source_title": "Design Arena creators raise $7.9 million to bring taste to AI models | TechCrunch",
-            "source_content_hash": "1144f8198bc2da41e90c4d4bf22f4718b90931f2f9f678ef42b6438c7180f040",
-            "quote": "with participation from Conviction (Sarah Guo and Mike Vernal), A*, Valkyrie, and others",
-            "quote_hash": "20be01adf24a3391c5fa5e6bebfa4ca95802560254df872449efba35e111922b"
-          },
-          {
-            "source_id": "FISRC-d40817bd8696706a",
-            "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
-            "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
-            "source_content_hash": "52d288f9f7f1c202",
-            "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
-            "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
-          },
-          {
-            "source_id": "FISRC-f0bd0469bbdd29e2",
-            "source_url": "https://tech.eu/2026/03/19/edra-raises-309m-series-a-to-turn-enterprise-data-into-self-improving-ai-agents/",
-            "source_title": "红杉资本支持的Edra完成3000万美元A轮融资，将企业数据转化为自我优化的AI智能体",
-            "source_content_hash": "043f0819e45e2208",
-            "quote": "which included investment from 8VC and A*z.",
-            "quote_hash": "a17c6a3c0aa2ff6760f9f6b20f563d3a68b5d776f0dd68a240ebf389b9c5ad08"
-          }
-        ],
-        "last_verified_at": "2026-10-04",
-        "current_roles": [],
-        "career": [],
-        "education": [],
-        "experience_summary": ""
-      },
-      "activity_count": 3,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-b10da733dff99be1",
-          "canonical_entity_id": "",
-          "name": "Edra"
-        },
-        {
-          "entity_id": "EN-c9bd40e58364720b",
-          "canonical_entity_id": "",
-          "name": "Flapping Airplanes"
-        },
-        {
-          "entity_id": "EN-9f80a5e14017ccc0",
-          "canonical_entity_id": "",
-          "name": "Intelligence"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-b303b2b73a982ce7",
-          "funding_insight_id": "FI-f6024633a1bff4e3",
-          "event_ids": [
-            "EV-cd3cf94d0f65aea1"
-          ],
-          "company_entity_id": "EN-c9bd40e58364720b",
-          "company_canonical_entity_id": "",
-          "company_name": "Flapping Airplanes",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
-          "amount_original": "$1B",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿美元"
-          },
-          "announced_at": "2026-10-21",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-d1afd407f2fb5b1c",
-          "funding_insight_id": "FI-36e2dba781b80e3a",
-          "event_ids": [
-            "EV-2301cd1470155075"
-          ],
-          "company_entity_id": "EN-9f80a5e14017ccc0",
-          "company_canonical_entity_id": "",
-          "company_name": "Intelligence",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "$7.9 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 7900000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "790 万美元"
-          },
-          "announced_at": "2026-08-03",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-85188839f851b12b",
-          "funding_insight_id": "FI-f7944cc1c3817381",
-          "event_ids": [
-            "EV-4c247b02485de09b"
-          ],
-          "company_entity_id": "EN-b10da733dff99be1",
-          "company_canonical_entity_id": "",
-          "company_name": "Edra",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
-          "amount_original": "3000万美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 30000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3000 万美元"
-          },
-          "announced_at": "2026-03-19",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ]
-    },
-    {
       "id": "INV-b589b7440c714c",
       "name": "Baron Capital",
       "aliases": [],
@@ -717610,7 +717399,7 @@
       },
       "round_codes": [
         "angel",
-        "series_a"
+        "multi_round"
       ],
       "public_profile": {
         "profile_type": "organization",
@@ -717633,7 +717422,7 @@
             "source_id": "B31-FUHUA-RONGXIN"
           },
           {
-            "description": "融资来源记录：柏垠生物 · A轮 · 2026-10-22 · 本轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资来源记录：柏垠生物 · 多轮融资 · 2026-10-22 · A轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-c853fbb5ce244b00"
           },
           {
@@ -717697,17 +717486,17 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-a990fa72aabad484",
-          "funding_insight_id": "FI-35003d4e229c95f9",
+          "activity_id": "IA-a2c266923d436851",
+          "funding_insight_id": "FI-ead03f18fb1f8e46",
           "event_ids": [
             "EV-fe4e2cdf3f2a5075"
           ],
           "company_entity_id": "EN-48901d83aaf2d3df",
           "company_canonical_entity_id": "",
           "company_name": "柏垠生物",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "A轮及A+轮系列融资（合计）",
           "amount_original": "超2亿元",
           "amount_normalized": {
             "currency": "CNY",
@@ -717723,7 +717512,7 @@
           "china_market_match": true,
           "disclosure_status": "disclosed",
           "scope": "current_round",
-          "role": "本轮参投",
+          "role": "A轮参投",
           "role_code": "participant"
         },
         {
@@ -717782,7 +717571,7 @@
         "participant": 2
       },
       "round_codes": [
-        "series_a",
+        "multi_round",
         "strategic"
       ],
       "public_profile": {
@@ -717810,7 +717599,7 @@
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：柏垠生物 · A轮 · 2026-10-22 · 本轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资来源记录：柏垠生物 · 多轮融资 · 2026-10-22 · A轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-c853fbb5ce244b00"
           },
           {
@@ -717898,17 +717687,17 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-1d8bcf6a11d07ba7",
-          "funding_insight_id": "FI-35003d4e229c95f9",
+          "activity_id": "IA-ce1288821bafc18b",
+          "funding_insight_id": "FI-ead03f18fb1f8e46",
           "event_ids": [
             "EV-fe4e2cdf3f2a5075"
           ],
           "company_entity_id": "EN-48901d83aaf2d3df",
           "company_canonical_entity_id": "",
           "company_name": "柏垠生物",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "A轮及A+轮系列融资（合计）",
           "amount_original": "超2亿元",
           "amount_normalized": {
             "currency": "CNY",
@@ -717924,7 +717713,7 @@
           "china_market_match": true,
           "disclosure_status": "disclosed",
           "scope": "current_round",
-          "role": "本轮参投",
+          "role": "A轮参投",
           "role_code": "participant"
         },
         {
@@ -718297,152 +718086,6 @@
         ],
         "last_verified_at": "2026-10-06"
       }
-    },
-    {
-      "id": "INV-d44c03471d8c5f",
-      "name": "Atreides",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 2,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 2,
-      "market_regions": [
-        "GLOBAL"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2026-05-27",
-      "latest_disclosed_at": "2026-10-21",
-      "role_counts": {
-        "other_current_round": 1,
-        "participant": 1
-      },
-      "round_codes": [
-        "series_a",
-        "series_d"
-      ],
-      "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-        "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
-          {
-            "description": "公开融资来源将其列为 Cognition D轮 本轮新进投资方。",
-            "source_id": "FISRC-c7d89f6e73a6fe5b"
-          },
-          {
-            "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-d40817bd8696706a"
-          }
-        ],
-        "contacts": [],
-        "sources": [
-          {
-            "source_id": "FISRC-c7d89f6e73a6fe5b",
-            "source_url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
-            "source_title": "AI coding startup Cognition raises $1B at $25B pre-money valuation | TechCrunch",
-            "source_content_hash": "b34b882bac185cfdf265124d0fcb43b740c91be1aaa180c881b72565ca485ada",
-            "quote": "The round also included new investors like Ribbit Capital, Atreides, and Layer Global.",
-            "quote_hash": "2c8e3fb8d1a37ea08291fea31823e097703b53cab4ef6c7e04fa2af1f073d850"
-          },
-          {
-            "source_id": "FISRC-d40817bd8696706a",
-            "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
-            "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
-            "source_content_hash": "52d288f9f7f1c202",
-            "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
-            "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
-          }
-        ],
-        "last_verified_at": "2026-10-03",
-        "current_roles": [],
-        "career": [],
-        "education": [],
-        "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
-      },
-      "activity_count": 2,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-ac32f27ba7a1346f",
-          "canonical_entity_id": "",
-          "name": "Cognition"
-        },
-        {
-          "entity_id": "EN-c9bd40e58364720b",
-          "canonical_entity_id": "",
-          "name": "Flapping Airplanes"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-f8ae7160526b7fc6",
-          "funding_insight_id": "FI-f6024633a1bff4e3",
-          "event_ids": [
-            "EV-cd3cf94d0f65aea1"
-          ],
-          "company_entity_id": "EN-c9bd40e58364720b",
-          "company_canonical_entity_id": "",
-          "company_name": "Flapping Airplanes",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
-          "amount_original": "$1B",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿美元"
-          },
-          "announced_at": "2026-10-21",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-a44a63369414a1c1",
-          "funding_insight_id": "FI-5faa0336090509de",
-          "event_ids": [
-            "EV-5762fe51987bc5ff"
-          ],
-          "company_entity_id": "EN-ac32f27ba7a1346f",
-          "company_canonical_entity_id": "",
-          "company_name": "Cognition",
-          "round": "D轮",
-          "round_code": "series_d",
-          "round_original": "Series D",
-          "amount_original": "超过 10 亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 1000000000,
-            "min_value": 1000000000,
-            "max_value": null,
-            "unit": "base",
-            "status": "lower_bound",
-            "display_zh": "超过 10 亿美元"
-          },
-          "announced_at": "2026-05-27",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮新进投资方",
-          "role_code": "other_current_round"
-        }
-      ]
     },
     {
       "id": "INV-fe44cc09640bec",
@@ -745429,7 +745072,7 @@
         },
         {
           "activity_id": "IA-a52056f92d65f2c8",
-          "funding_insight_id": "FI-35003d4e229c95f9",
+          "funding_insight_id": "FI-ead03f18fb1f8e46",
           "event_ids": [
             "EV-fe4e2cdf3f2a5075"
           ],
@@ -763913,6 +763556,201 @@
           "scope": "current_round",
           "role": "本轮参投",
           "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-e6afe9f182c442",
+      "name": "A*",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 2,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-03-19",
+      "latest_disclosed_at": "2026-08-03",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 2
+      },
+      "round_codes": [
+        "seed",
+        "series_a"
+      ],
+      "public_profile": {
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "机构定位来自 A* 官网；融资参与来自 TechCrunch报道。未将“A*”与其他同名公司或投资人混并。",
+        "summary": "A* 官网将其定位为早期风险投资公司，强调与创始人建立长期合作关系。TechCrunch 将 A* 列为 DesignArena融资参与方之一。",
+        "facts": [
+          {
+            "field": "stage_and_approach",
+            "label": "官网披露的机构阶段与合作方式",
+            "value": "A* 官网称其为早期风险投资机构，推动投资者与创业者从交易式资本转向实质合作。",
+            "source_id": "PROFILE-da9e02b8376535ed308c"
+          }
+        ],
+        "milestones": [],
+        "track_record": [
+          {
+            "description": "公开融资来源将A*列为Intelligence相关融资的投资参与方。",
+            "source_id": "FISRC-3fa34b4b7b9a1a77"
+          },
+          {
+            "description": "融资来源记录：Edra · A轮 · 2026-03-19 · 本轮参投 · 3000万美元。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-f0bd0469bbdd29e2"
+          },
+          {
+            "description": "融资来源记录：Flapping Airplanes · 历史轮次未披露 · 既有投资方（本轮参与未披露）。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-d40817bd8696706a"
+          }
+        ],
+        "contacts": [],
+        "sources": [
+          {
+            "source_id": "PROFILE-da9e02b8376535ed308c",
+            "source_url": "https://www.a-star.co/",
+            "source_title": "A* - Guiding Outliers From Idea To IPO",
+            "source_content_hash": "5939baff9e5c6b54f5f284fcf1eccdcbc3e44ee0800753e92abf1685c820dc1e",
+            "quote": "A* is an early stage venture capital firm that is leading the shift from transactional capital to meaningful partnerships.",
+            "quote_hash": "6b3b3c53b2af2a234118e33d4f509d9804c4943dde3f33ec7fff50f5c09961bc"
+          },
+          {
+            "source_id": "FISRC-3fa34b4b7b9a1a77",
+            "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
+            "source_title": "Design Arena creators raise $7.9 million to bring taste to AI models | TechCrunch",
+            "source_content_hash": "1144f8198bc2da41e90c4d4bf22f4718b90931f2f9f678ef42b6438c7180f040",
+            "quote": "with participation from Conviction (Sarah Guo and Mike Vernal), A*, Valkyrie, and others",
+            "quote_hash": "20be01adf24a3391c5fa5e6bebfa4ca95802560254df872449efba35e111922b"
+          },
+          {
+            "source_id": "FISRC-f0bd0469bbdd29e2",
+            "source_url": "https://tech.eu/2026/03/19/edra-raises-309m-series-a-to-turn-enterprise-data-into-self-improving-ai-agents/",
+            "source_title": "红杉资本支持的Edra完成3000万美元A轮融资，将企业数据转化为自我优化的AI智能体",
+            "source_content_hash": "043f0819e45e2208",
+            "quote": "which included investment from 8VC and A*z.",
+            "quote_hash": "a17c6a3c0aa2ff6760f9f6b20f563d3a68b5d776f0dd68a240ebf389b9c5ad08"
+          },
+          {
+            "source_id": "FISRC-d40817bd8696706a",
+            "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+            "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+            "source_content_hash": "52d288f9f7f1c202",
+            "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
+            "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
+          }
+        ],
+        "last_verified_at": "2026-10-04",
+        "current_roles": [],
+        "career": [],
+        "education": [],
+        "experience_summary": ""
+      },
+      "activity_count": 3,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-b10da733dff99be1",
+          "canonical_entity_id": "",
+          "name": "Edra"
+        },
+        {
+          "entity_id": "EN-9f80a5e14017ccc0",
+          "canonical_entity_id": "",
+          "name": "Intelligence"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-d1afd407f2fb5b1c",
+          "funding_insight_id": "FI-36e2dba781b80e3a",
+          "event_ids": [
+            "EV-2301cd1470155075"
+          ],
+          "company_entity_id": "EN-9f80a5e14017ccc0",
+          "company_canonical_entity_id": "",
+          "company_name": "Intelligence",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$7.9 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 7900000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "790 万美元"
+          },
+          "announced_at": "2026-08-03",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-85188839f851b12b",
+          "funding_insight_id": "FI-f7944cc1c3817381",
+          "event_ids": [
+            "EV-4c247b02485de09b"
+          ],
+          "company_entity_id": "EN-b10da733dff99be1",
+          "company_canonical_entity_id": "",
+          "company_name": "Edra",
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "3000万美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 30000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3000 万美元"
+          },
+          "announced_at": "2026-03-19",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-f78d19015ff4db3b",
+          "funding_insight_id": "FI-f6024633a1bff4e3",
+          "event_ids": [
+            "EV-cd3cf94d0f65aea1"
+          ],
+          "company_entity_id": "EN-c9bd40e58364720b",
+          "company_canonical_entity_id": "",
+          "company_name": "Flapping Airplanes",
+          "round": "历史轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "",
+          "amount_original": "",
+          "amount_normalized": null,
+          "announced_at": "",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "unknown",
+          "scope": "historical_or_ambiguous",
+          "role": "既有投资方（本轮参与未披露）",
+          "role_code": "historical_or_ambiguous"
         }
       ]
     },
@@ -792333,7 +792171,7 @@
         "lead": 1
       },
       "round_codes": [
-        "series_a"
+        "multi_round"
       ],
       "activity_count": 1,
       "portfolio_companies": [
@@ -792345,17 +792183,17 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-cc35a9a2bd24d466",
-          "funding_insight_id": "FI-35003d4e229c95f9",
+          "activity_id": "IA-18b15c8dcf873e9d",
+          "funding_insight_id": "FI-ead03f18fb1f8e46",
           "event_ids": [
             "EV-fe4e2cdf3f2a5075"
           ],
           "company_entity_id": "EN-48901d83aaf2d3df",
           "company_canonical_entity_id": "",
           "company_name": "柏垠生物",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "A轮及A+轮系列融资（合计）",
           "amount_original": "超2亿元",
           "amount_normalized": {
             "currency": "CNY",
@@ -792371,7 +792209,7 @@
           "china_market_match": true,
           "disclosure_status": "disclosed",
           "scope": "current_round",
-          "role": "本轮领投",
+          "role": "A+轮领投",
           "role_code": "lead"
         }
       ],
@@ -792385,7 +792223,7 @@
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：柏垠生物 · A轮 · 2026-10-22 · 本轮领投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资来源记录：柏垠生物 · 多轮融资 · 2026-10-22 · A+轮领投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-c853fbb5ce244b00"
           }
         ],
@@ -792426,7 +792264,7 @@
         "participant": 1
       },
       "round_codes": [
-        "series_a"
+        "multi_round"
       ],
       "activity_count": 1,
       "portfolio_companies": [
@@ -792438,17 +792276,17 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-a3ed5b619703a8d2",
-          "funding_insight_id": "FI-35003d4e229c95f9",
+          "activity_id": "IA-07a3c1da2429b02a",
+          "funding_insight_id": "FI-ead03f18fb1f8e46",
           "event_ids": [
             "EV-fe4e2cdf3f2a5075"
           ],
           "company_entity_id": "EN-48901d83aaf2d3df",
           "company_canonical_entity_id": "",
           "company_name": "柏垠生物",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "A轮及A+轮系列融资（合计）",
           "amount_original": "超2亿元",
           "amount_normalized": {
             "currency": "CNY",
@@ -792464,7 +792302,7 @@
           "china_market_match": true,
           "disclosure_status": "disclosed",
           "scope": "current_round",
-          "role": "本轮参投",
+          "role": "A轮参投",
           "role_code": "participant"
         }
       ],
@@ -792478,7 +792316,7 @@
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：柏垠生物 · A轮 · 2026-10-22 · 本轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资来源记录：柏垠生物 · 多轮融资 · 2026-10-22 · A轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-c853fbb5ce244b00"
           }
         ],
@@ -792516,10 +792354,10 @@
       "first_disclosed_at": "2026-10-22",
       "latest_disclosed_at": "2026-10-22",
       "role_counts": {
-        "lead": 1
+        "co_lead": 1
       },
       "round_codes": [
-        "series_a"
+        "multi_round"
       ],
       "activity_count": 1,
       "portfolio_companies": [
@@ -792531,17 +792369,17 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-a3d734f0215c5787",
-          "funding_insight_id": "FI-35003d4e229c95f9",
+          "activity_id": "IA-be0fe345156bed21",
+          "funding_insight_id": "FI-ead03f18fb1f8e46",
           "event_ids": [
             "EV-fe4e2cdf3f2a5075"
           ],
           "company_entity_id": "EN-48901d83aaf2d3df",
           "company_canonical_entity_id": "",
           "company_name": "柏垠生物",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "A轮及A+轮系列融资（合计）",
           "amount_original": "超2亿元",
           "amount_normalized": {
             "currency": "CNY",
@@ -792557,8 +792395,8 @@
           "china_market_match": true,
           "disclosure_status": "disclosed",
           "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead"
+          "role": "A轮联合领投",
+          "role_code": "co_lead"
         }
       ],
       "public_profile": {
@@ -792571,7 +792409,7 @@
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：柏垠生物 · A轮 · 2026-10-22 · 本轮领投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资来源记录：柏垠生物 · 多轮融资 · 2026-10-22 · A轮联合领投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-c853fbb5ce244b00"
           }
         ],
@@ -792609,10 +792447,10 @@
       "first_disclosed_at": "2026-10-22",
       "latest_disclosed_at": "2026-10-22",
       "role_counts": {
-        "lead": 1
+        "co_lead": 1
       },
       "round_codes": [
-        "series_a"
+        "multi_round"
       ],
       "activity_count": 1,
       "portfolio_companies": [
@@ -792624,17 +792462,17 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-55799c930b26519a",
-          "funding_insight_id": "FI-35003d4e229c95f9",
+          "activity_id": "IA-ea2cbb8d8940c7c9",
+          "funding_insight_id": "FI-ead03f18fb1f8e46",
           "event_ids": [
             "EV-fe4e2cdf3f2a5075"
           ],
           "company_entity_id": "EN-48901d83aaf2d3df",
           "company_canonical_entity_id": "",
           "company_name": "柏垠生物",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "A轮及A+轮系列融资（合计）",
           "amount_original": "超2亿元",
           "amount_normalized": {
             "currency": "CNY",
@@ -792650,8 +792488,8 @@
           "china_market_match": true,
           "disclosure_status": "disclosed",
           "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead"
+          "role": "A轮联合领投",
+          "role_code": "co_lead"
         }
       ],
       "public_profile": {
@@ -792664,7 +792502,7 @@
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：柏垠生物 · A轮 · 2026-10-22 · 本轮领投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资来源记录：柏垠生物 · 多轮融资 · 2026-10-22 · A轮联合领投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-c853fbb5ce244b00"
           }
         ],
@@ -792705,7 +792543,7 @@
         "participant": 1
       },
       "round_codes": [
-        "series_a"
+        "multi_round"
       ],
       "activity_count": 1,
       "portfolio_companies": [
@@ -792717,17 +792555,17 @@
       ],
       "latest_activities": [
         {
-          "activity_id": "IA-a1d581a8dd5ca9a3",
-          "funding_insight_id": "FI-35003d4e229c95f9",
+          "activity_id": "IA-ad9ddf16de417ba9",
+          "funding_insight_id": "FI-ead03f18fb1f8e46",
           "event_ids": [
             "EV-fe4e2cdf3f2a5075"
           ],
           "company_entity_id": "EN-48901d83aaf2d3df",
           "company_canonical_entity_id": "",
           "company_name": "柏垠生物",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "A轮及A+轮系列融资（合计）",
           "amount_original": "超2亿元",
           "amount_normalized": {
             "currency": "CNY",
@@ -792743,7 +792581,7 @@
           "china_market_match": true,
           "disclosure_status": "disclosed",
           "scope": "current_round",
-          "role": "本轮参投",
+          "role": "A轮参投",
           "role_code": "participant"
         }
       ],
@@ -792757,7 +792595,7 @@
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：柏垠生物 · A轮 · 2026-10-22 · 本轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资来源记录：柏垠生物 · 多轮融资 · 2026-10-22 · A轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-c853fbb5ce244b00"
           }
         ],
@@ -793770,99 +793608,6 @@
             "source_content_hash": "c8ef521d256775c4737d3e8ac692bdf3c9644d011a007d4a52337463ebb1f0ce",
             "quote": "has raised €8 million in a Series A funding round led by Ventech, with participation from Sake Bosch, Caesar Capital and business angels",
             "quote_hash": "5e0c909a7b979d6917367f963dee1e4b50314405a167b83aaeda8223ec535787"
-          }
-        ],
-        "last_verified_at": "2026-10-06"
-      }
-    },
-    {
-      "id": "INV-ac5f4a33f433fa",
-      "name": "Valor",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "GLOBAL"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2026-10-21",
-      "latest_disclosed_at": "2026-10-21",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "series_a"
-      ],
-      "activity_count": 1,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-c9bd40e58364720b",
-          "canonical_entity_id": "",
-          "name": "Flapping Airplanes"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-81588708ffbc920b",
-          "funding_insight_id": "FI-f6024633a1bff4e3",
-          "event_ids": [
-            "EV-cd3cf94d0f65aea1"
-          ],
-          "company_entity_id": "EN-c9bd40e58364720b",
-          "company_canonical_entity_id": "",
-          "company_name": "Flapping Airplanes",
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
-          "amount_original": "$1B",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿美元"
-          },
-          "announced_at": "2026-10-21",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ],
-      "public_profile": {
-        "profile_type": "unverified",
-        "identity_status": "pending_verification",
-        "coverage_status": "identity_unverified",
-        "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Valor 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
-          {
-            "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-d40817bd8696706a"
-          }
-        ],
-        "contacts": [],
-        "sources": [
-          {
-            "source_id": "FISRC-d40817bd8696706a",
-            "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
-            "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
-            "source_content_hash": "52d288f9f7f1c202",
-            "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
-            "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
           }
         ],
         "last_verified_at": "2026-10-06"
@@ -934251,7 +933996,7 @@
       "classification_confidence": "unverified",
       "collection_status": "evidence_backed",
       "current_round_count": 1,
-      "historical_or_ambiguous_count": 2,
+      "historical_or_ambiguous_count": 1,
       "portfolio_company_count": 1,
       "market_regions": [
         "CN"
@@ -934261,7 +934006,7 @@
       "first_disclosed_at": "2026-07-07",
       "latest_disclosed_at": "2026-07-07",
       "role_counts": {
-        "historical_or_ambiguous": 2,
+        "historical_or_ambiguous": 1,
         "participant": 1
       },
       "round_codes": [
@@ -934305,10 +934050,6 @@
             "source_id": "FISRC-602fdc3dbd5462df"
           },
           {
-            "description": "融资来源记录：柏垠生物 · 历史轮次未披露 · 天使+轮领投（2022年）。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-a6d4a89a4880729c"
-          },
-          {
             "description": "融资来源记录：玩点旅行 · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-eea8e7a4669a91fa"
           }
@@ -934347,14 +934088,6 @@
             "quote_hash": "38a3453c6027233044d8f2e5fa4a5815ec37189fdb1c7083f4a6d3387a8a3ebf"
           },
           {
-            "source_id": "FISRC-a6d4a89a4880729c",
-            "source_url": "https://bydrug.pharmcube.com/",
-            "source_title": "2026Q2 中国院内外药品市场销售分析报告_医药魔方",
-            "source_content_hash": "79c45dfdab1971ef",
-            "quote": "2022年，天图投资领投柏垠生物天使+轮融资",
-            "quote_hash": "0c57283b840457fae9f25814de9d24fa2e3306745daf4abcba25bbe36df8f185"
-          },
-          {
             "source_id": "FISRC-eea8e7a4669a91fa",
             "source_url": "https://news.pedaily.cn/202606/565039.shtml",
             "source_title": "AI旅行服务平台「玩点旅行」完成超亿元Pre-A轮融资",
@@ -934365,7 +934098,7 @@
         ],
         "last_verified_at": "2026-10-04"
       },
-      "activity_count": 3,
+      "activity_count": 2,
       "portfolio_companies": [
         {
           "entity_id": "EN-661e258611a26646",
@@ -934403,28 +934136,6 @@
           "scope": "current_round",
           "role": "本轮参投",
           "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-be2f5be0371f594a",
-          "funding_insight_id": "FI-35003d4e229c95f9",
-          "event_ids": [
-            "EV-fe4e2cdf3f2a5075"
-          ],
-          "company_entity_id": "EN-48901d83aaf2d3df",
-          "company_canonical_entity_id": "",
-          "company_name": "柏垠生物",
-          "round": "历史轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "",
-          "amount_original": "",
-          "amount_normalized": null,
-          "announced_at": "",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "unknown",
-          "scope": "historical_or_ambiguous",
-          "role": "天使+轮领投（2022年）",
-          "role_code": "historical_or_ambiguous"
         },
         {
           "activity_id": "IA-ea93c971322ddfad",
@@ -978466,6 +978177,138 @@
           "scope": "current_round",
           "role": "本轮参投",
           "role_code": "participant"
+        }
+      ]
+    },
+    {
+      "id": "INV-d44c03471d8c5f",
+      "name": "Atreides",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-05-27",
+      "latest_disclosed_at": "2026-05-27",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "other_current_round": 1
+      },
+      "round_codes": [
+        "series_d"
+      ],
+      "public_profile": {
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "activity_only",
+        "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
+        "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
+        "facts": [],
+        "milestones": [],
+        "track_record": [
+          {
+            "description": "公开融资来源将其列为 Cognition D轮 本轮新进投资方。",
+            "source_id": "FISRC-c7d89f6e73a6fe5b"
+          },
+          {
+            "description": "融资来源记录：Flapping Airplanes · 历史轮次未披露 · 既有投资方（本轮参与未披露）。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-d40817bd8696706a"
+          }
+        ],
+        "contacts": [],
+        "sources": [
+          {
+            "source_id": "FISRC-c7d89f6e73a6fe5b",
+            "source_url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+            "source_title": "AI coding startup Cognition raises $1B at $25B pre-money valuation | TechCrunch",
+            "source_content_hash": "b34b882bac185cfdf265124d0fcb43b740c91be1aaa180c881b72565ca485ada",
+            "quote": "The round also included new investors like Ribbit Capital, Atreides, and Layer Global.",
+            "quote_hash": "2c8e3fb8d1a37ea08291fea31823e097703b53cab4ef6c7e04fa2af1f073d850"
+          },
+          {
+            "source_id": "FISRC-d40817bd8696706a",
+            "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+            "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+            "source_content_hash": "52d288f9f7f1c202",
+            "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
+            "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
+          }
+        ],
+        "last_verified_at": "2026-10-03",
+        "current_roles": [],
+        "career": [],
+        "education": [],
+        "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      },
+      "activity_count": 2,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-ac32f27ba7a1346f",
+          "canonical_entity_id": "",
+          "name": "Cognition"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-a44a63369414a1c1",
+          "funding_insight_id": "FI-5faa0336090509de",
+          "event_ids": [
+            "EV-5762fe51987bc5ff"
+          ],
+          "company_entity_id": "EN-ac32f27ba7a1346f",
+          "company_canonical_entity_id": "",
+          "company_name": "Cognition",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "Series D",
+          "amount_original": "超过 10 亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1000000000,
+            "min_value": 1000000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 10 亿美元"
+          },
+          "announced_at": "2026-05-27",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮新进投资方",
+          "role_code": "other_current_round"
+        },
+        {
+          "activity_id": "IA-6065aff0de1bf19b",
+          "funding_insight_id": "FI-f6024633a1bff4e3",
+          "event_ids": [
+            "EV-cd3cf94d0f65aea1"
+          ],
+          "company_entity_id": "EN-c9bd40e58364720b",
+          "company_canonical_entity_id": "",
+          "company_name": "Flapping Airplanes",
+          "round": "历史轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "",
+          "amount_original": "",
+          "amount_normalized": null,
+          "announced_at": "",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "unknown",
+          "scope": "historical_or_ambiguous",
+          "role": "既有投资方（本轮参与未披露）",
+          "role_code": "historical_or_ambiguous"
         }
       ]
     },
@@ -1150399,6 +1150242,83 @@
             "status": "translated"
           }
         }
+      }
+    },
+    {
+      "id": "INV-ac5f4a33f433fa",
+      "name": "Valor",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "",
+      "latest_disclosed_at": "",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "activity_count": 1,
+      "portfolio_companies": [],
+      "latest_activities": [
+        {
+          "activity_id": "IA-ce20792670ba5bac",
+          "funding_insight_id": "FI-f6024633a1bff4e3",
+          "event_ids": [
+            "EV-cd3cf94d0f65aea1"
+          ],
+          "company_entity_id": "EN-c9bd40e58364720b",
+          "company_canonical_entity_id": "",
+          "company_name": "Flapping Airplanes",
+          "round": "历史轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "",
+          "amount_original": "",
+          "amount_normalized": null,
+          "announced_at": "",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "unknown",
+          "scope": "historical_or_ambiguous",
+          "role": "既有投资方（本轮参与未披露）",
+          "role_code": "historical_or_ambiguous"
+        }
+      ],
+      "public_profile": {
+        "profile_type": "unverified",
+        "identity_status": "pending_verification",
+        "coverage_status": "identity_unverified",
+        "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+        "summary": "Valor 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "facts": [],
+        "milestones": [],
+        "track_record": [
+          {
+            "description": "融资来源记录：Flapping Airplanes · 历史轮次未披露 · 既有投资方（本轮参与未披露）。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-d40817bd8696706a"
+          }
+        ],
+        "contacts": [],
+        "sources": [
+          {
+            "source_id": "FISRC-d40817bd8696706a",
+            "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+            "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+            "source_content_hash": "52d288f9f7f1c202",
+            "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
+            "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
+          }
+        ],
+        "last_verified_at": "2026-10-06"
       }
     },
     {
@@ -1663271,7 +1663191,7 @@
   "entityHistoryManifest": {
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-10-21T05:52:51.753Z",
+    "generatedAt": "2026-10-22T06:02:54.497Z",
     "coverage": {
       "startDate": "2017-09-07",
       "endDate": "2027-09-30",

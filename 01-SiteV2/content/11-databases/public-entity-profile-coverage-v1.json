@@ -326,125 +326,6 @@
       "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
-    "INV-c73d9854fb920b": {
-      "summary": "NVIDIA 是一家设有企业投资职能并运营 NVentures 风险投资部门的科技公司。NVentures 官网介绍其面向 AI 基础设施、机器人、数字生物学、应用 AI 和前沿计算等领域投资。融资活动库中的“Nvidia”名称未必能单独确认交易由 NVentures 还是其他 NVIDIA 投资职能完成。",
-      "facts": [
-        {
-          "field": "venture_arm",
-          "label": "风险投资部门",
-          "value": "NVentures",
-          "source_id": "nvidia_nventures"
-        },
-        {
-          "field": "sectors",
-          "label": "NVentures 官网列示领域",
-          "value": [
-            "AI 基础设施",
-            "机器人",
-            "数字生物学",
-            "应用 AI",
-            "前沿计算"
-          ],
-          "source_id": "nvidia_nventures"
-        },
-        {
-          "field": "organization_structure",
-          "label": "投资职能区分",
-          "value": "NVIDIA 区分企业投资、NVentures 风险投资部门与 NVIDIA Inception 创业生态项目；融资记录名称不足以确认具体投资职能。",
-          "source_id": "nvidia_investments"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "NVentures 官网列有其组合企业与技术领域案例。本库归在 NVIDIA 名称下的单笔融资不据此自动归属至 NVentures。",
-          "source_id": "nvidia_nventures"
-        },
-        {
-          "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d40817bd8696706a"
-        },
-        {
-          "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮参投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-295e99df6a40bc79"
-        },
-        {
-          "description": "融资来源记录：Safe Superintelligence Inc. · 其他融资 · 2026-10-05 · 本轮领投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-062aa9e732f0aba2"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "NVentures 官方介绍",
-          "value": "NVIDIA NVentures",
-          "url": "https://www.nvidia.com/en-us/startups/nventures/",
-          "source_id": "nvidia_nventures"
-        },
-        {
-          "kind": "email",
-          "label": "NVIDIA 媒体联系（非投资申请渠道）",
-          "value": "press@nvidia.com",
-          "url": "https://nvidianews.nvidia.com/contacts",
-          "source_id": "nvidia_press"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "nvidia_nventures",
-          "source_url": "https://www.nvidia.com/en-us/startups/nventures/",
-          "source_title": "NVentures — NVIDIA’s Venture Capital Arm",
-          "source_content_hash": "d3359c5664cc0744c232347ec30517b0834e716c4a9808c4687212c848fb9be4",
-          "quote": "NVentures is NVIDIA’s venture capital arm. It focuses on AI infrastructure, robotics, digital biology, applied AI, and frontier compute.",
-          "quote_hash": "76a883d3cc2e85af162b76448500782412f39d28a282bb5e328113af0724ca27"
-        },
-        {
-          "source_id": "nvidia_investments",
-          "source_url": "https://blogs.nvidia.com/blog/nvidia-investments/",
-          "source_title": "How NVIDIA Fuels the AI Revolution With Investments",
-          "source_content_hash": "80a65457203d02c3a0dc7374f3b4d23df5b9a0f8db47e5d638bc78da21d5f47d",
-          "quote": "First, through NVIDIA’s corporate investments. Second, through NVentures, our venture capital arm.",
-          "quote_hash": "3ddbba673e7d60baa99d53e1ed1212a5a5e70e0e7bcc8f71deed25c2ec7af278"
-        },
-        {
-          "source_id": "nvidia_press",
-          "source_url": "https://nvidianews.nvidia.com/contacts",
-          "source_title": "Press Contacts | NVIDIA Newsroom",
-          "source_content_hash": "e7685ee0e6b289b1f981e5ff98191c6dde923e9bdf7296e6fb71600a162d45dc",
-          "quote": "Corporate Communications: press@nvidia.com.",
-          "quote_hash": "ee1e54cd9f847ba4c9a860b598e9dfd0b8bd5688c398c80253a8a4aa8f1ef820"
-        },
-        {
-          "source_id": "FISRC-d40817bd8696706a",
-          "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
-          "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
-          "source_content_hash": "52d288f9f7f1c202",
-          "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
-          "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
-        },
-        {
-          "source_id": "FISRC-295e99df6a40bc79",
-          "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
-          "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
-          "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
-          "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
-          "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
-        },
-        {
-          "source_id": "FISRC-062aa9e732f0aba2",
-          "source_url": "https://siliconvalleyinvestclub.com/companies/ssi/",
-          "source_title": "Safe Superintelligence — Funding, Valuation & Leadership",
-          "source_content_hash": "4605e9c942d1f7c4",
-          "quote": "Jul 2026Strategic investment$5B——reported—Lead: NVIDIA",
-          "quote_hash": "36c47924470a36f94154190b3140a4b6ebbed454c2990d25a162d306416cb38b"
-        }
-      ],
-      "last_verified_at": "2026-09-25",
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
-    },
     "INV-862e0e7d2ba5cf": {
       "summary": "Sequoia Capital 是由 Don Valentine 于 1972 年创立的风险投资机构。其历史资料记载，早期基金投资了 Apple 和 Atari。",
       "facts": [
@@ -669,6 +550,121 @@
           "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
           "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
           "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
+        }
+      ],
+      "last_verified_at": "2026-09-25",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
+    "INV-c73d9854fb920b": {
+      "summary": "NVIDIA 是一家设有企业投资职能并运营 NVentures 风险投资部门的科技公司。NVentures 官网介绍其面向 AI 基础设施、机器人、数字生物学、应用 AI 和前沿计算等领域投资。融资活动库中的“Nvidia”名称未必能单独确认交易由 NVentures 还是其他 NVIDIA 投资职能完成。",
+      "facts": [
+        {
+          "field": "venture_arm",
+          "label": "风险投资部门",
+          "value": "NVentures",
+          "source_id": "nvidia_nventures"
+        },
+        {
+          "field": "sectors",
+          "label": "NVentures 官网列示领域",
+          "value": [
+            "AI 基础设施",
+            "机器人",
+            "数字生物学",
+            "应用 AI",
+            "前沿计算"
+          ],
+          "source_id": "nvidia_nventures"
+        },
+        {
+          "field": "organization_structure",
+          "label": "投资职能区分",
+          "value": "NVIDIA 区分企业投资、NVentures 风险投资部门与 NVIDIA Inception 创业生态项目；融资记录名称不足以确认具体投资职能。",
+          "source_id": "nvidia_investments"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "NVentures 官网列有其组合企业与技术领域案例。本库归在 NVIDIA 名称下的单笔融资不据此自动归属至 NVentures。",
+          "source_id": "nvidia_nventures"
+        },
+        {
+          "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮参投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-295e99df6a40bc79"
+        },
+        {
+          "description": "融资来源记录：Safe Superintelligence Inc. · 其他融资 · 2026-10-05 · 本轮领投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-062aa9e732f0aba2"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "NVentures 官方介绍",
+          "value": "NVIDIA NVentures",
+          "url": "https://www.nvidia.com/en-us/startups/nventures/",
+          "source_id": "nvidia_nventures"
+        },
+        {
+          "kind": "email",
+          "label": "NVIDIA 媒体联系（非投资申请渠道）",
+          "value": "press@nvidia.com",
+          "url": "https://nvidianews.nvidia.com/contacts",
+          "source_id": "nvidia_press"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "nvidia_nventures",
+          "source_url": "https://www.nvidia.com/en-us/startups/nventures/",
+          "source_title": "NVentures — NVIDIA’s Venture Capital Arm",
+          "source_content_hash": "d3359c5664cc0744c232347ec30517b0834e716c4a9808c4687212c848fb9be4",
+          "quote": "NVentures is NVIDIA’s venture capital arm. It focuses on AI infrastructure, robotics, digital biology, applied AI, and frontier compute.",
+          "quote_hash": "76a883d3cc2e85af162b76448500782412f39d28a282bb5e328113af0724ca27"
+        },
+        {
+          "source_id": "nvidia_investments",
+          "source_url": "https://blogs.nvidia.com/blog/nvidia-investments/",
+          "source_title": "How NVIDIA Fuels the AI Revolution With Investments",
+          "source_content_hash": "80a65457203d02c3a0dc7374f3b4d23df5b9a0f8db47e5d638bc78da21d5f47d",
+          "quote": "First, through NVIDIA’s corporate investments. Second, through NVentures, our venture capital arm.",
+          "quote_hash": "3ddbba673e7d60baa99d53e1ed1212a5a5e70e0e7bcc8f71deed25c2ec7af278"
+        },
+        {
+          "source_id": "nvidia_press",
+          "source_url": "https://nvidianews.nvidia.com/contacts",
+          "source_title": "Press Contacts | NVIDIA Newsroom",
+          "source_content_hash": "e7685ee0e6b289b1f981e5ff98191c6dde923e9bdf7296e6fb71600a162d45dc",
+          "quote": "Corporate Communications: press@nvidia.com.",
+          "quote_hash": "ee1e54cd9f847ba4c9a860b598e9dfd0b8bd5688c398c80253a8a4aa8f1ef820"
+        },
+        {
+          "source_id": "FISRC-295e99df6a40bc79",
+          "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
+          "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
+          "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
+          "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
+          "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
+        },
+        {
+          "source_id": "FISRC-062aa9e732f0aba2",
+          "source_url": "https://siliconvalleyinvestclub.com/companies/ssi/",
+          "source_title": "Safe Superintelligence — Funding, Valuation & Leadership",
+          "source_content_hash": "4605e9c942d1f7c4",
+          "quote": "Jul 2026Strategic investment$5B——reported—Lead: NVIDIA",
+          "quote_hash": "36c47924470a36f94154190b3140a4b6ebbed454c2990d25a162d306416cb38b"
+        },
+        {
+          "source_id": "FISRC-ee90c330f9d0f668",
+          "source_url": "https://www.cbinsights.com/company/safe-superintelligence/financials",
+          "source_title": "Safe Superintelligence",
+          "source_content_hash": "f98c52d77de2d0e7",
+          "quote": "Safe Superintelligence's latest funding round was a Corporate Minority for $5,000M on July 27, 2026.",
+          "quote_hash": "617ed1039258d0bf48fcbd53df651d3661c30b7bdefda30141b47c30365c9f53"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1438,7 +1434,7 @@
           "source_id": "index_companies"
         },
         {
-          "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮领投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮联合领投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6ecc9e9d3c026d5a"
         },
         {
@@ -20659,76 +20655,6 @@
       "education": [],
       "experience_summary": ""
     },
-    "INV-e6afe9f182c442": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "机构定位来自 A* 官网；融资参与来自 TechCrunch报道。未将“A*”与其他同名公司或投资人混并。",
-      "summary": "A* 官网将其定位为早期风险投资公司，强调与创始人建立长期合作关系。TechCrunch 将 A* 列为 DesignArena融资参与方之一。",
-      "facts": [
-        {
-          "field": "stage_and_approach",
-          "label": "官网披露的机构阶段与合作方式",
-          "value": "A* 官网称其为早期风险投资机构，推动投资者与创业者从交易式资本转向实质合作。",
-          "source_id": "PROFILE-da9e02b8376535ed308c"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "公开融资来源将A*列为Intelligence相关融资的投资参与方。",
-          "source_id": "FISRC-3fa34b4b7b9a1a77"
-        },
-        {
-          "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d40817bd8696706a"
-        },
-        {
-          "description": "融资来源记录：Edra · A轮 · 2026-03-19 · 本轮参投 · 3000万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f0bd0469bbdd29e2"
-        }
-      ],
-      "contacts": [],
-      "sources": [
-        {
-          "source_id": "PROFILE-da9e02b8376535ed308c",
-          "source_url": "https://www.a-star.co/",
-          "source_title": "A* - Guiding Outliers From Idea To IPO",
-          "source_content_hash": "5939baff9e5c6b54f5f284fcf1eccdcbc3e44ee0800753e92abf1685c820dc1e",
-          "quote": "A* is an early stage venture capital firm that is leading the shift from transactional capital to meaningful partnerships.",
-          "quote_hash": "6b3b3c53b2af2a234118e33d4f509d9804c4943dde3f33ec7fff50f5c09961bc"
-        },
-        {
-          "source_id": "FISRC-3fa34b4b7b9a1a77",
-          "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
-          "source_title": "Design Arena creators raise $7.9 million to bring taste to AI models | TechCrunch",
-          "source_content_hash": "1144f8198bc2da41e90c4d4bf22f4718b90931f2f9f678ef42b6438c7180f040",
-          "quote": "with participation from Conviction (Sarah Guo and Mike Vernal), A*, Valkyrie, and others",
-          "quote_hash": "20be01adf24a3391c5fa5e6bebfa4ca95802560254df872449efba35e111922b"
-        },
-        {
-          "source_id": "FISRC-d40817bd8696706a",
-          "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
-          "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
-          "source_content_hash": "52d288f9f7f1c202",
-          "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
-          "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
-        },
-        {
-          "source_id": "FISRC-f0bd0469bbdd29e2",
-          "source_url": "https://tech.eu/2026/03/19/edra-raises-309m-series-a-to-turn-enterprise-data-into-self-improving-ai-agents/",
-          "source_title": "红杉资本支持的Edra完成3000万美元A轮融资，将企业数据转化为自我优化的AI智能体",
-          "source_content_hash": "043f0819e45e2208",
-          "quote": "which included investment from 8VC and A*z.",
-          "quote_hash": "a17c6a3c0aa2ff6760f9f6b20f563d3a68b5d776f0dd68a240ebf389b9c5ad08"
-        }
-      ],
-      "last_verified_at": "2026-10-04",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
-    },
     "INV-b589b7440c714c": {
       "summary": "Baron Capital 是成立于 1982 年、专注长期成长型股票与成长股权策略的资产管理机构。公司官网披露截至 2026-06-30 管理资产 697 亿美元，且称自 1992 年以来为投资者实现与未实现收益合计 712 亿美元；这些是公司自述口径，不代表单一基金表现。本库的 SpaceX IPO 记录来自二手报道，出资主体在报道中指向 Ron Baron 个人或 Baron Capital，尚未核实到具体基金；750 亿美元为整笔 IPO 披露口径而非 Baron 单笔金额。",
       "facts": [
@@ -33440,7 +33366,7 @@
           "source_id": "B31-FUHUA-RONGXIN"
         },
         {
-          "description": "融资来源记录：柏垠生物 · A轮 · 2026-10-22 · 本轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：柏垠生物 · 多轮融资 · 2026-10-22 · A轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c853fbb5ce244b00"
         },
         {
@@ -33514,7 +33440,7 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：柏垠生物 · A轮 · 2026-10-22 · 本轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：柏垠生物 · 多轮融资 · 2026-10-22 · A轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c853fbb5ce244b00"
         },
         {
@@ -33688,49 +33614,6 @@
         }
       ],
       "last_verified_at": "2026-10-06"
-    },
-    "INV-d44c03471d8c5f": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
-      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "公开融资来源将其列为 Cognition D轮 本轮新进投资方。",
-          "source_id": "FISRC-c7d89f6e73a6fe5b"
-        },
-        {
-          "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d40817bd8696706a"
-        }
-      ],
-      "contacts": [],
-      "sources": [
-        {
-          "source_id": "FISRC-c7d89f6e73a6fe5b",
-          "source_url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
-          "source_title": "AI coding startup Cognition raises $1B at $25B pre-money valuation | TechCrunch",
-          "source_content_hash": "b34b882bac185cfdf265124d0fcb43b740c91be1aaa180c881b72565ca485ada",
-          "quote": "The round also included new investors like Ribbit Capital, Atreides, and Layer Global.",
-          "quote_hash": "2c8e3fb8d1a37ea08291fea31823e097703b53cab4ef6c7e04fa2af1f073d850"
-        },
-        {
-          "source_id": "FISRC-d40817bd8696706a",
-          "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
-          "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
-          "source_content_hash": "52d288f9f7f1c202",
-          "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
-          "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
-        }
-      ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
     },
     "INV-fe44cc09640bec": {
       "profile_type": "unverified",
@@ -53040,6 +52923,76 @@
       ],
       "last_verified_at": "2026-09-26"
     },
+    "INV-e6afe9f182c442": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构定位来自 A* 官网；融资参与来自 TechCrunch报道。未将“A*”与其他同名公司或投资人混并。",
+      "summary": "A* 官网将其定位为早期风险投资公司，强调与创始人建立长期合作关系。TechCrunch 将 A* 列为 DesignArena融资参与方之一。",
+      "facts": [
+        {
+          "field": "stage_and_approach",
+          "label": "官网披露的机构阶段与合作方式",
+          "value": "A* 官网称其为早期风险投资机构，推动投资者与创业者从交易式资本转向实质合作。",
+          "source_id": "PROFILE-da9e02b8376535ed308c"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "公开融资来源将A*列为Intelligence相关融资的投资参与方。",
+          "source_id": "FISRC-3fa34b4b7b9a1a77"
+        },
+        {
+          "description": "融资来源记录：Edra · A轮 · 2026-03-19 · 本轮参投 · 3000万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f0bd0469bbdd29e2"
+        },
+        {
+          "description": "融资来源记录：Flapping Airplanes · 历史轮次未披露 · 既有投资方（本轮参与未披露）。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d40817bd8696706a"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "PROFILE-da9e02b8376535ed308c",
+          "source_url": "https://www.a-star.co/",
+          "source_title": "A* - Guiding Outliers From Idea To IPO",
+          "source_content_hash": "5939baff9e5c6b54f5f284fcf1eccdcbc3e44ee0800753e92abf1685c820dc1e",
+          "quote": "A* is an early stage venture capital firm that is leading the shift from transactional capital to meaningful partnerships.",
+          "quote_hash": "6b3b3c53b2af2a234118e33d4f509d9804c4943dde3f33ec7fff50f5c09961bc"
+        },
+        {
+          "source_id": "FISRC-3fa34b4b7b9a1a77",
+          "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
+          "source_title": "Design Arena creators raise $7.9 million to bring taste to AI models | TechCrunch",
+          "source_content_hash": "1144f8198bc2da41e90c4d4bf22f4718b90931f2f9f678ef42b6438c7180f040",
+          "quote": "with participation from Conviction (Sarah Guo and Mike Vernal), A*, Valkyrie, and others",
+          "quote_hash": "20be01adf24a3391c5fa5e6bebfa4ca95802560254df872449efba35e111922b"
+        },
+        {
+          "source_id": "FISRC-f0bd0469bbdd29e2",
+          "source_url": "https://tech.eu/2026/03/19/edra-raises-309m-series-a-to-turn-enterprise-data-into-self-improving-ai-agents/",
+          "source_title": "红杉资本支持的Edra完成3000万美元A轮融资，将企业数据转化为自我优化的AI智能体",
+          "source_content_hash": "043f0819e45e2208",
+          "quote": "which included investment from 8VC and A*z.",
+          "quote_hash": "a17c6a3c0aa2ff6760f9f6b20f563d3a68b5d776f0dd68a240ebf389b9c5ad08"
+        },
+        {
+          "source_id": "FISRC-d40817bd8696706a",
+          "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+          "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+          "source_content_hash": "52d288f9f7f1c202",
+          "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
+          "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
+        }
+      ],
+      "last_verified_at": "2026-10-04",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
+    },
     "INV-bc877bd1f52563": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -65520,7 +65473,7 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：柏垠生物 · A轮 · 2026-10-22 · 本轮领投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：柏垠生物 · 多轮融资 · 2026-10-22 · A+轮领投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c853fbb5ce244b00"
         }
       ],
@@ -65547,7 +65500,7 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：柏垠生物 · A轮 · 2026-10-22 · 本轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：柏垠生物 · 多轮融资 · 2026-10-22 · A轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c853fbb5ce244b00"
         }
       ],
@@ -65574,7 +65527,7 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：柏垠生物 · A轮 · 2026-10-22 · 本轮领投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：柏垠生物 · 多轮融资 · 2026-10-22 · A轮联合领投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c853fbb5ce244b00"
         }
       ],
@@ -65601,7 +65554,7 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：柏垠生物 · A轮 · 2026-10-22 · 本轮领投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：柏垠生物 · 多轮融资 · 2026-10-22 · A轮联合领投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c853fbb5ce244b00"
         }
       ],
@@ -65628,7 +65581,7 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：柏垠生物 · A轮 · 2026-10-22 · 本轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：柏垠生物 · 多轮融资 · 2026-10-22 · A轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c853fbb5ce244b00"
         }
       ],
@@ -65935,33 +65888,6 @@
           "source_content_hash": "c8ef521d256775c4737d3e8ac692bdf3c9644d011a007d4a52337463ebb1f0ce",
           "quote": "has raised €8 million in a Series A funding round led by Ventech, with participation from Sake Bosch, Caesar Capital and business angels",
           "quote_hash": "5e0c909a7b979d6917367f963dee1e4b50314405a167b83aaeda8223ec535787"
-        }
-      ],
-      "last_verified_at": "2026-10-06"
-    },
-    "INV-ac5f4a33f433fa": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Valor 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d40817bd8696706a"
-        }
-      ],
-      "contacts": [],
-      "sources": [
-        {
-          "source_id": "FISRC-d40817bd8696706a",
-          "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
-          "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
-          "source_content_hash": "52d288f9f7f1c202",
-          "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
-          "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -128389,10 +128315,6 @@
           "source_id": "FISRC-602fdc3dbd5462df"
         },
         {
-          "description": "融资来源记录：柏垠生物 · 历史轮次未披露 · 天使+轮领投（2022年）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a6d4a89a4880729c"
-        },
-        {
           "description": "融资来源记录：玩点旅行 · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-eea8e7a4669a91fa"
         }
@@ -128429,14 +128351,6 @@
           "source_content_hash": "939f8ade087f52a4",
           "quote": "由上海知识产权基金、天图投资、知名个人投资人魏巍等参与投资，老股东三七互娱继续跟投。",
           "quote_hash": "38a3453c6027233044d8f2e5fa4a5815ec37189fdb1c7083f4a6d3387a8a3ebf"
-        },
-        {
-          "source_id": "FISRC-a6d4a89a4880729c",
-          "source_url": "https://bydrug.pharmcube.com/",
-          "source_title": "2026Q2 中国院内外药品市场销售分析报告_医药魔方",
-          "source_content_hash": "79c45dfdab1971ef",
-          "quote": "2022年，天图投资领投柏垠生物天使+轮融资",
-          "quote_hash": "0c57283b840457fae9f25814de9d24fa2e3306745daf4abcba25bbe36df8f185"
         },
         {
           "source_id": "FISRC-eea8e7a4669a91fa",
@@ -149461,6 +149375,49 @@
           "quote_hash": "8890a42edf470d7e4d4634b31cfe1d67d58fb787de35b6e0a8df65debc6fc9ae"
         }
       ]
+    },
+    "INV-d44c03471d8c5f": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
+      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "公开融资来源将其列为 Cognition D轮 本轮新进投资方。",
+          "source_id": "FISRC-c7d89f6e73a6fe5b"
+        },
+        {
+          "description": "融资来源记录：Flapping Airplanes · 历史轮次未披露 · 既有投资方（本轮参与未披露）。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d40817bd8696706a"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-c7d89f6e73a6fe5b",
+          "source_url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+          "source_title": "AI coding startup Cognition raises $1B at $25B pre-money valuation | TechCrunch",
+          "source_content_hash": "b34b882bac185cfdf265124d0fcb43b740c91be1aaa180c881b72565ca485ada",
+          "quote": "The round also included new investors like Ribbit Capital, Atreides, and Layer Global.",
+          "quote_hash": "2c8e3fb8d1a37ea08291fea31823e097703b53cab4ef6c7e04fa2af1f073d850"
+        },
+        {
+          "source_id": "FISRC-d40817bd8696706a",
+          "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+          "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+          "source_content_hash": "52d288f9f7f1c202",
+          "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
+          "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
+        }
+      ],
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
     },
     "INV-386fce3c9a06f9": {
       "profile_type": "organization",
@@ -236065,6 +236022,33 @@
       ],
       "last_verified_at": "2026-10-03",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
+    "INV-ac5f4a33f433fa": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Valor 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Flapping Airplanes · 历史轮次未披露 · 既有投资方（本轮参与未披露）。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d40817bd8696706a"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-d40817bd8696706a",
+          "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+          "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+          "source_content_hash": "52d288f9f7f1c202",
+          "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
+          "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
     },
     "INV-7a9babed7302e5": {
       "profile_type": "organization",

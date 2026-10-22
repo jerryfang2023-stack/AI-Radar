@@ -337,7 +337,7 @@
   "cards": [
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-35003d4e229c95f9",
+      "funding_insight_id": "FI-ead03f18fb1f8e46",
       "triggered_by_event_id": "EV-fe4e2cdf3f2a5075",
       "as_of_date": "2026-10-22",
       "company": {
@@ -385,7 +385,7 @@
         "canonical_entity_consistent": false
       },
       "financing": {
-        "round": "A轮",
+        "round": "多轮融资",
         "amount": "超2亿元",
         "total_raised": "",
         "announced_at": "2026-10-22",
@@ -393,7 +393,7 @@
         "investors": [
           {
             "name": "沃博联广药基金",
-            "role": "本轮领投",
+            "role": "A轮联合领投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-c853fbb5ce244b00",
@@ -402,12 +402,11 @@
                 "quote_hash": "37d8fd4ada0ddc70df726cb2b33deadfc9fc1af43a62fc828626ce23e3446a18"
               }
             ],
-            "entity_id": null,
-            "institution_id": "INV-2bfeb4f8e20a31"
+            "entity_id": null
           },
           {
             "name": "欧莱雅BOLD基金",
-            "role": "本轮领投",
+            "role": "A轮联合领投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-c853fbb5ce244b00",
@@ -416,12 +415,11 @@
                 "quote_hash": "37d8fd4ada0ddc70df726cb2b33deadfc9fc1af43a62fc828626ce23e3446a18"
               }
             ],
-            "entity_id": null,
-            "institution_id": "INV-6f3bf319414bc6"
+            "entity_id": null
           },
           {
             "name": "富华资本",
-            "role": "本轮参投",
+            "role": "A轮参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-c853fbb5ce244b00",
@@ -435,7 +433,7 @@
           },
           {
             "name": "基石资本",
-            "role": "本轮参投",
+            "role": "A轮参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-c853fbb5ce244b00",
@@ -449,7 +447,7 @@
           },
           {
             "name": "星博生辉",
-            "role": "本轮参投",
+            "role": "A轮参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-c853fbb5ce244b00",
@@ -458,12 +456,11 @@
                 "quote_hash": "eab977988a4b7a9efe4a684489f342eb427f8a1f9e22b82d636e86d34c41b4d8"
               }
             ],
-            "entity_id": null,
-            "institution_id": "INV-4108935b30a87d"
+            "entity_id": null
           },
           {
             "name": "君科丹木",
-            "role": "本轮参投",
+            "role": "A轮参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-c853fbb5ce244b00",
@@ -472,12 +469,11 @@
                 "quote_hash": "eab977988a4b7a9efe4a684489f342eb427f8a1f9e22b82d636e86d34c41b4d8"
               }
             ],
-            "entity_id": null,
-            "institution_id": "INV-d50269c9886439"
+            "entity_id": null
           },
           {
             "name": "广新基金",
-            "role": "本轮领投",
+            "role": "A+轮领投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-c853fbb5ce244b00",
@@ -486,8 +482,7 @@
                 "quote_hash": "bced07ba4807530343acdf47488c19f2047e0fe5e6cd192d82f0ff0096e8b559"
               }
             ],
-            "entity_id": null,
-            "institution_id": "INV-0b39ed9298c1f8"
+            "entity_id": null
           }
         ],
         "other_round_investors": [
@@ -504,20 +499,6 @@
             ],
             "entity_id": null,
             "institution_id": "INV-824ff6f71c152b"
-          },
-          {
-            "name": "天图投资",
-            "role": "天使+轮领投（2022年）",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-a6d4a89a4880729c",
-                "quote": "2022年，天图投资领投柏垠生物天使+轮融资",
-                "source_content_hash": "79c45dfdab1971ef",
-                "quote_hash": "0c57283b840457fae9f25814de9d24fa2e3306745daf4abcba25bbe36df8f185"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-065698d6979eae"
           }
         ],
         "evidence_refs": [
@@ -540,8 +521,8 @@
             "quote_hash": "167094f1f2a41416bbf50684eb05b97a4353a0db71934373f8d8429068ed71bb"
           }
         ],
-        "round_code": "series_a",
-        "round_original": "A轮",
+        "round_code": "multi_round",
+        "round_original": "A轮及A+轮系列融资（合计）",
         "amount_original": "超2亿元",
         "amount_normalized": {
           "currency": "CNY",
@@ -566,7 +547,7 @@
         "disclosures": [
           {
             "event_id": "EV-fe4e2cdf3f2a5075",
-            "round_original": "A轮",
+            "round_original": "A轮及A+轮系列融资（合计）",
             "amount": "超2亿元",
             "announced_at": "2026-10-22",
             "evidence_refs": [
@@ -604,18 +585,7 @@
             "display_zh": ""
           },
           "basis": "known_rounds_only",
-          "known_round_totals": [
-            {
-              "currency": "CNY",
-              "value": null,
-              "min_value": 200000000,
-              "max_value": null,
-              "unit": "base",
-              "round_count": 1,
-              "status": "lower_bound",
-              "display_zh": "超过 2 亿元"
-            }
-          ],
+          "known_round_totals": [],
           "historical_round_count": 1
         }
       },
@@ -927,13 +897,6 @@
           "research_name": "五源资本",
           "canonical_entity_id": null,
           "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "天图投资",
-          "canonical_entity_id": null,
-          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1038,19 +1001,19 @@
         "EV-fe4e2cdf3f2a5075"
       ],
       "aggregation": {
-        "key": "EN-48901d83aaf2d3df|series_a|CNY:lower_bound:200000000:200000000::|2026-10-22",
+        "key": "EN-48901d83aaf2d3df|multi_round|CNY:lower_bound:200000000:200000000::|2026-10-22",
         "event_count": 1,
         "strategy": "reviewed_company_round_date_and_normalized_amount"
       },
       "historical_rounds": [
         {
-          "funding_insight_id": "FI-35003d4e229c95f9",
+          "funding_insight_id": "FI-ead03f18fb1f8e46",
           "event_ids": [
             "EV-fe4e2cdf3f2a5075"
           ],
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "A轮及A+轮系列融资（合计）",
           "amount_original": "超2亿元",
           "amount_normalized": {
             "currency": "CNY",
@@ -1063,8 +1026,8 @@
           },
           "announced_at": "2026-10-22",
           "disclosure_status": "disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
+          "is_summary": true,
+          "counts_toward_known_total": false,
           "is_current": true
         }
       ],
@@ -2154,7 +2117,7 @@
         "investors": [
           {
             "name": "Index Ventures",
-            "role": "本轮领投",
+            "role": "本轮联合领投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-6ecc9e9d3c026d5a",
@@ -2233,62 +2196,6 @@
             ],
             "entity_id": null,
             "institution_id": "INV-9eb2439d21a914"
-          },
-          {
-            "name": "Valor",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d40817bd8696706a",
-                "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
-                "source_content_hash": "52d288f9f7f1c202",
-                "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-ac5f4a33f433fa"
-          },
-          {
-            "name": "Atreides",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d40817bd8696706a",
-                "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
-                "source_content_hash": "52d288f9f7f1c202",
-                "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-d44c03471d8c5f"
-          },
-          {
-            "name": "A*",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d40817bd8696706a",
-                "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
-                "source_content_hash": "52d288f9f7f1c202",
-                "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-e6afe9f182c442"
-          },
-          {
-            "name": "Nvidia",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d40817bd8696706a",
-                "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
-                "source_content_hash": "52d288f9f7f1c202",
-                "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
-              }
-            ],
-            "entity_id": "EN-8d4321d936320802",
-            "institution_id": "INV-c73d9854fb920b"
           }
         ],
         "other_round_investors": [
@@ -2347,6 +2254,62 @@
             ],
             "entity_id": null,
             "institution_id": "INV-419f1bd0275908"
+          },
+          {
+            "name": "Valor",
+            "role": "既有投资方（本轮参与未披露）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d40817bd8696706a",
+                "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
+                "source_content_hash": "52d288f9f7f1c202",
+                "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-ac5f4a33f433fa"
+          },
+          {
+            "name": "Atreides",
+            "role": "既有投资方（本轮参与未披露）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d40817bd8696706a",
+                "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
+                "source_content_hash": "52d288f9f7f1c202",
+                "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-d44c03471d8c5f"
+          },
+          {
+            "name": "A*",
+            "role": "既有投资方（本轮参与未披露）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d40817bd8696706a",
+                "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
+                "source_content_hash": "52d288f9f7f1c202",
+                "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-e6afe9f182c442"
+          },
+          {
+            "name": "Nvidia",
+            "role": "既有投资方（本轮参与未披露）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d40817bd8696706a",
+                "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
+                "source_content_hash": "52d288f9f7f1c202",
+                "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
+              }
+            ],
+            "entity_id": "EN-8d4321d936320802",
+            "institution_id": "INV-c73d9854fb920b"
           }
         ],
         "evidence_refs": [
@@ -2712,34 +2675,6 @@
           "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Valor",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Atreides",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "A*",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Nvidia",
-          "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA"
-        },
-        {
           "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Menlo Ventures",
@@ -2766,6 +2701,34 @@
           "research_name": "Chris Re",
           "canonical_entity_id": null,
           "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Valor",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Atreides",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "A*",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Nvidia",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
         }
       ],
       "funding_history": [
