@@ -12,7 +12,9 @@ EnvironmentFile=/etc/guanlan-financing/runtime.env
 ExecStart=/opt/guanlan-financing-tools/run.sh --watch=true
 UMask=0077
 TimeoutStartSec=6h
-MemoryMax=1600M
+# Full-catalog publication exceeded the former 1600M cgroup ceiling.
+# Keep a bounded budget while leaving headroom on the 4 GB VPS.
+MemoryMax=2800M
 CPUQuota=100%
 PrivateTmp=false
 ProtectSystem=full
