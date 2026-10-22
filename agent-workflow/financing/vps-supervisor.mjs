@@ -130,6 +130,7 @@ async function cycle(args) {
   const dry=args.get('dry-run')==='true';
   const save=patch=>{state={...state,...patch,updated_at:new Date().toISOString()}; if(!dry)write(stateFile,state); return state;};
   try {
+    if(args.get('watch')==='true' && !dry)command('git',['fetch','--quiet','origin','main']);
     let dispatch=JSON.parse(command(process.execPath,['agent-workflow/financing/dispatch.mjs',`--date=${date}`,'--dry-run=true']));
     if(dry)return {date,status:'preview',dispatch};
     // Inspect current PRs before honoring a prior receipt for the same date.
@@ -173,6 +174,14 @@ async function cycle(args) {
       return save({status:'published',catalog_hash:await sourceHash(receipt.source_commit),receipt,reason:null,error:null,completed_at:new Date().toISOString()});
     }
     if(!['ready_for_review','awaiting_approval','checks_pending'].includes(dispatch.status))return state;
+    if(args.get('watch')==='true') {
+      // Production persisted new originals after this long-lived service began.
+      // Refresh the read-only mirror before reviewing; never reset local edits.
+      const evidenceRoot=process.env.GUANLAN_EVIDENCE_BACKUP_ROOT;
+      if(!evidenceRoot)throw new Error('private_evidence_root_missing');
+      if(command('git',['status','--porcelain'],{cwd:evidenceRoot}))throw new Error('private_evidence_mirror_dirty');
+      command('git',['pull','--quiet','--ff-only','origin','main'],{cwd:evidenceRoot});
+    }
     const pull=ghJson(['pr','view',dispatch.pr_url,'--repo',repo,'--json','number,headRefName,headRefOid,baseRefName,state,isDraft']);
     if(pull.state!=='OPEN' || pull.isDraft || pull.baseRefName!=='main' || pull.headRefName!==`automation/financing-${date}` || pull.headRefOid!==dispatch.head_sha)throw new Error('financing_pr_identity_changed');
     command('git',['fetch','origin',`refs/pull/${pull.number}/head`]);
