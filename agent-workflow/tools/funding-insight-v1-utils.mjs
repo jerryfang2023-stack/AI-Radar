@@ -1914,6 +1914,13 @@ export function ensureCanonicalFundingEvidence(payload = {}, bundle = {}, event 
     payload.financing.announced_at = clean(event.event_time).slice(0, 10);
   }
   const canonicalRound = canonicalFundingEventRound(event, bundle.claims || []);
+  // Missing disclosure is an explicit unknown, not a request to invent a round.
+  // Keep a researched round when supplied; canonical disclosed rounds still win.
+  if (!clean(payload.financing.round) && canonicalRound.code === "undisclosed") {
+    payload.financing.round = "轮次未披露";
+    payload.financing.round_original = "";
+    payload.financing.round_code = "undisclosed";
+  }
   if (!["other", "undisclosed"].includes(canonicalRound.code)) {
     payload.financing.round = canonicalRound.label;
     payload.financing.round_original = canonicalRound.label;
