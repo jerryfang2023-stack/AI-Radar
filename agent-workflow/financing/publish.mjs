@@ -135,6 +135,12 @@ if (args.get('dry-run') === 'true') {
     if(!liveDate || liveDate<date || live[1].latestDate!==liveDate || live[0].meta?.taxonomyVersion !== catalog.meta.taxonomy_version || live[0].cards?.length !== catalog.cards.length || live[1].cardCount !== catalog.cards.length) throw new Error('live_funding_date_taxonomy_or_mini_parity_failed');
     const receipt={date,status:'published',source_commit:sha,pages_commit:deployed.deployedSha,pages_evidence:deployed.evidence,website_date:liveDate,mini_date:live[1].latestDate,verified_at:new Date().toISOString()};
     write(path.join(directory,'published.json'),receipt); console.log(JSON.stringify(receipt));
+  } catch(error) {
+    // Pages is asynchronous after merging accepted data. Preserve the waiting
+    // state without starting publication or turning it into a production error.
+    if(error.message!=='awaiting_pages_for_accepted_commit')throw error;
+    console.error(JSON.stringify({date,status:'awaiting_pages',reason:error.message}));
+    process.exitCode=75;
   } finally {
     if(linked) fs.unlinkSync(path.join(checkout,'node_modules'));
     if(checkout && fs.existsSync(checkout)) run('git',['worktree','remove','--force','--',checkout]);

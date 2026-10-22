@@ -168,7 +168,7 @@ async function cycle(args) {
       let receipt;
       try {receipt=JSON.parse(command('sudo',['-n','/usr/local/libexec/guanlan-financing-publish',date],{timeout:5400000}));}
       catch(error) {
-        if(error.exitStatus===75)return save({status:'awaiting_portal',reason:'publisher_busy',error:null});
+        if(error.exitStatus===75)return save({status:'awaiting_portal',reason:'publisher_busy_or_pages_pending',error:null});
         throw error;
       }
       if(!validPublishedReceipt(receipt,date))throw new Error('vps_publication_receipt_mismatch');
