@@ -39,6 +39,8 @@ VPS 主运行优先当天，旧日期的发布等待不能阻塞新一天采集�
 
 合并后的 Pages 部署尚未完成时，发布器记录 `awaiting_pages` 并返回暂不可用退出码 75，控制器保留 `awaiting_portal` 在本轮 watch 内续接；不启动数据发布、不误报已完成。发布锁忙同样返回 75；其他发布异常仍按失败处理。等待有四小时上限，不无限重试。
 
+2026-10-22 的全目录发布在 service 的 1600M cgroup 上限处被 OOM 终止（MemoryPeak=1677721600，非提供方超时）。4 GB VPS 的服务预算调整为 `MemoryMax=2800M`，仍保留宿主资源余量；发布后以实际峰值和回执核对。OOM 后不清理接受产物或旧工作树；孤立发布器遗留的 owner 回执须核对 PID 已不存在、无在途发布及保留检出状态后归档，再恢复失败阶段，不能删除活跃锁。
+
 发布器可能在并发 main 前进后采用更晚的接受提交。控制器校验回执日期、网站/Mini 日期及完整 SHA，并验证该 SHA 是原接受版本的后代且仍在 main；缓存实际发布 SHA 的目录 hash。远端前进不替代实际发布验收。
 
 Portal 隔离发布器使用 `/home/ubuntu/.guanlan-runtime/publisher-checkouts`。部署前创建该目录并归 ubuntu 所有，service 仅对 `/home/ubuntu/.guanlan-runtime` 添加 `ReadWritePaths` 例外，其余 HOME 继续只读。所有发布仓和恢复文件由 ubuntu 写入，不能用 root 把手工恢复产物写进它的 Git 工作树；维护后核对所有者和跟踪文件干净。部分 checkout 失败时保留旧目录，在新干净检出恢复，不 reset 掩盖人工或半更新内容。旧日期恢复允许复用更晚的线上日期，但网站与 Mini 日期仍须一致，不得倒退。
