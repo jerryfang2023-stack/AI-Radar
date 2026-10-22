@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "generatedAt": "2026-10-22T06:13:48.458Z",
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 4,
+    "historical_or_ambiguous_count": 5,
     "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-02-24",
     "latest_disclosed_at": "2026-06-30",
     "role_counts": {
-      "historical_or_ambiguous": 4,
+      "historical_or_ambiguous": 5,
       "other_current_round": 1,
       "participant": 1
     },
@@ -301,6 +301,38 @@
             "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
           }
         ]
+      },
+      {
+        "activity_id": "IA-cd21534b830add62",
+        "funding_insight_id": "FI-f6024633a1bff4e3",
+        "event_ids": [
+          "EV-cd3cf94d0f65aea1"
+        ],
+        "company_entity_id": "EN-c9bd40e58364720b",
+        "company_canonical_entity_id": "",
+        "company_name": "Flapping Airplanes",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-63c3030bd2abb92e",
+            "source_url": "https://multiples.vc/private-comps/flapping-airplanes",
+            "source_title": "Flapping Airplanes Valuation, Funding & Investors | Multiples",
+            "source_content_hash": "e663947f00994e68",
+            "quote": "with participation from Menlo Ventures, Andrej Karpathy, Jeff Dean and Chris Re.",
+            "quote_hash": "0aa872ba96c60cfd219041c51146784b57229282825ff1cb8eb37b6e979468f3"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -351,6 +383,14 @@
         "source_content_hash": "ae0a2fdbd54bc340",
         "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
         "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+      },
+      {
+        "source_id": "FISRC-63c3030bd2abb92e",
+        "source_url": "https://multiples.vc/private-comps/flapping-airplanes",
+        "source_title": "Flapping Airplanes Valuation, Funding & Investors | Multiples",
+        "source_content_hash": "e663947f00994e68",
+        "quote": "with participation from Menlo Ventures, Andrej Karpathy, Jeff Dean and Chris Re.",
+        "quote_hash": "0aa872ba96c60cfd219041c51146784b57229282825ff1cb8eb37b6e979468f3"
       }
     ],
     "public_profile": {

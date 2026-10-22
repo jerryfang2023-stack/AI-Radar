@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "generatedAt": "2026-10-22T06:13:48.458Z",
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-15",
-    "latest_disclosed_at": "2026-10-15",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "series_e",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-22dc02488a037639",
+        "canonical_entity_id": "",
+        "name": "Legora"
+      },
       {
         "entity_id": "EN-f7d9f5a90479d632",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f1a5ac7fa1e8416a",
+        "funding_insight_id": "FI-b875723282f11479",
+        "event_ids": [
+          "EV-07911ca790bdfc5a"
+        ],
+        "company_entity_id": "EN-22dc02488a037639",
+        "company_canonical_entity_id": "",
+        "company_name": "Legora",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "€489 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 489000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4.89 亿欧元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c4c53e6f607010be",
+            "source_url": "https://legora.com/blog/series-e",
+            "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+            "source_content_hash": "f3c7efce8da1beb6",
+            "quote": "with participation from new investors, including Baron Capital, Capital Group, Fidelity Management & Research Company, Glade Brook Capital Partners, and J.P Morgan",
+            "quote_hash": "53b256cbc00c787add4fc6ed2fb5c55f3cdbafe428a00c9bd1e18b2ba37b0f5c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-731e35250c44a3ac",
         "funding_insight_id": "FI-49e5e02e3f1e2d52",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c4c53e6f607010be",
+        "source_url": "https://legora.com/blog/series-e",
+        "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+        "source_content_hash": "f3c7efce8da1beb6",
+        "quote": "with participation from new investors, including Baron Capital, Capital Group, Fidelity Management & Research Company, Glade Brook Capital Partners, and J.P Morgan",
+        "quote_hash": "53b256cbc00c787add4fc6ed2fb5c55f3cdbafe428a00c9bd1e18b2ba37b0f5c"
+      },
+      {
         "source_id": "FISRC-f581afce52cf5bef",
         "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
         "source_title": "Ramp估值达600亿美元，深入布局AI",
@@ -141,10 +195,14 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Glade Brook Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Glade Brook Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4c53e6f607010be"
+        },
         {
           "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f581afce52cf5bef"
@@ -152,6 +210,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-c4c53e6f607010be",
+          "source_url": "https://legora.com/blog/series-e",
+          "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+          "source_content_hash": "f3c7efce8da1beb6",
+          "quote": "with participation from new investors, including Baron Capital, Capital Group, Fidelity Management & Research Company, Glade Brook Capital Partners, and J.P Morgan",
+          "quote_hash": "53b256cbc00c787add4fc6ed2fb5c55f3cdbafe428a00c9bd1e18b2ba37b0f5c"
+        },
         {
           "source_id": "FISRC-f581afce52cf5bef",
           "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",

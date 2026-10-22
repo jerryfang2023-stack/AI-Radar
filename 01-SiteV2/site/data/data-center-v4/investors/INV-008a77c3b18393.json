@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "generatedAt": "2026-10-22T06:13:48.458Z",
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,30 +61,36 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-25",
-    "latest_disclosed_at": "2026-09-30",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "multi_round",
-      "series_a"
+      "series_a",
+      "series_e"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-d27608cca9b65f91",
         "canonical_entity_id": "",
         "name": "Glow"
+      },
+      {
+        "entity_id": "EN-22dc02488a037639",
+        "canonical_entity_id": "",
+        "name": "Legora"
       },
       {
         "entity_id": "EN-5d3875c319452ecc",
@@ -98,6 +104,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b7086053cefd4915",
+        "funding_insight_id": "FI-b875723282f11479",
+        "event_ids": [
+          "EV-07911ca790bdfc5a"
+        ],
+        "company_entity_id": "EN-22dc02488a037639",
+        "company_canonical_entity_id": "",
+        "company_name": "Legora",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "€489 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 489000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4.89 亿欧元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c4c53e6f607010be",
+            "source_url": "https://legora.com/blog/series-e",
+            "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+            "source_content_hash": "f3c7efce8da1beb6",
+            "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
+            "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b02eb1b98d382d12",
         "funding_insight_id": "FI-36310666a49716b1",
@@ -253,6 +299,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c4c53e6f607010be",
+        "source_url": "https://legora.com/blog/series-e",
+        "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+        "source_content_hash": "f3c7efce8da1beb6",
+        "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
+        "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+      },
+      {
         "source_id": "FISRC-32de5b12bdde4fb9",
         "source_url": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
         "source_title": "Restate 获 2000 万美元融资，随着 AI 智能体发展，对持久基础设施的需求日益增长",
@@ -312,16 +366,16 @@
           "source_id": "redpoint_scott_case"
         },
         {
+          "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4c53e6f607010be"
+        },
+        {
           "description": "融资来源记录：Restate · A轮 · 2026-09-30 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-32de5b12bdde4fb9"
         },
         {
           "description": "融资来源记录：Glow · A轮 · 2026-07-22 · 本轮领投 · $180 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e192dd3fe1a72590"
-        },
-        {
-          "description": "融资来源记录：Sail Research · 多轮融资 · 2026-06-25 · 本轮参投 · $80 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-11ff205cb2054931"
         }
       ],
       "contacts": [
@@ -367,6 +421,14 @@
           "quote_hash": "e30584648a0302fd0003eff79ad376e340036737d6597da397d309434eb14bdc"
         },
         {
+          "source_id": "FISRC-c4c53e6f607010be",
+          "source_url": "https://legora.com/blog/series-e",
+          "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+          "source_content_hash": "f3c7efce8da1beb6",
+          "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
+          "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+        },
+        {
           "source_id": "FISRC-32de5b12bdde4fb9",
           "source_url": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
           "source_title": "Restate 获 2000 万美元融资，随着 AI 智能体发展，对持久基础设施的需求日益增长",
@@ -381,14 +443,6 @@
           "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
           "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
           "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
-        },
-        {
-          "source_id": "FISRC-11ff205cb2054931",
-          "source_url": "https://www.prnewswire.com/news-releases/sail-research-raises-80-million-to-build-max-efficiency-infrastructure-for-ai-agents-302810497.html",
-          "source_title": "Sail Research 获 8000 万美元融资，打造 AI 智能体最大效率基础设施",
-          "source_content_hash": "314c02d8610d1604",
-          "quote": "Other participating investors included Redpoint Ventures",
-          "quote_hash": "8ec1c22dd9b07ac33c842f8d3fe5044c8e05058b99d4fa15511e9ce60c5a20c2"
         }
       ],
       "last_verified_at": "2026-10-02"

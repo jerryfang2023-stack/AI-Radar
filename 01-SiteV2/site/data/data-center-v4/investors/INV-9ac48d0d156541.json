@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "generatedAt": "2026-10-22T06:13:48.458Z",
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 5,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-04",
     "latest_disclosed_at": "2026-07-16",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "other_current_round": 2,
       "participant": 3
     },
@@ -305,6 +305,38 @@
         ]
       },
       {
+        "activity_id": "IA-aec150e3da9edcf9",
+        "funding_insight_id": "FI-f6024633a1bff4e3",
+        "event_ids": [
+          "EV-cd3cf94d0f65aea1"
+        ],
+        "company_entity_id": "EN-c9bd40e58364720b",
+        "company_canonical_entity_id": "",
+        "company_name": "Flapping Airplanes",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-63c3030bd2abb92e",
+            "source_url": "https://multiples.vc/private-comps/flapping-airplanes",
+            "source_title": "Flapping Airplanes Valuation, Funding & Investors | Multiples",
+            "source_content_hash": "e663947f00994e68",
+            "quote": "with participation from Menlo Ventures, Andrej Karpathy, Jeff Dean and Chris Re.",
+            "quote_hash": "0aa872ba96c60cfd219041c51146784b57229282825ff1cb8eb37b6e979468f3"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-0685b240b40cb3e0",
         "funding_insight_id": "FI-3a45fb24c3af4f80",
         "event_ids": [
@@ -378,6 +410,14 @@
         "source_content_hash": "ae17cd699a04f8e6",
         "quote": "angel investment from Google SVP Jeff Dean",
         "quote_hash": "203c17999b1234ae949971f9a5ea71fa3abfbe76982d0381beb1fd7260c8c8de"
+      },
+      {
+        "source_id": "FISRC-63c3030bd2abb92e",
+        "source_url": "https://multiples.vc/private-comps/flapping-airplanes",
+        "source_title": "Flapping Airplanes Valuation, Funding & Investors | Multiples",
+        "source_content_hash": "e663947f00994e68",
+        "quote": "with participation from Menlo Ventures, Andrej Karpathy, Jeff Dean and Chris Re.",
+        "quote_hash": "0aa872ba96c60cfd219041c51146784b57229282825ff1cb8eb37b6e979468f3"
       },
       {
         "source_id": "FISRC-11814bcbad089244",

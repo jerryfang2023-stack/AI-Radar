@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "generatedAt": "2026-10-22T06:13:48.458Z",
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,23 +63,24 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 9,
+    "current_round_count": 11,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 9,
+    "portfolio_company_count": 11,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-16",
-    "latest_disclosed_at": "2026-10-04",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "historical_or_ambiguous": 3,
       "lead": 2,
-      "participant": 7
+      "participant": 9
     },
     "round_codes": [
       "seed",
+      "series_a",
       "series_b",
       "series_c",
       "series_e",
@@ -95,6 +96,16 @@
         "entity_id": "EN-f8223ea5a9c41813",
         "canonical_entity_id": "",
         "name": "Armadin"
+      },
+      {
+        "entity_id": "EN-fa64e74622d0a95a",
+        "canonical_entity_id": "",
+        "name": "Blacksmith"
+      },
+      {
+        "entity_id": "EN-c9bd40e58364720b",
+        "canonical_entity_id": "",
+        "name": "Flapping Airplanes"
       },
       {
         "entity_id": "EN-37799d436602eaf1",
@@ -133,6 +144,86 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-469e07aeea9561ba",
+        "funding_insight_id": "FI-29972434b39dd262",
+        "event_ids": [
+          "EV-95b8b70ca29ab623"
+        ],
+        "company_entity_id": "EN-fa64e74622d0a95a",
+        "company_canonical_entity_id": "",
+        "company_name": "Blacksmith",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$66 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 66000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6600 万美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0b9a2de412bfecea",
+            "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
+            "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
+            "source_content_hash": "b097b8e1cde199ce",
+            "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
+            "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-44a6ac9d49f4d6e5",
+        "funding_insight_id": "FI-f6024633a1bff4e3",
+        "event_ids": [
+          "EV-cd3cf94d0f65aea1"
+        ],
+        "company_entity_id": "EN-c9bd40e58364720b",
+        "company_canonical_entity_id": "",
+        "company_name": "Flapping Airplanes",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$1B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d40817bd8696706a",
+            "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+            "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+            "source_content_hash": "52d288f9f7f1c202",
+            "quote": "Other participants in the new round included earlier backers Sequoia, GV, and Kleiner Perkins.",
+            "quote_hash": "7cd08033c748194750d851104567a0f7f2723955079dcda7e05f9131dae3bc43"
+          }
+        ]
+      },
       {
         "activity_id": "IA-c6b5efee7347f4f5",
         "funding_insight_id": "FI-8650a7a5be9be749",
@@ -602,6 +693,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-0b9a2de412bfecea",
+        "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
+        "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
+        "source_content_hash": "b097b8e1cde199ce",
+        "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
+        "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
+      },
+      {
+        "source_id": "FISRC-d40817bd8696706a",
+        "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+        "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+        "source_content_hash": "52d288f9f7f1c202",
+        "quote": "Other participants in the new round included earlier backers Sequoia, GV, and Kleiner Perkins.",
+        "quote_hash": "7cd08033c748194750d851104567a0f7f2723955079dcda7e05f9131dae3bc43"
+      },
+      {
         "source_id": "FISRC-82c9573ed9c6ba66",
         "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
         "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
@@ -778,16 +885,16 @@
           "source_id": "gv_about"
         },
         {
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0b9a2de412bfecea"
+        },
+        {
+          "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d40817bd8696706a"
+        },
+        {
           "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-10-04 · 本轮参投 · 21亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-82c9573ed9c6ba66"
-        },
-        {
-          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dc8fb918b056c843"
-        },
-        {
-          "description": "融资来源记录：Metaview · C轮 · 2026-10-01 · 本轮参投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-62e06e29d2d7be04"
         }
       ],
       "contacts": [
@@ -811,28 +918,28 @@
           "quote_hash": "90cbdf37bd32985fe0287193ec4b8eaee618ac9632610f1ef38fb1e68a388701"
         },
         {
+          "source_id": "FISRC-0b9a2de412bfecea",
+          "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
+          "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
+          "source_content_hash": "b097b8e1cde199ce",
+          "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
+          "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
+        },
+        {
+          "source_id": "FISRC-d40817bd8696706a",
+          "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+          "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+          "source_content_hash": "52d288f9f7f1c202",
+          "quote": "Other participants in the new round included earlier backers Sequoia, GV, and Kleiner Perkins.",
+          "quote_hash": "7cd08033c748194750d851104567a0f7f2723955079dcda7e05f9131dae3bc43"
+        },
+        {
           "source_id": "FISRC-82c9573ed9c6ba66",
           "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
           "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
           "source_content_hash": "e6bdf28f1eee82d0",
           "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
           "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
-        },
-        {
-          "source_id": "FISRC-dc8fb918b056c843",
-          "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
-          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
-          "source_content_hash": "0b4ca5291b20197e1a333b32e3a6fd462793e5829ad8645ade5f6e59221e163d",
-          "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
-          "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
-        },
-        {
-          "source_id": "FISRC-62e06e29d2d7be04",
-          "source_url": "https://www.thesaasnews.com/news/metaview-raises-60m-series-c/",
-          "source_title": "Metaview 完成 6000 万美元 C 轮融资",
-          "source_content_hash": "ba1a5b65bf914bb75a72ed976def420590dbbb69a4197105c1b64ddc982eadfe",
-          "quote": "Additional investors participating in the round include GV, Intrepid Growth Partners, Seedcamp, Vertex Ventures US, Plural, and Garuda Ventures.",
-          "quote_hash": "16a7517656068d3f1048a9df70246545a5ef06f573e9a31d29dc4be2254818aa"
         }
       ],
       "last_verified_at": "2026-09-25",

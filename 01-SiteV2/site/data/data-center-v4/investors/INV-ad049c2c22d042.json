@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "generatedAt": "2026-10-22T06:13:48.458Z",
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -72,8 +72,8 @@
     "first_disclosed_at": "2026-10-20",
     "latest_disclosed_at": "2026-10-20",
     "role_counts": {
-      "historical_or_ambiguous": 1,
-      "lead": 1
+      "co_lead": 1,
+      "historical_or_ambiguous": 1
     },
     "round_codes": [
       "pre_seed"
@@ -87,9 +87,10 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-e887bee8c41b1c90",
+        "activity_id": "IA-6550d0c87ec61082",
         "funding_insight_id": "FI-e02630ae2510d4e9",
         "event_ids": [
+          "EV-6ff06b92efd20922",
           "EV-c66ddcd78c89a643"
         ],
         "company_entity_id": "EN-d2c19f369e44854b",
@@ -97,7 +98,7 @@
         "company_name": "Plinto",
         "round": "预种子轮",
         "round_code": "pre_seed",
-        "round_original": "pre-Seed",
+        "round_original": "Pre-seed",
         "amount_original": "€2.9 million",
         "amount_normalized": {
           "currency": "EUR",
@@ -113,16 +114,24 @@
         "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
-        "role": "本轮领投",
-        "role_code": "lead",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
         "evidence": [
           {
-            "source_id": "FISRC-fba2b526c8bbdb19",
-            "source_url": "https://www.eu-startups.com/2026/10/copenhagens-plinto-raises-e2-9-million-to-help-finance-teams-catch-and-fix-errors-with-ai-agents/",
-            "source_title": "哥本哈根的 Plinto 融资 290 万欧元，助力财务团队借助 AI 智能体发现并修复错误",
-            "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
-            "quote": "The round was led by People Ventures and Emblem, with participation from a group of business angels.",
-            "quote_hash": "8a694a275a1be0bcfdfaf649880337182c9fd963d2c00330f6b1c8941018c5a0"
+            "source_id": "FISRC-66233dcfc9782a81",
+            "source_url": "https://www.sesamers.com/funding/plinto-raises-2-9m-pre-seed-ai-financial-controlling/",
+            "source_title": "Plinto raises €2.9M pre-seed for AI financial controlling",
+            "source_content_hash": "a9c85d45514b67bb",
+            "quote": "co-led by People Ventures and Emblem",
+            "quote_hash": "30d1a7f718746b19010c01f83f739b40dd854c338910ee5a345c5ab32f7ae457"
+          },
+          {
+            "source_id": "FISRC-00eb2c0889cb9aa5",
+            "source_url": "https://www.thesaasnews.com/news/plinto-raises-2-9m-pre-seed/",
+            "source_title": "Plinto Raises €2.9M Pre-seed",
+            "source_content_hash": "544376d51361f3e2",
+            "quote": "The round was led by People Ventures and Emblem",
+            "quote_hash": "b837d5a663fa3149806b0f73c1e8f80ddeba0774f3579693dca8b22efba2d8dc"
           }
         ]
       },
@@ -169,12 +178,20 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-fba2b526c8bbdb19",
-        "source_url": "https://www.eu-startups.com/2026/10/copenhagens-plinto-raises-e2-9-million-to-help-finance-teams-catch-and-fix-errors-with-ai-agents/",
-        "source_title": "哥本哈根的 Plinto 融资 290 万欧元，助力财务团队借助 AI 智能体发现并修复错误",
-        "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
-        "quote": "The round was led by People Ventures and Emblem, with participation from a group of business angels.",
-        "quote_hash": "8a694a275a1be0bcfdfaf649880337182c9fd963d2c00330f6b1c8941018c5a0"
+        "source_id": "FISRC-66233dcfc9782a81",
+        "source_url": "https://www.sesamers.com/funding/plinto-raises-2-9m-pre-seed-ai-financial-controlling/",
+        "source_title": "Plinto raises €2.9M pre-seed for AI financial controlling",
+        "source_content_hash": "a9c85d45514b67bb",
+        "quote": "co-led by People Ventures and Emblem",
+        "quote_hash": "30d1a7f718746b19010c01f83f739b40dd854c338910ee5a345c5ab32f7ae457"
+      },
+      {
+        "source_id": "FISRC-00eb2c0889cb9aa5",
+        "source_url": "https://www.thesaasnews.com/news/plinto-raises-2-9m-pre-seed/",
+        "source_title": "Plinto Raises €2.9M Pre-seed",
+        "source_content_hash": "544376d51361f3e2",
+        "quote": "The round was led by People Ventures and Emblem",
+        "quote_hash": "b837d5a663fa3149806b0f73c1e8f80ddeba0774f3579693dca8b22efba2d8dc"
       },
       {
         "source_id": "FISRC-0388d568b8d8ab15",
@@ -239,8 +256,8 @@
           "source_id": "FISRC-0388d568b8d8ab15"
         },
         {
-          "description": "融资来源记录：Plinto · 预种子轮 · 2026-10-20 · 本轮领投 · €2.9 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fba2b526c8bbdb19"
+          "description": "融资来源记录：Plinto · 预种子轮 · 2026-10-20 · 本轮联合领投 · €2.9 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-66233dcfc9782a81"
         }
       ],
       "contacts": [
@@ -302,12 +319,20 @@
           "quote_hash": "26d0b7bccc606dd14955fa2bc6e3f8b0fb6c78a7552417f7d9355b21700329f1"
         },
         {
-          "source_id": "FISRC-fba2b526c8bbdb19",
-          "source_url": "https://www.eu-startups.com/2026/10/copenhagens-plinto-raises-e2-9-million-to-help-finance-teams-catch-and-fix-errors-with-ai-agents/",
-          "source_title": "哥本哈根的 Plinto 融资 290 万欧元，助力财务团队借助 AI 智能体发现并修复错误",
-          "source_content_hash": "c2f01ea3f29d63c01751fe0505d02a2d4417bce165cad06fbc8145b7d01c6d8f",
-          "quote": "The round was led by People Ventures and Emblem, with participation from a group of business angels.",
-          "quote_hash": "8a694a275a1be0bcfdfaf649880337182c9fd963d2c00330f6b1c8941018c5a0"
+          "source_id": "FISRC-66233dcfc9782a81",
+          "source_url": "https://www.sesamers.com/funding/plinto-raises-2-9m-pre-seed-ai-financial-controlling/",
+          "source_title": "Plinto raises €2.9M pre-seed for AI financial controlling",
+          "source_content_hash": "a9c85d45514b67bb",
+          "quote": "co-led by People Ventures and Emblem",
+          "quote_hash": "30d1a7f718746b19010c01f83f739b40dd854c338910ee5a345c5ab32f7ae457"
+        },
+        {
+          "source_id": "FISRC-00eb2c0889cb9aa5",
+          "source_url": "https://www.thesaasnews.com/news/plinto-raises-2-9m-pre-seed/",
+          "source_title": "Plinto Raises €2.9M Pre-seed",
+          "source_content_hash": "544376d51361f3e2",
+          "quote": "The round was led by People Ventures and Emblem",
+          "quote_hash": "b837d5a663fa3149806b0f73c1e8f80ddeba0774f3579693dca8b22efba2d8dc"
         }
       ],
       "last_verified_at": "2026-10-06"

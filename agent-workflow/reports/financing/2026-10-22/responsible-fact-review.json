@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-22",
+  "reviewer": "Codex responsible financing reviewer",
+  "reviewed_at": "2026-10-22T05:58:04.876Z",
+  "decisions": [
+    {
+      "event_id": "EV-fe4e2cdf3f2a5075",
+      "field": "financing.round/investor roles",
+      "after": "A轮及A+轮合计，按原文分别保留A轮及A+轮投资方角色；各轮金额未披露，不拆分猜测",
+      "source_content_hash": "16f5e7a14cc87e79d3f91a0541c233abad021af94a1ac47b1978934d4327fdbd",
+      "quote": "柏垠生物宣布完成超2亿元人民币A轮系列融资。其中，沃博联与广药集团共同设立的沃博联广药基金及欧莱雅BOLD基金领投A轮，富华资本、基石资本、星博生辉、君科丹木共同参与；广新基金领投A+轮。",
+      "quote_hash": "0d4749911e54bc4aca79e014459bafe140700bbe44fedfebce3cf4318d2697d6"
+    },
+    {
+      "event_id": "EV-cd3cf94d0f65aea1",
+      "field": "current_round_investors",
+      "after": "Valor/Atreides/A*/Nvidia归入既有投资方，本轮参与未披露；Index/Lux联合领投和Sequoia/GV/Kleiner本轮参投保留",
+      "source_content_hash": "52d288f9f7f1c202",
+      "body_sha256": "52d288f9f7f1c202838c2bd24defda7f3696f07299a33a7f9a166edeaa1bf1cb",
+      "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
+      "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
+    },
+    {
+      "event_id": "EV-95b8b70ca29ab623",
+      "field": "application subject history",
+      "after": "Blacksmith既有B轮与新C轮归于同一主体，两轮保留",
+      "source_content_hash": "4973cf3bc31640caadbb8ff770a32f12a4324ec7e02e464a9a06d1fcb32dc4f7",
+      "quote": "The Series C comes just two months after its $45 million Series B, which valued the company at $550 million.",
+      "quote_hash": "f8152d51172155be9e0f036820d619eaedcd340393aa12c819d9ea04b84c7820"
+    },
+    {
+      "event_id": "EV-cd3cf94d0f65aea1",
+      "field": "financing.evidence_refs / co-lead evidence_refs",
+      "after": "金额、轮次和联合领投绑定已捕获TechCrunch正文；Index原文保留，但含单位笔误的句子不作上述字段的依据",
+      "source_id": "FISRC-d40817bd8696706a",
+      "quote": "On Wednesday, the company announced it had raised a $1 billion Series A round, co-led by Index and Lux, reportedly at a $6 billion valuation.",
+      "source_content_hash": "52d288f9f7f1c202",
+      "quote_hash": "e9f4ade78d2bd52deefe7d8f7f01f3a12d47dc5c972c061b1d98bb9866273d5b",
+      "body_sha256": "52d288f9f7f1c202838c2bd24defda7f3696f07299a33a7f9a166edeaa1bf1cb",
+      "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+      "reviewed_at": "2026-10-22T06:12:18.126Z",
+      "resolved_hold_head": "086e12cc8d27a3cefeab2b865383c98c47ed7fc4",
+      "reason": "原文明确the company announced it had raised a $1 billion Series A round, co-led by Index and Lux；reportedly修饰60亿美元估值，不修饰已宣布的10亿美元融资金额。正文结尾再次确认fresh $1 billion。本卡未把60亿美元估值作为已确认金额。未修改任何原文或掩盖Index笔误。"
+    }
+  ],
+  "review_clarifications": [
+    "partially_disclosed 表示本轮融资存在已确认字段但轮次等部分信息未披露，不等于融资未完成。Opply/Photon Bridge轮次没有命名，按未披露显示。",
+    "未收集的历史融资不能视为删除已接受历史；Photon Bridge旧种子轮尚未入库，不据此推算累计总额。",
+    "Rulen原始融资公告写首轮融资，保留该原文表述，不将二手seed表述强制覆盖为已确认轮次。",
+    "EV-439079c4d9694407及EV-0c6afd346f19b0a6均不在准入目录，待核验记录存在不等于已发布。"
+  ],
+  "canonical_entity_merge_approved": false
+}

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "generatedAt": "2026-10-22T06:13:48.458Z",
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 15,
-    "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 13,
+    "current_round_count": 16,
+    "historical_or_ambiguous_count": 6,
+    "portfolio_company_count": 14,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-09-05",
-    "latest_disclosed_at": "2026-10-13",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 5,
+      "historical_or_ambiguous": 6,
       "lead": 5,
-      "participant": 9
+      "participant": 10
     },
     "round_codes": [
       "seed",
@@ -132,6 +132,11 @@
         "name": "Higgsfield"
       },
       {
+        "entity_id": "EN-22dc02488a037639",
+        "canonical_entity_id": "",
+        "name": "Legora"
+      },
+      {
         "entity_id": "EN-2f9cb7cda5222087",
         "canonical_entity_id": "",
         "name": "Lovable"
@@ -153,6 +158,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-201bef50bfc732e6",
+        "funding_insight_id": "FI-b875723282f11479",
+        "event_ids": [
+          "EV-07911ca790bdfc5a"
+        ],
+        "company_entity_id": "EN-22dc02488a037639",
+        "company_canonical_entity_id": "",
+        "company_name": "Legora",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "€489 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 489000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4.89 亿欧元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c4c53e6f607010be",
+            "source_url": "https://legora.com/blog/series-e",
+            "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+            "source_content_hash": "f3c7efce8da1beb6",
+            "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
+            "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1d2a2ad6e17ab76c",
         "funding_insight_id": "FI-f7c9ecb8383857f2",
@@ -829,6 +874,38 @@
         ]
       },
       {
+        "activity_id": "IA-31f775567ae87c5f",
+        "funding_insight_id": "FI-f6024633a1bff4e3",
+        "event_ids": [
+          "EV-cd3cf94d0f65aea1"
+        ],
+        "company_entity_id": "EN-c9bd40e58364720b",
+        "company_canonical_entity_id": "",
+        "company_name": "Flapping Airplanes",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-63c3030bd2abb92e",
+            "source_url": "https://multiples.vc/private-comps/flapping-airplanes",
+            "source_title": "Flapping Airplanes Valuation, Funding & Investors | Multiples",
+            "source_content_hash": "e663947f00994e68",
+            "quote": "The $180M round was led by GV, Index Ventures and Sequoia Capital, with participation from Menlo Ventures, Andrej Karpathy, Jeff Dean and Chris Re.",
+            "quote_hash": "2b85fd572ee443d7b799b8b991255b095dfc58d4abfbd659ac1cfe58cabdbbbf"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-e264a686c0b42f06",
         "funding_insight_id": "FI-94c0eaa68ec2b037",
         "event_ids": [
@@ -934,6 +1011,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-c4c53e6f607010be",
+        "source_url": "https://legora.com/blog/series-e",
+        "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+        "source_content_hash": "f3c7efce8da1beb6",
+        "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
+        "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+      },
       {
         "source_id": "FISRC-c0e764cbefe9c1e7",
         "source_url": "https://www.163.com/dy/article/L95FTJ3L05118UGF.html",
@@ -1079,6 +1164,14 @@
         "quote_hash": "25e1d20c25a59de7cf2dbd9b2ea825654b8c92cf2707a39ed8549cb514ebac01"
       },
       {
+        "source_id": "FISRC-63c3030bd2abb92e",
+        "source_url": "https://multiples.vc/private-comps/flapping-airplanes",
+        "source_title": "Flapping Airplanes Valuation, Funding & Investors | Multiples",
+        "source_content_hash": "e663947f00994e68",
+        "quote": "The $180M round was led by GV, Index Ventures and Sequoia Capital, with participation from Menlo Ventures, Andrej Karpathy, Jeff Dean and Chris Re.",
+        "quote_hash": "2b85fd572ee443d7b799b8b991255b095dfc58d4abfbd659ac1cfe58cabdbbbf"
+      },
+      {
         "source_id": "FISRC-35d27946fd70aa42",
         "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
         "source_title": "AI video startup Higgsfield raises $80M at $1.3B valuation as demand for generative video surges - Tech Startups",
@@ -1154,16 +1247,16 @@
           "source_id": "menlo_about"
         },
         {
+          "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4c53e6f607010be"
+        },
+        {
           "description": "融资来源记录：Nous Research · B轮 · 2026-10-13 · 本轮参投 · 9000万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c0e764cbefe9c1e7"
         },
         {
           "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮参投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-295e99df6a40bc79"
-        },
-        {
-          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dc8fb918b056c843"
         }
       ],
       "contacts": [
@@ -1214,6 +1307,14 @@
           "quote_hash": "6b65a50b891d8c111e5bfd530d4bc9eb08bdefcd9718bf4b8706cad0502cd1ab"
         },
         {
+          "source_id": "FISRC-c4c53e6f607010be",
+          "source_url": "https://legora.com/blog/series-e",
+          "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+          "source_content_hash": "f3c7efce8da1beb6",
+          "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
+          "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+        },
+        {
           "source_id": "FISRC-c0e764cbefe9c1e7",
           "source_url": "https://www.163.com/dy/article/L95FTJ3L05118UGF.html",
           "source_title": "Nous Research确认完成15亿估值融资，推出企业级AI智能体",
@@ -1228,14 +1329,6 @@
           "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
           "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
           "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
-        },
-        {
-          "source_id": "FISRC-dc8fb918b056c843",
-          "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
-          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
-          "source_content_hash": "0b4ca5291b20197e1a333b32e3a6fd462793e5829ad8645ade5f6e59221e163d",
-          "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
-          "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
         }
       ],
       "last_verified_at": "2026-09-25",

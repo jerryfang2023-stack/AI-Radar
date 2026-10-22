@@ -1,0 +1,906 @@
+{
+  "event_id": "EV-cd3cf94d0f65aea1",
+  "company_name": "Flapping Airplanes",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-03c767a52ef1fe9b",
+    "triggered_by_event_id": "EV-cd3cf94d0f65aea1",
+    "as_of_date": "2026-10-22",
+    "company": {
+      "entity_id": "EN-c9bd40e58364720b",
+      "name": "Flapping Airplanes",
+      "full_name": "Flapping Airplanes",
+      "website": "flappingairplanes.com",
+      "summary": "以第一性原理重构AI训练与推理效率的研究型实验室，主张通过更少数据与算力训练大模型，并以megakernel框架提升GPU利用率。",
+      "headquarters": "San Francisco",
+      "founders": [
+        {
+          "name": "Ben Spector",
+          "role": "CEO、联合创始人",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6ecc9e9d3c026d5a",
+              "quote": "Ben, as CEO, is a firehose of ambitious ideas",
+              "source_content_hash": "23901e3c9a1849829afc4d2b36da9e75d5e2634d69e746ef68df3d5176ab60b4",
+              "quote_hash": "ba20b534cb129c447d1b681eb75de5a2164fd362d9000bca8863188a7be3e516"
+            },
+            {
+              "source_id": "FISRC-d40817bd8696706a",
+              "quote": "Flapping Airplanes was founded by Aidan Smith and brothers Asher and Ben Spector.",
+              "source_content_hash": "52d288f9f7f1c202",
+              "quote_hash": "eae6dc938041f5c45d6364a490ea72c5214e354a6c0b88fa40562457580d0e79"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Asher Spector",
+          "role": "联合创始人",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d40817bd8696706a",
+              "quote": "Asher Spector was a statistics PhD at Stanford",
+              "source_content_hash": "52d288f9f7f1c202",
+              "quote_hash": "8bec19db0bf471b3a26c40bcd1563bdb15d1a56068cbc3b57278966763dd254e"
+            },
+            {
+              "source_id": "FISRC-2f96846e2986f7df",
+              "quote": "Co-founder of Flapping Airplanes. Brother of Ben Spector.",
+              "source_content_hash": "f7455c6e9095b61f",
+              "quote_hash": "0797ba907abd521ee2e25e09cacff7402265f521aeceb708626bce2edb43c013"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Aidan Smith",
+          "role": "联合创始人",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d40817bd8696706a",
+              "quote": "Smith is a former founder and Thiel fellow who worked at the brain implant company Neuralink during college.",
+              "source_content_hash": "52d288f9f7f1c202",
+              "quote_hash": "76831c0f0c7f9dc4e985d4b7e8bff8d87133d471e2b321c354eb630ef5d37827"
+            },
+            {
+              "source_id": "FISRC-3e0d8ebf1d36cd67",
+              "quote": "ASAidan Smith→Co-founder",
+              "source_content_hash": "baf8b927cc876842",
+              "quote_hash": "d41e3d127997c3a8201db4514e377e0dafb736a2ccf9089beb06456e0bb6bad0"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "team_size": {
+        "value": "a couple dozen people",
+        "observed_at": "2026-10-21",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6ecc9e9d3c026d5a",
+            "quote": "With just a couple dozen people, all working in person in San Francisco",
+            "source_content_hash": "23901e3c9a1849829afc4d2b36da9e75d5e2634d69e746ef68df3d5176ab60b4",
+            "quote_hash": "6ffc2b6b7dedb81d7847b97a1aa255ac5a23c624848601ab9fd44aff90c391e3"
+          }
+        ]
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6ecc9e9d3c026d5a",
+          "quote": "They started Flapping Airplanes with a belief that AI could be orders of magnitude more efficient",
+          "source_content_hash": "23901e3c9a1849829afc4d2b36da9e75d5e2634d69e746ef68df3d5176ab60b4",
+          "quote_hash": "92052fa9bfbf2f5d03d4ecca5331cf2422d2c5b634f25751a85db985ef5d9e35"
+        },
+        {
+          "source_id": "FISRC-63c3030bd2abb92e",
+          "quote": "Flapping Airplanes is an AI research lab advancing data-efficient models and novel learning paradigms to reduce reliance on large-scale datasets and compute.",
+          "source_content_hash": "e663947f00994e68",
+          "quote_hash": "5e22ad4171e65ca3d5df3ffc225d1765fab14ded8362d29636185b81d35012a3"
+        }
+      ],
+      "application_entity_id": "EN-c9bd40e58364720b",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "A轮",
+      "amount": "$1B",
+      "total_raised": "",
+      "announced_at": "2026-10-21",
+      "investor_disclosure_status": "disclosed",
+      "investors": [
+        {
+          "name": "Index Ventures",
+          "role": "本轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6ecc9e9d3c026d5a",
+              "quote": "We’re thrilled to double down and lead their $1B million Series A, with Mark joining the board.",
+              "source_content_hash": "23901e3c9a1849829afc4d2b36da9e75d5e2634d69e746ef68df3d5176ab60b4",
+              "quote_hash": "d4af6c9c93786bea701f67ecb1bd340d07ba4af8df1751ab4629ca5c7eb17ef9"
+            },
+            {
+              "source_id": "FISRC-d40817bd8696706a",
+              "quote": "raised a $1 billion Series A round, co-led by Index and Lux",
+              "source_content_hash": "52d288f9f7f1c202",
+              "quote_hash": "d4fa2a110c1c7be71e816df0f04b52f2b9f2c5a142a12d3def40d601ba922143"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Lux Capital",
+          "role": "本轮联合领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d40817bd8696706a",
+              "quote": "raised a $1 billion Series A round, co-led by Index and Lux",
+              "source_content_hash": "52d288f9f7f1c202",
+              "quote_hash": "d4fa2a110c1c7be71e816df0f04b52f2b9f2c5a142a12d3def40d601ba922143"
+            },
+            {
+              "source_id": "FISRC-8b854e8f88d3042f",
+              "quote": "Index Ventures and Lux Capital led the round",
+              "source_content_hash": "e0d3788b75982b80",
+              "quote_hash": "5b29b9be2b23d22c5374cb5a623e23b8f8025197c3424d592491a9d80dbc9506"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Sequoia Capital",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d40817bd8696706a",
+              "quote": "Other participants in the new round included earlier backers Sequoia, GV, and Kleiner Perkins.",
+              "source_content_hash": "52d288f9f7f1c202",
+              "quote_hash": "7cd08033c748194750d851104567a0f7f2723955079dcda7e05f9131dae3bc43"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "GV",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d40817bd8696706a",
+              "quote": "Other participants in the new round included earlier backers Sequoia, GV, and Kleiner Perkins.",
+              "source_content_hash": "52d288f9f7f1c202",
+              "quote_hash": "7cd08033c748194750d851104567a0f7f2723955079dcda7e05f9131dae3bc43"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Kleiner Perkins",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d40817bd8696706a",
+              "quote": "Other participants in the new round included earlier backers Sequoia, GV, and Kleiner Perkins.",
+              "source_content_hash": "52d288f9f7f1c202",
+              "quote_hash": "7cd08033c748194750d851104567a0f7f2723955079dcda7e05f9131dae3bc43"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Valor",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d40817bd8696706a",
+              "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
+              "source_content_hash": "52d288f9f7f1c202",
+              "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Atreides",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d40817bd8696706a",
+              "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
+              "source_content_hash": "52d288f9f7f1c202",
+              "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "A*",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d40817bd8696706a",
+              "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
+              "source_content_hash": "52d288f9f7f1c202",
+              "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Nvidia",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d40817bd8696706a",
+              "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
+              "source_content_hash": "52d288f9f7f1c202",
+              "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
+            }
+          ],
+          "entity_id": "EN-8d4321d936320802"
+        }
+      ],
+      "other_round_investors": [
+        {
+          "name": "Menlo Ventures",
+          "role": "种子轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-63c3030bd2abb92e",
+              "quote": "The $180M round was led by GV, Index Ventures and Sequoia Capital, with participation from Menlo Ventures, Andrej Karpathy, Jeff Dean and Chris Re.",
+              "source_content_hash": "e663947f00994e68",
+              "quote_hash": "2b85fd572ee443d7b799b8b991255b095dfc58d4abfbd659ac1cfe58cabdbbbf"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Andrej Karpathy",
+          "role": "种子轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-63c3030bd2abb92e",
+              "quote": "with participation from Menlo Ventures, Andrej Karpathy, Jeff Dean and Chris Re.",
+              "source_content_hash": "e663947f00994e68",
+              "quote_hash": "0aa872ba96c60cfd219041c51146784b57229282825ff1cb8eb37b6e979468f3"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Jeff Dean",
+          "role": "种子轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-63c3030bd2abb92e",
+              "quote": "with participation from Menlo Ventures, Andrej Karpathy, Jeff Dean and Chris Re.",
+              "source_content_hash": "e663947f00994e68",
+              "quote_hash": "0aa872ba96c60cfd219041c51146784b57229282825ff1cb8eb37b6e979468f3"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Chris Re",
+          "role": "种子轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-63c3030bd2abb92e",
+              "quote": "with participation from Menlo Ventures, Andrej Karpathy, Jeff Dean and Chris Re.",
+              "source_content_hash": "e663947f00994e68",
+              "quote_hash": "0aa872ba96c60cfd219041c51146784b57229282825ff1cb8eb37b6e979468f3"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6ecc9e9d3c026d5a",
+          "quote": "We’re thrilled to double down and lead their $1B million Series A, with Mark joining the board.",
+          "source_content_hash": "23901e3c9a1849829afc4d2b36da9e75d5e2634d69e746ef68df3d5176ab60b4",
+          "quote_hash": "d4af6c9c93786bea701f67ecb1bd340d07ba4af8df1751ab4629ca5c7eb17ef9"
+        },
+        {
+          "source_id": "FISRC-d40817bd8696706a",
+          "quote": "On Wednesday, the company announced it had raised a $1 billion Series A round, co-led by Index and Lux, reportedly at a $6 billion valuation.",
+          "source_content_hash": "52d288f9f7f1c202",
+          "quote_hash": "e9f4ade78d2bd52deefe7d8f7f01f3a12d47dc5c972c061b1d98bb9866273d5b"
+        }
+      ],
+      "round_code": "series_a",
+      "round_original": "A轮",
+      "amount_original": "$1B",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 1000000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "10 亿美元"
+      },
+      "total_raised_original": "",
+      "total_raised_normalized": {
+        "currency": "",
+        "value": null,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "undisclosed",
+        "display_zh": ""
+      },
+      "risk_markers": [],
+      "disclosures": [
+        {
+          "event_id": "EV-cd3cf94d0f65aea1",
+          "round_original": "A轮",
+          "amount": "$1B",
+          "announced_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6ecc9e9d3c026d5a",
+              "quote": "We’re thrilled to double down and lead their $1B million Series A, with Mark joining the board.",
+              "source_content_hash": "23901e3c9a1849829afc4d2b36da9e75d5e2634d69e746ef68df3d5176ab60b4",
+              "quote_hash": "d4af6c9c93786bea701f67ecb1bd340d07ba4af8df1751ab4629ca5c7eb17ef9"
+            },
+            {
+              "source_id": "FISRC-d40817bd8696706a",
+              "quote": "On Wednesday, the company announced it had raised a $1 billion Series A round, co-led by Index and Lux, reportedly at a $6 billion valuation.",
+              "source_content_hash": "52d288f9f7f1c202",
+              "quote_hash": "e9f4ade78d2bd52deefe7d8f7f01f3a12d47dc5c972c061b1d98bb9866273d5b"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "disclosed"
+    },
+    "products": [
+      {
+        "name": "megakernel framework",
+        "description": "将整个训练或推理程序作为单一kernel在GPU上运行的框架，声称可重叠内存受限推理与计算受限训练，减少步骤间空转。",
+        "target_customers": "AI模型研发团队与GPU算力使用方",
+        "features": [
+          "单kernel执行完整训练运行",
+          "可同时执行训练、推理与游戏任务",
+          "重叠内存受限推理与计算受限训练"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d40817bd8696706a",
+            "quote": "the world’s most complete megakernel framework. It can perform entire training runs, serve inference, play video games, and even do all three simultaneously in a single kernel.",
+            "source_content_hash": "52d288f9f7f1c202",
+            "quote_hash": "93b99309a75062da20a88fa4ad97b2d530d6268cb1648107b65bb1908762bd66"
+          },
+          {
+            "source_id": "FISRC-6ecc9e9d3c026d5a",
+            "quote": "Flappy’s megakernels, which run an entire program on a GPU as a single kernel, eliminate the wasted time between steps and get more out of every GPU.",
+            "source_content_hash": "23901e3c9a1849829afc4d2b36da9e75d5e2634d69e746ef68df3d5176ab60b4",
+            "quote_hash": "c8c5d169d83208af0621778e6c5d06927347535bbc67e255fddf7819062762c2"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "data-efficient model research",
+        "description": "研究以显著更少数据与算力训练大模型的新学习范式，目标提升数据效率。",
+        "target_customers": "尚处研究阶段，未披露商业客户",
+        "features": [
+          "减少对大规模数据集的依赖",
+          "从第一性原理重构训练方法"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-63c3030bd2abb92e",
+            "quote": "pursuing fundamental research breakthroughs to improve AI training data efficiency by 1000 times",
+            "source_content_hash": "e663947f00994e68",
+            "quote_hash": "f3646017654118342e500d67f852834ab894f2187ff16d692416ad7adbd88e1a"
+          },
+          {
+            "source_id": "FISRC-d40817bd8696706a",
+            "quote": "a mission to find ways to train large models with less data",
+            "source_content_hash": "52d288f9f7f1c202",
+            "quote_hash": "cfd04dd2db0d1a47055f2e266b71a1f5ad1f0de4b0d8202e210c908b36e1848e"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [],
+    "comparisons": [],
+    "metrics": [
+      {
+        "label": "Series A融资额",
+        "value": "$1B",
+        "observed_at": "2026-10-21",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d40817bd8696706a",
+            "quote": "the company announced it had raised a $1 billion Series A round",
+            "source_content_hash": "52d288f9f7f1c202",
+            "quote_hash": "8c1da0b7e67fe6c118137197a1f95f41b487676060c6ba9beff360e5b1afd0f7"
+          }
+        ]
+      },
+      {
+        "label": "本轮报道估值",
+        "value": "$6B",
+        "observed_at": "2026-10-21",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d40817bd8696706a",
+            "quote": "reportedly at a $6 billion valuation",
+            "source_content_hash": "52d288f9f7f1c202",
+            "quote_hash": "c3e63aa28c331e95e042db03578c3827068e13fd93a792299abd2ca2e50394c6"
+          },
+          {
+            "source_id": "FISRC-8b854e8f88d3042f",
+            "quote": "has raised $1 billion in an early-stage round at a $6 billion valuation",
+            "source_content_hash": "e0d3788b75982b80",
+            "quote_hash": "3cc6d8c80fb8c9212a8dda7892071b80c3c3068cbae6fbb4eaf7cdf3f72377af"
+          }
+        ]
+      },
+      {
+        "label": "种子轮估值",
+        "value": "$1.5B",
+        "observed_at": "2026-01",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-63c3030bd2abb92e",
+            "quote": "Flapping Airplanes is valued at $1.5B as of January 2026.",
+            "source_content_hash": "e663947f00994e68",
+            "quote_hash": "ee1fed68a94bb6c64d387a4b0099e51fa52a37fdab3068700028c2beac597b9c"
+          }
+        ]
+      },
+      {
+        "label": "团队规模",
+        "value": "a couple dozen people",
+        "observed_at": "2026-10-21",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6ecc9e9d3c026d5a",
+            "quote": "With just a couple dozen people, all working in person in San Francisco",
+            "source_content_hash": "23901e3c9a1849829afc4d2b36da9e75d5e2634d69e746ef68df3d5176ab60b4",
+            "quote_hash": "6ffc2b6b7dedb81d7847b97a1aa255ac5a23c624848601ab9fd44aff90c391e3"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Asher Spector",
+        "quote": "A model that’s a million times more data efficient is probably a million times easier to put into the economy",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d40817bd8696706a",
+            "quote": "A model that’s a million times more data efficient is probably a million times easier to put into the economy",
+            "source_content_hash": "52d288f9f7f1c202",
+            "quote_hash": "91f488dd7b64c99c6e82231a31e5dbf209400fd408c3a4fb5ada7336a7ca03ac"
+          }
+        ]
+      },
+      {
+        "speaker": "Ben Spector",
+        "quote": "Small teams of brilliant young people that are able to look at the problem in a new way—those are the kinds of organizations that actually win",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-4d5a25fea2c3b366",
+            "quote": "Small teams of brilliant young people that are able to look at the problem in a new way—those are the kinds of organizations that actually win",
+            "source_content_hash": "5727b9a6e450a088",
+            "quote_hash": "b877072175c558a163a411c1e9081098aff3aa1a0d0cac9b71cafa7c1cf6351e"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [
+        {
+          "institution": "Index Ventures",
+          "speaker": "Mark Xu",
+          "speaker_role": "Index Ventures合伙人",
+          "rationale": "Index认为Flapping Airplanes以第一性原理重构AI效率，其megakernel可提升GPU利用率，在算力与数据供给受限时具备战略价值，因此领投并加注。",
+          "quote": "If the future of AI depends on getting more from less, we can’t think of a better team to shape it.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6ecc9e9d3c026d5a",
+              "quote": "If the future of AI depends on getting more from less, we can’t think of a better team to shape it.",
+              "source_content_hash": "23901e3c9a1849829afc4d2b36da9e75d5e2634d69e746ef68df3d5176ab60b4",
+              "quote_hash": "4484027e72a1e0af26147ff6130442fb17f7fd6b2c9d407870b37f783a7f783f"
+            }
+          ]
+        }
+      ],
+      "capital_judgment": "资本押注的核心变量是：Flapping Airplanes能否把“更少数据与算力训练大模型”的研究主张转化为可验证的效率优势，尤其是megakernel框架对GPU利用率的实际提升。当前$6B估值主要依赖团队背景、种子轮后九个月内的研究进展以及投资方对“研究优先型neolab”赛道的信心，而非收入或商业合同。证据边界在于：公司尚无产品与收入，效率提升幅度（如1000倍数据效率）来自研究目标而非已披露实测结果，估值与融资额部分来自媒体报道口径。",
+      "validated_signals": [
+        "2026年10月宣布完成$1B Series A，由Index与Lux联合领投",
+        "种子轮$180M由GV、Index、Sequoia等参与，估值$1.5B",
+        "团队约二十余人，全部在旧金山线下办公",
+        "已构建并对外描述megakernel框架，声称可单kernel执行训练、推理与游戏任务"
+      ],
+      "risks": [
+        "公司尚无产品与收入，估值对研究进展容错空间小",
+        "数据效率提升1000倍等目标为研究主张，尚无公开实测结果验证",
+        "megakernel框架的实际性能收益与可扩展性仍待第三方验证",
+        "高估值依赖研究型neolab赛道情绪，若融资环境或技术路线受质疑可能承压"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "ai_infrastructure_software",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "use_case_ids": [
+        "software_development",
+        "research_discovery"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "researcher"
+      ],
+      "sector": "AI训练与推理效率基础设施及数据高效模型研究",
+      "investment_thesis": {
+        "statement": "资本押注的核心变量是：Flapping Airplanes能否把“更少数据与算力训练大模型”的研究主张转化为可验证的效率优势，尤其是megakernel框架对GPU利用率的实际提升。当前$6B估值主要依赖团队背景、种子轮后九个月内的研究进展以及投资方对“研究优先型neolab”赛道的信心，而非收入或商业合同。证据边界在于：公司尚无产品与收入，效率提升幅度（如1000倍数据效率）来自研究目标而非已披露实测结果，估值与融资额部分来自媒体报道口径。",
+        "evidence_signals": [
+          "2026年10月宣布完成$1B Series A，由Index与Lux联合领投",
+          "种子轮$180M由GV、Index、Sequoia等参与，估值$1.5B",
+          "团队约二十余人，全部在旧金山线下办公",
+          "已构建并对外描述megakernel框架，声称可单kernel执行训练、推理与游戏任务"
+        ],
+        "risks": [
+          "公司尚无产品与收入，估值对研究进展容错空间小",
+          "数据效率提升1000倍等目标为研究主张，尚无公开实测结果验证",
+          "megakernel框架的实际性能收益与可扩展性仍待第三方验证",
+          "高估值依赖研究型neolab赛道情绪，若融资环境或技术路线受质疑可能承压"
+        ],
+        "institutional_rationale_status": "disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "megakernel framework",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "data-efficient model research",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Ben Spector",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Asher Spector",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Aidan Smith",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Index Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Lux Capital",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Sequoia Capital",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "GV",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Kleiner Perkins",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Valor",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Atreides",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "A*",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Nvidia",
+        "canonical_entity_id": "EN-8d4321d936320802",
+        "canonical_name": "NVIDIA"
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Menlo Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Andrej Karpathy",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Jeff Dean",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Chris Re",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-cd3cf94d0f65aea1",
+        "date": "2026-10-21",
+        "title": "迈向更高效的AI：领投Flapping Airplanes的10亿美元A轮融资",
+        "amount": "$1B",
+        "source_refs": [
+          "SA-65390f6a68556c5f"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-6ecc9e9d3c026d5a",
+        "source_url": "https://www.indexventures.com/perspectives/toward-more-efficient-ai-leading-flapping-airplanes-1b-series-a/",
+        "title": "迈向更高效的AI：领投Flapping Airplanes的10亿美元A轮融资",
+        "publisher": "www.indexventures.com",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-10-22T03:15:10.734Z",
+        "content_hash": "23901e3c9a1849829afc4d2b36da9e75d5e2634d69e746ef68df3d5176ab60b4",
+        "source_artifact_id": "SA-65390f6a68556c5f",
+        "raw_id": "RAW-51b1cf88a56f7b0f"
+      },
+      {
+        "source_id": "FISRC-63c3030bd2abb92e",
+        "source_url": "https://multiples.vc/private-comps/flapping-airplanes",
+        "title": "Flapping Airplanes Valuation, Funding & Investors | Multiples",
+        "publisher": "multiples.vc",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-22T03:40:29.462Z",
+        "content_hash": "e663947f00994e68",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-d40817bd8696706a",
+        "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+        "title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+        "publisher": "techcrunch.com",
+        "source_class": "secondary",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-22T03:40:29.574Z",
+        "content_hash": "52d288f9f7f1c202",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-8b854e8f88d3042f",
+        "source_url": "https://dealroom.co/news/164826-flapping-airplanes-raises-1b-for-ai-research-hitting-6b-valuation/",
+        "title": "Flapping Airplanes raises $1B for AI research, hitting $6B valuation",
+        "publisher": "dealroom.co",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-22T03:40:32.938Z",
+        "content_hash": "e0d3788b75982b80",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-4d5a25fea2c3b366",
+        "source_url": "https://www.linkedin.com/posts/avinpatil_these-billion-dollar-ai-startups-have-no-activity-7422290701998059520-XyOr",
+        "title": "Flapping Airplanes is one of a wave of new startup research labs drawing intense interest from investors, the latest chapter in the AI race",
+        "publisher": "linkedin.com",
+        "source_class": "secondary",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-22T03:40:33.560Z",
+        "content_hash": "5727b9a6e450a088",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-2f96846e2986f7df",
+        "source_url": "https://siliconvalleyinvestclub.com/companies/flappingairplanes/team/asher-spector/",
+        "title": "Asher Spector — Co-founder, Flapping Airplanes",
+        "publisher": "siliconvalleyinvestclub.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-22T03:40:37.663Z",
+        "content_hash": "f7455c6e9095b61f",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-3e0d8ebf1d36cd67",
+        "source_url": "https://siliconvalleyinvestclub.com/companies/flappingairplanes/",
+        "title": "Flapping Airplanes — $1.5B · Ben Spector, Asher Spector",
+        "publisher": "siliconvalleyinvestclub.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-22T03:40:40.847Z",
+        "content_hash": "baf8b927cc876842",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-10-22T03:40:51.782Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-10-22T03:40:51.782Z",
+    "customer_research": {
+      "status": "no_verified_customer_found",
+      "verified_customer_count": 0,
+      "searched_source_count": 7
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 2,
+        "unresolved_names": [
+          "data-efficient model research",
+          "megakernel framework"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 3,
+        "unresolved_names": [
+          "Aidan Smith",
+          "Asher Spector",
+          "Ben Spector"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-cd3cf94d0f65aea1"
+    ],
+    "aggregation": {
+      "key": "EN-c9bd40e58364720b|series_a",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"Flapping Airplanes\" 2026 funding round investors",
+    "\"Flapping Airplanes\" official product customers",
+    "\"Flapping Airplanes\" \"why we invested\"",
+    "\"Flapping Airplanes\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Flapping Airplanes\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://qz.com/flapping-airplanes-ai-startup-1-billion-funding-valuation-102126",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Flapping Airplanes\" $1B funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Flapping Airplanes\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Flapping Airplanes\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"Flapping Airplanes\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Flapping Airplanes\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.facebook.com/techcrunch/posts/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/1460998782560651/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.instagram.com/p/DUJd5RGEVi-/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://thenextweb.com/news/flapping-airplanes-1b-6b-valuation",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://x.com/flappyairplanes",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    }
+  ]
+}

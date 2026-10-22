@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "generatedAt": "2026-10-22T06:13:48.458Z",
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-03",
-    "latest_disclosed_at": "2026-10-19",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "other",
@@ -93,6 +93,11 @@
         "entity_id": "EN-2f4436342c46decc",
         "canonical_entity_id": "",
         "name": "Cerebras Systems"
+      },
+      {
+        "entity_id": "EN-22dc02488a037639",
+        "canonical_entity_id": "",
+        "name": "Legora"
       },
       {
         "entity_id": "EN-f7d9f5a90479d632",
@@ -116,6 +121,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ca6a9b025c225f1e",
+        "funding_insight_id": "FI-b875723282f11479",
+        "event_ids": [
+          "EV-07911ca790bdfc5a"
+        ],
+        "company_entity_id": "EN-22dc02488a037639",
+        "company_canonical_entity_id": "",
+        "company_name": "Legora",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "€489 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 489000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4.89 亿欧元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c4c53e6f607010be",
+            "source_url": "https://legora.com/blog/series-e",
+            "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+            "source_content_hash": "f3c7efce8da1beb6",
+            "quote": "with participation from new investors, including Baron Capital, Capital Group, Fidelity Management & Research Company, Glade Brook Capital Partners, and J.P Morgan",
+            "quote_hash": "53b256cbc00c787add4fc6ed2fb5c55f3cdbafe428a00c9bd1e18b2ba37b0f5c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a47e745e257cf13d",
         "funding_insight_id": "FI-894806f6afae1cc3",
@@ -392,6 +437,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c4c53e6f607010be",
+        "source_url": "https://legora.com/blog/series-e",
+        "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+        "source_content_hash": "f3c7efce8da1beb6",
+        "quote": "with participation from new investors, including Baron Capital, Capital Group, Fidelity Management & Research Company, Glade Brook Capital Partners, and J.P Morgan",
+        "quote_hash": "53b256cbc00c787add4fc6ed2fb5c55f3cdbafe428a00c9bd1e18b2ba37b0f5c"
+      },
+      {
         "source_id": "FISRC-c79323219068494a",
         "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
         "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
@@ -481,16 +534,16 @@
           "source_id": "history"
         },
         {
+          "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4c53e6f607010be"
+        },
+        {
           "description": "融资来源记录：Tenstorrent · E轮 · 2026-10-19 · 本轮参投 · 15亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c79323219068494a"
         },
         {
           "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f581afce52cf5bef"
-        },
-        {
-          "description": "融资来源记录：SiMa.ai · C轮 · 2026-09-28 · 本轮联合领投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-926f8f2e0ad24f56"
         }
       ],
       "contacts": [
@@ -512,6 +565,14 @@
           "quote_hash": "343ba7660ab0fae22de6a4b64cd42c62c164c9d32469470eb53e4c2d84eb817b"
         },
         {
+          "source_id": "FISRC-c4c53e6f607010be",
+          "source_url": "https://legora.com/blog/series-e",
+          "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+          "source_content_hash": "f3c7efce8da1beb6",
+          "quote": "with participation from new investors, including Baron Capital, Capital Group, Fidelity Management & Research Company, Glade Brook Capital Partners, and J.P Morgan",
+          "quote_hash": "53b256cbc00c787add4fc6ed2fb5c55f3cdbafe428a00c9bd1e18b2ba37b0f5c"
+        },
+        {
           "source_id": "FISRC-c79323219068494a",
           "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
           "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
@@ -526,21 +587,13 @@
           "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
           "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
           "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
-        },
-        {
-          "source_id": "FISRC-926f8f2e0ad24f56",
-          "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
-          "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
-          "source_content_hash": "f276c5580c0b14bea6e22f71dbd65c2b8ee76d2b2cddc812f16aa9dad898fa53",
-          "quote": "The round was co-led by Fidelity Management &amp;amp; Research Company and Amplify, with participation from Alter Venture Partners, Dell Technologies Capital and StepStone Group.",
-          "quote_hash": "08a052637fcf39ab44c4bfd2e3c693edd75f4fe17cd32261b6a6770d6162d60a"
         }
       ],
       "last_verified_at": "2026-10-02"
     },
     "translations": {
       "zh-CN": {
-        "activities[6].role": {
+        "activities[7].role": {
           "text": "Series G 领投",
           "source_hash": "f3f6de8acaa7ef2a6e0d57253fb12e64a3ac65374b7b99822bcbd922a39d98b0",
           "provider": "deepseek",

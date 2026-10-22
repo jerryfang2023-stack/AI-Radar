@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-21T05:53:32.452Z",
-    "latestDataDate": "2026-10-21",
-    "currentDate": "2026-10-21",
-    "eventCount": 4214,
+    "generatedAt": "2026-10-22T06:13:48.458Z",
+    "latestDataDate": "2026-10-22",
+    "currentDate": "2026-10-22",
+    "eventCount": 4230,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-03-19",
     "latest_disclosed_at": "2026-08-03",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 2
     },
     "round_codes": [
@@ -170,6 +171,38 @@
             "quote_hash": "a17c6a3c0aa2ff6760f9f6b20f563d3a68b5d776f0dd68a240ebf389b9c5ad08"
           }
         ]
+      },
+      {
+        "activity_id": "IA-f78d19015ff4db3b",
+        "funding_insight_id": "FI-f6024633a1bff4e3",
+        "event_ids": [
+          "EV-cd3cf94d0f65aea1"
+        ],
+        "company_entity_id": "EN-c9bd40e58364720b",
+        "company_canonical_entity_id": "",
+        "company_name": "Flapping Airplanes",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方（本轮参与未披露）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d40817bd8696706a",
+            "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+            "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+            "source_content_hash": "52d288f9f7f1c202",
+            "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
+            "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -188,6 +221,14 @@
         "source_content_hash": "043f0819e45e2208",
         "quote": "which included investment from 8VC and A*z.",
         "quote_hash": "a17c6a3c0aa2ff6760f9f6b20f563d3a68b5d776f0dd68a240ebf389b9c5ad08"
+      },
+      {
+        "source_id": "FISRC-d40817bd8696706a",
+        "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+        "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+        "source_content_hash": "52d288f9f7f1c202",
+        "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
+        "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
       }
     ],
     "public_profile": {
@@ -213,6 +254,10 @@
         {
           "description": "融资来源记录：Edra · A轮 · 2026-03-19 · 本轮参投 · 3000万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f0bd0469bbdd29e2"
+        },
+        {
+          "description": "融资来源记录：Flapping Airplanes · 历史轮次未披露 · 既有投资方（本轮参与未披露）。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d40817bd8696706a"
         }
       ],
       "contacts": [],
@@ -240,6 +285,14 @@
           "source_content_hash": "043f0819e45e2208",
           "quote": "which included investment from 8VC and A*z.",
           "quote_hash": "a17c6a3c0aa2ff6760f9f6b20f563d3a68b5d776f0dd68a240ebf389b9c5ad08"
+        },
+        {
+          "source_id": "FISRC-d40817bd8696706a",
+          "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+          "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+          "source_content_hash": "52d288f9f7f1c202",
+          "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
+          "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
         }
       ],
       "last_verified_at": "2026-10-04",
