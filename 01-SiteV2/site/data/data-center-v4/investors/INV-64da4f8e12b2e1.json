@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-22T06:13:48.458Z",
-    "latestDataDate": "2026-10-22",
-    "currentDate": "2026-10-22",
-    "eventCount": 4230,
+    "latestDataDate": "2026-10-23",
+    "currentDate": "2026-10-23",
+    "eventCount": 4244,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,25 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
+    "china_market_activity_count": 4,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-06-03",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-10-22",
     "role_counts": {
       "historical_or_ambiguous": 4,
       "lead": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "first_external",
-      "series_b_plus"
+      "series_b_plus",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -93,6 +94,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-6c48877c10928833",
+        "funding_insight_id": "FI-da29060a41575ad7",
+        "event_ids": [
+          "EV-c964f7646ad88c1e"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "最新一轮融资",
+        "amount_original": "$15 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "150 亿美元"
+        },
+        "announced_at": "2026-10-22",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2346329522885331",
+            "source_url": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
+            "source_title": "DeepSeek 融资 150 亿美元，挑战美国领先实验室",
+            "source_content_hash": "e85e5d970af235d183bcf54e03c8ba88851ce996abdae1d62194fd473f9b6914",
+            "quote": "Battery pioneer Contemporary Amperex Technology Co. Ltd. and WeChat-operator Tencent Holdings Ltd. were among the biggest investors in the round",
+            "quote_hash": "cda5d96cbdc5e3426f54b22b9a8ab6f0353079dc52e896f1e767f50f46c312df"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3d9347a38b050708",
         "funding_insight_id": "FI-fae9478ac0e65316",
@@ -353,6 +394,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-2346329522885331",
+        "source_url": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
+        "source_title": "DeepSeek 融资 150 亿美元，挑战美国领先实验室",
+        "source_content_hash": "e85e5d970af235d183bcf54e03c8ba88851ce996abdae1d62194fd473f9b6914",
+        "quote": "Battery pioneer Contemporary Amperex Technology Co. Ltd. and WeChat-operator Tencent Holdings Ltd. were among the biggest investors in the round",
+        "quote_hash": "cda5d96cbdc5e3426f54b22b9a8ab6f0353079dc52e896f1e767f50f46c312df"
+      },
+      {
         "source_id": "FISRC-ac5a938b8fdef1a9",
         "source_url": "https://news.pedaily.cn/202609/568645.shtml",
         "source_title": "首发| 深度智控完成B+轮数亿元融资，宁德时代联手阿美投资布局物理AI",
@@ -454,8 +503,8 @@
           "source_id": "FISRC-e0178cb313198d39"
         },
         {
-          "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投 · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d2c8c841370ed82a"
+          "description": "融资来源记录：DeepSeek · 轮次未披露 · 2026-10-22 · 本轮参投 · $15 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2346329522885331"
         }
       ],
       "contacts": [],
@@ -493,12 +542,12 @@
           "quote_hash": "bb678c6c49f251f19f81c68002037a382f0123e53a454058a85f81d0ec692638"
         },
         {
-          "source_id": "FISRC-d2c8c841370ed82a",
-          "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
-          "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
-          "source_content_hash": "1a156474d760e02b",
-          "quote": "CATL ​¥5B",
-          "quote_hash": "bcd88ca2e2bd8d6d580efd429b25e6a91889952bc2ee1f22526c0bd588bb03d5"
+          "source_id": "FISRC-2346329522885331",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
+          "source_title": "DeepSeek 融资 150 亿美元，挑战美国领先实验室",
+          "source_content_hash": "e85e5d970af235d183bcf54e03c8ba88851ce996abdae1d62194fd473f9b6914",
+          "quote": "Battery pioneer Contemporary Amperex Technology Co. Ltd. and WeChat-operator Tencent Holdings Ltd. were among the biggest investors in the round",
+          "quote_hash": "cda5d96cbdc5e3426f54b22b9a8ab6f0353079dc52e896f1e767f50f46c312df"
         }
       ],
       "last_verified_at": "2026-10-03",

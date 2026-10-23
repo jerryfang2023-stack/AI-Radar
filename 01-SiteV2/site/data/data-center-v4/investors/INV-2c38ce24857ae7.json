@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-22T06:13:48.458Z",
-    "latestDataDate": "2026-10-22",
-    "currentDate": "2026-10-22",
-    "eventCount": 4230,
+    "latestDataDate": "2026-10-23",
+    "currentDate": "2026-10-23",
+    "eventCount": 4244,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-17",
-    "latest_disclosed_at": "2026-06-23",
+    "latest_disclosed_at": "2026-10-22",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "seed",
@@ -87,6 +87,11 @@
         "name": "Engram"
       },
       {
+        "entity_id": "EN-c5803a6e4daa6af4",
+        "canonical_entity_id": "",
+        "name": "Modal"
+      },
+      {
         "entity_id": "EN-a7dd4a797cf9990b",
         "canonical_entity_id": "",
         "name": "Niteshift"
@@ -98,6 +103,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-97f7f3a824d85821",
+        "funding_insight_id": "FI-00e0f416fc6d0533",
+        "event_ids": [
+          "EV-69b488065c05e255"
+        ],
+        "company_entity_id": "EN-c5803a6e4daa6af4",
+        "company_canonical_entity_id": "",
+        "company_name": "Modal",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "$750 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 750000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.5 亿美元"
+        },
+        "announced_at": "2026-10-22",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+            "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
+            "source_content_hash": "ef996bef620416ce",
+            "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
+            "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2e775bf5232e8d68",
         "funding_insight_id": "FI-6fdfe3674217723b",
@@ -325,6 +370,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-b54b83abf2f3608c",
+        "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+        "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
+        "source_content_hash": "ef996bef620416ce",
+        "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
+        "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
+      },
+      {
         "source_id": "FISRC-8f5a35fa6bbc977d",
         "source_url": "https://www.prnewswire.com/news-releases/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization-302807126.html",
         "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
@@ -436,16 +489,16 @@
           "source_id": "amplify_official_portfolio"
         },
         {
+          "description": "融资来源记录：Modal · D轮 · 2026-10-22 · 本轮参投 · $750 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b54b83abf2f3608c"
+        },
+        {
           "description": "融资来源记录：Engram · 轮次未披露 · 2026-06-23 · 本轮参投 · $98 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8f5a35fa6bbc977d"
         },
         {
           "description": "融资来源记录：Engram · 种子轮 · 2026-06-23 · 本轮参投 · $98M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-39d911c5038cb1c0"
-        },
-        {
-          "description": "融资来源记录：Niteshift · 种子轮 · 2026-06-10 · 本轮参投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a1dac8a4c0e97aee"
         }
       ],
       "contacts": [
@@ -483,6 +536,14 @@
           "quote_hash": "20f0fa198f9c751f7ee613e09acba365fc863b690c585e23cbea389adce9d1f8"
         },
         {
+          "source_id": "FISRC-b54b83abf2f3608c",
+          "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+          "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
+          "source_content_hash": "ef996bef620416ce",
+          "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
+          "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
+        },
+        {
           "source_id": "FISRC-8f5a35fa6bbc977d",
           "source_url": "https://www.prnewswire.com/news-releases/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization-302807126.html",
           "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
@@ -497,14 +558,6 @@
           "source_content_hash": "f7105d727554bb38",
           "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo",
           "quote_hash": "d6d2e6175424260b5170a8e5367eac93875a636a037b0e4d21c7a38705fd06e4"
-        },
-        {
-          "source_id": "FISRC-a1dac8a4c0e97aee",
-          "source_url": "https://www.todaysstartupnews.com/startups/niteshift-raises-7-million-seed-greylock-jerry-chen-ai-coding-agent-cloud-platform",
-          "source_title": "Niteshift Raises $7 Million Seed Round Led by Greylock to Build the Cloud Infrastructure Layer for AI Coding Agents",
-          "source_content_hash": "c89dfd8f0a56c07f",
-          "quote": "Niteshift has raised $7 million in a seed round led by Greylock, with participation from Amplify Partners, BoxGroup, and SV Angel.",
-          "quote_hash": "b784d4f0084512f627cf683b07ea68a93c1cb7b5b6c53181d49da02707611ddc"
         }
       ],
       "last_verified_at": "2026-09-25",

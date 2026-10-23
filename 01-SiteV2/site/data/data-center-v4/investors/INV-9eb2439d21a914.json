@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-22T06:13:48.458Z",
-    "latestDataDate": "2026-10-22",
-    "currentDate": "2026-10-22",
-    "eventCount": 4230,
+    "latestDataDate": "2026-10-23",
+    "currentDate": "2026-10-23",
+    "eventCount": 4244,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,21 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 13,
+    "current_round_count": 14,
     "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 12,
+    "portfolio_company_count": 13,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-31",
-    "latest_disclosed_at": "2026-10-21",
+    "latest_disclosed_at": "2026-10-22",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 5,
       "lead": 3,
-      "participant": 9
+      "participant": 10
     },
     "round_codes": [
       "multi_round",
@@ -123,6 +123,11 @@
         "name": "Flapping Airplanes"
       },
       {
+        "entity_id": "EN-c5803a6e4daa6af4",
+        "canonical_entity_id": "",
+        "name": "Modal"
+      },
+      {
         "entity_id": "EN-b314f58f5f506fd2",
         "canonical_entity_id": "",
         "name": "Poetic"
@@ -149,6 +154,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a7c90437f871e1c6",
+        "funding_insight_id": "FI-00e0f416fc6d0533",
+        "event_ids": [
+          "EV-69b488065c05e255"
+        ],
+        "company_entity_id": "EN-c5803a6e4daa6af4",
+        "company_canonical_entity_id": "",
+        "company_name": "Modal",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "$750 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 750000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.5 亿美元"
+        },
+        "announced_at": "2026-10-22",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+            "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
+            "source_content_hash": "ef996bef620416ce",
+            "quote": "Kleiner Perkins joined, and all of our existing investors participated",
+            "quote_hash": "4c38dd29c6b26da641a4ef8bdc693c390bb1c74ce55ef43dfadd3cef58cf0568"
+          }
+        ]
+      },
       {
         "activity_id": "IA-432df358dac10e66",
         "funding_insight_id": "FI-f6024633a1bff4e3",
@@ -839,6 +884,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-b54b83abf2f3608c",
+        "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+        "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
+        "source_content_hash": "ef996bef620416ce",
+        "quote": "Kleiner Perkins joined, and all of our existing investors participated",
+        "quote_hash": "4c38dd29c6b26da641a4ef8bdc693c390bb1c74ce55ef43dfadd3cef58cf0568"
+      },
+      {
         "source_id": "FISRC-d40817bd8696706a",
         "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
         "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
@@ -1009,16 +1062,16 @@
           "source_id": "kp_about"
         },
         {
+          "description": "融资来源记录：Modal · D轮 · 2026-10-22 · 本轮参投 · $750 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b54b83abf2f3608c"
+        },
+        {
           "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d40817bd8696706a"
         },
         {
           "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dc8fb918b056c843"
-        },
-        {
-          "description": "融资来源记录：Dazzle · 种子轮 · 2026-09-29 · 本轮参投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-39cbb5f315cdae11"
         }
       ],
       "contacts": [
@@ -1040,6 +1093,14 @@
           "quote_hash": "ef9f5d49eeaa7661a644ec18334f865187a5bd9565cfd4e41c5149c6687ae704"
         },
         {
+          "source_id": "FISRC-b54b83abf2f3608c",
+          "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+          "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
+          "source_content_hash": "ef996bef620416ce",
+          "quote": "Kleiner Perkins joined, and all of our existing investors participated",
+          "quote_hash": "4c38dd29c6b26da641a4ef8bdc693c390bb1c74ce55ef43dfadd3cef58cf0568"
+        },
+        {
           "source_id": "FISRC-d40817bd8696706a",
           "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
           "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
@@ -1054,14 +1115,6 @@
           "source_content_hash": "0b4ca5291b20197e1a333b32e3a6fd462793e5829ad8645ade5f6e59221e163d",
           "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
           "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
-        },
-        {
-          "source_id": "FISRC-39cbb5f315cdae11",
-          "source_url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/marissa-mayers-new-startup-dazzle-ai-raises-8-million-seed-round",
-          "source_title": "Marissa Mayer's New Startup Dazzle AI Raises $8 Million Seed Round | Financial Post",
-          "source_content_hash": "0d32e048dc28b8dd",
-          "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
-          "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1072,7 +1125,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[13].role": {
+        "activities[14].role": {
           "text": "Seed 参投",
           "source_hash": "5a82b6b5ec5714f4399d33f301da7f41a22fc3218a4bca553666f08acc0877ac",
           "provider": "deepseek",

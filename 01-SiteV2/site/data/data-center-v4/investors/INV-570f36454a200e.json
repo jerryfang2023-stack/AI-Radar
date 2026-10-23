@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-22T06:13:48.458Z",
-    "latestDataDate": "2026-10-22",
-    "currentDate": "2026-10-22",
-    "eventCount": 4230,
+    "latestDataDate": "2026-10-23",
+    "currentDate": "2026-10-23",
+    "eventCount": 4244,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-07-13",
     "latest_disclosed_at": "2026-07-13",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -124,6 +125,38 @@
             "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
           }
         ]
+      },
+      {
+        "activity_id": "IA-5ada5c1972ddf9d1",
+        "funding_insight_id": "FI-da29060a41575ad7",
+        "event_ids": [
+          "EV-c964f7646ad88c1e"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次新进投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9990b623f525d10c",
+            "source_url": "https://es.tradingview.com/news/panews:246b17cffe3f9:0/",
+            "source_title": "DeepSeek将完成1000亿元融资",
+            "source_content_hash": "d65431c8435b48c0",
+            "quote": "本轮新进投资方包括石溪资本、中芯聚源、CPE源峰、君联资本、吉利等，以产业投资方为主。",
+            "quote_hash": "a68fb0daabf1e8a583a59059a977ca12b0d3fd4e0c5ec0d0158996723a57ca71"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "8b2b4166d5cfc440ad705c54d27b2283f53fb500afe8c3300ba824137632fc87",
         "quote": "本轮融资投资方阵容多元，产业资本与专业创投联合入局，包括张江高科、壁仞科技、东方富海、中科创星、成为资本、石溪资本、上海天使会、孚腾资本、元禾璞华、华山资本十家机构",
         "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
+      },
+      {
+        "source_id": "FISRC-9990b623f525d10c",
+        "source_url": "https://es.tradingview.com/news/panews:246b17cffe3f9:0/",
+        "source_title": "DeepSeek将完成1000亿元融资",
+        "source_content_hash": "d65431c8435b48c0",
+        "quote": "本轮新进投资方包括石溪资本、中芯聚源、CPE源峰、君联资本、吉利等，以产业投资方为主。",
+        "quote_hash": "a68fb0daabf1e8a583a59059a977ca12b0d3fd4e0c5ec0d0158996723a57ca71"
       }
     ],
     "public_profile": {
@@ -148,6 +189,10 @@
         {
           "description": "融资来源记录：灵睿智芯 · Pre-A轮 · 2026-07-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-760e793448781182"
+        },
+        {
+          "description": "融资来源记录：DeepSeek · 历史轮次未披露 · 历史轮次新进投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9990b623f525d10c"
         }
       ],
       "contacts": [],
@@ -159,6 +204,14 @@
           "source_content_hash": "8b2b4166d5cfc440ad705c54d27b2283f53fb500afe8c3300ba824137632fc87",
           "quote": "本轮融资投资方阵容多元，产业资本与专业创投联合入局，包括张江高科、壁仞科技、东方富海、中科创星、成为资本、石溪资本、上海天使会、孚腾资本、元禾璞华、华山资本十家机构",
           "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
+        },
+        {
+          "source_id": "FISRC-9990b623f525d10c",
+          "source_url": "https://es.tradingview.com/news/panews:246b17cffe3f9:0/",
+          "source_title": "DeepSeek将完成1000亿元融资",
+          "source_content_hash": "d65431c8435b48c0",
+          "quote": "本轮新进投资方包括石溪资本、中芯聚源、CPE源峰、君联资本、吉利等，以产业投资方为主。",
+          "quote_hash": "a68fb0daabf1e8a583a59059a977ca12b0d3fd4e0c5ec0d0158996723a57ca71"
         }
       ],
       "last_verified_at": "2026-09-25"

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-22T06:13:48.458Z",
-    "latestDataDate": "2026-10-22",
-    "currentDate": "2026-10-22",
-    "eventCount": 4230,
+    "latestDataDate": "2026-10-23",
+    "currentDate": "2026-10-23",
+    "eventCount": 4244,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,12 +72,17 @@
     "first_disclosed_at": "2026-10-21",
     "latest_disclosed_at": "2026-10-21",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-c53e6deb84236ea0",
+        "canonical_entity_id": "",
+        "name": "YGO"
+      },
       {
         "entity_id": "EN-71318126b97d81bf",
         "canonical_entity_id": "",
@@ -85,6 +90,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-687e64a484dce02d",
+        "funding_insight_id": "FI-8cb5299b4ec023d4",
+        "event_ids": [
+          "EV-353261ac722ca40b"
+        ],
+        "company_entity_id": "EN-c53e6deb84236ea0",
+        "company_canonical_entity_id": "",
+        "company_name": "YGO",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "€8 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 8000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "800 万欧元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d1cf456ee7930017",
+            "source_url": "https://www.eu-startups.com/2026/10/berlin-based-ygo-raises-e8-million-to-make-travel-inventory-bookable-through-ai-agents/",
+            "source_title": "柏林YGO融资800万欧元，让旅行库存可通过AI智能体预订",
+            "source_content_hash": "bf72a412092bb2925fdea3ed8183097d72e1b8ed65b391034325dce3b4c5b163",
+            "quote": "The round was led by Ventech, with participation from Sake Bosch, Caesar and Business Angels.",
+            "quote_hash": "e8d212be6db69e20140bc0ddb89fe8835b2b44e21184e2c4f682a0cc59e8d33e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e444fb8b823caad7",
         "funding_insight_id": "FI-4feba3bc3cd4e272",
@@ -128,6 +173,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-d1cf456ee7930017",
+        "source_url": "https://www.eu-startups.com/2026/10/berlin-based-ygo-raises-e8-million-to-make-travel-inventory-bookable-through-ai-agents/",
+        "source_title": "柏林YGO融资800万欧元，让旅行库存可通过AI智能体预订",
+        "source_content_hash": "bf72a412092bb2925fdea3ed8183097d72e1b8ed65b391034325dce3b4c5b163",
+        "quote": "The round was led by Ventech, with participation from Sake Bosch, Caesar and Business Angels.",
+        "quote_hash": "e8d212be6db69e20140bc0ddb89fe8835b2b44e21184e2c4f682a0cc59e8d33e"
+      },
+      {
         "source_id": "FISRC-085eb5a3df4bad2e",
         "source_url": "https://tech.eu/2026/10/21/ygo-secures-eur8m-to-scale-its-ai-powered-travel-infrastructure/",
         "source_title": "YGO 获得 €8M 融资，以扩展其 AI 驱动的旅游基础设施",
@@ -147,11 +200,23 @@
       "track_record": [
         {
           "description": "融资来源记录：YGO · A轮 · 2026-10-21 · 本轮参投 · €8 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d1cf456ee7930017"
+        },
+        {
+          "description": "融资来源记录：YGO · A轮 · 2026-10-21 · 本轮参投 · €8 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-085eb5a3df4bad2e"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-d1cf456ee7930017",
+          "source_url": "https://www.eu-startups.com/2026/10/berlin-based-ygo-raises-e8-million-to-make-travel-inventory-bookable-through-ai-agents/",
+          "source_title": "柏林YGO融资800万欧元，让旅行库存可通过AI智能体预订",
+          "source_content_hash": "bf72a412092bb2925fdea3ed8183097d72e1b8ed65b391034325dce3b4c5b163",
+          "quote": "The round was led by Ventech, with participation from Sake Bosch, Caesar and Business Angels.",
+          "quote_hash": "e8d212be6db69e20140bc0ddb89fe8835b2b44e21184e2c4f682a0cc59e8d33e"
+        },
         {
           "source_id": "FISRC-085eb5a3df4bad2e",
           "source_url": "https://tech.eu/2026/10/21/ygo-secures-eur8m-to-scale-its-ai-powered-travel-infrastructure/",

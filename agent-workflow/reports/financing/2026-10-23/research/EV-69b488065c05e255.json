@@ -1,0 +1,901 @@
+{
+  "event_id": "EV-69b488065c05e255",
+  "company_name": "Modal",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-27d05e469bc4a84c",
+    "triggered_by_event_id": "EV-69b488065c05e255",
+    "as_of_date": "2026-10-23",
+    "company": {
+      "entity_id": "EN-c5803a6e4daa6af4",
+      "name": "Modal",
+      "full_name": "Modal",
+      "website": "https://modal.com",
+      "summary": "Modal 是一家 AI 基础设施公司，提供计算平台和存储平台，帮助开发者运行推理、沙箱、训练与微调等工作负载，底层容量池横跨 20 多个云。",
+      "headquarters": "",
+      "founders": [
+        {
+          "name": "Erik Bernhardsson",
+          "role": "联合创始人、CEO",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-855f971c07f1c1e9",
+              "quote": "Erik Bernhardsson is the Co-founder and CEO of Modal.",
+              "source_content_hash": "5d29fd92b495ecab",
+              "quote_hash": "1294320f111c9f10f45f36e44d9efb5a11b3d16aa87f3f57b813545e76f6e514"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Akshat Bubna",
+          "role": "联合创始人、CTO",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c5258c7ef6406bc0",
+              "quote": "CTO Akshat then joined us to talk about Modal’s infra primitives and stack",
+              "source_content_hash": "d1d80ff88a36ddc1d3c630310c99e858d5955369714e7b8050b29ad0a4154557",
+              "quote_hash": "9294df43654d032ab54900d0945c397843518161a2d350e12a4e2f066fdf638e"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "team_size": {
+        "value": "200+",
+        "observed_at": "2026-10-14",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "If you’re interested in joining our team of 200+ across NY, SF, and Stockholm",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "2302d40e65c8ac2ebc8e1d5db94db3e0f2500a5773c0d6d8017631ce94dcaf58"
+          }
+        ]
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b54b83abf2f3608c",
+          "quote": "We threw out most of the existing stack and built our own file system, container runtime, scheduler, and networking from the ground up, on a capacity pool that now spans 20+ clouds.",
+          "source_content_hash": "ef996bef620416ce",
+          "quote_hash": "5ccf04bc8d58a775d9806a0dce03871b045457480df9583daf103be37bbe64c4"
+        },
+        {
+          "source_id": "FISRC-5edd9c2e9d5556ce",
+          "quote": "Founded in 2021 by Erik Bernhardsson and Akshat Bubna, Modal develops cloud infrastructure for artificial intelligence, machine learning, and data-intensive applications.",
+          "source_content_hash": "71d29e9ea3b6d284",
+          "quote_hash": "409e30cf77a5e3be05495d05d9b7ff80df8e53dc7f6ed5d38d35caa8fca7a096"
+        }
+      ],
+      "application_entity_id": "EN-c5803a6e4daa6af4",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "D轮",
+      "amount": "$750 million",
+      "total_raised": "more than $1.2 billion",
+      "announced_at": "2026-10-22",
+      "investor_disclosure_status": "disclosed",
+      "investors": [
+        {
+          "name": "Accel",
+          "role": "本轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b54b83abf2f3608c",
+              "quote": "Accel led the round.",
+              "source_content_hash": "ef996bef620416ce",
+              "quote_hash": "ec2ad31a51431aadfd7886a6d529f38ae6e21fd59fcab834a0006578a80c362b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Kleiner Perkins",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b54b83abf2f3608c",
+              "quote": "Kleiner Perkins joined, and all of our existing investors participated",
+              "source_content_hash": "ef996bef620416ce",
+              "quote_hash": "4c38dd29c6b26da641a4ef8bdc693c390bb1c74ce55ef43dfadd3cef58cf0568"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Menlo Ventures",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b54b83abf2f3608c",
+              "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
+              "source_content_hash": "ef996bef620416ce",
+              "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "General Catalyst",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b54b83abf2f3608c",
+              "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
+              "source_content_hash": "ef996bef620416ce",
+              "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Redpoint",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b54b83abf2f3608c",
+              "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
+              "source_content_hash": "ef996bef620416ce",
+              "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Lux Capital",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b54b83abf2f3608c",
+              "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
+              "source_content_hash": "ef996bef620416ce",
+              "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Amplify Partners",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b54b83abf2f3608c",
+              "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
+              "source_content_hash": "ef996bef620416ce",
+              "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Bain Capital Ventures",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b54b83abf2f3608c",
+              "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
+              "source_content_hash": "ef996bef620416ce",
+              "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "other_round_investors": [],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c5258c7ef6406bc0",
+          "quote": "raised a $750 million Series D at a $16B valuation",
+          "source_content_hash": "d1d80ff88a36ddc1d3c630310c99e858d5955369714e7b8050b29ad0a4154557",
+          "quote_hash": "7a795e8cc443980b4c120be7fdb90fc42ffa5af80bf3a6bd548f6f981e7cbb44"
+        },
+        {
+          "source_id": "FISRC-b54b83abf2f3608c",
+          "quote": "we’ve raised a $750M Series D at a $15.75B post-money valuation.",
+          "source_content_hash": "ef996bef620416ce",
+          "quote_hash": "69a6e3ef09ee42c0d13b1987e92727608b3e0f7ef59b819c72e7278e5fff7caa"
+        },
+        {
+          "source_id": "FISRC-5edd9c2e9d5556ce",
+          "quote": "Modal has now raised more than $1.2 billion in total capital.",
+          "source_content_hash": "71d29e9ea3b6d284",
+          "quote_hash": "9f700b7c4480d29c606516dd80ae6bad1d192dd68c94de19da151ec27842c23e"
+        }
+      ],
+      "round_code": "series_d",
+      "round_original": "D轮",
+      "amount_original": "$750 million",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 750000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "7.5 亿美元"
+      },
+      "total_raised_original": "more than $1.2 billion",
+      "total_raised_normalized": {
+        "currency": "USD",
+        "value": 1200000000,
+        "min_value": 1200000000,
+        "max_value": null,
+        "unit": "base",
+        "status": "lower_bound",
+        "display_zh": "超过 12 亿美元"
+      },
+      "risk_markers": [],
+      "disclosures": [
+        {
+          "event_id": "EV-69b488065c05e255",
+          "round_original": "D轮",
+          "amount": "$750 million",
+          "announced_at": "2026-10-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c5258c7ef6406bc0",
+              "quote": "raised a $750 million Series D at a $16B valuation",
+              "source_content_hash": "d1d80ff88a36ddc1d3c630310c99e858d5955369714e7b8050b29ad0a4154557",
+              "quote_hash": "7a795e8cc443980b4c120be7fdb90fc42ffa5af80bf3a6bd548f6f981e7cbb44"
+            },
+            {
+              "source_id": "FISRC-b54b83abf2f3608c",
+              "quote": "we’ve raised a $750M Series D at a $15.75B post-money valuation.",
+              "source_content_hash": "ef996bef620416ce",
+              "quote_hash": "69a6e3ef09ee42c0d13b1987e92727608b3e0f7ef59b819c72e7278e5fff7caa"
+            },
+            {
+              "source_id": "FISRC-5edd9c2e9d5556ce",
+              "quote": "Modal has now raised more than $1.2 billion in total capital.",
+              "source_content_hash": "71d29e9ea3b6d284",
+              "quote_hash": "9f700b7c4480d29c606516dd80ae6bad1d192dd68c94de19da151ec27842c23e"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "disclosed"
+    },
+    "products": [
+      {
+        "name": "Functions",
+        "description": "开发者编写代码，Modal 负责在云端运行，适用于扩散模型图像生成、音乐生成、LLM 推理与模型训练等场景。",
+        "target_customers": "AI 应用开发者与 AI 公司",
+        "features": [
+          "无服务器运行代码",
+          "自动扩缩容",
+          "按使用量计费"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "Functions were our first building block: you write code, and Modal runs it.",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "f6f8ee8e35d7de87d89f881a109ca9397ef02bc09fa75fe9f09817baaa78a66c"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Sandboxes",
+        "description": "为 AI 智能体提供隔离环境以执行生成代码或不可信代码，已接近 30 亿美元年化收入规模，累计启动近 30 亿个沙箱。",
+        "target_customers": "构建后台智能体、强化学习、vibecoding 平台的开发者",
+        "features": [
+          "隔离执行不可信代码",
+          "可扩展至百万并发",
+          "虚拟机已普遍可用"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "it’s a $300M run rate product just on its own.",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "76a02ac83a518be84d22edced62671026849b39f2a29525f358752371ce4e527"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Modal servers",
+        "description": "面向 HTTP 服务器的推理侧产品，并提供 LLM 服务相关功能如 Endpoint Candidates。",
+        "target_customers": "需要部署推理服务的 AI 开发者",
+        "features": [
+          "HTTP 服务器方案",
+          "LLM 服务功能"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "we’ve been launching Modal servers, which is a better solution for HTTP servers",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "a0292ff3bc1ca9b6709f5bad0555870f8a352183ae2b26ab38d8193e881a9bdb"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [
+      {
+        "name": "TypeSafe AI 的 Jev",
+        "industry": "",
+        "use_case": "首个三天内在 Modal 上处理 1 万亿 token",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "It served 1T tokens on Modal in its first three days",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "fd9ab236497b6ea2dfbd5000497453b7fb11e357ed76860c984e7bef6fee1e08"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "DoorDash",
+        "industry": "",
+        "use_case": "AI 平台团队用 Modal 将应用从实验推进到生产",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "DoorDash’s AI platform team uses Modal to get apps across the company from experiment to production.",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "ebb88da30eba7bd1772244e647e10328bd2c8e1be1cd38b47171a1da7d05656a"
+          }
+        ],
+        "entity_id": "EN-b0126946c556dc47"
+      },
+      {
+        "name": "Cognition",
+        "industry": "",
+        "use_case": "构建领域后台智能体",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "Cognition, Ramp, Linear, and Hebbia are building background agents that are experts in their fields.",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "ee242a9e22cedaa64a7fded4b5cc3b0bc941997decd9d20801c6fee5ae2317fa"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Runway",
+        "industry": "",
+        "use_case": "在全球各区域生成逼真视频",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "Runway is generating life-like video, in every region of the world.",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "b062970b3b00e22188f33304cbcfeeb873df3361e39c4673e82b27f6c32021b6"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Physical Intelligence",
+        "industry": "",
+        "use_case": "训练机器人",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "Physical Intelligence, Generalist AI, and 1X are training robots.",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "81b128accdfb425551f6891f11d441d7af17a400b4e54dc51f506100b50d7463"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "comparisons": [],
+    "metrics": [
+      {
+        "label": "年化收入运行率",
+        "value": "$1B",
+        "observed_at": "2026-10-14",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "We recently crossed $1B in annualized run rate with no sign of slowing down.",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "973bfad6a584d0f918d0421e306b34aa410a09c5e84192e06db06375917bbe9b"
+          }
+        ]
+      },
+      {
+        "label": "同比增长",
+        "value": "more than 15x year-over-year",
+        "observed_at": "2026-10-14",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "we’ve grown more than 15x year-over-year.",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "9e864dcd1b7d5a5fd6ede69fb0182d45123ade03ac2f635ba07c1b945ae91cf0"
+          }
+        ]
+      },
+      {
+        "label": "Sandboxes 年化收入运行率",
+        "value": "$300M",
+        "observed_at": "2026-10-14",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "it’s a $300M run rate product just on its own.",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "76a02ac83a518be84d22edced62671026849b39f2a29525f358752371ce4e527"
+          }
+        ]
+      },
+      {
+        "label": "累计启动沙箱数",
+        "value": "close to 3 billion",
+        "observed_at": "2026-10-14",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "We’ve spun up close to 3 billion sandboxes",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "108266f2a5e4c8385b34a4f41e2000049c790dcc635df1d20bfd5eab379fa591"
+          }
+        ]
+      },
+      {
+        "label": "沙箱并发规模",
+        "value": "a million concurrent",
+        "observed_at": "2026-10-14",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "they scale to a million concurrent.",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "e1f5c6b61c604e1380fdc822b8ac10f54821202afd60c885e5d2e7464779c3b8"
+          }
+        ]
+      },
+      {
+        "label": "容量池覆盖云数量",
+        "value": "20+ clouds",
+        "observed_at": "2026-10-14",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "on a capacity pool that now spans 20+ clouds.",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "9be6722f2a057a3868afd5229e0c7ccc536be181e11f926d7be16f8ab8ef8c26"
+          }
+        ]
+      },
+      {
+        "label": "投后估值",
+        "value": "$15.75B",
+        "observed_at": "2026-10-14",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "at a $15.75B post-money valuation.",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "1b7efecd57467547ced875875e14d12b509b491778f12b3cddac56b89c0483ff"
+          }
+        ]
+      },
+      {
+        "label": "Jev 首三日 token 处理量",
+        "value": "1T tokens",
+        "observed_at": "2026-10-14",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "It served 1T tokens on Modal in its first three days",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "fd9ab236497b6ea2dfbd5000497453b7fb11e357ed76860c984e7bef6fee1e08"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Erik Bernhardsson",
+        "quote": "We recently crossed $1B in annualized run rate with no sign of slowing down.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "We recently crossed $1B in annualized run rate with no sign of slowing down.",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "973bfad6a584d0f918d0421e306b34aa410a09c5e84192e06db06375917bbe9b"
+          }
+        ]
+      },
+      {
+        "speaker": "Erik Bernhardsson",
+        "quote": "We threw out most of the existing stack and built our own file system, container runtime, scheduler, and networking from the ground up, on a capacity pool that now spans 20+ clouds.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "We threw out most of the existing stack and built our own file system, container runtime, scheduler, and networking from the ground up, on a capacity pool that now spans 20+ clouds.",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "5ccf04bc8d58a775d9806a0dce03871b045457480df9583daf103be37bbe64c4"
+          }
+        ]
+      },
+      {
+        "speaker": "Erik Bernhardsson",
+        "quote": "We launched Sandboxes in 2023 when we noticed that people were using LLMs to generate code.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "quote": "We launched Sandboxes in 2023 when we noticed that people were using LLMs to generate code.",
+            "source_content_hash": "ef996bef620416ce",
+            "quote_hash": "edca9298c4111247ad607ba31e0ad6c016ed3a6d2ef6fa34efe55ccbb7aa7020"
+          }
+        ]
+      },
+      {
+        "speaker": "Erik Bernhardsson",
+        "quote": "pool demand across thousands of customers, secure capacity underneath, and let each customer use what they need when they need it.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c5258c7ef6406bc0",
+            "quote": "pool demand across thousands of customers, secure capacity underneath, and let each customer use what they need when they need it.",
+            "source_content_hash": "d1d80ff88a36ddc1d3c630310c99e858d5955369714e7b8050b29ad0a4154557",
+            "quote_hash": "5ad815abffcde4af8e8a5c1d8b2b089a797ece966f5885343ad6a7df23a6b256"
+          }
+        ]
+      },
+      {
+        "speaker": "Erik Bernhardsson",
+        "quote": "sandboxes have grown to roughly a third of Modal’s revenue, a result he didn’t predict at launch.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c5258c7ef6406bc0",
+            "quote": "sandboxes have grown to roughly a third of Modal’s revenue, a result he didn’t predict at launch.",
+            "source_content_hash": "d1d80ff88a36ddc1d3c630310c99e858d5955369714e7b8050b29ad0a4154557",
+            "quote_hash": "e178371020e6cc173cf0de73f8d460c6971977f77d717f77345e6cd688b42230"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "资本押注的核心变量是：Modal 能否把跨 20 多个云的弹性容量池转化为可持续的高增长收入，并以 Sandboxes 等新产品打开智能体执行环境这一增量市场。当前融资所依赖的已验证信号是公司自报的年化收入运行率突破 10 亿美元、同比增长超过 15 倍，以及 Sandboxes 单独达到 3 亿美元年化运行率、累计启动近 30 亿个沙箱。证据边界在于：上述收入与增长数据由公司自行披露，未经独立审计或验证；来源未披露毛利率、客户集中度、合同金额与盈利情况，因此资本判断只能建立在公司自报的经营动量与产品采用信号上，不能外推为已确认的财务质量。",
+      "validated_signals": [
+        "公司自报年化收入运行率突破 10 亿美元",
+        "公司自报同比增长超过 15 倍",
+        "Sandboxes 产品年化运行率达 3 亿美元",
+        "累计启动近 30 亿个沙箱，可扩展至百万并发",
+        "容量池横跨 20 多个云"
+      ],
+      "risks": [
+        "收入与增长数据由公司自行披露，未经独立审计或验证",
+        "来源未披露毛利率、客户集中度与合同金额，收入质量与耐久性待验证",
+        "若 GPU 价格下跌，锁定容量的供应商可能持有高价供给，存在财务风险",
+        "跨第三方云提供算力的资本开支与单位经济性未披露"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "compute_cloud_service",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "use_case_ids": [
+        "software_development",
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "sector": "AI 云基础设施与无服务器 GPU 计算平台",
+      "investment_thesis": {
+        "statement": "资本押注的核心变量是：Modal 能否把跨 20 多个云的弹性容量池转化为可持续的高增长收入，并以 Sandboxes 等新产品打开智能体执行环境这一增量市场。当前融资所依赖的已验证信号是公司自报的年化收入运行率突破 10 亿美元、同比增长超过 15 倍，以及 Sandboxes 单独达到 3 亿美元年化运行率、累计启动近 30 亿个沙箱。证据边界在于：上述收入与增长数据由公司自行披露，未经独立审计或验证；来源未披露毛利率、客户集中度、合同金额与盈利情况，因此资本判断只能建立在公司自报的经营动量与产品采用信号上，不能外推为已确认的财务质量。",
+        "evidence_signals": [
+          "公司自报年化收入运行率突破 10 亿美元",
+          "公司自报同比增长超过 15 倍",
+          "Sandboxes 产品年化运行率达 3 亿美元",
+          "累计启动近 30 亿个沙箱，可扩展至百万并发",
+          "容量池横跨 20 多个云"
+        ],
+        "risks": [
+          "收入与增长数据由公司自行披露，未经独立审计或验证",
+          "来源未披露毛利率、客户集中度与合同金额，收入质量与耐久性待验证",
+          "若 GPU 价格下跌，锁定容量的供应商可能持有高价供给，存在财务风险",
+          "跨第三方云提供算力的资本开支与单位经济性未披露"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Functions",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Sandboxes",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Modal servers",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Erik Bernhardsson",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Akshat Bubna",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Accel",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Kleiner Perkins",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Menlo Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "General Catalyst",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Redpoint",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Lux Capital",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Amplify Partners",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Bain Capital Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "TypeSafe AI 的 Jev",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "DoorDash",
+        "canonical_entity_id": "EN-b0126946c556dc47",
+        "canonical_name": "DoorDash"
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Cognition",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Runway",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Physical Intelligence",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-69b488065c05e255",
+        "date": "2026-10-22",
+        "title": "为什么 AI 算力以矩形形态出现——Modal CEO Erik Bernhardsson",
+        "amount": "$750 million",
+        "source_refs": [
+          "SA-d7f2c08ecc0a0146"
+        ]
+      },
+      {
+        "event_id": "EV-1d31f1c839f9dab5",
+        "date": "2026-05-21",
+        "title": "Modal 的 C 轮融资：以 46.5 亿美元估值筹集 3.55 亿美元",
+        "amount": "$355 million",
+        "source_refs": [
+          "SA-0d5ed04054b8153a"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-c5258c7ef6406bc0",
+        "source_url": "https://www.latent.space/p/modal-d",
+        "title": "为什么 AI 算力以矩形形态出现——Modal CEO Erik Bernhardsson",
+        "publisher": "www.latent.space",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-10-23T00:18:00.129Z",
+        "content_hash": "d1d80ff88a36ddc1d3c630310c99e858d5955369714e7b8050b29ad0a4154557",
+        "source_artifact_id": "SA-d7f2c08ecc0a0146",
+        "raw_id": "RAW-db27ccb6709e6b05"
+      },
+      {
+        "source_id": "FISRC-b54b83abf2f3608c",
+        "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+        "title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
+        "publisher": "modal.com",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-23T00:44:18.268Z",
+        "content_hash": "ef996bef620416ce",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-5edd9c2e9d5556ce",
+        "source_url": "https://fnex.com/modal-raises-750m-at-15b-valuation/",
+        "title": "Modal Raises $750 Million at $15.75 Billion Valuation as Run Rate Tops $1 Billion",
+        "publisher": "fnex.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-23T00:44:18.577Z",
+        "content_hash": "71d29e9ea3b6d284",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-855f971c07f1c1e9",
+        "source_url": "https://www.thespl.it/p/building-ai-native-infrastructure",
+        "title": "🎧🍌 Building AI-Native Infrastructure for Developers with Erik Bernhardsson, Co-founder and CEO of Modal",
+        "publisher": "thespl.it",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-23T00:44:20.194Z",
+        "content_hash": "5d29fd92b495ecab",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-10-23T00:44:32.940Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-10-23T00:44:32.940Z",
+    "customer_research": {
+      "status": "verified_customers_found",
+      "verified_customer_count": 5,
+      "searched_source_count": 4
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 3,
+        "unresolved_names": [
+          "Functions",
+          "Modal servers",
+          "Sandboxes"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 2,
+        "unresolved_names": [
+          "Akshat Bubna",
+          "Erik Bernhardsson"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-69b488065c05e255"
+    ],
+    "aggregation": {
+      "key": "EN-c5803a6e4daa6af4|series_d",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"Modal\" 2026 funding round investors",
+    "\"Modal\" \"why we invested\""
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Modal\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://tracxn.com/d/companies/modal/__tHK2ShUcB0Q1o6j-hbJ-xcZMxDsw0P3kCJ85veVeYjU",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Modal\" $750 million funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Modal\" official product customers",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Modal\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"Modal\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Modal\" founders headquarters product",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    }
+  ]
+}

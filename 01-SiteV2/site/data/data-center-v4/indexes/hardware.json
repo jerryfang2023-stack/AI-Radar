@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-22T06:13:48.458Z",
-    "latestDataDate": "2026-10-22",
-    "currentDate": "2026-10-22",
-    "eventCount": 4230,
+    "latestDataDate": "2026-10-23",
+    "currentDate": "2026-10-23",
+    "eventCount": 4244,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -21929,27 +21929,28 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-10-22",
-      "funnel_id": "LF-f53385feac45c288",
+      "data_date": "2026-10-23",
+      "funnel_id": "LF-297ff957a8988cd7",
       "lens": "hardware",
-      "date": "2026-10-22",
+      "date": "2026-10-23",
       "monitoring_paths": [],
-      "raw_documents": 11,
-      "original_sources": 11,
-      "valid_claims": 11,
+      "raw_documents": 13,
+      "original_sources": 13,
+      "valid_claims": 8,
       "observations": 0,
-      "canonical_events": 5,
+      "canonical_events": 4,
       "blocker_counts": {
-        "event_not_ai_relevant": 3,
-        "cumulative_funding_total_not_single_round": 2
+        "no_source_bounded_claim": 1,
+        "event_not_ai_relevant": 6,
+        "cumulative_funding_total_not_single_round": 1
       },
       "rates": {
         "original_source_rate": 1,
-        "valid_claim_rate": 1,
+        "valid_claim_rate": 0.6153846153846154,
         "observation_rate": 0,
-        "event_conversion_rate": 0.45454545454545453
+        "event_conversion_rate": 0.5
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-22/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-23/monitoring-funnel.json"
     }
   ]
 }

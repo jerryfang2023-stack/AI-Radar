@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-22T06:13:48.458Z",
-    "latestDataDate": "2026-10-22",
-    "currentDate": "2026-10-22",
-    "eventCount": 4230,
+    "latestDataDate": "2026-10-23",
+    "currentDate": "2026-10-23",
+    "eventCount": 4244,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -65,6 +65,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-b84f9955d0e55497",
       "EV-7c8a2573ab3781e9",
       "EV-5db7347d93859de3",
       "EV-ab0d2f95a9a76c3e",
@@ -280,7 +281,7 @@
       "EN-10fce287b4b1464c"
     ],
     "firstSeen": "2026-01-14",
-    "lastSeen": "2026-10-22",
+    "lastSeen": "2026-10-23",
     "relationIds": [
       "REL2-ee25fecc7314abd4",
       "REL2-62f415d53b9e1307",
@@ -299,6 +300,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-b84f9955d0e55497",
         "EV-7c8a2573ab3781e9",
         "EV-ab0d2f95a9a76c3e",
         "EV-5db7347d93859de3",
@@ -498,8 +500,26 @@
     },
     "timeline": [
       {
+        "id": "EV-b84f9955d0e55497",
+        "dataDate": "2026-10-23",
+        "date": "2026-10-21",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "跟微软抢客户，AI办公独角兽融资16亿，英伟达投了",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c93ac469e4351c25",
+          "EN-c0d949f47738c51c",
+          "EN-9fbf261b62c1d7c0",
+          "EN-8d4321d936320802"
+        ]
+      },
+      {
         "id": "EV-e120eaba7fc9e768",
-        "dataDate": "2026-10-22",
+        "dataDate": "2026-10-23",
         "date": "2026-10-20",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",
@@ -6004,6 +6024,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-b84f9955d0e55497",
         "EV-72d09299a334d0d9",
         "EV-65154e5eb49c218b",
         "EV-89cbf15ddbd98a05",
@@ -6316,8 +6337,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
+        "TX-industry-financial_services",
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-product_form-model",
@@ -6332,7 +6354,6 @@
         "TX-industry-agriculture",
         "TX-product_form-chip_accelerator",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-financial_services",
         "TX-product_form-robotic_system",
         "TX-industry-media_entertainment",
         "TX-ai_market_application-models",
@@ -6399,7 +6420,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-21"
+      "lastSeen": "2026-10-23"
     },
     {
       "id": "EN-688f8db7018da7d4",
@@ -6544,6 +6565,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-c964f7646ad88c1e",
+        "EV-f7bf3f9c38e015fc",
         "EV-5fbe1afea8264e75",
         "EV-b51a67353e247022",
         "EV-20b41540e3b24633",
@@ -7106,6 +7129,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
@@ -7118,7 +7142,6 @@
         "TX-use_case-content_creation",
         "TX-use_case-security_operations",
         "TX-product_form-chip_accelerator",
-        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-target_user-consumer",
         "TX-technology-code_generation",
@@ -7174,7 +7197,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-22"
+      "lastSeen": "2026-10-23"
     },
     {
       "id": "EN-38945a66b4806b11",
@@ -7528,6 +7551,7 @@
       "valueId": "agentic_execution",
       "eventIds": [
         "EV-07911ca790bdfc5a",
+        "EV-353261ac722ca40b",
         "EV-c66ddcd78c89a643",
         "EV-87beb0ebdfa293de",
         "EV-ff12e2bb9d4ad359",
@@ -8208,6 +8232,7 @@
       ],
       "entityIds": [
         "EN-22dc02488a037639",
+        "EN-c53e6deb84236ea0",
         "EN-eba7990af95abefe",
         "EN-54856813e7170b52",
         "EN-954adfa4d922fa30",
