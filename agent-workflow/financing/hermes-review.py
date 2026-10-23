@@ -14,7 +14,9 @@ def review_iteration_budget(context):
     delta = context.get('delta', {})
     count = max((sum(int(rows.get(k, 0)) for k in ['added', 'changed', 'removed'])
                  for rows in delta.values()), default=0)
-    return min(240, max(96, 32 + 8 * count))
+    # Small batches still require source, fact, classification and history reads.
+    # The 2026-10-23 six-event review exhausted 96 calls before a complete receipt.
+    return min(240, max(192, 32 + 8 * count))
 
 
 def assert_original_coverage(context, reads):

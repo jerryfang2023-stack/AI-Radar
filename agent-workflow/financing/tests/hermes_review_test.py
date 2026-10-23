@@ -62,8 +62,8 @@ class ReadBoundaryTests(unittest.TestCase):
             self.assertEqual(result['unreadable'],['broken.json'])
 
     def test_review_budget_covers_actual_publication_changes(self):
-        self.assertGreaterEqual(review.review_iteration_budget({}),96)
-        self.assertEqual(review.review_iteration_budget({'delta':{'subjects':{'added':7,'changed':2}}}),104)
+        self.assertGreaterEqual(review.review_iteration_budget({}),192)
+        self.assertEqual(review.review_iteration_budget({'delta':{'subjects':{'added':7,'changed':2}}}),192)
         self.assertEqual(review.review_iteration_budget({'delta':{'events':{'added':1000}}}),240)
 
     def test_packet_quotes_cannot_replace_private_original_review(self):
