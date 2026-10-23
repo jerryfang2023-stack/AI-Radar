@@ -34037,7 +34037,333 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-22T05:43:03.281Z"
+    },
+    "EV-c762473604855df8": {
+      "id": "EV-c762473604855df8",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "energy",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "Linkener 以 AI 与数据分析为企业提供能源管理平台，属能源行业 AI 软件。",
+      "input_hash": "f61a830fb2ff6de0cf842428d3837bb0b583ede139ae434df9c10484180e50c0",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1d54838f43c82f1c",
+          "quote": "Linkener, a Valencia-based EnergyTech startup that digitises and optimises energy management for businesses through a platform combining consumption metering, data analytics and AI"
+        },
+        {
+          "source_id": "FISRC-1d54838f43c82f1c",
+          "quote": "Linkener has developed an Intelligent Energy Management System (SIGE) with proprietary remote metering technology. It enables businesses and organisations to measure consumption using their own data, digitise and validate bills, analyse energy supply arrangements, and receive alerts, recommendations and savings proposals"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-23T00:48:31.221Z"
+    },
+    "EV-bc1d1f284b31e230": {
+      "id": "EV-bc1d1f284b31e230",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "customer-service",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        3
+      ],
+      "rationale": "Karta AI 提供呼入客服语音代理并集成企业系统执行工作流，属企业客服应用。",
+      "input_hash": "5382f5848e150a91219f1fa6f62e5abaae377ae91d5c8442e6cfaaa55cf44cbf",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-2a707fabe7f50d38",
+          "quote": "Karta AI, a voice AI platform for inbound customer operations across banking, financial services and insurance (BFSI)"
+        },
+        {
+          "source_id": "FISRC-2a707fabe7f50d38",
+          "quote": "The platform integrates with enterprise systems to address customer queries and execute workflows without human intervention, unless escalation is required"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-23T00:48:31.221Z"
+    },
+    "EV-69b488065c05e255": {
+      "id": "EV-69b488065c05e255",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-cloud",
+      "product_form_id": "compute",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        4
+      ],
+      "rationale": "Modal 为 AI 与数据密集型应用提供云端计算基础设施与函数运行服务。",
+      "input_hash": "c64f0d84c2980873a333ce1d48b5d81c81134719080e1ef138ca0ffd4a236ce8",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5edd9c2e9d5556ce",
+          "quote": "Founded in 2021 by Erik Bernhardsson and Akshat Bubna, Modal develops cloud infrastructure for artificial intelligence, machine learning, and data-intensive applications."
+        },
+        {
+          "source_id": "FISRC-b54b83abf2f3608c",
+          "quote": "Functions were our first building block: you write code, and Modal runs it."
+        },
+        {
+          "source_id": "FISRC-b54b83abf2f3608c",
+          "quote": "we’ve been launching Modal servers, which is a better solution for HTTP servers"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-23T00:48:31.221Z"
+    },
+    "EV-c1832bf5603ccc52": {
+      "id": "EV-c1832bf5603ccc52",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "data-services",
+      "product_form_id": "developer-platform",
+      "customer_ids": [],
+      "evidence_indices": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "rationale": "公司提供物理AI数据基础设施，将真实操作采集加工为可规模化交付的训练数据资产。",
+      "input_hash": "8d786ef3c1d0d57fba469211df4787c124ef8b55766d3ee4fa2f67e0db1ca60d",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6aa5e6dc0190e6af",
+          "quote": "星忆智能孵化于清华大学计算机系，主要提供物理AI数据基础设施服务"
+        },
+        {
+          "source_id": "FISRC-dd8fc7a397ee8766",
+          "quote": "星忆智能依托自研EgoKit 多模态采集系统与 HBR Engine 智能数据引擎"
+        },
+        {
+          "source_id": "FISRC-dd8fc7a397ee8766",
+          "quote": "通过手部姿态解析、多模态融合处理与自动化标注能力，把真实人类操作，加工为高质量、可复用、可规模化交付的训练资产"
+        },
+        {
+          "source_id": "FISRC-17006d7c71255eed",
+          "quote": "星忆智能将依托自动化后处理、精细标注与质量评估能力，衔接多源采集结果与模型训练需求"
+        },
+        {
+          "source_id": "FISRC-dd8fc7a397ee8766",
+          "quote": "输出高精度手部交互训练数据，沉淀标准化的数据交付能力"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-23T00:48:35.539Z"
+    },
+    "EV-c964f7646ad88c1e": {
+      "id": "EV-c964f7646ad88c1e",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "DeepSeek自研并提供通用大模型，通过API与SDK向开发者交付模型服务。",
+      "input_hash": "1ad89c9320c3b5a7786510472e0e6e5fb6756fcfd16a24dadb145bb6d12e7dae",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e3bfaa90c6529a58",
+          "quote": "我们的产品及服务包括我们以网页、应用程序（可能含不同版本）、小程序、供第三方网站和应用程序使用软件开发工具包（SDK）、应用程序编程接口（API）以及随技术发展出现的创新形态方式向您提供的产品与服务"
+        },
+        {
+          "source_id": "FISRC-fa1f87c1d59d2670",
+          "quote": "下表所列模型价格以“百万 tokens”为单位。"
+        },
+        {
+          "source_id": "FISRC-fa1f87c1d59d2670",
+          "quote": "BASE URL (OpenAI 格式)https://api.deepseek.comBASE URL (Anthropic 格式)https://api.deepseek.com/anthropic"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-23T00:48:35.539Z"
+    },
+    "EV-741856a05543c233": {
+      "id": "EV-741856a05543c233",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "rationale": "公司以AI原生嵌入式保险基础设施平台服务MGA与分销伙伴，主营保险行业软件。",
+      "input_hash": "fbe6d473813c2b7d130c1b25e5f990eaac2df4d7c1450e5edcd82485ca5ea0c6",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-de9d7e354387bf0d",
+          "quote": "Slingshot Insurance, the AI-native insurance company built for the embedded economy"
+        },
+        {
+          "source_id": "FISRC-3f06502a1060ba55",
+          "quote": "Slingshot offers one unified system that applies AI to automate intricate workflows, while APIs link it directly to MGAs, distribution partners and capital providers."
+        },
+        {
+          "source_id": "FISRC-7ba28b273c2f4d22",
+          "quote": "One integrated system replaces the patchwork: AI automates the workflows, and APIs connect MGAs, platforms, and capital providers."
+        },
+        {
+          "source_id": "FISRC-243f9b916110b777",
+          "quote": "It charges a 5% technology fee to administer programs through its platform."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-23T00:48:35.539Z"
+    },
+    "EV-4746cc586107aaf7": {
+      "id": "EV-4746cc586107aaf7",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "公司核心业务为具备全身力触觉感知与运动控制的机器人本体系统，属具身智能排除范围。",
+      "input_hash": "5d08673090f32b30dbabe9bafbf3015750ab04313bc01e3766200c52102126f1",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-66c1822aa4529750",
+          "quote": "Enact Intelligence builds robots that go beyond vision by sensing force and touch through a whole-body proprioceptive system, for industrial tasks and other real-world work."
+        },
+        {
+          "source_id": "FISRC-4519038f41494c5b",
+          "quote": "Enact’s robots capture force data directly from the actuators themselves, similar to how humans sense tension through their muscles rather than solely through their fingertips."
+        },
+        {
+          "source_id": "FISRC-ea6a42211a6784eb",
+          "quote": "A proprioceptive \"nervous system\" senses force across the robot's whole body, down to the fingertips, and a \"cortex\" is the AI model that interprets those signals and controls movement."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-23T00:48:35.539Z"
+    },
+    "EV-9fc0a31d4c3565a9": {
+      "id": "EV-9fc0a31d4c3565a9",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "legal",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "EstateMin为律所提供信托与遗产事务管理的AI法律平台，属法律行业软件。",
+      "input_hash": "40aaa6e5cca8ff8217a788d13199625bd405cc2273a1eaefde9541068b36effd",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1dc0a73d08bdcfab",
+          "quote": "EstateMin helps law firms handle the full range of trust and estate matters from estate planning and trust creation to probate and administration"
+        },
+        {
+          "source_id": "FISRC-6e58fbac8f6197e0",
+          "quote": "EstateMin’s AI-powered platform helps attorneys manage estate planning, estate administration and trust matters by digitising client intake, organising estate information, extracting data from documents and supporting form preparation."
+        },
+        {
+          "source_id": "FISRC-1dc0a73d08bdcfab",
+          "quote": "EstateMin helps law firms handle the full range of trust and estate matters from estate planning and trust creation to probate and administration faster, with fewer errors, and with complete visibility across every case."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-23T00:48:35.539Z"
+    },
+    "EV-353261ac722ca40b": {
+      "id": "EV-353261ac722ca40b",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "commerce",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "YGO为旅游企业提供酒店数据增强与AI问答分发基础设施，属旅游零售供应链行业软件。",
+      "input_hash": "a84446063befaee0de46661f5502d02689c0c9761eff9a62d7fa258577d5381a",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d1cf456ee7930017",
+          "quote": "YGO, a Berlin-based startup building an AI infrastructure layer for the travel industry"
+        },
+        {
+          "source_id": "FISRC-0b1755bdc6c513e3",
+          "quote": "YGO provides AI infrastructure for the travel industry, structuring and enriching travel data and connecting with existing supplier and booking systems."
+        },
+        {
+          "source_id": "FISRC-d1cf456ee7930017",
+          "quote": "Its content enrichment product automatically generates verified, structured hotel data and delivers it across a company’s own digital channels and to external AI assistants via MCP (Model Context Protocol)."
+        },
+        {
+          "source_id": "FISRC-d1cf456ee7930017",
+          "quote": "Its Hotel Q&A product embeds an AI-powered question-and-answer layer directly onto hotel pages, allowing travellers to ask any question and receive verified answers in real time and in their own language."
+        },
+        {
+          "source_id": "FISRC-d1cf456ee7930017",
+          "quote": "Its AI Distribution product, on the other hand, makes a travel company’s entire hotel portfolio accessible and bookable through AI agents such as ChatGPT, Claude, and Gemini."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-23T00:48:35.539Z"
     }
   },
-  "generated_at": "2026-10-22T05:43:03.281Z"
+  "generated_at": "2026-10-23T00:48:35.539Z"
 }

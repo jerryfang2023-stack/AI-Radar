@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-22T06:13:48.458Z",
-    "latestDataDate": "2026-10-22",
-    "currentDate": "2026-10-22",
-    "eventCount": 4230,
+    "generatedAt": "2026-10-23T03:44:52.731Z",
+    "latestDataDate": "2026-10-23",
+    "currentDate": "2026-10-23",
+    "eventCount": 4244,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 4,
+    "historical_or_ambiguous_count": 5,
     "portfolio_company_count": 3,
     "market_regions": [
       "CN"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-03-02",
     "latest_disclosed_at": "2026-09-18",
     "role_counts": {
-      "historical_or_ambiguous": 4,
+      "historical_or_ambiguous": 5,
       "participant": 3
     },
     "round_codes": [
@@ -347,6 +347,38 @@
             "quote_hash": "756b351a9fa6aa2ab3dfc4a87d296aea555b2d57dc75b235aa853a15a06db3cc"
           }
         ]
+      },
+      {
+        "activity_id": "IA-5b373e4d62b804aa",
+        "funding_insight_id": "FI-da29060a41575ad7",
+        "event_ids": [
+          "EV-c964f7646ad88c1e"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次新进投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9990b623f525d10c",
+            "source_url": "https://es.tradingview.com/news/panews:246b17cffe3f9:0/",
+            "source_title": "DeepSeek将完成1000亿元融资",
+            "source_content_hash": "d65431c8435b48c0",
+            "quote": "本轮新进投资方包括石溪资本、中芯聚源、CPE源峰、君联资本、吉利等，以产业投资方为主。",
+            "quote_hash": "a68fb0daabf1e8a583a59059a977ca12b0d3fd4e0c5ec0d0158996723a57ca71"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -405,6 +437,14 @@
         "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
         "quote": "中芯聚源、毅达资本、蓝驰创投、东方嘉富及 立讯精密 产投等老股东继续加持",
         "quote_hash": "756b351a9fa6aa2ab3dfc4a87d296aea555b2d57dc75b235aa853a15a06db3cc"
+      },
+      {
+        "source_id": "FISRC-9990b623f525d10c",
+        "source_url": "https://es.tradingview.com/news/panews:246b17cffe3f9:0/",
+        "source_title": "DeepSeek将完成1000亿元融资",
+        "source_content_hash": "d65431c8435b48c0",
+        "quote": "本轮新进投资方包括石溪资本、中芯聚源、CPE源峰、君联资本、吉利等，以产业投资方为主。",
+        "quote_hash": "a68fb0daabf1e8a583a59059a977ca12b0d3fd4e0c5ec0d0158996723a57ca71"
       }
     ],
     "public_profile": {

@@ -1,6 +1,6 @@
 {
   "version": "FINANCING-PUBLICATION-REVIEW-1",
-  "reviewed_at": "2026-10-21",
+  "reviewed_at": "2026-10-23",
   "market_corrections": [
     {
       "event_id": "EV-65154e5eb49c218b",
@@ -496,6 +496,28 @@
       "status": "pending",
       "source_url": "https://m.sohu.com/a/1087302116_114877?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
       "reason": "消费音乐创作硬件主机不属于现行六类消费 AI 硬件，家庭设备分类无原文支持；暂缓发布，待责任分类决策。"
+    },
+    {
+      "event_id": "EV-c964f7646ad88c1e",
+      "status": "pending",
+      "source_url": "https://finance.sina.cn/stock/jdts/2026-10-22/detail-iniwchpf5857199.d.html",
+      "reason": "同日原文对本轮完成状态存在直接冲突：Bloomberg称已筹得1000亿元，后续报道仍称拟融资、未来数日完成且金额未最终确定。仅暂缓此轮，保留此前已发布融资和来源；待完成状态澄清后恢复。",
+      "source_id": "FISRC-1c21a3f4bf315f59",
+      "source_content_hash": "7115ebb8fadce335",
+      "body_sha256": "7115ebb8fadce335590a91d64f470b3af50a2f958fb7e98a560bfd5c00724ec6",
+      "quote": "10月22日，有市场消息称，国内大模型公司DeepSeek（深度求索）拟在最新一轮融资中筹得约1000亿元人民币（约150亿美元），腾讯和宁德时代为本轮出资最多的投资方，交易预计在未来数日内正式完成",
+      "quote_hash": "35c069d6a4d19c0ade2aa39496a8bcc92c95bb38bcc3458892f7292125ec08ae",
+      "conflicting_evidence": [
+        {
+          "source_id": "FISRC-2346329522885331",
+          "source_content_hash": "e85e5d970af235d183bcf54e03c8ba88851ce996abdae1d62194fd473f9b6914",
+          "body_sha256": "e85e5d970af235d183bcf54e03c8ba88851ce996abdae1d62194fd473f9b6914",
+          "quote": "The Chinese AI pioneer DeepSeek has raised about 100 billion yuan ($15 billion) in its latest fundraising round",
+          "quote_hash": "ed12992ba2e56bcdfd7f70f3ce2371c31358d605012cfb7649f002308c7ebb48"
+        }
+      ],
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-23T03:42:50.117Z"
     }
   ],
   "resolutions": [

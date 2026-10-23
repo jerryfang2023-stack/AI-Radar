@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-23T03:44:52.731Z",
+    "latestDataDate": "2026-10-23",
+    "currentDate": "2026-10-23",
+    "eventCount": 4244,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-8b8b86e6f325a2",
+    "name": "一创投资",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-10-22",
+    "latest_disclosed_at": "2026-10-22",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-f6f80d61fa45679e",
+        "canonical_entity_id": "",
+        "name": "星忆智能"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-e586e8c1f630b079",
+        "funding_insight_id": "FI-173f8312aa1ca1ed",
+        "event_ids": [
+          "EV-c1832bf5603ccc52"
+        ],
+        "company_entity_id": "EN-f6f80d61fa45679e",
+        "company_canonical_entity_id": "",
+        "company_name": "星忆智能",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "种子轮及种子+轮（多轮融资合计）",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-10-22",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "种子+轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dd8fc7a397ee8766",
+            "source_url": "https://news.pedaily.cn/202610/570697.shtml",
+            "source_title": "星忆智能完成数千万元种子轮及种子＋轮融资，以高质量数据构建具身智能物理AI基座",
+            "source_content_hash": "ab1f1503f68afec95c0ffe2511cddffacec074dc743b77c4599677b435dac557",
+            "quote": "中关村资本、一创投资跟投",
+            "quote_hash": "3ef175c0748b3ac7dfc1595bf1f2d4d66f5e1361ef55626bdef0070482d40ba4"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-dd8fc7a397ee8766",
+        "source_url": "https://news.pedaily.cn/202610/570697.shtml",
+        "source_title": "星忆智能完成数千万元种子轮及种子＋轮融资，以高质量数据构建具身智能物理AI基座",
+        "source_content_hash": "ab1f1503f68afec95c0ffe2511cddffacec074dc743b77c4599677b435dac557",
+        "quote": "中关村资本、一创投资跟投",
+        "quote_hash": "3ef175c0748b3ac7dfc1595bf1f2d4d66f5e1361ef55626bdef0070482d40ba4"
+      }
+    ],
+    "public_profile": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "一创投资 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：星忆智能 · 多轮融资 · 2026-10-22 · 种子+轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-dd8fc7a397ee8766"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-dd8fc7a397ee8766",
+          "source_url": "https://news.pedaily.cn/202610/570697.shtml",
+          "source_title": "星忆智能完成数千万元种子轮及种子＋轮融资，以高质量数据构建具身智能物理AI基座",
+          "source_content_hash": "ab1f1503f68afec95c0ffe2511cddffacec074dc743b77c4599677b435dac557",
+          "quote": "中关村资本、一创投资跟投",
+          "quote_hash": "3ef175c0748b3ac7dfc1595bf1f2d4d66f5e1361ef55626bdef0070482d40ba4"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    }
+  }
+}

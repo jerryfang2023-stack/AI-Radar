@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-22T06:13:48.458Z",
-    "latestDataDate": "2026-10-22",
-    "currentDate": "2026-10-22",
-    "eventCount": 4230,
+    "generatedAt": "2026-10-23T03:44:52.731Z",
+    "latestDataDate": "2026-10-23",
+    "currentDate": "2026-10-23",
+    "eventCount": 4244,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -11456,8 +11456,518 @@
   ],
   "events": [
     {
+      "id": "EV-4746cc586107aaf7",
+      "dataDate": "2026-10-23",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "由Yann LeCun和Arthur Mensch支持的瑞士Physical AI初创公司Enact Intelligence以2668万欧元结束隐身模式",
+      "originalTitle": "Backed by Yann LeCun and Arthur Mensch, Swiss Physical AI startup Enact Intelligence exits stealth with €26.68 million",
+      "subject": "Enact Intelligence",
+      "action": "funding",
+      "object": "€26.68 million pre-Seed funding round",
+      "metrics": [
+        "€26.68 million",
+        "$30 million"
+      ],
+      "locations": [
+        "Europe"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-21d3a1a229937a08"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-21d3a1a229937a08"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-21d3a1a229937a08"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-21d3a1a229937a08"
+      ],
+      "entityNames": [
+        "Enact Intelligence"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/backed-by-yann-lecun-and-arthur-mensch-swiss-physical-ai-startup-enact-intelligence-exits-stealth-with-e26-68-million/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
+      "id": "EV-4c2e1fc3b5434884",
+      "dataDate": "2026-10-23",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "10亿元！深圳存算一体AI芯片创企连获融资，美团、小鹏投了",
+      "originalTitle": "",
+      "subject": "10亿元！深圳存算一体AI芯片创企连获",
+      "action": "融资",
+      "object": "，美团、小鹏投了",
+      "metrics": [
+        "10亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-db36e7bd45191ce4",
+        "EN-603f107125c31538"
+      ],
+      "entityNames": [
+        "Meituan",
+        "九天睿芯"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.163.com/dy/article/L9S6A8V105318XR6.html",
+      "publisher": "www.163.com"
+    },
+    {
+      "id": "EV-69b488065c05e255",
+      "dataDate": "2026-10-23",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "为什么 AI 算力以矩形形态出现——Modal CEO Erik Bernhardsson",
+      "originalTitle": "Why AI Compute Comes in Rectangles — Erik Bernhardsson, Modal CEO",
+      "subject": "Modal",
+      "action": "funding",
+      "object": "$750 million Series D at a $16B valuation",
+      "metrics": [
+        "$750 million",
+        "$16B"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c5803a6e4daa6af4"
+      ],
+      "entityNames": [
+        "Modal"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.latent.space/p/modal-d",
+      "publisher": "www.latent.space"
+    },
+    {
+      "id": "EV-741856a05543c233",
+      "dataDate": "2026-10-23",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "独家：Slingshot 融资 2700 万美元种子轮，打造面向结账时销售的小额保单的保险公司",
+      "originalTitle": "Exclusive: Slingshot Raises $27M In Seed Funding To Build An Insurer For Those Small Policies Sold At Checkout",
+      "subject": "Slingshot Insurance",
+      "action": "Raises",
+      "object": "$27M In Seed Funding To Build An Insurer For Those Small Policies Sold At Checkout",
+      "metrics": [
+        "$27 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-3236407ea030a361"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-3236407ea030a361"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-3236407ea030a361"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-3236407ea030a361",
+        "EN-8a4372f10d707941"
+      ],
+      "entityNames": [
+        "Slingshot Insurance",
+        "Slingshot"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+      "publisher": "news.crunchbase.com"
+    },
+    {
+      "id": "EV-bc1d1f284b31e230",
+      "dataDate": "2026-10-23",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Karta AI 融资 300 万美元：语音 AI 能修复印度的银行求助热线吗？",
+      "originalTitle": "Karta AI Raises $3 Million: Can Voice AI Fix India’s Bank Helplines?",
+      "subject": "Karta AI",
+      "action": "Raises",
+      "object": "$3 Million: Can Voice AI Fix India’s Bank Helplines?",
+      "metrics": [
+        "$3 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-da610b15e1a48f09"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-da610b15e1a48f09"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-da610b15e1a48f09"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-da610b15e1a48f09"
+      ],
+      "entityNames": [
+        "Karta AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://openthemagazine.com/business/karta-ai-raises-3-million-can-voice-ai-fix-indias-bank-helplines",
+      "publisher": "openthemagazine.com"
+    },
+    {
+      "id": "EV-c1832bf5603ccc52",
+      "dataDate": "2026-10-23",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "星忆智能完成数千万元种子轮及种子＋轮融资，以高质量数据构建具身智能物理AI基座",
+      "originalTitle": "",
+      "subject": "星忆智能",
+      "action": "完成数千万元种子轮及种子＋轮融资",
+      "object": "，以高质量数据构建具身智能物理AI基座",
+      "metrics": [
+        "数千万元"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-f6f80d61fa45679e"
+      ],
+      "entityNames": [
+        "星忆智能"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202610/570697.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-c964f7646ad88c1e",
+      "dataDate": "2026-10-23",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "DeepSeek 融资 150 亿美元，挑战美国领先实验室",
+      "originalTitle": "DeepSeek Raises $15 Billion in Challenge to Leading US Labs",
+      "subject": "DeepSeek",
+      "action": "Raises",
+      "object": "$15 Billion in Challenge to Leading US Labs",
+      "metrics": [
+        "100 billion",
+        "$15 billion"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-94768688bb94ccdb"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "DeepSeek",
+        "Anthropic",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
+      "publisher": "www.bloomberg.com"
+    },
+    {
+      "id": "EV-f7bf3f9c38e015fc",
+      "dataDate": "2026-10-23",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "OpenAI 正筹备在 IPO 前以 1.25 万亿美元估值进行 300 亿美元新融资",
+      "originalTitle": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
+      "subject": "OpenAI working on new $30B",
+      "action": "raise",
+      "object": "at $1.25T valuation ahead of IPO",
+      "metrics": [
+        "$30B",
+        "$1.25T",
+        "$30 billion",
+        "$1.25 trillion",
+        "$852 billion",
+        "$65 billion",
+        "$965 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-76628185e105b96e",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "OpenAI working on new $30B",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+      "publisher": "techcrunch.com"
+    },
+    {
       "id": "EV-fe4e2cdf3f2a5075",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -11683,6 +12193,93 @@
       "publisher": "tech.eu"
     },
     {
+      "id": "EV-353261ac722ca40b",
+      "dataDate": "2026-10-23",
+      "date": "2026-10-21",
+      "updatedDate": "2026-10-21",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "柏林YGO融资800万欧元，让旅行库存可通过AI智能体预订",
+      "originalTitle": "Berlin-based YGO raises €8 million to make travel inventory bookable through AI agents",
+      "subject": "Berlin-based YGO",
+      "action": "raises",
+      "object": "€8 million to make travel inventory bookable through AI agents",
+      "metrics": [
+        "€8 million",
+        "€1 million"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c53e6deb84236ea0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c53e6deb84236ea0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c53e6deb84236ea0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ecb85414c4efd17c",
+        "EN-c53e6deb84236ea0"
+      ],
+      "entityNames": [
+        "HomeGermany-StartupsBerlin-based YGO",
+        "Berlin-based YGO"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/berlin-based-ygo-raises-e8-million-to-make-travel-inventory-bookable-through-ai-agents/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
       "id": "EV-38025644fa182d90",
       "dataDate": "2026-10-21",
       "date": "2026-10-21",
@@ -11825,7 +12422,7 @@
     },
     {
       "id": "EV-7c5953aae2767bfa",
-      "dataDate": "2026-10-21",
+      "dataDate": "2026-10-23",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -11851,9 +12448,9 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-a23799263cfdbab5",
-          "CL-591812528097b980",
-          "CL-e14f555c48b59e6b"
+          "CL-9c35dd4e081a1171",
+          "CL-45e401e7d68bce0f",
+          "CL-47923a51bad309f4"
         ]
       },
       "missingFields": [
@@ -11979,7 +12576,7 @@
     },
     {
       "id": "EV-95b8b70ca29ab623",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -12033,7 +12630,7 @@
     },
     {
       "id": "EV-9dbf7a6b84a4aa21",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -12076,6 +12673,112 @@
       "products": [],
       "sourceUrl": "https://news.pedaily.cn/202610/570621.shtml",
       "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-9fc0a31d4c3565a9",
+      "dataDate": "2026-10-23",
+      "date": "2026-10-21",
+      "updatedDate": "2026-10-21",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "前国际拳击手的法律科技初创公司EstateMin融资100万欧元，以在美国扩张",
+      "originalTitle": "Former international boxer’s LegalTech startup EstateMin raises €1 million to scale in the US",
+      "subject": "Former international boxer’s LegalTech startup EstateMin",
+      "action": "raises",
+      "object": "€1 million to scale in the US",
+      "metrics": [
+        "€1 million"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-be984705bcda8bff",
+        "EN-50b08c85140da72c"
+      ],
+      "entityNames": [
+        "EstateMin",
+        "Former international boxer’s LegalTech startup EstateMin"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/former-international-boxers-legaltech-startup-estatemin-raises-e1-million-to-scale-in-the-us/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
+      "id": "EV-b84f9955d0e55497",
+      "dataDate": "2026-10-23",
+      "date": "2026-10-21",
+      "updatedDate": "2026-10-21",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "跟微软抢客户，AI办公独角兽融资16亿，英伟达投了",
+      "originalTitle": "",
+      "subject": "跟微软抢客户，AI办公独角兽",
+      "action": "融资",
+      "object": "16亿，英伟达投了",
+      "metrics": [
+        "16亿",
+        "2.5亿",
+        "16.7亿",
+        "23亿",
+        "153.61亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c93ac469e4351c25",
+        "EN-c0d949f47738c51c",
+        "EN-9fbf261b62c1d7c0",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "跟微软抢客户，AI办公独角兽",
+        "跟微软抢客户",
+        "Microsoft",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://zhidx.com/p/602892.html",
+      "publisher": "m.zhidx.com"
     },
     {
       "id": "EV-cc12b6b21485b692",
@@ -12125,7 +12828,7 @@
     },
     {
       "id": "EV-cd3cf94d0f65aea1",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -12317,7 +13020,7 @@
     },
     {
       "id": "EV-5f298468c125d834",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "funding",
@@ -12365,7 +13068,7 @@
     },
     {
       "id": "EV-5fbe1afea8264e75",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "acquisition",
@@ -12622,7 +13325,7 @@
     },
     {
       "id": "EV-c66ddcd78c89a643",
-      "dataDate": "2026-10-21",
+      "dataDate": "2026-10-23",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "funding",
@@ -12693,13 +13396,11 @@
       ],
       "entityIds": [
         "EN-d2c19f369e44854b",
-        "EN-eba7990af95abefe",
-        "EN-4a2aac1ffda17e54"
+        "EN-eba7990af95abefe"
       ],
       "entityNames": [
         "Plinto",
-        "Copenhagen’s Plinto",
-        "Danish startup Plinto"
+        "Copenhagen’s Plinto"
       ],
       "productName": "",
       "products": [],
@@ -12708,7 +13409,7 @@
     },
     {
       "id": "EV-ea103ce3f64fea8e",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "funding",
@@ -12755,7 +13456,7 @@
     },
     {
       "id": "EV-edcad9269df083ac",
-      "dataDate": "2026-10-21",
+      "dataDate": "2026-10-23",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "funding",
@@ -12805,7 +13506,7 @@
     },
     {
       "id": "EV-fa58c17e7bde893c",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "funding",
@@ -12944,7 +13645,7 @@
     },
     {
       "id": "EV-51f0958b144e699a",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "funding",
@@ -12995,7 +13696,7 @@
     },
     {
       "id": "EV-59841d8e9da58cd4",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "funding",
@@ -13008,7 +13709,7 @@
       "originalTitle": "Tolan snags $30M for its AI companion that helps users navigate life",
       "subject": "Tolan",
       "action": "funding",
-      "object": "$30 million in capital",
+      "object": "$30 million",
       "metrics": [
         "$30 million"
       ],
@@ -13245,7 +13946,7 @@
     },
     {
       "id": "EV-79fbe4ea3a11c695",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "funding",
@@ -13382,7 +14083,7 @@
     },
     {
       "id": "EV-c762473604855df8",
-      "dataDate": "2026-10-20",
+      "dataDate": "2026-10-23",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "funding",
@@ -13432,7 +14133,7 @@
     },
     {
       "id": "EV-dbb70aae28663f67",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "funding",
@@ -13528,7 +14229,7 @@
     },
     {
       "id": "EV-4348abc8b4ec6f78",
-      "dataDate": "2026-10-19",
+      "dataDate": "2026-10-23",
       "date": "2026-10-16",
       "updatedDate": "2026-10-16",
       "eventType": "funding",
@@ -311534,7 +312235,7 @@
     },
     {
       "id": "EV-e120eaba7fc9e768",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "product_release",
@@ -311679,7 +312380,7 @@
     },
     {
       "id": "EV-5bfda41262dea3d5",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "product_release",
@@ -311782,7 +312483,7 @@
     },
     {
       "id": "EV-b86890a5d3330971",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-17",
       "updatedDate": "2026-10-17",
       "eventType": "service_change",
@@ -311826,7 +312527,7 @@
     },
     {
       "id": "EV-131ba54baeef4a0a",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-16",
       "updatedDate": "2026-10-16",
       "eventType": "model_release",
@@ -315775,9 +316476,7 @@
         {
           "name": "Horizon Create",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/games/999972/meta-horizon-create-studio-ai-games",
@@ -316072,16 +316771,12 @@
         {
           "name": "VR Glasses",
           "type": "AI 硬件",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Connect 2026",
           "type": "AI 硬件",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/tech/998480/meta-connect-2026-biggest-news-announcements",
@@ -316399,9 +317094,7 @@
         {
           "name": "Private Processing",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://engineering.fb.com/2026/09/23/security/private-processing-meta-ai-glasses",
@@ -317653,9 +318346,7 @@
         {
           "name": "Connect 2026",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/tech/998457/meta-connect-2026-live-blog-mark-zuckerberg-keynote",
@@ -318194,23 +318885,17 @@
         {
           "name": "B2B Enterprises",
           "type": "模型",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         },
         {
           "name": "MarketScale",
           "type": "模型",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Muse AI",
           "type": "模型",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marketscale.com/industries/software-and-technology/muses-rise-signals-the-next-phase-of-the-ai-agent-economy-and-enterprises-should-be-paying-attention",
@@ -320285,7 +320970,7 @@
           "name": "ChatGPT",
           "type": "产品/服务",
           "ownerNames": [
-            "Meta"
+            "Apple"
           ]
         }
       ],
@@ -323384,16 +324069,12 @@
         {
           "name": "Concierge",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         },
         {
           "name": "AI Agents News",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://aiagentstore.ai/ai-agent-news/this-week",
@@ -324252,16 +324933,12 @@
         {
           "name": "Muse for Mac",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Muse",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/09/19/meta-launches-muse-for-mac",
@@ -326333,9 +327010,7 @@
         {
           "name": "One",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/tech/995453/meta-one-subscriptions-ai",
@@ -330684,16 +331359,12 @@
         {
           "name": "Muse AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Muse assistant",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/tech/993391/meta-muse-ai-hands-on",
@@ -331210,9 +331881,7 @@
         {
           "name": "Muse",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/muse-can-shop-write-emails-and-negotiate-prices-for-users-all-through-whatsapp",
@@ -333571,9 +334240,7 @@
         {
           "name": "UnifoLM-X2-1.0",
           "type": "模型",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/999/432.htm",
@@ -334857,9 +335524,7 @@
         {
           "name": "Muse Voice Transcribe",
           "type": "模型",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/metas-new-real-time-audio-model-is-the-foundation-for-ai-assistants-that-never-stop-listening",
@@ -338427,7 +339092,7 @@
           "name": "Muse Spark 1.3",
           "type": "产品/服务",
           "ownerNames": [
-            "Meta"
+            "Ant Group"
           ]
         }
       ],
@@ -343966,9 +344631,7 @@
         {
           "name": "XR Operator",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/995/854.htm",
@@ -348141,9 +348804,7 @@
         {
           "name": "Isaac 0.5",
           "type": "模型",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/08/26/ex-meta-scientists-want-to-bring-visual-ai-to-the-factory-floor",
@@ -354311,7 +354972,7 @@
           "name": "Mac",
           "type": "产品/服务",
           "ownerNames": [
-            "Meta"
+            "Google"
           ]
         }
       ],
@@ -364271,7 +364932,7 @@
           "name": "Muse Glimmer",
           "type": "产品/服务",
           "ownerNames": [
-            "Meta"
+            "Alibaba"
           ]
         }
       ],
@@ -365290,7 +365951,7 @@
           "name": "Muse Glimmer",
           "type": "模型",
           "ownerNames": [
-            "Meta"
+            "OpenAI"
           ]
         }
       ],
@@ -365681,9 +366342,7 @@
         {
           "name": "Muse Glimmer",
           "type": "模型",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/08/10/meta-ai-releases-muse-glimmer",
@@ -366209,16 +366868,12 @@
         {
           "name": "Muse Glimmer",
           "type": "模型",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Glimmer AI",
           "type": "模型",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/meta-returns-to-open-models-with-zuckerbergs-plan-to-out-copy-china-and-sell-compute-by-auction",
@@ -366440,9 +367095,7 @@
         {
           "name": "Muse Glimmer",
           "type": "模型",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
@@ -366567,9 +367220,7 @@
         {
           "name": "Muse Glimmer",
           "type": "模型",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/988/007.htm",
@@ -370046,14 +370697,14 @@
           "name": "Claude Code",
           "type": "产品/服务",
           "ownerNames": [
-            "Meta"
+            "Anthropic"
           ]
         },
         {
           "name": "Muse Code",
           "type": "产品/服务",
           "ownerNames": [
-            "Meta"
+            "Anthropic"
           ]
         }
       ],
@@ -370723,16 +371374,12 @@
         {
           "name": "Muse Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Muse Spark 1.2",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
@@ -371012,9 +371659,7 @@
         {
           "name": "Muse Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases",
@@ -382713,9 +383358,7 @@
         {
           "name": "Facebook Verified",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/981/426.htm",
@@ -386746,7 +387389,7 @@
           "name": "AI optimism ad set",
           "type": "产品/服务",
           "ownerNames": [
-            "Meta"
+            "Anthropic"
           ]
         }
       ],
@@ -387315,7 +387958,7 @@
           "name": "AI Roleplay Sessions",
           "type": "产品/服务",
           "ownerNames": [
-            "Meta"
+            "Intel"
           ]
         }
       ],
@@ -387729,9 +388372,7 @@
         {
           "name": "StoryKit",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/980/166.htm",
@@ -391168,9 +391809,7 @@
         {
           "name": "Astryx",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/21/meta-open-sources-astryx-an-agent-ready-react-design-system-with-150-accessible-components-seven-themes-and-a-cli",
@@ -408257,9 +408896,7 @@
         {
           "name": "Muse Image",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/meta-kills-muse-image-feature-that-let-anyone-generate-ai-photos-of-instagram-users-without-consent",
@@ -408459,9 +409096,7 @@
         {
           "name": "Muse Spark 1.1",
           "type": "模型",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/975/832.htm",
@@ -410748,9 +411383,7 @@
         {
           "name": "AI-specific",
           "type": "AI 硬件",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september",
@@ -411437,7 +412070,7 @@
           "name": "Muse Spark 1.1",
           "type": "模型",
           "ownerNames": [
-            "Meta"
+            "Intel"
           ]
         }
       ],
@@ -412390,7 +413023,7 @@
           "name": "AI generator",
           "type": "产品/服务",
           "ownerNames": [
-            "Meta"
+            "Intel"
           ]
         }
       ],
@@ -414127,14 +414760,14 @@
           "name": "Muse Image",
           "type": "模型",
           "ownerNames": [
-            "Meta"
+            "Intel"
           ]
         },
         {
           "name": "Muse Video",
           "type": "模型",
           "ownerNames": [
-            "Meta"
+            "Intel"
           ]
         }
       ],
@@ -416405,9 +417038,7 @@
         {
           "name": "Llama API",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/972/864.htm",
@@ -421061,16 +421692,12 @@
         {
           "name": "Brain2Qwerty",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Brain2Qwerty v2",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/metas-non-invasive-brain-to-text-ai-is-closing-the-gap-with-surgical-implants",
@@ -422277,23 +422904,17 @@
         {
           "name": "Brain2Qwerty",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Brain2Qwerty v2",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Brain2Qwerty v1",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication?_fb_noscript=1",
@@ -423133,16 +423754,12 @@
         {
           "name": "Brain2Qwerty",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Brain2Qwerty v2",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/06/30/meta-ai-releases-brain2qwerty-v2-a-non-invasive-meg-brain-to-text-pipeline-decoding-typed-sentences-at-61-word-accuracy",
@@ -424715,23 +425332,17 @@
         {
           "name": "AI-Native Cloud Built",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         },
         {
           "name": "AI-Native Cloud Built for",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Inference Era",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202604281630BIZWIRE_USPRX____20260428_BW061753-1",
@@ -425462,16 +426073,12 @@
         {
           "name": "Dragonfly C1000",
           "type": "AI 硬件",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Dragonfly C1000 CPU",
           "type": "AI 硬件",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://datacenterdynamics.com/en/news/qualcomm-unveils-three-new-data-center-solutions-including-qualcomm-dragonfly-c1000-cpu-set-to-be-deployed-by-meta",
@@ -426105,7 +426712,7 @@
           "name": "Creator Studio",
           "type": "产品/服务",
           "ownerNames": [
-            "Meta"
+            "NIO"
           ]
         }
       ],
@@ -436778,9 +437385,7 @@
         {
           "name": "AI Mode",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms",
@@ -457039,8 +457644,147 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-2aead80f6796b70b",
+      "dataDate": "2026-10-23",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic IPO 将为 Iconiq、Spark、GIC 带来巨额收益",
+      "originalTitle": "Anthropic IPO to Drive Blockbuster Gains for Iconiq, Spark, GIC",
+      "subject": "Anthropic",
+      "action": "IPO",
+      "object": "to Drive Blockbuster Gains for Iconiq, Spark, GIC",
+      "metrics": [
+        "$183 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-10-22/anthropic-ipo-to-drive-blockbuster-gains-for-iconiq-spark-gic",
+      "publisher": "www.bloomberg.com"
+    },
+    {
+      "id": "EV-e1e13c263714163a",
+      "dataDate": "2026-10-23",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "软银股价较 6 月高点接近腰斩，AI 投资烧钱模式遭市场质疑",
+      "originalTitle": "",
+      "subject": "软银股价",
+      "action": "financial_performance",
+      "object": "较6月2日历史最高点累计跌幅达到50%",
+      "metrics": [
+        "6.7%",
+        "50%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-093d82276af5e540",
+        "EN-80d387ccb3289295"
+      ],
+      "entityNames": [
+        "软银股价",
+        "SoftBank"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/016/383.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
+      "id": "EV-d037228f0b35c1cb",
+      "dataDate": "2026-10-23",
+      "date": "2026-10-21",
+      "updatedDate": "2026-10-21",
+      "eventType": "organization_restructuring",
+      "eventTypeLabel": "组织重组",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Meta欲通过新设立的股票类别为其大规模AI建设提供资金",
+      "originalTitle": "Meta wants to pay for its broad AI buildout with a newly created class of stock",
+      "subject": "Meta",
+      "action": "organization_restructuring",
+      "object": "new class of non-voting capital stock",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/21/meta-wants-to-pay-for-its-broad-ai-buildout-with-a-newly-created-class-of-stock/",
+      "publisher": "techcrunch.com"
+    },
+    {
       "id": "EV-1d592d9d6ed402c9",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "financial_performance",
@@ -457158,7 +457902,7 @@
     },
     {
       "id": "EV-5112093b7b857728",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-18",
       "updatedDate": "2026-10-18",
       "eventType": "financial_performance",
@@ -457210,7 +457954,7 @@
     },
     {
       "id": "EV-d35419bc2f596bce",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-23",
       "date": "2026-10-18",
       "updatedDate": "2026-10-18",
       "eventType": "capital_investment",
@@ -466818,16 +467562,12 @@
         {
           "name": "AI Research Preference",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         },
         {
           "name": "FAIR",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/09/06/meta-fair-introduces-ai-research-preference-models-rpms-ranking-ml-experiments-before-spending-gpu-hours",
@@ -487981,16 +488721,12 @@
         {
           "name": "Brain2Qwerty",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Brain2Qwerty v2",
           "type": "产品/服务",
-          "ownerNames": [
-            "Meta"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/970/724.htm",

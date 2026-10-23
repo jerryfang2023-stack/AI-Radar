@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-22T06:13:48.458Z",
-    "latestDataDate": "2026-10-22",
-    "currentDate": "2026-10-22",
-    "eventCount": 4230,
+    "generatedAt": "2026-10-23T03:44:52.731Z",
+    "latestDataDate": "2026-10-23",
+    "currentDate": "2026-10-23",
+    "eventCount": 4244,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,7 +61,7 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 27,
+    "current_round_count": 28,
     "historical_or_ambiguous_count": 6,
     "portfolio_company_count": 24,
     "market_regions": [
@@ -75,7 +75,7 @@
       "co_lead": 2,
       "historical_or_ambiguous": 6,
       "lead": 11,
-      "participant": 14
+      "participant": 15
     },
     "round_codes": [
       "multi_round",
@@ -328,6 +328,46 @@
             "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
             "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
             "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b5b5976cbe6dd8f6",
+        "funding_insight_id": "FI-7feeaf543574b27d",
+        "event_ids": [
+          "EV-69b488065c05e255"
+        ],
+        "company_entity_id": "EN-c5803a6e4daa6af4",
+        "company_canonical_entity_id": "",
+        "company_name": "Modal",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "$750 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 750000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.5 亿美元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+            "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
+            "source_content_hash": "ef996bef620416ce",
+            "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
+            "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
           }
         ]
       },
@@ -1529,6 +1569,14 @@
         "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
       },
       {
+        "source_id": "FISRC-b54b83abf2f3608c",
+        "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+        "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
+        "source_content_hash": "ef996bef620416ce",
+        "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
+        "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
+      },
+      {
         "source_id": "FISRC-925d3dbfb764eb23",
         "source_url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
         "source_title": "前Ramp工程师在放弃首款产品后为平台Melius融资2000万美元",
@@ -1983,7 +2031,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[28].role": {
+        "activities[29].role": {
           "text": "Pre-Seed 轮领投",
           "source_hash": "b679d7fa92689a42e5e3729978cbf6f81b503b4ff4fa9193c6a9694195d14b03",
           "provider": "deepseek",

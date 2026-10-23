@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-22T06:13:48.458Z",
-    "latestDataDate": "2026-10-22",
-    "currentDate": "2026-10-22",
-    "eventCount": 4230,
+    "generatedAt": "2026-10-23T03:44:52.731Z",
+    "latestDataDate": "2026-10-23",
+    "currentDate": "2026-10-23",
+    "eventCount": 4244,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -59,6 +59,7 @@
     "typeLabel": "技术",
     "valueId": "embodied_ai",
     "eventIds": [
+      "EV-4746cc586107aaf7",
       "EV-7c5953aae2767bfa",
       "EV-d6ef2e46d3005d9b",
       "EV-471bf7c00cc06c85",
@@ -184,6 +185,7 @@
       "EV-08f736f61f2b46f3"
     ],
     "entityIds": [
+      "EN-21d3a1a229937a08",
       "EN-55a5064b725214bf",
       "EN-a244384ccfb8ec48",
       "EN-240389f4b730bad4",
@@ -304,12 +306,97 @@
       "HW-1450585d9cd5879f"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-10-21"
+    "lastSeen": "2026-10-23"
   },
   "events": [
     {
+      "id": "EV-4746cc586107aaf7",
+      "dataDate": "2026-10-23",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "由Yann LeCun和Arthur Mensch支持的瑞士Physical AI初创公司Enact Intelligence以2668万欧元结束隐身模式",
+      "originalTitle": "Backed by Yann LeCun and Arthur Mensch, Swiss Physical AI startup Enact Intelligence exits stealth with €26.68 million",
+      "subject": "Enact Intelligence",
+      "action": "funding",
+      "object": "€26.68 million pre-Seed funding round",
+      "metrics": [
+        "€26.68 million",
+        "$30 million"
+      ],
+      "locations": [
+        "Europe"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-21d3a1a229937a08"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-21d3a1a229937a08"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-21d3a1a229937a08"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-21d3a1a229937a08"
+      ],
+      "entityNames": [
+        "Enact Intelligence"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/backed-by-yann-lecun-and-arthur-mensch-swiss-physical-ai-startup-enact-intelligence-exits-stealth-with-e26-68-million/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
       "id": "EV-7c5953aae2767bfa",
-      "dataDate": "2026-10-21",
+      "dataDate": "2026-10-23",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -335,9 +422,9 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-a23799263cfdbab5",
-          "CL-591812528097b980",
-          "CL-e14f555c48b59e6b"
+          "CL-9c35dd4e081a1171",
+          "CL-45e401e7d68bce0f",
+          "CL-47923a51bad309f4"
         ]
       },
       "missingFields": [
@@ -26530,6 +26617,27 @@
   ],
   "entities": [
     {
+      "id": "EN-21d3a1a229937a08",
+      "name": "Enact Intelligence",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4746cc586107aaf7"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-23"
+    },
+    {
       "id": "EN-55a5064b725214bf",
       "name": "小派科技获智元旗下觅蜂科技战略",
       "entityType": "organization_candidate",
@@ -26548,7 +26656,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21"
+      "lastSeen": "2026-10-23"
     },
     {
       "id": "EN-a244384ccfb8ec48",
@@ -26623,8 +26731,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
+        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-product_form-enterprise_software_platform",
@@ -27399,8 +27507,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-technology-multimodal"
@@ -27484,9 +27592,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
+        "TX-industry-financial_services",
         "TX-use_case-physical_automation",
         "TX-target_user-business_user",
-        "TX-industry-financial_services",
         "TX-product_form-robotic_system",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-physical_ai",
@@ -28148,8 +28256,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
+        "TX-industry-financial_services",
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-product_form-model",
@@ -28159,7 +28268,6 @@
         "TX-target_user-business_user",
         "TX-technology-speech_audio",
         "TX-use_case-security_operations",
-        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-consumer",
@@ -28796,6 +28904,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-b84f9955d0e55497",
         "EV-72d09299a334d0d9",
         "EV-65154e5eb49c218b",
         "EV-89cbf15ddbd98a05",
@@ -29108,8 +29217,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
+        "TX-industry-financial_services",
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-product_form-model",
@@ -29124,7 +29234,6 @@
         "TX-industry-agriculture",
         "TX-product_form-chip_accelerator",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-financial_services",
         "TX-product_form-robotic_system",
         "TX-industry-media_entertainment",
         "TX-ai_market_application-models",
@@ -29191,7 +29300,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-21"
+      "lastSeen": "2026-10-23"
     },
     {
       "id": "EN-0ad1a6d446cfd5e2",
@@ -29349,6 +29458,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-c964f7646ad88c1e",
+        "EV-f7bf3f9c38e015fc",
         "EV-5fbe1afea8264e75",
         "EV-79fbe4ea3a11c695",
         "EV-1c79bd33ccfafec8",
@@ -29701,6 +29812,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-2aead80f6796b70b",
         "EV-d35419bc2f596bce",
         "EV-a74b50329a01cd04",
         "EV-67fd80c953bff90d",
@@ -29831,8 +29943,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
+        "TX-industry-financial_services",
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
@@ -29842,7 +29955,6 @@
         "TX-target_user-business_user",
         "TX-use_case-security_operations",
         "TX-product_form-chip_accelerator",
-        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
@@ -29898,7 +30010,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-10-22"
+      "lastSeen": "2026-10-23"
     },
     {
       "id": "EN-e3ce9cc5efa9354c",
@@ -29919,8 +30031,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
+        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
         "TX-product_form-end_user_application",
         "TX-technology-on_device",
@@ -30102,8 +30214,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
+        "TX-technology-agentic_execution",
         "TX-product_form-model",
         "TX-use_case-physical_automation",
         "TX-product_form-enterprise_software_platform",
@@ -30190,8 +30302,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-embodied_ai"
+        "TX-technology-embodied_ai",
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-18",

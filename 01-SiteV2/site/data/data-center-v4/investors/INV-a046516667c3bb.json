@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-22T06:13:48.458Z",
-    "latestDataDate": "2026-10-22",
-    "currentDate": "2026-10-22",
-    "eventCount": 4230,
+    "generatedAt": "2026-10-23T03:44:52.731Z",
+    "latestDataDate": "2026-10-23",
+    "currentDate": "2026-10-23",
+    "eventCount": 4244,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,7 +61,7 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 24,
+    "current_round_count": 25,
     "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 24,
     "market_regions": [
@@ -74,7 +74,7 @@
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 4,
-      "lead": 11,
+      "lead": 12,
       "participant": 11
     },
     "round_codes": [
@@ -83,6 +83,7 @@
       "series_a",
       "series_b",
       "series_c",
+      "series_d",
       "series_e",
       "series_f",
       "series_g",
@@ -248,6 +249,46 @@
             "source_content_hash": "f3c7efce8da1beb6",
             "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
             "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-fe3c0772654d31c8",
+        "funding_insight_id": "FI-7feeaf543574b27d",
+        "event_ids": [
+          "EV-69b488065c05e255"
+        ],
+        "company_entity_id": "EN-c5803a6e4daa6af4",
+        "company_canonical_entity_id": "",
+        "company_name": "Modal",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "$750 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 750000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.5 亿美元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+            "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
+            "source_content_hash": "ef996bef620416ce",
+            "quote": "Accel led the round.",
+            "quote_hash": "ec2ad31a51431aadfd7886a6d529f38ae6e21fd59fcab834a0006578a80c362b"
           }
         ]
       },
@@ -1322,6 +1363,14 @@
         "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
       },
       {
+        "source_id": "FISRC-b54b83abf2f3608c",
+        "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+        "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
+        "source_content_hash": "ef996bef620416ce",
+        "quote": "Accel led the round.",
+        "quote_hash": "ec2ad31a51431aadfd7886a6d529f38ae6e21fd59fcab834a0006578a80c362b"
+      },
+      {
         "source_id": "FISRC-5c428919070bfce8",
         "source_url": "https://www.globenewswire.com/news-release/2026/10/09/3378310/0/en/sabi-raises-50-million-seed-round-led-by-khosla-ventures-to-put-a-brain-ai-interface-inside-a-baseball-cap.html",
         "source_title": "Sabi 获 Khosla Ventures 领投的 5000 万美元种子轮融资，将脑机 AI 接口植入棒球帽",
@@ -1584,12 +1633,12 @@
           "source_id": "FISRC-c4c53e6f607010be"
         },
         {
-          "description": "融资来源记录：Sabi · 种子轮 · 2026-10-09 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5c428919070bfce8"
+          "description": "融资来源记录：Modal · D轮 · 2026-10-14 · 本轮领投 · $750 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b54b83abf2f3608c"
         },
         {
-          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮联合领投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dc8fb918b056c843"
+          "description": "融资来源记录：Sabi · 种子轮 · 2026-10-09 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5c428919070bfce8"
         }
       ],
       "contacts": [
@@ -1670,20 +1719,20 @@
           "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
         },
         {
+          "source_id": "FISRC-b54b83abf2f3608c",
+          "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+          "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
+          "source_content_hash": "ef996bef620416ce",
+          "quote": "Accel led the round.",
+          "quote_hash": "ec2ad31a51431aadfd7886a6d529f38ae6e21fd59fcab834a0006578a80c362b"
+        },
+        {
           "source_id": "FISRC-5c428919070bfce8",
           "source_url": "https://www.globenewswire.com/news-release/2026/10/09/3378310/0/en/sabi-raises-50-million-seed-round-led-by-khosla-ventures-to-put-a-brain-ai-interface-inside-a-baseball-cap.html",
           "source_title": "Sabi 获 Khosla Ventures 领投的 5000 万美元种子轮融资，将脑机 AI 接口植入棒球帽",
           "source_content_hash": "335b0994edb14a3468e20cde0ee89afc039196155b66c84f2d7d089868b5916f",
           "quote": "Accel, Initialized Capital, former OpenAI Chief Product Officer Kevin Weil, DST Global, Collaborative Fund and Ascend also participated.",
           "quote_hash": "e52ba31bcb1e41981d2a4394658884b370342671494998f79029ab69a6e8e751"
-        },
-        {
-          "source_id": "FISRC-dc8fb918b056c843",
-          "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
-          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
-          "source_content_hash": "0b4ca5291b20197e1a333b32e3a6fd462793e5829ad8645ade5f6e59221e163d",
-          "quote": "today announced it has raised $255.5 million in Series B funding co-led by Andreessen Horowitz (a16z) and Accel",
-          "quote_hash": "5a0a2111252fab5f5d876738996841fc302cb4364773d762e40db424c18164d0"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1694,7 +1743,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[25].role": {
+        "activities[26].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

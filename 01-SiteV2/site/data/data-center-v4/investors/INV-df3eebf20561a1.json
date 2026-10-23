@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-22T06:13:48.458Z",
-    "latestDataDate": "2026-10-22",
-    "currentDate": "2026-10-22",
-    "eventCount": 4230,
+    "generatedAt": "2026-10-23T03:44:52.731Z",
+    "latestDataDate": "2026-10-23",
+    "currentDate": "2026-10-23",
+    "eventCount": 4244,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-04-13",
-    "latest_disclosed_at": "2026-09-02",
+    "latest_disclosed_at": "2026-10-22",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
+      "multi_round",
       "pre_series_a"
     ],
     "portfolio_companies": [
@@ -89,9 +90,54 @@
         "entity_id": "EN-272d534804dc22a4",
         "canonical_entity_id": "EN-272d534804dc22a4",
         "name": "华毅瀛飞"
+      },
+      {
+        "entity_id": "EN-f6f80d61fa45679e",
+        "canonical_entity_id": "",
+        "name": "星忆智能"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-869f786b87762d51",
+        "funding_insight_id": "FI-173f8312aa1ca1ed",
+        "event_ids": [
+          "EV-c1832bf5603ccc52"
+        ],
+        "company_entity_id": "EN-f6f80d61fa45679e",
+        "company_canonical_entity_id": "",
+        "company_name": "星忆智能",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "种子轮及种子+轮（多轮融资合计）",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-10-22",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "种子+轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dd8fc7a397ee8766",
+            "source_url": "https://news.pedaily.cn/202610/570697.shtml",
+            "source_title": "星忆智能完成数千万元种子轮及种子＋轮融资，以高质量数据构建具身智能物理AI基座",
+            "source_content_hash": "ab1f1503f68afec95c0ffe2511cddffacec074dc743b77c4599677b435dac557",
+            "quote": "中关村资本、一创投资跟投",
+            "quote_hash": "3ef175c0748b3ac7dfc1595bf1f2d4d66f5e1361ef55626bdef0070482d40ba4"
+          }
+        ]
+      },
       {
         "activity_id": "IA-5a8572e90768cf72",
         "funding_insight_id": "FI-d66ca0243fba30e1",
@@ -215,6 +261,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-dd8fc7a397ee8766",
+        "source_url": "https://news.pedaily.cn/202610/570697.shtml",
+        "source_title": "星忆智能完成数千万元种子轮及种子＋轮融资，以高质量数据构建具身智能物理AI基座",
+        "source_content_hash": "ab1f1503f68afec95c0ffe2511cddffacec074dc743b77c4599677b435dac557",
+        "quote": "中关村资本、一创投资跟投",
+        "quote_hash": "3ef175c0748b3ac7dfc1595bf1f2d4d66f5e1361ef55626bdef0070482d40ba4"
+      },
+      {
         "source_id": "FISRC-57de475f4ec2ac5a",
         "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
         "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员",
@@ -276,12 +330,12 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：鼎犀智创（Rhinovate™） · Pre-A轮 · 2026-09-02 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-57de475f4ec2ac5a"
+          "description": "融资来源记录：星忆智能 · 多轮融资 · 2026-10-22 · 种子+轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-dd8fc7a397ee8766"
         },
         {
-          "description": "融资来源记录：华毅瀛飞 · Pre-A轮 · 2026-04-13 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-13a43855ea188967"
+          "description": "融资来源记录：鼎犀智创（Rhinovate™） · Pre-A轮 · 2026-09-02 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-57de475f4ec2ac5a"
         }
       ],
       "contacts": [],
@@ -311,6 +365,14 @@
           "quote_hash": "4c5edc69f10fddd18957ed78928aabecdf8be604bff50284b728738b8487ebe5"
         },
         {
+          "source_id": "FISRC-dd8fc7a397ee8766",
+          "source_url": "https://news.pedaily.cn/202610/570697.shtml",
+          "source_title": "星忆智能完成数千万元种子轮及种子＋轮融资，以高质量数据构建具身智能物理AI基座",
+          "source_content_hash": "ab1f1503f68afec95c0ffe2511cddffacec074dc743b77c4599677b435dac557",
+          "quote": "中关村资本、一创投资跟投",
+          "quote_hash": "3ef175c0748b3ac7dfc1595bf1f2d4d66f5e1361ef55626bdef0070482d40ba4"
+        },
+        {
           "source_id": "FISRC-57de475f4ec2ac5a",
           "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
           "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员",
@@ -325,14 +387,6 @@
           "source_content_hash": "cc2f801c9dac56e7",
           "quote": "本轮融资由鼎晖百孚领投, 龙芯创投、九合创投、彬复资本、顺禧基金、中关村资本跟投。",
           "quote_hash": "704d218ef28d120c58690ee29eacb0507cf6fc15901de05df20b1e2d55e0f9a4"
-        },
-        {
-          "source_id": "FISRC-13a43855ea188967",
-          "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-13/doc-inhuitqy5628851.shtml",
-          "source_title": "华工投资、长飞基金参与光芯片厂商华毅瀛飞Pre-A轮融资",
-          "source_content_hash": "16a36ffc37b94da5",
-          "quote": "跟投方包括京津冀创业投资引导基金、中关村资本、亦庄科创二期基金、招银国际资本以及鑫融邦资本等知名投资机构",
-          "quote_hash": "dcaa6fc9894fc1596ce5cf55490408d66b627ce08b0f5c7ed18ea4ad0792ae41"
         }
       ],
       "last_verified_at": "2026-10-04",
