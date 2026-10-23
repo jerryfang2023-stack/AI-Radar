@@ -1,0 +1,86 @@
+{
+  "version": "RESPONSIBLE-FINANCING-REVIEW-1",
+  "reviewed_at": "2026-10-23T03:42:50.117Z",
+  "reviewed_by": "Codex responsible financing reviewer",
+  "base_commit": "c110f2d4c161463f77ae49d762460527008c64cc",
+  "accepted_head": "5a0e5269dc59a3c949a0480455d4f82235838b64",
+  "canonical_entity_merge_approved": false,
+  "decisions": [
+    {
+      "event_id": "EV-c964f7646ad88c1e",
+      "status": "pending",
+      "source_url": "https://finance.sina.cn/stock/jdts/2026-10-22/detail-iniwchpf5857199.d.html",
+      "reason": "同日原文对本轮完成状态存在直接冲突：Bloomberg称已筹得1000亿元，后续报道仍称拟融资、未来数日完成且金额未最终确定。仅暂缓此轮，保留此前已发布融资和来源；待完成状态澄清后恢复。",
+      "source_id": "FISRC-1c21a3f4bf315f59",
+      "source_content_hash": "7115ebb8fadce335",
+      "body_sha256": "7115ebb8fadce335590a91d64f470b3af50a2f958fb7e98a560bfd5c00724ec6",
+      "quote": "10月22日，有市场消息称，国内大模型公司DeepSeek（深度求索）拟在最新一轮融资中筹得约1000亿元人民币（约150亿美元），腾讯和宁德时代为本轮出资最多的投资方，交易预计在未来数日内正式完成",
+      "quote_hash": "35c069d6a4d19c0ade2aa39496a8bcc92c95bb38bcc3458892f7292125ec08ae",
+      "conflicting_evidence": [
+        {
+          "source_id": "FISRC-2346329522885331",
+          "source_content_hash": "e85e5d970af235d183bcf54e03c8ba88851ce996abdae1d62194fd473f9b6914",
+          "body_sha256": "e85e5d970af235d183bcf54e03c8ba88851ce996abdae1d62194fd473f9b6914",
+          "quote": "The Chinese AI pioneer DeepSeek has raised about 100 billion yuan ($15 billion) in its latest fundraising round",
+          "quote_hash": "ed12992ba2e56bcdfd7f70f3ce2371c31358d605012cfb7649f002308c7ebb48"
+        }
+      ],
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-23T03:42:50.117Z"
+    },
+    {
+      "event_id": "EV-69b488065c05e255",
+      "field": "financing.announced_at",
+      "before": "2026-10-22",
+      "after": "2026-10-14",
+      "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+      "source_id": "FISRC-b54b83abf2f3608c",
+      "source_content_hash": "ef996bef620416ce",
+      "body_sha256": "ef996bef620416cec2ebcd41898f6aec6b42ceda61db213b45474590054d5d09",
+      "quote": "To keep building what's next, we’ve raised a $750M Series D at a $15.75B post-money valuation.",
+      "quote_hash": "b2367daf4d92eb3c8a8127f2043b49aadc0c94e731a8f86681193b39ad2911e5",
+      "publication_date_evidence": {
+        "date": "2026-10-14",
+        "method": "jsonld:datePublished",
+        "value": "2026-10-14"
+      },
+      "reason": "采用公司原始公告的发布日期；10月22日为后续访谈报道。保留既有C轮、D轮及旧链接。"
+    },
+    {
+      "event_id": "EV-c1832bf5603ccc52",
+      "field": "financing.round / investor roles",
+      "after": "种子轮及种子+轮（多轮融资合计）",
+      "source_id": "FISRC-dd8fc7a397ee8766",
+      "source_content_hash": "ab1f1503f68afec95c0ffe2511cddffacec074dc743b77c4599677b435dac557",
+      "body_sha256": "ab1f1503f68afec95c0ffe2511cddffacec074dc743b77c4599677b435dac557",
+      "quote": "投资界（ID：pedaily2012）10月22日消息，星忆智能宣布完成数千万元种子轮及种子＋轮连续融资。",
+      "quote_hash": "f10dd8118200f12d00d030af1673c0f178a0cfff4e01063000cbe8f26e583622",
+      "source_url": "https://news.pedaily.cn/202610/570697.shtml",
+      "reason": "数千万元为种子轮及种子+轮连续融资合计，未披露每轮金额，按原文分别标注两轮投资方。主营为数据采集、处理和训练数据服务，机器人客户本身不构成排除依据。"
+    },
+    {
+      "event_id": "EV-c762473604855df8",
+      "field": "financing.investors",
+      "after": "Klima Energy Transition Fund领投；GoHub Ventures仅标既有股东",
+      "source_id": "FISRC-1d54838f43c82f1c",
+      "source_content_hash": "296307f68f572d50c6795860ef35c8259f273e081e780280643dfab271c983e3",
+      "body_sha256": "296307f68f572d50c6795860ef35c8259f273e081e780280643dfab271c983e3",
+      "quote": "The round was led by Klima Energy Transition Fund, Alantra’s energy transition fund, with GoHub Ventures remaining a shareholder.",
+      "quote_hash": "9592c5003d95abbfc1188ca00ea8aa53211845524d4171cb27d0f9d05ad2429c",
+      "reason": "remaining a shareholder不能证明本轮增投；保留原文并避免把股东存续误写为本轮参投。"
+    },
+    {
+      "event_id": "EV-353261ac722ca40b",
+      "field": "same_round_duplicate",
+      "source_url": "https://www.eu-startups.com/2026/10/berlin-based-ygo-raises-e8-million-to-make-travel-inventory-bookable-through-ai-agents/",
+      "source_id": "FISRC-d1cf456ee7930017",
+      "source_content_hash": "bf72a412092bb2925fdea3ed8183097d72e1b8ed65b391034325dce3b4c5b163",
+      "body_sha256": "bf72a412092bb2925fdea3ed8183097d72e1b8ed65b391034325dce3b4c5b163",
+      "quote": "YGO, a Berlin-based startup building an AI infrastructure layer for the travel industry, raised €8 million in a Series A round.",
+      "quote_hash": "a616cea6224fcc6268d2e1f3469889600c14a558f773cdaf5d68be1056da5824",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-23",
+      "reason": "同一柏林YGO、同一创始团队、2026-10-21的800万欧元A轮、Ventech领投及相同跟投方。合并重复报道为已发布的同轮卡，保留所有来源和旧链接；仅应用主体合并，不批准规范实体合并。"
+    }
+  ]
+}

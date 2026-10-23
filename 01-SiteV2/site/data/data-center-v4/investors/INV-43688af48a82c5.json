@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-22T06:13:48.458Z",
+    "generatedAt": "2026-10-23T03:44:52.731Z",
     "latestDataDate": "2026-10-23",
     "currentDate": "2026-10-23",
     "eventCount": 4244,
@@ -70,7 +70,7 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-27",
-    "latest_disclosed_at": "2026-10-22",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "co_lead": 1,
       "lead": 2,
@@ -133,46 +133,6 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-65e2a2a64cbfa15e",
-        "funding_insight_id": "FI-00e0f416fc6d0533",
-        "event_ids": [
-          "EV-69b488065c05e255"
-        ],
-        "company_entity_id": "EN-c5803a6e4daa6af4",
-        "company_canonical_entity_id": "",
-        "company_name": "Modal",
-        "round": "D轮",
-        "round_code": "series_d",
-        "round_original": "D轮",
-        "amount_original": "$750 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 750000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "7.5 亿美元"
-        },
-        "announced_at": "2026-10-22",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-b54b83abf2f3608c",
-            "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
-            "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
-            "source_content_hash": "ef996bef620416ce",
-            "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
-            "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
-          }
-        ]
-      },
-      {
         "activity_id": "IA-722243227072540b",
         "funding_insight_id": "FI-f6024633a1bff4e3",
         "event_ids": [
@@ -209,6 +169,46 @@
             "source_content_hash": "52d288f9f7f1c202",
             "quote": "On Wednesday, the company announced it had raised a $1 billion Series A round, co-led by Index and Lux, reportedly at a $6 billion valuation.",
             "quote_hash": "e9f4ade78d2bd52deefe7d8f7f01f3a12d47dc5c972c061b1d98bb9866273d5b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-65e2a2a64cbfa15e",
+        "funding_insight_id": "FI-7feeaf543574b27d",
+        "event_ids": [
+          "EV-69b488065c05e255"
+        ],
+        "company_entity_id": "EN-c5803a6e4daa6af4",
+        "company_canonical_entity_id": "",
+        "company_name": "Modal",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "$750 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 750000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.5 亿美元"
+        },
+        "announced_at": "2026-10-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b54b83abf2f3608c",
+            "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+            "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
+            "source_content_hash": "ef996bef620416ce",
+            "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
+            "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
           }
         ]
       },
@@ -496,20 +496,20 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-b54b83abf2f3608c",
-        "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
-        "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
-        "source_content_hash": "ef996bef620416ce",
-        "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
-        "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
-      },
-      {
         "source_id": "FISRC-d40817bd8696706a",
         "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
         "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
         "source_content_hash": "52d288f9f7f1c202",
         "quote": "On Wednesday, the company announced it had raised a $1 billion Series A round, co-led by Index and Lux, reportedly at a $6 billion valuation.",
         "quote_hash": "e9f4ade78d2bd52deefe7d8f7f01f3a12d47dc5c972c061b1d98bb9866273d5b"
+      },
+      {
+        "source_id": "FISRC-b54b83abf2f3608c",
+        "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+        "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
+        "source_content_hash": "ef996bef620416ce",
+        "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
+        "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
       },
       {
         "source_id": "FISRC-852df50f4128c47b",
@@ -621,12 +621,12 @@
           "source_id": "lux_home"
         },
         {
-          "description": "融资来源记录：Modal · D轮 · 2026-10-22 · 本轮参投 · $750 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b54b83abf2f3608c"
-        },
-        {
           "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮联合领投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d40817bd8696706a"
+        },
+        {
+          "description": "融资来源记录：Modal · D轮 · 2026-10-14 · 本轮参投 · $750 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b54b83abf2f3608c"
         },
         {
           "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
@@ -689,20 +689,20 @@
           "quote_hash": "6b9451180acf913c2d479cc1d4ebaa1e3e3390f58f4fb6da897bd77683439079"
         },
         {
-          "source_id": "FISRC-b54b83abf2f3608c",
-          "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
-          "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
-          "source_content_hash": "ef996bef620416ce",
-          "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
-          "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
-        },
-        {
           "source_id": "FISRC-d40817bd8696706a",
           "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
           "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
           "source_content_hash": "52d288f9f7f1c202",
           "quote": "On Wednesday, the company announced it had raised a $1 billion Series A round, co-led by Index and Lux, reportedly at a $6 billion valuation.",
           "quote_hash": "e9f4ade78d2bd52deefe7d8f7f01f3a12d47dc5c972c061b1d98bb9866273d5b"
+        },
+        {
+          "source_id": "FISRC-b54b83abf2f3608c",
+          "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+          "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
+          "source_content_hash": "ef996bef620416ce",
+          "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
+          "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
         },
         {
           "source_id": "FISRC-852df50f4128c47b",

@@ -68,7 +68,7 @@
         "canonical_entity_consistent": false
       },
       "financing": {
-        "round": "种子+轮",
+        "round": "多轮融资",
         "amount": "数千万元",
         "total_raised": "",
         "announced_at": "2026-10-22",
@@ -76,7 +76,7 @@
         "investors": [
           {
             "name": "顺禧基金",
-            "role": "本轮领投",
+            "role": "种子轮领投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-dd8fc7a397ee8766",
@@ -89,7 +89,7 @@
           },
           {
             "name": "凌云光",
-            "role": "本轮领投",
+            "role": "种子+轮领投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-dd8fc7a397ee8766",
@@ -102,7 +102,7 @@
           },
           {
             "name": "中关村资本",
-            "role": "本轮参投",
+            "role": "种子+轮参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-dd8fc7a397ee8766",
@@ -115,7 +115,7 @@
           },
           {
             "name": "一创投资",
-            "role": "本轮参投",
+            "role": "种子+轮参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-dd8fc7a397ee8766",
@@ -148,8 +148,8 @@
             "quote_hash": "e8a1551d17844e9c551e3e631f786e8a08444aa7ea397ecbb61b1db94e3bf8c1"
           }
         ],
-        "round_code": "seed_plus",
-        "round_original": "种子+轮",
+        "round_code": "multi_round",
+        "round_original": "种子轮及种子+轮（多轮融资合计）",
         "amount_original": "数千万元",
         "amount_normalized": {
           "currency": "CNY",
@@ -174,7 +174,7 @@
         "disclosures": [
           {
             "event_id": "EV-c1832bf5603ccc52",
-            "round_original": "种子+轮",
+            "round_original": "种子轮及种子+轮（多轮融资合计）",
             "amount": "数千万元",
             "announced_at": "2026-10-22",
             "evidence_refs": [
@@ -4005,10 +4005,12 @@
               }
             ],
             "entity_id": null
-          },
+          }
+        ],
+        "other_round_investors": [
           {
             "name": "GoHub Ventures",
-            "role": "本轮参投",
+            "role": "既有股东，本轮是否增投未披露",
             "evidence_refs": [
               {
                 "source_id": "FISRC-1d54838f43c82f1c",
@@ -4020,7 +4022,6 @@
             "entity_id": null
           }
         ],
-        "other_round_investors": [],
         "evidence_refs": [
           {
             "source_id": "FISRC-1d54838f43c82f1c",
@@ -4278,13 +4279,6 @@
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Klima Energy Transition Fund",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "GoHub Ventures",
           "canonical_entity_id": null,
           "canonical_name": ""
         }
@@ -5164,7 +5158,7 @@
         "round": "D轮",
         "amount": "$750 million",
         "total_raised": "more than $1.2 billion",
-        "announced_at": "2026-10-22",
+        "announced_at": "2026-10-14",
         "investor_disclosure_status": "disclosed",
         "investors": [
           {
@@ -5321,7 +5315,7 @@
             "event_id": "EV-69b488065c05e255",
             "round_original": "D轮",
             "amount": "$750 million",
-            "announced_at": "2026-10-22",
+            "announced_at": "2026-10-14",
             "evidence_refs": [
               {
                 "source_id": "FISRC-c5258c7ef6406bc0",
@@ -5825,7 +5819,7 @@
       "funding_history": [
         {
           "event_id": "EV-69b488065c05e255",
-          "date": "2026-10-22",
+          "date": "2026-10-14",
           "title": "为什么 AI 算力以矩形形态出现——Modal CEO Erik Bernhardsson",
           "amount": "$750 million",
           "source_refs": [
