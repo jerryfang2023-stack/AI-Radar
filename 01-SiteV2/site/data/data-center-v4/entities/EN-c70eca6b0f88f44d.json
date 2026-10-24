@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-7684bfb9b954c1fd",
       "EV-c964f7646ad88c1e",
       "EV-f7bf3f9c38e015fc",
       "EV-5fbe1afea8264e75",
@@ -417,7 +418,10 @@
       "EV-8115dd18f2812a29",
       "EV-cf496e0f8a56ca97",
       "EV-8cb5b0ed18c7cdd8",
+      "EV-2ad2ae14a594df04",
       "EV-2aead80f6796b70b",
+      "EV-526fa666b5957768",
+      "EV-53c733c33deddee3",
       "EV-d35419bc2f596bce",
       "EV-a74b50329a01cd04",
       "EV-67fd80c953bff90d",
@@ -615,7 +619,7 @@
       "EN-da20c5952dba19d8"
     ],
     "firstSeen": "2025-09-04",
-    "lastSeen": "2026-10-23",
+    "lastSeen": "2026-10-24",
     "relationIds": [
       "REL2-6460871b6d621283",
       "REL2-02bdd133e9353ff7",
@@ -676,11 +680,14 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-7684bfb9b954c1fd",
         "EV-c964f7646ad88c1e",
-        "EV-f7bf3f9c38e015fc",
         "EV-5fbe1afea8264e75",
         "EV-79fbe4ea3a11c695",
+        "EV-2ad2ae14a594df04",
         "EV-2aead80f6796b70b",
+        "EV-53c733c33deddee3",
+        "EV-f7bf3f9c38e015fc",
         "EV-a74b50329a01cd04",
         "EV-1c79bd33ccfafec8",
         "EV-4495851ddb7439c8",
@@ -835,6 +842,7 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
+        "EV-526fa666b5957768",
         "EV-b611fec3bb1ed987",
         "EV-44b4a5564faf8106",
         "EV-462754017d330734",
@@ -1174,8 +1182,27 @@
     },
     "timeline": [
       {
+        "id": "EV-7684bfb9b954c1fd",
+        "dataDate": "2026-10-24",
+        "date": "2026-10-23",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenAI 下调估值目标，最高融资 300 亿美元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1c2969c7602a8e5d",
+          "EN-d117c6892e6fba9e",
+          "EN-7d3194f79e645c42",
+          "EN-76628185e105b96e",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
         "id": "EV-c964f7646ad88c1e",
-        "dataDate": "2026-10-23",
+        "dataDate": "2026-10-24",
         "date": "2026-10-22",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -1188,6 +1215,130 @@
           "EN-6f7ac1823da81d2e",
           "EN-c70eca6b0f88f44d",
           "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-5fbe1afea8264e75",
+        "dataDate": "2026-10-24",
+        "date": "2026-10-20",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "OpenAI 收购初创公司 Orchestra Bio 以加强其生物技术业务",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-79fbe4ea3a11c695",
+        "dataDate": "2026-10-24",
+        "date": "2026-10-19",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "海外 AI 基建烧钱融资溢价飙升，Anthropic 借钱买芯片利息超 10%",
+        "displayTags": [],
+        "entityIds": [
+          "EN-dcf934033d9b04ad",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-2ad2ae14a594df04",
+        "dataDate": "2026-10-24",
+        "date": "2026-10-23",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic 即将进行的 IPO 让硅谷屏息以待",
+        "displayTags": [],
+        "entityIds": [
+          "EN-407a75b4abd9e9aa",
+          "EN-c70eca6b0f88f44d",
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-2aead80f6796b70b",
+        "dataDate": "2026-10-24",
+        "date": "2026-10-22",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic IPO 将为 Iconiq、Spark、GIC 带来巨额收益",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-526fa666b5957768",
+        "dataDate": "2026-10-24",
+        "date": "2026-10-22",
+        "eventType": "security_incident",
+        "eventTypeLabel": "安全事件",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 监测应成为投资者尽职调查的标准组成部分",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-b3060e26b969450f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-b3060e26b969450f",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-53c733c33deddee3",
+        "dataDate": "2026-10-24",
+        "date": "2026-10-19",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic IPO 将为 Google 的 Eric Schmidt 带来巨额收益",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-bbdefa2950f49882"
+        ]
+      },
+      {
+        "id": "EV-d35419bc2f596bce",
+        "dataDate": "2026-10-24",
+        "date": "2026-10-18",
+        "eventType": "capital_investment",
+        "eventTypeLabel": "资本性投资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "投资于公共利益",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d"
         ]
       },
       {
@@ -1204,68 +1355,6 @@
         "entityIds": [
           "EN-76628185e105b96e",
           "EN-7d3194f79e645c42",
-          "EN-c70eca6b0f88f44d"
-        ]
-      },
-      {
-        "id": "EV-5fbe1afea8264e75",
-        "dataDate": "2026-10-23",
-        "date": "2026-10-20",
-        "eventType": "acquisition",
-        "eventTypeLabel": "并购",
-        "eventGroup": "融资与并购",
-        "status": "rumored",
-        "statusLabel": "rumored",
-        "title": "OpenAI 收购初创公司 Orchestra Bio 以加强其生物技术业务",
-        "displayTags": [],
-        "entityIds": [
-          "EN-7d3194f79e645c42",
-          "EN-c70eca6b0f88f44d"
-        ]
-      },
-      {
-        "id": "EV-79fbe4ea3a11c695",
-        "dataDate": "2026-10-23",
-        "date": "2026-10-19",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "海外 AI 基建烧钱融资溢价飙升，Anthropic 借钱买芯片利息超 10%",
-        "displayTags": [],
-        "entityIds": [
-          "EN-dcf934033d9b04ad",
-          "EN-c70eca6b0f88f44d"
-        ]
-      },
-      {
-        "id": "EV-2aead80f6796b70b",
-        "dataDate": "2026-10-23",
-        "date": "2026-10-22",
-        "eventType": "ipo_listing",
-        "eventTypeLabel": "IPO 与上市",
-        "eventGroup": "融资与并购",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "Anthropic IPO 将为 Iconiq、Spark、GIC 带来巨额收益",
-        "displayTags": [],
-        "entityIds": [
-          "EN-c70eca6b0f88f44d"
-        ]
-      },
-      {
-        "id": "EV-d35419bc2f596bce",
-        "dataDate": "2026-10-23",
-        "date": "2026-10-18",
-        "eventType": "capital_investment",
-        "eventTypeLabel": "资本性投资",
-        "eventGroup": "融资与并购",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "投资于公共利益",
-        "displayTags": [],
-        "entityIds": [
           "EN-c70eca6b0f88f44d"
         ]
       },
@@ -15194,7 +15283,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-23"
+      "lastSeen": "2026-10-24"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -15207,6 +15296,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-7684bfb9b954c1fd",
         "EV-c964f7646ad88c1e",
         "EV-f7bf3f9c38e015fc",
         "EV-5fbe1afea8264e75",
@@ -15637,6 +15727,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-2ad2ae14a594df04",
+        "EV-526fa666b5957768",
         "EV-5133905b22468322",
         "EV-8fd2621317a8a577",
         "EV-d7652e5b3dbe4620",
@@ -15839,7 +15931,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-23"
+      "lastSeen": "2026-10-24"
     },
     {
       "id": "EN-729324072d368379",
@@ -17826,7 +17918,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-23"
+      "lastSeen": "2026-10-24"
     },
     {
       "id": "TX-industry-financial_services",
@@ -18075,7 +18167,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-10-23"
+      "lastSeen": "2026-10-24"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -19521,7 +19613,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-10-22"
+      "lastSeen": "2026-10-24"
     },
     {
       "id": "TX-product_form-model",
@@ -20214,7 +20306,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-21"
+      "lastSeen": "2026-10-24"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",
@@ -22266,6 +22358,7 @@
         "EV-f1418d9e3b1413b7",
         "EV-2eabd03665cbdef7",
         "EV-a35a3871bf36fea2",
+        "EV-526fa666b5957768",
         "EV-fdc3211527e41bf6",
         "EV-d219dec3f1fcefc1",
         "EV-a5a2807ca49753ee",
@@ -22350,6 +22443,7 @@
         "EN-8de7e44229714152",
         "EN-ced86039c0ad6a7c",
         "EN-842a7da99bd249d4",
+        "EN-b3060e26b969450f",
         "EN-b8b5450454175d6d",
         "EN-a81b5ef9c23cdf0c",
         "EN-a0d4ca5b6474c67c",
@@ -22368,7 +22462,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-29",
-      "lastSeen": "2026-10-20"
+      "lastSeen": "2026-10-24"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -24597,7 +24691,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-04-30",
-      "lastSeen": "2026-10-23"
+      "lastSeen": "2026-10-24"
     },
     {
       "id": "TX-use_case-data_analysis",

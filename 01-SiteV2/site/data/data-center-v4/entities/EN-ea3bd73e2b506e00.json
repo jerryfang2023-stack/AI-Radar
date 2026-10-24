@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -176,6 +176,7 @@
       "EV-c98d4ee7764d51b2",
       "EV-657837763764c869",
       "EV-d037228f0b35c1cb",
+      "EV-da50c998bf59ffe2",
       "EV-641d61c6b8506c06",
       "EV-a551ac76be0015af",
       "EV-b739349cfab7e41c",
@@ -241,7 +242,7 @@
       "EN-e71558a14e7ed6ab"
     ],
     "firstSeen": "2026-01-28",
-    "lastSeen": "2026-10-23",
+    "lastSeen": "2026-10-24",
     "relationIds": [
       "REL2-85833837dc3e3f02",
       "REL2-ef7c3e949f2087f3",
@@ -285,6 +286,7 @@
         "EV-467d1a701d21327d"
       ],
       "deployments": [
+        "EV-da50c998bf59ffe2",
         "EV-e4f4d4270155dec8",
         "EV-be76a1e5ed2b6cf5",
         "EV-0121f0a9e9a975ec",
@@ -407,7 +409,7 @@
     "timeline": [
       {
         "id": "EV-b86890a5d3330971",
-        "dataDate": "2026-10-23",
+        "dataDate": "2026-10-24",
         "date": "2026-10-17",
         "eventType": "service_change",
         "eventTypeLabel": "服务变更",
@@ -415,6 +417,21 @@
         "status": "completed",
         "statusLabel": "已完成",
         "title": "Meta 删除了引发抓取和 AI 训练担忧的措辞",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ea3bd73e2b506e00"
+        ]
+      },
+      {
+        "id": "EV-da50c998bf59ffe2",
+        "dataDate": "2026-10-24",
+        "date": "2026-10-21",
+        "eventType": "capital_investment",
+        "eventTypeLabel": "资本性投资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Meta欲通过新设立的股票类别为其大规模AI建设提供资金",
         "displayTags": [],
         "entityIds": [
           "EN-ea3bd73e2b506e00"
@@ -5339,6 +5356,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-773a0fd45e447eac",
         "EV-6ca561d3a3b8cb93",
         "EV-960e6f1e98cbfa60",
         "EV-bdf01e0aa51360b3",
@@ -5426,6 +5444,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-product_form-ai_device",
         "TX-product_form-model",
         "TX-use_case-content_creation",
         "TX-product_form-end_user_application",
@@ -5439,7 +5458,7 @@
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-01-26",
-      "lastSeen": "2026-10-19"
+      "lastSeen": "2026-10-24"
     },
     {
       "id": "EN-d85ad5e8ff8e2889",
@@ -7177,7 +7196,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-10-22"
+      "lastSeen": "2026-10-24"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -7624,7 +7643,7 @@
         "HW-ef547aa78d8d0ade"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-10-22"
+      "lastSeen": "2026-10-24"
     },
     {
       "id": "TX-product_form-model",
@@ -8317,7 +8336,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-21"
+      "lastSeen": "2026-10-24"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",

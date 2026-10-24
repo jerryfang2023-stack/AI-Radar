@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,9 +63,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 11,
+    "current_round_count": 12,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 11,
+    "portfolio_company_count": 12,
     "market_regions": [
       "GLOBAL"
     ],
@@ -76,7 +76,7 @@
     "role_counts": {
       "historical_or_ambiguous": 3,
       "lead": 2,
-      "participant": 9
+      "participant": 10
     },
     "round_codes": [
       "seed",
@@ -96,6 +96,11 @@
         "entity_id": "EN-f8223ea5a9c41813",
         "canonical_entity_id": "",
         "name": "Armadin"
+      },
+      {
+        "entity_id": "EN-8eae6c54657e94be",
+        "canonical_entity_id": "",
+        "name": "Blacksmith"
       },
       {
         "entity_id": "EN-fa64e74622d0a95a",
@@ -144,6 +149,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f482e49d61741535",
+        "funding_insight_id": "FI-2aa299d42ca42b11",
+        "event_ids": [
+          "EV-5aa0077bd10ce3dc"
+        ],
+        "company_entity_id": "EN-8eae6c54657e94be",
+        "company_canonical_entity_id": "",
+        "company_name": "Blacksmith",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$66M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 66000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6600 万美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+            "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+            "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+          }
+        ]
+      },
       {
         "activity_id": "IA-469e07aeea9561ba",
         "funding_insight_id": "FI-29972434b39dd262",
@@ -693,6 +738,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-49f5b4d8c68adbdc",
+        "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+        "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+        "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+        "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+        "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+      },
+      {
         "source_id": "FISRC-0b9a2de412bfecea",
         "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
         "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
@@ -885,16 +938,16 @@
           "source_id": "gv_about"
         },
         {
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-49f5b4d8c68adbdc"
+        },
+        {
           "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0b9a2de412bfecea"
         },
         {
           "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d40817bd8696706a"
-        },
-        {
-          "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-10-04 · 本轮参投 · 21亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-82c9573ed9c6ba66"
         }
       ],
       "contacts": [
@@ -918,6 +971,14 @@
           "quote_hash": "90cbdf37bd32985fe0287193ec4b8eaee618ac9632610f1ef38fb1e68a388701"
         },
         {
+          "source_id": "FISRC-49f5b4d8c68adbdc",
+          "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+          "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+          "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+          "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+          "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+        },
+        {
           "source_id": "FISRC-0b9a2de412bfecea",
           "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
           "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
@@ -932,14 +993,6 @@
           "source_content_hash": "52d288f9f7f1c202",
           "quote": "Other participants in the new round included earlier backers Sequoia, GV, and Kleiner Perkins.",
           "quote_hash": "7cd08033c748194750d851104567a0f7f2723955079dcda7e05f9131dae3bc43"
-        },
-        {
-          "source_id": "FISRC-82c9573ed9c6ba66",
-          "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
-          "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
-          "source_content_hash": "e6bdf28f1eee82d0",
-          "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
-          "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
         }
       ],
       "last_verified_at": "2026-09-25",

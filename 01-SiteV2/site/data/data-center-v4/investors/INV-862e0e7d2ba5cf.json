@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,9 +63,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 31,
+    "current_round_count": 32,
     "historical_or_ambiguous_count": 13,
-    "portfolio_company_count": 26,
+    "portfolio_company_count": 27,
     "market_regions": [
       "GLOBAL"
     ],
@@ -76,7 +76,7 @@
     "role_counts": {
       "co_lead": 3,
       "historical_or_ambiguous": 13,
-      "lead": 13,
+      "lead": 14,
       "other_current_round": 1,
       "participant": 14
     },
@@ -108,6 +108,11 @@
         "entity_id": "EN-ae3d8efc01c7627d",
         "canonical_entity_id": "",
         "name": "Astrocade"
+      },
+      {
+        "entity_id": "EN-8eae6c54657e94be",
+        "canonical_entity_id": "",
+        "name": "Blacksmith"
       },
       {
         "entity_id": "EN-fa64e74622d0a95a",
@@ -226,6 +231,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b818d92480ba6979",
+        "funding_insight_id": "FI-2aa299d42ca42b11",
+        "event_ids": [
+          "EV-5aa0077bd10ce3dc"
+        ],
+        "company_entity_id": "EN-8eae6c54657e94be",
+        "company_canonical_entity_id": "",
+        "company_name": "Blacksmith",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$66M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 66000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6600 万美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+            "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote": "a $66M Series C led by Sequoia Capital at a $1 billion valuation",
+            "quote_hash": "33a85f0b4446289963f51e84b69bf35a336bc02d5e28e1c6dd0ce378b7b664c0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7844b534f40e5cab",
         "funding_insight_id": "FI-29972434b39dd262",
@@ -1913,6 +1958,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-49f5b4d8c68adbdc",
+        "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+        "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+        "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+        "quote": "a $66M Series C led by Sequoia Capital at a $1 billion valuation",
+        "quote_hash": "33a85f0b4446289963f51e84b69bf35a336bc02d5e28e1c6dd0ce378b7b664c0"
+      },
+      {
         "source_id": "FISRC-5f7eaed02b669920",
         "source_url": "https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/",
         "source_title": "Blacksmith 在 Sequoia 领投 C 轮融资后达到独角兽估值",
@@ -2324,12 +2377,12 @@
           "source_id": "sequoia_history"
         },
         {
-          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮领投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5f7eaed02b669920"
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮领投 · $66M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-49f5b4d8c68adbdc"
         },
         {
-          "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d40817bd8696706a"
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮领投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5f7eaed02b669920"
         }
       ],
       "contacts": [
@@ -2359,6 +2412,14 @@
           "quote_hash": "4a2f68c042b10690a950656cdd8c8d78ddbacadab8cdf2e8a4566b83347cc5ac"
         },
         {
+          "source_id": "FISRC-49f5b4d8c68adbdc",
+          "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+          "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+          "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+          "quote": "a $66M Series C led by Sequoia Capital at a $1 billion valuation",
+          "quote_hash": "33a85f0b4446289963f51e84b69bf35a336bc02d5e28e1c6dd0ce378b7b664c0"
+        },
+        {
           "source_id": "FISRC-5f7eaed02b669920",
           "source_url": "https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/",
           "source_title": "Blacksmith 在 Sequoia 领投 C 轮融资后达到独角兽估值",
@@ -2373,14 +2434,6 @@
           "source_content_hash": "b097b8e1cde199ce",
           "quote": "Serie C de US$66 millones liderada por Sequoia Capital",
           "quote_hash": "a25971a623a948f50c6842d50263e65a8e541c335e6fced94fc14ab433aa49ce"
-        },
-        {
-          "source_id": "FISRC-d40817bd8696706a",
-          "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
-          "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
-          "source_content_hash": "52d288f9f7f1c202",
-          "quote": "Other participants in the new round included earlier backers Sequoia, GV, and Kleiner Perkins.",
-          "quote_hash": "7cd08033c748194750d851104567a0f7f2723955079dcda7e05f9131dae3bc43"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2391,7 +2444,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[31].role": {
+        "activities[32].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",
@@ -2399,7 +2452,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[33].role": {
+        "activities[34].role": {
           "text": "Series D 领投",
           "source_hash": "b1ad54c261addee1c044320cc302024b488ee22b0810e11ab5f9b281dda6d2b7",
           "provider": "deepseek",
@@ -2407,7 +2460,7 @@
           "translated_at": "2026-10-03T00:37:44.351Z",
           "status": "translated"
         },
-        "activities[35].role": {
+        "activities[36].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",
@@ -2415,7 +2468,7 @@
           "translated_at": "2026-10-01T19:38:36.584Z",
           "status": "translated"
         },
-        "activities[37].role": {
+        "activities[38].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",

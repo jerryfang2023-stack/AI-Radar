@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,26 +61,32 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-09-02",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "series_b",
       "series_c",
-      "series_d"
+      "series_d",
+      "series_e"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-7c6eefba80293ea4",
+        "canonical_entity_id": "",
+        "name": "Pigment"
+      },
       {
         "entity_id": "EN-586937124e151c46",
         "canonical_entity_id": "EN-586937124e151c46",
@@ -93,6 +99,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-80f735482bb65629",
+        "funding_insight_id": "FI-25d65282cadc2f61",
+        "event_ids": [
+          "EV-8a71cd4f6e7cafd2"
+        ],
+        "company_entity_id": "EN-7c6eefba80293ea4",
+        "company_canonical_entity_id": "",
+        "company_name": "Pigment",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$250 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6737e55341eb5266",
+            "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+            "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+            "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+            "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+            "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2f43f8d27963fae9",
         "funding_insight_id": "FI-d61afc2c6c00363a",
@@ -251,6 +297,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-6737e55341eb5266",
+        "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+        "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+        "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+        "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+        "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+      },
+      {
         "source_id": "FISRC-3bc5a4e973b035eb",
         "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
         "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
@@ -320,16 +374,16 @@
           "source_id": "ivp_portfolio"
         },
         {
+          "description": "融资来源记录：Pigment · E轮 · 2026-10-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6737e55341eb5266"
+        },
+        {
           "description": "融资来源记录：Wonderful · C轮 · 2026-09-02 · 本轮参投 · $550 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3bc5a4e973b035eb"
         },
         {
           "description": "融资来源记录：Suno · D轮 · 2026-06-03 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8a34984c8e02defc"
-        },
-        {
-          "description": "融资来源记录：Wonderful · B轮 · 2026-03-12 · 本轮参投 · 1.5亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c29f00f067579660"
         }
       ],
       "contacts": [
@@ -403,6 +457,14 @@
           "quote_hash": "45c6d385cafc2c7c1cd89245ec618c98351dfe56932b158584276b61a1209828"
         },
         {
+          "source_id": "FISRC-6737e55341eb5266",
+          "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+          "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+          "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+          "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+          "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+        },
+        {
           "source_id": "FISRC-3bc5a4e973b035eb",
           "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
           "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
@@ -417,14 +479,6 @@
           "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
           "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
           "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
-        },
-        {
-          "source_id": "FISRC-c29f00f067579660",
-          "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
-          "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
-          "source_content_hash": "67f409ee5b146b1d",
-          "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
-          "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
         }
       ],
       "identity_status": "verified",
@@ -434,7 +488,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[3].role": {
+        "activities[4].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

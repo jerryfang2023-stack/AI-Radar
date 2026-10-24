@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,9 +64,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 37,
+    "current_round_count": 38,
     "historical_or_ambiguous_count": 10,
-    "portfolio_company_count": 36,
+    "portfolio_company_count": 37,
     "market_regions": [
       "GLOBAL"
     ],
@@ -77,7 +77,7 @@
     "role_counts": {
       "historical_or_ambiguous": 10,
       "lead": 4,
-      "participant": 33
+      "participant": 34
     },
     "round_codes": [
       "multi_round",
@@ -106,6 +106,11 @@
         "entity_id": "EN-2f88f41306209dd7",
         "canonical_entity_id": "",
         "name": "Avoca AI"
+      },
+      {
+        "entity_id": "EN-8eae6c54657e94be",
+        "canonical_entity_id": "",
+        "name": "Blacksmith"
       },
       {
         "entity_id": "EN-fa64e74622d0a95a",
@@ -274,6 +279,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-90351b8e582b0455",
+        "funding_insight_id": "FI-2aa299d42ca42b11",
+        "event_ids": [
+          "EV-5aa0077bd10ce3dc"
+        ],
+        "company_entity_id": "EN-8eae6c54657e94be",
+        "company_canonical_entity_id": "",
+        "company_name": "Blacksmith",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$66M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 66000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6600 万美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+            "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+            "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6d8bb13186bffe88",
         "funding_insight_id": "FI-29972434b39dd262",
@@ -2101,6 +2146,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-49f5b4d8c68adbdc",
+        "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+        "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+        "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+        "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+        "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+      },
+      {
         "source_id": "FISRC-0b9a2de412bfecea",
         "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
         "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
@@ -2538,16 +2591,16 @@
           "source_id": "yc_press"
         },
         {
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-49f5b4d8c68adbdc"
+        },
+        {
           "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0b9a2de412bfecea"
         },
         {
           "description": "融资来源记录：Clueso · A轮 · 2026-10-13 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4ee9923e67c28685"
-        },
-        {
-          "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮参投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-718f95dbe2208337"
         }
       ],
       "contacts": [
@@ -2591,6 +2644,14 @@
           "quote_hash": "4ed4875e0047c94acb0efae75ec6e5f47b2b446f507a0d444211c08edd926a82"
         },
         {
+          "source_id": "FISRC-49f5b4d8c68adbdc",
+          "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+          "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+          "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+          "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+          "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+        },
+        {
           "source_id": "FISRC-0b9a2de412bfecea",
           "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
           "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
@@ -2605,14 +2666,6 @@
           "source_content_hash": "5da6e8dca2222da443f043940ec3373b0413761024bcfa093b36467089a15e81",
           "quote": "The round also saw participation from Y Combinator and f7 Ventures.",
           "quote_hash": "ae937fdd3a8dfaff2f3d21367e56afe08ffa186584ff658f9f0e729b0b907c14"
-        },
-        {
-          "source_id": "FISRC-718f95dbe2208337",
-          "source_url": "https://nousresearch.com/a-note-on-our-fundraise",
-          "source_title": "A Note on Our Fundraise",
-          "source_content_hash": "9a7816e0d0a7df40",
-          "quote": "We brought together some of the strongest investors in technology – NVIDIA, Microsoft’s M12, Samsung, Robot Ventures, Union Square Ventures, Y Combinator, and Menlo Ventures among others",
-          "quote_hash": "e598666c713d3dbb3685a0b385b18b9a615d68374c9fe49844f9873a5b814571"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2623,7 +2676,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[40].role": {
+        "activities[41].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-24",
+  "stage": "facts",
+  "command": "assert-data-center-model-assist.mjs",
+  "exit_status": 1,
+  "error_code": null,
+  "failure_kind": "quality_gate",
+  "problems": [
+    "2026-10-24.json:schema:data/candidates/71/review must NOT have additional properties, data/candidates/100/provider must be equal to one of the allowed values, data/candidates/100/review must NOT have additional properties"
+  ],
+  "model": {
+    "selected_jobs": 24,
+    "completed": 24,
+    "failures": []
+  },
+  "translation": null
+}

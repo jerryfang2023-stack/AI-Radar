@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 23,
+    "current_round_count": 24,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 20,
+    "portfolio_company_count": 21,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2025-03-03",
     "latest_disclosed_at": "2026-10-21",
     "role_counts": {
-      "co_lead": 4,
+      "co_lead": 5,
       "historical_or_ambiguous": 3,
       "lead": 6,
       "participant": 13
@@ -135,6 +135,11 @@
         "entity_id": "EN-22dc02488a037639",
         "canonical_entity_id": "",
         "name": "Legora"
+      },
+      {
+        "entity_id": "EN-a2b8357fddf7aa7d",
+        "canonical_entity_id": "",
+        "name": "Mach9"
       },
       {
         "entity_id": "EN-13a7f8fe8140462d",
@@ -230,6 +235,46 @@
             "source_content_hash": "f3c7efce8da1beb6",
             "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
             "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ef38de38be187cc8",
+        "funding_insight_id": "FI-a200d5b1af02ddc5",
+        "event_ids": [
+          "EV-48cbd6592d009234"
+        ],
+        "company_entity_id": "EN-a2b8357fddf7aa7d",
+        "company_canonical_entity_id": "",
+        "company_name": "Mach9",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$34 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 34000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3400 万美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-2115ba1066fba41f",
+            "source_url": "https://www.prnewswire.com/news-releases/mach9-raises-34m-series-a-to-bring-civil-engineering-into-the-ai-era-302915153.html",
+            "source_title": "Mach9 完成 3400 万美元 A 轮融资，将土木工程带入 AI 时代",
+            "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+            "quote": "a $34 million Series A co-led by First Round Capital and Bessemer Venture Partners",
+            "quote_hash": "981eb537c1209c249d3ea00482dce68d2e5a3035546bf321a44970b75acebf3a"
           }
         ]
       },
@@ -1230,6 +1275,14 @@
         "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
       },
       {
+        "source_id": "FISRC-2115ba1066fba41f",
+        "source_url": "https://www.prnewswire.com/news-releases/mach9-raises-34m-series-a-to-bring-civil-engineering-into-the-ai-era-302915153.html",
+        "source_title": "Mach9 完成 3400 万美元 A 轮融资，将土木工程带入 AI 时代",
+        "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+        "quote": "a $34 million Series A co-led by First Round Capital and Bessemer Venture Partners",
+        "quote_hash": "981eb537c1209c249d3ea00482dce68d2e5a3035546bf321a44970b75acebf3a"
+      },
+      {
         "source_id": "FISRC-bb48149fa1b574d3",
         "source_url": "https://www.calcalistech.com/ctechnews/article/b1zgob6jfe",
         "source_title": "Zenzap raises $33 million Series A to bring AI agents into everyday workplace chats",
@@ -1485,12 +1538,12 @@
           "source_id": "FISRC-c4c53e6f607010be"
         },
         {
-          "description": "融资来源记录：Zenzap · 多轮融资 · 2026-10-14 · 本轮联合领投 · $44 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bb48149fa1b574d3"
+          "description": "融资来源记录：Mach9 · A轮 · 2026-10-21 · 本轮联合领投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2115ba1066fba41f"
         },
         {
-          "description": "融资来源记录：Ampersand · A轮 · 2026-10-06 · 本轮领投 · $15M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fe2eb23658e8b6c7"
+          "description": "融资来源记录：Zenzap · 多轮融资 · 2026-10-14 · 本轮联合领投 · $44 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bb48149fa1b574d3"
         }
       ],
       "contacts": [
@@ -1633,20 +1686,20 @@
           "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
         },
         {
+          "source_id": "FISRC-2115ba1066fba41f",
+          "source_url": "https://www.prnewswire.com/news-releases/mach9-raises-34m-series-a-to-bring-civil-engineering-into-the-ai-era-302915153.html",
+          "source_title": "Mach9 完成 3400 万美元 A 轮融资，将土木工程带入 AI 时代",
+          "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+          "quote": "a $34 million Series A co-led by First Round Capital and Bessemer Venture Partners",
+          "quote_hash": "981eb537c1209c249d3ea00482dce68d2e5a3035546bf321a44970b75acebf3a"
+        },
+        {
           "source_id": "FISRC-bb48149fa1b574d3",
           "source_url": "https://www.calcalistech.com/ctechnews/article/b1zgob6jfe",
           "source_title": "Zenzap raises $33 million Series A to bring AI agents into everyday workplace chats",
           "source_content_hash": "4cfe12ba60131ea9",
           "quote": "has raised $33 million in a Series A funding round co-led by Bessemer Venture Partners and Lightspeed Venture Partners, with additional investment from The Garage.",
           "quote_hash": "8d7648ad5a62c1ad0005ff8d3f38e905cb3818cdc6f18a0ced6816381566c39c"
-        },
-        {
-          "source_id": "FISRC-fe2eb23658e8b6c7",
-          "source_url": "https://www.bvp.com/news/meet-the-founders-of-ampersand-ayan-barua-and-lauren-long",
-          "source_title": "认识 Ampersand 的创始人：Ayan Barua 和 Lauren Long",
-          "source_content_hash": "437c4a6c3b41954d6792d762eb40771a2d69153f2d556d463539a98d45df3185",
-          "quote": "Bessemer Venture Partners leads Ampersand’s $15M Series A to make every enterprise system legible to agents.",
-          "quote_hash": "22c40157f57b82b92d286742182cdd80c002d5a265b7d745a3a88095cf32d567"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1657,7 +1710,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[25].role": {
+        "activities[26].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",

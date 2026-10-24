@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-09-28",
     "latest_disclosed_at": "2026-09-28",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "lead": 1
     },
     "round_codes": [
@@ -157,6 +157,38 @@
             "quote_hash": "66468abb2cb6474446cda92500252a5959692e8108279cd231c03eb848adf144"
           }
         ]
+      },
+      {
+        "activity_id": "IA-2843a1368b8d4c36",
+        "funding_insight_id": "FI-25d65282cadc2f61",
+        "event_ids": [
+          "EV-8a71cd4f6e7cafd2"
+        ],
+        "company_entity_id": "EN-7c6eefba80293ea4",
+        "company_canonical_entity_id": "",
+        "company_name": "Pigment",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series D 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ebb917baca53eaa8",
+            "source_url": "https://www.pigment.com/blog/series-d-announcement",
+            "source_title": "Pigment announces $145 million Series D funding round",
+            "source_content_hash": "655339259c9b7c8e",
+            "quote": "Pigment raises $145 million in a Series D round led by ICONIQ Growth, with participation from Sandberg Bernthal Venture Partners, IVP, Meritech, Greenoaks, and Felix Capital.",
+            "quote_hash": "4394f8e8e198f35e2d20e0a65491f2a6ed9fecabafecf67800aeda597c32ce07"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -175,6 +207,14 @@
         "source_content_hash": "b251ce98730eb4b50b29b3b86eaacfd259e978dd38cde546790ae6a814a232f8",
         "quote": "Atomic is backed by DVx Ventures, Klass Capital, Madrona, Alumni Ventures, and Sandberg Bernthal Venture Partners.",
         "quote_hash": "66468abb2cb6474446cda92500252a5959692e8108279cd231c03eb848adf144"
+      },
+      {
+        "source_id": "FISRC-ebb917baca53eaa8",
+        "source_url": "https://www.pigment.com/blog/series-d-announcement",
+        "source_title": "Pigment announces $145 million Series D funding round",
+        "source_content_hash": "655339259c9b7c8e",
+        "quote": "Pigment raises $145 million in a Series D round led by ICONIQ Growth, with participation from Sandberg Bernthal Venture Partners, IVP, Meritech, Greenoaks, and Felix Capital.",
+        "quote_hash": "4394f8e8e198f35e2d20e0a65491f2a6ed9fecabafecf67800aeda597c32ce07"
       }
     ],
     "public_profile": {
@@ -209,6 +249,10 @@
         {
           "description": "融资来源记录：Atomic · 历史轮次未披露 · 既有投资方，本轮未明确披露继续参与。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d4e6ae2384112548"
+        },
+        {
+          "description": "融资来源记录：Pigment · 历史轮次未披露 · Series D 参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ebb917baca53eaa8"
         }
       ],
       "contacts": [],
@@ -248,11 +292,27 @@
           "source_content_hash": "b251ce98730eb4b50b29b3b86eaacfd259e978dd38cde546790ae6a814a232f8",
           "quote": "Atomic is backed by DVx Ventures, Klass Capital, Madrona, Alumni Ventures, and Sandberg Bernthal Venture Partners.",
           "quote_hash": "66468abb2cb6474446cda92500252a5959692e8108279cd231c03eb848adf144"
+        },
+        {
+          "source_id": "FISRC-ebb917baca53eaa8",
+          "source_url": "https://www.pigment.com/blog/series-d-announcement",
+          "source_title": "Pigment announces $145 million Series D funding round",
+          "source_content_hash": "655339259c9b7c8e",
+          "quote": "Pigment raises $145 million in a Series D round led by ICONIQ Growth, with participation from Sandberg Bernthal Venture Partners, IVP, Meritech, Greenoaks, and Felix Capital.",
+          "quote_hash": "4394f8e8e198f35e2d20e0a65491f2a6ed9fecabafecf67800aeda597c32ce07"
         }
       ]
     },
     "translations": {
       "zh-CN": {
+        "activities[2].role": {
+          "text": "Series D 参投",
+          "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-02T06:25:20.177Z",
+          "status": "translated"
+        },
         "public_profile.track_record[0].description": {
           "text": "Mona 公告称其融资由 Sandberg Bernthal Venture Partners 领投；未披露该机构的单独出资额。",
           "source_hash": "69548741e17de3f02cb8f1a3db21a79191cbc0814b5086e2ec02e51035c27b84",

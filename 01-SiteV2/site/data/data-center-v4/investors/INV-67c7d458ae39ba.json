@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,9 +63,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 10,
+    "current_round_count": 11,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 7,
+    "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
     ],
@@ -77,7 +77,7 @@
       "co_lead": 3,
       "historical_or_ambiguous": 2,
       "lead": 2,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "series_a",
@@ -113,6 +113,11 @@
         "entity_id": "EN-382635c9325bf327",
         "canonical_entity_id": "",
         "name": "Paper"
+      },
+      {
+        "entity_id": "EN-7c6eefba80293ea4",
+        "canonical_entity_id": "",
+        "name": "Pigment"
       },
       {
         "entity_id": "EN-fa373257792c6b9b",
@@ -163,6 +168,46 @@
             "source_content_hash": "f3c7efce8da1beb6",
             "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
             "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0165d766922ee87b",
+        "funding_insight_id": "FI-25d65282cadc2f61",
+        "event_ids": [
+          "EV-8a71cd4f6e7cafd2"
+        ],
+        "company_entity_id": "EN-7c6eefba80293ea4",
+        "company_canonical_entity_id": "",
+        "company_name": "Pigment",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$250 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6737e55341eb5266",
+            "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+            "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+            "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+            "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+            "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
           }
         ]
       },
@@ -610,6 +655,14 @@
         "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
       },
       {
+        "source_id": "FISRC-6737e55341eb5266",
+        "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+        "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+        "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+        "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+        "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+      },
+      {
         "source_id": "FISRC-f581afce52cf5bef",
         "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
         "source_title": "Ramp估值达600亿美元，深入布局AI",
@@ -733,12 +786,12 @@
           "source_id": "FISRC-c4c53e6f607010be"
         },
         {
-          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f581afce52cf5bef"
+          "description": "融资来源记录：Pigment · E轮 · 2026-10-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6737e55341eb5266"
         },
         {
-          "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b2cab94e5375e0ba"
+          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f581afce52cf5bef"
         }
       ],
       "contacts": [
@@ -798,20 +851,20 @@
           "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
         },
         {
+          "source_id": "FISRC-6737e55341eb5266",
+          "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+          "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+          "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+          "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+          "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+        },
+        {
           "source_id": "FISRC-f581afce52cf5bef",
           "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
           "source_title": "Ramp估值达600亿美元，深入布局AI",
           "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
           "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
           "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
-        },
-        {
-          "source_id": "FISRC-b2cab94e5375e0ba",
-          "source_url": "https://techcrunch.com/2026/09/23/enveda-secures-311m-to-bring-more-nature-derived-ai-drugs-into-clinical-trials",
-          "source_title": "Enveda 获 3.11 亿美元 E 轮融资，推进天然来源 AI 药物进入临床试验",
-          "source_content_hash": "79b5761869f8dba5",
-          "quote": "The fresh funding, which was led by Catalio Capital Management, with participation from Iconiq and others",
-          "quote_hash": "4de0100c58ebb8c5bc3ca996fe00a665d79ecafef938ab278948ad6a72c3a4d4"
         }
       ],
       "coverage_status": "researched",
@@ -822,7 +875,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[10].role": {
+        "activities[11].role": {
           "text": "Series D 参投",
           "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
           "provider": "deepseek",

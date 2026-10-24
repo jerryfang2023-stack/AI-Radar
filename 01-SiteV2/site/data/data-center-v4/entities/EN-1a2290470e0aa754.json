@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,8 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-48cbd6592d009234",
+      "EV-5aa0077bd10ce3dc",
       "EV-a68bb74a987a8df4",
       "EV-66193b4f82571d48",
       "EV-858cec7fa8f4c87b",
@@ -83,10 +85,12 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-01-14",
-    "lastSeen": "2026-10-22",
+    "lastSeen": "2026-10-24",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-48cbd6592d009234",
+        "EV-5aa0077bd10ce3dc",
         "EV-a68bb74a987a8df4",
         "EV-66193b4f82571d48",
         "EV-858cec7fa8f4c87b",
@@ -112,8 +116,40 @@
     },
     "timeline": [
       {
+        "id": "EV-48cbd6592d009234",
+        "dataDate": "2026-10-24",
+        "date": "2026-10-21",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Mach9 完成 3400 万美元 A 轮融资，将土木工程带入 AI 时代",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1a2290470e0aa754",
+          "EN-a2b8357fddf7aa7d"
+        ]
+      },
+      {
+        "id": "EV-5aa0077bd10ce3dc",
+        "dataDate": "2026-10-24",
+        "date": "2026-10-21",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1a2290470e0aa754",
+          "EN-8eae6c54657e94be"
+        ]
+      },
+      {
         "id": "EV-a68bb74a987a8df4",
-        "dataDate": "2026-10-22",
+        "dataDate": "2026-10-24",
         "date": "2026-10-20",
         "eventType": "funding",
         "eventTypeLabel": "融资",

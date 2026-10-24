@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-10-09",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "series_c",
@@ -95,9 +95,54 @@
         "entity_id": "EN-636396f02b6571e4",
         "canonical_entity_id": "",
         "name": "n8n GmbH"
+      },
+      {
+        "entity_id": "EN-7c6eefba80293ea4",
+        "canonical_entity_id": "",
+        "name": "Pigment"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-cfd4bd635f2127e9",
+        "funding_insight_id": "FI-25d65282cadc2f61",
+        "event_ids": [
+          "EV-8a71cd4f6e7cafd2"
+        ],
+        "company_entity_id": "EN-7c6eefba80293ea4",
+        "company_canonical_entity_id": "",
+        "company_name": "Pigment",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$250 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6737e55341eb5266",
+            "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+            "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+            "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+            "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+            "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+          }
+        ]
+      },
       {
         "activity_id": "IA-fa4a24a33bbeb018",
         "funding_insight_id": "FI-d9fc0a409d33d577",
@@ -253,6 +298,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-6737e55341eb5266",
+        "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+        "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+        "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+        "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+        "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+      },
+      {
         "source_id": "FISRC-61aa8db010b34dfa",
         "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
         "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
@@ -313,16 +366,16 @@
       "experience_summary": "",
       "track_record": [
         {
+          "description": "融资来源记录：Pigment · E轮 · 2026-10-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6737e55341eb5266"
+        },
+        {
           "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-61aa8db010b34dfa"
         },
         {
           "description": "融资来源记录：Lumilens Inc. · C轮 · 2026-08-06 · 本轮联合领投 · $900M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a967da2448674734"
-        },
-        {
-          "description": "融资来源记录：n8n GmbH · C轮 · 2025-10-09 · 本轮参投 · $180M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d9093a8f62959034"
         }
       ],
       "sources": [
@@ -343,6 +396,14 @@
           "quote_hash": "ea97b08624ba3b831da5594c6ebb41caff5471275741033501a23e13c978fb2c"
         },
         {
+          "source_id": "FISRC-6737e55341eb5266",
+          "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+          "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+          "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+          "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+          "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+        },
+        {
           "source_id": "FISRC-61aa8db010b34dfa",
           "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
           "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
@@ -357,14 +418,6 @@
           "source_content_hash": "f3b1d21bc0dc0006",
           "quote": "Atreides Management, Bain Capital Ventures, Meritech, Seligman Ventures and Spark Capital jointly led the investment.",
           "quote_hash": "94812b7738edf261aeeb91479d522c33f2085d3a81ac0ce4f52f97200d1b0642"
-        },
-        {
-          "source_id": "FISRC-d9093a8f62959034",
-          "source_url": "https://startuprise.co.uk/ai-workflow-automation-startup-n8n-raises-180m-valued-at-2-5b",
-          "source_title": "AI 工作流自动化初创公司 n8n 获 1.8 亿美元融资，估值达 25 亿美元",
-          "source_content_hash": "5fc63df17f42d743",
-          "quote": "with participation from Meritech",
-          "quote_hash": "c4c80aaf5e49915a76a63a6afa36b899815c3afc0fcce6d5de5828df76cc78ed"
         }
       ],
       "last_verified_at": "2026-10-04"

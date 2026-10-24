@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 7,
+    "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
     ],
@@ -74,7 +74,7 @@
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 3,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "multi_round",
@@ -83,6 +83,11 @@
       "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-8eae6c54657e94be",
+        "canonical_entity_id": "",
+        "name": "Blacksmith"
+      },
       {
         "entity_id": "EN-fa64e74622d0a95a",
         "canonical_entity_id": "",
@@ -120,6 +125,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-89e2b60d95f4e594",
+        "funding_insight_id": "FI-2aa299d42ca42b11",
+        "event_ids": [
+          "EV-5aa0077bd10ce3dc"
+        ],
+        "company_entity_id": "EN-8eae6c54657e94be",
+        "company_canonical_entity_id": "",
+        "company_name": "Blacksmith",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$66M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 66000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6600 万美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+            "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+            "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+          }
+        ]
+      },
       {
         "activity_id": "IA-608ed14d9960791a",
         "funding_insight_id": "FI-29972434b39dd262",
@@ -451,6 +496,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-49f5b4d8c68adbdc",
+        "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+        "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+        "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+        "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+        "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+      },
+      {
         "source_id": "FISRC-0b9a2de412bfecea",
         "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
         "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
@@ -594,16 +647,16 @@
           "source_id": "peakxv_about"
         },
         {
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-49f5b4d8c68adbdc"
+        },
+        {
           "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0b9a2de412bfecea"
         },
         {
           "description": "融资来源记录：Ringg · A轮 · 2026-08-25 · 本轮领投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-355d8aee33bd32ed"
-        },
-        {
-          "description": "融资来源记录：Discovered Materials · 种子轮 · 2026-08-10 · 本轮参投 · $9 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c3267e56ad969be2"
         }
       ],
       "contacts": [
@@ -662,6 +715,14 @@
           "quote_hash": "67ccb303d7dacfc126f57f753798fc0534b52fe714db092b70ea868ceb16e9f8"
         },
         {
+          "source_id": "FISRC-49f5b4d8c68adbdc",
+          "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+          "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+          "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+          "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+          "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+        },
+        {
           "source_id": "FISRC-0b9a2de412bfecea",
           "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
           "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
@@ -676,14 +737,6 @@
           "source_content_hash": "bd8d4c58629e67c5",
           "quote": "The company said today it has landed $10 million from Peak XV Partners as an extension of its Series A.",
           "quote_hash": "43ec6c02307a64e405126560d1fe2248eb9c318b190867c2afbfbd3ede7e60bb"
-        },
-        {
-          "source_id": "FISRC-c3267e56ad969be2",
-          "source_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
-          "source_title": "Discovered Materials 正玩 AI 打地鼠游戏，寻找更凉爽的芯片",
-          "source_content_hash": "c3f8c7225d49e92f",
-          "quote": "with investment from Peak XV Partners",
-          "quote_hash": "86555f8c52b345c108899bf4aee7acef5d74cf1473e4ca456d934e5410c68b4b"
         }
       ],
       "coverage_status": "researched",

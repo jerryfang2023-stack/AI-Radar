@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-17",
-    "latest_disclosed_at": "2026-08-26",
+    "latest_disclosed_at": "2026-10-20",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "series_a",
       "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-e6a1f05cbb826b2c",
+        "canonical_entity_id": "",
+        "name": "Hunar.AI"
+      },
       {
         "entity_id": "EN-27d914a99e32f0f2",
         "canonical_entity_id": "",
@@ -91,6 +96,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-faef56912761034f",
+        "funding_insight_id": "FI-d337c9f930edf4af",
+        "event_ids": [
+          "EV-6e22785050fb82ff"
+        ],
+        "company_entity_id": "EN-e6a1f05cbb826b2c",
+        "company_canonical_entity_id": "",
+        "company_name": "Hunar.AI",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "Rs 40 crore",
+        "amount_normalized": {
+          "currency": "INR",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿印度卢比"
+        },
+        "announced_at": "2026-10-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-21f1e0578f986661",
+            "source_url": "https://yourstory.com/2026/10/hunarai-raises-rs-40-crore-in-series-a-led-by-blume-ventures",
+            "source_title": "Hunar.AI 在由 Blume Ventures 领投的 A 轮融资中筹集了 40 Cr 卢比",
+            "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+            "quote": "The round also saw participation from Hyderabad Angels Fund, Together Fund, Seedstars, AVNM Ventures, PhysicsWallah co-founders Prateek Maheshwari and Alakh Pandey, and MediaMint co-founder Aditya Vuchi.",
+            "quote_hash": "563fa3eb6eb50f4a96b3b267eeb9e20fdbc29246a2471da23b2815c8638affc1"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a7233190b21f1e80",
         "funding_insight_id": "FI-ce571cd60ef1b102",
@@ -173,6 +218,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-21f1e0578f986661",
+        "source_url": "https://yourstory.com/2026/10/hunarai-raises-rs-40-crore-in-series-a-led-by-blume-ventures",
+        "source_title": "Hunar.AI 在由 Blume Ventures 领投的 A 轮融资中筹集了 40 Cr 卢比",
+        "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+        "quote": "The round also saw participation from Hyderabad Angels Fund, Together Fund, Seedstars, AVNM Ventures, PhysicsWallah co-founders Prateek Maheshwari and Alakh Pandey, and MediaMint co-founder Aditya Vuchi.",
+        "quote_hash": "563fa3eb6eb50f4a96b3b267eeb9e20fdbc29246a2471da23b2815c8638affc1"
+      },
       {
         "source_id": "FISRC-2d6054cc51934d57",
         "source_url": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them",
@@ -261,6 +314,10 @@
         {
           "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2e7a3713da8f3e54"
+        },
+        {
+          "description": "融资来源记录：Hunar.AI · A轮 · 2026-10-20 · 本轮参投 · Rs 40 crore。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-21f1e0578f986661"
         }
       ],
       "contacts": [
@@ -335,6 +392,14 @@
           "source_content_hash": "0e886018284869b47fb4c39b39962118ee8afbecdf7b3d64149c95632696a073",
           "quote": "Girish Mathrubootham — Co-founder & Managing Partner; Manav Garg — Co-founder & Managing Partner.",
           "quote_hash": "01b71c40141b333fd274530f8608cde411f6386d8637f29f10292e74f2824600"
+        },
+        {
+          "source_id": "FISRC-21f1e0578f986661",
+          "source_url": "https://yourstory.com/2026/10/hunarai-raises-rs-40-crore-in-series-a-led-by-blume-ventures",
+          "source_title": "Hunar.AI 在由 Blume Ventures 领投的 A 轮融资中筹集了 40 Cr 卢比",
+          "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+          "quote": "The round also saw participation from Hyderabad Angels Fund, Together Fund, Seedstars, AVNM Ventures, PhysicsWallah co-founders Prateek Maheshwari and Alakh Pandey, and MediaMint co-founder Aditya Vuchi.",
+          "quote_hash": "563fa3eb6eb50f4a96b3b267eeb9e20fdbc29246a2471da23b2815c8638affc1"
         }
       ],
       "last_verified_at": "2026-09-26"
