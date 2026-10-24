@@ -1,0 +1,820 @@
+{
+  "event_id": "EV-5aa0077bd10ce3dc",
+  "company_name": "Blacksmith",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-01b6d0f27d2b83fd",
+    "triggered_by_event_id": "EV-5aa0077bd10ce3dc",
+    "as_of_date": "2026-10-24",
+    "company": {
+      "entity_id": "EN-8eae6c54657e94be",
+      "name": "Blacksmith",
+      "full_name": "Blacksmith",
+      "website": "blacksmith.sh",
+      "summary": "Blacksmith 是面向代码构建与测试的基础设施平台，专注持续集成（CI）工作负载，帮助团队更快、更低成本地验证代码。",
+      "headquarters": "旧金山",
+      "founders": [
+        {
+          "name": "Aditya Jayaprakash",
+          "role": "联合创始人兼 CEO",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "said Aditya \"JP\" Jayaprakash, co-founder and CEO of Blacksmith",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "aac824c5a71cd1a9ea91ebf568203c743c6e0e2c10089136cde6ebc8c6c2867d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Aayush Shah",
+          "role": "联合创始人",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "Blacksmith was founded in 2024 by Jayaprakash, Aayush Shah and Aditya Maru",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "938e5a8a8fb937bc58303d49dba20308cd2a5a2916fb8d71412dba773626b0ad"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Aditya Maru",
+          "role": "联合创始人",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "Blacksmith was founded in 2024 by Jayaprakash, Aayush Shah and Aditya Maru",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "938e5a8a8fb937bc58303d49dba20308cd2a5a2916fb8d71412dba773626b0ad"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "team_size": {
+        "value": "30",
+        "observed_at": "2026-10-21",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7a9d94b4e9850530",
+            "quote": "what a data center outage taught a 30-person team",
+            "source_content_hash": "d20f719223715278",
+            "quote_hash": "6f6b91c31ae07717605ccc1da239648f91a287e200ac548773450156aff7ac19"
+          }
+        ]
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-49f5b4d8c68adbdc",
+          "quote": "Blacksmith, the infrastructure platform for building and testing code",
+          "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+          "quote_hash": "e99ac96e3f8f0d0e2783cdb1965218747f8dada7a7cb8f940eed6f8411ba65dc"
+        },
+        {
+          "source_id": "FISRC-49f5b4d8c68adbdc",
+          "quote": "SAN FRANCISCO, Oct. 21, 2026",
+          "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+          "quote_hash": "a637660d6ddd12eda9a57c1090c4a3e1cef9e1a2a3b252babd04578ed931566f"
+        }
+      ],
+      "application_entity_id": "EN-8eae6c54657e94be",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "C轮",
+      "amount": "$66M",
+      "total_raised": "$125 million",
+      "announced_at": "2026-10-21",
+      "investor_disclosure_status": "disclosed",
+      "investors": [
+        {
+          "name": "Sequoia Capital",
+          "role": "本轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "a $66M Series C led by Sequoia Capital at a $1 billion valuation",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "33a85f0b4446289963f51e84b69bf35a336bc02d5e28e1c6dd0ce378b7b664c0"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Premji Invest",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Peak XV Partners",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "GV",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Y Combinator",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+            }
+          ],
+          "entity_id": "EN-275b0f4a4023d91c"
+        }
+      ],
+      "other_round_investors": [],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-49f5b4d8c68adbdc",
+          "quote": "SAN FRANCISCO, Oct. 21, 2026 /PRNewswire/ -- Blacksmith, the infrastructure platform for building and testing code, today announced a $66M Series C led by Sequoia Capital at a $1 billion valuation, with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator.",
+          "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+          "quote_hash": "9feb8d327a6eec45cdfcebafa1f20433c921d55e6e47e2d0edeb3b9d18ec443b"
+        },
+        {
+          "source_id": "FISRC-49f5b4d8c68adbdc",
+          "quote": "today announced a $66M Series C led by Sequoia Capital at a $1 billion valuation",
+          "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+          "quote_hash": "513d34cdedbed945e82fd1055a07e5e1d3c141c2f432857efde466caf534fdd4"
+        },
+        {
+          "source_id": "FISRC-49f5b4d8c68adbdc",
+          "quote": "The round brings Blacksmith's total funding to $125 million",
+          "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+          "quote_hash": "f4e6a1a59628ba24dd10b73b51d54106a43b2d6445bacf4af31d8b5d84661703"
+        }
+      ],
+      "round_code": "series_c",
+      "round_original": "C轮",
+      "amount_original": "$66M",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 66000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "6600 万美元"
+      },
+      "total_raised_original": "$125 million",
+      "total_raised_normalized": {
+        "currency": "USD",
+        "value": 125000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "1.25 亿美元"
+      },
+      "risk_markers": [],
+      "disclosures": [
+        {
+          "event_id": "EV-5aa0077bd10ce3dc",
+          "round_original": "C轮",
+          "amount": "$66M",
+          "announced_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "SAN FRANCISCO, Oct. 21, 2026 /PRNewswire/ -- Blacksmith, the infrastructure platform for building and testing code, today announced a $66M Series C led by Sequoia Capital at a $1 billion valuation, with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator.",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "9feb8d327a6eec45cdfcebafa1f20433c921d55e6e47e2d0edeb3b9d18ec443b"
+            },
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "today announced a $66M Series C led by Sequoia Capital at a $1 billion valuation",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "513d34cdedbed945e82fd1055a07e5e1d3c141c2f432857efde466caf534fdd4"
+            },
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "The round brings Blacksmith's total funding to $125 million",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "f4e6a1a59628ba24dd10b73b51d54106a43b2d6445bacf4af31d8b5d84661703"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "disclosed"
+    },
+    "products": [
+      {
+        "name": "Blacksmith CI 云平台",
+        "description": "专为持续集成（CI）工作负载设计的基础设施平台，客户将构建和测试任务交给 Blacksmith 运行，无需自行配置、扩展或维护 CI 基础设施。",
+        "target_customers": "初创公司和大型企业工程团队",
+        "features": [
+          "一行 workflow 文件改动即可迁移",
+          "CI 任务平均完成速度提升至两倍",
+          "平均成本降低 60%",
+          "零运维开销"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "Customers switch with a one-line change to their workflow file and never provision, scale or maintain their CI infrastructure again.",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "9268790a3da031f6307da2bc2dcf3c2e20a484cc00175bc3db93faf773217b16"
+          },
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "Developers using Blacksmith see their CI jobs complete twice as fast and at 60% lower cost on average, with zero operational overhead.",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "3793ad7ce3e75c4ddde1c5a1a7899792fb702e4f37d01f576dd867fa99ebba5c"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [
+      {
+        "name": "LangChain",
+        "industry": "AI 开发者工具",
+        "use_case": "运行 CI 工作负载，降低 runner 成本并减少工程时间",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "Blacksmith has significantly reduced the burden of managing our CI runners while cutting our runner costs by roughly 40%",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "bc8e6c51f3f756120ad030ad95a0bb1c8fc1364403b04d341fa21eedcf9ab18c"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Ashby",
+        "industry": "招聘软件",
+        "use_case": "在 Blacksmith 上运行 CI",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "More than 10,000 companies, including Ashby, Granola, Handshake and LangChain, now run their CI on Blacksmith.",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "e54f408a8c345b97e146237c64379ce2d60788e665319c136144b614de57ae44"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Granola",
+        "industry": "AI 笔记应用",
+        "use_case": "在 Blacksmith 上运行 CI",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "More than 10,000 companies, including Ashby, Granola, Handshake and LangChain, now run their CI on Blacksmith.",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "e54f408a8c345b97e146237c64379ce2d60788e665319c136144b614de57ae44"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Handshake",
+        "industry": "招聘平台",
+        "use_case": "在 Blacksmith 上运行 CI",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "More than 10,000 companies, including Ashby, Granola, Handshake and LangChain, now run their CI on Blacksmith.",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "e54f408a8c345b97e146237c64379ce2d60788e665319c136144b614de57ae44"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Mercury",
+        "industry": "金融科技",
+        "use_case": "在 Blacksmith 上运行 CI",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-05951399e01ffdfd",
+            "quote": "Customers include fintech company Mercury and AI note-taking app Granola.",
+            "source_content_hash": "49c1b60b2ab6fb08",
+            "quote_hash": "f7e9b6d2b7d4b3615e1cbf0e88ecfe021ef4ea0b63612616eb8ad2d0c0f8f60a"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "comparisons": [],
+    "metrics": [
+      {
+        "label": "本轮融资金额",
+        "value": "$66M",
+        "observed_at": "2026-10-21",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "a $66M Series C led by Sequoia Capital",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "99eb391c29066d06a9c082bae1dae2d3a7f7d2d52258e8b41eb844be1fe19d98"
+          }
+        ]
+      },
+      {
+        "label": "本轮估值",
+        "value": "$1 billion",
+        "observed_at": "2026-10-21",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "at a $1 billion valuation",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "249123c1c008cd8726cb8b407a3c5066b62ea1cd45d31793e35a0d9d532a8bbd"
+          }
+        ]
+      },
+      {
+        "label": "累计融资额",
+        "value": "$125 million",
+        "observed_at": "2026-10-21",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "The round brings Blacksmith's total funding to $125 million",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "f4e6a1a59628ba24dd10b73b51d54106a43b2d6445bacf4af31d8b5d84661703"
+          }
+        ]
+      },
+      {
+        "label": "ARR 增长倍数（自 1 月以来）",
+        "value": "17x",
+        "observed_at": "2026-10-21",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "annual recurring revenue has grown 17x",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "a7f44a8f85778c424b0eb9871852731a0e85fc848b70ffcc80b649cb26b10f14"
+          }
+        ]
+      },
+      {
+        "label": "每周 CI 任务数",
+        "value": "超过 9000 万",
+        "observed_at": "2026-10-21",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "the number of CI jobs running on Blacksmith each week has grown from 5 million to more than 90 million",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "e7c1eb6e02534c96bf9607caa34410de6e460858a205cf351875540e77366dc4"
+          }
+        ]
+      },
+      {
+        "label": "客户数量",
+        "value": "超过 10,000 家",
+        "observed_at": "2026-10-21",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "More than 10,000 companies, including Ashby, Granola, Handshake and LangChain, now run their CI on Blacksmith.",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "e54f408a8c345b97e146237c64379ce2d60788e665319c136144b614de57ae44"
+          }
+        ]
+      },
+      {
+        "label": "管理算力规模",
+        "value": "接近 10 MW",
+        "observed_at": "2026-10-21",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "The company manages nearly 10 MW of compute across data centers in the United States and Europe",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "48fd423fea1addb5ac2dc7bc7b02b7ccc8e869e6bacc3ad2126f9763418dc005"
+          }
+        ]
+      },
+      {
+        "label": "CI 任务平均提速",
+        "value": "2 倍",
+        "observed_at": "2026-10-21",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "Developers using Blacksmith see their CI jobs complete twice as fast",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "76e53efeb1d12ac3726eb01a689e5d6e7b56ed93178a0d87ea9e8fd02cf57114"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Aditya Jayaprakash",
+        "quote": "Since Claude Code took off in March, almost every conversation we've had with a large engineering team has started the same way.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "Since Claude Code took off in March, almost every conversation we've had with a large engineering team has started the same way.",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "6b886d03180929232c3fb136f2ecb7dcc99318ab035673b3b23c702bb08a7e77"
+          }
+        ]
+      },
+      {
+        "speaker": "Isaiah Boone",
+        "quote": "JP and team understood early that as AI agents wrote more code, the infrastructure to build and test it would need to change",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "JP and team understood early that as AI agents wrote more code, the infrastructure to build and test it would need to change",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "13de9f7a1dda741f2c92da8801bf5edb23aba99274bdf32ce19ddc88ef016792"
+          }
+        ]
+      },
+      {
+        "speaker": "Joaquin Borggio",
+        "quote": "Blacksmith has significantly reduced the burden of managing our CI runners while cutting our runner costs by roughly 40%",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "Blacksmith has significantly reduced the burden of managing our CI runners while cutting our runner costs by roughly 40%",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "bc8e6c51f3f756120ad030ad95a0bb1c8fc1364403b04d341fa21eedcf9ab18c"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [
+        {
+          "institution": "Sequoia Capital",
+          "speaker": "Isaiah Boone",
+          "speaker_role": "Sequoia Capital 合伙人",
+          "rationale": "红杉认为，随着 AI 智能体编写更多代码，构建和测试代码的基础设施必须改变；Blacksmith 团队的系统专业能力和执行速度突出，产品帮助客户更快测试和交付软件。",
+          "quote": "JP and team understood early that as AI agents wrote more code, the infrastructure to build and test it would need to change",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "JP and team understood early that as AI agents wrote more code, the infrastructure to build and test it would need to change",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "13de9f7a1dda741f2c92da8801bf5edb23aba99274bdf32ce19ddc88ef016792"
+            }
+          ]
+        }
+      ],
+      "capital_judgment": "资本押注的核心变量是：AI 编码智能体大幅增加代码产出后，代码验证（CI）成为软件交付瓶颈，而通用云基础设施并非为 CI 的突发负载设计。Blacksmith 以专用 CI 云承接这一工作负载，已披露的验证信号包括 ARR 自 1 月以来增长 17 倍、每周 CI 任务从 500 万增至超过 9000 万、客户数超过 1 万家，以及本轮 6600 万美元 C 轮融资和 10 亿美元估值。证据边界在于：提速两倍、成本降低 60% 等效率数据来自公司及投资方公开陈述，并非独立测试结果；2027 年算力扩张五倍属于计划，尚未发生。",
+      "validated_signals": [
+        "ARR 自 2026 年 1 月以来增长 17 倍",
+        "每周 CI 任务数从 500 万增长到超过 9000 万",
+        "超过 10,000 家公司使用其平台",
+        "管理接近 10 MW 算力，分布在美国和欧洲数据中心",
+        "完成 6600 万美元 C 轮融资，估值 10 亿美元，累计融资 1.25 亿美元"
+      ],
+      "risks": [
+        "提速两倍、成本降低 60% 等效率数据来自公司及投资方公开陈述，尚待独立验证",
+        "2027 年算力扩张五倍属于计划，执行与电力供应存在不确定性",
+        "CI 工作负载高度波动，专用基础设施的规模经济与利用率仍需持续验证",
+        "客户集中度与大型客户年支出超 100 万美元的持续性未披露"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "ai_infrastructure_software",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "sector": "面向 AI 生成代码的持续集成与代码验证云基础设施",
+      "investment_thesis": {
+        "statement": "资本押注的核心变量是：AI 编码智能体大幅增加代码产出后，代码验证（CI）成为软件交付瓶颈，而通用云基础设施并非为 CI 的突发负载设计。Blacksmith 以专用 CI 云承接这一工作负载，已披露的验证信号包括 ARR 自 1 月以来增长 17 倍、每周 CI 任务从 500 万增至超过 9000 万、客户数超过 1 万家，以及本轮 6600 万美元 C 轮融资和 10 亿美元估值。证据边界在于：提速两倍、成本降低 60% 等效率数据来自公司及投资方公开陈述，并非独立测试结果；2027 年算力扩张五倍属于计划，尚未发生。",
+        "evidence_signals": [
+          "ARR 自 2026 年 1 月以来增长 17 倍",
+          "每周 CI 任务数从 500 万增长到超过 9000 万",
+          "超过 10,000 家公司使用其平台",
+          "管理接近 10 MW 算力，分布在美国和欧洲数据中心",
+          "完成 6600 万美元 C 轮融资，估值 10 亿美元，累计融资 1.25 亿美元"
+        ],
+        "risks": [
+          "提速两倍、成本降低 60% 等效率数据来自公司及投资方公开陈述，尚待独立验证",
+          "2027 年算力扩张五倍属于计划，执行与电力供应存在不确定性",
+          "CI 工作负载高度波动，专用基础设施的规模经济与利用率仍需持续验证",
+          "客户集中度与大型客户年支出超 100 万美元的持续性未披露"
+        ],
+        "institutional_rationale_status": "disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Blacksmith CI 云平台",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Aditya Jayaprakash",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Aayush Shah",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Aditya Maru",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Sequoia Capital",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Premji Invest",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Peak XV Partners",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "GV",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Y Combinator",
+        "canonical_entity_id": "EN-275b0f4a4023d91c",
+        "canonical_name": "Y Combinator"
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "LangChain",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Ashby",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Granola",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Handshake",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Mercury",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-5aa0077bd10ce3dc",
+        "date": "2026-10-21",
+        "title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+        "amount": "$66M",
+        "source_refs": [
+          "SA-5c3e1d1435c8b1cd"
+        ]
+      },
+      {
+        "event_id": "EV-cca4bd983a16b8d9",
+        "date": "2026-08-12",
+        "title": "AI 代码测试初创公司 Blacksmith 估值不到一年暴涨近 10 倍",
+        "amount": "$45 million",
+        "source_refs": [
+          "SA-94c0556212cc7f2d"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-49f5b4d8c68adbdc",
+        "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+        "title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+        "publisher": "www.prnewswire.com",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-10-24T00:20:10.198Z",
+        "content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+        "source_artifact_id": "SA-5c3e1d1435c8b1cd",
+        "raw_id": "RAW-8ceba42b400203f7"
+      },
+      {
+        "source_id": "FISRC-05951399e01ffdfd",
+        "source_url": "https://theaiinsider.tech/2026/10/23/blacksmith-reaches-1b-valuation-with-sequoia-led-series-c-as-ai-code-volumes-surge/",
+        "title": "Blacksmith Reaches $1B Valuation With Sequoia-Led Series C as AI Code Volumes Surge",
+        "publisher": "theaiinsider.tech",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-24T00:44:51.280Z",
+        "content_hash": "49c1b60b2ab6fb08",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-7a9d94b4e9850530",
+        "source_url": "https://www.premjiinvest.com/blog/ceo-series-blacksmith",
+        "title": "CEO Series | Blacksmith",
+        "publisher": "premjiinvest.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-24T00:45:03.824Z",
+        "content_hash": "d20f719223715278",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-10-24T00:45:17.717Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-10-24T00:45:17.717Z",
+    "customer_research": {
+      "status": "verified_customers_found",
+      "verified_customer_count": 5,
+      "searched_source_count": 3
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 1,
+        "unresolved_names": [
+          "Blacksmith CI 云平台"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 3,
+        "unresolved_names": [
+          "Aayush Shah",
+          "Aditya Jayaprakash",
+          "Aditya Maru"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-5aa0077bd10ce3dc"
+    ],
+    "aggregation": {
+      "key": "EN-8eae6c54657e94be|series_c",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"Blacksmith\" 2026 funding round investors",
+    "\"Blacksmith\" official product customers",
+    "\"Blacksmith\" \"why we invested\""
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Blacksmith\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://ai-techpark.com/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Blacksmith\" $66M funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Blacksmith\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://blacksmithint.com/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.facebook.com/groups/2182983632094467/posts/2446035345789293/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.trustpilot.com/review/www.blacksmith-store.com?page=3",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.youtube.com/watch?v=EIXmrRRM6D0",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Blacksmith\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"Blacksmith\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Blacksmith\" founders headquarters product",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    }
+  ]
+}

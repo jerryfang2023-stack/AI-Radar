@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-06-17",
     "latest_disclosed_at": "2026-06-17",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "other_current_round": 1
     },
     "round_codes": [
@@ -124,6 +125,38 @@
             "quote_hash": "1dc60799a251a7ee9baca1d4db39e00312e6b360748a03aeaf7039b1ef047a15"
           }
         ]
+      },
+      {
+        "activity_id": "IA-02986749c0597d03",
+        "funding_insight_id": "FI-a200d5b1af02ddc5",
+        "event_ids": [
+          "EV-48cbd6592d009234"
+        ],
+        "company_entity_id": "EN-a2b8357fddf7aa7d",
+        "company_canonical_entity_id": "",
+        "company_name": "Mach9",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2024 年种子轮投资方（个人）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d35ae298104a6f5f",
+            "source_url": "https://mach9.ai/news/12-million-seed-funding",
+            "source_title": "Mach9 Raises $12 Million Led by Quiet Capital to Scale AI-Powered Geospatial Mapping Solutions",
+            "source_content_hash": "c4d4cf1496169424",
+            "quote": "Kyle Vogt (founder of Cruise)",
+            "quote_hash": "a84df4d16197c771e9da7a8b1fbb29b118b2a76dcda681e450b05c89957c9933"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "75587989c4b9271c",
         "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt.",
         "quote_hash": "1dc60799a251a7ee9baca1d4db39e00312e6b360748a03aeaf7039b1ef047a15"
+      },
+      {
+        "source_id": "FISRC-d35ae298104a6f5f",
+        "source_url": "https://mach9.ai/news/12-million-seed-funding",
+        "source_title": "Mach9 Raises $12 Million Led by Quiet Capital to Scale AI-Powered Geospatial Mapping Solutions",
+        "source_content_hash": "c4d4cf1496169424",
+        "quote": "Kyle Vogt (founder of Cruise)",
+        "quote_hash": "a84df4d16197c771e9da7a8b1fbb29b118b2a76dcda681e450b05c89957c9933"
       }
     ],
     "public_profile": {
@@ -172,6 +213,10 @@
         {
           "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮天使投资人 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e94365d0212a78f3"
+        },
+        {
+          "description": "融资来源记录：Mach9 · 历史轮次未披露 · 2024 年种子轮投资方（个人）。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d35ae298104a6f5f"
         }
       ],
       "sources": [
@@ -206,6 +251,14 @@
           "source_content_hash": "75587989c4b9271c",
           "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt.",
           "quote_hash": "1dc60799a251a7ee9baca1d4db39e00312e6b360748a03aeaf7039b1ef047a15"
+        },
+        {
+          "source_id": "FISRC-d35ae298104a6f5f",
+          "source_url": "https://mach9.ai/news/12-million-seed-funding",
+          "source_title": "Mach9 Raises $12 Million Led by Quiet Capital to Scale AI-Powered Geospatial Mapping Solutions",
+          "source_content_hash": "c4d4cf1496169424",
+          "quote": "Kyle Vogt (founder of Cruise)",
+          "quote_hash": "a84df4d16197c771e9da7a8b1fbb29b118b2a76dcda681e450b05c89957c9933"
         }
       ],
       "last_verified_at": "2026-10-02"

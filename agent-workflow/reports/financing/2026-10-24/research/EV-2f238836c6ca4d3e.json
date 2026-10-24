@@ -1,0 +1,90 @@
+{
+  "event_id": "EV-2f238836c6ca4d3e",
+  "company_name": "BOB AI Holdings Corp.",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "迈阿密初创公司BOB融资550万美元，打造AI驱动的银行平台",
+    "event_source_refs": [
+      "SA-596a1d1e78e7e662"
+    ],
+    "event_claim_refs": [
+      "CL-8a16077bc240744f"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-77e7f092c385d4e6",
+        "canonical_name": "BOB AI Holdings Corp."
+      }
+    ],
+    "event_metrics": [
+      "$5.5 million"
+    ],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-8a16077bc240744f",
+        "raw_id": "RAW-e03018cdc55d132c",
+        "subject": "BOB AI Holdings Corp.",
+        "object": "$5.5 million in seed funding",
+        "source_quote_length": 103
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 1,
+    "resolved_company": "BOB AI Holdings Corp."
+  },
+  "queries": [
+    "\"BOB AI Holdings Corp.\" 2026 funding round investors",
+    "\"BOB AI Holdings Corp.\" $5.5 million funding announcement",
+    "\"BOB AI Holdings Corp.\" official product customers",
+    "\"BOB AI Holdings Corp.\" \"why we invested\"",
+    "\"BOB AI Holdings Corp.\" 2026 raises led by",
+    "\"BOB AI Holdings Corp.\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "bing_rss",
+      "query": "\"BOB AI Holdings Corp.\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://bob.ibm.com/",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"BOB AI Holdings Corp.\" $5.5 million funding announcement",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"BOB AI Holdings Corp.\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"BOB AI Holdings Corp.\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"BOB AI Holdings Corp.\" 2026 raises led by",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"BOB AI Holdings Corp.\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}

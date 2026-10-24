@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-24",
+  "reviewer": "Codex responsible financing reviewer",
+  "reviewed_at": "2026-10-24T03:50:47.606Z",
+  "reused_run_id": 40043657014,
+  "recovery_stage": "facts_then_research_and_dependents",
+  "decisions": [
+    {
+      "event_id": "EV-c6bdde2cb18f1ebe",
+      "candidate_id": "MAC-7ff28f604776f655",
+      "action": "remove_aggregate_funding_claim",
+      "removed_claim": {
+        "event_type": "funding",
+        "subject": "UK AI startups",
+        "object": "$12.6 billion",
+        "evidence_index": 0
+      },
+      "start": 539,
+      "end": 696,
+      "quote": "In the UK alone, AI startups raised $12.6 billion in the first half of 2026, more than four times the total for the same period last year, according to HSBC.",
+      "body_sha256": "343a211e4059c1ad7dc4500a729ad8e421e83da7bd1af58bf10277025fdd6a63",
+      "reviewer": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-24T03:50:47.606Z",
+      "reason": "原文为英国AI初创企业2026年上半年的融资总额统计，不是名为UK AI startups的企业，也不是单笔融资；只移除此错误融资Claim，保留原文和其他独立候选。"
+    },
+    {
+      "event_id": "EV-069aa7ba10c78745",
+      "candidate_id": "MAC-c679c4c6bd721f00",
+      "action": "repair_funding_recipient",
+      "body_sha256": "3c590ff8a84425d467816836cf1b9a0fd2e983b7c24149d1ffb30d52773e8586",
+      "start": 217,
+      "end": 351,
+      "quote": "BOB AI Holdings Corp. (\"BOB\"), the AI finance employee for small business, today announced it has raised $5.5 million in seed funding.",
+      "decision": "accept",
+      "reviewer": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-24T03:50:47.606Z",
+      "reason": "原文首段明确命名融资主体BOB AI Holdings Corp.，括号简称BOB；Miami是地点，Startup是标题描述。仅修正当前来源融资Claim，不批准规范实体合并。",
+      "canonical_entity_merge_approved": false
+    },
+    {
+      "event_id": "EV-8a71cd4f6e7cafd2",
+      "action": "exclude_planned_investment_from_current_round",
+      "removed_investor": "NVIDIA",
+      "source_id": "FISRC-6737e55341eb5266",
+      "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+      "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+      "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75",
+      "reviewer": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-24T03:59:27.458Z",
+      "reason": "planned investment 不等于已完成参投；保留原文和卡片风险说明。"
+    },
+    {
+      "canonical_id": "FI-29972434b39dd262",
+      "duplicate_ids": [
+        "FI-01b6d0f27d2b83fd"
+      ],
+      "canonical_event_id": "EV-95b8b70ca29ab623",
+      "duplicate_event_ids": [
+        "EV-5aa0077bd10ce3dc"
+      ],
+      "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+      "source_id": "FISRC-49f5b4d8c68adbdc",
+      "quote": "SAN FRANCISCO, Oct. 21, 2026 /PRNewswire/ -- Blacksmith, the infrastructure platform for building and testing code, today announced a $66M Series C led by Sequoia Capital at a $1 billion valuation, with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator.",
+      "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+      "quote_hash": "9feb8d327a6eec45cdfcebafa1f20433c921d55e6e47e2d0edeb3b9d18ec443b",
+      "body_sha256": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-24T03:59:27.458Z",
+      "reason": "原文为同一Blacksmith于2026-10-21宣布的6600万美元C轮，Sequoia领投；与既有已发布C轮一致。合并来源并保留既有C轮ID与独立B轮，仅展示去重，不审批规范实体合并。"
+    },
+    {
+      "event_id": "EV-2f238836c6ca4d3e",
+      "action": "retain_pending_verification",
+      "reason": "融资主体已修正；独立研究来源数量不足，保留research_sources_insufficient及原文，不强行准入。",
+      "reviewer": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-24T03:59:27.458Z"
+    }
+  ]
+}

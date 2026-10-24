@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-08-10",
     "latest_disclosed_at": "2026-08-10",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -124,6 +125,38 @@
             "quote_hash": "af3ef0efa3bf97b8c269266344a317f0ec75502da3984e41935845f8d595fe8a"
           }
         ]
+      },
+      {
+        "activity_id": "IA-545d95f40225f220",
+        "funding_insight_id": "FI-25d65282cadc2f61",
+        "event_ids": [
+          "EV-8a71cd4f6e7cafd2"
+        ],
+        "company_entity_id": "EN-7c6eefba80293ea4",
+        "company_canonical_entity_id": "",
+        "company_name": "Pigment",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series D 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ebb917baca53eaa8",
+            "source_url": "https://www.pigment.com/blog/series-d-announcement",
+            "source_title": "Pigment announces $145 million Series D funding round",
+            "source_content_hash": "655339259c9b7c8e",
+            "quote": "Pigment raises $145 million in a Series D round led by ICONIQ Growth, with participation from Sandberg Bernthal Venture Partners, IVP, Meritech, Greenoaks, and Felix Capital.",
+            "quote_hash": "4394f8e8e198f35e2d20e0a65491f2a6ed9fecabafecf67800aeda597c32ce07"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "8ca089e7956c95bb",
         "quote": "led by Will Ventures with participation from Emerson Collective, Workshop, LEAD VC, Salt VC, Accomplice, Moxxie, Ventures Together, Symphony, Felix Capital, Cosmic Venture Partners, Offscript, V1.VC, and Morrison Seger.",
         "quote_hash": "af3ef0efa3bf97b8c269266344a317f0ec75502da3984e41935845f8d595fe8a"
+      },
+      {
+        "source_id": "FISRC-ebb917baca53eaa8",
+        "source_url": "https://www.pigment.com/blog/series-d-announcement",
+        "source_title": "Pigment announces $145 million Series D funding round",
+        "source_content_hash": "655339259c9b7c8e",
+        "quote": "Pigment raises $145 million in a Series D round led by ICONIQ Growth, with participation from Sandberg Bernthal Venture Partners, IVP, Meritech, Greenoaks, and Felix Capital.",
+        "quote_hash": "4394f8e8e198f35e2d20e0a65491f2a6ed9fecabafecf67800aeda597c32ce07"
       }
     ],
     "public_profile": {
@@ -159,6 +200,10 @@
         {
           "description": "融资来源记录：Throne Science · A轮 · 2026-08-10 · 本轮参投 · 1000 万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2a587e714925b882"
+        },
+        {
+          "description": "融资来源记录：Pigment · 历史轮次未披露 · Series D 参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ebb917baca53eaa8"
         }
       ],
       "contacts": [
@@ -222,12 +267,28 @@
           "source_content_hash": "8ca089e7956c95bb",
           "quote": "led by Will Ventures with participation from Emerson Collective, Workshop, LEAD VC, Salt VC, Accomplice, Moxxie, Ventures Together, Symphony, Felix Capital, Cosmic Venture Partners, Offscript, V1.VC, and Morrison Seger.",
           "quote_hash": "af3ef0efa3bf97b8c269266344a317f0ec75502da3984e41935845f8d595fe8a"
+        },
+        {
+          "source_id": "FISRC-ebb917baca53eaa8",
+          "source_url": "https://www.pigment.com/blog/series-d-announcement",
+          "source_title": "Pigment announces $145 million Series D funding round",
+          "source_content_hash": "655339259c9b7c8e",
+          "quote": "Pigment raises $145 million in a Series D round led by ICONIQ Growth, with participation from Sandberg Bernthal Venture Partners, IVP, Meritech, Greenoaks, and Felix Capital.",
+          "quote_hash": "4394f8e8e198f35e2d20e0a65491f2a6ed9fecabafecf67800aeda597c32ce07"
         }
       ],
       "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {
+        "activities[1].role": {
+          "text": "Series D 参投",
+          "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-02T06:25:20.177Z",
+          "status": "translated"
+        },
         "public_profile.track_record[0].description": {
           "text": "Felix Capital 官网精选投资展示包括 Bioptimus、CreativeFabrica 和 Dust；该展示不代表完整投资组合。",
           "source_hash": "ea6253fd2573fed9080e1af12ba156eddb0964dd7bef4a1705c959f93bd425fb",

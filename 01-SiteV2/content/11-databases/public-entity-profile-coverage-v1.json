@@ -2,6 +2,126 @@
   "schema_version": "PUBLIC-ENTITY-PROFILE-COVERAGE-V1.0",
   "as_of": "2026-10-06",
   "institutions": {
+    "INV-7a5c599caeb7de": {
+      "summary": "Y Combinator 是面向初创公司的加速器和种子投资机构，按批次提供资金，并在项目期间与创始团队密集协作。",
+      "facts": [
+        {
+          "field": "active_since",
+          "label": "开始运营",
+          "value": "2005 年",
+          "source_id": "yc_press"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "种子轮"
+          ],
+          "source_id": "yc_press"
+        },
+        {
+          "field": "program_length",
+          "label": "加速项目周期",
+          "value": "3 个月",
+          "source_id": "yc_press"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2005",
+          "description": "开始资助创业公司。",
+          "source_id": "yc_press"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官方介绍称，自 2005 年以来已资助超过 5,000 家公司；同页对校友企业合计估值存在不同口径，因此暂不收录该估值数字。",
+          "source_id": "yc_press"
+        },
+        {
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-49f5b4d8c68adbdc"
+        },
+        {
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0b9a2de412bfecea"
+        },
+        {
+          "description": "融资来源记录：Clueso · A轮 · 2026-10-13 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4ee9923e67c28685"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "ycombinator.com",
+          "url": "https://www.ycombinator.com/",
+          "source_id": "yc_press"
+        },
+        {
+          "kind": "application",
+          "label": "创业项目申请",
+          "value": "在线申请；申请问题可联系 apply@ycombinator.com",
+          "url": "https://www.ycombinator.com/apply",
+          "source_id": "yc_apply"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系",
+          "value": "press@ycombinator.com",
+          "url": "https://www.ycombinator.com/press",
+          "source_id": "yc_press"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "yc_press",
+          "source_url": "https://www.ycombinator.com/press",
+          "source_title": "Press | Y Combinator",
+          "source_content_hash": "c65cd36743352f176ac4ca84d8fdaa7a3b249a880428a96dbfc7746fa383cd91",
+          "quote": "Since 2005, we’ve funded over 5,000 companies.",
+          "quote_hash": "1731e2c9fa07b2427471a89632b9147074e07325d342716f3a9b369d8a8582b3"
+        },
+        {
+          "source_id": "yc_apply",
+          "source_url": "https://www.ycombinator.com/apply",
+          "source_title": "Apply to YC | Y Combinator",
+          "source_content_hash": "bfebdbec3c11ad1d5d4d07dd21b7109a11940bd37a05795a1c90c06262756983",
+          "quote": "If you have other questions, reach out via email (apply@ycombinator.com).",
+          "quote_hash": "4ed4875e0047c94acb0efae75ec6e5f47b2b446f507a0d444211c08edd926a82"
+        },
+        {
+          "source_id": "FISRC-49f5b4d8c68adbdc",
+          "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+          "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+          "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+          "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+          "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+        },
+        {
+          "source_id": "FISRC-0b9a2de412bfecea",
+          "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
+          "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
+          "source_content_hash": "b097b8e1cde199ce",
+          "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
+          "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
+        },
+        {
+          "source_id": "FISRC-4ee9923e67c28685",
+          "source_url": "https://yourstory.com/2026/10/agentic-video-startup-clueso-raises-series-a-funding",
+          "source_title": "AI 智能体视频初创公司 Clueso 在 A 轮融资中筹集 1000 万美元",
+          "source_content_hash": "5da6e8dca2222da443f043940ec3373b0413761024bcfa093b36467089a15e81",
+          "quote": "The round also saw participation from Y Combinator and f7 Ventures.",
+          "quote_hash": "ae937fdd3a8dfaff2f3d21367e56afe08ffa186584ff658f9f0e729b0b907c14"
+        }
+      ],
+      "last_verified_at": "2026-09-25",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
     "INV-b8a0e793124952": {
       "summary": "Andreessen Horowitz（a16z）是一家成立于 2009 年的风险投资机构，官网介绍其覆盖从种子期到成长阶段的科技公司，并配置运营支持团队。",
       "facts": [
@@ -206,126 +326,6 @@
       "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
-    "INV-7a5c599caeb7de": {
-      "summary": "Y Combinator 是面向初创公司的加速器和种子投资机构，按批次提供资金，并在项目期间与创始团队密集协作。",
-      "facts": [
-        {
-          "field": "active_since",
-          "label": "开始运营",
-          "value": "2005 年",
-          "source_id": "yc_press"
-        },
-        {
-          "field": "investment_stage",
-          "label": "投资阶段",
-          "value": [
-            "种子轮"
-          ],
-          "source_id": "yc_press"
-        },
-        {
-          "field": "program_length",
-          "label": "加速项目周期",
-          "value": "3 个月",
-          "source_id": "yc_press"
-        }
-      ],
-      "milestones": [
-        {
-          "date": "2005",
-          "description": "开始资助创业公司。",
-          "source_id": "yc_press"
-        }
-      ],
-      "track_record": [
-        {
-          "description": "官方介绍称，自 2005 年以来已资助超过 5,000 家公司；同页对校友企业合计估值存在不同口径，因此暂不收录该估值数字。",
-          "source_id": "yc_press"
-        },
-        {
-          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0b9a2de412bfecea"
-        },
-        {
-          "description": "融资来源记录：Clueso · A轮 · 2026-10-13 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4ee9923e67c28685"
-        },
-        {
-          "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮参投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-718f95dbe2208337"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官方网站",
-          "value": "ycombinator.com",
-          "url": "https://www.ycombinator.com/",
-          "source_id": "yc_press"
-        },
-        {
-          "kind": "application",
-          "label": "创业项目申请",
-          "value": "在线申请；申请问题可联系 apply@ycombinator.com",
-          "url": "https://www.ycombinator.com/apply",
-          "source_id": "yc_apply"
-        },
-        {
-          "kind": "email",
-          "label": "媒体联系",
-          "value": "press@ycombinator.com",
-          "url": "https://www.ycombinator.com/press",
-          "source_id": "yc_press"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "yc_press",
-          "source_url": "https://www.ycombinator.com/press",
-          "source_title": "Press | Y Combinator",
-          "source_content_hash": "c65cd36743352f176ac4ca84d8fdaa7a3b249a880428a96dbfc7746fa383cd91",
-          "quote": "Since 2005, we’ve funded over 5,000 companies.",
-          "quote_hash": "1731e2c9fa07b2427471a89632b9147074e07325d342716f3a9b369d8a8582b3"
-        },
-        {
-          "source_id": "yc_apply",
-          "source_url": "https://www.ycombinator.com/apply",
-          "source_title": "Apply to YC | Y Combinator",
-          "source_content_hash": "bfebdbec3c11ad1d5d4d07dd21b7109a11940bd37a05795a1c90c06262756983",
-          "quote": "If you have other questions, reach out via email (apply@ycombinator.com).",
-          "quote_hash": "4ed4875e0047c94acb0efae75ec6e5f47b2b446f507a0d444211c08edd926a82"
-        },
-        {
-          "source_id": "FISRC-0b9a2de412bfecea",
-          "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
-          "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
-          "source_content_hash": "b097b8e1cde199ce",
-          "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
-          "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
-        },
-        {
-          "source_id": "FISRC-4ee9923e67c28685",
-          "source_url": "https://yourstory.com/2026/10/agentic-video-startup-clueso-raises-series-a-funding",
-          "source_title": "AI 智能体视频初创公司 Clueso 在 A 轮融资中筹集 1000 万美元",
-          "source_content_hash": "5da6e8dca2222da443f043940ec3373b0413761024bcfa093b36467089a15e81",
-          "quote": "The round also saw participation from Y Combinator and f7 Ventures.",
-          "quote_hash": "ae937fdd3a8dfaff2f3d21367e56afe08ffa186584ff658f9f0e729b0b907c14"
-        },
-        {
-          "source_id": "FISRC-718f95dbe2208337",
-          "source_url": "https://nousresearch.com/a-note-on-our-fundraise",
-          "source_title": "A Note on Our Fundraise",
-          "source_content_hash": "9a7816e0d0a7df40",
-          "quote": "We brought together some of the strongest investors in technology – NVIDIA, Microsoft’s M12, Samsung, Robot Ventures, Union Square Ventures, Y Combinator, and Menlo Ventures among others",
-          "quote_hash": "e598666c713d3dbb3685a0b385b18b9a615d68374c9fe49844f9873a5b814571"
-        }
-      ],
-      "last_verified_at": "2026-09-25",
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
-    },
     "INV-862e0e7d2ba5cf": {
       "summary": "Sequoia Capital 是由 Don Valentine 于 1972 年创立的风险投资机构。其历史资料记载，早期基金投资了 Apple 和 Atari。",
       "facts": [
@@ -361,12 +361,12 @@
           "source_id": "sequoia_history"
         },
         {
-          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮领投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5f7eaed02b669920"
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮领投 · $66M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-49f5b4d8c68adbdc"
         },
         {
-          "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d40817bd8696706a"
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮领投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5f7eaed02b669920"
         }
       ],
       "contacts": [
@@ -396,6 +396,14 @@
           "quote_hash": "4a2f68c042b10690a950656cdd8c8d78ddbacadab8cdf2e8a4566b83347cc5ac"
         },
         {
+          "source_id": "FISRC-49f5b4d8c68adbdc",
+          "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+          "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+          "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+          "quote": "a $66M Series C led by Sequoia Capital at a $1 billion valuation",
+          "quote_hash": "33a85f0b4446289963f51e84b69bf35a336bc02d5e28e1c6dd0ce378b7b664c0"
+        },
+        {
           "source_id": "FISRC-5f7eaed02b669920",
           "source_url": "https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/",
           "source_title": "Blacksmith 在 Sequoia 领投 C 轮融资后达到独角兽估值",
@@ -410,14 +418,6 @@
           "source_content_hash": "b097b8e1cde199ce",
           "quote": "Serie C de US$66 millones liderada por Sequoia Capital",
           "quote_hash": "a25971a623a948f50c6842d50263e65a8e541c335e6fced94fc14ab433aa49ce"
-        },
-        {
-          "source_id": "FISRC-d40817bd8696706a",
-          "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
-          "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
-          "source_content_hash": "52d288f9f7f1c202",
-          "quote": "Other participants in the new round included earlier backers Sequoia, GV, and Kleiner Perkins.",
-          "quote_hash": "7cd08033c748194750d851104567a0f7f2723955079dcda7e05f9131dae3bc43"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1062,12 +1062,12 @@
           "source_id": "FISRC-c4c53e6f607010be"
         },
         {
-          "description": "融资来源记录：Zenzap · 多轮融资 · 2026-10-14 · 本轮联合领投 · $44 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bb48149fa1b574d3"
+          "description": "融资来源记录：Mach9 · A轮 · 2026-10-21 · 本轮联合领投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2115ba1066fba41f"
         },
         {
-          "description": "融资来源记录：Ampersand · A轮 · 2026-10-06 · 本轮领投 · $15M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fe2eb23658e8b6c7"
+          "description": "融资来源记录：Zenzap · 多轮融资 · 2026-10-14 · 本轮联合领投 · $44 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bb48149fa1b574d3"
         }
       ],
       "contacts": [
@@ -1210,20 +1210,20 @@
           "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
         },
         {
+          "source_id": "FISRC-2115ba1066fba41f",
+          "source_url": "https://www.prnewswire.com/news-releases/mach9-raises-34m-series-a-to-bring-civil-engineering-into-the-ai-era-302915153.html",
+          "source_title": "Mach9 完成 3400 万美元 A 轮融资，将土木工程带入 AI 时代",
+          "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+          "quote": "a $34 million Series A co-led by First Round Capital and Bessemer Venture Partners",
+          "quote_hash": "981eb537c1209c249d3ea00482dce68d2e5a3035546bf321a44970b75acebf3a"
+        },
+        {
           "source_id": "FISRC-bb48149fa1b574d3",
           "source_url": "https://www.calcalistech.com/ctechnews/article/b1zgob6jfe",
           "source_title": "Zenzap raises $33 million Series A to bring AI agents into everyday workplace chats",
           "source_content_hash": "4cfe12ba60131ea9",
           "quote": "has raised $33 million in a Series A funding round co-led by Bessemer Venture Partners and Lightspeed Venture Partners, with additional investment from The Garage.",
           "quote_hash": "8d7648ad5a62c1ad0005ff8d3f38e905cb3818cdc6f18a0ced6816381566c39c"
-        },
-        {
-          "source_id": "FISRC-fe2eb23658e8b6c7",
-          "source_url": "https://www.bvp.com/news/meet-the-founders-of-ampersand-ayan-barua-and-lauren-long",
-          "source_title": "认识 Ampersand 的创始人：Ayan Barua 和 Lauren Long",
-          "source_content_hash": "437c4a6c3b41954d6792d762eb40771a2d69153f2d556d463539a98d45df3185",
-          "quote": "Bessemer Venture Partners leads Ampersand’s $15M Series A to make every enterprise system legible to agents.",
-          "quote_hash": "22c40157f57b82b92d286742182cdd80c002d5a265b7d745a3a88095cf32d567"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2251,6 +2251,147 @@
       "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
+    "INV-90d5bb78e64004": {
+      "summary": "GV（原 Google Ventures）是 Alphabet 的风险投资机构，Alphabet 为其唯一有限合伙人。官网称 GV 覆盖种子期至成长期，投资科技和生命科学领域，并依托运营合伙人为创业团队提供招聘、传播和市场支持。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2009 年以 Google Ventures 名义创立",
+          "source_id": "gv_about"
+        },
+        {
+          "field": "ownership",
+          "label": "有限合伙人",
+          "value": "Alphabet 为唯一有限合伙人（官网自述）",
+          "source_id": "gv_about"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "种子期",
+            "成长期"
+          ],
+          "source_id": "gv_about"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "重点领域",
+          "value": [
+            "科技",
+            "生命科学"
+          ],
+          "source_id": "gv_about"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "管理资产规模",
+          "value": "超过 130 亿美元（官网自述，页面当前口径）",
+          "source_id": "gv_about"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "活跃组合企业",
+          "value": "400 家（官网自述）",
+          "source_id": "gv_about"
+        },
+        {
+          "field": "portfolio_geography",
+          "label": "组合覆盖地区",
+          "value": [
+            "北美",
+            "欧洲",
+            "以色列"
+          ],
+          "source_id": "gv_about"
+        },
+        {
+          "field": "operating_support",
+          "label": "运营支持",
+          "value": "官网称运营合伙人支持高管人才、传播和市场工作，并可协助创业公司连接 Google 与 Alphabet 公司。",
+          "source_id": "gv_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2009",
+          "description": "以 Google Ventures 名义创立；官网记载首批投资包括 Silver Spring Networks 与 Adimab。",
+          "source_id": "gv_about"
+        },
+        {
+          "date": "2015",
+          "description": "Google Ventures 更名为 GV。",
+          "source_id": "gv_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网列出的代表性退出包括 Uber、Nest、Slack、GitLab、Duo Security、Flatiron Health、Lemonade 和 One Medical；该列表为机构自选案例。",
+          "source_id": "gv_about"
+        },
+        {
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-49f5b4d8c68adbdc"
+        },
+        {
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0b9a2de412bfecea"
+        },
+        {
+          "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d40817bd8696706a"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "GV 官方网站与团队入口",
+          "value": "GV",
+          "url": "https://www.gv.com/",
+          "source_id": "gv_about"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位、Alphabet 关系、阶段范围、规模和组合数据来自 GV 官方 About 页面。AUM、组合及退出数量为机构自述的页面当前口径；未将融资活动库中名称相同的交易自动归因到 GV 的特定基金。",
+      "sources": [
+        {
+          "source_id": "gv_about",
+          "source_url": "https://www.gv.com/about",
+          "source_title": "GV - About GV",
+          "source_content_hash": "e0b75d0a77292164589ef6f5944d40f8d3c4b303f8ac36c68d51b41f88eff3fb",
+          "quote": "Launched as Google Ventures in 2009. With Alphabet as our sole limited partner. Today, with over $13 billion in assets under management, we invest from seed to growth stages across the technology and life sciences sectors. We support 400 active portfolio companies across North America, Europe, and Israel. Our portfolio includes notable exits such as Uber, Nest, Slack, GitLab, Duo Security, Flatiron Health, Lemonade, and One Medical.",
+          "quote_hash": "90cbdf37bd32985fe0287193ec4b8eaee618ac9632610f1ef38fb1e68a388701"
+        },
+        {
+          "source_id": "FISRC-49f5b4d8c68adbdc",
+          "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+          "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+          "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+          "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+          "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+        },
+        {
+          "source_id": "FISRC-0b9a2de412bfecea",
+          "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
+          "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
+          "source_content_hash": "b097b8e1cde199ce",
+          "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
+          "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
+        },
+        {
+          "source_id": "FISRC-d40817bd8696706a",
+          "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+          "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+          "source_content_hash": "52d288f9f7f1c202",
+          "quote": "Other participants in the new round included earlier backers Sequoia, GV, and Kleiner Perkins.",
+          "quote_hash": "7cd08033c748194750d851104567a0f7f2723955079dcda7e05f9131dae3bc43"
+        }
+      ],
+      "last_verified_at": "2026-09-25",
+      "profile_type": "organization",
+      "identity_status": "verified"
+    },
     "INV-675f70a9c00060": {
       "summary": "本记录中的“腾讯”指腾讯控股集团层级的投资活动，不自动归因到某一基金、子公司或腾讯投资部门。集团官方材料将投资定位为核心战略之一，强调投资组合与核心业务及 Connection 战略协同；2025年报披露期末投资组合账面/公允价值合计口径约人民币9572.19亿元，该数包含联营合营企业及以公允价值计量的金融资产，不等于VC基金AUM。",
       "facts": [
@@ -2405,143 +2546,124 @@
       "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
-    "INV-90d5bb78e64004": {
-      "summary": "GV（原 Google Ventures）是 Alphabet 的风险投资机构，Alphabet 为其唯一有限合伙人。官网称 GV 覆盖种子期至成长期，投资科技和生命科学领域，并依托运营合伙人为创业团队提供招聘、传播和市场支持。",
+    "INV-67c7d458ae39ba": {
+      "summary": "ICONIQ官网将其介绍为全球投资公司，业务同时涉及投资管理、Venture & Growth、Real Assets及慈善协作。官网自报管理资产规模超过1000亿美元。融资情报站中的“Iconiq”交易名称未必能确认具体ICONIQ基金或关联主体，故不将活动记录自动归属于某支基金。",
       "facts": [
         {
-          "field": "founded",
-          "label": "成立时间",
-          "value": "2009 年以 Google Ventures 名义创立",
-          "source_id": "gv_about"
+          "field": "organization_type",
+          "label": "官网自述机构类型",
+          "value": "全球投资公司；提供投资组合管理，并设Venture & Growth等业务",
+          "source_id": "iconiq_official_home_2026"
         },
         {
-          "field": "ownership",
-          "label": "有限合伙人",
-          "value": "Alphabet 为唯一有限合伙人（官网自述）",
-          "source_id": "gv_about"
+          "field": "reported_aum",
+          "label": "官网披露管理资产规模",
+          "value": "超过1000亿美元；官网未在该页面标出统计日期",
+          "source_id": "iconiq_official_home_2026"
         },
         {
-          "field": "investment_stage",
-          "label": "投资阶段",
-          "value": [
-            "种子期",
-            "成长期"
-          ],
-          "source_id": "gv_about"
+          "field": "investment_approach",
+          "label": "Venture & Growth页面",
+          "value": "与创业者从早期构想阶段起合作；官网列示其Venture & Growth投资组合业务",
+          "source_id": "iconiq_venture_growth_2026"
         },
         {
-          "field": "focus_sectors",
-          "label": "重点领域",
-          "value": [
-            "科技",
-            "生命科学"
-          ],
-          "source_id": "gv_about"
-        },
-        {
-          "field": "assets_under_management",
-          "label": "管理资产规模",
-          "value": "超过 130 亿美元（官网自述，页面当前口径）",
-          "source_id": "gv_about"
-        },
-        {
-          "field": "portfolio_count",
-          "label": "活跃组合企业",
-          "value": "400 家（官网自述）",
-          "source_id": "gv_about"
-        },
-        {
-          "field": "portfolio_geography",
-          "label": "组合覆盖地区",
-          "value": [
-            "北美",
-            "欧洲",
-            "以色列"
-          ],
-          "source_id": "gv_about"
-        },
-        {
-          "field": "operating_support",
-          "label": "运营支持",
-          "value": "官网称运营合伙人支持高管人才、传播和市场工作，并可协助创业公司连接 Google 与 Alphabet 公司。",
-          "source_id": "gv_about"
+          "field": "entity_attribution",
+          "label": "名称归属说明",
+          "value": "融资披露中的“Iconiq”未必指向ICONIQ Capital集团、ICONIQ Growth或某一具体基金；需逐笔核对主体。",
+          "source_id": "iconiq_official_home_2026"
         }
       ],
-      "milestones": [
-        {
-          "date": "2009",
-          "description": "以 Google Ventures 名义创立；官网记载首批投资包括 Silver Spring Networks 与 Adimab。",
-          "source_id": "gv_about"
-        },
-        {
-          "date": "2015",
-          "description": "Google Ventures 更名为 GV。",
-          "source_id": "gv_about"
-        }
-      ],
+      "milestones": [],
       "track_record": [
         {
-          "description": "官网列出的代表性退出包括 Uber、Nest、Slack、GitLab、Duo Security、Flatiron Health、Lemonade 和 One Medical；该列表为机构自选案例。",
-          "source_id": "gv_about"
+          "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4c53e6f607010be"
         },
         {
-          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0b9a2de412bfecea"
+          "description": "融资来源记录：Pigment · E轮 · 2026-10-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6737e55341eb5266"
         },
         {
-          "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d40817bd8696706a"
-        },
-        {
-          "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-10-04 · 本轮参投 · 21亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-82c9573ed9c6ba66"
+          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f581afce52cf5bef"
         }
       ],
       "contacts": [
         {
           "kind": "website",
-          "label": "GV 官方网站与团队入口",
-          "value": "GV",
-          "url": "https://www.gv.com/",
-          "source_id": "gv_about"
+          "label": "机构官网",
+          "value": "ICONIQ",
+          "url": "https://www.iconiq.com/",
+          "source_id": "iconiq_official_home_2026"
+        },
+        {
+          "kind": "website",
+          "label": "Venture & Growth业务",
+          "value": "ICONIQ Venture & Growth",
+          "url": "https://www.iconiq.com/growth",
+          "source_id": "iconiq_venture_growth_2026"
+        },
+        {
+          "kind": "email",
+          "label": "一般咨询邮箱（官网公开；未注明为项目提案或融资申请渠道）",
+          "value": "info@ICONIQCapital.com",
+          "url": "https://www.iconiq.com/email",
+          "source_id": "iconiq_contact_2026"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "iconiq_official_home_2026",
+          "source_url": "https://www.iconiq.com/",
+          "source_title": "ICONIQ | Home",
+          "source_content_hash": "ca735d694145ac6002d8bfb553a016ae3224f18b92751c3195ecd8a0e68467a7",
+          "quote": "ICONIQ is a global investment firm catalyzing opportunity through extraordinary community. With over $100B assets under management.",
+          "quote_hash": "25ca221979bfd9686c7c4fbd635378f4cf8161be159df604e7cf06a6d700503c"
+        },
+        {
+          "source_id": "iconiq_venture_growth_2026",
+          "source_url": "https://www.iconiq.com/growth",
+          "source_title": "ICONIQ | Venture & Growth",
+          "source_content_hash": "47eb1d36638b985408508743b0fc086e387c0bcfab8be5f6f68f29aab712a214",
+          "quote": "We partner with founders from the aha moment onward.",
+          "quote_hash": "e15e767ca5a2741aca0029417f1cdf1316a9193ac7ce4b32dcf5e5e07dc13c5f"
+        },
+        {
+          "source_id": "iconiq_contact_2026",
+          "source_url": "https://www.iconiq.com/email",
+          "source_title": "ICONIQ | Contact Us",
+          "source_content_hash": "d5c894b203262b68067bf29540ba5acd77d336c5892b0edd27be708b84de9bdd",
+          "quote": "For general inquires please email us at info@ICONIQCapital.com.",
+          "quote_hash": "a40d2805746de3f25346e3dc8f0f99673e8c9b4115105340dc59b962f384217a"
+        },
+        {
+          "source_id": "FISRC-c4c53e6f607010be",
+          "source_url": "https://legora.com/blog/series-e",
+          "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
+          "source_content_hash": "f3c7efce8da1beb6",
+          "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
+          "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
+        },
+        {
+          "source_id": "FISRC-6737e55341eb5266",
+          "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+          "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+          "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+          "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+          "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+        },
+        {
+          "source_id": "FISRC-f581afce52cf5bef",
+          "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+          "source_title": "Ramp估值达600亿美元，深入布局AI",
+          "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+          "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+          "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
         }
       ],
       "coverage_status": "researched",
-      "coverage_note": "机构定位、Alphabet 关系、阶段范围、规模和组合数据来自 GV 官方 About 页面。AUM、组合及退出数量为机构自述的页面当前口径；未将融资活动库中名称相同的交易自动归因到 GV 的特定基金。",
-      "sources": [
-        {
-          "source_id": "gv_about",
-          "source_url": "https://www.gv.com/about",
-          "source_title": "GV - About GV",
-          "source_content_hash": "e0b75d0a77292164589ef6f5944d40f8d3c4b303f8ac36c68d51b41f88eff3fb",
-          "quote": "Launched as Google Ventures in 2009. With Alphabet as our sole limited partner. Today, with over $13 billion in assets under management, we invest from seed to growth stages across the technology and life sciences sectors. We support 400 active portfolio companies across North America, Europe, and Israel. Our portfolio includes notable exits such as Uber, Nest, Slack, GitLab, Duo Security, Flatiron Health, Lemonade, and One Medical.",
-          "quote_hash": "90cbdf37bd32985fe0287193ec4b8eaee618ac9632610f1ef38fb1e68a388701"
-        },
-        {
-          "source_id": "FISRC-0b9a2de412bfecea",
-          "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
-          "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
-          "source_content_hash": "b097b8e1cde199ce",
-          "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
-          "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
-        },
-        {
-          "source_id": "FISRC-d40817bd8696706a",
-          "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
-          "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
-          "source_content_hash": "52d288f9f7f1c202",
-          "quote": "Other participants in the new round included earlier backers Sequoia, GV, and Kleiner Perkins.",
-          "quote_hash": "7cd08033c748194750d851104567a0f7f2723955079dcda7e05f9131dae3bc43"
-        },
-        {
-          "source_id": "FISRC-82c9573ed9c6ba66",
-          "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
-          "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
-          "source_content_hash": "e6bdf28f1eee82d0",
-          "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
-          "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
-        }
-      ],
+      "coverage_note": "已核实ICONIQ集团官网身份、业务分支及一般联络方式；AUM为官网自报且未在页面标注统计日期。“Iconiq”融资记录与具体基金/关联公司的匹配仍需逐条验证。",
       "last_verified_at": "2026-09-25",
       "profile_type": "organization",
       "identity_status": "verified"
@@ -2974,128 +3096,6 @@
       "profile_type": "organization",
       "coverage_status": "researched",
       "coverage_note": "规模和投资结果取自媒体报道，官网公开页仅核验办公地点；未据单笔回报推算机构整体回报率。",
-      "identity_status": "verified"
-    },
-    "INV-67c7d458ae39ba": {
-      "summary": "ICONIQ官网将其介绍为全球投资公司，业务同时涉及投资管理、Venture & Growth、Real Assets及慈善协作。官网自报管理资产规模超过1000亿美元。融资情报站中的“Iconiq”交易名称未必能确认具体ICONIQ基金或关联主体，故不将活动记录自动归属于某支基金。",
-      "facts": [
-        {
-          "field": "organization_type",
-          "label": "官网自述机构类型",
-          "value": "全球投资公司；提供投资组合管理，并设Venture & Growth等业务",
-          "source_id": "iconiq_official_home_2026"
-        },
-        {
-          "field": "reported_aum",
-          "label": "官网披露管理资产规模",
-          "value": "超过1000亿美元；官网未在该页面标出统计日期",
-          "source_id": "iconiq_official_home_2026"
-        },
-        {
-          "field": "investment_approach",
-          "label": "Venture & Growth页面",
-          "value": "与创业者从早期构想阶段起合作；官网列示其Venture & Growth投资组合业务",
-          "source_id": "iconiq_venture_growth_2026"
-        },
-        {
-          "field": "entity_attribution",
-          "label": "名称归属说明",
-          "value": "融资披露中的“Iconiq”未必指向ICONIQ Capital集团、ICONIQ Growth或某一具体基金；需逐笔核对主体。",
-          "source_id": "iconiq_official_home_2026"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c4c53e6f607010be"
-        },
-        {
-          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f581afce52cf5bef"
-        },
-        {
-          "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b2cab94e5375e0ba"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "机构官网",
-          "value": "ICONIQ",
-          "url": "https://www.iconiq.com/",
-          "source_id": "iconiq_official_home_2026"
-        },
-        {
-          "kind": "website",
-          "label": "Venture & Growth业务",
-          "value": "ICONIQ Venture & Growth",
-          "url": "https://www.iconiq.com/growth",
-          "source_id": "iconiq_venture_growth_2026"
-        },
-        {
-          "kind": "email",
-          "label": "一般咨询邮箱（官网公开；未注明为项目提案或融资申请渠道）",
-          "value": "info@ICONIQCapital.com",
-          "url": "https://www.iconiq.com/email",
-          "source_id": "iconiq_contact_2026"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "iconiq_official_home_2026",
-          "source_url": "https://www.iconiq.com/",
-          "source_title": "ICONIQ | Home",
-          "source_content_hash": "ca735d694145ac6002d8bfb553a016ae3224f18b92751c3195ecd8a0e68467a7",
-          "quote": "ICONIQ is a global investment firm catalyzing opportunity through extraordinary community. With over $100B assets under management.",
-          "quote_hash": "25ca221979bfd9686c7c4fbd635378f4cf8161be159df604e7cf06a6d700503c"
-        },
-        {
-          "source_id": "iconiq_venture_growth_2026",
-          "source_url": "https://www.iconiq.com/growth",
-          "source_title": "ICONIQ | Venture & Growth",
-          "source_content_hash": "47eb1d36638b985408508743b0fc086e387c0bcfab8be5f6f68f29aab712a214",
-          "quote": "We partner with founders from the aha moment onward.",
-          "quote_hash": "e15e767ca5a2741aca0029417f1cdf1316a9193ac7ce4b32dcf5e5e07dc13c5f"
-        },
-        {
-          "source_id": "iconiq_contact_2026",
-          "source_url": "https://www.iconiq.com/email",
-          "source_title": "ICONIQ | Contact Us",
-          "source_content_hash": "d5c894b203262b68067bf29540ba5acd77d336c5892b0edd27be708b84de9bdd",
-          "quote": "For general inquires please email us at info@ICONIQCapital.com.",
-          "quote_hash": "a40d2805746de3f25346e3dc8f0f99673e8c9b4115105340dc59b962f384217a"
-        },
-        {
-          "source_id": "FISRC-c4c53e6f607010be",
-          "source_url": "https://legora.com/blog/series-e",
-          "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
-          "source_content_hash": "f3c7efce8da1beb6",
-          "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
-          "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
-        },
-        {
-          "source_id": "FISRC-f581afce52cf5bef",
-          "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
-          "source_title": "Ramp估值达600亿美元，深入布局AI",
-          "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
-          "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
-          "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
-        },
-        {
-          "source_id": "FISRC-b2cab94e5375e0ba",
-          "source_url": "https://techcrunch.com/2026/09/23/enveda-secures-311m-to-bring-more-nature-derived-ai-drugs-into-clinical-trials",
-          "source_title": "Enveda 获 3.11 亿美元 E 轮融资，推进天然来源 AI 药物进入临床试验",
-          "source_content_hash": "79b5761869f8dba5",
-          "quote": "The fresh funding, which was led by Catalio Capital Management, with participation from Iconiq and others",
-          "quote_hash": "4de0100c58ebb8c5bc3ca996fe00a665d79ecafef938ab278948ad6a72c3a4d4"
-        }
-      ],
-      "coverage_status": "researched",
-      "coverage_note": "已核实ICONIQ集团官网身份、业务分支及一般联络方式；AUM为官网自报且未在页面标注统计日期。“Iconiq”融资记录与具体基金/关联公司的匹配仍需逐条验证。",
-      "last_verified_at": "2026-09-25",
-      "profile_type": "organization",
       "identity_status": "verified"
     },
     "INV-581465289348eb": {
@@ -3620,6 +3620,130 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
+    "INV-6b19da600d84a4": {
+      "profile_type": "organization",
+      "summary": "Premji Invest 是由 Azim Premji 发起的长期投资机构，2006年设立，投资收益主要用于支持 Azim Premji Foundation 的公益工作。官网称其拥有超过150亿美元常青资本、累计投资160余项，组合公司总收入超过200亿美元，并记录12次IPO和7次并购；这些为机构自报的组合汇总指标，页面未标注统计口径及截止日。官网介绍投资覆盖金融服务、科技、消费、医疗健康与工业，并设有公开办公室地址及一般联系邮箱。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "设立年份",
+          "value": "2006年",
+          "source_id": "premji_purpose"
+        },
+        {
+          "field": "purpose",
+          "label": "机构使命",
+          "value": "以长期投资支持Azim Premji Foundation公益事业，官网称基金大部分收益流入公益资金池。",
+          "source_id": "premji_purpose"
+        },
+        {
+          "field": "sectors",
+          "label": "核心投资领域",
+          "value": [
+            "金融服务",
+            "科技",
+            "消费",
+            "医疗健康",
+            "工业"
+          ],
+          "source_id": "premji_purpose"
+        },
+        {
+          "field": "public_track_record",
+          "label": "组合规模与成果（机构自报）",
+          "value": "超过150亿美元常青资本、160余项投资、组合公司总收入超过200亿美元、12次IPO及7次并购；官网未标明统计截止日。",
+          "source_id": "premji_home"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-49f5b4d8c68adbdc"
+        },
+        {
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0b9a2de412bfecea"
+        },
+        {
+          "description": "融资来源记录：Clockwork.io · 轮次未披露 · 2026-10-05 · 本轮联合领投 · $31M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bffca0091f22129f"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Premji Invest",
+          "url": "https://in.premjiinvest.com/",
+          "source_id": "premji_home"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系邮箱（官网公开，非项目申请渠道）",
+          "value": "contact@premjiinvest.com",
+          "source_id": "premji_home"
+        },
+        {
+          "kind": "address",
+          "label": "印度办公室",
+          "value": "134, Doddakannelli, Sarjapur Road, Bangalore, Karnataka 560035",
+          "source_id": "premji_home"
+        },
+        {
+          "kind": "address",
+          "label": "美国办公室",
+          "value": "2180 Sand Hill Road, Suite 100, Menlo Park, California 94025",
+          "source_id": "premji_home"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "premji_home",
+          "source_url": "https://in.premjiinvest.com/",
+          "source_title": "Premji Invest 官方网站",
+          "source_content_hash": "091594455d0f010513e0d5679864fd902a06a02ec9130e8dd909f0ca1d18e504",
+          "quote": "官网公布其常青资本、投资数量、组合公司收入、IPO及并购统计，并列出办公室地址与一般邮箱。",
+          "quote_hash": "e998c90e1d54df6bed3b27cb6bf0ea872653fdcec3bdfbb059c84c9d2f0cb41c"
+        },
+        {
+          "source_id": "premji_purpose",
+          "source_url": "https://in.premjiinvest.com/purpose",
+          "source_title": "Our Purpose - Premji Invest",
+          "source_content_hash": "e0f8aa544a5bc932e914a0f10e18e0cdd24f7ae720c3bd1704fb8acf77e5721b",
+          "quote": "官网称Premji Invest于2006年设立，旨在支持Azim Premji Foundation，并投资金融服务、科技、消费、医疗健康和工业领域。",
+          "quote_hash": "4526d04e278c97b0e375c17c63dc63c1a15c030cb464cfdce3e36d65487f12fc"
+        },
+        {
+          "source_id": "FISRC-49f5b4d8c68adbdc",
+          "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+          "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+          "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+          "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+          "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+        },
+        {
+          "source_id": "FISRC-0b9a2de412bfecea",
+          "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
+          "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
+          "source_content_hash": "b097b8e1cde199ce",
+          "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
+          "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
+        },
+        {
+          "source_id": "FISRC-bffca0091f22129f",
+          "source_url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
+          "source_title": "Clockwork.io 融资 3100 万美元，LinkedIn、Together AI 和 WhiteFiber 采用其韧性软件以停止浪费 GPU 小时",
+          "source_content_hash": "e22fa368aac97459de6e31993e95c70d6b18d275b6c9a1c777d51a5f414caf25",
+          "quote": "The round was co-led by Premji Invest, Wing Venture Capital, and Seligman Ventures, with participation from existing investors NEA and e& Capital.",
+          "quote_hash": "4ddcf70543125357cdea74b2a8fd21735326f6efe40df67d153b70c69e08afe1"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "规模、组合数据与公益资金流向均为官网自报；官网同时提醒公众谨防冒用机构员工身份的投资诈骗。",
+      "last_verified_at": "2026-09-26"
     },
     "INV-f870c666bf84bd": {
       "profile_type": "organization",
@@ -4154,99 +4278,143 @@
       ],
       "identity_status": "verified"
     },
-    "INV-6b19da600d84a4": {
-      "profile_type": "organization",
-      "summary": "Premji Invest 是由 Azim Premji 发起的长期投资机构，2006年设立，投资收益主要用于支持 Azim Premji Foundation 的公益工作。官网称其拥有超过150亿美元常青资本、累计投资160余项，组合公司总收入超过200亿美元，并记录12次IPO和7次并购；这些为机构自报的组合汇总指标，页面未标注统计口径及截止日。官网介绍投资覆盖金融服务、科技、消费、医疗健康与工业，并设有公开办公室地址及一般联系邮箱。",
+    "INV-25dbfe1bcda658": {
+      "summary": "Peak XV Partners 是2023年 Sequoia Capital 全球业务重组后成立的独立机构，前身业务始于2006年的 Sequoia Capital India，后扩展至东南亚。官网自报管理资产超过100亿美元、累计投资450余家、组合企业在5个国家有36家IPO。该历史规模包含前身业务的累计口径，不能据此把Sequoia其他独立地区机构的投资业绩归入Peak XV。机构当前覆盖印度、亚太、美国等创新市场并跨阶段投资。",
       "facts": [
         {
-          "field": "founded",
-          "label": "设立年份",
-          "value": "2006年",
-          "source_id": "premji_purpose"
+          "field": "history",
+          "label": "品牌沿革",
+          "value": "前身于2006年以Sequoia Capital India开始，后扩展至东南亚；2023年全球业务重组后成立Peak XV Partners独立机构。",
+          "source_id": "peakxv_about"
         },
         {
-          "field": "purpose",
-          "label": "机构使命",
-          "value": "以长期投资支持Azim Premji Foundation公益事业，官网称基金大部分收益流入公益资金池。",
-          "source_id": "premji_purpose"
+          "field": "aum",
+          "label": "官网自报管理资产",
+          "value": "超过100亿美元（官网当前披露口径；未注明估值日期）",
+          "source_id": "peakxv_about"
         },
         {
-          "field": "sectors",
-          "label": "核心投资领域",
+          "field": "portfolio_count",
+          "label": "官网自报累计投资",
+          "value": "450余家企业（含品牌前身累计口径）",
+          "source_id": "peakxv_about"
+        },
+        {
+          "field": "ipo_track_record",
+          "label": "官网自报IPO",
+          "value": "5个国家共36家IPO（含品牌前身累计口径）",
+          "source_id": "peakxv_about"
+        },
+        {
+          "field": "stages",
+          "label": "投资阶段",
+          "value": "跨投资阶段；官网未将其限定于单一轮次",
+          "source_id": "peakxv_about"
+        },
+        {
+          "field": "geographies",
+          "label": "投资地域",
           "value": [
-            "金融服务",
-            "科技",
-            "消费",
-            "医疗健康",
-            "工业"
+            "印度",
+            "亚太",
+            "美国",
+            "其他全球创新中心"
           ],
-          "source_id": "premji_purpose"
-        },
-        {
-          "field": "public_track_record",
-          "label": "组合规模与成果（机构自报）",
-          "value": "超过150亿美元常青资本、160余项投资、组合公司总收入超过200亿美元、12次IPO及7次并购；官网未标明统计截止日。",
-          "source_id": "premji_home"
+          "source_id": "peakxv_about"
         }
       ],
-      "milestones": [],
+      "milestones": [
+        {
+          "date": "2006",
+          "description": "官网称其旅程始于Sequoia Capital India。",
+          "source_id": "peakxv_about"
+        },
+        {
+          "date": "2023",
+          "description": "Sequoia Capital全球业务重组，Peak XV Partners作为独立机构成立。",
+          "source_id": "peakxv_about"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Peak XV官网自报管理资产10B+美元、450+笔投资和5个国家36家IPO。官网同时说明这些数字跨越2006年开始的前身业务历史；这是管理人披露的累计组合数据，不是基金净回报或IRR，也不应覆盖其他独立Sequoia实体。",
+          "source_id": "peakxv_about"
+        },
+        {
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-49f5b4d8c68adbdc"
+        },
         {
           "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0b9a2de412bfecea"
         },
         {
-          "description": "融资来源记录：Clockwork.io · 轮次未披露 · 2026-10-05 · 本轮联合领投 · $31M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bffca0091f22129f"
-        },
-        {
-          "description": "融资来源记录：CScale · C轮 · 2026-09-30 · 本轮联合领投 · $145 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-98f84ad840508b39"
+          "description": "融资来源记录：Ringg · A轮 · 2026-08-25 · 本轮领投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-355d8aee33bd32ed"
         }
       ],
       "contacts": [
         {
           "kind": "website",
           "label": "官方网站",
-          "value": "Premji Invest",
-          "url": "https://in.premjiinvest.com/",
-          "source_id": "premji_home"
+          "value": "Peak XV Partners",
+          "url": "https://www.peakxv.com/",
+          "source_id": "peakxv_about"
         },
         {
           "kind": "email",
-          "label": "一般联系邮箱（官网公开，非项目申请渠道）",
-          "value": "contact@premjiinvest.com",
-          "source_id": "premji_home"
+          "label": "一般联系",
+          "value": "contactus@peakxv.com",
+          "url": "https://www.peakxv.com/about-us",
+          "source_id": "peakxv_contact"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系",
+          "value": "pr@peakxv.com",
+          "url": "https://www.peakxv.com/about-us",
+          "source_id": "peakxv_contact"
         },
         {
           "kind": "address",
-          "label": "印度办公室",
-          "value": "134, Doddakannelli, Sarjapur Road, Bangalore, Karnataka 560035",
-          "source_id": "premji_home"
-        },
-        {
-          "kind": "address",
-          "label": "美国办公室",
-          "value": "2180 Sand Hill Road, Suite 100, Menlo Park, California 94025",
-          "source_id": "premji_home"
+          "label": "官网列示办公室",
+          "value": "美国、印度、新加坡、阿联酋（页面未给出街道地址）",
+          "url": "https://www.peakxv.com/about-us",
+          "source_id": "peakxv_contact"
         }
       ],
       "sources": [
         {
-          "source_id": "premji_home",
-          "source_url": "https://in.premjiinvest.com/",
-          "source_title": "Premji Invest 官方网站",
-          "source_content_hash": "091594455d0f010513e0d5679864fd902a06a02ec9130e8dd909f0ca1d18e504",
-          "quote": "官网公布其常青资本、投资数量、组合公司收入、IPO及并购统计，并列出办公室地址与一般邮箱。",
-          "quote_hash": "e998c90e1d54df6bed3b27cb6bf0ea872653fdcec3bdfbb059c84c9d2f0cb41c"
+          "source_id": "peakxv_about",
+          "source_url": "https://www.peakxv.com/about-us",
+          "source_title": "About Peak XV Partners | Our Story & Investment Approach",
+          "source_content_hash": "5464757b6bf99a39ef7950e6309e25812a82caf385c1fa47225cd09e5d49e16e",
+          "quote": "$10B+ assets under management, 450+ investments, 36 IPOs in 5 countries. We began our journey in 2006 as Sequoia Capital India, later expanding into Southeast Asia. In 2023, Sequoia Capital restructured its global business into independent entities, leading to the creation of Peak XV.",
+          "quote_hash": "d38946bbc464e453f204aef347bf49520e363b57b2652ae68097c5b324bb92bb"
         },
         {
-          "source_id": "premji_purpose",
-          "source_url": "https://in.premjiinvest.com/purpose",
-          "source_title": "Our Purpose - Premji Invest",
-          "source_content_hash": "e0f8aa544a5bc932e914a0f10e18e0cdd24f7ae720c3bd1704fb8acf77e5721b",
-          "quote": "官网称Premji Invest于2006年设立，旨在支持Azim Premji Foundation，并投资金融服务、科技、消费、医疗健康和工业领域。",
-          "quote_hash": "4526d04e278c97b0e375c17c63dc63c1a15c030cb464cfdce3e36d65487f12fc"
+          "source_id": "peakxv_strategy",
+          "source_url": "https://www.peakxv.com/about-us",
+          "source_title": "About Peak XV Partners | Our Story & Investment Approach",
+          "source_content_hash": "5464757b6bf99a39ef7950e6309e25812a82caf385c1fa47225cd09e5d49e16e",
+          "quote": "Today, as Peak XV, we invest across India, APAC, the United States, and other global innovation hubs. We invest across stages and remain deeply committed through every phase of the journey",
+          "quote_hash": "edcea241b56ad0aebadf3347bd197959d96359466ee588d3d68a2e132b96fe15"
+        },
+        {
+          "source_id": "peakxv_contact",
+          "source_url": "https://www.peakxv.com/about-us",
+          "source_title": "About Peak XV Partners | Our Story & Investment Approach",
+          "source_content_hash": "5464757b6bf99a39ef7950e6309e25812a82caf385c1fa47225cd09e5d49e16e",
+          "quote": "For general inquiries, please email: contactus@peakxv.com",
+          "quote_hash": "67ccb303d7dacfc126f57f753798fc0534b52fe714db092b70ea868ceb16e9f8"
+        },
+        {
+          "source_id": "FISRC-49f5b4d8c68adbdc",
+          "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+          "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+          "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+          "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+          "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
         },
         {
           "source_id": "FISRC-0b9a2de412bfecea",
@@ -4257,26 +4425,19 @@
           "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
         },
         {
-          "source_id": "FISRC-bffca0091f22129f",
-          "source_url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
-          "source_title": "Clockwork.io 融资 3100 万美元，LinkedIn、Together AI 和 WhiteFiber 采用其韧性软件以停止浪费 GPU 小时",
-          "source_content_hash": "e22fa368aac97459de6e31993e95c70d6b18d275b6c9a1c777d51a5f414caf25",
-          "quote": "The round was co-led by Premji Invest, Wing Venture Capital, and Seligman Ventures, with participation from existing investors NEA and e& Capital.",
-          "quote_hash": "4ddcf70543125357cdea74b2a8fd21735326f6efe40df67d153b70c69e08afe1"
-        },
-        {
-          "source_id": "FISRC-98f84ad840508b39",
-          "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
-          "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
-          "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
-          "quote": "The round was co-led by Atreides Management, Valor Equity Partners, and Premji Invest.",
-          "quote_hash": "60c86cc928a83dca9a72d7c77b5efc8d4b740c887bb5858726dabac4d7d4a85d"
+          "source_id": "FISRC-355d8aee33bd32ed",
+          "source_url": "https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-it-pushes-voice-ai-past-the-phone-call/",
+          "source_title": "印度Ringg获Peak XV支持，推动语音AI超越电话通话",
+          "source_content_hash": "bd8d4c58629e67c5",
+          "quote": "The company said today it has landed $10 million from Peak XV Partners as an extension of its Series A.",
+          "quote_hash": "43ec6c02307a64e405126560d1fe2248eb9c318b190867c2afbfbd3ede7e60bb"
         }
       ],
-      "identity_status": "verified",
       "coverage_status": "researched",
-      "coverage_note": "规模、组合数据与公益资金流向均为官网自报；官网同时提醒公众谨防冒用机构员工身份的投资诈骗。",
-      "last_verified_at": "2026-09-26"
+      "coverage_note": "沿革、规模、地域、一般及媒体邮箱来自Peak XV官网；规模统计为机构自报且包含前身业务历史，不归入其他Sequoia实体，不作为审计回报。",
+      "last_verified_at": "2026-09-25",
+      "profile_type": "organization",
+      "identity_status": "verified"
     },
     "INV-fab7efd306c6f9": {
       "summary": "Founders Fund 是一家专注支持雄心勃勃、试图解决重大技术或科学问题的初创公司的风险投资机构。官网团队页列有 Peter Thiel、Trae Stephens、Lauren Gross、Joey Krug 等合伙人及投资团队成员；官网公开材料未在本次核验中给出可靠的成立年份、AUM 或通用项目投递邮箱，因此不补猜。",
@@ -5602,167 +5763,6 @@
         }
       ],
       "last_verified_at": "2026-10-02"
-    },
-    "INV-25dbfe1bcda658": {
-      "summary": "Peak XV Partners 是2023年 Sequoia Capital 全球业务重组后成立的独立机构，前身业务始于2006年的 Sequoia Capital India，后扩展至东南亚。官网自报管理资产超过100亿美元、累计投资450余家、组合企业在5个国家有36家IPO。该历史规模包含前身业务的累计口径，不能据此把Sequoia其他独立地区机构的投资业绩归入Peak XV。机构当前覆盖印度、亚太、美国等创新市场并跨阶段投资。",
-      "facts": [
-        {
-          "field": "history",
-          "label": "品牌沿革",
-          "value": "前身于2006年以Sequoia Capital India开始，后扩展至东南亚；2023年全球业务重组后成立Peak XV Partners独立机构。",
-          "source_id": "peakxv_about"
-        },
-        {
-          "field": "aum",
-          "label": "官网自报管理资产",
-          "value": "超过100亿美元（官网当前披露口径；未注明估值日期）",
-          "source_id": "peakxv_about"
-        },
-        {
-          "field": "portfolio_count",
-          "label": "官网自报累计投资",
-          "value": "450余家企业（含品牌前身累计口径）",
-          "source_id": "peakxv_about"
-        },
-        {
-          "field": "ipo_track_record",
-          "label": "官网自报IPO",
-          "value": "5个国家共36家IPO（含品牌前身累计口径）",
-          "source_id": "peakxv_about"
-        },
-        {
-          "field": "stages",
-          "label": "投资阶段",
-          "value": "跨投资阶段；官网未将其限定于单一轮次",
-          "source_id": "peakxv_about"
-        },
-        {
-          "field": "geographies",
-          "label": "投资地域",
-          "value": [
-            "印度",
-            "亚太",
-            "美国",
-            "其他全球创新中心"
-          ],
-          "source_id": "peakxv_about"
-        }
-      ],
-      "milestones": [
-        {
-          "date": "2006",
-          "description": "官网称其旅程始于Sequoia Capital India。",
-          "source_id": "peakxv_about"
-        },
-        {
-          "date": "2023",
-          "description": "Sequoia Capital全球业务重组，Peak XV Partners作为独立机构成立。",
-          "source_id": "peakxv_about"
-        }
-      ],
-      "track_record": [
-        {
-          "description": "Peak XV官网自报管理资产10B+美元、450+笔投资和5个国家36家IPO。官网同时说明这些数字跨越2006年开始的前身业务历史；这是管理人披露的累计组合数据，不是基金净回报或IRR，也不应覆盖其他独立Sequoia实体。",
-          "source_id": "peakxv_about"
-        },
-        {
-          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0b9a2de412bfecea"
-        },
-        {
-          "description": "融资来源记录：Ringg · A轮 · 2026-08-25 · 本轮领投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-355d8aee33bd32ed"
-        },
-        {
-          "description": "融资来源记录：Discovered Materials · 种子轮 · 2026-08-10 · 本轮参投 · $9 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c3267e56ad969be2"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官方网站",
-          "value": "Peak XV Partners",
-          "url": "https://www.peakxv.com/",
-          "source_id": "peakxv_about"
-        },
-        {
-          "kind": "email",
-          "label": "一般联系",
-          "value": "contactus@peakxv.com",
-          "url": "https://www.peakxv.com/about-us",
-          "source_id": "peakxv_contact"
-        },
-        {
-          "kind": "email",
-          "label": "媒体联系",
-          "value": "pr@peakxv.com",
-          "url": "https://www.peakxv.com/about-us",
-          "source_id": "peakxv_contact"
-        },
-        {
-          "kind": "address",
-          "label": "官网列示办公室",
-          "value": "美国、印度、新加坡、阿联酋（页面未给出街道地址）",
-          "url": "https://www.peakxv.com/about-us",
-          "source_id": "peakxv_contact"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "peakxv_about",
-          "source_url": "https://www.peakxv.com/about-us",
-          "source_title": "About Peak XV Partners | Our Story & Investment Approach",
-          "source_content_hash": "5464757b6bf99a39ef7950e6309e25812a82caf385c1fa47225cd09e5d49e16e",
-          "quote": "$10B+ assets under management, 450+ investments, 36 IPOs in 5 countries. We began our journey in 2006 as Sequoia Capital India, later expanding into Southeast Asia. In 2023, Sequoia Capital restructured its global business into independent entities, leading to the creation of Peak XV.",
-          "quote_hash": "d38946bbc464e453f204aef347bf49520e363b57b2652ae68097c5b324bb92bb"
-        },
-        {
-          "source_id": "peakxv_strategy",
-          "source_url": "https://www.peakxv.com/about-us",
-          "source_title": "About Peak XV Partners | Our Story & Investment Approach",
-          "source_content_hash": "5464757b6bf99a39ef7950e6309e25812a82caf385c1fa47225cd09e5d49e16e",
-          "quote": "Today, as Peak XV, we invest across India, APAC, the United States, and other global innovation hubs. We invest across stages and remain deeply committed through every phase of the journey",
-          "quote_hash": "edcea241b56ad0aebadf3347bd197959d96359466ee588d3d68a2e132b96fe15"
-        },
-        {
-          "source_id": "peakxv_contact",
-          "source_url": "https://www.peakxv.com/about-us",
-          "source_title": "About Peak XV Partners | Our Story & Investment Approach",
-          "source_content_hash": "5464757b6bf99a39ef7950e6309e25812a82caf385c1fa47225cd09e5d49e16e",
-          "quote": "For general inquiries, please email: contactus@peakxv.com",
-          "quote_hash": "67ccb303d7dacfc126f57f753798fc0534b52fe714db092b70ea868ceb16e9f8"
-        },
-        {
-          "source_id": "FISRC-0b9a2de412bfecea",
-          "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
-          "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
-          "source_content_hash": "b097b8e1cde199ce",
-          "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
-          "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
-        },
-        {
-          "source_id": "FISRC-355d8aee33bd32ed",
-          "source_url": "https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-it-pushes-voice-ai-past-the-phone-call/",
-          "source_title": "印度Ringg获Peak XV支持，推动语音AI超越电话通话",
-          "source_content_hash": "bd8d4c58629e67c5",
-          "quote": "The company said today it has landed $10 million from Peak XV Partners as an extension of its Series A.",
-          "quote_hash": "43ec6c02307a64e405126560d1fe2248eb9c318b190867c2afbfbd3ede7e60bb"
-        },
-        {
-          "source_id": "FISRC-c3267e56ad969be2",
-          "source_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
-          "source_title": "Discovered Materials 正玩 AI 打地鼠游戏，寻找更凉爽的芯片",
-          "source_content_hash": "c3f8c7225d49e92f",
-          "quote": "with investment from Peak XV Partners",
-          "quote_hash": "86555f8c52b345c108899bf4aee7acef5d74cf1473e4ca456d934e5410c68b4b"
-        }
-      ],
-      "coverage_status": "researched",
-      "coverage_note": "沿革、规模、地域、一般及媒体邮箱来自Peak XV官网；规模统计为机构自报且包含前身业务历史，不归入其他Sequoia实体，不作为审计回报。",
-      "last_verified_at": "2026-09-25",
-      "profile_type": "organization",
-      "identity_status": "verified"
     },
     "INV-91198398d07963": {
       "summary": "B Capital 是一家提供早期及成长期投资的全球风险投资机构，官方资料列出的重点领域包括科技、医疗健康及能源与韧性。官网自述管理资产超过 120 亿美元、投资组合公司超过 200 家，并在全球设有 9 个办公地点。",
@@ -7832,6 +7832,158 @@
       "last_verified_at": "2026-09-25",
       "profile_type": "organization",
       "identity_status": "verified"
+    },
+    "INV-4e1e46cb1af197": {
+      "summary": "First Round Capital 是面向公司创立最早阶段的风险投资机构，关注天使、Pre-seed 与 Seed 阶段，并为早期团队提供招聘、市场进入及产品市场匹配等运营支持。官网称其与 500 多支早期团队合作，并表示投资团队成员均有创办公司经历。",
+      "facts": [
+        {
+          "field": "investment_stages",
+          "label": "官网披露投资阶段",
+          "value": [
+            "天使",
+            "Pre-seed",
+            "Seed"
+          ],
+          "source_id": "firstround_who"
+        },
+        {
+          "field": "founder_support",
+          "label": "官网披露的创始人支持",
+          "value": [
+            "招聘",
+            "市场营销与销售策略",
+            "产品市场匹配支持"
+          ],
+          "source_id": "firstround_work"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "官网披露合作团队数量",
+          "value": "500 多支早期团队；机构自述，未标注统计日期",
+          "source_id": "firstround_who"
+        },
+        {
+          "field": "investment_geography",
+          "label": "官网披露地域重点",
+          "value": "主要关注美国公司；官网称对少数美国以外公司有例外投资",
+          "source_id": "firstround_home"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "官网展示投资组合创始人案例，包括 Uber、Square、Looker、Roblox 与 Notion；此为官网列举案例，不代表投资业绩保证。",
+          "source_id": "firstround_who"
+        },
+        {
+          "description": "First Round 官网披露与 500 多支早期团队合作。",
+          "source_id": "firstround_who"
+        },
+        {
+          "description": "融资来源记录：Mach9 · A轮 · 2026-10-21 · 本轮联合领投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2115ba1066fba41f"
+        },
+        {
+          "description": "融资来源记录：Healthleap · 多轮融资 · 2026-10-07 · 本轮联合领投 · $38 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-576f8703e59d7c0a"
+        },
+        {
+          "description": "融资来源记录：Flai · A轮 · 2026-10-06 · 本轮参投 · $27 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c8bf3839b23b0657"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "First Round",
+          "url": "https://www.firstround.com/",
+          "source_id": "firstround_home"
+        },
+        {
+          "kind": "contact_form",
+          "label": "融资联系与投资流程说明",
+          "value": "官网建议创始人向投资团队介绍项目；具体联系入口见官网 Who We Back 页面",
+          "url": "https://www.firstround.com/who-we-back",
+          "source_id": "firstround_who"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "921 Front Street, San Francisco, CA 94111",
+          "url": "https://www.firstround.com/who-we-back",
+          "source_id": "firstround_who"
+        },
+        {
+          "kind": "address",
+          "label": "纽约办公室",
+          "value": "165 Mercer Street, Floor 2, New York, NY 10012",
+          "url": "https://www.firstround.com/who-we-back",
+          "source_id": "firstround_who"
+        },
+        {
+          "kind": "address",
+          "label": "费城办公室",
+          "value": "2400 Market St, Suite 237, Philadelphia, PA 19103",
+          "url": "https://www.firstround.com/who-we-back",
+          "source_id": "firstround_who"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "firstround_who",
+          "source_url": "https://www.firstround.com/who-we-back",
+          "source_title": "Who We Back | First Round",
+          "source_content_hash": "5f824e317ed8b55c33e1e0d6a823b7c80417f7038332b3f60964c783ccbe51b4",
+          "quote": "We back founders who go unreasonably deep to get their beginnings right. We have worked with 500+ early teams. We are focused on being the world’s best partner for founders at the very first stages of company creation.",
+          "quote_hash": "7ee6d9eaee7fecb06f847c734503a96cbacafbe78dab566a2f3e91098b7541b4"
+        },
+        {
+          "source_id": "firstround_work",
+          "source_url": "https://www.firstround.com/how-we-work",
+          "source_title": "How We Work | First Round",
+          "source_content_hash": "6cc3a06f44a5302b5ef3dbfd526385c27b1f83c10b8d8c2538801a9ea5b1bbdc",
+          "quote": "We’re focused on being the world’s best partner for founders at the very first stages of company creation. We work with founders on product-market fit, team building, recruiting and early marketing.",
+          "quote_hash": "7aca1eb68ee9bba770c4b284462def172bcda0d1450d0b7935d01b70fecb91c9"
+        },
+        {
+          "source_id": "firstround_home",
+          "source_url": "https://www.firstround.com/",
+          "source_title": "Home | First Round",
+          "source_content_hash": "70e20fc889b99f5d50352691d2ead72fc63c1da0b9ba81f16ebe3079470681b8",
+          "quote": "We don’t see divisions between angel, pre-seed and seed — we’re interested across the board. We tend to focus exclusively on companies based in the U.S., with a few exceptions. Our offices are in San Francisco, New York, and Philadelphia.",
+          "quote_hash": "761f05201de282f24f4ba605b1a81e7a2c3e67b38526412e93069c51490e4cb0"
+        },
+        {
+          "source_id": "FISRC-2115ba1066fba41f",
+          "source_url": "https://www.prnewswire.com/news-releases/mach9-raises-34m-series-a-to-bring-civil-engineering-into-the-ai-era-302915153.html",
+          "source_title": "Mach9 完成 3400 万美元 A 轮融资，将土木工程带入 AI 时代",
+          "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+          "quote": "a $34 million Series A co-led by First Round Capital and Bessemer Venture Partners",
+          "quote_hash": "981eb537c1209c249d3ea00482dce68d2e5a3035546bf321a44970b75acebf3a"
+        },
+        {
+          "source_id": "FISRC-576f8703e59d7c0a",
+          "source_url": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
+          "source_title": "Healthleap 融资 3800 万美元，用于其可标记可能需要进一步关注的医院患者的 AI",
+          "source_content_hash": "dd3f508c26a35a9ea3719adeef20176779a1b8e6ff16bdd776eb136e375ecdf5",
+          "quote": "The financing includes an $8 million seed round co-led by Sequoia Capital and First Round Capital, and a $30 million Series A led by Hummingbird Ventures.",
+          "quote_hash": "6660ddca023debc1bb7701deb7bca612fc2833a3a829d8f27f33bd50478952c9"
+        },
+        {
+          "source_id": "FISRC-c8bf3839b23b0657",
+          "source_url": "https://www.useflai.com/blog/flai-series-a-base10",
+          "source_title": "Flai raises $27M led by Base10 Partners to automate car dealership operations",
+          "source_content_hash": "c53320a25185219c",
+          "quote": "We're excited to announce that Flai has raised a $27 million Series A led by Base10 Partners, with participation from Toyota Ventures, First Round Capital, Y Combinator, The Friedkin Group, and Findlay Automotive Group.",
+          "quote_hash": "27712d3c2c719515c0cdaf37039f50ef13095b51d6dc774c8849eca9f25d94c9"
+        }
+      ],
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "INV-519f1146b99bd7": {
       "summary": "T. Rowe Price 是一家独立的全球投资管理机构，官网称其提供股票、固定收益和多资产策略，并自1937年以来服务投资者。",
@@ -10404,6 +10556,90 @@
       "profile_type": "organization",
       "identity_status": "verified"
     },
+    "INV-97bea5e589d4d7": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "法律名称线索来自 Greenoaks 官方隐私声明；本轮投资关系据 Anthropic 官方公告，不推断具体基金。",
+      "summary": "Greenoaks 官方隐私声明将其法律称谓写作 Greenoaks LLC 并提及关联公司及投资尽调；Anthropic Series H 官方公告将 Greenoaks 列为领投机构之一。融资材料未披露具体基金载体。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "官方隐私声明",
+          "value": "Greenoaks 官方声明使用法律称谓 Greenoaks LLC，并提及关联公司。",
+          "source_id": "PROFILE-COLLECT-INV-97bea5e589d4d7-1"
+        },
+        {
+          "field": "reported_investment",
+          "label": "融资披露案例",
+          "value": "Anthropic Series H 公告将 Greenoaks 列为领投机构之一。",
+          "source_id": "PROFILE-COLLECT-INV-97bea5e589d4d7-2"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Pigment · E轮 · 2026-10-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6737e55341eb5266"
+        },
+        {
+          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f581afce52cf5bef"
+        },
+        {
+          "description": "融资来源记录：AIR · 种子轮 · 2026-09-01 · 本轮领投 · $50M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0426e4b3b9347f4f"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "PROFILE-COLLECT-INV-97bea5e589d4d7-1",
+          "source_url": "https://greenoaks.com/privacy",
+          "source_title": "Privacy Notice | Greenoaks",
+          "source_content_hash": "0f790907790789cbeb9897d68d4ccdf48089c400c03949b37239876d7289941d",
+          "quote": "Greenoaks LLC (“Greenoaks”) and our affiliates",
+          "quote_hash": "1ff60a13926f50671d72e8b33513387e00ec655e271e9dc5409b520065a22f78"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-97bea5e589d4d7-2",
+          "source_url": "https://www.anthropic.com/news/series-h",
+          "source_title": "Anthropic raises $65B Series H at $965B valuation \\ Anthropic",
+          "source_content_hash": "c00be615fd4e35832b47e33a715a08c58e5e3c7d7839c6775a6edc97ab162fd9",
+          "quote": "Greenoaks, and Sequoia Capital",
+          "quote_hash": "fa24778cfd7c2d26c7f8ebda518fb1810040fd01beae0ea7f072d6d62cf75856"
+        },
+        {
+          "source_id": "FISRC-6737e55341eb5266",
+          "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+          "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+          "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+          "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+          "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+        },
+        {
+          "source_id": "FISRC-f581afce52cf5bef",
+          "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
+          "source_title": "Ramp估值达600亿美元，深入布局AI",
+          "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
+          "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
+          "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
+        },
+        {
+          "source_id": "FISRC-0426e4b3b9347f4f",
+          "source_url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",
+          "source_title": "AI 安全初创公司 AIR 出手隐身并融资 5000 万美元，为企业审查 AI 智能体所用技能和插件",
+          "source_content_hash": "f272d6219c1373f8",
+          "quote": "Sequoia led the first round, while Greenoaks led the second, Saban said.",
+          "quote_hash": "88c6d16a9401bf99e7028ca06409d2a5469bd0d04db4c7c63280de67702392ef"
+        }
+      ],
+      "last_verified_at": "2026-10-04",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
+    },
     "INV-362c390e4bea61": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -11660,158 +11896,6 @@
         }
       ],
       "last_verified_at": "2026-09-28"
-    },
-    "INV-4e1e46cb1af197": {
-      "summary": "First Round Capital 是面向公司创立最早阶段的风险投资机构，关注天使、Pre-seed 与 Seed 阶段，并为早期团队提供招聘、市场进入及产品市场匹配等运营支持。官网称其与 500 多支早期团队合作，并表示投资团队成员均有创办公司经历。",
-      "facts": [
-        {
-          "field": "investment_stages",
-          "label": "官网披露投资阶段",
-          "value": [
-            "天使",
-            "Pre-seed",
-            "Seed"
-          ],
-          "source_id": "firstround_who"
-        },
-        {
-          "field": "founder_support",
-          "label": "官网披露的创始人支持",
-          "value": [
-            "招聘",
-            "市场营销与销售策略",
-            "产品市场匹配支持"
-          ],
-          "source_id": "firstround_work"
-        },
-        {
-          "field": "portfolio_count",
-          "label": "官网披露合作团队数量",
-          "value": "500 多支早期团队；机构自述，未标注统计日期",
-          "source_id": "firstround_who"
-        },
-        {
-          "field": "investment_geography",
-          "label": "官网披露地域重点",
-          "value": "主要关注美国公司；官网称对少数美国以外公司有例外投资",
-          "source_id": "firstround_home"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "官网展示投资组合创始人案例，包括 Uber、Square、Looker、Roblox 与 Notion；此为官网列举案例，不代表投资业绩保证。",
-          "source_id": "firstround_who"
-        },
-        {
-          "description": "First Round 官网披露与 500 多支早期团队合作。",
-          "source_id": "firstround_who"
-        },
-        {
-          "description": "融资来源记录：Healthleap · 多轮融资 · 2026-10-07 · 本轮联合领投 · $38 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-576f8703e59d7c0a"
-        },
-        {
-          "description": "融资来源记录：Flai · A轮 · 2026-10-06 · 本轮参投 · $27 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c8bf3839b23b0657"
-        },
-        {
-          "description": "融资来源记录：Ellis AI · 种子轮 · 2026-07-31 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a8e6dd6c34cd416a"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官方网站",
-          "value": "First Round",
-          "url": "https://www.firstround.com/",
-          "source_id": "firstround_home"
-        },
-        {
-          "kind": "contact_form",
-          "label": "融资联系与投资流程说明",
-          "value": "官网建议创始人向投资团队介绍项目；具体联系入口见官网 Who We Back 页面",
-          "url": "https://www.firstround.com/who-we-back",
-          "source_id": "firstround_who"
-        },
-        {
-          "kind": "address",
-          "label": "旧金山办公室",
-          "value": "921 Front Street, San Francisco, CA 94111",
-          "url": "https://www.firstround.com/who-we-back",
-          "source_id": "firstround_who"
-        },
-        {
-          "kind": "address",
-          "label": "纽约办公室",
-          "value": "165 Mercer Street, Floor 2, New York, NY 10012",
-          "url": "https://www.firstround.com/who-we-back",
-          "source_id": "firstround_who"
-        },
-        {
-          "kind": "address",
-          "label": "费城办公室",
-          "value": "2400 Market St, Suite 237, Philadelphia, PA 19103",
-          "url": "https://www.firstround.com/who-we-back",
-          "source_id": "firstround_who"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "firstround_who",
-          "source_url": "https://www.firstround.com/who-we-back",
-          "source_title": "Who We Back | First Round",
-          "source_content_hash": "5f824e317ed8b55c33e1e0d6a823b7c80417f7038332b3f60964c783ccbe51b4",
-          "quote": "We back founders who go unreasonably deep to get their beginnings right. We have worked with 500+ early teams. We are focused on being the world’s best partner for founders at the very first stages of company creation.",
-          "quote_hash": "7ee6d9eaee7fecb06f847c734503a96cbacafbe78dab566a2f3e91098b7541b4"
-        },
-        {
-          "source_id": "firstround_work",
-          "source_url": "https://www.firstround.com/how-we-work",
-          "source_title": "How We Work | First Round",
-          "source_content_hash": "6cc3a06f44a5302b5ef3dbfd526385c27b1f83c10b8d8c2538801a9ea5b1bbdc",
-          "quote": "We’re focused on being the world’s best partner for founders at the very first stages of company creation. We work with founders on product-market fit, team building, recruiting and early marketing.",
-          "quote_hash": "7aca1eb68ee9bba770c4b284462def172bcda0d1450d0b7935d01b70fecb91c9"
-        },
-        {
-          "source_id": "firstround_home",
-          "source_url": "https://www.firstround.com/",
-          "source_title": "Home | First Round",
-          "source_content_hash": "70e20fc889b99f5d50352691d2ead72fc63c1da0b9ba81f16ebe3079470681b8",
-          "quote": "We don’t see divisions between angel, pre-seed and seed — we’re interested across the board. We tend to focus exclusively on companies based in the U.S., with a few exceptions. Our offices are in San Francisco, New York, and Philadelphia.",
-          "quote_hash": "761f05201de282f24f4ba605b1a81e7a2c3e67b38526412e93069c51490e4cb0"
-        },
-        {
-          "source_id": "FISRC-576f8703e59d7c0a",
-          "source_url": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
-          "source_title": "Healthleap 融资 3800 万美元，用于其可标记可能需要进一步关注的医院患者的 AI",
-          "source_content_hash": "dd3f508c26a35a9ea3719adeef20176779a1b8e6ff16bdd776eb136e375ecdf5",
-          "quote": "The financing includes an $8 million seed round co-led by Sequoia Capital and First Round Capital, and a $30 million Series A led by Hummingbird Ventures.",
-          "quote_hash": "6660ddca023debc1bb7701deb7bca612fc2833a3a829d8f27f33bd50478952c9"
-        },
-        {
-          "source_id": "FISRC-c8bf3839b23b0657",
-          "source_url": "https://www.useflai.com/blog/flai-series-a-base10",
-          "source_title": "Flai raises $27M led by Base10 Partners to automate car dealership operations",
-          "source_content_hash": "c53320a25185219c",
-          "quote": "We're excited to announce that Flai has raised a $27 million Series A led by Base10 Partners, with participation from Toyota Ventures, First Round Capital, Y Combinator, The Friedkin Group, and Findlay Automotive Group.",
-          "quote_hash": "27712d3c2c719515c0cdaf37039f50ef13095b51d6dc774c8849eca9f25d94c9"
-        },
-        {
-          "source_id": "FISRC-a8e6dd6c34cd416a",
-          "source_url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/",
-          "source_title": "连续创业者Ryan Williams为面向私募信贷经理的AI初创公司筹集1000万美元种子资金",
-          "source_content_hash": "dd828ac38a132ac1",
-          "quote": "Ellis AI announced Thursday its emergence from stealth with $10 million in seed funding from investors including First Round Capital, 645 Ventures, Harlem Capital, Khosla Ventures, Thrive Capital, Slow Capital, Kearny Jackson, and Ariel Alternatives CEO Mellody Hobson.",
-          "quote_hash": "eab59ac0f81b233b7afca4c7418c7f27f758e3941c5b036a0a3aaacc91fd0d58"
-        }
-      ],
-      "last_verified_at": "2026-09-26",
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "INV-17e768f2a74daf": {
       "profile_type": "organization",
@@ -14650,6 +14734,239 @@
       ],
       "last_verified_at": "2026-10-03"
     },
+    "INV-c1a95750e9b0e9": {
+      "profile_type": "organization",
+      "summary": "IVP（Institutional Venture Partners）是一家支持快速成长科技企业的风险投资机构。IVP官网介绍其在企业关键成长阶段投资，计划每年支持约10家公司，并以投资团队为创业者提供增长支持；官网组合页面列出多个科技行业和企业案例。机构官网提供美国及英国办公室地址、电话及媒体联络邮箱。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "风险投资机构",
+          "source_id": "ivp_approach"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资策略",
+          "value": "聚焦企业关键成长阶段，每年约支持10家公司（官网自述）。",
+          "source_id": "ivp_approach"
+        },
+        {
+          "field": "sectors",
+          "label": "官网组合行业筛选",
+          "value": [
+            "人工智能",
+            "消费",
+            "医疗",
+            "金融科技与加密资产",
+            "基础设施",
+            "应用软件"
+          ],
+          "source_id": "ivp_portfolio"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "官网组合数据库按AI、消费、医疗、金融科技与加密资产、基础设施及应用软件分类展示公司；未将组合清单视为基金回报或完整投资记录。",
+          "source_id": "ivp_portfolio"
+        },
+        {
+          "description": "融资来源记录：Pigment · E轮 · 2026-10-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6737e55341eb5266"
+        },
+        {
+          "description": "融资来源记录：Wonderful · C轮 · 2026-09-02 · 本轮参投 · $550 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3bc5a4e973b035eb"
+        },
+        {
+          "description": "融资来源记录：Suno · D轮 · 2026-06-03 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8a34984c8e02defc"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "IVP",
+          "url": "https://www.ivp.com/",
+          "source_id": "ivp_approach"
+        },
+        {
+          "kind": "phone",
+          "label": "旧金山办公室",
+          "value": "415.432.4660",
+          "source_id": "ivp_contact"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "747 Front Street, Ste 100, San Francisco, CA 94111",
+          "source_id": "ivp_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "硅谷办公室",
+          "value": "650.854.0132",
+          "source_id": "ivp_contact"
+        },
+        {
+          "kind": "address",
+          "label": "硅谷办公室",
+          "value": "3000 Sand Hill Road, Bldg 2, Ste 250, Menlo Park, CA 94025",
+          "source_id": "ivp_contact"
+        },
+        {
+          "kind": "address",
+          "label": "伦敦办公室",
+          "value": "37-41 Mortimer Street, 1st Floor, S1, Fitzrovia, London, England W1T 3JH",
+          "source_id": "ivp_contact"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系邮箱",
+          "value": "pr@ivp.com",
+          "source_id": "ivp_contact"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "ivp_approach",
+          "source_url": "https://www.ivp.com/team/approach/",
+          "source_title": "Our Approach - IVP",
+          "source_content_hash": "d19bfa44e85475e90f09370aa5fc399cb0af94cd5ee2a45971633e21741e8f87",
+          "quote": "IVP官网称其在企业关键成长阶段投资，每年约支持10家公司，并由团队提供主动增长支持。",
+          "quote_hash": "b34637e23ba13afa33f372770c1b250d0be0812bd7fb6aed5f3c11d6cb07aa1b"
+        },
+        {
+          "source_id": "ivp_portfolio",
+          "source_url": "https://www.ivp.com/portfolio/",
+          "source_title": "Portfolio - IVP",
+          "source_content_hash": "94fd0bf6fd43ed906c397e404591ec12bde7bfb8396316b84f2cf946a0d1e365",
+          "quote": "IVP官网组合页面按AI、消费、医疗、金融科技、基础设施等行业分类展示组合企业。",
+          "quote_hash": "98e5a5f3fd44ca56a69b11931f7d84d40b47bae3c3124bd82a4ab368b862f441"
+        },
+        {
+          "source_id": "ivp_contact",
+          "source_url": "https://www.ivp.com/contact/",
+          "source_title": "Contact - IVP",
+          "source_content_hash": "3cf17088df8473dac881575475094539705d7afdd386e6980adea4e29711ab85",
+          "quote": "IVP官网公布旧金山、硅谷及伦敦办公室地址，旧金山和硅谷电话及媒体邮箱。",
+          "quote_hash": "45c6d385cafc2c7c1cd89245ec618c98351dfe56932b158584276b61a1209828"
+        },
+        {
+          "source_id": "FISRC-6737e55341eb5266",
+          "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+          "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+          "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+          "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+          "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+        },
+        {
+          "source_id": "FISRC-3bc5a4e973b035eb",
+          "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+          "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+          "source_content_hash": "290d66b36443e7c5",
+          "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
+          "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
+        },
+        {
+          "source_id": "FISRC-8a34984c8e02defc",
+          "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
+          "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
+          "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
+          "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
+          "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资策略、行业与联系方式来自IVP官网；“每年约10家”是机构公开描述，不视为完整基金年度投资统计。",
+      "last_verified_at": "2026-09-26"
+    },
+    "INV-08f80474dfccc1": {
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Meritech 官网自述为与科技公司合作的投资机构；Cognition 官方 Series E 公告将其列为本轮投资方之一。官网将其描述为小型、平等合伙制机构。",
+      "coverage_note": "机构自述来自 Meritech 官网；本轮参投关系来自 Cognition 公司公告，未推断具体基金载体。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网机构定位",
+          "value": "官网称 Meritech 是一家投资公司，并采用平等合伙制。",
+          "source_id": "PROFILE-COLLECT-INV-08f80474dfccc1-1"
+        },
+        {
+          "field": "reported_investment",
+          "label": "融资披露案例",
+          "value": "Cognition Series E 公告将 Meritech 列为本轮投资方。",
+          "source_id": "PROFILE-COLLECT-INV-08f80474dfccc1-2"
+        }
+      ],
+      "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "track_record": [
+        {
+          "description": "融资来源记录：Pigment · E轮 · 2026-10-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6737e55341eb5266"
+        },
+        {
+          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-61aa8db010b34dfa"
+        },
+        {
+          "description": "融资来源记录：Lumilens Inc. · C轮 · 2026-08-06 · 本轮联合领投 · $900M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a967da2448674734"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "PROFILE-COLLECT-INV-08f80474dfccc1-1",
+          "source_url": "https://www.meritechcapital.com/",
+          "source_title": "Meritech",
+          "source_content_hash": "f90d7d8637e814121a8644095d02963cba94a052c687d353adf47509141e255e",
+          "quote": "M e r i t e c h i s a n i n v e s t m e n t f i r m",
+          "quote_hash": "57b716563da08f8c6354819ab7e6e733cfcda8a81ff80085ba8d64cdde5b7eab"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-08f80474dfccc1-2",
+          "source_url": "https://www.cognition.com/blog/series-e",
+          "source_title": "Do it all with Devin: Announcing our Series E | Cognition",
+          "source_content_hash": "f2d5c7d50230b8017e9320f0a8344cbb1155c1483ca6977b8925a820177ab95e",
+          "quote": "Other investors in the round include Benchmark, Bessemer, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech",
+          "quote_hash": "ea97b08624ba3b831da5594c6ebb41caff5471275741033501a23e13c978fb2c"
+        },
+        {
+          "source_id": "FISRC-6737e55341eb5266",
+          "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+          "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+          "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+          "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+          "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+        },
+        {
+          "source_id": "FISRC-61aa8db010b34dfa",
+          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
+          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
+          "source_content_hash": "274ba4a54870c633",
+          "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+          "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+        },
+        {
+          "source_id": "FISRC-a967da2448674734",
+          "source_url": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding/",
+          "source_title": "光网络初创公司Lumilens以9亿美元资金启动",
+          "source_content_hash": "f3b1d21bc0dc0006",
+          "quote": "Atreides Management, Bain Capital Ventures, Meritech, Seligman Ventures and Spark Capital jointly led the investment.",
+          "quote_hash": "94812b7738edf261aeeb91479d522c33f2085d3a81ac0ce4f52f97200d1b0642"
+        }
+      ],
+      "last_verified_at": "2026-10-04"
+    },
     "INV-008a77c3b18393": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -14885,90 +15202,6 @@
       "coverage_status": "researched",
       "coverage_note": "D1市场类型、成立时间、负责人和其职业履历由组合公司Instacart董事简介支持；监管地址来自SEC申报文件，仅作为历史备案地址展示。公开资料未确认其专用VC申请邮箱或联系人，故不推定。",
       "last_verified_at": "2026-09-26"
-    },
-    "INV-97bea5e589d4d7": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "法律名称线索来自 Greenoaks 官方隐私声明；本轮投资关系据 Anthropic 官方公告，不推断具体基金。",
-      "summary": "Greenoaks 官方隐私声明将其法律称谓写作 Greenoaks LLC 并提及关联公司及投资尽调；Anthropic Series H 官方公告将 Greenoaks 列为领投机构之一。融资材料未披露具体基金载体。",
-      "facts": [
-        {
-          "field": "legal_entity",
-          "label": "官方隐私声明",
-          "value": "Greenoaks 官方声明使用法律称谓 Greenoaks LLC，并提及关联公司。",
-          "source_id": "PROFILE-COLLECT-INV-97bea5e589d4d7-1"
-        },
-        {
-          "field": "reported_investment",
-          "label": "融资披露案例",
-          "value": "Anthropic Series H 公告将 Greenoaks 列为领投机构之一。",
-          "source_id": "PROFILE-COLLECT-INV-97bea5e589d4d7-2"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f581afce52cf5bef"
-        },
-        {
-          "description": "融资来源记录：AIR · 种子轮 · 2026-09-01 · 本轮领投 · $50M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0426e4b3b9347f4f"
-        },
-        {
-          "description": "融资来源记录：Glow · A轮 · 2026-07-22 · 本轮领投 · $180 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e192dd3fe1a72590"
-        }
-      ],
-      "contacts": [],
-      "sources": [
-        {
-          "source_id": "PROFILE-COLLECT-INV-97bea5e589d4d7-1",
-          "source_url": "https://greenoaks.com/privacy",
-          "source_title": "Privacy Notice | Greenoaks",
-          "source_content_hash": "0f790907790789cbeb9897d68d4ccdf48089c400c03949b37239876d7289941d",
-          "quote": "Greenoaks LLC (“Greenoaks”) and our affiliates",
-          "quote_hash": "1ff60a13926f50671d72e8b33513387e00ec655e271e9dc5409b520065a22f78"
-        },
-        {
-          "source_id": "PROFILE-COLLECT-INV-97bea5e589d4d7-2",
-          "source_url": "https://www.anthropic.com/news/series-h",
-          "source_title": "Anthropic raises $65B Series H at $965B valuation \\ Anthropic",
-          "source_content_hash": "c00be615fd4e35832b47e33a715a08c58e5e3c7d7839c6775a6edc97ab162fd9",
-          "quote": "Greenoaks, and Sequoia Capital",
-          "quote_hash": "fa24778cfd7c2d26c7f8ebda518fb1810040fd01beae0ea7f072d6d62cf75856"
-        },
-        {
-          "source_id": "FISRC-f581afce52cf5bef",
-          "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
-          "source_title": "Ramp估值达600亿美元，深入布局AI",
-          "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
-          "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
-          "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
-        },
-        {
-          "source_id": "FISRC-0426e4b3b9347f4f",
-          "source_url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",
-          "source_title": "AI 安全初创公司 AIR 出手隐身并融资 5000 万美元，为企业审查 AI 智能体所用技能和插件",
-          "source_content_hash": "f272d6219c1373f8",
-          "quote": "Sequoia led the first round, while Greenoaks led the second, Saban said.",
-          "quote_hash": "88c6d16a9401bf99e7028ca06409d2a5469bd0d04db4c7c63280de67702392ef"
-        },
-        {
-          "source_id": "FISRC-e192dd3fe1a72590",
-          "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
-          "source_title": "Glow 结束隐身模式，融资 1.8 亿美元，旨在 AI 时代重塑终端安全",
-          "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
-          "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
-          "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
-        }
-      ],
-      "last_verified_at": "2026-10-04",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
     },
     "INV-2b9e2548935653": {
       "identity_status": "verified",
@@ -21246,6 +21479,247 @@
         }
       ],
       "last_verified_at": "2026-10-03"
+    },
+    "INV-e95661d9b20610": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "简介采用 Quiet Capital 官网的品牌自述；法律页面将网站运营方表述为 Quiet Capital Management LLC，官网页脚则使用 LP 字样，本档案不将不同法律名称合并为同一基金载体。",
+      "summary": "Quiet Capital 官网自述其团队以创业者身份投资创办人，并称从创业早期开始支持公司。网站法律条款将 Quiet Capital Management LLC 列为网站运营方；官网页脚另使用 Quiet Capital Management LP 名称，因此本档案只按 Quiet Capital 品牌及其官网自述记录。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述的投资方式",
+          "value": "官网称团队是创业者，并从创办人早期阶段开始投资支持。",
+          "source_id": "quiet-capital-home-2026-10-03"
+        },
+        {
+          "field": "website_operator",
+          "label": "网站法律运营方",
+          "value": "法律页面称 Quiet Capital Management LLC 运营 quiet.com；官网页脚另显示 Quiet Capital Management LP，本档案不据此判断不同实体的法律关系。",
+          "source_id": "quiet-capital-legal-2026-10-03"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Mach9 · A轮 · 2026-10-21 · 本轮参投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2115ba1066fba41f"
+        },
+        {
+          "description": "融资来源记录：Suno · D轮 · 2026-06-03 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-92bdc04603fa5ff2"
+        },
+        {
+          "description": "融资来源记录：Taalas Inc. · 轮次未披露 · 2026-02-19 · 本轮参投 · $169M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7a85c433c7dbed44"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "quiet-capital-home-2026-10-03",
+          "source_url": "https://quiet.com/",
+          "source_title": "Quiet Capital",
+          "source_content_hash": "0f191b8d401041fb47d249895ddb9f46bf89a4621ec3cafd1e2fed3fe3ab6403",
+          "quote": "We are builders who invest in remarkable Founders from day zero.",
+          "quote_hash": "a50b268c06bdbd161f1eef53af95e1b6b8ba20853c188c42fdcc09799e97f62b"
+        },
+        {
+          "source_id": "quiet-capital-legal-2026-10-03",
+          "source_url": "https://quiet.com/legal/",
+          "source_title": "Legal | Quiet Capital",
+          "source_content_hash": "b2784c78a48dd18695f8737c6c379d00e9edf743818436a1fe81c8848b86cce6",
+          "quote": "This Website is maintained and operated by Quiet Capital Management LLC.",
+          "quote_hash": "ac00ada87d14155ac4cb8d020a1ae4da9cd0e716d598adb9d9f4933e89273ff4"
+        },
+        {
+          "source_id": "FISRC-2115ba1066fba41f",
+          "source_url": "https://www.prnewswire.com/news-releases/mach9-raises-34m-series-a-to-bring-civil-engineering-into-the-ai-era-302915153.html",
+          "source_title": "Mach9 完成 3400 万美元 A 轮融资，将土木工程带入 AI 时代",
+          "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+          "quote": "with participation from Prudence and continued participation from Quiet Capital",
+          "quote_hash": "70e2ea692f72791016f36cfc6f744f7871fbed6484f2123892d59b74b3839d27"
+        },
+        {
+          "source_id": "FISRC-92bdc04603fa5ff2",
+          "source_url": "https://multiples.vc/private-comps/suno",
+          "source_title": "Suno Revenue, Valuation, Funding & Investors | Multiples",
+          "source_content_hash": "410c3c737fbffa4a",
+          "quote": "Bond (lead); Menlo Ventures; IVP; Union Square Ventures; Matrix Partners; Forerunner; Lightspeed Venture Partners; Schroders Capital; Alkeon Capital; Quiet Capital",
+          "quote_hash": "a7a352f54d1103d662e3fd57611cc758f02f89ed829f5fc5a399cb020ec64fa6"
+        },
+        {
+          "source_id": "FISRC-7a85c433c7dbed44",
+          "source_url": "https://siliconangle.com/2026/02/19/taalas-raises-169m-funding-develop-model-specific-ai-chips/",
+          "source_title": "Taalas 融资 1.69 亿美元，开发模型专用 AI 芯片",
+          "source_content_hash": "8df5a185c3d0c1bc47267eb9148dc417f9b5117d0d38a10f0d0ffeef2274858f",
+          "quote": "Reuters reported today that the company’s backers include Quiet Capital, Fidelity and prominent semiconductor investor Pierre Lamond.",
+          "quote_hash": "dc849d6c8abb5c30a56c8a60121f25ce4a801de4b609d2d85b45ae6b483db806"
+        }
+      ],
+      "last_verified_at": "2026-10-02"
+    },
+    "INV-7870f1f2dd0ffb": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网的投资介绍、联系页和团队页核实；基金规模与组合统计均为机构自述，不代表投资回报。",
+      "summary": "Together Fund 是一支以运营者为主导、专注 AI 原生初创企业的风险投资基金，面向美印走廊投资。官网称基金创立于 2021 年，重点覆盖 Seed 与 Series A，并为被投公司提供产品、市场拓展、招聘和规模化运营支持。AUM、组合数量和跟投比例均为基金自述数据。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "官网称 Together 于 2021 年开始。",
+          "source_id": "together_fund_about"
+        },
+        {
+          "field": "geography",
+          "label": "地理范围",
+          "value": "美国—印度走廊。",
+          "source_id": "together_fund_about"
+        },
+        {
+          "field": "focus",
+          "label": "投资领域",
+          "value": "AI 原生创业公司，涵盖横向应用、垂直方案、医疗、基础设施和消费场景。",
+          "source_id": "together_fund_about"
+        },
+        {
+          "field": "stage",
+          "label": "阶段与节奏",
+          "value": "官网 FAQ 称主要投资 Seed 和 Series A，通常首笔投资 100 万至 1,000 万美元，每年选择约 8–10 家。",
+          "source_id": "together_fund_about"
+        },
+        {
+          "field": "aum",
+          "label": "管理规模",
+          "value": "官网披露 AUM 超过 2 亿美元；属于基金自述数据。",
+          "source_id": "together_fund_about"
+        },
+        {
+          "field": "portfolio",
+          "label": "组合统计",
+          "value": "官网披露 35+ 家组合公司、40%+ 组合公司获得后续融资；属于基金自述统计。",
+          "source_id": "together_fund_about"
+        },
+        {
+          "field": "partners",
+          "label": "管理团队",
+          "value": "官网列示 Girish Mathrubootham、Manav Garg 为联合创始人兼管理合伙人，并列有 Lakshmi Shankar 等投资团队成员。",
+          "source_id": "together_fund_about"
+        },
+        {
+          "field": "contact_channels",
+          "label": "公开联系渠道",
+          "value": "投资联系邮箱 deals@together.fund；一般咨询 hello@together.fund。",
+          "source_id": "together_fund_contact"
+        },
+        {
+          "field": "leadership",
+          "label": "官网列示管理团队",
+          "value": "Girish Mathrubootham、Manav Garg（联合创始人兼管理合伙人）；Shubham Gupta（Founding General Partner）；Lakshmi Shankar（General Partner）。",
+          "source_id": "together_fund_team"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Runable · A轮 · 2026-08-26 · 本轮参投 · $21 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2d6054cc51934d57"
+        },
+        {
+          "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2e7a3713da8f3e54"
+        },
+        {
+          "description": "融资来源记录：Hunar.AI · A轮 · 2026-10-20 · 本轮参投 · Rs 40 crore。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-21f1e0578f986661"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "投资联系",
+          "value": "deals@together.fund",
+          "source_id": "together_fund_contact"
+        },
+        {
+          "kind": "email",
+          "label": "一般咨询",
+          "value": "hello@together.fund",
+          "source_id": "together_fund_contact"
+        },
+        {
+          "kind": "address",
+          "label": "Bengaluru 办公地址",
+          "value": "299, 6th Main Road, HAL, 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
+          "source_id": "together_fund_contact"
+        },
+        {
+          "kind": "address",
+          "label": "Chennai 办公地址",
+          "value": "3rd Floor, 77 & 79(44 &45), Chamiers Rd, Austin Nagar, Raja Annamalaipuram, Chennai, Tamil Nadu 600028",
+          "source_id": "together_fund_contact"
+        },
+        {
+          "kind": "address",
+          "label": "Palo Alto 办公地址",
+          "value": "530 Lytton Ave, Suite 304, Palo Alto, California 94301",
+          "source_id": "together_fund_contact"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "FISRC-2d6054cc51934d57",
+          "source_url": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them",
+          "source_title": "Runable 获 2100 万美元融资，押注 AI 智能体从帮企业建站走向帮企业增长",
+          "source_content_hash": "c050b0e757896e5c",
+          "quote": "with existing investors Together Fund and Array VC also participating",
+          "quote_hash": "03b68feed21c22339a50f810c91ab23ddebc6fd66a6ff00d76bff117c4332ef8"
+        },
+        {
+          "source_id": "FISRC-2e7a3713da8f3e54",
+          "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
+          "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
+          "source_content_hash": "affdfd9a0ccfb188",
+          "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+          "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
+        },
+        {
+          "source_id": "together_fund_about",
+          "source_url": "https://www.together.fund/about",
+          "source_title": "About Together | Together Fund",
+          "source_content_hash": "878ea022fc75f7f90e524d88716af5ed7de70bcb52f1344c87b22f4b09cd1b58",
+          "quote": "We are India’s first operator-led, AI-first venture capital fund in the US-India corridor that partners with ambitious, purpose-driven founders.",
+          "quote_hash": "1069c4d6ecef0ae13fd3e0674bf252959018a4e0f1a60bc4c00673a86e4f1b33"
+        },
+        {
+          "source_id": "together_fund_contact",
+          "source_url": "https://www.together.fund/contact",
+          "source_title": "Contact Together Fund",
+          "source_content_hash": "3c2e4dea90ef61fea5e9b834c39737128c73bdfbf270a6abb9c8ec2a8e2b1911",
+          "quote": "For Investments deals@together.fund. For General Inquiries hello@together.fund.",
+          "quote_hash": "bbc7198670842ce8c80fb09b2bc49f93da9d35d51aaec6a4bab40fe04fda041a"
+        },
+        {
+          "source_id": "together_fund_team",
+          "source_url": "https://www.together.fund/team",
+          "source_title": "Meet the Together Team",
+          "source_content_hash": "0e886018284869b47fb4c39b39962118ee8afbecdf7b3d64149c95632696a073",
+          "quote": "Girish Mathrubootham — Co-founder & Managing Partner; Manav Garg — Co-founder & Managing Partner.",
+          "quote_hash": "01b71c40141b333fd274530f8608cde411f6386d8637f29f10292e74f2824600"
+        },
+        {
+          "source_id": "FISRC-21f1e0578f986661",
+          "source_url": "https://yourstory.com/2026/10/hunarai-raises-rs-40-crore-in-series-a-led-by-blume-ventures",
+          "source_title": "Hunar.AI 在由 Blume Ventures 领投的 A 轮融资中筹集了 40 Cr 卢比",
+          "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+          "quote": "The round also saw participation from Hyderabad Angels Fund, Together Fund, Seedstars, AVNM Ventures, PhysicsWallah co-founders Prateek Maheshwari and Alakh Pandey, and MediaMint co-founder Aditya Vuchi.",
+          "quote_hash": "563fa3eb6eb50f4a96b3b267eeb9e20fdbc29246a2471da23b2815c8638affc1"
+        }
+      ],
+      "last_verified_at": "2026-09-26"
     },
     "INV-7a8f136f599bea": {
       "profile_type": "organization",
@@ -27564,90 +28038,6 @@
       "education": [],
       "experience_summary": ""
     },
-    "INV-08f80474dfccc1": {
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "profile_type": "organization",
-      "summary": "Meritech 官网自述为与科技公司合作的投资机构；Cognition 官方 Series E 公告将其列为本轮投资方之一。官网将其描述为小型、平等合伙制机构。",
-      "coverage_note": "机构自述来自 Meritech 官网；本轮参投关系来自 Cognition 公司公告，未推断具体基金载体。",
-      "facts": [
-        {
-          "field": "organization_type",
-          "label": "官网机构定位",
-          "value": "官网称 Meritech 是一家投资公司，并采用平等合伙制。",
-          "source_id": "PROFILE-COLLECT-INV-08f80474dfccc1-1"
-        },
-        {
-          "field": "reported_investment",
-          "label": "融资披露案例",
-          "value": "Cognition Series E 公告将 Meritech 列为本轮投资方。",
-          "source_id": "PROFILE-COLLECT-INV-08f80474dfccc1-2"
-        }
-      ],
-      "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
-      "track_record": [
-        {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
-        },
-        {
-          "description": "融资来源记录：Lumilens Inc. · C轮 · 2026-08-06 · 本轮联合领投 · $900M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a967da2448674734"
-        },
-        {
-          "description": "融资来源记录：n8n GmbH · C轮 · 2025-10-09 · 本轮参投 · $180M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d9093a8f62959034"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "PROFILE-COLLECT-INV-08f80474dfccc1-1",
-          "source_url": "https://www.meritechcapital.com/",
-          "source_title": "Meritech",
-          "source_content_hash": "f90d7d8637e814121a8644095d02963cba94a052c687d353adf47509141e255e",
-          "quote": "M e r i t e c h i s a n i n v e s t m e n t f i r m",
-          "quote_hash": "57b716563da08f8c6354819ab7e6e733cfcda8a81ff80085ba8d64cdde5b7eab"
-        },
-        {
-          "source_id": "PROFILE-COLLECT-INV-08f80474dfccc1-2",
-          "source_url": "https://www.cognition.com/blog/series-e",
-          "source_title": "Do it all with Devin: Announcing our Series E | Cognition",
-          "source_content_hash": "f2d5c7d50230b8017e9320f0a8344cbb1155c1483ca6977b8925a820177ab95e",
-          "quote": "Other investors in the round include Benchmark, Bessemer, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech",
-          "quote_hash": "ea97b08624ba3b831da5594c6ebb41caff5471275741033501a23e13c978fb2c"
-        },
-        {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
-          "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
-        },
-        {
-          "source_id": "FISRC-a967da2448674734",
-          "source_url": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding/",
-          "source_title": "光网络初创公司Lumilens以9亿美元资金启动",
-          "source_content_hash": "f3b1d21bc0dc0006",
-          "quote": "Atreides Management, Bain Capital Ventures, Meritech, Seligman Ventures and Spark Capital jointly led the investment.",
-          "quote_hash": "94812b7738edf261aeeb91479d522c33f2085d3a81ac0ce4f52f97200d1b0642"
-        },
-        {
-          "source_id": "FISRC-d9093a8f62959034",
-          "source_url": "https://startuprise.co.uk/ai-workflow-automation-startup-n8n-raises-180m-valued-at-2-5b",
-          "source_title": "AI 工作流自动化初创公司 n8n 获 1.8 亿美元融资，估值达 25 亿美元",
-          "source_content_hash": "5fc63df17f42d743",
-          "quote": "with participation from Meritech",
-          "quote_hash": "c4c80aaf5e49915a76a63a6afa36b899815c3afc0fcce6d5de5828df76cc78ed"
-        }
-      ],
-      "last_verified_at": "2026-10-04"
-    },
     "INV-511b22acdf58b3": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -28019,155 +28409,6 @@
         }
       ],
       "last_verified_at": "2026-09-27"
-    },
-    "INV-c1a95750e9b0e9": {
-      "profile_type": "organization",
-      "summary": "IVP（Institutional Venture Partners）是一家支持快速成长科技企业的风险投资机构。IVP官网介绍其在企业关键成长阶段投资，计划每年支持约10家公司，并以投资团队为创业者提供增长支持；官网组合页面列出多个科技行业和企业案例。机构官网提供美国及英国办公室地址、电话及媒体联络邮箱。",
-      "facts": [
-        {
-          "field": "organization_type",
-          "label": "机构类型",
-          "value": "风险投资机构",
-          "source_id": "ivp_approach"
-        },
-        {
-          "field": "investment_stage",
-          "label": "投资策略",
-          "value": "聚焦企业关键成长阶段，每年约支持10家公司（官网自述）。",
-          "source_id": "ivp_approach"
-        },
-        {
-          "field": "sectors",
-          "label": "官网组合行业筛选",
-          "value": [
-            "人工智能",
-            "消费",
-            "医疗",
-            "金融科技与加密资产",
-            "基础设施",
-            "应用软件"
-          ],
-          "source_id": "ivp_portfolio"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "官网组合数据库按AI、消费、医疗、金融科技与加密资产、基础设施及应用软件分类展示公司；未将组合清单视为基金回报或完整投资记录。",
-          "source_id": "ivp_portfolio"
-        },
-        {
-          "description": "融资来源记录：Wonderful · C轮 · 2026-09-02 · 本轮参投 · $550 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3bc5a4e973b035eb"
-        },
-        {
-          "description": "融资来源记录：Suno · D轮 · 2026-06-03 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-8a34984c8e02defc"
-        },
-        {
-          "description": "融资来源记录：Wonderful · B轮 · 2026-03-12 · 本轮参投 · 1.5亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c29f00f067579660"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官方网站",
-          "value": "IVP",
-          "url": "https://www.ivp.com/",
-          "source_id": "ivp_approach"
-        },
-        {
-          "kind": "phone",
-          "label": "旧金山办公室",
-          "value": "415.432.4660",
-          "source_id": "ivp_contact"
-        },
-        {
-          "kind": "address",
-          "label": "旧金山办公室",
-          "value": "747 Front Street, Ste 100, San Francisco, CA 94111",
-          "source_id": "ivp_contact"
-        },
-        {
-          "kind": "phone",
-          "label": "硅谷办公室",
-          "value": "650.854.0132",
-          "source_id": "ivp_contact"
-        },
-        {
-          "kind": "address",
-          "label": "硅谷办公室",
-          "value": "3000 Sand Hill Road, Bldg 2, Ste 250, Menlo Park, CA 94025",
-          "source_id": "ivp_contact"
-        },
-        {
-          "kind": "address",
-          "label": "伦敦办公室",
-          "value": "37-41 Mortimer Street, 1st Floor, S1, Fitzrovia, London, England W1T 3JH",
-          "source_id": "ivp_contact"
-        },
-        {
-          "kind": "email",
-          "label": "媒体联系邮箱",
-          "value": "pr@ivp.com",
-          "source_id": "ivp_contact"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "ivp_approach",
-          "source_url": "https://www.ivp.com/team/approach/",
-          "source_title": "Our Approach - IVP",
-          "source_content_hash": "d19bfa44e85475e90f09370aa5fc399cb0af94cd5ee2a45971633e21741e8f87",
-          "quote": "IVP官网称其在企业关键成长阶段投资，每年约支持10家公司，并由团队提供主动增长支持。",
-          "quote_hash": "b34637e23ba13afa33f372770c1b250d0be0812bd7fb6aed5f3c11d6cb07aa1b"
-        },
-        {
-          "source_id": "ivp_portfolio",
-          "source_url": "https://www.ivp.com/portfolio/",
-          "source_title": "Portfolio - IVP",
-          "source_content_hash": "94fd0bf6fd43ed906c397e404591ec12bde7bfb8396316b84f2cf946a0d1e365",
-          "quote": "IVP官网组合页面按AI、消费、医疗、金融科技、基础设施等行业分类展示组合企业。",
-          "quote_hash": "98e5a5f3fd44ca56a69b11931f7d84d40b47bae3c3124bd82a4ab368b862f441"
-        },
-        {
-          "source_id": "ivp_contact",
-          "source_url": "https://www.ivp.com/contact/",
-          "source_title": "Contact - IVP",
-          "source_content_hash": "3cf17088df8473dac881575475094539705d7afdd386e6980adea4e29711ab85",
-          "quote": "IVP官网公布旧金山、硅谷及伦敦办公室地址，旧金山和硅谷电话及媒体邮箱。",
-          "quote_hash": "45c6d385cafc2c7c1cd89245ec618c98351dfe56932b158584276b61a1209828"
-        },
-        {
-          "source_id": "FISRC-3bc5a4e973b035eb",
-          "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
-          "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
-          "source_content_hash": "290d66b36443e7c5",
-          "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
-          "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
-        },
-        {
-          "source_id": "FISRC-8a34984c8e02defc",
-          "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
-          "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
-          "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
-          "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
-          "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
-        },
-        {
-          "source_id": "FISRC-c29f00f067579660",
-          "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
-          "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
-          "source_content_hash": "67f409ee5b146b1d",
-          "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
-          "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
-        }
-      ],
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "投资策略、行业与联系方式来自IVP官网；“每年约10家”是机构公开描述，不视为完整基金年度投资统计。",
-      "last_verified_at": "2026-09-26"
     },
     "INV-8aaec24f4836e4": {
       "profile_type": "organization",
@@ -33615,6 +33856,45 @@
       ],
       "last_verified_at": "2026-10-03"
     },
+    "INV-ff07c13077bb9e": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Seedstars 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Karta AI · 种子轮 · 2026-10-22 · 本轮参投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cda6678078919bf2"
+        },
+        {
+          "description": "融资来源记录：Hunar.AI · A轮 · 2026-10-20 · 本轮参投 · Rs 40 crore。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-21f1e0578f986661"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-cda6678078919bf2",
+          "source_url": "https://openthemagazine.com/business/karta-ai-raises-3-million-can-voice-ai-fix-indias-bank-helplines",
+          "source_title": "Karta AI 融资 300 万美元：语音 AI 能修复印度的银行求助热线吗？",
+          "source_content_hash": "e0ea6cb2677f5899ca9412827ee49c8baa4d0fb6b40300318b8bc06331e4ec1e",
+          "quote": "Wyser VC, CDM Capital and Seedstars also participated",
+          "quote_hash": "d8e26a48f8c5729d6728fa541149622ab74b07d5f3e848a966d04a3699275524"
+        },
+        {
+          "source_id": "FISRC-21f1e0578f986661",
+          "source_url": "https://yourstory.com/2026/10/hunarai-raises-rs-40-crore-in-series-a-led-by-blume-ventures",
+          "source_title": "Hunar.AI 在由 Blume Ventures 领投的 A 轮融资中筹集了 40 Cr 卢比",
+          "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+          "quote": "The round also saw participation from Hyderabad Angels Fund, Together Fund, Seedstars, AVNM Ventures, PhysicsWallah co-founders Prateek Maheshwari and Alakh Pandey, and MediaMint co-founder Aditya Vuchi.",
+          "quote_hash": "563fa3eb6eb50f4a96b3b267eeb9e20fdbc29246a2471da23b2815c8638affc1"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-797ad83cfdbedb": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -34042,6 +34322,45 @@
           "source_content_hash": "c8ef521d256775c4737d3e8ac692bdf3c9644d011a007d4a52337463ebb1f0ce",
           "quote": "has raised €8 million in a Series A funding round led by Ventech, with participation from Sake Bosch, Caesar Capital and business angels",
           "quote_hash": "5e0c909a7b979d6917367f963dee1e4b50314405a167b83aaeda8223ec535787"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-8498827c44a011": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Blume Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Hunar.AI · A轮 · 2026-10-20 · 本轮领投 · Rs 40 crore。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-21f1e0578f986661"
+        },
+        {
+          "description": "融资来源记录：Lumio · A轮 · 2026-10-08 · 本轮领投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d4fa6b7ab4e1aa59"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-21f1e0578f986661",
+          "source_url": "https://yourstory.com/2026/10/hunarai-raises-rs-40-crore-in-series-a-led-by-blume-ventures",
+          "source_title": "Hunar.AI 在由 Blume Ventures 领投的 A 轮融资中筹集了 40 Cr 卢比",
+          "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+          "quote": "Hunar.AI has raised Rs 40 crore in a Series A funding round led by Blume Ventures.",
+          "quote_hash": "982b4fb1429949202d2b4646dd769b3938122290afb97921ed83446cf26bfadf"
+        },
+        {
+          "source_id": "FISRC-d4fa6b7ab4e1aa59",
+          "source_url": "https://timesofindia.indiatimes.com/technology/appliances/lumio-raises-12-million-led-by-blume-ventures-to-expand-its-smart-tv-projector-and-speaker-business/amp_articleshow/134798715.cms",
+          "source_title": "Lumio 获 Blume Ventures 领投 1200 万美元，用于扩展其智能电视、投影仪和音箱业务",
+          "source_content_hash": "e6a08a8820cc201959e0328f0ea7dc32bd5ca886ff69a9004dfcb1c1ef7b16a2",
+          "quote": "The round includes a Series A led by Blume Ventures, with existing investors Stellaris Venture Partners and 3one4 Capital also participating.",
+          "quote_hash": "f5abf78e74a6e4e6e9e718e34f8112a3b7206afda5775d99725c602482c25b31"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -49634,155 +49953,6 @@
       "last_verified_at": "2026-09-26",
       "identity_status": "verified"
     },
-    "INV-7870f1f2dd0ffb": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "依据机构官网的投资介绍、联系页和团队页核实；基金规模与组合统计均为机构自述，不代表投资回报。",
-      "summary": "Together Fund 是一支以运营者为主导、专注 AI 原生初创企业的风险投资基金，面向美印走廊投资。官网称基金创立于 2021 年，重点覆盖 Seed 与 Series A，并为被投公司提供产品、市场拓展、招聘和规模化运营支持。AUM、组合数量和跟投比例均为基金自述数据。",
-      "facts": [
-        {
-          "field": "founded",
-          "label": "成立时间",
-          "value": "官网称 Together 于 2021 年开始。",
-          "source_id": "together_fund_about"
-        },
-        {
-          "field": "geography",
-          "label": "地理范围",
-          "value": "美国—印度走廊。",
-          "source_id": "together_fund_about"
-        },
-        {
-          "field": "focus",
-          "label": "投资领域",
-          "value": "AI 原生创业公司，涵盖横向应用、垂直方案、医疗、基础设施和消费场景。",
-          "source_id": "together_fund_about"
-        },
-        {
-          "field": "stage",
-          "label": "阶段与节奏",
-          "value": "官网 FAQ 称主要投资 Seed 和 Series A，通常首笔投资 100 万至 1,000 万美元，每年选择约 8–10 家。",
-          "source_id": "together_fund_about"
-        },
-        {
-          "field": "aum",
-          "label": "管理规模",
-          "value": "官网披露 AUM 超过 2 亿美元；属于基金自述数据。",
-          "source_id": "together_fund_about"
-        },
-        {
-          "field": "portfolio",
-          "label": "组合统计",
-          "value": "官网披露 35+ 家组合公司、40%+ 组合公司获得后续融资；属于基金自述统计。",
-          "source_id": "together_fund_about"
-        },
-        {
-          "field": "partners",
-          "label": "管理团队",
-          "value": "官网列示 Girish Mathrubootham、Manav Garg 为联合创始人兼管理合伙人，并列有 Lakshmi Shankar 等投资团队成员。",
-          "source_id": "together_fund_about"
-        },
-        {
-          "field": "contact_channels",
-          "label": "公开联系渠道",
-          "value": "投资联系邮箱 deals@together.fund；一般咨询 hello@together.fund。",
-          "source_id": "together_fund_contact"
-        },
-        {
-          "field": "leadership",
-          "label": "官网列示管理团队",
-          "value": "Girish Mathrubootham、Manav Garg（联合创始人兼管理合伙人）；Shubham Gupta（Founding General Partner）；Lakshmi Shankar（General Partner）。",
-          "source_id": "together_fund_team"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Runable · A轮 · 2026-08-26 · 本轮参投 · $21 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2d6054cc51934d57"
-        },
-        {
-          "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2e7a3713da8f3e54"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "email",
-          "label": "投资联系",
-          "value": "deals@together.fund",
-          "source_id": "together_fund_contact"
-        },
-        {
-          "kind": "email",
-          "label": "一般咨询",
-          "value": "hello@together.fund",
-          "source_id": "together_fund_contact"
-        },
-        {
-          "kind": "address",
-          "label": "Bengaluru 办公地址",
-          "value": "299, 6th Main Road, HAL, 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
-          "source_id": "together_fund_contact"
-        },
-        {
-          "kind": "address",
-          "label": "Chennai 办公地址",
-          "value": "3rd Floor, 77 & 79(44 &45), Chamiers Rd, Austin Nagar, Raja Annamalaipuram, Chennai, Tamil Nadu 600028",
-          "source_id": "together_fund_contact"
-        },
-        {
-          "kind": "address",
-          "label": "Palo Alto 办公地址",
-          "value": "530 Lytton Ave, Suite 304, Palo Alto, California 94301",
-          "source_id": "together_fund_contact"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "FISRC-2d6054cc51934d57",
-          "source_url": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them",
-          "source_title": "Runable 获 2100 万美元融资，押注 AI 智能体从帮企业建站走向帮企业增长",
-          "source_content_hash": "c050b0e757896e5c",
-          "quote": "with existing investors Together Fund and Array VC also participating",
-          "quote_hash": "03b68feed21c22339a50f810c91ab23ddebc6fd66a6ff00d76bff117c4332ef8"
-        },
-        {
-          "source_id": "FISRC-2e7a3713da8f3e54",
-          "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
-          "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
-          "source_content_hash": "affdfd9a0ccfb188",
-          "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
-          "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
-        },
-        {
-          "source_id": "together_fund_about",
-          "source_url": "https://www.together.fund/about",
-          "source_title": "About Together | Together Fund",
-          "source_content_hash": "878ea022fc75f7f90e524d88716af5ed7de70bcb52f1344c87b22f4b09cd1b58",
-          "quote": "We are India’s first operator-led, AI-first venture capital fund in the US-India corridor that partners with ambitious, purpose-driven founders.",
-          "quote_hash": "1069c4d6ecef0ae13fd3e0674bf252959018a4e0f1a60bc4c00673a86e4f1b33"
-        },
-        {
-          "source_id": "together_fund_contact",
-          "source_url": "https://www.together.fund/contact",
-          "source_title": "Contact Together Fund",
-          "source_content_hash": "3c2e4dea90ef61fea5e9b834c39737128c73bdfbf270a6abb9c8ec2a8e2b1911",
-          "quote": "For Investments deals@together.fund. For General Inquiries hello@together.fund.",
-          "quote_hash": "bbc7198670842ce8c80fb09b2bc49f93da9d35d51aaec6a4bab40fe04fda041a"
-        },
-        {
-          "source_id": "together_fund_team",
-          "source_url": "https://www.together.fund/team",
-          "source_title": "Meet the Together Team",
-          "source_content_hash": "0e886018284869b47fb4c39b39962118ee8afbecdf7b3d64149c95632696a073",
-          "quote": "Girish Mathrubootham — Co-founder & Managing Partner; Manav Garg — Co-founder & Managing Partner.",
-          "quote_hash": "01b71c40141b333fd274530f8608cde411f6386d8637f29f10292e74f2824600"
-        }
-      ],
-      "last_verified_at": "2026-09-26"
-    },
     "INV-0f05e3ffb0c161": {
       "profile_type": "organization",
       "summary": "壁仞科技是2019年成立、总部位于中国的通用GPU芯片与智能计算解决方案企业，2026年1月在香港上市（06082.HK）。公司官网披露，2026年上半年营收12.36亿元、同比增长近2000%，截至2026年6月全球专利申请1917项、授权1006项；这些经营与专利数据是公司自报。融资数据库还记录壁仞科技以企业投资方身份参与若干人工智能芯片项目，未发现独立VC基金或对外投资申请页面。",
@@ -60208,74 +60378,6 @@
       ],
       "last_verified_at": "2026-09-27"
     },
-    "INV-e95661d9b20610": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "简介采用 Quiet Capital 官网的品牌自述；法律页面将网站运营方表述为 Quiet Capital Management LLC，官网页脚则使用 LP 字样，本档案不将不同法律名称合并为同一基金载体。",
-      "summary": "Quiet Capital 官网自述其团队以创业者身份投资创办人，并称从创业早期开始支持公司。网站法律条款将 Quiet Capital Management LLC 列为网站运营方；官网页脚另使用 Quiet Capital Management LP 名称，因此本档案只按 Quiet Capital 品牌及其官网自述记录。",
-      "facts": [
-        {
-          "field": "investment_approach",
-          "label": "官网自述的投资方式",
-          "value": "官网称团队是创业者，并从创办人早期阶段开始投资支持。",
-          "source_id": "quiet-capital-home-2026-10-03"
-        },
-        {
-          "field": "website_operator",
-          "label": "网站法律运营方",
-          "value": "法律页面称 Quiet Capital Management LLC 运营 quiet.com；官网页脚另显示 Quiet Capital Management LP，本档案不据此判断不同实体的法律关系。",
-          "source_id": "quiet-capital-legal-2026-10-03"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Suno · D轮 · 2026-06-03 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-92bdc04603fa5ff2"
-        },
-        {
-          "description": "融资来源记录：Taalas Inc. · 轮次未披露 · 2026-02-19 · 本轮参投 · $169M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7a85c433c7dbed44"
-        }
-      ],
-      "contacts": [],
-      "sources": [
-        {
-          "source_id": "quiet-capital-home-2026-10-03",
-          "source_url": "https://quiet.com/",
-          "source_title": "Quiet Capital",
-          "source_content_hash": "0f191b8d401041fb47d249895ddb9f46bf89a4621ec3cafd1e2fed3fe3ab6403",
-          "quote": "We are builders who invest in remarkable Founders from day zero.",
-          "quote_hash": "a50b268c06bdbd161f1eef53af95e1b6b8ba20853c188c42fdcc09799e97f62b"
-        },
-        {
-          "source_id": "quiet-capital-legal-2026-10-03",
-          "source_url": "https://quiet.com/legal/",
-          "source_title": "Legal | Quiet Capital",
-          "source_content_hash": "b2784c78a48dd18695f8737c6c379d00e9edf743818436a1fe81c8848b86cce6",
-          "quote": "This Website is maintained and operated by Quiet Capital Management LLC.",
-          "quote_hash": "ac00ada87d14155ac4cb8d020a1ae4da9cd0e716d598adb9d9f4933e89273ff4"
-        },
-        {
-          "source_id": "FISRC-92bdc04603fa5ff2",
-          "source_url": "https://multiples.vc/private-comps/suno",
-          "source_title": "Suno Revenue, Valuation, Funding & Investors | Multiples",
-          "source_content_hash": "410c3c737fbffa4a",
-          "quote": "Bond (lead); Menlo Ventures; IVP; Union Square Ventures; Matrix Partners; Forerunner; Lightspeed Venture Partners; Schroders Capital; Alkeon Capital; Quiet Capital",
-          "quote_hash": "a7a352f54d1103d662e3fd57611cc758f02f89ed829f5fc5a399cb020ec64fa6"
-        },
-        {
-          "source_id": "FISRC-7a85c433c7dbed44",
-          "source_url": "https://siliconangle.com/2026/02/19/taalas-raises-169m-funding-develop-model-specific-ai-chips/",
-          "source_title": "Taalas 融资 1.69 亿美元，开发模型专用 AI 芯片",
-          "source_content_hash": "8df5a185c3d0c1bc47267eb9148dc417f9b5117d0d38a10f0d0ffeef2274858f",
-          "quote": "Reuters reported today that the company’s backers include Quiet Capital, Fidelity and prominent semiconductor investor Pierre Lamond.",
-          "quote_hash": "dc849d6c8abb5c30a56c8a60121f25ce4a801de4b609d2d85b45ae6b483db806"
-        }
-      ],
-      "last_verified_at": "2026-10-02"
-    },
     "INV-8ab49f4611119d": {
       "summary": "137 Ventures 是一家美国多阶段投资机构，官网称其与具有长期增长潜力的科技公司及创始人合作，并提供投资组合、团队与 LP 投资者关系入口。官网说明 137 Ventures Management, LLC 为 SEC 注册投资顾问；官网同时提醒，注册不代表特定技能水平或业绩保证。",
       "facts": [
@@ -65549,6 +65651,60 @@
       "coverage_note": "职位、学历和过往任职以Tracxn公司官网及年报为准；投资案例来自公司年报或融资来源记录，不能据此推断完整个人投资组合。",
       "last_verified_at": "2026-09-26"
     },
+    "INV-443c1a16b94895": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "ETFS Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Cognitive Credit · 成长轮 · 2026-10-23 · 本轮参投 · €35.73 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1a4cc9099dde3ced"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-1a4cc9099dde3ced",
+          "source_url": "https://www.eu-startups.com/2026/10/londons-cognitive-credit-lands-e35-73-million-to-scale-its-ai-and-data-platform-for-credit-markets/",
+          "source_title": "伦敦的Cognitive Credit获得3573万欧元，用于扩展其面向信贷市场的AI和数据平台",
+          "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+          "quote": "The investment round was led by global growth equity firm Summit Partners, with continued participation from existing investor ETFS Capital.",
+          "quote_hash": "32b8699f130959fa281a3d6016600c0649f3fed61b8435fccb4216b6290359f4"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-e1c9c219ffb736": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Summit Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Cognitive Credit · 成长轮 · 2026-10-23 · 本轮领投 · €35.73 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1a4cc9099dde3ced"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-1a4cc9099dde3ced",
+          "source_url": "https://www.eu-startups.com/2026/10/londons-cognitive-credit-lands-e35-73-million-to-scale-its-ai-and-data-platform-for-credit-markets/",
+          "source_title": "伦敦的Cognitive Credit获得3573万欧元，用于扩展其面向信贷市场的AI和数据平台",
+          "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+          "quote": "The investment round was led by global growth equity firm Summit Partners, with continued participation from existing investor ETFS Capital.",
+          "quote_hash": "32b8699f130959fa281a3d6016600c0649f3fed61b8435fccb4216b6290359f4"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-0b39ed9298c1f8": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -65905,33 +66061,6 @@
           "source_content_hash": "dc22c0f9ca0271a5",
           "quote": "$27 million in seed financing co-led by Rally Ventures and Skyward Group",
           "quote_hash": "15ffb7d78fd7d50fce37b2733e438f0528f8bf95a9bfcbd1777193f07ee100f4"
-        }
-      ],
-      "last_verified_at": "2026-10-06"
-    },
-    "INV-ff07c13077bb9e": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Seedstars 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Karta AI · 种子轮 · 2026-10-22 · 本轮参投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-cda6678078919bf2"
-        }
-      ],
-      "contacts": [],
-      "sources": [
-        {
-          "source_id": "FISRC-cda6678078919bf2",
-          "source_url": "https://openthemagazine.com/business/karta-ai-raises-3-million-can-voice-ai-fix-indias-bank-helplines",
-          "source_title": "Karta AI 融资 300 万美元：语音 AI 能修复印度的银行求助热线吗？",
-          "source_content_hash": "e0ea6cb2677f5899ca9412827ee49c8baa4d0fb6b40300318b8bc06331e4ec1e",
-          "quote": "Wyser VC, CDM Capital and Seedstars also participated",
-          "quote_hash": "d8e26a48f8c5729d6728fa541149622ab74b07d5f3e848a966d04a3699275524"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -66458,6 +66587,60 @@
       ],
       "last_verified_at": "2026-10-06"
     },
+    "INV-5fab2e89bd06bb": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Prudence 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Mach9 · A轮 · 2026-10-21 · 本轮参投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2115ba1066fba41f"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-2115ba1066fba41f",
+          "source_url": "https://www.prnewswire.com/news-releases/mach9-raises-34m-series-a-to-bring-civil-engineering-into-the-ai-era-302915153.html",
+          "source_title": "Mach9 完成 3400 万美元 A 轮融资，将土木工程带入 AI 时代",
+          "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+          "quote": "with participation from Prudence and continued participation from Quiet Capital",
+          "quote_hash": "70e2ea692f72791016f36cfc6f744f7871fbed6484f2123892d59b74b3839d27"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-f3950ff3c46af7": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Scaleup Europe Fund, managed by EQT 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Pigment · E轮 · 2026-10-21 · 本轮领投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6737e55341eb5266"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-6737e55341eb5266",
+          "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+          "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+          "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+          "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+          "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-07363d32d65731": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -66481,6 +66664,33 @@
           "source_content_hash": "131d8ff0bfd6f36f5ddc233b9f172d4f18bab6a09f781f5ba47e65b3c8a75658",
           "quote": "The round was led by VC Partners, with participation from Growth Engine, AME Ventures, Zest through its Magic Mind vehicle, Alpha Venture and a group of industry business angels.",
           "quote_hash": "044d4ab0ae3700c921346fc8106e3990d04778362d08dbfeab119864aef8a0da"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-f3f55f78bab6ea": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "WIL (World Innovation Lab) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Pigment · E轮 · 2026-10-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6737e55341eb5266"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-6737e55341eb5266",
+          "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+          "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+          "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+          "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+          "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -66512,6 +66722,60 @@
       ],
       "last_verified_at": "2026-10-06"
     },
+    "INV-27dd3925133630": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Aditya Vuchi 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Hunar.AI · A轮 · 2026-10-20 · 本轮参投 · Rs 40 crore。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-21f1e0578f986661"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-21f1e0578f986661",
+          "source_url": "https://yourstory.com/2026/10/hunarai-raises-rs-40-crore-in-series-a-led-by-blume-ventures",
+          "source_title": "Hunar.AI 在由 Blume Ventures 领投的 A 轮融资中筹集了 40 Cr 卢比",
+          "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+          "quote": "The round also saw participation from Hyderabad Angels Fund, Together Fund, Seedstars, AVNM Ventures, PhysicsWallah co-founders Prateek Maheshwari and Alakh Pandey, and MediaMint co-founder Aditya Vuchi.",
+          "quote_hash": "563fa3eb6eb50f4a96b3b267eeb9e20fdbc29246a2471da23b2815c8638affc1"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-cab93a251b330c": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Alakh Pandey 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Hunar.AI · A轮 · 2026-10-20 · 本轮参投 · Rs 40 crore。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-21f1e0578f986661"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-21f1e0578f986661",
+          "source_url": "https://yourstory.com/2026/10/hunarai-raises-rs-40-crore-in-series-a-led-by-blume-ventures",
+          "source_title": "Hunar.AI 在由 Blume Ventures 领投的 A 轮融资中筹集了 40 Cr 卢比",
+          "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+          "quote": "The round also saw participation from Hyderabad Angels Fund, Together Fund, Seedstars, AVNM Ventures, PhysicsWallah co-founders Prateek Maheshwari and Alakh Pandey, and MediaMint co-founder Aditya Vuchi.",
+          "quote_hash": "563fa3eb6eb50f4a96b3b267eeb9e20fdbc29246a2471da23b2815c8638affc1"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-b9d9fbd1509c45": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -66535,6 +66799,33 @@
           "source_content_hash": "99b6f8984f714789300caf059422f90fd76177fe74496029823367ccc43ffbd3",
           "quote": "The round also includes participation from prominent technology executives and strategic investors, including George Still Jr., Partner Emeritus at Norwest Venture Partners and longtime Workday board member; Amit Zavery, President, Chief Product Officer and Chief Operating Officer at ServiceNow; and Giacomo Sonnino, Managing Director at Charlesbank Capital Partners and former COO of QuantumBlack North America.",
           "quote_hash": "5eef44d2d6eabc68f85dee04eca6a43b2a2f4719cc704c4dd9a5fe4e4741f91f"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-b7fafbdd67a372": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "AVNM Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Hunar.AI · A轮 · 2026-10-20 · 本轮参投 · Rs 40 crore。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-21f1e0578f986661"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-21f1e0578f986661",
+          "source_url": "https://yourstory.com/2026/10/hunarai-raises-rs-40-crore-in-series-a-led-by-blume-ventures",
+          "source_title": "Hunar.AI 在由 Blume Ventures 领投的 A 轮融资中筹集了 40 Cr 卢比",
+          "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+          "quote": "The round also saw participation from Hyderabad Angels Fund, Together Fund, Seedstars, AVNM Ventures, PhysicsWallah co-founders Prateek Maheshwari and Alakh Pandey, and MediaMint co-founder Aditya Vuchi.",
+          "quote_hash": "563fa3eb6eb50f4a96b3b267eeb9e20fdbc29246a2471da23b2815c8638affc1"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -66725,6 +67016,33 @@
       ],
       "last_verified_at": "2026-10-06"
     },
+    "INV-a4d260768cf9ca": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Hyderabad Angels Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Hunar.AI · A轮 · 2026-10-20 · 本轮参投 · Rs 40 crore。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-21f1e0578f986661"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-21f1e0578f986661",
+          "source_url": "https://yourstory.com/2026/10/hunarai-raises-rs-40-crore-in-series-a-led-by-blume-ventures",
+          "source_title": "Hunar.AI 在由 Blume Ventures 领投的 A 轮融资中筹集了 40 Cr 卢比",
+          "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+          "quote": "The round also saw participation from Hyderabad Angels Fund, Together Fund, Seedstars, AVNM Ventures, PhysicsWallah co-founders Prateek Maheshwari and Alakh Pandey, and MediaMint co-founder Aditya Vuchi.",
+          "quote_hash": "563fa3eb6eb50f4a96b3b267eeb9e20fdbc29246a2471da23b2815c8638affc1"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-ad049c2c22d042": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -66848,6 +67166,33 @@
           "source_content_hash": "544376d51361f3e2",
           "quote": "The round was led by People Ventures and Emblem",
           "quote_hash": "b837d5a663fa3149806b0f73c1e8f80ddeba0774f3579693dca8b22efba2d8dc"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-1677dbcec534cc": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Prateek Maheshwari 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Hunar.AI · A轮 · 2026-10-20 · 本轮参投 · Rs 40 crore。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-21f1e0578f986661"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-21f1e0578f986661",
+          "source_url": "https://yourstory.com/2026/10/hunarai-raises-rs-40-crore-in-series-a-led-by-blume-ventures",
+          "source_title": "Hunar.AI 在由 Blume Ventures 领投的 A 轮融资中筹集了 40 Cr 卢比",
+          "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+          "quote": "The round also saw participation from Hyderabad Angels Fund, Together Fund, Seedstars, AVNM Ventures, PhysicsWallah co-founders Prateek Maheshwari and Alakh Pandey, and MediaMint co-founder Aditya Vuchi.",
+          "quote_hash": "563fa3eb6eb50f4a96b3b267eeb9e20fdbc29246a2471da23b2815c8638affc1"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -71455,33 +71800,6 @@
           "source_content_hash": "ffe31e015b8a57140dbcc92851ec868935da193924f0f585bbac1c2c445f6885",
           "quote": "Bayern Kapital joined as a new investor, while existing backer UnternehmerTUM Funding for Innovators and a syndicate of strategic industry and tech angels doubled down with follow-on capital.",
           "quote_hash": "083deacd0f2e06f0f9630141cad730c955932fe7657ce57adb600a851104c181"
-        }
-      ],
-      "last_verified_at": "2026-10-06"
-    },
-    "INV-8498827c44a011": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Blume Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Lumio · A轮 · 2026-10-08 · 本轮领投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d4fa6b7ab4e1aa59"
-        }
-      ],
-      "contacts": [],
-      "sources": [
-        {
-          "source_id": "FISRC-d4fa6b7ab4e1aa59",
-          "source_url": "https://timesofindia.indiatimes.com/technology/appliances/lumio-raises-12-million-led-by-blume-ventures-to-expand-its-smart-tv-projector-and-speaker-business/amp_articleshow/134798715.cms",
-          "source_title": "Lumio 获 Blume Ventures 领投 1200 万美元，用于扩展其智能电视、投影仪和音箱业务",
-          "source_content_hash": "e6a08a8820cc201959e0328f0ea7dc32bd5ca886ff69a9004dfcb1c1ef7b16a2",
-          "quote": "The round includes a Series A led by Blume Ventures, with existing investors Stellaris Venture Partners and 3one4 Capital also participating.",
-          "quote_hash": "f5abf78e74a6e4e6e9e718e34f8112a3b7206afda5775d99725c602482c25b31"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -83254,6 +83572,10 @@
         {
           "description": "融资来源记录：Atomic · 历史轮次未披露 · 既有投资方，本轮未明确披露继续参与。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d4e6ae2384112548"
+        },
+        {
+          "description": "融资来源记录：Pigment · 历史轮次未披露 · Series D 参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ebb917baca53eaa8"
         }
       ],
       "contacts": [],
@@ -83293,6 +83615,14 @@
           "source_content_hash": "b251ce98730eb4b50b29b3b86eaacfd259e978dd38cde546790ae6a814a232f8",
           "quote": "Atomic is backed by DVx Ventures, Klass Capital, Madrona, Alumni Ventures, and Sandberg Bernthal Venture Partners.",
           "quote_hash": "66468abb2cb6474446cda92500252a5959692e8108279cd231c03eb848adf144"
+        },
+        {
+          "source_id": "FISRC-ebb917baca53eaa8",
+          "source_url": "https://www.pigment.com/blog/series-d-announcement",
+          "source_title": "Pigment announces $145 million Series D funding round",
+          "source_content_hash": "655339259c9b7c8e",
+          "quote": "Pigment raises $145 million in a Series D round led by ICONIQ Growth, with participation from Sandberg Bernthal Venture Partners, IVP, Meritech, Greenoaks, and Felix Capital.",
+          "quote_hash": "4394f8e8e198f35e2d20e0a65491f2a6ed9fecabafecf67800aeda597c32ce07"
         }
       ]
     },
@@ -111497,6 +111827,10 @@
         {
           "description": "融资来源记录：Throne Science · A轮 · 2026-08-10 · 本轮参投 · 1000 万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2a587e714925b882"
+        },
+        {
+          "description": "融资来源记录：Pigment · 历史轮次未披露 · Series D 参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ebb917baca53eaa8"
         }
       ],
       "contacts": [
@@ -111560,6 +111894,14 @@
           "source_content_hash": "8ca089e7956c95bb",
           "quote": "led by Will Ventures with participation from Emerson Collective, Workshop, LEAD VC, Salt VC, Accomplice, Moxxie, Ventures Together, Symphony, Felix Capital, Cosmic Venture Partners, Offscript, V1.VC, and Morrison Seger.",
           "quote_hash": "af3ef0efa3bf97b8c269266344a317f0ec75502da3984e41935845f8d595fe8a"
+        },
+        {
+          "source_id": "FISRC-ebb917baca53eaa8",
+          "source_url": "https://www.pigment.com/blog/series-d-announcement",
+          "source_title": "Pigment announces $145 million Series D funding round",
+          "source_content_hash": "655339259c9b7c8e",
+          "quote": "Pigment raises $145 million in a Series D round led by ICONIQ Growth, with participation from Sandberg Bernthal Venture Partners, IVP, Meritech, Greenoaks, and Felix Capital.",
+          "quote_hash": "4394f8e8e198f35e2d20e0a65491f2a6ed9fecabafecf67800aeda597c32ce07"
         }
       ],
       "last_verified_at": "2026-10-03"
@@ -140552,6 +140894,10 @@
         {
           "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮天使投资人 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e94365d0212a78f3"
+        },
+        {
+          "description": "融资来源记录：Mach9 · 历史轮次未披露 · 2024 年种子轮投资方（个人）。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d35ae298104a6f5f"
         }
       ],
       "sources": [
@@ -140586,6 +140932,14 @@
           "source_content_hash": "75587989c4b9271c",
           "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt.",
           "quote_hash": "1dc60799a251a7ee9baca1d4db39e00312e6b360748a03aeaf7039b1ef047a15"
+        },
+        {
+          "source_id": "FISRC-d35ae298104a6f5f",
+          "source_url": "https://mach9.ai/news/12-million-seed-funding",
+          "source_title": "Mach9 Raises $12 Million Led by Quiet Capital to Scale AI-Powered Geospatial Mapping Solutions",
+          "source_content_hash": "c4d4cf1496169424",
+          "quote": "Kyle Vogt (founder of Cruise)",
+          "quote_hash": "a84df4d16197c771e9da7a8b1fbb29b118b2a76dcda681e450b05c89957c9933"
         }
       ],
       "last_verified_at": "2026-10-02"
@@ -176657,6 +177011,10 @@
         {
           "description": "融资来源记录：Efficient Computer · A轮 · 2026-02-18 · 本轮参投 · $60 Million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-840402012d166d60"
+        },
+        {
+          "description": "融资来源记录：Mach9 · 历史轮次未披露 · 2024 年种子轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d35ae298104a6f5f"
         }
       ],
       "profile_type": "organization",
@@ -176692,6 +177050,14 @@
           "source_content_hash": "a0edd68c5374470f0638aa5079a21a7e544f8a8370e4030847e40a96e98a5654",
           "quote": "a $60 million Series A funding round led by Triatomic Capital with participation from Eclipse,Union Square Ventures, Overlap Holdings, Box Group, RTX Ventures, Toyota Ventures, Overmatch Ventures, and others.",
           "quote_hash": "54f6131d40657aa4a2992e5cc83f4cf56c75053f7737c3a8174d58856b831ebe"
+        },
+        {
+          "source_id": "FISRC-d35ae298104a6f5f",
+          "source_url": "https://mach9.ai/news/12-million-seed-funding",
+          "source_title": "Mach9 Raises $12 Million Led by Quiet Capital to Scale AI-Powered Geospatial Mapping Solutions",
+          "source_content_hash": "c4d4cf1496169424",
+          "quote": "a $12 million seed funding round led by Quiet Capital, alongside new and existing investors including Overmatch Ventures",
+          "quote_hash": "777e1028616ebcc127eea246ea5ff6e78c9917dc49d7cd94467da4b0e6fbf11e"
         }
       ],
       "last_verified_at": "2026-10-03"
@@ -184463,6 +184829,10 @@
         {
           "description": "PR Newswire 称 Mem0 的 2,400 万美元融资获得 Scott Belsky 与 Dharmesh Shah 的战略投资；金额为整轮披露总额，未披露 Belsky 的个人出资额。",
           "source_id": "FISRC-f3e9aa548f7703f9"
+        },
+        {
+          "description": "融资来源记录：Mach9 · 历史轮次未披露 · 2024 年种子轮投资方（个人）。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d35ae298104a6f5f"
         }
       ],
       "sources": [
@@ -184489,6 +184859,14 @@
           "source_content_hash": "052a20f5aa557858",
           "quote": "strategic investments from technology leaders Scott Belsky and Dharmesh Shah",
           "quote_hash": "31111dd27ef4102fcc66cb90aa96a08bd262c68af185af33979667bbef9f30c8"
+        },
+        {
+          "source_id": "FISRC-d35ae298104a6f5f",
+          "source_url": "https://mach9.ai/news/12-million-seed-funding",
+          "source_title": "Mach9 Raises $12 Million Led by Quiet Capital to Scale AI-Powered Geospatial Mapping Solutions",
+          "source_content_hash": "c4d4cf1496169424",
+          "quote": "Scott Belsky (CPO of Adobe)",
+          "quote_hash": "c1c05ffc5be64b88d7f81f948d138e7225e6541cb5b27add21dfa617773ddae6"
         }
       ],
       "coverage_note": "本人简历用于现任职务和创业/投资经历；Adobe 简历用于历史职位与学历。未将其个人过往投资额与 Mem0 融资总额混为一谈。",
@@ -215476,6 +215854,33 @@
       "milestones": [],
       "contacts": []
     },
+    "INV-5912ba6c68c8e3": {
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Aloke Bajbai 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Hunar.AI · 历史轮次未披露 · 历史天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-843bd654b889e181"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-843bd654b889e181",
+          "source_url": "https://hunar.ai/fund-raise-announcement",
+          "source_title": "AI HRs for frontline workforce management | Hunar.ai",
+          "source_content_hash": "f1c3e664510458a5",
+          "quote": "We're deeply grateful to Together Fund and to our angels, including Aloke Bajpai, Kunal Bahl and Rohit Bansal, who have stood with us for the last four years.",
+          "quote_hash": "a375f9dc2b4603e3c02ee4897d85f49fd756ae1a6afd2f9a0dd1e3db50cc0a6e"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-00cff79037367a": {
       "identity_status": "verified",
       "coverage_status": "researched",
@@ -215619,6 +216024,33 @@
         }
       ],
       "last_verified_at": "2026-10-03"
+    },
+    "INV-36388614bdcfd2": {
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Amar Hanspal 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Mach9 · 历史轮次未披露 · 2024 年种子轮投资方（个人）。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d35ae298104a6f5f"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-d35ae298104a6f5f",
+          "source_url": "https://mach9.ai/news/12-million-seed-funding",
+          "source_title": "Mach9 Raises $12 Million Led by Quiet Capital to Scale AI-Powered Geospatial Mapping Solutions",
+          "source_content_hash": "c4d4cf1496169424",
+          "quote": "Amar Hanspal (former CEO of Autodesk)",
+          "quote_hash": "92fff9373e87501e95ce0a32f59a696d198093c006bfd600fead4f8bdc6bd5d5"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
     },
     "INV-3405a6e4f5ec66": {
       "profile_type": "organization",
@@ -222946,6 +223378,33 @@
       ],
       "last_verified_at": "2026-10-06"
     },
+    "INV-0170d4dfeac18b": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Fitch Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Cognitive Credit · 历史轮次未披露 · A轮领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1a4cc9099dde3ced"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-1a4cc9099dde3ced",
+          "source_url": "https://www.eu-startups.com/2026/10/londons-cognitive-credit-lands-e35-73-million-to-scale-its-ai-and-data-platform-for-credit-markets/",
+          "source_title": "伦敦的Cognitive Credit获得3573万欧元，用于扩展其面向信贷市场的AI和数据平台",
+          "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+          "quote": "a €7.17 million (£6 million) Series A led by Fitch Ventures in November 2021",
+          "quote_hash": "1c35183b9b529e30472f38e105078ed0223902710c6605e2aadf9eb8382f8f4c"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-0af7c7a2c756f8": {
       "identity_status": "verified",
       "coverage_status": "researched",
@@ -226107,6 +226566,33 @@
       ],
       "last_verified_at": "2026-10-02"
     },
+    "INV-eb4345e2c1b72e": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "ICONIQ Growth 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Pigment · 历史轮次未披露 · Series D 领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ebb917baca53eaa8"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-ebb917baca53eaa8",
+          "source_url": "https://www.pigment.com/blog/series-d-announcement",
+          "source_title": "Pigment announces $145 million Series D funding round",
+          "source_content_hash": "655339259c9b7c8e",
+          "quote": "Pigment raises $145 million in a Series D round led by ICONIQ Growth, with participation from Sandberg Bernthal Venture Partners, IVP, Meritech, Greenoaks, and Felix Capital.",
+          "quote_hash": "4394f8e8e198f35e2d20e0a65491f2a6ed9fecabafecf67800aeda597c32ce07"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-5193b80cca7516": {
       "summary": "IDG Capital是1993年创立的全球投资机构，业务包括风险投资、成长资本、收购、二级市场与公开市场投资。官网披露其在全球设有12个办公室、投资组合覆盖10余个市场。机构特别发布了反冒名声明，项目方应通过官网公布渠道联系。",
       "facts": [
@@ -228797,6 +229283,33 @@
         }
       ],
       "last_verified_at": "2026-10-02"
+    },
+    "INV-7c4f9f05105d02": {
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Kunal Bahl 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Hunar.AI · 历史轮次未披露 · 历史天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-843bd654b889e181"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-843bd654b889e181",
+          "source_url": "https://hunar.ai/fund-raise-announcement",
+          "source_title": "AI HRs for frontline workforce management | Hunar.ai",
+          "source_content_hash": "f1c3e664510458a5",
+          "quote": "We're deeply grateful to Together Fund and to our angels, including Aloke Bajpai, Kunal Bahl and Rohit Bansal, who have stood with us for the last four years.",
+          "quote_hash": "a375f9dc2b4603e3c02ee4897d85f49fd756ae1a6afd2f9a0dd1e3db50cc0a6e"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
     },
     "INV-b4c1474297ba52": {
       "profile_type": "organization",
@@ -233249,6 +233762,33 @@
       "education": [],
       "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
     },
+    "INV-a801227007b440": {
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Rohit Bansal 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Hunar.AI · 历史轮次未披露 · 历史天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-843bd654b889e181"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-843bd654b889e181",
+          "source_url": "https://hunar.ai/fund-raise-announcement",
+          "source_title": "AI HRs for frontline workforce management | Hunar.ai",
+          "source_content_hash": "f1c3e664510458a5",
+          "quote": "We're deeply grateful to Together Fund and to our angels, including Aloke Bajpai, Kunal Bahl and Rohit Bansal, who have stood with us for the last four years.",
+          "quote_hash": "a375f9dc2b4603e3c02ee4897d85f49fd756ae1a6afd2f9a0dd1e3db50cc0a6e"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-485178c2356d6e": {
       "summary": "Ron Baron 是 Baron Capital 的创始人、首席执行官和投资组合经理。其官方人物页记载，他于1982年创立该公司。",
       "facts": [
@@ -237615,6 +238155,33 @@
       ],
       "last_verified_at": "2026-10-03",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
+    "INV-3097084e9e51ac": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "XTX Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Cognitive Credit · 历史轮次未披露 · B轮参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-da6b709a9554b865"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-da6b709a9554b865",
+          "source_url": "https://cognitivecredit.com/blog/cognitive-credit-completes-10mm-series-b-fundraise",
+          "source_title": "Cognitive Credit Secures $10M Series B Funding",
+          "source_content_hash": "665a575391b5f54e",
+          "quote": "a $10mm Series B raise led by ETFS Capital, with existing investor XTX Ventures also participating.",
+          "quote_hash": "a4d61fbd64e8540300904301dcdd52c02ef0414d672e7d5243ebea3c625daf00"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
     },
     "INV-6ceb4d935d1361": {
       "summary": "YourNest Venture Capital is an India-focused early-stage DeepTech and technology-enabled venture capital firm. Its official materials identify YourNest Capital Advisors Pvt Ltd as the website operator, describe a focus on enterprise-oriented IP-led ventures, and list multiple SEBI-registered AIFs.",

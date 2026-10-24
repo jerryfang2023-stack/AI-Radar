@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -65,6 +65,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-773a0fd45e447eac",
       "EV-6ca561d3a3b8cb93",
       "EV-960e6f1e98cbfa60",
       "EV-bdf01e0aa51360b3",
@@ -152,6 +153,7 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-agentic_execution",
+      "TX-product_form-ai_device",
       "TX-product_form-model",
       "TX-use_case-content_creation",
       "TX-product_form-end_user_application",
@@ -165,7 +167,7 @@
       "EN-30a63b26b06e096e"
     ],
     "firstSeen": "2026-01-26",
-    "lastSeen": "2026-10-19",
+    "lastSeen": "2026-10-24",
     "relationIds": [
       "REL2-40a53a0ef359ae41",
       "REL2-5f0d9f90c84e1075",
@@ -175,6 +177,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-773a0fd45e447eac",
         "EV-960e6f1e98cbfa60",
         "EV-5d53cd5ef937f1ca",
         "EV-bdf01e0aa51360b3",
@@ -272,6 +275,33 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-773a0fd45e447eac",
+        "dataDate": "2026-10-24",
+        "date": "2026-10-20",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "「钱」流向了哪？ 2026 AI/AR 眼镜融资变化_腾讯新闻",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-9c8ae69b84f21a2e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-9c8ae69b84f21a2e"
+        ]
+      },
       {
         "id": "EV-960e6f1e98cbfa60",
         "dataDate": "2026-10-19",
@@ -3295,6 +3325,7 @@
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
         "EV-d037228f0b35c1cb",
+        "EV-da50c998bf59ffe2",
         "EV-641d61c6b8506c06",
         "EV-a551ac76be0015af",
         "EV-b739349cfab7e41c",
@@ -3360,7 +3391,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-10-23"
+      "lastSeen": "2026-10-24"
     },
     {
       "id": "EN-be1a3c9420d88ea5",
@@ -4685,6 +4716,91 @@
       "lastSeen": "2027-09-30"
     },
     {
+      "id": "TX-product_form-ai_device",
+      "name": "AI 设备",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "ai_device",
+      "eventIds": [
+        "EV-773a0fd45e447eac",
+        "EV-3d949aea7b27ced0",
+        "EV-d5d58c23fa179e23",
+        "EV-06d2ebc330c7fc37",
+        "EV-0cc745a319a25f6e",
+        "EV-d4b0dd4de320089a",
+        "EV-29e6561ca7c005d0",
+        "EV-52bafa1f7edd3231",
+        "EV-c6c297156ff274ac",
+        "EV-381d21544fcdd0c4",
+        "EV-a99c491c33412dc2",
+        "EV-02882e6f5e1902c6",
+        "EV-0fa96416b6df804b",
+        "EV-b5dd10300e34f2d3",
+        "EV-7d0803a8b72f84ba",
+        "EV-2f0f3200b9800877",
+        "EV-d124d9d43e994067",
+        "EV-450f624a6a6446ce",
+        "EV-e2a94eb223c11a66",
+        "EV-51d8aec94225e9c6",
+        "EV-cba16bd541a07032",
+        "EV-545bef6ff60cf3b2",
+        "EV-419ddb2d5cfc799a",
+        "EV-60366423eaa67216",
+        "EV-a9810b47e0408a05",
+        "EV-b93102125cc062e3",
+        "EV-a6b4fa32cce7c483",
+        "EV-2ffc3377977da114",
+        "EV-952a95bff6b05d4f",
+        "EV-cff5848b8c5453af",
+        "EV-02015794e4c719d0",
+        "EV-4e8f6e91e4451ba1",
+        "EV-82e68f59d8584e4e",
+        "EV-f6ac2938949f74ec",
+        "EV-7256017056b81bbe",
+        "EV-9e35de25113a9269"
+      ],
+      "entityIds": [
+        "EN-9c8ae69b84f21a2e",
+        "EN-c467fc4430d27b82",
+        "EN-4df6f0f59120b360",
+        "EN-58e194f5f0d0d876",
+        "EN-ecf226574e481ea7",
+        "EN-461be9b4c2e89d0f",
+        "EN-11f245a21211face",
+        "EN-4e65b9e12aaa5d0e",
+        "EN-1913c6ab46df3a68",
+        "EN-fac803bdedac7e4e",
+        "EN-2a920347dfcf07a7",
+        "EN-68999f0318390d59",
+        "EN-e22521e7de65d819",
+        "EN-d028026b61987e09",
+        "EN-aa949c066d46acbf",
+        "EN-2d7f06eea6faf716",
+        "EN-245f1e177c5169cb",
+        "EN-bd86ebd32193b381",
+        "EN-78e778b471fd74fd",
+        "EN-fcfad5f0679009d4",
+        "EN-6c42a85075d8a891",
+        "EN-86b7b29d698963ef",
+        "EN-1785cfc3bc6ac773",
+        "EN-193d220b421d776e",
+        "EN-b81c8201acfc7639",
+        "EN-88e2cce43eeadb36",
+        "EN-c6a14da2b605499f",
+        "EN-478676438ee161a3",
+        "EN-5fdd673ed1fcff1d",
+        "EN-ae0facccf0a3723a",
+        "EN-047364b9be67f665",
+        "EN-a7baed72c308ce88"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-073f0034b9be13b2"
+      ],
+      "firstSeen": "2025-09-16",
+      "lastSeen": "2026-10-24"
+    },
+    {
       "id": "TX-product_form-model",
       "name": "模型",
       "nodeType": "product_form",
@@ -5375,7 +5491,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-21"
+      "lastSeen": "2026-10-24"
     },
     {
       "id": "TX-use_case-content_creation",

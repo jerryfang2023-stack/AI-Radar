@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -11456,8 +11456,163 @@
   ],
   "events": [
     {
+      "id": "EV-0d7fe2f7274f7448",
+      "dataDate": "2026-10-24",
+      "date": "2026-10-23",
+      "updatedDate": "2026-10-23",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "伦敦的Cognitive Credit获得3573万欧元，用于扩展其面向信贷市场的AI和数据平台",
+      "originalTitle": "London’s Cognitive Credit lands €35.73 million to scale its AI and data platform for credit markets",
+      "subject": "Cognitive Credit",
+      "action": "funding",
+      "object": "€35.73 million ($40 million) strategic growth investment",
+      "metrics": [
+        "€35.73 million",
+        "$40 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-28bf489a0742fce4"
+      ],
+      "entityNames": [
+        "Cognitive Credit"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/londons-cognitive-credit-lands-e35-73-million-to-scale-its-ai-and-data-platform-for-credit-markets/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
+      "id": "EV-2f238836c6ca4d3e",
+      "dataDate": "2026-10-24",
+      "date": "2026-10-23",
+      "updatedDate": "2026-10-23",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "迈阿密初创公司BOB融资550万美元，打造AI驱动的银行平台",
+      "originalTitle": "Miami Startup BOB Raises $5.5M To Build An AI-Powered Banking Platform",
+      "subject": "BOB AI Holdings Corp.",
+      "action": "funding",
+      "object": "$5.5 million in seed funding",
+      "metrics": [
+        "$5.5 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-77e7f092c385d4e6"
+      ],
+      "entityNames": [
+        "BOB AI Holdings Corp."
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/miami-startup-bob-raises-5-5m-to-build-an-ai-powered-banking-platform-302918254.html",
+      "publisher": "www.prnewswire.com"
+    },
+    {
+      "id": "EV-7684bfb9b954c1fd",
+      "dataDate": "2026-10-24",
+      "date": "2026-10-23",
+      "updatedDate": "2026-10-23",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "disputed",
+      "title": "OpenAI 下调估值目标，最高融资 300 亿美元",
+      "originalTitle": "OpenAI lowers valuation target, raises up to $30 billion",
+      "subject": "OpenAI lowers valuation target,",
+      "action": "raises",
+      "object": "up to $30 billion",
+      "metrics": [
+        "$30 billion",
+        "$30B",
+        "$1.25T",
+        "$1.25 trillion",
+        "$852 billion",
+        "$65 billion",
+        "$965 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [
+        "CF-7684bfb9b954c1fd"
+      ],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-1c2969c7602a8e5d",
+        "EN-d117c6892e6fba9e",
+        "EN-7d3194f79e645c42",
+        "EN-76628185e105b96e",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "OpenAI lowers valuation target,",
+        "OpenAI lowers valuation target",
+        "OpenAI",
+        "OpenAI working on new $30B",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://the-decoder.com/openai-lowers-valuation-target-raises-up-to-30-billion/",
+      "publisher": "the-decoder.com"
+    },
+    {
       "id": "EV-4746cc586107aaf7",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -11542,7 +11697,7 @@
     },
     {
       "id": "EV-4c2e1fc3b5434884",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -11585,12 +11740,12 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://www.163.com/dy/article/L9S6A8V105318XR6.html",
-      "publisher": "www.163.com"
+      "sourceUrl": "https://m.sohu.com/a/1091279171_120159035?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+      "publisher": "m.sohu.com"
     },
     {
       "id": "EV-69b488065c05e255",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -11599,8 +11754,8 @@
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "为什么 AI 算力以矩形形态出现——Modal CEO Erik Bernhardsson",
-      "originalTitle": "Why AI Compute Comes in Rectangles — Erik Bernhardsson, Modal CEO",
+      "title": "为什么 AI 算力以矩形形态出现——Modal CEO Erik Bernhardsson——Latent Space",
+      "originalTitle": "Why AI Compute Comes in Rectangles — Erik Bernhardsson, Modal CEO — Latent Space",
       "subject": "Modal",
       "action": "funding",
       "object": "$750 million Series D at a $16B valuation",
@@ -11632,12 +11787,12 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://www.latent.space/p/modal-d",
+      "sourceUrl": "https://latent.space/p/modal-d",
       "publisher": "www.latent.space"
     },
     {
       "id": "EV-741856a05543c233",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -11803,7 +11958,7 @@
     },
     {
       "id": "EV-c1832bf5603ccc52",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -11849,7 +12004,7 @@
     },
     {
       "id": "EV-c964f7646ad88c1e",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -11876,7 +12031,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-94768688bb94ccdb"
+          "CL-0606318484d3ec6c"
         ]
       },
       "missingFields": [],
@@ -11967,7 +12122,7 @@
     },
     {
       "id": "EV-fe4e2cdf3f2a5075",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -12194,7 +12349,7 @@
     },
     {
       "id": "EV-353261ac722ca40b",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -12324,8 +12479,56 @@
       "publisher": "finance.sina.com.cn"
     },
     {
+      "id": "EV-48cbd6592d009234",
+      "dataDate": "2026-10-24",
+      "date": "2026-10-21",
+      "updatedDate": "2026-10-21",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Mach9 完成 3400 万美元 A 轮融资，将土木工程带入 AI 时代",
+      "originalTitle": "Mach9 Raises $34M Series A to Bring Civil Engineering into the AI Era",
+      "subject": "Mach9",
+      "action": "Raises",
+      "object": "$34M Series A to Bring Civil Engineering into the AI Era",
+      "metrics": [
+        "$34 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-1a2290470e0aa754",
+        "EN-a2b8357fddf7aa7d"
+      ],
+      "entityNames": [
+        "SAN FRANCISCO",
+        "Mach9"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/mach9-raises-34m-series-a-to-bring-civil-engineering-into-the-ai-era-302915153.html",
+      "publisher": "www.prnewswire.com"
+    },
+    {
       "id": "EV-511f7a03673f6cce",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-24",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -12372,6 +12575,57 @@
       "products": [],
       "sourceUrl": "https://news.pedaily.cn/202610/570575.shtml",
       "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-5aa0077bd10ce3dc",
+      "dataDate": "2026-10-24",
+      "date": "2026-10-21",
+      "updatedDate": "2026-10-21",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+      "originalTitle": "Blacksmith Raises Sequoia-Led Series C at $1 Billion Valuation to Scale Code Validation",
+      "subject": "Blacksmith",
+      "action": "Raises",
+      "object": "Sequoia-Led Series C at $1 Billion Valuation to Scale Code Validation",
+      "metrics": [
+        "$66M",
+        "$1 billion",
+        "$45M",
+        "$45 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-1a2290470e0aa754",
+        "EN-8eae6c54657e94be"
+      ],
+      "entityNames": [
+        "SAN FRANCISCO",
+        "Blacksmith"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+      "publisher": "www.prnewswire.com"
     },
     {
       "id": "EV-5e3612ebd7b7495e",
@@ -12529,6 +12783,55 @@
       "publisher": "news.pedaily.cn"
     },
     {
+      "id": "EV-8a71cd4f6e7cafd2",
+      "dataDate": "2026-10-24",
+      "date": "2026-10-21",
+      "updatedDate": "2026-10-21",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+      "originalTitle": "Pigment Raises $250M at $2.3B Valuation",
+      "subject": "Pigment",
+      "action": "Raises",
+      "object": "$250M at $2.3B Valuation",
+      "metrics": [
+        "$250 million",
+        "$2.3 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-1670f2e42fefa504",
+        "EN-7c6eefba80293ea4"
+      ],
+      "entityNames": [
+        "PARIS",
+        "Pigment"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+      "publisher": "www.prnewswire.com"
+    },
+    {
       "id": "EV-93f13acd37600d5d",
       "dataDate": "2026-10-22",
       "date": "2026-10-21",
@@ -12576,7 +12879,7 @@
     },
     {
       "id": "EV-95b8b70ca29ab623",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -12630,7 +12933,7 @@
     },
     {
       "id": "EV-9dbf7a6b84a4aa21",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -12676,7 +12979,7 @@
     },
     {
       "id": "EV-9fc0a31d4c3565a9",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -12828,7 +13131,7 @@
     },
     {
       "id": "EV-cd3cf94d0f65aea1",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -13020,7 +13323,7 @@
     },
     {
       "id": "EV-5f298468c125d834",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "funding",
@@ -13068,7 +13371,7 @@
     },
     {
       "id": "EV-5fbe1afea8264e75",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "acquisition",
@@ -13111,6 +13414,52 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/",
       "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-6e22785050fb82ff",
+      "dataDate": "2026-10-24",
+      "date": "2026-10-20",
+      "updatedDate": "2026-10-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Hunar.AI 在由 Blume Ventures 领投的 A 轮融资中筹集了 40 Cr 卢比",
+      "originalTitle": "Hunar.AI raises Rs 40 Cr in Series A funding round led by Blume Ventures",
+      "subject": "Hunar.AI",
+      "action": "raises",
+      "object": "Rs 40 Cr in Series A funding round led by Blume Ventures",
+      "metrics": [
+        "Rs 40 crore"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e6a1f05cbb826b2c"
+      ],
+      "entityNames": [
+        "Hunar.AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://yourstory.com/2026/10/hunarai-raises-rs-40-crore-in-series-a-led-by-blume-ventures",
+      "publisher": "yourstory.com"
     },
     {
       "id": "EV-6ff06b92efd20922",
@@ -13161,6 +13510,88 @@
       "publisher": "tech.eu"
     },
     {
+      "id": "EV-773a0fd45e447eac",
+      "dataDate": "2026-10-24",
+      "date": "2026-10-20",
+      "updatedDate": "2026-10-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "「钱」流向了哪？ 2026 AI/AR 眼镜融资变化_腾讯新闻",
+      "originalTitle": "",
+      "subject": "「钱」流向了哪？ 2026 AI/AR 眼镜",
+      "action": "融资",
+      "object": "变化_腾讯新闻",
+      "metrics": [
+        "90 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-9c8ae69b84f21a2e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-9c8ae69b84f21a2e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-9c8ae69b84f21a2e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "entityNames": [
+        "Tencent"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.qq.com/rain/a/20261020A0CFWH00",
+      "publisher": "news.qq.com"
+    },
+    {
       "id": "EV-8643bc9e4d4f452b",
       "dataDate": "2026-10-22",
       "date": "2026-10-20",
@@ -13208,7 +13639,7 @@
     },
     {
       "id": "EV-a68bb74a987a8df4",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-24",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "funding",
@@ -13325,7 +13756,7 @@
     },
     {
       "id": "EV-c66ddcd78c89a643",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "funding",
@@ -13409,7 +13840,7 @@
     },
     {
       "id": "EV-ea103ce3f64fea8e",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "funding",
@@ -13456,7 +13887,7 @@
     },
     {
       "id": "EV-edcad9269df083ac",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "funding",
@@ -13506,7 +13937,7 @@
     },
     {
       "id": "EV-fa58c17e7bde893c",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "funding",
@@ -13645,7 +14076,7 @@
     },
     {
       "id": "EV-51f0958b144e699a",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "funding",
@@ -13696,7 +14127,7 @@
     },
     {
       "id": "EV-59841d8e9da58cd4",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "funding",
@@ -13709,7 +14140,7 @@
       "originalTitle": "Tolan snags $30M for its AI companion that helps users navigate life",
       "subject": "Tolan",
       "action": "funding",
-      "object": "$30 million",
+      "object": "$30 million in capital",
       "metrics": [
         "$30 million"
       ],
@@ -13742,7 +14173,7 @@
     },
     {
       "id": "EV-72d09299a334d0d9",
-      "dataDate": "2026-10-21",
+      "dataDate": "2026-10-24",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "funding",
@@ -13882,13 +14313,11 @@
       ],
       "entityIds": [
         "EN-c2f693f92991bd18",
-        "EN-8d4321d936320802",
-        "EN-1b9d4ad74ff113b2"
+        "EN-8d4321d936320802"
       ],
       "entityNames": [
         "Dream Labs",
-        "NVIDIA",
-        "Ex-NVIDIA researchers’ Dream Labs"
+        "NVIDIA"
       ],
       "productName": "",
       "products": [],
@@ -13946,7 +14375,7 @@
     },
     {
       "id": "EV-79fbe4ea3a11c695",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "funding",
@@ -14133,7 +14562,7 @@
     },
     {
       "id": "EV-dbb70aae28663f67",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "funding",
@@ -268141,7 +268570,7 @@
     },
     {
       "id": "EV-823f6ba9e35c6c28",
-      "dataDate": "2026-10-22",
+      "dataDate": "2026-10-24",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "deployment",
@@ -273254,9 +273683,7 @@
         {
           "name": "Gemini 3.8 Flash Cyber",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/997/708.htm",
@@ -273451,7 +273878,7 @@
           "name": "Gemini 3.8 Flash",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Google DeepMind"
           ]
         }
       ],
@@ -312235,7 +312662,7 @@
     },
     {
       "id": "EV-e120eaba7fc9e768",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "product_release",
@@ -312380,7 +312807,7 @@
     },
     {
       "id": "EV-5bfda41262dea3d5",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-19",
       "updatedDate": "2026-10-19",
       "eventType": "product_release",
@@ -312483,7 +312910,7 @@
     },
     {
       "id": "EV-b86890a5d3330971",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-17",
       "updatedDate": "2026-10-17",
       "eventType": "service_change",
@@ -314220,7 +314647,7 @@
           "name": "Gemini 4 Argon",
           "type": "模型",
           "ownerNames": [
-            "Google"
+            "OpenAI"
           ]
         }
       ],
@@ -314372,7 +314799,7 @@
           "name": "Gemini 4 Argon",
           "type": "模型",
           "ownerNames": [
-            "Google"
+            "OpenAI"
           ]
         }
       ],
@@ -314505,9 +314932,7 @@
         {
           "name": "Gemini 4 Argon",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon",
@@ -314719,9 +315144,7 @@
         {
           "name": "Gemini 4 Argon",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet",
@@ -315418,21 +315841,21 @@
           "name": "AI Surpasses",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Amazon"
           ]
         },
         {
           "name": "Total Funding",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Amazon"
           ]
         },
         {
           "name": "Copper Sky Capital Doubles",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Amazon"
           ]
         }
       ],
@@ -316311,16 +316734,12 @@
         {
           "name": "TTS Playground",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini 3.8 TTS Playground",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://simonwillison.net/2026/Sep/23/gemini-tts-playground",
@@ -317296,23 +317715,17 @@
         {
           "name": "Flash-Lite TTS",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini 3.8 Flash TTS",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Flash TTS",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/googles-new-flash-tts-models-let-you-design-ai-voices-from-scratch-using-text-descriptions",
@@ -317493,16 +317906,12 @@
         {
           "name": "Flash-Lite TTS",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini 3.8 Flash TTS",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech",
@@ -322496,16 +322905,12 @@
         {
           "name": "Qwen3.8-Omni-Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/qwen3-8-omni-flash-undercuts-gemini-flash-pricing-while-matching-its-multimodal-benchmarks",
@@ -324537,9 +324942,7 @@
         {
           "name": "Play",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/1/003/900.htm",
@@ -324691,9 +325094,7 @@
         {
           "name": "Data Commons",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform",
@@ -325549,23 +325950,17 @@
         {
           "name": "Gemini 3.8 Live",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Live Extended Thinking",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Live",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://simonwillison.net/2026/Sep/15/gemini-live",
@@ -326809,16 +327204,12 @@
         {
           "name": "Gemini 3.8 Live",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Live Extended Thinking",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking",
@@ -331416,9 +331807,7 @@
         {
           "name": "Gemini Windows",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows",
@@ -332443,16 +332832,12 @@
         {
           "name": "ADK for Kotlin 1.0",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "ADK",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://developers.googleblog.com/announcing-adk-for-kotlin-10-building-production-ready-ai-agents-in-kotlin-android-and-beyond",
@@ -332776,9 +333161,7 @@
         {
           "name": "WeatherNext 3",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://arstechnica.com/science/2026/09/googles-ai-weather-model-now-uses-more-raw-satellite-data",
@@ -335277,16 +335660,12 @@
         {
           "name": "Lyria 3.5",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Lyria 3.5 music",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/google-brings-ai-music-generation-directly-into-the-gemini-app-with-its-new-lyria-3-5-model",
@@ -335881,9 +336260,7 @@
         {
           "name": "Gemini Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/09/04/google-agentic-video-understanding-gemini-flash-models",
@@ -338675,9 +339052,7 @@
         {
           "name": "Gemini 3.8 Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://simonwillison.net/2026/Sep/2/llm-gemini",
@@ -339027,14 +339402,14 @@
           "name": "Gemini 3.8 Flash",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Alibaba"
           ]
         },
         {
           "name": "MEGA",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Alibaba"
           ]
         }
       ],
@@ -339770,9 +340145,7 @@
         {
           "name": "Gemini 3.8 Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://arstechnica.com/ai/2026/09/google-releases-gemini-3-8-flash-its-third-flash-model-in-six-weeks",
@@ -341460,9 +341833,7 @@
         {
           "name": "Agent Skills for Google",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://dev.to/googleai/how-to-design-ai-evaluations-you-can-actually-trust-41c3",
@@ -342129,9 +342500,7 @@
         {
           "name": "MAPL-EMIT",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://research.google/blog/mapping-global-methane-emissions-from-space-with-deep-learning",
@@ -343060,16 +343429,12 @@
         {
           "name": "TimesFM-3",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Research",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting",
@@ -344214,9 +344579,7 @@
         {
           "name": "Gemini Omni 1.1 Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/08/29/google-ai-releases-gemini-omni-1-1-flash-40-second-scene-extension-first-last-frame-control-and-4k-upscaling",
@@ -345112,9 +345475,7 @@
         {
           "name": "Gemini Omni 1.1 Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/googles-gemini-omni-1-1-flash-makes-ai-video-generation-cheaper-and-more-flexible",
@@ -345475,9 +345836,7 @@
         {
           "name": "Gemini 3.5 Transcribe",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/08/27/google-ai-releases-gemini-3-5-transcribe-a-speech-to-text-model-reporting-2-6-average-wer-across-85-languages",
@@ -345589,9 +345948,7 @@
         {
           "name": "Gemini Omni 1.1 Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/995/352.htm",
@@ -346609,9 +346966,7 @@
         {
           "name": "Gemini Omni 1.1 Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control",
@@ -346830,9 +347185,7 @@
         {
           "name": "Earth AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai",
@@ -347120,9 +347473,7 @@
         {
           "name": "Gemini 3.5 Transcribe",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/tech/985186/google-gemini-3-5-transcribe-audio-ai",
@@ -347216,16 +347567,12 @@
         {
           "name": "Gemini Enterprise Agent",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Enterprise",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://northflank.com/blog/top-cloud-platforms-for-enterprise-ai-deployment",
@@ -347428,9 +347775,7 @@
         {
           "name": "Gemini 3.5 Transcribe",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-5-transcribe-for-ai-powered-speech-to-text",
@@ -347614,23 +347959,17 @@
         {
           "name": "Gemini Enterprise for Legal",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Enterprise Targets Legal",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Enterprise",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://futurumgroup.com/insights/google-cloud-targets-legal-ai-with-purpose-built-governed-platform",
@@ -349262,7 +349601,7 @@
           "name": "Gemini",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Anthropic"
           ]
         }
       ],
@@ -353981,16 +354320,12 @@
         {
           "name": "Gemini Omni Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "AI audio",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/adobe-firefly-adds-ai-audio-tools-and-googles-gemini-omni-flash",
@@ -354856,16 +355191,12 @@
         {
           "name": "Preferred Sources",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "AI-driven",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses",
@@ -354971,9 +355302,7 @@
         {
           "name": "Mac",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/08/20/meta-ais-new-mac-app-wants-you-to-talk-to-your-apps",
@@ -356774,9 +357103,7 @@
         {
           "name": "AI-generated",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini",
@@ -358293,23 +358620,17 @@
         {
           "name": "AP News",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Marketing AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Marketing Moves Beyond",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://apnews.com/press-release/business-wire/press-release-485d4f41eea34366b03f021218c9fd58",
@@ -360376,9 +360697,7 @@
         {
           "name": "Gemini 3.7 Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/08/13/google-ai-just-released-gemini-3-7-flash",
@@ -360468,9 +360787,7 @@
         {
           "name": "Gemini 3.7 Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release",
@@ -360782,9 +361099,7 @@
         {
           "name": "Gemini 3.7 Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/gemini-3-7-flash-lands-with-coding-gains-and-undercuts-its-three-week-old-predecessors-price-by-50",
@@ -361183,16 +361498,12 @@
         {
           "name": "C++",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "C++ Library",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://developers.googleblog.com/introducing-credentio-open-source-c-library-for-c2pa-content-credentials-from-google",
@@ -362014,9 +362325,7 @@
         {
           "name": "Pixel Watch 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://blog.google/products-and-platforms/devices/pixel/pixel-watch-5",
@@ -362306,16 +362615,12 @@
         {
           "name": "Breathing Emergency Detection",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Pixel Watch 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/tech/978094/pixel-watch-5-hands-on-made-by-google-gemini-wearables-smartwatch",
@@ -362568,21 +362873,21 @@
           "name": "Pixel 11",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Hinge"
           ]
         },
         {
           "name": "Pixel Watch 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Hinge"
           ]
         },
         {
           "name": "Pixel Tag",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Hinge"
           ]
         }
       ],
@@ -366541,7 +366846,7 @@
           "name": "MAI-Image-2.6",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "xAI"
           ]
         }
       ],
@@ -372415,9 +372720,7 @@
         {
           "name": "Database Operations",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://cloud.google.com/blog/products/databases/deep-dive-on-new-ai-powered-database-agents",
@@ -372633,14 +372936,14 @@
           "name": "API Gateway",
           "type": "模型",
           "ownerNames": [
-            "Google"
+            "OpenAI"
           ]
         },
         {
           "name": "Cloud API Gateway",
           "type": "模型",
           "ownerNames": [
-            "Google"
+            "OpenAI"
           ]
         }
       ],
@@ -375022,9 +375325,7 @@
         {
           "name": "Gemini Spark",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/984/674.htm",
@@ -375889,9 +376190,7 @@
         {
           "name": "Earth AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation",
@@ -377165,14 +377464,14 @@
           "name": "Gemini Robotics ER 2",
           "type": "模型",
           "ownerNames": [
-            "Google"
+            "Google DeepMind"
           ]
         },
         {
           "name": "DeepMind",
           "type": "模型",
           "ownerNames": [
-            "Google"
+            "Google DeepMind"
           ]
         }
       ],
@@ -377293,9 +377592,7 @@
         {
           "name": "Gemini",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/983/381.htm",
@@ -381139,9 +381436,7 @@
         {
           "name": "Gemini 4",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/982/040.htm",
@@ -387248,9 +387543,7 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/980/551.htm",
@@ -389646,9 +389939,7 @@
         {
           "name": "Gemini 3.6 Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing",
@@ -391195,23 +391486,17 @@
         {
           "name": "Flash-Lite",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini 3.6 Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Flash Cyber",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/979/795.htm",
@@ -391301,16 +391586,12 @@
         {
           "name": "Gemini 3.6 Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/google-ships-three-new-gemini-flash-models-but-its-frontier-3-5-pro-remains-lost-in-training",
@@ -391542,7 +391823,7 @@
           "name": "Tunix",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "SGLang"
           ]
         }
       ],
@@ -392199,16 +392480,12 @@
         {
           "name": "Flash-Lite",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini 3.6 Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://artificialintelligence-news.com/news/googles-gemini-3-6-flash-targets-enterprise-agent-token-costs",
@@ -392840,9 +393117,7 @@
         {
           "name": "Adobe Project Indigo 1.1",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/979/273.htm",
@@ -393321,9 +393596,7 @@
         {
           "name": "Frozen v2",
           "type": "AI 硬件",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/979/251.htm",
@@ -394205,9 +394478,7 @@
         {
           "name": "Project Indigo",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/07/20/adobe-camera-apps-new-feature-will-critique-your-photos-using-ai",
@@ -399075,9 +399346,7 @@
         {
           "name": "Vids",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/978/022.htm",
@@ -400080,16 +400349,12 @@
         {
           "name": "Gemini Notebook",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "NotebookLM",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/google-rebrands-notebooklm-as-gemini-notebook-and-opens-its-search-app-to-third-party-integration",
@@ -400807,7 +401072,7 @@
           "name": "Gemma 4",
           "type": "模型",
           "ownerNames": [
-            "Google"
+            "NVIDIA"
           ]
         }
       ],
@@ -401097,16 +401362,12 @@
         {
           "name": "Parallel Web Search",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Enterprise Agent",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://developers.googleblog.com/expanding-choice-in-gemini-enterprise-agent-platform-introducing-grounding-with-parallel-web-search",
@@ -401782,7 +402043,7 @@
           "name": "AI Mode",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Canva"
           ]
         }
       ],
@@ -403454,23 +403715,17 @@
         {
           "name": "JavaScript",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "LiteRT.js",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "SensorFM",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/15/google-releases-litert-js-a-javascript-binding-of-litert-that-runs-tflite-models-in-browsers-via-webgpu",
@@ -404147,9 +404402,7 @@
         {
           "name": "Nano Banana",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/976/980.htm",
@@ -405447,23 +405700,17 @@
         {
           "name": "AI Overviews",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Nano Banana 2 Lite",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Search",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/google-search-now-generates-ai-images-when-it-cant-find-what-youre-looking-for-on-the-web",
@@ -405972,9 +406219,7 @@
         {
           "name": "Cloud Documentation",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes",
@@ -406544,16 +406789,12 @@
         {
           "name": "AI Overviews",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Images 25",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary",
@@ -410991,16 +411232,12 @@
         {
           "name": "SensorFM",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Research",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://research.google/blog/sensorfm-towards-a-general-intelligence-and-interface-for-wearable-health-data",
@@ -411329,9 +411566,7 @@
         {
           "name": "LiteRT.js",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://developers.googleblog.com/litertjs-googles-high-performance-web-ai-inference",
@@ -411439,16 +411674,12 @@
         {
           "name": "Duet AI for Developers",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GitHub Copilot",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2023/12/13/duet-ai-for-developers-googles-github-copilot-competitor-is-now-generally-available-and-will-soon-use-the-gemini-model",
@@ -412272,16 +412503,12 @@
         {
           "name": "Cloud",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Enterprise Agent",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/alphaevolve-on-cloud",
@@ -412831,16 +413058,12 @@
         {
           "name": "Cloud Documentation",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Enterprise Agent",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes",
@@ -421078,7 +421301,7 @@
           "name": "Cloud Workbench Notebooks",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Rime"
           ]
         }
       ],
@@ -421401,23 +421624,17 @@
         {
           "name": "Tasks",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Keep",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Spark",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/07/01/gemini-spark-googles-agentic-assistant-is-now-available-on-mac",
@@ -422661,9 +422878,7 @@
         {
           "name": "Nano Banana 2 Lite",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/06/30/google-introduces-a-faster-cheaper-image-generator-with-nano-banana-2-lite",
@@ -423002,9 +423217,7 @@
         {
           "name": "Nano Banana 2 Lite",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/970/812.htm",
@@ -425023,9 +425236,7 @@
         {
           "name": "AI Studio",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/interactions-api-general-availability",
@@ -426015,9 +426226,7 @@
         {
           "name": "Finance",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://arstechnica.com/google/2026/06/google-finance-finally-gets-a-mobile-app-as-ai-powered-overhaul-leaves-beta",
@@ -426168,16 +426377,12 @@
         {
           "name": "Gemini 3.5 Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Computer Use",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/google-bakes-computer-control-directly-into-gemini-3-5-flash-letting-the-model-see-and-operate-your-screen",
@@ -428191,9 +428396,7 @@
         {
           "name": "Home 6",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/tech/955385/google-home-familiar-faces-clothing",
@@ -429473,7 +429676,7 @@
           "name": "Interactions API",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Google DeepMind"
           ]
         }
       ],
@@ -429535,7 +429738,7 @@
           "name": "Cloud",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Microsoft"
           ]
         },
         {
@@ -430413,9 +430616,7 @@
         {
           "name": "TPU v9",
           "type": "AI 硬件",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/966/901.htm",
@@ -431575,23 +431776,17 @@
         {
           "name": "Gemini Enterprise Agent",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Introducing Gemini Enterprise",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Blog",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform",
@@ -432204,9 +432399,7 @@
         {
           "name": "AI Ultra",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions",
@@ -434267,9 +434460,7 @@
         {
           "name": "A2A",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://developers.googleblog.com/how-a2a-is-building-a-world-of-collaborative-agents",
@@ -435448,9 +435639,7 @@
         {
           "name": "Home",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/965/667.htm",
@@ -435741,9 +435930,7 @@
         {
           "name": "TPU Developer Hub",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://developers.googleblog.com/unlocking-the-power-of-the-tpu-stack-introducing-our-new-developer-hub",
@@ -436513,14 +436700,14 @@
           "name": "Android 17",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Apple"
           ]
         },
         {
           "name": "Pixel",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Apple"
           ]
         }
       ],
@@ -436874,7 +437061,7 @@
           "name": "Hermes",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Moonshot AI"
           ]
         }
       ],
@@ -436933,23 +437120,17 @@
         {
           "name": "OKF v0.1",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Cloud",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "OKF",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/06/16/google-cloud-introduces-open-knowledge-format-okf-a-vendor-neutral-markdown-spec-for-giving-ai-agents-curated-context",
@@ -441839,7 +442020,7 @@
           "name": "Hermes Agent Profile Builder",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Google DeepMind"
           ]
         }
       ],
@@ -442403,9 +442584,7 @@
         {
           "name": "DiffusionGemma",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/962/696.htm",
@@ -442500,7 +442679,7 @@
           "name": "DiffusionGemma",
           "type": "模型",
           "ownerNames": [
-            "Google"
+            "Google DeepMind"
           ]
         }
       ],
@@ -444068,7 +444247,7 @@
           "name": "Gemini 3.5 Live Translate",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Rime"
           ]
         }
       ],
@@ -444408,9 +444587,7 @@
         {
           "name": "Gemini 3.5 Live Translate",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/googles-gemini-3-5-live-translate-delivers-real-time-voice-translation-across-70-languages",
@@ -445317,9 +445494,7 @@
         {
           "name": "Gemini 3.5 Live Translate",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/962/143.htm",
@@ -447019,23 +447194,17 @@
         {
           "name": "Cross-Corpus Retrieval",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Enterprise Agent",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Research",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/06/08/google-research-adds-agentic-rag-to-gemini-enterprise-agent-platform-with-a-sufficient-context-agent-for-multi-hop-queries",
@@ -449422,7 +449591,7 @@
           "name": "Cloud Marketplace",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Intel"
           ]
         }
       ],
@@ -449784,7 +449953,7 @@
           "name": "Research",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "OPPO"
           ]
         }
       ],
@@ -454310,23 +454479,17 @@
         {
           "name": "Flash-Lite",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini 3.1 Flash-Lite",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Cloud Blog",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-flash-lite-is-now-generally-available",
@@ -457644,8 +457807,58 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-2ad2ae14a594df04",
+      "dataDate": "2026-10-24",
+      "date": "2026-10-23",
+      "updatedDate": "2026-10-23",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic 即将进行的 IPO 让硅谷屏息以待",
+      "originalTitle": "Anthropic’s Pending IPO Has Silicon Valley on the Edge of Its Seat",
+      "subject": "Anthropic’s Pending",
+      "action": "IPO",
+      "object": "Has Silicon Valley on the Edge of Its Seat",
+      "metrics": [
+        "$30 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-407a75b4abd9e9aa",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Anthropic’s Pending",
+        "Anthropic",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.newcomer.co/p/anthropics-pending-ipo-has-silicon",
+      "publisher": "www.newcomer.co"
+    },
+    {
       "id": "EV-2aead80f6796b70b",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "ipo_listing",
@@ -457690,8 +457903,92 @@
       "publisher": "www.bloomberg.com"
     },
     {
+      "id": "EV-526fa666b5957768",
+      "dataDate": "2026-10-24",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 监测应成为投资者尽职调查的标准组成部分",
+      "originalTitle": "AI monitoring should be a standard part of investor due diligence",
+      "subject": "OpenAI models",
+      "action": "security_incident",
+      "object": "Hugging Face's production systems",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-b3060e26b969450f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-b3060e26b969450f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-b3060e26b969450f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-b3060e26b969450f",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "OpenAI models",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.uktech.news/ai/ai-monitoring-investor-due-diligence-20261022",
+      "publisher": "www.uktech.news"
+    },
+    {
       "id": "EV-e1e13c263714163a",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "financial_performance",
@@ -457783,8 +458080,52 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-da50c998bf59ffe2",
+      "dataDate": "2026-10-24",
+      "date": "2026-10-21",
+      "updatedDate": "2026-10-21",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Meta欲通过新设立的股票类别为其大规模AI建设提供资金",
+      "originalTitle": "Meta wants to pay for its broad AI buildout with a newly created class of stock",
+      "subject": "Meta",
+      "action": "capital_investment",
+      "object": "new class of non-voting capital stock",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/21/meta-wants-to-pay-for-its-broad-ai-buildout-with-a-newly-created-class-of-stock/",
+      "publisher": "techcrunch.com"
+    },
+    {
       "id": "EV-1d592d9d6ed402c9",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "financial_performance",
@@ -457901,8 +458242,54 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-53c733c33deddee3",
+      "dataDate": "2026-10-24",
+      "date": "2026-10-19",
+      "updatedDate": "2026-10-19",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic IPO 将为 Google 的 Eric Schmidt 带来巨额收益",
+      "originalTitle": "Anthropic IPO to Deliver Massive Windfall for Google's Eric Schmidt",
+      "subject": "Anthropic PBC",
+      "action": "IPO",
+      "object": "to Deliver Massive Windfall for Google's Eric Schmidt",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-10-19/eric-schmidt-s-1-anthropic-stake-set-to-pay-massive-windfall",
+      "publisher": "www.bloomberg.com"
+    },
+    {
       "id": "EV-5112093b7b857728",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-18",
       "updatedDate": "2026-10-18",
       "eventType": "financial_performance",
@@ -457954,7 +458341,7 @@
     },
     {
       "id": "EV-d35419bc2f596bce",
-      "dataDate": "2026-10-23",
+      "dataDate": "2026-10-24",
       "date": "2026-10-18",
       "updatedDate": "2026-10-18",
       "eventType": "capital_investment",
@@ -469490,16 +469877,12 @@
         {
           "name": "Bidirectional MCP",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "AI Agents Challenge",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://developers.googleblog.com/4-engineering-patterns-behind-the-strongest-ai-agents-challenge-submissions",
@@ -470725,9 +471108,7 @@
         {
           "name": "WikiSkill",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/google-gives-ai-agents-their-own-wiki-so-they-can-learn-from-mistakes-and-successes",
@@ -491546,16 +491927,12 @@
         {
           "name": "Hugging Face",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "ASRs. Our main finding is",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://huggingface.co/blog/ServiceNow-AI/code-switching",

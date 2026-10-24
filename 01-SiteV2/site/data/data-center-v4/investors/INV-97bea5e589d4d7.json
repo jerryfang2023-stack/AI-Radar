@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,25 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-28",
-    "latest_disclosed_at": "2026-10-15",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 3,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "seed",
       "series_a",
+      "series_e",
       "series_h",
       "undisclosed"
     ],
@@ -99,12 +100,57 @@
         "name": "Glow"
       },
       {
+        "entity_id": "EN-7c6eefba80293ea4",
+        "canonical_entity_id": "",
+        "name": "Pigment"
+      },
+      {
         "entity_id": "EN-f7d9f5a90479d632",
         "canonical_entity_id": "",
         "name": "Ramp"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-cf9e85cb5c34cd00",
+        "funding_insight_id": "FI-25d65282cadc2f61",
+        "event_ids": [
+          "EV-8a71cd4f6e7cafd2"
+        ],
+        "company_entity_id": "EN-7c6eefba80293ea4",
+        "company_canonical_entity_id": "",
+        "company_name": "Pigment",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$250 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6737e55341eb5266",
+            "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+            "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+            "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+            "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+            "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+          }
+        ]
+      },
       {
         "activity_id": "IA-cde73eeb038e962a",
         "funding_insight_id": "FI-49e5e02e3f1e2d52",
@@ -302,6 +348,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-6737e55341eb5266",
+        "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+        "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+        "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+        "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+        "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+      },
+      {
         "source_id": "FISRC-f581afce52cf5bef",
         "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
         "source_title": "Ramp估值达600亿美元，深入布局AI",
@@ -365,16 +419,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Pigment · E轮 · 2026-10-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6737e55341eb5266"
+        },
+        {
           "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f581afce52cf5bef"
         },
         {
           "description": "融资来源记录：AIR · 种子轮 · 2026-09-01 · 本轮领投 · $50M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0426e4b3b9347f4f"
-        },
-        {
-          "description": "融资来源记录：Glow · A轮 · 2026-07-22 · 本轮领投 · $180 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e192dd3fe1a72590"
         }
       ],
       "contacts": [],
@@ -396,6 +450,14 @@
           "quote_hash": "fa24778cfd7c2d26c7f8ebda518fb1810040fd01beae0ea7f072d6d62cf75856"
         },
         {
+          "source_id": "FISRC-6737e55341eb5266",
+          "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+          "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+          "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+          "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+          "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+        },
+        {
           "source_id": "FISRC-f581afce52cf5bef",
           "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
           "source_title": "Ramp估值达600亿美元，深入布局AI",
@@ -410,14 +472,6 @@
           "source_content_hash": "f272d6219c1373f8",
           "quote": "Sequoia led the first round, while Greenoaks led the second, Saban said.",
           "quote_hash": "88c6d16a9401bf99e7028ca06409d2a5469bd0d04db4c7c63280de67702392ef"
-        },
-        {
-          "source_id": "FISRC-e192dd3fe1a72590",
-          "source_url": "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
-          "source_title": "Glow 结束隐身模式，融资 1.8 亿美元，旨在 AI 时代重塑终端安全",
-          "source_content_hash": "7a2e33a3e219eacb969730930bf8937540244e2a11faaace4cdc936155dbce17",
-          "quote": "The round was led by Sequoia, Cyberstarts, Greenoaks, and Redpoint Ventures, with participation from Index Ventures, Swish Ventures, Lux Capital, Operator Collective, and Holly Ventures.",
-          "quote_hash": "fb002ae0379ebf35e28fce1f6938f77aa1f0a20cd1f7b5ac48fd381f8c2bc702"
         }
       ],
       "last_verified_at": "2026-10-04",

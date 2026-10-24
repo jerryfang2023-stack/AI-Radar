@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,28 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-08",
-    "latest_disclosed_at": "2026-10-08",
+    "latest_disclosed_at": "2026-10-20",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-e6a1f05cbb826b2c",
+        "canonical_entity_id": "",
+        "name": "Hunar.AI"
+      },
       {
         "entity_id": "EN-28775a3d932436cf",
         "canonical_entity_id": "",
@@ -85,6 +90,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2566e2732ee7fab8",
+        "funding_insight_id": "FI-d337c9f930edf4af",
+        "event_ids": [
+          "EV-6e22785050fb82ff"
+        ],
+        "company_entity_id": "EN-e6a1f05cbb826b2c",
+        "company_canonical_entity_id": "",
+        "company_name": "Hunar.AI",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "Rs 40 crore",
+        "amount_normalized": {
+          "currency": "INR",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿印度卢比"
+        },
+        "announced_at": "2026-10-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-21f1e0578f986661",
+            "source_url": "https://yourstory.com/2026/10/hunarai-raises-rs-40-crore-in-series-a-led-by-blume-ventures",
+            "source_title": "Hunar.AI 在由 Blume Ventures 领投的 A 轮融资中筹集了 40 Cr 卢比",
+            "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+            "quote": "Hunar.AI has raised Rs 40 crore in a Series A funding round led by Blume Ventures.",
+            "quote_hash": "982b4fb1429949202d2b4646dd769b3938122290afb97921ed83446cf26bfadf"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a35713f1fd2b53a1",
         "funding_insight_id": "FI-e3c49006517a7a36",
@@ -128,6 +173,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-21f1e0578f986661",
+        "source_url": "https://yourstory.com/2026/10/hunarai-raises-rs-40-crore-in-series-a-led-by-blume-ventures",
+        "source_title": "Hunar.AI 在由 Blume Ventures 领投的 A 轮融资中筹集了 40 Cr 卢比",
+        "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+        "quote": "Hunar.AI has raised Rs 40 crore in a Series A funding round led by Blume Ventures.",
+        "quote_hash": "982b4fb1429949202d2b4646dd769b3938122290afb97921ed83446cf26bfadf"
+      },
+      {
         "source_id": "FISRC-d4fa6b7ab4e1aa59",
         "source_url": "https://timesofindia.indiatimes.com/technology/appliances/lumio-raises-12-million-led-by-blume-ventures-to-expand-its-smart-tv-projector-and-speaker-business/amp_articleshow/134798715.cms",
         "source_title": "Lumio 获 Blume Ventures 领投 1200 万美元，用于扩展其智能电视、投影仪和音箱业务",
@@ -141,10 +194,14 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Blume Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Blume Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Hunar.AI · A轮 · 2026-10-20 · 本轮领投 · Rs 40 crore。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-21f1e0578f986661"
+        },
         {
           "description": "融资来源记录：Lumio · A轮 · 2026-10-08 · 本轮领投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d4fa6b7ab4e1aa59"
@@ -152,6 +209,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-21f1e0578f986661",
+          "source_url": "https://yourstory.com/2026/10/hunarai-raises-rs-40-crore-in-series-a-led-by-blume-ventures",
+          "source_title": "Hunar.AI 在由 Blume Ventures 领投的 A 轮融资中筹集了 40 Cr 卢比",
+          "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+          "quote": "Hunar.AI has raised Rs 40 crore in a Series A funding round led by Blume Ventures.",
+          "quote_hash": "982b4fb1429949202d2b4646dd769b3938122290afb97921ed83446cf26bfadf"
+        },
         {
           "source_id": "FISRC-d4fa6b7ab4e1aa59",
           "source_url": "https://timesofindia.indiatimes.com/technology/appliances/lumio-raises-12-million-led-by-blume-ventures-to-expand-its-smart-tv-projector-and-speaker-business/amp_articleshow/134798715.cms",

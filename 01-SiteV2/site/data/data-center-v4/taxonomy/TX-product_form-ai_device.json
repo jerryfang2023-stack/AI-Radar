@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -59,6 +59,7 @@
     "typeLabel": "产品形态",
     "valueId": "ai_device",
     "eventIds": [
+      "EV-773a0fd45e447eac",
       "EV-3d949aea7b27ced0",
       "EV-d5d58c23fa179e23",
       "EV-06d2ebc330c7fc37",
@@ -96,6 +97,7 @@
       "EV-9e35de25113a9269"
     ],
     "entityIds": [
+      "EN-9c8ae69b84f21a2e",
       "EN-c467fc4430d27b82",
       "EN-4df6f0f59120b360",
       "EN-58e194f5f0d0d876",
@@ -133,9 +135,91 @@
       "HW-073f0034b9be13b2"
     ],
     "firstSeen": "2025-09-16",
-    "lastSeen": "2026-10-12"
+    "lastSeen": "2026-10-24"
   },
   "events": [
+    {
+      "id": "EV-773a0fd45e447eac",
+      "dataDate": "2026-10-24",
+      "date": "2026-10-20",
+      "updatedDate": "2026-10-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "「钱」流向了哪？ 2026 AI/AR 眼镜融资变化_腾讯新闻",
+      "originalTitle": "",
+      "subject": "「钱」流向了哪？ 2026 AI/AR 眼镜",
+      "action": "融资",
+      "object": "变化_腾讯新闻",
+      "metrics": [
+        "90 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-9c8ae69b84f21a2e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-9c8ae69b84f21a2e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-9c8ae69b84f21a2e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "entityNames": [
+        "Tencent"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.qq.com/rain/a/20261020A0CFWH00",
+      "publisher": "news.qq.com"
+    },
     {
       "id": "EV-3d949aea7b27ced0",
       "dataDate": "2026-10-12",
@@ -8474,6 +8558,123 @@
   ],
   "entities": [
     {
+      "id": "EN-9c8ae69b84f21a2e",
+      "name": "腾讯",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Tencent"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-773a0fd45e447eac",
+        "EV-6ca561d3a3b8cb93",
+        "EV-960e6f1e98cbfa60",
+        "EV-bdf01e0aa51360b3",
+        "EV-5d53cd5ef937f1ca",
+        "EV-78ed82b05ec5fbf1",
+        "EV-c7b060541ca00208",
+        "EV-89cbf15ddbd98a05",
+        "EV-c96705c69e11c520",
+        "EV-03a5e703deae837f",
+        "EV-2cddd05c747f0ee7",
+        "EV-3d81a794527a5e14",
+        "EV-622c77a021ef08de",
+        "EV-bada0d929d2b70ac",
+        "EV-7baf4ab86798fef5",
+        "EV-23bba84b34c5834d",
+        "EV-4c9c7ab2dded69b3",
+        "EV-eb2796fc4bcc5ac0",
+        "EV-141a1e90c0780daa",
+        "EV-e6780925e189903c",
+        "EV-609da9983f836426",
+        "EV-a2f902b9707ffd02",
+        "EV-93c2515d50157281",
+        "EV-47f16317cc2d62e2",
+        "EV-88f346991085a2f3",
+        "EV-987cb2e5e20f79ce",
+        "EV-a6696955767a209e",
+        "EV-00514c4ffc2e3cd3",
+        "EV-d3054a8a2b62a503",
+        "EV-87432dbb99cd6033",
+        "EV-5e847cd78e657cb5",
+        "EV-427081ec574b43bb",
+        "EV-2f0f3200b9800877",
+        "EV-847102580d2eeef1",
+        "EV-acaf06b262d9c3db",
+        "EV-27b69ea604475b72",
+        "EV-8ea9e79f7edcb94f",
+        "EV-d96123480b112099",
+        "EV-d778b532e1d6e74f",
+        "EV-8adcbbba58984d62",
+        "EV-794f0a86004da0c9",
+        "EV-df37e9341b5c7f04",
+        "EV-da9bb2c98c1ce8cd",
+        "EV-afcd5426f5c01dc7",
+        "EV-619e33abf3f9bfbf",
+        "EV-be2f6bfcad93c42f",
+        "EV-ceae771867a66bb5",
+        "EV-c7b81290859057b0",
+        "EV-f4da30e35343eda7",
+        "EV-61efb6eb783a5d10",
+        "EV-b8eb460540c33d68",
+        "EV-74615e75b79f44eb",
+        "EV-e496e24751712be7",
+        "EV-411dc97b66bd8251",
+        "EV-a251b011afec190d",
+        "EV-eb3b431d4ce98ec5",
+        "EV-a6dc310224542dcf",
+        "EV-355ddfd4c6180ab0",
+        "EV-d14947956b43c97a",
+        "EV-cffa617426a5e139",
+        "EV-f13c302dc067850b",
+        "EV-c710c75d9c823a49",
+        "EV-59fb7ba1fd6ac55e",
+        "EV-aa25937649956e62",
+        "EV-86ab9c2f1416e9d8",
+        "EV-c5a59cb4cc9d7e8e",
+        "EV-e193a3848673e3ba",
+        "EV-3167e6eed75597e9",
+        "EV-9e35de25113a9269",
+        "EV-ad2e4fe6a149d95d",
+        "EV-c2f5b59db9912018",
+        "EV-57e6392fe3bb69cd",
+        "EV-1a073cd22d1bfa59",
+        "EV-a498b12f3fa2197e",
+        "EV-c11ee0da38376254",
+        "EV-6a6ff349579765ad",
+        "EV-7ff24ae733821395",
+        "EV-10ce9a2cc2400e4f",
+        "EV-d219dec3f1fcefc1",
+        "EV-86537be17d50ff20",
+        "EV-6b7917bd7edd4bde",
+        "EV-e70b2c66b996d138",
+        "EV-8b4f7844af234ed8",
+        "EV-fc8b280e83232d6f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-ai_device",
+        "TX-product_form-model",
+        "TX-use_case-content_creation",
+        "TX-product_form-end_user_application",
+        "TX-technology-long_context"
+      ],
+      "relatedEntityIds": [
+        "EN-a1adb91065c5a347",
+        "EN-f0da91960830b394",
+        "EN-ea3bd73e2b506e00",
+        "EN-be1a3c9420d88ea5",
+        "EN-30a63b26b06e096e"
+      ],
+      "firstSeen": "2026-01-26",
+      "lastSeen": "2026-10-24"
+    },
+    {
       "id": "EN-c467fc4430d27b82",
       "name": "AI glasses brand NIMO",
       "entityType": "organization_candidate",
@@ -8510,9 +8711,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_device",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-industry_applications",
-        "TX-product_form-ai_device",
         "TX-target_user-consumer",
         "TX-ai_market_subcategory-consumer_retail"
       ],
@@ -8563,11 +8764,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_device",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-healthcare_life_sciences",
-        "TX-product_form-ai_device",
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows"
       ],
@@ -8591,9 +8792,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-product_form-ai_device",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
-        "TX-product_form-ai_device",
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-enterprise_applications",
@@ -8621,12 +8822,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_device",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-target_user-business_user",
-        "TX-product_form-ai_device",
         "TX-target_user-consumer"
       ],
       "relatedEntityIds": [],
@@ -8648,8 +8849,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-product_form-ai_device",
+        "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-enterprise_applications",
@@ -8675,11 +8876,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_device",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-healthcare_life_sciences",
-        "TX-product_form-ai_device",
         "TX-target_user-consumer"
       ],
       "relatedEntityIds": [],
@@ -8705,10 +8906,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
+        "TX-product_form-ai_device",
         "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-target_user-business_user",
-        "TX-product_form-ai_device",
         "TX-product_form-robotic_system",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -8741,8 +8942,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-industry_applications",
         "TX-product_form-ai_device",
+        "TX-ai_market_category-industry_applications",
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
@@ -8769,11 +8970,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_device",
         "TX-industry-healthcare_life_sciences",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-target_user-business_user",
-        "TX-product_form-ai_device",
         "TX-target_user-consumer"
       ],
       "relatedEntityIds": [],
@@ -8795,9 +8996,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_device",
         "TX-ai_market_category-industry_applications",
         "TX-use_case-content_creation",
-        "TX-product_form-ai_device",
         "TX-industry-media_entertainment",
         "TX-target_user-consumer",
         "TX-industry-retail_ecommerce",
@@ -8825,11 +9026,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_device",
         "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-industry_applications",
         "TX-target_user-business_user",
-        "TX-product_form-ai_device",
         "TX-ai_market_subcategory-industrials",
         "TX-industry-aerospace_defense"
       ],
@@ -8852,8 +9053,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-product_form-ai_device",
+        "TX-target_user-business_user",
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-enterprise_applications",
@@ -8881,13 +9082,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_device",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-target_user-researcher",
-        "TX-target_user-business_user",
-        "TX-product_form-ai_device"
+        "TX-target_user-business_user"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-09",
@@ -8911,10 +9112,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_device",
         "TX-product_form-model",
         "TX-target_user-developer",
         "TX-use_case-research_discovery",
-        "TX-product_form-ai_device",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -8942,8 +9143,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-content_creation",
         "TX-product_form-ai_device",
+        "TX-use_case-content_creation",
         "TX-target_user-student",
         "TX-target_user-consumer",
         "TX-industry-retail_ecommerce",
@@ -8971,9 +9172,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_device",
         "TX-ai_market_category-industry_applications",
         "TX-use_case-content_creation",
-        "TX-product_form-ai_device",
         "TX-target_user-consumer",
         "TX-industry-retail_ecommerce",
         "TX-use_case-education_learning",
@@ -9000,9 +9201,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_device",
         "TX-ai_market_category-industry_applications",
         "TX-use_case-content_creation",
-        "TX-product_form-ai_device",
         "TX-target_user-consumer",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_subcategory-consumer_retail",
@@ -9053,10 +9254,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-ai_device",
         "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
-        "TX-product_form-ai_device",
         "TX-industry-media_entertainment",
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
@@ -9086,8 +9287,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-content_creation",
         "TX-product_form-ai_device",
+        "TX-use_case-content_creation",
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-enterprise_applications",
@@ -9187,10 +9388,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-product_form-ai_device",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
         "TX-product_form-chip_accelerator",
-        "TX-product_form-ai_device",
         "TX-technology-code_generation",
         "TX-deployment_model-cloud",
         "TX-technology-multimodal",
@@ -9230,8 +9431,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-product_form-ai_device",
+        "TX-product_form-model",
         "TX-industry-retail_ecommerce",
         "TX-product_form-ai_infrastructure_software"
       ],
@@ -9288,8 +9489,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
         "TX-product_form-ai_device",
+        "TX-use_case-physical_automation",
         "TX-use_case-software_development",
         "TX-technology-video_generation"
       ],
@@ -9452,10 +9653,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-product_form-ai_device",
         "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-technology-speech_audio",
-        "TX-product_form-ai_device",
         "TX-technology-code_generation",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-data_analysis",
@@ -9505,8 +9706,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-target_user-business_user",
-        "TX-product_form-ai_device"
+        "TX-product_form-ai_device",
+        "TX-target_user-business_user"
       ],
       "relatedEntityIds": [
         "EN-dd24c3b82a636110",

@@ -1,0 +1,4622 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-10-24",
+    "generated_at": "2026-10-24T03:52:21.365Z",
+    "trigger": "accepted_financing_event_research",
+    "research_provider": "search-gateway+direct-original+deepseek",
+    "model": "deepseek-flash",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 26,
+      "auto_published": 5,
+      "blocked": 1,
+      "pending": 1,
+      "deduplicated": 19,
+      "deferred_for_evidence": 1
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-cfa413c065f3ee36",
+      "triggered_by_event_id": "EV-6e22785050fb82ff",
+      "as_of_date": "2026-10-24",
+      "company": {
+        "entity_id": "EN-e6a1f05cbb826b2c",
+        "name": "Hunar.AI",
+        "full_name": "Hunar.AI",
+        "website": "https://hunar.ai",
+        "summary": "为一线劳动力密集型行业提供对话式AI代理，通过语音、WhatsApp和聊天管理招聘、入职、培训和员工参与等劳动力工作流。",
+        "headquarters": "Plot No. 1076, Sector 46, Gurgaon - 122003, Haryana, India",
+        "founders": [
+          {
+            "name": "Krishna Khandelwal",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21f1e0578f986661",
+                "quote": "Founded in 2022 by Krishna Khandelwal and Shantanu Bhattacharyya",
+                "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+                "quote_hash": "5557780cdd7ee925d75701288411ca4cbe3943f2542e10d7edceb651b3de3f45"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Shantanu Bhattacharyya",
+            "role": "联合创始人兼CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21f1e0578f986661",
+                "quote": "Founded in 2022 by Krishna Khandelwal and Shantanu Bhattacharyya",
+                "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+                "quote_hash": "5557780cdd7ee925d75701288411ca4cbe3943f2542e10d7edceb651b3de3f45"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-21f1e0578f986661",
+            "quote": "Founded in 2022 by Krishna Khandelwal and Shantanu Bhattacharyya",
+            "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+            "quote_hash": "5557780cdd7ee925d75701288411ca4cbe3943f2542e10d7edceb651b3de3f45"
+          },
+          {
+            "source_id": "FISRC-843bd654b889e181",
+            "quote": "Bluejay Worktech Pvt. Ltd",
+            "source_content_hash": "f1c3e664510458a5",
+            "quote_hash": "2136325ec091c971b60ab1b72b7d45fe62ba61dd5e19206fe60ccde2f3058a2a"
+          }
+        ],
+        "application_entity_id": "EN-e6a1f05cbb826b2c",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "Rs 40 crore",
+        "total_raised": "",
+        "announced_at": "2026-10-20",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Blume Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21f1e0578f986661",
+                "quote": "Hunar.AI has raised Rs 40 crore in a Series A funding round led by Blume Ventures.",
+                "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+                "quote_hash": "982b4fb1429949202d2b4646dd769b3938122290afb97921ed83446cf26bfadf"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Hyderabad Angels Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21f1e0578f986661",
+                "quote": "The round also saw participation from Hyderabad Angels Fund, Together Fund, Seedstars, AVNM Ventures, PhysicsWallah co-founders Prateek Maheshwari and Alakh Pandey, and MediaMint co-founder Aditya Vuchi.",
+                "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+                "quote_hash": "563fa3eb6eb50f4a96b3b267eeb9e20fdbc29246a2471da23b2815c8638affc1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Together Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21f1e0578f986661",
+                "quote": "The round also saw participation from Hyderabad Angels Fund, Together Fund, Seedstars, AVNM Ventures, PhysicsWallah co-founders Prateek Maheshwari and Alakh Pandey, and MediaMint co-founder Aditya Vuchi.",
+                "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+                "quote_hash": "563fa3eb6eb50f4a96b3b267eeb9e20fdbc29246a2471da23b2815c8638affc1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Seedstars",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21f1e0578f986661",
+                "quote": "The round also saw participation from Hyderabad Angels Fund, Together Fund, Seedstars, AVNM Ventures, PhysicsWallah co-founders Prateek Maheshwari and Alakh Pandey, and MediaMint co-founder Aditya Vuchi.",
+                "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+                "quote_hash": "563fa3eb6eb50f4a96b3b267eeb9e20fdbc29246a2471da23b2815c8638affc1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "AVNM Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21f1e0578f986661",
+                "quote": "The round also saw participation from Hyderabad Angels Fund, Together Fund, Seedstars, AVNM Ventures, PhysicsWallah co-founders Prateek Maheshwari and Alakh Pandey, and MediaMint co-founder Aditya Vuchi.",
+                "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+                "quote_hash": "563fa3eb6eb50f4a96b3b267eeb9e20fdbc29246a2471da23b2815c8638affc1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Prateek Maheshwari",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21f1e0578f986661",
+                "quote": "The round also saw participation from Hyderabad Angels Fund, Together Fund, Seedstars, AVNM Ventures, PhysicsWallah co-founders Prateek Maheshwari and Alakh Pandey, and MediaMint co-founder Aditya Vuchi.",
+                "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+                "quote_hash": "563fa3eb6eb50f4a96b3b267eeb9e20fdbc29246a2471da23b2815c8638affc1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Alakh Pandey",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21f1e0578f986661",
+                "quote": "The round also saw participation from Hyderabad Angels Fund, Together Fund, Seedstars, AVNM Ventures, PhysicsWallah co-founders Prateek Maheshwari and Alakh Pandey, and MediaMint co-founder Aditya Vuchi.",
+                "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+                "quote_hash": "563fa3eb6eb50f4a96b3b267eeb9e20fdbc29246a2471da23b2815c8638affc1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Aditya Vuchi",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21f1e0578f986661",
+                "quote": "The round also saw participation from Hyderabad Angels Fund, Together Fund, Seedstars, AVNM Ventures, PhysicsWallah co-founders Prateek Maheshwari and Alakh Pandey, and MediaMint co-founder Aditya Vuchi.",
+                "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+                "quote_hash": "563fa3eb6eb50f4a96b3b267eeb9e20fdbc29246a2471da23b2815c8638affc1"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Aloke Bajbai",
+            "role": "历史天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-843bd654b889e181",
+                "quote": "We're deeply grateful to Together Fund and to our angels, including Aloke Bajpai, Kunal Bahl and Rohit Bansal, who have stood with us for the last four years.",
+                "source_content_hash": "f1c3e664510458a5",
+                "quote_hash": "a375f9dc2b4603e3c02ee4897d85f49fd756ae1a6afd2f9a0dd1e3db50cc0a6e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kunal Bahl",
+            "role": "历史天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-843bd654b889e181",
+                "quote": "We're deeply grateful to Together Fund and to our angels, including Aloke Bajpai, Kunal Bahl and Rohit Bansal, who have stood with us for the last four years.",
+                "source_content_hash": "f1c3e664510458a5",
+                "quote_hash": "a375f9dc2b4603e3c02ee4897d85f49fd756ae1a6afd2f9a0dd1e3db50cc0a6e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Rohit Bansal",
+            "role": "历史天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-843bd654b889e181",
+                "quote": "We're deeply grateful to Together Fund and to our angels, including Aloke Bajpai, Kunal Bahl and Rohit Bansal, who have stood with us for the last four years.",
+                "source_content_hash": "f1c3e664510458a5",
+                "quote_hash": "a375f9dc2b4603e3c02ee4897d85f49fd756ae1a6afd2f9a0dd1e3db50cc0a6e"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-21f1e0578f986661",
+            "quote": "Hunar.AI has raised Rs 40 crore in a Series A funding round led by Blume Ventures.",
+            "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+            "quote_hash": "982b4fb1429949202d2b4646dd769b3938122290afb97921ed83446cf26bfadf"
+          },
+          {
+            "source_id": "FISRC-843bd654b889e181",
+            "quote": "Hunar.AI has raised a ₹40 crore Series A backed by Blume Ventures, Hyderabad Angels Fund and Seedstars International, with MediaMint founder Aditya Vuchi and Physics Wallah's Prateek and Alakh joining the round.",
+            "source_content_hash": "f1c3e664510458a5",
+            "quote_hash": "30e269bb2fe4749f811f2cb28134333c6716d0dcf388d5822b87e2e78824b6e8"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "Rs 40 crore",
+        "amount_normalized": {
+          "currency": "INR",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿印度卢比"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-6e22785050fb82ff",
+            "round_original": "A轮",
+            "amount": "Rs 40 crore",
+            "announced_at": "2026-10-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21f1e0578f986661",
+                "quote": "Hunar.AI has raised Rs 40 crore in a Series A funding round led by Blume Ventures.",
+                "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+                "quote_hash": "982b4fb1429949202d2b4646dd769b3938122290afb97921ed83446cf26bfadf"
+              },
+              {
+                "source_id": "FISRC-843bd654b889e181",
+                "quote": "Hunar.AI has raised a ₹40 crore Series A backed by Blume Ventures, Hyderabad Angels Fund and Seedstars International, with MediaMint founder Aditya Vuchi and Physics Wallah's Prateek and Alakh joining the round.",
+                "source_content_hash": "f1c3e664510458a5",
+                "quote_hash": "30e269bb2fe4749f811f2cb28134333c6716d0dcf388d5822b87e2e78824b6e8"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Hunar Voice",
+          "description": "对话式AI语音代理，用于一线劳动力工作流中的候选人沟通与筛选。",
+          "target_customers": "一线劳动力密集型企业",
+          "features": [
+            "语音对话",
+            "候选人筛选"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21f1e0578f986661",
+              "quote": "Hunar’s platform comprises Hunar Voice and Hunar Connect, which use conversational AI agents to manage workforce workflows through voice, WhatsApp and chat.",
+              "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+              "quote_hash": "5a63271bc4a2c38ae70004941a92521bd545ad2df213ef0fc9a1017d96d8b863"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Hunar Connect",
+          "description": "通过WhatsApp和聊天等渠道执行一线劳动力工作流的对话式AI系统。",
+          "target_customers": "一线劳动力密集型企业",
+          "features": [
+            "WhatsApp与聊天渠道",
+            "招聘与入职工作流",
+            "培训与员工参与"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21f1e0578f986661",
+              "quote": "Workflows include candidate sourcing and screening, interview scheduling, onboarding, training, employee engagement and worker retention.",
+              "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+              "quote_hash": "6183dfffbe8787be243d5a913e573b9e0c028e9b2aea60b3dcf516b685e1eb92"
+            },
+            {
+              "source_id": "FISRC-843bd654b889e181",
+              "quote": "We moved workers from apps to tools they already use, like WhatsApp. We built systems of record while everyone else was building only agents.",
+              "source_content_hash": "f1c3e664510458a5",
+              "quote_hash": "f997ccc9ca8d2b89fbebf3ed7e3259dcd94be8c44fc269b6b7bf0378be1a7706"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Swiggy",
+          "industry": "",
+          "use_case": "一线劳动力招聘与管理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21f1e0578f986661",
+              "quote": "Its clients include Swiggy, Delhivery, Instamart, Pronto, Blue Dart, Flipkart, Aditya Birla Capital and Tata Croma.",
+              "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+              "quote_hash": "daa40cba422d977877449361997e6a225b6ed2959c244f084e373ea12196ac65"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Delhivery",
+          "industry": "",
+          "use_case": "一线劳动力招聘与管理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21f1e0578f986661",
+              "quote": "Its clients include Swiggy, Delhivery, Instamart, Pronto, Blue Dart, Flipkart, Aditya Birla Capital and Tata Croma.",
+              "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+              "quote_hash": "daa40cba422d977877449361997e6a225b6ed2959c244f084e373ea12196ac65"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Flipkart",
+          "industry": "",
+          "use_case": "一线劳动力招聘与管理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21f1e0578f986661",
+              "quote": "Its clients include Swiggy, Delhivery, Instamart, Pronto, Blue Dart, Flipkart, Aditya Birla Capital and Tata Croma.",
+              "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+              "quote_hash": "daa40cba422d977877449361997e6a225b6ed2959c244f084e373ea12196ac65"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Tata Croma",
+          "industry": "",
+          "use_case": "一线劳动力招聘与管理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21f1e0578f986661",
+              "quote": "Its clients include Swiggy, Delhivery, Instamart, Pronto, Blue Dart, Flipkart, Aditya Birla Capital and Tata Croma.",
+              "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+              "quote_hash": "daa40cba422d977877449361997e6a225b6ed2959c244f084e373ea12196ac65"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Aditya Birla Capital",
+          "industry": "",
+          "use_case": "一线劳动力招聘与管理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21f1e0578f986661",
+              "quote": "Its clients include Swiggy, Delhivery, Instamart, Pronto, Blue Dart, Flipkart, Aditya Birla Capital and Tata Croma.",
+              "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+              "quote_hash": "daa40cba422d977877449361997e6a225b6ed2959c244f084e373ea12196ac65"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Qualtrics",
+          "product": "员工调研工具",
+          "scenario": "员工参与度调查与离职访谈",
+          "target_customer": "企业人力资源团队",
+          "funding_summary": "",
+          "core_difference": "Hunar以对话式AI代理开展调研和离职访谈，来源称静态问卷工具无法捕捉对话中浮现的信息。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-843bd654b889e181",
+              "quote": "For years, organisations have been stuck with static, rigid survey tools like Qualtrics, Culture Amp, CultureMonkey and Workday. A conversation surfaces what a checkbox never will.",
+              "source_content_hash": "f1c3e664510458a5",
+              "quote_hash": "78fdbaf85791628247b30a3082ac639d954eefce64e4bc9ace03eb445ced0faf"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Culture Amp",
+          "product": "员工调研工具",
+          "scenario": "员工参与度调查与离职访谈",
+          "target_customer": "企业人力资源团队",
+          "funding_summary": "",
+          "core_difference": "Hunar以对话式AI代理开展调研和离职访谈，来源称静态问卷工具无法捕捉对话中浮现的信息。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-843bd654b889e181",
+              "quote": "For years, organisations have been stuck with static, rigid survey tools like Qualtrics, Culture Amp, CultureMonkey and Workday. A conversation surfaces what a checkbox never will.",
+              "source_content_hash": "f1c3e664510458a5",
+              "quote_hash": "78fdbaf85791628247b30a3082ac639d954eefce64e4bc9ace03eb445ced0faf"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "CultureMonkey",
+          "product": "员工调研工具",
+          "scenario": "员工参与度调查与离职访谈",
+          "target_customer": "企业人力资源团队",
+          "funding_summary": "",
+          "core_difference": "Hunar以对话式AI代理开展调研和离职访谈，来源称静态问卷工具无法捕捉对话中浮现的信息。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-843bd654b889e181",
+              "quote": "For years, organisations have been stuck with static, rigid survey tools like Qualtrics, Culture Amp, CultureMonkey and Workday. A conversation surfaces what a checkbox never will.",
+              "source_content_hash": "f1c3e664510458a5",
+              "quote_hash": "78fdbaf85791628247b30a3082ac639d954eefce64e4bc9ace03eb445ced0faf"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Workday",
+          "product": "员工调研工具",
+          "scenario": "员工参与度调查与离职访谈",
+          "target_customer": "企业人力资源团队",
+          "funding_summary": "",
+          "core_difference": "Hunar以对话式AI代理开展调研和离职访谈，来源称静态问卷工具无法捕捉对话中浮现的信息。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-843bd654b889e181",
+              "quote": "For years, organisations have been stuck with static, rigid survey tools like Qualtrics, Culture Amp, CultureMonkey and Workday. A conversation surfaces what a checkbox never will.",
+              "source_content_hash": "f1c3e664510458a5",
+              "quote_hash": "78fdbaf85791628247b30a3082ac639d954eefce64e4bc9ace03eb445ced0faf"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "2026年9月AI代理处理对话量",
+          "value": "超过1500万次",
+          "observed_at": "2026-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21f1e0578f986661",
+              "quote": "Hunar’s AI agents handled over 15 million conversations in September 2026, with conversation volumes doubling every quarter.",
+              "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+              "quote_hash": "badd8514ff0f1dec75656b788714909be9640a38b92daa21efe8fa0687ffbef8"
+            }
+          ]
+        },
+        {
+          "label": "过去12个月对话量增长",
+          "value": "46倍",
+          "observed_at": "2026-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-843bd654b889e181",
+              "quote": "Daily conversations across Hunar grew 46X in the last twelve months.",
+              "source_content_hash": "f1c3e664510458a5",
+              "quote_hash": "01b0cdb65bd6d3f2739df02117b74e807d16781a8edbaf08ff429d22d1e65cb5"
+            }
+          ]
+        },
+        {
+          "label": "2026年9月通过代理实现就业人数",
+          "value": "200,000人",
+          "observed_at": "2026-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-843bd654b889e181",
+              "quote": "In September alone, 200,000 people got gainfully employed through conversations with Hunar.AI's agents.",
+              "source_content_hash": "f1c3e664510458a5",
+              "quote_hash": "a26146fd4b342f7303fcedb58f1755991488fd1330764fe6de8bbf463298f0e2"
+            }
+          ]
+        },
+        {
+          "label": "每日对话量",
+          "value": "50万次以上",
+          "observed_at": "2026-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ca25e5c88c06f851",
+              "quote": "Today, Hunar powers 500K+ conversations a day, growing 46x in 12 months.",
+              "source_content_hash": "dcf0ae5c1500fcdd",
+              "quote_hash": "6f9a910131896e62c1b2ccf99d2cf67773362076b6a3ed6d172fb077be9799e0"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Krishna Khandelwal",
+          "quote": "Frontline workforce management is one of the largest yet most underserved opportunities in enterprise AI. Solving it requires more than applying general-purpose models to existing processes. It demands a deep understanding of industry workflows, multilingual capabilities and technology that can reliably execute tasks at scale",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21f1e0578f986661",
+              "quote": "Frontline workforce management is one of the largest yet most underserved opportunities in enterprise AI. Solving it requires more than applying general-purpose models to existing processes. It demands a deep understanding of industry workflows, multilingual capabilities and technology that can reliably execute tasks at scale",
+              "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+              "quote_hash": "3187ebc97d544d56d221d1369f67282b1b246b378dd42cb858a18897a76abb6f"
+            }
+          ]
+        },
+        {
+          "speaker": "Arpit Agrawal",
+          "quote": "As the world looks to India for lessons in managing these new-age businesses at scale, Hunar is building the AI layer that makes them possible. By focusing on outcomes rather than infrastructure, Hunar has the potential to build a category in India that can scale globally.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21f1e0578f986661",
+              "quote": "As the world looks to India for lessons in managing these new-age businesses at scale, Hunar is building the AI layer that makes them possible. By focusing on outcomes rather than infrastructure, Hunar has the potential to build a category in India that can scale globally.",
+              "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+              "quote_hash": "f5bd86e90d3b42810d5d9ee11b9af1d83963e16a09ab6302b39d810b34ec2a80"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Blume Ventures",
+            "speaker": "Arpit Agrawal",
+            "speaker_role": "Blume Ventures合伙人",
+            "rationale": "认为Hunar以结果而非基础设施为导向，构建了支撑印度规模化新型企业的AI层，具备在印度形成品类并全球扩展的潜力。",
+            "quote": "As the world looks to India for lessons in managing these new-age businesses at scale, Hunar is building the AI layer that makes them possible. By focusing on outcomes rather than infrastructure, Hunar has the potential to build a category in India that can scale globally.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21f1e0578f986661",
+                "quote": "As the world looks to India for lessons in managing these new-age businesses at scale, Hunar is building the AI layer that makes them possible. By focusing on outcomes rather than infrastructure, Hunar has the potential to build a category in India that can scale globally.",
+                "source_content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+                "quote_hash": "f5bd86e90d3b42810d5d9ee11b9af1d83963e16a09ab6302b39d810b34ec2a80"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是一线劳动力对话式AI能否在招聘、入职、培训与留任等高频工作流中规模化交付结果。已验证信号包括2026年9月处理超1500万次对话、过去12个月日对话量增长46倍、当月20万人通过其代理实现就业，以及Swiggy、Delhivery、Flipkart、Tata Croma等企业客户的使用。证据边界在于：来源未披露本轮估值、收入或合同金额，增长与客户使用均为公司或投资方陈述，尚未有独立财务验证。",
+        "validated_signals": [
+          "2026年9月AI代理处理超过1500万次对话",
+          "过去12个月日对话量增长46倍",
+          "2026年9月20万人通过其代理实现就业",
+          "客户包括Swiggy、Delhivery、Flipkart、Tata Croma等企业"
+        ],
+        "risks": [
+          "来源未披露本轮估值、收入或合同金额，商业化质量无法从现有材料验证",
+          "对话量与客户名单主要来自公司自述及投资方转述，缺乏独立第三方审计",
+          "公司计划9个月内增长5倍至每日500万次对话，该目标尚未实现，执行风险待验证"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "hr",
+        "market_application_id": "",
+        "use_case_ids": [
+          "hr_workforce"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "一线劳动力对话式AI管理平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是一线劳动力对话式AI能否在招聘、入职、培训与留任等高频工作流中规模化交付结果。已验证信号包括2026年9月处理超1500万次对话、过去12个月日对话量增长46倍、当月20万人通过其代理实现就业，以及Swiggy、Delhivery、Flipkart、Tata Croma等企业客户的使用。证据边界在于：来源未披露本轮估值、收入或合同金额，增长与客户使用均为公司或投资方陈述，尚未有独立财务验证。",
+          "evidence_signals": [
+            "2026年9月AI代理处理超过1500万次对话",
+            "过去12个月日对话量增长46倍",
+            "2026年9月20万人通过其代理实现就业",
+            "客户包括Swiggy、Delhivery、Flipkart、Tata Croma等企业"
+          ],
+          "risks": [
+            "来源未披露本轮估值、收入或合同金额，商业化质量无法从现有材料验证",
+            "对话量与客户名单主要来自公司自述及投资方转述，缺乏独立第三方审计",
+            "公司计划9个月内增长5倍至每日500万次对话，该目标尚未实现，执行风险待验证"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Hunar Voice",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Hunar Connect",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Krishna Khandelwal",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Shantanu Bhattacharyya",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Blume Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Hyderabad Angels Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Together Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Seedstars",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "AVNM Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Prateek Maheshwari",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Alakh Pandey",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Aditya Vuchi",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Aloke Bajbai",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Kunal Bahl",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Rohit Bansal",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Swiggy",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Delhivery",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Flipkart",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Tata Croma",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Aditya Birla Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Qualtrics",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Culture Amp",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "CultureMonkey",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Workday",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-6e22785050fb82ff",
+          "date": "2026-10-20",
+          "title": "Hunar.AI 在由 Blume Ventures 领投的 A 轮融资中筹集了 40 Cr 卢比",
+          "amount": "Rs 40 crore",
+          "source_refs": [
+            "SA-3c3d6397df267596"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-21f1e0578f986661",
+          "source_url": "https://yourstory.com/2026/10/hunarai-raises-rs-40-crore-in-series-a-led-by-blume-ventures",
+          "title": "Hunar.AI 在由 Blume Ventures 领投的 A 轮融资中筹集了 40 Cr 卢比",
+          "publisher": "yourstory.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-24T00:21:15.767Z",
+          "content_hash": "bf76342df2cb27fe2159ad0ba6e91e1329271f4b769c5e5822a9c1665330ca5b",
+          "source_artifact_id": "SA-3c3d6397df267596",
+          "raw_id": "RAW-c678ab183197f170"
+        },
+        {
+          "source_id": "FISRC-843bd654b889e181",
+          "source_url": "https://hunar.ai/fund-raise-announcement",
+          "title": "AI HRs for frontline workforce management | Hunar.ai",
+          "publisher": "hunar.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-24T00:45:19.558Z",
+          "content_hash": "f1c3e664510458a5",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-ca25e5c88c06f851",
+          "source_url": "https://in.linkedin.com/company/blume-venture-advisors",
+          "title": "Blume Ventures | LinkedIn",
+          "publisher": "in.linkedin.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-24T00:45:25.464Z",
+          "content_hash": "dcf0ae5c1500fcdd",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-24T00:45:39.194Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-24T00:45:39.194Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Hunar Connect",
+            "Hunar Voice"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Krishna Khandelwal",
+            "Shantanu Bhattacharyya"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-6e22785050fb82ff"
+      ],
+      "aggregation": {
+        "key": "EN-e6a1f05cbb826b2c|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-01b6d0f27d2b83fd",
+      "triggered_by_event_id": "EV-5aa0077bd10ce3dc",
+      "as_of_date": "2026-10-24",
+      "company": {
+        "entity_id": "EN-8eae6c54657e94be",
+        "name": "Blacksmith",
+        "full_name": "Blacksmith",
+        "website": "blacksmith.sh",
+        "summary": "Blacksmith 是面向代码构建与测试的基础设施平台，专注持续集成（CI）工作负载，帮助团队更快、更低成本地验证代码。",
+        "headquarters": "旧金山",
+        "founders": [
+          {
+            "name": "Aditya Jayaprakash",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-49f5b4d8c68adbdc",
+                "quote": "said Aditya \"JP\" Jayaprakash, co-founder and CEO of Blacksmith",
+                "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+                "quote_hash": "aac824c5a71cd1a9ea91ebf568203c743c6e0e2c10089136cde6ebc8c6c2867d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Aayush Shah",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-49f5b4d8c68adbdc",
+                "quote": "Blacksmith was founded in 2024 by Jayaprakash, Aayush Shah and Aditya Maru",
+                "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+                "quote_hash": "938e5a8a8fb937bc58303d49dba20308cd2a5a2916fb8d71412dba773626b0ad"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Aditya Maru",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-49f5b4d8c68adbdc",
+                "quote": "Blacksmith was founded in 2024 by Jayaprakash, Aayush Shah and Aditya Maru",
+                "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+                "quote_hash": "938e5a8a8fb937bc58303d49dba20308cd2a5a2916fb8d71412dba773626b0ad"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "30",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7a9d94b4e9850530",
+              "quote": "what a data center outage taught a 30-person team",
+              "source_content_hash": "d20f719223715278",
+              "quote_hash": "6f6b91c31ae07717605ccc1da239648f91a287e200ac548773450156aff7ac19"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "Blacksmith, the infrastructure platform for building and testing code",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "e99ac96e3f8f0d0e2783cdb1965218747f8dada7a7cb8f940eed6f8411ba65dc"
+          },
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "SAN FRANCISCO, Oct. 21, 2026",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "a637660d6ddd12eda9a57c1090c4a3e1cef9e1a2a3b252babd04578ed931566f"
+          }
+        ],
+        "application_entity_id": "EN-8eae6c54657e94be",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "C轮",
+        "amount": "$66M",
+        "total_raised": "$125 million",
+        "announced_at": "2026-10-21",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Sequoia Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-49f5b4d8c68adbdc",
+                "quote": "a $66M Series C led by Sequoia Capital at a $1 billion valuation",
+                "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+                "quote_hash": "33a85f0b4446289963f51e84b69bf35a336bc02d5e28e1c6dd0ce378b7b664c0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Premji Invest",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-49f5b4d8c68adbdc",
+                "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+                "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+                "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Peak XV Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-49f5b4d8c68adbdc",
+                "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+                "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+                "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "GV",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-49f5b4d8c68adbdc",
+                "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+                "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+                "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Y Combinator",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-49f5b4d8c68adbdc",
+                "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+                "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+                "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+              }
+            ],
+            "entity_id": "EN-275b0f4a4023d91c"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "SAN FRANCISCO, Oct. 21, 2026 /PRNewswire/ -- Blacksmith, the infrastructure platform for building and testing code, today announced a $66M Series C led by Sequoia Capital at a $1 billion valuation, with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator.",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "9feb8d327a6eec45cdfcebafa1f20433c921d55e6e47e2d0edeb3b9d18ec443b"
+          },
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "today announced a $66M Series C led by Sequoia Capital at a $1 billion valuation",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "513d34cdedbed945e82fd1055a07e5e1d3c141c2f432857efde466caf534fdd4"
+          },
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "quote": "The round brings Blacksmith's total funding to $125 million",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote_hash": "f4e6a1a59628ba24dd10b73b51d54106a43b2d6445bacf4af31d8b5d84661703"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$66M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 66000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6600 万美元"
+        },
+        "total_raised_original": "$125 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 125000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.25 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-5aa0077bd10ce3dc",
+            "round_original": "C轮",
+            "amount": "$66M",
+            "announced_at": "2026-10-21",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-49f5b4d8c68adbdc",
+                "quote": "SAN FRANCISCO, Oct. 21, 2026 /PRNewswire/ -- Blacksmith, the infrastructure platform for building and testing code, today announced a $66M Series C led by Sequoia Capital at a $1 billion valuation, with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator.",
+                "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+                "quote_hash": "9feb8d327a6eec45cdfcebafa1f20433c921d55e6e47e2d0edeb3b9d18ec443b"
+              },
+              {
+                "source_id": "FISRC-49f5b4d8c68adbdc",
+                "quote": "today announced a $66M Series C led by Sequoia Capital at a $1 billion valuation",
+                "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+                "quote_hash": "513d34cdedbed945e82fd1055a07e5e1d3c141c2f432857efde466caf534fdd4"
+              },
+              {
+                "source_id": "FISRC-49f5b4d8c68adbdc",
+                "quote": "The round brings Blacksmith's total funding to $125 million",
+                "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+                "quote_hash": "f4e6a1a59628ba24dd10b73b51d54106a43b2d6445bacf4af31d8b5d84661703"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Blacksmith CI 云平台",
+          "description": "专为持续集成（CI）工作负载设计的基础设施平台，客户将构建和测试任务交给 Blacksmith 运行，无需自行配置、扩展或维护 CI 基础设施。",
+          "target_customers": "初创公司和大型企业工程团队",
+          "features": [
+            "一行 workflow 文件改动即可迁移",
+            "CI 任务平均完成速度提升至两倍",
+            "平均成本降低 60%",
+            "零运维开销"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "Customers switch with a one-line change to their workflow file and never provision, scale or maintain their CI infrastructure again.",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "9268790a3da031f6307da2bc2dcf3c2e20a484cc00175bc3db93faf773217b16"
+            },
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "Developers using Blacksmith see their CI jobs complete twice as fast and at 60% lower cost on average, with zero operational overhead.",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "3793ad7ce3e75c4ddde1c5a1a7899792fb702e4f37d01f576dd867fa99ebba5c"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "LangChain",
+          "industry": "AI 开发者工具",
+          "use_case": "运行 CI 工作负载，降低 runner 成本并减少工程时间",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "Blacksmith has significantly reduced the burden of managing our CI runners while cutting our runner costs by roughly 40%",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "bc8e6c51f3f756120ad030ad95a0bb1c8fc1364403b04d341fa21eedcf9ab18c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Ashby",
+          "industry": "招聘软件",
+          "use_case": "在 Blacksmith 上运行 CI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "More than 10,000 companies, including Ashby, Granola, Handshake and LangChain, now run their CI on Blacksmith.",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "e54f408a8c345b97e146237c64379ce2d60788e665319c136144b614de57ae44"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Granola",
+          "industry": "AI 笔记应用",
+          "use_case": "在 Blacksmith 上运行 CI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "More than 10,000 companies, including Ashby, Granola, Handshake and LangChain, now run their CI on Blacksmith.",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "e54f408a8c345b97e146237c64379ce2d60788e665319c136144b614de57ae44"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Handshake",
+          "industry": "招聘平台",
+          "use_case": "在 Blacksmith 上运行 CI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "More than 10,000 companies, including Ashby, Granola, Handshake and LangChain, now run their CI on Blacksmith.",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "e54f408a8c345b97e146237c64379ce2d60788e665319c136144b614de57ae44"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Mercury",
+          "industry": "金融科技",
+          "use_case": "在 Blacksmith 上运行 CI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05951399e01ffdfd",
+              "quote": "Customers include fintech company Mercury and AI note-taking app Granola.",
+              "source_content_hash": "49c1b60b2ab6fb08",
+              "quote_hash": "f7e9b6d2b7d4b3615e1cbf0e88ecfe021ef4ea0b63612616eb8ad2d0c0f8f60a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$66M",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "a $66M Series C led by Sequoia Capital",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "99eb391c29066d06a9c082bae1dae2d3a7f7d2d52258e8b41eb844be1fe19d98"
+            }
+          ]
+        },
+        {
+          "label": "本轮估值",
+          "value": "$1 billion",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "at a $1 billion valuation",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "249123c1c008cd8726cb8b407a3c5066b62ea1cd45d31793e35a0d9d532a8bbd"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "$125 million",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "The round brings Blacksmith's total funding to $125 million",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "f4e6a1a59628ba24dd10b73b51d54106a43b2d6445bacf4af31d8b5d84661703"
+            }
+          ]
+        },
+        {
+          "label": "ARR 增长倍数（自 1 月以来）",
+          "value": "17x",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "annual recurring revenue has grown 17x",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "a7f44a8f85778c424b0eb9871852731a0e85fc848b70ffcc80b649cb26b10f14"
+            }
+          ]
+        },
+        {
+          "label": "每周 CI 任务数",
+          "value": "超过 9000 万",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "the number of CI jobs running on Blacksmith each week has grown from 5 million to more than 90 million",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "e7c1eb6e02534c96bf9607caa34410de6e460858a205cf351875540e77366dc4"
+            }
+          ]
+        },
+        {
+          "label": "客户数量",
+          "value": "超过 10,000 家",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "More than 10,000 companies, including Ashby, Granola, Handshake and LangChain, now run their CI on Blacksmith.",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "e54f408a8c345b97e146237c64379ce2d60788e665319c136144b614de57ae44"
+            }
+          ]
+        },
+        {
+          "label": "管理算力规模",
+          "value": "接近 10 MW",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "The company manages nearly 10 MW of compute across data centers in the United States and Europe",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "48fd423fea1addb5ac2dc7bc7b02b7ccc8e869e6bacc3ad2126f9763418dc005"
+            }
+          ]
+        },
+        {
+          "label": "CI 任务平均提速",
+          "value": "2 倍",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "Developers using Blacksmith see their CI jobs complete twice as fast",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "76e53efeb1d12ac3726eb01a689e5d6e7b56ed93178a0d87ea9e8fd02cf57114"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Aditya Jayaprakash",
+          "quote": "Since Claude Code took off in March, almost every conversation we've had with a large engineering team has started the same way.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "Since Claude Code took off in March, almost every conversation we've had with a large engineering team has started the same way.",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "6b886d03180929232c3fb136f2ecb7dcc99318ab035673b3b23c702bb08a7e77"
+            }
+          ]
+        },
+        {
+          "speaker": "Isaiah Boone",
+          "quote": "JP and team understood early that as AI agents wrote more code, the infrastructure to build and test it would need to change",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "JP and team understood early that as AI agents wrote more code, the infrastructure to build and test it would need to change",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "13de9f7a1dda741f2c92da8801bf5edb23aba99274bdf32ce19ddc88ef016792"
+            }
+          ]
+        },
+        {
+          "speaker": "Joaquin Borggio",
+          "quote": "Blacksmith has significantly reduced the burden of managing our CI runners while cutting our runner costs by roughly 40%",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49f5b4d8c68adbdc",
+              "quote": "Blacksmith has significantly reduced the burden of managing our CI runners while cutting our runner costs by roughly 40%",
+              "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+              "quote_hash": "bc8e6c51f3f756120ad030ad95a0bb1c8fc1364403b04d341fa21eedcf9ab18c"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Sequoia Capital",
+            "speaker": "Isaiah Boone",
+            "speaker_role": "Sequoia Capital 合伙人",
+            "rationale": "红杉认为，随着 AI 智能体编写更多代码，构建和测试代码的基础设施必须改变；Blacksmith 团队的系统专业能力和执行速度突出，产品帮助客户更快测试和交付软件。",
+            "quote": "JP and team understood early that as AI agents wrote more code, the infrastructure to build and test it would need to change",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-49f5b4d8c68adbdc",
+                "quote": "JP and team understood early that as AI agents wrote more code, the infrastructure to build and test it would need to change",
+                "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+                "quote_hash": "13de9f7a1dda741f2c92da8801bf5edb23aba99274bdf32ce19ddc88ef016792"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是：AI 编码智能体大幅增加代码产出后，代码验证（CI）成为软件交付瓶颈，而通用云基础设施并非为 CI 的突发负载设计。Blacksmith 以专用 CI 云承接这一工作负载，已披露的验证信号包括 ARR 自 1 月以来增长 17 倍、每周 CI 任务从 500 万增至超过 9000 万、客户数超过 1 万家，以及本轮 6600 万美元 C 轮融资和 10 亿美元估值。证据边界在于：提速两倍、成本降低 60% 等效率数据来自公司及投资方公开陈述，并非独立测试结果；2027 年算力扩张五倍属于计划，尚未发生。",
+        "validated_signals": [
+          "ARR 自 2026 年 1 月以来增长 17 倍",
+          "每周 CI 任务数从 500 万增长到超过 9000 万",
+          "超过 10,000 家公司使用其平台",
+          "管理接近 10 MW 算力，分布在美国和欧洲数据中心",
+          "完成 6600 万美元 C 轮融资，估值 10 亿美元，累计融资 1.25 亿美元"
+        ],
+        "risks": [
+          "提速两倍、成本降低 60% 等效率数据来自公司及投资方公开陈述，尚待独立验证",
+          "2027 年算力扩张五倍属于计划，执行与电力供应存在不确定性",
+          "CI 工作负载高度波动，专用基础设施的规模经济与利用率仍需持续验证",
+          "客户集中度与大型客户年支出超 100 万美元的持续性未披露"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "ai_development_orchestration",
+        "use_case_ids": [
+          "software_development"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "面向 AI 生成代码的持续集成与代码验证云基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：AI 编码智能体大幅增加代码产出后，代码验证（CI）成为软件交付瓶颈，而通用云基础设施并非为 CI 的突发负载设计。Blacksmith 以专用 CI 云承接这一工作负载，已披露的验证信号包括 ARR 自 1 月以来增长 17 倍、每周 CI 任务从 500 万增至超过 9000 万、客户数超过 1 万家，以及本轮 6600 万美元 C 轮融资和 10 亿美元估值。证据边界在于：提速两倍、成本降低 60% 等效率数据来自公司及投资方公开陈述，并非独立测试结果；2027 年算力扩张五倍属于计划，尚未发生。",
+          "evidence_signals": [
+            "ARR 自 2026 年 1 月以来增长 17 倍",
+            "每周 CI 任务数从 500 万增长到超过 9000 万",
+            "超过 10,000 家公司使用其平台",
+            "管理接近 10 MW 算力，分布在美国和欧洲数据中心",
+            "完成 6600 万美元 C 轮融资，估值 10 亿美元，累计融资 1.25 亿美元"
+          ],
+          "risks": [
+            "提速两倍、成本降低 60% 等效率数据来自公司及投资方公开陈述，尚待独立验证",
+            "2027 年算力扩张五倍属于计划，执行与电力供应存在不确定性",
+            "CI 工作负载高度波动，专用基础设施的规模经济与利用率仍需持续验证",
+            "客户集中度与大型客户年支出超 100 万美元的持续性未披露"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Blacksmith CI 云平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Aditya Jayaprakash",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Aayush Shah",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Aditya Maru",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sequoia Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Premji Invest",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Peak XV Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "GV",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Y Combinator",
+          "canonical_entity_id": "EN-275b0f4a4023d91c",
+          "canonical_name": "Y Combinator"
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "LangChain",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Ashby",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Granola",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Handshake",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Mercury",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-5aa0077bd10ce3dc",
+          "date": "2026-10-21",
+          "title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+          "amount": "$66M",
+          "source_refs": [
+            "SA-5c3e1d1435c8b1cd"
+          ]
+        },
+        {
+          "event_id": "EV-cca4bd983a16b8d9",
+          "date": "2026-08-12",
+          "title": "AI 代码测试初创公司 Blacksmith 估值不到一年暴涨近 10 倍",
+          "amount": "$45 million",
+          "source_refs": [
+            "SA-94c0556212cc7f2d"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-49f5b4d8c68adbdc",
+          "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+          "title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+          "publisher": "www.prnewswire.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-24T00:20:10.198Z",
+          "content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+          "source_artifact_id": "SA-5c3e1d1435c8b1cd",
+          "raw_id": "RAW-8ceba42b400203f7"
+        },
+        {
+          "source_id": "FISRC-05951399e01ffdfd",
+          "source_url": "https://theaiinsider.tech/2026/10/23/blacksmith-reaches-1b-valuation-with-sequoia-led-series-c-as-ai-code-volumes-surge/",
+          "title": "Blacksmith Reaches $1B Valuation With Sequoia-Led Series C as AI Code Volumes Surge",
+          "publisher": "theaiinsider.tech",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-24T00:44:51.280Z",
+          "content_hash": "49c1b60b2ab6fb08",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-7a9d94b4e9850530",
+          "source_url": "https://www.premjiinvest.com/blog/ceo-series-blacksmith",
+          "title": "CEO Series | Blacksmith",
+          "publisher": "premjiinvest.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-24T00:45:03.824Z",
+          "content_hash": "d20f719223715278",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-24T00:45:17.717Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-24T00:45:17.717Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Blacksmith CI 云平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Aayush Shah",
+            "Aditya Jayaprakash",
+            "Aditya Maru"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-5aa0077bd10ce3dc"
+      ],
+      "aggregation": {
+        "key": "EN-8eae6c54657e94be|series_c",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-4d9a72b093a8d9bc",
+      "triggered_by_event_id": "EV-0d7fe2f7274f7448",
+      "as_of_date": "2026-10-24",
+      "company": {
+        "entity_id": "EN-28bf489a0742fce4",
+        "name": "Cognitive Credit",
+        "full_name": "Cognitive Credit",
+        "website": "https://cognitivecredit.com",
+        "summary": "面向企业信贷市场的专业数据、分析与AI技术提供商，由前信贷分析师创立，提供覆盖信贷研究工作流的集成网络应用。",
+        "headquarters": "伦敦",
+        "founders": [
+          {
+            "name": "Robert Slater",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1a4cc9099dde3ced",
+                "quote": "Founded in 2017 by Robert Slater, Cognitive Credit was built by ex-credit analysts",
+                "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+                "quote_hash": "3af5bea5477c47abb7c1e8c8ad3284793038cfc3e268b5eeec890ec59d4c6707"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1a4cc9099dde3ced",
+            "quote": "Cognitive Credit, the London-based provider of corporate credit data, analytics and AI technology",
+            "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+            "quote_hash": "9edc3726e78dd979c4fb051fd1d231b5614b8d940398b28ec46417d6309eb86a"
+          },
+          {
+            "source_id": "FISRC-4c10800e55cea070",
+            "quote": "Cognitive Credit, based in New York and London, a provider of corporate credit data, analytics, and AI technology",
+            "source_content_hash": "3e95e94f4b64462c",
+            "quote_hash": "2ac820d784d0024fd0ebd84f9388338738bd02aa1bb0a990b8317c4a5aa45a9d"
+          }
+        ],
+        "application_entity_id": "EN-28bf489a0742fce4",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "成长轮",
+        "amount": "€35.73 million",
+        "total_raised": "",
+        "announced_at": "2026-10-23",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Summit Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1a4cc9099dde3ced",
+                "quote": "The investment round was led by global growth equity firm Summit Partners, with continued participation from existing investor ETFS Capital.",
+                "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+                "quote_hash": "32b8699f130959fa281a3d6016600c0649f3fed61b8435fccb4216b6290359f4"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "ETFS Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1a4cc9099dde3ced",
+                "quote": "The investment round was led by global growth equity firm Summit Partners, with continued participation from existing investor ETFS Capital.",
+                "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+                "quote_hash": "32b8699f130959fa281a3d6016600c0649f3fed61b8435fccb4216b6290359f4"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Fitch Ventures",
+            "role": "A轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1a4cc9099dde3ced",
+                "quote": "a €7.17 million (£6 million) Series A led by Fitch Ventures in November 2021",
+                "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+                "quote_hash": "1c35183b9b529e30472f38e105078ed0223902710c6605e2aadf9eb8382f8f4c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "XTX Ventures",
+            "role": "B轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-da6b709a9554b865",
+                "quote": "a $10mm Series B raise led by ETFS Capital, with existing investor XTX Ventures also participating.",
+                "source_content_hash": "665a575391b5f54e",
+                "quote_hash": "a4d61fbd64e8540300904301dcdd52c02ef0414d672e7d5243ebea3c625daf00"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1a4cc9099dde3ced",
+            "quote": "Cognitive Credit, the London-based provider of corporate credit data, analytics and AI technology, has secured a €35.73 million ($40 million) strategic growth investment.",
+            "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+            "quote_hash": "867c03769fddbbcdb5b97bf3e259c167e26d50500408277dca42ea8ad35e3d37"
+          },
+          {
+            "source_id": "FISRC-1a4cc9099dde3ced",
+            "quote": "has secured a €35.73 million ($40 million) strategic growth investment",
+            "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+            "quote_hash": "e65b0f3d3357c993b84d606dbf20c0c38bde3eb783eba5a9047c80d416b16f0c"
+          },
+          {
+            "source_id": "FISRC-4c10800e55cea070",
+            "quote": "has raised $40 million in a strategic growth investment round",
+            "source_content_hash": "3e95e94f4b64462c",
+            "quote_hash": "1662aa1eb574f1c76b5b78d27d52b2b5c92b0d34cd84522674fe15567ffab268"
+          }
+        ],
+        "round_code": "growth",
+        "round_original": "成长轮",
+        "amount_original": "€35.73 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 35730000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3573 万欧元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-0d7fe2f7274f7448",
+            "round_original": "成长轮",
+            "amount": "€35.73 million",
+            "announced_at": "2026-10-23",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1a4cc9099dde3ced",
+                "quote": "Cognitive Credit, the London-based provider of corporate credit data, analytics and AI technology, has secured a €35.73 million ($40 million) strategic growth investment.",
+                "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+                "quote_hash": "867c03769fddbbcdb5b97bf3e259c167e26d50500408277dca42ea8ad35e3d37"
+              },
+              {
+                "source_id": "FISRC-1a4cc9099dde3ced",
+                "quote": "has secured a €35.73 million ($40 million) strategic growth investment",
+                "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+                "quote_hash": "e65b0f3d3357c993b84d606dbf20c0c38bde3eb783eba5a9047c80d416b16f0c"
+              },
+              {
+                "source_id": "FISRC-4c10800e55cea070",
+                "quote": "has raised $40 million in a strategic growth investment round",
+                "source_content_hash": "3e95e94f4b64462c",
+                "quote_hash": "1662aa1eb574f1c76b5b78d27d52b2b5c92b0d34cd84522674fe15567ffab268"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Cognitive Credit集成网络应用",
+          "description": "覆盖信贷研究工作流的集成网络应用，结合经过验证的数据、高级分析和领域专用生成式AI能力，提供审计级信贷模型和主要报告库。",
+          "target_customers": "信贷分析师、资产管理公司、投资银行等机构信贷团队",
+          "features": [
+            "经过验证的数据",
+            "高级分析",
+            "领域专用生成式AI",
+            "审计级信贷模型",
+            "覆盖3,500+企业债券和贷款发行人"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1a4cc9099dde3ced",
+              "quote": "Cognitive Credit’s integrated web application provides support across the credit research workflow, combining verified data, advanced analytics and domain-specialist generative AI capabilities.",
+              "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+              "quote_hash": "79cfc4c290a5db8bc284884ccd6bc924b2fe8a0dd6b6c1a5732c0e73a64768cc"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Excel加载项",
+          "description": "将专有财务数据直接流式传输到现有电子表格的Excel加载项。",
+          "target_customers": "使用Excel进行信贷分析的机构人员",
+          "features": [
+            "流式传输专有财务数据",
+            "集成现有电子表格"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1a4cc9099dde3ced",
+              "quote": "an Excel add-in that streams proprietary financials directly into existing spreadsheets",
+              "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+              "quote_hash": "1cb12f7b95438434daac3ed1738c8cbb3b0318aafe820faa8eb53969ea83a7fc"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "REST API",
+          "description": "用于集成到机构技术栈的REST API。",
+          "target_customers": "需要系统集成的机构客户",
+          "features": [
+            "机构技术栈集成"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1a4cc9099dde3ced",
+              "quote": "a REST API for integration into institutional tech stacks",
+              "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+              "quote_hash": "ae46aabca81b9a1af3d657db4aeeb36bdde98ed8ced2d78e45f746ed4b761861"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "全球前25大资产管理公司中的80%以上",
+          "industry": "资产管理",
+          "use_case": "信贷分析工作流",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1a4cc9099dde3ced",
+              "quote": "power analytical workflows for more than 80% of the top 25 global asset managers by AUM",
+              "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+              "quote_hash": "5403dd8c9f6e2cf52fd1eb497c6fee1461240e5acbc311cf6497b2575deb3f99"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "全球债务排行榜前10大投资银行",
+          "industry": "投资银行",
+          "use_case": "信贷分析工作流",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1a4cc9099dde3ced",
+              "quote": "all top 10 global debt league table investment banks",
+              "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+              "quote_hash": "ba5bc567037e93a1ed0170fada94e8f2ae031af468878c067115dc84865a6bc6"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "€35.73 million ($40 million)",
+          "observed_at": "2026-10-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1a4cc9099dde3ced",
+              "quote": "has secured a €35.73 million ($40 million) strategic growth investment",
+              "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+              "quote_hash": "e65b0f3d3357c993b84d606dbf20c0c38bde3eb783eba5a9047c80d416b16f0c"
+            }
+          ]
+        },
+        {
+          "label": "覆盖发行人数量",
+          "value": "3,500+ 企业债券和贷款发行人",
+          "observed_at": "2026-10-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1a4cc9099dde3ced",
+              "quote": "across 3,500+ corporate bond and loan issuers in the US, Europe and emerging markets",
+              "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+              "quote_hash": "783f4f212aa628240e0b71fea840c0aa3370324f54ba1b2078334bf72a0f4147"
+            }
+          ]
+        },
+        {
+          "label": "活跃用户增长",
+          "value": "240%",
+          "observed_at": "2026-10-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1a4cc9099dde3ced",
+              "quote": "Cognitive Credit has achieved 240% active user growth",
+              "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+              "quote_hash": "0b85e783e03f37a31a97c2337626b0f2ee57fdace8a6fecc18f44271a16219b8"
+            }
+          ]
+        },
+        {
+          "label": "全球债券和贷款发行人覆盖增长",
+          "value": "翻倍以上",
+          "observed_at": "2026-10-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1a4cc9099dde3ced",
+              "quote": "more than doubled its global bond and loan issuer coverage",
+              "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+              "quote_hash": "c72508ac862dd70ce19d2793b912f7ce55ed8827c46e9d06ab96ad7363a2badb"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Chris Bon",
+          "quote": "High-quality data at speed and scale is critical to powering AI workflows that credit professionals will increasingly rely on for high-stakes decisions",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1a4cc9099dde3ced",
+              "quote": "High-quality data at speed and scale is critical to powering AI workflows that credit professionals will increasingly rely on for high-stakes decisions",
+              "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+              "quote_hash": "557e1559b60d2b49cb1ecb3f506bbed6058e15a873ee0eb3098db826a2e6213b"
+            }
+          ]
+        },
+        {
+          "speaker": "Robert Slater",
+          "quote": "Demand for credit-specialist technology will continue to accelerate from here, and we are pleased to partner with Summit Partners on our next phase of growth.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1a4cc9099dde3ced",
+              "quote": "Demand for credit-specialist technology will continue to accelerate from here, and we are pleased to partner with Summit Partners on our next phase of growth.",
+              "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+              "quote_hash": "f19433849625facad7a5f1fa5452e038edd09790227d1d271af8107e2a6bbb0c"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Summit Partners",
+            "speaker": "Chris Bon",
+            "speaker_role": "合伙人",
+            "rationale": "高质量数据是信贷专业人员依赖AI工作流进行高风险决策的关键，Cognitive Credit专为信贷分析构建，提供速度、精度和可审计性。",
+            "quote": "High-quality data at speed and scale is critical to powering AI workflows that credit professionals will increasingly rely on for high-stakes decisions",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1a4cc9099dde3ced",
+                "quote": "High-quality data at speed and scale is critical to powering AI workflows that credit professionals will increasingly rely on for high-stakes decisions",
+                "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+                "quote_hash": "557e1559b60d2b49cb1ecb3f506bbed6058e15a873ee0eb3098db826a2e6213b"
+              }
+            ]
+          },
+          {
+            "institution": "Summit Partners",
+            "speaker": "Chris Bon",
+            "speaker_role": "合伙人",
+            "rationale": "Cognitive Credit专为信贷分析打造，利用机构级技术在数千发行人范围内提供速度、精度和可审计性，支持领先银行和资产管理公司在准确性和可验证性至关重要的场景中使用。",
+            "quote": "Cognitive Credit is purpose-built for credit analysis and leverages institutional-grade technology to provide speed, precision, and auditability across thousands of issuers and to support leading banks and asset managers in use cases where accuracy and verifiability are critical.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1a4cc9099dde3ced",
+                "quote": "Cognitive Credit is purpose-built for credit analysis and leverages institutional-grade technology to provide speed, precision, and auditability across thousands of issuers and to support leading banks and asset managers in use cases where accuracy and verifiability are critical.",
+                "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+                "quote_hash": "38f5e8be40c2890c755cac923af0667db480392a2cfdc0c26b90388224710811"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "Summit Partners领投的战略增长投资押注于信贷市场专业数据与AI工作流的结合：Cognitive Credit已覆盖全球前25大资产管理公司中80%以上的分析工作流和全部前10大债务排行榜投行，活跃用户增长240%，发行人覆盖翻倍以上。这些已验证信号表明其数据资产和机构客户渗透具备扩张基础，但本轮资金将用于美国商业扩张和新产品（DealConnect、代理式信贷分析）部署，这些新增长点的商业化效果尚待验证。",
+        "validated_signals": [
+          "覆盖全球前25大资产管理公司中80%以上的分析工作流",
+          "覆盖全部前10大全球债务排行榜投资银行",
+          "活跃用户增长240%",
+          "全球债券和贷款发行人覆盖翻倍以上",
+          "覆盖3,500+企业债券和贷款发行人"
+        ],
+        "risks": [
+          "DealConnect和代理式信贷分析尚未正式推出，其市场接受度和收入贡献仍待验证",
+          "美国商业扩张的执行效果和竞争态势尚不明确",
+          "来源未披露本轮融资后的累计融资额和估值，资本回报预期缺乏定价参照"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "financial_services",
+        "market_application_id": "",
+        "use_case_ids": [
+          "data_analysis",
+          "research_discovery"
+        ],
+        "industry_ids": [
+          "financial_services"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "researcher"
+        ],
+        "sector": "企业信贷数据、分析与AI平台",
+        "investment_thesis": {
+          "statement": "Summit Partners领投的战略增长投资押注于信贷市场专业数据与AI工作流的结合：Cognitive Credit已覆盖全球前25大资产管理公司中80%以上的分析工作流和全部前10大债务排行榜投行，活跃用户增长240%，发行人覆盖翻倍以上。这些已验证信号表明其数据资产和机构客户渗透具备扩张基础，但本轮资金将用于美国商业扩张和新产品（DealConnect、代理式信贷分析）部署，这些新增长点的商业化效果尚待验证。",
+          "evidence_signals": [
+            "覆盖全球前25大资产管理公司中80%以上的分析工作流",
+            "覆盖全部前10大全球债务排行榜投资银行",
+            "活跃用户增长240%",
+            "全球债券和贷款发行人覆盖翻倍以上",
+            "覆盖3,500+企业债券和贷款发行人"
+          ],
+          "risks": [
+            "DealConnect和代理式信贷分析尚未正式推出，其市场接受度和收入贡献仍待验证",
+            "美国商业扩张的执行效果和竞争态势尚不明确",
+            "来源未披露本轮融资后的累计融资额和估值，资本回报预期缺乏定价参照"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Cognitive Credit集成网络应用",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Excel加载项",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "REST API",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Robert Slater",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Summit Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "ETFS Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Fitch Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "XTX Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "全球前25大资产管理公司中的80%以上",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "全球债务排行榜前10大投资银行",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-0d7fe2f7274f7448",
+          "date": "2026-10-23",
+          "title": "伦敦的Cognitive Credit获得3573万欧元，用于扩展其面向信贷市场的AI和数据平台",
+          "amount": "€35.73 million",
+          "source_refs": [
+            "SA-59c355379b5c9a43"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-1a4cc9099dde3ced",
+          "source_url": "https://www.eu-startups.com/2026/10/londons-cognitive-credit-lands-e35-73-million-to-scale-its-ai-and-data-platform-for-credit-markets/",
+          "title": "伦敦的Cognitive Credit获得3573万欧元，用于扩展其面向信贷市场的AI和数据平台",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-24T00:20:29.527Z",
+          "content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+          "source_artifact_id": "SA-59c355379b5c9a43",
+          "raw_id": "RAW-b8628300c3c77259"
+        },
+        {
+          "source_id": "FISRC-da6b709a9554b865",
+          "source_url": "https://cognitivecredit.com/blog/cognitive-credit-completes-10mm-series-b-fundraise",
+          "title": "Cognitive Credit Secures $10M Series B Funding",
+          "publisher": "cognitivecredit.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-24T00:44:54.518Z",
+          "content_hash": "665a575391b5f54e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-4c10800e55cea070",
+          "source_url": "https://www.thesaasnews.com/news/cognitive-credit-raises-40m-growth-capital/",
+          "title": "Cognitive Credit Raises $40M Growth Capital",
+          "publisher": "thesaasnews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-24T00:44:54.670Z",
+          "content_hash": "3e95e94f4b64462c",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-24T00:45:09.109Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-24T00:45:09.109Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Cognitive Credit集成网络应用",
+            "Excel加载项",
+            "REST API"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Robert Slater"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-0d7fe2f7274f7448"
+      ],
+      "aggregation": {
+        "key": "EN-28bf489a0742fce4|growth",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-eeebb8288c182db5",
+      "triggered_by_event_id": "EV-48cbd6592d009234",
+      "as_of_date": "2026-10-24",
+      "company": {
+        "entity_id": "EN-a2b8357fddf7aa7d",
+        "name": "Mach9",
+        "full_name": "Mach9",
+        "website": "mach9.ai",
+        "summary": "Mach9 是面向土木工程的 AI CAD 软件公司，将道路、公用设施和施工现场的三维扫描数据自动转化为工程图纸，供测量与土木工程团队复核和定稿。",
+        "headquarters": "San Francisco",
+        "founders": [
+          {
+            "name": "Alex Baikovitz",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2115ba1066fba41f",
+                "quote": "said Alex Baikovitz, co-founder and CEO of Mach9",
+                "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+                "quote_hash": "0b7ccdc18f5f2bfd2fb6770cd8511ba12afaadf49cac68d4efae77de3e43b0b9"
+              },
+              {
+                "source_id": "FISRC-a178696d9833194a",
+                "quote": "Mach9 was founded by Baikovitz, Haowen Shi, Michael Mong and Zach Sussman",
+                "source_content_hash": "a499563cb1e2657f",
+                "quote_hash": "cc6c32acbd46cdb774b89d1514fafab52ad5679d1c211a2bd74d2db2d742d32d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Haowen Shi",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a178696d9833194a",
+                "quote": "Mach9 was founded by Baikovitz, Haowen Shi, Michael Mong and Zach Sussman",
+                "source_content_hash": "a499563cb1e2657f",
+                "quote_hash": "cc6c32acbd46cdb774b89d1514fafab52ad5679d1c211a2bd74d2db2d742d32d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Michael Mong",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a178696d9833194a",
+                "quote": "Mach9 was founded by Baikovitz, Haowen Shi, Michael Mong and Zach Sussman",
+                "source_content_hash": "a499563cb1e2657f",
+                "quote_hash": "cc6c32acbd46cdb774b89d1514fafab52ad5679d1c211a2bd74d2db2d742d32d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Zach Sussman",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a178696d9833194a",
+                "quote": "Mach9 was founded by Baikovitz, Haowen Shi, Michael Mong and Zach Sussman",
+                "source_content_hash": "a499563cb1e2657f",
+                "quote_hash": "cc6c32acbd46cdb774b89d1514fafab52ad5679d1c211a2bd74d2db2d742d32d"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2115ba1066fba41f",
+            "quote": "Mach9, the AI CAD software for civil engineering",
+            "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+            "quote_hash": "8745013518277ffec66035f5effff541fa88d217d11852b74a6c1703347059d8"
+          },
+          {
+            "source_id": "FISRC-a178696d9833194a",
+            "quote": "Mach9 is headquartered in San Francisco",
+            "source_content_hash": "a499563cb1e2657f",
+            "quote_hash": "318fd43805fd81ef6257737921e6d6c2a4703f92b2eba50907c8703542dca053"
+          }
+        ],
+        "application_entity_id": "EN-a2b8357fddf7aa7d",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "$34 million",
+        "total_raised": "4900 万美元",
+        "announced_at": "2026-10-21",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "First Round Capital",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2115ba1066fba41f",
+                "quote": "a $34 million Series A co-led by First Round Capital and Bessemer Venture Partners",
+                "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+                "quote_hash": "981eb537c1209c249d3ea00482dce68d2e5a3035546bf321a44970b75acebf3a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bessemer Venture Partners",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2115ba1066fba41f",
+                "quote": "a $34 million Series A co-led by First Round Capital and Bessemer Venture Partners",
+                "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+                "quote_hash": "981eb537c1209c249d3ea00482dce68d2e5a3035546bf321a44970b75acebf3a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Prudence",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2115ba1066fba41f",
+                "quote": "with participation from Prudence and continued participation from Quiet Capital",
+                "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+                "quote_hash": "70e2ea692f72791016f36cfc6f744f7871fbed6484f2123892d59b74b3839d27"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Quiet Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2115ba1066fba41f",
+                "quote": "with participation from Prudence and continued participation from Quiet Capital",
+                "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+                "quote_hash": "70e2ea692f72791016f36cfc6f744f7871fbed6484f2123892d59b74b3839d27"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Overmatch Ventures",
+            "role": "2024 年种子轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d35ae298104a6f5f",
+                "quote": "a $12 million seed funding round led by Quiet Capital, alongside new and existing investors including Overmatch Ventures",
+                "source_content_hash": "c4d4cf1496169424",
+                "quote_hash": "777e1028616ebcc127eea246ea5ff6e78c9917dc49d7cd94467da4b0e6fbf11e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kyle Vogt",
+            "role": "2024 年种子轮投资方（个人）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d35ae298104a6f5f",
+                "quote": "Kyle Vogt (founder of Cruise)",
+                "source_content_hash": "c4d4cf1496169424",
+                "quote_hash": "a84df4d16197c771e9da7a8b1fbb29b118b2a76dcda681e450b05c89957c9933"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Amar Hanspal",
+            "role": "2024 年种子轮投资方（个人）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d35ae298104a6f5f",
+                "quote": "Amar Hanspal (former CEO of Autodesk)",
+                "source_content_hash": "c4d4cf1496169424",
+                "quote_hash": "92fff9373e87501e95ce0a32f59a696d198093c006bfd600fead4f8bdc6bd5d5"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Scott Belsky",
+            "role": "2024 年种子轮投资方（个人）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d35ae298104a6f5f",
+                "quote": "Scott Belsky (CPO of Adobe)",
+                "source_content_hash": "c4d4cf1496169424",
+                "quote_hash": "c1c05ffc5be64b88d7f81f948d138e7225e6541cb5b27add21dfa617773ddae6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Gokul Rajaram",
+            "role": "2024 年种子轮投资方（个人）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d35ae298104a6f5f",
+                "quote": "Gokul Rajaram (former executive at DoorDash)",
+                "source_content_hash": "c4d4cf1496169424",
+                "quote_hash": "de8bb27969451cea2ae79596dd9a3da12878f1976587a74f41d53f3b99e1f502"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2115ba1066fba41f",
+            "quote": "SAN FRANCISCO, Oct. 21, 2026 /PRNewswire/ -- Mach9, the AI CAD software for civil engineering, today announced a $34 million Series A co-led by First Round Capital and Bessemer Venture Partners, with participation from Prudence and continued participation from Quiet Capital.",
+            "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+            "quote_hash": "5bcc4375172d26115cc78479e2246c6f47424e4bd5fb3216519d5655011a19b1"
+          },
+          {
+            "source_id": "FISRC-2115ba1066fba41f",
+            "quote": "today announced a $34 million Series A co-led by First Round Capital and Bessemer Venture Partners, with participation from Prudence and continued participation from Quiet Capital",
+            "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+            "quote_hash": "220121a7124447ae33820b9821a6adea06057eaba0d32a320578bf96f624af43"
+          },
+          {
+            "source_id": "FISRC-a178696d9833194a",
+            "quote": "The new financing brings Mach9’s total funding to $49 million",
+            "source_content_hash": "a499563cb1e2657f",
+            "quote_hash": "1f7ade3506221554bc87b27e89d896630d1e2909c4a988fcd16a0f9feebd19fb"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$34 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 34000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3400 万美元"
+        },
+        "total_raised_original": "4900 万美元",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 49000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4900 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-48cbd6592d009234",
+            "round_original": "A轮",
+            "amount": "$34 million",
+            "announced_at": "2026-10-21",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2115ba1066fba41f",
+                "quote": "SAN FRANCISCO, Oct. 21, 2026 /PRNewswire/ -- Mach9, the AI CAD software for civil engineering, today announced a $34 million Series A co-led by First Round Capital and Bessemer Venture Partners, with participation from Prudence and continued participation from Quiet Capital.",
+                "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+                "quote_hash": "5bcc4375172d26115cc78479e2246c6f47424e4bd5fb3216519d5655011a19b1"
+              },
+              {
+                "source_id": "FISRC-2115ba1066fba41f",
+                "quote": "today announced a $34 million Series A co-led by First Round Capital and Bessemer Venture Partners, with participation from Prudence and continued participation from Quiet Capital",
+                "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+                "quote_hash": "220121a7124447ae33820b9821a6adea06057eaba0d32a320578bf96f624af43"
+              },
+              {
+                "source_id": "FISRC-a178696d9833194a",
+                "quote": "The new financing brings Mach9’s total funding to $49 million",
+                "source_content_hash": "a499563cb1e2657f",
+                "quote_hash": "1f7ade3506221554bc87b27e89d896630d1e2909c4a988fcd16a0f9feebd19fb"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Mach9 AI CAD 软件",
+          "description": "面向土木工程的 AI CAD 软件，上传用现有设备采集的道路、公用设施和施工现场三维扫描后，自动绘制路缘、标志、杆件、车道标线和线缆等物理要素，精度达厘米级，测量师和工程师再用编辑工具复核、修改和定稿。",
+          "target_customers": "土木工程与测量团队、交通机构",
+          "features": [
+            "将实景采集数据转为数字蓝图",
+            "自动绘制路缘、标志、杆件、车道标线和线缆",
+            "厘米级精度",
+            "提供编辑与复核工具"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2115ba1066fba41f",
+              "quote": "Mach9 is AI CAD software for civil engineering that turns reality capture data into digital blueprints up to 10x faster at one-fifth the cost",
+              "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+              "quote_hash": "25e4c5fbc1f582d9c73e29a5b9d0a5fb4e571e000bc4f8f6e2e7cbfd599a9fb7"
+            },
+            {
+              "source_id": "FISRC-a178696d9833194a",
+              "quote": "Mach9 then automatically drafts physical features like curbs, signs, poles, lane markings and wires with centimeter-level accuracy",
+              "source_content_hash": "a499563cb1e2657f",
+              "quote_hash": "a729f7fd26d2283d0a7f7548337f7fb2f57c87e0af884b3a910c96e7b8d89fbe"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Caltrans",
+          "industry": "政府公共部门/交通",
+          "use_case": "在圣地亚哥 8 号州际公路清点减速带等道路安全设施，帮助工程师发现缺口并规划改进",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2115ba1066fba41f",
+              "quote": "On Interstate 8 in San Diego, Caltrans is using Mach9 to inventory rumble strips and other road-safety features",
+              "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+              "quote_hash": "a35cd3e95ce5034af9e6464fd3eae3e261b6a49ee5557270c164f1f747803330"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Kier + Wright",
+          "industry": "土木工程",
+          "use_case": "在旧金山提升学校周边行人安全",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2115ba1066fba41f",
+              "quote": "In San Francisco, Kier + Wright is using Mach9 to increase pedestrian safety around schools",
+              "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+              "quote_hash": "a1d99350f77f38a592e4b19df26a82c7248fed95dfe68f6b42d70a7d849a391e"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Fibersmith",
+          "industry": "电信/光纤网络",
+          "use_case": "在路易斯安那州帮助连接 12.5 万户缺乏高速互联网的家庭和企业",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2115ba1066fba41f",
+              "quote": "In Louisiana, Fibersmith is using Mach9 to help connect 125,000 homes and businesses that lacked high-speed internet",
+              "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+              "quote_hash": "05faf5d4d7f15ef2870909f4962c57238895c8247cff179d5f51a17287bda5ba"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "WSP",
+          "industry": "土木工程",
+          "use_case": "来源仅列为客户，未披露具体项目",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2115ba1066fba41f",
+              "quote": "Its customers include civil engineering firms WSP, HNTB and NV5",
+              "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+              "quote_hash": "3fff3b363a8851cbae2073e17eb54236eba36a12304845069dbd983ea3c08dd4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Minnesota DOT",
+          "industry": "政府公共部门/交通",
+          "use_case": "来源仅列为客户，未披露具体项目",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2115ba1066fba41f",
+              "quote": "transportation agencies such as Caltrans, Minnesota DOT and the Maryland State Highway Administration",
+              "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+              "quote_hash": "03f459dee4e4b7f896e15ec1672b59aee508e9a34bc1b570240b2575ae3671c0"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Autodesk",
+          "product": "既有 CAD 软件",
+          "scenario": "土木工程测量图纸绘制",
+          "target_customer": "土木工程与测量团队",
+          "funding_summary": "",
+          "core_difference": "来源称 Mach9 自动化使流程快 10 倍，而既有软件人工处理约每英里需一周",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e47225e8145a5386",
+              "quote": "manual work requiring about a week per mile in incumbent software from companies such as Autodesk and Bentley Systems",
+              "source_content_hash": "bc2ec116785a92cd",
+              "quote_hash": "345353a14350dab11add5041fca09c4b6c19afde379245610661ab36d4bddbbd"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Bentley Systems",
+          "product": "既有 CAD 软件",
+          "scenario": "土木工程测量图纸绘制",
+          "target_customer": "土木工程与测量团队",
+          "funding_summary": "",
+          "core_difference": "来源称 Mach9 自动化使流程快 10 倍，而既有软件人工处理约每英里需一周",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e47225e8145a5386",
+              "quote": "manual work requiring about a week per mile in incumbent software from companies such as Autodesk and Bentley Systems",
+              "source_content_hash": "bc2ec116785a92cd",
+              "quote_hash": "345353a14350dab11add5041fca09c4b6c19afde379245610661ab36d4bddbbd"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "CivilGrid",
+          "product": "被其描述为“地下 Google Maps”的服务",
+          "scenario": "地下基础设施数据服务",
+          "target_customer": "基础设施相关团队",
+          "funding_summary": "2026 年 8 月融资 2600 万美元",
+          "core_difference": "CivilGrid 提供地下基础设施地图服务；Mach9 将三维扫描转为工程 CAD 图纸",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e47225e8145a5386",
+              "quote": "CivilGrid raised $26 million in August to expand a service that CivilGrid describes as a \"Google Maps for the underground.\"",
+              "source_content_hash": "bc2ec116785a92cd",
+              "quote_hash": "c0800892a383b02f65f1526a92377709932790908cb9336d4ca272c05c27684d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Blueprints AI",
+          "product": "自动生成符合建筑规范与许可要求的建筑蓝图",
+          "scenario": "建筑蓝图与许可合规",
+          "target_customer": "建筑项目相关方",
+          "funding_summary": "",
+          "core_difference": "Blueprints AI 面向建筑蓝图与许可合规；Mach9 面向土木工程实景扫描转 CAD 图纸",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e47225e8145a5386",
+              "quote": "Blueprints AI produces architectural blueprints that meet building codes and permit requirements within minutes",
+              "source_content_hash": "bc2ec116785a92cd",
+              "quote_hash": "ba5adc6ea27b9ab317d9ee8c843bc88c426f663b86cdac9c3916ec4d833b64fe"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "3400 万美元",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2115ba1066fba41f",
+              "quote": "today announced a $34 million Series A",
+              "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+              "quote_hash": "c3c2e19ff887835debebb54578502779d2f5d49f54b0761149bfcfb8bd0028c1"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "4900 万美元",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a178696d9833194a",
+              "quote": "The new financing brings Mach9’s total funding to $49 million",
+              "source_content_hash": "a499563cb1e2657f",
+              "quote_hash": "1f7ade3506221554bc87b27e89d896630d1e2909c4a988fcd16a0f9feebd19fb"
+            }
+          ]
+        },
+        {
+          "label": "累计项目数",
+          "value": "超过 2500 个",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2115ba1066fba41f",
+              "quote": "used Mach9 across more than 2,500 projects in all 50 states",
+              "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+              "quote_hash": "53b5ddf2e332e6c18296c8230208ef6c5702543cd4e6e8bcd99aae1e96aa3c02"
+            }
+          ]
+        },
+        {
+          "label": "累计测量基础设施里程",
+          "value": "超过 10 万英里",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2115ba1066fba41f",
+              "quote": "surveying over 100,000 miles of infrastructure corridors",
+              "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+              "quote_hash": "ee41ba883cb635fb346dc3e101d584cddcb580b0a5134f04bcd3885c2f767d15"
+            }
+          ]
+        },
+        {
+          "label": "覆盖州数",
+          "value": "全部 50 个州",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2115ba1066fba41f",
+              "quote": "more than 2,500 projects in all 50 states",
+              "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+              "quote_hash": "542c6658132cbb51b89b9780b998bdd69fab8af4cff0cb2dd05904a441401759"
+            }
+          ]
+        },
+        {
+          "label": "Fibersmith 待连接家庭和企业数",
+          "value": "125,000 户",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2115ba1066fba41f",
+              "quote": "help connect 125,000 homes and businesses that lacked high-speed internet",
+              "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+              "quote_hash": "00b3d8e05a99b3e9a15e420d7393a17d6cb4174e75c49a4a7ae234fecf786a4b"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Alex Baikovitz",
+          "quote": "We need to rebuild aging roads and utilities while expanding the power, transportation and communications networks people will rely on for decades to come",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2115ba1066fba41f",
+              "quote": "We need to rebuild aging roads and utilities while expanding the power, transportation and communications networks people will rely on for decades to come",
+              "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+              "quote_hash": "7f7ab1621a87fd197201f7c6d6b98b2c27676dd94e51385d37470b57c0213774"
+            }
+          ]
+        },
+        {
+          "speaker": "Bill Trenchard",
+          "quote": "Mach9 is building the software layer that will turn our physical world into information engineers can understand and act on",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2115ba1066fba41f",
+              "quote": "Mach9 is building the software layer that will turn our physical world into information engineers can understand and act on",
+              "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+              "quote_hash": "76bc34818b81e59e118b3e736e3ae04e3c5c6e94ff98d8e6f3da460fbba935fb"
+            }
+          ]
+        },
+        {
+          "speaker": "Caty Rea",
+          "quote": "AI is creating the opportunity for a new generation of CAD software",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2115ba1066fba41f",
+              "quote": "AI is creating the opportunity for a new generation of CAD software",
+              "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+              "quote_hash": "b336f6a8b5f794b1e77509dee0145cae1296993cd101bea1453b8a66cd955763"
+            }
+          ]
+        },
+        {
+          "speaker": "Rob Ashley",
+          "quote": "Mach9 enables us to do 50% more work with the same experienced team",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2115ba1066fba41f",
+              "quote": "Mach9 enables us to do 50% more work with the same experienced team",
+              "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+              "quote_hash": "6fbd58a5d689267e8ed0be02e60822f7ba3bd61723624483a2f8bdb038997c02"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "First Round Capital",
+            "speaker": "Bill Trenchard",
+            "speaker_role": "Partner",
+            "rationale": "认为 Mach9 正在构建把物理世界转化为工程师可理解、可行动信息的软件层，有望成为基础设施建造与维护的基础工具。",
+            "quote": "Mach9 is building the software layer that will turn our physical world into information engineers can understand and act on",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2115ba1066fba41f",
+                "quote": "Mach9 is building the software layer that will turn our physical world into information engineers can understand and act on",
+                "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+                "quote_hash": "76bc34818b81e59e118b3e736e3ae04e3c5c6e94ff98d8e6f3da460fbba935fb"
+              }
+            ]
+          },
+          {
+            "institution": "Bessemer Venture Partners",
+            "speaker": "Caty Rea",
+            "speaker_role": "Vice President",
+            "rationale": "认为 AI 为新一代 CAD 软件创造机会，Mach9 有潜力成为把土木工程带入 AI 时代的平台。",
+            "quote": "AI is creating the opportunity for a new generation of CAD software",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2115ba1066fba41f",
+                "quote": "AI is creating the opportunity for a new generation of CAD software",
+                "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+                "quote_hash": "b336f6a8b5f794b1e77509dee0145cae1296993cd101bea1453b8a66cd955763"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是：Mach9 能否把三维实景扫描自动转成满足土木工程精度与责任要求的 CAD 图纸，并以此替代人工逐要素描绘的瓶颈。已验证信号包括：软件已在全部 50 个州、超过 2500 个项目中投入使用，累计测量超过 10 万英里基础设施走廊；客户涵盖 WSP、HNTB、NV5 等工程公司及 Caltrans、Minnesota DOT 等交通机构；本轮 3400 万美元 A 轮由 First Round Capital 与 Bessemer Venture Partners 联合领投，累计融资达 4900 万美元。证据边界在于：来源未披露收入、合同金额、毛利率、客户留存或付费转化数据；“快 10 倍、成本五分之一”为公司自述效率指标，尚缺独立核验。",
+        "validated_signals": [
+          "软件已在全部 50 个州、超过 2500 个项目中投入使用",
+          "累计测量超过 10 万英里基础设施走廊",
+          "客户包括 WSP、HNTB、NV5 及 Caltrans、Minnesota DOT、Maryland State Highway Administration",
+          "本轮 3400 万美元 A 轮由 First Round Capital 与 Bessemer Venture Partners 联合领投，Prudence 参投，Quiet Capital 继续参与"
+        ],
+        "risks": [
+          "来源未披露收入、合同金额、毛利率、客户留存或付费转化数据，商业化质量仍待验证",
+          "“快 10 倍、成本五分之一”为公司自述效率指标，缺少独立第三方核验",
+          "土木工程交付涉及持证专业人员的责任与高精度要求，AI 生成图纸的合规与责任边界仍需持续验证",
+          "来源提及的 1.2 万亿美元基建法案资金为行业背景，不等于 Mach9 已获得的合同或收入"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "industrials",
+        "market_application_id": "",
+        "use_case_ids": [
+          "design_engineering"
+        ],
+        "industry_ids": [
+          "construction_real_estate",
+          "government_public_sector"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "面向土木工程的 AI CAD 软件，将三维实景扫描自动转化为工程图纸",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：Mach9 能否把三维实景扫描自动转成满足土木工程精度与责任要求的 CAD 图纸，并以此替代人工逐要素描绘的瓶颈。已验证信号包括：软件已在全部 50 个州、超过 2500 个项目中投入使用，累计测量超过 10 万英里基础设施走廊；客户涵盖 WSP、HNTB、NV5 等工程公司及 Caltrans、Minnesota DOT 等交通机构；本轮 3400 万美元 A 轮由 First Round Capital 与 Bessemer Venture Partners 联合领投，累计融资达 4900 万美元。证据边界在于：来源未披露收入、合同金额、毛利率、客户留存或付费转化数据；“快 10 倍、成本五分之一”为公司自述效率指标，尚缺独立核验。",
+          "evidence_signals": [
+            "软件已在全部 50 个州、超过 2500 个项目中投入使用",
+            "累计测量超过 10 万英里基础设施走廊",
+            "客户包括 WSP、HNTB、NV5 及 Caltrans、Minnesota DOT、Maryland State Highway Administration",
+            "本轮 3400 万美元 A 轮由 First Round Capital 与 Bessemer Venture Partners 联合领投，Prudence 参投，Quiet Capital 继续参与"
+          ],
+          "risks": [
+            "来源未披露收入、合同金额、毛利率、客户留存或付费转化数据，商业化质量仍待验证",
+            "“快 10 倍、成本五分之一”为公司自述效率指标，缺少独立第三方核验",
+            "土木工程交付涉及持证专业人员的责任与高精度要求，AI 生成图纸的合规与责任边界仍需持续验证",
+            "来源提及的 1.2 万亿美元基建法案资金为行业背景，不等于 Mach9 已获得的合同或收入"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Mach9 AI CAD 软件",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Alex Baikovitz",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Haowen Shi",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Michael Mong",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Zach Sussman",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "First Round Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bessemer Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Prudence",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Quiet Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Overmatch Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Kyle Vogt",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Amar Hanspal",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Scott Belsky",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Gokul Rajaram",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Caltrans",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Kier + Wright",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Fibersmith",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "WSP",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Minnesota DOT",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Autodesk",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Bentley Systems",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "CivilGrid",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Blueprints AI",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-48cbd6592d009234",
+          "date": "2026-10-21",
+          "title": "Mach9 完成 3400 万美元 A 轮融资，将土木工程带入 AI 时代",
+          "amount": "$34 million",
+          "source_refs": [
+            "SA-4ec987f9e7355854"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-2115ba1066fba41f",
+          "source_url": "https://www.prnewswire.com/news-releases/mach9-raises-34m-series-a-to-bring-civil-engineering-into-the-ai-era-302915153.html",
+          "title": "Mach9 完成 3400 万美元 A 轮融资，将土木工程带入 AI 时代",
+          "publisher": "www.prnewswire.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-24T00:20:09.413Z",
+          "content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+          "source_artifact_id": "SA-4ec987f9e7355854",
+          "raw_id": "RAW-4a5e520ae15dc5f7"
+        },
+        {
+          "source_id": "FISRC-a178696d9833194a",
+          "source_url": "https://mach9.ai/news/34-million-series-a",
+          "title": "Mach9 Raises $34M Series A to Bring Civil Engineering into the AI Era",
+          "publisher": "mach9.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-24T00:44:28.752Z",
+          "content_hash": "a499563cb1e2657f",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-d35ae298104a6f5f",
+          "source_url": "https://mach9.ai/news/12-million-seed-funding",
+          "title": "Mach9 Raises $12 Million Led by Quiet Capital to Scale AI-Powered Geospatial Mapping Solutions",
+          "publisher": "mach9.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-24T00:44:28.939Z",
+          "content_hash": "c4d4cf1496169424",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-e47225e8145a5386",
+          "source_url": "https://www.kucoin.com/news/flash/mach9-raises-34m-in-series-a-for-ai-powered-cad-software",
+          "title": "Mach9 Raises $34M in Series A for AI-Powered CAD Software",
+          "publisher": "kucoin.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-24T00:44:34.138Z",
+          "content_hash": "bc2ec116785a92cd",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-24T00:44:51.296Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-24T00:44:51.296Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Mach9 AI CAD 软件"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 4,
+          "unresolved_names": [
+            "Alex Baikovitz",
+            "Haowen Shi",
+            "Michael Mong",
+            "Zach Sussman"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-48cbd6592d009234"
+      ],
+      "aggregation": {
+        "key": "EN-a2b8357fddf7aa7d|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-3bd98c8f0c7c255b",
+      "triggered_by_event_id": "EV-8a71cd4f6e7cafd2",
+      "as_of_date": "2026-10-24",
+      "company": {
+        "entity_id": "EN-7c6eefba80293ea4",
+        "name": "Pigment",
+        "full_name": "Pigment",
+        "website": "https://www.pigment.com",
+        "summary": "Pigment 是 AI 商业计划与绩效管理平台，面向财务、销售、供应链等企业职能提供动态建模、自主 AI 智能体与规划工作流。",
+        "headquarters": "Paris",
+        "founders": [
+          {
+            "name": "Eléonore Crespo",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6737e55341eb5266",
+                "quote": "Pigment Co-Founders Eléonore Crespo and Romain Niccoli said",
+                "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+                "quote_hash": "dda34c8574f0d3df01717203719e60adf63358da90ffe081305fb6d5dabea28a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Romain Niccoli",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6737e55341eb5266",
+                "quote": "Pigment Co-Founders Eléonore Crespo and Romain Niccoli said",
+                "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+                "quote_hash": "dda34c8574f0d3df01717203719e60adf63358da90ffe081305fb6d5dabea28a"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6737e55341eb5266",
+            "quote": "Pigment, the AI business planning and performance management platform",
+            "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+            "quote_hash": "373d3eeb28ff41f02aa8dcd39af4a5d2e391ca27347fc2c130a7d72e4a802d86"
+          },
+          {
+            "source_id": "FISRC-1af1b6276b5a88de",
+            "quote": "Pigment is announcing a $250M Series E funding round",
+            "source_content_hash": "6dec55ed4c9031d7",
+            "quote_hash": "6c0e1ee026d6921b256712d90d1fa3354bbef482bef3309cfb982ccec9d6b433"
+          }
+        ],
+        "application_entity_id": "EN-7c6eefba80293ea4",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "E轮",
+        "amount": "$250 million",
+        "total_raised": "",
+        "announced_at": "2026-10-21",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Scaleup Europe Fund, managed by EQT",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6737e55341eb5266",
+                "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+                "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+                "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "WIL (World Innovation Lab)",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6737e55341eb5266",
+                "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+                "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+                "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Greenoaks",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6737e55341eb5266",
+                "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+                "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+                "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "ICONIQ",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6737e55341eb5266",
+                "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+                "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+                "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "IVP",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6737e55341eb5266",
+                "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+                "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+                "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Meritech",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6737e55341eb5266",
+                "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+                "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+                "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "ICONIQ Growth",
+            "role": "Series D 领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ebb917baca53eaa8",
+                "quote": "Pigment raises $145 million in a Series D round led by ICONIQ Growth, with participation from Sandberg Bernthal Venture Partners, IVP, Meritech, Greenoaks, and Felix Capital.",
+                "source_content_hash": "655339259c9b7c8e",
+                "quote_hash": "4394f8e8e198f35e2d20e0a65491f2a6ed9fecabafecf67800aeda597c32ce07"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sandberg Bernthal Venture Partners",
+            "role": "Series D 参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ebb917baca53eaa8",
+                "quote": "Pigment raises $145 million in a Series D round led by ICONIQ Growth, with participation from Sandberg Bernthal Venture Partners, IVP, Meritech, Greenoaks, and Felix Capital.",
+                "source_content_hash": "655339259c9b7c8e",
+                "quote_hash": "4394f8e8e198f35e2d20e0a65491f2a6ed9fecabafecf67800aeda597c32ce07"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Felix Capital",
+            "role": "Series D 参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ebb917baca53eaa8",
+                "quote": "Pigment raises $145 million in a Series D round led by ICONIQ Growth, with participation from Sandberg Bernthal Venture Partners, IVP, Meritech, Greenoaks, and Felix Capital.",
+                "source_content_hash": "655339259c9b7c8e",
+                "quote_hash": "4394f8e8e198f35e2d20e0a65491f2a6ed9fecabafecf67800aeda597c32ce07"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6737e55341eb5266",
+            "quote": "PARIS, Oct. 21, 2026 /PRNewswire/ -- Pigment, the AI business planning and performance management platform, today announced a $250 million Series E funding round at a $2.3 billion valuation.",
+            "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+            "quote_hash": "d00c02accd84c75004e4eea1f993aeb88b6373cc24afab6a42286cab25073263"
+          },
+          {
+            "source_id": "FISRC-6737e55341eb5266",
+            "quote": "Pigment, the AI business planning and performance management platform, today announced a $250 million Series E funding round at a $2.3 billion valuation.",
+            "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+            "quote_hash": "a7b2552447c2405b7fcae2395a76ae62c9ca0a79c60a545635739c1af248bab5"
+          },
+          {
+            "source_id": "FISRC-1af1b6276b5a88de",
+            "quote": "Today, we announced our Series E funding round: $250M at a $2.3B valuation.",
+            "source_content_hash": "6dec55ed4c9031d7",
+            "quote_hash": "dc5e835ed32b80001de342327847b28c8bd43cda6b6771ea21cec025332fdb18"
+          }
+        ],
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$250 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-8a71cd4f6e7cafd2",
+            "round_original": "E轮",
+            "amount": "$250 million",
+            "announced_at": "2026-10-21",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6737e55341eb5266",
+                "quote": "PARIS, Oct. 21, 2026 /PRNewswire/ -- Pigment, the AI business planning and performance management platform, today announced a $250 million Series E funding round at a $2.3 billion valuation.",
+                "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+                "quote_hash": "d00c02accd84c75004e4eea1f993aeb88b6373cc24afab6a42286cab25073263"
+              },
+              {
+                "source_id": "FISRC-6737e55341eb5266",
+                "quote": "Pigment, the AI business planning and performance management platform, today announced a $250 million Series E funding round at a $2.3 billion valuation.",
+                "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+                "quote_hash": "a7b2552447c2405b7fcae2395a76ae62c9ca0a79c60a545635739c1af248bab5"
+              },
+              {
+                "source_id": "FISRC-1af1b6276b5a88de",
+                "quote": "Today, we announced our Series E funding round: $250M at a $2.3B valuation.",
+                "source_content_hash": "6dec55ed4c9031d7",
+                "quote_hash": "dc5e835ed32b80001de342327847b28c8bd43cda6b6771ea21cec025332fdb18"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Pigment 商业计划与绩效管理平台",
+          "description": "结合动态建模、自主 AI 智能体与直观界面，帮助财务、销售、供应链等团队进行预测、情景分析与决策。",
+          "target_customers": "大型企业及 AI 原生组织的财务、销售、供应链等业务团队",
+          "features": [
+            "动态建模",
+            "自主 AI 智能体",
+            "情景规划",
+            "跨部门 xP&A"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6737e55341eb5266",
+              "quote": "Pigment combines dynamic modeling with autonomous AI agents and an intuitive UX, to help teams make intelligent decisions with speed and clarity.",
+              "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+              "quote_hash": "0e56cecb26f67e1f7209cec00b861ed048e8ab3f0e3364657ea342e23bf19d2d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Graphite 计算引擎",
+          "description": "专有、专利申请中的计算引擎，支持数千个 AI 智能体与人员在同一受治理模型上并发工作，并可扩展至数千亿数据点。",
+          "target_customers": "运行大规模企业规划模型的 Pigment 客户",
+          "features": [
+            "确定性结果",
+            "完全可追溯",
+            "大规模并发",
+            "受治理模型"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6737e55341eb5266",
+              "quote": "Graphite already lets thousands of AI agents and people work on the same governed model at once, scaling to hundreds of billions of data points with deterministic, fully traceable results.",
+              "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+              "quote_hash": "78ef2f51a993172174c331191106332f08d82945cf958199dccc129f1ccb3d96"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Modeler Agent",
+          "description": "根据自然语言指令构建规划模型和自定义界面的 AI 智能体。",
+          "target_customers": "Pigment 平台业务用户",
+          "features": [
+            "自然语言建模",
+            "自定义界面生成"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1af1b6276b5a88de",
+              "quote": "led by the Modeler Agent, which builds planning models and custom interfaces from plain-language instructions",
+              "source_content_hash": "6dec55ed4c9031d7",
+              "quote_hash": "dec7456953664f3203374f556327178b54fb0849b5eafdae237e1800212e2034"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "L'Oréal",
+          "industry": "consumer_retail",
+          "use_case": "替换全球 95,000+ 员工的薪酬规划工具",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6737e55341eb5266",
+              "quote": "such as its recent selection by L'Oréal, who is replacing its salary planning tool for their 95,000+ employees globally by deploying Pigment",
+              "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+              "quote_hash": "41466c5505253a002660d70a0c0e655e4ba123178fb57dc7435e5ff9e51263e6"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Unilever",
+          "industry": "consumer_retail",
+          "use_case": "企业规划",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6737e55341eb5266",
+              "quote": "teams at companies like Unilever, Snowflake, and Anthropic use Pigment every day",
+              "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+              "quote_hash": "a7b9ffe20a4b09983c1be989773fa80b148364d5f1b80aded6caf43fa67e42ff"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Snowflake",
+          "industry": "",
+          "use_case": "企业规划",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6737e55341eb5266",
+              "quote": "teams at companies like Unilever, Snowflake, and Anthropic use Pigment every day",
+              "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+              "quote_hash": "a7b9ffe20a4b09983c1be989773fa80b148364d5f1b80aded6caf43fa67e42ff"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Anthropic",
+          "industry": "",
+          "use_case": "作为企业数据的推理运行时",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6737e55341eb5266",
+              "quote": "including Anthropic, ElevenLabs, and Uber, trust Pigment to serve as the reasoning runtime for their enterprise data",
+              "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+              "quote_hash": "7d5ddb10a69ce2ce21207d57799a3424798402df285ac126848b173428113161"
+            }
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Anaplan",
+          "product": "Anaplan 规划平台",
+          "scenario": "企业绩效管理与财务规划",
+          "target_customer": "大型企业",
+          "funding_summary": "",
+          "core_difference": "来源仅以 Dresner 特别报告形式对 Anaplan 与 Pigment 用户进行比较，未披露具体差异字段。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-904ae9724f58b739",
+              "quote": "This special report draws upon data gathered from Anaplan and Pigment users to provide an impartial comparison of these vendors within the broader market context.",
+              "source_content_hash": "c6769d80353fac99",
+              "quote_hash": "d5fb119e231b2a3c412ed8f2504ad2da883f18eff0b6434830d59ee6a4a3a949"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$250 million",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6737e55341eb5266",
+              "quote": "today announced a $250 million Series E funding round",
+              "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+              "quote_hash": "937876cd759d676a84b61df803e945844283c0e455cc0f8d22aae92885e41821"
+            }
+          ]
+        },
+        {
+          "label": "本轮估值",
+          "value": "$2.3 billion",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6737e55341eb5266",
+              "quote": "at a $2.3 billion valuation",
+              "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+              "quote_hash": "c616ca814707a5f58363ebe25e71e02dc82c29c0b01172185817592f2286a65b"
+            }
+          ]
+        },
+        {
+          "label": "年度经常性收入（ARR）",
+          "value": "超过 $100 million",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6737e55341eb5266",
+              "quote": "surpassed $100 million in Annual Recurring Revenue (ARR) earlier this year, once again doubling year-over-year",
+              "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+              "quote_hash": "5bb8fee4a3ddb88113de7638bd470e828932bead564e96913c4f8c7ebce41a30"
+            }
+          ]
+        },
+        {
+          "label": "新增指标由 Agent 创建占比",
+          "value": "85%",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6737e55341eb5266",
+              "quote": "today, 85% of new metrics in Pigment are created by an Agent",
+              "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+              "quote_hash": "ead44e1b427a7803cbfbf4a11f6c57f1e119637048b0706b2bb1cc8f37b74bf1"
+            }
+          ]
+        },
+        {
+          "label": "每周使用 AI 的账户占比",
+          "value": "84%",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1af1b6276b5a88de",
+              "quote": "84% of accounts use AI every week",
+              "source_content_hash": "6dec55ed4c9031d7",
+              "quote_hash": "19b411627f7fb80bd918e827307161c261ce1353da285aa0737463fd4a5d89b3"
+            }
+          ]
+        },
+        {
+          "label": "近九个月发布的 AI 能力数量",
+          "value": "超过 50 项",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1af1b6276b5a88de",
+              "quote": "Over the past nine months, it has shipped more than 50 AI capabilities",
+              "source_content_hash": "6dec55ed4c9031d7",
+              "quote_hash": "e6c92f2e608e8901e61f71ac23a34912528d16847df970ff23fc2197180c839b"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Eléonore Crespo 与 Romain Niccoli",
+          "quote": "Enterprise planning will change more in the next few years than it has in the last thirty.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6737e55341eb5266",
+              "quote": "Enterprise planning will change more in the next few years than it has in the last thirty.",
+              "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+              "quote_hash": "fda8c00faabab998b2e9b5ffbdf3d6c276e0d87ca50aefbf3dc8e5941b241a6c"
+            }
+          ]
+        },
+        {
+          "speaker": "Shannee Braun",
+          "quote": "Pigment has built that foundation with a single platform connecting finance, sales and workforce planning - and put AI agents to work on it, helping teams model, analyse and act in hours rather than months.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6737e55341eb5266",
+              "quote": "Pigment has built that foundation with a single platform connecting finance, sales and workforce planning - and put AI agents to work on it, helping teams model, analyse and act in hours rather than months.",
+              "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+              "quote_hash": "531bbf3793095d99a29bc25df974d67bd43e12c309ef3c36a39ad3a5f0a3c1c1"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Scaleup Europe Fund, managed by EQT",
+            "speaker": "Shannee Braun",
+            "speaker_role": "EQT 与 Scaleup Europe Fund 董事总经理",
+            "rationale": "Pigment 以单一平台连接财务、销售与人力规划，并将 AI 智能体用于规划工作流，使团队从数月缩短到数小时完成建模、分析与行动；其从巴黎成长为全球品类领导者，符合该基金支持欧洲科技公司的定位。",
+            "quote": "Pigment has built that foundation with a single platform connecting finance, sales and workforce planning - and put AI agents to work on it, helping teams model, analyse and act in hours rather than months.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6737e55341eb5266",
+                "quote": "Pigment has built that foundation with a single platform connecting finance, sales and workforce planning - and put AI agents to work on it, helping teams model, analyse and act in hours rather than months.",
+                "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+                "quote_hash": "531bbf3793095d99a29bc25df974d67bd43e12c309ef3c36a39ad3a5f0a3c1c1"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是 Pigment 能否把 AI 智能体从建模、分析扩展到端到端规划工作流，并以 Graphite 引擎支撑大规模、可追溯的企业规划。已验证信号包括 ARR 超过 1 亿美元且同比翻倍、85% 新增指标由 Agent 创建、84% 账户每周使用 AI，以及 L'Oréal 等大型企业部署。证据边界在于：来源未披露本轮累计融资额、客户合同金额或收入贡献，自主规划仍处于推进阶段。",
+        "validated_signals": [
+          "ARR 超过 1 亿美元，并再次实现同比翻倍",
+          "85% 的新增指标由 Agent 创建",
+          "84% 的账户每周使用 AI",
+          "近九个月发布超过 50 项 AI 能力",
+          "L'Oréal 选择 Pigment 替换其覆盖 95,000+ 员工的薪酬规划工具"
+        ],
+        "risks": [
+          "自主规划仍处于推进阶段，Planner Agent 被描述为“Next”，端到端执行能力尚待验证",
+          "来源未披露本轮累计融资额及客户合同金额，无法验证收入与订单归属",
+          "NVIDIA 投资被表述为“planned investment”，最终是否完成尚待确认"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "finance_accounting",
+          "data_analysis",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "AI 商业计划与绩效管理平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Pigment 能否把 AI 智能体从建模、分析扩展到端到端规划工作流，并以 Graphite 引擎支撑大规模、可追溯的企业规划。已验证信号包括 ARR 超过 1 亿美元且同比翻倍、85% 新增指标由 Agent 创建、84% 账户每周使用 AI，以及 L'Oréal 等大型企业部署。证据边界在于：来源未披露本轮累计融资额、客户合同金额或收入贡献，自主规划仍处于推进阶段。",
+          "evidence_signals": [
+            "ARR 超过 1 亿美元，并再次实现同比翻倍",
+            "85% 的新增指标由 Agent 创建",
+            "84% 的账户每周使用 AI",
+            "近九个月发布超过 50 项 AI 能力",
+            "L'Oréal 选择 Pigment 替换其覆盖 95,000+ 员工的薪酬规划工具"
+          ],
+          "risks": [
+            "自主规划仍处于推进阶段，Planner Agent 被描述为“Next”，端到端执行能力尚待验证",
+            "来源未披露本轮累计融资额及客户合同金额，无法验证收入与订单归属",
+            "NVIDIA 投资被表述为“planned investment”，最终是否完成尚待确认"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Pigment 商业计划与绩效管理平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Graphite 计算引擎",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Modeler Agent",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Eléonore Crespo",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Romain Niccoli",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Scaleup Europe Fund, managed by EQT",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "WIL (World Innovation Lab)",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Greenoaks",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "ICONIQ",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "IVP",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Meritech",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "ICONIQ Growth",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Sandberg Bernthal Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Felix Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "L'Oréal",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Unilever",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Snowflake",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Anthropic",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Anaplan",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-8a71cd4f6e7cafd2",
+          "date": "2026-10-21",
+          "title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+          "amount": "$250 million",
+          "source_refs": [
+            "SA-fc22949c08e67fda"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-6737e55341eb5266",
+          "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+          "title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+          "publisher": "www.prnewswire.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-24T00:20:09.383Z",
+          "content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+          "source_artifact_id": "SA-fc22949c08e67fda",
+          "raw_id": "RAW-95d29d86980afa84"
+        },
+        {
+          "source_id": "FISRC-ebb917baca53eaa8",
+          "source_url": "https://www.pigment.com/blog/series-d-announcement",
+          "title": "Pigment announces $145 million Series D funding round",
+          "publisher": "pigment.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-24T00:44:28.806Z",
+          "content_hash": "655339259c9b7c8e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-1af1b6276b5a88de",
+          "source_url": "https://www.pigment.com/blog/pigment-announces-250m-series-e-funding",
+          "title": "Fuel for the frontier: Pigment announces $250M Series E funding round",
+          "publisher": "pigment.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-24T00:44:28.877Z",
+          "content_hash": "6dec55ed4c9031d7",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-904ae9724f58b739",
+          "source_url": "https://www.pigment.com/recognition",
+          "title": "Pigment recognized by Industry Research and Customers",
+          "publisher": "pigment.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-24T00:44:31.972Z",
+          "content_hash": "c6769d80353fac99",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-24T00:44:49.438Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-24T00:44:49.438Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Graphite 计算引擎",
+            "Modeler Agent",
+            "Pigment 商业计划与绩效管理平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Eléonore Crespo",
+            "Romain Niccoli"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-8a71cd4f6e7cafd2"
+      ],
+      "aggregation": {
+        "key": "EN-7c6eefba80293ea4|series_e",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-69b488065c05e255",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-95b8b70ca29ab623",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-ea103ce3f64fea8e",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-fa58c17e7bde893c",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-59841d8e9da58cd4",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-2f238836c6ca4d3e",
+      "company_name": "BOB AI Holdings Corp.",
+      "status": "blocked",
+      "problems": [
+        "research_sources_insufficient"
+      ],
+      "queries": [
+        "\"BOB AI Holdings Corp.\" 2026 funding round investors",
+        "\"BOB AI Holdings Corp.\" $5.5 million funding announcement",
+        "\"BOB AI Holdings Corp.\" official product customers",
+        "\"BOB AI Holdings Corp.\" \"why we invested\"",
+        "\"BOB AI Holdings Corp.\" 2026 raises led by",
+        "\"BOB AI Holdings Corp.\" founders headquarters product"
+      ],
+      "attempts": [
+        {
+          "provider": "bing_rss",
+          "query": "\"BOB AI Holdings Corp.\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://bob.ibm.com/",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"BOB AI Holdings Corp.\" $5.5 million funding announcement",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"BOB AI Holdings Corp.\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"BOB AI Holdings Corp.\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"BOB AI Holdings Corp.\" 2026 raises led by",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"BOB AI Holdings Corp.\" founders headquarters product",
+          "status": "completed",
+          "count": 8
+        }
+      ],
+      "updated_at": "2026-10-24T03:52:21.015Z",
+      "deferral": {
+        "version": "FINANCING-RESEARCH-DEFERRAL-1",
+        "event_id": "EV-2f238836c6ca4d3e",
+        "status": "pending_verification",
+        "reason": "research_sources_insufficient",
+        "sources": [
+          {
+            "raw_id": "RAW-e03018cdc55d132c",
+            "source_ref": "SA-596a1d1e78e7e662",
+            "content_hash": "3c590ff8a84425d467816836cf1b9a0fd2e983b7c24149d1ffb30d52773e8586",
+            "source_url": "https://www.prnewswire.com/news-releases/miami-startup-bob-raises-5-5m-to-build-an-ai-powered-banking-platform-302918254.html"
+          }
+        ],
+        "input_hash": "1487f4afd80bf2e619b3f034c6406b73c12c5ea6a4fe83a30072e413dc7223be",
+        "next_action": "recover_existing_originals_and_complete_independent_research",
+        "fact_approval": false
+      }
+    },
+    {
+      "event_id": "EV-8a71cd4f6e7cafd2",
+      "company_name": "Pigment",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Pigment\" 2026 funding round investors",
+        "\"Pigment\" official product customers",
+        "\"Pigment\" \"why we invested\""
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Pigment\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Pigment\" $250 million funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Pigment\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://jobs.lever.co/pigment/a54d5e47-06c8-48f4-9c2e-3399ba91af59",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Pigment\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://medium.com/ada-ventures/why-we-invested-radient-matter-709b73b10b73",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.facebook.com/byooteeph/videos/why-we-invested-we-added-%F0%9D%97%A3%F0%9D%97%A5%F0%9D%97%A2-%F0%9D%97%AC%F0%9D%97%98%F0%9D%97%9F%F0%9D%97%9F%F0%9D%97%A2%F0%9D%97%AA-%F0%9D%97%9F%F0%9D%97%94%F0%9D%97%A6%F0%9D%97%98%F0%9D%97%A5-%F0%9D%97%AF%F0%9D%98%86-%F0%9D%97%95%F0%9D%98%86%F0%9D%97%BC%F0%9D%97%BC%F0%9D%98%81%F0%9D%97%B2%F0%9D%97%B2-because-we-wanted-our-docto/1055001713782827/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Pigment\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Pigment\" founders headquarters product",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-a68bb74a987a8df4",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-48cbd6592d009234",
+      "company_name": "Mach9",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Mach9\" 2026 funding round investors",
+        "\"Mach9\" $34 million funding announcement",
+        "\"Mach9\" \"why we invested\""
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Mach9\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Mach9\" $34 million funding announcement",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.instagram.com/p/Dezqt6BFKq1/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Mach9\" official product customers",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Mach9\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://x.com/BessemerVP/all",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Mach9\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Mach9\" founders headquarters product",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-5aa0077bd10ce3dc",
+      "company_name": "Blacksmith",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Blacksmith\" 2026 funding round investors",
+        "\"Blacksmith\" official product customers",
+        "\"Blacksmith\" \"why we invested\""
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Blacksmith\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://ai-techpark.com/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Blacksmith\" $66M funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Blacksmith\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://blacksmithint.com/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.facebook.com/groups/2182983632094467/posts/2446035345789293/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.trustpilot.com/review/www.blacksmith-store.com?page=3",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.youtube.com/watch?v=EIXmrRRM6D0",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Blacksmith\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Blacksmith\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Blacksmith\" founders headquarters product",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-72d09299a334d0d9",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-fe4e2cdf3f2a5075",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-9dbf7a6b84a4aa21",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-c66ddcd78c89a643",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-353261ac722ca40b",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-9fc0a31d4c3565a9",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-4746cc586107aaf7",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-0d7fe2f7274f7448",
+      "company_name": "Cognitive Credit",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Cognitive Credit\" 2026 funding round investors",
+        "\"Cognitive Credit\" \"why we invested\""
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Cognitive Credit\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Cognitive Credit\" €35.73 million funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Cognitive Credit\" official product customers",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Cognitive Credit\" \"why we invested\"",
+          "status": "empty",
+          "count": 0
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Cognitive Credit\" \"why we invested\"",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Cognitive Credit\" \"why we invested\"",
+          "status": "quota_exhausted",
+          "http_status": 402,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"Cognitive Credit\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Cognitive Credit\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Cognitive Credit\" founders headquarters product",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-741856a05543c233",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-5f298468c125d834",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-c964f7646ad88c1e",
+      "company_name": "",
+      "status": "pending",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": ""
+    },
+    {
+      "event_id": "EV-cd3cf94d0f65aea1",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-6e22785050fb82ff",
+      "company_name": "Hunar.AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Hunar.AI\" 2026 funding round investors",
+        "\"Hunar.AI\" \"why we invested\""
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Hunar.AI\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.instagram.com/p/DewhMQ8DSnW/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.facebook.com/yourstorycom/posts/hunarai-has-raised-40-crore-in-a-series-a-round-led-by-blume-ventures-with-parti/1616663020495666/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Hunar.AI\" Rs 40 crore funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Hunar.AI\" official product customers",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Hunar.AI\" \"why we invested\"",
+          "status": "completed",
+          "count": 3
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hunar.AI\" \"why we invested\"",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hunar.AI\" \"why we invested\"",
+          "status": "quota_exhausted",
+          "http_status": 402,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"Hunar.AI\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://roundos.ai/funding/deals/goodweek-seed-2026-10-15",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.linkedin.com/posts/titan-capital-vc_titancapital-ai-saas-activity-7356556853574557696-6zKa",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Hunar.AI\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Hunar.AI\" founders headquarters product",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-51f0958b144e699a",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-511f7a03673f6cce",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    },
+    {
+      "event_id": "EV-c1832bf5603ccc52",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-24T03:52:21.015Z"
+    }
+  ]
+}

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-12",
-    "latest_disclosed_at": "2026-10-07",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
-      "co_lead": 2,
+      "co_lead": 3,
       "historical_or_ambiguous": 1,
       "lead": 1,
       "participant": 2
@@ -99,6 +99,11 @@
         "name": "Healthleap"
       },
       {
+        "entity_id": "EN-a2b8357fddf7aa7d",
+        "canonical_entity_id": "",
+        "name": "Mach9"
+      },
+      {
         "entity_id": "EN-1c5483264189feef",
         "canonical_entity_id": "",
         "name": "Onyx"
@@ -110,6 +115,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-571664cbb29d7f57",
+        "funding_insight_id": "FI-a200d5b1af02ddc5",
+        "event_ids": [
+          "EV-48cbd6592d009234"
+        ],
+        "company_entity_id": "EN-a2b8357fddf7aa7d",
+        "company_canonical_entity_id": "",
+        "company_name": "Mach9",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$34 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 34000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3400 万美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-2115ba1066fba41f",
+            "source_url": "https://www.prnewswire.com/news-releases/mach9-raises-34m-series-a-to-bring-civil-engineering-into-the-ai-era-302915153.html",
+            "source_title": "Mach9 完成 3400 万美元 A 轮融资，将土木工程带入 AI 时代",
+            "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+            "quote": "a $34 million Series A co-led by First Round Capital and Bessemer Venture Partners",
+            "quote_hash": "981eb537c1209c249d3ea00482dce68d2e5a3035546bf321a44970b75acebf3a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a0b096e94a8cf47a",
         "funding_insight_id": "FI-316cf5aec37590a1",
@@ -345,6 +390,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-2115ba1066fba41f",
+        "source_url": "https://www.prnewswire.com/news-releases/mach9-raises-34m-series-a-to-bring-civil-engineering-into-the-ai-era-302915153.html",
+        "source_title": "Mach9 完成 3400 万美元 A 轮融资，将土木工程带入 AI 时代",
+        "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+        "quote": "a $34 million Series A co-led by First Round Capital and Bessemer Venture Partners",
+        "quote_hash": "981eb537c1209c249d3ea00482dce68d2e5a3035546bf321a44970b75acebf3a"
+      },
+      {
         "source_id": "FISRC-576f8703e59d7c0a",
         "source_url": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
         "source_title": "Healthleap 融资 3800 万美元，用于其可标记可能需要进一步关注的医院患者的 AI",
@@ -440,16 +493,16 @@
           "source_id": "firstround_who"
         },
         {
+          "description": "融资来源记录：Mach9 · A轮 · 2026-10-21 · 本轮联合领投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2115ba1066fba41f"
+        },
+        {
           "description": "融资来源记录：Healthleap · 多轮融资 · 2026-10-07 · 本轮联合领投 · $38 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-576f8703e59d7c0a"
         },
         {
           "description": "融资来源记录：Flai · A轮 · 2026-10-06 · 本轮参投 · $27 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c8bf3839b23b0657"
-        },
-        {
-          "description": "融资来源记录：Ellis AI · 种子轮 · 2026-07-31 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a8e6dd6c34cd416a"
         }
       ],
       "contacts": [
@@ -515,6 +568,14 @@
           "quote_hash": "761f05201de282f24f4ba605b1a81e7a2c3e67b38526412e93069c51490e4cb0"
         },
         {
+          "source_id": "FISRC-2115ba1066fba41f",
+          "source_url": "https://www.prnewswire.com/news-releases/mach9-raises-34m-series-a-to-bring-civil-engineering-into-the-ai-era-302915153.html",
+          "source_title": "Mach9 完成 3400 万美元 A 轮融资，将土木工程带入 AI 时代",
+          "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+          "quote": "a $34 million Series A co-led by First Round Capital and Bessemer Venture Partners",
+          "quote_hash": "981eb537c1209c249d3ea00482dce68d2e5a3035546bf321a44970b75acebf3a"
+        },
+        {
           "source_id": "FISRC-576f8703e59d7c0a",
           "source_url": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
           "source_title": "Healthleap 融资 3800 万美元，用于其可标记可能需要进一步关注的医院患者的 AI",
@@ -529,14 +590,6 @@
           "source_content_hash": "c53320a25185219c",
           "quote": "We're excited to announce that Flai has raised a $27 million Series A led by Base10 Partners, with participation from Toyota Ventures, First Round Capital, Y Combinator, The Friedkin Group, and Findlay Automotive Group.",
           "quote_hash": "27712d3c2c719515c0cdaf37039f50ef13095b51d6dc774c8849eca9f25d94c9"
-        },
-        {
-          "source_id": "FISRC-a8e6dd6c34cd416a",
-          "source_url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/",
-          "source_title": "连续创业者Ryan Williams为面向私募信贷经理的AI初创公司筹集1000万美元种子资金",
-          "source_content_hash": "dd828ac38a132ac1",
-          "quote": "Ellis AI announced Thursday its emergence from stealth with $10 million in seed funding from investors including First Round Capital, 645 Ventures, Harlem Capital, Khosla Ventures, Thrive Capital, Slow Capital, Kearny Jackson, and Ariel Alternatives CEO Mellody Hobson.",
-          "quote_hash": "eab59ac0f81b233b7afca4c7418c7f27f758e3941c5b036a0a3aaacc91fd0d58"
         }
       ],
       "last_verified_at": "2026-09-26",

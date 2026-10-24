@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
+    "current_round_count": 9,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 8,
+    "portfolio_company_count": 9,
     "market_regions": [
       "GLOBAL"
     ],
@@ -74,7 +74,7 @@
     "role_counts": {
       "co_lead": 3,
       "lead": 2,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "multi_round",
@@ -89,6 +89,11 @@
         "entity_id": "EN-6d478f33a9e3cba3",
         "canonical_entity_id": "",
         "name": "BigHat Biosciences"
+      },
+      {
+        "entity_id": "EN-8eae6c54657e94be",
+        "canonical_entity_id": "",
+        "name": "Blacksmith"
       },
       {
         "entity_id": "EN-fa64e74622d0a95a",
@@ -127,6 +132,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-acac5ffa3903eb6a",
+        "funding_insight_id": "FI-2aa299d42ca42b11",
+        "event_ids": [
+          "EV-5aa0077bd10ce3dc"
+        ],
+        "company_entity_id": "EN-8eae6c54657e94be",
+        "company_canonical_entity_id": "",
+        "company_name": "Blacksmith",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$66M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 66000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6600 万美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-49f5b4d8c68adbdc",
+            "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+            "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+            "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+            "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+            "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+          }
+        ]
+      },
       {
         "activity_id": "IA-67deb754732b93ab",
         "funding_insight_id": "FI-29972434b39dd262",
@@ -450,6 +495,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-49f5b4d8c68adbdc",
+        "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+        "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+        "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+        "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+        "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+      },
+      {
         "source_id": "FISRC-0b9a2de412bfecea",
         "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
         "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
@@ -552,16 +605,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-49f5b4d8c68adbdc"
+        },
+        {
           "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0b9a2de412bfecea"
         },
         {
           "description": "融资来源记录：Clockwork.io · 轮次未披露 · 2026-10-05 · 本轮联合领投 · $31M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-bffca0091f22129f"
-        },
-        {
-          "description": "融资来源记录：CScale · C轮 · 2026-09-30 · 本轮联合领投 · $145 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-98f84ad840508b39"
         }
       ],
       "contacts": [
@@ -609,6 +662,14 @@
           "quote_hash": "4526d04e278c97b0e375c17c63dc63c1a15c030cb464cfdce3e36d65487f12fc"
         },
         {
+          "source_id": "FISRC-49f5b4d8c68adbdc",
+          "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
+          "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
+          "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
+          "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
+          "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
+        },
+        {
           "source_id": "FISRC-0b9a2de412bfecea",
           "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
           "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
@@ -623,14 +684,6 @@
           "source_content_hash": "e22fa368aac97459de6e31993e95c70d6b18d275b6c9a1c777d51a5f414caf25",
           "quote": "The round was co-led by Premji Invest, Wing Venture Capital, and Seligman Ventures, with participation from existing investors NEA and e& Capital.",
           "quote_hash": "4ddcf70543125357cdea74b2a8fd21735326f6efe40df67d153b70c69e08afe1"
-        },
-        {
-          "source_id": "FISRC-98f84ad840508b39",
-          "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
-          "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
-          "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
-          "quote": "The round was co-led by Atreides Management, Valor Equity Partners, and Premji Invest.",
-          "quote_hash": "60c86cc928a83dca9a72d7c77b5efc8d4b740c887bb5858726dabac4d7d4a85d"
         }
       ],
       "identity_status": "verified",

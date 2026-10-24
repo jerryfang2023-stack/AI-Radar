@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-23T03:44:52.731Z",
-    "latestDataDate": "2026-10-23",
-    "currentDate": "2026-10-23",
-    "eventCount": 4244,
+    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "latestDataDate": "2026-10-24",
+    "currentDate": "2026-10-24",
+    "eventCount": 4256,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-19",
-    "latest_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
+      "series_a",
       "series_d",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-a2b8357fddf7aa7d",
+        "canonical_entity_id": "",
+        "name": "Mach9"
+      },
       {
         "entity_id": "EN-586937124e151c46",
         "canonical_entity_id": "EN-586937124e151c46",
@@ -91,6 +97,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ae79864f7fab8597",
+        "funding_insight_id": "FI-a200d5b1af02ddc5",
+        "event_ids": [
+          "EV-48cbd6592d009234"
+        ],
+        "company_entity_id": "EN-a2b8357fddf7aa7d",
+        "company_canonical_entity_id": "",
+        "company_name": "Mach9",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$34 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 34000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3400 万美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2115ba1066fba41f",
+            "source_url": "https://www.prnewswire.com/news-releases/mach9-raises-34m-series-a-to-bring-civil-engineering-into-the-ai-era-302915153.html",
+            "source_title": "Mach9 完成 3400 万美元 A 轮融资，将土木工程带入 AI 时代",
+            "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+            "quote": "with participation from Prudence and continued participation from Quiet Capital",
+            "quote_hash": "70e2ea692f72791016f36cfc6f744f7871fbed6484f2123892d59b74b3839d27"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3b6812d467439509",
         "funding_insight_id": "FI-cbf93da745326644",
@@ -175,6 +221,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-2115ba1066fba41f",
+        "source_url": "https://www.prnewswire.com/news-releases/mach9-raises-34m-series-a-to-bring-civil-engineering-into-the-ai-era-302915153.html",
+        "source_title": "Mach9 完成 3400 万美元 A 轮融资，将土木工程带入 AI 时代",
+        "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+        "quote": "with participation from Prudence and continued participation from Quiet Capital",
+        "quote_hash": "70e2ea692f72791016f36cfc6f744f7871fbed6484f2123892d59b74b3839d27"
+      },
+      {
         "source_id": "FISRC-92bdc04603fa5ff2",
         "source_url": "https://multiples.vc/private-comps/suno",
         "source_title": "Suno Revenue, Valuation, Funding & Investors | Multiples",
@@ -214,6 +268,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Mach9 · A轮 · 2026-10-21 · 本轮参投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2115ba1066fba41f"
+        },
+        {
           "description": "融资来源记录：Suno · D轮 · 2026-06-03 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-92bdc04603fa5ff2"
         },
@@ -239,6 +297,14 @@
           "source_content_hash": "b2784c78a48dd18695f8737c6c379d00e9edf743818436a1fe81c8848b86cce6",
           "quote": "This Website is maintained and operated by Quiet Capital Management LLC.",
           "quote_hash": "ac00ada87d14155ac4cb8d020a1ae4da9cd0e716d598adb9d9f4933e89273ff4"
+        },
+        {
+          "source_id": "FISRC-2115ba1066fba41f",
+          "source_url": "https://www.prnewswire.com/news-releases/mach9-raises-34m-series-a-to-bring-civil-engineering-into-the-ai-era-302915153.html",
+          "source_title": "Mach9 完成 3400 万美元 A 轮融资，将土木工程带入 AI 时代",
+          "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
+          "quote": "with participation from Prudence and continued participation from Quiet Capital",
+          "quote_hash": "70e2ea692f72791016f36cfc6f744f7871fbed6484f2123892d59b74b3839d27"
         },
         {
           "source_id": "FISRC-92bdc04603fa5ff2",
