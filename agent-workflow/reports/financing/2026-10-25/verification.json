@@ -38787,18 +38787,63 @@
     },
     "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima": {
       "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
-      "evidence_source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
       "origin_date": "2026-10-25",
+      "rounds": 0,
       "title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+      "checks": {
+        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
+        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
+        "date": "accepted_by_existing_gates_not_full_disclosure",
+        "amount": "accepted_by_existing_gates_not_full_disclosure",
+        "round": "accepted_by_existing_gates_not_full_disclosure",
+        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
+      },
+      "status": "verified",
+      "reason": "existing_gates_reconciled",
+      "collection_reconciled": true,
+      "collection_date": "2026-10-25",
+      "content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
       "raw_ids": [
         "RAW-7591d7bb5aa46d2c"
       ],
-      "content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
-      "status": "pending",
-      "reason": "no_accepted_financing_event_manual_review_required",
+      "evidence_source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+      "alternate_source": false,
+      "resumed_fact_review": true,
+      "followup": {
+        "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+        "origin_date": "2026-10-25",
+        "rounds": 1,
+        "title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+        "checks": {
+          "company_identity": "pending",
+          "ai_relevance": "pending",
+          "date": "pending",
+          "amount": "pending",
+          "round": "pending",
+          "deduplication": "pending"
+        },
+        "status": "pending",
+        "reason": "no_accepted_financing_event_manual_review_required",
+        "collection_reconciled": true,
+        "collection_date": "2026-10-25",
+        "content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+        "raw_ids": [
+          "RAW-7591d7bb5aa46d2c"
+        ],
+        "evidence_source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+        "alternate_source": false,
+        "resumed_fact_review": true,
+        "last_processed_date": "2026-10-25",
+        "next_due_date": "2026-10-26",
+        "owner": "responsible_financing_reviewer",
+        "next_action": "next_existing_daily_verify",
+        "review_stage": "fact_conflict_review",
+        "last_fact_review_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+        "fact_review_completed": true
+      },
       "research_deferral": {
         "version": "FINANCING-RESEARCH-DEFERRAL-1",
-        "event_id": "EV-a9a656d5f74c391a",
+        "event_id": "EV-04fb7521fa0fe4a9",
         "status": "pending_verification",
         "reason": "research_sources_insufficient",
         "sources": [
@@ -38809,10 +38854,58 @@
             "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima"
           }
         ],
-        "input_hash": "dc2f4bcf0a2fdb45c3d29ee5df734710615e64ed672606e4a6b5ab0d5d388dd9",
+        "input_hash": "0991a2e0af397b3d713d49f5424662745a883afe7fe8efd2b79d28091e667ce7",
         "next_action": "recover_existing_originals_and_complete_independent_research",
         "fact_approval": false
       },
+      "fact_review_completed": true,
+      "unresolved_event_ids": [],
+      "qa_hints": [],
+      "pending_reasons": [
+        "research_auto_published"
+      ],
+      "results": [
+        {
+          "card_id": "FI-cd7fc3e80ca1a258",
+          "event_id": "EV-04fb7521fa0fe4a9",
+          "accepted": true,
+          "scope": "included",
+          "reason": "existing_gates_passed",
+          "company": "元示科技",
+          "announced_at": "2026-10-22",
+          "amount": "近亿元人民币",
+          "round": "多轮融资",
+          "disclosure_status": "disclosed",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-27c3776c7b3aedc0",
+              "quote_hash": "8797326875d5481e088ba7b1860efb7f0a4e7a104e7fa056d8c874c70cc9e44a"
+            },
+            {
+              "source_id": "FISRC-c87e5ef760ceb82c",
+              "quote_hash": "229ce7fc643df4e430e59e12d0ccaaffd93dc834c8ddaab3c17dee213f3d3df5"
+            },
+            {
+              "source_id": "FISRC-27c3776c7b3aedc0",
+              "quote_hash": "51fa68ca8df868483aa77275c4e271a857dbb82ab6517a6af91f1df6886c6e2e"
+            },
+            {
+              "source_id": "FISRC-c87e5ef760ceb82c",
+              "quote_hash": "ba1117c06947314c21bfb224ce4e1a20b25b26d79785fbbcfd5dfafb7d3c91fb"
+            }
+          ]
+        }
+      ],
+      "review_refs": [
+        "01-SiteV2/content/11-databases/data-center-v4/2026-10-25/qa-queue.json",
+        "01-SiteV2/content/12-applications/funding-insights/2026-10-25.json"
+      ]
+    },
+    "https://www.163.com/dy/article/LA1DEAL305118DFD.html": {
+      "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
+      "origin_date": "2026-10-25",
+      "rounds": 0,
+      "title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
       "checks": {
         "company_identity": "pending",
         "ai_relevance": "pending",
@@ -38821,10 +38914,69 @@
         "round": "pending",
         "deduplication": "pending"
       },
+      "status": "pending",
+      "reason": "no_accepted_financing_event_manual_review_required",
+      "collection_reconciled": true,
+      "collection_date": "2026-10-25",
+      "content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
+      "raw_ids": [
+        "RAW-d0430b5dc520626b"
+      ],
+      "evidence_source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
       "alternate_source": false,
+      "resumed_fact_review": true,
+      "followup": {
+        "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
+        "origin_date": "2026-10-25",
+        "rounds": 1,
+        "title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
+        "checks": {
+          "company_identity": "pending",
+          "ai_relevance": "pending",
+          "date": "pending",
+          "amount": "pending",
+          "round": "pending",
+          "deduplication": "pending"
+        },
+        "status": "pending",
+        "reason": "no_accepted_financing_event_manual_review_required",
+        "collection_reconciled": true,
+        "collection_date": "2026-10-25",
+        "content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
+        "raw_ids": [
+          "RAW-d0430b5dc520626b"
+        ],
+        "evidence_source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
+        "alternate_source": false,
+        "resumed_fact_review": true,
+        "last_processed_date": "2026-10-25",
+        "next_due_date": "2026-10-26",
+        "owner": "responsible_financing_reviewer",
+        "next_action": "next_existing_daily_verify",
+        "review_stage": "fact_conflict_review",
+        "last_fact_review_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
+        "fact_review_completed": true
+      },
+      "research_deferral": {
+        "version": "FINANCING-RESEARCH-DEFERRAL-1",
+        "event_id": "EV-c4491ccfef9e3d73",
+        "status": "pending_verification",
+        "reason": "research_sources_insufficient",
+        "sources": [
+          {
+            "raw_id": "RAW-d0430b5dc520626b",
+            "source_ref": "SA-7fdd4e005fa35409",
+            "content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
+            "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html"
+          }
+        ],
+        "input_hash": "323a90a0e1fedce8e27b0afc9f2714df588f48d7f1fdb6f5cc86198e6d541fbf",
+        "next_action": "recover_existing_originals_and_complete_independent_research",
+        "fact_approval": false
+      },
       "fact_review_completed": true,
       "unresolved_event_ids": [
-        "EV-a9a656d5f74c391a"
+        "EV-c4491ccfef9e3d73"
       ],
       "qa_hints": [],
       "pending_reasons": [
@@ -38840,36 +38992,36 @@
   "publication_holds": {
     "added": 0,
     "evidence_followup": 0,
-    "responsible_review": 63
+    "responsible_review": 64
   },
   "followup_queue": {
-    "pending": 229,
-    "needs_attention": 607
+    "pending": 227,
+    "needs_attention": 610
   },
   "review_budget": {
-    "leads": 904,
+    "leads": 906,
     "capture_requests": 1452,
     "search_requests": 647,
     "capacity": {
-      "captures": 6509,
-      "searches": 13018
+      "captures": 6524,
+      "searches": 13047
     }
   },
   "review_queue": {
-    "total": 836,
+    "total": 837,
     "stages": {
       "evidence_review": 85,
-      "fact_review": 74,
+      "fact_review": 69,
       "needs_original": 390,
       "source_identity_review": 272,
-      "fact_conflict_review": 15
+      "fact_conflict_review": 21
     }
   },
   "prepared": true,
   "status": "completed",
   "counts": {
-    "total": 492,
-    "verified": 1,
+    "total": 493,
+    "verified": 2,
     "excluded": 68,
     "reviewed": 0,
     "pending": 423

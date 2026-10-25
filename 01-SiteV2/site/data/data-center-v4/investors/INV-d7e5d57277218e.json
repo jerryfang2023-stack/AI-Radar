@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "generatedAt": "2026-10-25T02:10:15.815Z",
     "latestDataDate": "2026-10-25",
     "currentDate": "2026-10-25",
     "eventCount": 4268,
@@ -64,24 +64,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-25",
-    "latest_disclosed_at": "2026-06-30",
+    "latest_disclosed_at": "2026-10-20",
     "role_counts": {
-      "historical_or_ambiguous": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-ffad923c7afc100d",
+        "canonical_entity_id": "",
+        "name": "Daytona"
+      },
       {
         "entity_id": "EN-5c178682f5573d29",
         "canonical_entity_id": "",
@@ -94,6 +99,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d6472bea978984a9",
+        "funding_insight_id": "FI-8e1f21a79a3f480d",
+        "event_ids": [
+          "EV-aab9f971ed5a99b4"
+        ],
+        "company_entity_id": "EN-ffad923c7afc100d",
+        "company_canonical_entity_id": "",
+        "company_name": "Daytona",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$60M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-10-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投（既有投资方）",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5dadf72976d5866",
+            "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
+            "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
+            "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+            "quote": "According to Daytona, E2VC is now in its fourth round with the company, Upfront Ventures in its third, and Pace Capital and FirstMark in their second.",
+            "quote_hash": "ea968ce8dd886dfd4194b2c26f50cefa2c700817a12d11e737a3078978bd0e68"
+          }
+        ]
+      },
       {
         "activity_id": "IA-020c679b683e299f",
         "funding_insight_id": "FI-12131c1300a2d205",
@@ -173,41 +218,17 @@
             "quote_hash": "48c54af8cdccc275a87d59e0f5a844d471e259eac73584eaa7f3916d62a5e250"
           }
         ]
-      },
-      {
-        "activity_id": "IA-60e80ce099f8bf13",
-        "funding_insight_id": "FI-889913dde88c0186",
-        "event_ids": [
-          "EV-aab9f971ed5a99b4"
-        ],
-        "company_entity_id": "EN-ffad923c7afc100d",
-        "company_canonical_entity_id": "",
-        "company_name": "Daytona",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方，本轮第四轮参与",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-c5dadf72976d5866",
-            "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
-            "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
-            "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
-            "quote": "According to Daytona, E2VC is now in its fourth round with the company, Upfront Ventures in its third, and Pace Capital and FirstMark in their second.",
-            "quote_hash": "ea968ce8dd886dfd4194b2c26f50cefa2c700817a12d11e737a3078978bd0e68"
-          }
-        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-c5dadf72976d5866",
+        "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
+        "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
+        "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+        "quote": "According to Daytona, E2VC is now in its fourth round with the company, Upfront Ventures in its third, and Pace Capital and FirstMark in their second.",
+        "quote_hash": "ea968ce8dd886dfd4194b2c26f50cefa2c700817a12d11e737a3078978bd0e68"
+      },
       {
         "source_id": "FISRC-907e4297862ddd8c",
         "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
@@ -223,14 +244,6 @@
         "source_content_hash": "62f48a67236f5d86",
         "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels.",
         "quote_hash": "48c54af8cdccc275a87d59e0f5a844d471e259eac73584eaa7f3916d62a5e250"
-      },
-      {
-        "source_id": "FISRC-c5dadf72976d5866",
-        "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
-        "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
-        "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
-        "quote": "According to Daytona, E2VC is now in its fourth round with the company, Upfront Ventures in its third, and Pace Capital and FirstMark in their second.",
-        "quote_hash": "ea968ce8dd886dfd4194b2c26f50cefa2c700817a12d11e737a3078978bd0e68"
       }
     ],
     "public_profile": {
@@ -258,7 +271,7 @@
           "source_id": "FISRC-1913db3e18347025"
         },
         {
-          "description": "融资来源记录：Daytona · 历史轮次未披露 · 既有投资方，本轮第四轮参与。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：Daytona · B轮 · 2026-10-20 · 本轮参投（既有投资方） · $60M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c5dadf72976d5866"
         }
       ],

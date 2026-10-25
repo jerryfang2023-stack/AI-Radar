@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "generatedAt": "2026-10-25T02:10:15.815Z",
     "latestDataDate": "2026-10-25",
     "currentDate": "2026-10-25",
     "eventCount": 4268,
@@ -62,21 +62,20 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 12,
+    "current_round_count": 11,
     "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 9,
+    "portfolio_company_count": 8,
     "market_regions": [
-      "CN",
-      "GLOBAL"
+      "CN"
     ],
     "china_market_activity_count": 11,
     "china_market_company_count": 8,
     "first_disclosed_at": "2026-01-26",
-    "latest_disclosed_at": "2026-10-24",
+    "latest_disclosed_at": "2026-10-22",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 5,
-      "participant": 10
+      "participant": 9
     },
     "round_codes": [
       "angel",
@@ -127,54 +126,9 @@
         "entity_id": "EN-2c348893efb2316e",
         "canonical_entity_id": "EN-2c348893efb2316e",
         "name": "StepFun"
-      },
-      {
-        "entity_id": "EN-5a28a1a99a417ba5",
-        "canonical_entity_id": "",
-        "name": "Today AI"
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-db5bbc1b581f6d5f",
-        "funding_insight_id": "FI-0178e4293f10ac23",
-        "event_ids": [
-          "EV-aabe55266bd52958"
-        ],
-        "company_entity_id": "EN-5a28a1a99a417ba5",
-        "company_canonical_entity_id": "",
-        "company_name": "Today AI",
-        "round": "其他融资",
-        "round_code": "other",
-        "round_original": "首轮",
-        "amount_original": "超过2亿美金",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 200000000,
-          "min_value": 200000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 2 亿美元"
-        },
-        "announced_at": "2026-10-24",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-3787040a54f790a2",
-            "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
-            "source_title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
-            "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-            "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
-            "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
-          }
-        ]
-      },
       {
         "activity_id": "IA-62c8f61b5c5c499d",
         "funding_insight_id": "FI-da29060a41575ad7",
@@ -797,14 +751,6 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-3787040a54f790a2",
-        "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
-        "source_title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
-        "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-        "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
-        "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
-      },
-      {
         "source_id": "FISRC-2346329522885331",
         "source_url": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
         "source_title": "DeepSeek 融资 150 亿美元，挑战美国领先实验室",
@@ -1000,10 +946,6 @@
           "source_id": "tencent_investment_strategy_2020"
         },
         {
-          "description": "融资来源记录：Today AI · 其他融资 · 2026-10-24 · 本轮参投 · 超过2亿美金。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3787040a54f790a2"
-        },
-        {
           "description": "融资来源记录：DeepSeek · 轮次未披露 · 2026-10-22 · 本轮参投 · $15 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2346329522885331"
         },
@@ -1077,14 +1019,6 @@
           "quote_hash": "de3feafcd81368d41be78c53253a89b9ddd2c9c32424cf40089015550080528c"
         },
         {
-          "source_id": "FISRC-3787040a54f790a2",
-          "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
-          "source_title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
-          "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-          "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
-          "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
-        },
-        {
           "source_id": "FISRC-2346329522885331",
           "source_url": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
           "source_title": "DeepSeek 融资 150 亿美元，挑战美国领先实验室",
@@ -1099,6 +1033,14 @@
           "source_content_hash": "055ec97a57c5a5c2cc04b1f21f35d6d65aa66daf51ea86d8e69c0ec17436eb68",
           "quote": "新增股东包括 XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
           "quote_hash": "954502a15ae1260ff16f8e6d5d1e6f7f890e5f94b7757d266a568bef0d11140c"
+        },
+        {
+          "source_id": "FISRC-3f68d59028d2ba98",
+          "source_url": "https://www.chinaventure.com.cn/news/111-20261009-393542.html",
+          "source_title": "首发｜从“没人相信”到4亿元新融资：刘家家定义脑科学Infra",
+          "source_content_hash": "4485c3ef38069f76",
+          "quote": "新增股东包括XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
+          "quote_hash": "65792301313d171788af374c8446a5fef8d19ca4ff524b6f105bfd324e2d99b8"
         }
       ],
       "last_verified_at": "2026-09-25",

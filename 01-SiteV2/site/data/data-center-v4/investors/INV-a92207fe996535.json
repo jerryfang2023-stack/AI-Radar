@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "generatedAt": "2026-10-25T02:10:15.815Z",
     "latestDataDate": "2026-10-25",
     "currentDate": "2026-10-25",
     "eventCount": 4268,
@@ -62,21 +62,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-09-14",
-    "latest_disclosed_at": "2026-09-14",
+    "latest_disclosed_at": "2026-10-22",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
+      "multi_round",
       "series_b"
     ],
     "portfolio_companies": [
@@ -84,9 +86,54 @@
         "entity_id": "EN-9ec8c6ad047edf5a",
         "canonical_entity_id": "",
         "name": "威邦震电"
+      },
+      {
+        "entity_id": "EN-8955b63e8cdae8ac",
+        "canonical_entity_id": "",
+        "name": "元示科技"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5b0b87d6f42bbc29",
+        "funding_insight_id": "FI-ddefd4a9f0ffb2f4",
+        "event_ids": [
+          "EV-04fb7521fa0fe4a9"
+        ],
+        "company_entity_id": "EN-8955b63e8cdae8ac",
+        "company_canonical_entity_id": "",
+        "company_name": "元示科技",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "天使轮及天使+轮（多轮融资合计）",
+        "amount_original": "近亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-10-22",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "天使+轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-27c3776c7b3aedc0",
+            "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+            "source_title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+            "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+            "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+            "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
+          }
+        ]
+      },
       {
         "activity_id": "IA-30a36e15fb57b6f1",
         "funding_insight_id": "FI-64b8247175959404",
@@ -163,6 +210,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-27c3776c7b3aedc0",
+        "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+        "source_title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+        "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+        "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+        "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
+      },
+      {
         "source_id": "FISRC-f9c8fdd671d3e193",
         "source_url": "https://elsewhere.news/zh/daltonventure/bai-for-sciencenews",
         "source_title": "威邦震电完成近亿元B轮融资，道彤投资领投，推进工业检测、临床及AI for Science商业化进程｜道彤News",
@@ -203,6 +258,10 @@
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：元示科技 · 多轮融资 · 2026-10-22 · 天使+轮参投 · 近亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-27c3776c7b3aedc0"
+        },
         {
           "description": "融资来源记录：威邦震电 · B轮 · 2026-09-14 · 本轮领投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f9c8fdd671d3e193"
@@ -245,6 +304,14 @@
           "source_content_hash": "fa98197c11218b11b2bbe366e786fc7e95cc0854f74558d1d70cdb0ec94bde2f",
           "quote": "核心团队均出自医疗健康产业",
           "quote_hash": "fdafb27ac3d4c063530b63c52ff855ad8e073592df896e95c03349971d6d239d"
+        },
+        {
+          "source_id": "FISRC-27c3776c7b3aedc0",
+          "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+          "source_title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+          "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+          "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+          "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
         },
         {
           "source_id": "FISRC-f9c8fdd671d3e193",

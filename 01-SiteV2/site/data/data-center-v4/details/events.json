@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "generatedAt": "2026-10-25T02:10:15.815Z",
     "latestDataDate": "2026-10-25",
     "currentDate": "2026-10-25",
     "eventCount": 4268,
@@ -54,72 +54,6 @@
     ]
   },
   "events": [
-    {
-      "id": "EV-aabe55266bd52958",
-      "dataDate": "2026-10-25",
-      "date": "2026-10-24",
-      "updatedDate": "2026-10-24",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
-      "originalTitle": "",
-      "subject": "拿到2亿美金",
-      "action": "融资",
-      "object": "，Today AI回答了Personal AI的十个核心问题",
-      "metrics": [
-        "2亿"
-      ],
-      "locations": [
-        "中国"
-      ],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-9c8ae69b84f21a2e",
-        "EN-5a28a1a99a417ba5"
-      ],
-      "entityNames": [
-        "Tencent",
-        "Ant Group"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-dc2c1b4780fb8da5",
-          "subject": "拿到2亿美金",
-          "object": "，Today AI回答了Personal AI的十个核心问题",
-          "quote": "10月21日，Today AI也正式宣布完成了超过2亿美金的首轮融资，投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-7fdd4e005fa35409",
-          "publisher": "www.163.com",
-          "url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html"
-        }
-      ],
-      "sourceUrl": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
-      "publisher": "www.163.com",
-      "sourceExcerpt": "10月21日，Today AI也正式宣布完成了超过2亿美金的首轮融资，投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。"
-    },
     {
       "id": "EV-0d7fe2f7274f7448",
       "dataDate": "2026-10-25",
@@ -191,9 +125,11 @@
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "announced",
+      "researchDeferral": "research_sources_insufficient",
       "title": "迈阿密初创公司BOB融资550万美元，打造AI驱动的银行平台",
       "originalTitle": "Miami Startup BOB Raises $5.5M To Build An AI-Powered Banking Platform",
       "subject": "BOB AI Holdings Corp.",
@@ -430,6 +366,68 @@
       "sourceUrl": "https://feng.ifeng.com/c/8xSsVbT9zaE",
       "publisher": "feng.ifeng.com",
       "sourceExcerpt": "DoNews10月23日消息，今日，苏州AI大算力芯片公司亿铸科技宣布完成超10亿元融资，融资将为后续研发投入、产品迭代及产业化推进提供支持。"
+    },
+    {
+      "id": "EV-04fb7521fa0fe4a9",
+      "dataDate": "2026-10-25",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座",
+      "originalTitle": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+      "subject": "元示科技",
+      "action": "funding",
+      "object": "近亿元人民币天使轮及天使 + 轮融资",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8955b63e8cdae8ac",
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "entityNames": [
+        "元示科技",
+        "Tencent"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-9756b91d226f58e9",
+          "subject": "元示科技",
+          "object": "近亿元人民币天使轮及天使 + 轮融资",
+          "quote": "近日，「元示科技」宣布已连续完成近亿元人民币天使轮及天使 + 轮融资。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-745b135d531df22e",
+          "publisher": "news.qq.com",
+          "url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima"
+        }
+      ],
+      "sourceUrl": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+      "publisher": "news.qq.com",
+      "sourceExcerpt": "近日，「元示科技」宣布已连续完成近亿元人民币天使轮及天使 + 轮融资。"
     },
     {
       "id": "EV-154cd37c0eefda85",
@@ -951,80 +949,6 @@
       "sourceExcerpt": "Slingshot Insurance, an AI-native embedded insurance startup, is emerging from stealth with $27 million in seed funding, it tells Crunchbase News exclusively."
     },
     {
-      "id": "EV-a9a656d5f74c391a",
-      "dataDate": "2026-10-25",
-      "date": "2026-10-22",
-      "updatedDate": "2026-10-22",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座",
-      "originalTitle": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
-      "subject": "「元示科技」连续",
-      "action": "完成两轮融资",
-      "object": "，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-88dd6d167e8d359c",
-        "EN-9c8ae69b84f21a2e"
-      ],
-      "entityNames": [
-        "「元示科技」连续",
-        "Tencent"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-eb3ec8d064f37454",
-          "subject": "「元示科技」连续",
-          "object": "，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
-          "quote": "近日，光源伙伴「元示科技」连续完成近亿元人民币天使轮及天使 + 轮融资。"
-        },
-        {
-          "id": "CL-55750bc13e63fed5",
-          "subject": "「元示科技」连续",
-          "object": "，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
-          "quote": "近日，「元示科技」宣布已连续完成近亿元人民币天使轮及天使 + 轮融资。"
-        },
-        {
-          "id": "CL-2ae116e37000ea68",
-          "subject": "「元示科技」连续",
-          "object": "，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
-          "quote": "燕缘创投总经理、管理合伙人李军表示：“恭喜元示科技完成天使轮与天使 + 轮融资，元示科技的创始人作为杰出北大校友分别毕业于北大前沿交叉学科研究院和元培学院，团队跨学科的交叉背景以及温和且坚定的气质正符合我们要寻找的北大校友创始人画像，元示科技也是我们投资的第一个北大校友创业项目。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-745b135d531df22e",
-          "publisher": "news.qq.com",
-          "url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima"
-        }
-      ],
-      "sourceUrl": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
-      "publisher": "news.qq.com",
-      "sourceExcerpt": "近日，光源伙伴「元示科技」连续完成近亿元人民币天使轮及天使 + 轮融资。"
-    },
-    {
       "id": "EV-b25b5c902c92a0b2",
       "dataDate": "2026-10-25",
       "date": "2026-10-22",
@@ -1501,6 +1425,76 @@
       "sourceUrl": "https://news.pedaily.cn/202610/570645.shtml",
       "publisher": "news.pedaily.cn",
       "sourceExcerpt": "投资界（ID：pedaily2012）10月22日消息，柏垠生物宣布完成超2亿元人民币A轮系列融资。"
+    },
+    {
+      "id": "EV-c4491ccfef9e3d73",
+      "dataDate": "2026-10-25",
+      "date": "2026-10-21",
+      "updatedDate": "2026-10-24",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_sources_insufficient",
+      "title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
+      "originalTitle": "",
+      "subject": "Today AI",
+      "action": "funding",
+      "object": "超过2亿美金的首轮融资",
+      "metrics": [
+        "2亿"
+      ],
+      "locations": [
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-3a61f02cb94a58e6",
+        "EN-9c8ae69b84f21a2e",
+        "EN-5a28a1a99a417ba5"
+      ],
+      "entityNames": [
+        "Today AI",
+        "Tencent",
+        "Ant Group"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-3937c828c4dcd4fb",
+          "subject": "Today AI",
+          "object": "超过2亿美金的首轮融资",
+          "quote": "10月21日，Today AI也正式宣布完成了超过2亿美金的首轮融资，投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7fdd4e005fa35409",
+          "publisher": "www.163.com",
+          "url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html"
+        }
+      ],
+      "sourceUrl": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
+      "publisher": "www.163.com",
+      "sourceExcerpt": "10月21日，Today AI也正式宣布完成了超过2亿美金的首轮融资，投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。"
     },
     {
       "id": "EV-07911ca790bdfc5a",
@@ -5156,9 +5150,11 @@
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_sources_insufficient",
       "title": "AI执行公司RapidCanvas在B轮融资中筹集2900万美元",
       "originalTitle": "AI execution company RapidCanvas raises $29M in Series B",
       "subject": "AI execution company RapidCanvas",
@@ -6867,9 +6863,11 @@
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_independent_sources_insufficient",
       "title": "上海大模型芯片创企，融资近亿元_大风号",
       "originalTitle": "",
       "subject": "思敏威集成电路有限公司",
@@ -11357,9 +11355,11 @@
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_sources_insufficient",
       "title": "探针AI医疗周报：General Medicine融资1.2亿美元，AI走向医疗交付与生物制造【261012】",
       "originalTitle": "",
       "subject": "探针AI医疗周报：General Medicine",

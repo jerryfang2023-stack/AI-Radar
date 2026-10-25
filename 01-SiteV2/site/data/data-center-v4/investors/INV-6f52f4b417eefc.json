@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "generatedAt": "2026-10-25T02:10:15.815Z",
     "latestDataDate": "2026-10-25",
     "currentDate": "2026-10-25",
     "eventCount": 4268,
@@ -62,20 +62,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 3,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
     "first_disclosed_at": "2026-03-24",
-    "latest_disclosed_at": "2026-08-17",
+    "latest_disclosed_at": "2026-10-22",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "lead": 2,
+      "lead": 3,
       "participant": 1
     },
     "round_codes": [
@@ -95,12 +95,57 @@
         "name": "乐享科技"
       },
       {
+        "entity_id": "EN-8955b63e8cdae8ac",
+        "canonical_entity_id": "",
+        "name": "元示科技"
+      },
+      {
         "entity_id": "EN-1913c6ab46df3a68",
         "canonical_entity_id": "",
         "name": "OdyssLife"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-7bedbf9e151ab38d",
+        "funding_insight_id": "FI-ddefd4a9f0ffb2f4",
+        "event_ids": [
+          "EV-04fb7521fa0fe4a9"
+        ],
+        "company_entity_id": "EN-8955b63e8cdae8ac",
+        "company_canonical_entity_id": "",
+        "company_name": "元示科技",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "天使轮及天使+轮（多轮融资合计）",
+        "amount_original": "近亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-10-22",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "天使+轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-27c3776c7b3aedc0",
+            "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+            "source_title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+            "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+            "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+            "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7fb2393aa93030b9",
         "funding_insight_id": "FI-d957aeb415083785",
@@ -288,6 +333,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-27c3776c7b3aedc0",
+        "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+        "source_title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+        "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+        "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+        "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
+      },
+      {
         "source_id": "FISRC-34ac4235c670177c",
         "source_url": "https://elsewhere.news/en/linearcapital/odysslife2-linear-portfolio",
         "source_title": "\"OdyssLife\" Closes Nearly 200 Million Yuan in New Funding, Linear Capital Continues to Double Down | Linear Portfolio | elsewhere",
@@ -330,7 +383,7 @@
     ],
     "translations": {
       "zh-CN": {
-        "activities[3].role": {
+        "activities[4].role": {
           "text": "Pre-A轮领投",
           "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
           "provider": "deepseek",
@@ -345,10 +398,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Monolith 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Monolith 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：元示科技 · 多轮融资 · 2026-10-22 · 天使+轮领投 · 近亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-27c3776c7b3aedc0"
+        },
         {
           "description": "融资来源记录：OdyssLife · 多轮融资 · 2026-08-17 · 本轮领投 · 近2亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-34ac4235c670177c"
@@ -356,14 +413,18 @@
         {
           "description": "融资来源记录：乐享科技 · Pre-A轮 · 2026-07-02 · 本轮参投 · 近5亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-670f261d0c740ea4"
-        },
-        {
-          "description": "融资来源记录：开物纪 · 天使+轮 · 2026-03-24 · 本轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3d10ec9bd5ef3ad4"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-27c3776c7b3aedc0",
+          "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+          "source_title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+          "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+          "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+          "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
+        },
         {
           "source_id": "FISRC-34ac4235c670177c",
           "source_url": "https://elsewhere.news/en/linearcapital/odysslife2-linear-portfolio",
@@ -379,14 +440,6 @@
           "source_content_hash": "62e2ce5bba0f19793e17ce12827afbfeab3186011072eff8b77ade4c444b2037",
           "quote": "老股东Monolith持续超额跟投",
           "quote_hash": "9dfc77c5960fab3497c21fae39f464dbef02f4f7909e6941e93e3e940151c1b6"
-        },
-        {
-          "source_id": "FISRC-3d10ec9bd5ef3ad4",
-          "source_url": "https://news.pedaily.cn/202603/562002.shtml",
-          "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
-          "source_content_hash": "d5d8d61ad1133bc1",
-          "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
-          "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
         }
       ],
       "last_verified_at": "2026-09-25"

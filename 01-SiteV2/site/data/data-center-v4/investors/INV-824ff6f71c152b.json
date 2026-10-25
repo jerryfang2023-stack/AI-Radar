@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-24T04:01:06.404Z",
+    "generatedAt": "2026-10-25T02:10:15.815Z",
     "latestDataDate": "2026-10-25",
     "currentDate": "2026-10-25",
     "eventCount": 4268,
@@ -62,9 +62,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 7,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -72,10 +72,10 @@
     "china_market_activity_count": 2,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-09-16",
-    "latest_disclosed_at": "2026-10-24",
+    "latest_disclosed_at": "2026-09-17",
     "role_counts": {
       "historical_or_ambiguous": 7,
-      "participant": 3
+      "participant": 2
     },
     "round_codes": [
       "other",
@@ -91,54 +91,9 @@
         "entity_id": "FICO-anew-labs",
         "canonical_entity_id": "",
         "name": "Anew Labs（新生实验室）"
-      },
-      {
-        "entity_id": "EN-5a28a1a99a417ba5",
-        "canonical_entity_id": "",
-        "name": "Today AI"
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-858370ea9bbb6b93",
-        "funding_insight_id": "FI-0178e4293f10ac23",
-        "event_ids": [
-          "EV-aabe55266bd52958"
-        ],
-        "company_entity_id": "EN-5a28a1a99a417ba5",
-        "company_canonical_entity_id": "",
-        "company_name": "Today AI",
-        "round": "其他融资",
-        "round_code": "other",
-        "round_original": "首轮",
-        "amount_original": "超过2亿美金",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 200000000,
-          "min_value": 200000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 2 亿美元"
-        },
-        "announced_at": "2026-10-24",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-3787040a54f790a2",
-            "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
-            "source_title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
-            "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-            "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
-            "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
-          }
-        ]
-      },
       {
         "activity_id": "IA-410981f9c47ba2ce",
         "funding_insight_id": "FI-e9d633fa8c039673",
@@ -450,14 +405,6 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-3787040a54f790a2",
-        "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
-        "source_title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
-        "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-        "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
-        "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
-      },
-      {
         "source_id": "FISRC-517ef1b31eac6dd3",
         "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
         "source_title": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
@@ -595,16 +542,16 @@
           "source_id": "5y_home"
         },
         {
-          "description": "融资来源记录：Today AI · 其他融资 · 2026-10-24 · 本轮参投 · 超过2亿美金。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3787040a54f790a2"
-        },
-        {
           "description": "融资来源记录：地瓜机器人 · C轮 · 2026-09-17 · 本轮跟投（原有投资机构继续追加投资） · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-517ef1b31eac6dd3"
         },
         {
           "description": "融资来源记录：Anew Labs（新生实验室） · 其他融资 · 2026-09-16 · 本轮参投 · 2.9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a2c9854f5230d423"
+        },
+        {
+          "description": "融资来源记录：柏垠生物 · 历史轮次未披露 · 现有股东。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c853fbb5ce244b00"
         }
       ],
       "contacts": [
@@ -649,14 +596,6 @@
           "quote_hash": "717d7cea204abf0cf2fe51edae10f609c79035ff4924f31b029a3cefc1bcfe1d"
         },
         {
-          "source_id": "FISRC-3787040a54f790a2",
-          "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
-          "source_title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
-          "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-          "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
-          "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
-        },
-        {
           "source_id": "FISRC-517ef1b31eac6dd3",
           "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
           "source_title": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
@@ -671,6 +610,14 @@
           "source_content_hash": "2bb10add5e428ec5",
           "quote": "涵盖了红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投等头部投资机构",
           "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
+        },
+        {
+          "source_id": "FISRC-c853fbb5ce244b00",
+          "source_url": "https://news.pedaily.cn/202610/570645.shtml",
+          "source_title": "创新AI原生生物材料企业柏垠生物完成超2亿元A轮系列融资",
+          "source_content_hash": "16f5e7a14cc87e79d3f91a0541c233abad021af94a1ac47b1978934d4327fdbd",
+          "quote": "现有股东五源资本合伙人井绪天表示",
+          "quote_hash": "a84dbf6de5e7afb714cd79071b0c315fec8313bc8350fa8f8ba9403a2b1bd021"
         }
       ],
       "coverage_status": "researched",

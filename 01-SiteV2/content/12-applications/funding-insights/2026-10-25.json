@@ -2,9 +2,9 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-10-25",
-    "generated_at": "2026-10-25T00:43:06.527Z",
+    "generated_at": "2026-10-25T02:03:10.496Z",
     "trigger": "accepted_financing_event_research",
-    "research_provider": "search-gateway+direct-original+deepseek",
+    "research_provider": "reviewed-discovery+direct-fetch+deepseek",
     "model": "deepseek-flash",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
@@ -18,6 +18,563 @@
     }
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-cd7fc3e80ca1a258",
+      "triggered_by_event_id": "EV-04fb7521fa0fe4a9",
+      "as_of_date": "2026-10-25",
+      "company": {
+        "entity_id": "EN-8955b63e8cdae8ac",
+        "name": "元示科技",
+        "full_name": "元示科技",
+        "website": "",
+        "summary": "聚焦AI虚拟细胞（AIVC）的早期公司，以“生物学原始数据引擎 + 通用细胞模型”为整体，构建垂直生命科学基础底座，提升AI对细胞状态及干预响应的理解、推理与预测能力。",
+        "headquarters": "上海市浦东新区",
+        "founders": [
+          {
+            "name": "吴佳奇",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c87e5ef760ceb82c",
+                "quote": "元示科技的创始人是吴佳奇，北京大学前沿交叉学科研究院2017级博士。",
+                "source_content_hash": "d9d5ef64bdc32d25",
+                "quote_hash": "94726c2b5faaac518c41f2b75b59d9c44604006ed8ce0b6e38154f322cf42f5f"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-27c3776c7b3aedc0",
+            "quote": "元示科技是一家聚焦 AI 虚拟细胞（AIVC）的早期公司，以“生物学原始数据引擎 + 通用细胞模型”为整体，构建垂直生命科学基础底座。",
+            "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+            "quote_hash": "8797326875d5481e088ba7b1860efb7f0a4e7a104e7fa056d8c874c70cc9e44a"
+          },
+          {
+            "source_id": "FISRC-c87e5ef760ceb82c",
+            "quote": "元示科技创立于2026年4月，公司总部位于上海市浦东新区。",
+            "source_content_hash": "d9d5ef64bdc32d25",
+            "quote_hash": "229ce7fc643df4e430e59e12d0ccaaffd93dc834c8ddaab3c17dee213f3d3df5"
+          }
+        ],
+        "application_entity_id": "EN-8955b63e8cdae8ac",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "多轮融资",
+        "amount": "近亿元人民币",
+        "total_raised": "",
+        "announced_at": "2026-10-22",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "创新工场",
+            "role": "天使轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-27c3776c7b3aedc0",
+                "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+                "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+                "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "上海未来产业基金",
+            "role": "天使轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-27c3776c7b3aedc0",
+                "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+                "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+                "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "燕缘创投",
+            "role": "天使轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-27c3776c7b3aedc0",
+                "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+                "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+                "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Monolith",
+            "role": "天使+轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-27c3776c7b3aedc0",
+                "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+                "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+                "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "道彤投资",
+            "role": "天使+轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-27c3776c7b3aedc0",
+                "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+                "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+                "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-27c3776c7b3aedc0",
+            "quote": "近日，「元示科技」宣布已连续完成近亿元人民币天使轮及天使 + 轮融资。",
+            "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+            "quote_hash": "51fa68ca8df868483aa77275c4e271a857dbb82ab6517a6af91f1df6886c6e2e"
+          },
+          {
+            "source_id": "FISRC-c87e5ef760ceb82c",
+            "quote": "元示（上海）科技有限公司（下文简称：元示科技）成功完成近亿元人民币天使轮及天使+轮融资。",
+            "source_content_hash": "d9d5ef64bdc32d25",
+            "quote_hash": "ba1117c06947314c21bfb224ce4e1a20b25b26d79785fbbcfd5dfafb7d3c91fb"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "天使轮及天使+轮（多轮融资合计）",
+        "amount_original": "近亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-04fb7521fa0fe4a9",
+            "round_original": "天使轮及天使+轮（多轮融资合计）",
+            "amount": "近亿元人民币",
+            "announced_at": "2026-10-22",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-27c3776c7b3aedc0",
+                "quote": "近日，「元示科技」宣布已连续完成近亿元人民币天使轮及天使 + 轮融资。",
+                "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+                "quote_hash": "51fa68ca8df868483aa77275c4e271a857dbb82ab6517a6af91f1df6886c6e2e"
+              },
+              {
+                "source_id": "FISRC-c87e5ef760ceb82c",
+                "quote": "元示（上海）科技有限公司（下文简称：元示科技）成功完成近亿元人民币天使轮及天使+轮融资。",
+                "source_content_hash": "d9d5ef64bdc32d25",
+                "quote_hash": "ba1117c06947314c21bfb224ce4e1a20b25b26d79785fbbcfd5dfafb7d3c91fb"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "AI虚拟细胞（通用细胞模型）",
+          "description": "用AI训练出的细胞数学模型，输入药物等干预条件后可预测基因表达影响、细胞变化方向与毒性反应，并支持跨细胞类型预测。",
+          "target_customers": "药物研发场景",
+          "features": [
+            "预测细胞在不同疾病状态、实验条件和干预方式下的响应",
+            "跨环境零样本泛化预测",
+            "模型预测与湿实验验证形成闭环"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c87e5ef760ceb82c",
+              "quote": "只要给它输入\"加入某种药物\"的口令，它就能像真实细胞一样做出\"反应\"。",
+              "source_content_hash": "d9d5ef64bdc32d25",
+              "quote_hash": "3ce71df548de9fa089e4a98378ce3351177facb1e056522c8345c394aa6d11cf"
+            },
+            {
+              "source_id": "FISRC-27c3776c7b3aedc0",
+              "quote": "如何让 AI 更准确地预测细胞在不同疾病状态、实验条件和干预方式下的响应",
+              "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+              "quote_hash": "52b31aa46f95d4d86b32e3736196eea5e70b55de6098946330194bcde34cbaed"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "超高通量细胞扰动实验产线",
+          "description": "用自动化设备在实验室同时进行成千上万个细胞扰动实验，低成本、高通量产生扰动转录组学数据，作为模型的数据引擎。",
+          "target_customers": "公司内部模型训练与数据积累",
+          "features": [
+            "自动化设备并行实验",
+            "低成本高通量",
+            "产出扰动转录组学数据"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c87e5ef760ceb82c",
+              "quote": "元示科技自己建了一条超高通量的细胞扰动实验产线——用自动化设备在实验室里同时做成千上万个细胞扰动实验，低成本、高通量地产生\"扰动转录组学数据\"。",
+              "source_content_hash": "d9d5ef64bdc32d25",
+              "quote_hash": "12e52858f9f42fd993fde7d404f2e74a841bf4e8dfd4fb3eef4727b4c3d7716c"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "天使轮及天使+轮融资合计",
+          "value": "近亿元人民币",
+          "observed_at": "2026-10-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-27c3776c7b3aedc0",
+              "quote": "连续完成近亿元人民币天使轮及天使 + 轮融资",
+              "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+              "quote_hash": "705da9989268917d65ecd99666eb4d7d0bc24c76ece79bc3fa1ecfa771291692"
+            }
+          ]
+        },
+        {
+          "label": "公司成立时间",
+          "value": "2026年4月",
+          "observed_at": "2026-10-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c87e5ef760ceb82c",
+              "quote": "元示科技创立于2026年4月",
+              "source_content_hash": "d9d5ef64bdc32d25",
+              "quote_hash": "e732e1a5ad70cec0d08ff87fae956c986be2978afdd534c2638effe1f948544e"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "任博冰",
+          "quote": "基于这一认知，我们投资了元示科技，其拥有全球领先的超高通量细胞扰动技术平台，能够持续产出模型所需的核心实验数据，为虚拟细胞从概念走向可验证、可迭代的真实模型提供了关键的数据燃料。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-27c3776c7b3aedc0",
+              "quote": "基于这一认知，我们投资了元示科技，其拥有全球领先的超高通量细胞扰动技术平台，能够持续产出模型所需的核心实验数据，为虚拟细胞从概念走向可验证、可迭代的真实模型提供了关键的数据燃料。",
+              "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+              "quote_hash": "18b9f950c521ee8987ffc4ce5a0c6e21645d1e682c8fc8141646c9aae3e2cd8a"
+            }
+          ]
+        },
+        {
+          "speaker": "上海未来产业基金",
+          "quote": "元示科技团队具备低成本高通量产生扰动转录组学数据的技术优势，其算法模型也具备极强的跨环境零样本泛化能力，有望形成干湿闭环的数据飞轮。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-27c3776c7b3aedc0",
+              "quote": "元示科技团队具备低成本高通量产生扰动转录组学数据的技术优势，其算法模型也具备极强的跨环境零样本泛化能力，有望形成干湿闭环的数据飞轮。",
+              "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+              "quote_hash": "a14aa4f38bd6db3cd9b4aac77d9af47bcc63e914c7281c82fef98235d8d88d1a"
+            }
+          ]
+        },
+        {
+          "speaker": "李军",
+          "quote": "我们认为，能够将前沿算法、稳定的数据生产和实际研发需求连接起来的团队，有机会在这一过程中建立持久和稳固优势，元示科技正是这样的团队。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-27c3776c7b3aedc0",
+              "quote": "我们认为，能够将前沿算法、稳定的数据生产和实际研发需求连接起来的团队，有机会在这一过程中建立持久和稳固优势，元示科技正是这样的团队。",
+              "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+              "quote_hash": "4892fcbeab6aacc411db34b4bb3a9960e5db1ac6d247348f7cfaa86b646c7bd1"
+            }
+          ]
+        },
+        {
+          "speaker": "道彤投资",
+          "quote": "团队不仅在通用细胞模型的底层架构上展现出前沿的国际视野，更难能可贵的是其扎实的工程化落地能力——以极具竞争力的成本优势，初步跑通了超高通量细胞扰动数据产线。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-27c3776c7b3aedc0",
+              "quote": "团队不仅在通用细胞模型的底层架构上展现出前沿的国际视野，更难能可贵的是其扎实的工程化落地能力——以极具竞争力的成本优势，初步跑通了超高通量细胞扰动数据产线。",
+              "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+              "quote_hash": "e843598769c26e70d5b68419d2f6dc6220efbebde64874087238c22722320c09"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "创新工场",
+            "speaker": "任博冰",
+            "speaker_role": "创新工场前沿科技基金总经理",
+            "rationale": "看重元示科技的超高通量细胞扰动技术平台，认为其能持续产出虚拟细胞模型所需的核心实验数据，是虚拟细胞从概念走向可验证、可迭代真实模型的关键数据燃料。",
+            "quote": "基于这一认知，我们投资了元示科技，其拥有全球领先的超高通量细胞扰动技术平台，能够持续产出模型所需的核心实验数据，为虚拟细胞从概念走向可验证、可迭代的真实模型提供了关键的数据燃料。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-27c3776c7b3aedc0",
+                "quote": "基于这一认知，我们投资了元示科技，其拥有全球领先的超高通量细胞扰动技术平台，能够持续产出模型所需的核心实验数据，为虚拟细胞从概念走向可验证、可迭代的真实模型提供了关键的数据燃料。",
+                "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+                "quote_hash": "18b9f950c521ee8987ffc4ce5a0c6e21645d1e682c8fc8141646c9aae3e2cd8a"
+              }
+            ]
+          },
+          {
+            "institution": "上海未来产业基金",
+            "speaker": "上海未来产业基金",
+            "speaker_role": "投资方",
+            "rationale": "认可团队低成本高通量产生扰动转录组学数据的技术优势与算法模型的跨环境零样本泛化能力，认为有望形成干湿闭环的数据飞轮。",
+            "quote": "元示科技团队具备低成本高通量产生扰动转录组学数据的技术优势，其算法模型也具备极强的跨环境零样本泛化能力，有望形成干湿闭环的数据飞轮。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-27c3776c7b3aedc0",
+                "quote": "元示科技团队具备低成本高通量产生扰动转录组学数据的技术优势，其算法模型也具备极强的跨环境零样本泛化能力，有望形成干湿闭环的数据飞轮。",
+                "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+                "quote_hash": "a14aa4f38bd6db3cd9b4aac77d9af47bcc63e914c7281c82fef98235d8d88d1a"
+              }
+            ]
+          },
+          {
+            "institution": "燕缘创投",
+            "speaker": "李军",
+            "speaker_role": "燕缘创投总经理、管理合伙人",
+            "rationale": "认为虚拟细胞领域竞争考验数据生产、实验设计与模型算法协同能力，元示科技是能将前沿算法、稳定数据生产与实际研发需求连接起来的团队。",
+            "quote": "我们认为，能够将前沿算法、稳定的数据生产和实际研发需求连接起来的团队，有机会在这一过程中建立持久和稳固优势，元示科技正是这样的团队。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-27c3776c7b3aedc0",
+                "quote": "我们认为，能够将前沿算法、稳定的数据生产和实际研发需求连接起来的团队，有机会在这一过程中建立持久和稳固优势，元示科技正是这样的团队。",
+                "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+                "quote_hash": "4892fcbeab6aacc411db34b4bb3a9960e5db1ac6d247348f7cfaa86b646c7bd1"
+              }
+            ]
+          },
+          {
+            "institution": "道彤投资",
+            "speaker": "道彤投资",
+            "speaker_role": "投资方",
+            "rationale": "看好团队在通用细胞模型底层架构的前沿视野与工程化落地能力，认为其以成本优势初步跑通超高通量细胞扰动数据产线，高质量因果扰动数据是模型从相关拟合走向机制泛化的关键。",
+            "quote": "团队不仅在通用细胞模型的底层架构上展现出前沿的国际视野，更难能可贵的是其扎实的工程化落地能力——以极具竞争力的成本优势，初步跑通了超高通量细胞扰动数据产线。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-27c3776c7b3aedc0",
+                "quote": "团队不仅在通用细胞模型的底层架构上展现出前沿的国际视野，更难能可贵的是其扎实的工程化落地能力——以极具竞争力的成本优势，初步跑通了超高通量细胞扰动数据产线。",
+                "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+                "quote_hash": "e843598769c26e70d5b68419d2f6dc6220efbebde64874087238c22722320c09"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是元示科技能否以低成本、高通量的细胞扰动数据产线持续供给通用细胞模型，并形成“数据生产—模型预测—湿实验验证”的闭环，从而获得跨环境零样本泛化能力。当前融资所依赖的已验证信号主要是公司已初步跑通超高通量细胞扰动数据产线、具备低成本高通量产生扰动转录组学数据的技术能力，以及投资方对其算法模型跨环境零样本泛化能力的判断。证据边界在于：公司成立于2026年4月，产品仍处早期研发与应用验证阶段，来源未披露模型性能指标、客户合同或收入，投资方所述“全球领先”“极强的泛化能力”属投资方判断而非第三方验证数据。",
+        "validated_signals": [
+          "公司已连续完成近亿元人民币天使轮及天使+轮融资",
+          "公司自建超高通量细胞扰动实验产线，用自动化设备并行开展细胞扰动实验",
+          "公司以“生物学原始数据引擎 + 通用细胞模型”构建研发体系，规划模型分析、实验验证与结果反馈闭环"
+        ],
+        "risks": [
+          "公司成立于2026年4月，产品处于早期阶段，通用细胞模型的预测精度与跨环境泛化能力尚缺公开验证指标",
+          "来源未披露客户合同、收入或商业化落地数据，面向药物研发场景的应用验证仍待完成",
+          "投资方对技术平台“全球领先”及模型泛化能力的评价属投资方判断，需独立数据佐证",
+          "超高通量数据产线的成本优势与稳定产出能力尚未有量化披露"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "use_case_ids": [
+          "research_discovery"
+        ],
+        "industry_ids": [
+          "healthcare_life_sciences"
+        ],
+        "target_user_ids": [
+          "researcher"
+        ],
+        "sector": "AI虚拟细胞与通用细胞模型，面向药物研发的生物学基础模型",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是元示科技能否以低成本、高通量的细胞扰动数据产线持续供给通用细胞模型，并形成“数据生产—模型预测—湿实验验证”的闭环，从而获得跨环境零样本泛化能力。当前融资所依赖的已验证信号主要是公司已初步跑通超高通量细胞扰动数据产线、具备低成本高通量产生扰动转录组学数据的技术能力，以及投资方对其算法模型跨环境零样本泛化能力的判断。证据边界在于：公司成立于2026年4月，产品仍处早期研发与应用验证阶段，来源未披露模型性能指标、客户合同或收入，投资方所述“全球领先”“极强的泛化能力”属投资方判断而非第三方验证数据。",
+          "evidence_signals": [
+            "公司已连续完成近亿元人民币天使轮及天使+轮融资",
+            "公司自建超高通量细胞扰动实验产线，用自动化设备并行开展细胞扰动实验",
+            "公司以“生物学原始数据引擎 + 通用细胞模型”构建研发体系，规划模型分析、实验验证与结果反馈闭环"
+          ],
+          "risks": [
+            "公司成立于2026年4月，产品处于早期阶段，通用细胞模型的预测精度与跨环境泛化能力尚缺公开验证指标",
+            "来源未披露客户合同、收入或商业化落地数据，面向药物研发场景的应用验证仍待完成",
+            "投资方对技术平台“全球领先”及模型泛化能力的评价属投资方判断，需独立数据佐证",
+            "超高通量数据产线的成本优势与稳定产出能力尚未有量化披露"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI虚拟细胞（通用细胞模型）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "超高通量细胞扰动实验产线",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "吴佳奇",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "创新工场",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "上海未来产业基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "燕缘创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Monolith",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "道彤投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-04fb7521fa0fe4a9",
+          "date": "2026-10-22",
+          "title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座",
+          "amount": "近亿元人民币",
+          "source_refs": [
+            "SA-745b135d531df22e"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-27c3776c7b3aedc0",
+          "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+          "title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+          "publisher": "news.qq.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-10-25T00:18:06.376Z",
+          "content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+          "source_artifact_id": "SA-745b135d531df22e",
+          "raw_id": "RAW-7591d7bb5aa46d2c"
+        },
+        {
+          "source_id": "FISRC-c87e5ef760ceb82c",
+          "source_url": "https://caifuhao.eastmoney.com/news/20261023171857145535540",
+          "title": "上海元示科技成功获得天使＋轮融资，Monolith领投！",
+          "publisher": "caifuhao.eastmoney.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-25T02:01:17.916Z",
+          "content_hash": "d9d5ef64bdc32d25",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-10-25T02:03:09.894Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-10-25T02:03:09.894Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "AI虚拟细胞（通用细胞模型）",
+            "超高通量细胞扰动实验产线"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "吴佳奇"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-04fb7521fa0fe4a9"
+      ],
+      "aggregation": {
+        "key": "EN-8955b63e8cdae8ac|multi_round",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-353ca2a7961a6242",
@@ -104,7 +661,7 @@
         "round": "B轮",
         "amount": "$60M",
         "total_raised": "$91M",
-        "announced_at": "2026-10-21",
+        "announced_at": "2026-10-20",
         "investor_disclosure_status": "disclosed",
         "investors": [
           {
@@ -288,12 +845,10 @@
               }
             ],
             "entity_id": null
-          }
-        ],
-        "other_round_investors": [
+          },
           {
             "name": "E2VC",
-            "role": "既有投资方，本轮第四轮参与",
+            "role": "本轮参投（既有投资方）",
             "evidence_refs": [
               {
                 "source_id": "FISRC-c5dadf72976d5866",
@@ -306,7 +861,7 @@
           },
           {
             "name": "Upfront Ventures",
-            "role": "既有投资方，本轮第三轮参与",
+            "role": "本轮参投（既有投资方）",
             "evidence_refs": [
               {
                 "source_id": "FISRC-c5dadf72976d5866",
@@ -319,7 +874,7 @@
           },
           {
             "name": "Pace Capital",
-            "role": "既有投资方，本轮第二轮参与",
+            "role": "本轮参投（既有投资方）",
             "evidence_refs": [
               {
                 "source_id": "FISRC-c5dadf72976d5866",
@@ -331,6 +886,7 @@
             "entity_id": null
           }
         ],
+        "other_round_investors": [],
         "evidence_refs": [
           {
             "source_id": "FISRC-c5dadf72976d5866",
@@ -349,6 +905,12 @@
             "quote": "Daytona said Tuesday it has raised a $60 million Series B venture capital round at a $1 billion valuation.",
             "source_content_hash": "b7d90358f568944c",
             "quote_hash": "4e65c6bb0807446ce0587ac560caabcea2c15a2ddd6a6d19c6cd178e9542e7f7"
+          },
+          {
+            "source_id": "FISRC-c5dadf72976d5866",
+            "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+            "quote": "On October 20, that gamble became a $60M Series B at a $1B valuation. Daytona, a San Francisco-based startup with Croatian founders, said the round was led by FirstMark Growth and takes its total funding to $91M.",
+            "quote_hash": "7f868f41296c88f3ade72b24065e968404f7cd025b384dbafdabe770d0e434d6"
           }
         ],
         "round_code": "series_b",
@@ -379,7 +941,7 @@
             "event_id": "EV-aab9f971ed5a99b4",
             "round_original": "Series B",
             "amount": "$60M",
-            "announced_at": "2026-10-21",
+            "announced_at": "2026-10-20",
             "evidence_refs": [
               {
                 "source_id": "FISRC-c5dadf72976d5866",
@@ -398,6 +960,12 @@
                 "quote": "Daytona said Tuesday it has raised a $60 million Series B venture capital round at a $1 billion valuation.",
                 "source_content_hash": "b7d90358f568944c",
                 "quote_hash": "4e65c6bb0807446ce0587ac560caabcea2c15a2ddd6a6d19c6cd178e9542e7f7"
+              },
+              {
+                "source_id": "FISRC-c5dadf72976d5866",
+                "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+                "quote": "On October 20, that gamble became a $60M Series B at a $1B valuation. Daytona, a San Francisco-based startup with Croatian founders, said the round was led by FirstMark Growth and takes its total funding to $91M.",
+                "quote_hash": "7f868f41296c88f3ade72b24065e968404f7cd025b384dbafdabe770d0e434d6"
               }
             ]
           }
@@ -932,21 +1500,21 @@
           "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_other_round",
+          "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "E2VC",
           "canonical_entity_id": null,
           "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_other_round",
+          "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Upfront Ventures",
           "canonical_entity_id": null,
           "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_other_round",
+          "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Pace Capital",
           "canonical_entity_id": null,
@@ -1012,7 +1580,7 @@
       "funding_history": [
         {
           "event_id": "EV-aab9f971ed5a99b4",
-          "date": "2026-10-21",
+          "date": "2026-10-20",
           "title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
           "amount": "$60M",
           "source_refs": [
@@ -1487,7 +2055,8 @@
           "risks": [
             "CHIPS法案资金仅为意向书，需完成联邦审批流程和最终协议，存在不确定性",
             "30%能耗降低和50%空间缩减为演示目标，尚未在商业部署中验证",
-            "公司首款原型封装器件计划年底前开始送样，2026年才推出完整集成方案，商业化尚早"
+            "公司首款原型封装器件计划年底前开始送样，2026年才推出完整集成方案，商业化尚早",
+            "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
           ],
           "institutional_rationale_status": "not_disclosed"
         }
@@ -1653,625 +2222,6 @@
       ],
       "aggregation": {
         "key": "EN-5195c5e9f71960cd|undisclosed",
-        "event_count": 1,
-        "strategy": "company_and_normalized_round"
-      }
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-8210a49d0d06e2d3",
-      "triggered_by_event_id": "EV-aabe55266bd52958",
-      "as_of_date": "2026-10-25",
-      "company": {
-        "entity_id": "EN-5a28a1a99a417ba5",
-        "name": "Today AI",
-        "full_name": "Today AI",
-        "website": "",
-        "summary": "Today AI 是一家开发 Personal AI 私人助理的 AI 公司，由齐俊元创立，产品于2026年9月上线国际版和国内版，通过持续对话积累记忆，目标是成为以“人”而非任务来组织的通用助手。",
-        "headquarters": "",
-        "founders": [
-          {
-            "name": "齐俊元",
-            "role": "创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3787040a54f790a2",
-                "quote": "创始人齐俊元曾创办Teambition，之后在阿里、字节等大厂负责过各类产品。",
-                "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-                "quote_hash": "02798d2033c8647399cf86811555639ae6a3ff284646466df273352b3625fba5"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-3787040a54f790a2",
-            "quote": "一家AI公司Today AI也许比Muse探索得更早。",
-            "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-            "quote_hash": "db2ea469b774504adcfcf933daad976fa4c225bbc214d9eb274a190d79551c63"
-          },
-          {
-            "source_id": "FISRC-3787040a54f790a2",
-            "quote": "今年初组建团队后，Today AI自9月9日起陆续上线了国际版和国内版本。",
-            "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-            "quote_hash": "eab34e4d6a70fd032c8cc48f0961ac4e0151df75ba21addb2e0e14df82702d51"
-          }
-        ],
-        "application_entity_id": "EN-5a28a1a99a417ba5",
-        "canonical_entity_consistent": false
-      },
-      "financing": {
-        "round": "其他融资",
-        "amount": "超过2亿美金",
-        "total_raised": "",
-        "announced_at": "2026-10-24",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "IDG资本",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3787040a54f790a2",
-                "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
-                "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-                "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "腾讯",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3787040a54f790a2",
-                "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
-                "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-                "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
-              }
-            ],
-            "entity_id": "EN-9c8ae69b84f21a2e"
-          },
-          {
-            "name": "五源资本",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3787040a54f790a2",
-                "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
-                "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-                "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "蚂蚁集团",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3787040a54f790a2",
-                "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
-                "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-                "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
-              }
-            ],
-            "entity_id": "EN-d30e5ffc0ba9150b"
-          },
-          {
-            "name": "红杉中国",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3787040a54f790a2",
-                "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
-                "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-                "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "传音控股",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3787040a54f790a2",
-                "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
-                "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-                "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "同歌创投",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3787040a54f790a2",
-                "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
-                "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-                "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "上海交大菡源资产",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3787040a54f790a2",
-                "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
-                "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-                "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "other_round_investors": [],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-3787040a54f790a2",
-            "quote": "10月21日，Today AI也正式宣布完成了超过2亿美金的首轮融资，投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
-            "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-            "quote_hash": "05ed5942ad3565d4679c0138fee8ce10e561b9ec98d41b6439c744bd209f7a22"
-          }
-        ],
-        "round_code": "other",
-        "round_original": "首轮",
-        "amount_original": "超过2亿美金",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 200000000,
-          "min_value": 200000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 2 亿美元"
-        },
-        "total_raised_original": "",
-        "total_raised_normalized": {
-          "currency": "",
-          "value": null,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "undisclosed",
-          "display_zh": ""
-        },
-        "risk_markers": [],
-        "disclosures": [
-          {
-            "event_id": "EV-aabe55266bd52958",
-            "round_original": "首轮",
-            "amount": "超过2亿美金",
-            "announced_at": "2026-10-24",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3787040a54f790a2",
-                "quote": "10月21日，Today AI也正式宣布完成了超过2亿美金的首轮融资，投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
-                "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-                "quote_hash": "05ed5942ad3565d4679c0138fee8ce10e561b9ec98d41b6439c744bd209f7a22"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "disclosed"
-      },
-      "products": [
-        {
-          "name": "Today",
-          "description": "Today 是用户的“私人助理”，通过用户授权接入信息与应用数据，在持续对话中积累记忆，以单对话框、拟人化交互方式提供个性化服务。",
-          "target_customers": "大众市场用户，包括 Early Adopter 和日常稳定使用者",
-          "features": [
-            "单 session 对话，不按任务划分窗口",
-            "通过 Connector 接入飞书、钉钉、企业微信、滴答清单等平台",
-            "记忆机制与主动性推送",
-            "渐进式授权与记忆可见可控"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3787040a54f790a2",
-              "quote": "用一句话概括，Today希望做的是用户的“私人助理”。",
-              "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-              "quote_hash": "648b4eaa68eacc416fc819e47ff7e3d7e3659535737ccb235e6855a50c45387c"
-            },
-            {
-              "source_id": "FISRC-3787040a54f790a2",
-              "quote": "9月先在美区上线，两周后国区跟上，并迅速支持了飞书、钉钉、企业微信、滴答清单等平台。",
-              "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-              "quote_hash": "ed172bc30abdadea12fe4ede3cab237b947ca0d6f73623286721251304742523"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [],
-      "comparisons": [
-        {
-          "name": "Muse",
-          "product": "Personal AI 产品",
-          "scenario": "面向广泛用户的 Personal AI 助手",
-          "target_customer": "广泛用户",
-          "funding_summary": "",
-          "core_difference": "Muse 以免费模式扩大规模，上线22天突破500万次下载，活跃用户约400万；Today AI 强调单 session、拟人化交互和记忆沉淀，并计划训练自己的交互模型。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3787040a54f790a2",
-              "quote": "Muse上线22天就突破500万次下载",
-              "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-              "quote_hash": "cf58e80e330e58c36a34c3df79b548852fc80029d609914ad20f7da6b470b14e"
-            },
-            {
-              "source_id": "FISRC-3787040a54f790a2",
-              "quote": "Muse则面向更广泛的用户，以免费模式扩大规模，活跃用户约400万。",
-              "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-              "quote_hash": "7d8d4f155f767543f30b58723bb140db91235924285bcf750079c3779c30a5b4"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Instinct",
-          "product": "Personal AI 产品",
-          "scenario": "住在 IM 里的 Personal AI，探索 trusted networks",
-          "target_customer": "IM 用户",
-          "funding_summary": "",
-          "core_difference": "Instinct 没有独立 App、住在 IM 里，探索 trusted networks 链路；Today AI 坚持独立 App 和单 session 对话框，强调 GUI 引导与设备权限。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3787040a54f790a2",
-              "quote": "最早3月份的时候，我们其实探索过做类似Instinct的方向——它住在IM里面，没有独立的App。",
-              "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-              "quote_hash": "c83c45ac44dd003253b720fc27d67c599182f789b2da63bc24b09be99a2631a6"
-            },
-            {
-              "source_id": "FISRC-3787040a54f790a2",
-              "quote": "Instinct探索的则是trusted networks：用户先与自己的Agent沟通，再由Agent与对方的Agent协商安排，最后把结果反馈给用户，链路相对更长。",
-              "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-              "quote_hash": "d4dfcde8cc4eb38e4ac956944a6e716c5eabd4f5c81b6de722f37ef067308550"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Town",
-          "product": "邮件场景 Personal AI",
-          "scenario": "从邮件场景切入做深单一场景",
-          "target_customer": "邮件用户",
-          "funding_summary": "",
-          "core_difference": "Town 从邮件单一场景切入，付费转化率约15%；Today AI 做通用 Personal AI，强调跨场景记忆与主动性，而非单一场景工具。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3787040a54f790a2",
-              "quote": "比如Town从邮件场景切入，先把单一场景做深，付费转化率约15%；我觉得这类工具型产品的路线是成立的，但它和Today不一样。",
-              "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-              "quote_hash": "163481b6023548ed1c186c2a2469906bc2e3ee8c61954a2b379fc6dff424ed3f"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Grok Bot",
-          "product": "订阅导向的 Personal AI 产品",
-          "scenario": "订阅制 Personal AI",
-          "target_customer": "订阅用户",
-          "funding_summary": "",
-          "core_difference": "Grok Bot 是订阅导向产品，周活约40万；Today AI 认为订阅可能不是最合适商业模式，现阶段商业化不是第一优先级。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3787040a54f790a2",
-              "quote": "市场上也有订阅导向的产品，比如Grok Bot，周活约40万。",
-              "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-              "quote_hash": "abda59b0e622d5ec8188cd26c623483c1f847e0b0f1f9b37f3ec6fd8297cf5b2"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "metrics": [
-        {
-          "label": "本轮融资金额",
-          "value": "超过2亿美金",
-          "observed_at": "2026-10-21",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3787040a54f790a2",
-              "quote": "10月21日，Today AI也正式宣布完成了超过2亿美金的首轮融资",
-              "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-              "quote_hash": "e0f81c5dcc7d739033cb565b0d484c7def0e9d23ed05080a03436533561f83e3"
-            }
-          ]
-        },
-        {
-          "label": "产品上线时间",
-          "value": "2026年9月9日起陆续上线国际版和国内版",
-          "observed_at": "2026-10-24",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3787040a54f790a2",
-              "quote": "Today AI自9月9日起陆续上线了国际版和国内版本。",
-              "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-              "quote_hash": "bbdf2063f10148f448d1b59865a132ed76f1d7bac5c4260a78b873855bcdd49b"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "Today AI 团队",
-          "quote": "用一句话概括，Today希望做的是用户的“私人助理”。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3787040a54f790a2",
-              "quote": "用一句话概括，Today希望做的是用户的“私人助理”。",
-              "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-              "quote_hash": "648b4eaa68eacc416fc819e47ff7e3d7e3659535737ccb235e6855a50c45387c"
-            }
-          ]
-        },
-        {
-          "speaker": "Today AI 团队",
-          "quote": "我们判断需求是真实存在的——Personal Agent要处理的，是每个人每天都会遇到的大量琐碎、高频的事情",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3787040a54f790a2",
-              "quote": "我们判断需求是真实存在的——Personal Agent要处理的，是每个人每天都会遇到的大量琐碎、高频的事情",
-              "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-              "quote_hash": "6846fa33a37061b68a32e8c67ee7e50a3349ed378bfab442339e25943599f6d9"
-            }
-          ]
-        },
-        {
-          "speaker": "Today AI 团队",
-          "quote": "非常诚实地讲，现在Personal AI处于一个非常同质化竞争的阶段",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3787040a54f790a2",
-              "quote": "非常诚实地讲，现在Personal AI处于一个非常同质化竞争的阶段",
-              "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-              "quote_hash": "a3f1eba06a244b348233e9a2146ef78788a17c61d7c14581558cd1f6311eac1a"
-            }
-          ]
-        },
-        {
-          "speaker": "forgeglobal.com",
-          "quote": "Ant Group is privately held and not traded on public markets, so pre-IPO investments are available only to accredited investors.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7c8ee941f7995d36",
-              "quote": "Ant Group is privately held and not traded on public markets, so pre-IPO investments are available only to accredited investors.",
-              "source_content_hash": "021fe8c0f7a3d7d8",
-              "quote_hash": "8a8553edd25cba39af2acee3c71bd6ffb71f6de10371bdbd0da71b0c4740873e"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [],
-        "capital_judgment": "资本押注的核心变量是 Today AI 能否通过单 session、记忆机制和主动性构建 Personal AI 的长期留存与 Context 沉淀，并逐步训练自有交互模型以降低单位智能成本。当前已验证信号包括：首轮融资超过2亿美金、产品已上线美区与国区并接入飞书/钉钉/企业微信等 Connector。证据边界在于：来源明确表示 PMF 仍在验证、商业化不是现阶段第一优先级，且 Personal AI 处于同质化竞争阶段，留存与付费意愿尚无公开数据。",
-        "validated_signals": [
-          "完成超过2亿美金首轮融资，投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产",
-          "产品于2026年9月9日起陆续上线国际版和国内版本",
-          "已支持飞书、钉钉、企业微信、滴答清单等平台 Connector"
-        ],
-        "risks": [
-          "来源明确表示 PMF 仍在验证，用户是否愿意付费为时尚早",
-          "Personal AI 处于同质化竞争阶段，单点功能差异易被抹平",
-          "平台生态准入存在壁垒，海外已有 Amazon 限制 AI Agent 访问的案例",
-          "Personal AI 运行成本较高，订阅模式可能不是最合适商业模式",
-          "国内 Connector 生态不如美国成熟，还需考虑隐私合规问题"
-        ],
-        "related_direction_id": "",
-        "taxonomy_version": "TAG-V4.1",
-        "product_form_id": "end_user_application",
-        "market_category_id": "enterprise_applications",
-        "market_subcategory_id": "productivity_enterprise_workflows",
-        "market_application_id": "",
-        "use_case_ids": [
-          "productivity_enterprise_workflows",
-          "knowledge_search"
-        ],
-        "industry_ids": [],
-        "target_user_ids": [
-          "consumer",
-          "business_user"
-        ],
-        "sector": "Personal AI 私人助理应用",
-        "investment_thesis": {
-          "statement": "资本押注的核心变量是 Today AI 能否通过单 session、记忆机制和主动性构建 Personal AI 的长期留存与 Context 沉淀，并逐步训练自有交互模型以降低单位智能成本。当前已验证信号包括：首轮融资超过2亿美金、产品已上线美区与国区并接入飞书/钉钉/企业微信等 Connector。证据边界在于：来源明确表示 PMF 仍在验证、商业化不是现阶段第一优先级，且 Personal AI 处于同质化竞争阶段，留存与付费意愿尚无公开数据。",
-          "evidence_signals": [
-            "完成超过2亿美金首轮融资，投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产",
-            "产品于2026年9月9日起陆续上线国际版和国内版本",
-            "已支持飞书、钉钉、企业微信、滴答清单等平台 Connector"
-          ],
-          "risks": [
-            "来源明确表示 PMF 仍在验证，用户是否愿意付费为时尚早",
-            "Personal AI 处于同质化竞争阶段，单点功能差异易被抹平",
-            "平台生态准入存在壁垒，海外已有 Amazon 限制 AI Agent 访问的案例",
-            "Personal AI 运行成本较高，订阅模式可能不是最合适商业模式",
-            "国内 Connector 生态不如美国成熟，还需考虑隐私合规问题"
-          ],
-          "institutional_rationale_status": "not_disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Today",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "齐俊元",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "IDG资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "腾讯",
-          "canonical_entity_id": "EN-9c8ae69b84f21a2e",
-          "canonical_name": "腾讯"
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "五源资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "蚂蚁集团",
-          "canonical_entity_id": "EN-d30e5ffc0ba9150b",
-          "canonical_name": "蚂蚁集团"
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "红杉中国",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "传音控股",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "同歌创投",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "上海交大菡源资产",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Muse",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Instinct",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Town",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Grok Bot",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [],
-      "research_sources": [
-        {
-          "source_id": "FISRC-3787040a54f790a2",
-          "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
-          "title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
-          "publisher": "www.163.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-10-25T00:18:27.318Z",
-          "content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-          "source_artifact_id": "SA-7fdd4e005fa35409",
-          "raw_id": "RAW-d0430b5dc520626b"
-        },
-        {
-          "source_id": "FISRC-7c8ee941f7995d36",
-          "source_url": "https://forgeglobal.com/ant-financial_ipo/",
-          "title": "Ant Group IPO Timeline and Financing Details - Forge",
-          "publisher": "forgeglobal.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-10-25T00:42:03.351Z",
-          "content_hash": "021fe8c0f7a3d7d8",
-          "source_artifact_id": null,
-          "raw_id": null
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-flash",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-10-25T00:42:34.454Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-10-25T00:42:34.454Z",
-      "customer_research": {
-        "status": "no_verified_customer_found",
-        "verified_customer_count": 0,
-        "searched_source_count": 2
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "Today"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "齐俊元"
-          ]
-        }
-      },
-      "source_event_ids": [
-        "EV-aabe55266bd52958"
-      ],
-      "aggregation": {
-        "key": "EN-5a28a1a99a417ba5|other",
         "event_count": 1,
         "strategy": "company_and_normalized_round"
       }
@@ -2697,7 +2647,8 @@
             "本轮具体投资方未披露，无法验证资本结构与领投方背景",
             "来源未披露客户合同、订单或量产收入，商业化兑现仍待验证",
             "存算一体芯片需构建自身生态，来源引述创始人称仅参与现有生态不够",
-            "来源中关于能效比与算力的表述多为公司或创始人主张，缺少第三方量产数据佐证"
+            "来源中关于能效比与算力的表述多为公司或创始人主张，缺少第三方量产数据佐证",
+            "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
           ],
           "institutional_rationale_status": "not_disclosed"
         }
@@ -2885,7 +2836,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-25T00:43:06.299Z"
+      "updated_at": "2026-10-25T01:55:50.567Z"
     },
     {
       "event_id": "EV-95b8b70ca29ab623",
@@ -2894,7 +2845,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-25T00:43:06.299Z"
+      "updated_at": "2026-10-25T01:55:50.567Z"
     },
     {
       "event_id": "EV-ea103ce3f64fea8e",
@@ -2903,7 +2854,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-25T00:43:06.299Z"
+      "updated_at": "2026-10-25T01:55:50.567Z"
     },
     {
       "event_id": "EV-fa58c17e7bde893c",
@@ -2912,7 +2863,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-25T00:43:06.299Z"
+      "updated_at": "2026-10-25T01:55:50.567Z"
     },
     {
       "event_id": "EV-59841d8e9da58cd4",
@@ -2921,11 +2872,11 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-25T00:43:06.299Z"
+      "updated_at": "2026-10-25T01:55:50.567Z"
     },
     {
       "event_id": "EV-a8fc0677d43d7b8f",
-      "company_name": "芯片公司亿铸科技",
+      "company_name": "亿铸科技",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -2978,216 +2929,110 @@
           "count": 8
         }
       ],
-      "updated_at": "2026-10-25T00:43:06.299Z"
+      "updated_at": "2026-10-25T01:55:50.567Z"
     },
     {
-      "event_id": "EV-a9a656d5f74c391a",
-      "company_name": "「元示科技」连续",
+      "event_id": "EV-04fb7521fa0fe4a9",
+      "company_name": "元示科技",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "元示科技 融资 创新工场"
+      ],
+      "attempts": [
+        {
+          "provider": "web_search",
+          "query": "元示科技 融资 创新工场",
+          "url": "https://caifuhao.eastmoney.com/news/20261023171857145535540",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-10-25T02:03:10.102Z"
+    },
+    {
+      "event_id": "EV-c4491ccfef9e3d73",
+      "company_name": "Today AI",
       "status": "blocked",
       "problems": [
         "research_sources_insufficient"
       ],
       "queries": [
-        "\"「元示科技」连续\" 2026 融资 投资方",
-        "\"「元示科技」连续\" 近亿元人民币 融资 领投 跟投",
-        "\"「元示科技」连续\" 官网 产品 服务",
-        "\"「元示科技」连续\" 投资机构 融资用途",
-        "\"「元示科技」连续\" 2026 本轮融资 公告",
-        "\"「元示科技」连续\" 客户 创始人 总部"
+        "\"Today AI\" 2026 funding round investors",
+        "\"Today AI\" 超过2亿美金 funding announcement",
+        "\"Today AI\" official product customers",
+        "\"Today AI\" \"why we invested\"",
+        "\"Today AI\" 2026 raises led by",
+        "\"Today AI\" founders headquarters product"
       ],
       "attempts": [
         {
-          "provider": "anysearch",
-          "query": "\"「元示科技」连续\" 2026 融资 投资方",
+          "provider": "bing_rss",
+          "query": "\"Today AI\" 2026 funding round investors",
           "status": "completed",
           "count": 8
         },
         {
-          "provider": "anysearch",
-          "query": "\"「元示科技」连续\" 近亿元人民币 融资 领投 跟投",
+          "provider": "original",
+          "url": "https://today.ai/articles/zh-Hans",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.today.com.hk/top.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"Today AI\" 超过2亿美金 funding announcement",
           "status": "completed",
           "count": 8
         },
         {
-          "provider": "anysearch",
-          "query": "\"「元示科技」连续\" 官网 产品 服务",
+          "provider": "bing_rss",
+          "query": "\"Today AI\" official product customers",
           "status": "completed",
           "count": 8
         },
         {
-          "provider": "anysearch",
-          "query": "\"「元示科技」连续\" 投资机构 融资用途",
+          "provider": "bing_rss",
+          "query": "\"Today AI\" \"why we invested\"",
           "status": "completed",
           "count": 8
         },
         {
-          "provider": "anysearch",
-          "query": "\"「元示科技」连续\" 2026 本轮融资 公告",
+          "provider": "bing_rss",
+          "query": "\"Today AI\" 2026 raises led by",
           "status": "completed",
           "count": 8
         },
         {
-          "provider": "anysearch",
-          "query": "\"「元示科技」连续\" 客户 创始人 总部",
+          "provider": "bing_rss",
+          "query": "\"Today AI\" founders headquarters product",
           "status": "completed",
           "count": 8
         }
       ],
-      "updated_at": "2026-10-25T00:43:06.299Z",
+      "updated_at": "2026-10-25T01:55:50.567Z",
       "deferral": {
         "version": "FINANCING-RESEARCH-DEFERRAL-1",
-        "event_id": "EV-a9a656d5f74c391a",
+        "event_id": "EV-c4491ccfef9e3d73",
         "status": "pending_verification",
         "reason": "research_sources_insufficient",
         "sources": [
           {
-            "raw_id": "RAW-7591d7bb5aa46d2c",
-            "source_ref": "SA-745b135d531df22e",
-            "content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
-            "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima"
+            "raw_id": "RAW-d0430b5dc520626b",
+            "source_ref": "SA-7fdd4e005fa35409",
+            "content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
+            "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html"
           }
         ],
-        "input_hash": "dc2f4bcf0a2fdb45c3d29ee5df734710615e64ed672606e4a6b5ab0d5d388dd9",
+        "input_hash": "323a90a0e1fedce8e27b0afc9f2714df588f48d7f1fdb6f5cc86198e6d541fbf",
         "next_action": "recover_existing_originals_and_complete_independent_research",
         "fact_approval": false
       }
-    },
-    {
-      "event_id": "EV-aabe55266bd52958",
-      "company_name": "Ant Group",
-      "status": "auto_published",
-      "problems": [],
-      "queries": [
-        "\"Ant Group\" 2026 funding round investors",
-        "\"Ant Group\" official product customers",
-        "\"Ant Group\" \"why we invested\"",
-        "\"Ant Group\" founders headquarters product"
-      ],
-      "attempts": [
-        {
-          "provider": "anysearch",
-          "query": "\"Ant Group\" 2026 funding round investors",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "original",
-          "url": "https://tracxn.com/d/companies/ant-group/__E8OZrdWNYNwgnRYvc_L2U9TqiFscoXXhnjImUbMZev4",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "original",
-          "url": "https://pitchbook.com/profiles/company/99609-31",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "original",
-          "url": "https://finance.yahoo.com/markets/crypto/articles/ant-international-raises-1-2bn-095315743.html",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "original",
-          "url": "https://www.fintechfutures.com/venture-capital-funding/ant-international-1.2bn-series-a",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "planner",
-          "query": "\"蚂蚁集团\" 超过2亿美金 funding announcement",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"Ant Group\" official product customers",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "original",
-          "url": "https://www.antgroup.com/en",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "original",
-          "url": "https://www.facebook.com/bloombergbusiness/posts/jack-ma-backed-ant-group-is-testing-an-overhaul-to-its-alipay-super-app-that-wou/1425701459415943/",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"Ant Group\" \"why we invested\"",
-          "status": "empty",
-          "count": 0
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Ant Group\" \"why we invested\"",
-          "status": "failed",
-          "http_status": 432,
-          "retry_after": ""
-        },
-        {
-          "provider": "exa",
-          "query": "\"Ant Group\" \"why we invested\"",
-          "status": "quota_exhausted",
-          "http_status": 402,
-          "retry_after": ""
-        },
-        {
-          "provider": "bing_rss",
-          "query": "\"Ant Group\" \"why we invested\"",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "planner",
-          "query": "\"蚂蚁集团\" 2026 raises led by",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"Ant Group\" founders headquarters product",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "original",
-          "url": "https://www.ant-group.com/",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "original",
-          "url": "https://marketswiki.com/wiki/Ant_Group",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "original",
-          "url": "https://xiaohuanxiong.com/en",
-          "status": "excluded",
-          "reason": "company_not_in_original"
-        },
-        {
-          "provider": "original",
-          "url": "https://dealroom.co/news/165603-redotpay-buys-licensed-btcbox-to-enter-japan-halts-non-compliant-service/",
-          "status": "excluded",
-          "reason": "company_not_in_original"
-        },
-        {
-          "provider": "original",
-          "url": "https://forgeglobal.com/stripe_stock/",
-          "status": "excluded",
-          "reason": "company_not_in_original"
-        }
-      ],
-      "updated_at": "2026-10-25T00:43:06.299Z"
     },
     {
       "event_id": "EV-2fec4f79947812c1",
@@ -3242,7 +3087,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-25T00:43:06.299Z"
+      "updated_at": "2026-10-25T01:55:50.567Z"
     },
     {
       "event_id": "EV-aab9f971ed5a99b4",
@@ -3310,7 +3155,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-10-25T00:43:06.299Z"
+      "updated_at": "2026-10-25T01:55:50.567Z"
     },
     {
       "event_id": "EV-fe4e2cdf3f2a5075",
@@ -3319,7 +3164,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-25T00:43:06.299Z"
+      "updated_at": "2026-10-25T01:55:50.567Z"
     },
     {
       "event_id": "EV-9dbf7a6b84a4aa21",
@@ -3328,7 +3173,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-25T00:43:06.299Z"
+      "updated_at": "2026-10-25T01:55:50.567Z"
     },
     {
       "event_id": "EV-9fc0a31d4c3565a9",
@@ -3337,7 +3182,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-25T00:43:06.299Z"
+      "updated_at": "2026-10-25T01:55:50.567Z"
     },
     {
       "event_id": "EV-0d7fe2f7274f7448",
@@ -3346,7 +3191,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-25T00:43:06.299Z"
+      "updated_at": "2026-10-25T01:55:50.567Z"
     },
     {
       "event_id": "EV-741856a05543c233",
@@ -3355,7 +3200,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-25T00:43:06.299Z"
+      "updated_at": "2026-10-25T01:55:50.567Z"
     },
     {
       "event_id": "EV-5f298468c125d834",
@@ -3364,7 +3209,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-25T00:43:06.299Z"
+      "updated_at": "2026-10-25T01:55:50.567Z"
     },
     {
       "event_id": "EV-cd3cf94d0f65aea1",
@@ -3373,7 +3218,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-25T00:43:06.299Z"
+      "updated_at": "2026-10-25T01:55:50.567Z"
     },
     {
       "event_id": "EV-51f0958b144e699a",
@@ -3382,7 +3227,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-25T00:43:06.299Z"
+      "updated_at": "2026-10-25T01:55:50.567Z"
     },
     {
       "event_id": "EV-c1832bf5603ccc52",
@@ -3391,7 +3236,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-25T00:43:06.299Z"
+      "updated_at": "2026-10-25T01:55:50.567Z"
     }
   ]
 }

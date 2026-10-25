@@ -2,12 +2,12 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.3",
-    "candidate_count": 2682,
-    "product_candidates": 1513,
+    "candidate_count": 2683,
+    "product_candidates": 1514,
     "person_candidates": 1169,
-    "china_market_candidates": 663,
-    "china_market_product_candidates": 542,
-    "china_market_person_candidates": 121,
+    "china_market_candidates": 666,
+    "china_market_product_candidates": 544,
+    "china_market_person_candidates": 122,
     "rule": "Application evidence never mutates canonical V4 entities automatically."
   },
   "candidates": [
@@ -31669,6 +31669,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-ece53531b8005a57",
+      "candidate_kind": "person",
+      "research_name": "吴佳奇",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-8955b63e8cdae8ac"
+      ],
+      "funding_insight_ids": [
+        "FI-cd7fc3e80ca1a258"
+      ],
+      "source_event_ids": [
+        "EV-04fb7521fa0fe4a9"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c87e5ef760ceb82c",
+          "quote": "元示科技的创始人是吴佳奇，北京大学前沿交叉学科研究院2017级博士。",
+          "source_content_hash": "d9d5ef64bdc32d25",
+          "quote_hash": "94726c2b5faaac518c41f2b75b59d9c44604006ed8ce0b6e38154f322cf42f5f"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-fea394853f8a0648",
       "candidate_kind": "person",
       "research_name": "吴小航",
@@ -35409,34 +35437,6 @@
         "CN"
       ],
       "china_market_match": true
-    },
-    {
-      "candidate_id": "FIER-f1cee382c5ce1009",
-      "candidate_kind": "person",
-      "research_name": "齐俊元",
-      "status": "pending_canonical_review",
-      "reason": "canonical_exact_match_missing",
-      "company_entity_ids": [
-        "EN-5a28a1a99a417ba5"
-      ],
-      "funding_insight_ids": [
-        "FI-8210a49d0d06e2d3"
-      ],
-      "source_event_ids": [
-        "EV-aabe55266bd52958"
-      ],
-      "evidence_refs": [
-        {
-          "source_id": "FISRC-3787040a54f790a2",
-          "quote": "创始人齐俊元曾创办Teambition，之后在阿里、字节等大厂负责过各类产品。",
-          "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-          "quote_hash": "02798d2033c8647399cf86811555639ae6a3ff284646466df273352b3625fba5"
-        }
-      ],
-      "market_regions": [
-        "GLOBAL"
-      ],
-      "china_market_match": false
     },
     {
       "candidate_id": "FIER-38387e8980feb753",
@@ -39909,6 +39909,40 @@
           "quote": "打造算电协同平台、AI虚拟电厂平台、智能运维平台等产品矩阵",
           "source_content_hash": "b652dc815aea1925",
           "quote_hash": "ea091e0492a47a016acafe6faf6810f7099be61e6580372e1dc951105b633572"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-830727c657c3328c",
+      "candidate_kind": "product",
+      "research_name": "AI虚拟细胞（通用细胞模型）",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-8955b63e8cdae8ac"
+      ],
+      "funding_insight_ids": [
+        "FI-cd7fc3e80ca1a258"
+      ],
+      "source_event_ids": [
+        "EV-04fb7521fa0fe4a9"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c87e5ef760ceb82c",
+          "quote": "只要给它输入\"加入某种药物\"的口令，它就能像真实细胞一样做出\"反应\"。",
+          "source_content_hash": "d9d5ef64bdc32d25",
+          "quote_hash": "3ce71df548de9fa089e4a98378ce3351177facb1e056522c8345c394aa6d11cf"
+        },
+        {
+          "source_id": "FISRC-27c3776c7b3aedc0",
+          "quote": "如何让 AI 更准确地预测细胞在不同疾病状态、实验条件和干预方式下的响应",
+          "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+          "quote_hash": "52b31aa46f95d4d86b32e3736196eea5e70b55de6098946330194bcde34cbaed"
         }
       ],
       "market_regions": [
@@ -70504,40 +70538,6 @@
       "china_market_match": true
     },
     {
-      "candidate_id": "FIER-0496dbc230b26c58",
-      "candidate_kind": "product",
-      "research_name": "Today",
-      "status": "pending_canonical_review",
-      "reason": "canonical_exact_match_missing",
-      "company_entity_ids": [
-        "EN-5a28a1a99a417ba5"
-      ],
-      "funding_insight_ids": [
-        "FI-8210a49d0d06e2d3"
-      ],
-      "source_event_ids": [
-        "EV-aabe55266bd52958"
-      ],
-      "evidence_refs": [
-        {
-          "source_id": "FISRC-3787040a54f790a2",
-          "quote": "用一句话概括，Today希望做的是用户的“私人助理”。",
-          "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-          "quote_hash": "648b4eaa68eacc416fc819e47ff7e3d7e3659535737ccb235e6855a50c45387c"
-        },
-        {
-          "source_id": "FISRC-3787040a54f790a2",
-          "quote": "9月先在美区上线，两周后国区跟上，并迅速支持了飞书、钉钉、企业微信、滴答清单等平台。",
-          "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
-          "quote_hash": "ed172bc30abdadea12fe4ede3cab237b947ca0d6f73623286721251304742523"
-        }
-      ],
-      "market_regions": [
-        "GLOBAL"
-      ],
-      "china_market_match": false
-    },
-    {
       "candidate_id": "FIER-f3059cc55b5ef6c8",
       "candidate_kind": "product",
       "research_name": "Together AI 全栈开源 AI 平台",
@@ -82465,6 +82465,34 @@
         "GLOBAL"
       ],
       "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-0c6cf464684c259a",
+      "candidate_kind": "product",
+      "research_name": "超高通量细胞扰动实验产线",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-8955b63e8cdae8ac"
+      ],
+      "funding_insight_ids": [
+        "FI-cd7fc3e80ca1a258"
+      ],
+      "source_event_ids": [
+        "EV-04fb7521fa0fe4a9"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c87e5ef760ceb82c",
+          "quote": "元示科技自己建了一条超高通量的细胞扰动实验产线——用自动化设备在实验室里同时做成千上万个细胞扰动实验，低成本、高通量地产生\"扰动转录组学数据\"。",
+          "source_content_hash": "d9d5ef64bdc32d25",
+          "quote_hash": "12e52858f9f42fd993fde7d404f2e74a841bf4e8dfd4fb3eef4727b4c3d7716c"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
     },
     {
       "candidate_id": "FIER-9f20fdb3d05a8257",
