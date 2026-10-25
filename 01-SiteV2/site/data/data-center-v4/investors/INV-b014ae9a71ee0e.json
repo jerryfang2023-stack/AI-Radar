@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-24T04:01:06.404Z",
-    "latestDataDate": "2026-10-24",
-    "currentDate": "2026-10-24",
-    "eventCount": 4256,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-25",
+    "currentDate": "2026-10-25",
+    "eventCount": 4268,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -61,22 +62,72 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-10-24",
+    "latest_disclosed_at": "2026-10-24",
     "role_counts": {
-      "historical_or_ambiguous": 2
+      "historical_or_ambiguous": 2,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "other"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-5a28a1a99a417ba5",
+        "canonical_entity_id": "",
+        "name": "Today AI"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-0b163e883ae1fb6e",
+        "funding_insight_id": "FI-0178e4293f10ac23",
+        "event_ids": [
+          "EV-aabe55266bd52958"
+        ],
+        "company_entity_id": "EN-5a28a1a99a417ba5",
+        "company_canonical_entity_id": "",
+        "company_name": "Today AI",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "首轮",
+        "amount_original": "超过2亿美金",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": 200000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 2 亿美元"
+        },
+        "announced_at": "2026-10-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3787040a54f790a2",
+            "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
+            "source_title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
+            "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
+            "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
+            "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e4f560250306bfcd",
         "funding_insight_id": "FI-66e7dd713fc6bab5",
@@ -144,6 +195,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-3787040a54f790a2",
+        "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
+        "source_title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
+        "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
+        "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
+        "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
+      },
       {
         "source_id": "FISRC-7a614400d44a7041",
         "source_url": "https://news.pedaily.cn/202604/562366.shtml",
@@ -220,6 +279,10 @@
       ],
       "track_record": [
         {
+          "description": "融资来源记录：Today AI · 其他融资 · 2026-10-24 · 本轮参投 · 超过2亿美金。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3787040a54f790a2"
+        },
+        {
           "description": "融资来源记录：星海图 · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7a614400d44a7041"
         },
@@ -247,6 +310,14 @@
           "quote_hash": "81a7e9d3706dd17f436859199a633fb365360b55d0799e9b095c1dbd41f88d02"
         },
         {
+          "source_id": "FISRC-3787040a54f790a2",
+          "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
+          "source_title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
+          "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
+          "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
+          "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
+        },
+        {
           "source_id": "FISRC-7a614400d44a7041",
           "source_url": "https://news.pedaily.cn/202604/562366.shtml",
           "source_title": "星海图又融资20亿，估值200亿",
@@ -271,7 +342,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[1].role": {
+        "activities[2].role": {
           "text": "Pre-A轮跟投",
           "source_hash": "9306282e5fd3ce623e009065f8fbf0fd8c2acd50b228ea756806f4b558632a17",
           "provider": "deepseek",

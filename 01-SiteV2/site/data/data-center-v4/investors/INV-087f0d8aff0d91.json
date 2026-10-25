@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-24T04:01:06.404Z",
-    "latestDataDate": "2026-10-24",
-    "currentDate": "2026-10-24",
-    "eventCount": 4256,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-25",
+    "currentDate": "2026-10-25",
+    "eventCount": 4268,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -62,21 +63,53 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "CN"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2025-01",
+    "latest_disclosed_at": "2025-01",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-2e24a8ea967a40dc",
+        "funding_insight_id": "FI-98bf809bafca6956",
+        "event_ids": [
+          "EV-a8fc0677d43d7b8f"
+        ],
+        "company_entity_id": "EN-56a0ba67ee43de65",
+        "company_canonical_entity_id": "",
+        "company_name": "亿铸科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2025-01",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2025年10月轮参与",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-0cbb04b7d23b3a2c",
+            "source_url": "https://feng.ifeng.com/c/8xSsVbT9zaE",
+            "source_title": "芯片公司亿铸科技宣布完成超10亿元融资_大风号",
+            "source_content_hash": "141b00dcaac94dc2ee089cb370a498a533164c5f3a2b9024e935c27ae6531ce2",
+            "quote": "2025年10月其完成新一轮融资，由兴湘资本、农银国际、盈科值得、合鼎共资本共同参与",
+            "quote_hash": "dc6cb97a3dae4db813fcbca716830cc5777d67a83ec7c9561801c9ee2eb1d17a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-70055ed0c8e9d3bd",
         "funding_insight_id": "FI-86634a7717d63426",
@@ -112,6 +145,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-0cbb04b7d23b3a2c",
+        "source_url": "https://feng.ifeng.com/c/8xSsVbT9zaE",
+        "source_title": "芯片公司亿铸科技宣布完成超10亿元融资_大风号",
+        "source_content_hash": "141b00dcaac94dc2ee089cb370a498a533164c5f3a2b9024e935c27ae6531ce2",
+        "quote": "2025年10月其完成新一轮融资，由兴湘资本、农银国际、盈科值得、合鼎共资本共同参与",
+        "quote_hash": "dc6cb97a3dae4db813fcbca716830cc5777d67a83ec7c9561801c9ee2eb1d17a"
+      },
       {
         "source_id": "FISRC-cd5b0b79e0cacd63",
         "source_url": "https://news.pedaily.cn/202503/547159.shtml",
@@ -156,6 +197,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：亿铸科技 · 历史轮次未披露 · 2025-01 · 2025年10月轮参与。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0cbb04b7d23b3a2c"
+        },
+        {
           "description": "融资来源记录：驰芯半导体 · 历史轮次未披露 · A轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cd5b0b79e0cacd63"
         }
@@ -169,6 +214,14 @@
           "source_content_hash": "0a25b873a567c162776621ec87a665d370fc6ca63ec7c49e04e1bc20cebc9700",
           "quote": "农银国际控股有限公司于2009年11月在香港成立，股本港币41.13亿元，本行持股100%。农银国际在香港可从事上市保荐承销、债券发行承销、财务顾问、资产管理、直接投资、机构销售、证券经纪、证券咨询等全方位、一体化的金融服务；在内地可从事私募基金管理、财务顾问、投资等业务。截至2023年末，农银国际总资产469.02亿港元，净资产104.82亿港元，全年实现净利润1.49亿港元。",
           "quote_hash": "0a25b873a567c162776621ec87a665d370fc6ca63ec7c49e04e1bc20cebc9700"
+        },
+        {
+          "source_id": "FISRC-0cbb04b7d23b3a2c",
+          "source_url": "https://feng.ifeng.com/c/8xSsVbT9zaE",
+          "source_title": "芯片公司亿铸科技宣布完成超10亿元融资_大风号",
+          "source_content_hash": "141b00dcaac94dc2ee089cb370a498a533164c5f3a2b9024e935c27ae6531ce2",
+          "quote": "2025年10月其完成新一轮融资，由兴湘资本、农银国际、盈科值得、合鼎共资本共同参与",
+          "quote_hash": "dc6cb97a3dae4db813fcbca716830cc5777d67a83ec7c9561801c9ee2eb1d17a"
         },
         {
           "source_id": "FISRC-cd5b0b79e0cacd63",

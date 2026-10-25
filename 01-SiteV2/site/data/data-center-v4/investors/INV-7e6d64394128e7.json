@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-24T04:01:06.404Z",
-    "latestDataDate": "2026-10-24",
-    "currentDate": "2026-10-24",
-    "eventCount": 4256,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-25",
+    "currentDate": "2026-10-25",
+    "eventCount": 4268,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -61,9 +62,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 13,
+    "current_round_count": 14,
     "historical_or_ambiguous_count": 14,
-    "portfolio_company_count": 13,
+    "portfolio_company_count": 14,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -71,12 +72,12 @@
     "china_market_activity_count": 12,
     "china_market_company_count": 12,
     "first_disclosed_at": "2026-01-12",
-    "latest_disclosed_at": "2026-10-09",
+    "latest_disclosed_at": "2026-10-24",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 14,
       "lead": 1,
-      "participant": 10
+      "participant": 11
     },
     "round_codes": [
       "angel",
@@ -154,9 +155,54 @@
         "entity_id": "FICO-anew-labs",
         "canonical_entity_id": "",
         "name": "Anew Labs（新生实验室）"
+      },
+      {
+        "entity_id": "EN-5a28a1a99a417ba5",
+        "canonical_entity_id": "",
+        "name": "Today AI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-8caf4d2a3f6797ea",
+        "funding_insight_id": "FI-0178e4293f10ac23",
+        "event_ids": [
+          "EV-aabe55266bd52958"
+        ],
+        "company_entity_id": "EN-5a28a1a99a417ba5",
+        "company_canonical_entity_id": "",
+        "company_name": "Today AI",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "首轮",
+        "amount_original": "超过2亿美金",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": 200000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 2 亿美元"
+        },
+        "announced_at": "2026-10-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3787040a54f790a2",
+            "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
+            "source_title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
+            "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
+            "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
+            "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b378e35d32d7c783",
         "funding_insight_id": "FI-55c412cc6616d862",
@@ -1162,6 +1208,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-3787040a54f790a2",
+        "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
+        "source_title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
+        "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
+        "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
+        "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
+      },
+      {
         "source_id": "FISRC-a60cc435d9a05afa",
         "source_url": "https://finance.sina.com.cn/stock/t/2026-10-09/doc-iniuqywq1127772.shtml",
         "source_title": "攻克超声穿颅读脑，拿下 4 亿元新融资，他们要做脑科学的「英伟达」",
@@ -1451,12 +1505,12 @@
           "source_id": "hongshan_about"
         },
         {
-          "description": "融资来源记录：鲲为科技 · 轮次未披露 · 2026-10-09 · 本轮参投 · 4 亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a60cc435d9a05afa"
+          "description": "融资来源记录：Today AI · 其他融资 · 2026-10-24 · 本轮参投 · 超过2亿美金。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3787040a54f790a2"
         },
         {
-          "description": "融资来源记录：蝴蝶效应（Butterfly Effect） · B+轮 · 2026-10-08 · 本轮参投 · 超过5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fa1b68e4f1bdb348"
+          "description": "融资来源记录：鲲为科技 · 轮次未披露 · 2026-10-09 · 本轮参投 · 4 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a60cc435d9a05afa"
         }
       ],
       "contacts": [
@@ -1485,6 +1539,14 @@
           "quote_hash": "f4d15ec4b3e8343bd9c848911b95fbf6648ba3eaa4b2a17ef1b4616f96e8143f"
         },
         {
+          "source_id": "FISRC-3787040a54f790a2",
+          "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
+          "source_title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
+          "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
+          "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
+          "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
+        },
+        {
           "source_id": "FISRC-a60cc435d9a05afa",
           "source_url": "https://finance.sina.com.cn/stock/t/2026-10-09/doc-iniuqywq1127772.shtml",
           "source_title": "攻克超声穿颅读脑，拿下 4 亿元新融资，他们要做脑科学的「英伟达」",
@@ -1499,14 +1561,6 @@
           "source_content_hash": "4485c3ef38069f76",
           "quote": "新增股东包括XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
           "quote_hash": "65792301313d171788af374c8446a5fef8d19ca4ff524b6f105bfd324e2d99b8"
-        },
-        {
-          "source_id": "FISRC-fa1b68e4f1bdb348",
-          "source_url": "https://m.sohu.com/a/1086745904_115571?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-          "source_title": "Manus融资5亿美元回归国内市场，还有机会吗？",
-          "source_content_hash": "092b22b325c27f3c",
-          "quote": "由博裕投资、IDG资本领投，老股东腾讯、红杉中国、真格基金继续加持。",
-          "quote_hash": "3d8b104c8643dde0601a0519ccc824dc495e64d6396dac17bcf24c4f2933877c"
         }
       ],
       "last_verified_at": "2026-09-25",

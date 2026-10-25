@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-24T04:01:06.404Z",
-    "latestDataDate": "2026-10-24",
-    "currentDate": "2026-10-24",
-    "eventCount": 4256,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-25",
+    "currentDate": "2026-10-25",
+    "eventCount": 4268,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -698,7 +699,7 @@
       "EN-b9db1ff13ae8496e"
     ],
     "firstSeen": "2022-10-01",
-    "lastSeen": "2026-10-24",
+    "lastSeen": "2026-10-25",
     "relationIds": [
       "REL2-59587a82f0b820bc",
       "REL2-39c721b66f466667",
@@ -766,9 +767,9 @@
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-7684bfb9b954c1fd",
-        "EV-c964f7646ad88c1e",
         "EV-5fbe1afea8264e75",
         "EV-2ad2ae14a594df04",
+        "EV-c964f7646ad88c1e",
         "EV-f7bf3f9c38e015fc",
         "EV-b51a67353e247022",
         "EV-c7b060541ca00208",
@@ -1346,7 +1347,7 @@
     "timeline": [
       {
         "id": "EV-7684bfb9b954c1fd",
-        "dataDate": "2026-10-24",
+        "dataDate": "2026-10-25",
         "date": "2026-10-23",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -1364,25 +1365,8 @@
         ]
       },
       {
-        "id": "EV-c964f7646ad88c1e",
-        "dataDate": "2026-10-24",
-        "date": "2026-10-22",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "DeepSeek 融资 150 亿美元，挑战美国领先实验室",
-        "displayTags": [],
-        "entityIds": [
-          "EN-6f7ac1823da81d2e",
-          "EN-c70eca6b0f88f44d",
-          "EN-7d3194f79e645c42"
-        ]
-      },
-      {
         "id": "EV-5fbe1afea8264e75",
-        "dataDate": "2026-10-24",
+        "dataDate": "2026-10-25",
         "date": "2026-10-20",
         "eventType": "acquisition",
         "eventTypeLabel": "并购",
@@ -1398,7 +1382,7 @@
       },
       {
         "id": "EV-2ad2ae14a594df04",
-        "dataDate": "2026-10-24",
+        "dataDate": "2026-10-25",
         "date": "2026-10-23",
         "eventType": "ipo_listing",
         "eventTypeLabel": "IPO 与上市",
@@ -1409,6 +1393,23 @@
         "displayTags": [],
         "entityIds": [
           "EN-407a75b4abd9e9aa",
+          "EN-c70eca6b0f88f44d",
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-c964f7646ad88c1e",
+        "dataDate": "2026-10-24",
+        "date": "2026-10-22",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "DeepSeek 融资 150 亿美元，挑战美国领先实验室",
+        "displayTags": [],
+        "entityIds": [
+          "EN-6f7ac1823da81d2e",
           "EN-c70eca6b0f88f44d",
           "EN-7d3194f79e645c42"
         ]
@@ -19092,7 +19093,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-10-24"
+      "lastSeen": "2026-10-25"
     },
     {
       "id": "EN-52fc33ae4d101a5d",
@@ -19355,7 +19356,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-01-14",
-      "lastSeen": "2026-10-24"
+      "lastSeen": "2026-10-25"
     },
     {
       "id": "EN-4d748ebd71af03a7",
@@ -21203,7 +21204,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-10-24"
+      "lastSeen": "2026-10-25"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -21214,6 +21215,8 @@
       "eventIds": [
         "EV-07911ca790bdfc5a",
         "EV-353261ac722ca40b",
+        "EV-aab9f971ed5a99b4",
+        "EV-ebc7cbce77c27a1d",
         "EV-c66ddcd78c89a643",
         "EV-87beb0ebdfa293de",
         "EV-ff12e2bb9d4ad359",
@@ -21895,6 +21898,8 @@
       "entityIds": [
         "EN-22dc02488a037639",
         "EN-c53e6deb84236ea0",
+        "EN-ffad923c7afc100d",
+        "EN-75d16a5d8729c00d",
         "EN-eba7990af95abefe",
         "EN-54856813e7170b52",
         "EN-954adfa4d922fa30",
@@ -28413,7 +28418,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2024-09-05",
-      "lastSeen": "2026-10-24"
+      "lastSeen": "2026-10-25"
     },
     {
       "id": "TX-use_case-software_development",

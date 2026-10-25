@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-24T04:01:06.404Z",
-    "latestDataDate": "2026-10-24",
-    "currentDate": "2026-10-24",
-    "eventCount": 4256,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-25",
+    "currentDate": "2026-10-25",
+    "eventCount": 4268,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -59,6 +60,7 @@
     "typeLabel": "技术",
     "valueId": "embodied_ai",
     "eventIds": [
+      "EV-154cd37c0eefda85",
       "EV-4746cc586107aaf7",
       "EV-7c5953aae2767bfa",
       "EV-d6ef2e46d3005d9b",
@@ -185,6 +187,7 @@
       "EV-08f736f61f2b46f3"
     ],
     "entityIds": [
+      "EN-070a1175c6e4226b",
       "EN-21d3a1a229937a08",
       "EN-55a5064b725214bf",
       "EN-a244384ccfb8ec48",
@@ -306,9 +309,102 @@
       "HW-1450585d9cd5879f"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-10-24"
+    "lastSeen": "2026-10-25"
   },
   "events": [
+    {
+      "id": "EV-154cd37c0eefda85",
+      "dataDate": "2026-10-25",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "机器人芯片公司辉羲智能年内融资超25亿元，雷军也投了",
+      "originalTitle": "",
+      "subject": "机器人芯片公司辉羲智能年内",
+      "action": "融资",
+      "object": "超25亿元，雷军也投了",
+      "metrics": [
+        "25亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-070a1175c6e4226b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-070a1175c6e4226b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-070a1175c6e4226b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-070a1175c6e4226b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-070a1175c6e4226b"
+      ],
+      "entityNames": [
+        "机器人芯片公司辉羲智能年内"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://k.sina.com.cn/article_2587691232_9a3d08e002001wtz0.html?from=finance",
+      "publisher": "k.sina.com.cn"
+    },
     {
       "id": "EV-4746cc586107aaf7",
       "dataDate": "2026-10-24",
@@ -26617,6 +26713,27 @@
   ],
   "entities": [
     {
+      "id": "EN-070a1175c6e4226b",
+      "name": "机器人芯片公司辉羲智能年内",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-154cd37c0eefda85"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-25"
+    },
+    {
       "id": "EN-21d3a1a229937a08",
       "name": "Enact Intelligence",
       "entityType": "organization_candidate",
@@ -30015,7 +30132,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-10-24"
+      "lastSeen": "2026-10-25"
     },
     {
       "id": "EN-e3ce9cc5efa9354c",

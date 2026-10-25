@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-24T04:01:06.404Z",
-    "latestDataDate": "2026-10-24",
-    "currentDate": "2026-10-24",
-    "eventCount": 4256,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-25",
+    "currentDate": "2026-10-25",
+    "eventCount": 4268,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -63,24 +64,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-12-06",
-    "latest_disclosed_at": "2026-08-18",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-ffad923c7afc100d",
+        "canonical_entity_id": "",
+        "name": "Daytona"
+      },
       {
         "entity_id": "EN-67e05af6c6502566",
         "canonical_entity_id": "",
@@ -103,6 +110,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-8a44faefa1b43615",
+        "funding_insight_id": "FI-889913dde88c0186",
+        "event_ids": [
+          "EV-aab9f971ed5a99b4"
+        ],
+        "company_entity_id": "EN-ffad923c7afc100d",
+        "company_canonical_entity_id": "",
+        "company_name": "Daytona",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$60M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5dadf72976d5866",
+            "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
+            "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
+            "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+            "quote": "Qualcomm Ventures, Samsung Next and Okta Ventures joined as strategic investors, alongside Evergreen Fund, Alumni Ventures and Torch Capital.",
+            "quote_hash": "ebbd72ee73fb1f6bb20a985e5c0b6db9cfdef476ae965027df54fa6fc8b0c265"
+          }
+        ]
+      },
       {
         "activity_id": "IA-420f3d57b818b796",
         "funding_insight_id": "FI-234ea139e379bc15",
@@ -330,6 +377,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c5dadf72976d5866",
+        "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
+        "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
+        "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+        "quote": "Qualcomm Ventures, Samsung Next and Okta Ventures joined as strategic investors, alongside Evergreen Fund, Alumni Ventures and Torch Capital.",
+        "quote_hash": "ebbd72ee73fb1f6bb20a985e5c0b6db9cfdef476ae965027df54fa6fc8b0c265"
+      },
+      {
         "source_id": "FISRC-7cafec2373293af1",
         "source_url": "https://www.synthefy.com/blog/synthefy-raises-6-5m-for-structured-data-foundation-models",
         "source_title": "为全球结构化数据构建基础模型",
@@ -403,16 +458,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Daytona · B轮 · 2026-10-21 · 本轮参投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c5dadf72976d5866"
+        },
+        {
           "description": "融资来源记录：Synthefy · 种子轮 · 2026-08-18 · 本轮参投 · $6.5M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7cafec2373293af1"
         },
         {
           "description": "融资来源记录：Xpander · 种子轮 · 2026-08-17 · 本轮参投 · $7.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b58915641f762a44"
-        },
-        {
-          "description": "融资来源记录：Graphon AI · 种子轮 · 2026-05-14 · 本轮参投 · $8.3 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9c4c0f115d1f38be"
         }
       ],
       "profile_type": "organization",
@@ -474,6 +529,14 @@
           "quote_hash": "54fc0bd8a9e97beaa861f1d10e309e8b05342cb7dbce44b6de71f7cc7e71b508"
         },
         {
+          "source_id": "FISRC-c5dadf72976d5866",
+          "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
+          "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
+          "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+          "quote": "Qualcomm Ventures, Samsung Next and Okta Ventures joined as strategic investors, alongside Evergreen Fund, Alumni Ventures and Torch Capital.",
+          "quote_hash": "ebbd72ee73fb1f6bb20a985e5c0b6db9cfdef476ae965027df54fa6fc8b0c265"
+        },
+        {
           "source_id": "FISRC-7cafec2373293af1",
           "source_url": "https://www.synthefy.com/blog/synthefy-raises-6-5m-for-structured-data-foundation-models",
           "source_title": "为全球结构化数据构建基础模型",
@@ -488,14 +551,6 @@
           "source_content_hash": "50cfddf83c4d2ddc2d52d1ee484eee826ecffd6d396dc17103ca4bed20d177e8",
           "quote": "Xpander today announced a $7.5 million Seed round led by Pico Venture Partners with participation from Emerge Ventures, Samsung Next, and SeedIL.",
           "quote_hash": "a78ed035c5da0c7f827e96d9a06c29e26212e7cc0d0b2fd3f8f2ef5ed4a6ab87"
-        },
-        {
-          "source_id": "FISRC-9c4c0f115d1f38be",
-          "source_url": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
-          "source_title": "Graphon AI 获 830 万美元种子轮融资，为企业 AI 构建预模型智能层",
-          "source_content_hash": "941bad55959a928e",
-          "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, and others",
-          "quote_hash": "7c176b4b41b7098a91cc6bee2d0e11583636621116a7d1b03812d837f992c5a8"
         }
       ],
       "last_verified_at": "2026-10-03"

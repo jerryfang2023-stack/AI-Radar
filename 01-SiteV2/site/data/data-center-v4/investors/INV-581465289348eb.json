@@ -6,11 +6,12 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-24T04:01:06.404Z",
-    "latestDataDate": "2026-10-24",
-    "currentDate": "2026-10-24",
-    "eventCount": 4256,
-    "quarantinedEventCount": 39,
+    "latestDataDate": "2026-10-25",
+    "currentDate": "2026-10-25",
+    "eventCount": 4268,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -63,9 +64,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 10,
+    "current_round_count": 11,
     "historical_or_ambiguous_count": 8,
-    "portfolio_company_count": 8,
+    "portfolio_company_count": 9,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -73,11 +74,11 @@
     "china_market_activity_count": 9,
     "china_market_company_count": 7,
     "first_disclosed_at": "2026-03-24",
-    "latest_disclosed_at": "2026-10-08",
+    "latest_disclosed_at": "2026-10-24",
     "role_counts": {
       "historical_or_ambiguous": 8,
       "lead": 4,
-      "participant": 6
+      "participant": 7
     },
     "round_codes": [
       "angel_plus",
@@ -128,9 +129,54 @@
         "entity_id": "EN-6f7ac1823da81d2e",
         "canonical_entity_id": "EN-6f7ac1823da81d2e",
         "name": "DeepSeek"
+      },
+      {
+        "entity_id": "EN-5a28a1a99a417ba5",
+        "canonical_entity_id": "",
+        "name": "Today AI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c0206e423af37546",
+        "funding_insight_id": "FI-0178e4293f10ac23",
+        "event_ids": [
+          "EV-aabe55266bd52958"
+        ],
+        "company_entity_id": "EN-5a28a1a99a417ba5",
+        "company_canonical_entity_id": "",
+        "company_name": "Today AI",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "首轮",
+        "amount_original": "超过2亿美金",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": 200000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 2 亿美元"
+        },
+        "announced_at": "2026-10-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3787040a54f790a2",
+            "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
+            "source_title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
+            "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
+            "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
+            "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
+          }
+        ]
+      },
       {
         "activity_id": "IA-541d5d7a746ec3b8",
         "funding_insight_id": "FI-b54885fdab524aa5",
@@ -798,6 +844,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-3787040a54f790a2",
+        "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
+        "source_title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
+        "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
+        "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
+        "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
+      },
+      {
         "source_id": "FISRC-b143f42cd2d50743",
         "source_url": "https://www.rfi.fr/cn/%E4%BA%9A%E6%B4%B2/20261008-manus-%E6%AF%8D%E5%85%AC%E5%8F%B8%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94%E5%AE%A3%E5%B8%83%E8%9E%8D%E8%B5%84%E8%B6%85%E8%BF%875-%E4%BA%BF%E7%BE%8E%E5%85%83",
         "source_title": "Manus 母公司蝴蝶效应宣布融资超过5 亿美元",
@@ -967,16 +1021,16 @@
       ],
       "track_record": [
         {
+          "description": "融资来源记录：Today AI · 其他融资 · 2026-10-24 · 本轮参投 · 超过2亿美金。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3787040a54f790a2"
+        },
+        {
           "description": "融资来源记录：蝴蝶效应（Butterfly Effect） · B+轮 · 2026-10-08 · 本轮领投 · 超过5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b143f42cd2d50743"
         },
         {
           "description": "融资来源记录：Anew Labs（新生实验室） · 其他融资 · 2026-09-16 · 本轮参投 · 2.9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a2c9854f5230d423"
-        },
-        {
-          "description": "融资来源记录：威邦震电 · B轮 · 2026-09-14 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f9c8fdd671d3e193"
         }
       ],
       "contacts": [
@@ -1027,6 +1081,14 @@
           "quote_hash": "55dbc765f313dcb1df7f0247e84a136cb6ba8b4e79eec87c4364570aa9ecee7a"
         },
         {
+          "source_id": "FISRC-3787040a54f790a2",
+          "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
+          "source_title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
+          "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
+          "quote": "投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
+          "quote_hash": "b9ade128c88809ae8edbd306862387fbe87f33a754a64efd65d29176f6fa5339"
+        },
+        {
           "source_id": "FISRC-b143f42cd2d50743",
           "source_url": "https://www.rfi.fr/cn/%E4%BA%9A%E6%B4%B2/20261008-manus-%E6%AF%8D%E5%85%AC%E5%8F%B8%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94%E5%AE%A3%E5%B8%83%E8%9E%8D%E8%B5%84%E8%B6%85%E8%BF%875-%E4%BA%BF%E7%BE%8E%E5%85%83",
           "source_title": "Manus 母公司蝴蝶效应宣布融资超过5 亿美元",
@@ -1041,14 +1103,6 @@
           "source_content_hash": "2bb10add5e428ec5",
           "quote": "涵盖了红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投等头部投资机构",
           "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
-        },
-        {
-          "source_id": "FISRC-f9c8fdd671d3e193",
-          "source_url": "https://elsewhere.news/zh/daltonventure/bai-for-sciencenews",
-          "source_title": "威邦震电完成近亿元B轮融资，道彤投资领投，推进工业检测、临床及AI for Science商业化进程｜道彤News",
-          "source_content_hash": "b77e2b4e3f147ce2a11962774d610e4452e112a260a22904f82729e47b346c49",
-          "quote": "本轮融资由道彤投资领投，IDG资本共同参与。",
-          "quote_hash": "54b911518820bd90fc70f3f722879f5450857f2a1a38681d085498cd2a20573f"
         }
       ],
       "last_verified_at": "2026-09-25",
