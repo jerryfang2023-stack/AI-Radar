@@ -436,6 +436,10 @@ export function finishVerification({ root, directory, date, backupRoot }) {
     });
     const complete = (!row.alternate_source || row.source_identity_reviewed) && !row.unresolved_event_ids.length && row.results.length > 0 && row.results.every(result => result.accepted || result.scope === 'excluded');
     row.status = complete ? row.results.some(result => result.accepted) ? 'verified' : 'excluded' : 'pending';
+    if(complete && row.research_deferral) {
+      row.resolved_research_deferral={...row.research_deferral,resolved_at:date,resolution:row.status};
+      delete row.research_deferral;
+    }
     row.reason = row.alternate_source && !row.source_identity_reviewed && cards.length ? 'alternate_event_requires_original_lead_identity_review' : complete ? 'existing_gates_reconciled' : cards.length ? 'funding_or_taxonomy_gate_pending' : 'no_accepted_financing_event_manual_review_required';
     if(cards.some(card=>cardEvents(card).some(id=>holds.has(id))))row.reason='publication_hold_requires_responsible_release';
     row.checks = Object.fromEntries(dimensions.map(key => [key, row.status === 'verified' ? 'accepted_by_existing_gates_not_full_disclosure' : 'pending']));
