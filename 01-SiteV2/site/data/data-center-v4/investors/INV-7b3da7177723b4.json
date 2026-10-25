@@ -5,12 +5,13 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-24T04:01:06.404Z",
-    "latestDataDate": "2026-10-24",
-    "currentDate": "2026-10-24",
-    "eventCount": 4256,
-    "quarantinedEventCount": 39,
+    "generatedAt": "2026-10-25T02:10:15.815Z",
+    "latestDataDate": "2026-10-25",
+    "currentDate": "2026-10-25",
+    "eventCount": 4268,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -61,27 +62,33 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-08-26",
-    "latest_disclosed_at": "2026-09-16",
+    "latest_disclosed_at": "2026-10-22",
     "role_counts": {
-      "co_lead": 1,
+      "co_lead": 2,
       "historical_or_ambiguous": 2,
       "participant": 1
     },
     "round_codes": [
       "angel_plus",
+      "multi_round",
       "other"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-8955b63e8cdae8ac",
+        "canonical_entity_id": "",
+        "name": "元示科技"
+      },
       {
         "entity_id": "EN-5ba042c14b39398d",
         "canonical_entity_id": "",
@@ -94,6 +101,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-9841184f40cccf5d",
+        "funding_insight_id": "FI-ddefd4a9f0ffb2f4",
+        "event_ids": [
+          "EV-04fb7521fa0fe4a9"
+        ],
+        "company_entity_id": "EN-8955b63e8cdae8ac",
+        "company_canonical_entity_id": "",
+        "company_name": "元示科技",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "天使轮及天使+轮（多轮融资合计）",
+        "amount_original": "近亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-10-22",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "天使轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-27c3776c7b3aedc0",
+            "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+            "source_title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+            "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+            "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+            "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1f5bbdaac9cc6388",
         "funding_insight_id": "FI-e81dafc2defecb80",
@@ -244,6 +291,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-27c3776c7b3aedc0",
+        "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+        "source_title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+        "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+        "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+        "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
+      },
+      {
         "source_id": "FISRC-55c913083e7dcd21",
         "source_url": "https://www.chinaventure.com.cn/news/111-20260917-393303.html",
         "source_title": "20亿首轮，字节分拆AI制药拿下巨额融资 - 投中网",
@@ -370,16 +425,16 @@
           "source_id": "future_sse_deployment"
         },
         {
+          "description": "融资来源记录：元示科技 · 多轮融资 · 2026-10-22 · 天使轮联合领投 · 近亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-27c3776c7b3aedc0"
+        },
+        {
           "description": "融资来源记录：Anew Labs（新生实验室） · 其他融资 · 2026-09-16 · 本轮参投 · 2.9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-55c913083e7dcd21"
         },
         {
           "description": "融资来源记录：原力引擎 · 天使+轮 · 2026-08-26 · 本轮联合领投 · 近5000万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-642c04894404ccd5"
-        },
-        {
-          "description": "融资来源记录：鼎犀智创（Rhinovate™） · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-57de475f4ec2ac5a"
         }
       ],
       "current_roles": [
@@ -477,6 +532,14 @@
           "quote_hash": "9c56000fc451e34464a1b712e40dd3c366e1a04da7853e088863ae3f5d4306d5"
         },
         {
+          "source_id": "FISRC-27c3776c7b3aedc0",
+          "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+          "source_title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+          "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+          "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+          "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
+        },
+        {
           "source_id": "FISRC-55c913083e7dcd21",
           "source_url": "https://www.chinaventure.com.cn/news/111-20260917-393303.html",
           "source_title": "20亿首轮，字节分拆AI制药拿下巨额融资 - 投中网",
@@ -491,14 +554,6 @@
           "source_content_hash": "bd70eb4357b1953002a1e3b1b03f3f01eb8c85fd52917570c02811ee3fc0bc3c",
           "quote": "本轮融资由上海国投旗下上海未来产业基金和上海科创集团共同领投",
           "quote_hash": "b0f1d4a647c4b9de2fb3a0d805a77742e526ebfdb9e7ab77067c02944a414b17"
-        },
-        {
-          "source_id": "FISRC-57de475f4ec2ac5a",
-          "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
-          "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员",
-          "source_content_hash": "91fc771bf1b8ddb6ba9a09aa5cc0a9f0ccd306337e927615d637f85b03b38da0",
-          "quote": "这是继此前昆仲资本、元生创投、上海未来产业基金、晶泰科技等投资后一年内完成的第三轮融资。",
-          "quote_hash": "8789bd1eed49fe6256fa3c9423529cd18c841cfcd34c39e890d67b6a67fb455d"
         }
       ],
       "last_verified_at": "2026-09-26"

@@ -5,12 +5,13 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-24T04:01:06.404Z",
-    "latestDataDate": "2026-10-24",
-    "currentDate": "2026-10-24",
-    "eventCount": 4256,
-    "quarantinedEventCount": 39,
+    "generatedAt": "2026-10-25T02:10:15.815Z",
+    "latestDataDate": "2026-10-25",
+    "currentDate": "2026-10-25",
+    "eventCount": 4268,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -61,24 +62,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-11",
-    "latest_disclosed_at": "2026-03-11",
+    "latest_disclosed_at": "2026-10-20",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "series_b",
       "series_d"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-ffad923c7afc100d",
+        "canonical_entity_id": "",
+        "name": "Daytona"
+      },
       {
         "entity_id": "EN-53b69ef92c836777",
         "canonical_entity_id": "",
@@ -86,6 +93,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-53f3089d8e7a7cf7",
+        "funding_insight_id": "FI-8e1f21a79a3f480d",
+        "event_ids": [
+          "EV-aab9f971ed5a99b4"
+        ],
+        "company_entity_id": "EN-ffad923c7afc100d",
+        "company_canonical_entity_id": "",
+        "company_name": "Daytona",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$60M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-10-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5dadf72976d5866",
+            "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
+            "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
+            "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+            "quote": "Qualcomm Ventures, Samsung Next and Okta Ventures joined as strategic investors, alongside Evergreen Fund, Alumni Ventures and Torch Capital.",
+            "quote_hash": "ebbd72ee73fb1f6bb20a985e5c0b6db9cfdef476ae965027df54fa6fc8b0c265"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f17c4becb0a33b09",
         "funding_insight_id": "FI-2d6f9ac8b7ebeeee",
@@ -161,6 +208,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c5dadf72976d5866",
+        "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
+        "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
+        "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+        "quote": "Qualcomm Ventures, Samsung Next and Okta Ventures joined as strategic investors, alongside Evergreen Fund, Alumni Ventures and Torch Capital.",
+        "quote_hash": "ebbd72ee73fb1f6bb20a985e5c0b6db9cfdef476ae965027df54fa6fc8b0c265"
+      },
+      {
         "source_id": "FISRC-00ed3d8fd701898b",
         "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
         "source_title": "Replit raises $400M at $9B valuation as AI coding platform surges to over 40M users - Tech Startups",
@@ -233,6 +288,10 @@
           "source_id": "okta_ventures"
         },
         {
+          "description": "融资来源记录：Daytona · B轮 · 2026-10-20 · 本轮参投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c5dadf72976d5866"
+        },
+        {
           "description": "融资来源记录：Replit · D轮 · 2026-03-11 · 本轮参投（战略投资） · $400M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-00ed3d8fd701898b"
         },
@@ -263,6 +322,14 @@
           "source_content_hash": "6f1dd904002b3c0a2a78c43f181f26310f8501493848b5666f2fe78e56cb79e3",
           "quote": "We invest and support companies creating cutting edge technologies enabled by identity, security, and privacy.",
           "quote_hash": "951ba94e5a2f13df85c1b9886226cdd79d7148a1e25065dd4346ee4b244113e9"
+        },
+        {
+          "source_id": "FISRC-c5dadf72976d5866",
+          "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
+          "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
+          "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+          "quote": "Qualcomm Ventures, Samsung Next and Okta Ventures joined as strategic investors, alongside Evergreen Fund, Alumni Ventures and Torch Capital.",
+          "quote_hash": "ebbd72ee73fb1f6bb20a985e5c0b6db9cfdef476ae965027df54fa6fc8b0c265"
         },
         {
           "source_id": "FISRC-00ed3d8fd701898b",

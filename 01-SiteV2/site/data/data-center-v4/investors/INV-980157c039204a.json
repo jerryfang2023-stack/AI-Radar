@@ -5,12 +5,13 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-24T04:01:06.404Z",
-    "latestDataDate": "2026-10-24",
-    "currentDate": "2026-10-24",
-    "eventCount": 4256,
-    "quarantinedEventCount": 39,
+    "generatedAt": "2026-10-25T02:10:15.815Z",
+    "latestDataDate": "2026-10-25",
+    "currentDate": "2026-10-25",
+    "eventCount": 4268,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -61,17 +62,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-03-10",
-    "latest_disclosed_at": "2026-03-10",
+    "latest_disclosed_at": "2026-10-22",
     "role_counts": {
+      "co_lead": 1,
       "participant": 1
     },
     "round_codes": [
@@ -82,9 +84,54 @@
         "entity_id": "EN-cb1041ddf6123c37",
         "canonical_entity_id": "EN-cb1041ddf6123c37",
         "name": "灵初智能"
+      },
+      {
+        "entity_id": "EN-8955b63e8cdae8ac",
+        "canonical_entity_id": "",
+        "name": "元示科技"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-0616cb07d04a04d3",
+        "funding_insight_id": "FI-ddefd4a9f0ffb2f4",
+        "event_ids": [
+          "EV-04fb7521fa0fe4a9"
+        ],
+        "company_entity_id": "EN-8955b63e8cdae8ac",
+        "company_canonical_entity_id": "",
+        "company_name": "元示科技",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "天使轮及天使+轮（多轮融资合计）",
+        "amount_original": "近亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-10-22",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "天使轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-27c3776c7b3aedc0",
+            "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+            "source_title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+            "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+            "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+            "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
+          }
+        ]
+      },
       {
         "activity_id": "IA-4e0480afe349bdf3",
         "funding_insight_id": "FI-3b4a0a6b7397d174",
@@ -127,6 +174,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-27c3776c7b3aedc0",
+        "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+        "source_title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+        "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+        "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+        "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
+      },
       {
         "source_id": "FISRC-10c7fcf01fad4e2f",
         "source_url": "https://finance.sina.com.cn/cj/2026-03-10/doc-inhqnmhx6407658.shtml",
@@ -203,6 +258,10 @@
         {
           "description": "北大临港科创中心官网在镜春基金首次合伙人大会报道中披露，该基金已陆续投资银河通用、燕芯微、北启生物、智在无界、汉辉芯辰、前沿智能等北大科研团队项目。这是单支基金的公开案例，不代表管理人的完整组合。",
           "source_id": "yy_team_portfolio"
+        },
+        {
+          "description": "融资来源记录：元示科技 · 多轮融资 · 2026-10-22 · 天使轮联合领投 · 近亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-27c3776c7b3aedc0"
         },
         {
           "description": "融资来源记录：灵初智能 · 多轮融资 · 2026-03-10 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -296,6 +355,14 @@
           "source_content_hash": "b4d1347a3eba40fcc88b5d19681ee416bef511007b7089e81ce4d91dc965eab6",
           "quote": "北京大学法律硕士，曾任职于 申万宏源 证券投行部、元禾控股、和基投资等机构",
           "quote_hash": "718186bd43cd19e63d6e015f45fcd6892bea8603320993ee9de75bdc2ea6b2b4"
+        },
+        {
+          "source_id": "FISRC-27c3776c7b3aedc0",
+          "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+          "source_title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+          "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+          "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+          "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
         },
         {
           "source_id": "FISRC-10c7fcf01fad4e2f",

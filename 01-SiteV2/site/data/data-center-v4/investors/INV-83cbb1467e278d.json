@@ -5,12 +5,13 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-24T04:01:06.404Z",
-    "latestDataDate": "2026-10-24",
-    "currentDate": "2026-10-24",
-    "eventCount": 4256,
-    "quarantinedEventCount": 39,
+    "generatedAt": "2026-10-25T02:10:15.815Z",
+    "latestDataDate": "2026-10-25",
+    "currentDate": "2026-10-25",
+    "eventCount": 4268,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -61,19 +62,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-02-14",
-    "latest_disclosed_at": "2026-09-03",
+    "latest_disclosed_at": "2026-10-22",
     "role_counts": {
-      "co_lead": 1,
+      "co_lead": 2,
       "historical_or_ambiguous": 1,
       "other_current_round": 1,
       "participant": 1
@@ -98,9 +99,54 @@
         "entity_id": "EN-4731aa5b66658c7f",
         "canonical_entity_id": "EN-4731aa5b66658c7f",
         "name": "无界动力"
+      },
+      {
+        "entity_id": "EN-8955b63e8cdae8ac",
+        "canonical_entity_id": "",
+        "name": "元示科技"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-0171f5d6d6aadf39",
+        "funding_insight_id": "FI-ddefd4a9f0ffb2f4",
+        "event_ids": [
+          "EV-04fb7521fa0fe4a9"
+        ],
+        "company_entity_id": "EN-8955b63e8cdae8ac",
+        "company_canonical_entity_id": "",
+        "company_name": "元示科技",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "天使轮及天使+轮（多轮融资合计）",
+        "amount_original": "近亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-10-22",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "天使轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-27c3776c7b3aedc0",
+            "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+            "source_title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+            "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+            "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+            "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
+          }
+        ]
+      },
       {
         "activity_id": "IA-08c94e443e85fe78",
         "funding_insight_id": "FI-d4af5bfc033b850a",
@@ -257,6 +303,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-27c3776c7b3aedc0",
+        "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+        "source_title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+        "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+        "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+        "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
+      },
+      {
         "source_id": "FISRC-3c65ee6da5a2af99",
         "source_url": "https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpvfw6908238.shtml",
         "source_title": "合木智能完成种子轮千万级融资，瞄准模具制造领域物理AI研发",
@@ -364,16 +418,16 @@
           "source_id": "sinovation_portfolio_news_2026"
         },
         {
+          "description": "融资来源记录：元示科技 · 多轮融资 · 2026-10-22 · 天使轮联合领投 · 近亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-27c3776c7b3aedc0"
+        },
+        {
           "description": "融资来源记录：合木智能 · 种子轮 · 2026-09-03 · 本轮投资方 · 千万级。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3c65ee6da5a2af99"
         },
         {
           "description": "融资来源记录：明日新程 · 多轮融资 · 2026-04-13 · 本轮联合领投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7e62ff671767e98d"
-        },
-        {
-          "description": "融资来源记录：无界动力 · 天使轮 · 2026-02-14 · 本轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-daccbed46498e19c"
         }
       ],
       "contacts": [
@@ -473,6 +527,14 @@
           "quote_hash": "e93f9838aa8941742e9bfc956a482fba3b1848fde41eb12cdd292f799191835d"
         },
         {
+          "source_id": "FISRC-27c3776c7b3aedc0",
+          "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima",
+          "source_title": "「元示科技」连续完成两轮融资，聚焦通用细胞模型构建 AI 生物学底座 | 光源伙伴_腾讯新闻",
+          "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+          "quote": "天使轮由创新工场、上海未来产业基金与燕缘创投联合领投；天使 + 轮由 Monolith 领投，道彤投资跟投。",
+          "quote_hash": "39f5781040453de339e284c2add1348aa079bd8c0c1a93a326ccb20c0e3f1d79"
+        },
+        {
           "source_id": "FISRC-3c65ee6da5a2af99",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpvfw6908238.shtml",
           "source_title": "合木智能完成种子轮千万级融资，瞄准模具制造领域物理AI研发",
@@ -487,14 +549,6 @@
           "source_content_hash": "418866e03a045b103f30f575280a1c71c95a864493a646c94dc7c6a9674416f8",
           "quote": "天使轮融资由创新工场和Atypical Ventures联合领投",
           "quote_hash": "3171ba642df2ca76a3e79b457c4579918611803aa67892146b2d0abdefb822d8"
-        },
-        {
-          "source_id": "FISRC-daccbed46498e19c",
-          "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
-          "source_title": "无界动力宣布完成超2亿元天使+轮融资",
-          "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
-          "quote": "新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
-          "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
         }
       ],
       "last_verified_at": "2026-09-27"

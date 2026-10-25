@@ -5,12 +5,13 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-24T04:01:06.404Z",
-    "latestDataDate": "2026-10-24",
-    "currentDate": "2026-10-24",
-    "eventCount": 4256,
-    "quarantinedEventCount": 39,
+    "generatedAt": "2026-10-25T02:10:15.815Z",
+    "latestDataDate": "2026-10-25",
+    "currentDate": "2026-10-25",
+    "eventCount": 4268,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -61,25 +62,31 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-16",
-    "latest_disclosed_at": "2026-09-30",
+    "latest_disclosed_at": "2026-10-20",
     "role_counts": {
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "other",
       "series_a",
+      "series_b",
       "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-ffad923c7afc100d",
+        "canonical_entity_id": "",
+        "name": "Daytona"
+      },
       {
         "entity_id": "EN-245f1e177c5169cb",
         "canonical_entity_id": "",
@@ -102,6 +109,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1db7257bef260004",
+        "funding_insight_id": "FI-8e1f21a79a3f480d",
+        "event_ids": [
+          "EV-aab9f971ed5a99b4"
+        ],
+        "company_entity_id": "EN-ffad923c7afc100d",
+        "company_canonical_entity_id": "",
+        "company_name": "Daytona",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$60M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-10-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5dadf72976d5866",
+            "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
+            "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
+            "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+            "quote": "Qualcomm Ventures, Samsung Next and Okta Ventures joined as strategic investors, alongside Evergreen Fund, Alumni Ventures and Torch Capital.",
+            "quote_hash": "ebbd72ee73fb1f6bb20a985e5c0b6db9cfdef476ae965027df54fa6fc8b0c265"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a3fe7e8d5836776c",
         "funding_insight_id": "FI-a87cf73c1a613905",
@@ -266,6 +313,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c5dadf72976d5866",
+        "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
+        "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
+        "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+        "quote": "Qualcomm Ventures, Samsung Next and Okta Ventures joined as strategic investors, alongside Evergreen Fund, Alumni Ventures and Torch Capital.",
+        "quote_hash": "ebbd72ee73fb1f6bb20a985e5c0b6db9cfdef476ae965027df54fa6fc8b0c265"
+      },
+      {
         "source_id": "FISRC-723dbfd85761e08d",
         "source_url": "https://cyborg.ultrahuman.com/press-releases/ultrahuman-raises-70-million-to-build-the-next-generation-of-human-computer-interface-for-health",
         "source_title": "‍Ultrahuman raises $70 million to build the next generation of human-computer interface for health",
@@ -363,16 +418,16 @@
           "source_id": "qv_2025_review"
         },
         {
+          "description": "融资来源记录：Daytona · B轮 · 2026-10-20 · 本轮参投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c5dadf72976d5866"
+        },
+        {
           "description": "融资来源记录：Ultrahuman · 其他融资 · 2026-09-30 · 本轮参投 · $70 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-723dbfd85761e08d"
         },
         {
           "description": "融资来源记录：Hark · A轮 · 2026-05-21 · 本轮参投 · $700M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9b94f245fa27a161"
-        },
-        {
-          "description": "融资来源记录：Upscale, Inc. · A轮 · 2026-01-21 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3c60f2ab7fcb8b84"
         }
       ],
       "contacts": [
@@ -410,6 +465,14 @@
           "quote_hash": "966664064c2645c134da5027a77a2f9ebaa98ea11a87cbee3a6c790e8e242042"
         },
         {
+          "source_id": "FISRC-c5dadf72976d5866",
+          "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
+          "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
+          "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+          "quote": "Qualcomm Ventures, Samsung Next and Okta Ventures joined as strategic investors, alongside Evergreen Fund, Alumni Ventures and Torch Capital.",
+          "quote_hash": "ebbd72ee73fb1f6bb20a985e5c0b6db9cfdef476ae965027df54fa6fc8b0c265"
+        },
+        {
           "source_id": "FISRC-723dbfd85761e08d",
           "source_url": "https://cyborg.ultrahuman.com/press-releases/ultrahuman-raises-70-million-to-build-the-next-generation-of-human-computer-interface-for-health",
           "source_title": "‍Ultrahuman raises $70 million to build the next generation of human-computer interface for health",
@@ -424,14 +487,6 @@
           "source_content_hash": "e91739ca23d21469",
           "quote": "Qualcomm Ventures",
           "quote_hash": "c3308a2da36a6975868dde894ce832cd0477fbdd5c8fd7b8c6ed3f7635039f98"
-        },
-        {
-          "source_id": "FISRC-3c60f2ab7fcb8b84",
-          "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
-          "source_title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
-          "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
-          "quote": "with participation from Maverick Silicon, StepStone Group, Mayfield, Prosperity7 Ventures, Intel Capital, and Qualcomm Ventures",
-          "quote_hash": "1b3a793f6651ede6d318a32fa8c2097ef50fb059db5e8d2bc1c0d7861eb26ee5"
         }
       ],
       "last_verified_at": "2026-09-26",

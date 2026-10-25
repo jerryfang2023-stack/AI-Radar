@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-25",
+  "reviewer": "Codex responsible financing reviewer",
+  "reviewed_at": "2026-10-25T01:54:39.626Z",
+  "reused_run_id": 40145679676,
+  "reused_head": "779add120c00fd79e9f8f3e94dc22bede4c0cbe2",
+  "resume_stage": "facts_then_dependents",
+  "decisions": [
+    {
+      "subject": "Today AI",
+      "object": "超过2亿美金的首轮融资",
+      "hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
+      "raw": "RAW-d0430b5dc520626b",
+      "source": "SA-7fdd4e005fa35409",
+      "quote": "10月21日，Today AI也正式宣布完成了超过2亿美金的首轮融资，投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
+      "note": "原文明确融资主体是Today AI，蚂蚁集团仅为投资方；标题开头拿到2亿美金不是公司名。不进行规范实体合并。",
+      "action": "repair_funding_recipient",
+      "candidate_id": "MAC-7cc5c8aaa2e161d6",
+      "reviewer": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-25T01:54:39.626Z",
+      "canonical_entity_merge_approved": false
+    },
+    {
+      "subject": "元示科技",
+      "object": "近亿元人民币天使轮及天使 + 轮融资",
+      "hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+      "raw": "RAW-7591d7bb5aa46d2c",
+      "source": "SA-745b135d531df22e",
+      "quote": "近日，「元示科技」宣布已连续完成近亿元人民币天使轮及天使 + 轮融资。",
+      "note": "标题中的连续和发布平台腾讯不是融资主体；金额为天使轮与天使+轮合计，不拆为单笔金额。仅修正来源Claim，独立研究门禁保留。",
+      "action": "repair_funding_recipient",
+      "candidate_id": "MAC-dec67b2c9242f86c",
+      "reviewer": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-25T01:54:39.626Z",
+      "canonical_entity_merge_approved": false
+    },
+    {
+      "event_id": "EV-c4491ccfef9e3d73",
+      "status": "pending",
+      "source_url": "https://www.lejucaijing.com/news-7518497228077069641.html",
+      "reason": "独立报道与Founder Park采访均称累计完成超过2亿美元，原采集报道称首轮融资；金额归属于单轮还是累计存在直接冲突，不批准2亿美元首轮卡。保留原文，待按累计披露或独立轮次澄清后恢复；蚂蚁集团是投资方而非融资主体。",
+      "source_id": "FISRC-991d6e1fa362c1fa",
+      "source_content_hash": "820f0391b076751a",
+      "body_sha256": "820f0391b076751ad21285949f0084b9adcee0800361ec39336770994a88381c",
+      "quote": "Today团队已累计完成超过2亿美元的融资，投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投和上海交大菡源资产。",
+      "quote_hash": "8896f3465b2f34ff4f1e78147f4e84b8dee6a47257cedb46b5b5832ce0712e49",
+      "corroborating_evidence": [
+        {
+          "source_id": "FISRC-d3a3a2786c50d747",
+          "source_content_hash": "1cbfc1081367d89d",
+          "body_sha256": "1cbfc1081367d89d9b7176353d2174969e0c38f6a4da11e387f882d8ddbf0479",
+          "quote": "10 月 21 日，Personal AI 公司 Today AI 宣布累计完成超 2 亿美元的融资，投资方包括 IDG 资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
+          "quote_hash": "95f881c466af66f8f9dd59bbb6f6e3730013c063949a77c3d262422a11afe642"
+        }
+      ],
+      "conflicting_evidence": [
+        {
+          "source_content_hash": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
+          "body_sha256": "0864aaa49e4b4ed1313d0da92ca5dfd3ee8e3ab526c182b4a382e4546f668dcf",
+          "quote": "10月21日，Today AI也正式宣布完成了超过2亿美金的首轮融资，投资方包括IDG资本、腾讯、五源资本、蚂蚁集团、红杉中国、传音控股、同歌创投及上海交大菡源资产。",
+          "quote_hash": "05ed5942ad3565d4679c0138fee8ce10e561b9ec98d41b6439c744bd209f7a22",
+          "source_ref": "SA-7fdd4e005fa35409"
+        }
+      ],
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-25T02:04:17.018Z"
+    },
+    {
+      "event_id": "EV-aab9f971ed5a99b4",
+      "action": "correct_announced_date_and_current_follow_on_investors",
+      "date": "2026-10-20",
+      "source_id": "FISRC-c5dadf72976d5866",
+      "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+      "body_sha256": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+      "quote": "On October 20, that gamble became a $60M Series B at a $1B valuation. Daytona, a San Francisco-based startup with Croatian founders, said the round was led by FirstMark Growth and takes its total funding to $91M.",
+      "quote_hash": "7f868f41296c88f3ade72b24065e968404f7cd025b384dbafdabe770d0e434d6",
+      "reason": "原文明示10月20日完成6000万美元B轮；10月21日为报道日期。E2VC、Upfront、Pace在本轮继续参与，保留原文引文。",
+      "reviewer": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-25T02:04:17.018Z"
+    },
+    {
+      "event_id": "EV-04fb7521fa0fe4a9",
+      "action": "admit_verified_combined_round",
+      "round": "天使轮及天使+轮（多轮融资合计）",
+      "source_binding": [
+        {
+          "source_id": "FISRC-27c3776c7b3aedc0",
+          "quote": "近日，「元示科技」宣布已连续完成近亿元人民币天使轮及天使 + 轮融资。",
+          "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+          "quote_hash": "51fa68ca8df868483aa77275c4e271a857dbb82ab6517a6af91f1df6886c6e2e"
+        },
+        {
+          "source_id": "FISRC-c87e5ef760ceb82c",
+          "quote": "元示（上海）科技有限公司（下文简称：元示科技）成功完成近亿元人民币天使轮及天使+轮融资。",
+          "source_content_hash": "d9d5ef64bdc32d25",
+          "quote_hash": "ba1117c06947314c21bfb224ce4e1a20b25b26d79785fbbcfd5dfafb7d3c91fb"
+        }
+      ],
+      "secondary_source": "https://caifuhao.eastmoney.com/news/20261023171857145535540",
+      "secondary_body_sha256": "d9d5ef64bdc32d252989dd0500f7c219805a0ecce4cf50fd64e9c2ff3597a919",
+      "reason": "原文与独立报道均明确两轮合计近亿元。按轮次标注投资方，金额只计一次，AI虚拟细胞主营符合范围。",
+      "reviewer": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-25T02:04:17.018Z"
+    }
+  ]
+}

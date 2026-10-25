@@ -1,0 +1,104 @@
+{
+  "event_id": "EV-c4491ccfef9e3d73",
+  "company_name": "Today AI",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
+    "event_source_refs": [
+      "SA-7fdd4e005fa35409"
+    ],
+    "event_claim_refs": [
+      "CL-3937c828c4dcd4fb"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-3a61f02cb94a58e6",
+        "canonical_name": "Today AI"
+      },
+      {
+        "entity_id": "EN-9c8ae69b84f21a2e",
+        "canonical_name": "Tencent"
+      },
+      {
+        "entity_id": "EN-5a28a1a99a417ba5",
+        "canonical_name": "Ant Group"
+      }
+    ],
+    "event_metrics": [
+      "2亿"
+    ],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-3937c828c4dcd4fb",
+        "raw_id": "RAW-d0430b5dc520626b",
+        "subject": "Today AI",
+        "object": "超过2亿美金的首轮融资",
+        "source_quote_length": 73
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 1,
+    "resolved_company": "Today AI"
+  },
+  "queries": [
+    "\"Today AI\" 2026 funding round investors",
+    "\"Today AI\" 超过2亿美金 funding announcement",
+    "\"Today AI\" official product customers",
+    "\"Today AI\" \"why we invested\"",
+    "\"Today AI\" 2026 raises led by",
+    "\"Today AI\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "bing_rss",
+      "query": "\"Today AI\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://today.ai/articles/zh-Hans",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.today.com.hk/top.html",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"Today AI\" 超过2亿美金 funding announcement",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"Today AI\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"Today AI\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"Today AI\" 2026 raises led by",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"Today AI\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}

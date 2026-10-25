@@ -5,12 +5,13 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-24T04:01:06.404Z",
-    "latestDataDate": "2026-10-24",
-    "currentDate": "2026-10-24",
-    "eventCount": 4256,
-    "quarantinedEventCount": 39,
+    "generatedAt": "2026-10-25T02:10:15.815Z",
+    "latestDataDate": "2026-10-25",
+    "currentDate": "2026-10-25",
+    "eventCount": 4268,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -62,7 +63,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 3,
     "market_regions": [
       "CN",
@@ -70,10 +71,10 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-01-21",
+    "first_disclosed_at": "2024-01",
     "latest_disclosed_at": "2026-06-22",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "lead": 1,
       "participant": 2
     },
@@ -221,6 +222,38 @@
         ]
       },
       {
+        "activity_id": "IA-283f87b4f1d39ad5",
+        "funding_insight_id": "FI-98bf809bafca6956",
+        "event_ids": [
+          "EV-a8fc0677d43d7b8f"
+        ],
+        "company_entity_id": "EN-56a0ba67ee43de65",
+        "company_canonical_entity_id": "",
+        "company_name": "亿铸科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2024-01",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2024年10月轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-0cbb04b7d23b3a2c",
+            "source_url": "https://feng.ifeng.com/c/8xSsVbT9zaE",
+            "source_title": "芯片公司亿铸科技宣布完成超10亿元融资_大风号",
+            "source_content_hash": "141b00dcaac94dc2ee089cb370a498a533164c5f3a2b9024e935c27ae6531ce2",
+            "quote": "2024年10月该公司宣布完成数亿元融资，由海外基金Prosperity7 Ventures领投",
+            "quote_hash": "8f88055b07de9262192eca45a271c7a1560f1cc32b1591e8481b7578c97cdde4"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-55aa1bc0d376edd2",
         "funding_insight_id": "FI-db7372c6419b5ac0",
         "event_ids": [
@@ -309,6 +342,14 @@
         "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
         "quote": "with participation from Maverick Silicon, StepStone Group, Mayfield, Prosperity7 Ventures, Intel Capital, and Qualcomm Ventures",
         "quote_hash": "1b3a793f6651ede6d318a32fa8c2097ef50fb059db5e8d2bc1c0d7861eb26ee5"
+      },
+      {
+        "source_id": "FISRC-0cbb04b7d23b3a2c",
+        "source_url": "https://feng.ifeng.com/c/8xSsVbT9zaE",
+        "source_title": "芯片公司亿铸科技宣布完成超10亿元融资_大风号",
+        "source_content_hash": "141b00dcaac94dc2ee089cb370a498a533164c5f3a2b9024e935c27ae6531ce2",
+        "quote": "2024年10月该公司宣布完成数亿元融资，由海外基金Prosperity7 Ventures领投",
+        "quote_hash": "8f88055b07de9262192eca45a271c7a1560f1cc32b1591e8481b7578c97cdde4"
       },
       {
         "source_id": "FISRC-b8b7d456eceee943",
@@ -445,7 +486,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[3].role": {
+        "activities[4].role": {
           "text": "Pre-A轮领投",
           "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
           "provider": "deepseek",

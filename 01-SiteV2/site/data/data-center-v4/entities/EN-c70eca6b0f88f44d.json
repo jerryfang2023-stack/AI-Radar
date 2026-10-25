@@ -5,12 +5,13 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-24T04:01:06.404Z",
-    "latestDataDate": "2026-10-24",
-    "currentDate": "2026-10-24",
-    "eventCount": 4256,
-    "quarantinedEventCount": 39,
+    "generatedAt": "2026-10-25T02:10:15.815Z",
+    "latestDataDate": "2026-10-25",
+    "currentDate": "2026-10-25",
+    "eventCount": 4268,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -619,7 +620,7 @@
       "EN-da20c5952dba19d8"
     ],
     "firstSeen": "2025-09-04",
-    "lastSeen": "2026-10-24",
+    "lastSeen": "2026-10-25",
     "relationIds": [
       "REL2-6460871b6d621283",
       "REL2-02bdd133e9353ff7",
@@ -681,10 +682,10 @@
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-7684bfb9b954c1fd",
-        "EV-c964f7646ad88c1e",
         "EV-5fbe1afea8264e75",
         "EV-79fbe4ea3a11c695",
         "EV-2ad2ae14a594df04",
+        "EV-c964f7646ad88c1e",
         "EV-2aead80f6796b70b",
         "EV-53c733c33deddee3",
         "EV-f7bf3f9c38e015fc",
@@ -1183,7 +1184,7 @@
     "timeline": [
       {
         "id": "EV-7684bfb9b954c1fd",
-        "dataDate": "2026-10-24",
+        "dataDate": "2026-10-25",
         "date": "2026-10-23",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -1201,25 +1202,8 @@
         ]
       },
       {
-        "id": "EV-c964f7646ad88c1e",
-        "dataDate": "2026-10-24",
-        "date": "2026-10-22",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "DeepSeek 融资 150 亿美元，挑战美国领先实验室",
-        "displayTags": [],
-        "entityIds": [
-          "EN-6f7ac1823da81d2e",
-          "EN-c70eca6b0f88f44d",
-          "EN-7d3194f79e645c42"
-        ]
-      },
-      {
         "id": "EV-5fbe1afea8264e75",
-        "dataDate": "2026-10-24",
+        "dataDate": "2026-10-25",
         "date": "2026-10-20",
         "eventType": "acquisition",
         "eventTypeLabel": "并购",
@@ -1235,7 +1219,7 @@
       },
       {
         "id": "EV-79fbe4ea3a11c695",
-        "dataDate": "2026-10-24",
+        "dataDate": "2026-10-25",
         "date": "2026-10-19",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -1251,7 +1235,7 @@
       },
       {
         "id": "EV-2ad2ae14a594df04",
-        "dataDate": "2026-10-24",
+        "dataDate": "2026-10-25",
         "date": "2026-10-23",
         "eventType": "ipo_listing",
         "eventTypeLabel": "IPO 与上市",
@@ -1262,6 +1246,38 @@
         "displayTags": [],
         "entityIds": [
           "EN-407a75b4abd9e9aa",
+          "EN-c70eca6b0f88f44d",
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-d35419bc2f596bce",
+        "dataDate": "2026-10-25",
+        "date": "2026-10-18",
+        "eventType": "capital_investment",
+        "eventTypeLabel": "资本性投资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "投资于公共利益",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-c964f7646ad88c1e",
+        "dataDate": "2026-10-24",
+        "date": "2026-10-22",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "DeepSeek 融资 150 亿美元，挑战美国领先实验室",
+        "displayTags": [],
+        "entityIds": [
+          "EN-6f7ac1823da81d2e",
           "EN-c70eca6b0f88f44d",
           "EN-7d3194f79e645c42"
         ]
@@ -1324,21 +1340,6 @@
         "entityIds": [
           "EN-c70eca6b0f88f44d",
           "EN-bbdefa2950f49882"
-        ]
-      },
-      {
-        "id": "EV-d35419bc2f596bce",
-        "dataDate": "2026-10-24",
-        "date": "2026-10-18",
-        "eventType": "capital_investment",
-        "eventTypeLabel": "资本性投资",
-        "eventGroup": "融资与并购",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "投资于公共利益",
-        "displayTags": [],
-        "entityIds": [
-          "EN-c70eca6b0f88f44d"
         ]
       },
       {
@@ -15931,7 +15932,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-24"
+      "lastSeen": "2026-10-25"
     },
     {
       "id": "EN-729324072d368379",
@@ -17671,6 +17672,7 @@
       "typeLabel": "技术",
       "valueId": "embodied_ai",
       "eventIds": [
+        "EV-154cd37c0eefda85",
         "EV-4746cc586107aaf7",
         "EV-7c5953aae2767bfa",
         "EV-d6ef2e46d3005d9b",
@@ -17797,6 +17799,7 @@
         "EV-08f736f61f2b46f3"
       ],
       "entityIds": [
+        "EN-070a1175c6e4226b",
         "EN-21d3a1a229937a08",
         "EN-55a5064b725214bf",
         "EN-a244384ccfb8ec48",
@@ -17918,7 +17921,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-24"
+      "lastSeen": "2026-10-25"
     },
     {
       "id": "TX-industry-financial_services",
@@ -18167,7 +18170,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-10-24"
+      "lastSeen": "2026-10-25"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -18178,6 +18181,8 @@
       "eventIds": [
         "EV-07911ca790bdfc5a",
         "EV-353261ac722ca40b",
+        "EV-aab9f971ed5a99b4",
+        "EV-ebc7cbce77c27a1d",
         "EV-c66ddcd78c89a643",
         "EV-87beb0ebdfa293de",
         "EV-ff12e2bb9d4ad359",
@@ -18859,6 +18864,8 @@
       "entityIds": [
         "EN-22dc02488a037639",
         "EN-c53e6deb84236ea0",
+        "EN-ffad923c7afc100d",
+        "EN-75d16a5d8729c00d",
         "EN-eba7990af95abefe",
         "EN-54856813e7170b52",
         "EN-954adfa4d922fa30",
@@ -24691,7 +24698,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-04-30",
-      "lastSeen": "2026-10-24"
+      "lastSeen": "2026-10-25"
     },
     {
       "id": "TX-use_case-data_analysis",

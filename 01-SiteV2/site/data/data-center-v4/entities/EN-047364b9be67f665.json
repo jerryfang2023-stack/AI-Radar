@@ -5,12 +5,13 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-24T04:01:06.404Z",
-    "latestDataDate": "2026-10-24",
-    "currentDate": "2026-10-24",
-    "eventCount": 4256,
-    "quarantinedEventCount": 39,
+    "generatedAt": "2026-10-25T02:10:15.815Z",
+    "latestDataDate": "2026-10-25",
+    "currentDate": "2026-10-25",
+    "eventCount": 4268,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -105,6 +106,7 @@
       "EV-b99c318c66e1a295",
       "EV-3d9aa640411471ea",
       "EV-2a833330267cb2df",
+      "EV-71823f56b5ac87ca",
       "EV-293d6feac5b8efab",
       "EV-b8eb460540c33d68",
       "EV-438b93c09aeb4264",
@@ -205,7 +207,7 @@
       "EN-d65d81c60c0c47c4"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-10-07",
+    "lastSeen": "2026-10-25",
     "organizationFamilyId": "EN-047364b9be67f665",
     "organizationRole": "group",
     "organizationFamilyEntityIds": [
@@ -268,6 +270,7 @@
         "EV-2a833330267cb2df"
       ],
       "productsServices": [
+        "EV-71823f56b5ac87ca",
         "EV-293d6feac5b8efab",
         "EV-b8eb460540c33d68",
         "EV-438b93c09aeb4264",
@@ -349,6 +352,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-71823f56b5ac87ca",
+        "dataDate": "2026-10-25",
+        "date": "2026-10-21",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI眼镜行业迈向成长期 18只概念股获机构密集调研",
+        "displayTags": [],
+        "entityIds": [
+          "EN-68710224f8c4691a",
+          "EN-047364b9be67f665"
+        ]
+      },
       {
         "id": "EV-153c38100d51097d",
         "dataDate": "2026-10-07",
@@ -4465,6 +4484,8 @@
       "eventIds": [
         "EV-07911ca790bdfc5a",
         "EV-353261ac722ca40b",
+        "EV-aab9f971ed5a99b4",
+        "EV-ebc7cbce77c27a1d",
         "EV-c66ddcd78c89a643",
         "EV-87beb0ebdfa293de",
         "EV-ff12e2bb9d4ad359",
@@ -5146,6 +5167,8 @@
       "entityIds": [
         "EN-22dc02488a037639",
         "EN-c53e6deb84236ea0",
+        "EN-ffad923c7afc100d",
+        "EN-75d16a5d8729c00d",
         "EN-eba7990af95abefe",
         "EN-54856813e7170b52",
         "EN-954adfa4d922fa30",
@@ -8352,6 +8375,111 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-bf69e780f1af8f2e",
+      "snapshotKey": "bf69e780f1af8f2e",
+      "snapshotId": "HWS-e9b98958834d4c94",
+      "eventId": "EV-71823f56b5ac87ca",
+      "eventIds": [
+        "EV-71823f56b5ac87ca"
+      ],
+      "dataDate": "2026-10-25",
+      "date": "2026-10-25",
+      "title": "回车科技旗下品牌Looktech",
+      "subject": "回车科技旗下品牌Looktech",
+      "productNames": [],
+      "hardwareType": "smart_glasses",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-2762b7ce2d5eea8e"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-25",
+          "hardware_fact_id": "HWF-86391ddb37fc8912",
+          "fact_type": "product",
+          "observed_at": "2026-10-21",
+          "subject_entity_id": "EN-68710224f8c4691a",
+          "subject_name": "回车科技旗下品牌Looktech",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "smart_glasses",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "回车科技旗下品牌Looktech正式发布新一代AI智能眼镜，这也是全球首款搭载脑机接口的AI眼镜。",
+          "event_refs": [
+            "EV-71823f56b5ac87ca"
+          ],
+          "claim_ref": "CL-70de9b8eb9b60ea1",
+          "source_refs": [
+            "SA-c7d6026dd3388b8e"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-25/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-10-25",
+          "hardware_fact_id": "HWF-98001d9ec85c9188",
+          "fact_type": "product",
+          "observed_at": "2026-10-21",
+          "subject_entity_id": "EN-68710224f8c4691a",
+          "subject_name": "回车科技旗下品牌Looktech",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "smart_glasses",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "10月13日，阿里千问发布AI眼镜N1、N1 Pro及AI耳夹式耳机三款AI硬件新品。",
+          "event_refs": [
+            "EV-71823f56b5ac87ca"
+          ],
+          "claim_ref": "CL-71b667977860ac0d",
+          "source_refs": [
+            "SA-c7d6026dd3388b8e"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-25/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-10-25",
+          "hardware_fact_id": "HWF-2762b7ce2d5eea8e",
+          "fact_type": "product",
+          "observed_at": "2026-10-21",
+          "subject_entity_id": "EN-68710224f8c4691a",
+          "subject_name": "回车科技旗下品牌Looktech",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "smart_glasses",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "8月21日，雷鸟创新正式发布全新AI眼镜产品雷鸟iO系列。",
+          "event_refs": [
+            "EV-71823f56b5ac87ca"
+          ],
+          "claim_ref": "CL-ea6bd0fe652fb418",
+          "source_refs": [
+            "SA-c7d6026dd3388b8e"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-25/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://m.sohu.com/a/1090456830_122014422/?pvid=000115_3w_a",
+      "entityIds": [
+        "EN-68710224f8c4691a",
+        "EN-047364b9be67f665"
+      ]
+    },
     {
       "id": "HWC-3c2faedee816ba7e",
       "snapshotKey": "3c2faedee816ba7e",

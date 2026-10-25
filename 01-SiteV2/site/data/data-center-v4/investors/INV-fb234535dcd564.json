@@ -5,12 +5,13 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-24T04:01:06.404Z",
-    "latestDataDate": "2026-10-24",
-    "currentDate": "2026-10-24",
-    "eventCount": 4256,
-    "quarantinedEventCount": 39,
+    "generatedAt": "2026-10-25T02:10:15.815Z",
+    "latestDataDate": "2026-10-25",
+    "currentDate": "2026-10-25",
+    "eventCount": 4268,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -61,25 +62,32 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-14",
-    "latest_disclosed_at": "2026-10-15",
+    "latest_disclosed_at": "2026-10-20",
     "role_counts": {
       "co_lead": 1,
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
       "series_a",
+      "series_b",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-ffad923c7afc100d",
+        "canonical_entity_id": "",
+        "name": "Daytona"
+      },
       {
         "entity_id": "EN-7587669ca42e19e8",
         "canonical_entity_id": "",
@@ -92,6 +100,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e107259973bb43e0",
+        "funding_insight_id": "FI-8e1f21a79a3f480d",
+        "event_ids": [
+          "EV-aab9f971ed5a99b4"
+        ],
+        "company_entity_id": "EN-ffad923c7afc100d",
+        "company_canonical_entity_id": "",
+        "company_name": "Daytona",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$60M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-10-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5dadf72976d5866",
+            "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
+            "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
+            "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+            "quote": "FirstMark led, with the founders of Stripe, Shopify, Perplexity and Zoom investing.",
+            "quote_hash": "22fa150259428fa8a4e8c980573ea786eff0d7235190eeb67111c8e27e7a5a3d"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e6c7101b9ff560a9",
         "funding_insight_id": "FI-49e5e02e3f1e2d52",
@@ -175,6 +223,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c5dadf72976d5866",
+        "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
+        "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
+        "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+        "quote": "FirstMark led, with the founders of Stripe, Shopify, Perplexity and Zoom investing.",
+        "quote_hash": "22fa150259428fa8a4e8c980573ea786eff0d7235190eeb67111c8e27e7a5a3d"
+      },
+      {
         "source_id": "FISRC-f581afce52cf5bef",
         "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
         "source_title": "Ramp估值达600亿美元，深入布局AI",
@@ -196,10 +252,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "FirstMark 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "FirstMark 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Daytona · B轮 · 2026-10-20 · 本轮领投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c5dadf72976d5866"
+        },
         {
           "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f581afce52cf5bef"
@@ -211,6 +271,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-c5dadf72976d5866",
+          "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
+          "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
+          "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+          "quote": "FirstMark led, with the founders of Stripe, Shopify, Perplexity and Zoom investing.",
+          "quote_hash": "22fa150259428fa8a4e8c980573ea786eff0d7235190eeb67111c8e27e7a5a3d"
+        },
         {
           "source_id": "FISRC-f581afce52cf5bef",
           "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",

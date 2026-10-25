@@ -34533,7 +34533,164 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-24T03:56:12.582Z"
+    },
+    "EV-aab9f971ed5a99b4": {
+      "id": "EV-aab9f971ed5a99b4",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "agent-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "为AI智能体提供安全沙箱运行环境，属面向开发者的智能体开发与运行平台。",
+      "input_hash": "5b792f248cd327472732a36cdb0893ff93ec013f5a742feee2063a6fe993a1b2",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c5dadf72976d5866",
+          "quote": "The startup works by giving every AI agent a sandbox: a virtual computer where it can run code, browse the web or operate software without reaching a company’s wider systems."
+        },
+        {
+          "source_id": "FISRC-1ebe7c0a1f68df16",
+          "quote": "Secure virtual desktops (Linux, Windows, macOS) you can control with code."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-25T00:45:11.048Z"
+    },
+    "EV-2fec4f79947812c1": {
+      "id": "EV-2fec4f79947812c1",
+      "scope": "excluded",
+      "exclusion_reason": "not_ai_business",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "主营垂直氮化镓功率半导体器件，证据未显示AI相关业务。",
+      "input_hash": "cb43e2152b92ed3d1e8908853e6396bdb9bb8b360bba57132db457abba5404d5",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-16aa4356f2e7d63d",
+          "quote": "Vertical Semiconductor is developing a vertical gallium nitride FinFET platform intended to deliver greater power efficiency and higher power density than conventional semiconductor power conversion approaches."
+        },
+        {
+          "source_id": "FISRC-80da4dc9c667ec41",
+          "quote": "Vertical Semiconductor has demonstrated the technology on 8-inch wafers using standard silicon CMOS semiconductor manufacturing methods, enabling seamless integration with existing process technology and making it ready for real-world deployment for devices from 100 volts to 1.2kV."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-25T00:45:11.048Z"
+    },
+    "EV-aabe55266bd52958": {
+      "id": "EV-aabe55266bd52958",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "assistants",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "面向个人用户的私人助理应用，属消费级个人助手。",
+      "input_hash": "cc75be1c55d0a1225a1e9ed8cc5df71867461596c0db04e64566d6eca129ebe1",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3787040a54f790a2",
+          "quote": "用一句话概括，Today希望做的是用户的“私人助理”。"
+        },
+        {
+          "source_id": "FISRC-3787040a54f790a2",
+          "quote": "9月先在美区上线，两周后国区跟上，并迅速支持了飞书、钉钉、企业微信、滴答清单等平台。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-25T00:45:11.048Z"
+    },
+    "EV-a8fc0677d43d7b8f": {
+      "id": "EV-a8fc0677d43d7b8f",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        5
+      ],
+      "rationale": "主营存算一体AI大算力芯片及算力卡等产品，属AI芯片与加速器。",
+      "input_hash": "92b831875af5dbc5ebcb1bbedd69974830d193c84a873a59e1bc03103d45f302",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0cbb04b7d23b3a2c",
+          "quote": "其以3D DRAM为核心技术路线，首创全数字化通用存算一体架构"
+        },
+        {
+          "source_id": "FISRC-022d38fc66db727c",
+          "quote": "面向数据中心与AI云计算场景提供算力方案"
+        },
+        {
+          "source_id": "FISRC-0cbb04b7d23b3a2c",
+          "quote": "产品覆盖算力卡、工作站、一体机到推理集群的全栈矩阵"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-25T00:45:11.048Z"
+    },
+    "EV-04fb7521fa0fe4a9": {
+      "id": "EV-04fb7521fa0fe4a9",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "specialist-models",
+      "product_form_id": "model-api",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "元示科技以通用细胞模型为核心产品，属于生命科学专用基础模型。",
+      "input_hash": "2d92a2954d98d998fdd3c709526bb5ed17c9971625922972f9e2a3c474659659",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-27c3776c7b3aedc0",
+          "quote": "元示科技是一家聚焦 AI 虚拟细胞（AIVC）的早期公司，以“生物学原始数据引擎 + 通用细胞模型”为整体，构建垂直生命科学基础底座。"
+        },
+        {
+          "source_id": "FISRC-c87e5ef760ceb82c",
+          "quote": "只要给它输入\"加入某种药物\"的口令，它就能像真实细胞一样做出\"反应\"。"
+        },
+        {
+          "source_id": "FISRC-27c3776c7b3aedc0",
+          "quote": "如何让 AI 更准确地预测细胞在不同疾病状态、实验条件和干预方式下的响应"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-25T02:08:47.312Z"
     }
   },
-  "generated_at": "2026-10-24T03:56:12.582Z"
+  "generated_at": "2026-10-25T02:08:47.313Z"
 }

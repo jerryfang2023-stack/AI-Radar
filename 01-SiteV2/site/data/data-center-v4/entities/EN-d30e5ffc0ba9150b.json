@@ -5,12 +5,13 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-24T04:01:06.404Z",
-    "latestDataDate": "2026-10-24",
-    "currentDate": "2026-10-24",
-    "eventCount": 4256,
-    "quarantinedEventCount": 39,
+    "generatedAt": "2026-10-25T02:10:15.815Z",
+    "latestDataDate": "2026-10-25",
+    "currentDate": "2026-10-25",
+    "eventCount": 4268,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -65,6 +66,8 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-c4491ccfef9e3d73",
+      "EV-ebc7cbce77c27a1d",
       "EV-c2718ea152dde192",
       "EV-775bae399bcf79d2",
       "EV-88a984b765bb54f1",
@@ -72,6 +75,7 @@
       "EV-51d8aec94225e9c6",
       "EV-c09fcc4176cba844",
       "EV-060f003ce747acdd",
+      "EV-277bfee6ac132557",
       "EV-a2807764271b130d",
       "EV-f29c0c51a5cbfd84",
       "EV-72dc9ab86e08fbab",
@@ -88,13 +92,15 @@
       "EN-8989aada6eb4a4c3"
     ],
     "firstSeen": "2026-01-20",
-    "lastSeen": "2026-09-26",
+    "lastSeen": "2026-10-25",
     "relationIds": [
       "REL2-dcc3f6e959d6073a",
       "REL2-e1d65aab90a4ab28"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-c4491ccfef9e3d73",
+        "EV-ebc7cbce77c27a1d",
         "EV-51d8aec94225e9c6",
         "EV-c2718ea152dde192",
         "EV-775bae399bcf79d2",
@@ -106,6 +112,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-277bfee6ac132557",
         "EV-a2807764271b130d",
         "EV-f29c0c51a5cbfd84",
         "EV-72dc9ab86e08fbab",
@@ -119,6 +126,66 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-c4491ccfef9e3d73",
+        "dataDate": "2026-10-25",
+        "date": "2026-10-21",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "pending_verification",
+        "statusLabel": "待核验",
+        "title": "拿到2亿美金融资，Today AI回答了Personal AI的十个核心问题",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3a61f02cb94a58e6",
+          "EN-9c8ae69b84f21a2e",
+          "EN-d30e5ffc0ba9150b"
+        ]
+      },
+      {
+        "id": "EV-ebc7cbce77c27a1d",
+        "dataDate": "2026-10-25",
+        "date": "2026-10-21",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "AI金融智能体公司熵简科技完成C轮融资，蚂蚁集团领投",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-75d16a5d8729c00d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-75d16a5d8729c00d",
+          "EN-d30e5ffc0ba9150b"
+        ]
+      },
+      {
+        "id": "EV-277bfee6ac132557",
+        "dataDate": "2026-10-25",
+        "date": "2026-10-21",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "蚂蚁集团加码AI金融，领投熵简科技C轮",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d30e5ffc0ba9150b"
+        ]
+      },
       {
         "id": "EV-51d8aec94225e9c6",
         "dataDate": "2026-09-26",

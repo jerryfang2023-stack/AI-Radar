@@ -5,12 +5,13 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-24T04:01:06.404Z",
-    "latestDataDate": "2026-10-24",
-    "currentDate": "2026-10-24",
-    "eventCount": 4256,
-    "quarantinedEventCount": 39,
+    "generatedAt": "2026-10-25T02:10:15.815Z",
+    "latestDataDate": "2026-10-25",
+    "currentDate": "2026-10-25",
+    "eventCount": 4268,
+    "quarantinedEventCount": 40,
     "quarantinedEventIds": [
+      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -54,30 +55,38 @@
   },
   "institution": {
     "id": "INV-761a8933dffb2a",
-    "name": "Adam D'Angelo",
-    "aliases": [],
+    "name": "Adam D’Angelo",
+    "aliases": [
+      "Adam D'Angelo"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "unverified_investor",
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-22",
-    "latest_disclosed_at": "2026-09-22",
+    "latest_disclosed_at": "2026-10-20",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "other"
+      "other",
+      "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-ffad923c7afc100d",
+        "canonical_entity_id": "",
+        "name": "Daytona"
+      },
       {
         "entity_id": "EN-0830e0bf8e8fa471",
         "canonical_entity_id": "",
@@ -85,6 +94,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b9c3095c16d53005",
+        "funding_insight_id": "FI-8e1f21a79a3f480d",
+        "event_ids": [
+          "EV-aab9f971ed5a99b4"
+        ],
+        "company_entity_id": "EN-ffad923c7afc100d",
+        "company_canonical_entity_id": "",
+        "company_name": "Daytona",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$60M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-10-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5dadf72976d5866",
+            "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
+            "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
+            "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+            "quote": "The round includes seven tech founders investing as angels: Patrick Collison of Stripe, Tobi Lütke of Shopify, Aravind Srinivas of Perplexity, Eric Yuan of Zoom, Olivier Pomel of Datadog, Adam D’Angelo of Quora and Brendan Foody of Mercor.",
+            "quote_hash": "c6c6da54b2c77b01f7a44bd99e629b97f69ef2fdfb9ff6d45d3f7ce9a2b50663"
+          }
+        ]
+      },
       {
         "activity_id": "IA-84e51f0be8511990",
         "funding_insight_id": "FI-00a8a79e470f2469",
@@ -128,6 +177,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c5dadf72976d5866",
+        "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
+        "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
+        "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+        "quote": "The round includes seven tech founders investing as angels: Patrick Collison of Stripe, Tobi Lütke of Shopify, Aravind Srinivas of Perplexity, Eric Yuan of Zoom, Olivier Pomel of Datadog, Adam D’Angelo of Quora and Brendan Foody of Mercor.",
+        "quote_hash": "c6c6da54b2c77b01f7a44bd99e629b97f69ef2fdfb9ff6d45d3f7ce9a2b50663"
+      },
+      {
         "source_id": "FISRC-1f3aa9ba4c739ca7",
         "source_url": "https://pulse2.com/horowitz-andreessen-academy-raises-42-million-and-launches-tuition-free-fellowship-in-san-francisco/",
         "source_title": "Horowitz Andreessen Academy Raises $42 Million And Launches Tuition-Free Fellowship In San Francisco",
@@ -141,10 +198,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Adam D'Angelo 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Adam D’Angelo 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Daytona · B轮 · 2026-10-20 · 本轮参投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c5dadf72976d5866"
+        },
         {
           "description": "融资来源记录：Horowitz Andreessen Academy · 其他融资 · 2026-09-22 · 本轮参投 · $42 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1f3aa9ba4c739ca7"
@@ -152,6 +213,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-c5dadf72976d5866",
+          "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
+          "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
+          "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+          "quote": "The round includes seven tech founders investing as angels: Patrick Collison of Stripe, Tobi Lütke of Shopify, Aravind Srinivas of Perplexity, Eric Yuan of Zoom, Olivier Pomel of Datadog, Adam D’Angelo of Quora and Brendan Foody of Mercor.",
+          "quote_hash": "c6c6da54b2c77b01f7a44bd99e629b97f69ef2fdfb9ff6d45d3f7ce9a2b50663"
+        },
         {
           "source_id": "FISRC-1f3aa9ba4c739ca7",
           "source_url": "https://pulse2.com/horowitz-andreessen-academy-raises-42-million-and-launches-tuition-free-fellowship-in-san-francisco/",
