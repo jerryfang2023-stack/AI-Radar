@@ -38841,23 +38841,6 @@
         "last_fact_review_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
         "fact_review_completed": true
       },
-      "research_deferral": {
-        "version": "FINANCING-RESEARCH-DEFERRAL-1",
-        "event_id": "EV-04fb7521fa0fe4a9",
-        "status": "pending_verification",
-        "reason": "research_sources_insufficient",
-        "sources": [
-          {
-            "raw_id": "RAW-7591d7bb5aa46d2c",
-            "source_ref": "SA-745b135d531df22e",
-            "content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
-            "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima"
-          }
-        ],
-        "input_hash": "0991a2e0af397b3d713d49f5424662745a883afe7fe8efd2b79d28091e667ce7",
-        "next_action": "recover_existing_originals_and_complete_independent_research",
-        "fact_approval": false
-      },
       "fact_review_completed": true,
       "unresolved_event_ids": [],
       "qa_hints": [],
@@ -38899,7 +38882,26 @@
       "review_refs": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-10-25/qa-queue.json",
         "01-SiteV2/content/12-applications/funding-insights/2026-10-25.json"
-      ]
+      ],
+      "resolved_research_deferral": {
+        "version": "FINANCING-RESEARCH-DEFERRAL-1",
+        "event_id": "EV-04fb7521fa0fe4a9",
+        "status": "pending_verification",
+        "reason": "research_sources_insufficient",
+        "sources": [
+          {
+            "raw_id": "RAW-7591d7bb5aa46d2c",
+            "source_ref": "SA-745b135d531df22e",
+            "content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+            "source_url": "https://news.qq.com/rain/a/20261022A0445U00?ptag=ima"
+          }
+        ],
+        "input_hash": "0991a2e0af397b3d713d49f5424662745a883afe7fe8efd2b79d28091e667ce7",
+        "next_action": "recover_existing_originals_and_complete_independent_research",
+        "fact_approval": false,
+        "resolved_at": "2026-10-25",
+        "resolution": "verified"
+      }
     },
     "https://www.163.com/dy/article/LA1DEAL305118DFD.html": {
       "source_url": "https://www.163.com/dy/article/LA1DEAL305118DFD.html",
@@ -38995,7 +38997,7 @@
     "responsible_review": 64
   },
   "followup_queue": {
-    "pending": 227,
+    "pending": 226,
     "needs_attention": 610
   },
   "review_budget": {
@@ -39008,10 +39010,10 @@
     }
   },
   "review_queue": {
-    "total": 837,
+    "total": 836,
     "stages": {
       "evidence_review": 85,
-      "fact_review": 69,
+      "fact_review": 68,
       "needs_original": 390,
       "source_identity_review": 272,
       "fact_conflict_review": 21

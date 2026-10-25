@@ -101,6 +101,42 @@
       "reason": "原文与独立报道均明确两轮合计近亿元。按轮次标注投资方，金额只计一次，AI虚拟细胞主营符合范围。",
       "reviewer": "Codex responsible financing reviewer",
       "reviewed_at": "2026-10-25T02:04:17.018Z"
+    },
+    {
+      "event_id": "EV-aab9f971ed5a99b4",
+      "action": "align_canonical_announcement_date_and_remove_unsupported_pivot_year",
+      "source_ref": "SA-76cd08755d66be3d",
+      "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+      "quote": "On October 20, that gamble became a $60M Series B at a $1B valuation. Daytona, a San Francisco-based startup with Croatian founders, said the round was led by FirstMark Growth and takes its total funding to $91M.",
+      "quote_hash": "7f868f41296c88f3ade72b24065e968404f7cd025b384dbafdabe770d0e434d6",
+      "date": "2026-10-20",
+      "summary_before": "为AI智能体提供安全沙箱运行环境的云基础设施公司，2025年从开发者工具转向AI智能体基础设施。",
+      "summary_after": "为AI智能体提供安全沙箱运行环境的云基础设施公司，从开发者工具转向AI智能体基础设施。",
+      "reviewer": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-25T02:27:15.907Z",
+      "reason": "正式审核观察复核：原标题报道日期保留10月21日，融资事件日按正文10月20日。三篇已存证原文均未支持2025年转型，删除该年份，不改动有证据的E2B 2025年7月A轮。"
+    },
+    {
+      "event_id": "EV-04fb7521fa0fe4a9",
+      "action": "preserve_accepted_combined_round_on_replay",
+      "source_commit": "e83502422e3a7ee4fa8086f2c829fdb0fef829f4",
+      "reason": "发现轮次解析仅取首个plus标记，会把天使轮及天使+轮压成单轮并错移天使轮投资方。修正解析并恢复已发布的合计轮次与逐轮投资方，回归测试覆盖重放。不是缓存优先顺序错误，不进行实体合并。",
+      "source_binding": [
+        {
+          "source_id": "FISRC-27c3776c7b3aedc0",
+          "quote": "近日，「元示科技」宣布已连续完成近亿元人民币天使轮及天使 + 轮融资。",
+          "source_content_hash": "c5756ebd86e6e330dafa41488554a5b5f6a469a0eadbe96a14819a992448d25c",
+          "quote_hash": "51fa68ca8df868483aa77275c4e271a857dbb82ab6517a6af91f1df6886c6e2e"
+        },
+        {
+          "source_id": "FISRC-c87e5ef760ceb82c",
+          "quote": "元示（上海）科技有限公司（下文简称：元示科技）成功完成近亿元人民币天使轮及天使+轮融资。",
+          "source_content_hash": "d9d5ef64bdc32d25",
+          "quote_hash": "ba1117c06947314c21bfb224ce4e1a20b25b26d79785fbbcfd5dfafb7d3c91fb"
+        }
+      ],
+      "reviewer": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-25T02:37:29.559Z"
     }
   ]
 }
