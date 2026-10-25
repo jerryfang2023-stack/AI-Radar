@@ -1,3 +1,5 @@
+import fs from 'node:fs';
+import path from 'node:path';
 import {digest} from './state.mjs';
 
 const version='FINANCING-RESEARCH-DEFERRAL-1';
@@ -29,4 +31,29 @@ export function researchDeferral(event,bundle,row,cards=[]) {
 export function validResearchDeferral(event,bundle,row,cards=[]) {
   const expected=researchDeferral(event,bundle,row,cards);
   return Boolean(expected && row.deferral && digest(expected)===digest(row.deferral));
+}
+
+// Research approval is distinct from the original event's claimed completion.
+// Show a pending label only for an intact, cardless deferral; never hide a
+// published historical round or trust a stale receipt after facts change.
+export function pendingResearchEvents(root) {
+  const directory=path.join(root,'01-SiteV2/content/12-applications/funding-insights');
+  if(!fs.existsSync(directory))return new Map();
+  const read=file=>JSON.parse(fs.readFileSync(file,'utf8'));
+  const days=fs.readdirSync(directory).filter(n=>/^\d{4}-\d{2}-\d{2}\.json$/u.test(n)).sort()
+    .map(name=>({date:name.slice(0,10),data:read(path.join(directory,name))}));
+  const cards=days.flatMap(day=>day.data.cards || []),latest=new Map(),bundles=new Map();
+  for(const day of days)for(const row of day.data.queue || [])latest.set(row.event_id,{date:day.date,row});
+  const pending=new Map();
+  for(const {date,row} of latest.values()) {
+    if(!row.deferral)continue;
+    if(!bundles.has(date)) {
+      const base=path.join(root,'01-SiteV2/content/11-databases/data-center-v4',date);
+      const load=name=>fs.existsSync(path.join(base,name))?read(path.join(base,name)):[];
+      bundles.set(date,{events:load('canonical-events.json'),claims:load('claims.json'),rawDocuments:load('raw-documents.json')});
+    }
+    const bundle=bundles.get(date),event=bundle.events.find(e=>e.event_id===row.event_id);
+    if(validResearchDeferral(event,bundle,row,cards))pending.set(row.event_id,row.deferral.reason);
+  }
+  return pending;
 }

@@ -3,6 +3,7 @@ import { isMainModule } from "../../../agent-workflow/tools/lib/module-entry.mjs
 
 import { publicEventSourceTitleIssue } from "../../../agent-workflow/tools/build-data-center-v4.mjs";
 import crypto from "node:crypto";
+import { pendingResearchEvents } from "../../../agent-workflow/financing/research-deferral.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -193,6 +194,7 @@ export function buildEventRecords({
   tagAssertions,
   facetAssertions,
   reviewedEventClassifications = [],
+  pendingResearch = new Map(),
   tagNames,
   facetNames
 }) {
@@ -329,9 +331,10 @@ export function buildEventRecords({
       eventType: event.event_type,
       eventTypeLabel: label.exact,
       eventGroup: label.group,
-      status: event.event_status || "",
-      statusLabel: stageLabels[event.event_status] || event.event_status || "未披露",
-      publicationStatus: event.publication_status || "",
+      status: pendingResearch.has(event.event_id) ? "pending_verification" : event.event_status || "",
+      statusLabel: pendingResearch.has(event.event_id) ? "待核验" : stageLabels[event.event_status] || event.event_status || "未披露",
+      publicationStatus: pendingResearch.has(event.event_id) ? "pending_verification" : event.publication_status || "",
+      ...(pendingResearch.has(event.event_id) ? { reportedStatus: event.event_status, researchDeferral: pendingResearch.get(event.event_id) } : {}),
       title,
       originalTitle: originalTitle && originalTitle !== title ? originalTitle : "",
       subject: primaryClaim?.subject || eventEntities.map((item) => item.canonical_name).join("、") || "未披露",
@@ -736,6 +739,7 @@ export function buildFrontstageData(root = defaultRoot) {
     tagAssertions: readJsonl(path.join(tables, "tag_assertions.jsonl")),
     facetAssertions: readJsonl(path.join(tables, "facet_assertions.jsonl")),
     reviewedEventClassifications,
+    pendingResearch: pendingResearchEvents(root),
     tagNames,
     facetNames
   });
