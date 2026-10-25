@@ -1,0 +1,400 @@
+{
+  "mode": "dry-run",
+  "baseline": "15aec6f9ef0",
+  "reviewed_at": "2026-10-25T09:37:08.568Z",
+  "audit": {
+    "records": 846,
+    "counts": {
+      "publication_date_unrecorded": 3146,
+      "legacy_content_hash_requires_review": 2679
+    }
+  },
+  "changes": [
+    {
+      "event_id": "EV-0d7fe2f7274f7448",
+      "card_id": "FI-d8fd29312f7415a9",
+      "field": "announced_at",
+      "old_value": "2026-10-23",
+      "new_value": "2026-10-22",
+      "reason": "2026-10-22 official current-round disclosure supports USD 40 million; the 2026-10-23 EUR 35.73 million media equivalent is retained as the same round, while the 2024 B-round source supports history only.",
+      "reviewed_at": "2026-10-25T09:37:08.568Z",
+      "source_ids": [
+        "FISRC-1a4cc9099dde3ced",
+        "FISRC-4c10800e55cea070",
+        "FISRC-ebe50cb179756664"
+      ]
+    },
+    {
+      "event_id": "EV-0d7fe2f7274f7448",
+      "card_id": "FI-d8fd29312f7415a9",
+      "field": "amount",
+      "old_value": "€35.73 million",
+      "new_value": "$40 million",
+      "reason": "2026-10-22 official current-round disclosure supports USD 40 million; the 2026-10-23 EUR 35.73 million media equivalent is retained as the same round, while the 2024 B-round source supports history only.",
+      "reviewed_at": "2026-10-25T09:37:08.568Z",
+      "source_ids": [
+        "FISRC-1a4cc9099dde3ced",
+        "FISRC-4c10800e55cea070",
+        "FISRC-ebe50cb179756664"
+      ]
+    },
+    {
+      "event_id": "EV-0d7fe2f7274f7448",
+      "card_id": "FI-d8fd29312f7415a9",
+      "field": "amount_original",
+      "old_value": "€35.73 million",
+      "new_value": "$40 million",
+      "reason": "2026-10-22 official current-round disclosure supports USD 40 million; the 2026-10-23 EUR 35.73 million media equivalent is retained as the same round, while the 2024 B-round source supports history only.",
+      "reviewed_at": "2026-10-25T09:37:08.568Z",
+      "source_ids": [
+        "FISRC-1a4cc9099dde3ced",
+        "FISRC-4c10800e55cea070",
+        "FISRC-ebe50cb179756664"
+      ]
+    },
+    {
+      "event_id": "EV-0d7fe2f7274f7448",
+      "card_id": "FI-d8fd29312f7415a9",
+      "field": "amount_normalized",
+      "old_value": {
+        "currency": "EUR",
+        "value": 35730000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "3573 万欧元"
+      },
+      "new_value": {
+        "currency": "USD",
+        "value": 40000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "4000 万美元"
+      },
+      "reason": "2026-10-22 official current-round disclosure supports USD 40 million; the 2026-10-23 EUR 35.73 million media equivalent is retained as the same round, while the 2024 B-round source supports history only.",
+      "reviewed_at": "2026-10-25T09:37:08.568Z",
+      "source_ids": [
+        "FISRC-1a4cc9099dde3ced",
+        "FISRC-4c10800e55cea070",
+        "FISRC-ebe50cb179756664"
+      ]
+    }
+  ],
+  "sourceChanges": [
+    {
+      "event_id": "EV-0d7fe2f7274f7448",
+      "source_id": "FISRC-1a4cc9099dde3ced",
+      "reviewed_at": "2026-10-25T09:37:08.568Z",
+      "reason": "2026-10-22 official current-round disclosure supports USD 40 million; the 2026-10-23 EUR 35.73 million media equivalent is retained as the same round, while the 2024 B-round source supports history only.",
+      "fields": [
+        {
+          "field": "published_at",
+          "old_value": null,
+          "new_value": "2026-10-23"
+        },
+        {
+          "field": "verified_at",
+          "old_value": null,
+          "new_value": "2026-10-25T09:37:08.568Z"
+        },
+        {
+          "field": "purpose",
+          "old_value": null,
+          "new_value": "current_round"
+        },
+        {
+          "field": "supports_fields",
+          "old_value": null,
+          "new_value": [
+            "amount",
+            "currency",
+            "round",
+            "investors",
+            "investor_roles"
+          ]
+        },
+        {
+          "field": "verification_hash",
+          "old_value": null,
+          "new_value": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe"
+        },
+        {
+          "field": "verification_ref",
+          "old_value": null,
+          "new_value": "evidence://4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe"
+        },
+        {
+          "field": "amount_basis",
+          "old_value": null,
+          "new_value": "media_currency_equivalent"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-0d7fe2f7274f7448",
+      "source_id": "FISRC-da6b709a9554b865",
+      "reviewed_at": "2026-10-25T09:37:08.568Z",
+      "reason": "2026-10-22 official current-round disclosure supports USD 40 million; the 2026-10-23 EUR 35.73 million media equivalent is retained as the same round, while the 2024 B-round source supports history only.",
+      "fields": [
+        {
+          "field": "published_at",
+          "old_value": null,
+          "new_value": "2024-09-04T12:02:50.000Z"
+        },
+        {
+          "field": "verified_at",
+          "old_value": null,
+          "new_value": "2026-10-25T09:37:08.568Z"
+        },
+        {
+          "field": "purpose",
+          "old_value": null,
+          "new_value": "historical_round"
+        },
+        {
+          "field": "supports_fields",
+          "old_value": null,
+          "new_value": []
+        },
+        {
+          "field": "verification_hash",
+          "old_value": null,
+          "new_value": "61cb25585240b2981e4bcefb1b41a2b9f9dc5d4320c104a0b0bc9fd16b93cf52"
+        },
+        {
+          "field": "verification_ref",
+          "old_value": null,
+          "new_value": "evidence://61cb25585240b2981e4bcefb1b41a2b9f9dc5d4320c104a0b0bc9fd16b93cf52"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-0d7fe2f7274f7448",
+      "source_id": "FISRC-4c10800e55cea070",
+      "reviewed_at": "2026-10-25T09:37:08.568Z",
+      "reason": "2026-10-22 official current-round disclosure supports USD 40 million; the 2026-10-23 EUR 35.73 million media equivalent is retained as the same round, while the 2024 B-round source supports history only.",
+      "fields": [
+        {
+          "field": "published_at",
+          "old_value": null,
+          "new_value": "2026-10-23T07:23:31.000Z"
+        },
+        {
+          "field": "verified_at",
+          "old_value": null,
+          "new_value": "2026-10-25T09:37:08.568Z"
+        },
+        {
+          "field": "purpose",
+          "old_value": null,
+          "new_value": "current_round"
+        },
+        {
+          "field": "supports_fields",
+          "old_value": null,
+          "new_value": [
+            "amount",
+            "currency",
+            "round",
+            "investors",
+            "investor_roles"
+          ]
+        },
+        {
+          "field": "verification_hash",
+          "old_value": null,
+          "new_value": "4fef9f6f1d7259831d0c28d1355bd5c24ffc1ec4c700b5c5b5a8f8f58b93faef"
+        },
+        {
+          "field": "verification_ref",
+          "old_value": null,
+          "new_value": "evidence://4fef9f6f1d7259831d0c28d1355bd5c24ffc1ec4c700b5c5b5a8f8f58b93faef"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-0d7fe2f7274f7448",
+      "source_id": "FISRC-ebe50cb179756664",
+      "reviewed_at": "2026-10-25T09:37:08.568Z",
+      "reason": "2026-10-22 official current-round disclosure supports USD 40 million; the 2026-10-23 EUR 35.73 million media equivalent is retained as the same round, while the 2024 B-round source supports history only.",
+      "fields": [
+        {
+          "field": "source_id",
+          "old_value": null,
+          "new_value": "FISRC-ebe50cb179756664"
+        },
+        {
+          "field": "source_url",
+          "old_value": null,
+          "new_value": "https://cognitivecredit.com/blog/cognitive-credit-announces-40-million-strategic-growth-investment"
+        },
+        {
+          "field": "title",
+          "old_value": null,
+          "new_value": "Cognitive Credit Announces $40 Million Strategic Growth Investment"
+        },
+        {
+          "field": "publisher",
+          "old_value": null,
+          "new_value": "Cognitive Credit"
+        },
+        {
+          "field": "source_class",
+          "old_value": null,
+          "new_value": "official"
+        },
+        {
+          "field": "captured_at",
+          "old_value": null,
+          "new_value": "2026-10-25T09:33:56.561256+00:00"
+        },
+        {
+          "field": "published_at",
+          "old_value": null,
+          "new_value": "2026-10-22T12:00:00.000Z"
+        },
+        {
+          "field": "modified_at",
+          "old_value": null,
+          "new_value": "2026-10-22T12:00:00.279Z"
+        },
+        {
+          "field": "content_hash",
+          "old_value": null,
+          "new_value": "fb99b471a222853b155af6ceb5e3b85deefc9aab504da6399efc61beeef283f0"
+        },
+        {
+          "field": "verification_hash",
+          "old_value": null,
+          "new_value": "fb99b471a222853b155af6ceb5e3b85deefc9aab504da6399efc61beeef283f0"
+        },
+        {
+          "field": "verification_ref",
+          "old_value": null,
+          "new_value": "evidence://fb99b471a222853b155af6ceb5e3b85deefc9aab504da6399efc61beeef283f0"
+        },
+        {
+          "field": "verified_at",
+          "old_value": null,
+          "new_value": "2026-10-25T09:37:08.568Z"
+        },
+        {
+          "field": "purpose",
+          "old_value": null,
+          "new_value": "current_round"
+        },
+        {
+          "field": "supports_fields",
+          "old_value": null,
+          "new_value": [
+            "amount",
+            "currency",
+            "round",
+            "investors",
+            "investor_roles",
+            "announced_at"
+          ]
+        },
+        {
+          "field": "amount_basis",
+          "old_value": null,
+          "new_value": "original_disclosure"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-bc1d1f284b31e230",
+      "source_id": "FISRC-cda6678078919bf2",
+      "reviewed_at": "2026-10-25T09:37:08.568Z",
+      "reason": "Original reports confirm the existing date, seed round, USD 3 million and named investors. Add source publication dates without changing correct financing facts.",
+      "fields": [
+        {
+          "field": "published_at",
+          "old_value": null,
+          "new_value": "2026-10-22T10:24:50+05:30"
+        },
+        {
+          "field": "verified_at",
+          "old_value": null,
+          "new_value": "2026-10-25T09:37:08.568Z"
+        },
+        {
+          "field": "purpose",
+          "old_value": null,
+          "new_value": "current_round"
+        },
+        {
+          "field": "supports_fields",
+          "old_value": null,
+          "new_value": [
+            "amount",
+            "currency",
+            "round",
+            "investors",
+            "investor_roles",
+            "announced_at"
+          ]
+        },
+        {
+          "field": "verification_hash",
+          "old_value": null,
+          "new_value": "3895cdd04679ab006fe494d3fb8a8593cb92ec496244a12138d2b8a269c0454d"
+        },
+        {
+          "field": "verification_ref",
+          "old_value": null,
+          "new_value": "evidence://3895cdd04679ab006fe494d3fb8a8593cb92ec496244a12138d2b8a269c0454d"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-bc1d1f284b31e230",
+      "source_id": "FISRC-2a707fabe7f50d38",
+      "reviewed_at": "2026-10-25T09:37:08.568Z",
+      "reason": "Original reports confirm the existing date, seed round, USD 3 million and named investors. Add source publication dates without changing correct financing facts.",
+      "fields": [
+        {
+          "field": "published_at",
+          "old_value": null,
+          "new_value": "2026-10-22T08:39:14.130+05:30"
+        },
+        {
+          "field": "verified_at",
+          "old_value": null,
+          "new_value": "2026-10-25T09:37:08.568Z"
+        },
+        {
+          "field": "purpose",
+          "old_value": null,
+          "new_value": "current_round"
+        },
+        {
+          "field": "supports_fields",
+          "old_value": null,
+          "new_value": [
+            "amount",
+            "currency",
+            "round",
+            "investors",
+            "investor_roles",
+            "announced_at"
+          ]
+        },
+        {
+          "field": "verification_hash",
+          "old_value": null,
+          "new_value": "2645a02f84b1ee7ab2d6f6bc3594979bb39bb1b9679b997a2e0c4f1c7a59adc3"
+        },
+        {
+          "field": "verification_ref",
+          "old_value": null,
+          "new_value": "evidence://2645a02f84b1ee7ab2d6f6bc3594979bb39bb1b9679b997a2e0c4f1c7a59adc3"
+        }
+      ]
+    }
+  ],
+  "privateEvidenceCommit": "f5270135b"
+}

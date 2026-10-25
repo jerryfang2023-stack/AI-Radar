@@ -69,6 +69,7 @@ export function buildFundingSubjects(input, review = {}) {
     }
   }
   const eventCards = [...events.values()].filter(c=>!duplicateIds.has(c.funding_insight_id));
+  for(const c of eventCards)c.financing.current_source_ids=[...new Set([...(c.financing.evidence_refs||[]).map(r=>r.source_id),...Object.values(c.financing.evidence_review?.field_sources||{}).flat()])];
   const groups = new Map();
   for (const card of eventCards) {
     const key=fundingSubjectKey(card,review),decision=review.subjects?.[key];
@@ -121,7 +122,8 @@ export function buildFundingSubjects(input, review = {}) {
     funding_insight_id:c.funding_insight_id,triggered_by_event_id:c.triggered_by_event_id,source_event_ids:c.source_event_ids,
     subject_card_id:c.subject_card_id,as_of_date:c.as_of_date,market_scope:c.market_scope,
     company:Object.fromEntries(['entity_id','application_entity_id','name','full_name','summary','website','headquarters','founders'].map(k=>[k,c.company[k]])),
-    financing:Object.fromEntries(['round','round_code','round_original','amount','amount_original','amount_normalized','announced_at','disclosure_status','investor_disclosure_status','investors'].map(k=>[k,c.financing[k]])),
+    financing:Object.fromEntries(['round','round_code','round_original','amount','amount_original','amount_normalized','announced_at','disclosure_status','investor_disclosure_status','investors','evidence_refs','evidence_review','current_source_ids'].map(k=>[k,c.financing[k]])),
+    research_sources:c.research_sources||[],
     financing_tags:c.financing_tags,market_category:c.market_category,market_subcategory:c.market_subcategory,product_form:c.product_form,
     products:(c.products||[]).map(p=>({name:p.name})),
   }));
