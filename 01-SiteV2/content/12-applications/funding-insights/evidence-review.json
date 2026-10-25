@@ -1,0 +1,292 @@
+{
+  "version": "FINANCING-EVIDENCE-REVIEW-1",
+  "reviewed_at": "2026-10-25T09:37:08.568Z",
+  "entries": [
+    {
+      "id": "FER-20261025-cognitive-credit",
+      "event_id": "EV-0d7fe2f7274f7448",
+      "card_id": "FI-d8fd29312f7415a9",
+      "reviewed_at": "2026-10-25T09:37:08.568Z",
+      "reviewer": "Codex original-source review",
+      "reason": "2026-10-22 official current-round disclosure supports USD 40 million; the 2026-10-23 EUR 35.73 million media equivalent is retained as the same round, while the 2024 B-round source supports history only.",
+      "public_note": "2026-10-25 更正：本轮以公司 10 月 22 日公告的 4000 万美元为原始披露；10 月 23 日报道的 3573 万欧元为同轮媒体折算，保留其日期与表达。2024 年 B 轮公告仅作历史来源。",
+      "public_note_en": "Correction, 2026-10-25: the company disclosed USD 40 million on October 22. The October 23 EUR 35.73 million report is a media equivalent for the same round. The 2024 Series B announcement supports history only.",
+      "first_public_disclosure": {
+        "date": "2026-10-22",
+        "source_id": "FISRC-ebe50cb179756664",
+        "basis": "earliest_verified_source_not_claim_of_absolute_first"
+      },
+      "financing_changes": {
+        "announced_at": {
+          "before": "2026-10-23",
+          "after": "2026-10-22"
+        },
+        "amount": {
+          "before": "€35.73 million",
+          "after": "$40 million"
+        },
+        "amount_original": {
+          "before": "€35.73 million",
+          "after": "$40 million"
+        },
+        "amount_normalized": {
+          "before": {
+            "currency": "EUR",
+            "value": 35730000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3573 万欧元"
+          },
+          "after": {
+            "currency": "USD",
+            "value": 40000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "4000 万美元"
+          }
+        }
+      },
+      "media_disclosures": [
+        {
+          "source_id": "FISRC-1a4cc9099dde3ced",
+          "published_at": "2026-10-23",
+          "amount": "€35.73 million ($40 million)",
+          "currency": "EUR",
+          "value": 35730000,
+          "kind": "media_currency_equivalent",
+          "same_round": true
+        }
+      ],
+      "conflicts": [],
+      "sources": [
+        {
+          "previous": {
+            "source_id": "FISRC-1a4cc9099dde3ced",
+            "source_url": "https://www.eu-startups.com/2026/10/londons-cognitive-credit-lands-e35-73-million-to-scale-its-ai-and-data-platform-for-credit-markets/",
+            "title": "伦敦的Cognitive Credit获得3573万欧元，用于扩展其面向信贷市场的AI和数据平台",
+            "publisher": "www.eu-startups.com",
+            "source_class": "canonical_event_source",
+            "capture_method": "data_center_v4_source_artifact",
+            "captured_at": "2026-10-24T00:20:29.527Z",
+            "content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+            "source_artifact_id": "SA-59c355379b5c9a43",
+            "raw_id": "RAW-b8628300c3c77259"
+          },
+          "source_id": "FISRC-1a4cc9099dde3ced",
+          "source_url": "https://www.eu-startups.com/2026/10/londons-cognitive-credit-lands-e35-73-million-to-scale-its-ai-and-data-platform-for-credit-markets/",
+          "title": "伦敦的Cognitive Credit获得3573万欧元，用于扩展其面向信贷市场的AI和数据平台",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "published_at": "2026-10-23",
+          "verified_at": "2026-10-25T09:37:08.568Z",
+          "purpose": "current_round",
+          "supports_fields": [
+            "amount",
+            "currency",
+            "round",
+            "investors",
+            "investor_roles"
+          ],
+          "verification_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+          "verification_ref": "evidence://4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+          "amount_basis": "media_currency_equivalent"
+        },
+        {
+          "previous": {
+            "source_id": "FISRC-da6b709a9554b865",
+            "source_url": "https://cognitivecredit.com/blog/cognitive-credit-completes-10mm-series-b-fundraise",
+            "title": "Cognitive Credit Secures $10M Series B Funding",
+            "publisher": "cognitivecredit.com",
+            "source_class": "official_candidate",
+            "capture_method": "direct_fetch",
+            "captured_at": "2026-10-24T00:44:54.518Z",
+            "content_hash": "665a575391b5f54e",
+            "source_artifact_id": null,
+            "raw_id": null
+          },
+          "source_id": "FISRC-da6b709a9554b865",
+          "source_url": "https://cognitivecredit.com/blog/cognitive-credit-completes-10mm-series-b-fundraise",
+          "title": "Cognitive Credit Secures $10M Series B Funding",
+          "publisher": "cognitivecredit.com",
+          "source_class": "official_candidate",
+          "published_at": "2024-09-04T12:02:50.000Z",
+          "verified_at": "2026-10-25T09:37:08.568Z",
+          "purpose": "historical_round",
+          "supports_fields": [],
+          "verification_hash": "61cb25585240b2981e4bcefb1b41a2b9f9dc5d4320c104a0b0bc9fd16b93cf52",
+          "verification_ref": "evidence://61cb25585240b2981e4bcefb1b41a2b9f9dc5d4320c104a0b0bc9fd16b93cf52"
+        },
+        {
+          "previous": {
+            "source_id": "FISRC-4c10800e55cea070",
+            "source_url": "https://www.thesaasnews.com/news/cognitive-credit-raises-40m-growth-capital/",
+            "title": "Cognitive Credit Raises $40M Growth Capital",
+            "publisher": "thesaasnews.com",
+            "source_class": "independent",
+            "capture_method": "direct_fetch",
+            "captured_at": "2026-10-24T00:44:54.670Z",
+            "content_hash": "3e95e94f4b64462c",
+            "source_artifact_id": null,
+            "raw_id": null
+          },
+          "source_id": "FISRC-4c10800e55cea070",
+          "source_url": "https://www.thesaasnews.com/news/cognitive-credit-raises-40m-growth-capital/",
+          "title": "Cognitive Credit Raises $40M Growth Capital",
+          "publisher": "thesaasnews.com",
+          "source_class": "independent",
+          "published_at": "2026-10-23T07:23:31.000Z",
+          "verified_at": "2026-10-25T09:37:08.568Z",
+          "purpose": "current_round",
+          "supports_fields": [
+            "amount",
+            "currency",
+            "round",
+            "investors",
+            "investor_roles"
+          ],
+          "verification_hash": "4fef9f6f1d7259831d0c28d1355bd5c24ffc1ec4c700b5c5b5a8f8f58b93faef",
+          "verification_ref": "evidence://4fef9f6f1d7259831d0c28d1355bd5c24ffc1ec4c700b5c5b5a8f8f58b93faef"
+        },
+        {
+          "added": true,
+          "source_id": "FISRC-ebe50cb179756664",
+          "source_url": "https://cognitivecredit.com/blog/cognitive-credit-announces-40-million-strategic-growth-investment",
+          "title": "Cognitive Credit Announces $40 Million Strategic Growth Investment",
+          "publisher": "Cognitive Credit",
+          "source_class": "official",
+          "captured_at": "2026-10-25T09:33:56.561256+00:00",
+          "published_at": "2026-10-22T12:00:00.000Z",
+          "modified_at": "2026-10-22T12:00:00.279Z",
+          "content_hash": "fb99b471a222853b155af6ceb5e3b85deefc9aab504da6399efc61beeef283f0",
+          "verification_hash": "fb99b471a222853b155af6ceb5e3b85deefc9aab504da6399efc61beeef283f0",
+          "verification_ref": "evidence://fb99b471a222853b155af6ceb5e3b85deefc9aab504da6399efc61beeef283f0",
+          "verified_at": "2026-10-25T09:37:08.568Z",
+          "purpose": "current_round",
+          "supports_fields": [
+            "amount",
+            "currency",
+            "round",
+            "investors",
+            "investor_roles",
+            "announced_at"
+          ],
+          "amount_basis": "original_disclosure"
+        }
+      ],
+      "previous_evidence_refs": [
+        {
+          "source_id": "FISRC-1a4cc9099dde3ced",
+          "quote": "Cognitive Credit, the London-based provider of corporate credit data, analytics and AI technology, has secured a €35.73 million ($40 million) strategic growth investment.",
+          "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+          "quote_hash": "867c03769fddbbcdb5b97bf3e259c167e26d50500408277dca42ea8ad35e3d37"
+        },
+        {
+          "source_id": "FISRC-1a4cc9099dde3ced",
+          "quote": "has secured a €35.73 million ($40 million) strategic growth investment",
+          "source_content_hash": "4250b199b65c99bc49131885ed7e11b3c6905f5dd5e836f03d60a33a125777fe",
+          "quote_hash": "e65b0f3d3357c993b84d606dbf20c0c38bde3eb783eba5a9047c80d416b16f0c"
+        },
+        {
+          "source_id": "FISRC-4c10800e55cea070",
+          "quote": "has raised $40 million in a strategic growth investment round",
+          "source_content_hash": "3e95e94f4b64462c",
+          "quote_hash": "1662aa1eb574f1c76b5b78d27d52b2b5c92b0d34cd84522674fe15567ffab268"
+        }
+      ],
+      "financing_evidence": [
+        {
+          "source_id": "FISRC-ebe50cb179756664",
+          "quote": "completion of a $40 million strategic growth investment led by Summit Partners, with continued participation from ETFS Capital",
+          "source_content_hash": "fb99b471a222853b155af6ceb5e3b85deefc9aab504da6399efc61beeef283f0",
+          "quote_hash": "45c991e31253c5cb7bc94da0dba10e4d1169bb0870e1bd310e5be05de87ca8ed"
+        }
+      ]
+    },
+    {
+      "id": "FER-20261025-karta-ai",
+      "event_id": "EV-bc1d1f284b31e230",
+      "card_id": "FI-e57481409918a342",
+      "reviewed_at": "2026-10-25T09:37:08.568Z",
+      "reviewer": "Codex original-source review",
+      "reason": "Original reports confirm the existing date, seed round, USD 3 million and named investors. Add source publication dates without changing correct financing facts.",
+      "public_note": "2026-10-25 核验：融资日期、300 万美元、种子轮与投资方记录保持不变；补录已核实的原文发布时间。",
+      "public_note_en": "Verified on 2026-10-25: the financing date, USD 3 million seed round and named investors are unchanged. Verified source publication dates were added.",
+      "first_public_disclosure": {
+        "date": "2026-10-22",
+        "source_id": "FISRC-2a707fabe7f50d38",
+        "basis": "earliest_verified_source_not_claim_of_absolute_first"
+      },
+      "financing_changes": {},
+      "sources": [
+        {
+          "previous": {
+            "source_id": "FISRC-cda6678078919bf2",
+            "source_url": "https://openthemagazine.com/business/karta-ai-raises-3-million-can-voice-ai-fix-indias-bank-helplines",
+            "title": "Karta AI 融资 300 万美元：语音 AI 能修复印度的银行求助热线吗？",
+            "publisher": "openthemagazine.com",
+            "source_class": "canonical_event_source",
+            "capture_method": "data_center_v4_source_artifact",
+            "captured_at": "2026-10-23T00:19:29.602Z",
+            "content_hash": "e0ea6cb2677f5899ca9412827ee49c8baa4d0fb6b40300318b8bc06331e4ec1e",
+            "source_artifact_id": "SA-b6a1b9a0d20b44e4",
+            "raw_id": "RAW-ba88d0248010be49"
+          },
+          "source_id": "FISRC-cda6678078919bf2",
+          "source_url": "https://openthemagazine.com/business/karta-ai-raises-3-million-can-voice-ai-fix-indias-bank-helplines",
+          "title": "Karta AI 融资 300 万美元：语音 AI 能修复印度的银行求助热线吗？",
+          "publisher": "openthemagazine.com",
+          "source_class": "canonical_event_source",
+          "published_at": "2026-10-22T10:24:50+05:30",
+          "verified_at": "2026-10-25T09:37:08.568Z",
+          "purpose": "current_round",
+          "supports_fields": [
+            "amount",
+            "currency",
+            "round",
+            "investors",
+            "investor_roles",
+            "announced_at"
+          ],
+          "verification_hash": "3895cdd04679ab006fe494d3fb8a8593cb92ec496244a12138d2b8a269c0454d",
+          "verification_ref": "evidence://3895cdd04679ab006fe494d3fb8a8593cb92ec496244a12138d2b8a269c0454d"
+        },
+        {
+          "previous": {
+            "source_id": "FISRC-2a707fabe7f50d38",
+            "source_url": "https://entrackr.com/snippets/voice-ai-platform-karta-ai-raises-3-mn-in-seed-round-led-by-peercapital-and-cedar-hill-12705952",
+            "title": "Voice AI platform Karta AI raises $3 Mn in seed round led by PeerCapital and Cedar Hill",
+            "publisher": "entrackr.com",
+            "source_class": "independent",
+            "capture_method": "direct_fetch",
+            "captured_at": "2026-10-23T00:44:18.916Z",
+            "content_hash": "3a7aeaf99aaac965",
+            "source_artifact_id": null,
+            "raw_id": null
+          },
+          "source_id": "FISRC-2a707fabe7f50d38",
+          "source_url": "https://entrackr.com/snippets/voice-ai-platform-karta-ai-raises-3-mn-in-seed-round-led-by-peercapital-and-cedar-hill-12705952",
+          "title": "Voice AI platform Karta AI raises $3 Mn in seed round led by PeerCapital and Cedar Hill",
+          "publisher": "entrackr.com",
+          "source_class": "independent",
+          "published_at": "2026-10-22T08:39:14.130+05:30",
+          "verified_at": "2026-10-25T09:37:08.568Z",
+          "purpose": "current_round",
+          "supports_fields": [
+            "amount",
+            "currency",
+            "round",
+            "investors",
+            "investor_roles",
+            "announced_at"
+          ],
+          "verification_hash": "2645a02f84b1ee7ab2d6f6bc3594979bb39bb1b9679b997a2e0c4f1c7a59adc3",
+          "verification_ref": "evidence://2645a02f84b1ee7ab2d6f6bc3594979bb39bb1b9679b997a2e0c4f1c7a59adc3"
+        }
+      ]
+    }
+  ]
+}

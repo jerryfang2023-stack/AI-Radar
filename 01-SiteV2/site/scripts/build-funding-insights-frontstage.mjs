@@ -19,6 +19,7 @@ import {
 } from "../../../agent-workflow/tools/funding-insight-v1-utils.mjs";
 import { investmentInstitutionId } from "../../../agent-workflow/product/investment-institution-v1.mjs";
 import { classificationInput } from "../../../agent-workflow/financing/taxonomy.mjs";
+import { applyFinancingEvidenceReview } from "../../../agent-workflow/financing/evidence-review.mjs";
 import {
   applyPublicZhTranslations,
   readPublicTranslationRegistry,
@@ -628,7 +629,10 @@ export function buildFundingInsightsFrontstage(projectRoot = root, { publicScope
   const translationRegistry = readPublicTranslationRegistry(projectRoot);
   const publicationReview = readJson(path.join(projectRoot,
     "01-SiteV2/content/12-applications/funding-insights/publication-review.json"), {});
-  const cards = applyReviewedFundingMarkets(inheritConfirmedCompanyMarkets(rawCards), publicationReview).map((card) => applyPublicZhTranslations(card, translationRegistry, {
+  const evidenceReview = readJson(path.join(projectRoot,
+    "01-SiteV2/content/12-applications/funding-insights/evidence-review.json"), {version:'FINANCING-EVIDENCE-REVIEW-1',entries:[]});
+  const reviewedCards = applyFinancingEvidenceReview(applyReviewedFundingMarkets(inheritConfirmedCompanyMarkets(rawCards), publicationReview), evidenceReview).cards;
+  const cards = reviewedCards.map((card) => applyPublicZhTranslations(card, translationRegistry, {
     entityType: "funding_card",
   }));
   const latestDate = bundles.map((bundle) => bundle.meta?.date || "").sort().at(-1) || "";
