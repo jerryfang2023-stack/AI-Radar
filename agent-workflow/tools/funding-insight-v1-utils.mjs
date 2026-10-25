@@ -465,12 +465,14 @@ export function normalizeFundingRound(value = "") {
   if (/pre[-\s]?seed|种子轮前|预种子/iu.test(text)) signals.add("pre_seed");
   const withoutPreSeed = text.replace(/pre[-\s]?seed|种子轮前|预种子(?:轮)?/giu, "");
   if (/(?:^|[^a-z])seed(?:[^a-z]|$)|种子(?:\+{1,3})?轮|种子扩展/iu.test(withoutPreSeed)) {
-    const plus = withoutPreSeed.match(/(?:seed|种子)\s*(\+{1,3})/iu)?.[1] || "";
-    signals.add(`seed${"_plus".repeat(plus.length)}`);
+    for (const match of withoutPreSeed.matchAll(/(?:\bseed\b|种子)\s*(\+{1,3})?/giu)) {
+      signals.add(`seed${"_plus".repeat((match[1] || "").length)}`);
+    }
   }
   if (/^天使(?:\s*\+{1,3})?$|天使\s*(?:\+{1,3})?\s*(?:轮|融资)/iu.test(text)) {
-    const plus = text.match(/天使\s*(\+{1,3})/u)?.[1] || "";
-    signals.add(`angel${"_plus".repeat(plus.length)}`);
+    for (const match of text.matchAll(/天使\s*(\+{1,3})?\s*(?:轮|融资|$)/gu)) {
+      signals.add(`angel${"_plus".repeat((match[1] || "").length)}`);
+    }
   }
   const seriesMatches = [...text.matchAll(
     /(?:(?:pre[-\s]*)?series\s*[a-z](?![a-z])(?:[-\s]?\d+)?(?:\+{1,3})?|(?:pre[-\s]*)?[a-z](?![a-z])(?:[-\s]?\d+)?\s*(?:\+{1,3})?\s*轮)/giu,

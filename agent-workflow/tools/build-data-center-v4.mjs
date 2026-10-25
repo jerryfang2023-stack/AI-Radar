@@ -1935,12 +1935,18 @@ export function reviewedFundingDate(review, { subject, amount, publishedAt, sour
   const expected = metricValues(amount).map(normalizedFundingMetric);
   const actual = metricValues(quote).map(normalizedFundingMetric);
   const dateParts = String(review.date || "").match(/^(\d{4})-(\d{2})-(\d{2})$/u);
+  const months = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+  const chineseAnnouncement = dateParts && [...quote.matchAll(/(?:^|[^\d])(?:(\d{4})年)?(\d{1,2})月(\d{1,2})日/gu)].some(match =>
+    (!match[1] || match[1] === dateParts[1])
+    && Number(match[2]) === Number(dateParts[2]) && Number(match[3]) === Number(dateParts[3]))
+    && /宣布.{0,24}(?:完成|获得).{0,40}融资/u.test(quote);
+  const englishAnnouncement = dateParts && [...quote.matchAll(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})(?:,?\s+(\d{4}))?\b/giu)].some(match =>
+    months.indexOf(match[1].toLowerCase()) + 1 === Number(dateParts[2])
+    && Number(match[2]) === Number(dateParts[3]) && (!match[3] || match[3] === dateParts[1]))
+    && /\b(?:raised|raises|secured|closed|completed)\b|\bbecame\s+a\s+[$€£\d][^.!?]{0,60}\bSeries\s+[A-Z]\b/iu.test(quote);
   const explicitAnnouncement = review.date_basis === "explicit_announcement"
     && dateParts && String(source?.published_at).startsWith(dateParts[1])
-    && [...quote.matchAll(/(?:^|[^\d])(?:(\d{4})年)?(\d{1,2})月(\d{1,2})日/gu)].some(match =>
-      (!match[1] || match[1] === dateParts[1])
-      && Number(match[2]) === Number(dateParts[2]) && Number(match[3]) === Number(dateParts[3]))
-    && /宣布.{0,24}(?:完成|获得).{0,40}融资/u.test(quote);
+    && (chineseAnnouncement || englishAnnouncement);
   if (review.status !== "accepted" || !review.reviewer || !source
       || !/^\d{4}-\d{2}-\d{2}$/.test(review.date || "")
       || (!explicitAnnouncement && String(source.published_at).slice(0, 10) !== review.date)

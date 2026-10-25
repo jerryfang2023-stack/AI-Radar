@@ -62,3 +62,35 @@ test('reviewed announcement date can precede the article without rewriting its p
  const historicalQuote='2025年8月10日，玩点旅行宣布完成近亿元Pre-A+轮融资。';
  assert.throws(()=>reviewedFundingDate({...review,quote:historicalQuote},{...context,sources:new Map([['SA',{raw:{...source,clean_text:historicalQuote}}]])}),/invalid_reviewed_funding_date/);
 });
+
+
+test('reviewed English announcement date keeps the article publication date and rejects mismatched dates',()=>{
+ const quote='On October 20, that gamble became a $60M Series B at a $1B valuation. Daytona said the round takes its total funding to $91M.';
+ const source={published_at:'2026-10-21',clean_text:quote};
+ const context={subject:'Daytona',amount:'$60M',publishedAt:'2026-10-21',sources:new Map([['SA',{raw:source}]])};
+ const review={status:'accepted',reviewer:'test',date:'2026-10-20',source_ref:'SA',quote,date_basis:'explicit_announcement'};
+ assert.equal(reviewedFundingDate(review,context),'2026-10-20');
+ assert.equal(source.published_at,'2026-10-21');
+ for(const bad of [{...review,date:'2026-10-19'},{...review,date:'2025-10-20'},{...review,date_basis:undefined},{...review,reviewer:''}])assert.throws(()=>reviewedFundingDate(bad,context),/invalid_reviewed_funding_date/);
+ assert.throws(()=>reviewedFundingDate(review,{...context,subject:'Other Company'}),/invalid_reviewed_funding_date/);
+ assert.throws(()=>reviewedFundingDate(review,{...context,amount:'$70M'}),/invalid_reviewed_funding_date/);
+ for(const oldDate of ['October 20, 2025','October 20 2025']) {
+ const old=quote.replace('October 20',oldDate);
+ assert.throws(()=>reviewedFundingDate({...review,quote:old},{...context,sources:new Map([['SA',{raw:{...source,clean_text:old}}]])}),/invalid_reviewed_funding_date/);
+ }
+});
+
+
+test('canonical replay preserves distinct angel and angel-plus rounds and their investors',async()=>{
+ const {canonicalFundingEventRound,ensureCanonicalFundingEvidence,normalizeFundingRound,partitionRoundInvestors}=await import('../funding-insight-v1-utils.mjs');
+ const event={event_id:'EV-combined',object:'近亿元人民币天使轮及天使 + 轮融资',claim_refs:['CL-combined'],event_time:'2026-10-22'};
+ const claims=[{claim_id:'CL-combined',claim_type:'funding',verification_status:'accepted',source_quote:'元示科技宣布已连续完成近亿元人民币天使轮及天使 + 轮融资。',object:event.object}];
+ assert.equal(canonicalFundingEventRound(event,claims).code,'multi_round');
+ const card={financing:{round:'多轮融资',round_original:'天使轮及天使+轮（多轮融资合计）',investors:[{name:'Angel investor',role:'天使轮联合领投'},{name:'Plus investor',role:'天使+轮领投'}]}};
+ ensureCanonicalFundingEvidence(card,{claims},event,[]);
+ assert.equal(card.financing.round_code,'multi_round');
+ assert.equal(partitionRoundInvestors(card.financing.investors,card.financing.round).current.length,2);
+ assert.equal(normalizeFundingRound('天使+轮').code,'angel_plus');
+ assert.equal(normalizeFundingRound('种子轮及种子+轮').code,'multi_round');
+ assert.equal(normalizeFundingRound('种子+轮').code,'seed_plus');
+});
