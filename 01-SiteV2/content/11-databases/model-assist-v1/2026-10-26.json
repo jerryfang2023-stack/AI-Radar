@@ -1,6 +1,6 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-10-26T00:41:26.298Z",
+  "generated_at": "2026-10-26T03:37:28.416Z",
   "data_date": "2026-10-26",
   "prompt_version": "model-assist-2026-07-18.2",
   "source_count": 95,
@@ -254,6 +254,48 @@
       "generated_at": "2026-10-26T00:41:10.892Z"
     },
     {
+      "candidate_id": "MAC-108396cd636ab9c5",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-b252622f7f344603",
+      "raw_id": "RAW-64ac9e639415ad1a",
+      "source_ref": "SA-65390f6a68556c5f",
+      "source_hash": "23901e3c9a184982",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Toward More Efficient AI",
+        "rationale": "The candidate name appears only as part of the post title 'Toward More Efficient AI: Leading Flapping Airplanes’ $1B Series A,' which is a title, not a mention of an organization. No VERIFIED_ALTERNATIVES are supplied, so identity cannot be confirmed.",
+        "candidate_name": "Toward More Efficient AI"
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:$1b"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:23.120Z"
+    },
+    {
       "candidate_id": "MAC-11646045207769c3",
       "task_type": "claim_extraction",
       "asset_id": "QA-b7fd93e451ff2f3e",
@@ -408,6 +450,54 @@
         }
       ],
       "generated_at": "2026-10-26T00:41:11.995Z"
+    },
+    {
+      "candidate_id": "MAC-14f19e5f406fce6f",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-2301cf6444526934",
+      "raw_id": "RAW-70438291b5086cc3",
+      "source_ref": "SA-e4d567f01cbb5e50",
+      "source_hash": "4d038941c8b59cbe",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Tenstorrent",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The source does describe Tenstorrent as a chip startup, but there is no verified alternative to match against.",
+        "candidate_name": "Tenstorrent"
+      },
+      "evidence": [
+        {
+          "start": 127,
+          "end": 229,
+          "quote": "Tenstorrent, a chip startup focused on inference, has raised $1.5 billion at a $6.2 billion valuation."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:16.975Z"
     },
     {
       "candidate_id": "MAC-163ffcfc5ac95602",
@@ -878,6 +968,60 @@
       "generated_at": "2026-10-26T00:40:58.099Z"
     },
     {
+      "candidate_id": "MAC-32c60c7ff40084bd",
+      "task_type": "qa_repair",
+      "asset_id": "QA-357294576afc1b8e",
+      "raw_id": "RAW-1acfcd17069c74bd",
+      "source_ref": "SA-532e7e20d2661dc0",
+      "source_hash": "e2ee7331270fab72",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete AI-relevant event: a16z is expanding its fund scope and renaming a16z Crypto to a16z Frontier, explicitly citing AI as a major tech wave. This supports an organization_restructuring claim with exact quotes.",
+        "claims": [
+          {
+            "event_type": "organization_restructuring",
+            "subject": "a16z",
+            "object": "renaming a16z Crypto to a16z Frontier and expanding fund scope beyond crypto startups to frontier startups",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 109,
+          "end": 398,
+          "quote": "Today we’re announcing that we’re expanding the scope of our new fund beyond crypto startups to the broader category of frontier startups: companies building new technologies and creating markets that may take years to develop. To reflect this, we’re renaming a16z Crypto to a16z Frontier."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:27.111Z"
+    },
+    {
       "candidate_id": "MAC-33205f593faa9766",
       "task_type": "qa_repair",
       "asset_id": "QA-32cdde92b1bbf05e",
@@ -984,6 +1128,113 @@
         }
       ],
       "generated_at": "2026-10-26T00:41:25.012Z"
+    },
+    {
+      "candidate_id": "MAC-35b00d5da59e758c",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-665c5b11791696b9",
+      "raw_id": "RAW-a02f7e629f86b686",
+      "source_ref": "SA-2665f3d0f958e62d",
+      "source_hash": "c0b1ebc00775ee08",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Maxx Assist",
+        "rationale": "No VERIFIED_ALTERNATIVE is provided, so identity cannot be confirmed against a verified list. The source does describe Maxx Assist as a Cruise Planners AI-powered tool, but there is no verified alternative to match.",
+        "candidate_name": "Maxx Assist"
+      },
+      "evidence": [
+        {
+          "start": 2648,
+          "end": 2718,
+          "quote": "Maxx Assist: Revolutionizing Vacation Research with Conversational AI."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:20.866Z"
+    },
+    {
+      "candidate_id": "MAC-3971aea403c9b01a",
+      "task_type": "qa_repair",
+      "asset_id": "QA-RAW-a8574f9052261c3e",
+      "raw_id": "RAW-a8574f9052261c3e",
+      "source_ref": "SA-d383a7df2d4b6f6a",
+      "source_hash": "a45c20a6855fb2df",
+      "provider": "manual_review",
+      "model": "codex",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "亿铸科技",
+            "object": "超10亿元融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 37,
+          "end": 105,
+          "quote": "芯东西10月23日报道，今日，苏州AI大算力芯片公司亿铸科技宣布完成超10亿元融资，融资将为后续研发投入、产品迭代及产业化推进提供支持。"
+        }
+      ],
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-26T03:35:36.779Z",
+        "note": "原文指明亿铸科技为融资主体；腾讯新闻为转载发布平台，不是参与方。两篇是芯东西同文转载，不计为独立信源。"
+      },
+      "generated_at": "2026-10-26T03:35:36.779Z",
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
     },
     {
       "candidate_id": "MAC-39a55c5ef5d50f3f",
@@ -1317,6 +1568,54 @@
         }
       ],
       "generated_at": "2026-10-26T00:41:08.605Z"
+    },
+    {
+      "candidate_id": "MAC-478de3a3fe1bebe7",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-3236407ea030a361",
+      "raw_id": "RAW-3814fcc5396e1a66",
+      "source_ref": "SA-6d25524cc2e2000c",
+      "source_hash": "3b5ced97ced3e11b",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Slingshot Insurance",
+        "rationale": "No VERIFIED_ALTERNATIVE was supplied, so identity cannot be confirmed against a verified list; the source does mention 'Slingshot Insurance' by name, but the required matching condition cannot be satisfied.",
+        "candidate_name": "Slingshot Insurance"
+      },
+      "evidence": [
+        {
+          "start": 65,
+          "end": 223,
+          "quote": "Slingshot Insurance, an AI-native embedded insurance startup, is emerging from stealth with $27 million in seed funding, it tells Crunchbase News exclusively."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:18.135Z"
     },
     {
       "candidate_id": "MAC-47a73a921c898057",
@@ -1857,6 +2156,48 @@
       "generated_at": "2026-10-26T00:41:14.395Z"
     },
     {
+      "candidate_id": "MAC-718d02d6222cbf0a",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-4173666917f49480",
+      "raw_id": "RAW-a02f7e629f86b686",
+      "source_ref": "SA-2665f3d0f958e62d",
+      "source_hash": "c0b1ebc00775ee08",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Brings Its",
+        "rationale": "The candidate name 'Brings Its' appears to be a fragment of the headline phrase 'Cruise Planners Brings Its \"A\" Game,' not a distinct product or entity. No VERIFIED_ALTERNATIVE matches this name, and the source does not identify 'Brings Its' as an entity.",
+        "candidate_name": "Brings Its"
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:19.453Z"
+    },
+    {
       "candidate_id": "MAC-73b4cfd4878fbfeb",
       "task_type": "qa_repair",
       "asset_id": "QA-2e9128c9aa501aa6",
@@ -2046,6 +2387,54 @@
       "generated_at": "2026-10-26T00:40:59.126Z"
     },
     {
+      "candidate_id": "MAC-76da7efe92268d95",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-59719e65a648bd46",
+      "raw_id": "RAW-0490eb7343f7f681",
+      "source_ref": "SA-ec15805486f85a6c",
+      "source_hash": "3428b080f75ec7d4",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Nebius",
+        "rationale": "No VERIFIED_ALTERNATIVE is supplied, so identity cannot be confirmed against a verified alternative. The source text refers to Nebius as a European-headquartered company and program sponsor, but there is no verified alternative to match against.",
+        "candidate_name": "Nebius"
+      },
+      "evidence": [
+        {
+          "start": 396,
+          "end": 630,
+          "quote": "As a European-headquartered company, we’re committing to supporting the continent’s AI future to the tune of $10M, while bringing together European investors and local builder communities to help more projects take root and grow here."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:20.807Z"
+    },
+    {
       "candidate_id": "MAC-7eef07916d971963",
       "task_type": "claim_extraction",
       "asset_id": "QA-7b02c2c27585fd0c",
@@ -2120,6 +2509,102 @@
       "generated_at": "2026-10-26T00:40:50.826Z"
     },
     {
+      "candidate_id": "MAC-80e17ee98b73480e",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-389589e9fc05afc3",
+      "raw_id": "RAW-c95edb6cb667cfe9",
+      "source_ref": "SA-e50c3d11a64f6a34",
+      "source_hash": "9da1503bf1049e61",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Eka Robotics",
+        "rationale": "The candidate mention is Eka Robotics, a startup founded by Pulkit Agrawal and former Google DeepMind researcher Tuomas Haarnoja. The only verified alternative is Google, which is mentioned only as a former employer of a co-founder, not as the entity itself. No verified alternative matches Eka Robotics.",
+        "candidate_name": "Eka Robotics"
+      },
+      "evidence": [
+        {
+          "start": 144,
+          "end": 316,
+          "quote": "That may be about to change, thanks to a manipulation architecture built by Eka Robotics, which encompasses a force-sensitive gripper and a new kind of deep-learning model."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:19.499Z"
+    },
+    {
+      "candidate_id": "MAC-87ac048b06971352",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-e634ba09894c439c",
+      "raw_id": "RAW-0886f5bf5a1f66b4",
+      "source_ref": "SA-cdb7f2b7547585a8",
+      "source_hash": "b721737598993090",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Two Delta",
+        "rationale": "The candidate mention 'Two Delta' refers to the Israeli AI startup, not to Google. Google is mentioned only as the former employer of Eric Schmidt and as a prior employer of co-founder Zeltzer, which is not entity identity.",
+        "candidate_name": "Two Delta"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 247,
+          "quote": "Israeli artificial intelligence startup Two Delta has raised tens of millions of dollars in a seed round backed by investors including Bill Ackman, founder and CEO of Pershing Square, and former Google chairman Eric Schmidt, Calcalist has learned."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:25.582Z"
+    },
+    {
       "candidate_id": "MAC-90465b96c4b19265",
       "task_type": "qa_repair",
       "asset_id": "QA-cec265ad015b9298",
@@ -2188,6 +2673,54 @@
         }
       ],
       "generated_at": "2026-10-26T00:41:23.793Z"
+    },
+    {
+      "candidate_id": "MAC-9255948875643ad0",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-ea3bd73e2b506e00",
+      "raw_id": "RAW-01e64fe980c6df55",
+      "source_ref": "SA-04477b9e645e5c7d",
+      "source_hash": "a060a1f04dc3fc42",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Meta",
+        "rationale": "No VERIFIED_ALTERNATIVE is supplied, so identity cannot be confirmed against a verified list; the source does refer to the company as Meta, but the required matching alternative is absent.",
+        "candidate_name": "Meta"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 100,
+          "quote": "Meta is making a big push into AI, and it’s creating a new kind of stock that could help pay for it."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:25.507Z"
     },
     {
       "candidate_id": "MAC-9489cdc5af5501f3",
@@ -2440,6 +2973,113 @@
       "generated_at": "2026-10-26T00:41:24.961Z"
     },
     {
+      "candidate_id": "MAC-98f64294e2a1d4e3",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-8a9d0b6b63af98e1",
+      "raw_id": "RAW-f502c9e58a4e423a",
+      "source_ref": "SA-9613ab8a5488c0bf",
+      "source_hash": "246e22196b59617f",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "北京AI金融创企熵简科技",
+        "rationale": "The candidate is 熵简科技, a Beijing AI fintech startup. The verified alternatives are Ant Group and Microsoft. The source mentions 蚂蚁集团 (Ant Group) only as the lead investor of 熵简科技, which is a funding relationship, not entity identity. No verified alternative matches the candidate's canonical name.",
+        "candidate_name": "北京AI金融创企熵简科技"
+      },
+      "evidence": [
+        {
+          "start": 186,
+          "end": 227,
+          "quote": "北京AI金融创企熵简科技宣布完成C轮融资，由蚂蚁集团领投，东方国信与乔贝资本跟投。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:22.231Z"
+    },
+    {
+      "candidate_id": "MAC-9b8c4761de77179d",
+      "task_type": "qa_repair",
+      "asset_id": "QA-RAW-9f9c81cf3fa41d2b",
+      "raw_id": "RAW-9f9c81cf3fa41d2b",
+      "source_ref": "SA-66fef0c52dcedd3b",
+      "source_hash": "e22cad683eb4379e",
+      "provider": "manual_review",
+      "model": "codex",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "亿铸科技",
+            "object": "超10亿元融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 64,
+          "end": 132,
+          "quote": "芯东西10月23日报道，今日，苏州AI大算力芯片公司亿铸科技宣布完成超10亿元融资，融资将为后续研发投入、产品迭代及产业化推进提供支持。"
+        }
+      ],
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-10-26T03:35:36.779Z",
+        "note": "原文指明亿铸科技为融资主体；腾讯新闻为转载发布平台，不是参与方。两篇是芯东西同文转载，不计为独立信源。"
+      },
+      "generated_at": "2026-10-26T03:35:36.779Z",
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
       "candidate_id": "MAC-9d4f1041f10912d2",
       "task_type": "qa_repair",
       "asset_id": "QA-98cec544d873619b",
@@ -2688,6 +3328,108 @@
         }
       ],
       "generated_at": "2026-10-26T00:41:01.983Z"
+    },
+    {
+      "candidate_id": "MAC-b1b4fdcef2d668be",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-d03ada7c35a59399",
+      "raw_id": "RAW-a02f7e629f86b686",
+      "source_ref": "SA-2665f3d0f958e62d",
+      "source_hash": "c0b1ebc00775ee08",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Cruise Planners",
+        "rationale": "No VERIFIED_ALTERNATIVE is provided, so identity cannot be confirmed against a verified list; the source consistently names the organization Cruise Planners, but the required exact-match condition to a verified alternative is unmet.",
+        "candidate_name": "Cruise Planners"
+      },
+      "evidence": [
+        {
+          "start": 220,
+          "end": 348,
+          "quote": "Cruise Planners is once again setting the pace for artificial intelligence (AI) and technology innovation in the travel industry"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:24.457Z"
+    },
+    {
+      "candidate_id": "MAC-b2ba7b9fda7b963d",
+      "task_type": "qa_repair",
+      "asset_id": "QA-9e9fda9327335951",
+      "raw_id": "RAW-9fc3fc534fb0a922",
+      "source_ref": "SA-eb45dff2e062249d",
+      "source_hash": "94b6b406a25a3b2f",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete funding event: Arda announced $230M in total funding, and the author's firm co-led seed and series A.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Arda",
+            "object": "$230M in total funding",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1667,
+          "end": 1738,
+          "quote": "Today, Arda launched from stealth and announced $230M in total funding."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:28.318Z"
     },
     {
       "candidate_id": "MAC-b5a217108490fa2e",
@@ -3008,6 +3750,54 @@
       "generated_at": "2026-10-26T00:41:05.831Z"
     },
     {
+      "candidate_id": "MAC-cc9a6bbdbf1eafc6",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-1787071861d78c82",
+      "raw_id": "RAW-f502c9e58a4e423a",
+      "source_ref": "SA-9613ab8a5488c0bf",
+      "source_hash": "246e22196b59617f",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "熵简科技",
+        "rationale": "The candidate mention 熵简科技 is a Beijing AI fintech startup; the verified alternatives are Ant Group and Microsoft. The quote shows 蚂蚁集团 (Ant Group) is the investor leading the round, not the same entity as 熵简科技.",
+        "candidate_name": "熵简科技"
+      },
+      "evidence": [
+        {
+          "start": 186,
+          "end": 227,
+          "quote": "北京AI金融创企熵简科技宣布完成C轮融资，由蚂蚁集团领投，东方国信与乔贝资本跟投。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:16.913Z"
+    },
+    {
       "candidate_id": "MAC-ccb427dac0f0e4be",
       "task_type": "claim_extraction",
       "asset_id": "QA-ceb5708073568ac8",
@@ -3110,6 +3900,54 @@
       "generated_at": "2026-10-26T00:40:46.086Z"
     },
     {
+      "candidate_id": "MAC-d2c93f64cf3d537d",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-c5803a6e4daa6af4",
+      "raw_id": "RAW-abbc43103ae1c518",
+      "source_ref": "SA-015f02b7bc26b8eb",
+      "source_hash": "a5c00d196a708bc1",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Modal",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative; the source does describe Modal as an AI infrastructure platform founded by Erik, but no verified match exists to compare.",
+        "candidate_name": "Modal"
+      },
+      "evidence": [
+        {
+          "start": 4019,
+          "end": 4071,
+          "quote": "Modal — the AI infrastructure platform Erik founded."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:23.427Z"
+    },
+    {
       "candidate_id": "MAC-d4cbd7903eb90585",
       "task_type": "claim_extraction",
       "asset_id": "QA-bbf42c86c9b2329b",
@@ -3201,6 +4039,54 @@
         }
       ],
       "generated_at": "2026-10-26T00:41:13.112Z"
+    },
+    {
+      "candidate_id": "MAC-dbfe4c10726d81e7",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-c9bd40e58364720b",
+      "raw_id": "RAW-64ac9e639415ad1a",
+      "source_ref": "SA-65390f6a68556c5f",
+      "source_hash": "23901e3c9a184982",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Flapping Airplanes",
+        "rationale": "No VERIFIED_ALTERNATIVE is supplied, so identity cannot be confirmed against a verified list; the source does mention Flapping Airplanes, but the required matching condition cannot be satisfied.",
+        "candidate_name": "Flapping Airplanes"
+      },
+      "evidence": [
+        {
+          "start": 165,
+          "end": 262,
+          "quote": "They started Flapping Airplanes with a belief that AI could be orders of magnitude more efficient"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:24.225Z"
     },
     {
       "candidate_id": "MAC-dc07888b80585887",
@@ -3370,6 +4256,60 @@
       "generated_at": "2026-10-26T00:40:56.755Z"
     },
     {
+      "candidate_id": "MAC-e59cf0e65089d53a",
+      "task_type": "qa_repair",
+      "asset_id": "QA-8bc36ce7c7ba1df9",
+      "raw_id": "RAW-0afb263c5be11dd9",
+      "source_ref": "SA-2964bc35bed6df14",
+      "source_hash": "3c1e816f674b24b1",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source reports a concrete funding event (Rs 63 crore raised via equity and debt) for Chapter Home, a consumer brand that leverages AI across its business, making the funding event AI-relevant.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Chapter Home",
+            "object": "Rs 63 crore through a mix of equity and debt at a valuation of nearly Rs 1,000 crore",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 145,
+          "quote": "Chapter Home, a home and kitchen consumer brand, has raised Rs 63 crore through a mix of equity and debt at a valuation of nearly Rs 1,000 crore."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:28.406Z"
+    },
+    {
       "candidate_id": "MAC-e895bb2f91f7ed9e",
       "task_type": "qa_repair",
       "asset_id": "QA-0e4442b66819da2f",
@@ -3409,6 +4349,54 @@
         }
       ],
       "generated_at": "2026-10-26T00:41:13.069Z"
+    },
+    {
+      "candidate_id": "MAC-e8f67696fc301683",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-8a4372f10d707941",
+      "raw_id": "RAW-3814fcc5396e1a66",
+      "source_ref": "SA-6d25524cc2e2000c",
+      "source_hash": "3b5ced97ced3e11b",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Slingshot",
+        "rationale": "No VERIFIED_ALTERNATIVE is provided, so identity cannot be confirmed against a verified list; the source refers to the candidate as 'Slingshot Insurance' and 'Slingshot,' but without a verified alternative the decision is unknown.",
+        "candidate_name": "Slingshot"
+      },
+      "evidence": [
+        {
+          "start": 65,
+          "end": 223,
+          "quote": "Slingshot Insurance, an AI-native embedded insurance startup, is emerging from stealth with $27 million in seed funding, it tells Crunchbase News exclusively."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:22.023Z"
     },
     {
       "candidate_id": "MAC-ed1217fbd5f4958b",
@@ -3457,6 +4445,54 @@
         }
       ],
       "generated_at": "2026-10-26T00:41:10.736Z"
+    },
+    {
+      "candidate_id": "MAC-ed3a6968118c3b02",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-35f90e87170a43fa",
+      "raw_id": "RAW-ada73375000b9eed",
+      "source_ref": "SA-c1a6d25c5a44e583",
+      "source_hash": "375a8e06c059f49c",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Tolan",
+        "rationale": "The candidate mention 'Tolan' refers to an AI companion startup, not to the verified alternative 'Google'. The source mentions Google only in connection with Character.AI's founder, which is a separate entity.",
+        "candidate_name": "Tolan"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 204,
+          "quote": "Tolan, the AI companion designed to help people manage their daily lives, navigate relationships and emotions, and accomplish their goals, has just expanded its runway with another $30 million in capital."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:18.181Z"
     },
     {
       "candidate_id": "MAC-f10581bfe86966d1",
@@ -3511,6 +4547,71 @@
         }
       ],
       "generated_at": "2026-10-26T00:41:23.022Z"
+    },
+    {
+      "candidate_id": "MAC-f111e071e0bfbfbd",
+      "task_type": "qa_repair",
+      "asset_id": "QA-2e9370907b894d5f",
+      "raw_id": "RAW-fe5e131e493f0fd2",
+      "source_ref": "SA-1e07349125b44806",
+      "source_hash": "2865121c95590071",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "Source contains a concrete AI-relevant funding event: SpaceX completed $40 billion in debt financing primarily to purchase GPU compute hardware, explicitly tied to AI chips.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "SpaceX",
+            "object": "400亿美元债务融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "procurement_contract",
+            "subject": "SpaceX",
+            "object": "GPU算力硬件采购",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 79,
+          "end": 167,
+          "quote": "SpaceX 已完成 400 亿美元（IT之家注：现汇率约合 2,675.68 亿元人民币）的债务融资，主要用于购买预计在 2027 年第一和第二季度交付的 GPU 算力硬件。"
+        },
+        {
+          "start": 175,
+          "end": 220,
+          "quote": "这笔资金主要是可赎回债务，用于支付将在（明年）第一季度和第二季度交付的 GPU 采购款项。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:$40b"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-26T03:37:27.184Z"
     },
     {
       "candidate_id": "MAC-f66c265174bb1b0d",

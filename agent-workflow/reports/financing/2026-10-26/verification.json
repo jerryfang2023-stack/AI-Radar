@@ -43680,20 +43680,65 @@
     },
     "https://www.sohu.com/a/1089994039_114778": {
       "source_url": "https://www.sohu.com/a/1089994039_114778",
-      "evidence_source_url": "https://www.sohu.com/a/1089994039_114778",
       "origin_date": "2026-10-26",
+      "rounds": 0,
       "title": "硬氪首发｜用AI智能体辅助新材料研发，睿质科技完成数千万元天使轮融资",
+      "checks": {
+        "company_identity": "pending",
+        "ai_relevance": "pending",
+        "date": "pending",
+        "amount": "pending",
+        "round": "pending",
+        "deduplication": "pending"
+      },
+      "status": "pending",
+      "reason": "no_accepted_financing_event_manual_review_required",
+      "collection_reconciled": true,
+      "collection_date": "2026-10-26",
+      "content_hash": "30b5756ca485ad612480ba7577abfc214dce96a6fbbad264ea7f1029b36bbe69",
       "raw_ids": [
         "RAW-949a7947ce745889"
       ],
-      "content_hash": "30b5756ca485ad612480ba7577abfc214dce96a6fbbad264ea7f1029b36bbe69",
-      "status": "pending",
-      "reason": "no_accepted_financing_event_manual_review_required",
+      "evidence_source_url": "https://www.sohu.com/a/1089994039_114778",
+      "alternate_source": false,
+      "resumed_fact_review": true,
+      "followup": {
+        "source_url": "https://www.sohu.com/a/1089994039_114778",
+        "origin_date": "2026-10-26",
+        "rounds": 1,
+        "title": "硬氪首发｜用AI智能体辅助新材料研发，睿质科技完成数千万元天使轮融资",
+        "checks": {
+          "company_identity": "pending",
+          "ai_relevance": "pending",
+          "date": "pending",
+          "amount": "pending",
+          "round": "pending",
+          "deduplication": "pending"
+        },
+        "status": "pending",
+        "reason": "no_accepted_financing_event_manual_review_required",
+        "collection_reconciled": true,
+        "collection_date": "2026-10-26",
+        "content_hash": "30b5756ca485ad612480ba7577abfc214dce96a6fbbad264ea7f1029b36bbe69",
+        "raw_ids": [
+          "RAW-949a7947ce745889"
+        ],
+        "evidence_source_url": "https://www.sohu.com/a/1089994039_114778",
+        "alternate_source": false,
+        "resumed_fact_review": true,
+        "last_processed_date": "2026-10-26",
+        "next_due_date": "2026-10-27",
+        "owner": "responsible_financing_reviewer",
+        "next_action": "next_existing_daily_verify",
+        "review_stage": "fact_conflict_review",
+        "last_fact_review_hash": "30b5756ca485ad612480ba7577abfc214dce96a6fbbad264ea7f1029b36bbe69",
+        "fact_review_completed": true
+      },
       "research_deferral": {
         "version": "FINANCING-RESEARCH-DEFERRAL-1",
         "event_id": "EV-804c4dc0560b6704",
         "status": "pending_verification",
-        "reason": "research_independent_sources_insufficient",
+        "reason": "research_sources_insufficient",
         "sources": [
           {
             "raw_id": "RAW-949a7947ce745889",
@@ -43706,22 +43751,13 @@
         "next_action": "recover_existing_originals_and_complete_independent_research",
         "fact_approval": false
       },
-      "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
-      },
-      "alternate_source": false,
       "fact_review_completed": true,
       "unresolved_event_ids": [
         "EV-804c4dc0560b6704"
       ],
       "qa_hints": [],
       "pending_reasons": [
-        "research_independent_sources_insufficient"
+        "research_sources_insufficient"
       ],
       "results": [],
       "review_refs": [
@@ -43736,26 +43772,26 @@
     "responsible_review": 64
   },
   "followup_queue": {
-    "pending": 235,
-    "needs_attention": 652
+    "pending": 232,
+    "needs_attention": 655
   },
   "review_budget": {
-    "leads": 954,
+    "leads": 955,
     "capture_requests": 1563,
     "search_requests": 695,
     "capacity": {
-      "captures": 6869,
-      "searches": 13738
+      "captures": 6876,
+      "searches": 13752
     }
   },
   "review_queue": {
     "total": 887,
     "stages": {
       "evidence_review": 87,
-      "fact_review": 73,
+      "fact_review": 76,
       "needs_original": 421,
       "source_identity_review": 292,
-      "fact_conflict_review": 14
+      "fact_conflict_review": 11
     }
   },
   "prepared": true,

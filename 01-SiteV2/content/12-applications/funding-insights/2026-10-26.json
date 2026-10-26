@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-10-26",
-    "generated_at": "2026-10-26T00:42:29.922Z",
+    "generated_at": "2026-10-26T03:37:40.574Z",
     "trigger": "accepted_financing_event_research",
     "research_provider": "search-gateway+direct-original+deepseek",
     "model": "deepseek-flash",
@@ -1217,7 +1217,8 @@
             "来源未披露本轮具体投资方，投资方结构无法核实",
             "CUDA生态壁垒、存储介质量产成熟度和先进封装成本将影响从流片到放量的最后一程",
             "对比英伟达H200的吞吐率、功耗与成本数据来自FPGA仿真平台，非量产实测，仍待验证",
-            "公司营收、客户订单与量产规模未披露，商业化落地仍处推进阶段"
+            "公司营收、客户订单与量产规模未披露，商业化落地仍处推进阶段",
+            "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
           ],
           "institutional_rationale_status": "not_disclosed"
         }
@@ -1883,7 +1884,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-26T00:42:29.778Z"
+      "updated_at": "2026-10-26T03:37:40.153Z"
     },
     {
       "event_id": "EV-95b8b70ca29ab623",
@@ -1892,7 +1893,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-26T00:42:29.778Z"
+      "updated_at": "2026-10-26T03:37:40.153Z"
     },
     {
       "event_id": "EV-ea103ce3f64fea8e",
@@ -1901,7 +1902,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-26T00:42:29.778Z"
+      "updated_at": "2026-10-26T03:37:40.153Z"
     },
     {
       "event_id": "EV-fa58c17e7bde893c",
@@ -1910,7 +1911,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-26T00:42:29.778Z"
+      "updated_at": "2026-10-26T03:37:40.153Z"
     },
     {
       "event_id": "EV-59841d8e9da58cd4",
@@ -1919,11 +1920,11 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-26T00:42:29.778Z"
+      "updated_at": "2026-10-26T03:37:40.153Z"
     },
     {
       "event_id": "EV-e3f98a713df7ad64",
-      "company_name": "亿铸科技",
+      "company_name": "苏州亿铸智能科技有限公司",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -2002,11 +2003,11 @@
           "count": 8
         }
       ],
-      "updated_at": "2026-10-26T00:42:29.778Z"
+      "updated_at": "2026-10-26T03:37:40.153Z"
     },
     {
       "event_id": "EV-a184895fa88061f6",
-      "company_name": "前OpenAI研究主管Bob McGrew创办的AI制造软件公司Arda",
+      "company_name": "Arda",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -2153,14 +2154,14 @@
           "count": 8
         }
       ],
-      "updated_at": "2026-10-26T00:42:29.778Z"
+      "updated_at": "2026-10-26T03:37:40.153Z"
     },
     {
       "event_id": "EV-804c4dc0560b6704",
       "company_name": "硬氪首发｜用AI智能体辅助新材料研发，睿质科技",
       "status": "blocked",
       "problems": [
-        "research_independent_sources_insufficient"
+        "research_sources_insufficient"
       ],
       "queries": [
         "\"硬氪首发｜用AI智能体辅助新材料研发，睿质科技\" 2026 融资 投资方",
@@ -2172,43 +2173,10 @@
       ],
       "attempts": [
         {
-          "provider": "anysearch",
-          "query": "\"硬氪首发｜用AI智能体辅助新材料研发，睿质科技\" 2026 融资 投资方",
-          "status": "completed",
-          "count": 7
-        },
-        {
-          "provider": "tavily",
-          "query": "\"硬氪首发｜用AI智能体辅助新材料研发，睿质科技\" 2026 融资 投资方",
-          "status": "failed",
-          "http_status": 432,
-          "retry_after": ""
-        },
-        {
-          "provider": "exa",
-          "query": "\"硬氪首发｜用AI智能体辅助新材料研发，睿质科技\" 2026 融资 投资方",
-          "status": "quota_exhausted",
-          "http_status": 402,
-          "retry_after": ""
-        },
-        {
           "provider": "bing_rss",
           "query": "\"硬氪首发｜用AI智能体辅助新材料研发，睿质科技\" 2026 融资 投资方",
           "status": "completed",
           "count": 8
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"硬氪首发｜用AI智能体辅助新材料研发，睿质科技\" 数千万元 融资 领投 跟投",
-          "status": "completed",
-          "count": 1
-        },
-        {
-          "provider": "tavily",
-          "query": "\"硬氪首发｜用AI智能体辅助新材料研发，睿质科技\" 数千万元 融资 领投 跟投",
-          "status": "failed",
-          "http_status": 432,
-          "retry_after": ""
         },
         {
           "provider": "bing_rss",
@@ -2217,61 +2185,22 @@
           "count": 8
         },
         {
-          "provider": "anysearch",
-          "query": "\"硬氪首发｜用AI智能体辅助新材料研发，睿质科技\" 官网 产品 服务",
-          "status": "completed",
-          "count": 1
-        },
-        {
-          "provider": "tavily",
-          "query": "\"硬氪首发｜用AI智能体辅助新材料研发，睿质科技\" 官网 产品 服务",
-          "status": "failed",
-          "http_status": 432,
-          "retry_after": ""
-        },
-        {
           "provider": "bing_rss",
           "query": "\"硬氪首发｜用AI智能体辅助新材料研发，睿质科技\" 官网 产品 服务",
           "status": "completed",
           "count": 8
         },
         {
-          "provider": "anysearch",
+          "provider": "bing_rss",
           "query": "\"硬氪首发｜用AI智能体辅助新材料研发，睿质科技\" 投资机构 融资用途",
           "status": "completed",
           "count": 8
         },
         {
-          "provider": "anysearch",
-          "query": "\"硬氪首发｜用AI智能体辅助新材料研发，睿质科技\" 2026 本轮融资 公告",
-          "status": "completed",
-          "count": 1
-        },
-        {
-          "provider": "tavily",
-          "query": "\"硬氪首发｜用AI智能体辅助新材料研发，睿质科技\" 2026 本轮融资 公告",
-          "status": "failed",
-          "http_status": 432,
-          "retry_after": ""
-        },
-        {
           "provider": "bing_rss",
           "query": "\"硬氪首发｜用AI智能体辅助新材料研发，睿质科技\" 2026 本轮融资 公告",
           "status": "completed",
           "count": 8
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"硬氪首发｜用AI智能体辅助新材料研发，睿质科技\" 客户 创始人 总部",
-          "status": "completed",
-          "count": 7
-        },
-        {
-          "provider": "tavily",
-          "query": "\"硬氪首发｜用AI智能体辅助新材料研发，睿质科技\" 客户 创始人 总部",
-          "status": "failed",
-          "http_status": 432,
-          "retry_after": ""
         },
         {
           "provider": "bing_rss",
@@ -2280,12 +2209,12 @@
           "count": 8
         }
       ],
-      "updated_at": "2026-10-26T00:42:29.778Z",
+      "updated_at": "2026-10-26T03:37:40.153Z",
       "deferral": {
         "version": "FINANCING-RESEARCH-DEFERRAL-1",
         "event_id": "EV-804c4dc0560b6704",
         "status": "pending_verification",
-        "reason": "research_independent_sources_insufficient",
+        "reason": "research_sources_insufficient",
         "sources": [
           {
             "raw_id": "RAW-949a7947ce745889",
@@ -2404,7 +2333,7 @@
           "count": 8
         }
       ],
-      "updated_at": "2026-10-26T00:42:29.778Z"
+      "updated_at": "2026-10-26T03:37:40.153Z"
     },
     {
       "event_id": "EV-fe4e2cdf3f2a5075",
@@ -2413,7 +2342,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-26T00:42:29.778Z"
+      "updated_at": "2026-10-26T03:37:40.153Z"
     },
     {
       "event_id": "EV-9dbf7a6b84a4aa21",
@@ -2422,7 +2351,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-26T00:42:29.778Z"
+      "updated_at": "2026-10-26T03:37:40.153Z"
     },
     {
       "event_id": "EV-741856a05543c233",
@@ -2431,7 +2360,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-26T00:42:29.778Z"
+      "updated_at": "2026-10-26T03:37:40.153Z"
     },
     {
       "event_id": "EV-5f298468c125d834",
@@ -2440,7 +2369,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-26T00:42:29.778Z"
+      "updated_at": "2026-10-26T03:37:40.153Z"
     },
     {
       "event_id": "EV-cd3cf94d0f65aea1",
@@ -2449,7 +2378,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-26T00:42:29.778Z"
+      "updated_at": "2026-10-26T03:37:40.153Z"
     },
     {
       "event_id": "EV-51f0958b144e699a",
@@ -2458,7 +2387,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-26T00:42:29.778Z"
+      "updated_at": "2026-10-26T03:37:40.153Z"
     },
     {
       "event_id": "EV-c1832bf5603ccc52",
@@ -2467,7 +2396,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-26T00:42:29.778Z"
+      "updated_at": "2026-10-26T03:37:40.153Z"
     }
   ]
 }
