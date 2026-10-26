@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-25",
-    "currentDate": "2026-10-25",
-    "eventCount": 4268,
+    "latestDataDate": "2026-10-26",
+    "currentDate": "2026-10-26",
+    "eventCount": 4274,
     "quarantinedEventCount": 40,
     "quarantinedEventIds": [
       "EV-0b46ca8532759091",
@@ -620,7 +620,7 @@
       "EN-da20c5952dba19d8"
     ],
     "firstSeen": "2025-09-04",
-    "lastSeen": "2026-10-25",
+    "lastSeen": "2026-10-26",
     "relationIds": [
       "REL2-6460871b6d621283",
       "REL2-02bdd133e9353ff7",
@@ -683,8 +683,8 @@
       "fundingAcquisition": [
         "EV-7684bfb9b954c1fd",
         "EV-5fbe1afea8264e75",
-        "EV-79fbe4ea3a11c695",
         "EV-2ad2ae14a594df04",
+        "EV-79fbe4ea3a11c695",
         "EV-c964f7646ad88c1e",
         "EV-2aead80f6796b70b",
         "EV-53c733c33deddee3",
@@ -1184,7 +1184,7 @@
     "timeline": [
       {
         "id": "EV-7684bfb9b954c1fd",
-        "dataDate": "2026-10-25",
+        "dataDate": "2026-10-26",
         "date": "2026-10-23",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -1203,7 +1203,7 @@
       },
       {
         "id": "EV-5fbe1afea8264e75",
-        "dataDate": "2026-10-25",
+        "dataDate": "2026-10-26",
         "date": "2026-10-20",
         "eventType": "acquisition",
         "eventTypeLabel": "并购",
@@ -1215,6 +1215,23 @@
         "entityIds": [
           "EN-7d3194f79e645c42",
           "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-2ad2ae14a594df04",
+        "dataDate": "2026-10-26",
+        "date": "2026-10-23",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic 即将进行的 IPO 让硅谷屏息以待",
+        "displayTags": [],
+        "entityIds": [
+          "EN-407a75b4abd9e9aa",
+          "EN-c70eca6b0f88f44d",
+          "EN-7d3194f79e645c42"
         ]
       },
       {
@@ -1231,23 +1248,6 @@
         "entityIds": [
           "EN-dcf934033d9b04ad",
           "EN-c70eca6b0f88f44d"
-        ]
-      },
-      {
-        "id": "EV-2ad2ae14a594df04",
-        "dataDate": "2026-10-25",
-        "date": "2026-10-23",
-        "eventType": "ipo_listing",
-        "eventTypeLabel": "IPO 与上市",
-        "eventGroup": "融资与并购",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "Anthropic 即将进行的 IPO 让硅谷屏息以待",
-        "displayTags": [],
-        "entityIds": [
-          "EN-407a75b4abd9e9aa",
-          "EN-c70eca6b0f88f44d",
-          "EN-7d3194f79e645c42"
         ]
       },
       {
@@ -14625,9 +14625,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
+        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-use_case-physical_automation",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-content_creation",
         "TX-product_form-chip_accelerator",
@@ -15203,11 +15203,11 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-industry-financial_services",
+        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-product_form-model",
-        "TX-use_case-physical_automation",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
         "TX-target_user-researcher",
@@ -15300,6 +15300,7 @@
         "EV-7684bfb9b954c1fd",
         "EV-c964f7646ad88c1e",
         "EV-f7bf3f9c38e015fc",
+        "EV-a184895fa88061f6",
         "EV-5fbe1afea8264e75",
         "EV-b51a67353e247022",
         "EV-20b41540e3b24633",
@@ -15730,6 +15731,7 @@
         "EV-00834dd71037c7cc",
         "EV-2ad2ae14a594df04",
         "EV-526fa666b5957768",
+        "EV-5bd4ad184627c301",
         "EV-5133905b22468322",
         "EV-8fd2621317a8a577",
         "EV-d7652e5b3dbe4620",
@@ -15740,7 +15742,6 @@
         "EV-82b8afc59e9be662",
         "EV-aed61f7e2ca28c38",
         "EV-9e5e72473b5025b4",
-        "EV-5bd4ad184627c301",
         "EV-fd18ed4c81ae1791",
         "EV-054a8623f9abdbb7",
         "EV-b739349cfab7e41c",
@@ -15932,7 +15933,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-25"
+      "lastSeen": "2026-10-26"
     },
     {
       "id": "EN-729324072d368379",
@@ -17674,6 +17675,7 @@
       "eventIds": [
         "EV-154cd37c0eefda85",
         "EV-4746cc586107aaf7",
+        "EV-c89aea398d200ab6",
         "EV-7c5953aae2767bfa",
         "EV-d6ef2e46d3005d9b",
         "EV-471bf7c00cc06c85",
@@ -17801,6 +17803,7 @@
       "entityIds": [
         "EN-070a1175c6e4226b",
         "EN-21d3a1a229937a08",
+        "EN-aa53b89e82f5c91b",
         "EN-55a5064b725214bf",
         "EN-a244384ccfb8ec48",
         "EN-240389f4b730bad4",
@@ -17921,7 +17924,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-25"
+      "lastSeen": "2026-10-26"
     },
     {
       "id": "TX-industry-financial_services",
@@ -18170,7 +18173,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-10-25"
+      "lastSeen": "2026-10-26"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -18183,6 +18186,7 @@
         "EV-353261ac722ca40b",
         "EV-ebc7cbce77c27a1d",
         "EV-aab9f971ed5a99b4",
+        "EV-804c4dc0560b6704",
         "EV-c66ddcd78c89a643",
         "EV-87beb0ebdfa293de",
         "EV-ff12e2bb9d4ad359",
@@ -18866,6 +18870,7 @@
         "EN-c53e6deb84236ea0",
         "EN-75d16a5d8729c00d",
         "EN-ffad923c7afc100d",
+        "EN-776fb4ce831f64c6",
         "EN-eba7990af95abefe",
         "EN-54856813e7170b52",
         "EN-954adfa4d922fa30",
@@ -24698,7 +24703,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-04-30",
-      "lastSeen": "2026-10-25"
+      "lastSeen": "2026-10-26"
     },
     {
       "id": "TX-use_case-data_analysis",

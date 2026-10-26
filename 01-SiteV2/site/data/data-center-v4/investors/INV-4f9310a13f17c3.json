@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-25",
-    "currentDate": "2026-10-25",
-    "eventCount": 4268,
+    "latestDataDate": "2026-10-26",
+    "currentDate": "2026-10-26",
+    "eventCount": 4274,
     "quarantinedEventCount": 40,
     "quarantinedEventIds": [
       "EV-0b46ca8532759091",
@@ -62,19 +62,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-04",
-    "latest_disclosed_at": "2026-08-12",
+    "latest_disclosed_at": "2026-10-21",
     "role_counts": {
       "co_lead": 2,
-      "lead": 1,
+      "lead": 2,
       "participant": 1
     },
     "round_codes": [
@@ -88,6 +88,11 @@
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic"
+      },
+      {
+        "entity_id": "EN-2a914cf25d5fb0a1",
+        "canonical_entity_id": "",
+        "name": "Arda"
       },
       {
         "entity_id": "EN-e647c818ac38b6ca",
@@ -106,6 +111,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-51a01e863852553e",
+        "funding_insight_id": "FI-e3ee70b0f96d25ac",
+        "event_ids": [
+          "EV-a184895fa88061f6"
+        ],
+        "company_entity_id": "EN-2a914cf25d5fb0a1",
+        "company_canonical_entity_id": "",
+        "company_name": "Arda",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "2.3亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 230000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.3 亿美元"
+        },
+        "announced_at": "2026-10-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-78b2fb4f563409a9",
+            "source_url": "https://es.tradingview.com/news/panews:dcdaf9329acdf:0/",
+            "source_title": "前OpenAI研究主管Bob McGrew创办的AI制造软件公司Arda完成2.3亿美元融资，估值15亿美元",
+            "source_content_hash": "80d6052be0efbbc20b4e703d264e0a9420c65f5cbac35663185e475d8f9e0b0c",
+            "quote": "本轮由Altimeter Capital、Accel和Khosla Ventures领投",
+            "quote_hash": "0d5e7d69122998b870fac5ec7fde8c424eaccc4cc8fe9b5678925917f3e6df36"
+          }
+        ]
+      },
       {
         "activity_id": "IA-dd98131b777bac96",
         "funding_insight_id": "FI-208f5f069010d44d",
@@ -269,6 +314,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-78b2fb4f563409a9",
+        "source_url": "https://es.tradingview.com/news/panews:dcdaf9329acdf:0/",
+        "source_title": "前OpenAI研究主管Bob McGrew创办的AI制造软件公司Arda完成2.3亿美元融资，估值15亿美元",
+        "source_content_hash": "80d6052be0efbbc20b4e703d264e0a9420c65f5cbac35663185e475d8f9e0b0c",
+        "quote": "本轮由Altimeter Capital、Accel和Khosla Ventures领投",
+        "quote_hash": "0d5e7d69122998b870fac5ec7fde8c424eaccc4cc8fe9b5678925917f3e6df36"
+      },
+      {
         "source_id": "FISRC-0afb458e7b0878f0",
         "source_url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
         "source_title": "OpenAI 支持的 Thrive Holdings 融资 20 亿美元，将 AI 引入企业",
@@ -325,16 +378,16 @@
       "experience_summary": "官网将 Altimeter 描述为支持企业各成长阶段的长期合作伙伴。其管理多类基金，故具体一笔融资所涉基金需依据交易披露单独确认。",
       "track_record": [
         {
+          "description": "融资来源记录：Arda · 轮次未披露 · 2026-10-21 · 本轮领投 · 2.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-78b2fb4f563409a9"
+        },
+        {
           "description": "融资来源记录：Thrive Holdings · 轮次未披露 · 2026-08-12 · 本轮参投 · $2B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0afb458e7b0878f0"
         },
         {
           "description": "融资来源记录：Volta Infra Holdings Ltd. · A轮 · 2026-08-04 · 本轮联合领投 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-21a1d5a2dbf2a3b1"
-        },
-        {
-          "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮领投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b5e22ae086a6b353"
         }
       ],
       "contacts": [
@@ -391,6 +444,14 @@
           "quote_hash": "3bd21e1482b4efdce2a79e9ef6819cdaa0a1755d71fe3cd67710cb21b9adbc8c"
         },
         {
+          "source_id": "FISRC-78b2fb4f563409a9",
+          "source_url": "https://es.tradingview.com/news/panews:dcdaf9329acdf:0/",
+          "source_title": "前OpenAI研究主管Bob McGrew创办的AI制造软件公司Arda完成2.3亿美元融资，估值15亿美元",
+          "source_content_hash": "80d6052be0efbbc20b4e703d264e0a9420c65f5cbac35663185e475d8f9e0b0c",
+          "quote": "本轮由Altimeter Capital、Accel和Khosla Ventures领投",
+          "quote_hash": "0d5e7d69122998b870fac5ec7fde8c424eaccc4cc8fe9b5678925917f3e6df36"
+        },
+        {
           "source_id": "FISRC-0afb458e7b0878f0",
           "source_url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
           "source_title": "OpenAI 支持的 Thrive Holdings 融资 20 亿美元，将 AI 引入企业",
@@ -405,14 +466,6 @@
           "source_content_hash": "2773ebb523149905",
           "quote": "The funding, set to be announced Tuesday, values Volta at $2.4 billion, and was co-led by Andreessen Horowitz and Altimeter Capital.",
           "quote_hash": "cfb6133020b31b97ad4332a99cf66d2e36c252d19d373bfe6694a8725ab94037"
-        },
-        {
-          "source_id": "FISRC-b5e22ae086a6b353",
-          "source_url": "https://www.anthropic.com/news/series-h",
-          "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
-          "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
-          "quote": "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital",
-          "quote_hash": "cd04bdd3a7f3b8bdc5c665fe98be28f4f33a81690ade9a2e41926d3627410f97"
         }
       ],
       "last_verified_at": "2026-09-26",

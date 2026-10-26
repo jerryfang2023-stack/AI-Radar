@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-25",
-    "currentDate": "2026-10-25",
-    "eventCount": 4268,
+    "latestDataDate": "2026-10-26",
+    "currentDate": "2026-10-26",
+    "eventCount": 4274,
     "quarantinedEventCount": 40,
     "quarantinedEventIds": [
       "EV-0b46ca8532759091",
@@ -64,6 +64,7 @@
       "EV-353261ac722ca40b",
       "EV-ebc7cbce77c27a1d",
       "EV-aab9f971ed5a99b4",
+      "EV-804c4dc0560b6704",
       "EV-c66ddcd78c89a643",
       "EV-87beb0ebdfa293de",
       "EV-ff12e2bb9d4ad359",
@@ -747,6 +748,7 @@
       "EN-c53e6deb84236ea0",
       "EN-75d16a5d8729c00d",
       "EN-ffad923c7afc100d",
+      "EN-776fb4ce831f64c6",
       "EN-eba7990af95abefe",
       "EN-54856813e7170b52",
       "EN-954adfa4d922fa30",
@@ -1408,7 +1410,7 @@
     },
     {
       "id": "EV-ebc7cbce77c27a1d",
-      "dataDate": "2026-10-25",
+      "dataDate": "2026-10-26",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -1573,6 +1575,92 @@
       "products": [],
       "sourceUrl": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
       "publisher": "techfundingnews.com"
+    },
+    {
+      "id": "EV-804c4dc0560b6704",
+      "dataDate": "2026-10-26",
+      "date": "2026-10-20",
+      "updatedDate": "2026-10-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_independent_sources_insufficient",
+      "title": "硬氪首发｜用AI智能体辅助新材料研发，睿质科技完成数千万元天使轮融资",
+      "originalTitle": "",
+      "subject": "硬氪首发｜用AI智能体辅助新材料研发，睿质科技",
+      "action": "完成数千万元天使轮融资",
+      "object": "硬氪首发｜用AI智能体辅助新材料研发，睿质科技完成数千万元天使轮融资",
+      "metrics": [
+        "数千万元"
+      ],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-776fb4ce831f64c6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-776fb4ce831f64c6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-776fb4ce831f64c6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-776fb4ce831f64c6"
+      ],
+      "entityNames": [
+        "硬氪首发｜用AI智能体辅助新材料研发，睿质科技"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.sohu.com/a/1089994039_114778",
+      "publisher": "www.sohu.com"
     },
     {
       "id": "EV-c66ddcd78c89a643",
@@ -48420,7 +48508,7 @@
           "name": "Gemini 3.8 Flash",
           "type": "产品/服务",
           "ownerNames": [
-            "Google DeepMind"
+            "Google"
           ]
         }
       ],
@@ -59986,7 +60074,7 @@
     },
     {
       "id": "EV-e120eaba7fc9e768",
-      "dataDate": "2026-10-25",
+      "dataDate": "2026-10-26",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "product_release",
@@ -60787,21 +60875,21 @@
           "name": "AI Surpasses",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Google"
           ]
         },
         {
           "name": "Total Funding",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Google"
           ]
         },
         {
           "name": "Copper Sky Capital Doubles",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Google"
           ]
         }
       ],
@@ -62453,12 +62541,16 @@
         {
           "name": "Qwen3.8-Omni-Flash",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         },
         {
           "name": "Gemini Flash",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/qwen3-8-omni-flash-undercuts-gemini-flash-pricing-while-matching-its-multimodal-benchmarks",
@@ -64668,12 +64760,16 @@
         {
           "name": "ADK for Kotlin 1.0",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         },
         {
           "name": "ADK",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         }
       ],
       "sourceUrl": "https://developers.googleblog.com/announcing-adk-for-kotlin-10-building-production-ready-ai-agents-in-kotlin-android-and-beyond",
@@ -65451,7 +65547,9 @@
         {
           "name": "Gemini Flash",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/09/04/google-agentic-video-understanding-gemini-flash-models",
@@ -66475,7 +66573,9 @@
         {
           "name": "Gemini 3.8 Flash",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         }
       ],
       "sourceUrl": "https://arstechnica.com/ai/2026/09/google-releases-gemini-3-8-flash-its-third-flash-model-in-six-weeks",
@@ -68377,17 +68477,23 @@
         {
           "name": "Gemini Enterprise for Legal",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         },
         {
           "name": "Gemini Enterprise Targets Legal",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         },
         {
           "name": "Gemini Enterprise",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         }
       ],
       "sourceUrl": "https://futurumgroup.com/insights/google-cloud-targets-legal-ai-with-purpose-built-governed-platform",
@@ -68619,7 +68725,7 @@
           "name": "Gemini",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Google"
           ]
         }
       ],
@@ -70867,7 +70973,9 @@
         {
           "name": "Gemini 3.7 Flash",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         }
       ],
       "sourceUrl": "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release",
@@ -75539,7 +75647,9 @@
         {
           "name": "Database Operations",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         }
       ],
       "sourceUrl": "https://cloud.google.com/blog/products/databases/deep-dive-on-new-ai-powered-database-agents",
@@ -76223,7 +76333,9 @@
         {
           "name": "Gemini Spark",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/984/674.htm",
@@ -76690,14 +76802,14 @@
           "name": "Gemini Robotics ER 2",
           "type": "模型",
           "ownerNames": [
-            "Google DeepMind"
+            "Google"
           ]
         },
         {
           "name": "DeepMind",
           "type": "模型",
           "ownerNames": [
-            "Google DeepMind"
+            "Google"
           ]
         }
       ],
@@ -78921,7 +79033,9 @@
         {
           "name": "Gemini 4",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/982/040.htm",
@@ -79522,14 +79636,14 @@
           "name": "WorkBuddy",
           "type": "产品/服务",
           "ownerNames": [
-            "Tencent"
+            "Huawei"
           ]
         },
         {
           "name": "App Gallery",
           "type": "产品/服务",
           "ownerNames": [
-            "Tencent"
+            "Huawei"
           ]
         }
       ],
@@ -80529,9 +80643,7 @@
         {
           "name": "CodeBuddy NPC",
           "type": "产品/服务",
-          "ownerNames": [
-            "Tencent"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/980/633.htm",
@@ -81625,7 +81737,9 @@
         {
           "name": "Gemini 3.6 Flash",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         }
       ],
       "sourceUrl": "https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing",
@@ -82221,9 +82335,7 @@
         {
           "name": "Hyra-1.0",
           "type": "产品/服务",
-          "ownerNames": [
-            "Tencent"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/979/440.htm",
@@ -82313,12 +82425,16 @@
         {
           "name": "Flash-Lite",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         },
         {
           "name": "Gemini 3.6 Flash",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         }
       ],
       "sourceUrl": "https://artificialintelligence-news.com/news/googles-gemini-3-6-flash-targets-enterprise-agent-token-costs",
@@ -89467,9 +89583,7 @@
         {
           "name": "Agent Bucket",
           "type": "产品/服务",
-          "ownerNames": [
-            "Tencent"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/974/504.htm",
@@ -94634,9 +94748,7 @@
         {
           "name": "Agently Mail",
           "type": "产品/服务",
-          "ownerNames": [
-            "Tencent"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/967/614.htm",
@@ -96181,7 +96293,9 @@
         {
           "name": "A2A",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         }
       ],
       "sourceUrl": "https://developers.googleblog.com/how-a2a-is-building-a-world-of-collaborative-agents",
@@ -97225,7 +97339,7 @@
           "name": "Hermes",
           "type": "产品/服务",
           "ownerNames": [
-            "Moonshot AI"
+            "Google"
           ]
         }
       ],
@@ -99011,7 +99125,7 @@
           "name": "Hermes Agent Profile Builder",
           "type": "产品/服务",
           "ownerNames": [
-            "Google DeepMind"
+            "Google"
           ]
         }
       ],
@@ -100029,17 +100143,23 @@
         {
           "name": "Cross-Corpus Retrieval",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         },
         {
           "name": "Gemini Enterprise Agent",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         },
         {
           "name": "Research",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/06/08/google-research-adds-agentic-rag-to-gemini-enterprise-agent-platform-with-a-sufficient-context-agent-for-multi-hop-queries",
@@ -106539,7 +106659,9 @@
         {
           "name": "WikiSkill",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/google-gives-ai-agents-their-own-wiki-so-they-can-learn-from-mistakes-and-successes",
@@ -108853,7 +108975,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-25"
+      "lastSeen": "2026-10-26"
     },
     {
       "id": "EN-ffad923c7afc100d",
@@ -108875,6 +108997,27 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-10-20",
       "lastSeen": "2026-10-25"
+    },
+    {
+      "id": "EN-776fb4ce831f64c6",
+      "name": "硬氪首发｜用AI智能体辅助新材料研发，睿质科技",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-804c4dc0560b6704"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-26"
     },
     {
       "id": "EN-eba7990af95abefe",
@@ -109427,7 +109570,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-01-14",
-      "lastSeen": "2026-10-25"
+      "lastSeen": "2026-10-26"
     },
     {
       "id": "EN-e66d5fd225ed6b0a",
@@ -109646,6 +109789,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-2cfe4470fc8a4110",
         "EV-c96705c69e11c520",
         "EV-a3de7b1a00fbf8a9",
         "EV-1c7050585c7f4791",
@@ -110019,7 +110163,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-10-24"
+      "lastSeen": "2026-10-26"
     },
     {
       "id": "EN-8bacc14fb816a980",
@@ -110853,9 +110997,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
+        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-use_case-physical_automation",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-content_creation",
         "TX-product_form-chip_accelerator",
@@ -110960,8 +111104,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation"
+        "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
@@ -112203,8 +112347,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
@@ -112347,8 +112491,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-productivity_enterprise_workflows"
       ],
@@ -114461,6 +114605,7 @@
         "EV-7684bfb9b954c1fd",
         "EV-c964f7646ad88c1e",
         "EV-f7bf3f9c38e015fc",
+        "EV-a184895fa88061f6",
         "EV-5fbe1afea8264e75",
         "EV-b51a67353e247022",
         "EV-20b41540e3b24633",
@@ -114891,6 +115036,7 @@
         "EV-00834dd71037c7cc",
         "EV-2ad2ae14a594df04",
         "EV-526fa666b5957768",
+        "EV-5bd4ad184627c301",
         "EV-5133905b22468322",
         "EV-8fd2621317a8a577",
         "EV-d7652e5b3dbe4620",
@@ -114901,7 +115047,6 @@
         "EV-82b8afc59e9be662",
         "EV-aed61f7e2ca28c38",
         "EV-9e5e72473b5025b4",
-        "EV-5bd4ad184627c301",
         "EV-fd18ed4c81ae1791",
         "EV-054a8623f9abdbb7",
         "EV-b739349cfab7e41c",
@@ -115093,7 +115238,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-25"
+      "lastSeen": "2026-10-26"
     },
     {
       "id": "EN-df3b29befa02cd17",
@@ -115162,6 +115307,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e3f98a713df7ad64",
         "EV-04fb7521fa0fe4a9",
         "EV-c4491ccfef9e3d73",
         "EV-773a0fd45e447eac",
@@ -115266,7 +115412,7 @@
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-01-26",
-      "lastSeen": "2026-10-25"
+      "lastSeen": "2026-10-26"
     },
     {
       "id": "EN-d3565d297d476f10",
@@ -115594,7 +115740,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-10-25"
+      "lastSeen": "2026-10-26"
     },
     {
       "id": "EN-866e1f18c9370d5d",
@@ -116301,11 +116447,11 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-industry-financial_services",
+        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-product_form-model",
-        "TX-use_case-physical_automation",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
         "TX-target_user-researcher",
@@ -116984,7 +117130,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-25"
+      "lastSeen": "2026-10-26"
     },
     {
       "id": "EN-6f7ac1823da81d2e",
@@ -117748,7 +117894,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-10-25"
+      "lastSeen": "2026-10-26"
     },
     {
       "id": "EN-6fcba5d96a4fadfd",
@@ -118346,9 +118492,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
+        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-product_form-model",
-        "TX-use_case-physical_automation",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-research_discovery",
         "TX-technology-speech_audio",
@@ -118772,8 +118918,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
@@ -118943,9 +119089,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-product_form-model",
-        "TX-use_case-physical_automation",
         "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
         "TX-product_form-robotic_system",
@@ -118963,7 +119109,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-02-17",
-      "lastSeen": "2026-10-25"
+      "lastSeen": "2026-10-26"
     },
     {
       "id": "EN-92df1be3e37c9268",
@@ -119557,7 +119703,7 @@
         "EN-8992f4a61a19a74b"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-25"
+      "lastSeen": "2026-10-26"
     },
     {
       "id": "EN-8d57f84bd1847b24",
@@ -119579,8 +119725,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
@@ -120007,8 +120153,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
