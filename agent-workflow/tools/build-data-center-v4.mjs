@@ -566,7 +566,7 @@ function containsChinese(value = "") {
 
 function normalizeEventTitle(value) {
   return normalizeSpace(value)
-    .replace(/_(?:大风号|凤凰网)\s*$/u, "")
+    .replace(/_(?:大风号|凤凰网|腾讯新闻)\s*$/u, "")
     .replace(/\s*(?:\||<)\s*(?:semiconductor|기사본문)\b.*$/iu, "")
     .replace(/\s+[|—-]\s+(?:techcrunch|the elec inc\.?|reuters|bloomberg)\s*$/iu, "")
     .trim();

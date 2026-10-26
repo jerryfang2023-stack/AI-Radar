@@ -3044,3 +3044,26 @@ test('Chinese startup prefixes resolve from original identity while combined pro
   assert.equal(isEligibleFundingInsightEvent(event,bundle.claims),false);
   assert.equal(fundingCombinedRoundsNeedReview({...event,claim_refs:['single']},[{claim_id:'single',claim_type:'funding',verification_status:'accepted',source_quote:'元环智能完成种子轮融资共计数亿元。'}]),false);
 });
+
+
+test('Tencent News publisher suffix cannot become a financing participant', () => {
+  const original = '超10亿，苏州AI芯片创企获新融资，布局3D DRAM存算一体_腾讯新闻';
+  const body = '苏州AI芯片公司亿铸科技宣布完成超10亿元融资，融资用于芯片研发。';
+  const source = entry('publisher-suffix-recipient', original, body);
+  const candidate = { ...acceptedModelCandidate(source,
+    [{event_type:'funding',subject:'亿铸科技',object:'超10亿元融资',evidence_index:0}],
+    [{start:0,end:body.length,quote:body}]), task_type:'qa_repair',
+    source_hash:crypto.createHash('sha256').update(body).digest('hex').slice(0,16),
+    review:{decision:'accept',reviewer:'fixture'} };
+  candidate.proposal.action='extract_claim';
+  const bundle=buildBundle([source],taxonomy,date,'2026-07-16T00:00:00Z',{modelAssist:{candidates:[candidate]}});
+  assert.equal(bundle.raw_documents[0].title_original,original);
+  assert.equal(bundle.claims[0].subject,'亿铸科技');
+  assert.ok(bundle.canonical_events.length);
+  assert.ok(!bundle.entities.some(e=>e.canonical_name==='Tencent'));
+  assert.equal(normalizeEventTitle(original),original.replace('_腾讯新闻',''));
+  assert.equal(normalizeEventTitle('腾讯新闻完成融资'),'腾讯新闻完成融资');
+  assert.equal(normalizeEventTitle('Acme完成融资_未登记发布者'),'Acme完成融资_未登记发布者');
+  const quote='腾讯向Acme投资1000万美元。';
+  assert.ok(organizationMentions(normalizeEventTitle('Acme完成融资_腾讯新闻'),{subject:'Acme'},'funding',quote,[{subject:'Acme',source_quote:quote}]).some(e=>e.canonicalName==='Tencent'));
+});
