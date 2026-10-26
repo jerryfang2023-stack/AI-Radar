@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-26",
+  "reviewer": "Codex responsible financing reviewer",
+  "reviewed_at": "2026-10-26T03:35:36.779Z",
+  "reused_run_id": 40248088126,
+  "reused_head": "992347edc3f5be7adc1ea129c78bd3bf83d90222",
+  "resume_stage": "facts_and_affected_dependents",
+  "decisions": [
+    {
+      "action": "repair_funding_recipient",
+      "raw_id": "RAW-a8574f9052261c3e",
+      "source_ref": "SA-d383a7df2d4b6f6a",
+      "source_url": "https://m.sohu.com/a/1091789932_120159035?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+      "content_hash": "a45c20a6855fb2df867ee1a684c1dc8883726f22e5e85011aded09f5907c10c7",
+      "quote": "芯东西10月23日报道，今日，苏州AI大算力芯片公司亿铸科技宣布完成超10亿元融资，融资将为后续研发投入、产品迭代及产业化推进提供支持。",
+      "quote_hash": "ec7d31a2a70715fe5839e61594e89a70087ac048354796a98b150a4247aa6417",
+      "candidate_id": "MAC-3971aea403c9b01a",
+      "canonical_entity_merge_approved": false
+    },
+    {
+      "action": "repair_funding_recipient",
+      "raw_id": "RAW-9f9c81cf3fa41d2b",
+      "source_ref": "SA-66fef0c52dcedd3b",
+      "source_url": "https://news.qq.com/rain/a/20261023A0BJB700",
+      "content_hash": "e22cad683eb4379ec52c3796582c8a121f3d714ac9c16daabb5ccf439a4570c9",
+      "quote": "芯东西10月23日报道，今日，苏州AI大算力芯片公司亿铸科技宣布完成超10亿元融资，融资将为后续研发投入、产品迭代及产业化推进提供支持。",
+      "quote_hash": "ec7d31a2a70715fe5839e61594e89a70087ac048354796a98b150a4247aa6417",
+      "candidate_id": "MAC-9b8c4761de77179d",
+      "canonical_entity_merge_approved": false
+    },
+    {
+      "action": "review_same_application_subject_and_duplicate_round",
+      "canonical_entity_merge_approved": false,
+      "canonical_event_id": "EV-a8fc0677d43d7b8f",
+      "canonical_card_id": "FI-ad94da2f8beeb701",
+      "duplicate_event_id": "EV-e3f98a713df7ad64",
+      "old_input_event_id": "EV-e3f98a713df7ad64",
+      "source_url": "https://m.sohu.com/a/1091789932_120159035",
+      "source_id": "SA-d383a7df2d4b6f6a",
+      "source_content_hash": "a45c20a6855fb2df867ee1a684c1dc8883726f22e5e85011aded09f5907c10c7",
+      "body_sha256": "a45c20a6855fb2df867ee1a684c1dc8883726f22e5e85011aded09f5907c10c7",
+      "quote": "芯东西10月23日报道，今日，苏州AI大算力芯片公司亿铸科技宣布完成超10亿元融资，融资将为后续研发投入、产品迭代及产业化推进提供支持。",
+      "quote_hash": "ec7d31a2a70715fe5839e61594e89a70087ac048354796a98b150a4247aa6417",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-26T03:36:43.678Z",
+      "reason": "已逐字复核10月23日芯东西及DoNews原文：同一苏州亿铸科技、创始人熊大鹏、3D DRAM/YICA产品路线、同日超10亿元且未披露轮次及本轮投资方。新记录为同轮转载，合并到已发布事件保留旧卡及全部来源；仅融资应用身份与同轮归并，不批准规范实体合并。",
+      "corroborating_body_sha256": "141b00dcaac94dc2ee089cb370a498a533164c5f3a2b9024e935c27ae6531ce2"
+    },
+    {
+      "action": "validate_source_bindings",
+      "raw_ids": [
+        "RAW-a8574f9052261c3e",
+        "RAW-9f9c81cf3fa41d2b"
+      ],
+      "body_sha256_checks": "passed",
+      "exact_source_spans": "passed",
+      "independent_sources": false,
+      "reason": "搜狐与腾讯新闻均为芯东西同文转载。required_originals为最低阅读导航而非原文白名单；两份私有对象完整且SHA256匹配，不存在回执所称缺失或错绑。"
+    }
+  ]
+}

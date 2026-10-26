@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-25",
-    "currentDate": "2026-10-25",
-    "eventCount": 4268,
+    "latestDataDate": "2026-10-26",
+    "currentDate": "2026-10-26",
+    "eventCount": 4274,
     "quarantinedEventCount": 40,
     "quarantinedEventIds": [
       "EV-0b46ca8532759091",
@@ -62,20 +62,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-30",
-    "latest_disclosed_at": "2026-09-30",
+    "latest_disclosed_at": "2026-10-22",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "seed",
       "series_a"
     ],
     "portfolio_companies": [
@@ -83,9 +84,54 @@
         "entity_id": "EN-70729a266daea738",
         "canonical_entity_id": "",
         "name": "Ascerta"
+      },
+      {
+        "entity_id": "EN-aa53b89e82f5c91b",
+        "canonical_entity_id": "",
+        "name": "Maxinsights"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-462a41d618103334",
+        "funding_insight_id": "FI-4868c6248979c34c",
+        "event_ids": [
+          "EV-c89aea398d200ab6"
+        ],
+        "company_entity_id": "EN-aa53b89e82f5c91b",
+        "company_canonical_entity_id": "",
+        "company_name": "Maxinsights",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$30 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-10-22",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e3b2631226765a7a",
+            "source_url": "https://pulse2.com/maxinsights-raises-30-million-in-seed-funding-led-by-peak-xv-to-build-physical-ai-data-platform-for-robotics/",
+            "source_title": "Maxinsights 完成由 Peak XV 领投的 3000 万美元种子轮融资，用于构建面向机器人技术的物理 AI 数据平台",
+            "source_content_hash": "0270055137f6a8dd09b11bb35472f95fc125d6ac73f8625c52544fe93d1f2e4d",
+            "quote": "The financing included participation from Tola Capital, South Park Commons, INCE Capital, and Alumni Ventures.",
+            "quote_hash": "8f1be0bf5397a4a7dc3bc22a8b292e88f961c3634b498d32af019df360878b24"
+          }
+        ]
+      },
       {
         "activity_id": "IA-5bcc3acb1f6ca859",
         "funding_insight_id": "FI-9641aad793c547e7",
@@ -130,6 +176,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-e3b2631226765a7a",
+        "source_url": "https://pulse2.com/maxinsights-raises-30-million-in-seed-funding-led-by-peak-xv-to-build-physical-ai-data-platform-for-robotics/",
+        "source_title": "Maxinsights 完成由 Peak XV 领投的 3000 万美元种子轮融资，用于构建面向机器人技术的物理 AI 数据平台",
+        "source_content_hash": "0270055137f6a8dd09b11bb35472f95fc125d6ac73f8625c52544fe93d1f2e4d",
+        "quote": "The financing included participation from Tola Capital, South Park Commons, INCE Capital, and Alumni Ventures.",
+        "quote_hash": "8f1be0bf5397a4a7dc3bc22a8b292e88f961c3634b498d32af019df360878b24"
+      },
+      {
         "source_id": "FISRC-1ae6b18ce755c2a8",
         "source_url": "https://ascerta.com/resources/press/ascerta-raises-18m-series-a",
         "source_title": "Ascerta 融资 1800 万美元，帮助企业最大化 AI 投资回报率",
@@ -173,6 +227,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Maxinsights · 种子轮 · 2026-10-22 · 本轮参投 · $30 Million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e3b2631226765a7a"
+        },
+        {
           "description": "融资来源记录：Ascerta · A轮 · 2026-09-30 · 本轮参投 · $18 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1ae6b18ce755c2a8"
         }
@@ -194,6 +252,14 @@
           "source_content_hash": "1096900d05ac620c0c3e33af8992c09e9b90dbb63464839f2786e44dea2e5550",
           "quote": "Founded in 2010 in Seattle, WA Funding globally at seed and early stage We have raised $688M Invested in over 50 portfolio companies",
           "quote_hash": "48bf420cd21d8c651e6c5c650e13515352320f45e0430886d9e240c2db775327"
+        },
+        {
+          "source_id": "FISRC-e3b2631226765a7a",
+          "source_url": "https://pulse2.com/maxinsights-raises-30-million-in-seed-funding-led-by-peak-xv-to-build-physical-ai-data-platform-for-robotics/",
+          "source_title": "Maxinsights 完成由 Peak XV 领投的 3000 万美元种子轮融资，用于构建面向机器人技术的物理 AI 数据平台",
+          "source_content_hash": "0270055137f6a8dd09b11bb35472f95fc125d6ac73f8625c52544fe93d1f2e4d",
+          "quote": "The financing included participation from Tola Capital, South Park Commons, INCE Capital, and Alumni Ventures.",
+          "quote_hash": "8f1be0bf5397a4a7dc3bc22a8b292e88f961c3634b498d32af019df360878b24"
         },
         {
           "source_id": "FISRC-1ae6b18ce755c2a8",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-25",
-    "currentDate": "2026-10-25",
-    "eventCount": 4268,
+    "latestDataDate": "2026-10-26",
+    "currentDate": "2026-10-26",
+    "eventCount": 4274,
     "quarantinedEventCount": 40,
     "quarantinedEventIds": [
       "EV-0b46ca8532759091",
@@ -22035,30 +22035,29 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-10-25",
-      "funnel_id": "LF-842c1cfb4296b717",
+      "data_date": "2026-10-26",
+      "funnel_id": "LF-815ea5490395dfb4",
       "lens": "hardware",
-      "date": "2026-10-25",
+      "date": "2026-10-26",
       "monitoring_paths": [],
-      "raw_documents": 22,
-      "original_sources": 22,
-      "valid_claims": 16,
-      "observations": 3,
-      "canonical_events": 8,
+      "raw_documents": 13,
+      "original_sources": 13,
+      "valid_claims": 5,
+      "observations": 0,
+      "canonical_events": 3,
       "blocker_counts": {
-        "community_source_requires_original_event_source": 2,
-        "event_entity_unresolved": 1,
-        "event_not_ai_relevant": 8,
+        "community_source_requires_original_event_source": 1,
+        "event_not_ai_relevant": 5,
         "cumulative_funding_total_not_single_round": 1,
         "multi_event_roundup_not_single_event_source": 1
       },
       "rates": {
         "original_source_rate": 1,
-        "valid_claim_rate": 0.7272727272727273,
-        "observation_rate": 0.1875,
-        "event_conversion_rate": 0.5
+        "valid_claim_rate": 0.38461538461538464,
+        "observation_rate": 0,
+        "event_conversion_rate": 0.6
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-25/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-26/monitoring-funnel.json"
     }
   ]
 }

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-25",
-    "currentDate": "2026-10-25",
-    "eventCount": 4268,
+    "latestDataDate": "2026-10-26",
+    "currentDate": "2026-10-26",
+    "eventCount": 4274,
     "quarantinedEventCount": 40,
     "quarantinedEventIds": [
       "EV-0b46ca8532759091",
@@ -62,25 +62,31 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-05-06",
-    "latest_disclosed_at": "2026-08-17",
+    "latest_disclosed_at": "2026-10-22",
     "role_counts": {
-      "lead": 1,
+      "lead": 2,
       "participant": 3
     },
     "round_codes": [
+      "seed",
       "series_b",
       "series_f"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-aa53b89e82f5c91b",
+        "canonical_entity_id": "",
+        "name": "Maxinsights"
+      },
       {
         "entity_id": "EN-52f1bab72d488823",
         "canonical_entity_id": "",
@@ -103,6 +109,54 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-83d2eeb3dbf245e6",
+        "funding_insight_id": "FI-4868c6248979c34c",
+        "event_ids": [
+          "EV-c89aea398d200ab6"
+        ],
+        "company_entity_id": "EN-aa53b89e82f5c91b",
+        "company_canonical_entity_id": "",
+        "company_name": "Maxinsights",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$30 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-10-22",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e3b2631226765a7a",
+            "source_url": "https://pulse2.com/maxinsights-raises-30-million-in-seed-funding-led-by-peak-xv-to-build-physical-ai-data-platform-for-robotics/",
+            "source_title": "Maxinsights 完成由 Peak XV 领投的 3000 万美元种子轮融资，用于构建面向机器人技术的物理 AI 数据平台",
+            "source_content_hash": "0270055137f6a8dd09b11bb35472f95fc125d6ac73f8625c52544fe93d1f2e4d",
+            "quote": "has raised $30 million in seed funding led by Peak XV",
+            "quote_hash": "7bed308af4633a52f41b6af0494d244d899666bacd1287de3da89caa26bf46c4"
+          },
+          {
+            "source_id": "FISRC-f5bc4451529b540f",
+            "source_url": "https://www.thesaasnews.com/news/maxinsights-raises-30m-seed/",
+            "source_title": "MaxInsights Raises $30M Seed",
+            "source_content_hash": "4d8d0d8c7ebbc04c",
+            "quote": "The funding round was led by Peak XV.",
+            "quote_hash": "5e7b5681eea25dba5886f01e3c72840df309f1de355e036cac9e3716954bafb0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e5e719c437c8e239",
         "funding_insight_id": "FI-c0b843a5e6f6ea0a",
@@ -266,6 +320,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-e3b2631226765a7a",
+        "source_url": "https://pulse2.com/maxinsights-raises-30-million-in-seed-funding-led-by-peak-xv-to-build-physical-ai-data-platform-for-robotics/",
+        "source_title": "Maxinsights 完成由 Peak XV 领投的 3000 万美元种子轮融资，用于构建面向机器人技术的物理 AI 数据平台",
+        "source_content_hash": "0270055137f6a8dd09b11bb35472f95fc125d6ac73f8625c52544fe93d1f2e4d",
+        "quote": "has raised $30 million in seed funding led by Peak XV",
+        "quote_hash": "7bed308af4633a52f41b6af0494d244d899666bacd1287de3da89caa26bf46c4"
+      },
+      {
+        "source_id": "FISRC-f5bc4451529b540f",
+        "source_url": "https://www.thesaasnews.com/news/maxinsights-raises-30m-seed/",
+        "source_title": "MaxInsights Raises $30M Seed",
+        "source_content_hash": "4d8d0d8c7ebbc04c",
+        "quote": "The funding round was led by Peak XV.",
+        "quote_hash": "5e7b5681eea25dba5886f01e3c72840df309f1de355e036cac9e3716954bafb0"
+      },
+      {
         "source_id": "FISRC-2e7a3713da8f3e54",
         "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
         "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
@@ -321,16 +391,12 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Maxinsights · 种子轮 · 2026-10-22 · 本轮领投 · $30 Million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e3b2631226765a7a"
+        },
+        {
           "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2e7a3713da8f3e54"
-        },
-        {
-          "description": "融资来源记录：Supabase · F轮 · 2026-06-04 · 本轮参投 · $500M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a9654b37adce00dc"
-        },
-        {
-          "description": "融资来源记录：Vapi Inc. · B轮 · 2026-05-12 · 本轮领投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-46ca8e6bf27dfb82"
         }
       ],
       "contacts": [],
@@ -352,28 +418,28 @@
           "quote_hash": "9ae24a3923b97a2478af3f333925e6780c8e038c7689ea1ec3f1a25e589a93d6"
         },
         {
+          "source_id": "FISRC-e3b2631226765a7a",
+          "source_url": "https://pulse2.com/maxinsights-raises-30-million-in-seed-funding-led-by-peak-xv-to-build-physical-ai-data-platform-for-robotics/",
+          "source_title": "Maxinsights 完成由 Peak XV 领投的 3000 万美元种子轮融资，用于构建面向机器人技术的物理 AI 数据平台",
+          "source_content_hash": "0270055137f6a8dd09b11bb35472f95fc125d6ac73f8625c52544fe93d1f2e4d",
+          "quote": "has raised $30 million in seed funding led by Peak XV",
+          "quote_hash": "7bed308af4633a52f41b6af0494d244d899666bacd1287de3da89caa26bf46c4"
+        },
+        {
+          "source_id": "FISRC-f5bc4451529b540f",
+          "source_url": "https://www.thesaasnews.com/news/maxinsights-raises-30m-seed/",
+          "source_title": "MaxInsights Raises $30M Seed",
+          "source_content_hash": "4d8d0d8c7ebbc04c",
+          "quote": "The funding round was led by Peak XV.",
+          "quote_hash": "5e7b5681eea25dba5886f01e3c72840df309f1de355e036cac9e3716954bafb0"
+        },
+        {
           "source_id": "FISRC-2e7a3713da8f3e54",
           "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
           "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
           "source_content_hash": "affdfd9a0ccfb188",
           "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
           "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
-        },
-        {
-          "source_id": "FISRC-a9654b37adce00dc",
-          "source_url": "https://georgian.io/posts/why-georgian-invested-in-supabase",
-          "source_title": "Why Georgian Invested in Supabase",
-          "source_content_hash": "2ff196d4fa7dc98a",
-          "quote": "joining a syndicate that includes GIC, Stripe, Accel, Coatue, Felicis, Craft Ventures, Y Combinator, Peak XV and Salesforce Ventures.",
-          "quote_hash": "0e4a743440b167a98075db911e049b40ccf851aa818410949e0238db29d8b5a2"
-        },
-        {
-          "source_id": "FISRC-46ca8e6bf27dfb82",
-          "source_url": "https://siliconangle.com/2026/05/12/vapi-nabs-50m-make-voice-ai-human/",
-          "source_title": "Vapi 获 5000 万美元融资，让语音 AI 更人性化 - SiliconANGLE",
-          "source_content_hash": "5fee028b6dad3dc4",
-          "quote": "Peak XV led the Series B funding round",
-          "quote_hash": "5cf2609379d34cf45ef5f1f8f92ffd6419417258e8d6163efa74713f7b619e7e"
         }
       ],
       "last_verified_at": "2026-10-03",

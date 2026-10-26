@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-25",
-    "currentDate": "2026-10-25",
-    "eventCount": 4268,
+    "latestDataDate": "2026-10-26",
+    "currentDate": "2026-10-26",
+    "eventCount": 4274,
     "quarantinedEventCount": 40,
     "quarantinedEventIds": [
       "EV-0b46ca8532759091",
@@ -63,7 +63,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 3,
+    "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 3,
     "market_regions": [
       "CN",
@@ -74,7 +74,7 @@
     "first_disclosed_at": "2024-01",
     "latest_disclosed_at": "2026-06-22",
     "role_counts": {
-      "historical_or_ambiguous": 3,
+      "historical_or_ambiguous": 4,
       "lead": 1,
       "participant": 2
     },
@@ -222,6 +222,38 @@
         ]
       },
       {
+        "activity_id": "IA-a3dac3315bedf59a",
+        "funding_insight_id": "FI-ccc05a23e66ce6d5",
+        "event_ids": [
+          "EV-e3f98a713df7ad64"
+        ],
+        "company_entity_id": "EN-33f955ed668aa8fb",
+        "company_canonical_entity_id": "",
+        "company_name": "苏州亿铸智能科技有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2024-01",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2024年10月轮次领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-cb0a1e2b6698eba8",
+            "source_url": "https://m.sohu.com/a/1091789932_120159035?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "超10亿，苏州AI芯片创企获新融资，布局3D DRAM存算一体",
+            "source_content_hash": "a45c20a6855fb2df867ee1a684c1dc8883726f22e5e85011aded09f5907c10c7",
+            "quote": "2024年10月该公司宣布完成数亿元融资，由海外基金Prosperity7 Ventures领投，盛视科技、行至资本等跟投。",
+            "quote_hash": "5d5253a1d9166d6cf665d0bed216c3346be2bf1c73f6cf009af7e32d0d8028c7"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-283f87b4f1d39ad5",
         "funding_insight_id": "FI-98bf809bafca6956",
         "event_ids": [
@@ -342,6 +374,14 @@
         "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
         "quote": "with participation from Maverick Silicon, StepStone Group, Mayfield, Prosperity7 Ventures, Intel Capital, and Qualcomm Ventures",
         "quote_hash": "1b3a793f6651ede6d318a32fa8c2097ef50fb059db5e8d2bc1c0d7861eb26ee5"
+      },
+      {
+        "source_id": "FISRC-cb0a1e2b6698eba8",
+        "source_url": "https://m.sohu.com/a/1091789932_120159035?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "超10亿，苏州AI芯片创企获新融资，布局3D DRAM存算一体",
+        "source_content_hash": "a45c20a6855fb2df867ee1a684c1dc8883726f22e5e85011aded09f5907c10c7",
+        "quote": "2024年10月该公司宣布完成数亿元融资，由海外基金Prosperity7 Ventures领投，盛视科技、行至资本等跟投。",
+        "quote_hash": "5d5253a1d9166d6cf665d0bed216c3346be2bf1c73f6cf009af7e32d0d8028c7"
       },
       {
         "source_id": "FISRC-0cbb04b7d23b3a2c",
@@ -486,7 +526,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[4].role": {
+        "activities[5].role": {
           "text": "Pre-A轮领投",
           "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
           "provider": "deepseek",
