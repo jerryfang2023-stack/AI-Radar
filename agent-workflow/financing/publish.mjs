@@ -11,6 +11,7 @@ import { successfulPagesDeployment } from '../tools/wait-for-pages-deployment.mj
 import {publicationInputs,publicationCheckpointCommands,publicationCodeInputs} from './publication-plan.mjs';
 import {pagesDeploymentInputs} from '../tools/lib/pages-deployment-inputs.mjs';
 import {resolveGuanlanVaultRoot} from '../tools/guanlan-vault-paths.mjs';
+import {assertWorkspaceCapacity} from './storage-capacity.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const args = parseArgs();
@@ -46,6 +47,7 @@ if (args.get('dry-run') === 'true') {
       async (base,head)=>spawnSync('git',['merge-base','--is-ancestor',base,head],{cwd:root,windowsHide:true}).status===0,
       async (base,head)=>spawnSync('git',['diff','--quiet',base,head,'--',...pagesDeploymentInputs],{cwd:root,windowsHide:true}).status===0);
     if(!deployed) throw new Error('awaiting_pages_for_accepted_commit');
+    assertWorkspaceCapacity(directory);
     checkout = path.join(directory,`accepted-${process.pid}`);
     run('git',['worktree','add','--detach',checkout,sha]);
     const dependencies = [root,primary].find(candidate => fs.existsSync(path.join(candidate,'node_modules','ajv')) && fs.readFileSync(path.join(candidate,'package-lock.json'),'utf8')===fs.readFileSync(path.join(checkout,'package-lock.json'),'utf8'));
