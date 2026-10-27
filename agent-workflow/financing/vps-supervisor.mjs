@@ -10,6 +10,7 @@ import {allowedCheckpointPath} from './checkpoint.mjs';
 import {productionCIState} from '../tools/wait-for-production-code-checks.mjs';
 import {githubRead} from './github-read.mjs';
 import {writePublicationReviewContext} from './review-context.mjs';
+import {assertWorkspaceCapacity} from './storage-capacity.mjs';
 import {reconcileDispatchAttempts,dispatchRecoveryAllowed,completedReview,reviewRetryDue,nextReviewAttempt} from './recovery-policy.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -214,6 +215,7 @@ async function cycle(args) {
     }
     if(!completedReview(review,{date,head})) {
       if(!reviewRetryDue(previousAttempt))return save({status:'review_retry_pending',next_retry_at:previousAttempt.next_retry_at,error:null});
+      assertWorkspaceCapacity(directory);
       const attempt=nextReviewAttempt(previousAttempt);
       const reviewDir=path.join(reviewRoot,`attempt-${attempt.count}`),checkout=path.join(reviewDir,'checkout');
       fs.mkdirSync(reviewDir,{recursive:true});
