@@ -254,3 +254,17 @@ test('funding titles preserve trillion shorthand and fold growth without treatin
   assert.equal(sourceTitleFactsPreserved('Anthropic revenue grows fivefold', 'Anthropic 营收增至五倍'), true);
   assert.equal(sourceTitleFactsPreserved('Anthropic revenue grows fivefold', 'Anthropic 营收增长五倍'), false);
 });
+
+
+test("headline singular age compounds retain the implicit one", () => {
+  const source = "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation";
+  const translated = "成立一年的 AI 实验室 Flapping Airplanes 融资10亿美元，估值60亿美元";
+  assert.equal(generatedTitleTranslationLooksUsable(source, translated), true);
+  for (const wrong of [translated.replace("一年", "2年"), translated.replace("一年", ""), translated.replace("10亿美元", "20亿美元"), translated.replace("60亿美元", "6亿美元")]) {
+    assert.equal(sourceTitleFactsPreserved(source, wrong), false);
+  }
+  assert.equal(sourceTitleFactsPreserved("Month-old AI lab raises $1M", "成立一个月的AI实验室融资100万美元"), true);
+  assert.equal(sourceTitleFactsPreserved("Two-year-old AI lab raises $1M", "成立2年的AI实验室融资100万美元"), true);
+  assert.equal(sourceTitleFactsPreserved("2-year-old AI lab raises $1M", "成立一年的AI实验室融资100万美元"), false);
+  assert.equal(sourceTitleFactsPreserved("AI lab raises $1M", "成立一年的AI实验室融资100万美元"), false);
+});
