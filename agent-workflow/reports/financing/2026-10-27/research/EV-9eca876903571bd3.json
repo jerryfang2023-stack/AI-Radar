@@ -1,0 +1,92 @@
+{
+  "event_id": "EV-9eca876903571bd3",
+  "company_name": "灵钜创新",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "灵钜创新完成数千万元新一轮融资，南山战新投、龙华资本联合投资",
+    "event_source_refs": [
+      "SA-07850b380cc0060f"
+    ],
+    "event_claim_refs": [
+      "CL-40c53108b4057a2f",
+      "CL-e577286ed4d4da3f"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-910b1968535a180a",
+        "canonical_name": "灵钜创新"
+      }
+    ],
+    "event_metrics": [
+      "数千万元"
+    ],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-40c53108b4057a2f",
+        "raw_id": "RAW-9dffebfb033f40ed",
+        "subject": "灵钜创新",
+        "object": "，南山战新投、龙华资本联合投资",
+        "source_quote_length": 57
+      },
+      {
+        "claim_id": "CL-e577286ed4d4da3f",
+        "raw_id": "RAW-9dffebfb033f40ed",
+        "subject": "灵钜创新",
+        "object": "，南山战新投、龙华资本联合投资",
+        "source_quote_length": 95
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 1,
+    "resolved_company": "灵钜创新"
+  },
+  "queries": [
+    "\"灵钜创新\" 2026 融资 投资方",
+    "\"灵钜创新\" 数千万元 融资 领投 跟投",
+    "\"灵钜创新\" 官网 产品 服务",
+    "\"灵钜创新\" 投资机构 融资用途",
+    "\"灵钜创新\" 2026 本轮融资 公告",
+    "\"灵钜创新\" 客户 创始人 总部"
+  ],
+  "attempts": [
+    {
+      "provider": "bing_rss",
+      "query": "\"灵钜创新\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 7
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"灵钜创新\" 数千万元 融资 领投 跟投",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "cache",
+      "query": "\"灵钜创新\" 官网 产品 服务",
+      "status": "cached",
+      "count": 1
+    },
+    {
+      "provider": "cache",
+      "query": "\"灵钜创新\" 投资机构 融资用途",
+      "status": "cached",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"灵钜创新\" 2026 本轮融资 公告",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"灵钜创新\" 客户 创始人 总部",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}

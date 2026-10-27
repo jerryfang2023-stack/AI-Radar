@@ -6,12 +6,11 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-26",
-    "currentDate": "2026-10-26",
-    "eventCount": 4274,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-27",
+    "currentDate": "2026-10-27",
+    "eventCount": 4292,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -62,25 +61,26 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 4,
+    "china_market_activity_count": 5,
     "china_market_company_count": 4,
     "first_disclosed_at": "2026-05-20",
-    "latest_disclosed_at": "2026-10-10",
+    "latest_disclosed_at": "2026-10-26",
     "role_counts": {
       "co_lead": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "angel",
       "infrastructure",
       "pre_series_a",
-      "seed_plus_plus"
+      "seed_plus_plus",
+      "series_b"
     ],
     "portfolio_companies": [
       {
@@ -105,6 +105,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-be7b37ffb97838e8",
+        "funding_insight_id": "FI-37d7c5e453ca9656",
+        "event_ids": [
+          "EV-370b7f7ebf16be3d"
+        ],
+        "company_entity_id": "EN-0355fdd77dae437b",
+        "company_canonical_entity_id": "EN-0355fdd77dae437b",
+        "company_name": "趋境科技",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "超13亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1300000000,
+          "min_value": 1300000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 13 亿元"
+        },
+        "announced_at": "2026-10-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-90580bd62bf3633c",
+            "source_url": "https://www.36kr.com/p/4042389277071233",
+            "source_title": "趋境科技完成 B 轮融资，半年实现超十倍速增长，加速高品质 AI Token 规模化交付｜星连被投动态-36氪",
+            "source_content_hash": "cbb3ea532d8bd59cbad82d8c1d8a7eaeb25084e0af2ec3add56aee61b93ae9f3",
+            "quote": "老股东尚势资本继续追投",
+            "quote_hash": "c8f65a9533d06e941f3b3566282fbf1959859731e3494542b2ba187cb9820e1c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-18401adfd67da42e",
         "funding_insight_id": "FI-a86135d87f8014e2",
@@ -270,6 +310,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-90580bd62bf3633c",
+        "source_url": "https://www.36kr.com/p/4042389277071233",
+        "source_title": "趋境科技完成 B 轮融资，半年实现超十倍速增长，加速高品质 AI Token 规模化交付｜星连被投动态-36氪",
+        "source_content_hash": "cbb3ea532d8bd59cbad82d8c1d8a7eaeb25084e0af2ec3add56aee61b93ae9f3",
+        "quote": "老股东尚势资本继续追投",
+        "quote_hash": "c8f65a9533d06e941f3b3566282fbf1959859731e3494542b2ba187cb9820e1c"
+      },
+      {
         "source_id": "FISRC-43990c02209d1574",
         "source_url": "https://feng.ifeng.com/c/8x6fauBi0Z4",
         "source_title": "打造轻量化AI眼镜 厦企完成数亿元融资_大风号",
@@ -307,10 +355,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "尚势资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "尚势资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：趋境科技 · B轮 · 2026-10-26 · 本轮参投 · 超13亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-90580bd62bf3633c"
+        },
         {
           "description": "融资来源记录：比特幻境 · 天使轮 · 2026-10-10 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-43990c02209d1574"
@@ -318,14 +370,18 @@
         {
           "description": "融资来源记录：基元律动 · 基础设施融资 · 2026-08-27 · 本轮参投 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f23d61f5ed1d1ac1"
-        },
-        {
-          "description": "融资来源记录：MemoraX AI · 种子++轮 · 2026-08-12 · 本轮联合领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4a456deffcbf4bfd"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-90580bd62bf3633c",
+          "source_url": "https://www.36kr.com/p/4042389277071233",
+          "source_title": "趋境科技完成 B 轮融资，半年实现超十倍速增长，加速高品质 AI Token 规模化交付｜星连被投动态-36氪",
+          "source_content_hash": "cbb3ea532d8bd59cbad82d8c1d8a7eaeb25084e0af2ec3add56aee61b93ae9f3",
+          "quote": "老股东尚势资本继续追投",
+          "quote_hash": "c8f65a9533d06e941f3b3566282fbf1959859731e3494542b2ba187cb9820e1c"
+        },
         {
           "source_id": "FISRC-43990c02209d1574",
           "source_url": "https://feng.ifeng.com/c/8x6fauBi0Z4",
@@ -341,14 +397,6 @@
           "source_content_hash": "88fa07495f1fde73",
           "quote": "本轮融资由弘晖基金领投，聚合资本、尚势资本等机构参与。",
           "quote_hash": "53660265c82eb4f1f1c5bb0194b06bb447a577340eacd1846bdc0c8e495d7d05"
-        },
-        {
-          "source_id": "FISRC-4a456deffcbf4bfd",
-          "source_url": "https://news.pedaily.cn/202608/567590.shtml",
-          "source_title": "「MemoraX AI」完成数亿元种子++轮融资，三个月连融3轮",
-          "source_content_hash": "c26b4f6c5b757ce3",
-          "quote": "本轮融资由 北洋海棠基金、尚势资本、仁爱资本联合领投，银杏谷资本跟投，华业天成、达泰资本 等老股东持续加码投资。",
-          "quote_hash": "c940fe3b12e9e760642901ea669b9984b6b36816b863de7d64621d7344c07512"
         }
       ],
       "last_verified_at": "2026-09-25"

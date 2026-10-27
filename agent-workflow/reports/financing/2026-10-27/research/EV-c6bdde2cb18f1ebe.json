@@ -1,0 +1,84 @@
+{
+  "event_id": "EV-c6bdde2cb18f1ebe",
+  "company_name": "UK AI startups",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "AI 监测应成为投资者尽职调查的标准组成部分",
+    "event_source_refs": [
+      "SA-6dff3d8b4891266f"
+    ],
+    "event_claim_refs": [
+      "CL-ddd748fb4fb408e5"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-99b010e7ae114bef",
+        "canonical_name": "UK AI startups"
+      }
+    ],
+    "event_metrics": [
+      "$12.6 billion"
+    ],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-ddd748fb4fb408e5",
+        "raw_id": "RAW-3e2c9f292d3fa6ce",
+        "subject": "UK AI startups",
+        "object": "$12.6 billion",
+        "source_quote_length": 122
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 1,
+    "resolved_company": "UK AI startups"
+  },
+  "queries": [
+    "\"UK AI startups\" 2026 funding round investors",
+    "\"UK AI startups\" $12.6 billion funding announcement",
+    "\"UK AI startups\" official product customers",
+    "\"UK AI startups\" \"why we invested\"",
+    "\"UK AI startups\" 2026 raises led by",
+    "\"UK AI startups\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "bing_rss",
+      "query": "\"UK AI startups\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"UK AI startups\" $12.6 billion funding announcement",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"UK AI startups\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"UK AI startups\" \"why we invested\"",
+      "status": "empty",
+      "count": 0
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"UK AI startups\" 2026 raises led by",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "cache",
+      "query": "\"UK AI startups\" founders headquarters product",
+      "status": "cached",
+      "count": 7
+    }
+  ]
+}

@@ -2,12 +2,12 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.3",
-    "candidate_count": 2695,
-    "product_candidates": 1520,
-    "person_candidates": 1175,
-    "china_market_candidates": 668,
-    "china_market_product_candidates": 546,
-    "china_market_person_candidates": 122,
+    "candidate_count": 2699,
+    "product_candidates": 1522,
+    "person_candidates": 1177,
+    "china_market_candidates": 672,
+    "china_market_product_candidates": 548,
+    "china_market_person_candidates": 124,
     "rule": "Application evidence never mutates canonical V4 entities automatically."
   },
   "candidates": [
@@ -34012,6 +34012,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-a2c5e63e17d9ab7c",
+      "candidate_kind": "person",
+      "research_name": "武文洁",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-0355fdd77dae437b"
+      ],
+      "funding_insight_ids": [
+        "FI-be0b6a3a0f7163b2"
+      ],
+      "source_event_ids": [
+        "EV-370b7f7ebf16be3d"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9924bc6a1c8ac771",
+          "quote": "公司管理团队由创始人兼 CEO 艾智远博士、总裁兼 CFO 武文洁博士、CTO 陈祥麟等组成",
+          "source_content_hash": "c3d1d02b05fe92bb596d8f9a2f8980be6d82184a62e3c7c6bd8e58e980f75d62",
+          "quote_hash": "34788f8f18699320778f77c6a1cbd02d7bca39535cb20ae0bbeb91cbde5d8956"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-a521344e02322fbb",
       "candidate_kind": "person",
       "research_name": "毛书翰",
@@ -35403,6 +35431,34 @@
           "quote": "其创始人陈柯利曾是百度文心一言团队的核心负责人",
           "source_content_hash": "e08dcf4908ea736f2dc40031c14db58ee23b5e4c4b4b3ed4c8cb50379adc3e4e",
           "quote_hash": "3388fe59f76bbccaf4053ee3cb0e32545496506bb0a63cc19f3d569934341d8a"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-7e7beaed1a4a004f",
+      "candidate_kind": "person",
+      "research_name": "陈祥麟",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-0355fdd77dae437b"
+      ],
+      "funding_insight_ids": [
+        "FI-be0b6a3a0f7163b2"
+      ],
+      "source_event_ids": [
+        "EV-370b7f7ebf16be3d"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9924bc6a1c8ac771",
+          "quote": "公司管理团队由创始人兼 CEO 艾智远博士、总裁兼 CFO 武文洁博士、CTO 陈祥麟等组成",
+          "source_content_hash": "c3d1d02b05fe92bb596d8f9a2f8980be6d82184a62e3c7c6bd8e58e980f75d62",
+          "quote_hash": "34788f8f18699320778f77c6a1cbd02d7bca39535cb20ae0bbeb91cbde5d8956"
         }
       ],
       "market_regions": [
@@ -37727,6 +37783,34 @@
         "GLOBAL"
       ],
       "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-e96f3cd77066c6c0",
+      "candidate_kind": "product",
+      "research_name": "AI Token 工厂",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-0355fdd77dae437b"
+      ],
+      "funding_insight_ids": [
+        "FI-be0b6a3a0f7163b2"
+      ],
+      "source_event_ids": [
+        "EV-370b7f7ebf16be3d"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-90580bd62bf3633c",
+          "quote": "目前，趋境科技已经形成一套可复制的高品质 AI Token 工厂建设与运营模式：既有日均数万亿级 Token 产能的已投产项目，也有面向区域产业生态与头部客户的战略合作及在建布局。",
+          "source_content_hash": "cbb3ea532d8bd59cbad82d8c1d8a7eaeb25084e0af2ec3add56aee61b93ae9f3",
+          "quote_hash": "d6f7c98ad7ed0b6e13e7c8b8263a1de3da0b5d2b82b5e6584396da4ae68d6486"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
     },
     {
       "candidate_id": "FIER-0c7af1dc585b1381",
@@ -42264,6 +42348,34 @@
           "quote": "趋境科技通过异构算力调度、跨集群缓存共享、推理链路隔离、弹性扩缩容和质量监控等能力，将底层算力转化为可持续交付的高品质AI Token 产能。",
           "source_content_hash": "0ed32dd4d2b1a439",
           "quote_hash": "9bb5c144f0a3413943cecd9fcab9c32c2e505bd06c5bba63ac83bf2b3a8550f6"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-04c73ff537d269a2",
+      "candidate_kind": "product",
+      "research_name": "ATaaS（Approaching.AI Token as a Service）平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-0355fdd77dae437b"
+      ],
+      "funding_insight_ids": [
+        "FI-be0b6a3a0f7163b2"
+      ],
+      "source_event_ids": [
+        "EV-370b7f7ebf16be3d"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-90580bd62bf3633c",
+          "quote": "趋境科技所定义的“高品质 AI Token”：锚定生产级场景，提供高智能、低时延、高速率、强稳定，兼具规模化交付能力与可控综合成本的 AI Token 服务。",
+          "source_content_hash": "cbb3ea532d8bd59cbad82d8c1d8a7eaeb25084e0af2ec3add56aee61b93ae9f3",
+          "quote_hash": "7f05330e5b6becabdfe587c87be882f9214622bb4a6de3b80f0cf72e41f58a94"
         }
       ],
       "market_regions": [

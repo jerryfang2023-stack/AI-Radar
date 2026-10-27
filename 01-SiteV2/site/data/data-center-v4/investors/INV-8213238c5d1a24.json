@@ -6,12 +6,11 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-26",
-    "currentDate": "2026-10-26",
-    "eventCount": 4274,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-27",
+    "currentDate": "2026-10-27",
+    "eventCount": 4292,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -62,19 +61,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 4,
-    "china_market_company_count": 4,
+    "china_market_activity_count": 5,
+    "china_market_company_count": 5,
     "first_disclosed_at": "2026-06-16",
-    "latest_disclosed_at": "2026-10-13",
+    "latest_disclosed_at": "2026-10-26",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 2,
+      "lead": 3,
       "other_current_round": 1,
       "participant": 1
     },
@@ -100,12 +99,57 @@
         "name": "荆华密算（北京）科技有限公司"
       },
       {
+        "entity_id": "EN-0355fdd77dae437b",
+        "canonical_entity_id": "EN-0355fdd77dae437b",
+        "name": "趋境科技"
+      },
+      {
         "entity_id": "EN-e7d56af70143fcd7",
         "canonical_entity_id": "",
         "name": "数巅智能"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f1c41c3a233025bb",
+        "funding_insight_id": "FI-37d7c5e453ca9656",
+        "event_ids": [
+          "EV-370b7f7ebf16be3d"
+        ],
+        "company_entity_id": "EN-0355fdd77dae437b",
+        "company_canonical_entity_id": "EN-0355fdd77dae437b",
+        "company_name": "趋境科技",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "超13亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1300000000,
+          "min_value": 1300000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 13 亿元"
+        },
+        "announced_at": "2026-10-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-90580bd62bf3633c",
+            "source_url": "https://www.36kr.com/p/4042389277071233",
+            "source_title": "趋境科技完成 B 轮融资，半年实现超十倍速增长，加速高品质 AI Token 规模化交付｜星连被投动态-36氪",
+            "source_content_hash": "cbb3ea532d8bd59cbad82d8c1d8a7eaeb25084e0af2ec3add56aee61b93ae9f3",
+            "quote": "本轮融资由浙财创新、萧山资本、工银投资、中关村科学城、星连资本及钱江世纪城共同领投。",
+            "quote_hash": "938b2c729b3f144c18502986961c7dc8d12cc654a9e135976681aaedbe8a7d62"
+          }
+        ]
+      },
       {
         "activity_id": "IA-c047ac648da9e35e",
         "funding_insight_id": "FI-8df649aa1ec82165",
@@ -303,6 +347,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-90580bd62bf3633c",
+        "source_url": "https://www.36kr.com/p/4042389277071233",
+        "source_title": "趋境科技完成 B 轮融资，半年实现超十倍速增长，加速高品质 AI Token 规模化交付｜星连被投动态-36氪",
+        "source_content_hash": "cbb3ea532d8bd59cbad82d8c1d8a7eaeb25084e0af2ec3add56aee61b93ae9f3",
+        "quote": "本轮融资由浙财创新、萧山资本、工银投资、中关村科学城、星连资本及钱江世纪城共同领投。",
+        "quote_hash": "938b2c729b3f144c18502986961c7dc8d12cc654a9e135976681aaedbe8a7d62"
+      },
+      {
         "source_id": "FISRC-3ff24c6b7a38b108",
         "source_url": "https://news.pedaily.cn/202610/570182.shtml",
         "source_title": "荆华密算获近亿元Pre-A轮融资，半年连融三轮",
@@ -357,6 +409,10 @@
           "source_id": "FISRC-f5fa738edf400dda"
         },
         {
+          "description": "融资来源记录：趋境科技 · B轮 · 2026-10-26 · 本轮领投 · 超13亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-90580bd62bf3633c"
+        },
+        {
           "description": "融资来源记录：荆华密算 · Pre-A轮 · 2026-10-13 · 本轮领投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3ff24c6b7a38b108"
         },
@@ -374,6 +430,14 @@
           "source_content_hash": "8b03a9d7d0f177d479ba7379919a2b9f76a4ee8171835bb674fa9d0ba29585e2",
           "quote": "精升级。投资界（ID：pedaily2012）9月21日消息，数巅智能今日宣布，继 2025 年 6 月完成数亿元 pre-A 轮融资后，公司再度 完成数亿元级多轮融资 。此次披露的投资方包括 中国中车、中石油昆仑资本、中关村科学城、镔鑫钢铁、迎驾贡酒、财鑫资本、深圳力合等产业与金融资本，君联、赛富、红鸟启航资本等老股东则连续多轮追加 。本次融资资金将主要投向三大方向：一是持续攻坚X-Engine、行业语义层与山河元枢专家大模型等底层技术，加厚数据智能护城河；二是复制成熟的智能体与数字员工与标杆应用，拓宽主力赛道，加速从央国企向更广产业带渗透；三是持续引进高端人才，支撑组织能力跨越式提升。 数巅智能构建了端到端的企业数据智能体基础设施，包括ShanHe YuanShu数据",
           "quote_hash": "d52dd144cb0cfc026aec5917591ee4bb8dad1245dcbfec420e3bcd4254a73442"
+        },
+        {
+          "source_id": "FISRC-90580bd62bf3633c",
+          "source_url": "https://www.36kr.com/p/4042389277071233",
+          "source_title": "趋境科技完成 B 轮融资，半年实现超十倍速增长，加速高品质 AI Token 规模化交付｜星连被投动态-36氪",
+          "source_content_hash": "cbb3ea532d8bd59cbad82d8c1d8a7eaeb25084e0af2ec3add56aee61b93ae9f3",
+          "quote": "本轮融资由浙财创新、萧山资本、工银投资、中关村科学城、星连资本及钱江世纪城共同领投。",
+          "quote_hash": "938b2c729b3f144c18502986961c7dc8d12cc654a9e135976681aaedbe8a7d62"
         },
         {
           "source_id": "FISRC-3ff24c6b7a38b108",

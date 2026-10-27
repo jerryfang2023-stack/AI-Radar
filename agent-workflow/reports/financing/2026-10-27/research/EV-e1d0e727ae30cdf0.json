@@ -1,0 +1,97 @@
+{
+  "event_id": "EV-e1d0e727ae30cdf0",
+  "company_name": "以8.65亿美元估值",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "OpenAI前科学负责人创办Warp Sciences，融资2.15亿美元_腾讯新闻",
+    "event_source_refs": [
+      "SA-4628944a4ed7f4b6"
+    ],
+    "event_claim_refs": [
+      "CL-8c3666bb86a229dc",
+      "CL-3975d1fe2980d635"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-7d3194f79e645c42",
+        "canonical_name": "OpenAI"
+      },
+      {
+        "entity_id": "EN-de59e7f519bbd2ec",
+        "canonical_name": "以8.65亿美元估值"
+      }
+    ],
+    "event_metrics": [
+      "8.65亿",
+      "2.15亿"
+    ],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-8c3666bb86a229dc",
+        "raw_id": "RAW-89f73d3635760b0e",
+        "subject": "OpenAI前科学负责人创办Warp Sciences，",
+        "object": "2.15亿美元",
+        "source_quote_length": 25
+      },
+      {
+        "claim_id": "CL-3975d1fe2980d635",
+        "raw_id": "RAW-89f73d3635760b0e",
+        "subject": "OpenAI前科学负责人创办Warp Sciences，",
+        "object": "2.15亿美元",
+        "source_quote_length": 45
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 1,
+    "resolved_company": "以8.65亿美元估值"
+  },
+  "queries": [
+    "\"以8.65亿美元估值\" 2026 融资 投资方",
+    "\"以8.65亿美元估值\" 2.15亿美元 融资 领投 跟投",
+    "\"以8.65亿美元估值\" 官网 产品 服务",
+    "\"以8.65亿美元估值\" 投资机构 融资用途",
+    "\"以8.65亿美元估值\" 2026 本轮融资 公告",
+    "\"以8.65亿美元估值\" 客户 创始人 总部"
+  ],
+  "attempts": [
+    {
+      "provider": "bing_rss",
+      "query": "\"以8.65亿美元估值\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"以8.65亿美元估值\" 2.15亿美元 融资 领投 跟投",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"以8.65亿美元估值\" 官网 产品 服务",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"以8.65亿美元估值\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"以8.65亿美元估值\" 2026 本轮融资 公告",
+      "status": "completed",
+      "count": 5
+    },
+    {
+      "provider": "cache",
+      "query": "\"以8.65亿美元估值\" 客户 创始人 总部",
+      "status": "cached",
+      "count": 8
+    }
+  ]
+}

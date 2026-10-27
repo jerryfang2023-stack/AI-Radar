@@ -6,12 +6,11 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-26",
-    "currentDate": "2026-10-26",
-    "eventCount": 4274,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-27",
+    "currentDate": "2026-10-27",
+    "eventCount": 4292,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -11457,6 +11456,481 @@
   ],
   "events": [
     {
+      "id": "EV-53dad7c8f530b480",
+      "dataDate": "2026-10-27",
+      "date": "2026-10-27",
+      "updatedDate": "2026-10-27",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "630 亿美元！华尔街银行与黑石为 Anthropic 采购博通 AI 芯片提供融资",
+      "originalTitle": "",
+      "subject": "630 亿美元！华尔街银行与黑石为 Anthropic 采购博通 AI 芯片提供",
+      "action": "融资",
+      "object": "630 亿美元！华尔街银行与黑石为 Anthropic 采购博通 AI 芯片提供融资",
+      "metrics": [
+        "630 亿",
+        "4,206.79 亿"
+      ],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-373ac021a2c0bb2c"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Broadcom"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/018/199.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
+      "id": "EV-370b7f7ebf16be3d",
+      "dataDate": "2026-10-27",
+      "date": "2026-10-26",
+      "updatedDate": "2026-10-27",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "趋境科技完成 B 轮融资，半年实现超十倍速增长，加速高品质 AI Token 规模化交付｜星连被投动态-36氪",
+      "originalTitle": "",
+      "subject": "趋境科技",
+      "action": "funding",
+      "object": "超13亿人民币B轮融资",
+      "metrics": [
+        "13亿",
+        "24亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-81192d95f341341f",
+          "CL-07d1684d01f9c3ec"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-b38ce43cd405210e",
+        "EN-812be9956a7b1213"
+      ],
+      "entityNames": [
+        "趋境科技",
+        "趋境科技（Approaching.AI）"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.36kr.com/p/4042389277071233",
+      "publisher": "www.36kr.com"
+    },
+    {
+      "id": "EV-0613dcfb1a61d27a",
+      "dataDate": "2026-10-27",
+      "date": "2026-10-26",
+      "updatedDate": "2026-10-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "disputed",
+      "title": "SpaceX签下400亿美元AI算力融资租赁协议，押注英伟达下一代芯片",
+      "originalTitle": "",
+      "subject": "SpaceX签下400亿美元AI算力",
+      "action": "融资",
+      "object": "租赁协议，押注英伟达下一代芯片",
+      "metrics": [
+        "400亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [
+        "CF-0613dcfb1a61d27a"
+      ],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-f9741a84b5388788",
+        "EN-e78bdebae031095b",
+        "EN-8d4321d936320802",
+        "EN-b8376c008a603262"
+      ],
+      "entityNames": [
+        "SpaceX签下400亿美元AI算力",
+        "SpaceX",
+        "NVIDIA",
+        "SpaceX加码AI算力竞赛"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.sohu.com/a/1093022085_130887?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+      "publisher": "www.sohu.com"
+    },
+    {
+      "id": "EV-bc624f356f55b03d",
+      "dataDate": "2026-10-27",
+      "date": "2026-10-26",
+      "updatedDate": "2026-10-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_sources_insufficient",
+      "title": "超球面科技完成数亿元天使轮融资，探索下一代基础模型Scaling范式",
+      "originalTitle": "",
+      "subject": "超球面科技",
+      "action": "完成数亿元天使轮融资",
+      "object": "，探索下一代基础模型Scaling范式",
+      "metrics": [],
+      "locations": [
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-95cebfd246d74c6c"
+      ],
+      "entityNames": [
+        "超球面科技"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://m.pedaily.cn/news/570816",
+      "publisher": "m.pedaily.cn"
+    },
+    {
+      "id": "EV-f7ec1c0a0c766a77",
+      "dataDate": "2026-10-27",
+      "date": "2026-10-26",
+      "updatedDate": "2026-10-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "诺亦腾机器人完成Pre-A+++轮融资，专注于PhysicalAI全模态数据服务",
+      "originalTitle": "",
+      "subject": "诺亦腾机器人",
+      "action": "完成Pre-A+++轮融资",
+      "object": "，专注于PhysicalAI全模态数据服务",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-a1bf9af74c0033c2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-a1bf9af74c0033c2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-a1bf9af74c0033c2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-a1bf9af74c0033c2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-a1bf9af74c0033c2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-a1bf9af74c0033c2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a1bf9af74c0033c2"
+      ],
+      "entityNames": [
+        "诺亦腾机器人"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202610/570868.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-0b46ca8532759091",
+      "dataDate": "2026-10-27",
+      "date": "2026-10-23",
+      "updatedDate": "2026-10-23",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_sources_insufficient",
+      "title": "智宠制药完成数千万元A1轮融资，重塑宠物药研发",
+      "originalTitle": "",
+      "subject": "智宠制药",
+      "action": "完成数千万元A1轮融资",
+      "object": "，重塑宠物药研发",
+      "metrics": [
+        "数千万元",
+        "10%",
+        "30%",
+        "50%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-0d4cd9aa3a416d5a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-0d4cd9aa3a416d5a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-0d4cd9aa3a416d5a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-0d4cd9aa3a416d5a"
+      ],
+      "entityNames": [
+        "智宠制药"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202610/570760.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
       "id": "EV-0d7fe2f7274f7448",
       "dataDate": "2026-10-25",
       "date": "2026-10-23",
@@ -11553,7 +12027,7 @@
     },
     {
       "id": "EV-7684bfb9b954c1fd",
-      "dataDate": "2026-10-26",
+      "dataDate": "2026-10-27",
       "date": "2026-10-23",
       "updatedDate": "2026-10-23",
       "eventType": "funding",
@@ -11614,6 +12088,124 @@
       "publisher": "the-decoder.com"
     },
     {
+      "id": "EV-9eca876903571bd3",
+      "dataDate": "2026-10-27",
+      "date": "2026-10-23",
+      "updatedDate": "2026-10-23",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_sources_insufficient",
+      "title": "灵钜创新完成数千万元新一轮融资，南山战新投、龙华资本联合投资",
+      "originalTitle": "",
+      "subject": "灵钜创新",
+      "action": "完成数千万元新一轮融资",
+      "object": "，南山战新投、龙华资本联合投资",
+      "metrics": [
+        "数千万元"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-910b1968535a180a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-910b1968535a180a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-910b1968535a180a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-910b1968535a180a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-910b1968535a180a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-910b1968535a180a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-910b1968535a180a"
+      ],
+      "entityNames": [
+        "灵钜创新"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202610/570771.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
       "id": "EV-a8fc0677d43d7b8f",
       "dataDate": "2026-10-25",
       "date": "2026-10-23",
@@ -11671,8 +12263,59 @@
       "publisher": "feng.ifeng.com"
     },
     {
+      "id": "EV-e1d0e727ae30cdf0",
+      "dataDate": "2026-10-27",
+      "date": "2026-10-23",
+      "updatedDate": "2026-10-23",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_sources_insufficient",
+      "title": "OpenAI前科学负责人创办Warp Sciences，融资2.15亿美元_腾讯新闻",
+      "originalTitle": "",
+      "subject": "OpenAI前科学负责人创办Warp Sciences，",
+      "action": "融资",
+      "object": "2.15亿美元",
+      "metrics": [
+        "8.65亿",
+        "2.15亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-de59e7f519bbd2ec"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "以8.65亿美元估值"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.qq.com/rain/a/20261023A02GVO00",
+      "publisher": "news.qq.com"
+    },
+    {
       "id": "EV-e3f98a713df7ad64",
-      "dataDate": "2026-10-26",
+      "dataDate": "2026-10-27",
       "date": "2026-10-23",
       "updatedDate": "2026-10-23",
       "eventType": "funding",
@@ -11681,15 +12324,26 @@
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "超10亿，苏州AI芯片创企获新融资，布局3D DRAM存算一体",
+      "title": "超10亿，苏州AI芯片创企获新融资，布局3D DRAM存算一体_大风号",
       "originalTitle": "",
-      "subject": "亿铸科技",
-      "action": "funding",
-      "object": "超10亿元融资",
+      "subject": "超10亿，苏州AI芯片创企获新",
+      "action": "融资",
+      "object": "，布局3D DRAM存算一体",
       "metrics": [
         "10亿"
       ],
       "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-a5c4dde3be2a2b42"
+        ]
+      },
       "missingFields": [],
       "conflicts": [],
       "tags": [],
@@ -11713,8 +12367,8 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://m.sohu.com/a/1091789932_120159035?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-      "publisher": "m.sohu.com"
+      "sourceUrl": "https://feng.ifeng.com/c/8xScl560iau",
+      "publisher": "feng.ifeng.com"
     },
     {
       "id": "EV-04fb7521fa0fe4a9",
@@ -11950,6 +12604,99 @@
       "publisher": "pulse2.com"
     },
     {
+      "id": "EV-412b80c35c4c235a",
+      "dataDate": "2026-10-27",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "观复芯完成种子轮融资，高瓴创投、力合算芯联合领投",
+      "originalTitle": "",
+      "subject": "观复芯",
+      "action": "完成种子轮融资",
+      "object": "，高瓴创投、力合算芯联合领投",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-135e15f2b3a0b47c",
+          "CL-749beebbbd5ebc81",
+          "CL-837f88bb5405e1c6"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-bf3b0b9c3016225f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-bf3b0b9c3016225f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-bf3b0b9c3016225f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-bf3b0b9c3016225f"
+      ],
+      "entityNames": [
+        "观复芯"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202610/570702.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
       "id": "EV-4746cc586107aaf7",
       "dataDate": "2026-10-24",
       "date": "2026-10-22",
@@ -12036,7 +12783,7 @@
     },
     {
       "id": "EV-4c2e1fc3b5434884",
-      "dataDate": "2026-10-26",
+      "dataDate": "2026-10-27",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -12045,7 +12792,7 @@
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "10亿元！深圳存算一体AI芯片创企连获融资，美团、小鹏投了_大风号",
+      "title": "10亿元！深圳存算一体AI芯片创企连获融资，美团、小鹏投了",
       "originalTitle": "",
       "subject": "10亿元！深圳存算一体AI芯片创企连获",
       "action": "融资",
@@ -12054,18 +12801,6 @@
         "10亿"
       ],
       "locations": [],
-      "marketScope": {
-        "market_region": "CN",
-        "china_market_match": true,
-        "china_market_basis": [
-          "event_market"
-        ],
-        "source_registry_ids": [],
-        "claim_refs": [
-          "CL-11be3ada29bfcd6c",
-          "CL-f7a383cc624d60b9"
-        ]
-      },
       "missingFields": [],
       "conflicts": [],
       "tags": [],
@@ -12091,12 +12826,12 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://feng.ifeng.com/c/8xQzXPUTSUf",
-      "publisher": "feng.ifeng.com"
+      "sourceUrl": "https://m.sohu.com/a/1091279171_120159035?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+      "publisher": "m.sohu.com"
     },
     {
       "id": "EV-69b488065c05e255",
-      "dataDate": "2026-10-26",
+      "dataDate": "2026-10-27",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -12142,8 +12877,57 @@
       "publisher": "www.latent.space"
     },
     {
+      "id": "EV-729849b6f8ef647a",
+      "dataDate": "2026-10-27",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_sources_insufficient",
+      "title": "Nirva为AI可穿戴伴侣在11月发布前融资2500万美元",
+      "originalTitle": "Nirva raises $25M for AI wearable companion ahead of November launch",
+      "subject": "Nirva",
+      "action": "raises",
+      "object": "$25M for AI wearable companion ahead of November launch",
+      "metrics": [
+        "$25M",
+        "$25 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-41f9b9629d8f60e1"
+      ],
+      "entityNames": [
+        "Nirva"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://dealroom.co/news/165164-nirva-raises-25m-for-ai-wearable-companion-ahead-of-november-launch/",
+      "publisher": "dealroom.co"
+    },
+    {
       "id": "EV-741856a05543c233",
-      "dataDate": "2026-10-26",
+      "dataDate": "2026-10-27",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -12226,8 +13010,52 @@
       "publisher": "news.crunchbase.com"
     },
     {
+      "id": "EV-97a4ce9324128e6e",
+      "dataDate": "2026-10-27",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "元示科技完成近亿元天使轮及天使+轮融资，聚焦通用细胞模型",
+      "originalTitle": "",
+      "subject": "元示科技",
+      "action": "完成近亿元天使轮及天使+轮融资",
+      "object": "，聚焦通用细胞模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8955b63e8cdae8ac"
+      ],
+      "entityNames": [
+        "元示科技"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202610/570644.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
       "id": "EV-b25b5c902c92a0b2",
-      "dataDate": "2026-10-25",
+      "dataDate": "2026-10-27",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -12253,7 +13081,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-5474288c73785730"
+          "CL-938ab7344ad0bfa7"
         ]
       },
       "missingFields": [],
@@ -12368,7 +13196,7 @@
     },
     {
       "id": "EV-c1832bf5603ccc52",
-      "dataDate": "2026-10-26",
+      "dataDate": "2026-10-27",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -12411,6 +13239,54 @@
       "products": [],
       "sourceUrl": "https://news.pedaily.cn/202610/570697.shtml",
       "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-c6bdde2cb18f1ebe",
+      "dataDate": "2026-10-27",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "announced",
+      "researchDeferral": "research_sources_insufficient",
+      "title": "AI 监测应成为投资者尽职调查的标准组成部分",
+      "originalTitle": "AI monitoring should be a standard part of investor due diligence",
+      "subject": "UK AI startups",
+      "action": "funding",
+      "object": "$12.6 billion",
+      "metrics": [
+        "$12.6 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-99b010e7ae114bef"
+      ],
+      "entityNames": [
+        "UK AI startups"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.uktech.news/ai/ai-monitoring-investor-due-diligence-20261022",
+      "publisher": "www.uktech.news"
     },
     {
       "id": "EV-c89aea398d200ab6",
@@ -12531,7 +13407,7 @@
     },
     {
       "id": "EV-c964f7646ad88c1e",
-      "dataDate": "2026-10-24",
+      "dataDate": "2026-10-27",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -12558,7 +13434,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-0606318484d3ec6c"
+          "CL-187f9d13b9e15717"
         ]
       },
       "missingFields": [],
@@ -12590,6 +13466,88 @@
       "products": [],
       "sourceUrl": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
       "publisher": "www.bloomberg.com"
+    },
+    {
+      "id": "EV-dff26ca39da76a22",
+      "dataDate": "2026-10-27",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "辉羲智能相继完成Pre-B+及B轮融资，年内累计股权融资超25亿元",
+      "originalTitle": "",
+      "subject": "辉羲智能相继",
+      "action": "完成Pre-B+及B轮融资，年内累计股权融资",
+      "object": "超25亿元",
+      "metrics": [
+        "25亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8f1c9d07ebbe2172"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8f1c9d07ebbe2172"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8f1c9d07ebbe2172"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8f1c9d07ebbe2172"
+      ],
+      "entityNames": [
+        "辉羲智能相继"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202610/570693.shtml",
+      "publisher": "news.pedaily.cn"
     },
     {
       "id": "EV-f7bf3f9c38e015fc",
@@ -12649,7 +13607,7 @@
     },
     {
       "id": "EV-fe4e2cdf3f2a5075",
-      "dataDate": "2026-10-26",
+      "dataDate": "2026-10-27",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -13460,7 +14418,7 @@
     },
     {
       "id": "EV-95b8b70ca29ab623",
-      "dataDate": "2026-10-26",
+      "dataDate": "2026-10-27",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -13513,23 +14471,24 @@
       "publisher": "techcrunch.com"
     },
     {
-      "id": "EV-9dbf7a6b84a4aa21",
-      "dataDate": "2026-10-26",
+      "id": "EV-9a23701ebf40cdc1",
+      "dataDate": "2026-10-27",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "华瑞指数云完成新一轮超亿元融资，重新定义AI推理上下文存储",
-      "originalTitle": "",
-      "subject": "华瑞指数云",
-      "action": "完成新一轮超亿元融资",
-      "object": "，重新定义AI推理上下文存储",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "成立一年的 AI 实验室 Flapping Airplanes 以 $6B 估值融资 $1B",
+      "originalTitle": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+      "subject": "Year-old AI lab Flapping Airplanes",
+      "action": "raises",
+      "object": "$1B at a $6B valuation",
       "metrics": [
-        "超亿元"
+        "$1 billion",
+        "$6 billion"
       ],
       "locations": [],
       "missingFields": [],
@@ -13547,6 +14506,91 @@
       },
       "classifications": [],
       "displayTags": [],
+      "entityIds": [
+        "EN-a7b1f76d13ac9f2c",
+        "EN-4f17d1a52c8be6ed"
+      ],
+      "entityNames": [
+        "Year-old AI lab Flapping Airplanes",
+        "On Wednesday"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-9dbf7a6b84a4aa21",
+      "dataDate": "2026-10-27",
+      "date": "2026-10-21",
+      "updatedDate": "2026-10-21",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "华瑞指数云完成新一轮超亿元融资，重新定义AI推理上下文存储",
+      "originalTitle": "",
+      "subject": "华瑞指数云",
+      "action": "完成新一轮超亿元融资",
+      "object": "，重新定义AI推理上下文存储",
+      "metrics": [
+        "超亿元",
+        "150%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-858326bb020621c2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-858326bb020621c2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-858326bb020621c2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
       "entityIds": [
         "EN-858326bb020621c2"
       ],
@@ -13761,7 +14805,7 @@
     },
     {
       "id": "EV-cd3cf94d0f65aea1",
-      "dataDate": "2026-10-26",
+      "dataDate": "2026-10-27",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -14121,7 +15165,7 @@
     },
     {
       "id": "EV-5f298468c125d834",
-      "dataDate": "2026-10-26",
+      "dataDate": "2026-10-27",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "funding",
@@ -14169,7 +15213,7 @@
     },
     {
       "id": "EV-5fbe1afea8264e75",
-      "dataDate": "2026-10-26",
+      "dataDate": "2026-10-27",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "acquisition",
@@ -14306,6 +15350,93 @@
       "products": [],
       "sourceUrl": "https://tech.eu/2026/10/20/danish-startup-plinto-raises-eur29m-to-streamline-financial-controls/",
       "publisher": "tech.eu"
+    },
+    {
+      "id": "EV-7021248cd63007b1",
+      "dataDate": "2026-10-27",
+      "date": "2026-10-20",
+      "updatedDate": "2026-10-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_sources_insufficient",
+      "title": "100亿AI制药融资，张一鸣又拿到了大结果",
+      "originalTitle": "",
+      "subject": "100亿AI制药",
+      "action": "融资",
+      "object": "，张一鸣又拿到了大结果",
+      "metrics": [
+        "100亿",
+        "2.9亿",
+        "20亿",
+        "15亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-c25cc259a1ed98a1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-c25cc259a1ed98a1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-c25cc259a1ed98a1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c25cc259a1ed98a1"
+      ],
+      "entityNames": [
+        "100亿AI制药"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://timeline.sohu.com/news/GCBl0LY4GS?from=news",
+      "publisher": "timeline.sohu.com"
     },
     {
       "id": "EV-773a0fd45e447eac",
@@ -14724,7 +15855,7 @@
     },
     {
       "id": "EV-ea103ce3f64fea8e",
-      "dataDate": "2026-10-26",
+      "dataDate": "2026-10-27",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "funding",
@@ -14821,7 +15952,7 @@
     },
     {
       "id": "EV-fa58c17e7bde893c",
-      "dataDate": "2026-10-26",
+      "dataDate": "2026-10-27",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "funding",
@@ -459136,8 +460267,162 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-3b80351ff05f68a1",
+      "dataDate": "2026-10-27",
+      "date": "2026-10-26",
+      "updatedDate": "2026-10-26",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "SpaceX与Apollo敲定400亿美元GPU融资协议",
+      "originalTitle": "SpaceX locks in $40B GPU financing deal with Apollo",
+      "subject": "SpaceX",
+      "action": "capital_investment",
+      "object": "roughly $40 billion in financing for AI chips and related data center equipment",
+      "metrics": [
+        "$40 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e78bdebae031095b"
+      ],
+      "entityNames": [
+        "SpaceX"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-7ddfa7b82af141ec",
+      "dataDate": "2026-10-27",
+      "date": "2026-10-26",
+      "updatedDate": "2026-10-26",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "人类史上最大 IPO！Anthropic 提交纳斯达克 IPO 申请，股票代码为“ANT”",
+      "originalTitle": "",
+      "subject": "人类史上最大",
+      "action": "IPO",
+      "object": "！Anthropic 提交纳斯达克 IPO 申请，股票代码为“ANT”",
+      "metrics": [
+        "2 万",
+        "45.85 亿",
+        "306.16 亿",
+        "419.65 亿",
+        "2,802.19 亿",
+        "162.86 亿",
+        "1,087.49 亿",
+        "807.48 亿",
+        "5,391.9 亿",
+        "6.93 亿",
+        "46.27 亿",
+        "16 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e36703deb6e48927",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "人类史上最大",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/018/162.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
+      "id": "EV-c4964bb580827988",
+      "dataDate": "2026-10-27",
+      "date": "2026-10-26",
+      "updatedDate": "2026-10-26",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "IPO 文件阐述 Anthropic 的野心：AI 有望解决过去几代人未能攻克的难题",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "IPO",
+      "object": "文件阐述 Anthropic 的野心：AI 有望解决过去几代人未能攻克的难题",
+      "metrics": [
+        "163 亿",
+        "1,088.42 亿",
+        "807 亿",
+        "5,388.7 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/018/171.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
       "id": "EV-2ad2ae14a594df04",
-      "dataDate": "2026-10-26",
+      "dataDate": "2026-10-27",
       "date": "2026-10-23",
       "updatedDate": "2026-10-23",
       "eventType": "ipo_listing",
@@ -459187,7 +460472,7 @@
     },
     {
       "id": "EV-2aead80f6796b70b",
-      "dataDate": "2026-10-24",
+      "dataDate": "2026-10-27",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "ipo_listing",
@@ -459417,7 +460702,7 @@
     },
     {
       "id": "EV-e1e13c263714163a",
-      "dataDate": "2026-10-25",
+      "dataDate": "2026-10-27",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "financial_performance",
@@ -459432,6 +460717,7 @@
       "action": "financial_performance",
       "object": "较6月2日历史最高点累计跌幅达到50%",
       "metrics": [
+        "6.7%",
         "50%"
       ],
       "locations": [],
@@ -459509,7 +460795,7 @@
     },
     {
       "id": "EV-da50c998bf59ffe2",
-      "dataDate": "2026-10-25",
+      "dataDate": "2026-10-27",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "capital_investment",
@@ -459553,7 +460839,7 @@
     },
     {
       "id": "EV-1d592d9d6ed402c9",
-      "dataDate": "2026-10-26",
+      "dataDate": "2026-10-27",
       "date": "2026-10-20",
       "updatedDate": "2026-10-20",
       "eventType": "financial_performance",
