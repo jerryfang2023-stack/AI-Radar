@@ -1,0 +1,109 @@
+{
+  "event_id": "EV-7021248cd63007b1",
+  "company_name": "100亿AI制药",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "100亿AI制药融资，张一鸣又拿到了大结果",
+    "event_source_refs": [
+      "SA-919bc8d357b70b19"
+    ],
+    "event_claim_refs": [
+      "CL-ab1640b917fa8dc6",
+      "CL-fade4948c01786f3",
+      "CL-0f8fa6f6dbb12e21"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-c25cc259a1ed98a1",
+        "canonical_name": "100亿AI制药"
+      }
+    ],
+    "event_metrics": [
+      "100亿",
+      "2.9亿",
+      "20亿",
+      "15亿"
+    ],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-ab1640b917fa8dc6",
+        "raw_id": "RAW-122564d4ecfe9752",
+        "subject": "100亿AI制药",
+        "object": "，张一鸣又拿到了大结果",
+        "source_quote_length": 20
+      },
+      {
+        "claim_id": "CL-fade4948c01786f3",
+        "raw_id": "RAW-122564d4ecfe9752",
+        "subject": "100亿AI制药",
+        "object": "，张一鸣又拿到了大结果",
+        "source_quote_length": 41
+      },
+      {
+        "claim_id": "CL-0f8fa6f6dbb12e21",
+        "raw_id": "RAW-122564d4ecfe9752",
+        "subject": "100亿AI制药",
+        "object": "，张一鸣又拿到了大结果",
+        "source_quote_length": 29
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 1,
+    "resolved_company": "100亿AI制药"
+  },
+  "queries": [
+    "\"100亿AI制药\" 2026 融资 投资方",
+    "\"100亿AI制药\" 2.9亿美元 融资 领投 跟投",
+    "\"100亿AI制药\" 官网 产品 服务",
+    "\"100亿AI制药\" 投资机构 融资用途",
+    "\"100亿AI制药\" 2026 本轮融资 公告",
+    "\"100亿AI制药\" 客户 创始人 总部"
+  ],
+  "attempts": [
+    {
+      "provider": "bing_rss",
+      "query": "\"100亿AI制药\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.100.com.tw/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "cache",
+      "query": "\"100亿AI制药\" 2.9亿美元 融资 领投 跟投",
+      "status": "cached",
+      "count": 8
+    },
+    {
+      "provider": "cache",
+      "query": "\"100亿AI制药\" 官网 产品 服务",
+      "status": "cached",
+      "count": 8
+    },
+    {
+      "provider": "cache",
+      "query": "\"100亿AI制药\" 投资机构 融资用途",
+      "status": "cached",
+      "count": 8
+    },
+    {
+      "provider": "cache",
+      "query": "\"100亿AI制药\" 2026 本轮融资 公告",
+      "status": "cached",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"100亿AI制药\" 客户 创始人 总部",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}

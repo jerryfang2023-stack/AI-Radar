@@ -6,12 +6,11 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-26",
-    "currentDate": "2026-10-26",
-    "eventCount": 4274,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-27",
+    "currentDate": "2026-10-27",
+    "eventCount": 4292,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -62,21 +61,21 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 6,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 6,
+    "china_market_activity_count": 7,
     "china_market_company_count": 5,
     "first_disclosed_at": "2026-02-05",
-    "latest_disclosed_at": "2026-10-12",
+    "latest_disclosed_at": "2026-10-26",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 2,
-      "lead": 2,
+      "lead": 3,
       "participant": 3
     },
     "round_codes": [
@@ -119,6 +118,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-12e6074820d901e4",
+        "funding_insight_id": "FI-37d7c5e453ca9656",
+        "event_ids": [
+          "EV-370b7f7ebf16be3d"
+        ],
+        "company_entity_id": "EN-0355fdd77dae437b",
+        "company_canonical_entity_id": "EN-0355fdd77dae437b",
+        "company_name": "趋境科技",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "超13亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1300000000,
+          "min_value": 1300000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 13 亿元"
+        },
+        "announced_at": "2026-10-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-90580bd62bf3633c",
+            "source_url": "https://www.36kr.com/p/4042389277071233",
+            "source_title": "趋境科技完成 B 轮融资，半年实现超十倍速增长，加速高品质 AI Token 规模化交付｜星连被投动态-36氪",
+            "source_content_hash": "cbb3ea532d8bd59cbad82d8c1d8a7eaeb25084e0af2ec3add56aee61b93ae9f3",
+            "quote": "本轮融资由浙财创新、萧山资本、工银投资、中关村科学城、星连资本及钱江世纪城共同领投。",
+            "quote_hash": "938b2c729b3f144c18502986961c7dc8d12cc654a9e135976681aaedbe8a7d62"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7685d064b410871a",
         "funding_insight_id": "FI-24db5bbc2d1045e9",
@@ -468,6 +507,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-90580bd62bf3633c",
+        "source_url": "https://www.36kr.com/p/4042389277071233",
+        "source_title": "趋境科技完成 B 轮融资，半年实现超十倍速增长，加速高品质 AI Token 规模化交付｜星连被投动态-36氪",
+        "source_content_hash": "cbb3ea532d8bd59cbad82d8c1d8a7eaeb25084e0af2ec3add56aee61b93ae9f3",
+        "quote": "本轮融资由浙财创新、萧山资本、工银投资、中关村科学城、星连资本及钱江世纪城共同领投。",
+        "quote_hash": "938b2c729b3f144c18502986961c7dc8d12cc654a9e135976681aaedbe8a7d62"
+      },
+      {
         "source_id": "FISRC-2b099c2278c91b1d",
         "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
         "source_title": "10亿！上海大模型创企拿下新融资",
@@ -581,12 +628,12 @@
           "source_id": "PROFILE-ab135fdc03eef1e4d192"
         },
         {
-          "description": "融资来源记录：上海模思智能科技有限公司 · Pre-A轮 · 2026-10-12 · 本轮参投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2b099c2278c91b1d"
+          "description": "融资来源记录：趋境科技 · B轮 · 2026-10-26 · 本轮领投 · 超13亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-90580bd62bf3633c"
         },
         {
-          "description": "融资来源记录：奇点逃逸 · 种子轮 · 2026-08-03 · 本轮联合领投 · 千万级。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-8f70de35939e4c3c"
+          "description": "融资来源记录：上海模思智能科技有限公司 · Pre-A轮 · 2026-10-12 · 本轮参投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2b099c2278c91b1d"
         }
       ],
       "contacts": [],
@@ -632,20 +679,20 @@
           "quote_hash": "11fa5ec0317ba98a30c22d29f7ba28417276ad4e862a4d67d503630622dbafd5"
         },
         {
+          "source_id": "FISRC-90580bd62bf3633c",
+          "source_url": "https://www.36kr.com/p/4042389277071233",
+          "source_title": "趋境科技完成 B 轮融资，半年实现超十倍速增长，加速高品质 AI Token 规模化交付｜星连被投动态-36氪",
+          "source_content_hash": "cbb3ea532d8bd59cbad82d8c1d8a7eaeb25084e0af2ec3add56aee61b93ae9f3",
+          "quote": "本轮融资由浙财创新、萧山资本、工银投资、中关村科学城、星连资本及钱江世纪城共同领投。",
+          "quote_hash": "938b2c729b3f144c18502986961c7dc8d12cc654a9e135976681aaedbe8a7d62"
+        },
+        {
           "source_id": "FISRC-2b099c2278c91b1d",
           "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
           "source_title": "10亿！上海大模型创企拿下新融资",
           "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
           "quote": "元禾控股、上海国投旗下上海科创集团、星连资本等老股东持续投资",
           "quote_hash": "62b728419005a4cd2337d541f802356d120e9d0210a407794abd1784e217667a"
-        },
-        {
-          "source_id": "FISRC-8f70de35939e4c3c",
-          "source_url": "https://36kr.com/p/3919025939246727?f=rss",
-          "source_title": "让Agent在协作中自进化，清华00后博士获千万元融资 | 36氪首发",
-          "source_content_hash": "ef1aa49772b166b7",
-          "quote": "由星连资本与水木创投联合领投",
-          "quote_hash": "ff1f4783d3bc8be27fc116fc21e2151f37466eb523e6f47974ecf93878c3cab5"
         }
       ],
       "last_verified_at": "2026-10-03",

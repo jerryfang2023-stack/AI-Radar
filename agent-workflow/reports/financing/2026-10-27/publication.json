@@ -1,0 +1,62 @@
+{
+  "verification": {
+    "version": "FINANCING-VERIFICATION-1",
+    "status": "completed",
+    "counts": {
+      "total": 517,
+      "verified": 1,
+      "excluded": 59,
+      "reviewed": 0,
+      "pending": 457
+    },
+    "ledger": "verification.json",
+    "deferred_research": [
+      {
+        "event_id": "EV-bc624f356f55b03d",
+        "reason": "research_sources_insufficient",
+        "input_hash": "0f902b3ca265d956d1d4e325ce8f29ad6c29063314591ff15c64d5f5bdeab52e"
+      },
+      {
+        "event_id": "EV-7021248cd63007b1",
+        "reason": "research_sources_insufficient",
+        "input_hash": "74beba887fb5ac085aa8fcca054437a5339afe7beac7c6282e709d9380461a81"
+      },
+      {
+        "event_id": "EV-e1d0e727ae30cdf0",
+        "reason": "research_sources_insufficient",
+        "input_hash": "c31c20914f87e2bfe3c3511866ad772e6b805ad3997f42981d2f75b90694a0dd"
+      },
+      {
+        "event_id": "EV-729849b6f8ef647a",
+        "reason": "research_sources_insufficient",
+        "input_hash": "32492b1662ec928c4fde03b23e0a0a91b798ddb4118b9e5dba955b7b27123576"
+      },
+      {
+        "event_id": "EV-9eca876903571bd3",
+        "reason": "research_sources_insufficient",
+        "input_hash": "093b54dee3bf50a16d8a77cf227aa29eb3d8bd12ed1a39cad788654de12113e5"
+      },
+      {
+        "event_id": "EV-0b46ca8532759091",
+        "reason": "research_sources_insufficient",
+        "input_hash": "80ffe9e65b9ad6b8e4ce65399dc2abae1f45c6cc6857548a5ed0f92eb1107408"
+      },
+      {
+        "event_id": "EV-c6bdde2cb18f1ebe",
+        "reason": "research_sources_insufficient",
+        "input_hash": "7a9af918449f3d5017195b15a9c2360b235ff378e532be66cc8b33bbf2b50d5e"
+      }
+    ]
+  },
+  "version": "FINANCING-MONITOR-1",
+  "date": "2026-10-27",
+  "status": "ready_for_review",
+  "counts": {
+    "leads": 543,
+    "accepted_originals": 117,
+    "pending": 258,
+    "excluded": 168
+  },
+  "next": "merge_pages_portal_and_live_parity",
+  "generated_at": "2026-10-27T02:26:42.435Z"
+}

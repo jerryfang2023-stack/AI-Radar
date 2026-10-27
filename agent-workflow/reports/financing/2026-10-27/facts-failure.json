@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-27",
+  "stage": "facts",
+  "command": "backfill-source-title-translations.mjs",
+  "exit_status": 1,
+  "error_code": null,
+  "failure_kind": "execution",
+  "problems": [],
+  "model": {
+    "selected_jobs": 85,
+    "completed": 85,
+    "failures": []
+  },
+  "translation": {
+    "unresolved": 1,
+    "blocking_unresolved": 1,
+    "failures": [
+      {
+        "raw_id": "RAW-5ce1e1ea999eed09",
+        "title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+        "method": "title_translation_generator_failed",
+        "failures": [
+          {
+            "provider": "deepseek",
+            "reason": "title_facts_or_quality_rejected",
+            "attempt": 1
+          }
+        ]
+      }
+    ]
+  }
+}

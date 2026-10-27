@@ -1,0 +1,95 @@
+{
+  "event_id": "EV-0b46ca8532759091",
+  "company_name": "智宠制药",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "智宠制药完成数千万元A1轮融资，重塑宠物药研发",
+    "event_source_refs": [
+      "SA-40f0d2615f12a814"
+    ],
+    "event_claim_refs": [
+      "CL-e28bb8eed03281f1",
+      "CL-3767ac90917694f2"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-0d4cd9aa3a416d5a",
+        "canonical_name": "智宠制药"
+      }
+    ],
+    "event_metrics": [
+      "数千万元",
+      "10%",
+      "30%",
+      "50%"
+    ],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-e28bb8eed03281f1",
+        "raw_id": "RAW-f77e6271da293530",
+        "subject": "智宠制药",
+        "object": "，重塑宠物药研发",
+        "source_quote_length": 64
+      },
+      {
+        "claim_id": "CL-3767ac90917694f2",
+        "raw_id": "RAW-f77e6271da293530",
+        "subject": "智宠制药",
+        "object": "，重塑宠物药研发",
+        "source_quote_length": 121
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 1,
+    "resolved_company": "智宠制药"
+  },
+  "queries": [
+    "\"智宠制药\" 2026 融资 投资方",
+    "\"智宠制药\" 数千万元 融资 领投 跟投",
+    "\"智宠制药\" 官网 产品 服务",
+    "\"智宠制药\" 投资机构 融资用途",
+    "\"智宠制药\" 2026 本轮融资 公告",
+    "\"智宠制药\" 客户 创始人 总部"
+  ],
+  "attempts": [
+    {
+      "provider": "bing_rss",
+      "query": "\"智宠制药\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"智宠制药\" 数千万元 融资 领投 跟投",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"智宠制药\" 官网 产品 服务",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"智宠制药\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 7
+    },
+    {
+      "provider": "cache",
+      "query": "\"智宠制药\" 2026 本轮融资 公告",
+      "status": "cached",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"智宠制药\" 客户 创始人 总部",
+      "status": "completed",
+      "count": 1
+    }
+  ]
+}

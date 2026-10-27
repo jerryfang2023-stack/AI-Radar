@@ -6,12 +6,11 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-26",
-    "currentDate": "2026-10-26",
-    "eventCount": 4274,
-    "quarantinedEventCount": 40,
+    "latestDataDate": "2026-10-27",
+    "currentDate": "2026-10-27",
+    "eventCount": 4292,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-0b46ca8532759091",
       "EV-38588f56157b5c3e",
       "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
@@ -62,30 +61,76 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-03-11",
-    "latest_disclosed_at": "2026-03-11",
+    "latest_disclosed_at": "2026-10-26",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "series_a_plus_plus_plus"
+      "series_a_plus_plus_plus",
+      "series_b"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-8b332ded81dc8d3a",
         "canonical_entity_id": "EN-8b332ded81dc8d3a",
         "name": "光轮智能"
+      },
+      {
+        "entity_id": "EN-0355fdd77dae437b",
+        "canonical_entity_id": "EN-0355fdd77dae437b",
+        "name": "趋境科技"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-25f05d69230151aa",
+        "funding_insight_id": "FI-37d7c5e453ca9656",
+        "event_ids": [
+          "EV-370b7f7ebf16be3d"
+        ],
+        "company_entity_id": "EN-0355fdd77dae437b",
+        "company_canonical_entity_id": "EN-0355fdd77dae437b",
+        "company_name": "趋境科技",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "超13亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1300000000,
+          "min_value": 1300000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 13 亿元"
+        },
+        "announced_at": "2026-10-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-90580bd62bf3633c",
+            "source_url": "https://www.36kr.com/p/4042389277071233",
+            "source_title": "趋境科技完成 B 轮融资，半年实现超十倍速增长，加速高品质 AI Token 规模化交付｜星连被投动态-36氪",
+            "source_content_hash": "cbb3ea532d8bd59cbad82d8c1d8a7eaeb25084e0af2ec3add56aee61b93ae9f3",
+            "quote": "云创资本、湖南高新纵横、建投华科、申万创新投、中信聚信、珠海科技产业集团、商汤科技、网宿科技、甘肃树帜、常金控、元智未来、清证星竹、小咖资本等跟投",
+            "quote_hash": "bbad2c2f6073040fd2abde46bd7a521580933bd12b839d7a8a251f62238e0c45"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1c15e95592152949",
         "funding_insight_id": "FI-760eeaf9e5c0fb90",
@@ -129,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-90580bd62bf3633c",
+        "source_url": "https://www.36kr.com/p/4042389277071233",
+        "source_title": "趋境科技完成 B 轮融资，半年实现超十倍速增长，加速高品质 AI Token 规模化交付｜星连被投动态-36氪",
+        "source_content_hash": "cbb3ea532d8bd59cbad82d8c1d8a7eaeb25084e0af2ec3add56aee61b93ae9f3",
+        "quote": "云创资本、湖南高新纵横、建投华科、申万创新投、中信聚信、珠海科技产业集团、商汤科技、网宿科技、甘肃树帜、常金控、元智未来、清证星竹、小咖资本等跟投",
+        "quote_hash": "bbad2c2f6073040fd2abde46bd7a521580933bd12b839d7a8a251f62238e0c45"
+      },
+      {
         "source_id": "FISRC-a7ac3aedf1b697d8",
         "source_url": "https://news.pedaily.cn/202603/561585.shtml",
         "source_title": "合成数据企业「光轮智能」完成10亿元融资",
@@ -156,6 +209,10 @@
         {
           "description": "北京市投资促进服务局披露光轮智能完成10亿元A++及A+++轮融资，并列出建投华科为参与机构。",
           "source_id": "guanglun-a-plus-plus"
+        },
+        {
+          "description": "融资来源记录：趋境科技 · B轮 · 2026-10-26 · 本轮参投 · 超13亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-90580bd62bf3633c"
         },
         {
           "description": "融资来源记录：光轮智能 · A+++轮 · 2026-03-11 · 本轮参投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -191,6 +248,14 @@
           "source_content_hash": "a2a99f8fc15d1ae2672134efaff8152c7fc115a657ebcd10dfe0cef2f0d273ef",
           "quote": "本轮融资引入了新希望集团、鼎邦投资、奥克斯、鼎石资管等顶级产业方，以及建投华科、国方创新等政府及国资背景资本支持。",
           "quote_hash": "efd3a507f7b083c35e195007260335697f7976b5d61d601b45535017fb4fd88e"
+        },
+        {
+          "source_id": "FISRC-90580bd62bf3633c",
+          "source_url": "https://www.36kr.com/p/4042389277071233",
+          "source_title": "趋境科技完成 B 轮融资，半年实现超十倍速增长，加速高品质 AI Token 规模化交付｜星连被投动态-36氪",
+          "source_content_hash": "cbb3ea532d8bd59cbad82d8c1d8a7eaeb25084e0af2ec3add56aee61b93ae9f3",
+          "quote": "云创资本、湖南高新纵横、建投华科、申万创新投、中信聚信、珠海科技产业集团、商汤科技、网宿科技、甘肃树帜、常金控、元智未来、清证星竹、小咖资本等跟投",
+          "quote_hash": "bbad2c2f6073040fd2abde46bd7a521580933bd12b839d7a8a251f62238e0c45"
         },
         {
           "source_id": "FISRC-a7ac3aedf1b697d8",
