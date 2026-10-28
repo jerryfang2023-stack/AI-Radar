@@ -1,0 +1,713 @@
+{
+  "event_id": "EV-d80c8dee36bd767a",
+  "company_name": "SpaceX",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-7c18f959d95bc565",
+    "triggered_by_event_id": "EV-d80c8dee36bd767a",
+    "as_of_date": "2026-10-28",
+    "company": {
+      "entity_id": "EN-e78bdebae031095b",
+      "name": "SpaceX",
+      "full_name": "SpaceX",
+      "website": "http://www.spacex.com/",
+      "summary": "SpaceX是一家设计、制造并发射火箭与航天器的航天公司，同时运营星链卫星互联网业务，并在2026年并入xAI后拥有AI与数据中心业务。",
+      "headquarters": "Hawthorne, CA",
+      "founders": [
+        {
+          "name": "Elon Musk",
+          "role": "创始人、CEO",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dbf26bfab16dd404",
+              "quote": "CEOElon Musk",
+              "source_content_hash": "dfe6c0e76888e05e",
+              "quote_hash": "64a17009e020072033f6c7118676c8ca1e8ad9dbed2ddc8ca355625260fcb40c"
+            },
+            {
+              "source_id": "FISRC-daa0fbda6f008bcb",
+              "quote": "founded in 2002 by entrepreneur Elon Musk",
+              "source_content_hash": "75880c36b8dc0833",
+              "quote_hash": "3771b207e57fa8341ec4dc9bae15f024cf669c3a6c9345d2050631b4119c9823"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "team_size": {
+        "value": "1,001-5,000 Employees",
+        "observed_at": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-8342c1aa410dec66",
+            "quote": "Company Size1,001-5,000 Employees",
+            "source_content_hash": "9046c14d1ffa6bcb",
+            "quote_hash": "38d456eb6b1788f010ee0e40208f06dc748a7cca2464932f958b04a1592c4fe8"
+          }
+        ]
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-61f7e6a7356d00fe",
+          "quote": "SpaceX CEO埃隆·马斯克表示，旗下SpaceX已完成400亿美元债务融资",
+          "source_content_hash": "f7caf6b63724fa31c5d8988a14e90dc617a695ab400c39ae8251c0b85668e7b1",
+          "quote_hash": "657908c64f8fb607b0df2e33e842393a6dee001cb558c1068fe3af24bd5b0bd8"
+        },
+        {
+          "source_id": "FISRC-dbf26bfab16dd404",
+          "quote": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft.",
+          "source_content_hash": "dfe6c0e76888e05e",
+          "quote_hash": "af849baad3bb3a3a6d81bee2713d7cb56267ff2bfb4334b4883059edc6eeef63"
+        }
+      ],
+      "application_entity_id": "EN-e78bdebae031095b",
+      "canonical_entity_consistent": true
+    },
+    "financing": {
+      "round": "债务融资",
+      "amount": "400亿美元",
+      "total_raised": "",
+      "announced_at": "2026-10-26",
+      "investor_disclosure_status": "not_disclosed",
+      "investors": [],
+      "other_round_investors": [],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-61f7e6a7356d00fe",
+          "quote": "旗下SpaceX已完成400亿美元债务融资，用于购买发展人工智能（AI）业务所需的英伟达芯片",
+          "source_content_hash": "f7caf6b63724fa31c5d8988a14e90dc617a695ab400c39ae8251c0b85668e7b1",
+          "quote_hash": "9d81fb6b4fc35a8dd970fec77bd821ab1702fb8a535c0264db1b92a2f68f0716"
+        },
+        {
+          "source_id": "FISRC-61f7e6a7356d00fe",
+          "quote": "此次债务融资之所以能顺利完成，得益于公司拥有投资级信用评级",
+          "source_content_hash": "f7caf6b63724fa31c5d8988a14e90dc617a695ab400c39ae8251c0b85668e7b1",
+          "quote_hash": "276a125b31d9813834fa16cfe32161abfc45df2d27a887e46a2f5cfe20824575"
+        }
+      ],
+      "round_code": "debt",
+      "round_original": "债务融资",
+      "amount_original": "400亿美元",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 40000000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "400 亿美元"
+      },
+      "total_raised_original": "",
+      "total_raised_normalized": {
+        "currency": "",
+        "value": null,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "undisclosed",
+        "display_zh": ""
+      },
+      "risk_markers": [
+        "investors_missing"
+      ],
+      "disclosures": [
+        {
+          "event_id": "EV-d80c8dee36bd767a",
+          "round_original": "债务融资",
+          "amount": "400亿美元",
+          "announced_at": "2026-10-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-61f7e6a7356d00fe",
+              "quote": "旗下SpaceX已完成400亿美元债务融资，用于购买发展人工智能（AI）业务所需的英伟达芯片",
+              "source_content_hash": "f7caf6b63724fa31c5d8988a14e90dc617a695ab400c39ae8251c0b85668e7b1",
+              "quote_hash": "9d81fb6b4fc35a8dd970fec77bd821ab1702fb8a535c0264db1b92a2f68f0716"
+            },
+            {
+              "source_id": "FISRC-61f7e6a7356d00fe",
+              "quote": "此次债务融资之所以能顺利完成，得益于公司拥有投资级信用评级",
+              "source_content_hash": "f7caf6b63724fa31c5d8988a14e90dc617a695ab400c39ae8251c0b85668e7b1",
+              "quote_hash": "276a125b31d9813834fa16cfe32161abfc45df2d27a887e46a2f5cfe20824575"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "partially_disclosed"
+    },
+    "products": [
+      {
+        "name": "星链（Starlink）卫星互联网",
+        "description": "由SpaceX运营的卫星星座，提供全球高速低延迟互联网接入，是公司当前最大业务。",
+        "target_customers": "农村宽带用户、航空、船舶、偏远工业站点、应急响应与国防客户",
+        "features": [
+          "高速低延迟互联网",
+          "平均正常运行时间超过99.9%",
+          "直连手机服务扩展"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-99399b259ae08f33",
+            "quote": "Starlink is now the company’s largest business.",
+            "source_content_hash": "aef126899e90e690",
+            "quote_hash": "35ef766c10114003b440091b8d73b3f79527cc0f17d4706db616a0f116a08d8a"
+          },
+          {
+            "source_id": "FISRC-99399b259ae08f33",
+            "quote": "Starlink provides high-speed, low-latency internet with more than 99.9% average uptime and reliable connectivity worldwide",
+            "source_content_hash": "aef126899e90e690",
+            "quote_hash": "a374b67839dc3140e4e058fa04871b7fcb703d336453b3acd05a0c22a9c6a1ac"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "猎鹰火箭发射服务",
+        "description": "可重复使用火箭发射服务，2025年完成165次发射，占2023年以来全球入轨质量八成以上。",
+        "target_customers": "NASA、商业卫星运营商、国防客户",
+        "features": [
+          "可重复使用",
+          "高频发射节奏",
+          "垂直整合星链发射需求"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-99399b259ae08f33",
+            "quote": "In 2025, it completed 165 launches, close to one every other day.",
+            "source_content_hash": "aef126899e90e690",
+            "quote_hash": "129d9a7fda9eb1a425f0e7728581368e9f8bb58f1605f7e2e1e20160d4270724"
+          },
+          {
+            "source_id": "FISRC-99399b259ae08f33",
+            "quote": "SpaceX accounted for more than 80 percent of the world’s mass delivered to orbit since 2023.",
+            "source_content_hash": "aef126899e90e690",
+            "quote_hash": "b5defbcef111e46171c7163605fe2f2661f4a71c12d57267251e367fbc599fef"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "AI算力与数据中心业务",
+        "description": "并入xAI后，SpaceX拥有Grok、X及Colossus数据中心，向外部客户出租算力。",
+        "target_customers": "AI模型公司、云客户",
+        "features": [
+          "Colossus数据中心",
+          "GPU租赁",
+          "轨道计算探索"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-99399b259ae08f33",
+            "quote": "SpaceX now includes xAI, X.com and substantial datacentre capacity.",
+            "source_content_hash": "aef126899e90e690",
+            "quote_hash": "4a75cb3e4bb164bc06c328a0c49e9cd4766b87914f226dd8fc9eaa713e4ce279"
+          },
+          {
+            "source_id": "FISRC-99399b259ae08f33",
+            "quote": "Google has agreed to pay $920mn a month to rent approximately 110,000 Nvidia GPUs",
+            "source_content_hash": "aef126899e90e690",
+            "quote_hash": "7cb2ef07bafc24abc80d936acc556c6c6d6ec88b4fc649efa2fba41223f234b3"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [
+      {
+        "name": "Anthropic",
+        "industry": "AI模型",
+        "use_case": "租用Colossus数据中心空间",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-99399b259ae08f33",
+            "quote": "In July 2026, Anthropic is now paying $1.25bn a month for space at its Colossus datacentre in Memphis",
+            "source_content_hash": "aef126899e90e690",
+            "quote_hash": "c1a5198b5c1137cb34bbdb86f95a68fc07b8c38fd4f965764b877277c49cf0e8"
+          }
+        ],
+        "entity_id": "EN-c70eca6b0f88f44d"
+      },
+      {
+        "name": "Google",
+        "industry": "科技/云服务",
+        "use_case": "租用约11万块英伟达GPU算力",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-99399b259ae08f33",
+            "quote": "Google has agreed to pay $920mn a month to rent approximately 110,000 Nvidia GPUs",
+            "source_content_hash": "aef126899e90e690",
+            "quote_hash": "7cb2ef07bafc24abc80d936acc556c6c6d6ec88b4fc649efa2fba41223f234b3"
+          }
+        ],
+        "entity_id": "EN-bbdefa2950f49882"
+      },
+      {
+        "name": "NASA",
+        "industry": "政府航天",
+        "use_case": "载人航天、货运及Artemis登月项目",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-daa0fbda6f008bcb",
+            "quote": "The company has secured multiple contracts with NASA, contributing to various projects, including the Artemis program",
+            "source_content_hash": "75880c36b8dc0833",
+            "quote_hash": "3cbfd679391abcd271b8d218af811d5018d42f59182ebb815c7b7bba808ad176"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "comparisons": [],
+    "metrics": [
+      {
+        "label": "本轮债务融资金额",
+        "value": "400亿美元",
+        "observed_at": "2026-10-26",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-61f7e6a7356d00fe",
+            "quote": "旗下SpaceX已完成400亿美元债务融资",
+            "source_content_hash": "f7caf6b63724fa31c5d8988a14e90dc617a695ab400c39ae8251c0b85668e7b1",
+            "quote_hash": "40cb98bd91e492adb6e91370e26be5d6dac579afcf84448d986630ccf121a9e2"
+          }
+        ]
+      },
+      {
+        "label": "2025年发射次数",
+        "value": "165次",
+        "observed_at": "2025-12-31",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-99399b259ae08f33",
+            "quote": "In 2025, it completed 165 launches, close to one every other day.",
+            "source_content_hash": "aef126899e90e690",
+            "quote_hash": "129d9a7fda9eb1a425f0e7728581368e9f8bb58f1605f7e2e1e20160d4270724"
+          }
+        ]
+      },
+      {
+        "label": "2025年营收",
+        "value": "186.7亿美元",
+        "observed_at": "2025-12-31",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-06141ce843104fba",
+            "quote": "SpaceX booked $18.67 billion of revenue in 2025 and a $4.94 billion net loss.",
+            "source_content_hash": "f40f62ac499523da",
+            "quote_hash": "ef71292782b32afaec44c27f600cd1bf17500118a7209eb1d66ee84863757213"
+          }
+        ]
+      },
+      {
+        "label": "2025年净亏损",
+        "value": "49.4亿美元",
+        "observed_at": "2025-12-31",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-06141ce843104fba",
+            "quote": "SpaceX booked $18.67 billion of revenue in 2025 and a $4.94 billion net loss.",
+            "source_content_hash": "f40f62ac499523da",
+            "quote_hash": "ef71292782b32afaec44c27f600cd1bf17500118a7209eb1d66ee84863757213"
+          }
+        ]
+      },
+      {
+        "label": "2026年第二季度营收",
+        "value": "78.1亿美元",
+        "observed_at": "2026-06-30",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-06141ce843104fba",
+            "quote": "The second quarter of 2026 showed revenue of $7.81 billion, up 92% year over year",
+            "source_content_hash": "f40f62ac499523da",
+            "quote_hash": "ca5d17eca5d3303db6d684e1324bd7a054887510c74399d61743456478fe8e29"
+          }
+        ]
+      },
+      {
+        "label": "2026年第二季度净亏损",
+        "value": "5.41亿美元",
+        "observed_at": "2026-06-30",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-06141ce843104fba",
+            "quote": "a narrower $541 million net loss",
+            "source_content_hash": "f40f62ac499523da",
+            "quote_hash": "17dd4e6e680cb2082b41d87aaaa2f7dd5c20660ee807016517d74dc82ea5db4f"
+          }
+        ]
+      },
+      {
+        "label": "星链2025年营收占比",
+        "value": "约61%",
+        "observed_at": "2025-12-31",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-99399b259ae08f33",
+            "quote": "It generated about 61 percent of SpaceX’s 2025 revenues",
+            "source_content_hash": "aef126899e90e690",
+            "quote_hash": "bb4cb95f279233a609c1108955320b84337718b083408e0f3f653cb6e9bfb74c"
+          }
+        ]
+      },
+      {
+        "label": "星链订阅用户数（2026年初）",
+        "value": "超过1000万",
+        "observed_at": "2026-01-01",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-99399b259ae08f33",
+            "quote": "had more than 10 million subscribers by early 2026",
+            "source_content_hash": "aef126899e90e690",
+            "quote_hash": "cfed0a1f3a7fc3fa5bc51db5620ba3e936c8b3b1fb27f1ec76a2ab134cb8a36f"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Elon Musk",
+        "quote": "这笔债务主要用于采购将于明年第一季度和第二季度交付的GPU，且大多为可提前赎回债务，对本季度影响不大。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-61f7e6a7356d00fe",
+            "quote": "这笔债务主要用于采购将于明年第一季度和第二季度交付的GPU，且大多为可提前赎回债务，对本季度影响不大。",
+            "source_content_hash": "f7caf6b63724fa31c5d8988a14e90dc617a695ab400c39ae8251c0b85668e7b1",
+            "quote_hash": "97e725375a892bbaff80ed73bb3d0ad14469370cbcef1db2acf15388402fb8cf"
+          }
+        ]
+      },
+      {
+        "speaker": "Elon Musk",
+        "quote": "对于那些缺乏独立于AI数据中心的实质性收入来源的公司，债务市场“几乎已完全关闭融资渠道”。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-61f7e6a7356d00fe",
+            "quote": "对于那些缺乏独立于AI数据中心的实质性收入来源的公司，债务市场“几乎已完全关闭融资渠道”。",
+            "source_content_hash": "f7caf6b63724fa31c5d8988a14e90dc617a695ab400c39ae8251c0b85668e7b1",
+            "quote_hash": "f18fe797b0f7b0decf817176b9cce9329e60a6c7798739409ecbcfc802e72eb2"
+          }
+        ]
+      },
+      {
+        "speaker": "Ben James",
+        "quote": "SpaceX already has two businesses of unusual scale and strategic importance in launch and connectivity",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-99399b259ae08f33",
+            "quote": "SpaceX already has two businesses of unusual scale and strategic importance in launch and connectivity",
+            "source_content_hash": "aef126899e90e690",
+            "quote_hash": "d3e1c46e0462a461b3b87ac2be9a94118ad005228726f0ecec4014871f787cbd"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "本轮400亿美元债务融资的核心变量是SpaceX能否用投资级信用评级和星链、发射业务的既有收入，为大规模采购英伟达GPU及AI算力扩张提供低成本资金，并把AI收入转化为回报。已验证信号包括：2025年营收186.7亿美元、2026年第二季度营收78.1亿美元同比增长92%、星链2025年贡献约61%收入且订阅用户超1000万、2025年完成165次发射。证据边界在于：本轮为债务融资而非股权融资，来源未披露具体债权人；AI算力租赁合同期限较短（至2029年中），且GPU采购交付与AI收入回报仍待验证。",
+      "validated_signals": [
+        "2025年营收186.7亿美元",
+        "2026年第二季度营收78.1亿美元，同比增长92%",
+        "星链2025年贡献约61%收入，2026年初订阅用户超1000万",
+        "2025年完成165次发射，占2023年以来全球入轨质量八成以上",
+        "Anthropic每月支付12.5亿美元租用Colossus数据中心空间",
+        "Google每月支付9.2亿美元租用约11万块英伟达GPU"
+      ],
+      "risks": [
+        "本轮为债务融资，来源未披露具体债权人，融资成本与契约条款不明",
+        "GPU采购集中于明年第一、二季度交付，AI算力需求与租赁价格若回落将影响偿债能力",
+        "Anthropic与Google的算力合同期限较短（目前至2029年中），收入持续性待验证",
+        "星舰进展、xAI合并后的财务与会计复杂度、治理结构集中等均构成执行风险",
+        "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "compute_cloud_service",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "use_case_ids": [
+        "data_analysis",
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "telecommunications",
+        "aerospace_defense"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "researcher"
+      ],
+      "sector": "卫星互联网与AI算力基础设施",
+      "investment_thesis": {
+        "statement": "本轮400亿美元债务融资的核心变量是SpaceX能否用投资级信用评级和星链、发射业务的既有收入，为大规模采购英伟达GPU及AI算力扩张提供低成本资金，并把AI收入转化为回报。已验证信号包括：2025年营收186.7亿美元、2026年第二季度营收78.1亿美元同比增长92%、星链2025年贡献约61%收入且订阅用户超1000万、2025年完成165次发射。证据边界在于：本轮为债务融资而非股权融资，来源未披露具体债权人；AI算力租赁合同期限较短（至2029年中），且GPU采购交付与AI收入回报仍待验证。",
+        "evidence_signals": [
+          "2025年营收186.7亿美元",
+          "2026年第二季度营收78.1亿美元，同比增长92%",
+          "星链2025年贡献约61%收入，2026年初订阅用户超1000万",
+          "2025年完成165次发射，占2023年以来全球入轨质量八成以上",
+          "Anthropic每月支付12.5亿美元租用Colossus数据中心空间",
+          "Google每月支付9.2亿美元租用约11万块英伟达GPU"
+        ],
+        "risks": [
+          "本轮为债务融资，来源未披露具体债权人，融资成本与契约条款不明",
+          "GPU采购集中于明年第一、二季度交付，AI算力需求与租赁价格若回落将影响偿债能力",
+          "Anthropic与Google的算力合同期限较短（目前至2029年中），收入持续性待验证",
+          "星舰进展、xAI合并后的财务与会计复杂度、治理结构集中等均构成执行风险"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "星链（Starlink）卫星互联网",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "猎鹰火箭发射服务",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "AI算力与数据中心业务",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Elon Musk",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Anthropic",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_name": "Anthropic"
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Google",
+        "canonical_entity_id": "EN-bbdefa2950f49882",
+        "canonical_name": "Google"
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "NASA",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-c5984dabb5a697b9",
+        "date": "2026-10-26",
+        "title": "SpaceX与Apollo敲定400亿美元GPU融资协议",
+        "amount": "$40 billion",
+        "source_refs": [
+          "SA-ce6958893e39120e"
+        ]
+      },
+      {
+        "event_id": "EV-d80c8dee36bd767a",
+        "date": "2026-10-26",
+        "title": "AI芯片，突传重磅！马斯克，重大宣布！",
+        "amount": "400亿美元",
+        "source_refs": [
+          "SA-606504371f6726c0"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-61f7e6a7356d00fe",
+        "source_url": "https://finance.sina.com.cn/stock/marketresearch/2026-10-26/doc-iniwpfnc2432847.shtml",
+        "title": "AI芯片，突传重磅！马斯克，重大宣布！",
+        "publisher": "finance.sina.com.cn",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-10-28T00:17:59.908Z",
+        "content_hash": "f7caf6b63724fa31c5d8988a14e90dc617a695ab400c39ae8251c0b85668e7b1",
+        "source_artifact_id": "SA-606504371f6726c0",
+        "raw_id": "RAW-f84e2516166a72b6"
+      },
+      {
+        "source_id": "FISRC-dbf26bfab16dd404",
+        "source_url": "https://public.com/company/spacex-spac",
+        "title": "SpaceX Valuation, Share Price Estimates & Funding History | Public.com",
+        "publisher": "public.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-28T00:42:41.291Z",
+        "content_hash": "dfe6c0e76888e05e",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-06141ce843104fba",
+        "source_url": "https://keeptrack.space/deep-dive/spacex-valuation-history",
+        "title": "SpaceX Valuation History, Every Funding Round From 2002 to the $2 Trillion IPO",
+        "publisher": "keeptrack.space",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-28T00:42:41.490Z",
+        "content_hash": "f40f62ac499523da",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-8342c1aa410dec66",
+        "source_url": "https://www.comparably.com/brands/spacex",
+        "title": "SpaceX NPS & Customer Reviews",
+        "publisher": "comparably.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-28T00:42:46.584Z",
+        "content_hash": "9046c14d1ffa6bcb",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-99399b259ae08f33",
+        "source_url": "https://www.bailliegifford.com/en/uk/individual-investors/insights/ic-article/2026-q3-us-perspectives-spacex-10064581/",
+        "title": "SpaceX: why US Growth invested at the IPO",
+        "publisher": "bailliegifford.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-28T00:42:26.156Z",
+        "content_hash": "aef126899e90e690",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-daa0fbda6f008bcb",
+        "source_url": "https://www.ebsco.com/research-starters/sports-and-leisure/spacex/",
+        "title": "SpaceX | Sports and Leisure | Research Starters | EBSCOhost",
+        "publisher": "ebsco.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-28T00:42:30.532Z",
+        "content_hash": "75880c36b8dc0833",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-10-28T00:43:03.444Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-10-28T00:43:03.444Z",
+    "customer_research": {
+      "status": "verified_customers_found",
+      "verified_customer_count": 3,
+      "searched_source_count": 6
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 3,
+        "unresolved_names": [
+          "AI算力与数据中心业务",
+          "星链（Starlink）卫星互联网",
+          "猎鹰火箭发射服务"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 1,
+        "unresolved_names": [
+          "Elon Musk"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-d80c8dee36bd767a"
+    ],
+    "aggregation": {
+      "key": "EN-e78bdebae031095b|debt",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"SpaceX\" 2026 funding round investors",
+    "\"SpaceX\" official product customers",
+    "\"SpaceX\" \"why we invested\"",
+    "\"SpaceX\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"SpaceX\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://tracxn.com/d/companies/spacex/__UIpPfXSDe2O53VUbJNlNoPlcSwZr-1f_r0ie4BjsSaw/funding-and-investors",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"SpaceX\" 400亿美元 funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"SpaceX\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.spacex.com/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"SpaceX\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://hofcapital.substack.com/p/why-we-invested-in-spacex",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"SpaceX\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"SpaceX\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-27",
-    "currentDate": "2026-10-27",
-    "eventCount": 4292,
+    "latestDataDate": "2026-10-28",
+    "currentDate": "2026-10-28",
+    "eventCount": 4309,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,30 +61,77 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-10",
-    "latest_disclosed_at": "2026-06-10",
+    "latest_disclosed_at": "2026-10-26",
     "role_counts": {
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
-      "infrastructure"
+      "infrastructure",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic"
+      },
+      {
+        "entity_id": "EN-e78bdebae031095b",
+        "canonical_entity_id": "EN-e78bdebae031095b",
+        "name": "SpaceX"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-3c3c1f37f6556825",
+        "funding_insight_id": "FI-b3c61667cf05c2dd",
+        "event_ids": [
+          "EV-c5984dabb5a697b9"
+        ],
+        "company_entity_id": "EN-e78bdebae031095b",
+        "company_canonical_entity_id": "EN-e78bdebae031095b",
+        "company_name": "SpaceX",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "$40 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "400 亿美元"
+        },
+        "announced_at": "2026-10-26",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d6e31d9e0fa6ab5c",
+            "source_url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+            "source_title": "SpaceX与Apollo敲定400亿美元GPU融资协议",
+            "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
+            "quote": "an entity managed by Apollo Global Management, the New York-based private equity giant, will buy the chips and related server hardware, then lease the equipment to SpaceX",
+            "quote_hash": "90e96ac99f49a8fd9ca53fa1304ed01fb9e00dc1dc1db75fe6f4088d92ab9f4e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-191bfa7dc46d7aa5",
         "funding_insight_id": "FI-5f1fc44327efde20",
@@ -136,6 +183,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-d6e31d9e0fa6ab5c",
+        "source_url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+        "source_title": "SpaceX与Apollo敲定400亿美元GPU融资协议",
+        "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
+        "quote": "an entity managed by Apollo Global Management, the New York-based private equity giant, will buy the chips and related server hardware, then lease the equipment to SpaceX",
+        "quote_hash": "90e96ac99f49a8fd9ca53fa1304ed01fb9e00dc1dc1db75fe6f4088d92ab9f4e"
+      },
+      {
         "source_id": "FISRC-12d28955f3aa1a00",
         "source_url": "https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai",
         "source_title": "Apollo Leads $35 Billion Capital Solution for Broadcom AI XPV Platform in Partnership with Blackstone and Leading Global Banks :: Apollo Global Management, Inc. (APO)",
@@ -185,6 +240,10 @@
           "source_id": "B24-APOLLO-XPV"
         },
         {
+          "description": "融资来源记录：SpaceX · 轮次未披露 · 2026-10-26 · 本轮参投 · $40 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d6e31d9e0fa6ab5c"
+        },
+        {
           "description": "融资来源记录：Anthropic · 基础设施融资 · 2026-06-10 · 本轮领投 · 350亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-12d28955f3aa1a00"
         }
@@ -230,6 +289,14 @@
           "source_content_hash": "c6cabe1fdd048dc5cb003c6baec6aba61dc124f84e639557a78c2d7f803b2673",
           "quote": "It will facilitate Anthropic's previously announced capacity expansion of more than 1GW of compute infrastructure for training and inference starting in mid-2026.",
           "quote_hash": "e4c0e73e3b60421cc8c3eeee6a46c8d628dcd8ead351e5a5266b314f708fb5e2"
+        },
+        {
+          "source_id": "FISRC-d6e31d9e0fa6ab5c",
+          "source_url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+          "source_title": "SpaceX与Apollo敲定400亿美元GPU融资协议",
+          "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
+          "quote": "an entity managed by Apollo Global Management, the New York-based private equity giant, will buy the chips and related server hardware, then lease the equipment to SpaceX",
+          "quote_hash": "90e96ac99f49a8fd9ca53fa1304ed01fb9e00dc1dc1db75fe6f4088d92ab9f4e"
         },
         {
           "source_id": "FISRC-12d28955f3aa1a00",

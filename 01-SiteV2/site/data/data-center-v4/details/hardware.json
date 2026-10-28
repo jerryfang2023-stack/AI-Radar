@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-27",
-    "currentDate": "2026-10-27",
-    "eventCount": 4292,
+    "latestDataDate": "2026-10-28",
+    "currentDate": "2026-10-28",
+    "eventCount": 4309,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -22034,8 +22034,141 @@
   ],
   "events": [
     {
+      "id": "EV-8615e87fa54663e5",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-28",
+      "updatedDate": "2026-10-28",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英伟达投资印度初创公司 Simplismart，助力企业用更少 GPU 运行 AI 模型",
+      "originalTitle": "",
+      "subject": "Simplismart",
+      "action": "funding",
+      "object": "1400万美元B轮融资",
+      "metrics": [
+        "1,400 万",
+        "9,357.3 万"
+      ],
+      "locations": [
+        "印度"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-d6e9c47f8a1c273b"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Simplismart"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/018/726.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
+      "id": "EV-15004f646df67bad",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-27",
+      "updatedDate": "2026-10-27",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "CopperPilot 完成 39 万美元 pre-seed 融资，并向硬件工程师开放 Epsilon AI 设计智能体",
+      "originalTitle": "",
+      "subject": "CopperPilot",
+      "action": "完成 39 万美元 pre-seed 融资",
+      "object": "，并向硬件工程师开放 Epsilon AI 设计智能体",
+      "metrics": [
+        "39 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5b45e76107a945ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5b45e76107a945ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5b45e76107a945ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5b45e76107a945ba"
+      ],
+      "entityNames": [
+        "CopperPilot"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.indexbox.io/zh-hans/blog/copperpilot-raises-390k-pre-seed-and-opens-epsilon-ai-design-agent-to-hardware-engineers/",
+      "publisher": "www.indexbox.io"
+    },
+    {
       "id": "EV-53dad7c8f530b480",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-27",
       "updatedDate": "2026-10-27",
       "eventType": "funding",
@@ -22143,6 +22276,386 @@
       "products": [],
       "sourceUrl": "https://www.ithome.com/1/018/199.htm",
       "publisher": "www.ithome.com"
+    },
+    {
+      "id": "EV-6326aa903d147461",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-27",
+      "updatedDate": "2026-10-27",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Live2.ai 融资 Rs 130 Cr，以扩展其 AI 驱动的社交电商平台",
+      "originalTitle": "Live2.ai raises Rs 130 Cr to expand its AI-led social commerce platform",
+      "subject": "Live2.ai",
+      "action": "funding",
+      "object": "Rs 130 crore ($14 million) pre-Series B funding round led by IvyCap Ventures",
+      "metrics": [
+        "Rs 130 crore",
+        "$14 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7c727e02e914396b",
+        "EN-0b17536a44a64de5"
+      ],
+      "entityNames": [
+        "Bengaluru-based Live2.ai",
+        "Live2.ai"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://yourstory.com/2026/10/live2ai-raises-rs-130-cr-to-expand-its-ai-led-social-commerce-platform",
+      "publisher": "yourstory.com"
+    },
+    {
+      "id": "EV-728487314941b56d",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-27",
+      "updatedDate": "2026-10-27",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Omnichat获Openspace Capital领投1000万美元A轮融资 扩展Agentic AI平台并加速全球布局",
+      "originalTitle": "",
+      "subject": "Omnichat获Openspace Capital领投1000万美元A轮",
+      "action": "融资",
+      "object": "扩展Agentic AI平台并加速全球布局",
+      "metrics": [
+        "1000万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-858837c33d111717"
+      ],
+      "entityNames": [
+        "Omnichat"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://finance.sina.com.cn/roll/2026-10-27/doc-iniwrqsz1508872.shtml",
+      "publisher": "finance.sina.com.cn"
+    },
+    {
+      "id": "EV-8de1001fde6993a5",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-27",
+      "updatedDate": "2026-10-27",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Omnichat 完成由 Openspace Capital 领投的 1000 万美元 A 轮融资，以扩展 AI 智能体平台并推动全球扩张",
+      "originalTitle": "Omnichat Raises US$10M Series A Led by Openspace Capital to Scale AI Agent Platform and Drive Global Expansion",
+      "subject": "Omnichat",
+      "action": "Raises",
+      "object": "US$10M Series A Led by Openspace Capital to Scale AI Agent Platform and Drive Global Expansion",
+      "metrics": [
+        "$10M",
+        "$10 million"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-858837c33d111717"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-858837c33d111717"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-858837c33d111717"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-858837c33d111717"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-858837c33d111717"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-858837c33d111717"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-858837c33d111717"
+      ],
+      "entityNames": [
+        "Omnichat"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://martechseries.com/predictive-ai/ai-platforms-machine-learning/omnichat-raises-us10m-series-a-led-by-openspace-capital-to-scale-ai-agent-platform-and-drive-global-expansion/",
+      "publisher": "martechseries.com"
+    },
+    {
+      "id": "EV-94baaaabc016521f",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-27",
+      "updatedDate": "2026-10-27",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "维发电子完成亿元级C轮融资",
+      "originalTitle": "首发| 维发电子完成亿元级C轮融资",
+      "subject": "首发| 维发电子",
+      "action": "完成亿元级C轮融资",
+      "object": "首发| 维发电子完成亿元级C轮融资",
+      "metrics": [],
+      "locations": [
+        "欧洲"
+      ],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-a237a7b0a9ddfe68"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-a237a7b0a9ddfe68"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-a237a7b0a9ddfe68"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-a237a7b0a9ddfe68"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-a237a7b0a9ddfe68"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-a237a7b0a9ddfe68"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a237a7b0a9ddfe68"
+      ],
+      "entityNames": [
+        "首发| 维发电子"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202610/570934.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-d0340d320ebf78c6",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-27",
+      "updatedDate": "2026-10-27",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英伟达投资印度初创公司，助企业以更少GPU运行AI模型",
+      "originalTitle": "Nvidia backs Indian startup helping companies run AI models with fewer GPUs",
+      "subject": "Simplismart",
+      "action": "funding",
+      "object": "$14 million Series B funding round",
+      "metrics": [
+        "$14 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-d6e9c47f8a1c273b"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Simplismart"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/",
+      "publisher": "techcrunch.com"
     },
     {
       "id": "EV-370b7f7ebf16be3d",
@@ -22308,6 +22821,154 @@
       "publisher": "m.pedaily.cn"
     },
     {
+      "id": "EV-c5984dabb5a697b9",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-26",
+      "updatedDate": "2026-10-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "SpaceX与Apollo敲定400亿美元GPU融资协议",
+      "originalTitle": "SpaceX locks in $40B GPU financing deal with Apollo",
+      "subject": "SpaceX",
+      "action": "funding",
+      "object": "roughly $40 billion in financing for AI chips and related data center equipment",
+      "metrics": [
+        "$40 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e78bdebae031095b"
+      ],
+      "entityNames": [
+        "SpaceX"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-d80c8dee36bd767a",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-26",
+      "updatedDate": "2026-10-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI芯片，突传重磅！马斯克，重大宣布！",
+      "originalTitle": "",
+      "subject": "SpaceX",
+      "action": "funding",
+      "object": "400亿美元债务融资",
+      "metrics": [
+        "400亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-5d99b19d5b84f530",
+        "EN-e78bdebae031095b",
+        "EN-4b4370843133841f",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "旗下SpaceX",
+        "SpaceX",
+        "AI芯片",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://finance.sina.com.cn/stock/marketresearch/2026-10-26/doc-iniwpfnc2432847.shtml",
+      "publisher": "finance.sina.com.cn"
+    },
+    {
+      "id": "EV-ec39a7dfa4c5a984",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-26",
+      "updatedDate": "2026-10-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "意大利的Z_One基金在首次关账时募集到超过3500万欧元，用于支持AI和UrbanTech初创企业",
+      "originalTitle": "Italy’s Z_One Fund secures over €35 million at first close to back AI and UrbanTech startups",
+      "subject": "Italy’s Z_One Fund",
+      "action": "secures",
+      "object": "over €35 million at first close to back AI and UrbanTech startups",
+      "metrics": [
+        "€35 million",
+        "€60 million",
+        "€190 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bae26711a31f66aa",
+        "EN-352c00e4c6860a34"
+      ],
+      "entityNames": [
+        "Italy’s Z_One Fund",
+        "Venture"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/italys-z_one-fund-secures-over-e35-million-at-first-close-to-back-ai-and-urbantech-startups/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
       "id": "EV-f7ec1c0a0c766a77",
       "dataDate": "2026-10-27",
       "date": "2026-10-26",
@@ -22422,18 +23083,185 @@
       "publisher": "news.pedaily.cn"
     },
     {
+      "id": "EV-1d91ef6afd9a6290",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-25",
+      "updatedDate": "2026-10-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "中国PCB制造商东山在香港上市募资13亿美元",
+      "originalTitle": "Chinese PCB Maker Dongshan Raises $1.3 Billion in HK Listing",
+      "subject": "Chinese PCB Maker Dongshan",
+      "action": "Raises",
+      "object": "$1.3 Billion in HK Listing",
+      "metrics": [
+        "$9.9 billion",
+        "$1.3 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-e6547107446655e8"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-e6547107446655e8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-e6547107446655e8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-e6547107446655e8",
+        "EN-d589863df7c4fdcf"
+      ],
+      "entityNames": [
+        "Chinese PCB Maker Dongshan",
+        "Dongshan"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-10-25/chinese-manufacturer-dongshan-raises-1-3-billion-in-hk-listing",
+      "publisher": "www.bloomberg.com"
+    },
+    {
+      "id": "EV-ba8bad3e69c39164",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-24",
+      "updatedDate": "2026-10-24",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "无固定资产的AI个人创业者，融资难题如何破局？_腾讯新闻",
+      "originalTitle": "",
+      "subject": "上海银行静安支行",
+      "action": "融资",
+      "object": "难题如何破局？",
+      "metrics": [
+        "300万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-0cc254429a4d5b6d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-0cc254429a4d5b6d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-0cc254429a4d5b6d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-6974e723d4ef6e59",
+        "EN-0cc254429a4d5b6d"
+      ],
+      "entityNames": [
+        "无固定资产的AI个人创业者",
+        "上海银行静安支行已向上海一起闹海人工智能科技有限公司"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.qq.com/rain/a/20261024A0941000",
+      "publisher": "news.qq.com"
+    },
+    {
       "id": "EV-0b46ca8532759091",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-23",
       "updatedDate": "2026-10-23",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "pending_verification",
-      "statusLabel": "待核验",
-      "publicationStatus": "pending_verification",
-      "reportedStatus": "completed",
-      "researchDeferral": "research_sources_insufficient",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
       "title": "智宠制药完成数千万元A1轮融资，重塑宠物药研发",
       "originalTitle": "",
       "subject": "智宠制药",
@@ -22510,7 +23338,7 @@
     },
     {
       "id": "EV-0d7fe2f7274f7448",
-      "dataDate": "2026-10-25",
+      "dataDate": "2026-10-28",
       "date": "2026-10-23",
       "updatedDate": "2026-10-23",
       "eventType": "funding",
@@ -22605,7 +23433,7 @@
     },
     {
       "id": "EV-7684bfb9b954c1fd",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-23",
       "updatedDate": "2026-10-23",
       "eventType": "funding",
@@ -22667,17 +23495,15 @@
     },
     {
       "id": "EV-9eca876903571bd3",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-23",
       "updatedDate": "2026-10-23",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "pending_verification",
-      "statusLabel": "待核验",
-      "publicationStatus": "pending_verification",
-      "reportedStatus": "completed",
-      "researchDeferral": "research_sources_insufficient",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
       "title": "灵钜创新完成数千万元新一轮融资，南山战新投、龙华资本联合投资",
       "originalTitle": "",
       "subject": "灵钜创新",
@@ -22841,18 +23667,98 @@
       "publisher": "feng.ifeng.com"
     },
     {
-      "id": "EV-e1d0e727ae30cdf0",
-      "dataDate": "2026-10-27",
+      "id": "EV-ae0029c4b77f61e4",
+      "dataDate": "2026-10-28",
       "date": "2026-10-23",
       "updatedDate": "2026-10-23",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "pending_verification",
-      "statusLabel": "待核验",
-      "publicationStatus": "pending_verification",
-      "reportedStatus": "completed",
-      "researchDeferral": "research_sources_insufficient",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "柏林CyGrid结束隐身模式，获266万欧元融资，阻止AI智能体访问公司机密数据",
+      "originalTitle": "Berlin’s Cygrid exits stealth with €2.66 million to stop AI agents from accessing confidential company data",
+      "subject": "Cygrid",
+      "action": "funding",
+      "object": "€2.66 million pre-Seed funding round",
+      "metrics": [
+        "€2.66 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-24c92459e4c28bb4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-24c92459e4c28bb4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-24c92459e4c28bb4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-24c92459e4c28bb4"
+      ],
+      "entityNames": [
+        "Cygrid"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/berlins-cygrid-exits-stealth-with-e2-66-million-to-stop-ai-agents-from-accessing-confidential-company-data/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
+      "id": "EV-e1d0e727ae30cdf0",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-23",
+      "updatedDate": "2026-10-23",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
       "title": "OpenAI前科学负责人创办Warp Sciences，融资2.15亿美元_腾讯新闻",
       "originalTitle": "",
       "subject": "OpenAI前科学负责人创办Warp Sciences，",
@@ -22893,7 +23799,7 @@
     },
     {
       "id": "EV-e3f98a713df7ad64",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-23",
       "updatedDate": "2026-10-23",
       "eventType": "funding",
@@ -22919,7 +23825,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-a5c4dde3be2a2b42"
+          "CL-4017d634ed103e3e"
         ]
       },
       "missingFields": [],
@@ -23182,8 +24088,90 @@
       "publisher": "pulse2.com"
     },
     {
+      "id": "EV-3e48c37f101dbbcd",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "阿姆斯特丹的Indurex融资700万欧元，以加强网络物理系统的网络安全与安全防护",
+      "originalTitle": "Amsterdam’s Indurex raises €7 million to strengthen cybersecurity and safety across cyber-physical systems",
+      "subject": "Indurex",
+      "action": "raises",
+      "object": "€7 million to strengthen cybersecurity and safety across cyber-physical systems",
+      "metrics": [
+        "€7 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-a17cea9d621d77da"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-a17cea9d621d77da"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-a17cea9d621d77da"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a17cea9d621d77da"
+      ],
+      "entityNames": [
+        "Indurex"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/amsterdams-indurex-raises-e7-million-to-strengthen-cybersecurity-and-safety-across-cyber-physical-systems/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
       "id": "EV-412b80c35c4c235a",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -23207,9 +24195,9 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-135e15f2b3a0b47c",
-          "CL-749beebbbd5ebc81",
-          "CL-837f88bb5405e1c6"
+          "CL-7594c839566dd64a",
+          "CL-cdd1170b1b53c266",
+          "CL-93bb47367be45fea"
         ]
       },
       "missingFields": [],
@@ -23361,7 +24349,7 @@
     },
     {
       "id": "EV-4c2e1fc3b5434884",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -23409,7 +24397,7 @@
     },
     {
       "id": "EV-69b488065c05e255",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -23453,6 +24441,91 @@
       "products": [],
       "sourceUrl": "https://latent.space/p/modal-d/",
       "publisher": "www.latent.space"
+    },
+    {
+      "id": "EV-6c199dc14b6e6a12",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-22",
+      "updatedDate": "2026-10-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "支付基础设施X Pay完成100万美元融资，Skyland Ventures等参投",
+      "originalTitle": "",
+      "subject": "支付基础设施X Pay",
+      "action": "完成100万美元融资",
+      "object": "，Skyland Ventures等参投",
+      "metrics": [
+        "100万",
+        "100 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-96ad68901f251136"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-96ad68901f251136"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-96ad68901f251136"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-96ad68901f251136",
+        "EN-1706429cbf67f1c9"
+      ],
+      "entityNames": [
+        "支付基础设施X Pay",
+        "European Union"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://es.tradingview.com/news/panews:591e298aaacdf:0/",
+      "publisher": "es.tradingview.com"
     },
     {
       "id": "EV-729849b6f8ef647a",
@@ -23505,7 +24578,7 @@
     },
     {
       "id": "EV-741856a05543c233",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -23589,7 +24662,7 @@
     },
     {
       "id": "EV-97a4ce9324128e6e",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -23633,7 +24706,7 @@
     },
     {
       "id": "EV-b25b5c902c92a0b2",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -23659,7 +24732,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-938ab7344ad0bfa7"
+          "CL-fe4473654effc612"
         ]
       },
       "missingFields": [],
@@ -23774,7 +24847,7 @@
     },
     {
       "id": "EV-c1832bf5603ccc52",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -23985,7 +25058,7 @@
     },
     {
       "id": "EV-c964f7646ad88c1e",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -24012,7 +25085,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-187f9d13b9e15717"
+          "CL-6522a648e7c8e375"
         ]
       },
       "missingFields": [],
@@ -24047,7 +25120,7 @@
     },
     {
       "id": "EV-dff26ca39da76a22",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -24185,7 +25258,7 @@
     },
     {
       "id": "EV-fe4e2cdf3f2a5075",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "funding",
@@ -24466,7 +25539,7 @@
     },
     {
       "id": "EV-353261ac722ca40b",
-      "dataDate": "2026-10-24",
+      "dataDate": "2026-10-28",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -24996,7 +26069,7 @@
     },
     {
       "id": "EV-95b8b70ca29ab623",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -25099,7 +26172,7 @@
     },
     {
       "id": "EV-9dbf7a6b84a4aa21",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -25182,7 +26255,7 @@
     },
     {
       "id": "EV-9fc0a31d4c3565a9",
-      "dataDate": "2026-10-25",
+      "dataDate": "2026-10-28",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -25383,7 +26456,7 @@
     },
     {
       "id": "EV-cd3cf94d0f65aea1",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "funding",
@@ -309575,6 +310648,162 @@
       "publisher": "fedscoop.com"
     },
     {
+      "id": "EV-fcf3c96afc642c8b",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-27",
+      "updatedDate": "2026-10-27",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "英伟达拟出资30亿美元认购Meta新股 双方深化AI智能体合作",
+      "originalTitle": "",
+      "subject": "英伟达拟出资30亿美元认购Meta新股 双方深化AI智能体",
+      "action": "合作",
+      "object": "英伟达拟出资30亿美元认购Meta新股 双方深化AI智能体合作",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-de52d6260e0177e8",
+          "CL-8f78b685740367e3",
+          "CL-c8964b13cb686cd5",
+          "CL-e5e1b4beeb1c9cb1"
+        ]
+      },
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "security_software",
+            "name": "安全软件",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://k.sina.com.cn/article_5952915720_162d24908067052j24.html?from=tech",
+      "publisher": "k.sina.com.cn"
+    },
+    {
       "id": "EV-1b3b7ad66d2a9a05",
       "dataDate": "2026-10-01",
       "date": "2026-10-01",
@@ -325308,6 +326537,63 @@
       "products": [],
       "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=1330-1001130978en-33HTR88M4N3TCG5HLKBIGEHTEH",
       "publisher": "markets.ft.com"
+    },
+    {
+      "id": "EV-d56a4707a2456970",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-26",
+      "updatedDate": "2026-10-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "新浪AI热点小时报丨2026年10月26日18时_今日实时AI热点速递",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "新浪AI热点小时报丨2026年10月26日18时_今日实时AI热点速递",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-dc1d6553af0a3dde"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7f871cbf905f6e0c",
+        "EN-6f7ac1823da81d2e"
+      ],
+      "entityNames": [
+        "OpenRouter",
+        "DeepSeek"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://k.sina.com.cn/article_7857201856_1d45362c001908simk.html?from=tech",
+      "publisher": "k.sina.com.cn"
     },
     {
       "id": "EV-277bfee6ac132557",
@@ -470892,7 +472178,7 @@
     },
     {
       "id": "EV-7ddfa7b82af141ec",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "ipo_listing",
@@ -470951,7 +472237,7 @@
     },
     {
       "id": "EV-c4964bb580827988",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "ipo_listing",
@@ -471000,7 +472286,7 @@
     },
     {
       "id": "EV-2ad2ae14a594df04",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-23",
       "updatedDate": "2026-10-23",
       "eventType": "ipo_listing",
@@ -471050,7 +472336,7 @@
     },
     {
       "id": "EV-2aead80f6796b70b",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "ipo_listing",
@@ -471280,7 +472566,7 @@
     },
     {
       "id": "EV-e1e13c263714163a",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-22",
       "updatedDate": "2026-10-22",
       "eventType": "financial_performance",
@@ -471373,7 +472659,7 @@
     },
     {
       "id": "EV-da50c998bf59ffe2",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-28",
       "date": "2026-10-21",
       "updatedDate": "2026-10-21",
       "eventType": "capital_investment",

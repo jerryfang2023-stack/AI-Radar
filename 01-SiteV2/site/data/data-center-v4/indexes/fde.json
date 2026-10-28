@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-27",
-    "currentDate": "2026-10-27",
-    "eventCount": 4292,
+    "latestDataDate": "2026-10-28",
+    "currentDate": "2026-10-28",
+    "eventCount": 4309,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -53,6 +53,64 @@
     ]
   },
   "fde": [
+    {
+      "id": "FDE-1d7e3b4f28d1f967",
+      "eventId": "EV-fcf3c96afc642c8b",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-27",
+      "title": "英伟达拟出资30亿美元认购Meta新股 双方深化AI智能体合作",
+      "stage": "planned",
+      "stageLabel": "计划中",
+      "customer": "未披露",
+      "vendor": "NVIDIA",
+      "industry": "未披露",
+      "useCase": "英伟达拟出资30亿美元认购Meta新股 双方深化AI智能体合作",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "两家公司还考虑进一步合作应用英伟达OpenShell框架，支持AI智能体安全部署，并利用Sentry工具监测智能体行为。"
+      ],
+      "outcomes": [
+        "双方将进一步优化模型训练与推理性能，降低运行成本，并探索更多合作领域。"
+      ],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://k.sina.com.cn/article_5952915720_162d24908067052j24.html?from=tech",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00"
+      ]
+    },
     {
       "id": "FDE-0577244415a9270b",
       "eventId": "EV-faa25b0b9ffbaa30",
@@ -11456,10 +11514,10 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-10-27",
-      "funnel_id": "LF-5b6a603193d622ea",
+      "data_date": "2026-10-28",
+      "funnel_id": "LF-6632924e62d7dcb0",
       "lens": "fde",
-      "date": "2026-10-27",
+      "date": "2026-10-28",
       "monitoring_paths": [],
       "raw_documents": 2,
       "original_sources": 2,
@@ -11475,7 +11533,7 @@
         "observation_rate": 0,
         "event_conversion_rate": 1
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-27/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-28/monitoring-funnel.json"
     }
   ]
 }

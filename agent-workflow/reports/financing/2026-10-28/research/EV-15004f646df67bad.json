@@ -1,0 +1,556 @@
+{
+  "event_id": "EV-15004f646df67bad",
+  "company_name": "CopperPilot",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-1214c1cf47d3d3b3",
+    "triggered_by_event_id": "EV-15004f646df67bad",
+    "as_of_date": "2026-10-28",
+    "company": {
+      "entity_id": "EN-5b45e76107a945ba",
+      "name": "CopperPilot",
+      "full_name": "CopperPilot",
+      "website": "https://copperpilot.ai",
+      "summary": "CopperPilot 是一家硬件设计初创公司，正在构建 AI 智能体 Epsilon，用于接管 PCB 设计流程的部分环节，包括解读需求、选择元器件、绘制原理图、布线电路板以及在制造前检查设计。",
+      "headquarters": "印度班加罗尔和美国得克萨斯州休斯敦双总部",
+      "founders": [
+        {
+          "name": "Aditya NG",
+          "role": "联合创始人兼 CEO",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21e4aa6d58d89c7b",
+              "quote": "Founded in October 2025 by Aditya NG, Mohit Bagur, and Anish Harsha",
+              "source_content_hash": "658d0d809004fe66",
+              "quote_hash": "bdee0c5c7c44e9e0c9940686f88f9bfb7bb6be5dc5b11ac1a7b796fc2fd7a46f"
+            },
+            {
+              "source_id": "FISRC-21e4aa6d58d89c7b",
+              "quote": "co-founder and CEO Aditya NG",
+              "source_content_hash": "658d0d809004fe66",
+              "quote_hash": "48fc4812f7cd4c6acde17d64847c9abd325c516ecfa46bc5b7cb3f633c1807f8"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Mohit Bagur",
+          "role": "联合创始人（业务）",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21e4aa6d58d89c7b",
+              "quote": "CopperPilot’s co-founders (from left): Mohit Bagur (business), Anish Harsha (COO), and Aditya NG (CEO)",
+              "source_content_hash": "658d0d809004fe66",
+              "quote_hash": "2ca67bb4d1cc82b8a0e67520a4ad593a21e980d7fb4df8c2dc26ae72566bbb53"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Anish Harsha",
+          "role": "联合创始人兼 COO",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21e4aa6d58d89c7b",
+              "quote": "CopperPilot’s co-founders (from left): Mohit Bagur (business), Anish Harsha (COO), and Aditya NG (CEO)",
+              "source_content_hash": "658d0d809004fe66",
+              "quote_hash": "2ca67bb4d1cc82b8a0e67520a4ad593a21e980d7fb4df8c2dc26ae72566bbb53"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "team_size": {
+        "value": "",
+        "observed_at": "",
+        "evidence_refs": []
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0b078eb71cb87b58",
+          "quote": "CopperPilot这家硬件设计初创公司已获得 39 万美元 pre-seed 融资。",
+          "source_content_hash": "b343fa354b9491e93302b599becc956eb2b09286fb7a4040226b63b12bd3d8d3",
+          "quote_hash": "30f6d935d3164d189d03ca2687de6b784e2ddf157fbdf52436a605d7a6259f57"
+        },
+        {
+          "source_id": "FISRC-21e4aa6d58d89c7b",
+          "quote": "The company has dual headquarters in Bengaluru, India, and Houston, Texas.",
+          "source_content_hash": "658d0d809004fe66",
+          "quote_hash": "75f05ae1e0fc0b5389a9b8b53d4be5c342c946df17f59d792143fe34621b6674"
+        }
+      ],
+      "application_entity_id": "EN-5b45e76107a945ba",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "预种子轮",
+      "amount": "39 万美元",
+      "total_raised": "",
+      "announced_at": "2026-10-27",
+      "investor_disclosure_status": "disclosed",
+      "investors": [
+        {
+          "name": "Neon Fund",
+          "role": "本轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0b078eb71cb87b58",
+              "quote": "Neon Fund 领投本轮，美国天使投资人也参与其中。",
+              "source_content_hash": "b343fa354b9491e93302b599becc956eb2b09286fb7a4040226b63b12bd3d8d3",
+              "quote_hash": "0b5695fc642fffd3b4782e989ff18de3af001752ff2994207fb6a5ee7b00dae8"
+            },
+            {
+              "source_id": "FISRC-21e4aa6d58d89c7b",
+              "quote": "has raised $390,000 in a pre-seed funding round led by Neon Fund, with participation from U.S.-based angel investors",
+              "source_content_hash": "658d0d809004fe66",
+              "quote_hash": "df524694fcf58a1b076660fdcc43993bc579205a387401550aca5de91ba43d42"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "other_round_investors": [],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0b078eb71cb87b58",
+          "quote": "CopperPilot 完成 39 万美元 pre-seed 融资，并向硬件工程师开放 Epsilon AI 设计智能体",
+          "source_content_hash": "b343fa354b9491e93302b599becc956eb2b09286fb7a4040226b63b12bd3d8d3",
+          "quote_hash": "08f5dfb7f55fbcbdbc14e6f4f5a2a73b7d1f9e68af4f1e6fee834830b7fbdf63"
+        },
+        {
+          "source_id": "FISRC-0b078eb71cb87b58",
+          "quote": "2026年10月27日 CopperPilot 完成 39 万美元 pre-seed 融资",
+          "source_content_hash": "b343fa354b9491e93302b599becc956eb2b09286fb7a4040226b63b12bd3d8d3",
+          "quote_hash": "123fff7530f78fd4f2efcbabf5449853b22beacd0b9254be22a0b57f0489acf5"
+        }
+      ],
+      "round_code": "pre_seed",
+      "round_original": "预种子轮",
+      "amount_original": "39 万美元",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 390000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "39 万美元"
+      },
+      "total_raised_original": "",
+      "total_raised_normalized": {
+        "currency": "",
+        "value": null,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "undisclosed",
+        "display_zh": ""
+      },
+      "risk_markers": [],
+      "disclosures": [
+        {
+          "event_id": "EV-15004f646df67bad",
+          "round_original": "预种子轮",
+          "amount": "39 万美元",
+          "announced_at": "2026-10-27",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0b078eb71cb87b58",
+              "quote": "CopperPilot 完成 39 万美元 pre-seed 融资，并向硬件工程师开放 Epsilon AI 设计智能体",
+              "source_content_hash": "b343fa354b9491e93302b599becc956eb2b09286fb7a4040226b63b12bd3d8d3",
+              "quote_hash": "08f5dfb7f55fbcbdbc14e6f4f5a2a73b7d1f9e68af4f1e6fee834830b7fbdf63"
+            },
+            {
+              "source_id": "FISRC-0b078eb71cb87b58",
+              "quote": "2026年10月27日 CopperPilot 完成 39 万美元 pre-seed 融资",
+              "source_content_hash": "b343fa354b9491e93302b599becc956eb2b09286fb7a4040226b63b12bd3d8d3",
+              "quote_hash": "123fff7530f78fd4f2efcbabf5449853b22beacd0b9254be22a0b57f0489acf5"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "disclosed"
+    },
+    "products": [
+      {
+        "name": "Epsilon",
+        "description": "AI 设计智能体，可解析通俗英语表述的设计需求，读取元器件数据手册和制造商规格，选择元器件并提供备选方案，生成原理图和自定义符号或封装，进行 PCB 布局和布线，并依据电气规则检查、设计规则检查及制造约束验证设计。",
+        "target_customers": "个人工程师、初创公司、设计服务提供商和大型企业",
+        "features": [
+          "在工程师已有的 EDA 工具内自动化工作流，支持 KiCad、Altium 和 LTspice",
+          "可通过 Claude Code、Cursor 和 Codex 等 AI 编程智能体访问",
+          "生成审查报告，区分阻塞性问题和非阻塞性问题并按优先级排列修复项",
+          "可连接 GitHub 和工单系统，支持可复用技能"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0b078eb71cb87b58",
+            "quote": "该公司正向硬件工程师发布其 AI 设计智能体的 1 版，该智能体代号为 Epsilon。",
+            "source_content_hash": "b343fa354b9491e93302b599becc956eb2b09286fb7a4040226b63b12bd3d8d3",
+            "quote_hash": "a612c835886fab7e26444b475e1658406bd8d25670f4af8cf0e561c7117b3ec7"
+          },
+          {
+            "source_id": "FISRC-21e4aa6d58d89c7b",
+            "quote": "The platform supports KiCad, Altium, and LTspice, with its strongest integration centered on PCB design and firmware workflows.",
+            "source_content_hash": "658d0d809004fe66",
+            "quote_hash": "77e715867e527201891430cbc6c0fc26c7d5102199a3e9ab0884f91d4c8c6de3"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [],
+    "comparisons": [],
+    "metrics": [
+      {
+        "label": "pre-seed 融资金额",
+        "value": "39 万美元",
+        "observed_at": "2026-10-27",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0b078eb71cb87b58",
+            "quote": "CopperPilot这家硬件设计初创公司已获得 39 万美元 pre-seed 融资。",
+            "source_content_hash": "b343fa354b9491e93302b599becc956eb2b09286fb7a4040226b63b12bd3d8d3",
+            "quote_hash": "30f6d935d3164d189d03ca2687de6b784e2ddf157fbdf52436a605d7a6259f57"
+          }
+        ]
+      },
+      {
+        "label": "周活跃用户增长（自 2026 年 8 月以来）",
+        "value": "25 倍",
+        "observed_at": "2026-10-27",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0b078eb71cb87b58",
+            "quote": "自 2026 年 8 月以来，其周活跃用户增长了 25 倍",
+            "source_content_hash": "b343fa354b9491e93302b599becc956eb2b09286fb7a4040226b63b12bd3d8d3",
+            "quote_hash": "c99476af8ec1eb908c0b552c37d0775fda49f84d26121fea6db732d72aca8c51"
+          }
+        ]
+      },
+      {
+        "label": "平台累计设计任务（artifacts）数",
+        "value": "超过 6,000 项",
+        "observed_at": "2026-10-27",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0b078eb71cb87b58",
+            "quote": "截至目前已有超过 6,000 项设计任务（称为 artifacts）在其平台上运行",
+            "source_content_hash": "b343fa354b9491e93302b599becc956eb2b09286fb7a4040226b63b12bd3d8d3",
+            "quote_hash": "cc11b1690324db330c7dbb551ba2a3b7352610cdab9e5d9a752cc77d88185dbb"
+          }
+        ]
+      },
+      {
+        "label": "公司自测任务完成率（CopperPilot）",
+        "value": "78%",
+        "observed_at": "2026-10-27",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-21e4aa6d58d89c7b",
+            "quote": "He said that the startup reported a task completion rate of 18% for its baseline system and 78% for CopperPilot.",
+            "source_content_hash": "658d0d809004fe66",
+            "quote_hash": "6e00b3beff326a6a0ce935ff6f1a62c10bdb0a50b2dd477abc0eb890747cabac"
+          }
+        ]
+      },
+      {
+        "label": "公司自测任务完成率（基线系统）",
+        "value": "18%",
+        "observed_at": "2026-10-27",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-21e4aa6d58d89c7b",
+            "quote": "He said that the startup reported a task completion rate of 18% for its baseline system and 78% for CopperPilot.",
+            "source_content_hash": "658d0d809004fe66",
+            "quote_hash": "6e00b3beff326a6a0ce935ff6f1a62c10bdb0a50b2dd477abc0eb890747cabac"
+          }
+        ]
+      },
+      {
+        "label": "已发布开源电路板设计数",
+        "value": "约 30 个",
+        "observed_at": "2026-10-27",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0b078eb71cb87b58",
+            "quote": "它每天发布一个新的开源电路板设计，迄今已发布约 30 个设计",
+            "source_content_hash": "b343fa354b9491e93302b599becc956eb2b09286fb7a4040226b63b12bd3d8d3",
+            "quote_hash": "cacb3e5f344c985441f6d55db2e1a686788e78114d051f6668b45709ac0bd795"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Aditya NG",
+        "quote": "I built CopperPilot so that no hardware team is ever blocked because a board is too hard to design.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-21e4aa6d58d89c7b",
+            "quote": "I built CopperPilot so that no hardware team is ever blocked because a board is too hard to design",
+            "source_content_hash": "658d0d809004fe66",
+            "quote_hash": "8e1d21b1e36ec65be0777c38e3f3df1aed91dab74e22499799ab3c5a35869220"
+          }
+        ]
+      },
+      {
+        "speaker": "Aditya NG",
+        "quote": "Today, CopperPilot designs an AI camera board in about 30 minutes.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-21e4aa6d58d89c7b",
+            "quote": "Today, CopperPilot designs an AI camera board in about 30 minutes.",
+            "source_content_hash": "658d0d809004fe66",
+            "quote_hash": "13735fcd5907a56dc2d5b89513ae01d00a5e43d796d88277d1b491b53b301cc6"
+          }
+        ]
+      },
+      {
+        "speaker": "Aditya NG",
+        "quote": "It can catch mistakes that ERC and DRC checks cannot detect.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-21e4aa6d58d89c7b",
+            "quote": "It can catch mistakes that ERC and DRC checks cannot detect.",
+            "source_content_hash": "658d0d809004fe66",
+            "quote_hash": "218f36f3eead0fa039b7896b3357341efbfd36dff11f001abdb4b865b93ac764"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "本轮 39 万美元 pre-seed 由 Neon Fund 领投，资本押注的核心变量是 Epsilon 能否把 PCB 设计从需求解读到制造前检查的流程做到工程师日常可依赖的可靠性。已验证信号包括：自 2026 年 8 月以来周活跃用户增长 25 倍、平台累计运行超过 6,000 项设计任务、公司每天发布一个开源电路板设计（迄今约 30 个）。但公司拒绝披露营收和用户转付费转化率，78% 对 18% 的任务完成率来自公司自行开展、约 49 个测试用例的小规模基准，且基线系统未说明、未经独立验证；因此当前证据只能支持早期用户活跃度，不能支持商业化质量或收入能力的判断。",
+      "validated_signals": [
+        "自 2026 年 8 月以来周活跃用户增长 25 倍",
+        "平台累计运行超过 6,000 项设计任务（artifacts）",
+        "每天发布一个新的开源电路板设计，迄今约 30 个设计",
+        "Epsilon 1 版已向硬件工程师开放"
+      ],
+      "risks": [
+        "公司拒绝披露营收数据和用户转化为付费客户的转化率，商业化质量未验证",
+        "78% 任务完成率来自公司自测的小规模基准（约 49 个测试用例），基线系统未说明且未经独立验证",
+        "智能体可靠性仍是公司自述的当务之急，企业本地部署选项尚未为客户部署",
+        "pre-seed 金额仅 39 万美元，团队扩充与产品研发的资金空间有限"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "ai_infrastructure_software",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "use_case_ids": [
+        "design_engineering"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "sector": "电子硬件 PCB 设计 AI 智能体（EDA 软件）",
+      "investment_thesis": {
+        "statement": "本轮 39 万美元 pre-seed 由 Neon Fund 领投，资本押注的核心变量是 Epsilon 能否把 PCB 设计从需求解读到制造前检查的流程做到工程师日常可依赖的可靠性。已验证信号包括：自 2026 年 8 月以来周活跃用户增长 25 倍、平台累计运行超过 6,000 项设计任务、公司每天发布一个开源电路板设计（迄今约 30 个）。但公司拒绝披露营收和用户转付费转化率，78% 对 18% 的任务完成率来自公司自行开展、约 49 个测试用例的小规模基准，且基线系统未说明、未经独立验证；因此当前证据只能支持早期用户活跃度，不能支持商业化质量或收入能力的判断。",
+        "evidence_signals": [
+          "自 2026 年 8 月以来周活跃用户增长 25 倍",
+          "平台累计运行超过 6,000 项设计任务（artifacts）",
+          "每天发布一个新的开源电路板设计，迄今约 30 个设计",
+          "Epsilon 1 版已向硬件工程师开放"
+        ],
+        "risks": [
+          "公司拒绝披露营收数据和用户转化为付费客户的转化率，商业化质量未验证",
+          "78% 任务完成率来自公司自测的小规模基准（约 49 个测试用例），基线系统未说明且未经独立验证",
+          "智能体可靠性仍是公司自述的当务之急，企业本地部署选项尚未为客户部署",
+          "pre-seed 金额仅 39 万美元，团队扩充与产品研发的资金空间有限"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Epsilon",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Aditya NG",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Mohit Bagur",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Anish Harsha",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Neon Fund",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-15004f646df67bad",
+        "date": "2026-10-27",
+        "title": "CopperPilot 完成 39 万美元 pre-seed 融资，并向硬件工程师开放 Epsilon AI 设计智能体",
+        "amount": "39 万美元",
+        "source_refs": [
+          "SA-41faaf843dfbd2c8"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-0b078eb71cb87b58",
+        "source_url": "https://www.indexbox.io/zh-hans/blog/copperpilot-raises-390k-pre-seed-and-opens-epsilon-ai-design-agent-to-hardware-engineers/",
+        "title": "CopperPilot 完成 39 万美元 pre-seed 融资，并向硬件工程师开放 Epsilon AI 设计智能体",
+        "publisher": "www.indexbox.io",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-10-28T00:18:51.049Z",
+        "content_hash": "b343fa354b9491e93302b599becc956eb2b09286fb7a4040226b63b12bd3d8d3",
+        "source_artifact_id": "SA-41faaf843dfbd2c8",
+        "raw_id": "RAW-5045cd7e9b88d13a"
+      },
+      {
+        "source_id": "FISRC-21e4aa6d58d89c7b",
+        "source_url": "https://www.eetimes.com/copperpilot-raises-pre-seed-to-develop-ai-agent-for-pcb-design/",
+        "title": "CopperPilot Raises Pre-seed to Develop AI Agent for PCB Design",
+        "publisher": "eetimes.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-28T00:43:26.935Z",
+        "content_hash": "658d0d809004fe66",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-10-28T00:43:45.908Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-10-28T00:43:45.908Z",
+    "customer_research": {
+      "status": "no_verified_customer_found",
+      "verified_customer_count": 0,
+      "searched_source_count": 2
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 1,
+        "unresolved_names": [
+          "Epsilon"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 3,
+        "unresolved_names": [
+          "Aditya NG",
+          "Anish Harsha",
+          "Mohit Bagur"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-15004f646df67bad"
+    ],
+    "aggregation": {
+      "key": "EN-5b45e76107a945ba|pre_seed",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"CopperPilot\" 2026 funding round investors",
+    "\"CopperPilot\" official product customers",
+    "\"CopperPilot\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"CopperPilot\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.finsmes.com/2026/10/copperpilot-raises-390k-in-pre-seed-funding.html",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"CopperPilot\" 39 万美元 funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"CopperPilot\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://copperpilot.ai/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"CopperPilot\" \"why we invested\"",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"CopperPilot\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"CopperPilot\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://in.linkedin.com/in/anish-harsha-734aa4348",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.instagram.com/reel/DVSlnM7D_td/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    }
+  ]
+}

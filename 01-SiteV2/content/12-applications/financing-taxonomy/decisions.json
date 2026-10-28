@@ -34843,7 +34843,529 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-27T02:15:56.700Z"
+    },
+    "EV-0b46ca8532759091": {
+      "id": "EV-0b46ca8532759091",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "model-api",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "该公司将生成式AI嵌入宠物创新药研发全流程并自研药物发现引擎，主营属于生命科学行业AI。",
+      "input_hash": "ced97559149a068c895f3894901f3792ec1d3cd6dda2a0b012a8bb2824f4ed12",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f4d0e836fffd2992",
+          "quote": "智宠制药（苏州）有限公司（以下简称\"智宠制药\"）成立于2023年，是国内率先将生成式AI嵌入宠物创新药全流程的领跑者。"
+        },
+        {
+          "source_id": "FISRC-f4d0e836fffd2992",
+          "quote": "公司自研ChemoFetch小分子与OmniFetch大分子双引擎"
+        },
+        {
+          "source_id": "FISRC-f4d0e836fffd2992",
+          "quote": "公司自研ChemoFetch小分子与OmniFetch大分子双引擎，已在抗感染、慢病、抗衰三大领域布局6条以上FIC/BIC潜力管线"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-28T05:52:09.669Z"
+    },
+    "EV-8de1001fde6993a5": {
+      "id": "EV-8de1001fde6993a5",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "customer-service",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Omnichat以AI智能体完成营销、销售与客服对话工作，主营为企业客服与客户体验软件。",
+      "input_hash": "2000fe13ae7784f78268b925fbf5d6acf9a421f5a7b7c4e08974dcc618d85d03",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-8cbc0bdd31af8f3a",
+          "quote": "Omnichat, an AI-native marketing and customer experience platform"
+        },
+        {
+          "source_id": "FISRC-8cbc0bdd31af8f3a",
+          "quote": "The round will scale Omni AI Agents, the suite of AI agents Omnichat launched in 2026, to do the core work of marketing, sales and service teams inside the chat"
+        },
+        {
+          "source_id": "FISRC-b7c50c031411185d",
+          "quote": "Omnichat has newly launched Omni AI Agent Studio, which integrates the company’s native AI with diverse LLMs to help businesses create personalised AI agents."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-28T05:52:09.669Z"
+    },
+    "EV-15004f646df67bad": {
+      "id": "EV-15004f646df67bad",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-coding",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "CopperPilot向硬件工程师提供AI设计智能体并集成PCB与固件工作流，属于面向开发者的AI工程平台。",
+      "input_hash": "fe56836de6f98f933863f1a1683062811b7972e282fa1e5d365423b3be7c0ca5",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0b078eb71cb87b58",
+          "quote": "该公司正向硬件工程师发布其 AI 设计智能体的 1 版，该智能体代号为 Epsilon。"
+        },
+        {
+          "source_id": "FISRC-21e4aa6d58d89c7b",
+          "quote": "The platform supports KiCad, Altium, and LTspice, with its strongest integration centered on PCB design and firmware workflows."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-28T05:52:09.669Z"
+    },
+    "EV-e1d0e727ae30cdf0": {
+      "id": "EV-e1d0e727ae30cdf0",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Warp Sciences核心业务是训练机器人执行实验室湿实验操作，属于具身智能与机器人本体业务。",
+      "input_hash": "864f0d1761482837419ccb109971c17ed92994122b98842ef8f1242c7ead6969",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-35fd89be53341f99",
+          "quote": "前 OpenAI 科学负责人 Kevin Weil 宣布创办 Warp Sciences，该公司训练机器人完成药物发现中的实验室工作"
+        },
+        {
+          "source_id": "FISRC-7fd139453b6bceb2",
+          "quote": "Warp Sciences训练机器人合成并测试研究人员识别出的有前景化合物。"
+        },
+        {
+          "source_id": "FISRC-7fd139453b6bceb2",
+          "quote": "通过将湿实验室工作自动化，Warp Sciences希望利用可全天候运行的机器人加速药物发现。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-28T05:52:09.669Z"
+    },
+    "EV-728487314941b56d": {
+      "id": "EV-728487314941b56d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "customer-service",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Omnichat为AI原生营销与客户体验平台，其智能体承担营销、销售与客服核心工作。",
+      "input_hash": "d31e9e054f4683ac3d7920c4ce3afceca6f7b42347b0fda6fc11aa9b6e9a5bd8",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5ee5097390444937",
+          "quote": "AI原生营销与客户体验平台Omnichat今日正式宣布完成1000万美元A轮融资"
+        },
+        {
+          "source_id": "FISRC-5ee5097390444937",
+          "quote": "该系列AI智能体于2026年推出，旨在对话场景中完成营销、销售与客户服务的核心工作"
+        },
+        {
+          "source_id": "FISRC-b7c50c031411185d",
+          "quote": "Omnichat has newly launched Omni AI Agent Studio, which integrates the company’s native AI with diverse LLMs to help businesses create personalised AI agents."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-28T05:52:09.669Z"
+    },
+    "EV-6c199dc14b6e6a12": {
+      "id": "EV-6c199dc14b6e6a12",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "ai-service",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "X Pay为AI智能体与API提供支付基础设施，主营属于金融支付领域的AI服务。",
+      "input_hash": "347b33cc56797689b537b1abdac1b385b1aba4c72ff8b932fb24e99528687fb9",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-51bb94905ac6b974",
+          "quote": "面向 AI 智能体和 API 的支付基础设施提供商 X Pay 宣布完成 100 万美元融资"
+        },
+        {
+          "source_id": "FISRC-51bb94905ac6b974",
+          "quote": "X Pay 基于由 Coinbase 贡献、目前由 Linux 基金会管理的 x402 支付标准，使 AI 智能体能够自动完成 API 付费调用"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-28T05:52:09.669Z"
+    },
+    "EV-8615e87fa54663e5": {
+      "id": "EV-8615e87fa54663e5",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "model-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Simplismart 提供位于模型与算力之间的推理部署管理平台，属于模型部署开发平台。",
+      "input_hash": "6df8bbef15a6a5ecd7808063cf184814748c06f193d5c813161653abdebf578c",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1a26335ff9013735",
+          "quote": "Simplismart 的软件位于 AI 模型与底层计算基础设施之间"
+        },
+        {
+          "source_id": "FISRC-1a26335ff9013735",
+          "quote": "Simplismart 的软件位于 AI 模型与底层计算基础设施之间，通过调整模型的部署和管理方式，满足客户的具体需求。"
+        },
+        {
+          "source_id": "FISRC-1a26335ff9013735",
+          "quote": "既可以通过 Simplismart 自有平台运行，也可以直接使用客户现有的云基础设施或本地部署环境。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-28T05:52:09.857Z"
+    },
+    "EV-6326aa903d147461": {
+      "id": "EV-6326aa903d147461",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "sales-marketing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "Live2.ai 以多智能体监控社媒舆情并管理营销活动，属企业销售营销软件。",
+      "input_hash": "f4d5885dfdb2d1c52e22a19943fb911759879c41f2fdc624d30ef479229b79c3",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-8e3cc9b58cf4295d",
+          "quote": "The platform monitors conversations across Instagram, TikTok, YouTube, Reddit, X, and review websites. It integrates trend analysis, influencer-content audits, campaign publishing, and performance measurement."
+        },
+        {
+          "source_id": "FISRC-c84e6bee0e6c853f",
+          "quote": "Live2.ai operates eight AI agents, including tools for crisis detection, trend identification, campaign auditing and automated responses."
+        },
+        {
+          "source_id": "FISRC-b45040d9c78391c9",
+          "quote": "Live2.ai transforms brands’ online presence and businesses. This digital SaaS tool uses video solutions to boost engagement, drive conversions, and create immersive experiences to maximize sales."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-28T05:52:09.857Z"
+    },
+    "EV-1d91ef6afd9a6290": {
+      "id": "EV-1d91ef6afd9a6290",
+      "scope": "excluded",
+      "exclusion_reason": "not_ai_business",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1
+      ],
+      "rationale": "东山精密主营印制电路板制造，仅为 AI 服务器供应部件，非 AI 业务。",
+      "input_hash": "56bea625364a1a09ef44dafca2a466a64b513d8059aae964a591c74566112c95",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fde0ea8a74b63e39",
+          "quote": "Suzhou Dongshan Precision Manufacturing Co. a printed circuit board maker, raised about HK$9.9 billion ($1.3 billion) in Hong Kong’s biggest listing in nearly two months"
+        },
+        {
+          "source_id": "FISRC-a81b62054847f818",
+          "quote": "Dongshan supplies parts that make up the complex circuitry underpinning AI servers."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-28T05:52:09.857Z"
+    },
+    "EV-ae0029c4b77f61e4": {
+      "id": "EV-ae0029c4b77f61e4",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-security",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        4
+      ],
+      "rationale": "Cygrid 提供身份执行与 MCP 网关，管控 AI 智能体访问权限，属模型与智能体安全。",
+      "input_hash": "8ebb3ee25906c01337e354b4e543008424b9e87af78d565009df7281dabdb08b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-880e4507b090ae93",
+          "quote": "Cygrid, a Berlin-based cybersecurity startup, has exited stealth with a €2.66 million pre-Seed funding round for its identity-enforcement platform that controls access to confidential information."
+        },
+        {
+          "source_id": "FISRC-880e4507b090ae93",
+          "quote": "It also maps human, non-human and AI agent identities into a single intelligence graph, correlating what each identity is entitled to, what it actually does, and on whose behalf it acts."
+        },
+        {
+          "source_id": "FISRC-caf2ff79b1653dc4",
+          "quote": "Cygrid says its MCP Gateway can evaluate an agent’s action before it reaches the target system, then allow, rewrite or block the request."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-28T05:52:09.857Z"
+    },
+    "EV-3e48c37f101dbbcd": {
+      "id": "EV-3e48c37f101dbbcd",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "cybersecurity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "Indurex 用 AI 智能体检测信息物理系统异常，交付企业网络安全风控软件。",
+      "input_hash": "3ef3e6e01a2cd5e102705d53d17706ec474dc4e4e019197c30a274855dc7156f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-00f4d890acbf7474",
+          "quote": "Indurex, an Amsterdam-based startup building an AI-native platform for Cyber-Physical Systems (CPS) security, has raised €7 million in funding, less than nine months after coming out of stealth."
+        },
+        {
+          "source_id": "FISRC-00f4d890acbf7474",
+          "quote": "Its offering is called Indurex SafeGuard AI, a platform that ingests data from distributed control systems, safety instrumented systems, historians, alarm management systems, and IT security tools. It then uses AI agents to surface anomalies and engineering deviations, giving operators a unified view that links cybersecurity alerts directly to the physical process behind them, something conventional OT security systems have failed to address."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-28T05:52:09.857Z"
+    },
+    "EV-9eca876903571bd3": {
+      "id": "EV-9eca876903571bd3",
+      "scope": "excluded",
+      "exclusion_reason": "not_ai_business",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        3
+      ],
+      "rationale": "灵钜创新主营桌面金属 CNC 机床，AI 仅为端侧工艺辅助功能，非 AI 主营。",
+      "input_hash": "84a6edb32e6117f6dda9a5283f8fe8eb09aadc63a3aafc736a9b24dcc0f73282",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-35edb941eb37dfd8",
+          "quote": "深圳灵钜创新科技有限公司（简称“灵钜创新”，品牌名CubiFab）成立于深圳南山，是一家桌面CNC 公司。"
+        },
+        {
+          "source_id": "FISRC-479d9bbd5ef81e32",
+          "quote": "这家成立于2026年1月27日的初创公司，聚焦桌面金属CNC"
+        },
+        {
+          "source_id": "FISRC-6cb38c1ddbce2708",
+          "quote": "加工精度±0.01mm，材料覆盖木材、亚克力、铝合金、钛合金与工具钢，配备AI Design、AI CAM与AI Check三类端侧工艺辅助"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-28T05:52:09.857Z"
+    },
+    "EV-d80c8dee36bd767a": {
+      "id": "EV-d80c8dee36bd767a",
+      "scope": "excluded",
+      "exclusion_reason": "not_ai_business",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "SpaceX主营火箭发射与星链卫星互联网，AI算力仅为附带提及，非AI主营。",
+      "input_hash": "8f6cf3db6a4da1ecc5f9149f9448ce21d3653b1f5d0f9046bdfcf4139b514e12",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-dbf26bfab16dd404",
+          "quote": "SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft."
+        },
+        {
+          "source_id": "FISRC-99399b259ae08f33",
+          "quote": "Starlink is now the company’s largest business."
+        },
+        {
+          "source_id": "FISRC-99399b259ae08f33",
+          "quote": "Starlink provides high-speed, low-latency internet with more than 99.9% average uptime and reliable connectivity worldwide"
+        },
+        {
+          "source_id": "FISRC-99399b259ae08f33",
+          "quote": "In 2025, it completed 165 launches, close to one every other day."
+        },
+        {
+          "source_id": "FISRC-99399b259ae08f33",
+          "quote": "SpaceX accounted for more than 80 percent of the world’s mass delivered to orbit since 2023."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-28T05:52:12.890Z"
+    },
+    "EV-c5984dabb5a697b9": {
+      "id": "EV-c5984dabb5a697b9",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-cloud",
+      "product_form_id": "compute",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "SpaceX融资用于AI芯片与数据中心设备，扩展云算力业务，属AI云与算力服务。",
+      "input_hash": "32de0a06248a308df89ee8e49ce7e81e51adb5c07ee1bc031b051c849f78576a",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d6e31d9e0fa6ab5c",
+          "quote": "SpaceX has reached a binding commitment for roughly $40 billion in financing for AI chips and related data center equipment"
+        },
+        {
+          "source_id": "FISRC-d6e31d9e0fa6ab5c",
+          "quote": "The financing comes as SpaceX ramps spending to expand its AI infrastructure, alongside its Starlink and launch businesses."
+        },
+        {
+          "source_id": "FISRC-d6e31d9e0fa6ab5c",
+          "quote": "Under the agreement, an entity managed by Apollo Global Management, the New York-based private equity giant, will buy the chips and related server hardware, then lease the equipment to SpaceX."
+        },
+        {
+          "source_id": "FISRC-d6e31d9e0fa6ab5c",
+          "quote": "Apollo said the financing will help deliver Nvidia’s next-generation Vera Rubin chips for SpaceX’s “terrestrial compute buildout.”"
+        },
+        {
+          "source_id": "FISRC-d6e31d9e0fa6ab5c",
+          "quote": "SpaceX’s AI segment, which includes the Grok chatbot, the Cursor coding tool, and its cloud compute business"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-28T05:52:12.890Z"
+    },
+    "EV-d0340d320ebf78c6": {
+      "id": "EV-d0340d320ebf78c6",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "model-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "Simplismart提供模型推理引擎与编排平台，帮助GPU基础设施运行生产级AI负载。",
+      "input_hash": "c9ecac977002d2c6bddec1874b02a558e8902d1ccca172eeef79392c073a35be",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-72e188139d846686",
+          "quote": "Simplismart’s software sits between AI models and the computing infrastructure they run on and adjusts how models are deployed and managed to meet customers’ requirements"
+        },
+        {
+          "source_id": "FISRC-26e008b10708f9d1",
+          "quote": "Our modular inference engine configures the serving stack around the workload. Our orchestration platform gets it into production and manages capacity as demand changes."
+        },
+        {
+          "source_id": "FISRC-26e008b10708f9d1",
+          "quote": "This is the software behind what we call AI token factories: turning GPU capacity into services for running models, under the provider’s own brand."
+        },
+        {
+          "source_id": "FISRC-060d3a287a3a0dbd",
+          "quote": "it supplies the software layer that enables third-party GPU infrastructure to run production AI workloads"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-28T05:52:12.890Z"
     }
   },
-  "generated_at": "2026-10-27T02:15:56.700Z"
+  "generated_at": "2026-10-28T05:52:12.890Z"
 }

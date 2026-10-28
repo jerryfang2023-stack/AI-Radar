@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-27",
-    "currentDate": "2026-10-27",
-    "eventCount": 4292,
+    "latestDataDate": "2026-10-28",
+    "currentDate": "2026-10-28",
+    "eventCount": 4309,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-d80c8dee36bd767a",
       "EV-20b41540e3b24633",
       "EV-c7b060541ca00208"
     ],
@@ -72,10 +73,11 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-10-10",
-    "lastSeen": "2026-10-17",
+    "lastSeen": "2026-10-28",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-d80c8dee36bd767a",
         "EV-c7b060541ca00208",
         "EV-20b41540e3b24633"
       ],
@@ -87,6 +89,24 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-d80c8dee36bd767a",
+        "dataDate": "2026-10-28",
+        "date": "2026-10-26",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI芯片，突传重磅！马斯克，重大宣布！",
+        "displayTags": [],
+        "entityIds": [
+          "EN-5d99b19d5b84f530",
+          "EN-e78bdebae031095b",
+          "EN-4b4370843133841f",
+          "EN-8d4321d936320802"
+        ]
+      },
       {
         "id": "EV-c7b060541ca00208",
         "dataDate": "2026-10-17",
@@ -455,7 +475,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-27"
+      "lastSeen": "2026-10-28"
     }
   ],
   "fde": [],

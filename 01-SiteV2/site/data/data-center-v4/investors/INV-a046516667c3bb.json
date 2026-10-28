@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-27",
-    "currentDate": "2026-10-27",
-    "eventCount": 4292,
+    "latestDataDate": "2026-10-28",
+    "currentDate": "2026-10-28",
+    "eventCount": 4309,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 26,
+    "current_round_count": 27,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 25,
+    "portfolio_company_count": 26,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-03-12",
-    "latest_disclosed_at": "2026-10-21",
+    "latest_disclosed_at": "2026-10-27",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 4,
       "lead": 13,
-      "participant": 11
+      "participant": 12
     },
     "round_codes": [
       "multi_round",
@@ -206,6 +206,11 @@
         "name": "Sapiom"
       },
       {
+        "entity_id": "EN-d6e9c47f8a1c273b",
+        "canonical_entity_id": "",
+        "name": "Simplismart"
+      },
+      {
         "entity_id": "EN-4d7594e57f7d03f3",
         "canonical_entity_id": "",
         "name": "Supabase"
@@ -217,6 +222,47 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f84d2d27b37a87c0",
+        "funding_insight_id": "FI-5436c1c660cc945d",
+        "event_ids": [
+          "EV-d0340d320ebf78c6",
+          "EV-8615e87fa54663e5"
+        ],
+        "company_entity_id": "EN-d6e9c47f8a1c273b",
+        "company_canonical_entity_id": "",
+        "company_name": "Simplismart",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$14 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 14000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1400 万美元"
+        },
+        "announced_at": "2026-10-27",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1a26335ff9013735",
+            "source_url": "https://www.ithome.com/1/018/726.htm",
+            "source_title": "英伟达投资印度初创公司 Simplismart，助力企业用更少 GPU 运行 AI 模型",
+            "source_content_hash": "404d88ff840f005ca2cfc6b5710f57793c704b4d1f839e3ffb3dbdf063966c6f",
+            "quote": "除英伟达外，Accel、Shastra VC 和 Micromax 也参与了投资",
+            "quote_hash": "69eb650b766e80b83c31eff16d249ddc4375bffb539144aed60dd9c8599b3539"
+          }
+        ]
+      },
       {
         "activity_id": "IA-0b4eb0c6a2f284e2",
         "funding_insight_id": "FI-e3ee70b0f96d25ac",
@@ -1400,6 +1446,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-1a26335ff9013735",
+        "source_url": "https://www.ithome.com/1/018/726.htm",
+        "source_title": "英伟达投资印度初创公司 Simplismart，助力企业用更少 GPU 运行 AI 模型",
+        "source_content_hash": "404d88ff840f005ca2cfc6b5710f57793c704b4d1f839e3ffb3dbdf063966c6f",
+        "quote": "除英伟达外，Accel、Shastra VC 和 Micromax 也参与了投资",
+        "quote_hash": "69eb650b766e80b83c31eff16d249ddc4375bffb539144aed60dd9c8599b3539"
+      },
+      {
         "source_id": "FISRC-78b2fb4f563409a9",
         "source_url": "https://es.tradingview.com/news/panews:dcdaf9329acdf:0/",
         "source_title": "前OpenAI研究主管Bob McGrew创办的AI制造软件公司Arda完成2.3亿美元融资，估值15亿美元",
@@ -1682,16 +1736,16 @@
           "source_id": "accel_europe"
         },
         {
+          "description": "融资来源记录：Simplismart · B轮 · 2026-10-27 · 本轮参投 · $14 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1a26335ff9013735"
+        },
+        {
           "description": "融资来源记录：Arda · 轮次未披露 · 2026-10-21 · 本轮领投 · 2.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-78b2fb4f563409a9"
         },
         {
           "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c4c53e6f607010be"
-        },
-        {
-          "description": "融资来源记录：Modal · D轮 · 2026-10-14 · 本轮领投 · $750 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b54b83abf2f3608c"
         }
       ],
       "contacts": [
@@ -1764,6 +1818,14 @@
           "quote_hash": "596b1ee652763f3ce41bb638fabd7df2a7d7c189a53631ad6dd499bf0d48e2bc"
         },
         {
+          "source_id": "FISRC-1a26335ff9013735",
+          "source_url": "https://www.ithome.com/1/018/726.htm",
+          "source_title": "英伟达投资印度初创公司 Simplismart，助力企业用更少 GPU 运行 AI 模型",
+          "source_content_hash": "404d88ff840f005ca2cfc6b5710f57793c704b4d1f839e3ffb3dbdf063966c6f",
+          "quote": "除英伟达外，Accel、Shastra VC 和 Micromax 也参与了投资",
+          "quote_hash": "69eb650b766e80b83c31eff16d249ddc4375bffb539144aed60dd9c8599b3539"
+        },
+        {
           "source_id": "FISRC-78b2fb4f563409a9",
           "source_url": "https://es.tradingview.com/news/panews:dcdaf9329acdf:0/",
           "source_title": "前OpenAI研究主管Bob McGrew创办的AI制造软件公司Arda完成2.3亿美元融资，估值15亿美元",
@@ -1778,14 +1840,6 @@
           "source_content_hash": "f3c7efce8da1beb6",
           "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
           "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
-        },
-        {
-          "source_id": "FISRC-b54b83abf2f3608c",
-          "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
-          "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
-          "source_content_hash": "ef996bef620416ce",
-          "quote": "Accel led the round.",
-          "quote_hash": "ec2ad31a51431aadfd7886a6d529f38ae6e21fd59fcab834a0006578a80c362b"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1796,7 +1850,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[27].role": {
+        "activities[28].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

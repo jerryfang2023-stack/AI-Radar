@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-27",
-    "currentDate": "2026-10-27",
-    "eventCount": 4292,
+    "latestDataDate": "2026-10-28",
+    "currentDate": "2026-10-28",
+    "eventCount": 4309,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,20 +63,20 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 30,
+    "current_round_count": 31,
     "historical_or_ambiguous_count": 9,
-    "portfolio_company_count": 26,
+    "portfolio_company_count": 27,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-09",
-    "latest_disclosed_at": "2026-10-07",
+    "latest_disclosed_at": "2026-10-27",
     "role_counts": {
       "historical_or_ambiguous": 9,
       "lead": 3,
-      "participant": 27
+      "participant": 28
     },
     "round_codes": [
       "infrastructure",
@@ -196,6 +196,11 @@
         "name": "Safe Superintelligence Inc."
       },
       {
+        "entity_id": "EN-d6e9c47f8a1c273b",
+        "canonical_entity_id": "",
+        "name": "Simplismart"
+      },
+      {
         "entity_id": "EN-607a596a603dd679",
         "canonical_entity_id": "",
         "name": "Starcloud"
@@ -227,6 +232,47 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-7ee6861516855918",
+        "funding_insight_id": "FI-5436c1c660cc945d",
+        "event_ids": [
+          "EV-d0340d320ebf78c6",
+          "EV-8615e87fa54663e5"
+        ],
+        "company_entity_id": "EN-d6e9c47f8a1c273b",
+        "company_canonical_entity_id": "",
+        "company_name": "Simplismart",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$14 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 14000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1400 万美元"
+        },
+        "announced_at": "2026-10-27",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1a26335ff9013735",
+            "source_url": "https://www.ithome.com/1/018/726.htm",
+            "source_title": "英伟达投资印度初创公司 Simplismart，助力企业用更少 GPU 运行 AI 模型",
+            "source_content_hash": "404d88ff840f005ca2cfc6b5710f57793c704b4d1f839e3ffb3dbdf063966c6f",
+            "quote": "英伟达（Nvidia）参与了印度初创公司 Simplismart 的 1,400 万美元",
+            "quote_hash": "50861b8c3c1a7940a1964fad21f24b103ebd20e34dafd770379e20dfa5f6a5e3"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a6767ee0529bbe2d",
         "funding_insight_id": "FI-4328c217f1203f6f",
@@ -1764,6 +1810,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-1a26335ff9013735",
+        "source_url": "https://www.ithome.com/1/018/726.htm",
+        "source_title": "英伟达投资印度初创公司 Simplismart，助力企业用更少 GPU 运行 AI 模型",
+        "source_content_hash": "404d88ff840f005ca2cfc6b5710f57793c704b4d1f839e3ffb3dbdf063966c6f",
+        "quote": "英伟达（Nvidia）参与了印度初创公司 Simplismart 的 1,400 万美元",
+        "quote_hash": "50861b8c3c1a7940a1964fad21f24b103ebd20e34dafd770379e20dfa5f6a5e3"
+      },
+      {
         "source_id": "FISRC-295e99df6a40bc79",
         "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
         "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
@@ -2143,6 +2197,10 @@
           "source_id": "nvidia_nventures"
         },
         {
+          "description": "融资来源记录：Simplismart · B轮 · 2026-10-27 · 本轮参投 · $14 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1a26335ff9013735"
+        },
+        {
           "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮参投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-295e99df6a40bc79"
         },
@@ -2193,6 +2251,14 @@
           "quote_hash": "ee1e54cd9f847ba4c9a860b598e9dfd0b8bd5688c398c80253a8a4aa8f1ef820"
         },
         {
+          "source_id": "FISRC-1a26335ff9013735",
+          "source_url": "https://www.ithome.com/1/018/726.htm",
+          "source_title": "英伟达投资印度初创公司 Simplismart，助力企业用更少 GPU 运行 AI 模型",
+          "source_content_hash": "404d88ff840f005ca2cfc6b5710f57793c704b4d1f839e3ffb3dbdf063966c6f",
+          "quote": "英伟达（Nvidia）参与了印度初创公司 Simplismart 的 1,400 万美元",
+          "quote_hash": "50861b8c3c1a7940a1964fad21f24b103ebd20e34dafd770379e20dfa5f6a5e3"
+        },
+        {
           "source_id": "FISRC-295e99df6a40bc79",
           "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
           "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
@@ -2207,14 +2273,6 @@
           "source_content_hash": "4605e9c942d1f7c4",
           "quote": "Jul 2026Strategic investment$5B——reported—Lead: NVIDIA",
           "quote_hash": "36c47924470a36f94154190b3140a4b6ebbed454c2990d25a162d306416cb38b"
-        },
-        {
-          "source_id": "FISRC-ee90c330f9d0f668",
-          "source_url": "https://www.cbinsights.com/company/safe-superintelligence/financials",
-          "source_title": "Safe Superintelligence",
-          "source_content_hash": "f98c52d77de2d0e7",
-          "quote": "Safe Superintelligence's latest funding round was a Corporate Minority for $5,000M on July 27, 2026.",
-          "quote_hash": "617ed1039258d0bf48fcbd53df651d3661c30b7bdefda30141b47c30365c9f53"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2225,7 +2283,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[16].role": {
+        "activities[17].role": {
           "text": "2026年7月Series C参投",
           "source_hash": "ca89a4b6213c63b73693d1f4cbdbc294103169f8c18273db948594868797614d",
           "provider": "deepseek",

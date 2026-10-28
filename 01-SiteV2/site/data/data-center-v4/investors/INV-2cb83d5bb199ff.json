@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-27",
-    "currentDate": "2026-10-27",
-    "eventCount": 4292,
+    "latestDataDate": "2026-10-28",
+    "currentDate": "2026-10-28",
+    "eventCount": 4309,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,28 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-01",
-    "latest_disclosed_at": "2026-07-01",
+    "latest_disclosed_at": "2026-10-27",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-858837c33d111717",
+        "canonical_entity_id": "",
+        "name": "Omnichat"
+      },
       {
         "entity_id": "FICO-oxmiq",
         "canonical_entity_id": "",
@@ -85,6 +90,47 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-8225992a59d7cb7d",
+        "funding_insight_id": "FI-127dd13561af6d1d",
+        "event_ids": [
+          "EV-8de1001fde6993a5",
+          "EV-728487314941b56d"
+        ],
+        "company_entity_id": "EN-858837c33d111717",
+        "company_canonical_entity_id": "",
+        "company_name": "Omnichat",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$10M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-10-27",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8cbc0bdd31af8f3a",
+            "source_url": "https://martechseries.com/predictive-ai/ai-platforms-machine-learning/omnichat-raises-us10m-series-a-led-by-openspace-capital-to-scale-ai-agent-platform-and-drive-global-expansion/",
+            "source_title": "Omnichat 获 Openspace Capital 领投的 1000 万美元 A 轮融资，以扩展 AI 智能体平台并推动全球扩张",
+            "source_content_hash": "55865aa647087034492eebb5594bcd69b099ea5811d782a97a382deb9580e8d9",
+            "quote": "announced a US$10 million Series A funding round led by Openspace Capital, with participation from Darwin Ventures and Acorn Pacific Ventures",
+            "quote_hash": "14b0c60db1fa3751f6f140c69a27d2251923c77c9388cf3042cc389e7d41bddb"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8d4c1111f2fc312d",
         "funding_insight_id": "FI-0f332b05a9ce8b6f",
@@ -131,6 +177,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-8cbc0bdd31af8f3a",
+        "source_url": "https://martechseries.com/predictive-ai/ai-platforms-machine-learning/omnichat-raises-us10m-series-a-led-by-openspace-capital-to-scale-ai-agent-platform-and-drive-global-expansion/",
+        "source_title": "Omnichat 获 Openspace Capital 领投的 1000 万美元 A 轮融资，以扩展 AI 智能体平台并推动全球扩张",
+        "source_content_hash": "55865aa647087034492eebb5594bcd69b099ea5811d782a97a382deb9580e8d9",
+        "quote": "announced a US$10 million Series A funding round led by Openspace Capital, with participation from Darwin Ventures and Acorn Pacific Ventures",
+        "quote_hash": "14b0c60db1fa3751f6f140c69a27d2251923c77c9388cf3042cc389e7d41bddb"
+      },
+      {
         "source_id": "FISRC-b7d7449114c23ca5",
         "source_url": "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/",
         "source_title": "HPCwire - 自1987年起——报道全球最快计算机及其运营者",
@@ -161,6 +215,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Omnichat · A轮 · 2026-10-27 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8cbc0bdd31af8f3a"
+        },
+        {
           "description": "融资来源记录：OXMIQ · A轮 · 2026-07-01 · 本轮参投 · $35 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b7d7449114c23ca5"
         }
@@ -190,6 +248,14 @@
           "source_content_hash": "b3c13f6f37050925337aaf2ea72d7f602c6d6d6f4854106e53a5f98febc0656b",
           "quote": "These investments include a diverse group of venture capital partnerships with a focus on US-based early-stage venture capital funds diversified across industry sectors including technology, information technology, and healthcare.",
           "quote_hash": "cdc0149264d4b386d1b9f799ec342635a45a8e5ad8dfbdf05a00521c697d97cb"
+        },
+        {
+          "source_id": "FISRC-8cbc0bdd31af8f3a",
+          "source_url": "https://martechseries.com/predictive-ai/ai-platforms-machine-learning/omnichat-raises-us10m-series-a-led-by-openspace-capital-to-scale-ai-agent-platform-and-drive-global-expansion/",
+          "source_title": "Omnichat 获 Openspace Capital 领投的 1000 万美元 A 轮融资，以扩展 AI 智能体平台并推动全球扩张",
+          "source_content_hash": "55865aa647087034492eebb5594bcd69b099ea5811d782a97a382deb9580e8d9",
+          "quote": "announced a US$10 million Series A funding round led by Openspace Capital, with participation from Darwin Ventures and Acorn Pacific Ventures",
+          "quote_hash": "14b0c60db1fa3751f6f140c69a27d2251923c77c9388cf3042cc389e7d41bddb"
         },
         {
           "source_id": "FISRC-b7d7449114c23ca5",
