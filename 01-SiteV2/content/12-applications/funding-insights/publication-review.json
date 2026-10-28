@@ -1,6 +1,6 @@
 {
   "version": "FINANCING-PUBLICATION-REVIEW-1",
-  "reviewed_at": "2026-10-25",
+  "reviewed_at": "2026-10-28",
   "market_corrections": [
     {
       "event_id": "EV-65154e5eb49c218b",
@@ -549,6 +549,20 @@
       ],
       "reviewed_by": "Codex responsible financing reviewer",
       "reviewed_at": "2026-10-25T02:04:17.018Z"
+    },
+    {
+      "event_id": "EV-94baaaabc016521f",
+      "status": "pending",
+      "source_url": "https://news.pedaily.cn/202610/570934.shtml",
+      "reason": "实体名被媒体栏目前缀污染：canonical entity 为「首发| 维发电电子」，研究阶段判 subject_company_unresolved，无法产出有效卡。需上游实体归一化剥离「首发|」类栏目前缀并重新归并主体后重跑；本条按 documented hold 挂起，避免阻断当日其余融资发布。",
+      "reviewed_at": "2026-10-28"
+    },
+    {
+      "event_id": "EV-ec39a7dfa4c5a984",
+      "status": "pending",
+      "source_url": "https://www.eu-startups.com/2026/10/italys-z_one-fund-secures-over-e35-million-at-first-close-to-back-ai-and-urbantech-startups/",
+      "reason": "事件主体抽取错误：报道对象为意大利 Z_One Fund（基金/投资方），并非单一被投公司；同时 DeepSeek 研究输出缺 product_form_id / market_category_id / market_subcategory_id，且 market_subcategory_id 填入非法值，判 deepseek_json_quality_failed。待上游修正主体抽取与分类 schema 校验后重跑；本条按 documented hold 挂起。",
+      "reviewed_at": "2026-10-28"
     }
   ],
   "resolutions": [
