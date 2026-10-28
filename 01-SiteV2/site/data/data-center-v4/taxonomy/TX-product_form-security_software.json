@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-27",
-    "currentDate": "2026-10-27",
-    "eventCount": 4292,
+    "latestDataDate": "2026-10-28",
+    "currentDate": "2026-10-28",
+    "eventCount": 4309,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -80,6 +80,7 @@
       "EV-6329f290aecc84da",
       "EV-d535e126615182f0",
       "EV-53ffdce6405b8ba9",
+      "EV-fcf3c96afc642c8b",
       "EV-8cb5b0ed18c7cdd8"
     ],
     "entityIds": [
@@ -105,10 +106,12 @@
       "EN-c5896393cf4ac788",
       "EN-fdb2cc367267ac57"
     ],
-    "fdeIds": [],
+    "fdeIds": [
+      "FDE-1d7e3b4f28d1f967"
+    ],
     "hardwareIds": [],
     "firstSeen": "2025-11-17",
-    "lastSeen": "2026-10-02"
+    "lastSeen": "2026-10-28"
   },
   "events": [
     {
@@ -7039,6 +7042,162 @@
       "publisher": "新浪财经"
     },
     {
+      "id": "EV-fcf3c96afc642c8b",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-27",
+      "updatedDate": "2026-10-27",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "英伟达拟出资30亿美元认购Meta新股 双方深化AI智能体合作",
+      "originalTitle": "",
+      "subject": "英伟达拟出资30亿美元认购Meta新股 双方深化AI智能体",
+      "action": "合作",
+      "object": "英伟达拟出资30亿美元认购Meta新股 双方深化AI智能体合作",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-de52d6260e0177e8",
+          "CL-8f78b685740367e3",
+          "CL-c8964b13cb686cd5",
+          "CL-e5e1b4beeb1c9cb1"
+        ]
+      },
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "security_software",
+            "name": "安全软件",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://k.sina.com.cn/article_5952915720_162d24908067052j24.html?from=tech",
+      "publisher": "k.sina.com.cn"
+    },
+    {
       "id": "EV-8cb5b0ed18c7cdd8",
       "dataDate": "2026-07-23",
       "date": "2025-11-17",
@@ -7273,9 +7432,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-security_operations",
         "TX-target_user-developer",
         "TX-target_user-business_user",
-        "TX-use_case-security_operations",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-security_software",
         "TX-ai_market_subcategory-observability_evaluation",
@@ -7300,9 +7459,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-security_operations",
         "TX-target_user-developer",
         "TX-target_user-business_user",
-        "TX-use_case-security_operations",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-security_software",
         "TX-ai_market_application-model_agent_security",
@@ -7330,8 +7489,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-use_case-security_operations",
+        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-security_software",
         "TX-use_case-software_development",
@@ -7357,8 +7516,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-use_case-security_operations",
+        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-security_software",
         "TX-use_case-software_development",
@@ -7409,8 +7568,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-use_case-security_operations",
+        "TX-target_user-business_user",
         "TX-product_form-security_software",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-cyber_physical_security"
@@ -7435,8 +7594,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-target_user-business_user",
         "TX-use_case-security_operations",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-security_software",
         "TX-ai_market_application-model_agent_security",
@@ -7462,8 +7621,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-target_user-business_user",
         "TX-use_case-security_operations",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-security_software",
         "TX-ai_market_application-model_agent_security",
@@ -7488,9 +7647,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-security_operations",
         "TX-target_user-developer",
         "TX-target_user-business_user",
-        "TX-use_case-security_operations",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-security_software",
         "TX-ai_market_application-model_agent_security",
@@ -7515,8 +7674,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-use_case-security_operations",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-security_software",
         "TX-ai_market_subcategory-observability_evaluation",
@@ -7541,9 +7700,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-security_operations",
         "TX-target_user-developer",
         "TX-target_user-business_user",
-        "TX-use_case-security_operations",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-security_software",
         "TX-ai_market_application-model_agent_security",
@@ -7571,9 +7730,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-use_case-security_operations",
         "TX-target_user-developer",
         "TX-target_user-business_user",
-        "TX-use_case-security_operations",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-security_software",
         "TX-industry-professional_services",
@@ -7602,9 +7761,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-security_operations",
         "TX-target_user-developer",
         "TX-target_user-business_user",
-        "TX-use_case-security_operations",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-security_software",
         "TX-product_form-ai_infrastructure_software",
@@ -7632,9 +7791,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-use_case-security_operations",
         "TX-target_user-developer",
         "TX-target_user-business_user",
-        "TX-use_case-security_operations",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-security_software",
         "TX-ai_market_subcategory-observability_evaluation",
@@ -7659,11 +7818,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-financial_services",
         "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
+        "TX-use_case-security_operations",
         "TX-target_user-developer",
         "TX-target_user-business_user",
-        "TX-use_case-security_operations",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-security_software",
         "TX-industry-retail_ecommerce",
@@ -7690,8 +7849,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-product_form-security_software",
         "TX-product_form-end_user_application",
         "TX-deployment_model-on_premise"
@@ -7717,9 +7876,9 @@
       "classificationRefs": [
         "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-security_operations",
         "TX-target_user-developer",
         "TX-target_user-business_user",
-        "TX-use_case-security_operations",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-security_software",
         "TX-industry-government_public_sector",
@@ -7749,8 +7908,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-financial_services",
-        "TX-target_user-business_user",
         "TX-use_case-security_operations",
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-public_sector_user",
         "TX-use_case-legal_compliance",
@@ -7781,8 +7940,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-use_case-security_operations",
+        "TX-target_user-business_user",
         "TX-product_form-security_software",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-cyber_physical_security"
@@ -7792,6 +7951,65 @@
       "lastSeen": "2026-09-12"
     }
   ],
-  "fde": [],
+  "fde": [
+    {
+      "id": "FDE-1d7e3b4f28d1f967",
+      "eventId": "EV-fcf3c96afc642c8b",
+      "dataDate": "2026-10-28",
+      "date": "2026-10-27",
+      "title": "英伟达拟出资30亿美元认购Meta新股 双方深化AI智能体合作",
+      "stage": "planned",
+      "stageLabel": "计划中",
+      "customer": "未披露",
+      "vendor": "NVIDIA",
+      "industry": "未披露",
+      "useCase": "英伟达拟出资30亿美元认购Meta新股 双方深化AI智能体合作",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "两家公司还考虑进一步合作应用英伟达OpenShell框架，支持AI智能体安全部署，并利用Sentry工具监测智能体行为。"
+      ],
+      "outcomes": [
+        "双方将进一步优化模型训练与推理性能，降低运行成本，并探索更多合作领域。"
+      ],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://k.sina.com.cn/article_5952915720_162d24908067052j24.html?from=tech",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00"
+      ]
+    }
+  ],
   "hardware": []
 }

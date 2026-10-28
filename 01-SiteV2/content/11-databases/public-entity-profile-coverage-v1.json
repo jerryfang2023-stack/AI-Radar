@@ -426,6 +426,125 @@
       "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
+    "INV-c73d9854fb920b": {
+      "summary": "NVIDIA 是一家设有企业投资职能并运营 NVentures 风险投资部门的科技公司。NVentures 官网介绍其面向 AI 基础设施、机器人、数字生物学、应用 AI 和前沿计算等领域投资。融资活动库中的“Nvidia”名称未必能单独确认交易由 NVentures 还是其他 NVIDIA 投资职能完成。",
+      "facts": [
+        {
+          "field": "venture_arm",
+          "label": "风险投资部门",
+          "value": "NVentures",
+          "source_id": "nvidia_nventures"
+        },
+        {
+          "field": "sectors",
+          "label": "NVentures 官网列示领域",
+          "value": [
+            "AI 基础设施",
+            "机器人",
+            "数字生物学",
+            "应用 AI",
+            "前沿计算"
+          ],
+          "source_id": "nvidia_nventures"
+        },
+        {
+          "field": "organization_structure",
+          "label": "投资职能区分",
+          "value": "NVIDIA 区分企业投资、NVentures 风险投资部门与 NVIDIA Inception 创业生态项目；融资记录名称不足以确认具体投资职能。",
+          "source_id": "nvidia_investments"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "NVentures 官网列有其组合企业与技术领域案例。本库归在 NVIDIA 名称下的单笔融资不据此自动归属至 NVentures。",
+          "source_id": "nvidia_nventures"
+        },
+        {
+          "description": "融资来源记录：Simplismart · B轮 · 2026-10-27 · 本轮参投 · $14 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1a26335ff9013735"
+        },
+        {
+          "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮参投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-295e99df6a40bc79"
+        },
+        {
+          "description": "融资来源记录：Safe Superintelligence Inc. · 其他融资 · 2026-10-05 · 本轮领投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-062aa9e732f0aba2"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "NVentures 官方介绍",
+          "value": "NVIDIA NVentures",
+          "url": "https://www.nvidia.com/en-us/startups/nventures/",
+          "source_id": "nvidia_nventures"
+        },
+        {
+          "kind": "email",
+          "label": "NVIDIA 媒体联系（非投资申请渠道）",
+          "value": "press@nvidia.com",
+          "url": "https://nvidianews.nvidia.com/contacts",
+          "source_id": "nvidia_press"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "nvidia_nventures",
+          "source_url": "https://www.nvidia.com/en-us/startups/nventures/",
+          "source_title": "NVentures — NVIDIA’s Venture Capital Arm",
+          "source_content_hash": "d3359c5664cc0744c232347ec30517b0834e716c4a9808c4687212c848fb9be4",
+          "quote": "NVentures is NVIDIA’s venture capital arm. It focuses on AI infrastructure, robotics, digital biology, applied AI, and frontier compute.",
+          "quote_hash": "76a883d3cc2e85af162b76448500782412f39d28a282bb5e328113af0724ca27"
+        },
+        {
+          "source_id": "nvidia_investments",
+          "source_url": "https://blogs.nvidia.com/blog/nvidia-investments/",
+          "source_title": "How NVIDIA Fuels the AI Revolution With Investments",
+          "source_content_hash": "80a65457203d02c3a0dc7374f3b4d23df5b9a0f8db47e5d638bc78da21d5f47d",
+          "quote": "First, through NVIDIA’s corporate investments. Second, through NVentures, our venture capital arm.",
+          "quote_hash": "3ddbba673e7d60baa99d53e1ed1212a5a5e70e0e7bcc8f71deed25c2ec7af278"
+        },
+        {
+          "source_id": "nvidia_press",
+          "source_url": "https://nvidianews.nvidia.com/contacts",
+          "source_title": "Press Contacts | NVIDIA Newsroom",
+          "source_content_hash": "e7685ee0e6b289b1f981e5ff98191c6dde923e9bdf7296e6fb71600a162d45dc",
+          "quote": "Corporate Communications: press@nvidia.com.",
+          "quote_hash": "ee1e54cd9f847ba4c9a860b598e9dfd0b8bd5688c398c80253a8a4aa8f1ef820"
+        },
+        {
+          "source_id": "FISRC-1a26335ff9013735",
+          "source_url": "https://www.ithome.com/1/018/726.htm",
+          "source_title": "英伟达投资印度初创公司 Simplismart，助力企业用更少 GPU 运行 AI 模型",
+          "source_content_hash": "404d88ff840f005ca2cfc6b5710f57793c704b4d1f839e3ffb3dbdf063966c6f",
+          "quote": "英伟达（Nvidia）参与了印度初创公司 Simplismart 的 1,400 万美元",
+          "quote_hash": "50861b8c3c1a7940a1964fad21f24b103ebd20e34dafd770379e20dfa5f6a5e3"
+        },
+        {
+          "source_id": "FISRC-295e99df6a40bc79",
+          "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
+          "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
+          "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
+          "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
+          "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
+        },
+        {
+          "source_id": "FISRC-062aa9e732f0aba2",
+          "source_url": "https://siliconvalleyinvestclub.com/companies/ssi/",
+          "source_title": "Safe Superintelligence — Funding, Valuation & Leadership",
+          "source_content_hash": "4605e9c942d1f7c4",
+          "quote": "Jul 2026Strategic investment$5B——reported—Lead: NVIDIA",
+          "quote_hash": "36c47924470a36f94154190b3140a4b6ebbed454c2990d25a162d306416cb38b"
+        }
+      ],
+      "last_verified_at": "2026-09-25",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
     "INV-1528b125301283": {
       "summary": "Lightspeed Venture Partners 是一家多阶段风险投资机构，官网称其投资从 Seed 至 Series F 及以后阶段，并在美国、欧洲、以色列等地开展业务。Lightspeed India Partners 是独立的投资顾问实体，不能与本档案合并计算。",
       "facts": [
@@ -550,121 +669,6 @@
           "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
           "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
           "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
-        }
-      ],
-      "last_verified_at": "2026-09-25",
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
-    },
-    "INV-c73d9854fb920b": {
-      "summary": "NVIDIA 是一家设有企业投资职能并运营 NVentures 风险投资部门的科技公司。NVentures 官网介绍其面向 AI 基础设施、机器人、数字生物学、应用 AI 和前沿计算等领域投资。融资活动库中的“Nvidia”名称未必能单独确认交易由 NVentures 还是其他 NVIDIA 投资职能完成。",
-      "facts": [
-        {
-          "field": "venture_arm",
-          "label": "风险投资部门",
-          "value": "NVentures",
-          "source_id": "nvidia_nventures"
-        },
-        {
-          "field": "sectors",
-          "label": "NVentures 官网列示领域",
-          "value": [
-            "AI 基础设施",
-            "机器人",
-            "数字生物学",
-            "应用 AI",
-            "前沿计算"
-          ],
-          "source_id": "nvidia_nventures"
-        },
-        {
-          "field": "organization_structure",
-          "label": "投资职能区分",
-          "value": "NVIDIA 区分企业投资、NVentures 风险投资部门与 NVIDIA Inception 创业生态项目；融资记录名称不足以确认具体投资职能。",
-          "source_id": "nvidia_investments"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "NVentures 官网列有其组合企业与技术领域案例。本库归在 NVIDIA 名称下的单笔融资不据此自动归属至 NVentures。",
-          "source_id": "nvidia_nventures"
-        },
-        {
-          "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮参投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-295e99df6a40bc79"
-        },
-        {
-          "description": "融资来源记录：Safe Superintelligence Inc. · 其他融资 · 2026-10-05 · 本轮领投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-062aa9e732f0aba2"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "NVentures 官方介绍",
-          "value": "NVIDIA NVentures",
-          "url": "https://www.nvidia.com/en-us/startups/nventures/",
-          "source_id": "nvidia_nventures"
-        },
-        {
-          "kind": "email",
-          "label": "NVIDIA 媒体联系（非投资申请渠道）",
-          "value": "press@nvidia.com",
-          "url": "https://nvidianews.nvidia.com/contacts",
-          "source_id": "nvidia_press"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "nvidia_nventures",
-          "source_url": "https://www.nvidia.com/en-us/startups/nventures/",
-          "source_title": "NVentures — NVIDIA’s Venture Capital Arm",
-          "source_content_hash": "d3359c5664cc0744c232347ec30517b0834e716c4a9808c4687212c848fb9be4",
-          "quote": "NVentures is NVIDIA’s venture capital arm. It focuses on AI infrastructure, robotics, digital biology, applied AI, and frontier compute.",
-          "quote_hash": "76a883d3cc2e85af162b76448500782412f39d28a282bb5e328113af0724ca27"
-        },
-        {
-          "source_id": "nvidia_investments",
-          "source_url": "https://blogs.nvidia.com/blog/nvidia-investments/",
-          "source_title": "How NVIDIA Fuels the AI Revolution With Investments",
-          "source_content_hash": "80a65457203d02c3a0dc7374f3b4d23df5b9a0f8db47e5d638bc78da21d5f47d",
-          "quote": "First, through NVIDIA’s corporate investments. Second, through NVentures, our venture capital arm.",
-          "quote_hash": "3ddbba673e7d60baa99d53e1ed1212a5a5e70e0e7bcc8f71deed25c2ec7af278"
-        },
-        {
-          "source_id": "nvidia_press",
-          "source_url": "https://nvidianews.nvidia.com/contacts",
-          "source_title": "Press Contacts | NVIDIA Newsroom",
-          "source_content_hash": "e7685ee0e6b289b1f981e5ff98191c6dde923e9bdf7296e6fb71600a162d45dc",
-          "quote": "Corporate Communications: press@nvidia.com.",
-          "quote_hash": "ee1e54cd9f847ba4c9a860b598e9dfd0b8bd5688c398c80253a8a4aa8f1ef820"
-        },
-        {
-          "source_id": "FISRC-295e99df6a40bc79",
-          "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
-          "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
-          "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
-          "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
-          "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
-        },
-        {
-          "source_id": "FISRC-062aa9e732f0aba2",
-          "source_url": "https://siliconvalleyinvestclub.com/companies/ssi/",
-          "source_title": "Safe Superintelligence — Funding, Valuation & Leadership",
-          "source_content_hash": "4605e9c942d1f7c4",
-          "quote": "Jul 2026Strategic investment$5B——reported—Lead: NVIDIA",
-          "quote_hash": "36c47924470a36f94154190b3140a4b6ebbed454c2990d25a162d306416cb38b"
-        },
-        {
-          "source_id": "FISRC-ee90c330f9d0f668",
-          "source_url": "https://www.cbinsights.com/company/safe-superintelligence/financials",
-          "source_title": "Safe Superintelligence",
-          "source_content_hash": "f98c52d77de2d0e7",
-          "quote": "Safe Superintelligence's latest funding round was a Corporate Minority for $5,000M on July 27, 2026.",
-          "quote_hash": "617ed1039258d0bf48fcbd53df651d3661c30b7bdefda30141b47c30365c9f53"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -903,16 +907,16 @@
           "source_id": "accel_europe"
         },
         {
+          "description": "融资来源记录：Simplismart · B轮 · 2026-10-27 · 本轮参投 · $14 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1a26335ff9013735"
+        },
+        {
           "description": "融资来源记录：Arda · 轮次未披露 · 2026-10-21 · 本轮领投 · 2.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-78b2fb4f563409a9"
         },
         {
           "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c4c53e6f607010be"
-        },
-        {
-          "description": "融资来源记录：Modal · D轮 · 2026-10-14 · 本轮领投 · $750 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b54b83abf2f3608c"
         }
       ],
       "contacts": [
@@ -985,6 +989,14 @@
           "quote_hash": "596b1ee652763f3ce41bb638fabd7df2a7d7c189a53631ad6dd499bf0d48e2bc"
         },
         {
+          "source_id": "FISRC-1a26335ff9013735",
+          "source_url": "https://www.ithome.com/1/018/726.htm",
+          "source_title": "英伟达投资印度初创公司 Simplismart，助力企业用更少 GPU 运行 AI 模型",
+          "source_content_hash": "404d88ff840f005ca2cfc6b5710f57793c704b4d1f839e3ffb3dbdf063966c6f",
+          "quote": "除英伟达外，Accel、Shastra VC 和 Micromax 也参与了投资",
+          "quote_hash": "69eb650b766e80b83c31eff16d249ddc4375bffb539144aed60dd9c8599b3539"
+        },
+        {
           "source_id": "FISRC-78b2fb4f563409a9",
           "source_url": "https://es.tradingview.com/news/panews:dcdaf9329acdf:0/",
           "source_title": "前OpenAI研究主管Bob McGrew创办的AI制造软件公司Arda完成2.3亿美元融资，估值15亿美元",
@@ -999,14 +1011,6 @@
           "source_content_hash": "f3c7efce8da1beb6",
           "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
           "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
-        },
-        {
-          "source_id": "FISRC-b54b83abf2f3608c",
-          "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
-          "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
-          "source_content_hash": "ef996bef620416ce",
-          "quote": "Accel led the round.",
-          "quote_hash": "ec2ad31a51431aadfd7886a6d529f38ae6e21fd59fcab834a0006578a80c362b"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -34044,6 +34048,82 @@
       ],
       "last_verified_at": "2026-09-25"
     },
+    "INV-2cb83d5bb199ff": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "Darwin Ventures官网将其介绍为风险投资母基金管理机构，主要投资美国早期风险投资基金，并覆盖科技、信息技术和医疗健康等领域。",
+      "facts": [
+        {
+          "field": "investment_model",
+          "label": "投资模式",
+          "value": "风险投资母基金（fund of funds）",
+          "source_id": "PFSRC-2cb83d5bb199ff-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资范围",
+          "value": "美国早期风险投资基金；科技、信息技术、医疗健康",
+          "source_id": "PFSRC-2cb83d5bb199ff-2"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Omnichat · A轮 · 2026-10-27 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8cbc0bdd31af8f3a"
+        },
+        {
+          "description": "融资来源记录：OXMIQ · A轮 · 2026-07-01 · 本轮参投 · $35 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b7d7449114c23ca5"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://darwinvc.com/",
+          "url": "https://darwinvc.com/",
+          "source_id": "PFSRC-2cb83d5bb199ff-1"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "PFSRC-2cb83d5bb199ff-1",
+          "source_url": "https://darwinvc.com/",
+          "source_title": "Home - Darwin Ventures",
+          "source_content_hash": "b3c13f6f37050925337aaf2ea72d7f602c6d6d6f4854106e53a5f98febc0656b",
+          "quote": "Darwin Ventures is a venture capital fund of funds that provides individual and institutional investors (primarily educational endowments and foundations) unique access to investment opportunities that are generally unavailable to most investors.",
+          "quote_hash": "68384e38f2fefa00794ffb61aa641e95279d341ee964a2e0d0abd59ef3e8ef96"
+        },
+        {
+          "source_id": "PFSRC-2cb83d5bb199ff-2",
+          "source_url": "https://darwinvc.com/",
+          "source_title": "Home - Darwin Ventures",
+          "source_content_hash": "b3c13f6f37050925337aaf2ea72d7f602c6d6d6f4854106e53a5f98febc0656b",
+          "quote": "These investments include a diverse group of venture capital partnerships with a focus on US-based early-stage venture capital funds diversified across industry sectors including technology, information technology, and healthcare.",
+          "quote_hash": "cdc0149264d4b386d1b9f799ec342635a45a8e5ad8dfbdf05a00521c697d97cb"
+        },
+        {
+          "source_id": "FISRC-8cbc0bdd31af8f3a",
+          "source_url": "https://martechseries.com/predictive-ai/ai-platforms-machine-learning/omnichat-raises-us10m-series-a-led-by-openspace-capital-to-scale-ai-agent-platform-and-drive-global-expansion/",
+          "source_title": "Omnichat 获 Openspace Capital 领投的 1000 万美元 A 轮融资，以扩展 AI 智能体平台并推动全球扩张",
+          "source_content_hash": "55865aa647087034492eebb5594bcd69b099ea5811d782a97a382deb9580e8d9",
+          "quote": "announced a US$10 million Series A funding round led by Openspace Capital, with participation from Darwin Ventures and Acorn Pacific Ventures",
+          "quote_hash": "14b0c60db1fa3751f6f140c69a27d2251923c77c9388cf3042cc389e7d41bddb"
+        },
+        {
+          "source_id": "FISRC-b7d7449114c23ca5",
+          "source_url": "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/",
+          "source_title": "HPCwire - 自1987年起——报道全球最快计算机及其运营者",
+          "source_content_hash": "7277428ab4a1fd81",
+          "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital",
+          "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
+        }
+      ],
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
     "INV-fe975f44645dfb": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -34443,6 +34523,120 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
+    "INV-d34bdfce5f4a00": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构定位及策略来自 Apollo 官网；Broadcom AI XPV 是资本解决方案案例。公告只说明其为 Anthropic 扩充算力提供支持，不代表 Anthropic 股权投资。",
+      "summary": "Apollo Global Management 是一家另类资产管理和资本解决方案提供商，官网称公司成立于 1990 年，业务覆盖 Credit、Equity 和 Real Assets。2026 年，Apollo 管理的基金及关联方领衔 Broadcom AI XPV Platform 的初始资本方案，以支持 AI 计算基础设施扩容；官方公告将 Anthropic 描述为该平台将支持扩容的计算客户，并未称 Apollo 直接购买 Anthropic 股权。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "1990",
+          "source_id": "B24-APOLLO-ABOUT"
+        },
+        {
+          "field": "investment_focus",
+          "label": "业务范围",
+          "value": "信用、股权及实物资产投资。",
+          "source_id": "B24-APOLLO-STRATEGY"
+        },
+        {
+          "field": "investment_approach",
+          "label": "资本方案",
+          "value": "为企业提供长期资本及跨资本结构融资解决方案。",
+          "source_id": "B24-APOLLO-STRATEGY"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Apollo 2026 年 6 月 9 日公告称，其管理基金及关联方领衔 Broadcom AI XPV Platform 的初始 350 亿美元资本方案；公告称该平台将支持 Anthropic 已宣布的算力扩张。这是 AI 基础设施资本方案，不能记为 Apollo 直接持有 Anthropic 股权。",
+          "source_id": "B24-APOLLO-XPV"
+        },
+        {
+          "description": "融资来源记录：SpaceX · 轮次未披露 · 2026-10-26 · 本轮参投 · $40 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d6e31d9e0fa6ab5c"
+        },
+        {
+          "description": "融资来源记录：Anthropic · 基础设施融资 · 2026-06-10 · 本轮领投 · 350亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-12d28955f3aa1a00"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.apollo.com/",
+          "url": "https://www.apollo.com/",
+          "source_id": "B24-APOLLO-ABOUT"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "B24-APOLLO-ABOUT",
+          "source_url": "https://www.apollo.com/aboutus",
+          "source_title": "About Apollo | Apollo Global Management",
+          "source_content_hash": "137b0925dac4256bb246820b77567eba81991475832b3884a3ec9c5a1845084d",
+          "quote": "Since our founding in 1990, we have believed that adhering to our values is integral to our success.",
+          "quote_hash": "9b7cd405a6fca14dbe37ef97288d14039f4babe9492275c464e75bf731239dde"
+        },
+        {
+          "source_id": "B24-APOLLO-STRATEGY",
+          "source_url": "https://www.apollo.com/strategies",
+          "source_title": "Strategies | Apollo Global Management",
+          "source_content_hash": "73ede82569227b95fcee2567adfe4a906cceb928a9641a5753036d819bc8b266",
+          "quote": "We invest in private and public markets and across the full spectrum of Credit, Equity and Real Assets to seek excess returns for our clients",
+          "quote_hash": "03e2e4329891182397d79b4865a4645d18cf2639f6b4c4ba77b1ba71b5221f65"
+        },
+        {
+          "source_id": "B24-APOLLO-XPV",
+          "source_url": "https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai",
+          "source_title": "Apollo Leads $35 Billion Capital Solution for Broadcom AI XPV Platform in Partnership with Blackstone and Leading Global Banks :: Apollo Global Management, Inc. (APO)",
+          "source_content_hash": "c6cabe1fdd048dc5cb003c6baec6aba61dc124f84e639557a78c2d7f803b2673",
+          "quote": "Apollo-managed funds and affiliates are leading an initial $35 billion capital solution as part of Broadcom’s new AI XPV Platform (the “Platform”), in partnership with Blackstone (NYSE: BX) and leading global banks.",
+          "quote_hash": "541d78eee1ae43d8800090e5235317a031c7630d96c88ebb8c4ff5bd80c3a20d"
+        },
+        {
+          "source_id": "B24-APOLLO-ANTHROPIC",
+          "source_url": "https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai",
+          "source_title": "Apollo Leads $35 Billion Capital Solution for Broadcom AI XPV Platform in Partnership with Blackstone and Leading Global Banks :: Apollo Global Management, Inc. (APO)",
+          "source_content_hash": "c6cabe1fdd048dc5cb003c6baec6aba61dc124f84e639557a78c2d7f803b2673",
+          "quote": "It will facilitate Anthropic's previously announced capacity expansion of more than 1GW of compute infrastructure for training and inference starting in mid-2026.",
+          "quote_hash": "e4c0e73e3b60421cc8c3eeee6a46c8d628dcd8ead351e5a5266b314f708fb5e2"
+        },
+        {
+          "source_id": "FISRC-d6e31d9e0fa6ab5c",
+          "source_url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+          "source_title": "SpaceX与Apollo敲定400亿美元GPU融资协议",
+          "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
+          "quote": "an entity managed by Apollo Global Management, the New York-based private equity giant, will buy the chips and related server hardware, then lease the equipment to SpaceX",
+          "quote_hash": "90e96ac99f49a8fd9ca53fa1304ed01fb9e00dc1dc1db75fe6f4088d92ab9f4e"
+        },
+        {
+          "source_id": "FISRC-12d28955f3aa1a00",
+          "source_url": "https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai",
+          "source_title": "Apollo Leads $35 Billion Capital Solution for Broadcom AI XPV Platform in Partnership with Blackstone and Leading Global Banks :: Apollo Global Management, Inc. (APO)",
+          "source_content_hash": "c6cabe1fdd048dc5",
+          "quote": "Apollo (NYSE: APO) today announced that Apollo-managed funds and affiliates are leading an initial $35 billion capital solution",
+          "quote_hash": "5abeb14d93350c34a5fcca25aaa20c6bb10ce217d6931f75daa9db1b632c29b4"
+        },
+        {
+          "source_id": "FISRC-a689df7815b7bebf",
+          "source_url": "https://www.bloomberg.com/news/videos/2026-06-10/apollo-wraps-up-35b-chip-deal-for-anthropic-video",
+          "source_title": "Apollo 与 Blackstone 为 Anthropic 完成 350 亿美元 AI 基础设施融资",
+          "source_content_hash": "3f1bfda19f8a176b",
+          "quote": "Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic",
+          "quote_hash": "9cd11f1f01fe96fd799f5d5add5aa9b8f687f57dbe21aa034e6dcbd6a5086148"
+        }
+      ],
+      "last_verified_at": "2026-10-05",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "Apollo Global Management 是一家另类资产管理和资本解决方案提供商，官网称公司成立于 1990 年，业务覆盖 Credit、Equity 和 Real Assets。2026 年，Apollo 管理的基金及关联方领衔 Broadcom AI XPV Platform 的初始资本方案，以支持 AI 计算基础设施扩容；官方公告将 Anthropic 描述为该平台将支持扩容的计算客户，并未称 Apollo 直接购买 Anthropic 股权。"
     },
     "INV-a92207fe996535": {
       "summary": "道彤投资官网称其专注大健康领域中早期投资及产业并购，重点关注医疗服务与医疗创新技术。",
@@ -66921,6 +67115,261 @@
       "coverage_note": "职位、学历和过往任职以Tracxn公司官网及年报为准；投资案例来自公司年报或融资来源记录，不能据此推断完整个人投资组合。",
       "last_verified_at": "2026-09-26"
     },
+    "INV-3736ccd80a8b53": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "达盈管顾(Darwin Ventures) 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Omnichat · A轮 · 2026-10-27 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5ee5097390444937"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-5ee5097390444937",
+          "source_url": "https://finance.sina.com.cn/roll/2026-10-27/doc-iniwrqsz1508872.shtml",
+          "source_title": "Omnichat获Openspace Capital领投1000万美元A轮融资 扩展Agentic AI平台并加速全球布局",
+          "source_content_hash": "c345a27af79dc7a9fefc87d3af3a040703ecd2f95f0895b826d524d19ce1199e",
+          "quote": "本轮融资由Openspace Capital领投，达盈管顾（Darwin Ventures）与橡子园太平洋创投（Acorn Pacific Ventures）跟投。",
+          "quote_hash": "ec4ec018a864238d40dd8522509176522298c886cf9f8ac228a24fde9d7fc81c"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-4995a1d201619a": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "橡子园太平洋创投(Acorn Pacific Ventures) 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Omnichat · A轮 · 2026-10-27 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5ee5097390444937"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-5ee5097390444937",
+          "source_url": "https://finance.sina.com.cn/roll/2026-10-27/doc-iniwrqsz1508872.shtml",
+          "source_title": "Omnichat获Openspace Capital领投1000万美元A轮融资 扩展Agentic AI平台并加速全球布局",
+          "source_content_hash": "c345a27af79dc7a9fefc87d3af3a040703ecd2f95f0895b826d524d19ce1199e",
+          "quote": "本轮融资由Openspace Capital领投，达盈管顾（Darwin Ventures）与橡子园太平洋创投（Acorn Pacific Ventures）跟投。",
+          "quote_hash": "ec4ec018a864238d40dd8522509176522298c886cf9f8ac228a24fde9d7fc81c"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-90d65b53722c1a": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Acorn Pacific Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Omnichat · A轮 · 2026-10-27 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8cbc0bdd31af8f3a"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-8cbc0bdd31af8f3a",
+          "source_url": "https://martechseries.com/predictive-ai/ai-platforms-machine-learning/omnichat-raises-us10m-series-a-led-by-openspace-capital-to-scale-ai-agent-platform-and-drive-global-expansion/",
+          "source_title": "Omnichat 获 Openspace Capital 领投的 1000 万美元 A 轮融资，以扩展 AI 智能体平台并推动全球扩张",
+          "source_content_hash": "55865aa647087034492eebb5594bcd69b099ea5811d782a97a382deb9580e8d9",
+          "quote": "announced a US$10 million Series A funding round led by Openspace Capital, with participation from Darwin Ventures and Acorn Pacific Ventures",
+          "quote_hash": "14b0c60db1fa3751f6f140c69a27d2251923c77c9388cf3042cc389e7d41bddb"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-0e4af9ac417844": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Dallas Venture Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Simplismart · B轮 · 2026-10-27 · 本轮领投 · $14 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1a26335ff9013735"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-1a26335ff9013735",
+          "source_url": "https://www.ithome.com/1/018/726.htm",
+          "source_title": "英伟达投资印度初创公司 Simplismart，助力企业用更少 GPU 运行 AI 模型",
+          "source_content_hash": "404d88ff840f005ca2cfc6b5710f57793c704b4d1f839e3ffb3dbdf063966c6f",
+          "quote": "达拉斯风险投资公司（Dallas Venture Capital）领投",
+          "quote_hash": "3895d16609660715e987f316e09f602dc5cdd11a4838fafabff675e069ed0f8d"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-ed6995f0f07534": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "IvyCap Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Live2.ai · Pre-B轮 · 2026-10-27 · 本轮领投 · Rs 130 crore。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8e3cc9b58cf4295d"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-8e3cc9b58cf4295d",
+          "source_url": "https://yourstory.com/2026/10/live2ai-raises-rs-130-cr-to-expand-its-ai-led-social-commerce-platform",
+          "source_title": "Live2.ai 融资 Rs 130 Cr，以扩展其 AI 驱动的社交电商平台",
+          "source_content_hash": "111d96a91a8982166db87b6d22b61762050edd595ca06aa319455cf0964caf38",
+          "quote": "has raised Rs 130 crore ($14 million) in a pre-Series B funding round led by venture capital firm IvyCap Ventures",
+          "quote_hash": "350f79c867bac889be88c5212fce1400508ff23cf88784be4b72c1815acc9f07"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-82329ca1e625df": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Micromax 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Simplismart · B轮 · 2026-10-27 · 本轮参投 · $14 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1a26335ff9013735"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-1a26335ff9013735",
+          "source_url": "https://www.ithome.com/1/018/726.htm",
+          "source_title": "英伟达投资印度初创公司 Simplismart，助力企业用更少 GPU 运行 AI 模型",
+          "source_content_hash": "404d88ff840f005ca2cfc6b5710f57793c704b4d1f839e3ffb3dbdf063966c6f",
+          "quote": "除英伟达外，Accel、Shastra VC 和 Micromax 也参与了投资",
+          "quote_hash": "69eb650b766e80b83c31eff16d249ddc4375bffb539144aed60dd9c8599b3539"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-ada39b5c37d594": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Neon Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：CopperPilot · 预种子轮 · 2026-10-27 · 本轮领投 · 39 万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0b078eb71cb87b58"
+        },
+        {
+          "description": "融资来源记录：CopperPilot · 预种子轮 · 2026-10-27 · 本轮领投 · 39 万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-21e4aa6d58d89c7b"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-0b078eb71cb87b58",
+          "source_url": "https://www.indexbox.io/zh-hans/blog/copperpilot-raises-390k-pre-seed-and-opens-epsilon-ai-design-agent-to-hardware-engineers/",
+          "source_title": "CopperPilot 完成 39 万美元 pre-seed 融资，并向硬件工程师开放 Epsilon AI 设计智能体",
+          "source_content_hash": "b343fa354b9491e93302b599becc956eb2b09286fb7a4040226b63b12bd3d8d3",
+          "quote": "Neon Fund 领投本轮，美国天使投资人也参与其中。",
+          "quote_hash": "0b5695fc642fffd3b4782e989ff18de3af001752ff2994207fb6a5ee7b00dae8"
+        },
+        {
+          "source_id": "FISRC-21e4aa6d58d89c7b",
+          "source_url": "https://www.eetimes.com/copperpilot-raises-pre-seed-to-develop-ai-agent-for-pcb-design/",
+          "source_title": "CopperPilot Raises Pre-seed to Develop AI Agent for PCB Design",
+          "source_content_hash": "658d0d809004fe66",
+          "quote": "has raised $390,000 in a pre-seed funding round led by Neon Fund, with participation from U.S.-based angel investors",
+          "quote_hash": "df524694fcf58a1b076660fdcc43993bc579205a387401550aca5de91ba43d42"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-1fa7ee2cb68a41": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Openspace Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Omnichat · A轮 · 2026-10-27 · 本轮领投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8cbc0bdd31af8f3a"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-8cbc0bdd31af8f3a",
+          "source_url": "https://martechseries.com/predictive-ai/ai-platforms-machine-learning/omnichat-raises-us10m-series-a-led-by-openspace-capital-to-scale-ai-agent-platform-and-drive-global-expansion/",
+          "source_title": "Omnichat 获 Openspace Capital 领投的 1000 万美元 A 轮融资，以扩展 AI 智能体平台并推动全球扩张",
+          "source_content_hash": "55865aa647087034492eebb5594bcd69b099ea5811d782a97a382deb9580e8d9",
+          "quote": "announced a US$10 million Series A funding round led by Openspace Capital, with participation from Darwin Ventures and Acorn Pacific Ventures",
+          "quote_hash": "14b0c60db1fa3751f6f140c69a27d2251923c77c9388cf3042cc389e7d41bddb"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-5b7ae84636da01": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Shastra VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Simplismart · B轮 · 2026-10-27 · 本轮参投 · $14 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1a26335ff9013735"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-1a26335ff9013735",
+          "source_url": "https://www.ithome.com/1/018/726.htm",
+          "source_title": "英伟达投资印度初创公司 Simplismart，助力企业用更少 GPU 运行 AI 模型",
+          "source_content_hash": "404d88ff840f005ca2cfc6b5710f57793c704b4d1f839e3ffb3dbdf063966c6f",
+          "quote": "除英伟达外，Accel、Shastra VC 和 Micromax 也参与了投资",
+          "quote_hash": "69eb650b766e80b83c31eff16d249ddc4375bffb539144aed60dd9c8599b3539"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-4e0dd5956cee2d": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -67245,6 +67694,168 @@
       ],
       "last_verified_at": "2026-10-06"
     },
+    "INV-6100dd81643128": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "天汇资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：智宠制药 · A1轮 · 2026-10-23 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f4d0e836fffd2992"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-f4d0e836fffd2992",
+          "source_url": "https://news.pedaily.cn/202610/570760.shtml",
+          "source_title": "智宠制药完成数千万元A1轮融资，重塑宠物药研发",
+          "source_content_hash": "d4d31796f3b5ddd38a58bf9173cdfcf904c98f8410c40e5f3e3b4f27f05e2213",
+          "quote": "本轮融资由天汇资本领投，指数资本担任独 家财务顾问。",
+          "quote_hash": "91af0884c518515b85dd4de23a8460fb10e14da46f9ade372b10f2896c402af6"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-99db46d2f3898a": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Andreas Bermig 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Cygrid · 预种子轮 · 2026-10-23 · 本轮参投 · €2.66 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-880e4507b090ae93"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-880e4507b090ae93",
+          "source_url": "https://www.eu-startups.com/2026/10/berlins-cygrid-exits-stealth-with-e2-66-million-to-stop-ai-agents-from-accessing-confidential-company-data/",
+          "source_title": "柏林的Cygrid结束隐身模式，获266万欧元融资，用于阻止AI智能体访问公司机密数据",
+          "source_content_hash": "340a05305bf0fe617b7d882af05ee95f37f9abdb10b5b029bd6558a9e0f05c0f",
+          "quote": "The funding round was led by Atlantic, the pan-European pre-Seed fund, with participation from D11Z. Ventures, alongside angel investors including Boris Gorin, VP Product at Zscaler and founder of Canonic Security; Andreas Bermig, CEO of bonify; and Vlad Tropko of AmberVale Capital.",
+          "quote_hash": "fd3de0cbb22e053f059b7c354994297dbf9a9b22f5e9e0d22fe04946a147ed9f"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-1c3531843c3c48": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Atlantic 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Cygrid · 预种子轮 · 2026-10-23 · 本轮领投 · €2.66 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-880e4507b090ae93"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-880e4507b090ae93",
+          "source_url": "https://www.eu-startups.com/2026/10/berlins-cygrid-exits-stealth-with-e2-66-million-to-stop-ai-agents-from-accessing-confidential-company-data/",
+          "source_title": "柏林的Cygrid结束隐身模式，获266万欧元融资，用于阻止AI智能体访问公司机密数据",
+          "source_content_hash": "340a05305bf0fe617b7d882af05ee95f37f9abdb10b5b029bd6558a9e0f05c0f",
+          "quote": "The funding round was led by Atlantic, the pan-European pre-Seed fund, with participation from D11Z. Ventures, alongside angel investors including Boris Gorin, VP Product at Zscaler and founder of Canonic Security; Andreas Bermig, CEO of bonify; and Vlad Tropko of AmberVale Capital.",
+          "quote_hash": "fd3de0cbb22e053f059b7c354994297dbf9a9b22f5e9e0d22fe04946a147ed9f"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-7a04333b829713": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Boris Gorin 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Cygrid · 预种子轮 · 2026-10-23 · 本轮参投 · €2.66 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-880e4507b090ae93"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-880e4507b090ae93",
+          "source_url": "https://www.eu-startups.com/2026/10/berlins-cygrid-exits-stealth-with-e2-66-million-to-stop-ai-agents-from-accessing-confidential-company-data/",
+          "source_title": "柏林的Cygrid结束隐身模式，获266万欧元融资，用于阻止AI智能体访问公司机密数据",
+          "source_content_hash": "340a05305bf0fe617b7d882af05ee95f37f9abdb10b5b029bd6558a9e0f05c0f",
+          "quote": "The funding round was led by Atlantic, the pan-European pre-Seed fund, with participation from D11Z. Ventures, alongside angel investors including Boris Gorin, VP Product at Zscaler and founder of Canonic Security; Andreas Bermig, CEO of bonify; and Vlad Tropko of AmberVale Capital.",
+          "quote_hash": "fd3de0cbb22e053f059b7c354994297dbf9a9b22f5e9e0d22fe04946a147ed9f"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-7ad4706e9c16ac": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "D11Z. Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Cygrid · 预种子轮 · 2026-10-23 · 本轮参投 · €2.66 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-880e4507b090ae93"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-880e4507b090ae93",
+          "source_url": "https://www.eu-startups.com/2026/10/berlins-cygrid-exits-stealth-with-e2-66-million-to-stop-ai-agents-from-accessing-confidential-company-data/",
+          "source_title": "柏林的Cygrid结束隐身模式，获266万欧元融资，用于阻止AI智能体访问公司机密数据",
+          "source_content_hash": "340a05305bf0fe617b7d882af05ee95f37f9abdb10b5b029bd6558a9e0f05c0f",
+          "quote": "The funding round was led by Atlantic, the pan-European pre-Seed fund, with participation from D11Z. Ventures, alongside angel investors including Boris Gorin, VP Product at Zscaler and founder of Canonic Security; Andreas Bermig, CEO of bonify; and Vlad Tropko of AmberVale Capital.",
+          "quote_hash": "fd3de0cbb22e053f059b7c354994297dbf9a9b22f5e9e0d22fe04946a147ed9f"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-ace867dae76e8a": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Vlad Tropko 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Cygrid · 预种子轮 · 2026-10-23 · 本轮参投 · €2.66 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-880e4507b090ae93"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-880e4507b090ae93",
+          "source_url": "https://www.eu-startups.com/2026/10/berlins-cygrid-exits-stealth-with-e2-66-million-to-stop-ai-agents-from-accessing-confidential-company-data/",
+          "source_title": "柏林的Cygrid结束隐身模式，获266万欧元融资，用于阻止AI智能体访问公司机密数据",
+          "source_content_hash": "340a05305bf0fe617b7d882af05ee95f37f9abdb10b5b029bd6558a9e0f05c0f",
+          "quote": "The funding round was led by Atlantic, the pan-European pre-Seed fund, with participation from D11Z. Ventures, alongside angel investors including Boris Gorin, VP Product at Zscaler and founder of Canonic Security; Andreas Bermig, CEO of bonify; and Vlad Tropko of AmberVale Capital.",
+          "quote_hash": "fd3de0cbb22e053f059b7c354994297dbf9a9b22f5e9e0d22fe04946a147ed9f"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-0b39ed9298c1f8": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -67446,6 +68057,33 @@
       ],
       "last_verified_at": "2026-10-06"
     },
+    "INV-adba27eac3245a": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Axeleo Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Indurex · 轮次未披露 · 2026-10-22 · 本轮参投 · €7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-00f4d890acbf7474"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-00f4d890acbf7474",
+          "source_url": "https://www.eu-startups.com/2026/10/amsterdams-indurex-raises-e7-million-to-strengthen-cybersecurity-and-safety-across-cyber-physical-systems/",
+          "source_title": "阿姆斯特丹的Indurex融资700万欧元，以加强网络物理系统的网络安全与安全",
+          "source_content_hash": "926430d967f04829cd8153cacb461c77b061abb5f4d3080ad41b211736b618d2",
+          "quote": "The round was led by Contrarian Ventures, the European early-stage firm that backs energy and industrial technology companies, with participation from Axeleo Capital and Dutch venture capital firm Curiosity.",
+          "quote_hash": "3f01106d8a238f3a00e4bb64f0cf4f188406007addab31a70e685a7d4908209a"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-262e97444cc12f": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -67496,6 +68134,114 @@
           "source_content_hash": "e0ea6cb2677f5899ca9412827ee49c8baa4d0fb6b40300318b8bc06331e4ec1e",
           "quote": "led by PeerCapital and Cedar Hill Capital",
           "quote_hash": "12620d85bf4418a51a560da5a58072e2f46bf64eaba126152598b300789c0896"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-cb4cc847d56ebf": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Contrarian Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Indurex · 轮次未披露 · 2026-10-22 · 本轮领投 · €7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-00f4d890acbf7474"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-00f4d890acbf7474",
+          "source_url": "https://www.eu-startups.com/2026/10/amsterdams-indurex-raises-e7-million-to-strengthen-cybersecurity-and-safety-across-cyber-physical-systems/",
+          "source_title": "阿姆斯特丹的Indurex融资700万欧元，以加强网络物理系统的网络安全与安全",
+          "source_content_hash": "926430d967f04829cd8153cacb461c77b061abb5f4d3080ad41b211736b618d2",
+          "quote": "The round was led by Contrarian Ventures, the European early-stage firm that backs energy and industrial technology companies, with participation from Axeleo Capital and Dutch venture capital firm Curiosity.",
+          "quote_hash": "3f01106d8a238f3a00e4bb64f0cf4f188406007addab31a70e685a7d4908209a"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-6cc7c5652910e6": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Credit Scend 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：X Pay · 基础设施融资 · 2026-10-22 · 本轮参投 · 100万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-51bb94905ac6b974"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-51bb94905ac6b974",
+          "source_url": "https://es.tradingview.com/news/panews:591e298aaacdf:0/",
+          "source_title": "支付基础设施X Pay完成100万美元融资，Skyland Ventures等参投",
+          "source_content_hash": "e5746bc7ef90fd76cb684b2777a6941548a78ed03a2518c21c916ba576f6640c",
+          "quote": "DCI、Credit Scend、Skyland Ventures、Zerra Ventures 等参投",
+          "quote_hash": "8b298b6bd497d4edfe9023784e070b89aa3edc1b348de12d43d791b833aa9d0b"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-a0afdc7d20ad5c": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Curiosity 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Indurex · 轮次未披露 · 2026-10-22 · 本轮参投 · €7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-00f4d890acbf7474"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-00f4d890acbf7474",
+          "source_url": "https://www.eu-startups.com/2026/10/amsterdams-indurex-raises-e7-million-to-strengthen-cybersecurity-and-safety-across-cyber-physical-systems/",
+          "source_title": "阿姆斯特丹的Indurex融资700万欧元，以加强网络物理系统的网络安全与安全",
+          "source_content_hash": "926430d967f04829cd8153cacb461c77b061abb5f4d3080ad41b211736b618d2",
+          "quote": "The round was led by Contrarian Ventures, the European early-stage firm that backs energy and industrial technology companies, with participation from Axeleo Capital and Dutch venture capital firm Curiosity.",
+          "quote_hash": "3f01106d8a238f3a00e4bb64f0cf4f188406007addab31a70e685a7d4908209a"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-40477a118a496f": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "DCI 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：X Pay · 基础设施融资 · 2026-10-22 · 本轮参投 · 100万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-51bb94905ac6b974"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-51bb94905ac6b974",
+          "source_url": "https://es.tradingview.com/news/panews:591e298aaacdf:0/",
+          "source_title": "支付基础设施X Pay完成100万美元融资，Skyland Ventures等参投",
+          "source_content_hash": "e5746bc7ef90fd76cb684b2777a6941548a78ed03a2518c21c916ba576f6640c",
+          "quote": "DCI、Credit Scend、Skyland Ventures、Zerra Ventures 等参投",
+          "quote_hash": "8b298b6bd497d4edfe9023784e070b89aa3edc1b348de12d43d791b833aa9d0b"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -67659,6 +68405,33 @@
       ],
       "last_verified_at": "2026-10-06"
     },
+    "INV-b4b4a1349609a1": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Skyland Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：X Pay · 基础设施融资 · 2026-10-22 · 本轮参投 · 100万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-51bb94905ac6b974"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-51bb94905ac6b974",
+          "source_url": "https://es.tradingview.com/news/panews:591e298aaacdf:0/",
+          "source_title": "支付基础设施X Pay完成100万美元融资，Skyland Ventures等参投",
+          "source_content_hash": "e5746bc7ef90fd76cb684b2777a6941548a78ed03a2518c21c916ba576f6640c",
+          "quote": "DCI、Credit Scend、Skyland Ventures、Zerra Ventures 等参投",
+          "quote_hash": "8b298b6bd497d4edfe9023784e070b89aa3edc1b348de12d43d791b833aa9d0b"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-ce6d51add1ecbd": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -67748,6 +68521,33 @@
           "source_content_hash": "e0ea6cb2677f5899ca9412827ee49c8baa4d0fb6b40300318b8bc06331e4ec1e",
           "quote": "Wyser VC, CDM Capital and Seedstars also participated",
           "quote_hash": "d8e26a48f8c5729d6728fa541149622ab74b07d5f3e848a966d04a3699275524"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-668c3e652cbd86": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Zerra Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：X Pay · 基础设施融资 · 2026-10-22 · 本轮参投 · 100万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-51bb94905ac6b974"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-51bb94905ac6b974",
+          "source_url": "https://es.tradingview.com/news/panews:591e298aaacdf:0/",
+          "source_title": "支付基础设施X Pay完成100万美元融资，Skyland Ventures等参投",
+          "source_content_hash": "e5746bc7ef90fd76cb684b2777a6941548a78ed03a2518c21c916ba576f6640c",
+          "quote": "DCI、Credit Scend、Skyland Ventures、Zerra Ventures 等参投",
+          "quote_hash": "8b298b6bd497d4edfe9023784e070b89aa3edc1b348de12d43d791b833aa9d0b"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -135783,70 +136583,6 @@
       ],
       "last_verified_at": "2026-10-04"
     },
-    "INV-2cb83d5bb199ff": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "summary": "Darwin Ventures官网将其介绍为风险投资母基金管理机构，主要投资美国早期风险投资基金，并覆盖科技、信息技术和医疗健康等领域。",
-      "facts": [
-        {
-          "field": "investment_model",
-          "label": "投资模式",
-          "value": "风险投资母基金（fund of funds）",
-          "source_id": "PFSRC-2cb83d5bb199ff-1"
-        },
-        {
-          "field": "investment_focus",
-          "label": "投资范围",
-          "value": "美国早期风险投资基金；科技、信息技术、医疗健康",
-          "source_id": "PFSRC-2cb83d5bb199ff-2"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：OXMIQ · A轮 · 2026-07-01 · 本轮参投 · $35 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b7d7449114c23ca5"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官方网站",
-          "value": "https://darwinvc.com/",
-          "url": "https://darwinvc.com/",
-          "source_id": "PFSRC-2cb83d5bb199ff-1"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "PFSRC-2cb83d5bb199ff-1",
-          "source_url": "https://darwinvc.com/",
-          "source_title": "Home - Darwin Ventures",
-          "source_content_hash": "b3c13f6f37050925337aaf2ea72d7f602c6d6d6f4854106e53a5f98febc0656b",
-          "quote": "Darwin Ventures is a venture capital fund of funds that provides individual and institutional investors (primarily educational endowments and foundations) unique access to investment opportunities that are generally unavailable to most investors.",
-          "quote_hash": "68384e38f2fefa00794ffb61aa641e95279d341ee964a2e0d0abd59ef3e8ef96"
-        },
-        {
-          "source_id": "PFSRC-2cb83d5bb199ff-2",
-          "source_url": "https://darwinvc.com/",
-          "source_title": "Home - Darwin Ventures",
-          "source_content_hash": "b3c13f6f37050925337aaf2ea72d7f602c6d6d6f4854106e53a5f98febc0656b",
-          "quote": "These investments include a diverse group of venture capital partnerships with a focus on US-based early-stage venture capital funds diversified across industry sectors including technology, information technology, and healthcare.",
-          "quote_hash": "cdc0149264d4b386d1b9f799ec342635a45a8e5ad8dfbdf05a00521c697d97cb"
-        },
-        {
-          "source_id": "FISRC-b7d7449114c23ca5",
-          "source_url": "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/",
-          "source_title": "HPCwire - 自1987年起——报道全球最快计算机及其运营者",
-          "source_content_hash": "7277428ab4a1fd81",
-          "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital",
-          "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
-        }
-      ],
-      "last_verified_at": "2026-10-02",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
-    },
     "INV-c2e2ff9e1c785d": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -144381,108 +145117,6 @@
         }
       ],
       "last_verified_at": "2026-10-02"
-    },
-    "INV-d34bdfce5f4a00": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "机构定位及策略来自 Apollo 官网；Broadcom AI XPV 是资本解决方案案例。公告只说明其为 Anthropic 扩充算力提供支持，不代表 Anthropic 股权投资。",
-      "summary": "Apollo Global Management 是一家另类资产管理和资本解决方案提供商，官网称公司成立于 1990 年，业务覆盖 Credit、Equity 和 Real Assets。2026 年，Apollo 管理的基金及关联方领衔 Broadcom AI XPV Platform 的初始资本方案，以支持 AI 计算基础设施扩容；官方公告将 Anthropic 描述为该平台将支持扩容的计算客户，并未称 Apollo 直接购买 Anthropic 股权。",
-      "facts": [
-        {
-          "field": "founded_year",
-          "label": "成立年份",
-          "value": "1990",
-          "source_id": "B24-APOLLO-ABOUT"
-        },
-        {
-          "field": "investment_focus",
-          "label": "业务范围",
-          "value": "信用、股权及实物资产投资。",
-          "source_id": "B24-APOLLO-STRATEGY"
-        },
-        {
-          "field": "investment_approach",
-          "label": "资本方案",
-          "value": "为企业提供长期资本及跨资本结构融资解决方案。",
-          "source_id": "B24-APOLLO-STRATEGY"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "Apollo 2026 年 6 月 9 日公告称，其管理基金及关联方领衔 Broadcom AI XPV Platform 的初始 350 亿美元资本方案；公告称该平台将支持 Anthropic 已宣布的算力扩张。这是 AI 基础设施资本方案，不能记为 Apollo 直接持有 Anthropic 股权。",
-          "source_id": "B24-APOLLO-XPV"
-        },
-        {
-          "description": "融资来源记录：Anthropic · 基础设施融资 · 2026-06-10 · 本轮领投 · 350亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-12d28955f3aa1a00"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官方网站",
-          "value": "https://www.apollo.com/",
-          "url": "https://www.apollo.com/",
-          "source_id": "B24-APOLLO-ABOUT"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "B24-APOLLO-ABOUT",
-          "source_url": "https://www.apollo.com/aboutus",
-          "source_title": "About Apollo | Apollo Global Management",
-          "source_content_hash": "137b0925dac4256bb246820b77567eba81991475832b3884a3ec9c5a1845084d",
-          "quote": "Since our founding in 1990, we have believed that adhering to our values is integral to our success.",
-          "quote_hash": "9b7cd405a6fca14dbe37ef97288d14039f4babe9492275c464e75bf731239dde"
-        },
-        {
-          "source_id": "B24-APOLLO-STRATEGY",
-          "source_url": "https://www.apollo.com/strategies",
-          "source_title": "Strategies | Apollo Global Management",
-          "source_content_hash": "73ede82569227b95fcee2567adfe4a906cceb928a9641a5753036d819bc8b266",
-          "quote": "We invest in private and public markets and across the full spectrum of Credit, Equity and Real Assets to seek excess returns for our clients",
-          "quote_hash": "03e2e4329891182397d79b4865a4645d18cf2639f6b4c4ba77b1ba71b5221f65"
-        },
-        {
-          "source_id": "B24-APOLLO-XPV",
-          "source_url": "https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai",
-          "source_title": "Apollo Leads $35 Billion Capital Solution for Broadcom AI XPV Platform in Partnership with Blackstone and Leading Global Banks :: Apollo Global Management, Inc. (APO)",
-          "source_content_hash": "c6cabe1fdd048dc5cb003c6baec6aba61dc124f84e639557a78c2d7f803b2673",
-          "quote": "Apollo-managed funds and affiliates are leading an initial $35 billion capital solution as part of Broadcom’s new AI XPV Platform (the “Platform”), in partnership with Blackstone (NYSE: BX) and leading global banks.",
-          "quote_hash": "541d78eee1ae43d8800090e5235317a031c7630d96c88ebb8c4ff5bd80c3a20d"
-        },
-        {
-          "source_id": "B24-APOLLO-ANTHROPIC",
-          "source_url": "https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai",
-          "source_title": "Apollo Leads $35 Billion Capital Solution for Broadcom AI XPV Platform in Partnership with Blackstone and Leading Global Banks :: Apollo Global Management, Inc. (APO)",
-          "source_content_hash": "c6cabe1fdd048dc5cb003c6baec6aba61dc124f84e639557a78c2d7f803b2673",
-          "quote": "It will facilitate Anthropic's previously announced capacity expansion of more than 1GW of compute infrastructure for training and inference starting in mid-2026.",
-          "quote_hash": "e4c0e73e3b60421cc8c3eeee6a46c8d628dcd8ead351e5a5266b314f708fb5e2"
-        },
-        {
-          "source_id": "FISRC-12d28955f3aa1a00",
-          "source_url": "https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai",
-          "source_title": "Apollo Leads $35 Billion Capital Solution for Broadcom AI XPV Platform in Partnership with Blackstone and Leading Global Banks :: Apollo Global Management, Inc. (APO)",
-          "source_content_hash": "c6cabe1fdd048dc5",
-          "quote": "Apollo (NYSE: APO) today announced that Apollo-managed funds and affiliates are leading an initial $35 billion capital solution",
-          "quote_hash": "5abeb14d93350c34a5fcca25aaa20c6bb10ce217d6931f75daa9db1b632c29b4"
-        },
-        {
-          "source_id": "FISRC-a689df7815b7bebf",
-          "source_url": "https://www.bloomberg.com/news/videos/2026-06-10/apollo-wraps-up-35b-chip-deal-for-anthropic-video",
-          "source_title": "Apollo 与 Blackstone 为 Anthropic 完成 350 亿美元 AI 基础设施融资",
-          "source_content_hash": "3f1bfda19f8a176b",
-          "quote": "Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic",
-          "quote_hash": "9cd11f1f01fe96fd799f5d5add5aa9b8f687f57dbe21aa034e6dcbd6a5086148"
-        }
-      ],
-      "last_verified_at": "2026-10-05",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "Apollo Global Management 是一家另类资产管理和资本解决方案提供商，官网称公司成立于 1990 年，业务覆盖 Credit、Equity 和 Real Assets。2026 年，Apollo 管理的基金及关联方领衔 Broadcom AI XPV Platform 的初始资本方案，以支持 AI 计算基础设施扩容；官方公告将 Anthropic 描述为该平台将支持扩容的计算客户，并未称 Apollo 直接购买 Anthropic 股权。"
     },
     "INV-70fb0fac6cc512": {
       "profile_type": "organization",
@@ -195201,6 +195835,33 @@
       ],
       "last_verified_at": "2026-09-28"
     },
+    "INV-3c6fd0b3111199": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "91APP 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Omnichat · 历史轮次未披露 · 历史投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ebd9c8aad5e89462"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-ebd9c8aad5e89462",
+          "source_url": "https://blog.omnichat.ai/omnichat-unveils-agentic-ai-platform/",
+          "source_title": "Omnichat achieves 8X growth and unveils Agentic AI Platform, aims to bag $10m in Series A+ round",
+          "source_content_hash": "6e50f780f8ad0c9c",
+          "quote": "Backed by prominent investors such as AppWorks, 91APP, Palm Drive Capital, Cornerstone Ventures and AVA Angels",
+          "quote_hash": "7c75f16bfa092faf8de17cc8631a34de5f7c38ef9f5d3b84dd8b65861af826c3"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-c45fbf7f0ede54": {
       "summary": "融资数据库中的“阿里”按阿里巴巴集团（Alibaba Group Holding Limited）归档。集团官方资料显示其是聚焦AI、云计算和电商的全球科技公司，并通过战略投资、并购和联盟强化业务生态及协同。投资界曾报道阿里是月之暗面2026年初融资的老股东，但未披露具体投资实体、轮次分配或金额；不能据此将该记录归到某一支基金。",
       "profile_type": "organization",
@@ -217556,6 +218217,60 @@
       ],
       "last_verified_at": "2026-10-06"
     },
+    "INV-52c8395ad5d8f3": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "AppWorks 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Omnichat · 历史轮次未披露 · 种子轮领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9dd328bac1b61381"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-9dd328bac1b61381",
+          "source_url": "https://appworks.tw/omnichat-seed/",
+          "source_title": "香港行銷機器人新創 Omnichat 完成 2,400 萬種子輪融資 AppWorks 領投，深耕台灣市場 - AppWorks 之初加速器",
+          "source_content_hash": "81b686412482dcac",
+          "quote": "完成 2,400 萬新台幣種子輪融資，由 AppWorks 領投",
+          "quote_hash": "43c91c502b77739cbfa176980cb6d67cf25e225c25a2028764e2e5837ba9d70b"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-fff8b9a2a4ce8b": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "AppWorks Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Omnichat · 历史轮次未披露 · 历史种子轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b7c50c031411185d"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-b7c50c031411185d",
+          "source_url": "https://www.omnichat.ai/about/",
+          "source_title": "Omnichat: Leading Omnichannel Chat Commerce Solution Provider",
+          "source_content_hash": "fc1d95654c398d70",
+          "quote": "We received a significant investment of US$0.8 million from Asia’s premier venture capital firm, AppWorks Ventures",
+          "quote_hash": "09e3b46784183c315d617510a72df740b2fdbe4fe8f361378805010341c5b47a"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-af9bf7a00f0754": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -218274,6 +218989,33 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "INV-caf99f49aa8801": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "AVA Angels 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Omnichat · 历史轮次未披露 · 历史投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ebd9c8aad5e89462"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-ebd9c8aad5e89462",
+          "source_url": "https://blog.omnichat.ai/omnichat-unveils-agentic-ai-platform/",
+          "source_title": "Omnichat achieves 8X growth and unveils Agentic AI Platform, aims to bag $10m in Series A+ round",
+          "source_content_hash": "6e50f780f8ad0c9c",
+          "quote": "Backed by prominent investors such as AppWorks, 91APP, Palm Drive Capital, Cornerstone Ventures and AVA Angels",
+          "quote_hash": "7c75f16bfa092faf8de17cc8631a34de5f7c38ef9f5d3b84dd8b65861af826c3"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
     },
     "INV-47b3a8a5c1c541": {
       "profile_type": "organization",
@@ -221745,6 +222487,33 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "researched"
+    },
+    "INV-865f1cc6e8bbe5": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Cornerstone Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Omnichat · 历史轮次未披露 · 历史投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ebd9c8aad5e89462"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-ebd9c8aad5e89462",
+          "source_url": "https://blog.omnichat.ai/omnichat-unveils-agentic-ai-platform/",
+          "source_title": "Omnichat achieves 8X growth and unveils Agentic AI Platform, aims to bag $10m in Series A+ round",
+          "source_content_hash": "6e50f780f8ad0c9c",
+          "quote": "Backed by prominent investors such as AppWorks, 91APP, Palm Drive Capital, Cornerstone Ventures and AVA Angels",
+          "quote_hash": "7c75f16bfa092faf8de17cc8631a34de5f7c38ef9f5d3b84dd8b65861af826c3"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
     },
     "INV-1468ec3bd4caa5": {
       "profile_type": "organization",
@@ -232870,6 +233639,33 @@
       ],
       "last_verified_at": "2026-10-02"
     },
+    "INV-5bfd847839b73f": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Palm Drive Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Omnichat · 历史轮次未披露 · 历史投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ebd9c8aad5e89462"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-ebd9c8aad5e89462",
+          "source_url": "https://blog.omnichat.ai/omnichat-unveils-agentic-ai-platform/",
+          "source_title": "Omnichat achieves 8X growth and unveils Agentic AI Platform, aims to bag $10m in Series A+ round",
+          "source_content_hash": "6e50f780f8ad0c9c",
+          "quote": "Backed by prominent investors such as AppWorks, 91APP, Palm Drive Capital, Cornerstone Ventures and AVA Angels",
+          "quote_hash": "7c75f16bfa092faf8de17cc8631a34de5f7c38ef9f5d3b84dd8b65861af826c3"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-6b75c5e4f01788": {
       "summary": "Paradigm官网将其定位为前沿科技投资机构，称其从早期开始建设并投资加密技术、人工智能、机器人等领域。",
       "facts": [
@@ -236676,6 +237472,33 @@
         }
       ],
       "last_verified_at": "2026-10-03"
+    },
+    "INV-8a424720ac2b91": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "The Aria Group 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Omnichat · 历史轮次未披露 · 历史种子轮参投方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9dd328bac1b61381"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-9dd328bac1b61381",
+          "source_url": "https://appworks.tw/omnichat-seed/",
+          "source_title": "香港行銷機器人新創 Omnichat 完成 2,400 萬種子輪融資 AppWorks 領投，深耕台灣市場 - AppWorks 之初加速器",
+          "source_content_hash": "81b686412482dcac",
+          "quote": "由 AppWorks 領投，其他投資人則包括 The Aria Group",
+          "quote_hash": "761f4c31fee0cbd396f8eab5d68d284c0a86fb9115e6243848721b5e20494606"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
     },
     "INV-f49345d6a3418b": {
       "profile_type": "organization",
