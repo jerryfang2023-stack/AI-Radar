@@ -1,6 +1,6 @@
 {
   "version": "FINANCING-PUBLICATION-REVIEW-1",
-  "reviewed_at": "2026-10-28",
+  "reviewed_at": "2026-10-28T06:43:55.908408+00:00",
   "market_corrections": [
     {
       "event_id": "EV-65154e5eb49c218b",
@@ -563,6 +563,26 @@
       "source_url": "https://www.eu-startups.com/2026/10/italys-z_one-fund-secures-over-e35-million-at-first-close-to-back-ai-and-urbantech-startups/",
       "reason": "事件主体抽取错误：报道对象为意大利 Z_One Fund（基金/投资方），并非单一被投公司；同时 DeepSeek 研究输出缺 product_form_id / market_category_id / market_subcategory_id，且 market_subcategory_id 填入非法值，判 deepseek_json_quality_failed。待上游修正主体抽取与分类 schema 校验后重跑；本条按 documented hold 挂起。",
       "reviewed_at": "2026-10-28"
+    },
+    {
+      "event_id": "EV-c5984dabb5a697b9",
+      "status": "pending",
+      "source_url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+      "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
+      "source_quote": "SpaceX expects the deal to close by year-end, subject to closing conditions, with leases starting in the first half of 2027 as the GPUs and related equipment arrive.",
+      "reviewed_at": "2026-10-28T06:43:55.908408+00:00",
+      "reviewer": "Codex responsible original-source review",
+      "reason": "同一 2026-10-26 Apollo GPU 设备租赁融资承诺的两条来源统一待确认。已捕获原文明确预计年底交割、仍有交割条件、2027 年上半年开始租赁；不能将该承诺作为已完成融资公开。两条来源均保留，待取得实际交割及融资工具证据后统一轮次和去重。原文同时确认 SpaceX 有 Grok、Cursor 和云计算 AI 业务，暂缓原因是尚未交割及来源状态冲突，不是仅凭航天公司名称排除 AI 业务。"
+    },
+    {
+      "event_id": "EV-d80c8dee36bd767a",
+      "status": "pending",
+      "source_url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+      "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
+      "source_quote": "SpaceX expects the deal to close by year-end, subject to closing conditions, with leases starting in the first half of 2027 as the GPUs and related equipment arrive.",
+      "reviewed_at": "2026-10-28T06:43:55.908408+00:00",
+      "reviewer": "Codex responsible original-source review",
+      "reason": "同一 2026-10-26 Apollo GPU 设备租赁融资承诺的两条来源统一待确认。已捕获原文明确预计年底交割、仍有交割条件、2027 年上半年开始租赁；不能将该承诺作为已完成融资公开。两条来源均保留，待取得实际交割及融资工具证据后统一轮次和去重。原文同时确认 SpaceX 有 Grok、Cursor 和云计算 AI 业务，暂缓原因是尚未交割及来源状态冲突，不是仅凭航天公司名称排除 AI 业务。"
     }
   ],
   "resolutions": [

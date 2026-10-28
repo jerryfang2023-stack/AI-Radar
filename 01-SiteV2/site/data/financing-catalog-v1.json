@@ -8,14 +8,14 @@
     "latest_date": "2026-10-28",
     "last_checked_date": "2026-10-28",
     "latest_financing_date": "2026-10-27",
-    "generated_at": "2026-10-28T05:50:40.344Z",
-    "card_count": 668,
+    "generated_at": "2026-10-28T06:49:55.070Z",
+    "card_count": 667,
     "china_market_card_count": 147,
     "duplicate_rounds_removed": 25,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-10-28T05:51:26.289Z"
+      "generated_at": "2026-10-28T06:51:59.923Z"
     },
     "market_category_framework": {
       "name": "观澜 AI 融资分类",
@@ -35,12 +35,12 @@
         }
       ]
     },
-    "event_count": 715,
+    "event_count": 714,
     "aggregation_strategy": "reviewed_funding_subject",
     "scope": "all_ai_financing_except_embodied_and_robotics",
-    "excluded_count": 88,
+    "excluded_count": 87,
     "pending_classification_count": 20,
-    "pending_publication_count": 38
+    "pending_publication_count": 40
   },
   "taxonomy": {
     "version": "AI-FUNDING-TAGS-1.0",
@@ -6345,654 +6345,6 @@
       "source_card_ids": [
         "FI-37d7c5e453ca9656",
         "FI-3734798e9a7f3c5c"
-      ]
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-b3c61667cf05c2dd",
-      "triggered_by_event_id": "EV-c5984dabb5a697b9",
-      "as_of_date": "2026-10-28",
-      "company": {
-        "entity_id": "EN-e78bdebae031095b",
-        "name": "SpaceX",
-        "full_name": "SpaceX",
-        "website": "",
-        "summary": "SpaceX是一家同时经营航天发射、卫星宽带与AI基础设施业务的公司，本轮通过售后回租方式为AI芯片及数据中心设备融资约400亿美元。",
-        "headquarters": "",
-        "founders": [],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-d6e31d9e0fa6ab5c",
-            "quote": "SpaceX has reached a binding commitment for roughly $40 billion in financing for AI chips and related data center equipment",
-            "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-            "quote_hash": "46bbfe84ff54f76c70a72828ef443bda83c394f723413121c5b2065c2ffa7026"
-          },
-          {
-            "source_id": "FISRC-d6e31d9e0fa6ab5c",
-            "quote": "The financing comes as SpaceX ramps spending to expand its AI infrastructure, alongside its Starlink and launch businesses.",
-            "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-            "quote_hash": "ee543cb60ae4d92baeb0317fc52460e604aa87af2a5222294c6211d1441cfc4b"
-          }
-        ],
-        "application_entity_id": "EN-e78bdebae031095b",
-        "canonical_entity_consistent": true
-      },
-      "financing": {
-        "round": "轮次未披露",
-        "amount": "$40 billion",
-        "total_raised": "",
-        "announced_at": "2026-10-26",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "Apollo Global Management",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d6e31d9e0fa6ab5c",
-                "quote": "an entity managed by Apollo Global Management, the New York-based private equity giant, will buy the chips and related server hardware, then lease the equipment to SpaceX",
-                "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-                "quote_hash": "90e96ac99f49a8fd9ca53fa1304ed01fb9e00dc1dc1db75fe6f4088d92ab9f4e"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-d34bdfce5f4a00"
-          }
-        ],
-        "other_round_investors": [],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-d6e31d9e0fa6ab5c",
-            "quote": "SpaceX has reached a binding commitment for roughly $40 billion in financing for AI chips and related data center equipment",
-            "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-            "quote_hash": "46bbfe84ff54f76c70a72828ef443bda83c394f723413121c5b2065c2ffa7026"
-          },
-          {
-            "source_id": "FISRC-d6e31d9e0fa6ab5c",
-            "quote": "SpaceX has reached a binding commitment for roughly $40 billion in financing for AI chips and related data center equipment, the company disclosed in a regulatory filing Monday.",
-            "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-            "quote_hash": "e3ece18ff6eb664e3b291b5413cf489a59e6f9648501de268ede4309c8fd6df9"
-          },
-          {
-            "source_id": "FISRC-d6e31d9e0fa6ab5c",
-            "quote": "SpaceX expects the deal to close by year-end, subject to closing conditions, with leases starting in the first half of 2027 as the GPUs and related equipment arrive.",
-            "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-            "quote_hash": "4147bc84baea354525b573bf51ed9b57efccdf32ff84b72efdf62eb622609737"
-          }
-        ],
-        "round_code": "undisclosed",
-        "round_original": "轮次未披露",
-        "amount_original": "$40 billion",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 40000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "400 亿美元"
-        },
-        "total_raised_original": "",
-        "total_raised_normalized": {
-          "currency": "",
-          "value": null,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "undisclosed",
-          "display_zh": ""
-        },
-        "risk_markers": [],
-        "disclosures": [
-          {
-            "event_id": "EV-c5984dabb5a697b9",
-            "round_original": "轮次未披露",
-            "amount": "$40 billion",
-            "announced_at": "2026-10-26",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d6e31d9e0fa6ab5c",
-                "quote": "SpaceX has reached a binding commitment for roughly $40 billion in financing for AI chips and related data center equipment",
-                "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-                "quote_hash": "46bbfe84ff54f76c70a72828ef443bda83c394f723413121c5b2065c2ffa7026"
-              },
-              {
-                "source_id": "FISRC-d6e31d9e0fa6ab5c",
-                "quote": "SpaceX has reached a binding commitment for roughly $40 billion in financing for AI chips and related data center equipment, the company disclosed in a regulatory filing Monday.",
-                "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-                "quote_hash": "e3ece18ff6eb664e3b291b5413cf489a59e6f9648501de268ede4309c8fd6df9"
-              },
-              {
-                "source_id": "FISRC-d6e31d9e0fa6ab5c",
-                "quote": "SpaceX expects the deal to close by year-end, subject to closing conditions, with leases starting in the first half of 2027 as the GPUs and related equipment arrive.",
-                "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-                "quote_hash": "4147bc84baea354525b573bf51ed9b57efccdf32ff84b72efdf62eb622609737"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "partially_disclosed",
-        "cumulative_amount": {
-          "original": "",
-          "normalized": {
-            "currency": "",
-            "value": null,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "undisclosed",
-            "display_zh": ""
-          },
-          "basis": "known_rounds_only",
-          "known_round_totals": [
-            {
-              "currency": "USD",
-              "value": 40000000000,
-              "min_value": null,
-              "max_value": null,
-              "unit": "base",
-              "round_count": 1,
-              "status": "exact",
-              "display_zh": "400 亿美元"
-            }
-          ],
-          "historical_round_count": 1
-        },
-        "current_source_ids": [
-          "FISRC-d6e31d9e0fa6ab5c"
-        ]
-      },
-      "products": [
-        {
-          "name": "AI芯片与数据中心设备租赁融资",
-          "description": "由Apollo管理的实体购买AI芯片及相关服务器硬件，再以约五年至五年零三个月的租期出租给SpaceX，用于其地面算力建设。",
-          "target_customers": "SpaceX自身AI算力与云服务业务",
-          "features": [
-            "售后回租结构",
-            "租期约五至五年零三个月",
-            "设备为Nvidia下一代Vera Rubin芯片"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d6e31d9e0fa6ab5c",
-              "quote": "Under the agreement, an entity managed by Apollo Global Management, the New York-based private equity giant, will buy the chips and related server hardware, then lease the equipment to SpaceX.",
-              "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-              "quote_hash": "c08a52cfc989770db70fd946d165c62eb905e63dc1a5752ffd40212014aa9670"
-            },
-            {
-              "source_id": "FISRC-d6e31d9e0fa6ab5c",
-              "quote": "Apollo said the financing will help deliver Nvidia’s next-generation Vera Rubin chips for SpaceX’s “terrestrial compute buildout.”",
-              "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-              "quote_hash": "7bcd2b5988c3a855bff23f5a653cd79276281d99eb36c43935f978fea34bc7ce"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Grok",
-          "description": "SpaceX AI业务中的聊天机器人产品。",
-          "target_customers": "",
-          "features": [],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d6e31d9e0fa6ab5c",
-              "quote": "SpaceX’s AI segment, which includes the Grok chatbot, the Cursor coding tool, and its cloud compute business",
-              "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-              "quote_hash": "731f6e0a05cdb7433bcc2cc1bdef76c279bc032d7299b3360c94cb00202659e0"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Cursor",
-          "description": "SpaceX AI业务中的编程工具。",
-          "target_customers": "",
-          "features": [],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d6e31d9e0fa6ab5c",
-              "quote": "SpaceX’s AI segment, which includes the Grok chatbot, the Cursor coding tool, and its cloud compute business",
-              "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-              "quote_hash": "731f6e0a05cdb7433bcc2cc1bdef76c279bc032d7299b3360c94cb00202659e0"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [],
-      "comparisons": [],
-      "metrics": [
-        {
-          "label": "本轮融资规模",
-          "value": "约400亿美元",
-          "observed_at": "2026-10-26",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d6e31d9e0fa6ab5c",
-              "quote": "roughly $40 billion in financing for AI chips and related data center equipment",
-              "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-              "quote_hash": "5420a3da900e8876c221ed04311400fbeb1743e8fb037eb6b8090a8f5e6a464c"
-            }
-          ]
-        },
-        {
-          "label": "AI业务第三季度收入",
-          "value": "76亿美元",
-          "observed_at": "2026-10-26",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d6e31d9e0fa6ab5c",
-              "quote": "brought in $7.6 billion of SpaceX’s $14.6 billion in revenue",
-              "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-              "quote_hash": "59fb1077e1585bc4357243dbfbd79d99b802e70861f5f667570a5765e1e44026"
-            }
-          ]
-        },
-        {
-          "label": "公司第三季度总收入",
-          "value": "146亿美元",
-          "observed_at": "2026-10-26",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d6e31d9e0fa6ab5c",
-              "quote": "brought in $7.6 billion of SpaceX’s $14.6 billion in revenue",
-              "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-              "quote_hash": "59fb1077e1585bc4357243dbfbd79d99b802e70861f5f667570a5765e1e44026"
-            }
-          ]
-        },
-        {
-          "label": "资本开支",
-          "value": "近200亿美元",
-          "observed_at": "2026-10-26",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d6e31d9e0fa6ab5c",
-              "quote": "Capital expenditures also surged to nearly $20 billion, up from $6.9 billion a year earlier",
-              "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-              "quote_hash": "cdb10eaa566a78627f1473855c2dc8bda5f9b41b548cac6f6e27cd1663e43cdf"
-            }
-          ]
-        },
-        {
-          "label": "第四季度预计支出",
-          "value": "350亿至400亿美元",
-          "observed_at": "2026-10-26",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d6e31d9e0fa6ab5c",
-              "quote": "SpaceX expects to spend $35 billion to $40 billion in the fourth quarter alone",
-              "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-              "quote_hash": "8cf4c977740af102da3ca8de4ce4d5305580f1fdbfa8cf9508b879720a474774"
-            }
-          ]
-        },
-        {
-          "label": "租期",
-          "value": "约五年至五年零三个月",
-          "observed_at": "2026-10-26",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d6e31d9e0fa6ab5c",
-              "quote": "The leases will last about five to five-and-a-quarter years",
-              "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-              "quote_hash": "3cea6a3e02bc21e5bfd22d17749ebfa04dc92b6f8eb0636a57b9f9d046f4c4d0"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "Bret Johnsen",
-          "quote": "This lease diversifies our funding sources and addresses a notable portion of the funding required to deliver on our growth plans",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d6e31d9e0fa6ab5c",
-              "quote": "“This lease diversifies our funding sources and addresses a notable portion of the funding required to deliver on our growth plans,” SpaceX CFO Bret Johnsen said",
-              "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-              "quote_hash": "60b476c06b5a0c79383b91744c09d842db71ba0dfd24ab0ac72f4d3251b03f3a"
-            }
-          ]
-        },
-        {
-          "speaker": "Bret Johnsen",
-          "quote": "less than one-year payback periods",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d6e31d9e0fa6ab5c",
-              "quote": "noting it is seeing “less than one-year payback periods” on its AI infrastructure investments",
-              "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-              "quote_hash": "9c6ec72c79f313af560dccf704a9c7905cd4400efd747ad81fdb24d7de03f9a9"
-            }
-          ]
-        },
-        {
-          "speaker": "Elon Musk",
-          "quote": "That means the 200+ neoclouds are going to see guppy-level death and consolidation",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d6e31d9e0fa6ab5c",
-              "quote": "“That means the 200+ neoclouds are going to see guppy-level death and consolidation,” Musk wrote on X.",
-              "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-              "quote_hash": "a2fad07ef308ee48e06310f7dd35cb06f345335222f07066c9c5bb529eb48d4b"
-            }
-          ]
-        },
-        {
-          "speaker": "fool.com",
-          "quote": "I think there is a good chance SpaceX will be a far bigger company than it is right now in a couple of years, and that it could turn a $5,000 investment made today into a position worth $12,500 by the end of 2028.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-10828758e06c2a6e",
-              "quote": "I think there is a good chance SpaceX will be a far bigger company than it is right now in a couple of years, and that it could turn a $5,000 investment made today into a position worth $12,500 by the end of 2028.",
-              "source_content_hash": "fe938714b1b4d988",
-              "quote_hash": "55d0c38dd998065ed42ac4f460098d759b985c487abcbbef8a387bd7c22e8f40"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [],
-        "capital_judgment": "资本押注的核心变量是SpaceX能否用AI业务的高增长现金流覆盖快速膨胀的算力资本开支。已验证信号包括：AI业务第三季度收入76亿美元、公司总收入146亿美元，AI业务已超过Starlink与火箭发射合计；资本开支从上年同期69亿美元升至近200亿美元，第四季度预计再支出350亿至400亿美元。Apollo通过购买设备并回租的方式提供约400亿美元融资，租期约五年，降低了SpaceX对传统债务市场的单一依赖。证据边界在于：交易尚待年底前满足交割条件，租赁自2027年上半年设备到货才启动；CFO所称“不到一年回本周期”为公司自述，未经独立验证。",
-        "validated_signals": [
-          "AI业务第三季度收入76亿美元，占公司146亿美元总收入过半",
-          "AI业务收入超过Starlink与火箭发射业务合计",
-          "公司已就约400亿美元AI芯片及数据中心设备融资达成有约束力承诺",
-          "设备为Nvidia下一代Vera Rubin芯片，用于地面算力建设"
-        ],
-        "risks": [
-          "交易尚需满足交割条件，预计年底前完成，存在不能按期交割的风险",
-          "租赁自2027年上半年设备到货才启动，算力扩张与收入兑现存在时间差",
-          "CFO所称“不到一年回本周期”为公司自述，缺少独立验证",
-          "资本开支与第四季度支出指引规模巨大，若AI需求或定价不及预期将放大财务压力"
-        ],
-        "sector": "AI 云与算力服务",
-        "investment_thesis": {
-          "statement": "资本押注的核心变量是SpaceX能否用AI业务的高增长现金流覆盖快速膨胀的算力资本开支。已验证信号包括：AI业务第三季度收入76亿美元、公司总收入146亿美元，AI业务已超过Starlink与火箭发射合计；资本开支从上年同期69亿美元升至近200亿美元，第四季度预计再支出350亿至400亿美元。Apollo通过购买设备并回租的方式提供约400亿美元融资，租期约五年，降低了SpaceX对传统债务市场的单一依赖。证据边界在于：交易尚待年底前满足交割条件，租赁自2027年上半年设备到货才启动；CFO所称“不到一年回本周期”为公司自述，未经独立验证。",
-          "evidence_signals": [
-            "AI业务第三季度收入76亿美元，占公司146亿美元总收入过半",
-            "AI业务收入超过Starlink与火箭发射业务合计",
-            "公司已就约400亿美元AI芯片及数据中心设备融资达成有约束力承诺",
-            "设备为Nvidia下一代Vera Rubin芯片，用于地面算力建设"
-          ],
-          "risks": [
-            "交易尚需满足交割条件，预计年底前完成，存在不能按期交割的风险",
-            "租赁自2027年上半年设备到货才启动，算力扩张与收入兑现存在时间差",
-            "CFO所称“不到一年回本周期”为公司自述，缺少独立验证",
-            "资本开支与第四季度支出指引规模巨大，若AI需求或定价不及预期将放大财务压力"
-          ],
-          "institutional_rationale_status": "not_disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "AI芯片与数据中心设备租赁融资",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Grok",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Cursor",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Apollo Global Management",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [
-        {
-          "event_id": "EV-c5984dabb5a697b9",
-          "date": "2026-10-26",
-          "title": "SpaceX与Apollo敲定400亿美元GPU融资协议",
-          "amount": "$40 billion",
-          "source_refs": [
-            "SA-ce6958893e39120e"
-          ]
-        }
-      ],
-      "research_sources": [
-        {
-          "source_id": "FISRC-d6e31d9e0fa6ab5c",
-          "source_url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
-          "title": "SpaceX与Apollo敲定400亿美元GPU融资协议",
-          "publisher": "techcrunch.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-10-28T00:17:24.268Z",
-          "content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-          "source_artifact_id": "SA-ce6958893e39120e",
-          "raw_id": "RAW-5eb0c66c744c3af4",
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-10828758e06c2a6e",
-          "source_url": "https://www.fool.com/investing/2026/10/27/here-is-what-a-5000-investment-in-spacex-could-be/",
-          "title": "Here Is What a $5,000 Investment in SpaceX Could Be Worth by 2028",
-          "publisher": "fool.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-10-28T00:42:11.663Z",
-          "content_hash": "fe938714b1b4d988",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-flash",
-        "attempts": 2,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-10-28T00:42:48.529Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-10-28T00:42:48.529Z",
-      "customer_research": {
-        "status": "no_verified_customer_found",
-        "verified_customer_count": 0,
-        "searched_source_count": 2
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 3,
-          "unresolved_names": [
-            "AI芯片与数据中心设备租赁融资",
-            "Cursor",
-            "Grok"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 0,
-          "unresolved_names": []
-        }
-      },
-      "source_event_ids": [
-        "EV-c5984dabb5a697b9"
-      ],
-      "aggregation": {
-        "key": "EN-e78bdebae031095b|undisclosed|USD:exact:40000000000:::|2026-10-26",
-        "event_count": 1,
-        "strategy": "reviewed_funding_subject",
-        "subject_id": "EN-e78bdebae031095b",
-        "source_card_count": 1
-      },
-      "historical_rounds": [
-        {
-          "funding_insight_id": "FI-b3c61667cf05c2dd",
-          "event_ids": [
-            "EV-c5984dabb5a697b9",
-            "EV-c5984dabb5a697b9"
-          ],
-          "round": "轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "轮次未披露",
-          "amount_original": "$40 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 40000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "400 亿美元"
-          },
-          "announced_at": "2026-10-26",
-          "disclosure_status": "partially_disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": true,
-          "investors": [
-            {
-              "name": "Apollo Global Management",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-d6e31d9e0fa6ab5c",
-                  "quote": "an entity managed by Apollo Global Management, the New York-based private equity giant, will buy the chips and related server hardware, then lease the equipment to SpaceX",
-                  "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-                  "quote_hash": "90e96ac99f49a8fd9ca53fa1304ed01fb9e00dc1dc1db75fe6f4088d92ab9f4e"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-d34bdfce5f4a00"
-            }
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d6e31d9e0fa6ab5c",
-              "quote": "SpaceX has reached a binding commitment for roughly $40 billion in financing for AI chips and related data center equipment",
-              "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-              "quote_hash": "46bbfe84ff54f76c70a72828ef443bda83c394f723413121c5b2065c2ffa7026"
-            },
-            {
-              "source_id": "FISRC-d6e31d9e0fa6ab5c",
-              "quote": "SpaceX has reached a binding commitment for roughly $40 billion in financing for AI chips and related data center equipment, the company disclosed in a regulatory filing Monday.",
-              "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-              "quote_hash": "e3ece18ff6eb664e3b291b5413cf489a59e6f9648501de268ede4309c8fd6df9"
-            },
-            {
-              "source_id": "FISRC-d6e31d9e0fa6ab5c",
-              "quote": "SpaceX expects the deal to close by year-end, subject to closing conditions, with leases starting in the first half of 2027 as the GPUs and related equipment arrive.",
-              "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-              "quote_hash": "4147bc84baea354525b573bf51ed9b57efccdf32ff84b72efdf62eb622609737"
-            }
-          ]
-        }
-      ],
-      "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
-        "source_registry_ids": []
-      },
-      "product_form": {
-        "id": "compute",
-        "name": "算力服务",
-        "dimension": "financing_product_form"
-      },
-      "market_category": {
-        "id": "compute",
-        "name": "AI 算力与芯片",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "compute-cloud",
-        "name": "AI 云与算力服务",
-        "dimension": "financing_subsector"
-      },
-      "market_application": null,
-      "links": {
-        "company": "data-center.html?view=index&detail=entity&id=EN-e78bdebae031095b",
-        "relation_map": "data-center.html?view=relations&entity=EN-e78bdebae031095b",
-        "funding_event": "data-center.html?view=events&detail=event&id=EV-c5984dabb5a697b9"
-      },
-      "translations": {
-        "zh-CN": {
-          "products[0].features[2]": {
-            "text": "设备为Nvidia下一代Vera Rubin芯片",
-            "source_hash": "cc8f9b1b21e829b5cd2e85c273dc878d6df74d29bb72da1a16724ea58be6809c",
-            "provider": "deepseek",
-            "model": "deepseek-flash",
-            "translated_at": "2026-10-28T05:51:26.289Z",
-            "status": "translated"
-          }
-        }
-      },
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "compute",
-          "name": "AI 算力与芯片"
-        },
-        "subsector": {
-          "id": "compute-cloud",
-          "name": "AI 云与算力服务"
-        },
-        "product_form": {
-          "id": "compute",
-          "name": "算力服务"
-        },
-        "customers": [
-          {
-            "id": "business",
-            "name": "企业"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-d6e31d9e0fa6ab5c",
-            "quote": "SpaceX has reached a binding commitment for roughly $40 billion in financing for AI chips and related data center equipment"
-          },
-          {
-            "source_id": "FISRC-d6e31d9e0fa6ab5c",
-            "quote": "The financing comes as SpaceX ramps spending to expand its AI infrastructure, alongside its Starlink and launch businesses."
-          },
-          {
-            "source_id": "FISRC-d6e31d9e0fa6ab5c",
-            "quote": "Under the agreement, an entity managed by Apollo Global Management, the New York-based private equity giant, will buy the chips and related server hardware, then lease the equipment to SpaceX."
-          },
-          {
-            "source_id": "FISRC-d6e31d9e0fa6ab5c",
-            "quote": "Apollo said the financing will help deliver Nvidia’s next-generation Vera Rubin chips for SpaceX’s “terrestrial compute buildout.”"
-          },
-          {
-            "source_id": "FISRC-d6e31d9e0fa6ab5c",
-            "quote": "SpaceX’s AI segment, which includes the Grok chatbot, the Cursor coding tool, and its cloud compute business"
-          }
-        ],
-        "rationale": "SpaceX融资用于AI芯片与数据中心设备，扩展云算力业务，属AI云与算力服务。"
-      },
-      "source_card_ids": [
-        "FI-b3c61667cf05c2dd"
       ]
     },
     {
@@ -13847,7 +13199,7 @@
     },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-da06807f6f36d973",
+      "funding_insight_id": "FI-dcf875340392c0f6",
       "triggered_by_event_id": "EV-6c199dc14b6e6a12",
       "as_of_date": "2026-10-28",
       "company": {
@@ -13881,7 +13233,7 @@
         "canonical_entity_consistent": false
       },
       "financing": {
-        "round": "基础设施融资",
+        "round": "轮次未披露",
         "amount": "100万美元",
         "total_raised": "",
         "announced_at": "2026-10-22",
@@ -13965,8 +13317,8 @@
             "quote_hash": "732c3f354db89077aa18e0b307fc5a128282c9b52fc0b70f7bdd67cc10001553"
           }
         ],
-        "round_code": "infrastructure",
-        "round_original": "基础设施融资",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
         "amount_original": "100万美元",
         "amount_normalized": {
           "currency": "USD",
@@ -13991,7 +13343,7 @@
         "disclosures": [
           {
             "event_id": "EV-6c199dc14b6e6a12",
-            "round_original": "基础设施融资",
+            "round_original": "轮次未披露",
             "amount": "100万美元",
             "announced_at": "2026-10-22",
             "evidence_refs": [
@@ -14016,7 +13368,7 @@
             ]
           }
         ],
-        "disclosure_status": "disclosed",
+        "disclosure_status": "partially_disclosed",
         "cumulative_amount": {
           "original": "",
           "normalized": {
@@ -14237,7 +13589,7 @@
         "EV-6c199dc14b6e6a12"
       ],
       "aggregation": {
-        "key": "EN-96ad68901f251136|infrastructure|USD:exact:1000000:::|2026-10-22",
+        "key": "EN-96ad68901f251136|undisclosed|USD:exact:1000000:::|2026-10-22",
         "event_count": 1,
         "strategy": "reviewed_funding_subject",
         "subject_id": "EN-96ad68901f251136",
@@ -14245,14 +13597,14 @@
       },
       "historical_rounds": [
         {
-          "funding_insight_id": "FI-da06807f6f36d973",
+          "funding_insight_id": "FI-dcf875340392c0f6",
           "event_ids": [
             "EV-6c199dc14b6e6a12",
             "EV-6c199dc14b6e6a12"
           ],
-          "round": "基础设施融资",
-          "round_code": "infrastructure",
-          "round_original": "基础设施融资",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "轮次未披露",
           "amount_original": "100万美元",
           "amount_normalized": {
             "currency": "USD",
@@ -14264,7 +13616,7 @@
             "display_zh": "100 万美元"
           },
           "announced_at": "2026-10-22",
-          "disclosure_status": "disclosed",
+          "disclosure_status": "partially_disclosed",
           "is_summary": false,
           "counts_toward_known_total": true,
           "is_current": true,
@@ -14414,7 +13766,7 @@
         "rationale": "X Pay为AI智能体与API提供支付基础设施，主营属于金融支付领域的AI服务。"
       },
       "source_card_ids": [
-        "FI-da06807f6f36d973"
+        "FI-dcf875340392c0f6"
       ]
     },
     {
@@ -628269,189 +627621,6 @@
       ]
     },
     {
-      "funding_insight_id": "FI-b3c61667cf05c2dd",
-      "triggered_by_event_id": "EV-c5984dabb5a697b9",
-      "source_event_ids": [
-        "EV-c5984dabb5a697b9"
-      ],
-      "subject_card_id": "FI-b3c61667cf05c2dd",
-      "as_of_date": "2026-10-28",
-      "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
-        "source_registry_ids": []
-      },
-      "company": {
-        "entity_id": "EN-e78bdebae031095b",
-        "application_entity_id": "EN-e78bdebae031095b",
-        "name": "SpaceX",
-        "full_name": "SpaceX",
-        "summary": "SpaceX是一家同时经营航天发射、卫星宽带与AI基础设施业务的公司，本轮通过售后回租方式为AI芯片及数据中心设备融资约400亿美元。",
-        "website": "",
-        "headquarters": "",
-        "founders": []
-      },
-      "financing": {
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "轮次未披露",
-        "amount": "$40 billion",
-        "amount_original": "$40 billion",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 40000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "400 亿美元"
-        },
-        "announced_at": "2026-10-26",
-        "disclosure_status": "partially_disclosed",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "Apollo Global Management",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d6e31d9e0fa6ab5c",
-                "quote": "an entity managed by Apollo Global Management, the New York-based private equity giant, will buy the chips and related server hardware, then lease the equipment to SpaceX",
-                "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-                "quote_hash": "90e96ac99f49a8fd9ca53fa1304ed01fb9e00dc1dc1db75fe6f4088d92ab9f4e"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-d34bdfce5f4a00"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-d6e31d9e0fa6ab5c",
-            "quote": "SpaceX has reached a binding commitment for roughly $40 billion in financing for AI chips and related data center equipment",
-            "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-            "quote_hash": "46bbfe84ff54f76c70a72828ef443bda83c394f723413121c5b2065c2ffa7026"
-          },
-          {
-            "source_id": "FISRC-d6e31d9e0fa6ab5c",
-            "quote": "SpaceX has reached a binding commitment for roughly $40 billion in financing for AI chips and related data center equipment, the company disclosed in a regulatory filing Monday.",
-            "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-            "quote_hash": "e3ece18ff6eb664e3b291b5413cf489a59e6f9648501de268ede4309c8fd6df9"
-          },
-          {
-            "source_id": "FISRC-d6e31d9e0fa6ab5c",
-            "quote": "SpaceX expects the deal to close by year-end, subject to closing conditions, with leases starting in the first half of 2027 as the GPUs and related equipment arrive.",
-            "source_content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-            "quote_hash": "4147bc84baea354525b573bf51ed9b57efccdf32ff84b72efdf62eb622609737"
-          }
-        ],
-        "current_source_ids": [
-          "FISRC-d6e31d9e0fa6ab5c"
-        ]
-      },
-      "research_sources": [
-        {
-          "source_id": "FISRC-d6e31d9e0fa6ab5c",
-          "source_url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
-          "title": "SpaceX与Apollo敲定400亿美元GPU融资协议",
-          "publisher": "techcrunch.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-10-28T00:17:24.268Z",
-          "content_hash": "3f1bc5aeb8e3f149f6be703ee599e7c5280614b7f9b7adda2ff7d1be102639f3",
-          "source_artifact_id": "SA-ce6958893e39120e",
-          "raw_id": "RAW-5eb0c66c744c3af4",
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-10828758e06c2a6e",
-          "source_url": "https://www.fool.com/investing/2026/10/27/here-is-what-a-5000-investment-in-spacex-could-be/",
-          "title": "Here Is What a $5,000 Investment in SpaceX Could Be Worth by 2028",
-          "publisher": "fool.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-10-28T00:42:11.663Z",
-          "content_hash": "fe938714b1b4d988",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        }
-      ],
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "compute",
-          "name": "AI 算力与芯片"
-        },
-        "subsector": {
-          "id": "compute-cloud",
-          "name": "AI 云与算力服务"
-        },
-        "product_form": {
-          "id": "compute",
-          "name": "算力服务"
-        },
-        "customers": [
-          {
-            "id": "business",
-            "name": "企业"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-d6e31d9e0fa6ab5c",
-            "quote": "SpaceX has reached a binding commitment for roughly $40 billion in financing for AI chips and related data center equipment"
-          },
-          {
-            "source_id": "FISRC-d6e31d9e0fa6ab5c",
-            "quote": "The financing comes as SpaceX ramps spending to expand its AI infrastructure, alongside its Starlink and launch businesses."
-          },
-          {
-            "source_id": "FISRC-d6e31d9e0fa6ab5c",
-            "quote": "Under the agreement, an entity managed by Apollo Global Management, the New York-based private equity giant, will buy the chips and related server hardware, then lease the equipment to SpaceX."
-          },
-          {
-            "source_id": "FISRC-d6e31d9e0fa6ab5c",
-            "quote": "Apollo said the financing will help deliver Nvidia’s next-generation Vera Rubin chips for SpaceX’s “terrestrial compute buildout.”"
-          },
-          {
-            "source_id": "FISRC-d6e31d9e0fa6ab5c",
-            "quote": "SpaceX’s AI segment, which includes the Grok chatbot, the Cursor coding tool, and its cloud compute business"
-          }
-        ],
-        "rationale": "SpaceX融资用于AI芯片与数据中心设备，扩展云算力业务，属AI云与算力服务。"
-      },
-      "market_category": {
-        "id": "compute",
-        "name": "AI 算力与芯片",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "compute-cloud",
-        "name": "AI 云与算力服务",
-        "dimension": "financing_subsector"
-      },
-      "product_form": {
-        "id": "compute",
-        "name": "算力服务",
-        "dimension": "financing_product_form"
-      },
-      "products": [
-        {
-          "name": "AI芯片与数据中心设备租赁融资"
-        },
-        {
-          "name": "Grok"
-        },
-        {
-          "name": "Cursor"
-        }
-      ]
-    },
-    {
       "funding_insight_id": "FI-98bf809bafca6956",
       "triggered_by_event_id": "EV-a8fc0677d43d7b8f",
       "source_event_ids": [
@@ -630671,12 +629840,12 @@
       ]
     },
     {
-      "funding_insight_id": "FI-da06807f6f36d973",
+      "funding_insight_id": "FI-dcf875340392c0f6",
       "triggered_by_event_id": "EV-6c199dc14b6e6a12",
       "source_event_ids": [
         "EV-6c199dc14b6e6a12"
       ],
-      "subject_card_id": "FI-da06807f6f36d973",
+      "subject_card_id": "FI-dcf875340392c0f6",
       "as_of_date": "2026-10-28",
       "market_scope": {
         "market_region": "GLOBAL",
@@ -630695,9 +629864,9 @@
         "founders": []
       },
       "financing": {
-        "round": "基础设施融资",
-        "round_code": "infrastructure",
-        "round_original": "基础设施融资",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
         "amount": "100万美元",
         "amount_original": "100万美元",
         "amount_normalized": {
@@ -630710,7 +629879,7 @@
           "display_zh": "100 万美元"
         },
         "announced_at": "2026-10-22",
-        "disclosure_status": "disclosed",
+        "disclosure_status": "partially_disclosed",
         "investor_disclosure_status": "disclosed",
         "investors": [
           {
@@ -825449,6 +824618,7 @@
     "EN-24167971104a276a": "EN-2235ec582ab306e6",
     "EN-b2188c7441860a7e": "EN-61848d026f2be26a",
     "EN-d2c4f1b5a5369864": "FICO-upscale-ai",
+    "EN-e78bdebae031095b": "FICO-a0c2ad2ead13f74d",
     "EN-b4c73396844f7d05": "FICO-instinct",
     "EN-bc06be2cba2b2f2c": "FICO-anew-labs",
     "EN-968e2d5b08687bf4": "FICO-0ab04bcfc3de286b",
@@ -825480,11 +824650,6 @@
   },
   "review": {
     "excluded": [
-      {
-        "event_id": "EV-d80c8dee36bd767a",
-        "company": "SpaceX",
-        "reason": "not_ai_business"
-      },
       {
         "event_id": "EV-1d91ef6afd9a6290",
         "company": "Suzhou Dongshan Precision Manufacturing Co.",
@@ -826024,6 +825189,18 @@
       }
     ],
     "publication_pending": [
+      {
+        "event_id": "EV-d80c8dee36bd767a",
+        "company": "SpaceX",
+        "reason": "同一 2026-10-26 Apollo GPU 设备租赁融资承诺的两条来源统一待确认。已捕获原文明确预计年底交割、仍有交割条件、2027 年上半年开始租赁；不能将该承诺作为已完成融资公开。两条来源均保留，待取得实际交割及融资工具证据后统一轮次和去重。原文同时确认 SpaceX 有 Grok、Cursor 和云计算 AI 业务，暂缓原因是尚未交割及来源状态冲突，不是仅凭航天公司名称排除 AI 业务。",
+        "source_url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/"
+      },
+      {
+        "event_id": "EV-c5984dabb5a697b9",
+        "company": "SpaceX",
+        "reason": "同一 2026-10-26 Apollo GPU 设备租赁融资承诺的两条来源统一待确认。已捕获原文明确预计年底交割、仍有交割条件、2027 年上半年开始租赁；不能将该承诺作为已完成融资公开。两条来源均保留，待取得实际交割及融资工具证据后统一轮次和去重。原文同时确认 SpaceX 有 Grok、Cursor 和云计算 AI 业务，暂缓原因是尚未交割及来源状态冲突，不是仅凭航天公司名称排除 AI 业务。",
+        "source_url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/"
+      },
       {
         "event_id": "EV-c964f7646ad88c1e",
         "company": "DeepSeek",
