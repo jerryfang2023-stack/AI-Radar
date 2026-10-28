@@ -122,8 +122,8 @@ test("accepted financing round takes precedence over infrastructure product desc
   const event = { claim_refs: ["CL-C"], object: "软硬一体基础设施支撑具身智能产业落地", display_title_zh: "地瓜机器人完成4亿美元C轮融资" };
   const claim = { claim_id: "CL-C", claim_type: "funding", verification_status: "accepted", source_quote: "9月17日，地瓜机器人宣布完成4亿美元C轮融资。" };
   assert.equal(canonicalFundingEventRound(event, [claim]).code, "series_c");
-  assert.equal(canonicalFundingEventRound(event, [{ ...claim, verification_status: "pending" }]).code, "infrastructure");
-  assert.equal(canonicalFundingEventRound(event, [{ ...claim, claim_id: "UNRELATED" }]).code, "infrastructure");
+  assert.equal(canonicalFundingEventRound(event, [{ ...claim, verification_status: "pending" }]).code, "series_c");
+  assert.equal(canonicalFundingEventRound(event, [{ ...claim, claim_id: "UNRELATED" }]).code, "series_c");
   assert.equal(canonicalFundingEventRound({ object: "基础设施投资" }).code, "infrastructure");
 });
 
@@ -3632,4 +3632,21 @@ test("closed round proceeds remain distinct from the valuation", () => {
     source_quote: "Nothing has closed $200 million in Series C financing at a valuation of $1.3 billion." }];
   const event = { claim_refs: ["CL-CLOSED"], metrics: ["$1.3 billion", "$200 million"] };
   assert.equal(canonicalFundingEventAmount(event, claims), "$200 million");
+});
+
+
+test("infrastructure business descriptions cannot invent a financing round", () => {
+  const title="支付基础设施X Pay完成100万美元融资，Skyland Ventures等参投";
+  const quote="面向 AI 智能体和 API 的支付基础设施提供商 X Pay 宣布完成 100 万美元融资，DCI 等参投。";
+  for (const text of [title, quote, "基础设施融资服务商 Acme 完成融资"]) {
+    assert.equal(normalizeFundingRound(text).code, "other");
+  }
+  const event={object:"，Skyland Ventures等参投",display_title_zh:title,claim_refs:["CL-infra"]};
+  const claims=[{claim_id:"CL-infra",claim_type:"funding",verification_status:"accepted",source_quote:quote}];
+  assert.equal(canonicalFundingEventRound(event,claims).code,"undisclosed");
+  const payload=ensureCanonicalFundingEvidence({financing:{round:"轮次未披露"}}, {claims}, event, []);
+  assert.equal(payload.financing.round,"轮次未披露");
+  for (const text of ["基础设施融资", "公司完成3亿元基础设施融资，资金用于建设数据中心。", "基础设施"]) {
+    assert.equal(normalizeFundingRound(text).code,"infrastructure");
+  }
 });

@@ -511,7 +511,8 @@ export function normalizeFundingRound(value = "") {
   else if (/follow[-\s]?on|后续发行/iu.test(text)) code = "follow_on";
   else if (/战略/iu.test(text)) code = "strategic";
   else if (/债务/iu.test(text)) code = "debt";
-  else if (/基础设施/iu.test(text)) code = "infrastructure";
+  // A business descriptor (e.g. payment infrastructure provider) is not a round.
+  else if (/^基础设施$/u.test(text) || /基础设施(?:融资|投资|轮)(?=$|[\s，。；、：,.!?])/u.test(text)) code = "infrastructure";
   else if (/政府资金|政府及企业|产业投资/iu.test(text)) code = "government";
   else if (!original || /未披露|新一轮|latestfundinground|融资轮次/iu.test(compact)) code = "undisclosed";
   return { code, label: FUNDING_ROUND_LABELS[code], original };
