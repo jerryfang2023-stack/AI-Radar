@@ -3067,3 +3067,20 @@ test('Tencent News publisher suffix cannot become a financing participant', () =
   const quote='腾讯向Acme投资1000万美元。';
   assert.ok(organizationMentions(normalizeEventTitle('Acme完成融资_腾讯新闻'),{subject:'Acme'},'funding',quote,[{subject:'Acme',source_quote:quote}]).some(e=>e.canonicalName==='Tencent'));
 });
+
+
+test("funding with an old publication byline cannot inherit today's capture date", () => {
+  const raw = {published_at:"2026-10-29", clean_text:"研究公司完成融资\n记者·2021年06月01日 12:34\n研究公司完成融资。"};
+  const artifact = {source_url:"https://example.com/news/funding"};
+  const check = body => eventSourceEligibility({...raw,clean_text:body},artifact,"研究公司完成融资","2026-10-29",{eventType:"funding"});
+  assert.equal(check(raw.clean_text).reason,"funding_source_publication_date_conflict");
+  assert.notEqual(check(raw.clean_text.replace("2021年06月01日","2026年10月29日")).reason,"funding_source_publication_date_conflict");
+  assert.notEqual(check("公司在2021年06月01日 12:34完成产品测试。现宣布新融资。").reason,"funding_source_publication_date_conflict");
+  assert.notEqual(check("公司成立于2021年06月01日\n研究公司宣布新融资。").reason,"funding_source_publication_date_conflict");
+  assert.notEqual(check(raw.clean_text.replace("2021年06月01日","2026年10月28日")).reason,"funding_source_publication_date_conflict");
+  assert.notEqual(check(raw.clean_text.replace("2021年06月01日","2021年02月31日")).reason,"funding_source_publication_date_conflict");
+  const source=entry("old-byline-funding","研究公司完成100万美元融资",raw.clean_text,{published_at:"2026-10-29"});
+  const bundle=buildBundle([source],taxonomy,"2026-10-29","2026-10-29T00:00:00Z");
+  assert.equal(bundle.canonical_events.length,0);
+  assert.ok(bundle.qa_queue.some(row=>row.reason==="funding_source_publication_date_conflict"));
+});
