@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-28",
-    "currentDate": "2026-10-28",
-    "eventCount": 4309,
+    "latestDataDate": "2026-10-29",
+    "currentDate": "2026-10-29",
+    "eventCount": 4316,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-10-14",
-    "latest_disclosed_at": "2026-10-14",
+    "latest_disclosed_at": "2026-10-28",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "pre_series_a"
+      "pre_series_a",
+      "series_a_plus"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-2af17ddc761538ab",
+        "canonical_entity_id": "",
+        "name": "百奥几何"
+      },
       {
         "entity_id": "EN-23d04479eff26b31",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a47f25e50576f265",
+        "funding_insight_id": "FI-2cbb173107521cbd",
+        "event_ids": [
+          "EV-63e454277381c4b3"
+        ],
+        "company_entity_id": "EN-2af17ddc761538ab",
+        "company_canonical_entity_id": "",
+        "company_name": "百奥几何",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "announced_at": "2026-10-28",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ebbd17436fafb574",
+            "source_url": "https://news.pedaily.cn/202610/570976.shtml",
+            "source_title": "百奥几何完成1亿美元A轮系列融资，带队迈向生命科学超级智能",
+            "source_content_hash": "2f1bfe0a9007d6af52dfea2a5df42e59da5aa3b83e28cc0572e960c58f4eacae",
+            "quote": "国开科创、瑞力投资、国方创投及头部生物医药产业方等多家机构跟投，老股东达晨财智持续加注，指数资本继续担任独家财务顾问。",
+            "quote_hash": "2dfc6b294933e3f3e665258f1745570421105ba25456ddf16154e3a161057dac"
+          }
+        ]
+      },
       {
         "activity_id": "IA-dc0d7c099d36db54",
         "funding_insight_id": "FI-1087e9c5c571801e",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ebbd17436fafb574",
+        "source_url": "https://news.pedaily.cn/202610/570976.shtml",
+        "source_title": "百奥几何完成1亿美元A轮系列融资，带队迈向生命科学超级智能",
+        "source_content_hash": "2f1bfe0a9007d6af52dfea2a5df42e59da5aa3b83e28cc0572e960c58f4eacae",
+        "quote": "国开科创、瑞力投资、国方创投及头部生物医药产业方等多家机构跟投，老股东达晨财智持续加注，指数资本继续担任独家财务顾问。",
+        "quote_hash": "2dfc6b294933e3f3e665258f1745570421105ba25456ddf16154e3a161057dac"
+      },
+      {
         "source_id": "FISRC-83560e8d9be875e2",
         "source_url": "https://feng.ifeng.com/c/8xDfr5FXcWg",
         "source_title": "高维医药获数亿元Pre-A轮融资 聚焦AI制药_大风号",
@@ -141,10 +195,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "瑞力投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "瑞力投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：百奥几何 · A+轮 · 2026-10-28 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ebbd17436fafb574"
+        },
         {
           "description": "融资来源记录：高维医药 · Pre-A轮 · 2026-10-14 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-83560e8d9be875e2"
@@ -152,6 +210,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-ebbd17436fafb574",
+          "source_url": "https://news.pedaily.cn/202610/570976.shtml",
+          "source_title": "百奥几何完成1亿美元A轮系列融资，带队迈向生命科学超级智能",
+          "source_content_hash": "2f1bfe0a9007d6af52dfea2a5df42e59da5aa3b83e28cc0572e960c58f4eacae",
+          "quote": "国开科创、瑞力投资、国方创投及头部生物医药产业方等多家机构跟投，老股东达晨财智持续加注，指数资本继续担任独家财务顾问。",
+          "quote_hash": "2dfc6b294933e3f3e665258f1745570421105ba25456ddf16154e3a161057dac"
+        },
         {
           "source_id": "FISRC-83560e8d9be875e2",
           "source_url": "https://feng.ifeng.com/c/8xDfr5FXcWg",

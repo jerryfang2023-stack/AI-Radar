@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-28",
-    "currentDate": "2026-10-28",
-    "eventCount": 4309,
+    "latestDataDate": "2026-10-29",
+    "currentDate": "2026-10-29",
+    "eventCount": 4316,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -3654,6 +3654,67 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-6691f417bed0e674",
+      "snapshotKey": "6691f417bed0e674",
+      "snapshotId": "HWS-c97aaa66da3c964d",
+      "eventId": "EV-848a9d54114887d9",
+      "eventIds": [
+        "EV-848a9d54114887d9"
+      ],
+      "dataDate": "2026-10-29",
+      "date": "2026-10-29",
+      "title": "AI 行业重磅并购",
+      "subject": "AI 行业重磅并购",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-aee87b7f12914e9e"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-29",
+          "hardware_fact_id": "HWF-aee87b7f12914e9e",
+          "fact_type": "product",
+          "observed_at": "2026-10-29",
+          "subject_entity_id": "EN-7b3e572f9b08d7b0",
+          "subject_name": "AI 行业重磅并购",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 10 月 29 日消息，彭博社今天（10 月 29 日）发布博文，报道称美国半导体公司美满电子（Marvell）计划收购数据中心光通信设备制造商朗美通（Lumentum），目前双方正在磋商谈判，交易最快可能于下周宣布。",
+          "event_refs": [
+            "EV-848a9d54114887d9"
+          ],
+          "claim_ref": "CL-6d3039cadf3115a1",
+          "source_refs": [
+            "SA-1de2470f1a3e55ae"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-29/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://www.ithome.com/1/019/279.htm",
+      "entityIds": [
+        "EN-7b3e572f9b08d7b0",
+        "EN-cd3c38fead8e5908"
+      ]
+    },
     {
       "id": "HWC-bf69e780f1af8f2e",
       "snapshotKey": "bf69e780f1af8f2e",
@@ -10321,10 +10382,9 @@
       ],
       "capexFacts": [],
       "tags": [],
-      "sourceUrl": "https://cls.cn/detail/2478685",
+      "sourceUrl": "https://news.pedaily.cn/202610/570997.shtml",
       "entityIds": [
-        "EN-a5e5f031b6f878cf",
-        "EN-6535648b340d6536"
+        "EN-a5e5f031b6f878cf"
       ]
     },
     {
@@ -22034,30 +22094,29 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-10-28",
-      "funnel_id": "LF-a7c628fc5b5fbe99",
+      "data_date": "2026-10-29",
+      "funnel_id": "LF-a30d2af101e2f9d7",
       "lens": "hardware",
-      "date": "2026-10-28",
+      "date": "2026-10-29",
       "monitoring_paths": [],
-      "raw_documents": 22,
-      "original_sources": 22,
-      "valid_claims": 17,
-      "observations": 0,
-      "canonical_events": 8,
+      "raw_documents": 19,
+      "original_sources": 19,
+      "valid_claims": 18,
+      "observations": 1,
+      "canonical_events": 6,
       "blocker_counts": {
-        "community_source_requires_original_event_source": 2,
-        "proposed_financing_not_completed": 1,
-        "cumulative_funding_total_not_single_round": 2,
+        "community_source_requires_original_event_source": 1,
+        "cumulative_funding_total_not_single_round": 3,
         "event_not_ai_relevant": 7,
         "multi_event_roundup_not_single_event_source": 1
       },
       "rates": {
         "original_source_rate": 1,
-        "valid_claim_rate": 0.7727272727272727,
-        "observation_rate": 0,
-        "event_conversion_rate": 0.47058823529411764
+        "valid_claim_rate": 0.9473684210526315,
+        "observation_rate": 0.05555555555555555,
+        "event_conversion_rate": 0.3333333333333333
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-28/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-29/monitoring-funnel.json"
     }
   ]
 }

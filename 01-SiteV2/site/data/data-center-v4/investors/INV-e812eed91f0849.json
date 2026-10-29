@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-28",
-    "currentDate": "2026-10-28",
-    "eventCount": 4309,
+    "latestDataDate": "2026-10-29",
+    "currentDate": "2026-10-29",
+    "eventCount": 4316,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-10-28",
+    "latest_disclosed_at": "2026-10-28",
     "role_counts": {
-      "historical_or_ambiguous": 4
+      "historical_or_ambiguous": 4,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "angel"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-d89fa694501806e0",
+        "canonical_entity_id": "",
+        "name": "超进化"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-04c77be0352aee9e",
+        "funding_insight_id": "FI-16e7789991a5af66",
+        "event_ids": [
+          "EV-3f5278aad82b5aba"
+        ],
+        "company_entity_id": "EN-d89fa694501806e0",
+        "company_canonical_entity_id": "",
+        "company_name": "超进化",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-10-28",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-570d8c761dfb8abb",
+            "source_url": "https://news.pedaily.cn/202610/570975.shtml",
+            "source_title": "超进化智能完成数亿元天使轮融资，以万卡训练经验打造研究基础模型",
+            "source_content_hash": "ee3d74a37caa527f91cbfb1ab41d770fc8a32cfc3aedf62e5135d2ef0a9c2443",
+            "quote": "本轮由蓝驰创投领投，商汤国香资本、联想之星、英诺基金、水木清华校友种子基金等联合投资",
+            "quote_hash": "0bc48a7bcfbb9c3498d45ad7264a3d3d1aeed801c4353c2ab1d455eec6a7cb26"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d9cd422d1128393c",
         "funding_insight_id": "FI-9c8b829633ef0aea",
@@ -209,6 +258,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-570d8c761dfb8abb",
+        "source_url": "https://news.pedaily.cn/202610/570975.shtml",
+        "source_title": "超进化智能完成数亿元天使轮融资，以万卡训练经验打造研究基础模型",
+        "source_content_hash": "ee3d74a37caa527f91cbfb1ab41d770fc8a32cfc3aedf62e5135d2ef0a9c2443",
+        "quote": "本轮由蓝驰创投领投，商汤国香资本、联想之星、英诺基金、水木清华校友种子基金等联合投资",
+        "quote_hash": "0bc48a7bcfbb9c3498d45ad7264a3d3d1aeed801c4353c2ab1d455eec6a7cb26"
+      },
+      {
         "source_id": "FISRC-57aa18abc9964b6e",
         "source_url": "https://www.163.com/dy/article/K8KEAAD105198R3E.html",
         "source_title": "「灵御智能」获千万元级种子+轮融资，华映资本领投|智元机器人_网易订阅",
@@ -283,16 +340,16 @@
       "experience_summary": "基金公开介绍强调清华校友网络和硬科技早期投资；未从公开报道推断基金当前规模或总体收益。",
       "track_record": [
         {
+          "description": "融资来源记录：超进化 · 天使轮 · 2026-10-28 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-570d8c761dfb8abb"
+        },
+        {
           "description": "融资来源记录：灵御智能 · 历史轮次未披露 · 种子+轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-57aa18abc9964b6e"
         },
         {
           "description": "融资来源记录：如身机器人 · 历史轮次未披露 · 天使轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a6c76bf98227d92c"
-        },
-        {
-          "description": "融资来源记录：晰见科技 · 历史轮次未披露 · 历史轮次投资方（来源表述为天使轮投资方）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-410928b8ba42b627"
         }
       ],
       "contacts": [
@@ -322,6 +379,14 @@
           "quote_hash": "631b1480bac320dbe39ccc4ad69d71965e1c7f6e363a82653c3b40ce2ad07da8"
         },
         {
+          "source_id": "FISRC-570d8c761dfb8abb",
+          "source_url": "https://news.pedaily.cn/202610/570975.shtml",
+          "source_title": "超进化智能完成数亿元天使轮融资，以万卡训练经验打造研究基础模型",
+          "source_content_hash": "ee3d74a37caa527f91cbfb1ab41d770fc8a32cfc3aedf62e5135d2ef0a9c2443",
+          "quote": "本轮由蓝驰创投领投，商汤国香资本、联想之星、英诺基金、水木清华校友种子基金等联合投资",
+          "quote_hash": "0bc48a7bcfbb9c3498d45ad7264a3d3d1aeed801c4353c2ab1d455eec6a7cb26"
+        },
+        {
           "source_id": "FISRC-57aa18abc9964b6e",
           "source_url": "https://www.163.com/dy/article/K8KEAAD105198R3E.html",
           "source_title": "「灵御智能」获千万元级种子+轮融资，华映资本领投|智元机器人_网易订阅",
@@ -336,14 +401,6 @@
           "source_content_hash": "e0633690ea582b36",
           "quote": "由英诺天使基金领投，水木清华校友种子基金、零以创投、海南零点一科技及个人投资者跟投",
           "quote_hash": "d1f5f3d74973c136dd6e33cea193780ffcb786fb26caf93b05e900bcc6ba0d7c"
-        },
-        {
-          "source_id": "FISRC-410928b8ba42b627",
-          "source_url": "https://www.cls.cn/detail/2466861",
-          "source_title": "晰见科技完成近5亿元天使轮融资",
-          "source_content_hash": "addd4b9820ad617a",
-          "quote": "本轮投资方包括徐汇科创投、经纬创投、华映资本、英诺基金、水木清华校友种子基金。",
-          "quote_hash": "98cd229dc0b6d4958d71cd002b92b03e6c5bdb23ea547745e7367ac89a867230"
         }
       ],
       "last_verified_at": "2026-09-26",

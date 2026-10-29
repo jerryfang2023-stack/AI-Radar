@@ -1,0 +1,43 @@
+{
+  "verification": {
+    "version": "FINANCING-VERIFICATION-1",
+    "status": "completed",
+    "counts": {
+      "total": 541,
+      "verified": 1,
+      "excluded": 51,
+      "reviewed": 0,
+      "pending": 489
+    },
+    "ledger": "verification.json",
+    "deferred_research": []
+  },
+  "version": "FINANCING-MONITOR-1",
+  "date": "2026-10-29",
+  "status": "ready_for_review",
+  "counts": {
+    "leads": 529,
+    "accepted_originals": 82,
+    "pending": 273,
+    "excluded": 174
+  },
+  "next": "merge_pages_portal_and_live_parity",
+  "generated_at": "2026-10-29T02:55:44.780Z",
+  "catalog_comparison_evidence": {
+    "path": "agent-workflow/reports/financing/2026-10-29/catalog-comparison-evidence.json",
+    "base_commit": "9847201bf4b09a9fec5c0503b19d07bd0b2cbabf",
+    "catalog_sha256": "778e9f05e15c91a3c4eca07e24f978e4c1404bbcfc9c69866d5f4b0970fe27d1",
+    "added_subjects": [
+      "FI-16e7789991a5af66",
+      "FI-2cbb173107521cbd"
+    ],
+    "added_events": [
+      "FI-16e7789991a5af66",
+      "FI-2cbb173107521cbd"
+    ],
+    "removed": 0,
+    "facts_changed": 0,
+    "modal_existing_unchanged": true,
+    "boundary": "Deterministic comparison metadata only. This is not factual approval or an override of an earlier review. Original-source and claim checks remain required."
+  }
+}

@@ -35365,7 +35365,144 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-28T05:52:12.890Z"
+    },
+    "EV-ddf97ad53e31f73c": {
+      "id": "EV-ddf97ad53e31f73c",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "公司主营L4级无人配送车这一具身自动驾驶车辆产品，属于机器人本体业务，按规则排除。",
+      "input_hash": "4c7a3a4c029ba1d3fdbdfd10bc3bc9dd6e411b48adccb955bfb50532b2f87a7d",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f1aa769493b488be",
+          "quote": "无人配送企业新石器近日宣布完成近4亿美元E轮融资"
+        },
+        {
+          "source_id": "FISRC-04aa0d42090a0734",
+          "quote": "新石器打造了L4自动驾驶系统Neolix-Pilot，在行业内首个上车车端自动驾驶模型Neolix-VA"
+        },
+        {
+          "source_id": "FISRC-04aa0d42090a0734",
+          "quote": "深耕快递、夜间配送和运力服务等场景"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-29T00:47:13.081Z"
+    },
+    "EV-3f5278aad82b5aba": {
+      "id": "EV-3f5278aad82b5aba",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "公司致力于研发具备元研究能力的通用研究基础模型，属于基础模型赛道。",
+      "input_hash": "ac04c6a51006468ee70e7c313cad1e666dc811834fcd6ef076d1f765888bd00d",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-570d8c761dfb8abb",
+          "quote": "超进化（上海）智能科技有限公司（以下简称：超进化）成立于2026年8月，致力于研发具备元研究能力的研究基础模型。"
+        },
+        {
+          "source_id": "FISRC-570d8c761dfb8abb",
+          "quote": "超进化所关注的元研究能力，是模型面对新的专业场景时，提出问题、形成假设、设计方案、自主验证并持续迭代的通用能力，打造具备跨领域研究学习能力的超级研究员大脑，可迁移至科学研究、行业场景研发及AI研究等不同场景。"
+        },
+        {
+          "source_id": "FISRC-570d8c761dfb8abb",
+          "quote": "公司构建模型（Model）、智能体运行框架（Harness）与评测器（Evaluator）协同进化的闭环，同步优化三者，并正在建设覆盖研究能力与自我改进能力的评测体系。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-29T00:47:13.081Z"
+    },
+    "EV-63e454277381c4b3": {
+      "id": "EV-63e454277381c4b3",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "model-api",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "公司为AI Native生物科技企业，交付分子世界模型与虚拟细胞模型等生命科学专用模型。",
+      "input_hash": "fad7c4cfde84ff66eafd030e3eb2b40bad6c238b2097e4ef70f35cc6bc451804",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ebbd17436fafb574",
+          "quote": "北京百奥几何生物科技有限公司（以下简称：百奥几何）是一家AI Native生物科技公司。公司总部位于北京，在上海设有研发中心。"
+        },
+        {
+          "source_id": "FISRC-ebbd17436fafb574",
+          "quote": "GeoFlow是分子水平的全原子生物分子世界模型，持续融合结构预测、从头设计与多步推理能力"
+        },
+        {
+          "source_id": "FISRC-ebbd17436fafb574",
+          "quote": "百奥几何自主研发的AI虚拟细胞模型GeoCell，以生成式AI建模细胞在基因、药物及其组合扰动下的转录组响应，能在未见过的扰动条件下预测细胞状态变化"
+        },
+        {
+          "source_id": "FISRC-ebbd17436fafb574",
+          "quote": "百奥几何以AI Agent连接模型与自动化实验室，形成RSI干湿实验体系"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-29T00:47:13.081Z"
+    },
+    "EV-5f6c7d8561d40ed3": {
+      "id": "EV-5f6c7d8561d40ed3",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "公司致力于提升大规模AI模型的解释性与安全性，属于通用基础模型研发。",
+      "input_hash": "d3b57e7bc2b760b484ecfbcb54a77839b0e42dd6ecb65941d8096c0f294472fd",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c7ad387c98ce1319",
+          "quote": "该公司是一家公益性企业，目前致力于提升大规模人工智能模型的解释力度和透明度"
+        },
+        {
+          "source_id": "FISRC-7ea6f043ff7f4bfb",
+          "quote": "旨在创造“可操纵、可解释的人工智能系统”"
+        },
+        {
+          "source_id": "FISRC-7ea6f043ff7f4bfb",
+          "quote": "Anthropic的目标之一是将安全原则整合到AI开发的现有系统中，从而发挥最大效率和计算能力"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-29T00:47:13.081Z"
     }
   },
-  "generated_at": "2026-10-28T05:52:12.890Z"
+  "generated_at": "2026-10-29T00:47:13.081Z"
 }
