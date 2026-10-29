@@ -423,48 +423,6 @@
     "verification_status": "disputed"
   },
   {
-    "claim_id": "CL-c207c79d0b8b8ef0",
-    "raw_id": "RAW-a72486839cdcf75c",
-    "claim_type": "funding",
-    "subject": "前沿AI研究项目Anthropic",
-    "predicate": "funding",
-    "object": "124万美元，由Skype联合创始人Jaan Tallinn领投-36氪",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-a72486839cdcf75c",
-      "start": 0,
-      "end": 51
-    },
-    "source_quote": "前沿AI研究项目Anthropic融资124万美元，由Skype联合创始人Jaan Tallinn领投",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-5773b8387823576c",
-    "raw_id": "RAW-a72486839cdcf75c",
-    "claim_type": "funding",
-    "subject": "前沿AI研究项目Anthropic",
-    "predicate": "funding",
-    "object": "124万美元，由Skype联合创始人Jaan Tallinn领投-36氪",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-a72486839cdcf75c",
-      "start": 147,
-      "end": 218
-    },
-    "source_quote": "据外媒TechCrunch报道，由OpenAI前任副总监Dario Amodei开发的前沿AI研究项目Anthropic获得124万美元融资。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-f1bfc1c33d78ebac",
     "raw_id": "RAW-10e12d5b89e05451",
     "claim_type": "funding",
@@ -864,45 +822,26 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-3efa6841b616c2a9",
+    "claim_id": "CL-561fd9e5da8bf1fb",
     "raw_id": "RAW-89b9d50bff225dca",
     "claim_type": "funding",
     "subject": "百奥几何",
     "predicate": "funding",
-    "object": "，带队迈向生命科学超级智能",
+    "object": "完成A+轮融资",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 1
+      "sequence": 1,
+      "model_candidate_id": "MAC-9720e18877bfa374",
+      "funding_amount_status": "not_disclosed"
     },
     "source_span": {
       "raw_id": "RAW-89b9d50bff225dca",
       "start": 175,
-      "end": 248
+      "end": 265
     },
-    "source_quote": "投资界（ID：pedaily2012）10月28日消息，近日，AI Native生物制药公司百奥几何（BioGeometry）宣布完成A+轮融资。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-a8388a35e68435b4",
-    "raw_id": "RAW-89b9d50bff225dca",
-    "claim_type": "funding",
-    "subject": "百奥几何",
-    "predicate": "funding",
-    "object": "，带队迈向生命科学超级智能",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-89b9d50bff225dca",
-      "start": 2511,
-      "end": 2638
-    },
-    "source_quote": "· 百奥几何完成超1亿美元A轮系列融资，由国寿资本领投，老股东加码构建分子（GeoFlow）、细胞（GeoCell）双尺度微观模型，依托RSI干湿闭环体系，形成AI for AI飞轮储备数十条管线，天然冰片成本较植物提取降80%，2027年将规模化量产。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
+    "source_quote": "投资界（ID：pedaily2012）10月28日消息，近日，AI Native生物制药公司百奥几何（BioGeometry）宣布完成A+轮融资。至此，公司A轮系列融资超1亿美元。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

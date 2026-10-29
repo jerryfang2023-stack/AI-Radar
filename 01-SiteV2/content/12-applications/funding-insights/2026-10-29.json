@@ -2,18 +2,18 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-10-29",
-    "generated_at": "2026-10-29T00:44:59.834Z",
+    "generated_at": "2026-10-29T02:48:59.077Z",
     "trigger": "accepted_financing_event_research",
     "research_provider": "search-gateway+direct-original+deepseek",
     "model": "deepseek-flash",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
-      "funding_events": 15,
-      "auto_published": 4,
+      "funding_events": 13,
+      "auto_published": 3,
       "blocked": 0,
       "pending": 2,
-      "deduplicated": 9,
+      "deduplicated": 8,
       "deferred_for_evidence": 0
     }
   },
@@ -1513,7 +1513,7 @@
       },
       "financing": {
         "round": "A+轮",
-        "amount": "超1亿美元",
+        "amount": "未披露",
         "total_raised": "超1亿美元",
         "announced_at": "2026-10-28",
         "investor_disclosure_status": "disclosed",
@@ -1680,15 +1680,15 @@
         ],
         "round_code": "series_a_plus",
         "round_original": "A+轮",
-        "amount_original": "超1亿美元",
+        "amount_original": "未披露",
         "amount_normalized": {
-          "currency": "USD",
-          "value": 100000000,
-          "min_value": 100000000,
+          "currency": "",
+          "value": null,
+          "min_value": null,
           "max_value": null,
           "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 1 亿美元"
+          "status": "unparsed",
+          "display_zh": "未披露"
         },
         "total_raised_original": "超1亿美元",
         "total_raised_normalized": {
@@ -1705,7 +1705,7 @@
           {
             "event_id": "EV-63e454277381c4b3",
             "round_original": "A+轮",
-            "amount": "超1亿美元",
+            "amount": "未披露",
             "announced_at": "2026-10-28",
             "evidence_refs": [
               {
@@ -1723,7 +1723,7 @@
             ]
           }
         ],
-        "disclosure_status": "disclosed"
+        "disclosure_status": "partially_disclosed"
       },
       "products": [
         {
@@ -2120,461 +2120,6 @@
         "event_count": 1,
         "strategy": "company_and_normalized_round"
       }
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-3bdf58becdb48552",
-      "triggered_by_event_id": "EV-5f6c7d8561d40ed3",
-      "as_of_date": "2026-10-29",
-      "company": {
-        "entity_id": "EN-c70eca6b0f88f44d",
-        "name": "Anthropic",
-        "full_name": "Anthropic",
-        "website": "",
-        "summary": "由Dario Amodei与Daniela Amodei联手创立的前沿AI研究项目，定位为公益性企业，致力于提升大规模人工智能模型的解释力度和透明度，目标是创造可操纵、可解释的人工智能系统。",
-        "headquarters": "",
-        "founders": [
-          {
-            "name": "Dario Amodei",
-            "role": "联合创始人、首席执行官",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-7ea6f043ff7f4bfb",
-                "quote": "由Dario Amodei和姊妹Daniela联手创立的Anthropic",
-                "source_content_hash": "76668ce59b4786084da768be790a8e9411473d2bc23f37f305ab80517b7b26df",
-                "quote_hash": "42f30b4c6bc1634ff2e91c25e22c72e7b89e2304f60299af8e169c6cad7caaf5"
-              },
-              {
-                "source_id": "FISRC-7ea6f043ff7f4bfb",
-                "quote": "Anthropic的首席执行官Dario Amodei",
-                "source_content_hash": "76668ce59b4786084da768be790a8e9411473d2bc23f37f305ab80517b7b26df",
-                "quote_hash": "1867f63211e5f7d6822c3e6391923704cbcdb8e20274e0f6088485838d1ed967"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Daniela Amodei",
-            "role": "联合创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-7ea6f043ff7f4bfb",
-                "quote": "由Dario Amodei和姊妹Daniela联手创立的Anthropic",
-                "source_content_hash": "76668ce59b4786084da768be790a8e9411473d2bc23f37f305ab80517b7b26df",
-                "quote_hash": "42f30b4c6bc1634ff2e91c25e22c72e7b89e2304f60299af8e169c6cad7caaf5"
-              }
-            ],
-            "entity_id": "EN-d17e509d9e3fe2ea"
-          }
-        ],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-7ea6f043ff7f4bfb",
-            "quote": "由OpenAI前任副总监Dario Amodei开发的前沿AI研究项目Anthropic获得124万美元融资",
-            "source_content_hash": "76668ce59b4786084da768be790a8e9411473d2bc23f37f305ab80517b7b26df",
-            "quote_hash": "cd6b28995965793f59634d83ce34bb87a9fdc3145236cc1a15f92feddebdf205"
-          },
-          {
-            "source_id": "FISRC-c7ad387c98ce1319",
-            "quote": "该公司是一家公益性企业，目前致力于提升大规模人工智能模型的解释力度和透明度",
-            "source_content_hash": "55b8eb4961e45b61",
-            "quote_hash": "0ed0dcfde57aa92c875d9e599f54cd1d6c9c8bd060669371ccfcf884b9dc01f6"
-          }
-        ],
-        "application_entity_id": "EN-c70eca6b0f88f44d",
-        "canonical_entity_consistent": true
-      },
-      "financing": {
-        "round": "轮次未披露",
-        "amount": "124万美元",
-        "total_raised": "",
-        "announced_at": "2026-10-29",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "Jaan Tallinn",
-            "role": "本轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-7ea6f043ff7f4bfb",
-                "quote": "这笔资金由Skype联合创始人Jaan Tallinn领投，投资者还包括James McClave, Dustin Moskovitz, Eric Schmidt和新兴风险研究中心（Center for Emerging Risk Research）等",
-                "source_content_hash": "76668ce59b4786084da768be790a8e9411473d2bc23f37f305ab80517b7b26df",
-                "quote_hash": "39a6819af6ea970c188842440c3c52b4a532df2be1b25981b252b5eb2d1f4cc2"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "James McClave",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-7ea6f043ff7f4bfb",
-                "quote": "这笔资金由Skype联合创始人Jaan Tallinn领投，投资者还包括James McClave, Dustin Moskovitz, Eric Schmidt和新兴风险研究中心（Center for Emerging Risk Research）等",
-                "source_content_hash": "76668ce59b4786084da768be790a8e9411473d2bc23f37f305ab80517b7b26df",
-                "quote_hash": "39a6819af6ea970c188842440c3c52b4a532df2be1b25981b252b5eb2d1f4cc2"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Dustin Moskovitz",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-7ea6f043ff7f4bfb",
-                "quote": "这笔资金由Skype联合创始人Jaan Tallinn领投，投资者还包括James McClave, Dustin Moskovitz, Eric Schmidt和新兴风险研究中心（Center for Emerging Risk Research）等",
-                "source_content_hash": "76668ce59b4786084da768be790a8e9411473d2bc23f37f305ab80517b7b26df",
-                "quote_hash": "39a6819af6ea970c188842440c3c52b4a532df2be1b25981b252b5eb2d1f4cc2"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Eric Schmidt",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-7ea6f043ff7f4bfb",
-                "quote": "这笔资金由Skype联合创始人Jaan Tallinn领投，投资者还包括James McClave, Dustin Moskovitz, Eric Schmidt和新兴风险研究中心（Center for Emerging Risk Research）等",
-                "source_content_hash": "76668ce59b4786084da768be790a8e9411473d2bc23f37f305ab80517b7b26df",
-                "quote_hash": "39a6819af6ea970c188842440c3c52b4a532df2be1b25981b252b5eb2d1f4cc2"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "新兴风险研究中心（Center for Emerging Risk Research）",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-7ea6f043ff7f4bfb",
-                "quote": "这笔资金由Skype联合创始人Jaan Tallinn领投，投资者还包括James McClave, Dustin Moskovitz, Eric Schmidt和新兴风险研究中心（Center for Emerging Risk Research）等",
-                "source_content_hash": "76668ce59b4786084da768be790a8e9411473d2bc23f37f305ab80517b7b26df",
-                "quote_hash": "39a6819af6ea970c188842440c3c52b4a532df2be1b25981b252b5eb2d1f4cc2"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "other_round_investors": [],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-7ea6f043ff7f4bfb",
-            "quote": "前沿AI研究项目Anthropic融资124万美元，由Skype联合创始人Jaan Tallinn领投",
-            "source_content_hash": "76668ce59b4786084da768be790a8e9411473d2bc23f37f305ab80517b7b26df",
-            "quote_hash": "4d163e1e86921b8c3f179d5df5be40de1de896f41f2d0f003bd0ecd7a360705e"
-          },
-          {
-            "source_id": "FISRC-c7ad387c98ce1319",
-            "quote": "由OpenAI前任副总监Dario Amodei开发的前沿AI研究项目Anthropic获得124万美元融资",
-            "source_content_hash": "55b8eb4961e45b61",
-            "quote_hash": "cd6b28995965793f59634d83ce34bb87a9fdc3145236cc1a15f92feddebdf205"
-          }
-        ],
-        "round_code": "undisclosed",
-        "round_original": "轮次未披露",
-        "amount_original": "124万美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 1240000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "124 万美元"
-        },
-        "total_raised_original": "",
-        "total_raised_normalized": {
-          "currency": "",
-          "value": null,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "undisclosed",
-          "display_zh": ""
-        },
-        "risk_markers": [],
-        "disclosures": [
-          {
-            "event_id": "EV-5f6c7d8561d40ed3",
-            "round_original": "轮次未披露",
-            "amount": "124万美元",
-            "announced_at": "2026-10-29",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-7ea6f043ff7f4bfb",
-                "quote": "前沿AI研究项目Anthropic融资124万美元，由Skype联合创始人Jaan Tallinn领投",
-                "source_content_hash": "76668ce59b4786084da768be790a8e9411473d2bc23f37f305ab80517b7b26df",
-                "quote_hash": "4d163e1e86921b8c3f179d5df5be40de1de896f41f2d0f003bd0ecd7a360705e"
-              },
-              {
-                "source_id": "FISRC-c7ad387c98ce1319",
-                "quote": "由OpenAI前任副总监Dario Amodei开发的前沿AI研究项目Anthropic获得124万美元融资",
-                "source_content_hash": "55b8eb4961e45b61",
-                "quote_hash": "cd6b28995965793f59634d83ce34bb87a9fdc3145236cc1a15f92feddebdf205"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "partially_disclosed"
-      },
-      "products": [
-        {
-          "name": "可操纵、可解释的人工智能系统",
-          "description": "面向大规模人工智能模型的可解释性与透明度研究，目标是将安全原则整合到AI开发的现有系统中，从而发挥最大效率和计算能力。",
-          "target_customers": "",
-          "features": [
-            "可操纵、可解释",
-            "提升大规模人工智能模型的解释力度和透明度",
-            "将安全原则整合到AI开发的现有系统中"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7ea6f043ff7f4bfb",
-              "quote": "旨在创造“可操纵、可解释的人工智能系统”",
-              "source_content_hash": "76668ce59b4786084da768be790a8e9411473d2bc23f37f305ab80517b7b26df",
-              "quote_hash": "c3064c5dd23c9e095d55f7524cea91d0ef329e3f59335b7e1a8212cc4abc9771"
-            },
-            {
-              "source_id": "FISRC-7ea6f043ff7f4bfb",
-              "quote": "Anthropic的目标之一是将安全原则整合到AI开发的现有系统中，从而发挥最大效率和计算能力",
-              "source_content_hash": "76668ce59b4786084da768be790a8e9411473d2bc23f37f305ab80517b7b26df",
-              "quote_hash": "0f0ccea5872f426e5946b6930a2890ec7556a70b17fcf49e4f792f4325c72245"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [],
-      "comparisons": [],
-      "metrics": [
-        {
-          "label": "本轮融资金额",
-          "value": "124万美元",
-          "observed_at": "2026-10-29",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7ea6f043ff7f4bfb",
-              "quote": "前沿AI研究项目Anthropic融资124万美元",
-              "source_content_hash": "76668ce59b4786084da768be790a8e9411473d2bc23f37f305ab80517b7b26df",
-              "quote_hash": "1779fabfd00bd3fc00c85c9e0ea60f22d89f0a50647ad07c4665911b56bbf709"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "Dario Amodei",
-          "quote": "Anthropic的目标是取得基础性研究的进展，从而构建更强大、更通用、更可靠的人工智能系统，然后以造福于社会的方式部署这些系统。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7ea6f043ff7f4bfb",
-              "quote": "Anthropic的目标是取得基础性研究的进展，从而构建更强大、更通用、更可靠的人工智能系统，然后以造福于社会的方式部署这些系统。",
-              "source_content_hash": "76668ce59b4786084da768be790a8e9411473d2bc23f37f305ab80517b7b26df",
-              "quote_hash": "e61e8cc21429ff190c9c68e2ccd37da1fb1031651f23cfc0366ccbc900a91d17"
-            }
-          ]
-        },
-        {
-          "speaker": "Anthropic公司介绍",
-          "quote": "诚然，如今的大型通用系统可以带来显著的优势，但也可能是不可预测、不可靠和不透明的，我们的目标正是在这些问题上取得进展，从而创造商业价值和社会福利。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7ea6f043ff7f4bfb",
-              "quote": "诚然，如今的大型通用系统可以带来显著的优势，但也可能是不可预测、不可靠和不透明的，我们的目标正是在这些问题上取得进展，从而创造商业价值和社会福利。",
-              "source_content_hash": "76668ce59b4786084da768be790a8e9411473d2bc23f37f305ab80517b7b26df",
-              "quote_hash": "456442d6a919e5db337cbfbbc1b4d7febabd75496fb183cfff5a2b2b9cfc01e1"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [],
-        "capital_judgment": "本轮124万美元资金押注的核心变量是Anthropic能否在大规模AI模型的可解释性与透明度上取得基础性研究进展，并将安全原则整合进现有AI开发系统。已验证信号仅为公司成立、融资到账及明确的公益性与研究定位；来源未披露产品落地、客户或收入，资本判断的证据边界限于研究阶段，商业化与社会福利目标仍属公司自述愿景。",
-        "validated_signals": [
-          "公司由Dario Amodei与Daniela Amodei联手创立",
-          "获得124万美元融资，由Jaan Tallinn领投",
-          "定位为公益性企业，致力于提升大规模人工智能模型的解释力度和透明度"
-        ],
-        "risks": [
-          "来源未披露任何产品落地、客户或收入数据，研究进展与商业化路径仍待验证",
-          "公司自述的“创造商业价值和社会福利”目标尚无第三方证据支撑",
-          "融资金额仅124万美元，来源未披露累计融资额与轮次，资金规模对基础研究的支撑能力待观察"
-        ],
-        "related_direction_id": "",
-        "taxonomy_version": "TAG-V4.1",
-        "product_form_id": "model",
-        "market_category_id": "infrastructure_compute",
-        "market_subcategory_id": "development_deployment",
-        "market_application_id": "ai_development_orchestration",
-        "use_case_ids": [
-          "research_discovery"
-        ],
-        "industry_ids": [],
-        "target_user_ids": [
-          "researcher",
-          "developer"
-        ],
-        "sector": "前沿人工智能安全与可解释性研究",
-        "investment_thesis": {
-          "statement": "本轮124万美元资金押注的核心变量是Anthropic能否在大规模AI模型的可解释性与透明度上取得基础性研究进展，并将安全原则整合进现有AI开发系统。已验证信号仅为公司成立、融资到账及明确的公益性与研究定位；来源未披露产品落地、客户或收入，资本判断的证据边界限于研究阶段，商业化与社会福利目标仍属公司自述愿景。",
-          "evidence_signals": [
-            "公司由Dario Amodei与Daniela Amodei联手创立",
-            "获得124万美元融资，由Jaan Tallinn领投",
-            "定位为公益性企业，致力于提升大规模人工智能模型的解释力度和透明度"
-          ],
-          "risks": [
-            "来源未披露任何产品落地、客户或收入数据，研究进展与商业化路径仍待验证",
-            "公司自述的“创造商业价值和社会福利”目标尚无第三方证据支撑",
-            "融资金额仅124万美元，来源未披露累计融资额与轮次，资金规模对基础研究的支撑能力待观察"
-          ],
-          "institutional_rationale_status": "not_disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "可操纵、可解释的人工智能系统",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Dario Amodei",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Daniela Amodei",
-          "canonical_entity_id": "EN-d17e509d9e3fe2ea",
-          "canonical_name": "Daniela Amodei"
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Jaan Tallinn",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "James McClave",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Dustin Moskovitz",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Eric Schmidt",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "新兴风险研究中心（Center for Emerging Risk Research）",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [
-        {
-          "event_id": "EV-5f6c7d8561d40ed3",
-          "date": "2026-10-29",
-          "title": "前沿AI研究项目Anthropic融资124万美元，由Skype联合创始人Jaan Tallinn领投-36氪",
-          "amount": "124万美元",
-          "source_refs": [
-            "SA-a1160a2274c24c3c"
-          ]
-        }
-      ],
-      "research_sources": [
-        {
-          "source_id": "FISRC-7ea6f043ff7f4bfb",
-          "source_url": "https://www.36kr.com/p/1248239589843974",
-          "title": "前沿AI研究项目Anthropic融资124万美元，由Skype联合创始人Jaan Tallinn领投-36氪",
-          "publisher": "www.36kr.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-10-29T00:19:38.052Z",
-          "content_hash": "76668ce59b4786084da768be790a8e9411473d2bc23f37f305ab80517b7b26df",
-          "source_artifact_id": "SA-a1160a2274c24c3c",
-          "raw_id": "RAW-a72486839cdcf75c"
-        },
-        {
-          "source_id": "FISRC-c7ad387c98ce1319",
-          "source_url": "https://news.pedaily.cn/202106/472238.shtml",
-          "title": "前沿AI研究项目Anthropic融资124万美元",
-          "publisher": "news.pedaily.cn",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-10-29T00:44:06.298Z",
-          "content_hash": "55b8eb4961e45b61",
-          "source_artifact_id": null,
-          "raw_id": null
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-flash",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-10-29T00:44:18.398Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-10-29T00:44:18.398Z",
-      "customer_research": {
-        "status": "no_verified_customer_found",
-        "verified_customer_count": 0,
-        "searched_source_count": 2
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "可操纵、可解释的人工智能系统"
-          ]
-        },
-        "founders": {
-          "linked": 1,
-          "total": 2,
-          "unresolved_names": [
-            "Dario Amodei"
-          ]
-        }
-      },
-      "source_event_ids": [
-        "EV-5f6c7d8561d40ed3"
-      ],
-      "aggregation": {
-        "key": "EN-c70eca6b0f88f44d|undisclosed",
-        "event_count": 1,
-        "strategy": "company_and_normalized_round"
-      }
     }
   ],
   "queue": [
@@ -2594,67 +2139,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-29T00:44:59.595Z"
-    },
-    {
-      "event_id": "EV-5f6c7d8561d40ed3",
-      "company_name": "前沿AI研究项目Anthropic",
-      "status": "auto_published",
-      "problems": [],
-      "queries": [
-        "\"前沿AI研究项目Anthropic\" 2026 融资 投资方",
-        "\"前沿AI研究项目Anthropic\" 官网 产品 服务",
-        "\"前沿AI研究项目Anthropic\" 投资机构 融资用途",
-        "\"前沿AI研究项目Anthropic\" 客户 创始人 总部"
-      ],
-      "attempts": [
-        {
-          "provider": "anysearch",
-          "query": "\"前沿AI研究项目Anthropic\" 2026 融资 投资方",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "planner",
-          "query": "\"前沿AI研究项目Anthropic\" 124万美元 融资 领投 跟投",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"前沿AI研究项目Anthropic\" 官网 产品 服务",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"前沿AI研究项目Anthropic\" 投资机构 融资用途",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "planner",
-          "query": "\"前沿AI研究项目Anthropic\" 2026 本轮融资 公告",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"前沿AI研究项目Anthropic\" 客户 创始人 总部",
-          "status": "completed",
-          "count": 8
-        }
-      ],
-      "updated_at": "2026-10-29T00:44:59.595Z"
-    },
-    {
-      "event_id": "EV-fe4e2cdf3f2a5075",
-      "company_name": "",
-      "status": "deduplicated",
-      "problems": [],
-      "queries": [],
-      "attempts": [],
-      "updated_at": "2026-10-29T00:44:59.595Z"
+      "updated_at": "2026-10-29T02:48:58.722Z"
     },
     {
       "event_id": "EV-97a4ce9324128e6e",
@@ -2663,7 +2148,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-29T00:44:59.595Z"
+      "updated_at": "2026-10-29T02:48:58.722Z"
     },
     {
       "event_id": "EV-9eca876903571bd3",
@@ -2672,7 +2157,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-29T00:44:59.595Z"
+      "updated_at": "2026-10-29T02:48:58.722Z"
     },
     {
       "event_id": "EV-0b46ca8532759091",
@@ -2681,7 +2166,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-29T00:44:59.595Z"
+      "updated_at": "2026-10-29T02:48:58.722Z"
     },
     {
       "event_id": "EV-94baaaabc016521f",
@@ -2699,62 +2184,20 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-29T00:44:59.595Z"
+      "updated_at": "2026-10-29T02:48:58.722Z"
     },
     {
       "event_id": "EV-63e454277381c4b3",
-      "company_name": "百奥几何",
+      "company_name": "北京百奥几何生物科技有限公司",
       "status": "auto_published",
       "problems": [],
-      "queries": [
-        "\"百奥几何\" 2026 融资 投资方",
-        "\"百奥几何\" 超1亿美元 融资 领投 跟投",
-        "\"百奥几何\" 官网 产品 服务",
-        "\"百奥几何\" 客户 创始人 总部"
-      ],
-      "attempts": [
-        {
-          "provider": "anysearch",
-          "query": "\"百奥几何\" 2026 融资 投资方",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"百奥几何\" 超1亿美元 融资 领投 跟投",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"百奥几何\" 官网 产品 服务",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "planner",
-          "query": "\"百奥几何\" 投资机构 融资用途",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        },
-        {
-          "provider": "planner",
-          "query": "\"百奥几何\" 2026 本轮融资 公告",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"百奥几何\" 客户 创始人 总部",
-          "status": "completed",
-          "count": 8
-        }
-      ],
-      "updated_at": "2026-10-29T00:44:59.595Z"
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-10-29T02:48:58.722Z"
     },
     {
       "event_id": "EV-3f5278aad82b5aba",
-      "company_name": "超进化",
+      "company_name": "超进化（上海）智能科技有限公司",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -2823,11 +2266,11 @@
           "count": 8
         }
       ],
-      "updated_at": "2026-10-29T00:44:59.595Z"
+      "updated_at": "2026-10-29T02:48:58.722Z"
     },
     {
       "event_id": "EV-ddf97ad53e31f73c",
-      "company_name": "新石器",
+      "company_name": "新石器慧通（北京）科技有限公司",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -2892,7 +2335,7 @@
           "count": 8
         }
       ],
-      "updated_at": "2026-10-29T00:44:59.595Z"
+      "updated_at": "2026-10-29T02:48:58.722Z"
     },
     {
       "event_id": "EV-21dcf84526413e10",
@@ -2901,7 +2344,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-29T00:44:59.595Z"
+      "updated_at": "2026-10-29T02:48:58.722Z"
     },
     {
       "event_id": "EV-8615e87fa54663e5",
@@ -2910,7 +2353,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-29T00:44:59.595Z"
+      "updated_at": "2026-10-29T02:48:58.722Z"
     },
     {
       "event_id": "EV-c1832bf5603ccc52",
@@ -2919,7 +2362,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-10-29T00:44:59.595Z"
+      "updated_at": "2026-10-29T02:48:58.722Z"
     }
   ]
 }
