@@ -280,6 +280,8 @@ function fundingAmountMentions(value = "") {
       || /^\s*(?:pre[-\s]?money|post[-\s]?money)?\s*valuation\b/iu.test(after)
       || /^\s*估值/iu.test(after);
     const cumulative = /(?:累计|总计|合计)[^，,；;。！？]{0,24}$/u.test(before)
+      || /(?:[A-Z](?:\+|\d+)?|天使|种子)轮系列融资[^，,；;。！？]{0,12}$/iu.test(before)
+      || /^\s*(?:[A-Z](?:\+|\d+)?|天使|种子)轮系列融资/iu.test(after)
       || /(?:total (?:funding|raised)|funding total)\s*(?:to|of|at)?\s*$/iu.test(before)
       || /\btotal\s+(?:amount\s+)?raised\b[^.!?;:]{0,64}\bto\s*$/iu.test(before);
     const historical = /\bpreviously\s+(?:closed|raised|secured)\b[^.!?;]{0,40}$/iu.test(before);

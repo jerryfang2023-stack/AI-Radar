@@ -234,6 +234,20 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
   if (raw.acquisition_channel === "china-funding" && !/^\d{4}-\d{2}-\d{2}$/u.test(publishedDate)) {
     return { accepted: false, reason: "domestic_publication_date_unverified" };
   }
+  // A capture/intake date cannot turn an old article into today's funding.
+  // Recognize only a short, standalone byline timestamp near the page header;
+  // dates in narrative paragraphs and date-only company metadata are not bylines.
+  const headerDate = String(raw.clean_text || raw.full_text || "").split(/\r?\n/u).slice(0, 4)
+    .map(line => line.trim().match(/^[^。！？!?\n]{0,32}?(\d{4})年(\d{1,2})月(\d{1,2})日\s+\d{1,2}:\d{2}(?::\d{2})?\s*$/u))
+    .find(Boolean);
+  if (options.eventType === "funding" && headerDate && /^\d{4}-\d{2}-\d{2}$/u.test(publishedDate)) {
+    const headerDay = `${headerDate[1]}-${headerDate[2].padStart(2, "0")}-${headerDate[3].padStart(2, "0")}`;
+    const headerTime = Date.parse(`${headerDay}T00:00:00Z`);
+    if (Number.isFinite(headerTime) && new Date(headerTime).toISOString().slice(0, 10) === headerDay
+      && Date.parse(`${publishedDate}T00:00:00Z`) - headerTime > 86_400_000) {
+      return { accepted: false, reason: "funding_source_publication_date_conflict" };
+    }
+  }
   const captureDate = cleanString(dataDate).slice(0, 10);
   if (/^\d{4}-\d{2}-\d{2}$/u.test(publishedDate) && /^\d{4}-\d{2}-\d{2}$/u.test(captureDate)) {
     const ageDays = Math.floor(

@@ -3650,3 +3650,16 @@ test("infrastructure business descriptions cannot invent a financing round", () 
     assert.equal(normalizeFundingRound(text).code,"infrastructure");
   }
 });
+
+
+test("series aggregate proceeds cannot become the A+ round amount", () => {
+  const event={event_id:"EV-series",claim_refs:["CL-series"],event_status:"completed",publication_status:"verified",object:"",metrics:["1亿"]};
+  for (const quote of ["公司宣布完成A+轮融资。至此，公司A轮系列融资超1亿美元。", "公司完成超1亿美元A轮系列融资，由投资机构领投。", "公司完成1亿美元A轮系列融资。", "公司种子轮系列融资总额超2000万美元。"]){
+    const claims=[{claim_id:"CL-series",claim_type:"funding",verification_status:"accepted",source_quote:quote}];
+    assert.equal(canonicalFundingEventAmount(event,claims),"",quote);
+    assert.deepEqual(fundingEventCardConsistencyProblems({company:{entity_id:"EN-series"},financing:{amount:"超1亿美元"}},event,claims),["funding_cumulative_amount_used_as_round"]);
+    assert.deepEqual(fundingEventCardConsistencyProblems({company:{entity_id:"EN-series"},financing:{amount:"未披露"}},event,claims),[]);
+  }
+  const claims=[{claim_id:"CL-series",claim_type:"funding",verification_status:"accepted",source_quote:"公司完成2000万美元A+轮融资。至此，公司A轮系列融资超1亿美元。"}];
+  assert.equal(canonicalFundingEventAmount(event,claims),"2000万美元");
+});
