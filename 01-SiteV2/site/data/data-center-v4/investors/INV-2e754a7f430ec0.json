@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-28",
-    "currentDate": "2026-10-28",
-    "eventCount": 4309,
+    "latestDataDate": "2026-10-29",
+    "currentDate": "2026-10-29",
+    "eventCount": 4317,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-08-25",
-    "latest_disclosed_at": "2026-10-12",
+    "latest_disclosed_at": "2026-10-28",
     "role_counts": {
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
-      "pre_series_a"
+      "pre_series_a",
+      "series_a_plus"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-2af17ddc761538ab",
+        "canonical_entity_id": "",
+        "name": "百奥几何"
+      },
       {
         "entity_id": "EN-e9c2b868dc8f92df",
         "canonical_entity_id": "EN-e9c2b868dc8f92df",
@@ -96,6 +102,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e44d236204c22d57",
+        "funding_insight_id": "FI-d5cacd2608e23e2c",
+        "event_ids": [
+          "EV-63e454277381c4b3"
+        ],
+        "company_entity_id": "EN-2af17ddc761538ab",
+        "company_canonical_entity_id": "",
+        "company_name": "百奥几何",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "超1亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿美元"
+        },
+        "announced_at": "2026-10-28",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ebbd17436fafb574",
+            "source_url": "https://news.pedaily.cn/202610/570976.shtml",
+            "source_title": "百奥几何完成1亿美元A轮系列融资，带队迈向生命科学超级智能",
+            "source_content_hash": "2f1bfe0a9007d6af52dfea2a5df42e59da5aa3b83e28cc0572e960c58f4eacae",
+            "quote": "国开科创、瑞力投资、国方创投及头部生物医药产业方等多家机构跟投，老股东达晨财智持续加注，指数资本继续担任独家财务顾问。",
+            "quote_hash": "2dfc6b294933e3f3e665258f1745570421105ba25456ddf16154e3a161057dac"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b8c3323ae3edecaa",
         "funding_insight_id": "FI-bc8f734fd3f1e216",
@@ -219,6 +265,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ebbd17436fafb574",
+        "source_url": "https://news.pedaily.cn/202610/570976.shtml",
+        "source_title": "百奥几何完成1亿美元A轮系列融资，带队迈向生命科学超级智能",
+        "source_content_hash": "2f1bfe0a9007d6af52dfea2a5df42e59da5aa3b83e28cc0572e960c58f4eacae",
+        "quote": "国开科创、瑞力投资、国方创投及头部生物医药产业方等多家机构跟投，老股东达晨财智持续加注，指数资本继续担任独家财务顾问。",
+        "quote_hash": "2dfc6b294933e3f3e665258f1745570421105ba25456ddf16154e3a161057dac"
+      },
+      {
         "source_id": "FISRC-cb25587b8eec23eb",
         "source_url": "https://www.163.com/dy/article/L91M226D0514R9P4.html",
         "source_title": "大模型创新企业模思智能完成超10亿元Pre-A轮融资",
@@ -266,16 +320,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：百奥几何 · A+轮 · 2026-10-28 · 本轮参投 · 超1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ebbd17436fafb574"
+        },
+        {
           "description": "融资来源记录：模思智能 · Pre-A轮 · 2026-10-12 · 本轮参投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cb25587b8eec23eb"
         },
         {
           "description": "融资来源记录：上海模思智能科技有限公司 · Pre-A轮 · 2026-10-12 · 本轮参投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2b099c2278c91b1d"
-        },
-        {
-          "description": "融资来源记录：格通智联 · Pre-A轮 · 2026-08-25 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2a3446f702110142"
         }
       ],
       "contacts": [],
@@ -293,6 +347,14 @@
           "quote_hash": "ea9b24c4714b1acb316abf6fa8f37b410aa675347cca5cc49a2b0c5b42d35ebe"
         },
         {
+          "source_id": "FISRC-ebbd17436fafb574",
+          "source_url": "https://news.pedaily.cn/202610/570976.shtml",
+          "source_title": "百奥几何完成1亿美元A轮系列融资，带队迈向生命科学超级智能",
+          "source_content_hash": "2f1bfe0a9007d6af52dfea2a5df42e59da5aa3b83e28cc0572e960c58f4eacae",
+          "quote": "国开科创、瑞力投资、国方创投及头部生物医药产业方等多家机构跟投，老股东达晨财智持续加注，指数资本继续担任独家财务顾问。",
+          "quote_hash": "2dfc6b294933e3f3e665258f1745570421105ba25456ddf16154e3a161057dac"
+        },
+        {
           "source_id": "FISRC-cb25587b8eec23eb",
           "source_url": "https://www.163.com/dy/article/L91M226D0514R9P4.html",
           "source_title": "大模型创新企业模思智能完成超10亿元Pre-A轮融资",
@@ -307,14 +369,6 @@
           "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
           "quote": "主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等",
           "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
-        },
-        {
-          "source_id": "FISRC-2a3446f702110142",
-          "source_url": "https://news.pedaily.cn/202608/568060.shtml",
-          "source_title": "格通智联完成数亿元Pre A轮融资",
-          "source_content_hash": "98c49c9e9931e708",
-          "quote": "本轮融资由张江高科领投，壁仞科技、国开科创、新鼎资本、联想创投、尚融资本等知名产业方与投资机构跟投。",
-          "quote_hash": "f850c173b12fcf1c560b4cafd4cd1a72d412acf7ca3752964ad6e7e0faaa57c5"
         }
       ],
       "last_verified_at": "2026-10-02"

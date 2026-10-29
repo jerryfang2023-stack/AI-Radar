@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-28",
-    "currentDate": "2026-10-28",
-    "eventCount": 4309,
+    "latestDataDate": "2026-10-29",
+    "currentDate": "2026-10-29",
+    "eventCount": 4317,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 5,
-    "china_market_company_count": 5,
+    "china_market_activity_count": 6,
+    "china_market_company_count": 6,
     "first_disclosed_at": "2026-03-16",
-    "latest_disclosed_at": "2026-09-20",
+    "latest_disclosed_at": "2026-10-28",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 4,
-      "lead": 1,
+      "lead": 2,
       "participant": 4
     },
     "round_codes": [
@@ -86,6 +86,11 @@
       "strategic"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-d89fa694501806e0",
+        "canonical_entity_id": "",
+        "name": "超进化"
+      },
       {
         "entity_id": "EN-a43f157d208b2a63",
         "canonical_entity_id": "EN-a43f157d208b2a63",
@@ -118,6 +123,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-761001450f86f241",
+        "funding_insight_id": "FI-16e7789991a5af66",
+        "event_ids": [
+          "EV-3f5278aad82b5aba"
+        ],
+        "company_entity_id": "EN-d89fa694501806e0",
+        "company_canonical_entity_id": "",
+        "company_name": "超进化",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-10-28",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-570d8c761dfb8abb",
+            "source_url": "https://news.pedaily.cn/202610/570975.shtml",
+            "source_title": "超进化智能完成数亿元天使轮融资，以万卡训练经验打造研究基础模型",
+            "source_content_hash": "ee3d74a37caa527f91cbfb1ab41d770fc8a32cfc3aedf62e5135d2ef0a9c2443",
+            "quote": "本轮由蓝驰创投领投，商汤国香资本、联想之星、英诺基金、水木清华校友种子基金等联合投资",
+            "quote_hash": "0bc48a7bcfbb9c3498d45ad7264a3d3d1aeed801c4353c2ab1d455eec6a7cb26"
+          }
+        ]
+      },
       {
         "activity_id": "IA-85b0dbf7d8a007fc",
         "funding_insight_id": "FI-cb9086864c5c66de",
@@ -491,6 +536,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-570d8c761dfb8abb",
+        "source_url": "https://news.pedaily.cn/202610/570975.shtml",
+        "source_title": "超进化智能完成数亿元天使轮融资，以万卡训练经验打造研究基础模型",
+        "source_content_hash": "ee3d74a37caa527f91cbfb1ab41d770fc8a32cfc3aedf62e5135d2ef0a9c2443",
+        "quote": "本轮由蓝驰创投领投，商汤国香资本、联想之星、英诺基金、水木清华校友种子基金等联合投资",
+        "quote_hash": "0bc48a7bcfbb9c3498d45ad7264a3d3d1aeed801c4353c2ab1d455eec6a7cb26"
+      },
+      {
         "source_id": "FISRC-3a00c703054126cd",
         "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
         "source_title": "千觉机器人宣布连续完成两轮数亿元战略融资 投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。 投中网 · 22小时前",
@@ -660,16 +713,16 @@
           "source_id": "lanchi_2026_fund"
         },
         {
+          "description": "融资来源记录：超进化 · 天使轮 · 2026-10-28 · 本轮领投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-570d8c761dfb8abb"
+        },
+        {
           "description": "融资来源记录：千觉机器人 · 战略融资 · 2026-09-20 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3a00c703054126cd"
         },
         {
           "description": "融资来源记录：Violoop · 多轮融资 · 2026-09-02 · 本轮领投 · 亿级。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3be0dc7558cb7d71"
-        },
-        {
-          "description": "融资来源记录：墨奇智能 · 天使轮 · 2026-07-09 · 本轮参投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bea9d0be613bc1cd"
         }
       ],
       "contacts": [
@@ -736,6 +789,14 @@
           "quote_hash": "2fb2778a7666c839f5901b593190a447d9817c0911b6fbf3b575d6d3098b8905"
         },
         {
+          "source_id": "FISRC-570d8c761dfb8abb",
+          "source_url": "https://news.pedaily.cn/202610/570975.shtml",
+          "source_title": "超进化智能完成数亿元天使轮融资，以万卡训练经验打造研究基础模型",
+          "source_content_hash": "ee3d74a37caa527f91cbfb1ab41d770fc8a32cfc3aedf62e5135d2ef0a9c2443",
+          "quote": "本轮由蓝驰创投领投，商汤国香资本、联想之星、英诺基金、水木清华校友种子基金等联合投资",
+          "quote_hash": "0bc48a7bcfbb9c3498d45ad7264a3d3d1aeed801c4353c2ab1d455eec6a7cb26"
+        },
+        {
           "source_id": "FISRC-3a00c703054126cd",
           "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
           "source_title": "千觉机器人宣布连续完成两轮数亿元战略融资 投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。 投中网 · 22小时前",
@@ -750,14 +811,6 @@
           "source_content_hash": "f6503c5ecc6ff13e459c42df57836279c72366107ba3335a8e62f71886d04975",
           "quote": "蓝驰创投领投，其他知名产业投资机构和战投方共同投资",
           "quote_hash": "ced182a6c134945975ac529b0297a2e92984c1df94a2240bda653fdcb2f7033f"
-        },
-        {
-          "source_id": "FISRC-bea9d0be613bc1cd",
-          "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
-          "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
-          "source_content_hash": "311224a4dfb089df",
-          "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
-          "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
         }
       ],
       "last_verified_at": "2026-09-25",

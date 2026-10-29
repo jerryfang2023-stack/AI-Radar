@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-28",
-    "currentDate": "2026-10-28",
-    "eventCount": 4309,
+    "latestDataDate": "2026-10-29",
+    "currentDate": "2026-10-29",
+    "eventCount": 4317,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 7,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 5,
-    "china_market_company_count": 3,
+    "china_market_activity_count": 6,
+    "china_market_company_count": 4,
     "first_disclosed_at": "2026-02-24",
-    "latest_disclosed_at": "2026-09-15",
+    "latest_disclosed_at": "2026-10-28",
     "role_counts": {
       "historical_or_ambiguous": 7,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "multi_round",
@@ -83,6 +83,11 @@
       "series_c1"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-2af17ddc761538ab",
+        "canonical_entity_id": "",
+        "name": "百奥几何"
+      },
       {
         "entity_id": "EN-e7492db096492304",
         "canonical_entity_id": "EN-e7492db096492304",
@@ -100,6 +105,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-4f21cc434cc61476",
+        "funding_insight_id": "FI-d5cacd2608e23e2c",
+        "event_ids": [
+          "EV-63e454277381c4b3"
+        ],
+        "company_entity_id": "EN-2af17ddc761538ab",
+        "company_canonical_entity_id": "",
+        "company_name": "百奥几何",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "超1亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿美元"
+        },
+        "announced_at": "2026-10-28",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ebbd17436fafb574",
+            "source_url": "https://news.pedaily.cn/202610/570976.shtml",
+            "source_title": "百奥几何完成1亿美元A轮系列融资，带队迈向生命科学超级智能",
+            "source_content_hash": "2f1bfe0a9007d6af52dfea2a5df42e59da5aa3b83e28cc0572e960c58f4eacae",
+            "quote": "国开科创、瑞力投资、国方创投及头部生物医药产业方等多家机构跟投，老股东达晨财智持续加注，指数资本继续担任独家财务顾问。",
+            "quote_hash": "2dfc6b294933e3f3e665258f1745570421105ba25456ddf16154e3a161057dac"
+          }
+        ]
+      },
       {
         "activity_id": "IA-148163fbb9f62266",
         "funding_insight_id": "FI-54e748b1e6abf463",
@@ -530,6 +575,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ebbd17436fafb574",
+        "source_url": "https://news.pedaily.cn/202610/570976.shtml",
+        "source_title": "百奥几何完成1亿美元A轮系列融资，带队迈向生命科学超级智能",
+        "source_content_hash": "2f1bfe0a9007d6af52dfea2a5df42e59da5aa3b83e28cc0572e960c58f4eacae",
+        "quote": "国开科创、瑞力投资、国方创投及头部生物医药产业方等多家机构跟投，老股东达晨财智持续加注，指数资本继续担任独家财务顾问。",
+        "quote_hash": "2dfc6b294933e3f3e665258f1745570421105ba25456ddf16154e3a161057dac"
+      },
+      {
         "source_id": "FISRC-e5567e9a53d1316c",
         "source_url": "https://news.pedaily.cn/202609/569003.shtml",
         "source_title": "宇道生物完成数千万美元C1轮融资,专攻难成药靶标的AI原生Biotech",
@@ -652,16 +705,16 @@
           "source_id": "dachen_cninfo"
         },
         {
+          "description": "融资来源记录：百奥几何 · A+轮 · 2026-10-28 · 本轮参投 · 超1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ebbd17436fafb574"
+        },
+        {
           "description": "融资来源记录：上海宇道生物技术有限公司 · C1轮 · 2026-09-15 · 本轮参投 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e5567e9a53d1316c"
         },
         {
           "description": "融资来源记录：极佳视界 · B2轮 · 2026-06-15 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce47b663ca256878"
-        },
-        {
-          "description": "融资来源记录：千寻智能 · A+轮 · 2026-04-07 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fc5617428a7935ed"
         }
       ],
       "contacts": [
@@ -691,6 +744,14 @@
           "quote_hash": "3dc873108a4d63df5651dbb301d7d4a38b85fd98f4f928fc674491788e341c82"
         },
         {
+          "source_id": "FISRC-ebbd17436fafb574",
+          "source_url": "https://news.pedaily.cn/202610/570976.shtml",
+          "source_title": "百奥几何完成1亿美元A轮系列融资，带队迈向生命科学超级智能",
+          "source_content_hash": "2f1bfe0a9007d6af52dfea2a5df42e59da5aa3b83e28cc0572e960c58f4eacae",
+          "quote": "国开科创、瑞力投资、国方创投及头部生物医药产业方等多家机构跟投，老股东达晨财智持续加注，指数资本继续担任独家财务顾问。",
+          "quote_hash": "2dfc6b294933e3f3e665258f1745570421105ba25456ddf16154e3a161057dac"
+        },
+        {
           "source_id": "FISRC-e5567e9a53d1316c",
           "source_url": "https://news.pedaily.cn/202609/569003.shtml",
           "source_title": "宇道生物完成数千万美元C1轮融资,专攻难成药靶标的AI原生Biotech",
@@ -705,14 +766,6 @@
           "source_content_hash": "a652909321da946b",
           "quote": "国中资本、达晨财智、图灵资管等多个老股东持续超额加注",
           "quote_hash": "dce935c06fce5425156b93b1b31d4ac97ff305070d2c8f29d10845c372e5c8f8"
-        },
-        {
-          "source_id": "FISRC-fc5617428a7935ed",
-          "source_url": "https://www.nbd.com.cn/articles/2026-04-07/4328144.html",
-          "source_title": "千寻智能30天融资30亿元：马云、雷军罕见“同框”！重金押注“百万小时”数据规模，具身智能马太效应加剧",
-          "source_content_hash": "4c0590395b225d91834ea11c5dc4e3a325b4487f06e04055a1c05a08c2038da2",
-          "quote": "达晨财智、某头部人民币基金、银河源汇等机构重磅加持",
-          "quote_hash": "16bda2a54bc3551f4aecbb2b3e998631edd16de61b42d79b10cf70d5427da7e6"
         }
       ],
       "last_verified_at": "2026-09-25",
