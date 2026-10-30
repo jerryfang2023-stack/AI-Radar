@@ -35502,7 +35502,221 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-29T00:47:13.081Z"
+    },
+    "EV-fef4dfd8fed00cfe": {
+      "id": "EV-fef4dfd8fed00cfe",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Avante 以 AI 智能体帮助企业处理员工福利与保险计划管理，属企业业务流程应用。",
+      "input_hash": "bc61b80a88ac41e2c2896d79fe01a503050c4fbdfcd0944a74e0dfc9c5cbe235",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e028ef9a98fb7979",
+          "quote": "Avante, the maker of an AI platform to help companies manage employee health care and other benefits"
+        },
+        {
+          "source_id": "FISRC-e028ef9a98fb7979",
+          "quote": "Avante’s AI agents do work like comparing vendor contracts against actual claims, reviewing plan documents for errors and preparing for renewals."
+        },
+        {
+          "source_id": "FISRC-e028ef9a98fb7979",
+          "quote": "building on a beta release of its “Ava Agents” last week"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-30T03:52:06.165Z"
+    },
+    "EV-ee7fd70ed0f055f6": {
+      "id": "EV-ee7fd70ed0f055f6",
+      "scope": "excluded",
+      "exclusion_reason": "not_ai_business",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        3,
+        4
+      ],
+      "rationale": "主营为固态电池负极用纳米硅材料，AI 芯片材料仅为次要布局，非 AI 业务。",
+      "input_hash": "3e961aa396d0a7fa2dde229521f64b94c17629f13a40bf891fd521248612f605",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0d06c2ce3482c5da",
+          "quote": "杭州星科恒智科技发展有限公司（以下简称：星科源）成立于2022年，其核心业务是聚焦下一代固态电池专用的纳米硅技术，同时布局了AI 芯片用硅基光电器件所需的纳米硅材料。"
+        },
+        {
+          "source_id": "FISRC-0d06c2ce3482c5da",
+          "quote": "同一套超细纳米硅平台，当前主航道是固态电池负极材料，并已向液态体系拓展；同时布局 AI 芯片用硅基光电器件所需的纳米硅材料，形成第二条增长曲线。"
+        },
+        {
+          "source_id": "FISRC-0d06c2ce3482c5da",
+          "quote": "同时布局 AI 芯片用硅基光电器件所需的纳米硅材料，形成第二条增长曲线。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-30T03:52:06.165Z"
+    },
+    "EV-ac30333388e0d00a": {
+      "id": "EV-ac30333388e0d00a",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "DeepSeek 主营大语言模型与多模态基础模型研发并开源提供。",
+      "input_hash": "6ac9682cedf641e459fea1909efa43e11f3342099a97ab049d4baf402bf7c105",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-947d23e1d1abb833",
+          "quote": "DeepSeek 成立于 2023 年 7 月 17 日，总部位于浙江省杭州市拱墅区，主要从事大语言模型及多模态 AI 技术研发"
+        },
+        {
+          "source_id": "FISRC-ec7fb08c7862a9db",
+          "quote": "凭借 DeepSeek-V3 和 DeepSeek-R1 等模型的开源与卓越性能"
+        },
+        {
+          "source_id": "FISRC-03184bd4c71f3982",
+          "quote": "DeepSeek宣布将内部推理框架DeepInfer全面开源，兼容英伟达与华为昇腾芯片两大算力平台"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-30T03:52:06.165Z"
+    },
+    "EV-7684bfb9b954c1fd": {
+      "id": "EV-7684bfb9b954c1fd",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "consumer",
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "OpenAI 主营通用基础模型，并通过 ChatGPT 与开发者 API 交付。",
+      "input_hash": "3f5aa8499abb60327919eb96e592bcbf85824c8fbdafb08aca39632002fd56d1",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3c39a04b0d17c3b8",
+          "quote": "OpenAI is an AI research and deployment company. Its products include ChatGPT and tools for developers."
+        },
+        {
+          "source_id": "FISRC-3c39a04b0d17c3b8",
+          "quote": "ChatGPT combines chat, image creation and file/data tools"
+        },
+        {
+          "source_id": "FISRC-3c39a04b0d17c3b8",
+          "quote": "OpenAI’s metered developer platform, separate from ChatGPT subscriptions."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-30T03:52:06.165Z"
+    },
+    "EV-b34cc7c6ca51ad7a": {
+      "id": "EV-b34cc7c6ca51ad7a",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "FuriosaAI 研发并量产面向数据中心的 AI 加速芯片 RNGD。",
+      "input_hash": "0f79cdf53699a7caf8e3083e482c9bfb25b099b9c8334384f4c0ae616b1715b1",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-39736deb6664d820",
+          "quote": "FuriosaAI is a semiconductor company building a new type of AI chip for data centers and enterprise customers."
+        },
+        {
+          "source_id": "FISRC-aa695bfb88a64c8d",
+          "quote": "今年 1 月开始量产 RNGD 芯片"
+        },
+        {
+          "source_id": "FISRC-60c8f27b5eb9da5b",
+          "quote": "RNGD (pronounced “Renegade”) AI accelerator, which offers 2.25 times better LLM inference performance per watt than traditional GPUs"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-30T03:52:06.165Z"
+    },
+    "EV-71961eb465ee3502": {
+      "id": "EV-71961eb465ee3502",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "assistants",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Wabi 2.0 是面向个人用户的 AI 智能体助手，协助日程与日常任务。",
+      "input_hash": "2e12f43f5a47cdb27dcb3621f88cb8b12eaa4327af3967ec7445d26c8a187ecc",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-bc01622ffa1cd4de",
+          "quote": "Wabi, now describing itself as a “personal agent,” said it has raised $55 million at a $1.25 billion valuation."
+        },
+        {
+          "source_id": "FISRC-8c9c7bf4acbab387",
+          "quote": "Wabi, the Bloomberg report added, introduced its latest update Oct. 19. Users can bring the assistant into group chats to help plan trips, line up schedules and manage day-to-day tasks."
+        },
+        {
+          "source_id": "FISRC-bc01622ffa1cd4de",
+          "quote": "The idea now is that the new Wabi — or Wabi 2.0, as it was called — could build the interfaces you need to get things done as part of its role as your personal AI agent."
+        },
+        {
+          "source_id": "FISRC-8c9c7bf4acbab387",
+          "quote": "Users can bring the assistant into group chats to help plan trips, line up schedules and manage day-to-day tasks. It can turn conversations into shared tools like travel itineraries, handle requests like booking appointments or making shopping returns."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-30T03:52:06.165Z"
     }
   },
-  "generated_at": "2026-10-29T00:47:13.081Z"
+  "generated_at": "2026-10-30T03:52:06.166Z"
 }

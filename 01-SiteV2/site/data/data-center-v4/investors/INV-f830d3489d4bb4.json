@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-29",
-    "currentDate": "2026-10-29",
-    "eventCount": 4316,
+    "latestDataDate": "2026-10-30",
+    "currentDate": "2026-10-30",
+    "eventCount": 4324,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,25 +54,27 @@
   },
   "institution": {
     "id": "INV-f830d3489d4bb4",
-    "name": "FUSE",
-    "aliases": [],
+    "name": "Fuse",
+    "aliases": [
+      "FUSE"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "unverified_investor",
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-14",
-    "latest_disclosed_at": "2026-09-30",
+    "latest_disclosed_at": "2026-10-27",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "seed",
@@ -85,12 +87,57 @@
         "name": "Ascerta"
       },
       {
+        "entity_id": "EN-7000534ceec56856",
+        "canonical_entity_id": "",
+        "name": "Avante"
+      },
+      {
         "entity_id": "EN-2dcd958b2064843f",
         "canonical_entity_id": "EN-2dcd958b2064843f",
         "name": "Thira"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5d12995c0cb4f291",
+        "funding_insight_id": "FI-94c2866f061d0e59",
+        "event_ids": [
+          "EV-fef4dfd8fed00cfe"
+        ],
+        "company_entity_id": "EN-7000534ceec56856",
+        "company_canonical_entity_id": "",
+        "company_name": "Avante",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-10-27",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e028ef9a98fb7979",
+            "source_url": "https://www.geekwire.com/2026/seattle-startup-avante-raises-30m-to-bring-ai-agents-to-corporate-benefits-teams/",
+            "source_title": "西雅图初创公司Avante融资3000万美元，将AI智能体引入企业福利团队",
+            "source_content_hash": "d7903755adf972ee3bc4df250c6b6aff971a6a4cbb64044f3eed8a4b06fc71e9",
+            "quote": "Frist Cressey Ventures led the round, with participation from Sorenson Capital, Hearst Ventures, Morgan Stanley Next Level Fund and existing investor Fuse.",
+            "quote_hash": "481712787e520c92e72f01b4e78cb1d47e1339e1247a2a2a627323b52ce5fe88"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f08a02727e69ae72",
         "funding_insight_id": "FI-9641aad793c547e7",
@@ -175,6 +222,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-e028ef9a98fb7979",
+        "source_url": "https://www.geekwire.com/2026/seattle-startup-avante-raises-30m-to-bring-ai-agents-to-corporate-benefits-teams/",
+        "source_title": "西雅图初创公司Avante融资3000万美元，将AI智能体引入企业福利团队",
+        "source_content_hash": "d7903755adf972ee3bc4df250c6b6aff971a6a4cbb64044f3eed8a4b06fc71e9",
+        "quote": "Frist Cressey Ventures led the round, with participation from Sorenson Capital, Hearst Ventures, Morgan Stanley Next Level Fund and existing investor Fuse.",
+        "quote_hash": "481712787e520c92e72f01b4e78cb1d47e1339e1247a2a2a627323b52ce5fe88"
+      },
+      {
         "source_id": "FISRC-1ae6b18ce755c2a8",
         "source_url": "https://ascerta.com/resources/press/ascerta-raises-18m-series-a",
         "source_title": "Ascerta 融资 1800 万美元，帮助企业最大化 AI 投资回报率",
@@ -200,6 +255,10 @@
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Avante · A轮 · 2026-10-27 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e028ef9a98fb7979"
+        },
         {
           "description": "融资来源记录：Ascerta · A轮 · 2026-09-30 · 本轮参投 · $18 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1ae6b18ce755c2a8"
@@ -230,6 +289,14 @@
           "source_content_hash": "c9ac514736cc852034fa24b01dfda6700e2c0c7741713276023805fbcd611742",
           "quote": "© 2026 FUSE Venture Partners",
           "quote_hash": "2eeb95fef1d351e0a5f1dac53e816fe9bbe493a66a1b06a22c7cde98419fae9b"
+        },
+        {
+          "source_id": "FISRC-e028ef9a98fb7979",
+          "source_url": "https://www.geekwire.com/2026/seattle-startup-avante-raises-30m-to-bring-ai-agents-to-corporate-benefits-teams/",
+          "source_title": "西雅图初创公司Avante融资3000万美元，将AI智能体引入企业福利团队",
+          "source_content_hash": "d7903755adf972ee3bc4df250c6b6aff971a6a4cbb64044f3eed8a4b06fc71e9",
+          "quote": "Frist Cressey Ventures led the round, with participation from Sorenson Capital, Hearst Ventures, Morgan Stanley Next Level Fund and existing investor Fuse.",
+          "quote_hash": "481712787e520c92e72f01b4e78cb1d47e1339e1247a2a2a627323b52ce5fe88"
         },
         {
           "source_id": "FISRC-1ae6b18ce755c2a8",

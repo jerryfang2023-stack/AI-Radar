@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-29",
-    "currentDate": "2026-10-29",
-    "eventCount": 4316,
+    "latestDataDate": "2026-10-30",
+    "currentDate": "2026-10-30",
+    "eventCount": 4324,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-10-29",
+    "latest_disclosed_at": "2026-10-29",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-27392c283df47b1a",
+        "canonical_entity_id": "",
+        "name": "Wabi"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-dfbc5c1ae80873ac",
+        "funding_insight_id": "FI-85c91dbd238af2fb",
+        "event_ids": [
+          "EV-71961eb465ee3502"
+        ],
+        "company_entity_id": "EN-27392c283df47b1a",
+        "company_canonical_entity_id": "",
+        "company_name": "Wabi",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "$55 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 55000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5500 万美元"
+        },
+        "announced_at": "2026-10-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-bc01622ffa1cd4de",
+            "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+            "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+            "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
+            "quote": "angel investors like Shopify CEO Tobi Lütke, Salesforce CEO Marc Benioff, former Yahoo! head Marissa Mayer, former Twitter CEO Dick Costolo, and one half of The Chainsmokers, Alex Pall.",
+            "quote_hash": "962878cfc552ecc0587580cd8a4f1acbfb8314b2ae32d9c23c610541dfb1d385"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6929680b391b3b8d",
         "funding_insight_id": "FI-9fd39f44b35d940c",
@@ -112,6 +161,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-bc01622ffa1cd4de",
+        "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+        "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+        "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
+        "quote": "angel investors like Shopify CEO Tobi Lütke, Salesforce CEO Marc Benioff, former Yahoo! head Marissa Mayer, former Twitter CEO Dick Costolo, and one half of The Chainsmokers, Alex Pall.",
+        "quote_hash": "962878cfc552ecc0587580cd8a4f1acbfb8314b2ae32d9c23c610541dfb1d385"
+      },
+      {
         "source_id": "FISRC-afaa91a6569d1f7a",
         "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
         "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
@@ -138,6 +195,10 @@
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Wabi · 轮次未披露 · 2026-10-29 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bc01622ffa1cd4de"
+        },
         {
           "description": "融资来源记录：Nomos Ai Inc. · 轮次未披露 · 既有投资方（历史轮次）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-afaa91a6569d1f7a"
@@ -176,6 +237,14 @@
           "source_content_hash": "aa2f2995f3d18418cc9e747b9ee9ead536c28900e374de53c31c6d1cccc0b4b1",
           "quote": "TIME Ventures will invest $100 million in ecopreneurs and reforestation ventures",
           "quote_hash": "bdd27ff75482606c6f8b2431ff41d4a57a90deafd97da9a1fc488d97f32ce757"
+        },
+        {
+          "source_id": "FISRC-bc01622ffa1cd4de",
+          "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+          "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+          "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
+          "quote": "angel investors like Shopify CEO Tobi Lütke, Salesforce CEO Marc Benioff, former Yahoo! head Marissa Mayer, former Twitter CEO Dick Costolo, and one half of The Chainsmokers, Alex Pall.",
+          "quote_hash": "962878cfc552ecc0587580cd8a4f1acbfb8314b2ae32d9c23c610541dfb1d385"
         },
         {
           "source_id": "FISRC-afaa91a6569d1f7a",

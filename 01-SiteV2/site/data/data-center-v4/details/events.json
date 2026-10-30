@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-29",
-    "currentDate": "2026-10-29",
-    "eventCount": 4316,
+    "latestDataDate": "2026-10-30",
+    "currentDate": "2026-10-30",
+    "eventCount": 4324,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,8 +54,71 @@
   },
   "events": [
     {
+      "id": "EV-71961eb465ee3502",
+      "dataDate": "2026-10-30",
+      "date": "2026-10-29",
+      "updatedDate": "2026-10-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+      "originalTitle": "Wabi, the AI agent that builds mini apps, now valued at $1.25B after latest round",
+      "subject": "Wabi",
+      "action": "funding",
+      "object": "$55 million at a $1.25 billion valuation",
+      "metrics": [
+        "$55 million",
+        "$1.25 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-27392c283df47b1a"
+      ],
+      "entityNames": [
+        "Wabi"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-6397f6793109b6bd",
+          "subject": "Wabi",
+          "object": "$55 million at a $1.25 billion valuation",
+          "quote": "Wabi, now describing itself as a “personal agent,” said it has raised $55 million at a $1.25 billion valuation."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-d0526a3df88832e3",
+          "publisher": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+      "publisher": "techcrunch.com",
+      "sourceExcerpt": "Wabi, now describing itself as a “personal agent,” said it has raised $55 million at a $1.25 billion valuation."
+    },
+    {
       "id": "EV-848a9d54114887d9",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "acquisition",
@@ -103,25 +166,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-6d3039cadf3115a1",
+          "id": "CL-eb344d53c103e715",
           "subject": "AI 行业重磅",
           "object": "：彭博社称美满电子最快下周宣布收购光通信龙头 Lumentum",
           "quote": "IT之家 10 月 29 日消息，彭博社今天（10 月 29 日）发布博文，报道称美国半导体公司美满电子（Marvell）计划收购数据中心光通信设备制造商朗美通（Lumentum），目前双方正在磋商谈判，交易最快可能于下周宣布。"
         },
         {
-          "id": "CL-7895344e8de49d00",
+          "id": "CL-154cfd660a809416",
           "subject": "AI 行业重磅",
           "object": "：彭博社称美满电子最快下周宣布收购光通信龙头 Lumentum",
           "quote": "IT之家援引博文介绍，双方尚未达成最终协议，若该交易达成，有望成为人工智能硬件供应链领域的一笔重量级并购。"
         },
         {
-          "id": "CL-8f83921a37a911d6",
+          "id": "CL-0de2a6d17cfb12b5",
           "subject": "AI 行业重磅",
           "object": "：彭博社称美满电子最快下周宣布收购光通信龙头 Lumentum",
           "quote": "彭博称，这笔潜在交易凸显了 AI 竞赛正推动科技企业加快通过并购扩大规模、抢占光通信和数据中心互连资源。"
         },
         {
-          "id": "CL-64b511661847d96c",
+          "id": "CL-cb820b05ed40234c",
           "subject": "AI 行业重磅",
           "object": "：彭博社称美满电子最快下周宣布收购光通信龙头 Lumentum",
           "quote": "Lumentum 美股盘后一度大涨约 17%，随后涨幅收窄；迈威尔科技盘后则下跌约 8%，彭博社认为投资者既看好 AI 光互连的长期战略价值，也担忧巨额收购可能带来的融资压力、股权稀释和整合风险。"
@@ -139,8 +202,257 @@
       "sourceExcerpt": "IT之家 10 月 29 日消息，彭博社今天（10 月 29 日）发布博文，报道称美国半导体公司美满电子（Marvell）计划收购数据中心光通信设备制造商朗美通（Lumentum），目前双方正在磋商谈判，交易最快可能于下周宣布。"
     },
     {
+      "id": "EV-b34cc7c6ca51ad7a",
+      "dataDate": "2026-10-30",
+      "date": "2026-10-29",
+      "updatedDate": "2026-10-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮融资后估值翻两番至 29 亿美元",
+      "originalTitle": "",
+      "subject": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮",
+      "action": "融资",
+      "object": "后估值翻两番至 29 亿美元",
+      "metrics": [
+        "29 亿",
+        "193.74 亿",
+        "6.2 亿",
+        "41.42 亿",
+        "2.8 亿",
+        "18.71 亿",
+        "1.1 亿",
+        "7.35 亿"
+      ],
+      "locations": [
+        "美国",
+        "韩国",
+        "新加坡"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-f4bec299df3f4f27"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-f4bec299df3f4f27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-f4bec299df3f4f27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-f4bec299df3f4f27",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "FuriosaAI",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-c0515013662a4113",
+          "subject": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮",
+          "object": "后估值翻两番至 29 亿美元",
+          "quote": "IT之家 10 月 29 日消息，据彭博社 28 日报道，韩国 AI 芯片初创公司 FuriosaAI 完成新一轮融资，估值增至 29 亿美元（IT之家注：现汇率约合 193.74 亿元人民币），接近此前的 4 倍，为挑战英伟达等行业巨头增添了筹码。"
+        },
+        {
+          "id": "CL-433df9cb0aed0304",
+          "subject": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮",
+          "object": "后估值翻两番至 29 亿美元",
+          "quote": "FuriosaAI 宣布，D 轮融资筹集 6.2 亿美元（现汇率约合 41.42 亿元人民币），投资方包括美国 Infinitum Partners。"
+        },
+        {
+          "id": "CL-c683860d8fd7a22e",
+          "subject": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮",
+          "object": "后估值翻两番至 29 亿美元",
+          "quote": "韩国国民成长基金投资 2.8 亿美元（现汇率约合 18.71 亿元人民币），海外投资者合计出资 1.1 亿美元（现汇率约合 7.35 亿元人民币），参与融资的还有杰里科资本、Worldline Capital、新加坡 QUDA Capital 和阿布扎比 NeoFort Holding 等机构。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-9a49f7fdb2a28a5a",
+          "publisher": "www.ithome.com",
+          "url": "https://www.ithome.com/1/019/329.htm"
+        }
+      ],
+      "sourceUrl": "https://www.ithome.com/1/019/329.htm",
+      "publisher": "www.ithome.com",
+      "sourceExcerpt": "IT之家 10 月 29 日消息，据彭博社 28 日报道，韩国 AI 芯片初创公司 FuriosaAI 完成新一轮融资，估值增至 29 亿美元（IT之家注：现汇率约合 193.74 亿元人民币），接近此前的 4 倍，为挑战英伟达等行业巨头增添了筹码。"
+    },
+    {
+      "id": "EV-da13ad386cf35ad9",
+      "dataDate": "2026-10-30",
+      "date": "2026-10-29",
+      "updatedDate": "2026-10-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "考拉悠然完成B++轮融资，持续迭代世界模型基座与多模态大模型",
+      "originalTitle": "",
+      "subject": "考拉悠然",
+      "action": "完成B++轮融资",
+      "object": "，持续迭代世界模型基座与多模态大模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-0975e447ef42ee73"
+      ],
+      "entityNames": [
+        "考拉悠然"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-a9085ad4ba19d8e9",
+          "subject": "考拉悠然",
+          "object": "，持续迭代世界模型基座与多模态大模型",
+          "quote": "投资界（ID：pedaily2012）10月29日消息，考拉悠然近日完成B++轮融资，投资方为明文炜业。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-db8936dc2b0d2c14",
+          "publisher": "news.pedaily.cn",
+          "url": "https://news.pedaily.cn/202610/571068.shtml"
+        }
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202610/571068.shtml",
+      "publisher": "news.pedaily.cn",
+      "sourceExcerpt": "投资界（ID：pedaily2012）10月29日消息，考拉悠然近日完成B++轮融资，投资方为明文炜业。"
+    },
+    {
+      "id": "EV-ee7fd70ed0f055f6",
+      "dataDate": "2026-10-30",
+      "date": "2026-10-29",
+      "updatedDate": "2026-10-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "星科源完成亿元级Pre-A轮融资，聚焦下一代固态电池专用的纳米硅技术",
+      "originalTitle": "",
+      "subject": "星科源",
+      "action": "完成亿元级Pre-A轮融资",
+      "object": "，聚焦下一代固态电池专用的纳米硅技术",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2466327c4d0b1e4a"
+      ],
+      "entityNames": [
+        "星科源"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-4dd6626394c6a765",
+          "subject": "星科源",
+          "object": "，聚焦下一代固态电池专用的纳米硅技术",
+          "quote": "投资界（ID：pedaily2012）10月29日消息，近日，星科源已完成亿元级Pre-A轮融资，由弘毅投资领投，厦门钨业产业基金、宜宾人才基金跟投，云道资本担任长期独家财务顾问。"
+        },
+        {
+          "id": "CL-564649e01ca071c1",
+          "subject": "星科源",
+          "object": "，聚焦下一代固态电池专用的纳米硅技术",
+          "quote": "· 星科源聚焦下一代固态电池专用纳米硅技术，同步布局AI芯片用硅基光电器件纳米硅材料，已完成亿元级Pre-A轮融资，核心技术可稳定制备30nm以内超细纳米硅，且实现装备自主、连续量产与客户交付创始团队兼具二十余年纳米硅科研与产业化经验，核心成员来自全球顶尖科研及产业体系，获弘毅投资等头部机构投资。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-25f65c878f5c7ec8",
+          "publisher": "news.pedaily.cn",
+          "url": "https://news.pedaily.cn/202610/571071.shtml"
+        }
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202610/571071.shtml",
+      "publisher": "news.pedaily.cn",
+      "sourceExcerpt": "投资界（ID：pedaily2012）10月29日消息，近日，星科源已完成亿元级Pre-A轮融资，由弘毅投资领投，厦门钨业产业基金、宜宾人才基金跟投，云道资本担任长期独家财务顾问。"
+    },
+    {
       "id": "EV-3f5278aad82b5aba",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -151,7 +463,7 @@
       "publicationStatus": "verified",
       "title": "超进化智能完成数亿元天使轮融资，以万卡训练经验打造研究基础模型",
       "originalTitle": "",
-      "subject": "超进化（上海）智能科技有限公司",
+      "subject": "超进化",
       "action": "完成数亿元天使轮融资",
       "object": "，以万卡训练经验打造研究基础模型",
       "metrics": [],
@@ -183,8 +495,8 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-4827d85e002a1207",
-          "subject": "超进化（上海）智能科技有限公司",
+          "id": "CL-944b93266b205ec7",
+          "subject": "超进化",
           "object": "数亿元人民币天使轮融资",
           "quote": "超进化宣布完成数亿元人民币天使轮融资"
         }
@@ -202,7 +514,7 @@
     },
     {
       "id": "EV-63e454277381c4b3",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -214,10 +526,11 @@
       "title": "百奥几何完成1亿美元A轮系列融资，带队迈向生命科学超级智能",
       "originalTitle": "",
       "subject": "百奥几何",
-      "action": "funding",
-      "object": "完成A+轮融资",
+      "action": "完成1亿美元A轮系列融资",
+      "object": "，带队迈向生命科学超级智能",
       "metrics": [
-        "1亿"
+        "1亿",
+        "80%"
       ],
       "locations": [],
       "missingFields": [],
@@ -281,10 +594,16 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-561fd9e5da8bf1fb",
+          "id": "CL-de1fe6cb53fd8c11",
           "subject": "百奥几何",
-          "object": "完成A+轮融资",
-          "quote": "投资界（ID：pedaily2012）10月28日消息，近日，AI Native生物制药公司百奥几何（BioGeometry）宣布完成A+轮融资。至此，公司A轮系列融资超1亿美元。"
+          "object": "，带队迈向生命科学超级智能",
+          "quote": "投资界（ID：pedaily2012）10月28日消息，近日，AI Native生物制药公司百奥几何（BioGeometry）宣布完成A+轮融资。"
+        },
+        {
+          "id": "CL-2f77cd0b43e7b56c",
+          "subject": "百奥几何",
+          "object": "，带队迈向生命科学超级智能",
+          "quote": "· 百奥几何完成超1亿美元A轮系列融资，由国寿资本领投，老股东加码构建分子（GeoFlow）、细胞（GeoCell）双尺度微观模型，依托RSI干湿闭环体系，形成AI for AI飞轮储备数十条管线，天然冰片成本较植物提取降80%，2027年将规模化量产。"
         }
       ],
       "sources": [
@@ -296,11 +615,11 @@
       ],
       "sourceUrl": "https://news.pedaily.cn/202610/570976.shtml",
       "publisher": "news.pedaily.cn",
-      "sourceExcerpt": "投资界（ID：pedaily2012）10月28日消息，近日，AI Native生物制药公司百奥几何（BioGeometry）宣布完成A+轮融资。至此，公司A轮系列融资超1亿美元。"
+      "sourceExcerpt": "投资界（ID：pedaily2012）10月28日消息，近日，AI Native生物制药公司百奥几何（BioGeometry）宣布完成A+轮融资。"
     },
     {
       "id": "EV-8615e87fa54663e5",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -348,7 +667,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-5ce3a5132cdff01f",
+          "id": "CL-d4baf1b6881db2cd",
           "subject": "Simplismart",
           "object": "1400万美元B轮融资",
           "quote": "英伟达（Nvidia）参与了印度初创公司 Simplismart 的 1,400 万美元（IT之家注：现汇率约合 9,357.3 万元人民币）融资"
@@ -367,7 +686,7 @@
     },
     {
       "id": "EV-e0a31302688c81ec",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -395,10 +714,10 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-5a39df9f86aff527",
-          "CL-d63482eecb876c59",
-          "CL-c94182277d3517f5",
-          "CL-0df0b464eb25813a"
+          "CL-6341d45872127f85",
+          "CL-cf1269a3290b80d7",
+          "CL-34b57b0fae7fe1ae",
+          "CL-f968ceb90b6242fc"
         ]
       },
       "missingFields": [],
@@ -828,25 +1147,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-5a39df9f86aff527",
+          "id": "CL-6341d45872127f85",
           "subject": "微纳核芯",
           "object": "，首创三维存算一体AI芯片新架构",
           "quote": "投资界（ID：pedaily2012）10月28日消息，近日，微纳核芯完成超10亿元C2轮融资，建投投资领投，杭州资本、凯泰资本、晓池资本、烟台财金、盛堃投资、国投泰康、领阳基金等多家专业机构共同投资，并有多名老股东继续加码。"
         },
         {
-          "id": "CL-d63482eecb876c59",
+          "id": "CL-cf1269a3290b80d7",
           "subject": "微纳核芯",
           "object": "，首创三维存算一体AI芯片新架构",
           "quote": "叠加C1轮，微纳核芯在两个月内完成超20亿元融资，半年内已累计完成30亿元融资，为产品开发迭代与供应链量产备货奠定扎实资金基础。"
         },
         {
-          "id": "CL-c94182277d3517f5",
+          "id": "CL-34b57b0fae7fe1ae",
           "subject": "微纳核芯",
           "object": "，首创三维存算一体AI芯片新架构",
           "quote": "微纳核芯完成10亿元C1轮融资，加速突破AI大模型推理「芯」瓶颈"
         },
         {
-          "id": "CL-0df0b464eb25813a",
+          "id": "CL-f968ceb90b6242fc",
           "subject": "微纳核芯",
           "object": "，首创三维存算一体AI芯片新架构",
           "quote": "· 微纳核芯2021年成立，是国家高新技术企业，首创三维存算一体AI芯片新架构，破解AI芯片“高性能 低功耗 低成本”痛点两个月内完成超20亿元融资，半年累计30亿元，产品覆盖端云推理场景，首批商业化潜力获多方机构看好。"
@@ -1029,7 +1348,7 @@
     },
     {
       "id": "EV-53dad7c8f530b480",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-27",
       "updatedDate": "2026-10-27",
       "eventType": "funding",
@@ -1137,7 +1456,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-f2190b6f35050dbe",
+          "id": "CL-2744ae4d9b55dfc1",
           "subject": "630 亿美元！华尔街银行与黑石为 Anthropic 采购博通 AI 芯片提供",
           "object": "IT之家 10 月 27 日消息，据路透社报道，美国银行（Bank of America）、黑石（Blackstone）、花旗（Citi）和摩根士丹利（Morgan Stanley）将提供 630 亿美元（IT之家注：现汇率约合 4,206.79 亿元人民币）融资，用于为 Anthropic 采购博通（Broadcom）的人工智能芯片与网络设备，这是和人工智能算力建设相关的规模最大的一笔债务交易之一。",
           "quote": "IT之家 10 月 27 日消息，据路透社报道，美国银行（Bank of America）、黑石（Blackstone）、花旗（Citi）和摩根士丹利（Morgan Stanley）将提供 630 亿美元（IT之家注：现汇率约合 4,206.79 亿元人民币）融资，用于为 Anthropic 采购博通（Broadcom）的人工智能芯片与网络设备，这是和人工智能算力建设相关的规模最大的一笔债务交易之一。"
@@ -1156,7 +1475,7 @@
     },
     {
       "id": "EV-6326aa903d147461",
-      "dataDate": "2026-10-28",
+      "dataDate": "2026-10-30",
       "date": "2026-10-27",
       "updatedDate": "2026-10-27",
       "eventType": "funding",
@@ -1202,7 +1521,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-b60a18b8e973c11d",
+          "id": "CL-d929631fc50762e0",
           "subject": "Live2.ai",
           "object": "Rs 130 crore ($14 million) pre-Series B funding round led by IvyCap Ventures",
           "quote": "Bengaluru-based Live2.ai, which uses artificial intelligence (AI) to connect social-media intelligence with marketing and commerce, has raised Rs 130 crore ($14 million) in a pre-Series B funding round led by venture capital firm IvyCap Ventures."
@@ -1448,7 +1767,7 @@
     },
     {
       "id": "EV-94baaaabc016521f",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-27",
       "updatedDate": "2026-10-27",
       "eventType": "funding",
@@ -1563,13 +1882,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-7aa17242689cc076",
+          "id": "CL-55f1cb3a61cb0604",
           "subject": "首发| 维发电子",
           "object": "投资界AI获悉，智能安全核心零部件与解决方案供应商维发电子科技（常州）有限公司（简称维发电子）近日完成亿元级C轮融资。",
           "quote": "投资界AI获悉，智能安全核心零部件与解决方案供应商维发电子科技（常州）有限公司（简称维发电子）近日完成亿元级C轮融资。"
         },
         {
-          "id": "CL-200fc76079807fb9",
+          "id": "CL-daf37742fe275b5d",
           "subject": "首发| 维发电子",
           "object": "· 维发电子完成亿元级C轮融资，股东含国科新能等，系专精特新潜在独角兽，业务覆盖新能源、储能、AIDC及机器人领域，核心产品储能接触器出货量居行业前三，获欧洲头部车企定点、头部电气外资独家合作，已布局AIDC高压器件与人形机器人关节编码器，技术具备复用性风险提示：新场景产品尚处测试验证阶段，海外市场开拓存在不确定性",
           "quote": "· 维发电子完成亿元级C轮融资，股东含国科新能等，系专精特新潜在独角兽，业务覆盖新能源、储能、AIDC及机器人领域，核心产品储能接触器出货量居行业前三，获欧洲头部车企定点、头部电气外资独家合作，已布局AIDC高压器件与人形机器人关节编码器，技术具备复用性风险提示：新场景产品尚处测试验证阶段，海外市场开拓存在不确定性"
@@ -1649,6 +1968,114 @@
       "sourceUrl": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/",
       "publisher": "techcrunch.com",
       "sourceExcerpt": "Nvidia has backed Indian startup Simplismart in a $14 million funding round"
+    },
+    {
+      "id": "EV-fef4dfd8fed00cfe",
+      "dataDate": "2026-10-30",
+      "date": "2026-10-27",
+      "updatedDate": "2026-10-27",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "西雅图初创公司Avante融资3000万美元，将AI智能体引入企业福利团队",
+      "originalTitle": "Seattle startup Avante raises $30M to bring AI agents to corporate benefits teams",
+      "subject": "Seattle startup Avante",
+      "action": "raises",
+      "object": "$30M to bring AI agents to corporate benefits teams",
+      "metrics": [
+        "$30 million",
+        "$40 million",
+        "$10 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-835429c59eea025b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-835429c59eea025b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-835429c59eea025b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-835429c59eea025b",
+        "EN-7000534ceec56856"
+      ],
+      "entityNames": [
+        "Seattle startup Avante",
+        "Avante"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-b07f66786923616a",
+          "subject": "Seattle startup Avante",
+          "object": "$30M to bring AI agents to corporate benefits teams",
+          "quote": "Avante, the maker of an AI platform to help companies manage employee health care and other benefits, has landed a $30 million Series A round."
+        },
+        {
+          "id": "CL-73dc5407a39f6bcd",
+          "subject": "Seattle startup Avante",
+          "object": "$30M to bring AI agents to corporate benefits teams",
+          "quote": "The new funding, announced Tuesday, brings Seattle-based Avante’s total raised to $40 million, following a $10 million seed round led by Fuse in 2024."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-dab493c1178b5ee4",
+          "publisher": "www.geekwire.com",
+          "url": "https://www.geekwire.com/2026/seattle-startup-avante-raises-30m-to-bring-ai-agents-to-corporate-benefits-teams/"
+        }
+      ],
+      "sourceUrl": "https://www.geekwire.com/2026/seattle-startup-avante-raises-30m-to-bring-ai-agents-to-corporate-benefits-teams/",
+      "publisher": "www.geekwire.com",
+      "sourceExcerpt": "Avante, the maker of an AI platform to help companies manage employee health care and other benefits, has landed a $30 million Series A round."
     },
     {
       "id": "EV-370b7f7ebf16be3d",
@@ -1845,7 +2272,7 @@
     },
     {
       "id": "EV-64ce72bdf3514b8e",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "funding",
@@ -1892,25 +2319,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-f3d36966204010a7",
+          "id": "CL-8d8f2468708cf7e5",
           "subject": "马斯克：SpaceX已",
           "object": "购买AI芯片",
           "quote": "特斯拉及SpaceX首席执行官埃隆·马斯克10月25日表示，SpaceX已完成400亿美元债务融资，主要用于采购人工智能芯片，相关GPU预计将在2027年第一季度和第二季度陆续交付。"
         },
         {
-          "id": "CL-269fef946e0bd6e6",
+          "id": "CL-4f28487385d04f15",
           "subject": "马斯克：SpaceX已",
           "object": "购买AI芯片",
           "quote": "SpaceX完成400亿美元融资，AI芯片明年上半年交付"
         },
         {
-          "id": "CL-0bd6a9ca40aabd0b",
+          "id": "CL-f833620d05a4ba97",
           "subject": "马斯克：SpaceX已",
           "object": "购买AI芯片",
           "quote": "马斯克周日在社交平台上表示，SpaceX已经完成400亿美元债务融资，所筹资金将主要用于购买图形处理器（GPU），预计相关设备将在2027年上半年交付。"
         },
         {
-          "id": "CL-d5fb219d56e8b965",
+          "id": "CL-b193dc1790e21cbb",
           "subject": "马斯克：SpaceX已",
           "object": "购买AI芯片",
           "quote": "与SpaceX完成巨额融资形成对比的是，马斯克对新型云计算行业的融资前景表达了强烈担忧。"
@@ -1926,6 +2353,171 @@
       "sourceUrl": "https://finance.sina.com.cn/stock/usstock/c/2026-10-26/doc-iniwprzt9308482.shtml?cre=tianyi&mod=pchp&loc=7&r=0&rfunc=7&tj=cxvertical_pc_hp&tr=12",
       "publisher": "finance.sina.com.cn",
       "sourceExcerpt": "特斯拉及SpaceX首席执行官埃隆·马斯克10月25日表示，SpaceX已完成400亿美元债务融资，主要用于采购人工智能芯片，相关GPU预计将在2027年第一季度和第二季度陆续交付。"
+    },
+    {
+      "id": "EV-76a1dbe418adc8dd",
+      "dataDate": "2026-10-30",
+      "date": "2026-10-26",
+      "updatedDate": "2026-10-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_sources_insufficient",
+      "title": "财富科技初创公司Nevis获得6200万欧元，用于通过AI自动化金融咨询工作流程",
+      "originalTitle": "WealthTech startup Nevis secures €62 million to automate financial advisory workflows with AI",
+      "subject": "WealthTech startup Nevis",
+      "action": "secures",
+      "object": "€62 million to automate financial advisory workflows with AI",
+      "metrics": [
+        "€62 million",
+        "$70 million",
+        "€47.8 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bdfcfbdc9e0896ff",
+        "EN-9f0f256b5e9f716a",
+        "EN-0c24734d7bf5954f"
+      ],
+      "entityNames": [
+        "WealthTech startup Nevis",
+        "London/NY-based Nevis",
+        "Together"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-aaa8af7f2f60f9c5",
+          "subject": "WealthTech startup Nevis",
+          "object": "€62 million to automate financial advisory workflows with AI",
+          "quote": "HomeFundingWealthTech startup Nevis secures €62 million to automate financial advisory workflows with..."
+        },
+        {
+          "id": "CL-78b2585176d44f7f",
+          "subject": "WealthTech startup Nevis",
+          "object": "€62 million to automate financial advisory workflows with AI",
+          "quote": "WealthTech startup Nevis secures €62 million to automate financial advisory workflows with AI"
+        },
+        {
+          "id": "CL-617f38b99bbe8d8c",
+          "subject": "WealthTech startup Nevis",
+          "object": "€62 million to automate financial advisory workflows with AI",
+          "quote": "London/NY-based Nevis, an AI OS for wealth management, today announced its €62 million ($70 million) Series B in order to expand agent capabilities, deepen integrations across the custodian and WealthTech ecosystem, and grow its product and GTM teams."
+        },
+        {
+          "id": "CL-f3ada4cdfec10b2f",
+          "subject": "WealthTech startup Nevis",
+          "object": "€62 million to automate financial advisory workflows with AI",
+          "quote": "Together, these rounds represent approximately €47.8 million in 2026 funding, excluding Nevis’ Series B."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-3cd97d7f7e520b25",
+          "publisher": "www.eu-startups.com",
+          "url": "https://www.eu-startups.com/2026/10/wealthtech-startup-nevis-secures-e62-million-to-automate-financial-advisory-workflows-with-ai/"
+        }
+      ],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/wealthtech-startup-nevis-secures-e62-million-to-automate-financial-advisory-workflows-with-ai/",
+      "publisher": "www.eu-startups.com",
+      "sourceExcerpt": "HomeFundingWealthTech startup Nevis secures €62 million to automate financial advisory workflows with..."
+    },
+    {
+      "id": "EV-ac30333388e0d00a",
+      "dataDate": "2026-10-30",
+      "date": "2026-10-26",
+      "updatedDate": "2026-10-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "经济日报：千亿元融资展现中国AI进取心",
+      "originalTitle": "",
+      "subject": "DeepSeek",
+      "action": "融资",
+      "object": "展现中国AI进取心",
+      "metrics": [
+        "1000亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-f8b110cf205b23e5"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-96a38f1d2bd32ecc",
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "entityNames": [
+        "DeepSeek",
+        "经济日报",
+        "Tencent"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-f8b110cf205b23e5",
+          "subject": "DeepSeek",
+          "object": "约1000亿元人民币融资",
+          "quote": "DeepSeek在最新一轮融资中筹集约1000亿元人民币，宁德时代、腾讯等产业巨头参投。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-ad44f8e643db808c",
+          "publisher": "finance.sina.com.cn",
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-26/doc-iniwnuwc9407368.shtml?cre=tianyi&mod=pchp&loc=23&r=0&rfunc=64&tj=cxvertical_pc_hp&tr=12"
+        }
+      ],
+      "sourceUrl": "https://finance.sina.com.cn/jjxw/2026-10-26/doc-iniwnuwc9407368.shtml?cre=tianyi&mod=pchp&loc=23&r=0&rfunc=64&tj=cxvertical_pc_hp&tr=12",
+      "publisher": "finance.sina.com.cn",
+      "sourceExcerpt": "DeepSeek在最新一轮融资中筹集约1000亿元人民币，宁德时代、腾讯等产业巨头参投。"
     },
     {
       "id": "EV-bc624f356f55b03d",
@@ -2544,7 +3136,7 @@
     },
     {
       "id": "EV-0b46ca8532759091",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-23",
       "updatedDate": "2026-10-23",
       "eventType": "funding",
@@ -2626,13 +3218,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-8ea5e3ac8e4c939b",
+          "id": "CL-8726f7d58206f7b1",
           "subject": "智宠制药",
           "object": "，重塑宠物药研发",
           "quote": "投资界（ID：pedaily2012）10月23日消息，智宠制药宣布完成数千万元A1轮融资，本轮融资由天汇资本领投，指数资本担任独 家财务顾问。"
         },
         {
-          "id": "CL-73f466ab1e96068c",
+          "id": "CL-d50a6b7a2171249b",
           "subject": "智宠制药",
           "object": "，重塑宠物药研发",
           "quote": "· 智宠制药为国内率先将生成式AI嵌入宠物创新药全流程的Techbio企业，自研双引擎布局6条以上FIC/BIC管线，完成数千万元A1轮融资用于管线推进与平台建设宠物药研发成功率有望从人药10%提至30%-50%，具备独家动保数据积累，团队拥有人药AIDD实战经验。"
@@ -2891,7 +3483,7 @@
     },
     {
       "id": "EV-9eca876903571bd3",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-23",
       "updatedDate": "2026-10-23",
       "eventType": "funding",
@@ -3004,13 +3596,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-833a147a553e542d",
+          "id": "CL-ef8902d0a1863ccc",
           "subject": "灵钜创新",
           "object": "，南山战新投、龙华资本联合投资",
           "quote": "投资界（ID：pedaily2012）10月23日消息，灵钜创新近日完成数千万元新一轮融资，本轮由南山战新投、龙华资本联合投资。"
         },
         {
-          "id": "CL-b4604c1190fc81fd",
+          "id": "CL-3ec325cda3e36d42",
           "subject": "灵钜创新",
           "object": "，南山战新投、龙华资本联合投资",
           "quote": "· 深圳桌面CNC企业灵钜创新完成南山战新投、龙华资本联合的数千万元融资，资金用于首款产品C1量产、AI工艺迭代及全球渠道拓展，核心团队具备工业控制与消费级硬件能力，产品端侧智能特性适配Maker群体需求。"
@@ -547981,6 +548573,66 @@
       "sourceExcerpt": "one thing we’d like to do soon is to create a language model with the approximate capability of GPT-3 that can run locally on consumer hardware and release that."
     },
     {
+      "id": "EV-009a882943028d97",
+      "dataDate": "2026-10-30",
+      "date": "2026-10-29",
+      "updatedDate": "2026-10-29",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "全球 AI 基建风向标：英伟达于太平洋时间 11 月 17 日公布 2027 财年第 3 财季财报",
+      "originalTitle": "",
+      "subject": "英伟达",
+      "action": "financial_performance",
+      "object": "2027 财年第三财季财务业绩",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-cc98ee87385dba40",
+          "subject": "英伟达",
+          "object": "2027 财年第三财季财务业绩",
+          "quote": "公布并解读 2027 财年第三财季（截至 2026 年 10 月 25 日）财务业绩"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-ec622508a352b9b8",
+          "publisher": "www.ithome.com",
+          "url": "https://www.ithome.com/1/019/263.htm"
+        }
+      ],
+      "sourceUrl": "https://www.ithome.com/1/019/263.htm",
+      "publisher": "www.ithome.com",
+      "sourceExcerpt": "公布并解读 2027 财年第三财季（截至 2026 年 10 月 25 日）财务业绩"
+    },
+    {
       "id": "EV-d381d15f8f9045e0",
       "dataDate": "2026-10-29",
       "date": "2026-10-29",
@@ -548042,7 +548694,7 @@
     },
     {
       "id": "EV-3b80351ff05f68a1",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-30",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "capital_investment",
@@ -548085,26 +548737,26 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-a55c43256c28f37a",
+          "id": "CL-d7034d480e531029",
           "subject": "SpaceX",
           "object": "roughly $40 billion in financing for AI chips and related data center equipment",
-          "quote": "SpaceX has reached a binding commitment for roughly $40 billion in financing for AI chips and related data center equipment, the company disclosed in a regulatory filing Monday."
+          "quote": "SpaceX has reached a binding commitment for roughly $40 billion in financing for AI chips and related data center equipment"
         }
       ],
       "sources": [
         {
-          "id": "SA-ce6958893e39120e",
+          "id": "SA-c44b0c07ae894174",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/"
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
       "publisher": "techcrunch.com",
-      "sourceExcerpt": "SpaceX has reached a binding commitment for roughly $40 billion in financing for AI chips and related data center equipment, the company disclosed in a regulatory filing Monday."
+      "sourceExcerpt": "SpaceX has reached a binding commitment for roughly $40 billion in financing for AI chips and related data center equipment"
     },
     {
       "id": "EV-7ddfa7b82af141ec",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "ipo_listing",
@@ -548160,25 +548812,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-8dad753f68dad305",
+          "id": "CL-8e775dbe2f5adfa0",
           "subject": "人类史上最大",
           "object": "！Anthropic 提交纳斯达克 IPO 申请，股票代码为“ANT”",
           "quote": "据《华尔街日报》报道，Anthropic 计划于 11 月 16 日当周进行 IPO。"
         },
         {
-          "id": "CL-a75b9bbeae14d01e",
+          "id": "CL-7e00d8acd0c93bff",
           "subject": "人类史上最大",
           "object": "！Anthropic 提交纳斯达克 IPO 申请，股票代码为“ANT”",
           "quote": "Anthropic 目标估值有望高达 2 万亿美元，若成功落地，将成为有史以来规模最大的 IPO。"
         },
         {
-          "id": "CL-89acb09947044b44",
+          "id": "CL-36bcfe9aa24cae86",
           "subject": "人类史上最大",
           "object": "！Anthropic 提交纳斯达克 IPO 申请，股票代码为“ANT”",
           "quote": "招股书披露，公司业绩呈现高速增长态势：2025 年营收 45.85 亿美元（IT之家注：现汇率约合 306.16 亿元人民币），净亏损 419.65 亿美元（现汇率约合 2,802.19 亿元人民币）；2026 年上半年营收飙升至 162.86 亿美元（现汇率约合 1,087.49 亿元人民币），同比暴涨 13 倍。"
         },
         {
-          "id": "CL-d754681a08142d6c",
+          "id": "CL-8ff4e225142c03d0",
           "subject": "人类史上最大",
           "object": "！Anthropic 提交纳斯达克 IPO 申请，股票代码为“ANT”",
           "quote": "虽然当期净亏损扩大至 807.48 亿美元（现汇率约合 5,391.9 亿元人民币），但营业亏损大幅收窄至 6.93 亿美元（现汇率约合 46.27 亿元人民币），调整后营业利润扭亏为盈至 16 亿美元（现汇率约合 106.84 亿元人民币）。"
@@ -548197,7 +548849,7 @@
     },
     {
       "id": "EV-c4964bb580827988",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "ipo_listing",
@@ -548243,19 +548895,19 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-7e4fd77eba004d6e",
+          "id": "CL-8b58f329525236a2",
           "subject": "undisclosed_subject",
           "object": "文件阐述 Anthropic 的野心：AI 有望解决过去几代人未能攻克的难题",
           "quote": "这家 AI 公司早在今年 6 月就秘密递交了上市申请，此次公开的文件披露了更多细节。"
         },
         {
-          "id": "CL-1aecd967b53f5829",
+          "id": "CL-f270c04b29152253",
           "subject": "undisclosed_subject",
           "object": "文件阐述 Anthropic 的野心：AI 有望解决过去几代人未能攻克的难题",
           "quote": "据文件所述，Anthropic 今年上半年营收 163 亿美元（IT之家注：现汇率约合 1,088.42 亿元人民币），净亏损达 807 亿美元（现汇率约合 5,388.7 亿元人民币）。"
         },
         {
-          "id": "CL-54a9027955d2acf9",
+          "id": "CL-5b66f379ca3a32c7",
           "subject": "undisclosed_subject",
           "object": "文件阐述 Anthropic 的野心：AI 有望解决过去几代人未能攻克的难题",
           "quote": "《华尔街日报》此前曾根据泄露文件描述过这一情况，其中大部分亏损来自与公司融资票据相关的会计费用。"
@@ -548274,7 +548926,7 @@
     },
     {
       "id": "EV-2ad2ae14a594df04",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-23",
       "updatedDate": "2026-10-23",
       "eventType": "ipo_listing",
@@ -548321,25 +548973,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-f32e5678cbc08c03",
+          "id": "CL-65bf12a802a61a44",
           "subject": "Anthropic’s Pending",
           "object": "Has Silicon Valley on the Edge of Its Seat",
           "quote": "Anthropic’s Pending IPO Has Silicon Valley on the Edge of Its Seat"
         },
         {
-          "id": "CL-e2ae06635af27b15",
+          "id": "CL-6561e6c0c307e9d6",
           "subject": "Anthropic’s Pending",
           "object": "Has Silicon Valley on the Edge of Its Seat",
           "quote": "The Week In ShortAnthropic’s pre-IPO fundraising forced VCs to get bigger and the stakes could not be higher for its Wall Street debut."
         },
         {
-          "id": "CL-79d8a386604abff1",
+          "id": "CL-ef4ae9977467319a",
           "subject": "Anthropic’s Pending",
           "object": "Has Silicon Valley on the Edge of Its Seat",
           "quote": "OpenAI is in talks for a $30 billion fundraise as a bridge to an IPO. SemiAnalysis was challenged on its data center build estimates, prompting a lively debate."
         },
         {
-          "id": "CL-65ec47637250d6c6",
+          "id": "CL-a36e38869a018165",
           "subject": "Anthropic’s Pending",
           "object": "Has Silicon Valley on the Edge of Its Seat",
           "quote": "Even assuming the Anthropic IPO goes well — if it doesn’t, all bets are off — there is a very large herd of unicorns out there that still has nowhere to go."
@@ -548347,7 +548999,7 @@
       ],
       "sources": [
         {
-          "id": "SA-6bbb2f5711630e32",
+          "id": "SA-1e93c0f390e2266d",
           "publisher": "www.newcomer.co",
           "url": "https://www.newcomer.co/p/anthropics-pending-ipo-has-silicon"
         }

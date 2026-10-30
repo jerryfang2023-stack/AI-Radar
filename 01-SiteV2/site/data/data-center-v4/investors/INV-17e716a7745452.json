@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-29",
-    "currentDate": "2026-10-29",
-    "eventCount": 4316,
+    "latestDataDate": "2026-10-30",
+    "currentDate": "2026-10-30",
+    "eventCount": 4324,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-06-17",
     "latest_disclosed_at": "2026-06-17",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -124,6 +125,38 @@
             "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
           }
         ]
+      },
+      {
+        "activity_id": "IA-2c30c2b53406d9ba",
+        "funding_insight_id": "FI-46e39faf9187783d",
+        "event_ids": [
+          "EV-ac30333388e0d00a"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "首轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-947d23e1d1abb833",
+            "source_url": "https://aitop.news/item/11276",
+            "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资，510 亿元到账",
+            "source_content_hash": "d57814649739d8b7",
+            "quote": "投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金",
+            "quote_hash": "4663bf475b46d04402f8eb35adfe5bdc4e4c7a4e38e3ca05ac8bf8b016ae90a3"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
         "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
         "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
+      },
+      {
+        "source_id": "FISRC-947d23e1d1abb833",
+        "source_url": "https://aitop.news/item/11276",
+        "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资，510 亿元到账",
+        "source_content_hash": "d57814649739d8b7",
+        "quote": "投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金",
+        "quote_hash": "4663bf475b46d04402f8eb35adfe5bdc4e4c7a4e38e3ca05ac8bf8b016ae90a3"
       }
     ],
     "public_profile": {
@@ -148,6 +189,10 @@
         {
           "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-17 · 本轮参投 · 约 510 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e0178cb313198d39"
+        },
+        {
+          "description": "融资来源记录：DeepSeek · 历史轮次未披露 · 首轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-947d23e1d1abb833"
         }
       ],
       "contacts": [],
@@ -159,6 +204,14 @@
           "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
           "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
           "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
+        },
+        {
+          "source_id": "FISRC-947d23e1d1abb833",
+          "source_url": "https://aitop.news/item/11276",
+          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资，510 亿元到账",
+          "source_content_hash": "d57814649739d8b7",
+          "quote": "投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金",
+          "quote_hash": "4663bf475b46d04402f8eb35adfe5bdc4e4c7a4e38e3ca05ac8bf8b016ae90a3"
         }
       ],
       "last_verified_at": "2026-09-28"

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-29",
-    "currentDate": "2026-10-29",
-    "eventCount": 4316,
+    "latestDataDate": "2026-10-30",
+    "currentDate": "2026-10-30",
+    "eventCount": 4324,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2023-04-27",
     "latest_disclosed_at": "2023-04-27",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -124,6 +125,38 @@
             "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
           }
         ]
+      },
+      {
+        "activity_id": "IA-b4ce242c4ac97f36",
+        "funding_insight_id": "FI-85c91dbd238af2fb",
+        "event_ids": [
+          "EV-71961eb465ee3502"
+        ],
+        "company_entity_id": "EN-27392c283df47b1a",
+        "company_canonical_entity_id": "",
+        "company_name": "Wabi",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "pre-seed 轮天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f974c6bd67d9cec9",
+            "source_url": "https://particle.news/story/replika-founders-wabi-raises-20-million-for-a-social-platform-of-instant-mini-apps",
+            "source_title": "Replika Founder’s Wabi Raises $20 Million for a Social Platform of Instant Mini Apps",
+            "source_content_hash": "ce78884b677a7fe7",
+            "quote": "Wabi secured a $20 million pre-seed round from prominent angel investors including Naval Ravikant, Garry Tan, Justin Kan, Amjad Masad, Akshay Kothari, DJ Seo, and Sarah Guo.",
+            "quote_hash": "f8c5b2545ca8e95d31eb67bcaf6c52f110fad0636663f896ab64c3df25705cbe"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "3b03664369ea0afe",
         "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer.",
         "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
+      },
+      {
+        "source_id": "FISRC-f974c6bd67d9cec9",
+        "source_url": "https://particle.news/story/replika-founders-wabi-raises-20-million-for-a-social-platform-of-instant-mini-apps",
+        "source_title": "Replika Founder’s Wabi Raises $20 Million for a Social Platform of Instant Mini Apps",
+        "source_content_hash": "ce78884b677a7fe7",
+        "quote": "Wabi secured a $20 million pre-seed round from prominent angel investors including Naval Ravikant, Garry Tan, Justin Kan, Amjad Masad, Akshay Kothari, DJ Seo, and Sarah Guo.",
+        "quote_hash": "f8c5b2545ca8e95d31eb67bcaf6c52f110fad0636663f896ab64c3df25705cbe"
       }
     ],
     "public_profile": {
@@ -168,6 +209,10 @@
         {
           "description": "融资来源记录：Replit · B轮扩展 · 2023-04-27 · 本轮参投（天使投资人） · $97.4 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9b0f32fe01d091cc"
+        },
+        {
+          "description": "融资来源记录：Wabi · 历史轮次未披露 · pre-seed 轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f974c6bd67d9cec9"
         }
       ],
       "sources": [
@@ -194,6 +239,14 @@
           "source_content_hash": "3b03664369ea0afe",
           "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer.",
           "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
+        },
+        {
+          "source_id": "FISRC-f974c6bd67d9cec9",
+          "source_url": "https://particle.news/story/replika-founders-wabi-raises-20-million-for-a-social-platform-of-instant-mini-apps",
+          "source_title": "Replika Founder’s Wabi Raises $20 Million for a Social Platform of Instant Mini Apps",
+          "source_content_hash": "ce78884b677a7fe7",
+          "quote": "Wabi secured a $20 million pre-seed round from prominent angel investors including Naval Ravikant, Garry Tan, Justin Kan, Amjad Masad, Akshay Kothari, DJ Seo, and Sarah Guo.",
+          "quote_hash": "f8c5b2545ca8e95d31eb67bcaf6c52f110fad0636663f896ab64c3df25705cbe"
         }
       ],
       "last_verified_at": "2026-10-02",
@@ -203,6 +256,14 @@
     },
     "translations": {
       "zh-CN": {
+        "activities[1].role": {
+          "text": "pre-seed 轮天使投资人",
+          "source_hash": "8a8dd36d8a5d57ea17e8fc515fb33c51998d53cf303a8a076177705f581a5b87",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-30T03:50:15.186Z",
+          "status": "translated"
+        },
         "public_profile.career[0].description": {
           "text": "AngelList 官方访谈称 Naval Ravikant 为公司联合创始人。",
           "source_hash": "4a479cbeb2b8f1b0a6eab9bda0daa3363e0a4d80a9b93cbfd7719cd1147f6273",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-29",
-    "currentDate": "2026-10-29",
-    "eventCount": 4316,
+    "latestDataDate": "2026-10-30",
+    "currentDate": "2026-10-30",
+    "eventCount": 4324,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,25 +61,27 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-10-21",
+    "latest_disclosed_at": "2026-10-29",
     "role_counts": {
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 4
     },
     "round_codes": [
       "series_b",
       "series_c",
       "series_d",
-      "series_e"
+      "series_e",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -93,12 +95,57 @@
         "name": "Suno"
       },
       {
+        "entity_id": "EN-27392c283df47b1a",
+        "canonical_entity_id": "",
+        "name": "Wabi"
+      },
+      {
         "entity_id": "FICO-wonderful",
         "canonical_entity_id": "",
         "name": "Wonderful"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-4f3c982fee035d92",
+        "funding_insight_id": "FI-85c91dbd238af2fb",
+        "event_ids": [
+          "EV-71961eb465ee3502"
+        ],
+        "company_entity_id": "EN-27392c283df47b1a",
+        "company_canonical_entity_id": "",
+        "company_name": "Wabi",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "$55 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 55000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5500 万美元"
+        },
+        "announced_at": "2026-10-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-bc01622ffa1cd4de",
+            "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+            "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+            "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
+            "quote": "said Alex Lim, general partner at IVP, which led the new round",
+            "quote_hash": "beb8e363fb8d65b677a46a2140bb8b1b86c1cc9d592b24c8fe7aeba0bb46de73"
+          }
+        ]
+      },
       {
         "activity_id": "IA-80f735482bb65629",
         "funding_insight_id": "FI-25d65282cadc2f61",
@@ -297,6 +344,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-bc01622ffa1cd4de",
+        "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+        "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+        "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
+        "quote": "said Alex Lim, general partner at IVP, which led the new round",
+        "quote_hash": "beb8e363fb8d65b677a46a2140bb8b1b86c1cc9d592b24c8fe7aeba0bb46de73"
+      },
+      {
         "source_id": "FISRC-6737e55341eb5266",
         "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
         "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
@@ -374,16 +429,16 @@
           "source_id": "ivp_portfolio"
         },
         {
+          "description": "融资来源记录：Wabi · 轮次未披露 · 2026-10-29 · 本轮领投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bc01622ffa1cd4de"
+        },
+        {
           "description": "融资来源记录：Pigment · E轮 · 2026-10-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6737e55341eb5266"
         },
         {
           "description": "融资来源记录：Wonderful · C轮 · 2026-09-02 · 本轮参投 · $550 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3bc5a4e973b035eb"
-        },
-        {
-          "description": "融资来源记录：Suno · D轮 · 2026-06-03 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-8a34984c8e02defc"
         }
       ],
       "contacts": [
@@ -457,6 +512,14 @@
           "quote_hash": "45c6d385cafc2c7c1cd89245ec618c98351dfe56932b158584276b61a1209828"
         },
         {
+          "source_id": "FISRC-bc01622ffa1cd4de",
+          "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+          "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+          "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
+          "quote": "said Alex Lim, general partner at IVP, which led the new round",
+          "quote_hash": "beb8e363fb8d65b677a46a2140bb8b1b86c1cc9d592b24c8fe7aeba0bb46de73"
+        },
+        {
           "source_id": "FISRC-6737e55341eb5266",
           "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
           "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
@@ -471,14 +534,6 @@
           "source_content_hash": "290d66b36443e7c5",
           "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
           "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
-        },
-        {
-          "source_id": "FISRC-8a34984c8e02defc",
-          "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
-          "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
-          "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
-          "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
-          "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
         }
       ],
       "identity_status": "verified",
@@ -488,7 +543,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[4].role": {
+        "activities[5].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

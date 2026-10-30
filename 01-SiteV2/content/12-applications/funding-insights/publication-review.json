@@ -1,6 +1,6 @@
 {
   "version": "FINANCING-PUBLICATION-REVIEW-1",
-  "reviewed_at": "2026-10-29T02:37:16.050462+00:00",
+  "reviewed_at": "2026-10-30T04:00:11.551618+00:00",
   "market_corrections": [
     {
       "event_id": "EV-65154e5eb49c218b",
@@ -593,6 +593,32 @@
       "reviewed_at": "2026-10-29T02:37:16.050462+00:00",
       "reviewer": "Codex responsible original-source review",
       "reason": "原文页眉明确2021-06-01，采集日期2026-10-29不能作为本轮公告日期。历史创立融资不得覆盖已有2026年Series H。本条退出今日发布候选，保留原文及历史补录线索；金额和历史轮次尚未完成权威原始公告核对，不批准历史卡或新实体合并。"
+    },
+    {
+      "event_id": "EV-7684bfb9b954c1fd",
+      "status": "pending",
+      "source_url": "https://the-decoder.com/openai-lowers-valuation-target-raises-up-to-30-billion/",
+      "reason": "原文主段为is closing in on，尚在接近完成；up to $30 billion为上限，不能发布为已完成300亿美元融资。保留来源，待明确完成状态与最终金额。",
+      "source_id": "FISRC-0cc76a22a539792e",
+      "source_content_hash": "bd9c6f736f2658a2db109bd03e0b2ba8b76bd54ae0b0d9fcad7d5a3e37a2ad39",
+      "body_sha256": "bd9c6f736f2658a2db109bd03e0b2ba8b76bd54ae0b0d9fcad7d5a3e37a2ad39",
+      "quote": "OpenAI is closing in on a new funding round of up to $30 billion but has lowered its valuation target to get there.",
+      "quote_hash": "2ea24faf6ff00cccdf04e4e2c9202600fbc3fdc99bc931c735e8233c4b9c0388",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-30T04:00:11.551618+00:00"
+    },
+    {
+      "event_id": "EV-ac30333388e0d00a",
+      "status": "pending",
+      "source_url": "https://finance.sina.com.cn/jjxw/2026-10-26/doc-iniwnuwc9407368.shtml?cre=tianyi&mod=pchp&loc=23&r=0&rfunc=64&tj=cxvertical_pc_hp&tr=12",
+      "reason": "此评论文章重述1000亿元融资，未提供独立交割确认或解释此前同轮完成/拟融资冲突。沿用EV-c964f7646ad88c1e的责任暂缓，不能因更换来源或事件ID解除同轮hold；待完成状态澄清。",
+      "source_id": "FISRC-03184bd4c71f3982",
+      "source_content_hash": "5408191ecbc510c2d7f2ec691759b44e0e6980af0171320a7b6a2846f192f072",
+      "body_sha256": "5408191ecbc510c2d7f2ec691759b44e0e6980af0171320a7b6a2846f192f072",
+      "quote": "DeepSeek在最新一轮融资中筹集约1000亿元人民币，宁德时代、腾讯等产业巨头参投。",
+      "quote_hash": "792f00d5e97fa5eb670f021daa8be262802e8f94f98880acdb55dee32f1532c6",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-10-30T04:00:11.551618+00:00"
     }
   ],
   "resolutions": [

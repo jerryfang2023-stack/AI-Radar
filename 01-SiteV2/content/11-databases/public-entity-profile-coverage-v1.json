@@ -2,6 +2,210 @@
   "schema_version": "PUBLIC-ENTITY-PROFILE-COVERAGE-V1.0",
   "as_of": "2026-10-06",
   "institutions": {
+    "INV-b8a0e793124952": {
+      "summary": "Andreessen Horowitz（a16z）是一家成立于 2009 年的风险投资机构，官网介绍其覆盖从种子期到成长阶段的科技公司，并配置运营支持团队。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2009",
+          "source_id": "a16z_about"
+        },
+        {
+          "field": "founders",
+          "label": "创始人",
+          "value": [
+            "Marc Andreessen",
+            "Ben Horowitz"
+          ],
+          "source_id": "a16z_about"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": [
+            "种子期",
+            "风险投资阶段",
+            "成长阶段"
+          ],
+          "source_id": "a16z_about"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示领域",
+          "value": [
+            "人工智能",
+            "生物与医疗",
+            "消费",
+            "加密",
+            "企业软件",
+            "金融科技",
+            "游戏",
+            "基础设施"
+          ],
+          "source_id": "a16z_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2009",
+          "description": "Marc Andreessen 与 Ben Horowitz 创立该机构。",
+          "source_id": "a16z_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "机构官网称其采用投资团队与运营支持团队协作的服务模式，为创业公司提供人才、营销、法律和政策等支持。",
+          "source_id": "a16z_about"
+        },
+        {
+          "description": "融资来源记录：Wabi · 轮次未披露 · 2026-10-29 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bc01622ffa1cd4de"
+        },
+        {
+          "description": "融资来源记录：Labelbox · E轮 · 2026-10-14 · 本轮参投 · more than $100 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-31a53dcde47855a0"
+        },
+        {
+          "description": "融资来源记录：TypeSafe AI · A轮 · 2026-10-09 · 本轮领投 · 约 8.7 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e4334f02f2e76723"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "a16z.com",
+          "url": "https://a16z.com/",
+          "source_id": "a16z_about"
+        },
+        {
+          "kind": "email",
+          "label": "Menlo Park 办公室",
+          "value": "menlopark-info@a16z.com",
+          "url": "https://a16z.com/offices/",
+          "source_id": "a16z_offices"
+        },
+        {
+          "kind": "address",
+          "label": "Menlo Park 办公室",
+          "value": "2865 Sand Hill Road, Suite 101, Menlo Park, CA 94025",
+          "url": "https://a16z.com/offices/",
+          "source_id": "a16z_offices"
+        },
+        {
+          "kind": "email",
+          "label": "旧金山办公室",
+          "value": "sanfrancisco-info@a16z.com",
+          "url": "https://a16z.com/offices/",
+          "source_id": "a16z_offices"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "180 Townsend Street, San Francisco, CA 94107",
+          "url": "https://a16z.com/offices/",
+          "source_id": "a16z_offices"
+        },
+        {
+          "kind": "email",
+          "label": "纽约办公室",
+          "value": "newyork-info@a16z.com",
+          "url": "https://a16z.com/offices/",
+          "source_id": "a16z_offices"
+        },
+        {
+          "kind": "address",
+          "label": "纽约办公室",
+          "value": "200 Lafayette Street, 3rd Floor, New York, NY 10012",
+          "url": "https://a16z.com/offices/",
+          "source_id": "a16z_offices"
+        },
+        {
+          "kind": "email",
+          "label": "华盛顿特区办公室",
+          "value": "dc-info@a16z.com",
+          "url": "https://a16z.com/offices/",
+          "source_id": "a16z_offices"
+        },
+        {
+          "kind": "address",
+          "label": "华盛顿特区办公室",
+          "value": "800 17th Street NW, Suite 610, Washington, DC 20006",
+          "url": "https://a16z.com/offices/",
+          "source_id": "a16z_offices"
+        },
+        {
+          "kind": "email",
+          "label": "圣莫尼卡办公室",
+          "value": "santamonica-info@a16z.com",
+          "url": "https://a16z.com/offices/",
+          "source_id": "a16z_offices"
+        },
+        {
+          "kind": "address",
+          "label": "圣莫尼卡办公室",
+          "value": "1305 2nd Street, Santa Monica, CA 90401",
+          "url": "https://a16z.com/offices/",
+          "source_id": "a16z_offices"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "a16z_about",
+          "source_url": "https://a16z.com/about/",
+          "source_title": "About | Andreessen Horowitz",
+          "source_content_hash": "f2f40ff93d685299320e1963b891d1c5103e07ee2f1fc0dd9c56658d66039229",
+          "quote": "In 2009, Marc Andreessen and Ben Horowitz built a16z on a single conviction: software would eat the world, and the biggest tech companies would become far more valuable than anyone believed.",
+          "quote_hash": "61e13db9dffeccaf24c94828568446aee2abefc21dff1c35257855cde9672c29"
+        },
+        {
+          "source_id": "a16z_team",
+          "source_url": "https://a16z.com/team/",
+          "source_title": "Team | Andreessen Horowitz",
+          "source_content_hash": "006f6b8f35e844bf19767cfb115328a91b99ba1409586d0aff5f7daed325fac7",
+          "quote": "In 2009, Marc and Ben saw what other VCs didn’t: that the venture firms could give founders much more than cash and advice.",
+          "quote_hash": "91fd966fa95be756b90599a882f229766040b859fac9d0301a1a9e6711f4c23a"
+        },
+        {
+          "source_id": "a16z_offices",
+          "source_url": "https://a16z.com/offices/",
+          "source_title": "Our Offices | Andreessen Horowitz",
+          "source_content_hash": "6ecfd15d97c943814a7605fda5cf6e4e0492c9c692576441be17cae61e687b32",
+          "quote": "Menlo Park Office menlopark-info@a16z.com 2865 Sand Hill Road, Suite 101, Menlo Park, CA 94025. San Francisco Office sanfrancisco-info@a16z.com 180 Townsend Street, San Francisco, CA 94107. New York City Office newyork-info@a16z.com 200 Lafayette Street, 3rd Floor, New York, NY 10012. Washington, DC Office dc-info@a16z.com 800 17th Street NW, Suite 610, Washington, DC 20006. Santa Monica Office santamonica-info@a16z.com 1305 2nd Street, Santa Monica, CA 90401.",
+          "quote_hash": "e99e0a75d100056586e1a241fc521ff6d9da626d9a7fcf9ab6dd36440c63b9bb"
+        },
+        {
+          "source_id": "FISRC-bc01622ffa1cd4de",
+          "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+          "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+          "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
+          "quote": "Other participants in the round included Andreessen Horowitz (a16z), Forerunner, Amazon Alexa Fund",
+          "quote_hash": "fb7d6c4f926ef6d735db5fb1f51ee398253262316355083102507558ff84f3be"
+        },
+        {
+          "source_id": "FISRC-31a53dcde47855a0",
+          "source_url": "https://www.prnewswire.com/news-releases/labelbox-raises-100-million-in-series-e-funding-to-advance-reinforcement-learning-and-enterprise-ai-agents-302909147.html",
+          "source_title": "Labelbox 在 E 轮融资中筹集超 1 亿美元，以推进强化学习和企业 AI 智能体",
+          "source_content_hash": "abf71b7341e1d71729971470dba1a61c3c2dbc1ba13ef692e8af679cbf922914",
+          "quote": "The round was led by Infinitum Partners, with participation from Wipro Ventures, Andreessen Horowitz (a16z), B Capital, Tau Ventures, Snowpoint Ventures, and others.",
+          "quote_hash": "7f634d6cd46ae09cfcb1945e2af656e027bb19047744780e7d20d1088d334973"
+        },
+        {
+          "source_id": "FISRC-e4334f02f2e76723",
+          "source_url": "https://dealroom.co/news/x-2108956624966844866-typesafe-ai-raises-870m-series-a-at-a-7-5bn-valuation-three-weeks-after/",
+          "source_title": "TypeSafe AI raises $870m Series A at a $7.5bn valuation, three weeks after its $40m seed",
+          "source_content_hash": "30d0b165361bbd3e",
+          "quote": "a16z led, with Sequoia Capital, existing investor DCVC and angel investors participating, and a16z general partner Martin Casado is joining the board.",
+          "quote_hash": "94524cc0862a80040298a41c9585b3281bd17f9f7c49065c69ed863830e4d5da"
+        }
+      ],
+      "last_verified_at": "2026-09-25",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
     "INV-7a5c599caeb7de": {
       "summary": "Y Combinator 是面向初创公司的加速器和种子投资机构，按批次提供资金，并在项目期间与创始团队密集协作。",
       "facts": [
@@ -114,210 +318,6 @@
           "source_content_hash": "5da6e8dca2222da443f043940ec3373b0413761024bcfa093b36467089a15e81",
           "quote": "The round also saw participation from Y Combinator and f7 Ventures.",
           "quote_hash": "ae937fdd3a8dfaff2f3d21367e56afe08ffa186584ff658f9f0e729b0b907c14"
-        }
-      ],
-      "last_verified_at": "2026-09-25",
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
-    },
-    "INV-b8a0e793124952": {
-      "summary": "Andreessen Horowitz（a16z）是一家成立于 2009 年的风险投资机构，官网介绍其覆盖从种子期到成长阶段的科技公司，并配置运营支持团队。",
-      "facts": [
-        {
-          "field": "founded_year",
-          "label": "成立年份",
-          "value": "2009",
-          "source_id": "a16z_about"
-        },
-        {
-          "field": "founders",
-          "label": "创始人",
-          "value": [
-            "Marc Andreessen",
-            "Ben Horowitz"
-          ],
-          "source_id": "a16z_about"
-        },
-        {
-          "field": "investment_stages",
-          "label": "投资阶段",
-          "value": [
-            "种子期",
-            "风险投资阶段",
-            "成长阶段"
-          ],
-          "source_id": "a16z_about"
-        },
-        {
-          "field": "sectors",
-          "label": "官网列示领域",
-          "value": [
-            "人工智能",
-            "生物与医疗",
-            "消费",
-            "加密",
-            "企业软件",
-            "金融科技",
-            "游戏",
-            "基础设施"
-          ],
-          "source_id": "a16z_about"
-        }
-      ],
-      "milestones": [
-        {
-          "date": "2009",
-          "description": "Marc Andreessen 与 Ben Horowitz 创立该机构。",
-          "source_id": "a16z_about"
-        }
-      ],
-      "track_record": [
-        {
-          "description": "机构官网称其采用投资团队与运营支持团队协作的服务模式，为创业公司提供人才、营销、法律和政策等支持。",
-          "source_id": "a16z_about"
-        },
-        {
-          "description": "融资来源记录：Labelbox · E轮 · 2026-10-14 · 本轮参投 · more than $100 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-31a53dcde47855a0"
-        },
-        {
-          "description": "融资来源记录：TypeSafe AI · A轮 · 2026-10-09 · 本轮领投 · 约 8.7 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e4334f02f2e76723"
-        },
-        {
-          "description": "融资来源记录：Arena · B轮 · 2026-10-08 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-99134731fc9bfd4f"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官方网站",
-          "value": "a16z.com",
-          "url": "https://a16z.com/",
-          "source_id": "a16z_about"
-        },
-        {
-          "kind": "email",
-          "label": "Menlo Park 办公室",
-          "value": "menlopark-info@a16z.com",
-          "url": "https://a16z.com/offices/",
-          "source_id": "a16z_offices"
-        },
-        {
-          "kind": "address",
-          "label": "Menlo Park 办公室",
-          "value": "2865 Sand Hill Road, Suite 101, Menlo Park, CA 94025",
-          "url": "https://a16z.com/offices/",
-          "source_id": "a16z_offices"
-        },
-        {
-          "kind": "email",
-          "label": "旧金山办公室",
-          "value": "sanfrancisco-info@a16z.com",
-          "url": "https://a16z.com/offices/",
-          "source_id": "a16z_offices"
-        },
-        {
-          "kind": "address",
-          "label": "旧金山办公室",
-          "value": "180 Townsend Street, San Francisco, CA 94107",
-          "url": "https://a16z.com/offices/",
-          "source_id": "a16z_offices"
-        },
-        {
-          "kind": "email",
-          "label": "纽约办公室",
-          "value": "newyork-info@a16z.com",
-          "url": "https://a16z.com/offices/",
-          "source_id": "a16z_offices"
-        },
-        {
-          "kind": "address",
-          "label": "纽约办公室",
-          "value": "200 Lafayette Street, 3rd Floor, New York, NY 10012",
-          "url": "https://a16z.com/offices/",
-          "source_id": "a16z_offices"
-        },
-        {
-          "kind": "email",
-          "label": "华盛顿特区办公室",
-          "value": "dc-info@a16z.com",
-          "url": "https://a16z.com/offices/",
-          "source_id": "a16z_offices"
-        },
-        {
-          "kind": "address",
-          "label": "华盛顿特区办公室",
-          "value": "800 17th Street NW, Suite 610, Washington, DC 20006",
-          "url": "https://a16z.com/offices/",
-          "source_id": "a16z_offices"
-        },
-        {
-          "kind": "email",
-          "label": "圣莫尼卡办公室",
-          "value": "santamonica-info@a16z.com",
-          "url": "https://a16z.com/offices/",
-          "source_id": "a16z_offices"
-        },
-        {
-          "kind": "address",
-          "label": "圣莫尼卡办公室",
-          "value": "1305 2nd Street, Santa Monica, CA 90401",
-          "url": "https://a16z.com/offices/",
-          "source_id": "a16z_offices"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "a16z_about",
-          "source_url": "https://a16z.com/about/",
-          "source_title": "About | Andreessen Horowitz",
-          "source_content_hash": "f2f40ff93d685299320e1963b891d1c5103e07ee2f1fc0dd9c56658d66039229",
-          "quote": "In 2009, Marc Andreessen and Ben Horowitz built a16z on a single conviction: software would eat the world, and the biggest tech companies would become far more valuable than anyone believed.",
-          "quote_hash": "61e13db9dffeccaf24c94828568446aee2abefc21dff1c35257855cde9672c29"
-        },
-        {
-          "source_id": "a16z_team",
-          "source_url": "https://a16z.com/team/",
-          "source_title": "Team | Andreessen Horowitz",
-          "source_content_hash": "006f6b8f35e844bf19767cfb115328a91b99ba1409586d0aff5f7daed325fac7",
-          "quote": "In 2009, Marc and Ben saw what other VCs didn’t: that the venture firms could give founders much more than cash and advice.",
-          "quote_hash": "91fd966fa95be756b90599a882f229766040b859fac9d0301a1a9e6711f4c23a"
-        },
-        {
-          "source_id": "a16z_offices",
-          "source_url": "https://a16z.com/offices/",
-          "source_title": "Our Offices | Andreessen Horowitz",
-          "source_content_hash": "6ecfd15d97c943814a7605fda5cf6e4e0492c9c692576441be17cae61e687b32",
-          "quote": "Menlo Park Office menlopark-info@a16z.com 2865 Sand Hill Road, Suite 101, Menlo Park, CA 94025. San Francisco Office sanfrancisco-info@a16z.com 180 Townsend Street, San Francisco, CA 94107. New York City Office newyork-info@a16z.com 200 Lafayette Street, 3rd Floor, New York, NY 10012. Washington, DC Office dc-info@a16z.com 800 17th Street NW, Suite 610, Washington, DC 20006. Santa Monica Office santamonica-info@a16z.com 1305 2nd Street, Santa Monica, CA 90401.",
-          "quote_hash": "e99e0a75d100056586e1a241fc521ff6d9da626d9a7fcf9ab6dd36440c63b9bb"
-        },
-        {
-          "source_id": "FISRC-31a53dcde47855a0",
-          "source_url": "https://www.prnewswire.com/news-releases/labelbox-raises-100-million-in-series-e-funding-to-advance-reinforcement-learning-and-enterprise-ai-agents-302909147.html",
-          "source_title": "Labelbox 在 E 轮融资中筹集超 1 亿美元，以推进强化学习和企业 AI 智能体",
-          "source_content_hash": "abf71b7341e1d71729971470dba1a61c3c2dbc1ba13ef692e8af679cbf922914",
-          "quote": "The round was led by Infinitum Partners, with participation from Wipro Ventures, Andreessen Horowitz (a16z), B Capital, Tau Ventures, Snowpoint Ventures, and others.",
-          "quote_hash": "7f634d6cd46ae09cfcb1945e2af656e027bb19047744780e7d20d1088d334973"
-        },
-        {
-          "source_id": "FISRC-e4334f02f2e76723",
-          "source_url": "https://dealroom.co/news/x-2108956624966844866-typesafe-ai-raises-870m-series-a-at-a-7-5bn-valuation-three-weeks-after/",
-          "source_title": "TypeSafe AI raises $870m Series A at a $7.5bn valuation, three weeks after its $40m seed",
-          "source_content_hash": "30d0b165361bbd3e",
-          "quote": "a16z led, with Sequoia Capital, existing investor DCVC and angel investors participating, and a16z general partner Martin Casado is joining the board.",
-          "quote_hash": "94524cc0862a80040298a41c9585b3281bd17f9f7c49065c69ed863830e4d5da"
-        },
-        {
-          "source_id": "FISRC-99134731fc9bfd4f",
-          "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
-          "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
-          "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
-          "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
-          "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2255,6 +2255,164 @@
       "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
+    "INV-675f70a9c00060": {
+      "summary": "本记录中的“腾讯”指腾讯控股集团层级的投资活动，不自动归因到某一基金、子公司或腾讯投资部门。集团官方材料将投资定位为核心战略之一，强调投资组合与核心业务及 Connection 战略协同；2025年报披露期末投资组合账面/公允价值合计口径约人民币9572.19亿元，该数包含联营合营企业及以公允价值计量的金融资产，不等于VC基金AUM。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "集团成立",
+          "value": "1998年，深圳（腾讯公司介绍）",
+          "source_id": "tencent_about"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资策略",
+          "value": "投资组合服务于核心业务与 Connection 战略，在社交及数字内容、零售、金融科技等领域强化连接，并延伸至医疗健康、云与AI、交通等领域。",
+          "source_id": "tencent_annual_2025"
+        },
+        {
+          "field": "investment_portfolio_value",
+          "label": "集团投资组合披露口径",
+          "value": "约人民币9572.19亿元，截至2025-12-31；包含按权益法核算的联营/合营企业及公允价值金融资产，不是VC基金AUM。",
+          "source_id": "tencent_annual_2025"
+        },
+        {
+          "field": "investment_return",
+          "label": "2025年投资组合收益",
+          "value": "人民币297.38亿元，年报称同比增加13%；其口径包含股息、处置收益、公允价值变动、联营合营利润份额及其他调整，不代表基金IRR或已实现投资回报。",
+          "source_id": "tencent_annual_2025"
+        },
+        {
+          "field": "portfolio_scale_legacy",
+          "label": "历史公开投资规模",
+          "value": "腾讯2020年官方文章曾披露累计投资企业超过800家、70多家上市、逾160家成为独角兽；为2020年时点的集团口径，不作现时数量。",
+          "source_id": "tencent_investment_strategy_2020"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1998",
+          "description": "腾讯公司介绍称集团在深圳创立。",
+          "source_id": "tencent_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "2025年报披露集团投资组合期末价值及年度收益分类；这是上市公司合并报表层面的投资组合财务披露，不能等同创投基金净回报或腾讯投资部门独立业绩。",
+          "source_id": "tencent_annual_2025"
+        },
+        {
+          "description": "2020年腾讯官方投资策略文章称当时已投资超过800家企业；时间与口径均按原文保留。",
+          "source_id": "tencent_investment_strategy_2020"
+        },
+        {
+          "description": "融资来源记录：DeepSeek · 轮次未披露 · 2026-10-26 · 本轮参投 · 约1000亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-03184bd4c71f3982"
+        },
+        {
+          "description": "融资来源记录：DeepSeek · 轮次未披露 · 2026-10-22 · 本轮参投 · $15 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2346329522885331"
+        },
+        {
+          "description": "融资来源记录：鲲为科技 · 轮次未披露 · 2026-10-09 · 本轮参投 · 4 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a60cc435d9a05afa"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "腾讯官方网站",
+          "value": "Tencent",
+          "url": "https://www.tencent.com/en-us/about.html",
+          "source_id": "tencent_about"
+        },
+        {
+          "kind": "contact_form",
+          "label": "媒体及投资者咨询",
+          "value": "腾讯官网联系表单（媒体及投资者）",
+          "url": "https://www.tencent.com/contact/",
+          "source_id": "tencent_contact"
+        },
+        {
+          "kind": "contact_form",
+          "label": "投资者关系",
+          "value": "投资者关系团队咨询表单",
+          "url": "https://www.tencent.com/investors/",
+          "source_id": "tencent_investor"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "tencent_about",
+          "source_url": "https://www.tencent.com/en-us/about.html?trk=s-bl",
+          "source_title": "Tencent - Tencent",
+          "source_content_hash": "285d67581c57500a3a880df36265475766290f985af193e6c679885049807499",
+          "quote": "Tencent was founded in Shenzhen, China, in 1998.",
+          "quote_hash": "0a082fa4a0092b02d6bc361ca0ba0951c38734b9f0f18cf97c647c7e96909e1e"
+        },
+        {
+          "source_id": "tencent_annual_2025",
+          "source_url": "https://static.www.tencent.com/uploads/2026/04/09/62d786fcf3d3c8cb7e54791ee95439ac.pdf",
+          "source_title": "Tencent Holdings Limited Annual Report 2025",
+          "source_content_hash": "2a7547168077c3d9994af673125e77612e8656bc0f17ad189371d7e4088f4e98",
+          "quote": "As at 31 December 2025, our investment portfolio amounted to approximately RMB957,219 million.",
+          "quote_hash": "ad773cd8cf2a58eb04a85f46ee3d25aa33c068b09cedbaaa9f6fb38c00568a1a"
+        },
+        {
+          "source_id": "tencent_investment_strategy_2020",
+          "source_url": "https://www.tencent.com/zh-cn/value-creation-is-pivotal-to-our-investments/",
+          "source_title": "创造价值是投资的关键 | Tencent",
+          "source_content_hash": "82167e3423106f4b5f5331e1551237845c6492b48516787bea3a9667d5188ed9",
+          "quote": "截至目前，腾讯总计投资企业超过800家，其中70多家已上市，逾160家成为市值或估值超10亿美金的独角兽。",
+          "quote_hash": "f0c0398bae5d4255f9063adf450587209622da90280d1cd1c432823e3a266300"
+        },
+        {
+          "source_id": "tencent_contact",
+          "source_url": "https://www.tencent.com/contact/",
+          "source_title": "Contact - Tencent",
+          "source_content_hash": "e3b3189fb4133d1723d383cf351f5d0490a604e5f8813ac954f955d7ee08ea5f",
+          "quote": "Media and investors; Please fill out the enquiry form below.",
+          "quote_hash": "d87dc8f992d0b0c8d258cd291fe9ab05523b4ce01cedcccfc89d88f759c16d2b"
+        },
+        {
+          "source_id": "tencent_investor",
+          "source_url": "https://www.tencent.com/investors/",
+          "source_title": "Investors - Tencent",
+          "source_content_hash": "77b76096059f450344aec13a740a06133e01491515bbd8c14b086208890f278f",
+          "quote": "Have an investor inquiry? Click to fill out a form and get in touch with our Investor Relations team.",
+          "quote_hash": "de3feafcd81368d41be78c53253a89b9ddd2c9c32424cf40089015550080528c"
+        },
+        {
+          "source_id": "FISRC-03184bd4c71f3982",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-10-26/doc-iniwnuwc9407368.shtml?cre=tianyi&mod=pchp&loc=23&r=0&rfunc=64&tj=cxvertical_pc_hp&tr=12",
+          "source_title": "经济日报：千亿元融资展现中国AI进取心",
+          "source_content_hash": "5408191ecbc510c2d7f2ec691759b44e0e6980af0171320a7b6a2846f192f072",
+          "quote": "宁德时代、腾讯等产业巨头参投",
+          "quote_hash": "fcd29b1d1768edee3c7018751b375a8832e472f7aa3a37ad0cbe35fcb345d4ee"
+        },
+        {
+          "source_id": "FISRC-2346329522885331",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
+          "source_title": "DeepSeek 融资 150 亿美元，挑战美国领先实验室",
+          "source_content_hash": "e85e5d970af235d183bcf54e03c8ba88851ce996abdae1d62194fd473f9b6914",
+          "quote": "Battery pioneer Contemporary Amperex Technology Co. Ltd. and WeChat-operator Tencent Holdings Ltd. were among the biggest investors in the round",
+          "quote_hash": "cda5d96cbdc5e3426f54b22b9a8ab6f0353079dc52e896f1e767f50f46c312df"
+        },
+        {
+          "source_id": "FISRC-a60cc435d9a05afa",
+          "source_url": "https://finance.sina.com.cn/stock/t/2026-10-09/doc-iniuqywq1127772.shtml",
+          "source_title": "攻克超声穿颅读脑，拿下 4 亿元新融资，他们要做脑科学的「英伟达」",
+          "source_content_hash": "055ec97a57c5a5c2cc04b1f21f35d6d65aa66daf51ea86d8e69c0ec17436eb68",
+          "quote": "新增股东包括 XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
+          "quote_hash": "954502a15ae1260ff16f8e6d5d1e6f7f890e5f94b7757d266a568bef0d11140c"
+        }
+      ],
+      "last_verified_at": "2026-09-25",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
     "INV-90d5bb78e64004": {
       "summary": "GV（原 Google Ventures）是 Alphabet 的风险投资机构，Alphabet 为其唯一有限合伙人。官网称 GV 覆盖种子期至成长期，投资科技和生命科学领域，并依托运营合伙人为创业团队提供招聘、传播和市场支持。",
       "facts": [
@@ -2395,160 +2553,6 @@
       "last_verified_at": "2026-09-25",
       "profile_type": "organization",
       "identity_status": "verified"
-    },
-    "INV-675f70a9c00060": {
-      "summary": "本记录中的“腾讯”指腾讯控股集团层级的投资活动，不自动归因到某一基金、子公司或腾讯投资部门。集团官方材料将投资定位为核心战略之一，强调投资组合与核心业务及 Connection 战略协同；2025年报披露期末投资组合账面/公允价值合计口径约人民币9572.19亿元，该数包含联营合营企业及以公允价值计量的金融资产，不等于VC基金AUM。",
-      "facts": [
-        {
-          "field": "founded",
-          "label": "集团成立",
-          "value": "1998年，深圳（腾讯公司介绍）",
-          "source_id": "tencent_about"
-        },
-        {
-          "field": "investment_strategy",
-          "label": "投资策略",
-          "value": "投资组合服务于核心业务与 Connection 战略，在社交及数字内容、零售、金融科技等领域强化连接，并延伸至医疗健康、云与AI、交通等领域。",
-          "source_id": "tencent_annual_2025"
-        },
-        {
-          "field": "investment_portfolio_value",
-          "label": "集团投资组合披露口径",
-          "value": "约人民币9572.19亿元，截至2025-12-31；包含按权益法核算的联营/合营企业及公允价值金融资产，不是VC基金AUM。",
-          "source_id": "tencent_annual_2025"
-        },
-        {
-          "field": "investment_return",
-          "label": "2025年投资组合收益",
-          "value": "人民币297.38亿元，年报称同比增加13%；其口径包含股息、处置收益、公允价值变动、联营合营利润份额及其他调整，不代表基金IRR或已实现投资回报。",
-          "source_id": "tencent_annual_2025"
-        },
-        {
-          "field": "portfolio_scale_legacy",
-          "label": "历史公开投资规模",
-          "value": "腾讯2020年官方文章曾披露累计投资企业超过800家、70多家上市、逾160家成为独角兽；为2020年时点的集团口径，不作现时数量。",
-          "source_id": "tencent_investment_strategy_2020"
-        }
-      ],
-      "milestones": [
-        {
-          "date": "1998",
-          "description": "腾讯公司介绍称集团在深圳创立。",
-          "source_id": "tencent_about"
-        }
-      ],
-      "track_record": [
-        {
-          "description": "2025年报披露集团投资组合期末价值及年度收益分类；这是上市公司合并报表层面的投资组合财务披露，不能等同创投基金净回报或腾讯投资部门独立业绩。",
-          "source_id": "tencent_annual_2025"
-        },
-        {
-          "description": "2020年腾讯官方投资策略文章称当时已投资超过800家企业；时间与口径均按原文保留。",
-          "source_id": "tencent_investment_strategy_2020"
-        },
-        {
-          "description": "融资来源记录：DeepSeek · 轮次未披露 · 2026-10-22 · 本轮参投 · $15 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2346329522885331"
-        },
-        {
-          "description": "融资来源记录：鲲为科技 · 轮次未披露 · 2026-10-09 · 本轮参投 · 4 亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a60cc435d9a05afa"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "腾讯官方网站",
-          "value": "Tencent",
-          "url": "https://www.tencent.com/en-us/about.html",
-          "source_id": "tencent_about"
-        },
-        {
-          "kind": "contact_form",
-          "label": "媒体及投资者咨询",
-          "value": "腾讯官网联系表单（媒体及投资者）",
-          "url": "https://www.tencent.com/contact/",
-          "source_id": "tencent_contact"
-        },
-        {
-          "kind": "contact_form",
-          "label": "投资者关系",
-          "value": "投资者关系团队咨询表单",
-          "url": "https://www.tencent.com/investors/",
-          "source_id": "tencent_investor"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "tencent_about",
-          "source_url": "https://www.tencent.com/en-us/about.html?trk=s-bl",
-          "source_title": "Tencent - Tencent",
-          "source_content_hash": "285d67581c57500a3a880df36265475766290f985af193e6c679885049807499",
-          "quote": "Tencent was founded in Shenzhen, China, in 1998.",
-          "quote_hash": "0a082fa4a0092b02d6bc361ca0ba0951c38734b9f0f18cf97c647c7e96909e1e"
-        },
-        {
-          "source_id": "tencent_annual_2025",
-          "source_url": "https://static.www.tencent.com/uploads/2026/04/09/62d786fcf3d3c8cb7e54791ee95439ac.pdf",
-          "source_title": "Tencent Holdings Limited Annual Report 2025",
-          "source_content_hash": "2a7547168077c3d9994af673125e77612e8656bc0f17ad189371d7e4088f4e98",
-          "quote": "As at 31 December 2025, our investment portfolio amounted to approximately RMB957,219 million.",
-          "quote_hash": "ad773cd8cf2a58eb04a85f46ee3d25aa33c068b09cedbaaa9f6fb38c00568a1a"
-        },
-        {
-          "source_id": "tencent_investment_strategy_2020",
-          "source_url": "https://www.tencent.com/zh-cn/value-creation-is-pivotal-to-our-investments/",
-          "source_title": "创造价值是投资的关键 | Tencent",
-          "source_content_hash": "82167e3423106f4b5f5331e1551237845c6492b48516787bea3a9667d5188ed9",
-          "quote": "截至目前，腾讯总计投资企业超过800家，其中70多家已上市，逾160家成为市值或估值超10亿美金的独角兽。",
-          "quote_hash": "f0c0398bae5d4255f9063adf450587209622da90280d1cd1c432823e3a266300"
-        },
-        {
-          "source_id": "tencent_contact",
-          "source_url": "https://www.tencent.com/contact/",
-          "source_title": "Contact - Tencent",
-          "source_content_hash": "e3b3189fb4133d1723d383cf351f5d0490a604e5f8813ac954f955d7ee08ea5f",
-          "quote": "Media and investors; Please fill out the enquiry form below.",
-          "quote_hash": "d87dc8f992d0b0c8d258cd291fe9ab05523b4ce01cedcccfc89d88f759c16d2b"
-        },
-        {
-          "source_id": "tencent_investor",
-          "source_url": "https://www.tencent.com/investors/",
-          "source_title": "Investors - Tencent",
-          "source_content_hash": "77b76096059f450344aec13a740a06133e01491515bbd8c14b086208890f278f",
-          "quote": "Have an investor inquiry? Click to fill out a form and get in touch with our Investor Relations team.",
-          "quote_hash": "de3feafcd81368d41be78c53253a89b9ddd2c9c32424cf40089015550080528c"
-        },
-        {
-          "source_id": "FISRC-2346329522885331",
-          "source_url": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
-          "source_title": "DeepSeek 融资 150 亿美元，挑战美国领先实验室",
-          "source_content_hash": "e85e5d970af235d183bcf54e03c8ba88851ce996abdae1d62194fd473f9b6914",
-          "quote": "Battery pioneer Contemporary Amperex Technology Co. Ltd. and WeChat-operator Tencent Holdings Ltd. were among the biggest investors in the round",
-          "quote_hash": "cda5d96cbdc5e3426f54b22b9a8ab6f0353079dc52e896f1e767f50f46c312df"
-        },
-        {
-          "source_id": "FISRC-a60cc435d9a05afa",
-          "source_url": "https://finance.sina.com.cn/stock/t/2026-10-09/doc-iniuqywq1127772.shtml",
-          "source_title": "攻克超声穿颅读脑，拿下 4 亿元新融资，他们要做脑科学的「英伟达」",
-          "source_content_hash": "055ec97a57c5a5c2cc04b1f21f35d6d65aa66daf51ea86d8e69c0ec17436eb68",
-          "quote": "新增股东包括 XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
-          "quote_hash": "954502a15ae1260ff16f8e6d5d1e6f7f890e5f94b7757d266a568bef0d11140c"
-        },
-        {
-          "source_id": "FISRC-3f68d59028d2ba98",
-          "source_url": "https://www.chinaventure.com.cn/news/111-20261009-393542.html",
-          "source_title": "首发｜从“没人相信”到4亿元新融资：刘家家定义脑科学Infra",
-          "source_content_hash": "4485c3ef38069f76",
-          "quote": "新增股东包括XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
-          "quote_hash": "65792301313d171788af374c8446a5fef8d19ca4ff524b6f105bfd324e2d99b8"
-        }
-      ],
-      "last_verified_at": "2026-09-25",
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "INV-b22b5f121ec717": {
       "profile_type": "organization",
@@ -10663,6 +10667,257 @@
       "profile_type": "organization",
       "identity_status": "verified"
     },
+    "INV-c1a95750e9b0e9": {
+      "profile_type": "organization",
+      "summary": "IVP（Institutional Venture Partners）是一家支持快速成长科技企业的风险投资机构。IVP官网介绍其在企业关键成长阶段投资，计划每年支持约10家公司，并以投资团队为创业者提供增长支持；官网组合页面列出多个科技行业和企业案例。机构官网提供美国及英国办公室地址、电话及媒体联络邮箱。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "风险投资机构",
+          "source_id": "ivp_approach"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资策略",
+          "value": "聚焦企业关键成长阶段，每年约支持10家公司（官网自述）。",
+          "source_id": "ivp_approach"
+        },
+        {
+          "field": "sectors",
+          "label": "官网组合行业筛选",
+          "value": [
+            "人工智能",
+            "消费",
+            "医疗",
+            "金融科技与加密资产",
+            "基础设施",
+            "应用软件"
+          ],
+          "source_id": "ivp_portfolio"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "官网组合数据库按AI、消费、医疗、金融科技与加密资产、基础设施及应用软件分类展示公司；未将组合清单视为基金回报或完整投资记录。",
+          "source_id": "ivp_portfolio"
+        },
+        {
+          "description": "融资来源记录：Wabi · 轮次未披露 · 2026-10-29 · 本轮领投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bc01622ffa1cd4de"
+        },
+        {
+          "description": "融资来源记录：Pigment · E轮 · 2026-10-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6737e55341eb5266"
+        },
+        {
+          "description": "融资来源记录：Wonderful · C轮 · 2026-09-02 · 本轮参投 · $550 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3bc5a4e973b035eb"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "IVP",
+          "url": "https://www.ivp.com/",
+          "source_id": "ivp_approach"
+        },
+        {
+          "kind": "phone",
+          "label": "旧金山办公室",
+          "value": "415.432.4660",
+          "source_id": "ivp_contact"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "747 Front Street, Ste 100, San Francisco, CA 94111",
+          "source_id": "ivp_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "硅谷办公室",
+          "value": "650.854.0132",
+          "source_id": "ivp_contact"
+        },
+        {
+          "kind": "address",
+          "label": "硅谷办公室",
+          "value": "3000 Sand Hill Road, Bldg 2, Ste 250, Menlo Park, CA 94025",
+          "source_id": "ivp_contact"
+        },
+        {
+          "kind": "address",
+          "label": "伦敦办公室",
+          "value": "37-41 Mortimer Street, 1st Floor, S1, Fitzrovia, London, England W1T 3JH",
+          "source_id": "ivp_contact"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系邮箱",
+          "value": "pr@ivp.com",
+          "source_id": "ivp_contact"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "ivp_approach",
+          "source_url": "https://www.ivp.com/team/approach/",
+          "source_title": "Our Approach - IVP",
+          "source_content_hash": "d19bfa44e85475e90f09370aa5fc399cb0af94cd5ee2a45971633e21741e8f87",
+          "quote": "IVP官网称其在企业关键成长阶段投资，每年约支持10家公司，并由团队提供主动增长支持。",
+          "quote_hash": "b34637e23ba13afa33f372770c1b250d0be0812bd7fb6aed5f3c11d6cb07aa1b"
+        },
+        {
+          "source_id": "ivp_portfolio",
+          "source_url": "https://www.ivp.com/portfolio/",
+          "source_title": "Portfolio - IVP",
+          "source_content_hash": "94fd0bf6fd43ed906c397e404591ec12bde7bfb8396316b84f2cf946a0d1e365",
+          "quote": "IVP官网组合页面按AI、消费、医疗、金融科技、基础设施等行业分类展示组合企业。",
+          "quote_hash": "98e5a5f3fd44ca56a69b11931f7d84d40b47bae3c3124bd82a4ab368b862f441"
+        },
+        {
+          "source_id": "ivp_contact",
+          "source_url": "https://www.ivp.com/contact/",
+          "source_title": "Contact - IVP",
+          "source_content_hash": "3cf17088df8473dac881575475094539705d7afdd386e6980adea4e29711ab85",
+          "quote": "IVP官网公布旧金山、硅谷及伦敦办公室地址，旧金山和硅谷电话及媒体邮箱。",
+          "quote_hash": "45c6d385cafc2c7c1cd89245ec618c98351dfe56932b158584276b61a1209828"
+        },
+        {
+          "source_id": "FISRC-bc01622ffa1cd4de",
+          "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+          "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+          "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
+          "quote": "said Alex Lim, general partner at IVP, which led the new round",
+          "quote_hash": "beb8e363fb8d65b677a46a2140bb8b1b86c1cc9d592b24c8fe7aeba0bb46de73"
+        },
+        {
+          "source_id": "FISRC-6737e55341eb5266",
+          "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
+          "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
+          "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
+          "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
+          "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
+        },
+        {
+          "source_id": "FISRC-3bc5a4e973b035eb",
+          "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
+          "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
+          "source_content_hash": "290d66b36443e7c5",
+          "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
+          "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资策略、行业与联系方式来自IVP官网；“每年约10家”是机构公开描述，不视为完整基金年度投资统计。",
+      "last_verified_at": "2026-09-26"
+    },
+    "INV-64da4f8e12b2e1": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网介绍的是新能源科技业务；本档融资参与记录不等于完整投资组合，也不代表其运营独立风险投资基金。",
+      "summary": "宁德时代官网将公司定位为零碳新能源科技企业，为全球新能源应用提供解决方案与服务。该档补充公司背景；不将其描述为专业风险投资基金，投资行为仍以各融资来源逐条为准。",
+      "facts": [
+        {
+          "field": "business_positioning",
+          "label": "业务定位",
+          "value": "零碳新能源科技公司",
+          "source_id": "PROFILE-COLLECT-INV-64da4f8e12b2e1-1"
+        },
+        {
+          "field": "business_scope",
+          "label": "业务范围",
+          "value": "为全球新能源应用提供解决方案和服务，并构建零碳能源生态",
+          "source_id": "PROFILE-COLLECT-INV-64da4f8e12b2e1-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2011",
+          "description": "创始团队创立宁德时代（CATL）。",
+          "source_id": "PROFILE-COLLECT-INV-64da4f8e12b2e1-2"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "深度智控 B+ 轮融资报道将宁德时代列为投资方。",
+          "source_id": "FISRC-ac5a938b8fdef1a9"
+        },
+        {
+          "description": "DeepSeek 首次外部融资报道将宁德时代列为参与方。",
+          "source_id": "FISRC-e0178cb313198d39"
+        },
+        {
+          "description": "融资来源记录：DeepSeek · 轮次未披露 · 2026-10-26 · 本轮参投 · 约1000亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-03184bd4c71f3982"
+        },
+        {
+          "description": "融资来源记录：DeepSeek · 轮次未披露 · 2026-10-22 · 本轮参投 · $15 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2346329522885331"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-ac5a938b8fdef1a9",
+          "source_url": "https://news.pedaily.cn/202609/568645.shtml",
+          "source_title": "首发| 深度智控完成B+轮数亿元融资，宁德时代联手阿美投资布局物理AI_投资界",
+          "source_content_hash": "d16a0412ac587ccf5679a69537d01c8a88c4385cb39b237cc09b4dc491a155a0",
+          "quote": "首发| 深度智控完成B+轮数亿元融资，宁德时代联手阿美投资布局物理AI_投资界 首 页 资 讯 投资圈 活 动 研 究 创投号 旗下矩阵 投资界 天天IPO 解码LP 并购 前哨 投资界AI 深度 热门 天天IPO AI先锋 机器人 医疗健康 大消费 视频 99个发现 APP 微信扫码订阅 创投号 登录 清科集团 清科控股 清科研究中心 清科母基金 新芽 首页 产业 ai 正文 首发| 深度智控完成B+轮数亿元融资，宁德时代联手阿美投资布局物理AI 当AI从数字世界走向物理世界，能源与算力基础",
+          "quote_hash": "49df2ef6f9f097ddb3e3230cfdec3b52cd8d719523a1f7d26180b9dab8040887"
+        },
+        {
+          "source_id": "FISRC-e0178cb313198d39",
+          "source_url": "https://www.ithome.com/0/965/686.htm",
+          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等 - IT之家",
+          "source_content_hash": "9c2935c329e79c86a273afaa6b86bffcecb3779f8cbcc69d425c012fe71b950e",
+          "quote": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、",
+          "quote_hash": "9882cb0051a3b79a03e3634cdd0dedcb2655de4c9355c830db710103cbf57da7"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-64da4f8e12b2e1-1",
+          "source_url": "https://www.catl.com/about/profile/",
+          "source_title": "企业简介",
+          "source_content_hash": "82230e72a4d4630681721f425352cc0f5c2bc05d32e9716a3591c10e0a5a01f4",
+          "quote": "宁德时代新能源科技股份有限公司是全球领先的零碳新能源科技公司，致力于为全球新能源应用提供一流解决方案和服务，以全域增量战略构建零碳能源生态，推动能源转型与可持续发展。",
+          "quote_hash": "893ce302171dc68795fa0cbee9b83ecc88a5f46bea5c3cb90ad7402a5217dd52"
+        },
+        {
+          "source_id": "PROFILE-COLLECT-INV-64da4f8e12b2e1-2",
+          "source_url": "https://www.catl.com/about/profile/",
+          "source_title": "企业简介",
+          "source_content_hash": "82230e72a4d4630681721f425352cc0f5c2bc05d32e9716a3591c10e0a5a01f4",
+          "quote": "2011 创始团队二次创业, 创立宁德时代(CATL)",
+          "quote_hash": "bb678c6c49f251f19f81c68002037a382f0123e53a454058a85f81d0ec692638"
+        },
+        {
+          "source_id": "FISRC-03184bd4c71f3982",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-10-26/doc-iniwnuwc9407368.shtml?cre=tianyi&mod=pchp&loc=23&r=0&rfunc=64&tj=cxvertical_pc_hp&tr=12",
+          "source_title": "经济日报：千亿元融资展现中国AI进取心",
+          "source_content_hash": "5408191ecbc510c2d7f2ec691759b44e0e6980af0171320a7b6a2846f192f072",
+          "quote": "宁德时代、腾讯等产业巨头参投",
+          "quote_hash": "fcd29b1d1768edee3c7018751b375a8832e472f7aa3a37ad0cbe35fcb345d4ee"
+        },
+        {
+          "source_id": "FISRC-2346329522885331",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
+          "source_title": "DeepSeek 融资 150 亿美元，挑战美国领先实验室",
+          "source_content_hash": "e85e5d970af235d183bcf54e03c8ba88851ce996abdae1d62194fd473f9b6914",
+          "quote": "Battery pioneer Contemporary Amperex Technology Co. Ltd. and WeChat-operator Tencent Holdings Ltd. were among the biggest investors in the round",
+          "quote_hash": "cda5d96cbdc5e3426f54b22b9a8ab6f0353079dc52e896f1e767f50f46c312df"
+        }
+      ],
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
+    },
     "INV-40ea27baa9790c": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -15144,6 +15399,81 @@
       "coverage_status": "researched",
       "coverage_note": "公司背景来自 AMD 官网；融资活动原文明确指向 AMD 的风险投资部门，投资部门与母公司分别建档。此项披露确认参投主体范围，不披露 AMD Ventures 的单笔出资额。"
     },
+    "INV-f038044894bb3b": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "融资来源和机构官网均使用 “Forerunner” 名称；本档案不推断该轮的具体基金载体或单独出资额。",
+      "summary": "Forerunner 官网将其定位为早期风险投资机构；TechCrunch 报道将其创始人兼管理合伙人 Kirsten Green 列为 Natural 3000 万美元 A 轮领投者。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "TechCrunch 报道称，Forerunner 创始人兼管理合伙人 Kirsten Green 领投 Natural 的 3000 万美元 A 轮；未披露该机构的单独出资额。",
+          "source_id": "forerunner-natural-seriesa-2026"
+        },
+        {
+          "description": "融资来源记录：Wabi · 轮次未披露 · 2026-10-29 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bc01622ffa1cd4de"
+        },
+        {
+          "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2e7a3713da8f3e54"
+        },
+        {
+          "description": "融资来源记录：Natural AI, Inc. · A轮 · 2026-07-20 · 本轮领投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cf3c8dfd6c45ed29"
+        }
+      ],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "融资来源和机构官网均使用 “Forerunner” 名称；本档案不推断该轮的具体基金载体或单独出资额。",
+      "sources": [
+        {
+          "source_id": "forerunner-official-identity",
+          "source_url": "https://www.forerunnerventures.com/",
+          "source_title": "Forerunner Ventures",
+          "source_content_hash": "ef798855b1d6f2fcc232d92a404f9c34736b322a05780bffcdc3801398990eae",
+          "quote": "Forerunner is an early-stage venture firm",
+          "quote_hash": "c520b4bc448898b81392dbe2b58f75ec4c91fedd393d35325976dc67fea73443"
+        },
+        {
+          "source_id": "forerunner-natural-seriesa-2026",
+          "source_url": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/",
+          "source_title": "Natural raises $30M to reinvent payments for AI agents — and take on Stripe | TechCrunch",
+          "source_content_hash": "92a1f82e227bf25ca38cffa52bac29d36d1c042890a463a7202ee29801613409",
+          "quote": "VC firm Forerunner",
+          "quote_hash": "2dc6cf71023afca78289df27771c59fdb7be0622d45d1ac463c8ad840970d698"
+        },
+        {
+          "source_id": "FISRC-bc01622ffa1cd4de",
+          "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+          "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+          "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
+          "quote": "Other participants in the round included Andreessen Horowitz (a16z), Forerunner, Amazon Alexa Fund",
+          "quote_hash": "fb7d6c4f926ef6d735db5fb1f51ee398253262316355083102507558ff84f3be"
+        },
+        {
+          "source_id": "FISRC-2e7a3713da8f3e54",
+          "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
+          "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
+          "source_content_hash": "affdfd9a0ccfb188",
+          "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
+          "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
+        },
+        {
+          "source_id": "FISRC-cf3c8dfd6c45ed29",
+          "source_url": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/",
+          "source_title": "Natural 融资3000万美元，重塑AI智能体支付，挑战Stripe",
+          "source_content_hash": "487d88d020a14f20",
+          "quote": "Kirsten Green, founder and managing partner at VC firm Forerunner. Green, whose firm focuses on consumer experiences and the future of commerce, led its $30 million Series A round",
+          "quote_hash": "b620aa65aeb193e4ceb76d6df49b7a121047539efabf33057e23eee1e6cd80ff"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
+    },
     "INV-2e754a7f430ec0": {
       "identity_status": "verified",
       "coverage_status": "researched",
@@ -15558,96 +15888,6 @@
       ],
       "last_verified_at": "2026-09-27"
     },
-    "INV-64da4f8e12b2e1": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "官网介绍的是新能源科技业务；本档融资参与记录不等于完整投资组合，也不代表其运营独立风险投资基金。",
-      "summary": "宁德时代官网将公司定位为零碳新能源科技企业，为全球新能源应用提供解决方案与服务。该档补充公司背景；不将其描述为专业风险投资基金，投资行为仍以各融资来源逐条为准。",
-      "facts": [
-        {
-          "field": "business_positioning",
-          "label": "业务定位",
-          "value": "零碳新能源科技公司",
-          "source_id": "PROFILE-COLLECT-INV-64da4f8e12b2e1-1"
-        },
-        {
-          "field": "business_scope",
-          "label": "业务范围",
-          "value": "为全球新能源应用提供解决方案和服务，并构建零碳能源生态",
-          "source_id": "PROFILE-COLLECT-INV-64da4f8e12b2e1-1"
-        }
-      ],
-      "milestones": [
-        {
-          "date": "2011",
-          "description": "创始团队创立宁德时代（CATL）。",
-          "source_id": "PROFILE-COLLECT-INV-64da4f8e12b2e1-2"
-        }
-      ],
-      "track_record": [
-        {
-          "description": "深度智控 B+ 轮融资报道将宁德时代列为投资方。",
-          "source_id": "FISRC-ac5a938b8fdef1a9"
-        },
-        {
-          "description": "DeepSeek 首次外部融资报道将宁德时代列为参与方。",
-          "source_id": "FISRC-e0178cb313198d39"
-        },
-        {
-          "description": "融资来源记录：DeepSeek · 轮次未披露 · 2026-10-22 · 本轮参投 · $15 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2346329522885331"
-        }
-      ],
-      "contacts": [],
-      "sources": [
-        {
-          "source_id": "FISRC-ac5a938b8fdef1a9",
-          "source_url": "https://news.pedaily.cn/202609/568645.shtml",
-          "source_title": "首发| 深度智控完成B+轮数亿元融资，宁德时代联手阿美投资布局物理AI_投资界",
-          "source_content_hash": "d16a0412ac587ccf5679a69537d01c8a88c4385cb39b237cc09b4dc491a155a0",
-          "quote": "首发| 深度智控完成B+轮数亿元融资，宁德时代联手阿美投资布局物理AI_投资界 首 页 资 讯 投资圈 活 动 研 究 创投号 旗下矩阵 投资界 天天IPO 解码LP 并购 前哨 投资界AI 深度 热门 天天IPO AI先锋 机器人 医疗健康 大消费 视频 99个发现 APP 微信扫码订阅 创投号 登录 清科集团 清科控股 清科研究中心 清科母基金 新芽 首页 产业 ai 正文 首发| 深度智控完成B+轮数亿元融资，宁德时代联手阿美投资布局物理AI 当AI从数字世界走向物理世界，能源与算力基础",
-          "quote_hash": "49df2ef6f9f097ddb3e3230cfdec3b52cd8d719523a1f7d26180b9dab8040887"
-        },
-        {
-          "source_id": "FISRC-e0178cb313198d39",
-          "source_url": "https://www.ithome.com/0/965/686.htm",
-          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等 - IT之家",
-          "source_content_hash": "9c2935c329e79c86a273afaa6b86bffcecb3779f8cbcc69d425c012fe71b950e",
-          "quote": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、",
-          "quote_hash": "9882cb0051a3b79a03e3634cdd0dedcb2655de4c9355c830db710103cbf57da7"
-        },
-        {
-          "source_id": "PROFILE-COLLECT-INV-64da4f8e12b2e1-1",
-          "source_url": "https://www.catl.com/about/profile/",
-          "source_title": "企业简介",
-          "source_content_hash": "82230e72a4d4630681721f425352cc0f5c2bc05d32e9716a3591c10e0a5a01f4",
-          "quote": "宁德时代新能源科技股份有限公司是全球领先的零碳新能源科技公司，致力于为全球新能源应用提供一流解决方案和服务，以全域增量战略构建零碳能源生态，推动能源转型与可持续发展。",
-          "quote_hash": "893ce302171dc68795fa0cbee9b83ecc88a5f46bea5c3cb90ad7402a5217dd52"
-        },
-        {
-          "source_id": "PROFILE-COLLECT-INV-64da4f8e12b2e1-2",
-          "source_url": "https://www.catl.com/about/profile/",
-          "source_title": "企业简介",
-          "source_content_hash": "82230e72a4d4630681721f425352cc0f5c2bc05d32e9716a3591c10e0a5a01f4",
-          "quote": "2011 创始团队二次创业, 创立宁德时代(CATL)",
-          "quote_hash": "bb678c6c49f251f19f81c68002037a382f0123e53a454058a85f81d0ec692638"
-        },
-        {
-          "source_id": "FISRC-2346329522885331",
-          "source_url": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
-          "source_title": "DeepSeek 融资 150 亿美元，挑战美国领先实验室",
-          "source_content_hash": "e85e5d970af235d183bcf54e03c8ba88851ce996abdae1d62194fd473f9b6914",
-          "quote": "Battery pioneer Contemporary Amperex Technology Co. Ltd. and WeChat-operator Tencent Holdings Ltd. were among the biggest investors in the round",
-          "quote_hash": "cda5d96cbdc5e3426f54b22b9a8ab6f0353079dc52e896f1e767f50f46c312df"
-        }
-      ],
-      "last_verified_at": "2026-10-03",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": ""
-    },
     "INV-6f52f4b417eefc": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -15780,155 +16020,6 @@
         }
       ],
       "last_verified_at": "2026-10-03"
-    },
-    "INV-c1a95750e9b0e9": {
-      "profile_type": "organization",
-      "summary": "IVP（Institutional Venture Partners）是一家支持快速成长科技企业的风险投资机构。IVP官网介绍其在企业关键成长阶段投资，计划每年支持约10家公司，并以投资团队为创业者提供增长支持；官网组合页面列出多个科技行业和企业案例。机构官网提供美国及英国办公室地址、电话及媒体联络邮箱。",
-      "facts": [
-        {
-          "field": "organization_type",
-          "label": "机构类型",
-          "value": "风险投资机构",
-          "source_id": "ivp_approach"
-        },
-        {
-          "field": "investment_stage",
-          "label": "投资策略",
-          "value": "聚焦企业关键成长阶段，每年约支持10家公司（官网自述）。",
-          "source_id": "ivp_approach"
-        },
-        {
-          "field": "sectors",
-          "label": "官网组合行业筛选",
-          "value": [
-            "人工智能",
-            "消费",
-            "医疗",
-            "金融科技与加密资产",
-            "基础设施",
-            "应用软件"
-          ],
-          "source_id": "ivp_portfolio"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "官网组合数据库按AI、消费、医疗、金融科技与加密资产、基础设施及应用软件分类展示公司；未将组合清单视为基金回报或完整投资记录。",
-          "source_id": "ivp_portfolio"
-        },
-        {
-          "description": "融资来源记录：Pigment · E轮 · 2026-10-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6737e55341eb5266"
-        },
-        {
-          "description": "融资来源记录：Wonderful · C轮 · 2026-09-02 · 本轮参投 · $550 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3bc5a4e973b035eb"
-        },
-        {
-          "description": "融资来源记录：Suno · D轮 · 2026-06-03 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-8a34984c8e02defc"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官方网站",
-          "value": "IVP",
-          "url": "https://www.ivp.com/",
-          "source_id": "ivp_approach"
-        },
-        {
-          "kind": "phone",
-          "label": "旧金山办公室",
-          "value": "415.432.4660",
-          "source_id": "ivp_contact"
-        },
-        {
-          "kind": "address",
-          "label": "旧金山办公室",
-          "value": "747 Front Street, Ste 100, San Francisco, CA 94111",
-          "source_id": "ivp_contact"
-        },
-        {
-          "kind": "phone",
-          "label": "硅谷办公室",
-          "value": "650.854.0132",
-          "source_id": "ivp_contact"
-        },
-        {
-          "kind": "address",
-          "label": "硅谷办公室",
-          "value": "3000 Sand Hill Road, Bldg 2, Ste 250, Menlo Park, CA 94025",
-          "source_id": "ivp_contact"
-        },
-        {
-          "kind": "address",
-          "label": "伦敦办公室",
-          "value": "37-41 Mortimer Street, 1st Floor, S1, Fitzrovia, London, England W1T 3JH",
-          "source_id": "ivp_contact"
-        },
-        {
-          "kind": "email",
-          "label": "媒体联系邮箱",
-          "value": "pr@ivp.com",
-          "source_id": "ivp_contact"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "ivp_approach",
-          "source_url": "https://www.ivp.com/team/approach/",
-          "source_title": "Our Approach - IVP",
-          "source_content_hash": "d19bfa44e85475e90f09370aa5fc399cb0af94cd5ee2a45971633e21741e8f87",
-          "quote": "IVP官网称其在企业关键成长阶段投资，每年约支持10家公司，并由团队提供主动增长支持。",
-          "quote_hash": "b34637e23ba13afa33f372770c1b250d0be0812bd7fb6aed5f3c11d6cb07aa1b"
-        },
-        {
-          "source_id": "ivp_portfolio",
-          "source_url": "https://www.ivp.com/portfolio/",
-          "source_title": "Portfolio - IVP",
-          "source_content_hash": "94fd0bf6fd43ed906c397e404591ec12bde7bfb8396316b84f2cf946a0d1e365",
-          "quote": "IVP官网组合页面按AI、消费、医疗、金融科技、基础设施等行业分类展示组合企业。",
-          "quote_hash": "98e5a5f3fd44ca56a69b11931f7d84d40b47bae3c3124bd82a4ab368b862f441"
-        },
-        {
-          "source_id": "ivp_contact",
-          "source_url": "https://www.ivp.com/contact/",
-          "source_title": "Contact - IVP",
-          "source_content_hash": "3cf17088df8473dac881575475094539705d7afdd386e6980adea4e29711ab85",
-          "quote": "IVP官网公布旧金山、硅谷及伦敦办公室地址，旧金山和硅谷电话及媒体邮箱。",
-          "quote_hash": "45c6d385cafc2c7c1cd89245ec618c98351dfe56932b158584276b61a1209828"
-        },
-        {
-          "source_id": "FISRC-6737e55341eb5266",
-          "source_url": "https://www.prnewswire.com/news-releases/pigment-raises-250m-at-2-3b-valuation-302914892.html",
-          "source_title": "Pigment 以 23 亿美元估值完成 2.5 亿美元融资",
-          "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
-          "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
-          "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
-        },
-        {
-          "source_id": "FISRC-3bc5a4e973b035eb",
-          "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
-          "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
-          "source_content_hash": "290d66b36443e7c5",
-          "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
-          "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
-        },
-        {
-          "source_id": "FISRC-8a34984c8e02defc",
-          "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
-          "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
-          "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
-          "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
-          "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
-        }
-      ],
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "投资策略、行业与联系方式来自IVP官网；“每年约10家”是机构公开描述，不视为完整基金年度投资统计。",
-      "last_verified_at": "2026-09-26"
     },
     "INV-08f80474dfccc1": {
       "identity_status": "verified",
@@ -21615,6 +21706,196 @@
       "education": [],
       "experience_summary": ""
     },
+    "INV-d2c758072244f2": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "韩国 DART 公司信息登记记载 DSC Investment Inc.（代码 241520）于 2012 年 1 月 18 日成立，在 KOSDAQ 上市，行业分类为其他金融投资业务。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "英文法定名称",
+          "value": "DSC Investment Inc.。",
+          "source_id": "dsc_legal_name"
+        },
+        {
+          "field": "founded",
+          "label": "成立日期",
+          "value": "2012-01-18。",
+          "source_id": "dsc_founded"
+        },
+        {
+          "field": "listing",
+          "label": "上市信息",
+          "value": "KOSDAQ，代码 241520。",
+          "source_id": "dsc_listing"
+        },
+        {
+          "field": "industry",
+          "label": "行业分类",
+          "value": "其他金融投资业务。",
+          "source_id": "dsc_industry"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：FuriosaAI · D轮 · 2026-10-29 · 本轮参投 · 6.2 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-aa695bfb88a64c8d"
+        },
+        {
+          "description": "融资来源记录：GMI Cloud · 基础设施融资 · 2026-10-01 · 本轮参投 · $668 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cf3eb2b83c7e750b"
+        },
+        {
+          "description": "融资来源记录：GMI Cloud · B轮 · 2026-10-01 · 本轮参投 · $223 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f5de203e610041a3"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站（DART 登记）",
+          "value": "www.dscinvestment.com",
+          "source_id": "dsc_industry"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "dsc_legal_name",
+          "source_url": "https://englishdart.fss.or.kr/dsbc001/selectPopup.ax?selectKey=01109715",
+          "source_title": "Company infomation Popup",
+          "source_content_hash": "00ad74d8a6837c32c339d65fcadbb5f82c86da0cb5cfc904ee5f66b841dc0654",
+          "quote": "Company Name (English) DSC Investment Inc.",
+          "quote_hash": "41f018bca13b23780544961b3afba3bab0bf5aa1877c73868756ab77c4742cb7"
+        },
+        {
+          "source_id": "dsc_founded",
+          "source_url": "https://englishdart.fss.or.kr/dsbc001/selectPopup.ax?selectKey=01109715",
+          "source_title": "Company infomation Popup",
+          "source_content_hash": "00ad74d8a6837c32c339d65fcadbb5f82c86da0cb5cfc904ee5f66b841dc0654",
+          "quote": "Establishment Date 2012-01-18",
+          "quote_hash": "bdf429421049f4358d1bb6664fadfa92ef02201330b95e7122c63469cbe75488"
+        },
+        {
+          "source_id": "dsc_listing",
+          "source_url": "https://englishdart.fss.or.kr/dsbc001/selectPopup.ax?selectKey=01109715",
+          "source_title": "Company infomation Popup",
+          "source_content_hash": "00ad74d8a6837c32c339d65fcadbb5f82c86da0cb5cfc904ee5f66b841dc0654",
+          "quote": "Company Code 241520 Representative Market Listing KOSDAQ Market",
+          "quote_hash": "d9e5367b5c49ce6ee85d7933b782e6efe56ffa42b0e8e00f4233293b7abc8314"
+        },
+        {
+          "source_id": "dsc_industry",
+          "source_url": "https://englishdart.fss.or.kr/dsbc001/selectPopup.ax?selectKey=01109715",
+          "source_title": "Company infomation Popup",
+          "source_content_hash": "00ad74d8a6837c32c339d65fcadbb5f82c86da0cb5cfc904ee5f66b841dc0654",
+          "quote": "Industry Other financial investment businesses",
+          "quote_hash": "8d3eb1c047fde0f62f271af5c886e16de04836023e063adb7ba54d8956bbaeea"
+        },
+        {
+          "source_id": "FISRC-aa695bfb88a64c8d",
+          "source_url": "https://www.ithome.com/1/019/329.htm",
+          "source_title": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮融资后估值翻两番至 29 亿美元",
+          "source_content_hash": "4c83c35a520a22c7d5d41bf2ddb12f3fd56bbcd20f1233c6a33c572ead71934a",
+          "quote": "Naver、韩国产业银行、DSC Investment、Nextrans 和 Kakao Investment 等老股东也参与了本轮融资",
+          "quote_hash": "bf0c6aba96d7fe704d9be89583274850022c96aa785322102fb145a30a29864f"
+        },
+        {
+          "source_id": "FISRC-cf3eb2b83c7e750b",
+          "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
+          "source_title": "GMI Cloud 融资超 6.6 亿美元，加速全球 AI 基础设施扩张",
+          "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
+          "quote": "This round saw strong participation from investors across the Asia-Pacific region, including DSC Investment, Trend Micro, KB Investment, Kyobo Life, KT Corporation and others.",
+          "quote_hash": "17bb3cf65b9649afadd116a5d6acf02c869a3f23cfb79cc874b6473cfaf47444"
+        },
+        {
+          "source_id": "FISRC-f5de203e610041a3",
+          "source_url": "https://www.dealstreetasia.com/stories/asia-digest-zeya-health-acquires-connectlah-asian-investors-back-gmi-clouds-668m-funding-496808",
+          "source_title": "亚洲摘要：Zeya Health 收购 ConnectLah；亚洲投资者支持 GMI Cloud 的 6.68 亿美元融资",
+          "source_content_hash": "6f9fae4898bb4f10ab4e5c003449f2f9c04b6c292b4932a18191ec992f12be3a",
+          "quote": "Asia-Pacific investors, including DSC Investment, Trend Micro, KB Investment, Kyobo Life and KT Corporation, also participated in the funding round.",
+          "quote_hash": "57d129887176732facc5235cc0ab30eac4060c64a8586df4d5578d6ee22ec3c5"
+        }
+      ],
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
+    "INV-fe1b2636d022ee": {
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据投资项目方/主办方公告及Shopify官方董事会页面；不补写来源未披露的个人投资经历。",
+      "summary": "a16z官方公告将Tobi Lütke列为Horowitz Andreessen Academy的天使投资人；Shopify官方董事会页面确认其为Shopify联合创办人、董事会成员和CEO。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "a16z于2026年9月公布的Horowitz Andreessen Academy融资中，将Tobi Lütke列为个人天使投资人。",
+          "source_id": "haa-a16z-tobi-lutke"
+        },
+        {
+          "description": "融资来源记录：Wabi · 轮次未披露 · 2026-10-29 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bc01622ffa1cd4de"
+        },
+        {
+          "description": "融资来源记录：Daytona · B轮 · 2026-10-20 · 本轮参投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c5dadf72976d5866"
+        },
+        {
+          "description": "融资来源记录：Horowitz Andreessen Academy · 其他融资 · 2026-09-22 · 本轮参投 · $42 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1f3aa9ba4c739ca7"
+        }
+      ],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "依据投资项目方/主办方公告及Shopify官方董事会页面；不补写来源未披露的个人投资经历。",
+      "sources": [
+        {
+          "source_id": "haa-a16z-tobi-lutke",
+          "source_url": "https://www.a16z.news/p/introducing-the-horowitz-andreessen",
+          "source_title": "Introducing the Horowitz Andreessen Academy",
+          "source_content_hash": "6975cd806bafed39b6e843d2d6dfb5946e8c899b28e3f541aff8f105c0db59ac",
+          "quote": "Tobi Lütke (CEO, Shopify)",
+          "quote_hash": "f685d76ff6d0019a888537fa8e3a8ba8112af35af440a199a708811ea8c4ad5a"
+        },
+        {
+          "source_id": "shopify-board-tobi",
+          "source_url": "https://www.shopify.com/investors/board-of-directors",
+          "source_title": "Board of Directors - Shopify",
+          "source_content_hash": "fcf83ac133b1419894e94f73cf8273a7fb93dd9771d7d4a5e402f954b7ad6204",
+          "quote": "Tobias Lütke co-founded Shopify in September 2004",
+          "quote_hash": "d2eef7b971cb4ca95feb339c6d9b62d77095b2287c224411bba0b57a1eb7b2c1"
+        },
+        {
+          "source_id": "FISRC-bc01622ffa1cd4de",
+          "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+          "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+          "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
+          "quote": "angel investors like Shopify CEO Tobi Lütke, Salesforce CEO Marc Benioff, former Yahoo! head Marissa Mayer, former Twitter CEO Dick Costolo, and one half of The Chainsmokers, Alex Pall.",
+          "quote_hash": "962878cfc552ecc0587580cd8a4f1acbfb8314b2ae32d9c23c610541dfb1d385"
+        },
+        {
+          "source_id": "FISRC-c5dadf72976d5866",
+          "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
+          "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
+          "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
+          "quote": "The round includes seven tech founders investing as angels: Patrick Collison of Stripe, Tobi Lütke of Shopify, Aravind Srinivas of Perplexity, Eric Yuan of Zoom, Olivier Pomel of Datadog, Adam D’Angelo of Quora and Brendan Foody of Mercor.",
+          "quote_hash": "c6c6da54b2c77b01f7a44bd99e629b97f69ef2fdfb9ff6d45d3f7ce9a2b50663"
+        },
+        {
+          "source_id": "FISRC-1f3aa9ba4c739ca7",
+          "source_url": "https://pulse2.com/horowitz-andreessen-academy-raises-42-million-and-launches-tuition-free-fellowship-in-san-francisco/",
+          "source_title": "Horowitz Andreessen Academy Raises $42 Million And Launches Tuition-Free Fellowship In San Francisco",
+          "source_content_hash": "bb1048a5af39e427",
+          "quote": "The $42 million financing comes from a16z and a group of individual investors, including Adam D’Angelo, co-founder of Quora; Tobi Lütke, CEO of Shopify; Tony Xu, CEO of DoorDash; Fidji Simo, who recently served as CEO of Applications at OpenAI; Garry Tan of Y Combinator; Joe Liemandt of Alpha School; and Shyam Sankar, CTO of Palantir.",
+          "quote_hash": "66f075ad9a5112fbd5e30b27263196962b1250767ea2b56f8dae3803d67dd806"
+        }
+      ],
+      "last_verified_at": "2026-10-04"
+    },
     "INV-fa98c3f77ea32d": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -21760,6 +22041,77 @@
         }
       ],
       "last_verified_at": "2026-10-03"
+    },
+    "INV-f830d3489d4bb4": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "仅按官网可核实的 FUSE Venture Partners 品牌层级记录；未把短名映射到某一具体基金或法律载体。官网投资数量按页面采集时的自述记录。",
+      "summary": "FUSE 官方网站以 FUSE Venture Partners 为品牌署名；其 About 页面记载机构成立于2020年、投资64家公司，并列有300多位战略有限合伙人。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Avante · A轮 · 2026-10-27 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e028ef9a98fb7979"
+        },
+        {
+          "description": "融资来源记录：Ascerta · A轮 · 2026-09-30 · 本轮参投 · $18 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1ae6b18ce755c2a8"
+        },
+        {
+          "description": "融资来源记录：Thira · 种子轮 · 2026-07-14 · 本轮参投 · $21 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1da67785ba366c16"
+        }
+      ],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "仅按官网可核实的 FUSE Venture Partners 品牌层级记录；未把短名映射到某一具体基金或法律载体。官网投资数量按页面采集时的自述记录。",
+      "sources": [
+        {
+          "source_id": "fuse-official-about-metrics",
+          "source_url": "https://fuse.vc/about",
+          "source_title": "About - FUSE",
+          "source_content_hash": "c9ac514736cc852034fa24b01dfda6700e2c0c7741713276023805fbcd611742",
+          "quote": "Founded 2020 Investments to date 64 Strategic LPs 300+",
+          "quote_hash": "6430b2325e53440d7339e69c0c296453939f8c79744bef4219621b7aa7d6986c"
+        },
+        {
+          "source_id": "fuse-official-brand-attribution",
+          "source_url": "https://fuse.vc/about",
+          "source_title": "About - FUSE",
+          "source_content_hash": "c9ac514736cc852034fa24b01dfda6700e2c0c7741713276023805fbcd611742",
+          "quote": "© 2026 FUSE Venture Partners",
+          "quote_hash": "2eeb95fef1d351e0a5f1dac53e816fe9bbe493a66a1b06a22c7cde98419fae9b"
+        },
+        {
+          "source_id": "FISRC-e028ef9a98fb7979",
+          "source_url": "https://www.geekwire.com/2026/seattle-startup-avante-raises-30m-to-bring-ai-agents-to-corporate-benefits-teams/",
+          "source_title": "西雅图初创公司Avante融资3000万美元，将AI智能体引入企业福利团队",
+          "source_content_hash": "d7903755adf972ee3bc4df250c6b6aff971a6a4cbb64044f3eed8a4b06fc71e9",
+          "quote": "Frist Cressey Ventures led the round, with participation from Sorenson Capital, Hearst Ventures, Morgan Stanley Next Level Fund and existing investor Fuse.",
+          "quote_hash": "481712787e520c92e72f01b4e78cb1d47e1339e1247a2a2a627323b52ce5fe88"
+        },
+        {
+          "source_id": "FISRC-1ae6b18ce755c2a8",
+          "source_url": "https://ascerta.com/resources/press/ascerta-raises-18m-series-a",
+          "source_title": "Ascerta 融资 1800 万美元，帮助企业最大化 AI 投资回报率",
+          "source_content_hash": "521590bc01ad839c146800f3914ce17726a6317d32a595d321959aefa581ffca",
+          "quote": "an $18 million Series A led by Dell Technologies Capital, with participation from Hitachi Ventures, BGV, Wipro Ventures, and earlier investors FUSE, Tola Capital, and Gaia Ventures",
+          "quote_hash": "ceb29848cb747001e0474b6167c95766e3e72cb12197c1776f7cc10b4a655ddb"
+        },
+        {
+          "source_id": "FISRC-1da67785ba366c16",
+          "source_url": "https://www.morningstar.com/news/business-wire/20260714608171/thira-raises-21-million-seed-round-led-by-madrona-to-build-the-back-office-that-runs-itself",
+          "source_title": "Thira Raises $21 Million Seed Round Led by Madrona to ...",
+          "source_content_hash": "d455e42bd85876dd",
+          "quote": "with participation from FUSE and a group of prominent global advisors and CIOs",
+          "quote_hash": "26976fadf32ed1c69c97b098b069a47ddb90b0ecba058d97220458fada6b5890"
+        }
+      ],
+      "last_verified_at": "2026-10-04"
     },
     "INV-7b3da7177723b4": {
       "profile_type": "organization",
@@ -30235,81 +30587,6 @@
       ],
       "last_verified_at": "2026-10-03"
     },
-    "INV-f038044894bb3b": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "融资来源和机构官网均使用 “Forerunner” 名称；本档案不推断该轮的具体基金载体或单独出资额。",
-      "summary": "Forerunner 官网将其定位为早期风险投资机构；TechCrunch 报道将其创始人兼管理合伙人 Kirsten Green 列为 Natural 3000 万美元 A 轮领投者。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "TechCrunch 报道称，Forerunner 创始人兼管理合伙人 Kirsten Green 领投 Natural 的 3000 万美元 A 轮；未披露该机构的单独出资额。",
-          "source_id": "forerunner-natural-seriesa-2026"
-        },
-        {
-          "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2e7a3713da8f3e54"
-        },
-        {
-          "description": "融资来源记录：Natural AI, Inc. · A轮 · 2026-07-20 · 本轮领投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-cf3c8dfd6c45ed29"
-        },
-        {
-          "description": "融资来源记录：Suno · D轮 · 2026-06-03 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-8a34984c8e02defc"
-        }
-      ],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "融资来源和机构官网均使用 “Forerunner” 名称；本档案不推断该轮的具体基金载体或单独出资额。",
-      "sources": [
-        {
-          "source_id": "forerunner-official-identity",
-          "source_url": "https://www.forerunnerventures.com/",
-          "source_title": "Forerunner Ventures",
-          "source_content_hash": "ef798855b1d6f2fcc232d92a404f9c34736b322a05780bffcdc3801398990eae",
-          "quote": "Forerunner is an early-stage venture firm",
-          "quote_hash": "c520b4bc448898b81392dbe2b58f75ec4c91fedd393d35325976dc67fea73443"
-        },
-        {
-          "source_id": "forerunner-natural-seriesa-2026",
-          "source_url": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/",
-          "source_title": "Natural raises $30M to reinvent payments for AI agents — and take on Stripe | TechCrunch",
-          "source_content_hash": "92a1f82e227bf25ca38cffa52bac29d36d1c042890a463a7202ee29801613409",
-          "quote": "VC firm Forerunner",
-          "quote_hash": "2dc6cf71023afca78289df27771c59fdb7be0622d45d1ac463c8ad840970d698"
-        },
-        {
-          "source_id": "FISRC-2e7a3713da8f3e54",
-          "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
-          "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
-          "source_content_hash": "affdfd9a0ccfb188",
-          "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
-          "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
-        },
-        {
-          "source_id": "FISRC-cf3c8dfd6c45ed29",
-          "source_url": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/",
-          "source_title": "Natural 融资3000万美元，重塑AI智能体支付，挑战Stripe",
-          "source_content_hash": "487d88d020a14f20",
-          "quote": "Kirsten Green, founder and managing partner at VC firm Forerunner. Green, whose firm focuses on consumer experiences and the future of commerce, led its $30 million Series A round",
-          "quote_hash": "b620aa65aeb193e4ceb76d6df49b7a121047539efabf33057e23eee1e6cd80ff"
-        },
-        {
-          "source_id": "FISRC-8a34984c8e02defc",
-          "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
-          "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
-          "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
-          "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
-          "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
-        }
-      ],
-      "last_verified_at": "2026-10-03"
-    },
     "INV-86402224b56edd": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -34198,6 +34475,45 @@
       ],
       "last_verified_at": "2026-09-25"
     },
+    "INV-a448ddf8f08380": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Infinitum Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：FuriosaAI · D轮 · 2026-10-29 · 本轮参投 · 6.2 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-aa695bfb88a64c8d"
+        },
+        {
+          "description": "融资来源记录：Labelbox · E轮 · 2026-10-14 · 本轮领投 · more than $100 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-31a53dcde47855a0"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-aa695bfb88a64c8d",
+          "source_url": "https://www.ithome.com/1/019/329.htm",
+          "source_title": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮融资后估值翻两番至 29 亿美元",
+          "source_content_hash": "4c83c35a520a22c7d5d41bf2ddb12f3fd56bbcd20f1233c6a33c572ead71934a",
+          "quote": "投资方包括美国 Infinitum Partners",
+          "quote_hash": "b3f3b94f3ea952926f60aad09845955aafa873d8247087d99a6b795a24796184"
+        },
+        {
+          "source_id": "FISRC-31a53dcde47855a0",
+          "source_url": "https://www.prnewswire.com/news-releases/labelbox-raises-100-million-in-series-e-funding-to-advance-reinforcement-learning-and-enterprise-ai-agents-302909147.html",
+          "source_title": "Labelbox 在 E 轮融资中筹集超 1 亿美元，以推进强化学习和企业 AI 智能体",
+          "source_content_hash": "abf71b7341e1d71729971470dba1a61c3c2dbc1ba13ef692e8af679cbf922914",
+          "quote": "The round was led by Infinitum Partners, with participation from Wipro Ventures, Andreessen Horowitz (a16z), B Capital, Tau Ventures, Snowpoint Ventures, and others.",
+          "quote_hash": "7f634d6cd46ae09cfcb1945e2af656e027bb19047744780e7d20d1088d334973"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-5e50d4d053875d": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -36557,69 +36873,6 @@
           "quote_hash": "79fb93d20fd81722bbd472bc9a791046309a35a1498dd6c857f6fda3416906ea"
         }
       ]
-    },
-    "INV-fe1b2636d022ee": {
-      "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "依据投资项目方/主办方公告及Shopify官方董事会页面；不补写来源未披露的个人投资经历。",
-      "summary": "a16z官方公告将Tobi Lütke列为Horowitz Andreessen Academy的天使投资人；Shopify官方董事会页面确认其为Shopify联合创办人、董事会成员和CEO。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "a16z于2026年9月公布的Horowitz Andreessen Academy融资中，将Tobi Lütke列为个人天使投资人。",
-          "source_id": "haa-a16z-tobi-lutke"
-        },
-        {
-          "description": "融资来源记录：Daytona · B轮 · 2026-10-20 · 本轮参投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c5dadf72976d5866"
-        },
-        {
-          "description": "融资来源记录：Horowitz Andreessen Academy · 其他融资 · 2026-09-22 · 本轮参投 · $42 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1f3aa9ba4c739ca7"
-        }
-      ],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "依据投资项目方/主办方公告及Shopify官方董事会页面；不补写来源未披露的个人投资经历。",
-      "sources": [
-        {
-          "source_id": "haa-a16z-tobi-lutke",
-          "source_url": "https://www.a16z.news/p/introducing-the-horowitz-andreessen",
-          "source_title": "Introducing the Horowitz Andreessen Academy",
-          "source_content_hash": "6975cd806bafed39b6e843d2d6dfb5946e8c899b28e3f541aff8f105c0db59ac",
-          "quote": "Tobi Lütke (CEO, Shopify)",
-          "quote_hash": "f685d76ff6d0019a888537fa8e3a8ba8112af35af440a199a708811ea8c4ad5a"
-        },
-        {
-          "source_id": "shopify-board-tobi",
-          "source_url": "https://www.shopify.com/investors/board-of-directors",
-          "source_title": "Board of Directors - Shopify",
-          "source_content_hash": "fcf83ac133b1419894e94f73cf8273a7fb93dd9771d7d4a5e402f954b7ad6204",
-          "quote": "Tobias Lütke co-founded Shopify in September 2004",
-          "quote_hash": "d2eef7b971cb4ca95feb339c6d9b62d77095b2287c224411bba0b57a1eb7b2c1"
-        },
-        {
-          "source_id": "FISRC-c5dadf72976d5866",
-          "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
-          "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
-          "source_content_hash": "5886fcaa1793e461fb2a99824402837f7a463f214b8a2a522e17479e8fef4d0c",
-          "quote": "The round includes seven tech founders investing as angels: Patrick Collison of Stripe, Tobi Lütke of Shopify, Aravind Srinivas of Perplexity, Eric Yuan of Zoom, Olivier Pomel of Datadog, Adam D’Angelo of Quora and Brendan Foody of Mercor.",
-          "quote_hash": "c6c6da54b2c77b01f7a44bd99e629b97f69ef2fdfb9ff6d45d3f7ce9a2b50663"
-        },
-        {
-          "source_id": "FISRC-1f3aa9ba4c739ca7",
-          "source_url": "https://pulse2.com/horowitz-andreessen-academy-raises-42-million-and-launches-tuition-free-fellowship-in-san-francisco/",
-          "source_title": "Horowitz Andreessen Academy Raises $42 Million And Launches Tuition-Free Fellowship In San Francisco",
-          "source_content_hash": "bb1048a5af39e427",
-          "quote": "The $42 million financing comes from a16z and a group of individual investors, including Adam D’Angelo, co-founder of Quora; Tobi Lütke, CEO of Shopify; Tony Xu, CEO of DoorDash; Fidji Simo, who recently served as CEO of Applications at OpenAI; Garry Tan of Y Combinator; Joe Liemandt of Alpha School; and Shyam Sankar, CTO of Palantir.",
-          "quote_hash": "66f075ad9a5112fbd5e30b27263196962b1250767ea2b56f8dae3803d67dd806"
-        }
-      ],
-      "last_verified_at": "2026-10-04"
     },
     "INV-9fcd3aaf6e91f3": {
       "profile_type": "organization",
@@ -43225,109 +43478,6 @@
       ],
       "last_verified_at": "2026-09-28"
     },
-    "INV-d2c758072244f2": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "summary": "韩国 DART 公司信息登记记载 DSC Investment Inc.（代码 241520）于 2012 年 1 月 18 日成立，在 KOSDAQ 上市，行业分类为其他金融投资业务。",
-      "facts": [
-        {
-          "field": "legal_name",
-          "label": "英文法定名称",
-          "value": "DSC Investment Inc.。",
-          "source_id": "dsc_legal_name"
-        },
-        {
-          "field": "founded",
-          "label": "成立日期",
-          "value": "2012-01-18。",
-          "source_id": "dsc_founded"
-        },
-        {
-          "field": "listing",
-          "label": "上市信息",
-          "value": "KOSDAQ，代码 241520。",
-          "source_id": "dsc_listing"
-        },
-        {
-          "field": "industry",
-          "label": "行业分类",
-          "value": "其他金融投资业务。",
-          "source_id": "dsc_industry"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：GMI Cloud · 基础设施融资 · 2026-10-01 · 本轮参投 · $668 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-cf3eb2b83c7e750b"
-        },
-        {
-          "description": "融资来源记录：GMI Cloud · B轮 · 2026-10-01 · 本轮参投 · $223 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f5de203e610041a3"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官方网站（DART 登记）",
-          "value": "www.dscinvestment.com",
-          "source_id": "dsc_industry"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "dsc_legal_name",
-          "source_url": "https://englishdart.fss.or.kr/dsbc001/selectPopup.ax?selectKey=01109715",
-          "source_title": "Company infomation Popup",
-          "source_content_hash": "00ad74d8a6837c32c339d65fcadbb5f82c86da0cb5cfc904ee5f66b841dc0654",
-          "quote": "Company Name (English) DSC Investment Inc.",
-          "quote_hash": "41f018bca13b23780544961b3afba3bab0bf5aa1877c73868756ab77c4742cb7"
-        },
-        {
-          "source_id": "dsc_founded",
-          "source_url": "https://englishdart.fss.or.kr/dsbc001/selectPopup.ax?selectKey=01109715",
-          "source_title": "Company infomation Popup",
-          "source_content_hash": "00ad74d8a6837c32c339d65fcadbb5f82c86da0cb5cfc904ee5f66b841dc0654",
-          "quote": "Establishment Date 2012-01-18",
-          "quote_hash": "bdf429421049f4358d1bb6664fadfa92ef02201330b95e7122c63469cbe75488"
-        },
-        {
-          "source_id": "dsc_listing",
-          "source_url": "https://englishdart.fss.or.kr/dsbc001/selectPopup.ax?selectKey=01109715",
-          "source_title": "Company infomation Popup",
-          "source_content_hash": "00ad74d8a6837c32c339d65fcadbb5f82c86da0cb5cfc904ee5f66b841dc0654",
-          "quote": "Company Code 241520 Representative Market Listing KOSDAQ Market",
-          "quote_hash": "d9e5367b5c49ce6ee85d7933b782e6efe56ffa42b0e8e00f4233293b7abc8314"
-        },
-        {
-          "source_id": "dsc_industry",
-          "source_url": "https://englishdart.fss.or.kr/dsbc001/selectPopup.ax?selectKey=01109715",
-          "source_title": "Company infomation Popup",
-          "source_content_hash": "00ad74d8a6837c32c339d65fcadbb5f82c86da0cb5cfc904ee5f66b841dc0654",
-          "quote": "Industry Other financial investment businesses",
-          "quote_hash": "8d3eb1c047fde0f62f271af5c886e16de04836023e063adb7ba54d8956bbaeea"
-        },
-        {
-          "source_id": "FISRC-cf3eb2b83c7e750b",
-          "source_url": "https://www.prnewswire.com/apac/news-releases/gmi-cloud-raises-over-660-million-to-accelerate-global-ai-infrastructure-expansion-302894628.html",
-          "source_title": "GMI Cloud 融资超 6.6 亿美元，加速全球 AI 基础设施扩张",
-          "source_content_hash": "3afdd073c952b34b82f64573bdda1908aae012aec59d3bec2c9a16194f9fdb8a",
-          "quote": "This round saw strong participation from investors across the Asia-Pacific region, including DSC Investment, Trend Micro, KB Investment, Kyobo Life, KT Corporation and others.",
-          "quote_hash": "17bb3cf65b9649afadd116a5d6acf02c869a3f23cfb79cc874b6473cfaf47444"
-        },
-        {
-          "source_id": "FISRC-f5de203e610041a3",
-          "source_url": "https://www.dealstreetasia.com/stories/asia-digest-zeya-health-acquires-connectlah-asian-investors-back-gmi-clouds-668m-funding-496808",
-          "source_title": "亚洲摘要：Zeya Health 收购 ConnectLah；亚洲投资者支持 GMI Cloud 的 6.68 亿美元融资",
-          "source_content_hash": "6f9fae4898bb4f10ab4e5c003449f2f9c04b6c292b4932a18191ec992f12be3a",
-          "quote": "Asia-Pacific investors, including DSC Investment, Trend Micro, KB Investment, Kyobo Life and KT Corporation, also participated in the funding round.",
-          "quote_hash": "57d129887176732facc5235cc0ab30eac4060c64a8586df4d5578d6ee22ec3c5"
-        }
-      ],
-      "last_verified_at": "2026-10-03",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
-    },
     "INV-d6f005330db6f2": {
       "profile_type": "person",
       "identity_status": "verified",
@@ -44581,65 +44731,6 @@
         }
       ],
       "last_verified_at": "2026-09-27"
-    },
-    "INV-f830d3489d4bb4": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "仅按官网可核实的 FUSE Venture Partners 品牌层级记录；未把短名映射到某一具体基金或法律载体。官网投资数量按页面采集时的自述记录。",
-      "summary": "FUSE 官方网站以 FUSE Venture Partners 为品牌署名；其 About 页面记载机构成立于2020年、投资64家公司，并列有300多位战略有限合伙人。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Ascerta · A轮 · 2026-09-30 · 本轮参投 · $18 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1ae6b18ce755c2a8"
-        },
-        {
-          "description": "融资来源记录：Thira · 种子轮 · 2026-07-14 · 本轮参投 · $21 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1da67785ba366c16"
-        }
-      ],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "仅按官网可核实的 FUSE Venture Partners 品牌层级记录；未把短名映射到某一具体基金或法律载体。官网投资数量按页面采集时的自述记录。",
-      "sources": [
-        {
-          "source_id": "fuse-official-about-metrics",
-          "source_url": "https://fuse.vc/about",
-          "source_title": "About - FUSE",
-          "source_content_hash": "c9ac514736cc852034fa24b01dfda6700e2c0c7741713276023805fbcd611742",
-          "quote": "Founded 2020 Investments to date 64 Strategic LPs 300+",
-          "quote_hash": "6430b2325e53440d7339e69c0c296453939f8c79744bef4219621b7aa7d6986c"
-        },
-        {
-          "source_id": "fuse-official-brand-attribution",
-          "source_url": "https://fuse.vc/about",
-          "source_title": "About - FUSE",
-          "source_content_hash": "c9ac514736cc852034fa24b01dfda6700e2c0c7741713276023805fbcd611742",
-          "quote": "© 2026 FUSE Venture Partners",
-          "quote_hash": "2eeb95fef1d351e0a5f1dac53e816fe9bbe493a66a1b06a22c7cde98419fae9b"
-        },
-        {
-          "source_id": "FISRC-1ae6b18ce755c2a8",
-          "source_url": "https://ascerta.com/resources/press/ascerta-raises-18m-series-a",
-          "source_title": "Ascerta 融资 1800 万美元，帮助企业最大化 AI 投资回报率",
-          "source_content_hash": "521590bc01ad839c146800f3914ce17726a6317d32a595d321959aefa581ffca",
-          "quote": "an $18 million Series A led by Dell Technologies Capital, with participation from Hitachi Ventures, BGV, Wipro Ventures, and earlier investors FUSE, Tola Capital, and Gaia Ventures",
-          "quote_hash": "ceb29848cb747001e0474b6167c95766e3e72cb12197c1776f7cc10b4a655ddb"
-        },
-        {
-          "source_id": "FISRC-1da67785ba366c16",
-          "source_url": "https://www.morningstar.com/news/business-wire/20260714608171/thira-raises-21-million-seed-round-led-by-madrona-to-build-the-back-office-that-runs-itself",
-          "source_title": "Thira Raises $21 Million Seed Round Led by Madrona to ...",
-          "source_content_hash": "d455e42bd85876dd",
-          "quote": "with participation from FUSE and a group of prominent global advisors and CIOs",
-          "quote_hash": "26976fadf32ed1c69c97b098b069a47ddb90b0ecba058d97220458fada6b5890"
-        }
-      ],
-      "last_verified_at": "2026-10-04"
     },
     "INV-dff97fc4b8226b": {
       "identity_status": "verified",
@@ -61746,8 +61837,8 @@
           "source_id": "FISRC-4fe23845696fb5f2"
         },
         {
-          "description": "融资来源记录：DeepSeek · 历史轮次未披露 · 首轮融资参投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4a43446c1fdd8a31"
+          "description": "融资来源记录：DeepSeek · 历史轮次未披露 · 首轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-947d23e1d1abb833"
         }
       ],
       "profile_type": "organization",
@@ -61789,12 +61880,12 @@
           "quote_hash": "d4e8f7444a626c3a00cf012a0115c7c61c1fe62a41056d12dba1084ec55a7289"
         },
         {
-          "source_id": "FISRC-4a43446c1fdd8a31",
-          "source_url": "https://www.qbitai.com/2026/07/461220.html",
-          "source_title": "DeepSeek被曝主动叫停了第二轮融资签约",
-          "source_content_hash": "b0eb1d1fb5eb1976",
-          "quote": "梁文锋承诺投入约200亿元个人资金，腾讯和宁德时代分别计划出资约100亿元和50亿元，国家人工智能产业投资基金等机构也参与其中。",
-          "quote_hash": "cdf760608154741457b02d4308d46e226296b202baadad456524d45df20cdc1b"
+          "source_id": "FISRC-947d23e1d1abb833",
+          "source_url": "https://aitop.news/item/11276",
+          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资，510 亿元到账",
+          "source_content_hash": "d57814649739d8b7",
+          "quote": "投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金",
+          "quote_hash": "4663bf475b46d04402f8eb35adfe5bdc4e4c7a4e38e3ca05ac8bf8b016ae90a3"
         }
       ],
       "last_verified_at": "2026-09-26"
@@ -67246,6 +67337,464 @@
       "coverage_note": "职位、学历和过往任职以Tracxn公司官网及年报为准；投资案例来自公司年报或融资来源记录，不能据此推断完整个人投资组合。",
       "last_verified_at": "2026-09-26"
     },
+    "INV-520ea08096aac2": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "韩国产业银行 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：FuriosaAI · D轮 · 2026-10-29 · 本轮参投 · 6.2 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-aa695bfb88a64c8d"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-aa695bfb88a64c8d",
+          "source_url": "https://www.ithome.com/1/019/329.htm",
+          "source_title": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮融资后估值翻两番至 29 亿美元",
+          "source_content_hash": "4c83c35a520a22c7d5d41bf2ddb12f3fd56bbcd20f1233c6a33c572ead71934a",
+          "quote": "Naver、韩国产业银行、DSC Investment、Nextrans 和 Kakao Investment 等老股东也参与了本轮融资",
+          "quote_hash": "bf0c6aba96d7fe704d9be89583274850022c96aa785322102fb145a30a29864f"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-3c0336d8f1b9e5": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "韩国国民成长基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：FuriosaAI · D轮 · 2026-10-29 · 本轮参投 · 6.2 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-aa695bfb88a64c8d"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-aa695bfb88a64c8d",
+          "source_url": "https://www.ithome.com/1/019/329.htm",
+          "source_title": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮融资后估值翻两番至 29 亿美元",
+          "source_content_hash": "4c83c35a520a22c7d5d41bf2ddb12f3fd56bbcd20f1233c6a33c572ead71934a",
+          "quote": "韩国国民成长基金投资 2.8 亿美元",
+          "quote_hash": "fdeba1bf917c74b55fd0ab4304ce9e2fff70b1201aaeb259551f088bbb0121a9"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-f1977b07fb9a48": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "韩国进出口银行 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：FuriosaAI · D轮 · 2026-10-29 · 本轮参投 · 6.2 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-aa695bfb88a64c8d"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-aa695bfb88a64c8d",
+          "source_url": "https://www.ithome.com/1/019/329.htm",
+          "source_title": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮融资后估值翻两番至 29 亿美元",
+          "source_content_hash": "4c83c35a520a22c7d5d41bf2ddb12f3fd56bbcd20f1233c6a33c572ead71934a",
+          "quote": "韩国进出口银行则首次直接投资初创企业，投资对象正是 FuriosaAI",
+          "quote_hash": "6dd1f2a06134f3216e6179f05d29514f213dee1f8ef27566745119a296314aee"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-df52bc034d7c40": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "杰里科资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：FuriosaAI · D轮 · 2026-10-29 · 本轮参投 · 6.2 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-aa695bfb88a64c8d"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-aa695bfb88a64c8d",
+          "source_url": "https://www.ithome.com/1/019/329.htm",
+          "source_title": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮融资后估值翻两番至 29 亿美元",
+          "source_content_hash": "4c83c35a520a22c7d5d41bf2ddb12f3fd56bbcd20f1233c6a33c572ead71934a",
+          "quote": "参与融资的还有杰里科资本、Worldline Capital、新加坡 QUDA Capital 和阿布扎比 NeoFort Holding 等机构",
+          "quote_hash": "80dcc201552eddf5eec6fccd554b7faefe4545132323e14474728e309d1fdb04"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-bfb9b85addce9e": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Alex Pall 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Wabi · 轮次未披露 · 2026-10-29 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bc01622ffa1cd4de"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-bc01622ffa1cd4de",
+          "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+          "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+          "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
+          "quote": "angel investors like Shopify CEO Tobi Lütke, Salesforce CEO Marc Benioff, former Yahoo! head Marissa Mayer, former Twitter CEO Dick Costolo, and one half of The Chainsmokers, Alex Pall.",
+          "quote_hash": "962878cfc552ecc0587580cd8a4f1acbfb8314b2ae32d9c23c610541dfb1d385"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-970b157778a30f": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Amazon Alexa Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Wabi · 轮次未披露 · 2026-10-29 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bc01622ffa1cd4de"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-bc01622ffa1cd4de",
+          "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+          "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+          "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
+          "quote": "Other participants in the round included Andreessen Horowitz (a16z), Forerunner, Amazon Alexa Fund",
+          "quote_hash": "fb7d6c4f926ef6d735db5fb1f51ee398253262316355083102507558ff84f3be"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-ca34f71eea4e86": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Dick Costolo 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Wabi · 轮次未披露 · 2026-10-29 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bc01622ffa1cd4de"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-bc01622ffa1cd4de",
+          "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+          "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+          "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
+          "quote": "angel investors like Shopify CEO Tobi Lütke, Salesforce CEO Marc Benioff, former Yahoo! head Marissa Mayer, former Twitter CEO Dick Costolo, and one half of The Chainsmokers, Alex Pall.",
+          "quote_hash": "962878cfc552ecc0587580cd8a4f1acbfb8314b2ae32d9c23c610541dfb1d385"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-25612101d14a32": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Kakao Investment 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：FuriosaAI · D轮 · 2026-10-29 · 本轮参投 · 6.2 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-aa695bfb88a64c8d"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-aa695bfb88a64c8d",
+          "source_url": "https://www.ithome.com/1/019/329.htm",
+          "source_title": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮融资后估值翻两番至 29 亿美元",
+          "source_content_hash": "4c83c35a520a22c7d5d41bf2ddb12f3fd56bbcd20f1233c6a33c572ead71934a",
+          "quote": "Naver、韩国产业银行、DSC Investment、Nextrans 和 Kakao Investment 等老股东也参与了本轮融资",
+          "quote_hash": "bf0c6aba96d7fe704d9be89583274850022c96aa785322102fb145a30a29864f"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-77280ec423e714": {
+      "summary": "Salesforce新闻稿记录Marc与Lynne Benioff宣布气候领域投资，并将TIME Ventures称为Benioffs的投资基金；该来源支持其参与投资活动，但未将基金单独归属于Marc一人。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "官方新闻稿披露的投资活动",
+          "value": "Marc与Lynne Benioff共同宣布气候领域投资，其中包括TIME Ventures承诺的1亿美元投资。",
+          "source_id": "PROFILE-INV-77280ec423e714-1"
+        },
+        {
+          "field": "fund_relationship",
+          "label": "官方新闻稿披露的基金关系",
+          "value": "新闻稿将TIME Ventures称为Benioffs的投资基金，未说明个人持有比例。",
+          "source_id": "PROFILE-INV-77280ec423e714-1"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Wabi · 轮次未披露 · 2026-10-29 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bc01622ffa1cd4de"
+        },
+        {
+          "description": "融资来源记录：Nomos Ai Inc. · 轮次未披露 · 既有投资方（历史轮次）。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-afaa91a6569d1f7a"
+        }
+      ],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "保留来源对Marc与Lynne共同参与及TIME Ventures关系的表述，不推断个人持有比例。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Salesforce新闻稿",
+          "value": "Marc Benioff",
+          "url": "https://www.salesforce.com/in/news/press-releases/2021/10/28/marc-and-lynne-benioff-and-salesforce-announce-investment-to-accelerate-ecosystem-restoration-and-climate-justice/?source_capture=2026-10-03&cycle=11",
+          "source_id": "PROFILE-INV-77280ec423e714-1"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "PROFILE-INV-77280ec423e714-1",
+          "source_url": "https://www.salesforce.com/in/news/press-releases/2021/10/28/marc-and-lynne-benioff-and-salesforce-announce-investment-to-accelerate-ecosystem-restoration-and-climate-justice/?source_capture=2026-10-03&cycle=11",
+          "source_title": "Marc and Lynne Benioff, Salesforce Announce $300 Million in Investments to Accelerate Ecosystem Restoration and Climate Justice - Salesforce",
+          "source_content_hash": "aa2f2995f3d18418cc9e747b9ee9ead536c28900e374de53c31c6d1cccc0b4b1",
+          "quote": "Marc and Lynne Benioff today announced $200 million in new climate investments toward reforestation and restoration efforts—establishing the first-of-its-kind $100 million Benioff TIME Tree Fund and committing $100 million in investments from TIME Ventures, the Benioffs’ investment fund.",
+          "quote_hash": "2f1f79da751c8d8c9d41af263a9f696df74ddb029f7fd01e189884b37e9deb37"
+        },
+        {
+          "source_id": "PROFILE-INV-77280ec423e714-2",
+          "source_url": "https://www.salesforce.com/in/news/press-releases/2021/10/28/marc-and-lynne-benioff-and-salesforce-announce-investment-to-accelerate-ecosystem-restoration-and-climate-justice/?source_capture=2026-10-03&cycle=11",
+          "source_title": "Marc and Lynne Benioff, Salesforce Announce $300 Million in Investments to Accelerate Ecosystem Restoration and Climate Justice - Salesforce",
+          "source_content_hash": "aa2f2995f3d18418cc9e747b9ee9ead536c28900e374de53c31c6d1cccc0b4b1",
+          "quote": "TIME Ventures will invest $100 million in ecopreneurs and reforestation ventures",
+          "quote_hash": "bdd27ff75482606c6f8b2431ff41d4a57a90deafd97da9a1fc488d97f32ce757"
+        },
+        {
+          "source_id": "FISRC-bc01622ffa1cd4de",
+          "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+          "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+          "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
+          "quote": "angel investors like Shopify CEO Tobi Lütke, Salesforce CEO Marc Benioff, former Yahoo! head Marissa Mayer, former Twitter CEO Dick Costolo, and one half of The Chainsmokers, Alex Pall.",
+          "quote_hash": "962878cfc552ecc0587580cd8a4f1acbfb8314b2ae32d9c23c610541dfb1d385"
+        },
+        {
+          "source_id": "FISRC-afaa91a6569d1f7a",
+          "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
+          "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
+          "source_content_hash": "afe0afef4cf0ce8c",
+          "quote": "Henry R. Kravis and Marc Benioff are also among the company's backers.",
+          "quote_hash": "5880fd38c5f5318633c031526f69b0af93ee9b29f6216ea6dbed382b40af3e11"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
+    },
+    "INV-111411dcbf6699": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Marissa Mayer 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Wabi · 轮次未披露 · 2026-10-29 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bc01622ffa1cd4de"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-bc01622ffa1cd4de",
+          "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+          "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+          "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
+          "quote": "angel investors like Shopify CEO Tobi Lütke, Salesforce CEO Marc Benioff, former Yahoo! head Marissa Mayer, former Twitter CEO Dick Costolo, and one half of The Chainsmokers, Alex Pall.",
+          "quote_hash": "962878cfc552ecc0587580cd8a4f1acbfb8314b2ae32d9c23c610541dfb1d385"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-7e7316592d91db": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Naver 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：FuriosaAI · D轮 · 2026-10-29 · 本轮参投 · 6.2 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-aa695bfb88a64c8d"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-aa695bfb88a64c8d",
+          "source_url": "https://www.ithome.com/1/019/329.htm",
+          "source_title": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮融资后估值翻两番至 29 亿美元",
+          "source_content_hash": "4c83c35a520a22c7d5d41bf2ddb12f3fd56bbcd20f1233c6a33c572ead71934a",
+          "quote": "Naver、韩国产业银行、DSC Investment、Nextrans 和 Kakao Investment 等老股东也参与了本轮融资",
+          "quote_hash": "bf0c6aba96d7fe704d9be89583274850022c96aa785322102fb145a30a29864f"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-888efe0530e2db": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "NeoFort Holding 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：FuriosaAI · D轮 · 2026-10-29 · 本轮参投 · 6.2 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-aa695bfb88a64c8d"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-aa695bfb88a64c8d",
+          "source_url": "https://www.ithome.com/1/019/329.htm",
+          "source_title": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮融资后估值翻两番至 29 亿美元",
+          "source_content_hash": "4c83c35a520a22c7d5d41bf2ddb12f3fd56bbcd20f1233c6a33c572ead71934a",
+          "quote": "参与融资的还有杰里科资本、Worldline Capital、新加坡 QUDA Capital 和阿布扎比 NeoFort Holding 等机构",
+          "quote_hash": "80dcc201552eddf5eec6fccd554b7faefe4545132323e14474728e309d1fdb04"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-39963b85f426e7": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Nextrans 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：FuriosaAI · D轮 · 2026-10-29 · 本轮参投 · 6.2 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-aa695bfb88a64c8d"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-aa695bfb88a64c8d",
+          "source_url": "https://www.ithome.com/1/019/329.htm",
+          "source_title": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮融资后估值翻两番至 29 亿美元",
+          "source_content_hash": "4c83c35a520a22c7d5d41bf2ddb12f3fd56bbcd20f1233c6a33c572ead71934a",
+          "quote": "Naver、韩国产业银行、DSC Investment、Nextrans 和 Kakao Investment 等老股东也参与了本轮融资",
+          "quote_hash": "bf0c6aba96d7fe704d9be89583274850022c96aa785322102fb145a30a29864f"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-3e265937ebd75c": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "QUDA Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：FuriosaAI · D轮 · 2026-10-29 · 本轮参投 · 6.2 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-aa695bfb88a64c8d"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-aa695bfb88a64c8d",
+          "source_url": "https://www.ithome.com/1/019/329.htm",
+          "source_title": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮融资后估值翻两番至 29 亿美元",
+          "source_content_hash": "4c83c35a520a22c7d5d41bf2ddb12f3fd56bbcd20f1233c6a33c572ead71934a",
+          "quote": "参与融资的还有杰里科资本、Worldline Capital、新加坡 QUDA Capital 和阿布扎比 NeoFort Holding 等机构",
+          "quote_hash": "80dcc201552eddf5eec6fccd554b7faefe4545132323e14474728e309d1fdb04"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-4e65d2e7587482": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Worldline Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：FuriosaAI · D轮 · 2026-10-29 · 本轮参投 · 6.2 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-aa695bfb88a64c8d"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-aa695bfb88a64c8d",
+          "source_url": "https://www.ithome.com/1/019/329.htm",
+          "source_title": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮融资后估值翻两番至 29 亿美元",
+          "source_content_hash": "4c83c35a520a22c7d5d41bf2ddb12f3fd56bbcd20f1233c6a33c572ead71934a",
+          "quote": "参与融资的还有杰里科资本、Worldline Capital、新加坡 QUDA Capital 和阿布扎比 NeoFort Holding 等机构",
+          "quote_hash": "80dcc201552eddf5eec6fccd554b7faefe4545132323e14474728e309d1fdb04"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-1bc44fd281c09b": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -67545,6 +68094,60 @@
       ],
       "last_verified_at": "2026-10-06"
     },
+    "INV-23588ccf585a82": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Frist Cressey Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Avante · A轮 · 2026-10-27 · 本轮领投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e028ef9a98fb7979"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-e028ef9a98fb7979",
+          "source_url": "https://www.geekwire.com/2026/seattle-startup-avante-raises-30m-to-bring-ai-agents-to-corporate-benefits-teams/",
+          "source_title": "西雅图初创公司Avante融资3000万美元，将AI智能体引入企业福利团队",
+          "source_content_hash": "d7903755adf972ee3bc4df250c6b6aff971a6a4cbb64044f3eed8a4b06fc71e9",
+          "quote": "Frist Cressey Ventures led the round, with participation from Sorenson Capital, Hearst Ventures, Morgan Stanley Next Level Fund and existing investor Fuse.",
+          "quote_hash": "481712787e520c92e72f01b4e78cb1d47e1339e1247a2a2a627323b52ce5fe88"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-b6ead022f879d9": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Hearst Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Avante · A轮 · 2026-10-27 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e028ef9a98fb7979"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-e028ef9a98fb7979",
+          "source_url": "https://www.geekwire.com/2026/seattle-startup-avante-raises-30m-to-bring-ai-agents-to-corporate-benefits-teams/",
+          "source_title": "西雅图初创公司Avante融资3000万美元，将AI智能体引入企业福利团队",
+          "source_content_hash": "d7903755adf972ee3bc4df250c6b6aff971a6a4cbb64044f3eed8a4b06fc71e9",
+          "quote": "Frist Cressey Ventures led the round, with participation from Sorenson Capital, Hearst Ventures, Morgan Stanley Next Level Fund and existing investor Fuse.",
+          "quote_hash": "481712787e520c92e72f01b4e78cb1d47e1339e1247a2a2a627323b52ce5fe88"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-ed6995f0f07534": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -67595,6 +68198,33 @@
           "source_content_hash": "404d88ff840f005ca2cfc6b5710f57793c704b4d1f839e3ffb3dbdf063966c6f",
           "quote": "除英伟达外，Accel、Shastra VC 和 Micromax 也参与了投资",
           "quote_hash": "69eb650b766e80b83c31eff16d249ddc4375bffb539144aed60dd9c8599b3539"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-87e50075db72cc": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Morgan Stanley Next Level Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Avante · A轮 · 2026-10-27 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e028ef9a98fb7979"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-e028ef9a98fb7979",
+          "source_url": "https://www.geekwire.com/2026/seattle-startup-avante-raises-30m-to-bring-ai-agents-to-corporate-benefits-teams/",
+          "source_title": "西雅图初创公司Avante融资3000万美元，将AI智能体引入企业福利团队",
+          "source_content_hash": "d7903755adf972ee3bc4df250c6b6aff971a6a4cbb64044f3eed8a4b06fc71e9",
+          "quote": "Frist Cressey Ventures led the round, with participation from Sorenson Capital, Hearst Ventures, Morgan Stanley Next Level Fund and existing investor Fuse.",
+          "quote_hash": "481712787e520c92e72f01b4e78cb1d47e1339e1247a2a2a627323b52ce5fe88"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -67688,6 +68318,33 @@
           "source_content_hash": "404d88ff840f005ca2cfc6b5710f57793c704b4d1f839e3ffb3dbdf063966c6f",
           "quote": "除英伟达外，Accel、Shastra VC 和 Micromax 也参与了投资",
           "quote_hash": "69eb650b766e80b83c31eff16d249ddc4375bffb539144aed60dd9c8599b3539"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-12c581c3f5cd26": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Sorenson Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Avante · A轮 · 2026-10-27 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e028ef9a98fb7979"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-e028ef9a98fb7979",
+          "source_url": "https://www.geekwire.com/2026/seattle-startup-avante-raises-30m-to-bring-ai-agents-to-corporate-benefits-teams/",
+          "source_title": "西雅图初创公司Avante融资3000万美元，将AI智能体引入企业福利团队",
+          "source_content_hash": "d7903755adf972ee3bc4df250c6b6aff971a6a4cbb64044f3eed8a4b06fc71e9",
+          "quote": "Frist Cressey Ventures led the round, with participation from Sorenson Capital, Hearst Ventures, Morgan Stanley Next Level Fund and existing investor Fuse.",
+          "quote_hash": "481712787e520c92e72f01b4e78cb1d47e1339e1247a2a2a627323b52ce5fe88"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -72118,33 +72775,6 @@
           "source_content_hash": "fb255e0c1a6337736310f8194786f68e353c939e292ed91a7e90b13f682245c9",
           "quote": "The all-equity strategic round was led by Hitachi Ventures, with customers Henkel and Teknor Apex joining as new investors.",
           "quote_hash": "d5c95ce8ad8f40efc47b766c8510c34c9ef4ccad03b67bf661ed430da270073d"
-        }
-      ],
-      "last_verified_at": "2026-10-06"
-    },
-    "INV-a448ddf8f08380": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Infinitum Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Labelbox · E轮 · 2026-10-14 · 本轮领投 · more than $100 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-31a53dcde47855a0"
-        }
-      ],
-      "contacts": [],
-      "sources": [
-        {
-          "source_id": "FISRC-31a53dcde47855a0",
-          "source_url": "https://www.prnewswire.com/news-releases/labelbox-raises-100-million-in-series-e-funding-to-advance-reinforcement-learning-and-enterprise-ai-agents-302909147.html",
-          "source_title": "Labelbox 在 E 轮融资中筹集超 1 亿美元，以推进强化学习和企业 AI 智能体",
-          "source_content_hash": "abf71b7341e1d71729971470dba1a61c3c2dbc1ba13ef692e8af679cbf922914",
-          "quote": "The round was led by Infinitum Partners, with participation from Wipro Ventures, Andreessen Horowitz (a16z), B Capital, Tau Ventures, Snowpoint Ventures, and others.",
-          "quote_hash": "7f634d6cd46ae09cfcb1945e2af656e027bb19047744780e7d20d1088d334973"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -142469,6 +143099,10 @@
         {
           "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-17 · 本轮参投 · 约 510 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e0178cb313198d39"
+        },
+        {
+          "description": "融资来源记录：DeepSeek · 历史轮次未披露 · 首轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-947d23e1d1abb833"
         }
       ],
       "contacts": [],
@@ -142480,6 +143114,14 @@
           "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
           "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
           "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
+        },
+        {
+          "source_id": "FISRC-947d23e1d1abb833",
+          "source_url": "https://aitop.news/item/11276",
+          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资，510 亿元到账",
+          "source_content_hash": "d57814649739d8b7",
+          "quote": "投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金",
+          "quote_hash": "4663bf475b46d04402f8eb35adfe5bdc4e4c7a4e38e3ca05ac8bf8b016ae90a3"
         }
       ],
       "last_verified_at": "2026-09-28"
@@ -142496,6 +143138,10 @@
         {
           "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-17 · 本轮参投 · 约 510 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e0178cb313198d39"
+        },
+        {
+          "description": "融资来源记录：DeepSeek · 历史轮次未披露 · 首轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-947d23e1d1abb833"
         }
       ],
       "contacts": [],
@@ -142507,6 +143153,14 @@
           "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
           "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
           "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
+        },
+        {
+          "source_id": "FISRC-947d23e1d1abb833",
+          "source_url": "https://aitop.news/item/11276",
+          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资，510 亿元到账",
+          "source_content_hash": "d57814649739d8b7",
+          "quote": "投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金",
+          "quote_hash": "4663bf475b46d04402f8eb35adfe5bdc4e4c7a4e38e3ca05ac8bf8b016ae90a3"
         }
       ],
       "last_verified_at": "2026-09-28"
@@ -143128,6 +143782,10 @@
         {
           "description": "融资来源记录：亿格云 · 历史轮次未披露 · B轮领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-33042e04db869f01"
+        },
+        {
+          "description": "融资来源记录：DeepSeek · 历史轮次未披露 · 首轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-947d23e1d1abb833"
         }
       ],
       "contacts": [],
@@ -143147,6 +143805,14 @@
           "source_content_hash": "8b079bf51a12bbe4",
           "quote": "本轮融资由新股东Monolith砺思资本领投，老股东未来启创基金加码跟投",
           "quote_hash": "b8664bd0cfc127a7b5826081d3588730829c008a51926180457fcfeedb316e9d"
+        },
+        {
+          "source_id": "FISRC-947d23e1d1abb833",
+          "source_url": "https://aitop.news/item/11276",
+          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资，510 亿元到账",
+          "source_content_hash": "d57814649739d8b7",
+          "quote": "投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金",
+          "quote_hash": "4663bf475b46d04402f8eb35adfe5bdc4e4c7a4e38e3ca05ac8bf8b016ae90a3"
         }
       ],
       "last_verified_at": "2026-09-25"
@@ -191984,6 +192650,10 @@
         {
           "description": "融资来源记录：Replit · B轮扩展 · 2023-04-27 · 本轮参投（天使投资人） · $97.4 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9b0f32fe01d091cc"
+        },
+        {
+          "description": "融资来源记录：Wabi · 历史轮次未披露 · pre-seed 轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f974c6bd67d9cec9"
         }
       ],
       "sources": [
@@ -192010,6 +192680,14 @@
           "source_content_hash": "3b03664369ea0afe",
           "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer.",
           "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
+        },
+        {
+          "source_id": "FISRC-f974c6bd67d9cec9",
+          "source_url": "https://particle.news/story/replika-founders-wabi-raises-20-million-for-a-social-platform-of-instant-mini-apps",
+          "source_title": "Replika Founder’s Wabi Raises $20 Million for a Social Platform of Instant Mini Apps",
+          "source_content_hash": "ce78884b677a7fe7",
+          "quote": "Wabi secured a $20 million pre-seed round from prominent angel investors including Naval Ravikant, Garry Tan, Justin Kan, Amjad Masad, Akshay Kothari, DJ Seo, and Sarah Guo.",
+          "quote_hash": "f8c5b2545ca8e95d31eb67bcaf6c52f110fad0636663f896ab64c3df25705cbe"
         }
       ],
       "last_verified_at": "2026-10-02",
@@ -217353,6 +218031,33 @@
       ],
       "last_verified_at": "2026-10-06"
     },
+    "INV-a056baf1e00c88": {
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Akshay Kothari 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Wabi · 历史轮次未披露 · pre-seed 轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f974c6bd67d9cec9"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-f974c6bd67d9cec9",
+          "source_url": "https://particle.news/story/replika-founders-wabi-raises-20-million-for-a-social-platform-of-instant-mini-apps",
+          "source_title": "Replika Founder’s Wabi Raises $20 Million for a Social Platform of Instant Mini Apps",
+          "source_content_hash": "ce78884b677a7fe7",
+          "quote": "Wabi secured a $20 million pre-seed round from prominent angel investors including Naval Ravikant, Garry Tan, Justin Kan, Amjad Masad, Akshay Kothari, DJ Seo, and Sarah Guo.",
+          "quote_hash": "f8c5b2545ca8e95d31eb67bcaf6c52f110fad0636663f896ab64c3df25705cbe"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-fa75675b3afcd6": {
       "profile_type": "person",
       "identity_status": "verified",
@@ -217832,6 +218537,33 @@
         }
       ],
       "last_verified_at": "2026-10-05"
+    },
+    "INV-755f9f4a8b274a": {
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Amjad Masad 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Wabi · 历史轮次未披露 · pre-seed 轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f974c6bd67d9cec9"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-f974c6bd67d9cec9",
+          "source_url": "https://particle.news/story/replika-founders-wabi-raises-20-million-for-a-social-platform-of-instant-mini-apps",
+          "source_title": "Replika Founder’s Wabi Raises $20 Million for a Social Platform of Instant Mini Apps",
+          "source_content_hash": "ce78884b677a7fe7",
+          "quote": "Wabi secured a $20 million pre-seed round from prominent angel investors including Naval Ravikant, Garry Tan, Justin Kan, Amjad Masad, Akshay Kothari, DJ Seo, and Sarah Guo.",
+          "quote_hash": "f8c5b2545ca8e95d31eb67bcaf6c52f110fad0636663f896ab64c3df25705cbe"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
     },
     "INV-d07b72a4658d17": {
       "profile_type": "organization",
@@ -218753,6 +219485,33 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "INV-2c339d6d8c74f2": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Ascend Venture Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Avante · 历史轮次未披露 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f08f97d5427bed1b"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-f08f97d5427bed1b",
+          "source_url": "https://www.avante.ai/press/avante-raises-10-million-in-seed-funding-led-by-fuse",
+          "source_title": "Avante Raises $10 Million in Seed Funding Led by FUSE",
+          "source_content_hash": "72bfa48031a0a677",
+          "quote": "with participation from Ascend Venture Capital, Highsage and a group of strategic angel investors",
+          "quote_hash": "e054aee500a86fcadaa89f56e1d0594e06053b92c5650f1581b083ba7df36a55"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
     },
     "INV-aa6e018217579f": {
       "profile_type": "person",
@@ -223674,6 +224433,33 @@
       ],
       "last_verified_at": "2026-10-06"
     },
+    "INV-8c3e3575519cea": {
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "DJ Seo 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Wabi · 历史轮次未披露 · pre-seed 轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f974c6bd67d9cec9"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-f974c6bd67d9cec9",
+          "source_url": "https://particle.news/story/replika-founders-wabi-raises-20-million-for-a-social-platform-of-instant-mini-apps",
+          "source_title": "Replika Founder’s Wabi Raises $20 Million for a Social Platform of Instant Mini Apps",
+          "source_content_hash": "ce78884b677a7fe7",
+          "quote": "Wabi secured a $20 million pre-seed round from prominent angel investors including Naval Ravikant, Garry Tan, Justin Kan, Amjad Masad, Akshay Kothari, DJ Seo, and Sarah Guo.",
+          "quote_hash": "f8c5b2545ca8e95d31eb67bcaf6c52f110fad0636663f896ab64c3df25705cbe"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-30cd62db08effa": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -227777,6 +228563,33 @@
       ],
       "last_verified_at": "2026-10-06"
     },
+    "INV-91edc10e3155f7": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Highsage 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Avante · 历史轮次未披露 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f08f97d5427bed1b"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-f08f97d5427bed1b",
+          "source_url": "https://www.avante.ai/press/avante-raises-10-million-in-seed-funding-led-by-fuse",
+          "source_title": "Avante Raises $10 Million in Seed Funding Led by FUSE",
+          "source_content_hash": "72bfa48031a0a677",
+          "quote": "with participation from Ascend Venture Capital, Highsage and a group of strategic angel investors",
+          "quote_hash": "e054aee500a86fcadaa89f56e1d0594e06053b92c5650f1581b083ba7df36a55"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-d7d3d11e0e6eec": {
       "summary": "Hong Kong Investment Corporation Limited（HKIC，香港投资管理有限公司）是香港特区政府全资持有的耐心资本投资机构，采用“投资+”方式，兼顾中长期合理财务回报与香港经济和产业竞争力。官网披露初始部署资本为620亿港元，管理四个投资组合，并聚焦硬科技、生物科技、健康科技、新能源与绿色科技。",
       "facts": [
@@ -230176,6 +230989,33 @@
       "contacts": [],
       "profile_type": "person"
     },
+    "INV-274a080704b1bf": {
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Justin Kan 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Wabi · 历史轮次未披露 · pre-seed 轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f974c6bd67d9cec9"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-f974c6bd67d9cec9",
+          "source_url": "https://particle.news/story/replika-founders-wabi-raises-20-million-for-a-social-platform-of-instant-mini-apps",
+          "source_title": "Replika Founder’s Wabi Raises $20 Million for a Social Platform of Instant Mini Apps",
+          "source_content_hash": "ce78884b677a7fe7",
+          "quote": "Wabi secured a $20 million pre-seed round from prominent angel investors including Naval Ravikant, Garry Tan, Justin Kan, Amjad Masad, Akshay Kothari, DJ Seo, and Sarah Guo.",
+          "quote_hash": "f8c5b2545ca8e95d31eb67bcaf6c52f110fad0636663f896ab64c3df25705cbe"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-8c214b020eb346": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -232091,74 +232931,6 @@
       "current_roles": [],
       "career": [],
       "education": []
-    },
-    "INV-77280ec423e714": {
-      "summary": "Salesforce新闻稿记录Marc与Lynne Benioff宣布气候领域投资，并将TIME Ventures称为Benioffs的投资基金；该来源支持其参与投资活动，但未将基金单独归属于Marc一人。",
-      "facts": [
-        {
-          "field": "investment_activity",
-          "label": "官方新闻稿披露的投资活动",
-          "value": "Marc与Lynne Benioff共同宣布气候领域投资，其中包括TIME Ventures承诺的1亿美元投资。",
-          "source_id": "PROFILE-INV-77280ec423e714-1"
-        },
-        {
-          "field": "fund_relationship",
-          "label": "官方新闻稿披露的基金关系",
-          "value": "新闻稿将TIME Ventures称为Benioffs的投资基金，未说明个人持有比例。",
-          "source_id": "PROFILE-INV-77280ec423e714-1"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Nomos Ai Inc. · 轮次未披露 · 既有投资方（历史轮次）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-afaa91a6569d1f7a"
-        }
-      ],
-      "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "保留来源对Marc与Lynne共同参与及TIME Ventures关系的表述，不推断个人持有比例。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "Salesforce新闻稿",
-          "value": "Marc Benioff",
-          "url": "https://www.salesforce.com/in/news/press-releases/2021/10/28/marc-and-lynne-benioff-and-salesforce-announce-investment-to-accelerate-ecosystem-restoration-and-climate-justice/?source_capture=2026-10-03&cycle=11",
-          "source_id": "PROFILE-INV-77280ec423e714-1"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "PROFILE-INV-77280ec423e714-1",
-          "source_url": "https://www.salesforce.com/in/news/press-releases/2021/10/28/marc-and-lynne-benioff-and-salesforce-announce-investment-to-accelerate-ecosystem-restoration-and-climate-justice/?source_capture=2026-10-03&cycle=11",
-          "source_title": "Marc and Lynne Benioff, Salesforce Announce $300 Million in Investments to Accelerate Ecosystem Restoration and Climate Justice - Salesforce",
-          "source_content_hash": "aa2f2995f3d18418cc9e747b9ee9ead536c28900e374de53c31c6d1cccc0b4b1",
-          "quote": "Marc and Lynne Benioff today announced $200 million in new climate investments toward reforestation and restoration efforts—establishing the first-of-its-kind $100 million Benioff TIME Tree Fund and committing $100 million in investments from TIME Ventures, the Benioffs’ investment fund.",
-          "quote_hash": "2f1f79da751c8d8c9d41af263a9f696df74ddb029f7fd01e189884b37e9deb37"
-        },
-        {
-          "source_id": "PROFILE-INV-77280ec423e714-2",
-          "source_url": "https://www.salesforce.com/in/news/press-releases/2021/10/28/marc-and-lynne-benioff-and-salesforce-announce-investment-to-accelerate-ecosystem-restoration-and-climate-justice/?source_capture=2026-10-03&cycle=11",
-          "source_title": "Marc and Lynne Benioff, Salesforce Announce $300 Million in Investments to Accelerate Ecosystem Restoration and Climate Justice - Salesforce",
-          "source_content_hash": "aa2f2995f3d18418cc9e747b9ee9ead536c28900e374de53c31c6d1cccc0b4b1",
-          "quote": "TIME Ventures will invest $100 million in ecopreneurs and reforestation ventures",
-          "quote_hash": "bdd27ff75482606c6f8b2431ff41d4a57a90deafd97da9a1fc488d97f32ce757"
-        },
-        {
-          "source_id": "FISRC-afaa91a6569d1f7a",
-          "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
-          "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
-          "source_content_hash": "afe0afef4cf0ce8c",
-          "quote": "Henry R. Kravis and Marc Benioff are also among the company's backers.",
-          "quote_hash": "5880fd38c5f5318633c031526f69b0af93ee9b29f6216ea6dbed382b40af3e11"
-        }
-      ],
-      "last_verified_at": "2026-10-03"
     },
     "INV-f995c495c88b68": {
       "profile_type": "unverified",
@@ -236107,6 +236879,33 @@
         }
       ],
       "last_verified_at": "2026-09-28"
+    },
+    "INV-462b5ffdb5fd5e": {
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Sarah Guo 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Wabi · 历史轮次未披露 · pre-seed 轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f974c6bd67d9cec9"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-f974c6bd67d9cec9",
+          "source_url": "https://particle.news/story/replika-founders-wabi-raises-20-million-for-a-social-platform-of-instant-mini-apps",
+          "source_title": "Replika Founder’s Wabi Raises $20 Million for a Social Platform of Instant Mini Apps",
+          "source_content_hash": "ce78884b677a7fe7",
+          "quote": "Wabi secured a $20 million pre-seed round from prominent angel investors including Naval Ravikant, Garry Tan, Justin Kan, Amjad Masad, Akshay Kothari, DJ Seo, and Sarah Guo.",
+          "quote_hash": "f8c5b2545ca8e95d31eb67bcaf6c52f110fad0636663f896ab64c3df25705cbe"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
     },
     "INV-fad48ef331fa50": {
       "profile_type": "organization",

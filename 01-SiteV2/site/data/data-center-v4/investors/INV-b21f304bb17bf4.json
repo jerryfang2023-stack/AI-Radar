@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-29",
-    "currentDate": "2026-10-29",
-    "eventCount": 4316,
+    "latestDataDate": "2026-10-30",
+    "currentDate": "2026-10-30",
+    "eventCount": 4324,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-06-17",
     "latest_disclosed_at": "2026-09-22",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "other_current_round": 2,
       "participant": 1
     },
@@ -250,6 +250,38 @@
             "quote_hash": "17236f745d8e9a6cbfb9326b7ef9d8ccbd3ec2f099f5183bbd9bdf02fe9eb78c"
           }
         ]
+      },
+      {
+        "activity_id": "IA-70ea4d27d17e06ca",
+        "funding_insight_id": "FI-85c91dbd238af2fb",
+        "event_ids": [
+          "EV-71961eb465ee3502"
+        ],
+        "company_entity_id": "EN-27392c283df47b1a",
+        "company_canonical_entity_id": "",
+        "company_name": "Wabi",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "pre-seed 轮天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f974c6bd67d9cec9",
+            "source_url": "https://particle.news/story/replika-founders-wabi-raises-20-million-for-a-social-platform-of-instant-mini-apps",
+            "source_title": "Replika Founder’s Wabi Raises $20 Million for a Social Platform of Instant Mini Apps",
+            "source_content_hash": "ce78884b677a7fe7",
+            "quote": "Wabi secured a $20 million pre-seed round from prominent angel investors including Naval Ravikant, Garry Tan, Justin Kan, Amjad Masad, Akshay Kothari, DJ Seo, and Sarah Guo.",
+            "quote_hash": "f8c5b2545ca8e95d31eb67bcaf6c52f110fad0636663f896ab64c3df25705cbe"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -284,6 +316,14 @@
         "source_content_hash": "f9b71df0af1c23e2",
         "quote": "along with leading tech entrepreneurs like Tony Fadell (Future Shape, inventor of the iPod), Casey Neistat, Nikhil Kamath (co-founder Zerodha), Kevin Lin (co-founder of Twitch), Steve Huffman (CEO of Reddit), Garry Tan (CEO of Y Combinator), and many others.",
         "quote_hash": "17236f745d8e9a6cbfb9326b7ef9d8ccbd3ec2f099f5183bbd9bdf02fe9eb78c"
+      },
+      {
+        "source_id": "FISRC-f974c6bd67d9cec9",
+        "source_url": "https://particle.news/story/replika-founders-wabi-raises-20-million-for-a-social-platform-of-instant-mini-apps",
+        "source_title": "Replika Founder’s Wabi Raises $20 Million for a Social Platform of Instant Mini Apps",
+        "source_content_hash": "ce78884b677a7fe7",
+        "quote": "Wabi secured a $20 million pre-seed round from prominent angel investors including Naval Ravikant, Garry Tan, Justin Kan, Amjad Masad, Akshay Kothari, DJ Seo, and Sarah Guo.",
+        "quote_hash": "f8c5b2545ca8e95d31eb67bcaf6c52f110fad0636663f896ab64c3df25705cbe"
       }
     ],
     "public_profile": {
@@ -396,6 +436,14 @@
     },
     "translations": {
       "zh-CN": {
+        "activities[4].role": {
+          "text": "pre-seed 轮天使投资人",
+          "source_hash": "8a8dd36d8a5d57ea17e8fc515fb33c51998d53cf303a8a076177705f581a5b87",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-30T03:50:15.186Z",
+          "status": "translated"
+        },
         "public_profile.career[2].description": {
           "text": "共同创立博客平台Posterous，该平台后被Twitter收购。",
           "source_hash": "edb282e73aa2bf92d64cdbafbfc31e6402d2e00b123c5942d565f175d2d74dfb",

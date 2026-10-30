@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-29",
-    "currentDate": "2026-10-29",
-    "eventCount": 4316,
+    "latestDataDate": "2026-10-30",
+    "currentDate": "2026-10-30",
+    "eventCount": 4324,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,25 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-03",
-    "latest_disclosed_at": "2026-08-17",
+    "latest_disclosed_at": "2026-10-29",
     "role_counts": {
       "lead": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "series_a",
       "series_b",
-      "series_d"
+      "series_d",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -92,12 +93,57 @@
         "name": "Suno"
       },
       {
+        "entity_id": "EN-27392c283df47b1a",
+        "canonical_entity_id": "",
+        "name": "Wabi"
+      },
+      {
         "entity_id": "EN-8c5929d253b07fed",
         "canonical_entity_id": "",
         "name": "Wispr"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-aa278730dd9b52cb",
+        "funding_insight_id": "FI-85c91dbd238af2fb",
+        "event_ids": [
+          "EV-71961eb465ee3502"
+        ],
+        "company_entity_id": "EN-27392c283df47b1a",
+        "company_canonical_entity_id": "",
+        "company_name": "Wabi",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "$55 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 55000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5500 万美元"
+        },
+        "announced_at": "2026-10-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-bc01622ffa1cd4de",
+            "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+            "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+            "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
+            "quote": "Other participants in the round included Andreessen Horowitz (a16z), Forerunner, Amazon Alexa Fund",
+            "quote_hash": "fb7d6c4f926ef6d735db5fb1f51ee398253262316355083102507558ff84f3be"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a71cfd0ec9fd53cf",
         "funding_insight_id": "FI-c0b843a5e6f6ea0a",
@@ -222,6 +268,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-bc01622ffa1cd4de",
+        "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+        "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+        "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
+        "quote": "Other participants in the round included Andreessen Horowitz (a16z), Forerunner, Amazon Alexa Fund",
+        "quote_hash": "fb7d6c4f926ef6d735db5fb1f51ee398253262316355083102507558ff84f3be"
+      },
+      {
         "source_id": "FISRC-2e7a3713da8f3e54",
         "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
         "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
@@ -260,16 +314,16 @@
           "source_id": "forerunner-natural-seriesa-2026"
         },
         {
+          "description": "融资来源记录：Wabi · 轮次未披露 · 2026-10-29 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bc01622ffa1cd4de"
+        },
+        {
           "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2e7a3713da8f3e54"
         },
         {
           "description": "融资来源记录：Natural AI, Inc. · A轮 · 2026-07-20 · 本轮领投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cf3c8dfd6c45ed29"
-        },
-        {
-          "description": "融资来源记录：Suno · D轮 · 2026-06-03 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-8a34984c8e02defc"
         }
       ],
       "contacts": [],
@@ -295,6 +349,14 @@
           "quote_hash": "2dc6cf71023afca78289df27771c59fdb7be0622d45d1ac463c8ad840970d698"
         },
         {
+          "source_id": "FISRC-bc01622ffa1cd4de",
+          "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+          "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+          "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
+          "quote": "Other participants in the round included Andreessen Horowitz (a16z), Forerunner, Amazon Alexa Fund",
+          "quote_hash": "fb7d6c4f926ef6d735db5fb1f51ee398253262316355083102507558ff84f3be"
+        },
+        {
           "source_id": "FISRC-2e7a3713da8f3e54",
           "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
           "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
@@ -309,14 +371,6 @@
           "source_content_hash": "487d88d020a14f20",
           "quote": "Kirsten Green, founder and managing partner at VC firm Forerunner. Green, whose firm focuses on consumer experiences and the future of commerce, led its $30 million Series A round",
           "quote_hash": "b620aa65aeb193e4ceb76d6df49b7a121047539efabf33057e23eee1e6cd80ff"
-        },
-        {
-          "source_id": "FISRC-8a34984c8e02defc",
-          "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
-          "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
-          "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
-          "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
-          "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
         }
       ],
       "last_verified_at": "2026-10-03"
