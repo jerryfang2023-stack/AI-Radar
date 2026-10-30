@@ -10,5 +10,5 @@ export function failedRunLog(repo,runId,{read=githubRead}={}) {
   const pages=JSON.parse(get(['api',`repos/${repo}/actions/runs/${runId}/jobs?per_page=100`,'--paginate','--slurp']));
   const jobs=pages.flatMap(page=>page.jobs || []).filter(job=>job.conclusion==='failure');
   if(!jobs.length || jobs.some(job=>!Number.isSafeInteger(job.id)||job.id<=0))throw new Error('failed_run_jobs_unavailable');
-  return jobs.map(job=>get(['api',`repos/${repo}/actions/jobs/${job.id}/logs`])).join('\n');
+  return jobs.map(job=>get(['api',`repos/${repo}/actions/jobs/${job.id}/logs`,'--allow-escape-sequences'])).join('\n');
 }

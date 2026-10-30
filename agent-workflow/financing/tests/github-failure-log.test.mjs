@@ -7,7 +7,7 @@ test('usable CLI logs avoid redundant API requests',()=>{
   let calls=0;assert.equal(failedRunLog('owner/repo',123,{read:()=>{calls++;return {status:0,stdout:failure};}}),failure);assert.equal(calls,1);
 });
 for(const primary of [{status:1,stderr:'permission denied'},{status:1,stderr:'temporary CLI error'},{status:0,stdout:''}])test('failed or empty CLI logs recover exact failed-job diagnostics '+JSON.stringify(primary),()=>{
-  const calls=[];const read=args=>{calls.push(args);if(args[0]==='run')return primary;if(args[1].includes('/runs/'))return {status:0,stdout:JSON.stringify([{jobs:[{id:456,conclusion:'success'}]},{jobs:[{id:789,conclusion:'failure'}]}])};assert.equal(args[1],'repos/owner/repo/actions/jobs/789/logs');return {status:0,stdout:failure};};
+  const calls=[];const read=args=>{calls.push(args);if(args[0]==='run')return primary;if(args[1].includes('/runs/'))return {status:0,stdout:JSON.stringify([{jobs:[{id:456,conclusion:'success'}]},{jobs:[{id:789,conclusion:'failure'}]}])};assert.deepEqual(args,['api','repos/owner/repo/actions/jobs/789/logs','--allow-escape-sequences']);return {status:0,stdout:failure};};
   const log=failedRunLog('owner/repo',123,{read});assert.equal(deterministicProductionFailure(log,{date:'2026-10-30',head:'same',runHead:'same'}).failure_kind,'quality_gate');assert.equal(calls.length,3);
 });
 test('missing jobs and inaccessible or empty API logs cannot become permission to retry production',()=>{
