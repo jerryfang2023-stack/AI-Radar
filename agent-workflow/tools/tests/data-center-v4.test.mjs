@@ -3097,3 +3097,10 @@ test('round-level market trend reports cannot become a company funding event', (
     assert.equal(eventSourceEligibility({published_at:'2026-10-30',clean_text:'Acme develops AI models and raised $40 million from investors.'},{source_url:'https://example.com/acme'},title,'2026-10-30',{eventType:'funding'}).accepted,true,title);
   }
 });
+
+
+test('present-tense approaching a funding round is not a completed raise despite the headline',()=>{
+  const check=body=>eventSourceEligibility({published_at:'2026-10-30',clean_text:body},{source_url:'https://example.com/funding'},'Acme raises up to $30 billion','2026-10-30',{eventType:'funding'});
+  assert.equal(check('Acme is closing in on a new funding round of up to $30 billion.').reason,'proposed_financing_not_completed');
+  assert.equal(check('Acme has closed a funding round of $30 billion. Earlier it was closing in on a new funding round.').accepted,true);
+});
