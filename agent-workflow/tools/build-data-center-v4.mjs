@@ -289,6 +289,12 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
   if (/🤖.{0,120}💰.{0,120}(?:🎵|ElevenLabs)/u.test(title)) {
     return { accepted: false, reason: "multi_event_roundup_not_single_event_source" };
   }
+  // Stage-wide funding statistics are not a financing announcement by a company.
+  // Keep the title anchored so a named startup's Series B raise stays eligible.
+  if (options.eventType === "funding"
+      && /^(?:(?:US|U\.S\.|Global|European|Europe|UK|U\.K\.)\s+)?Series\s+[A-I](?:\+)?\s+Funding\s+(?:Is|Was)\s+(?:Up|Down|Flat)\b/iu.test(title)) {
+    return { accepted: false, reason: "market_overview_not_company_funding_source" };
+  }
   if (/^Vertical AI Agents:/iu.test(title)
       && /\b(?:market|Gartner|global AI agents)\b/iu.test(sourceLead)) {
     return { accepted: false, reason: "market_overview_not_company_funding_source" };

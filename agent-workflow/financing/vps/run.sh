@@ -7,6 +7,11 @@ case "$(gh api --help)" in
   *) printf '%s\n' 'Financing runtime requires a GitHub CLI supporting gh api --paginate --slurp; install the verified task CLI before running.' >&2; exit 1 ;;
 esac
 export GUANLAN_FINANCING_RUNTIME=/srv/guanlan-financing/runtime
+# gh caches run logs below TMPDIR. The host-wide /tmp cache may belong to
+# another operator; keep this service's cache private and independently writable.
+export TMPDIR="$GUANLAN_FINANCING_RUNTIME/tmp"
+mkdir -p "$TMPDIR"
+chmod 700 "$TMPDIR"
 export GUANLAN_EVIDENCE_BACKUP_ROOT=/srv/guanlan-financing/private-evidence/store
 export HERMES_HOME=/srv/guanlan-financing/hermes-home
 export GUANLAN_HERMES_SOURCE=/opt/guanlan-financing-tools/hermes-agent
