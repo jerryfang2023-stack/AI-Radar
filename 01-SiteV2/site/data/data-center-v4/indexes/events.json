@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-29",
-    "currentDate": "2026-10-29",
-    "eventCount": 4316,
+    "latestDataDate": "2026-10-30",
+    "currentDate": "2026-10-30",
+    "eventCount": 4324,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -156,8 +156,55 @@
   },
   "events": [
     {
+      "id": "EV-71961eb465ee3502",
+      "dataDate": "2026-10-30",
+      "date": "2026-10-29",
+      "updatedDate": "2026-10-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
+      "originalTitle": "Wabi, the AI agent that builds mini apps, now valued at $1.25B after latest round",
+      "subject": "Wabi",
+      "action": "funding",
+      "object": "$55 million at a $1.25 billion valuation",
+      "metrics": [
+        "$55 million",
+        "$1.25 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-27392c283df47b1a"
+      ],
+      "entityNames": [
+        "Wabi"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+      "publisher": "techcrunch.com"
+    },
+    {
       "id": "EV-848a9d54114887d9",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "acquisition",
@@ -207,8 +254,191 @@
       "publisher": "www.ithome.com"
     },
     {
+      "id": "EV-b34cc7c6ca51ad7a",
+      "dataDate": "2026-10-30",
+      "date": "2026-10-29",
+      "updatedDate": "2026-10-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮融资后估值翻两番至 29 亿美元",
+      "originalTitle": "",
+      "subject": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮",
+      "action": "融资",
+      "object": "后估值翻两番至 29 亿美元",
+      "metrics": [
+        "29 亿",
+        "193.74 亿",
+        "6.2 亿",
+        "41.42 亿",
+        "2.8 亿",
+        "18.71 亿",
+        "1.1 亿",
+        "7.35 亿"
+      ],
+      "locations": [
+        "美国",
+        "韩国",
+        "新加坡"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-f4bec299df3f4f27"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-f4bec299df3f4f27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-f4bec299df3f4f27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-f4bec299df3f4f27",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "FuriosaAI",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/019/329.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
+      "id": "EV-da13ad386cf35ad9",
+      "dataDate": "2026-10-30",
+      "date": "2026-10-29",
+      "updatedDate": "2026-10-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "考拉悠然完成B++轮融资，持续迭代世界模型基座与多模态大模型",
+      "originalTitle": "",
+      "subject": "考拉悠然",
+      "action": "完成B++轮融资",
+      "object": "，持续迭代世界模型基座与多模态大模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-0975e447ef42ee73"
+      ],
+      "entityNames": [
+        "考拉悠然"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202610/571068.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-ee7fd70ed0f055f6",
+      "dataDate": "2026-10-30",
+      "date": "2026-10-29",
+      "updatedDate": "2026-10-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "星科源完成亿元级Pre-A轮融资，聚焦下一代固态电池专用的纳米硅技术",
+      "originalTitle": "",
+      "subject": "星科源",
+      "action": "完成亿元级Pre-A轮融资",
+      "object": "，聚焦下一代固态电池专用的纳米硅技术",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2466327c4d0b1e4a"
+      ],
+      "entityNames": [
+        "星科源"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202610/571071.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
       "id": "EV-3f5278aad82b5aba",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -219,7 +449,7 @@
       "publicationStatus": "verified",
       "title": "超进化智能完成数亿元天使轮融资，以万卡训练经验打造研究基础模型",
       "originalTitle": "",
-      "subject": "超进化（上海）智能科技有限公司",
+      "subject": "超进化",
       "action": "完成数亿元天使轮融资",
       "object": "，以万卡训练经验打造研究基础模型",
       "metrics": [],
@@ -254,7 +484,7 @@
     },
     {
       "id": "EV-63e454277381c4b3",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -266,10 +496,11 @@
       "title": "百奥几何完成1亿美元A轮系列融资，带队迈向生命科学超级智能",
       "originalTitle": "",
       "subject": "百奥几何",
-      "action": "funding",
-      "object": "完成A+轮融资",
+      "action": "完成1亿美元A轮系列融资",
+      "object": "，带队迈向生命科学超级智能",
       "metrics": [
-        "1亿"
+        "1亿",
+        "80%"
       ],
       "locations": [],
       "missingFields": [],
@@ -336,7 +567,7 @@
     },
     {
       "id": "EV-8615e87fa54663e5",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -387,7 +618,7 @@
     },
     {
       "id": "EV-e0a31302688c81ec",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -415,10 +646,10 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-5a39df9f86aff527",
-          "CL-d63482eecb876c59",
-          "CL-c94182277d3517f5",
-          "CL-0df0b464eb25813a"
+          "CL-6341d45872127f85",
+          "CL-cf1269a3290b80d7",
+          "CL-34b57b0fae7fe1ae",
+          "CL-f968ceb90b6242fc"
         ]
       },
       "missingFields": [],
@@ -983,7 +1214,7 @@
     },
     {
       "id": "EV-53dad7c8f530b480",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-27",
       "updatedDate": "2026-10-27",
       "eventType": "funding",
@@ -1094,7 +1325,7 @@
     },
     {
       "id": "EV-6326aa903d147461",
-      "dataDate": "2026-10-28",
+      "dataDate": "2026-10-30",
       "date": "2026-10-27",
       "updatedDate": "2026-10-27",
       "eventType": "funding",
@@ -1308,7 +1539,7 @@
     },
     {
       "id": "EV-94baaaabc016521f",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-27",
       "updatedDate": "2026-10-27",
       "eventType": "funding",
@@ -1473,6 +1704,92 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-fef4dfd8fed00cfe",
+      "dataDate": "2026-10-30",
+      "date": "2026-10-27",
+      "updatedDate": "2026-10-27",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "西雅图初创公司Avante融资3000万美元，将AI智能体引入企业福利团队",
+      "originalTitle": "Seattle startup Avante raises $30M to bring AI agents to corporate benefits teams",
+      "subject": "Seattle startup Avante",
+      "action": "raises",
+      "object": "$30M to bring AI agents to corporate benefits teams",
+      "metrics": [
+        "$30 million",
+        "$40 million",
+        "$10 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-835429c59eea025b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-835429c59eea025b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-835429c59eea025b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-835429c59eea025b",
+        "EN-7000534ceec56856"
+      ],
+      "entityNames": [
+        "Seattle startup Avante",
+        "Avante"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.geekwire.com/2026/seattle-startup-avante-raises-30m-to-bring-ai-agents-to-corporate-benefits-teams/",
+      "publisher": "www.geekwire.com"
+    },
+    {
       "id": "EV-370b7f7ebf16be3d",
       "dataDate": "2026-10-27",
       "date": "2026-10-26",
@@ -1589,7 +1906,7 @@
     },
     {
       "id": "EV-64ce72bdf3514b8e",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "funding",
@@ -1635,6 +1952,121 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://finance.sina.com.cn/stock/usstock/c/2026-10-26/doc-iniwprzt9308482.shtml?cre=tianyi&mod=pchp&loc=7&r=0&rfunc=7&tj=cxvertical_pc_hp&tr=12",
+      "publisher": "finance.sina.com.cn"
+    },
+    {
+      "id": "EV-76a1dbe418adc8dd",
+      "dataDate": "2026-10-30",
+      "date": "2026-10-26",
+      "updatedDate": "2026-10-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_sources_insufficient",
+      "title": "财富科技初创公司Nevis获得6200万欧元，用于通过AI自动化金融咨询工作流程",
+      "originalTitle": "WealthTech startup Nevis secures €62 million to automate financial advisory workflows with AI",
+      "subject": "WealthTech startup Nevis",
+      "action": "secures",
+      "object": "€62 million to automate financial advisory workflows with AI",
+      "metrics": [
+        "€62 million",
+        "$70 million",
+        "€47.8 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bdfcfbdc9e0896ff",
+        "EN-9f0f256b5e9f716a",
+        "EN-0c24734d7bf5954f"
+      ],
+      "entityNames": [
+        "WealthTech startup Nevis",
+        "London/NY-based Nevis",
+        "Together"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/wealthtech-startup-nevis-secures-e62-million-to-automate-financial-advisory-workflows-with-ai/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
+      "id": "EV-ac30333388e0d00a",
+      "dataDate": "2026-10-30",
+      "date": "2026-10-26",
+      "updatedDate": "2026-10-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "经济日报：千亿元融资展现中国AI进取心",
+      "originalTitle": "",
+      "subject": "DeepSeek",
+      "action": "融资",
+      "object": "展现中国AI进取心",
+      "metrics": [
+        "1000亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-f8b110cf205b23e5"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-96a38f1d2bd32ecc",
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "entityNames": [
+        "DeepSeek",
+        "经济日报",
+        "Tencent"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://finance.sina.com.cn/jjxw/2026-10-26/doc-iniwnuwc9407368.shtml?cre=tianyi&mod=pchp&loc=23&r=0&rfunc=64&tj=cxvertical_pc_hp&tr=12",
       "publisher": "finance.sina.com.cn"
     },
     {
@@ -2118,7 +2550,7 @@
     },
     {
       "id": "EV-0b46ca8532759091",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-23",
       "updatedDate": "2026-10-23",
       "eventType": "funding",
@@ -2360,7 +2792,7 @@
     },
     {
       "id": "EV-9eca876903571bd3",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-23",
       "updatedDate": "2026-10-23",
       "eventType": "funding",
@@ -450615,6 +451047,50 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-009a882943028d97",
+      "dataDate": "2026-10-30",
+      "date": "2026-10-29",
+      "updatedDate": "2026-10-29",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "全球 AI 基建风向标：英伟达于太平洋时间 11 月 17 日公布 2027 财年第 3 财季财报",
+      "originalTitle": "",
+      "subject": "英伟达",
+      "action": "financial_performance",
+      "object": "2027 财年第三财季财务业绩",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/019/263.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
       "id": "EV-d381d15f8f9045e0",
       "dataDate": "2026-10-29",
       "date": "2026-10-29",
@@ -450660,7 +451136,7 @@
     },
     {
       "id": "EV-3b80351ff05f68a1",
-      "dataDate": "2026-10-27",
+      "dataDate": "2026-10-30",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "capital_investment",
@@ -450706,7 +451182,7 @@
     },
     {
       "id": "EV-7ddfa7b82af141ec",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "ipo_listing",
@@ -450765,7 +451241,7 @@
     },
     {
       "id": "EV-c4964bb580827988",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "ipo_listing",
@@ -450814,7 +451290,7 @@
     },
     {
       "id": "EV-2ad2ae14a594df04",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-30",
       "date": "2026-10-23",
       "updatedDate": "2026-10-23",
       "eventType": "ipo_listing",

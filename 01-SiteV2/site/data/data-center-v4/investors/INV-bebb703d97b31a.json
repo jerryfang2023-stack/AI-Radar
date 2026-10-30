@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-29",
-    "currentDate": "2026-10-29",
-    "eventCount": 4316,
+    "latestDataDate": "2026-10-30",
+    "currentDate": "2026-10-30",
+    "eventCount": 4324,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-05-29",
     "latest_disclosed_at": "2026-06-17",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "other_current_round": 1,
       "participant": 2
     },
@@ -247,6 +247,38 @@
         ]
       },
       {
+        "activity_id": "IA-469425a41cbe85d1",
+        "funding_insight_id": "FI-46e39faf9187783d",
+        "event_ids": [
+          "EV-ac30333388e0d00a"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "首轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-947d23e1d1abb833",
+            "source_url": "https://aitop.news/item/11276",
+            "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资，510 亿元到账",
+            "source_content_hash": "d57814649739d8b7",
+            "quote": "投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金",
+            "quote_hash": "4663bf475b46d04402f8eb35adfe5bdc4e4c7a4e38e3ca05ac8bf8b016ae90a3"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-6c32c3f18c491cd4",
         "funding_insight_id": "FI-fb02f5cc84560b82",
         "event_ids": [
@@ -311,6 +343,14 @@
         "source_content_hash": "ea9384dd84819d0d",
         "quote": "天使股东网易继续提供资源支持",
         "quote_hash": "ff4712f7068e2021e0fe31cb9f478c40cd507ea11e87174456b542a1ba76c2e0"
+      },
+      {
+        "source_id": "FISRC-947d23e1d1abb833",
+        "source_url": "https://aitop.news/item/11276",
+        "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资，510 亿元到账",
+        "source_content_hash": "d57814649739d8b7",
+        "quote": "投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金",
+        "quote_hash": "4663bf475b46d04402f8eb35adfe5bdc4e4c7a4e38e3ca05ac8bf8b016ae90a3"
       },
       {
         "source_id": "FISRC-ac00611dd4c2a13f",

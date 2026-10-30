@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-29",
-    "currentDate": "2026-10-29",
-    "eventCount": 4316,
+    "latestDataDate": "2026-10-30",
+    "currentDate": "2026-10-30",
+    "eventCount": 4324,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 4,
+    "china_market_activity_count": 5,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-06-03",
-    "latest_disclosed_at": "2026-10-22",
+    "latest_disclosed_at": "2026-10-26",
     "role_counts": {
       "historical_or_ambiguous": 4,
       "lead": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "first_external",
@@ -94,6 +94,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-3544a634c508c3e6",
+        "funding_insight_id": "FI-46e39faf9187783d",
+        "event_ids": [
+          "EV-ac30333388e0d00a"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "约1000亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1000 亿元"
+        },
+        "announced_at": "2026-10-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-03184bd4c71f3982",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-10-26/doc-iniwnuwc9407368.shtml?cre=tianyi&mod=pchp&loc=23&r=0&rfunc=64&tj=cxvertical_pc_hp&tr=12",
+            "source_title": "经济日报：千亿元融资展现中国AI进取心",
+            "source_content_hash": "5408191ecbc510c2d7f2ec691759b44e0e6980af0171320a7b6a2846f192f072",
+            "quote": "宁德时代、腾讯等产业巨头参投",
+            "quote_hash": "fcd29b1d1768edee3c7018751b375a8832e472f7aa3a37ad0cbe35fcb345d4ee"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6c48877c10928833",
         "funding_insight_id": "FI-da29060a41575ad7",
@@ -394,6 +434,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-03184bd4c71f3982",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-10-26/doc-iniwnuwc9407368.shtml?cre=tianyi&mod=pchp&loc=23&r=0&rfunc=64&tj=cxvertical_pc_hp&tr=12",
+        "source_title": "经济日报：千亿元融资展现中国AI进取心",
+        "source_content_hash": "5408191ecbc510c2d7f2ec691759b44e0e6980af0171320a7b6a2846f192f072",
+        "quote": "宁德时代、腾讯等产业巨头参投",
+        "quote_hash": "fcd29b1d1768edee3c7018751b375a8832e472f7aa3a37ad0cbe35fcb345d4ee"
+      },
+      {
         "source_id": "FISRC-2346329522885331",
         "source_url": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs",
         "source_title": "DeepSeek 融资 150 亿美元，挑战美国领先实验室",
@@ -503,6 +551,10 @@
           "source_id": "FISRC-e0178cb313198d39"
         },
         {
+          "description": "融资来源记录：DeepSeek · 轮次未披露 · 2026-10-26 · 本轮参投 · 约1000亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-03184bd4c71f3982"
+        },
+        {
           "description": "融资来源记录：DeepSeek · 轮次未披露 · 2026-10-22 · 本轮参投 · $15 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2346329522885331"
         }
@@ -540,6 +592,14 @@
           "source_content_hash": "82230e72a4d4630681721f425352cc0f5c2bc05d32e9716a3591c10e0a5a01f4",
           "quote": "2011 创始团队二次创业, 创立宁德时代(CATL)",
           "quote_hash": "bb678c6c49f251f19f81c68002037a382f0123e53a454058a85f81d0ec692638"
+        },
+        {
+          "source_id": "FISRC-03184bd4c71f3982",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-10-26/doc-iniwnuwc9407368.shtml?cre=tianyi&mod=pchp&loc=23&r=0&rfunc=64&tj=cxvertical_pc_hp&tr=12",
+          "source_title": "经济日报：千亿元融资展现中国AI进取心",
+          "source_content_hash": "5408191ecbc510c2d7f2ec691759b44e0e6980af0171320a7b6a2846f192f072",
+          "quote": "宁德时代、腾讯等产业巨头参投",
+          "quote_hash": "fcd29b1d1768edee3c7018751b375a8832e472f7aa3a37ad0cbe35fcb345d4ee"
         },
         {
           "source_id": "FISRC-2346329522885331",

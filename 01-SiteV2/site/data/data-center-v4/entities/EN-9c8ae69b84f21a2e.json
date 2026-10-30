@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-29",
-    "currentDate": "2026-10-29",
-    "eventCount": 4316,
+    "latestDataDate": "2026-10-30",
+    "currentDate": "2026-10-30",
+    "eventCount": 4324,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -65,6 +65,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-ac30333388e0d00a",
       "EV-04fb7521fa0fe4a9",
       "EV-c4491ccfef9e3d73",
       "EV-773a0fd45e447eac",
@@ -169,7 +170,7 @@
       "EN-30a63b26b06e096e"
     ],
     "firstSeen": "2026-01-26",
-    "lastSeen": "2026-10-25",
+    "lastSeen": "2026-10-30",
     "relationIds": [
       "REL2-40a53a0ef359ae41",
       "REL2-5f0d9f90c84e1075",
@@ -179,6 +180,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-ac30333388e0d00a",
         "EV-04fb7521fa0fe4a9",
         "EV-c4491ccfef9e3d73",
         "EV-773a0fd45e447eac",
@@ -279,6 +281,23 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-ac30333388e0d00a",
+        "dataDate": "2026-10-30",
+        "date": "2026-10-26",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "经济日报：千亿元融资展现中国AI进取心",
+        "displayTags": [],
+        "entityIds": [
+          "EN-6f7ac1823da81d2e",
+          "EN-96a38f1d2bd32ecc",
+          "EN-9c8ae69b84f21a2e"
+        ]
+      },
       {
         "id": "EV-04fb7521fa0fe4a9",
         "dataDate": "2026-10-25",
@@ -3389,9 +3408,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
-        "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-product_form-model",
@@ -4272,7 +4291,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-29"
+      "lastSeen": "2026-10-30"
     },
     {
       "id": "TX-technology-agentic_execution",
