@@ -282,6 +282,10 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
   if (options.eventType === "funding" && PROPOSED_FINANCING_TITLE.test(title.replace(/\blesson plan(?:s)?\b/giu, "lesson curriculum"))) {
     return { accepted: false, reason: "proposed_financing_not_completed" };
   }
+  if (options.eventType === "funding"
+      && /\b(?:is|are)\s+closing in on\s+(?:a\s+)?(?:new\s+)?funding round\b/iu.test(sourceLead)) {
+    return { accepted: false, reason: "proposed_financing_not_completed" };
+  }
   if (VERSIONED_DEVELOPER_PACKAGE_TITLE.test(title)
       && VERSIONED_DEVELOPER_PACKAGE_LEAD.test(sourceLead)) {
     return { accepted: false, reason: "versioned_developer_package_not_commercial_event" };

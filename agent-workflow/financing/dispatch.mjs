@@ -5,6 +5,7 @@ import { acceptedPublicationStatus, pendingReviewStatus,activeProductionRun,miss
 import { parseArgs } from './args.mjs';
 import { productionCIState } from '../tools/wait-for-production-code-checks.mjs';
 import {githubRead} from './github-read.mjs';
+import {failedRunLog} from './github-failure-log.mjs';
 import {deterministicProductionFailure} from './failure-diagnostics.mjs';
 const args = parseArgs();
 const date = args.get('date') || new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
@@ -50,7 +51,7 @@ if (acceptedStatus && !review) {
       if(failed && !preflightRun) {
         const head=gh(['api',`repos/${repo}/git/ref/heads/main`,'--jq','.object.sha']);
         if(head===failed.headSha) failure=deterministicProductionFailure(
-          gh(['run','view',String(failed.databaseId),'--repo',repo,'--log-failed']),{date,head,runHead:failed.headSha});
+          failedRunLog(repo,failed.databaseId),{date,head,runHead:failed.headSha});
       }
       if(failure) console.log(JSON.stringify({date,status:'needs_attention',reason:'deterministic_production_failure',resume_run_id:resume,failure}));
       else {
