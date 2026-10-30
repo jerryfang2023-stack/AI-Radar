@@ -3084,3 +3084,16 @@ test("funding with an old publication byline cannot inherit today's capture date
   assert.equal(bundle.canonical_events.length,0);
   assert.ok(bundle.qa_queue.some(row=>row.reason==="funding_source_publication_date_conflict"));
 });
+
+
+test('round-level market trend reports cannot become a company funding event', () => {
+  for (const title of ['US Series B Funding Is Up, But Fewer Deals Are Getting Done', 'Series A Funding Is Down, But AI Deals Are Growing', 'U.S. Series C Funding Was Flat In 2026']) {
+    const source=entry('series-market-report',title,'Across the US market, AI startups raised $1 billion. US Series B Funding, 2026.',{published_at:'2026-10-30'});
+    const bundle=buildBundle([source],taxonomy,'2026-10-30','2026-10-30T00:00:00Z');
+    assert.equal(bundle.canonical_events.length,0,title);
+    assert.ok(bundle.qa_queue.some(row=>row.reason==='market_overview_not_company_funding_source'),title);
+  }
+  for (const title of ['Acme Raises $40 Million In Series B Funding', 'US AI Startup Acme Secures $40 Million Series B']) {
+    assert.equal(eventSourceEligibility({published_at:'2026-10-30',clean_text:'Acme develops AI models and raised $40 million from investors.'},{source_url:'https://example.com/acme'},title,'2026-10-30',{eventType:'funding'}).accepted,true,title);
+  }
+});
