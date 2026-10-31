@@ -35716,7 +35716,142 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-30T03:52:06.165Z"
+    },
+    "EV-e0a24fe537dedae2": {
+      "id": "EV-e0a24fe537dedae2",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "cybersecurity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "Pixel为企业提供检测AI生成与篡改内容的取证平台，属企业风控与安全软件。",
+      "input_hash": "57d30d36e3334cc27b6f19d938b79fd1c199c976e4adee00769a4e94c5b4b49c",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4eb05ffce0e3e96e",
+          "quote": "Founded in 2026 in Stockholm, Pixel develops proprietary technology to detect AI-generated and manipulated digital content."
+        },
+        {
+          "source_id": "FISRC-4eb05ffce0e3e96e",
+          "quote": "By combining several independent forensic analysis methods, Pixel helps companies verify images, documents, and other digital material before it is used as the basis for decisions, payouts, or other critical processes."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-31T00:53:33.653Z"
+    },
+    "EV-6133f09c61f5c5e8": {
+      "id": "EV-6133f09c61f5c5e8",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "finance-hr",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Ares以AI访谈平台面向企业员工开展组织调研与转型评估，属企业人力与组织管理软件。",
+      "input_hash": "b62d649bdbe29755cde83449a7c1b46ad2c7b249689b769f85231393ecb88a44",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-136361268f61dfb3",
+          "quote": "Ares Intelligence, a London-based startup building what it describes as an evidence-based platform for AI transformation"
+        },
+        {
+          "source_id": "FISRC-136361268f61dfb3",
+          "quote": "The platform deploys an AI interviewer that holds confidential, voice-based conversations with every employee in an organisation, in more than 70 languages."
+        },
+        {
+          "source_id": "FISRC-136361268f61dfb3",
+          "quote": "Ares’ platform is GDPR- and SOC 2-compliant, with anonymisation controls that let businesses mask names, redact voices, or strip role metadata before reports reach leadership."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-31T00:53:33.653Z"
+    },
+    "EV-4a6712d974667d0f": {
+      "id": "EV-4a6712d974667d0f",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "design-engineering",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "VUSE XR将CAD与工程数据转为交互式混合现实培训内容，属企业工程与设计软件。",
+      "input_hash": "e5a21441aa47fd02ffbd5b151aed97fffcbaf58fa942974a81dd814b0fdd9456",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6ecc4ec7180547da",
+          "quote": "VUSE XR, a Freiburg-based startup developing enterprise software for mixed reality training"
+        },
+        {
+          "source_id": "FISRC-6ecc4ec7180547da",
+          "quote": "The VUSE XR Hub works by converting existing CAD models, engineering data and product documentation into photorealistic 3D models, which users can then arrange into interactive training sequences using AI-assisted tools or drag-and-drop functionality."
+        },
+        {
+          "source_id": "FISRC-6ecc4ec7180547da",
+          "quote": "training can be delivered via a web browser, mobile devices, or fully immersive XR headsets such as Meta Quest. The results are tracked centrally, and content can be updated and redeployed across an organisation at any time."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-31T00:53:33.653Z"
+    },
+    "EV-64f250031e613098": {
+      "id": "EV-64f250031e613098",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "commerce",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Artiso为时尚品牌提供连接设计、产品开发与预生产的AI操作系统，属零售时尚行业软件。",
+      "input_hash": "68500713de44f427ad73c4d7b5e1b63dc7ca6f5933e865387b45e0022bc78df1",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-7681e3fd5370f587",
+          "quote": "Artiso, a Barcelona company founded by three former Mango executives, has raised more than €3 million in pre-seed funding led by Criteria Venture Tech to build an AI operating system for fashion teams."
+        },
+        {
+          "source_id": "FISRC-0bac92f6d4897287",
+          "quote": "building an AI operating system for fashion that connects inspiration, design, product development, and pre-production, including tech packs, styling, and campaign imagery, on top of each brand’s own memory"
+        },
+        {
+          "source_id": "FISRC-0bac92f6d4897287",
+          "quote": "a complete tech pack takes around four minutes instead of two to six hours"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-10-31T00:53:33.653Z"
     }
   },
-  "generated_at": "2026-10-30T03:52:06.166Z"
+  "generated_at": "2026-10-31T00:53:33.653Z"
 }

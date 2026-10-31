@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-30",
-    "currentDate": "2026-10-30",
-    "eventCount": 4324,
+    "latestDataDate": "2026-10-31",
+    "currentDate": "2026-10-31",
+    "eventCount": 4333,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,11 +61,12 @@
       "快手",
       "可灵AI"
     ],
-    "verificationStatus": "verified",
+    "verificationStatus": "candidate",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
+      "EV-f1e92d5db0517641",
       "EV-1f0c1fa47eb63e4b",
       "EV-862b2014e51fe3e0",
       "EV-9be8f3451675a795",
@@ -76,10 +77,11 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-25",
-    "lastSeen": "2026-10-02",
+    "lastSeen": "2026-10-31",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-f1e92d5db0517641",
         "EV-9be8f3451675a795",
         "EV-193f535567067d95",
         "EV-862b2014e51fe3e0",
@@ -95,6 +97,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-f1e92d5db0517641",
+        "dataDate": "2026-10-31",
+        "date": "2026-10-31",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "快手旗下可灵 AI 完成约 198 亿元增资",
+        "displayTags": [],
+        "entityIds": [
+          "EN-8abe43a7f9a7bd94",
+          "EN-948d0c5592d2629a",
+          "EN-03567ce359a30148"
+        ]
+      },
       {
         "id": "EV-9be8f3451675a795",
         "dataDate": "2026-10-02",

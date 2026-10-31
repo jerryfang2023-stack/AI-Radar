@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-30",
-    "currentDate": "2026-10-30",
-    "eventCount": 4324,
+    "latestDataDate": "2026-10-31",
+    "currentDate": "2026-10-31",
+    "eventCount": 4333,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -156,8 +156,279 @@
   },
   "events": [
     {
+      "id": "EV-f1e92d5db0517641",
+      "dataDate": "2026-10-31",
+      "date": "2026-10-31",
+      "updatedDate": "2026-10-31",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "快手旗下可灵 AI 完成约 198 亿元增资",
+      "originalTitle": "",
+      "subject": "北京可灵",
+      "action": "funding",
+      "object": "约198.0184亿元增资款",
+      "metrics": [
+        "198.0184 亿",
+        "29.0533 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8abe43a7f9a7bd94",
+        "EN-948d0c5592d2629a",
+        "EN-03567ce359a30148"
+      ],
+      "entityNames": [
+        "Kuaishou",
+        "交割",
+        "北京可灵"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/020/406.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
+      "id": "EV-6133f09c61f5c5e8",
+      "dataDate": "2026-10-31",
+      "date": "2026-10-30",
+      "updatedDate": "2026-10-30",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "独家：伦敦Ares Intelligence融资290万欧元，将员工洞察转化为AI采用计划",
+      "originalTitle": "EXCLUSIVE: London’s Ares Intelligence raises €2.9 million to turn employee insights into AI adoption plans",
+      "subject": "EXCLUSIVE: London’s Ares Intelligence",
+      "action": "raises",
+      "object": "€2.9 million to turn employee insights into AI adoption plans",
+      "metrics": [
+        "€2.9 million",
+        "£2.48 million",
+        "€26.78 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f78f7a86360aa8f4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f78f7a86360aa8f4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f78f7a86360aa8f4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-dc65c0e5b24d2e19",
+        "EN-f525659807ca78e6",
+        "EN-f78f7a86360aa8f4"
+      ],
+      "entityNames": [
+        "London’s Ares Intelligence",
+        "Ares Intelligence",
+        "EXCLUSIVE: London’s Ares Intelligence"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
+      "id": "EV-b066bebd4dece3c5",
+      "dataDate": "2026-10-31",
+      "date": "2026-10-30",
+      "updatedDate": "2026-10-30",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "行业快照：尽管有AI推动，旅游科技融资仍将降至多年低点",
+      "originalTitle": "Sector Snapshot: Travel Tech Funding Heads Toward Multiyear Low Despite AI Push",
+      "subject": "Amadeus",
+      "action": "acquisition",
+      "object": "SkyLink",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-1aaf3025033c8e43"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-1aaf3025033c8e43"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-1aaf3025033c8e43"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-1aaf3025033c8e43",
+        "EN-bf4e1570f8a4a1cd"
+      ],
+      "entityNames": [
+        "Amadeus",
+        "Expedia"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.crunchbase.com/travel-tourism/travel-tech-startup-venture-funding-low-ai/",
+      "publisher": "news.crunchbase.com"
+    },
+    {
+      "id": "EV-4a6712d974667d0f",
+      "dataDate": "2026-10-31",
+      "date": "2026-10-29",
+      "updatedDate": "2026-10-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "独家：弗莱堡的VUSE XR融资120万欧元，将AI驱动的混合现实培训引入企业",
+      "originalTitle": "EXCLUSIVE: Freiburg’s VUSE XR raises €1.2 million to bring AI-powered mixed reality training to enterprises",
+      "subject": "EXCLUSIVE: Freiburg’s VUSE XR",
+      "action": "raises",
+      "object": "€1.2 million to bring AI-powered mixed reality training to enterprises",
+      "metrics": [
+        "€1.2 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-51f71085aaaffb4c",
+        "EN-141a342ccdd74ea0",
+        "EN-d51be9dbb6bb4a4b"
+      ],
+      "entityNames": [
+        "Freiburg’s VUSE XR",
+        "VUSE XR",
+        "EXCLUSIVE: Freiburg’s VUSE XR"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/exclusive-freiburgs-vuse-xr-raises-e1-2-million-to-bring-ai-powered-mixed-reality-training-to-enterprises/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
       "id": "EV-71961eb465ee3502",
-      "dataDate": "2026-10-30",
+      "dataDate": "2026-10-31",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "funding",
@@ -204,7 +475,7 @@
     },
     {
       "id": "EV-848a9d54114887d9",
-      "dataDate": "2026-10-30",
+      "dataDate": "2026-10-31",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "acquisition",
@@ -255,7 +526,7 @@
     },
     {
       "id": "EV-b34cc7c6ca51ad7a",
-      "dataDate": "2026-10-30",
+      "dataDate": "2026-10-31",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "funding",
@@ -350,7 +621,7 @@
     },
     {
       "id": "EV-da13ad386cf35ad9",
-      "dataDate": "2026-10-30",
+      "dataDate": "2026-10-31",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "funding",
@@ -393,8 +664,55 @@
       "publisher": "news.pedaily.cn"
     },
     {
+      "id": "EV-e0a24fe537dedae2",
+      "dataDate": "2026-10-31",
+      "date": "2026-10-29",
+      "updatedDate": "2026-10-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "识别AI生成内容的工具助Pixel Systems融资270万欧元",
+      "originalTitle": "Tool that identifies AI-generated material helps Pixel Systems raise €2.7 million",
+      "subject": "Tool that identifies AI-generated material helps Pixel Systems",
+      "action": "raise",
+      "object": "€2.7 million",
+      "metrics": [
+        "€2.7 million",
+        "$3.1 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d85767b27a8e4e3"
+      ],
+      "entityNames": [
+        "Tool that identifies AI-generated material helps Pixel Systems"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/tool-that-identifies-ai-generated-material-helps-pixel-systems-raise-e2-7-million/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
       "id": "EV-ee7fd70ed0f055f6",
-      "dataDate": "2026-10-30",
+      "dataDate": "2026-10-31",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "funding",
@@ -438,7 +756,7 @@
     },
     {
       "id": "EV-3f5278aad82b5aba",
-      "dataDate": "2026-10-30",
+      "dataDate": "2026-10-31",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -449,7 +767,7 @@
       "publicationStatus": "verified",
       "title": "超进化智能完成数亿元天使轮融资，以万卡训练经验打造研究基础模型",
       "originalTitle": "",
-      "subject": "超进化",
+      "subject": "超进化（上海）智能科技有限公司",
       "action": "完成数亿元天使轮融资",
       "object": "，以万卡训练经验打造研究基础模型",
       "metrics": [],
@@ -484,7 +802,7 @@
     },
     {
       "id": "EV-63e454277381c4b3",
-      "dataDate": "2026-10-30",
+      "dataDate": "2026-10-31",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -566,8 +884,55 @@
       "publisher": "news.pedaily.cn"
     },
     {
+      "id": "EV-64f250031e613098",
+      "dataDate": "2026-10-31",
+      "date": "2026-10-28",
+      "updatedDate": "2026-10-28",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "巴塞罗那的Artiso为时尚团队扩展其AI操作系统，融资超300万欧元",
+      "originalTitle": "Barcelona’s Artiso raises over €3 million to scale its AI operating system for fashion teams",
+      "subject": "Artiso",
+      "action": "raises",
+      "object": "over €3 million to scale its AI operating system for fashion teams",
+      "metrics": [
+        "€3 million",
+        "€25 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d3e7baeb66a2175e"
+      ],
+      "entityNames": [
+        "Artiso"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/barcelonas-artiso-raises-over-e3-million-to-scale-its-ai-operating-system-for-fashion-teams/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
       "id": "EV-8615e87fa54663e5",
-      "dataDate": "2026-10-30",
+      "dataDate": "2026-10-31",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -618,7 +983,7 @@
     },
     {
       "id": "EV-e0a31302688c81ec",
-      "dataDate": "2026-10-30",
+      "dataDate": "2026-10-31",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -646,10 +1011,10 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-6341d45872127f85",
-          "CL-cf1269a3290b80d7",
-          "CL-34b57b0fae7fe1ae",
-          "CL-f968ceb90b6242fc"
+          "CL-206fffb8d8169693",
+          "CL-e5c96bd2aad4f559",
+          "CL-38a798116d9e38a9",
+          "CL-0637a07a0e9ba347"
         ]
       },
       "missingFields": [],
@@ -1214,7 +1579,7 @@
     },
     {
       "id": "EV-53dad7c8f530b480",
-      "dataDate": "2026-10-30",
+      "dataDate": "2026-10-31",
       "date": "2026-10-27",
       "updatedDate": "2026-10-27",
       "eventType": "funding",
@@ -1419,6 +1784,54 @@
       "publisher": "finance.sina.com.cn"
     },
     {
+      "id": "EV-8baedc89f2eaa50c",
+      "dataDate": "2026-10-31",
+      "date": "2026-10-27",
+      "updatedDate": "2026-10-27",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "announced",
+      "researchDeferral": "research_sources_insufficient",
+      "title": "伦敦的Querio以448万欧元启动，旨在帮助企业解决AI工具之间答案冲突的问题",
+      "originalTitle": "London’s Querio launches with €4.48 million to help companies tackle conflicting answers across AI tools",
+      "subject": "London’s Querio",
+      "action": "launches with €4",
+      "object": ".48 million to help companies tackle conflicting answers across AI tools",
+      "metrics": [
+        "€4.48 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-a4ec1e1907340a6f"
+      ],
+      "entityNames": [
+        "London’s Querio"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/londons-querio-launches-with-e4-48-million-to-help-companies-and-their-data-teams-tackle-conflicting-answers-across-ai-tools/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
       "id": "EV-8de1001fde6993a5",
       "dataDate": "2026-10-28",
       "date": "2026-10-27",
@@ -1539,7 +1952,7 @@
     },
     {
       "id": "EV-94baaaabc016521f",
-      "dataDate": "2026-10-30",
+      "dataDate": "2026-10-31",
       "date": "2026-10-27",
       "updatedDate": "2026-10-27",
       "eventType": "funding",
@@ -1657,7 +2070,7 @@
     },
     {
       "id": "EV-d0340d320ebf78c6",
-      "dataDate": "2026-10-28",
+      "dataDate": "2026-10-31",
       "date": "2026-10-27",
       "updatedDate": "2026-10-27",
       "eventType": "funding",
@@ -1692,11 +2105,13 @@
       "displayTags": [],
       "entityIds": [
         "EN-8d4321d936320802",
-        "EN-d6e9c47f8a1c273b"
+        "EN-d6e9c47f8a1c273b",
+        "EN-984dfb33284a092b"
       ],
       "entityNames": [
         "NVIDIA",
-        "Simplismart"
+        "Simplismart",
+        "AI startup Simplismart"
       ],
       "productName": "",
       "products": [],
@@ -1956,7 +2371,7 @@
     },
     {
       "id": "EV-76a1dbe418adc8dd",
-      "dataDate": "2026-10-30",
+      "dataDate": "2026-10-31",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "funding",
@@ -2010,7 +2425,7 @@
     },
     {
       "id": "EV-ac30333388e0d00a",
-      "dataDate": "2026-10-30",
+      "dataDate": "2026-10-31",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "funding",
@@ -2036,7 +2451,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-f8b110cf205b23e5"
+          "CL-9cf16507f4bef09f"
         ]
       },
       "missingFields": [],
@@ -2066,7 +2481,7 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://finance.sina.com.cn/jjxw/2026-10-26/doc-iniwnuwc9407368.shtml?cre=tianyi&mod=pchp&loc=23&r=0&rfunc=64&tj=cxvertical_pc_hp&tr=12",
+      "sourceUrl": "https://finance.sina.com.cn/jjxw/2026-10-26/doc-iniwnuwc9407368.shtml?cre=tianyi&mod=pchp&loc=17&r=0&rfunc=4&tj=cxvertical_pc_hp&tr=12",
       "publisher": "finance.sina.com.cn"
     },
     {
@@ -2119,7 +2534,7 @@
     },
     {
       "id": "EV-c5984dabb5a697b9",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-31",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "funding",
@@ -451047,6 +451462,150 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-38f85ebd3ffeb9da",
+      "dataDate": "2026-10-31",
+      "date": "2026-10-30",
+      "updatedDate": "2026-10-30",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "Anthropic预计在IPO后获信用机构高“垃圾”评级，FT报道称",
+      "originalTitle": "Anthropic expected to receive high &#8216;junk&#8217; rating from credit agencies following IPO, FT report says",
+      "subject": "Anthropic expected to receive high &#8216;junk&#8217; rating from credit agencies following",
+      "action": "IPO",
+      "object": ", FT report says",
+      "metrics": [
+        "$63 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-a0cc35ffe6b22a57",
+      "dataDate": "2026-10-31",
+      "date": "2026-10-30",
+      "updatedDate": "2026-10-30",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "词元工厂硅基流动港股上市申请获证监会备案接收：注册用户超千万，年内融资近 29 亿元",
+      "originalTitle": "",
+      "subject": "词元工厂硅基流动港股上市申请获证监会",
+      "action": "备案",
+      "object": "接收：注册用户超千万，年内融资近 29 亿元",
+      "metrics": [
+        "1000 万",
+        "1.3 万"
+      ],
+      "locations": [
+        "中国"
+      ],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-fc68476701895757",
+          "CL-6b09c31a286ae56b",
+          "CL-08d4f8446b459b26"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-2864ab1d9269d363"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-2864ab1d9269d363"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-2864ab1d9269d363"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2864ab1d9269d363"
+      ],
+      "entityNames": [
+        "SiliconFlow"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/020/369.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
       "id": "EV-009a882943028d97",
       "dataDate": "2026-10-30",
       "date": "2026-10-29",
@@ -451092,7 +451651,7 @@
     },
     {
       "id": "EV-d381d15f8f9045e0",
-      "dataDate": "2026-10-29",
+      "dataDate": "2026-10-31",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "financial_performance",
@@ -451182,7 +451741,7 @@
     },
     {
       "id": "EV-7ddfa7b82af141ec",
-      "dataDate": "2026-10-30",
+      "dataDate": "2026-10-31",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "ipo_listing",
@@ -451241,7 +451800,7 @@
     },
     {
       "id": "EV-c4964bb580827988",
-      "dataDate": "2026-10-30",
+      "dataDate": "2026-10-31",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "ipo_listing",

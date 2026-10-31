@@ -1,0 +1,37 @@
+{
+  "verification": {
+    "version": "FINANCING-VERIFICATION-1",
+    "status": "completed",
+    "counts": {
+      "total": 581,
+      "verified": 4,
+      "excluded": 44,
+      "reviewed": 0,
+      "pending": 533
+    },
+    "ledger": "verification.json",
+    "deferred_research": [
+      {
+        "event_id": "EV-76a1dbe418adc8dd",
+        "reason": "research_sources_insufficient",
+        "input_hash": "35eb51cea8941e74cd8e275d60eb874a71662c0e4e5ae97df3e45ae0a8648356"
+      },
+      {
+        "event_id": "EV-8baedc89f2eaa50c",
+        "reason": "research_sources_insufficient",
+        "input_hash": "f606785ade0953499133724d5459931f56de0e20e27ac1c8489e9d86b5bde1ee"
+      }
+    ]
+  },
+  "version": "FINANCING-MONITOR-1",
+  "date": "2026-10-31",
+  "status": "ready_for_review",
+  "counts": {
+    "leads": 514,
+    "accepted_originals": 75,
+    "pending": 267,
+    "excluded": 172
+  },
+  "next": "merge_pages_portal_and_live_parity",
+  "generated_at": "2026-10-31T00:55:16.875Z"
+}
