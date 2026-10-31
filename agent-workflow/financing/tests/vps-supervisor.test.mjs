@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {chinaClock, selectRunDate, acceptedReview, assertDataOnly,dispatchAllowed,assertApprovalRun,validPublishedReceipt,completedDispatch,sourceHash} from '../vps-supervisor.mjs';
+import {chinaClock, selectRunDate, acceptedReview, assertDataOnly,dispatchAllowed,assertApprovalRun,validPublishedReceipt,completedDispatch,sourceHash,mergeReviewedPull} from '../vps-supervisor.mjs';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -74,4 +74,32 @@ test('financing reviewer never auto-merges executable or workflow changes',()=>{
   const date='2026-10-03';
   assert.doesNotThrow(()=>assertDataOnly([`agent-workflow/reports/financing/${date}/publication.json`,'01-SiteV2/site/data/financing-catalog-v1.json'],date));
   for(const files of [[],['agent-workflow/financing/run.mjs'],['.github/workflows/funding-daily-pr.yml'],['01-SiteV2/site/data/../../evil.json']])assert.throws(()=>assertDataOnly(files,date),/unapproved_paths/);
+});
+
+const mergeIdentity={url:'https://github.com/jerryfang2023-stack/AI-Radar/pull/1315',head:'a'.repeat(40),date:'2026-10-31'};
+const confirmedMerge={url:mergeIdentity.url,state:'MERGED',headRefOid:mergeIdentity.head,headRefName:'automation/financing-2026-10-31',baseRefName:'main',mergeCommit:{oid:'b'.repeat(40)}};
+test('merge response 502 after a committed write is reconciled without repeating the merge',()=>{
+  const failure=Object.assign(new Error('merge_502'),{private_stderr:'502 Bad Gateway'}),writes=[],reads=[],commands=[],unknown=[];
+  const result=mergeReviewedPull(mergeIdentity,{merge:args=>{writes.push(args);throw failure;},inspect:args=>{reads.push(args);return confirmedMerge;},git:args=>commands.push(args),recordUnknown:error=>unknown.push(error)});
+  assert.equal(result.status,'confirmed_after_command_error');assert.equal(result.merge_commit,confirmedMerge.mergeCommit.oid);
+  assert.deepEqual(writes,[['pr','merge',mergeIdentity.url,'--repo','jerryfang2023-stack/AI-Radar','--merge','--match-head-commit',mergeIdentity.head]]);
+  assert.equal(reads.length,1);assert.deepEqual(unknown,[failure]);
+  assert.deepEqual(commands,[['fetch','--quiet','origin','main'],['merge-base','--is-ancestor',mergeIdentity.head,confirmedMerge.mergeCommit.oid],['merge-base','--is-ancestor',confirmedMerge.mergeCommit.oid,'origin/main']]);
+});
+test('an ordinary successful merge does not add reconciliation reads',()=>{
+  assert.equal(mergeReviewedPull(mergeIdentity,{merge:()=>{},inspect:()=>assert.fail('unexpected read'),git:()=>assert.fail('unexpected git'),recordUnknown:()=>assert.fail('unexpected error')}).status,'command_succeeded');
+});
+test('unconfirmed or mismatched merge state preserves the original failure and never repeats a write',()=>{
+  for(const patch of [{state:'OPEN'},{state:'CLOSED'},{url:'https://github.com/other/repo/pull/1315'},{headRefOid:'c'.repeat(40)},{headRefName:'automation/financing-2026-10-30'},{baseRefName:'other'},{mergeCommit:null},{mergeCommit:{oid:'short'}}]) {
+    const failure=new Error('unknown_merge_result');let writes=0;
+    assert.throws(()=>mergeReviewedPull(mergeIdentity,{merge:()=>{writes++;throw failure;},inspect:()=>({...confirmedMerge,...patch}),git:()=>assert.fail('identity must be checked first')}),error=>error===failure);
+    assert.equal(writes,1);
+  }
+});
+test('read failure and missing main ancestry fail closed with no replay',()=>{
+  for(const failedStep of ['read','fetch','head_ancestry','main_ancestry']) {
+    const failure=new Error('merge_response_unknown');let writes=0,commands=0;
+    assert.throws(()=>mergeReviewedPull(mergeIdentity,{merge:()=>{writes++;throw failure;},inspect:()=>{if(failedStep==='read')throw Error('read_503');return confirmedMerge;},git:()=>{commands++;if(commands===({fetch:1,head_ancestry:2,main_ancestry:3}[failedStep]))throw Error('not_confirmed');}}),error=>error===failure);
+    assert.equal(writes,1);
+  }
 });

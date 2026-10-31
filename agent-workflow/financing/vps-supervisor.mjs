@@ -70,6 +70,24 @@ export function validPublishedReceipt(receipt,date) {
     && receipt.website_date>=date && receipt.mini_date===receipt.website_date
     && /^[a-f0-9]{40}$/u.test(receipt.source_commit || '');
 }
+// A merge response can fail after GitHub has committed the write. Never replay
+// the mutation: reconcile the exact reviewed PR/head against main using reads.
+export function mergeReviewedPull({url,head,date}, {merge=gh,inspect=ghJson,git=args=>command('git',args),recordUnknown=()=>{}} = {}) {
+  try {merge(['pr','merge',url,'--repo',repo,'--merge','--match-head-commit',head]);return {status:'command_succeeded',head};}
+  catch(error) {
+    recordUnknown(error);
+    try {
+      const pull=inspect(['pr','view',url,'--repo',repo,'--json','url,state,headRefOid,headRefName,baseRefName,mergeCommit']);
+      if(pull.url!==url || pull.state!=='MERGED' || pull.headRefOid!==head
+        || pull.baseRefName!=='main' || pull.headRefName!==`automation/financing-${date}`
+        || !/^[a-f0-9]{40}$/u.test(pull.mergeCommit?.oid || ''))throw new Error('merge_not_confirmed');
+      git(['fetch','--quiet','origin','main']);
+      git(['merge-base','--is-ancestor',head,pull.mergeCommit.oid]);
+      git(['merge-base','--is-ancestor',pull.mergeCommit.oid,'origin/main']);
+      return {status:'confirmed_after_command_error',head,merge_commit:pull.mergeCommit.oid,error:error.message};
+    } catch {throw error;}
+  }
+}
 function command(name, args, options = {}) {
   const result = spawnSync(name,args,{cwd:root,encoding:'utf8',windowsHide:true,timeout:120000,maxBuffer:32*1024*1024,...options});
   if (result.error || result.status !== 0) {
@@ -266,8 +284,8 @@ async function cycle(args) {
       return save({status:'checks_pending',approved_ci_run:run.id,ci,reviewed_head:head});
     }
     if(ci.status!=='passed')return save({status:ci.status==='failed'?'ci_failed':'checks_pending',ci});
-    gh(['pr','merge',dispatch.pr_url,'--repo',repo,'--merge','--match-head-commit',head]);
-    return save({status:report.status==='ready_for_review'?'awaiting_portal':report.status,verification:report.verification,reviewed_head:head,merged_pr:dispatch.pr_url});
+    const mergeResult=mergeReviewedPull({url:dispatch.pr_url,head,date},{recordUnknown:error=>write(path.join(directory,'merge-response-error.json'),{date,head,pr_url:dispatch.pr_url,error:error.message,stderr:error.private_stderr || '',observed_at:new Date().toISOString()})});
+    return save({status:report.status==='ready_for_review'?'awaiting_portal':report.status,verification:report.verification,reviewed_head:head,merged_pr:dispatch.pr_url,merge_result:mergeResult});
   } catch(error) {
     if(!dry)write(path.join(directory,'last-error.json'),{date,error:error.message,stderr:error.private_stderr || '',observed_at:new Date().toISOString()});
     save({status:'needs_attention',error:error.message});
