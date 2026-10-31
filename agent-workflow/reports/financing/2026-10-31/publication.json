@@ -33,5 +33,35 @@
     "excluded": 172
   },
   "next": "merge_pages_portal_and_live_parity",
-  "generated_at": "2026-10-31T00:55:16.875Z"
+  "generated_at": "2026-10-31T00:55:16.875Z",
+  "responsible_publication_recovery": {
+    "date": "2026-10-31",
+    "reused_run": 41148725515,
+    "reused_head": "237bc420fb6e50da4b9e8796a1cdd49cb9dc826d",
+    "held_event": "EV-6133f09c61f5c5e8",
+    "stages": [
+      {
+        "id": "projections",
+        "status": "passed",
+        "elapsed_ms": 230887
+      },
+      {
+        "id": "financing_tags",
+        "status": "passed",
+        "elapsed_ms": 130187
+      },
+      {
+        "id": "release_gate",
+        "status": "passed",
+        "elapsed_ms": 50569
+      }
+    ],
+    "status": "passed",
+    "subjects": 675,
+    "events": 722,
+    "previous_events_preserved": 719,
+    "reviewed_by": "Codex responsible financing reviewer",
+    "completed_at": "2026-10-31T02:04:30.341689+00:00",
+    "reason": "Source-bound pending hold for Ares amount conflict; other accepted events preserved."
+  }
 }
