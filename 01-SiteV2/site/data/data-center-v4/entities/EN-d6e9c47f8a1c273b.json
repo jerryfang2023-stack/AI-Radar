@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-30",
-    "currentDate": "2026-10-30",
-    "eventCount": 4324,
+    "latestDataDate": "2026-10-31",
+    "currentDate": "2026-10-31",
+    "eventCount": 4333,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -71,13 +71,13 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-10-27",
-    "lastSeen": "2026-10-30",
+    "lastSeen": "2026-10-31",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-8615e87fa54663e5",
-        "EV-21dcf84526413e10",
-        "EV-d0340d320ebf78c6"
+        "EV-d0340d320ebf78c6",
+        "EV-21dcf84526413e10"
       ],
       "deployments": [],
       "partnerships": [],
@@ -89,7 +89,7 @@
     "timeline": [
       {
         "id": "EV-8615e87fa54663e5",
-        "dataDate": "2026-10-30",
+        "dataDate": "2026-10-31",
         "date": "2026-10-28",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -101,6 +101,23 @@
         "entityIds": [
           "EN-8d4321d936320802",
           "EN-d6e9c47f8a1c273b"
+        ]
+      },
+      {
+        "id": "EV-d0340d320ebf78c6",
+        "dataDate": "2026-10-31",
+        "date": "2026-10-27",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "英伟达投资印度初创公司，助企业以更少GPU运行AI模型",
+        "displayTags": [],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-d6e9c47f8a1c273b",
+          "EN-984dfb33284a092b"
         ]
       },
       {
@@ -118,22 +135,6 @@
           "EN-984dfb33284a092b",
           "EN-d6e9c47f8a1c273b",
           "EN-8d4321d936320802"
-        ]
-      },
-      {
-        "id": "EV-d0340d320ebf78c6",
-        "dataDate": "2026-10-28",
-        "date": "2026-10-27",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "英伟达投资印度初创公司，助企业以更少GPU运行AI模型",
-        "displayTags": [],
-        "entityIds": [
-          "EN-8d4321d936320802",
-          "EN-d6e9c47f8a1c273b"
         ]
       }
     ],

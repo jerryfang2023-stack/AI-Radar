@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-30",
-    "currentDate": "2026-10-30",
-    "eventCount": 4324,
+    "latestDataDate": "2026-10-31",
+    "currentDate": "2026-10-31",
+    "eventCount": 4333,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -69,7 +69,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-10-29",
-    "lastSeen": "2026-10-30",
+    "lastSeen": "2026-10-31",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -85,7 +85,7 @@
     "timeline": [
       {
         "id": "EV-848a9d54114887d9",
-        "dataDate": "2026-10-30",
+        "dataDate": "2026-10-31",
         "date": "2026-10-29",
         "eventType": "acquisition",
         "eventTypeLabel": "并购",
@@ -111,13 +111,13 @@
     {
       "id": "HWC-6691f417bed0e674",
       "snapshotKey": "6691f417bed0e674",
-      "snapshotId": "HWS-385a9a0593719f83",
+      "snapshotId": "HWS-b7990363fc18bf9f",
       "eventId": "EV-848a9d54114887d9",
       "eventIds": [
         "EV-848a9d54114887d9"
       ],
-      "dataDate": "2026-10-30",
-      "date": "2026-10-30",
+      "dataDate": "2026-10-31",
+      "date": "2026-10-31",
       "title": "AI 行业重磅并购",
       "subject": "AI 行业重磅并购",
       "productNames": [],
@@ -129,12 +129,21 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-787cf2907cf2b61a"
+          "fact_ref": "HWF-bf95c8fd2da92eed"
         }
       },
       "factCount": 1,
-      "snapshotCount": 2,
+      "snapshotCount": 3,
       "changes": [
+        {
+          "date": "2026-10-31",
+          "previousDate": "2026-10-30",
+          "snapshotId": "HWS-b7990363fc18bf9f",
+          "previousSnapshotId": "HWS-385a9a0593719f83",
+          "changedFacts": [
+            "product"
+          ]
+        },
         {
           "date": "2026-10-30",
           "previousDate": "2026-10-29",
@@ -149,8 +158,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-10-30",
-          "hardware_fact_id": "HWF-787cf2907cf2b61a",
+          "data_date": "2026-10-31",
+          "hardware_fact_id": "HWF-bf95c8fd2da92eed",
           "fact_type": "product",
           "observed_at": "2026-10-29",
           "subject_entity_id": "EN-7b3e572f9b08d7b0",
@@ -164,11 +173,11 @@
           "event_refs": [
             "EV-848a9d54114887d9"
           ],
-          "claim_ref": "CL-eb344d53c103e715",
+          "claim_ref": "CL-77cacfea83548e1e",
           "source_refs": [
             "SA-1de2470f1a3e55ae"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-30/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-31/hardware-facts.json"
         }
       ],
       "capexFacts": [],
