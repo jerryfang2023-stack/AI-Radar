@@ -1578,7 +1578,8 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
     .filter((entity) => {
       const name = clean(entity.canonical_name).replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
       if (!name) return false;
-      const sentence = new RegExp(`(?:^|[.!?]\\s+)${name}\\s*,\\s*(?:an? |the )[^,;.!?]{1,180},\\s*(?:has |had )?(?:raised|raises|secured|expanded its (?:seed )?funding by)\\s+[^.!?;]{1,100}`, "iu");
+      // Preserve decimal points in the proceeds while retaining sentence boundaries.
+      const sentence = new RegExp(`(?:^|[.!?]\\s+)${name}\\s*,\\s*(?:an? |the )[^,;.!?]{1,180},\\s*(?:has |had )?(?:raised|raises|secured|expanded its (?:seed )?funding by)\\s+(?:[^.!?;]|\\.(?=\\d)){1,100}`, "iu");
       return acceptedFundingClaims.some((claim) => {
         const match = clean(claim.source_quote).match(sentence);
         return match && fundingAmountsEquivalent(event.object || claim.object, match[0]);
