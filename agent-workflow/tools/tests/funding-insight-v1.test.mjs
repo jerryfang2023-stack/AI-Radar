@@ -3663,3 +3663,22 @@ test("series aggregate proceeds cannot become the A+ round amount", () => {
   const claims=[{claim_id:"CL-series",claim_type:"funding",verification_status:"accepted",source_quote:"公司完成2000万美元A+轮融资。至此，公司A轮系列融资超1亿美元。"}];
   assert.equal(canonicalFundingEventAmount(event,claims),"2000万美元");
 });
+
+
+test('decimal appositive proceeds resolve the named recipient despite a breadcrumb headline', () => {
+  const entities = [
+    { entity_id: 'EN-HEADLINE', entity_type: 'organization_candidate', canonical_name: "HomeFundingMadrid's Talky" },
+    { entity_id: 'EN-TALKY', entity_type: 'organization_candidate', canonical_name: 'Talky Labs' },
+  ];
+  const description = 'Talky Labs, a Spanish startup developing AI-powered technology to automate accounting and financial operations, has raised ';
+  const claims = [
+    { claim_id: 'CL-HEADLINE', claim_type: 'funding', verification_status: 'accepted', subject: 'Madrid&#8217;s Talky', object: '€1.5 million', source_quote: "HomeFundingMadrid's Talky raises €1.5 million to teach AI the unwritten rules of..." },
+    { claim_id: 'CL-BODY', claim_type: 'funding', verification_status: 'accepted', subject: 'Madrid&#8217;s Talky', object: '€1.5 million', source_quote: description + '€1.5 million in a pre-Seed funding round to support team expansion.' },
+  ];
+  const event = { event_type: 'funding', entities: entities.map(e => e.entity_id), claim_refs: claims.map(c => c.claim_id), action: 'raises', object: '€1.5 million', metrics: ['€1.5 million'] };
+  assert.equal(subjectCompanyForEvent(event, entities, {}, claims)?.entity_id, 'EN-TALKY');
+  for (const replacement of ['€1.05 million', '€1.5 billion', '$1.5 million', '€1 million. A different company raised €1.5 million']) {
+    assert.notEqual(subjectCompanyForEvent(event, entities, {}, [claims[0], {...claims[1], source_quote: description + replacement + ' in a pre-Seed funding round.'}])?.entity_id, 'EN-TALKY');
+  }
+  assert.notEqual(subjectCompanyForEvent(event, entities, {}, [claims[0], {...claims[1], verification_status: 'pending'}])?.entity_id, 'EN-TALKY');
+});
