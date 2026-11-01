@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-31",
-    "currentDate": "2026-10-31",
-    "eventCount": 4333,
+    "latestDataDate": "2026-11-01",
+    "currentDate": "2026-11-01",
+    "eventCount": 4338,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,23 +62,47 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-51f7b14d193a3ffc"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-10-31",
+    "lastSeen": "2026-11-01",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
-      "deployments": [],
+      "deployments": [
+        "EV-51f7b14d193a3ffc"
+      ],
       "partnerships": [],
       "productsServices": [],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-51f7b14d193a3ffc",
+        "dataDate": "2026-11-01",
+        "date": "2026-10-31",
+        "eventType": "capital_investment",
+        "eventTypeLabel": "资本性投资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 基建掀起军备竞赛：微软、谷歌、甲骨文等巨头承诺投入超 3 万亿美元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-4dd4f3835505cd95",
+          "EN-6d37feda49a46792",
+          "EN-ea3bd73e2b506e00",
+          "EN-9fbf261b62c1d7c0",
+          "EN-bbdefa2950f49882"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

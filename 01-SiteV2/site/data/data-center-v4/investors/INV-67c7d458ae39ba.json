@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-31",
-    "currentDate": "2026-10-31",
-    "eventCount": 4333,
+    "latestDataDate": "2026-11-01",
+    "currentDate": "2026-11-01",
+    "eventCount": 4338,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,24 +63,25 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 11,
+    "current_round_count": 12,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 8,
+    "portfolio_company_count": 9,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-02",
-    "latest_disclosed_at": "2026-10-21",
+    "latest_disclosed_at": "2026-10-26",
     "role_counts": {
       "co_lead": 3,
       "historical_or_ambiguous": 2,
       "lead": 2,
-      "participant": 6
+      "participant": 7
     },
     "round_codes": [
       "series_a",
+      "series_b",
       "series_d",
       "series_e",
       "series_f",
@@ -110,6 +111,11 @@
         "name": "Legora"
       },
       {
+        "entity_id": "EN-bdfcfbdc9e0896ff",
+        "canonical_entity_id": "",
+        "name": "Nevis"
+      },
+      {
         "entity_id": "EN-382635c9325bf327",
         "canonical_entity_id": "",
         "name": "Paper"
@@ -131,6 +137,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f3ef32b09cde6d7b",
+        "funding_insight_id": "FI-2bd46dca95154b25",
+        "event_ids": [
+          "EV-76a1dbe418adc8dd"
+        ],
+        "company_entity_id": "EN-bdfcfbdc9e0896ff",
+        "company_canonical_entity_id": "",
+        "company_name": "Nevis",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "€62 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 62000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6200 万欧元"
+        },
+        "announced_at": "2026-10-26",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4ef85aec7ebdf94c",
+            "source_url": "https://www.eu-startups.com/2026/10/wealthtech-startup-nevis-secures-e62-million-to-automate-financial-advisory-workflows-with-ai/",
+            "source_title": "财富科技初创公司Nevis获得6200万欧元，用于通过AI自动化金融咨询工作流程",
+            "source_content_hash": "2bfdad1be207360ad77f17aad44ebb6ebf54c996f208ea0b73ca4b87c9f2450e",
+            "quote": "All existing investors, including Sequoia Capital, ICONIQ and Ribbit Capital, have also expanded their commitments in this new round.",
+            "quote_hash": "69066058e95a369b8b1102f82098f764661d79dce57bf6349644cdfcc9878f46"
+          }
+        ]
+      },
       {
         "activity_id": "IA-860d68db0423be12",
         "funding_insight_id": "FI-b875723282f11479",
@@ -647,6 +693,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-4ef85aec7ebdf94c",
+        "source_url": "https://www.eu-startups.com/2026/10/wealthtech-startup-nevis-secures-e62-million-to-automate-financial-advisory-workflows-with-ai/",
+        "source_title": "财富科技初创公司Nevis获得6200万欧元，用于通过AI自动化金融咨询工作流程",
+        "source_content_hash": "2bfdad1be207360ad77f17aad44ebb6ebf54c996f208ea0b73ca4b87c9f2450e",
+        "quote": "All existing investors, including Sequoia Capital, ICONIQ and Ribbit Capital, have also expanded their commitments in this new round.",
+        "quote_hash": "69066058e95a369b8b1102f82098f764661d79dce57bf6349644cdfcc9878f46"
+      },
+      {
         "source_id": "FISRC-c4c53e6f607010be",
         "source_url": "https://legora.com/blog/series-e",
         "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
@@ -782,16 +836,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Nevis · B轮 · 2026-10-26 · 本轮参投 · €62 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4ef85aec7ebdf94c"
+        },
+        {
           "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c4c53e6f607010be"
         },
         {
           "description": "融资来源记录：Pigment · E轮 · 2026-10-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6737e55341eb5266"
-        },
-        {
-          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f581afce52cf5bef"
         }
       ],
       "contacts": [
@@ -843,6 +897,14 @@
           "quote_hash": "a40d2805746de3f25346e3dc8f0f99673e8c9b4115105340dc59b962f384217a"
         },
         {
+          "source_id": "FISRC-4ef85aec7ebdf94c",
+          "source_url": "https://www.eu-startups.com/2026/10/wealthtech-startup-nevis-secures-e62-million-to-automate-financial-advisory-workflows-with-ai/",
+          "source_title": "财富科技初创公司Nevis获得6200万欧元，用于通过AI自动化金融咨询工作流程",
+          "source_content_hash": "2bfdad1be207360ad77f17aad44ebb6ebf54c996f208ea0b73ca4b87c9f2450e",
+          "quote": "All existing investors, including Sequoia Capital, ICONIQ and Ribbit Capital, have also expanded their commitments in this new round.",
+          "quote_hash": "69066058e95a369b8b1102f82098f764661d79dce57bf6349644cdfcc9878f46"
+        },
+        {
           "source_id": "FISRC-c4c53e6f607010be",
           "source_url": "https://legora.com/blog/series-e",
           "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
@@ -857,14 +919,6 @@
           "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
           "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
           "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
-        },
-        {
-          "source_id": "FISRC-f581afce52cf5bef",
-          "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
-          "source_title": "Ramp估值达600亿美元，深入布局AI",
-          "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
-          "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
-          "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
         }
       ],
       "coverage_status": "researched",
@@ -875,7 +929,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[11].role": {
+        "activities[12].role": {
           "text": "Series D 参投",
           "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
           "provider": "deepseek",

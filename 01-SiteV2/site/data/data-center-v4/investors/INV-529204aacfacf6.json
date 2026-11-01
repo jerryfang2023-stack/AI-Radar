@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-31",
-    "currentDate": "2026-10-31",
-    "eventCount": 4333,
+    "latestDataDate": "2026-11-01",
+    "currentDate": "2026-11-01",
+    "eventCount": 4338,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,31 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-13",
-    "latest_disclosed_at": "2026-08-13",
+    "latest_disclosed_at": "2026-10-26",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "lead": 1
     },
     "round_codes": [
-      "series_a"
+      "series_a",
+      "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-bdfcfbdc9e0896ff",
+        "canonical_entity_id": "",
+        "name": "Nevis"
+      },
       {
         "entity_id": "EN-607a596a603dd679",
         "canonical_entity_id": "",
@@ -86,6 +93,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-65d30d1b057efc8b",
+        "funding_insight_id": "FI-2bd46dca95154b25",
+        "event_ids": [
+          "EV-76a1dbe418adc8dd"
+        ],
+        "company_entity_id": "EN-bdfcfbdc9e0896ff",
+        "company_canonical_entity_id": "",
+        "company_name": "Nevis",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "€62 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 62000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6200 万欧元"
+        },
+        "announced_at": "2026-10-26",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-4ef85aec7ebdf94c",
+            "source_url": "https://www.eu-startups.com/2026/10/wealthtech-startup-nevis-secures-e62-million-to-automate-financial-advisory-workflows-with-ai/",
+            "source_title": "财富科技初创公司Nevis获得6200万欧元，用于通过AI自动化金融咨询工作流程",
+            "source_content_hash": "2bfdad1be207360ad77f17aad44ebb6ebf54c996f208ea0b73ca4b87c9f2450e",
+            "quote": "The round was led by EQT Ventures",
+            "quote_hash": "3bfe3bd739b02784b9caf02a5f9f5c49809929dabf65981c7c34a3f68b5bf476"
+          }
+        ]
+      },
       {
         "activity_id": "IA-54e89d73c0793ddc",
         "funding_insight_id": "FI-43e6948d7884584e",
@@ -160,6 +207,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-4ef85aec7ebdf94c",
+        "source_url": "https://www.eu-startups.com/2026/10/wealthtech-startup-nevis-secures-e62-million-to-automate-financial-advisory-workflows-with-ai/",
+        "source_title": "财富科技初创公司Nevis获得6200万欧元，用于通过AI自动化金融咨询工作流程",
+        "source_content_hash": "2bfdad1be207360ad77f17aad44ebb6ebf54c996f208ea0b73ca4b87c9f2450e",
+        "quote": "The round was led by EQT Ventures",
+        "quote_hash": "3bfe3bd739b02784b9caf02a5f9f5c49809929dabf65981c7c34a3f68b5bf476"
+      },
       {
         "source_id": "FISRC-f80a0b6f2f7f63f8",
         "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
@@ -247,6 +302,10 @@
           "source_id": "FISRC-64c63dc926fc8a24"
         },
         {
+          "description": "融资来源记录：Nevis · B轮 · 2026-10-26 · 本轮领投 · €62 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4ef85aec7ebdf94c"
+        },
+        {
           "description": "融资来源记录：Starcloud · A轮 · 2026-08-13 · 本轮联合领投 · $170 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f80a0b6f2f7f63f8"
         }
@@ -316,6 +375,14 @@
           "source_content_hash": "0f2b16656281bd78b5739e9c655eb1c524d3894a6f743524bf40bc181ec88965",
           "quote": "+46850655300",
           "quote_hash": "f22962bd56e2c22fab8ee101e3dd4f6e67e7ec9569c5b4dcf2acf3e5cb3cae84"
+        },
+        {
+          "source_id": "FISRC-4ef85aec7ebdf94c",
+          "source_url": "https://www.eu-startups.com/2026/10/wealthtech-startup-nevis-secures-e62-million-to-automate-financial-advisory-workflows-with-ai/",
+          "source_title": "财富科技初创公司Nevis获得6200万欧元，用于通过AI自动化金融咨询工作流程",
+          "source_content_hash": "2bfdad1be207360ad77f17aad44ebb6ebf54c996f208ea0b73ca4b87c9f2450e",
+          "quote": "The round was led by EQT Ventures",
+          "quote_hash": "3bfe3bd739b02784b9caf02a5f9f5c49809929dabf65981c7c34a3f68b5bf476"
         },
         {
           "source_id": "FISRC-f80a0b6f2f7f63f8",

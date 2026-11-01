@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-31",
-    "currentDate": "2026-10-31",
-    "eventCount": 4333,
+    "latestDataDate": "2026-11-01",
+    "currentDate": "2026-11-01",
+    "eventCount": 4338,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,8 +54,90 @@
   },
   "events": [
     {
+      "id": "EV-5c5476971d6a707b",
+      "dataDate": "2026-11-01",
+      "date": "2026-10-31",
+      "updatedDate": "2026-10-31",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "OpenAI 仅筹集到其 300 亿美元目标中的 110 亿美元，大型投资者对 AI 失去兴趣",
+      "originalTitle": "OpenAI raises just $11 billion of its $30 billion target as big investors lose their AI appetite",
+      "subject": "OpenAI",
+      "action": "raises",
+      "object": "just $11 billion of its $30 billion target as big investors lose their AI appetite",
+      "metrics": [
+        "$11 billion",
+        "$30 billion",
+        "$20 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-61d4bd350ff295a9",
+          "subject": "OpenAI",
+          "object": "just $11 billion of its $30 billion target as big investors lose their AI appetite",
+          "quote": "OpenAI raises just $11 billion of its $30 billion target as big investors lose their AI appetite"
+        },
+        {
+          "id": "CL-ad42abd762fd2946",
+          "subject": "OpenAI",
+          "object": "just $11 billion of its $30 billion target as big investors lose their AI appetite",
+          "quote": "OpenAI raised less than half of its $30 billion fundraising target in its latest round."
+        },
+        {
+          "id": "CL-6045fed02f4d78d0",
+          "subject": "OpenAI",
+          "object": "just $11 billion of its $30 billion target as big investors lose their AI appetite",
+          "quote": "The company has secured about $11 billion so far, according to the Wall Street Journal."
+        },
+        {
+          "id": "CL-62da4ffdbced5cfa",
+          "subject": "OpenAI",
+          "object": "just $11 billion of its $30 billion target as big investors lose their AI appetite",
+          "quote": "OpenAI now plans to raise up to $20 billion from family offices and high-net-worth individuals."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-e77b0c9b4cce29f9",
+          "publisher": "the-decoder.com",
+          "url": "https://the-decoder.com/openai-raises-just-11-billion-of-its-30-billion-target-as-big-investors-lose-their-ai-appetite/"
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/openai-raises-just-11-billion-of-its-30-billion-target-as-big-investors-lose-their-ai-appetite/",
+      "publisher": "the-decoder.com",
+      "sourceExcerpt": "OpenAI raises just $11 billion of its $30 billion target as big investors lose their AI appetite"
+    },
+    {
       "id": "EV-f1e92d5db0517641",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-31",
       "updatedDate": "2026-10-31",
       "eventType": "funding",
@@ -103,7 +185,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-d3c7c1f825bc9032",
+          "id": "CL-b36521fa5e5ec33c",
           "subject": "北京可灵",
           "object": "约198.0184亿元增资款",
           "quote": "交割完成后，北京可灵全部投资者实际支付的增资款总额约为 198.0184 亿元（相当于约 29.0533 亿美元）。"
@@ -243,8 +325,86 @@
       "sourceExcerpt": "HomeUK-StartupsEXCLUSIVE: London’s Ares Intelligence raises €2.9 million to turn employee insights into..."
     },
     {
+      "id": "EV-7e75a7f077f6d26a",
+      "dataDate": "2026-11-01",
+      "date": "2026-10-30",
+      "updatedDate": "2026-10-30",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_sources_insufficient",
+      "title": "马德里的Talky融资150万欧元，教AI掌握会计的潜规则",
+      "originalTitle": "Madrid&#8217;s Talky raises €1.5 million to teach AI the unwritten rules of accounting",
+      "subject": "Madrid&#8217;s Talky",
+      "action": "raises",
+      "object": "€1.5 million to teach AI the unwritten rules of accounting",
+      "metrics": [
+        "€1.5 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-4a669e89c86c5034",
+        "EN-f2b7d3d7082b9bf1"
+      ],
+      "entityNames": [
+        "HomeFundingMadrid's Talky",
+        "Talky Labs"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-cc2963ddee4e83df",
+          "subject": "Madrid&#8217;s Talky",
+          "object": "€1.5 million to teach AI the unwritten rules of accounting",
+          "quote": "HomeFundingMadrid's Talky raises €1.5 million to teach AI the unwritten rules of..."
+        },
+        {
+          "id": "CL-85b335d53ce5e3b3",
+          "subject": "Madrid&#8217;s Talky",
+          "object": "€1.5 million to teach AI the unwritten rules of accounting",
+          "quote": "Madrid’s Talky raises €1.5 million to teach AI the unwritten rules of accounting"
+        },
+        {
+          "id": "CL-d71e1b5d7722676b",
+          "subject": "Madrid&#8217;s Talky",
+          "object": "€1.5 million to teach AI the unwritten rules of accounting",
+          "quote": "Talky Labs, a Spanish startup developing AI-powered technology to automate accounting and financial operations, has raised €1.5 million in a pre-Seed funding round to support team expansion, further product development and improvements to the company’s technical infrastructure."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-67b5360d3d5b794b",
+          "publisher": "www.eu-startups.com",
+          "url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/"
+        }
+      ],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
+      "publisher": "www.eu-startups.com",
+      "sourceExcerpt": "HomeFundingMadrid's Talky raises €1.5 million to teach AI the unwritten rules of..."
+    },
+    {
       "id": "EV-b066bebd4dece3c5",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-30",
       "updatedDate": "2026-10-30",
       "eventType": "acquisition",
@@ -323,19 +483,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-b893e842565f45c4",
+          "id": "CL-989bb71ab15f9787",
           "subject": "Amadeus",
           "object": "SkyLink",
-          "quote": "Amadeus acquired corporate travel AI assistant SkyLink in February"
+          "quote": "Amadeus acquired corporate travel AI assistant SkyLink in February, while Expedia acquired AI trip-planning startup Layla in July."
         },
         {
-          "id": "CL-cefba23a8672b624",
-          "subject": "Expedia",
-          "object": "Layla",
-          "quote": "Expedia acquired AI trip-planning startup Layla in July"
-        },
-        {
-          "id": "CL-fe6315d9af3c3d08",
+          "id": "CL-f389785f5bea8374",
           "subject": "Expedia",
           "object": "Tiqets",
           "quote": "Expedia also completed its acquisition of venture-backed Tiqets, a booking platform for museums, attractions and experiences, in February."
@@ -343,18 +497,18 @@
       ],
       "sources": [
         {
-          "id": "SA-fe89929240dad35b",
+          "id": "SA-a96d7c7d5ad10481",
           "publisher": "news.crunchbase.com",
           "url": "https://news.crunchbase.com/travel-tourism/travel-tech-startup-venture-funding-low-ai/"
         }
       ],
       "sourceUrl": "https://news.crunchbase.com/travel-tourism/travel-tech-startup-venture-funding-low-ai/",
       "publisher": "news.crunchbase.com",
-      "sourceExcerpt": "Amadeus acquired corporate travel AI assistant SkyLink in February"
+      "sourceExcerpt": "Amadeus acquired corporate travel AI assistant SkyLink in February, while Expedia acquired AI trip-planning startup Layla in July."
     },
     {
       "id": "EV-4a6712d974667d0f",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "funding",
@@ -401,19 +555,19 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-14af37c90e63902a",
+          "id": "CL-a2addb6ea0fa4e0d",
           "subject": "EXCLUSIVE: Freiburg’s VUSE XR",
           "object": "€1.2 million to bring AI-powered mixed reality training to enterprises",
           "quote": "HomeGermany-StartupsEXCLUSIVE: Freiburg’s VUSE XR raises €1.2 million to bring AI-powered mixed reality..."
         },
         {
-          "id": "CL-a47e1453f9405e28",
+          "id": "CL-c9d3a6e7402477b8",
           "subject": "EXCLUSIVE: Freiburg’s VUSE XR",
           "object": "€1.2 million to bring AI-powered mixed reality training to enterprises",
           "quote": "EXCLUSIVE: Freiburg’s VUSE XR raises €1.2 million to bring AI-powered mixed reality training to enterprises"
         },
         {
-          "id": "CL-84b301cc12b94f02",
+          "id": "CL-47ca8c3cb126f757",
           "subject": "EXCLUSIVE: Freiburg’s VUSE XR",
           "object": "€1.2 million to bring AI-powered mixed reality training to enterprises",
           "quote": "VUSE XR, a Freiburg-based startup developing enterprise software for mixed reality training, today announced the closing of a €1.2 million pre-Seed financing round."
@@ -432,7 +586,7 @@
     },
     {
       "id": "EV-71961eb465ee3502",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "funding",
@@ -476,7 +630,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-912b57fdd6bbb3df",
+          "id": "CL-19e02a16275561d1",
           "subject": "Wabi",
           "object": "$55 million at a $1.25 billion valuation",
           "quote": "Wabi, now describing itself as a “personal agent,” said it has raised $55 million at a $1.25 billion valuation."
@@ -484,7 +638,7 @@
       ],
       "sources": [
         {
-          "id": "SA-68c256df8535bb86",
+          "id": "SA-9c7452031e92d786",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/"
         }
@@ -495,7 +649,7 @@
     },
     {
       "id": "EV-848a9d54114887d9",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "acquisition",
@@ -543,25 +697,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-77cacfea83548e1e",
+          "id": "CL-e890af9253b66317",
           "subject": "AI 行业重磅",
           "object": "：彭博社称美满电子最快下周宣布收购光通信龙头 Lumentum",
           "quote": "IT之家 10 月 29 日消息，彭博社今天（10 月 29 日）发布博文，报道称美国半导体公司美满电子（Marvell）计划收购数据中心光通信设备制造商朗美通（Lumentum），目前双方正在磋商谈判，交易最快可能于下周宣布。"
         },
         {
-          "id": "CL-8b9ae47eb796d2be",
+          "id": "CL-df3808d669e42620",
           "subject": "AI 行业重磅",
           "object": "：彭博社称美满电子最快下周宣布收购光通信龙头 Lumentum",
           "quote": "IT之家援引博文介绍，双方尚未达成最终协议，若该交易达成，有望成为人工智能硬件供应链领域的一笔重量级并购。"
         },
         {
-          "id": "CL-d5c25cdccf86280a",
+          "id": "CL-822aa78da0a9a56b",
           "subject": "AI 行业重磅",
           "object": "：彭博社称美满电子最快下周宣布收购光通信龙头 Lumentum",
           "quote": "彭博称，这笔潜在交易凸显了 AI 竞赛正推动科技企业加快通过并购扩大规模、抢占光通信和数据中心互连资源。"
         },
         {
-          "id": "CL-9bf82cd2986a9aab",
+          "id": "CL-cf963cd97ecdfc6d",
           "subject": "AI 行业重磅",
           "object": "：彭博社称美满电子最快下周宣布收购光通信龙头 Lumentum",
           "quote": "Lumentum 美股盘后一度大涨约 17%，随后涨幅收窄；迈威尔科技盘后则下跌约 8%，彭博社认为投资者既看好 AI 光互连的长期战略价值，也担忧巨额收购可能带来的融资压力、股权稀释和整合风险。"
@@ -580,7 +734,7 @@
     },
     {
       "id": "EV-b34cc7c6ca51ad7a",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "funding",
@@ -672,19 +826,19 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-a906c21e149e9712",
+          "id": "CL-f0b1c11eb16246f3",
           "subject": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮",
           "object": "后估值翻两番至 29 亿美元",
           "quote": "IT之家 10 月 29 日消息，据彭博社 28 日报道，韩国 AI 芯片初创公司 FuriosaAI 完成新一轮融资，估值增至 29 亿美元（IT之家注：现汇率约合 193.74 亿元人民币），接近此前的 4 倍，为挑战英伟达等行业巨头增添了筹码。"
         },
         {
-          "id": "CL-04680d1c644c3870",
+          "id": "CL-18f8589e266dd4b1",
           "subject": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮",
           "object": "后估值翻两番至 29 亿美元",
           "quote": "FuriosaAI 宣布，D 轮融资筹集 6.2 亿美元（现汇率约合 41.42 亿元人民币），投资方包括美国 Infinitum Partners。"
         },
         {
-          "id": "CL-0d90d10efca3fdbc",
+          "id": "CL-b734985bca09a477",
           "subject": "韩芯片创企 FuriosaAI 挑战英伟达：新一轮",
           "object": "后估值翻两番至 29 亿美元",
           "quote": "韩国国民成长基金投资 2.8 亿美元（现汇率约合 18.71 亿元人民币），海外投资者合计出资 1.1 亿美元（现汇率约合 7.35 亿元人民币），参与融资的还有杰里科资本、Worldline Capital、新加坡 QUDA Capital 和阿布扎比 NeoFort Holding 等机构。"
@@ -703,7 +857,7 @@
     },
     {
       "id": "EV-da13ad386cf35ad9",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "funding",
@@ -744,7 +898,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-a86dd7613070367e",
+          "id": "CL-154e2bfe0156b078",
           "subject": "考拉悠然",
           "object": "，持续迭代世界模型基座与多模态大模型",
           "quote": "投资界（ID：pedaily2012）10月29日消息，考拉悠然近日完成B++轮融资，投资方为明文炜业。"
@@ -838,7 +992,7 @@
     },
     {
       "id": "EV-ee7fd70ed0f055f6",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "funding",
@@ -879,13 +1033,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-a2ce9eec6e6f6b68",
+          "id": "CL-2988d9dfb99f40fb",
           "subject": "星科源",
           "object": "，聚焦下一代固态电池专用的纳米硅技术",
           "quote": "投资界（ID：pedaily2012）10月29日消息，近日，星科源已完成亿元级Pre-A轮融资，由弘毅投资领投，厦门钨业产业基金、宜宾人才基金跟投，云道资本担任长期独家财务顾问。"
         },
         {
-          "id": "CL-f0c0105cd0d0bba0",
+          "id": "CL-a270ed767f42d335",
           "subject": "星科源",
           "object": "，聚焦下一代固态电池专用的纳米硅技术",
           "quote": "· 星科源聚焦下一代固态电池专用纳米硅技术，同步布局AI芯片用硅基光电器件纳米硅材料，已完成亿元级Pre-A轮融资，核心技术可稳定制备30nm以内超细纳米硅，且实现装备自主、连续量产与客户交付创始团队兼具二十余年纳米硅科研与产业化经验，核心成员来自全球顶尖科研及产业体系，获弘毅投资等头部机构投资。"
@@ -903,8 +1057,92 @@
       "sourceExcerpt": "投资界（ID：pedaily2012）10月29日消息，近日，星科源已完成亿元级Pre-A轮融资，由弘毅投资领投，厦门钨业产业基金、宜宾人才基金跟投，云道资本担任长期独家财务顾问。"
     },
     {
+      "id": "EV-28aa9b8f89bd04b3",
+      "dataDate": "2026-11-01",
+      "date": "2026-10-28",
+      "updatedDate": "2026-10-28",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "“我祖父摔倒后在地上躺了一整天”——Magic Vision为监测技术融资60万欧元",
+      "originalTitle": "&#8220;My grandfather fell and remained on the floor for an entire day&#8221; &#8211; Magic Vision raises €600k for monitoring tech",
+      "subject": "&#8220;My grandfather fell and remained on the floor for an entire day&#8221; &#8211; Magic Vision",
+      "action": "raises",
+      "object": "€600k for monitoring tech",
+      "metrics": [
+        "€600k",
+        "€11 million",
+        "€17 million",
+        "€6 million",
+        "€1.5 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-10ecb7afd7f5aa35"
+      ],
+      "entityNames": [
+        "Magic Vision"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-1f2b5015684cdd3c",
+          "subject": "&#8220;My grandfather fell and remained on the floor for an entire day&#8221; &#8211; Magic Vision",
+          "object": "€600k for monitoring tech",
+          "quote": "“My grandfather fell and remained on the floor for an entire day” – Magic Vision raises €600k for monitoring tech"
+        },
+        {
+          "id": "CL-46ed238d0637770e",
+          "subject": "&#8220;My grandfather fell and remained on the floor for an entire day&#8221; &#8211; Magic Vision",
+          "object": "€600k for monitoring tech",
+          "quote": "Magic Vision, an Italian DeepTech startup developing AI and computer vision technologies to monitor and support older people and vulnerable individuals, has closed a €600k funding round."
+        },
+        {
+          "id": "CL-e3f22cd4f3b05f72",
+          "subject": "&#8220;My grandfather fell and remained on the floor for an entire day&#8221; &#8211; Magic Vision",
+          "object": "€600k for monitoring tech",
+          "quote": "Germany’s Patronus raised €11 million for its elderly emergency-response technology, while Spain’s Tucuvi secured €17 million for AI-powered nursing follow-up and Portugal’s Hope Care closed a €6 million round for remote patient monitoring."
+        },
+        {
+          "id": "CL-e12fc9acf9623129",
+          "subject": "&#8220;My grandfather fell and remained on the floor for an entire day&#8221; &#8211; Magic Vision",
+          "object": "€600k for monitoring tech",
+          "quote": "The company is also preparing a €1.5 million funding round to accelerate commercial growth, build a network of partners and distributors across Italy, and begin its European expansion, with the aim of securing its first international customer within 24 months."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-246c3046dde74bce",
+          "publisher": "www.eu-startups.com",
+          "url": "https://www.eu-startups.com/2026/10/my-grandfather-fell-and-remained-on-the-floor-for-an-entire-day-magic-vision-raises-e600k-for-monitoring-tech/"
+        }
+      ],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/my-grandfather-fell-and-remained-on-the-floor-for-an-entire-day-magic-vision-raises-e600k-for-monitoring-tech/",
+      "publisher": "www.eu-startups.com",
+      "sourceExcerpt": "“My grandfather fell and remained on the floor for an entire day” – Magic Vision raises €600k for monitoring tech"
+    },
+    {
       "id": "EV-3f5278aad82b5aba",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -947,7 +1185,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-eaedb2063cdfdb66",
+          "id": "CL-4653793a63715aaf",
           "subject": "超进化（上海）智能科技有限公司",
           "object": "数亿元人民币天使轮融资",
           "quote": "超进化宣布完成数亿元人民币天使轮融资"
@@ -966,7 +1204,7 @@
     },
     {
       "id": "EV-63e454277381c4b3",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -1046,13 +1284,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-0e45c9517eabb525",
+          "id": "CL-f05733ee00c230fd",
           "subject": "百奥几何",
           "object": "，带队迈向生命科学超级智能",
           "quote": "投资界（ID：pedaily2012）10月28日消息，近日，AI Native生物制药公司百奥几何（BioGeometry）宣布完成A+轮融资。"
         },
         {
-          "id": "CL-ba50833b832220d8",
+          "id": "CL-1bd8bdb97b4ebb9f",
           "subject": "百奥几何",
           "object": "，带队迈向生命科学超级智能",
           "quote": "· 百奥几何完成超1亿美元A轮系列融资，由国寿资本领投，老股东加码构建分子（GeoFlow）、细胞（GeoCell）双尺度微观模型，依托RSI干湿闭环体系，形成AI for AI飞轮储备数十条管线，天然冰片成本较植物提取降80%，2027年将规模化量产。"
@@ -1152,7 +1390,7 @@
     },
     {
       "id": "EV-8615e87fa54663e5",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -1200,7 +1438,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-529a89277e3280e8",
+          "id": "CL-7dd28243a885d3b4",
           "subject": "Simplismart",
           "object": "1400万美元B轮融资",
           "quote": "英伟达（Nvidia）参与了印度初创公司 Simplismart 的 1,400 万美元（IT之家注：现汇率约合 9,357.3 万元人民币）融资。"
@@ -1219,7 +1457,7 @@
     },
     {
       "id": "EV-e0a31302688c81ec",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -1247,10 +1485,10 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-206fffb8d8169693",
-          "CL-e5c96bd2aad4f559",
-          "CL-38a798116d9e38a9",
-          "CL-0637a07a0e9ba347"
+          "CL-b65ec189ac5bf928",
+          "CL-1dd150b9fb169ffb",
+          "CL-1c8100a59c58104e",
+          "CL-fc5d753c6eb83925"
         ]
       },
       "missingFields": [],
@@ -1680,25 +1918,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-206fffb8d8169693",
+          "id": "CL-b65ec189ac5bf928",
           "subject": "微纳核芯",
           "object": "，首创三维存算一体AI芯片新架构",
           "quote": "投资界（ID：pedaily2012）10月28日消息，近日，微纳核芯完成超10亿元C2轮融资，建投投资领投，杭州资本、凯泰资本、晓池资本、烟台财金、盛堃投资、国投泰康、领阳基金等多家专业机构共同投资，并有多名老股东继续加码。"
         },
         {
-          "id": "CL-e5c96bd2aad4f559",
+          "id": "CL-1dd150b9fb169ffb",
           "subject": "微纳核芯",
           "object": "，首创三维存算一体AI芯片新架构",
           "quote": "叠加C1轮，微纳核芯在两个月内完成超20亿元融资，半年内已累计完成30亿元融资，为产品开发迭代与供应链量产备货奠定扎实资金基础。"
         },
         {
-          "id": "CL-38a798116d9e38a9",
+          "id": "CL-1c8100a59c58104e",
           "subject": "微纳核芯",
           "object": "，首创三维存算一体AI芯片新架构",
           "quote": "微纳核芯完成10亿元C1轮融资，加速突破AI大模型推理「芯」瓶颈"
         },
         {
-          "id": "CL-0637a07a0e9ba347",
+          "id": "CL-fc5d753c6eb83925",
           "subject": "微纳核芯",
           "object": "，首创三维存算一体AI芯片新架构",
           "quote": "· 微纳核芯2021年成立，是国家高新技术企业，首创三维存算一体AI芯片新架构，破解AI芯片“高性能 低功耗 低成本”痛点两个月内完成超20亿元融资，半年累计30亿元，产品覆盖端云推理场景，首批商业化潜力获多方机构看好。"
@@ -1881,7 +2119,7 @@
     },
     {
       "id": "EV-53dad7c8f530b480",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-27",
       "updatedDate": "2026-10-27",
       "eventType": "funding",
@@ -1989,7 +2227,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-d43f869374e74fd9",
+          "id": "CL-72c0655408214998",
           "subject": "630 亿美元！华尔街银行与黑石为 Anthropic 采购博通 AI 芯片提供",
           "object": "IT之家 10 月 27 日消息，据路透社报道，美国银行（Bank of America）、黑石（Blackstone）、花旗（Citi）和摩根士丹利（Morgan Stanley）将提供 630 亿美元（IT之家注：现汇率约合 4,206.79 亿元人民币）融资，用于为 Anthropic 采购博通（Broadcom）的人工智能芯片与网络设备，这是和人工智能算力建设相关的规模最大的一笔债务交易之一。",
           "quote": "IT之家 10 月 27 日消息，据路透社报道，美国银行（Bank of America）、黑石（Blackstone）、花旗（Citi）和摩根士丹利（Morgan Stanley）将提供 630 亿美元（IT之家注：现汇率约合 4,206.79 亿元人民币）融资，用于为 Anthropic 采购博通（Broadcom）的人工智能芯片与网络设备，这是和人工智能算力建设相关的规模最大的一笔债务交易之一。"
@@ -2370,7 +2608,7 @@
     },
     {
       "id": "EV-94baaaabc016521f",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-27",
       "updatedDate": "2026-10-27",
       "eventType": "funding",
@@ -2485,13 +2723,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-9013a222f4ada349",
+          "id": "CL-f581b88c6f0e4501",
           "subject": "首发| 维发电子",
           "object": "投资界AI获悉，智能安全核心零部件与解决方案供应商维发电子科技（常州）有限公司（简称维发电子）近日完成亿元级C轮融资。",
           "quote": "投资界AI获悉，智能安全核心零部件与解决方案供应商维发电子科技（常州）有限公司（简称维发电子）近日完成亿元级C轮融资。"
         },
         {
-          "id": "CL-8d043b0de5e2bab3",
+          "id": "CL-be4b50d65d3989b3",
           "subject": "首发| 维发电子",
           "object": "· 维发电子完成亿元级C轮融资，股东含国科新能等，系专精特新潜在独角兽，业务覆盖新能源、储能、AIDC及机器人领域，核心产品储能接触器出货量居行业前三，获欧洲头部车企定点、头部电气外资独家合作，已布局AIDC高压器件与人形机器人关节编码器，技术具备复用性风险提示：新场景产品尚处测试验证阶段，海外市场开拓存在不确定性",
           "quote": "· 维发电子完成亿元级C轮融资，股东含国科新能等，系专精特新潜在独角兽，业务覆盖新能源、储能、AIDC及机器人领域，核心产品储能接触器出货量居行业前三，获欧洲头部车企定点、头部电气外资独家合作，已布局AIDC高压器件与人形机器人关节编码器，技术具备复用性风险提示：新场景产品尚处测试验证阶段，海外市场开拓存在不确定性"
@@ -2510,7 +2748,7 @@
     },
     {
       "id": "EV-d0340d320ebf78c6",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-27",
       "updatedDate": "2026-10-27",
       "eventType": "funding",
@@ -2557,13 +2795,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-58da684698d16e11",
+          "id": "CL-1eb02bb86d09a61e",
           "subject": "Simplismart",
           "object": "$14 million Series B funding round",
           "quote": "Nvidia has backed Indian startup Simplismart in a $14 million funding round"
         },
         {
-          "id": "CL-1392007e9434061b",
+          "id": "CL-d26893e52c2259ab",
           "subject": "AI startup Simplismart",
           "object": "$14M from Dallas Venture Capital, Nvidia, and others",
           "quote": "AI inference infrastructure startup Simplismart has raised $14 million in a Series B funding round led by Dallas Venture Capital, with participation from NVIDIA, Accel, Shastra VC and Micromax."
@@ -2571,7 +2809,7 @@
       ],
       "sources": [
         {
-          "id": "SA-943ea265515a0879",
+          "id": "SA-1dcae61340e162a5",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/"
         },
@@ -2972,17 +3210,15 @@
     },
     {
       "id": "EV-76a1dbe418adc8dd",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "pending_verification",
-      "statusLabel": "待核验",
-      "publicationStatus": "pending_verification",
-      "reportedStatus": "completed",
-      "researchDeferral": "research_sources_insufficient",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
       "title": "财富科技初创公司Nevis获得6200万欧元，用于通过AI自动化金融咨询工作流程",
       "originalTitle": "WealthTech startup Nevis secures €62 million to automate financial advisory workflows with AI",
       "subject": "WealthTech startup Nevis",
@@ -3023,25 +3259,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-016939e656b81ee5",
+          "id": "CL-e129abf7651c045d",
           "subject": "WealthTech startup Nevis",
           "object": "€62 million to automate financial advisory workflows with AI",
           "quote": "HomeFundingWealthTech startup Nevis secures €62 million to automate financial advisory workflows with..."
         },
         {
-          "id": "CL-6c186121f0171efa",
+          "id": "CL-089ab88b59979b8b",
           "subject": "WealthTech startup Nevis",
           "object": "€62 million to automate financial advisory workflows with AI",
           "quote": "WealthTech startup Nevis secures €62 million to automate financial advisory workflows with AI"
         },
         {
-          "id": "CL-8bbf2275a45ed759",
+          "id": "CL-63f06a6a67bf0191",
           "subject": "WealthTech startup Nevis",
           "object": "€62 million to automate financial advisory workflows with AI",
           "quote": "London/NY-based Nevis, an AI OS for wealth management, today announced its €62 million ($70 million) Series B in order to expand agent capabilities, deepen integrations across the custodian and WealthTech ecosystem, and grow its product and GTM teams."
         },
         {
-          "id": "CL-2f6498f86e6fc3e4",
+          "id": "CL-b95c228df4c0822b",
           "subject": "WealthTech startup Nevis",
           "object": "€62 million to automate financial advisory workflows with AI",
           "quote": "Together, these rounds represent approximately €47.8 million in 2026 funding, excluding Nevis’ Series B."
@@ -3201,7 +3437,7 @@
     },
     {
       "id": "EV-c5984dabb5a697b9",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "funding",
@@ -3244,7 +3480,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-16eb881599d35fde",
+          "id": "CL-664a53286b82a815",
           "subject": "SpaceX",
           "object": "roughly $40 billion in financing for AI chips and related data center equipment",
           "quote": "SpaceX has reached a binding commitment for roughly $40 billion in financing for AI chips and related data center equipment"
@@ -3252,7 +3488,7 @@
       ],
       "sources": [
         {
-          "id": "SA-b18dbeae7c30eb61",
+          "id": "SA-444ee0a563e28a90",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/"
         }
@@ -304810,9 +305046,7 @@
         {
           "name": "Gemini 3.8 Flash Cyber",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -305063,7 +305297,7 @@
           "name": "Gemini 3.8 Flash",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Google DeepMind"
           ]
         }
       ],
@@ -360135,7 +360369,7 @@
           "name": "Gemini 4 Argon",
           "type": "模型",
           "ownerNames": [
-            "Google"
+            "OpenAI"
           ]
         }
       ],
@@ -360325,7 +360559,7 @@
           "name": "Gemini 4 Argon",
           "type": "模型",
           "ownerNames": [
-            "Google"
+            "OpenAI"
           ]
         }
       ],
@@ -360520,9 +360754,7 @@
         {
           "name": "Gemini 4 Argon",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -360784,9 +361016,7 @@
         {
           "name": "Gemini 4 Argon",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -361705,21 +361935,21 @@
           "name": "AI Surpasses",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Amazon"
           ]
         },
         {
           "name": "Total Funding",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Amazon"
           ]
         },
         {
           "name": "Copper Sky Capital Doubles",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Amazon"
           ]
         }
       ],
@@ -362880,16 +363110,12 @@
         {
           "name": "TTS Playground",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini 3.8 TTS Playground",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -363095,7 +363321,9 @@
         {
           "name": "Horizon Create",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -363484,12 +363712,16 @@
         {
           "name": "VR Glasses",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         },
         {
           "name": "Connect 2026",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -363919,7 +364151,9 @@
         {
           "name": "Private Processing",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -364223,23 +364457,17 @@
         {
           "name": "Flash-Lite TTS",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini 3.8 Flash TTS",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Flash TTS",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -364452,16 +364680,12 @@
         {
           "name": "Flash-Lite TTS",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini 3.8 Flash TTS",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -365541,7 +365765,9 @@
         {
           "name": "Connect 2026",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -366300,17 +366526,23 @@
         {
           "name": "B2B Enterprises",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         },
         {
           "name": "MarketScale",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         },
         {
           "name": "Muse AI",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -369035,7 +369267,7 @@
           "name": "ChatGPT",
           "type": "产品/服务",
           "ownerNames": [
-            "Apple"
+            "Meta"
           ]
         }
       ],
@@ -370995,16 +371227,12 @@
         {
           "name": "Qwen3.8-Omni-Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -373022,12 +373250,16 @@
         {
           "name": "Concierge",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         },
         {
           "name": "AI Agents News",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -373698,9 +373930,7 @@
         {
           "name": "Play",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -373906,9 +374136,7 @@
         {
           "name": "Data Commons",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -374192,12 +374420,16 @@
         {
           "name": "Muse for Mac",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         },
         {
           "name": "Muse",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -375058,23 +375290,17 @@
         {
           "name": "Gemini 3.8 Live",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Live Extended Thinking",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Live",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -376700,16 +376926,12 @@
         {
           "name": "Gemini 3.8 Live",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Live Extended Thinking",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -376951,7 +377173,9 @@
         {
           "name": "One",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -382594,12 +382818,16 @@
         {
           "name": "Muse AI",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         },
         {
           "name": "Muse assistant",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -382667,9 +382895,7 @@
         {
           "name": "Gemini Windows",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -383270,7 +383496,9 @@
         {
           "name": "Muse",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -384066,16 +384294,12 @@
         {
           "name": "ADK for Kotlin 1.0",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "ADK",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -384533,9 +384757,7 @@
         {
           "name": "WeatherNext 3",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -386515,7 +386737,9 @@
         {
           "name": "UnifoLM-X2-1.0",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -387890,16 +388114,12 @@
         {
           "name": "Lyria 3.5",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Lyria 3.5 music",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -388253,7 +388473,9 @@
         {
           "name": "Muse Voice Transcribe",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -388694,9 +388916,7 @@
         {
           "name": "Gemini Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -392446,9 +392666,7 @@
         {
           "name": "Gemini 3.8 Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -392882,14 +393100,14 @@
           "name": "Gemini 3.8 Flash",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Alibaba"
           ]
         },
         {
           "name": "MEGA",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Alibaba"
           ]
         }
       ],
@@ -392981,7 +393199,7 @@
           "name": "Muse Spark 1.3",
           "type": "产品/服务",
           "ownerNames": [
-            "Ant Group"
+            "Meta"
           ]
         }
       ],
@@ -393819,9 +394037,7 @@
         {
           "name": "Gemini 3.8 Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -396047,9 +396263,7 @@
         {
           "name": "Agent Skills for Google",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -396940,9 +397154,7 @@
         {
           "name": "MAPL-EMIT",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -398117,16 +398329,12 @@
         {
           "name": "TimesFM-3",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Research",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -399667,9 +399875,7 @@
         {
           "name": "Gemini Omni 1.1 Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -400190,7 +400396,9 @@
         {
           "name": "XR Operator",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -400805,9 +401013,7 @@
         {
           "name": "Gemini Omni 1.1 Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -401246,9 +401452,7 @@
         {
           "name": "Gemini 3.5 Transcribe",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -401394,9 +401598,7 @@
         {
           "name": "Gemini Omni 1.1 Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -402668,9 +402870,7 @@
         {
           "name": "Gemini Omni 1.1 Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -402973,9 +403173,7 @@
         {
           "name": "Earth AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -403331,9 +403529,7 @@
         {
           "name": "Gemini 3.5 Transcribe",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -403443,16 +403639,12 @@
         {
           "name": "Gemini Enterprise Agent",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Enterprise",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -403721,9 +403913,7 @@
         {
           "name": "Gemini 3.5 Transcribe",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -403975,23 +404165,17 @@
         {
           "name": "Gemini Enterprise for Legal",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Enterprise Targets Legal",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Enterprise",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -405459,7 +405643,9 @@
         {
           "name": "Isaac 0.5",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -406069,7 +406255,7 @@
           "name": "Gemini",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Anthropic"
           ]
         }
       ],
@@ -412452,16 +412638,12 @@
         {
           "name": "Gemini Omni Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "AI audio",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -413567,16 +413749,12 @@
         {
           "name": "Preferred Sources",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "AI-driven",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -413733,7 +413911,7 @@
           "name": "Mac",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Meta"
           ]
         }
       ],
@@ -416119,9 +416297,7 @@
         {
           "name": "AI-generated",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -418286,23 +418462,17 @@
         {
           "name": "AP News",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Marketing AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Marketing Moves Beyond",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -421109,9 +421279,7 @@
         {
           "name": "Gemini 3.7 Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -421223,9 +421391,7 @@
         {
           "name": "Gemini 3.7 Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -421671,9 +421837,7 @@
         {
           "name": "Gemini 3.7 Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -422206,16 +422370,12 @@
         {
           "name": "C++",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "C++ Library",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -423385,9 +423545,7 @@
         {
           "name": "Pixel Watch 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -423793,16 +423951,12 @@
         {
           "name": "Breathing Emergency Detection",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Pixel Watch 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -424117,21 +424271,21 @@
           "name": "Pixel 11",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Hinge"
           ]
         },
         {
           "name": "Pixel Watch 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Hinge"
           ]
         },
         {
           "name": "Pixel Tag",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Hinge"
           ]
         }
       ],
@@ -426959,7 +427113,7 @@
           "name": "Muse Glimmer",
           "type": "产品/服务",
           "ownerNames": [
-            "Alibaba"
+            "Meta"
           ]
         }
       ],
@@ -428248,7 +428402,7 @@
           "name": "Muse Glimmer",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Meta"
           ]
         }
       ],
@@ -428769,7 +428923,9 @@
         {
           "name": "Muse Glimmer",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -429036,7 +429192,7 @@
           "name": "MAI-Image-2.6",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Meta"
           ]
         }
       ],
@@ -429441,12 +429597,16 @@
         {
           "name": "Muse Glimmer",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         },
         {
           "name": "Glimmer AI",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -429769,7 +429929,9 @@
         {
           "name": "Muse Glimmer",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -429910,7 +430072,9 @@
         {
           "name": "Muse Glimmer",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -434397,14 +434561,14 @@
           "name": "Claude Code",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Meta"
           ]
         },
         {
           "name": "Muse Code",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Meta"
           ]
         }
       ],
@@ -435280,12 +435444,16 @@
         {
           "name": "Muse Code",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         },
         {
           "name": "Muse Spark 1.2",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -435633,7 +435801,9 @@
         {
           "name": "Muse Code",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -436631,9 +436801,7 @@
         {
           "name": "Database Operations",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -436917,14 +437085,14 @@
           "name": "API Gateway",
           "type": "模型",
           "ownerNames": [
-            "Google"
+            "OpenAI"
           ]
         },
         {
           "name": "Cloud API Gateway",
           "type": "模型",
           "ownerNames": [
-            "Google"
+            "OpenAI"
           ]
         }
       ],
@@ -440149,9 +440317,7 @@
         {
           "name": "Gemini Spark",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -441330,9 +441496,7 @@
         {
           "name": "Earth AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -443041,14 +443205,14 @@
           "name": "Gemini Robotics ER 2",
           "type": "模型",
           "ownerNames": [
-            "Google"
+            "Google DeepMind"
           ]
         },
         {
           "name": "DeepMind",
           "type": "模型",
           "ownerNames": [
-            "Google"
+            "Google DeepMind"
           ]
         }
       ],
@@ -443256,9 +443420,7 @@
         {
           "name": "Gemini",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -448257,9 +448419,7 @@
         {
           "name": "Gemini 4",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -451292,7 +451452,9 @@
         {
           "name": "Facebook Verified",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -456396,9 +456558,7 @@
         {
           "name": "ChatGPT",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -456605,7 +456765,7 @@
           "name": "AI optimism ad set",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Meta"
           ]
         }
       ],
@@ -457394,7 +457554,7 @@
           "name": "AI Roleplay Sessions",
           "type": "产品/服务",
           "ownerNames": [
-            "Intel"
+            "Meta"
           ]
         }
       ],
@@ -457942,7 +458102,9 @@
         {
           "name": "StoryKit",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -459586,9 +459748,7 @@
         {
           "name": "Gemini 3.6 Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -461623,23 +461783,17 @@
         {
           "name": "Flash-Lite",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini 3.6 Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Flash Cyber",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -461763,16 +461917,12 @@
         {
           "name": "Gemini 3.6 Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -462070,7 +462220,7 @@
           "name": "Tunix",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "SGLang"
           ]
         }
       ],
@@ -462461,7 +462611,9 @@
         {
           "name": "Astryx",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -462981,16 +463133,12 @@
         {
           "name": "Flash-Lite",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini 3.6 Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -463874,9 +464022,7 @@
         {
           "name": "Adobe Project Indigo 1.1",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -464525,9 +464671,7 @@
         {
           "name": "Frozen v2",
           "type": "AI 硬件",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -465695,9 +465839,7 @@
         {
           "name": "Project Indigo",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -472127,9 +472269,7 @@
         {
           "name": "Vids",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -473460,16 +473600,12 @@
         {
           "name": "Gemini Notebook",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "NotebookLM",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -474339,7 +474475,7 @@
           "name": "Gemma 4",
           "type": "模型",
           "ownerNames": [
-            "Google"
+            "NVIDIA"
           ]
         }
       ],
@@ -474724,16 +474860,12 @@
         {
           "name": "Parallel Web Search",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Enterprise Agent",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -475555,7 +475687,7 @@
           "name": "AI Mode",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Canva"
           ]
         }
       ],
@@ -477700,23 +477832,17 @@
         {
           "name": "JavaScript",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "LiteRT.js",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "SensorFM",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -478596,9 +478722,7 @@
         {
           "name": "Nano Banana",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -480370,23 +480494,17 @@
         {
           "name": "AI Overviews",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Nano Banana 2 Lite",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Search",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -481079,9 +481197,7 @@
         {
           "name": "Cloud Documentation",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -481853,16 +481969,12 @@
         {
           "name": "AI Overviews",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Images 25",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -485033,7 +485145,9 @@
         {
           "name": "Muse Image",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -485249,7 +485363,9 @@
         {
           "name": "Muse Spark 1.1",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -487756,16 +487872,12 @@
         {
           "name": "SensorFM",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Research",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -488212,9 +488324,7 @@
         {
           "name": "LiteRT.js",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -488282,7 +488392,9 @@
         {
           "name": "AI-specific",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -488354,16 +488466,12 @@
         {
           "name": "Duet AI for Developers",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GitHub Copilot",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -489137,7 +489245,7 @@
           "name": "Muse Spark 1.1",
           "type": "模型",
           "ownerNames": [
-            "Intel"
+            "Meta"
           ]
         }
       ],
@@ -489423,16 +489531,12 @@
         {
           "name": "Cloud",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Enterprise Agent",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -490136,16 +490240,12 @@
         {
           "name": "Cloud Documentation",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Enterprise Agent",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -490378,7 +490478,7 @@
           "name": "AI generator",
           "type": "产品/服务",
           "ownerNames": [
-            "Intel"
+            "Meta"
           ]
         }
       ],
@@ -492722,14 +492822,14 @@
           "name": "Muse Image",
           "type": "模型",
           "ownerNames": [
-            "Intel"
+            "Meta"
           ]
         },
         {
           "name": "Muse Video",
           "type": "模型",
           "ownerNames": [
-            "Intel"
+            "Meta"
           ]
         }
       ],
@@ -495732,7 +495832,9 @@
         {
           "name": "Llama API",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -501254,7 +501356,7 @@
           "name": "Cloud Workbench Notebooks",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Rime"
           ]
         }
       ],
@@ -501707,23 +501809,17 @@
         {
           "name": "Tasks",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Keep",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Spark",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -502076,12 +502172,16 @@
         {
           "name": "Brain2Qwerty",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         },
         {
           "name": "Brain2Qwerty v2",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -503341,9 +503441,7 @@
         {
           "name": "Nano Banana 2 Lite",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -503652,17 +503750,23 @@
         {
           "name": "Brain2Qwerty",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         },
         {
           "name": "Brain2Qwerty v2",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         },
         {
           "name": "Brain2Qwerty v1",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -503778,9 +503882,7 @@
         {
           "name": "Nano Banana 2 Lite",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -504760,12 +504862,16 @@
         {
           "name": "Brain2Qwerty",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         },
         {
           "name": "Brain2Qwerty v2",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -506479,9 +506585,7 @@
         {
           "name": "AI Studio",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -506850,17 +506954,23 @@
         {
           "name": "AI-Native Cloud Built",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         },
         {
           "name": "AI-Native Cloud Built for",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         },
         {
           "name": "Inference Era",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -507787,9 +507897,7 @@
         {
           "name": "Finance",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -507879,12 +507987,16 @@
         {
           "name": "Dragonfly C1000",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         },
         {
           "name": "Dragonfly C1000 CPU",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -508008,16 +508120,12 @@
         {
           "name": "Gemini 3.5 Flash",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Computer Use",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -508777,7 +508885,7 @@
           "name": "Creator Studio",
           "type": "产品/服务",
           "ownerNames": [
-            "NIO"
+            "Meta"
           ]
         }
       ],
@@ -510792,9 +510900,7 @@
         {
           "name": "Home 6",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -512482,7 +512588,7 @@
           "name": "Interactions API",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Google DeepMind"
           ]
         }
       ],
@@ -512566,7 +512672,7 @@
           "name": "Cloud",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Microsoft"
           ]
         },
         {
@@ -513754,9 +513860,7 @@
         {
           "name": "TPU v9",
           "type": "AI 硬件",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -515236,23 +515340,17 @@
         {
           "name": "Gemini Enterprise Agent",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Introducing Gemini Enterprise",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Blog",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -516047,9 +516145,7 @@
         {
           "name": "AI Ultra",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -518806,9 +518902,7 @@
         {
           "name": "A2A",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -520353,9 +520447,7 @@
         {
           "name": "Home",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -520748,9 +520840,7 @@
         {
           "name": "TPU Developer Hub",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -521734,14 +521824,14 @@
           "name": "Android 17",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Apple"
           ]
         },
         {
           "name": "Pixel",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Apple"
           ]
         }
       ],
@@ -522173,7 +522263,7 @@
           "name": "Hermes",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Moonshot AI"
           ]
         }
       ],
@@ -522266,23 +522356,17 @@
         {
           "name": "OKF v0.1",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Cloud",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "OKF",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -522876,7 +522960,9 @@
         {
           "name": "AI Mode",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -528667,7 +528753,7 @@
           "name": "Hermes Agent Profile Builder",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Google DeepMind"
           ]
         }
       ],
@@ -529389,9 +529475,7 @@
         {
           "name": "DiffusionGemma",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -529520,7 +529604,7 @@
           "name": "DiffusionGemma",
           "type": "模型",
           "ownerNames": [
-            "Google"
+            "Google DeepMind"
           ]
         }
       ],
@@ -531526,7 +531610,7 @@
           "name": "Gemini 3.5 Live Translate",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Rime"
           ]
         }
       ],
@@ -532018,9 +532102,7 @@
         {
           "name": "Gemini 3.5 Live Translate",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -533225,9 +533307,7 @@
         {
           "name": "Gemini 3.5 Live Translate",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -535595,23 +535675,17 @@
         {
           "name": "Cross-Corpus Retrieval",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini Enterprise Agent",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Research",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -538754,7 +538828,7 @@
           "name": "Cloud Marketplace",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Intel"
           ]
         }
       ],
@@ -539240,7 +539314,7 @@
           "name": "Research",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "OPPO"
           ]
         }
       ],
@@ -545083,23 +545157,17 @@
         {
           "name": "Flash-Lite",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Gemini 3.1 Flash-Lite",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Cloud Blog",
           "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -549189,8 +549257,179 @@
       "sourceExcerpt": "one thing we’d like to do soon is to create a language model with the approximate capability of GPT-3 that can run locally on consumer hardware and release that."
     },
     {
+      "id": "EV-20253e8f968787c7",
+      "dataDate": "2026-11-01",
+      "date": "2026-10-31",
+      "updatedDate": "2026-10-31",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "史上最大 IPO 前夕，黑石突然改口称 Anthropic 或无法获得投资级信用评级",
+      "originalTitle": "",
+      "subject": "史上最大",
+      "action": "IPO",
+      "object": "前夕，黑石突然改口称 Anthropic 或无法获得投资级信用评级",
+      "metrics": [
+        "1,120 亿",
+        "7,469.91 亿",
+        "1,000 亿",
+        "6,669.57 亿",
+        "8,000 亿",
+        "5.34 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d1e9161dabbfee1b",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "史上最大",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-aea5d98c2635a6e5",
+          "subject": "史上最大",
+          "object": "前夕，黑石突然改口称 Anthropic 或无法获得投资级信用评级",
+          "quote": "若 Anthropic 下个月顺利上市，有望创下史上最大规模 IPO 纪录。"
+        },
+        {
+          "id": "CL-8a6b2e471b03e350",
+          "subject": "史上最大",
+          "object": "前夕，黑石突然改口称 Anthropic 或无法获得投资级信用评级",
+          "quote": "该公司目前持有超过 1,120 亿美元（现汇率约合 7,469.91 亿元人民币）现金及现金等价物，投资者预计 IPO 还可能为其带来约 1,000 亿美元（现汇率约合 6,669.57 亿元人民币）融资。"
+        },
+        {
+          "id": "CL-0741223f658af607",
+          "subject": "史上最大",
+          "object": "前夕，黑石突然改口称 Anthropic 或无法获得投资级信用评级",
+          "quote": "招股书披露，公司“大胆但理性”计划从现在到 2045 年向计算基础设施投入超过 8,000 亿美元（现汇率约合 5.34 万亿元人民币）。"
+        },
+        {
+          "id": "CL-ee7493151542182f",
+          "subject": "史上最大",
+          "object": "前夕，黑石突然改口称 Anthropic 或无法获得投资级信用评级",
+          "quote": "能否获得投资级评级，关系到 Anthropic 未来能否以较低利率借款，为 AI 基础设施建设提供资金。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-f9f25baaffb524f4",
+          "publisher": "www.ithome.com",
+          "url": "https://www.ithome.com/1/020/610.htm"
+        }
+      ],
+      "sourceUrl": "https://www.ithome.com/1/020/610.htm",
+      "publisher": "www.ithome.com",
+      "sourceExcerpt": "若 Anthropic 下个月顺利上市，有望创下史上最大规模 IPO 纪录。"
+    },
+    {
+      "id": "EV-51f7b14d193a3ffc",
+      "dataDate": "2026-11-01",
+      "date": "2026-10-31",
+      "updatedDate": "2026-10-31",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 基建掀起军备竞赛：微软、谷歌、甲骨文等巨头承诺投入超 3 万亿美元",
+      "originalTitle": "",
+      "subject": "Alphabet、Meta、微软、亚马逊和甲骨文",
+      "action": "capital_investment",
+      "object": "未来数年数据中心等领域投入超过3万亿美元",
+      "metrics": [
+        "3 万",
+        "1 万",
+        "8,000 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-4dd4f3835505cd95",
+        "EN-6d37feda49a46792",
+        "EN-ea3bd73e2b506e00",
+        "EN-9fbf261b62c1d7c0",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Alphabet",
+        "亚马逊",
+        "Meta",
+        "Microsoft",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-76960580deade39e",
+          "subject": "Alphabet、Meta、微软、亚马逊和甲骨文",
+          "object": "未来数年数据中心等领域投入超过3万亿美元",
+          "quote": "Alphabet、Meta、微软、亚马逊和甲骨文五大科技巨头承诺，未来数年将在数据中心等领域投入超过 3 万亿美元"
+        },
+        {
+          "id": "CL-1340dfafa166b33c",
+          "subject": "Alphabet",
+          "object": "包括技术设备、能源和租赁在内的合同承诺总额超过1万亿美元",
+          "quote": "包括技术设备、能源和租赁在内的合同承诺总额超过 1 万亿美元"
+        },
+        {
+          "id": "CL-4b9fef58eba216b6",
+          "subject": "Meta",
+          "object": "未来支出总额超过8,000亿美元",
+          "quote": "Meta 的支出承诺同样大幅攀升，未来支出总额超过 8,000 亿美元"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-1b867f2b7922ef14",
+          "publisher": "www.ithome.com",
+          "url": "https://www.ithome.com/1/020/632.htm"
+        }
+      ],
+      "sourceUrl": "https://www.ithome.com/1/020/632.htm",
+      "publisher": "www.ithome.com",
+      "sourceExcerpt": "Alphabet、Meta、微软、亚马逊和甲骨文五大科技巨头承诺，未来数年将在数据中心等领域投入超过 3 万亿美元"
+    },
+    {
       "id": "EV-38f85ebd3ffeb9da",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-30",
       "updatedDate": "2026-10-30",
       "eventType": "ipo_listing",
@@ -549233,25 +549472,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-fc92b445d5d5b713",
+          "id": "CL-a2e80e8ba165d48a",
           "subject": "Anthropic expected to receive high &#8216;junk&#8217; rating from credit agencies following",
           "object": ", FT report says",
           "quote": "Anthropic expected to receive high ‘junk’ rating from credit agencies following IPO, FT report says"
         },
         {
-          "id": "CL-acfc635ac84a9111",
+          "id": "CL-dbc5e2efadfdd08b",
           "subject": "Anthropic expected to receive high &#8216;junk&#8217; rating from credit agencies following",
           "object": ", FT report says",
           "quote": "Anthropic is expected to receive a high “junk” rating from credit rating agencies following its initial public offering, according to a report from the Financial Times."
         },
         {
-          "id": "CL-4095ffd1bba1ab9a",
+          "id": "CL-65e19cc57a46ff22",
           "subject": "Anthropic expected to receive high &#8216;junk&#8217; rating from credit agencies following",
           "object": ", FT report says",
           "quote": "The FT says the investment giant Blackstone, the anchor investor in a recent $63 billion deal to finance Anthropic’s chips, told investors in the deal that it expects the AI lab to receive a “high” junk rating after its IPO. Previously, the FT notes, Blackstone had said the opposite: that the Claude maker would receive an investment-grade rating (indicating low risk for lenders) before 2027 rolls around."
         },
         {
-          "id": "CL-b65da0eac2f6e4e2",
+          "id": "CL-10f84900422d29e1",
           "subject": "Anthropic expected to receive high &#8216;junk&#8217; rating from credit agencies following",
           "object": ", FT report says",
           "quote": "Anthropic officially filed to go public earlier this week, kicking off a wave of speculation about how the massive IPO would impact the broader AI industry."
@@ -549259,7 +549498,7 @@
       ],
       "sources": [
         {
-          "id": "SA-ff6db630fc0d8579",
+          "id": "SA-12e5690e87dded92",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/"
         }
@@ -549270,7 +549509,7 @@
     },
     {
       "id": "EV-a0cc35ffe6b22a57",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-30",
       "updatedDate": "2026-10-30",
       "eventType": "policy_regulation",
@@ -549299,9 +549538,9 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-fc68476701895757",
-          "CL-6b09c31a286ae56b",
-          "CL-08d4f8446b459b26"
+          "CL-a90a71d3dd1b9080",
+          "CL-ff5194c40acc66bd",
+          "CL-82213b516ceafd0e"
         ]
       },
       "missingFields": [],
@@ -549365,19 +549604,19 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-fc68476701895757",
+          "id": "CL-a90a71d3dd1b9080",
           "subject": "词元工厂硅基流动港股上市申请获证监会",
           "object": "接收：注册用户超千万，年内融资近 29 亿元",
           "quote": "IT之家 10 月 30 日消息，硅基流动在港股发行上市申请获中国证监会备案受理。"
         },
         {
-          "id": "CL-6b09c31a286ae56b",
+          "id": "CL-ff5194c40acc66bd",
           "subject": "词元工厂硅基流动港股上市申请获证监会",
           "object": "接收：注册用户超千万，年内融资近 29 亿元",
           "quote": "据弗若斯特沙利文资料，该公司是中国最大的独立生态词元（Token）供应商，注册用户超过 1000 万名，服务企业客户超过 1.3 万家。"
         },
         {
-          "id": "CL-08d4f8446b459b26",
+          "id": "CL-82213b516ceafd0e",
           "subject": "词元工厂硅基流动港股上市申请获证监会",
           "object": "接收：注册用户超千万，年内融资近 29 亿元",
           "quote": "IT之家注：硅基流动成立于 2023 年，定位为独立生态词元供应平台，不自建大模型，也不直接出售算力。"
@@ -549456,7 +549695,7 @@
     },
     {
       "id": "EV-d381d15f8f9045e0",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "financial_performance",
@@ -549497,13 +549736,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-2e01ee567b1ea489",
+          "id": "CL-1008d4de7cbed780",
           "subject": "英伟达",
           "object": "2027财年第三财季财务业绩",
           "quote": "公布并解读 2027 财年第三财季（截至 2026 年 10 月 25 日）财务业绩"
         },
         {
-          "id": "CL-a4aee582201d105a",
+          "id": "CL-bd86963594807ad8",
           "subject": "英伟达",
           "object": "书面业绩评论",
           "quote": "同步发布执行副总裁兼首席财务官科莱特 · 克雷斯（Colette Kress）撰写的书面业绩评论"
@@ -549584,7 +549823,7 @@
     },
     {
       "id": "EV-7ddfa7b82af141ec",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "ipo_listing",
@@ -549640,25 +549879,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-1dd6bc893a22b023",
+          "id": "CL-983795c571444551",
           "subject": "人类史上最大",
           "object": "！Anthropic 提交纳斯达克 IPO 申请，股票代码为“ANT”",
           "quote": "据《华尔街日报》报道，Anthropic 计划于 11 月 16 日当周进行 IPO。"
         },
         {
-          "id": "CL-ddd13be2314c43d0",
+          "id": "CL-c8b34450db357079",
           "subject": "人类史上最大",
           "object": "！Anthropic 提交纳斯达克 IPO 申请，股票代码为“ANT”",
           "quote": "Anthropic 目标估值有望高达 2 万亿美元，若成功落地，将成为有史以来规模最大的 IPO。"
         },
         {
-          "id": "CL-077c45d851a1bc26",
+          "id": "CL-e7b6c9fd4d0744e0",
           "subject": "人类史上最大",
           "object": "！Anthropic 提交纳斯达克 IPO 申请，股票代码为“ANT”",
           "quote": "招股书披露，公司业绩呈现高速增长态势：2025 年营收 45.85 亿美元（IT之家注：现汇率约合 306.16 亿元人民币），净亏损 419.65 亿美元（现汇率约合 2,802.19 亿元人民币）；2026 年上半年营收飙升至 162.86 亿美元（现汇率约合 1,087.49 亿元人民币），同比暴涨 13 倍。"
         },
         {
-          "id": "CL-d7fdde76f214f2bc",
+          "id": "CL-878eeb3e375af428",
           "subject": "人类史上最大",
           "object": "！Anthropic 提交纳斯达克 IPO 申请，股票代码为“ANT”",
           "quote": "虽然当期净亏损扩大至 807.48 亿美元（现汇率约合 5,391.9 亿元人民币），但营业亏损大幅收窄至 6.93 亿美元（现汇率约合 46.27 亿元人民币），调整后营业利润扭亏为盈至 16 亿美元（现汇率约合 106.84 亿元人民币）。"
@@ -549677,7 +549916,7 @@
     },
     {
       "id": "EV-c4964bb580827988",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-01",
       "date": "2026-10-26",
       "updatedDate": "2026-10-26",
       "eventType": "ipo_listing",
@@ -549723,19 +549962,19 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-d80e7091e682b58f",
+          "id": "CL-b602a41f4883a103",
           "subject": "undisclosed_subject",
           "object": "文件阐述 Anthropic 的野心：AI 有望解决过去几代人未能攻克的难题",
           "quote": "这家 AI 公司早在今年 6 月就秘密递交了上市申请，此次公开的文件披露了更多细节。"
         },
         {
-          "id": "CL-d5d35e204a573cfd",
+          "id": "CL-c482f25c3762a817",
           "subject": "undisclosed_subject",
           "object": "文件阐述 Anthropic 的野心：AI 有望解决过去几代人未能攻克的难题",
           "quote": "据文件所述，Anthropic 今年上半年营收 163 亿美元（IT之家注：现汇率约合 1,088.42 亿元人民币），净亏损达 807 亿美元（现汇率约合 5,388.7 亿元人民币）。"
         },
         {
-          "id": "CL-a62e6b73b91a9aed",
+          "id": "CL-81a83907393f5b5d",
           "subject": "undisclosed_subject",
           "object": "文件阐述 Anthropic 的野心：AI 有望解决过去几代人未能攻克的难题",
           "quote": "《华尔街日报》此前曾根据泄露文件描述过这一情况，其中大部分亏损来自与公司融资票据相关的会计费用。"
@@ -564078,12 +564317,16 @@
         {
           "name": "AI Research Preference",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         },
         {
           "name": "FAIR",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -566866,16 +567109,12 @@
         {
           "name": "Bidirectional MCP",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "AI Agents Challenge",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -568525,9 +568764,7 @@
         {
           "name": "WikiSkill",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [
@@ -593915,12 +594152,16 @@
         {
           "name": "Brain2Qwerty",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         },
         {
           "name": "Brain2Qwerty v2",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Meta"
+          ]
         }
       ],
       "claims": [
@@ -597904,16 +598145,12 @@
         {
           "name": "Hugging Face",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         },
         {
           "name": "ASRs. Our main finding is",
           "type": "产品/服务",
-          "ownerNames": [
-            "Google"
-          ]
+          "ownerNames": []
         }
       ],
       "claims": [

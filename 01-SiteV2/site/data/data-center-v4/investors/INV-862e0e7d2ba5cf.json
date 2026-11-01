@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-31",
-    "currentDate": "2026-10-31",
-    "eventCount": 4333,
+    "latestDataDate": "2026-11-01",
+    "currentDate": "2026-11-01",
+    "eventCount": 4338,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,22 +63,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 32,
+    "current_round_count": 33,
     "historical_or_ambiguous_count": 13,
-    "portfolio_company_count": 27,
+    "portfolio_company_count": 28,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-09",
-    "latest_disclosed_at": "2026-10-21",
+    "latest_disclosed_at": "2026-10-26",
     "role_counts": {
       "co_lead": 3,
       "historical_or_ambiguous": 13,
       "lead": 14,
       "other_current_round": 1,
-      "participant": 14
+      "participant": 15
     },
     "round_codes": [
       "multi_round",
@@ -190,6 +190,11 @@
         "name": "n8n"
       },
       {
+        "entity_id": "EN-bdfcfbdc9e0896ff",
+        "canonical_entity_id": "",
+        "name": "Nevis"
+      },
+      {
         "entity_id": "EN-7d3194f79e645c42",
         "canonical_entity_id": "EN-7d3194f79e645c42",
         "name": "OpenAI"
@@ -231,6 +236,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-0b72fbcc7c420947",
+        "funding_insight_id": "FI-2bd46dca95154b25",
+        "event_ids": [
+          "EV-76a1dbe418adc8dd"
+        ],
+        "company_entity_id": "EN-bdfcfbdc9e0896ff",
+        "company_canonical_entity_id": "",
+        "company_name": "Nevis",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "€62 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 62000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6200 万欧元"
+        },
+        "announced_at": "2026-10-26",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4ef85aec7ebdf94c",
+            "source_url": "https://www.eu-startups.com/2026/10/wealthtech-startup-nevis-secures-e62-million-to-automate-financial-advisory-workflows-with-ai/",
+            "source_title": "财富科技初创公司Nevis获得6200万欧元，用于通过AI自动化金融咨询工作流程",
+            "source_content_hash": "2bfdad1be207360ad77f17aad44ebb6ebf54c996f208ea0b73ca4b87c9f2450e",
+            "quote": "All existing investors, including Sequoia Capital, ICONIQ and Ribbit Capital, have also expanded their commitments in this new round.",
+            "quote_hash": "69066058e95a369b8b1102f82098f764661d79dce57bf6349644cdfcc9878f46"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b818d92480ba6979",
         "funding_insight_id": "FI-2aa299d42ca42b11",
@@ -1958,6 +2003,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-4ef85aec7ebdf94c",
+        "source_url": "https://www.eu-startups.com/2026/10/wealthtech-startup-nevis-secures-e62-million-to-automate-financial-advisory-workflows-with-ai/",
+        "source_title": "财富科技初创公司Nevis获得6200万欧元，用于通过AI自动化金融咨询工作流程",
+        "source_content_hash": "2bfdad1be207360ad77f17aad44ebb6ebf54c996f208ea0b73ca4b87c9f2450e",
+        "quote": "All existing investors, including Sequoia Capital, ICONIQ and Ribbit Capital, have also expanded their commitments in this new round.",
+        "quote_hash": "69066058e95a369b8b1102f82098f764661d79dce57bf6349644cdfcc9878f46"
+      },
+      {
         "source_id": "FISRC-49f5b4d8c68adbdc",
         "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
         "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
@@ -2377,6 +2430,10 @@
           "source_id": "sequoia_history"
         },
         {
+          "description": "融资来源记录：Nevis · B轮 · 2026-10-26 · 本轮参投 · €62 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4ef85aec7ebdf94c"
+        },
+        {
           "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮领投 · $66M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-49f5b4d8c68adbdc"
         },
@@ -2412,6 +2469,14 @@
           "quote_hash": "4a2f68c042b10690a950656cdd8c8d78ddbacadab8cdf2e8a4566b83347cc5ac"
         },
         {
+          "source_id": "FISRC-4ef85aec7ebdf94c",
+          "source_url": "https://www.eu-startups.com/2026/10/wealthtech-startup-nevis-secures-e62-million-to-automate-financial-advisory-workflows-with-ai/",
+          "source_title": "财富科技初创公司Nevis获得6200万欧元，用于通过AI自动化金融咨询工作流程",
+          "source_content_hash": "2bfdad1be207360ad77f17aad44ebb6ebf54c996f208ea0b73ca4b87c9f2450e",
+          "quote": "All existing investors, including Sequoia Capital, ICONIQ and Ribbit Capital, have also expanded their commitments in this new round.",
+          "quote_hash": "69066058e95a369b8b1102f82098f764661d79dce57bf6349644cdfcc9878f46"
+        },
+        {
           "source_id": "FISRC-49f5b4d8c68adbdc",
           "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
           "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
@@ -2426,14 +2491,6 @@
           "source_content_hash": "4973cf3bc31640caadbb8ff770a32f12a4324ec7e02e464a9a06d1fcb32dc4f7",
           "quote": "a $66 million Series C funding round led by Sequoia",
           "quote_hash": "b1dd4e17bd4d7fa1eab1b54ef64248489b226e0df91e8cc567be12ab3684aabf"
-        },
-        {
-          "source_id": "FISRC-0b9a2de412bfecea",
-          "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
-          "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
-          "source_content_hash": "b097b8e1cde199ce",
-          "quote": "Serie C de US$66 millones liderada por Sequoia Capital",
-          "quote_hash": "a25971a623a948f50c6842d50263e65a8e541c335e6fced94fc14ab433aa49ce"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2444,7 +2501,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[32].role": {
+        "activities[33].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",
@@ -2452,7 +2509,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[34].role": {
+        "activities[35].role": {
           "text": "Series D 领投",
           "source_hash": "b1ad54c261addee1c044320cc302024b488ee22b0810e11ab5f9b281dda6d2b7",
           "provider": "deepseek",
@@ -2460,7 +2517,7 @@
           "translated_at": "2026-10-03T00:37:44.351Z",
           "status": "translated"
         },
-        "activities[36].role": {
+        "activities[37].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",
@@ -2468,7 +2525,7 @@
           "translated_at": "2026-10-01T19:38:36.584Z",
           "status": "translated"
         },
-        "activities[38].role": {
+        "activities[39].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",
