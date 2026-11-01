@@ -9,6 +9,42 @@ spec=importlib.util.spec_from_file_location('hermes_review',Path(__file__).paren
 review=importlib.util.module_from_spec(spec); spec.loader.exec_module(review)
 
 class ReadBoundaryTests(unittest.TestCase):
+    def test_only_typed_transport_and_known_protocol_errors_are_retryable(self):
+        for error in [TimeoutError('provider'),ConnectionError('provider'),RuntimeError('hermes_review_submission_missing')]:
+            self.assertTrue(review.classify_failure(error)['retryable'])
+        for error in [RuntimeError('unknown timeout business rule'),RuntimeError('hermes_review_identity_mismatch:head_sha')]:
+            self.assertFalse(review.classify_failure(error)['retryable'])
+        for status,expected in [(401,False),(403,False),(429,True),(503,True)]:
+            error=RuntimeError('provider');error.status_code=status
+            self.assertEqual(review.classify_failure(error)['retryable'],expected)
+
+    def test_structured_submission_does_not_depend_on_prose_json(self):
+        decision={'date':'2026-11-01','head_sha':'a'*40,'verdict':'approved',
+                  'checks':{'sources':True,'facts':True,'scope':True,'classification':True,'preservation':True},
+                  'evidence':['Original says "€1.5 million" and $2 million.'],'issues':[],'observations':[]}
+        schema={'type':'object','required':list(decision),'additionalProperties':False,
+                'properties':{key:{'type':kind} for key,kind in [('date','string'),('head_sha','string'),('verdict','string'),('checks','object'),('evidence','array'),('issues','array'),('observations','array')]}}
+        context={'date':decision['date'],'head_commit':decision['head_sha'],'required_originals':{'FI-a':[{'path':'objects/a.txt'}]}}
+        reads=[{'root':'evidence','path':'objects/a.txt'}]
+        submission=review.ReviewSubmission(schema,context,reads)
+        self.assertFalse(json.loads(submission.submit({'verdict':'approved'}))['accepted'])
+        self.assertFalse(json.loads(submission.submit({**decision,'head_sha':'wrong'}))['accepted'])
+        self.assertIsNone(submission.decision)
+        self.assertTrue(json.loads(submission.submit(decision))['accepted'])
+        with tempfile.TemporaryDirectory() as temp:
+            result={'completed':True,'final_response':'Acknowledged. No JSON text needed.'}
+            path=Path(temp)/'result.json';audit={'reads':reads}
+            self.assertEqual(review.finalize_review(result,schema,context,audit,path,submission),decision)
+            self.assertEqual(json.loads(path.read_text(encoding='utf-8')),decision)
+            self.assertEqual(audit['decision_transport'],'validated_tool_submission')
+            with self.assertRaisesRegex(RuntimeError,'incomplete'):
+                review.finalize_review({**result,'partial':True},schema,context,audit,Path(temp)/'partial.json',submission)
+        other=review.ReviewSubmission(schema,context,[])
+        self.assertFalse(json.loads(other.submit(decision))['accepted'])
+        self.assertIsNone(other.decision)
+        self.assertFalse(json.loads(submission.submit({**decision,'verdict':'hold'}))['accepted'])
+        self.assertTrue(submission.conflict)
+
     def test_single_final_json_can_follow_explanation_or_fence(self):
         expected={'verdict':'approved','checks':{'sources':True}}
         body=json.dumps(expected)
@@ -21,7 +57,7 @@ class ReadBoundaryTests(unittest.TestCase):
                 review.parse_review_response(text)
 
     def test_recovered_output_preserves_identity_completion_and_read_gates(self):
-        decision={'date':'2026-10-16','head_sha':'abc','verdict':'approved','checks':{'sources':True}}
+        decision={'date':'2026-10-16','head_sha':'abc','verdict':'approved','checks':{'sources':True},'evidence':['original read and confirmed']}
         result={'completed':True,'final_response':'Review complete.\n'+json.dumps(decision)}
         context={'date':'2026-10-16','head_commit':'abc','required_originals':{'FI-a':[{'path':'objects/a.txt'}]}}
         audit={'verdict':'unknown','reads':[{'root':'evidence','path':'objects/a.txt'}]}

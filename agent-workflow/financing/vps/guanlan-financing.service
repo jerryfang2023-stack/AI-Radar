@@ -2,6 +2,8 @@
 Description=Guanlan financing cloud daily supervisor and recovery
 After=network-online.target
 Wants=network-online.target
+StartLimitIntervalSec=1h
+StartLimitBurst=3
 
 [Service]
 Type=oneshot
@@ -12,6 +14,10 @@ EnvironmentFile=/etc/guanlan-financing/runtime.env
 ExecStart=/opt/guanlan-financing-tools/run.sh --watch=true
 UMask=0077
 TimeoutStartSec=6h
+# Recover a killed process from durable receipts; ordinary quality failures exit
+# normally/nonzero and must not be blindly restarted by systemd.
+Restart=on-abnormal
+RestartSec=2min
 # Full-catalog publication exceeded the former 1600M cgroup ceiling.
 # Keep a bounded budget while leaving headroom on the 4 GB VPS.
 MemoryMax=2800M

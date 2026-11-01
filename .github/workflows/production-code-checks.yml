@@ -86,4 +86,10 @@ jobs:
       # Validate the committed OPS projection before merge, not only at Pages deployment.
       - run: npm run test:ops-unified
       - run: npm run test:funding-insights
+      - name: Financing reviewer and safe cleanup regressions
+        run: |
+          npm run test:financing-regressions
+          python -m pip install --disable-pip-version-check jsonschema==4.26.0
+          python agent-workflow/financing/tests/hermes_review_test.py
+          python agent-workflow/financing/tests/worktree_cleanup_test.py
       - run: npm run test:profile-collection

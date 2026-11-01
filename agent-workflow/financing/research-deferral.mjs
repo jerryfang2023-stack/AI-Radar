@@ -4,7 +4,28 @@ import {digest} from './state.mjs';
 
 const version='FINANCING-RESEARCH-DEFERRAL-1';
 const allowedReasons=new Set(['research_sources_insufficient','research_independent_sources_insufficient']);
+// Known per-candidate failures may withhold only a new subject with accepted
+// source-bound Claims. Unknown exceptions, hashes and schema errors stay fatal.
+const candidateReasons=new Set(['subject_company_unresolved','ambiguous_company_full_name_not_in_canonical_source',
+  'funding_current_round_amount_mismatch','funding_event_company_amount_mismatch','funding_cumulative_amount_used_as_round',
+  'funding_amount_is_valuation','funding_current_round_label_mismatch']);
 const cardEvents=card=>[card.triggered_by_event_id,...(card.source_event_ids || [])];
+const nameKey=name=>String(name || '').normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu,'');
+
+function candidateBinding(event,bundle,cards) {
+  const entities=(bundle.entities || []).filter(entity=>(event.entities || []).includes(entity.entity_id));
+  const names=new Set(entities.flatMap(entity=>[entity.canonical_name,...(entity.aliases || [])]).map(nameKey).filter(Boolean));
+  const refs=new Set(event.source_refs || []),ids=new Set(event.entities || []);
+  if(cards.some(card=>ids.has(card.company?.entity_id) || ids.has(card.company?.canonical_entity_id)
+    || [card.company?.name,card.company?.full_name].some(name=>names.has(nameKey(name)))
+    || (card.source_refs || []).some(ref=>refs.has(ref))))return null;
+  const claims=(bundle.claims || []).filter(claim=>(event.claim_refs || []).includes(claim.claim_id)
+    && claim.claim_type==='funding' && claim.verification_status==='accepted' && String(claim.source_quote || '').trim().length>=12
+    && (bundle.rawDocuments || []).some(raw=>raw.raw_id===claim.raw_id && refs.has(raw.source_artifact_id)));
+  if(!claims.length)return null;
+  return {isolation:'new_candidate_only',entity_binding:digest(entities),claim_refs:claims.map(claim=>claim.claim_id).sort(),
+    evidence_quotes:claims.map(claim=>({claim_id:claim.claim_id,raw_id:claim.raw_id,quote:claim.source_quote.slice(0,240),quote_hash:digest(claim.source_quote.slice(0,240))}))};
+}
 
 function binding(event,bundle) {
   const refs=new Set(event.source_refs || []);
@@ -21,11 +42,14 @@ function binding(event,bundle) {
 export function researchDeferral(event,bundle,row,cards=[]) {
   if(!event || event.event_type!=='funding' || event.publication_status!=='verified'
     || row?.event_id!==event.event_id || row.status!=='blocked' || !row.problems?.length
-    || row.problems.some(reason=>!allowedReasons.has(reason)) || cards.some(card=>cardEvents(card).includes(event.event_id)))return null;
+    || row.problems.some(reason=>!allowedReasons.has(reason) && !candidateReasons.has(reason)) || cards.some(card=>cardEvents(card).includes(event.event_id)))return null;
+  const isolated=row.problems.some(reason=>candidateReasons.has(reason));
+  const candidate=isolated?candidateBinding(event,bundle,cards):null;
+  if(isolated && !candidate)return null;
   const evidence=binding(event,bundle);
   if(!evidence)return null;
   return {version,event_id:event.event_id,status:'pending_verification',reason:row.problems.join('|'),
-    ...evidence,next_action:'recover_existing_originals_and_complete_independent_research',fact_approval:false};
+    ...evidence,...candidate,next_action:isolated?'responsible_review_of_candidate_identity_amount_and_round':'recover_existing_originals_and_complete_independent_research',fact_approval:false};
 }
 
 export function validResearchDeferral(event,bundle,row,cards=[]) {
@@ -50,7 +74,7 @@ export function pendingResearchEvents(root) {
     if(!bundles.has(date)) {
       const base=path.join(root,'01-SiteV2/content/11-databases/data-center-v4',date);
       const load=name=>fs.existsSync(path.join(base,name))?read(path.join(base,name)):[];
-      bundles.set(date,{events:load('canonical-events.json'),claims:load('claims.json'),rawDocuments:load('raw-documents.json')});
+      bundles.set(date,{events:load('canonical-events.json'),claims:load('claims.json'),rawDocuments:load('raw-documents.json'),entities:load('entities.json')});
     }
     const bundle=bundles.get(date),event=bundle.events.find(e=>e.event_id===row.event_id);
     if(validResearchDeferral(event,bundle,row,cards))pending.set(row.event_id,row.deferral.reason);
