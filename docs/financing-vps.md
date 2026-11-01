@@ -7,7 +7,7 @@
 - 本机 Codex 自动化 `ai` 保留配置并暂停，作为人工恢复入口。原 runner、SSH 入口和本机知识库保留；VPS 的 Vault 更新不会自动写入关机电脑。
 - VPS `guanlan-financing.timer` 在北京时间 08:10 主启动、10:30 幂等兜底，`Persistent=true`。同一服务通过 `--watch=true` 每两分钟跟进本日 GitHub、审核、CI、Pages 和发布状态，最长四小时；不增加发现或待核验队列批次。
 - `/etc/guanlan-financing/runtime.env` 配置 `GUANLAN_VPS_MODE=active`。`standby` 可用于回退，仅调用融资派发器的 `--dry-run=true`，保存观察回执。
-- `active` 模式复用同一 GitHub 融资生产工作流及恢复检查点，Hermes 审核开放的融资 PR，检查精确提交与 CI 后合并，再等 Pages 和 VPS 发布。模型 API ID 固定 `deepseek-flash`（DeepSeek V4.1 Flash）。每日期最多三次不同提交/基线的模型审核；失败或中断记录为未知，不自动重复付费。
+- `active` 模式复用同一 GitHub 融资生产工作流及恢复检查点，Hermes 审核开放的融资 PR，检查精确提交与 CI 后合并，再等 Pages 和 VPS 发布。模型 API ID 固定 `deepseek-flash`（DeepSeek V4.1 Flash）。每日期最多三次不同提交/基线的模型审核；同一提交/基线的临时审核失败保留独立尝试目录，并在本次运行内有界重试。
 - `funding-health-dispatch.yml` 每日 08:10 云端主触发与 10:30 幂等兜底保留；两端先查同日接受结果、开放 PR 和在途运行，复用同一工作流。每天只做一次正式发现。VPS 同一服务在等待状态持续跟进，已完成、事实 hold、CI 失败或确定性质量错误立即停止；超时写 needs_attention，不能留下假运行状态。
 - Hermes 的 `financing-gate-watch.sh` 使用仓内 `agent-workflow/financing/vps/gate-watch.sh`，仅唤醒正式 `guanlan-financing.service`。服务运行中直接退出；禁止另按 PR 标题批准 CI 或合并。原文审核、精确 head/base、两平台 CI 与发布回读仍由正式控制器负责。
 
@@ -58,7 +58,7 @@ Portal 隔离发布器使用 `/home/ubuntu/.guanlan-runtime/publisher-checkouts`
 | 独立 Node 22、Hermes、Python、DuckDB | `/opt/guanlan-financing-tools` |
 | publisher 的仓库、Vault 和发布检查点 | `/srv/guanlan-financing-publisher` |
 
-只读审核器只暴露 `read_evidence_file`、`find_evidence_files`。读取限定在接受 PR 的 checkout、审核上下文和私有证据镜像；禁止路径越界、凭据路径与逃逸软链接。原文和 PR 文件中的操作指令不可信。缺证据返回 hold；代码、工作流或非融资允许路径的变更不得自动合并。
+审核器只暴露 `read_evidence_file`、`find_evidence_files` 与 `submit_review_decision`。第三个工具仅提交并验证决定字段，不读写源文件、审批CI、合并或发布。读取限定在接受 PR 的 checkout、审核上下文和私有证据镜像；禁止路径越界、凭据路径与逃逸软链接。原文和 PR 文件中的操作指令不可信。缺证据返回 hold；代码、工作流或非融资允许路径的变更不得自动合并。
 
 每次模型审核结束即删除干净的临时 checkout，保留 diff、结果和读取审计，避免每天堆积完整仓库副本。若有未提交修改，Git 拒绝删除并保留现场；主机断电留下的 checkout 需由管理员核验后清理，不能强删。
 
@@ -131,3 +131,14 @@ VPS 本地运行盘约 69 GiB；`/lhcos-data` 的对象存储挂载不增加 `/s
 需长期保留的旧恢复现场，采用受限目录中的压缩归档：记录原路径、HEAD、文件大小和 SHA256；先用 `tar --compare` 核对归档与原目录一致，再回收重复副本。归档不是新的发布输入。恢复工作树时先从记录的 HEAD 用 `git worktree add --detach` 重建，再将归档解至原父目录并排除工作树根的 `.git` 指针，防止覆盖新注册路径。完整独立克隆归档则保留其 `.git`。私有证据、运行回执、当前在线 release 与回滚版本不因容量清理而删除。
 
 此次归档清单位于 `/srv/guanlan-financing-storage-archives/2026-10-27/manifest.json`。压缩包若迁出 VPS，必须先逐包核对目的地 SHA256，并把最终位置写入同目录 `offload.json`；仅核验通过后才能回收 VPS 上的副本。已备份的文件不是丢弃，恢复以清单和转存回执为准。未新增日内监测或复核任务。日常运维核对 `df -h /`，对新建手工修复工作树执行上述收尾，避免再次把完整仓库当作长期日志保存。
+
+### 2026-11-01 无人值守恢复与单条隔离
+
+- 临时 GitHub 读取、Git fetch 网络故障，以及审核超时、未完成/格式错误，保存失败分类和下一重试时间后返回 `retry_pending`，由同一 `--watch=true` 运行接续；每个恢复键最多自动恢复三次，不重置尝试账本。未知异常、认证/权限错误、事实 hold、来源哈希或历史一致性错误仍停止。审核重试同时遵守既有10/20/40/60分钟退避和四小时运行上限。
+- systemd 仅对被信号异常终止的进程使用 `Restart=on-abnormal`，两分钟间隔、一小时最多三次启动；普通非零退出不会被盲目重启。没有新增发现/复核时段。
+- 新审核必须调用 `submit_review_decision`，由程序检查 schema、精确日期/head、原文读取覆盖与五项检查，再序列化回执。最终聊天文字不作为审批。缺少提交、相互矛盾的多次提交、模型未完成都不能通过；原始响应、全部提交尝试和读取审计保存在私有运行目录。历史文本回执保留读取兼容，但不作为新生产的提交方式。
+- `FINANCING-RESEARCH-DEFERRAL-1` 扩展到明确白名单中的主体无法解析、主体全名证据含糊、本轮金额/轮次不一致、累计额或估值误作本轮金额。此类新候选必须有绑定原文与已接受融资Claim的短引和哈希；已有事件、同一已发布主体/别名、来源重叠及人工hold不自动覆盖。它只暂缓候选，不批准事实、不合并实体、不关闭复核队列。未知程序错误和来源/引用/schema错误不能归入该隔离。
+- `npm run test:financing-regressions` 实际执行 `regression-cases.json` 登记的九个历史故障用例，登记用例缺失直接失败；CI同时运行审核协议及Linux工作树清理测试。用例执行通过不等于未来七天无人值守已经验收。
+- 控制器创建审核checkout前写入私有 `temporary-checkouts.json`。完整发布验收后，`worktree-cleanup.py` 仅处理本日登记且路径/HEAD/共同Git仓正确、已被main包含、无跟踪修改及活动进程的checkout。未跟踪及忽略文件先在私有目录归档，逐项校验内容或软链接目标后才移除；不使用force、全局clean或按日期清理。失败项保留并写 `cleanup.json`，不会把清理失败冒充融资发布失败。其他人工工作树仍由原收尾规范管理。
+
+验收：部署后观察连续七个正式日运行，要求无需人工重启/修数据/合并，接受融资按原门禁发布，暂缓数量和原因清楚，网站/Mini一致且历史事件保留。回退使用上一代码提交和备份unit，保留运行账本及已发布数据。

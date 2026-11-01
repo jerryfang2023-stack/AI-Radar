@@ -176,6 +176,7 @@
     "assert:scys-library": "node agent-workflow/tools/build-scys-community-library.mjs --check",
     "build:financing-read-model": "node agent-workflow/financing/read-model.mjs",
     "test:financing-monitor": "node --test agent-workflow/financing/tests/*.test.mjs",
+    "test:financing-regressions": "node agent-workflow/financing/regressions.mjs",
     "financing:dispatch": "node agent-workflow/financing/dispatch.mjs",
     "financing:run": "node agent-workflow/financing/run.mjs",
     "financing:publish": "node agent-workflow/financing/publish.mjs",
