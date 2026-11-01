@@ -1,0 +1,112 @@
+{
+  "ok": true,
+  "status": "review",
+  "generated_at": "2026-11-01T16:35:23.648Z",
+  "window": {
+    "start": "2026-10-27",
+    "end": "2026-11-02",
+    "days": 7
+  },
+  "daily": {
+    "laneTotals": {},
+    "recurringProblems": {},
+    "recurringWarnings": {},
+    "reportRows": [
+      {
+        "date": "2026-10-27",
+        "status": "missing",
+        "lanes": []
+      },
+      {
+        "date": "2026-10-28",
+        "status": "missing",
+        "lanes": []
+      },
+      {
+        "date": "2026-10-29",
+        "status": "missing",
+        "lanes": []
+      },
+      {
+        "date": "2026-10-30",
+        "status": "missing",
+        "lanes": []
+      },
+      {
+        "date": "2026-10-31",
+        "status": "missing",
+        "lanes": []
+      },
+      {
+        "date": "2026-11-01",
+        "status": "missing",
+        "lanes": []
+      },
+      {
+        "date": "2026-11-02",
+        "status": "missing",
+        "lanes": []
+      }
+    ],
+    "missingReports": [
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-10-31",
+      "2026-11-01",
+      "2026-11-02"
+    ]
+  },
+  "incidents": {
+    "incidents": [],
+    "categoryCounts": {},
+    "laneCounts": {},
+    "unresolved": []
+  },
+  "actionLogs": {
+    "records": [],
+    "issueCounts": {},
+    "riskCounts": {},
+    "failed": [],
+    "unregistered": []
+  },
+  "loopEscalations": [],
+  "github": [
+    {
+      "workflow": "daily-persistent-assets-pr.yml",
+      "available": true,
+      "error": "",
+      "runs": 0,
+      "failures": 0,
+      "in_progress": 0,
+      "latest": null
+    },
+    {
+      "workflow": "daily-first-line-viewpoints-pr.yml",
+      "available": true,
+      "error": "",
+      "runs": 0,
+      "failures": 0,
+      "in_progress": 0,
+      "latest": null
+    },
+    {
+      "workflow": "github-pages.yml",
+      "available": true,
+      "error": "",
+      "runs": 0,
+      "failures": 0,
+      "in_progress": 0,
+      "latest": null
+    }
+  ],
+  "conflicts": {
+    "available": false,
+    "count": 0,
+    "matches": []
+  },
+  "actions": [
+    "Backfill or intentionally skip missing daily supervision reports: 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-30, 2026-10-31, 2026-11-01, 2026-11-02"
+  ]
+}
