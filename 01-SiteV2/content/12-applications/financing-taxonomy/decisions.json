@@ -35851,7 +35851,83 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-10-31T00:53:33.653Z"
+    },
+    "EV-28aa9b8f89bd04b3": {
+      "id": "EV-28aa9b8f89bd04b3",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "consumer",
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "该公司以AI与计算机视觉为老年人及弱势群体提供环境监测与跌倒检测，属于医疗照护行业AI产品。",
+      "input_hash": "63d6182ab01caa707fe243d2b8363424431a550d8dd52cb941b6229a40a872be",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d37b8c83fd9fdf10",
+          "quote": "Magic Vision, an Italian DeepTech startup developing AI and computer vision technologies to monitor and support older people and vulnerable individuals"
+        },
+        {
+          "source_id": "FISRC-d37b8c83fd9fdf10",
+          "quote": "it develops Silver Eye, an environmental monitoring system for older people and vulnerable individuals, designed to support their independence and assist families and care professionals."
+        },
+        {
+          "source_id": "FISRC-d37b8c83fd9fdf10",
+          "quote": "Silver Eye uses proprietary AI and computer vision algorithms to analyse people’s activity and rest patterns , identify behavioural anomalies and detect critical events such as falls."
+        },
+        {
+          "source_id": "FISRC-d37b8c83fd9fdf10",
+          "quote": "data is processed locally using edge AI, without storing or transmitting images"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-01T04:06:23.492Z"
+    },
+    "EV-76a1dbe418adc8dd": {
+      "id": "EV-76a1dbe418adc8dd",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "该公司为财富管理机构提供整合CRM、会议智能与托管工作流的AI智能体平台，属于金融行业AI。",
+      "input_hash": "781f39af75b9a7cbaaee397c4cb5902b6657b42547cbb8a9aeb6725ababaf370",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4ef85aec7ebdf94c",
+          "quote": "London/NY-based Nevis, an AI OS for wealth management"
+        },
+        {
+          "source_id": "FISRC-4ef85aec7ebdf94c",
+          "quote": "By bringing CRM, meeting intelligence, financial planning, and custodial workflows together in a single AI platform, Nevis agents handle operational work end-to-end"
+        },
+        {
+          "source_id": "FISRC-3494ec37636b3f44",
+          "quote": "Nevis solves this by building AI agents that act like digital assistants."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-01T04:06:23.492Z"
     }
   },
-  "generated_at": "2026-10-31T00:53:33.653Z"
+  "generated_at": "2026-11-01T04:06:23.493Z"
 }

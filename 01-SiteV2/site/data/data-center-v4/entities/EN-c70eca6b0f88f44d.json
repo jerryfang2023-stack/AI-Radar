@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-31",
-    "currentDate": "2026-10-31",
-    "eventCount": 4333,
+    "latestDataDate": "2026-11-01",
+    "currentDate": "2026-11-01",
+    "eventCount": 4338,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -419,6 +419,7 @@
       "EV-8115dd18f2812a29",
       "EV-cf496e0f8a56ca97",
       "EV-8cb5b0ed18c7cdd8",
+      "EV-20253e8f968787c7",
       "EV-38f85ebd3ffeb9da",
       "EV-7ddfa7b82af141ec",
       "EV-c4964bb580827988",
@@ -623,7 +624,7 @@
       "EN-da20c5952dba19d8"
     ],
     "firstSeen": "2025-09-04",
-    "lastSeen": "2026-10-31",
+    "lastSeen": "2026-11-01",
     "relationIds": [
       "REL2-6460871b6d621283",
       "REL2-02bdd133e9353ff7",
@@ -685,6 +686,7 @@
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-53dad7c8f530b480",
+        "EV-20253e8f968787c7",
         "EV-38f85ebd3ffeb9da",
         "EV-7ddfa7b82af141ec",
         "EV-c4964bb580827988",
@@ -1191,7 +1193,7 @@
     "timeline": [
       {
         "id": "EV-53dad7c8f530b480",
-        "dataDate": "2026-10-31",
+        "dataDate": "2026-11-01",
         "date": "2026-10-27",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -1225,8 +1227,24 @@
         ]
       },
       {
+        "id": "EV-20253e8f968787c7",
+        "dataDate": "2026-11-01",
+        "date": "2026-10-31",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "史上最大 IPO 前夕，黑石突然改口称 Anthropic 或无法获得投资级信用评级",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d1e9161dabbfee1b",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
         "id": "EV-38f85ebd3ffeb9da",
-        "dataDate": "2026-10-31",
+        "dataDate": "2026-11-01",
         "date": "2026-10-30",
         "eventType": "ipo_listing",
         "eventTypeLabel": "IPO 与上市",
@@ -1241,7 +1259,7 @@
       },
       {
         "id": "EV-7ddfa7b82af141ec",
-        "dataDate": "2026-10-31",
+        "dataDate": "2026-11-01",
         "date": "2026-10-26",
         "eventType": "ipo_listing",
         "eventTypeLabel": "IPO 与上市",
@@ -1257,7 +1275,7 @@
       },
       {
         "id": "EV-c4964bb580827988",
-        "dataDate": "2026-10-31",
+        "dataDate": "2026-11-01",
         "date": "2026-10-26",
         "eventType": "ipo_listing",
         "eventTypeLabel": "IPO 与上市",
@@ -15381,7 +15399,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-31"
+      "lastSeen": "2026-11-01"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -15394,6 +15412,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-5c5476971d6a707b",
         "EV-7684bfb9b954c1fd",
         "EV-e1d0e727ae30cdf0",
         "EV-c964f7646ad88c1e",
@@ -16031,7 +16050,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-30"
+      "lastSeen": "2026-11-01"
     },
     {
       "id": "EN-729324072d368379",
@@ -19264,7 +19283,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-31"
+      "lastSeen": "2026-11-01"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -19540,7 +19559,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-10-31"
+      "lastSeen": "2026-11-01"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -19983,7 +20002,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-10-31"
+      "lastSeen": "2026-11-01"
     },
     {
       "id": "TX-target_user-business_user",
@@ -20711,7 +20730,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-10-31"
+      "lastSeen": "2026-11-01"
     },
     {
       "id": "TX-target_user-developer",
@@ -21229,7 +21248,7 @@
         "HW-f05a371d8e0599b0"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-10-31"
+      "lastSeen": "2026-11-01"
     },
     {
       "id": "TX-use_case-software_development",
@@ -21504,7 +21523,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-10-31"
+      "lastSeen": "2026-11-01"
     },
     {
       "id": "TX-product_form-model",
@@ -22201,7 +22220,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-31"
+      "lastSeen": "2026-11-01"
     },
     {
       "id": "TX-industry-financial_services",
@@ -22453,7 +22472,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-10-31"
+      "lastSeen": "2026-11-01"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",

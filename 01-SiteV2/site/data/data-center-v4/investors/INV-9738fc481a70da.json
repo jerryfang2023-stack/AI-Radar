@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-31",
-    "currentDate": "2026-10-31",
-    "eventCount": 4333,
+    "latestDataDate": "2026-11-01",
+    "currentDate": "2026-11-01",
+    "eventCount": 4338,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-01-14",
-    "latest_disclosed_at": "2026-10-05",
+    "latest_disclosed_at": "2026-10-26",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 2,
       "other_current_round": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "multi_round",
@@ -106,12 +106,57 @@
         "name": "Listen Labs"
       },
       {
+        "entity_id": "EN-bdfcfbdc9e0896ff",
+        "canonical_entity_id": "",
+        "name": "Nevis"
+      },
+      {
         "entity_id": "EN-aab373badaa83178",
         "canonical_entity_id": "",
         "name": "Valon Technologies"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c146408f5ab51969",
+        "funding_insight_id": "FI-2bd46dca95154b25",
+        "event_ids": [
+          "EV-76a1dbe418adc8dd"
+        ],
+        "company_entity_id": "EN-bdfcfbdc9e0896ff",
+        "company_canonical_entity_id": "",
+        "company_name": "Nevis",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "€62 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 62000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6200 万欧元"
+        },
+        "announced_at": "2026-10-26",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4ef85aec7ebdf94c",
+            "source_url": "https://www.eu-startups.com/2026/10/wealthtech-startup-nevis-secures-e62-million-to-automate-financial-advisory-workflows-with-ai/",
+            "source_title": "财富科技初创公司Nevis获得6200万欧元，用于通过AI自动化金融咨询工作流程",
+            "source_content_hash": "2bfdad1be207360ad77f17aad44ebb6ebf54c996f208ea0b73ca4b87c9f2450e",
+            "quote": "All existing investors, including Sequoia Capital, ICONIQ and Ribbit Capital, have also expanded their commitments in this new round.",
+            "quote_hash": "69066058e95a369b8b1102f82098f764661d79dce57bf6349644cdfcc9878f46"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e949c74b92e610bc",
         "funding_insight_id": "FI-7df451dda11fdc94",
@@ -389,6 +434,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-4ef85aec7ebdf94c",
+        "source_url": "https://www.eu-startups.com/2026/10/wealthtech-startup-nevis-secures-e62-million-to-automate-financial-advisory-workflows-with-ai/",
+        "source_title": "财富科技初创公司Nevis获得6200万欧元，用于通过AI自动化金融咨询工作流程",
+        "source_content_hash": "2bfdad1be207360ad77f17aad44ebb6ebf54c996f208ea0b73ca4b87c9f2450e",
+        "quote": "All existing investors, including Sequoia Capital, ICONIQ and Ribbit Capital, have also expanded their commitments in this new round.",
+        "quote_hash": "69066058e95a369b8b1102f82098f764661d79dce57bf6349644cdfcc9878f46"
+      },
+      {
         "source_id": "FISRC-7144312b4dd2f62c",
         "source_url": "https://www.morningstar.com/news/business-wire/20261005181820/valon-raises-150-million-series-d-at-a-23-billion-valuation-to-deploy-valonos-and-ai-agents-into-mortgage",
         "source_title": "Valon 以 23 亿美元估值完成 1.5 亿美元 D 轮融资，将 ValonOS 和 AI 智能体部署到抵押贷款领域",
@@ -480,16 +533,16 @@
           "source_id": "ribbit_sec"
         },
         {
+          "description": "融资来源记录：Nevis · B轮 · 2026-10-26 · 本轮参投 · €62 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4ef85aec7ebdf94c"
+        },
+        {
           "description": "融资来源记录：Valon Technologies · D轮 · 2026-10-05 · 本轮参投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7144312b4dd2f62c"
         },
         {
           "description": "融资来源记录：Artificial Intelligence Underwriting Company (AIUC) · A轮 · 2026-09-15 · 本轮领投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-926b8b12b411de6f"
-        },
-        {
-          "description": "融资来源记录：Etched · 多轮融资 · 2026-06-30 · 本轮参投（2025年12月5亿美元轮次） · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ec090e2bf0f8f6e9"
         }
       ],
       "contacts": [
@@ -534,6 +587,14 @@
           "quote_hash": "af740693ac79712cf19236d0970930c81766acd8c41d1d7dcd83b367c3c16a6e"
         },
         {
+          "source_id": "FISRC-4ef85aec7ebdf94c",
+          "source_url": "https://www.eu-startups.com/2026/10/wealthtech-startup-nevis-secures-e62-million-to-automate-financial-advisory-workflows-with-ai/",
+          "source_title": "财富科技初创公司Nevis获得6200万欧元，用于通过AI自动化金融咨询工作流程",
+          "source_content_hash": "2bfdad1be207360ad77f17aad44ebb6ebf54c996f208ea0b73ca4b87c9f2450e",
+          "quote": "All existing investors, including Sequoia Capital, ICONIQ and Ribbit Capital, have also expanded their commitments in this new round.",
+          "quote_hash": "69066058e95a369b8b1102f82098f764661d79dce57bf6349644cdfcc9878f46"
+        },
+        {
           "source_id": "FISRC-7144312b4dd2f62c",
           "source_url": "https://www.morningstar.com/news/business-wire/20261005181820/valon-raises-150-million-series-d-at-a-23-billion-valuation-to-deploy-valonos-and-ai-agents-into-mortgage",
           "source_title": "Valon 以 23 亿美元估值完成 1.5 亿美元 D 轮融资，将 ValonOS 和 AI 智能体部署到抵押贷款领域",
@@ -548,14 +609,6 @@
           "source_content_hash": "f47f08e37782472741ba350cbabd98e87c97bdfffc91a4d53ef6569e1d71c5df",
           "quote": "AIUC announced a $40 million Series A led by Ribbit Capital, with participation from First Harmonic.",
           "quote_hash": "a84417bf13f516ae245d8f0761a4e6737d094ac2fab542d6e44f5373efce82f6"
-        },
-        {
-          "source_id": "FISRC-ec090e2bf0f8f6e9",
-          "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
-          "source_title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
-          "source_content_hash": "fa74de6f9a9e3ef8",
-          "quote": "That round included Peter Thiel, Positive Sum, Ribbit Capital, Hudson River Trading, and Two Sigma.",
-          "quote_hash": "1dfff416174e07a43db5f6f5b53190faadafe8a50e93dc41fbc1bf09edb62f85"
         }
       ],
       "last_verified_at": "2026-09-25",

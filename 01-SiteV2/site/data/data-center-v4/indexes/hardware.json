@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-10-31",
-    "currentDate": "2026-10-31",
-    "eventCount": 4333,
+    "latestDataDate": "2026-11-01",
+    "currentDate": "2026-11-01",
+    "eventCount": 4338,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -3657,13 +3657,13 @@
     {
       "id": "HWC-6691f417bed0e674",
       "snapshotKey": "6691f417bed0e674",
-      "snapshotId": "HWS-b7990363fc18bf9f",
+      "snapshotId": "HWS-2c61533d9892e832",
       "eventId": "EV-848a9d54114887d9",
       "eventIds": [
         "EV-848a9d54114887d9"
       ],
-      "dataDate": "2026-10-31",
-      "date": "2026-10-31",
+      "dataDate": "2026-11-01",
+      "date": "2026-11-01",
       "title": "AI 行业重磅并购",
       "subject": "AI 行业重磅并购",
       "productNames": [],
@@ -3675,12 +3675,21 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-bf95c8fd2da92eed"
+          "fact_ref": "HWF-51dd3df27a39de01"
         }
       },
       "factCount": 1,
-      "snapshotCount": 3,
+      "snapshotCount": 4,
       "changes": [
+        {
+          "date": "2026-11-01",
+          "previousDate": "2026-10-31",
+          "snapshotId": "HWS-2c61533d9892e832",
+          "previousSnapshotId": "HWS-b7990363fc18bf9f",
+          "changedFacts": [
+            "product"
+          ]
+        },
         {
           "date": "2026-10-31",
           "previousDate": "2026-10-30",
@@ -3704,8 +3713,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-10-31",
-          "hardware_fact_id": "HWF-bf95c8fd2da92eed",
+          "data_date": "2026-11-01",
+          "hardware_fact_id": "HWF-51dd3df27a39de01",
           "fact_type": "product",
           "observed_at": "2026-10-29",
           "subject_entity_id": "EN-7b3e572f9b08d7b0",
@@ -3719,11 +3728,11 @@
           "event_refs": [
             "EV-848a9d54114887d9"
           ],
-          "claim_ref": "CL-77cacfea83548e1e",
+          "claim_ref": "CL-e890af9253b66317",
           "source_refs": [
             "SA-1de2470f1a3e55ae"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-31/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-11-01/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -22113,19 +22122,20 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-10-31",
-      "funnel_id": "LF-c0931e2b31ba2ed4",
+      "data_date": "2026-11-01",
+      "funnel_id": "LF-46e1a8776f085424",
       "lens": "hardware",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "monitoring_paths": [],
-      "raw_documents": 13,
-      "original_sources": 13,
+      "raw_documents": 15,
+      "original_sources": 15,
       "valid_claims": 18,
       "observations": 1,
       "canonical_events": 6,
       "blocker_counts": {
-        "event_not_ai_relevant": 5,
-        "cumulative_funding_total_not_single_round": 2
+        "event_not_ai_relevant": 6,
+        "cumulative_funding_total_not_single_round": 2,
+        "no_source_bounded_event": 1
       },
       "rates": {
         "original_source_rate": 1,
@@ -22133,7 +22143,7 @@
         "observation_rate": 0.05555555555555555,
         "event_conversion_rate": 0.3333333333333333
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-31/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-11-01/monitoring-funnel.json"
     }
   ]
 }
