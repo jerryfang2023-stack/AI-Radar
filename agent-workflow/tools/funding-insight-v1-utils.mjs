@@ -1987,6 +1987,14 @@ export function researchPayloadProblems(payload = {}, sources = [], directionIds
     }
   }
   problems.push(...fundingInvestorLeadershipProblems(payload?.financing?.investors));
+  const roundAmount = normalizeFundingAmount(payload?.financing?.amount);
+  const cumulativeAmount = normalizeFundingAmount(payload?.financing?.total_raised);
+  if (roundAmount.status === "lower_bound" && cumulativeAmount.status === "exact"
+    && roundAmount.currency === cumulativeAmount.currency
+    && cumulativeAmount.value <= roundAmount.min_value) {
+    problems.push("funding_cumulative_amount_below_round_lower_bound");
+  }
+
   for (const [index, investor] of (payload?.financing?.other_round_investors || []).entries()) {
     if (!clean(investor?.name)) problems.push(`other_round_investor_${index + 1}_name_missing`);
     if (!clean(investor?.role) || !containsChinese(investor.role)) {

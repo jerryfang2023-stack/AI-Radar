@@ -3694,3 +3694,11 @@ test('backing-only citations cannot substantiate a lead investor role',async()=>
   for(const quote of ['The round was led by Globalway.','The round was co-led by Globalway and Alpha.','本轮由Globalway领投。'])
     assert.deepEqual(fundingInvestorLeadershipProblems([{...investor,evidence_refs:[{quote}]}]),[]);
 });
+
+test('fresh research cannot flatten a round lower bound into an exact smaller cumulative total',()=>{
+ const problems=(amount,total)=>researchPayloadProblems({financing:{amount,total_raised:total}});
+ const issue='funding_cumulative_amount_below_round_lower_bound';
+ for(const total of ['$6 million','$5 million'])assert.ok(problems('over $6 million',total).includes(issue));
+ for(const total of ['$7 million','over $6 million','', '€6 million'])assert.ok(!problems('over $6 million',total).includes(issue));
+ assert.ok(!problems('$6 million','$6 million').includes(issue));
+});
