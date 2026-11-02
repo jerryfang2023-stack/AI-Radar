@@ -116,3 +116,12 @@ test('reviewed financing duplicates collapse subjects without dropping distinct 
   for(const c of input)for(const ref of c.research_sources||[])assert.ok(subject.research_sources.some(s=>s.source_id===ref.source_id));
  }
 });
+
+test('subject histories preserve distinct event provenance exactly once without mutating input',()=>{
+ const item=card('bound','Acme','2026-10-29','seed',6);
+ item.source_event_ids=['EV-bound','EV-other','EV-other',''];
+ const before=structuredClone(item),out=buildFundingSubjects([item]);
+ assert.deepEqual(out.cards[0].historical_rounds[0].event_ids,['EV-bound','EV-other']);
+ assert.equal(out.cards[0].aggregation.event_count,1);
+ assert.deepEqual(item,before);
+});
