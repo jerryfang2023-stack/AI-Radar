@@ -293,6 +293,15 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
   if (/🤖.{0,120}💰.{0,120}(?:🎵|ElevenLabs)/u.test(title)) {
     return { accepted: false, reason: "multi_event_roundup_not_single_event_source" };
   }
+  // Periodic market totals describe many transactions, even when a company
+  // leads the headline. Require both the report label and aggregate source span;
+  // a company named 月报科技 or 月之暗面 is not itself a report container.
+  const periodicFundingReport = /(?:投融资|融资)/u.test(title)
+    && /(?:月报|周报|季报|年报)(?=$|[\s·：:|｜，,。！？!?])/u.test(title);
+  const marketTransactionCount = /(?:市场|领域|行业)[^。！？!?]{0,40}(?:发生|完成|累计|共)[^。！？!?]{0,12}(?:投融资|融资)(?:事件|交易)[^。！？!?]{0,8}\d+\s*(?:起|笔)/u.test(sourceLead);
+  if (options.eventType === "funding" && periodicFundingReport && marketTransactionCount) {
+    return { accepted: false, reason: "market_overview_not_company_funding_source" };
+  }
   // Stage-wide funding statistics are not a financing announcement by a company.
   // Keep the title anchored so a named startup's Series B raise stays eligible.
   if (options.eventType === "funding"

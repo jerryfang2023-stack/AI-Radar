@@ -3104,3 +3104,28 @@ test('present-tense approaching a funding round is not a completed raise despite
   assert.equal(check('Acme is closing in on a new funding round of up to $30 billion.').reason,'proposed_financing_not_completed');
   assert.equal(check('Acme has closed a funding round of $30 billion. Earlier it was closing in on a new funding round.').accepted,true);
 });
+
+
+test('Chinese periodic financing summaries cannot become a company raise despite named companies',()=>{
+  const body='十月人工智能市场发生投融资事件236起，披露融资金额约1391.55亿元。根据统计，2026年10月我国人工智能领域共发生投融资事件236起。DeepSeek是本月最大一笔投资，腾讯等机构参与。';
+  const titles=[
+    'DeepSeek 1055亿引爆，十月融资总额1391.55亿，同比约增10倍，月之暗面、开源中国等冲刺IPO| 2026年10月人工智能领域投融资分析·极新月报',
+    '2026年10月人工智能投融资月报：融资总额1391.55亿元',
+    'AI融资周报：本周市场共发生融资事件65起',
+    '月报：十月AI融资统计与公司动态',
+  ];
+  for(const title of titles) {
+    const decision=eventSourceEligibility({published_at:'2026-10-31',clean_text:body},{source_url:'https://example.com/report'},title,'2026-11-02',{eventType:'funding'});
+    assert.equal(decision.accepted,false,title);
+    assert.ok(['market_overview_not_company_funding_source','multi_event_roundup_not_single_event_source'].includes(decision.reason),title);
+    if(title===titles[0])assert.equal(decision.reason,'market_overview_not_company_funding_source');
+    const bundle=buildBundle([entry('chinese-financing-overview',title,body,{published_at:'2026-10-31'})],taxonomy,'2026-11-02','2026-11-02T00:00:00Z');
+    assert.equal(bundle.canonical_events.filter(event=>event.event_type==='funding').length,0,title);
+    assert.ok(bundle.qa_queue.some(row=>['market_overview_not_company_funding_source','multi_event_roundup_not_single_event_source'].includes(row.reason)),title);
+  }
+  for(const title of ['月之暗面完成新一轮融资','十月稻田完成5亿元B轮融资','月报科技完成1000万元天使轮融资','DeepSeek完成1055亿元融资','开源中国完成B轮融资']) {
+    for(const lead of ['公司宣布已完成本轮融资，用于人工智能产品研发。',body])
+      assert.equal(eventSourceEligibility({published_at:'2026-10-31',clean_text:lead},{source_url:'https://example.com/company'},title,'2026-11-02',{eventType:'funding'}).accepted,true,title);
+  }
+  assert.equal(eventSourceEligibility({published_at:'2026-10-31',clean_text:'公司宣布完成1000万元融资。'},{source_url:'https://example.com/company'},'月报科技完成融资，披露新品分析','2026-11-02',{eventType:'funding'}).accepted,true);
+});
