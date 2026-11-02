@@ -1954,6 +1954,14 @@ export function referencedSourceIds(payload = {}) {
   return ids;
 }
 
+// Backing/participation alone does not establish a lead-investor role. This
+// validates newly generated payloads; historical cards are not rewritten.
+export function fundingInvestorLeadershipProblems(investors = []) {
+  return (Array.isArray(investors) ? investors : []).some(investor => /领投|牵头|\b(?:co[- ]?)?lead\b/iu.test(clean(investor?.role))
+    && !(Array.isArray(investor.evidence_refs) ? investor.evidence_refs : []).some(ref => /\b(?:co[- ]?led|led|lead(?:ing)? investor)\b|领投|牵头/iu.test(clean(ref.quote))))
+    ? ['funding_investor_lead_role_unsubstantiated'] : [];
+}
+
 export function researchPayloadProblems(payload = {}, sources = [], directionIds = []) {
   const problems = [];
   const sourceById = new Map(sources.map((source) => [source.source_id, source]));
@@ -1978,6 +1986,7 @@ export function researchPayloadProblems(payload = {}, sources = [], directionIds
       problems.push("current_round_investors_missing");
     }
   }
+  problems.push(...fundingInvestorLeadershipProblems(payload?.financing?.investors));
   for (const [index, investor] of (payload?.financing?.other_round_investors || []).entries()) {
     if (!clean(investor?.name)) problems.push(`other_round_investor_${index + 1}_name_missing`);
     if (!clean(investor?.role) || !containsChinese(investor.role)) {

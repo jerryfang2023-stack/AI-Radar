@@ -3129,3 +3129,12 @@ test('Chinese periodic financing summaries cannot become a company raise despite
   }
   assert.equal(eventSourceEligibility({published_at:'2026-10-31',clean_text:'公司宣布完成1000万元融资。'},{source_url:'https://example.com/company'},'月报科技完成融资，披露新品分析','2026-11-02',{eventType:'funding'}).accepted,true);
 });
+
+
+test('adjusted fundraising goals are not completed proceeds while explicit closes remain eligible',()=>{
+  for(const title of ['AI“烧钱叙事”遇冷？OpenAI融资目标砍掉100亿！','某AI公司将融资目标下调至200亿美元','某AI公司上调募资目标至2亿美元']) {
+    assert.equal(eventSourceEligibility({published_at:'2026-11-01',clean_text:'据报道，公司将融资目标下调至200亿美元，投资承诺约110亿美元，预计首轮交割尚未完成。'},{source_url:'https://example.com/funding'},title,'2026-11-02',{eventType:'funding'}).reason,'proposed_financing_not_completed',title);
+  }
+  for(const title of ['某AI公司完成2亿美元融资，超额达成融资目标','某AI公司已获2亿美元融资，曾调整融资目标','某AI公司融资目标已达成，完成B轮融资'])
+    assert.equal(eventSourceEligibility({published_at:'2026-11-01',clean_text:'公司宣布已完成2亿美元B轮融资。'},{source_url:'https://example.com/funding'},title,'2026-11-02',{eventType:'funding'}).accepted,true,title);
+});

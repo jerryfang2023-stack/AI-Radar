@@ -282,6 +282,12 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
   if (options.eventType === "funding" && PROPOSED_FINANCING_TITLE.test(title.replace(/\blesson plan(?:s)?\b/giu, "lesson curriculum"))) {
     return { accepted: false, reason: "proposed_financing_not_completed" };
   }
+  // A target or its adjustment is not proceeds from a completed financing.
+  // Preserve explicit completion headlines that also mention an earlier target.
+  if (options.eventType === "funding" && /(?:融资|募资)目标/u.test(title)
+      && !/(?:完成|已获).{0,24}(?:融资|募资)|(?:融资|募资).{0,12}(?:完成|交割|到账)/u.test(title)) {
+    return { accepted: false, reason: "proposed_financing_not_completed" };
+  }
   if (options.eventType === "funding"
       && /\b(?:is|are)\s+closing in on\s+(?:a\s+)?(?:new\s+)?funding round\b/iu.test(sourceLead)) {
     return { accepted: false, reason: "proposed_financing_not_completed" };

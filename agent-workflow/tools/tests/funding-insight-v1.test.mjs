@@ -2807,7 +2807,7 @@ test("DeepSeek 可用未披露状态表达只有泛称、没有具体名称的�
 test("机构投资理由必须来自本轮投资方并保留原文证据", () => {
   const source = {
     source_id: "SRC-1",
-    body_clean: "Northstar partner Ada Lee said: The team has turned a difficult workflow into measurable customer outcomes.",
+    body_clean: "The round was led by Northstar Ventures. Northstar partner Ada Lee said: The team has turned a difficult workflow into measurable customer outcomes.",
   };
   const productSource = {
     source_id: "SRC-2",
@@ -3681,4 +3681,16 @@ test('decimal appositive proceeds resolve the named recipient despite a breadcru
     assert.notEqual(subjectCompanyForEvent(event, entities, {}, [claims[0], {...claims[1], source_quote: description + replacement + ' in a pre-Seed funding round.'}])?.entity_id, 'EN-TALKY');
   }
   assert.notEqual(subjectCompanyForEvent(event, entities, {}, [claims[0], {...claims[1], verification_status: 'pending'}])?.entity_id, 'EN-TALKY');
+});
+
+
+test('backing-only citations cannot substantiate a lead investor role',async()=>{
+  const {fundingInvestorLeadershipProblems}=await import('../funding-insight-v1-utils.mjs');
+  const investor={name:'Globalway',role:'本轮领投',evidence_refs:[{quote:'The startup is backed by Globalway, Blume Ventures and DeVC.'}]};
+  assert.deepEqual(fundingInvestorLeadershipProblems([investor]),['funding_investor_lead_role_unsubstantiated']);
+  assert.deepEqual(fundingInvestorLeadershipProblems(null),[]);
+  assert.deepEqual(fundingInvestorLeadershipProblems([{...investor,evidence_refs:null}]),['funding_investor_lead_role_unsubstantiated']);
+  assert.deepEqual(fundingInvestorLeadershipProblems([{...investor,role:'本轮投资方'}]),[]);
+  for(const quote of ['The round was led by Globalway.','The round was co-led by Globalway and Alpha.','本轮由Globalway领投。'])
+    assert.deepEqual(fundingInvestorLeadershipProblems([{...investor,evidence_refs:[{quote}]}]),[]);
 });

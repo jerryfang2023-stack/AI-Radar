@@ -900,7 +900,7 @@ async function processEvent(bundle, event, entityIndex, entityDecisions, company
     const result = await deepSeekJsonCompletion({
       model,
       messages: [
-        { role: "system", content: "输出严格受来源正文约束的融资项目研究JSON；事实必须逐项引用原文，缺失时留空。" },
+        { role: "system", content: "输出严格受来源正文约束的融资项目研究JSON；事实必须逐项引用原文，缺失时留空。领投或联合领投必须由对应evidence_refs.quote明确写明led/co-led/领投，不能按投资方排列、URL或合资关系推断；未明示时role为本轮投资方，投资理由也不能添加领投因果。" },
         { role: "user", content: promptFor(event, company, research.sources, directions) },
       ],
       maxTokens: Math.max(9000, Math.min(16000, Number(args.get("max-output-tokens") || financingConfig.secondary_review.model_output_tokens_per_call))),
