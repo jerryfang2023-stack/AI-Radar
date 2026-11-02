@@ -7,5 +7,8 @@
   {"incident":"2026-10-29 cumulative proceeds", "file":"agent-workflow/tools/tests/funding-insight-v1.test.mjs", "test":"series aggregate proceeds cannot become the A+ round amount"},
   {"incident":"2026-10-29 old publication date", "file":"agent-workflow/tools/tests/data-center-v4.test.mjs", "test":"funding with an old publication byline cannot inherit today's capture date"},
   {"incident":"2026-10-30 pending financing", "file":"agent-workflow/tools/tests/funding-insight-v1.test.mjs", "test":"a round that is close to raising remains outside completed-financing cards"},
-  {"incident":"2026-11-01 decimal recipient", "file":"agent-workflow/tools/tests/funding-insight-v1.test.mjs", "test":"decimal appositive proceeds resolve the named recipient despite a breadcrumb headline"}
+  {"incident":"2026-11-01 decimal recipient", "file":"agent-workflow/tools/tests/funding-insight-v1.test.mjs", "test":"decimal appositive proceeds resolve the named recipient despite a breadcrumb headline"},
+  {"incident":"2026-11-02 Chinese monthly market totals", "file":"agent-workflow/tools/tests/data-center-v4.test.mjs", "test":"Chinese periodic financing summaries cannot become a company raise despite named companies"},
+  {"incident":"2026-11-02 fundraising target", "file":"agent-workflow/tools/tests/data-center-v4.test.mjs", "test":"adjusted fundraising goals are not completed proceeds while explicit closes remain eligible"},
+  {"incident":"2026-11-02 unsupported investor leadership", "file":"agent-workflow/tools/tests/funding-insight-v1.test.mjs", "test":"backing-only citations cannot substantiate a lead investor role"}
 ]

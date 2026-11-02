@@ -282,6 +282,12 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
   if (options.eventType === "funding" && PROPOSED_FINANCING_TITLE.test(title.replace(/\blesson plan(?:s)?\b/giu, "lesson curriculum"))) {
     return { accepted: false, reason: "proposed_financing_not_completed" };
   }
+  // A target or its adjustment is not proceeds from a completed financing.
+  // Preserve explicit completion headlines that also mention an earlier target.
+  if (options.eventType === "funding" && /(?:融资|募资)目标/u.test(title)
+      && !/(?:完成|已获).{0,24}(?:融资|募资)|(?:融资|募资).{0,12}(?:完成|交割|到账)/u.test(title)) {
+    return { accepted: false, reason: "proposed_financing_not_completed" };
+  }
   if (options.eventType === "funding"
       && /\b(?:is|are)\s+closing in on\s+(?:a\s+)?(?:new\s+)?funding round\b/iu.test(sourceLead)) {
     return { accepted: false, reason: "proposed_financing_not_completed" };
@@ -292,6 +298,15 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
   }
   if (/🤖.{0,120}💰.{0,120}(?:🎵|ElevenLabs)/u.test(title)) {
     return { accepted: false, reason: "multi_event_roundup_not_single_event_source" };
+  }
+  // Periodic market totals describe many transactions, even when a company
+  // leads the headline. Require both the report label and aggregate source span;
+  // a company named 月报科技 or 月之暗面 is not itself a report container.
+  const periodicFundingReport = /(?:投融资|融资)/u.test(title)
+    && /(?:月报|周报|季报|年报)(?=$|[\s·：:|｜，,。！？!?])/u.test(title);
+  const marketTransactionCount = /(?:市场|领域|行业)[^。！？!?]{0,40}(?:发生|完成|累计|共)[^。！？!?]{0,12}(?:投融资|融资)(?:事件|交易)[^。！？!?]{0,8}\d+\s*(?:起|笔)/u.test(sourceLead);
+  if (options.eventType === "funding" && periodicFundingReport && marketTransactionCount) {
+    return { accepted: false, reason: "market_overview_not_company_funding_source" };
   }
   // Stage-wide funding statistics are not a financing announcement by a company.
   // Keep the title anchored so a named startup's Series B raise stays eligible.
