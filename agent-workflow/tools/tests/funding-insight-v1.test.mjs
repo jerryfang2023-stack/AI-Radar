@@ -3701,4 +3701,6 @@ test('fresh research cannot flatten a round lower bound into an exact smaller cu
  for(const total of ['$6 million','$5 million'])assert.ok(problems('over $6 million',total).includes(issue));
  for(const total of ['$7 million','over $6 million','', '€6 million'])assert.ok(!problems('over $6 million',total).includes(issue));
  assert.ok(!problems('$6 million','$6 million').includes(issue));
+ assert.ok(!problems('at least $6 million','$6 million').includes(issue));
+ assert.ok(problems('at least $6 million','$5 million').includes(issue));
 });

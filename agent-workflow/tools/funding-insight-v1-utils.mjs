@@ -1991,7 +1991,9 @@ export function researchPayloadProblems(payload = {}, sources = [], directionIds
   const cumulativeAmount = normalizeFundingAmount(payload?.financing?.total_raised);
   if (roundAmount.status === "lower_bound" && cumulativeAmount.status === "exact"
     && roundAmount.currency === cumulativeAmount.currency
-    && cumulativeAmount.value <= roundAmount.min_value) {
+    && (cumulativeAmount.value < roundAmount.min_value
+      || (cumulativeAmount.value === roundAmount.min_value
+        && /\b(?:over|more than)\b|超过|超|逾|\+/iu.test(clean(payload?.financing?.amount))))) {
     problems.push("funding_cumulative_amount_below_round_lower_bound");
   }
 
