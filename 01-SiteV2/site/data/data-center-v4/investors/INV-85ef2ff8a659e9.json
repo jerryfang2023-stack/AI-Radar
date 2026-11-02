@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-01",
-    "currentDate": "2026-11-01",
-    "eventCount": 4338,
+    "latestDataDate": "2026-11-02",
+    "currentDate": "2026-11-02",
+    "eventCount": 4342,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,37 +54,94 @@
   },
   "institution": {
     "id": "INV-85ef2ff8a659e9",
-    "name": "helloworld",
-    "aliases": [],
+    "name": "HelloWorld",
+    "aliases": [
+      "helloworld"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "unverified_investor",
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-02",
-    "latest_disclosed_at": "2026-10-02",
+    "latest_disclosed_at": "2026-10-30",
     "role_counts": {
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
-      "early_stage"
+      "early_stage",
+      "pre_seed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-bcdcf577ca136895",
         "canonical_entity_id": "",
         "name": "Kuro Technology"
+      },
+      {
+        "entity_id": "EN-f2b7d3d7082b9bf1",
+        "canonical_entity_id": "",
+        "name": "Talky Labs"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-eac12a8dfc17a961",
+        "funding_insight_id": "FI-15bd09a84c5c7b05",
+        "event_ids": [
+          "EV-7e75a7f077f6d26a"
+        ],
+        "company_entity_id": "EN-f2b7d3d7082b9bf1",
+        "company_canonical_entity_id": "",
+        "company_name": "Talky Labs",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "pre-Seed",
+        "amount_original": "€1.5 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "150 万欧元"
+        },
+        "announced_at": "2026-10-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-475ceeb1eced65d2",
+            "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
+            "source_title": "马德里的Talky融资150万欧元，教AI掌握会计的潜规则",
+            "source_content_hash": "95558d0638aab07b82b24ad8bd246945a5681ff3aecbf233eaeb23d09ea3ae4c",
+            "quote": "saw participation from venture capital firms HelloWorld, Silence VC, Motive Force, and Aera Capital",
+            "quote_hash": "cf0d437955cf3f794682cd8b79f1a204ed26fc3fe9a9c13226f73fac2b12d100"
+          },
+          {
+            "source_id": "FISRC-68e6bbeeda9519df",
+            "source_url": "https://startuply.vc/article/talky-labs-s-1-5-million-pre-seed-teaches-ai-the-unwritten-rules-of-accounting-1u0mid",
+            "source_title": "Talky Labs’s €1.5 Million Pre-Seed Teaches AI the Unwritten Rules of Accounting",
+            "source_content_hash": "401934eaf7a60e2f",
+            "quote": "The round was led by HelloWorld and Silence VC, with participation from Motive Force",
+            "quote_hash": "5c786cddb6b3669b3cf1d5a439900afbf731400f7ee17a15bf3d242afe32d41b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1a35208b4b0825bf",
         "funding_insight_id": "FI-adb01e49c7ab65c6",
@@ -128,6 +185,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-475ceeb1eced65d2",
+        "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
+        "source_title": "马德里的Talky融资150万欧元，教AI掌握会计的潜规则",
+        "source_content_hash": "95558d0638aab07b82b24ad8bd246945a5681ff3aecbf233eaeb23d09ea3ae4c",
+        "quote": "saw participation from venture capital firms HelloWorld, Silence VC, Motive Force, and Aera Capital",
+        "quote_hash": "cf0d437955cf3f794682cd8b79f1a204ed26fc3fe9a9c13226f73fac2b12d100"
+      },
+      {
+        "source_id": "FISRC-68e6bbeeda9519df",
+        "source_url": "https://startuply.vc/article/talky-labs-s-1-5-million-pre-seed-teaches-ai-the-unwritten-rules-of-accounting-1u0mid",
+        "source_title": "Talky Labs’s €1.5 Million Pre-Seed Teaches AI the Unwritten Rules of Accounting",
+        "source_content_hash": "401934eaf7a60e2f",
+        "quote": "The round was led by HelloWorld and Silence VC, with participation from Motive Force",
+        "quote_hash": "5c786cddb6b3669b3cf1d5a439900afbf731400f7ee17a15bf3d242afe32d41b"
+      },
+      {
         "source_id": "FISRC-8bd4513374ef496a",
         "source_url": "https://www.eu-startups.com/2026/10/berlin-based-kuro-raises-e10-million-to-build-the-ai-foundation-for-general-contractors/",
         "source_title": "柏林Kuro融资1000万欧元，为总承包商构建AI基础",
@@ -157,6 +230,10 @@
           "source_id": "PROFILE-B5-INV-85ef2ff8a659e9-2"
         },
         {
+          "description": "融资来源记录：Talky Labs · 预种子轮 · 2026-10-30 · 本轮领投 · €1.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-475ceeb1eced65d2"
+        },
+        {
           "description": "融资来源记录：Kuro Technology · 早期融资 · 2026-10-02 · 本轮参投 · €10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8bd4513374ef496a"
         }
@@ -178,6 +255,22 @@
           "source_content_hash": "2f71cb78232e37114609c4bc2c6bccd13df1b7597e20ab17e3f69f42984c4f41",
           "quote": "An der Runde beteiligen sich auch Foundamental, Realyze Ventures und helloworld.",
           "quote_hash": "58bdfc0210b42d637d76832d4e70b84a1cde5af8a1af46df6cc27f94669b9af8"
+        },
+        {
+          "source_id": "FISRC-475ceeb1eced65d2",
+          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
+          "source_title": "马德里的Talky融资150万欧元，教AI掌握会计的潜规则",
+          "source_content_hash": "95558d0638aab07b82b24ad8bd246945a5681ff3aecbf233eaeb23d09ea3ae4c",
+          "quote": "saw participation from venture capital firms HelloWorld, Silence VC, Motive Force, and Aera Capital",
+          "quote_hash": "cf0d437955cf3f794682cd8b79f1a204ed26fc3fe9a9c13226f73fac2b12d100"
+        },
+        {
+          "source_id": "FISRC-68e6bbeeda9519df",
+          "source_url": "https://startuply.vc/article/talky-labs-s-1-5-million-pre-seed-teaches-ai-the-unwritten-rules-of-accounting-1u0mid",
+          "source_title": "Talky Labs’s €1.5 Million Pre-Seed Teaches AI the Unwritten Rules of Accounting",
+          "source_content_hash": "401934eaf7a60e2f",
+          "quote": "The round was led by HelloWorld and Silence VC, with participation from Motive Force",
+          "quote_hash": "5c786cddb6b3669b3cf1d5a439900afbf731400f7ee17a15bf3d242afe32d41b"
         },
         {
           "source_id": "FISRC-8bd4513374ef496a",

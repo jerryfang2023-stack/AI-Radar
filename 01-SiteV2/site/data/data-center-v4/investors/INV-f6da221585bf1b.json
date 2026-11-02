@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-01",
-    "currentDate": "2026-11-01",
-    "eventCount": 4338,
+    "latestDataDate": "2026-11-02",
+    "currentDate": "2026-11-02",
+    "eventCount": 4342,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -55,31 +55,34 @@
   "institution": {
     "id": "INV-f6da221585bf1b",
     "name": "Greylock",
-    "aliases": [],
+    "aliases": [
+      "Greylock Partners"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "investment_institution",
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-10",
-    "latest_disclosed_at": "2026-09-22",
+    "latest_disclosed_at": "2026-10-29",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
       "series_a",
-      "series_e"
+      "series_e",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -101,9 +104,54 @@
         "entity_id": "EN-7331374f7091259f",
         "canonical_entity_id": "",
         "name": "Snorkel AI"
+      },
+      {
+        "entity_id": "EN-d144b9ae6960c728",
+        "canonical_entity_id": "",
+        "name": "SuperMe"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2d6cd478dff86a1d",
+        "funding_insight_id": "FI-2d7d61a9a467017c",
+        "event_ids": [
+          "EV-2e14ff936dbb966f"
+        ],
+        "company_entity_id": "EN-d144b9ae6960c728",
+        "company_canonical_entity_id": "",
+        "company_name": "SuperMe",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "$20 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2026-10-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-cba64821590e1bcc",
+            "source_url": "https://techcrunch.com/2026/10/29/superme-raises-20m-for-its-network-of-ai-expert-profiles",
+            "source_title": "SuperMe 为其 AI 专家资料网络融资 2000 万美元",
+            "source_content_hash": "2e1c9e9c7b622290ec8fd47af169e57037b58ee0bf33254b383ca6017d89c17c",
+            "quote": "it is raising $20 million in funding led by Kirsten Green at Forerunner, with participation from Greylock Partners.",
+            "quote_hash": "131be66f7676ec60cb36acc5216eeaa097c1e94cdb3baf57af7a57c010a55566"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f5b49d44825096f2",
         "funding_insight_id": "FI-a83cd8c83852046e",
@@ -299,6 +347,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-cba64821590e1bcc",
+        "source_url": "https://techcrunch.com/2026/10/29/superme-raises-20m-for-its-network-of-ai-expert-profiles",
+        "source_title": "SuperMe 为其 AI 专家资料网络融资 2000 万美元",
+        "source_content_hash": "2e1c9e9c7b622290ec8fd47af169e57037b58ee0bf33254b383ca6017d89c17c",
+        "quote": "it is raising $20 million in funding led by Kirsten Green at Forerunner, with participation from Greylock Partners.",
+        "quote_hash": "131be66f7676ec60cb36acc5216eeaa097c1e94cdb3baf57af7a57c010a55566"
+      },
+      {
         "source_id": "FISRC-16afc5791c45315a",
         "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
         "source_title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
@@ -384,16 +440,16 @@
           "source_id": "greylock_firm"
         },
         {
+          "description": "融资来源记录：SuperMe · 轮次未披露 · 2026-10-29 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cba64821590e1bcc"
+        },
+        {
           "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮参投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-16afc5791c45315a"
         },
         {
           "description": "融资来源记录：Lightfield · A轮 · 2026-09-09 · 本轮参投 · $47 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c224adac23aa7c1e"
-        },
-        {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
         }
       ],
       "contacts": [
@@ -440,6 +496,14 @@
           "quote_hash": "194f05aeb8a2c405ec300b3421939216eb9fa55244523a7af1789c36f143f839"
         },
         {
+          "source_id": "FISRC-cba64821590e1bcc",
+          "source_url": "https://techcrunch.com/2026/10/29/superme-raises-20m-for-its-network-of-ai-expert-profiles",
+          "source_title": "SuperMe 为其 AI 专家资料网络融资 2000 万美元",
+          "source_content_hash": "2e1c9e9c7b622290ec8fd47af169e57037b58ee0bf33254b383ca6017d89c17c",
+          "quote": "it is raising $20 million in funding led by Kirsten Green at Forerunner, with participation from Greylock Partners.",
+          "quote_hash": "131be66f7676ec60cb36acc5216eeaa097c1e94cdb3baf57af7a57c010a55566"
+        },
+        {
           "source_id": "FISRC-16afc5791c45315a",
           "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
           "source_title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
@@ -454,14 +518,6 @@
           "source_content_hash": "81d75b049cb405908d9b44b898723f084f4c0b349acb89fc8dfa966063eea4f7",
           "quote": "Lightfield today announced a $47 million Series A led by Andreessen Horowitz, including participation from Maverick Capital, Coatue, Audacious, Alumni Ventures, Greylock, and Lightspeed Venture Partners.",
           "quote_hash": "4984ad8ca3ed395614164d9fa67a7c87a60e728f5ea974ca383ac3d00efab0e8"
-        },
-        {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
-          "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
         }
       ],
       "last_verified_at": "2026-09-25",

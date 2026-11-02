@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-01",
-    "currentDate": "2026-11-01",
-    "eventCount": 4338,
+    "latestDataDate": "2026-11-02",
+    "currentDate": "2026-11-02",
+    "eventCount": 4342,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-06-03",
     "latest_disclosed_at": "2026-10-29",
     "role_counts": {
-      "lead": 1,
+      "lead": 2,
       "participant": 3
     },
     "round_codes": [
@@ -93,6 +93,11 @@
         "name": "Suno"
       },
       {
+        "entity_id": "EN-d144b9ae6960c728",
+        "canonical_entity_id": "",
+        "name": "SuperMe"
+      },
+      {
         "entity_id": "EN-27392c283df47b1a",
         "canonical_entity_id": "",
         "name": "Wabi"
@@ -104,6 +109,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-03bdfe79309b51e6",
+        "funding_insight_id": "FI-2d7d61a9a467017c",
+        "event_ids": [
+          "EV-2e14ff936dbb966f"
+        ],
+        "company_entity_id": "EN-d144b9ae6960c728",
+        "company_canonical_entity_id": "",
+        "company_name": "SuperMe",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "$20 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2026-10-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-cba64821590e1bcc",
+            "source_url": "https://techcrunch.com/2026/10/29/superme-raises-20m-for-its-network-of-ai-expert-profiles",
+            "source_title": "SuperMe 为其 AI 专家资料网络融资 2000 万美元",
+            "source_content_hash": "2e1c9e9c7b622290ec8fd47af169e57037b58ee0bf33254b383ca6017d89c17c",
+            "quote": "it is raising $20 million in funding led by Kirsten Green at Forerunner, with participation from Greylock Partners.",
+            "quote_hash": "131be66f7676ec60cb36acc5216eeaa097c1e94cdb3baf57af7a57c010a55566"
+          }
+        ]
+      },
       {
         "activity_id": "IA-aa278730dd9b52cb",
         "funding_insight_id": "FI-85c91dbd238af2fb",
@@ -268,6 +313,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-cba64821590e1bcc",
+        "source_url": "https://techcrunch.com/2026/10/29/superme-raises-20m-for-its-network-of-ai-expert-profiles",
+        "source_title": "SuperMe 为其 AI 专家资料网络融资 2000 万美元",
+        "source_content_hash": "2e1c9e9c7b622290ec8fd47af169e57037b58ee0bf33254b383ca6017d89c17c",
+        "quote": "it is raising $20 million in funding led by Kirsten Green at Forerunner, with participation from Greylock Partners.",
+        "quote_hash": "131be66f7676ec60cb36acc5216eeaa097c1e94cdb3baf57af7a57c010a55566"
+      },
+      {
         "source_id": "FISRC-bc01622ffa1cd4de",
         "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
         "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
@@ -314,16 +367,16 @@
           "source_id": "forerunner-natural-seriesa-2026"
         },
         {
+          "description": "融资来源记录：SuperMe · 轮次未披露 · 2026-10-29 · 本轮领投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cba64821590e1bcc"
+        },
+        {
           "description": "融资来源记录：Wabi · 轮次未披露 · 2026-10-29 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-bc01622ffa1cd4de"
         },
         {
           "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2e7a3713da8f3e54"
-        },
-        {
-          "description": "融资来源记录：Natural AI, Inc. · A轮 · 2026-07-20 · 本轮领投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-cf3c8dfd6c45ed29"
         }
       ],
       "contacts": [],
@@ -349,6 +402,14 @@
           "quote_hash": "2dc6cf71023afca78289df27771c59fdb7be0622d45d1ac463c8ad840970d698"
         },
         {
+          "source_id": "FISRC-cba64821590e1bcc",
+          "source_url": "https://techcrunch.com/2026/10/29/superme-raises-20m-for-its-network-of-ai-expert-profiles",
+          "source_title": "SuperMe 为其 AI 专家资料网络融资 2000 万美元",
+          "source_content_hash": "2e1c9e9c7b622290ec8fd47af169e57037b58ee0bf33254b383ca6017d89c17c",
+          "quote": "it is raising $20 million in funding led by Kirsten Green at Forerunner, with participation from Greylock Partners.",
+          "quote_hash": "131be66f7676ec60cb36acc5216eeaa097c1e94cdb3baf57af7a57c010a55566"
+        },
+        {
           "source_id": "FISRC-bc01622ffa1cd4de",
           "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
           "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
@@ -363,14 +424,6 @@
           "source_content_hash": "affdfd9a0ccfb188",
           "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
           "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
-        },
-        {
-          "source_id": "FISRC-cf3c8dfd6c45ed29",
-          "source_url": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/",
-          "source_title": "Natural 融资3000万美元，重塑AI智能体支付，挑战Stripe",
-          "source_content_hash": "487d88d020a14f20",
-          "quote": "Kirsten Green, founder and managing partner at VC firm Forerunner. Green, whose firm focuses on consumer experiences and the future of commerce, led its $30 million Series A round",
-          "quote_hash": "b620aa65aeb193e4ceb76d6df49b7a121047539efabf33057e23eee1e6cd80ff"
         }
       ],
       "last_verified_at": "2026-10-03"

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-01",
-    "currentDate": "2026-11-01",
-    "eventCount": 4338,
+    "latestDataDate": "2026-11-02",
+    "currentDate": "2026-11-02",
+    "eventCount": 4342,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-01",
-    "latest_disclosed_at": "2026-08-01",
+    "latest_disclosed_at": "2026-10-28",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "pre_seed",
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-8cfc740789ec55e7",
+        "canonical_entity_id": "",
+        "name": "QwikBuild"
+      },
       {
         "entity_id": "EN-65e9e514ecf0d270",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-7956576e53ac5edd",
+        "funding_insight_id": "FI-db6c17086932c382",
+        "event_ids": [
+          "EV-c4b05f65eba5c09c"
+        ],
+        "company_entity_id": "EN-8cfc740789ec55e7",
+        "company_canonical_entity_id": "",
+        "company_name": "QwikBuild",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$2.3 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "230 万美元"
+        },
+        "announced_at": "2026-10-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dbee6bd85357e5fb",
+            "source_url": "https://entrackr.com/snippets/ai-enterprise-startup-qwikbuild-raises-23-mn-in-pre-seed-round-12760872",
+            "source_title": "AI 企业初创公司 QwikBuild 在 pre-seed 轮融资中筹集 230 万美元",
+            "source_content_hash": "73738db9e4ec0bcb1c6714eb993406057522a6ec1198c3957c0ef9a7d26d6206",
+            "quote": "The startup is backed by Globalway Inc., Blume Ventures, Marsshot, and DeVC, alongside prominent angel investors including Lalit Keshre (founder of Groww) and Ankit Nagori (founder of Cure.fit).",
+            "quote_hash": "c952ed0a885b51d7395cb4b2a0a3d34d59e2879d3e0d7810d71667de65d9cf41"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f5a5d226b1ce81dc",
         "funding_insight_id": "FI-af45f33c3a9b81b9",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-dbee6bd85357e5fb",
+        "source_url": "https://entrackr.com/snippets/ai-enterprise-startup-qwikbuild-raises-23-mn-in-pre-seed-round-12760872",
+        "source_title": "AI 企业初创公司 QwikBuild 在 pre-seed 轮融资中筹集 230 万美元",
+        "source_content_hash": "73738db9e4ec0bcb1c6714eb993406057522a6ec1198c3957c0ef9a7d26d6206",
+        "quote": "The startup is backed by Globalway Inc., Blume Ventures, Marsshot, and DeVC, alongside prominent angel investors including Lalit Keshre (founder of Groww) and Ankit Nagori (founder of Cure.fit).",
+        "quote_hash": "c952ed0a885b51d7395cb4b2a0a3d34d59e2879d3e0d7810d71667de65d9cf41"
+      },
+      {
         "source_id": "FISRC-6b1944359351ee14",
         "source_url": "https://www.cmswire.com/customer-experience/smallestai-lands-13m-series-a-for-voice-ai/",
         "source_title": "Smallest.ai Raises $13M For Real-Time Enterprise Voice AI",
@@ -160,6 +214,10 @@
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：QwikBuild · 预种子轮 · 2026-10-28 · 本轮参投 · $2.3 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-dbee6bd85357e5fb"
+        },
         {
           "description": "融资来源记录：Smallest.ai · A轮 · 2026-08-01 · 本轮参投 · 1300万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6b1944359351ee14"
@@ -206,6 +264,14 @@
           "source_content_hash": "1a5fb8c74b54cec354977cf72878db61f9887646c55eec53c1db10c94d6a419e",
           "quote": "DeVC India I AIF Category II AIF DeVC India I Manager LLP IN/AIF2/22-23/1131",
           "quote_hash": "4bb35715e336c1725878633dfa888e8b9b30ed1a5397bc2c1cc8324ec6c283d8"
+        },
+        {
+          "source_id": "FISRC-dbee6bd85357e5fb",
+          "source_url": "https://entrackr.com/snippets/ai-enterprise-startup-qwikbuild-raises-23-mn-in-pre-seed-round-12760872",
+          "source_title": "AI 企业初创公司 QwikBuild 在 pre-seed 轮融资中筹集 230 万美元",
+          "source_content_hash": "73738db9e4ec0bcb1c6714eb993406057522a6ec1198c3957c0ef9a7d26d6206",
+          "quote": "The startup is backed by Globalway Inc., Blume Ventures, Marsshot, and DeVC, alongside prominent angel investors including Lalit Keshre (founder of Groww) and Ankit Nagori (founder of Cure.fit).",
+          "quote_hash": "c952ed0a885b51d7395cb4b2a0a3d34d59e2879d3e0d7810d71667de65d9cf41"
         },
         {
           "source_id": "FISRC-6b1944359351ee14",

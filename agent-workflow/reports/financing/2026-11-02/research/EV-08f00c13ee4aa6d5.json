@@ -1,0 +1,63 @@
+{
+  "event_id": "EV-08f00c13ee4aa6d5",
+  "company_name": "Tencent",
+  "status": "blocked",
+  "problems": [
+    "funding_event_company_claim_missing"
+  ],
+  "queries": [
+    "\"Tencent\" 2026 融资 投资方",
+    "\"Tencent\" 官网 产品 服务",
+    "\"Tencent\" 投资机构 融资用途"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Tencent\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.itjuzi.com/company_map/tencent",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://freedom24.com/ideas/details/20553?site_lang=zh",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"腾讯\" 约1391.55亿元 融资 领投 跟投",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Tencent\" 官网 产品 服务",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Tencent\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"腾讯\" 2026 本轮融资 公告",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Tencent\" 客户 创始人 总部",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    }
+  ]
+}

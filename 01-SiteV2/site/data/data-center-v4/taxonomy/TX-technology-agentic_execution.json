@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-01",
-    "currentDate": "2026-11-01",
-    "eventCount": 4338,
+    "latestDataDate": "2026-11-02",
+    "currentDate": "2026-11-02",
+    "eventCount": 4342,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -60,6 +60,7 @@
     "valueId": "agentic_execution",
     "eventIds": [
       "EV-6133f09c61f5c5e8",
+      "EV-c4b05f65eba5c09c",
       "EV-15004f646df67bad",
       "EV-8de1001fde6993a5",
       "EV-412b80c35c4c235a",
@@ -750,6 +751,7 @@
     ],
     "entityIds": [
       "EN-f78f7a86360aa8f4",
+      "EN-8cfc740789ec55e7",
       "EN-5b45e76107a945ba",
       "EN-858837c33d111717",
       "EN-bf3b0b9c3016225f",
@@ -1334,6 +1336,88 @@
       "products": [],
       "sourceUrl": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
       "publisher": "www.eu-startups.com"
+    },
+    {
+      "id": "EV-c4b05f65eba5c09c",
+      "dataDate": "2026-11-02",
+      "date": "2026-10-28",
+      "updatedDate": "2026-10-28",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI 企业初创公司 QwikBuild 在 pre-seed 轮融资中筹集 230 万美元",
+      "originalTitle": "AI enterprise startup QwikBuild raises $2.3 Mn in pre-seed round",
+      "subject": "AI enterprise startup QwikBuild",
+      "action": "raises",
+      "object": "$2.3 Mn in pre-seed round",
+      "metrics": [
+        "$2.3 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8cfc740789ec55e7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8cfc740789ec55e7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8cfc740789ec55e7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8cfc740789ec55e7"
+      ],
+      "entityNames": [
+        "QwikBuild"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://entrackr.com/snippets/ai-enterprise-startup-qwikbuild-raises-23-mn-in-pre-seed-round-12760872",
+      "publisher": "entrackr.com"
     },
     {
       "id": "EV-15004f646df67bad",
@@ -109574,6 +109658,27 @@
       "lastSeen": "2026-10-31"
     },
     {
+      "id": "EN-8cfc740789ec55e7",
+      "name": "QwikBuild",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-c4b05f65eba5c09c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-11-02"
+    },
+    {
       "id": "EN-5b45e76107a945ba",
       "name": "CopperPilot",
       "entityType": "organization_candidate",
@@ -110316,7 +110421,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-01-14",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-02"
     },
     {
       "id": "EN-e66d5fd225ed6b0a",
@@ -110853,6 +110958,7 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
+        "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -110863,7 +110969,6 @@
         "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
-        "TX-technology-embodied_ai",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-use_case-security_operations",
@@ -110910,7 +111015,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-02"
     },
     {
       "id": "EN-8bacc14fb816a980",
@@ -111744,13 +111849,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai",
         "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing",
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
         "TX-use_case-content_creation",
         "TX-product_form-developer_tool",
         "TX-product_form-ai_compute_system",
@@ -112088,8 +112193,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-embodied_ai",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-technology-multimodal"
       ],
@@ -115987,7 +116092,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-02"
     },
     {
       "id": "EN-df3b29befa02cd17",
@@ -116161,7 +116266,7 @@
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-01-26",
-      "lastSeen": "2026-10-31"
+      "lastSeen": "2026-11-02"
     },
     {
       "id": "EN-d3565d297d476f10",
@@ -116491,7 +116596,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-02"
     },
     {
       "id": "EN-866e1f18c9370d5d",
@@ -117206,6 +117311,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai",
         "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
         "TX-ai_market_application-chips",
@@ -117222,7 +117328,6 @@
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-use_case-security_operations",
@@ -117288,7 +117393,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-02"
     },
     {
       "id": "EN-28d0bd981118a907",
@@ -117846,7 +117951,7 @@
         "EN-5f5fcd8701ab30c0"
       ],
       "firstSeen": "2025-09-26",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-02"
     },
     {
       "id": "EN-19e41212c0556603",
@@ -118000,7 +118105,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-24",
-      "lastSeen": "2026-10-31"
+      "lastSeen": "2026-11-02"
     },
     {
       "id": "EN-5e668f42eb6cf15d",
@@ -118596,6 +118701,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai",
         "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
         "TX-ai_market_category-infrastructure_compute",
@@ -118605,7 +118711,6 @@
         "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
-        "TX-technology-embodied_ai",
         "TX-use_case-security_operations",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
@@ -118662,7 +118767,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-02"
     },
     {
       "id": "EN-6fcba5d96a4fadfd",
@@ -119260,12 +119365,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai",
         "TX-product_form-chip_accelerator",
         "TX-use_case-software_development",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-use_case-security_operations",
@@ -119330,7 +119435,7 @@
         "EN-7d3194f79e645c42"
       ],
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-02"
     },
     {
       "id": "EN-0d47d3f0783749a8",
@@ -119688,8 +119793,8 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
-        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
+        "TX-use_case-physical_automation",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
       ],
@@ -119883,7 +119988,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-02-17",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-02"
     },
     {
       "id": "EN-92df1be3e37c9268",

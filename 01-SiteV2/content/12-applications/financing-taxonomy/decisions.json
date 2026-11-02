@@ -35927,7 +35927,201 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-11-01T04:06:23.492Z"
+    },
+    "EV-1dc8d06cdf7fb8b2": {
+      "id": "EV-1dc8d06cdf7fb8b2",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "公司主营可加装自主平台与通用移动操作机器人，属于具身智能与机器人本体业务。",
+      "input_hash": "bd9d99028ab9c859ce79a0ca8caf2833a609adc321b4f368a63486e803e75bd9",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3347f1018b936c8b",
+          "quote": "developing a unified, retrofittable autonomy platform that enables industrial and commercial robots, vehicles and machines to perform physical tasks autonomously"
+        },
+        {
+          "source_id": "FISRC-3347f1018b936c8b",
+          "quote": "It is also developing a general-purpose mobile manipulator that combines autonomous mobility with robotic arms to perform tasks across material handling, cleaning, manufacturing and construction."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-02T05:50:06.999Z"
+    },
+    "EV-c4b05f65eba5c09c": {
+      "id": "EV-c4b05f65eba5c09c",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-coding",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "QwikBuild 通过 AgentQ 多智能体系统为企业构建定制软件，属于 AI 编程与软件研发开发平台。",
+      "input_hash": "4825ad06da663e58f920a439018e00d957978063f229e9dc877da4c28db2e79f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-dbee6bd85357e5fb",
+          "quote": "QwikBuild, an enterprise AI startup that builds bespoke software and AI agents for business operations"
+        },
+        {
+          "source_id": "FISRC-32b64eb327d1b1fb",
+          "quote": "QwikBuild leverages AI agents to rapidly develop tailored business software"
+        },
+        {
+          "source_id": "FISRC-ef652db2a9435a56",
+          "quote": "AgentQ builds your software. Real developers make sure it works in production."
+        },
+        {
+          "source_id": "FISRC-301d15f35d7e7488",
+          "quote": "The team also recently launched AgentQ, a multi-agent system using specialized subagents (PM, backend, frontend, auditor) for building more complex enterprise-grade applications on the same infrastructure primitives."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-02T06:06:11.571Z"
+    },
+    "EV-7e75a7f077f6d26a": {
+      "id": "EV-7e75a7f077f6d26a",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "finance-hr",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "Talky 平台自动读取发票、生成会计分录并对账，属于企业财务职能 AI 软件。",
+      "input_hash": "7f583cbdfeb09e6596168b2b72c8f4bd70c7514c074c2bd5d3efd99bd2ddfe75",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-475ceeb1eced65d2",
+          "quote": "Talky Labs, a Spanish startup developing AI-powered technology to automate accounting and financial operations"
+        },
+        {
+          "source_id": "FISRC-475ceeb1eced65d2",
+          "quote": "The platform can read invoices, suggest accounting entries, review tax information and reconcile bank transactions before recording the results in the client’s enterprise resource planning (ERP) system."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-02T05:50:06.999Z"
+    },
+    "EV-0dc2c32790ce9091": {
+      "id": "EV-0dc2c32790ce9091",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "evaluation",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "Crux 平台提供智能体评测、监控与持续改进，属于评测监控与治理。",
+      "input_hash": "6946b2b6447dbc56123441e54e3bbd624a01c5528c081698f4d2d35694f681a4",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9b008039ec73003b",
+          "quote": "Crux Labs, the first platform to turn enterprise judgment into continuous agent improvement, today emerged from stealth"
+        },
+        {
+          "source_id": "FISRC-9b008039ec73003b",
+          "quote": "The platform captures domain expertise, creates and calibrates custom evaluations, monitors 100% of production traffic, and turns evaluation results into continuous agent improvement directly in production."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-02T05:50:06.999Z"
+    },
+    "EV-2e14ff936dbb966f": {
+      "id": "EV-2e14ff936dbb966f",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "assistants",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "SuperMe 面向个人用户提供专家 AI 资料问答与群聊，属于个人助手类消费应用。",
+      "input_hash": "187f734f3c71e28e4681f750ad5ea019d08062377c19c64bb64cbd004cf3d84a",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-cba64821590e1bcc",
+          "quote": "SuperMe is a network of AI profiles built from the knowledge of real-life experts."
+        },
+        {
+          "source_id": "FISRC-cba64821590e1bcc",
+          "quote": "When you ask a question, the platform determines which experts are best suited to answer and creates a group chat with their AI profiles."
+        },
+        {
+          "source_id": "FISRC-cba64821590e1bcc",
+          "quote": "SuperMe also works with MCP (Model Context Protocol, a standard that lets AI chatbots connect to outside tools and data), so users can ask questions from within chatbots such as Claude and ChatGPT."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-02T05:50:06.999Z"
+    },
+    "EV-0c628b0e909f697e": {
+      "id": "EV-0c628b0e909f697e",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "consumer",
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        3
+      ],
+      "rationale": "OpenAI 训练并提供通用模型，通过 ChatGPT 与开发者 API 交付。",
+      "input_hash": "ab389b7afcd3602e2b7aef4c58be6f79ad1a529cb9714e01f4f03241240e5cbf",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3c39a04b0d17c3b8",
+          "quote": "OpenAI is an AI research and deployment company. Its products include ChatGPT and tools for developers."
+        },
+        {
+          "source_id": "FISRC-3c39a04b0d17c3b8",
+          "quote": "OpenAI’s metered developer platform, separate from ChatGPT subscriptions."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-02T05:50:06.999Z"
     }
   },
-  "generated_at": "2026-11-01T04:06:23.493Z"
+  "generated_at": "2026-11-02T06:06:11.572Z"
 }

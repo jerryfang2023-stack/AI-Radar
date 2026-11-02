@@ -1,0 +1,44 @@
+[
+  {
+    "funnel_id": "LF-d7dabdfe87689f27",
+    "lens": "fde",
+    "date": "2026-11-02",
+    "monitoring_paths": [],
+    "raw_documents": 0,
+    "original_sources": 0,
+    "valid_claims": 0,
+    "observations": 0,
+    "canonical_events": 0,
+    "blocker_counts": {},
+    "rates": {
+      "original_source_rate": 1,
+      "valid_claim_rate": 1,
+      "observation_rate": 1,
+      "event_conversion_rate": 1
+    }
+  },
+  {
+    "funnel_id": "LF-634c431a6565a067",
+    "lens": "hardware",
+    "date": "2026-11-02",
+    "monitoring_paths": [],
+    "raw_documents": 19,
+    "original_sources": 19,
+    "valid_claims": 19,
+    "observations": 1,
+    "canonical_events": 7,
+    "blocker_counts": {
+      "proposed_financing_not_completed": 1,
+      "multi_event_roundup_not_single_event_source": 1,
+      "event_not_ai_relevant": 6,
+      "cumulative_funding_total_not_single_round": 2,
+      "no_source_bounded_event": 1
+    },
+    "rates": {
+      "original_source_rate": 1,
+      "valid_claim_rate": 1,
+      "observation_rate": 0.05263157894736842,
+      "event_conversion_rate": 0.3684210526315789
+    }
+  }
+]
