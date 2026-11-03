@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-01",
-    "currentDate": "2026-11-01",
-    "eventCount": 4338,
+    "latestDataDate": "2026-11-03",
+    "currentDate": "2026-11-03",
+    "eventCount": 4356,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -65,6 +65,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-a355d976d3a7daef",
       "EV-ceae771867a66bb5",
       "EV-eb3b431d4ce98ec5",
       "EV-68897f26c8d956df",
@@ -83,13 +84,15 @@
       "EN-7ff4fb5ddc1f4700"
     ],
     "firstSeen": "2026-07-09",
-    "lastSeen": "2026-09-21",
+    "lastSeen": "2026-11-03",
     "relationIds": [
       "REL2-4c75c6e459d26ed8",
       "REL2-b02827533a1608c0"
     ],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-a355d976d3a7daef"
+      ],
       "deployments": [],
       "partnerships": [
         "EV-ceae771867a66bb5"
@@ -106,6 +109,32 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-a355d976d3a7daef",
+        "dataDate": "2026-11-03",
+        "date": "2026-11-02",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "pending_verification",
+        "statusLabel": "待核验",
+        "title": "RoboScience机器科学完成A2轮数亿元融资，产业资本集体入局",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-3f988716cc57e89f",
+          "EN-a7baed72c308ce88"
+        ]
+      },
       {
         "id": "EV-ceae771867a66bb5",
         "dataDate": "2026-09-21",
@@ -434,7 +463,9 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-e632e1806935d10f",
         "EV-6133f09c61f5c5e8",
+        "EV-c4b05f65eba5c09c",
         "EV-15004f646df67bad",
         "EV-8de1001fde6993a5",
         "EV-412b80c35c4c235a",
@@ -1124,7 +1155,9 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-64af05d8ce796170",
         "EN-f78f7a86360aa8f4",
+        "EN-8cfc740789ec55e7",
         "EN-5b45e76107a945ba",
         "EN-858837c33d111717",
         "EN-bf3b0b9c3016225f",
@@ -2347,7 +2380,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "TX-product_form-ai_device",

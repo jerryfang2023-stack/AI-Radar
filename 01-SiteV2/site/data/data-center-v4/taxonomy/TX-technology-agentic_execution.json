@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-01",
-    "currentDate": "2026-11-01",
-    "eventCount": 4338,
+    "latestDataDate": "2026-11-03",
+    "currentDate": "2026-11-03",
+    "eventCount": 4356,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -59,7 +59,9 @@
     "typeLabel": "技术",
     "valueId": "agentic_execution",
     "eventIds": [
+      "EV-e632e1806935d10f",
       "EV-6133f09c61f5c5e8",
+      "EV-c4b05f65eba5c09c",
       "EV-15004f646df67bad",
       "EV-8de1001fde6993a5",
       "EV-412b80c35c4c235a",
@@ -749,7 +751,9 @@
       "EV-c17f5a364ed6a3ac"
     ],
     "entityIds": [
+      "EN-64af05d8ce796170",
       "EN-f78f7a86360aa8f4",
+      "EN-8cfc740789ec55e7",
       "EN-5b45e76107a945ba",
       "EN-858837c33d111717",
       "EN-bf3b0b9c3016225f",
@@ -1248,6 +1252,92 @@
   },
   "events": [
     {
+      "id": "EV-e632e1806935d10f",
+      "dataDate": "2026-11-03",
+      "date": "2026-11-02",
+      "updatedDate": "2026-11-02",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "找工作？爱沙尼亚的Roleo刚刚融资290万欧元，助你求职之旅",
+      "originalTitle": "Looking for a job? Estonia&#8217;s Roleo just raised €2.9 million to help you on your journey",
+      "subject": "Looking for a job? Estonia&#8217;s Roleo just",
+      "action": "raised",
+      "object": "€2.9 million to help you on your journey",
+      "metrics": [
+        "€2.9 million",
+        "€34.68 million",
+        "€18.3 million"
+      ],
+      "locations": [
+        "Europe"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-64af05d8ce796170"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-64af05d8ce796170"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-64af05d8ce796170"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-64af05d8ce796170"
+      ],
+      "entityNames": [
+        "Roleo"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
       "id": "EV-6133f09c61f5c5e8",
       "dataDate": "2026-10-31",
       "date": "2026-10-30",
@@ -1334,6 +1424,88 @@
       "products": [],
       "sourceUrl": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
       "publisher": "www.eu-startups.com"
+    },
+    {
+      "id": "EV-c4b05f65eba5c09c",
+      "dataDate": "2026-11-03",
+      "date": "2026-10-28",
+      "updatedDate": "2026-10-28",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI 企业初创公司 QwikBuild 在 pre-seed 轮融资中筹集 230 万美元",
+      "originalTitle": "AI enterprise startup QwikBuild raises $2.3 Mn in pre-seed round",
+      "subject": "AI enterprise startup QwikBuild",
+      "action": "raises",
+      "object": "$2.3 Mn in pre-seed round",
+      "metrics": [
+        "$2.3 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8cfc740789ec55e7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8cfc740789ec55e7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8cfc740789ec55e7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8cfc740789ec55e7"
+      ],
+      "entityNames": [
+        "QwikBuild"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://entrackr.com/snippets/ai-enterprise-startup-qwikbuild-raises-23-mn-in-pre-seed-round-12760872",
+      "publisher": "entrackr.com"
     },
     {
       "id": "EV-15004f646df67bad",
@@ -109553,6 +109725,27 @@
   ],
   "entities": [
     {
+      "id": "EN-64af05d8ce796170",
+      "name": "Roleo",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e632e1806935d10f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-03"
+    },
+    {
       "id": "EN-f78f7a86360aa8f4",
       "name": "EXCLUSIVE: London’s Ares Intelligence",
       "entityType": "organization_candidate",
@@ -109572,6 +109765,27 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-10-30",
       "lastSeen": "2026-10-31"
+    },
+    {
+      "id": "EN-8cfc740789ec55e7",
+      "name": "QwikBuild",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-c4b05f65eba5c09c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "EN-5b45e76107a945ba",
@@ -110099,6 +110313,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-c0b3ec3c5e9ee0bd",
         "EV-b84f9955d0e55497",
         "EV-7c8a2573ab3781e9",
         "EV-5db7347d93859de3",
@@ -110316,7 +110531,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-01-14",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "EN-e66d5fd225ed6b0a",
@@ -110851,6 +111066,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
         "TX-industry-healthcare_life_sciences",
@@ -110863,7 +111079,6 @@
         "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
-        "TX-technology-embodied_ai",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-use_case-security_operations",
@@ -110910,7 +111125,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "EN-8bacc14fb816a980",
@@ -111092,10 +111307,10 @@
         "TX-target_user-business_user",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-finance_accounting",
-        "TX-use_case-hr_workforce",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows"
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-use_case-hr_workforce"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-23",
@@ -111455,9 +111670,9 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-industry_applications",
         "TX-use_case-design_engineering",
-        "TX-industry-construction_real_estate",
         "TX-ai_market_subcategory-industrials",
-        "TX-use_case-productivity_enterprise_workflows"
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-industry-construction_real_estate"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-18",
@@ -111743,6 +111958,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing",
@@ -111750,7 +111966,6 @@
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
         "TX-use_case-content_creation",
         "TX-product_form-developer_tool",
         "TX-product_form-ai_compute_system",
@@ -111901,10 +112116,10 @@
         "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-product_form-enterprise_software_platform",
-        "TX-use_case-hr_workforce",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows"
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-use_case-hr_workforce"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-28",
@@ -112087,9 +112302,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-embodied_ai",
         "TX-industry-media_entertainment",
         "TX-technology-multimodal"
       ],
@@ -112274,10 +112489,10 @@
         "TX-use_case-design_engineering",
         "TX-industry-logistics_supply_chain",
         "TX-use_case-sales",
-        "TX-industry-construction_real_estate",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows"
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-industry-construction_real_estate"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-16",
@@ -112303,9 +112518,9 @@
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-industry_applications",
         "TX-use_case-finance_accounting",
-        "TX-industry-construction_real_estate",
         "TX-ai_market_subcategory-industrials",
-        "TX-use_case-productivity_enterprise_workflows"
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-industry-construction_real_estate"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-16",
@@ -113040,7 +113255,6 @@
         "TX-industry-logistics_supply_chain",
         "TX-industry-media_entertainment",
         "TX-industry-legal_services",
-        "TX-industry-construction_real_estate",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
@@ -113050,6 +113264,7 @@
         "TX-industry-professional_services",
         "TX-ai_market_subcategory-observability_evaluation",
         "TX-ai_market_application-ai_observability_governance",
+        "TX-industry-construction_real_estate",
         "TX-industry-food_hospitality"
       ],
       "relatedEntityIds": [],
@@ -113138,7 +113353,6 @@
         "TX-industry-media_entertainment",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-legal_services",
-        "TX-industry-construction_real_estate",
         "TX-industry-aerospace_defense",
         "TX-industry-retail_ecommerce",
         "TX-industry-energy_utilities",
@@ -113147,6 +113361,7 @@
         "TX-ai_market_application-ai_development_orchestration",
         "TX-industry-government_public_sector",
         "TX-industry-professional_services",
+        "TX-industry-construction_real_estate",
         "TX-industry-food_hospitality"
       ],
       "relatedEntityIds": [],
@@ -113855,13 +114070,13 @@
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
         "TX-product_form-enterprise_software_platform",
-        "TX-industry-construction_real_estate",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-knowledge_search",
-        "TX-industry-professional_services"
+        "TX-industry-professional_services",
+        "TX-industry-construction_real_estate"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-09",
@@ -113885,9 +114100,9 @@
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
         "TX-product_form-enterprise_software_platform",
-        "TX-use_case-hr_workforce",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-enterprise_applications",
+        "TX-use_case-hr_workforce",
         "TX-ai_market_subcategory-hr"
       ],
       "relatedEntityIds": [],
@@ -113980,6 +114195,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-81eaad496911181e",
         "EV-54f4bd47b09c4dc3"
       ],
       "viewpointIds": [],
@@ -113988,7 +114204,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-31",
-      "lastSeen": "2026-10-02"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "EN-4de4a07ad031569c",
@@ -114276,7 +114492,6 @@
         "TX-industry-media_entertainment",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-legal_services",
-        "TX-industry-construction_real_estate",
         "TX-industry-aerospace_defense",
         "TX-industry-retail_ecommerce",
         "TX-industry-energy_utilities",
@@ -114285,6 +114500,7 @@
         "TX-ai_market_application-ai_development_orchestration",
         "TX-industry-government_public_sector",
         "TX-industry-professional_services",
+        "TX-industry-construction_real_estate",
         "TX-industry-food_hospitality"
       ],
       "relatedEntityIds": [],
@@ -114356,7 +114572,6 @@
         "TX-industry-logistics_supply_chain",
         "TX-industry-media_entertainment",
         "TX-industry-legal_services",
-        "TX-industry-construction_real_estate",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
@@ -114366,6 +114581,7 @@
         "TX-industry-education",
         "TX-industry-government_public_sector",
         "TX-industry-professional_services",
+        "TX-industry-construction_real_estate",
         "TX-industry-food_hospitality"
       ],
       "relatedEntityIds": [],
@@ -115350,6 +115566,7 @@
       ],
       "eventIds": [
         "EV-5c5476971d6a707b",
+        "EV-b18649ebd3cd26dd",
         "EV-7684bfb9b954c1fd",
         "EV-e1d0e727ae30cdf0",
         "EV-c964f7646ad88c1e",
@@ -115987,7 +116204,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "EN-df3b29befa02cd17",
@@ -116491,7 +116708,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "EN-866e1f18c9370d5d",
@@ -116883,8 +117100,10 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-81eaad496911181e",
         "EV-b34cc7c6ca51ad7a",
         "EV-8615e87fa54663e5",
+        "EV-c2b9f84893259905",
         "EV-21dcf84526413e10",
         "EV-d0340d320ebf78c6",
         "EV-0613dcfb1a61d27a",
@@ -117205,6 +117424,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
@@ -117222,7 +117442,6 @@
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-use_case-security_operations",
@@ -117236,7 +117455,6 @@
         "TX-ai_market_subcategory-development_deployment",
         "TX-technology-code_generation",
         "TX-industry-legal_services",
-        "TX-industry-construction_real_estate",
         "TX-deployment_model-cloud",
         "TX-industry-aerospace_defense",
         "TX-industry-retail_ecommerce",
@@ -117249,6 +117467,7 @@
         "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
         "TX-industry-professional_services",
+        "TX-industry-construction_real_estate",
         "TX-industry-food_hospitality",
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
@@ -117288,7 +117507,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "EN-28d0bd981118a907",
@@ -117825,6 +118044,7 @@
       ],
       "eventIds": [
         "EV-b34cc7c6ca51ad7a",
+        "EV-c2b9f84893259905",
         "EV-5e2b5770eac85ca5",
         "EV-fd693f4b2195b20e",
         "EV-392fb231bfc623b6",
@@ -117846,7 +118066,7 @@
         "EN-5f5fcd8701ab30c0"
       ],
       "firstSeen": "2025-09-26",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "EN-19e41212c0556603",
@@ -118457,6 +118677,9 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-3cc8e7ce0143047a",
+        "EV-000a2cf24e205f93",
+        "EV-5267a13213f966ec",
         "EV-20253e8f968787c7",
         "EV-38f85ebd3ffeb9da",
         "EV-7ddfa7b82af141ec",
@@ -118595,6 +118818,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
@@ -118605,7 +118829,6 @@
         "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
-        "TX-technology-embodied_ai",
         "TX-use_case-security_operations",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
@@ -118662,7 +118885,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "EN-6fcba5d96a4fadfd",
@@ -119259,13 +119482,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-use_case-software_development",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-use_case-security_operations",
@@ -119686,10 +119909,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
       ],
@@ -120545,6 +120768,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-a355d976d3a7daef",
         "EV-ceae771867a66bb5",
         "EV-eb3b431d4ce98ec5",
         "EV-68897f26c8d956df",
@@ -120563,7 +120787,7 @@
         "EN-7ff4fb5ddc1f4700"
       ],
       "firstSeen": "2026-07-09",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "EN-ba728f8ca730921f",
@@ -120953,8 +121177,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-embodied_ai"
+        "TX-technology-embodied_ai",
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-18",

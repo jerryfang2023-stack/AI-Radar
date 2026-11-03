@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-01",
-    "currentDate": "2026-11-01",
-    "eventCount": 4338,
+    "latestDataDate": "2026-11-03",
+    "currentDate": "2026-11-03",
+    "eventCount": 4356,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,6 +64,7 @@
     ],
     "eventIds": [
       "EV-5c5476971d6a707b",
+      "EV-b18649ebd3cd26dd",
       "EV-7684bfb9b954c1fd",
       "EV-e1d0e727ae30cdf0",
       "EV-c964f7646ad88c1e",
@@ -701,7 +702,7 @@
       "EN-b9db1ff13ae8496e"
     ],
     "firstSeen": "2022-10-01",
-    "lastSeen": "2026-11-01",
+    "lastSeen": "2026-11-03",
     "relationIds": [
       "REL2-59587a82f0b820bc",
       "REL2-39c721b66f466667",
@@ -769,6 +770,7 @@
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-5c5476971d6a707b",
+        "EV-b18649ebd3cd26dd",
         "EV-2ad2ae14a594df04",
         "EV-7684bfb9b954c1fd",
         "EV-e1d0e727ae30cdf0",
@@ -1352,7 +1354,7 @@
     "timeline": [
       {
         "id": "EV-5c5476971d6a707b",
-        "dataDate": "2026-11-01",
+        "dataDate": "2026-11-03",
         "date": "2026-10-31",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -1362,6 +1364,22 @@
         "title": "OpenAI 仅筹集到其 300 亿美元目标中的 110 亿美元，大型投资者对 AI 失去兴趣",
         "displayTags": [],
         "entityIds": [
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-b18649ebd3cd26dd",
+        "dataDate": "2026-11-03",
+        "date": "2026-10-29",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenAI 支持的 Thrive Holdings 收购 ADT",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f970fd34532919fe",
           "EN-7d3194f79e645c42"
         ]
       },
@@ -18080,8 +18098,10 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-81eaad496911181e",
         "EV-b34cc7c6ca51ad7a",
         "EV-8615e87fa54663e5",
+        "EV-c2b9f84893259905",
         "EV-21dcf84526413e10",
         "EV-d0340d320ebf78c6",
         "EV-0613dcfb1a61d27a",
@@ -18402,6 +18422,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
@@ -18419,7 +18440,6 @@
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-use_case-security_operations",
@@ -18433,7 +18453,6 @@
         "TX-ai_market_subcategory-development_deployment",
         "TX-technology-code_generation",
         "TX-industry-legal_services",
-        "TX-industry-construction_real_estate",
         "TX-deployment_model-cloud",
         "TX-industry-aerospace_defense",
         "TX-industry-retail_ecommerce",
@@ -18446,6 +18465,7 @@
         "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
         "TX-industry-professional_services",
+        "TX-industry-construction_real_estate",
         "TX-industry-food_hospitality",
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
@@ -18485,7 +18505,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "EN-7839fb10a8f14c70",
@@ -18954,6 +18974,9 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-3cc8e7ce0143047a",
+        "EV-000a2cf24e205f93",
+        "EV-5267a13213f966ec",
         "EV-20253e8f968787c7",
         "EV-38f85ebd3ffeb9da",
         "EV-7ddfa7b82af141ec",
@@ -19092,6 +19115,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
@@ -19102,7 +19126,6 @@
         "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
-        "TX-technology-embodied_ai",
         "TX-use_case-security_operations",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
@@ -19159,7 +19182,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "EN-52fc33ae4d101a5d",
@@ -19206,6 +19229,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-c0b3ec3c5e9ee0bd",
         "EV-b84f9955d0e55497",
         "EV-7c8a2573ab3781e9",
         "EV-5db7347d93859de3",
@@ -19423,7 +19447,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-01-14",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "EN-4d748ebd71af03a7",
@@ -21032,7 +21056,9 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-e632e1806935d10f",
         "EV-6133f09c61f5c5e8",
+        "EV-c4b05f65eba5c09c",
         "EV-15004f646df67bad",
         "EV-8de1001fde6993a5",
         "EV-412b80c35c4c235a",
@@ -21722,7 +21748,9 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-64af05d8ce796170",
         "EN-f78f7a86360aa8f4",
+        "EN-8cfc740789ec55e7",
         "EN-5b45e76107a945ba",
         "EN-858837c33d111717",
         "EN-bf3b0b9c3016225f",
@@ -22466,7 +22494,7 @@
         "HW-c5a22adcc66136ed"
       ],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -22476,6 +22504,7 @@
       "valueId": "chip_accelerator",
       "eventIds": [
         "EV-b34cc7c6ca51ad7a",
+        "EV-c2b9f84893259905",
         "EV-e0a31302688c81ec",
         "EV-53dad7c8f530b480",
         "EV-20b41540e3b24633",
@@ -22774,7 +22803,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -23050,7 +23079,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "TX-target_user-business_user",
@@ -23778,7 +23807,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "TX-target_user-developer",
@@ -24296,7 +24325,7 @@
         "HW-f05a371d8e0599b0"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "TX-use_case-software_development",
@@ -24571,7 +24600,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "TX-product_form-model",
@@ -25268,7 +25297,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "TX-industry-financial_services",
@@ -25951,7 +25980,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-10-30"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "TX-use_case-security_operations",

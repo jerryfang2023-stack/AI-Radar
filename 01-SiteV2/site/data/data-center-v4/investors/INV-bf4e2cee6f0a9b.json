@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-01",
-    "currentDate": "2026-11-01",
-    "eventCount": 4338,
+    "latestDataDate": "2026-11-03",
+    "currentDate": "2026-11-03",
+    "eventCount": 4356,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,19 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-05-21",
-    "latest_disclosed_at": "2026-06-30",
+    "latest_disclosed_at": "2026-10-28",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "seed",
@@ -91,12 +92,57 @@
         "name": "Monogram AI, Inc."
       },
       {
+        "entity_id": "EN-87e4571bc7b47363",
+        "canonical_entity_id": "",
+        "name": "Plato Technologies, Inc."
+      },
+      {
         "entity_id": "EN-a2183526e5130b45",
         "canonical_entity_id": "",
         "name": "Stack AI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-23452b1ce7bcfae7",
+        "funding_insight_id": "FI-037f4568327f95f4",
+        "event_ids": [
+          "EV-c0b3ec3c5e9ee0bd"
+        ],
+        "company_entity_id": "EN-87e4571bc7b47363",
+        "company_canonical_entity_id": "",
+        "company_name": "Plato Technologies, Inc.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$16 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 16000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1600 万美元"
+        },
+        "announced_at": "2026-10-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5280378baa56a46c",
+            "source_url": "https://www.prnewswire.com/news-releases/plato-raises-16-million-to-build-the-training-grounds-for-ais-next-leap-into-real-work-302921832.html",
+            "source_title": "Plato 融资 1600 万美元，为 AI 下一次跃入实际工作打造训练场",
+            "source_content_hash": "40d81f41d292229474322c6712c30137284c73080086b15e0822c28f27871e90",
+            "quote": "a $16 million Series A funding round led by Nava Ventures, with participation from Gradient Ventures, Transpose Platform, and Microsoft AI CEO, Mustafa Suleyman",
+            "quote_hash": "5bf30ef93ece7c977ea91f45e35cab19e39e3b42297cb3d4b92399191e510e2e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3d1b23bb54c94a35",
         "funding_insight_id": "FI-12131c1300a2d205",
@@ -216,9 +262,49 @@
             "quote_hash": "70e2c351cbf12de0c2e90c8d80c350d84ab7f1d234a2b5e7cb4f7d220f013343"
           }
         ]
+      },
+      {
+        "activity_id": "IA-e429e713c27eb3db",
+        "funding_insight_id": "FI-037f4568327f95f4",
+        "event_ids": [
+          "EV-c0b3ec3c5e9ee0bd"
+        ],
+        "company_entity_id": "EN-87e4571bc7b47363",
+        "company_canonical_entity_id": "",
+        "company_name": "Plato Technologies, Inc.",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5280378baa56a46c",
+            "source_url": "https://www.prnewswire.com/news-releases/plato-raises-16-million-to-build-the-training-grounds-for-ais-next-leap-into-real-work-302921832.html",
+            "source_title": "Plato 融资 1600 万美元，为 AI 下一次跃入实际工作打造训练场",
+            "source_content_hash": "40d81f41d292229474322c6712c30137284c73080086b15e0822c28f27871e90",
+            "quote": "following a seed round led by Gradient Ventures",
+            "quote_hash": "5501370bc9426c2e72cfc5d14b7443050989e7e06961ed8ad84841a52db77819"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-5280378baa56a46c",
+        "source_url": "https://www.prnewswire.com/news-releases/plato-raises-16-million-to-build-the-training-grounds-for-ais-next-leap-into-real-work-302921832.html",
+        "source_title": "Plato 融资 1600 万美元，为 AI 下一次跃入实际工作打造训练场",
+        "source_content_hash": "40d81f41d292229474322c6712c30137284c73080086b15e0822c28f27871e90",
+        "quote": "a $16 million Series A funding round led by Nava Ventures, with participation from Gradient Ventures, Transpose Platform, and Microsoft AI CEO, Mustafa Suleyman",
+        "quote_hash": "5bf30ef93ece7c977ea91f45e35cab19e39e3b42297cb3d4b92399191e510e2e"
+      },
       {
         "source_id": "FISRC-907e4297862ddd8c",
         "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
@@ -242,6 +328,14 @@
         "source_content_hash": "eb1befb4357516cf",
         "quote": "Stack AI recently announced it closed a $3 million oversubscribed seed funding round led by Gradient Ventures",
         "quote_hash": "70e2c351cbf12de0c2e90c8d80c350d84ab7f1d234a2b5e7cb4f7d220f013343"
+      },
+      {
+        "source_id": "FISRC-5280378baa56a46c",
+        "source_url": "https://www.prnewswire.com/news-releases/plato-raises-16-million-to-build-the-training-grounds-for-ais-next-leap-into-real-work-302921832.html",
+        "source_title": "Plato 融资 1600 万美元，为 AI 下一次跃入实际工作打造训练场",
+        "source_content_hash": "40d81f41d292229474322c6712c30137284c73080086b15e0822c28f27871e90",
+        "quote": "following a seed round led by Gradient Ventures",
+        "quote_hash": "5501370bc9426c2e72cfc5d14b7443050989e7e06961ed8ad84841a52db77819"
       }
     ],
     "public_profile": {
@@ -304,16 +398,16 @@
           "source_id": "gradient_portfolio"
         },
         {
+          "description": "融资来源记录：Plato Technologies, Inc. · A轮 · 2026-10-28 · 本轮参投 · $16 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5280378baa56a46c"
+        },
+        {
           "description": "融资来源记录：Monogram AI, Inc. · 种子轮 · 2026-06-30 · 本轮参投 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-907e4297862ddd8c"
         },
         {
           "description": "融资来源记录：Fazeshift · A轮 · 2026-05-07 · 本轮参投 · $17 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-37925b95fc58982a"
-        },
-        {
-          "description": "融资来源记录：Stack AI · 种子轮 · 2024-05-21 · 种子轮领投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-79a4e94da8271853"
         }
       ],
       "contacts": [
@@ -353,6 +447,14 @@
           "quote_hash": "231913bb64ac13f33d10356f37612baa7015897177217f71ea3d9f4acb097d20"
         },
         {
+          "source_id": "FISRC-5280378baa56a46c",
+          "source_url": "https://www.prnewswire.com/news-releases/plato-raises-16-million-to-build-the-training-grounds-for-ais-next-leap-into-real-work-302921832.html",
+          "source_title": "Plato 融资 1600 万美元，为 AI 下一次跃入实际工作打造训练场",
+          "source_content_hash": "40d81f41d292229474322c6712c30137284c73080086b15e0822c28f27871e90",
+          "quote": "a $16 million Series A funding round led by Nava Ventures, with participation from Gradient Ventures, Transpose Platform, and Microsoft AI CEO, Mustafa Suleyman",
+          "quote_hash": "5bf30ef93ece7c977ea91f45e35cab19e39e3b42297cb3d4b92399191e510e2e"
+        },
+        {
           "source_id": "FISRC-907e4297862ddd8c",
           "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
           "source_title": "Monogram 获 4000 万美元种子轮融资",
@@ -367,14 +469,6 @@
           "source_content_hash": "9fc07709e89b11cc",
           "quote": "participation from Gradient Ventures (Google’s early-stage AI fund)",
           "quote_hash": "1ca9ecd413f62c5d03f1e0bcdd445f4d51a04c94de14d3d1ccbd86fcfaac42e6"
-        },
-        {
-          "source_id": "FISRC-79a4e94da8271853",
-          "source_url": "https://dataphoenix.info/stack-ai-raised-3m-to-connect-the-latest-ai-innovations-with-the-most-urgent-applications/",
-          "source_title": "Stack AI raised $3M to connect the latest AI innovations with the most urgent applications",
-          "source_content_hash": "eb1befb4357516cf",
-          "quote": "Stack AI recently announced it closed a $3 million oversubscribed seed funding round led by Gradient Ventures",
-          "quote_hash": "70e2c351cbf12de0c2e90c8d80c350d84ab7f1d234a2b5e7cb4f7d220f013343"
         }
       ],
       "last_verified_at": "2026-09-25",

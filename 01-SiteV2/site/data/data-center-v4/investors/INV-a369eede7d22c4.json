@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-01",
-    "currentDate": "2026-11-01",
-    "eventCount": 4338,
+    "latestDataDate": "2026-11-03",
+    "currentDate": "2026-11-03",
+    "eventCount": 4356,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,37 +54,86 @@
   },
   "institution": {
     "id": "INV-a369eede7d22c4",
-    "name": "IN Venture",
-    "aliases": [],
+    "name": "Inventure",
+    "aliases": [
+      "IN Venture"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "investment_institution",
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-08",
-    "latest_disclosed_at": "2026-07-08",
+    "latest_disclosed_at": "2026-11-02",
     "role_counts": {
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
-      "series_a"
+      "series_a",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-478cc1059b738832",
         "canonical_entity_id": "",
         "name": "Alta"
+      },
+      {
+        "entity_id": "EN-64af05d8ce796170",
+        "canonical_entity_id": "",
+        "name": "Roleo"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-96f553bdefcd7f0e",
+        "funding_insight_id": "FI-cd548da3fff6f93d",
+        "event_ids": [
+          "EV-e632e1806935d10f"
+        ],
+        "company_entity_id": "EN-64af05d8ce796170",
+        "company_canonical_entity_id": "",
+        "company_name": "Roleo",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "€2.9 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 2900000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "290 万欧元"
+        },
+        "announced_at": "2026-11-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-43c75c59c0aa74fe",
+            "source_url": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
+            "source_title": "找工作？爱沙尼亚的Roleo刚刚融资290万欧元，助你求职之旅",
+            "source_content_hash": "edbc788fcd8dd594515287d3255271334895da316fa44f553e8a5c4e59a3c509",
+            "quote": "The round was led by the Baltic venture capital firm Practica Capital and included participation from Nordic VC Inventure.",
+            "quote_hash": "27e039ea565a667bd251531fbe31fe992b0279693895f2c86da3f456215689cc"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f4798e178d6cf86a",
         "funding_insight_id": "FI-690521fe943be555",
@@ -129,6 +178,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-43c75c59c0aa74fe",
+        "source_url": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
+        "source_title": "找工作？爱沙尼亚的Roleo刚刚融资290万欧元，助你求职之旅",
+        "source_content_hash": "edbc788fcd8dd594515287d3255271334895da316fa44f553e8a5c4e59a3c509",
+        "quote": "The round was led by the Baltic venture capital firm Practica Capital and included participation from Nordic VC Inventure.",
+        "quote_hash": "27e039ea565a667bd251531fbe31fe992b0279693895f2c86da3f456215689cc"
+      },
+      {
         "source_id": "FISRC-9661f69b0104e76e",
         "source_url": "https://prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html",
         "source_title": "Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构",
@@ -159,6 +216,10 @@
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Roleo · 轮次未披露 · 2026-11-02 · 本轮参投 · €2.9 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-43c75c59c0aa74fe"
+        },
         {
           "description": "融资来源记录：Alta · A轮 · 2026-07-08 · 本轮领投 · 2500万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9661f69b0104e76e"
@@ -193,6 +254,14 @@
           "source_content_hash": "06a7ad5893d08b42fb947b729c16566d1569a9d5229eec40184fd37adb783632",
           "quote": "We invest in deep-tech early stage Israeli startups that have the potential to become global category leaders.",
           "quote_hash": "58ac7ccf69c318830f31c9eef1252e5ef05cad68c23d4d5f5c54bef064390d7b"
+        },
+        {
+          "source_id": "FISRC-43c75c59c0aa74fe",
+          "source_url": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
+          "source_title": "找工作？爱沙尼亚的Roleo刚刚融资290万欧元，助你求职之旅",
+          "source_content_hash": "edbc788fcd8dd594515287d3255271334895da316fa44f553e8a5c4e59a3c509",
+          "quote": "The round was led by the Baltic venture capital firm Practica Capital and included participation from Nordic VC Inventure.",
+          "quote_hash": "27e039ea565a667bd251531fbe31fe992b0279693895f2c86da3f456215689cc"
         },
         {
           "source_id": "FISRC-9661f69b0104e76e",

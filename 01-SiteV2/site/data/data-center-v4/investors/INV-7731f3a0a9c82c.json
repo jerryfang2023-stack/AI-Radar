@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-01",
-    "currentDate": "2026-11-01",
-    "eventCount": 4338,
+    "latestDataDate": "2026-11-03",
+    "currentDate": "2026-11-03",
+    "eventCount": 4356,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-14",
-    "latest_disclosed_at": "2026-10-14",
+    "latest_disclosed_at": "2026-11-02",
     "role_counts": {
-      "participant": 1
+      "historical_or_ambiguous": 1,
+      "participant": 2
     },
     "round_codes": [
+      "series_a",
       "strategic"
     ],
     "portfolio_companies": [
@@ -82,9 +84,54 @@
         "entity_id": "EN-91c0bae09191ddd3",
         "canonical_entity_id": "",
         "name": "Scimplify"
+      },
+      {
+        "entity_id": "EN-9fb566659a1709f0",
+        "canonical_entity_id": "",
+        "name": "Two Point O Capital (TW.O)"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-596d852903160d0d",
+        "funding_insight_id": "FI-0b9f748a883a868b",
+        "event_ids": [
+          "EV-4e4764a7942460a3"
+        ],
+        "company_entity_id": "EN-9fb566659a1709f0",
+        "company_canonical_entity_id": "",
+        "company_name": "Two Point O Capital (TW.O)",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-11-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8326901cdc698467",
+            "source_url": "https://yourstory.com/2026/11/two-point-o-raises-10-million-led-by-transition-venture-capital",
+            "source_title": "Two Point O 完成由 Transition Venture Capital 领投的 1000 万美元融资",
+            "source_content_hash": "4936dfb1b54dfff954abbc3cac10be38a828ad3e067fe07ee49af0a696a577bf",
+            "quote": "Existing investor Omnivore and angel investors Chiranjeev Singh Saluja and Sudhir M Reddy also participated in the round.",
+            "quote_hash": "8097fda8ec0e59bb17db298f4edf59e1865893f08cea203d6615c71492e37fc4"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8d7c3daa02e6c62a",
         "funding_insight_id": "FI-2a5726399aaa03c7",
@@ -124,9 +171,49 @@
             "quote_hash": "6e638cfff60136717590706b6844f0b60ef6e505a4af6c1cefc26fdc273fc5f5"
           }
         ]
+      },
+      {
+        "activity_id": "IA-260a5c12de98d16e",
+        "funding_insight_id": "FI-0b9f748a883a868b",
+        "event_ids": [
+          "EV-4e4764a7942460a3"
+        ],
+        "company_entity_id": "EN-9fb566659a1709f0",
+        "company_canonical_entity_id": "",
+        "company_name": "Two Point O Capital (TW.O)",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ace822f737b70be1",
+            "source_url": "https://indianstartupnews.com/funding/climate-finance-startup-two-point-o-raises-10-million-to-finance-clean-energy-for-businesses-in-india-12775390",
+            "source_title": "Climate finance startup Two Point O raises $10 million to finance clean energy for businesses in India",
+            "source_content_hash": "e3477c887fc68a98",
+            "quote": "Two Point O raised $6.3 million in a seed round led by Omnivore in September 2024",
+            "quote_hash": "3b32e459d523a72c2b55803a1a469b7790c4e6d7e70e6c8e5b907bfad52e0fac"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-8326901cdc698467",
+        "source_url": "https://yourstory.com/2026/11/two-point-o-raises-10-million-led-by-transition-venture-capital",
+        "source_title": "Two Point O 完成由 Transition Venture Capital 领投的 1000 万美元融资",
+        "source_content_hash": "4936dfb1b54dfff954abbc3cac10be38a828ad3e067fe07ee49af0a696a577bf",
+        "quote": "Existing investor Omnivore and angel investors Chiranjeev Singh Saluja and Sudhir M Reddy also participated in the round.",
+        "quote_hash": "8097fda8ec0e59bb17db298f4edf59e1865893f08cea203d6615c71492e37fc4"
+      },
       {
         "source_id": "FISRC-1cf1a3388554a4ca",
         "source_url": "https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/",
@@ -134,6 +221,14 @@
         "source_content_hash": "fb255e0c1a6337736310f8194786f68e353c939e292ed91a7e90b13f682245c9",
         "quote": "Existing backers Accel India, Bertelsmann India Investments, Omnivore, and 3one4 Capital also participated.",
         "quote_hash": "6e638cfff60136717590706b6844f0b60ef6e505a4af6c1cefc26fdc273fc5f5"
+      },
+      {
+        "source_id": "FISRC-ace822f737b70be1",
+        "source_url": "https://indianstartupnews.com/funding/climate-finance-startup-two-point-o-raises-10-million-to-finance-clean-energy-for-businesses-in-india-12775390",
+        "source_title": "Climate finance startup Two Point O raises $10 million to finance clean energy for businesses in India",
+        "source_content_hash": "e3477c887fc68a98",
+        "quote": "Two Point O raised $6.3 million in a seed round led by Omnivore in September 2024",
+        "quote_hash": "3b32e459d523a72c2b55803a1a469b7790c4e6d7e70e6c8e5b907bfad52e0fac"
       }
     ],
     "public_profile": {
@@ -141,17 +236,33 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Omnivore 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Omnivore 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Two Point O Capital (TW.O) · A轮 · 2026-11-02 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8326901cdc698467"
+        },
+        {
           "description": "融资来源记录：Scimplify · 战略融资 · 2026-10-14 · 本轮参投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1cf1a3388554a4ca"
+        },
+        {
+          "description": "融资来源记录：Two Point O Capital (TW.O) · 历史轮次未披露 · 种子轮领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ace822f737b70be1"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-8326901cdc698467",
+          "source_url": "https://yourstory.com/2026/11/two-point-o-raises-10-million-led-by-transition-venture-capital",
+          "source_title": "Two Point O 完成由 Transition Venture Capital 领投的 1000 万美元融资",
+          "source_content_hash": "4936dfb1b54dfff954abbc3cac10be38a828ad3e067fe07ee49af0a696a577bf",
+          "quote": "Existing investor Omnivore and angel investors Chiranjeev Singh Saluja and Sudhir M Reddy also participated in the round.",
+          "quote_hash": "8097fda8ec0e59bb17db298f4edf59e1865893f08cea203d6615c71492e37fc4"
+        },
         {
           "source_id": "FISRC-1cf1a3388554a4ca",
           "source_url": "https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/",
@@ -159,6 +270,14 @@
           "source_content_hash": "fb255e0c1a6337736310f8194786f68e353c939e292ed91a7e90b13f682245c9",
           "quote": "Existing backers Accel India, Bertelsmann India Investments, Omnivore, and 3one4 Capital also participated.",
           "quote_hash": "6e638cfff60136717590706b6844f0b60ef6e505a4af6c1cefc26fdc273fc5f5"
+        },
+        {
+          "source_id": "FISRC-ace822f737b70be1",
+          "source_url": "https://indianstartupnews.com/funding/climate-finance-startup-two-point-o-raises-10-million-to-finance-clean-energy-for-businesses-in-india-12775390",
+          "source_title": "Climate finance startup Two Point O raises $10 million to finance clean energy for businesses in India",
+          "source_content_hash": "e3477c887fc68a98",
+          "quote": "Two Point O raised $6.3 million in a seed round led by Omnivore in September 2024",
+          "quote_hash": "3b32e459d523a72c2b55803a1a469b7790c4e6d7e70e6c8e5b907bfad52e0fac"
         }
       ],
       "last_verified_at": "2026-10-06"

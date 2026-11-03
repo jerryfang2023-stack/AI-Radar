@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-01",
-    "currentDate": "2026-11-01",
-    "eventCount": 4338,
+    "latestDataDate": "2026-11-03",
+    "currentDate": "2026-11-03",
+    "eventCount": 4356,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -3657,13 +3657,13 @@
     {
       "id": "HWC-6691f417bed0e674",
       "snapshotKey": "6691f417bed0e674",
-      "snapshotId": "HWS-2c61533d9892e832",
+      "snapshotId": "HWS-3f80e3c92e184415",
       "eventId": "EV-848a9d54114887d9",
       "eventIds": [
         "EV-848a9d54114887d9"
       ],
-      "dataDate": "2026-11-01",
-      "date": "2026-11-01",
+      "dataDate": "2026-11-03",
+      "date": "2026-11-03",
       "title": "AI 行业重磅并购",
       "subject": "AI 行业重磅并购",
       "productNames": [],
@@ -3675,12 +3675,21 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-51dd3df27a39de01"
+          "fact_ref": "HWF-4d1014df6ffefe2d"
         }
       },
       "factCount": 1,
-      "snapshotCount": 4,
+      "snapshotCount": 5,
       "changes": [
+        {
+          "date": "2026-11-03",
+          "previousDate": "2026-11-01",
+          "snapshotId": "HWS-3f80e3c92e184415",
+          "previousSnapshotId": "HWS-2c61533d9892e832",
+          "changedFacts": [
+            "product"
+          ]
+        },
         {
           "date": "2026-11-01",
           "previousDate": "2026-10-31",
@@ -3713,8 +3722,8 @@
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-11-01",
-          "hardware_fact_id": "HWF-51dd3df27a39de01",
+          "data_date": "2026-11-03",
+          "hardware_fact_id": "HWF-4d1014df6ffefe2d",
           "fact_type": "product",
           "observed_at": "2026-10-29",
           "subject_entity_id": "EN-7b3e572f9b08d7b0",
@@ -3728,11 +3737,11 @@
           "event_refs": [
             "EV-848a9d54114887d9"
           ],
-          "claim_ref": "CL-e890af9253b66317",
+          "claim_ref": "CL-ff64e112d8144e1c",
           "source_refs": [
             "SA-1de2470f1a3e55ae"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-11-01/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-11-03/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -22122,8 +22131,317 @@
   ],
   "events": [
     {
+      "id": "EV-4e4764a7942460a3",
+      "dataDate": "2026-11-03",
+      "date": "2026-11-02",
+      "updatedDate": "2026-11-02",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Two Point O 完成由 Transition Venture Capital 领投的 1000 万美元融资",
+      "originalTitle": "Two Point O raises $10M led by Transition Venture Capital",
+      "subject": "Two Point O",
+      "action": "raises",
+      "object": "$10M led by Transition Venture Capital",
+      "metrics": [
+        "$10 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9fb566659a1709f0"
+      ],
+      "entityNames": [
+        "Two Point O"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://yourstory.com/2026/11/two-point-o-raises-10-million-led-by-transition-venture-capital",
+      "publisher": "yourstory.com"
+    },
+    {
+      "id": "EV-81eaad496911181e",
+      "dataDate": "2026-11-03",
+      "date": "2026-11-02",
+      "updatedDate": "2026-11-02",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "deepseek_json_quality_failed:cited_research_sources_insufficient",
+      "title": "Trajectory 融资 4500 万美元，让非技术专家也能参与 AI 模型训练",
+      "originalTitle": "Trajectory raises $45M to make AI model training accessible to nontechnical experts",
+      "subject": "Trajectory",
+      "action": "raises",
+      "object": "$45M to make AI model training accessible to nontechnical experts",
+      "metrics": [
+        "$45 million",
+        "$300 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c32662785b597e46",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Trajectory",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-a355d976d3a7daef",
+      "dataDate": "2026-11-03",
+      "date": "2026-11-02",
+      "updatedDate": "2026-11-02",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "subject_company_unresolved",
+      "title": "RoboScience机器科学完成A2轮数亿元融资，产业资本集体入局",
+      "originalTitle": "首发|RoboScience机器科学完成A2轮数亿元融资，产业资本集体入局",
+      "subject": "首发|RoboScience机器科学",
+      "action": "完成A2轮数亿元融资",
+      "object": "，产业资本集体入局",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-3f988716cc57e89f",
+        "EN-fb646a85ad74e7c5"
+      ],
+      "entityNames": [
+        "趁着",
+        "Tencent Cloud"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202611/571174.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-bd6ab378d5dc309f",
+      "dataDate": "2026-11-03",
+      "date": "2026-11-02",
+      "updatedDate": "2026-11-02",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Clark 推出用于审计的自主 AI 智能体并完成 1100 万美元种子轮融资，总融资额达 1600 万美元",
+      "originalTitle": "Clark Launches Autonomous AI Employees for Audit and Raises $11M Seed Round, Bringing Total Funding to $16M",
+      "subject": "Clark",
+      "action": "Raises",
+      "object": "$11M Seed Round, Bringing Total Funding to $16M",
+      "metrics": [
+        "$11 million",
+        "$5 million",
+        "$16 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-712df00b36e4528d"
+      ],
+      "entityNames": [
+        "Clark"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/clark-launches-autonomous-ai-employees-for-audit-and-raises-11m-seed-round-bringing-total-funding-to-16m-302925250.html",
+      "publisher": "www.prnewswire.com"
+    },
+    {
+      "id": "EV-e632e1806935d10f",
+      "dataDate": "2026-11-03",
+      "date": "2026-11-02",
+      "updatedDate": "2026-11-02",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "找工作？爱沙尼亚的Roleo刚刚融资290万欧元，助你求职之旅",
+      "originalTitle": "Looking for a job? Estonia&#8217;s Roleo just raised €2.9 million to help you on your journey",
+      "subject": "Looking for a job? Estonia&#8217;s Roleo just",
+      "action": "raised",
+      "object": "€2.9 million to help you on your journey",
+      "metrics": [
+        "€2.9 million",
+        "€34.68 million",
+        "€18.3 million"
+      ],
+      "locations": [
+        "Europe"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-64af05d8ce796170"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-64af05d8ce796170"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-64af05d8ce796170"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-64af05d8ce796170"
+      ],
+      "entityNames": [
+        "Roleo"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
       "id": "EV-5c5476971d6a707b",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-31",
       "updatedDate": "2026-10-31",
       "eventType": "funding",
@@ -22171,7 +22489,7 @@
     },
     {
       "id": "EV-f1e92d5db0517641",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-31",
       "updatedDate": "2026-10-31",
       "eventType": "funding",
@@ -22360,7 +22678,7 @@
     },
     {
       "id": "EV-b066bebd4dece3c5",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-30",
       "updatedDate": "2026-10-30",
       "eventType": "acquisition",
@@ -22441,8 +22759,187 @@
       "publisher": "news.crunchbase.com"
     },
     {
+      "id": "EV-0dc2c32790ce9091",
+      "dataDate": "2026-11-03",
+      "date": "2026-10-29",
+      "updatedDate": "2026-10-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Crux Labs 融资超 600 万美元，使 AI 智能体在企业内部与人类判断保持一致",
+      "originalTitle": "Crux Labs Raises Over $6M to Align AI Agents with Human Judgment Inside the Enterprise",
+      "subject": "Crux Labs",
+      "action": "Raises",
+      "object": "Over $6M to Align AI Agents with Human Judgment Inside the Enterprise",
+      "metrics": [
+        "$6M",
+        "$6"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-1d05806970f0084f",
+        "EN-bd732730bd39834d"
+      ],
+      "entityNames": [
+        "Crux Labs",
+        "NEW YORK"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/crux-labs-raises-over-6m-to-align-ai-agents-with-human-judgment-inside-the-enterprise-302923216.html",
+      "publisher": "www.prnewswire.com"
+    },
+    {
+      "id": "EV-1dc8d06cdf7fb8b2",
+      "dataDate": "2026-11-03",
+      "date": "2026-10-29",
+      "updatedDate": "2026-10-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Physical AI 初创公司 Tensrai 在 pre-seed 轮融资中筹集了 3.4 Cr 卢比",
+      "originalTitle": "Physical AI startup Tensrai raises Rs 3.4 Cr in pre-seed round",
+      "subject": "Physical AI startup Tensrai",
+      "action": "raises",
+      "object": "Rs 3.4 Cr in pre-seed round",
+      "metrics": [
+        "Rs 3.4 crore"
+      ],
+      "locations": [
+        "India"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-99fc2d27cc698de5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-99fc2d27cc698de5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-99fc2d27cc698de5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-99fc2d27cc698de5"
+      ],
+      "entityNames": [
+        "Physical AI startup Tensrai"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://entrackr.com/snippets/physical-ai-startup-tensrai-raises-rs-34-cr-in-pre-seed-round-12764908",
+      "publisher": "entrackr.com"
+    },
+    {
+      "id": "EV-2e14ff936dbb966f",
+      "dataDate": "2026-11-03",
+      "date": "2026-10-29",
+      "updatedDate": "2026-10-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "SuperMe 为其 AI 专家资料网络融资 2000 万美元",
+      "originalTitle": "SuperMe raises $20M for its network of AI expert profiles",
+      "subject": "SuperMe",
+      "action": "raises",
+      "object": "$20M for its network of AI expert profiles",
+      "metrics": [
+        "$20 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d144b9ae6960c728"
+      ],
+      "entityNames": [
+        "SuperMe"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/29/superme-raises-20m-for-its-network-of-ai-expert-profiles/",
+      "publisher": "techcrunch.com"
+    },
+    {
       "id": "EV-4a6712d974667d0f",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "funding",
@@ -22492,7 +22989,7 @@
     },
     {
       "id": "EV-71961eb465ee3502",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "funding",
@@ -22539,7 +23036,7 @@
     },
     {
       "id": "EV-848a9d54114887d9",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "acquisition",
@@ -22589,8 +23086,58 @@
       "publisher": "www.ithome.com"
     },
     {
+      "id": "EV-b18649ebd3cd26dd",
+      "dataDate": "2026-11-03",
+      "date": "2026-10-29",
+      "updatedDate": "2026-10-29",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "OpenAI 支持的 Thrive Holdings 收购 ADT",
+      "originalTitle": "OpenAI-backed Thrive Holdings acquires ADT",
+      "subject": "OpenAI-backed Thrive Holdings",
+      "action": "acquires",
+      "object": "ADT",
+      "metrics": [
+        "$10 ",
+        "$7.6 billion",
+        "$15.3 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-f970fd34532919fe",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI-backed Thrive Holdings",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
+      "publisher": "techcrunch.com"
+    },
+    {
       "id": "EV-b34cc7c6ca51ad7a",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "funding",
@@ -22685,7 +23232,7 @@
     },
     {
       "id": "EV-da13ad386cf35ad9",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "funding",
@@ -22776,7 +23323,7 @@
     },
     {
       "id": "EV-ee7fd70ed0f055f6",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "funding",
@@ -22817,6 +23364,54 @@
       "products": [],
       "sourceUrl": "https://news.pedaily.cn/202610/571071.shtml",
       "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-f5b1331cd028dfa4",
+      "dataDate": "2026-11-03",
+      "date": "2026-10-29",
+      "updatedDate": "2026-10-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_sources_insufficient",
+      "title": "GreenVoltis完成数千万美元A轮融资，LochpineCapital独家投资",
+      "originalTitle": "",
+      "subject": "GreenVoltis",
+      "action": "完成数千万美元A轮融资",
+      "object": "，LochpineCapital独家投资",
+      "metrics": [
+        "数千万美元"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8379122734b3a94e"
+      ],
+      "entityNames": [
+        "GreenVoltis"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.pedaily.cn/first/188622.shtml",
+      "publisher": "www.pedaily.cn"
     },
     {
       "id": "EV-28aa9b8f89bd04b3",
@@ -22870,7 +23465,7 @@
     },
     {
       "id": "EV-3f5278aad82b5aba",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -22916,7 +23511,7 @@
     },
     {
       "id": "EV-63e454277381c4b3",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -22999,7 +23594,7 @@
     },
     {
       "id": "EV-64f250031e613098",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-03",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -23046,7 +23641,7 @@
     },
     {
       "id": "EV-8615e87fa54663e5",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -23096,8 +23691,228 @@
       "publisher": "www.ithome.com"
     },
     {
+      "id": "EV-c0b3ec3c5e9ee0bd",
+      "dataDate": "2026-11-03",
+      "date": "2026-10-28",
+      "updatedDate": "2026-10-28",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Plato 融资 1600 万美元，为 AI 下一次跃入实际工作打造训练场",
+      "originalTitle": "Plato Raises $16 Million to Build the Training Grounds for AI's Next Leap Into Real Work",
+      "subject": "Plato",
+      "action": "Raises",
+      "object": "$16 Million to Build the Training Grounds for AI's Next Leap Into Real Work",
+      "metrics": [
+        "$16 million",
+        "$19 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-1a2290470e0aa754",
+        "EN-87e4571bc7b47363",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "SAN FRANCISCO",
+        "Plato",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/plato-raises-16-million-to-build-the-training-grounds-for-ais-next-leap-into-real-work-302921832.html",
+      "publisher": "www.prnewswire.com"
+    },
+    {
+      "id": "EV-c2b9f84893259905",
+      "dataDate": "2026-11-03",
+      "date": "2026-10-28",
+      "updatedDate": "2026-10-28",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "FuriosaAI估值翻两番至29亿美元，追赶Nvidia",
+      "originalTitle": "FuriosaAI Quadruples Valuation to $2.9 Billion in Nvidia Chase",
+      "subject": "FuriosaAI",
+      "action": "funding",
+      "object": "$620 million Series D round",
+      "metrics": [
+        "$620 million",
+        "$2.9 billion"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-f4bec299df3f4f27"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-f4bec299df3f4f27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-f4bec299df3f4f27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-f4bec299df3f4f27",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "FuriosaAI",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-10-28/furiosaai-quadruples-valuation-to-2-9-billion-in-nvidia-chase",
+      "publisher": "www.bloomberg.com"
+    },
+    {
+      "id": "EV-c4b05f65eba5c09c",
+      "dataDate": "2026-11-03",
+      "date": "2026-10-28",
+      "updatedDate": "2026-10-28",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI 企业初创公司 QwikBuild 在 pre-seed 轮融资中筹集 230 万美元",
+      "originalTitle": "AI enterprise startup QwikBuild raises $2.3 Mn in pre-seed round",
+      "subject": "AI enterprise startup QwikBuild",
+      "action": "raises",
+      "object": "$2.3 Mn in pre-seed round",
+      "metrics": [
+        "$2.3 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8cfc740789ec55e7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8cfc740789ec55e7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8cfc740789ec55e7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8cfc740789ec55e7"
+      ],
+      "entityNames": [
+        "QwikBuild"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://entrackr.com/snippets/ai-enterprise-startup-qwikbuild-raises-23-mn-in-pre-seed-round-12760872",
+      "publisher": "entrackr.com"
+    },
+    {
       "id": "EV-e0a31302688c81ec",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -23125,10 +23940,10 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-b65ec189ac5bf928",
-          "CL-1dd150b9fb169ffb",
-          "CL-1c8100a59c58104e",
-          "CL-fc5d753c6eb83925"
+          "CL-8764715bd635d5a8",
+          "CL-8478a57ebc0b1eed",
+          "CL-4c29581fc54b48de",
+          "CL-cf75883e7a2cf078"
         ]
       },
       "missingFields": [],
@@ -23803,6 +24618,55 @@
       "publisher": "www.ithome.com"
     },
     {
+      "id": "EV-55581be112058bd5",
+      "dataDate": "2026-11-03",
+      "date": "2026-10-27",
+      "updatedDate": "2026-10-27",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "Infisical 以 6 亿美元估值融资 4000 万美元，保障 AI 智能体经济安全",
+      "originalTitle": "Infisical Raises $40 Million at $600 Million Valuation to Secure the AI Agent Economy",
+      "subject": "Infisical",
+      "action": "Raises",
+      "object": "$40 Million at $600 Million Valuation to Secure the AI Agent Economy",
+      "metrics": [
+        "$40 million",
+        "$600 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-1a2290470e0aa754",
+        "EN-2ce1d14038a732cc"
+      ],
+      "entityNames": [
+        "SAN FRANCISCO",
+        "Infisical"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/infisical-raises-40-million-at-600-million-valuation-to-secure-the-ai-agent-economy-302920994.html",
+      "publisher": "www.prnewswire.com"
+    },
+    {
       "id": "EV-6326aa903d147461",
       "dataDate": "2026-10-30",
       "date": "2026-10-27",
@@ -23899,7 +24763,7 @@
     },
     {
       "id": "EV-8baedc89f2eaa50c",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-03",
       "date": "2026-10-27",
       "updatedDate": "2026-10-27",
       "eventType": "funding",
@@ -24066,7 +24930,7 @@
     },
     {
       "id": "EV-94baaaabc016521f",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-27",
       "updatedDate": "2026-10-27",
       "eventType": "funding",
@@ -24184,7 +25048,7 @@
     },
     {
       "id": "EV-d0340d320ebf78c6",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-27",
       "updatedDate": "2026-10-27",
       "eventType": "funding",
@@ -24234,7 +25098,7 @@
     },
     {
       "id": "EV-fef4dfd8fed00cfe",
-      "dataDate": "2026-10-30",
+      "dataDate": "2026-11-03",
       "date": "2026-10-27",
       "updatedDate": "2026-10-27",
       "eventType": "funding",
@@ -46681,113 +47545,6 @@
       "products": [],
       "sourceUrl": "https://news.qq.com/rain/a/20260930A000JE00",
       "publisher": "news.qq.com"
-    },
-    {
-      "id": "EV-55581be112058bd5",
-      "dataDate": "2026-10-07",
-      "date": "2026-09-30",
-      "updatedDate": "2026-09-30",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
-      "originalTitle": "Miter, the AI Platform for Construction, Raises $40 Million for the Built World",
-      "subject": "Miter, the AI Platform for Construction,",
-      "action": "Raises",
-      "object": "$40 Million for the Built World",
-      "metrics": [
-        "$40 million",
-        "$78 million"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "hr_workforce",
-            "name": "人力与员工体验",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "construction_real_estate",
-            "name": "建筑与房地产",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "hr_workforce",
-          "name": "人力与员工体验",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "construction_real_estate",
-          "name": "建筑与房地产",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "hr_workforce",
-          "name": "人力与员工体验",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "construction_real_estate",
-          "name": "建筑与房地产",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-1a2290470e0aa754",
-        "EN-e3baa3a2daee23ae"
-      ],
-      "entityNames": [
-        "SAN FRANCISCO",
-        "Miter"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://www.prnewswire.com/news-releases/miter-the-ai-platform-for-construction-raises-40-million-for-the-built-world-302893778.html",
-      "publisher": "www.prnewswire.com"
     },
     {
       "id": "EV-7fb563f47cc29d8d",
@@ -283732,6 +284489,50 @@
       "publisher": "front.ai"
     },
     {
+      "id": "EV-79752ebf056444b3",
+      "dataDate": "2026-11-03",
+      "date": "2026-11-02",
+      "updatedDate": "2026-11-02",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI应用如何赢得溢价",
+      "originalTitle": "How AI Applications Earn Their Premium",
+      "subject": "Repsol",
+      "action": "deployment",
+      "object": "Harvey",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8569380a47798846"
+      ],
+      "entityNames": [
+        "Repsol"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.a16z.news/p/how-ai-applications-earn-their-premium",
+      "publisher": "www.a16z.news"
+    },
+    {
       "id": "EV-823f6ba9e35c6c28",
       "dataDate": "2026-10-24",
       "date": "2026-10-22",
@@ -327978,6 +328779,65 @@
       "products": [],
       "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=1330-1001130978en-33HTR88M4N3TCG5HLKBIGEHTEH",
       "publisher": "markets.ft.com"
+    },
+    {
+      "id": "EV-237731a25a73bb85",
+      "dataDate": "2026-11-03",
+      "date": "2026-11-02",
+      "updatedDate": "2026-11-02",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "创业公司周刊 AI 新闻",
+      "originalTitle": "Startups Weekly AI News",
+      "subject": "Entire",
+      "action": "product_release",
+      "object": "agent-first Git forge",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-260b27ca3018bc10",
+        "EN-0631a6a6c0e2cbb0",
+        "EN-c78bd04f3b59c88c"
+      ],
+      "entityNames": [
+        "Entire",
+        "AI News",
+        "Startups Weekly AI News"
+      ],
+      "productName": "AI News",
+      "products": [
+        {
+          "name": "AI News",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Startups Weekly AI News",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://aiagentstore.ai/ai-agent-news/topic/startups",
+      "publisher": "aiagentstore.ai"
     },
     {
       "id": "EV-d56a4707a2456970",
@@ -473406,8 +474266,163 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-3cc8e7ce0143047a",
+      "dataDate": "2026-11-03",
+      "date": "2026-11-03",
+      "updatedDate": "2026-11-03",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "科技股暴跌拖累 Anthropic“史上最大 IPO”估值，预期已从 2 万亿美元降至 1.5 万亿区间",
+      "originalTitle": "",
+      "subject": "科技股暴跌拖累 Anthropic“史上最大",
+      "action": "IPO",
+      "object": "”估值，预期已从 2 万亿美元降至 1.5 万亿区间",
+      "metrics": [
+        "1.5 万",
+        "1.6 万",
+        "9.99 万",
+        "10.66 万",
+        "2 万",
+        "13.32 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/021/299.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
+      "id": "EV-000a2cf24e205f93",
+      "dataDate": "2026-11-03",
+      "date": "2026-11-02",
+      "updatedDate": "2026-11-02",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic 第三季度营收 170 亿美元同比暴涨 11 倍，冲刺史上最大 IPO",
+      "originalTitle": "",
+      "subject": "Anthropic 第三季度",
+      "action": "营收 170 亿美元同比",
+      "object": "暴涨 11 倍，冲刺史上最大 IPO",
+      "metrics": [
+        "170 亿",
+        "1,132.35 亿",
+        "233 亿",
+        "1,551.98 亿",
+        "121 亿",
+        "805.96 亿",
+        "175 亿",
+        "1,165.65 亿",
+        "292%"
+      ],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-95e61719d1b35c48",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic 第三季度",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/021/277.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
+      "id": "EV-5267a13213f966ec",
+      "dataDate": "2026-11-03",
+      "date": "2026-11-02",
+      "updatedDate": "2026-11-02",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "更多资金，更少审查：这3张图表揭示VC创纪录融资年背后的分化",
+      "originalTitle": "More Money, Fewer Checks: These 3 Charts Show The Divide Behind VC&#8217;s Record Funding Year",
+      "subject": "Anthropic",
+      "action": "ipo_listing",
+      "object": "public listing planned for this month in a potential $2 trillion IPO",
+      "metrics": [
+        "$2 trillion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.crunchbase.com/venture/q3-2026-charts-funding-amounts-vs-round-counts/",
+      "publisher": "news.crunchbase.com"
+    },
+    {
       "id": "EV-20253e8f968787c7",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-31",
       "updatedDate": "2026-10-31",
       "eventType": "ipo_listing",
@@ -473460,7 +474475,7 @@
     },
     {
       "id": "EV-51f7b14d193a3ffc",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-31",
       "updatedDate": "2026-10-31",
       "eventType": "capital_investment",
@@ -473516,7 +474531,7 @@
     },
     {
       "id": "EV-38f85ebd3ffeb9da",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-30",
       "updatedDate": "2026-10-30",
       "eventType": "ipo_listing",
@@ -473562,7 +474577,7 @@
     },
     {
       "id": "EV-a0cc35ffe6b22a57",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-30",
       "updatedDate": "2026-10-30",
       "eventType": "policy_regulation",
@@ -473591,9 +474606,9 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-a90a71d3dd1b9080",
-          "CL-ff5194c40acc66bd",
-          "CL-82213b516ceafd0e"
+          "CL-167eefedce9bf39c",
+          "CL-f7a1897e1c246364",
+          "CL-da720b889f558761"
         ]
       },
       "missingFields": [],
@@ -473704,7 +474719,7 @@
     },
     {
       "id": "EV-d381d15f8f9045e0",
-      "dataDate": "2026-11-01",
+      "dataDate": "2026-11-03",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "financial_performance",

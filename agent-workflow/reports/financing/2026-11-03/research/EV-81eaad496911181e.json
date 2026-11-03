@@ -1,0 +1,78 @@
+{
+  "event_id": "EV-81eaad496911181e",
+  "company_name": "Trajectory",
+  "status": "blocked",
+  "problems": [
+    "deepseek_json_quality_failed:cited_research_sources_insufficient"
+  ],
+  "queries": [
+    "\"Trajectory\" 2026 funding round investors",
+    "\"Trajectory\" $45 million funding announcement",
+    "\"Trajectory\" official product customers",
+    "\"Trajectory\" \"why we invested\"",
+    "\"Trajectory\" 2026 raises led by",
+    "\"Trajectory\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "cache",
+      "query": "\"Trajectory\" 2026 funding round investors",
+      "status": "cached",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://baike.baidu.com/item/Trajectory/64740159",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/trajectory",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "cache",
+      "query": "\"Trajectory\" $45 million funding announcement",
+      "status": "cached",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/trajectory",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://en.wikipedia.org/wiki/Trajectory",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "cache",
+      "query": "\"Trajectory\" official product customers",
+      "status": "cached",
+      "count": 8
+    },
+    {
+      "provider": "cache",
+      "query": "\"Trajectory\" \"why we invested\"",
+      "status": "cached",
+      "count": 8
+    },
+    {
+      "provider": "cache",
+      "query": "\"Trajectory\" 2026 raises led by",
+      "status": "cached",
+      "count": 8
+    },
+    {
+      "provider": "cache",
+      "query": "\"Trajectory\" founders headquarters product",
+      "status": "cached",
+      "count": 8
+    }
+  ]
+}
