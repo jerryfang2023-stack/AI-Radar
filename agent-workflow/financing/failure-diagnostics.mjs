@@ -26,6 +26,10 @@ export function deterministicProductionFailure(log,{date,head,runHead}) {
     const start=line.indexOf('{"date":');if(start<0)continue;
     try {
       const value=JSON.parse(line.slice(start));
+      if(value.date===date && value.command==='backfill-source-title-translations.mjs'
+        && value.translation?.blocking_unresolved>0 && value.translation.failures?.length
+        && value.translation.failures.every(row=>row.failures?.length
+          && row.failures.every(attempt=>attempt.reason==='title_facts_or_quality_rejected'))) return value;
       if(value.date===date && value.failure_kind==='quality_gate' && value.problems?.length
         && /^assert-[\w-]+\.mjs$/u.test(value.command || '')) return value;
     } catch {}
