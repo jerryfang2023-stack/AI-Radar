@@ -988,6 +988,44 @@ async function mapConcurrent(items, worker, size) {
   return outputItems;
 }
 
+// Research completion is not publication approval. Retain the old response
+// privately when a later, source-bound responsible hold supersedes it.
+export function reconcileHeldResearchCheckpoints(directory, eligibleIds, review, date, {
+  evidenceRoot = process.env.GUANLAN_EVIDENCE_BACKUP_ROOT,
+} = {}) {
+  if (!directory || !fs.existsSync(directory)) return [];
+  if (!/^\d{4}-\d{2}-\d{2}$/u.test(date)) throw new Error("invalid_research_checkpoint_date");
+  const closed = [];
+  for (const name of fs.readdirSync(directory).filter(name => /^EV-[a-f0-9]+\.json$/u.test(name))) {
+    const file = path.join(directory, name), original = fs.readFileSync(file, "utf8");
+    const result = JSON.parse(original), card = result.card;
+    if (result.status !== "auto_published" || !card || card.as_of_date !== date
+      || result.event_id !== card.triggered_by_event_id) continue;
+    const hold = publicationHold(card, review), hash = hold?.body_sha256 || hold?.source_content_hash;
+    if (!hold || !hold.reason || !hold.quote || !/^[a-f0-9]{64}$/u.test(hash || "")
+      || hold.quote_hash !== sourceTextHash(hold.quote)
+      || !(card.financing?.evidence_refs || []).some(ref => ref.source_content_hash === hash
+        && ref.quote && (ref.quote.includes(hold.quote) || hold.quote.includes(ref.quote)))) continue;
+    if (!evidenceRoot) throw new Error("private_evidence_root_required_to_archive_research");
+    const originalHash = sourceTextHash(original);
+    const relative = path.posix.join("financing-monitor-state/research-history", date, `${originalHash}.json`);
+    const archive = path.join(evidenceRoot, relative);
+    fs.mkdirSync(path.dirname(archive), { recursive: true });
+    if (fs.existsSync(archive) && fs.readFileSync(archive, "utf8") !== original) throw new Error("research_history_hash_conflict");
+    fs.writeFileSync(archive, original, "utf8");
+    writeJson(file, {
+      event_id: result.event_id, company_name: result.company_name || card.company?.name || "",
+      status: eligibleIds.has(result.event_id) ? "held_for_responsible_review" : "superseded_by_source_gate",
+      disposition: "pending_verification", fact_approval: false, published: false,
+      reason: hold.reason,
+      source_binding: { source_url: hold.source_url, content_hash: hash, quote: hold.quote, quote_hash: hold.quote_hash },
+      previous_result_ref: relative, previous_result_sha256: originalHash,
+    });
+    closed.push(result.event_id);
+  }
+  return closed;
+}
+
 async function main() {
   if (!date) throw new Error("funding_insight_date_missing");
   const bundle = loadDailyBundle(root, date);
@@ -1244,6 +1282,7 @@ async function main() {
     queue,
   };
   writeJson(output, value);
+  reconcileHeldResearchCheckpoints(checkpointDir, eligibleEventIds, publicationReview, date);
   console.log(JSON.stringify({
     ok: true,
     mode: "write",
