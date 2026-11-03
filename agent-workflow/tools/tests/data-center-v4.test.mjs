@@ -3147,3 +3147,12 @@ test('venture capital fund closes are not startup financing even when the fund b
  for(const t of ['Fundwave raises $5 million in a seed round led by Creandum','Acme raises $5 million from a VC fund'])assert.equal(check(t,body).accepted,true);
  assert.equal(check('VC software startup Fundwave raises $5 million to build a fund management product','Fundwave, an AI software company, has raised $5 million. Its product serves venture capital firms.').accepted,true);
 });
+
+test('securities filings and retrospective product interviews cannot become completed same-day rounds',()=>{
+ const check=(title,body)=>eventSourceEligibility({published_at:'2026-11-02',clean_text:body},{source_url:'https://example.org/finance'},title,'2026-11-03',{eventType:'funding'});
+ assert.equal(check('Oracle files to sell $20 billion in new stock, bonds to finance AI buildout','Oracle filed plans on Monday to issue new stock and more debt.').reason,'proposed_financing_not_completed');
+ assert.equal(check('Acme completes $10 billion stock offering','Acme completed its previously planned stock offering.').accepted,true);
+ const body='In this episode, we chat with the CTO, following the announcement of their $550M Series E at an $8.8B valuation a couple weeks ago.';
+ assert.equal(check('Building AI for Lawyers - Jacob Lauritzen, CTO of Legora',body).reason,'historical_funding_reference_requires_original_date');
+ assert.equal(check('Acme raises $550M Series E','Acme announced today a $550M Series E round.').accepted,true);
+});
