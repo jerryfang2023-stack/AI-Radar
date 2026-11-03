@@ -375,7 +375,7 @@ test("DeepSeek translations with changed monetary facts are rejected", async (t)
     titleZh: "",
     status: "needs_ingestion_translation",
     method: "title_translation_generator_failed",
-    failures: [{ provider: "deepseek", reason: "title_facts_or_quality_rejected", attempt: 1 }],
+    failures: [{ provider: "deepseek", reason: "title_facts_or_quality_rejected", attempt: 1, translated_title: "Aina 获 Info Edge 等投资 450 万美元，打造 AI 硬件接口" }],
   });
 });
 
