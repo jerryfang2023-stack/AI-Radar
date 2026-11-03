@@ -290,15 +290,15 @@
       "stop_after_date": "2026-11-07",
       "title": "Madrid’s Talky raises €1.5 million to teach AI the unwritten rules of accounting",
       "checks": {
-        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
-        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
-        "date": "accepted_by_existing_gates_not_full_disclosure",
-        "amount": "accepted_by_existing_gates_not_full_disclosure",
-        "round": "accepted_by_existing_gates_not_full_disclosure",
-        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
+        "company_identity": "pending",
+        "ai_relevance": "pending",
+        "date": "pending",
+        "amount": "pending",
+        "round": "pending",
+        "deduplication": "pending"
       },
-      "status": "verified",
-      "reason": "existing_gates_reconciled",
+      "status": "pending",
+      "reason": "publication_hold_requires_responsible_release",
       "collection_reconciled": true,
       "collection_date": "2026-11-02",
       "content_hash": "95558d0638aab07b82b24ad8bd246945a5681ff3aecbf233eaeb23d09ea3ae4c",
@@ -349,9 +349,9 @@
         {
           "card_id": "FI-9ba755d92ebb9de5",
           "event_id": "EV-7e75a7f077f6d26a",
-          "accepted": true,
+          "accepted": false,
           "scope": "included",
-          "reason": "existing_gates_passed",
+          "reason": "funding_or_taxonomy_gate_pending",
           "company": "Talky Labs",
           "announced_at": "2026-10-30",
           "amount": "€1.5 million",
@@ -42644,7 +42644,7 @@
   "publication_holds": {
     "added": 0,
     "evidence_followup": 0,
-    "responsible_review": 70
+    "responsible_review": 71
   },
   "followup_queue": {
     "pending": 500,
@@ -42673,9 +42673,9 @@
   "status": "completed",
   "counts": {
     "total": 630,
-    "verified": 1,
+    "verified": 0,
     "excluded": 54,
     "reviewed": 0,
-    "pending": 575
+    "pending": 576
   }
 }

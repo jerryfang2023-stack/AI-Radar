@@ -1,6 +1,6 @@
 {
   "version": "FINANCING-PUBLICATION-REVIEW-1",
-  "reviewed_at": "2026-10-31T01:57:17.844678+00:00",
+  "reviewed_at": "2026-11-02T06:56:57.372183+00:00",
   "market_corrections": [
     {
       "event_id": "EV-65154e5eb49c218b",
@@ -640,6 +640,38 @@
         "quote": "has secured €2.6 million in funding.",
         "quote_hash": "5ced63dd308f6a99d7a346d89011fc59fc838731b177529cf2e6a4c1aac26242"
       }
+    },
+    {
+      "event_id": "EV-7e75a7f077f6d26a",
+      "status": "pending",
+      "disposition": "pending_verification",
+      "company_name": "Talky Labs",
+      "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
+      "source_id": "FISRC-475ceeb1eced65d2",
+      "source_content_hash": "95558d0638aab07b82b24ad8bd246945a5681ff3aecbf233eaeb23d09ea3ae4c",
+      "body_sha256": "95558d0638aab07b82b24ad8bd246945a5681ff3aecbf233eaeb23d09ea3ae4c",
+      "quote": "The investment, closed in September 2026",
+      "quote_hash": "24dfa391ac2739d9d352ef6c53e124abb6e5a7a21818a81ad62ae3f244ef1b88",
+      "reason": "主体绑定仍不一致：已接受Claim绑定HomeFundingMadrid's Talky页头候选，研究卡使用另一实体且canonical_entity_consistent=false。公告日与交割月份说明不构成主体合并批准；保留全部证据，待绑定规范主体及Claim后复审。",
+      "reviewed_by": "Codex responsible source reviewer after exact-head formal hold",
+      "reviewed_at": "2026-11-02T06:56:57.372183+00:00",
+      "review_receipt": "review-654b086dc736-ff07f0e12c8f/attempt-1/result.json"
+    },
+    {
+      "event_id": "EV-2e14ff936dbb966f",
+      "status": "pending",
+      "disposition": "pending_verification",
+      "company_name": "SuperMe",
+      "source_url": "https://techcrunch.com/2026/10/29/superme-raises-20m-for-its-network-of-ai-expert-profiles",
+      "source_id": "FISRC-cba64821590e1bcc",
+      "source_content_hash": "2e1c9e9c7b622290ec8fd47af169e57037b58ee0bf33254b383ca6017d89c17c",
+      "body_sha256": "2e1c9e9c7b622290ec8fd47af169e57037b58ee0bf33254b383ca6017d89c17c",
+      "quote": "the startup announced today that it is raising $20 million in funding",
+      "quote_hash": "5687778d3cc7fc2331ebc5de20c1cd3e89c37d82ee0fb36fcf0f71f7a33f4a0e",
+      "reason": "已捕获原文为announced ... it is raising $20 million，完成状态在正式复审中仍有争议；暂缓这条新增事件，等待公司/投资方的完成确认，不把2025年680万美元种子轮当作本轮交割证明。原公开历史事件不受影响。",
+      "reviewed_by": "Codex responsible source reviewer after exact-head formal hold",
+      "reviewed_at": "2026-11-02T06:56:57.372183+00:00",
+      "review_receipt": "review-654b086dc736-ff07f0e12c8f/attempt-1/result.json"
     }
   ],
   "resolutions": [
