@@ -126,3 +126,24 @@ test('the exact wrapped citation-shortage code remains a bound deferral, never a
  assert.equal(researchDeferral(event,bundle,{...blocked,problems:[reason+'|unknown_error']},[]),null);
  assert.equal(researchDeferral(event,bundle,pending,[{triggered_by_event_id:event.event_id}]),null);
 });
+
+test('candidate-identity deferral retains its entity binding through final verification',t=>{
+ const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'candidate-finalization-'));
+ t.after(()=>fs.rmSync(tmp,{recursive:true,force:true}));
+ const root=path.join(tmp,'repo'),directory=path.join(root,'reports'),backupRoot=path.join(tmp,'private'),date='2026-11-03';
+ const entity={entity_id:'EN-a',canonical_name:'Acme',entity_type:'organization_candidate'};
+ const candidate={...event,entities:['EN-a'],claim_refs:['CL-a']};
+ const claims=[{...bundle.claims[0],claim_type:'funding',verification_status:'accepted'}];
+ const full={rawDocuments:[raw],claims,entities:[entity]},row={event_id:event.event_id,status:'blocked',problems:['subject_company_unresolved']};
+ row.deferral=researchDeferral(candidate,full,row,[]);assert.ok(row.deferral);
+ const fact=path.join(root,'01-SiteV2/content/11-databases/data-center-v4',date);
+ for(const [name,value]of Object.entries({'raw-documents':full.rawDocuments,'canonical-events':[candidate],claims,entities:full.entities,'event-sources':[{event_id:event.event_id,source_artifact_id:'SA-a'}]}))write(path.join(fact,name+'.json'),value);
+ write(path.join(directory,'verification.json'),{prepared:true,date,entries:{}});
+ write(path.join(directory,'collection.json'),{accepted:true,date,captures:{[raw.source_url]:{status:'accepted',content_hash:raw.content_hash}}});
+ write(path.join(root,'01-SiteV2/content/12-applications/funding-insights',date+'.json'),{cards:[],queue:[row]});
+ const result=finishVerification({root,directory,backupRoot,date});
+ assert.equal(result.counts.verified,0);assert.equal(result.counts.pending,1);
+ const queued=read(path.join(backupRoot,'financing-monitor-state/verification-queue.json')).entries[raw.source_url];
+ assert.equal(queued.research_deferral.entity_binding,row.deferral.entity_binding);
+ assert.equal(queued.research_deferral.fact_approval,false);
+});

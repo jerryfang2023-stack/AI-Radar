@@ -282,6 +282,18 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
   if (options.eventType === "funding" && PROPOSED_FINANCING_TITLE.test(title.replace(/\blesson plan(?:s)?\b/giu, "lesson curriculum"))) {
     return { accepted: false, reason: "proposed_financing_not_completed" };
   }
+  // A securities filing announces an intended sale, not received proceeds.
+  if (options.eventType === "funding"
+      && /\bfiles?\s+(?:plans?\s+)?to\s+(?:sell|issue)\b/iu.test(title)
+      && /\b(?:stock|bonds?|notes|shares|securities)\b/iu.test(`${title} ${sourceLead}`)) {
+    return { accepted: false, reason: "proposed_financing_not_completed" };
+  }
+  // Product interviews can refer back to an older round without dating it.
+  if (options.eventType === "funding"
+      && !/\b(?:raises?|raised|secured|closes?|closed)\b/iu.test(title)
+      && /\b(?:following|after)\s+the\s+announcement\b(?:[^.!?]|\.(?=\d)){0,180}\b(?:a\s+couple(?:\s+of)?\s+weeks?|several\s+weeks?)\s+ago\b/iu.test(sourceLead)) {
+    return { accepted: false, reason: "historical_funding_reference_requires_original_date" };
+  }
   // A target or its adjustment is not proceeds from a completed financing.
   // Preserve explicit completion headlines that also mention an earlier target.
   if (options.eventType === "funding" && /(?:融资|募资)目标/u.test(title)

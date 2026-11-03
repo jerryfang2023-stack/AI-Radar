@@ -1,6 +1,6 @@
 {
   "version": "FINANCING-PUBLICATION-REVIEW-1",
-  "reviewed_at": "2026-11-02T06:56:57.372183+00:00",
+  "reviewed_at": "2026-11-03T03:39:09.018419+00:00",
   "market_corrections": [
     {
       "event_id": "EV-65154e5eb49c218b",
@@ -672,6 +672,34 @@
       "reviewed_by": "Codex responsible source reviewer after exact-head formal hold",
       "reviewed_at": "2026-11-02T06:56:57.372183+00:00",
       "review_receipt": "review-654b086dc736-ff07f0e12c8f/attempt-1/result.json"
+    },
+    {
+      "event_id": "EV-6274403d8c9353fe",
+      "company_name": "Oracle",
+      "status": "pending",
+      "source_id": "FISRC-1263ce4e09302da8",
+      "source_url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+      "source_content_hash": "631c23f07f618b6420e5ed4c6247de0e777df5d93f42b53d70f20456deda77eb",
+      "body_sha256": "631c23f07f618b6420e5ed4c6247de0e777df5d93f42b53d70f20456deda77eb",
+      "quote": "Oracle filed plans on Monday to issue new stock and more debt to finance its artificial intelligence buildout.",
+      "quote_hash": "bd70828945108b08c79d91fe5c8c68065c41c4d375205d5c1893478728d79cb7",
+      "reason": "原文是拟发行100亿美元股票和100亿美元票据的备案计划，并非完成融资。等待实际发行/成交确认，保留已发布的Oracle历史融资。",
+      "reviewed_by": "Codex responsible original-source review",
+      "reviewed_at": "2026-11-03T03:39:09.018419+00:00"
+    },
+    {
+      "event_id": "EV-bcc42fdfff1c8900",
+      "company_name": "Legora",
+      "status": "pending",
+      "source_id": "FISRC-fe6efa0410ef5f0b",
+      "source_url": "https://latent.space/p/building-ai-for-lawyers-jacob-lauritzen-cto-of-legora/",
+      "source_content_hash": "10fc738f78f3d8f85ca30be5d54cb2dfe34131dfc3d34caf66b9d13c751ae32e",
+      "body_sha256": "10fc738f78f3d8f85ca30be5d54cb2dfe34131dfc3d34caf66b9d13c751ae32e",
+      "quote": "following the announcement of their $550M Series E at an $8.8B valuation a couple weeks ago",
+      "quote_hash": "b126a5892812716d604415485539d24af1809f60613915f30f3b2be30e17b6ca",
+      "reason": "本篇是产品访谈，明确融资于几周前宣布，不能使用11月2日访谈日作为融资公告日。待捕获原始公告并核对日期、轮次与历史轮次后恢复。",
+      "reviewed_by": "Codex responsible original-source review",
+      "reviewed_at": "2026-11-03T03:39:09.018419+00:00"
     }
   ],
   "resolutions": [

@@ -355,7 +355,7 @@ export function finishVerification({ root, directory, date, backupRoot }) {
   const privateQueue=backupRoot ? read(path.join(backupRoot,'financing-monitor-state/verification-queue.json'),{entries:{}}) : {entries:{}};
   // New discovery originals can be accepted without previously belonging to the
   // follow-up queue. Register every explicitly deferred research source here.
-  const researchBundle={events:canonicalEvents,claims,rawDocuments};
+  const researchBundle={events:canonicalEvents,claims,rawDocuments,entities};
   for(const item of research.queue || []) {
     if(!item.deferral)continue;
     const event=canonicalEvents.find(event=>event.event_id===item.event_id);
