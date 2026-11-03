@@ -3723,20 +3723,20 @@ test('lead-role retry guidance explicitly permits source-supported participation
 
 test('source-bound holds supersede active research receipts while preserving the exact prior response',async t=>{
  const {reconcileHeldResearchCheckpoints}=await import('../generate-funding-insights-deepseek.mjs');
- const {sourceTextHash}=await import('../deepseek-translation-client.mjs');
+ const {createHash}=await import('node:crypto');const fullHash=value=>createHash('sha256').update(value).digest('hex');
  const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'held-research-history-'));t.after(()=>fs.rmSync(tmp,{recursive:true,force:true}));
  const dir=path.join(tmp,'checkpoints'),privateRoot=path.join(tmp,'private');fs.mkdirSync(dir);
  const event='EV-a',date='2026-11-03',hash='a'.repeat(64),quote='Acme filed plans to issue stock.';
  const result={event_id:event,status:'auto_published',card:{triggered_by_event_id:event,as_of_date:date,company:{name:'Acme'},financing:{evidence_refs:[{source_content_hash:hash,quote}]}}};
  const file=path.join(dir,event+'.json'),original=JSON.stringify(result,null,2)+'\n';fs.writeFileSync(file,original);
- const hold={event_id:event,status:'pending',reason:'Filed plan is not completed financing',source_url:'https://example.com/plan',body_sha256:hash,quote,quote_hash:sourceTextHash(quote)};
+ const hold={event_id:event,status:'pending',reason:'Filed plan is not completed financing',source_url:'https://example.com/plan',body_sha256:hash,quote,quote_hash:fullHash(quote)};
  const review={version:'FINANCING-PUBLICATION-REVIEW-1',holds:[hold]};
  assert.throws(()=>reconcileHeldResearchCheckpoints(dir,new Set(),review,date,{evidenceRoot:''}),/private_evidence_root_required/);
  assert.equal(fs.readFileSync(file,'utf8'),original);
  assert.deepEqual(reconcileHeldResearchCheckpoints(dir,new Set(),{...review,holds:[{...hold,body_sha256:'b'.repeat(64)}]},date,{evidenceRoot:privateRoot}),[]);
  assert.deepEqual(reconcileHeldResearchCheckpoints(dir,new Set(),review,date,{evidenceRoot:privateRoot}),[event]);
  const current=JSON.parse(fs.readFileSync(file));assert.equal(current.status,'superseded_by_source_gate');assert.equal(current.fact_approval,false);assert.equal(current.published,false);assert.ok(!current.card);
- const archived=fs.readFileSync(path.join(privateRoot,current.previous_result_ref),'utf8');assert.equal(archived,original);assert.equal(sourceTextHash(archived),current.previous_result_sha256);
+ const archived=fs.readFileSync(path.join(privateRoot,current.previous_result_ref),'utf8');assert.equal(archived,original);assert.equal(fullHash(archived),current.previous_result_sha256);assert.equal(current.previous_result_sha256.length,64);
  assert.deepEqual(reconcileHeldResearchCheckpoints(dir,new Set(),review,date,{evidenceRoot:privateRoot}),[]);
  fs.writeFileSync(file,JSON.stringify({...result,card:{...result.card,as_of_date:'2026-11-02'}}));
  assert.deepEqual(reconcileHeldResearchCheckpoints(dir,new Set(),review,date,{evidenceRoot:privateRoot}),[]);

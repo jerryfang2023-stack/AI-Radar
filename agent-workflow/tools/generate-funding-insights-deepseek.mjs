@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
+import { createHash } from "node:crypto";
 import { createSearchGateway } from "./lib/search-gateway.mjs";
 import { planFundingResearch, fundingResearchCoverage, independentResearchSources } from "./lib/funding-research-plan.mjs";
 import path from "node:path";
@@ -995,6 +996,7 @@ export function reconcileHeldResearchCheckpoints(directory, eligibleIds, review,
 } = {}) {
   if (!directory || !fs.existsSync(directory)) return [];
   if (!/^\d{4}-\d{2}-\d{2}$/u.test(date)) throw new Error("invalid_research_checkpoint_date");
+  const checksum = value => createHash("sha256").update(value).digest("hex");
   const closed = [];
   for (const name of fs.readdirSync(directory).filter(name => /^EV-[a-f0-9]+\.json$/u.test(name))) {
     const file = path.join(directory, name), original = fs.readFileSync(file, "utf8");
@@ -1003,11 +1005,11 @@ export function reconcileHeldResearchCheckpoints(directory, eligibleIds, review,
       || result.event_id !== card.triggered_by_event_id) continue;
     const hold = publicationHold(card, review), hash = hold?.body_sha256 || hold?.source_content_hash;
     if (!hold || !hold.reason || !hold.quote || !/^[a-f0-9]{64}$/u.test(hash || "")
-      || hold.quote_hash !== sourceTextHash(hold.quote)
+      || hold.quote_hash !== checksum(hold.quote)
       || !(card.financing?.evidence_refs || []).some(ref => ref.source_content_hash === hash
         && ref.quote && (ref.quote.includes(hold.quote) || hold.quote.includes(ref.quote)))) continue;
     if (!evidenceRoot) throw new Error("private_evidence_root_required_to_archive_research");
-    const originalHash = sourceTextHash(original);
+    const originalHash = checksum(original);
     const relative = path.posix.join("financing-monitor-state/research-history", date, `${originalHash}.json`);
     const archive = path.join(evidenceRoot, relative);
     fs.mkdirSync(path.dirname(archive), { recursive: true });
