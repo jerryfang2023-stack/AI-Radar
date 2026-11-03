@@ -224,7 +224,10 @@ function normalizeComparableScales(value) {
     // match 增长至/增长到, which already describe the final level.
     .replace(/增长(?:了)?(?:超过|逾|超)?\s*([一二两三四五六七八九十]|\d+(?:\.\d+)?)\s*倍(?:多)?/gu,
       (_, number) => ` ${Number(chineseNumbers[number] ?? number) + 1} `)
-    .replace(/翻(?:一)?倍|翻一番/gu, " 2 ")
+    // 翻 N 番 is 2**N times the original level, unlike 增长 N 倍.
+    .replace(/翻(?:了)?\s*([一二两三四五六七八九十]|\d{1,2})\s*番/gu,
+      (_, number) => ` ${2 ** Number(chineseNumbers[number] ?? number)} `)
+    .replace(/翻(?:一)?倍/gu, " 2 ")
     .replace(/\b(?:doubles?|doubled)\s+down\b/giu, " recommits ")
     .replace(/\b(?:doubles?|doubled)\b/giu, " 2 ")
     .replace(/\b(?:triples?|tripled)\b/giu, " 3 ")
@@ -739,7 +742,7 @@ export async function generateSourceTitleTranslation(sourceTitle = "", {
           model: typeof generated === "object" ? generated.model || "" : "",
         };
       }
-      failures.push({provider:item,reason:'title_facts_or_quality_rejected',attempt:attempt+1});
+      failures.push({provider:item,reason:'title_facts_or_quality_rejected',attempt:attempt+1,translated_title:stripGeneratorNoise(translated).slice(0,1000)});
       break;
     } catch(error) {
       failures.push({provider:item,reason:/^deepseek_http_\d{3}$/u.test(error.message || '')?error.message:error.name,attempt:attempt+1});

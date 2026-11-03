@@ -268,3 +268,13 @@ test("headline singular age compounds retain the implicit one", () => {
   assert.equal(sourceTitleFactsPreserved("2-year-old AI lab raises $1M", "成立一年的AI实验室融资100万美元"), false);
   assert.equal(sourceTitleFactsPreserved("AI lab raises $1M", "成立一年的AI实验室融资100万美元"), false);
 });
+
+test('FuriosaAI quadrupled valuation preserves Chinese compounded doublings',()=>{
+ const source='FuriosaAI Quadruples Valuation to $2.9 Billion in Nvidia Chase';
+ for(const target of ['FuriosaAI估值翻两番至29亿美元，追赶Nvidia','FuriosaAI 在追赶 Nvidia 的过程中估值翻了2番至 $2.9 Billion'])
+  assert.equal(generatedTitleTranslationLooksUsable(source,target),true);
+ for(const target of ['FuriosaAI估值翻一番至29亿美元，追赶Nvidia','FuriosaAI估值翻四番至29亿美元，追赶Nvidia','FuriosaAI估值翻两番至290亿美元，追赶Nvidia','FuriosaAI估值升至29亿美元，追赶Nvidia','FuriosaAI估值增长四倍至29亿美元，追赶Nvidia'])
+  assert.equal(sourceTitleFactsPreserved(source,target),false);
+ assert.equal(sourceTitleFactsPreserved('Acme doubles valuation to $1 billion','Acme估值翻一番至10亿美元'),true);
+ assert.equal(sourceTitleFactsPreserved('Acme triples valuation to $1 billion','Acme估值翻两番至10亿美元'),false);
+});
