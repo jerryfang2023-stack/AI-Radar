@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-01",
-    "currentDate": "2026-11-01",
-    "eventCount": 4338,
+    "latestDataDate": "2026-11-03",
+    "currentDate": "2026-11-03",
+    "eventCount": 4356,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,28 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-20",
-    "latest_disclosed_at": "2026-07-20",
+    "latest_disclosed_at": "2026-11-02",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
       "seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-712df00b36e4528d",
+        "canonical_entity_id": "",
+        "name": "Clark"
+      },
       {
         "entity_id": "EN-53982b85c02841f2",
         "canonical_entity_id": "EN-53982b85c02841f2",
@@ -85,6 +90,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-78b3993787352f02",
+        "funding_insight_id": "FI-8fcf6451b89a7aad",
+        "event_ids": [
+          "EV-bd6ab378d5dc309f"
+        ],
+        "company_entity_id": "EN-712df00b36e4528d",
+        "company_canonical_entity_id": "",
+        "company_name": "Clark",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$11 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 11000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1100 万美元"
+        },
+        "announced_at": "2026-11-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-ed0b207543b80aae",
+            "source_url": "https://www.prnewswire.com/news-releases/clark-launches-autonomous-ai-employees-for-audit-and-raises-11m-seed-round-bringing-total-funding-to-16m-302925250.html",
+            "source_title": "Clark 推出用于审计的自主 AI 智能体并完成 1100 万美元种子轮融资，总融资额达 1600 万美元",
+            "source_content_hash": "1e898d285d933f68f99dad80ad9ea7cad3588a4a32f9e777bc220aa69b3b6a2b",
+            "quote": "an $11 million seed round led by Touring Capital, with participation from returning investors Marathon Management Partners, Rerail and Sofeon Ventures",
+            "quote_hash": "931ffc6b9e08c0c3891d536cd3bedaef8982e9312736a2c5380af763414c1814"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6fd15ed33d36c221",
         "funding_insight_id": "FI-31f0431551fb2524",
@@ -128,6 +173,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ed0b207543b80aae",
+        "source_url": "https://www.prnewswire.com/news-releases/clark-launches-autonomous-ai-employees-for-audit-and-raises-11m-seed-round-bringing-total-funding-to-16m-302925250.html",
+        "source_title": "Clark 推出用于审计的自主 AI 智能体并完成 1100 万美元种子轮融资，总融资额达 1600 万美元",
+        "source_content_hash": "1e898d285d933f68f99dad80ad9ea7cad3588a4a32f9e777bc220aa69b3b6a2b",
+        "quote": "an $11 million seed round led by Touring Capital, with participation from returning investors Marathon Management Partners, Rerail and Sofeon Ventures",
+        "quote_hash": "931ffc6b9e08c0c3891d536cd3bedaef8982e9312736a2c5380af763414c1814"
+      },
+      {
         "source_id": "FISRC-8b7c6346d6bc0dc2",
         "source_url": "https://valueaddvc.com/pulse/infinity-15m-inference-touring-capital-2026",
         "source_title": "Inference Startup Infinity Raises $15M From OpenAI, Anthropic Researchers | Value Add Pulse",
@@ -163,6 +216,10 @@
           "source_id": "touring_infinity"
         },
         {
+          "description": "融资来源记录：Clark · 种子轮 · 2026-11-02 · 本轮领投 · $11 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ed0b207543b80aae"
+        },
+        {
           "description": "融资来源记录：Infinity · 种子轮 · 2026-07-20 · 本轮领投 · $15M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8b7c6346d6bc0dc2"
         }
@@ -192,6 +249,14 @@
           "source_title": "The Software Unlock for Heterogeneous Compute: Our Investment in Infinity &#8211; Touring Capital",
           "source_content_hash": "3f81b78ea66da241ec9e933893e1efde777b7cad3318ae921fe4b0a26d60e2b0",
           "quote_hash": "7477c5cd80e4c99dea31660d0cfc5a3507c60fc95e3b129ce1aa6aacde172bb5"
+        },
+        {
+          "source_id": "FISRC-ed0b207543b80aae",
+          "source_url": "https://www.prnewswire.com/news-releases/clark-launches-autonomous-ai-employees-for-audit-and-raises-11m-seed-round-bringing-total-funding-to-16m-302925250.html",
+          "source_title": "Clark 推出用于审计的自主 AI 智能体并完成 1100 万美元种子轮融资，总融资额达 1600 万美元",
+          "source_content_hash": "1e898d285d933f68f99dad80ad9ea7cad3588a4a32f9e777bc220aa69b3b6a2b",
+          "quote": "an $11 million seed round led by Touring Capital, with participation from returning investors Marathon Management Partners, Rerail and Sofeon Ventures",
+          "quote_hash": "931ffc6b9e08c0c3891d536cd3bedaef8982e9312736a2c5380af763414c1814"
         },
         {
           "source_id": "FISRC-8b7c6346d6bc0dc2",

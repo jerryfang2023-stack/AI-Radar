@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-01",
-    "currentDate": "2026-11-01",
-    "eventCount": 4338,
+    "latestDataDate": "2026-11-03",
+    "currentDate": "2026-11-03",
+    "eventCount": 4356,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,8 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-c0b3ec3c5e9ee0bd",
+      "EV-55581be112058bd5",
       "EV-48cbd6592d009234",
       "EV-5aa0077bd10ce3dc",
       "EV-a68bb74a987a8df4",
@@ -73,7 +75,6 @@
       "EV-d77f6cbbacf2a53b",
       "EV-39247400114d59dd",
       "EV-ffe023b6919230e0",
-      "EV-55581be112058bd5",
       "EV-bbea3352983c2033",
       "EV-181cd28d97c4e61d",
       "EV-3d93d1da8cb64462",
@@ -85,10 +86,12 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-01-14",
-    "lastSeen": "2026-10-24",
+    "lastSeen": "2026-11-03",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-c0b3ec3c5e9ee0bd",
+        "EV-55581be112058bd5",
         "EV-48cbd6592d009234",
         "EV-5aa0077bd10ce3dc",
         "EV-a68bb74a987a8df4",
@@ -97,7 +100,6 @@
         "EV-3798871486ef5a26",
         "EV-d77f6cbbacf2a53b",
         "EV-ffe023b6919230e0",
-        "EV-55581be112058bd5",
         "EV-4a6ee188df36e21c",
         "EV-bbea3352983c2033",
         "EV-39247400114d59dd",
@@ -115,6 +117,39 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-c0b3ec3c5e9ee0bd",
+        "dataDate": "2026-11-03",
+        "date": "2026-10-28",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Plato 融资 1600 万美元，为 AI 下一次跃入实际工作打造训练场",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1a2290470e0aa754",
+          "EN-87e4571bc7b47363",
+          "EN-9fbf261b62c1d7c0"
+        ]
+      },
+      {
+        "id": "EV-55581be112058bd5",
+        "dataDate": "2026-11-03",
+        "date": "2026-10-27",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "Infisical 以 6 亿美元估值融资 4000 万美元，保障 AI 智能体经济安全",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1a2290470e0aa754",
+          "EN-2ce1d14038a732cc"
+        ]
+      },
       {
         "id": "EV-48cbd6592d009234",
         "dataDate": "2026-10-24",
@@ -321,41 +356,6 @@
         "entityIds": [
           "EN-1a2290470e0aa754",
           "EN-0d0dd4bc07420a2c"
-        ]
-      },
-      {
-        "id": "EV-55581be112058bd5",
-        "dataDate": "2026-10-07",
-        "date": "2026-09-30",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
-        "displayTags": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "hr_workforce",
-            "name": "人力与员工体验",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "construction_real_estate",
-            "name": "建筑与房地产",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-1a2290470e0aa754",
-          "EN-e3baa3a2daee23ae"
         ]
       },
       {

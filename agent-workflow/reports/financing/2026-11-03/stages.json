@@ -1,0 +1,39 @@
+{
+  "version": "FINANCING-RUN-1",
+  "date": "2026-11-03",
+  "stages": {
+    "facts": {
+      "ok": true,
+      "key": "64fdb9ba675e854feb15e8b023f4c6683f3136d18919a77d14d7ddd245decda4",
+      "duration_ms": 12636,
+      "at": "2026-11-03T03:41:16.879Z"
+    },
+    "research": {
+      "ok": true,
+      "key": "3ed72b04566df69e1967085a21f572aaa8a8c4f835049362efe61a3c9612e4cc",
+      "duration_ms": 24000,
+      "at": "2026-11-03T03:41:40.880Z"
+    },
+    "projections": {
+      "ok": true,
+      "key": "c03bb36d54ac2f2d5213c061092b391029b19c056b9a9a0722bd145b9c5c5a19",
+      "duration_ms": 228196,
+      "at": "2026-11-03T03:45:29.076Z"
+    },
+    "financing_tags": {
+      "ok": true,
+      "key": "da15809da9766c1e2aa19df0de68b2b50091b7d81ee15cdb4301f44b7d629862",
+      "duration_ms": 129048,
+      "at": "2026-11-03T03:47:38.124Z"
+    },
+    "release_gate": {
+      "ok": true,
+      "key": "8f96adb03193254fb3be5594abf759b8fabb7011029d18974296fa53d0da395d",
+      "duration_ms": 50702,
+      "at": "2026-11-03T03:48:28.827Z"
+    }
+  },
+  "status": "ready_for_review",
+  "next_stage": "merge_and_publish",
+  "resume_reason": "Reuse accepted run 41568918535 and successful source-bound research; Oracle filed plan and Legora retrospective date held, QwikBuild accepted originals recovered, no new discovery"
+}

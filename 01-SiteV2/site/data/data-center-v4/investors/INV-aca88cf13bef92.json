@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-01",
-    "currentDate": "2026-11-01",
-    "eventCount": 4338,
+    "latestDataDate": "2026-11-03",
+    "currentDate": "2026-11-03",
+    "eventCount": 4356,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-10-31",
-    "latest_disclosed_at": "2026-03-31",
+    "latest_disclosed_at": "2026-10-28",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_a"
     ],
     "portfolio_companies": [
       {
@@ -87,9 +88,54 @@
         "entity_id": "EN-f5cfcb570b7edac2",
         "canonical_entity_id": "",
         "name": "Nexus Enterprises, Inc"
+      },
+      {
+        "entity_id": "EN-87e4571bc7b47363",
+        "canonical_entity_id": "",
+        "name": "Plato Technologies, Inc."
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-31943753c7878813",
+        "funding_insight_id": "FI-037f4568327f95f4",
+        "event_ids": [
+          "EV-c0b3ec3c5e9ee0bd"
+        ],
+        "company_entity_id": "EN-87e4571bc7b47363",
+        "company_canonical_entity_id": "",
+        "company_name": "Plato Technologies, Inc.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$16 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 16000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1600 万美元"
+        },
+        "announced_at": "2026-10-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5280378baa56a46c",
+            "source_url": "https://www.prnewswire.com/news-releases/plato-raises-16-million-to-build-the-training-grounds-for-ais-next-leap-into-real-work-302921832.html",
+            "source_title": "Plato 融资 1600 万美元，为 AI 下一次跃入实际工作打造训练场",
+            "source_content_hash": "40d81f41d292229474322c6712c30137284c73080086b15e0822c28f27871e90",
+            "quote": "a $16 million Series A funding round led by Nava Ventures, with participation from Gradient Ventures, Transpose Platform, and Microsoft AI CEO, Mustafa Suleyman",
+            "quote_hash": "5bf30ef93ece7c977ea91f45e35cab19e39e3b42297cb3d4b92399191e510e2e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-95d7d1f7705b10ab",
         "funding_insight_id": "FI-19731873c2b7d1c1",
@@ -181,6 +227,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-5280378baa56a46c",
+        "source_url": "https://www.prnewswire.com/news-releases/plato-raises-16-million-to-build-the-training-grounds-for-ais-next-leap-into-real-work-302921832.html",
+        "source_title": "Plato 融资 1600 万美元，为 AI 下一次跃入实际工作打造训练场",
+        "source_content_hash": "40d81f41d292229474322c6712c30137284c73080086b15e0822c28f27871e90",
+        "quote": "a $16 million Series A funding round led by Nava Ventures, with participation from Gradient Ventures, Transpose Platform, and Microsoft AI CEO, Mustafa Suleyman",
+        "quote_hash": "5bf30ef93ece7c977ea91f45e35cab19e39e3b42297cb3d4b92399191e510e2e"
+      },
+      {
         "source_id": "FISRC-14ff8eaae437ca5e",
         "source_url": "https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html",
         "source_title": "Nexus 获430万美元种子轮融资，助力业务团队部署",
@@ -232,12 +286,12 @@
           "source_id": "FISRC-14ff8eaae437ca5e"
         },
         {
-          "description": "融资来源记录：Nexus Enterprises, Inc · 种子轮 · 2026-03-31 · 本轮参投 · $4.3M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-79bfe2072e509ad8"
+          "description": "融资来源记录：Plato Technologies, Inc. · A轮 · 2026-10-28 · 本轮参投 · $16 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5280378baa56a46c"
         },
         {
-          "description": "融资来源记录：Adam · 种子轮 · 2025-10-31 · 本轮参投 · $4.1 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1e12e93a65d54b9a"
+          "description": "融资来源记录：Nexus Enterprises, Inc · 种子轮 · 2026-03-31 · 本轮参投 · $4.3M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-79bfe2072e509ad8"
         }
       ],
       "contacts": [],
@@ -259,20 +313,20 @@
           "quote_hash": "793067f4d9616a1637f778fc6b19da3a81e798c320f28ed40fc8c405739d2538"
         },
         {
+          "source_id": "FISRC-5280378baa56a46c",
+          "source_url": "https://www.prnewswire.com/news-releases/plato-raises-16-million-to-build-the-training-grounds-for-ais-next-leap-into-real-work-302921832.html",
+          "source_title": "Plato 融资 1600 万美元，为 AI 下一次跃入实际工作打造训练场",
+          "source_content_hash": "40d81f41d292229474322c6712c30137284c73080086b15e0822c28f27871e90",
+          "quote": "a $16 million Series A funding round led by Nava Ventures, with participation from Gradient Ventures, Transpose Platform, and Microsoft AI CEO, Mustafa Suleyman",
+          "quote_hash": "5bf30ef93ece7c977ea91f45e35cab19e39e3b42297cb3d4b92399191e510e2e"
+        },
+        {
           "source_id": "FISRC-79bfe2072e509ad8",
           "source_url": "https://theaiinsider.tech/2026/04/04/nexus-secures-4-3m-seed-round-to-scale-enterprise-ai-agent-deployment/",
           "source_title": "Nexus Secures $4.3M Seed Round to Scale Enterprise AI Agent Deployment",
           "source_content_hash": "88232d44c76c7b89",
           "quote": "The round was led by General Catalyst with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
           "quote_hash": "c91349b62c9e55a76cd28e3202ac8a1ed3a998e14ba72d443337f678714d111b"
-        },
-        {
-          "source_id": "FISRC-1e12e93a65d54b9a",
-          "source_url": "https://techcrunch.com/2025/10/31/yc-alum-adam-raises-4-1m-to-turn-viral-text-to-3d-tool-into-ai-copilot/",
-          "source_title": "YC 校友 Adam 获 410 万美元融资，将爆款文本转 3D 工具打造成 AI 智能体",
-          "source_content_hash": "49f3c01467bded27",
-          "quote": "Besides TQ and participating funds 468 Capital, Pioneer, Script Capital, and Transpose Platform",
-          "quote_hash": "f0536b9c961091ce95590d648c6a2c990af8301a77fa34b3e75aa4ad11db85a9"
         }
       ],
       "last_verified_at": "2026-10-03",

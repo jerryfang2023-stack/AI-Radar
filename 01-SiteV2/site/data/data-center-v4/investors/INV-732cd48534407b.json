@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-01",
-    "currentDate": "2026-11-01",
-    "eventCount": 4338,
+    "latestDataDate": "2026-11-03",
+    "currentDate": "2026-11-03",
+    "eventCount": 4356,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,21 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-22",
-    "latest_disclosed_at": "2026-07-22",
+    "latest_disclosed_at": "2026-11-02",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "seed",
       "series_a"
     ],
     "portfolio_companies": [
@@ -82,9 +83,54 @@
         "entity_id": "EN-834cc12fc35adde7",
         "canonical_entity_id": "",
         "name": "Arrakis"
+      },
+      {
+        "entity_id": "EN-712df00b36e4528d",
+        "canonical_entity_id": "",
+        "name": "Clark"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-9b43e610d89245a1",
+        "funding_insight_id": "FI-8fcf6451b89a7aad",
+        "event_ids": [
+          "EV-bd6ab378d5dc309f"
+        ],
+        "company_entity_id": "EN-712df00b36e4528d",
+        "company_canonical_entity_id": "",
+        "company_name": "Clark",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$11 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 11000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1100 万美元"
+        },
+        "announced_at": "2026-11-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ed0b207543b80aae",
+            "source_url": "https://www.prnewswire.com/news-releases/clark-launches-autonomous-ai-employees-for-audit-and-raises-11m-seed-round-bringing-total-funding-to-16m-302925250.html",
+            "source_title": "Clark 推出用于审计的自主 AI 智能体并完成 1100 万美元种子轮融资，总融资额达 1600 万美元",
+            "source_content_hash": "1e898d285d933f68f99dad80ad9ea7cad3588a4a32f9e777bc220aa69b3b6a2b",
+            "quote": "an $11 million seed round led by Touring Capital, with participation from returning investors Marathon Management Partners, Rerail and Sofeon Ventures",
+            "quote_hash": "931ffc6b9e08c0c3891d536cd3bedaef8982e9312736a2c5380af763414c1814"
+          }
+        ]
+      },
       {
         "activity_id": "IA-668af1f5f05a5ead",
         "funding_insight_id": "FI-3c407a7a4dd718f1",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ed0b207543b80aae",
+        "source_url": "https://www.prnewswire.com/news-releases/clark-launches-autonomous-ai-employees-for-audit-and-raises-11m-seed-round-bringing-total-funding-to-16m-302925250.html",
+        "source_title": "Clark 推出用于审计的自主 AI 智能体并完成 1100 万美元种子轮融资，总融资额达 1600 万美元",
+        "source_content_hash": "1e898d285d933f68f99dad80ad9ea7cad3588a4a32f9e777bc220aa69b3b6a2b",
+        "quote": "an $11 million seed round led by Touring Capital, with participation from returning investors Marathon Management Partners, Rerail and Sofeon Ventures",
+        "quote_hash": "931ffc6b9e08c0c3891d536cd3bedaef8982e9312736a2c5380af763414c1814"
+      },
+      {
         "source_id": "FISRC-ac4fd601f33650ff",
         "source_url": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
         "source_title": "Arrakis 携 3800 万美元走出隐身模式，助力工业企业竞争 AI 时代",
@@ -157,6 +211,10 @@
           "source_id": "PROFILE-B2-INV-732cd48534407b-2"
         },
         {
+          "description": "融资来源记录：Clark · 种子轮 · 2026-11-02 · 本轮参投 · $11 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ed0b207543b80aae"
+        },
+        {
           "description": "融资来源记录：Arrakis · A轮 · 2026-07-22 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ac4fd601f33650ff"
         }
@@ -178,6 +236,14 @@
           "source_content_hash": "1251d1903aca50272f9830c9b518bc1c893804770b843aa088eb0838906648f5",
           "quote": "Funding led by Blossom Capital with participation from Accel, GFC, MainObject, and Rerail",
           "quote_hash": "30f26b7969f6acad7ca71f25be63138d54b9fac10153e9a22764e1b023419d53"
+        },
+        {
+          "source_id": "FISRC-ed0b207543b80aae",
+          "source_url": "https://www.prnewswire.com/news-releases/clark-launches-autonomous-ai-employees-for-audit-and-raises-11m-seed-round-bringing-total-funding-to-16m-302925250.html",
+          "source_title": "Clark 推出用于审计的自主 AI 智能体并完成 1100 万美元种子轮融资，总融资额达 1600 万美元",
+          "source_content_hash": "1e898d285d933f68f99dad80ad9ea7cad3588a4a32f9e777bc220aa69b3b6a2b",
+          "quote": "an $11 million seed round led by Touring Capital, with participation from returning investors Marathon Management Partners, Rerail and Sofeon Ventures",
+          "quote_hash": "931ffc6b9e08c0c3891d536cd3bedaef8982e9312736a2c5380af763414c1814"
         },
         {
           "source_id": "FISRC-ac4fd601f33650ff",

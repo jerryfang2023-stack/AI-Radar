@@ -1,0 +1,555 @@
+{
+  "event_id": "EV-6274403d8c9353fe",
+  "company_name": "Oracle",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-afd1ef9a129ca147",
+    "triggered_by_event_id": "EV-6274403d8c9353fe",
+    "as_of_date": "2026-11-03",
+    "company": {
+      "entity_id": "EN-9202af6ce925b26a",
+      "name": "Oracle",
+      "full_name": "Oracle",
+      "website": "",
+      "summary": "甲骨文是一家超大规模云服务商，正在为人工智能基础设施建设融资。",
+      "headquarters": "",
+      "founders": [],
+      "team_size": {
+        "value": "",
+        "observed_at": "",
+        "evidence_refs": []
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1263ce4e09302da8",
+          "quote": "Oracle filed plans on Monday to issue new stock and more debt to finance its artificial intelligence buildout.",
+          "source_content_hash": "631c23f07f618b6420e5ed4c6247de0e777df5d93f42b53d70f20456deda77eb",
+          "quote_hash": "bd70828945108b08c79d91fe5c8c68065c41c4d375205d5c1893478728d79cb7"
+        },
+        {
+          "source_id": "FISRC-1263ce4e09302da8",
+          "quote": "The hyperscaler will sell $10 billion in common stock and $10 billion in senior notes, according to filings with the Securities and Exchange Commission.",
+          "source_content_hash": "631c23f07f618b6420e5ed4c6247de0e777df5d93f42b53d70f20456deda77eb",
+          "quote_hash": "00a75dc062d5a6b7a796c628bc3382f03a0675186ac49f78568e9b6f91536d05"
+        }
+      ],
+      "application_entity_id": "EN-9202af6ce925b26a",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "轮次未披露",
+      "amount": "$10 billion",
+      "total_raised": "",
+      "announced_at": "2026-11-02",
+      "investor_disclosure_status": "not_disclosed",
+      "investors": [],
+      "other_round_investors": [],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1263ce4e09302da8",
+          "quote": "The hyperscaler will sell $10 billion in common stock and $10 billion in senior notes, according to filings with the Securities and Exchange Commission.",
+          "source_content_hash": "631c23f07f618b6420e5ed4c6247de0e777df5d93f42b53d70f20456deda77eb",
+          "quote_hash": "00a75dc062d5a6b7a796c628bc3382f03a0675186ac49f78568e9b6f91536d05"
+        },
+        {
+          "source_id": "FISRC-1263ce4e09302da8",
+          "quote": "Oracle filed plans on Monday to issue new stock and more debt to finance its artificial intelligence buildout.",
+          "source_content_hash": "631c23f07f618b6420e5ed4c6247de0e777df5d93f42b53d70f20456deda77eb",
+          "quote_hash": "bd70828945108b08c79d91fe5c8c68065c41c4d375205d5c1893478728d79cb7"
+        }
+      ],
+      "round_code": "undisclosed",
+      "round_original": "轮次未披露",
+      "amount_original": "$10 billion",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 10000000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "100 亿美元"
+      },
+      "total_raised_original": "",
+      "total_raised_normalized": {
+        "currency": "",
+        "value": null,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "undisclosed",
+        "display_zh": ""
+      },
+      "risk_markers": [
+        "investors_missing"
+      ],
+      "disclosures": [
+        {
+          "event_id": "EV-6274403d8c9353fe",
+          "round_original": "轮次未披露",
+          "amount": "$10 billion",
+          "announced_at": "2026-11-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1263ce4e09302da8",
+              "quote": "The hyperscaler will sell $10 billion in common stock and $10 billion in senior notes, according to filings with the Securities and Exchange Commission.",
+              "source_content_hash": "631c23f07f618b6420e5ed4c6247de0e777df5d93f42b53d70f20456deda77eb",
+              "quote_hash": "00a75dc062d5a6b7a796c628bc3382f03a0675186ac49f78568e9b6f91536d05"
+            },
+            {
+              "source_id": "FISRC-1263ce4e09302da8",
+              "quote": "Oracle filed plans on Monday to issue new stock and more debt to finance its artificial intelligence buildout.",
+              "source_content_hash": "631c23f07f618b6420e5ed4c6247de0e777df5d93f42b53d70f20456deda77eb",
+              "quote_hash": "bd70828945108b08c79d91fe5c8c68065c41c4d375205d5c1893478728d79cb7"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "partially_disclosed"
+    },
+    "products": [
+      {
+        "name": "Oracle Cloud Infrastructure",
+        "description": "面向人工智能工作负载的云基础设施，甲骨文计划通过股权和债务融资扩充其容量。",
+        "target_customers": "大型云基础设施客户",
+        "features": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-11810b85e60cf639",
+            "quote": "Oracle plans to raise up to $50 billion in 2026 to expand its cloud infrastructure capacity.",
+            "source_content_hash": "fd6213123b51e73e",
+            "quote_hash": "60b21e58727b195671091ab0093747dbb4f63efa2dd88afa29b0fd7c2b551f96"
+          },
+          {
+            "source_id": "FISRC-11810b85e60cf639",
+            "quote": "Oracle is raising money in order to build additional capacity to meet ⁠the contracted demand from ‌our largest Oracle Cloud Infrastructure customers, including AMD, Meta, NVIDIA, OpenAI, TikTok, xAI and others",
+            "source_content_hash": "fd6213123b51e73e",
+            "quote_hash": "08fb83839663a9238afd3b0fd4a077531c608dad25b950425d8c70ba912a1481"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [
+      {
+        "name": "AMD",
+        "industry": "",
+        "use_case": "Oracle Cloud Infrastructure 的合约需求客户",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-11810b85e60cf639",
+            "quote": "including AMD, Meta, NVIDIA, OpenAI, TikTok, xAI and others",
+            "source_content_hash": "fd6213123b51e73e",
+            "quote_hash": "f0a6583743a940436f4573e414d8189cd4d79ea7bd4fe8fdcf25a74982a71514"
+          }
+        ],
+        "entity_id": "EN-240389f4b730bad4"
+      },
+      {
+        "name": "Meta",
+        "industry": "",
+        "use_case": "Oracle Cloud Infrastructure 的合约需求客户",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-11810b85e60cf639",
+            "quote": "including AMD, Meta, NVIDIA, OpenAI, TikTok, xAI and others",
+            "source_content_hash": "fd6213123b51e73e",
+            "quote_hash": "f0a6583743a940436f4573e414d8189cd4d79ea7bd4fe8fdcf25a74982a71514"
+          }
+        ],
+        "entity_id": "EN-ea3bd73e2b506e00"
+      },
+      {
+        "name": "NVIDIA",
+        "industry": "",
+        "use_case": "Oracle Cloud Infrastructure 的合约需求客户",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-11810b85e60cf639",
+            "quote": "including AMD, Meta, NVIDIA, OpenAI, TikTok, xAI and others",
+            "source_content_hash": "fd6213123b51e73e",
+            "quote_hash": "f0a6583743a940436f4573e414d8189cd4d79ea7bd4fe8fdcf25a74982a71514"
+          }
+        ],
+        "entity_id": "EN-8d4321d936320802"
+      },
+      {
+        "name": "OpenAI",
+        "industry": "",
+        "use_case": "Oracle Cloud Infrastructure 的合约需求客户",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-11810b85e60cf639",
+            "quote": "including AMD, Meta, NVIDIA, OpenAI, TikTok, xAI and others",
+            "source_content_hash": "fd6213123b51e73e",
+            "quote_hash": "f0a6583743a940436f4573e414d8189cd4d79ea7bd4fe8fdcf25a74982a71514"
+          }
+        ],
+        "entity_id": "EN-7d3194f79e645c42"
+      },
+      {
+        "name": "TikTok",
+        "industry": "",
+        "use_case": "Oracle Cloud Infrastructure 的合约需求客户",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-11810b85e60cf639",
+            "quote": "including AMD, Meta, NVIDIA, OpenAI, TikTok, xAI and others",
+            "source_content_hash": "fd6213123b51e73e",
+            "quote_hash": "f0a6583743a940436f4573e414d8189cd4d79ea7bd4fe8fdcf25a74982a71514"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "comparisons": [],
+    "metrics": [
+      {
+        "label": "本次普通股发行规模",
+        "value": "$10 billion",
+        "observed_at": "2026-11-02",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1263ce4e09302da8",
+            "quote": "The hyperscaler will sell $10 billion in common stock and $10 billion in senior notes",
+            "source_content_hash": "631c23f07f618b6420e5ed4c6247de0e777df5d93f42b53d70f20456deda77eb",
+            "quote_hash": "63e00d0fb8e959d6502e85b408d9766918989c08a0a1854da6875bb39e5871c8"
+          }
+        ]
+      },
+      {
+        "label": "本次高级票据发行规模",
+        "value": "$10 billion",
+        "observed_at": "2026-11-02",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1263ce4e09302da8",
+            "quote": "The hyperscaler will sell $10 billion in common stock and $10 billion in senior notes",
+            "source_content_hash": "631c23f07f618b6420e5ed4c6247de0e777df5d93f42b53d70f20456deda77eb",
+            "quote_hash": "63e00d0fb8e959d6502e85b408d9766918989c08a0a1854da6875bb39e5871c8"
+          }
+        ]
+      },
+      {
+        "label": "截至2026年8月31日的债务总额",
+        "value": "$125.34 billion",
+        "observed_at": "2026-08-31",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1263ce4e09302da8",
+            "quote": "It has $125.34 billion in debt, as of Aug. 31, with the bulk in senior notes.",
+            "source_content_hash": "631c23f07f618b6420e5ed4c6247de0e777df5d93f42b53d70f20456deda77eb",
+            "quote_hash": "c8f6066b821b2fd2ad6565423c95ef3a21ea028039723a01c3f60945ceae8211"
+          }
+        ]
+      },
+      {
+        "label": "2030财年营收预测下限",
+        "value": "$225 billion",
+        "observed_at": "2026-11-02",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1263ce4e09302da8",
+            "quote": "Oracle also issued a revenue forecast of at least $225 billion for fiscal 2030",
+            "source_content_hash": "631c23f07f618b6420e5ed4c6247de0e777df5d93f42b53d70f20456deda77eb",
+            "quote_hash": "1d69ca7d2e4b84060ab5537a5ec9899a3d97cf57099f396ef8aadb08d3916370"
+          }
+        ]
+      },
+      {
+        "label": "2026年股价跌幅",
+        "value": "33%",
+        "observed_at": "2026-11-02",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1263ce4e09302da8",
+            "quote": "Oracle shares are down 33% in 2026 and 50% over the past 12 months.",
+            "source_content_hash": "631c23f07f618b6420e5ed4c6247de0e777df5d93f42b53d70f20456deda77eb",
+            "quote_hash": "11933080524457cd57a54ad15f69b694da71a98cc652d705869e639a55339603"
+          }
+        ]
+      },
+      {
+        "label": "五年期信用违约互换利差",
+        "value": "292",
+        "observed_at": "2026-11-02",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1263ce4e09302da8",
+            "quote": "The spread sits at 292, up 265% in one year.",
+            "source_content_hash": "631c23f07f618b6420e5ed4c6247de0e777df5d93f42b53d70f20456deda77eb",
+            "quote_hash": "ff043c7f3d51d5320651d8a48c7e3810805c38ef2f66fbc5320a4ddc2f1925dc"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Rob Oliver",
+        "quote": "This seems to be exactly what they previewed",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1263ce4e09302da8",
+            "quote": "\"This seems to be exactly what they previewed,\" said Rob Oliver, senior research analyst at Baird.",
+            "source_content_hash": "631c23f07f618b6420e5ed4c6247de0e777df5d93f42b53d70f20456deda77eb",
+            "quote_hash": "6cf4b0b31251c9bc23308d7dea99ca68d06288d778ffa9d45f670f92e6039576"
+          }
+        ]
+      },
+      {
+        "speaker": "Karl Keirstead",
+        "quote": "This is a major relief given concerns about the state of debt markets and the cost of capital",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1263ce4e09302da8",
+            "quote": "\"This is a major relief given concerns about the state of debt markets and the cost of capital",
+            "source_content_hash": "631c23f07f618b6420e5ed4c6247de0e777df5d93f42b53d70f20456deda77eb",
+            "quote_hash": "97972219d326ba5d8dfd2866f87edac4e5f40289b6264b4943f17d598fb37cd3"
+          }
+        ]
+      },
+      {
+        "speaker": "Pat Nerney",
+        "quote": "Can they do what they say they are going to do?",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1263ce4e09302da8",
+            "quote": "\"Can they do what they say they are going to do? We view this as the narrative across the AI space,\" he said.",
+            "source_content_hash": "631c23f07f618b6420e5ed4c6247de0e777df5d93f42b53d70f20456deda77eb",
+            "quote_hash": "fb05d1e125ef793e4cddc15af02d0135333bb2d6ed79669a974260ea77405b5d"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "本次资本动作的核心变量是甲骨文能否以股权加债务的组合，为其人工智能云基础设施扩张提供资金，同时维持投资级评级并推进自由现金流转正。已验证信号包括：公司已向SEC提交发行100亿美元普通股和100亿美元高级票据的计划；此前在投资者日披露2030财年营收至少2250亿美元的预测，并将2027至2030投资周期的额外资本市场融资限定在200亿美元。证据边界在于：融资计划尚处申请阶段，资金用途为一般公司用途，可能包括资本开支、偿债和未来投资；自由现金流转正目标预计在2028年下半年，尚未实现。",
+      "validated_signals": [
+        "公司已提交发行100亿美元普通股和100亿美元高级票据的计划",
+        "公司披露2030财年营收至少2250亿美元的预测",
+        "公司将2027至2030投资周期的额外资本市场融资限定在200亿美元",
+        "截至2026年8月31日公司债务为1253.4亿美元"
+      ],
+      "risks": [
+        "融资计划尚待执行，市场对股权稀释和债务负担反应负面，公告当日股价下跌8.8%",
+        "标普已于7月将甲骨文评级下调至BBB-，仅比高收益级高一级",
+        "自由现金流转正目标预计在2028年下半年，仍待验证",
+        "若主要客户削减订单或融资成本上升，公司可能面临资本开支负担、杠杆上升和股本稀释",
+        "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "compute_cloud_service",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "sector": "云计算基础设施与人工智能算力服务",
+      "investment_thesis": {
+        "statement": "本次资本动作的核心变量是甲骨文能否以股权加债务的组合，为其人工智能云基础设施扩张提供资金，同时维持投资级评级并推进自由现金流转正。已验证信号包括：公司已向SEC提交发行100亿美元普通股和100亿美元高级票据的计划；此前在投资者日披露2030财年营收至少2250亿美元的预测，并将2027至2030投资周期的额外资本市场融资限定在200亿美元。证据边界在于：融资计划尚处申请阶段，资金用途为一般公司用途，可能包括资本开支、偿债和未来投资；自由现金流转正目标预计在2028年下半年，尚未实现。",
+        "evidence_signals": [
+          "公司已提交发行100亿美元普通股和100亿美元高级票据的计划",
+          "公司披露2030财年营收至少2250亿美元的预测",
+          "公司将2027至2030投资周期的额外资本市场融资限定在200亿美元",
+          "截至2026年8月31日公司债务为1253.4亿美元"
+        ],
+        "risks": [
+          "融资计划尚待执行，市场对股权稀释和债务负担反应负面，公告当日股价下跌8.8%",
+          "标普已于7月将甲骨文评级下调至BBB-，仅比高收益级高一级",
+          "自由现金流转正目标预计在2028年下半年，仍待验证",
+          "若主要客户削减订单或融资成本上升，公司可能面临资本开支负担、杠杆上升和股本稀释"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Oracle Cloud Infrastructure",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "AMD",
+        "canonical_entity_id": "EN-240389f4b730bad4",
+        "canonical_name": "AMD"
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Meta",
+        "canonical_entity_id": "EN-ea3bd73e2b506e00",
+        "canonical_name": "Meta"
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "NVIDIA",
+        "canonical_entity_id": "EN-8d4321d936320802",
+        "canonical_name": "NVIDIA"
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "OpenAI",
+        "canonical_entity_id": "EN-7d3194f79e645c42",
+        "canonical_name": "OpenAI"
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "TikTok",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-6274403d8c9353fe",
+        "date": "2026-11-02",
+        "title": "甲骨文申请发行200亿美元新股和债券，为AI建设融资",
+        "amount": "$10 billion",
+        "source_refs": [
+          "SA-03af9959128db658"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-1263ce4e09302da8",
+        "source_url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+        "title": "甲骨文申请发行200亿美元新股和债券，为AI建设融资",
+        "publisher": "www.cnbc.com",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-11-03T00:19:24.226Z",
+        "content_hash": "631c23f07f618b6420e5ed4c6247de0e777df5d93f42b53d70f20456deda77eb",
+        "source_artifact_id": "SA-03af9959128db658",
+        "raw_id": "RAW-425f5ca323405195"
+      },
+      {
+        "source_id": "FISRC-11810b85e60cf639",
+        "source_url": "https://techresearchonline.com/news/oracle-cloud-infrastructure-fundraising-ai-debt-equity/",
+        "title": "Oracle Plans a $50 Billion Funding Round to Expand Cloud Infrastructure",
+        "publisher": "techresearchonline.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-11-03T02:59:21.516Z",
+        "content_hash": "fd6213123b51e73e",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 2,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-11-03T02:59:53.381Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-11-03T02:59:53.381Z",
+    "customer_research": {
+      "status": "verified_customers_found",
+      "verified_customer_count": 5,
+      "searched_source_count": 2
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 1,
+        "unresolved_names": [
+          "Oracle Cloud Infrastructure"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 0,
+        "unresolved_names": []
+      }
+    },
+    "source_event_ids": [
+      "EV-6274403d8c9353fe"
+    ],
+    "aggregation": {
+      "key": "EN-9202af6ce925b26a|undisclosed",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"Oracle\" 2026 funding round investors",
+    "\"Oracle\" official product customers",
+    "\"Oracle\" \"why we invested\"",
+    "\"Oracle\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Oracle\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-announces-Equity-and-Debt-Financing-Plan-for-Calendar-Year-2026/default.aspx",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Oracle\" $10 billion funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Oracle\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://dl.acm.org/doi/10.5555/2379703.2379728",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "http://cloudcomputing.info/en/news/2013/09/oracle-vms-now-available-on-windows-azure.html",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Oracle\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"Oracle\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Oracle\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}

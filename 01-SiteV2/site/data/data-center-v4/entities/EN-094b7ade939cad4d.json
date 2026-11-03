@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-01",
-    "currentDate": "2026-11-01",
-    "eventCount": 4338,
+    "latestDataDate": "2026-11-03",
+    "currentDate": "2026-11-03",
+    "eventCount": 4356,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -72,8 +72,8 @@
       "TX-ai_market_category-industry_applications",
       "TX-use_case-design_engineering",
       "TX-target_user-consumer",
-      "TX-industry-construction_real_estate",
-      "TX-ai_market_subcategory-consumer_retail"
+      "TX-ai_market_subcategory-consumer_retail",
+      "TX-industry-construction_real_estate"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-05-29",
@@ -445,7 +445,7 @@
         "HW-c5a22adcc66136ed"
       ],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "TX-target_user-business_user",
@@ -1173,7 +1173,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-03"
     },
     {
       "id": "TX-ai_market_category-industry_applications",
@@ -1660,13 +1660,57 @@
       "lastSeen": "2026-10-07"
     },
     {
+      "id": "TX-ai_market_subcategory-consumer_retail",
+      "name": "消费与零售",
+      "nodeType": "ai_market_subcategory",
+      "typeLabel": "AI 市场子类",
+      "valueId": "consumer_retail",
+      "eventIds": [
+        "EV-d5d58c23fa179e23",
+        "EV-2cf2ab399eb05035",
+        "EV-f1553722b4ce43af",
+        "EV-02882e6f5e1902c6",
+        "EV-ecc12e5ec883b7e7",
+        "EV-b5dd10300e34f2d3",
+        "EV-dcbe916c6138e5cb",
+        "EV-0a62954694db4143",
+        "EV-2b15f160de3c7ddf",
+        "EV-a7e14985b924b464",
+        "EV-eb4858e820bf9435",
+        "EV-4596181c26d7f672",
+        "EV-3ccc38328e395afa",
+        "EV-51d8aec94225e9c6",
+        "EV-cba16bd541a07032"
+      ],
+      "entityIds": [
+        "EN-4df6f0f59120b360",
+        "EN-66c09c4c12ce671c",
+        "EN-b80e0af617d0f8ff",
+        "EN-2a920347dfcf07a7",
+        "EN-7706c3c94d5f9b59",
+        "EN-e22521e7de65d819",
+        "EN-814669895ed30dff",
+        "EN-c71a83adf3de3f40",
+        "EN-03abf933127f01f3",
+        "EN-577d8adaee97497b",
+        "EN-094b7ade939cad4d",
+        "EN-4458e908dd9a5440",
+        "EN-8936494cd8a7fddb",
+        "EN-78e778b471fd74fd",
+        "EN-fcfad5f0679009d4"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-03-16",
+      "lastSeen": "2026-09-26"
+    },
+    {
       "id": "TX-industry-construction_real_estate",
       "name": "建筑与房地产",
       "nodeType": "industry",
       "typeLabel": "行业",
       "valueId": "construction_real_estate",
       "eventIds": [
-        "EV-55581be112058bd5",
         "EV-ef669a52c9a3f94f",
         "EV-d0dd835f3abb3163",
         "EV-3bbd2ab8ebda9871",
@@ -1735,52 +1779,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-09",
-      "lastSeen": "2026-10-07"
-    },
-    {
-      "id": "TX-ai_market_subcategory-consumer_retail",
-      "name": "消费与零售",
-      "nodeType": "ai_market_subcategory",
-      "typeLabel": "AI 市场子类",
-      "valueId": "consumer_retail",
-      "eventIds": [
-        "EV-d5d58c23fa179e23",
-        "EV-2cf2ab399eb05035",
-        "EV-f1553722b4ce43af",
-        "EV-02882e6f5e1902c6",
-        "EV-ecc12e5ec883b7e7",
-        "EV-b5dd10300e34f2d3",
-        "EV-dcbe916c6138e5cb",
-        "EV-0a62954694db4143",
-        "EV-2b15f160de3c7ddf",
-        "EV-a7e14985b924b464",
-        "EV-eb4858e820bf9435",
-        "EV-4596181c26d7f672",
-        "EV-3ccc38328e395afa",
-        "EV-51d8aec94225e9c6",
-        "EV-cba16bd541a07032"
-      ],
-      "entityIds": [
-        "EN-4df6f0f59120b360",
-        "EN-66c09c4c12ce671c",
-        "EN-b80e0af617d0f8ff",
-        "EN-2a920347dfcf07a7",
-        "EN-7706c3c94d5f9b59",
-        "EN-e22521e7de65d819",
-        "EN-814669895ed30dff",
-        "EN-c71a83adf3de3f40",
-        "EN-03abf933127f01f3",
-        "EN-577d8adaee97497b",
-        "EN-094b7ade939cad4d",
-        "EN-4458e908dd9a5440",
-        "EN-8936494cd8a7fddb",
-        "EN-78e778b471fd74fd",
-        "EN-fcfad5f0679009d4"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-03-16",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-10-02"
     }
   ],
   "fde": [],
