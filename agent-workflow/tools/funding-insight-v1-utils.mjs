@@ -1473,6 +1473,30 @@ function linkedCompanyAnchoredInFundingQuote(event, entities, claims) {
   return matches.size === 1 ? [...matches.values()][0] : null;
 }
 
+function anaphoricFundingRecipient(event, entities, claims, sourceQuotes) {
+  const linked = entities.filter(entity => (event.entities || []).includes(entity.entity_id)
+    && entity.entity_type === "organization_candidate");
+  const matches = new Map();
+  for (const claim of claims) {
+    if (claim.claim_type !== "funding" || claim.verification_status !== "accepted"
+      || !/^The\s+(?:\d+[- ]person\s+)?(?:company|startup)\s+(?:just\s+)?(?:announced\s+that\s+it\s+)?(?:has\s+)?(?:raised|secured)\b/iu.test(clean(claim.source_quote))
+      || !clauseHasEventFundingAmount(claim.source_quote, claim, event)) continue;
+    const candidates = linked.filter(entity => [entity.canonical_name, ...(entity.aliases || [])]
+      .some(name => normalizedName(name) === normalizedName(claim.subject)));
+    if (candidates.length !== 1) continue;
+    const candidate = candidates[0];
+    for (const source of sourceQuotes.map(clean)) {
+      const quote = clean(claim.source_quote), at = source.indexOf(quote);
+      if (at <= 0 || at !== source.lastIndexOf(quote)) continue;
+      const preceding = source.slice(0, at).trim().split(/(?<=[.!?])\s+/u).at(-1) || "";
+      if (preceding.length > 600) continue;
+      const exact = clean(candidate.canonical_name).replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+      if (new RegExp(`^${exact},\\s+(?:an? |the )?(?:startup|company)\\b`, "iu").test(preceding)) matches.set(candidate.entity_id, candidate);
+    }
+  }
+  return matches.size === 1 ? [...matches.values()][0] : null;
+}
+
 function canonicalSourceRecipient(event, entities, entityIndex, claims, sourceQuotes) {
   const acceptedClaims = claims.filter((claim) => claim?.claim_type === "funding"
     && claim?.verification_status === "accepted");
@@ -1522,7 +1546,8 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
   // Prefer a uniquely linked company co-mentioned with this round's amount over a headline-only Claim subject.
   const quoteAnchoredCompany = canonicalSourceRecipient(
     event, entities, entityIndex, acceptedFundingClaims, sourceQuotes,
-  ) || linkedCompanyAnchoredInFundingQuote(event, entities, acceptedFundingClaims);
+  ) || linkedCompanyAnchoredInFundingQuote(event, entities, acceptedFundingClaims)
+    || anaphoricFundingRecipient(event, entities, acceptedFundingClaims, sourceQuotes);
   const acceptedFundingSubjects = acceptedFundingClaims
     .filter((claim) => {
       const subject = clean(claim.subject);

@@ -468,6 +468,10 @@ function ensureSecondSourceEvidence(payload, company, sources) {
 }
 
 export function modelCorrectionProblem(problem = "") {
+  if (problem === "funding_investor_lead_role_unsubstantiated") {
+    return `${problem}:Every lead/co-lead role requires an exact original quote saying led/co-led/lead investor/领投/牵头. If the source says only backed by, participation, 参投 or 独家投资, use 本轮参投; do not infer leadership from list order, exclusivity or joint ventures. Remove unsupported leadership from investment_rationale too. Preserve all named investors and source quotes.`;
+  }
+
   if (problem === "ambiguous_company_full_name_not_in_canonical_source") {
     return `${problem}:company.full_name must be copied verbatim from SOURCE_CLASS=canonical_event_source for this financing recipient. Do not add a legal suffix, translation, or a same-name company's expanded name from secondary search. If no longer full name is stated there, use the exact CANONICAL_FUNDING_EVENT company name. Recheck the company's product, founders and website against that recipient; unrelated evidence must be removed, never used to fill gaps.`;
   }

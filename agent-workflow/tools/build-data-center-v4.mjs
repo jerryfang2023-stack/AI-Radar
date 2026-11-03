@@ -299,6 +299,11 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
   if (/🤖.{0,120}💰.{0,120}(?:🎵|ElevenLabs)/u.test(title)) {
     return { accepted: false, reason: "multi_event_roundup_not_single_event_source" };
   }
+  if (options.eventType === "funding"
+      && /\b(?:VC|venture capital(?: firm)?|investment firm)\b.{0,60}\b(?:closes?|closed|raises?|raised)\b.{0,80}\bfund\b/iu.test(title)
+      && /\b(?:venture capital|VC|investment)\s+(?:firm|fund|manager)\b[^.!?]{0,100}\b(?:has\s+)?(?:closed|raised|secured|launched)\b[^.!?]{0,100}\bfund\b/iu.test(sourceLead)) {
+    return { accepted: false, reason: "investment_fund_not_company_financing_source" };
+  }
   // Periodic market totals describe many transactions, even when a company
   // leads the headline. Require both the report label and aggregate source span;
   // a company named 月报科技 or 月之暗面 is not itself a report container.

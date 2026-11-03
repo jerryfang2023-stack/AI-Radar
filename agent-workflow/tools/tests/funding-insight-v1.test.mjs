@@ -3704,3 +3704,19 @@ test('fresh research cannot flatten a round lower bound into an exact smaller cu
  assert.ok(!problems('at least $6 million','$6 million').includes(issue));
  assert.ok(problems('at least $6 million','$5 million').includes(issue));
 });
+
+test('anaphoric funding sentence resolves only the immediately preceding named startup in the bound source',()=>{
+ const entities=[{entity_id:'T',entity_type:'organization_candidate',canonical_name:'Trajectory'},{entity_id:'N',entity_type:'organization_candidate',canonical_name:'Nvidia'}];
+ const quote='The 18-person company just announced that it raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia.';
+ const claim={claim_id:'C',claim_type:'funding',verification_status:'accepted',subject:'Trajectory',source_quote:quote,object:'$45M'};
+ const event={entities:['T','N'],claim_refs:['C'],object:'$45M',metrics:['$45 million','$300 million']};
+ const preceding='Trajectory, a startup founded about a year ago by three Stanford classmates, wants to automate AI model training.';
+ assert.equal(subjectCompanyForEvent(event,entities,{},[claim],[preceding+' '+quote])?.entity_id,'T');
+ for(const body of [quote,preceding+' Another company entered the market. '+quote,'Nvidia, a company making AI chips, announced a product. '+quote,preceding+' '+quote.replace('$45 million','$50 million')])
+  assert.notEqual(subjectCompanyForEvent(event,entities,{},[claim],[body])?.entity_id,'T');
+ assert.notEqual(subjectCompanyForEvent(event,entities,{},[{...claim,verification_status:'pending'}],[preceding+' '+quote])?.entity_id,'T');
+});
+test('lead-role retry guidance explicitly permits source-supported participation without inferring leadership',()=>{
+ const guidance=modelCorrectionProblem('funding_investor_lead_role_unsubstantiated');
+ assert.ok(guidance.includes('本轮参投'));assert.ok(guidance.includes('独家投资'));assert.ok(guidance.includes('investment_rationale'));
+});

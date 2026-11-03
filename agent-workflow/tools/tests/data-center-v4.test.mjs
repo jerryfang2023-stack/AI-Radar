@@ -3138,3 +3138,12 @@ test('adjusted fundraising goals are not completed proceeds while explicit close
   for(const title of ['某AI公司完成2亿美元融资，超额达成融资目标','某AI公司已获2亿美元融资，曾调整融资目标','某AI公司融资目标已达成，完成B轮融资'])
     assert.equal(eventSourceEligibility({published_at:'2026-11-01',clean_text:'公司宣布已完成2亿美元B轮融资。'},{source_url:'https://example.com/funding'},title,'2026-11-02',{eventType:'funding'}).accepted,true,title);
 });
+
+test('venture capital fund closes are not startup financing even when the fund backs AI',()=>{
+ const body='Stockholm-based venture capital firm Creandum has closed a €668 million ($750 million) fund, Creandum VIII, to back early-stage technology startups. The new fund will invest in AI.';
+ const title='Swedish VC Creandum closes €668 million CVIII fund – its largest to date';
+ const check=(title,text)=>eventSourceEligibility({published_at:'2026-11-02',clean_text:text},{source_url:'https://example.org/announcement'},title,'2026-11-03',{eventType:'funding'});
+ assert.equal(check(title,body).reason,'investment_fund_not_company_financing_source');
+ for(const t of ['Fundwave raises $5 million in a seed round led by Creandum','Acme raises $5 million from a VC fund'])assert.equal(check(t,body).accepted,true);
+ assert.equal(check('VC software startup Fundwave raises $5 million to build a fund management product','Fundwave, an AI software company, has raised $5 million. Its product serves venture capital firms.').accepted,true);
+});
