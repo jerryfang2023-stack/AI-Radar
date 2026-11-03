@@ -115,3 +115,14 @@ test('JSON model timeout retries the same job; title failures expose transport r
   assert.equal(title.failures[0].reason,'deepseek_http_401');
   assert.equal(titleCalls,1);
 });
+
+test('the exact wrapped citation-shortage code remains a bound deferral, never a fact approval',()=>{
+ const reason='deepseek_json_quality_failed:cited_research_sources_insufficient';
+ const pending={...blocked,problems:[reason]};pending.deferral=researchDeferral(event,bundle,pending,[]);
+ assert.ok(pending.deferral);assert.equal(pending.deferral.fact_approval,false);
+ assert.equal(validResearchDeferral(event,bundle,pending,[]),true);
+ assert.equal(validResearchDeferral(event,{...bundle,rawDocuments:[{...raw,content_hash:'b'.repeat(64)}]},pending,[]),false);
+ assert.equal(researchDeferral(event,bundle,{...blocked,problems:[reason,'amount_conflict']},[]),null);
+ assert.equal(researchDeferral(event,bundle,{...blocked,problems:[reason+'|unknown_error']},[]),null);
+ assert.equal(researchDeferral(event,bundle,pending,[{triggered_by_event_id:event.event_id}]),null);
+});
