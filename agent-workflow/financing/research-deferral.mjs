@@ -3,7 +3,8 @@ import path from 'node:path';
 import {digest} from './state.mjs';
 
 const version='FINANCING-RESEARCH-DEFERRAL-1';
-const allowedReasons=new Set(['research_sources_insufficient','research_independent_sources_insufficient']);
+const allowedReasons=new Set(['research_sources_insufficient','research_independent_sources_insufficient',
+  'deepseek_json_quality_failed:cited_research_sources_insufficient']);
 // Known per-candidate failures may withhold only a new subject with accepted
 // source-bound Claims. Unknown exceptions, hashes and schema errors stay fatal.
 const candidateReasons=new Set(['subject_company_unresolved','ambiguous_company_full_name_not_in_canonical_source',
