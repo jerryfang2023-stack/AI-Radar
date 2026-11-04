@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-03",
-    "currentDate": "2026-11-03",
-    "eventCount": 4356,
+    "latestDataDate": "2026-11-04",
+    "currentDate": "2026-11-04",
+    "eventCount": 4371,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-d67ba29bdfe65e82",
       "EV-e1a99aa97c73cc9c",
       "EV-03a5e703deae837f",
       "EV-622c77a021ef08de",
@@ -101,6 +102,7 @@
       "EV-cf76f090a1a20a36",
       "EV-43301de739fe560e",
       "EV-fcf3c96afc642c8b",
+      "EV-fec6117165d02cd1",
       "EV-b86890a5d3330971",
       "EV-d1e3dd4ecf7bf9dc",
       "EV-a171d2ec6b5982e9",
@@ -244,7 +246,7 @@
       "EN-e71558a14e7ed6ab"
     ],
     "firstSeen": "2026-01-28",
-    "lastSeen": "2026-11-03",
+    "lastSeen": "2026-11-04",
     "relationIds": [
       "REL2-85833837dc3e3f02",
       "REL2-ef7c3e949f2087f3",
@@ -259,6 +261,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-d67ba29bdfe65e82",
         "EV-e1a99aa97c73cc9c",
         "EV-622c77a021ef08de",
         "EV-03a5e703deae837f",
@@ -307,6 +310,7 @@
         "EV-fcf3c96afc642c8b"
       ],
       "productsServices": [
+        "EV-fec6117165d02cd1",
         "EV-b86890a5d3330971",
         "EV-a551ac76be0015af",
         "EV-a171d2ec6b5982e9",
@@ -413,8 +417,41 @@
     },
     "timeline": [
       {
+        "id": "EV-d67ba29bdfe65e82",
+        "dataDate": "2026-11-04",
+        "date": "2026-11-03",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Meta 在高企的债券收益率激发需求之际筹集 150 亿美元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e78996ddcb15949c",
+          "EN-ea3bd73e2b506e00"
+        ]
+      },
+      {
+        "id": "EV-fec6117165d02cd1",
+        "dataDate": "2026-11-04",
+        "date": "2026-11-02",
+        "eventType": "pricing_change",
+        "eventTypeLabel": "定价变更",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "在座各位AI，都是「垃圾」",
+        "displayTags": [],
+        "entityIds": [
+          "EN-68c22d020240482b",
+          "EN-c70eca6b0f88f44d",
+          "EN-ea3bd73e2b506e00"
+        ]
+      },
+      {
         "id": "EV-51f7b14d193a3ffc",
-        "dataDate": "2026-11-03",
+        "dataDate": "2026-11-04",
         "date": "2026-10-31",
         "eventType": "capital_investment",
         "eventTypeLabel": "资本性投资",
@@ -5832,6 +5869,7 @@
       "eventIds": [
         "EV-e632e1806935d10f",
         "EV-6133f09c61f5c5e8",
+        "EV-62b42b7553b45bc6",
         "EV-c4b05f65eba5c09c",
         "EV-15004f646df67bad",
         "EV-8de1001fde6993a5",
@@ -6524,6 +6562,7 @@
       "entityIds": [
         "EN-64af05d8ce796170",
         "EN-f78f7a86360aa8f4",
+        "EN-cd0d2344b5b823f0",
         "EN-8cfc740789ec55e7",
         "EN-5b45e76107a945ba",
         "EN-858837c33d111717",
@@ -7268,7 +7307,7 @@
         "HW-c5a22adcc66136ed"
       ],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -7577,7 +7616,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -7853,7 +7892,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -8302,7 +8341,7 @@
         "HW-ef547aa78d8d0ade"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "TX-target_user-business_user",
@@ -9030,7 +9069,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "TX-use_case-software_development",
@@ -9305,7 +9344,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "TX-product_form-model",
@@ -10002,7 +10041,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",

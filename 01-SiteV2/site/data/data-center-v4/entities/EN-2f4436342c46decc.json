@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-03",
-    "currentDate": "2026-11-03",
-    "eventCount": 4356,
+    "latestDataDate": "2026-11-04",
+    "currentDate": "2026-11-04",
+    "eventCount": 4371,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -65,7 +65,8 @@
     "eventIds": [
       "EV-6df993c01938fc9a",
       "EV-b334f46b11a68045",
-      "EV-a4e3c5d9dbe59d11"
+      "EV-a4e3c5d9dbe59d11",
+      "EV-60400c8dc4de2273"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -73,10 +74,11 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-02-03",
-    "lastSeen": "2026-10-02",
+    "lastSeen": "2026-11-04",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-60400c8dc4de2273",
         "EV-6df993c01938fc9a"
       ],
       "deployments": [],
@@ -91,6 +93,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-60400c8dc4de2273",
+        "dataDate": "2026-11-04",
+        "date": "2026-10-31",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "2026年AI芯片初创企业：融资、估值与顶尖公司",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2f4436342c46decc"
+        ]
+      },
       {
         "id": "EV-6df993c01938fc9a",
         "dataDate": "2026-10-02",
@@ -476,7 +493,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     }
   ],
   "fde": [],

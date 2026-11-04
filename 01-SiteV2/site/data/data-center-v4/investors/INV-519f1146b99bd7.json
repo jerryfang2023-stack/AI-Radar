@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-03",
-    "currentDate": "2026-11-03",
-    "eventCount": 4356,
+    "latestDataDate": "2026-11-04",
+    "currentDate": "2026-11-04",
+    "eventCount": 4371,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-17",
-    "latest_disclosed_at": "2026-10-19",
+    "latest_disclosed_at": "2026-11-03",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 1,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "other",
@@ -99,6 +99,11 @@
         "name": "ElevenLabs"
       },
       {
+        "entity_id": "EN-2834e64f3da4f1eb",
+        "canonical_entity_id": "",
+        "name": "Fal"
+      },
+      {
         "entity_id": "EN-f7d9f5a90479d632",
         "canonical_entity_id": "",
         "name": "Ramp"
@@ -115,6 +120,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-19e45a98e41b418f",
+        "funding_insight_id": "FI-3b4b50b8aaa7d768",
+        "event_ids": [
+          "EV-0a0d2b11832f0be5"
+        ],
+        "company_entity_id": "EN-2834e64f3da4f1eb",
+        "company_canonical_entity_id": "",
+        "company_name": "Fal",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "Series E and F",
+        "amount_original": "$1.3 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "13 亿美元"
+        },
+        "announced_at": "2026-11-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-05d1a3678a8eb502",
+            "source_url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+            "source_title": "AI推理初创公司Fal估值翻倍至$16B，需求激增",
+            "source_content_hash": "619f662b2bc706a305ff822133dffd3beef6778aff3e85d67eaad24f1d73986a",
+            "quote": "has raised $1.3 billion in its latest funding round led by Bessemer Venture Partners, with participation from Nvidia, Sound Ventures, and T. Rowe Price.",
+            "quote_hash": "af3f70ce5a2969a9c1751d6c974edf782b58afed8bb97c3f5a9c07d9c1b71580"
+          }
+        ]
+      },
       {
         "activity_id": "IA-537906bc0e765fb1",
         "funding_insight_id": "FI-894806f6afae1cc3",
@@ -393,6 +438,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-05d1a3678a8eb502",
+        "source_url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+        "source_title": "AI推理初创公司Fal估值翻倍至$16B，需求激增",
+        "source_content_hash": "619f662b2bc706a305ff822133dffd3beef6778aff3e85d67eaad24f1d73986a",
+        "quote": "has raised $1.3 billion in its latest funding round led by Bessemer Venture Partners, with participation from Nvidia, Sound Ventures, and T. Rowe Price.",
+        "quote_hash": "af3f70ce5a2969a9c1751d6c974edf782b58afed8bb97c3f5a9c07d9c1b71580"
+      },
+      {
         "source_id": "FISRC-c79323219068494a",
         "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
         "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
@@ -474,16 +527,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Fal · E轮 · 2026-11-03 · 本轮参投 · $1.3 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-05d1a3678a8eb502"
+        },
+        {
           "description": "融资来源记录：Tenstorrent · E轮 · 2026-10-19 · 本轮参投 · 15亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c79323219068494a"
         },
         {
           "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f581afce52cf5bef"
-        },
-        {
-          "description": "融资来源记录：ElevenLabs · 其他融资 · 2026-09-30 · 本轮联合领投 · $500 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ecee7b20064e2761"
         }
       ],
       "profile_type": "organization",
@@ -521,6 +574,14 @@
           "quote_hash": "3a4b03036beed2d4ef2c38cdcc363784f84038a346846ea4fa9c36465ce30bcf"
         },
         {
+          "source_id": "FISRC-05d1a3678a8eb502",
+          "source_url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+          "source_title": "AI推理初创公司Fal估值翻倍至$16B，需求激增",
+          "source_content_hash": "619f662b2bc706a305ff822133dffd3beef6778aff3e85d67eaad24f1d73986a",
+          "quote": "has raised $1.3 billion in its latest funding round led by Bessemer Venture Partners, with participation from Nvidia, Sound Ventures, and T. Rowe Price.",
+          "quote_hash": "af3f70ce5a2969a9c1751d6c974edf782b58afed8bb97c3f5a9c07d9c1b71580"
+        },
+        {
           "source_id": "FISRC-c79323219068494a",
           "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
           "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
@@ -535,21 +596,13 @@
           "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
           "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
           "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
-        },
-        {
-          "source_id": "FISRC-ecee7b20064e2761",
-          "source_url": "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/",
-          "source_title": "AI 语音初创公司 ElevenLabs 估值翻倍至 220 亿美元",
-          "source_content_hash": "dd3e10922461795d4777276c5a460ff3cb037897bb89a3344010bd9f3aad81c7",
-          "quote": "The transaction was co-led by Wellington and T. Rowe Price, large institutional investors that back private companies with the intention of retaining the stock after the company goes public.",
-          "quote_hash": "f1068a67415b7a8ea1208ce62fdaa1043b3a6f240198794c5644c18d0ae7e74c"
         }
       ],
       "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {
-        "activities[6].role": {
+        "activities[7].role": {
           "text": "Series E 参投方",
           "source_hash": "4c5721848f6406bd6f2e84ed29d011b6af208116ac9cea44324fd35d85384690",
           "provider": "deepseek",

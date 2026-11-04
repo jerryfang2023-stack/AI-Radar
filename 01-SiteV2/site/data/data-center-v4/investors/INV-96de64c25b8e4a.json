@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-03",
-    "currentDate": "2026-11-03",
-    "eventCount": 4356,
+    "latestDataDate": "2026-11-04",
+    "currentDate": "2026-11-04",
+    "eventCount": 4371,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,23 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
+    "current_round_count": 9,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 7,
+    "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-01",
-    "latest_disclosed_at": "2026-10-14",
+    "latest_disclosed_at": "2026-11-02",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
-      "participant": 7
+      "participant": 8
     },
     "round_codes": [
+      "series_a",
       "series_b",
       "series_c",
       "series_d",
@@ -117,9 +118,54 @@
         "entity_id": "EN-712dffae168fe622",
         "canonical_entity_id": "",
         "name": "Nomos Ai Inc."
+      },
+      {
+        "entity_id": "EN-c32662785b597e46",
+        "canonical_entity_id": "",
+        "name": "Trajectory"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ff627dde3c56633b",
+        "funding_insight_id": "FI-7de55f8a8e9ca8df",
+        "event_ids": [
+          "EV-81eaad496911181e"
+        ],
+        "company_entity_id": "EN-c32662785b597e46",
+        "company_canonical_entity_id": "",
+        "company_name": "Trajectory",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$45 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 45000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4500 万美元"
+        },
+        "announced_at": "2026-11-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c8564f3a68709075",
+            "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+            "source_title": "Trajectory 融资 4500 万美元，让非技术专家也能参与 AI 模型训练",
+            "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
+            "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
+            "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
+          }
+        ]
+      },
       {
         "activity_id": "IA-46999aa31a0efb72",
         "funding_insight_id": "FI-7feeaf543574b27d",
@@ -477,6 +523,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c8564f3a68709075",
+        "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+        "source_title": "Trajectory 融资 4500 万美元，让非技术专家也能参与 AI 模型训练",
+        "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
+        "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
+        "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
+      },
+      {
         "source_id": "FISRC-b54b83abf2f3608c",
         "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
         "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
@@ -602,16 +656,16 @@
           "source_id": "bain_ventures"
         },
         {
+          "description": "融资来源记录：Trajectory · A轮 · 2026-11-02 · 本轮参投 · $45 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c8564f3a68709075"
+        },
+        {
           "description": "融资来源记录：Modal · D轮 · 2026-10-14 · 本轮参投 · $750 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b54b83abf2f3608c"
         },
         {
           "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-58d9b75c832876e1"
-        },
-        {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
         }
       ],
       "contacts": [
@@ -683,6 +737,14 @@
           "quote_hash": "8e973d500d2e3e18b63efcde4308fd116c686f878b846379039b8f90cf9bd061"
         },
         {
+          "source_id": "FISRC-c8564f3a68709075",
+          "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+          "source_title": "Trajectory 融资 4500 万美元，让非技术专家也能参与 AI 模型训练",
+          "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
+          "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
+          "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
+        },
+        {
           "source_id": "FISRC-b54b83abf2f3608c",
           "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
           "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
@@ -697,14 +759,6 @@
           "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
           "quote": "The round includes participation from new investors Bain Capital Ventures (BCV) and Redpoint.",
           "quote_hash": "822a3945748c96e0b198b8636dc8927a98d0b6a3a62939960ae30251cac425cb"
-        },
-        {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
-          "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
         }
       ],
       "coverage_status": "researched",

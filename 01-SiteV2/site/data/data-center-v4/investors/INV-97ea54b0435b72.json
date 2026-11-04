@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-03",
-    "currentDate": "2026-11-03",
-    "eventCount": 4356,
+    "latestDataDate": "2026-11-04",
+    "currentDate": "2026-11-04",
+    "eventCount": 4371,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,30 +61,77 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-09-10",
-    "latest_disclosed_at": "2026-09-10",
+    "latest_disclosed_at": "2026-11-03",
     "role_counts": {
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
-      "pre_series_b"
+      "pre_series_b",
+      "seed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-b466ed43b4605e2b",
         "canonical_entity_id": "",
         "name": "大鱼智行"
+      },
+      {
+        "entity_id": "EN-e9458059073ecfc0",
+        "canonical_entity_id": "",
+        "name": "智子光垣"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-48cb5fafa83250b5",
+        "funding_insight_id": "FI-81f3d9d913f1c2e9",
+        "event_ids": [
+          "EV-d5633a878500d130"
+        ],
+        "company_entity_id": "EN-e9458059073ecfc0",
+        "company_canonical_entity_id": "",
+        "company_name": "智子光垣",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-11-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1b53637be8245762",
+            "source_url": "https://news.pedaily.cn/202611/571283.shtml",
+            "source_title": "智子光垣完成数亿元种子轮融资，深耕光计算与芯片设计领域",
+            "source_content_hash": "5b6d4759a0a315447609d3c35b687beb1cb4e3a7f12e1d7cfe5cb57af27b0915",
+            "quote": "投资方包括海桐国际创新中心、云启资本、国泰海通、险峰长青、原子创投、同鑫资本和上海交通大学AI未来基金。",
+            "quote_hash": "52640585a86324ff9b26c889c128a4c0960ae2ed8fb06e6c857f8a2ee1a886b8"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d7a3f02a931bc456",
         "funding_insight_id": "FI-a5d53b1f53d5c231",
@@ -128,6 +175,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-1b53637be8245762",
+        "source_url": "https://news.pedaily.cn/202611/571283.shtml",
+        "source_title": "智子光垣完成数亿元种子轮融资，深耕光计算与芯片设计领域",
+        "source_content_hash": "5b6d4759a0a315447609d3c35b687beb1cb4e3a7f12e1d7cfe5cb57af27b0915",
+        "quote": "投资方包括海桐国际创新中心、云启资本、国泰海通、险峰长青、原子创投、同鑫资本和上海交通大学AI未来基金。",
+        "quote_hash": "52640585a86324ff9b26c889c128a4c0960ae2ed8fb06e6c857f8a2ee1a886b8"
+      },
+      {
         "source_id": "FISRC-5a1765ed854566bc",
         "source_url": "https://news.pedaily.cn/202609/568805.shtml",
         "source_title": "大鱼智行完成近亿元Pre-B轮融资，加速构建AI智能轻出行平台",
@@ -148,6 +203,10 @@
         {
           "description": "大鱼智行融资资料称同鑫资本领投 2026 年 Pre-B 轮；36氪列名为“深圳同鑫资本”。来源未披露单独出资额。",
           "source_id": "PROFILE-B8-INV-97ea54b0435b72-1"
+        },
+        {
+          "description": "融资来源记录：智子光垣 · 种子轮 · 2026-11-03 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1b53637be8245762"
         },
         {
           "description": "融资来源记录：大鱼智行 · Pre-B轮 · 2026-09-10 · 本轮领投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -171,6 +230,14 @@
           "source_content_hash": "973a5347b3dbd8a3fa198f16294a43efb2181db790774df06ee09e8cc838c8c6",
           "quote": "融资历史 融资轮次 融资时间 融资金额 投资方 Pre-B轮 2026-09 近亿元人民币 深圳同鑫资本",
           "quote_hash": "85dcc22772f6f8b6c7b9b066e41fae387a0497d08199ceb298ab69df8ffc85b6"
+        },
+        {
+          "source_id": "FISRC-1b53637be8245762",
+          "source_url": "https://news.pedaily.cn/202611/571283.shtml",
+          "source_title": "智子光垣完成数亿元种子轮融资，深耕光计算与芯片设计领域",
+          "source_content_hash": "5b6d4759a0a315447609d3c35b687beb1cb4e3a7f12e1d7cfe5cb57af27b0915",
+          "quote": "投资方包括海桐国际创新中心、云启资本、国泰海通、险峰长青、原子创投、同鑫资本和上海交通大学AI未来基金。",
+          "quote_hash": "52640585a86324ff9b26c889c128a4c0960ae2ed8fb06e6c857f8a2ee1a886b8"
         },
         {
           "source_id": "FISRC-5a1765ed854566bc",

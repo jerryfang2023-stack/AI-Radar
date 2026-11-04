@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-03",
-    "currentDate": "2026-11-03",
-    "eventCount": 4356,
+    "latestDataDate": "2026-11-04",
+    "currentDate": "2026-11-04",
+    "eventCount": 4371,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,6 +61,7 @@
     "eventIds": [
       "EV-e632e1806935d10f",
       "EV-6133f09c61f5c5e8",
+      "EV-62b42b7553b45bc6",
       "EV-c4b05f65eba5c09c",
       "EV-15004f646df67bad",
       "EV-8de1001fde6993a5",
@@ -753,6 +754,7 @@
     "entityIds": [
       "EN-64af05d8ce796170",
       "EN-f78f7a86360aa8f4",
+      "EN-cd0d2344b5b823f0",
       "EN-8cfc740789ec55e7",
       "EN-5b45e76107a945ba",
       "EN-858837c33d111717",
@@ -1253,7 +1255,7 @@
   "events": [
     {
       "id": "EV-e632e1806935d10f",
-      "dataDate": "2026-11-03",
+      "dataDate": "2026-11-04",
       "date": "2026-11-02",
       "updatedDate": "2026-11-02",
       "eventType": "funding",
@@ -1339,7 +1341,7 @@
     },
     {
       "id": "EV-6133f09c61f5c5e8",
-      "dataDate": "2026-10-31",
+      "dataDate": "2026-11-04",
       "date": "2026-10-30",
       "updatedDate": "2026-10-30",
       "eventType": "funding",
@@ -1426,8 +1428,98 @@
       "publisher": "www.eu-startups.com"
     },
     {
+      "id": "EV-62b42b7553b45bc6",
+      "dataDate": "2026-11-04",
+      "date": "2026-10-30",
+      "updatedDate": "2026-10-30",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_sources_insufficient",
+      "title": "伦敦的Easol获得2678万欧元A轮扩展融资，同时为体验型企业推出AI智能体",
+      "originalTitle": "London’s Easol secures €26.78 million Series A extension as it launches AI agents for experience businesses",
+      "subject": "London’s Easol",
+      "action": "secures",
+      "object": "€26.78 million Series A extension as it launches AI agents for experience businesses",
+      "metrics": [
+        "€26.78 million",
+        "$30 million",
+        "€53.57 million",
+        "$60 million",
+        "€2.6 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-cd0d2344b5b823f0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-cd0d2344b5b823f0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-cd0d2344b5b823f0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-f6a3ea76572b1dde",
+        "EN-cd0d2344b5b823f0"
+      ],
+      "entityNames": [
+        "Easol",
+        "London’s Easol"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/10/londons-easol-secures-e26-78-million-series-a-extension-as-it-launches-ai-agents-for-experience-businesses/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
       "id": "EV-c4b05f65eba5c09c",
-      "dataDate": "2026-11-03",
+      "dataDate": "2026-11-04",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -109743,7 +109835,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "EN-f78f7a86360aa8f4",
@@ -109764,7 +109856,28 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-30",
-      "lastSeen": "2026-10-31"
+      "lastSeen": "2026-11-04"
+    },
+    {
+      "id": "EN-cd0d2344b5b823f0",
+      "name": "London’s Easol",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-62b42b7553b45bc6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "EN-8cfc740789ec55e7",
@@ -109785,7 +109898,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "EN-5b45e76107a945ba",
@@ -110531,7 +110644,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-01-14",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "EN-e66d5fd225ed6b0a",
@@ -111066,6 +111179,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
@@ -111079,8 +111194,6 @@
         "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
         "TX-use_case-security_operations",
         "TX-use_case-research_discovery",
         "TX-technology-speech_audio",
@@ -111125,7 +111238,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "EN-8bacc14fb816a980",
@@ -114204,7 +114317,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-31",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "EN-4de4a07ad031569c",
@@ -114771,10 +114884,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-product_form-model",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
+        "TX-technology-agentic_execution",
+        "TX-product_form-model",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
@@ -115053,9 +115166,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-technology-on_device",
-        "TX-deployment_model-edge_device"
+        "TX-deployment_model-edge_device",
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-23",
@@ -116204,7 +116317,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "EN-df3b29befa02cd17",
@@ -116527,6 +116640,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-d67ba29bdfe65e82",
         "EV-e1a99aa97c73cc9c",
         "EV-03a5e703deae837f",
         "EV-622c77a021ef08de",
@@ -116565,6 +116679,7 @@
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
         "EV-fcf3c96afc642c8b",
+        "EV-fec6117165d02cd1",
         "EV-b86890a5d3330971",
         "EV-d1e3dd4ecf7bf9dc",
         "EV-a171d2ec6b5982e9",
@@ -116708,7 +116823,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "EN-866e1f18c9370d5d",
@@ -117100,6 +117215,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-0a0d2b11832f0be5",
         "EV-81eaad496911181e",
         "EV-b34cc7c6ca51ad7a",
         "EV-8615e87fa54663e5",
@@ -117424,6 +117540,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
@@ -117442,8 +117560,6 @@
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
         "TX-use_case-security_operations",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
@@ -117507,7 +117623,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "EN-28d0bd981118a907",
@@ -118066,7 +118182,7 @@
         "EN-5f5fcd8701ab30c0"
       ],
       "firstSeen": "2025-09-26",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "EN-19e41212c0556603",
@@ -118205,13 +118321,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
         "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-product_form-model",
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-ai_market_application-models",
@@ -118438,6 +118554,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-fec6117165d02cd1",
         "EV-44b4a5564faf8106",
         "EV-b611fec3bb1ed987",
         "EV-462754017d330734",
@@ -118885,7 +119002,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "EN-6fcba5d96a4fadfd",
@@ -119301,11 +119418,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
         "TX-technology-agentic_execution",
         "TX-product_form-model",
-        "TX-industry-financial_services",
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device"
+        "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2023-03-21",
@@ -119482,6 +119599,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
@@ -119489,8 +119608,6 @@
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-physical_automation",
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
         "TX-use_case-security_operations",
         "TX-use_case-research_discovery",
         "TX-technology-speech_audio",
@@ -119909,12 +120026,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
-        "TX-use_case-physical_automation",
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-06",
@@ -120221,13 +120338,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
         "TX-industry-financial_services",
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
         "TX-deployment_model-cloud",
         "TX-industry-government_public_sector",
         "TX-technology-open_weights",
@@ -120787,7 +120904,7 @@
         "EN-7ff4fb5ddc1f4700"
       ],
       "firstSeen": "2026-07-09",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "EN-ba728f8ca730921f",
@@ -122574,10 +122691,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-product_form-model",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
+        "TX-technology-agentic_execution",
+        "TX-product_form-model",
         "TX-industry-food_hospitality"
       ],
       "relatedEntityIds": [

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-03",
-    "currentDate": "2026-11-03",
-    "eventCount": 4356,
+    "latestDataDate": "2026-11-04",
+    "currentDate": "2026-11-04",
+    "eventCount": 4371,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,24 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-01-13",
-    "latest_disclosed_at": "2026-09-15",
+    "latest_disclosed_at": "2026-11-03",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "other",
+      "series_e",
       "strategic"
     ],
     "portfolio_companies": [
@@ -87,12 +88,57 @@
         "name": "Factory"
       },
       {
+        "entity_id": "EN-2834e64f3da4f1eb",
+        "canonical_entity_id": "",
+        "name": "Fal"
+      },
+      {
         "entity_id": "EN-8e8cc11d1475231b",
         "canonical_entity_id": "",
         "name": "Witness AI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e55ca5c9f69a1021",
+        "funding_insight_id": "FI-3b4b50b8aaa7d768",
+        "event_ids": [
+          "EV-0a0d2b11832f0be5"
+        ],
+        "company_entity_id": "EN-2834e64f3da4f1eb",
+        "company_canonical_entity_id": "",
+        "company_name": "Fal",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "Series E and F",
+        "amount_original": "$1.3 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "13 亿美元"
+        },
+        "announced_at": "2026-11-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-05d1a3678a8eb502",
+            "source_url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+            "source_title": "AI推理初创公司Fal估值翻倍至$16B，需求激增",
+            "source_content_hash": "619f662b2bc706a305ff822133dffd3beef6778aff3e85d67eaad24f1d73986a",
+            "quote": "has raised $1.3 billion in its latest funding round led by Bessemer Venture Partners, with participation from Nvidia, Sound Ventures, and T. Rowe Price.",
+            "quote_hash": "af3f70ce5a2969a9c1751d6c974edf782b58afed8bb97c3f5a9c07d9c1b71580"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ea80eb8b1ef82c19",
         "funding_insight_id": "FI-bc58830cddab75fe",
@@ -208,6 +254,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-05d1a3678a8eb502",
+        "source_url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+        "source_title": "AI推理初创公司Fal估值翻倍至$16B，需求激增",
+        "source_content_hash": "619f662b2bc706a305ff822133dffd3beef6778aff3e85d67eaad24f1d73986a",
+        "quote": "has raised $1.3 billion in its latest funding round led by Bessemer Venture Partners, with participation from Nvidia, Sound Ventures, and T. Rowe Price.",
+        "quote_hash": "af3f70ce5a2969a9c1751d6c974edf782b58afed8bb97c3f5a9c07d9c1b71580"
+      },
+      {
         "source_id": "FISRC-1c7459d2ce055880",
         "source_url": "https://factory.ai/news/5-billion-valuation",
         "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
@@ -255,16 +309,16 @@
           "source_id": "sound_news_2026"
         },
         {
+          "description": "融资来源记录：Fal · E轮 · 2026-11-03 · 本轮参投 · $1.3 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-05d1a3678a8eb502"
+        },
+        {
           "description": "融资来源记录：Factory · 其他融资 · 2026-09-15 · 本轮参投 · $200M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1c7459d2ce055880"
         },
         {
           "description": "融资来源记录：Witness AI · 战略融资 · 2026-01-13 · 本轮领投 · $58 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d51cd72272f38425"
-        },
-        {
-          "description": "融资来源记录：Stability AI · 历史轮次未披露 · 历史投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-8dc1d59b723b2466"
         }
       ],
       "contacts": [
@@ -294,6 +348,14 @@
           "quote_hash": "19709ffa3039f7ef156367da8a5a94e82114a20d0aedd3beb547c7d2cd7c6c28"
         },
         {
+          "source_id": "FISRC-05d1a3678a8eb502",
+          "source_url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+          "source_title": "AI推理初创公司Fal估值翻倍至$16B，需求激增",
+          "source_content_hash": "619f662b2bc706a305ff822133dffd3beef6778aff3e85d67eaad24f1d73986a",
+          "quote": "has raised $1.3 billion in its latest funding round led by Bessemer Venture Partners, with participation from Nvidia, Sound Ventures, and T. Rowe Price.",
+          "quote_hash": "af3f70ce5a2969a9c1751d6c974edf782b58afed8bb97c3f5a9c07d9c1b71580"
+        },
+        {
           "source_id": "FISRC-1c7459d2ce055880",
           "source_url": "https://factory.ai/news/5-billion-valuation",
           "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
@@ -308,14 +370,6 @@
           "source_content_hash": "78340edbea8604fd",
           "quote": "The round was led by Sound Ventures",
           "quote_hash": "2ea82ee3fbfb7e2d07754c259c9eaaff262042adcc5a4e49f9c497c09688f339"
-        },
-        {
-          "source_id": "FISRC-8dc1d59b723b2466",
-          "source_url": "https://whbl.com/2024/05/16/stability-ai-in-talks-to-raise-money-from-investor-group/",
-          "source_title": "Stability AI in talks to raise money from investor group | 1330 & 101.5 WHBL",
-          "source_content_hash": "2fd5960097107bb8",
-          "quote": "Stability AI counts among its investors venture capital firm Lightspeed Venture Partners, actor Ashton Kutcher’s Sound Ventures, investment management firm Coatue and chipmaker Intel, according to data firms Crunchbase and Pitchbook.",
-          "quote_hash": "c209bad1155390460b5db404884aeceaf01216b6299e47905d83dd5c23f4e243"
         }
       ],
       "last_verified_at": "2026-09-26",

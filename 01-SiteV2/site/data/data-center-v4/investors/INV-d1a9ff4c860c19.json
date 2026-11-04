@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-03",
-    "currentDate": "2026-11-03",
-    "eventCount": 4356,
+    "latestDataDate": "2026-11-04",
+    "currentDate": "2026-11-04",
+    "eventCount": 4371,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN",
@@ -73,7 +73,7 @@
     "first_disclosed_at": "2026-04-02",
     "latest_disclosed_at": "2026-04-02",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "participant": 1
     },
     "round_codes": [
@@ -160,6 +160,38 @@
         ]
       },
       {
+        "activity_id": "IA-2f71dc457c68186a",
+        "funding_insight_id": "FI-e9ad9d422b27e748",
+        "event_ids": [
+          "EV-cbdfbfdc8bd9552c"
+        ],
+        "company_entity_id": "EN-5c73e6772ef081be",
+        "company_canonical_entity_id": "",
+        "company_name": "希格生科",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮联合投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d22402f224ce64fb",
+            "source_url": "https://www.nbd.com.cn/articles/2026-01-14/4219325.html",
+            "source_title": "希格生科完成8000万元 A轮融资",
+            "source_content_hash": "7016e65d8decaa73",
+            "quote": "本轮融资由晶泰科技、松禾资本、智生协同、天图雅亿资本以及蓝海资本联合投资",
+            "quote_hash": "991a1e17bc3f1384dd4503a58e6b17aa117cbb819932369f203e0e8a5da770a5"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-57fd8b77ab1fbe8f",
         "funding_insight_id": "FI-ec899db298fe1efb",
         "event_ids": [
@@ -208,6 +240,14 @@
         "source_content_hash": "91fc771bf1b8ddb6ba9a09aa5cc0a9f0ccd306337e927615d637f85b03b38da0",
         "quote": "这是继此前昆仲资本、元生创投、上海未来产业基金、晶泰科技等投资后一年内完成的第三轮融资。",
         "quote_hash": "8789bd1eed49fe6256fa3c9423529cd18c841cfcd34c39e890d67b6a67fb455d"
+      },
+      {
+        "source_id": "FISRC-d22402f224ce64fb",
+        "source_url": "https://www.nbd.com.cn/articles/2026-01-14/4219325.html",
+        "source_title": "希格生科完成8000万元 A轮融资",
+        "source_content_hash": "7016e65d8decaa73",
+        "quote": "本轮融资由晶泰科技、松禾资本、智生协同、天图雅亿资本以及蓝海资本联合投资",
+        "quote_hash": "991a1e17bc3f1384dd4503a58e6b17aa117cbb819932369f203e0e8a5da770a5"
       }
     ],
     "public_profile": {
@@ -239,6 +279,10 @@
         {
           "description": "融资来源记录：鼎犀智创（Rhinovate™） · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-57de475f4ec2ac5a"
+        },
+        {
+          "description": "融资来源记录：希格生科 · 历史轮次未披露 · A轮联合投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d22402f224ce64fb"
         }
       ],
       "contacts": [],
@@ -274,6 +318,14 @@
           "source_content_hash": "91fc771bf1b8ddb6ba9a09aa5cc0a9f0ccd306337e927615d637f85b03b38da0",
           "quote": "这是继此前昆仲资本、元生创投、上海未来产业基金、晶泰科技等投资后一年内完成的第三轮融资。",
           "quote_hash": "8789bd1eed49fe6256fa3c9423529cd18c841cfcd34c39e890d67b6a67fb455d"
+        },
+        {
+          "source_id": "FISRC-d22402f224ce64fb",
+          "source_url": "https://www.nbd.com.cn/articles/2026-01-14/4219325.html",
+          "source_title": "希格生科完成8000万元 A轮融资",
+          "source_content_hash": "7016e65d8decaa73",
+          "quote": "本轮融资由晶泰科技、松禾资本、智生协同、天图雅亿资本以及蓝海资本联合投资",
+          "quote_hash": "991a1e17bc3f1384dd4503a58e6b17aa117cbb819932369f203e0e8a5da770a5"
         }
       ],
       "last_verified_at": "2026-10-03",

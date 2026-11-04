@@ -36240,7 +36240,265 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-11-03T03:36:51.132Z"
+    },
+    "EV-81eaad496911181e": {
+      "id": "EV-81eaad496911181e",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "model-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "Trajectory 提供面向企业的模型后训练与再训练平台，属于训练微调部署开发平台。",
+      "input_hash": "2cb9ff4c8267814b6bf16bbf4f892d0033fbabbb34139ca36441c661e809a4fa",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c8564f3a68709075",
+          "quote": "Businesses using Trajectory can start with an open source AI model and connect the platform to their applications, allowing it to collect feedback on how the model performs. Trajectory then uses that information to retrain the model, helping it improve at specialized tasks over time."
+        },
+        {
+          "source_id": "FISRC-c8564f3a68709075",
+          "quote": "Karanam says the startup has developed an interface that makes post-training more accessible to its nontechnical customers."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-04T00:54:57.317Z"
+    },
+    "EV-0a0d2b11832f0be5": {
+      "id": "EV-0a0d2b11832f0be5",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-cloud",
+      "product_form_id": "compute",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "Fal 以开发者 API 提供生成式媒体模型推理托管服务，属于 AI 云与算力服务。",
+      "input_hash": "3a4c32b1a9048e9e3edc6ad7047bec758ff14717cf0eb221f4416e2080d4476d",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-49e59a5089b011e0",
+          "quote": "Fal is a generative media infrastructure company that provides a developer-focused platform with API access to AI models for image, video, audio, and 3D generation."
+        },
+        {
+          "source_id": "FISRC-750c3685f3711501",
+          "quote": "Unlike traditional AI infrastructure, fal’s proprietary inference engine was built from the ground up for the complexity of real-time video—where milliseconds matter, and performance isn’t optional."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-04T00:54:57.317Z"
+    },
+    "EV-ff850b44764f715b": {
+      "id": "EV-ff850b44764f715b",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "公司主营运载作业型无人驾驶车辆及自动驾驶物理AI平台，属具身智能/机器人本体业务，按规则排除。",
+      "input_hash": "818fcbf53487df35ea945435f9f4efcba4429d7b0d5b10638c5f166e0a135556",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0712b7cb251a1e54",
+          "quote": "深圳市易成自动驾驶技术有限公司（简称：易成创新）成立于2017年3月30日，是全球领 先的商用自动驾驶物理AI提供商。"
+        },
+        {
+          "source_id": "FISRC-5ac1dc5025de0388",
+          "quote": "提供的运载作业型无人驾驶车辆等产品自身具有高智力、行动力强的特点"
+        },
+        {
+          "source_id": "FISRC-0712b7cb251a1e54",
+          "quote": "依托自研L4级无人驾驶解决方案，融合多模态AI世界模型与动作规划引擎"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-04T00:54:58.861Z"
+    },
+    "EV-d67ba29bdfe65e82": {
+      "id": "EV-d67ba29bdfe65e82",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "customer-service",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "Meta Business AI 与 Business Assistant 面向企业提供客服问答与广告管理助手，属企业通用AI客服与客户体验。",
+      "input_hash": "76c23296710055b50b236ed33f5539df102aec3753b3efd4948b7836d8b0c460",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a98d8f4379cfc042",
+          "quote": "Meta is launching Business AI, a digital agent that answers customer questions and purchase inquiries using past brand content."
+        },
+        {
+          "source_id": "FISRC-a98d8f4379cfc042",
+          "quote": "Meta is also launching a Meta AI Business Assistant, an AI chat tool inside Ads Manager and Business Support Home."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-04T00:54:58.861Z"
+    },
+    "EV-d5633a878500d130": {
+      "id": "EV-d5633a878500d130",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "公司以可重构全光架构打造光子处理器芯片，面向服务器加速与边缘智能设备，属AI芯片与加速器。",
+      "input_hash": "37c3dbba91009fdf3aa45d93e842b6093a879efaae3ed81ed94c9c02a6fb7c7a",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1b53637be8245762",
+          "quote": "智子光垣科技（上海）有限公司（简称：智子光垣）是一家光计算芯片公司，以全球领 先的可重构全光架构打造光子处理器"
+        },
+        {
+          "source_id": "FISRC-151db68896251501",
+          "quote": "其中烛龙OPU-08面向服务器计算加速，采用PCIe光电加速板卡形态，搭载256×256计算核心、150TOPS算力，可接入现有服务器为大模型云端部署提供“光子Token”"
+        },
+        {
+          "source_id": "FISRC-151db68896251501",
+          "quote": "玄鉴TOCU-07面向边缘端低功耗智能设备，搭载128×128计算核心、100TOPS算力，支持收集微弱自然环境光直接运算。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-04T00:54:58.861Z"
+    },
+    "EV-cbdfbfdc8bd9552c": {
+      "id": "EV-cbdfbfdc8bd9552c",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "ai-service",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "公司以类器官+AI平台推进靶向药研发并拥有临床管线，属药物研发与生命科学行业AI。",
+      "input_hash": "c59835973578384654957776af0773aa5b76cbf479bdb365e50e7d094401c341",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-77ebd2c64e51695d",
+          "quote": "希格生科是全球\"类器官+AI\"赋能创新靶向药研发模式的先行者，国家高新技术企业及专精特新企业。"
+        },
+        {
+          "source_id": "FISRC-df8adbeca805f25b",
+          "quote": "希格生科依托贴合病人真实基因组学特征的类器官疾病模型，在临床前阶段更精准地还原药物在人体内的反应，并将关键疗效与安全性问题前置解决。在此基础上，公司结合AI技术进行高效的化合物筛选与优化"
+        },
+        {
+          "source_id": "FISRC-df8adbeca805f25b",
+          "quote": "核心管线SIGX1094 是全球首 款基于“类器官+AI”技术推进至临床阶段的弥漫性胃癌靶向药，也是全球首 个进入临床阶段的FAK/SRC双靶点抑制剂"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-04T00:54:58.861Z"
+    },
+    "EV-1d794039f9374217": {
+      "id": "EV-1d794039f9374217",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "公司专注脑机接口与神经生物芯片研发生产，视觉脑机接口进入临床试验，属医疗服务与临床。",
+      "input_hash": "0e8279c0937f8c5f949eecb8b0464fb19e36114ec2c0f7e73033fe5d4ee759cc",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-127697db1330a6e8",
+          "quote": "暖芯迦成立于2014年，是一家专注于脑机接口以及神经生物芯片研发、生产与销售的科技企业"
+        },
+        {
+          "source_id": "FISRC-b81ae5593b7ca7f5",
+          "quote": "暖芯迦320通道视网膜视觉脑机接口E-BCI已正式迈入GCP规范化临床试验阶段"
+        },
+        {
+          "source_id": "FISRC-127697db1330a6e8",
+          "quote": "暖芯迦高分辨率视网膜路径视觉脑机接口E‑BCI"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-04T00:54:58.861Z"
+    },
+    "EV-208532ed4931c2e2": {
+      "id": "EV-208532ed4931c2e2",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "Marble Coworkers 观察团队工作流程并端到端自动化业务流程，属企业业务流程与智能体。",
+      "input_hash": "677aee7d45270f7012e7078045d1f05fbddf34a012fe58ab3b557224db700b98",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e4d48c3df0a25149",
+          "quote": "Marble Cognition (Marble), a Munich-based startup building AI coworkers that understand how work is executed to optimise and automate business operations"
+        },
+        {
+          "source_id": "FISRC-e4d48c3df0a25149",
+          "quote": "It observes how teams work, turning every process into a structured map that AI can read like code. It then builds Marble Coworkers that run the process end to end in the tools teams already use, with humans in the loop where judgement matters."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-04T00:54:58.861Z"
     }
   },
-  "generated_at": "2026-11-03T03:36:51.132Z"
+  "generated_at": "2026-11-04T00:54:58.861Z"
 }
