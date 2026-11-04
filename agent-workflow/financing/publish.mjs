@@ -8,7 +8,7 @@ import {resolveReadModelOutput,verifyCurrentReadModel} from './read-model.mjs';
 import { queryPlan } from './discovery.mjs';
 import { parseArgs } from './args.mjs';
 import { successfulPagesDeployment } from '../tools/wait-for-pages-deployment.mjs';
-import {publicationInputs,publicationCheckpointCommands,publicationCodeInputs} from './publication-plan.mjs';
+import {publicationInputs,publicationCheckpointCommands,publicationCodeInputs,publicationWaitReason,publicationChildError} from './publication-plan.mjs';
 import {pagesDeploymentInputs} from '../tools/lib/pages-deployment-inputs.mjs';
 import {resolveGuanlanVaultRoot} from '../tools/guanlan-vault-paths.mjs';
 import {assertWorkspaceCapacity} from './storage-capacity.mjs';
@@ -113,7 +113,7 @@ if (args.get('dry-run') === 'true') {
               const child=spawn(process.execPath,command,{cwd:checkout,windowsHide:true,stdio:['ignore',fd,fd]});
               const timer=setTimeout(()=>child.kill(),1200000);
               child.once('error',error=>{clearTimeout(timer);reject(error);});
-              child.once('close',(status,signal)=>{clearTimeout(timer);status===0?resolve():reject(new Error(`${stage.id}:${command[0]}:${status ?? signal}`));});
+              child.once('close',(status,signal)=>{clearTimeout(timer);status===0?resolve():reject(publicationChildError(stage.id,command[0],status,signal));});
             });
           } finally {fs.closeSync(fd);}
         }
@@ -140,8 +140,9 @@ if (args.get('dry-run') === 'true') {
   } catch(error) {
     // Pages is asynchronous after merging accepted data. Preserve the waiting
     // state without starting publication or turning it into a production error.
-    if(error.message!=='awaiting_pages_for_accepted_commit')throw error;
-    console.error(JSON.stringify({date,status:'awaiting_pages',reason:error.message}));
+    const waiting = publicationWaitReason(error);
+    if(!waiting)throw error;
+    console.error(JSON.stringify({date,status:waiting==='awaiting_pages'?'awaiting_pages':'awaiting_portal',reason:waiting}));
     process.exitCode=75;
   } finally {
     if(linked) fs.unlinkSync(path.join(checkout,'node_modules'));
