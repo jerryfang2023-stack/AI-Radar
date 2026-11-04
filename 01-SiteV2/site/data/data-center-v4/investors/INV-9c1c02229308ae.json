@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-03",
-    "currentDate": "2026-11-03",
-    "eventCount": 4356,
+    "latestDataDate": "2026-11-04",
+    "currentDate": "2026-11-04",
+    "eventCount": 4372,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,21 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-02-23",
-    "latest_disclosed_at": "2026-02-23",
+    "latest_disclosed_at": "2026-11-03",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "seed",
       "series_b"
     ],
     "portfolio_companies": [
@@ -82,9 +83,54 @@
         "entity_id": "EN-ce22f929f4a17467",
         "canonical_entity_id": "EN-ce22f929f4a17467",
         "name": "智平方"
+      },
+      {
+        "entity_id": "EN-e9458059073ecfc0",
+        "canonical_entity_id": "",
+        "name": "智子光垣"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c4636a4fb50f998b",
+        "funding_insight_id": "FI-81f3d9d913f1c2e9",
+        "event_ids": [
+          "EV-d5633a878500d130"
+        ],
+        "company_entity_id": "EN-e9458059073ecfc0",
+        "company_canonical_entity_id": "",
+        "company_name": "智子光垣",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-11-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1b53637be8245762",
+            "source_url": "https://news.pedaily.cn/202611/571283.shtml",
+            "source_title": "智子光垣完成数亿元种子轮融资，深耕光计算与芯片设计领域",
+            "source_content_hash": "5b6d4759a0a315447609d3c35b687beb1cb4e3a7f12e1d7cfe5cb57af27b0915",
+            "quote": "投资方包括海桐国际创新中心、云启资本、国泰海通、险峰长青、原子创投、同鑫资本和上海交通大学AI未来基金。",
+            "quote_hash": "52640585a86324ff9b26c889c128a4c0960ae2ed8fb06e6c857f8a2ee1a886b8"
+          }
+        ]
+      },
       {
         "activity_id": "IA-11f4cc029bcd07ec",
         "funding_insight_id": "FI-3dead88500d2a761",
@@ -129,6 +175,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-1b53637be8245762",
+        "source_url": "https://news.pedaily.cn/202611/571283.shtml",
+        "source_title": "智子光垣完成数亿元种子轮融资，深耕光计算与芯片设计领域",
+        "source_content_hash": "5b6d4759a0a315447609d3c35b687beb1cb4e3a7f12e1d7cfe5cb57af27b0915",
+        "quote": "投资方包括海桐国际创新中心、云启资本、国泰海通、险峰长青、原子创投、同鑫资本和上海交通大学AI未来基金。",
+        "quote_hash": "52640585a86324ff9b26c889c128a4c0960ae2ed8fb06e6c857f8a2ee1a886b8"
+      },
+      {
         "source_id": "FISRC-b78c44b13620e61a",
         "source_url": "https://news.pedaily.cn/202602/561111.shtml",
         "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
@@ -142,10 +196,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "国泰海通 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-02-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "国泰海通 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：智子光垣 · 种子轮 · 2026-11-03 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1b53637be8245762"
+        },
         {
           "description": "融资来源记录：智平方 · B轮 · 2026-02-23 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b78c44b13620e61a"
@@ -153,6 +211,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-1b53637be8245762",
+          "source_url": "https://news.pedaily.cn/202611/571283.shtml",
+          "source_title": "智子光垣完成数亿元种子轮融资，深耕光计算与芯片设计领域",
+          "source_content_hash": "5b6d4759a0a315447609d3c35b687beb1cb4e3a7f12e1d7cfe5cb57af27b0915",
+          "quote": "投资方包括海桐国际创新中心、云启资本、国泰海通、险峰长青、原子创投、同鑫资本和上海交通大学AI未来基金。",
+          "quote_hash": "52640585a86324ff9b26c889c128a4c0960ae2ed8fb06e6c857f8a2ee1a886b8"
+        },
         {
           "source_id": "FISRC-b78c44b13620e61a",
           "source_url": "https://news.pedaily.cn/202602/561111.shtml",

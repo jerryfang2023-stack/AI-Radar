@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-03",
-    "currentDate": "2026-11-03",
-    "eventCount": 4356,
+    "latestDataDate": "2026-11-04",
+    "currentDate": "2026-11-04",
+    "eventCount": 4372,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 4,
-    "china_market_company_count": 4,
+    "china_market_activity_count": 5,
+    "china_market_company_count": 5,
     "first_disclosed_at": "2026-07-14",
-    "latest_disclosed_at": "2026-09-24",
+    "latest_disclosed_at": "2026-11-03",
     "role_counts": {
       "historical_or_ambiguous": 4,
       "other_current_round": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "angel",
@@ -101,9 +101,54 @@
         "entity_id": "EN-37b24c76821f9ff1",
         "canonical_entity_id": "EN-37b24c76821f9ff1",
         "name": "索格智算"
+      },
+      {
+        "entity_id": "EN-e9458059073ecfc0",
+        "canonical_entity_id": "",
+        "name": "智子光垣"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f799e74fde633773",
+        "funding_insight_id": "FI-81f3d9d913f1c2e9",
+        "event_ids": [
+          "EV-d5633a878500d130"
+        ],
+        "company_entity_id": "EN-e9458059073ecfc0",
+        "company_canonical_entity_id": "",
+        "company_name": "智子光垣",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-11-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1b53637be8245762",
+            "source_url": "https://news.pedaily.cn/202611/571283.shtml",
+            "source_title": "智子光垣完成数亿元种子轮融资，深耕光计算与芯片设计领域",
+            "source_content_hash": "5b6d4759a0a315447609d3c35b687beb1cb4e3a7f12e1d7cfe5cb57af27b0915",
+            "quote": "投资方包括海桐国际创新中心、云启资本、国泰海通、险峰长青、原子创投、同鑫资本和上海交通大学AI未来基金。",
+            "quote_hash": "52640585a86324ff9b26c889c128a4c0960ae2ed8fb06e6c857f8a2ee1a886b8"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f565b79098f23e9d",
         "funding_insight_id": "FI-24c290b9676c9f6e",
@@ -397,6 +442,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-1b53637be8245762",
+        "source_url": "https://news.pedaily.cn/202611/571283.shtml",
+        "source_title": "智子光垣完成数亿元种子轮融资，深耕光计算与芯片设计领域",
+        "source_content_hash": "5b6d4759a0a315447609d3c35b687beb1cb4e3a7f12e1d7cfe5cb57af27b0915",
+        "quote": "投资方包括海桐国际创新中心、云启资本、国泰海通、险峰长青、原子创投、同鑫资本和上海交通大学AI未来基金。",
+        "quote_hash": "52640585a86324ff9b26c889c128a4c0960ae2ed8fb06e6c857f8a2ee1a886b8"
+      },
+      {
         "source_id": "FISRC-83520370495890c1",
         "source_url": "https://elsewhere.news/zh/yunqipartners/yunqi-capital-backs-suoge-zhizhis-angel-round-to-accelerate-",
         "source_title": "云启参投「索格智算」天使轮，加速 AI 新材料产业化落地｜云启伙伴",
@@ -541,16 +594,16 @@
           "source_id": "yunqi_official_about"
         },
         {
+          "description": "融资来源记录：智子光垣 · 种子轮 · 2026-11-03 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1b53637be8245762"
+        },
+        {
           "description": "融资来源记录：索格智算 · 天使轮 · 2026-09-24 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-83520370495890c1"
         },
         {
           "description": "融资来源记录：瞬原科技 · 多轮融资 · 2026-09-02 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-15cb977dd6c3c1bf"
-        },
-        {
-          "description": "融资来源记录：昆腾动力 · 种子轮 · 2026-07-31 · 本轮联合投资 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-acc5f267b943773d"
         }
       ],
       "contacts": [
@@ -602,6 +655,14 @@
           "quote_hash": "af232b342a2eb27cfed34c138513122bd587c2c9f9eee0df32d2748d80cd24ac"
         },
         {
+          "source_id": "FISRC-1b53637be8245762",
+          "source_url": "https://news.pedaily.cn/202611/571283.shtml",
+          "source_title": "智子光垣完成数亿元种子轮融资，深耕光计算与芯片设计领域",
+          "source_content_hash": "5b6d4759a0a315447609d3c35b687beb1cb4e3a7f12e1d7cfe5cb57af27b0915",
+          "quote": "投资方包括海桐国际创新中心、云启资本、国泰海通、险峰长青、原子创投、同鑫资本和上海交通大学AI未来基金。",
+          "quote_hash": "52640585a86324ff9b26c889c128a4c0960ae2ed8fb06e6c857f8a2ee1a886b8"
+        },
+        {
           "source_id": "FISRC-83520370495890c1",
           "source_url": "https://elsewhere.news/zh/yunqipartners/yunqi-capital-backs-suoge-zhizhis-angel-round-to-accelerate-",
           "source_title": "云启参投「索格智算」天使轮，加速 AI 新材料产业化落地｜云启伙伴",
@@ -616,14 +677,6 @@
           "source_content_hash": "d3bf4195ee9cd97f",
           "quote": "领投方为社保基金中关村自主创新专项基金（君联资本担任管理人），厚雪资本，云启资本跟投。",
           "quote_hash": "a3984cbece70c9ead1d376dad15581db9bff38506f1b9e7cee74df3155e0f9f8"
-        },
-        {
-          "source_id": "FISRC-acc5f267b943773d",
-          "source_url": "https://news.pedaily.cn/202607/567074.shtml",
-          "source_title": "昆腾动力完成超亿元种子轮融资，定义部署驱动的Physical AI平台",
-          "source_content_hash": "291f515f8155da84",
-          "quote": "本轮由 云启资本、商汤 国香资本 联合投资 。",
-          "quote_hash": "7db7f30359c3d54a534e9a21f65ad10862b6a9c8fb8eb5254aa06577ffaa2f02"
         }
       ],
       "last_verified_at": "2026-09-25",

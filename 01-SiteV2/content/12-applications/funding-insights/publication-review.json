@@ -1,6 +1,6 @@
 {
   "version": "FINANCING-PUBLICATION-REVIEW-1",
-  "reviewed_at": "2026-11-03T03:39:09.018419+00:00",
+  "reviewed_at": "2026-11-04T03:32:47.897Z",
   "market_corrections": [
     {
       "event_id": "EV-65154e5eb49c218b",
@@ -700,6 +700,52 @@
       "reason": "本篇是产品访谈，明确融资于几周前宣布，不能使用11月2日访谈日作为融资公告日。待捕获原始公告并核对日期、轮次与历史轮次后恢复。",
       "reviewed_by": "Codex responsible original-source review",
       "reviewed_at": "2026-11-03T03:39:09.018419+00:00"
+    },
+    {
+      "event_id": "EV-81eaad496911181e",
+      "company_name": "Trajectory",
+      "status": "pending",
+      "source_id": "FISRC-c8564f3a68709075",
+      "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+      "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
+      "body_sha256": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
+      "quote": "The 18-person company just announced that it raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures.",
+      "quote_hash": "16adc121e7ad1487219df00c9a7b231b912b00f770519fdde5991ea14b61a1e8",
+      "reason": "融资公告日期未确认：已捕获TechCrunch正文无日期，URL是11月2日，但独立数据库写8月10日；不能用URL或核验入队日替代融资公告日。保留原文和金额/轮次事实，待有日期的原始公告后恢复。",
+      "reviewed_by": "Codex responsible original-source review",
+      "reviewed_at": "2026-11-04T03:32:47.897Z"
+    },
+    {
+      "event_id": "EV-1d794039f9374217",
+      "company_name": "杭州暖芯迦电子科技有限公司",
+      "status": "pending",
+      "source_id": "FISRC-b81ae5593b7ca7f5",
+      "source_url": "https://news.pedaily.cn/202611/571250.shtml",
+      "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
+      "body_sha256": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
+      "quote": "投资界AI获悉，杭州暖芯迦电子科技有限公司（简称：暖芯迦）宣布完成5亿元C+轮融资，资方阵容豪华——",
+      "quote_hash": "de91058e6a780f9c7c35dd4c0721ebd3965c53287477a13b9548813bd562f73d",
+      "reason": "原文确认5亿元C+轮，但主营证据仅为植入式视觉脑机接口、神经生物芯片及视觉编解码算法，未明确AI主营交付，不能仅凭智能算法当作AI企业。暂缓新候选，保留融资事实及原文，待AI主营证据后复审。",
+      "reviewed_by": "Codex responsible original-source review",
+      "reviewed_at": "2026-11-04T03:32:47.897Z",
+      "scope_evidence": {
+        "quote": "不同于很多脑机公司优先做无创、消费级方案，暖芯迦从第 一天就锚定植入式医疗级视觉重建，是国内最早深耕视觉功能重建脑机接口领域的科创企业。",
+        "quote_hash": "a4cf5287f697573a97595b6128b49695d3bba8a0051668421792e3de99b17885"
+      }
+    },
+    {
+      "event_id": "EV-d67ba29bdfe65e82",
+      "company_name": "Meta",
+      "status": "pending",
+      "source_id": "FISRC-3440d4d3d8874c18",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-11-03/meta-kicks-off-debt-offering-in-push-to-fund-ai-investments",
+      "source_content_hash": "2820351c91dc6f43611a653536670ad5af14e7ccf4ec29b2f80b2712849f7464",
+      "body_sha256": "2820351c91dc6f43611a653536670ad5af14e7ccf4ec29b2f80b2712849f7464",
+      "quote": "Meta Platforms Inc. raised $15 billion from a US dollar bond sale, drawing solid demand as it became the latest Big Tech company offering juicy yields to entice buyers that are growing skeptical over the industry’s massive bet on artificial intelligence.",
+      "quote_hash": "f5341cf0b6e7d3f2fcd04ee55e32b396074d543d2219fc10977e6452b4fda0ce",
+      "reason": "债券发行金额和日期有已捕获片段支持，片段也明确提到行业AI投入，不能声称完全没有AI内容。但当前捕获只有Bloomberg AI takeaways及两段文字，未明确本次融资所涉主营AI交付或具体用途，2025年营销/客服产品背景不足以决定当前150亿美元债券事件的主营分类。暂缓该新事件，等待完整融资原文与当前公司/产品分类依据；债务类型解析已修复，不把暂缓当作融资否认。",
+      "reviewed_by": "Codex responsible original-source review",
+      "reviewed_at": "2026-11-04T04:00:18.327332+00:00"
     }
   ],
   "resolutions": [

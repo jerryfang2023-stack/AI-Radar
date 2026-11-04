@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-03",
-    "currentDate": "2026-11-03",
-    "eventCount": 4356,
+    "latestDataDate": "2026-11-04",
+    "currentDate": "2026-11-04",
+    "eventCount": 4372,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,17 +61,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-01",
-    "latest_disclosed_at": "2026-10-19",
+    "latest_disclosed_at": "2026-11-02",
     "role_counts": {
+      "co_lead": 1,
       "lead": 4,
       "participant": 1
     },
@@ -80,6 +81,11 @@
       "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-f9b049f12a34eeb7",
+        "canonical_entity_id": "",
+        "name": "Marble Cognition"
+      },
       {
         "entity_id": "EN-0aa3069e184a3bce",
         "canonical_entity_id": "",
@@ -102,6 +108,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-9d1725a45bc9100f",
+        "funding_insight_id": "FI-559004bb65e9c904",
+        "event_ids": [
+          "EV-208532ed4931c2e2"
+        ],
+        "company_entity_id": "EN-f9b049f12a34eeb7",
+        "company_canonical_entity_id": "",
+        "company_name": "Marble Cognition",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "pre-Seed",
+        "amount_original": "€3.35 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 3350000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "335 万欧元"
+        },
+        "announced_at": "2026-11-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e4d48c3df0a25149",
+            "source_url": "https://www.eu-startups.com/2026/11/munichs-marble-cognition-raises-e3-35-million-to-build-ai-coworkers-that-learn-business-processes-before-automating-them/",
+            "source_title": "慕尼黑的Marble Cognition融资335万欧元，打造能在自动化前学习业务流程的AI智能体同事",
+            "source_content_hash": "a578a74db5c55f1456160519813007ac2ec422f1d4355ff7696933fe59b1bb51",
+            "quote": "The round was co-led by Heartcore and Seedcamp",
+            "quote_hash": "3c2b7210c19877e2305aca15876e6e22ae93a2ff0addde24fc4dee08755422c0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-c522c295a2bec616",
         "funding_insight_id": "FI-b0bdfe9f65e2108a",
@@ -305,6 +351,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-e4d48c3df0a25149",
+        "source_url": "https://www.eu-startups.com/2026/11/munichs-marble-cognition-raises-e3-35-million-to-build-ai-coworkers-that-learn-business-processes-before-automating-them/",
+        "source_title": "慕尼黑的Marble Cognition融资335万欧元，打造能在自动化前学习业务流程的AI智能体同事",
+        "source_content_hash": "a578a74db5c55f1456160519813007ac2ec422f1d4355ff7696933fe59b1bb51",
+        "quote": "The round was co-led by Heartcore and Seedcamp",
+        "quote_hash": "3c2b7210c19877e2305aca15876e6e22ae93a2ff0addde24fc4dee08755422c0"
+      },
+      {
         "source_id": "FISRC-333dfdc93dda00c9",
         "source_url": "https://tech.eu/2026/10/19/vessla-exits-stealth-with-33m-to-bring-ai-agents-to-property-management/",
         "source_title": "Vessla结束隐身模式，获330万美元融资，将AI智能体引入物业管理",
@@ -372,16 +426,16 @@
           "source_id": "B24-SEEDCAMP-METAVIEW"
         },
         {
+          "description": "融资来源记录：Marble Cognition · 预种子轮 · 2026-11-02 · 本轮联合领投 · €3.35 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e4d48c3df0a25149"
+        },
+        {
           "description": "融资来源记录：Vessla · 预种子轮 · 2026-10-19 · 本轮领投 · $3.3 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-333dfdc93dda00c9"
         },
         {
           "description": "融资来源记录：Vessla · 预种子轮 · 2026-10-19 · 本轮领投 · €2.94 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-03408b6d796d3c48"
-        },
-        {
-          "description": "融资来源记录：Solvera · 预种子轮 · 2026-10-15 · 本轮领投 · €5.62 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-cb72aaeb2be8d4ae"
         }
       ],
       "contacts": [
@@ -419,6 +473,14 @@
           "quote_hash": "e7f36e1b8110c56a5be3639e18e7c38c570f33c5dba0af2f4b0fe94af0e29dba"
         },
         {
+          "source_id": "FISRC-e4d48c3df0a25149",
+          "source_url": "https://www.eu-startups.com/2026/11/munichs-marble-cognition-raises-e3-35-million-to-build-ai-coworkers-that-learn-business-processes-before-automating-them/",
+          "source_title": "慕尼黑的Marble Cognition融资335万欧元，打造能在自动化前学习业务流程的AI智能体同事",
+          "source_content_hash": "a578a74db5c55f1456160519813007ac2ec422f1d4355ff7696933fe59b1bb51",
+          "quote": "The round was co-led by Heartcore and Seedcamp",
+          "quote_hash": "3c2b7210c19877e2305aca15876e6e22ae93a2ff0addde24fc4dee08755422c0"
+        },
+        {
           "source_id": "FISRC-333dfdc93dda00c9",
           "source_url": "https://tech.eu/2026/10/19/vessla-exits-stealth-with-33m-to-bring-ai-agents-to-property-management/",
           "source_title": "Vessla结束隐身模式，获330万美元融资，将AI智能体引入物业管理",
@@ -433,14 +495,6 @@
           "source_content_hash": "26d128952369a51ff8ea80cf41b04bb3bcca39a639bb2a0a43bd58d4071584a9",
           "quote": "The funding round was more than 2× oversubscribed and was led by Seedcamp.",
           "quote_hash": "8490852db4a0b16c34c3246735ca4299942dc2667b138ea053b1fede6be427de"
-        },
-        {
-          "source_id": "FISRC-cb72aaeb2be8d4ae",
-          "source_url": "https://www.eu-startups.com/2026/10/oslo-based-ai-native-engineering-firm-solvera-raises-e5-62-million-pre-seed-after-july-2026-launch/",
-          "source_title": "奥斯陆 AI 原生工程公司 Solvera 在 2026 年 7 月成立后完成 562 万欧元 pre-Seed 轮融资",
-          "source_content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
-          "quote": "The round was led by Seedcamp, with participation from Construct Venture, Inception Fund, Momentum, Obos Ventures, PSV Tech, Sondo, and The Nordic Web Ventures",
-          "quote_hash": "1051394e86c7f6047f44988bf049ad2633b024d2d4a7897cbd68e15440f11e52"
         }
       ],
       "last_verified_at": "2026-10-05",

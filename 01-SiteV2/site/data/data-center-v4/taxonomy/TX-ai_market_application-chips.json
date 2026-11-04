@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-03",
-    "currentDate": "2026-11-03",
-    "eventCount": 4356,
+    "latestDataDate": "2026-11-04",
+    "currentDate": "2026-11-04",
+    "eventCount": 4372,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -133,12 +133,12 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-04-13",
-    "lastSeen": "2026-11-03"
+    "lastSeen": "2026-11-04"
   },
   "events": [
     {
       "id": "EV-e0a31302688c81ec",
-      "dataDate": "2026-11-03",
+      "dataDate": "2026-11-04",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -166,10 +166,8 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-8764715bd635d5a8",
-          "CL-8478a57ebc0b1eed",
-          "CL-4c29581fc54b48de",
-          "CL-cf75883e7a2cf078"
+          "CL-c9fd26234ec93acd",
+          "CL-9a259f08336a765e"
         ]
       },
       "missingFields": [],
@@ -230,17 +228,6 @@
             "provenance": "reviewed_funding_insight",
             "reviewRef": "REC-0238a8d97807905f",
             "fundingInsightId": "FI-45cab93e2b3807d7"
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [
-              "EN-a5e5f031b6f878cf"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
           }
         ],
         "use_case": [
@@ -443,17 +430,6 @@
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-20ecd3ec9f0be573",
           "fundingInsightId": "FI-45cab93e2b3807d7"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-a5e5f031b6f878cf"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -504,17 +480,6 @@
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-0238a8d97807905f",
           "fundingInsightId": "FI-45cab93e2b3807d7"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-a5e5f031b6f878cf"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
         },
         {
           "dimensionId": "use_case",
@@ -12730,12 +12695,11 @@
         "TX-industry-telecommunications",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-use_case-software_development",
-        "TX-product_form-model"
+        "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "EN-73c2f5aa8e632c19",
@@ -12919,9 +12883,9 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
-        "TX-product_form-model",
         "TX-technology-on_device",
-        "TX-deployment_model-edge_device"
+        "TX-deployment_model-edge_device",
+        "TX-product_form-model"
       ],
       "relatedEntityIds": [
         "EN-7d3194f79e645c42",
@@ -13548,6 +13512,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-0a0d2b11832f0be5",
         "EV-81eaad496911181e",
         "EV-b34cc7c6ca51ad7a",
         "EV-8615e87fa54663e5",
@@ -13885,7 +13850,6 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-robotic_system",
@@ -13893,6 +13857,7 @@
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-technology-speech_audio",
@@ -13955,7 +13920,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-03"
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "EN-085578b03da7d660",

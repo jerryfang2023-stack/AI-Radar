@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-03",
-    "currentDate": "2026-11-03",
-    "eventCount": 4356,
+    "latestDataDate": "2026-11-04",
+    "currentDate": "2026-11-04",
+    "eventCount": 4372,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,7 +64,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 33,
-    "historical_or_ambiguous_count": 13,
+    "historical_or_ambiguous_count": 14,
     "portfolio_company_count": 28,
     "market_regions": [
       "GLOBAL"
@@ -75,7 +75,7 @@
     "latest_disclosed_at": "2026-10-26",
     "role_counts": {
       "co_lead": 3,
-      "historical_or_ambiguous": 13,
+      "historical_or_ambiguous": 14,
       "lead": 14,
       "other_current_round": 1,
       "participant": 15
@@ -1745,6 +1745,38 @@
         ]
       },
       {
+        "activity_id": "IA-c7742415f8032cd8",
+        "funding_insight_id": "FI-4ccef36f3ec7e4e8",
+        "event_ids": [
+          "EV-0a0d2b11832f0be5"
+        ],
+        "company_entity_id": "EN-2834e64f3da4f1eb",
+        "company_canonical_entity_id": "",
+        "company_name": "Fal",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series E 领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-05d1a3678a8eb502",
+            "source_url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+            "source_title": "AI推理初创公司Fal估值翻倍至$16B，需求激增",
+            "source_content_hash": "619f662b2bc706a305ff822133dffd3beef6778aff3e85d67eaad24f1d73986a",
+            "quote": "(Sequoia led the earlier round.)",
+            "quote_hash": "39ecfbb896a746d1e5f2becf78d4bf9f657854e4725ed6cac8da452569213792"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-27f5910cafab695c",
         "funding_insight_id": "FI-fbe655a1ee0c18ca",
         "event_ids": [
@@ -2331,6 +2363,14 @@
         "quote_hash": "2208e0e98559f9e980a7182138fe97df4a4942511d0bb56aa09af57b564332c5"
       },
       {
+        "source_id": "FISRC-05d1a3678a8eb502",
+        "source_url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+        "source_title": "AI推理初创公司Fal估值翻倍至$16B，需求激增",
+        "source_content_hash": "619f662b2bc706a305ff822133dffd3beef6778aff3e85d67eaad24f1d73986a",
+        "quote": "(Sequoia led the earlier round.)",
+        "quote_hash": "39ecfbb896a746d1e5f2becf78d4bf9f657854e4725ed6cac8da452569213792"
+      },
+      {
         "source_id": "FISRC-1bd8ed9d0103713f",
         "source_url": "https://www.island.io/press/island-raises-115-million-in-series-b-funding-to-enable-massive-innovation-on-enterprise-browser",
         "source_title": "Island Raises $115 Million in Series B Funding for Enterprise Browser",
@@ -2525,7 +2565,15 @@
           "translated_at": "2026-10-01T19:38:36.584Z",
           "status": "translated"
         },
-        "activities[39].role": {
+        "activities[38].role": {
+          "text": "Series E 领投",
+          "source_hash": "690f798efb7982fbdc4a1f48772d7084ecdb7c19aa13a5ca0c6a2b5ade634927",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-11-04T00:53:48.846Z",
+          "status": "translated"
+        },
+        "activities[40].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",

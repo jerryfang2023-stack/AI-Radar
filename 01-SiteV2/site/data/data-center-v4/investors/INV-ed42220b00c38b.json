@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-03",
-    "currentDate": "2026-11-03",
-    "eventCount": 4356,
+    "latestDataDate": "2026-11-04",
+    "currentDate": "2026-11-04",
+    "eventCount": 4372,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 24,
+    "current_round_count": 25,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 21,
+    "portfolio_company_count": 22,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-10-21",
+    "latest_disclosed_at": "2026-11-03",
     "role_counts": {
       "co_lead": 5,
       "historical_or_ambiguous": 3,
-      "lead": 6,
+      "lead": 7,
       "participant": 13
     },
     "round_codes": [
@@ -120,6 +120,11 @@
         "entity_id": "EN-7f4fdb8eb6e82b27",
         "canonical_entity_id": "",
         "name": "EliseAI"
+      },
+      {
+        "entity_id": "EN-2834e64f3da4f1eb",
+        "canonical_entity_id": "",
+        "name": "Fal"
       },
       {
         "entity_id": "EN-0caee180da9d0f3f",
@@ -198,6 +203,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-9fba5689a95b3349",
+        "funding_insight_id": "FI-4ccef36f3ec7e4e8",
+        "event_ids": [
+          "EV-0a0d2b11832f0be5"
+        ],
+        "company_entity_id": "EN-2834e64f3da4f1eb",
+        "company_canonical_entity_id": "",
+        "company_name": "Fal",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "F轮",
+        "amount_original": "$1.3 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "13 亿美元"
+        },
+        "announced_at": "2026-11-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-05d1a3678a8eb502",
+            "source_url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+            "source_title": "AI推理初创公司Fal估值翻倍至$16B，需求激增",
+            "source_content_hash": "619f662b2bc706a305ff822133dffd3beef6778aff3e85d67eaad24f1d73986a",
+            "quote": "has raised $1.3 billion in its latest funding round led by Bessemer Venture Partners, with participation from Nvidia, Sound Ventures, and T. Rowe Price.",
+            "quote_hash": "af3f70ce5a2969a9c1751d6c974edf782b58afed8bb97c3f5a9c07d9c1b71580"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a4b3d11d5ce2d68e",
         "funding_insight_id": "FI-b875723282f11479",
@@ -1267,6 +1312,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-05d1a3678a8eb502",
+        "source_url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+        "source_title": "AI推理初创公司Fal估值翻倍至$16B，需求激增",
+        "source_content_hash": "619f662b2bc706a305ff822133dffd3beef6778aff3e85d67eaad24f1d73986a",
+        "quote": "has raised $1.3 billion in its latest funding round led by Bessemer Venture Partners, with participation from Nvidia, Sound Ventures, and T. Rowe Price.",
+        "quote_hash": "af3f70ce5a2969a9c1751d6c974edf782b58afed8bb97c3f5a9c07d9c1b71580"
+      },
+      {
         "source_id": "FISRC-c4c53e6f607010be",
         "source_url": "https://legora.com/blog/series-e",
         "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
@@ -1534,16 +1587,16 @@
           "source_id": "bvp_about"
         },
         {
+          "description": "融资来源记录：Fal · F轮 · 2026-11-03 · 本轮领投 · $1.3 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-05d1a3678a8eb502"
+        },
+        {
           "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c4c53e6f607010be"
         },
         {
           "description": "融资来源记录：Mach9 · A轮 · 2026-10-21 · 本轮联合领投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2115ba1066fba41f"
-        },
-        {
-          "description": "融资来源记录：Zenzap · 多轮融资 · 2026-10-14 · 本轮联合领投 · $44 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bb48149fa1b574d3"
         }
       ],
       "contacts": [
@@ -1678,6 +1731,14 @@
           "quote_hash": "ddf8fda04aac1704b9a947e177ed87e25c98846999bbc4fd079ff577261d7391"
         },
         {
+          "source_id": "FISRC-05d1a3678a8eb502",
+          "source_url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+          "source_title": "AI推理初创公司Fal估值翻倍至$16B，需求激增",
+          "source_content_hash": "619f662b2bc706a305ff822133dffd3beef6778aff3e85d67eaad24f1d73986a",
+          "quote": "has raised $1.3 billion in its latest funding round led by Bessemer Venture Partners, with participation from Nvidia, Sound Ventures, and T. Rowe Price.",
+          "quote_hash": "af3f70ce5a2969a9c1751d6c974edf782b58afed8bb97c3f5a9c07d9c1b71580"
+        },
+        {
           "source_id": "FISRC-c4c53e6f607010be",
           "source_url": "https://legora.com/blog/series-e",
           "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
@@ -1692,14 +1753,6 @@
           "source_content_hash": "78c85caa88cb74965315bafa4e0d88f6e1a067bfc99a8e47526916c70adde4fd",
           "quote": "a $34 million Series A co-led by First Round Capital and Bessemer Venture Partners",
           "quote_hash": "981eb537c1209c249d3ea00482dce68d2e5a3035546bf321a44970b75acebf3a"
-        },
-        {
-          "source_id": "FISRC-bb48149fa1b574d3",
-          "source_url": "https://www.calcalistech.com/ctechnews/article/b1zgob6jfe",
-          "source_title": "Zenzap raises $33 million Series A to bring AI agents into everyday workplace chats",
-          "source_content_hash": "4cfe12ba60131ea9",
-          "quote": "has raised $33 million in a Series A funding round co-led by Bessemer Venture Partners and Lightspeed Venture Partners, with additional investment from The Garage.",
-          "quote_hash": "8d7648ad5a62c1ad0005ff8d3f38e905cb3818cdc6f18a0ced6816381566c39c"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1710,7 +1763,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[26].role": {
+        "activities[27].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",
