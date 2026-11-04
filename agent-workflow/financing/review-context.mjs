@@ -32,6 +32,36 @@ export function originalLocators(card,evidenceRoot,catalog) {
   return [...new Map(locators.map(row=>[row.path,row])).values()];
 }
 
+
+// Text presence is an audit aid, not approval of a field's factual meaning.
+export function publicationQuoteAudit(card, evidenceRoot, locators) {
+  const sources = new Map((card.research_sources || []).map(source => [source.source_id, source]));
+  const results = [];
+  const visit = (value, field = 'card') => {
+    if (!value || typeof value !== 'object') return;
+    if (value.source_id && value.quote) {
+      const source = sources.get(value.source_id);
+      const candidates = locators.filter(row => row.source_url === source?.source_url && row.content_hash === source?.content_hash);
+      let matched = false, originalPath = '';
+      for (const candidate of candidates) {
+        const file = path.resolve(evidenceRoot, candidate.path);
+        const relative = path.relative(fs.realpathSync(evidenceRoot), fs.realpathSync(file));
+        if (relative.startsWith('..') || path.isAbsolute(relative)) throw new Error('review_original_path_escape');
+        const raw = fs.readFileSync(file, 'utf8');
+        const body = candidate.path.endsWith('.json') ? JSON.parse(raw).body_clean : raw;
+        if (String(body || '').replace(/\s+/gu, ' ').trim().includes(String(value.quote).replace(/\s+/gu, ' ').trim())) {
+          matched = true; originalPath = candidate.path; break;
+        }
+      }
+      results.push({field, source_id: value.source_id, content_hash: source?.content_hash || '',
+        quote_sha256: createHash('sha256').update(value.quote).digest('hex'), matched, original_path: originalPath});
+    }
+    for (const [key, child] of Object.entries(value)) visit(child, `${field}.${key}`);
+  };
+  visit(card);
+  return results;
+}
+
 export function writePublicationReviewContext({checkout,directory,base,head,date,evidenceRoot}) {
   fs.mkdirSync(directory,{recursive:true});
   const baseFile=path.join(directory,'base-financing-catalog.json'),fd=fs.openSync(baseFile,'w',0o600);
@@ -46,19 +76,20 @@ export function writePublicationReviewContext({checkout,directory,base,head,date
     emit(`publication-delta/${kind}-${status}-${id}.json`,row);
   }
   const publication=JSON.parse(fs.readFileSync(path.join(checkout,`agent-workflow/reports/financing/${date}/publication.json`),'utf8'));
-  const required_originals={};
+  const required_originals={},quote_audit={};
   if(evidenceRoot) {
     const catalog=fs.readFileSync(path.join(evidenceRoot,'catalog.jsonl'),'utf8').split(/\r?\n/u).filter(Boolean).map(line=>JSON.parse(line));
     for(const card of [...delta.subjects.added,...delta.subjects.changed.map(row=>row.after)]) {
       const locators=originalLocators(card,evidenceRoot,catalog);
       if(!locators.length)throw new Error(`review_private_original_missing:${card.funding_insight_id}`);
       required_originals[card.funding_insight_id]=locators;
+      quote_audit[card.funding_insight_id]=publicationQuoteAudit(card,evidenceRoot,locators);
     }
   }
   const summary={version:'FINANCING-PUBLICATION-REVIEW-CONTEXT-1',date,base_commit:base,head_commit:head,
     before:{subjects:before.cards.length,events:before.event_cards.length},after:{subjects:after.cards.length,events:after.event_cards.length},
     delta:Object.fromEntries(Object.entries(delta).map(([kind,rows])=>[kind,Object.fromEntries(Object.entries(rows).map(([status,items])=>[status,items.length]))])),
-    files,required_originals,verification_queue_counts:publication.verification?.counts,
+    files,required_originals,quote_audit,verification_queue_counts:publication.verification?.counts,
     boundary:'Queue verification counts are not publication delta counts. Monitoring date is not financing announcement date. This packet is navigation and comparison metadata, not factual approval. Read captured originals and claims for every admitted addition or factual change. Catalog review exclusions/holds must remain excluded. Raw canonical verified status does not itself establish financing publication eligibility.',
     pending_publication:after.review?.publication_pending || [],excluded_count:after.review?.excluded?.length,pending_classification_count:after.review?.pending?.length};
   fs.writeFileSync(path.join(directory,'publication-review-context.json'),JSON.stringify(summary,null,2)+'\n',{mode:0o600});
