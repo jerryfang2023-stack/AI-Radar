@@ -28,3 +28,18 @@ export function publicationCodeInputs(root,commands) {
   for(const command of commands)visit(path.resolve(root,command[0]));
   return [...found].sort();
 }
+
+
+// Only explicit temporary child exits wait; mixed failures remain failures.
+export function publicationWaitReason(error) {
+  if (error?.message === 'awaiting_pages_for_accepted_commit') return 'awaiting_pages';
+  if (error?.code === 'PUBLICATION_TARGET_BUSY') return 'publisher_busy';
+  if (error instanceof AggregateError && error.errors.length) {
+    const reasons = error.errors.map(publicationWaitReason);
+    if (reasons.every(Boolean)) return reasons.includes('publisher_busy') ? 'publisher_busy' : 'awaiting_pages';
+  }
+  return null;
+}
+export function publicationChildError(stage, command, status, signal) {
+  return Object.assign(new Error(`${stage}:${command}:${status ?? signal}`), status === 75 ? {code:'PUBLICATION_TARGET_BUSY'} : {});
+}

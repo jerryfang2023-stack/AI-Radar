@@ -6,7 +6,7 @@ import path from 'node:path';
 import {execFileSync,spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import {runStages,read,acquireLock} from '../state.mjs';
-import {publicationInputs,publicationCheckpointCommands,publicationCodeInputs} from '../publication-plan.mjs';
+import {publicationInputs,publicationCheckpointCommands,publicationCodeInputs,publicationWaitReason,publicationChildError} from '../publication-plan.mjs';
 
 const temporary=t=>{const dir=fs.mkdtempSync(path.join(os.tmpdir(),'publication-concurrency-'));t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));return dir;};
 test('registered publication resources stay shared across custom date checkpoint directories',t=>{
@@ -73,4 +73,17 @@ test('Vault refresh remains bound to the accepted commit after main advances and
   assert.equal(fs.readFileSync(path.join(vault,'snapshot.txt'),'utf8'),'accepted');assert.equal(fs.readFileSync(path.join(repo,'version.txt'),'utf8'),'unsaved editor');
   assert.equal(read(path.join(runtime,'2026-10-07-guanlan-vault-sync.json')).source_commit,accepted);
   assert.equal(git(repo,['worktree','list','--porcelain']).match(/^worktree /gm).length,1);
+});
+
+
+test('temporary publisher exits survive stage aggregation while mixed failures stay blocking',async t=>{
+ const file=path.join(temporary(t),'state.json'),stage={id:'editorial_review',commands:[],dependsOn:[],valid:()=>true};
+ let failure;
+ try {await runStages({file,date:'2026-11-04',codeVersion:'wait',stages:[stage],parallelGroups:[['editorial_review']],execute:async()=>{throw publicationChildError('editorial_review','publisher',75);}});}catch(error){failure=error;}
+ assert.ok(failure instanceof AggregateError);assert.equal(publicationWaitReason(failure),'publisher_busy');
+ assert.equal(read(file).stages.editorial_review.ok,false);
+ assert.equal(publicationWaitReason(new AggregateError([failure,new Error('quality mismatch')])) ,null);
+ assert.equal(publicationWaitReason(publicationChildError('portal','publisher',1)),null);
+ assert.equal(publicationWaitReason(publicationChildError('portal','publisher',null,'SIGTERM')),null);
+ assert.equal(publicationWaitReason(new Error('awaiting_pages_for_accepted_commit')),'awaiting_pages');
 });
