@@ -3156,3 +3156,14 @@ test('securities filings and retrospective product interviews cannot become comp
  assert.equal(check('Building AI for Lawyers - Jacob Lauritzen, CTO of Legora',body).reason,'historical_funding_reference_requires_original_date');
  assert.equal(check('Acme raises $550M Series E','Acme announced today a $550M Series E round.').accepted,true);
 });
+
+
+test("publisher AI summaries cannot override original funding claims or their rounds", () => {
+  const original = "星河生科宣布完成由远景资本领投的数亿元A+轮融资首关，并迭代AI药物研发平台。";
+  const body = original + "\nAI AssistantAI 阅读助手\n星河生科完成数亿元A轮融资首关，扩展AI药物研发。";
+  const bundle = buildBundle([entry("publisher-ai-summary", "星河生科完成数亿元A+轮融资首关", body)], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  assert.ok(bundle.claims.length > 0);
+  assert.ok(bundle.claims.some(claim => claim.source_quote.includes("A+轮")));
+  assert.ok(bundle.claims.every(claim => claim.source_span.end <= original.length));
+  for (const claim of bundle.claims) assert.equal(body.slice(claim.source_span.start, claim.source_span.end), claim.source_quote);
+});

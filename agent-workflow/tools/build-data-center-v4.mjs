@@ -660,7 +660,7 @@ function trimBoilerplate(text) {
 
 // Use only article content for financing status; preserve original evidence spans.
 export function financingDecisionText(text = "") {
-  return text.split(/\n\s*(?:海量资讯、精准解读|新浪科技公众号|【本文根据公开消息发布|投稿爆料[：:]|联系我们\s*(?:\n|$))/u)[0];
+  return text.split(/\n\s*(?:海量资讯、精准解读|新浪科技公众号|【本文根据公开消息发布|Read Next推荐阅读|AI Assistant\s*AI 阅读助手|AI 阅读助手|投稿爆料[：:]|联系我们\s*(?:\n|$))/u)[0];
 }
 
 function sourceArtifact(raw, file, intakeDocument = null) {
@@ -1307,7 +1307,8 @@ function claimCandidates(body, title, rule, subject = "") {
   // Keep the immutable evidence body and its offsets, but never extract a
   // financing amount from the publisher's recommendations after the article.
   const relatedStart = body.search(/(?:^|\n)\s*(?:Related (?:Stories|Articles)|Previous article|Next article)\b/iu);
-  const all = sentenceSpans(relatedStart < 0 ? body : body.slice(0, relatedStart));
+  const article = rule.eventType === "funding" ? financingDecisionText(body) : body;
+  const all = sentenceSpans(relatedStart < 0 ? article : article.slice(0, relatedStart));
   const titleTokens = normalizeSpace(title).toLowerCase().split(/[^\p{L}\p{N}]+/u).filter((value) => value.length >= 3).slice(0, 8);
   const subjectTokens = normalizeSpace(subject).toLowerCase().split(/[^\p{L}\p{N}]+/u).filter((value) => value.length >= 3);
   const direct = all.filter((span) => rule.pattern.test(span.quote)).filter((span) => {
@@ -2232,6 +2233,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       }
       eventClaimRows = [...new Map(eventClaimRows
         .filter((claim) => !BOILERPLATE_TEXT.test(claim.source_quote))
+        .filter((claim) => rule.eventType !== "funding" || claim.source_span.end <= financingDecisionText(bodyClean).length)
         .map((claim) => [claim.claim_id, claim])).values()];
       if (!eventClaimRows.length) {
         qaQueue.push({

@@ -491,6 +491,8 @@ export function normalizeFundingRound(value = "") {
   const materialRounds = [...signals].filter((code) => code !== "early_stage");
   if (
     materialRounds.length > 1
+    // A shared Series prefix still denotes distinct rounds, not just the first.
+    || /\bseries\s+[a-z](?:\d+)?(?:\+{1,3})?\s*(?:and|&|\/)\s*(?:series\s+)?[a-z](?![a-z])(?:\d+)?(?:\+{1,3})?\b/iu.test(text)
     || /多轮|(?:seed|种子).{0,12}(?:and|\+|、|和|及).{0,12}(?:series|[a-z](?![a-z])\s*轮)/iu.test(text)
   ) {
     return { code: "multi_round", label: FUNDING_ROUND_LABELS.multi_round, original };

@@ -3741,3 +3741,12 @@ test('source-bound holds supersede active research receipts while preserving the
  fs.writeFileSync(file,JSON.stringify({...result,card:{...result.card,as_of_date:'2026-11-02'}}));
  assert.deepEqual(reconcileHeldResearchCheckpoints(dir,new Set(),review,date,{evidenceRoot:privateRoot}),[]);
 });
+
+
+test("joined Series round labels cannot collapse two rounds into the first", () => {
+  for (const text of ["Series E and F", "Series E & F rounds", "Series A/B", "Series E and Series F"]) {
+    assert.equal(normalizeFundingRound(text).code, "multi_round", text);
+  }
+  assert.equal(normalizeFundingRound("Series F round led by Bessemer").code, "series_f");
+  assert.equal(normalizeFundingRound("Series A funding and future growth").code, "series_a");
+});
