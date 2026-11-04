@@ -3750,3 +3750,12 @@ test("joined Series round labels cannot collapse two rounds into the first", () 
   assert.equal(normalizeFundingRound("Series F round led by Bessemer").code, "series_f");
   assert.equal(normalizeFundingRound("Series A funding and future growth").code, "series_a");
 });
+
+
+test('completed bond proceeds are debt only with a matching current-source amount',()=>{
+ const event={object:'$15 Billion as Elevated Bond Yields Stoke Demand',metrics:['$15 billion'],claim_refs:['C']};
+ const claim={claim_id:'C',claim_type:'funding',verification_status:'accepted',object:'raised $15 billion',source_quote:'Acme raised $15 billion from a US dollar bond sale.'};
+ assert.equal(canonicalFundingEventRound(event,[claim]).code,'debt');
+ assert.notEqual(canonicalFundingEventRound(event,[{...claim,source_quote:'Acme raised $5 billion from a US dollar bond sale.'}]).code,'debt');
+ assert.notEqual(canonicalFundingEventRound(event,[{...claim,source_quote:'Bond yields rose after Acme raised $15 billion.'}]).code,'debt');
+});
