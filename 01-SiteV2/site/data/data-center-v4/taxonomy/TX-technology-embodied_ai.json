@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-25T02:10:15.815Z",
     "latestDataDate": "2026-11-04",
     "currentDate": "2026-11-04",
-    "eventCount": 4371,
+    "eventCount": 4372,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -59,7 +59,6 @@
     "typeLabel": "技术",
     "valueId": "embodied_ai",
     "eventIds": [
-      "EV-ff850b44764f715b",
       "EV-a355d976d3a7daef",
       "EV-1dc8d06cdf7fb8b2",
       "EV-f7ec1c0a0c766a77",
@@ -192,7 +191,6 @@
       "EV-08f736f61f2b46f3"
     ],
     "entityIds": [
-      "EN-df7cde5ff02bd43a",
       "EN-99fc2d27cc698de5",
       "EN-a1bf9af74c0033c2",
       "EN-070a1175c6e4226b",
@@ -322,89 +320,6 @@
     "lastSeen": "2026-11-04"
   },
   "events": [
-    {
-      "id": "EV-ff850b44764f715b",
-      "dataDate": "2026-11-04",
-      "date": "2026-11-03",
-      "updatedDate": "2026-11-03",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "易成创新完成2亿元C轮融资，推进物理AI与具身智能的工业场景落地",
-      "originalTitle": "",
-      "subject": "易成创新",
-      "action": "完成2亿元C轮融资",
-      "object": "，推进物理AI与具身智能的工业场景落地",
-      "metrics": [
-        "2亿",
-        "80%"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-df7cde5ff02bd43a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-df7cde5ff02bd43a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-df7cde5ff02bd43a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-df7cde5ff02bd43a"
-      ],
-      "entityNames": [
-        "易成创新"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://news.pedaily.cn/202611/571274.shtml",
-      "publisher": "news.pedaily.cn"
-    },
     {
       "id": "EV-a355d976d3a7daef",
       "dataDate": "2026-11-04",
@@ -27281,27 +27196,6 @@
   ],
   "entities": [
     {
-      "id": "EN-df7cde5ff02bd43a",
-      "name": "易成创新",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-ff850b44764f715b"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-embodied_ai"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-04"
-    },
-    {
       "id": "EN-99fc2d27cc698de5",
       "name": "Physical AI startup Tensrai",
       "entityType": "organization_candidate",
@@ -27704,9 +27598,9 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-target_user-business_user",
-        "TX-product_form-model",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
+        "TX-product_form-model",
         "TX-industry-logistics_supply_chain",
         "TX-ai_market_category-physical_ai"
       ],
@@ -27752,8 +27646,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
-        "TX-product_form-model",
-        "TX-use_case-physical_automation"
+        "TX-use_case-physical_automation",
+        "TX-product_form-model"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-06",
@@ -29051,8 +28945,6 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
@@ -29063,10 +28955,12 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-use_case-research_discovery",
         "TX-technology-speech_audio",
         "TX-industry-media_entertainment",
@@ -29315,8 +29209,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
-        "TX-product_form-model",
-        "TX-use_case-physical_automation"
+        "TX-use_case-physical_automation",
+        "TX-product_form-model"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-16",
@@ -29677,9 +29571,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-embodied_ai",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
@@ -30024,8 +29918,6 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
@@ -30039,12 +29931,14 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-technology-speech_audio",
@@ -30244,9 +30138,9 @@
         "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
-        "TX-product_form-model",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
+        "TX-product_form-model",
         "TX-industry-logistics_supply_chain",
         "TX-ai_market_category-physical_ai"
       ],
@@ -30771,10 +30665,10 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-industry-media_entertainment",
@@ -30851,12 +30745,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
-        "TX-use_case-physical_automation"
+        "TX-use_case-physical_automation",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-06",
@@ -31034,16 +30928,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-physical_automation",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-use_case-research_discovery",
         "TX-technology-speech_audio",
         "TX-industry-media_entertainment",

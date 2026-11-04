@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-25T02:10:15.815Z",
     "latestDataDate": "2026-11-04",
     "currentDate": "2026-11-04",
-    "eventCount": 4371,
+    "eventCount": 4372,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,7 +63,8 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-63e454277381c4b3"
+      "EV-63e454277381c4b3",
+      "EV-7ae56347720accfa"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -75,6 +76,7 @@
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-7ae56347720accfa",
         "EV-63e454277381c4b3"
       ],
       "deployments": [],
@@ -86,8 +88,35 @@
     },
     "timeline": [
       {
-        "id": "EV-63e454277381c4b3",
+        "id": "EV-7ae56347720accfa",
         "dataDate": "2026-11-04",
+        "date": "2026-10-28",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "百奥几何完成1亿美元A轮系列融资，带队迈向生命科学超级智能",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-2af17ddc761538ab"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-2af17ddc761538ab"
+        ]
+      },
+      {
+        "id": "EV-63e454277381c4b3",
+        "dataDate": "2026-11-03",
         "date": "2026-10-28",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -126,6 +155,7 @@
       "valueId": "healthcare_life_sciences",
       "eventIds": [
         "EV-63e454277381c4b3",
+        "EV-7ae56347720accfa",
         "EV-0b46ca8532759091",
         "EV-7021248cd63007b1",
         "EV-a68bb74a987a8df4",

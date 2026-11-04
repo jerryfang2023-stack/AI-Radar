@@ -1,44 +1,22 @@
 [
   {
-    "claim_id": "CL-fbc3fa145a5811b6",
+    "claim_id": "CL-372895f6a6540645",
     "raw_id": "RAW-4a41983b096be225",
     "claim_type": "funding",
     "subject": "Fal",
     "predicate": "funding",
-    "object": "$1.3 billion funding round led by Bessemer Venture Partners",
+    "object": "raised $1.3 billion in a Series F round",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1,
-      "model_candidate_id": "MAC-7ef25567deda99ad"
+      "model_candidate_id": "MAC-df3c75a760aa59e5"
     },
     "source_span": {
       "raw_id": "RAW-4a41983b096be225",
       "start": 136,
-      "end": 378
+      "end": 665
     },
-    "source_quote": "Fal, a San Francisco-based startup that hosts and runs AI video, image, and audio models, has raised $1.3 billion in its latest funding round led by Bessemer Venture Partners, with participation from Nvidia, Sound Ventures, and T. Rowe Price.",
-    "extraction_method": "model_source_span",
-    "extraction_confidence": 0.72,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-34068fe6aa7076de",
-    "raw_id": "RAW-4a41983b096be225",
-    "claim_type": "funding",
-    "subject": "Fal",
-    "predicate": "funding",
-    "object": "Series E and F rounds combined $1.65 billion",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 2,
-      "model_candidate_id": "MAC-7ef25567deda99ad"
-    },
-    "source_span": {
-      "raw_id": "RAW-4a41983b096be225",
-      "start": 477,
-      "end": 603
-    },
-    "source_quote": "The startup announced its Series E and F rounds at the same time, noting that a combined $1.65 billion was raised across both.",
+    "source_quote": "Fal, a San Francisco-based startup that hosts and runs AI video, image, and audio models, has raised $1.3 billion in its latest funding round led by Bessemer Venture Partners, with participation from Nvidia, Sound Ventures, and T. Rowe Price. The deal values Fal at $16 billion, double its $8 billion valuation in April, Bloomberg reported.\nThe startup announced its Series E and F rounds at the same time, noting that a combined $1.65 billion was raised across both. (Sequoia led the earlier round.)\nThe latest round (Series F) ",
     "extraction_method": "model_source_span",
     "extraction_confidence": 0.72,
     "verification_status": "accepted"
@@ -812,48 +790,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-c5eb780ba4493371",
-    "raw_id": "RAW-48a2d7645a8479da",
-    "claim_type": "funding",
-    "subject": "微纳核芯",
-    "predicate": "funding",
-    "object": "，首创三维存算一体AI芯片新架构",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-48a2d7645a8479da",
-      "start": 2563,
-      "end": 2595
-    },
-    "source_quote": "微纳核芯完成10亿元C1轮融资，加速突破AI大模型推理「芯」瓶颈",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-dee1e507cc19e07d",
-    "raw_id": "RAW-48a2d7645a8479da",
-    "claim_type": "funding",
-    "subject": "微纳核芯",
-    "predicate": "funding",
-    "object": "，首创三维存算一体AI芯片新架构",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-48a2d7645a8479da",
-      "start": 2672,
-      "end": 2782
-    },
-    "source_quote": "· 微纳核芯2021年成立，是国家高新技术企业，首创三维存算一体AI芯片新架构，破解AI芯片“高性能 低功耗 低成本”痛点两个月内完成超20亿元融资，半年累计30亿元，产品覆盖端云推理场景，首批商业化潜力获多方机构看好。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-ab4c0a27baca13ba",
     "raw_id": "RAW-15554d579a74c5eb",
     "claim_type": "funding",
@@ -872,27 +808,6 @@
     "source_quote": "投资界（ID：pedaily2012）10月28日消息，近日，AI Native生物制药公司百奥几何（BioGeometry）宣布完成A+轮融资。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-0827c4223e88a137",
-    "raw_id": "RAW-15554d579a74c5eb",
-    "claim_type": "funding",
-    "subject": "百奥几何",
-    "predicate": "funding",
-    "object": "，带队迈向生命科学超级智能",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-15554d579a74c5eb",
-      "start": 2511,
-      "end": 2638
-    },
-    "source_quote": "· 百奥几何完成超1亿美元A轮系列融资，由国寿资本领投，老股东加码构建分子（GeoFlow）、细胞（GeoCell）双尺度微观模型，依托RSI干湿闭环体系，形成AI for AI飞轮储备数十条管线，天然冰片成本较植物提取降80%，2027年将规模化量产。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
@@ -915,48 +830,6 @@
     "source_quote": "超进化宣布完成数亿元人民币天使轮融资",
     "extraction_method": "model_source_span",
     "extraction_confidence": 0.72,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-70bc128bdbe4503d",
-    "raw_id": "RAW-df2f74eb8335d551",
-    "claim_type": "funding",
-    "subject": "星科源",
-    "predicate": "funding",
-    "object": "，聚焦下一代固态电池专用的纳米硅技术",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-df2f74eb8335d551",
-      "start": 83,
-      "end": 173
-    },
-    "source_quote": "投资界（ID：pedaily2012）10月29日消息，近日，星科源已完成亿元级Pre-A轮融资，由弘毅投资领投，厦门钨业产业基金、宜宾人才基金跟投，云道资本担任长期独家财务顾问。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-d057e71848ac6511",
-    "raw_id": "RAW-df2f74eb8335d551",
-    "claim_type": "funding",
-    "subject": "星科源",
-    "predicate": "funding",
-    "object": "，聚焦下一代固态电池专用的纳米硅技术",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-df2f74eb8335d551",
-      "start": 1413,
-      "end": 1562
-    },
-    "source_quote": "· 星科源聚焦下一代固态电池专用纳米硅技术，同步布局AI芯片用硅基光电器件纳米硅材料，已完成亿元级Pre-A轮融资，核心技术可稳定制备30nm以内超细纳米硅，且实现装备自主、连续量产与客户交付创始团队兼具二十余年纳米硅科研与产业化经验，核心成员来自全球顶尖科研及产业体系，获弘毅投资等头部机构投资。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
@@ -1065,24 +938,25 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-70f77dca01baa151",
+    "claim_id": "CL-0389f9b1bf76d40a",
     "raw_id": "RAW-d4b81cea7ca1ca8f",
     "claim_type": "funding",
     "subject": "希格生科",
     "predicate": "funding",
-    "object": "首关",
+    "object": "完成数亿元A+轮融资首关",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 1
+      "sequence": 1,
+      "model_candidate_id": "MAC-b944f3f8e6ab1f39"
     },
     "source_span": {
       "raw_id": "RAW-d4b81cea7ca1ca8f",
-      "start": 1812,
-      "end": 1942
+      "start": 0,
+      "end": 293
     },
-    "source_quote": "· 希格生科完成国寿股权领投的数亿元A 轮融资首关，依托“AI 类器官”创新研发模式，拥有5条First-in-class管线，核心管线SIGX1094为全球首款该技术推进至临床的弥漫性胃癌靶向药，类器官平台参与行业标准制定，心脏类器官毒性预测准确率达82%。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
+    "source_quote": "希格生科（深圳）有限公司（以下简称“希格生科”）自2020年底落地深圳以来，始终聚焦于弥漫性胃癌、肝癌、肺癌等恶性转移性实体瘤领域大量未被满足的临床需求，并基于公司开发的成熟的类器官模型，逐步拓展到心脏疾病以及肾脏疾病的创新靶向药研发。投资界（ID：pedaily2012）11月4日消息，希格生科宣布完成由国寿股权投资有限公司（以下简称“国寿股权”）领投的数亿元A+轮融资首关。本次融资将支持公司核心肿瘤创新药管线向关键临床推进，并新增针对心脏疾病以及肾脏疾病的新管线的开发。另外，持续布局及优化公司“类器官+AI”药物研发平台的迭代及新靶点发现，持续推进新管线的布局以及为药企赋能。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1107,27 +981,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-23ddbee6c95cc3bf",
-    "raw_id": "RAW-c58e51b115a1a601",
-    "claim_type": "funding",
-    "subject": "智子光垣",
-    "predicate": "funding",
-    "object": "，深耕光计算与芯片设计领域",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-c58e51b115a1a601",
-      "start": 1059,
-      "end": 1210
-    },
-    "source_quote": "· 智子光垣是全球领先的可重构全光架构光计算芯片企业，2026年5月成立，已完成5轮种子轮累计数亿元融资，投资方含多家知名机构及高校基金拥有近50人研发团队，核心成员深耕领域、成果丰富规划服务器端光电加速板卡和端侧光计算芯片，首版芯片已流片，未来半年将推出可部署产品，资金用于研发、团队建设及生态拓展。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-fc474b5068d38380",
     "raw_id": "RAW-c58e51b115a1a601",
     "claim_type": "funding",
@@ -1136,7 +989,7 @@
     "object": "，深耕光计算与芯片设计领域",
     "qualifiers": {
       "event_status": "completed",
-      "sequence": 3
+      "sequence": 2
     },
     "source_span": {
       "raw_id": "RAW-c58e51b115a1a601",
@@ -2465,27 +2318,6 @@
     "source_quote": "投资界（ID：pedaily2012）11月3日消息，易成创新宣布完成2亿元C轮融资，本轮由知名机构：粤科集团、善达投资、安徽国投、佛山创投等联合投资。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-e79e575a884a63f8",
-    "raw_id": "RAW-096c2acbe09f5444",
-    "claim_type": "funding",
-    "subject": "易成创新",
-    "predicate": "funding",
-    "object": "，推进物理AI与具身智能的工业场景落地",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-096c2acbe09f5444",
-      "start": 1525,
-      "end": 1636
-    },
-    "source_quote": "· 易成创新为全球领先的商用自动驾驶物理AI提供商，完成2亿元C轮融资，本轮投资方含粤科集团等知名机构具身智能相关订单达数亿元，头部客户覆盖率超80%，落地多元工业场景且海外业务提速，自研L4级方案构建全流程闭环技术拼图。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
     "verification_status": "accepted"
   }
 ]

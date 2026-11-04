@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-25T02:10:15.815Z",
     "latestDataDate": "2026-11-04",
     "currentDate": "2026-11-04",
-    "eventCount": 4371,
+    "eventCount": 4372,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,20 +63,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 34,
+    "current_round_count": 33,
     "historical_or_ambiguous_count": 14,
-    "portfolio_company_count": 29,
+    "portfolio_company_count": 28,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-09",
-    "latest_disclosed_at": "2026-11-02",
+    "latest_disclosed_at": "2026-10-26",
     "role_counts": {
       "co_lead": 3,
       "historical_or_ambiguous": 14,
-      "lead": 15,
+      "lead": 14,
       "other_current_round": 1,
       "participant": 15
     },
@@ -230,57 +230,12 @@
         "name": "Temporal Technologies"
       },
       {
-        "entity_id": "EN-c32662785b597e46",
-        "canonical_entity_id": "",
-        "name": "Trajectory"
-      },
-      {
         "entity_id": "EN-fc67129ea8fe8366",
         "canonical_entity_id": "EN-fc67129ea8fe8366",
         "name": "TypeSafe AI"
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-cfc4d78880248999",
-        "funding_insight_id": "FI-7de55f8a8e9ca8df",
-        "event_ids": [
-          "EV-81eaad496911181e"
-        ],
-        "company_entity_id": "EN-c32662785b597e46",
-        "company_canonical_entity_id": "",
-        "company_name": "Trajectory",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "A轮",
-        "amount_original": "$45 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 45000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "4500 万美元"
-        },
-        "announced_at": "2026-11-02",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮领投",
-        "role_code": "lead",
-        "evidence": [
-          {
-            "source_id": "FISRC-c8564f3a68709075",
-            "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
-            "source_title": "Trajectory 融资 4500 万美元，让非技术专家也能参与 AI 模型训练",
-            "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-            "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-            "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
-          }
-        ]
-      },
       {
         "activity_id": "IA-0b72fbcc7c420947",
         "funding_insight_id": "FI-2bd46dca95154b25",
@@ -1791,7 +1746,7 @@
       },
       {
         "activity_id": "IA-c7742415f8032cd8",
-        "funding_insight_id": "FI-3b4b50b8aaa7d768",
+        "funding_insight_id": "FI-4ccef36f3ec7e4e8",
         "event_ids": [
           "EV-0a0d2b11832f0be5"
         ],
@@ -2079,14 +2034,6 @@
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-c8564f3a68709075",
-        "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
-        "source_title": "Trajectory 融资 4500 万美元，让非技术专家也能参与 AI 模型训练",
-        "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-        "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-        "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
-      },
       {
         "source_id": "FISRC-4ef85aec7ebdf94c",
         "source_url": "https://www.eu-startups.com/2026/10/wealthtech-startup-nevis-secures-e62-million-to-automate-financial-advisory-workflows-with-ai/",
@@ -2523,16 +2470,16 @@
           "source_id": "sequoia_history"
         },
         {
-          "description": "融资来源记录：Trajectory · A轮 · 2026-11-02 · 本轮领投 · $45 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c8564f3a68709075"
-        },
-        {
           "description": "融资来源记录：Nevis · B轮 · 2026-10-26 · 本轮参投 · €62 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4ef85aec7ebdf94c"
         },
         {
           "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮领投 · $66M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-49f5b4d8c68adbdc"
+        },
+        {
+          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮领投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5f7eaed02b669920"
         }
       ],
       "contacts": [
@@ -2562,14 +2509,6 @@
           "quote_hash": "4a2f68c042b10690a950656cdd8c8d78ddbacadab8cdf2e8a4566b83347cc5ac"
         },
         {
-          "source_id": "FISRC-c8564f3a68709075",
-          "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
-          "source_title": "Trajectory 融资 4500 万美元，让非技术专家也能参与 AI 模型训练",
-          "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-          "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-          "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
-        },
-        {
           "source_id": "FISRC-4ef85aec7ebdf94c",
           "source_url": "https://www.eu-startups.com/2026/10/wealthtech-startup-nevis-secures-e62-million-to-automate-financial-advisory-workflows-with-ai/",
           "source_title": "财富科技初创公司Nevis获得6200万欧元，用于通过AI自动化金融咨询工作流程",
@@ -2584,6 +2523,14 @@
           "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
           "quote": "a $66M Series C led by Sequoia Capital at a $1 billion valuation",
           "quote_hash": "33a85f0b4446289963f51e84b69bf35a336bc02d5e28e1c6dd0ce378b7b664c0"
+        },
+        {
+          "source_id": "FISRC-5f7eaed02b669920",
+          "source_url": "https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/",
+          "source_title": "Blacksmith 在 Sequoia 领投 C 轮融资后达到独角兽估值",
+          "source_content_hash": "4973cf3bc31640caadbb8ff770a32f12a4324ec7e02e464a9a06d1fcb32dc4f7",
+          "quote": "a $66 million Series C funding round led by Sequoia",
+          "quote_hash": "b1dd4e17bd4d7fa1eab1b54ef64248489b226e0df91e8cc567be12ab3684aabf"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2594,7 +2541,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[34].role": {
+        "activities[33].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",
@@ -2602,7 +2549,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[36].role": {
+        "activities[35].role": {
           "text": "Series D 领投",
           "source_hash": "b1ad54c261addee1c044320cc302024b488ee22b0810e11ab5f9b281dda6d2b7",
           "provider": "deepseek",
@@ -2610,7 +2557,7 @@
           "translated_at": "2026-10-03T00:37:44.351Z",
           "status": "translated"
         },
-        "activities[38].role": {
+        "activities[37].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",
@@ -2618,7 +2565,7 @@
           "translated_at": "2026-10-01T19:38:36.584Z",
           "status": "translated"
         },
-        "activities[39].role": {
+        "activities[38].role": {
           "text": "Series E 领投",
           "source_hash": "690f798efb7982fbdc4a1f48772d7084ecdb7c19aa13a5ca0c6a2b5ade634927",
           "provider": "deepseek",
@@ -2626,7 +2573,7 @@
           "translated_at": "2026-11-04T00:53:48.846Z",
           "status": "translated"
         },
-        "activities[41].role": {
+        "activities[40].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",

@@ -8,14 +8,14 @@
     "latest_date": "2026-11-04",
     "last_checked_date": "2026-11-04",
     "latest_financing_date": "2026-11-04",
-    "generated_at": "2026-11-04T00:52:35.188Z",
-    "card_count": 690,
-    "china_market_card_count": 152,
+    "generated_at": "2026-11-04T03:38:12.826Z",
+    "card_count": 688,
+    "china_market_card_count": 151,
     "duplicate_rounds_removed": 25,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-11-04T00:53:48.846Z"
+      "generated_at": "2026-11-04T03:40:29.603Z"
     },
     "market_category_framework": {
       "name": "观澜 AI 融资分类",
@@ -35,7 +35,7 @@
         }
       ]
     },
-    "event_count": 737,
+    "event_count": 735,
     "aggregation_strategy": "reviewed_funding_subject",
     "scope": "all_ai_financing_except_embodied_and_robotics",
     "excluded_count": 91,
@@ -387,7 +387,6 @@
       "B+轮",
       "B轮",
       "B轮扩展",
-      "C+轮",
       "C1轮",
       "C3轮",
       "C3轮扩展",
@@ -739,8 +738,8 @@
   "cards": [
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-e9ad9d422b27e748",
-      "triggered_by_event_id": "EV-cbdfbfdc8bd9552c",
+      "funding_insight_id": "FI-7138d99fd221db57",
+      "triggered_by_event_id": "EV-98a40e2dde1ffec0",
       "as_of_date": "2026-11-04",
       "company": {
         "entity_id": "EN-5c73e6772ef081be",
@@ -787,7 +786,7 @@
         "canonical_entity_consistent": false
       },
       "financing": {
-        "round": "A轮",
+        "round": "A+轮",
         "amount": "数亿元",
         "total_raised": "",
         "announced_at": "2026-11-04",
@@ -883,12 +882,6 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-df8adbeca805f25b",
-            "quote": "· 希格生科完成国寿股权领投的数亿元A 轮融资首关，依托“AI 类器官”创新研发模式，拥有5条First-in-class管线，核心管线SIGX1094为全球首款该技术推进至临床的弥漫性胃癌靶向药，类器官平台参与行业标准制定，心脏类器官毒性预测准确率达82%。",
-            "source_content_hash": "310458a4d6a0d2206b893673472c4f9b6219afdd3bfb1d33de04302e20229590",
-            "quote_hash": "4e621e3f77446ee937e605f654c024a2f7970255c5bc1485efa29c92193eef3d"
-          },
-          {
-            "source_id": "FISRC-df8adbeca805f25b",
             "quote": "希格生科宣布完成由国寿股权投资有限公司（以下简称“国寿股权”）领投的数亿元A+轮融资首关",
             "source_content_hash": "310458a4d6a0d2206b893673472c4f9b6219afdd3bfb1d33de04302e20229590",
             "quote_hash": "d3a9eb9d01d256281fc9016414baa5dcb0a02a3675cf9e81dd9659e301c3f550"
@@ -900,8 +893,8 @@
             "quote_hash": "0bfc20613acd468a5c3bec618fbf5221df5ec55d6ad257b2219f70ce66fee78a"
           }
         ],
-        "round_code": "series_a",
-        "round_original": "A轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
         "amount_original": "数亿元",
         "amount_normalized": {
           "currency": "CNY",
@@ -925,17 +918,11 @@
         "risk_markers": [],
         "disclosures": [
           {
-            "event_id": "EV-cbdfbfdc8bd9552c",
-            "round_original": "A轮",
+            "event_id": "EV-98a40e2dde1ffec0",
+            "round_original": "A+轮",
             "amount": "数亿元",
             "announced_at": "2026-11-04",
             "evidence_refs": [
-              {
-                "source_id": "FISRC-df8adbeca805f25b",
-                "quote": "· 希格生科完成国寿股权领投的数亿元A 轮融资首关，依托“AI 类器官”创新研发模式，拥有5条First-in-class管线，核心管线SIGX1094为全球首款该技术推进至临床的弥漫性胃癌靶向药，类器官平台参与行业标准制定，心脏类器官毒性预测准确率达82%。",
-                "source_content_hash": "310458a4d6a0d2206b893673472c4f9b6219afdd3bfb1d33de04302e20229590",
-                "quote_hash": "4e621e3f77446ee937e605f654c024a2f7970255c5bc1485efa29c92193eef3d"
-              },
               {
                 "source_id": "FISRC-df8adbeca805f25b",
                 "quote": "希格生科宣布完成由国寿股权投资有限公司（以下简称“国寿股权”）领投的数亿元A+轮融资首关",
@@ -1216,7 +1203,7 @@
       ],
       "funding_history": [
         {
-          "event_id": "EV-cbdfbfdc8bd9552c",
+          "event_id": "EV-98a40e2dde1ffec0",
           "date": "2026-11-04",
           "title": "希格生科完成国寿股权领投的数亿元A+轮融资首关",
           "amount": "数亿元",
@@ -1304,10 +1291,10 @@
         }
       },
       "source_event_ids": [
-        "EV-cbdfbfdc8bd9552c"
+        "EV-98a40e2dde1ffec0"
       ],
       "aggregation": {
-        "key": "EN-5c73e6772ef081be|series_a|CNY:range::200000000:900000000:|2026-11-04",
+        "key": "EN-5c73e6772ef081be|series_a_plus|CNY:range::200000000:900000000:|2026-11-04",
         "event_count": 1,
         "strategy": "reviewed_funding_subject",
         "subject_id": "EN-5c73e6772ef081be",
@@ -1315,13 +1302,13 @@
       },
       "historical_rounds": [
         {
-          "funding_insight_id": "FI-e9ad9d422b27e748",
+          "funding_insight_id": "FI-7138d99fd221db57",
           "event_ids": [
-            "EV-cbdfbfdc8bd9552c"
+            "EV-98a40e2dde1ffec0"
           ],
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
+          "round": "A+轮",
+          "round_code": "series_a_plus",
+          "round_original": "A+轮",
           "amount_original": "数亿元",
           "amount_normalized": {
             "currency": "CNY",
@@ -1356,12 +1343,6 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-df8adbeca805f25b",
-              "quote": "· 希格生科完成国寿股权领投的数亿元A 轮融资首关，依托“AI 类器官”创新研发模式，拥有5条First-in-class管线，核心管线SIGX1094为全球首款该技术推进至临床的弥漫性胃癌靶向药，类器官平台参与行业标准制定，心脏类器官毒性预测准确率达82%。",
-              "source_content_hash": "310458a4d6a0d2206b893673472c4f9b6219afdd3bfb1d33de04302e20229590",
-              "quote_hash": "4e621e3f77446ee937e605f654c024a2f7970255c5bc1485efa29c92193eef3d"
-            },
-            {
-              "source_id": "FISRC-df8adbeca805f25b",
               "quote": "希格生科宣布完成由国寿股权投资有限公司（以下简称“国寿股权”）领投的数亿元A+轮融资首关",
               "source_content_hash": "310458a4d6a0d2206b893673472c4f9b6219afdd3bfb1d33de04302e20229590",
               "quote_hash": "d3a9eb9d01d256281fc9016414baa5dcb0a02a3675cf9e81dd9659e301c3f550"
@@ -1379,15 +1360,12 @@
         "market_region": "CN",
         "china_market_match": true,
         "china_market_basis": [
+          "actor_origin",
           "funding_company_evidence:china_legal_entity:希格生科（深圳）有限公司"
         ],
         "source_registry_ids": []
       },
-      "product_form": {
-        "id": "ai-service",
-        "name": "AI 专业服务",
-        "dimension": "financing_product_form"
-      },
+      "product_form": null,
       "market_category": {
         "id": "industry",
         "name": "行业 AI",
@@ -1402,7 +1380,7 @@
       "links": {
         "company": "",
         "relation_map": "",
-        "funding_event": "data-center.html?view=events&detail=event&id=EV-cbdfbfdc8bd9552c"
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-98a40e2dde1ffec0"
       },
       "translations": {
         "zh-CN": {
@@ -1428,16 +1406,8 @@
           "id": "life-sciences",
           "name": "药物研发与生命科学"
         },
-        "product_form": {
-          "id": "ai-service",
-          "name": "AI 专业服务"
-        },
-        "customers": [
-          {
-            "id": "business",
-            "name": "企业"
-          }
-        ],
+        "product_form": null,
+        "customers": [],
         "evidence_refs": [
           {
             "source_id": "FISRC-77ebd2c64e51695d",
@@ -1452,15 +1422,15 @@
             "quote": "核心管线SIGX1094 是全球首 款基于“类器官+AI”技术推进至临床阶段的弥漫性胃癌靶向药，也是全球首 个进入临床阶段的FAK/SRC双靶点抑制剂"
           }
         ],
-        "rationale": "公司以类器官+AI平台推进靶向药研发并拥有临床管线，属药物研发与生命科学行业AI。"
+        "rationale": "希格生科以“类器官+AI”平台开展靶向药物研发并推进临床管线，主营属于药物研发与生命科学行业AI。"
       },
       "source_card_ids": [
-        "FI-e9ad9d422b27e748"
+        "FI-7138d99fd221db57"
       ]
     },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-3b4b50b8aaa7d768",
+      "funding_insight_id": "FI-4ccef36f3ec7e4e8",
       "triggered_by_event_id": "EV-0a0d2b11832f0be5",
       "as_of_date": "2026-11-04",
       "company": {
@@ -1528,7 +1498,7 @@
         "canonical_entity_consistent": false
       },
       "financing": {
-        "round": "E轮",
+        "round": "F轮",
         "amount": "$1.3 billion",
         "total_raised": "$2.24B",
         "announced_at": "2026-11-03",
@@ -1621,8 +1591,8 @@
             "quote_hash": "42f8b35fa67dee04182571aa48e2b0b8751c6e5220257f7528fb270e679d2a08"
           }
         ],
-        "round_code": "series_e",
-        "round_original": "Series E and F",
+        "round_code": "series_f",
+        "round_original": "F轮",
         "amount_original": "$1.3 billion",
         "amount_normalized": {
           "currency": "USD",
@@ -1647,7 +1617,7 @@
         "disclosures": [
           {
             "event_id": "EV-0a0d2b11832f0be5",
-            "round_original": "Series E and F",
+            "round_original": "F轮",
             "amount": "$1.3 billion",
             "announced_at": "2026-11-03",
             "evidence_refs": [
@@ -2205,7 +2175,7 @@
         "EV-0a0d2b11832f0be5"
       ],
       "aggregation": {
-        "key": "EN-2834e64f3da4f1eb|series_e|USD:exact:1300000000:::|2026-11-03",
+        "key": "EN-2834e64f3da4f1eb|series_f|USD:exact:1300000000:::|2026-11-03",
         "event_count": 1,
         "strategy": "reviewed_funding_subject",
         "subject_id": "EN-2834e64f3da4f1eb",
@@ -2213,13 +2183,13 @@
       },
       "historical_rounds": [
         {
-          "funding_insight_id": "FI-3b4b50b8aaa7d768",
+          "funding_insight_id": "FI-4ccef36f3ec7e4e8",
           "event_ids": [
             "EV-0a0d2b11832f0be5"
           ],
-          "round": "E轮",
-          "round_code": "series_e",
-          "round_original": "Series E and F",
+          "round": "F轮",
+          "round_code": "series_f",
+          "round_original": "F轮",
           "amount_original": "$1.3 billion",
           "amount_normalized": {
             "currency": "USD",
@@ -2407,1027 +2377,7 @@
         "rationale": "Fal 以开发者 API 提供生成式媒体模型推理托管服务，属于 AI 云与算力服务。"
       },
       "source_card_ids": [
-        "FI-3b4b50b8aaa7d768"
-      ]
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-4c54e5a0c06950fc",
-      "triggered_by_event_id": "EV-1d794039f9374217",
-      "as_of_date": "2026-11-04",
-      "company": {
-        "entity_id": "EN-9ca120a340344bca",
-        "name": "暖芯迦",
-        "full_name": "杭州暖芯迦电子科技有限公司",
-        "website": "www.nanochap.cn",
-        "summary": "暖芯迦成立于2014年，专注于脑机接口以及神经生物芯片研发、生产与销售，是国内最早从事视觉脑机接口技术开发的公司之一，布局视网膜路径E-BCI与视皮层路径V-BCI两条视觉重建产品线。",
-        "headquarters": "浙江省杭州市余杭区五常街道联创街188号4幢6楼",
-        "founders": [
-          {
-            "name": "杨佳威",
-            "role": "创始人兼CEO",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "暖芯迦创始人兼CEO杨佳威博士",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "977f1cdcbb235d7103397a90327598100ac6aa2b947105cf907dbc03ec9e6299"
-              },
-              {
-                "source_id": "FISRC-cf3546e1b697b62a",
-                "quote": "公司创始人杨佳威为国家千人计划专家",
-                "source_content_hash": "a7e14b56977ed825",
-                "quote_hash": "dfc0a0c2ccd322ecbe793080e2f711422c7eafc1a65d82dd6e3877a9c8dbded8"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "team_size": {
-          "value": "51~100人",
-          "observed_at": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fa3ed4002909672a",
-              "quote": "员工人数：\n51~100人",
-              "source_content_hash": "10aa432345d8ada3",
-              "quote_hash": "0832410b8d6630a5c9ac5a395d36a7a4aea653edf11115806cd9e4abdeb86124"
-            }
-          ]
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-b81ae5593b7ca7f5",
-            "quote": "杭州暖芯迦电子科技有限公司（简称：暖芯迦）宣布完成5亿元C+轮融资",
-            "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-            "quote_hash": "93e7667c9ab8d9ab14779cc31a6337532785135ee4552ae582bef8208fd3cca1"
-          },
-          {
-            "source_id": "FISRC-127697db1330a6e8",
-            "quote": "暖芯迦成立于2014年，是一家专注于脑机接口以及神经生物芯片研发、生产与销售的科技企业",
-            "source_content_hash": "37ab320354536a7f",
-            "quote_hash": "09faedb637c2ceac326dd777bc41ea13154a9446c4279742cac58d70468d65df"
-          }
-        ],
-        "application_entity_id": "EN-9ca120a340344bca",
-        "canonical_entity_consistent": false
-      },
-      "financing": {
-        "round": "C+轮",
-        "amount": "5亿元",
-        "total_raised": "10亿元人民币",
-        "announced_at": "2026-11-03",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "高榕创投",
-            "role": "本轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-5e189044745410"
-          },
-          {
-            "name": "人保股权",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-4ea061135d5085"
-          },
-          {
-            "name": "Monolith砺思资本",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-63cf35584db1b1"
-          },
-          {
-            "name": "建发新兴投资",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-76fb8532c37f57"
-          },
-          {
-            "name": "东方嘉富",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-9d1d8e447b1e09"
-          },
-          {
-            "name": "丹合资本",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-79f5b554fd3261"
-          },
-          {
-            "name": "杭州产投集团",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-6df1342f160cca"
-          }
-        ],
-        "other_round_investors": [
-          {
-            "name": "君联资本",
-            "role": "老股东超额追投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "君联资本、知名产业投资机构等老股东超额追投",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "4ac9161700ea06d7b620864dfc193c0569368f901595207e2fc5a8218de32bdb"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-fc1fa323b06b1d"
-          },
-          {
-            "name": "泰越资本",
-            "role": "B1轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c6bcb2fa71dc7dad",
-                "quote": "暖芯迦完成超亿元B1轮融资，由泰越资本领投",
-                "source_content_hash": "fbc9231e4112bfc7",
-                "quote_hash": "55af8b4a56e8d54a93a97ea3e68f077407da41688b6533d44decec444dbcb02e"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-90c4d75f7725c2"
-          },
-          {
-            "name": "丰年资本",
-            "role": "D轮投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-fa3ed4002909672a",
-                "quote": "本轮融资由知名产业投资机构与君联资本联合领投，原有股东丰年资本超额追投，广发信德和财通资本跟投，启峰资本担任财务顾问。",
-                "source_content_hash": "10aa432345d8ada3",
-                "quote_hash": "2c66c67d88d718ee43c9318602a7910eb7d135f8ce406491400588b2383125ab"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-3b109024299138"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-b81ae5593b7ca7f5",
-            "quote": "投资界AI获悉，杭州暖芯迦电子科技有限公司（简称：暖芯迦）宣布完成5亿元C+轮融资，资方阵容豪华——",
-            "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-            "quote_hash": "de91058e6a780f9c7c35dd4c0721ebd3965c53287477a13b9548813bd562f73d"
-          },
-          {
-            "source_id": "FISRC-b81ae5593b7ca7f5",
-            "quote": "宣布完成5亿元C+轮融资",
-            "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-            "quote_hash": "60bf05888d6d4d90bfcad4d4a51dfa23290b846ca6f7b066c12e158870f11171"
-          },
-          {
-            "source_id": "FISRC-b81ae5593b7ca7f5",
-            "quote": "至此公司累计融资规模已达10亿元人民币",
-            "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-            "quote_hash": "31f71c79bb1e58d2d0611ff981eaabfd05b74ac52781d690d1eec782bba7eb8f"
-          }
-        ],
-        "round_code": "series_c_plus",
-        "round_original": "C+轮",
-        "amount_original": "5亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 500000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "5 亿元"
-        },
-        "total_raised_original": "10亿元人民币",
-        "total_raised_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "10 亿元"
-        },
-        "risk_markers": [],
-        "disclosures": [
-          {
-            "event_id": "EV-1d794039f9374217",
-            "round_original": "C+轮",
-            "amount": "5亿元",
-            "announced_at": "2026-11-03",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "投资界AI获悉，杭州暖芯迦电子科技有限公司（简称：暖芯迦）宣布完成5亿元C+轮融资，资方阵容豪华——",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "de91058e6a780f9c7c35dd4c0721ebd3965c53287477a13b9548813bd562f73d"
-              },
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "宣布完成5亿元C+轮融资",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "60bf05888d6d4d90bfcad4d4a51dfa23290b846ca6f7b066c12e158870f11171"
-              },
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "至此公司累计融资规模已达10亿元人民币",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "31f71c79bb1e58d2d0611ff981eaabfd05b74ac52781d690d1eec782bba7eb8f"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "disclosed",
-        "cumulative_amount": {
-          "original": "10亿元人民币",
-          "normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "basis": "source_disclosed",
-          "known_round_totals": [
-            {
-              "currency": "CNY",
-              "value": 500000000,
-              "min_value": null,
-              "max_value": null,
-              "unit": "base",
-              "round_count": 1,
-              "status": "exact",
-              "display_zh": "5 亿元"
-            }
-          ],
-          "historical_round_count": 1
-        },
-        "current_source_ids": [
-          "FISRC-b81ae5593b7ca7f5"
-        ]
-      },
-      "products": [
-        {
-          "name": "视网膜路径视觉脑机接口E-BCI",
-          "description": "320通道视网膜视觉脑机接口，植入体置于视网膜上，通过视神经通路向大脑皮层传送神经信号，已迈入GCP规范化临床试验阶段。",
-          "target_customers": "视神经通路完好的失明患者",
-          "features": [
-            "320个电刺激通道",
-            "GCP规范化临床试验阶段",
-            "不穿透眼球、微创可逆（半侵入式版本）"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b81ae5593b7ca7f5",
-              "quote": "暖芯迦320通道视网膜视觉脑机接口E-BCI已正式迈入GCP规范化临床试验阶段",
-              "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-              "quote_hash": "4b925b870f83615dcd1c4bdf5db3386e58df729fac06a441b1a77c36214c39a4"
-            },
-            {
-              "source_id": "FISRC-127697db1330a6e8",
-              "quote": "暖芯迦高分辨率视网膜路径视觉脑机接口E‑BCI",
-              "source_content_hash": "37ab320354536a7f",
-              "quote_hash": "16db2b0424745eb70fdc31627c113d3804dede2a726e4864cf123e316389d4b6"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "视皮层路径视觉脑机接口V-BCI",
-          "description": "1280通道视觉皮层脑机接口产品，电极阵列直接置于初级视觉皮层，可绕过视神经，目前处于研发阶段，计划进行临床验证。",
-          "target_customers": "视神经缺损或萎缩的失明患者",
-          "features": [
-            "1280通道",
-            "处于研发阶段",
-            "计划进行临床验证"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b81ae5593b7ca7f5",
-              "quote": "1280通道的视觉皮层脑机接口产品处于研发阶段，计划进行临床验证",
-              "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-              "quote_hash": "273c02a778bb4d5ce7eeb716f0a2e4f976f3db0e08dd0f9d1aac8caf5e14ee46"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [],
-      "comparisons": [
-        {
-          "name": "Science Corporation",
-          "product": "PRIMA",
-          "scenario": "视网膜路径视觉重建",
-          "target_customer": "视网膜疾病致盲患者",
-          "funding_summary": "",
-          "core_difference": "PRIMA只押注视网膜路径，暖芯迦同时布局视网膜路径E-BCI与视皮层路径V-BCI；PRIMA已凭借临床数据在欧洲获批商用，暖芯迦E-BCI处于GCP规范化临床试验阶段。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b81ae5593b7ca7f5",
-              "quote": "Science Corporation的PRIMA是视网膜路径",
-              "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-              "quote_hash": "ab820167e6497977200e0c330a9f8b198927ba7050e9262035ebbfb0de23a8ef"
-            },
-            {
-              "source_id": "FISRC-b81ae5593b7ca7f5",
-              "quote": "Science Corporation的视网膜产品PRIMA则凭借登上《新英格兰医学杂志》的临床数据在欧洲获批商用",
-              "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-              "quote_hash": "9603716f1374375ab5255d40b479ff01f999f22ac2196c204ab2f045a7727956"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Neuralink",
-          "product": "Blindsight",
-          "scenario": "视皮层路径视觉重建",
-          "target_customer": "失明患者",
-          "funding_summary": "",
-          "core_difference": "Blindsight走视皮层路径并已获美国FDA“突破性医疗器械”认定、计划2026年进行人体植入；暖芯迦双线并行，其视皮层产品1280通道仍处研发阶段。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b81ae5593b7ca7f5",
-              "quote": "Neuralink的Blindsight是视皮层路径",
-              "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-              "quote_hash": "056d7b2605d53891740f05f9c71169c43c25d5322b701e85b70b3892acde76f0"
-            },
-            {
-              "source_id": "FISRC-b81ae5593b7ca7f5",
-              "quote": "Neuralink的视觉重建产品Blindsight已获得美国FDA“突破性医疗器械”认定，计划于2026年进行人体植入",
-              "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-              "quote_hash": "43fa203915572f49926062c2a2810acf2e20f96764e08bb8450b832656e3e509"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "metrics": [
-        {
-          "label": "本轮融资金额",
-          "value": "5亿元",
-          "observed_at": "2026-11-03",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b81ae5593b7ca7f5",
-              "quote": "宣布完成5亿元C+轮融资",
-              "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-              "quote_hash": "60bf05888d6d4d90bfcad4d4a51dfa23290b846ca6f7b066c12e158870f11171"
-            }
-          ]
-        },
-        {
-          "label": "累计融资规模",
-          "value": "10亿元人民币",
-          "observed_at": "2026-11-03",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b81ae5593b7ca7f5",
-              "quote": "至此公司累计融资规模已达10亿元人民币",
-              "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-              "quote_hash": "31f71c79bb1e58d2d0611ff981eaabfd05b74ac52781d690d1eec782bba7eb8f"
-            }
-          ]
-        },
-        {
-          "label": "E-BCI电刺激通道数",
-          "value": "320个",
-          "observed_at": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b81ae5593b7ca7f5",
-              "quote": "内含320个电刺激通道的视网膜视觉脑机接口",
-              "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-              "quote_hash": "c0cbecc0376bc42bf43b7115e1a8e6f7871584a4d0d0890b899da2af9b8e8b3c"
-            }
-          ]
-        },
-        {
-          "label": "V-BCI通道数",
-          "value": "1280通道",
-          "observed_at": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b81ae5593b7ca7f5",
-              "quote": "1280通道的视觉皮层脑机接口产品处于研发阶段",
-              "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-              "quote_hash": "9de7d3a8d571b25e913498444f1ec72581cb577a3a4414c3ae8320d6300b7107"
-            }
-          ]
-        },
-        {
-          "label": "首例受试者开机次日识别字母",
-          "value": "开机第二天识别H、R等复杂字母",
-          "observed_at": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b81ae5593b7ca7f5",
-              "quote": "开机第二天，在没有事先告知字母形状的情况下，她就自主识别出了H、R等复杂字母",
-              "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-              "quote_hash": "ad194732abbb837fb8e7037f10e5cc286146118ca40862598259c1db84220f71"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "杨佳威",
-          "quote": "我进入这个行业20年，一直到今天，才真正迎来脑机接口行业的爆发期。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b81ae5593b7ca7f5",
-              "quote": "我进入这个行业20年，一直到今天，才真正迎来脑机接口行业的爆发期。",
-              "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-              "quote_hash": "af99a6e91577513d6e22390c61bd339dd1cb759725d5f90720bc75055c1cb45f"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [
-          {
-            "institution": "高榕创投",
-            "speaker": "高榕创投",
-            "speaker_role": "本轮领投机构",
-            "rationale": "从全球视力障碍人群的未满足需求出发，认可暖芯迦突破高密度人工视网膜技术壁垒并构建底层核心元器件基础设施。",
-            "quote": "在这个神经科学、芯片制造与生物医学工程的终 极交叉领域，暖芯迦不仅突破了高密度人工视网膜技术壁垒，更构建了扎实的底层核心元器件基础设施。",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "在这个神经科学、芯片制造与生物医学工程的终 极交叉领域，暖芯迦不仅突破了高密度人工视网膜技术壁垒，更构建了扎实的底层核心元器件基础设施。",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "c5422c190f36b005a356e2e5f48dbeae8b5805527c986430ec1324cf651dfaeb"
-              }
-            ]
-          },
-          {
-            "institution": "建发新兴投资",
-            "speaker": "建发新兴投资",
-            "speaker_role": "本轮参投机构",
-            "rationale": "认为脑机接口行业正处在从早期研发验证到展现临床价值的关键节点，视觉重建是临床高度刚需方向。",
-            "quote": "脑机接口行业目前处在从早期研发验证到展现临床价值的关键节点，而视觉重建正是临床高度刚需、患者需求极为迫切的方向之一。",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "脑机接口行业目前处在从早期研发验证到展现临床价值的关键节点，而视觉重建正是临床高度刚需、患者需求极为迫切的方向之一。",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "0e4466977e21ce43f9920f8e62254ea0f4d075f53f647145304789aae2640c16"
-              }
-            ]
-          },
-          {
-            "institution": "东方嘉富",
-            "speaker": "东方嘉富",
-            "speaker_role": "本轮参投机构",
-            "rationale": "认为视觉重建是脑机接口中临床需求最刚性、商业化路径最清晰的方向，暖芯迦全栈自研能力是侵入式脑机接口走向量产的分水岭。",
-            "quote": "暖芯迦是国内极少数把芯片设计、高密度电极、气密性封装到视觉编解码算法全部握在自己手里的企业，“这种全栈自研能力，正是侵入式脑机接口走向量产的分水岭”。",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "暖芯迦是国内极少数把芯片设计、高密度电极、气密性封装到视觉编解码算法全部握在自己手里的企业，“这种全栈自研能力，正是侵入式脑机接口走向量产的分水岭”。",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "a7b426cd2f05cf617a4dade6e7b02a2058080d21072d4ff280ca919389d07b93"
-              }
-            ]
-          }
-        ],
-        "capital_judgment": "资本押注的核心变量是暖芯迦能否把视网膜与视皮层双线视觉重建方案从临床验证推进到规模化商用。当前融资所依赖的已验证信号包括：320通道E-BCI已进入GCP规范化临床试验，三例患者术后实现字母识别、书写、抓取与独立行走，以及公司自2014年起构建的芯片、电极、封装到算法的全栈自研体系。证据边界在于：V-BCI仍处研发阶段、计划临床验证；患者康复速度的“中国速度”表述来自公司及媒体叙述，尚无第三方对照数据；全球竞品PRIMA已在欧洲获批商用、Blindsight已获FDA突破性医疗器械认定，暖芯迦尚未披露注册审批与量产时间表。",
-        "validated_signals": [
-          "320通道视网膜视觉脑机接口E-BCI已正式迈入GCP规范化临床试验阶段",
-          "三例患者完成视觉脑机接口临床试验，首例开机次日识别复杂字母，两个月内实现书写、抓取和定向行走",
-          "公司累计融资规模已达10亿元人民币",
-          "公司已通过国家级专精特新“小巨人”企业认定"
-        ],
-        "risks": [
-          "视皮层路径V-BCI仍处研发阶段，尚未进入临床验证，双线战略的后者存在不确定性",
-          "视觉脑机接口需长期临床与注册审批，商业化时间表未在来源中披露",
-          "全球竞品PRIMA已在欧洲获批商用、Blindsight已获FDA突破性医疗器械认定，暖芯迦面临先发竞争压力",
-          "患者康复速度的领先表述来自公司及媒体叙述，缺乏第三方对照验证"
-        ],
-        "sector": "医疗服务与临床",
-        "investment_thesis": {
-          "statement": "资本押注的核心变量是暖芯迦能否把视网膜与视皮层双线视觉重建方案从临床验证推进到规模化商用。当前融资所依赖的已验证信号包括：320通道E-BCI已进入GCP规范化临床试验，三例患者术后实现字母识别、书写、抓取与独立行走，以及公司自2014年起构建的芯片、电极、封装到算法的全栈自研体系。证据边界在于：V-BCI仍处研发阶段、计划临床验证；患者康复速度的“中国速度”表述来自公司及媒体叙述，尚无第三方对照数据；全球竞品PRIMA已在欧洲获批商用、Blindsight已获FDA突破性医疗器械认定，暖芯迦尚未披露注册审批与量产时间表。",
-          "evidence_signals": [
-            "320通道视网膜视觉脑机接口E-BCI已正式迈入GCP规范化临床试验阶段",
-            "三例患者完成视觉脑机接口临床试验，首例开机次日识别复杂字母，两个月内实现书写、抓取和定向行走",
-            "公司累计融资规模已达10亿元人民币",
-            "公司已通过国家级专精特新“小巨人”企业认定"
-          ],
-          "risks": [
-            "视皮层路径V-BCI仍处研发阶段，尚未进入临床验证，双线战略的后者存在不确定性",
-            "视觉脑机接口需长期临床与注册审批，商业化时间表未在来源中披露",
-            "全球竞品PRIMA已在欧洲获批商用、Blindsight已获FDA突破性医疗器械认定，暖芯迦面临先发竞争压力",
-            "患者康复速度的领先表述来自公司及媒体叙述，缺乏第三方对照验证"
-          ],
-          "institutional_rationale_status": "disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "视网膜路径视觉脑机接口E-BCI",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "视皮层路径视觉脑机接口V-BCI",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "杨佳威",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "高榕创投",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "人保股权",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Monolith砺思资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "建发新兴投资",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "东方嘉富",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "丹合资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "杭州产投集团",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "君联资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "泰越资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "丰年资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Science Corporation",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Neuralink",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [],
-      "research_sources": [
-        {
-          "source_id": "FISRC-b81ae5593b7ca7f5",
-          "source_url": "https://news.pedaily.cn/202611/571250.shtml",
-          "title": "暖芯迦完成5亿元C+轮融资，跑出视觉脑机接口的中国速度",
-          "publisher": "news.pedaily.cn",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-11-04T00:19:53.919Z",
-          "content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-          "source_artifact_id": "SA-d56b458508dcd9ff",
-          "raw_id": "RAW-c7c7894ff738f35c",
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-c6bcb2fa71dc7dad",
-          "source_url": "https://www.pharnexcloud.com/trz/institution_a6cec7b607aa0b07580aa39b68647523",
-          "title": "湖南蒲公英私募主投领域与最新投资情况_摩熵医药",
-          "publisher": "pharnexcloud.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-04T00:51:01.901Z",
-          "content_hash": "fbc9231e4112bfc7",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "historical_round"
-        },
-        {
-          "source_id": "FISRC-127697db1330a6e8",
-          "source_url": "https://crexpo.cn/exhibition/1989",
-          "title": "杭州暖芯迦电子科技有限公司",
-          "publisher": "crexpo.cn",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-04T00:51:09.917Z",
-          "content_hash": "37ab320354536a7f",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        },
-        {
-          "source_id": "FISRC-fa3ed4002909672a",
-          "source_url": "https://www.pharnexcloud.com/trz/trz_65de64576c75f51c615e21f7080e915b",
-          "title": "杭州暖芯迦电子科技有限公司投融资最新情况_摩熵医药",
-          "publisher": "pharnexcloud.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-04T00:51:14.222Z",
-          "content_hash": "10aa432345d8ada3",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "historical_round"
-        },
-        {
-          "source_id": "FISRC-cf3546e1b697b62a",
-          "source_url": "https://pitchhub.36kr.com/project/1818576583083912",
-          "title": "暖芯迦科技 | 项目信息-36氪",
-          "publisher": "pitchhub.36kr.com",
-          "source_class": "secondary",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-04T00:51:26.257Z",
-          "content_hash": "a7e14b56977ed825",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-flash",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-11-04T00:51:40.004Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-11-04T00:51:40.004Z",
-      "customer_research": {
-        "status": "no_verified_customer_found",
-        "verified_customer_count": 0,
-        "searched_source_count": 5
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 2,
-          "unresolved_names": [
-            "视皮层路径视觉脑机接口V-BCI",
-            "视网膜路径视觉脑机接口E-BCI"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "杨佳威"
-          ]
-        }
-      },
-      "source_event_ids": [
-        "EV-1d794039f9374217"
-      ],
-      "aggregation": {
-        "key": "EN-9ca120a340344bca|series_c_plus|CNY:exact:500000000:::|2026-11-03",
-        "event_count": 1,
-        "strategy": "reviewed_funding_subject",
-        "subject_id": "EN-9ca120a340344bca",
-        "source_card_count": 1
-      },
-      "historical_rounds": [
-        {
-          "funding_insight_id": "FI-4c54e5a0c06950fc",
-          "event_ids": [
-            "EV-1d794039f9374217"
-          ],
-          "round": "C+轮",
-          "round_code": "series_c_plus",
-          "round_original": "C+轮",
-          "amount_original": "5亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 500000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "5 亿元"
-          },
-          "announced_at": "2026-11-03",
-          "disclosure_status": "disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": true,
-          "investors": [
-            {
-              "name": "高榕创投",
-              "role": "本轮领投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-b81ae5593b7ca7f5",
-                  "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                  "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                  "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-5e189044745410"
-            },
-            {
-              "name": "人保股权",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-b81ae5593b7ca7f5",
-                  "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                  "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                  "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-4ea061135d5085"
-            },
-            {
-              "name": "Monolith砺思资本",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-b81ae5593b7ca7f5",
-                  "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                  "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                  "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-63cf35584db1b1"
-            },
-            {
-              "name": "建发新兴投资",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-b81ae5593b7ca7f5",
-                  "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                  "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                  "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-76fb8532c37f57"
-            },
-            {
-              "name": "东方嘉富",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-b81ae5593b7ca7f5",
-                  "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                  "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                  "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-9d1d8e447b1e09"
-            },
-            {
-              "name": "丹合资本",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-b81ae5593b7ca7f5",
-                  "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                  "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                  "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-79f5b554fd3261"
-            },
-            {
-              "name": "杭州产投集团",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-b81ae5593b7ca7f5",
-                  "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                  "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                  "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-6df1342f160cca"
-            }
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b81ae5593b7ca7f5",
-              "quote": "投资界AI获悉，杭州暖芯迦电子科技有限公司（简称：暖芯迦）宣布完成5亿元C+轮融资，资方阵容豪华——",
-              "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-              "quote_hash": "de91058e6a780f9c7c35dd4c0721ebd3965c53287477a13b9548813bd562f73d"
-            },
-            {
-              "source_id": "FISRC-b81ae5593b7ca7f5",
-              "quote": "宣布完成5亿元C+轮融资",
-              "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-              "quote_hash": "60bf05888d6d4d90bfcad4d4a51dfa23290b846ca6f7b066c12e158870f11171"
-            },
-            {
-              "source_id": "FISRC-b81ae5593b7ca7f5",
-              "quote": "至此公司累计融资规模已达10亿元人民币",
-              "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-              "quote_hash": "31f71c79bb1e58d2d0611ff981eaabfd05b74ac52781d690d1eec782bba7eb8f"
-            }
-          ]
-        }
-      ],
-      "market_scope": {
-        "market_region": "CN",
-        "china_market_match": true,
-        "china_market_basis": [
-          "actor_origin",
-          "funding_company_evidence:china_legal_entity:杭州暖芯迦电子科技有限公司"
-        ],
-        "source_registry_ids": []
-      },
-      "product_form": {
-        "id": "chip-system",
-        "name": "芯片与计算系统",
-        "dimension": "financing_product_form"
-      },
-      "market_category": {
-        "id": "industry",
-        "name": "行业 AI",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "healthcare",
-        "name": "医疗服务与临床",
-        "dimension": "financing_subsector"
-      },
-      "market_application": null,
-      "links": {
-        "company": "",
-        "relation_map": "",
-        "funding_event": "data-center.html?view=events&detail=event&id=EV-1d794039f9374217"
-      },
-      "translations": {
-        "zh-CN": {
-          "metrics[3].label": {
-            "text": "V-BCI通道数",
-            "source_hash": "0b8ab1c33569f9c0854124259034d2f859b71b7e3508ebd70ad4d17f9478aa81",
-            "provider": "deepseek",
-            "model": "deepseek-flash",
-            "translated_at": "2026-11-04T00:53:48.846Z",
-            "status": "translated"
-          }
-        }
-      },
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "industry",
-          "name": "行业 AI"
-        },
-        "subsector": {
-          "id": "healthcare",
-          "name": "医疗服务与临床"
-        },
-        "product_form": {
-          "id": "chip-system",
-          "name": "芯片与计算系统"
-        },
-        "customers": [
-          {
-            "id": "business",
-            "name": "企业"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-127697db1330a6e8",
-            "quote": "暖芯迦成立于2014年，是一家专注于脑机接口以及神经生物芯片研发、生产与销售的科技企业"
-          },
-          {
-            "source_id": "FISRC-b81ae5593b7ca7f5",
-            "quote": "暖芯迦320通道视网膜视觉脑机接口E-BCI已正式迈入GCP规范化临床试验阶段"
-          },
-          {
-            "source_id": "FISRC-127697db1330a6e8",
-            "quote": "暖芯迦高分辨率视网膜路径视觉脑机接口E‑BCI"
-          }
-        ],
-        "rationale": "公司专注脑机接口与神经生物芯片研发生产，视觉脑机接口进入临床试验，属医疗服务与临床。"
-      },
-      "source_card_ids": [
-        "FI-4c54e5a0c06950fc"
+        "FI-4ccef36f3ec7e4e8"
       ]
     },
     {
@@ -6595,1018 +5545,6 @@
       },
       "source_card_ids": [
         "FI-559004bb65e9c904"
-      ]
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-7de55f8a8e9ca8df",
-      "triggered_by_event_id": "EV-81eaad496911181e",
-      "as_of_date": "2026-11-04",
-      "company": {
-        "entity_id": "EN-c32662785b597e46",
-        "name": "Trajectory",
-        "full_name": "Trajectory",
-        "website": "https://trajectory.ai",
-        "summary": "Trajectory是一家总部位于旧金山的AI基础设施公司，提供持续学习与后训练平台，让企业把应用中的真实反馈接入开源模型并持续重训，使模型在专业任务上不断改进。",
-        "headquarters": "旧金山，加利福尼亚州",
-        "founders": [
-          {
-            "name": "Ronak Malde",
-            "role": "联合创始人、首席执行官",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c8564f3a68709075",
-                "quote": "Trajectory co-founder Ronak Malde compared foundational models",
-                "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                "quote_hash": "4251c4a64b098991104adfdbe9c735c4670a9cce7a76d5aa7424a6e87c727ac3"
-              },
-              {
-                "source_id": "FISRC-2408e75c2a9f9974",
-                "quote": "Led by chief executive Ronak Malde",
-                "source_content_hash": "2394fb4c337a4066",
-                "quote_hash": "28f67a98b374d01aa95bd9c31bd4942b858dea3eaf2b6735258e1125c5c66f6b"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Michael Elabd",
-            "role": "联合创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c8564f3a68709075",
-                "quote": "But co-founder Michael Elabd argues that keeping humans involved in the training process makes Trajectory’s approach safer",
-                "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                "quote_hash": "36793c13a5e07b050b48c43fb7eaa63ad73f323e25a9d33f8a77db6e12523356"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Arjun Karanam",
-            "role": "联合创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c8564f3a68709075",
-                "quote": "Trajectory’s third co-founder, Arjun Karanam, previously worked on generative foundation models at Apple",
-                "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                "quote_hash": "1dbe20f7000d1b504b2659992801e748c15bbbf6de0c0702e55950cb90a65a79"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "team_size": {
-          "value": "18",
-          "observed_at": "2026-11-02",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "The 18-person company just announced that it raised $45 million in a Series A round",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "f1c5e9fa2e1bd5556a16c8a99ca93fd43462a8f36ddc9981aea4c2a4cf3c2cf2"
-            }
-          ]
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-c8564f3a68709075",
-            "quote": "Trajectory, a startup founded about a year ago by three Stanford classmates with experience at Google DeepMind and Apple",
-            "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-            "quote_hash": "3e60419556f3f1afc7eb674986ccc77d23779ad2168d4991508eb153159ad06d"
-          },
-          {
-            "source_id": "FISRC-d1196b2001cd9da4",
-            "quote": "Trajectory, a San Francisco, CA-based company developing artificial intelligence technology",
-            "source_content_hash": "ed10dfbf54561a9a",
-            "quote_hash": "3b272edefc7d0be8609028986922c036d2d361a727f7d43ed2dff2007b350dbd"
-          }
-        ],
-        "application_entity_id": "EN-c32662785b597e46",
-        "canonical_entity_consistent": false
-      },
-      "financing": {
-        "round": "A轮",
-        "amount": "$45 million",
-        "total_raised": "",
-        "announced_at": "2026-11-02",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "Sequoia",
-            "role": "本轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c8564f3a68709075",
-                "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-                "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-862e0e7d2ba5cf"
-          },
-          {
-            "name": "Nvidia",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c8564f3a68709075",
-                "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-                "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
-              }
-            ],
-            "entity_id": "EN-8d4321d936320802",
-            "institution_id": "INV-c73d9854fb920b"
-          },
-          {
-            "name": "Bessemer Venture Partners",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c8564f3a68709075",
-                "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-                "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-ed42220b00c38b"
-          },
-          {
-            "name": "Bain Capital Ventures",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c8564f3a68709075",
-                "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-                "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-96de64c25b8e4a"
-          }
-        ],
-        "other_round_investors": [
-          {
-            "name": "Conviction",
-            "role": "种子轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2408e75c2a9f9974",
-                "quote": "The round was led by Conviction, with participation from Bessemer Venture Partners, Radical VC, BoxGroup, and angel investors Jeff Dean and Fei-Fei Li",
-                "source_content_hash": "2394fb4c337a4066",
-                "quote_hash": "864efa49ba6b5ed90f06e25fa2f817e305b9adf7283f5da8cc08c6af9fbb529f"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-816cc0bec9ef97"
-          },
-          {
-            "name": "Radical VC",
-            "role": "种子轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2408e75c2a9f9974",
-                "quote": "The round was led by Conviction, with participation from Bessemer Venture Partners, Radical VC, BoxGroup, and angel investors Jeff Dean and Fei-Fei Li",
-                "source_content_hash": "2394fb4c337a4066",
-                "quote_hash": "864efa49ba6b5ed90f06e25fa2f817e305b9adf7283f5da8cc08c6af9fbb529f"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-93a429d8f4e95d"
-          },
-          {
-            "name": "BoxGroup",
-            "role": "种子轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2408e75c2a9f9974",
-                "quote": "The round was led by Conviction, with participation from Bessemer Venture Partners, Radical VC, BoxGroup, and angel investors Jeff Dean and Fei-Fei Li",
-                "source_content_hash": "2394fb4c337a4066",
-                "quote_hash": "864efa49ba6b5ed90f06e25fa2f817e305b9adf7283f5da8cc08c6af9fbb529f"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-bcb98dcb1568ed"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-c8564f3a68709075",
-            "quote": "The 18-person company just announced that it raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures.",
-            "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-            "quote_hash": "16adc121e7ad1487219df00c9a7b231b912b00f770519fdde5991ea14b61a1e8"
-          },
-          {
-            "source_id": "FISRC-c8564f3a68709075",
-            "quote": "The 18-person company just announced that it raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-            "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-            "quote_hash": "8ce1d511eb251088c0f0559364fcc47cf7b8147a36c1b5da4739af41731e17a3"
-          },
-          {
-            "source_id": "FISRC-74af0f57da41a87e",
-            "quote": "Raised $45M Series A on August 10, 2026",
-            "source_content_hash": "b439ce0e62da4c73",
-            "quote_hash": "59e71a2bec8ea30bcd8f26646e1229c8ea3c3fa24588e5e64676337f968b5ff9"
-          }
-        ],
-        "round_code": "series_a",
-        "round_original": "A轮",
-        "amount_original": "$45 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 45000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "4500 万美元"
-        },
-        "total_raised_original": "",
-        "total_raised_normalized": {
-          "currency": "",
-          "value": null,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "undisclosed",
-          "display_zh": ""
-        },
-        "risk_markers": [],
-        "disclosures": [
-          {
-            "event_id": "EV-81eaad496911181e",
-            "round_original": "A轮",
-            "amount": "$45 million",
-            "announced_at": "2026-11-02",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c8564f3a68709075",
-                "quote": "The 18-person company just announced that it raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures.",
-                "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                "quote_hash": "16adc121e7ad1487219df00c9a7b231b912b00f770519fdde5991ea14b61a1e8"
-              },
-              {
-                "source_id": "FISRC-c8564f3a68709075",
-                "quote": "The 18-person company just announced that it raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-                "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                "quote_hash": "8ce1d511eb251088c0f0559364fcc47cf7b8147a36c1b5da4739af41731e17a3"
-              },
-              {
-                "source_id": "FISRC-74af0f57da41a87e",
-                "quote": "Raised $45M Series A on August 10, 2026",
-                "source_content_hash": "b439ce0e62da4c73",
-                "quote_hash": "59e71a2bec8ea30bcd8f26646e1229c8ea3c3fa24588e5e64676337f968b5ff9"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "disclosed",
-        "cumulative_amount": {
-          "original": "",
-          "normalized": {
-            "currency": "",
-            "value": null,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "undisclosed",
-            "display_zh": ""
-          },
-          "basis": "known_rounds_only",
-          "known_round_totals": [
-            {
-              "currency": "USD",
-              "value": 45000000,
-              "min_value": null,
-              "max_value": null,
-              "unit": "base",
-              "round_count": 1,
-              "status": "exact",
-              "display_zh": "4500 万美元"
-            }
-          ],
-          "historical_round_count": 1
-        },
-        "current_source_ids": [
-          "FISRC-c8564f3a68709075",
-          "FISRC-74af0f57da41a87e"
-        ]
-      },
-      "products": [
-        {
-          "name": "Trajectory后训练平台",
-          "description": "企业可从开源模型起步，把平台接入自身应用以收集模型表现反馈，Trajectory据此重训模型，使其在专业任务上随时间改进。",
-          "target_customers": "需要把通用模型适配到法律、金融等专业领域的AI原生公司及行业专家团队",
-          "features": [
-            "接入应用收集真实使用反馈",
-            "基于反馈持续重训开源模型",
-            "面向非技术专家的后训练界面"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "Businesses using Trajectory can start with an open source AI model and connect the platform to their applications, allowing it to collect feedback on how the model performs. Trajectory then uses that information to retrain the model, helping it improve at specialized tasks over time.",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "8defdeec6b75fb97b6e8780590658ce36e106d95773a3d0d4a42f085c7c20918"
-            },
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "Karanam says the startup has developed an interface that makes post-training more accessible to its nontechnical customers.",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "705fe34dd7386bb90078659aa9ef728c13a5f53c0a607e41d6e6aeb1faefa6f2"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [
-        {
-          "name": "Harvey",
-          "industry": "法律服务",
-          "use_case": "对开源模型进行后训练，使其在审阅特定类型法律合同等任务上表现更接近资深律师",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "Companies like Harvey and Rogo are already using Trajectory’s platform to post-train open source models, helping them perform more like experienced lawyers or financial analysts by learning from previous tasks, such as reviewing a particular type of legal contract or valuing a company using a specific methodology.",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "82a49b5e721a13b1c9742df150654a9e64b59cc52a063a85e9e86ee11f357608"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Rogo",
-          "industry": "金融服务",
-          "use_case": "对开源模型进行后训练，使其按特定方法完成公司估值等金融分析任务",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "Companies like Harvey and Rogo are already using Trajectory’s platform to post-train open source models, helping them perform more like experienced lawyers or financial analysts by learning from previous tasks, such as reviewing a particular type of legal contract or valuing a company using a specific methodology.",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "82a49b5e721a13b1c9742df150654a9e64b59cc52a063a85e9e86ee11f357608"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Decagon",
-          "industry": "",
-          "use_case": "使用Trajectory平台进行模型后训练",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "Trajectory’s other customers include Decagon, Mercor, and Nvidia.",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "359b077e5b8195c73f639b05a1829dd346e63841f717c6d7d91b74da4276cad9"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Mercor",
-          "industry": "",
-          "use_case": "使用Trajectory平台进行模型后训练",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "Trajectory’s other customers include Decagon, Mercor, and Nvidia.",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "359b077e5b8195c73f639b05a1829dd346e63841f717c6d7d91b74da4276cad9"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Nvidia",
-          "industry": "",
-          "use_case": "使用Trajectory平台进行模型后训练",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "Trajectory’s other customers include Decagon, Mercor, and Nvidia.",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "359b077e5b8195c73f639b05a1829dd346e63841f717c6d7d91b74da4276cad9"
-            }
-          ],
-          "entity_id": "EN-8d4321d936320802"
-        }
-      ],
-      "comparisons": [
-        {
-          "name": "Thinking Machines Lab",
-          "product": "后训练自动化",
-          "scenario": "自动化模型后训练",
-          "target_customer": "",
-          "funding_summary": "",
-          "core_difference": "来源仅将Thinking Machines Lab列为进入后训练自动化市场的其他公司，未披露其产品细节、客户或融资信息，无法逐项比较。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "Other companies going after this market include Thinking Machines Lab, founded by former OpenAI CTO Mira Murati and the company behind the fine-tuning platform Tinker",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "afefdc5f65e786c1af9a6231fce1321889403dc1c0313fc2954b410f6c013d6e"
-            }
-          ],
-          "entity_id": "EN-8f71c4871a160172"
-        },
-        {
-          "name": "Applied Compute",
-          "product": "Tinker微调平台",
-          "scenario": "模型微调",
-          "target_customer": "",
-          "funding_summary": "上月估值32.5亿美元",
-          "core_difference": "来源称Applied Compute是Tinker微调平台背后的公司且上月估值32.5亿美元；Trajectory本轮融资4500万美元、估值3亿美元，产品为持续学习后训练平台。两者产品细节与客户未在来源中展开。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "Applied Compute, which was valued at $3.25 billion last month",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "fdb722feabac8401db069bfac865bb4cf4a498187f664dbe8639112b69a0eaca"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Prime Intellect",
-          "product": "帮助企业构建和训练自有AI智能体的平台",
-          "scenario": "构建和训练自有AI智能体",
-          "target_customer": "希望自建并训练AI智能体的企业",
-          "funding_summary": "",
-          "core_difference": "来源称Prime Intellect是帮助企业构建和训练自有AI智能体的平台；Trajectory侧重接入应用反馈并持续重训开源模型。来源未披露Prime Intellect的融资与客户细节。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "Prime Intellect, a platform that helps companies build and train their own AI agents",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "8ec5a59b8b2e6652bf0f2e371bef1658b0f4ab3affd0c80ea688e31e01bd8aa4"
-            }
-          ],
-          "entity_id": "EN-fa373257792c6b9b"
-        }
-      ],
-      "metrics": [
-        {
-          "label": "本轮融资金额",
-          "value": "$45 million",
-          "observed_at": "2026-11-02",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "raised $45 million in a Series A round",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "9cefc8622277a75b8d7bb4fa5a806e30378afa004620e549fa8869314bea0bf8"
-            }
-          ]
-        },
-        {
-          "label": "本轮估值",
-          "value": "$300 million",
-          "observed_at": "2026-11-02",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "at a $300 million valuation",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "65062288192392e9807558d84d343595e5272b1c2c51141db0dd169a6c22be1f"
-            }
-          ]
-        },
-        {
-          "label": "公司人数",
-          "value": "18",
-          "observed_at": "2026-11-02",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "The 18-person company",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "9c7415b324b2d4834a9f65788607ec3cb01e315846a269af43260e5986c790f9"
-            }
-          ]
-        },
-        {
-          "label": "种子轮融资金额",
-          "value": "$15 million",
-          "observed_at": "2026-05-29",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d1196b2001cd9da4",
-              "quote": "has raised $15M in a seed funding round",
-              "source_content_hash": "ed10dfbf54561a9a",
-              "quote_hash": "645c243ecb02058e3d6661cbe3d6e4b82f751bb75a132ebfeb0b7e40836b066d"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "Ronak Malde",
-          "quote": "But what the economy values is someone who worked on the job for 30 years",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "But what the economy values is someone who worked on the job for 30 years",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "6294c6e686a7e60d2727b2ac78f794931f429797d22aca794fd250974ca96452"
-            }
-          ]
-        },
-        {
-          "speaker": "Ronak Malde",
-          "quote": "what good looks like for their organization and can turn that into improvements for their model",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "what good looks like for their organization and can turn that into improvements for their model",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "c58f8c640a2935368886ba7209c9547f68f535224a79e9c88ad5f46044225c21"
-            }
-          ]
-        },
-        {
-          "speaker": "Michael Elabd",
-          "quote": "keeping humans involved in the training process makes Trajectory’s approach safer",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "keeping humans involved in the training process makes Trajectory’s approach safer",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "4fd2f87e0b88861746d884b05f8407907c6c2731c902854b4faa55c8a9cb94ee"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [],
-        "capital_judgment": "本轮资本押注的核心变量是：能否把企业应用中的真实使用反馈自动转化为开源模型的持续后训练，从而以更低成本、更低技术门槛让模型在专业任务上接近资深从业者。已验证信号包括：本轮4500万美元A轮、3亿美元估值、红杉领投且英伟达等参投；Harvey、Rogo、Decagon、Mercor、Nvidia等客户已在用其平台做后训练；公司已把后训练平台公开开放。证据边界在于：来源未披露收入、合同金额、留存或效果量化指标，客户使用规模与付费情况不明，持续学习相对竞品的实际效果优势尚无第三方验证。",
-        "validated_signals": [
-          "完成4500万美元A轮融资，估值3亿美元",
-          "Harvey与Rogo已使用其平台对开源模型做后训练",
-          "客户还包括Decagon、Mercor和Nvidia",
-          "后训练平台已公开开放",
-          "公司规模18人"
-        ],
-        "risks": [
-          "来源未披露收入、合同金额或客户付费规模，商业化程度无法验证",
-          "持续学习效果缺少量化基准，与Thinking Machines Lab、Applied Compute、Prime Intellect等竞品的相对优势未经验证",
-          "面向非技术专家的界面能否真正降低后训练门槛，来源仅有公司方陈述",
-          "本轮估值3亿美元对应18人团队与早期客户，后续增长依赖客户留存与效果兑现"
-        ],
-        "sector": "训练、微调与部署",
-        "investment_thesis": {
-          "statement": "本轮资本押注的核心变量是：能否把企业应用中的真实使用反馈自动转化为开源模型的持续后训练，从而以更低成本、更低技术门槛让模型在专业任务上接近资深从业者。已验证信号包括：本轮4500万美元A轮、3亿美元估值、红杉领投且英伟达等参投；Harvey、Rogo、Decagon、Mercor、Nvidia等客户已在用其平台做后训练；公司已把后训练平台公开开放。证据边界在于：来源未披露收入、合同金额、留存或效果量化指标，客户使用规模与付费情况不明，持续学习相对竞品的实际效果优势尚无第三方验证。",
-          "evidence_signals": [
-            "完成4500万美元A轮融资，估值3亿美元",
-            "Harvey与Rogo已使用其平台对开源模型做后训练",
-            "客户还包括Decagon、Mercor和Nvidia",
-            "后训练平台已公开开放",
-            "公司规模18人"
-          ],
-          "risks": [
-            "来源未披露收入、合同金额或客户付费规模，商业化程度无法验证",
-            "持续学习效果缺少量化基准，与Thinking Machines Lab、Applied Compute、Prime Intellect等竞品的相对优势未经验证",
-            "面向非技术专家的界面能否真正降低后训练门槛，来源仅有公司方陈述",
-            "本轮估值3亿美元对应18人团队与早期客户，后续增长依赖客户留存与效果兑现"
-          ],
-          "institutional_rationale_status": "not_disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Trajectory后训练平台",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Ronak Malde",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Michael Elabd",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Arjun Karanam",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Sequoia",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Nvidia",
-          "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA"
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Bessemer Venture Partners",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Bain Capital Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "Conviction",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "Radical VC",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "BoxGroup",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "Harvey",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "Rogo",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "Decagon",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "Mercor",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "Nvidia",
-          "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA"
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Thinking Machines Lab",
-          "canonical_entity_id": "EN-8f71c4871a160172",
-          "canonical_name": "Thinking Machines Lab"
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Applied Compute",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Prime Intellect",
-          "canonical_entity_id": "EN-fa373257792c6b9b",
-          "canonical_name": "Prime Intellect"
-        }
-      ],
-      "funding_history": [],
-      "research_sources": [
-        {
-          "source_id": "FISRC-c8564f3a68709075",
-          "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
-          "title": "Trajectory 融资 4500 万美元，让非技术专家也能参与 AI 模型训练",
-          "publisher": "techcrunch.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-11-04T00:18:09.933Z",
-          "content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-          "source_artifact_id": "SA-1a98e1e8a0253b3f",
-          "raw_id": "RAW-95ba6a3f813db09a",
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-d1196b2001cd9da4",
-          "source_url": "https://www.thesaasnews.com/news/trajectory-raises-15m-seed/",
-          "title": "Trajectory Raises $15M Seed",
-          "publisher": "thesaasnews.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-04T00:50:27.542Z",
-          "content_hash": "ed10dfbf54561a9a",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        },
-        {
-          "source_id": "FISRC-2408e75c2a9f9974",
-          "source_url": "https://fundraiseinsider.com/blog/trajectory-raises-15m-seed-to-build-continual-learning-platform/",
-          "title": "Trajectory Raises $15M Seed to Build Continual Learning Platform - Fundraise Insider",
-          "publisher": "fundraiseinsider.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-04T00:50:28.356Z",
-          "content_hash": "2394fb4c337a4066",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "historical_round"
-        },
-        {
-          "source_id": "FISRC-74af0f57da41a87e",
-          "source_url": "https://startups.gallery/companies/trajectory-ai",
-          "title": "Trajectory: Funding, Investors & Jobs | startups.gallery",
-          "publisher": "startups.gallery",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-04T00:50:30.341Z",
-          "content_hash": "b439ce0e62da4c73",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "current_round"
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-flash",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-11-04T00:50:56.097Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-11-04T00:50:56.097Z",
-      "customer_research": {
-        "status": "verified_customers_found",
-        "verified_customer_count": 5,
-        "searched_source_count": 4
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "Trajectory后训练平台"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 3,
-          "unresolved_names": [
-            "Arjun Karanam",
-            "Michael Elabd",
-            "Ronak Malde"
-          ]
-        }
-      },
-      "source_event_ids": [
-        "EV-81eaad496911181e"
-      ],
-      "aggregation": {
-        "key": "EN-c32662785b597e46|series_a|USD:exact:45000000:::|2026-11-02",
-        "event_count": 1,
-        "strategy": "reviewed_funding_subject",
-        "subject_id": "EN-c32662785b597e46",
-        "source_card_count": 1
-      },
-      "historical_rounds": [
-        {
-          "funding_insight_id": "FI-7de55f8a8e9ca8df",
-          "event_ids": [
-            "EV-81eaad496911181e"
-          ],
-          "round": "A轮",
-          "round_code": "series_a",
-          "round_original": "A轮",
-          "amount_original": "$45 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 45000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "4500 万美元"
-          },
-          "announced_at": "2026-11-02",
-          "disclosure_status": "disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": true,
-          "investors": [
-            {
-              "name": "Sequoia",
-              "role": "本轮领投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-c8564f3a68709075",
-                  "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-                  "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                  "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-862e0e7d2ba5cf"
-            },
-            {
-              "name": "Nvidia",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-c8564f3a68709075",
-                  "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-                  "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                  "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
-                }
-              ],
-              "entity_id": "EN-8d4321d936320802",
-              "institution_id": "INV-c73d9854fb920b"
-            },
-            {
-              "name": "Bessemer Venture Partners",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-c8564f3a68709075",
-                  "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-                  "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                  "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-ed42220b00c38b"
-            },
-            {
-              "name": "Bain Capital Ventures",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-c8564f3a68709075",
-                  "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-                  "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                  "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-96de64c25b8e4a"
-            }
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "The 18-person company just announced that it raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures.",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "16adc121e7ad1487219df00c9a7b231b912b00f770519fdde5991ea14b61a1e8"
-            },
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote": "The 18-person company just announced that it raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-              "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-              "quote_hash": "8ce1d511eb251088c0f0559364fcc47cf7b8147a36c1b5da4739af41731e17a3"
-            },
-            {
-              "source_id": "FISRC-74af0f57da41a87e",
-              "quote": "Raised $45M Series A on August 10, 2026",
-              "source_content_hash": "b439ce0e62da4c73",
-              "quote_hash": "59e71a2bec8ea30bcd8f26646e1229c8ea3c3fa24588e5e64676337f968b5ff9"
-            }
-          ]
-        }
-      ],
-      "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
-        "source_registry_ids": []
-      },
-      "product_form": {
-        "id": "developer-platform",
-        "name": "开发与数据平台",
-        "dimension": "financing_product_form"
-      },
-      "market_category": {
-        "id": "developer-data",
-        "name": "AI 开发与数据",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "model-platforms",
-        "name": "训练、微调与部署",
-        "dimension": "financing_subsector"
-      },
-      "market_application": null,
-      "links": {
-        "company": "",
-        "relation_map": "",
-        "funding_event": "data-center.html?view=events&detail=event&id=EV-81eaad496911181e"
-      },
-      "translations": {
-        "zh-CN": {
-          "company.headquarters": {
-            "text": "旧金山，加利福尼亚州",
-            "source_hash": "5417a55717d2497cf83c3d42b6ff8d21c7efc15dac514052d030e1742d8d7b8b",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-08-14T07:14:34.478Z",
-            "status": "translated"
-          },
-          "customers[0].industry": {
-            "text": "法律服务",
-            "source_hash": "e8cd312367e7a00141b4c5c8d3d96409dae7cfc32da6eb5743d687d693fd1124",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-10-02T00:56:00.976Z",
-            "status": "translated"
-          },
-          "customers[1].industry": {
-            "text": "金融服务",
-            "source_hash": "b74a19b33adabf11dd77a40d61bf8217e9a10911177dbda00bd25b5be47a08da",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-08-14T07:17:18.959Z",
-            "status": "translated"
-          }
-        }
-      },
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "developer-data",
-          "name": "AI 开发与数据"
-        },
-        "subsector": {
-          "id": "model-platforms",
-          "name": "训练、微调与部署"
-        },
-        "product_form": {
-          "id": "developer-platform",
-          "name": "开发与数据平台"
-        },
-        "customers": [
-          {
-            "id": "business",
-            "name": "企业"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-c8564f3a68709075",
-            "quote": "Businesses using Trajectory can start with an open source AI model and connect the platform to their applications, allowing it to collect feedback on how the model performs. Trajectory then uses that information to retrain the model, helping it improve at specialized tasks over time."
-          },
-          {
-            "source_id": "FISRC-c8564f3a68709075",
-            "quote": "Karanam says the startup has developed an interface that makes post-training more accessible to its nontechnical customers."
-          }
-        ],
-        "rationale": "Trajectory 提供面向企业的模型后训练与再训练平台，属于训练微调部署开发平台。"
-      },
-      "source_card_ids": [
-        "FI-7de55f8a8e9ca8df"
       ]
     },
     {
@@ -644724,17 +642662,18 @@
   ],
   "event_cards": [
     {
-      "funding_insight_id": "FI-e9ad9d422b27e748",
-      "triggered_by_event_id": "EV-cbdfbfdc8bd9552c",
+      "funding_insight_id": "FI-7138d99fd221db57",
+      "triggered_by_event_id": "EV-98a40e2dde1ffec0",
       "source_event_ids": [
-        "EV-cbdfbfdc8bd9552c"
+        "EV-98a40e2dde1ffec0"
       ],
-      "subject_card_id": "FI-e9ad9d422b27e748",
+      "subject_card_id": "FI-7138d99fd221db57",
       "as_of_date": "2026-11-04",
       "market_scope": {
         "market_region": "CN",
         "china_market_match": true,
         "china_market_basis": [
+          "actor_origin",
           "funding_company_evidence:china_legal_entity:希格生科（深圳）有限公司"
         ],
         "source_registry_ids": []
@@ -644764,9 +642703,9 @@
         ]
       },
       "financing": {
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "A轮",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
         "amount": "数亿元",
         "amount_original": "数亿元",
         "amount_normalized": {
@@ -644798,12 +642737,6 @@
           }
         ],
         "evidence_refs": [
-          {
-            "source_id": "FISRC-df8adbeca805f25b",
-            "quote": "· 希格生科完成国寿股权领投的数亿元A 轮融资首关，依托“AI 类器官”创新研发模式，拥有5条First-in-class管线，核心管线SIGX1094为全球首款该技术推进至临床的弥漫性胃癌靶向药，类器官平台参与行业标准制定，心脏类器官毒性预测准确率达82%。",
-            "source_content_hash": "310458a4d6a0d2206b893673472c4f9b6219afdd3bfb1d33de04302e20229590",
-            "quote_hash": "4e621e3f77446ee937e605f654c024a2f7970255c5bc1485efa29c92193eef3d"
-          },
           {
             "source_id": "FISRC-df8adbeca805f25b",
             "quote": "希格生科宣布完成由国寿股权投资有限公司（以下简称“国寿股权”）领投的数亿元A+轮融资首关",
@@ -644874,16 +642807,8 @@
           "id": "life-sciences",
           "name": "药物研发与生命科学"
         },
-        "product_form": {
-          "id": "ai-service",
-          "name": "AI 专业服务"
-        },
-        "customers": [
-          {
-            "id": "business",
-            "name": "企业"
-          }
-        ],
+        "product_form": null,
+        "customers": [],
         "evidence_refs": [
           {
             "source_id": "FISRC-77ebd2c64e51695d",
@@ -644898,7 +642823,7 @@
             "quote": "核心管线SIGX1094 是全球首 款基于“类器官+AI”技术推进至临床阶段的弥漫性胃癌靶向药，也是全球首 个进入临床阶段的FAK/SRC双靶点抑制剂"
           }
         ],
-        "rationale": "公司以类器官+AI平台推进靶向药研发并拥有临床管线，属药物研发与生命科学行业AI。"
+        "rationale": "希格生科以“类器官+AI”平台开展靶向药物研发并推进临床管线，主营属于药物研发与生命科学行业AI。"
       },
       "market_category": {
         "id": "industry",
@@ -644910,11 +642835,7 @@
         "name": "药物研发与生命科学",
         "dimension": "financing_subsector"
       },
-      "product_form": {
-        "id": "ai-service",
-        "name": "AI 专业服务",
-        "dimension": "financing_product_form"
-      },
+      "product_form": null,
       "products": [
         {
           "name": "“类器官+AI”药物研发平台"
@@ -644928,12 +642849,12 @@
       ]
     },
     {
-      "funding_insight_id": "FI-3b4b50b8aaa7d768",
+      "funding_insight_id": "FI-4ccef36f3ec7e4e8",
       "triggered_by_event_id": "EV-0a0d2b11832f0be5",
       "source_event_ids": [
         "EV-0a0d2b11832f0be5"
       ],
-      "subject_card_id": "FI-3b4b50b8aaa7d768",
+      "subject_card_id": "FI-4ccef36f3ec7e4e8",
       "as_of_date": "2026-11-04",
       "market_scope": {
         "market_region": "GLOBAL",
@@ -644979,9 +642900,9 @@
         ]
       },
       "financing": {
-        "round": "E轮",
-        "round_code": "series_e",
-        "round_original": "Series E and F",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "F轮",
         "amount": "$1.3 billion",
         "amount_original": "$1.3 billion",
         "amount_normalized": {
@@ -645178,324 +643099,6 @@
       "products": [
         {
           "name": "Fal 生成式媒体推理平台"
-        }
-      ]
-    },
-    {
-      "funding_insight_id": "FI-4c54e5a0c06950fc",
-      "triggered_by_event_id": "EV-1d794039f9374217",
-      "source_event_ids": [
-        "EV-1d794039f9374217"
-      ],
-      "subject_card_id": "FI-4c54e5a0c06950fc",
-      "as_of_date": "2026-11-04",
-      "market_scope": {
-        "market_region": "CN",
-        "china_market_match": true,
-        "china_market_basis": [
-          "actor_origin",
-          "funding_company_evidence:china_legal_entity:杭州暖芯迦电子科技有限公司"
-        ],
-        "source_registry_ids": []
-      },
-      "company": {
-        "entity_id": "EN-9ca120a340344bca",
-        "application_entity_id": "EN-9ca120a340344bca",
-        "name": "暖芯迦",
-        "full_name": "杭州暖芯迦电子科技有限公司",
-        "summary": "暖芯迦成立于2014年，专注于脑机接口以及神经生物芯片研发、生产与销售，是国内最早从事视觉脑机接口技术开发的公司之一，布局视网膜路径E-BCI与视皮层路径V-BCI两条视觉重建产品线。",
-        "website": "www.nanochap.cn",
-        "headquarters": "浙江省杭州市余杭区五常街道联创街188号4幢6楼",
-        "founders": [
-          {
-            "name": "杨佳威",
-            "role": "创始人兼CEO",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "暖芯迦创始人兼CEO杨佳威博士",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "977f1cdcbb235d7103397a90327598100ac6aa2b947105cf907dbc03ec9e6299"
-              },
-              {
-                "source_id": "FISRC-cf3546e1b697b62a",
-                "quote": "公司创始人杨佳威为国家千人计划专家",
-                "source_content_hash": "a7e14b56977ed825",
-                "quote_hash": "dfc0a0c2ccd322ecbe793080e2f711422c7eafc1a65d82dd6e3877a9c8dbded8"
-              }
-            ],
-            "entity_id": null
-          }
-        ]
-      },
-      "financing": {
-        "round": "C+轮",
-        "round_code": "series_c_plus",
-        "round_original": "C+轮",
-        "amount": "5亿元",
-        "amount_original": "5亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 500000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "5 亿元"
-        },
-        "announced_at": "2026-11-03",
-        "disclosure_status": "disclosed",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "高榕创投",
-            "role": "本轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-5e189044745410"
-          },
-          {
-            "name": "人保股权",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-4ea061135d5085"
-          },
-          {
-            "name": "Monolith砺思资本",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-63cf35584db1b1"
-          },
-          {
-            "name": "建发新兴投资",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-76fb8532c37f57"
-          },
-          {
-            "name": "东方嘉富",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-9d1d8e447b1e09"
-          },
-          {
-            "name": "丹合资本",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-79f5b554fd3261"
-          },
-          {
-            "name": "杭州产投集团",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b81ae5593b7ca7f5",
-                "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-                "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-                "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-6df1342f160cca"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-b81ae5593b7ca7f5",
-            "quote": "投资界AI获悉，杭州暖芯迦电子科技有限公司（简称：暖芯迦）宣布完成5亿元C+轮融资，资方阵容豪华——",
-            "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-            "quote_hash": "de91058e6a780f9c7c35dd4c0721ebd3965c53287477a13b9548813bd562f73d"
-          },
-          {
-            "source_id": "FISRC-b81ae5593b7ca7f5",
-            "quote": "宣布完成5亿元C+轮融资",
-            "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-            "quote_hash": "60bf05888d6d4d90bfcad4d4a51dfa23290b846ca6f7b066c12e158870f11171"
-          },
-          {
-            "source_id": "FISRC-b81ae5593b7ca7f5",
-            "quote": "至此公司累计融资规模已达10亿元人民币",
-            "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-            "quote_hash": "31f71c79bb1e58d2d0611ff981eaabfd05b74ac52781d690d1eec782bba7eb8f"
-          }
-        ],
-        "current_source_ids": [
-          "FISRC-b81ae5593b7ca7f5"
-        ]
-      },
-      "research_sources": [
-        {
-          "source_id": "FISRC-b81ae5593b7ca7f5",
-          "source_url": "https://news.pedaily.cn/202611/571250.shtml",
-          "title": "暖芯迦完成5亿元C+轮融资，跑出视觉脑机接口的中国速度",
-          "publisher": "news.pedaily.cn",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-11-04T00:19:53.919Z",
-          "content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-          "source_artifact_id": "SA-d56b458508dcd9ff",
-          "raw_id": "RAW-c7c7894ff738f35c",
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-c6bcb2fa71dc7dad",
-          "source_url": "https://www.pharnexcloud.com/trz/institution_a6cec7b607aa0b07580aa39b68647523",
-          "title": "湖南蒲公英私募主投领域与最新投资情况_摩熵医药",
-          "publisher": "pharnexcloud.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-04T00:51:01.901Z",
-          "content_hash": "fbc9231e4112bfc7",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "historical_round"
-        },
-        {
-          "source_id": "FISRC-127697db1330a6e8",
-          "source_url": "https://crexpo.cn/exhibition/1989",
-          "title": "杭州暖芯迦电子科技有限公司",
-          "publisher": "crexpo.cn",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-04T00:51:09.917Z",
-          "content_hash": "37ab320354536a7f",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        },
-        {
-          "source_id": "FISRC-fa3ed4002909672a",
-          "source_url": "https://www.pharnexcloud.com/trz/trz_65de64576c75f51c615e21f7080e915b",
-          "title": "杭州暖芯迦电子科技有限公司投融资最新情况_摩熵医药",
-          "publisher": "pharnexcloud.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-04T00:51:14.222Z",
-          "content_hash": "10aa432345d8ada3",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "historical_round"
-        },
-        {
-          "source_id": "FISRC-cf3546e1b697b62a",
-          "source_url": "https://pitchhub.36kr.com/project/1818576583083912",
-          "title": "暖芯迦科技 | 项目信息-36氪",
-          "publisher": "pitchhub.36kr.com",
-          "source_class": "secondary",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-04T00:51:26.257Z",
-          "content_hash": "a7e14b56977ed825",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        }
-      ],
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "industry",
-          "name": "行业 AI"
-        },
-        "subsector": {
-          "id": "healthcare",
-          "name": "医疗服务与临床"
-        },
-        "product_form": {
-          "id": "chip-system",
-          "name": "芯片与计算系统"
-        },
-        "customers": [
-          {
-            "id": "business",
-            "name": "企业"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-127697db1330a6e8",
-            "quote": "暖芯迦成立于2014年，是一家专注于脑机接口以及神经生物芯片研发、生产与销售的科技企业"
-          },
-          {
-            "source_id": "FISRC-b81ae5593b7ca7f5",
-            "quote": "暖芯迦320通道视网膜视觉脑机接口E-BCI已正式迈入GCP规范化临床试验阶段"
-          },
-          {
-            "source_id": "FISRC-127697db1330a6e8",
-            "quote": "暖芯迦高分辨率视网膜路径视觉脑机接口E‑BCI"
-          }
-        ],
-        "rationale": "公司专注脑机接口与神经生物芯片研发生产，视觉脑机接口进入临床试验，属医疗服务与临床。"
-      },
-      "market_category": {
-        "id": "industry",
-        "name": "行业 AI",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "healthcare",
-        "name": "医疗服务与临床",
-        "dimension": "financing_subsector"
-      },
-      "product_form": {
-        "id": "chip-system",
-        "name": "芯片与计算系统",
-        "dimension": "financing_product_form"
-      },
-      "products": [
-        {
-          "name": "视网膜路径视觉脑机接口E-BCI"
-        },
-        {
-          "name": "视皮层路径视觉脑机接口V-BCI"
         }
       ]
     },
@@ -646454,286 +644057,6 @@
       "products": [
         {
           "name": "Marble Coworkers"
-        }
-      ]
-    },
-    {
-      "funding_insight_id": "FI-7de55f8a8e9ca8df",
-      "triggered_by_event_id": "EV-81eaad496911181e",
-      "source_event_ids": [
-        "EV-81eaad496911181e"
-      ],
-      "subject_card_id": "FI-7de55f8a8e9ca8df",
-      "as_of_date": "2026-11-04",
-      "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
-        "source_registry_ids": []
-      },
-      "company": {
-        "entity_id": "EN-c32662785b597e46",
-        "application_entity_id": "EN-c32662785b597e46",
-        "name": "Trajectory",
-        "full_name": "Trajectory",
-        "summary": "Trajectory是一家总部位于旧金山的AI基础设施公司，提供持续学习与后训练平台，让企业把应用中的真实反馈接入开源模型并持续重训，使模型在专业任务上不断改进。",
-        "website": "https://trajectory.ai",
-        "headquarters": "旧金山，加利福尼亚州",
-        "founders": [
-          {
-            "name": "Ronak Malde",
-            "role": "联合创始人、首席执行官",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c8564f3a68709075",
-                "quote": "Trajectory co-founder Ronak Malde compared foundational models",
-                "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                "quote_hash": "4251c4a64b098991104adfdbe9c735c4670a9cce7a76d5aa7424a6e87c727ac3"
-              },
-              {
-                "source_id": "FISRC-2408e75c2a9f9974",
-                "quote": "Led by chief executive Ronak Malde",
-                "source_content_hash": "2394fb4c337a4066",
-                "quote_hash": "28f67a98b374d01aa95bd9c31bd4942b858dea3eaf2b6735258e1125c5c66f6b"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Michael Elabd",
-            "role": "联合创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c8564f3a68709075",
-                "quote": "But co-founder Michael Elabd argues that keeping humans involved in the training process makes Trajectory’s approach safer",
-                "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                "quote_hash": "36793c13a5e07b050b48c43fb7eaa63ad73f323e25a9d33f8a77db6e12523356"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Arjun Karanam",
-            "role": "联合创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c8564f3a68709075",
-                "quote": "Trajectory’s third co-founder, Arjun Karanam, previously worked on generative foundation models at Apple",
-                "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                "quote_hash": "1dbe20f7000d1b504b2659992801e748c15bbbf6de0c0702e55950cb90a65a79"
-              }
-            ],
-            "entity_id": null
-          }
-        ]
-      },
-      "financing": {
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "A轮",
-        "amount": "$45 million",
-        "amount_original": "$45 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 45000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "4500 万美元"
-        },
-        "announced_at": "2026-11-02",
-        "disclosure_status": "disclosed",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "Sequoia",
-            "role": "本轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c8564f3a68709075",
-                "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-                "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-862e0e7d2ba5cf"
-          },
-          {
-            "name": "Nvidia",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c8564f3a68709075",
-                "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-                "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
-              }
-            ],
-            "entity_id": "EN-8d4321d936320802",
-            "institution_id": "INV-c73d9854fb920b"
-          },
-          {
-            "name": "Bessemer Venture Partners",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c8564f3a68709075",
-                "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-                "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-ed42220b00c38b"
-          },
-          {
-            "name": "Bain Capital Ventures",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-c8564f3a68709075",
-                "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-                "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-                "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-96de64c25b8e4a"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-c8564f3a68709075",
-            "quote": "The 18-person company just announced that it raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures.",
-            "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-            "quote_hash": "16adc121e7ad1487219df00c9a7b231b912b00f770519fdde5991ea14b61a1e8"
-          },
-          {
-            "source_id": "FISRC-c8564f3a68709075",
-            "quote": "The 18-person company just announced that it raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-            "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-            "quote_hash": "8ce1d511eb251088c0f0559364fcc47cf7b8147a36c1b5da4739af41731e17a3"
-          },
-          {
-            "source_id": "FISRC-74af0f57da41a87e",
-            "quote": "Raised $45M Series A on August 10, 2026",
-            "source_content_hash": "b439ce0e62da4c73",
-            "quote_hash": "59e71a2bec8ea30bcd8f26646e1229c8ea3c3fa24588e5e64676337f968b5ff9"
-          }
-        ],
-        "current_source_ids": [
-          "FISRC-c8564f3a68709075",
-          "FISRC-74af0f57da41a87e"
-        ]
-      },
-      "research_sources": [
-        {
-          "source_id": "FISRC-c8564f3a68709075",
-          "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
-          "title": "Trajectory 融资 4500 万美元，让非技术专家也能参与 AI 模型训练",
-          "publisher": "techcrunch.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-11-04T00:18:09.933Z",
-          "content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-          "source_artifact_id": "SA-1a98e1e8a0253b3f",
-          "raw_id": "RAW-95ba6a3f813db09a",
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-d1196b2001cd9da4",
-          "source_url": "https://www.thesaasnews.com/news/trajectory-raises-15m-seed/",
-          "title": "Trajectory Raises $15M Seed",
-          "publisher": "thesaasnews.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-04T00:50:27.542Z",
-          "content_hash": "ed10dfbf54561a9a",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        },
-        {
-          "source_id": "FISRC-2408e75c2a9f9974",
-          "source_url": "https://fundraiseinsider.com/blog/trajectory-raises-15m-seed-to-build-continual-learning-platform/",
-          "title": "Trajectory Raises $15M Seed to Build Continual Learning Platform - Fundraise Insider",
-          "publisher": "fundraiseinsider.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-04T00:50:28.356Z",
-          "content_hash": "2394fb4c337a4066",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "historical_round"
-        },
-        {
-          "source_id": "FISRC-74af0f57da41a87e",
-          "source_url": "https://startups.gallery/companies/trajectory-ai",
-          "title": "Trajectory: Funding, Investors & Jobs | startups.gallery",
-          "publisher": "startups.gallery",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-04T00:50:30.341Z",
-          "content_hash": "b439ce0e62da4c73",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "current_round"
-        }
-      ],
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "developer-data",
-          "name": "AI 开发与数据"
-        },
-        "subsector": {
-          "id": "model-platforms",
-          "name": "训练、微调与部署"
-        },
-        "product_form": {
-          "id": "developer-platform",
-          "name": "开发与数据平台"
-        },
-        "customers": [
-          {
-            "id": "business",
-            "name": "企业"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-c8564f3a68709075",
-            "quote": "Businesses using Trajectory can start with an open source AI model and connect the platform to their applications, allowing it to collect feedback on how the model performs. Trajectory then uses that information to retrain the model, helping it improve at specialized tasks over time."
-          },
-          {
-            "source_id": "FISRC-c8564f3a68709075",
-            "quote": "Karanam says the startup has developed an interface that makes post-training more accessible to its nontechnical customers."
-          }
-        ],
-        "rationale": "Trajectory 提供面向企业的模型后训练与再训练平台，属于训练微调部署开发平台。"
-      },
-      "market_category": {
-        "id": "developer-data",
-        "name": "AI 开发与数据",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "model-platforms",
-        "name": "训练、微调与部署",
-        "dimension": "financing_subsector"
-      },
-      "product_form": {
-        "id": "developer-platform",
-        "name": "开发与数据平台",
-        "dimension": "financing_product_form"
-      },
-      "products": [
-        {
-          "name": "Trajectory后训练平台"
         }
       ]
     },

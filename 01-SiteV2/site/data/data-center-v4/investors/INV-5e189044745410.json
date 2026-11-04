@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-25T02:10:15.815Z",
     "latestDataDate": "2026-11-04",
     "currentDate": "2026-11-04",
-    "eventCount": 4371,
+    "eventCount": 4372,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,32 +61,25 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 5,
-    "china_market_company_count": 4,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-05-25",
-    "latest_disclosed_at": "2026-11-03",
+    "latest_disclosed_at": "2026-09-16",
     "role_counts": {
       "historical_or_ambiguous": 3,
-      "lead": 1,
       "participant": 4
     },
     "round_codes": [
       "multi_round",
-      "other",
-      "series_c_plus"
+      "other"
     ],
     "portfolio_companies": [
-      {
-        "entity_id": "EN-9ca120a340344bca",
-        "canonical_entity_id": "",
-        "name": "暖芯迦"
-      },
       {
         "entity_id": "EN-bd0658982d1f728d",
         "canonical_entity_id": "EN-bd0658982d1f728d",
@@ -104,46 +97,6 @@
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-70eebc22ce509697",
-        "funding_insight_id": "FI-4c54e5a0c06950fc",
-        "event_ids": [
-          "EV-1d794039f9374217"
-        ],
-        "company_entity_id": "EN-9ca120a340344bca",
-        "company_canonical_entity_id": "",
-        "company_name": "暖芯迦",
-        "round": "C+轮",
-        "round_code": "series_c_plus",
-        "round_original": "C+轮",
-        "amount_original": "5亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 500000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "5 亿元"
-        },
-        "announced_at": "2026-11-03",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮领投",
-        "role_code": "lead",
-        "evidence": [
-          {
-            "source_id": "FISRC-b81ae5593b7ca7f5",
-            "source_url": "https://news.pedaily.cn/202611/571250.shtml",
-            "source_title": "暖芯迦完成5亿元C+轮融资，跑出视觉脑机接口的中国速度",
-            "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-            "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-            "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-          }
-        ]
-      },
       {
         "activity_id": "IA-88573786b1ad4479",
         "funding_insight_id": "FI-e81dafc2defecb80",
@@ -408,14 +361,6 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-b81ae5593b7ca7f5",
-        "source_url": "https://news.pedaily.cn/202611/571250.shtml",
-        "source_title": "暖芯迦完成5亿元C+轮融资，跑出视觉脑机接口的中国速度",
-        "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-        "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-        "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-      },
-      {
         "source_id": "FISRC-a2c9854f5230d423",
         "source_url": "https://www.chinaventure.com.cn/news/111-20260921-393379.html",
         "source_title": "张一鸣，又创造了一个100亿 首轮融资20亿元。 投中网 · 21小时前",
@@ -523,16 +468,16 @@
           "source_id": "gaorong_profile"
         },
         {
-          "description": "融资来源记录：暖芯迦 · C+轮 · 2026-11-03 · 本轮领投 · 5亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b81ae5593b7ca7f5"
-        },
-        {
           "description": "融资来源记录：Anew Labs（新生实验室） · 其他融资 · 2026-09-16 · 本轮参投 · 2.9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a2c9854f5230d423"
         },
         {
           "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-09-04 · 本轮参投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2ea62510cec1d311"
+        },
+        {
+          "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-08-24 · 本轮参投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2ec9a5e83ce18f75"
         }
       ],
       "contacts": [
@@ -584,14 +529,6 @@
           "quote_hash": "2f6c82bb79f2001ffcf08f40fbe9d1c3f68a63d2b23c7c18973755a7380337e7"
         },
         {
-          "source_id": "FISRC-b81ae5593b7ca7f5",
-          "source_url": "https://news.pedaily.cn/202611/571250.shtml",
-          "source_title": "暖芯迦完成5亿元C+轮融资，跑出视觉脑机接口的中国速度",
-          "source_content_hash": "52c5654197fe195f85e67861201f689b5000f2cbc522015c40940f9849655ab0",
-          "quote": "由高榕创投领投，人保股权、Monolith砺思资本、建发新兴投资、东方嘉富、丹合资本、杭州产投集团跟投",
-          "quote_hash": "9ba961fc3d837b0c00159a1c9f222079ce89fd001faecf1375498258697c69bc"
-        },
-        {
           "source_id": "FISRC-a2c9854f5230d423",
           "source_url": "https://www.chinaventure.com.cn/news/111-20260921-393379.html",
           "source_title": "张一鸣，又创造了一个100亿 首轮融资20亿元。 投中网 · 21小时前",
@@ -606,6 +543,14 @@
           "source_content_hash": "67292d9f5d47dac6398751aa1f03bd21e591448b296f9cb106f2dc97d4c47f23",
           "quote": "本轮融资由IDG资本领投，高榕创投参投，并获得腾讯、阿里巴巴两家战略投资者支持",
           "quote_hash": "0014fb18984b4b4f96df9ff32c5ecb7a548050bfe2a96765df0e7837bc7b9b71"
+        },
+        {
+          "source_id": "FISRC-2ec9a5e83ce18f75",
+          "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
+          "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+          "source_content_hash": "b8e4f0b869df00ee",
+          "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持",
+          "quote_hash": "0c0e04917436353a249175e0fe3954233525524468f8b84521713be86611d620"
         }
       ],
       "coverage_status": "researched",

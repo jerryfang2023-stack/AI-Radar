@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-25T02:10:15.815Z",
     "latestDataDate": "2026-11-04",
     "currentDate": "2026-11-04",
-    "eventCount": 4371,
+    "eventCount": 4372,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,9 +63,9 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 33,
+    "current_round_count": 32,
     "historical_or_ambiguous_count": 9,
-    "portfolio_company_count": 29,
+    "portfolio_company_count": 28,
     "market_regions": [
       "GLOBAL"
     ],
@@ -76,7 +76,7 @@
     "role_counts": {
       "historical_or_ambiguous": 9,
       "lead": 3,
-      "participant": 30
+      "participant": 29
     },
     "round_codes": [
       "infrastructure",
@@ -216,11 +216,6 @@
         "name": "Together AI"
       },
       {
-        "entity_id": "EN-c32662785b597e46",
-        "canonical_entity_id": "",
-        "name": "Trajectory"
-      },
-      {
         "entity_id": "FICO-upscale-ai",
         "canonical_entity_id": "",
         "name": "Upscale AI"
@@ -243,17 +238,17 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-361c868b8651886b",
-        "funding_insight_id": "FI-3b4b50b8aaa7d768",
+        "activity_id": "IA-ed0cb726fd90b1fe",
+        "funding_insight_id": "FI-4ccef36f3ec7e4e8",
         "event_ids": [
           "EV-0a0d2b11832f0be5"
         ],
         "company_entity_id": "EN-2834e64f3da4f1eb",
         "company_canonical_entity_id": "",
         "company_name": "Fal",
-        "round": "E轮",
-        "round_code": "series_e",
-        "round_original": "Series E and F",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "F轮",
         "amount_original": "$1.3 billion",
         "amount_normalized": {
           "currency": "USD",
@@ -279,46 +274,6 @@
             "source_content_hash": "619f662b2bc706a305ff822133dffd3beef6778aff3e85d67eaad24f1d73986a",
             "quote": "has raised $1.3 billion in its latest funding round led by Bessemer Venture Partners, with participation from Nvidia, Sound Ventures, and T. Rowe Price.",
             "quote_hash": "af3f70ce5a2969a9c1751d6c974edf782b58afed8bb97c3f5a9c07d9c1b71580"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-c558044beb246aa6",
-        "funding_insight_id": "FI-7de55f8a8e9ca8df",
-        "event_ids": [
-          "EV-81eaad496911181e"
-        ],
-        "company_entity_id": "EN-c32662785b597e46",
-        "company_canonical_entity_id": "",
-        "company_name": "Trajectory",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "A轮",
-        "amount_original": "$45 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 45000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "4500 万美元"
-        },
-        "announced_at": "2026-11-02",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-c8564f3a68709075",
-            "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
-            "source_title": "Trajectory 融资 4500 万美元，让非技术专家也能参与 AI 模型训练",
-            "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-            "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-            "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
           }
         ]
       },
@@ -1908,14 +1863,6 @@
         "quote_hash": "af3f70ce5a2969a9c1751d6c974edf782b58afed8bb97c3f5a9c07d9c1b71580"
       },
       {
-        "source_id": "FISRC-c8564f3a68709075",
-        "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
-        "source_title": "Trajectory 融资 4500 万美元，让非技术专家也能参与 AI 模型训练",
-        "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-        "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-        "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
-      },
-      {
         "source_id": "FISRC-1a26335ff9013735",
         "source_url": "https://www.ithome.com/1/018/726.htm",
         "source_title": "英伟达投资印度初创公司 Simplismart，助力企业用更少 GPU 运行 AI 模型",
@@ -2303,16 +2250,16 @@
           "source_id": "nvidia_nventures"
         },
         {
-          "description": "融资来源记录：Fal · E轮 · 2026-11-03 · 本轮参投 · $1.3 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：Fal · F轮 · 2026-11-03 · 本轮参投 · $1.3 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-05d1a3678a8eb502"
-        },
-        {
-          "description": "融资来源记录：Trajectory · A轮 · 2026-11-02 · 本轮参投 · $45 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c8564f3a68709075"
         },
         {
           "description": "融资来源记录：Simplismart · B轮 · 2026-10-27 · 本轮参投 · $14 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1a26335ff9013735"
+        },
+        {
+          "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮参投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-295e99df6a40bc79"
         }
       ],
       "contacts": [
@@ -2365,20 +2312,20 @@
           "quote_hash": "af3f70ce5a2969a9c1751d6c974edf782b58afed8bb97c3f5a9c07d9c1b71580"
         },
         {
-          "source_id": "FISRC-c8564f3a68709075",
-          "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
-          "source_title": "Trajectory 融资 4500 万美元，让非技术专家也能参与 AI 模型训练",
-          "source_content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
-          "quote": "raised $45 million in a Series A round at a $300 million valuation, led by Sequoia, with participation from Nvidia, Bessemer Venture Partners, and Bain Capital Ventures",
-          "quote_hash": "1712ce31ec84607ac9d5e1a59b401eeea8ef9d9305ec192d3d54a4ffd6775ec4"
-        },
-        {
           "source_id": "FISRC-1a26335ff9013735",
           "source_url": "https://www.ithome.com/1/018/726.htm",
           "source_title": "英伟达投资印度初创公司 Simplismart，助力企业用更少 GPU 运行 AI 模型",
           "source_content_hash": "404d88ff840f005ca2cfc6b5710f57793c704b4d1f839e3ffb3dbdf063966c6f",
           "quote": "英伟达（Nvidia）参与了印度初创公司 Simplismart 的 1,400 万美元",
           "quote_hash": "50861b8c3c1a7940a1964fad21f24b103ebd20e34dafd770379e20dfa5f6a5e3"
+        },
+        {
+          "source_id": "FISRC-295e99df6a40bc79",
+          "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
+          "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
+          "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
+          "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
+          "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2389,7 +2336,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[19].role": {
+        "activities[18].role": {
           "text": "2026年7月Series C参投",
           "source_hash": "ca89a4b6213c63b73693d1f4cbdbc294103169f8c18273db948594868797614d",
           "provider": "deepseek",

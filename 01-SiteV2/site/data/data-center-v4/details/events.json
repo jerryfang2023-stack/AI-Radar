@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-25T02:10:15.815Z",
     "latestDataDate": "2026-11-04",
     "currentDate": "2026-11-04",
-    "eventCount": 4371,
+    "eventCount": 4372,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,7 +54,7 @@
   },
   "events": [
     {
-      "id": "EV-cbdfbfdc8bd9552c",
+      "id": "EV-98a40e2dde1ffec0",
       "dataDate": "2026-11-04",
       "date": "2026-11-04",
       "updatedDate": "2026-11-04",
@@ -67,12 +67,21 @@
       "title": "希格生科完成国寿股权领投的数亿元A+轮融资首关",
       "originalTitle": "",
       "subject": "希格生科",
-      "action": "完成国寿股权领投的数亿元A+轮融资",
-      "object": "首关",
-      "metrics": [
-        "82%"
-      ],
+      "action": "funding",
+      "object": "完成数亿元A+轮融资首关",
+      "metrics": [],
       "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-0389f9b1bf76d40a"
+        ]
+      },
       "missingFields": [],
       "conflicts": [],
       "tags": [],
@@ -89,19 +98,21 @@
       "classifications": [],
       "displayTags": [],
       "entityIds": [
-        "EN-5c73e6772ef081be"
+        "EN-5c73e6772ef081be",
+        "EN-61d3d8585cf7441e"
       ],
       "entityNames": [
-        "希格生科"
+        "希格生科",
+        "希格生科宣布完成由国寿股权投资有限公司"
       ],
       "productName": "",
       "products": [],
       "claims": [
         {
-          "id": "CL-70f77dca01baa151",
+          "id": "CL-0389f9b1bf76d40a",
           "subject": "希格生科",
-          "object": "首关",
-          "quote": "· 希格生科完成国寿股权领投的数亿元A 轮融资首关，依托“AI 类器官”创新研发模式，拥有5条First-in-class管线，核心管线SIGX1094为全球首款该技术推进至临床的弥漫性胃癌靶向药，类器官平台参与行业标准制定，心脏类器官毒性预测准确率达82%。"
+          "object": "完成数亿元A+轮融资首关",
+          "quote": "希格生科（深圳）有限公司（以下简称“希格生科”）自2020年底落地深圳以来，始终聚焦于弥漫性胃癌、肝癌、肺癌等恶性转移性实体瘤领域大量未被满足的临床需求，并基于公司开发的成熟的类器官模型，逐步拓展到心脏疾病以及肾脏疾病的创新靶向药研发。投资界（ID：pedaily2012）11月4日消息，希格生科宣布完成由国寿股权投资有限公司（以下简称“国寿股权”）领投的数亿元A+轮融资首关。本次融资将支持公司核心肿瘤创新药管线向关键临床推进，并新增针对心脏疾病以及肾脏疾病的新管线的开发。另外，持续布局及优化公司“类器官+AI”药物研发平台的迭代及新靶点发现，持续推进新管线的布局以及为药企赋能。"
         }
       ],
       "sources": [
@@ -113,7 +124,7 @@
       ],
       "sourceUrl": "https://news.pedaily.cn/202611/571305.shtml",
       "publisher": "news.pedaily.cn",
-      "sourceExcerpt": "· 希格生科完成国寿股权领投的数亿元A 轮融资首关，依托“AI 类器官”创新研发模式，拥有5条First-in-class管线，核心管线SIGX1094为全球首款该技术推进至临床的弥漫性胃癌靶向药，类器官平台参与行业标准制定，心脏类器官毒性预测准确率达82%。"
+      "sourceExcerpt": "希格生科（深圳）有限公司（以下简称“希格生科”）自2020年底落地深圳以来，始终聚焦于弥漫性胃癌、肝癌、肺癌等恶性转移性实体瘤领域大量未被满足的临床需求，并基于公司开发的成熟的类器官模型，逐步拓展到心脏疾病以及肾脏疾病的创新靶向药研发。投资界（ID：pedaily2012）11月4日消息，希格生科宣布完成由国寿股权投资有限公司（以下简称“国寿股权”）领投的数亿元A+轮融资首关。本次融资将支持公司核心肿瘤创新药管线向关键临床推进，并新增针对心脏疾病以及肾脏疾病的新管线的开发。另外，持续布局及优化公司“类器官+AI”药物研发平台的迭代及新靶点发现，持续推进新管线的布局以及为药企赋能。"
     },
     {
       "id": "EV-0a0d2b11832f0be5",
@@ -123,16 +134,18 @@
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
+      "status": "completed",
+      "statusLabel": "已完成",
       "publicationStatus": "verified",
       "title": "AI推理初创公司Fal估值翻倍至$16B，需求激增",
       "originalTitle": "AI inference startup Fal doubles its valuation to $16B as demand surges",
       "subject": "Fal",
       "action": "funding",
-      "object": "$1.3 billion funding round led by Bessemer Venture Partners",
+      "object": "raised $1.3 billion in a Series F round",
       "metrics": [
         "$1.3 billion",
+        "$16 billion",
+        "$8 billion",
         "$1.65 billion"
       ],
       "locations": [],
@@ -163,16 +176,10 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-fbc3fa145a5811b6",
+          "id": "CL-372895f6a6540645",
           "subject": "Fal",
-          "object": "$1.3 billion funding round led by Bessemer Venture Partners",
-          "quote": "Fal, a San Francisco-based startup that hosts and runs AI video, image, and audio models, has raised $1.3 billion in its latest funding round led by Bessemer Venture Partners, with participation from Nvidia, Sound Ventures, and T. Rowe Price."
-        },
-        {
-          "id": "CL-34068fe6aa7076de",
-          "subject": "Fal",
-          "object": "Series E and F rounds combined $1.65 billion",
-          "quote": "The startup announced its Series E and F rounds at the same time, noting that a combined $1.65 billion was raised across both."
+          "object": "raised $1.3 billion in a Series F round",
+          "quote": "Fal, a San Francisco-based startup that hosts and runs AI video, image, and audio models, has raised $1.3 billion in its latest funding round led by Bessemer Venture Partners, with participation from Nvidia, Sound Ventures, and T. Rowe Price. The deal values Fal at $16 billion, double its $8 billion valuation in April, Bloomberg reported. The startup announced its Series E and F rounds at the same time, noting that a combined $1.65 billion was raised across both. (Sequoia led the earlier round.) The latest round (Series F)"
         }
       ],
       "sources": [
@@ -184,7 +191,7 @@
       ],
       "sourceUrl": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
       "publisher": "techcrunch.com",
-      "sourceExcerpt": "Fal, a San Francisco-based startup that hosts and runs AI video, image, and audio models, has raised $1.3 billion in its latest funding round led by Bessemer Venture Partners, with participation from Nvidia, Sound Ventures, and T. Rowe Price."
+      "sourceExcerpt": "Fal, a San Francisco-based startup that hosts and runs AI video, image, and audio models, has raised $1.3 billion in its latest funding round led by Bessemer Venture Partners, with participation from Nvidia, Sound Ventures, and T. Rowe Price. The deal values Fal at $16 billion, double its $8 billion valuation in April, Bloomberg reported. The startup announced its Series E and F rounds at the same time, noting that a combined $1.65 billion was raised across both. (Sequoia led the earlier round.) The latest round (Series F)"
     },
     {
       "id": "EV-1d794039f9374217",
@@ -351,7 +358,7 @@
       "statusLabel": "待核验",
       "publicationStatus": "pending_verification",
       "reportedStatus": "completed",
-      "researchDeferral": "research_independent_sources_insufficient",
+      "researchDeferral": "research_sources_insufficient",
       "title": "FreightTech 初创公司 Conlio 获得 640 万欧元，用于在欧洲扩展 AI 驱动的财务自动化",
       "originalTitle": "FreightTech startup Conlio secures €6.4 million to expand AI-powered financial automation across Europe",
       "subject": "FreightTech startup Conlio",
@@ -448,19 +455,7 @@
       "locations": [],
       "missingFields": [],
       "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "on_device",
-          "name": "端侧",
-          "entityIds": [
-            "EN-e9458059073ecfc0"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
+      "tags": [],
       "facets": {
         "ai_market_category": [],
         "ai_market_subcategory": [],
@@ -468,69 +463,11 @@
         "product_form": [],
         "use_case": [],
         "industry": [],
-        "deployment_model": [
-          {
-            "dimensionId": "deployment_model",
-            "dimensionName": "部署形态",
-            "id": "edge_device",
-            "name": "边缘与端侧",
-            "entityIds": [
-              "EN-e9458059073ecfc0"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
+        "deployment_model": [],
         "target_user": []
       },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "on_device",
-          "name": "端侧",
-          "entityIds": [
-            "EN-e9458059073ecfc0"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "deployment_model",
-          "dimensionName": "部署形态",
-          "id": "edge_device",
-          "name": "边缘与端侧",
-          "entityIds": [
-            "EN-e9458059073ecfc0"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "on_device",
-          "name": "端侧",
-          "entityIds": [
-            "EN-e9458059073ecfc0"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "deployment_model",
-          "dimensionName": "部署形态",
-          "id": "edge_device",
-          "name": "边缘与端侧",
-          "entityIds": [
-            "EN-e9458059073ecfc0"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
+      "classifications": [],
+      "displayTags": [],
       "entityIds": [
         "EN-e9458059073ecfc0",
         "EN-df652dcdf11ecd31"
@@ -547,12 +484,6 @@
           "subject": "智子光垣",
           "object": "，深耕光计算与芯片设计领域",
           "quote": "投资界（ID：pedaily2012）11月3日消息，智子光垣已完成数亿元种子轮融资。"
-        },
-        {
-          "id": "CL-23ddbee6c95cc3bf",
-          "subject": "智子光垣",
-          "object": "，深耕光计算与芯片设计领域",
-          "quote": "· 智子光垣是全球领先的可重构全光架构光计算芯片企业，2026年5月成立，已完成5轮种子轮累计数亿元融资，投资方含多家知名机构及高校基金拥有近50人研发团队，核心成员深耕领域、成果丰富规划服务器端光电加速板卡和端侧光计算芯片，首版芯片已流片，未来半年将推出可部署产品，资金用于研发、团队建设及生态拓展。"
         },
         {
           "id": "CL-fc474b5068d38380",
@@ -655,25 +586,12 @@
       "action": "完成2亿元C轮融资",
       "object": "，推进物理AI与具身智能的工业场景落地",
       "metrics": [
-        "2亿",
-        "80%"
+        "2亿"
       ],
       "locations": [],
       "missingFields": [],
       "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-df7cde5ff02bd43a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
+      "tags": [],
       "facets": {
         "ai_market_category": [],
         "ai_market_subcategory": [],
@@ -684,32 +602,8 @@
         "deployment_model": [],
         "target_user": []
       },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-df7cde5ff02bd43a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-df7cde5ff02bd43a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
+      "classifications": [],
+      "displayTags": [],
       "entityIds": [
         "EN-df7cde5ff02bd43a"
       ],
@@ -724,12 +618,6 @@
           "subject": "易成创新",
           "object": "，推进物理AI与具身智能的工业场景落地",
           "quote": "投资界（ID：pedaily2012）11月3日消息，易成创新宣布完成2亿元C轮融资，本轮由知名机构：粤科集团、善达投资、安徽国投、佛山创投等联合投资。"
-        },
-        {
-          "id": "CL-e79e575a884a63f8",
-          "subject": "易成创新",
-          "object": "，推进物理AI与具身智能的工业场景落地",
-          "quote": "· 易成创新为全球领先的商用自动驾驶物理AI提供商，完成2亿元C轮融资，本轮投资方含粤科集团等知名机构具身智能相关订单达数亿元，头部客户覆盖率超80%，落地多元工业场景且海外业务提速，自研L4级方案构建全流程闭环技术拼图。"
         }
       ],
       "sources": [
@@ -2740,7 +2628,7 @@
     },
     {
       "id": "EV-ee7fd70ed0f055f6",
-      "dataDate": "2026-11-04",
+      "dataDate": "2026-11-03",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "funding",
@@ -2781,13 +2669,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-70bc128bdbe4503d",
+          "id": "CL-c2e739badf93545a",
           "subject": "星科源",
           "object": "，聚焦下一代固态电池专用的纳米硅技术",
           "quote": "投资界（ID：pedaily2012）10月29日消息，近日，星科源已完成亿元级Pre-A轮融资，由弘毅投资领投，厦门钨业产业基金、宜宾人才基金跟投，云道资本担任长期独家财务顾问。"
         },
         {
-          "id": "CL-d057e71848ac6511",
+          "id": "CL-1f920fc0b58faba4",
           "subject": "星科源",
           "object": "，聚焦下一代固态电池专用的纳米硅技术",
           "quote": "· 星科源聚焦下一代固态电池专用纳米硅技术，同步布局AI芯片用硅基光电器件纳米硅材料，已完成亿元级Pre-A轮融资，核心技术可稳定制备30nm以内超细纳米硅，且实现装备自主、连续量产与客户交付创始团队兼具二十余年纳米硅科研与产业化经验，核心成员来自全球顶尖科研及产业体系，获弘毅投资等头部机构投资。"
@@ -3016,7 +2904,7 @@
     },
     {
       "id": "EV-63e454277381c4b3",
-      "dataDate": "2026-11-04",
+      "dataDate": "2026-11-03",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -3096,13 +2984,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-ab4c0a27baca13ba",
+          "id": "CL-38917c2b18b180bf",
           "subject": "百奥几何",
           "object": "，带队迈向生命科学超级智能",
           "quote": "投资界（ID：pedaily2012）10月28日消息，近日，AI Native生物制药公司百奥几何（BioGeometry）宣布完成A+轮融资。"
         },
         {
-          "id": "CL-0827c4223e88a137",
+          "id": "CL-5db96bc3d458553d",
           "subject": "百奥几何",
           "object": "，带队迈向生命科学超级智能",
           "quote": "· 百奥几何完成超1亿美元A轮系列融资，由国寿资本领投，老股东加码构建分子（GeoFlow）、细胞（GeoCell）双尺度微观模型，依托RSI干湿闭环体系，形成AI for AI飞轮储备数十条管线，天然冰片成本较植物提取降80%，2027年将规模化量产。"
@@ -3199,6 +3087,102 @@
       "sourceUrl": "https://www.eu-startups.com/2026/10/barcelonas-artiso-raises-over-e3-million-to-scale-its-ai-operating-system-for-fashion-teams/",
       "publisher": "www.eu-startups.com",
       "sourceExcerpt": "HomeSpain-StartupsBarcelona’s Artiso raises over €3 million to scale its AI operating system..."
+    },
+    {
+      "id": "EV-7ae56347720accfa",
+      "dataDate": "2026-11-04",
+      "date": "2026-10-28",
+      "updatedDate": "2026-10-28",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "百奥几何完成1亿美元A轮系列融资，带队迈向生命科学超级智能",
+      "originalTitle": "",
+      "subject": "百奥几何",
+      "action": "完成1亿美元A轮系列融资",
+      "object": "，带队迈向生命科学超级智能",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-2af17ddc761538ab"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-2af17ddc761538ab"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-2af17ddc761538ab"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2af17ddc761538ab"
+      ],
+      "entityNames": [
+        "百奥几何"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-ab4c0a27baca13ba",
+          "subject": "百奥几何",
+          "object": "，带队迈向生命科学超级智能",
+          "quote": "投资界（ID：pedaily2012）10月28日消息，近日，AI Native生物制药公司百奥几何（BioGeometry）宣布完成A+轮融资。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-eab04deae9023110",
+          "publisher": "news.pedaily.cn",
+          "url": "https://news.pedaily.cn/202610/570976.shtml"
+        }
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202610/570976.shtml",
+      "publisher": "news.pedaily.cn",
+      "sourceExcerpt": "投资界（ID：pedaily2012）10月28日消息，近日，AI Native生物制药公司百奥几何（BioGeometry）宣布完成A+轮融资。"
     },
     {
       "id": "EV-8615e87fa54663e5",
@@ -3578,9 +3562,7 @@
         "source_registry_ids": [],
         "claim_refs": [
           "CL-c9fd26234ec93acd",
-          "CL-9a259f08336a765e",
-          "CL-c5eb780ba4493371",
-          "CL-dee1e507cc19e07d"
+          "CL-9a259f08336a765e"
         ]
       },
       "missingFields": [],
@@ -3641,17 +3623,6 @@
             "provenance": "reviewed_funding_insight",
             "reviewRef": "REC-0238a8d97807905f",
             "fundingInsightId": "FI-45cab93e2b3807d7"
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [
-              "EN-a5e5f031b6f878cf"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
           }
         ],
         "use_case": [
@@ -3854,17 +3825,6 @@
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-20ecd3ec9f0be573",
           "fundingInsightId": "FI-45cab93e2b3807d7"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-a5e5f031b6f878cf"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -3915,17 +3875,6 @@
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-0238a8d97807905f",
           "fundingInsightId": "FI-45cab93e2b3807d7"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-a5e5f031b6f878cf"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
         },
         {
           "dimensionId": "use_case",
@@ -4020,18 +3969,6 @@
           "subject": "微纳核芯",
           "object": "，首创三维存算一体AI芯片新架构",
           "quote": "叠加C1轮，微纳核芯在两个月内完成超20亿元融资，半年内已累计完成30亿元融资，为产品开发迭代与供应链量产备货奠定扎实资金基础。"
-        },
-        {
-          "id": "CL-c5eb780ba4493371",
-          "subject": "微纳核芯",
-          "object": "，首创三维存算一体AI芯片新架构",
-          "quote": "微纳核芯完成10亿元C1轮融资，加速突破AI大模型推理「芯」瓶颈"
-        },
-        {
-          "id": "CL-dee1e507cc19e07d",
-          "subject": "微纳核芯",
-          "object": "，首创三维存算一体AI芯片新架构",
-          "quote": "· 微纳核芯2021年成立，是国家高新技术企业，首创三维存算一体AI芯片新架构，破解AI芯片“高性能 低功耗 低成本”痛点两个月内完成超20亿元融资，半年累计30亿元，产品覆盖端云推理场景，首批商业化潜力获多方机构看好。"
         }
       ],
       "sources": [

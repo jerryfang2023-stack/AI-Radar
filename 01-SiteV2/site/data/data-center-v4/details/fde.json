@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-25T02:10:15.815Z",
     "latestDataDate": "2026-11-04",
     "currentDate": "2026-11-04",
-    "eventCount": 4371,
+    "eventCount": 4372,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -11514,7 +11514,7 @@
   ],
   "events": [
     {
-      "id": "EV-cbdfbfdc8bd9552c",
+      "id": "EV-98a40e2dde1ffec0",
       "dataDate": "2026-11-04",
       "date": "2026-11-04",
       "updatedDate": "2026-11-04",
@@ -11527,12 +11527,21 @@
       "title": "希格生科完成国寿股权领投的数亿元A+轮融资首关",
       "originalTitle": "",
       "subject": "希格生科",
-      "action": "完成国寿股权领投的数亿元A+轮融资",
-      "object": "首关",
-      "metrics": [
-        "82%"
-      ],
+      "action": "funding",
+      "object": "完成数亿元A+轮融资首关",
+      "metrics": [],
       "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-0389f9b1bf76d40a"
+        ]
+      },
       "missingFields": [],
       "conflicts": [],
       "tags": [],
@@ -11549,10 +11558,12 @@
       "classifications": [],
       "displayTags": [],
       "entityIds": [
-        "EN-5c73e6772ef081be"
+        "EN-5c73e6772ef081be",
+        "EN-61d3d8585cf7441e"
       ],
       "entityNames": [
-        "希格生科"
+        "希格生科",
+        "希格生科宣布完成由国寿股权投资有限公司"
       ],
       "productName": "",
       "products": [],
@@ -11567,16 +11578,18 @@
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
+      "status": "completed",
+      "statusLabel": "已完成",
       "publicationStatus": "verified",
       "title": "AI推理初创公司Fal估值翻倍至$16B，需求激增",
       "originalTitle": "AI inference startup Fal doubles its valuation to $16B as demand surges",
       "subject": "Fal",
       "action": "funding",
-      "object": "$1.3 billion funding round led by Bessemer Venture Partners",
+      "object": "raised $1.3 billion in a Series F round",
       "metrics": [
         "$1.3 billion",
+        "$16 billion",
+        "$8 billion",
         "$1.65 billion"
       ],
       "locations": [],
@@ -11729,7 +11742,7 @@
       "statusLabel": "待核验",
       "publicationStatus": "pending_verification",
       "reportedStatus": "completed",
-      "researchDeferral": "research_independent_sources_insufficient",
+      "researchDeferral": "research_sources_insufficient",
       "title": "FreightTech 初创公司 Conlio 获得 640 万欧元，用于在欧洲扩展 AI 驱动的财务自动化",
       "originalTitle": "FreightTech startup Conlio secures €6.4 million to expand AI-powered financial automation across Europe",
       "subject": "FreightTech startup Conlio",
@@ -11792,19 +11805,7 @@
       "locations": [],
       "missingFields": [],
       "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "on_device",
-          "name": "端侧",
-          "entityIds": [
-            "EN-e9458059073ecfc0"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
+      "tags": [],
       "facets": {
         "ai_market_category": [],
         "ai_market_subcategory": [],
@@ -11812,69 +11813,11 @@
         "product_form": [],
         "use_case": [],
         "industry": [],
-        "deployment_model": [
-          {
-            "dimensionId": "deployment_model",
-            "dimensionName": "部署形态",
-            "id": "edge_device",
-            "name": "边缘与端侧",
-            "entityIds": [
-              "EN-e9458059073ecfc0"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
+        "deployment_model": [],
         "target_user": []
       },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "on_device",
-          "name": "端侧",
-          "entityIds": [
-            "EN-e9458059073ecfc0"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "deployment_model",
-          "dimensionName": "部署形态",
-          "id": "edge_device",
-          "name": "边缘与端侧",
-          "entityIds": [
-            "EN-e9458059073ecfc0"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "on_device",
-          "name": "端侧",
-          "entityIds": [
-            "EN-e9458059073ecfc0"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "deployment_model",
-          "dimensionName": "部署形态",
-          "id": "edge_device",
-          "name": "边缘与端侧",
-          "entityIds": [
-            "EN-e9458059073ecfc0"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
+      "classifications": [],
+      "displayTags": [],
       "entityIds": [
         "EN-e9458059073ecfc0",
         "EN-df652dcdf11ecd31"
@@ -11955,25 +11898,12 @@
       "action": "完成2亿元C轮融资",
       "object": "，推进物理AI与具身智能的工业场景落地",
       "metrics": [
-        "2亿",
-        "80%"
+        "2亿"
       ],
       "locations": [],
       "missingFields": [],
       "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-df7cde5ff02bd43a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
+      "tags": [],
       "facets": {
         "ai_market_category": [],
         "ai_market_subcategory": [],
@@ -11984,32 +11914,8 @@
         "deployment_model": [],
         "target_user": []
       },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-df7cde5ff02bd43a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-df7cde5ff02bd43a"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
+      "classifications": [],
+      "displayTags": [],
       "entityIds": [
         "EN-df7cde5ff02bd43a"
       ],
@@ -13436,7 +13342,7 @@
     },
     {
       "id": "EV-ee7fd70ed0f055f6",
-      "dataDate": "2026-11-04",
+      "dataDate": "2026-11-03",
       "date": "2026-10-29",
       "updatedDate": "2026-10-29",
       "eventType": "funding",
@@ -13624,7 +13530,7 @@
     },
     {
       "id": "EV-63e454277381c4b3",
-      "dataDate": "2026-11-04",
+      "dataDate": "2026-11-03",
       "date": "2026-10-28",
       "updatedDate": "2026-10-28",
       "eventType": "funding",
@@ -13751,6 +13657,86 @@
       "products": [],
       "sourceUrl": "https://www.eu-startups.com/2026/10/barcelonas-artiso-raises-over-e3-million-to-scale-its-ai-operating-system-for-fashion-teams/",
       "publisher": "www.eu-startups.com"
+    },
+    {
+      "id": "EV-7ae56347720accfa",
+      "dataDate": "2026-11-04",
+      "date": "2026-10-28",
+      "updatedDate": "2026-10-28",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "百奥几何完成1亿美元A轮系列融资，带队迈向生命科学超级智能",
+      "originalTitle": "",
+      "subject": "百奥几何",
+      "action": "完成1亿美元A轮系列融资",
+      "object": "，带队迈向生命科学超级智能",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-2af17ddc761538ab"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-2af17ddc761538ab"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-2af17ddc761538ab"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2af17ddc761538ab"
+      ],
+      "entityNames": [
+        "百奥几何"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202610/570976.shtml",
+      "publisher": "news.pedaily.cn"
     },
     {
       "id": "EV-8615e87fa54663e5",
@@ -14054,9 +14040,7 @@
         "source_registry_ids": [],
         "claim_refs": [
           "CL-c9fd26234ec93acd",
-          "CL-9a259f08336a765e",
-          "CL-c5eb780ba4493371",
-          "CL-dee1e507cc19e07d"
+          "CL-9a259f08336a765e"
         ]
       },
       "missingFields": [],
@@ -14117,17 +14101,6 @@
             "provenance": "reviewed_funding_insight",
             "reviewRef": "REC-0238a8d97807905f",
             "fundingInsightId": "FI-45cab93e2b3807d7"
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [
-              "EN-a5e5f031b6f878cf"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
           }
         ],
         "use_case": [
@@ -14330,17 +14303,6 @@
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-20ecd3ec9f0be573",
           "fundingInsightId": "FI-45cab93e2b3807d7"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-a5e5f031b6f878cf"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -14391,17 +14353,6 @@
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-0238a8d97807905f",
           "fundingInsightId": "FI-45cab93e2b3807d7"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-a5e5f031b6f878cf"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
         },
         {
           "dimensionId": "use_case",

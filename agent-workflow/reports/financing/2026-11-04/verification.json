@@ -588,15 +588,15 @@
       "rounds": 1,
       "title": "Trajectory raises $45M to make AI model training accessible to nontechnical experts",
       "checks": {
-        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
-        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
-        "date": "accepted_by_existing_gates_not_full_disclosure",
-        "amount": "accepted_by_existing_gates_not_full_disclosure",
-        "round": "accepted_by_existing_gates_not_full_disclosure",
-        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
+        "company_identity": "pending",
+        "ai_relevance": "pending",
+        "date": "pending",
+        "amount": "pending",
+        "round": "pending",
+        "deduplication": "pending"
       },
-      "status": "verified",
-      "reason": "existing_gates_reconciled",
+      "status": "pending",
+      "reason": "no_accepted_financing_event_manual_review_required",
       "collection_reconciled": true,
       "collection_date": "2026-11-04",
       "content_hash": "1d679eb607fa321ec07a4522df60180cf9e512ca31af4ede53b3fc82e62b8776",
@@ -637,47 +637,14 @@
         "review_stage": "fact_review"
       },
       "fact_review_completed": true,
-      "unresolved_event_ids": [],
+      "unresolved_event_ids": [
+        "EV-81eaad496911181e"
+      ],
       "qa_hints": [],
       "pending_reasons": [
-        "research_auto_published"
+        "responsible_publication_hold"
       ],
-      "results": [
-        {
-          "card_id": "FI-56cdd6b67441e9df",
-          "event_id": "EV-81eaad496911181e",
-          "accepted": true,
-          "scope": "included",
-          "reason": "existing_gates_passed",
-          "company": "Trajectory",
-          "announced_at": "2026-11-02",
-          "amount": "$45 million",
-          "round": "A轮",
-          "disclosure_status": "disclosed",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote_hash": "3e60419556f3f1afc7eb674986ccc77d23779ad2168d4991508eb153159ad06d"
-            },
-            {
-              "source_id": "FISRC-d1196b2001cd9da4",
-              "quote_hash": "3b272edefc7d0be8609028986922c036d2d361a727f7d43ed2dff2007b350dbd"
-            },
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote_hash": "16adc121e7ad1487219df00c9a7b231b912b00f770519fdde5991ea14b61a1e8"
-            },
-            {
-              "source_id": "FISRC-c8564f3a68709075",
-              "quote_hash": "8ce1d511eb251088c0f0559364fcc47cf7b8147a36c1b5da4739af41731e17a3"
-            },
-            {
-              "source_id": "FISRC-74af0f57da41a87e",
-              "quote_hash": "59e71a2bec8ea30bcd8f26646e1229c8ea3c3fa24588e5e64676337f968b5ff9"
-            }
-          ]
-        }
-      ],
+      "results": [],
       "review_refs": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-11-04/qa-queue.json",
         "01-SiteV2/content/12-applications/funding-insights/2026-11-04.json"
@@ -46701,20 +46668,65 @@
     },
     "https://www.eu-startups.com/2026/11/freighttech-startup-conlio-secures-e6-4-million-to-expand-ai-powered-financial-automation-across-europe/": {
       "source_url": "https://www.eu-startups.com/2026/11/freighttech-startup-conlio-secures-e6-4-million-to-expand-ai-powered-financial-automation-across-europe/",
-      "evidence_source_url": "https://www.eu-startups.com/2026/11/freighttech-startup-conlio-secures-e6-4-million-to-expand-ai-powered-financial-automation-across-europe/",
       "origin_date": "2026-11-04",
+      "rounds": 0,
       "title": "FreightTech startup Conlio secures €6.4 million to expand AI-powered financial automation across Europe",
+      "checks": {
+        "company_identity": "pending",
+        "ai_relevance": "pending",
+        "date": "pending",
+        "amount": "pending",
+        "round": "pending",
+        "deduplication": "pending"
+      },
+      "status": "pending",
+      "reason": "no_accepted_financing_event_manual_review_required",
+      "collection_reconciled": true,
+      "collection_date": "2026-11-04",
+      "content_hash": "2915704f6c3eca940d1a2d3c578fd234b3f6099b7ca7c8d30b4a1e53a0204920",
       "raw_ids": [
         "RAW-97b013c213cda5cb"
       ],
-      "content_hash": "2915704f6c3eca940d1a2d3c578fd234b3f6099b7ca7c8d30b4a1e53a0204920",
-      "status": "pending",
-      "reason": "no_accepted_financing_event_manual_review_required",
+      "evidence_source_url": "https://www.eu-startups.com/2026/11/freighttech-startup-conlio-secures-e6-4-million-to-expand-ai-powered-financial-automation-across-europe/",
+      "alternate_source": false,
+      "resumed_fact_review": true,
+      "followup": {
+        "source_url": "https://www.eu-startups.com/2026/11/freighttech-startup-conlio-secures-e6-4-million-to-expand-ai-powered-financial-automation-across-europe/",
+        "origin_date": "2026-11-04",
+        "rounds": 1,
+        "title": "FreightTech startup Conlio secures €6.4 million to expand AI-powered financial automation across Europe",
+        "checks": {
+          "company_identity": "pending",
+          "ai_relevance": "pending",
+          "date": "pending",
+          "amount": "pending",
+          "round": "pending",
+          "deduplication": "pending"
+        },
+        "status": "pending",
+        "reason": "no_accepted_financing_event_manual_review_required",
+        "collection_reconciled": true,
+        "collection_date": "2026-11-04",
+        "content_hash": "2915704f6c3eca940d1a2d3c578fd234b3f6099b7ca7c8d30b4a1e53a0204920",
+        "raw_ids": [
+          "RAW-97b013c213cda5cb"
+        ],
+        "evidence_source_url": "https://www.eu-startups.com/2026/11/freighttech-startup-conlio-secures-e6-4-million-to-expand-ai-powered-financial-automation-across-europe/",
+        "alternate_source": false,
+        "resumed_fact_review": true,
+        "last_processed_date": "2026-11-04",
+        "next_due_date": "2026-11-05",
+        "owner": "responsible_financing_reviewer",
+        "next_action": "next_existing_daily_verify",
+        "review_stage": "fact_conflict_review",
+        "last_fact_review_hash": "2915704f6c3eca940d1a2d3c578fd234b3f6099b7ca7c8d30b4a1e53a0204920",
+        "fact_review_completed": true
+      },
       "research_deferral": {
         "version": "FINANCING-RESEARCH-DEFERRAL-1",
         "event_id": "EV-91f0c322e7b0db48",
         "status": "pending_verification",
-        "reason": "research_independent_sources_insufficient",
+        "reason": "research_sources_insufficient",
         "sources": [
           {
             "raw_id": "RAW-97b013c213cda5cb",
@@ -46727,22 +46739,13 @@
         "next_action": "recover_existing_originals_and_complete_independent_research",
         "fact_approval": false
       },
-      "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
-      },
-      "alternate_source": false,
       "fact_review_completed": true,
       "unresolved_event_ids": [
         "EV-91f0c322e7b0db48"
       ],
       "qa_hints": [],
       "pending_reasons": [
-        "research_independent_sources_insufficient"
+        "research_sources_insufficient"
       ],
       "results": [],
       "review_refs": [
@@ -46754,38 +46757,38 @@
   "publication_holds": {
     "added": 0,
     "evidence_followup": 0,
-    "responsible_review": 73
+    "responsible_review": 75
   },
   "followup_queue": {
-    "pending": 578,
-    "needs_attention": 818
+    "pending": 566,
+    "needs_attention": 827
   },
   "review_budget": {
-    "leads": 1451,
+    "leads": 1452,
     "capture_requests": 2093,
     "search_requests": 823,
     "capacity": {
-      "captures": 10448,
-      "searches": 20895
+      "captures": 10455,
+      "searches": 20909
     }
   },
   "review_queue": {
-    "total": 1396,
+    "total": 1393,
     "stages": {
       "evidence_review": 264,
-      "fact_review": 124,
+      "fact_review": 96,
       "needs_original": 632,
       "source_identity_review": 358,
-      "fact_conflict_review": 18
+      "fact_conflict_review": 43
     }
   },
   "prepared": true,
   "status": "completed",
   "counts": {
     "total": 687,
-    "verified": 3,
+    "verified": 2,
     "excluded": 56,
     "reviewed": 0,
-    "pending": 628
+    "pending": 629
   }
 }

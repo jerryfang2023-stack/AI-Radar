@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-25T02:10:15.815Z",
     "latestDataDate": "2026-11-04",
     "currentDate": "2026-11-04",
-    "eventCount": 4371,
+    "eventCount": 4372,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -230,9 +230,7 @@
         "source_registry_ids": [],
         "claim_refs": [
           "CL-c9fd26234ec93acd",
-          "CL-9a259f08336a765e",
-          "CL-c5eb780ba4493371",
-          "CL-dee1e507cc19e07d"
+          "CL-9a259f08336a765e"
         ]
       },
       "missingFields": [],
@@ -293,17 +291,6 @@
             "provenance": "reviewed_funding_insight",
             "reviewRef": "REC-0238a8d97807905f",
             "fundingInsightId": "FI-45cab93e2b3807d7"
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [
-              "EN-a5e5f031b6f878cf"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
           }
         ],
         "use_case": [
@@ -506,17 +493,6 @@
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-20ecd3ec9f0be573",
           "fundingInsightId": "FI-45cab93e2b3807d7"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-a5e5f031b6f878cf"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -567,17 +543,6 @@
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-0238a8d97807905f",
           "fundingInsightId": "FI-45cab93e2b3807d7"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-a5e5f031b6f878cf"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
         },
         {
           "dimensionId": "use_case",
@@ -33688,8 +33653,7 @@
         "TX-industry-telecommunications",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-use_case-software_development",
-        "TX-product_form-model"
+        "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-10-28",
@@ -34011,9 +33975,9 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-use_case-content_creation",
@@ -34092,8 +34056,8 @@
         "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
         "TX-target_user-developer",
-        "TX-product_form-model",
         "TX-use_case-physical_automation",
+        "TX-product_form-model",
         "TX-use_case-design_engineering",
         "TX-ai_market_application-synthetic_data",
         "TX-ai_market_subcategory-data",
@@ -34684,8 +34648,6 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
@@ -34699,12 +34661,14 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-technology-speech_audio",
@@ -34935,9 +34899,9 @@
         "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
-        "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
+        "TX-product_form-model",
         "TX-use_case-sales",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
@@ -35293,8 +35257,8 @@
         "TX-industry-manufacturing",
         "TX-industry-telecommunications",
         "TX-target_user-business_user",
-        "TX-product_form-model",
         "TX-industry-financial_services",
+        "TX-product_form-model",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
         "TX-industry-media_entertainment",
@@ -35459,9 +35423,9 @@
         "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
-        "TX-product_form-model",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
+        "TX-product_form-model",
         "TX-target_user-consumer",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-physical_ai"
@@ -35507,9 +35471,9 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-software_development",
-        "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
+        "TX-product_form-model",
         "TX-ai_market_category-industry_applications",
         "TX-use_case-design_engineering",
         "TX-use_case-content_creation",
@@ -35826,9 +35790,9 @@
         "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
-        "TX-product_form-model",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
+        "TX-product_form-model",
         "TX-industry-logistics_supply_chain",
         "TX-ai_market_category-physical_ai"
       ],
@@ -35852,14 +35816,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-software_development",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
         "TX-product_form-model",
         "TX-use_case-content_creation",
         "TX-ai_market_application-models",
@@ -36043,10 +36007,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
         "TX-product_form-chip_accelerator",
-        "TX-industry-automotive_transportation"
+        "TX-industry-automotive_transportation",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-01-14",
