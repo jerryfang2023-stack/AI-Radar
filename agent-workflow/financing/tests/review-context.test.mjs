@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
-import {publicationReviewDelta,writePublicationReviewContext,originalLocators} from '../review-context.mjs';
+import {publicationReviewDelta,writePublicationReviewContext,originalLocators,publicationQuoteAudit} from '../review-context.mjs';
 const card=(id,amount=10)=>({funding_insight_id:id,company:{name:id},financing:{amount},financing_tags:{sector:'ai'},products:[]});
 test('private original hints bind the exact captured hash and omit stale research cache',()=>{
  const root=fs.mkdtempSync(path.join(os.tmpdir(),'financing-original-hints-'));
@@ -39,5 +39,22 @@ test('review context reads immutable baseline and exposes new cards despite zero
   assert.equal(summary.pending_publication.length,1);assert.equal(summary.files.length,2);
   assert.ok(fs.existsSync(path.join(directory,'publication-delta/subjects-added-FI-new.json')));
   assert.equal(JSON.parse(fs.readFileSync(path.join(directory,'base-financing-catalog.json'))).cards.length,1);
+ } finally {fs.rmSync(root,{recursive:true,force:true});}
+});
+
+
+test('quote audit binds each citation to its own captured source without approving its meaning',()=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'financing-quote-audit-'));
+ try {
+  fs.writeFileSync(path.join(root,'one.json'),JSON.stringify({body_clean:'Original Alpha quote.\nSecond paragraph.'}));
+  fs.writeFileSync(path.join(root,'two.txt'),'Original Beta quote.');
+  const sources=[{source_id:'FISRC-a',source_url:'https://a.test',content_hash:'aaa'},{source_id:'FISRC-b',source_url:'https://b.test',content_hash:'bbb'}];
+  const locators=[{path:'one.json',source_url:'https://a.test',content_hash:'aaa'},{path:'two.txt',source_url:'https://b.test',content_hash:'bbb'}];
+  const refs=[{source_id:'FISRC-a',quote:'Alpha quote. Second paragraph.'},{source_id:'FISRC-b',quote:'Alpha quote.'},{source_id:'FISRC-b',quote:'Beta quote.'}];
+  const audit=publicationQuoteAudit({research_sources:sources,evidence_refs:refs},root,locators);
+  assert.deepEqual(audit.map(row=>row.matched),[true,false,true]);
+  assert.equal(audit[0].original_path,'one.json');assert.equal(audit[2].original_path,'two.txt');
+  assert.equal(audit[0].quote_sha256.length,64);assert.ok(audit.every(row=>!Object.hasOwn(row,'fact_approval')));
+  assert.equal(publicationQuoteAudit({research_sources:sources,evidence_refs:[refs[0]]},root,[{...locators[0],content_hash:'stale'}])[0].matched,false);
  } finally {fs.rmSync(root,{recursive:true,force:true});}
 });

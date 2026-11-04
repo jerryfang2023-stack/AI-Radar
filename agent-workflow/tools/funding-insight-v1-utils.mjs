@@ -530,6 +530,13 @@ export function canonicalFundingEventRound(event = {}, claims = []) {
   }
   const refs = new Set(event.claim_refs || []);
   const primary = claims.find((claim) => refs.has(claim.claim_id) && claim.claim_type === "funding" && claim.verification_status === "accepted");
+  // Bind a bond instrument to accepted current proceeds, never to a yield
+  // mention or an unrelated historical debt amount alone.
+  const bondSale = primary?.source_quote?.match(/\b(?:raised|raises|secured)\s+([$€£]\s*\d[\d,.]*\s*(?:billion|million|thousand|[BMK])?)\s+(?:from|in|via|through)\s+(?:a\s+|an\s+|the\s+)?(?:US dollar\s+|dollar-denominated\s+)?bond\s+(?:sale|offering|issue)\b/iu);
+  if (/\bbond\b/iu.test(clean(event.object)) && bondSale
+    && fundingAmountsEquivalent(canonicalFundingEventAmount(event, claims), bondSale[1])) {
+    return { code: "debt", label: FUNDING_ROUND_LABELS.debt, original: clean(event.object) };
+  }
   const objectRound = normalizeFundingRound(event.object);
   if (/^(?:pre_)?series_[a-z]|^(?:pre_)?seed(?:_|$)|^angel(?:_|$)/u.test(objectRound.code)) return objectRound;
   // The canonical event object binds the current proceeds to its round (e.g.
