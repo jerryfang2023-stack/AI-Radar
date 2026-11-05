@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-04",
-    "currentDate": "2026-11-04",
-    "eventCount": 4372,
+    "latestDataDate": "2026-11-05",
+    "currentDate": "2026-11-05",
+    "eventCount": 4377,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-06",
-    "latest_disclosed_at": "2026-05-06",
+    "latest_disclosed_at": "2026-11-03",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "pre_seed"
+      "pre_seed",
+      "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-cf51e3cd365e5e9c",
+        "canonical_entity_id": "",
+        "name": "Conlio"
+      },
       {
         "entity_id": "EN-4458e908dd9a5440",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-623c02d1d0290fac",
+        "funding_insight_id": "FI-5cabb981fd5a2f0a",
+        "event_ids": [
+          "EV-91f0c322e7b0db48"
+        ],
+        "company_entity_id": "EN-cf51e3cd365e5e9c",
+        "company_canonical_entity_id": "",
+        "company_name": "Conlio",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "€6.4 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 6400000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "640 万欧元"
+        },
+        "announced_at": "2026-11-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f50613efd29e3f0f",
+            "source_url": "https://www.eu-startups.com/2026/11/freighttech-startup-conlio-secures-e6-4-million-to-expand-ai-powered-financial-automation-across-europe/",
+            "source_title": "FreightTech 初创公司 Conlio 获得 640 万欧元，用于在欧洲扩展 AI 驱动的财务自动化",
+            "source_content_hash": "2915704f6c3eca940d1a2d3c578fd234b3f6099b7ca7c8d30b4a1e53a0204920",
+            "quote": "Existing investors System.One, Puzzle Ventures, Booom Ventures and Yellow also participated in the round.",
+            "quote_hash": "29226938b19de820190898bf3bf257dfeb546b25b01cc778e06f4af97e765e8a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-39809287ddb7ec42",
         "funding_insight_id": "FI-7ba868edc61b3b2a",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-f50613efd29e3f0f",
+        "source_url": "https://www.eu-startups.com/2026/11/freighttech-startup-conlio-secures-e6-4-million-to-expand-ai-powered-financial-automation-across-europe/",
+        "source_title": "FreightTech 初创公司 Conlio 获得 640 万欧元，用于在欧洲扩展 AI 驱动的财务自动化",
+        "source_content_hash": "2915704f6c3eca940d1a2d3c578fd234b3f6099b7ca7c8d30b4a1e53a0204920",
+        "quote": "Existing investors System.One, Puzzle Ventures, Booom Ventures and Yellow also participated in the round.",
+        "quote_hash": "29226938b19de820190898bf3bf257dfeb546b25b01cc778e06f4af97e765e8a"
+      },
+      {
         "source_id": "FISRC-d5d5c858ca2bcd66",
         "source_url": "https://www.balderton.com/news/davis-raises-5-5-million-pre-seed-to-accelerate-early-stage-real-estate-development-from-months-to-days/",
         "source_title": "Davis 筹集 550 万美元预种子轮 - Balderton",
@@ -169,6 +223,10 @@
           "source_id": "PROFILE-B10-INV-acd09f14dab4da-3"
         },
         {
+          "description": "融资来源记录：Conlio · 轮次未披露 · 2026-11-03 · 本轮参投 · €6.4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f50613efd29e3f0f"
+        },
+        {
           "description": "融资来源记录：Davis · 预种子轮 · 2026-05-06 · 本轮参投 · $5.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d5d5c858ca2bcd66"
         }
@@ -206,6 +264,14 @@
           "source_content_hash": "92c1875a13f5d3968c438c1f8b97f78dfeb18e26069f9ae7bb705f348d09a34e",
           "quote": "Davis, an AI-native real estate company accelerating early-stage development and architectural design, today announced a $5.5 million pre-seed round. The round was led by Heartcore Capital and Balderton, with participation from Yellow, Evantic and Entrepreneurs First",
           "quote_hash": "ee3c074ec90d668e1ddfe0340b2dde6286ab06abbf6e3829c5fce9618355de13"
+        },
+        {
+          "source_id": "FISRC-f50613efd29e3f0f",
+          "source_url": "https://www.eu-startups.com/2026/11/freighttech-startup-conlio-secures-e6-4-million-to-expand-ai-powered-financial-automation-across-europe/",
+          "source_title": "FreightTech 初创公司 Conlio 获得 640 万欧元，用于在欧洲扩展 AI 驱动的财务自动化",
+          "source_content_hash": "2915704f6c3eca940d1a2d3c578fd234b3f6099b7ca7c8d30b4a1e53a0204920",
+          "quote": "Existing investors System.One, Puzzle Ventures, Booom Ventures and Yellow also participated in the round.",
+          "quote_hash": "29226938b19de820190898bf3bf257dfeb546b25b01cc778e06f4af97e765e8a"
         },
         {
           "source_id": "FISRC-d5d5c858ca2bcd66",

@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-25T02:10:15.815Z",
+    "latestDataDate": "2026-11-05",
+    "currentDate": "2026-11-05",
+    "eventCount": 4377,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-577debc8bdbb14",
+    "name": "Expedite Capital",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-11-03",
+    "latest_disclosed_at": "2026-11-03",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-e1b40c3ec534d8fd",
+        "canonical_entity_id": "",
+        "name": "Tallia"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-4d2ab26081a7ea6c",
+        "funding_insight_id": "FI-ac5b3adb35c391fc",
+        "event_ids": [
+          "EV-41ecfae294ef5f27"
+        ],
+        "company_entity_id": "EN-e1b40c3ec534d8fd",
+        "company_canonical_entity_id": "",
+        "company_name": "Tallia",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "€4 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 4000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "400 万欧元"
+        },
+        "announced_at": "2026-11-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b7f263210d07ed30",
+            "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms",
+            "source_title": "伦敦的Tallia融资400万欧元，将AI驱动的研究与审查引入税务公司",
+            "source_content_hash": "e977c0cfb1559d1668b5d9332458e588161cf87b92857364f5dd7ab3e45ddd0a",
+            "quote": "The round was co-led by Outward VC and the Institute of Chartered Accountants in England and Wales (ICAEW), with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors.",
+            "quote_hash": "d8acd6255b1f6e2ab1e332e8f5ab162df343ab9104dcc862e0b294de0099fcd5"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-b7f263210d07ed30",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms",
+        "source_title": "伦敦的Tallia融资400万欧元，将AI驱动的研究与审查引入税务公司",
+        "source_content_hash": "e977c0cfb1559d1668b5d9332458e588161cf87b92857364f5dd7ab3e45ddd0a",
+        "quote": "The round was co-led by Outward VC and the Institute of Chartered Accountants in England and Wales (ICAEW), with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors.",
+        "quote_hash": "d8acd6255b1f6e2ab1e332e8f5ab162df343ab9104dcc862e0b294de0099fcd5"
+      }
+    ],
+    "public_profile": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Expedite Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Tallia · 种子轮 · 2026-11-03 · 本轮参投 · €4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b7f263210d07ed30"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-b7f263210d07ed30",
+          "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms",
+          "source_title": "伦敦的Tallia融资400万欧元，将AI驱动的研究与审查引入税务公司",
+          "source_content_hash": "e977c0cfb1559d1668b5d9332458e588161cf87b92857364f5dd7ab3e45ddd0a",
+          "quote": "The round was co-led by Outward VC and the Institute of Chartered Accountants in England and Wales (ICAEW), with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors.",
+          "quote_hash": "d8acd6255b1f6e2ab1e332e8f5ab162df343ab9104dcc862e0b294de0099fcd5"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    }
+  }
+}
