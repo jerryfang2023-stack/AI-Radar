@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-04",
-    "currentDate": "2026-11-04",
-    "eventCount": 4372,
+    "latestDataDate": "2026-11-05",
+    "currentDate": "2026-11-05",
+    "eventCount": 4377,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,24 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-07",
-    "latest_disclosed_at": "2026-10-07",
+    "latest_disclosed_at": "2026-11-04",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "early_stage",
-      "series_b"
+      "series_b",
+      "series_c"
     ],
     "portfolio_companies": [
       {
@@ -89,9 +90,54 @@
         "entity_id": "EN-9c304d6d50bdb5a8",
         "canonical_entity_id": "",
         "name": "ByteXL"
+      },
+      {
+        "entity_id": "EN-2a4ded09446abe0c",
+        "canonical_entity_id": "",
+        "name": "EloElo Group"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1b99fac876ca9e48",
+        "funding_insight_id": "FI-97d4e2406bbf2412",
+        "event_ids": [
+          "EV-79f50d2659ea434a"
+        ],
+        "company_entity_id": "EN-2a4ded09446abe0c",
+        "company_canonical_entity_id": "",
+        "company_name": "EloElo Group",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$80 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 80000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8000 万美元"
+        },
+        "announced_at": "2026-11-04",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-41b1462161a0afd0",
+            "source_url": "https://entrackr.com/news/eloelo-group-raises-80-mn-in-series-c-led-by-hornbill-capital-nbcuniversal-12780928",
+            "source_title": "EloElo Group在Hornbill Capital和NBCUniversal领投的C轮融资中筹集8000万美元",
+            "source_content_hash": "633a9065189ca481be9480e5f615cf4b660afcfe4b974cef6cc33dc773c30604",
+            "quote": "The round also saw participation from MIT Investment Co. and existing investors Play Ventures, Kalaari Capital, Waterbridge Ventures, Griffin Gaming Partners and others.",
+            "quote_hash": "392eb27e4bdf3254e43eca338431351fe84fd80d78d6cf9899ddb0d5254e662e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-41612ae22e00485b",
         "funding_insight_id": "FI-ee7029c953a46f16",
@@ -207,6 +253,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-41b1462161a0afd0",
+        "source_url": "https://entrackr.com/news/eloelo-group-raises-80-mn-in-series-c-led-by-hornbill-capital-nbcuniversal-12780928",
+        "source_title": "EloElo Group在Hornbill Capital和NBCUniversal领投的C轮融资中筹集8000万美元",
+        "source_content_hash": "633a9065189ca481be9480e5f615cf4b660afcfe4b974cef6cc33dc773c30604",
+        "quote": "The round also saw participation from MIT Investment Co. and existing investors Play Ventures, Kalaari Capital, Waterbridge Ventures, Griffin Gaming Partners and others.",
+        "quote_hash": "392eb27e4bdf3254e43eca338431351fe84fd80d78d6cf9899ddb0d5254e662e"
+      },
+      {
         "source_id": "FISRC-576325ed4af0de98",
         "source_url": "https://yourstory.com/2026/10/edtech-firm-bytexl-9m-investors-back-college-linked-ai-skilling-model",
         "source_title": "教育科技公司 byteXL 融资 900 万美元，投资者支持与高校联动的 AI 技能培训模式",
@@ -236,10 +290,14 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Kalaari Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Kalaari Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：EloElo Group · C轮 · 2026-11-04 · 本轮参投 · $80 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-41b1462161a0afd0"
+        },
         {
           "description": "融资来源记录：byteXL · 早期融资 · 2026-10-07 · 本轮参投 · $9 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-576325ed4af0de98"
@@ -247,14 +305,18 @@
         {
           "description": "融资来源记录：ByteXL · B轮 · 2026-10-07 · 本轮参投 · $9 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2ef9a11d4971e966"
-        },
-        {
-          "description": "融资来源记录：byteXL · 历史轮次未披露 · 2024-07 · 2024年7月 A 轮领投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3eacc0aa6ec8e92e"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-41b1462161a0afd0",
+          "source_url": "https://entrackr.com/news/eloelo-group-raises-80-mn-in-series-c-led-by-hornbill-capital-nbcuniversal-12780928",
+          "source_title": "EloElo Group在Hornbill Capital和NBCUniversal领投的C轮融资中筹集8000万美元",
+          "source_content_hash": "633a9065189ca481be9480e5f615cf4b660afcfe4b974cef6cc33dc773c30604",
+          "quote": "The round also saw participation from MIT Investment Co. and existing investors Play Ventures, Kalaari Capital, Waterbridge Ventures, Griffin Gaming Partners and others.",
+          "quote_hash": "392eb27e4bdf3254e43eca338431351fe84fd80d78d6cf9899ddb0d5254e662e"
+        },
         {
           "source_id": "FISRC-576325ed4af0de98",
           "source_url": "https://yourstory.com/2026/10/edtech-firm-bytexl-9m-investors-back-college-linked-ai-skilling-model",
@@ -270,14 +332,6 @@
           "source_content_hash": "ddfc442f74f43b98c3e28a9a3acb3cc56598d7a4f54e89a24caba18f3bdf4013",
           "quote": "Existing investors Kalaari Capital and the Michael & Susan Dell Foundation also participated in the round.",
           "quote_hash": "77db9ff6c98c644c3623c6f96cf0c556b34b132fe927ce2e9d8eb5b0012596b4"
-        },
-        {
-          "source_id": "FISRC-3eacc0aa6ec8e92e",
-          "source_url": "https://economictimes.indiatimes.com/topic/bytexl-funding",
-          "source_title": "bytexl funding: Latest News & Videos, Photos about bytexl funding | The Economic Times - Page 1",
-          "source_content_hash": "6631e444b4bfea7b",
-          "quote": "Edtech startup ByteXL bags $5.9 million funding in round led by Kalaari Capital",
-          "quote_hash": "f1feedfd91839c035251c049f0a46cc9d6323b7e3d984ecffd1b57b5e7d60e7b"
         }
       ],
       "last_verified_at": "2026-10-06"

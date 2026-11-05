@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-04",
-    "currentDate": "2026-11-04",
-    "eventCount": 4372,
+    "latestDataDate": "2026-11-05",
+    "currentDate": "2026-11-05",
+    "eventCount": 4377,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -59,6 +59,7 @@
     "typeLabel": "行业",
     "valueId": "healthcare_life_sciences",
     "eventIds": [
+      "EV-5affa046ed76d30e",
       "EV-63e454277381c4b3",
       "EV-7ae56347720accfa",
       "EV-0b46ca8532759091",
@@ -194,6 +195,7 @@
       "EV-edb1ddb3a091ada4"
     ],
     "entityIds": [
+      "EN-696d8adf27c998c9",
       "EN-2af17ddc761538ab",
       "EN-0d4cd9aa3a416d5a",
       "EN-c25cc259a1ed98a1",
@@ -327,9 +329,94 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2026-01-20",
-    "lastSeen": "2026-11-04"
+    "lastSeen": "2026-11-05"
   },
   "events": [
+    {
+      "id": "EV-5affa046ed76d30e",
+      "dataDate": "2026-11-05",
+      "date": "2026-11-04",
+      "updatedDate": "2026-11-04",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "总部位于莱比锡的JawBuddy融资€818k，帮助人们缓解下颌疼痛、磨牙症及颞下颌关节相关紧张",
+      "originalTitle": "Leipzig-based JawBuddy raises €818k to help people reduce jaw pain, bruxism, and TMJ-related tension",
+      "subject": "Leipzig-based JawBuddy",
+      "action": "raises",
+      "object": "€818k to help people reduce jaw pain, bruxism, and TMJ-related tension",
+      "metrics": [
+        "€818k",
+        "€1.8 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-696d8adf27c998c9"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-696d8adf27c998c9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-696d8adf27c998c9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-e870e58c790e2f53",
+        "EN-696d8adf27c998c9"
+      ],
+      "entityNames": [
+        "HomeFundingLeipzig-based JawBuddy",
+        "Leipzig-based JawBuddy"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/11/leipzig-based-jawbuddy-raises-e818k-to-help-people-reduce-jaw-pain-bruxism-and-tmj-related-tension/",
+      "publisher": "www.eu-startups.com"
+    },
     {
       "id": "EV-63e454277381c4b3",
       "dataDate": "2026-11-03",
@@ -40762,6 +40849,27 @@
   ],
   "entities": [
     {
+      "id": "EN-696d8adf27c998c9",
+      "name": "Leipzig-based JawBuddy",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5affa046ed76d30e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-healthcare_life_sciences"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-05"
+    },
+    {
       "id": "EN-2af17ddc761538ab",
       "name": "百奥几何",
       "entityType": "organization_candidate",
@@ -41238,8 +41346,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-industry-healthcare_life_sciences",
+        "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -41372,6 +41480,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
@@ -41388,7 +41497,6 @@
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
         "TX-target_user-student",
-        "TX-industry-media_entertainment",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-consumer",
@@ -41938,6 +42046,7 @@
         "EV-3cc8e7ce0143047a",
         "EV-000a2cf24e205f93",
         "EV-5267a13213f966ec",
+        "EV-797921067ae4af17",
         "EV-20253e8f968787c7",
         "EV-38f85ebd3ffeb9da",
         "EV-7ddfa7b82af141ec",
@@ -42076,10 +42185,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
-        "TX-industry-healthcare_life_sciences",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -42090,7 +42200,6 @@
         "TX-product_form-model",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
-        "TX-industry-media_entertainment",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-consumer",
@@ -42143,7 +42252,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-11-04"
+      "lastSeen": "2026-11-05"
     },
     {
       "id": "EN-a560e8c7ca78f72c",
@@ -42505,10 +42614,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
-        "TX-industry-healthcare_life_sciences",
         "TX-ai_market_application-chips",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -42531,7 +42641,6 @@
         "TX-technology-speech_audio",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-media_entertainment",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-technology-code_generation",
@@ -42588,7 +42697,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-04"
+      "lastSeen": "2026-11-05"
     },
     {
       "id": "EN-6fae0bc5a895aab8",
@@ -42606,6 +42715,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-automotive_transportation",
@@ -42616,7 +42726,6 @@
         "TX-industry-financial_services",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-media_entertainment",
         "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
@@ -42653,14 +42762,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
+        "TX-product_form-end_user_application",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-product_form-model",
         "TX-use_case-content_creation",
-        "TX-industry-media_entertainment",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-consumer",
@@ -42691,6 +42800,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
@@ -42702,7 +42812,6 @@
         "TX-use_case-security_operations",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-media_entertainment",
         "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
@@ -42766,10 +42875,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
+        "TX-technology-embodied_ai",
+        "TX-technology-agentic_execution",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
@@ -42791,8 +42900,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
+        "TX-technology-agentic_execution",
         "TX-target_user-business_user",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-industry_applications",
@@ -42869,6 +42978,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
         "TX-industry-telecommunications",
@@ -42877,7 +42987,6 @@
         "TX-product_form-enterprise_software_platform",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-media_entertainment",
         "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
@@ -42942,8 +43051,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
-        "TX-industry-healthcare_life_sciences"
+        "TX-industry-healthcare_life_sciences",
+        "TX-product_form-chip_accelerator"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-14",
@@ -42968,8 +43077,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-industry-healthcare_life_sciences",
+        "TX-product_form-end_user_application",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-product_form-enterprise_software_platform",
@@ -43030,8 +43139,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
+        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -43064,8 +43173,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
+        "TX-technology-embodied_ai",
         "TX-target_user-business_user",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
@@ -43125,8 +43234,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
@@ -43217,8 +43326,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
@@ -43230,7 +43340,6 @@
         "TX-use_case-security_operations",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-media_entertainment",
         "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
@@ -43284,8 +43393,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
@@ -43297,7 +43407,6 @@
         "TX-use_case-security_operations",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-media_entertainment",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
@@ -43352,8 +43461,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
+        "TX-product_form-end_user_application",
         "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
         "TX-industry-telecommunications",
@@ -43362,7 +43472,6 @@
         "TX-product_form-model",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-media_entertainment",
         "TX-use_case-sales",
         "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
@@ -43396,9 +43505,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-healthcare_life_sciences",
@@ -43448,12 +43557,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-automotive_transportation",
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
-        "TX-industry-media_entertainment",
         "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-data_analysis",
         "TX-ai_market_application-ai_development_orchestration",
@@ -43583,8 +43692,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
+        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-product_form-model",
         "TX-technology-multimodal",
@@ -43610,8 +43719,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
+        "TX-technology-agentic_execution",
         "TX-target_user-business_user",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
@@ -43730,8 +43839,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
+        "TX-product_form-end_user_application",
         "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
         "TX-industry-telecommunications",
@@ -43739,7 +43849,6 @@
         "TX-industry-financial_services",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-media_entertainment",
         "TX-use_case-sales",
         "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
@@ -43858,8 +43967,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-industry-healthcare_life_sciences",
+        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
@@ -43889,8 +43998,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
@@ -43900,7 +44010,6 @@
         "TX-industry-financial_services",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-media_entertainment",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
@@ -43934,8 +44043,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
+        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -43971,9 +44080,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
         "TX-industry-telecommunications",
@@ -43981,7 +44091,6 @@
         "TX-industry-financial_services",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-media_entertainment",
         "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
@@ -44038,6 +44147,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-automotive_transportation",
@@ -44049,7 +44159,6 @@
         "TX-industry-financial_services",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
-        "TX-industry-media_entertainment",
         "TX-industry-energy_utilities",
         "TX-industry-education",
         "TX-industry-government_public_sector",
@@ -44161,8 +44270,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
+        "TX-technology-embodied_ai",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-product_form-robotic_system",
@@ -44314,8 +44423,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
+        "TX-technology-agentic_execution",
         "TX-industry-telecommunications",
         "TX-industry-financial_services",
         "TX-product_form-ai_compute_system"
@@ -44413,9 +44522,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-product_form-model",
         "TX-product_form-ai_device",
@@ -44447,8 +44556,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
+        "TX-technology-agentic_execution",
         "TX-use_case-procurement_supply_chain"
       ],
       "relatedEntityIds": [],
@@ -44471,8 +44580,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
+        "TX-technology-agentic_execution",
         "TX-use_case-customer_support"
       ],
       "relatedEntityIds": [],
@@ -44494,8 +44603,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-healthcare_life_sciences"
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-28",
@@ -44672,8 +44781,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
+        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-model",
@@ -44723,8 +44832,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-healthcare_life_sciences"
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-03",
@@ -45059,10 +45168,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
-        "TX-industry-healthcare_life_sciences",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-manufacturing",
@@ -45077,7 +45187,6 @@
         "TX-product_form-model",
         "TX-use_case-research_discovery",
         "TX-technology-speech_audio",
-        "TX-industry-media_entertainment",
         "TX-target_user-consumer",
         "TX-technology-code_generation",
         "TX-use_case-sales",
@@ -45118,7 +45227,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-11-04"
+      "lastSeen": "2026-11-05"
     },
     {
       "id": "EN-74be4cbf48e647b2",
@@ -45135,9 +45244,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -45245,9 +45354,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
@@ -45461,17 +45570,17 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
         "TX-product_form-chip_accelerator",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-model",
         "TX-use_case-content_creation",
-        "TX-industry-media_entertainment",
         "TX-target_user-consumer",
         "TX-technology-code_generation",
         "TX-use_case-sales",
@@ -45501,7 +45610,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-11-04"
+      "lastSeen": "2026-11-05"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -46085,10 +46194,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-media_entertainment",
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
         "TX-product_form-chip_accelerator",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-software_development",
@@ -46100,7 +46210,6 @@
         "TX-use_case-research_discovery",
         "TX-technology-speech_audio",
         "TX-use_case-content_creation",
-        "TX-industry-media_entertainment",
         "TX-target_user-consumer",
         "TX-technology-code_generation",
         "TX-industry-legal_services",
@@ -46153,7 +46262,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-04"
+      "lastSeen": "2026-11-05"
     },
     {
       "id": "EN-a19ad969c84178e9",
