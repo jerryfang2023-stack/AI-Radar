@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { isMainModule } from "./lib/module-entry.mjs";
+import { isCompanyProfileUrl } from "./lib/source-page-kind.mjs";
 
 import crypto from "crypto";
 import fs from "fs";
@@ -193,6 +194,7 @@ function subtractCalendarMonths(dateText, months) {
 }
 
 export function publicEventSourceUrlIssue(value) {
+  if (isCompanyProfileUrl(value)) return "company_profile_requires_original_event_source";
   try {
     const url = new URL(cleanString(value));
     if (/^\/(?:index\.(?:html?|php))?$/iu.test(url.pathname)

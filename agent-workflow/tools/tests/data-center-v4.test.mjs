@@ -2646,7 +2646,6 @@ test("dated title repair and immutable accepted evidence remain required", () =>
   assert.match(agentRules, /must restore that artifact and must not recollect/u);
 });
 
-
 test("source-intake gate replays V4 evidence eligibility without private Raw routing fields", () => {
   const accepted = {
     eligibleForV4Extraction: true,
@@ -3000,7 +2999,6 @@ test("reviewed AI context establishes scope without adding unrelated funding met
   assert.equal(unreviewed.failures.some((failure) => failure.includes("AI industry scope gate")), true);
 });
 
-
 test('malformed funding headlines recover recipients from matching original proceeds', async () => {
   const {repairFundingHeadlineIdentity}=await import('../build-data-center-v4.mjs');
   const {subjectCompanyForEvent,canonicalFundingEventAmount}=await import('../funding-insight-v1-utils.mjs');
@@ -3045,7 +3043,6 @@ test('Chinese startup prefixes resolve from original identity while combined pro
   assert.equal(fundingCombinedRoundsNeedReview({...event,claim_refs:['single']},[{claim_id:'single',claim_type:'funding',verification_status:'accepted',source_quote:'元环智能完成种子轮融资共计数亿元。'}]),false);
 });
 
-
 test('Tencent News publisher suffix cannot become a financing participant', () => {
   const original = '超10亿，苏州AI芯片创企获新融资，布局3D DRAM存算一体_腾讯新闻';
   const body = '苏州AI芯片公司亿铸科技宣布完成超10亿元融资，融资用于芯片研发。';
@@ -3068,7 +3065,6 @@ test('Tencent News publisher suffix cannot become a financing participant', () =
   assert.ok(organizationMentions(normalizeEventTitle('Acme完成融资_腾讯新闻'),{subject:'Acme'},'funding',quote,[{subject:'Acme',source_quote:quote}]).some(e=>e.canonicalName==='Tencent'));
 });
 
-
 test("funding with an old publication byline cannot inherit today's capture date", () => {
   const raw = {published_at:"2026-10-29", clean_text:"研究公司完成融资\n记者·2021年06月01日 12:34\n研究公司完成融资。"};
   const artifact = {source_url:"https://example.com/news/funding"};
@@ -3085,7 +3081,6 @@ test("funding with an old publication byline cannot inherit today's capture date
   assert.ok(bundle.qa_queue.some(row=>row.reason==="funding_source_publication_date_conflict"));
 });
 
-
 test('round-level market trend reports cannot become a company funding event', () => {
   for (const title of ['US Series B Funding Is Up, But Fewer Deals Are Getting Done', 'Series A Funding Is Down, But AI Deals Are Growing', 'U.S. Series C Funding Was Flat In 2026']) {
     const source=entry('series-market-report',title,'Across the US market, AI startups raised $1 billion. US Series B Funding, 2026.',{published_at:'2026-10-30'});
@@ -3098,13 +3093,11 @@ test('round-level market trend reports cannot become a company funding event', (
   }
 });
 
-
 test('present-tense approaching a funding round is not a completed raise despite the headline',()=>{
   const check=body=>eventSourceEligibility({published_at:'2026-10-30',clean_text:body},{source_url:'https://example.com/funding'},'Acme raises up to $30 billion','2026-10-30',{eventType:'funding'});
   assert.equal(check('Acme is closing in on a new funding round of up to $30 billion.').reason,'proposed_financing_not_completed');
   assert.equal(check('Acme has closed a funding round of $30 billion. Earlier it was closing in on a new funding round.').accepted,true);
 });
-
 
 test('Chinese periodic financing summaries cannot become a company raise despite named companies',()=>{
   const body='十月人工智能市场发生投融资事件236起，披露融资金额约1391.55亿元。根据统计，2026年10月我国人工智能领域共发生投融资事件236起。DeepSeek是本月最大一笔投资，腾讯等机构参与。';
@@ -3129,7 +3122,6 @@ test('Chinese periodic financing summaries cannot become a company raise despite
   }
   assert.equal(eventSourceEligibility({published_at:'2026-10-31',clean_text:'公司宣布完成1000万元融资。'},{source_url:'https://example.com/company'},'月报科技完成融资，披露新品分析','2026-11-02',{eventType:'funding'}).accepted,true);
 });
-
 
 test('adjusted fundraising goals are not completed proceeds while explicit closes remain eligible',()=>{
   for(const title of ['AI“烧钱叙事”遇冷？OpenAI融资目标砍掉100亿！','某AI公司将融资目标下调至200亿美元','某AI公司上调募资目标至2亿美元']) {
@@ -3157,7 +3149,6 @@ test('securities filings and retrospective product interviews cannot become comp
  assert.equal(check('Acme raises $550M Series E','Acme announced today a $550M Series E round.').accepted,true);
 });
 
-
 test("publisher AI summaries cannot override original funding claims or their rounds", () => {
   const original = "星河生科宣布完成由远景资本领投的数亿元A+轮融资首关，并迭代AI药物研发平台。";
   const body = original + "\nAI AssistantAI 阅读助手\n星河生科完成数亿元A轮融资首关，扩展AI药物研发。";
@@ -3166,4 +3157,16 @@ test("publisher AI summaries cannot override original funding claims or their ro
   assert.ok(bundle.claims.some(claim => claim.source_quote.includes("A+轮")));
   assert.ok(bundle.claims.every(claim => claim.source_span.end <= original.length));
   for (const claim of bundle.claims) assert.equal(body.slice(claim.source_span.start, claim.source_span.end), claim.source_quote);
+});
+
+test('restored Pedaily company profiles cannot become events through cached model claims',()=>{
+ const raw={raw_qc_decision:'accepted',published_at:'2026-10-30',clean_text:'Acme AI raised seed funding. LATEST DEAL 2025-08-07'};
+ for(const url of ['https://vc.pedaily.cn/company/709415.html','https://m.pedaily.cn/vc/company/709415.html']){
+  assert.equal(publicEventSourceUrlIssue(url),'company_profile_requires_original_event_source');
+  for(const eventType of ['funding','product_release']){
+   assert.deepEqual(eventSourceEligibility(raw,{source_url:url},'Acme AI raised seed funding','2026-11-06',{eventType}),{accepted:false,reason:'company_profile_requires_original_event_source'});
+  }
+ }
+ assert.equal(publicEventSourceUrlIssue('https://news.pedaily.cn/202610/553276.shtml'),'');
+ assert.equal(publicEventSourceUrlIssue('https://example.com/company/709415.html'),'');
 });

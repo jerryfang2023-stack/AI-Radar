@@ -45,6 +45,8 @@ VPS 主运行优先当天，旧日期的发布等待不能阻塞新一天采集�
 
 Portal 隔离发布器使用 `/home/ubuntu/.guanlan-runtime/publisher-checkouts`。部署前创建该目录并归 ubuntu 所有，service 仅对 `/home/ubuntu/.guanlan-runtime` 添加 `ReadWritePaths` 例外，其余 HOME 继续只读。所有发布仓和恢复文件由 ubuntu 写入，不能用 root 把手工恢复产物写进它的 Git 工作树；维护后核对所有者和跟踪文件干净。部分 checkout 失败时保留旧目录，在新干净检出恢复，不 reset 掩盖人工或半更新内容。旧日期恢复允许复用更晚的线上日期，但网站与 Mini 日期仍须一致，不得倒退。
 
+投资界企业档案页（桌面与移动端company目录）仅作研究背景，不作为单条融资披露原文；相关新闻日期不能证明档案中某轮融资的日期。原文采集和恢复接受产物后的事件构建共用URL类型检查，reader回退也不能将档案页转成文章。已保存的正文、原始日期和模型回执保留，需使用独立、可定年的融资披露继续核验。
+
 ## VPS 边界和目录
 
 控制器使用独立账户 `guanlan-financing`：

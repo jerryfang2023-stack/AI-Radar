@@ -1,4 +1,5 @@
 import { load } from 'cheerio';
+import { isCompanyProfileUrl } from '../tools/lib/source-page-kind.mjs';
 
 const tidy = value => String(value || '').replace(/[\t \u00a0]+/gu, ' ').replace(/\n\s*\n/gu, '\n').trim();
 export function originalDate(value) {
@@ -46,7 +47,7 @@ export function parseOriginal(html, { url = '', rules = pageRules } = {}) {
   const meta = {};
   $('meta').each((_,el)=>{ const key=$(el).attr('property')||$(el).attr('name'); if(key) meta[key.toLowerCase()]=$(el).attr('content'); });
   const title = tidy(article?.headline || meta['og:title'] || $('h1').first().text() || $('title').text());
-  const articleLike=!isListingUrl(url)&&Boolean(article||meta['og:type']==='article'||$('article').length===1||$('h1').length===1);
+  const articleLike=!isListingUrl(url)&&!isCompanyProfileUrl(url)&&Boolean(article||meta['og:type']==='article'||$('article').length===1||$('h1').length===1);
   let host = ''; try { host = new URL(url).hostname; } catch {}
   const rule = rules.find(r=>r.hosts.some(h=>host===h || host.endsWith('.'+h)));
   const candidates = [];
@@ -78,7 +79,7 @@ export function parseOriginal(html, { url = '', rules = pageRules } = {}) {
   const bodyCandidates = [rule?.body, 'article', 'main', '[itemprop="articleBody"]', '.entry-content', '.article-content', '#article-content', '#content'].filter(Boolean)
     .flatMap(selector=>$(selector).map((_,el)=>tidy($(el).text())).get()).filter(t=>t.length>=300);
   const body = article?.articleBody ? tidy(load(article.articleBody).text()) : bodyCandidates.sort((a,b)=>b.length-a.length)[0] || tidy($('body').text());
-  const dateEvidence = candidates[0] || null;
+  const dateEvidence = isCompanyProfileUrl(url) ? null : candidates[0] || null;
   return {title,body,date:dateEvidence?.date||'',date_evidence:dateEvidence,links,article_like:articleLike};
 }
 
@@ -117,7 +118,7 @@ export async function readOriginalPage(url, {fetcher=fetch,reader=null,...option
     const page=await fetchText(url,{fetcher,...options});const parsed=parseOriginal(page.text,{url:page.url});
     if(parsed.body.length>=300 && !/\ufffd/u.test(parsed.body) && !/just a moment|access denied|verify you are human|captcha/iu.test(parsed.title)) {
       attempts.push({method:'original_http',status:'success'});
-      if(parsed.date || !reader) return {...parsed,url:page.url,method:'original_http',attempts};
+      if(isCompanyProfileUrl(page.url) || parsed.date || !reader) return {...parsed,url:page.url,method:'original_http',attempts};
     } else attempts.push({method:'original_http',status:'failed',reason:'original_unreadable'});
     if(!reader) throw new Error('original_unreadable');
   } catch(error) { if(!attempts.length)attempts.push({method:'original_http',status:'failed',reason:error.message}); if(!reader)throw error; }
@@ -125,5 +126,6 @@ export async function readOriginalPage(url, {fetcher=fetch,reader=null,...option
   const recovered=await reader(publicHttpUrl(url));
   if(recovered?.body?.length<300 || !recovered?.body || /\ufffd/u.test(recovered.body) || /just a moment|access denied|verify you are human|captcha/iu.test(recovered.title||'')) throw new Error('reader_unreadable');
   if(!recovered.url || publicHttpUrl(recovered.url)!==publicHttpUrl(url))throw new Error('reader_source_mismatch');
-  return {...recovered,url,article_like:!isListingUrl(url),method:'original_reader',date:originalDate(recovered.published_at),date_evidence:originalDate(recovered.published_at)?{date:originalDate(recovered.published_at),method:'reader:original_publication',value:String(recovered.published_at)}:null,attempts:[...attempts,{method:'original_reader',status:'success'}]};
+  const companyProfile=isCompanyProfileUrl(url),date=companyProfile?'':originalDate(recovered.published_at);
+  return {...recovered,url,article_like:!isListingUrl(url)&&!companyProfile,method:'original_reader',date,date_evidence:date?{date,method:'reader:original_publication',value:String(recovered.published_at)}:null,attempts:[...attempts,{method:'original_reader',status:'success'}]};
 }
