@@ -1,0 +1,84 @@
+{
+  "event_id": "EV-c9b317935504c30f",
+  "company_name": "Baseten",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "Baseten 新融资后估值达 300 亿美元",
+    "event_source_refs": [
+      "SA-9241f60c2afd3da5"
+    ],
+    "event_claim_refs": [
+      "CL-99ea0120ae74cb56"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-add1d262225075c0",
+        "canonical_name": "Baseten"
+      }
+    ],
+    "event_metrics": [
+      "$30 billion"
+    ],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-99ea0120ae74cb56",
+        "raw_id": "RAW-70dfd0fc440e2ddc",
+        "subject": "Baseten",
+        "object": "new funding round",
+        "source_quote_length": 148
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 1,
+    "resolved_company": "Baseten"
+  },
+  "queries": [
+    "\"Baseten\" 2026 funding round investors",
+    "\"Baseten\" $30 billion funding announcement",
+    "\"Baseten\" official product customers",
+    "\"Baseten\" \"why we invested\"",
+    "\"Baseten\" 2026 raises led by",
+    "\"Baseten\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "bing_rss",
+      "query": "\"Baseten\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"Baseten\" $30 billion funding announcement",
+      "status": "empty",
+      "count": 0
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"Baseten\" official product customers",
+      "status": "empty",
+      "count": 0
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"Baseten\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"Baseten\" 2026 raises led by",
+      "status": "empty",
+      "count": 0
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"Baseten\" founders headquarters product",
+      "status": "empty",
+      "count": 0
+    }
+  ]
+}

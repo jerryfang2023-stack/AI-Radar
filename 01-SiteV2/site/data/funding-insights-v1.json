@@ -5,17 +5,17 @@
     "site_version": "SITE-V4.6.1-research-retirement",
     "column_version": "FUNDING-INSIGHT-V1.5.0-china-market",
     "taxonomy_version": "TAG-V4.1",
-    "latest_date": "2026-11-05",
-    "last_checked_date": "2026-11-05",
-    "latest_financing_date": "2026-11-04",
-    "generated_at": "2026-11-05T00:52:53.719Z",
-    "card_count": 885,
-    "china_market_card_count": 253,
+    "latest_date": "2026-11-06",
+    "last_checked_date": "2026-11-06",
+    "latest_financing_date": "2026-11-05",
+    "generated_at": "2026-11-06T10:46:37.155Z",
+    "card_count": 891,
+    "china_market_card_count": 255,
     "duplicate_rounds_removed": 88,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-11-05T00:53:53.566Z"
+      "generated_at": "2026-11-06T10:48:39.915Z"
     },
     "market_category_framework": {
       "name": "CB Insights AI 100 2026",
@@ -53,6 +53,7 @@
       "B2轮",
       "B轮",
       "B轮扩展",
+      "C+轮",
       "C1轮",
       "C3轮",
       "C3轮扩展",
@@ -337,6 +338,4459 @@
   "cards": [
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-bb7c7a87a4cf6fe9",
+      "triggered_by_event_id": "EV-0eccf9e0527ff890",
+      "as_of_date": "2026-11-06",
+      "company": {
+        "entity_id": "EN-dc444b08262f39f4",
+        "name": "Venomics AI",
+        "full_name": "Venomics AI",
+        "website": "",
+        "summary": "Venomics AI是一家从印度科学理工学院（IISc）分拆出的生物科技公司，结合毒液生物学、分子测序、人工智能与实验筛选，发现并开发源自毒液的候选治疗分子。",
+        "headquarters": "印度班加罗尔",
+        "founders": [
+          {
+            "name": "Kartik Sunagar",
+            "role": "创始人兼董事，IISc教授，专长毒液演化与抗蛇毒血清开发",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3e703ec1d035b398",
+                "quote": "said Kartik Sunagar, founder and director, Venomics AI, and professor at IISc",
+                "source_content_hash": "2b182d5afd50feb7",
+                "quote_hash": "f89e30572c0b9f37d4a47ff1400588ced997840fdda3117dbaa441e66355a2d6"
+              },
+              {
+                "source_id": "FISRC-646a3571f755c9ac",
+                "quote": "Sunagar brings expertise in venom evolution and antivenom development",
+                "source_content_hash": "6c59cc3bdfa0ddac",
+                "quote_hash": "64d556abcc53d290c77f5c57dc75d63ce1848f8802d02e985750ea5acc0dfcb1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Vinay Prabhu",
+            "role": "联合创始人兼首席技术官，机器学习与大规模AI系统背景",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3e703ec1d035b398",
+                "quote": "Prabhu, co-founder and chief technology officer, holds a PhD from Carnegie Mellon University",
+                "source_content_hash": "2b182d5afd50feb7",
+                "quote_hash": "f80ea35f0e83301d410e002cf5d4999b4e79485465d499144b79c18eabf1003e"
+              },
+              {
+                "source_id": "FISRC-646a3571f755c9ac",
+                "quote": "Prabhu has a background in machine learning and large-scale AI systems",
+                "source_content_hash": "6c59cc3bdfa0ddac",
+                "quote_hash": "88f621e31d96d185f1f05a27459ea91b9302eed93ddcb5eb8e83fc86d91f971f"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6cba22194a39c15c",
+            "quote": "Venomics AI, a biotechnology company spun out of the Indian Institute of Science (IISc)",
+            "source_content_hash": "60829cacf3128a52f93c2e18db5105011ce0766383754c5c7553a552d7ef4c36",
+            "quote_hash": "077d681f70fcd812e5360bc044abdb4d9363c41870ac04deee4187ef4fd12038"
+          },
+          {
+            "source_id": "FISRC-3e703ec1d035b398",
+            "quote": "Venomics AI was co-founded by Sunagar and Vinay Prabhu",
+            "source_content_hash": "2b182d5afd50feb7",
+            "quote_hash": "51a3e6ea26416af4a541a5dcc9ef0243f8680f0b3a369eae8b179a7ccedbc99f"
+          }
+        ],
+        "application_entity_id": "EN-dc444b08262f39f4",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "预种子轮",
+        "amount": "$2.7 million",
+        "total_raised": "",
+        "announced_at": "2026-11-05",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Speciale Invest",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6cba22194a39c15c",
+                "quote": "The pre-seed round was co-led by Speciale Invest and South Park Commons, with participation from Operators Studio.",
+                "source_content_hash": "60829cacf3128a52f93c2e18db5105011ce0766383754c5c7553a552d7ef4c36",
+                "quote_hash": "faf4422e59d2d5507ca0d3f518396b2a80461c94ac30ff965116356342b3373d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "South Park Commons",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6cba22194a39c15c",
+                "quote": "The pre-seed round was co-led by Speciale Invest and South Park Commons, with participation from Operators Studio.",
+                "source_content_hash": "60829cacf3128a52f93c2e18db5105011ce0766383754c5c7553a552d7ef4c36",
+                "quote_hash": "faf4422e59d2d5507ca0d3f518396b2a80461c94ac30ff965116356342b3373d"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-5a23b303f149e7"
+          },
+          {
+            "name": "Operators Studio",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6cba22194a39c15c",
+                "quote": "The pre-seed round was co-led by Speciale Invest and South Park Commons, with participation from Operators Studio.",
+                "source_content_hash": "60829cacf3128a52f93c2e18db5105011ce0766383754c5c7553a552d7ef4c36",
+                "quote_hash": "faf4422e59d2d5507ca0d3f518396b2a80461c94ac30ff965116356342b3373d"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6cba22194a39c15c",
+            "quote": "Venomics AI, a biotechnology company spun out of the Indian Institute of Science (IISc), has raised $2.7 million in its first institutional funding round.",
+            "source_content_hash": "60829cacf3128a52f93c2e18db5105011ce0766383754c5c7553a552d7ef4c36",
+            "quote_hash": "1862f5ca127ee57659aa4c1d1b3f9bd7422e02a13ac150daf0ab93ebcf962544"
+          },
+          {
+            "source_id": "FISRC-6cba22194a39c15c",
+            "quote": "has raised $2.7 million in its first institutional funding round",
+            "source_content_hash": "60829cacf3128a52f93c2e18db5105011ce0766383754c5c7553a552d7ef4c36",
+            "quote_hash": "e19c6bfe840e1243485572e223e97abb027d9aa49c5b82275fdb8d3c0518f163"
+          },
+          {
+            "source_id": "FISRC-646a3571f755c9ac",
+            "quote": "Venomics AI raised $2.7 million in a pre-seed funding round co-led by Speciale Invest and South Park Commons.",
+            "source_content_hash": "6c59cc3bdfa0ddac",
+            "quote_hash": "7bac91269bd8c747164c76f05f9b915c9ae1726a35a115bac188f0f58f885bfc"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$2.7 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "270 万美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-0eccf9e0527ff890",
+            "round_original": "预种子轮",
+            "amount": "$2.7 million",
+            "announced_at": "2026-11-05",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6cba22194a39c15c",
+                "quote": "Venomics AI, a biotechnology company spun out of the Indian Institute of Science (IISc), has raised $2.7 million in its first institutional funding round.",
+                "source_content_hash": "60829cacf3128a52f93c2e18db5105011ce0766383754c5c7553a552d7ef4c36",
+                "quote_hash": "1862f5ca127ee57659aa4c1d1b3f9bd7422e02a13ac150daf0ab93ebcf962544"
+              },
+              {
+                "source_id": "FISRC-6cba22194a39c15c",
+                "quote": "has raised $2.7 million in its first institutional funding round",
+                "source_content_hash": "60829cacf3128a52f93c2e18db5105011ce0766383754c5c7553a552d7ef4c36",
+                "quote_hash": "e19c6bfe840e1243485572e223e97abb027d9aa49c5b82275fdb8d3c0518f163"
+              },
+              {
+                "source_id": "FISRC-646a3571f755c9ac",
+                "quote": "Venomics AI raised $2.7 million in a pre-seed funding round co-led by Speciale Invest and South Park Commons.",
+                "source_content_hash": "6c59cc3bdfa0ddac",
+                "quote_hash": "7bac91269bd8c747164c76f05f9b915c9ae1726a35a115bac188f0f58f885bfc"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 2700000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "270 万美元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-6cba22194a39c15c",
+          "FISRC-646a3571f755c9ac"
+        ]
+      },
+      "products": [
+        {
+          "name": "Venom Atlas",
+          "description": "将毒液来源分子数据与实验室验证、药物发现相连接的平台；用AI对候选分子排序，并通过实验室功能筛选检验预测，实验结果再反馈到后续预测与分子设计中。",
+          "target_customers": "药物发现与治疗开发相关研究及合作方",
+          "features": [
+            "整合分子测序与毒液生物学构建分子数据集",
+            "AI优先排序候选分子",
+            "实验室功能筛选验证预测",
+            "实验结果回流改进预测与分子设计"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6cba22194a39c15c",
+              "quote": "building the Venom Atlas, a platform that connects venom-derived molecular data with laboratory validation and drug discovery",
+              "source_content_hash": "60829cacf3128a52f93c2e18db5105011ce0766383754c5c7553a552d7ef4c36",
+              "quote_hash": "d5da64bffd355b8c20ceb260a9f4603ed5f284275b501ac759582bd55d14e0ef"
+            },
+            {
+              "source_id": "FISRC-3e703ec1d035b398",
+              "quote": "uses AI to prioritise candidates, and tests those predictions through functional screening in the laboratory",
+              "source_content_hash": "2b182d5afd50feb7",
+              "quote_hash": "b48868c839f259d950d801fe8f1a6f101493a518d06ed26e15bbcf5bb5face35"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Snaayu Lifesciences",
+          "product": "从芋螺毒液中分离和表征新型镇痛化合物",
+          "scenario": "毒液来源镇痛分子发现",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "Venomics AI构建Venom Atlas平台并以AI排序候选分子、实验室筛选回馈预测；Snaayu Lifesciences聚焦从芋螺毒液分离和表征新型镇痛化合物。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6cba22194a39c15c",
+              "quote": "Another player in the space is Snaayu Lifesciences, incubated at C-CAMP, which is working on isolating and characterising novel analgesic compounds from cone snail venom.",
+              "source_content_hash": "60829cacf3128a52f93c2e18db5105011ce0766383754c5c7553a552d7ef4c36",
+              "quote_hash": "972295875e1bf3a87315dc65f6df5243b47df4c414e3b3e3d94290728eae7f41"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Peptris Technologies",
+          "product": "AI驱动分子发现与实验验证平台",
+          "scenario": "推进潜在候选药物",
+          "target_customer": "",
+          "funding_summary": "2026年2月完成7000万卢比A轮，由IAN Alpha Fund与Speciale Invest联合领投",
+          "core_difference": "Venomics AI以毒液分子数据和Venom Atlas为核心；Peptris Technologies以AI驱动分子发现与实验验证推进候选药物，且已完成A轮融资。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6cba22194a39c15c",
+              "quote": "Bengaluru-based Peptris Technologies raised Rs 70 crore in a Series A round co-led by IAN Alpha Fund and Speciale Invest in February 2026.",
+              "source_content_hash": "60829cacf3128a52f93c2e18db5105011ce0766383754c5c7553a552d7ef4c36",
+              "quote_hash": "4cc799946170adf5ef1c5ac17d8e614dc2807a1689b540d43f781b2c19d204a9"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "270万美元",
+          "observed_at": "2026-11-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6cba22194a39c15c",
+              "quote": "has raised $2.7 million in its first institutional funding round",
+              "source_content_hash": "60829cacf3128a52f93c2e18db5105011ce0766383754c5c7553a552d7ef4c36",
+              "quote_hash": "e19c6bfe840e1243485572e223e97abb027d9aa49c5b82275fdb8d3c0518f163"
+            }
+          ]
+        },
+        {
+          "label": "公司成立时间",
+          "value": "2026年5月",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6cba22194a39c15c",
+              "quote": "Co-founded in May 2026 by Sunagar and Vinay Prabhu",
+              "source_content_hash": "60829cacf3128a52f93c2e18db5105011ce0766383754c5c7553a552d7ef4c36",
+              "quote_hash": "22997710c89fd3f081dc4cd07aa4455e96138dcd2bde2050f12978675cebc4f9"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Kartik Sunagar",
+          "quote": "Animal venoms represent one of nature’s richest yet least explored sources of potential medicines, and at Venomics AI, we are combining cutting-edge experimental science with artificial intelligence to unlock this extraordinary potential",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3e703ec1d035b398",
+              "quote": "Animal venoms represent one of nature’s richest yet least explored sources of potential medicines, and at Venomics AI, we are combining cutting-edge experimental science with artificial intelligence to unlock this extraordinary potential",
+              "source_content_hash": "2b182d5afd50feb7",
+              "quote_hash": "a416ef72b458f1650c3d16e7478b992192cf23cc95ae81ed190004b3cf93a852"
+            }
+          ]
+        },
+        {
+          "speaker": "Arjun Rao",
+          "quote": "India’s venom biodiversity is among the richest in the world, and Kartik is one of the world’s leading experts on it.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3e703ec1d035b398",
+              "quote": "India’s venom biodiversity is among the richest in the world, and Kartik is one of the world’s leading experts on it.",
+              "source_content_hash": "2b182d5afd50feb7",
+              "quote_hash": "94cea7408e6b9efcda8efed8b1f2ea3396f140a073756679fba4d9a5a7c4d88e"
+            }
+          ]
+        },
+        {
+          "speaker": "Prateek Mehta",
+          "quote": "This is a global opportunity, but India has an advantage, as one of the world's richest biodiversity hotspots.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3e703ec1d035b398",
+              "quote": "This is a global opportunity, but India has an advantage, as one of the world's richest biodiversity hotspots.",
+              "source_content_hash": "2b182d5afd50feb7",
+              "quote_hash": "9c8ff8318e88e188f336bf3953c8c317e57aedc58f67ea79e8b9be7f6d992b48"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Speciale Invest",
+            "speaker": "Arjun Rao",
+            "speaker_role": "Speciale Invest普通合伙人",
+            "rationale": "看重印度毒液生物多样性、Kartik Sunagar在该领域的专业积累与样本获取能力，以及Vinay Prabhu的AI能力，认为二者结合构建的Venom Atlas数据集可用AI加速药物发现。",
+            "quote": "India’s venom biodiversity is among the richest in the world, and Kartik is one of the world’s leading experts on it. Few people combine his deep understanding of these venoms with the access to study them. Vinay brings the AI depth to accelerate this bio-discovery.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3e703ec1d035b398",
+                "quote": "India’s venom biodiversity is among the richest in the world, and Kartik is one of the world’s leading experts on it. Few people combine his deep understanding of these venoms with the access to study them. Vinay brings the AI depth to accelerate this bio-discovery.",
+                "source_content_hash": "2b182d5afd50feb7",
+                "quote_hash": "027ee2c01452cbc8997309f11396d16c9d6d1383529322e97fd95f885723b98f"
+              }
+            ]
+          },
+          {
+            "institution": "South Park Commons",
+            "speaker": "Prateek Mehta",
+            "speaker_role": "South Park Commons普通合伙人",
+            "rationale": "认为毒液是自然界古老的靶向系统，AI使分子搜索从逐个分子转向规模化；印度生物多样性构成优势，创始人长期积累使其具备发现潜力。",
+            "quote": "This is a global opportunity, but India has an advantage, as one of the world's richest biodiversity hotspots. Kartik has spent two decades in this space, and Vinay is a lifelong AI builder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3e703ec1d035b398",
+                "quote": "This is a global opportunity, but India has an advantage, as one of the world's richest biodiversity hotspots. Kartik has spent two decades in this space, and Vinay is a lifelong AI builder",
+                "source_content_hash": "2b182d5afd50feb7",
+                "quote_hash": "96f708b7dfa87227625e1c40711f22b4b6eaa7a6c0c34aa246d4dec780a3082e"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是Venom Atlas能否把印度毒液生物多样性转化为可规模化、经实验室验证的分子数据集，并让AI预测与实验筛选形成闭环。当前已验证信号限于平台初始架构已建立、加入NVIDIA Inception计划、入围2026 Indo-Boston Biotech Bridge Award前五名，以及本轮270万美元首笔机构融资；尚无候选药物进入临床或达成交易等下游验证，投资逻辑主要依赖创始团队背景与数据资产假设。",
+        "validated_signals": [
+          "完成270万美元首笔机构融资，由Speciale Invest与South Park Commons联合领投，Operators Studio参投",
+          "已建立平台初始架构",
+          "加入NVIDIA Inception计划",
+          "入围2026 Indo-Boston Biotech Bridge Award前五名"
+        ],
+        "risks": [
+          "平台尚处早期，来源未披露任何候选分子进入临床、达成授权或产生收入",
+          "Venom Atlas数据集规模与AI预测有效性仍待实验验证，来源仅称将扩展数据集和强化筛选能力",
+          "本轮为种子前轮，累计融资额未披露，后续研发与团队建设资金需求存在不确定性"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "healthcare_life_sciences",
+        "market_application_id": "",
+        "use_case_ids": [
+          "research_discovery"
+        ],
+        "industry_ids": [
+          "healthcare_life_sciences"
+        ],
+        "target_user_ids": [
+          "researcher"
+        ],
+        "sector": "毒液分子数据与AI驱动的药物发现平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Venom Atlas能否把印度毒液生物多样性转化为可规模化、经实验室验证的分子数据集，并让AI预测与实验筛选形成闭环。当前已验证信号限于平台初始架构已建立、加入NVIDIA Inception计划、入围2026 Indo-Boston Biotech Bridge Award前五名，以及本轮270万美元首笔机构融资；尚无候选药物进入临床或达成交易等下游验证，投资逻辑主要依赖创始团队背景与数据资产假设。",
+          "evidence_signals": [
+            "完成270万美元首笔机构融资，由Speciale Invest与South Park Commons联合领投，Operators Studio参投",
+            "已建立平台初始架构",
+            "加入NVIDIA Inception计划",
+            "入围2026 Indo-Boston Biotech Bridge Award前五名"
+          ],
+          "risks": [
+            "平台尚处早期，来源未披露任何候选分子进入临床、达成授权或产生收入",
+            "Venom Atlas数据集规模与AI预测有效性仍待实验验证，来源仅称将扩展数据集和强化筛选能力",
+            "本轮为种子前轮，累计融资额未披露，后续研发与团队建设资金需求存在不确定性"
+          ],
+          "institutional_rationale_status": "disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Venom Atlas",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Kartik Sunagar",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Vinay Prabhu",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Speciale Invest",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "South Park Commons",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Operators Studio",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Snaayu Lifesciences",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Peptris Technologies",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-6cba22194a39c15c",
+          "source_url": "https://entrackr.com/snippets/bio-tech-startup-venomics-ai-raises-27-mn-in-pre-seed-round-12785718",
+          "title": "生物科技初创公司Venomics AI完成270万美元种子前轮融资",
+          "publisher": "entrackr.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-06T00:20:37.340Z",
+          "content_hash": "60829cacf3128a52f93c2e18db5105011ce0766383754c5c7553a552d7ef4c36",
+          "source_artifact_id": "SA-18d7143635a8d881",
+          "raw_id": "RAW-dfa0718d0409dd11",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-646a3571f755c9ac",
+          "source_url": "https://viestories.com/funding-alert/venomics-ai-raises-27-million-in-pre-seed-round-led-by-speciale-invest-and-south-park-commons-12785813",
+          "title": "Venomics AI Raises $2.7 Million in Pre-Seed Round Led by Speciale Invest and South Park Commons",
+          "publisher": "viestories.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-06T00:52:17.026Z",
+          "content_hash": "6c59cc3bdfa0ddac",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-3e703ec1d035b398",
+          "source_url": "https://www.business-standard.com/companies/news/venomics-ai-raises-2-7-million-to-discover-drugs-from-animal-venom-126110501178_1.html",
+          "title": "Venomics AI raises $2.7 million to discover drugs from animal venom",
+          "publisher": "business-standard.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-06T00:52:17.269Z",
+          "content_hash": "2b182d5afd50feb7",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-06T00:52:32.156Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-06T00:52:32.156Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Venom Atlas"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Kartik Sunagar",
+            "Vinay Prabhu"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-0eccf9e0527ff890"
+      ],
+      "aggregation": {
+        "key": "EN-dc444b08262f39f4|pre_seed|USD:exact:2700000:::|2026-11-05",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-bb7c7a87a4cf6fe9",
+          "event_ids": [
+            "EV-0eccf9e0527ff890"
+          ],
+          "round": "预种子轮",
+          "round_code": "pre_seed",
+          "round_original": "预种子轮",
+          "amount_original": "$2.7 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 2700000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "270 万美元"
+          },
+          "announced_at": "2026-11-05",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "ai_infrastructure_software",
+        "name": "AI 基础设施软件",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "industry_applications",
+        "name": "行业应用",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "healthcare_life_sciences",
+        "name": "医疗与生命科学",
+        "method": "card_explicit"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-0eccf9e0527ff890",
+        "direction": ""
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-ff15cd4645eee4a5",
+      "triggered_by_event_id": "EV-cd20a6ff672972eb",
+      "as_of_date": "2026-11-06",
+      "company": {
+        "entity_id": "EN-5e20292808d5084b",
+        "name": "Siggy",
+        "full_name": "Siggy",
+        "website": "",
+        "summary": "Siggy是一家总部位于纽约的心理健康服务公司，利用AI对话在就诊间隙收集患者病史并追踪进展，由持证临床医生提供视频诊疗与处方。",
+        "headquarters": "纽约",
+        "founders": [
+          {
+            "name": "Jonathan Sabbagh",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-98dccdb46867778c",
+                "quote": "Jonathan Sabbagh and Edvard Engesæth, co-founders of Siggy.",
+                "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+                "quote_hash": "eb537445608ab4636ecf3b0a542faffae7b6e4c670e5dbc44edae75a4b583082"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Edvard Engesæth",
+            "role": "联合创始人兼COO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-98dccdb46867778c",
+                "quote": "said Engesæth, the startup’s COO, in an interview",
+                "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+                "quote_hash": "aaa05e4df59d9c8c0ab5a5ae80c39714e1321c2f648e84eee532cb5f192c392a"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-98dccdb46867778c",
+            "quote": "Siggy has raised $6 million in pre-seed funding to build a mental health service that uses AI to collect patients’ histories and track progress between appointments with licensed clinicians",
+            "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+            "quote_hash": "9f1c433cb114792fcec466c19f6852fb53f12704c3d3f86ac70a91e6f8a141ee"
+          }
+        ],
+        "application_entity_id": "EN-5e20292808d5084b",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "预种子轮",
+        "amount": "$6 million",
+        "total_raised": "",
+        "announced_at": "2026-11-05",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Village Global",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-98dccdb46867778c",
+                "quote": "Village Global led the financing for New York-based Siggy.",
+                "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+                "quote_hash": "bb086d710eaa6f50c9bb90e40e3c861af9b9f038573fa2c137582cd878d2e49b"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-db79cd74268469"
+          },
+          {
+            "name": "Union Square Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-98dccdb46867778c",
+                "quote": "They include Albert Wenger of Union Square Ventures, Mercury co-founder Immad Akhund, and Cityblock Health co-founder Toyin Ajayi, through Coalition Operators.",
+                "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+                "quote_hash": "2a1e30b39c3fd57455d88a29a11adf2058fc6affb2cd637f8f7ed19d84519b95"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b456f8ea12c4cb"
+          },
+          {
+            "name": "Coalition Operators",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-98dccdb46867778c",
+                "quote": "They include Albert Wenger of Union Square Ventures, Mercury co-founder Immad Akhund, and Cityblock Health co-founder Toyin Ajayi, through Coalition Operators.",
+                "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+                "quote_hash": "2a1e30b39c3fd57455d88a29a11adf2058fc6affb2cd637f8f7ed19d84519b95"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "PsyMed Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-98dccdb46867778c",
+                "quote": "Other participants include PsyMed Ventures, Mystic Ventures and Gokul Rajaram.",
+                "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+                "quote_hash": "313406c9ee9da6d7579ff229be40c1a7130ae007719aa2cdda73e6c185715a25"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mystic Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-98dccdb46867778c",
+                "quote": "Other participants include PsyMed Ventures, Mystic Ventures and Gokul Rajaram.",
+                "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+                "quote_hash": "313406c9ee9da6d7579ff229be40c1a7130ae007719aa2cdda73e6c185715a25"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Gokul Rajaram",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-98dccdb46867778c",
+                "quote": "Other participants include PsyMed Ventures, Mystic Ventures and Gokul Rajaram.",
+                "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+                "quote_hash": "313406c9ee9da6d7579ff229be40c1a7130ae007719aa2cdda73e6c185715a25"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-5ffcc966eedf1c"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-98dccdb46867778c",
+            "quote": "Siggy has raised $6 million in pre-seed funding to build a mental health service that uses AI to collect patients’ histories and track progress between appointments with licensed clinicians, the startup told Crunchbase News exclusively.",
+            "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+            "quote_hash": "1f10daaf85edf30c8acc237c5da20429420d8bf82aec8c0285589a307a670b3e"
+          },
+          {
+            "source_id": "FISRC-98dccdb46867778c",
+            "quote": "Siggy has raised $6 million in pre-seed funding",
+            "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+            "quote_hash": "3cd82fbd81e2d3d2a7598ab7f6e965c7a59b3bd4816a90bdc373e400d9d416df"
+          },
+          {
+            "source_id": "FISRC-98dccdb46867778c",
+            "quote": "Village Global led the financing for New York-based Siggy.",
+            "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+            "quote_hash": "bb086d710eaa6f50c9bb90e40e3c861af9b9f038573fa2c137582cd878d2e49b"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$6 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "600 万美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-cd20a6ff672972eb",
+            "round_original": "预种子轮",
+            "amount": "$6 million",
+            "announced_at": "2026-11-05",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-98dccdb46867778c",
+                "quote": "Siggy has raised $6 million in pre-seed funding to build a mental health service that uses AI to collect patients’ histories and track progress between appointments with licensed clinicians, the startup told Crunchbase News exclusively.",
+                "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+                "quote_hash": "1f10daaf85edf30c8acc237c5da20429420d8bf82aec8c0285589a307a670b3e"
+              },
+              {
+                "source_id": "FISRC-98dccdb46867778c",
+                "quote": "Siggy has raised $6 million in pre-seed funding",
+                "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+                "quote_hash": "3cd82fbd81e2d3d2a7598ab7f6e965c7a59b3bd4816a90bdc373e400d9d416df"
+              },
+              {
+                "source_id": "FISRC-98dccdb46867778c",
+                "quote": "Village Global led the financing for New York-based Siggy.",
+                "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+                "quote_hash": "bb086d710eaa6f50c9bb90e40e3c861af9b9f038573fa2c137582cd878d2e49b"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 6000000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "600 万美元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-98dccdb46867778c"
+        ]
+      },
+      "products": [
+        {
+          "name": "Siggy心理健康服务",
+          "description": "患者先通过免费AI对话回答病史问题，随后由持证临床医生视频复诊、诊断并按需开药；就诊间隙患者可与AI对话并每日打卡睡眠、情绪、用药和身体感受，结合可穿戴设备数据生成每日百分制Siggy Score。",
+          "target_customers": "寻求心理健康诊疗与用药管理的患者",
+          "features": [
+            "AI对话采集病史",
+            "持证临床医生视频诊疗与处方",
+            "每日打卡与可穿戴设备数据整合",
+            "每日Siggy Score评分并向临床医生标记变化"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-98dccdb46867778c",
+              "quote": "Patients begin by answering questions about their history through a free AI conversation. They then meet a licensed clinician by video, who reviews that information.",
+              "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+              "quote_hash": "4071eb6914d933191066fe9a2ca0560f6f4c6a2fea1979b5c7c5ccc5d80d2af9"
+            },
+            {
+              "source_id": "FISRC-98dccdb46867778c",
+              "quote": "The company combines those answers with data from connected wearable devices to produce a daily “Siggy Score” out of 100.",
+              "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+              "quote_hash": "ad6f449dced2b1a67733ba313cd7c48cfdac033425b2b019d31c67a712a62295"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$6 million",
+          "observed_at": "2026-11-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-98dccdb46867778c",
+              "quote": "Siggy has raised $6 million in pre-seed funding",
+              "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+              "quote_hash": "3cd82fbd81e2d3d2a7598ab7f6e965c7a59b3bd4816a90bdc373e400d9d416df"
+            }
+          ]
+        },
+        {
+          "label": "Siggy Score满分",
+          "value": "100",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-98dccdb46867778c",
+              "quote": "produce a daily “Siggy Score” out of 100",
+              "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+              "quote_hash": "0def6cb3b9ba4a937f518ea27810734ac7a5bf6c725f01e84ad05f847c32562c"
+            }
+          ]
+        },
+        {
+          "label": "商业保险覆盖州数",
+          "value": "50个州",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-98dccdb46867778c",
+              "quote": "Siggy accepts commercial insurance in all 50 states",
+              "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+              "quote_hash": "7ebba68108f9f11c2ee390720284127c153cd0f22ad9e67a9dc421acf9a4cb04"
+            }
+          ]
+        },
+        {
+          "label": "治疗前八周每周随访次数",
+          "value": "每周一次",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-98dccdb46867778c",
+              "quote": "Patients also receive weekly check-ins during their first eight weeks of treatment",
+              "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+              "quote_hash": "d3a9cfb15d111d3b527689ec56afd0245bbf800d6436ab9d2df1c6912b1541c6"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Edvard Engesæth",
+          "quote": "AI helps maintain the conversation and organize what patients share, so clinicians have a richer picture of the person that they’re treating",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-98dccdb46867778c",
+              "quote": "“AI helps maintain the conversation and organize what patients share, so clinicians have a richer picture of the person that they’re treating,”",
+              "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+              "quote_hash": "789b76b859226baf21a3387658125a573cad0693d5dbf8a03bd974b13cbb1ce7"
+            }
+          ]
+        },
+        {
+          "speaker": "Amrit Rao",
+          "quote": "Pairing that vision with an insurance-based model makes the ambition about access as much as technology",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-98dccdb46867778c",
+              "quote": "“Pairing that vision with an insurance-based model makes the ambition about access as much as technology,”",
+              "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+              "quote_hash": "873fb160fced325166c9a702ac1fdb851e14a1e3a93c6fcc7158ec2a6e4cf87b"
+            }
+          ]
+        },
+        {
+          "speaker": "Immad Akhund",
+          "quote": "That’s why I’m backing them again with Siggy",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-98dccdb46867778c",
+              "quote": "“That’s why I’m backing them again with Siggy,”",
+              "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+              "quote_hash": "cb8fb81b5824beb41f52cc5595c36089ce340aeaa6b39fa0f1795293e4a29fa6"
+            }
+          ]
+        },
+        {
+          "speaker": "columbiacc.com",
+          "quote": "Siggy’s favorite motto is aim so high that you’ll never be bored.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a81d005cfa61f910",
+              "quote": "Siggy’s favorite motto is aim so high that you’ll never be bored.",
+              "source_content_hash": "20ad07214425b863",
+              "quote_hash": "ed7416125785e6a5b06a6a54b50fe856139e7bad4e6732376ee62e75909ab056"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是：AI能否在临床就诊间隙持续采集并结构化患者信息，从而让持证医生获得更完整的病情图景，并以商业保险覆盖全美50州的支付路径支撑服务规模化。当前已验证信号包括：公司已开始接受付费患者、接受全美商业保险、产品流程已明确为AI采集病史加视频临床诊疗。证据边界在于：本轮为pre-seed首笔外部融资，来源未披露患者数量、收入、留存或临床效果数据，Siggy Score的临床有效性尚无验证。",
+        "validated_signals": [
+          "已开始接受付费患者",
+          "接受全美50州商业保险",
+          "产品流程为AI对话采集病史后由持证临床医生视频诊疗"
+        ],
+        "risks": [
+          "来源未披露患者数量、收入或留存数据，商业化规模仍待验证",
+          "Siggy Score与可穿戴数据结合的临床有效性尚无来源验证",
+          "公司不处理管制药物且非危机服务，适用人群受限",
+          "计划中的跨机构信息共享功能尚未上线"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "healthcare_life_sciences",
+        "market_application_id": "",
+        "use_case_ids": [],
+        "industry_ids": [
+          "healthcare_life_sciences"
+        ],
+        "target_user_ids": [
+          "consumer"
+        ],
+        "sector": "AI辅助心理健康诊疗服务",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：AI能否在临床就诊间隙持续采集并结构化患者信息，从而让持证医生获得更完整的病情图景，并以商业保险覆盖全美50州的支付路径支撑服务规模化。当前已验证信号包括：公司已开始接受付费患者、接受全美商业保险、产品流程已明确为AI采集病史加视频临床诊疗。证据边界在于：本轮为pre-seed首笔外部融资，来源未披露患者数量、收入、留存或临床效果数据，Siggy Score的临床有效性尚无验证。",
+          "evidence_signals": [
+            "已开始接受付费患者",
+            "接受全美50州商业保险",
+            "产品流程为AI对话采集病史后由持证临床医生视频诊疗"
+          ],
+          "risks": [
+            "来源未披露患者数量、收入或留存数据，商业化规模仍待验证",
+            "Siggy Score与可穿戴数据结合的临床有效性尚无来源验证",
+            "公司不处理管制药物且非危机服务，适用人群受限",
+            "计划中的跨机构信息共享功能尚未上线"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Siggy心理健康服务",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jonathan Sabbagh",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Edvard Engesæth",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Village Global",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Union Square Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Coalition Operators",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "PsyMed Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Mystic Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Gokul Rajaram",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-98dccdb46867778c",
+          "source_url": "https://news.crunchbase.com/venture/nurx-journey-clinical-founders-raise-mental-health-startup-siggy/",
+          "title": "独家：Nurx与Journey Clinical联合创始人筹集600万美元，用于心理健康初创公司Siggy",
+          "publisher": "news.crunchbase.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-06T00:20:26.524Z",
+          "content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+          "source_artifact_id": "SA-d027fb4c69178f39",
+          "raw_id": "RAW-010e626951a35b34",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-a81d005cfa61f910",
+          "source_url": "https://www.columbiacc.com/about/meet-our-team/siggy-pfendler-leed-ap/",
+          "title": "Siggy Pfendler, LEED AP - Columbia Construction",
+          "publisher": "columbiacc.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-06T00:51:56.033Z",
+          "content_hash": "20ad07214425b863",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-06T00:52:12.104Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-06T00:52:12.104Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Siggy心理健康服务"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Edvard Engesæth",
+            "Jonathan Sabbagh"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-cd20a6ff672972eb"
+      ],
+      "aggregation": {
+        "key": "EN-5e20292808d5084b|pre_seed|USD:exact:6000000:::|2026-11-05",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-ff15cd4645eee4a5",
+          "event_ids": [
+            "EV-cd20a6ff672972eb"
+          ],
+          "round": "预种子轮",
+          "round_code": "pre_seed",
+          "round_original": "预种子轮",
+          "amount_original": "$6 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 6000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "600 万美元"
+          },
+          "announced_at": "2026-11-05",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "end_user_application",
+        "name": "终端 AI 应用",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "industry_applications",
+        "name": "行业应用",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "healthcare_life_sciences",
+        "name": "医疗与生命科学",
+        "method": "card_explicit"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-cd20a6ff672972eb",
+        "direction": ""
+      },
+      "translations": {
+        "zh-CN": {
+          "metrics[1].label": {
+            "text": "Siggy Score满分",
+            "source_hash": "441badcd74148eea928546101f02bac9afef049e429b57d47176b6ad381b3294",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-06T10:48:39.915Z",
+            "status": "translated"
+          }
+        }
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-d42bc84c272ae23e",
+      "triggered_by_event_id": "EV-de7efff10b83dd08",
+      "as_of_date": "2026-11-06",
+      "company": {
+        "entity_id": "EN-8fcd8da8532772e8",
+        "name": "聚时科技",
+        "full_name": "聚时科技（上海）有限公司",
+        "website": "",
+        "summary": "工业AI及精密检测仪器设备研发商，通过尖端AI技术赋能集成电路等高端制造，产品包括国产替代的半导体检测量测高精度设备、半导体AI良率分析系统等。",
+        "headquarters": "上海松江区",
+        "founders": [
+          {
+            "name": "郑军",
+            "role": "创始人CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c7cddf1ba1c43a3f",
+                "quote": "创始人CEO郑军博士表示",
+                "source_content_hash": "875c9f7d4cfa30d457778df05da64c49c834c228019e41487c6d66e780cf0f03",
+                "quote_hash": "d7e6afa876a2d25d15fa487092048b715aee32d9a04a5f0d98afc19c20edb2a0"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c7cddf1ba1c43a3f",
+            "quote": "聚时科技（上海）有限公司（简称：聚时科技）聚焦于工业AI及精密检测仪器设备产品研发，公司定位通过尖端AI技术赋能集成电路等高端制造。",
+            "source_content_hash": "875c9f7d4cfa30d457778df05da64c49c834c228019e41487c6d66e780cf0f03",
+            "quote_hash": "25ad1683408ddcc4565a51f5df4ead108e1555cce7722f9830fa64db8d900e21"
+          },
+          {
+            "source_id": "FISRC-f649899991020007",
+            "quote": "聚时科技（上海）有限公司成立于2018年3月，核心团队来自全球一流研发机构和半导体设备公司",
+            "source_content_hash": "bf1e00c95a77d25d",
+            "quote_hash": "aaddd5fbfadedd4c10c8dd2715cd0070024daa187c5fc34cc8e7482c48f8e561"
+          }
+        ],
+        "application_entity_id": "EN-8fcd8da8532772e8",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "C轮",
+        "amount": "数亿元",
+        "total_raised": "",
+        "announced_at": "2026-11-05",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "财通资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c7cddf1ba1c43a3f",
+                "quote": "本次C轮投资方为财通资本、益华资本、日联科技（688531）、上海国投旗下上海科创、吉力创投等产业基金与直接上市公司。",
+                "source_content_hash": "875c9f7d4cfa30d457778df05da64c49c834c228019e41487c6d66e780cf0f03",
+                "quote_hash": "54fbbc363aecb2c36b39397a917a9b32d17db9a6202c91d3718498c27b1783e2"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-27762bdba78f0c"
+          },
+          {
+            "name": "益华资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c7cddf1ba1c43a3f",
+                "quote": "本次C轮投资方为财通资本、益华资本、日联科技（688531）、上海国投旗下上海科创、吉力创投等产业基金与直接上市公司。",
+                "source_content_hash": "875c9f7d4cfa30d457778df05da64c49c834c228019e41487c6d66e780cf0f03",
+                "quote_hash": "54fbbc363aecb2c36b39397a917a9b32d17db9a6202c91d3718498c27b1783e2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "日联科技（688531）",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c7cddf1ba1c43a3f",
+                "quote": "本次C轮投资方为财通资本、益华资本、日联科技（688531）、上海国投旗下上海科创、吉力创投等产业基金与直接上市公司。",
+                "source_content_hash": "875c9f7d4cfa30d457778df05da64c49c834c228019e41487c6d66e780cf0f03",
+                "quote_hash": "54fbbc363aecb2c36b39397a917a9b32d17db9a6202c91d3718498c27b1783e2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "上海国投旗下上海科创",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c7cddf1ba1c43a3f",
+                "quote": "本次C轮投资方为财通资本、益华资本、日联科技（688531）、上海国投旗下上海科创、吉力创投等产业基金与直接上市公司。",
+                "source_content_hash": "875c9f7d4cfa30d457778df05da64c49c834c228019e41487c6d66e780cf0f03",
+                "quote_hash": "54fbbc363aecb2c36b39397a917a9b32d17db9a6202c91d3718498c27b1783e2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "吉力创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c7cddf1ba1c43a3f",
+                "quote": "本次C轮投资方为财通资本、益华资本、日联科技（688531）、上海国投旗下上海科创、吉力创投等产业基金与直接上市公司。",
+                "source_content_hash": "875c9f7d4cfa30d457778df05da64c49c834c228019e41487c6d66e780cf0f03",
+                "quote_hash": "54fbbc363aecb2c36b39397a917a9b32d17db9a6202c91d3718498c27b1783e2"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "上海科创集团",
+            "role": "B轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f649899991020007",
+                "quote": "投资方为上海国投旗下上海科创集团、松江国投、绍兴越城区集成电路产业基金等。",
+                "source_content_hash": "bf1e00c95a77d25d",
+                "quote_hash": "b976c96fec9fed5489b6349420e6a5b79cb0e974c15a30d3b024503311c2e676"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-526f4a58cf3ce6"
+          },
+          {
+            "name": "松江国投",
+            "role": "B轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f649899991020007",
+                "quote": "投资方为上海国投旗下上海科创集团、松江国投、绍兴越城区集成电路产业基金等。",
+                "source_content_hash": "bf1e00c95a77d25d",
+                "quote_hash": "b976c96fec9fed5489b6349420e6a5b79cb0e974c15a30d3b024503311c2e676"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "绍兴越城区集成电路产业基金",
+            "role": "B轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f649899991020007",
+                "quote": "投资方为上海国投旗下上海科创集团、松江国投、绍兴越城区集成电路产业基金等。",
+                "source_content_hash": "bf1e00c95a77d25d",
+                "quote_hash": "b976c96fec9fed5489b6349420e6a5b79cb0e974c15a30d3b024503311c2e676"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "汇川技术",
+            "role": "A+轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-362da96f9bfaceb8",
+                "quote": "本次A+轮融资由上市公司汇川技术与云晖资本联合领投",
+                "source_content_hash": "578ece0772dfb1c8",
+                "quote_hash": "5457833a38e034ec8e97c3e33a9cfee27d412aa0d9157df90a32557ec00de19a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "云晖资本",
+            "role": "A+轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-362da96f9bfaceb8",
+                "quote": "本次A+轮融资由上市公司汇川技术与云晖资本联合领投",
+                "source_content_hash": "578ece0772dfb1c8",
+                "quote_hash": "5457833a38e034ec8e97c3e33a9cfee27d412aa0d9157df90a32557ec00de19a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-a65b980876f2cb"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c7cddf1ba1c43a3f",
+            "quote": "投资界（ID：pedaily2012）11月5日消息，聚时科技完成数亿元C轮融资，本次C轮投资方为财通资本、益华资本、日联科技（688531）、上海国投旗下上海科创、吉力创投等产业基金与直接上市公司。",
+            "source_content_hash": "875c9f7d4cfa30d457778df05da64c49c834c228019e41487c6d66e780cf0f03",
+            "quote_hash": "2a6c60a75d145d515f109117cb60e7738a7ebf9ae28bb0d3b8e0408650f8b68d"
+          },
+          {
+            "source_id": "FISRC-c7cddf1ba1c43a3f",
+            "quote": "聚时科技完成数亿元C轮融资，本次C轮投资方为财通资本、益华资本、日联科技（688531）、上海国投旗下上海科创、吉力创投等产业基金与直接上市公司。",
+            "source_content_hash": "875c9f7d4cfa30d457778df05da64c49c834c228019e41487c6d66e780cf0f03",
+            "quote_hash": "0e18c05c717f62d6ab42f467e258e1e89325348808da622bb457ce8a1a1a2eba"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-de7efff10b83dd08",
+            "round_original": "C轮",
+            "amount": "数亿元",
+            "announced_at": "2026-11-05",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c7cddf1ba1c43a3f",
+                "quote": "投资界（ID：pedaily2012）11月5日消息，聚时科技完成数亿元C轮融资，本次C轮投资方为财通资本、益华资本、日联科技（688531）、上海国投旗下上海科创、吉力创投等产业基金与直接上市公司。",
+                "source_content_hash": "875c9f7d4cfa30d457778df05da64c49c834c228019e41487c6d66e780cf0f03",
+                "quote_hash": "2a6c60a75d145d515f109117cb60e7738a7ebf9ae28bb0d3b8e0408650f8b68d"
+              },
+              {
+                "source_id": "FISRC-c7cddf1ba1c43a3f",
+                "quote": "聚时科技完成数亿元C轮融资，本次C轮投资方为财通资本、益华资本、日联科技（688531）、上海国投旗下上海科创、吉力创投等产业基金与直接上市公司。",
+                "source_content_hash": "875c9f7d4cfa30d457778df05da64c49c834c228019e41487c6d66e780cf0f03",
+                "quote_hash": "0e18c05c717f62d6ab42f467e258e1e89325348808da622bb457ce8a1a1a2eba"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "CNY",
+              "value": null,
+              "min_value": 200000000,
+              "max_value": 900000000,
+              "unit": "base",
+              "round_count": 1,
+              "status": "range",
+              "display_zh": "2 亿元–9 亿元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-c7cddf1ba1c43a3f"
+        ]
+      },
+      "products": [
+        {
+          "name": "半导体检测量测高精度设备",
+          "description": "国产替代的半导体检测量测高精度设备，覆盖前道Fab、先进封装、硅片制造与后道等制程领域。",
+          "target_customers": "半导体制造与封测厂商",
+          "features": [
+            "国产替代",
+            "高精度检测量测"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c7cddf1ba1c43a3f",
+              "quote": "公司产品包括国产替代的半导体检测量测高精度设备、半导体AI良率分析系统等。",
+              "source_content_hash": "875c9f7d4cfa30d457778df05da64c49c834c228019e41487c6d66e780cf0f03",
+              "quote_hash": "845ad0de6fdbdada56a999bc85f67af6e027927f834e9a086b55a46bd9d54011"
+            },
+            {
+              "source_id": "FISRC-f649899991020007",
+              "quote": "制程领域覆盖前道Fab、先进封装、硅片制造与后道等，交付众多半导体标杆客户与世界五百强客户。",
+              "source_content_hash": "bf1e00c95a77d25d",
+              "quote_hash": "4d7b744fd92762370753067e335abb52fd6fb9e3244f9d0f3c78f844b3ca4f93"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "半导体AI良率分析系统",
+          "description": "基于AI大模型与底层矩阵算法能力，实现AI智能化分析、一站式IC制造良率管理。",
+          "target_customers": "半导体制造厂商",
+          "features": [
+            "AI智能化分析",
+            "一站式IC制造良率管理"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c7cddf1ba1c43a3f",
+              "quote": "公司产品包括国产替代的半导体检测量测高精度设备、半导体AI良率分析系统等。",
+              "source_content_hash": "875c9f7d4cfa30d457778df05da64c49c834c228019e41487c6d66e780cf0f03",
+              "quote_hash": "845ad0de6fdbdada56a999bc85f67af6e027927f834e9a086b55a46bd9d54011"
+            },
+            {
+              "source_id": "FISRC-f649899991020007",
+              "quote": "基于AI大模型与底层矩阵算法能力，聚芯5000实现了AI智能化分析、一站式IC制造良率管理。",
+              "source_content_hash": "bf1e00c95a77d25d",
+              "quote_hash": "44abaa14345ff44d09bcb9d34f1d0f078404d79ae74dff3d26929f621e19d026"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [],
+      "quotes": [
+        {
+          "speaker": "郑军",
+          "quote": "本轮融资将大力促进公司业务发展，加速AI半导体检量测设备规模化制造的产能布局，加速构建公司产品的行业竞争力。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c7cddf1ba1c43a3f",
+              "quote": "本轮融资将大力促进公司业务发展，加速AI半导体检量测设备规模化制造的产能布局，加速构建公司产品的行业竞争力。",
+              "source_content_hash": "875c9f7d4cfa30d457778df05da64c49c834c228019e41487c6d66e780cf0f03",
+              "quote_hash": "78ec3d99542ac2439cec2c365dd4f7c4cdb29c94eec181af00d1e1ccda25b9da"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "本轮资本押注的核心变量是聚时科技能否把半导体检测量测设备的国产替代能力转化为规模化制造产能与行业竞争力。来源已验证的信号包括：公司已完成数亿元C轮融资，投资方含产业基金与直接上市公司，且本轮大部分投资人为既有股东相关基金；公司产品覆盖国产替代半导体检测量测设备与AI良率分析系统，并在上海松江/浙江绍兴建有晶圆无尘车间。证据边界在于：来源未披露本轮具体金额、估值、客户订单或收入数据，产能布局与竞争力构建仍属融资用途表述，尚待后续经营数据验证。",
+        "validated_signals": [
+          "完成数亿元C轮融资，投资方为财通资本、益华资本、日联科技（688531）、上海国投旗下上海科创、吉力创投等",
+          "本轮大部分投资人为既有股东相关基金",
+          "公司产品包括国产替代的半导体检测量测高精度设备、半导体AI良率分析系统",
+          "在上海松江/浙江绍兴建有晶圆无尘车间，在深圳/长沙/绍兴设有研发中心"
+        ],
+        "risks": [
+          "来源未披露本轮具体融资金额、估值及累计融资额，资本判断缺少量化定价依据",
+          "融资用途中的产能布局与行业竞争力构建尚未有订单、收入或产能数据验证",
+          "半导体行业技术迭代速度快，公司技术与产品需持续迭代以维持竞争力"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_device",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "industrials",
+        "market_application_id": "",
+        "use_case_ids": [
+          "design_engineering"
+        ],
+        "industry_ids": [
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "半导体检测量测设备与AI良率分析系统",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是聚时科技能否把半导体检测量测设备的国产替代能力转化为规模化制造产能与行业竞争力。来源已验证的信号包括：公司已完成数亿元C轮融资，投资方含产业基金与直接上市公司，且本轮大部分投资人为既有股东相关基金；公司产品覆盖国产替代半导体检测量测设备与AI良率分析系统，并在上海松江/浙江绍兴建有晶圆无尘车间。证据边界在于：来源未披露本轮具体金额、估值、客户订单或收入数据，产能布局与竞争力构建仍属融资用途表述，尚待后续经营数据验证。",
+          "evidence_signals": [
+            "完成数亿元C轮融资，投资方为财通资本、益华资本、日联科技（688531）、上海国投旗下上海科创、吉力创投等",
+            "本轮大部分投资人为既有股东相关基金",
+            "公司产品包括国产替代的半导体检测量测高精度设备、半导体AI良率分析系统",
+            "在上海松江/浙江绍兴建有晶圆无尘车间，在深圳/长沙/绍兴设有研发中心"
+          ],
+          "risks": [
+            "来源未披露本轮具体融资金额、估值及累计融资额，资本判断缺少量化定价依据",
+            "融资用途中的产能布局与行业竞争力构建尚未有订单、收入或产能数据验证",
+            "半导体行业技术迭代速度快，公司技术与产品需持续迭代以维持竞争力"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "半导体检测量测高精度设备",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "半导体AI良率分析系统",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "郑军",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "财通资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "益华资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "日联科技（688531）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "上海国投旗下上海科创",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "吉力创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "上海科创集团",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "松江国投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "绍兴越城区集成电路产业基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "汇川技术",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "云晖资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-de7efff10b83dd08",
+          "date": "2026-11-05",
+          "title": "聚时科技完成数亿元C轮融资，用AI赋能中国集成电路高端制造",
+          "amount": "数亿元",
+          "source_refs": [
+            "SA-41b4e878352828d6"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-c7cddf1ba1c43a3f",
+          "source_url": "https://news.pedaily.cn/202611/571405.shtml",
+          "title": "聚时科技完成数亿元C轮融资，用AI赋能中国集成电路高端制造",
+          "publisher": "news.pedaily.cn",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-06T00:19:29.057Z",
+          "content_hash": "875c9f7d4cfa30d457778df05da64c49c834c228019e41487c6d66e780cf0f03",
+          "source_artifact_id": "SA-41b4e878352828d6",
+          "raw_id": "RAW-a4a54d7704f623c6",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-f649899991020007",
+          "source_url": "http://www.bowangcaijing.cn/news/1385750.html",
+          "title": "聚时科技完成数亿元B轮融资，聚焦缺陷检测设备",
+          "publisher": "bowangcaijing.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-06T00:51:18.664Z",
+          "content_hash": "bf1e00c95a77d25d",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "historical_round"
+        },
+        {
+          "source_id": "FISRC-362da96f9bfaceb8",
+          "source_url": "https://intelligence.xny365.com/article-40438.html",
+          "title": "聚时科技｜核心业务实现快速增长，公司宣布完成数亿元人民币A+轮融资",
+          "publisher": "intelligence.xny365.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-06T00:51:33.855Z",
+          "content_hash": "578ece0772dfb1c8",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "historical_round"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-06T00:51:46.546Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-06T00:51:46.546Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "半导体AI良率分析系统",
+            "半导体检测量测高精度设备"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "郑军"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-de7efff10b83dd08"
+      ],
+      "aggregation": {
+        "key": "EN-8fcd8da8532772e8|series_c|CNY:range::200000000:900000000:|2026-11-05",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-d42bc84c272ae23e",
+          "event_ids": [
+            "EV-de7efff10b83dd08"
+          ],
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-11-05",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "funding_company_evidence:china_legal_entity:聚时科技（上海）有限公司"
+        ],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "ai_device",
+        "name": "AI 设备",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "industry_applications",
+        "name": "行业应用",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "industrials",
+        "name": "工业",
+        "method": "card_explicit"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-de7efff10b83dd08",
+        "direction": ""
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-da05c9524392e372",
+      "triggered_by_event_id": "EV-12e63ddc1a14574e",
+      "as_of_date": "2026-11-06",
+      "company": {
+        "entity_id": "EN-45524c831447998f",
+        "name": "Shackleton AI",
+        "full_name": "Shackleton AI",
+        "website": "https://shackleton.ai",
+        "summary": "Shackleton AI 为建筑行业提供智能体操作系统，将开发与施工管理流程统一到单一系统，并用 AI 智能体自动处理项目行政工作。",
+        "headquarters": "纽约",
+        "founders": [
+          {
+            "name": "Michael Ragheb",
+            "role": "联合创始人兼首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-48ad2f372a4431f7",
+                "quote": "Shackleton AI co-founders, from left, Michael Ragheb, Hassan Yasin and Olexandr Kaltsev",
+                "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+                "quote_hash": "bf4437e33e5177a9c313d2577fc83a28e94cad388d42e9c1f2b1b4c1b8fbb4e3"
+              },
+              {
+                "source_id": "FISRC-0b77970fb5522c47",
+                "quote": "Michael Ragheb (CEO)",
+                "source_content_hash": "7ea3cf2bd2a1989e",
+                "quote_hash": "0b422c15415f839ead88cd5d18c38cfe9a9e78bbb3963fcf9afb9a07bb15e2c5"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Hassan Yasin",
+            "role": "联合创始人兼首席产品官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-48ad2f372a4431f7",
+                "quote": "Shackleton AI co-founders, from left, Michael Ragheb, Hassan Yasin and Olexandr Kaltsev",
+                "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+                "quote_hash": "bf4437e33e5177a9c313d2577fc83a28e94cad388d42e9c1f2b1b4c1b8fbb4e3"
+              },
+              {
+                "source_id": "FISRC-0b77970fb5522c47",
+                "quote": "Hassan Yasin (CPO)",
+                "source_content_hash": "7ea3cf2bd2a1989e",
+                "quote_hash": "f27cccda0981a76b3f0b9ac3c96a2bb6397f892e435051dacc521e7629a636d2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Olexandr Kaltsev",
+            "role": "联合创始人兼首席财务官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-48ad2f372a4431f7",
+                "quote": "Shackleton AI co-founders, from left, Michael Ragheb, Hassan Yasin and Olexandr Kaltsev",
+                "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+                "quote_hash": "bf4437e33e5177a9c313d2577fc83a28e94cad388d42e9c1f2b1b4c1b8fbb4e3"
+              },
+              {
+                "source_id": "FISRC-0b77970fb5522c47",
+                "quote": "Olexandr Kaltsev (CFO)",
+                "source_content_hash": "7ea3cf2bd2a1989e",
+                "quote_hash": "f7e385951623f301c05518abdcf860578bfee636a28a2aa15d391b5a10a1bec2"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-48ad2f372a4431f7",
+            "quote": "Shackleton AI, a provider of agentic technology for the construction industry, today emerged from stealth, unveiling its platform that unifies development and construction management workflows and deploys AI agents to automate administrative project work.",
+            "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+            "quote_hash": "6e1969a2ee24ed6ce7ca763d75d908e210c9db82ebfef0caf0fee0bfd53fdac5"
+          },
+          {
+            "source_id": "FISRC-2e400276ae80a5d2",
+            "quote": "Shackleton AI, based in New York, is a provider of an agentic operating system designed to unify development and construction management workflows.",
+            "source_content_hash": "e5092eb9abc80d55",
+            "quote_hash": "df5b9c5573b9739805371c536862df55855844e21bf3eb436b2dcb5857fd9c3a"
+          }
+        ],
+        "application_entity_id": "EN-45524c831447998f",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$5 million",
+        "total_raised": "",
+        "announced_at": "2026-11-05",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Battery Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-48ad2f372a4431f7",
+                "quote": "The company also announced it raised $5 million in seed funding led by Battery Ventures",
+                "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+                "quote_hash": "f47089f1e9d419f3632f06ef4ee12820cec8be5192e926b76e155a56819ed370"
+              },
+              {
+                "source_id": "FISRC-2e400276ae80a5d2",
+                "quote": "The funding round was led by Battery Ventures",
+                "source_content_hash": "e5092eb9abc80d55",
+                "quote_hash": "d91c567371e190d98dfc9d31223d2d3a5cdae9ca68b8a2a59c34231e46bae0dd"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-c9acfb4744dbfa"
+          },
+          {
+            "name": "Brick & Mortar Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-48ad2f372a4431f7",
+                "quote": "Brick & Mortar Ventures, Trust Ventures, Correlation Ventures, Motivate Partners, Thayer Investment Partners, Act One Ventures, Brainstorm Ventures, Silence VC and others also participated in the round.",
+                "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+                "quote_hash": "bf9379d8939455683530e59792fb33f6dfb86379970a891d08970e9fbc7cba0e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Trust Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-48ad2f372a4431f7",
+                "quote": "Brick & Mortar Ventures, Trust Ventures, Correlation Ventures, Motivate Partners, Thayer Investment Partners, Act One Ventures, Brainstorm Ventures, Silence VC and others also participated in the round.",
+                "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+                "quote_hash": "bf9379d8939455683530e59792fb33f6dfb86379970a891d08970e9fbc7cba0e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Correlation Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-48ad2f372a4431f7",
+                "quote": "Brick & Mortar Ventures, Trust Ventures, Correlation Ventures, Motivate Partners, Thayer Investment Partners, Act One Ventures, Brainstorm Ventures, Silence VC and others also participated in the round.",
+                "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+                "quote_hash": "bf9379d8939455683530e59792fb33f6dfb86379970a891d08970e9fbc7cba0e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Motivate Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-48ad2f372a4431f7",
+                "quote": "Brick & Mortar Ventures, Trust Ventures, Correlation Ventures, Motivate Partners, Thayer Investment Partners, Act One Ventures, Brainstorm Ventures, Silence VC and others also participated in the round.",
+                "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+                "quote_hash": "bf9379d8939455683530e59792fb33f6dfb86379970a891d08970e9fbc7cba0e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Thayer Investment Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-48ad2f372a4431f7",
+                "quote": "Brick & Mortar Ventures, Trust Ventures, Correlation Ventures, Motivate Partners, Thayer Investment Partners, Act One Ventures, Brainstorm Ventures, Silence VC and others also participated in the round.",
+                "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+                "quote_hash": "bf9379d8939455683530e59792fb33f6dfb86379970a891d08970e9fbc7cba0e"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-55ffffee750e11"
+          },
+          {
+            "name": "Act One Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-48ad2f372a4431f7",
+                "quote": "Brick & Mortar Ventures, Trust Ventures, Correlation Ventures, Motivate Partners, Thayer Investment Partners, Act One Ventures, Brainstorm Ventures, Silence VC and others also participated in the round.",
+                "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+                "quote_hash": "bf9379d8939455683530e59792fb33f6dfb86379970a891d08970e9fbc7cba0e"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-8eec6e05b46a45"
+          },
+          {
+            "name": "Brainstorm Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-48ad2f372a4431f7",
+                "quote": "Brick & Mortar Ventures, Trust Ventures, Correlation Ventures, Motivate Partners, Thayer Investment Partners, Act One Ventures, Brainstorm Ventures, Silence VC and others also participated in the round.",
+                "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+                "quote_hash": "bf9379d8939455683530e59792fb33f6dfb86379970a891d08970e9fbc7cba0e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Silence VC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-48ad2f372a4431f7",
+                "quote": "Brick & Mortar Ventures, Trust Ventures, Correlation Ventures, Motivate Partners, Thayer Investment Partners, Act One Ventures, Brainstorm Ventures, Silence VC and others also participated in the round.",
+                "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+                "quote_hash": "bf9379d8939455683530e59792fb33f6dfb86379970a891d08970e9fbc7cba0e"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-48ad2f372a4431f7",
+            "quote": "The company also announced it raised $5 million in seed funding led by Battery Ventures, which it will use to expand the workflows its AI agents can manage and accelerate go-to-market efforts.",
+            "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+            "quote_hash": "7f9d0fae9e43044f8d9cbc836f4ccaf2ba3de153fea34bf78443a7c59e4f9916"
+          },
+          {
+            "source_id": "FISRC-2e400276ae80a5d2",
+            "quote": "The company recently emerged from stealth and announced it has raised $5 million in seed funding to support the expansion of its AI-driven project management capabilities.",
+            "source_content_hash": "e5092eb9abc80d55",
+            "quote_hash": "3deeafd1b667e443e1a5d77945697deecdbdd20cc516b820daac8240b2fb0463"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "500 万美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-12e63ddc1a14574e",
+            "round_original": "种子轮",
+            "amount": "$5 million",
+            "announced_at": "2026-11-05",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-48ad2f372a4431f7",
+                "quote": "The company also announced it raised $5 million in seed funding led by Battery Ventures, which it will use to expand the workflows its AI agents can manage and accelerate go-to-market efforts.",
+                "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+                "quote_hash": "7f9d0fae9e43044f8d9cbc836f4ccaf2ba3de153fea34bf78443a7c59e4f9916"
+              },
+              {
+                "source_id": "FISRC-2e400276ae80a5d2",
+                "quote": "The company recently emerged from stealth and announced it has raised $5 million in seed funding to support the expansion of its AI-driven project management capabilities.",
+                "source_content_hash": "e5092eb9abc80d55",
+                "quote_hash": "3deeafd1b667e443e1a5d77945697deecdbdd20cc516b820daac8240b2fb0463"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 5000000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "500 万美元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-48ad2f372a4431f7",
+          "FISRC-2e400276ae80a5d2"
+        ]
+      },
+      "products": [
+        {
+          "name": "Shackleton 智能体操作系统",
+          "description": "面向开发与施工管理的智能体操作系统，将开发、预施工、项目与现场管理、财务和沟通统一到单一系统，AI 智能体跨共享数据处理行政任务。",
+          "target_customers": "中型总承包商，以及多地点品牌、业主和开发商",
+          "features": [
+            "AI 智能体起草 RFI、跟进逾期提交文件、在付款申请审批前标记预算偏差、将现场记录转为日报",
+            "覆盖从选址到项目移交的施工全生命周期",
+            "通过审查与审批流程保留人工监督",
+            "支持离线读取和标注图纸，恢复连接后同步"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-48ad2f372a4431f7",
+              "quote": "AI agents handle many of the administrative tasks that consume project managers' time, including drafting RFIs, following up on overdue submittals, flagging budget variances before payment requests are submitted for approval and converting field notes into daily reports.",
+              "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+              "quote_hash": "fffcf40e8e1ca2f5cfaca60d50be6c03e81f8f2c75265e64c75e41c091654613"
+            },
+            {
+              "source_id": "FISRC-0b77970fb5522c47",
+              "quote": "Shackleton describes its product as an agentic operating system spanning site selection, preconstruction, project and field management, finance, communications, and project turnover.",
+              "source_content_hash": "7ea3cf2bd2a1989e",
+              "quote_hash": "07cc9d943e2f9fc0c22a59baf3e5dfe254d96f5625aa0dfa01ec93c805adeba1"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Red Lobster",
+          "industry": "餐饮",
+          "use_case": "多地点门店建设与项目管理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-48ad2f372a4431f7",
+              "quote": "multi-location brands including Red Lobster, Dog Haus and Pepper Lunch",
+              "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+              "quote_hash": "4e4213690dcd74ca607b0676b9d99117f3206a58162e5a79b7acf1f3f69fd662"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Dog Haus",
+          "industry": "餐饮",
+          "use_case": "多地点门店建设与项目管理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-48ad2f372a4431f7",
+              "quote": "multi-location brands including Red Lobster, Dog Haus and Pepper Lunch",
+              "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+              "quote_hash": "4e4213690dcd74ca607b0676b9d99117f3206a58162e5a79b7acf1f3f69fd662"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Pepper Lunch",
+          "industry": "餐饮",
+          "use_case": "多地点门店建设与项目管理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-48ad2f372a4431f7",
+              "quote": "multi-location brands including Red Lobster, Dog Haus and Pepper Lunch",
+              "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+              "quote_hash": "4e4213690dcd74ca607b0676b9d99117f3206a58162e5a79b7acf1f3f69fd662"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Trunk Tools",
+          "product": "面向施工的智能体",
+          "scenario": "施工工作流中的 AI 辅助",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "Shackleton 侧重整合底层项目记录并在其上嵌入协助；来源仅将 Trunk Tools 列为施工 AI 工作流的同类平台，未披露其产品细节与融资。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0b77970fb5522c47",
+              "quote": "The funding follows a broader push to bring AI into construction workflows, including platforms such as Trunk Tools and its construction-focused agents. Shackleton’s approach centers on consolidating the underlying project record and embedding assistance across it.",
+              "source_content_hash": "7ea3cf2bd2a1989e",
+              "quote_hash": "f9a39174b337f2da293fed7b4f2c04cf777575fafda088ece5cd6ec2107249ba"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "平台管理项目价值",
+          "value": "超过 $1 billion",
+          "observed_at": "2026-11-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-48ad2f372a4431f7",
+              "quote": "currently manages over $1 billion in project value across more than 15 states",
+              "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+              "quote_hash": "3a8d895edb27673a301c8a828ad4f6db328953ede4340bb4fd322034ac402d11"
+            }
+          ]
+        },
+        {
+          "label": "覆盖州数",
+          "value": "超过 15 个州",
+          "observed_at": "2026-11-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-48ad2f372a4431f7",
+              "quote": "across more than 15 states",
+              "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+              "quote_hash": "e0ecc10eb954b225332dfd6d7b5fd996752de9a3cd8e15ece6a5ab6854911209"
+            }
+          ]
+        },
+        {
+          "label": "平台上线时间",
+          "value": "2026 年 6 月",
+          "observed_at": "2026-11-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-48ad2f372a4431f7",
+              "quote": "Launched in June 2026",
+              "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+              "quote_hash": "0a1111be36d81f5d3fd6e656bfd1d3b62f4f004229151bb9b41a9c7a8b191b88"
+            }
+          ]
+        },
+        {
+          "label": "创始人此前经营的总承包商年收入",
+          "value": "$35 million",
+          "observed_at": "2026-11-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-48ad2f372a4431f7",
+              "quote": "grew Ernest, a tech-enabled commercial general contractor, to $35 million in revenue across the Southeastern United States",
+              "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+              "quote_hash": "457bf226160e8f67ed16c4e088d246eb2d84c6f6ed3aa80f830765a72f55ae54"
+            }
+          ]
+        },
+        {
+          "label": "公司自报多地点客户提前完工幅度",
+          "value": "最高 35%",
+          "observed_at": "2026-11-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-48ad2f372a4431f7",
+              "quote": "multi-location customers have completed buildouts up to 35% ahead of schedule",
+              "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+              "quote_hash": "3e684e5de1c6597f03f3cc58806a226611f87c28bc94f54ac877da9bec0074c7"
+            }
+          ]
+        },
+        {
+          "label": "公司自报多地点客户预算节省幅度",
+          "value": "最高 18%",
+          "observed_at": "2026-11-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-48ad2f372a4431f7",
+              "quote": "as much as 18% under budget",
+              "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+              "quote_hash": "483847d706110f0a5db14e88bd2ec6b8c8bd608d37ac5bbd47b31adf534ff733"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Michael Brown",
+          "quote": "Construction is one of the largest and least digitized sectors in the economy, and the teams running these projects are buried in manual work that software should have automated a decade ago",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-48ad2f372a4431f7",
+              "quote": "Construction is one of the largest and least digitized sectors in the economy, and the teams running these projects are buried in manual work that software should have automated a decade ago",
+              "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+              "quote_hash": "45266a720cc30b98e0952da2a427fe2e11cc7c69ef9859a3db9e8fe567ef5c34"
+            }
+          ]
+        },
+        {
+          "speaker": "Michael Brown",
+          "quote": "The Shackleton team built this platform to run their own business before bringing it to market. We believe their agentic approach is how construction projects will be managed going forward, and we are proud to lead this round.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-48ad2f372a4431f7",
+              "quote": "The Shackleton team built this platform to run their own business before bringing it to market. We believe their agentic approach is how construction projects will be managed going forward, and we are proud to lead this round.",
+              "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+              "quote_hash": "ca10f90e202eec1fc53ad556e8a044d4eeb8f8891d3178764549938f955c2ad4"
+            }
+          ]
+        },
+        {
+          "speaker": "Michael Ragheb",
+          "quote": "I was spending more time moving data between systems than running my jobs at Ernest",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-48ad2f372a4431f7",
+              "quote": "I was spending more time moving data between systems than running my jobs at Ernest",
+              "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+              "quote_hash": "dca6a45915b3bc5c2795500627584a6ae21d4dfd1365e1cb8b280f8e1da2f11a"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Battery Ventures",
+            "speaker": "Michael Brown",
+            "speaker_role": "Battery Ventures 普通合伙人",
+            "rationale": "Battery Ventures 认为建筑行业数字化程度低、项目团队被手工工作淹没，而 Shackleton 团队先用该平台运营自身业务，其智能体方式代表施工项目管理的未来方向。",
+            "quote": "The Shackleton team built this platform to run their own business before bringing it to market. We believe their agentic approach is how construction projects will be managed going forward, and we are proud to lead this round.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-48ad2f372a4431f7",
+                "quote": "The Shackleton team built this platform to run their own business before bringing it to market. We believe their agentic approach is how construction projects will be managed going forward, and we are proud to lead this round.",
+                "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+                "quote_hash": "ca10f90e202eec1fc53ad556e8a044d4eeb8f8891d3178764549938f955c2ad4"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "本轮资本押注的核心变量是：建筑项目信息分散在多个系统、行政工作占用项目经理大量时间，而 Shackleton 以统一项目记录加跨平台 AI 智能体的方式切入。已验证信号包括平台自 2026 年 6 月上线后管理超过 10 亿美元项目价值、覆盖 15 个以上州，以及创始人此前将 Ernest 做到 3500 万美元收入。证据边界在于：提前 35% 完工和低于预算 18% 均为公司自报结果，未经独立验证；来源未披露估值、收入或客户合同金额，因此不能据此推断商业规模。",
+        "validated_signals": [
+          "平台自 2026 年 6 月上线，管理超过 10 亿美元项目价值，覆盖 15 个以上州",
+          "客户包括中型总承包商及 Red Lobster、Dog Haus、Pepper Lunch 等多地点品牌",
+          "创始人此前将技术型商业总承包商 Ernest 做到 3500 万美元收入"
+        ],
+        "risks": [
+          "提前 35% 完工和低于预算 18% 为公司自报结果，来源明确说明未经独立测试，AI 智能体的实际贡献仍待验证",
+          "来源未披露收入、估值或已签合同金额，10 亿美元项目价值不等同于公司收入",
+          "产品能力描述主要来自公司自身，缺少独立评测；智能体跨系统处理预算与审批任务依赖与会计系统的集成质量"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "industrials",
+        "market_application_id": "",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "finance_accounting",
+          "procurement_supply_chain"
+        ],
+        "industry_ids": [
+          "construction_real_estate",
+          "food_hospitality"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "建筑行业智能体操作系统",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是：建筑项目信息分散在多个系统、行政工作占用项目经理大量时间，而 Shackleton 以统一项目记录加跨平台 AI 智能体的方式切入。已验证信号包括平台自 2026 年 6 月上线后管理超过 10 亿美元项目价值、覆盖 15 个以上州，以及创始人此前将 Ernest 做到 3500 万美元收入。证据边界在于：提前 35% 完工和低于预算 18% 均为公司自报结果，未经独立验证；来源未披露估值、收入或客户合同金额，因此不能据此推断商业规模。",
+          "evidence_signals": [
+            "平台自 2026 年 6 月上线，管理超过 10 亿美元项目价值，覆盖 15 个以上州",
+            "客户包括中型总承包商及 Red Lobster、Dog Haus、Pepper Lunch 等多地点品牌",
+            "创始人此前将技术型商业总承包商 Ernest 做到 3500 万美元收入"
+          ],
+          "risks": [
+            "提前 35% 完工和低于预算 18% 为公司自报结果，来源明确说明未经独立测试，AI 智能体的实际贡献仍待验证",
+            "来源未披露收入、估值或已签合同金额，10 亿美元项目价值不等同于公司收入",
+            "产品能力描述主要来自公司自身，缺少独立评测；智能体跨系统处理预算与审批任务依赖与会计系统的集成质量"
+          ],
+          "institutional_rationale_status": "disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Shackleton 智能体操作系统",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Michael Ragheb",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Hassan Yasin",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Olexandr Kaltsev",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Battery Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Brick & Mortar Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Trust Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Correlation Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Motivate Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Thayer Investment Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Act One Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Brainstorm Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Silence VC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Red Lobster",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Dog Haus",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Pepper Lunch",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Trunk Tools",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-12e63ddc1a14574e",
+          "date": "2026-11-05",
+          "title": "更正 - Shackleton AI",
+          "amount": "$5 million",
+          "source_refs": [
+            "SA-bf94c3eeb742e7fe"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-48ad2f372a4431f7",
+          "source_url": "https://www.prnewswire.com/news-releases/shackleton-ai-unveils-agentic-operating-system-for-construction-raises-5-million-led-by-battery-ventures-302928375.html",
+          "title": "更正 - Shackleton AI",
+          "publisher": "www.prnewswire.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-06T00:18:54.020Z",
+          "content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+          "source_artifact_id": "SA-bf94c3eeb742e7fe",
+          "raw_id": "RAW-a95af9f75dd4fdbd",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-2e400276ae80a5d2",
+          "source_url": "https://www.thesaasnews.com/news/shackleton-ai-raises-5m-seed/",
+          "title": "Shackleton AI Raises $5M Seed",
+          "publisher": "thesaasnews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-06T00:50:51.674Z",
+          "content_hash": "e5092eb9abc80d55",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-0b77970fb5522c47",
+          "source_url": "https://www.unite.ai/shackleton-ai-raises-5-million-seed-construction-ai-agents/",
+          "title": "Shackleton AI Raises $5 Million Seed to Put AI Agents to Work Across Construction",
+          "publisher": "unite.ai",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-06T00:51:01.763Z",
+          "content_hash": "7ea3cf2bd2a1989e",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-06T00:51:15.055Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-06T00:51:15.055Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Shackleton 智能体操作系统"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Hassan Yasin",
+            "Michael Ragheb",
+            "Olexandr Kaltsev"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-12e63ddc1a14574e"
+      ],
+      "aggregation": {
+        "key": "EN-45524c831447998f|seed|USD:exact:5000000:::|2026-11-05",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-da05c9524392e372",
+          "event_ids": [
+            "EV-12e63ddc1a14574e"
+          ],
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$5 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 5000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "500 万美元"
+          },
+          "announced_at": "2026-11-05",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "enterprise_software_platform",
+        "name": "企业软件平台",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "industry_applications",
+        "name": "行业应用",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "industrials",
+        "name": "工业",
+        "method": "card_explicit"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-12e63ddc1a14574e",
+        "direction": ""
+      },
+      "translations": {
+        "zh-CN": {
+          "company.headquarters": {
+            "text": "纽约",
+            "source_hash": "815eca977c7d75f72bd23bccc91bc6f9931a42fbf03451eb0d7db8d2a704d94f",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-14T07:17:18.959Z",
+            "status": "translated"
+          }
+        }
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-65757c535b592aae",
+      "triggered_by_event_id": "EV-fa6bb71ec7a8ee92",
+      "as_of_date": "2026-11-06",
+      "company": {
+        "entity_id": "EN-085578b03da7d660",
+        "name": "墨芯人工智能",
+        "full_name": "墨芯人工智能科技（深圳）有限公司",
+        "website": "",
+        "summary": "墨芯人工智能是一家AI推理芯片设计商，研发AI推理芯片、计算卡及配套软件，服务数据中心和行业客户，通过稀疏计算减少冗余运算以降低模型持续运行成本。",
+        "headquarters": "深圳",
+        "founders": [
+          {
+            "name": "王维",
+            "role": "创始人&CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1dedce06704cbebc",
+                "quote": "创始人兼CEO王维有卡内基梅隆大学电子与计算机工程硕士背景，曾任职高通、英特尔",
+                "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+                "quote_hash": "c901d706523cfb0319dc1ad05ba9875c694ecdba277e71408cacaeb8d31cac2e"
+              }
+            ],
+            "entity_id": "EN-432f5ed58fc572f9"
+          },
+          {
+            "name": "严恩勖",
+            "role": "联合创始人兼首席科学家",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1dedce06704cbebc",
+                "quote": "联合创始人兼首席科学家严恩勖研究机器学习与稀疏算法",
+                "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+                "quote_hash": "c64a263fd61281f9344437ec4877c37c927695fa5c2386f98f76acc23238612e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "芦勇",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1dedce06704cbebc",
+                "quote": "联合创始人芦勇曾在SK海力士、Marvell从事芯片开发",
+                "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+                "quote_hash": "16bac3c371b6dd3bb3bdb0dcce54769bfff5a54a4a162278b1235647b92752e2"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1dedce06704cbebc",
+            "quote": "墨芯成立于2018年，总部位于深圳，研发AI推理芯片、计算卡及配套软件，服务数据中心和行业客户。",
+            "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+            "quote_hash": "1af25eb9315eda9ca869cf66c0607e6963eaafa9a867d77d0a7688b79d264828"
+          }
+        ],
+        "application_entity_id": "EN-085578b03da7d660",
+        "canonical_entity_consistent": true
+      },
+      "financing": {
+        "round": "C+轮",
+        "amount": "近10亿元人民币",
+        "total_raised": "近20亿元",
+        "announced_at": "2026-11-04",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "仁爱资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1dedce06704cbebc",
+                "quote": "投资方包括仁爱资本、海棠基金、东恒石油、比丘资本、派拉资本、中财资本等",
+                "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+                "quote_hash": "9126883f31b40558416e6f6fd5b26e4b5431cc2aa138e353207832262ea83c2e"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-f9d500498294de"
+          },
+          {
+            "name": "海棠基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1dedce06704cbebc",
+                "quote": "投资方包括仁爱资本、海棠基金、东恒石油、比丘资本、派拉资本、中财资本等",
+                "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+                "quote_hash": "9126883f31b40558416e6f6fd5b26e4b5431cc2aa138e353207832262ea83c2e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "东恒石油",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1dedce06704cbebc",
+                "quote": "投资方包括仁爱资本、海棠基金、东恒石油、比丘资本、派拉资本、中财资本等",
+                "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+                "quote_hash": "9126883f31b40558416e6f6fd5b26e4b5431cc2aa138e353207832262ea83c2e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "比丘资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1dedce06704cbebc",
+                "quote": "投资方包括仁爱资本、海棠基金、东恒石油、比丘资本、派拉资本、中财资本等",
+                "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+                "quote_hash": "9126883f31b40558416e6f6fd5b26e4b5431cc2aa138e353207832262ea83c2e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "派拉资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1dedce06704cbebc",
+                "quote": "投资方包括仁爱资本、海棠基金、东恒石油、比丘资本、派拉资本、中财资本等",
+                "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+                "quote_hash": "9126883f31b40558416e6f6fd5b26e4b5431cc2aa138e353207832262ea83c2e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "中财资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1dedce06704cbebc",
+                "quote": "投资方包括仁爱资本、海棠基金、东恒石油、比丘资本、派拉资本、中财资本等",
+                "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+                "quote_hash": "9126883f31b40558416e6f6fd5b26e4b5431cc2aa138e353207832262ea83c2e"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "深创投",
+            "role": "C轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1dedce06704cbebc",
+                "quote": "今年5月披露的C轮融资中，深创投、大湾区共同家园、力鼎资本、蕴盛资本等参与",
+                "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+                "quote_hash": "9de0d50019160883f3ba2342e5858bf3abad4dbf50a40b54bdf91eafdef581dc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-901b0ed7b5c1cb"
+          },
+          {
+            "name": "大湾区共同家园",
+            "role": "C轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1dedce06704cbebc",
+                "quote": "今年5月披露的C轮融资中，深创投、大湾区共同家园、力鼎资本、蕴盛资本等参与",
+                "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+                "quote_hash": "9de0d50019160883f3ba2342e5858bf3abad4dbf50a40b54bdf91eafdef581dc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-9703fb82b7f3cc"
+          },
+          {
+            "name": "力鼎资本",
+            "role": "C轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1dedce06704cbebc",
+                "quote": "今年5月披露的C轮融资中，深创投、大湾区共同家园、力鼎资本、蕴盛资本等参与",
+                "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+                "quote_hash": "9de0d50019160883f3ba2342e5858bf3abad4dbf50a40b54bdf91eafdef581dc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-f1be2a530f2dd3"
+          },
+          {
+            "name": "蕴盛资本",
+            "role": "C轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1dedce06704cbebc",
+                "quote": "今年5月披露的C轮融资中，深创投、大湾区共同家园、力鼎资本、蕴盛资本等参与",
+                "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+                "quote_hash": "9de0d50019160883f3ba2342e5858bf3abad4dbf50a40b54bdf91eafdef581dc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-32d50efa0b272f"
+          },
+          {
+            "name": "凯旋创投",
+            "role": "C轮老股东继续投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1dedce06704cbebc",
+                "quote": "凯旋创投、盛景嘉成、岩山科技等老股东继续投资",
+                "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+                "quote_hash": "3810ba0df720ed2d8da9693a2dd7c3cfc33fbcc07113eec7fd7025d73b7adb03"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-80c272b9db7550"
+          },
+          {
+            "name": "盛景嘉成",
+            "role": "C轮老股东继续投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1dedce06704cbebc",
+                "quote": "凯旋创投、盛景嘉成、岩山科技等老股东继续投资",
+                "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+                "quote_hash": "3810ba0df720ed2d8da9693a2dd7c3cfc33fbcc07113eec7fd7025d73b7adb03"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-697fcc0a6e31ac"
+          },
+          {
+            "name": "岩山科技",
+            "role": "C轮老股东继续投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1dedce06704cbebc",
+                "quote": "凯旋创投、盛景嘉成、岩山科技等老股东继续投资",
+                "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+                "quote_hash": "3810ba0df720ed2d8da9693a2dd7c3cfc33fbcc07113eec7fd7025d73b7adb03"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-0f5537cd7b4176"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1dedce06704cbebc",
+            "quote": "墨芯人工智能科技（深圳）有限公司近日宣布完成近10亿元人民币C+轮融资，投资方包括仁爱资本、海棠基金、东恒石油、比丘资本、派拉资本、中财资本等。",
+            "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+            "quote_hash": "bb311870ebfcb80c2cad876641dc0e0801a9939f6f8c6314546bb225991178af"
+          },
+          {
+            "source_id": "FISRC-1dedce06704cbebc",
+            "quote": "本轮距上一轮近10亿元融资约5个月，两轮累计融资近20亿元。",
+            "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+            "quote_hash": "cffa2c683790c713f31ef3e6a32acbb51dc727d1abf41158006562f93a7f03a3"
+          }
+        ],
+        "round_code": "series_c_plus",
+        "round_original": "C+轮",
+        "amount_original": "近10亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 10 亿元"
+        },
+        "total_raised_original": "近20亿元",
+        "total_raised_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 20 亿元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-fa6bb71ec7a8ee92",
+            "round_original": "C+轮",
+            "amount": "近10亿元人民币",
+            "announced_at": "2026-11-04",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1dedce06704cbebc",
+                "quote": "墨芯人工智能科技（深圳）有限公司近日宣布完成近10亿元人民币C+轮融资，投资方包括仁爱资本、海棠基金、东恒石油、比丘资本、派拉资本、中财资本等。",
+                "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+                "quote_hash": "bb311870ebfcb80c2cad876641dc0e0801a9939f6f8c6314546bb225991178af"
+              },
+              {
+                "source_id": "FISRC-1dedce06704cbebc",
+                "quote": "本轮距上一轮近10亿元融资约5个月，两轮累计融资近20亿元。",
+                "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+                "quote_hash": "cffa2c683790c713f31ef3e6a32acbb51dc727d1abf41158006562f93a7f03a3"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "近20亿元",
+          "normalized": {
+            "currency": "CNY",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 20 亿元"
+          },
+          "basis": "source_disclosed",
+          "known_round_totals": [
+            {
+              "currency": "CNY",
+              "value": 2000000000,
+              "min_value": 2000000000,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 2,
+              "status": "approximate",
+              "display_zh": "约 20 亿元"
+            }
+          ],
+          "historical_round_count": 2
+        },
+        "current_source_ids": [
+          "FISRC-1dedce06704cbebc"
+        ]
+      },
+      "products": [
+        {
+          "name": "S4、S30、S40计算卡",
+          "description": "搭载自研Antoum芯片的AI推理计算卡，分别搭载一颗、三颗和四颗芯片，面向不同规模部署；S40面向数据中心AI推理，支持图像、视频应用，并配套模型稀疏化、编译和运行工具。",
+          "target_customers": "数据中心和行业客户",
+          "features": [
+            "搭载自研Antoum芯片",
+            "S40面向数据中心AI推理",
+            "支持图像、视频应用",
+            "配套模型稀疏化、编译和运行工具"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1dedce06704cbebc",
+              "quote": "公司已推出搭载自研Antoum芯片的S4、S30、S40计算卡，分别搭载一颗、三颗和四颗芯片，面向不同规模部署",
+              "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+              "quote_hash": "a14e498d56469278c9e7b06881178fe554795935730eb99d3afe6ca2a520edf1"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "SP200计算卡及SECA软件栈",
+          "description": "计划年底前推出的计算卡及升级版软件栈，加强大模型部署、软件适配和集群运维能力。",
+          "target_customers": "数据中心和行业客户",
+          "features": [
+            "计划年底前推出",
+            "加强大模型部署",
+            "软件适配",
+            "集群运维能力"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1dedce06704cbebc",
+              "quote": "公司计划年底前推出SP200计算卡及升级版软件栈SECA，加强大模型部署、软件适配和集群运维能力。",
+              "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+              "quote_hash": "826e4fbff5e572676405b6c10282d74cac19a2e7ccf2348a39f9b1f1656fb5bb"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "算力系统交付与算力服务",
+          "description": "从计算卡供应延伸至算力系统交付，与地方政府、算力中心合作，使用自有芯片参与数据中心建设与运营，并承担售前适配、部署及后续运维；客户可采购硬件，也可通过算力服务体系使用其推理能力。",
+          "target_customers": "地方政府、算力中心、头部电信运营商",
+          "features": [
+            "计算卡供应延伸至算力系统交付",
+            "参与数据中心建设与运营",
+            "售前适配、部署及后续运维",
+            "硬件采购或算力服务两种方式"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1dedce06704cbebc",
+              "quote": "商业模式上，墨芯从计算卡供应延伸至算力系统交付。",
+              "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+              "quote_hash": "2a33dc80d80abdb0733779bc4ccfdbbd68beaac455821b8003d900f9786062d5"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "头部电信运营商",
+          "industry": "电信",
+          "use_case": "将稀疏计算方案纳入对方算力服务体系",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1dedce06704cbebc",
+              "quote": "并与头部电信运营商合作，将稀疏计算方案纳入对方算力服务体系",
+              "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+              "quote_hash": "b5cffe02e9fc339f2336e8814b50d0fc82b6d59d50ba05552644378979d425b5"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "上海国资平台公司建设的海上算力Token工厂",
+          "industry": "能源与公用事业",
+          "use_case": "利用海上风电和海水冷却降低能源及散热成本，墨芯提供稀疏计算方案",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1dedce06704cbebc",
+              "quote": "墨芯参与上海国资平台公司建设的海上算力Token工厂，项目利用海上风电和海水冷却降低能源及散热成本，墨芯提供稀疏计算方案。",
+              "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+              "quote_hash": "1b6180122aaa4a8a36500a9c9f817652a426c0479daeab5652ba455dfc4d8e33"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "北京大学上海临港国际科技创新中心地球与空间技术研究院",
+          "industry": "教育",
+          "use_case": "两款遥感影像分析基础模型适配测试，在基本保持业务精度、无需重新训练下游任务条件下改善处理效率",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1dedce06704cbebc",
+              "quote": "北京大学上海临港国际科技创新中心地球与空间技术研究院与墨芯完成两款遥感影像分析基础模型适配测试",
+              "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+              "quote_hash": "d60e4b4cb41cf4fe8c6550fca3e6a4e898b060d17cc6142bca879bb0588b348c"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "曦望",
+          "product": "面向推理优化的GPU路线，启望S3预计2026年底量产",
+          "scenario": "AI推理芯片",
+          "target_customer": "",
+          "funding_summary": "今年4月完成超10亿元融资，8月完成20亿元融资，投后估值约200亿元",
+          "core_difference": "曦望采用面向推理优化的GPU路线，前身为商汤科技大芯片部门，2024年底分拆；墨芯采用稀疏专用推理芯片路线。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1dedce06704cbebc",
+              "quote": "曦望前身为商汤科技大芯片部门，2024年底分拆，采用面向推理优化的GPU路线，启望S3预计2026年底量产。",
+              "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+              "quote_hash": "e615300a5772c0cd359e2333b0a28d56c46acee2bbb2360ba87de79f3bce50cd"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "微纳核芯",
+          "product": "三维存算一体路线，首代三颗芯片已全部投片",
+          "scenario": "AI芯片",
+          "target_customer": "",
+          "funding_summary": "10月28日完成超10亿元C2轮融资，叠加C1轮两个月累计融资超20亿元",
+          "core_difference": "微纳核芯采用三维存算一体路线，首代三颗芯片已全部投片，预计2027年初客户送测并启动批量供货；墨芯采用稀疏计算路线，已推出S4、S30、S40计算卡。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1dedce06704cbebc",
+              "quote": "微纳核芯10月28日完成超10亿元C2轮融资，建投投资领投，杭州资本、凯泰资本、晓池资本等共同投资，叠加C1轮两个月累计融资超20亿元，采用三维存算一体路线",
+              "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+              "quote_hash": "0098f743cf29964f7e4808346df805bdbdf19f62fee28f49e780b6544a27c14c"
+            }
+          ],
+          "entity_id": "EN-a5e5f031b6f878cf"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "C+轮融资金额",
+          "value": "近10亿元人民币",
+          "observed_at": "2026-11-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1dedce06704cbebc",
+              "quote": "墨芯人工智能科技（深圳）有限公司近日宣布完成近10亿元人民币C+轮融资",
+              "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+              "quote_hash": "71e95dcc078afebd4ed9415775539ce2a7f461c206ee2c5452376d48f2cdc1e8"
+            }
+          ]
+        },
+        {
+          "label": "两轮累计融资",
+          "value": "近20亿元",
+          "observed_at": "2026-11-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1dedce06704cbebc",
+              "quote": "本轮距上一轮近10亿元融资约5个月，两轮累计融资近20亿元。",
+              "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+              "quote_hash": "cffa2c683790c713f31ef3e6a32acbb51dc727d1abf41158006562f93a7f03a3"
+            }
+          ]
+        },
+        {
+          "label": "2026年第三季度营收增长",
+          "value": "数倍增长（未披露金额及基期）",
+          "observed_at": "2026-11-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1dedce06704cbebc",
+              "quote": "公司称2026年第三季度营收实现数倍增长，但未披露收入金额及增长比较基期。",
+              "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+              "quote_hash": "f1745363951179d80a4d947d870a34633291b58bcccfa808f9e44ca81c5ea678"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "pharnexcloud.com",
+          "quote": "墨芯人工智能科技（深圳）有限公司近日完成近十亿元人民币C轮融资，投资方包括深创投、岩山科技、大湾区共同家园等。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1ff05354e1c7f055",
+              "quote": "墨芯人工智能科技（深圳）有限公司近日完成近十亿元人民币C轮融资，投资方包括深创投、岩山科技、大湾区共同家园等。",
+              "source_content_hash": "f9d460fdab9f46b6",
+              "quote_hash": "3eb8b787497189a67e8077eaf847b349ca4c77a3019797fa3aade24faa0defe3"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是稀疏专用推理芯片能否把性能优势转化为持续订单：本轮近10亿元C+轮资金用于稀疏专用推理芯片软硬件升级、下一代芯片预研及稀疏计算产学研合作，两轮累计融资近20亿元。已验证信号包括S4、S30、S40计算卡已推出、推理集群在西北、西南、华东、华北等区域部署、与头部电信运营商合作将稀疏计算方案纳入对方算力服务体系，以及公司称2026年第三季度营收实现数倍增长（未披露金额及基期）。证据边界在于：营收增长缺少金额与比较基期，SP200能否按计划推出、已有算力项目能否带来持续采购、软件升级能否缩短新客户部署周期均待验证。",
+        "validated_signals": [
+          "已推出搭载自研Antoum芯片的S4、S30、S40计算卡",
+          "推理集群已在西北、西南、华东、华北等区域部署",
+          "与头部电信运营商合作，将稀疏计算方案纳入对方算力服务体系",
+          "参与上海国资平台公司建设的海上算力Token工厂，提供稀疏计算方案",
+          "与北京大学上海临港国际科技创新中心地球与空间技术研究院完成两款遥感影像分析基础模型适配测试"
+        ],
+        "risks": [
+          "公司称2026年第三季度营收实现数倍增长，但未披露收入金额及增长比较基期，增长幅度无法核验",
+          "SP200计算卡及升级版软件栈SECA计划年底前推出，能否按计划落地尚待验证",
+          "已有算力项目能否带来持续采购、软件升级能否缩短新客户部署周期仍待观察",
+          "客户比较的是模型长期运行中的实际成本、稳定性和服务能力，稀疏计算性能优势能否转化为持续订单存在不确定性"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "use_case_ids": [
+          "data_analysis"
+        ],
+        "industry_ids": [
+          "telecommunications",
+          "energy_utilities",
+          "education"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "AI推理芯片与稀疏计算算力系统",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是稀疏专用推理芯片能否把性能优势转化为持续订单：本轮近10亿元C+轮资金用于稀疏专用推理芯片软硬件升级、下一代芯片预研及稀疏计算产学研合作，两轮累计融资近20亿元。已验证信号包括S4、S30、S40计算卡已推出、推理集群在西北、西南、华东、华北等区域部署、与头部电信运营商合作将稀疏计算方案纳入对方算力服务体系，以及公司称2026年第三季度营收实现数倍增长（未披露金额及基期）。证据边界在于：营收增长缺少金额与比较基期，SP200能否按计划推出、已有算力项目能否带来持续采购、软件升级能否缩短新客户部署周期均待验证。",
+          "evidence_signals": [
+            "已推出搭载自研Antoum芯片的S4、S30、S40计算卡",
+            "推理集群已在西北、西南、华东、华北等区域部署",
+            "与头部电信运营商合作，将稀疏计算方案纳入对方算力服务体系",
+            "参与上海国资平台公司建设的海上算力Token工厂，提供稀疏计算方案",
+            "与北京大学上海临港国际科技创新中心地球与空间技术研究院完成两款遥感影像分析基础模型适配测试"
+          ],
+          "risks": [
+            "公司称2026年第三季度营收实现数倍增长，但未披露收入金额及增长比较基期，增长幅度无法核验",
+            "SP200计算卡及升级版软件栈SECA计划年底前推出，能否按计划落地尚待验证",
+            "已有算力项目能否带来持续采购、软件升级能否缩短新客户部署周期仍待观察",
+            "客户比较的是模型长期运行中的实际成本、稳定性和服务能力，稀疏计算性能优势能否转化为持续订单存在不确定性"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "S4、S30、S40计算卡",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "SP200计算卡及SECA软件栈",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "算力系统交付与算力服务",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "王维",
+          "canonical_entity_id": "EN-432f5ed58fc572f9",
+          "canonical_name": "王维"
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "严恩勖",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "芦勇",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "仁爱资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "海棠基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "东恒石油",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "比丘资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "派拉资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中财资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "深创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "大湾区共同家园",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "力鼎资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "蕴盛资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "凯旋创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "盛景嘉成",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "岩山科技",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "头部电信运营商",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "上海国资平台公司建设的海上算力Token工厂",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "北京大学上海临港国际科技创新中心地球与空间技术研究院",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "曦望",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "微纳核芯",
+          "canonical_entity_id": "EN-a5e5f031b6f878cf",
+          "canonical_name": "微纳核芯"
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-fa6bb71ec7a8ee92",
+          "date": "2026-11-04",
+          "title": "墨芯完成近10亿元C+轮融资，累计融资近20亿元推进AI推理芯片",
+          "amount": "近10亿元人民币",
+          "source_refs": [
+            "SA-0b666d7e600185a3"
+          ]
+        },
+        {
+          "event_id": "EV-794f921515af8e8b",
+          "date": "2026-05-29",
+          "title": "墨芯人工智能完成近10亿元C轮融资",
+          "amount": "近10亿元",
+          "source_refs": [
+            "SA-1196ebf97c011b89"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-1dedce06704cbebc",
+          "source_url": "https://www.huxiu.com/article/4902795.html",
+          "title": "墨芯完成近10亿元C+轮融资，累计融资近20亿元推进AI推理芯片",
+          "publisher": "www.huxiu.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-06T00:20:21.442Z",
+          "content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+          "source_artifact_id": "SA-0b666d7e600185a3",
+          "raw_id": "RAW-633535a085d6ed61",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-1ff05354e1c7f055",
+          "source_url": "https://www.pharnexcloud.com/zixun/shiye/ytsd_316483",
+          "title": "「墨芯人工智能」完成近十亿元C轮融资，加速稀疏计算商业化闭环",
+          "publisher": "pharnexcloud.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-06T00:51:37.332Z",
+          "content_hash": "f9d460fdab9f46b6",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-06T00:52:02.462Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-06T00:52:02.462Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "S4、S30、S40计算卡",
+            "SP200计算卡及SECA软件栈",
+            "算力系统交付与算力服务"
+          ]
+        },
+        "founders": {
+          "linked": 1,
+          "total": 3,
+          "unresolved_names": [
+            "严恩勖",
+            "芦勇"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-fa6bb71ec7a8ee92"
+      ],
+      "aggregation": {
+        "key": "EN-085578b03da7d660|series_c_plus|CNY:approximate:1000000000:::|2026-11-04",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-65757c535b592aae",
+          "event_ids": [
+            "EV-fa6bb71ec7a8ee92"
+          ],
+          "round": "C+轮",
+          "round_code": "series_c_plus",
+          "round_original": "C+轮",
+          "amount_original": "近10亿元人民币",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 10 亿元"
+          },
+          "announced_at": "2026-11-04",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        },
+        {
+          "funding_insight_id": "FI-f617b97f0b35118f",
+          "event_ids": [
+            "EV-794f921515af8e8b"
+          ],
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "近10亿人民币",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 10 亿元"
+          },
+          "announced_at": "2026-05-29",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": false
+        }
+      ],
+      "market_scope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin",
+          "china_entity_alias:墨芯人工智能",
+          "funding_company_evidence:china_entity_headquarters:墨芯成立于2018年，总部位于深圳"
+        ],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "chip_accelerator",
+        "name": "芯片与加速器",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "hardware_computing",
+        "name": "硬件与算力",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "chips",
+        "name": "芯片",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "data-center.html?view=index&detail=entity&id=EN-085578b03da7d660",
+        "relation_map": "data-center.html?view=relations&entity=EN-085578b03da7d660",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-fa6bb71ec7a8ee92",
+        "direction": ""
+      },
+      "translations": {
+        "zh-CN": {
+          "customers[0].industry": {
+            "text": "电信",
+            "source_hash": "717a1cda828d2c9a2678dedb09948a5d5dcf7e2d12bba75947cbde0bdf7c0271",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-09-12T09:32:53.286Z",
+            "status": "translated"
+          },
+          "customers[1].industry": {
+            "text": "能源与公用事业",
+            "source_hash": "65a91c669f2a0bbbcaaeeee5f4ef4c7fb989fd26684722c6d042a3f8f35832ab",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-14T07:17:21.597Z",
+            "status": "translated"
+          },
+          "customers[2].industry": {
+            "text": "教育",
+            "source_hash": "68bf0109c6f8a87bfa96d1ecd9503326ba35cf4a6086988a1d2c8a20fbef00d1",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-09-12T09:32:55.086Z",
+            "status": "translated"
+          }
+        }
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-f77579b48a169dcd",
+      "triggered_by_event_id": "EV-46380e6a44f3b91d",
+      "as_of_date": "2026-11-06",
+      "company": {
+        "entity_id": "EN-aa180564bbd951a4",
+        "name": "Crediflow AI",
+        "full_name": "Crediflow AI",
+        "website": "",
+        "summary": "总部位于曼彻斯特的金融科技公司，通过AI平台整合信贷团队手工收集的财务报表、银行流水和借款人文件，将其结构化为可供审批的信贷分析，减少商业贷款处理中的人工工作。",
+        "headquarters": "英国英格兰曼彻斯特",
+        "founders": [
+          {
+            "name": "Drey Kenfack",
+            "role": "首席执行官兼创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fa1b591d370eecd7",
+                "quote": "Crediflow was founded by CEO Drey Kenfack, who has more than a decade of experience in commercial lending and private credit",
+                "source_content_hash": "2f61ebf5dddee0c5",
+                "quote_hash": "6e4939e71ffb316f749dc700443d435e90adad126eb0c4fcf0d712205aa6b396"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d4bcdda87f7a3bf5",
+            "quote": "Crediflow AI, a Manchester-based FinTech aiming to remove manual work from commercial loan processing",
+            "source_content_hash": "0c7042a5d20e37e17dcd513d37d4fc8265090fd0987ceeaad0950881758d2709",
+            "quote_hash": "308a4d8bae337fa4f368c7b41bad0f835538c5b46d6ef9da27cdb7326a48b340"
+          },
+          {
+            "source_id": "FISRC-fa1b591d370eecd7",
+            "quote": "Manchester-based Crediflow AI has developed a platform that pulls together the information credit teams currently gather and process by hand",
+            "source_content_hash": "2f61ebf5dddee0c5",
+            "quote_hash": "df1466d08aa4b9a42b2e8b4e42d35aa378cf8a86828d3d7428b6255108044f1e"
+          }
+        ],
+        "application_entity_id": "EN-aa180564bbd951a4",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "€1.8 million",
+        "total_raised": "",
+        "announced_at": "2026-11-04",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "NPIF II – PXN Equity Finance",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d4bcdda87f7a3bf5",
+                "quote": "The funding was led by NPIF II – PXN Equity Finance, managed by PXN Ventures as part of the Northern Powerhouse Investment Fund II (NPIF II)",
+                "source_content_hash": "0c7042a5d20e37e17dcd513d37d4fc8265090fd0987ceeaad0950881758d2709",
+                "quote_hash": "0e6dfc3a879bfd433db8d551090219349d559f5ad0abff996ecb12f1c1e14990"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-c041dfeca46673"
+          },
+          {
+            "name": "Haatch",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d4bcdda87f7a3bf5",
+                "quote": "The round also saw participation from early-stage venture firm Haatch and a group of angel investors.",
+                "source_content_hash": "0c7042a5d20e37e17dcd513d37d4fc8265090fd0987ceeaad0950881758d2709",
+                "quote_hash": "68cc947904b7bc4d5826368f08263d1312c1ee3902153f91ee0088f906a7e000"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d4bcdda87f7a3bf5",
+            "quote": "HomeUK-StartupsManchester-based Crediflow AI secures €1.8 million to automate commercial loan processing",
+            "source_content_hash": "0c7042a5d20e37e17dcd513d37d4fc8265090fd0987ceeaad0950881758d2709",
+            "quote_hash": "10ddcd173527c1a8ba308b8a16dde097179abdc8b4541cfa032a264a22348b87"
+          },
+          {
+            "source_id": "FISRC-d4bcdda87f7a3bf5",
+            "quote": "has secured €1.8 million (£1.5 million) in funding",
+            "source_content_hash": "0c7042a5d20e37e17dcd513d37d4fc8265090fd0987ceeaad0950881758d2709",
+            "quote_hash": "7434e572bc0f6a9d7766d10fe82bb44f7271b81622273558cb95ab11672c35bf"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "€1.8 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1800000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "180 万欧元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-46380e6a44f3b91d",
+            "round_original": "Seed",
+            "amount": "€1.8 million",
+            "announced_at": "2026-11-04",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d4bcdda87f7a3bf5",
+                "quote": "HomeUK-StartupsManchester-based Crediflow AI secures €1.8 million to automate commercial loan processing",
+                "source_content_hash": "0c7042a5d20e37e17dcd513d37d4fc8265090fd0987ceeaad0950881758d2709",
+                "quote_hash": "10ddcd173527c1a8ba308b8a16dde097179abdc8b4541cfa032a264a22348b87"
+              },
+              {
+                "source_id": "FISRC-d4bcdda87f7a3bf5",
+                "quote": "has secured €1.8 million (£1.5 million) in funding",
+                "source_content_hash": "0c7042a5d20e37e17dcd513d37d4fc8265090fd0987ceeaad0950881758d2709",
+                "quote_hash": "7434e572bc0f6a9d7766d10fe82bb44f7271b81622273558cb95ab11672c35bf"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "EUR",
+              "value": 1800000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "180 万欧元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-d4bcdda87f7a3bf5"
+        ]
+      },
+      "products": [
+        {
+          "name": "FlowSpread",
+          "description": "自动化财务数据展开（financial spreading），直接从PDF、纳税申报表和银行流水中提取利润表、资产负债表数据和现金流数字，消除手工数据录入。",
+          "target_customers": "银行和专业贷款机构的信贷团队",
+          "features": [
+            "从PDF、纳税申报表和银行流水提取财务数据",
+            "自动化财务数据展开",
+            "消除手工数据录入"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d4bcdda87f7a3bf5",
+              "quote": "Its flagship product, FlowSpread, automates financial spreading by extracting income statements, balance sheet data, and cash flow figures directly from PDFs, tax returns, and bank statements, eliminating manual data entry.",
+              "source_content_hash": "0c7042a5d20e37e17dcd513d37d4fc8265090fd0987ceeaad0950881758d2709",
+              "quote_hash": "0387dc6d8eeb97114a9ed8e69c189137d63791e4175c7d65f773a3aaea54eb7f"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Bank Statement Analysis",
+          "description": "银行流水分析工具，自动对多个账户的交易进行分类，与提交的财务数据进行核对，并标记异常活动、现金流波动或集中度风险等风险信号。",
+          "target_customers": "银行和专业贷款机构的信贷团队",
+          "features": [
+            "多账户交易自动分类",
+            "与提交财务数据核对",
+            "标记异常活动、现金流波动、集中度风险"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d4bcdda87f7a3bf5",
+              "quote": "It also offers a Bank Statement Analysis tool that adds an additional layer of intelligence, automatically categorising transactions across multiple accounts, reconciling them against submitted financials, and flagging risk signals such as unusual activity, cash flow volatility, or concentration risk.",
+              "source_content_hash": "0c7042a5d20e37e17dcd513d37d4fc8265090fd0987ceeaad0950881758d2709",
+              "quote_hash": "8e304fc338783306b70562d2b160bca4ebd19f6ed8012c0c2d7ad931880f49cc"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Crediflow AI平台",
+          "description": "整合信贷团队手工收集的财务报表、银行交易和借款人文件，将其结构化为可供贷款方审批的信贷分析，并起草信贷委员会使用的备忘录。",
+          "target_customers": "银行、专业贷款机构及各类贷款方",
+          "features": [
+            "整合多源信贷信息",
+            "结构化信贷分析",
+            "起草信贷委员会备忘录",
+            "按客户偏好格式输出"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d4bcdda87f7a3bf5",
+              "quote": "The company has built a platform that consolidates the information credit teams currently gather by hand, such as financial statements, bank transactions, and borrower documents, and structures them into credit analysis ready for approval by a lender.",
+              "source_content_hash": "0c7042a5d20e37e17dcd513d37d4fc8265090fd0987ceeaad0950881758d2709",
+              "quote_hash": "3024cc1a6f079de5d98519da6bb6a7efc6bf194091f5d97ae93b5b3e465ea84a"
+            },
+            {
+              "source_id": "FISRC-fa1b591d370eecd7",
+              "quote": "the platform extracts and standardises figures from a borrower’s accounts, a process the industry calls financial spreading, analyses cash flow and drafts the memo a lender’s credit committee uses to approve a loan, in each customer’s preferred format.",
+              "source_content_hash": "2f61ebf5dddee0c5",
+              "quote_hash": "2afe5b37ccdc16a54be5c428905b452c25ec1f7a34ce62ade5402632f5eb5b04"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "AddWorking Capital",
+          "industry": "金融服务",
+          "use_case": "专业贷款机构使用Crediflow平台进行商业贷款信贷分析",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa1b591d370eecd7",
+              "quote": "supporting lenders of all sizes, from specialist lenders such as AddWorking Capital to global captive finance such as Iveco Capital.",
+              "source_content_hash": "2f61ebf5dddee0c5",
+              "quote_hash": "507c0e5775575fa08164165dd2a422ec0d04a9a5cda78d16e43edc6ac588c381"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Iveco Capital",
+          "industry": "金融服务",
+          "use_case": "全球专属融资机构使用Crediflow平台进行商业贷款信贷分析",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa1b591d370eecd7",
+              "quote": "supporting lenders of all sizes, from specialist lenders such as AddWorking Capital to global captive finance such as Iveco Capital.",
+              "source_content_hash": "2f61ebf5dddee0c5",
+              "quote_hash": "507c0e5775575fa08164165dd2a422ec0d04a9a5cda78d16e43edc6ac588c381"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "€1.8 million (£1.5 million)",
+          "observed_at": "2026-11-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d4bcdda87f7a3bf5",
+              "quote": "has secured €1.8 million (£1.5 million) in funding",
+              "source_content_hash": "0c7042a5d20e37e17dcd513d37d4fc8265090fd0987ceeaad0950881758d2709",
+              "quote_hash": "7434e572bc0f6a9d7766d10fe82bb44f7271b81622273558cb95ab11672c35bf"
+            }
+          ]
+        },
+        {
+          "label": "平台处理时间",
+          "value": "10至30分钟（公司称可将原本数天的流程缩短至此）",
+          "observed_at": "2026-11-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d4bcdda87f7a3bf5",
+              "quote": "Crediflow AI says its platform can reduce the process that could take several days to between 10 and 30 minutes.",
+              "source_content_hash": "0c7042a5d20e37e17dcd513d37d4fc8265090fd0987ceeaad0950881758d2709",
+              "quote_hash": "962bebf6d3531cde7e358d45eb18d584732e57a03b7e550fdd75e8457980cc94"
+            }
+          ]
+        },
+        {
+          "label": "信贷专业人员使用规模",
+          "value": "英国、欧洲和美国数百名信贷专业人员",
+          "observed_at": "2026-11-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d4bcdda87f7a3bf5",
+              "quote": "It is already in use by hundreds of credit professionals across the UK, Europe, and the United States",
+              "source_content_hash": "0c7042a5d20e37e17dcd513d37d4fc8265090fd0987ceeaad0950881758d2709",
+              "quote_hash": "6c7a6f0a53f18bc0f2d43b590ae64331d4741f3e5970d76322b7a889e2611aa0"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Drey Kenfack",
+          "quote": "Growing a loan book takes more than finding borrowers and having capital available. You need the capacity to assess those businesses, get decisions through approval and stay on top of risk once the money is out the door.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa1b591d370eecd7",
+              "quote": "Growing a loan book takes more than finding borrowers and having capital available. You need the capacity to assess those businesses, get decisions through approval and stay on top of risk once the money is out the door.",
+              "source_content_hash": "2f61ebf5dddee0c5",
+              "quote_hash": "e7c0fd8886ddf95c1ba3f810d2a90db001dd88d6e601cf512327f0cd7f6eef14"
+            }
+          ]
+        },
+        {
+          "speaker": "Joe Ball",
+          "quote": "Businesses of all sizes and across all sectors often rely on commercial finance for a multitude of reasons, but the processes involved in granting this finance are often largely manual, making the process inefficient and slowing down lending decisions.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa1b591d370eecd7",
+              "quote": "Businesses of all sizes and across all sectors often rely on commercial finance for a multitude of reasons, but the processes involved in granting this finance are often largely manual, making the process inefficient and slowing down lending decisions.",
+              "source_content_hash": "2f61ebf5dddee0c5",
+              "quote_hash": "738a3ef92cc1c73c8493c1b4b7bad7317d06844d78bee6cb0fdc0654d964206b"
+            }
+          ]
+        },
+        {
+          "speaker": "Jonathan Keeling",
+          "quote": "The best B2B founders build the product they wished they’d had in their last job. Drey spent over a decade in credit roles watching good deals stall on admin, and Crediflow turns hours of manual spreading and memo writing into structured analysis credit teams can act on.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa1b591d370eecd7",
+              "quote": "The best B2B founders build the product they wished they’d had in their last job. Drey spent over a decade in credit roles watching good deals stall on admin, and Crediflow turns hours of manual spreading and memo writing into structured analysis credit teams can act on.",
+              "source_content_hash": "2f61ebf5dddee0c5",
+              "quote_hash": "8c8d20e33094a0f1b9cd4a85739cdc6139c37f18cdfd5297d912c41499b22092"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "NPIF II – PXN Equity Finance",
+            "speaker": "Joe Ball",
+            "speaker_role": "senior investment associate at PXN Ventures",
+            "rationale": "商业贷款审批流程高度手工化导致效率低下，Crediflow AI通过自动化该环节既支持贷款机构，也帮助需要融资的企业消除增长障碍。",
+            "quote": "Businesses of all sizes and across all sectors often rely on commercial finance for a multitude of reasons, but the processes involved in granting this finance are often largely manual, making the process inefficient and slowing down lending decisions. By automating this area of the sector, Drey and the Crediflow AI team are not just supporting lenders but also removing barriers for companies that need funding to grow.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fa1b591d370eecd7",
+                "quote": "Businesses of all sizes and across all sectors often rely on commercial finance for a multitude of reasons, but the processes involved in granting this finance are often largely manual, making the process inefficient and slowing down lending decisions. By automating this area of the sector, Drey and the Crediflow AI team are not just supporting lenders but also removing barriers for companies that need funding to grow.",
+                "source_content_hash": "2f61ebf5dddee0c5",
+                "quote_hash": "a62a7f9ac860cdd3d8f83864fb26cc33e85acb9a4be3a8925132901b373f7a39"
+              }
+            ]
+          },
+          {
+            "institution": "Haatch",
+            "speaker": "Jonathan Keeling",
+            "speaker_role": "partner at Haatch",
+            "rationale": "创始人基于十余年信贷岗位经验，将手工财务展开和备忘录撰写转化为结构化分析，且在英国、欧洲和美国已有活跃客户，具备快速规模化牵引力。",
+            "quote": "The best B2B founders build the product they wished they’d had in their last job. Drey spent over a decade in credit roles watching good deals stall on admin, and Crediflow turns hours of manual spreading and memo writing into structured analysis credit teams can act on. With live customers across the UK, Europe and the US, the team has the traction to scale quickly, and we’re proud to support them on that journey.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fa1b591d370eecd7",
+                "quote": "The best B2B founders build the product they wished they’d had in their last job. Drey spent over a decade in credit roles watching good deals stall on admin, and Crediflow turns hours of manual spreading and memo writing into structured analysis credit teams can act on. With live customers across the UK, Europe and the US, the team has the traction to scale quickly, and we’re proud to support them on that journey.",
+                "source_content_hash": "2f61ebf5dddee0c5",
+                "quote_hash": "b17ddfbdf4da60ec39b47d122ec3fec65492914c138d4afb67300d2304158b3b"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "本轮资本押注的核心变量是Crediflow AI能否将商业贷款处理中高度手工化的财务展开、流水分析和备忘录撰写环节自动化，并以可适配各贷款机构信贷政策的工作流从承销扩展至全贷款生命周期。当前融资所依赖的已验证信号包括：平台已在英国、欧洲和美国被数百名信贷专业人员使用，客户包括AddWorking Capital和Iveco Capital；公司称可将原本数天的流程缩短至10至30分钟。证据边界在于：处理时间缩短为公司自述，未披露收入、合同金额或留存数据；本轮为Seed轮，累计融资额未披露。",
+        "validated_signals": [
+          "平台已在英国、欧洲和美国被数百名信贷专业人员使用",
+          "客户包括AddWorking Capital和Iveco Capital",
+          "公司称平台可将原本数天的流程缩短至10至30分钟"
+        ],
+        "risks": [
+          "处理时间从数天缩短至10至30分钟为公司自述，尚未有独立验证或客户量化结果披露",
+          "未披露收入、合同金额、客户留存或付费转化数据，商业化质量待验证",
+          "本轮为Seed轮且累计融资额未披露，后续融资能力与资金跑道存在不确定性",
+          "从承销扩展至全贷款生命周期需适配各贷款机构信贷政策，执行复杂度较高"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "financial_services",
+        "market_application_id": "",
+        "use_case_ids": [
+          "finance_accounting"
+        ],
+        "industry_ids": [
+          "financial_services"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "商业贷款信贷分析自动化平台",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是Crediflow AI能否将商业贷款处理中高度手工化的财务展开、流水分析和备忘录撰写环节自动化，并以可适配各贷款机构信贷政策的工作流从承销扩展至全贷款生命周期。当前融资所依赖的已验证信号包括：平台已在英国、欧洲和美国被数百名信贷专业人员使用，客户包括AddWorking Capital和Iveco Capital；公司称可将原本数天的流程缩短至10至30分钟。证据边界在于：处理时间缩短为公司自述，未披露收入、合同金额或留存数据；本轮为Seed轮，累计融资额未披露。",
+          "evidence_signals": [
+            "平台已在英国、欧洲和美国被数百名信贷专业人员使用",
+            "客户包括AddWorking Capital和Iveco Capital",
+            "公司称平台可将原本数天的流程缩短至10至30分钟"
+          ],
+          "risks": [
+            "处理时间从数天缩短至10至30分钟为公司自述，尚未有独立验证或客户量化结果披露",
+            "未披露收入、合同金额、客户留存或付费转化数据，商业化质量待验证",
+            "本轮为Seed轮且累计融资额未披露，后续融资能力与资金跑道存在不确定性",
+            "从承销扩展至全贷款生命周期需适配各贷款机构信贷政策，执行复杂度较高"
+          ],
+          "institutional_rationale_status": "disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "FlowSpread",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Bank Statement Analysis",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Crediflow AI平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Drey Kenfack",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "NPIF II – PXN Equity Finance",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Haatch",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "AddWorking Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Iveco Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-46380e6a44f3b91d",
+          "date": "2026-11-04",
+          "title": "总部位于曼彻斯特的Crediflow AI获得180万欧元融资，用于自动化商业贷款处理",
+          "amount": "€1.8 million",
+          "source_refs": [
+            "SA-7211f0ed2df7634e"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-d4bcdda87f7a3bf5",
+          "source_url": "https://www.eu-startups.com/2026/11/manchester-based-crediflow-ai-secures-e1-8-million-to-automate-commercial-loan-processing",
+          "title": "总部位于曼彻斯特的Crediflow AI获得180万欧元融资，用于自动化商业贷款处理",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-06T00:24:39.361Z",
+          "content_hash": "0c7042a5d20e37e17dcd513d37d4fc8265090fd0987ceeaad0950881758d2709",
+          "source_artifact_id": "SA-7211f0ed2df7634e",
+          "raw_id": "RAW-9781a37749315767",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-fa1b591d370eecd7",
+          "source_url": "https://financialit.net/news/fundraising-news/crediflow-ai-secures-ps15m-cut-manual-work-behind-commercial-lending",
+          "title": "Crediflow AI Secures £1.5M to Cut the Manual Work Behind Commercial Lending",
+          "publisher": "financialit.net",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-06T00:51:15.292Z",
+          "content_hash": "2f61ebf5dddee0c5",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-06T00:51:33.760Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-06T00:51:33.760Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Bank Statement Analysis",
+            "Crediflow AI平台",
+            "FlowSpread"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Drey Kenfack"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-46380e6a44f3b91d"
+      ],
+      "aggregation": {
+        "key": "EN-aa180564bbd951a4|seed|EUR:exact:1800000:::|2026-11-04",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-f77579b48a169dcd",
+          "event_ids": [
+            "EV-46380e6a44f3b91d"
+          ],
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "Seed",
+          "amount_original": "€1.8 million",
+          "amount_normalized": {
+            "currency": "EUR",
+            "value": 1800000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "180 万欧元"
+          },
+          "announced_at": "2026-11-04",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "enterprise_software_platform",
+        "name": "企业软件平台",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "industry_applications",
+        "name": "行业应用",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "financial_services",
+        "name": "金融服务",
+        "method": "card_explicit"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-46380e6a44f3b91d",
+        "direction": ""
+      },
+      "translations": {
+        "zh-CN": {
+          "company.headquarters": {
+            "text": "英国英格兰曼彻斯特",
+            "source_hash": "445c62672fba1e2217d4df7b1d18a9f53890bcaa8bbe899c035d7bd9b7242b25",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-06T10:48:39.915Z",
+            "status": "translated"
+          },
+          "company.founders[0].role": {
+            "text": "首席执行官兼创始人",
+            "source_hash": "926fd1e88ad85bb46764466f33963ca40fb197a2aa7b1c9a8e27c59dd5d48ec5",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-14T07:17:41.643Z",
+            "status": "translated"
+          },
+          "customers[0].industry": {
+            "text": "金融服务",
+            "source_hash": "b74a19b33adabf11dd77a40d61bf8217e9a10911177dbda00bd25b5be47a08da",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-14T07:17:18.959Z",
+            "status": "translated"
+          },
+          "customers[1].industry": {
+            "text": "金融服务",
+            "source_hash": "b74a19b33adabf11dd77a40d61bf8217e9a10911177dbda00bd25b5be47a08da",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-14T07:17:18.959Z",
+            "status": "translated"
+          }
+        }
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-97d4e2406bbf2412",
       "triggered_by_event_id": "EV-79f50d2659ea434a",
       "as_of_date": "2026-11-05",
@@ -408,7 +4862,8 @@
                 "quote_hash": "add016caa68333014d937c4cdd9e28a8aeec7ec2bb7db41306342416d02919cc"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-36be32d63db22e"
           },
           {
             "name": "NBCUniversal",
@@ -421,7 +4876,8 @@
                 "quote_hash": "add016caa68333014d937c4cdd9e28a8aeec7ec2bb7db41306342416d02919cc"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-43f2b43cf9d2ab"
           },
           {
             "name": "MIT Investment Co.",
@@ -434,7 +4890,8 @@
                 "quote_hash": "392eb27e4bdf3254e43eca338431351fe84fd80d78d6cf9899ddb0d5254e662e"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-d41b9e6f498452"
           },
           {
             "name": "Play Ventures",
@@ -447,7 +4904,8 @@
                 "quote_hash": "392eb27e4bdf3254e43eca338431351fe84fd80d78d6cf9899ddb0d5254e662e"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-a8a8f3e5b0b597"
           },
           {
             "name": "Kalaari Capital",
@@ -474,7 +4932,8 @@
                 "quote_hash": "392eb27e4bdf3254e43eca338431351fe84fd80d78d6cf9899ddb0d5254e662e"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-6ad806f9b4e37b"
           },
           {
             "name": "Griffin Gaming Partners",
@@ -487,7 +4946,8 @@
                 "quote_hash": "392eb27e4bdf3254e43eca338431351fe84fd80d78d6cf9899ddb0d5254e662e"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-cd7a1c91d54bed"
           }
         ],
         "other_round_investors": [],
@@ -1349,7 +5809,8 @@
                 "quote_hash": "5d7110c5f4857afa4c2e55ce59cef269c2b2a7f9d8fcc2ef990da34a72465ab9"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-0eb4e680ce4444"
           },
           {
             "name": "Dr. Siegfried Marquardt",
@@ -1362,7 +5823,8 @@
                 "quote_hash": "c275a3231d8fdf6154f7763d3c799c197eac76d1d51f94409a0d5b10007da4cc"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-04a72282360212"
           },
           {
             "name": "Dr. Guido Sigron",
@@ -1375,7 +5837,8 @@
                 "quote_hash": "c275a3231d8fdf6154f7763d3c799c197eac76d1d51f94409a0d5b10007da4cc"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-e6a6a7114a0324"
           },
           {
             "name": "Mittelständische Beteiligungsgesellschaft Sachsen (MBG)",
@@ -1388,7 +5851,8 @@
                 "quote_hash": "acd447c306eaf80191dd970876cd2fe5d8eb669192b230a4e269ebd59aa36608"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-cd109422076a81"
           },
           {
             "name": "Christophe Barriolade",
@@ -1401,7 +5865,8 @@
                 "quote_hash": "acd447c306eaf80191dd970876cd2fe5d8eb669192b230a4e269ebd59aa36608"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-c578375d7102cd"
           },
           {
             "name": "Aldrich Huang",
@@ -1414,7 +5879,8 @@
                 "quote_hash": "acd447c306eaf80191dd970876cd2fe5d8eb669192b230a4e269ebd59aa36608"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-8e0e70e30af237"
           },
           {
             "name": "Jens Kosche",
@@ -1427,7 +5893,8 @@
                 "quote_hash": "acd447c306eaf80191dd970876cd2fe5d8eb669192b230a4e269ebd59aa36608"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-050565cfabe3b1"
           },
           {
             "name": "Marc Scheidegger",
@@ -1440,7 +5907,8 @@
                 "quote_hash": "acd447c306eaf80191dd970876cd2fe5d8eb669192b230a4e269ebd59aa36608"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-db99855167de5f"
           }
         ],
         "other_round_investors": [],
@@ -2019,7 +6487,8 @@
                 "quote_hash": "9398fa126abacdc33b1dd32c9620d402697739acf8a530640e35381d09dd69ba"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-e669a1be05af46"
           },
           {
             "name": "Haufe Group Ventures",
@@ -2032,7 +6501,8 @@
                 "quote_hash": "9398fa126abacdc33b1dd32c9620d402697739acf8a530640e35381d09dd69ba"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-9cd9c400dd9c96"
           },
           {
             "name": "WaVe-X (WALTER GROUP)",
@@ -2045,7 +6515,8 @@
                 "quote_hash": "9398fa126abacdc33b1dd32c9620d402697739acf8a530640e35381d09dd69ba"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-2675500b4456f3"
           },
           {
             "name": "F-LOG Ventures",
@@ -2058,7 +6529,8 @@
                 "quote_hash": "9398fa126abacdc33b1dd32c9620d402697739acf8a530640e35381d09dd69ba"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-9c91598c9c9fd4"
           },
           {
             "name": "System.One",
@@ -2071,7 +6543,8 @@
                 "quote_hash": "29226938b19de820190898bf3bf257dfeb546b25b01cc778e06f4af97e765e8a"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-caaf1b768847a8"
           },
           {
             "name": "Puzzle Ventures",
@@ -2084,7 +6557,8 @@
                 "quote_hash": "29226938b19de820190898bf3bf257dfeb546b25b01cc778e06f4af97e765e8a"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-37b026aa1510c5"
           },
           {
             "name": "Booom Ventures",
@@ -2097,7 +6571,8 @@
                 "quote_hash": "29226938b19de820190898bf3bf257dfeb546b25b01cc778e06f4af97e765e8a"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-3e3c3e83c50892"
           },
           {
             "name": "Yellow",
@@ -2871,7 +7346,8 @@
                 "quote_hash": "d8acd6255b1f6e2ab1e332e8f5ab162df343ab9104dcc862e0b294de0099fcd5"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-41eb553354ff9b"
           },
           {
             "name": "Institute of Chartered Accountants in England and Wales (ICAEW)",
@@ -2884,7 +7360,8 @@
                 "quote_hash": "d8acd6255b1f6e2ab1e332e8f5ab162df343ab9104dcc862e0b294de0099fcd5"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-881170bd7f2ddb"
           },
           {
             "name": "Portfolio Ventures",
@@ -2911,7 +7388,8 @@
                 "quote_hash": "d8acd6255b1f6e2ab1e332e8f5ab162df343ab9104dcc862e0b294de0099fcd5"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-577debc8bdbb14"
           },
           {
             "name": "Paul Forster",
@@ -2924,7 +7402,8 @@
                 "quote_hash": "d8acd6255b1f6e2ab1e332e8f5ab162df343ab9104dcc862e0b294de0099fcd5"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-59f9e71e3b3c4f"
           },
           {
             "name": "Angus Miln",
@@ -2937,7 +7416,8 @@
                 "quote_hash": "d8acd6255b1f6e2ab1e332e8f5ab162df343ab9104dcc862e0b294de0099fcd5"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-5be028befcc514"
           }
         ],
         "other_round_investors": [],
@@ -551166,16 +555646,16 @@
           "known_round_totals": [
             {
               "currency": "CNY",
-              "value": 1000000000,
-              "min_value": 1000000000,
+              "value": 2000000000,
+              "min_value": 2000000000,
               "max_value": null,
               "unit": "base",
-              "round_count": 1,
+              "round_count": 2,
               "status": "approximate",
-              "display_zh": "约 10 亿元"
+              "display_zh": "约 20 亿元"
             }
           ],
-          "historical_round_count": 1
+          "historical_round_count": 2
         },
         "current_source_ids": [
           "FISRC-6202f2642c216aa5"
@@ -551518,10 +555998,19 @@
       ],
       "funding_history": [
         {
+          "event_id": "EV-fa6bb71ec7a8ee92",
+          "date": "2026-11-04",
+          "title": "墨芯完成近10亿元C+轮融资，累计融资近20亿元推进AI推理芯片",
+          "amount": "近10亿元人民币",
+          "source_refs": [
+            "SA-0b666d7e600185a3"
+          ]
+        },
+        {
           "event_id": "EV-794f921515af8e8b",
           "date": "2026-05-29",
           "title": "墨芯人工智能完成近10亿元C轮融资",
-          "amount": "",
+          "amount": "近10亿元",
           "source_refs": [
             "SA-1196ebf97c011b89"
           ]
@@ -551632,6 +556121,30 @@
         "strategy": "reviewed_company_round_date_and_normalized_amount"
       },
       "historical_rounds": [
+        {
+          "funding_insight_id": "FI-65757c535b592aae",
+          "event_ids": [
+            "EV-fa6bb71ec7a8ee92"
+          ],
+          "round": "C+轮",
+          "round_code": "series_c_plus",
+          "round_original": "C+轮",
+          "amount_original": "近10亿元人民币",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 10 亿元"
+          },
+          "announced_at": "2026-11-04",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": false
+        },
         {
           "funding_insight_id": "FI-f617b97f0b35118f",
           "event_ids": [

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-05",
-    "currentDate": "2026-11-05",
-    "eventCount": 4377,
+    "latestDataDate": "2026-11-06",
+    "currentDate": "2026-11-06",
+    "eventCount": 4387,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-01",
-    "latest_disclosed_at": "2026-10-01",
+    "latest_disclosed_at": "2026-11-04",
     "role_counts": {
-      "lead": 2
+      "lead": 3
     },
     "round_codes": [
       "other",
       "seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-aa180564bbd951a4",
+        "canonical_entity_id": "",
+        "name": "Crediflow AI"
+      },
       {
         "entity_id": "EN-24167971104a276a",
         "canonical_entity_id": "",
@@ -91,6 +96,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c27e250c7a6ad5ab",
+        "funding_insight_id": "FI-f77579b48a169dcd",
+        "event_ids": [
+          "EV-46380e6a44f3b91d"
+        ],
+        "company_entity_id": "EN-aa180564bbd951a4",
+        "company_canonical_entity_id": "",
+        "company_name": "Crediflow AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "€1.8 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1800000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "180 万欧元"
+        },
+        "announced_at": "2026-11-04",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-d4bcdda87f7a3bf5",
+            "source_url": "https://www.eu-startups.com/2026/11/manchester-based-crediflow-ai-secures-e1-8-million-to-automate-commercial-loan-processing",
+            "source_title": "总部位于曼彻斯特的Crediflow AI获得180万欧元融资，用于自动化商业贷款处理",
+            "source_content_hash": "0c7042a5d20e37e17dcd513d37d4fc8265090fd0987ceeaad0950881758d2709",
+            "quote": "The funding was led by NPIF II – PXN Equity Finance, managed by PXN Ventures as part of the Northern Powerhouse Investment Fund II (NPIF II)",
+            "quote_hash": "0e6dfc3a879bfd433db8d551090219349d559f5ad0abff996ecb12f1c1e14990"
+          }
+        ]
+      },
       {
         "activity_id": "IA-03f259851894d1f9",
         "funding_insight_id": "FI-d44eb7b782650821",
@@ -174,6 +219,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-d4bcdda87f7a3bf5",
+        "source_url": "https://www.eu-startups.com/2026/11/manchester-based-crediflow-ai-secures-e1-8-million-to-automate-commercial-loan-processing",
+        "source_title": "总部位于曼彻斯特的Crediflow AI获得180万欧元融资，用于自动化商业贷款处理",
+        "source_content_hash": "0c7042a5d20e37e17dcd513d37d4fc8265090fd0987ceeaad0950881758d2709",
+        "quote": "The funding was led by NPIF II – PXN Equity Finance, managed by PXN Ventures as part of the Northern Powerhouse Investment Fund II (NPIF II)",
+        "quote_hash": "0e6dfc3a879bfd433db8d551090219349d559f5ad0abff996ecb12f1c1e14990"
+      },
+      {
         "source_id": "FISRC-e10bc08f4f6b317f",
         "source_url": "https://www.eu-startups.com/2026/10/ai-sales-startup-revnu-raises-e2-6-million-to-build-team-and-accelerate-international-growth/",
         "source_title": "AI 销售初创公司 Revnu 融资 260 万欧元，用于组建团队并加速国际增长",
@@ -217,6 +270,10 @@
           "source_id": "pxn_revnu"
         },
         {
+          "description": "融资来源记录：Crediflow AI · 种子轮 · 2026-11-04 · 本轮领投 · €1.8 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d4bcdda87f7a3bf5"
+        },
+        {
           "description": "融资来源记录：Revnu · 其他融资 · 2026-10-01 · 本轮领投 · €2.6 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e10bc08f4f6b317f"
         },
@@ -258,6 +315,14 @@
           "source_content_hash": "f94c5a45fb8a321266563c4b63e5a827cf462b5910e87301a1931ff9168d9e9d",
           "quote": "round led by NPIF II – PXN Equity Finance, which is managed by PXN Ventures as part of the Northern Powerhouse Investment Fund II.",
           "quote_hash": "8afd62887081ccd745a8f8e5a0a7c86299ccfc2e612dda5fd92f4329c486722a"
+        },
+        {
+          "source_id": "FISRC-d4bcdda87f7a3bf5",
+          "source_url": "https://www.eu-startups.com/2026/11/manchester-based-crediflow-ai-secures-e1-8-million-to-automate-commercial-loan-processing",
+          "source_title": "总部位于曼彻斯特的Crediflow AI获得180万欧元融资，用于自动化商业贷款处理",
+          "source_content_hash": "0c7042a5d20e37e17dcd513d37d4fc8265090fd0987ceeaad0950881758d2709",
+          "quote": "The funding was led by NPIF II – PXN Equity Finance, managed by PXN Ventures as part of the Northern Powerhouse Investment Fund II (NPIF II)",
+          "quote_hash": "0e6dfc3a879bfd433db8d551090219349d559f5ad0abff996ecb12f1c1e14990"
         },
         {
           "source_id": "FISRC-e10bc08f4f6b317f",

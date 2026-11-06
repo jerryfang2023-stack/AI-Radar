@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-05",
-    "currentDate": "2026-11-05",
-    "eventCount": 4377,
+    "latestDataDate": "2026-11-06",
+    "currentDate": "2026-11-06",
+    "eventCount": 4387,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-15",
-    "latest_disclosed_at": "2026-10-22",
+    "latest_disclosed_at": "2026-11-05",
     "role_counts": {
+      "co_lead": 1,
       "participant": 2
     },
     "round_codes": [
+      "pre_seed",
       "seed",
       "series_d"
     ],
@@ -88,9 +90,54 @@
         "entity_id": "FICO-d750f652e8f2dd92",
         "canonical_entity_id": "",
         "name": "Profound"
+      },
+      {
+        "entity_id": "EN-dc444b08262f39f4",
+        "canonical_entity_id": "",
+        "name": "Venomics AI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d9170ee1d1bd2018",
+        "funding_insight_id": "FI-bb7c7a87a4cf6fe9",
+        "event_ids": [
+          "EV-0eccf9e0527ff890"
+        ],
+        "company_entity_id": "EN-dc444b08262f39f4",
+        "company_canonical_entity_id": "",
+        "company_name": "Venomics AI",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$2.7 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "270 万美元"
+        },
+        "announced_at": "2026-11-05",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-6cba22194a39c15c",
+            "source_url": "https://entrackr.com/snippets/bio-tech-startup-venomics-ai-raises-27-mn-in-pre-seed-round-12785718",
+            "source_title": "生物科技初创公司Venomics AI完成270万美元种子前轮融资",
+            "source_content_hash": "60829cacf3128a52f93c2e18db5105011ce0766383754c5c7553a552d7ef4c36",
+            "quote": "The pre-seed round was co-led by Speciale Invest and South Park Commons, with participation from Operators Studio.",
+            "quote_hash": "faf4422e59d2d5507ca0d3f518396b2a80461c94ac30ff965116356342b3373d"
+          }
+        ]
+      },
       {
         "activity_id": "IA-791f54e06d64dc00",
         "funding_insight_id": "FI-4868c6248979c34c",
@@ -174,6 +221,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-6cba22194a39c15c",
+        "source_url": "https://entrackr.com/snippets/bio-tech-startup-venomics-ai-raises-27-mn-in-pre-seed-round-12785718",
+        "source_title": "生物科技初创公司Venomics AI完成270万美元种子前轮融资",
+        "source_content_hash": "60829cacf3128a52f93c2e18db5105011ce0766383754c5c7553a552d7ef4c36",
+        "quote": "The pre-seed round was co-led by Speciale Invest and South Park Commons, with participation from Operators Studio.",
+        "quote_hash": "faf4422e59d2d5507ca0d3f518396b2a80461c94ac30ff965116356342b3373d"
+      },
+      {
         "source_id": "FISRC-e3b2631226765a7a",
         "source_url": "https://pulse2.com/maxinsights-raises-30-million-in-seed-funding-led-by-peak-xv-to-build-physical-ai-data-platform-for-robotics/",
         "source_title": "Maxinsights 完成由 Peak XV 领投的 3000 万美元种子轮融资，用于构建面向机器人技术的物理 AI 数据平台",
@@ -223,6 +278,10 @@
           "source_id": "FISRC-bed55d4f5e02a374"
         },
         {
+          "description": "融资来源记录：Venomics AI · 预种子轮 · 2026-11-05 · 本轮联合领投 · $2.7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6cba22194a39c15c"
+        },
+        {
           "description": "融资来源记录：Maxinsights · 种子轮 · 2026-10-22 · 本轮参投 · $30 Million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e3b2631226765a7a"
         }
@@ -268,6 +327,14 @@
           "source_content_hash": "0c6183de84a8db88f003f7e139ed30def9e58b0ac40ddfaecbeed532299b1458",
           "quote": "pre-seed or seed investors",
           "quote_hash": "3b5515abce21495e875b3cb4b4a497b985fcf2e7d739596715f52289eb74b393"
+        },
+        {
+          "source_id": "FISRC-6cba22194a39c15c",
+          "source_url": "https://entrackr.com/snippets/bio-tech-startup-venomics-ai-raises-27-mn-in-pre-seed-round-12785718",
+          "source_title": "生物科技初创公司Venomics AI完成270万美元种子前轮融资",
+          "source_content_hash": "60829cacf3128a52f93c2e18db5105011ce0766383754c5c7553a552d7ef4c36",
+          "quote": "The pre-seed round was co-led by Speciale Invest and South Park Commons, with participation from Operators Studio.",
+          "quote_hash": "faf4422e59d2d5507ca0d3f518396b2a80461c94ac30ff965116356342b3373d"
         },
         {
           "source_id": "FISRC-e3b2631226765a7a",

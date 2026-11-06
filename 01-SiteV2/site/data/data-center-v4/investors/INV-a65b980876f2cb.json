@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-05",
-    "currentDate": "2026-11-05",
-    "eventCount": 4377,
+    "latestDataDate": "2026-11-06",
+    "currentDate": "2026-11-06",
+    "eventCount": 4387,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 3,
     "market_regions": [
       "CN",
@@ -73,6 +73,7 @@
     "first_disclosed_at": "2026-08-20",
     "latest_disclosed_at": "2026-09-30",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "other_current_round": 1,
       "participant": 2
     },
@@ -218,6 +219,38 @@
             "quote_hash": "98a6662e22eac1ac9ffe1e90c2212fcf653fe06107f37ecec8fef367454a6950"
           }
         ]
+      },
+      {
+        "activity_id": "IA-a751156afc43d3c0",
+        "funding_insight_id": "FI-d42bc84c272ae23e",
+        "event_ids": [
+          "EV-de7efff10b83dd08"
+        ],
+        "company_entity_id": "EN-8fcd8da8532772e8",
+        "company_canonical_entity_id": "",
+        "company_name": "聚时科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A+轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-362da96f9bfaceb8",
+            "source_url": "https://intelligence.xny365.com/article-40438.html",
+            "source_title": "聚时科技｜核心业务实现快速增长，公司宣布完成数亿元人民币A+轮融资",
+            "source_content_hash": "578ece0772dfb1c8",
+            "quote": "本次A+轮融资由上市公司汇川技术与云晖资本联合领投",
+            "quote_hash": "5457833a38e034ec8e97c3e33a9cfee27d412aa0d9157df90a32557ec00de19a"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -244,6 +277,14 @@
         "source_content_hash": "daf5a83a616455b0bc9c5a0e07a4a2fc844a3048208d82e6b0121af372bd9890",
         "quote": "两轮融资由BAI资本、华业天成资本连续领投，云晖资本及老股东红杉中国、IDG资本、美团龙珠、清流资本、锦秋基金跟投。",
         "quote_hash": "98a6662e22eac1ac9ffe1e90c2212fcf653fe06107f37ecec8fef367454a6950"
+      },
+      {
+        "source_id": "FISRC-362da96f9bfaceb8",
+        "source_url": "https://intelligence.xny365.com/article-40438.html",
+        "source_title": "聚时科技｜核心业务实现快速增长，公司宣布完成数亿元人民币A+轮融资",
+        "source_content_hash": "578ece0772dfb1c8",
+        "quote": "本次A+轮融资由上市公司汇川技术与云晖资本联合领投",
+        "quote_hash": "5457833a38e034ec8e97c3e33a9cfee27d412aa0d9157df90a32557ec00de19a"
       }
     ],
     "public_profile": {

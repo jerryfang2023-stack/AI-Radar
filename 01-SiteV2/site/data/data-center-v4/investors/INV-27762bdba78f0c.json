@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-05",
-    "currentDate": "2026-11-05",
-    "eventCount": 4377,
+    "latestDataDate": "2026-11-06",
+    "currentDate": "2026-11-06",
+    "eventCount": 4387,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-06-09",
-    "latest_disclosed_at": "2026-06-09",
+    "latest_disclosed_at": "2026-11-05",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "pre_series_a"
+      "pre_series_a",
+      "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-8fcd8da8532772e8",
+        "canonical_entity_id": "",
+        "name": "聚时科技"
+      },
       {
         "entity_id": "EN-d6d6dcf0bb132a3d",
         "canonical_entity_id": "",
@@ -86,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f055cdd43f89e182",
+        "funding_insight_id": "FI-d42bc84c272ae23e",
+        "event_ids": [
+          "EV-de7efff10b83dd08"
+        ],
+        "company_entity_id": "EN-8fcd8da8532772e8",
+        "company_canonical_entity_id": "",
+        "company_name": "聚时科技",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-11-05",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c7cddf1ba1c43a3f",
+            "source_url": "https://news.pedaily.cn/202611/571405.shtml",
+            "source_title": "聚时科技完成数亿元C轮融资，用AI赋能中国集成电路高端制造",
+            "source_content_hash": "875c9f7d4cfa30d457778df05da64c49c834c228019e41487c6d66e780cf0f03",
+            "quote": "本次C轮投资方为财通资本、益华资本、日联科技（688531）、上海国投旗下上海科创、吉力创投等产业基金与直接上市公司。",
+            "quote_hash": "54fbbc363aecb2c36b39397a917a9b32d17db9a6202c91d3718498c27b1783e2"
+          }
+        ]
+      },
       {
         "activity_id": "IA-73570e3126d6fd66",
         "funding_insight_id": "FI-7c5fc042f5fa0ddc",
@@ -161,6 +207,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c7cddf1ba1c43a3f",
+        "source_url": "https://news.pedaily.cn/202611/571405.shtml",
+        "source_title": "聚时科技完成数亿元C轮融资，用AI赋能中国集成电路高端制造",
+        "source_content_hash": "875c9f7d4cfa30d457778df05da64c49c834c228019e41487c6d66e780cf0f03",
+        "quote": "本次C轮投资方为财通资本、益华资本、日联科技（688531）、上海国投旗下上海科创、吉力创投等产业基金与直接上市公司。",
+        "quote_hash": "54fbbc363aecb2c36b39397a917a9b32d17db9a6202c91d3718498c27b1783e2"
+      },
+      {
         "source_id": "FISRC-eea8e7a4669a91fa",
         "source_url": "https://news.pedaily.cn/202606/565039.shtml",
         "source_title": "AI旅行服务平台「玩点旅行」完成超亿元Pre-A轮融资",
@@ -196,6 +250,10 @@
       ],
       "track_record": [
         {
+          "description": "融资来源记录：聚时科技 · C轮 · 2026-11-05 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c7cddf1ba1c43a3f"
+        },
+        {
           "description": "融资来源记录：玩点旅行 · Pre-A轮 · 2026-06-09 · 本轮参投 · 超1亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-eea8e7a4669a91fa"
         }
@@ -227,6 +285,14 @@
           "quote_hash": "f732089489c7a89718d9773115e6cdd06ef43426478e7699408ecad169b230ae"
         },
         {
+          "source_id": "FISRC-c7cddf1ba1c43a3f",
+          "source_url": "https://news.pedaily.cn/202611/571405.shtml",
+          "source_title": "聚时科技完成数亿元C轮融资，用AI赋能中国集成电路高端制造",
+          "source_content_hash": "875c9f7d4cfa30d457778df05da64c49c834c228019e41487c6d66e780cf0f03",
+          "quote": "本次C轮投资方为财通资本、益华资本、日联科技（688531）、上海国投旗下上海科创、吉力创投等产业基金与直接上市公司。",
+          "quote_hash": "54fbbc363aecb2c36b39397a917a9b32d17db9a6202c91d3718498c27b1783e2"
+        },
+        {
           "source_id": "FISRC-eea8e7a4669a91fa",
           "source_url": "https://news.pedaily.cn/202606/565039.shtml",
           "source_title": "AI旅行服务平台「玩点旅行」完成超亿元Pre-A轮融资",
@@ -239,7 +305,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[1].role": {
+        "activities[2].role": {
           "text": "Pre-A轮跟投",
           "source_hash": "9306282e5fd3ce623e009065f8fbf0fd8c2acd50b228ea756806f4b558632a17",
           "provider": "deepseek",

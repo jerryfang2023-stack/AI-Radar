@@ -1,0 +1,52 @@
+{
+  "event_id": "EV-bdbf563f38d492d4",
+  "company_name": "人工生产力",
+  "status": "blocked",
+  "problems": [
+    "deepseek_json_quality_failed:market_subcategory_id_missing|market_subcategory_parent_mismatch:analysis.market_subcategory_id must use an exact key in {\"data\":\"infrastructure_compute\",\"development_deployment\":\"infrastructure_compute\",\"hardware_computing\":\"infrastructure_compute\",\"observability_evaluation\":\"infrastructure_compute\",\"customer_support\":\"enterprise_applications\",\"cyber_physical_security\":\"enterprise_applications\",\"hr\":\"enterprise_applications\",\"marketing\":\"enterprise_applications\",\"productivity_enterprise_workflows\":\"enterprise_applications\",\"sales\":\"enterprise_applications\",\"software_development_coding\":\"enterprise_applications\",\"financial_services\":\"industry_applications\",\"healthcare_life_sciences\":\"industry_applications\",\"industrials\":\"industry_applications\",\"legal\":\"industry_applications\",\"consumer_retail\":\"industry_applications\",\"education\":\"industry_applications\"}; the value is its required market_category_id. Do not copy industry_ids such as legal_services or use_case_ids such as legal_compliance into this field."
+  ],
+  "queries": [
+    "\"人工生产力\" 2026 融资 投资方",
+    "\"人工生产力\" 官网 产品 服务",
+    "\"人工生产力\" 投资机构 融资用途",
+    "\"人工生产力\" 客户 创始人 总部"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"人工生产力\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"人工生产力\" 数百万美元 融资 领投 跟投",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"人工生产力\" 官网 产品 服务",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"人工生产力\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"人工生产力\" 2026 本轮融资 公告",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"人工生产力\" 客户 创始人 总部",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-05",
-    "currentDate": "2026-11-05",
-    "eventCount": 4377,
+    "latestDataDate": "2026-11-06",
+    "currentDate": "2026-11-06",
+    "eventCount": 4387,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-18",
-    "latest_disclosed_at": "2026-10-19",
+    "latest_disclosed_at": "2026-11-05",
     "role_counts": {
-      "participant": 6
+      "participant": 7
     },
     "round_codes": [
       "multi_round",
+      "pre_seed",
       "series_a",
       "series_b",
       "series_d",
@@ -98,6 +99,11 @@
         "name": "Nous Research"
       },
       {
+        "entity_id": "EN-5e20292808d5084b",
+        "canonical_entity_id": "",
+        "name": "Siggy"
+      },
+      {
         "entity_id": "EN-586937124e151c46",
         "canonical_entity_id": "EN-586937124e151c46",
         "name": "Suno"
@@ -109,6 +115,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d4a6b70d564901d3",
+        "funding_insight_id": "FI-ff15cd4645eee4a5",
+        "event_ids": [
+          "EV-cd20a6ff672972eb"
+        ],
+        "company_entity_id": "EN-5e20292808d5084b",
+        "company_canonical_entity_id": "",
+        "company_name": "Siggy",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$6 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "600 万美元"
+        },
+        "announced_at": "2026-11-05",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-98dccdb46867778c",
+            "source_url": "https://news.crunchbase.com/venture/nurx-journey-clinical-founders-raise-mental-health-startup-siggy/",
+            "source_title": "独家：Nurx与Journey Clinical联合创始人筹集600万美元，用于心理健康初创公司Siggy",
+            "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+            "quote": "They include Albert Wenger of Union Square Ventures, Mercury co-founder Immad Akhund, and Cityblock Health co-founder Toyin Ajayi, through Coalition Operators.",
+            "quote_hash": "2a1e30b39c3fd57455d88a29a11adf2058fc6affb2cd637f8f7ed19d84519b95"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ad517feef468c84f",
         "funding_insight_id": "FI-482ac64d02f31d45",
@@ -353,6 +399,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-98dccdb46867778c",
+        "source_url": "https://news.crunchbase.com/venture/nurx-journey-clinical-founders-raise-mental-health-startup-siggy/",
+        "source_title": "独家：Nurx与Journey Clinical联合创始人筹集600万美元，用于心理健康初创公司Siggy",
+        "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+        "quote": "They include Albert Wenger of Union Square Ventures, Mercury co-founder Immad Akhund, and Cityblock Health co-founder Toyin Ajayi, through Coalition Operators.",
+        "quote_hash": "2a1e30b39c3fd57455d88a29a11adf2058fc6affb2cd637f8f7ed19d84519b95"
+      },
+      {
         "source_id": "FISRC-7ab42e04cf3b71a3",
         "source_url": "https://techcrunch.com/2026/10/19/tolan-snags-30m-for-its-ai-companion-that-helps-users-navigate-life/",
         "source_title": "Tolan 获 3000 万美元融资，用于其帮助用户应对生活的 AI 伴侣",
@@ -434,16 +488,16 @@
           "source_id": "usv_gritt"
         },
         {
+          "description": "融资来源记录：Siggy · 预种子轮 · 2026-11-05 · 本轮参投 · $6 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-98dccdb46867778c"
+        },
+        {
           "description": "融资来源记录：Tolan · 轮次未披露 · 2026-10-19 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7ab42e04cf3b71a3"
         },
         {
           "description": "融资来源记录：Nous Research · B轮 · 2026-10-13 · 本轮参投 · 9000万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c0e764cbefe9c1e7"
-        },
-        {
-          "description": "融资来源记录：Nous Research · B轮 · 2026-10-07 · 本轮参投 · $90 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-295e99df6a40bc79"
         }
       ],
       "contacts": [
@@ -493,6 +547,14 @@
           "quote_hash": "a4b9c0f51fa506e4ef9c423bda19e1291bec5effb29d1286cafcb6a4d440443a"
         },
         {
+          "source_id": "FISRC-98dccdb46867778c",
+          "source_url": "https://news.crunchbase.com/venture/nurx-journey-clinical-founders-raise-mental-health-startup-siggy/",
+          "source_title": "独家：Nurx与Journey Clinical联合创始人筹集600万美元，用于心理健康初创公司Siggy",
+          "source_content_hash": "c5f60ff043880e09bedebdeb0d139a7ae8bc0e4b9638049f9b8b0a072fb85252",
+          "quote": "They include Albert Wenger of Union Square Ventures, Mercury co-founder Immad Akhund, and Cityblock Health co-founder Toyin Ajayi, through Coalition Operators.",
+          "quote_hash": "2a1e30b39c3fd57455d88a29a11adf2058fc6affb2cd637f8f7ed19d84519b95"
+        },
+        {
           "source_id": "FISRC-7ab42e04cf3b71a3",
           "source_url": "https://techcrunch.com/2026/10/19/tolan-snags-30m-for-its-ai-companion-that-helps-users-navigate-life/",
           "source_title": "Tolan 获 3000 万美元融资，用于其帮助用户应对生活的 AI 伴侣",
@@ -507,14 +569,6 @@
           "source_content_hash": "5bce55f4335c9e878a7140a3eefc85fd8a46640458fce92d7fbd91811c2dedec",
           "quote": "本轮融资由Robot Ventures领投，其他参与方包括英伟达、Union Square Ventures、Menlo Ventures、三星，以及唐纳德·特朗普之子担任合伙人的1789 Capital。",
           "quote_hash": "cfb5cb15e98862c041ccf451333927feb71aa81f07568b16e955d0a503d1b300"
-        },
-        {
-          "source_id": "FISRC-295e99df6a40bc79",
-          "source_url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/?trk=article-ssr-frontend-pulse_little-text-block",
-          "source_title": "Nous Research确认达到$1.5B估值，面向企业用户推出AI智能体",
-          "source_content_hash": "a23e0e211d8125e00f3e96b5819e7ef2686a463b5e4dda89667a5cbcc59f53f5",
-          "quote": "The round was led by Robot Ventures, with participation from other backers including Nvidia, Union Square Ventures, Menlo Ventures, Samsung, and 1789 Capital, where Donald Trump Jr. is a partner.",
-          "quote_hash": "e0f86b6d1572a09a193cff8ddde81b3400addca87ad087cccb64bd4fc676d928"
         }
       ],
       "last_verified_at": "2026-10-02"
