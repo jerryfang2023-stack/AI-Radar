@@ -167,3 +167,20 @@ test('source registry covers both markets, media, releases and investors without
  for(const market of ['domestic','overseas'])assert.ok(sourceRegistry.sources.filter(s=>s.market===market).length>=10);
  for(const tier of ['media','press_release','investor'])assert.ok(sourceRegistry.sources.some(s=>s.tier===tier));
 });
+
+test('Pedaily company profiles cannot borrow related-news dates or masquerade as financing articles',async()=>{
+ const profile=`<meta property="og:type" content="article"><h1>Acme AI company profile</h1><main><p>${body}</p><p>LATEST DEAL 2025-08-07</p><div class="news-info"><span class="date">2026-10-30</span></div></main>`;
+ for(const url of ['https://vc.pedaily.cn/company/709415.html','https://m.pedaily.cn/vc/company/709415.html?from=search']){
+  const parsed=parseOriginal(profile,{url});
+  assert.equal(parsed.article_like,false);assert.equal(parsed.date,'');assert.equal(parsed.date_evidence,null);
+  let reads=0;
+  const reader=async request=>{reads++;return {url:request,title:'Acme AI raised funding',body,published_at:'2026-10-30'};};
+  const direct=await captureOriginal({url},{date:'2026-11-06',fetcher:async()=>new Response(profile),reader});
+  assert.equal(direct.reason,'original_article_required');assert.equal(reads,0);
+  const rendered=await captureOriginal({url},{date:'2026-11-06',fetcher:async()=>new Response('',{status:403}),reader});
+  assert.equal(rendered.reason,'original_article_required');assert.equal(reads,1);
+ }
+ const article=parseOriginal(profile,{url:'https://news.pedaily.cn/202610/553276.shtml'});
+ assert.equal(article.article_like,true);assert.equal(article.date,'2026-10-30');
+ assert.equal(parseOriginal(profile,{url:'https://example.com/company/709415.html'}).article_like,true);
+});

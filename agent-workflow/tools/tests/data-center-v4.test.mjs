@@ -3167,3 +3167,15 @@ test("publisher AI summaries cannot override original funding claims or their ro
   assert.ok(bundle.claims.every(claim => claim.source_span.end <= original.length));
   for (const claim of bundle.claims) assert.equal(body.slice(claim.source_span.start, claim.source_span.end), claim.source_quote);
 });
+
+test('restored Pedaily company profiles cannot become events through cached model claims',()=>{
+ const raw={raw_qc_decision:'accepted',published_at:'2026-10-30',clean_text:'Acme AI raised seed funding. LATEST DEAL 2025-08-07'};
+ for(const url of ['https://vc.pedaily.cn/company/709415.html','https://m.pedaily.cn/vc/company/709415.html']){
+  assert.equal(publicEventSourceUrlIssue(url),'company_profile_requires_original_event_source');
+  for(const eventType of ['funding','product_release']){
+   assert.deepEqual(eventSourceEligibility(raw,{source_url:url},'Acme AI raised seed funding','2026-11-06',{eventType}),{accepted:false,reason:'company_profile_requires_original_event_source'});
+  }
+ }
+ assert.equal(publicEventSourceUrlIssue('https://news.pedaily.cn/202610/553276.shtml'),'');
+ assert.equal(publicEventSourceUrlIssue('https://example.com/company/709415.html'),'');
+});
