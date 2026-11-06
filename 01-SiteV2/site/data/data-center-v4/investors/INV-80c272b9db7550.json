@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-05",
-    "currentDate": "2026-11-05",
-    "eventCount": 4377,
+    "latestDataDate": "2026-11-06",
+    "currentDate": "2026-11-06",
+    "eventCount": 4387,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-05-29",
     "latest_disclosed_at": "2026-05-29",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -124,6 +125,38 @@
             "quote_hash": "3cdb9ac4d7a2162b6a494f02b2e826fb5e1f4cc707e928f2fdd599cebe5ec000"
           }
         ]
+      },
+      {
+        "activity_id": "IA-e08ed888146b8d6f",
+        "funding_insight_id": "FI-65757c535b592aae",
+        "event_ids": [
+          "EV-fa6bb71ec7a8ee92"
+        ],
+        "company_entity_id": "EN-085578b03da7d660",
+        "company_canonical_entity_id": "EN-085578b03da7d660",
+        "company_name": "墨芯人工智能",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "C轮老股东继续投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1dedce06704cbebc",
+            "source_url": "https://www.huxiu.com/article/4902795.html",
+            "source_title": "墨芯完成近10亿元C+轮融资，累计融资近20亿元推进AI推理芯片",
+            "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+            "quote": "凯旋创投、盛景嘉成、岩山科技等老股东继续投资",
+            "quote_hash": "3810ba0df720ed2d8da9693a2dd7c3cfc33fbcc07113eec7fd7025d73b7adb03"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "acb7f98eff8e5a18cafd8588c7b7e359b5aeab6222f18d676e54328e28236b61",
         "quote": "老股东凯旋创投、创享投资、盛景嘉成共同参与",
         "quote_hash": "3cdb9ac4d7a2162b6a494f02b2e826fb5e1f4cc707e928f2fdd599cebe5ec000"
+      },
+      {
+        "source_id": "FISRC-1dedce06704cbebc",
+        "source_url": "https://www.huxiu.com/article/4902795.html",
+        "source_title": "墨芯完成近10亿元C+轮融资，累计融资近20亿元推进AI推理芯片",
+        "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+        "quote": "凯旋创投、盛景嘉成、岩山科技等老股东继续投资",
+        "quote_hash": "3810ba0df720ed2d8da9693a2dd7c3cfc33fbcc07113eec7fd7025d73b7adb03"
       }
     ],
     "public_profile": {
@@ -226,6 +267,10 @@
         {
           "description": "融资披露记录：墨芯人工智能2026年C轮，报道将凯旋创投列为参与方之一，并称其为老股东；报道未披露该机构本轮出资额。",
           "source_id": "FISRC-6202f2642c216aa5"
+        },
+        {
+          "description": "融资来源记录：墨芯人工智能 · 历史轮次未披露 · C轮老股东继续投资。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1dedce06704cbebc"
         }
       ],
       "contacts": [
@@ -329,6 +374,14 @@
           "source_content_hash": "296c443a58d7a3b9",
           "quote": "凯旋通（北京）投资顾问有限公司 凯旋创投 Keytone Ventures 机构性质：VC 注册地点：朝阳区 成立时间：2008年 机构总部：北京市 官方网站：www.keytonevc.com 投资阶段：种子期、初创期、扩张期、成熟期",
           "quote_hash": "697882c3820c5bf98e997f7a77eabb1f5b472ce3886e2bf74d8d33c4cd763ceb"
+        },
+        {
+          "source_id": "FISRC-1dedce06704cbebc",
+          "source_url": "https://www.huxiu.com/article/4902795.html",
+          "source_title": "墨芯完成近10亿元C+轮融资，累计融资近20亿元推进AI推理芯片",
+          "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+          "quote": "凯旋创投、盛景嘉成、岩山科技等老股东继续投资",
+          "quote_hash": "3810ba0df720ed2d8da9693a2dd7c3cfc33fbcc07113eec7fd7025d73b7adb03"
         }
       ],
       "last_verified_at": "2026-09-27"

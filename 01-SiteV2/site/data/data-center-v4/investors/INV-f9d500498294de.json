@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-05",
-    "currentDate": "2026-11-05",
-    "eventCount": 4377,
+    "latestDataDate": "2026-11-06",
+    "currentDate": "2026-11-06",
+    "eventCount": 4387,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,25 +61,31 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-08-12",
-    "latest_disclosed_at": "2026-09-18",
+    "latest_disclosed_at": "2026-11-04",
     "role_counts": {
       "co_lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "seed_plus_plus",
+      "series_c_plus",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-085578b03da7d660",
+        "canonical_entity_id": "EN-085578b03da7d660",
+        "name": "墨芯人工智能"
+      },
       {
         "entity_id": "EN-33d5a47fc56e4ba1",
         "canonical_entity_id": "",
@@ -92,6 +98,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5cdedf4780b4ae57",
+        "funding_insight_id": "FI-65757c535b592aae",
+        "event_ids": [
+          "EV-fa6bb71ec7a8ee92"
+        ],
+        "company_entity_id": "EN-085578b03da7d660",
+        "company_canonical_entity_id": "EN-085578b03da7d660",
+        "company_name": "墨芯人工智能",
+        "round": "C+轮",
+        "round_code": "series_c_plus",
+        "round_original": "C+轮",
+        "amount_original": "近10亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 10 亿元"
+        },
+        "announced_at": "2026-11-04",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1dedce06704cbebc",
+            "source_url": "https://www.huxiu.com/article/4902795.html",
+            "source_title": "墨芯完成近10亿元C+轮融资，累计融资近20亿元推进AI推理芯片",
+            "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+            "quote": "投资方包括仁爱资本、海棠基金、东恒石油、比丘资本、派拉资本、中财资本等",
+            "quote_hash": "9126883f31b40558416e6f6fd5b26e4b5431cc2aa138e353207832262ea83c2e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ae92c44d7fc48646",
         "funding_insight_id": "FI-77950002d539c290",
@@ -175,6 +221,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-1dedce06704cbebc",
+        "source_url": "https://www.huxiu.com/article/4902795.html",
+        "source_title": "墨芯完成近10亿元C+轮融资，累计融资近20亿元推进AI推理芯片",
+        "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+        "quote": "投资方包括仁爱资本、海棠基金、东恒石油、比丘资本、派拉资本、中财资本等",
+        "quote_hash": "9126883f31b40558416e6f6fd5b26e4b5431cc2aa138e353207832262ea83c2e"
+      },
+      {
         "source_id": "FISRC-ed0092859381f876",
         "source_url": "https://news.pedaily.cn/202609/569236.shtml",
         "source_title": "首发| 奕行智能完成新一轮20亿元融资，投后估值近150亿",
@@ -196,10 +250,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "仁爱资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "仁爱资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：墨芯人工智能 · C+轮 · 2026-11-04 · 本轮参投 · 近10亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1dedce06704cbebc"
+        },
         {
           "description": "融资来源记录：奕行智能 · 轮次未披露 · 2026-09-18 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ed0092859381f876"
@@ -211,6 +269,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-1dedce06704cbebc",
+          "source_url": "https://www.huxiu.com/article/4902795.html",
+          "source_title": "墨芯完成近10亿元C+轮融资，累计融资近20亿元推进AI推理芯片",
+          "source_content_hash": "a65dcaef31e4eecf4f05b5d38b175dff56a8b876d6ed6ec5716c388624bcb3e1",
+          "quote": "投资方包括仁爱资本、海棠基金、东恒石油、比丘资本、派拉资本、中财资本等",
+          "quote_hash": "9126883f31b40558416e6f6fd5b26e4b5431cc2aa138e353207832262ea83c2e"
+        },
         {
           "source_id": "FISRC-ed0092859381f876",
           "source_url": "https://news.pedaily.cn/202609/569236.shtml",
