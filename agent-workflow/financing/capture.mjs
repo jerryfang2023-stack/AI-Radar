@@ -1,4 +1,5 @@
 import crypto from 'node:crypto';
+import { isCompanyProfileUrl } from '../tools/lib/source-page-kind.mjs';
 import { isFundingDiscovery } from '../tools/lib/aihot-feed.mjs';
 import { config } from './discovery.mjs';
 import { financingScope } from './scope.mjs';
@@ -15,7 +16,7 @@ export async function captureOriginal(lead, { date, fetcher = fetch, reader = nu
 }
 
 export function captureParsedOriginal(lead, parsed, { date, historicalRange = null } = {}) {
-  if(!parsed.article_like)return {status:'pending',reason:'original_article_required'};
+  if(!parsed.article_like || isCompanyProfileUrl(lead.url) || isCompanyProfileUrl(parsed.url))return {status:'pending',reason:'original_article_required'};
   if (!isFundingDiscovery({ title: parsed.title, summary: parsed.body.slice(0,3000) })) return { status: 'excluded', reason: 'original_not_financing' };
   const scope = financingScope(parsed);
   if (!parsed.date) return { status: 'pending', reason: 'original_date_missing' };

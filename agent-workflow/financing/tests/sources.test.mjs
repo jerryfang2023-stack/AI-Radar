@@ -15,7 +15,7 @@ test('WeChat current-article timestamp uses its display timezone without trustin
 import {parseSubscription,collectSubscriptions,sourceRegistry} from '../subscriptions.mjs';
 import {syncAIHotSelected} from '../aihot-selected.mjs';
 import {createOriginalReader} from '../original-reader.mjs';
-import {captureOriginal} from '../capture.mjs';
+import {captureOriginal,captureParsedOriginal} from '../capture.mjs';
 import {read,write} from '../state.mjs';
 import {discover} from '../discovery.mjs';
 import {fundingResearchCoverage,independentResearchSources,planFundingResearch} from '../../tools/lib/funding-research-plan.mjs';
@@ -183,4 +183,13 @@ test('Pedaily company profiles cannot borrow related-news dates or masquerade as
  const article=parseOriginal(profile,{url:'https://news.pedaily.cn/202610/553276.shtml'});
  assert.equal(article.article_like,true);assert.equal(article.date,'2026-10-30');
  assert.equal(parseOriginal(profile,{url:'https://example.com/company/709415.html'}).article_like,true);
+});
+
+
+test('legacy cached company profiles remain background even when their old article flag is true',()=>{
+ const url='https://vc.pedaily.cn/company/709415.html';
+ const cached={article_like:true,url,title:'Acme AI raises seed funding',body,date:'2026-10-30',method:'original_http'};
+ assert.equal(captureParsedOriginal({url},cached,{date:'2026-11-06'}).reason,'original_article_required');
+ assert.equal(captureParsedOriginal({url:'https://example.com/disclosure'},cached,{date:'2026-11-06'}).reason,'original_article_required');
+ assert.equal(captureParsedOriginal({url:'https://example.com/disclosure'},{...cached,url:'https://example.com/disclosure'},{date:'2026-11-06'}).status,'accepted');
 });

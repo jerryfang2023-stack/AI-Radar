@@ -3179,3 +3179,9 @@ test('restored Pedaily company profiles cannot become events through cached mode
  assert.equal(publicEventSourceUrlIssue('https://news.pedaily.cn/202610/553276.shtml'),'');
  assert.equal(publicEventSourceUrlIssue('https://example.com/company/709415.html'),'');
 });
+
+
+test('a cached redirect canonical URL cannot hide a company profile behind a news URL',()=>{
+ const raw={raw_qc_decision:'accepted',published_at:'2026-10-30',clean_text:'Acme AI raised seed funding.'};
+ assert.deepEqual(eventSourceEligibility(raw,{source_url:'https://news.pedaily.cn/disclosure',canonical_url:'https://vc.pedaily.cn/company/709415.html'},'Acme AI raised seed funding','2026-11-06',{eventType:'funding'}),{accepted:false,reason:'company_profile_requires_original_event_source'});
+});
