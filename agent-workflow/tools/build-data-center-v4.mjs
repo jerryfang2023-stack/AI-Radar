@@ -227,6 +227,7 @@ export function historicalFundingAuthorized(raw, artifact, policy = {}) {
 }
 
 function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {}) {
+  if (isCompanyProfileUrl(artifact.canonical_url)) return { accepted: false, reason: "company_profile_requires_original_event_source" };
   const rawQcDecision = cleanString(raw.raw_qc_decision).toLocaleLowerCase();
   const extractionQuality = cleanString(raw.extraction_quality).toLocaleLowerCase();
   if (rawQcDecision === "block" || extractionQuality === "failed") {
