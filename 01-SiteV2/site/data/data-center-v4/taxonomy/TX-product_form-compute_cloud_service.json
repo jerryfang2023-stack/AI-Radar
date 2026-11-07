@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-06",
-    "currentDate": "2026-11-06",
-    "eventCount": 4387,
+    "latestDataDate": "2026-11-07",
+    "currentDate": "2026-11-07",
+    "eventCount": 4392,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -59,6 +59,7 @@
     "typeLabel": "产品形态",
     "valueId": "compute_cloud_service",
     "eventIds": [
+      "EV-f9c4e7e58dbb152f",
       "EV-95ba9cc4f4d52ea4",
       "EV-f53bfa2bb0275904",
       "EV-40d4ce6d936d4d49",
@@ -91,6 +92,7 @@
       "EV-a67071a8550cb1be"
     ],
     "entityIds": [
+      "EN-2ef32a75a8969e02",
       "EN-fc261198a189a8eb",
       "EN-eb6cf0bb179ca6ed",
       "EN-d41ebd9f02722fc8",
@@ -127,9 +129,99 @@
       "HW-9a39a7f449362f96"
     ],
     "firstSeen": "2026-04-30",
-    "lastSeen": "2026-10-27"
+    "lastSeen": "2026-11-07"
   },
   "events": [
+    {
+      "id": "EV-f9c4e7e58dbb152f",
+      "dataDate": "2026-11-07",
+      "date": "2026-11-04",
+      "updatedDate": "2026-11-04",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_sources_insufficient",
+      "title": "AI 云初创公司 Applied Compute 在达到关键收入里程碑后融资 3.5 亿美元",
+      "originalTitle": "AI cloud startup Applied Compute raises $350M after reaching key revenue milestone",
+      "subject": "AI cloud startup Applied Compute",
+      "action": "raises",
+      "object": "$350M after reaching key revenue milestone",
+      "metrics": [
+        "$350M",
+        "$350 million",
+        "$3.25 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-2ef32a75a8969e02"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-2ef32a75a8969e02"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-2ef32a75a8969e02"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2ef32a75a8969e02",
+        "EN-54fef998de20f932",
+        "EN-41e3915036c30878"
+      ],
+      "entityNames": [
+        "AI cloud startup Applied Compute",
+        "Applied Compute",
+        "Applied Compute Inc."
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://siliconangle.com/2026/11/03/ai-cloud-startup-applied-compute-raises-350m-after-reaching-key-revenue-milestone/",
+      "publisher": "siliconangle.com"
+    },
     {
       "id": "EV-95ba9cc4f4d52ea4",
       "dataDate": "2026-10-02",
@@ -6987,6 +7079,27 @@
   ],
   "entities": [
     {
+      "id": "EN-2ef32a75a8969e02",
+      "name": "AI cloud startup Applied Compute",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f9c4e7e58dbb152f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-compute_cloud_service"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-07"
+    },
+    {
       "id": "EN-fc261198a189a8eb",
       "name": "Ahead of US IPO, British AI neocloud Nscale",
       "entityType": "organization_candidate",
@@ -7050,11 +7163,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-manufacturing",
         "TX-target_user-developer",
-        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure",
         "TX-technology-open_weights",
         "TX-technology-fine_tuning"
@@ -7081,12 +7194,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-deployment_model-cloud",
-        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure"
       ],
       "relatedEntityIds": [],
@@ -7110,6 +7223,7 @@
       "classificationRefs": [
         "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-automotive_transportation",
@@ -7124,7 +7238,6 @@
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
-        "TX-product_form-compute_cloud_service",
         "TX-industry-energy_utilities",
         "TX-industry-education",
         "TX-industry-government_public_sector",
@@ -7152,10 +7265,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-product_form-compute_cloud_service",
         "TX-product_form-model_api_service",
         "TX-ai_market_application-model_deployment"
       ],
@@ -7179,11 +7292,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-model_deployment"
       ],
       "relatedEntityIds": [],
@@ -7205,10 +7318,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
-        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure"
       ],
       "relatedEntityIds": [],
@@ -7230,11 +7343,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
-        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure"
       ],
       "relatedEntityIds": [],
@@ -7256,11 +7369,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure"
       ],
       "relatedEntityIds": [],
@@ -7282,13 +7395,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-product_form-compute_cloud_service",
         "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_application-computing_infrastructure"
       ],
@@ -7328,6 +7441,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
@@ -7344,7 +7458,6 @@
         "TX-ai_market_subcategory-industrials",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-product_form-compute_cloud_service",
         "TX-industry-energy_utilities",
         "TX-use_case-data_analysis",
         "TX-technology-multimodal",
@@ -7376,10 +7489,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
-        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure"
       ],
       "relatedEntityIds": [],
@@ -7404,12 +7517,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-product_form-compute_cloud_service",
         "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_application-model_deployment"
       ],
@@ -7785,6 +7898,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-57717e60d7a07800",
         "EV-3cc8e7ce0143047a",
         "EV-000a2cf24e205f93",
         "EV-5267a13213f966ec",
@@ -7931,6 +8045,7 @@
         "TX-product_form-model",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
+        "TX-product_form-compute_cloud_service",
         "TX-technology-embodied_ai",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
@@ -7949,7 +8064,6 @@
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
-        "TX-product_form-compute_cloud_service",
         "TX-use_case-data_analysis",
         "TX-industry-education",
         "TX-industry-government_public_sector",
@@ -7994,7 +8108,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-11-06"
+      "lastSeen": "2026-11-07"
     },
     {
       "id": "EN-8f5ef31ed5125786",
@@ -8012,8 +8126,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-deployment_model-cloud",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-compute_cloud_service",
+        "TX-deployment_model-cloud"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-16",
@@ -8034,8 +8148,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-chip_accelerator"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-17",
@@ -8058,12 +8172,12 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-product_form-model",
+        "TX-product_form-compute_cloud_service",
         "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-target_user-researcher",
-        "TX-product_form-compute_cloud_service",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-ai_compute_system",
         "TX-technology-open_weights",
@@ -8088,9 +8202,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-product_form-chip_accelerator",
-        "TX-target_user-public_sector_user",
-        "TX-product_form-compute_cloud_service"
+        "TX-target_user-public_sector_user"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-02",
@@ -8126,9 +8240,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-product_form-compute_cloud_service",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
-        "TX-product_form-compute_cloud_service",
         "TX-technology-guardrails_safety"
       ],
       "relatedEntityIds": [
@@ -8178,9 +8292,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-product_form-compute_cloud_service",
         "TX-product_form-end_user_application",
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-chip_accelerator"
       ],
       "relatedEntityIds": [
         "EN-2a817d99285e12c4",
@@ -8272,6 +8386,7 @@
         "TX-technology-agentic_execution",
         "TX-product_form-model",
         "TX-use_case-physical_automation",
+        "TX-product_form-compute_cloud_service",
         "TX-industry-telecommunications",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
@@ -8281,7 +8396,6 @@
         "TX-technology-code_generation",
         "TX-target_user-public_sector_user",
         "TX-industry-aerospace_defense",
-        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-developer_tool"
       ],
@@ -8306,8 +8420,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-financial_services",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-compute_cloud_service",
+        "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-17",

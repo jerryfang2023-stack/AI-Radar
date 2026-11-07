@@ -2,9 +2,9 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.3",
-    "candidate_count": 2858,
-    "product_candidates": 1601,
-    "person_candidates": 1257,
+    "candidate_count": 2860,
+    "product_candidates": 1602,
+    "person_candidates": 1258,
     "china_market_candidates": 696,
     "china_market_product_candidates": 565,
     "china_market_person_candidates": 131,
@@ -34745,6 +34745,34 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-7fd01040b9556fa4",
+      "candidate_kind": "person",
+      "research_name": "张杰",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-39d973ba373340f9"
+      ],
+      "funding_insight_ids": [
+        "FI-0378ba6a770e1c90"
+      ],
+      "source_event_ids": [
+        "EV-a1e75442bdeac42b"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-78ee975afb91f206",
+          "quote": "法人代表 张杰",
+          "source_content_hash": "adcc485b89dc354d",
+          "quote_hash": "3304a6fcffba1b6b62676fd41653151a7de111d143438096e899f6a27b3e160a"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-200183fae39495a7",
@@ -74120,6 +74148,40 @@
           "quote": "厘清智能已推出 T1 系列数采手套和 Ego 数采设备，用于记录真实任务中的视觉、深度、手部姿态、接触和环境信息",
           "source_content_hash": "4f89f433b187ef2649c5f090b32ad309ef14f14f87434b103bd2eb5059c214e8",
           "quote_hash": "3548b16204509f78c8a05dc839461a86b1bdb1a7eeecc065d6696abe6e594bc7"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-ba917ca0a0b430a1",
+      "candidate_kind": "product",
+      "research_name": "T2具身智能装卸机器人",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-39d973ba373340f9"
+      ],
+      "funding_insight_ids": [
+        "FI-0378ba6a770e1c90"
+      ],
+      "source_event_ids": [
+        "EV-a1e75442bdeac42b"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9ecf09948bc44d6c",
+          "quote": "核心产品T2具身智能装卸机器人获评安徽省首台套重大技术装备，集成四大核心能力：跨模态融合与数字孪生系统；3D视觉+雷达双系统；自研复合抓手；兼容主流车型的自适应底盘。",
+          "source_content_hash": "cf8ea61ba479f5bcce6d949a4ef13be3900a5fa9f6228d06d57961a7f24ec7e7",
+          "quote_hash": "736212f9920e00fa05a797f0a56ab56cd84c98eac6c88b8e6bb16d4aceee0636"
+        },
+        {
+          "source_id": "FISRC-9ecf09948bc44d6c",
+          "quote": "产品具备开车门即作业、无需场地改造的优势，可在复杂环境中稳定运行。",
+          "source_content_hash": "cf8ea61ba479f5bcce6d949a4ef13be3900a5fa9f6228d06d57961a7f24ec7e7",
+          "quote_hash": "fb55815bf6b307ef849522c1d58ee5a42cd02c2af48f6decbebfb21e6bd24cd8"
         }
       ],
       "market_regions": [

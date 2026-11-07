@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-06",
-    "currentDate": "2026-11-06",
-    "eventCount": 4387,
+    "latestDataDate": "2026-11-07",
+    "currentDate": "2026-11-07",
+    "eventCount": 4392,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -498,6 +498,7 @@
       "EV-02b19ffbe883ee2e",
       "EV-cf496e0f8a56ca97",
       "EV-00834dd71037c7cc",
+      "EV-57717e60d7a07800",
       "EV-908b7ddf0f123e99",
       "EV-2ad2ae14a594df04",
       "EV-526fa666b5957768",
@@ -703,7 +704,7 @@
       "EN-b9db1ff13ae8496e"
     ],
     "firstSeen": "2022-10-01",
-    "lastSeen": "2026-11-06",
+    "lastSeen": "2026-11-07",
     "relationIds": [
       "REL2-59587a82f0b820bc",
       "REL2-39c721b66f466667",
@@ -771,6 +772,7 @@
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-5c5476971d6a707b",
+        "EV-57717e60d7a07800",
         "EV-908b7ddf0f123e99",
         "EV-b18649ebd3cd26dd",
         "EV-2ad2ae14a594df04",
@@ -1356,7 +1358,7 @@
     "timeline": [
       {
         "id": "EV-5c5476971d6a707b",
-        "dataDate": "2026-11-06",
+        "dataDate": "2026-11-07",
         "date": "2026-10-31",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -1367,6 +1369,22 @@
         "displayTags": [],
         "entityIds": [
           "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-57717e60d7a07800",
+        "dataDate": "2026-11-07",
+        "date": "2026-11-06",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 估值达 1.25 万亿美元，竞争对手 Anthropic 临近 IPO",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d"
         ]
       },
       {
@@ -18523,7 +18541,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-06"
+      "lastSeen": "2026-11-07"
     },
     {
       "id": "EN-7839fb10a8f14c70",
@@ -18993,6 +19011,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-57717e60d7a07800",
         "EV-3cc8e7ce0143047a",
         "EV-000a2cf24e205f93",
         "EV-5267a13213f966ec",
@@ -19139,6 +19158,7 @@
         "TX-product_form-model",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
+        "TX-product_form-compute_cloud_service",
         "TX-technology-embodied_ai",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
@@ -19157,7 +19177,6 @@
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
-        "TX-product_form-compute_cloud_service",
         "TX-use_case-data_analysis",
         "TX-industry-education",
         "TX-industry-government_public_sector",
@@ -19202,7 +19221,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-11-06"
+      "lastSeen": "2026-11-07"
     },
     {
       "id": "EN-52fc33ae4d101a5d",
@@ -19467,7 +19486,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-01-14",
-      "lastSeen": "2026-11-06"
+      "lastSeen": "2026-11-07"
     },
     {
       "id": "EN-4d748ebd71af03a7",
@@ -19582,9 +19601,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-product_form-compute_cloud_service",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
-        "TX-product_form-compute_cloud_service",
         "TX-technology-guardrails_safety"
       ],
       "relatedEntityIds": [
@@ -22966,7 +22985,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-06"
+      "lastSeen": "2026-11-07"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -23406,7 +23425,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-05",
-      "lastSeen": "2026-11-06"
+      "lastSeen": "2026-11-07"
     },
     {
       "id": "TX-product_form-end_user_application",

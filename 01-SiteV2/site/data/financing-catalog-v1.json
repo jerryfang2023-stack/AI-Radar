@@ -5,17 +5,17 @@
     "site_version": "SITE-V4.6.1-research-retirement",
     "column_version": "FUNDING-INSIGHT-V1.5.0-china-market",
     "taxonomy_version": "AI-FUNDING-TAGS-1.0",
-    "latest_date": "2026-11-06",
-    "last_checked_date": "2026-11-06",
+    "latest_date": "2026-11-07",
+    "last_checked_date": "2026-11-07",
     "latest_financing_date": "2026-11-05",
-    "generated_at": "2026-11-06T10:46:37.155Z",
+    "generated_at": "2026-11-07T00:50:45.414Z",
     "card_count": 696,
     "china_market_card_count": 152,
     "duplicate_rounds_removed": 25,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-11-06T10:48:39.915Z"
+      "generated_at": "2026-11-07T00:52:00.008Z"
     },
     "market_category_framework": {
       "name": "观澜 AI 融资分类",
@@ -38,7 +38,7 @@
     "event_count": 744,
     "aggregation_strategy": "reviewed_funding_subject",
     "scope": "all_ai_financing_except_embodied_and_robotics",
-    "excluded_count": 91,
+    "excluded_count": 92,
     "pending_classification_count": 20,
     "pending_publication_count": 42
   },
@@ -856750,6 +856750,11 @@
   },
   "review": {
     "excluded": [
+      {
+        "event_id": "EV-a1e75442bdeac42b",
+        "company": "擎天智能",
+        "reason": "embodied_robotics"
+      },
       {
         "event_id": "EV-ff850b44764f715b",
         "company": "易成创新",
