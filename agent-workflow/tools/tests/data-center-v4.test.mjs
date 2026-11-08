@@ -3185,3 +3185,12 @@ test('a cached redirect canonical URL cannot hide a company profile behind a new
  const raw={raw_qc_decision:'accepted',published_at:'2026-10-30',clean_text:'Acme AI raised seed funding.'};
  assert.deepEqual(eventSourceEligibility(raw,{source_url:'https://news.pedaily.cn/disclosure',canonical_url:'https://vc.pedaily.cn/company/709415.html'},'Acme AI raised seed funding','2026-11-06',{eventType:'funding'}),{accepted:false,reason:'company_profile_requires_original_event_source'});
 });
+
+
+test('Chinese product and conference reports cannot date a retrospective round by the article date',()=>{
+ const check=(body,title='Aippy亮相腾讯全球数字生态大会')=>eventSourceEligibility({published_at:'2026-11-04',clean_text:body},{source_url:'https://example.org/conference'},title,'2026-11-08',{eventType:'funding'});
+ assert.equal(check('Aippy展示AI游戏社区。\n2026 年 6 月，Aippy 完成数千万美元首轮融资，投后估值 2.5 亿美元。').reason,'historical_funding_reference_requires_original_date');
+ assert.equal(check('2025年12月，Aippy完成数千万美元首轮融资。').reason,'historical_funding_reference_requires_original_date');
+ for(const body of ['2026年11月，Aippy完成数千万美元融资。','2026年13月，Aippy完成数千万美元融资。','2026年6月，Aippy完成首轮融资。\nAippy今日宣布完成新一轮融资。','2026年6月，Aippy发布AI游戏社区。今日完成数千万美元融资。']) assert.notEqual(check(body).reason,'historical_funding_reference_requires_original_date',body);
+ assert.equal(check('2026年6月，Aippy完成首轮融资。','Aippy宣布完成新一轮融资').accepted,true);
+});
