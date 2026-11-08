@@ -7,11 +7,11 @@
     "taxonomy_version": "AI-FUNDING-TAGS-1.0",
     "latest_date": "2026-11-08",
     "last_checked_date": "2026-11-08",
-    "latest_financing_date": "2026-11-07",
+    "latest_financing_date": "2026-11-05",
     "generated_at": "2026-11-08T04:44:52.882Z",
-    "card_count": 697,
+    "card_count": 696,
     "china_market_card_count": 152,
-    "duplicate_rounds_removed": 25,
+    "duplicate_rounds_removed": 26,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
@@ -35,12 +35,12 @@
         }
       ]
     },
-    "event_count": 746,
+    "event_count": 744,
     "aggregation_strategy": "reviewed_funding_subject",
     "scope": "all_ai_financing_except_embodied_and_robotics",
     "excluded_count": 93,
     "pending_classification_count": 20,
-    "pending_publication_count": 42
+    "pending_publication_count": 43
   },
   "taxonomy": {
     "version": "AI-FUNDING-TAGS-1.0",
@@ -737,1234 +737,6 @@
     ]
   },
   "cards": [
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-7183666b813db13e",
-      "triggered_by_event_id": "EV-aaf041c83cebba9a",
-      "as_of_date": "2026-11-08",
-      "company": {
-        "entity_id": "EN-7d3194f79e645c42",
-        "name": "OpenAI",
-        "full_name": "OpenAI",
-        "website": "",
-        "summary": "OpenAI 是一家人工智能公司，总部位于旧金山。",
-        "headquarters": "旧金山",
-        "founders": [],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-e2f569ef710b957d",
-            "quote": "OpenAI ist ein Unternehmen für künstliche Intelligenz mit Sitz in San Francisco.",
-            "source_content_hash": "48399541b4393825",
-            "quote_hash": "bd6ae8be658791e6bc7cb59c88dd8adcbfc11ad76adc707b1e3edea8e2790f20"
-          },
-          {
-            "source_id": "FISRC-b4ba4f68908fa080",
-            "quote": "英伟达：负责底层算力供给，围绕 GPU 及新一代加速器，为OpenAI提供持续、可扩展的训练与推理能力；\n亚马逊：提供云基础设施与全球部署能力，支持OpenAI在多区域、多行业场景中的模型交付与商业化落地；",
-            "source_content_hash": "f5fc1f7eecf1f9e6",
-            "quote_hash": "1261bc0eeaa287988e7732f32ad7768b8b8a183ada60bcb060ecd35105618c8c"
-          }
-        ],
-        "application_entity_id": "EN-7d3194f79e645c42",
-        "canonical_entity_consistent": true
-      },
-      "financing": {
-        "round": "轮次未披露",
-        "amount": "$11 billion",
-        "total_raised": "",
-        "announced_at": "2026-11-07",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "Coatue Management",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3952ae60d488ad95",
-                "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-0d309b859ee1fe"
-          },
-          {
-            "name": "T. Rowe Price",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3952ae60d488ad95",
-                "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-519f1146b99bd7"
-          },
-          {
-            "name": "SoftBank",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3952ae60d488ad95",
-                "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-              }
-            ],
-            "entity_id": "EN-80d387ccb3289295",
-            "institution_id": "INV-b3dd2d4428d2f2"
-          },
-          {
-            "name": "Sequoia Capital",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3952ae60d488ad95",
-                "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-862e0e7d2ba5cf"
-          },
-          {
-            "name": "Founders Fund",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3952ae60d488ad95",
-                "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-fab7efd306c6f9"
-          },
-          {
-            "name": "Andreessen Horowitz",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3952ae60d488ad95",
-                "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-b8a0e793124952"
-          },
-          {
-            "name": "阿拉伯联合酋长国财团",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3952ae60d488ad95",
-                "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-2d581d7bb663a0"
-          }
-        ],
-        "other_round_investors": [],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-3952ae60d488ad95",
-            "quote": "OpenAI lands an $11 billion funding round, but has to court dentists for more capital",
-            "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-            "quote_hash": "6676720b2d4b1af56058fba869544ac63772aae4c3df246925d288f555ae3b08"
-          },
-          {
-            "source_id": "FISRC-3952ae60d488ad95",
-            "quote": "OpenAI has received roughly $11 billion in new funding, the first tranche of a round valuing the company at $1.25 trillion.",
-            "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-            "quote_hash": "6595f82330d16d7334e374d2d1942ea3e5eef0e922ddf34764cdf8959d8d7512"
-          },
-          {
-            "source_id": "FISRC-e2f569ef710b957d",
-            "quote": "OpenAI hat 11 Milliarden Dollar an frischem Kapital eingesammelt, die erste Tranche einer Finanzierungsrunde, die das Unternehmen mit 1,25 Billionen Dollar bewertet.",
-            "source_content_hash": "48399541b4393825",
-            "quote_hash": "e6d27697e0acc3a23b4fbb275fccdc5d2dc2517dd3988596cdc5112a8d0d644c"
-          }
-        ],
-        "round_code": "undisclosed",
-        "round_original": "轮次未披露",
-        "amount_original": "$11 billion",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 11000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "110 亿美元"
-        },
-        "total_raised_original": "",
-        "total_raised_normalized": {
-          "currency": "",
-          "value": null,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "undisclosed",
-          "display_zh": ""
-        },
-        "risk_markers": [],
-        "disclosures": [
-          {
-            "event_id": "EV-aaf041c83cebba9a",
-            "round_original": "轮次未披露",
-            "amount": "$11 billion",
-            "announced_at": "2026-11-07",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3952ae60d488ad95",
-                "quote": "OpenAI lands an $11 billion funding round, but has to court dentists for more capital",
-                "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                "quote_hash": "6676720b2d4b1af56058fba869544ac63772aae4c3df246925d288f555ae3b08"
-              },
-              {
-                "source_id": "FISRC-3952ae60d488ad95",
-                "quote": "OpenAI has received roughly $11 billion in new funding, the first tranche of a round valuing the company at $1.25 trillion.",
-                "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                "quote_hash": "6595f82330d16d7334e374d2d1942ea3e5eef0e922ddf34764cdf8959d8d7512"
-              },
-              {
-                "source_id": "FISRC-e2f569ef710b957d",
-                "quote": "OpenAI hat 11 Milliarden Dollar an frischem Kapital eingesammelt, die erste Tranche einer Finanzierungsrunde, die das Unternehmen mit 1,25 Billionen Dollar bewertet.",
-                "source_content_hash": "48399541b4393825",
-                "quote_hash": "e6d27697e0acc3a23b4fbb275fccdc5d2dc2517dd3988596cdc5112a8d0d644c"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "partially_disclosed",
-        "cumulative_amount": {
-          "original": "",
-          "normalized": {
-            "currency": "",
-            "value": null,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "undisclosed",
-            "display_zh": ""
-          },
-          "basis": "known_rounds_only",
-          "known_round_totals": [
-            {
-              "currency": "USD",
-              "value": 133000000000,
-              "min_value": null,
-              "max_value": null,
-              "unit": "base",
-              "round_count": 2,
-              "status": "exact",
-              "display_zh": "1330 亿美元"
-            }
-          ],
-          "historical_round_count": 2
-        },
-        "current_source_ids": [
-          "FISRC-3952ae60d488ad95",
-          "FISRC-e2f569ef710b957d"
-        ]
-      },
-      "products": [
-        {
-          "name": "ChatGPT",
-          "description": "OpenAI的AI助手，可用于代理式购物，用户可在ChatGPT内浏览、比较和购买商品。",
-          "target_customers": "消费者",
-          "features": [
-            "代理式购物"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2d81715dfb797c30",
-              "quote": "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT.",
-              "source_content_hash": "9dac971a31e00815",
-              "quote_hash": "8e2bc731ba9d88c83c57a7ea918a0ffb64ab9861995298b9448a6e52684e39ed"
-            }
-          ],
-          "entity_id": "EN-d1ad14d4ad57d207"
-        },
-        {
-          "name": "Codex",
-          "description": "OpenAI的编程工具Codex，可作为Claude Code的插件使用。",
-          "target_customers": "开发者",
-          "features": [
-            "Claude Code插件集成"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2d81715dfb797c30",
-              "quote": "Codex now ships as a plugin inside Claude Code, Anthropic's coding agent.",
-              "source_content_hash": "9dac971a31e00815",
-              "quote_hash": "77c1e6f52a5fcdd730c1c2e2c48eb55e4ea093403d5078af2150851508b5cddd"
-            }
-          ],
-          "entity_id": "EN-1ecf93c539fcffca"
-        }
-      ],
-      "customers": [],
-      "comparisons": [],
-      "metrics": [
-        {
-          "label": "本轮首笔到账融资额",
-          "value": "约110亿美元",
-          "observed_at": "2026-11-07",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3952ae60d488ad95",
-              "quote": "OpenAI has received roughly $11 billion in new funding, the first tranche of a round valuing the company at $1.25 trillion.",
-              "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-              "quote_hash": "6595f82330d16d7334e374d2d1942ea3e5eef0e922ddf34764cdf8959d8d7512"
-            }
-          ]
-        },
-        {
-          "label": "本轮融资对应估值",
-          "value": "1.25万亿美元",
-          "observed_at": "2026-11-07",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3952ae60d488ad95",
-              "quote": "the first tranche of a round valuing the company at $1.25 trillion",
-              "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-              "quote_hash": "98207c8f038d8a5406f9b1c49677fce9f0268461ad4408037f9e729fe2e4a22f"
-            }
-          ]
-        },
-        {
-          "label": "本轮潜在总规模",
-          "value": "最高200亿美元",
-          "observed_at": "2026-11-07",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3952ae60d488ad95",
-              "quote": "The full round could grow to $20 billion, with the rest expected in the coming weeks.",
-              "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-              "quote_hash": "f1524f27996c397373d586a7a4cb7775448d33eddaaa10f536bd2ee248bf6c91"
-            }
-          ]
-        },
-        {
-          "label": "原计划融资额",
-          "value": "300亿美元",
-          "observed_at": "2026-11-07",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3952ae60d488ad95",
-              "quote": "OpenAI originally sought $30 billion at a $1.4 trillion valuation but scaled back after an AI-sector selloff.",
-              "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-              "quote_hash": "2c55651831d47337ecf24f28b8660dcc1ba96e53c9c1df4d776589dee35500ad"
-            }
-          ]
-        },
-        {
-          "label": "原计划对应估值",
-          "value": "1.4万亿美元",
-          "observed_at": "2026-11-07",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3952ae60d488ad95",
-              "quote": "OpenAI originally sought $30 billion at a $1.4 trillion valuation but scaled back after an AI-sector selloff.",
-              "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-              "quote_hash": "2c55651831d47337ecf24f28b8660dcc1ba96e53c9c1df4d776589dee35500ad"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "Matthias Bastian",
-          "quote": "OpenAI has received roughly $11 billion in new funding, the first tranche of a round valuing the company at $1.25 trillion.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3952ae60d488ad95",
-              "quote": "OpenAI has received roughly $11 billion in new funding, the first tranche of a round valuing the company at $1.25 trillion.",
-              "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-              "quote_hash": "6595f82330d16d7334e374d2d1942ea3e5eef0e922ddf34764cdf8959d8d7512"
-            }
-          ]
-        },
-        {
-          "speaker": "Matthias Bastian",
-          "quote": "The full round could grow to $20 billion, with the rest expected in the coming weeks.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3952ae60d488ad95",
-              "quote": "The full round could grow to $20 billion, with the rest expected in the coming weeks.",
-              "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-              "quote_hash": "f1524f27996c397373d586a7a4cb7775448d33eddaaa10f536bd2ee248bf6c91"
-            }
-          ]
-        },
-        {
-          "speaker": "Matthias Bastian",
-          "quote": "OpenAI originally sought $30 billion at a $1.4 trillion valuation but scaled back after an AI-sector selloff.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3952ae60d488ad95",
-              "quote": "OpenAI originally sought $30 billion at a $1.4 trillion valuation but scaled back after an AI-sector selloff.",
-              "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-              "quote_hash": "2c55651831d47337ecf24f28b8660dcc1ba96e53c9c1df4d776589dee35500ad"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [],
-        "capital_judgment": "资本押注的核心变量是 OpenAI 能否在 AI 板块抛售后以 1.25 万亿美元估值完成最高 200 亿美元的融资；当前已验证信号仅为约 110 亿美元首笔资金已到账，且本轮由 Coatue Management、T. Rowe Price、SoftBank、Sequoia Capital、Founders Fund、Andreessen Horowitz 及阿联酋财团参与。来源同时称 OpenAI 正与投资银行合作引入富裕个人投资者，并已面向牙医等个人募资，说明后续资金到位仍不确定；证据边界是来源未披露具体产品、收入或客户合同，估值与融资规模均来自媒体报道。",
-        "validated_signals": [
-          "约110亿美元首笔资金已汇出，属于本轮第一笔款项",
-          "本轮对应估值1.25万亿美元",
-          "本轮投资方包括Coatue Management、T. Rowe Price、SoftBank、Sequoia Capital、Founders Fund、Andreessen Horowitz及阿联酋财团"
-        ],
-        "risks": [
-          "本轮最高200亿美元的总规模仍待后续数周资金到位验证",
-          "来源称OpenAI在AI板块抛售后下调原定300亿美元融资计划，融资环境承压",
-          "来源未披露具体产品、收入或客户合同，无法验证估值对应的业务基本面",
-          "来源称OpenAI正争取牙医等富裕个人投资者，反映机构资金可能不足"
-        ],
-        "sector": "通用与多模态模型",
-        "investment_thesis": {
-          "statement": "资本押注的核心变量是 OpenAI 能否在 AI 板块抛售后以 1.25 万亿美元估值完成最高 200 亿美元的融资；当前已验证信号仅为约 110 亿美元首笔资金已到账，且本轮由 Coatue Management、T. Rowe Price、SoftBank、Sequoia Capital、Founders Fund、Andreessen Horowitz 及阿联酋财团参与。来源同时称 OpenAI 正与投资银行合作引入富裕个人投资者，并已面向牙医等个人募资，说明后续资金到位仍不确定；证据边界是来源未披露具体产品、收入或客户合同，估值与融资规模均来自媒体报道。",
-          "evidence_signals": [
-            "约110亿美元首笔资金已汇出，属于本轮第一笔款项",
-            "本轮对应估值1.25万亿美元",
-            "本轮投资方包括Coatue Management、T. Rowe Price、SoftBank、Sequoia Capital、Founders Fund、Andreessen Horowitz及阿联酋财团"
-          ],
-          "risks": [
-            "本轮最高200亿美元的总规模仍待后续数周资金到位验证",
-            "来源称OpenAI在AI板块抛售后下调原定300亿美元融资计划，融资环境承压",
-            "来源未披露具体产品、收入或客户合同，无法验证估值对应的业务基本面",
-            "来源称OpenAI正争取牙医等富裕个人投资者，反映机构资金可能不足"
-          ],
-          "institutional_rationale_status": "not_disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "ChatGPT",
-          "canonical_entity_id": "EN-d1ad14d4ad57d207",
-          "canonical_name": "ChatGPT"
-        },
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Codex",
-          "canonical_entity_id": "EN-1ecf93c539fcffca",
-          "canonical_name": "Codex"
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Coatue Management",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "T. Rowe Price",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "SoftBank",
-          "canonical_entity_id": "EN-80d387ccb3289295",
-          "canonical_name": "SoftBank"
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Sequoia Capital",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Founders Fund",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Andreessen Horowitz",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "阿拉伯联合酋长国财团",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [
-        {
-          "event_id": "EV-aaf041c83cebba9a",
-          "date": "2026-11-07",
-          "title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
-          "amount": "$11 billion",
-          "source_refs": [
-            "SA-fc0f4c2f904f6d83"
-          ]
-        },
-        {
-          "event_id": "EV-68d5a02e5213b43c",
-          "date": "2026-02-28",
-          "title": "OpenAI最新融资1100亿美元 - 投资界",
-          "amount": "1100亿美元",
-          "source_refs": [
-            "SA-2c3a182c5a6b5011"
-          ]
-        },
-        {
-          "event_id": "EV-d4e44892226be468",
-          "date": "2026-06-30",
-          "title": "AI 时代如何融资：投资者希望看到的5件事",
-          "amount": "$122b",
-          "source_refs": [
-            "SA-126f5da1f9043771"
-          ]
-        }
-      ],
-      "research_sources": [
-        {
-          "source_id": "FISRC-3952ae60d488ad95",
-          "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
-          "title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
-          "publisher": "the-decoder.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-11-08T00:16:40.813Z",
-          "content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-          "source_artifact_id": "SA-fc0f4c2f904f6d83",
-          "raw_id": "RAW-8cf17dc6d51bd14a",
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-e2f569ef710b957d",
-          "source_url": "https://worldtech.news/story/cluster:e589465410df88ef15497cc066d8bab773a81bb3ff424d9594c7232574c8c9a9?lang=de",
-          "title": "OpenAI sichert sich 11 Milliarden Dollar Finanzierung, muss aber um Zahnärzte als Geldgeber werben",
-          "publisher": "worldtech.news",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-08T00:50:44.333Z",
-          "content_hash": "48399541b4393825",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-2d81715dfb797c30",
-          "source_url": "https://dev.to/monkfromearth/what-openais-122-billion-round-tells-us-about-ais-new-shape-58a7",
-          "title": "What OpenAI's $122 Billion Round Tells Us About AI's New Shape",
-          "publisher": "dev.to",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-08T04:40:28.893Z",
-          "content_hash": "9dac971a31e00815",
-          "purpose": "unverified"
-        },
-        {
-          "source_id": "FISRC-b4ba4f68908fa080",
-          "source_url": "https://news.pedaily.cn/202602/561239.shtml",
-          "title": "OpenAI最新融资1100亿美元",
-          "publisher": "news.pedaily.cn",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-08T04:41:37.611Z",
-          "content_hash": "f5fc1f7eecf1f9e6",
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-81ee7e9a986be8b0",
-          "source_url": "https://technation.io/how-to-raise-funding-in-the-ai-era/",
-          "title": "AI 时代如何融资：投资者希望看到的5件事",
-          "publisher": "keyword search / Anysearch",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-06-30T02:26:24.727Z",
-          "content_hash": "f14710d7c7fa3bb3",
-          "source_artifact_id": "SA-126f5da1f9043771",
-          "raw_id": "RAW-4ccf1a304ba3efb4",
-          "purpose": "unverified"
-        },
-        {
-          "source_id": "FISRC-1e2b3bad243bd066",
-          "source_url": "https://yespress.io/openais-122-b-megaround",
-          "title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
-          "publisher": "yespress.io",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-07-26T14:40:10.022Z",
-          "content_hash": "494969b64dc816f3",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-b86e0fbe62dfd3dc",
-          "source_url": "https://www.mexc.com/news/996087",
-          "title": "OpenAI Closes $122B Funding Round, Hits $852B Valuation as AI Infrastructure Race Intensifies | MEXC News",
-          "publisher": "mexc.com",
-          "source_class": "independent",
-          "capture_method": "exa_captured_content",
-          "captured_at": "2026-07-26T14:40:26.149Z",
-          "content_hash": "4e51c91e5fc7160c",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-e38cca1b8c07fccd",
-          "source_url": "https://kersai.com/openai-122-billion-funding-round-852-billion-valuation-super-app-2026/",
-          "title": "OpenAI Raises $122B at $852B Valuation: What It Really Means | KERSAI",
-          "publisher": "kersai.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-07-26T14:40:28.985Z",
-          "content_hash": "e6bee4377f522396",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        },
-        {
-          "source_id": "FISRC-2981ebb80e2fd3f8",
-          "source_url": "https://openai.com/zh-Hans-CN/index/scaling-ai-for-everyone",
-          "title": "让AI 惠及每一个人",
-          "publisher": "openai.com",
-          "source_class": "official_candidate",
-          "capture_method": "tavily_captured_content",
-          "captured_at": "2026-09-12T07:08:44.215Z",
-          "content_hash": "3d09ca2929b7c632",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        },
-        {
-          "source_id": "FISRC-b839ede28a40d17e",
-          "source_url": "https://openai.com/index/scaling-ai-for-everyone/",
-          "title": "Scaling AI for everyone",
-          "publisher": "openai.com",
-          "source_class": "official_candidate",
-          "capture_method": "exa_captured_content",
-          "captured_at": "2026-09-12T07:08:44.193Z",
-          "content_hash": "a233281bc9f8e1cd",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-2b76a01192ab39ab",
-          "source_url": "https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report",
-          "title": "The state of enterprise AI | OpenAI",
-          "publisher": "openai.com",
-          "source_class": "official_candidate",
-          "capture_method": "tavily_captured_content",
-          "captured_at": "2026-09-12T07:08:54.241Z",
-          "content_hash": "85c1c811bc4aeb85",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-flash",
-        "attempts": 2,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-11-08T00:51:06.919Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-11-08T00:51:06.919Z",
-      "customer_research": {
-        "status": "no_verified_customer_found",
-        "verified_customer_count": 0,
-        "searched_source_count": 4
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 2,
-          "total": 2,
-          "unresolved_names": []
-        },
-        "founders": {
-          "linked": 0,
-          "total": 0,
-          "unresolved_names": []
-        }
-      },
-      "source_event_ids": [
-        "EV-aaf041c83cebba9a",
-        "EV-d4e44892226be468",
-        "EV-68d5a02e5213b43c"
-      ],
-      "aggregation": {
-        "key": "EN-7d3194f79e645c42|undisclosed|USD:exact:11000000000:::|2026-11-07",
-        "event_count": 2,
-        "strategy": "reviewed_funding_subject",
-        "subject_id": "EN-7d3194f79e645c42",
-        "source_card_count": 3
-      },
-      "historical_rounds": [
-        {
-          "funding_insight_id": "FI-7183666b813db13e",
-          "event_ids": [
-            "EV-aaf041c83cebba9a"
-          ],
-          "round": "轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "轮次未披露",
-          "amount_original": "$11 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 11000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "110 亿美元"
-          },
-          "announced_at": "2026-11-07",
-          "disclosure_status": "partially_disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": true,
-          "investors": [
-            {
-              "name": "Coatue Management",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-3952ae60d488ad95",
-                  "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                  "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                  "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-0d309b859ee1fe"
-            },
-            {
-              "name": "T. Rowe Price",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-3952ae60d488ad95",
-                  "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                  "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                  "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-519f1146b99bd7"
-            },
-            {
-              "name": "SoftBank",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-3952ae60d488ad95",
-                  "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                  "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                  "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-                }
-              ],
-              "entity_id": "EN-80d387ccb3289295",
-              "institution_id": "INV-b3dd2d4428d2f2"
-            },
-            {
-              "name": "Sequoia Capital",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-3952ae60d488ad95",
-                  "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                  "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                  "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-862e0e7d2ba5cf"
-            },
-            {
-              "name": "Founders Fund",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-3952ae60d488ad95",
-                  "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                  "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                  "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-fab7efd306c6f9"
-            },
-            {
-              "name": "Andreessen Horowitz",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-3952ae60d488ad95",
-                  "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                  "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                  "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-b8a0e793124952"
-            },
-            {
-              "name": "阿拉伯联合酋长国财团",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-3952ae60d488ad95",
-                  "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                  "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                  "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-2d581d7bb663a0"
-            }
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3952ae60d488ad95",
-              "quote": "OpenAI lands an $11 billion funding round, but has to court dentists for more capital",
-              "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-              "quote_hash": "6676720b2d4b1af56058fba869544ac63772aae4c3df246925d288f555ae3b08"
-            },
-            {
-              "source_id": "FISRC-3952ae60d488ad95",
-              "quote": "OpenAI has received roughly $11 billion in new funding, the first tranche of a round valuing the company at $1.25 trillion.",
-              "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-              "quote_hash": "6595f82330d16d7334e374d2d1942ea3e5eef0e922ddf34764cdf8959d8d7512"
-            },
-            {
-              "source_id": "FISRC-e2f569ef710b957d",
-              "quote": "OpenAI hat 11 Milliarden Dollar an frischem Kapital eingesammelt, die erste Tranche einer Finanzierungsrunde, die das Unternehmen mit 1,25 Billionen Dollar bewertet.",
-              "source_content_hash": "48399541b4393825",
-              "quote_hash": "e6d27697e0acc3a23b4fbb275fccdc5d2dc2517dd3988596cdc5112a8d0d644c"
-            }
-          ]
-        },
-        {
-          "funding_insight_id": "FI-b76fffbf5d0d91bd",
-          "event_ids": [
-            "EV-d4e44892226be468",
-            "EV-68d5a02e5213b43c"
-          ],
-          "round": "F轮",
-          "round_code": "series_f",
-          "round_original": "Series F",
-          "amount_original": "$1220亿",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 122000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1220 亿美元"
-          },
-          "announced_at": "2026-03-31",
-          "disclosure_status": "disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": false,
-          "investors": [
-            {
-              "name": "Amazon",
-              "role": "本轮领投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-b86e0fbe62dfd3dc",
-                  "quote": "The funding round was anchored by Amazon, NVIDIA, SoftBank, and Microsoft.",
-                  "source_content_hash": "4e51c91e5fc7160c",
-                  "quote_hash": "7c6f47d89b7c9809561c9ea57516ce95ce2adcdcf24a1ce406d190ac388ce680"
-                }
-              ],
-              "entity_id": "EN-cbc62794911ff31b",
-              "institution_id": "INV-e42edec994aa9c"
-            },
-            {
-              "name": "Nvidia",
-              "role": "本轮领投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-1e2b3bad243bd066",
-                  "quote": "Nvidia ($30 billion)",
-                  "source_content_hash": "494969b64dc816f3",
-                  "quote_hash": "16e389a54221d6db4d9015cc5bf31ea68b4d8505958c7f03d81a147fb6406b7f"
-                },
-                {
-                  "source_id": "FISRC-b86e0fbe62dfd3dc",
-                  "quote": "The funding round was anchored by Amazon, NVIDIA, SoftBank, and Microsoft.",
-                  "source_content_hash": "4e51c91e5fc7160c",
-                  "quote_hash": "7c6f47d89b7c9809561c9ea57516ce95ce2adcdcf24a1ce406d190ac388ce680"
-                }
-              ],
-              "entity_id": "EN-8d4321d936320802",
-              "institution_id": "INV-c73d9854fb920b"
-            },
-            {
-              "name": "SoftBank",
-              "role": "本轮联合领投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-1e2b3bad243bd066",
-                  "quote": "SoftBank ($30 billion)",
-                  "source_content_hash": "494969b64dc816f3",
-                  "quote_hash": "0e0614f834ae6ffe9eed742267af7afecb0253156dbe578b98c351a6bc94b202"
-                },
-                {
-                  "source_id": "FISRC-b86e0fbe62dfd3dc",
-                  "quote": "SoftBank co-led alongside a16z, D. E. Shaw Ventures, MGX, TPG, and T. Rowe Price Associates.",
-                  "source_content_hash": "4e51c91e5fc7160c",
-                  "quote_hash": "eb1a353f262c6b5f36cf042c55381d3642167f0b24ec4185728cb1f48dbe89f2"
-                }
-              ],
-              "entity_id": "EN-80d387ccb3289295",
-              "institution_id": "INV-b3dd2d4428d2f2"
-            },
-            {
-              "name": "Microsoft",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-1e2b3bad243bd066",
-                  "quote": "with continued participation from longtime backer Microsoft.",
-                  "source_content_hash": "494969b64dc816f3",
-                  "quote_hash": "16f52e5c38a620a58015f9f93fa4100020dd6bca3b5dbeb8386c03a059deedeb"
-                }
-              ],
-              "entity_id": "EN-9fbf261b62c1d7c0",
-              "institution_id": "INV-d30fb8e9fd4a4f"
-            },
-            {
-              "name": "Andreessen Horowitz (a16z)",
-              "role": "本轮联合领投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-1e2b3bad243bd066",
-                  "quote": "Co-leads included Andreessen Horowitz (a16z)",
-                  "source_content_hash": "494969b64dc816f3",
-                  "quote_hash": "5720c1d3a3f101ef50c68b7a3713255fbb89e9a0332c1c20783887ee5eab145a"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-b8a0e793124952"
-            },
-            {
-              "name": "BlackRock",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-1e2b3bad243bd066",
-                  "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
-                  "source_content_hash": "494969b64dc816f3",
-                  "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-a83f8b9c272b41"
-            },
-            {
-              "name": "Blackstone",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-1e2b3bad243bd066",
-                  "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
-                  "source_content_hash": "494969b64dc816f3",
-                  "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-1493e20e99083e"
-            },
-            {
-              "name": "Sequoia Capital",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-1e2b3bad243bd066",
-                  "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
-                  "source_content_hash": "494969b64dc816f3",
-                  "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-862e0e7d2ba5cf"
-            },
-            {
-              "name": "Fidelity",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-1e2b3bad243bd066",
-                  "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
-                  "source_content_hash": "494969b64dc816f3",
-                  "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-bf8f493cd18aeb"
-            },
-            {
-              "name": "ARK Invest",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-1e2b3bad243bd066",
-                  "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
-                  "source_content_hash": "494969b64dc816f3",
-                  "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-1caf7c5cbe9bd4"
-            },
-            {
-              "name": "Temasek",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-1e2b3bad243bd066",
-                  "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
-                  "source_content_hash": "494969b64dc816f3",
-                  "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-91885d8d9e5635"
-            },
-            {
-              "name": "Coatue",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-1e2b3bad243bd066",
-                  "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
-                  "source_content_hash": "494969b64dc816f3",
-                  "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-0d309b859ee1fe"
-            },
-            {
-              "name": "Thrive Capital",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-1e2b3bad243bd066",
-                  "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
-                  "source_content_hash": "494969b64dc816f3",
-                  "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-5f293d18e41f5e"
-            },
-            {
-              "name": "UC Investments",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-1e2b3bad243bd066",
-                  "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
-                  "source_content_hash": "494969b64dc816f3",
-                  "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-debf9c59480d10"
-            },
-            {
-              "name": "Altimeter",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-b86e0fbe62dfd3dc",
-                  "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
-                  "source_content_hash": "4e51c91e5fc7160c",
-                  "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-ff9d9c2e0d221a"
-            },
-            {
-              "name": "Dragoneer",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-b86e0fbe62dfd3dc",
-                  "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
-                  "source_content_hash": "4e51c91e5fc7160c",
-                  "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-bde7dbb822eb89"
-            },
-            {
-              "name": "Insight Partners",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-b86e0fbe62dfd3dc",
-                  "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
-                  "source_content_hash": "4e51c91e5fc7160c",
-                  "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-7626f5b02a6cc8"
-            }
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "OpenAI just closed a $122 billion funding round at an $852 billion valuation.",
-              "source_content_hash": "494969b64dc816f3",
-              "quote_hash": "a261bfcea586e272d5a5e36e574dd948e5a0fdba5865c4dab6f7b660291422b6"
-            },
-            {
-              "source_id": "FISRC-b86e0fbe62dfd3dc",
-              "quote": "OpenAI has closed a landmark funding round with $122 billion in committed capital, pushing its post-money valuation to $852 billion.",
-              "source_content_hash": "4e51c91e5fc7160c",
-              "quote_hash": "9dec8e57dda11bd4325510579c0716800b8b2092a80429549ad1587cfdcef558"
-            },
-            {
-              "source_id": "FISRC-b4ba4f68908fa080",
-              "quote": "2月27日晚，OpenAI宣布获得新融资1100亿美元，其中300亿美元来自软银，300亿美元来自英伟达，500亿美元来自亚马逊，投前估值7300亿美元。",
-              "source_content_hash": "f5fc1f7eecf1f9e6",
-              "quote_hash": "3191acf0afc26908db93e519ec76d9686786d5b64d289d448a7132a22c54c00a"
-            },
-            {
-              "source_id": "FISRC-b839ede28a40d17e",
-              "quote": "Today we’re announcing $110B in new investment at a $730B pre-money valuation. This includes $30B from SoftBank, $30B from NVIDIA, and $50B from Amazon.",
-              "source_content_hash": "a233281bc9f8e1cd",
-              "quote_hash": "5fefaf5be8452912bc394b60a681fb07760c716d74f5a5d2fa6e1625f4485f33"
-            }
-          ]
-        }
-      ],
-      "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
-        "source_registry_ids": []
-      },
-      "product_form": {
-        "id": "model-api",
-        "name": "模型与 API",
-        "dimension": "financing_product_form"
-      },
-      "market_category": {
-        "id": "models",
-        "name": "基础模型",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "general-models",
-        "name": "通用与多模态模型",
-        "dimension": "financing_subsector"
-      },
-      "market_application": null,
-      "links": {
-        "company": "data-center.html?view=index&detail=entity&id=EN-7d3194f79e645c42",
-        "relation_map": "data-center.html?view=relations&entity=EN-7d3194f79e645c42",
-        "funding_event": "data-center.html?view=events&detail=event&id=EV-aaf041c83cebba9a"
-      },
-      "translations": {
-        "zh-CN": {
-          "products[1].description": {
-            "text": "OpenAI的编程工具Codex，可作为Claude Code的插件使用。",
-            "source_hash": "c5077769184981e7e12e93d81c69e91af9bd1a6c00e7d22a4b24eb19ca18da70",
-            "provider": "deepseek",
-            "model": "deepseek-flash",
-            "translated_at": "2026-11-08T04:47:48.524Z",
-            "status": "translated"
-          },
-          "products[1].features[0]": {
-            "text": "Claude Code插件集成",
-            "source_hash": "a14834e40010b307a2402798c191e282a89548e7f981ac48e42183e704996852",
-            "provider": "deepseek",
-            "model": "deepseek-flash",
-            "translated_at": "2026-11-08T04:47:48.524Z",
-            "status": "translated"
-          }
-        }
-      },
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "models",
-          "name": "基础模型"
-        },
-        "subsector": {
-          "id": "general-models",
-          "name": "通用与多模态模型"
-        },
-        "product_form": {
-          "id": "model-api",
-          "name": "模型与 API"
-        },
-        "customers": [],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-e2f569ef710b957d",
-            "quote": "OpenAI ist ein Unternehmen für künstliche Intelligenz mit Sitz in San Francisco."
-          },
-          {
-            "source_id": "FISRC-2d81715dfb797c30",
-            "quote": "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT."
-          }
-        ],
-        "rationale": "证据表明 OpenAI 为 AI 公司，ChatGPT 为其通用模型产品，归基础模型。"
-      },
-      "source_card_ids": [
-        "FI-7183666b813db13e",
-        "FI-b76fffbf5d0d91bd",
-        "FI-72755fd9439ecca6"
-      ]
-    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-bb7c7a87a4cf6fe9",
@@ -12963,6 +11735,24 @@
             "quote": "London-based AI startup Tallia, formerly known as Revax, has raised €4 million ($4.5 million) in Seed funding.",
             "source_content_hash": "790aef681aa12fb9",
             "quote_hash": "926cec4972ba72ae867b2283e6283f65756545b130484b70e26b5f839fb51311"
+          },
+          {
+            "source_id": "FISRC-f6d5240c737cf2ca",
+            "quote": "HomeFundingTallia raises €4 million to bring AI-powered research and review to tax...",
+            "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
+            "quote_hash": "eaf71a9fc16984df47b23ffccd7a7ee3acd2e098e92b06dbf12fe6e989023747"
+          },
+          {
+            "source_id": "FISRC-f6d5240c737cf2ca",
+            "quote": "has secured €4 million ($4.5 million) in Seed funding",
+            "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
+            "quote_hash": "8f58fe977a2b2b849a4b195c7b04059ee9c85ffaa1c2deae0118b169e9b17369"
+          },
+          {
+            "source_id": "FISRC-2bc9c4d29695a94c",
+            "quote": "Raised: €4M",
+            "source_content_hash": "ab3ee1cd9e096351",
+            "quote_hash": "1c204fabf34437493a6de3123a2f5df2f6412e4aec483920878c002949c8e231"
           }
         ],
         "round_code": "seed",
@@ -13014,6 +11804,32 @@
                 "quote_hash": "926cec4972ba72ae867b2283e6283f65756545b130484b70e26b5f839fb51311"
               }
             ]
+          },
+          {
+            "event_id": "EV-8e1b620139e11518",
+            "round_original": "Seed",
+            "amount": "€4 million",
+            "announced_at": "2026-11-03",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f6d5240c737cf2ca",
+                "quote": "HomeFundingTallia raises €4 million to bring AI-powered research and review to tax...",
+                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
+                "quote_hash": "eaf71a9fc16984df47b23ffccd7a7ee3acd2e098e92b06dbf12fe6e989023747"
+              },
+              {
+                "source_id": "FISRC-f6d5240c737cf2ca",
+                "quote": "has secured €4 million ($4.5 million) in Seed funding",
+                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
+                "quote_hash": "8f58fe977a2b2b849a4b195c7b04059ee9c85ffaa1c2deae0118b169e9b17369"
+              },
+              {
+                "source_id": "FISRC-2bc9c4d29695a94c",
+                "quote": "Raised: €4M",
+                "source_content_hash": "ab3ee1cd9e096351",
+                "quote_hash": "1c204fabf34437493a6de3123a2f5df2f6412e4aec483920878c002949c8e231"
+              }
+            ]
           }
         ],
         "disclosure_status": "disclosed",
@@ -13045,7 +11861,9 @@
         },
         "current_source_ids": [
           "FISRC-b7f263210d07ed30",
-          "FISRC-82ba6468360c12aa"
+          "FISRC-82ba6468360c12aa",
+          "FISRC-f6d5240c737cf2ca",
+          "FISRC-2bc9c4d29695a94c"
         ]
       },
       "products": [
@@ -13071,6 +11889,18 @@
               "quote": "The technology also incorporates structured review workflows, allowing senior professionals to examine the reasoning and supporting evidence behind AI-generated work.",
               "source_content_hash": "e977c0cfb1559d1668b5d9332458e588161cf87b92857364f5dd7ab3e45ddd0a",
               "quote_hash": "cb5d6c892b509efd3fe8ace56846d5406a1858bd1d1b934e2353fafe4545bb9f"
+            },
+            {
+              "source_id": "FISRC-f6d5240c737cf2ca",
+              "quote": "Its platform uses a custom retrieval system to connect AI-generated responses with relevant tax authorities",
+              "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
+              "quote_hash": "7fb5c0764b4583ce18b98059596c5440fac97fe1b1eee6a0eec004501ddab698"
+            },
+            {
+              "source_id": "FISRC-f6d5240c737cf2ca",
+              "quote": "The platform supports workflows across Microsoft Word, Excel, PowerPoint and Outlook",
+              "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
+              "quote_hash": "6aebf44e816f0976a2dde503129c8d10aed39fbdbae140b8fa78614729fe41fe"
             }
           ],
           "entity_id": null
@@ -13433,6 +12263,32 @@
           "source_artifact_id": null,
           "raw_id": null,
           "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-f6d5240c737cf2ca",
+          "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+          "title": "Tallia 融资 400 万欧元，为税务公司带来 AI 驱动的研究与审查",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-08T00:18:39.082Z",
+          "content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
+          "source_artifact_id": "SA-767478bec1fd9bf1",
+          "raw_id": "RAW-b76779e6036ed378",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-2bc9c4d29695a94c",
+          "source_url": "https://www.thesaasnews.com/news/tallia-raises-4m-seed/",
+          "title": "Tallia Raises €4M Seed",
+          "publisher": "thesaasnews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-08T00:51:12.619Z",
+          "content_hash": "ab3ee1cd9e096351",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
         }
       ],
       "model_provenance": {
@@ -13472,20 +12328,22 @@
         }
       },
       "source_event_ids": [
-        "EV-41ecfae294ef5f27"
+        "EV-41ecfae294ef5f27",
+        "EV-8e1b620139e11518"
       ],
       "aggregation": {
         "key": "EN-e1b40c3ec534d8fd|seed|EUR:exact:4000000:::|2026-11-03",
         "event_count": 1,
         "strategy": "reviewed_funding_subject",
         "subject_id": "EN-e1b40c3ec534d8fd",
-        "source_card_count": 1
+        "source_card_count": 2
       },
       "historical_rounds": [
         {
           "funding_insight_id": "FI-ac5b3adb35c391fc",
           "event_ids": [
-            "EV-41ecfae294ef5f27"
+            "EV-41ecfae294ef5f27",
+            "EV-8e1b620139e11518"
           ],
           "round": "种子轮",
           "round_code": "seed",
@@ -13609,6 +12467,24 @@
               "quote": "London-based AI startup Tallia, formerly known as Revax, has raised €4 million ($4.5 million) in Seed funding.",
               "source_content_hash": "790aef681aa12fb9",
               "quote_hash": "926cec4972ba72ae867b2283e6283f65756545b130484b70e26b5f839fb51311"
+            },
+            {
+              "source_id": "FISRC-f6d5240c737cf2ca",
+              "quote": "HomeFundingTallia raises €4 million to bring AI-powered research and review to tax...",
+              "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
+              "quote_hash": "eaf71a9fc16984df47b23ffccd7a7ee3acd2e098e92b06dbf12fe6e989023747"
+            },
+            {
+              "source_id": "FISRC-f6d5240c737cf2ca",
+              "quote": "has secured €4 million ($4.5 million) in Seed funding",
+              "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
+              "quote_hash": "8f58fe977a2b2b849a4b195c7b04059ee9c85ffaa1c2deae0118b169e9b17369"
+            },
+            {
+              "source_id": "FISRC-2bc9c4d29695a94c",
+              "quote": "Raised: €4M",
+              "source_content_hash": "ab3ee1cd9e096351",
+              "quote_hash": "1c204fabf34437493a6de3123a2f5df2f6412e4aec483920878c002949c8e231"
             }
           ]
         }
@@ -13695,862 +12571,7 @@
         "rationale": "为税务与会计专业人士提供AI研究与起草平台，属金融财税行业AI。"
       },
       "source_card_ids": [
-        "FI-ac5b3adb35c391fc"
-      ]
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-bd27258cf2762d79",
-      "triggered_by_event_id": "EV-8e1b620139e11518",
-      "as_of_date": "2026-11-08",
-      "company": {
-        "entity_id": "EN-0ffd07d1f26c6cd8",
-        "name": "Tallia",
-        "full_name": "Tallia",
-        "website": "https://tallia.ai",
-        "summary": "总部位于伦敦的AI初创公司，前身为Revax，为税务和会计专业人士提供AI驱动的研究与起草平台。",
-        "headquarters": "英国伦敦",
-        "founders": [
-          {
-            "name": "Jack Mander",
-            "role": "联合创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "1d5eacbec6ef9d26c2c5c385d2acf937306cf35208ae3f54e2124d279c9adc28"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Alexander Bartlam",
-            "role": "联合创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "1d5eacbec6ef9d26c2c5c385d2acf937306cf35208ae3f54e2124d279c9adc28"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-f6d5240c737cf2ca",
-            "quote": "London-based AI startup Tallia, formerly known as Revax",
-            "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-            "quote_hash": "88f05629a45a619c7ee36c2959593c4c961735df42deedb1e0b8359ecf1abd54"
-          },
-          {
-            "source_id": "FISRC-2bc9c4d29695a94c",
-            "quote": "Tallia, a London-based AI startup",
-            "source_content_hash": "ab3ee1cd9e096351",
-            "quote_hash": "04212989e93a597502eb59be9e49b19ff373120448267fdef89b1249ecdfd2df"
-          }
-        ],
-        "application_entity_id": "EN-0ffd07d1f26c6cd8",
-        "canonical_entity_consistent": false
-      },
-      "financing": {
-        "round": "种子轮",
-        "amount": "€4 million",
-        "total_raised": "",
-        "announced_at": "2026-11-03",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "Outward VC",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "The round was co-led by Outward VC and the Institute of Chartered Accountants in England and Wales (ICAEW)",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "e0663fb706b4b940aa93e2c8bbc9c3995d0a058df4a24360eede8b4673b2b0c7"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-41eb553354ff9b"
-          },
-          {
-            "name": "Institute of Chartered Accountants in England and Wales (ICAEW)",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "The round was co-led by Outward VC and the Institute of Chartered Accountants in England and Wales (ICAEW)",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "e0663fb706b4b940aa93e2c8bbc9c3995d0a058df4a24360eede8b4673b2b0c7"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-881170bd7f2ddb"
-          },
-          {
-            "name": "Portfolio Ventures",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "c9396c157c4342fe6236b958849617467d16587fd9de8a414b456d5b2a2112c0"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-a131dfbbd00524"
-          },
-          {
-            "name": "Expedite Capital",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "c9396c157c4342fe6236b958849617467d16587fd9de8a414b456d5b2a2112c0"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-577debc8bdbb14"
-          },
-          {
-            "name": "Paul Forster",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "c9396c157c4342fe6236b958849617467d16587fd9de8a414b456d5b2a2112c0"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-59f9e71e3b3c4f"
-          },
-          {
-            "name": "Angus Miln",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "c9396c157c4342fe6236b958849617467d16587fd9de8a414b456d5b2a2112c0"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-5be028befcc514"
-          }
-        ],
-        "other_round_investors": [],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-f6d5240c737cf2ca",
-            "quote": "HomeFundingTallia raises €4 million to bring AI-powered research and review to tax...",
-            "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-            "quote_hash": "eaf71a9fc16984df47b23ffccd7a7ee3acd2e098e92b06dbf12fe6e989023747"
-          },
-          {
-            "source_id": "FISRC-f6d5240c737cf2ca",
-            "quote": "has secured €4 million ($4.5 million) in Seed funding",
-            "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-            "quote_hash": "8f58fe977a2b2b849a4b195c7b04059ee9c85ffaa1c2deae0118b169e9b17369"
-          },
-          {
-            "source_id": "FISRC-2bc9c4d29695a94c",
-            "quote": "Raised: €4M",
-            "source_content_hash": "ab3ee1cd9e096351",
-            "quote_hash": "1c204fabf34437493a6de3123a2f5df2f6412e4aec483920878c002949c8e231"
-          }
-        ],
-        "round_code": "seed",
-        "round_original": "Seed",
-        "amount_original": "€4 million",
-        "amount_normalized": {
-          "currency": "EUR",
-          "value": 4000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "400 万欧元"
-        },
-        "total_raised_original": "",
-        "total_raised_normalized": {
-          "currency": "",
-          "value": null,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "undisclosed",
-          "display_zh": ""
-        },
-        "risk_markers": [],
-        "disclosures": [
-          {
-            "event_id": "EV-8e1b620139e11518",
-            "round_original": "Seed",
-            "amount": "€4 million",
-            "announced_at": "2026-11-03",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "HomeFundingTallia raises €4 million to bring AI-powered research and review to tax...",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "eaf71a9fc16984df47b23ffccd7a7ee3acd2e098e92b06dbf12fe6e989023747"
-              },
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "has secured €4 million ($4.5 million) in Seed funding",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "8f58fe977a2b2b849a4b195c7b04059ee9c85ffaa1c2deae0118b169e9b17369"
-              },
-              {
-                "source_id": "FISRC-2bc9c4d29695a94c",
-                "quote": "Raised: €4M",
-                "source_content_hash": "ab3ee1cd9e096351",
-                "quote_hash": "1c204fabf34437493a6de3123a2f5df2f6412e4aec483920878c002949c8e231"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "disclosed",
-        "cumulative_amount": {
-          "original": "",
-          "normalized": {
-            "currency": "",
-            "value": null,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "undisclosed",
-            "display_zh": ""
-          },
-          "basis": "known_rounds_only",
-          "known_round_totals": [
-            {
-              "currency": "EUR",
-              "value": 4000000,
-              "min_value": null,
-              "max_value": null,
-              "unit": "base",
-              "round_count": 1,
-              "status": "exact",
-              "display_zh": "400 万欧元"
-            }
-          ],
-          "historical_round_count": 1
-        },
-        "current_source_ids": [
-          "FISRC-f6d5240c737cf2ca",
-          "FISRC-2bc9c4d29695a94c"
-        ]
-      },
-      "products": [
-        {
-          "name": "Tallia AI研究与起草平台",
-          "description": "专为税务和会计实践设计的生成式AI平台，使用定制检索系统将AI生成回答与相关税务权威资料关联，支持在Microsoft Word、Excel、PowerPoint和Outlook中完成研究与起草。",
-          "target_customers": "税务和会计专业人士及事务所",
-          "features": [
-            "定制检索系统关联税务权威资料",
-            "结合外部税务知识与事务所内部文档、合同、模板和既往工作",
-            "结构化审查工作流，供高级专业人员核查AI生成工作的推理与证据",
-            "支持Microsoft Word、Excel、PowerPoint和Outlook工作流"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6d5240c737cf2ca",
-              "quote": "Its platform uses a custom retrieval system to connect AI-generated responses with relevant tax authorities",
-              "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-              "quote_hash": "7fb5c0764b4583ce18b98059596c5440fac97fe1b1eee6a0eec004501ddab698"
-            },
-            {
-              "source_id": "FISRC-f6d5240c737cf2ca",
-              "quote": "The platform supports workflows across Microsoft Word, Excel, PowerPoint and Outlook",
-              "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-              "quote_hash": "6aebf44e816f0976a2dde503129c8d10aed39fbdbae140b8fa78614729fe41fe"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [],
-      "comparisons": [
-        {
-          "name": "mika",
-          "product": "AI-native accounting and tax platform",
-          "scenario": "会计与税务工作",
-          "target_customer": "",
-          "funding_summary": "€6 million",
-          "core_difference": "Tallia本轮融资€4 million，mika融资€6 million；来源未披露mika的产品功能细节，无法进一步逐项比较。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6d5240c737cf2ca",
-              "quote": "Germany’s mika raised €6 million to develop its AI-native accounting and tax platform",
-              "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-              "quote_hash": "406cd5842d3bda46b6eefb2458b87122052bf7df88dba0943572df7e587a89f9"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Dytto",
-          "product": "AI assistant supporting accounting firms",
-          "scenario": "支持会计事务所的AI助手",
-          "target_customer": "会计事务所",
-          "funding_summary": "€1.5 million",
-          "core_difference": "Tallia本轮融资€4 million，Dytto融资€1.5 million；来源未披露Dytto的功能细节，无法进一步逐项比较。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6d5240c737cf2ca",
-              "quote": "Belgium’s Dytto secured €1.5 million for an AI assistant supporting accounting firms",
-              "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-              "quote_hash": "a27018279fdce76fff44e8fc1855f3d88aff0e6f0d2a7089dc237fbaf13e87d5"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "A-Cube",
-          "product": "digital tax compliance",
-          "scenario": "数字税务合规",
-          "target_customer": "",
-          "funding_summary": "€4 million",
-          "core_difference": "Tallia与A-Cube本轮融资均为€4 million；来源未披露A-Cube的产品功能细节，无法进一步逐项比较。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6d5240c737cf2ca",
-              "quote": "Italy’s A-Cube attracted €4 million for digital tax compliance",
-              "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-              "quote_hash": "1826870c946e55e7d59434a329913c6d6829d82ac7d8cf4983d34e50c179b091"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Zalos",
-          "product": "AI-driven enterprise finance automation",
-          "scenario": "企业财务自动化",
-          "target_customer": "企业",
-          "funding_summary": "€3.1 million",
-          "core_difference": "Tallia本轮融资€4 million，Zalos融资€3.1 million；来源未披露Zalos的功能细节，无法进一步逐项比较。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6d5240c737cf2ca",
-              "quote": "UK-based Zalos raised €3.1 million for AI-driven enterprise finance automation",
-              "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-              "quote_hash": "aafa814fd1cd0d909a5e0e4cd001722948682f1b6eb0c510edb0797636563f91"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "metrics": [
-        {
-          "label": "本轮融资金额",
-          "value": "€4 million ($4.5 million)",
-          "observed_at": "2026-11-03",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6d5240c737cf2ca",
-              "quote": "has secured €4 million ($4.5 million) in Seed funding",
-              "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-              "quote_hash": "8f58fe977a2b2b849a4b195c7b04059ee9c85ffaa1c2deae0118b169e9b17369"
-            }
-          ]
-        },
-        {
-          "label": "生成完整引用的初稿平均耗时",
-          "value": "30秒",
-          "observed_at": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6d5240c737cf2ca",
-              "quote": "its system can produce a fully cited first draft in an average of 30 seconds",
-              "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-              "quote_hash": "fadb8bc9e935bffcfe9d18fa4d4bd2cc3263f8087ebf55e610e29fee2ed00429"
-            }
-          ]
-        },
-        {
-          "label": "使用平台团队每位计费人员每周平均节省时间",
-          "value": "5小时",
-          "observed_at": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6d5240c737cf2ca",
-              "quote": "teams using the platform save an average of five hours per fee earner each week",
-              "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-              "quote_hash": "0021998cb33d1eefbbda18db9c36ff011b6110968e2570c3e174e88cea7e4dc1"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "Outward VC",
-          "quote": "We are delighted to support co-founders Jack Mander and Alex Bartlam, building trusted AI systems for ambitious tax teams",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6d5240c737cf2ca",
-              "quote": "“We are delighted to support co-founders Jack Mander and Alex Bartlam, building trusted AI systems for ambitious tax teams,” said Outward VC in a public statement.",
-              "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-              "quote_hash": "770e1d18b39dc4d78ea01d6738e1aff4d7ce65bc0475b2cd6e3d4bc7750d8872"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [
-          {
-            "institution": "Outward VC",
-            "speaker": "Outward VC",
-            "speaker_role": "投资机构",
-            "rationale": "Outward VC公开表示支持两位联合创始人，并认可其为有抱负的税务团队构建可信AI系统。",
-            "quote": "We are delighted to support co-founders Jack Mander and Alex Bartlam, building trusted AI systems for ambitious tax teams",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "“We are delighted to support co-founders Jack Mander and Alex Bartlam, building trusted AI systems for ambitious tax teams,” said Outward VC in a public statement.",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "770e1d18b39dc4d78ea01d6738e1aff4d7ce65bc0475b2cd6e3d4bc7750d8872"
-              }
-            ]
-          }
-        ],
-        "capital_judgment": "本轮资本押注的核心变量是：税务专业场景中生成式AI能否在保证准确性、可追溯性和专业判断的前提下加速研究与起草。已验证信号包括：平台采用定制检索系统将回答关联税务权威资料，支持结构化审查工作流，并可在Microsoft Word、Excel、PowerPoint和Outlook中工作；公司称可平均30秒生成完整引用的初稿、每位计费人员每周平均节省5小时。证据边界：这些效率数字来自公司自述，未经独立验证；来源未披露收入、客户数量或留存数据，也未披露累计融资额。",
-        "validated_signals": [
-          "平台采用定制检索系统将AI生成回答与相关税务权威资料关联",
-          "平台支持结构化审查工作流，供高级专业人员核查AI生成工作的推理与证据",
-          "平台支持Microsoft Word、Excel、PowerPoint和Outlook工作流",
-          "本轮由Outward VC和ICAEW联合领投，Portfolio Ventures、Expedite Capital等参投"
-        ],
-        "risks": [
-          "30秒生成初稿和每位计费人员每周节省5小时均为公司自述，尚待独立验证",
-          "来源未披露客户数量、收入或留存数据，商业化进展无法量化",
-          "税务AI对准确性、可追溯性和专业判断要求高，产品效果依赖检索与审查流程的实际表现",
-          "来源未披露累计融资额，无法判断公司整体资金储备"
-        ],
-        "sector": "金融与保险",
-        "investment_thesis": {
-          "statement": "本轮资本押注的核心变量是：税务专业场景中生成式AI能否在保证准确性、可追溯性和专业判断的前提下加速研究与起草。已验证信号包括：平台采用定制检索系统将回答关联税务权威资料，支持结构化审查工作流，并可在Microsoft Word、Excel、PowerPoint和Outlook中工作；公司称可平均30秒生成完整引用的初稿、每位计费人员每周平均节省5小时。证据边界：这些效率数字来自公司自述，未经独立验证；来源未披露收入、客户数量或留存数据，也未披露累计融资额。",
-          "evidence_signals": [
-            "平台采用定制检索系统将AI生成回答与相关税务权威资料关联",
-            "平台支持结构化审查工作流，供高级专业人员核查AI生成工作的推理与证据",
-            "平台支持Microsoft Word、Excel、PowerPoint和Outlook工作流",
-            "本轮由Outward VC和ICAEW联合领投，Portfolio Ventures、Expedite Capital等参投"
-          ],
-          "risks": [
-            "30秒生成初稿和每位计费人员每周节省5小时均为公司自述，尚待独立验证",
-            "来源未披露客户数量、收入或留存数据，商业化进展无法量化",
-            "税务AI对准确性、可追溯性和专业判断要求高，产品效果依赖检索与审查流程的实际表现",
-            "来源未披露累计融资额，无法判断公司整体资金储备"
-          ],
-          "institutional_rationale_status": "disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Tallia AI研究与起草平台",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Jack Mander",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Alexander Bartlam",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Outward VC",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Institute of Chartered Accountants in England and Wales (ICAEW)",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Portfolio Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Expedite Capital",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Paul Forster",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Angus Miln",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "mika",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Dytto",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "A-Cube",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Zalos",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [
-        {
-          "event_id": "EV-8e1b620139e11518",
-          "date": "2026-11-03",
-          "title": "Tallia 融资 400 万欧元，为税务公司带来 AI 驱动的研究与审查",
-          "amount": "€4 million",
-          "source_refs": [
-            "SA-767478bec1fd9bf1"
-          ]
-        }
-      ],
-      "research_sources": [
-        {
-          "source_id": "FISRC-f6d5240c737cf2ca",
-          "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-          "title": "Tallia 融资 400 万欧元，为税务公司带来 AI 驱动的研究与审查",
-          "publisher": "www.eu-startups.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-11-08T00:18:39.082Z",
-          "content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-          "source_artifact_id": "SA-767478bec1fd9bf1",
-          "raw_id": "RAW-b76779e6036ed378",
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-2bc9c4d29695a94c",
-          "source_url": "https://www.thesaasnews.com/news/tallia-raises-4m-seed/",
-          "title": "Tallia Raises €4M Seed",
-          "publisher": "thesaasnews.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-08T00:51:12.619Z",
-          "content_hash": "ab3ee1cd9e096351",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "current_round"
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-flash",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-11-08T00:51:38.349Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-11-08T00:51:38.349Z",
-      "customer_research": {
-        "status": "no_verified_customer_found",
-        "verified_customer_count": 0,
-        "searched_source_count": 2
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "Tallia AI研究与起草平台"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 2,
-          "unresolved_names": [
-            "Alexander Bartlam",
-            "Jack Mander"
-          ]
-        }
-      },
-      "source_event_ids": [
-        "EV-8e1b620139e11518"
-      ],
-      "aggregation": {
-        "key": "EN-0ffd07d1f26c6cd8|seed|EUR:exact:4000000:::|2026-11-03",
-        "event_count": 1,
-        "strategy": "reviewed_funding_subject",
-        "subject_id": "EN-0ffd07d1f26c6cd8",
-        "source_card_count": 1
-      },
-      "historical_rounds": [
-        {
-          "funding_insight_id": "FI-bd27258cf2762d79",
-          "event_ids": [
-            "EV-8e1b620139e11518"
-          ],
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "Seed",
-          "amount_original": "€4 million",
-          "amount_normalized": {
-            "currency": "EUR",
-            "value": 4000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "400 万欧元"
-          },
-          "announced_at": "2026-11-03",
-          "disclosure_status": "disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": true,
-          "investors": [
-            {
-              "name": "Outward VC",
-              "role": "本轮联合领投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-f6d5240c737cf2ca",
-                  "quote": "The round was co-led by Outward VC and the Institute of Chartered Accountants in England and Wales (ICAEW)",
-                  "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                  "quote_hash": "e0663fb706b4b940aa93e2c8bbc9c3995d0a058df4a24360eede8b4673b2b0c7"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-41eb553354ff9b"
-            },
-            {
-              "name": "Institute of Chartered Accountants in England and Wales (ICAEW)",
-              "role": "本轮联合领投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-f6d5240c737cf2ca",
-                  "quote": "The round was co-led by Outward VC and the Institute of Chartered Accountants in England and Wales (ICAEW)",
-                  "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                  "quote_hash": "e0663fb706b4b940aa93e2c8bbc9c3995d0a058df4a24360eede8b4673b2b0c7"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-881170bd7f2ddb"
-            },
-            {
-              "name": "Portfolio Ventures",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-f6d5240c737cf2ca",
-                  "quote": "with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors",
-                  "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                  "quote_hash": "c9396c157c4342fe6236b958849617467d16587fd9de8a414b456d5b2a2112c0"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-a131dfbbd00524"
-            },
-            {
-              "name": "Expedite Capital",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-f6d5240c737cf2ca",
-                  "quote": "with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors",
-                  "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                  "quote_hash": "c9396c157c4342fe6236b958849617467d16587fd9de8a414b456d5b2a2112c0"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-577debc8bdbb14"
-            },
-            {
-              "name": "Paul Forster",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-f6d5240c737cf2ca",
-                  "quote": "with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors",
-                  "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                  "quote_hash": "c9396c157c4342fe6236b958849617467d16587fd9de8a414b456d5b2a2112c0"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-59f9e71e3b3c4f"
-            },
-            {
-              "name": "Angus Miln",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-f6d5240c737cf2ca",
-                  "quote": "with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors",
-                  "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                  "quote_hash": "c9396c157c4342fe6236b958849617467d16587fd9de8a414b456d5b2a2112c0"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-5be028befcc514"
-            }
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6d5240c737cf2ca",
-              "quote": "HomeFundingTallia raises €4 million to bring AI-powered research and review to tax...",
-              "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-              "quote_hash": "eaf71a9fc16984df47b23ffccd7a7ee3acd2e098e92b06dbf12fe6e989023747"
-            },
-            {
-              "source_id": "FISRC-f6d5240c737cf2ca",
-              "quote": "has secured €4 million ($4.5 million) in Seed funding",
-              "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-              "quote_hash": "8f58fe977a2b2b849a4b195c7b04059ee9c85ffaa1c2deae0118b169e9b17369"
-            },
-            {
-              "source_id": "FISRC-2bc9c4d29695a94c",
-              "quote": "Raised: €4M",
-              "source_content_hash": "ab3ee1cd9e096351",
-              "quote_hash": "1c204fabf34437493a6de3123a2f5df2f6412e4aec483920878c002949c8e231"
-            }
-          ]
-        }
-      ],
-      "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
-        "source_registry_ids": []
-      },
-      "product_form": {
-        "id": "enterprise-software",
-        "name": "企业软件",
-        "dimension": "financing_product_form"
-      },
-      "market_category": {
-        "id": "industry",
-        "name": "行业 AI",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "financial-services",
-        "name": "金融与保险",
-        "dimension": "financing_subsector"
-      },
-      "market_application": null,
-      "links": {
-        "company": "",
-        "relation_map": "",
-        "funding_event": "data-center.html?view=events&detail=event&id=EV-8e1b620139e11518"
-      },
-      "translations": {
-        "zh-CN": {
-          "company.headquarters": {
-            "text": "英国伦敦",
-            "source_hash": "1c743d3d6222589557015d0cc6b1f4b5e47ad3d2bbcd4d9f4d2dcef83648aea5",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-08-14T07:17:44.313Z",
-            "status": "translated"
-          },
-          "products[0].features[3]": {
-            "text": "支持Microsoft Word、Excel、PowerPoint和Outlook工作流",
-            "source_hash": "266d6b9ac68b9ac99fc46ac64ce3f282c7e4275636413b145584b8114b7eb08e",
-            "provider": "deepseek",
-            "model": "deepseek-flash",
-            "translated_at": "2026-11-05T00:53:53.566Z",
-            "status": "translated"
-          }
-        }
-      },
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "industry",
-          "name": "行业 AI"
-        },
-        "subsector": {
-          "id": "financial-services",
-          "name": "金融与保险"
-        },
-        "product_form": {
-          "id": "enterprise-software",
-          "name": "企业软件"
-        },
-        "customers": [
-          {
-            "id": "business",
-            "name": "企业"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-f6d5240c737cf2ca",
-            "quote": "Its platform uses a custom retrieval system to connect AI-generated responses with relevant tax authorities"
-          },
-          {
-            "source_id": "FISRC-f6d5240c737cf2ca",
-            "quote": "The platform supports workflows across Microsoft Word, Excel, PowerPoint and Outlook"
-          }
-        ],
-        "rationale": "面向税务专业工作流的AI检索与起草平台，属金融税务行业软件。"
-      },
-      "source_card_ids": [
+        "FI-ac5b3adb35c391fc",
         "FI-bd27258cf2762d79"
       ]
     },
@@ -543894,6 +541915,1534 @@
     },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-b76fffbf5d0d91bd",
+      "triggered_by_event_id": "EV-d4e44892226be468",
+      "as_of_date": "2026-06-30",
+      "company": {
+        "entity_id": "EN-7d3194f79e645c42",
+        "name": "OpenAI",
+        "full_name": "OpenAI",
+        "website": "",
+        "summary": "OpenAI是一家全球领先的人工智能研究与应用公司，旗下核心产品ChatGPT拥有超过9亿周活跃用户，月收入达20亿美元。公司正从模型层向基础设施、消费级应用和企业级平台全栈扩张，构建统一的AI超级应用。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Sam Altman",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "The company that started as a scrappy nonprofit in 2015",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "d11575bca5cc185890401753116b2f95758ba00f69f4e3880804b854058d8c43"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Elon Musk",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "Elon Musk - an OpenAI co-founder who left the board in 2018",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "f2c56f50b40380aa52aa23e44a3b93ba248dad42d34a95e2d2bfd184fe78bd05"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "约4,500人，正积极招聘至8,000人",
+          "observed_at": "2026-04-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e38cca1b8c07fccd",
+              "quote": "OpenAI employs approximately 4,500 people currently and is hiring aggressively toward 8,000.",
+              "source_content_hash": "e6bee4377f522396",
+              "quote_hash": "4e679e79504f28ff443e7082f79a034ca6ef4f635cfb659ef71fe08fa6b98ffd"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1e2b3bad243bd066",
+            "quote": "OpenAI just closed a $122 billion funding round at an $852 billion valuation.",
+            "source_content_hash": "494969b64dc816f3",
+            "quote_hash": "a261bfcea586e272d5a5e36e574dd948e5a0fdba5865c4dab6f7b660291422b6"
+          },
+          {
+            "source_id": "FISRC-b86e0fbe62dfd3dc",
+            "quote": "ChatGPT now surpasses 900 million weekly active users, generating $2 billion in monthly revenue as of 2025.",
+            "source_content_hash": "4e51c91e5fc7160c",
+            "quote_hash": "335bcfeb5b2e1c70c4e1d1fee2b9f99beb501b590ea2acbc58e1233fc253295e"
+          },
+          {
+            "source_id": "FISRC-b4ba4f68908fa080",
+            "quote": "英伟达：负责底层算力供给，围绕 GPU 及新一代加速器，为OpenAI提供持续、可扩展的训练与推理能力；\n亚马逊：提供云基础设施与全球部署能力，支持OpenAI在多区域、多行业场景中的模型交付与商业化落地；",
+            "source_content_hash": "f5fc1f7eecf1f9e6",
+            "quote_hash": "1261bc0eeaa287988e7732f32ad7768b8b8a183ada60bcb060ecd35105618c8c"
+          }
+        ],
+        "application_entity_id": "EN-7d3194f79e645c42",
+        "canonical_entity_consistent": true
+      },
+      "financing": {
+        "round": "F轮",
+        "amount": "$1220亿",
+        "total_raised": "超过$1900亿",
+        "announced_at": "2026-03-31",
+        "investors": [
+          {
+            "name": "Amazon",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b86e0fbe62dfd3dc",
+                "quote": "The funding round was anchored by Amazon, NVIDIA, SoftBank, and Microsoft.",
+                "source_content_hash": "4e51c91e5fc7160c",
+                "quote_hash": "7c6f47d89b7c9809561c9ea57516ce95ce2adcdcf24a1ce406d190ac388ce680"
+              }
+            ],
+            "entity_id": "EN-cbc62794911ff31b",
+            "institution_id": "INV-e42edec994aa9c"
+          },
+          {
+            "name": "Nvidia",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "Nvidia ($30 billion)",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "16e389a54221d6db4d9015cc5bf31ea68b4d8505958c7f03d81a147fb6406b7f"
+              },
+              {
+                "source_id": "FISRC-b86e0fbe62dfd3dc",
+                "quote": "The funding round was anchored by Amazon, NVIDIA, SoftBank, and Microsoft.",
+                "source_content_hash": "4e51c91e5fc7160c",
+                "quote_hash": "7c6f47d89b7c9809561c9ea57516ce95ce2adcdcf24a1ce406d190ac388ce680"
+              }
+            ],
+            "entity_id": "EN-8d4321d936320802",
+            "institution_id": "INV-c73d9854fb920b"
+          },
+          {
+            "name": "SoftBank",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "SoftBank ($30 billion)",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "0e0614f834ae6ffe9eed742267af7afecb0253156dbe578b98c351a6bc94b202"
+              },
+              {
+                "source_id": "FISRC-b86e0fbe62dfd3dc",
+                "quote": "SoftBank co-led alongside a16z, D. E. Shaw Ventures, MGX, TPG, and T. Rowe Price Associates.",
+                "source_content_hash": "4e51c91e5fc7160c",
+                "quote_hash": "eb1a353f262c6b5f36cf042c55381d3642167f0b24ec4185728cb1f48dbe89f2"
+              }
+            ],
+            "entity_id": "EN-80d387ccb3289295",
+            "institution_id": "INV-b3dd2d4428d2f2"
+          },
+          {
+            "name": "Microsoft",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "with continued participation from longtime backer Microsoft.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "16f52e5c38a620a58015f9f93fa4100020dd6bca3b5dbeb8386c03a059deedeb"
+              }
+            ],
+            "entity_id": "EN-9fbf261b62c1d7c0",
+            "institution_id": "INV-d30fb8e9fd4a4f"
+          },
+          {
+            "name": "Andreessen Horowitz (a16z)",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "Co-leads included Andreessen Horowitz (a16z)",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "5720c1d3a3f101ef50c68b7a3713255fbb89e9a0332c1c20783887ee5eab145a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b8a0e793124952"
+          },
+          {
+            "name": "BlackRock",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-a83f8b9c272b41"
+          },
+          {
+            "name": "Blackstone",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-1493e20e99083e"
+          },
+          {
+            "name": "Sequoia Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-862e0e7d2ba5cf"
+          },
+          {
+            "name": "Fidelity",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-bf8f493cd18aeb"
+          },
+          {
+            "name": "ARK Invest",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-1caf7c5cbe9bd4"
+          },
+          {
+            "name": "Temasek",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-91885d8d9e5635"
+          },
+          {
+            "name": "Coatue",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-0d309b859ee1fe"
+          },
+          {
+            "name": "Thrive Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-5f293d18e41f5e"
+          },
+          {
+            "name": "UC Investments",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-debf9c59480d10"
+          },
+          {
+            "name": "Altimeter",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b86e0fbe62dfd3dc",
+                "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
+                "source_content_hash": "4e51c91e5fc7160c",
+                "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-ff9d9c2e0d221a"
+          },
+          {
+            "name": "Dragoneer",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b86e0fbe62dfd3dc",
+                "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
+                "source_content_hash": "4e51c91e5fc7160c",
+                "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-bde7dbb822eb89"
+          },
+          {
+            "name": "Insight Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b86e0fbe62dfd3dc",
+                "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
+                "source_content_hash": "4e51c91e5fc7160c",
+                "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-7626f5b02a6cc8"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1e2b3bad243bd066",
+            "quote": "OpenAI just closed a $122 billion funding round at an $852 billion valuation.",
+            "source_content_hash": "494969b64dc816f3",
+            "quote_hash": "a261bfcea586e272d5a5e36e574dd948e5a0fdba5865c4dab6f7b660291422b6"
+          },
+          {
+            "source_id": "FISRC-b86e0fbe62dfd3dc",
+            "quote": "OpenAI has closed a landmark funding round with $122 billion in committed capital, pushing its post-money valuation to $852 billion.",
+            "source_content_hash": "4e51c91e5fc7160c",
+            "quote_hash": "9dec8e57dda11bd4325510579c0716800b8b2092a80429549ad1587cfdcef558"
+          },
+          {
+            "source_id": "FISRC-b4ba4f68908fa080",
+            "quote": "2月27日晚，OpenAI宣布获得新融资1100亿美元，其中300亿美元来自软银，300亿美元来自英伟达，500亿美元来自亚马逊，投前估值7300亿美元。",
+            "source_content_hash": "f5fc1f7eecf1f9e6",
+            "quote_hash": "3191acf0afc26908db93e519ec76d9686786d5b64d289d448a7132a22c54c00a"
+          },
+          {
+            "source_id": "FISRC-b839ede28a40d17e",
+            "quote": "Today we’re announcing $110B in new investment at a $730B pre-money valuation. This includes $30B from SoftBank, $30B from NVIDIA, and $50B from Amazon.",
+            "source_content_hash": "a233281bc9f8e1cd",
+            "quote_hash": "5fefaf5be8452912bc394b60a681fb07760c716d74f5a5d2fa6e1625f4485f33"
+          }
+        ],
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "other_round_investors": [
+          {
+            "name": "Thrive Capital",
+            "role": "既有投资方（2024年10月Series E领投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "OCT 2024 SERIES E $6.6B led by Thrive Capital at a $157 billion valuation",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "578e151de3a113a8d51ec5bf7890be441369cb7f152e6ef1c5313bbf624d5d92"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_e",
+              "label": "E轮",
+              "original": "既有投资方（2024年10月Series E领投）"
+            },
+            "classification_reason": "historical_role",
+            "institution_id": "INV-5f293d18e41f5e"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-d4e44892226be468",
+            "round_original": "Series F",
+            "amount": "$1220亿",
+            "announced_at": "2026-03-31",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "OpenAI just closed a $122 billion funding round at an $852 billion valuation.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "a261bfcea586e272d5a5e36e574dd948e5a0fdba5865c4dab6f7b660291422b6"
+              },
+              {
+                "source_id": "FISRC-b86e0fbe62dfd3dc",
+                "quote": "OpenAI has closed a landmark funding round with $122 billion in committed capital, pushing its post-money valuation to $852 billion.",
+                "source_content_hash": "4e51c91e5fc7160c",
+                "quote_hash": "9dec8e57dda11bd4325510579c0716800b8b2092a80429549ad1587cfdcef558"
+              }
+            ]
+          },
+          {
+            "event_id": "EV-68d5a02e5213b43c",
+            "round_original": "基础设施融资",
+            "amount": "1100亿美元",
+            "announced_at": "2026-02-28",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b4ba4f68908fa080",
+                "quote": "2月27日晚，OpenAI宣布获得新融资1100亿美元，其中300亿美元来自软银，300亿美元来自英伟达，500亿美元来自亚马逊，投前估值7300亿美元。",
+                "source_content_hash": "f5fc1f7eecf1f9e6",
+                "quote_hash": "3191acf0afc26908db93e519ec76d9686786d5b64d289d448a7132a22c54c00a"
+              },
+              {
+                "source_id": "FISRC-b839ede28a40d17e",
+                "quote": "Today we’re announcing $110B in new investment at a $730B pre-money valuation. This includes $30B from SoftBank, $30B from NVIDIA, and $50B from Amazon.",
+                "source_content_hash": "a233281bc9f8e1cd",
+                "quote_hash": "5fefaf5be8452912bc394b60a681fb07760c716d74f5a5d2fa6e1625f4485f33"
+              }
+            ]
+          }
+        ],
+        "investor_disclosure_status": "disclosed",
+        "risk_markers": [],
+        "amount_original": "$1220亿",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 122000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1220 亿美元"
+        },
+        "total_raised_original": "超过$1900亿",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 190000000000,
+          "min_value": 190000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1900 亿美元"
+        },
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "超过$1900亿",
+          "normalized": {
+            "currency": "USD",
+            "value": 190000000000,
+            "min_value": 190000000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 1900 亿美元"
+          },
+          "basis": "source_disclosed",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 122000000000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "1220 亿美元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-1e2b3bad243bd066",
+          "FISRC-b86e0fbe62dfd3dc",
+          "FISRC-b4ba4f68908fa080",
+          "FISRC-b839ede28a40d17e"
+        ]
+      },
+      "products": [
+        {
+          "name": "ChatGPT",
+          "description": "OpenAI的AI助手，可用于代理式购物，用户可在ChatGPT内浏览、比较和购买商品。",
+          "target_customers": "消费者",
+          "features": [
+            "代理式购物"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2d81715dfb797c30",
+              "quote": "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT.",
+              "source_content_hash": "9dac971a31e00815",
+              "quote_hash": "8e2bc731ba9d88c83c57a7ea918a0ffb64ab9861995298b9448a6e52684e39ed"
+            }
+          ],
+          "entity_id": "EN-d1ad14d4ad57d207"
+        },
+        {
+          "name": "Codex",
+          "description": "OpenAI的编程工具Codex，可作为Claude Code的插件使用。",
+          "target_customers": "开发者",
+          "features": [
+            "Claude Code插件集成"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2d81715dfb797c30",
+              "quote": "Codex now ships as a plugin inside Claude Code, Anthropic's coding agent.",
+              "source_content_hash": "9dac971a31e00815",
+              "quote_hash": "77c1e6f52a5fcdd730c1c2e2c48eb55e4ea093403d5078af2150851508b5cddd"
+            }
+          ],
+          "entity_id": "EN-1ecf93c539fcffca"
+        }
+      ],
+      "customers": [
+        {
+          "name": "Walmart",
+          "industry": "零售/电商",
+          "use_case": "在ChatGPT内部实现代理式购物，用户可浏览、比较和购买商品。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2d81715dfb797c30",
+              "quote": "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT.",
+              "source_content_hash": "9dac971a31e00815",
+              "quote_hash": "8e2bc731ba9d88c83c57a7ea918a0ffb64ab9861995298b9448a6e52684e39ed"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Snowflake",
+          "industry": "数据云/企业软件",
+          "use_case": "签署2亿美元多年合作协议，将OpenAI模型直接部署在企业数据仓库内部。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2d81715dfb797c30",
+              "quote": "Snowflake signed a $200 million multi-year partnership putting OpenAI's models directly inside enterprise data warehouses.",
+              "source_content_hash": "9dac971a31e00815",
+              "quote_hash": "56c90ad4767370a21ad1ee8094a8f3738998b609eb793f3adfc380110b9214e6"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Accenture",
+          "industry": "IT咨询与服务",
+          "use_case": "负责OpenAI的企业级实施和交付。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2d81715dfb797c30",
+              "quote": "Accenture is handling enterprise implementation and delivery.",
+              "source_content_hash": "9dac971a31e00815",
+              "quote_hash": "38ff7764bc5d867593819b2b24b406e6fd2e3a28daa5739451b84434ecb25124"
+            }
+          ],
+          "entity_id": "EN-4d748ebd71af03a7"
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Anthropic",
+          "product": "Claude, Claude Code",
+          "scenario": "企业级AI模型与开发者编程助手",
+          "target_customer": "企业客户、开发者",
+          "funding_summary": "2026年完成$300亿Series G轮融资",
+          "core_difference": "Anthropic专注于模型和开发者工具的深度整合，而OpenAI正在构建覆盖媒体、消费、企业、开发者和基础设施的全栈超级应用。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-81ee7e9a986be8b0",
+              "quote": "Anthropic raised a $30b Series G",
+              "source_content_hash": "f14710d7c7fa3bb3",
+              "quote_hash": "6ea029152c1176d794e2c847f7cbe8050922387ebaf9fed2dd6684171af8775b"
+            }
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
+        },
+        {
+          "name": "Google (Gemini)",
+          "product": "Gemini",
+          "scenario": "通用AI模型与云服务",
+          "target_customer": "消费者、企业客户",
+          "funding_summary": "",
+          "core_difference": "Google将Gemini整合进现有的大型企业集团中，而OpenAI作为AI原生公司，正从零开始构建跨领域的统一平台。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2d81715dfb797c30",
+              "quote": "Google is retrofitting Gemini into an existing conglomerate.",
+              "source_content_hash": "9dac971a31e00815",
+              "quote_hash": "a2fafbe83632148c5cc9f9eab201760bb8ab798dce63236a90a8e7982ce3d08a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "xAI",
+          "product": "Grok",
+          "scenario": "AI模型与社交媒体整合",
+          "target_customer": "X平台用户",
+          "funding_summary": "",
+          "core_difference": "xAI的AI分发主要依赖X这一个平台，而OpenAI正在构建自己的媒体、消费和企业分发渠道。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2d81715dfb797c30",
+              "quote": "xAI has one distribution surface, which is X.",
+              "source_content_hash": "9dac971a31e00815",
+              "quote_hash": "3d13ff918ffb8ce8b37597a0e7f2b07cdcf0da55ace2d5b47d7966093002a7b3"
+            }
+          ],
+          "entity_id": "EN-6fcba5d96a4fadfd"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "周活跃用户",
+          "value": "9亿",
+          "observed_at": "2026-03-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e2b3bad243bd066",
+              "quote": "900M Weekly ChatGPT Users",
+              "source_content_hash": "494969b64dc816f3",
+              "quote_hash": "3d51475f9e1d1047e531cad95f596fa1bbd59cf9d79424acf2b7d1f48bab3e13"
+            }
+          ]
+        },
+        {
+          "label": "付费订阅用户",
+          "value": "超过5000万",
+          "observed_at": "2026-03-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b86e0fbe62dfd3dc",
+              "quote": "ChatGPT now serves more than 900 million weekly active users and over 50 million subscribers.",
+              "source_content_hash": "4e51c91e5fc7160c",
+              "quote_hash": "0a7e0d44042f34fdc7a2fbc9d5d975bf946e15351132355973f29e9f2612e6df"
+            }
+          ]
+        },
+        {
+          "label": "企业收入占比",
+          "value": "超过40%",
+          "observed_at": "2026-03-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b86e0fbe62dfd3dc",
+              "quote": "Enterprise revenue now accounts for more than 40% of total revenue.",
+              "source_content_hash": "4e51c91e5fc7160c",
+              "quote_hash": "429397c481ddfb2a24d0dbd0adbda364077d1057a23421211cae23bf6c395850"
+            }
+          ]
+        },
+        {
+          "label": "API每分钟处理Token数",
+          "value": "超过150亿",
+          "observed_at": "2026-03-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b86e0fbe62dfd3dc",
+              "quote": "Its APIs currently process more than 15 billion tokens per minute.",
+              "source_content_hash": "4e51c91e5fc7160c",
+              "quote_hash": "b0c2c934a0b75ea7e29e5e4182679c5747c6eafb67e213f53993efc154863a1d"
+            }
+          ]
+        },
+        {
+          "label": "2025年全年收入",
+          "value": "$131亿",
+          "observed_at": "2025-12-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e38cca1b8c07fccd",
+              "quote": "2025 (full year) $13.1 billion",
+              "source_content_hash": "e6bee4377f522396",
+              "quote_hash": "b52279f4ace996e8d222c12c577e0f7b4b6bf60e45068661f6a42780f2d0972f"
+            }
+          ]
+        },
+        {
+          "label": "未来四年计划支出",
+          "value": "$1150亿",
+          "observed_at": "2026-03-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e38cca1b8c07fccd",
+              "quote": "OpenAI announced it expects to spend $115 billion over the next four years.",
+              "source_content_hash": "e6bee4377f522396",
+              "quote_hash": "5d9f2c13ea27ce7c881a8f0b68478cd901ed5d38edec06d04dc95d7666a5fb57"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "OpenAI官方声明",
+          "quote": "Moments like this do not come often. Capital markets helped build electricity, highways, the internet. This is that kind of moment again.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e2b3bad243bd066",
+              "quote": "Moments like this do not come often. Capital markets helped build electricity, highways, the internet. This is that kind of moment again.",
+              "source_content_hash": "494969b64dc816f3",
+              "quote_hash": "f16069ca7bf39cbc681ffacfbc5409c2b4e41f4ffbeba199157292a85079da3a"
+            }
+          ]
+        },
+        {
+          "speaker": "Socheat Chhay, Managing Director of Sopra Steria Ventures",
+          "quote": "Every founder now sprinkles AI as a powder over their company to enter into AI investment thesis and gain valuation premium.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-81ee7e9a986be8b0",
+              "quote": "Every founder now sprinkles AI as a powder over their company to enter into AI investment thesis and gain valuation premium",
+              "source_content_hash": "f14710d7c7fa3bb3",
+              "quote_hash": "970e25d708ae87851b47d7ae83def8482fed2d6f4274896818bfd0cf4bed4857"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是OpenAI能否在AI基础设施层建立“赢家通吃”的垄断地位。本轮$8520亿估值基于约35倍的远期市销率，这一定价隐含了OpenAI将主导通用AI智能体工作流的预期。已验证的信号包括：收入年化增长率达336%、企业收入占比超40%且正快速追赶消费者收入、以及Codex等产品周活用户5倍增长所展现的平台粘性。然而，这一判断的证据边界在于，公司目前仍严重亏损，且其超级应用战略能否成功整合碎片化的产品线并抵御Anthropic等对手的深度竞争尚未得到验证。",
+        "validated_signals": [
+          "收入从2024年的$37亿飙升至2025年的$131亿，年增长率达254%。",
+          "ChatGPT周活跃用户达9亿，付费用户超5000万，形成强大的用户基础。",
+          "企业收入占比超40%，并有望在2026年底与消费者收入持平，证明了B端市场的付费意愿。",
+          "Codex周活跃用户3个月内增长5倍，月环比增长超70%，显示了在开发者生态中的强劲渗透力。"
+        ],
+        "risks": [
+          "尽管收入增长迅猛，但公司仍处于严重亏损状态，年化现金消耗高达$150亿以上，且预计2028年前无法实现现金流为正。",
+          "高达$8520亿的估值对应约35倍的远期市销率，远高于微软、谷歌等成熟科技巨头，存在估值泡沫风险，其定价基于“尚未存在的垄断结果”。"
+        ],
+        "sector": "通用与多模态模型",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是OpenAI能否在AI基础设施层建立“赢家通吃”的垄断地位。本轮$8520亿估值基于约35倍的远期市销率，这一定价隐含了OpenAI将主导通用AI智能体工作流的预期。已验证的信号包括：收入年化增长率达336%、企业收入占比超40%且正快速追赶消费者收入、以及Codex等产品周活用户5倍增长所展现的平台粘性。然而，这一判断的证据边界在于，公司目前仍严重亏损，且其超级应用战略能否成功整合碎片化的产品线并抵御Anthropic等对手的深度竞争尚未得到验证。",
+          "evidence_signals": [
+            "收入从2024年的$37亿飙升至2025年的$131亿，年增长率达254%。",
+            "ChatGPT周活跃用户达9亿，付费用户超5000万，形成强大的用户基础。",
+            "企业收入占比超40%，并有望在2026年底与消费者收入持平，证明了B端市场的付费意愿。",
+            "Codex周活跃用户3个月内增长5倍，月环比增长超70%，显示了在开发者生态中的强劲渗透力。"
+          ],
+          "risks": [
+            "尽管收入增长迅猛，但公司仍处于严重亏损状态，年化现金消耗高达$150亿以上，且预计2028年前无法实现现金流为正。",
+            "高达$8520亿的估值对应约35倍的远期市销率，远高于微软、谷歌等成熟科技巨头，存在估值泡沫风险，其定价基于“尚未存在的垄断结果”。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "ChatGPT",
+          "canonical_entity_id": "EN-d1ad14d4ad57d207",
+          "canonical_name": "ChatGPT"
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Codex",
+          "canonical_entity_id": "EN-1ecf93c539fcffca",
+          "canonical_name": "Codex"
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Sam Altman",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Elon Musk",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Amazon",
+          "canonical_entity_id": "EN-cbc62794911ff31b",
+          "canonical_name": "Amazon"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nvidia",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "SoftBank",
+          "canonical_entity_id": "EN-80d387ccb3289295",
+          "canonical_name": "SoftBank"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Microsoft",
+          "canonical_entity_id": "EN-9fbf261b62c1d7c0",
+          "canonical_name": "Microsoft"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andreessen Horowitz (a16z)",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "BlackRock",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Blackstone",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sequoia Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Fidelity",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "ARK Invest",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Temasek",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Coatue",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Thrive Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "UC Investments",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Altimeter",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Dragoneer",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Insight Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Thrive Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Walmart",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Snowflake",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Accenture",
+          "canonical_entity_id": "EN-4d748ebd71af03a7",
+          "canonical_name": "Accenture"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Anthropic",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Google (Gemini)",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "xAI",
+          "canonical_entity_id": "EN-6fcba5d96a4fadfd",
+          "canonical_name": "xAI"
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-68d5a02e5213b43c",
+          "date": "2026-02-28",
+          "title": "OpenAI最新融资1100亿美元 - 投资界",
+          "amount": "1100亿美元",
+          "source_refs": [
+            "SA-2c3a182c5a6b5011"
+          ]
+        },
+        {
+          "event_id": "EV-d4e44892226be468",
+          "date": "2026-06-30",
+          "title": "AI 时代如何融资：投资者希望看到的5件事",
+          "amount": "$122b",
+          "source_refs": [
+            "SA-126f5da1f9043771"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-81ee7e9a986be8b0",
+          "source_url": "https://technation.io/how-to-raise-funding-in-the-ai-era/",
+          "title": "AI 时代如何融资：投资者希望看到的5件事",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-30T02:26:24.727Z",
+          "content_hash": "f14710d7c7fa3bb3",
+          "source_artifact_id": "SA-126f5da1f9043771",
+          "raw_id": "RAW-4ccf1a304ba3efb4",
+          "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-1e2b3bad243bd066",
+          "source_url": "https://yespress.io/openais-122-b-megaround",
+          "title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
+          "publisher": "yespress.io",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:40:10.022Z",
+          "content_hash": "494969b64dc816f3",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-2d81715dfb797c30",
+          "source_url": "https://dev.to/monkfromearth/what-openais-122-billion-round-tells-us-about-ais-new-shape-58a7",
+          "title": "What OpenAI's $122 Billion Round Tells Us About AI's New Shape",
+          "publisher": "dev.to",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-08T04:40:28.893Z",
+          "content_hash": "9dac971a31e00815",
+          "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-b86e0fbe62dfd3dc",
+          "source_url": "https://www.mexc.com/news/996087",
+          "title": "OpenAI Closes $122B Funding Round, Hits $852B Valuation as AI Infrastructure Race Intensifies | MEXC News",
+          "publisher": "mexc.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:40:26.149Z",
+          "content_hash": "4e51c91e5fc7160c",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-e38cca1b8c07fccd",
+          "source_url": "https://kersai.com/openai-122-billion-funding-round-852-billion-valuation-super-app-2026/",
+          "title": "OpenAI Raises $122B at $852B Valuation: What It Really Means | KERSAI",
+          "publisher": "kersai.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:40:28.985Z",
+          "content_hash": "e6bee4377f522396",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-b4ba4f68908fa080",
+          "source_url": "https://news.pedaily.cn/202602/561239.shtml",
+          "title": "OpenAI最新融资1100亿美元",
+          "publisher": "news.pedaily.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-08T04:41:37.611Z",
+          "content_hash": "f5fc1f7eecf1f9e6",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-2981ebb80e2fd3f8",
+          "source_url": "https://openai.com/zh-Hans-CN/index/scaling-ai-for-everyone",
+          "title": "让AI 惠及每一个人",
+          "publisher": "openai.com",
+          "source_class": "official_candidate",
+          "capture_method": "tavily_captured_content",
+          "captured_at": "2026-09-12T07:08:44.215Z",
+          "content_hash": "3d09ca2929b7c632",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-b839ede28a40d17e",
+          "source_url": "https://openai.com/index/scaling-ai-for-everyone/",
+          "title": "Scaling AI for everyone",
+          "publisher": "openai.com",
+          "source_class": "official_candidate",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-09-12T07:08:44.193Z",
+          "content_hash": "a233281bc9f8e1cd",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-2b76a01192ab39ab",
+          "source_url": "https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report",
+          "title": "The state of enterprise AI | OpenAI",
+          "publisher": "openai.com",
+          "source_class": "official_candidate",
+          "capture_method": "tavily_captured_content",
+          "captured_at": "2026-09-12T07:08:54.241Z",
+          "content_hash": "85c1c811bc4aeb85",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:41:34.532Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-d4e44892226be468",
+          "confidence": 0.85,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:41:34.532Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 2,
+          "total": 2,
+          "unresolved_names": []
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Elon Musk",
+            "Sam Altman"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-d4e44892226be468",
+        "EV-68d5a02e5213b43c"
+      ],
+      "aggregation": {
+        "key": "EN-7d3194f79e645c42|series_f|USD:exact:122000000000:::|2026-03-31",
+        "event_count": 1,
+        "strategy": "reviewed_funding_subject",
+        "subject_id": "EN-7d3194f79e645c42",
+        "source_card_count": 2
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-b76fffbf5d0d91bd",
+          "event_ids": [
+            "EV-d4e44892226be468",
+            "EV-68d5a02e5213b43c"
+          ],
+          "round": "F轮",
+          "round_code": "series_f",
+          "round_original": "Series F",
+          "amount_original": "$1220亿",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 122000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1220 亿美元"
+          },
+          "announced_at": "2026-03-31",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true,
+          "investors": [
+            {
+              "name": "Amazon",
+              "role": "本轮领投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-b86e0fbe62dfd3dc",
+                  "quote": "The funding round was anchored by Amazon, NVIDIA, SoftBank, and Microsoft.",
+                  "source_content_hash": "4e51c91e5fc7160c",
+                  "quote_hash": "7c6f47d89b7c9809561c9ea57516ce95ce2adcdcf24a1ce406d190ac388ce680"
+                }
+              ],
+              "entity_id": "EN-cbc62794911ff31b",
+              "institution_id": "INV-e42edec994aa9c"
+            },
+            {
+              "name": "Nvidia",
+              "role": "本轮领投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-1e2b3bad243bd066",
+                  "quote": "Nvidia ($30 billion)",
+                  "source_content_hash": "494969b64dc816f3",
+                  "quote_hash": "16e389a54221d6db4d9015cc5bf31ea68b4d8505958c7f03d81a147fb6406b7f"
+                },
+                {
+                  "source_id": "FISRC-b86e0fbe62dfd3dc",
+                  "quote": "The funding round was anchored by Amazon, NVIDIA, SoftBank, and Microsoft.",
+                  "source_content_hash": "4e51c91e5fc7160c",
+                  "quote_hash": "7c6f47d89b7c9809561c9ea57516ce95ce2adcdcf24a1ce406d190ac388ce680"
+                }
+              ],
+              "entity_id": "EN-8d4321d936320802",
+              "institution_id": "INV-c73d9854fb920b"
+            },
+            {
+              "name": "SoftBank",
+              "role": "本轮联合领投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-1e2b3bad243bd066",
+                  "quote": "SoftBank ($30 billion)",
+                  "source_content_hash": "494969b64dc816f3",
+                  "quote_hash": "0e0614f834ae6ffe9eed742267af7afecb0253156dbe578b98c351a6bc94b202"
+                },
+                {
+                  "source_id": "FISRC-b86e0fbe62dfd3dc",
+                  "quote": "SoftBank co-led alongside a16z, D. E. Shaw Ventures, MGX, TPG, and T. Rowe Price Associates.",
+                  "source_content_hash": "4e51c91e5fc7160c",
+                  "quote_hash": "eb1a353f262c6b5f36cf042c55381d3642167f0b24ec4185728cb1f48dbe89f2"
+                }
+              ],
+              "entity_id": "EN-80d387ccb3289295",
+              "institution_id": "INV-b3dd2d4428d2f2"
+            },
+            {
+              "name": "Microsoft",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-1e2b3bad243bd066",
+                  "quote": "with continued participation from longtime backer Microsoft.",
+                  "source_content_hash": "494969b64dc816f3",
+                  "quote_hash": "16f52e5c38a620a58015f9f93fa4100020dd6bca3b5dbeb8386c03a059deedeb"
+                }
+              ],
+              "entity_id": "EN-9fbf261b62c1d7c0",
+              "institution_id": "INV-d30fb8e9fd4a4f"
+            },
+            {
+              "name": "Andreessen Horowitz (a16z)",
+              "role": "本轮联合领投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-1e2b3bad243bd066",
+                  "quote": "Co-leads included Andreessen Horowitz (a16z)",
+                  "source_content_hash": "494969b64dc816f3",
+                  "quote_hash": "5720c1d3a3f101ef50c68b7a3713255fbb89e9a0332c1c20783887ee5eab145a"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-b8a0e793124952"
+            },
+            {
+              "name": "BlackRock",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-1e2b3bad243bd066",
+                  "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                  "source_content_hash": "494969b64dc816f3",
+                  "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-a83f8b9c272b41"
+            },
+            {
+              "name": "Blackstone",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-1e2b3bad243bd066",
+                  "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                  "source_content_hash": "494969b64dc816f3",
+                  "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-1493e20e99083e"
+            },
+            {
+              "name": "Sequoia Capital",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-1e2b3bad243bd066",
+                  "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                  "source_content_hash": "494969b64dc816f3",
+                  "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-862e0e7d2ba5cf"
+            },
+            {
+              "name": "Fidelity",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-1e2b3bad243bd066",
+                  "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                  "source_content_hash": "494969b64dc816f3",
+                  "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-bf8f493cd18aeb"
+            },
+            {
+              "name": "ARK Invest",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-1e2b3bad243bd066",
+                  "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                  "source_content_hash": "494969b64dc816f3",
+                  "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-1caf7c5cbe9bd4"
+            },
+            {
+              "name": "Temasek",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-1e2b3bad243bd066",
+                  "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                  "source_content_hash": "494969b64dc816f3",
+                  "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-91885d8d9e5635"
+            },
+            {
+              "name": "Coatue",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-1e2b3bad243bd066",
+                  "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                  "source_content_hash": "494969b64dc816f3",
+                  "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-0d309b859ee1fe"
+            },
+            {
+              "name": "Thrive Capital",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-1e2b3bad243bd066",
+                  "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                  "source_content_hash": "494969b64dc816f3",
+                  "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-5f293d18e41f5e"
+            },
+            {
+              "name": "UC Investments",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-1e2b3bad243bd066",
+                  "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                  "source_content_hash": "494969b64dc816f3",
+                  "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-debf9c59480d10"
+            },
+            {
+              "name": "Altimeter",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-b86e0fbe62dfd3dc",
+                  "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
+                  "source_content_hash": "4e51c91e5fc7160c",
+                  "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-ff9d9c2e0d221a"
+            },
+            {
+              "name": "Dragoneer",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-b86e0fbe62dfd3dc",
+                  "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
+                  "source_content_hash": "4e51c91e5fc7160c",
+                  "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-bde7dbb822eb89"
+            },
+            {
+              "name": "Insight Partners",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-b86e0fbe62dfd3dc",
+                  "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
+                  "source_content_hash": "4e51c91e5fc7160c",
+                  "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-7626f5b02a6cc8"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e2b3bad243bd066",
+              "quote": "OpenAI just closed a $122 billion funding round at an $852 billion valuation.",
+              "source_content_hash": "494969b64dc816f3",
+              "quote_hash": "a261bfcea586e272d5a5e36e574dd948e5a0fdba5865c4dab6f7b660291422b6"
+            },
+            {
+              "source_id": "FISRC-b86e0fbe62dfd3dc",
+              "quote": "OpenAI has closed a landmark funding round with $122 billion in committed capital, pushing its post-money valuation to $852 billion.",
+              "source_content_hash": "4e51c91e5fc7160c",
+              "quote_hash": "9dec8e57dda11bd4325510579c0716800b8b2092a80429549ad1587cfdcef558"
+            },
+            {
+              "source_id": "FISRC-b4ba4f68908fa080",
+              "quote": "2月27日晚，OpenAI宣布获得新融资1100亿美元，其中300亿美元来自软银，300亿美元来自英伟达，500亿美元来自亚马逊，投前估值7300亿美元。",
+              "source_content_hash": "f5fc1f7eecf1f9e6",
+              "quote_hash": "3191acf0afc26908db93e519ec76d9686786d5b64d289d448a7132a22c54c00a"
+            },
+            {
+              "source_id": "FISRC-b839ede28a40d17e",
+              "quote": "Today we’re announcing $110B in new investment at a $730B pre-money valuation. This includes $30B from SoftBank, $30B from NVIDIA, and $50B from Amazon.",
+              "source_content_hash": "a233281bc9f8e1cd",
+              "quote_hash": "5fefaf5be8452912bc394b60a681fb07760c716d74f5a5d2fa6e1625f4485f33"
+            }
+          ]
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "id": "model-api",
+        "name": "模型与 API",
+        "dimension": "financing_product_form"
+      },
+      "market_category": {
+        "id": "models",
+        "name": "基础模型",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "general-models",
+        "name": "通用与多模态模型",
+        "dimension": "financing_subsector"
+      },
+      "market_application": null,
+      "links": {
+        "company": "data-center.html?view=index&detail=entity&id=EN-7d3194f79e645c42",
+        "relation_map": "data-center.html?view=relations&entity=EN-7d3194f79e645c42",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-d4e44892226be468"
+      },
+      "translations": {
+        "zh-CN": {
+          "products[1].description": {
+            "text": "OpenAI的编程工具Codex，可作为Claude Code的插件使用。",
+            "source_hash": "c5077769184981e7e12e93d81c69e91af9bd1a6c00e7d22a4b24eb19ca18da70",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-08T04:47:48.524Z",
+            "status": "translated"
+          },
+          "products[1].features[0]": {
+            "text": "Claude Code插件集成",
+            "source_hash": "a14834e40010b307a2402798c191e282a89548e7f981ac48e42183e704996852",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-08T04:47:48.524Z",
+            "status": "translated"
+          },
+          "metrics[3].label": {
+            "text": "API每分钟处理Token数",
+            "source_hash": "68c057fc6a15661cbe2155b33207dbad7f6360e8d809df58f5791ff6925bb57e",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-14T07:17:36.326Z",
+            "status": "translated"
+          }
+        }
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "models",
+          "name": "基础模型"
+        },
+        "subsector": {
+          "id": "general-models",
+          "name": "通用与多模态模型"
+        },
+        "product_form": {
+          "id": "model-api",
+          "name": "模型与 API"
+        },
+        "customers": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b86e0fbe62dfd3dc",
+            "quote": "ChatGPT now surpasses 900 million weekly active users, generating $2 billion in monthly revenue as of 2025."
+          },
+          {
+            "source_id": "FISRC-b4ba4f68908fa080",
+            "quote": "英伟达：负责底层算力供给，围绕 GPU 及新一代加速器，为OpenAI提供持续、可扩展的训练与推理能力；\n亚马逊：提供云基础设施与全球部署能力，支持OpenAI在多区域、多行业场景中的模型交付与商业化落地；"
+          }
+        ],
+        "rationale": "OpenAI 以 ChatGPT 等通用大模型为核心交付产品，属基础模型赛道。"
+      },
+      "source_card_ids": [
+        "FI-b76fffbf5d0d91bd",
+        "FI-72755fd9439ecca6"
+      ]
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-f7ae2a03304562e8",
       "triggered_by_event_id": "EV-bc320dac1d8dfed9",
       "as_of_date": "2026-10-06",
@@ -650822,276 +650371,6 @@
   ],
   "event_cards": [
     {
-      "funding_insight_id": "FI-7183666b813db13e",
-      "triggered_by_event_id": "EV-aaf041c83cebba9a",
-      "source_event_ids": [
-        "EV-aaf041c83cebba9a"
-      ],
-      "subject_card_id": "FI-7183666b813db13e",
-      "as_of_date": "2026-11-08",
-      "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
-        "source_registry_ids": []
-      },
-      "company": {
-        "entity_id": "EN-7d3194f79e645c42",
-        "application_entity_id": "EN-7d3194f79e645c42",
-        "name": "OpenAI",
-        "full_name": "OpenAI",
-        "summary": "OpenAI 是一家人工智能公司，总部位于旧金山。",
-        "website": "",
-        "headquarters": "旧金山",
-        "founders": []
-      },
-      "financing": {
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "轮次未披露",
-        "amount": "$11 billion",
-        "amount_original": "$11 billion",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 11000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "110 亿美元"
-        },
-        "announced_at": "2026-11-07",
-        "disclosure_status": "partially_disclosed",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "Coatue Management",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3952ae60d488ad95",
-                "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-0d309b859ee1fe"
-          },
-          {
-            "name": "T. Rowe Price",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3952ae60d488ad95",
-                "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-519f1146b99bd7"
-          },
-          {
-            "name": "SoftBank",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3952ae60d488ad95",
-                "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-              }
-            ],
-            "entity_id": "EN-80d387ccb3289295",
-            "institution_id": "INV-b3dd2d4428d2f2"
-          },
-          {
-            "name": "Sequoia Capital",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3952ae60d488ad95",
-                "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-862e0e7d2ba5cf"
-          },
-          {
-            "name": "Founders Fund",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3952ae60d488ad95",
-                "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-fab7efd306c6f9"
-          },
-          {
-            "name": "Andreessen Horowitz",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3952ae60d488ad95",
-                "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-b8a0e793124952"
-          },
-          {
-            "name": "阿拉伯联合酋长国财团",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3952ae60d488ad95",
-                "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-                "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-                "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-2d581d7bb663a0"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-3952ae60d488ad95",
-            "quote": "OpenAI lands an $11 billion funding round, but has to court dentists for more capital",
-            "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-            "quote_hash": "6676720b2d4b1af56058fba869544ac63772aae4c3df246925d288f555ae3b08"
-          },
-          {
-            "source_id": "FISRC-3952ae60d488ad95",
-            "quote": "OpenAI has received roughly $11 billion in new funding, the first tranche of a round valuing the company at $1.25 trillion.",
-            "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-            "quote_hash": "6595f82330d16d7334e374d2d1942ea3e5eef0e922ddf34764cdf8959d8d7512"
-          },
-          {
-            "source_id": "FISRC-e2f569ef710b957d",
-            "quote": "OpenAI hat 11 Milliarden Dollar an frischem Kapital eingesammelt, die erste Tranche einer Finanzierungsrunde, die das Unternehmen mit 1,25 Billionen Dollar bewertet.",
-            "source_content_hash": "48399541b4393825",
-            "quote_hash": "e6d27697e0acc3a23b4fbb275fccdc5d2dc2517dd3988596cdc5112a8d0d644c"
-          }
-        ],
-        "current_source_ids": [
-          "FISRC-3952ae60d488ad95",
-          "FISRC-e2f569ef710b957d"
-        ]
-      },
-      "research_sources": [
-        {
-          "source_id": "FISRC-3952ae60d488ad95",
-          "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
-          "title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
-          "publisher": "the-decoder.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-11-08T00:16:40.813Z",
-          "content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-          "source_artifact_id": "SA-fc0f4c2f904f6d83",
-          "raw_id": "RAW-8cf17dc6d51bd14a",
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-e2f569ef710b957d",
-          "source_url": "https://worldtech.news/story/cluster:e589465410df88ef15497cc066d8bab773a81bb3ff424d9594c7232574c8c9a9?lang=de",
-          "title": "OpenAI sichert sich 11 Milliarden Dollar Finanzierung, muss aber um Zahnärzte als Geldgeber werben",
-          "publisher": "worldtech.news",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-08T00:50:44.333Z",
-          "content_hash": "48399541b4393825",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-2d81715dfb797c30",
-          "source_url": "https://dev.to/monkfromearth/what-openais-122-billion-round-tells-us-about-ais-new-shape-58a7",
-          "title": "What OpenAI's $122 Billion Round Tells Us About AI's New Shape",
-          "publisher": "dev.to",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-08T04:40:28.893Z",
-          "content_hash": "9dac971a31e00815",
-          "purpose": "unverified"
-        },
-        {
-          "source_id": "FISRC-b4ba4f68908fa080",
-          "source_url": "https://news.pedaily.cn/202602/561239.shtml",
-          "title": "OpenAI最新融资1100亿美元",
-          "publisher": "news.pedaily.cn",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-08T04:41:37.611Z",
-          "content_hash": "f5fc1f7eecf1f9e6",
-          "purpose": "unverified"
-        }
-      ],
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "models",
-          "name": "基础模型"
-        },
-        "subsector": {
-          "id": "general-models",
-          "name": "通用与多模态模型"
-        },
-        "product_form": {
-          "id": "model-api",
-          "name": "模型与 API"
-        },
-        "customers": [],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-e2f569ef710b957d",
-            "quote": "OpenAI ist ein Unternehmen für künstliche Intelligenz mit Sitz in San Francisco."
-          },
-          {
-            "source_id": "FISRC-2d81715dfb797c30",
-            "quote": "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT."
-          }
-        ],
-        "rationale": "证据表明 OpenAI 为 AI 公司，ChatGPT 为其通用模型产品，归基础模型。"
-      },
-      "market_category": {
-        "id": "models",
-        "name": "基础模型",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "general-models",
-        "name": "通用与多模态模型",
-        "dimension": "financing_subsector"
-      },
-      "product_form": {
-        "id": "model-api",
-        "name": "模型与 API",
-        "dimension": "financing_product_form"
-      },
-      "products": [
-        {
-          "name": "ChatGPT"
-        },
-        {
-          "name": "Codex"
-        }
-      ]
-    },
-    {
       "funding_insight_id": "FI-bb7c7a87a4cf6fe9",
       "triggered_by_event_id": "EV-0eccf9e0527ff890",
       "source_event_ids": [
@@ -654357,7 +653636,8 @@
       "funding_insight_id": "FI-ac5b3adb35c391fc",
       "triggered_by_event_id": "EV-41ecfae294ef5f27",
       "source_event_ids": [
-        "EV-41ecfae294ef5f27"
+        "EV-41ecfae294ef5f27",
+        "EV-8e1b620139e11518"
       ],
       "subject_card_id": "FI-ac5b3adb35c391fc",
       "as_of_date": "2026-11-05",
@@ -654526,11 +653806,31 @@
             "quote": "London-based AI startup Tallia, formerly known as Revax, has raised €4 million ($4.5 million) in Seed funding.",
             "source_content_hash": "790aef681aa12fb9",
             "quote_hash": "926cec4972ba72ae867b2283e6283f65756545b130484b70e26b5f839fb51311"
+          },
+          {
+            "source_id": "FISRC-f6d5240c737cf2ca",
+            "quote": "HomeFundingTallia raises €4 million to bring AI-powered research and review to tax...",
+            "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
+            "quote_hash": "eaf71a9fc16984df47b23ffccd7a7ee3acd2e098e92b06dbf12fe6e989023747"
+          },
+          {
+            "source_id": "FISRC-f6d5240c737cf2ca",
+            "quote": "has secured €4 million ($4.5 million) in Seed funding",
+            "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
+            "quote_hash": "8f58fe977a2b2b849a4b195c7b04059ee9c85ffaa1c2deae0118b169e9b17369"
+          },
+          {
+            "source_id": "FISRC-2bc9c4d29695a94c",
+            "quote": "Raised: €4M",
+            "source_content_hash": "ab3ee1cd9e096351",
+            "quote_hash": "1c204fabf34437493a6de3123a2f5df2f6412e4aec483920878c002949c8e231"
           }
         ],
         "current_source_ids": [
           "FISRC-b7f263210d07ed30",
-          "FISRC-82ba6468360c12aa"
+          "FISRC-82ba6468360c12aa",
+          "FISRC-f6d5240c737cf2ca",
+          "FISRC-2bc9c4d29695a94c"
         ]
       },
       "research_sources": [
@@ -654569,6 +653869,32 @@
           "capture_method": "direct_fetch",
           "captured_at": "2026-11-05T00:51:26.575Z",
           "content_hash": "790aef681aa12fb9",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-f6d5240c737cf2ca",
+          "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+          "title": "Tallia 融资 400 万欧元，为税务公司带来 AI 驱动的研究与审查",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-08T00:18:39.082Z",
+          "content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
+          "source_artifact_id": "SA-767478bec1fd9bf1",
+          "raw_id": "RAW-b76779e6036ed378",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-2bc9c4d29695a94c",
+          "source_url": "https://www.thesaasnews.com/news/tallia-raises-4m-seed/",
+          "title": "Tallia Raises €4M Seed",
+          "publisher": "thesaasnews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-08T00:51:12.619Z",
+          "content_hash": "ab3ee1cd9e096351",
           "source_artifact_id": null,
           "raw_id": null,
           "purpose": "current_round"
@@ -654634,267 +653960,7 @@
       "products": [
         {
           "name": "Tallia AI研究与起草平台"
-        }
-      ]
-    },
-    {
-      "funding_insight_id": "FI-bd27258cf2762d79",
-      "triggered_by_event_id": "EV-8e1b620139e11518",
-      "source_event_ids": [
-        "EV-8e1b620139e11518"
-      ],
-      "subject_card_id": "FI-bd27258cf2762d79",
-      "as_of_date": "2026-11-08",
-      "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
-        "source_registry_ids": []
-      },
-      "company": {
-        "entity_id": "EN-0ffd07d1f26c6cd8",
-        "application_entity_id": "EN-0ffd07d1f26c6cd8",
-        "name": "Tallia",
-        "full_name": "Tallia",
-        "summary": "总部位于伦敦的AI初创公司，前身为Revax，为税务和会计专业人士提供AI驱动的研究与起草平台。",
-        "website": "https://tallia.ai",
-        "headquarters": "英国伦敦",
-        "founders": [
-          {
-            "name": "Jack Mander",
-            "role": "联合创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "1d5eacbec6ef9d26c2c5c385d2acf937306cf35208ae3f54e2124d279c9adc28"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Alexander Bartlam",
-            "role": "联合创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "1d5eacbec6ef9d26c2c5c385d2acf937306cf35208ae3f54e2124d279c9adc28"
-              }
-            ],
-            "entity_id": null
-          }
-        ]
-      },
-      "financing": {
-        "round": "种子轮",
-        "round_code": "seed",
-        "round_original": "Seed",
-        "amount": "€4 million",
-        "amount_original": "€4 million",
-        "amount_normalized": {
-          "currency": "EUR",
-          "value": 4000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "400 万欧元"
         },
-        "announced_at": "2026-11-03",
-        "disclosure_status": "disclosed",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "Outward VC",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "The round was co-led by Outward VC and the Institute of Chartered Accountants in England and Wales (ICAEW)",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "e0663fb706b4b940aa93e2c8bbc9c3995d0a058df4a24360eede8b4673b2b0c7"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-41eb553354ff9b"
-          },
-          {
-            "name": "Institute of Chartered Accountants in England and Wales (ICAEW)",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "The round was co-led by Outward VC and the Institute of Chartered Accountants in England and Wales (ICAEW)",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "e0663fb706b4b940aa93e2c8bbc9c3995d0a058df4a24360eede8b4673b2b0c7"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-881170bd7f2ddb"
-          },
-          {
-            "name": "Portfolio Ventures",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "c9396c157c4342fe6236b958849617467d16587fd9de8a414b456d5b2a2112c0"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-a131dfbbd00524"
-          },
-          {
-            "name": "Expedite Capital",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "c9396c157c4342fe6236b958849617467d16587fd9de8a414b456d5b2a2112c0"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-577debc8bdbb14"
-          },
-          {
-            "name": "Paul Forster",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "c9396c157c4342fe6236b958849617467d16587fd9de8a414b456d5b2a2112c0"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-59f9e71e3b3c4f"
-          },
-          {
-            "name": "Angus Miln",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6d5240c737cf2ca",
-                "quote": "with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors",
-                "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-                "quote_hash": "c9396c157c4342fe6236b958849617467d16587fd9de8a414b456d5b2a2112c0"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-5be028befcc514"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-f6d5240c737cf2ca",
-            "quote": "HomeFundingTallia raises €4 million to bring AI-powered research and review to tax...",
-            "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-            "quote_hash": "eaf71a9fc16984df47b23ffccd7a7ee3acd2e098e92b06dbf12fe6e989023747"
-          },
-          {
-            "source_id": "FISRC-f6d5240c737cf2ca",
-            "quote": "has secured €4 million ($4.5 million) in Seed funding",
-            "source_content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-            "quote_hash": "8f58fe977a2b2b849a4b195c7b04059ee9c85ffaa1c2deae0118b169e9b17369"
-          },
-          {
-            "source_id": "FISRC-2bc9c4d29695a94c",
-            "quote": "Raised: €4M",
-            "source_content_hash": "ab3ee1cd9e096351",
-            "quote_hash": "1c204fabf34437493a6de3123a2f5df2f6412e4aec483920878c002949c8e231"
-          }
-        ],
-        "current_source_ids": [
-          "FISRC-f6d5240c737cf2ca",
-          "FISRC-2bc9c4d29695a94c"
-        ]
-      },
-      "research_sources": [
-        {
-          "source_id": "FISRC-f6d5240c737cf2ca",
-          "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-          "title": "Tallia 融资 400 万欧元，为税务公司带来 AI 驱动的研究与审查",
-          "publisher": "www.eu-startups.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-11-08T00:18:39.082Z",
-          "content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
-          "source_artifact_id": "SA-767478bec1fd9bf1",
-          "raw_id": "RAW-b76779e6036ed378",
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-2bc9c4d29695a94c",
-          "source_url": "https://www.thesaasnews.com/news/tallia-raises-4m-seed/",
-          "title": "Tallia Raises €4M Seed",
-          "publisher": "thesaasnews.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-08T00:51:12.619Z",
-          "content_hash": "ab3ee1cd9e096351",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "current_round"
-        }
-      ],
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "industry",
-          "name": "行业 AI"
-        },
-        "subsector": {
-          "id": "financial-services",
-          "name": "金融与保险"
-        },
-        "product_form": {
-          "id": "enterprise-software",
-          "name": "企业软件"
-        },
-        "customers": [
-          {
-            "id": "business",
-            "name": "企业"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-f6d5240c737cf2ca",
-            "quote": "Its platform uses a custom retrieval system to connect AI-generated responses with relevant tax authorities"
-          },
-          {
-            "source_id": "FISRC-f6d5240c737cf2ca",
-            "quote": "The platform supports workflows across Microsoft Word, Excel, PowerPoint and Outlook"
-          }
-        ],
-        "rationale": "面向税务专业工作流的AI检索与起草平台，属金融税务行业软件。"
-      },
-      "market_category": {
-        "id": "industry",
-        "name": "行业 AI",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "financial-services",
-        "name": "金融与保险",
-        "dimension": "financing_subsector"
-      },
-      "product_form": {
-        "id": "enterprise-software",
-        "name": "企业软件",
-        "dimension": "financing_product_form"
-      },
-      "products": [
         {
           "name": "Tallia AI研究与起草平台"
         }
@@ -820499,7 +819565,7 @@
         "EV-d4e44892226be468",
         "EV-68d5a02e5213b43c"
       ],
-      "subject_card_id": "FI-7183666b813db13e",
+      "subject_card_id": "FI-b76fffbf5d0d91bd",
       "as_of_date": "2026-06-30",
       "market_scope": {
         "market_region": "GLOBAL",
@@ -857642,9 +856708,8 @@
     }
   ],
   "card_aliases": {
-    "FI-b76fffbf5d0d91bd": "FI-7183666b813db13e",
-    "FI-72755fd9439ecca6": "FI-7183666b813db13e",
     "FI-f617b97f0b35118f": "FI-65757c535b592aae",
+    "FI-bd27258cf2762d79": "FI-ac5b3adb35c391fc",
     "FI-3734798e9a7f3c5c": "FI-37d7c5e453ca9656",
     "FI-ccc05a23e66ce6d5": "FI-98bf809bafca6956",
     "FI-2aa299d42ca42b11": "FI-29972434b39dd262",
@@ -857713,6 +856778,7 @@
     "FI-8650a7a5be9be749": "FI-fd9ef3cc8a9f2a95",
     "FI-7108544d47292865": "FI-4880b1e3fb7a4da4",
     "FI-474a441598e62f93": "FI-4880b1e3fb7a4da4",
+    "FI-72755fd9439ecca6": "FI-b76fffbf5d0d91bd",
     "FI-c210fc9ab5481f28": "FI-2d6f9ac8b7ebeeee",
     "FI-b69210c5435600e7": "FI-be6c288b08346194",
     "FI-3a05feff425e5dcb": "FI-7aef62aa956f090d",
@@ -857725,6 +856791,7 @@
     "FI-02605810b7e6371d": "FI-c6666211cc9c953f"
   },
   "company_aliases": {
+    "EN-0ffd07d1f26c6cd8": "EN-e1b40c3ec534d8fd",
     "EN-33f955ed668aa8fb": "EN-56a0ba67ee43de65",
     "EN-c53e6deb84236ea0": "EN-71318126b97d81bf",
     "EN-f4f81a0f6378eced": "EN-0e5db06740d51f41",
@@ -858340,6 +857407,12 @@
       }
     ],
     "publication_pending": [
+      {
+        "event_id": "EV-aaf041c83cebba9a",
+        "company": "OpenAI",
+        "reason": "正式原文审核对110亿美元首笔到账、后续目标与历史融资轮次的归属存在未解决争议。隔离本次新增候选，保留全部已发布历史融资，禁止将约数/首笔到账提升为完整新轮次的精确总额；需责任审核补充原始披露及轮次绑定后才可解除。不是认定110亿美元与历史1100亿/1220亿美元相同。",
+        "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/"
+      },
       {
         "event_id": "EV-6133f09c61f5c5e8",
         "company": "Ares Intelligence",

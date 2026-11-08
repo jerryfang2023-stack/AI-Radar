@@ -38,5 +38,40 @@
   ],
   "aippy_hold_event_id": "EV-582aab98a3e6ed21",
   "product_evidence_source": "FISRC-2d81715dfb797c30",
-  "model_delivery_evidence_source": "FISRC-b4ba4f68908fa080"
+  "model_delivery_evidence_source": "FISRC-b4ba4f68908fa080",
+  "reviewed_duplicate_round": {
+    "company": "Tallia",
+    "canonical_event_id": "EV-41ecfae294ef5f27",
+    "duplicate_event_id": "EV-8e1b620139e11518",
+    "preserved_public_card": "FI-ac5b3adb35c391fc",
+    "source_bindings": [
+      {
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms",
+        "content_hash": "e977c0cfb1559d1668b5d9332458e588161cf87b92857364f5dd7ab3e45ddd0a",
+        "quote": "London-based AI startup Tallia, formerly known as Revax, has secured €4 million ($4.5 million) in Seed funding to expand its AI-powered research and drafting platform for tax and accountancy professionals.",
+        "quote_hash": "f8b30e0f76107ff300789fc0d2512c84e5c78e7be24e9eda037b41e5bea73a29"
+      },
+      {
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "content_hash": "63abb5afcc11536b0dec54b3ceae6cf84913089597a7d8a7ec3e11d1c372dc47",
+        "quote": "London-based AI startup Tallia, formerly known as Revax, has secured €4 million ($4.5 million) in Seed funding to expand its AI-powered research and drafting platform for tax and accountancy professionals.",
+        "quote_hash": "f8b30e0f76107ff300789fc0d2512c84e5c78e7be24e9eda037b41e5bea73a29"
+      }
+    ],
+    "canonical_entities_merged": false
+  },
+  "openai_incoming_disposition": {
+    "event_id": "EV-aaf041c83cebba9a",
+    "status": "pending_publication",
+    "fact_approval": false,
+    "published": false,
+    "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
+    "reason": "Unresolved responsible-review dispute: isolate the incoming November tranche without approving its relation to older rounds or modifying published historical funding amounts. Preserve historical cards and explicit source evidence."
+  },
+  "expected_publication_delta": {
+    "new_subjects": 0,
+    "new_events": 0,
+    "baseline_subjects_preserved": 696,
+    "baseline_events_preserved": 744
+  }
 }
