@@ -36970,7 +36970,128 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-11-07T00:53:10.395Z"
+    },
+    "EV-8d025cf305dcbab6": {
+      "id": "EV-8d025cf305dcbab6",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        3,
+        2,
+        4
+      ],
+      "rationale": "核心产品为软体机器人可穿戴手套等康复机器人本体与配套系统，属具身/机器人业务。",
+      "input_hash": "0c1d1c95da42852aad9a6bc3066607d1a9e3cfc30000d2086858039c831ebdfb",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3a58087ca5be34d4",
+          "quote": "Lifeglov, a soft robotic wearable glove powered by air that assists patients in opening and strengthening their hands"
+        },
+        {
+          "source_id": "FISRC-3a58087ca5be34d4",
+          "quote": "Lifehub, a portable control centre that powers the system and delivers interactive therapy sessions"
+        },
+        {
+          "source_id": "FISRC-3a58087ca5be34d4",
+          "quote": "Lifemind, a clinician-facing dashboard that centralises therapy data and uses AI to auto-generate clinical notes"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-08T00:53:40.559Z"
+    },
+    "EV-8e1b620139e11518": {
+      "id": "EV-8e1b620139e11518",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "面向税务专业工作流的AI检索与起草平台，属金融税务行业软件。",
+      "input_hash": "bcfbae0a25c85a1c55499ee0dce408a91c75f79ecde3b5e62c2326779ee06187",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f6d5240c737cf2ca",
+          "quote": "Its platform uses a custom retrieval system to connect AI-generated responses with relevant tax authorities"
+        },
+        {
+          "source_id": "FISRC-f6d5240c737cf2ca",
+          "quote": "The platform supports workflows across Microsoft Word, Excel, PowerPoint and Outlook"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-08T00:53:40.559Z"
+    },
+    "EV-582aab98a3e6ed21": {
+      "id": "EV-582aab98a3e6ed21",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "entertainment",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "面向消费者的AI原生游戏社区，用户可用自然语言创作并Remix游戏。",
+      "input_hash": "00aa149f339dbc877ac95af1282ca692fe1cefa8904347355d297344b5608d21",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-8421cf3ba50ba3b0",
+          "quote": "Aippy, the world’s first AI-native game community developed by NADA AI"
+        },
+        {
+          "source_id": "FISRC-1e9a25109279f647",
+          "quote": "用户仅需使用自然语言，即可创作出可交互的游戏。Aippy 内的游戏作品采用竖屏 Feed 流呈现"
+        },
+        {
+          "source_id": "FISRC-3e7345ec00d819fc",
+          "quote": "Its signature Remix feature allows users to take any existing game, modify it, and republish a new version"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-08T00:53:40.559Z"
+    },
+    "EV-aaf041c83cebba9a": {
+      "id": "EV-aaf041c83cebba9a",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [],
+      "evidence_indices": [
+        0
+      ],
+      "rationale": "证据仅表明其为AI公司，按其基础模型主营归入通用模型。",
+      "input_hash": "5f206788a2acbf96acd968468fb3b374e79105420f028fb653cd96a6c2124c4c",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e2f569ef710b957d",
+          "quote": "OpenAI ist ein Unternehmen für künstliche Intelligenz mit Sitz in San Francisco."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-08T00:53:40.559Z"
     }
   },
-  "generated_at": "2026-11-07T00:53:10.395Z"
+  "generated_at": "2026-11-08T00:53:40.559Z"
 }
