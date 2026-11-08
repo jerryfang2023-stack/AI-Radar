@@ -1,6 +1,6 @@
-# WaveSight Weekly Health - 2026-10-27 to 2026-11-02
+# WaveSight Weekly Health - 2026-11-03 to 2026-11-09
 
-- generated_at: 2026-11-01T16:35:23.648Z
+- generated_at: 2026-11-08T16:32:07.855Z
 - status: review
 - days: 7
 
@@ -8,13 +8,13 @@
 
 | Date | Status | Lane statuses |
 |---|---|---|
-| 2026-10-27 | missing | none |
-| 2026-10-28 | missing | none |
-| 2026-10-29 | missing | none |
-| 2026-10-30 | missing | none |
-| 2026-10-31 | missing | none |
-| 2026-11-01 | missing | none |
-| 2026-11-02 | missing | none |
+| 2026-11-03 | missing | none |
+| 2026-11-04 | missing | none |
+| 2026-11-05 | missing | none |
+| 2026-11-06 | missing | none |
+| 2026-11-07 | missing | none |
+| 2026-11-08 | missing | none |
+| 2026-11-09 | missing | none |
 
 ## Lane Status Totals
 
@@ -71,4 +71,4 @@
 
 ## Recommended Actions
 
-- Backfill or intentionally skip missing daily supervision reports: 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-30, 2026-10-31, 2026-11-01, 2026-11-02
+- Backfill or intentionally skip missing daily supervision reports: 2026-11-03, 2026-11-04, 2026-11-05, 2026-11-06, 2026-11-07, 2026-11-08, 2026-11-09
