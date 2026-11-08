@@ -4420,44 +4420,26 @@
       "sector_id": "models",
       "subsector_id": "general-models",
       "product_form_id": "model-api",
-      "customer_ids": [
-        "consumer",
-        "developer"
-      ],
+      "customer_ids": [],
       "evidence_indices": [
-        0,
         1,
-        2,
-        3,
-        4
+        2
       ],
-      "rationale": "OpenAI 以 ChatGPT 和 Codex 为核心产品，属于通用基础模型与多模态模型提供商，同时面向消费者和开发者。",
-      "input_hash": "a389a9b995ea77801bc24f39cf999e042ad4417d57e8adb6af114e8c00a71524",
+      "rationale": "OpenAI 以 ChatGPT 等通用大模型为核心交付产品，属基础模型赛道。",
+      "input_hash": "541ffe923b1061397db6b53c3ee52589bcb96edc4648769c8bff6f1802e0c82f",
       "evidence_refs": [
-        {
-          "source_id": "FISRC-1e2b3bad243bd066",
-          "quote": "OpenAI just closed a $122 billion funding round at an $852 billion valuation."
-        },
         {
           "source_id": "FISRC-b86e0fbe62dfd3dc",
           "quote": "ChatGPT now surpasses 900 million weekly active users, generating $2 billion in monthly revenue as of 2025."
         },
         {
-          "source_id": "FISRC-b86e0fbe62dfd3dc",
-          "quote": "ChatGPT now serves more than 900 million weekly active users and over 50 million subscribers."
-        },
-        {
-          "source_id": "FISRC-2d81715dfb797c30",
-          "quote": "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT."
-        },
-        {
-          "source_id": "FISRC-2d81715dfb797c30",
-          "quote": "Codex now ships as a plugin inside Claude Code, Anthropic's coding agent."
+          "source_id": "FISRC-b4ba4f68908fa080",
+          "quote": "英伟达：负责底层算力供给，围绕 GPU 及新一代加速器，为OpenAI提供持续、可扩展的训练与推理能力；\n亚马逊：提供云基础设施与全球部署能力，支持OpenAI在多区域、多行业场景中的模型交付与商业化落地；"
         }
       ],
       "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "generated_at": "2026-10-01T14:00:22.392Z"
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-08T04:54:07.176Z"
     },
     "EV-aa33ca051f3a7f78": {
       "id": "EV-aa33ca051f3a7f78",
@@ -15811,29 +15793,26 @@
       "sector_id": "models",
       "subsector_id": "general-models",
       "product_form_id": "model-api",
-      "customer_ids": [
-        "consumer",
-        "developer"
-      ],
+      "customer_ids": [],
       "evidence_indices": [
-        2,
-        4
+        1,
+        2
       ],
-      "rationale": "OpenAI以ChatGPT和Codex为核心产品，提供通用对话模型与编程能力，属于通用与多模态基础模型。",
-      "input_hash": "abae606a57c32acfaf7b30ef21ea2ccfb512371df46bb3a6a37ba8b5a03e2a1b",
+      "rationale": "OpenAI 主营通用基础模型并通过 ChatGPT 交付，属基础模型赛道。",
+      "input_hash": "bcf3ef72fe7d30816cca436e2cd7827e4328791b637d582c1359571d14d5a63a",
       "evidence_refs": [
         {
-          "source_id": "FISRC-b4ba4f68908fa080",
-          "quote": "ChatGPT周活用户已经 突破9亿 ，月访问量约为 57.2亿次 ，个人订阅用户超5000万"
+          "source_id": "FISRC-b839ede28a40d17e",
+          "quote": "Today we’re announcing $110B in new investment at a $730B pre-money valuation."
         },
         {
-          "source_id": "FISRC-2981ebb80e2fd3f8",
-          "quote": "Codex 让每一位开发者都能拥有顶尖工程师般的编程能力。自今年年初以来，Codex 的周活跃用户数已增至三倍多，达到 160 万。"
+          "source_id": "FISRC-b4ba4f68908fa080",
+          "quote": "英伟达：负责底层算力供给，围绕 GPU 及新一代加速器，为OpenAI提供持续、可扩展的训练与推理能力；\n亚马逊：提供云基础设施与全球部署能力，支持OpenAI在多区域、多行业场景中的模型交付与商业化落地；"
         }
       ],
       "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "generated_at": "2026-10-01T14:03:08.379Z"
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-08T04:54:07.176Z"
     },
     "EV-cf9e968f38db7796": {
       "id": "EV-cf9e968f38db7796",
@@ -37078,20 +37057,25 @@
       "product_form_id": "model-api",
       "customer_ids": [],
       "evidence_indices": [
-        0
+        0,
+        2
       ],
-      "rationale": "证据仅表明其为AI公司，按其基础模型主营归入通用模型。",
-      "input_hash": "5f206788a2acbf96acd968468fb3b374e79105420f028fb653cd96a6c2124c4c",
+      "rationale": "证据表明 OpenAI 为 AI 公司，ChatGPT 为其通用模型产品，归基础模型。",
+      "input_hash": "2218c7d3cfaa44ab37cc39fd7217fe5a7df36fd07336f7679473563faa57d1a8",
       "evidence_refs": [
         {
           "source_id": "FISRC-e2f569ef710b957d",
           "quote": "OpenAI ist ein Unternehmen für künstliche Intelligenz mit Sitz in San Francisco."
+        },
+        {
+          "source_id": "FISRC-2d81715dfb797c30",
+          "quote": "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT."
         }
       ],
       "provider": "deepseek",
       "model": "deepseek-flash",
-      "generated_at": "2026-11-08T00:53:40.559Z"
+      "generated_at": "2026-11-08T04:54:07.176Z"
     }
   },
-  "generated_at": "2026-11-08T00:53:40.559Z"
+  "generated_at": "2026-11-08T04:54:07.183Z"
 }
