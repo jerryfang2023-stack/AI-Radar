@@ -297,6 +297,19 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
       && /\b(?:following|after)\s+the\s+announcement\b(?:[^.!?]|\.(?=\d)){0,180}\b(?:a\s+couple(?:\s+of)?\s+weeks?|several\s+weeks?)\s+ago\b/iu.test(sourceLead)) {
     return { accepted: false, reason: "historical_funding_reference_requires_original_date" };
   }
+  // Conference/product reports may recall a completed round in an earlier
+  // month. The article's publication date does not date that financing.
+  // Defer only when every completed-funding sentence has an explicit older
+  // year/month; an undated/current announcement remains a separate candidate.
+  if (options.eventType === "funding" && /^\d{4}-\d{2}-\d{2}$/u.test(publishedDate)
+      && !/(?:完成|宣布|获得|获).{0,24}融资|融资.{0,12}(?:完成|交割|到账)/u.test(title)) {
+    const fundingSentences = sourceLead.split(/[。！？\n]/u)
+      .filter(sentence => /(?:完成|宣布|获得|获|筹集).{0,28}(?:融资|轮)/u.test(sentence));
+    if (fundingSentences.length && fundingSentences.every(sentence => {
+      const month = sentence.match(/(\d{4})\s*年\s*(1[0-2]|0?[1-9])\s*月/u);
+      return month && `${month[1]}-${month[2].padStart(2, "0")}` < publishedDate.slice(0, 7);
+    })) return { accepted: false, reason: "historical_funding_reference_requires_original_date" };
+  }
   // A target or its adjustment is not proceeds from a completed financing.
   // Preserve explicit completion headlines that also mention an earlier target.
   if (options.eventType === "funding" && /(?:融资|募资)目标/u.test(title)
