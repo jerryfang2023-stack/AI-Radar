@@ -4420,44 +4420,26 @@
       "sector_id": "models",
       "subsector_id": "general-models",
       "product_form_id": "model-api",
-      "customer_ids": [
-        "consumer",
-        "developer"
-      ],
+      "customer_ids": [],
       "evidence_indices": [
-        0,
         1,
-        2,
-        3,
-        4
+        2
       ],
-      "rationale": "OpenAI 以 ChatGPT 和 Codex 为核心产品，属于通用基础模型与多模态模型提供商，同时面向消费者和开发者。",
-      "input_hash": "a389a9b995ea77801bc24f39cf999e042ad4417d57e8adb6af114e8c00a71524",
+      "rationale": "OpenAI 以 ChatGPT 等通用大模型为核心交付产品，属基础模型赛道。",
+      "input_hash": "541ffe923b1061397db6b53c3ee52589bcb96edc4648769c8bff6f1802e0c82f",
       "evidence_refs": [
-        {
-          "source_id": "FISRC-1e2b3bad243bd066",
-          "quote": "OpenAI just closed a $122 billion funding round at an $852 billion valuation."
-        },
         {
           "source_id": "FISRC-b86e0fbe62dfd3dc",
           "quote": "ChatGPT now surpasses 900 million weekly active users, generating $2 billion in monthly revenue as of 2025."
         },
         {
-          "source_id": "FISRC-b86e0fbe62dfd3dc",
-          "quote": "ChatGPT now serves more than 900 million weekly active users and over 50 million subscribers."
-        },
-        {
-          "source_id": "FISRC-2d81715dfb797c30",
-          "quote": "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT."
-        },
-        {
-          "source_id": "FISRC-2d81715dfb797c30",
-          "quote": "Codex now ships as a plugin inside Claude Code, Anthropic's coding agent."
+          "source_id": "FISRC-b4ba4f68908fa080",
+          "quote": "英伟达：负责底层算力供给，围绕 GPU 及新一代加速器，为OpenAI提供持续、可扩展的训练与推理能力；\n亚马逊：提供云基础设施与全球部署能力，支持OpenAI在多区域、多行业场景中的模型交付与商业化落地；"
         }
       ],
       "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "generated_at": "2026-10-01T14:00:22.392Z"
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-08T04:54:07.176Z"
     },
     "EV-aa33ca051f3a7f78": {
       "id": "EV-aa33ca051f3a7f78",
@@ -15811,29 +15793,26 @@
       "sector_id": "models",
       "subsector_id": "general-models",
       "product_form_id": "model-api",
-      "customer_ids": [
-        "consumer",
-        "developer"
-      ],
+      "customer_ids": [],
       "evidence_indices": [
-        2,
-        4
+        1,
+        2
       ],
-      "rationale": "OpenAI以ChatGPT和Codex为核心产品，提供通用对话模型与编程能力，属于通用与多模态基础模型。",
-      "input_hash": "abae606a57c32acfaf7b30ef21ea2ccfb512371df46bb3a6a37ba8b5a03e2a1b",
+      "rationale": "OpenAI 主营通用基础模型并通过 ChatGPT 交付，属基础模型赛道。",
+      "input_hash": "bcf3ef72fe7d30816cca436e2cd7827e4328791b637d582c1359571d14d5a63a",
       "evidence_refs": [
         {
-          "source_id": "FISRC-b4ba4f68908fa080",
-          "quote": "ChatGPT周活用户已经 突破9亿 ，月访问量约为 57.2亿次 ，个人订阅用户超5000万"
+          "source_id": "FISRC-b839ede28a40d17e",
+          "quote": "Today we’re announcing $110B in new investment at a $730B pre-money valuation."
         },
         {
-          "source_id": "FISRC-2981ebb80e2fd3f8",
-          "quote": "Codex 让每一位开发者都能拥有顶尖工程师般的编程能力。自今年年初以来，Codex 的周活跃用户数已增至三倍多，达到 160 万。"
+          "source_id": "FISRC-b4ba4f68908fa080",
+          "quote": "英伟达：负责底层算力供给，围绕 GPU 及新一代加速器，为OpenAI提供持续、可扩展的训练与推理能力；\n亚马逊：提供云基础设施与全球部署能力，支持OpenAI在多区域、多行业场景中的模型交付与商业化落地；"
         }
       ],
       "provider": "deepseek",
-      "model": "deepseek-v4-pro",
-      "generated_at": "2026-10-01T14:03:08.379Z"
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-08T04:54:07.176Z"
     },
     "EV-cf9e968f38db7796": {
       "id": "EV-cf9e968f38db7796",
@@ -36970,7 +36949,133 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-11-07T00:53:10.395Z"
+    },
+    "EV-8d025cf305dcbab6": {
+      "id": "EV-8d025cf305dcbab6",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        3,
+        2,
+        4
+      ],
+      "rationale": "核心产品为软体机器人可穿戴手套等康复机器人本体与配套系统，属具身/机器人业务。",
+      "input_hash": "0c1d1c95da42852aad9a6bc3066607d1a9e3cfc30000d2086858039c831ebdfb",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3a58087ca5be34d4",
+          "quote": "Lifeglov, a soft robotic wearable glove powered by air that assists patients in opening and strengthening their hands"
+        },
+        {
+          "source_id": "FISRC-3a58087ca5be34d4",
+          "quote": "Lifehub, a portable control centre that powers the system and delivers interactive therapy sessions"
+        },
+        {
+          "source_id": "FISRC-3a58087ca5be34d4",
+          "quote": "Lifemind, a clinician-facing dashboard that centralises therapy data and uses AI to auto-generate clinical notes"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-08T00:53:40.559Z"
+    },
+    "EV-8e1b620139e11518": {
+      "id": "EV-8e1b620139e11518",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "面向税务专业工作流的AI检索与起草平台，属金融税务行业软件。",
+      "input_hash": "bcfbae0a25c85a1c55499ee0dce408a91c75f79ecde3b5e62c2326779ee06187",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f6d5240c737cf2ca",
+          "quote": "Its platform uses a custom retrieval system to connect AI-generated responses with relevant tax authorities"
+        },
+        {
+          "source_id": "FISRC-f6d5240c737cf2ca",
+          "quote": "The platform supports workflows across Microsoft Word, Excel, PowerPoint and Outlook"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-08T00:53:40.559Z"
+    },
+    "EV-582aab98a3e6ed21": {
+      "id": "EV-582aab98a3e6ed21",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "entertainment",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "面向消费者的AI原生游戏社区，用户可用自然语言创作并Remix游戏。",
+      "input_hash": "00aa149f339dbc877ac95af1282ca692fe1cefa8904347355d297344b5608d21",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-8421cf3ba50ba3b0",
+          "quote": "Aippy, the world’s first AI-native game community developed by NADA AI"
+        },
+        {
+          "source_id": "FISRC-1e9a25109279f647",
+          "quote": "用户仅需使用自然语言，即可创作出可交互的游戏。Aippy 内的游戏作品采用竖屏 Feed 流呈现"
+        },
+        {
+          "source_id": "FISRC-3e7345ec00d819fc",
+          "quote": "Its signature Remix feature allows users to take any existing game, modify it, and republish a new version"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-08T00:53:40.559Z"
+    },
+    "EV-aaf041c83cebba9a": {
+      "id": "EV-aaf041c83cebba9a",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "证据表明 OpenAI 为 AI 公司，ChatGPT 为其通用模型产品，归基础模型。",
+      "input_hash": "2218c7d3cfaa44ab37cc39fd7217fe5a7df36fd07336f7679473563faa57d1a8",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e2f569ef710b957d",
+          "quote": "OpenAI ist ein Unternehmen für künstliche Intelligenz mit Sitz in San Francisco."
+        },
+        {
+          "source_id": "FISRC-2d81715dfb797c30",
+          "quote": "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-08T04:54:07.176Z"
     }
   },
-  "generated_at": "2026-11-07T00:53:10.395Z"
+  "generated_at": "2026-11-08T04:54:07.183Z"
 }

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-07",
-    "currentDate": "2026-11-07",
-    "eventCount": 4392,
+    "latestDataDate": "2026-11-08",
+    "currentDate": "2026-11-08",
+    "eventCount": 4401,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -156,6 +156,135 @@
   },
   "events": [
     {
+      "id": "EV-34b8ae2aea003084",
+      "dataDate": "2026-11-08",
+      "date": "2026-11-07",
+      "updatedDate": "2026-11-07",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "本周印度初创企业的融资与收购活动 [Nov 02- Nov 07]",
+      "originalTitle": "Funding and acquisitions in Indian startups this week [Nov 02- Nov 07]",
+      "subject": "Provision Labs",
+      "action": "acquisition",
+      "object": "Basilisk Industries",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-5874b74f34b6f516"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-5874b74f34b6f516"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-5874b74f34b6f516"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5874b74f34b6f516"
+      ],
+      "entityNames": [
+        "Provision Labs"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://entrackr.com/report/weekly-funding-report-weekly-funding-report/funding-and-acquisitions-in-indian-startups-this-week-nov-02-nov-07-12791269",
+      "publisher": "entrackr.com"
+    },
+    {
+      "id": "EV-3bc1af8409d16f9b",
+      "dataDate": "2026-11-08",
+      "date": "2026-11-07",
+      "updatedDate": "2026-11-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "刚刚，OpenAI被曝完成110亿美元融资，CFO：数据中心还会继续建",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "完成110亿美元融资",
+      "object": "，CFO：数据中心还会继续建",
+      "metrics": [
+        "110 亿",
+        "1.25 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-de6785d99e028971",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "刚刚",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202611/571477.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
       "id": "EV-3d03c760f219c34d",
       "dataDate": "2026-11-07",
       "date": "2026-11-07",
@@ -215,8 +344,243 @@
       "publisher": "www.36kr.com"
     },
     {
+      "id": "EV-aaf041c83cebba9a",
+      "dataDate": "2026-11-08",
+      "date": "2026-11-07",
+      "updatedDate": "2026-11-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
+      "originalTitle": "OpenAI lands an $11 billion funding round, but has to court dentists for more capital",
+      "subject": "OpenAI lands an $11 billion",
+      "action": "funding round",
+      "object": ", but has to court dentists for more capital",
+      "metrics": [
+        "$11 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-276af39f58109a87",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI lands an $11 billion",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
+      "publisher": "the-decoder.com"
+    },
+    {
+      "id": "EV-4ce6b9d2f519e224",
+      "dataDate": "2026-11-08",
+      "date": "2026-11-06",
+      "updatedDate": "2026-11-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "2026年上半年中国人工智能行业投融资市场监测与分析报告",
+      "originalTitle": "艾媒咨询 | 2026年上半年中国人工智能行业投融资市场监测与分析报告",
+      "subject": "艾媒咨询 | 2026年上半年中国人工智能行业投",
+      "action": "融资",
+      "object": "市场监测与分析报告",
+      "metrics": [
+        "325.00亿",
+        "137.00亿",
+        "60.00亿",
+        "51.70%"
+      ],
+      "locations": [
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-b5251b35f15bedc4",
+        "EN-ce22f929f4a17467"
+      ],
+      "entityNames": [
+        "DeepSeek",
+        "Moonshot AI",
+        "智平方"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.163.com/dy/article/LAT9G2D60514A1HE.html",
+      "publisher": "www.163.com"
+    },
+    {
+      "id": "EV-8a83a19bfdd34344",
+      "dataDate": "2026-11-08",
+      "date": "2026-11-06",
+      "updatedDate": "2026-11-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "disputed",
+      "statusLabel": "存在争议",
+      "publicationStatus": "disputed",
+      "title": "牛津分拆公司Alethio Therapeutics完成8046万欧元A轮融资，以推进靶向血液癌症疗法",
+      "originalTitle": "Oxford spin-out Alethio Therapeutics raises €80.46 million Series A to advance targeted blood cancer therapies",
+      "subject": "Oxford spin-out Alethio Therapeutics",
+      "action": "raises",
+      "object": "€80.46 million Series A to advance targeted blood cancer therapies",
+      "metrics": [
+        "€80.46 million",
+        "$90 million",
+        "£67 million",
+        "€2.95 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-84343829823a8543"
+      ],
+      "entityNames": [
+        "Oxford spin-out Alethio Therapeutics"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/11/oxford-spin-out-alethio-therapeutics-raises-e80-46-million-series-a-to-advance-targeted-blood-cancer-therapies/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
+      "id": "EV-8d025cf305dcbab6",
+      "dataDate": "2026-11-08",
+      "date": "2026-11-06",
+      "updatedDate": "2026-11-06",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Bioliberty 融资 295 万欧元，将其 AI 驱动的康复技术引入家庭",
+      "originalTitle": "Bioliberty raises €2.95 million to bring its AI-powered rehabilitation technology into the home",
+      "subject": "Bioliberty",
+      "action": "raises",
+      "object": "€2.95 million to bring its AI-powered rehabilitation technology into the home",
+      "metrics": [
+        "€2.95 million",
+        "$3.3 million",
+        "€12.07 million",
+        "$13.5 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2e9d577077694996",
+        "EN-8cf27e5e33e863cd",
+        "EN-24c129cd2ff54f16"
+      ],
+      "entityNames": [
+        "HomeUK-StartupsBioliberty",
+        "Bioliberty",
+        "For Bioliberty"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/11/bioliberty-raises-e2-95-million-to-bring-its-ai-powered-rehabilitation-technology-into-the-home",
+      "publisher": "www.eu-startups.com"
+    },
+    {
       "id": "EV-a1e75442bdeac42b",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-06",
       "updatedDate": "2026-11-06",
       "eventType": "funding",
@@ -242,7 +606,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-20df412ece62725d"
+          "CL-55c348f0ab35fe77"
         ]
       },
       "missingFields": [],
@@ -273,7 +637,7 @@
     },
     {
       "id": "EV-0eccf9e0527ff890",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-05",
       "updatedDate": "2026-11-05",
       "eventType": "funding",
@@ -324,7 +688,7 @@
     },
     {
       "id": "EV-12e63ddc1a14574e",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-05",
       "updatedDate": "2026-11-05",
       "eventType": "funding",
@@ -406,7 +770,7 @@
     },
     {
       "id": "EV-7c081abc44cacd7d",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-05",
       "updatedDate": "2026-11-05",
       "eventType": "funding",
@@ -491,7 +855,7 @@
     },
     {
       "id": "EV-cd20a6ff672972eb",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-05",
       "updatedDate": "2026-11-05",
       "eventType": "funding",
@@ -573,7 +937,7 @@
     },
     {
       "id": "EV-de7efff10b83dd08",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-05",
       "updatedDate": "2026-11-05",
       "eventType": "funding",
@@ -666,7 +1030,7 @@
     },
     {
       "id": "EV-5affa046ed76d30e",
-      "dataDate": "2026-11-05",
+      "dataDate": "2026-11-08",
       "date": "2026-11-04",
       "updatedDate": "2026-11-04",
       "eventType": "funding",
@@ -751,7 +1115,7 @@
     },
     {
       "id": "EV-79f50d2659ea434a",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-04",
       "updatedDate": "2026-11-04",
       "eventType": "funding",
@@ -1044,7 +1408,7 @@
     },
     {
       "id": "EV-0a0d2b11832f0be5",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-03",
       "updatedDate": "2026-11-03",
       "eventType": "funding",
@@ -1093,7 +1457,7 @@
     },
     {
       "id": "EV-1d794039f9374217",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-03",
       "updatedDate": "2026-11-03",
       "eventType": "funding",
@@ -1119,7 +1483,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-9785dfddf6abc3c2"
+          "CL-87d0c24fc18bd8b2"
         ]
       },
       "missingFields": [],
@@ -1202,7 +1566,7 @@
     },
     {
       "id": "EV-7061f708e2f31963",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-03",
       "updatedDate": "2026-11-03",
       "eventType": "funding",
@@ -1251,8 +1615,95 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-8e1b620139e11518",
+      "dataDate": "2026-11-08",
+      "date": "2026-11-03",
+      "updatedDate": "2026-11-03",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Tallia 融资 400 万欧元，为税务公司带来 AI 驱动的研究与审查",
+      "originalTitle": "Tallia raises €4 million to bring AI-powered research and review to tax firms",
+      "subject": "Tallia",
+      "action": "raises",
+      "object": "€4 million to bring AI-powered research and review to tax firms",
+      "metrics": [
+        "€4 million",
+        "$4.5 million",
+        "€6 million",
+        "€1.5 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-0ffd07d1f26c6cd8"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-0ffd07d1f26c6cd8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-0ffd07d1f26c6cd8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9a9afbb79c312a01",
+        "EN-0ffd07d1f26c6cd8"
+      ],
+      "entityNames": [
+        "HomeFundingTallia",
+        "Tallia"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
       "id": "EV-91f0c322e7b0db48",
-      "dataDate": "2026-11-05",
+      "dataDate": "2026-11-08",
       "date": "2026-11-03",
       "updatedDate": "2026-11-03",
       "eventType": "funding",
@@ -1349,7 +1800,7 @@
     },
     {
       "id": "EV-d5633a878500d130",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-03",
       "updatedDate": "2026-11-03",
       "eventType": "funding",
@@ -1491,7 +1942,7 @@
     },
     {
       "id": "EV-208532ed4931c2e2",
-      "dataDate": "2026-11-06",
+      "dataDate": "2026-11-08",
       "date": "2026-11-02",
       "updatedDate": "2026-11-02",
       "eventType": "funding",
@@ -1584,7 +2035,7 @@
     },
     {
       "id": "EV-81eaad496911181e",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-02",
       "updatedDate": "2026-11-02",
       "eventType": "funding",
@@ -1633,7 +2084,7 @@
     },
     {
       "id": "EV-a355d976d3a7daef",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-02",
       "updatedDate": "2026-11-02",
       "eventType": "funding",
@@ -1759,7 +2210,7 @@
     },
     {
       "id": "EV-e632e1806935d10f",
-      "dataDate": "2026-11-04",
+      "dataDate": "2026-11-08",
       "date": "2026-11-02",
       "updatedDate": "2026-11-02",
       "eventType": "funding",
@@ -308452,7 +308903,7 @@
     },
     {
       "id": "EV-f19e657fd1e479e5",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-05",
       "updatedDate": "2026-11-05",
       "eventType": "product_release",
@@ -308496,7 +308947,7 @@
     },
     {
       "id": "EV-237731a25a73bb85",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-02",
       "updatedDate": "2026-11-02",
       "eventType": "product_release",
@@ -308555,7 +309006,7 @@
     },
     {
       "id": "EV-fec6117165d02cd1",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-02",
       "updatedDate": "2026-11-02",
       "eventType": "pricing_change",
@@ -453769,7 +454220,7 @@
     },
     {
       "id": "EV-57717e60d7a07800",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-06",
       "updatedDate": "2026-11-06",
       "eventType": "ipo_listing",
@@ -453822,6 +454273,135 @@
       "publisher": "www.theverge.com"
     },
     {
+      "id": "EV-215a5f752b8afea5",
+      "dataDate": "2026-11-08",
+      "date": "2026-11-05",
+      "updatedDate": "2026-11-05",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 总裁布罗克曼：目前公司大部分营收来自企业客户，明年具备上市条件",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "financial_performance",
+      "object": "大部分营收来自企业客户业务",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/022/734.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
+      "id": "EV-8fdae692cc4fb28b",
+      "dataDate": "2026-11-08",
+      "date": "2026-11-05",
+      "updatedDate": "2026-11-05",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "长鑫成立一家投资公司",
+      "originalTitle": "",
+      "subject": "长鑫科技",
+      "action": "capital_investment",
+      "object": "长鑫芯越产业投资（安徽）有限公司",
+      "metrics": [
+        "9亿",
+        "1055亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-206f2b1d9c2ddcaa",
+        "EN-6f7ac1823da81d2e"
+      ],
+      "entityNames": [
+        "长鑫科技",
+        "DeepSeek"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202611/571392.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
       "id": "EV-908b7ddf0f123e99",
       "dataDate": "2026-11-06",
       "date": "2026-11-05",
@@ -453867,7 +454447,7 @@
     },
     {
       "id": "EV-3cc8e7ce0143047a",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-03",
       "updatedDate": "2026-11-03",
       "eventType": "ipo_listing",
@@ -454014,7 +454594,7 @@
     },
     {
       "id": "EV-000a2cf24e205f93",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-08",
       "date": "2026-11-02",
       "updatedDate": "2026-11-02",
       "eventType": "financial_performance",
@@ -454072,7 +454652,7 @@
     },
     {
       "id": "EV-5267a13213f966ec",
-      "dataDate": "2026-11-04",
+      "dataDate": "2026-11-08",
       "date": "2026-11-02",
       "updatedDate": "2026-11-02",
       "eventType": "ipo_listing",

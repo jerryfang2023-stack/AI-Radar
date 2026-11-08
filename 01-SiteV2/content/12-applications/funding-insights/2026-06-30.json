@@ -82,6 +82,12 @@
             "quote": "ChatGPT now surpasses 900 million weekly active users, generating $2 billion in monthly revenue as of 2025.",
             "source_content_hash": "4e51c91e5fc7160c",
             "quote_hash": "335bcfeb5b2e1c70c4e1d1fee2b9f99beb501b590ea2acbc58e1233fc253295e"
+          },
+          {
+            "source_id": "FISRC-b4ba4f68908fa080",
+            "quote": "英伟达：负责底层算力供给，围绕 GPU 及新一代加速器，为OpenAI提供持续、可扩展的训练与推理能力；\n亚马逊：提供云基础设施与全球部署能力，支持OpenAI在多区域、多行业场景中的模型交付与商业化落地；",
+            "source_content_hash": "f5fc1f7eecf1f9e6",
+            "quote_hash": "1261bc0eeaa287988e7732f32ad7768b8b8a183ada60bcb060ecd35105618c8c"
           }
         ],
         "application_entity_id": "EN-7d3194f79e645c42",
@@ -426,46 +432,37 @@
       "products": [
         {
           "name": "ChatGPT",
-          "description": "面向消费者和企业的AI助手，支持对话、搜索、代理式购物等功能，拥有超过9亿周活跃用户和5000万付费订阅用户。",
-          "target_customers": "消费者、企业客户",
+          "description": "OpenAI的AI助手，可用于代理式购物，用户可在ChatGPT内浏览、比较和购买商品。",
+          "target_customers": "消费者",
           "features": [
-            "对话式AI交互",
-            "代理式购物（Agentic Commerce）",
-            "广告变现"
+            "代理式购物"
           ],
           "evidence_refs": [
             {
-              "source_id": "FISRC-b86e0fbe62dfd3dc",
-              "quote": "ChatGPT now serves more than 900 million weekly active users and over 50 million subscribers.",
-              "source_content_hash": "4e51c91e5fc7160c",
-              "quote_hash": "0a7e0d44042f34fdc7a2fbc9d5d975bf946e15351132355973f29e9f2612e6df"
-            },
-            {
               "source_id": "FISRC-2d81715dfb797c30",
               "quote": "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT.",
-              "source_content_hash": "ad6be5938fd0850e",
+              "source_content_hash": "9dac971a31e00815",
               "quote_hash": "8e2bc731ba9d88c83c57a7ea918a0ffb64ab9861995298b9448a6e52684e39ed"
             }
           ],
-          "entity_id": "EN-d1ad14d4ad57d207"
+          "entity_id": null
         },
         {
           "name": "Codex",
-          "description": "OpenAI的AI编程智能体，可集成到开发环境中，将开发者的想法转化为可工作的软件，周活跃用户超过200万。",
-          "target_customers": "开发者、软件工程团队",
+          "description": "OpenAI的编程工具Codex，可作为Claude Code的插件使用。",
+          "target_customers": "开发者",
           "features": [
-            "AI代码生成与审查",
-            "集成到Claude Code等第三方开发环境"
+            "Claude Code插件集成"
           ],
           "evidence_refs": [
             {
               "source_id": "FISRC-2d81715dfb797c30",
               "quote": "Codex now ships as a plugin inside Claude Code, Anthropic's coding agent.",
-              "source_content_hash": "ad6be5938fd0850e",
+              "source_content_hash": "9dac971a31e00815",
               "quote_hash": "77c1e6f52a5fcdd730c1c2e2c48eb55e4ea093403d5078af2150851508b5cddd"
             }
           ],
-          "entity_id": "EN-1ecf93c539fcffca"
+          "entity_id": null
         }
       ],
       "customers": [
@@ -477,7 +474,7 @@
             {
               "source_id": "FISRC-2d81715dfb797c30",
               "quote": "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT.",
-              "source_content_hash": "ad6be5938fd0850e",
+              "source_content_hash": "9dac971a31e00815",
               "quote_hash": "8e2bc731ba9d88c83c57a7ea918a0ffb64ab9861995298b9448a6e52684e39ed"
             }
           ],
@@ -491,7 +488,7 @@
             {
               "source_id": "FISRC-2d81715dfb797c30",
               "quote": "Snowflake signed a $200 million multi-year partnership putting OpenAI's models directly inside enterprise data warehouses.",
-              "source_content_hash": "ad6be5938fd0850e",
+              "source_content_hash": "9dac971a31e00815",
               "quote_hash": "56c90ad4767370a21ad1ee8094a8f3738998b609eb793f3adfc380110b9214e6"
             }
           ],
@@ -505,7 +502,7 @@
             {
               "source_id": "FISRC-2d81715dfb797c30",
               "quote": "Accenture is handling enterprise implementation and delivery.",
-              "source_content_hash": "ad6be5938fd0850e",
+              "source_content_hash": "9dac971a31e00815",
               "quote_hash": "38ff7764bc5d867593819b2b24b406e6fd2e3a28daa5739451b84434ecb25124"
             }
           ],
@@ -541,7 +538,7 @@
             {
               "source_id": "FISRC-2d81715dfb797c30",
               "quote": "Google is retrofitting Gemini into an existing conglomerate.",
-              "source_content_hash": "ad6be5938fd0850e",
+              "source_content_hash": "9dac971a31e00815",
               "quote_hash": "a2fafbe83632148c5cc9f9eab201760bb8ab798dce63236a90a8e7982ce3d08a"
             }
           ],
@@ -558,7 +555,7 @@
             {
               "source_id": "FISRC-2d81715dfb797c30",
               "quote": "xAI has one distribution surface, which is X.",
-              "source_content_hash": "ad6be5938fd0850e",
+              "source_content_hash": "9dac971a31e00815",
               "quote_hash": "3d13ff918ffb8ce8b37597a0e7f2b07cdcf0da55ace2d5b47d7966093002a7b3"
             }
           ],
@@ -959,14 +956,12 @@
         {
           "source_id": "FISRC-2d81715dfb797c30",
           "source_url": "https://dev.to/monkfromearth/what-openais-122-billion-round-tells-us-about-ais-new-shape-58a7",
-          "title": "What OpenAI's $122 Billion Round Tells Us About AI's New Shape - DEV Community",
+          "title": "What OpenAI's $122 Billion Round Tells Us About AI's New Shape",
           "publisher": "dev.to",
           "source_class": "independent",
           "capture_method": "direct_fetch",
-          "captured_at": "2026-07-26T14:40:15.767Z",
-          "content_hash": "ad6be5938fd0850e",
-          "source_artifact_id": null,
-          "raw_id": null
+          "captured_at": "2026-11-08T04:40:28.893Z",
+          "content_hash": "9dac971a31e00815"
         },
         {
           "source_id": "FISRC-b86e0fbe62dfd3dc",
@@ -991,6 +986,16 @@
           "content_hash": "e6bee4377f522396",
           "source_artifact_id": null,
           "raw_id": null
+        },
+        {
+          "source_id": "FISRC-b4ba4f68908fa080",
+          "source_url": "https://news.pedaily.cn/202602/561239.shtml",
+          "title": "OpenAI最新融资1100亿美元",
+          "publisher": "news.pedaily.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-08T04:41:37.611Z",
+          "content_hash": "f5fc1f7eecf1f9e6"
         }
       ],
       "model_provenance": {

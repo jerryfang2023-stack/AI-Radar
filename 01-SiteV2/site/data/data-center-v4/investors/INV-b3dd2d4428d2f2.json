@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-07",
-    "currentDate": "2026-11-07",
-    "eventCount": 4392,
+    "latestDataDate": "2026-11-08",
+    "currentDate": "2026-11-08",
+    "eventCount": 4401,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,7 +61,7 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 2,
     "market_regions": [
@@ -70,11 +70,11 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-31",
-    "latest_disclosed_at": "2026-08-12",
+    "latest_disclosed_at": "2026-11-07",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 2,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "series_f",
@@ -93,6 +93,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-97771b0023fd36fa",
+        "funding_insight_id": "FI-7183666b813db13e",
+        "event_ids": [
+          "EV-aaf041c83cebba9a"
+        ],
+        "company_entity_id": "EN-7d3194f79e645c42",
+        "company_canonical_entity_id": "EN-7d3194f79e645c42",
+        "company_name": "OpenAI",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "$11 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 11000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "110 亿美元"
+        },
+        "announced_at": "2026-11-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3952ae60d488ad95",
+            "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
+            "source_title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
+            "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
+            "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
+            "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-418b3716471f5a6d",
         "funding_insight_id": "FI-208f5f069010d44d",
@@ -248,6 +288,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-3952ae60d488ad95",
+        "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
+        "source_title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
+        "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
+        "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
+        "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
+      },
+      {
         "source_id": "FISRC-0afb458e7b0878f0",
         "source_url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
         "source_title": "OpenAI 支持的 Thrive Holdings 融资 20 亿美元，将 AI 引入企业",
@@ -339,6 +387,10 @@
           "source_id": "softbank_who"
         },
         {
+          "description": "融资来源记录：OpenAI · 轮次未披露 · 2026-11-07 · 本轮参投 · $11 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3952ae60d488ad95"
+        },
+        {
           "description": "融资来源记录：Thrive Holdings · 轮次未披露 · 2026-08-12 · 本轮参投 · $2B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0afb458e7b0878f0"
         },
@@ -396,6 +448,14 @@
           "quote_hash": "f9269336da61e9f2d960f3acfd7c29bcf61491c2fe6a8dc826d24ce999aa9ec4"
         },
         {
+          "source_id": "FISRC-3952ae60d488ad95",
+          "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
+          "source_title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
+          "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
+          "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
+          "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
+        },
+        {
           "source_id": "FISRC-0afb458e7b0878f0",
           "source_url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
           "source_title": "OpenAI 支持的 Thrive Holdings 融资 20 亿美元，将 AI 引入企业",
@@ -410,14 +470,6 @@
           "source_content_hash": "494969b64dc816f3",
           "quote": "SoftBank ($30 billion)",
           "quote_hash": "0e0614f834ae6ffe9eed742267af7afecb0253156dbe578b98c351a6bc94b202"
-        },
-        {
-          "source_id": "FISRC-b86e0fbe62dfd3dc",
-          "source_url": "https://www.mexc.com/news/996087",
-          "source_title": "OpenAI Closes $122B Funding Round, Hits $852B Valuation as AI Infrastructure Race Intensifies | MEXC News",
-          "source_content_hash": "4e51c91e5fc7160c",
-          "quote": "SoftBank co-led alongside a16z, D. E. Shaw Ventures, MGX, TPG, and T. Rowe Price Associates.",
-          "quote_hash": "eb1a353f262c6b5f36cf042c55381d3642167f0b24ec4185728cb1f48dbe89f2"
         }
       ],
       "identity_status": "verified",

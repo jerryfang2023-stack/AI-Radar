@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-07",
-    "currentDate": "2026-11-07",
-    "eventCount": 4392,
+    "latestDataDate": "2026-11-08",
+    "currentDate": "2026-11-08",
+    "eventCount": 4401,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,7 +64,7 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 39,
+    "current_round_count": 40,
     "historical_or_ambiguous_count": 9,
     "portfolio_company_count": 35,
     "market_regions": [
@@ -73,12 +73,12 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-10-29",
+    "latest_disclosed_at": "2026-11-07",
     "role_counts": {
       "co_lead": 6,
       "historical_or_ambiguous": 9,
       "lead": 20,
-      "participant": 13
+      "participant": 14
     },
     "round_codes": [
       "multi_round",
@@ -271,6 +271,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ded2430b5f032810",
+        "funding_insight_id": "FI-7183666b813db13e",
+        "event_ids": [
+          "EV-aaf041c83cebba9a"
+        ],
+        "company_entity_id": "EN-7d3194f79e645c42",
+        "company_canonical_entity_id": "EN-7d3194f79e645c42",
+        "company_name": "OpenAI",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "$11 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 11000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "110 亿美元"
+        },
+        "announced_at": "2026-11-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3952ae60d488ad95",
+            "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
+            "source_title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
+            "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
+            "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
+            "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-eb8b29648643709c",
         "funding_insight_id": "FI-85c91dbd238af2fb",
@@ -2186,6 +2226,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-3952ae60d488ad95",
+        "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
+        "source_title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
+        "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
+        "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
+        "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
+      },
+      {
         "source_id": "FISRC-bc01622ffa1cd4de",
         "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
         "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
@@ -2675,16 +2723,16 @@
           "source_id": "a16z_about"
         },
         {
+          "description": "融资来源记录：OpenAI · 轮次未披露 · 2026-11-07 · 本轮参投 · $11 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3952ae60d488ad95"
+        },
+        {
           "description": "融资来源记录：Wabi · 轮次未披露 · 2026-10-29 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-bc01622ffa1cd4de"
         },
         {
           "description": "融资来源记录：Labelbox · E轮 · 2026-10-14 · 本轮参投 · more than $100 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-31a53dcde47855a0"
-        },
-        {
-          "description": "融资来源记录：TypeSafe AI · A轮 · 2026-10-09 · 本轮领投 · 约 8.7 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e4334f02f2e76723"
         }
       ],
       "contacts": [
@@ -2792,6 +2840,14 @@
           "quote_hash": "e99e0a75d100056586e1a241fc521ff6d9da626d9a7fcf9ab6dd36440c63b9bb"
         },
         {
+          "source_id": "FISRC-3952ae60d488ad95",
+          "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
+          "source_title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
+          "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
+          "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
+          "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
+        },
+        {
           "source_id": "FISRC-bc01622ffa1cd4de",
           "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
           "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
@@ -2806,14 +2862,6 @@
           "source_content_hash": "abf71b7341e1d71729971470dba1a61c3c2dbc1ba13ef692e8af679cbf922914",
           "quote": "The round was led by Infinitum Partners, with participation from Wipro Ventures, Andreessen Horowitz (a16z), B Capital, Tau Ventures, Snowpoint Ventures, and others.",
           "quote_hash": "7f634d6cd46ae09cfcb1945e2af656e027bb19047744780e7d20d1088d334973"
-        },
-        {
-          "source_id": "FISRC-e4334f02f2e76723",
-          "source_url": "https://dealroom.co/news/x-2108956624966844866-typesafe-ai-raises-870m-series-a-at-a-7-5bn-valuation-three-weeks-after/",
-          "source_title": "TypeSafe AI raises $870m Series A at a $7.5bn valuation, three weeks after its $40m seed",
-          "source_content_hash": "30d0b165361bbd3e",
-          "quote": "a16z led, with Sequoia Capital, existing investor DCVC and angel investors participating, and a16z general partner Martin Casado is joining the board.",
-          "quote_hash": "94524cc0862a80040298a41c9585b3281bd17f9f7c49065c69ed863830e4d5da"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2824,7 +2872,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[38].role": {
+        "activities[39].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",
@@ -2832,7 +2880,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[41].role": {
+        "activities[42].role": {
           "text": "Series D 参投",
           "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
           "provider": "deepseek",
