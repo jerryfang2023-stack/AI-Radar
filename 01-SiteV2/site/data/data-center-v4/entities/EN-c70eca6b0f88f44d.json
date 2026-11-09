@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-08",
-    "currentDate": "2026-11-08",
-    "eventCount": 4401,
+    "latestDataDate": "2026-11-09",
+    "currentDate": "2026-11-09",
+    "eventCount": 4406,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -117,6 +117,7 @@
       "EV-31df816db86db282",
       "EV-901b5e79c3feb4b1",
       "EV-df88363737beb880",
+      "EV-fcaf084ec5c515b0",
       "EV-78758ccb5d45f4f9",
       "EV-ffe9a66690dc8b19",
       "EV-3ed4dfb4a164a3e0",
@@ -630,7 +631,7 @@
       "EN-da20c5952dba19d8"
     ],
     "firstSeen": "2025-09-04",
-    "lastSeen": "2026-11-08",
+    "lastSeen": "2026-11-09",
     "relationIds": [
       "REL2-6460871b6d621283",
       "REL2-02bdd133e9353ff7",
@@ -694,9 +695,9 @@
         "EV-57717e60d7a07800",
         "EV-3cc8e7ce0143047a",
         "EV-000a2cf24e205f93",
+        "EV-797921067ae4af17",
         "EV-5267a13213f966ec",
         "EV-20253e8f968787c7",
-        "EV-797921067ae4af17",
         "EV-38f85ebd3ffeb9da",
         "EV-53dad7c8f530b480",
         "EV-7ddfa7b82af141ec",
@@ -787,6 +788,7 @@
         "EV-ed8260ee9a7a80af"
       ],
       "deployments": [
+        "EV-fcaf084ec5c515b0",
         "EV-d35419bc2f596bce",
         "EV-67fd80c953bff90d",
         "EV-78758ccb5d45f4f9",
@@ -1204,25 +1206,24 @@
     },
     "timeline": [
       {
-        "id": "EV-fec6117165d02cd1",
-        "dataDate": "2026-11-08",
-        "date": "2026-11-02",
-        "eventType": "pricing_change",
-        "eventTypeLabel": "定价变更",
-        "eventGroup": "模型、产品与服务",
+        "id": "EV-fcaf084ec5c515b0",
+        "dataDate": "2026-11-09",
+        "date": "2026-11-08",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
         "status": "announced",
         "statusLabel": "已公布",
-        "title": "在座各位AI，都是「垃圾」",
+        "title": "AI 公司迄今最大发电设备采购订单：曝 Anthropic 砸 34 亿美元买燃气发电机",
         "displayTags": [],
         "entityIds": [
-          "EN-68c22d020240482b",
-          "EN-c70eca6b0f88f44d",
-          "EN-ea3bd73e2b506e00"
+          "EN-f2e085cca8d5beef",
+          "EN-c70eca6b0f88f44d"
         ]
       },
       {
         "id": "EV-57717e60d7a07800",
-        "dataDate": "2026-11-08",
+        "dataDate": "2026-11-09",
         "date": "2026-11-06",
         "eventType": "ipo_listing",
         "eventTypeLabel": "IPO 与上市",
@@ -1238,7 +1239,7 @@
       },
       {
         "id": "EV-3cc8e7ce0143047a",
-        "dataDate": "2026-11-08",
+        "dataDate": "2026-11-09",
         "date": "2026-11-03",
         "eventType": "ipo_listing",
         "eventTypeLabel": "IPO 与上市",
@@ -1253,7 +1254,7 @@
       },
       {
         "id": "EV-000a2cf24e205f93",
-        "dataDate": "2026-11-08",
+        "dataDate": "2026-11-09",
         "date": "2026-11-02",
         "eventType": "financial_performance",
         "eventTypeLabel": "财务表现",
@@ -1265,6 +1266,38 @@
         "entityIds": [
           "EN-95e61719d1b35c48",
           "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-797921067ae4af17",
+        "dataDate": "2026-11-09",
+        "date": "2026-11-02",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "更多资金，更少审查：这3张图表揭示VC创纪录融资年背后的分化",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-fec6117165d02cd1",
+        "dataDate": "2026-11-08",
+        "date": "2026-11-02",
+        "eventType": "pricing_change",
+        "eventTypeLabel": "定价变更",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "在座各位AI，都是「垃圾」",
+        "displayTags": [],
+        "entityIds": [
+          "EN-68c22d020240482b",
+          "EN-c70eca6b0f88f44d",
+          "EN-ea3bd73e2b506e00"
         ]
       },
       {
@@ -1295,21 +1328,6 @@
         "displayTags": [],
         "entityIds": [
           "EN-d1e9161dabbfee1b",
-          "EN-c70eca6b0f88f44d"
-        ]
-      },
-      {
-        "id": "EV-797921067ae4af17",
-        "dataDate": "2026-11-06",
-        "date": "2026-11-02",
-        "eventType": "ipo_listing",
-        "eventTypeLabel": "IPO 与上市",
-        "eventGroup": "融资与并购",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "更多资金，更少审查：这3张图表揭示VC创纪录融资年背后的分化",
-        "displayTags": [],
-        "entityIds": [
           "EN-c70eca6b0f88f44d"
         ]
       },
@@ -14838,12 +14856,12 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing",
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-robotic_system",
+        "TX-use_case-physical_automation",
         "TX-use_case-content_creation",
         "TX-product_form-developer_tool",
         "TX-product_form-ai_compute_system",
@@ -15428,7 +15446,6 @@
         "TX-technology-embodied_ai",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-product_form-chip_accelerator",
@@ -15444,6 +15461,7 @@
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-robotic_system",
+        "TX-use_case-physical_automation",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-use_case-security_operations",
@@ -15508,7 +15526,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-08"
+      "lastSeen": "2026-11-09"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -16165,7 +16183,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-08"
+      "lastSeen": "2026-11-09"
     },
     {
       "id": "EN-729324072d368379",
@@ -18165,7 +18183,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-11-08"
+      "lastSeen": "2026-11-09"
     },
     {
       "id": "TX-product_form-model",
@@ -18863,7 +18881,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-08"
+      "lastSeen": "2026-11-09"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -18873,6 +18891,7 @@
       "valueId": "agentic_execution",
       "eventIds": [
         "EV-12e63ddc1a14574e",
+        "EV-07d7ee423289a804",
         "EV-e632e1806935d10f",
         "EV-6133f09c61f5c5e8",
         "EV-62b42b7553b45bc6",
@@ -19567,6 +19586,7 @@
       ],
       "entityIds": [
         "EN-45524c831447998f",
+        "EN-38efea68165714db",
         "EN-64af05d8ce796170",
         "EN-f78f7a86360aa8f4",
         "EN-cd0d2344b5b823f0",
@@ -20344,7 +20364,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-11-08"
+      "lastSeen": "2026-11-09"
     },
     {
       "id": "TX-industry-media_entertainment",
@@ -20505,7 +20525,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-05",
-      "lastSeen": "2026-11-08"
+      "lastSeen": "2026-11-09"
     },
     {
       "id": "TX-product_form-compute_cloud_service",
