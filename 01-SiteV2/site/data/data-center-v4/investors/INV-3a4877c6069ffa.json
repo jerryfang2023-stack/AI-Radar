@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-08",
-    "currentDate": "2026-11-08",
-    "eventCount": 4401,
+    "latestDataDate": "2026-11-09",
+    "currentDate": "2026-11-09",
+    "eventCount": 4406,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,19 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "current_round_count": 5,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-10",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-11-04",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "lead": 2,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "seed",
@@ -92,6 +93,11 @@
         "name": "Entire Inc."
       },
       {
+        "entity_id": "EN-38efea68165714db",
+        "canonical_entity_id": "",
+        "name": "Finpilot"
+      },
+      {
         "entity_id": "EN-2dcd958b2064843f",
         "canonical_entity_id": "EN-2dcd958b2064843f",
         "name": "Thira"
@@ -103,6 +109,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1bc06155b3ee5d2a",
+        "funding_insight_id": "FI-0f1e60dee5a09471",
+        "event_ids": [
+          "EV-07d7ee423289a804"
+        ],
+        "company_entity_id": "EN-38efea68165714db",
+        "company_canonical_entity_id": "",
+        "company_name": "Finpilot",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-11-04",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6e0cc8a5dd051546",
+            "source_url": "https://www.geekwire.com/2026/finpilot-raises-10m-for-ai-agents-that-handle-the-grunt-work-for-institutional-investors/",
+            "source_title": "Finpilot 融资 1000 万美元，用于为机构投资者处理繁琐工作的 AI 智能体",
+            "source_content_hash": "29850c8142ef2e46ade0320eb9ea2246751f7266231d77ada18c7a4c07ff36ed",
+            "quote": "The round was led by Bay Area venture firm Lobby Capital, with participation from Madrona, which led Finpilot’s $4 million seed round in 2024.",
+            "quote_hash": "782ad485829b460471b334a4c4c30496f5ba0db3b09dd311df26cbbda3647026"
+          }
+        ]
+      },
       {
         "activity_id": "IA-202d225ee64a13c8",
         "funding_insight_id": "FI-18e35dfffb4a703f",
@@ -262,9 +308,49 @@
             "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
           }
         ]
+      },
+      {
+        "activity_id": "IA-20063e6d0e54eebd",
+        "funding_insight_id": "FI-0f1e60dee5a09471",
+        "event_ids": [
+          "EV-07d7ee423289a804"
+        ],
+        "company_entity_id": "EN-38efea68165714db",
+        "company_canonical_entity_id": "",
+        "company_name": "Finpilot",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2024年种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-6e0cc8a5dd051546",
+            "source_url": "https://www.geekwire.com/2026/finpilot-raises-10m-for-ai-agents-that-handle-the-grunt-work-for-institutional-investors/",
+            "source_title": "Finpilot 融资 1000 万美元，用于为机构投资者处理繁琐工作的 AI 智能体",
+            "source_content_hash": "29850c8142ef2e46ade0320eb9ea2246751f7266231d77ada18c7a4c07ff36ed",
+            "quote": "Madrona, which led Finpilot’s $4 million seed round in 2024",
+            "quote_hash": "e00280d5ab2d0cab2ebea582e79a0afa668ba75fdb6b41b01a75ec2574d0ec4c"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-6e0cc8a5dd051546",
+        "source_url": "https://www.geekwire.com/2026/finpilot-raises-10m-for-ai-agents-that-handle-the-grunt-work-for-institutional-investors/",
+        "source_title": "Finpilot 融资 1000 万美元，用于为机构投资者处理繁琐工作的 AI 智能体",
+        "source_content_hash": "29850c8142ef2e46ade0320eb9ea2246751f7266231d77ada18c7a4c07ff36ed",
+        "quote": "The round was led by Bay Area venture firm Lobby Capital, with participation from Madrona, which led Finpilot’s $4 million seed round in 2024.",
+        "quote_hash": "782ad485829b460471b334a4c4c30496f5ba0db3b09dd311df26cbbda3647026"
+      },
       {
         "source_id": "FISRC-cf38198e12772dce",
         "source_url": "https://www.adventinternational.com/news/vinci-raises-250m-series-b-at-1-5b-valuation-to-build-the-intelligence-infrastructure-for-a-new-era-of-hardware-engineering/",
@@ -296,6 +382,14 @@
         "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
         "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital",
         "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
+      },
+      {
+        "source_id": "FISRC-6e0cc8a5dd051546",
+        "source_url": "https://www.geekwire.com/2026/finpilot-raises-10m-for-ai-agents-that-handle-the-grunt-work-for-institutional-investors/",
+        "source_title": "Finpilot 融资 1000 万美元，用于为机构投资者处理繁琐工作的 AI 智能体",
+        "source_content_hash": "29850c8142ef2e46ade0320eb9ea2246751f7266231d77ada18c7a4c07ff36ed",
+        "quote": "Madrona, which led Finpilot’s $4 million seed round in 2024",
+        "quote_hash": "e00280d5ab2d0cab2ebea582e79a0afa668ba75fdb6b41b01a75ec2574d0ec4c"
       }
     ],
     "public_profile": {
@@ -314,16 +408,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Finpilot · A轮 · 2026-11-04 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6e0cc8a5dd051546"
+        },
+        {
           "description": "融资来源记录：Vinci · B轮 · 2026-10-06 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cf38198e12772dce"
         },
         {
           "description": "融资来源记录：Atomic · A轮 · 2026-09-29 · 本轮领投 · $12.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d4e6ae2384112548"
-        },
-        {
-          "description": "融资来源记录：Thira · 种子轮 · 2026-07-14 · 本轮领投 · $21 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1da67785ba366c16"
         }
       ],
       "contacts": [
@@ -345,6 +439,14 @@
           "quote_hash": "2f65188598201ce8275e672648d6244b3d42b098f38746c7487603e97d44144f"
         },
         {
+          "source_id": "FISRC-6e0cc8a5dd051546",
+          "source_url": "https://www.geekwire.com/2026/finpilot-raises-10m-for-ai-agents-that-handle-the-grunt-work-for-institutional-investors/",
+          "source_title": "Finpilot 融资 1000 万美元，用于为机构投资者处理繁琐工作的 AI 智能体",
+          "source_content_hash": "29850c8142ef2e46ade0320eb9ea2246751f7266231d77ada18c7a4c07ff36ed",
+          "quote": "The round was led by Bay Area venture firm Lobby Capital, with participation from Madrona, which led Finpilot’s $4 million seed round in 2024.",
+          "quote_hash": "782ad485829b460471b334a4c4c30496f5ba0db3b09dd311df26cbbda3647026"
+        },
+        {
           "source_id": "FISRC-cf38198e12772dce",
           "source_url": "https://www.adventinternational.com/news/vinci-raises-250m-series-b-at-1-5b-valuation-to-build-the-intelligence-infrastructure-for-a-new-era-of-hardware-engineering/",
           "source_title": "Vinci raises $250M Series B at $1.5B valuation to build the intelligence infrastructure for a new era of hardware engineering — Advent International",
@@ -359,14 +461,6 @@
           "source_content_hash": "b251ce98730eb4b50b29b3b86eaacfd259e978dd38cde546790ae6a814a232f8",
           "quote": "a $12.5 million Series A led by Klass Capital and Madrona",
           "quote_hash": "eb3e22a379bd9ff21198d97a8805a59cdddb29f1a8f100076c8ba6c9f5742cb4"
-        },
-        {
-          "source_id": "FISRC-1da67785ba366c16",
-          "source_url": "https://www.morningstar.com/news/business-wire/20260714608171/thira-raises-21-million-seed-round-led-by-madrona-to-build-the-back-office-that-runs-itself",
-          "source_title": "Thira Raises $21 Million Seed Round Led by Madrona to ...",
-          "source_content_hash": "d455e42bd85876dd",
-          "quote": "a $21 million seed financing led by Madrona",
-          "quote_hash": "aff8196052b206350aa87d9a95f764ee49bf1702482ed73c6ba02739b7cd3e90"
         }
       ],
       "last_verified_at": "2026-10-03",
