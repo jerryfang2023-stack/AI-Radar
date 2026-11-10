@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-09",
-    "currentDate": "2026-11-09",
-    "eventCount": 4406,
+    "latestDataDate": "2026-11-10",
+    "currentDate": "2026-11-10",
+    "eventCount": 4419,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-89bbafe3c39842b3",
       "EV-c0b3ec3c5e9ee0bd",
       "EV-55581be112058bd5",
       "EV-48cbd6592d009234",
@@ -86,10 +87,11 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-01-14",
-    "lastSeen": "2026-11-03",
+    "lastSeen": "2026-11-10",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-89bbafe3c39842b3",
         "EV-c0b3ec3c5e9ee0bd",
         "EV-55581be112058bd5",
         "EV-48cbd6592d009234",
@@ -117,6 +119,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-89bbafe3c39842b3",
+        "dataDate": "2026-11-10",
+        "date": "2026-11-09",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Astral 融资 550 万美元，通过超个性化教育开启下一场文艺复兴",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "education_learning",
+            "name": "教育与学习",
+            "entityIds": [
+              "EN-2e9f768344ff39ac"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-1a2290470e0aa754",
+          "EN-2e9f768344ff39ac"
+        ]
+      },
       {
         "id": "EV-c0b3ec3c5e9ee0bd",
         "dataDate": "2026-11-03",

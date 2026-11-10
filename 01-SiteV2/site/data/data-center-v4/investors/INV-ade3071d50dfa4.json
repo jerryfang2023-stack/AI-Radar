@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-09",
-    "currentDate": "2026-11-09",
-    "eventCount": 4406,
+    "latestDataDate": "2026-11-10",
+    "currentDate": "2026-11-10",
+    "eventCount": 4419,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 11,
+    "current_round_count": 12,
     "historical_or_ambiguous_count": 7,
-    "portfolio_company_count": 11,
+    "portfolio_company_count": 12,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-08-24",
-    "latest_disclosed_at": "2026-10-21",
+    "latest_disclosed_at": "2026-11-09",
     "role_counts": {
       "historical_or_ambiguous": 7,
       "lead": 3,
-      "participant": 8
+      "participant": 9
     },
     "round_codes": [
       "seed",
@@ -127,6 +127,11 @@
         "name": "Mistral AI"
       },
       {
+        "entity_id": "EN-d58999507a10460c",
+        "canonical_entity_id": "",
+        "name": "Nominal"
+      },
+      {
         "entity_id": "EN-c08f86842ff2c908",
         "canonical_entity_id": "",
         "name": "SRE.ai"
@@ -143,6 +148,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-040e42ce9f5b3e41",
+        "funding_insight_id": "FI-94eaf09d128c6f03",
+        "event_ids": [
+          "EV-cb688236861394f2"
+        ],
+        "company_entity_id": "EN-d58999507a10460c",
+        "company_canonical_entity_id": "",
+        "company_name": "Nominal",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$240 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 240000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.4 亿美元"
+        },
+        "announced_at": "2026-11-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3491226e16a1391a",
+            "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
+            "source_title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
+            "source_content_hash": "661a69b2d4192044",
+            "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+            "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-32733ad0d6bdfaa7",
         "funding_insight_id": "FI-b875723282f11479",
@@ -815,6 +860,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-3491226e16a1391a",
+        "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
+        "source_title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
+        "source_content_hash": "661a69b2d4192044",
+        "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+        "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+      },
+      {
         "source_id": "FISRC-c4c53e6f607010be",
         "source_url": "https://legora.com/blog/series-e",
         "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
@@ -1001,16 +1054,16 @@
           "source_id": "sfv_about"
         },
         {
+          "description": "融资来源记录：Nominal · C轮 · 2026-11-09 · 本轮参投 · $240 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3491226e16a1391a"
+        },
+        {
           "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c4c53e6f607010be"
         },
         {
           "description": "融资来源记录：Arena · B轮 · 2026-10-08 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-99134731fc9bfd4f"
-        },
-        {
-          "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4d11ed62a144a3f4"
         }
       ],
       "contacts": [
@@ -1047,6 +1100,14 @@
           "quote_hash": "08611ac76442a67a54131bc51f1ad1766b357f061c44472ec475bf4ed905e839"
         },
         {
+          "source_id": "FISRC-3491226e16a1391a",
+          "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
+          "source_title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
+          "source_content_hash": "661a69b2d4192044",
+          "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+          "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+        },
+        {
           "source_id": "FISRC-c4c53e6f607010be",
           "source_url": "https://legora.com/blog/series-e",
           "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
@@ -1061,14 +1122,6 @@
           "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
           "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
           "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
-        },
-        {
-          "source_id": "FISRC-4d11ed62a144a3f4",
-          "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
-          "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
-          "source_content_hash": "714c413ab36c1848",
-          "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
-          "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1079,7 +1132,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[13].role": {
+        "activities[14].role": {
           "text": "Series E 参投方",
           "source_hash": "4c5721848f6406bd6f2e84ed29d011b6af208116ac9cea44324fd35d85384690",
           "provider": "deepseek",
@@ -1087,7 +1140,7 @@
           "translated_at": "2026-09-18T02:49:06.821Z",
           "status": "translated"
         },
-        "activities[16].role": {
+        "activities[17].role": {
           "text": "Series F 新投资方",
           "source_hash": "06bf97aae7660f5f34f8621d4771e13e9ff74176637f7aaad508093ddffa8289",
           "provider": "deepseek",

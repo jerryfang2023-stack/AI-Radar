@@ -5,17 +5,17 @@
     "site_version": "SITE-V4.6.1-research-retirement",
     "column_version": "FUNDING-INSIGHT-V1.5.0-china-market",
     "taxonomy_version": "TAG-V4.1",
-    "latest_date": "2026-11-09",
-    "last_checked_date": "2026-11-09",
-    "latest_financing_date": "2026-11-07",
-    "generated_at": "2026-11-09T00:49:44.796Z",
-    "card_count": 894,
+    "latest_date": "2026-11-10",
+    "last_checked_date": "2026-11-10",
+    "latest_financing_date": "2026-11-09",
+    "generated_at": "2026-11-10T00:48:07.100Z",
+    "card_count": 898,
     "china_market_card_count": 255,
     "duplicate_rounds_removed": 88,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-11-09T00:50:56.180Z"
+      "generated_at": "2026-11-10T00:49:18.497Z"
     },
     "market_category_framework": {
       "name": "CB Insights AI 100 2026",
@@ -338,6 +338,3034 @@
   "cards": [
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-94eaf09d128c6f03",
+      "triggered_by_event_id": "EV-cb688236861394f2",
+      "as_of_date": "2026-11-10",
+      "company": {
+        "entity_id": "EN-d58999507a10460c",
+        "name": "Nominal",
+        "full_name": "Nominal",
+        "website": "https://nominal.io/",
+        "summary": "Nominal是面向硬件工程与测试的智能平台，连接硬件数据与工程上下文，帮助工程师分析复杂系统、定位问题并协同决策。",
+        "headquarters": "奥斯汀",
+        "founders": [
+          {
+            "name": "Cameron McCord",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-320dc636ecb880b5",
+                "quote": "Nominal CEO and co-founder Cameron McCord (pictured) is a former U.S. Navy submarine officer and an Anduril alum.",
+                "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+                "quote_hash": "315b363653caedbaea90502861240cd88a08034bc5b1ac3b98e24c0a3942a77e"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3491226e16a1391a",
+            "quote": "Nominal, the Hardware Intelligence Platform, today announced a $240 million Series C at a $3 billion valuation",
+            "source_content_hash": "661a69b2d4192044",
+            "quote_hash": "6daa1dca6f94099bfb3147f2c9113ac0ee88fea1b599ac4b6b67fa2261a63d06"
+          },
+          {
+            "source_id": "FISRC-431d526132cc0343",
+            "quote": "Hardware teams capture their data and context in Nominal, then build on top: live analysis, custom tools, and agents that accelerate engineering loops.",
+            "source_content_hash": "b1fa28f4fde7ed70",
+            "quote_hash": "24a669d40b5705711c5a9dc04759c10a8509cc31fcfc54cad162fee3594b673d"
+          }
+        ],
+        "application_entity_id": "EN-d58999507a10460c",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "C轮",
+        "amount": "$240 million",
+        "total_raised": "",
+        "announced_at": "2026-11-09",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Lightspeed Venture Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-320dc636ecb880b5",
+                "quote": "a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
+                "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+                "quote_hash": "a66e9c1b5c766bb0b7208c185cc6fd577939d39fcae65e2411372ca398aef9f4"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-1528b125301283"
+          },
+          {
+            "name": "Insight Partners",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-320dc636ecb880b5",
+                "quote": "a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
+                "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+                "quote_hash": "a66e9c1b5c766bb0b7208c185cc6fd577939d39fcae65e2411372ca398aef9f4"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-7626f5b02a6cc8"
+          },
+          {
+            "name": "Lux Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-db138e8b813b8b58",
+                "quote": "The round was led by Lightspeed Venture Partners and Insight Partners, with participation from existing investors including Lux Capital, Sequoia Capital and strategic backer Lockheed Martin Ventures.",
+                "source_content_hash": "1930e3f43369be6c",
+                "quote_hash": "850df8796e7d3962aa0dbccf6389b0810da45907c95956ec4b36cd9736e29804"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-43688af48a82c5"
+          },
+          {
+            "name": "Sequoia Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-db138e8b813b8b58",
+                "quote": "The round was led by Lightspeed Venture Partners and Insight Partners, with participation from existing investors including Lux Capital, Sequoia Capital and strategic backer Lockheed Martin Ventures.",
+                "source_content_hash": "1930e3f43369be6c",
+                "quote_hash": "850df8796e7d3962aa0dbccf6389b0810da45907c95956ec4b36cd9736e29804"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-862e0e7d2ba5cf"
+          },
+          {
+            "name": "Lockheed Martin Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-db138e8b813b8b58",
+                "quote": "The round was led by Lightspeed Venture Partners and Insight Partners, with participation from existing investors including Lux Capital, Sequoia Capital and strategic backer Lockheed Martin Ventures.",
+                "source_content_hash": "1930e3f43369be6c",
+                "quote_hash": "850df8796e7d3962aa0dbccf6389b0810da45907c95956ec4b36cd9736e29804"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "General Catalyst",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3491226e16a1391a",
+                "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+                "source_content_hash": "661a69b2d4192044",
+                "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-f381c3151a9bb7"
+          },
+          {
+            "name": "Founders Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3491226e16a1391a",
+                "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+                "source_content_hash": "661a69b2d4192044",
+                "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-fab7efd306c6f9"
+          },
+          {
+            "name": "Avenir",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3491226e16a1391a",
+                "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+                "source_content_hash": "661a69b2d4192044",
+                "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b422defa816809"
+          },
+          {
+            "name": "Salesforce Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3491226e16a1391a",
+                "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+                "source_content_hash": "661a69b2d4192044",
+                "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-ade3071d50dfa4"
+          },
+          {
+            "name": "M13",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3491226e16a1391a",
+                "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+                "source_content_hash": "661a69b2d4192044",
+                "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Red Glass Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3491226e16a1391a",
+                "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+                "source_content_hash": "661a69b2d4192044",
+                "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "PSP Growth",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3491226e16a1391a",
+                "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+                "source_content_hash": "661a69b2d4192044",
+                "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Deployment Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3491226e16a1391a",
+                "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+                "source_content_hash": "661a69b2d4192044",
+                "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Founders Fund",
+            "role": "B轮扩展领投（历史轮次）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-320dc636ecb880b5",
+                "quote": "This follows the company’s announcement in March of a $155 million Series B extension at a $1 billion valuation, led by Trae Stephens at Founders Fund.",
+                "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+                "quote_hash": "913ab7e53449b30ef48ca8077946b748c7757221751096b9d95db12eb2d2d33b"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-fab7efd306c6f9"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-320dc636ecb880b5",
+            "quote": "it announced a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
+            "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+            "quote_hash": "a57a8bf75a8b882f321c54f3a5907dace5ebf187ec0829150f5bb309fee726f1"
+          },
+          {
+            "source_id": "FISRC-320dc636ecb880b5",
+            "quote": "On Monday, it announced a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
+            "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+            "quote_hash": "f22c3c0a67f1fa950eaefd6e774a9ca232e3a2b1553810ffeb4ad91c737a20ab"
+          },
+          {
+            "source_id": "FISRC-3491226e16a1391a",
+            "quote": "Nominal, the Hardware Intelligence Platform, today announced a $240 million Series C at a $3 billion valuation, led by Lightspeed Venture Partners and co-led by Insight Partners.",
+            "source_content_hash": "661a69b2d4192044",
+            "quote_hash": "c97fff8baa32f51f8fdfb43c57cdfbc5e82287db95e08630eac8e88834a9248a"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$240 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 240000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.4 亿美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-cb688236861394f2",
+            "round_original": "C轮",
+            "amount": "$240 million",
+            "announced_at": "2026-11-09",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-320dc636ecb880b5",
+                "quote": "it announced a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
+                "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+                "quote_hash": "a57a8bf75a8b882f321c54f3a5907dace5ebf187ec0829150f5bb309fee726f1"
+              },
+              {
+                "source_id": "FISRC-320dc636ecb880b5",
+                "quote": "On Monday, it announced a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
+                "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+                "quote_hash": "f22c3c0a67f1fa950eaefd6e774a9ca232e3a2b1553810ffeb4ad91c737a20ab"
+              },
+              {
+                "source_id": "FISRC-3491226e16a1391a",
+                "quote": "Nominal, the Hardware Intelligence Platform, today announced a $240 million Series C at a $3 billion valuation, led by Lightspeed Venture Partners and co-led by Insight Partners.",
+                "source_content_hash": "661a69b2d4192044",
+                "quote_hash": "c97fff8baa32f51f8fdfb43c57cdfbc5e82287db95e08630eac8e88834a9248a"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 240000000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "2.4 亿美元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-320dc636ecb880b5",
+          "FISRC-3491226e16a1391a"
+        ]
+      },
+      "products": [
+        {
+          "name": "Nominal硬件智能平台",
+          "description": "连接遥测、视频、日志与文件等硬件测试数据，并保留工程上下文，支持实时分析、协作与可追溯决策。",
+          "target_customers": "航空航天、国防、机器人、能源和先进制造领域的工程团队",
+          "features": [
+            "遥测、视频、日志和文件统一采集与存储",
+            "时间序列、视频、音频和表格对齐到同一时间线",
+            "实时监控、趋势跟踪与可共享报告",
+            "支持云端、本地、气隙和边缘部署"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-431d526132cc0343",
+              "quote": "Every run’s telemetry, video, and files, with the context behind them. One record for your engineers and your agents.",
+              "source_content_hash": "b1fa28f4fde7ed70",
+              "quote_hash": "344829ad026a5bfc3243666ad138671b9834d8c79949c3198d41313ff4f03fa8"
+            },
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "Nominal supports the environments where hardware is developed and validated, from cloud deployments to on-premises infrastructure, air-gapped environments, and edge devices.",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "886fccb421bda9bca348511584cc85714c4e5aee168c978b9e66b777e151dfb4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Nominal Analyst",
+          "description": "公司首个AI智能体，用于检索工程数据、比较测试运行并执行复杂分析，答案可追溯到底层证据。",
+          "target_customers": "硬件工程师和测试团队",
+          "features": [
+            "检索工程数据并比较运行结果",
+            "展示答案背后的分析步骤与来源",
+            "标注异常发现以辅助根因定位"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "Nominal Analyst, the company’s first AI agent, investigates engineering data and runs complex analyses, with answers traceable to the underlying evidence.",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "19f793dfef98208de1e7b90bba15746f7cc1d03b25a7bded8cfcc803d464bff8"
+            },
+            {
+              "source_id": "FISRC-431d526132cc0343",
+              "quote": "AnalystAn AI agent that searches your data, compares runs, and shows the steps behind every answer.",
+              "source_content_hash": "b1fa28f4fde7ed70",
+              "quote_hash": "fc957e600ae3e7bc55acde66d909e152fcaa14ccb4bd1ed279ff40fc4105e8f5"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Nominal for Developers",
+          "description": "通过SQL、API、SDK和MCP让工程师直接访问平台，连接现有工具并构建自定义应用、工作流和智能体。",
+          "target_customers": "需要基于硬件数据开发工具和智能体的工程团队",
+          "features": [
+            "SQL、API和MCP访问",
+            "Python等语言SDK",
+            "支持连接Claude、Cursor等MCP客户端"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "Through SQL, APIs, and MCP, Nominal for Developers gives engineers direct access to the platform, allowing them to connect existing tools, build custom applications, and create their own workflows and agents on top of Nominal.",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "458e3580878536b1df38f24211aeae7c8ad8490d43c483fbffec83d132a64aa6"
+            },
+            {
+              "source_id": "FISRC-431d526132cc0343",
+              "quote": "Connect Claude, Cursor, or any MCP client to Nominal, so your own agents can query your engineering data.",
+              "source_content_hash": "b1fa28f4fde7ed70",
+              "quote_hash": "e8d82a1ab52e5b414b69f7d4678ebcd5d2d75769e29eeb37cd678d7c324c7702"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Anduril Industries",
+          "industry": "国防",
+          "use_case": "超过300名工程师在多个项目中用Nominal分析测试数据，原本需五到六小时的分析接近实时完成。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "At Anduril Industries, more than 300 engineers rely on Nominal across programs. Analysis that once took five to six hours now happens in near real time",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "4d33d8cd764471dbadb723dbc51f48b4ed799c8f7187da6bbba0ece76f283faf"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "HII",
+          "industry": "国防造船",
+          "use_case": "将部分分析任务从数小时缩短到数分钟，并将部分生产测试步骤减少约一半。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "At HII, Nominal reduced certain analysis tasks from hours to minutes and cut some production test steps by approximately half",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "72205b43e273de1bec95fbc3712aded0bb2176ada340acc2cbcc6e0425bb162b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Hermeus",
+          "industry": "航空航天",
+          "use_case": "将上传数据到查看数据的时间减少80%，并在七个月内设计建造Quarterhorse Mk 1飞机。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "Hermeus reduced the time between uploading data and reviewing it by 80% while designing and building its Quarterhorse Mk 1 aircraft in seven months.",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "cc3eee26f27871351a009a7f33a0b4d4370ab137b959f228b098660cb0c487be"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "General Atomics",
+          "industry": "国防",
+          "use_case": "作为防务制造商使用Nominal，开发自主飞行器。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-db138e8b813b8b58",
+              "quote": "The company also works with defence manufacturers including Anduril and General Atomics, both of which are developing autonomous aircraft for the US military.",
+              "source_content_hash": "1930e3f43369be6c",
+              "quote_hash": "05ada29ad02c23946c2368d6f99a6d0ead973315d416a71ce90f443c9cc130b4"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$240 million",
+          "observed_at": "2026-11-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-320dc636ecb880b5",
+              "quote": "a $240 million Series C at a $3 billion valuation",
+              "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+              "quote_hash": "1b01cc8905d2a84cd49c8c0f431e0433c07b47e80927a9916929a91570236019"
+            }
+          ]
+        },
+        {
+          "label": "本轮估值",
+          "value": "$3 billion",
+          "observed_at": "2026-11-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-320dc636ecb880b5",
+              "quote": "a $240 million Series C at a $3 billion valuation",
+              "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+              "quote_hash": "1b01cc8905d2a84cd49c8c0f431e0433c07b47e80927a9916929a91570236019"
+            }
+          ]
+        },
+        {
+          "label": "客户数量",
+          "value": "超过80家商业和政府组织",
+          "observed_at": "2026-11-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "More than 80 commercial and government organizations use Nominal, including five of the seven largest defense contractors.",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "d20a77ebbd66c4406ec5dbfc6ec29e412c0061064d4af1ed16ce00aaf027c9b2"
+            }
+          ]
+        },
+        {
+          "label": "Anduril使用Nominal的工程师数",
+          "value": "超过300名",
+          "observed_at": "2026-11-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "At Anduril Industries, more than 300 engineers rely on Nominal across programs.",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "d5eb0047851fe0aa45719da17fbd565147dc3703263db138f842fbcd1842aa00"
+            }
+          ]
+        },
+        {
+          "label": "美国空军STRATFI投资",
+          "value": "$71.2 million",
+          "observed_at": "2026-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "The Air Force recently selected Nominal for a $71.2 million Strategic Funding Increase (STRATFI) to support Collaborative Combat Aircraft capability development.",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "3c845ab4c64792580ba1f1cd8301f8ba7b9e30bcf8786a5e0fff6a3bc5dda3ab"
+            }
+          ]
+        },
+        {
+          "label": "2026年初以来收入增长",
+          "value": "超过三倍",
+          "observed_at": "2026-11-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-db138e8b813b8b58",
+              "quote": "The company said on Monday that its revenue has more than tripled since the beginning of 2026",
+              "source_content_hash": "1930e3f43369be6c",
+              "quote_hash": "de718d314f2f3492b8e314612ffcdc43d081aae9857831c168d07e8e5948143b"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Guru Chahal and Sebastian Duesterhoeft",
+          "quote": "As AI creates new possibilities across the physical world, we believe Nominal is uniquely positioned to help these teams adopt it where the stakes are highest.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "As AI creates new possibilities across the physical world, we believe Nominal is uniquely positioned to help these teams adopt it where the stakes are highest.",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "277e4afa5e918142de1cba1da1b866c883264d9e20f8f6b02a651fe60e46aa37"
+            }
+          ]
+        },
+        {
+          "speaker": "Crissy Costa Behrens",
+          "quote": "General-purpose AI models are becoming widely available, but they don’t carry an industry’s proprietary data, workflows, and institutional knowledge.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "General-purpose AI models are becoming widely available, but they don’t carry an industry’s proprietary data, workflows, and institutional knowledge.",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "21d55ec1e0d45bd1ac9ba11ce7b8c66d68f00da24e3194d0206ffe2d0af3e769"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Lightspeed Venture Partners",
+            "speaker": "Guru Chahal and Sebastian Duesterhoeft",
+            "speaker_role": "合伙人",
+            "rationale": "Lightspeed认为Nominal深入理解硬件工程现实，并已构建工程师日常使用的软件；在物理世界AI机会扩大时，Nominal处于帮助高 stakes 团队采用AI的位置。",
+            "quote": "Nominal has become an essential part of how some of the most ambitious engineering teams build and validate hardware. The company earned that position by understanding the realities of hardware engineering and building software engineers use every day",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3491226e16a1391a",
+                "quote": "Nominal has become an essential part of how some of the most ambitious engineering teams build and validate hardware. The company earned that position by understanding the realities of hardware engineering and building software engineers use every day",
+                "source_content_hash": "661a69b2d4192044",
+                "quote_hash": "ed1a21e6aa83a23bb6f339c39356ec5be07cb555709897026b7a9cde52754ae3"
+              }
+            ]
+          },
+          {
+            "institution": "Insight Partners",
+            "speaker": "Crissy Costa Behrens",
+            "speaker_role": "董事总经理",
+            "rationale": "Insight认为通用AI模型不携带行业专有数据、工作流和机构知识，持久价值来自把AI连接到这些上下文的平台；Nominal在硬件工程领域帮助团队将专业知识转化为持久优势。",
+            "quote": "General-purpose AI models are becoming widely available, but they don’t carry an industry’s proprietary data, workflows, and institutional knowledge. Lasting value comes from platforms that connect AI to that context and help organizations own and build on it",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3491226e16a1391a",
+                "quote": "General-purpose AI models are becoming widely available, but they don’t carry an industry’s proprietary data, workflows, and institutional knowledge. Lasting value comes from platforms that connect AI to that context and help organizations own and build on it",
+                "source_content_hash": "661a69b2d4192044",
+                "quote_hash": "d0fae6260d7187eabce7b2d8355d1f6f068e940d9944ae44a1906aadd2a6c295"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是Nominal能否把分散的硬件测试数据与工程上下文沉淀为可复用平台，并通过AI智能体提升高监管、高安全要求工程团队的测试与分析效率。当前$3B估值所依赖的已验证信号包括：超过80家商业和政府客户、五家最大防务承包商中的五家、Anduril超过300名工程师使用、收入自2026年初以来增长超过三倍，以及美国空军$71.2 million STRATFI项目。证据边界在于：来源未披露本轮累计融资额、ARR或盈利情况，客户效率数据来自公司披露的案例，尚缺独立审计口径。",
+        "validated_signals": [
+          "超过80家商业和政府组织使用Nominal",
+          "客户包括七家最大防务承包商中的五家",
+          "Anduril超过300名工程师在多个项目中使用Nominal",
+          "美国空军选择Nominal参与$71.2 million STRATFI项目",
+          "公司称2026年初以来收入增长超过三倍"
+        ],
+        "risks": [
+          "收入增长超过三倍为公司自述，来源未披露绝对收入、利润率或审计口径",
+          "客户效率提升数据来自公司新闻稿中的案例，缺少独立验证",
+          "来源未披露本轮累计融资额，无法判断历史融资与当前估值的完整资本结构",
+          "欧洲扩张的客户身份和扩张范围尚不明确",
+          "与PhysicsX的竞争仅被提及，缺少产品、场景和客户层面的可比较证据"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "data_analysis",
+          "design_engineering",
+          "knowledge_search"
+        ],
+        "industry_ids": [
+          "aerospace_defense",
+          "manufacturing",
+          "energy_utilities"
+        ],
+        "target_user_ids": [
+          "developer",
+          "business_user",
+          "researcher"
+        ],
+        "sector": "硬件工程测试数据智能平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Nominal能否把分散的硬件测试数据与工程上下文沉淀为可复用平台，并通过AI智能体提升高监管、高安全要求工程团队的测试与分析效率。当前$3B估值所依赖的已验证信号包括：超过80家商业和政府客户、五家最大防务承包商中的五家、Anduril超过300名工程师使用、收入自2026年初以来增长超过三倍，以及美国空军$71.2 million STRATFI项目。证据边界在于：来源未披露本轮累计融资额、ARR或盈利情况，客户效率数据来自公司披露的案例，尚缺独立审计口径。",
+          "evidence_signals": [
+            "超过80家商业和政府组织使用Nominal",
+            "客户包括七家最大防务承包商中的五家",
+            "Anduril超过300名工程师在多个项目中使用Nominal",
+            "美国空军选择Nominal参与$71.2 million STRATFI项目",
+            "公司称2026年初以来收入增长超过三倍"
+          ],
+          "risks": [
+            "收入增长超过三倍为公司自述，来源未披露绝对收入、利润率或审计口径",
+            "客户效率提升数据来自公司新闻稿中的案例，缺少独立验证",
+            "来源未披露本轮累计融资额，无法判断历史融资与当前估值的完整资本结构",
+            "欧洲扩张的客户身份和扩张范围尚不明确",
+            "与PhysicsX的竞争仅被提及，缺少产品、场景和客户层面的可比较证据"
+          ],
+          "institutional_rationale_status": "disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Nominal硬件智能平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Nominal Analyst",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Nominal for Developers",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Cameron McCord",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lightspeed Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Insight Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lux Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sequoia Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lockheed Martin Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "General Catalyst",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Founders Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Avenir",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Salesforce Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "M13",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Red Glass Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "PSP Growth",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Deployment Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Founders Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Anduril Industries",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "HII",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Hermeus",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "General Atomics",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-cb688236861394f2",
+          "date": "2026-11-09",
+          "title": "AI硬件初创公司Nominal在8个月内估值翻三倍至$3B",
+          "amount": "$240 million",
+          "source_refs": [
+            "SA-caa0f63d74782e2b"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-320dc636ecb880b5",
+          "source_url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months",
+          "title": "AI硬件初创公司Nominal在8个月内估值翻三倍至$3B",
+          "publisher": "techcrunch.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-10T00:18:32.671Z",
+          "content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+          "source_artifact_id": "SA-caa0f63d74782e2b",
+          "raw_id": "RAW-562ffc3391e892a4",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-db138e8b813b8b58",
+          "source_url": "https://resiliencemedia.co/nominal-triples-valuation-to-3b-following-240m-funding-round/",
+          "title": "Nominal triples valuation to $3B following $240M funding round",
+          "publisher": "resiliencemedia.co",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-10T00:46:27.011Z",
+          "content_hash": "1930e3f43369be6c",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-3491226e16a1391a",
+          "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
+          "title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
+          "publisher": "globenewswire.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-10T00:46:27.883Z",
+          "content_hash": "661a69b2d4192044",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-431d526132cc0343",
+          "source_url": "https://nominal.io/",
+          "title": "Nominal | The hardware intelligence platform",
+          "publisher": "nominal.io",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-10T00:46:37.002Z",
+          "content_hash": "b1fa28f4fde7ed70",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-10T00:46:55.929Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-10T00:46:55.929Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Nominal Analyst",
+            "Nominal for Developers",
+            "Nominal硬件智能平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Cameron McCord"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-cb688236861394f2"
+      ],
+      "aggregation": {
+        "key": "EN-d58999507a10460c|series_c|USD:exact:240000000:::|2026-11-09",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-94eaf09d128c6f03",
+          "event_ids": [
+            "EV-cb688236861394f2"
+          ],
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "$240 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 240000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "2.4 亿美元"
+          },
+          "announced_at": "2026-11-09",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "enterprise_software_platform",
+        "name": "企业软件平台",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "enterprise_applications",
+        "name": "企业级应用",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "productivity_enterprise_workflows",
+        "name": "生产力与企业工作流",
+        "method": "card_explicit"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-cb688236861394f2",
+        "direction": ""
+      },
+      "translations": {
+        "zh-CN": {
+          "company.headquarters": {
+            "text": "奥斯汀",
+            "source_hash": "a161e03bf85ef872b83a9b3a13e771deef8e4890110b0ceb641b8b343e27194b",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-10T00:49:18.497Z",
+            "status": "translated"
+          },
+          "financing.other_round_investors[0].role": {
+            "text": "B轮扩展领投（历史轮次）",
+            "source_hash": "ee981dd8705e0cfa3b964ed99131c0f624cf9381dad2993a942a00d986c9490e",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-10T00:49:18.497Z",
+            "status": "translated"
+          },
+          "products[2].features[0]": {
+            "text": "SQL、API和MCP访问",
+            "source_hash": "8749aa07216da9a181223f802d2e97b8909cb2cf431fb19931e269d8073f6d6f",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-10T00:49:18.497Z",
+            "status": "translated"
+          },
+          "products[2].features[1]": {
+            "text": "Python等语言SDK",
+            "source_hash": "6de9de7fc1d8c1d28148fcd616385ba7cbaab79843a5b6799cd3b0b6fc4c9a1d",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-10T00:49:18.497Z",
+            "status": "translated"
+          },
+          "products[2].features[2]": {
+            "text": "支持连接Claude、Cursor等MCP客户端",
+            "source_hash": "ccd893f6e9814bf1924c026054ce8b67b12f7524b1f6ee2829c93c3c93a465cd",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-10T00:49:18.497Z",
+            "status": "translated"
+          },
+          "metrics[3].label": {
+            "text": "Anduril使用Nominal的工程师数",
+            "source_hash": "a3383723ec682e381e79136604d0e79906e127c3b542c481aa3aef41dde50a1f",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-10T00:49:18.497Z",
+            "status": "translated"
+          },
+          "metrics[4].label": {
+            "text": "美国空军STRATFI投资",
+            "source_hash": "fcb8c7b9719a04d1e55cae5de147fdb2289b7763b94cba82d267704f4652f898",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-10T00:49:18.497Z",
+            "status": "translated"
+          }
+        }
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-f5909e83b926a7cd",
+      "triggered_by_event_id": "EV-89bbafe3c39842b3",
+      "as_of_date": "2026-11-10",
+      "company": {
+        "entity_id": "EN-2e9f768344ff39ac",
+        "name": "Astral",
+        "full_name": "Astral",
+        "website": "astralhomeschool.com",
+        "summary": "Astral是一家构建超个性化教育的AI实验室，其首个产品是面向K-8年级的AI数学辅导工具，围绕每个孩子的思维方式生成课程。",
+        "headquarters": "旧金山",
+        "founders": [
+          {
+            "name": "Shivam Sharma",
+            "role": "首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f4a1d449fc834ce7",
+                "quote": "said Shivam Sharma, CEO of Astral",
+                "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+                "quote_hash": "8c7acc2fec296d99ea87eb8791f7407ea7ebb3caa27c089390d4ab957b796efe"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Fhad Sheikh",
+            "role": "首席产品官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f4a1d449fc834ce7",
+                "quote": "said Fhad Sheikh, CPO of Astral",
+                "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+                "quote_hash": "2684dcbbedb630dbf0b8ad107d2c9e20979c28c6c9483b6674f64ec54318b029"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f4a1d449fc834ce7",
+            "quote": "Astral, an AI lab building hyper-personalized education",
+            "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+            "quote_hash": "c1aac5bce1cf14ecd21c183ecad430fd609595e4db07e452fec0c8b960e52210"
+          },
+          {
+            "source_id": "FISRC-3a0752ef4e86b173",
+            "quote": "Its first product, an AI math tutor for grades K-8, builds every lesson around how each child thinks.",
+            "source_content_hash": "025c5ae61a25906c",
+            "quote_hash": "11566e651eb0feb312925c4da2e740ac578fabba33e5407bef1760c38a83532b"
+          }
+        ],
+        "application_entity_id": "EN-2e9f768344ff39ac",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "轮次未披露",
+        "amount": "$5.5 million",
+        "total_raised": "",
+        "announced_at": "2026-11-09",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "MapleVC",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f4a1d449fc834ce7",
+                "quote": "The latest round was led by Andre Charoo, GP at MapleVC, with continued funding from Stand Together Ventures Lab (STVL), Conversion Capital, and Original Capital, among many others.",
+                "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+                "quote_hash": "72d318378f0774ce8e74ff37b927facc4cf98d19ebf3fe8b2d56a179a9a1adca"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Stand Together Ventures Lab (STVL)",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f4a1d449fc834ce7",
+                "quote": "The latest round was led by Andre Charoo, GP at MapleVC, with continued funding from Stand Together Ventures Lab (STVL), Conversion Capital, and Original Capital, among many others.",
+                "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+                "quote_hash": "72d318378f0774ce8e74ff37b927facc4cf98d19ebf3fe8b2d56a179a9a1adca"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Conversion Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f4a1d449fc834ce7",
+                "quote": "The latest round was led by Andre Charoo, GP at MapleVC, with continued funding from Stand Together Ventures Lab (STVL), Conversion Capital, and Original Capital, among many others.",
+                "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+                "quote_hash": "72d318378f0774ce8e74ff37b927facc4cf98d19ebf3fe8b2d56a179a9a1adca"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-a42a523fe148ff"
+          },
+          {
+            "name": "Original Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f4a1d449fc834ce7",
+                "quote": "The latest round was led by Andre Charoo, GP at MapleVC, with continued funding from Stand Together Ventures Lab (STVL), Conversion Capital, and Original Capital, among many others.",
+                "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+                "quote_hash": "72d318378f0774ce8e74ff37b927facc4cf98d19ebf3fe8b2d56a179a9a1adca"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f4a1d449fc834ce7",
+            "quote": "SAN FRANCISCO, Nov. 9, 2026 /PRNewswire/ -- Astral, an AI lab building hyper-personalized education, today announced it has raised a total of $5.5 million to bring its AI tutor to families in all 50 states.",
+            "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+            "quote_hash": "3dc424cca386566dfafed8d2de689eaf6db1ca3899cdeae0496d2ddac78371bf"
+          },
+          {
+            "source_id": "FISRC-f4a1d449fc834ce7",
+            "quote": "today announced it has raised a total of $5.5 million to bring its AI tutor to families in all 50 states",
+            "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+            "quote_hash": "55ea49c8f467040cdb98eaf55700a8abc9d5bc5672dc4d3de4adf9b38a43a64c"
+          },
+          {
+            "source_id": "FISRC-3a0752ef4e86b173",
+            "quote": "The latest round was led by Andre Charoo, GP at MapleVC, with continued funding from Stand Together Ventures Lab (STVL), Conversion Capital, and Original Capital, among many others.",
+            "source_content_hash": "025c5ae61a25906c",
+            "quote_hash": "72d318378f0774ce8e74ff37b927facc4cf98d19ebf3fe8b2d56a179a9a1adca"
+          }
+        ],
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "$5.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "550 万美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-89bbafe3c39842b3",
+            "round_original": "轮次未披露",
+            "amount": "$5.5 million",
+            "announced_at": "2026-11-09",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f4a1d449fc834ce7",
+                "quote": "SAN FRANCISCO, Nov. 9, 2026 /PRNewswire/ -- Astral, an AI lab building hyper-personalized education, today announced it has raised a total of $5.5 million to bring its AI tutor to families in all 50 states.",
+                "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+                "quote_hash": "3dc424cca386566dfafed8d2de689eaf6db1ca3899cdeae0496d2ddac78371bf"
+              },
+              {
+                "source_id": "FISRC-f4a1d449fc834ce7",
+                "quote": "today announced it has raised a total of $5.5 million to bring its AI tutor to families in all 50 states",
+                "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+                "quote_hash": "55ea49c8f467040cdb98eaf55700a8abc9d5bc5672dc4d3de4adf9b38a43a64c"
+              },
+              {
+                "source_id": "FISRC-3a0752ef4e86b173",
+                "quote": "The latest round was led by Andre Charoo, GP at MapleVC, with continued funding from Stand Together Ventures Lab (STVL), Conversion Capital, and Original Capital, among many others.",
+                "source_content_hash": "025c5ae61a25906c",
+                "quote_hash": "72d318378f0774ce8e74ff37b927facc4cf98d19ebf3fe8b2d56a179a9a1adca"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 5500000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "550 万美元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-f4a1d449fc834ce7",
+          "FISRC-3a0752ef4e86b173"
+        ]
+      },
+      "products": [
+        {
+          "name": "Astral AI数学辅导工具",
+          "description": "面向K-8年级的AI数学辅导工具，学习每个孩子的知识缺口、节奏和推理方式，并据此围绕其生成课程。",
+          "target_customers": "美国家庭，K-8年级学生",
+          "features": [
+            "学习每个孩子的知识缺口、节奏和推理方式",
+            "围绕单个学生生成课程",
+            "每月100美元",
+            "在九个州获批用于Education Savings Account (ESA) funding"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4a1d449fc834ce7",
+              "quote": "Its first product, an AI math tutor for grades K-8, builds every lesson around how each child thinks.",
+              "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+              "quote_hash": "11566e651eb0feb312925c4da2e740ac578fabba33e5407bef1760c38a83532b"
+            },
+            {
+              "source_id": "FISRC-f4a1d449fc834ce7",
+              "quote": "It learns each child's gaps, pace, and way of reasoning, then writes their lessons around them, replacing the mass-produced textbook with a curriculum built for one student.",
+              "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+              "quote_hash": "f6869d1f49e0358c33c5b531d6d2ad412cc0abd7509af2616679e25f6c80014a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资总额",
+          "value": "$5.5 million",
+          "observed_at": "2026-11-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4a1d449fc834ce7",
+              "quote": "today announced it has raised a total of $5.5 million",
+              "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+              "quote_hash": "c88ae5a7f0ca9b3a7fe36f7be1ee60da25b4912194b9925efe4203bc1f94652a"
+            }
+          ]
+        },
+        {
+          "label": "已使用家庭覆盖州数",
+          "value": "超过33个州",
+          "observed_at": "2026-11-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4a1d449fc834ce7",
+              "quote": "Thousands of families in more than 33 states already use it",
+              "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+              "quote_hash": "ef78adb0c78055f16f9a4dfacfbfcc9aea81bf2bc4104477718af71494a07317"
+            }
+          ]
+        },
+        {
+          "label": "订阅价格",
+          "value": "每月100美元",
+          "observed_at": "2026-11-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4a1d449fc834ce7",
+              "quote": "It costs $100 per month",
+              "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+              "quote_hash": "156aa74767248e36c1324077978687da46facf9971b86ede4a651f2ac184c2c9"
+            }
+          ]
+        },
+        {
+          "label": "获批ESA funding的州数",
+          "value": "9个州",
+          "observed_at": "2026-11-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4a1d449fc834ce7",
+              "quote": "is approved for Education Savings Account (ESA) funding in nine states",
+              "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+              "quote_hash": "385e03a023a012b98cacb1b4b4c7fa38cd948637176f315b2af6aa2f80bd369d"
+            }
+          ]
+        },
+        {
+          "label": "学习速度对比",
+          "value": "每学习一小时掌握整年级内容的速度为公立学校同龄人的五倍",
+          "observed_at": "2026-11-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4a1d449fc834ce7",
+              "quote": "its students master entire grades five times faster than their public school peers per hour of learning time",
+              "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+              "quote_hash": "10e172114647d3d2b2a693c11e8183591afa42ab68017b696e113137204e22bf"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Shivam Sharma",
+          "quote": "Every great mind in history had someone who taught them, and only them. Genius has never been rare. The education that unlocks it has been",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4a1d449fc834ce7",
+              "quote": "Every great mind in history had someone who taught them, and only them. Genius has never been rare. The education that unlocks it has been",
+              "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+              "quote_hash": "160ee167dcb6b3bf501e36a78ebddf35935828698b857296a2545e2424db34e4"
+            }
+          ]
+        },
+        {
+          "speaker": "Fhad Sheikh",
+          "quote": "No child is unteachable",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4a1d449fc834ce7",
+              "quote": "No child is unteachable",
+              "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+              "quote_hash": "0bd53e0c2b707299fd1e9808c786eea5ef8763367834526c73fe22dbb894356e"
+            }
+          ]
+        },
+        {
+          "speaker": "Victor Pereira",
+          "quote": "What excites me about Astral is not simply the sophistication of its AI, but the educational principles driving its design: a living curriculum that continuously adapts to each learner",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4a1d449fc834ce7",
+              "quote": "What excites me about Astral is not simply the sophistication of its AI, but the educational principles driving its design: a living curriculum that continuously adapts to each learner",
+              "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+              "quote_hash": "54f5818b17a7ab8345a6d3947fb16a4d743d6fbc8c60b792e13bbe0ef88da1b7"
+            }
+          ]
+        },
+        {
+          "speaker": "Cathy Duffy",
+          "quote": "Nearly all of the curriculum I've reviewed is written for an average student who doesn't exist. Astral is truly innovative. It builds the curriculum around the child instead of making the child fit the curriculum.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4a1d449fc834ce7",
+              "quote": "Nearly all of the curriculum I've reviewed is written for an average student who doesn't exist. Astral is truly innovative. It builds the curriculum around the child instead of making the child fit the curriculum.",
+              "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+              "quote_hash": "9d6cddeff5812cb34c045766abedf72ff8ab213a2d239f315d770b88951731d6"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "本轮资本押注的核心变量是超个性化AI辅导能否从早期家庭使用扩展至全美50州家庭，并以每月100美元订阅和九个州的ESA资金资格形成可负担的付费路径。已验证信号包括：超过33个州已有数千家庭使用、学生每小时学习掌握整年级内容的速度为公立学校同龄人五倍、九个州获批ESA funding。证据边界在于：来源未披露本轮具体轮次名称、累计融资额、用户付费转化率、留存或收入数据，因此无法判断增长质量与单位经济性。",
+        "validated_signals": [
+          "超过33个州已有数千家庭使用AI辅导工具",
+          "学生每小时学习掌握整年级内容的速度为公立学校同龄人五倍",
+          "每月100美元订阅价格",
+          "在九个州获批用于Education Savings Account (ESA) funding"
+        ],
+        "risks": [
+          "来源未披露本轮轮次名称与累计融资额，融资阶段与资金储备不透明",
+          "用户规模仅以“数千家庭”描述，缺少付费转化、留存与收入数据",
+          "学习效果对比来自公司自述，缺少独立第三方验证",
+          "ESA funding仅在九个州获批，政策覆盖扩展存在不确定性"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "education",
+        "market_application_id": "",
+        "use_case_ids": [
+          "education_learning"
+        ],
+        "industry_ids": [
+          "education"
+        ],
+        "target_user_ids": [
+          "consumer",
+          "student"
+        ],
+        "sector": "K-8超个性化AI数学辅导",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是超个性化AI辅导能否从早期家庭使用扩展至全美50州家庭，并以每月100美元订阅和九个州的ESA资金资格形成可负担的付费路径。已验证信号包括：超过33个州已有数千家庭使用、学生每小时学习掌握整年级内容的速度为公立学校同龄人五倍、九个州获批ESA funding。证据边界在于：来源未披露本轮具体轮次名称、累计融资额、用户付费转化率、留存或收入数据，因此无法判断增长质量与单位经济性。",
+          "evidence_signals": [
+            "超过33个州已有数千家庭使用AI辅导工具",
+            "学生每小时学习掌握整年级内容的速度为公立学校同龄人五倍",
+            "每月100美元订阅价格",
+            "在九个州获批用于Education Savings Account (ESA) funding"
+          ],
+          "risks": [
+            "来源未披露本轮轮次名称与累计融资额，融资阶段与资金储备不透明",
+            "用户规模仅以“数千家庭”描述，缺少付费转化、留存与收入数据",
+            "学习效果对比来自公司自述，缺少独立第三方验证",
+            "ESA funding仅在九个州获批，政策覆盖扩展存在不确定性"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Astral AI数学辅导工具",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Shivam Sharma",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Fhad Sheikh",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "MapleVC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Stand Together Ventures Lab (STVL)",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Conversion Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Original Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-89bbafe3c39842b3",
+          "date": "2026-11-09",
+          "title": "Astral 融资 550 万美元，通过超个性化教育开启下一场文艺复兴",
+          "amount": "$5.5 million",
+          "source_refs": [
+            "SA-73ec3eed55d14f99"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-f4a1d449fc834ce7",
+          "source_url": "https://www.prnewswire.com/news-releases/astral-raises-5-5m-to-unlock-the-next-renaissance-through-hyper-personalized-education-302933044.html",
+          "title": "Astral 融资 550 万美元，通过超个性化教育开启下一场文艺复兴",
+          "publisher": "www.prnewswire.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-10T00:18:34.613Z",
+          "content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+          "source_artifact_id": "SA-73ec3eed55d14f99",
+          "raw_id": "RAW-29f91e06dacff043",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-3a0752ef4e86b173",
+          "source_url": "https://www.morningstar.com/news/pr-newswire/20261109fl92171/astral-raises-55m-to-unlock-the-next-renaissance-through-hyper-personalized-education",
+          "title": "Astral Raises $5.5M to Unlock the Next Renaissance Through Hyper-Personalized Education",
+          "publisher": "morningstar.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-10T00:46:29.415Z",
+          "content_hash": "025c5ae61a25906c",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-10T00:46:54.174Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-10T00:46:54.174Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Astral AI数学辅导工具"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Fhad Sheikh",
+            "Shivam Sharma"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-89bbafe3c39842b3"
+      ],
+      "aggregation": {
+        "key": "EN-2e9f768344ff39ac|undisclosed|USD:exact:5500000:::|2026-11-09",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-f5909e83b926a7cd",
+          "event_ids": [
+            "EV-89bbafe3c39842b3"
+          ],
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "轮次未披露",
+          "amount_original": "$5.5 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 5500000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "550 万美元"
+          },
+          "announced_at": "2026-11-09",
+          "disclosure_status": "partially_disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "end_user_application",
+        "name": "终端 AI 应用",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "industry_applications",
+        "name": "行业应用",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "industry",
+        "id": "education",
+        "name": "教育",
+        "method": "card_explicit"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-89bbafe3c39842b3",
+        "direction": ""
+      },
+      "translations": {
+        "zh-CN": {
+          "company.founders[0].role": {
+            "text": "首席执行官",
+            "source_hash": "57f0df0e3d01f3f2b0aaf23f34e9555027766525ce779fbe5f0b044021d6fd15",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-14T07:17:15.985Z",
+            "status": "translated"
+          },
+          "company.founders[1].role": {
+            "text": "首席产品官",
+            "source_hash": "a4b8abb4189b7f0d51a8fd877791bb67d9acc186b32c1292e094f7f2de2809a8",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-14T07:17:18.959Z",
+            "status": "translated"
+          },
+          "products[0].features[3]": {
+            "text": "在九个州获批用于Education Savings Account (ESA) funding",
+            "source_hash": "ba8a965bfbf1b766a4642c7aa7059925e131cc50f5675c0c1de15fc1b7985a78",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-10T00:49:18.497Z",
+            "status": "translated"
+          },
+          "metrics[3].label": {
+            "text": "获批ESA funding的州数",
+            "source_hash": "3e1d0b90914509934d16db25ea5fa235631e0a03c757d82d2bd9848cb343cddc",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-10T00:49:18.497Z",
+            "status": "translated"
+          }
+        }
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-b53014d597338c56",
+      "triggered_by_event_id": "EV-fa632ba1976ddf90",
+      "as_of_date": "2026-11-10",
+      "company": {
+        "entity_id": "EN-9e1adfdb3b0d1064",
+        "name": "Phaze",
+        "full_name": "Phaze",
+        "website": "https://phaze.app",
+        "summary": "Phaze 为人类和 AI 智能体提供高性能远程计算机访问，把昂贵且常闲置的工作站转为可按需分配、集中管控的共享算力资源。",
+        "headquarters": "犹他州",
+        "founders": [
+          {
+            "name": "Benjy Boxer",
+            "role": "CEO兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a42fcca24e8ae799",
+                "quote": "said Benjy Boxer, CEO and co-founder of Phaze",
+                "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+                "quote_hash": "cd1a252778ed78b150a95bdf1ebbb052efd4a0825f7528a403bb3180815d68a6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Chris Dickson",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-df117e24e3f37b8e",
+                "quote": "Founders Benjy Boxer and Chris Dickson previously built Parsec",
+                "source_content_hash": "4529239169c9e058",
+                "quote_hash": "c804dd56dcc93bb44c4b00931bab9f777d1ac5f3595d8b9d7cdbdf3db4c1f557"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a42fcca24e8ae799",
+            "quote": "Phaze provides high-performance remote access to computers for people and AI agents. Phaze is headquartered in Utah.",
+            "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+            "quote_hash": "2f5481d4007771bd64ee60a06292467f0d17f51ab04f4709596ebaa786a6aeaa"
+          },
+          {
+            "source_id": "FISRC-0a2c3456c838b571",
+            "quote": "Phaze, based in Utah, is a remote access software company that announced it has raised $8.75 million in seed funding.",
+            "source_content_hash": "ec9800e8290f1cc4",
+            "quote_hash": "fdeeb190f9063c092ced759fcc24c3f4f4905911c6479cd70354261129ade755"
+          }
+        ],
+        "application_entity_id": "EN-9e1adfdb3b0d1064",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$8.75 million",
+        "total_raised": "",
+        "announced_at": "2026-11-04",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "a16z",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a42fcca24e8ae799",
+                "quote": "Phaze today announced it raised $8.75 million in seed funding led by a16z, with participation from Indie, NextView, Makers, and Lerer Hippeau.",
+                "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+                "quote_hash": "6fbb28364f2f40b606d72963cdafc1e94e0fca2cf373ba824cacd94d1be39bec"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b8a0e793124952"
+          },
+          {
+            "name": "Indie",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a42fcca24e8ae799",
+                "quote": "Phaze today announced it raised $8.75 million in seed funding led by a16z, with participation from Indie, NextView, Makers, and Lerer Hippeau.",
+                "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+                "quote_hash": "6fbb28364f2f40b606d72963cdafc1e94e0fca2cf373ba824cacd94d1be39bec"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "NextView",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a42fcca24e8ae799",
+                "quote": "Phaze today announced it raised $8.75 million in seed funding led by a16z, with participation from Indie, NextView, Makers, and Lerer Hippeau.",
+                "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+                "quote_hash": "6fbb28364f2f40b606d72963cdafc1e94e0fca2cf373ba824cacd94d1be39bec"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Makers",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a42fcca24e8ae799",
+                "quote": "Phaze today announced it raised $8.75 million in seed funding led by a16z, with participation from Indie, NextView, Makers, and Lerer Hippeau.",
+                "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+                "quote_hash": "6fbb28364f2f40b606d72963cdafc1e94e0fca2cf373ba824cacd94d1be39bec"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Lerer Hippeau",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a42fcca24e8ae799",
+                "quote": "Phaze today announced it raised $8.75 million in seed funding led by a16z, with participation from Indie, NextView, Makers, and Lerer Hippeau.",
+                "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+                "quote_hash": "6fbb28364f2f40b606d72963cdafc1e94e0fca2cf373ba824cacd94d1be39bec"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-751a82899eae7d"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a42fcca24e8ae799",
+            "quote": "NEW YORK, Nov. 4, 2026 /PRNewswire/ -- Phaze today announced it raised $8.75 million in seed funding led by a16z, with participation from Indie, NextView, Makers, and Lerer Hippeau.",
+            "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+            "quote_hash": "84798d4efcda6996f62b6fe4e0792ab998066ba1b890567b67beb5297a60a95d"
+          },
+          {
+            "source_id": "FISRC-a42fcca24e8ae799",
+            "quote": "Phaze today announced it raised $8.75 million in seed funding led by a16z, with participation from Indie, NextView, Makers, and Lerer Hippeau.",
+            "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+            "quote_hash": "6fbb28364f2f40b606d72963cdafc1e94e0fca2cf373ba824cacd94d1be39bec"
+          },
+          {
+            "source_id": "FISRC-0a2c3456c838b571",
+            "quote": "The funding round was led by a16z, with participation from Indie, NextView, Makers, and Lerer Hippeau.",
+            "source_content_hash": "ec9800e8290f1cc4",
+            "quote_hash": "da3324f113099b942d353e96b2f3f1eb51de10bd4831f5326a8b519caca32266"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$8.75 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 8750000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "875 万美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-fa632ba1976ddf90",
+            "round_original": "种子轮",
+            "amount": "$8.75 million",
+            "announced_at": "2026-11-04",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a42fcca24e8ae799",
+                "quote": "NEW YORK, Nov. 4, 2026 /PRNewswire/ -- Phaze today announced it raised $8.75 million in seed funding led by a16z, with participation from Indie, NextView, Makers, and Lerer Hippeau.",
+                "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+                "quote_hash": "84798d4efcda6996f62b6fe4e0792ab998066ba1b890567b67beb5297a60a95d"
+              },
+              {
+                "source_id": "FISRC-a42fcca24e8ae799",
+                "quote": "Phaze today announced it raised $8.75 million in seed funding led by a16z, with participation from Indie, NextView, Makers, and Lerer Hippeau.",
+                "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+                "quote_hash": "6fbb28364f2f40b606d72963cdafc1e94e0fca2cf373ba824cacd94d1be39bec"
+              },
+              {
+                "source_id": "FISRC-0a2c3456c838b571",
+                "quote": "The funding round was led by a16z, with participation from Indie, NextView, Makers, and Lerer Hippeau.",
+                "source_content_hash": "ec9800e8290f1cc4",
+                "quote_hash": "da3324f113099b942d353e96b2f3f1eb51de10bd4831f5326a8b519caca32266"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 8750000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "875 万美元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-a42fcca24e8ae799",
+          "FISRC-0a2c3456c838b571"
+        ]
+      },
+      "products": [
+        {
+          "name": "高性能远程桌面",
+          "description": "面向 3D、设计和软件开发等重负载工作，远程操作高性能计算机，并尽量接近本地工作站的响应与画质。",
+          "target_customers": "从事 3D、设计和软件开发等重负载工作的员工及企业 IT 团队",
+          "features": [
+            "高性能远程桌面",
+            "共享工作站分配与再分配",
+            "集中式访问控制"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a42fcca24e8ae799",
+              "quote": "For employees doing demanding work in 3D, design and software development, Phaze provides a high-performance remote desktop that makes a remote workstation feel local.",
+              "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+              "quote_hash": "d830850a34c891cd4e2b33c6bd1808ad2b3976b67c54027a93875c4d3373cf1b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AI 智能体计算机访问（MCP server）",
+          "description": "通过 MCP server 让 computer-use 智能体远程连接并操作计算机，包括图形界面和应用，无需在目标机器安装 computer-use 软件。",
+          "target_customers": "需要让 AI 智能体在受管计算机上执行任务的企业与开发者",
+          "features": [
+            "智能体远程控制计算机",
+            "后台独立机器作业",
+            "人机同一会话交接控制权"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a42fcca24e8ae799",
+              "quote": "The company recently released an MCP server that lets computer-use agents remotely connect to and operate computers.",
+              "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+              "quote_hash": "0844f2574b86cee612f558d97c83332e98b776ffeadb9db210be1477b5fda63d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "共享工作站基础设施管理",
+          "description": "IT 团队可将昂贵工作站作为共享资源集中管理，按需求分配和再分配，并控制人员或智能体的访问权限。",
+          "target_customers": "拥有高价值工作站的企业 IT 团队",
+          "features": [
+            "工作站共享",
+            "企业身份认证与目录同步",
+            "审计日志"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a42fcca24e8ae799",
+              "quote": "Phaze also lets companies manage expensive workstations as shared infrastructure rather than assigning each machine to one employee.",
+              "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+              "quote_hash": "54cf7e3e4e905cf50517aea33726f7b196c327ed4128dbc7aa66a2b59cd2a4e9"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$8.75 million",
+          "observed_at": "2026-11-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a42fcca24e8ae799",
+              "quote": "Phaze today announced it raised $8.75 million in seed funding",
+              "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+              "quote_hash": "ddb1510084224b8a8424da7c60db26d7c9ddfdeefe7b993467d85e1d6e10c2e8"
+            }
+          ]
+        },
+        {
+          "label": "高端工作站单台成本",
+          "value": "upwards of $10,000",
+          "observed_at": "2026-11-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a42fcca24e8ae799",
+              "quote": "With high-end workstations costing upwards of $10,000 and often sitting idle",
+              "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+              "quote_hash": "0ea7f3e6aa34322dcf27c538cc482b2b338b49f0ac25d3738288c4af8704da44"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Benjy Boxer",
+          "quote": "The computer sitting on your desk shouldn't determine what compute you can access",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a42fcca24e8ae799",
+              "quote": "\"The computer sitting on your desk shouldn't determine what compute you can access,\" said Benjy Boxer, CEO and co-founder of Phaze.",
+              "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+              "quote_hash": "5d15793af757bc6a70fca261c6d045157f00bde4fdfbb8e96159d0d733f06ec5"
+            }
+          ]
+        },
+        {
+          "speaker": "Martin Casado",
+          "quote": "High-end compute is too expensive to sit idle on individual desks",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a42fcca24e8ae799",
+              "quote": "\"High-end compute is too expensive to sit idle on individual desks,\" said Martin Casado, General Partner at a16z.",
+              "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+              "quote_hash": "13c922271a80dc6c99fb4ec4bfdb4acbbea5eb0a3706b3fd085ac160c6d350ff"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "a16z",
+            "speaker": "Martin Casado",
+            "speaker_role": "General Partner at a16z",
+            "rationale": "a16z 认为高端算力不应闲置在个人桌面，Phaze 正把工作站转为面向人与 AI 智能体的共享基础设施，且团队有十余年相关经验。",
+            "quote": "High-end compute is too expensive to sit idle on individual desks",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a42fcca24e8ae799",
+                "quote": "\"High-end compute is too expensive to sit idle on individual desks,\" said Martin Casado, General Partner at a16z. \"Phaze is turning those machines into shared infrastructure for people and AI agents.",
+                "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+                "quote_hash": "0ea1d2451fa5b9ecbe23cdecce2ccb86e9454681274cf329c906ddb0723fb794"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是：AI 智能体需要可实际操作图形界面与应用的完整计算机环境，而企业又希望这类操作发生在自己管控的机器和既有身份权限体系内；Phaze 以远程桌面加 MCP server 同时服务人类重负载工作与智能体操作，并把高价工作站转为共享基础设施。当前融资所依赖的已验证信号主要是产品能力与团队履历：已发布 MCP server、创始人此前创办 Parsec，以及本轮 875 万美元种子轮由 a16z 领投。证据边界在于来源未披露定价、正式可用性、客户数量或收入，因此不能把产品能力等同于商业化验证。",
+        "validated_signals": [
+          "已发布 MCP server，让 computer-use 智能体远程连接并操作计算机",
+          "创始人此前创办远程访问公司 Parsec，该公司于 2021 年被收购",
+          "本轮完成 875 万美元种子轮融资，由 a16z 领投"
+        ],
+        "risks": [
+          "来源未披露定价、正式可用性、客户数量或收入，商业化进展仍待验证",
+          "Phaze 不替代工作站，客户仍需承担硬件与软件许可成本",
+          "智能体获得完整计算机控制权后，权限继承与访问管控的实际效果尚缺公开验证"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "ai_development_orchestration",
+        "use_case_ids": [
+          "software_development",
+          "design_engineering",
+          "security_operations"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "面向人类与 AI 智能体的高性能远程计算机访问与共享工作站管理软件",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：AI 智能体需要可实际操作图形界面与应用的完整计算机环境，而企业又希望这类操作发生在自己管控的机器和既有身份权限体系内；Phaze 以远程桌面加 MCP server 同时服务人类重负载工作与智能体操作，并把高价工作站转为共享基础设施。当前融资所依赖的已验证信号主要是产品能力与团队履历：已发布 MCP server、创始人此前创办 Parsec，以及本轮 875 万美元种子轮由 a16z 领投。证据边界在于来源未披露定价、正式可用性、客户数量或收入，因此不能把产品能力等同于商业化验证。",
+          "evidence_signals": [
+            "已发布 MCP server，让 computer-use 智能体远程连接并操作计算机",
+            "创始人此前创办远程访问公司 Parsec，该公司于 2021 年被收购",
+            "本轮完成 875 万美元种子轮融资，由 a16z 领投"
+          ],
+          "risks": [
+            "来源未披露定价、正式可用性、客户数量或收入，商业化进展仍待验证",
+            "Phaze 不替代工作站，客户仍需承担硬件与软件许可成本",
+            "智能体获得完整计算机控制权后，权限继承与访问管控的实际效果尚缺公开验证"
+          ],
+          "institutional_rationale_status": "disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "高性能远程桌面",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI 智能体计算机访问（MCP server）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "共享工作站基础设施管理",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Benjy Boxer",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Chris Dickson",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "a16z",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Indie",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "NextView",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Makers",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lerer Hippeau",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-fa632ba1976ddf90",
+          "date": "2026-11-04",
+          "title": "Phaze 完成由 a16z 领投的 875 万美元种子轮融资，旨在让人类和 AI 智能体获得计算机访问权限",
+          "amount": "$8.75 million",
+          "source_refs": [
+            "SA-2db43bba880cfc8c"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-a42fcca24e8ae799",
+          "source_url": "https://www.prnewswire.com/news-releases/phaze-raises-8-75-million-seed-led-by-a16z-to-give-people-and-ai-agents-access-to-computers-302929303.html",
+          "title": "Phaze 完成由 a16z 领投的 875 万美元种子轮融资，旨在让人类和 AI 智能体获得计算机访问权限",
+          "publisher": "www.prnewswire.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-10T00:18:35.523Z",
+          "content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+          "source_artifact_id": "SA-2db43bba880cfc8c",
+          "raw_id": "RAW-a5f9f46a2ac0c19d",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-0a2c3456c838b571",
+          "source_url": "https://www.thesaasnews.com/news/phaze-raises-8-75m-seed/",
+          "title": "Phaze Raises $8.75M Seed",
+          "publisher": "thesaasnews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-10T00:46:58.104Z",
+          "content_hash": "ec9800e8290f1cc4",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-df117e24e3f37b8e",
+          "source_url": "https://dealroom.co/news/169714-phaze-raises-8-75m-seed-from-a16z-to-give-ai-agents-real-desktops/",
+          "title": "Phaze raises $8.75M seed from a16z to give AI agents real desktops",
+          "publisher": "dealroom.co",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-10T00:47:05.709Z",
+          "content_hash": "4529239169c9e058",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-10T00:47:16.731Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-10T00:47:16.731Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "AI 智能体计算机访问（MCP server）",
+            "共享工作站基础设施管理",
+            "高性能远程桌面"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Benjy Boxer",
+            "Chris Dickson"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-fa632ba1976ddf90"
+      ],
+      "aggregation": {
+        "key": "EN-9e1adfdb3b0d1064|seed|USD:exact:8750000:::|2026-11-04",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-b53014d597338c56",
+          "event_ids": [
+            "EV-fa632ba1976ddf90"
+          ],
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "$8.75 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 8750000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "875 万美元"
+          },
+          "announced_at": "2026-11-04",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "ai_infrastructure_software",
+        "name": "AI 基础设施软件",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "development_deployment",
+        "name": "开发与部署",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "ai_development_orchestration",
+        "name": "AI 开发与编排",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-fa632ba1976ddf90",
+        "direction": ""
+      },
+      "translations": {
+        "zh-CN": {
+          "company.headquarters": {
+            "text": "犹他州",
+            "source_hash": "82bce10b5f88da7cb5c7ae0605298a1bc8145998b6363606e944d1ba4af409f4",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-10T00:49:18.497Z",
+            "status": "translated"
+          },
+          "company.founders[0].role": {
+            "text": "CEO兼联合创始人",
+            "source_hash": "643450adfb2f70504069225a5f37f34f82d5c523becfb2062bf4d3ad0b5b91ff",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-14T07:17:24.870Z",
+            "status": "translated"
+          }
+        }
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-3e4d8fd426f2aa3e",
+      "triggered_by_event_id": "EV-41d75329d4a5eb62",
+      "as_of_date": "2026-11-10",
+      "company": {
+        "entity_id": "FICO-12f7dea6aa0e6d90",
+        "name": "Sentra",
+        "full_name": "Sentra",
+        "website": "https://sentra.io",
+        "summary": "Sentra是一家网络安全初创企业，致力于帮助企业管控人工智能智能体，其数据安全平台自上而下测绘企业完整数字网络，识别并分类敏感数据，并向安全、法务与合规团队展示智能体的全部操作行为。",
+        "headquarters": "纽约与特拉维夫",
+        "founders": [
+          {
+            "name": "约阿夫・雷格夫",
+            "role": "联合创始人兼首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-116db9a20f4ef508",
+                "quote": "联合创始人兼首席执行官约阿夫・雷格夫预计",
+                "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+                "quote_hash": "249aa5bcf308b35670216cc5702131eb9cb54681bca3fe4031eaf05467abc55f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "亚伊尔・科恩",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-116db9a20f4ef508",
+                "quote": "Sentra 创始人，从左至右：约阿夫・雷格夫、亚伊尔・科恩、阿萨夫・科汉、罗恩・赖特。",
+                "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+                "quote_hash": "32b91e887f6bd4ce817c873ccd4af908cf33d3d2a5a6eaa3b194f0ab331448fb"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "阿萨夫・科汉",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-116db9a20f4ef508",
+                "quote": "Sentra 创始人，从左至右：约阿夫・雷格夫、亚伊尔・科恩、阿萨夫・科汉、罗恩・赖特。",
+                "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+                "quote_hash": "32b91e887f6bd4ce817c873ccd4af908cf33d3d2a5a6eaa3b194f0ab331448fb"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "罗恩・赖特",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-116db9a20f4ef508",
+                "quote": "Sentra 创始人，从左至右：约阿夫・雷格夫、亚伊尔・科恩、阿萨夫・科汉、罗恩・赖特。",
+                "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+                "quote_hash": "32b91e887f6bd4ce817c873ccd4af908cf33d3d2a5a6eaa3b194f0ab331448fb"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "约130名员工",
+          "observed_at": "2026-11-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-116db9a20f4ef508",
+              "quote": "公司现有约 130 名员工。",
+              "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+              "quote_hash": "aa4429c5e894d4e978203e49aed47956cd58e71a225e79a603a8c64bf5e00414"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-116db9a20f4ef508",
+            "quote": "Sentra 于 2021 年成立，总部设于纽约与特拉维夫。",
+            "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+            "quote_hash": "2285f3d94be853d4ee8f76dd08b521b4868229561ccf4a656e4d51e5f5adb3c3"
+          },
+          {
+            "source_id": "FISRC-473eca6fe2506f5c",
+            "quote": "Sentra, the global leader in cloud-native data security platforms",
+            "source_content_hash": "9bb63037322fc71b",
+            "quote_hash": "4d361f9bb74e2220868ec903908e2d9a487bf17cecd62208bbf70decc11ad9e3"
+          }
+        ],
+        "application_entity_id": "FICO-12f7dea6aa0e6d90",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "C轮",
+        "amount": "1.5 亿美元",
+        "total_raised": "超2.6亿美元",
+        "announced_at": "2026-11-04",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "第一资本风投（Capital One Ventures）",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-116db9a20f4ef508",
+                "quote": "本轮由第一资本风投领投，现有投资方包括贝西默风投、泽夫风投、标准投资、慕尼黑再保险风投、Key1 Capital。",
+                "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+                "quote_hash": "7e7e8ed2f131e6812cd4a6b9dedfd189fe1627359b797fb22548d014c2b06848"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "贝西默风投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-116db9a20f4ef508",
+                "quote": "本轮由第一资本风投领投，现有投资方包括贝西默风投、泽夫风投、标准投资、慕尼黑再保险风投、Key1 Capital。",
+                "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+                "quote_hash": "7e7e8ed2f131e6812cd4a6b9dedfd189fe1627359b797fb22548d014c2b06848"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "泽夫风投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-116db9a20f4ef508",
+                "quote": "本轮由第一资本风投领投，现有投资方包括贝西默风投、泽夫风投、标准投资、慕尼黑再保险风投、Key1 Capital。",
+                "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+                "quote_hash": "7e7e8ed2f131e6812cd4a6b9dedfd189fe1627359b797fb22548d014c2b06848"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "标准投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-116db9a20f4ef508",
+                "quote": "本轮由第一资本风投领投，现有投资方包括贝西默风投、泽夫风投、标准投资、慕尼黑再保险风投、Key1 Capital。",
+                "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+                "quote_hash": "7e7e8ed2f131e6812cd4a6b9dedfd189fe1627359b797fb22548d014c2b06848"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "慕尼黑再保险风投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-116db9a20f4ef508",
+                "quote": "本轮由第一资本风投领投，现有投资方包括贝西默风投、泽夫风投、标准投资、慕尼黑再保险风投、Key1 Capital。",
+                "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+                "quote_hash": "7e7e8ed2f131e6812cd4a6b9dedfd189fe1627359b797fb22548d014c2b06848"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Key1 Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-116db9a20f4ef508",
+                "quote": "本轮由第一资本风投领投，现有投资方包括贝西默风投、泽夫风投、标准投资、慕尼黑再保险风投、Key1 Capital。",
+                "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+                "quote_hash": "7e7e8ed2f131e6812cd4a6b9dedfd189fe1627359b797fb22548d014c2b06848"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-116db9a20f4ef508",
+            "quote": "网络安全初创公司 Sentra 完成 1.5 亿美元 C 轮融资，由第一资本风投（Capital One Ventures）领投。",
+            "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+            "quote_hash": "e452f8d7da7420a795465f2190c8657312ff549f009547658570a550f9bf4c56"
+          },
+          {
+            "source_id": "FISRC-116db9a20f4ef508",
+            "quote": "本次 C 轮融资过后，Sentra 累计总融资额超 2.6 亿美元。",
+            "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+            "quote_hash": "2fee00b8bb442924c25d1173f37e015bed9a8e8e0d2f28544e858cbaefa51d40"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "1.5 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "total_raised_original": "超2.6亿美元",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 260000000,
+          "min_value": 260000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 2.6 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-41d75329d4a5eb62",
+            "round_original": "C轮",
+            "amount": "1.5 亿美元",
+            "announced_at": "2026-11-04",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-116db9a20f4ef508",
+                "quote": "网络安全初创公司 Sentra 完成 1.5 亿美元 C 轮融资，由第一资本风投（Capital One Ventures）领投。",
+                "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+                "quote_hash": "e452f8d7da7420a795465f2190c8657312ff549f009547658570a550f9bf4c56"
+              },
+              {
+                "source_id": "FISRC-116db9a20f4ef508",
+                "quote": "本次 C 轮融资过后，Sentra 累计总融资额超 2.6 亿美元。",
+                "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+                "quote_hash": "2fee00b8bb442924c25d1173f37e015bed9a8e8e0d2f28544e858cbaefa51d40"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "超2.6亿美元",
+          "normalized": {
+            "currency": "USD",
+            "value": 260000000,
+            "min_value": 260000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 2.6 亿美元"
+          },
+          "basis": "source_disclosed",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 150000000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "1.5 亿美元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-116db9a20f4ef508"
+        ]
+      },
+      "products": [
+        {
+          "name": "Sentra数据安全平台",
+          "description": "自上而下测绘企业完整数字网络，识别并对敏感数据进行分类，清除冗余、重复的高风险数据，并向安全、法务与合规团队完整展示智能体的全部操作行为。",
+          "target_customers": "运行AI智能体的大型机构",
+          "features": [
+            "自上而下测绘企业完整数字网络",
+            "识别并分类敏感数据",
+            "清除冗余高风险数据",
+            "展示智能体全部操作行为"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-116db9a20f4ef508",
+              "quote": "Sentra 的数据安全平台不会对每一个智能体逐一监控，而是自上而下测绘企业完整数字网络，识别并对敏感数据进行分类。",
+              "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+              "quote_hash": "6ba2654084579839e2e6f30bf92603e9389ed1d9896ec402a3ee8510f720a584"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "1.5亿美元",
+          "observed_at": "2026-11-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-116db9a20f4ef508",
+              "quote": "该公司完成 1.5 亿美元融资。",
+              "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+              "quote_hash": "0f380fc4601eb88de35707e8a9e6c08622cda57eaa9f020c65819b6f5c7ebd0d"
+            }
+          ]
+        },
+        {
+          "label": "累计总融资额",
+          "value": "超2.6亿美元",
+          "observed_at": "2026-11-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-116db9a20f4ef508",
+              "quote": "本次 C 轮融资过后，Sentra 累计总融资额超 2.6 亿美元。",
+              "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+              "quote_hash": "2fee00b8bb442924c25d1173f37e015bed9a8e8e0d2f28544e858cbaefa51d40"
+            }
+          ]
+        },
+        {
+          "label": "员工人数",
+          "value": "约130名",
+          "observed_at": "2026-11-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-116db9a20f4ef508",
+              "quote": "公司现有约 130 名员工。",
+              "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+              "quote_hash": "aa4429c5e894d4e978203e49aed47956cd58e71a225e79a603a8c64bf5e00414"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "约阿夫・雷格夫",
+          "quote": "那些一年前只运行少数几个智能体的大型机构，未来几年运行的智能体数量将会呈指数级增长。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-116db9a20f4ef508",
+              "quote": "那些一年前只运行少数几个智能体的大型机构，未来几年运行的智能体数量将会呈指数级增长。",
+              "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+              "quote_hash": "58ecba6026aaea2780982c07d9912bc29ec36940ecd990546145b0b948e6b5d3"
+            }
+          ]
+        },
+        {
+          "speaker": "约阿夫・雷格夫",
+          "quote": "智能体是亦敌亦友的存在。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-116db9a20f4ef508",
+              "quote": "智能体是亦敌亦友的存在。",
+              "source_content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+              "quote_hash": "39b4dbea792dd6ed517f716f6877409a2bb9a68d254aea6a87c698f796e5c85a"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是AI智能体在企业内大规模扩散后，对智能体数据访问与操作行为的管控需求能否转化为持续付费。当前已验证的信号包括：本轮1.5亿美元C轮融资由第一资本风投领投、累计融资超2.6亿美元、公司约130名员工，以及平台已具备自上而下测绘数字网络、分类敏感数据并向安全法务合规团队展示智能体操作行为的能力。证据边界在于：来源未披露本轮估值、收入、客户数量或合同金额，也未披露投资方对投资逻辑的公开原话，因此无法判断资本对商业化速度的具体预期。",
+        "validated_signals": [
+          "完成1.5亿美元C轮融资，由第一资本风投领投",
+          "累计总融资额超2.6亿美元",
+          "公司现有约130名员工",
+          "平台可自上而下测绘企业数字网络并分类敏感数据",
+          "平台可向安全、法务与合规团队展示智能体全部操作行为"
+        ],
+        "risks": [
+          "来源未披露本轮估值、收入或客户数量，商业化进展无法量化验证",
+          "智能体管控需求仍处早期，企业是否建立完备管控机制尚不确定",
+          "来源未披露投资方公开投资逻辑，资本判断依据存在信息缺口"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "model_agent_security",
+        "use_case_ids": [
+          "security_operations"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "AI智能体数据安全管控平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI智能体在企业内大规模扩散后，对智能体数据访问与操作行为的管控需求能否转化为持续付费。当前已验证的信号包括：本轮1.5亿美元C轮融资由第一资本风投领投、累计融资超2.6亿美元、公司约130名员工，以及平台已具备自上而下测绘数字网络、分类敏感数据并向安全法务合规团队展示智能体操作行为的能力。证据边界在于：来源未披露本轮估值、收入、客户数量或合同金额，也未披露投资方对投资逻辑的公开原话，因此无法判断资本对商业化速度的具体预期。",
+          "evidence_signals": [
+            "完成1.5亿美元C轮融资，由第一资本风投领投",
+            "累计总融资额超2.6亿美元",
+            "公司现有约130名员工",
+            "平台可自上而下测绘企业数字网络并分类敏感数据",
+            "平台可向安全、法务与合规团队展示智能体全部操作行为"
+          ],
+          "risks": [
+            "来源未披露本轮估值、收入或客户数量，商业化进展无法量化验证",
+            "智能体管控需求仍处早期，企业是否建立完备管控机制尚不确定",
+            "来源未披露投资方公开投资逻辑，资本判断依据存在信息缺口"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Sentra数据安全平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "约阿夫・雷格夫",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "亚伊尔・科恩",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "阿萨夫・科汉",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "罗恩・赖特",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "第一资本风投（Capital One Ventures）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "贝西默风投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "泽夫风投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "标准投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "慕尼黑再保险风投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Key1 Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-116db9a20f4ef508",
+          "source_url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-04/doc-inixqxhs9967091.shtml",
+          "title": "AI安全初创企业Sentra融资1.5 亿美元，用于监管自主智能体",
+          "publisher": "finance.sina.com.cn",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-10T00:18:08.721Z",
+          "content_hash": "3fdea9efc8b06e422f2baa341a4825d6b2c52a2666b0d3049db76a418ea8f4b5",
+          "source_artifact_id": "SA-42f6ca959e7dcc54",
+          "raw_id": "RAW-18ca7d52b260301d",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-473eca6fe2506f5c",
+          "source_url": "https://sentra.io/news/sentra-closes-50-million-series-b-amid-surging-demand-for-securing-data-for-ai-adoption",
+          "title": "Sentra Closes $50 Million Series B Amid Surging Demand for Securing Data for AI Adoption",
+          "publisher": "sentra.io",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-10T00:46:08.832Z",
+          "content_hash": "9bb63037322fc71b",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-10T00:46:23.662Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-10T00:46:23.662Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Sentra数据安全平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 4,
+          "unresolved_names": [
+            "亚伊尔・科恩",
+            "约阿夫・雷格夫",
+            "罗恩・赖特",
+            "阿萨夫・科汉"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-41d75329d4a5eb62"
+      ],
+      "aggregation": {
+        "key": "FICO-12f7dea6aa0e6d90|series_c|USD:exact:150000000:::|2026-11-04",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-3e4d8fd426f2aa3e",
+          "event_ids": [
+            "EV-41d75329d4a5eb62"
+          ],
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "1.5 亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 150000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.5 亿美元"
+          },
+          "announced_at": "2026-11-04",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "security_software",
+        "name": "安全软件",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "observability_evaluation",
+        "name": "可观测与评估",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "model_agent_security",
+        "name": "模型与智能体安全",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-41d75329d4a5eb62",
+        "direction": ""
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-0f1e60dee5a09471",
       "triggered_by_event_id": "EV-07d7ee423289a804",
       "as_of_date": "2026-11-09",
@@ -423,7 +3451,8 @@
                 "quote_hash": "782ad485829b460471b334a4c4c30496f5ba0db3b09dd311df26cbbda3647026"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-287384bbb20d4e"
           },
           {
             "name": "Madrona",

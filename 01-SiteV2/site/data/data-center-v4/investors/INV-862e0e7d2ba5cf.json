@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-09",
-    "currentDate": "2026-11-09",
-    "eventCount": 4406,
+    "latestDataDate": "2026-11-10",
+    "currentDate": "2026-11-10",
+    "eventCount": 4419,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,22 +63,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 34,
+    "current_round_count": 35,
     "historical_or_ambiguous_count": 14,
-    "portfolio_company_count": 28,
+    "portfolio_company_count": 29,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-09",
-    "latest_disclosed_at": "2026-11-07",
+    "latest_disclosed_at": "2026-11-09",
     "role_counts": {
       "co_lead": 3,
       "historical_or_ambiguous": 14,
       "lead": 14,
       "other_current_round": 1,
-      "participant": 16
+      "participant": 17
     },
     "round_codes": [
       "multi_round",
@@ -195,6 +195,11 @@
         "name": "Nevis"
       },
       {
+        "entity_id": "EN-d58999507a10460c",
+        "canonical_entity_id": "",
+        "name": "Nominal"
+      },
+      {
         "entity_id": "EN-7d3194f79e645c42",
         "canonical_entity_id": "EN-7d3194f79e645c42",
         "name": "OpenAI"
@@ -236,6 +241,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-12cbd0c22ca2fa33",
+        "funding_insight_id": "FI-94eaf09d128c6f03",
+        "event_ids": [
+          "EV-cb688236861394f2"
+        ],
+        "company_entity_id": "EN-d58999507a10460c",
+        "company_canonical_entity_id": "",
+        "company_name": "Nominal",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$240 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 240000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.4 亿美元"
+        },
+        "announced_at": "2026-11-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-db138e8b813b8b58",
+            "source_url": "https://resiliencemedia.co/nominal-triples-valuation-to-3b-following-240m-funding-round/",
+            "source_title": "Nominal triples valuation to $3B following $240M funding round",
+            "source_content_hash": "1930e3f43369be6c",
+            "quote": "The round was led by Lightspeed Venture Partners and Insight Partners, with participation from existing investors including Lux Capital, Sequoia Capital and strategic backer Lockheed Martin Ventures.",
+            "quote_hash": "850df8796e7d3962aa0dbccf6389b0810da45907c95956ec4b36cd9736e29804"
+          }
+        ]
+      },
       {
         "activity_id": "IA-71b7098374121037",
         "funding_insight_id": "FI-7183666b813db13e",
@@ -2075,6 +2120,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-db138e8b813b8b58",
+        "source_url": "https://resiliencemedia.co/nominal-triples-valuation-to-3b-following-240m-funding-round/",
+        "source_title": "Nominal triples valuation to $3B following $240M funding round",
+        "source_content_hash": "1930e3f43369be6c",
+        "quote": "The round was led by Lightspeed Venture Partners and Insight Partners, with participation from existing investors including Lux Capital, Sequoia Capital and strategic backer Lockheed Martin Ventures.",
+        "quote_hash": "850df8796e7d3962aa0dbccf6389b0810da45907c95956ec4b36cd9736e29804"
+      },
+      {
         "source_id": "FISRC-3952ae60d488ad95",
         "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
         "source_title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
@@ -2518,16 +2571,16 @@
           "source_id": "sequoia_history"
         },
         {
+          "description": "融资来源记录：Nominal · C轮 · 2026-11-09 · 本轮参投 · $240 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-db138e8b813b8b58"
+        },
+        {
           "description": "融资来源记录：OpenAI · 轮次未披露 · 2026-11-07 · 本轮参投 · $11 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3952ae60d488ad95"
         },
         {
           "description": "融资来源记录：Nevis · B轮 · 2026-10-26 · 本轮参投 · €62 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4ef85aec7ebdf94c"
-        },
-        {
-          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮领投 · $66M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-49f5b4d8c68adbdc"
         }
       ],
       "contacts": [
@@ -2557,6 +2610,14 @@
           "quote_hash": "4a2f68c042b10690a950656cdd8c8d78ddbacadab8cdf2e8a4566b83347cc5ac"
         },
         {
+          "source_id": "FISRC-db138e8b813b8b58",
+          "source_url": "https://resiliencemedia.co/nominal-triples-valuation-to-3b-following-240m-funding-round/",
+          "source_title": "Nominal triples valuation to $3B following $240M funding round",
+          "source_content_hash": "1930e3f43369be6c",
+          "quote": "The round was led by Lightspeed Venture Partners and Insight Partners, with participation from existing investors including Lux Capital, Sequoia Capital and strategic backer Lockheed Martin Ventures.",
+          "quote_hash": "850df8796e7d3962aa0dbccf6389b0810da45907c95956ec4b36cd9736e29804"
+        },
+        {
           "source_id": "FISRC-3952ae60d488ad95",
           "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
           "source_title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
@@ -2571,14 +2632,6 @@
           "source_content_hash": "2bfdad1be207360ad77f17aad44ebb6ebf54c996f208ea0b73ca4b87c9f2450e",
           "quote": "All existing investors, including Sequoia Capital, ICONIQ and Ribbit Capital, have also expanded their commitments in this new round.",
           "quote_hash": "69066058e95a369b8b1102f82098f764661d79dce57bf6349644cdfcc9878f46"
-        },
-        {
-          "source_id": "FISRC-49f5b4d8c68adbdc",
-          "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
-          "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
-          "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
-          "quote": "a $66M Series C led by Sequoia Capital at a $1 billion valuation",
-          "quote_hash": "33a85f0b4446289963f51e84b69bf35a336bc02d5e28e1c6dd0ce378b7b664c0"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2589,7 +2642,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[34].role": {
+        "activities[35].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",
@@ -2597,7 +2650,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[36].role": {
+        "activities[37].role": {
           "text": "Series D 领投",
           "source_hash": "b1ad54c261addee1c044320cc302024b488ee22b0810e11ab5f9b281dda6d2b7",
           "provider": "deepseek",
@@ -2605,7 +2658,7 @@
           "translated_at": "2026-10-03T00:37:44.351Z",
           "status": "translated"
         },
-        "activities[38].role": {
+        "activities[39].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",
@@ -2613,7 +2666,7 @@
           "translated_at": "2026-10-01T19:38:36.584Z",
           "status": "translated"
         },
-        "activities[39].role": {
+        "activities[40].role": {
           "text": "Series E 领投",
           "source_hash": "690f798efb7982fbdc4a1f48772d7084ecdb7c19aa13a5ca0c6a2b5ade634927",
           "provider": "deepseek",
@@ -2621,7 +2674,7 @@
           "translated_at": "2026-11-04T00:53:48.846Z",
           "status": "translated"
         },
-        "activities[41].role": {
+        "activities[42].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",

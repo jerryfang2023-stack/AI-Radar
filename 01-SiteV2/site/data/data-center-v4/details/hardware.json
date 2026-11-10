@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-09",
-    "currentDate": "2026-11-09",
-    "eventCount": 4406,
+    "latestDataDate": "2026-11-10",
+    "currentDate": "2026-11-10",
+    "eventCount": 4419,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -22200,8 +22200,464 @@
   ],
   "events": [
     {
+      "id": "EV-99d43689311ebc25",
+      "dataDate": "2026-11-10",
+      "date": "2026-11-10",
+      "updatedDate": "2026-11-10",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Meta 新款 AI 可穿戴设备：从眼镜和头显之外扩展（2026）",
+      "originalTitle": "Meta's New AI Wearable: Expanding Beyond Glasses and Headsets (2026)",
+      "subject": "Meta",
+      "action": "acquisition",
+      "object": "Limitless",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://custommapposter.com/article/meta-s-new-ai-wearable-expanding-beyond-glasses-and-headsets/12328",
+      "publisher": "custommapposter.com"
+    },
+    {
+      "id": "EV-098a73f4d042bdb5",
+      "dataDate": "2026-11-10",
+      "date": "2026-11-09",
+      "updatedDate": "2026-11-09",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "优理奇机器人（UniX AI）完成5亿元Pre-A轮融资，推动具身智能规模化落地",
+      "originalTitle": "",
+      "subject": "优理奇机器人（UniX AI）",
+      "action": "完成5亿元Pre-A轮融资",
+      "object": "，推动具身智能规模化落地",
+      "metrics": [
+        "5亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-324f8b2887e1dda8"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-324f8b2887e1dda8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-324f8b2887e1dda8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-324f8b2887e1dda8"
+      ],
+      "entityNames": [
+        "优理奇机器人（UniX AI）"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202611/571541.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-24beda194f77994e",
+      "dataDate": "2026-11-10",
+      "date": "2026-11-09",
+      "updatedDate": "2026-11-09",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "智蜂创元完成8000万元天使轮融资，让具身智能走进精密制造产线",
+      "originalTitle": "",
+      "subject": "智蜂创元",
+      "action": "完成8000万元天使轮融资",
+      "object": "，让具身智能走进精密制造产线",
+      "metrics": [
+        "8000万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-b0eb2bb7808aaf10"
+      ],
+      "entityNames": [
+        "智蜂创元"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202611/571555.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-6963c418c3512cb8",
+      "dataDate": "2026-11-10",
+      "date": "2026-11-09",
+      "updatedDate": "2026-11-09",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "原方智能完成数千万元天使轮融资，推进世界模型研发与家庭场景落地",
+      "originalTitle": "",
+      "subject": "原方智能",
+      "action": "完成数千万元天使轮融资",
+      "object": "，推进世界模型研发与家庭场景落地",
+      "metrics": [
+        "数千万元",
+        "3亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-250d7fcba902495a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-250d7fcba902495a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-250d7fcba902495a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-250d7fcba902495a",
+        "EN-4cab994c57f770ed",
+        "EN-b7ae9f021a5edd41",
+        "EN-ba5fb62b56438243"
+      ],
+      "entityNames": [
+        "原方智能",
+        "近日",
+        "景芮医疗",
+        "三优生物"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.pedaily.cn/first/190928.shtml",
+      "publisher": "www.pedaily.cn"
+    },
+    {
+      "id": "EV-7d8458a6707172eb",
+      "dataDate": "2026-11-10",
+      "date": "2026-11-09",
+      "updatedDate": "2026-11-09",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_sources_insufficient",
+      "title": "高盛力挺甲骨文！AI融资焦虑被高估，2026年云基建底气有多硬？",
+      "originalTitle": "",
+      "subject": "甲骨文",
+      "action": "融资",
+      "object": "焦虑被高估，2026年云基建底气有多硬？",
+      "metrics": [
+        "200亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "deployment_location"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-8f07389fac1b7bf1"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e2fa92f8c064e29d",
+        "EN-36907cfc81423d87"
+      ],
+      "entityNames": [
+        "高盛力挺甲骨文！AI",
+        "甲骨文已干净利落地"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://m.sohu.com/a/1099299706_122066679?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+      "publisher": "m.sohu.com"
+    },
+    {
+      "id": "EV-89bbafe3c39842b3",
+      "dataDate": "2026-11-10",
+      "date": "2026-11-09",
+      "updatedDate": "2026-11-09",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Astral 融资 550 万美元，通过超个性化教育开启下一场文艺复兴",
+      "originalTitle": "Astral Raises $5.5M to Unlock the Next Renaissance Through Hyper-Personalized Education",
+      "subject": "Astral",
+      "action": "Raises",
+      "object": "$5.5M to Unlock the Next Renaissance Through Hyper-Personalized Education",
+      "metrics": [
+        "$5.5 million",
+        "$5.5M"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "education_learning",
+            "name": "教育与学习",
+            "entityIds": [
+              "EN-2e9f768344ff39ac"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "education_learning",
+          "name": "教育与学习",
+          "entityIds": [
+            "EN-2e9f768344ff39ac"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "education_learning",
+          "name": "教育与学习",
+          "entityIds": [
+            "EN-2e9f768344ff39ac"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-1a2290470e0aa754",
+        "EN-2e9f768344ff39ac"
+      ],
+      "entityNames": [
+        "SAN FRANCISCO",
+        "Astral"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/astral-raises-5-5m-to-unlock-the-next-renaissance-through-hyper-personalized-education-302933044.html",
+      "publisher": "www.prnewswire.com"
+    },
+    {
+      "id": "EV-cb688236861394f2",
+      "dataDate": "2026-11-10",
+      "date": "2026-11-09",
+      "updatedDate": "2026-11-09",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI硬件初创公司Nominal在8个月内估值翻三倍至$3B",
+      "originalTitle": "AI hardware startup Nominal triples valuation to $3B in 8 months",
+      "subject": "Nominal",
+      "action": "funding",
+      "object": "$240 million Series C at a $3 billion valuation",
+      "metrics": [
+        "$240 million",
+        "$3 billion",
+        "$155 million",
+        "$1 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d58999507a10460c"
+      ],
+      "entityNames": [
+        "Nominal"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months/",
+      "publisher": "techcrunch.com"
+    },
+    {
       "id": "EV-34b8ae2aea003084",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-07",
       "updatedDate": "2026-11-07",
       "eventType": "acquisition",
@@ -22281,7 +22737,7 @@
     },
     {
       "id": "EV-3bc1af8409d16f9b",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-07",
       "updatedDate": "2026-11-07",
       "eventType": "funding",
@@ -22435,7 +22891,7 @@
     },
     {
       "id": "EV-aaf041c83cebba9a",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-07",
       "updatedDate": "2026-11-07",
       "eventType": "funding",
@@ -22483,7 +22939,7 @@
     },
     {
       "id": "EV-4ce6b9d2f519e224",
-      "dataDate": "2026-11-08",
+      "dataDate": "2026-11-10",
       "date": "2026-11-06",
       "updatedDate": "2026-11-06",
       "eventType": "funding",
@@ -22568,7 +23024,7 @@
     },
     {
       "id": "EV-8a83a19bfdd34344",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-06",
       "updatedDate": "2026-11-06",
       "eventType": "funding",
@@ -22617,7 +23073,7 @@
     },
     {
       "id": "EV-8d025cf305dcbab6",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-06",
       "updatedDate": "2026-11-06",
       "eventType": "funding",
@@ -22670,7 +23126,7 @@
     },
     {
       "id": "EV-a1e75442bdeac42b",
-      "dataDate": "2026-11-08",
+      "dataDate": "2026-11-10",
       "date": "2026-11-06",
       "updatedDate": "2026-11-06",
       "eventType": "funding",
@@ -22696,7 +23152,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-55c348f0ab35fe77"
+          "CL-09af2903f75f7988"
         ]
       },
       "missingFields": [],
@@ -22773,7 +23229,7 @@
     },
     {
       "id": "EV-0eccf9e0527ff890",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-05",
       "updatedDate": "2026-11-05",
       "eventType": "funding",
@@ -22824,7 +23280,7 @@
     },
     {
       "id": "EV-12e63ddc1a14574e",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-05",
       "updatedDate": "2026-11-05",
       "eventType": "funding",
@@ -22906,7 +23362,7 @@
     },
     {
       "id": "EV-7c081abc44cacd7d",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-05",
       "updatedDate": "2026-11-05",
       "eventType": "funding",
@@ -22991,7 +23447,7 @@
     },
     {
       "id": "EV-cd20a6ff672972eb",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-05",
       "updatedDate": "2026-11-05",
       "eventType": "funding",
@@ -23041,7 +23497,7 @@
     },
     {
       "id": "EV-de7efff10b83dd08",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-05",
       "updatedDate": "2026-11-05",
       "eventType": "funding",
@@ -23167,6 +23623,89 @@
       "publisher": "www.geekwire.com"
     },
     {
+      "id": "EV-41d75329d4a5eb62",
+      "dataDate": "2026-11-10",
+      "date": "2026-11-04",
+      "updatedDate": "2026-11-04",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI安全初创企业Sentra融资1.5 亿美元，用于监管自主智能体",
+      "originalTitle": "",
+      "subject": "AI安全初创企业Sentra",
+      "action": "融资",
+      "object": "1.5 亿美元，用于监管自主智能体",
+      "metrics": [
+        "1.5 亿",
+        "2.6 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-15330b4e633d1b82"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-15330b4e633d1b82"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-15330b4e633d1b82"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-15330b4e633d1b82"
+      ],
+      "entityNames": [
+        "AI安全初创企业Sentra"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://finance.sina.com.cn/stock/usstock/c/2026-11-04/doc-inixqxhs9967091.shtml",
+      "publisher": "finance.sina.com.cn"
+    },
+    {
       "id": "EV-46380e6a44f3b91d",
       "dataDate": "2026-11-06",
       "date": "2026-11-04",
@@ -23217,7 +23756,7 @@
     },
     {
       "id": "EV-5affa046ed76d30e",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-04",
       "updatedDate": "2026-11-04",
       "eventType": "funding",
@@ -23302,7 +23841,7 @@
     },
     {
       "id": "EV-79f50d2659ea434a",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-04",
       "updatedDate": "2026-11-04",
       "eventType": "funding",
@@ -23446,7 +23985,7 @@
     },
     {
       "id": "EV-f9c4e7e58dbb152f",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-10",
       "date": "2026-11-04",
       "updatedDate": "2026-11-04",
       "eventType": "funding",
@@ -23465,7 +24004,9 @@
       "metrics": [
         "$350M",
         "$350 million",
-        "$3.25 billion"
+        "$3.25 billion",
+        "$240M",
+        "$3B"
       ],
       "locations": [],
       "missingFields": [],
@@ -23535,8 +24076,56 @@
       "publisher": "siliconangle.com"
     },
     {
+      "id": "EV-fa632ba1976ddf90",
+      "dataDate": "2026-11-10",
+      "date": "2026-11-04",
+      "updatedDate": "2026-11-04",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Phaze 完成由 a16z 领投的 875 万美元种子轮融资，旨在让人类和 AI 智能体获得计算机访问权限",
+      "originalTitle": "Phaze Raises $8.75 Million Seed Led by a16z to Give People and AI Agents Access to Computers",
+      "subject": "Phaze",
+      "action": "Raises",
+      "object": "$8.75 Million Seed Led by a16z to Give People and AI Agents Access to Computers",
+      "metrics": [
+        "$8.75 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bd732730bd39834d",
+        "EN-9e1adfdb3b0d1064"
+      ],
+      "entityNames": [
+        "NEW YORK",
+        "Phaze"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/phaze-raises-8-75-million-seed-led-by-a16z-to-give-people-and-ai-agents-access-to-computers-302929303.html",
+      "publisher": "www.prnewswire.com"
+    },
+    {
       "id": "EV-fa6bb71ec7a8ee92",
-      "dataDate": "2026-11-06",
+      "dataDate": "2026-11-10",
       "date": "2026-11-04",
       "updatedDate": "2026-11-04",
       "eventType": "funding",
@@ -23562,7 +24151,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-a7c052d2aeb07961"
+          "CL-d973938441ea6625"
         ]
       },
       "missingFields": [],
@@ -23595,7 +24184,7 @@
     },
     {
       "id": "EV-0a0d2b11832f0be5",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-03",
       "updatedDate": "2026-11-03",
       "eventType": "funding",
@@ -23644,7 +24233,7 @@
     },
     {
       "id": "EV-1d794039f9374217",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-03",
       "updatedDate": "2026-11-03",
       "eventType": "funding",
@@ -23670,7 +24259,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-ae4d7aebe5c69dce"
+          "CL-189e6e47751c4d0e"
         ]
       },
       "missingFields": [],
@@ -23753,7 +24342,7 @@
     },
     {
       "id": "EV-7061f708e2f31963",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-03",
       "updatedDate": "2026-11-03",
       "eventType": "funding",
@@ -23803,7 +24392,7 @@
     },
     {
       "id": "EV-8e1b620139e11518",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-03",
       "updatedDate": "2026-11-03",
       "eventType": "funding",
@@ -23890,7 +24479,7 @@
     },
     {
       "id": "EV-91f0c322e7b0db48",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-03",
       "updatedDate": "2026-11-03",
       "eventType": "funding",
@@ -23986,8 +24575,161 @@
       "publisher": "www.36kr.com"
     },
     {
+      "id": "EV-bab10c5a5d002472",
+      "dataDate": "2026-11-10",
+      "date": "2026-11-03",
+      "updatedDate": "2026-11-03",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "CrowdStrike 将斥资近 5 亿美元收购 2 家 AI 安全初创公司，随着保护 AI 智能体的市场腾飞",
+      "originalTitle": "CrowdStrike to shell out nearly $500M for 2 AI security startups as the market for securing agents takes off",
+      "subject": "CrowdStrike",
+      "action": "acquisition",
+      "object": "Fiddler AI",
+      "metrics": [
+        "$400 million",
+        "$95 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-101958dadd6e2fb5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-101958dadd6e2fb5"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-101958dadd6e2fb5"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-101958dadd6e2fb5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-101958dadd6e2fb5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-101958dadd6e2fb5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-101958dadd6e2fb5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-101958dadd6e2fb5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-101958dadd6e2fb5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-101958dadd6e2fb5",
+        "EN-ce635c4eabff5e4f"
+      ],
+      "entityNames": [
+        "CrowdStrike",
+        "Shell"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/11/03/crowdstrike-to-shell-out-nearly-500m-for-2-ai-security-startups-as-the-market-for-securing-agents-takes-off/",
+      "publisher": "techcrunch.com"
+    },
+    {
       "id": "EV-d5633a878500d130",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-03",
       "updatedDate": "2026-11-03",
       "eventType": "funding",
@@ -286804,7 +287546,7 @@
     },
     {
       "id": "EV-fcaf084ec5c515b0",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-08",
       "updatedDate": "2026-11-08",
       "eventType": "procurement_contract",
@@ -315244,6 +315986,88 @@
       "publisher": "fedscoop.com"
     },
     {
+      "id": "EV-195a496342e785af",
+      "dataDate": "2026-11-10",
+      "date": "2026-11-09",
+      "updatedDate": "2026-11-09",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "NVIDIA 在 MSIT-NVIDIA AI 初创企业合作论坛上宣布计划对韩国初创企业进行新投资",
+      "originalTitle": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup Partnership Forum",
+      "subject": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup",
+      "action": "Partnership",
+      "object": "Forum",
+      "metrics": [],
+      "locations": [
+        "Korea"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
+      "publisher": "blogs.nvidia.com"
+    },
+    {
       "id": "EV-fcf3c96afc642c8b",
       "dataDate": "2026-10-28",
       "date": "2026-10-27",
@@ -331136,7 +331960,7 @@
     },
     {
       "id": "EV-f19e657fd1e479e5",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-05",
       "updatedDate": "2026-11-05",
       "eventType": "product_release",
@@ -444661,16 +445485,12 @@
         {
           "name": "Claude Code v2.1.193",
           "type": "产品/服务",
-          "ownerNames": [
-            "Shell"
-          ]
+          "ownerNames": []
         },
         {
           "name": "autoMode.classifyAllShell setting",
           "type": "产品/服务",
-          "ownerNames": [
-            "Shell"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.193",
@@ -470749,9 +471569,7 @@
         {
           "name": "Claude Code v2.1.160",
           "type": "产品/服务",
-          "ownerNames": [
-            "Shell"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.160",
@@ -476507,8 +477325,52 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-a06c44e0213f01b9",
+      "dataDate": "2026-11-10",
+      "date": "2026-11-10",
+      "updatedDate": "2026-11-10",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "复旦校友杀疯：拿下Meta战略掌舵人-36氪",
+      "originalTitle": "",
+      "subject": "戴夫·韦纳（Dave Wehner）",
+      "action": "organization_people",
+      "object": "Fireworks",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.36kr.com/p/4060533056508801",
+      "publisher": "www.36kr.com"
+    },
+    {
       "id": "EV-57717e60d7a07800",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-06",
       "updatedDate": "2026-11-06",
       "eventType": "ipo_listing",
@@ -476785,8 +477647,126 @@
       "publisher": "www.ithome.com"
     },
     {
+      "id": "EV-8082f31e5b1fabc6",
+      "dataDate": "2026-11-10",
+      "date": "2026-11-03",
+      "updatedDate": "2026-11-03",
+      "eventType": "organization_restructuring",
+      "eventTypeLabel": "组织重组",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "具身机器人进入资本整合期：头部公司补能力，超过20家公司清算关停",
+      "originalTitle": "",
+      "subject": "具身机器人进入资本整合期：头部公司补能力，超过20家公司",
+      "action": "清算",
+      "object": "关停",
+      "metrics": [],
+      "locations": [
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-5d29ba33b45111a1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-5d29ba33b45111a1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-5d29ba33b45111a1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-5d29ba33b45111a1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-5d29ba33b45111a1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-5d29ba33b45111a1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5d29ba33b45111a1",
+        "EN-6f7ac1823da81d2e"
+      ],
+      "entityNames": [
+        "具身机器人进入资本整合期",
+        "DeepSeek"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.huxiu.com/article/4902749.html",
+      "publisher": "www.huxiu.com"
+    },
+    {
       "id": "EV-9b45efee087c8b33",
-      "dataDate": "2026-11-09",
+      "dataDate": "2026-11-10",
       "date": "2026-11-03",
       "updatedDate": "2026-11-03",
       "eventType": "capital_investment",

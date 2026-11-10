@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-09",
-    "currentDate": "2026-11-09",
-    "eventCount": 4406,
+    "latestDataDate": "2026-11-10",
+    "currentDate": "2026-11-10",
+    "eventCount": 4419,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -133,6 +133,7 @@
       "EV-657837763764c869",
       "EV-388a53fe918389b0",
       "EV-8fdae692cc4fb28b",
+      "EV-8082f31e5b1fabc6",
       "EV-770a599defdaf792",
       "EV-648208bc2a74cb56",
       "EV-c44f8fbab9e200ca",
@@ -161,7 +162,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-04-24",
-    "lastSeen": "2026-11-08",
+    "lastSeen": "2026-11-10",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -246,7 +247,9 @@
       "hardware": [
         "EV-648208bc2a74cb56"
       ],
-      "organizationPeople": [],
+      "organizationPeople": [
+        "EV-8082f31e5b1fabc6"
+      ],
       "other": [
         "EV-59b7ba3d079ad09a",
         "EV-3aefbdfa5df2fd6a",
@@ -258,7 +261,7 @@
     "timeline": [
       {
         "id": "EV-4ce6b9d2f519e224",
-        "dataDate": "2026-11-08",
+        "dataDate": "2026-11-10",
         "date": "2026-11-06",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -281,6 +284,45 @@
           "EN-6f7ac1823da81d2e",
           "EN-b5251b35f15bedc4",
           "EN-ce22f929f4a17467"
+        ]
+      },
+      {
+        "id": "EV-8082f31e5b1fabc6",
+        "dataDate": "2026-11-10",
+        "date": "2026-11-03",
+        "eventType": "organization_restructuring",
+        "eventTypeLabel": "组织重组",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "具身机器人进入资本整合期：头部公司补能力，超过20家公司清算关停",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-5d29ba33b45111a1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-5d29ba33b45111a1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-5d29ba33b45111a1",
+          "EN-6f7ac1823da81d2e"
         ]
       },
       {
@@ -2539,6 +2581,7 @@
       "eventIds": [
         "EV-4ce6b9d2f519e224",
         "EV-7c081abc44cacd7d",
+        "EV-bab10c5a5d002472",
         "EV-9dbf7a6b84a4aa21",
         "EV-72d09299a334d0d9",
         "EV-61c9891d791417be",
@@ -2951,6 +2994,7 @@
       ],
       "entityIds": [
         "EN-dec8babc7a2f55a8",
+        "EN-101958dadd6e2fb5",
         "EN-858326bb020621c2",
         "EN-c2f693f92991bd18",
         "EN-79648183530ff7c5",
@@ -3226,7 +3270,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -3237,6 +3281,7 @@
       "eventIds": [
         "EV-12e63ddc1a14574e",
         "EV-07d7ee423289a804",
+        "EV-bab10c5a5d002472",
         "EV-e632e1806935d10f",
         "EV-6133f09c61f5c5e8",
         "EV-62b42b7553b45bc6",
@@ -3932,6 +3977,7 @@
       "entityIds": [
         "EN-45524c831447998f",
         "EN-38efea68165714db",
+        "EN-101958dadd6e2fb5",
         "EN-64af05d8ce796170",
         "EN-f78f7a86360aa8f4",
         "EN-cd0d2344b5b823f0",
