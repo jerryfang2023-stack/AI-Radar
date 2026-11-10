@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-09",
-    "currentDate": "2026-11-09",
-    "eventCount": 4406,
+    "latestDataDate": "2026-11-10",
+    "currentDate": "2026-11-10",
+    "eventCount": 4419,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,25 +61,31 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-27",
-    "latest_disclosed_at": "2026-10-08",
+    "latest_disclosed_at": "2026-11-09",
     "role_counts": {
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "series_b",
-      "series_d"
+      "series_d",
+      "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-2e9f768344ff39ac",
+        "canonical_entity_id": "",
+        "name": "Astral"
+      },
       {
         "entity_id": "EN-ac32f27ba7a1346f",
         "canonical_entity_id": "",
@@ -92,6 +98,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d120be94af107bfe",
+        "funding_insight_id": "FI-f5909e83b926a7cd",
+        "event_ids": [
+          "EV-89bbafe3c39842b3"
+        ],
+        "company_entity_id": "EN-2e9f768344ff39ac",
+        "company_canonical_entity_id": "",
+        "company_name": "Astral",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "$5.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "550 万美元"
+        },
+        "announced_at": "2026-11-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4a1d449fc834ce7",
+            "source_url": "https://www.prnewswire.com/news-releases/astral-raises-5-5m-to-unlock-the-next-renaissance-through-hyper-personalized-education-302933044.html",
+            "source_title": "Astral 融资 550 万美元，通过超个性化教育开启下一场文艺复兴",
+            "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+            "quote": "The latest round was led by Andre Charoo, GP at MapleVC, with continued funding from Stand Together Ventures Lab (STVL), Conversion Capital, and Original Capital, among many others.",
+            "quote_hash": "72d318378f0774ce8e74ff37b927facc4cf98d19ebf3fe8b2d56a179a9a1adca"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a9244adc412ace3b",
         "funding_insight_id": "FI-abdb08f0abf9cb7c",
@@ -182,6 +228,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-f4a1d449fc834ce7",
+        "source_url": "https://www.prnewswire.com/news-releases/astral-raises-5-5m-to-unlock-the-next-renaissance-through-hyper-personalized-education-302933044.html",
+        "source_title": "Astral 融资 550 万美元，通过超个性化教育开启下一场文艺复兴",
+        "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+        "quote": "The latest round was led by Andre Charoo, GP at MapleVC, with continued funding from Stand Together Ventures Lab (STVL), Conversion Capital, and Original Capital, among many others.",
+        "quote_hash": "72d318378f0774ce8e74ff37b927facc4cf98d19ebf3fe8b2d56a179a9a1adca"
+      },
       {
         "source_id": "FISRC-2da938bd0c484285",
         "source_url": "https://techcrunch.com/2026/10/08/vesta-raises-30m-as-lenders-adopt-ai-agents/",
@@ -284,6 +338,10 @@
           "source_id": "FISRC-a7bbb48af7503bf0"
         },
         {
+          "description": "融资来源记录：Astral · 轮次未披露 · 2026-11-09 · 本轮参投 · $5.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f4a1d449fc834ce7"
+        },
+        {
           "description": "融资来源记录：Vesta · B轮 · 2026-10-08 · 本轮领投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2da938bd0c484285"
         }
@@ -363,6 +421,14 @@
           "source_content_hash": "f64d20b5549e1b58",
           "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi.",
           "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
+        },
+        {
+          "source_id": "FISRC-f4a1d449fc834ce7",
+          "source_url": "https://www.prnewswire.com/news-releases/astral-raises-5-5m-to-unlock-the-next-renaissance-through-hyper-personalized-education-302933044.html",
+          "source_title": "Astral 融资 550 万美元，通过超个性化教育开启下一场文艺复兴",
+          "source_content_hash": "d507e970820235b55afc8825265dbc1e3303d319fdb8011f04de2d18613c8d2b",
+          "quote": "The latest round was led by Andre Charoo, GP at MapleVC, with continued funding from Stand Together Ventures Lab (STVL), Conversion Capital, and Original Capital, among many others.",
+          "quote_hash": "72d318378f0774ce8e74ff37b927facc4cf98d19ebf3fe8b2d56a179a9a1adca"
         },
         {
           "source_id": "FISRC-2da938bd0c484285",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-09",
-    "currentDate": "2026-11-09",
-    "eventCount": 4406,
+    "latestDataDate": "2026-11-10",
+    "currentDate": "2026-11-10",
+    "eventCount": 4419,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -67,8 +67,8 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-product_form-model",
       "TX-use_case-education_learning",
+      "TX-product_form-model",
       "TX-technology-multimodal"
     ],
     "relatedEntityIds": [],
@@ -147,6 +147,47 @@
   "relationships": [],
   "taxonomyNodes": [
     {
+      "id": "TX-use_case-education_learning",
+      "name": "教育与学习",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "education_learning",
+      "eventIds": [
+        "EV-89bbafe3c39842b3",
+        "EV-2470b13ea55496d0",
+        "EV-86838cc774b85116",
+        "EV-ef669a52c9a3f94f",
+        "EV-b5dd10300e34f2d3",
+        "EV-b4d6c556eadaa272",
+        "EV-88158ddf272e4731",
+        "EV-ef3af6120a610f28",
+        "EV-d778b532e1d6e74f",
+        "EV-e2a94eb223c11a66",
+        "EV-51d8aec94225e9c6",
+        "EV-09b8a8e4ed03dd7f",
+        "EV-26439e34295a0519"
+      ],
+      "entityIds": [
+        "EN-2e9f768344ff39ac",
+        "EN-0830e0bf8e8fa471",
+        "EN-573b998925ae7499",
+        "EN-1d79127e9d90e89b",
+        "EN-e22521e7de65d819",
+        "EN-ada6f7916f22af98",
+        "EN-f0a77f08b0db14ab",
+        "EN-a2f8dc95e7c8ffa7",
+        "EN-713589016b2361a3",
+        "EN-bd86ebd32193b381",
+        "EN-78e778b471fd74fd",
+        "EN-04bd675006a7a1ed",
+        "EN-8dc72a4672894e0f"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-11-10"
+    },
+    {
       "id": "TX-product_form-model",
       "name": "模型",
       "nodeType": "product_form",
@@ -155,6 +196,7 @@
       "eventIds": [
         "EV-4ce6b9d2f519e224",
         "EV-7c081abc44cacd7d",
+        "EV-bab10c5a5d002472",
         "EV-9dbf7a6b84a4aa21",
         "EV-72d09299a334d0d9",
         "EV-61c9891d791417be",
@@ -567,6 +609,7 @@
       ],
       "entityIds": [
         "EN-dec8babc7a2f55a8",
+        "EN-101958dadd6e2fb5",
         "EN-858326bb020621c2",
         "EN-c2f693f92991bd18",
         "EN-79648183530ff7c5",
@@ -842,46 +885,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-09"
-    },
-    {
-      "id": "TX-use_case-education_learning",
-      "name": "教育与学习",
-      "nodeType": "use_case",
-      "typeLabel": "应用场景",
-      "valueId": "education_learning",
-      "eventIds": [
-        "EV-2470b13ea55496d0",
-        "EV-86838cc774b85116",
-        "EV-ef669a52c9a3f94f",
-        "EV-b5dd10300e34f2d3",
-        "EV-b4d6c556eadaa272",
-        "EV-88158ddf272e4731",
-        "EV-ef3af6120a610f28",
-        "EV-d778b532e1d6e74f",
-        "EV-e2a94eb223c11a66",
-        "EV-51d8aec94225e9c6",
-        "EV-09b8a8e4ed03dd7f",
-        "EV-26439e34295a0519"
-      ],
-      "entityIds": [
-        "EN-0830e0bf8e8fa471",
-        "EN-573b998925ae7499",
-        "EN-1d79127e9d90e89b",
-        "EN-e22521e7de65d819",
-        "EN-ada6f7916f22af98",
-        "EN-f0a77f08b0db14ab",
-        "EN-a2f8dc95e7c8ffa7",
-        "EN-713589016b2361a3",
-        "EN-bd86ebd32193b381",
-        "EN-78e778b471fd74fd",
-        "EN-04bd675006a7a1ed",
-        "EN-8dc72a4672894e0f"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-01-12",
-      "lastSeen": "2026-10-02"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "TX-technology-multimodal",

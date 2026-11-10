@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-09",
-    "currentDate": "2026-11-09",
-    "eventCount": 4406,
+    "latestDataDate": "2026-11-10",
+    "currentDate": "2026-11-10",
+    "eventCount": 4419,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 9,
+    "current_round_count": 10,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 9,
+    "portfolio_company_count": 10,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-27",
-    "latest_disclosed_at": "2026-10-21",
+    "latest_disclosed_at": "2026-11-09",
     "role_counts": {
       "co_lead": 1,
       "lead": 2,
-      "participant": 6
+      "participant": 7
     },
     "round_codes": [
       "seed",
@@ -121,6 +121,11 @@
         "name": "Monogram AI, Inc."
       },
       {
+        "entity_id": "EN-d58999507a10460c",
+        "canonical_entity_id": "",
+        "name": "Nominal"
+      },
+      {
         "entity_id": "EN-29a3723ce5ee3350",
         "canonical_entity_id": "",
         "name": "Together AI"
@@ -132,6 +137,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d06c6194f5512c4c",
+        "funding_insight_id": "FI-94eaf09d128c6f03",
+        "event_ids": [
+          "EV-cb688236861394f2"
+        ],
+        "company_entity_id": "EN-d58999507a10460c",
+        "company_canonical_entity_id": "",
+        "company_name": "Nominal",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$240 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 240000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.4 亿美元"
+        },
+        "announced_at": "2026-11-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-db138e8b813b8b58",
+            "source_url": "https://resiliencemedia.co/nominal-triples-valuation-to-3b-following-240m-funding-round/",
+            "source_title": "Nominal triples valuation to $3B following $240M funding round",
+            "source_content_hash": "1930e3f43369be6c",
+            "quote": "The round was led by Lightspeed Venture Partners and Insight Partners, with participation from existing investors including Lux Capital, Sequoia Capital and strategic backer Lockheed Martin Ventures.",
+            "quote_hash": "850df8796e7d3962aa0dbccf6389b0810da45907c95956ec4b36cd9736e29804"
+          }
+        ]
+      },
       {
         "activity_id": "IA-722243227072540b",
         "funding_insight_id": "FI-f6024633a1bff4e3",
@@ -496,6 +541,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-db138e8b813b8b58",
+        "source_url": "https://resiliencemedia.co/nominal-triples-valuation-to-3b-following-240m-funding-round/",
+        "source_title": "Nominal triples valuation to $3B following $240M funding round",
+        "source_content_hash": "1930e3f43369be6c",
+        "quote": "The round was led by Lightspeed Venture Partners and Insight Partners, with participation from existing investors including Lux Capital, Sequoia Capital and strategic backer Lockheed Martin Ventures.",
+        "quote_hash": "850df8796e7d3962aa0dbccf6389b0810da45907c95956ec4b36cd9736e29804"
+      },
+      {
         "source_id": "FISRC-d40817bd8696706a",
         "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
         "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
@@ -621,16 +674,16 @@
           "source_id": "lux_home"
         },
         {
+          "description": "融资来源记录：Nominal · C轮 · 2026-11-09 · 本轮参投 · $240 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-db138e8b813b8b58"
+        },
+        {
           "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮联合领投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d40817bd8696706a"
         },
         {
           "description": "融资来源记录：Modal · D轮 · 2026-10-14 · 本轮参投 · $750 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b54b83abf2f3608c"
-        },
-        {
-          "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-852df50f4128c47b"
         }
       ],
       "contacts": [
@@ -689,6 +742,14 @@
           "quote_hash": "6b9451180acf913c2d479cc1d4ebaa1e3e3390f58f4fb6da897bd77683439079"
         },
         {
+          "source_id": "FISRC-db138e8b813b8b58",
+          "source_url": "https://resiliencemedia.co/nominal-triples-valuation-to-3b-following-240m-funding-round/",
+          "source_title": "Nominal triples valuation to $3B following $240M funding round",
+          "source_content_hash": "1930e3f43369be6c",
+          "quote": "The round was led by Lightspeed Venture Partners and Insight Partners, with participation from existing investors including Lux Capital, Sequoia Capital and strategic backer Lockheed Martin Ventures.",
+          "quote_hash": "850df8796e7d3962aa0dbccf6389b0810da45907c95956ec4b36cd9736e29804"
+        },
+        {
           "source_id": "FISRC-d40817bd8696706a",
           "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
           "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
@@ -703,14 +764,6 @@
           "source_content_hash": "ef996bef620416ce",
           "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
           "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
-        },
-        {
-          "source_id": "FISRC-852df50f4128c47b",
-          "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
-          "source_title": "Enveda's $311m Series E to fund AI-driven drug discovery",
-          "source_content_hash": "e6486e5f995e038e",
-          "quote": "Existing investors Baillie Gifford, Premji Invest, FPV Ventures, True Ventures, Kinnevik, Dimension, Lifeforce Capital, and Lux Capital also participated.",
-          "quote_hash": "882202cb44ad9d9c134b2a21b4c2fb2c2449305ea2081d7480583ed23e7792bf"
         }
       ],
       "last_verified_at": "2026-09-25",

@@ -37115,7 +37115,258 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-11-09T00:52:03.106Z"
+    },
+    "EV-41d75329d4a5eb62": {
+      "id": "EV-41d75329d4a5eb62",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-security",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "Sentra主营云原生数据安全平台，通过测绘企业数字网络识别并分类敏感数据，属于模型与智能体安全范畴。",
+      "input_hash": "c78719a607ca8972517436dbbbff1427235fb601e7a5f2e5b0fa1f7897a54e86",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-473eca6fe2506f5c",
+          "quote": "Sentra, the global leader in cloud-native data security platforms"
+        },
+        {
+          "source_id": "FISRC-116db9a20f4ef508",
+          "quote": "Sentra 的数据安全平台不会对每一个智能体逐一监控，而是自上而下测绘企业完整数字网络，识别并对敏感数据进行分类。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-10T00:50:25.744Z"
+    },
+    "EV-24beda194f77994e": {
+      "id": "EV-24beda194f77994e",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "公司主营轮式双臂具身机器人及工业具身智能方案，属于具身智能机器人本体业务。",
+      "input_hash": "a5861c0a7e849058cc4377c870bdc20edec0c27bc94ac00abe22f9ec4af5b103",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5dca37d16a204272",
+          "quote": "苏州智蜂创元科技有限公司（以下简称\"智蜂创元\"）成立于2025年11月，聚焦光电、3C电子、半导体等精密制造场景，打造具身机器人与工业智能操作系统。"
+        },
+        {
+          "source_id": "FISRC-5dca37d16a204272",
+          "quote": "在工业精密插拔之外，智蜂创元推出的Z100轮式双臂通用作业具身机器人，将双臂协同操作与本体的全向移动能力相结合，可胜任产线搬运、上下料、装配过站等任务"
+        },
+        {
+          "source_id": "FISRC-5dca37d16a204272",
+          "quote": "智蜂创元正式推出工业级视触觉融合具身智能方案，首次在产线上实现了真机落地部署。"
+        },
+        {
+          "source_id": "FISRC-5dca37d16a204272",
+          "quote": "面向精密装配与端口插拔场景的下一代产品Z700具身机器人正在研发中，支持即插即用部署"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-10T00:50:28.047Z"
+    },
+    "EV-098a73f4d042bdb5": {
+      "id": "EV-098a73f4d042bdb5",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "公司为通用具身智能机器人企业，主营人形机器人平台及自研关节模组等核心部件。",
+      "input_hash": "fddd7b3a62c6db4db9afbb5c82f3238cd7b443d5374ad9544d7044b3aea1dd4d",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a9b5999ebfca6d0f",
+          "quote": "优理奇智能科技（苏州）有限公司（下称“优理奇”）成立于2024年，是一家全栈式、具有全球技术视野的具身智能高科技企业"
+        },
+        {
+          "source_id": "FISRC-3670f27632bbe3d5",
+          "quote": "通用具身智能机器人企业优理奇机器人（UniX AI）宣布完成5亿元Pre-A轮融资"
+        },
+        {
+          "source_id": "FISRC-80e3f804efb41222",
+          "quote": "优理奇Wanda 2.0轮式双臂人形机器人已在安保、酒店、零售餐饮等场景实现常态化运营"
+        },
+        {
+          "source_id": "FISRC-3670f27632bbe3d5",
+          "quote": "公司已形成Wanda与Panther等成熟机器人产品平台，自研关节模组、仿生机械臂及运动控制等关键模块"
+        },
+        {
+          "source_id": "FISRC-80e3f804efb41222",
+          "quote": "新一代更高效、更全能的轮式双臂人形机器人Panther亦已重磅发布并启动全球交付"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-10T00:50:28.047Z"
+    },
+    "EV-6963c418c3512cb8": {
+      "id": "EV-6963c418c3512cb8",
+      "scope": "excluded",
+      "exclusion_reason": "not_ai_business",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "主营磁共振兼容监护仪与医用电磁兼容技术平台，证据未体现AI业务。",
+      "input_hash": "f3729e207b4e323be49d80211525b282433389708fd225e75e5d1bdaedbd697b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c42f4b39aa2b3814",
+          "quote": "其首款核心产品磁共振兼容监护仪可在高达3.0T 磁场环境下稳定运行，实现毫伏级生理信号的实时采集，为磁共振检查过程中的持续监护提供支持。"
+        },
+        {
+          "source_id": "FISRC-c42f4b39aa2b3814",
+          "quote": "并以此构建\"医用电磁兼容及高抗磁技术平台\"，形成可复用、可衍生的技术底座。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-10T00:50:28.047Z"
+    },
+    "EV-fa632ba1976ddf90": {
+      "id": "EV-fa632ba1976ddf90",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "agent-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        3,
+        4
+      ],
+      "rationale": "提供面向AI智能体的远程计算机访问与MCP服务器，属智能体开发与编排平台。",
+      "input_hash": "778d3655945467e4e0b76f5bbffb50d3e2b3832233cf1e2b8206b97382c2bc7d",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a42fcca24e8ae799",
+          "quote": "Phaze provides high-performance remote access to computers for people and AI agents. Phaze is headquartered in Utah."
+        },
+        {
+          "source_id": "FISRC-a42fcca24e8ae799",
+          "quote": "The company recently released an MCP server that lets computer-use agents remotely connect to and operate computers."
+        },
+        {
+          "source_id": "FISRC-a42fcca24e8ae799",
+          "quote": "Phaze also lets companies manage expensive workstations as shared infrastructure rather than assigning each machine to one employee."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-10T00:50:28.047Z"
+    },
+    "EV-cb688236861394f2": {
+      "id": "EV-cb688236861394f2",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "data-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        6,
+        7
+      ],
+      "rationale": "面向硬件工程团队提供数据平台与开发者API/MCP，属数据平台与检索。",
+      "input_hash": "6e7bd508fa53902a4481bf8429041423324fab75d66aa1b0d5fe723cd2bc3cb9",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-431d526132cc0343",
+          "quote": "Hardware teams capture their data and context in Nominal, then build on top: live analysis, custom tools, and agents that accelerate engineering loops."
+        },
+        {
+          "source_id": "FISRC-431d526132cc0343",
+          "quote": "Every run’s telemetry, video, and files, with the context behind them. One record for your engineers and your agents."
+        },
+        {
+          "source_id": "FISRC-3491226e16a1391a",
+          "quote": "Through SQL, APIs, and MCP, Nominal for Developers gives engineers direct access to the platform, allowing them to connect existing tools, build custom applications, and create their own workflows and agents on top of Nominal."
+        },
+        {
+          "source_id": "FISRC-431d526132cc0343",
+          "quote": "Connect Claude, Cursor, or any MCP client to Nominal, so your own agents can query your engineering data."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-10T00:50:28.047Z"
+    },
+    "EV-89bbafe3c39842b3": {
+      "id": "EV-89bbafe3c39842b3",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "education",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        3
+      ],
+      "rationale": "主营面向K-8学生的AI数学辅导产品，属教育行业AI。",
+      "input_hash": "e09d6096e1581046a9c0a31b8ccad762fa679db3e21119c737986fe98628c862",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f4a1d449fc834ce7",
+          "quote": "Astral, an AI lab building hyper-personalized education"
+        },
+        {
+          "source_id": "FISRC-3a0752ef4e86b173",
+          "quote": "Its first product, an AI math tutor for grades K-8, builds every lesson around how each child thinks."
+        },
+        {
+          "source_id": "FISRC-f4a1d449fc834ce7",
+          "quote": "It learns each child's gaps, pace, and way of reasoning, then writes their lessons around them, replacing the mass-produced textbook with a curriculum built for one student."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-10T00:50:28.047Z"
     }
   },
-  "generated_at": "2026-11-09T00:52:03.106Z"
+  "generated_at": "2026-11-10T00:50:28.047Z"
 }

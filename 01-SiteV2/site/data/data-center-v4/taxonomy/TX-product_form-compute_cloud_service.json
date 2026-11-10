@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-09",
-    "currentDate": "2026-11-09",
-    "eventCount": 4406,
+    "latestDataDate": "2026-11-10",
+    "currentDate": "2026-11-10",
+    "eventCount": 4419,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -129,12 +129,12 @@
       "HW-9a39a7f449362f96"
     ],
     "firstSeen": "2026-04-30",
-    "lastSeen": "2026-11-07"
+    "lastSeen": "2026-11-10"
   },
   "events": [
     {
       "id": "EV-f9c4e7e58dbb152f",
-      "dataDate": "2026-11-07",
+      "dataDate": "2026-11-10",
       "date": "2026-11-04",
       "updatedDate": "2026-11-04",
       "eventType": "funding",
@@ -153,7 +153,9 @@
       "metrics": [
         "$350M",
         "$350 million",
-        "$3.25 billion"
+        "$3.25 billion",
+        "$240M",
+        "$3B"
       ],
       "locations": [],
       "missingFields": [],
@@ -7097,7 +7099,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-07"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "EN-fc261198a189a8eb",
@@ -8042,10 +8044,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
         "TX-technology-embodied_ai",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
-        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-security_operations",
         "TX-industry-media_entertainment",
         "TX-product_form-compute_cloud_service",
         "TX-product_form-chip_accelerator",
@@ -8055,7 +8058,6 @@
         "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
-        "TX-use_case-security_operations",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-ai_market_application-models",
@@ -8109,7 +8111,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-11-09"
+      "lastSeen": "2026-11-10"
     },
     {
       "id": "EN-8f5ef31ed5125786",
@@ -8384,6 +8386,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-compute_cloud_service",
@@ -8391,7 +8394,6 @@
         "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-product_form-robotic_system",
-        "TX-use_case-physical_automation",
         "TX-industry-logistics_supply_chain",
         "TX-target_user-consumer",
         "TX-technology-code_generation",

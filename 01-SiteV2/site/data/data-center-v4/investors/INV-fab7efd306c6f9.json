@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-09",
-    "currentDate": "2026-11-09",
-    "eventCount": 4406,
+    "latestDataDate": "2026-11-10",
+    "currentDate": "2026-11-10",
+    "eventCount": 4419,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,25 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 9,
-    "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 8,
+    "current_round_count": 10,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 9,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-12",
-    "latest_disclosed_at": "2026-11-07",
+    "latest_disclosed_at": "2026-11-09",
     "role_counts": {
       "co_lead": 4,
-      "historical_or_ambiguous": 2,
-      "participant": 5
+      "historical_or_ambiguous": 3,
+      "participant": 6
     },
     "round_codes": [
       "series_a",
       "series_b",
+      "series_c",
       "series_d",
       "series_e",
       "series_f",
@@ -112,6 +113,11 @@
         "name": "Fractile"
       },
       {
+        "entity_id": "EN-d58999507a10460c",
+        "canonical_entity_id": "",
+        "name": "Nominal"
+      },
+      {
         "entity_id": "EN-7d3194f79e645c42",
         "canonical_entity_id": "EN-7d3194f79e645c42",
         "name": "OpenAI"
@@ -128,6 +134,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-14a1312d0c14387f",
+        "funding_insight_id": "FI-94eaf09d128c6f03",
+        "event_ids": [
+          "EV-cb688236861394f2"
+        ],
+        "company_entity_id": "EN-d58999507a10460c",
+        "company_canonical_entity_id": "",
+        "company_name": "Nominal",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$240 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 240000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.4 亿美元"
+        },
+        "announced_at": "2026-11-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3491226e16a1391a",
+            "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
+            "source_title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
+            "source_content_hash": "661a69b2d4192044",
+            "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+            "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-497422bbedc49e62",
         "funding_insight_id": "FI-7183666b813db13e",
@@ -523,6 +569,38 @@
         ]
       },
       {
+        "activity_id": "IA-b1a8076702a5cffc",
+        "funding_insight_id": "FI-94eaf09d128c6f03",
+        "event_ids": [
+          "EV-cb688236861394f2"
+        ],
+        "company_entity_id": "EN-d58999507a10460c",
+        "company_canonical_entity_id": "",
+        "company_name": "Nominal",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮扩展领投（历史轮次）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-320dc636ecb880b5",
+            "source_url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months",
+            "source_title": "AI硬件初创公司Nominal在8个月内估值翻三倍至$3B",
+            "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+            "quote": "This follows the company’s announcement in March of a $155 million Series B extension at a $1 billion valuation, led by Trae Stephens at Founders Fund.",
+            "quote_hash": "913ab7e53449b30ef48ca8077946b748c7757221751096b9d95db12eb2d2d33b"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-d70ccec8a5a78f24",
         "funding_insight_id": "FI-082c684e1b4a88c2",
         "event_ids": [
@@ -564,6 +642,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-3491226e16a1391a",
+        "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
+        "source_title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
+        "source_content_hash": "661a69b2d4192044",
+        "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+        "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+      },
       {
         "source_id": "FISRC-3952ae60d488ad95",
         "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
@@ -645,6 +731,14 @@
         "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
       },
       {
+        "source_id": "FISRC-320dc636ecb880b5",
+        "source_url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months",
+        "source_title": "AI硬件初创公司Nominal在8个月内估值翻三倍至$3B",
+        "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+        "quote": "This follows the company’s announcement in March of a $155 million Series B extension at a $1 billion valuation, led by Trae Stephens at Founders Fund.",
+        "quote_hash": "913ab7e53449b30ef48ca8077946b748c7757221751096b9d95db12eb2d2d33b"
+      },
+      {
         "source_id": "FISRC-0349532f469a6b45",
         "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
         "source_title": "Early SpaceX investors will now reap the rewards",
@@ -691,16 +785,16 @@
           "source_id": "founders_home"
         },
         {
+          "description": "融资来源记录：Nominal · C轮 · 2026-11-09 · 本轮参投 · $240 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3491226e16a1391a"
+        },
+        {
           "description": "融资来源记录：OpenAI · 轮次未披露 · 2026-11-07 · 本轮参投 · $11 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3952ae60d488ad95"
         },
         {
           "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮联合领投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f581afce52cf5bef"
-        },
-        {
-          "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · 本轮参投 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5fc65e3f4fb1b347"
         }
       ],
       "contacts": [
@@ -745,6 +839,14 @@
           "quote_hash": "e7928b1d51fe1210b92e5c255535528ac724363f322f6c31135b6bb89547dd05"
         },
         {
+          "source_id": "FISRC-3491226e16a1391a",
+          "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
+          "source_title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
+          "source_content_hash": "661a69b2d4192044",
+          "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+          "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+        },
+        {
           "source_id": "FISRC-3952ae60d488ad95",
           "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
           "source_title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
@@ -759,14 +861,6 @@
           "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
           "quote": "The financing was co-led by Dragoneer Investment Group, Thrive Capital, Founders Fund, Sands Capital, and Avenir Growth.",
           "quote_hash": "f51f43c20ed94c008d5eb4b1abbcb23d26adeb696bc7b69f874cef8d31d80d73"
-        },
-        {
-          "source_id": "FISRC-5fc65e3f4fb1b347",
-          "source_url": "https://kingliber.com/the-ai-infrastructure-boom-crusoe-secures-3-9-billion-series-f-at-a-30-9-billion-valuation-to-power-the-next-generation-of-compute/",
-          "source_title": "The AI Infrastructure Boom: Crusoe Secures $3.9 Billion Series F at a $30.9 Billion Valuation to Power the Next Generation of Compute – King Liber",
-          "source_content_hash": "a5d809d221408d5b",
-          "quote": "They were joined by a roster of elite institutional and corporate investors, including Founders Fund , GIC , Nvidia , the Qatar Investment Authority (QIA) , Radical Ventures , and TPG .",
-          "quote_hash": "f095cfa01d7214cc37d55b841ff30c29ca4c63f1172dcbde315aadbad247b8e2"
         }
       ],
       "last_verified_at": "2026-09-25",

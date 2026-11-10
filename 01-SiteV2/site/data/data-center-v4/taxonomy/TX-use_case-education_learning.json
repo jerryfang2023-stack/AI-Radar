@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-09",
-    "currentDate": "2026-11-09",
-    "eventCount": 4406,
+    "latestDataDate": "2026-11-10",
+    "currentDate": "2026-11-10",
+    "eventCount": 4419,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -59,6 +59,7 @@
     "typeLabel": "应用场景",
     "valueId": "education_learning",
     "eventIds": [
+      "EV-89bbafe3c39842b3",
       "EV-2470b13ea55496d0",
       "EV-86838cc774b85116",
       "EV-ef669a52c9a3f94f",
@@ -73,6 +74,7 @@
       "EV-26439e34295a0519"
     ],
     "entityIds": [
+      "EN-2e9f768344ff39ac",
       "EN-0830e0bf8e8fa471",
       "EN-573b998925ae7499",
       "EN-1d79127e9d90e89b",
@@ -89,9 +91,94 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-10-02"
+    "lastSeen": "2026-11-10"
   },
   "events": [
+    {
+      "id": "EV-89bbafe3c39842b3",
+      "dataDate": "2026-11-10",
+      "date": "2026-11-09",
+      "updatedDate": "2026-11-09",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Astral 融资 550 万美元，通过超个性化教育开启下一场文艺复兴",
+      "originalTitle": "Astral Raises $5.5M to Unlock the Next Renaissance Through Hyper-Personalized Education",
+      "subject": "Astral",
+      "action": "Raises",
+      "object": "$5.5M to Unlock the Next Renaissance Through Hyper-Personalized Education",
+      "metrics": [
+        "$5.5 million",
+        "$5.5M"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "education_learning",
+            "name": "教育与学习",
+            "entityIds": [
+              "EN-2e9f768344ff39ac"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "education_learning",
+          "name": "教育与学习",
+          "entityIds": [
+            "EN-2e9f768344ff39ac"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "education_learning",
+          "name": "教育与学习",
+          "entityIds": [
+            "EN-2e9f768344ff39ac"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-1a2290470e0aa754",
+        "EN-2e9f768344ff39ac"
+      ],
+      "entityNames": [
+        "SAN FRANCISCO",
+        "Astral"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/astral-raises-5-5m-to-unlock-the-next-renaissance-through-hyper-personalized-education-302933044.html",
+      "publisher": "www.prnewswire.com"
+    },
     {
       "id": "EV-2470b13ea55496d0",
       "dataDate": "2026-09-23",
@@ -4985,6 +5072,27 @@
   ],
   "entities": [
     {
+      "id": "EN-2e9f768344ff39ac",
+      "name": "Astral",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-89bbafe3c39842b3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-education_learning"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-11-09",
+      "lastSeen": "2026-11-10"
+    },
+    {
       "id": "EN-0830e0bf8e8fa471",
       "name": "Horowitz Andreessen Academy",
       "entityType": "organization_candidate",
@@ -4999,12 +5107,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-education_learning",
         "TX-product_form-end_user_application",
         "TX-target_user-student",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-industry-education",
-        "TX-use_case-education_learning"
+        "TX-industry-education"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-23",
@@ -5025,14 +5133,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-industry-healthcare_life_sciences",
-        "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-education_learning",
+        "TX-product_form-model",
+        "TX-product_form-robotic_system",
         "TX-target_user-student",
         "TX-target_user-consumer",
         "TX-industry-education",
-        "TX-use_case-education_learning",
         "TX-ai_market_category-physical_ai",
         "TX-technology-multimodal"
       ],
@@ -5080,8 +5188,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-education_learning",
+        "TX-product_form-model",
+        "TX-use_case-security_operations",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-automotive_transportation",
@@ -5091,7 +5201,6 @@
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
-        "TX-use_case-security_operations",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-use_case-content_creation",
@@ -5108,7 +5217,6 @@
         "TX-industry-energy_utilities",
         "TX-use_case-data_analysis",
         "TX-industry-education",
-        "TX-use_case-education_learning",
         "TX-industry-government_public_sector",
         "TX-target_user-educator",
         "TX-use_case-knowledge_search",
@@ -5139,13 +5247,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-education_learning",
         "TX-industry-media_entertainment",
         "TX-product_form-ai_device",
         "TX-ai_market_category-industry_applications",
         "TX-use_case-content_creation",
         "TX-target_user-consumer",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-education_learning",
         "TX-ai_market_subcategory-consumer_retail"
       ],
       "relatedEntityIds": [],
@@ -5169,15 +5277,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
+        "TX-use_case-education_learning",
         "TX-technology-embodied_ai",
         "TX-industry-manufacturing",
         "TX-target_user-developer",
         "TX-product_form-robotic_system",
-        "TX-use_case-physical_automation",
         "TX-target_user-researcher",
         "TX-industry-logistics_supply_chain",
         "TX-industry-education",
-        "TX-use_case-education_learning",
         "TX-ai_market_category-physical_ai",
         "TX-target_user-educator"
       ],
@@ -5202,12 +5310,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
+        "TX-use_case-education_learning",
         "TX-technology-embodied_ai",
         "TX-target_user-developer",
         "TX-product_form-robotic_system",
-        "TX-use_case-physical_automation",
         "TX-target_user-consumer",
-        "TX-use_case-education_learning",
         "TX-ai_market_category-physical_ai"
       ],
       "relatedEntityIds": [],
@@ -5229,8 +5337,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-education_learning"
+        "TX-use_case-education_learning",
+        "TX-product_form-enterprise_software_platform"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-29",
@@ -5251,8 +5359,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-use_case-education_learning",
+        "TX-product_form-model",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
@@ -5274,6 +5382,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-education_learning",
         "TX-product_form-ai_device",
         "TX-use_case-content_creation",
         "TX-target_user-student",
@@ -5281,8 +5390,7 @@
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-industry-education",
-        "TX-use_case-education_learning"
+        "TX-industry-education"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-20",
@@ -5303,12 +5411,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-education_learning",
         "TX-product_form-ai_device",
         "TX-ai_market_category-industry_applications",
         "TX-use_case-content_creation",
         "TX-target_user-consumer",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-education_learning",
         "TX-ai_market_subcategory-consumer_retail"
       ],
       "relatedEntityIds": [],
@@ -5330,13 +5438,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
+        "TX-use_case-education_learning",
         "TX-industry-financial_services",
         "TX-product_form-robotic_system",
-        "TX-use_case-physical_automation",
         "TX-target_user-student",
         "TX-target_user-consumer",
         "TX-industry-education",
-        "TX-use_case-education_learning",
         "TX-ai_market_category-physical_ai"
       ],
       "relatedEntityIds": [],
@@ -5364,17 +5472,17 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
+        "TX-use_case-education_learning",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-product_form-robotic_system",
-        "TX-use_case-physical_automation",
         "TX-target_user-researcher",
         "TX-target_user-student",
         "TX-industry-retail_ecommerce",
         "TX-use_case-data_analysis",
         "TX-industry-education",
-        "TX-use_case-education_learning",
         "TX-ai_market_category-physical_ai",
         "TX-target_user-educator"
       ],

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-09",
-    "currentDate": "2026-11-09",
-    "eventCount": 4406,
+    "latestDataDate": "2026-11-10",
+    "currentDate": "2026-11-10",
+    "eventCount": 4419,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-6963c418c3512cb8",
       "EV-a39d8aac0ee78e07",
       "EV-7257a7f4ab72c018"
     ],
@@ -70,10 +71,11 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-05-20",
-    "lastSeen": "2026-10-02",
+    "lastSeen": "2026-11-10",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-6963c418c3512cb8",
         "EV-7257a7f4ab72c018",
         "EV-a39d8aac0ee78e07"
       ],
@@ -85,6 +87,36 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-6963c418c3512cb8",
+        "dataDate": "2026-11-10",
+        "date": "2026-11-09",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "原方智能完成数千万元天使轮融资，推进世界模型研发与家庭场景落地",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-250d7fcba902495a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-250d7fcba902495a",
+          "EN-4cab994c57f770ed",
+          "EN-b7ae9f021a5edd41",
+          "EN-ba5fb62b56438243"
+        ]
+      },
       {
         "id": "EV-7257a7f4ab72c018",
         "dataDate": "2026-10-02",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-09",
-    "currentDate": "2026-11-09",
-    "eventCount": 4406,
+    "latestDataDate": "2026-11-10",
+    "currentDate": "2026-11-10",
+    "eventCount": 4419,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -56,17 +56,17 @@
     "id": "INV-b8a0e793124952",
     "name": "Andreessen Horowitz",
     "aliases": [
-      "Andreessen Horowitz (a16z)",
-      "a16z"
+      "a16z",
+      "Andreessen Horowitz (a16z)"
     ],
     "canonical_entity_id": null,
     "investor_kind": "investment_institution",
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 40,
+    "current_round_count": 41,
     "historical_or_ambiguous_count": 9,
-    "portfolio_company_count": 35,
+    "portfolio_company_count": 36,
     "market_regions": [
       "GLOBAL"
     ],
@@ -77,7 +77,7 @@
     "role_counts": {
       "co_lead": 6,
       "historical_or_ambiguous": 9,
-      "lead": 20,
+      "lead": 21,
       "participant": 14
     },
     "round_codes": [
@@ -200,6 +200,11 @@
         "name": "OpenAI"
       },
       {
+        "entity_id": "EN-9e1adfdb3b0d1064",
+        "canonical_entity_id": "",
+        "name": "Phaze"
+      },
+      {
         "entity_id": "EN-d2d165dff04ba225",
         "canonical_entity_id": "",
         "name": "Pitdotcom Sweden AB"
@@ -308,6 +313,46 @@
             "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
             "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
             "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-26dd165abc1f1954",
+        "funding_insight_id": "FI-b53014d597338c56",
+        "event_ids": [
+          "EV-fa632ba1976ddf90"
+        ],
+        "company_entity_id": "EN-9e1adfdb3b0d1064",
+        "company_canonical_entity_id": "",
+        "company_name": "Phaze",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$8.75 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 8750000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "875 万美元"
+        },
+        "announced_at": "2026-11-04",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-a42fcca24e8ae799",
+            "source_url": "https://www.prnewswire.com/news-releases/phaze-raises-8-75-million-seed-led-by-a16z-to-give-people-and-ai-agents-access-to-computers-302929303.html",
+            "source_title": "Phaze 完成由 a16z 领投的 875 万美元种子轮融资，旨在让人类和 AI 智能体获得计算机访问权限",
+            "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+            "quote": "Phaze today announced it raised $8.75 million in seed funding led by a16z, with participation from Indie, NextView, Makers, and Lerer Hippeau.",
+            "quote_hash": "6fbb28364f2f40b606d72963cdafc1e94e0fca2cf373ba824cacd94d1be39bec"
           }
         ]
       },
@@ -2234,6 +2279,14 @@
         "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
       },
       {
+        "source_id": "FISRC-a42fcca24e8ae799",
+        "source_url": "https://www.prnewswire.com/news-releases/phaze-raises-8-75-million-seed-led-by-a16z-to-give-people-and-ai-agents-access-to-computers-302929303.html",
+        "source_title": "Phaze 完成由 a16z 领投的 875 万美元种子轮融资，旨在让人类和 AI 智能体获得计算机访问权限",
+        "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+        "quote": "Phaze today announced it raised $8.75 million in seed funding led by a16z, with participation from Indie, NextView, Makers, and Lerer Hippeau.",
+        "quote_hash": "6fbb28364f2f40b606d72963cdafc1e94e0fca2cf373ba824cacd94d1be39bec"
+      },
+      {
         "source_id": "FISRC-bc01622ffa1cd4de",
         "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
         "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
@@ -2727,12 +2780,12 @@
           "source_id": "FISRC-3952ae60d488ad95"
         },
         {
-          "description": "融资来源记录：Wabi · 轮次未披露 · 2026-10-29 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bc01622ffa1cd4de"
+          "description": "融资来源记录：Phaze · 种子轮 · 2026-11-04 · 本轮领投 · $8.75 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a42fcca24e8ae799"
         },
         {
-          "description": "融资来源记录：Labelbox · E轮 · 2026-10-14 · 本轮参投 · more than $100 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-31a53dcde47855a0"
+          "description": "融资来源记录：Wabi · 轮次未披露 · 2026-10-29 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bc01622ffa1cd4de"
         }
       ],
       "contacts": [
@@ -2848,20 +2901,20 @@
           "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
         },
         {
+          "source_id": "FISRC-a42fcca24e8ae799",
+          "source_url": "https://www.prnewswire.com/news-releases/phaze-raises-8-75-million-seed-led-by-a16z-to-give-people-and-ai-agents-access-to-computers-302929303.html",
+          "source_title": "Phaze 完成由 a16z 领投的 875 万美元种子轮融资，旨在让人类和 AI 智能体获得计算机访问权限",
+          "source_content_hash": "538d55aae80e97db1f58a0e1c9e46149e36e022f5fa2889c95d595bb84cf9818",
+          "quote": "Phaze today announced it raised $8.75 million in seed funding led by a16z, with participation from Indie, NextView, Makers, and Lerer Hippeau.",
+          "quote_hash": "6fbb28364f2f40b606d72963cdafc1e94e0fca2cf373ba824cacd94d1be39bec"
+        },
+        {
           "source_id": "FISRC-bc01622ffa1cd4de",
           "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
           "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
           "source_content_hash": "23c10dda6f07e5b9c44625c71399ea47dafc1e57e4bc4b8f87d6c3992821f0f6",
           "quote": "Other participants in the round included Andreessen Horowitz (a16z), Forerunner, Amazon Alexa Fund",
           "quote_hash": "fb7d6c4f926ef6d735db5fb1f51ee398253262316355083102507558ff84f3be"
-        },
-        {
-          "source_id": "FISRC-31a53dcde47855a0",
-          "source_url": "https://www.prnewswire.com/news-releases/labelbox-raises-100-million-in-series-e-funding-to-advance-reinforcement-learning-and-enterprise-ai-agents-302909147.html",
-          "source_title": "Labelbox 在 E 轮融资中筹集超 1 亿美元，以推进强化学习和企业 AI 智能体",
-          "source_content_hash": "abf71b7341e1d71729971470dba1a61c3c2dbc1ba13ef692e8af679cbf922914",
-          "quote": "The round was led by Infinitum Partners, with participation from Wipro Ventures, Andreessen Horowitz (a16z), B Capital, Tau Ventures, Snowpoint Ventures, and others.",
-          "quote_hash": "7f634d6cd46ae09cfcb1945e2af656e027bb19047744780e7d20d1088d334973"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2872,7 +2925,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[39].role": {
+        "activities[40].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",
@@ -2880,7 +2933,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[42].role": {
+        "activities[43].role": {
           "text": "Series D 参投",
           "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
           "provider": "deepseek",

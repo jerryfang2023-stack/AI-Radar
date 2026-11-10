@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-09",
-    "currentDate": "2026-11-09",
-    "eventCount": 4406,
+    "latestDataDate": "2026-11-10",
+    "currentDate": "2026-11-10",
+    "eventCount": 4419,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,21 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 28,
+    "current_round_count": 29,
     "historical_or_ambiguous_count": 6,
-    "portfolio_company_count": 24,
+    "portfolio_company_count": 25,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-10-21",
+    "latest_disclosed_at": "2026-11-09",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 6,
       "lead": 11,
-      "participant": 15
+      "participant": 16
     },
     "round_codes": [
       "multi_round",
@@ -190,6 +190,11 @@
         "name": "Nexus Enterprises, Inc"
       },
       {
+        "entity_id": "EN-d58999507a10460c",
+        "canonical_entity_id": "",
+        "name": "Nominal"
+      },
+      {
         "entity_id": "EN-27cac5503836765c",
         "canonical_entity_id": "",
         "name": "Pool"
@@ -211,6 +216,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-852724fb63abdb68",
+        "funding_insight_id": "FI-94eaf09d128c6f03",
+        "event_ids": [
+          "EV-cb688236861394f2"
+        ],
+        "company_entity_id": "EN-d58999507a10460c",
+        "company_canonical_entity_id": "",
+        "company_name": "Nominal",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$240 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 240000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.4 亿美元"
+        },
+        "announced_at": "2026-11-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3491226e16a1391a",
+            "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
+            "source_title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
+            "source_content_hash": "661a69b2d4192044",
+            "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+            "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2e25eeac27274639",
         "funding_insight_id": "FI-b875723282f11479",
@@ -1545,6 +1590,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-3491226e16a1391a",
+        "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
+        "source_title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
+        "source_content_hash": "661a69b2d4192044",
+        "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+        "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+      },
+      {
         "source_id": "FISRC-c4c53e6f607010be",
         "source_url": "https://legora.com/blog/series-e",
         "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
@@ -1860,16 +1913,16 @@
           "source_id": "gc_seed"
         },
         {
+          "description": "融资来源记录：Nominal · C轮 · 2026-11-09 · 本轮参投 · $240 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3491226e16a1391a"
+        },
+        {
           "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c4c53e6f607010be"
         },
         {
           "description": "融资来源记录：Baba · A轮 · 2026-10-20 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-28715696ca7123d8"
-        },
-        {
-          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f581afce52cf5bef"
         }
       ],
       "contacts": [
@@ -1999,6 +2052,14 @@
           "quote_hash": "bf5226b329d256cd8d31955d906e3205e22e5f58dc7c507a43b4ea96c6e7a183"
         },
         {
+          "source_id": "FISRC-3491226e16a1391a",
+          "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
+          "source_title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
+          "source_content_hash": "661a69b2d4192044",
+          "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+          "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+        },
+        {
           "source_id": "FISRC-c4c53e6f607010be",
           "source_url": "https://legora.com/blog/series-e",
           "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
@@ -2013,14 +2074,6 @@
           "source_content_hash": "0803f7eb791d5f0d198099c6933a06fa740692b08ee7a78fb42f0644018477ca",
           "quote": "returning investors General Catalyst, Genius Ventures and Ground Up Ventures",
           "quote_hash": "28719cf3b3cf27940d78970d6175d054bc0078fd782bc2ef8808175830bf2c9a"
-        },
-        {
-          "source_id": "FISRC-f581afce52cf5bef",
-          "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
-          "source_title": "Ramp估值达600亿美元，深入布局AI",
-          "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
-          "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
-          "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2031,7 +2084,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[29].role": {
+        "activities[30].role": {
           "text": "Pre-Seed 轮领投",
           "source_hash": "b679d7fa92689a42e5e3729978cbf6f81b503b4ff4fa9193c6a9694195d14b03",
           "provider": "deepseek",

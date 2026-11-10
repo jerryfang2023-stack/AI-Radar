@@ -1,0 +1,118 @@
+{
+  "event_id": "EV-7d8458a6707172eb",
+  "company_name": "甲骨文已干净利落地",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "高盛力挺甲骨文！AI融资焦虑被高估，2026年云基建底气有多硬？",
+    "event_source_refs": [
+      "SA-f6757965fbc238e7"
+    ],
+    "event_claim_refs": [
+      "CL-8f07389fac1b7bf1"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-e2fa92f8c064e29d",
+        "canonical_name": "高盛力挺甲骨文！AI"
+      },
+      {
+        "entity_id": "EN-36907cfc81423d87",
+        "canonical_name": "甲骨文已干净利落地"
+      }
+    ],
+    "event_metrics": [
+      "200亿"
+    ],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-8f07389fac1b7bf1",
+        "raw_id": "RAW-0d3525d1bad5ecb4",
+        "subject": "甲骨文",
+        "object": "200亿美元债+股组合融资",
+        "source_quote_length": 23
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 1,
+    "resolved_company": "甲骨文已干净利落地"
+  },
+  "queries": [
+    "\"甲骨文已干净利落地\" 2026 融资 投资方",
+    "\"甲骨文已干净利落地\" 200亿美元 融资 领投 跟投",
+    "\"甲骨文已干净利落地\" 官网 产品 服务",
+    "\"甲骨文已干净利落地\" 投资机构 融资用途",
+    "\"甲骨文已干净利落地\" 2026 本轮融资 公告",
+    "\"甲骨文已干净利落地\" 客户 创始人 总部"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"甲骨文已干净利落地\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 2
+    },
+    {
+      "provider": "tavily",
+      "query": "\"甲骨文已干净利落地\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"甲骨文已干净利落地\" 200亿美元 融资 领投 跟投",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"甲骨文已干净利落地\" 官网 产品 服务",
+      "status": "completed",
+      "count": 7
+    },
+    {
+      "provider": "tavily",
+      "query": "\"甲骨文已干净利落地\" 官网 产品 服务",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"甲骨文已干净利落地\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 5
+    },
+    {
+      "provider": "tavily",
+      "query": "\"甲骨文已干净利落地\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"甲骨文已干净利落地\" 2026 本轮融资 公告",
+      "status": "completed",
+      "count": 5
+    },
+    {
+      "provider": "tavily",
+      "query": "\"甲骨文已干净利落地\" 2026 本轮融资 公告",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"甲骨文已干净利落地\" 客户 创始人 总部",
+      "status": "empty",
+      "count": 0
+    },
+    {
+      "provider": "tavily",
+      "query": "\"甲骨文已干净利落地\" 客户 创始人 总部",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}

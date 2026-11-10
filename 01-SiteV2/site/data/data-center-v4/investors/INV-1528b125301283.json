@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-09",
-    "currentDate": "2026-11-09",
-    "eventCount": 4406,
+    "latestDataDate": "2026-11-10",
+    "currentDate": "2026-11-10",
+    "eventCount": 4419,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,20 +63,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 30,
+    "current_round_count": 31,
     "historical_or_ambiguous_count": 8,
-    "portfolio_company_count": 25,
+    "portfolio_company_count": 26,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-10-15",
+    "latest_disclosed_at": "2026-11-09",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 8,
-      "lead": 12,
+      "lead": 13,
       "participant": 16
     },
     "round_codes": [
@@ -164,6 +164,11 @@
         "name": "Nexthop AI"
       },
       {
+        "entity_id": "EN-d58999507a10460c",
+        "canonical_entity_id": "",
+        "name": "Nominal"
+      },
+      {
         "entity_id": "EN-a972bc1b3220493e",
         "canonical_entity_id": "",
         "name": "Notch"
@@ -220,6 +225,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-11779bb75fa23f69",
+        "funding_insight_id": "FI-94eaf09d128c6f03",
+        "event_ids": [
+          "EV-cb688236861394f2"
+        ],
+        "company_entity_id": "EN-d58999507a10460c",
+        "company_canonical_entity_id": "",
+        "company_name": "Nominal",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$240 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 240000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.4 亿美元"
+        },
+        "announced_at": "2026-11-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-320dc636ecb880b5",
+            "source_url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months",
+            "source_title": "AI硬件初创公司Nominal在8个月内估值翻三倍至$3B",
+            "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+            "quote": "a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
+            "quote_hash": "a66e9c1b5c766bb0b7208c185cc6fd577939d39fcae65e2411372ca398aef9f4"
+          }
+        ]
+      },
       {
         "activity_id": "IA-cf453ac8d2d49ad3",
         "funding_insight_id": "FI-49e5e02e3f1e2d52",
@@ -1695,6 +1740,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-320dc636ecb880b5",
+        "source_url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months",
+        "source_title": "AI硬件初创公司Nominal在8个月内估值翻三倍至$3B",
+        "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+        "quote": "a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
+        "quote_hash": "a66e9c1b5c766bb0b7208c185cc6fd577939d39fcae65e2411372ca398aef9f4"
+      },
+      {
         "source_id": "FISRC-f581afce52cf5bef",
         "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
         "source_title": "Ramp估值达600亿美元，深入布局AI",
@@ -2041,16 +2094,16 @@
           "source_id": "lightspeed_us"
         },
         {
+          "description": "融资来源记录：Nominal · C轮 · 2026-11-09 · 本轮领投 · $240 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-320dc636ecb880b5"
+        },
+        {
           "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f581afce52cf5bef"
         },
         {
           "description": "融资来源记录：Zenzap · 多轮融资 · 2026-10-14 · 本轮联合领投 · $44 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-bb48149fa1b574d3"
-        },
-        {
-          "description": "融资来源记录：Arena · B轮 · 2026-10-08 · 本轮领投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-99134731fc9bfd4f"
         }
       ],
       "contacts": [
@@ -2101,6 +2154,14 @@
           "quote_hash": "d2bbae37840bb25a103173bf141ecae89a192e7fedcd89323366cf9032983442"
         },
         {
+          "source_id": "FISRC-320dc636ecb880b5",
+          "source_url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months",
+          "source_title": "AI硬件初创公司Nominal在8个月内估值翻三倍至$3B",
+          "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+          "quote": "a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
+          "quote_hash": "a66e9c1b5c766bb0b7208c185cc6fd577939d39fcae65e2411372ca398aef9f4"
+        },
+        {
           "source_id": "FISRC-f581afce52cf5bef",
           "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
           "source_title": "Ramp估值达600亿美元，深入布局AI",
@@ -2115,14 +2176,6 @@
           "source_content_hash": "4cfe12ba60131ea9",
           "quote": "has raised $33 million in a Series A funding round co-led by Bessemer Venture Partners and Lightspeed Venture Partners, with additional investment from The Garage.",
           "quote_hash": "8d7648ad5a62c1ad0005ff8d3f38e905cb3818cdc6f18a0ced6816381566c39c"
-        },
-        {
-          "source_id": "FISRC-99134731fc9bfd4f",
-          "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
-          "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
-          "source_content_hash": "10f47ea163bf49128a9693df697e285e22ba44f1456e2a61601ee8bc4db18632",
-          "quote": "The round was led by Lightspeed Venture Partners and Khosla Ventures, with Salesforce Ventures, 01 Advisors, Dell Technologies Capital, Endeavor Catalyst, a16z, Felicis, and others joining in.",
-          "quote_hash": "a74b3d1411234aa07fe88ea7b200ae64481666dac9426591d6fb0a9f541a829c"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2133,7 +2186,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[29].role": {
+        "activities[30].role": {
           "text": "Series B 参投（2025年4月）",
           "source_hash": "4170bf75c97ec9f7cd65f42d8ca30a3c3546dd4ade04c117870543b20203c333",
           "provider": "deepseek",
@@ -2141,7 +2194,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[33].role": {
+        "activities[34].role": {
           "text": "Series D 参投",
           "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
           "provider": "deepseek",

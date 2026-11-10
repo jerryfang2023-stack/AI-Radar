@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-09",
-    "currentDate": "2026-11-09",
-    "eventCount": 4406,
+    "latestDataDate": "2026-11-10",
+    "currentDate": "2026-11-10",
+    "eventCount": 4419,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,21 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-27",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-11-09",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
+      "series_c",
       "series_d",
       "series_e"
     ],
@@ -88,9 +89,54 @@
         "entity_id": "EN-4b6cef91ffb05303",
         "canonical_entity_id": "",
         "name": "Cognition AI"
+      },
+      {
+        "entity_id": "EN-d58999507a10460c",
+        "canonical_entity_id": "",
+        "name": "Nominal"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-7f3bb94829846b48",
+        "funding_insight_id": "FI-94eaf09d128c6f03",
+        "event_ids": [
+          "EV-cb688236861394f2"
+        ],
+        "company_entity_id": "EN-d58999507a10460c",
+        "company_canonical_entity_id": "",
+        "company_name": "Nominal",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$240 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 240000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.4 亿美元"
+        },
+        "announced_at": "2026-11-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3491226e16a1391a",
+            "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
+            "source_title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
+            "source_content_hash": "661a69b2d4192044",
+            "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+            "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d284ec6ce8379b37",
         "funding_insight_id": "FI-d9fc0a409d33d577",
@@ -174,6 +220,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-3491226e16a1391a",
+        "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
+        "source_title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
+        "source_content_hash": "661a69b2d4192044",
+        "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+        "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+      },
+      {
         "source_id": "FISRC-61aa8db010b34dfa",
         "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
         "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
@@ -217,6 +271,10 @@
           "source_id": "PROFILE-e52b297616faddd1bbfc"
         },
         {
+          "description": "融资来源记录：Nominal · C轮 · 2026-11-09 · 本轮参投 · $240 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3491226e16a1391a"
+        },
+        {
           "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-61aa8db010b34dfa"
         },
@@ -242,6 +300,14 @@
           "source_content_hash": "afbf3abc2927069738cafe0860727528656dcb21ca29b3f6b3f4677bdc7d1857",
           "quote": "We take a first-principles based approach to identify inevitable changes in large markets",
           "quote_hash": "64bb7c90c06a87da8e8040ddceee1a397f6fa43352cccd1adc6974936ac12afc"
+        },
+        {
+          "source_id": "FISRC-3491226e16a1391a",
+          "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
+          "source_title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
+          "source_content_hash": "661a69b2d4192044",
+          "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+          "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
         },
         {
           "source_id": "FISRC-61aa8db010b34dfa",

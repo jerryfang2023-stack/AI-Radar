@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-09",
-    "currentDate": "2026-11-09",
-    "eventCount": 4406,
+    "latestDataDate": "2026-11-10",
+    "currentDate": "2026-11-10",
+    "eventCount": 4419,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,17 +63,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 15,
+    "current_round_count": 16,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 13,
+    "portfolio_company_count": 14,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-05-06",
-    "latest_disclosed_at": "2026-10-21",
+    "latest_disclosed_at": "2026-11-09",
     "role_counts": {
+      "co_lead": 1,
       "historical_or_ambiguous": 3,
       "lead": 6,
       "participant": 9
@@ -130,6 +131,11 @@
         "name": "Metaview"
       },
       {
+        "entity_id": "EN-d58999507a10460c",
+        "canonical_entity_id": "",
+        "name": "Nominal"
+      },
+      {
         "entity_id": "EN-7d3194f79e645c42",
         "canonical_entity_id": "EN-7d3194f79e645c42",
         "name": "OpenAI"
@@ -156,6 +162,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-27663e1c9ed29bfa",
+        "funding_insight_id": "FI-94eaf09d128c6f03",
+        "event_ids": [
+          "EV-cb688236861394f2"
+        ],
+        "company_entity_id": "EN-d58999507a10460c",
+        "company_canonical_entity_id": "",
+        "company_name": "Nominal",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$240 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 240000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.4 亿美元"
+        },
+        "announced_at": "2026-11-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-320dc636ecb880b5",
+            "source_url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months",
+            "source_title": "AI硬件初创公司Nominal在8个月内估值翻三倍至$3B",
+            "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+            "quote": "a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
+            "quote_hash": "a66e9c1b5c766bb0b7208c185cc6fd577939d39fcae65e2411372ca398aef9f4"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ae6af805f5280c3b",
         "funding_insight_id": "FI-b875723282f11479",
@@ -866,6 +912,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-320dc636ecb880b5",
+        "source_url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months",
+        "source_title": "AI硬件初创公司Nominal在8个月内估值翻三倍至$3B",
+        "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+        "quote": "a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
+        "quote_hash": "a66e9c1b5c766bb0b7208c185cc6fd577939d39fcae65e2411372ca398aef9f4"
+      },
+      {
         "source_id": "FISRC-c4c53e6f607010be",
         "source_url": "https://legora.com/blog/series-e",
         "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
@@ -1059,16 +1113,16 @@
           "source_id": "insight_media"
         },
         {
+          "description": "融资来源记录：Nominal · C轮 · 2026-11-09 · 本轮联合领投 · $240 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-320dc636ecb880b5"
+        },
+        {
           "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c4c53e6f607010be"
         },
         {
           "description": "融资来源记录：Stuut · B轮 · 2026-10-07 · 本轮领投 · $52.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9c9f77e874c57759"
-        },
-        {
-          "description": "融资来源记录：Metaview · C轮 · 2026-10-01 · 本轮领投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-62e06e29d2d7be04"
         }
       ],
       "contacts": [
@@ -1126,6 +1180,14 @@
           "quote_hash": "5384858027688c8f977287dfc08a527d40044033e1bf6d0114bdb609ec48472a"
         },
         {
+          "source_id": "FISRC-320dc636ecb880b5",
+          "source_url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months",
+          "source_title": "AI硬件初创公司Nominal在8个月内估值翻三倍至$3B",
+          "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+          "quote": "a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
+          "quote_hash": "a66e9c1b5c766bb0b7208c185cc6fd577939d39fcae65e2411372ca398aef9f4"
+        },
+        {
           "source_id": "FISRC-c4c53e6f607010be",
           "source_url": "https://legora.com/blog/series-e",
           "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
@@ -1140,14 +1202,6 @@
           "source_content_hash": "4ff3dbe1ae5212cf86039961b0b8e2a6f259638653498858d69b63347f6abf84",
           "quote": "由 Insight Partners领投，Andreessen Horowitz和 M12, Microsoft’s venture fund参与",
           "quote_hash": "fb46dc0e438886ce5cc7dc6882637edf42f3bd109d1c5a4b4c59abc938797880"
-        },
-        {
-          "source_id": "FISRC-62e06e29d2d7be04",
-          "source_url": "https://www.thesaasnews.com/news/metaview-raises-60m-series-c/",
-          "source_title": "Metaview 完成 6000 万美元 C 轮融资",
-          "source_content_hash": "ba1a5b65bf914bb75a72ed976def420590dbbb69a4197105c1b64ddc982eadfe",
-          "quote": "The funding round was led by Insight Partners",
-          "quote_hash": "af6e5688857c42bcf8680a735df5157bbf3b10fdf6d60e4a7b4d1cec2d61b172"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1158,7 +1212,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[15].role": {
+        "activities[16].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

@@ -1,0 +1,988 @@
+{
+  "event_id": "EV-cb688236861394f2",
+  "company_name": "Nominal",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-96c52dd71317ade5",
+    "triggered_by_event_id": "EV-cb688236861394f2",
+    "as_of_date": "2026-11-10",
+    "company": {
+      "entity_id": "EN-d58999507a10460c",
+      "name": "Nominal",
+      "full_name": "Nominal",
+      "website": "https://nominal.io/",
+      "summary": "Nominal是面向硬件工程与测试的智能平台，连接硬件数据与工程上下文，帮助工程师分析复杂系统、定位问题并协同决策。",
+      "headquarters": "Austin",
+      "founders": [
+        {
+          "name": "Cameron McCord",
+          "role": "联合创始人兼CEO",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-320dc636ecb880b5",
+              "quote": "Nominal CEO and co-founder Cameron McCord (pictured) is a former U.S. Navy submarine officer and an Anduril alum.",
+              "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+              "quote_hash": "315b363653caedbaea90502861240cd88a08034bc5b1ac3b98e24c0a3942a77e"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "team_size": {
+        "value": "",
+        "observed_at": "",
+        "evidence_refs": []
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3491226e16a1391a",
+          "quote": "Nominal, the Hardware Intelligence Platform, today announced a $240 million Series C at a $3 billion valuation",
+          "source_content_hash": "661a69b2d4192044",
+          "quote_hash": "6daa1dca6f94099bfb3147f2c9113ac0ee88fea1b599ac4b6b67fa2261a63d06"
+        },
+        {
+          "source_id": "FISRC-431d526132cc0343",
+          "quote": "Hardware teams capture their data and context in Nominal, then build on top: live analysis, custom tools, and agents that accelerate engineering loops.",
+          "source_content_hash": "b1fa28f4fde7ed70",
+          "quote_hash": "24a669d40b5705711c5a9dc04759c10a8509cc31fcfc54cad162fee3594b673d"
+        }
+      ],
+      "application_entity_id": "EN-d58999507a10460c",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "C轮",
+      "amount": "$240 million",
+      "total_raised": "",
+      "announced_at": "2026-11-09",
+      "investor_disclosure_status": "disclosed",
+      "investors": [
+        {
+          "name": "Lightspeed Venture Partners",
+          "role": "本轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-320dc636ecb880b5",
+              "quote": "a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
+              "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+              "quote_hash": "a66e9c1b5c766bb0b7208c185cc6fd577939d39fcae65e2411372ca398aef9f4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Insight Partners",
+          "role": "本轮联合领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-320dc636ecb880b5",
+              "quote": "a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
+              "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+              "quote_hash": "a66e9c1b5c766bb0b7208c185cc6fd577939d39fcae65e2411372ca398aef9f4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Lux Capital",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-db138e8b813b8b58",
+              "quote": "The round was led by Lightspeed Venture Partners and Insight Partners, with participation from existing investors including Lux Capital, Sequoia Capital and strategic backer Lockheed Martin Ventures.",
+              "source_content_hash": "1930e3f43369be6c",
+              "quote_hash": "850df8796e7d3962aa0dbccf6389b0810da45907c95956ec4b36cd9736e29804"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Sequoia Capital",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-db138e8b813b8b58",
+              "quote": "The round was led by Lightspeed Venture Partners and Insight Partners, with participation from existing investors including Lux Capital, Sequoia Capital and strategic backer Lockheed Martin Ventures.",
+              "source_content_hash": "1930e3f43369be6c",
+              "quote_hash": "850df8796e7d3962aa0dbccf6389b0810da45907c95956ec4b36cd9736e29804"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Lockheed Martin Ventures",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-db138e8b813b8b58",
+              "quote": "The round was led by Lightspeed Venture Partners and Insight Partners, with participation from existing investors including Lux Capital, Sequoia Capital and strategic backer Lockheed Martin Ventures.",
+              "source_content_hash": "1930e3f43369be6c",
+              "quote_hash": "850df8796e7d3962aa0dbccf6389b0810da45907c95956ec4b36cd9736e29804"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "General Catalyst",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Founders Fund",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Avenir",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Salesforce Ventures",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "M13",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Red Glass Ventures",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "PSP Growth",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Deployment Capital",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "other_round_investors": [
+        {
+          "name": "Founders Fund",
+          "role": "Series B extension领投（历史轮次）",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-320dc636ecb880b5",
+              "quote": "This follows the company’s announcement in March of a $155 million Series B extension at a $1 billion valuation, led by Trae Stephens at Founders Fund.",
+              "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+              "quote_hash": "913ab7e53449b30ef48ca8077946b748c7757221751096b9d95db12eb2d2d33b"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-320dc636ecb880b5",
+          "quote": "it announced a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
+          "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+          "quote_hash": "a57a8bf75a8b882f321c54f3a5907dace5ebf187ec0829150f5bb309fee726f1"
+        },
+        {
+          "source_id": "FISRC-320dc636ecb880b5",
+          "quote": "On Monday, it announced a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
+          "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+          "quote_hash": "f22c3c0a67f1fa950eaefd6e774a9ca232e3a2b1553810ffeb4ad91c737a20ab"
+        },
+        {
+          "source_id": "FISRC-3491226e16a1391a",
+          "quote": "Nominal, the Hardware Intelligence Platform, today announced a $240 million Series C at a $3 billion valuation, led by Lightspeed Venture Partners and co-led by Insight Partners.",
+          "source_content_hash": "661a69b2d4192044",
+          "quote_hash": "c97fff8baa32f51f8fdfb43c57cdfbc5e82287db95e08630eac8e88834a9248a"
+        }
+      ],
+      "round_code": "series_c",
+      "round_original": "C轮",
+      "amount_original": "$240 million",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 240000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "2.4 亿美元"
+      },
+      "total_raised_original": "",
+      "total_raised_normalized": {
+        "currency": "",
+        "value": null,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "undisclosed",
+        "display_zh": ""
+      },
+      "risk_markers": [],
+      "disclosures": [
+        {
+          "event_id": "EV-cb688236861394f2",
+          "round_original": "C轮",
+          "amount": "$240 million",
+          "announced_at": "2026-11-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-320dc636ecb880b5",
+              "quote": "it announced a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
+              "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+              "quote_hash": "a57a8bf75a8b882f321c54f3a5907dace5ebf187ec0829150f5bb309fee726f1"
+            },
+            {
+              "source_id": "FISRC-320dc636ecb880b5",
+              "quote": "On Monday, it announced a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
+              "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+              "quote_hash": "f22c3c0a67f1fa950eaefd6e774a9ca232e3a2b1553810ffeb4ad91c737a20ab"
+            },
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "Nominal, the Hardware Intelligence Platform, today announced a $240 million Series C at a $3 billion valuation, led by Lightspeed Venture Partners and co-led by Insight Partners.",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "c97fff8baa32f51f8fdfb43c57cdfbc5e82287db95e08630eac8e88834a9248a"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "disclosed"
+    },
+    "products": [
+      {
+        "name": "Nominal硬件智能平台",
+        "description": "连接遥测、视频、日志与文件等硬件测试数据，并保留工程上下文，支持实时分析、协作与可追溯决策。",
+        "target_customers": "航空航天、国防、机器人、能源和先进制造领域的工程团队",
+        "features": [
+          "遥测、视频、日志和文件统一采集与存储",
+          "时间序列、视频、音频和表格对齐到同一时间线",
+          "实时监控、趋势跟踪与可共享报告",
+          "支持云端、本地、气隙和边缘部署"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-431d526132cc0343",
+            "quote": "Every run’s telemetry, video, and files, with the context behind them. One record for your engineers and your agents.",
+            "source_content_hash": "b1fa28f4fde7ed70",
+            "quote_hash": "344829ad026a5bfc3243666ad138671b9834d8c79949c3198d41313ff4f03fa8"
+          },
+          {
+            "source_id": "FISRC-3491226e16a1391a",
+            "quote": "Nominal supports the environments where hardware is developed and validated, from cloud deployments to on-premises infrastructure, air-gapped environments, and edge devices.",
+            "source_content_hash": "661a69b2d4192044",
+            "quote_hash": "886fccb421bda9bca348511584cc85714c4e5aee168c978b9e66b777e151dfb4"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Nominal Analyst",
+        "description": "公司首个AI智能体，用于检索工程数据、比较测试运行并执行复杂分析，答案可追溯到底层证据。",
+        "target_customers": "硬件工程师和测试团队",
+        "features": [
+          "检索工程数据并比较运行结果",
+          "展示答案背后的分析步骤与来源",
+          "标注异常发现以辅助根因定位"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3491226e16a1391a",
+            "quote": "Nominal Analyst, the company’s first AI agent, investigates engineering data and runs complex analyses, with answers traceable to the underlying evidence.",
+            "source_content_hash": "661a69b2d4192044",
+            "quote_hash": "19f793dfef98208de1e7b90bba15746f7cc1d03b25a7bded8cfcc803d464bff8"
+          },
+          {
+            "source_id": "FISRC-431d526132cc0343",
+            "quote": "AnalystAn AI agent that searches your data, compares runs, and shows the steps behind every answer.",
+            "source_content_hash": "b1fa28f4fde7ed70",
+            "quote_hash": "fc957e600ae3e7bc55acde66d909e152fcaa14ccb4bd1ed279ff40fc4105e8f5"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Nominal for Developers",
+        "description": "通过SQL、API、SDK和MCP让工程师直接访问平台，连接现有工具并构建自定义应用、工作流和智能体。",
+        "target_customers": "需要基于硬件数据开发工具和智能体的工程团队",
+        "features": [
+          "SQL、API和MCP访问",
+          "Python等语言SDK",
+          "支持连接Claude、Cursor等MCP客户端"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3491226e16a1391a",
+            "quote": "Through SQL, APIs, and MCP, Nominal for Developers gives engineers direct access to the platform, allowing them to connect existing tools, build custom applications, and create their own workflows and agents on top of Nominal.",
+            "source_content_hash": "661a69b2d4192044",
+            "quote_hash": "458e3580878536b1df38f24211aeae7c8ad8490d43c483fbffec83d132a64aa6"
+          },
+          {
+            "source_id": "FISRC-431d526132cc0343",
+            "quote": "Connect Claude, Cursor, or any MCP client to Nominal, so your own agents can query your engineering data.",
+            "source_content_hash": "b1fa28f4fde7ed70",
+            "quote_hash": "e8d82a1ab52e5b414b69f7d4678ebcd5d2d75769e29eeb37cd678d7c324c7702"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [
+      {
+        "name": "Anduril Industries",
+        "industry": "国防",
+        "use_case": "超过300名工程师在多个项目中用Nominal分析测试数据，原本需五到六小时的分析接近实时完成。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3491226e16a1391a",
+            "quote": "At Anduril Industries, more than 300 engineers rely on Nominal across programs. Analysis that once took five to six hours now happens in near real time",
+            "source_content_hash": "661a69b2d4192044",
+            "quote_hash": "4d33d8cd764471dbadb723dbc51f48b4ed799c8f7187da6bbba0ece76f283faf"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "HII",
+        "industry": "国防造船",
+        "use_case": "将部分分析任务从数小时缩短到数分钟，并将部分生产测试步骤减少约一半。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3491226e16a1391a",
+            "quote": "At HII, Nominal reduced certain analysis tasks from hours to minutes and cut some production test steps by approximately half",
+            "source_content_hash": "661a69b2d4192044",
+            "quote_hash": "72205b43e273de1bec95fbc3712aded0bb2176ada340acc2cbcc6e0425bb162b"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Hermeus",
+        "industry": "航空航天",
+        "use_case": "将上传数据到查看数据的时间减少80%，并在七个月内设计建造Quarterhorse Mk 1飞机。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3491226e16a1391a",
+            "quote": "Hermeus reduced the time between uploading data and reviewing it by 80% while designing and building its Quarterhorse Mk 1 aircraft in seven months.",
+            "source_content_hash": "661a69b2d4192044",
+            "quote_hash": "cc3eee26f27871351a009a7f33a0b4d4370ab137b959f228b098660cb0c487be"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "General Atomics",
+        "industry": "国防",
+        "use_case": "作为防务制造商使用Nominal，开发自主飞行器。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-db138e8b813b8b58",
+            "quote": "The company also works with defence manufacturers including Anduril and General Atomics, both of which are developing autonomous aircraft for the US military.",
+            "source_content_hash": "1930e3f43369be6c",
+            "quote_hash": "05ada29ad02c23946c2368d6f99a6d0ead973315d416a71ce90f443c9cc130b4"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "comparisons": [],
+    "metrics": [
+      {
+        "label": "本轮融资金额",
+        "value": "$240 million",
+        "observed_at": "2026-11-09",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-320dc636ecb880b5",
+            "quote": "a $240 million Series C at a $3 billion valuation",
+            "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+            "quote_hash": "1b01cc8905d2a84cd49c8c0f431e0433c07b47e80927a9916929a91570236019"
+          }
+        ]
+      },
+      {
+        "label": "本轮估值",
+        "value": "$3 billion",
+        "observed_at": "2026-11-09",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-320dc636ecb880b5",
+            "quote": "a $240 million Series C at a $3 billion valuation",
+            "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+            "quote_hash": "1b01cc8905d2a84cd49c8c0f431e0433c07b47e80927a9916929a91570236019"
+          }
+        ]
+      },
+      {
+        "label": "客户数量",
+        "value": "超过80家商业和政府组织",
+        "observed_at": "2026-11-09",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3491226e16a1391a",
+            "quote": "More than 80 commercial and government organizations use Nominal, including five of the seven largest defense contractors.",
+            "source_content_hash": "661a69b2d4192044",
+            "quote_hash": "d20a77ebbd66c4406ec5dbfc6ec29e412c0061064d4af1ed16ce00aaf027c9b2"
+          }
+        ]
+      },
+      {
+        "label": "Anduril使用Nominal的工程师数",
+        "value": "超过300名",
+        "observed_at": "2026-11-09",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3491226e16a1391a",
+            "quote": "At Anduril Industries, more than 300 engineers rely on Nominal across programs.",
+            "source_content_hash": "661a69b2d4192044",
+            "quote_hash": "d5eb0047851fe0aa45719da17fbd565147dc3703263db138f842fbcd1842aa00"
+          }
+        ]
+      },
+      {
+        "label": "美国空军STRATFI投资",
+        "value": "$71.2 million",
+        "observed_at": "2026-10",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3491226e16a1391a",
+            "quote": "The Air Force recently selected Nominal for a $71.2 million Strategic Funding Increase (STRATFI) to support Collaborative Combat Aircraft capability development.",
+            "source_content_hash": "661a69b2d4192044",
+            "quote_hash": "3c845ab4c64792580ba1f1cd8301f8ba7b9e30bcf8786a5e0fff6a3bc5dda3ab"
+          }
+        ]
+      },
+      {
+        "label": "2026年初以来收入增长",
+        "value": "超过三倍",
+        "observed_at": "2026-11-09",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-db138e8b813b8b58",
+            "quote": "The company said on Monday that its revenue has more than tripled since the beginning of 2026",
+            "source_content_hash": "1930e3f43369be6c",
+            "quote_hash": "de718d314f2f3492b8e314612ffcdc43d081aae9857831c168d07e8e5948143b"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Guru Chahal and Sebastian Duesterhoeft",
+        "quote": "As AI creates new possibilities across the physical world, we believe Nominal is uniquely positioned to help these teams adopt it where the stakes are highest.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3491226e16a1391a",
+            "quote": "As AI creates new possibilities across the physical world, we believe Nominal is uniquely positioned to help these teams adopt it where the stakes are highest.",
+            "source_content_hash": "661a69b2d4192044",
+            "quote_hash": "277e4afa5e918142de1cba1da1b866c883264d9e20f8f6b02a651fe60e46aa37"
+          }
+        ]
+      },
+      {
+        "speaker": "Crissy Costa Behrens",
+        "quote": "General-purpose AI models are becoming widely available, but they don’t carry an industry’s proprietary data, workflows, and institutional knowledge.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3491226e16a1391a",
+            "quote": "General-purpose AI models are becoming widely available, but they don’t carry an industry’s proprietary data, workflows, and institutional knowledge.",
+            "source_content_hash": "661a69b2d4192044",
+            "quote_hash": "21d55ec1e0d45bd1ac9ba11ce7b8c66d68f00da24e3194d0206ffe2d0af3e769"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [
+        {
+          "institution": "Lightspeed Venture Partners",
+          "speaker": "Guru Chahal and Sebastian Duesterhoeft",
+          "speaker_role": "合伙人",
+          "rationale": "Lightspeed认为Nominal深入理解硬件工程现实，并已构建工程师日常使用的软件；在物理世界AI机会扩大时，Nominal处于帮助高 stakes 团队采用AI的位置。",
+          "quote": "Nominal has become an essential part of how some of the most ambitious engineering teams build and validate hardware. The company earned that position by understanding the realities of hardware engineering and building software engineers use every day",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "Nominal has become an essential part of how some of the most ambitious engineering teams build and validate hardware. The company earned that position by understanding the realities of hardware engineering and building software engineers use every day",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "ed1a21e6aa83a23bb6f339c39356ec5be07cb555709897026b7a9cde52754ae3"
+            }
+          ]
+        },
+        {
+          "institution": "Insight Partners",
+          "speaker": "Crissy Costa Behrens",
+          "speaker_role": "董事总经理",
+          "rationale": "Insight认为通用AI模型不携带行业专有数据、工作流和机构知识，持久价值来自把AI连接到这些上下文的平台；Nominal在硬件工程领域帮助团队将专业知识转化为持久优势。",
+          "quote": "General-purpose AI models are becoming widely available, but they don’t carry an industry’s proprietary data, workflows, and institutional knowledge. Lasting value comes from platforms that connect AI to that context and help organizations own and build on it",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3491226e16a1391a",
+              "quote": "General-purpose AI models are becoming widely available, but they don’t carry an industry’s proprietary data, workflows, and institutional knowledge. Lasting value comes from platforms that connect AI to that context and help organizations own and build on it",
+              "source_content_hash": "661a69b2d4192044",
+              "quote_hash": "d0fae6260d7187eabce7b2d8355d1f6f068e940d9944ae44a1906aadd2a6c295"
+            }
+          ]
+        }
+      ],
+      "capital_judgment": "资本押注的核心变量是Nominal能否把分散的硬件测试数据与工程上下文沉淀为可复用平台，并通过AI智能体提升高监管、高安全要求工程团队的测试与分析效率。当前$3B估值所依赖的已验证信号包括：超过80家商业和政府客户、五家最大防务承包商中的五家、Anduril超过300名工程师使用、收入自2026年初以来增长超过三倍，以及美国空军$71.2 million STRATFI项目。证据边界在于：来源未披露本轮累计融资额、ARR或盈利情况，客户效率数据来自公司披露的案例，尚缺独立审计口径。",
+      "validated_signals": [
+        "超过80家商业和政府组织使用Nominal",
+        "客户包括七家最大防务承包商中的五家",
+        "Anduril超过300名工程师在多个项目中使用Nominal",
+        "美国空军选择Nominal参与$71.2 million STRATFI项目",
+        "公司称2026年初以来收入增长超过三倍"
+      ],
+      "risks": [
+        "收入增长超过三倍为公司自述，来源未披露绝对收入、利润率或审计口径",
+        "客户效率提升数据来自公司新闻稿中的案例，缺少独立验证",
+        "来源未披露本轮累计融资额，无法判断历史融资与当前估值的完整资本结构",
+        "欧洲扩张的客户身份和扩张范围尚不明确",
+        "与PhysicsX的竞争仅被提及，缺少产品、场景和客户层面的可比较证据"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "enterprise_software_platform",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "use_case_ids": [
+        "data_analysis",
+        "design_engineering",
+        "knowledge_search"
+      ],
+      "industry_ids": [
+        "aerospace_defense",
+        "manufacturing",
+        "energy_utilities"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user",
+        "researcher"
+      ],
+      "sector": "硬件工程测试数据智能平台",
+      "investment_thesis": {
+        "statement": "资本押注的核心变量是Nominal能否把分散的硬件测试数据与工程上下文沉淀为可复用平台，并通过AI智能体提升高监管、高安全要求工程团队的测试与分析效率。当前$3B估值所依赖的已验证信号包括：超过80家商业和政府客户、五家最大防务承包商中的五家、Anduril超过300名工程师使用、收入自2026年初以来增长超过三倍，以及美国空军$71.2 million STRATFI项目。证据边界在于：来源未披露本轮累计融资额、ARR或盈利情况，客户效率数据来自公司披露的案例，尚缺独立审计口径。",
+        "evidence_signals": [
+          "超过80家商业和政府组织使用Nominal",
+          "客户包括七家最大防务承包商中的五家",
+          "Anduril超过300名工程师在多个项目中使用Nominal",
+          "美国空军选择Nominal参与$71.2 million STRATFI项目",
+          "公司称2026年初以来收入增长超过三倍"
+        ],
+        "risks": [
+          "收入增长超过三倍为公司自述，来源未披露绝对收入、利润率或审计口径",
+          "客户效率提升数据来自公司新闻稿中的案例，缺少独立验证",
+          "来源未披露本轮累计融资额，无法判断历史融资与当前估值的完整资本结构",
+          "欧洲扩张的客户身份和扩张范围尚不明确",
+          "与PhysicsX的竞争仅被提及，缺少产品、场景和客户层面的可比较证据"
+        ],
+        "institutional_rationale_status": "disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Nominal硬件智能平台",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Nominal Analyst",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Nominal for Developers",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Cameron McCord",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Lightspeed Venture Partners",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Insight Partners",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Lux Capital",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Sequoia Capital",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Lockheed Martin Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "General Catalyst",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Founders Fund",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Avenir",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Salesforce Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "M13",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Red Glass Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "PSP Growth",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Deployment Capital",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Founders Fund",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Anduril Industries",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "HII",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Hermeus",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "General Atomics",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-cb688236861394f2",
+        "date": "2026-11-09",
+        "title": "AI硬件初创公司Nominal在8个月内估值翻三倍至$3B",
+        "amount": "$240 million",
+        "source_refs": [
+          "SA-caa0f63d74782e2b"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-320dc636ecb880b5",
+        "source_url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months",
+        "title": "AI硬件初创公司Nominal在8个月内估值翻三倍至$3B",
+        "publisher": "techcrunch.com",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-11-10T00:18:32.671Z",
+        "content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
+        "source_artifact_id": "SA-caa0f63d74782e2b",
+        "raw_id": "RAW-562ffc3391e892a4"
+      },
+      {
+        "source_id": "FISRC-db138e8b813b8b58",
+        "source_url": "https://resiliencemedia.co/nominal-triples-valuation-to-3b-following-240m-funding-round/",
+        "title": "Nominal triples valuation to $3B following $240M funding round",
+        "publisher": "resiliencemedia.co",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-11-10T00:46:27.011Z",
+        "content_hash": "1930e3f43369be6c",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-3491226e16a1391a",
+        "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
+        "title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
+        "publisher": "globenewswire.com",
+        "source_class": "secondary",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-11-10T00:46:27.883Z",
+        "content_hash": "661a69b2d4192044",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-431d526132cc0343",
+        "source_url": "https://nominal.io/",
+        "title": "Nominal | The hardware intelligence platform",
+        "publisher": "nominal.io",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-11-10T00:46:37.002Z",
+        "content_hash": "b1fa28f4fde7ed70",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-11-10T00:46:55.929Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-11-10T00:46:55.929Z",
+    "customer_research": {
+      "status": "verified_customers_found",
+      "verified_customer_count": 4,
+      "searched_source_count": 4
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 3,
+        "unresolved_names": [
+          "Nominal Analyst",
+          "Nominal for Developers",
+          "Nominal硬件智能平台"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 1,
+        "unresolved_names": [
+          "Cameron McCord"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-cb688236861394f2"
+    ],
+    "aggregation": {
+      "key": "EN-d58999507a10460c|series_c",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"Nominal\" 2026 funding round investors",
+    "\"Nominal\" official product customers",
+    "\"Nominal\" \"why we invested\"",
+    "\"Nominal\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Nominal\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://seedtable.com/companies/nominal-inc/funding-rounds/series-c-2026-11",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://qz.com/nominal-240-million-funding-3-billion-valuation-110926",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://tracxn.com/d/companies/nominal/__i2ERabHwmVIuekZ82cloNop3nS3m2FGct5rsCQrjgT0",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Nominal\" $240 million funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Nominal\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Nominal\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://arxiv.org/pdf/2603.03968",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Nominal\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Nominal\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.bizjournals.com/austin/news/2026/03/09/austin-data-platform-startup-raises-millions.html",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    }
+  ]
+}
