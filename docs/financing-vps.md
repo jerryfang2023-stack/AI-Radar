@@ -144,3 +144,9 @@ VPS 本地运行盘约 69 GiB；`/lhcos-data` 的对象存储挂载不增加 `/s
 - 控制器创建审核checkout前写入私有 `temporary-checkouts.json`。完整发布验收后，`worktree-cleanup.py` 仅处理本日登记且路径/HEAD/共同Git仓正确、已被main包含、无跟踪修改及活动进程的checkout。未跟踪及忽略文件先在私有目录归档，逐项校验内容或软链接目标后才移除；不使用force、全局clean或按日期清理。失败项保留并写 `cleanup.json`，不会把清理失败冒充融资发布失败。其他人工工作树仍由原收尾规范管理。
 
 验收：部署后观察连续七个正式日运行，要求无需人工重启/修数据/合并，接受融资按原门禁发布，暂缓数量和原因清楚，网站/Mini一致且历史事件保留。回退使用上一代码提交和备份unit，保留运行账本及已发布数据。
+
+### Pages部署超时恢复（2026-11-10）
+
+已接受融资等待Pages时，主控核对指定workflow、主仓main和接受提交（手动部署按标题绑定source SHA）。只有失败步骤仅为Deploy to GitHub Pages，且日志仅出现syncing_files阶段的Timeout reached，才自动重跑同一运行的失败作业；不会重新采集融资。每个接受提交最多两次自动恢复，GitHub运行总attempt达到3时停止。意图先写入私有运行回执，响应未知时不重放同一attempt，等待API观察或人工处理。构建/事实失败、权限错误、取消及其他未知失败明确进入needs_attention，不再伪装为无限等待Pages。成功后继续原Portal/小程序发布及线上验收，不绕过CI、审核或发布锁。
+
+Pages上传和部署均使用 `github-pages-${{ github.run_id }}-${{ github.run_attempt }}`，避免同一运行重试留下同名产物。部署参数依据 [deploy-pages官方artifact_name输入](https://github.com/actions/deploy-pages/blob/v5/action.yml)。自动恢复先核对运行对应workflow确有这套唯一命名；旧版本固定名称不自动重跑，需经新版本部署恢复。保留旧产物，不通过删除接受产物掩盖重名。
