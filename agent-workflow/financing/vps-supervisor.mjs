@@ -13,6 +13,7 @@ import {writePublicationReviewContext} from './review-context.mjs';
 import {assertWorkspaceCapacity} from './storage-capacity.mjs';
 import {reconcileDispatchAttempts,dispatchRecoveryAllowed,completedReview,reviewRetryDue,nextReviewAttempt} from './recovery-policy.mjs';
 import {failureRecovery,reviewFailure} from './failure-policy.mjs';
+import {recoverFailedPages} from './pages-recovery.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const repo = 'jerryfang2023-stack/AI-Radar';
@@ -204,6 +205,21 @@ async function cycle(args) {
     if(['no_new_financing','pending_verification'].includes(dispatch.status))return save({completed_at:new Date().toISOString()});
     if(dispatch.status==='awaiting_portal') {
       const accepted=command('git',['rev-parse','origin/main']);
+      const pagesWorkflow=ghJson(['api',`repos/${repo}/actions/workflows/github-pages.yml`]);
+      const pageRuns=ghJson(['api',`repos/${repo}/actions/workflows/${pagesWorkflow.id}/runs?branch=main&per_page=40`]).workflow_runs || [];
+      const recovery=recoverFailedPages({runs:pageRuns,sourceSha:accepted,workflowId:pagesWorkflow.id,repository:repo,
+        attempts:state.pages_recovery_attempts || {},
+        readFailure:run=>{
+          const jobs=ghJson(['api',`repos/${repo}/actions/runs/${run.id}/jobs?filter=latest&per_page=100`]).jobs || [];
+          const logs=jobs.filter(job=>job.conclusion==='failure').map(job=>ghRead(['api',`repos/${repo}/actions/jobs/${job.id}/logs`])).join('\n');
+          write(path.join(directory,`pages-failure-${run.id}-${run.run_attempt}.json`),{source_sha:accepted,run_id:run.id,run_attempt:run.run_attempt,jobs});
+          fs.writeFileSync(path.join(directory,`pages-failure-${run.id}-${run.run_attempt}.log`),logs,{mode:0o600});
+          return {jobs,logs,workflow:command('git',['show',`${run.head_sha}:.github/workflows/github-pages.yml`])};
+        },
+        rerun:run=>gh(['run','rerun',String(run.id),'--failed','--repo',repo]),
+        record:receipt=>save({pages_recovery_attempts:{...state.pages_recovery_attempts,[receipt.key]:receipt}})});
+      if(recovery.status==='blocked')throw new Error(`pages_deployment_failed:${recovery.reason}:${recovery.run_id}`);
+      if(recovery.status==='rerun_requested')return save({status:'awaiting_portal',reason:'pages_deployment_retry',error:null});
       let receipt;
       try {receipt=JSON.parse(command('sudo',['-n','/usr/local/libexec/guanlan-financing-publish',date],{timeout:5400000}));}
       catch(error) {
