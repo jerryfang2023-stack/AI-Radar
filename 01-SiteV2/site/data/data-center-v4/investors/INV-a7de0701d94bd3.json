@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-11",
+    "currentDate": "2026-11-11",
+    "eventCount": 4433,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-09",
-    "latest_disclosed_at": "2026-10-09",
+    "latest_disclosed_at": "2026-11-10",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-21b747de22dbb757",
+        "canonical_entity_id": "",
+        "name": "Garage"
+      },
       {
         "entity_id": "EN-18a96fb4e49cd0e1",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-38df4c330d41fae5",
+        "funding_insight_id": "FI-839be02747dd5944",
+        "event_ids": [
+          "EV-a49a610c856420ab"
+        ],
+        "company_entity_id": "EN-21b747de22dbb757",
+        "company_canonical_entity_id": "",
+        "company_name": "Garage",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$41 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 41000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4100 万美元"
+        },
+        "announced_at": "2026-11-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-49f6d3c8199f72d9",
+            "source_url": "https://www.prnewswire.com/news-releases/garage-raises-41m-series-b-to-scale-ai-powered-marketplace-for-americas-essential-equipment-surpassing-100m-in-annual-platform-sales-302935598.html",
+            "source_title": "Garage 完成 4100 万美元 B 轮融资，以扩展面向美国基础设备的 AI 驱动市场，平台年销售额突破 1 亿美元",
+            "source_content_hash": "fdc11b6f3162a7164ff38084278314d7c84eec79d5cd426f59def463882b4ee3",
+            "quote": "today announced $41 million in Series B funding led by Invus Opportunities, along with Infinity Ventures, Initialized Capital, Y Combinator, Benchstrength, and FJ Labs",
+            "quote_hash": "9f9ad44e8f76f50bb1326ad4ce4a5c5ac5da3d7a67f8e2119e3221083e32d068"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7870cf4bf6fb71f5",
         "funding_insight_id": "FI-208b0a4f6d9ccb22",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-49f6d3c8199f72d9",
+        "source_url": "https://www.prnewswire.com/news-releases/garage-raises-41m-series-b-to-scale-ai-powered-marketplace-for-americas-essential-equipment-surpassing-100m-in-annual-platform-sales-302935598.html",
+        "source_title": "Garage 完成 4100 万美元 B 轮融资，以扩展面向美国基础设备的 AI 驱动市场，平台年销售额突破 1 亿美元",
+        "source_content_hash": "fdc11b6f3162a7164ff38084278314d7c84eec79d5cd426f59def463882b4ee3",
+        "quote": "today announced $41 million in Series B funding led by Invus Opportunities, along with Infinity Ventures, Initialized Capital, Y Combinator, Benchstrength, and FJ Labs",
+        "quote_hash": "9f9ad44e8f76f50bb1326ad4ce4a5c5ac5da3d7a67f8e2119e3221083e32d068"
+      },
+      {
         "source_id": "FISRC-5c428919070bfce8",
         "source_url": "https://www.globenewswire.com/news-release/2026/10/09/3378310/0/en/sabi-raises-50-million-seed-round-led-by-khosla-ventures-to-put-a-brain-ai-interface-inside-a-baseball-cap.html",
         "source_title": "Sabi 获 Khosla Ventures 领投的 5000 万美元种子轮融资，将脑机 AI 接口植入棒球帽",
@@ -141,10 +195,14 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Initialized Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Initialized Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Garage · B轮 · 2026-11-10 · 本轮参投 · $41 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-49f6d3c8199f72d9"
+        },
         {
           "description": "融资来源记录：Sabi · 种子轮 · 2026-10-09 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5c428919070bfce8"
@@ -152,6 +210,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-49f6d3c8199f72d9",
+          "source_url": "https://www.prnewswire.com/news-releases/garage-raises-41m-series-b-to-scale-ai-powered-marketplace-for-americas-essential-equipment-surpassing-100m-in-annual-platform-sales-302935598.html",
+          "source_title": "Garage 完成 4100 万美元 B 轮融资，以扩展面向美国基础设备的 AI 驱动市场，平台年销售额突破 1 亿美元",
+          "source_content_hash": "fdc11b6f3162a7164ff38084278314d7c84eec79d5cd426f59def463882b4ee3",
+          "quote": "today announced $41 million in Series B funding led by Invus Opportunities, along with Infinity Ventures, Initialized Capital, Y Combinator, Benchstrength, and FJ Labs",
+          "quote_hash": "9f9ad44e8f76f50bb1326ad4ce4a5c5ac5da3d7a67f8e2119e3221083e32d068"
+        },
         {
           "source_id": "FISRC-5c428919070bfce8",
           "source_url": "https://www.globenewswire.com/news-release/2026/10/09/3378310/0/en/sabi-raises-50-million-seed-round-led-by-khosla-ventures-to-put-a-brain-ai-interface-inside-a-baseball-cap.html",

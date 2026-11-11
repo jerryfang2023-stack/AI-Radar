@@ -37366,7 +37366,206 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-11-10T00:50:28.047Z"
+    },
+    "EV-33a842c331d69819": {
+      "id": "EV-33a842c331d69819",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "rationale": "公司主营工业具身智能大脑与复合/人形机器人本体及控制，属具身智能与机器人本体，按规则排除。",
+      "input_hash": "0ae7c837b7b2fe3272425751dfdcf8400e0e164f8b1f7cfbd0373737e91c2c9f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6f82f399826d7fd0",
+          "quote": "广州富唯智能科技有限公司（下称“富唯智能”）成立于2022年，围绕工业具身大脑、机器人控制与场景应用构建技术和产品体系。"
+        },
+        {
+          "source_id": "FISRC-6f82f399826d7fd0",
+          "quote": "通过一体化控制平台，统一协调移动底盘、机械臂、视觉及末端工具，支持多品牌设备适配、图形化任务编排和工艺模块调用。"
+        },
+        {
+          "source_id": "FISRC-a8c9a43cdf51f57b",
+          "quote": "作为当前出货主力，富唯智能的智能复合机器人集协作机器人、移动机器人与视觉引导技术于一体，兼具“移动性+操作性”的双重优势，成功切入北美新能源头部企业供应链，成为其全球唯一复合机器人供应商。"
+        },
+        {
+          "source_id": "FISRC-a8c9a43cdf51f57b",
+          "quote": "工业人形机器人基于知识驱动具身智能工业机器人技术框架，能够在复杂的工业场景中，完成长序列复杂任务，包括加工车间料箱转运、工件智能检测、多工位智能摆盘翻转、工件上下料等。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-11T00:57:01.460Z"
+    },
+    "EV-d20c3c6a7fa6133a": {
+      "id": "EV-d20c3c6a7fa6133a",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "公司为全栈具身智能企业，自研关节模组、机械臂与机器人平台，属机器人本体与核心部件，排除。",
+      "input_hash": "e26b12315f94b36c6b7ad7127962b07e4e51d59e15a0997cfa5cc2a9c7a7ae60",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a9b5999ebfca6d0f",
+          "quote": "优理奇智能科技（苏州）有限公司（下称“优理奇”）成立于2024年，是一家全栈式、具有全球技术视野的具身智能高科技企业"
+        },
+        {
+          "source_id": "FISRC-a9b5999ebfca6d0f",
+          "quote": "公司已形成Wanda与Panther等成熟机器人产品平台，自研关节模组、仿生机械臂及运动控制等关键模块，并通过夹爪、灵巧手等不同末端执行器适配多样化作业需求。"
+        },
+        {
+          "source_id": "FISRC-a9b5999ebfca6d0f",
+          "quote": "UniFlex高效泛化模仿学习框架帮助机器人从示教中习得操作技能；UniTouch视触觉融合模型面向物体感知与精细操作；UniCortex则聚焦长序列任务规划与执行。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-11T00:57:01.460Z"
+    },
+    "EV-8cc9ede37652959c": {
+      "id": "EV-8cc9ede37652959c",
+      "scope": "excluded",
+      "exclusion_reason": "not_ai_business",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "证据仅显示其为消费电子设备厂商，未体现 AI 主营产品，排除。",
+      "input_hash": "981bbc51cbe34767c9cde887a465c8e4977ee9dfe91d2827be707087cda995bd",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-8a9e4b3f3e6a9ced",
+          "quote": "Apple Inc. is a technology enterprise that designs, manufactures, and markets mobile communication and media devices, personal computers and portable digital music players"
+        },
+        {
+          "source_id": "FISRC-64998b0d3ed4b36a",
+          "quote": "Apple's products include iPhones, iPads, Macs, and iPods."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-11T00:57:01.460Z"
+    },
+    "EV-a1d7a963cea1488b": {
+      "id": "EV-a1d7a963cea1488b",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "wellness",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1
+      ],
+      "rationale": "面向健身消费者的可穿戴传感器与 AI 教练应用，提供实时训练反馈，属消费健康生活应用。",
+      "input_hash": "2ef98a79488e167fca50e1733c1dd13fa3dbef927883b550cb7f1ecbf27b7b0e",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-80969299f83c47ae",
+          "quote": "The Carlsbad, California startup makes the Velocity Sensor, a wearable, and the Ve Coach app, which give lifters real-time feedback during workouts."
+        },
+        {
+          "source_id": "FISRC-80969299f83c47ae",
+          "quote": "The system measures movement to guide training and can adjust a prescribed workout based on a user's goals, available time, or a scan of the equipment in the room."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-11T00:57:01.460Z"
+    },
+    "EV-a49a610c856420ab": {
+      "id": "EV-a49a610c856420ab",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "commerce",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "以 AI 估价引擎驱动的重型设备二手交易市场，属电商与供应链行业 AI。",
+      "input_hash": "522e451c1dbf2ef36c7d57619a242604c86e0aaad8d7cc21604c225c696ccf09",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-49f6d3c8199f72d9",
+          "quote": "Garage, the leading AI-powered marketplace for America's essential equipment"
+        },
+        {
+          "source_id": "FISRC-49f6d3c8199f72d9",
+          "quote": "Garage has built the first AI-powered marketplace specifically for transacting the heavy equipment that keeps America's communities moving."
+        },
+        {
+          "source_id": "FISRC-49f6d3c8199f72d9",
+          "quote": "AI Appraisal Engine: Operates as an unbiased pricing guide for specialized municipal assets"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-11T00:57:01.460Z"
+    },
+    "EV-b97542658971c6a9": {
+      "id": "EV-b97542658971c6a9",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        4
+      ],
+      "rationale": "面向医疗机构与支付方的 AI 病历审查与编码平台，属医疗服务行业 AI。",
+      "input_hash": "62abfd54c8d338cb5f6c22234ffb904aaf4f98aeb597fa2dd45afa1e1a9de73b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e5678cb427ad6e69",
+          "quote": "Charta Health, the AI medical chart review platform built for billing accuracy"
+        },
+        {
+          "source_id": "FISRC-e5678cb427ad6e69",
+          "quote": "Charta for Providers reviews every chart before claim submission, checking it against coding guidelines, payer rules, and each organization's own clinical protocols. Findings surface for human approval inside the electronic health record."
+        },
+        {
+          "source_id": "FISRC-e5678cb427ad6e69",
+          "quote": "Charta for Payers includes six AI-powered products that enable health plans to achieve greater accuracy and operational efficiencies: Retrospective HCC coding AI-automated second-pass coding Smart coding platform Prospective risk adjustment intelligence HCC validation and audit workflow HEDIS and quality care gap detection"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-11T00:57:01.460Z"
     }
   },
-  "generated_at": "2026-11-10T00:50:28.047Z"
+  "generated_at": "2026-11-11T00:57:01.460Z"
 }

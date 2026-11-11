@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-11",
+    "currentDate": "2026-11-11",
+    "eventCount": 4433,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -53,6 +53,57 @@
     ]
   },
   "fde": [
+    {
+      "id": "FDE-8bcacb888ffe1955",
+      "eventId": "EV-c410e8bb1e2064f2",
+      "dataDate": "2026-11-11",
+      "date": "2026-11-10",
+      "title": "Labelbox 与 Wipro 合作，推动从企业经验中学习的 AI 智能体规模化应用",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Labelbox",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Wipro to scale adoption of AI agents that learn from enterprise experience",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "SAN FRANCISCO, Nov. 10, 2026 /PRNewswire/ -- Labelbox, the leading data factory trusted by top AI labs and enterprises, has announced its strategic partnership with Wipro Limited, a global AI-powered technology services and consulting company, to accelerate the deployment of AI agents across complex enterprise operations.",
+        "\"Building frontier AI requires bringing exceptional domain expertise closer to the teams developing and deploying AI systems,\" said Manu Sharma, CEO of Labelbox. \"Through our partnership with Wipro, we look forward to helping enterprises turn their knowledge, workflows, and standards into AI systems that can be rigorously evaluated, continuously improved, and deployed responsibly at scale."
+      ],
+      "outcomes": [
+        "\"Building frontier AI requires bringing exceptional domain expertise closer to the teams developing and deploying AI systems,\" said Manu Sharma, CEO of Labelbox. \"Through our partnership with Wipro, we look forward to helping enterprises turn their knowledge, workflows, and standards into AI systems that can be rigorously evaluated, continuously improved, and deployed responsibly at scale."
+      ],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ce084d4801691907"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/labelbox-partners-with-wipro-to-scale-adoption-of-ai-agents-that-learn-from-enterprise-experience-302934232.html",
+      "entityIds": [
+        "EN-ce084d4801691907"
+      ]
+    },
     {
       "id": "FDE-1d7e3b4f28d1f967",
       "eventId": "EV-fcf3c96afc642c8b",
@@ -7828,6 +7879,67 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-6f4e160923e61664",
+      "implementationKey": "6f4e160923e61664",
+      "eventId": "EV-c410e8bb1e2064f2",
+      "eventIds": [
+        "EV-c410e8bb1e2064f2"
+      ],
+      "dataDate": "2026-11-11",
+      "date": "2026-11-10",
+      "title": "Labelbox × 未披露：Wipro to scale adoption of AI agents that learn from enterprise experience",
+      "stage": "production",
+      "stageLabel": "production",
+      "customer": "Labelbox",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Wipro to scale adoption of AI agents that learn from enterprise experience",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [
+        "\"Building frontier AI requires bringing exceptional domain expertise closer to the teams developing and deploying AI systems,\" said Manu Sharma, CEO of Labelbox. \"Through our partnership with Wipro, we look forward to helping enterprises turn their knowledge, workflows, and standards into AI systems that can be rigorously evaluated, continuously improved, and deployed responsibly at scale."
+      ],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-620a8f24b0f76d28",
+          "type": "implementation_update",
+          "stage": "production",
+          "date": "2026-11-10",
+          "dataDate": "2026-11-11",
+          "eventId": "EV-c410e8bb1e2064f2",
+          "eventTitle": "Labelbox 与 Wipro 合作，推动从企业经验中学习的 AI 智能体规模化应用",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ce084d4801691907"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/labelbox-partners-with-wipro-to-scale-adoption-of-ai-agents-that-learn-from-enterprise-experience-302934232.html",
+      "entityIds": [
+        "EN-ce084d4801691907"
+      ]
+    },
+    {
       "id": "FDED-4aba8b22b39a76c3",
       "implementationKey": "4aba8b22b39a76c3",
       "eventId": "EV-cc0d955aa68445ea",
@@ -11514,26 +11626,24 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-11-10",
-      "funnel_id": "LF-3c18b3f141287fc8",
+      "data_date": "2026-11-11",
+      "funnel_id": "LF-a156a54372ecb772",
       "lens": "fde",
-      "date": "2026-11-10",
+      "date": "2026-11-11",
       "monitoring_paths": [],
-      "raw_documents": 1,
-      "original_sources": 1,
+      "raw_documents": 0,
+      "original_sources": 0,
       "valid_claims": 0,
-      "observations": 0,
+      "observations": 1,
       "canonical_events": 0,
-      "blocker_counts": {
-        "no_source_bounded_claim": 1
-      },
+      "blocker_counts": {},
       "rates": {
         "original_source_rate": 1,
-        "valid_claim_rate": 0,
-        "observation_rate": 1,
+        "valid_claim_rate": 1,
+        "observation_rate": 0,
         "event_conversion_rate": 1
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-11-10/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-11-11/monitoring-funnel.json"
     }
   ]
 }

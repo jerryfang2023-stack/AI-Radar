@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-11",
+    "currentDate": "2026-11-11",
+    "eventCount": 4433,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -65,7 +65,8 @@
     "eventIds": [
       "EV-e3382d1c1d7db751",
       "EV-715eb0debea4180c",
-      "EV-b9a1cba0b59a5354"
+      "EV-b9a1cba0b59a5354",
+      "EV-a8edaa14ede956fa"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -83,7 +84,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-15",
-    "lastSeen": "2026-08-13",
+    "lastSeen": "2026-11-11",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -96,10 +97,30 @@
       "partnerships": [],
       "productsServices": [],
       "hardware": [],
-      "organizationPeople": [],
+      "organizationPeople": [
+        "EV-a8edaa14ede956fa"
+      ],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-a8edaa14ede956fa",
+        "dataDate": "2026-11-11",
+        "date": "2026-11-10",
+        "eventType": "organization_people",
+        "eventTypeLabel": "组织与人员",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Sarvam 任命前 Google Cloud 印度董事总经理 Sashikumar Sreedharan 为总裁兼首席商务官",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ee1e31ffef7dbe64",
+          "EN-bbdefa2950f49882",
+          "EN-9fbf261b62c1d7c0",
+          "EN-916a98f0fa2a39af"
+        ]
+      },
       {
         "id": "EV-715eb0debea4180c",
         "dataDate": "2026-08-13",
@@ -1020,7 +1041,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-11"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -2833,6 +2854,7 @@
         "EV-3dc8d5c373ddd1f3",
         "EV-9cd1cb31e2adf5dc",
         "EV-5caf7f83664b1a2c",
+        "EV-2406bc3d29c09326",
         "EV-7a3a3754522828e1",
         "EV-8b36007d0b5f377f",
         "EV-4b44f5eafecf4922",
@@ -2940,6 +2962,7 @@
         "EN-74be4cbf48e647b2",
         "EN-0078ec52880eaa14",
         "EN-4e721fae5963494d",
+        "EN-dff37aaec8fa23f4",
         "EN-f90aec90acf3dc85",
         "EN-18b4bbfd60f4137e",
         "EN-6eedfb906b1652fb",
@@ -2962,7 +2985,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-11"
     },
     {
       "id": "TX-use_case-content_creation",

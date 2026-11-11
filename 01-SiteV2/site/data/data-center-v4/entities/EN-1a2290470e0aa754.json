@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-11",
+    "currentDate": "2026-11-11",
+    "eventCount": 4433,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-b97542658971c6a9",
       "EV-89bbafe3c39842b3",
       "EV-c0b3ec3c5e9ee0bd",
       "EV-55581be112058bd5",
@@ -87,10 +88,11 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-01-14",
-    "lastSeen": "2026-11-10",
+    "lastSeen": "2026-11-11",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-b97542658971c6a9",
         "EV-89bbafe3c39842b3",
         "EV-c0b3ec3c5e9ee0bd",
         "EV-55581be112058bd5",
@@ -120,8 +122,24 @@
     },
     "timeline": [
       {
+        "id": "EV-b97542658971c6a9",
+        "dataDate": "2026-11-11",
+        "date": "2026-11-10",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Charta Health 完成 5500 万美元 B 轮融资，旨在建立医疗账单准确性的共享标准",
+        "displayTags": [],
+        "entityIds": [
+          "EN-4af7f3527d7863e0",
+          "EN-1a2290470e0aa754"
+        ]
+      },
+      {
         "id": "EV-89bbafe3c39842b3",
-        "dataDate": "2026-11-10",
+        "dataDate": "2026-11-11",
         "date": "2026-11-09",
         "eventType": "funding",
         "eventTypeLabel": "融资",

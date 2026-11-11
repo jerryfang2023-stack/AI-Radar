@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-11",
+    "currentDate": "2026-11-11",
+    "eventCount": 4433,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -173,6 +173,7 @@
       "EV-3dc8d5c373ddd1f3",
       "EV-9cd1cb31e2adf5dc",
       "EV-5caf7f83664b1a2c",
+      "EV-2406bc3d29c09326",
       "EV-7a3a3754522828e1",
       "EV-8b36007d0b5f377f",
       "EV-4b44f5eafecf4922",
@@ -280,6 +281,7 @@
       "EN-74be4cbf48e647b2",
       "EN-0078ec52880eaa14",
       "EN-4e721fae5963494d",
+      "EN-dff37aaec8fa23f4",
       "EN-f90aec90acf3dc85",
       "EN-18b4bbfd60f4137e",
       "EN-6eedfb906b1652fb",
@@ -302,7 +304,7 @@
       "HW-a033b945449628d5"
     ],
     "firstSeen": "2025-08-27",
-    "lastSeen": "2026-11-01"
+    "lastSeen": "2026-11-11"
   },
   "events": [
     {
@@ -38676,7 +38678,9 @@
         {
           "name": "Gemini 3.5 Transcribe",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/08/27/google-ai-releases-gemini-3-5-transcribe-a-speech-to-text-model-reporting-2-6-average-wer-across-85-languages",
@@ -39392,6 +39396,93 @@
       ],
       "sourceUrl": "https://ithome.com/0/964/614.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-2406bc3d29c09326",
+      "dataDate": "2026-11-11",
+      "date": "2026-11-10",
+      "updatedDate": "2026-11-10",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "曝 Anthropic 拟通过 IPO 筹集最多 644 亿美元，上市推介启动在即",
+      "originalTitle": "",
+      "subject": "曝 Anthropic 拟通过",
+      "action": "IPO",
+      "object": "筹集最多 644 亿美元，上市推介启动在即",
+      "metrics": [
+        "644 亿",
+        "4,306.16 亿",
+        "693 亿",
+        "4,633.8 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-dff37aaec8fa23f4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-dff37aaec8fa23f4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-dff37aaec8fa23f4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-dff37aaec8fa23f4",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "曝 Anthropic 拟通过",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/025/127.htm",
+      "publisher": "www.ithome.com"
     },
     {
       "id": "EV-7a3a3754522828e1",
@@ -40722,6 +40813,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-cd20a6ff672972eb",
         "EV-53dad7c8f530b480",
         "EV-7684bfb9b954c1fd",
         "EV-c964f7646ad88c1e",
@@ -41080,6 +41172,9 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-2406bc3d29c09326",
+        "EV-27d9a40d0446e770",
+        "EV-4fc82b5985acc6c8",
         "EV-57717e60d7a07800",
         "EV-3cc8e7ce0143047a",
         "EV-000a2cf24e205f93",
@@ -41223,14 +41318,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-embodied_ai",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
         "TX-industry-media_entertainment",
-        "TX-product_form-compute_cloud_service",
         "TX-product_form-chip_accelerator",
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -41290,7 +41385,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-11"
     },
     {
       "id": "EN-8d4321d936320802",
@@ -41587,6 +41682,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-4fc82b5985acc6c8",
         "EV-009a882943028d97",
         "EV-d381d15f8f9045e0",
         "EV-48cb223d8fa56442",
@@ -41631,11 +41727,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-embodied_ai",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
         "TX-industry-media_entertainment",
         "TX-product_form-chip_accelerator",
@@ -41714,7 +41810,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-11"
     },
     {
       "id": "EN-22f5eb5f2bfabefd",
@@ -42315,8 +42411,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
@@ -42381,8 +42477,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-use_case-security_operations",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
@@ -42427,8 +42523,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-use_case-security_operations",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
@@ -42686,9 +42782,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-technology-multimodal",
         "TX-technology-vision_language"
@@ -42748,7 +42844,8 @@
       "eventIds": [
         "EV-e3382d1c1d7db751",
         "EV-715eb0debea4180c",
-        "EV-b9a1cba0b59a5354"
+        "EV-b9a1cba0b59a5354",
+        "EV-a8edaa14ede956fa"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -42766,7 +42863,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-15",
-      "lastSeen": "2026-08-13"
+      "lastSeen": "2026-11-11"
     },
     {
       "id": "EN-b314f58f5f506fd2",
@@ -42784,8 +42881,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-target_user-business_user",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
@@ -43065,8 +43162,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-technology-agentic_execution",
+        "TX-product_form-model",
         "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-industry-financial_services",
@@ -43125,8 +43222,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-automotive_transportation",
@@ -43170,8 +43267,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -43207,8 +43304,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-product_form-end_user_application",
         "TX-industry-automotive_transportation",
@@ -43330,6 +43427,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-937b99126cc4df09",
         "EV-3bc1af8409d16f9b",
         "EV-aaf041c83cebba9a",
         "EV-5c5476971d6a707b",
@@ -43906,13 +44004,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
         "TX-industry-media_entertainment",
-        "TX-product_form-end_user_application",
         "TX-product_form-chip_accelerator",
+        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-software_development",
@@ -43974,7 +44072,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-11"
     },
     {
       "id": "EN-376967c5f350003c",
@@ -44151,8 +44249,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-telecommunications",
         "TX-industry-financial_services",
         "TX-product_form-ai_compute_system"
@@ -44326,13 +44424,14 @@
         "EV-9fb08b68f301eb88",
         "EV-347d250e2769de9a",
         "EV-7449d239223d4928",
+        "EV-a8edaa14ede956fa",
         "EV-0eef30387327e73f",
         "EV-2f56b99f72ad6c4f"
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-technology-agentic_execution",
+        "TX-product_form-model",
         "TX-use_case-security_operations",
         "TX-industry-telecommunications",
         "TX-use_case-software_development",
@@ -44350,7 +44449,7 @@
         "EN-dc6c28a2123e8efb"
       ],
       "firstSeen": "2026-05-15",
-      "lastSeen": "2026-08-27"
+      "lastSeen": "2026-11-11"
     },
     {
       "id": "EN-2b1bf2dbb57b6603",
@@ -44657,6 +44756,8 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-4fc82b5985acc6c8",
+        "EV-a8edaa14ede956fa",
         "EV-51f7b14d193a3ffc",
         "EV-53c733c33deddee3",
         "EV-071998fb73331f68",
@@ -44703,10 +44804,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-embodied_ai",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
         "TX-industry-media_entertainment",
         "TX-product_form-end_user_application",
@@ -44762,7 +44863,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-11-07"
+      "lastSeen": "2026-11-11"
     },
     {
       "id": "EN-06b5472c16feae4c",
@@ -44845,9 +44946,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-financial_services",
         "TX-technology-on_device",
@@ -44906,6 +45007,27 @@
       ],
       "firstSeen": "2026-06-16",
       "lastSeen": "2026-06-16"
+    },
+    {
+      "id": "EN-dff37aaec8fa23f4",
+      "name": "曝 Anthropic 拟通过",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-2406bc3d29c09326"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-11"
     },
     {
       "id": "EN-f90aec90acf3dc85",
@@ -44998,8 +45120,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-technology-agentic_execution",
+        "TX-product_form-model",
         "TX-industry-financial_services",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"

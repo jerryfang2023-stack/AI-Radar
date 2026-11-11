@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-11",
+    "currentDate": "2026-11-11",
+    "eventCount": 4433,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,16 +63,18 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-b2d64d6a6590c04e",
       "EV-b0e0458e4ae40f66"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-05-19",
-    "lastSeen": "2026-09-12",
+    "lastSeen": "2026-11-11",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-b2d64d6a6590c04e",
         "EV-b0e0458e4ae40f66"
       ],
       "deployments": [],
@@ -83,6 +85,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-b2d64d6a6590c04e",
+        "dataDate": "2026-11-11",
+        "date": "2026-11-04",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "后摩智能完成数十亿元B轮融资 端侧AI芯片进入规模化_腾讯新闻",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-a4de3a0231cca63a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-a4de3a0231cca63a",
+          "EN-73b90324bcab9f5a"
+        ]
+      },
       {
         "id": "EV-b0e0458e4ae40f66",
         "dataDate": "2026-09-12",

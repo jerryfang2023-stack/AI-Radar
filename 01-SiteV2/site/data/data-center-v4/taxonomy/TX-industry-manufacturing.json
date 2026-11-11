@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-11",
+    "currentDate": "2026-11-11",
+    "eventCount": 4433,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -249,6 +249,7 @@
       "EV-ff1f6119de13fa19",
       "EV-4dd25589d834060d",
       "EV-7263caa45bbf168e",
+      "EV-c410e8bb1e2064f2",
       "EV-f6ad842485bb71ab",
       "EV-1e6f73c188a9e946",
       "EV-30be225da68f2f70",
@@ -455,6 +456,7 @@
       "EN-9fbf261b62c1d7c0",
       "EN-59ae856cd788d0f5",
       "EN-be972f28adbc6e84",
+      "EN-ce084d4801691907",
       "EN-d41ebd9f02722fc8",
       "EN-e73b79a0b10f8cdb",
       "EN-2b1bf2dbb57b6603",
@@ -482,6 +484,7 @@
       "FDE-a8968d398c9626cb",
       "FDE-bf49eb6f42ebe6a8",
       "FDE-9f64e1521dd2dea0",
+      "FDE-8bcacb888ffe1955",
       "FDE-d4a9cd05a34baf09",
       "FDE-6e17403b5cdb72b0"
     ],
@@ -499,7 +502,7 @@
       "HW-ef547aa78d8d0ade"
     ],
     "firstSeen": "2025-08-27",
-    "lastSeen": "2026-11-04"
+    "lastSeen": "2026-11-11"
   },
   "events": [
     {
@@ -67395,6 +67398,154 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-c410e8bb1e2064f2",
+      "dataDate": "2026-11-11",
+      "date": "2026-11-10",
+      "updatedDate": "2026-11-10",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Labelbox 与 Wipro 合作，推动从企业经验中学习的 AI 智能体规模化应用",
+      "originalTitle": "Labelbox partners with Wipro to scale adoption of AI agents that learn from enterprise experience",
+      "subject": "Labelbox",
+      "action": "partners with",
+      "object": "Wipro to scale adoption of AI agents that learn from enterprise experience",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ce084d4801691907"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-ce084d4801691907"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-ce084d4801691907"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ce084d4801691907"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-ce084d4801691907"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-ce084d4801691907"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-ce084d4801691907"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ce084d4801691907"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-ce084d4801691907"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ce084d4801691907"
+      ],
+      "entityNames": [
+        "Labelbox"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/labelbox-partners-with-wipro-to-scale-adoption-of-ai-agents-that-learn-from-enterprise-experience-302934232.html",
+      "publisher": "www.prnewswire.com"
+    },
+    {
       "id": "EV-f6ad842485bb71ab",
       "dataDate": "2026-09-07",
       "date": "2026-09-04",
@@ -69757,12 +69908,16 @@
         {
           "name": "TimesFM-3",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         },
         {
           "name": "Research",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Google"
+          ]
         }
       ],
       "sourceUrl": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting",
@@ -74504,8 +74659,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-technology-agentic_execution",
+        "TX-product_form-model",
         "TX-industry-media_entertainment",
         "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform"
@@ -75035,6 +75190,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-4fc82b5985acc6c8",
         "EV-009a882943028d97",
         "EV-d381d15f8f9045e0",
         "EV-48cb223d8fa56442",
@@ -75079,11 +75235,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-embodied_ai",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
         "TX-industry-media_entertainment",
         "TX-product_form-chip_accelerator",
@@ -75162,7 +75318,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-11"
     },
     {
       "id": "EN-34069c35fbafefc6",
@@ -76192,8 +76348,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -76462,8 +76618,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
@@ -76522,8 +76678,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-use_case-security_operations",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
@@ -76568,8 +76724,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-use_case-security_operations",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
@@ -77136,8 +77292,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-automotive_transportation",
@@ -77256,8 +77412,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -77293,8 +77449,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-product_form-end_user_application",
         "TX-industry-automotive_transportation",
@@ -78329,10 +78485,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-technology-agentic_execution",
-        "TX-product_form-compute_cloud_service",
+        "TX-product_form-model",
         "TX-product_form-chip_accelerator",
+        "TX-product_form-compute_cloud_service",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -78461,9 +78617,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
-        "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing",
         "TX-use_case-software_development",
@@ -78695,6 +78851,8 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
+        "EV-4fc82b5985acc6c8",
+        "EV-a8edaa14ede956fa",
         "EV-51f7b14d193a3ffc",
         "EV-f0544e9e6daf3a35",
         "EV-98a5bcde4600a029",
@@ -78730,8 +78888,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-technology-agentic_execution",
+        "TX-product_form-model",
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
@@ -78759,7 +78917,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-01-14",
-      "lastSeen": "2026-11-07"
+      "lastSeen": "2026-11-11"
     },
     {
       "id": "EN-59ae856cd788d0f5",
@@ -78803,6 +78961,33 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-06-22"
+    },
+    {
+      "id": "EN-ce084d4801691907",
+      "name": "Labelbox",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-858cec7fa8f4c87b",
+        "EV-c410e8bb1e2064f2"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-model",
+        "TX-industry-manufacturing",
+        "TX-target_user-business_user",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-productivity_enterprise_workflows"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-11-11"
     },
     {
       "id": "EN-d41ebd9f02722fc8",
@@ -78976,6 +79161,7 @@
         "EV-37cdd2fae39aaa2e",
         "EV-3d1c01d3d1b0bba4",
         "EV-ad1444d8653b37ae",
+        "EV-4fc82b5985acc6c8",
         "EV-3b30eda1326a6fb1",
         "EV-89bdda008227fb6b"
       ],
@@ -78992,7 +79178,7 @@
         "EN-7d3194f79e645c42"
       ],
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-11-01"
+      "lastSeen": "2026-11-11"
     },
     {
       "id": "EN-35e36dc1a5213fa3",
@@ -79013,9 +79199,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-retail_ecommerce",
@@ -79182,12 +79368,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-industry-media_entertainment",
-        "TX-product_form-end_user_application",
         "TX-product_form-chip_accelerator",
+        "TX-product_form-end_user_application",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
@@ -79342,9 +79528,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing",
         "TX-industry-retail_ecommerce",
@@ -79772,6 +79958,8 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-4fc82b5985acc6c8",
+        "EV-a8edaa14ede956fa",
         "EV-51f7b14d193a3ffc",
         "EV-53c733c33deddee3",
         "EV-071998fb73331f68",
@@ -79818,10 +80006,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-embodied_ai",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
         "TX-industry-media_entertainment",
         "TX-product_form-end_user_application",
@@ -79877,7 +80065,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-11-07"
+      "lastSeen": "2026-11-11"
     },
     {
       "id": "EN-1706429cbf67f1c9",
@@ -79957,6 +80145,57 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-8bcacb888ffe1955",
+      "eventId": "EV-c410e8bb1e2064f2",
+      "dataDate": "2026-11-11",
+      "date": "2026-11-10",
+      "title": "Labelbox 与 Wipro 合作，推动从企业经验中学习的 AI 智能体规模化应用",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Labelbox",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Wipro to scale adoption of AI agents that learn from enterprise experience",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "SAN FRANCISCO, Nov. 10, 2026 /PRNewswire/ -- Labelbox, the leading data factory trusted by top AI labs and enterprises, has announced its strategic partnership with Wipro Limited, a global AI-powered technology services and consulting company, to accelerate the deployment of AI agents across complex enterprise operations.",
+        "\"Building frontier AI requires bringing exceptional domain expertise closer to the teams developing and deploying AI systems,\" said Manu Sharma, CEO of Labelbox. \"Through our partnership with Wipro, we look forward to helping enterprises turn their knowledge, workflows, and standards into AI systems that can be rigorously evaluated, continuously improved, and deployed responsibly at scale."
+      ],
+      "outcomes": [
+        "\"Building frontier AI requires bringing exceptional domain expertise closer to the teams developing and deploying AI systems,\" said Manu Sharma, CEO of Labelbox. \"Through our partnership with Wipro, we look forward to helping enterprises turn their knowledge, workflows, and standards into AI systems that can be rigorously evaluated, continuously improved, and deployed responsibly at scale."
+      ],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ce084d4801691907"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/labelbox-partners-with-wipro-to-scale-adoption-of-ai-agents-that-learn-from-enterprise-experience-302934232.html",
+      "entityIds": [
+        "EN-ce084d4801691907"
+      ]
+    },
     {
       "id": "FDE-a8968d398c9626cb",
       "eventId": "EV-1a846b94337dd961",
@@ -80581,6 +80820,67 @@
     }
   ],
   "fdeDossiers": [
+    {
+      "id": "FDED-6f4e160923e61664",
+      "implementationKey": "6f4e160923e61664",
+      "eventId": "EV-c410e8bb1e2064f2",
+      "eventIds": [
+        "EV-c410e8bb1e2064f2"
+      ],
+      "dataDate": "2026-11-11",
+      "date": "2026-11-10",
+      "title": "Labelbox × 未披露：Wipro to scale adoption of AI agents that learn from enterprise experience",
+      "stage": "production",
+      "stageLabel": "production",
+      "customer": "Labelbox",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Wipro to scale adoption of AI agents that learn from enterprise experience",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [
+        "\"Building frontier AI requires bringing exceptional domain expertise closer to the teams developing and deploying AI systems,\" said Manu Sharma, CEO of Labelbox. \"Through our partnership with Wipro, we look forward to helping enterprises turn their knowledge, workflows, and standards into AI systems that can be rigorously evaluated, continuously improved, and deployed responsibly at scale."
+      ],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-620a8f24b0f76d28",
+          "type": "implementation_update",
+          "stage": "production",
+          "date": "2026-11-10",
+          "dataDate": "2026-11-11",
+          "eventId": "EV-c410e8bb1e2064f2",
+          "eventTitle": "Labelbox 与 Wipro 合作，推动从企业经验中学习的 AI 智能体规模化应用",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ce084d4801691907"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/labelbox-partners-with-wipro-to-scale-adoption-of-ai-agents-that-learn-from-enterprise-experience-302934232.html",
+      "entityIds": [
+        "EN-ce084d4801691907"
+      ]
+    },
     {
       "id": "FDED-9a37cbb20bf82aa1",
       "implementationKey": "9a37cbb20bf82aa1",
