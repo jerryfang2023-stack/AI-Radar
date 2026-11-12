@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,7 +61,7 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 10,
+    "current_round_count": 11,
     "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 9,
     "market_regions": [
@@ -70,9 +70,9 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-12",
-    "latest_disclosed_at": "2026-11-09",
+    "latest_disclosed_at": "2026-11-11",
     "role_counts": {
-      "co_lead": 4,
+      "co_lead": 5,
       "historical_or_ambiguous": 3,
       "participant": 6
     },
@@ -134,6 +134,54 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-9f3f3423e68bc3b9",
+        "funding_insight_id": "FI-70d164861fee0af8",
+        "event_ids": [
+          "EV-c3fdd52a255c0770"
+        ],
+        "company_entity_id": "EN-8da5eafb322ee86e",
+        "company_canonical_entity_id": "",
+        "company_name": "Fractile",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$720 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 720000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.2 亿美元"
+        },
+        "announced_at": "2026-11-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-038f46a4355e8569",
+            "source_url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips",
+            "source_title": "英国 Fractile 完成 7.2 亿美元融资，在 AI 芯片竞赛中占据优势",
+            "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+            "quote": "its latest round led by Thrive Capital, Founders Fund, Lightspeed Venture Partners, and Redpoint",
+            "quote_hash": "69677c9cff11085d84c536d1d997465dcc1993802f7000b442656da6b4011cf8"
+          },
+          {
+            "source_id": "FISRC-59233bfbeb9628bf",
+            "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+            "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+            "source_content_hash": "97c1f5cc5dda1d68",
+            "quote": "Thrive Capital, Founders Fund, Lightspeed and Redpoint co-led the round.",
+            "quote_hash": "ea6bb384a47cf21cbbbf5c4cf629c2d466cddb2aeb73964f923340e31bba8081"
+          }
+        ]
+      },
       {
         "activity_id": "IA-14a1312d0c14387f",
         "funding_insight_id": "FI-94eaf09d128c6f03",
@@ -643,6 +691,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-038f46a4355e8569",
+        "source_url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips",
+        "source_title": "英国 Fractile 完成 7.2 亿美元融资，在 AI 芯片竞赛中占据优势",
+        "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+        "quote": "its latest round led by Thrive Capital, Founders Fund, Lightspeed Venture Partners, and Redpoint",
+        "quote_hash": "69677c9cff11085d84c536d1d997465dcc1993802f7000b442656da6b4011cf8"
+      },
+      {
+        "source_id": "FISRC-59233bfbeb9628bf",
+        "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+        "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+        "source_content_hash": "97c1f5cc5dda1d68",
+        "quote": "Thrive Capital, Founders Fund, Lightspeed and Redpoint co-led the round.",
+        "quote_hash": "ea6bb384a47cf21cbbbf5c4cf629c2d466cddb2aeb73964f923340e31bba8081"
+      },
+      {
         "source_id": "FISRC-3491226e16a1391a",
         "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
         "source_title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
@@ -785,16 +849,12 @@
           "source_id": "founders_home"
         },
         {
+          "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮联合领投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-038f46a4355e8569"
+        },
+        {
           "description": "融资来源记录：Nominal · C轮 · 2026-11-09 · 本轮参投 · $240 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3491226e16a1391a"
-        },
-        {
-          "description": "融资来源记录：OpenAI · 轮次未披露 · 2026-11-07 · 本轮参投 · $11 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3952ae60d488ad95"
-        },
-        {
-          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮联合领投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f581afce52cf5bef"
         }
       ],
       "contacts": [
@@ -839,28 +899,28 @@
           "quote_hash": "e7928b1d51fe1210b92e5c255535528ac724363f322f6c31135b6bb89547dd05"
         },
         {
+          "source_id": "FISRC-038f46a4355e8569",
+          "source_url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips",
+          "source_title": "英国 Fractile 完成 7.2 亿美元融资，在 AI 芯片竞赛中占据优势",
+          "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+          "quote": "its latest round led by Thrive Capital, Founders Fund, Lightspeed Venture Partners, and Redpoint",
+          "quote_hash": "69677c9cff11085d84c536d1d997465dcc1993802f7000b442656da6b4011cf8"
+        },
+        {
+          "source_id": "FISRC-59233bfbeb9628bf",
+          "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+          "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+          "source_content_hash": "97c1f5cc5dda1d68",
+          "quote": "Thrive Capital, Founders Fund, Lightspeed and Redpoint co-led the round.",
+          "quote_hash": "ea6bb384a47cf21cbbbf5c4cf629c2d466cddb2aeb73964f923340e31bba8081"
+        },
+        {
           "source_id": "FISRC-3491226e16a1391a",
           "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
           "source_title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
           "source_content_hash": "661a69b2d4192044",
           "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
           "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
-        },
-        {
-          "source_id": "FISRC-3952ae60d488ad95",
-          "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
-          "source_title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
-          "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-          "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-          "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
-        },
-        {
-          "source_id": "FISRC-f581afce52cf5bef",
-          "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
-          "source_title": "Ramp估值达600亿美元，深入布局AI",
-          "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
-          "quote": "The financing was co-led by Dragoneer Investment Group, Thrive Capital, Founders Fund, Sands Capital, and Avenir Growth.",
-          "quote_hash": "f51f43c20ed94c008d5eb4b1abbcb23d26adeb696bc7b69f874cef8d31d80d73"
         }
       ],
       "last_verified_at": "2026-09-25",

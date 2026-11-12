@@ -37366,7 +37366,361 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-11-10T00:50:28.047Z"
+    },
+    "EV-41508040354226c9": {
+      "id": "EV-41508040354226c9",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "evaluation",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Plurai 为智能体提供仿真测试与后训练定制小模型的开发平台，属评测与模型开发工具。",
+      "input_hash": "af06f0e39b4716dea6d6ca34e759a9bf49c5cae4fc40d9ed2d00f039f9310ffe",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0f738a450bfe4c76",
+          "quote": "Plurai, the simulation infrastructure for trustworthy, self-improving AI agents, today announced $13M in seed funding and the general availability of its platform."
+        },
+        {
+          "source_id": "FISRC-0f738a450bfe4c76",
+          "quote": "Plurai builds a digital twin of an agent and its world based on the customer's own knowledge base, tools and policies."
+        },
+        {
+          "source_id": "FISRC-0f738a450bfe4c76",
+          "quote": "Plurai generates fixes for the failures it finds and uses the simulation data to create small language models (SLMs) tailored to each agent."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-12T03:49:58.718Z"
+    },
+    "EV-a49a610c856420ab": {
+      "id": "EV-a49a610c856420ab",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "commerce",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business",
+        "public-sector"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Garage 运营面向重型设备的 AI 定价与交易市场，属电商与供应链行业 AI。",
+      "input_hash": "0d20a5ecf2bbc04550b3c6b1e2eec96cf97ec37b8d1ab63b722e051b000678e2",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-49f6d3c8199f72d9",
+          "quote": "Garage, the leading AI-powered marketplace for America's essential equipment"
+        },
+        {
+          "source_id": "FISRC-49f6d3c8199f72d9",
+          "quote": "Garage has built the first AI-powered marketplace specifically for transacting the heavy equipment that keeps America's communities moving."
+        },
+        {
+          "source_id": "FISRC-49f6d3c8199f72d9",
+          "quote": "Key Features: AI Appraisal Engine: Operates as an unbiased pricing guide for specialized municipal assets, generating data-driven valuations to guarantee fair pricing for buyers and sellers. Automated Logistics: Instant freight quoting and end-to-end transport coordination, seamlessly moving 80,000-pound vehicles across state lines without human dispatchers. Equipment Warranties: Reduces buyer risk by offering comprehensive warranties on pre-owned assets. Nationwide Market Access: Breaks down local geographic constraints by connecting municipalities to a vetted, 50-state network, with the average transaction traveling more than 1400 miles. Integrated Financing: Custom-built financing designed specifically to navigate local government budgets, compliance standards, and municipal purchasing requirements."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-12T03:49:58.718Z"
+    },
+    "EV-d1de630ee6b52deb": {
+      "id": "EV-d1de630ee6b52deb",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-security",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "WhiteMatter 通过统一网关部署并治理智能体、模型与 MCP 服务，属模型与智能体安全。",
+      "input_hash": "e90aa8e1d30e1a4d9960a56f486d7bee87f5f11d48e4ac666bbe7110736f4399",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c02a4f3cb83d06b6",
+          "quote": "WhiteMatter, which quietly built its platform under the name QuilrAI, has raised $20M in Series A funding to secure and operationalize every agent, model, and AI interaction across the enterprise from pre-production governance and validation to securing every action at runtime."
+        },
+        {
+          "source_id": "FISRC-83d47b6228cb38f5",
+          "quote": "WhiteMatter, founded in 2024 and previously called QuilrAI, builds a platform that deploys and governs every AI agent, model, and MCP server through a single gateway."
+        },
+        {
+          "source_id": "FISRC-c02a4f3cb83d06b6",
+          "quote": "It governs and deploys every agent, model, and MCP server in the environment; secures and observes each action before and after it executes; and optimizes agent traffic as well as spend through one controlled gateway."
+        },
+        {
+          "source_id": "FISRC-3827f0ee89a467f8",
+          "quote": "WhiteMatter says it governs agents, models and Model Context Protocol servers before deployment, then observes and enforces policies as agents operate across browsers, endpoints, SaaS applications and cloud environments."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-12T03:49:58.718Z"
+    },
+    "EV-c3fdd52a255c0770": {
+      "id": "EV-c3fdd52a255c0770",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Fractile 设计 AI 推理芯片与机架级系统并配套编译器，属 AI 芯片与加速器。",
+      "input_hash": "db5f93df2e4c901bfadcf174002c135d4a05825e1d2cbfd31d71a053dd4eff44",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-59233bfbeb9628bf",
+          "quote": "It designs inference chips and rack-scale systems that stack DRAM directly on top of the logic"
+        },
+        {
+          "source_id": "FISRC-038f46a4355e8569",
+          "quote": "its approach now revolves on DRAM, the most common type of RAM, but stacked on top of each chip"
+        },
+        {
+          "source_id": "FISRC-038f46a4355e8569",
+          "quote": "a full-stack approach that also includes a machine learning compiler to maximize the speed at which LLMs will get executed on its chips"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-12T03:49:58.718Z"
+    },
+    "EV-99e376ee2aa07168": {
+      "id": "EV-99e376ee2aa07168",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "model-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "泛函数以自研芯片设计垂类大模型与多智能体平台覆盖芯片设计全流程，面向芯片设计企业提供订阅与项目服务，属面向工程团队的模型与开发平台。",
+      "input_hash": "edfce3540b5dd846d87624936da248f7bd5e2cf8af0a5ae0482a68d71909ba36",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e7925e22bb32139a",
+          "quote": "上海泛函数智能科技有限公司（下称“泛函数”）成立于2026年3月，总部位于上海徐汇西岸智塔，以AI为第 一性原理构建芯片设计平台。"
+        },
+        {
+          "source_id": "FISRC-e7925e22bb32139a",
+          "quote": "泛函数平台接收自然语言形式的设计需求，依托多智能体协同，完成芯片架构规划、RTL逻辑代码生成、功能验证优化、物理版图布局、流片方案输出，最终输出可用于流片的GDS文件，覆盖芯片设计完整链路。"
+        },
+        {
+          "source_id": "FISRC-e7925e22bb32139a",
+          "quote": "目前，泛函数主要服务芯片设计企业和芯片设计服务商，采用订阅制和项目制两种商业模式。"
+        },
+        {
+          "source_id": "FISRC-e7925e22bb32139a",
+          "quote": "周婧怡表示，泛函数自研的面向芯片设计的垂类大模型现已形成商用。该模型配合泛函数的自研agent所形成的平台目前已经可以覆盖芯片设计全流程，技术上大幅减少工程师介入。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-12T03:49:59.608Z"
+    },
+    "EV-33a842c331d69819": {
+      "id": "EV-33a842c331d69819",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "富唯智能主营工业具身智能机器人及一体化控制平台，统一协调底盘、机械臂与末端工具，属具身智能机器人本体业务。",
+      "input_hash": "c6d50a87dc5bc4b40ab9b108cc130d001f945365d407910e07dab3b3e48b07aa",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6f82f399826d7fd0",
+          "quote": "广州富唯智能科技有限公司（下称“富唯智能”）成立于2022年，围绕工业具身大脑、机器人控制与场景应用构建技术和产品体系。"
+        },
+        {
+          "source_id": "FISRC-8d12b85b22a0ad31",
+          "quote": "富唯智能成立于2022年，专注于具身智能工业机器人研发，致力于提升制造业柔性自动化水平。"
+        },
+        {
+          "source_id": "FISRC-6f82f399826d7fd0",
+          "quote": "富唯智能以知识驱动的任务规划为基础，将工业语义地图、对象知识图谱与机器人技能体系相结合，把环境信息、设备能力及工艺约束纳入任务分解和执行过程。通过一体化控制平台，统一协调移动底盘、机械臂、视觉及末端工具，支持多品牌设备适配、图形化任务编排和工艺模块调用。"
+        },
+        {
+          "source_id": "FISRC-6f82f399826d7fd0",
+          "quote": "依托自研GRID工业具身智能大模型与AI-ICDP平台，成功攻克了真实产线对稳定性、精度与节拍的严苛要求。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-12T03:49:59.608Z"
+    },
+    "EV-d20c3c6a7fa6133a": {
+      "id": "EV-d20c3c6a7fa6133a",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "优理奇为全栈具身智能企业，自研关节模组与机械臂并交付轮式双臂及双足机器人本体，属机器人本体主营。",
+      "input_hash": "60080dd7fc109e0d4d3f3bc24166a978e255620d5eb798f5173e2bb8377392cd",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a9b5999ebfca6d0f",
+          "quote": "优理奇智能科技（苏州）有限公司（下称“优理奇”）成立于2024年，是一家全栈式、具有全球技术视野的具身智能高科技企业"
+        },
+        {
+          "source_id": "FISRC-a9b5999ebfca6d0f",
+          "quote": "公司已形成Wanda与Panther等成熟机器人产品平台，自研关节模组、仿生机械臂及运动控制等关键模块"
+        },
+        {
+          "source_id": "FISRC-f2fd93977ae156d3",
+          "quote": "产品覆盖轮式双臂机器人Wanda系列与双足机器人Martian"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-12T03:49:59.608Z"
+    },
+    "EV-59048c1178252d9a": {
+      "id": "EV-59048c1178252d9a",
+      "scope": "excluded",
+      "exclusion_reason": "not_ai_business",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1
+      ],
+      "rationale": "利普思主营碳化硅等功率半导体模块的研发生产销售，仅面向AIDC应用送样，核心业务非AI。",
+      "input_hash": "6258701816320a5724bd6788e3651ef12f6ab2c85d1e4ee0e5bde40b10698528",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-098aba43c9b586bc",
+          "quote": "无锡利普思半导体有限公司（下称“利普思”）致力于碳化硅等功率半导体的研发、生产与销售，提供完整的模块应用解决方案。"
+        },
+        {
+          "source_id": "FISRC-4341cff54783bf7a",
+          "quote": "主要产品包括新能源汽车和工业用的高可靠性SiC 混合模块、SiC 模块和IGBT模块"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-12T03:49:59.608Z"
+    },
+    "EV-0576fd5df6d232f9": {
+      "id": "EV-0576fd5df6d232f9",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "SPARETECH提供企业级备件管理AI软件，标准化物料主数据并优化库存与采购，属企业业务流程应用。",
+      "input_hash": "469ee7d13b6d1450c3db1269a2694629eafc47e490fdfcc698108fdf661f3fc8",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-124895804c23694c",
+          "quote": "SPARETECH, a provider of enterprise AI for spare parts management"
+        },
+        {
+          "source_id": "FISRC-fb7ea71491ca44a2",
+          "quote": "SPARETECH's enterprise AI software empowers global manufacturers to reduce their spare parts spend and inventory."
+        },
+        {
+          "source_id": "FISRC-124895804c23694c",
+          "quote": "SPARETECH's enterprise AI software empowers global manufacturers to reduce their spare parts spend and inventory. Built on verified original manufacturer data, the platform standardizes material master data, right-sizes inventory across plants, and enables sourcing and surplus resale across the network."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-12T03:49:59.608Z"
+    },
+    "EV-b97542658971c6a9": {
+      "id": "EV-b97542658971c6a9",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Charta Health面向医疗机构与支付方提供AI病历审查平台，核对编码与支付规则以提升计费准确性，属医疗行业AI。",
+      "input_hash": "7bc7a4f019a42df54355da4195e5e925bb6c8cc8a79b938a02d4378360083c99",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e5678cb427ad6e69",
+          "quote": "Charta Health, the AI medical chart review platform built for billing accuracy"
+        },
+        {
+          "source_id": "FISRC-e5678cb427ad6e69",
+          "quote": "Charta for Providers reviews every chart before claim submission, checking it against coding guidelines, payer rules, and each organization's own clinical protocols."
+        },
+        {
+          "source_id": "FISRC-e5678cb427ad6e69",
+          "quote": "Charta for Payers includes six AI-powered products that enable health plans to achieve greater accuracy and operational efficiencies"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-12T03:49:59.608Z"
     }
   },
-  "generated_at": "2026-11-10T00:50:28.047Z"
+  "generated_at": "2026-11-12T03:49:59.608Z"
 }

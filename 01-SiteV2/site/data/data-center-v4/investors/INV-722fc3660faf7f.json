@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,24 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 7,
+    "portfolio_company_count": 8,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 4,
-    "china_market_company_count": 4,
+    "china_market_activity_count": 5,
+    "china_market_company_count": 5,
     "first_disclosed_at": "2026-01-26",
-    "latest_disclosed_at": "2026-10-12",
+    "latest_disclosed_at": "2026-11-11",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 6
+      "participant": 7
     },
     "round_codes": [
+      "angel",
       "multi_round",
       "other",
       "pre_series_a",
@@ -89,6 +90,11 @@
         "entity_id": "EN-7b16566a47240add",
         "canonical_entity_id": "",
         "name": "北京清醒异构科技有限公司"
+      },
+      {
+        "entity_id": "EN-0bec4272ffd58fbb",
+        "canonical_entity_id": "",
+        "name": "泛函数"
       },
       {
         "entity_id": "EN-55c37c5c0b75471a",
@@ -122,6 +128,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-15a902a62d94bf55",
+        "funding_insight_id": "FI-7cc504bfbad2008a",
+        "event_ids": [
+          "EV-99e376ee2aa07168"
+        ],
+        "company_entity_id": "EN-0bec4272ffd58fbb",
+        "company_canonical_entity_id": "",
+        "company_name": "泛函数",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-11-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e7925e22bb32139a",
+            "source_url": "https://news.pedaily.cn/202611/571696.shtml",
+            "source_title": "AI原生芯片设计公司「泛函数」完成近亿元天使轮融资",
+            "source_content_hash": "8bc48bacb2868149e492f92781294866ff3260723f3a710770f51c153cd9cad0",
+            "quote": "由上海未来产业基金领投，上海信投、上海科创集团、富海重产基金、徐汇资本、宽桥恒松、无限基金联合投资",
+            "quote_hash": "b86bd0f38d4b410a1e9f2cb4668e2c6b17f757ff452f4f7addf759afead450d7"
+          }
+        ]
+      },
       {
         "activity_id": "IA-30f9fad61e8c9548",
         "funding_insight_id": "FI-bc8f734fd3f1e216",
@@ -455,6 +501,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-e7925e22bb32139a",
+        "source_url": "https://news.pedaily.cn/202611/571696.shtml",
+        "source_title": "AI原生芯片设计公司「泛函数」完成近亿元天使轮融资",
+        "source_content_hash": "8bc48bacb2868149e492f92781294866ff3260723f3a710770f51c153cd9cad0",
+        "quote": "由上海未来产业基金领投，上海信投、上海科创集团、富海重产基金、徐汇资本、宽桥恒松、无限基金联合投资",
+        "quote_hash": "b86bd0f38d4b410a1e9f2cb4668e2c6b17f757ff452f4f7addf759afead450d7"
+      },
+      {
         "source_id": "FISRC-cb25587b8eec23eb",
         "source_url": "https://www.163.com/dy/article/L91M226D0514R9P4.html",
         "source_title": "大模型创新企业模思智能完成超10亿元Pre-A轮融资",
@@ -564,16 +618,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：泛函数 · 天使轮 · 2026-11-11 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e7925e22bb32139a"
+        },
+        {
           "description": "融资来源记录：模思智能 · Pre-A轮 · 2026-10-12 · 本轮参投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cb25587b8eec23eb"
         },
         {
           "description": "融资来源记录：上海模思智能科技有限公司 · Pre-A轮 · 2026-10-12 · 本轮参投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2b099c2278c91b1d"
-        },
-        {
-          "description": "融资来源记录：北京清醒异构科技有限公司 · A+轮 · 2026-09-24 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-735024582f88eccf"
         }
       ],
       "contacts": [],
@@ -603,6 +657,14 @@
           "quote_hash": "31b528afc720d8943b4421f2618cdec97169b6b00e81a8704e594abd40f5f39e"
         },
         {
+          "source_id": "FISRC-e7925e22bb32139a",
+          "source_url": "https://news.pedaily.cn/202611/571696.shtml",
+          "source_title": "AI原生芯片设计公司「泛函数」完成近亿元天使轮融资",
+          "source_content_hash": "8bc48bacb2868149e492f92781294866ff3260723f3a710770f51c153cd9cad0",
+          "quote": "由上海未来产业基金领投，上海信投、上海科创集团、富海重产基金、徐汇资本、宽桥恒松、无限基金联合投资",
+          "quote_hash": "b86bd0f38d4b410a1e9f2cb4668e2c6b17f757ff452f4f7addf759afead450d7"
+        },
+        {
           "source_id": "FISRC-cb25587b8eec23eb",
           "source_url": "https://www.163.com/dy/article/L91M226D0514R9P4.html",
           "source_title": "大模型创新企业模思智能完成超10亿元Pre-A轮融资",
@@ -617,14 +679,6 @@
           "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
           "quote": "主要投资方包括国开科创、上海科创基金、新微资本、徐汇资本、追光硬科技创投、临港策源基金等",
           "quote_hash": "f96a43f2e84853152e98dbfc5b58caa42b77bc2a6dcc35ca29660281fdf28fa3"
-        },
-        {
-          "source_id": "FISRC-735024582f88eccf",
-          "source_url": "https://news.pedaily.cn/202609/569586.shtml",
-          "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
-          "source_content_hash": "a13785fb3b4343484b287690ea862c9fb464cd396a925c559571e2517d828c1e",
-          "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等",
-          "quote_hash": "71d0de8703216969118b833a85381455a25850dc83f6e25ebb8b39fc22fd3dac"
         }
       ],
       "last_verified_at": "2026-10-03",

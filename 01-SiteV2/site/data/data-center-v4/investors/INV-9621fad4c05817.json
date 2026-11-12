@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -71,9 +71,9 @@
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-01-22",
-    "latest_disclosed_at": "2026-10-14",
+    "latest_disclosed_at": "2026-11-11",
     "role_counts": {
-      "co_lead": 1,
+      "co_lead": 2,
       "historical_or_ambiguous": 1,
       "participant": 5
     },
@@ -96,6 +96,11 @@
         "name": "Armadin"
       },
       {
+        "entity_id": "EN-8da5eafb322ee86e",
+        "canonical_entity_id": "",
+        "name": "Fractile"
+      },
+      {
         "entity_id": "EN-c5803a6e4daa6af4",
         "canonical_entity_id": "",
         "name": "Modal"
@@ -112,6 +117,54 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5d85ab986cfe94cc",
+        "funding_insight_id": "FI-70d164861fee0af8",
+        "event_ids": [
+          "EV-c3fdd52a255c0770"
+        ],
+        "company_entity_id": "EN-8da5eafb322ee86e",
+        "company_canonical_entity_id": "",
+        "company_name": "Fractile",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$720 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 720000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.2 亿美元"
+        },
+        "announced_at": "2026-11-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-038f46a4355e8569",
+            "source_url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips",
+            "source_title": "英国 Fractile 完成 7.2 亿美元融资，在 AI 芯片竞赛中占据优势",
+            "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+            "quote": "its latest round led by Thrive Capital, Founders Fund, Lightspeed Venture Partners, and Redpoint",
+            "quote_hash": "69677c9cff11085d84c536d1d997465dcc1993802f7000b442656da6b4011cf8"
+          },
+          {
+            "source_id": "FISRC-59233bfbeb9628bf",
+            "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+            "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+            "source_content_hash": "97c1f5cc5dda1d68",
+            "quote": "Thrive Capital, Founders Fund, Lightspeed and Redpoint co-led the round.",
+            "quote_hash": "ea6bb384a47cf21cbbbf5c4cf629c2d466cddb2aeb73964f923340e31bba8081"
+          }
+        ]
+      },
       {
         "activity_id": "IA-54158809e734af84",
         "funding_insight_id": "FI-7feeaf543574b27d",
@@ -388,6 +441,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-038f46a4355e8569",
+        "source_url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips",
+        "source_title": "英国 Fractile 完成 7.2 亿美元融资，在 AI 芯片竞赛中占据优势",
+        "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+        "quote": "its latest round led by Thrive Capital, Founders Fund, Lightspeed Venture Partners, and Redpoint",
+        "quote_hash": "69677c9cff11085d84c536d1d997465dcc1993802f7000b442656da6b4011cf8"
+      },
+      {
+        "source_id": "FISRC-59233bfbeb9628bf",
+        "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+        "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+        "source_content_hash": "97c1f5cc5dda1d68",
+        "quote": "Thrive Capital, Founders Fund, Lightspeed and Redpoint co-led the round.",
+        "quote_hash": "ea6bb384a47cf21cbbbf5c4cf629c2d466cddb2aeb73964f923340e31bba8081"
+      },
+      {
         "source_id": "FISRC-b54b83abf2f3608c",
         "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
         "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
@@ -467,16 +536,12 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮联合领投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-038f46a4355e8569"
+        },
+        {
           "description": "融资来源记录：Modal · D轮 · 2026-10-14 · 本轮参投 · $750 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b54b83abf2f3608c"
-        },
-        {
-          "description": "融资来源记录：Sonilo · 其他融资 · 2026-10-14 · 本轮参投 · $11 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fa27e646262b9440"
-        },
-        {
-          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dc8fb918b056c843"
         }
       ],
       "contacts": [],
@@ -506,28 +571,28 @@
           "quote_hash": "0450d404b7d4986faea8c1e25c09c9c9cae769c488fb05dd3b569c25f40e30b0"
         },
         {
+          "source_id": "FISRC-038f46a4355e8569",
+          "source_url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips",
+          "source_title": "英国 Fractile 完成 7.2 亿美元融资，在 AI 芯片竞赛中占据优势",
+          "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+          "quote": "its latest round led by Thrive Capital, Founders Fund, Lightspeed Venture Partners, and Redpoint",
+          "quote_hash": "69677c9cff11085d84c536d1d997465dcc1993802f7000b442656da6b4011cf8"
+        },
+        {
+          "source_id": "FISRC-59233bfbeb9628bf",
+          "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+          "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+          "source_content_hash": "97c1f5cc5dda1d68",
+          "quote": "Thrive Capital, Founders Fund, Lightspeed and Redpoint co-led the round.",
+          "quote_hash": "ea6bb384a47cf21cbbbf5c4cf629c2d466cddb2aeb73964f923340e31bba8081"
+        },
+        {
           "source_id": "FISRC-b54b83abf2f3608c",
           "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
           "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
           "source_content_hash": "ef996bef620416ce",
           "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
           "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
-        },
-        {
-          "source_id": "FISRC-fa27e646262b9440",
-          "source_url": "https://www.prnewswire.com/news-releases/sonilo-raises-11m-to-build-the-ai-native-audio-stack-for-video-302908461.html",
-          "source_title": "Sonilo 融资 1100 万美元，为视频构建 AI 原生音频栈",
-          "source_content_hash": "1d93f371b2cc8122882f00c3311bf6a27b443818f8bb2adbf3719bb2dc278400",
-          "quote": "an $11 million funding round led by B Capital, with participation from Redpoint",
-          "quote_hash": "f3ead6b535cc5a338e962324b6a7c728f82cf55c246190d44f2f0ab6d94c1d46"
-        },
-        {
-          "source_id": "FISRC-dc8fb918b056c843",
-          "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
-          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
-          "source_content_hash": "0b4ca5291b20197e1a333b32e3a6fd462793e5829ad8645ade5f6e59221e163d",
-          "quote": "The round includes participation from new investors Bain Capital Ventures (BCV) and Redpoint.",
-          "quote_hash": "822a3945748c96e0b198b8636dc8927a98d0b6a3a62939960ae30251cac425cb"
         }
       ],
       "last_verified_at": "2026-10-04",

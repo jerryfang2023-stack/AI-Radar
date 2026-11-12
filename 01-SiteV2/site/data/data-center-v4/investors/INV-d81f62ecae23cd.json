@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,7 +61,7 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 7,
     "market_regions": [
@@ -70,10 +70,10 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-25",
-    "latest_disclosed_at": "2026-10-08",
+    "latest_disclosed_at": "2026-11-11",
     "role_counts": {
       "lead": 3,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "seed",
@@ -120,6 +120,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ccb18f5e1338dc40",
+        "funding_insight_id": "FI-70d164861fee0af8",
+        "event_ids": [
+          "EV-c3fdd52a255c0770"
+        ],
+        "company_entity_id": "EN-8da5eafb322ee86e",
+        "company_canonical_entity_id": "",
+        "company_name": "Fractile",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$720 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 720000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.2 亿美元"
+        },
+        "announced_at": "2026-11-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-59233bfbeb9628bf",
+            "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+            "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+            "source_content_hash": "97c1f5cc5dda1d68",
+            "quote": "with Accel, Conviction and Felicis returning",
+            "quote_hash": "00c80464ae9c0c8df38260964628ecf789550dec5a6366ef053e66c8cfc3061e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b42ac2034f7ca820",
         "funding_insight_id": "FI-de00acfd7c8d76c8",
@@ -411,6 +451,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-59233bfbeb9628bf",
+        "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+        "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+        "source_content_hash": "97c1f5cc5dda1d68",
+        "quote": "with Accel, Conviction and Felicis returning",
+        "quote_hash": "00c80464ae9c0c8df38260964628ecf789550dec5a6366ef053e66c8cfc3061e"
+      },
+      {
         "source_id": "FISRC-99134731fc9bfd4f",
         "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
         "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
@@ -525,6 +573,10 @@
           "source_id": "felicis_portfolio"
         },
         {
+          "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮参投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-59233bfbeb9628bf"
+        },
+        {
           "description": "融资来源记录：Arena · B轮 · 2026-10-08 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-99134731fc9bfd4f"
         },
@@ -562,6 +614,14 @@
           "quote_hash": "b9a5ee78916eb3f518f18a5938b6de0d0cfb0b5d3a89f6eee512e9971c660433"
         },
         {
+          "source_id": "FISRC-59233bfbeb9628bf",
+          "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+          "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+          "source_content_hash": "97c1f5cc5dda1d68",
+          "quote": "with Accel, Conviction and Felicis returning",
+          "quote_hash": "00c80464ae9c0c8df38260964628ecf789550dec5a6366ef053e66c8cfc3061e"
+        },
+        {
           "source_id": "FISRC-99134731fc9bfd4f",
           "source_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
           "source_title": "热门 AI 排行榜 Arena 在 10 个月内估值几乎翻倍至 $3.1B",
@@ -576,14 +636,6 @@
           "source_content_hash": "6fd7da0cbf7f6306",
           "quote": "a $30 million Series A led by Felicis",
           "quote_hash": "58e264e73bd127873513433688e7704fb3ff322bddc5ddfc22c474947b5a0fda"
-        },
-        {
-          "source_id": "FISRC-ef4e64efecd2b0f8",
-          "source_url": "https://denotepress.com/runlayer-series-a-funding/",
-          "source_title": "Runlayer Raises $30M Series A to Build the Enterprise AI Governance Layer - denotepress.com",
-          "source_content_hash": "36d67b31b12d3716",
-          "quote": "Felicis preempted the round — a strong signal of investor conviction — after having also led the company’s $11 million seed round",
-          "quote_hash": "39ca999c5b3b8fd54de07533fe179ee51e8c2ef40953f3c4e8466ebdf69f1e5b"
         }
       ],
       "last_verified_at": "2026-09-25",

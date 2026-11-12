@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,26 +61,32 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-12",
-    "latest_disclosed_at": "2026-10-04",
+    "latest_disclosed_at": "2026-11-11",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "series_b",
+      "series_c",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-8da5eafb322ee86e",
+        "canonical_entity_id": "",
+        "name": "Fractile"
+      },
       {
         "entity_id": "EN-37799d436602eaf1",
         "canonical_entity_id": "",
@@ -103,6 +109,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-174af004478eb3d4",
+        "funding_insight_id": "FI-70d164861fee0af8",
+        "event_ids": [
+          "EV-c3fdd52a255c0770"
+        ],
+        "company_entity_id": "EN-8da5eafb322ee86e",
+        "company_canonical_entity_id": "",
+        "company_name": "Fractile",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$720 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 720000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.2 亿美元"
+        },
+        "announced_at": "2026-11-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-59233bfbeb9628bf",
+            "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+            "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+            "source_content_hash": "97c1f5cc5dda1d68",
+            "quote": "New investors include CapitalG, Dragoneer, DST Global, BlackRock and T. Rowe Price",
+            "quote_hash": "82b669877030389946f1936bd42e4a16b823664f3b7bd6e7f8a2592e5e4b3d2b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ae36babad79ceb24",
         "funding_insight_id": "FI-8650a7a5be9be749",
@@ -306,6 +352,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-59233bfbeb9628bf",
+        "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+        "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+        "source_content_hash": "97c1f5cc5dda1d68",
+        "quote": "New investors include CapitalG, Dragoneer, DST Global, BlackRock and T. Rowe Price",
+        "quote_hash": "82b669877030389946f1936bd42e4a16b823664f3b7bd6e7f8a2592e5e4b3d2b"
+      },
+      {
         "source_id": "FISRC-82c9573ed9c6ba66",
         "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
         "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
@@ -369,16 +423,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮参投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-59233bfbeb9628bf"
+        },
+        {
           "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-10-04 · 本轮参投 · 21亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-82c9573ed9c6ba66"
         },
         {
           "description": "融资来源记录：Supabase · 轮次未披露 · 2026-10-02 · 本轮参投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-06b7dbbc3fab6c09"
-        },
-        {
-          "description": "融资来源记录：OpenRouter · B轮 · 2026-05-26 · 本轮领投 · $113 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d1b42068c59f51d1"
         }
       ],
       "contacts": [],
@@ -400,6 +454,14 @@
           "quote_hash": "d1f01c08b7bf92e45da97c19404e3963c55dc4d82e1e95345cbe00aecb33ade6"
         },
         {
+          "source_id": "FISRC-59233bfbeb9628bf",
+          "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+          "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+          "source_content_hash": "97c1f5cc5dda1d68",
+          "quote": "New investors include CapitalG, Dragoneer, DST Global, BlackRock and T. Rowe Price",
+          "quote_hash": "82b669877030389946f1936bd42e4a16b823664f3b7bd6e7f8a2592e5e4b3d2b"
+        },
+        {
           "source_id": "FISRC-82c9573ed9c6ba66",
           "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
           "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
@@ -414,14 +476,6 @@
           "source_content_hash": "15b4fc697a8917ac6a6fd81eb2fab30c97274ac06ffa37275cc8080eadd5fd4f",
           "quote": "with Alphabet's independent growth fund CapitalG, IronArc, and SquarePeg also participating",
           "quote_hash": "5cf6863ddbb79899792560130fa701a15baeb6ca479c35e3d6f6f768ddbe6c40"
-        },
-        {
-          "source_id": "FISRC-d1b42068c59f51d1",
-          "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
-          "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
-          "source_content_hash": "c1afd6dfb4036688",
-          "quote": "led by CapitalG, Alphabet's independent growth fund",
-          "quote_hash": "b838cf888bbc6fd04b9b0508ae0afb3c171723d0df60f19461065b6858d0ea23"
         }
       ],
       "last_verified_at": "2026-10-04",

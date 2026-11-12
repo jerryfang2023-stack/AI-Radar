@@ -1,0 +1,65 @@
+{
+  "event_id": "EV-36fdf3e0f3a097c8",
+  "company_name": "Proximal Ventures",
+  "status": "blocked",
+  "problems": [
+    "deepseek_json_quality_failed:product_form_id_missing|market_category_id_missing|market_subcategory_id_missing|market_subcategory_parent_mismatch:analysis.market_subcategory_id must use an exact key in {\"data\":\"infrastructure_compute\",\"development_deployment\":\"infrastructure_compute\",\"hardware_computing\":\"infrastructure_compute\",\"observability_evaluation\":\"infrastructure_compute\",\"customer_support\":\"enterprise_applications\",\"cyber_physical_security\":\"enterprise_applications\",\"hr\":\"enterprise_applications\",\"marketing\":\"enterprise_applications\",\"productivity_enterprise_workflows\":\"enterprise_applications\",\"sales\":\"enterprise_applications\",\"software_development_coding\":\"enterprise_applications\",\"financial_services\":\"industry_applications\",\"healthcare_life_sciences\":\"industry_applications\",\"industrials\":\"industry_applications\",\"legal\":\"industry_applications\",\"consumer_retail\":\"industry_applications\",\"education\":\"industry_applications\"}; the value is its required market_category_id. Do not copy industry_ids such as legal_services or use_case_ids such as legal_compliance into this field."
+  ],
+  "queries": [
+    "\"Proximal Ventures\" 2026 funding round investors",
+    "\"Proximal Ventures\" $27.5 million funding announcement",
+    "\"Proximal Ventures\" official product customers",
+    "\"Proximal Ventures\" \"why we invested\"",
+    "\"Proximal Ventures\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Proximal Ventures\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Proximal Ventures\" $27.5 million funding announcement",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://firstwordpharma.com/story/8409660",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://finance.yahoo.com/technology/ai/articles/proximal-ventures-announces-27-5-170000715.html",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Proximal Ventures\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Proximal Ventures\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"Proximal Ventures\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Proximal Ventures\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}

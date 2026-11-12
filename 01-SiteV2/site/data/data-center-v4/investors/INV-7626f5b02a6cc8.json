@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,20 +63,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 16,
-    "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 14,
+    "current_round_count": 18,
+    "historical_or_ambiguous_count": 4,
+    "portfolio_company_count": 16,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-05-06",
-    "latest_disclosed_at": "2026-11-09",
+    "latest_disclosed_at": "2026-11-10",
     "role_counts": {
-      "co_lead": 1,
-      "historical_or_ambiguous": 3,
-      "lead": 6,
+      "co_lead": 2,
+      "historical_or_ambiguous": 4,
+      "lead": 7,
       "participant": 9
     },
     "round_codes": [
@@ -99,6 +99,11 @@
         "entity_id": "EN-22389189b08cb05c",
         "canonical_entity_id": "",
         "name": "Ayar Labs"
+      },
+      {
+        "entity_id": "EN-4af7f3527d7863e0",
+        "canonical_entity_id": "",
+        "name": "Charta Health"
       },
       {
         "entity_id": "EN-3032646694ad17bb",
@@ -151,6 +156,11 @@
         "name": "Snorkel AI"
       },
       {
+        "entity_id": "EN-5ff78fa6a1157fcf",
+        "canonical_entity_id": "",
+        "name": "SPARETECH"
+      },
+      {
         "entity_id": "FICO-4e7a22380a00c923",
         "canonical_entity_id": "",
         "name": "Stuut"
@@ -162,6 +172,86 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-cb1833608cbc7354",
+        "funding_insight_id": "FI-4df12f9d73d6a9a3",
+        "event_ids": [
+          "EV-b97542658971c6a9"
+        ],
+        "company_entity_id": "EN-4af7f3527d7863e0",
+        "company_canonical_entity_id": "",
+        "company_name": "Charta Health",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$55 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 55000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5500 万美元"
+        },
+        "announced_at": "2026-11-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-e5678cb427ad6e69",
+            "source_url": "https://www.prnewswire.com/news-releases/charta-health-raises-55-million-series-b-to-establish-a-shared-standard-of-accuracy-in-healthcare-billing-302934401.html",
+            "source_title": "Charta Health 完成 5500 万美元 B 轮融资，旨在建立医疗账单准确性的共享标准",
+            "source_content_hash": "745052fe5fb1b81cc50c9c8709f4d34889d365592744683070a0e85a65cf7f3d",
+            "quote": "today announced a $55 million Series B round led by Insight Partners",
+            "quote_hash": "a7bc4a4870bed15b7fbba0528a69f83be96e839f2e018422a2dc8b5d220266d4"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f5f6365e79b02dde",
+        "funding_insight_id": "FI-2702b3c0fa471182",
+        "event_ids": [
+          "EV-0576fd5df6d232f9"
+        ],
+        "company_entity_id": "EN-5ff78fa6a1157fcf",
+        "company_canonical_entity_id": "",
+        "company_name": "SPARETECH",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$20 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2026-11-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-124895804c23694c",
+            "source_url": "https://www.prnewswire.com/fi/lehdistotiedotteet/sparetech-raises-20m-series-b-to-help-manufacturers-cut-industrial-spare-parts-inventory-by-60-302935084.html",
+            "source_title": "SPARETECH 完成 2000 万美元 B 轮融资，帮助制造商将工业备件库存削减 60%",
+            "source_content_hash": "f0a2a16668cb5e63863e666e10fecc43c9e7ec2cded5ba06cd1d846ca372bf09",
+            "quote": "Blume Equity and Insight Partners co-led the round, with participation from Headline.",
+            "quote_hash": "b60a47706a76628419a7ecd5c7cd0562db4db6fc054eacec48549400d5f81d43"
+          }
+        ]
+      },
       {
         "activity_id": "IA-27663e1c9ed29bfa",
         "funding_insight_id": "FI-94eaf09d128c6f03",
@@ -908,9 +998,57 @@
             "quote_hash": "ca211a78c722ca8c38527d41f26cb67e145dae43400db66839b441183ceae001"
           }
         ]
+      },
+      {
+        "activity_id": "IA-b59e698576e2eb5f",
+        "funding_insight_id": "FI-2702b3c0fa471182",
+        "event_ids": [
+          "EV-0576fd5df6d232f9"
+        ],
+        "company_entity_id": "EN-5ff78fa6a1157fcf",
+        "company_canonical_entity_id": "",
+        "company_name": "SPARETECH",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1cbf98bd7b2daf20",
+            "source_url": "https://www.insightpartners.com/ideas/sparetech-secures-series-a-funding-led-by-us-based-insight-partners-to-fuel-international-expansion/",
+            "source_title": "SPARETECH secures Series A funding led by US-based Insight Partners to fuel international expansion",
+            "source_content_hash": "740ddd6184187da3",
+            "quote": "SPARETECH, the leading data platform for industrial spare parts, raised €10M in a Series A investment round led by New York-based software investor Insight Partners with participation from Headline and existing investors to scale internationally.",
+            "quote_hash": "13dc61d2359075ae2535e017e0725a3bf390e3f9e186b1a16375b6d0b2cbdcd4"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-e5678cb427ad6e69",
+        "source_url": "https://www.prnewswire.com/news-releases/charta-health-raises-55-million-series-b-to-establish-a-shared-standard-of-accuracy-in-healthcare-billing-302934401.html",
+        "source_title": "Charta Health 完成 5500 万美元 B 轮融资，旨在建立医疗账单准确性的共享标准",
+        "source_content_hash": "745052fe5fb1b81cc50c9c8709f4d34889d365592744683070a0e85a65cf7f3d",
+        "quote": "today announced a $55 million Series B round led by Insight Partners",
+        "quote_hash": "a7bc4a4870bed15b7fbba0528a69f83be96e839f2e018422a2dc8b5d220266d4"
+      },
+      {
+        "source_id": "FISRC-124895804c23694c",
+        "source_url": "https://www.prnewswire.com/fi/lehdistotiedotteet/sparetech-raises-20m-series-b-to-help-manufacturers-cut-industrial-spare-parts-inventory-by-60-302935084.html",
+        "source_title": "SPARETECH 完成 2000 万美元 B 轮融资，帮助制造商将工业备件库存削减 60%",
+        "source_content_hash": "f0a2a16668cb5e63863e666e10fecc43c9e7ec2cded5ba06cd1d846ca372bf09",
+        "quote": "Blume Equity and Insight Partners co-led the round, with participation from Headline.",
+        "quote_hash": "b60a47706a76628419a7ecd5c7cd0562db4db6fc054eacec48549400d5f81d43"
+      },
       {
         "source_id": "FISRC-320dc636ecb880b5",
         "source_url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months",
@@ -1070,6 +1208,14 @@
         "source_content_hash": "dade3d51c0c83d5b",
         "quote": "with participation from all existing investors including Insight Partners , boldstart ventures , and Angular Ventures",
         "quote_hash": "ca211a78c722ca8c38527d41f26cb67e145dae43400db66839b441183ceae001"
+      },
+      {
+        "source_id": "FISRC-1cbf98bd7b2daf20",
+        "source_url": "https://www.insightpartners.com/ideas/sparetech-secures-series-a-funding-led-by-us-based-insight-partners-to-fuel-international-expansion/",
+        "source_title": "SPARETECH secures Series A funding led by US-based Insight Partners to fuel international expansion",
+        "source_content_hash": "740ddd6184187da3",
+        "quote": "SPARETECH, the leading data platform for industrial spare parts, raised €10M in a Series A investment round led by New York-based software investor Insight Partners with participation from Headline and existing investors to scale internationally.",
+        "quote_hash": "13dc61d2359075ae2535e017e0725a3bf390e3f9e186b1a16375b6d0b2cbdcd4"
       }
     ],
     "public_profile": {
@@ -1113,16 +1259,16 @@
           "source_id": "insight_media"
         },
         {
+          "description": "融资来源记录：Charta Health · B轮 · 2026-11-10 · 本轮领投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e5678cb427ad6e69"
+        },
+        {
+          "description": "融资来源记录：SPARETECH · B轮 · 2026-11-10 · 本轮联合领投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-124895804c23694c"
+        },
+        {
           "description": "融资来源记录：Nominal · C轮 · 2026-11-09 · 本轮联合领投 · $240 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-320dc636ecb880b5"
-        },
-        {
-          "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c4c53e6f607010be"
-        },
-        {
-          "description": "融资来源记录：Stuut · B轮 · 2026-10-07 · 本轮领投 · $52.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9c9f77e874c57759"
         }
       ],
       "contacts": [
@@ -1180,28 +1326,28 @@
           "quote_hash": "5384858027688c8f977287dfc08a527d40044033e1bf6d0114bdb609ec48472a"
         },
         {
+          "source_id": "FISRC-e5678cb427ad6e69",
+          "source_url": "https://www.prnewswire.com/news-releases/charta-health-raises-55-million-series-b-to-establish-a-shared-standard-of-accuracy-in-healthcare-billing-302934401.html",
+          "source_title": "Charta Health 完成 5500 万美元 B 轮融资，旨在建立医疗账单准确性的共享标准",
+          "source_content_hash": "745052fe5fb1b81cc50c9c8709f4d34889d365592744683070a0e85a65cf7f3d",
+          "quote": "today announced a $55 million Series B round led by Insight Partners",
+          "quote_hash": "a7bc4a4870bed15b7fbba0528a69f83be96e839f2e018422a2dc8b5d220266d4"
+        },
+        {
+          "source_id": "FISRC-124895804c23694c",
+          "source_url": "https://www.prnewswire.com/fi/lehdistotiedotteet/sparetech-raises-20m-series-b-to-help-manufacturers-cut-industrial-spare-parts-inventory-by-60-302935084.html",
+          "source_title": "SPARETECH 完成 2000 万美元 B 轮融资，帮助制造商将工业备件库存削减 60%",
+          "source_content_hash": "f0a2a16668cb5e63863e666e10fecc43c9e7ec2cded5ba06cd1d846ca372bf09",
+          "quote": "Blume Equity and Insight Partners co-led the round, with participation from Headline.",
+          "quote_hash": "b60a47706a76628419a7ecd5c7cd0562db4db6fc054eacec48549400d5f81d43"
+        },
+        {
           "source_id": "FISRC-320dc636ecb880b5",
           "source_url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months",
           "source_title": "AI硬件初创公司Nominal在8个月内估值翻三倍至$3B",
           "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
           "quote": "a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
           "quote_hash": "a66e9c1b5c766bb0b7208c185cc6fd577939d39fcae65e2411372ca398aef9f4"
-        },
-        {
-          "source_id": "FISRC-c4c53e6f607010be",
-          "source_url": "https://legora.com/blog/series-e",
-          "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
-          "source_content_hash": "f3c7efce8da1beb6",
-          "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
-          "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
-        },
-        {
-          "source_id": "FISRC-9c9f77e874c57759",
-          "source_url": "https://www.unite.ai/zh-cn/stuut-52-5m-series-b-ai-order-to-cash/",
-          "source_title": "Stuut 获得 $52.5M B 轮融资，以扩展 AI 代理在订单到收款全流程中的应用",
-          "source_content_hash": "4ff3dbe1ae5212cf86039961b0b8e2a6f259638653498858d69b63347f6abf84",
-          "quote": "由 Insight Partners领投，Andreessen Horowitz和 M12, Microsoft’s venture fund参与",
-          "quote_hash": "fb46dc0e438886ce5cc7dc6882637edf42f3bd109d1c5a4b4c59abc938797880"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1212,7 +1358,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[16].role": {
+        "activities[18].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,7 +61,7 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 6,
     "market_regions": [
@@ -70,15 +70,16 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-01-14",
-    "latest_disclosed_at": "2026-08-03",
+    "latest_disclosed_at": "2026-11-11",
     "role_counts": {
       "historical_or_ambiguous": 3,
-      "participant": 6
+      "participant": 7
     },
     "round_codes": [
       "seed",
       "series_a",
-      "series_b"
+      "series_b",
+      "series_c"
     ],
     "portfolio_companies": [
       {
@@ -113,6 +114,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c8464b8efab8d49f",
+        "funding_insight_id": "FI-70d164861fee0af8",
+        "event_ids": [
+          "EV-c3fdd52a255c0770"
+        ],
+        "company_entity_id": "EN-8da5eafb322ee86e",
+        "company_canonical_entity_id": "",
+        "company_name": "Fractile",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$720 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 720000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.2 亿美元"
+        },
+        "announced_at": "2026-11-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-59233bfbeb9628bf",
+            "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+            "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+            "source_content_hash": "97c1f5cc5dda1d68",
+            "quote": "with Accel, Conviction and Felicis returning",
+            "quote_hash": "00c80464ae9c0c8df38260964628ecf789550dec5a6366ef053e66c8cfc3061e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e87f440980924243",
         "funding_insight_id": "FI-36e2dba781b80e3a",
@@ -454,6 +495,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-59233bfbeb9628bf",
+        "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+        "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+        "source_content_hash": "97c1f5cc5dda1d68",
+        "quote": "with Accel, Conviction and Felicis returning",
+        "quote_hash": "00c80464ae9c0c8df38260964628ecf789550dec5a6366ef053e66c8cfc3061e"
+      },
+      {
         "source_id": "FISRC-3fa34b4b7b9a1a77",
         "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
         "source_title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
@@ -559,12 +608,12 @@
           "source_id": "FISRC-3fa34b4b7b9a1a77"
         },
         {
-          "description": "融资来源记录：Monogram AI, Inc. · 种子轮 · 2026-06-30 · 本轮参投 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-907e4297862ddd8c"
+          "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮参投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-59233bfbeb9628bf"
         },
         {
-          "description": "融资来源记录：Town · A轮 · 2026-06-03 · 本轮参投 · $55M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-55e5e881c734a50f"
+          "description": "融资来源记录：Monogram AI, Inc. · 种子轮 · 2026-06-30 · 本轮参投 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-907e4297862ddd8c"
         }
       ],
       "contacts": [],
@@ -594,20 +643,20 @@
           "quote_hash": "ce5ea03e28fd86c9883f2df930f3e6c84c5f888518ae8ef19b7dc7ec056191c0"
         },
         {
+          "source_id": "FISRC-59233bfbeb9628bf",
+          "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+          "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+          "source_content_hash": "97c1f5cc5dda1d68",
+          "quote": "with Accel, Conviction and Felicis returning",
+          "quote_hash": "00c80464ae9c0c8df38260964628ecf789550dec5a6366ef053e66c8cfc3061e"
+        },
+        {
           "source_id": "FISRC-907e4297862ddd8c",
           "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
           "source_title": "Monogram 获 4000 万美元种子轮融资",
           "source_content_hash": "3a584a627e1535ff",
           "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech",
           "quote_hash": "b9cc79ff3ee3d1c3099bd371810b95b959c3d159d0e36d1a13788c3e4675cda6"
-        },
-        {
-          "source_id": "FISRC-55e5e881c734a50f",
-          "source_url": "https://www.town.com/press/series-a",
-          "source_title": "Town 筹集 A 轮融资",
-          "source_content_hash": "a02636054ad1f27e705e1620296e7a68b28b8d8342a24019309d1796a1d910cb",
-          "quote": "Town has raised a $55 million Series A led by a16z, with participation from Forerunner Ventures, Alt Capital and Conviction.",
-          "quote_hash": "0123c800ff988f6b0147a82f001a067a8d110f8406f7dc125a3f8c1065a85ddf"
         }
       ],
       "last_verified_at": "2026-10-03",
@@ -618,7 +667,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[7].role": {
+        "activities[8].role": {
           "text": "Series A 参投",
           "source_hash": "594415bdfe0982734009cfb0cabab985d97ffe82e705eda46fc59f72accb1091",
           "provider": "deepseek",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,26 +61,33 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-15",
-    "latest_disclosed_at": "2026-11-05",
+    "latest_disclosed_at": "2026-11-10",
     "role_counts": {
       "co_lead": 1,
-      "participant": 2
+      "historical_or_ambiguous": 1,
+      "participant": 3
     },
     "round_codes": [
       "pre_seed",
       "seed",
+      "series_b",
       "series_d"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-4af7f3527d7863e0",
+        "canonical_entity_id": "",
+        "name": "Charta Health"
+      },
       {
         "entity_id": "EN-aa53b89e82f5c91b",
         "canonical_entity_id": "",
@@ -98,6 +105,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-932d0dfc074bbc9a",
+        "funding_insight_id": "FI-4df12f9d73d6a9a3",
+        "event_ids": [
+          "EV-b97542658971c6a9"
+        ],
+        "company_entity_id": "EN-4af7f3527d7863e0",
+        "company_canonical_entity_id": "",
+        "company_name": "Charta Health",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$55 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 55000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5500 万美元"
+        },
+        "announced_at": "2026-11-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e5678cb427ad6e69",
+            "source_url": "https://www.prnewswire.com/news-releases/charta-health-raises-55-million-series-b-to-establish-a-shared-standard-of-accuracy-in-healthcare-billing-302934401.html",
+            "source_title": "Charta Health 完成 5500 万美元 B 轮融资，旨在建立医疗账单准确性的共享标准",
+            "source_content_hash": "745052fe5fb1b81cc50c9c8709f4d34889d365592744683070a0e85a65cf7f3d",
+            "quote": "Existing investors Madrona, Bain Capital Ventures, and South Park Commons also participated, alongside QuantumLight.",
+            "quote_hash": "5ae9bf3feaac941e73806185ccc31d1968dd05322dcc1a502ccb60c4fd53d831"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d9170ee1d1bd2018",
         "funding_insight_id": "FI-bb7c7a87a4cf6fe9",
@@ -217,9 +264,49 @@
             "quote_hash": "abf17d3c7cc04d6ab46460f8938409589705dc5e1d6d0e56712e07b6a2ea602b"
           }
         ]
+      },
+      {
+        "activity_id": "IA-9b07480b431bab00",
+        "funding_insight_id": "FI-4df12f9d73d6a9a3",
+        "event_ids": [
+          "EV-b97542658971c6a9"
+        ],
+        "company_entity_id": "EN-4af7f3527d7863e0",
+        "company_canonical_entity_id": "",
+        "company_name": "Charta Health",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A 轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7b9f520a169842ef",
+            "source_url": "https://www.chartahealth.com/resources/series-a",
+            "source_title": "Charta Health raises $22M Series A to rebuild the backbone of healthcare operations with AI",
+            "source_content_hash": "2b3a7f4d71857a57",
+            "quote": "with participation from Madrona, SV Angel, Refract Ventures, and South Park Commons",
+            "quote_hash": "76c5b86e6178c0240884564b97d739616deb28262e70c47b285d0886553a91ef"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-e5678cb427ad6e69",
+        "source_url": "https://www.prnewswire.com/news-releases/charta-health-raises-55-million-series-b-to-establish-a-shared-standard-of-accuracy-in-healthcare-billing-302934401.html",
+        "source_title": "Charta Health 完成 5500 万美元 B 轮融资，旨在建立医疗账单准确性的共享标准",
+        "source_content_hash": "745052fe5fb1b81cc50c9c8709f4d34889d365592744683070a0e85a65cf7f3d",
+        "quote": "Existing investors Madrona, Bain Capital Ventures, and South Park Commons also participated, alongside QuantumLight.",
+        "quote_hash": "5ae9bf3feaac941e73806185ccc31d1968dd05322dcc1a502ccb60c4fd53d831"
+      },
       {
         "source_id": "FISRC-6cba22194a39c15c",
         "source_url": "https://entrackr.com/snippets/bio-tech-startup-venomics-ai-raises-27-mn-in-pre-seed-round-12785718",
@@ -243,6 +330,14 @@
         "source_content_hash": "8c26f4447adaeabc",
         "quote": "existing investors — including Lightspeed Venture Partners, Khosla Ventures, and South Park Commons — also participated",
         "quote_hash": "abf17d3c7cc04d6ab46460f8938409589705dc5e1d6d0e56712e07b6a2ea602b"
+      },
+      {
+        "source_id": "FISRC-7b9f520a169842ef",
+        "source_url": "https://www.chartahealth.com/resources/series-a",
+        "source_title": "Charta Health raises $22M Series A to rebuild the backbone of healthcare operations with AI",
+        "source_content_hash": "2b3a7f4d71857a57",
+        "quote": "with participation from Madrona, SV Angel, Refract Ventures, and South Park Commons",
+        "quote_hash": "76c5b86e6178c0240884564b97d739616deb28262e70c47b285d0886553a91ef"
       }
     ],
     "public_profile": {
@@ -276,6 +371,10 @@
         {
           "description": "Profound 2026 年 Series D 披露列为既有投资方。",
           "source_id": "FISRC-bed55d4f5e02a374"
+        },
+        {
+          "description": "融资来源记录：Charta Health · B轮 · 2026-11-10 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e5678cb427ad6e69"
         },
         {
           "description": "融资来源记录：Venomics AI · 预种子轮 · 2026-11-05 · 本轮联合领投 · $2.7 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -327,6 +426,14 @@
           "source_content_hash": "0c6183de84a8db88f003f7e139ed30def9e58b0ac40ddfaecbeed532299b1458",
           "quote": "pre-seed or seed investors",
           "quote_hash": "3b5515abce21495e875b3cb4b4a497b985fcf2e7d739596715f52289eb74b393"
+        },
+        {
+          "source_id": "FISRC-e5678cb427ad6e69",
+          "source_url": "https://www.prnewswire.com/news-releases/charta-health-raises-55-million-series-b-to-establish-a-shared-standard-of-accuracy-in-healthcare-billing-302934401.html",
+          "source_title": "Charta Health 完成 5500 万美元 B 轮融资，旨在建立医疗账单准确性的共享标准",
+          "source_content_hash": "745052fe5fb1b81cc50c9c8709f4d34889d365592744683070a0e85a65cf7f3d",
+          "quote": "Existing investors Madrona, Bain Capital Ventures, and South Park Commons also participated, alongside QuantumLight.",
+          "quote_hash": "5ae9bf3feaac941e73806185ccc31d1968dd05322dcc1a502ccb60c4fd53d831"
         },
         {
           "source_id": "FISRC-6cba22194a39c15c",

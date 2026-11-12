@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,25 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 7,
+    "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-24",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-11-11",
     "role_counts": {
       "historical_or_ambiguous": 3,
-      "participant": 7
+      "participant": 8
     },
     "round_codes": [
       "infrastructure",
       "ipo",
       "series_b",
+      "series_c",
       "series_d",
       "series_f",
       "undisclosed"
@@ -88,6 +89,11 @@
         "entity_id": "EN-53453cfb48a75dde",
         "canonical_entity_id": "",
         "name": "Axelera AI"
+      },
+      {
+        "entity_id": "EN-8da5eafb322ee86e",
+        "canonical_entity_id": "",
+        "name": "Fractile"
       },
       {
         "entity_id": "EN-c04bd5ebd10ab696",
@@ -121,6 +127,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b740f44480d93502",
+        "funding_insight_id": "FI-70d164861fee0af8",
+        "event_ids": [
+          "EV-c3fdd52a255c0770"
+        ],
+        "company_entity_id": "EN-8da5eafb322ee86e",
+        "company_canonical_entity_id": "",
+        "company_name": "Fractile",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$720 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 720000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.2 亿美元"
+        },
+        "announced_at": "2026-11-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-59233bfbeb9628bf",
+            "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+            "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+            "source_content_hash": "97c1f5cc5dda1d68",
+            "quote": "New investors include CapitalG, Dragoneer, DST Global, BlackRock and T. Rowe Price",
+            "quote_hash": "82b669877030389946f1936bd42e4a16b823664f3b7bd6e7f8a2592e5e4b3d2b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-dc3605785bc353e2",
         "funding_insight_id": "FI-e0e22d70a91e704e",
@@ -502,6 +548,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-59233bfbeb9628bf",
+        "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+        "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+        "source_content_hash": "97c1f5cc5dda1d68",
+        "quote": "New investors include CapitalG, Dragoneer, DST Global, BlackRock and T. Rowe Price",
+        "quote_hash": "82b669877030389946f1936bd42e4a16b823664f3b7bd6e7f8a2592e5e4b3d2b"
+      },
+      {
         "source_id": "FISRC-4d11ed62a144a3f4",
         "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
         "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
@@ -627,16 +681,16 @@
           "source_id": "blackrock_alts"
         },
         {
+          "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮参投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-59233bfbeb9628bf"
+        },
+        {
           "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4d11ed62a144a3f4"
         },
         {
           "description": "融资来源记录：NVIDIA · 基础设施融资 · 2026-08-15 · 本轮参投 · 超过 5000 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5514041be03e64ae"
-        },
-        {
-          "description": "融资来源记录：SambaNova Systems · F轮 · 2026-07-08 · 本轮参投（新进或既有） · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dbf8259066547c8e"
         }
       ],
       "contacts": [
@@ -703,6 +757,14 @@
           "quote_hash": "2400755af3b5a43dcabe91f90d979f6c095b748d7d54cb89a1307a2097de8970"
         },
         {
+          "source_id": "FISRC-59233bfbeb9628bf",
+          "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+          "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+          "source_content_hash": "97c1f5cc5dda1d68",
+          "quote": "New investors include CapitalG, Dragoneer, DST Global, BlackRock and T. Rowe Price",
+          "quote_hash": "82b669877030389946f1936bd42e4a16b823664f3b7bd6e7f8a2592e5e4b3d2b"
+        },
+        {
           "source_id": "FISRC-4d11ed62a144a3f4",
           "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
           "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
@@ -717,14 +779,6 @@
           "source_content_hash": "281ec3c5199ae992",
           "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
           "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
-        },
-        {
-          "source_id": "FISRC-dbf8259066547c8e",
-          "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
-          "source_title": "AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月",
-          "source_content_hash": "e79999ca03a0833e",
-          "quote": "New and existing investors also joined, including A&E Investment, Assam Ventures, Battery Ventures, Cambium Capital, BlackRock",
-          "quote_hash": "310e75a9d79188e2fb316a41ddab0afb6e75cdd365f3729b6a4e07f3e74098d3"
         }
       ],
       "identity_status": "verified"

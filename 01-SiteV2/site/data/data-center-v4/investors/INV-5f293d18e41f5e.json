@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
+    "current_round_count": 9,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 8,
+    "portfolio_company_count": 9,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-06-28",
-    "latest_disclosed_at": "2026-10-15",
+    "latest_disclosed_at": "2026-11-11",
     "role_counts": {
-      "co_lead": 2,
+      "co_lead": 3,
       "historical_or_ambiguous": 1,
       "lead": 3,
       "participant": 3
@@ -81,6 +81,7 @@
       "seed",
       "series_a",
       "series_b",
+      "series_c",
       "series_d",
       "series_f",
       "undisclosed"
@@ -90,6 +91,11 @@
         "entity_id": "EN-77a82bb9aafc81d9",
         "canonical_entity_id": "",
         "name": "Ellis AI"
+      },
+      {
+        "entity_id": "EN-8da5eafb322ee86e",
+        "canonical_entity_id": "",
+        "name": "Fractile"
       },
       {
         "entity_id": "EN-37799d436602eaf1",
@@ -128,6 +134,54 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-69d187695a3f52e2",
+        "funding_insight_id": "FI-70d164861fee0af8",
+        "event_ids": [
+          "EV-c3fdd52a255c0770"
+        ],
+        "company_entity_id": "EN-8da5eafb322ee86e",
+        "company_canonical_entity_id": "",
+        "company_name": "Fractile",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$720 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 720000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.2 亿美元"
+        },
+        "announced_at": "2026-11-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-038f46a4355e8569",
+            "source_url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips",
+            "source_title": "英国 Fractile 完成 7.2 亿美元融资，在 AI 芯片竞赛中占据优势",
+            "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+            "quote": "its latest round led by Thrive Capital, Founders Fund, Lightspeed Venture Partners, and Redpoint",
+            "quote_hash": "69677c9cff11085d84c536d1d997465dcc1993802f7000b442656da6b4011cf8"
+          },
+          {
+            "source_id": "FISRC-59233bfbeb9628bf",
+            "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+            "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+            "source_content_hash": "97c1f5cc5dda1d68",
+            "quote": "Thrive Capital, Founders Fund, Lightspeed and Redpoint co-led the round.",
+            "quote_hash": "ea6bb384a47cf21cbbbf5c4cf629c2d466cddb2aeb73964f923340e31bba8081"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a483aaccc5c5a53a",
         "funding_insight_id": "FI-49e5e02e3f1e2d52",
@@ -499,6 +553,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-038f46a4355e8569",
+        "source_url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips",
+        "source_title": "英国 Fractile 完成 7.2 亿美元融资，在 AI 芯片竞赛中占据优势",
+        "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+        "quote": "its latest round led by Thrive Capital, Founders Fund, Lightspeed Venture Partners, and Redpoint",
+        "quote_hash": "69677c9cff11085d84c536d1d997465dcc1993802f7000b442656da6b4011cf8"
+      },
+      {
+        "source_id": "FISRC-59233bfbeb9628bf",
+        "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+        "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+        "source_content_hash": "97c1f5cc5dda1d68",
+        "quote": "Thrive Capital, Founders Fund, Lightspeed and Redpoint co-led the round.",
+        "quote_hash": "ea6bb384a47cf21cbbbf5c4cf629c2d466cddb2aeb73964f923340e31bba8081"
+      },
+      {
         "source_id": "FISRC-f581afce52cf5bef",
         "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
         "source_title": "Ramp估值达600亿美元，深入布局AI",
@@ -611,16 +681,12 @@
       "experience_summary": "官网公开内容支持其为科技领域投资机构，并提供一般联络渠道；未从第三方报道推断未披露的基金规模、个人履历或回报表现。",
       "track_record": [
         {
+          "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮联合领投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-038f46a4355e8569"
+        },
+        {
           "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮联合领投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f581afce52cf5bef"
-        },
-        {
-          "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-10-04 · 本轮领投 · 21亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-82c9573ed9c6ba66"
-        },
-        {
-          "description": "融资来源记录：Ellis AI · 种子轮 · 2026-07-31 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a8e6dd6c34cd416a"
         }
       ],
       "contacts": [
@@ -664,28 +730,28 @@
           "quote_hash": "bf8f75c2a6fb056494a728ec92284b1773f900b34abf39f6e24f5a9f07235291"
         },
         {
+          "source_id": "FISRC-038f46a4355e8569",
+          "source_url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips",
+          "source_title": "英国 Fractile 完成 7.2 亿美元融资，在 AI 芯片竞赛中占据优势",
+          "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+          "quote": "its latest round led by Thrive Capital, Founders Fund, Lightspeed Venture Partners, and Redpoint",
+          "quote_hash": "69677c9cff11085d84c536d1d997465dcc1993802f7000b442656da6b4011cf8"
+        },
+        {
+          "source_id": "FISRC-59233bfbeb9628bf",
+          "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+          "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+          "source_content_hash": "97c1f5cc5dda1d68",
+          "quote": "Thrive Capital, Founders Fund, Lightspeed and Redpoint co-led the round.",
+          "quote_hash": "ea6bb384a47cf21cbbbf5c4cf629c2d466cddb2aeb73964f923340e31bba8081"
+        },
+        {
           "source_id": "FISRC-f581afce52cf5bef",
           "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
           "source_title": "Ramp估值达600亿美元，深入布局AI",
           "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
           "quote": "The financing was co-led by Dragoneer Investment Group, Thrive Capital, Founders Fund, Sands Capital, and Avenir Growth.",
           "quote_hash": "f51f43c20ed94c008d5eb4b1abbcb23d26adeb696bc7b69f874cef8d31d80d73"
-        },
-        {
-          "source_id": "FISRC-82c9573ed9c6ba66",
-          "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
-          "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
-          "source_content_hash": "e6bdf28f1eee82d0",
-          "quote": "The financing round is led by Thrive Capital",
-          "quote_hash": "cdabba8b4566aec3cc073ed6f6d1c50abe8fd84672aa16575c2fb769ba74d4be"
-        },
-        {
-          "source_id": "FISRC-a8e6dd6c34cd416a",
-          "source_url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/",
-          "source_title": "连续创业者Ryan Williams为面向私募信贷经理的AI初创公司筹集1000万美元种子资金",
-          "source_content_hash": "dd828ac38a132ac1",
-          "quote": "Ellis AI announced Thursday its emergence from stealth with $10 million in seed funding from investors including First Round Capital, 645 Ventures, Harlem Capital, Khosla Ventures, Thrive Capital, Slow Capital, Kearny Jackson, and Ariel Alternatives CEO Mellody Hobson.",
-          "quote_hash": "eab59ac0f81b233b7afca4c7418c7f27f758e3941c5b036a0a3aaacc91fd0d58"
         }
       ],
       "last_verified_at": "2026-09-26",

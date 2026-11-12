@@ -1,0 +1,1082 @@
+{
+  "event_id": "EV-c3fdd52a255c0770",
+  "company_name": "Fractile",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-1ef73a5c1fe2a304",
+    "triggered_by_event_id": "EV-c3fdd52a255c0770",
+    "as_of_date": "2026-11-12",
+    "company": {
+      "entity_id": "EN-8da5eafb322ee86e",
+      "name": "Fractile",
+      "full_name": "Fractile",
+      "website": "https://fractile.ai/",
+      "summary": "英国AI芯片初创公司，自称“chip-first frontier AI company”，设计面向大模型推理的芯片与系统，并配套机器学习编译器，以提升LLM在其芯片上的执行速度。",
+      "headquarters": "London, United Kingdom",
+      "founders": [
+        {
+          "name": "Walter Goodwin",
+          "role": "创始人兼CEO",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "Walter Goodwin founded Fractile in 2022 as a PhD student at Oxford's Robotics Institute.",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "ec936d13576744dcfd9cd2cc75d024142c438a45876b6ad7df874c88cf380b9a"
+            },
+            {
+              "source_id": "FISRC-038f46a4355e8569",
+              "quote": "In a LinkedIn post, Fractile CEO Walter Goodwin wrote",
+              "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+              "quote_hash": "73397b9483f1abffe04ebcfa2e82c6865a4a0d11bdb0f253c584c4aee7fc7ffa"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "team_size": {
+        "value": "",
+        "observed_at": "",
+        "evidence_refs": []
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-59233bfbeb9628bf",
+          "quote": "London- and Bristol-based Fractile has raised a $720 million Series C",
+          "source_content_hash": "97c1f5cc5dda1d68",
+          "quote_hash": "4745a595a2293955c8119aec5cecf23ad82a2f10e0b41299ceb8bd4c26e5805a"
+        }
+      ],
+      "application_entity_id": "EN-8da5eafb322ee86e",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "C轮",
+      "amount": "$720 million",
+      "total_raised": "",
+      "announced_at": "2026-11-11",
+      "investor_disclosure_status": "disclosed",
+      "investors": [
+        {
+          "name": "Thrive Capital",
+          "role": "本轮联合领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-038f46a4355e8569",
+              "quote": "its latest round led by Thrive Capital, Founders Fund, Lightspeed Venture Partners, and Redpoint",
+              "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+              "quote_hash": "69677c9cff11085d84c536d1d997465dcc1993802f7000b442656da6b4011cf8"
+            },
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "Thrive Capital, Founders Fund, Lightspeed and Redpoint co-led the round.",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "ea6bb384a47cf21cbbbf5c4cf629c2d466cddb2aeb73964f923340e31bba8081"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Founders Fund",
+          "role": "本轮联合领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-038f46a4355e8569",
+              "quote": "its latest round led by Thrive Capital, Founders Fund, Lightspeed Venture Partners, and Redpoint",
+              "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+              "quote_hash": "69677c9cff11085d84c536d1d997465dcc1993802f7000b442656da6b4011cf8"
+            },
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "Thrive Capital, Founders Fund, Lightspeed and Redpoint co-led the round.",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "ea6bb384a47cf21cbbbf5c4cf629c2d466cddb2aeb73964f923340e31bba8081"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Lightspeed Venture Partners",
+          "role": "本轮联合领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-038f46a4355e8569",
+              "quote": "its latest round led by Thrive Capital, Founders Fund, Lightspeed Venture Partners, and Redpoint",
+              "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+              "quote_hash": "69677c9cff11085d84c536d1d997465dcc1993802f7000b442656da6b4011cf8"
+            },
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "Thrive Capital, Founders Fund, Lightspeed and Redpoint co-led the round.",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "ea6bb384a47cf21cbbbf5c4cf629c2d466cddb2aeb73964f923340e31bba8081"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Redpoint",
+          "role": "本轮联合领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-038f46a4355e8569",
+              "quote": "its latest round led by Thrive Capital, Founders Fund, Lightspeed Venture Partners, and Redpoint",
+              "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+              "quote_hash": "69677c9cff11085d84c536d1d997465dcc1993802f7000b442656da6b4011cf8"
+            },
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "Thrive Capital, Founders Fund, Lightspeed and Redpoint co-led the round.",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "ea6bb384a47cf21cbbbf5c4cf629c2d466cddb2aeb73964f923340e31bba8081"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "CapitalG",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "New investors include CapitalG, Dragoneer, DST Global, BlackRock and T. Rowe Price",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "82b669877030389946f1936bd42e4a16b823664f3b7bd6e7f8a2592e5e4b3d2b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Dragoneer",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "New investors include CapitalG, Dragoneer, DST Global, BlackRock and T. Rowe Price",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "82b669877030389946f1936bd42e4a16b823664f3b7bd6e7f8a2592e5e4b3d2b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "DST Global",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "New investors include CapitalG, Dragoneer, DST Global, BlackRock and T. Rowe Price",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "82b669877030389946f1936bd42e4a16b823664f3b7bd6e7f8a2592e5e4b3d2b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "BlackRock",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "New investors include CapitalG, Dragoneer, DST Global, BlackRock and T. Rowe Price",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "82b669877030389946f1936bd42e4a16b823664f3b7bd6e7f8a2592e5e4b3d2b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "T. Rowe Price",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "New investors include CapitalG, Dragoneer, DST Global, BlackRock and T. Rowe Price",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "82b669877030389946f1936bd42e4a16b823664f3b7bd6e7f8a2592e5e4b3d2b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Accel",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "with Accel, Conviction and Felicis returning",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "00c80464ae9c0c8df38260964628ecf789550dec5a6366ef053e66c8cfc3061e"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Conviction",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "with Accel, Conviction and Felicis returning",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "00c80464ae9c0c8df38260964628ecf789550dec5a6366ef053e66c8cfc3061e"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Felicis",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "with Accel, Conviction and Felicis returning",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "00c80464ae9c0c8df38260964628ecf789550dec5a6366ef053e66c8cfc3061e"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Bain Capital Ventures",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "Bain Capital Ventures, Shopify Ventures, Balderton, Elad Gil and SV Angel also took part.",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "d6815603f40ff173008fb682219c21f18b3981f5af0a1f231df3287bedead2c2"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Shopify Ventures",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "Bain Capital Ventures, Shopify Ventures, Balderton, Elad Gil and SV Angel also took part.",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "d6815603f40ff173008fb682219c21f18b3981f5af0a1f231df3287bedead2c2"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Balderton",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "Bain Capital Ventures, Shopify Ventures, Balderton, Elad Gil and SV Angel also took part.",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "d6815603f40ff173008fb682219c21f18b3981f5af0a1f231df3287bedead2c2"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Elad Gil",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "Bain Capital Ventures, Shopify Ventures, Balderton, Elad Gil and SV Angel also took part.",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "d6815603f40ff173008fb682219c21f18b3981f5af0a1f231df3287bedead2c2"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "SV Angel",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "Bain Capital Ventures, Shopify Ventures, Balderton, Elad Gil and SV Angel also took part.",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "d6815603f40ff173008fb682219c21f18b3981f5af0a1f231df3287bedead2c2"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Sovereign AI Venture Fund",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "The UK government's Sovereign AI Venture Fund and the British Business Bank invested in what the government called a round worth more than £500 million",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "37b78ea3b64fdc0a9ca613b50fd3c06cf458702c94e659c78bd3324d1dbc5048"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "British Business Bank",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "The UK government's Sovereign AI Venture Fund and the British Business Bank invested in what the government called a round worth more than £500 million",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "37b78ea3b64fdc0a9ca613b50fd3c06cf458702c94e659c78bd3324d1dbc5048"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "other_round_investors": [
+        {
+          "name": "Factorial Funds",
+          "role": "Series B领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1978b968cc5f83b6",
+              "quote": "raised $220 million in a Series B funding round led by Accel, Factorial Funds, and Founders Fund",
+              "source_content_hash": "79657c2f5b59fd03",
+              "quote_hash": "31735f23f725f6baf8dd12dac61c0000d268d3a4fa529ec38efde280bd135a69"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Kindred Capital",
+          "role": "种子轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1978b968cc5f83b6",
+              "quote": "Kindred Capital (lead); NATO Innovation Fund (lead); Oxford Science Enterprises (lead)",
+              "source_content_hash": "79657c2f5b59fd03",
+              "quote_hash": "cc671758505d7a974bac56eb469e4cef2a7ebd3bb81b12540d6607a108c7da6a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "NATO Innovation Fund",
+          "role": "种子轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1978b968cc5f83b6",
+              "quote": "Kindred Capital (lead); NATO Innovation Fund (lead); Oxford Science Enterprises (lead)",
+              "source_content_hash": "79657c2f5b59fd03",
+              "quote_hash": "cc671758505d7a974bac56eb469e4cef2a7ebd3bb81b12540d6607a108c7da6a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Oxford Science Enterprises",
+          "role": "种子轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1978b968cc5f83b6",
+              "quote": "Kindred Capital (lead); NATO Innovation Fund (lead); Oxford Science Enterprises (lead)",
+              "source_content_hash": "79657c2f5b59fd03",
+              "quote_hash": "cc671758505d7a974bac56eb469e4cef2a7ebd3bb81b12540d6607a108c7da6a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-038f46a4355e8569",
+          "quote": "Fractile, a British startup developing AI chips, has raised a $720 million Series C backed by Britain’s Sovereign AI Fund",
+          "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+          "quote_hash": "be28e6db603033be21e5f663845e497b3ae85dab2932b6d7d5f87d3108571c42"
+        },
+        {
+          "source_id": "FISRC-59233bfbeb9628bf",
+          "quote": "London- and Bristol-based Fractile has raised a $720 million Series C at a $7 billion post-money valuation",
+          "source_content_hash": "97c1f5cc5dda1d68",
+          "quote_hash": "9b70e9666316713378f18025b3bc0b1ec9ebbd765f014c203b55c1c0e315dce0"
+        }
+      ],
+      "round_code": "series_c",
+      "round_original": "C轮",
+      "amount_original": "$720 million",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 720000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "7.2 亿美元"
+      },
+      "total_raised_original": "",
+      "total_raised_normalized": {
+        "currency": "",
+        "value": null,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "undisclosed",
+        "display_zh": ""
+      },
+      "risk_markers": [],
+      "disclosures": [
+        {
+          "event_id": "EV-c3fdd52a255c0770",
+          "round_original": "C轮",
+          "amount": "$720 million",
+          "announced_at": "2026-11-11",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-038f46a4355e8569",
+              "quote": "Fractile, a British startup developing AI chips, has raised a $720 million Series C backed by Britain’s Sovereign AI Fund",
+              "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+              "quote_hash": "be28e6db603033be21e5f663845e497b3ae85dab2932b6d7d5f87d3108571c42"
+            },
+            {
+              "source_id": "FISRC-59233bfbeb9628bf",
+              "quote": "London- and Bristol-based Fractile has raised a $720 million Series C at a $7 billion post-money valuation",
+              "source_content_hash": "97c1f5cc5dda1d68",
+              "quote_hash": "9b70e9666316713378f18025b3bc0b1ec9ebbd765f014c203b55c1c0e315dce0"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "disclosed"
+    },
+    "products": [
+      {
+        "name": "AI推理芯片与机架级系统",
+        "description": "设计推理芯片及机架级系统，将DRAM直接堆叠在逻辑芯片之上，以提升内存带宽与容量，面向大模型推理场景。",
+        "target_customers": "大模型与AI推理基础设施客户",
+        "features": [
+          "DRAM堆叠于逻辑芯片之上",
+          "面向推理而非训练",
+          "机架级系统形态"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-59233bfbeb9628bf",
+            "quote": "It designs inference chips and rack-scale systems that stack DRAM directly on top of the logic",
+            "source_content_hash": "97c1f5cc5dda1d68",
+            "quote_hash": "a928ed4b55f11c168fd7eb4f84f7e6bf56ce0e4861c062fe7f6e197c073421d9"
+          },
+          {
+            "source_id": "FISRC-038f46a4355e8569",
+            "quote": "its approach now revolves on DRAM, the most common type of RAM, but stacked on top of each chip",
+            "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+            "quote_hash": "95d695635824cb86e26f9ad59603fd918c2980e79b69c1d186e062261a9b32e5"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "机器学习编译器",
+        "description": "配套的机器学习编译器，用于最大化LLM在其芯片上的执行速度，构成全栈方案的一部分。",
+        "target_customers": "使用其芯片运行LLM的客户",
+        "features": [
+          "全栈方案组成部分",
+          "优化LLM执行速度"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-038f46a4355e8569",
+            "quote": "a full-stack approach that also includes a machine learning compiler to maximize the speed at which LLMs will get executed on its chips",
+            "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+            "quote_hash": "b03546850cc07dd69f5c02983fd15ddd179f69fe27d8bf1f82eb3955bd97b915"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [],
+    "comparisons": [
+      {
+        "name": "Etched",
+        "product": "Sohu架构推理芯片与机架级系统",
+        "scenario": "大模型推理",
+        "target_customer": "云服务商、模型开发者与企业客户",
+        "funding_summary": "",
+        "core_difference": "Fractile采用DRAM堆叠于逻辑芯片之上的设计并配套机器学习编译器；Etched的Sohu架构专为transformer推理设计，并协同设计互连、内存、冷却与软件。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-038f46a4355e8569",
+            "quote": "Alongside the likes of Axelera, Etched, and OLIX, this makes Fractile one of the top-funded startup players in the race for purpose-built AI chips.",
+            "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+            "quote_hash": "e2eb27e29fd92c5d800031c281d1a00b1c0a078340a59c1c5a8a50a361fc53b7"
+          },
+          {
+            "source_id": "FISRC-1978b968cc5f83b6",
+            "quote": "The company's Sohu architecture is designed specifically for transformer inference rather than general-purpose graphics processing.",
+            "source_content_hash": "79657c2f5b59fd03",
+            "quote_hash": "ae890e720a10e5575993a6a36489d16b7cc0fca0786bc258de30c84c550095b0"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Axelera",
+        "product": "专用AI芯片",
+        "scenario": "AI推理",
+        "target_customer": "",
+        "funding_summary": "",
+        "core_difference": "来源仅将Axelera列为专用AI芯片竞赛中资金最充足的初创公司之一，未披露其产品细节，无法逐字段比较。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-038f46a4355e8569",
+            "quote": "Alongside the likes of Axelera, Etched, and OLIX, this makes Fractile one of the top-funded startup players in the race for purpose-built AI chips.",
+            "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+            "quote_hash": "e2eb27e29fd92c5d800031c281d1a00b1c0a078340a59c1c5a8a50a361fc53b7"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "OLIX",
+        "product": "专用AI芯片",
+        "scenario": "AI推理",
+        "target_customer": "",
+        "funding_summary": "",
+        "core_difference": "来源仅将OLIX列为专用AI芯片竞赛中资金最充足的初创公司之一，未披露其产品细节，无法逐字段比较。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-038f46a4355e8569",
+            "quote": "Alongside the likes of Axelera, Etched, and OLIX, this makes Fractile one of the top-funded startup players in the race for purpose-built AI chips.",
+            "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+            "quote_hash": "e2eb27e29fd92c5d800031c281d1a00b1c0a078340a59c1c5a8a50a361fc53b7"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "metrics": [
+      {
+        "label": "本轮融资金额",
+        "value": "$720 million",
+        "observed_at": "2026-11-11",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-038f46a4355e8569",
+            "quote": "has raised a $720 million Series C",
+            "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+            "quote_hash": "dabffabf80fc27eb29ebfabe47375463a6dcada4fe89cfb5189c041b02ae0ece"
+          }
+        ]
+      },
+      {
+        "label": "投后估值",
+        "value": "$7 billion",
+        "observed_at": "2026-11-11",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-59233bfbeb9628bf",
+            "quote": "has raised a $720 million Series C at a $7 billion post-money valuation",
+            "source_content_hash": "97c1f5cc5dda1d68",
+            "quote_hash": "f53fded851423aeec18d1052358e644177faeb4243b2717ec75fbf7f0fbf3053"
+          }
+        ]
+      },
+      {
+        "label": "英国政府口径估值",
+        "value": "over £5 billion",
+        "observed_at": "2026-11-11",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-038f46a4355e8569",
+            "quote": "the valuation was “over £5 billion”",
+            "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+            "quote_hash": "4120c4be0f4ea130bf17cc77c59f18d22f530660eeaca41b7302084d4a675a0b"
+          }
+        ]
+      },
+      {
+        "label": "上一轮融资金额",
+        "value": "$220 million",
+        "observed_at": "2026-05",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-59233bfbeb9628bf",
+            "quote": "In May, Fractile raised $220 million at a valuation of about $1 billion.",
+            "source_content_hash": "97c1f5cc5dda1d68",
+            "quote_hash": "53dd9bde923faaef5dd6cd37c7bcf98ea16ffaae7f9feb4f1275cb9fc87eaa16"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Walter Goodwin",
+        "quote": "there is still a lot of work ahead",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-038f46a4355e8569",
+            "quote": "there is still a lot of work ahead",
+            "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+            "quote_hash": "d91345076310f0ef700fd928a1fe01d9d2fe7bd973f675b7a06acc3b780f6923"
+          }
+        ]
+      },
+      {
+        "speaker": "Walter Goodwin",
+        "quote": "ship [its] first chips and systems next year",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-038f46a4355e8569",
+            "quote": "ship [its] first chips and systems next year",
+            "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+            "quote_hash": "689e6bee21f3fed7b1d54a9f4fdba6ff7ceb04a8d56553850d14ddddb4aee78f"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "资本押注的核心变量是Fractile能否用DRAM堆叠于逻辑芯片之上的设计，在推理场景中同时解决内存带宽与容量约束，并以全栈编译器兑现速度优势。当前$720 million Series C对应约$7 billion投后估值（英国政府口径为超过£5 billion），所依赖的已验证信号主要是大额融资本身、英国主权基金与多家机构参与，以及公司自述的全栈芯片与系统路线；但公司尚未出货量产芯片，首款芯片与系统计划“next year”推出，平台放量目标为2027年下半年，因此估值更多反映对未交付硬件的预期而非已实现收入。",
+      "validated_signals": [
+        "完成$720 million Series C，投后估值约$7 billion",
+        "英国主权AI基金与British Business Bank参与本轮",
+        "公司自述以DRAM堆叠于逻辑芯片之上的推理芯片与机架级系统为核心路线"
+      ],
+      "risks": [
+        "Fractile尚未出货量产芯片，首款芯片与系统仍待交付",
+        "平台放量目标为2027年下半年，商业化时点存在不确定性",
+        "与Anthropic的早期客户意向及此前约$250 million芯片供应协议均未获双方确认",
+        "Nvidia仍主导AI算力市场，专用推理芯片的采用路径尚未验证"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "chip_accelerator",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "sector": "AI推理芯片与机架级系统设计",
+      "investment_thesis": {
+        "statement": "资本押注的核心变量是Fractile能否用DRAM堆叠于逻辑芯片之上的设计，在推理场景中同时解决内存带宽与容量约束，并以全栈编译器兑现速度优势。当前$720 million Series C对应约$7 billion投后估值（英国政府口径为超过£5 billion），所依赖的已验证信号主要是大额融资本身、英国主权基金与多家机构参与，以及公司自述的全栈芯片与系统路线；但公司尚未出货量产芯片，首款芯片与系统计划“next year”推出，平台放量目标为2027年下半年，因此估值更多反映对未交付硬件的预期而非已实现收入。",
+        "evidence_signals": [
+          "完成$720 million Series C，投后估值约$7 billion",
+          "英国主权AI基金与British Business Bank参与本轮",
+          "公司自述以DRAM堆叠于逻辑芯片之上的推理芯片与机架级系统为核心路线"
+        ],
+        "risks": [
+          "Fractile尚未出货量产芯片，首款芯片与系统仍待交付",
+          "平台放量目标为2027年下半年，商业化时点存在不确定性",
+          "与Anthropic的早期客户意向及此前约$250 million芯片供应协议均未获双方确认",
+          "Nvidia仍主导AI算力市场，专用推理芯片的采用路径尚未验证"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "AI推理芯片与机架级系统",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "机器学习编译器",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Walter Goodwin",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Thrive Capital",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Founders Fund",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Lightspeed Venture Partners",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Redpoint",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "CapitalG",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Dragoneer",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "DST Global",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "BlackRock",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "T. Rowe Price",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Accel",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Conviction",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Felicis",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Bain Capital Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Shopify Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Balderton",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Elad Gil",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "SV Angel",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Sovereign AI Venture Fund",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "British Business Bank",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Factorial Funds",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Kindred Capital",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "NATO Innovation Fund",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Oxford Science Enterprises",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "Etched",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "Axelera",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "OLIX",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-c3fdd52a255c0770",
+        "date": "2026-11-11",
+        "title": "英国 Fractile 完成 7.2 亿美元融资，在 AI 芯片竞赛中占据优势",
+        "amount": "$720 million",
+        "source_refs": [
+          "SA-c79f9a8c478d45d6"
+        ]
+      },
+      {
+        "event_id": "EV-70a994b9339f92e7",
+        "date": "2026-05-23",
+        "title": "Fractile 融资2.2亿美元，打造下一代推理硬件",
+        "amount": "$220M",
+        "source_refs": [
+          "SA-8cb198de0dd42cde"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-038f46a4355e8569",
+        "source_url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips",
+        "title": "英国 Fractile 完成 7.2 亿美元融资，在 AI 芯片竞赛中占据优势",
+        "publisher": "techcrunch.com",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-11-12T00:20:06.609Z",
+        "content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+        "source_artifact_id": "SA-c79f9a8c478d45d6",
+        "raw_id": "RAW-dbeace3c27d5a200"
+      },
+      {
+        "source_id": "FISRC-59233bfbeb9628bf",
+        "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+        "title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+        "publisher": "dealroom.co",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-11-12T00:52:40.669Z",
+        "content_hash": "97c1f5cc5dda1d68",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-1978b968cc5f83b6",
+        "source_url": "https://multiples.vc/private-comps/fractile",
+        "title": "Fractile Valuation, Funding & Investors | Multiples",
+        "publisher": "multiples.vc",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-11-12T00:52:47.751Z",
+        "content_hash": "79657c2f5b59fd03",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-11-12T00:52:59.882Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-11-12T00:52:59.882Z",
+    "customer_research": {
+      "status": "no_verified_customer_found",
+      "verified_customer_count": 0,
+      "searched_source_count": 3
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 2,
+        "unresolved_names": [
+          "AI推理芯片与机架级系统",
+          "机器学习编译器"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 1,
+        "unresolved_names": [
+          "Walter Goodwin"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-c3fdd52a255c0770"
+    ],
+    "aggregation": {
+      "key": "EN-8da5eafb322ee86e|series_c",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"Fractile\" 2026 funding round investors",
+    "\"Fractile\" official product customers",
+    "\"Fractile\" \"why we invested\"",
+    "\"Fractile\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Fractile\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.balderton.com/news/fractile-raises-720m-to-build-the-hardware-that-pushes-ais-frontier-forward/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.instagram.com/p/DfmwKH2jF-W/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://tracxn.com/d/companies/fractile/__k-OnRlFgeVcMsdrHJ65_XSoCGSoqXnXA7UJbFTS0nsA/funding-and-investors",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.reuters.com/legal/transactional/uk-backed-ai-chip-startup-fractile-hits-7-billion-valuation-funding-round-2026-11-11/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://finance.yahoo.com/technology/ai/articles/720m-round-britain-fractile-gets-193455349.html",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://sifted.eu/articles/fractile-confirms-540m-raise-first-revealed-by-sifted",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.ft.com/content/f999a0c2-af52-499f-8008-accbdfd45a25?syn-25a6b1a6=1",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Fractile\" $720 million funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Fractile\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Fractile\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"Fractile\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Fractile\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.datacenterdynamics.com/en/news/fractile-raises-220m-to-accelerate-development-of-ai-inference-chips/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://tracxn.com/d/companies/fractile/__k-OnRlFgeVcMsdrHJ65_XSoCGSoqXnXA7UJbFTS0nsA",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    }
+  ]
+}

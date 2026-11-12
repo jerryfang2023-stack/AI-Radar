@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-c3fdd52a255c0770",
       "EV-70a994b9339f92e7"
     ],
     "viewpointIds": [],
@@ -76,10 +77,11 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-05-23",
-    "lastSeen": "2026-05-23",
+    "lastSeen": "2026-11-12",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-c3fdd52a255c0770",
         "EV-70a994b9339f92e7"
       ],
       "deployments": [],
@@ -90,6 +92,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-c3fdd52a255c0770",
+        "dataDate": "2026-11-12",
+        "date": "2026-11-11",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "英国 Fractile 完成 7.2 亿美元融资，在 AI 芯片竞赛中占据优势",
+        "displayTags": [],
+        "entityIds": [
+          "EN-8da5eafb322ee86e"
+        ]
+      },
       {
         "id": "EV-70a994b9339f92e7",
         "dataDate": "2026-05-23",
@@ -881,7 +898,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-12"
     },
     {
       "id": "TX-product_form-chip_accelerator",

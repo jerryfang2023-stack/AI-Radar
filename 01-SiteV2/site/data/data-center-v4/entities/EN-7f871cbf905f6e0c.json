@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -78,6 +78,7 @@
       "EV-cf6e7a2edad82c6f",
       "EV-0e84a2f49d765ce3",
       "EV-d85ea5150230ee56",
+      "EV-be0ef85ed5f05179",
       "EV-d56a4707a2456970",
       "EV-a474530ccf6cd872",
       "EV-eb3b431d4ce98ec5",
@@ -106,7 +107,7 @@
       "EN-779965438dd9e7a7"
     ],
     "firstSeen": "2026-05-28",
-    "lastSeen": "2026-10-28",
+    "lastSeen": "2026-11-12",
     "relationIds": [
       "REL2-eaf27cde7b70ddb9"
     ],
@@ -131,6 +132,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-be0ef85ed5f05179",
         "EV-d56a4707a2456970",
         "EV-a474530ccf6cd872",
         "EV-eb3b431d4ce98ec5",
@@ -152,6 +154,33 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-be0ef85ed5f05179",
+        "dataDate": "2026-11-12",
+        "date": "2026-11-12",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "全球最大 AI 聚合平台 OpenRouter 正式并入 Stripe：将优化词元路由和用量",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model_api_service",
+            "name": "模型 API 服务",
+            "entityIds": [
+              "EN-7f871cbf905f6e0c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-7f871cbf905f6e0c"
+        ]
+      },
       {
         "id": "EV-d56a4707a2456970",
         "dataDate": "2026-10-28",
@@ -1923,7 +1952,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-12"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -3400,6 +3429,7 @@
         "EV-83fe0f7ca48a8550",
         "EV-31df816db86db282",
         "EV-535c2f4fb851332d",
+        "EV-be0ef85ed5f05179",
         "EV-46cd64a76d3767f5",
         "EV-e42e55d1e11a2ba2",
         "EV-ab3586268ebfab38",
@@ -3430,7 +3460,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-10-02"
+      "lastSeen": "2026-11-12"
     },
     {
       "id": "TX-ai_market_application-model_deployment",
