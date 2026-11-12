@@ -3782,4 +3782,6 @@ test("investment vehicle capital raises are not company financing cards", () => 
   assert.equal(isEligibleFundingInsightEvent({...event,object:corporate.object,display_title_zh:"Proximal Ventures完成A轮融资"},[corporate]),true);
   const startup = {...claim,subject:"Fund AI",object:"$27.5 million seed funding",source_quote:"Fund AI raised $27.5 million in seed funding led by a VC fund."};
   assert.equal(isEligibleFundingInsightEvent({...event,object:startup.object,display_title_zh:"Fund AI获种子轮融资"},[startup]),true);
+  const mixed = {...event,object:startup.object,display_title_zh:"Fund AI获种子轮融资",claim_refs:["CL-FUND","CL-STARTUP"]};
+  assert.equal(isEligibleFundingInsightEvent(mixed,[claim,{...startup,claim_id:"CL-STARTUP"}]),true);
 });

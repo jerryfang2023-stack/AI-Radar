@@ -1736,6 +1736,7 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
 
 function fundingVehicleCapitalRaise(event = {}, claims = []) {
   const fund = /\b(?:debut|first|second|third|new|solo|VC|venture(?:\s+capital)?|investment)\s+(?:(?:solo|VC|venture|capital|investment)\s+){0,3}fund\b/iu;
+  if (!fund.test(clean(event.object))) return false;
   return claims.some(claim => (event.claim_refs || []).includes(claim.claim_id)
     && claim.claim_type === "funding" && claim.verification_status === "accepted"
     && fund.test(clean(claim.object)) && fund.test(clean(claim.source_quote))
