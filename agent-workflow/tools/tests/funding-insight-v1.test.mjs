@@ -3759,3 +3759,27 @@ test('completed bond proceeds are debt only with a matching current-source amoun
  assert.notEqual(canonicalFundingEventRound(event,[{...claim,source_quote:'Acme raised $5 billion from a US dollar bond sale.'}]).code,'debt');
  assert.notEqual(canonicalFundingEventRound(event,[{...claim,source_quote:'Bond yields rose after Acme raised $15 billion.'}]).code,'debt');
 });
+
+
+test("quoted short Chinese company subjects bind only to the same named funding recipient", () => {
+  const event = {event_id:"EV-SHORT",entities:["EN-DESCRIPTION","EN-SHORT"],claim_refs:["CL-SHORT"],object:"完成近亿元天使轮融资"};
+  const claim = {claim_id:"CL-SHORT",claim_type:"funding",verification_status:"accepted",subject:"AI原生芯片设计公司「泛函数」",object:"近亿元天使轮融资",source_quote:"AI原生芯片设计公司泛函数近日完成近亿元天使轮融资，由上海未来产业基金领投。"};
+  const card = {company:{entity_id:"EN-SHORT",name:"泛函数"},financing:{amount:"近亿元"}};
+  const entities = [{entity_id:"EN-SHORT",canonical_name:"泛函数"}];
+  assert.deepEqual(fundingEventCardConsistencyProblems(card,event,[claim],entities),[]);
+  assert.deepEqual(fundingEventCardConsistencyProblems({...card,company:{entity_id:"EN-WRONG",name:"新函数"}},event,[claim],[]),["funding_event_company_claim_missing"]);
+  assert.deepEqual(fundingEventCardConsistencyProblems(card,event,[{...claim,source_quote:"AI原生芯片设计公司新函数完成近亿元天使轮融资。"}],entities),["funding_event_company_claim_missing"]);
+  assert.deepEqual(fundingEventCardConsistencyProblems(card,event,[{...claim,verification_status:"rejected"}],entities),["funding_event_company_claim_missing"]);
+});
+
+test("investment vehicle capital raises are not company financing cards", () => {
+  const event = {event_id:"EV-FUND",event_type:"funding",event_status:"completed",publication_status:"verified",display_title_zh:"Proximal Ventures募集首期基金",object:"$27.5 million debut fund",metrics:["$27.5 million"],claim_refs:["CL-FUND"]};
+  const claim = {claim_id:"CL-FUND",claim_type:"funding",verification_status:"accepted",subject:"Proximal Ventures",object:"$27.5 million debut fund",source_quote:"raising $27.5 million for his first solo VC fund"};
+  assert.equal(isEligibleFundingInsightEvent(event,[claim]),false);
+  assert.deepEqual(verifiedFundingEventCardCoverageProblems([event],[],[],[claim]),[]);
+  assert.deepEqual(fundingEventCardConsistencyProblems({company:{entity_id:"EN-FUND"},financing:{amount:"$27.5 million"}},event,[claim]),["funding_event_is_fund_capital_raise"]);
+  const corporate = {...claim,object:"$27.5 million Series A",source_quote:"Proximal Ventures raised $27.5 million in Series A corporate equity financing from a venture capital fund."};
+  assert.equal(isEligibleFundingInsightEvent({...event,object:corporate.object,display_title_zh:"Proximal Ventures完成A轮融资"},[corporate]),true);
+  const startup = {...claim,subject:"Fund AI",object:"$27.5 million seed funding",source_quote:"Fund AI raised $27.5 million in seed funding led by a VC fund."};
+  assert.equal(isEligibleFundingInsightEvent({...event,object:startup.object,display_title_zh:"Fund AI获种子轮融资"},[startup]),true);
+});
