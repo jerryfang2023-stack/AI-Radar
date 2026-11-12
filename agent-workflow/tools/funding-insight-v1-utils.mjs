@@ -1192,6 +1192,7 @@ export function fundingTrancheDisclosureNeedsReview(event = {}, claims = []) {
 
 export function fundingEventCardConsistencyProblems(card = {}, event = {}, claims = [], entities = []) {
   if (!card?.company?.entity_id || !event?.event_id) return [];
+  if (fundingVehicleCapitalRaise(event, claims)) return ["funding_event_is_fund_capital_raise"];
   if ((card.financing?.investors || []).some((investor) => (
     /(?:集团|公司|资本|基金|投资|创投|控股|机构)(?:联合)?创始人$/u.test(clean(investor?.name))
       || /^(?:联合)?创始人$/u.test(clean(investor?.name))
@@ -1236,6 +1237,15 @@ export function fundingEventCardConsistencyProblems(card = {}, event = {}, claim
     .filter(Boolean);
   const companyClaims = eventClaims.filter((claim) => companyNames.some((name) => (
     organizationNamesEquivalent(claim.subject, name)
+      || (
+        claim.claim_type === "funding" && claim.verification_status === "accepted"
+        && normalizedName(descriptiveCompanyTail(claim.subject)) === normalizedName(name)
+        && normalizedName(name)
+        && quoteClauses(claim.source_quote).some(clause => (
+          normalizedName(clause).includes(normalizedName(name))
+          && clauseHasEventFundingAmount(clause, claim, event)
+        ))
+      )
       || (
         normalizedName(name).length >= 4
         && normalizedName(claim.source_quote).includes(normalizedName(name))
@@ -1338,6 +1348,8 @@ function subjectSignalScore(text = "", name = "") {
 
 function descriptiveCompanyTail(name = "") {
   const value = clean(name);
+  const quotedChinese = value.match(/(?:公司|企业|平台|品牌)\s*[「“"‘']([\p{Script=Han}A-Za-z0-9·&.-]{2,40})[」”"’']$/u);
+  if (quotedChinese) return clean(quotedChinese[1]);
   const englishMatch = value.match(
     /\b(?:company|startup|firm|platform|provider)\s+([A-Z][\p{L}\p{N}.&'-]*(?:\s+[A-Z][\p{L}\p{N}.&'-]*){0,3})$/u,
   );
@@ -1722,6 +1734,15 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
   return candidates[0].entity;
 }
 
+function fundingVehicleCapitalRaise(event = {}, claims = []) {
+  const fund = /\b(?:debut|first|second|third|new|solo|VC|venture(?:\s+capital)?|investment)\s+(?:(?:solo|VC|venture|capital|investment)\s+){0,3}fund\b/iu;
+  if (!fund.test(clean(event.object))) return false;
+  return claims.some(claim => (event.claim_refs || []).includes(claim.claim_id)
+    && claim.claim_type === "funding" && claim.verification_status === "accepted"
+    && fund.test(clean(claim.object)) && fund.test(clean(claim.source_quote))
+    && /\b(?:rais(?:e[sd]?|ing)|clos(?:e[sd]?|ing))\b/iu.test(claim.source_quote));
+}
+
 export function isEligibleFundingInsightEvent(event = {}, claims = []) {
   const amount = canonicalFundingEventAmount(event, claims);
   const verifiedUndisclosed = !amount && claims.some((claim) => (event.claim_refs || []).includes(claim.claim_id)
@@ -1734,6 +1755,7 @@ export function isEligibleFundingInsightEvent(event = {}, claims = []) {
     && Boolean(event.display_title_zh)
     && !isWithdrawnFundingTitle(event.display_title_zh)
     && !isPendingFundingTitle(event.display_title_zh)
+    && !fundingVehicleCapitalRaise(event, claims)
     && !fundingTrancheDisclosureNeedsReview(event, claims)
     && !fundingCombinedRoundsNeedReview(event, claims)
     && (Boolean(normalizeFundingAmount(amount).currency) || verifiedUndisclosed);
