@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
-    "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 4,
+    "current_round_count": 5,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-12",
-    "latest_disclosed_at": "2026-10-12",
+    "latest_disclosed_at": "2026-11-10",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "lead": 2,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "series_a",
@@ -102,9 +102,54 @@
         "entity_id": "EN-f763ca7aa9ae2ff2",
         "canonical_entity_id": "",
         "name": "Scarlet"
+      },
+      {
+        "entity_id": "EN-5ff78fa6a1157fcf",
+        "canonical_entity_id": "",
+        "name": "SPARETECH"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ca486c8d6a2ee1e4",
+        "funding_insight_id": "FI-2702b3c0fa471182",
+        "event_ids": [
+          "EV-0576fd5df6d232f9"
+        ],
+        "company_entity_id": "EN-5ff78fa6a1157fcf",
+        "company_canonical_entity_id": "",
+        "company_name": "SPARETECH",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$20 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2026-11-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-124895804c23694c",
+            "source_url": "https://www.prnewswire.com/fi/lehdistotiedotteet/sparetech-raises-20m-series-b-to-help-manufacturers-cut-industrial-spare-parts-inventory-by-60-302935084.html",
+            "source_title": "SPARETECH 完成 2000 万美元 B 轮融资，帮助制造商将工业备件库存削减 60%",
+            "source_content_hash": "f0a2a16668cb5e63863e666e10fecc43c9e7ec2cded5ba06cd1d846ca372bf09",
+            "quote": "Blume Equity and Insight Partners co-led the round, with participation from Headline.",
+            "quote_hash": "b60a47706a76628419a7ecd5c7cd0562db4db6fc054eacec48549400d5f81d43"
+          }
+        ]
+      },
       {
         "activity_id": "IA-5ebae6b9e52c86e8",
         "funding_insight_id": "FI-2a662caaa655e995",
@@ -348,9 +393,49 @@
             "quote_hash": "e53a4c49fffb920d8a29dc629c2a58887928a994cdc2640d7ff31e77c5b493b0"
           }
         ]
+      },
+      {
+        "activity_id": "IA-f8553453e6ce0fca",
+        "funding_insight_id": "FI-2702b3c0fa471182",
+        "event_ids": [
+          "EV-0576fd5df6d232f9"
+        ],
+        "company_entity_id": "EN-5ff78fa6a1157fcf",
+        "company_canonical_entity_id": "",
+        "company_name": "SPARETECH",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1cbf98bd7b2daf20",
+            "source_url": "https://www.insightpartners.com/ideas/sparetech-secures-series-a-funding-led-by-us-based-insight-partners-to-fuel-international-expansion/",
+            "source_title": "SPARETECH secures Series A funding led by US-based Insight Partners to fuel international expansion",
+            "source_content_hash": "740ddd6184187da3",
+            "quote": "SPARETECH, the leading data platform for industrial spare parts, raised €10M in a Series A investment round led by New York-based software investor Insight Partners with participation from Headline and existing investors to scale internationally.",
+            "quote_hash": "13dc61d2359075ae2535e017e0725a3bf390e3f9e186b1a16375b6d0b2cbdcd4"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-124895804c23694c",
+        "source_url": "https://www.prnewswire.com/fi/lehdistotiedotteet/sparetech-raises-20m-series-b-to-help-manufacturers-cut-industrial-spare-parts-inventory-by-60-302935084.html",
+        "source_title": "SPARETECH 完成 2000 万美元 B 轮融资，帮助制造商将工业备件库存削减 60%",
+        "source_content_hash": "f0a2a16668cb5e63863e666e10fecc43c9e7ec2cded5ba06cd1d846ca372bf09",
+        "quote": "Blume Equity and Insight Partners co-led the round, with participation from Headline.",
+        "quote_hash": "b60a47706a76628419a7ecd5c7cd0562db4db6fc054eacec48549400d5f81d43"
+      },
       {
         "source_id": "FISRC-c2bc2be66fddfb8a",
         "source_url": "https://tech.eu/2026/10/12/scarlet-raises-50m-series-b-to-accelerate-ai-medical-device-certification/",
@@ -414,6 +499,14 @@
         "source_content_hash": "24552deeea13b585",
         "quote": "Headline Creditas, Owner.com, Swile, Sorare, Buk, Fetch Rewards, Zeller, Bokksu, Heard",
         "quote_hash": "e53a4c49fffb920d8a29dc629c2a58887928a994cdc2640d7ff31e77c5b493b0"
+      },
+      {
+        "source_id": "FISRC-1cbf98bd7b2daf20",
+        "source_url": "https://www.insightpartners.com/ideas/sparetech-secures-series-a-funding-led-by-us-based-insight-partners-to-fuel-international-expansion/",
+        "source_title": "SPARETECH secures Series A funding led by US-based Insight Partners to fuel international expansion",
+        "source_content_hash": "740ddd6184187da3",
+        "quote": "SPARETECH, the leading data platform for industrial spare parts, raised €10M in a Series A investment round led by New York-based software investor Insight Partners with participation from Headline and existing investors to scale internationally.",
+        "quote_hash": "13dc61d2359075ae2535e017e0725a3bf390e3f9e186b1a16375b6d0b2cbdcd4"
       }
     ],
     "public_profile": {
@@ -457,12 +550,12 @@
           "source_id": "headline_us"
         },
         {
-          "description": "融资来源记录：Scarlet · B轮 · 2026-10-12 · 本轮领投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c2bc2be66fddfb8a"
+          "description": "融资来源记录：SPARETECH · B轮 · 2026-11-10 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-124895804c23694c"
         },
         {
-          "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4d11ed62a144a3f4"
+          "description": "融资来源记录：Scarlet · B轮 · 2026-10-12 · 本轮领投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c2bc2be66fddfb8a"
         }
       ],
       "contacts": [
@@ -498,6 +591,14 @@
           "quote_hash": "59b674ed9ff992298c3212bfa4faf97a3df1308d20820e21e82ba9d97919fb26"
         },
         {
+          "source_id": "FISRC-124895804c23694c",
+          "source_url": "https://www.prnewswire.com/fi/lehdistotiedotteet/sparetech-raises-20m-series-b-to-help-manufacturers-cut-industrial-spare-parts-inventory-by-60-302935084.html",
+          "source_title": "SPARETECH 完成 2000 万美元 B 轮融资，帮助制造商将工业备件库存削减 60%",
+          "source_content_hash": "f0a2a16668cb5e63863e666e10fecc43c9e7ec2cded5ba06cd1d846ca372bf09",
+          "quote": "Blume Equity and Insight Partners co-led the round, with participation from Headline.",
+          "quote_hash": "b60a47706a76628419a7ecd5c7cd0562db4db6fc054eacec48549400d5f81d43"
+        },
+        {
           "source_id": "FISRC-c2bc2be66fddfb8a",
           "source_url": "https://tech.eu/2026/10/12/scarlet-raises-50m-series-b-to-accelerate-ai-medical-device-certification/",
           "source_title": "Scarlet 获 5000 万美元 B 轮融资，加速 AI 医疗器械认证",
@@ -512,14 +613,6 @@
           "source_content_hash": "e2e353c5cf497e02",
           "quote": "with Headline acting as the lead investor",
           "quote_hash": "f4bfb4bcde28c90a5f9b67dd431bce323a705902487d8451eb57833aa1c013cd"
-        },
-        {
-          "source_id": "FISRC-4d11ed62a144a3f4",
-          "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
-          "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
-          "source_content_hash": "714c413ab36c1848",
-          "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
-          "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
         }
       ],
       "last_verified_at": "2026-09-25",

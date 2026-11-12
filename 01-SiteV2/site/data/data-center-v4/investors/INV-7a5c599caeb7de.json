@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,20 +64,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 38,
+    "current_round_count": 39,
     "historical_or_ambiguous_count": 10,
-    "portfolio_company_count": 37,
+    "portfolio_company_count": 38,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2016-03",
-    "latest_disclosed_at": "2026-10-21",
+    "latest_disclosed_at": "2026-11-10",
     "role_counts": {
       "historical_or_ambiguous": 10,
       "lead": 4,
-      "participant": 34
+      "participant": 35
     },
     "round_codes": [
       "multi_round",
@@ -136,6 +136,11 @@
         "entity_id": "EN-85f694226bcbe83c",
         "canonical_entity_id": "",
         "name": "Flai"
+      },
+      {
+        "entity_id": "EN-21b747de22dbb757",
+        "canonical_entity_id": "",
+        "name": "Garage"
       },
       {
         "entity_id": "EN-1050efc9e13624b2",
@@ -279,6 +284,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-66a106e712c8f1db",
+        "funding_insight_id": "FI-839be02747dd5944",
+        "event_ids": [
+          "EV-a49a610c856420ab"
+        ],
+        "company_entity_id": "EN-21b747de22dbb757",
+        "company_canonical_entity_id": "",
+        "company_name": "Garage",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$41 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 41000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4100 万美元"
+        },
+        "announced_at": "2026-11-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-49f6d3c8199f72d9",
+            "source_url": "https://www.prnewswire.com/news-releases/garage-raises-41m-series-b-to-scale-ai-powered-marketplace-for-americas-essential-equipment-surpassing-100m-in-annual-platform-sales-302935598.html",
+            "source_title": "Garage 完成 4100 万美元 B 轮融资，以扩展面向美国基础设备的 AI 驱动市场，平台年销售额突破 1 亿美元",
+            "source_content_hash": "fdc11b6f3162a7164ff38084278314d7c84eec79d5cd426f59def463882b4ee3",
+            "quote": "today announced $41 million in Series B funding led by Invus Opportunities, along with Infinity Ventures, Initialized Capital, Y Combinator, Benchstrength, and FJ Labs.",
+            "quote_hash": "bf7d92ecf80f026f4ab682d8e62e620e1cfdc7c6f3c272cf511a3cb35fcc658d"
+          }
+        ]
+      },
       {
         "activity_id": "IA-90351b8e582b0455",
         "funding_insight_id": "FI-2aa299d42ca42b11",
@@ -2146,6 +2191,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-49f6d3c8199f72d9",
+        "source_url": "https://www.prnewswire.com/news-releases/garage-raises-41m-series-b-to-scale-ai-powered-marketplace-for-americas-essential-equipment-surpassing-100m-in-annual-platform-sales-302935598.html",
+        "source_title": "Garage 完成 4100 万美元 B 轮融资，以扩展面向美国基础设备的 AI 驱动市场，平台年销售额突破 1 亿美元",
+        "source_content_hash": "fdc11b6f3162a7164ff38084278314d7c84eec79d5cd426f59def463882b4ee3",
+        "quote": "today announced $41 million in Series B funding led by Invus Opportunities, along with Infinity Ventures, Initialized Capital, Y Combinator, Benchstrength, and FJ Labs.",
+        "quote_hash": "bf7d92ecf80f026f4ab682d8e62e620e1cfdc7c6f3c272cf511a3cb35fcc658d"
+      },
+      {
         "source_id": "FISRC-49f5b4d8c68adbdc",
         "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
         "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
@@ -2591,16 +2644,16 @@
           "source_id": "yc_press"
         },
         {
+          "description": "融资来源记录：Garage · B轮 · 2026-11-10 · 本轮参投 · $41 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-49f6d3c8199f72d9"
+        },
+        {
           "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-49f5b4d8c68adbdc"
         },
         {
           "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0b9a2de412bfecea"
-        },
-        {
-          "description": "融资来源记录：Clueso · A轮 · 2026-10-13 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4ee9923e67c28685"
         }
       ],
       "contacts": [
@@ -2644,6 +2697,14 @@
           "quote_hash": "4ed4875e0047c94acb0efae75ec6e5f47b2b446f507a0d444211c08edd926a82"
         },
         {
+          "source_id": "FISRC-49f6d3c8199f72d9",
+          "source_url": "https://www.prnewswire.com/news-releases/garage-raises-41m-series-b-to-scale-ai-powered-marketplace-for-americas-essential-equipment-surpassing-100m-in-annual-platform-sales-302935598.html",
+          "source_title": "Garage 完成 4100 万美元 B 轮融资，以扩展面向美国基础设备的 AI 驱动市场，平台年销售额突破 1 亿美元",
+          "source_content_hash": "fdc11b6f3162a7164ff38084278314d7c84eec79d5cd426f59def463882b4ee3",
+          "quote": "today announced $41 million in Series B funding led by Invus Opportunities, along with Infinity Ventures, Initialized Capital, Y Combinator, Benchstrength, and FJ Labs.",
+          "quote_hash": "bf7d92ecf80f026f4ab682d8e62e620e1cfdc7c6f3c272cf511a3cb35fcc658d"
+        },
+        {
           "source_id": "FISRC-49f5b4d8c68adbdc",
           "source_url": "https://www.prnewswire.com/news-releases/blacksmith-raises-sequoia-led-series-c-at-1-billion-valuation-to-scale-code-validation-302915140.html",
           "source_title": "Blacksmith 获红杉资本领投的 C 轮融资，估值达 10 亿美元，以扩展代码验证业务",
@@ -2658,14 +2719,6 @@
           "source_content_hash": "b097b8e1cde199ce",
           "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
           "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
-        },
-        {
-          "source_id": "FISRC-4ee9923e67c28685",
-          "source_url": "https://yourstory.com/2026/10/agentic-video-startup-clueso-raises-series-a-funding",
-          "source_title": "AI 智能体视频初创公司 Clueso 在 A 轮融资中筹集 1000 万美元",
-          "source_content_hash": "5da6e8dca2222da443f043940ec3373b0413761024bcfa093b36467089a15e81",
-          "quote": "The round also saw participation from Y Combinator and f7 Ventures.",
-          "quote_hash": "ae937fdd3a8dfaff2f3d21367e56afe08ffa186584ff658f9f0e729b0b907c14"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2676,7 +2729,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[41].role": {
+        "activities[42].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,18 +63,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 31,
+    "current_round_count": 32,
     "historical_or_ambiguous_count": 8,
-    "portfolio_company_count": 26,
+    "portfolio_company_count": 27,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-11-09",
+    "latest_disclosed_at": "2026-11-11",
     "role_counts": {
-      "co_lead": 2,
+      "co_lead": 3,
       "historical_or_ambiguous": 8,
       "lead": 13,
       "participant": 16
@@ -137,6 +137,11 @@
         "entity_id": "EN-0caee180da9d0f3f",
         "canonical_entity_id": "",
         "name": "Fireworks AI Inc."
+      },
+      {
+        "entity_id": "EN-8da5eafb322ee86e",
+        "canonical_entity_id": "",
+        "name": "Fractile"
       },
       {
         "entity_id": "EN-2be663431f007250",
@@ -225,6 +230,54 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5d222c9ecbfcd752",
+        "funding_insight_id": "FI-70d164861fee0af8",
+        "event_ids": [
+          "EV-c3fdd52a255c0770"
+        ],
+        "company_entity_id": "EN-8da5eafb322ee86e",
+        "company_canonical_entity_id": "",
+        "company_name": "Fractile",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$720 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 720000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.2 亿美元"
+        },
+        "announced_at": "2026-11-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-038f46a4355e8569",
+            "source_url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips",
+            "source_title": "英国 Fractile 完成 7.2 亿美元融资，在 AI 芯片竞赛中占据优势",
+            "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+            "quote": "its latest round led by Thrive Capital, Founders Fund, Lightspeed Venture Partners, and Redpoint",
+            "quote_hash": "69677c9cff11085d84c536d1d997465dcc1993802f7000b442656da6b4011cf8"
+          },
+          {
+            "source_id": "FISRC-59233bfbeb9628bf",
+            "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+            "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+            "source_content_hash": "97c1f5cc5dda1d68",
+            "quote": "Thrive Capital, Founders Fund, Lightspeed and Redpoint co-led the round.",
+            "quote_hash": "ea6bb384a47cf21cbbbf5c4cf629c2d466cddb2aeb73964f923340e31bba8081"
+          }
+        ]
+      },
       {
         "activity_id": "IA-11779bb75fa23f69",
         "funding_insight_id": "FI-94eaf09d128c6f03",
@@ -1740,6 +1793,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-038f46a4355e8569",
+        "source_url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips",
+        "source_title": "英国 Fractile 完成 7.2 亿美元融资，在 AI 芯片竞赛中占据优势",
+        "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+        "quote": "its latest round led by Thrive Capital, Founders Fund, Lightspeed Venture Partners, and Redpoint",
+        "quote_hash": "69677c9cff11085d84c536d1d997465dcc1993802f7000b442656da6b4011cf8"
+      },
+      {
+        "source_id": "FISRC-59233bfbeb9628bf",
+        "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+        "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+        "source_content_hash": "97c1f5cc5dda1d68",
+        "quote": "Thrive Capital, Founders Fund, Lightspeed and Redpoint co-led the round.",
+        "quote_hash": "ea6bb384a47cf21cbbbf5c4cf629c2d466cddb2aeb73964f923340e31bba8081"
+      },
+      {
         "source_id": "FISRC-320dc636ecb880b5",
         "source_url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months",
         "source_title": "AI硬件初创公司Nominal在8个月内估值翻三倍至$3B",
@@ -2094,16 +2163,12 @@
           "source_id": "lightspeed_us"
         },
         {
+          "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮联合领投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-038f46a4355e8569"
+        },
+        {
           "description": "融资来源记录：Nominal · C轮 · 2026-11-09 · 本轮领投 · $240 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-320dc636ecb880b5"
-        },
-        {
-          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f581afce52cf5bef"
-        },
-        {
-          "description": "融资来源记录：Zenzap · 多轮融资 · 2026-10-14 · 本轮联合领投 · $44 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bb48149fa1b574d3"
         }
       ],
       "contacts": [
@@ -2154,28 +2219,28 @@
           "quote_hash": "d2bbae37840bb25a103173bf141ecae89a192e7fedcd89323366cf9032983442"
         },
         {
+          "source_id": "FISRC-038f46a4355e8569",
+          "source_url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips",
+          "source_title": "英国 Fractile 完成 7.2 亿美元融资，在 AI 芯片竞赛中占据优势",
+          "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
+          "quote": "its latest round led by Thrive Capital, Founders Fund, Lightspeed Venture Partners, and Redpoint",
+          "quote_hash": "69677c9cff11085d84c536d1d997465dcc1993802f7000b442656da6b4011cf8"
+        },
+        {
+          "source_id": "FISRC-59233bfbeb9628bf",
+          "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+          "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+          "source_content_hash": "97c1f5cc5dda1d68",
+          "quote": "Thrive Capital, Founders Fund, Lightspeed and Redpoint co-led the round.",
+          "quote_hash": "ea6bb384a47cf21cbbbf5c4cf629c2d466cddb2aeb73964f923340e31bba8081"
+        },
+        {
           "source_id": "FISRC-320dc636ecb880b5",
           "source_url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months",
           "source_title": "AI硬件初创公司Nominal在8个月内估值翻三倍至$3B",
           "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
           "quote": "a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
           "quote_hash": "a66e9c1b5c766bb0b7208c185cc6fd577939d39fcae65e2411372ca398aef9f4"
-        },
-        {
-          "source_id": "FISRC-f581afce52cf5bef",
-          "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
-          "source_title": "Ramp估值达600亿美元，深入布局AI",
-          "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
-          "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
-          "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
-        },
-        {
-          "source_id": "FISRC-bb48149fa1b574d3",
-          "source_url": "https://www.calcalistech.com/ctechnews/article/b1zgob6jfe",
-          "source_title": "Zenzap raises $33 million Series A to bring AI agents into everyday workplace chats",
-          "source_content_hash": "4cfe12ba60131ea9",
-          "quote": "has raised $33 million in a Series A funding round co-led by Bessemer Venture Partners and Lightspeed Venture Partners, with additional investment from The Garage.",
-          "quote_hash": "8d7648ad5a62c1ad0005ff8d3f38e905cb3818cdc6f18a0ced6816381566c39c"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2186,7 +2251,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[30].role": {
+        "activities[31].role": {
           "text": "Series B 参投（2025年4月）",
           "source_hash": "4170bf75c97ec9f7cd65f42d8ca30a3c3546dd4ade04c117870543b20203c333",
           "provider": "deepseek",
@@ -2194,7 +2259,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[34].role": {
+        "activities[35].role": {
           "text": "Series D 参投",
           "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
           "provider": "deepseek",

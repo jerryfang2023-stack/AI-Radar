@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,24 @@
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-27",
-    "latest_disclosed_at": "2026-06-17",
+    "latest_disclosed_at": "2026-11-11",
     "role_counts": {
       "historical_or_ambiguous": 2,
       "other_current_round": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "series_b",
+      "series_c",
       "series_d"
     ],
     "portfolio_companies": [
@@ -87,12 +88,57 @@
         "name": "Cognition"
       },
       {
+        "entity_id": "EN-8da5eafb322ee86e",
+        "canonical_entity_id": "",
+        "name": "Fractile"
+      },
+      {
         "entity_id": "FICO-7e1d6c73932aa9b0",
         "canonical_entity_id": "",
         "name": "Odyssey ML"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c0576c39da486881",
+        "funding_insight_id": "FI-70d164861fee0af8",
+        "event_ids": [
+          "EV-c3fdd52a255c0770"
+        ],
+        "company_entity_id": "EN-8da5eafb322ee86e",
+        "company_canonical_entity_id": "",
+        "company_name": "Fractile",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$720 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 720000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.2 亿美元"
+        },
+        "announced_at": "2026-11-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-59233bfbeb9628bf",
+            "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+            "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+            "source_content_hash": "97c1f5cc5dda1d68",
+            "quote": "Bain Capital Ventures, Shopify Ventures, Balderton, Elad Gil and SV Angel also took part.",
+            "quote_hash": "d6815603f40ff173008fb682219c21f18b3981f5af0a1f231df3287bedead2c2"
+          }
+        ]
+      },
       {
         "activity_id": "IA-4c661a76979a42ac",
         "funding_insight_id": "FI-479f9d5c1123dba2",
@@ -240,6 +286,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-59233bfbeb9628bf",
+        "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+        "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+        "source_content_hash": "97c1f5cc5dda1d68",
+        "quote": "Bain Capital Ventures, Shopify Ventures, Balderton, Elad Gil and SV Angel also took part.",
+        "quote_hash": "d6815603f40ff173008fb682219c21f18b3981f5af0a1f231df3287bedead2c2"
+      },
+      {
         "source_id": "FISRC-e94365d0212a78f3",
         "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
         "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
@@ -355,16 +409,16 @@
           "source_id": "elad_milken"
         },
         {
+          "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮参投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-59233bfbeb9628bf"
+        },
+        {
           "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮天使投资人 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e94365d0212a78f3"
         },
         {
           "description": "融资来源记录：Cognition · D轮 · 2026-05-27 · 既有投资方，本轮参投 · 超过 10 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c7d89f6e73a6fe5b"
-        },
-        {
-          "description": "融资来源记录：Mistral AI · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ff92324bbd437a73"
         }
       ],
       "sources": [
@@ -385,6 +439,14 @@
           "quote_hash": "c76ab80f58ec18c309c91b2774881bfb00422964834be51eda901baa77c0955a"
         },
         {
+          "source_id": "FISRC-59233bfbeb9628bf",
+          "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+          "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+          "source_content_hash": "97c1f5cc5dda1d68",
+          "quote": "Bain Capital Ventures, Shopify Ventures, Balderton, Elad Gil and SV Angel also took part.",
+          "quote_hash": "d6815603f40ff173008fb682219c21f18b3981f5af0a1f231df3287bedead2c2"
+        },
+        {
           "source_id": "FISRC-e94365d0212a78f3",
           "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
           "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
@@ -399,14 +461,6 @@
           "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
           "quote": "a host of existing investors pouring in, including Elad Gil, Soma Capital, Omri Casspi, Founders Fund, and a long list of others",
           "quote_hash": "32a689c79ede37eda5c607e1327b2f71b761bb7b8abe6ff5a893009360891e98"
-        },
-        {
-          "source_id": "FISRC-ff92324bbd437a73",
-          "source_url": "https://notice.co/c/mistral-ai",
-          "source_title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
-          "source_content_hash": "24552deeea13b585",
-          "quote": "Elad Gil Perplexity AI, Scale AI, Odyssey Systems, Applied Compute, Datology AI",
-          "quote_hash": "dc52cd5235f21fd45901dcddd31c73489c163e1d31a0233a6a6ca293f51f843b"
         }
       ],
       "identity_status": "verified"

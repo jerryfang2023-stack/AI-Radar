@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-10-12",
     "latest_disclosed_at": "2026-10-12",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "participant": 1
     },
     "round_codes": [
@@ -135,6 +135,38 @@
         ]
       },
       {
+        "activity_id": "IA-ae29668f88dd73d0",
+        "funding_insight_id": "FI-70d164861fee0af8",
+        "event_ids": [
+          "EV-c3fdd52a255c0770"
+        ],
+        "company_entity_id": "EN-8da5eafb322ee86e",
+        "company_canonical_entity_id": "",
+        "company_name": "Fractile",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1978b968cc5f83b6",
+            "source_url": "https://multiples.vc/private-comps/fractile",
+            "source_title": "Fractile Valuation, Funding & Investors | Multiples",
+            "source_content_hash": "79657c2f5b59fd03",
+            "quote": "Kindred Capital (lead); NATO Innovation Fund (lead); Oxford Science Enterprises (lead)",
+            "quote_hash": "cc671758505d7a974bac56eb469e4cef2a7ebd3bb81b12540d6607a108c7da6a"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-a65f8d6eddc4a8be",
         "funding_insight_id": "FI-27c50f0e1e7dd316",
         "event_ids": [
@@ -183,6 +215,14 @@
         "source_content_hash": "e2e353c5cf497e02",
         "quote": "The existing investors Atomico, Creandum, Kindred Capital and Entrepreneurs First are also participating in this round.",
         "quote_hash": "974fd996c83f19af323bd44a1419c154a479d043e69338455d1a52fb9cd00207"
+      },
+      {
+        "source_id": "FISRC-1978b968cc5f83b6",
+        "source_url": "https://multiples.vc/private-comps/fractile",
+        "source_title": "Fractile Valuation, Funding & Investors | Multiples",
+        "source_content_hash": "79657c2f5b59fd03",
+        "quote": "Kindred Capital (lead); NATO Innovation Fund (lead); Oxford Science Enterprises (lead)",
+        "quote_hash": "cc671758505d7a974bac56eb469e4cef2a7ebd3bb81b12540d6607a108c7da6a"
       },
       {
         "source_id": "FISRC-a09bc7e6d17a0b0f",
@@ -238,8 +278,8 @@
           "source_id": "FISRC-c2bc2be66fddfb8a"
         },
         {
-          "description": "融资来源记录：Fractile · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a09bc7e6d17a0b0f"
+          "description": "融资来源记录：Fractile · 历史轮次未披露 · 种子轮领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1978b968cc5f83b6"
         }
       ],
       "current_roles": [
@@ -385,12 +425,12 @@
           "quote_hash": "974fd996c83f19af323bd44a1419c154a479d043e69338455d1a52fb9cd00207"
         },
         {
-          "source_id": "FISRC-a09bc7e6d17a0b0f",
-          "source_url": "https://www.electronicsweekly.com/news/business/uks-fractile-raises-220m-for-inference-ics-2026-05/",
-          "source_title": "UK’s Fractile raises $220m for inference ICs ⋆ Electronics Weekly",
-          "source_content_hash": "918bf4246831a0d6",
-          "quote": "In July 2024 Fractile raised $15m in seed funding, with investors including Kindred Capital",
-          "quote_hash": "7a8e3206950f449ba3b8f7acae7e59a639091582f54b25078bdb1e160db0d83b"
+          "source_id": "FISRC-1978b968cc5f83b6",
+          "source_url": "https://multiples.vc/private-comps/fractile",
+          "source_title": "Fractile Valuation, Funding & Investors | Multiples",
+          "source_content_hash": "79657c2f5b59fd03",
+          "quote": "Kindred Capital (lead); NATO Innovation Fund (lead); Oxford Science Enterprises (lead)",
+          "quote_hash": "cc671758505d7a974bac56eb469e4cef2a7ebd3bb81b12540d6607a108c7da6a"
         }
       ],
       "last_verified_at": "2026-09-28",

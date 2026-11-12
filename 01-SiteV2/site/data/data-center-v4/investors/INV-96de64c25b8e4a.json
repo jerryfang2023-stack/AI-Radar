@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 7,
+    "current_round_count": 10,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 9,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-01",
-    "latest_disclosed_at": "2026-10-14",
+    "latest_disclosed_at": "2026-11-11",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 1,
-      "participant": 7
+      "historical_or_ambiguous": 2,
+      "participant": 9
     },
     "round_codes": [
       "series_b",
@@ -87,6 +87,11 @@
         "entity_id": "EN-f8223ea5a9c41813",
         "canonical_entity_id": "",
         "name": "Armadin"
+      },
+      {
+        "entity_id": "EN-4af7f3527d7863e0",
+        "canonical_entity_id": "",
+        "name": "Charta Health"
       },
       {
         "entity_id": "EN-ac32f27ba7a1346f",
@@ -102,6 +107,11 @@
         "entity_id": "FICO-etched",
         "canonical_entity_id": "",
         "name": "Etched"
+      },
+      {
+        "entity_id": "EN-8da5eafb322ee86e",
+        "canonical_entity_id": "",
+        "name": "Fractile"
       },
       {
         "entity_id": "EN-373da2ec629326c0",
@@ -120,6 +130,86 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-cdf7fb5c322e16ba",
+        "funding_insight_id": "FI-70d164861fee0af8",
+        "event_ids": [
+          "EV-c3fdd52a255c0770"
+        ],
+        "company_entity_id": "EN-8da5eafb322ee86e",
+        "company_canonical_entity_id": "",
+        "company_name": "Fractile",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$720 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 720000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.2 亿美元"
+        },
+        "announced_at": "2026-11-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-59233bfbeb9628bf",
+            "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+            "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+            "source_content_hash": "97c1f5cc5dda1d68",
+            "quote": "Bain Capital Ventures, Shopify Ventures, Balderton, Elad Gil and SV Angel also took part.",
+            "quote_hash": "d6815603f40ff173008fb682219c21f18b3981f5af0a1f231df3287bedead2c2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-914af0da7beaa347",
+        "funding_insight_id": "FI-4df12f9d73d6a9a3",
+        "event_ids": [
+          "EV-b97542658971c6a9"
+        ],
+        "company_entity_id": "EN-4af7f3527d7863e0",
+        "company_canonical_entity_id": "",
+        "company_name": "Charta Health",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$55 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 55000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5500 万美元"
+        },
+        "announced_at": "2026-11-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e5678cb427ad6e69",
+            "source_url": "https://www.prnewswire.com/news-releases/charta-health-raises-55-million-series-b-to-establish-a-shared-standard-of-accuracy-in-healthcare-billing-302934401.html",
+            "source_title": "Charta Health 完成 5500 万美元 B 轮融资，旨在建立医疗账单准确性的共享标准",
+            "source_content_hash": "745052fe5fb1b81cc50c9c8709f4d34889d365592744683070a0e85a65cf7f3d",
+            "quote": "Existing investors Madrona, Bain Capital Ventures, and South Park Commons also participated, alongside QuantumLight.",
+            "quote_hash": "5ae9bf3feaac941e73806185ccc31d1968dd05322dcc1a502ccb60c4fd53d831"
+          }
+        ]
+      },
       {
         "activity_id": "IA-46999aa31a0efb72",
         "funding_insight_id": "FI-7feeaf543574b27d",
@@ -473,9 +563,57 @@
             "quote_hash": "d292cf5d747ec6021464ac837841f934420e0a2cd66127a1bdcf2f7ae54c2ec7"
           }
         ]
+      },
+      {
+        "activity_id": "IA-10a0e81401a57723",
+        "funding_insight_id": "FI-4df12f9d73d6a9a3",
+        "event_ids": [
+          "EV-b97542658971c6a9"
+        ],
+        "company_entity_id": "EN-4af7f3527d7863e0",
+        "company_canonical_entity_id": "",
+        "company_name": "Charta Health",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A 轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7b9f520a169842ef",
+            "source_url": "https://www.chartahealth.com/resources/series-a",
+            "source_title": "Charta Health raises $22M Series A to rebuild the backbone of healthcare operations with AI",
+            "source_content_hash": "2b3a7f4d71857a57",
+            "quote": "Charta Health has raised a $22M Series A led by Bain Capital Ventures",
+            "quote_hash": "16855b57ab148ff1432086c7cbe68b7d07c9d8b292e27ee258f584095992c255"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-59233bfbeb9628bf",
+        "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+        "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+        "source_content_hash": "97c1f5cc5dda1d68",
+        "quote": "Bain Capital Ventures, Shopify Ventures, Balderton, Elad Gil and SV Angel also took part.",
+        "quote_hash": "d6815603f40ff173008fb682219c21f18b3981f5af0a1f231df3287bedead2c2"
+      },
+      {
+        "source_id": "FISRC-e5678cb427ad6e69",
+        "source_url": "https://www.prnewswire.com/news-releases/charta-health-raises-55-million-series-b-to-establish-a-shared-standard-of-accuracy-in-healthcare-billing-302934401.html",
+        "source_title": "Charta Health 完成 5500 万美元 B 轮融资，旨在建立医疗账单准确性的共享标准",
+        "source_content_hash": "745052fe5fb1b81cc50c9c8709f4d34889d365592744683070a0e85a65cf7f3d",
+        "quote": "Existing investors Madrona, Bain Capital Ventures, and South Park Commons also participated, alongside QuantumLight.",
+        "quote_hash": "5ae9bf3feaac941e73806185ccc31d1968dd05322dcc1a502ccb60c4fd53d831"
+      },
       {
         "source_id": "FISRC-b54b83abf2f3608c",
         "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
@@ -547,6 +685,14 @@
         "source_content_hash": "afe0afef4cf0ce8c",
         "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue.",
         "quote_hash": "d292cf5d747ec6021464ac837841f934420e0a2cd66127a1bdcf2f7ae54c2ec7"
+      },
+      {
+        "source_id": "FISRC-7b9f520a169842ef",
+        "source_url": "https://www.chartahealth.com/resources/series-a",
+        "source_title": "Charta Health raises $22M Series A to rebuild the backbone of healthcare operations with AI",
+        "source_content_hash": "2b3a7f4d71857a57",
+        "quote": "Charta Health has raised a $22M Series A led by Bain Capital Ventures",
+        "quote_hash": "16855b57ab148ff1432086c7cbe68b7d07c9d8b292e27ee258f584095992c255"
       }
     ],
     "public_profile": {
@@ -602,16 +748,16 @@
           "source_id": "bain_ventures"
         },
         {
+          "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮参投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-59233bfbeb9628bf"
+        },
+        {
+          "description": "融资来源记录：Charta Health · B轮 · 2026-11-10 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e5678cb427ad6e69"
+        },
+        {
           "description": "融资来源记录：Modal · D轮 · 2026-10-14 · 本轮参投 · $750 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b54b83abf2f3608c"
-        },
-        {
-          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-58d9b75c832876e1"
-        },
-        {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
         }
       ],
       "contacts": [
@@ -683,28 +829,28 @@
           "quote_hash": "8e973d500d2e3e18b63efcde4308fd116c686f878b846379039b8f90cf9bd061"
         },
         {
+          "source_id": "FISRC-59233bfbeb9628bf",
+          "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+          "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+          "source_content_hash": "97c1f5cc5dda1d68",
+          "quote": "Bain Capital Ventures, Shopify Ventures, Balderton, Elad Gil and SV Angel also took part.",
+          "quote_hash": "d6815603f40ff173008fb682219c21f18b3981f5af0a1f231df3287bedead2c2"
+        },
+        {
+          "source_id": "FISRC-e5678cb427ad6e69",
+          "source_url": "https://www.prnewswire.com/news-releases/charta-health-raises-55-million-series-b-to-establish-a-shared-standard-of-accuracy-in-healthcare-billing-302934401.html",
+          "source_title": "Charta Health 完成 5500 万美元 B 轮融资，旨在建立医疗账单准确性的共享标准",
+          "source_content_hash": "745052fe5fb1b81cc50c9c8709f4d34889d365592744683070a0e85a65cf7f3d",
+          "quote": "Existing investors Madrona, Bain Capital Ventures, and South Park Commons also participated, alongside QuantumLight.",
+          "quote_hash": "5ae9bf3feaac941e73806185ccc31d1968dd05322dcc1a502ccb60c4fd53d831"
+        },
+        {
           "source_id": "FISRC-b54b83abf2f3608c",
           "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
           "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
           "source_content_hash": "ef996bef620416ce",
           "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
           "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
-        },
-        {
-          "source_id": "FISRC-58d9b75c832876e1",
-          "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
-          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
-          "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
-          "quote": "The round includes participation from new investors Bain Capital Ventures (BCV) and Redpoint.",
-          "quote_hash": "822a3945748c96e0b198b8636dc8927a98d0b6a3a62939960ae30251cac425cb"
-        },
-        {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
-          "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
         }
       ],
       "coverage_status": "researched",

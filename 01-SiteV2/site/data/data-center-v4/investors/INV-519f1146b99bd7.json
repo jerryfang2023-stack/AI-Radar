@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,24 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
+    "current_round_count": 9,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 8,
+    "portfolio_company_count": 9,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-17",
-    "latest_disclosed_at": "2026-11-07",
+    "latest_disclosed_at": "2026-11-11",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 1,
-      "participant": 6
+      "participant": 7
     },
     "round_codes": [
       "other",
+      "series_c",
       "series_e",
       "series_f",
       "strategic",
@@ -105,6 +106,11 @@
         "name": "Fal"
       },
       {
+        "entity_id": "EN-8da5eafb322ee86e",
+        "canonical_entity_id": "",
+        "name": "Fractile"
+      },
+      {
         "entity_id": "EN-7d3194f79e645c42",
         "canonical_entity_id": "EN-7d3194f79e645c42",
         "name": "OpenAI"
@@ -126,6 +132,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-0a3c2746f032c38b",
+        "funding_insight_id": "FI-70d164861fee0af8",
+        "event_ids": [
+          "EV-c3fdd52a255c0770"
+        ],
+        "company_entity_id": "EN-8da5eafb322ee86e",
+        "company_canonical_entity_id": "",
+        "company_name": "Fractile",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$720 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 720000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.2 亿美元"
+        },
+        "announced_at": "2026-11-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-59233bfbeb9628bf",
+            "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+            "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+            "source_content_hash": "97c1f5cc5dda1d68",
+            "quote": "New investors include CapitalG, Dragoneer, DST Global, BlackRock and T. Rowe Price",
+            "quote_hash": "82b669877030389946f1936bd42e4a16b823664f3b7bd6e7f8a2592e5e4b3d2b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-63a0f111481e50f5",
         "funding_insight_id": "FI-7183666b813db13e",
@@ -484,6 +530,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-59233bfbeb9628bf",
+        "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+        "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+        "source_content_hash": "97c1f5cc5dda1d68",
+        "quote": "New investors include CapitalG, Dragoneer, DST Global, BlackRock and T. Rowe Price",
+        "quote_hash": "82b669877030389946f1936bd42e4a16b823664f3b7bd6e7f8a2592e5e4b3d2b"
+      },
+      {
         "source_id": "FISRC-3952ae60d488ad95",
         "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
         "source_title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
@@ -581,16 +635,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮参投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-59233bfbeb9628bf"
+        },
+        {
           "description": "融资来源记录：OpenAI · 轮次未披露 · 2026-11-07 · 本轮参投 · $11 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3952ae60d488ad95"
         },
         {
           "description": "融资来源记录：Fal · F轮 · 2026-11-03 · 本轮参投 · $1.3 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-05d1a3678a8eb502"
-        },
-        {
-          "description": "融资来源记录：Tenstorrent · E轮 · 2026-10-19 · 本轮参投 · 15亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c79323219068494a"
         }
       ],
       "profile_type": "organization",
@@ -628,6 +682,14 @@
           "quote_hash": "3a4b03036beed2d4ef2c38cdcc363784f84038a346846ea4fa9c36465ce30bcf"
         },
         {
+          "source_id": "FISRC-59233bfbeb9628bf",
+          "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+          "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+          "source_content_hash": "97c1f5cc5dda1d68",
+          "quote": "New investors include CapitalG, Dragoneer, DST Global, BlackRock and T. Rowe Price",
+          "quote_hash": "82b669877030389946f1936bd42e4a16b823664f3b7bd6e7f8a2592e5e4b3d2b"
+        },
+        {
           "source_id": "FISRC-3952ae60d488ad95",
           "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
           "source_title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
@@ -642,21 +704,13 @@
           "source_content_hash": "619f662b2bc706a305ff822133dffd3beef6778aff3e85d67eaad24f1d73986a",
           "quote": "has raised $1.3 billion in its latest funding round led by Bessemer Venture Partners, with participation from Nvidia, Sound Ventures, and T. Rowe Price.",
           "quote_hash": "af3f70ce5a2969a9c1751d6c974edf782b58afed8bb97c3f5a9c07d9c1b71580"
-        },
-        {
-          "source_id": "FISRC-c79323219068494a",
-          "source_url": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
-          "source_title": "Tenstorrent Announces a $1.5B Series E at a $6.2B valuation | Tenstorrent",
-          "source_content_hash": "0f9b3358bba4cf36",
-          "quote": "with participation from new and existing investors including Agostinelli Group, ARK Invest, Brett Barna, Cadence Ventures, Eclipse, Fidelity Management & Research Company, Maverick Silicon, Morgan Stanley, Protagonist, Sandisk, T. Rowe Price*, Tether Investments, Troluce Capital, Virtu Financial, and XTX Markets.",
-          "quote_hash": "4026adea3fbb1fb46bb8ef63b7dfde23b8fb80d2ea0244ca103bbe6a6a7b54b6"
         }
       ],
       "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {
-        "activities[8].role": {
+        "activities[9].role": {
           "text": "Series E 参投方",
           "source_hash": "4c5721848f6406bd6f2e84ed29d011b6af208116ac9cea44324fd35d85384690",
           "provider": "deepseek",

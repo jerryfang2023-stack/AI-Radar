@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,21 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 3,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
     "first_disclosed_at": "2026-05-27",
-    "latest_disclosed_at": "2026-10-12",
+    "latest_disclosed_at": "2026-11-11",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 2,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "angel",
@@ -83,6 +83,11 @@
       "pre_series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-0bec4272ffd58fbb",
+        "canonical_entity_id": "",
+        "name": "泛函数"
+      },
       {
         "entity_id": "EN-2a5cec351194b94a",
         "canonical_entity_id": "",
@@ -100,6 +105,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-cd6505bda2bbbea9",
+        "funding_insight_id": "FI-7cc504bfbad2008a",
+        "event_ids": [
+          "EV-99e376ee2aa07168"
+        ],
+        "company_entity_id": "EN-0bec4272ffd58fbb",
+        "company_canonical_entity_id": "",
+        "company_name": "泛函数",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-11-11",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e7925e22bb32139a",
+            "source_url": "https://news.pedaily.cn/202611/571696.shtml",
+            "source_title": "AI原生芯片设计公司「泛函数」完成近亿元天使轮融资",
+            "source_content_hash": "8bc48bacb2868149e492f92781294866ff3260723f3a710770f51c153cd9cad0",
+            "quote": "由上海未来产业基金领投，上海信投、上海科创集团、富海重产基金、徐汇资本、宽桥恒松、无限基金联合投资",
+            "quote_hash": "b86bd0f38d4b410a1e9f2cb4668e2c6b17f757ff452f4f7addf759afead450d7"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f0843b53d9e48cd7",
         "funding_insight_id": "FI-24db5bbc2d1045e9",
@@ -287,6 +332,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-e7925e22bb32139a",
+        "source_url": "https://news.pedaily.cn/202611/571696.shtml",
+        "source_title": "AI原生芯片设计公司「泛函数」完成近亿元天使轮融资",
+        "source_content_hash": "8bc48bacb2868149e492f92781294866ff3260723f3a710770f51c153cd9cad0",
+        "quote": "由上海未来产业基金领投，上海信投、上海科创集团、富海重产基金、徐汇资本、宽桥恒松、无限基金联合投资",
+        "quote_hash": "b86bd0f38d4b410a1e9f2cb4668e2c6b17f757ff452f4f7addf759afead450d7"
+      },
+      {
         "source_id": "FISRC-2b099c2278c91b1d",
         "source_url": "https://finance.sina.com.cn/roll/2026-10-12/doc-iniuxwif5328359.shtml",
         "source_title": "10亿！上海大模型创企拿下新融资",
@@ -388,6 +441,10 @@
           "source_id": "FISRC-e666934339b27e85"
         },
         {
+          "description": "融资来源记录：泛函数 · 天使轮 · 2026-11-11 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e7925e22bb32139a"
+        },
+        {
           "description": "融资来源记录：上海模思智能科技有限公司 · Pre-A轮 · 2026-10-12 · 本轮参投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2b099c2278c91b1d"
         },
@@ -450,6 +507,14 @@
           "source_content_hash": "a3d55e3960392661",
           "quote": "本轮由上海国投旗下上海科创集团、复旦科创联合领投",
           "quote_hash": "a48247a13b3e5d8796103000c085404f8869646a8d4a74f21ef4427981deadea"
+        },
+        {
+          "source_id": "FISRC-e7925e22bb32139a",
+          "source_url": "https://news.pedaily.cn/202611/571696.shtml",
+          "source_title": "AI原生芯片设计公司「泛函数」完成近亿元天使轮融资",
+          "source_content_hash": "8bc48bacb2868149e492f92781294866ff3260723f3a710770f51c153cd9cad0",
+          "quote": "由上海未来产业基金领投，上海信投、上海科创集团、富海重产基金、徐汇资本、宽桥恒松、无限基金联合投资",
+          "quote_hash": "b86bd0f38d4b410a1e9f2cb4668e2c6b17f757ff452f4f7addf759afead450d7"
         },
         {
           "source_id": "FISRC-2b099c2278c91b1d",

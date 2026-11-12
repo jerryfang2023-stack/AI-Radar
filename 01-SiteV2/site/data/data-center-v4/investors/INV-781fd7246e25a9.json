@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,8 @@
     "first_disclosed_at": "2026-05-13",
     "latest_disclosed_at": "2026-05-13",
     "role_counts": {
-      "co_lead": 1
+      "co_lead": 1,
+      "historical_or_ambiguous": 1
     },
     "round_codes": [
       "series_b"
@@ -124,6 +125,38 @@
             "quote_hash": "70d43a0dda6879daeefef7373eac8d92a1c46975d8c8284870ef7e5cc2e3112e"
           }
         ]
+      },
+      {
+        "activity_id": "IA-c8907255792f8651",
+        "funding_insight_id": "FI-70d164861fee0af8",
+        "event_ids": [
+          "EV-c3fdd52a255c0770"
+        ],
+        "company_entity_id": "EN-8da5eafb322ee86e",
+        "company_canonical_entity_id": "",
+        "company_name": "Fractile",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "领投B轮融资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1978b968cc5f83b6",
+            "source_url": "https://multiples.vc/private-comps/fractile",
+            "source_title": "Fractile Valuation, Funding & Investors | Multiples",
+            "source_content_hash": "79657c2f5b59fd03",
+            "quote": "raised $220 million in a Series B funding round led by Accel, Factorial Funds, and Founders Fund",
+            "quote_hash": "31735f23f725f6baf8dd12dac61c0000d268d3a4fa529ec38efde280bd135a69"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "49c881bff41c0376",
         "quote": "a financing round led by Accel, Factorial Funds, and Founders Fund",
         "quote_hash": "70d43a0dda6879daeefef7373eac8d92a1c46975d8c8284870ef7e5cc2e3112e"
+      },
+      {
+        "source_id": "FISRC-1978b968cc5f83b6",
+        "source_url": "https://multiples.vc/private-comps/fractile",
+        "source_title": "Fractile Valuation, Funding & Investors | Multiples",
+        "source_content_hash": "79657c2f5b59fd03",
+        "quote": "raised $220 million in a Series B funding round led by Accel, Factorial Funds, and Founders Fund",
+        "quote_hash": "31735f23f725f6baf8dd12dac61c0000d268d3a4fa529ec38efde280bd135a69"
       }
     ],
     "public_profile": {
@@ -151,6 +192,10 @@
         {
           "description": "融资来源记录：Fractile · B轮 · 2026-05-13 · 本轮联合领投 · 2.2亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-62071134d28f47b9"
+        },
+        {
+          "description": "融资来源记录：Fractile · 历史轮次未披露 · 领投B轮融资。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1978b968cc5f83b6"
         }
       ],
       "profile_type": "organization",
@@ -186,6 +231,14 @@
           "source_content_hash": "49c881bff41c0376",
           "quote": "a financing round led by Accel, Factorial Funds, and Founders Fund",
           "quote_hash": "70d43a0dda6879daeefef7373eac8d92a1c46975d8c8284870ef7e5cc2e3112e"
+        },
+        {
+          "source_id": "FISRC-1978b968cc5f83b6",
+          "source_url": "https://multiples.vc/private-comps/fractile",
+          "source_title": "Fractile Valuation, Funding & Investors | Multiples",
+          "source_content_hash": "79657c2f5b59fd03",
+          "quote": "raised $220 million in a Series B funding round led by Accel, Factorial Funds, and Founders Fund",
+          "quote_hash": "31735f23f725f6baf8dd12dac61c0000d268d3a4fa529ec38efde280bd135a69"
         }
       ],
       "last_verified_at": "2026-10-03"

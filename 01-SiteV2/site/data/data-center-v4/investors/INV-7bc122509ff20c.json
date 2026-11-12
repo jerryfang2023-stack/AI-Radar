@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-09-24",
     "latest_disclosed_at": "2026-09-24",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -124,6 +125,38 @@
             "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
           }
         ]
+      },
+      {
+        "activity_id": "IA-a898fe56f539afac",
+        "funding_insight_id": "FI-70d164861fee0af8",
+        "event_ids": [
+          "EV-c3fdd52a255c0770"
+        ],
+        "company_entity_id": "EN-8da5eafb322ee86e",
+        "company_canonical_entity_id": "",
+        "company_name": "Fractile",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1978b968cc5f83b6",
+            "source_url": "https://multiples.vc/private-comps/fractile",
+            "source_title": "Fractile Valuation, Funding & Investors | Multiples",
+            "source_content_hash": "79657c2f5b59fd03",
+            "quote": "Kindred Capital (lead); NATO Innovation Fund (lead); Oxford Science Enterprises (lead)",
+            "quote_hash": "cc671758505d7a974bac56eb469e4cef2a7ebd3bb81b12540d6607a108c7da6a"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "e53f1e2c96a09a59b3d2c0250baa37098aa57f90132cd42ed81a40d86422cf50",
         "quote": "with participation from Menlo Ventures' Anthology Fund, Catalio Capital Management, European Tech Collective, Firebrand River Capital, Inception Fund, King Philanthropies, NATO Innovation Fund, NVIDIA, PostScriptum, Redalpine, The Rockefeller Foundation, Singular, Sovereign AI and True Ventures.",
         "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
+      },
+      {
+        "source_id": "FISRC-1978b968cc5f83b6",
+        "source_url": "https://multiples.vc/private-comps/fractile",
+        "source_title": "Fractile Valuation, Funding & Investors | Multiples",
+        "source_content_hash": "79657c2f5b59fd03",
+        "quote": "Kindred Capital (lead); NATO Innovation Fund (lead); Oxford Science Enterprises (lead)",
+        "quote_hash": "cc671758505d7a974bac56eb469e4cef2a7ebd3bb81b12540d6607a108c7da6a"
       }
     ],
     "public_profile": {
@@ -176,6 +217,10 @@
         {
           "description": "融资来源记录：Basecamp Research · C轮 · 2026-09-24 · 本轮参投 · $140M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ecd2ea74974f4ff3"
+        },
+        {
+          "description": "融资来源记录：Fractile · 历史轮次未披露 · 种子轮领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1978b968cc5f83b6"
         }
       ],
       "contacts": [],
@@ -203,6 +248,14 @@
           "source_content_hash": "e53f1e2c96a09a59b3d2c0250baa37098aa57f90132cd42ed81a40d86422cf50",
           "quote": "with participation from Menlo Ventures' Anthology Fund, Catalio Capital Management, European Tech Collective, Firebrand River Capital, Inception Fund, King Philanthropies, NATO Innovation Fund, NVIDIA, PostScriptum, Redalpine, The Rockefeller Foundation, Singular, Sovereign AI and True Ventures.",
           "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
+        },
+        {
+          "source_id": "FISRC-1978b968cc5f83b6",
+          "source_url": "https://multiples.vc/private-comps/fractile",
+          "source_title": "Fractile Valuation, Funding & Investors | Multiples",
+          "source_content_hash": "79657c2f5b59fd03",
+          "quote": "Kindred Capital (lead); NATO Innovation Fund (lead); Oxford Science Enterprises (lead)",
+          "quote_hash": "cc671758505d7a974bac56eb469e4cef2a7ebd3bb81b12540d6607a108c7da6a"
         }
       ],
       "last_verified_at": "2026-10-03",

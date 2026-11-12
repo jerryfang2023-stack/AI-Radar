@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,7 +63,8 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-60366423eaa67216"
+      "EV-60366423eaa67216",
+      "EV-c75feed1a832645e"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -76,7 +77,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2025-09-16",
-    "lastSeen": "2026-09-26",
+    "lastSeen": "2026-11-12",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -84,12 +85,41 @@
       ],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-c75feed1a832645e"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-c75feed1a832645e",
+        "dataDate": "2026-11-12",
+        "date": "2026-11-12",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Nothing CEO 裴宇展示公司首款 AI 设备，预计采用无屏幕设计",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-1785cfc3bc6ac773"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-1785cfc3bc6ac773"
+        ]
+      },
       {
         "id": "EV-60366423eaa67216",
         "dataDate": "2026-09-26",
@@ -219,6 +249,7 @@
         "EV-b93102125cc062e3",
         "EV-a6b4fa32cce7c483",
         "EV-2ffc3377977da114",
+        "EV-c75feed1a832645e",
         "EV-952a95bff6b05d4f",
         "EV-cff5848b8c5453af",
         "EV-02015794e4c719d0",
@@ -267,7 +298,7 @@
         "HW-073f0034b9be13b2"
       ],
       "firstSeen": "2025-09-16",
-      "lastSeen": "2026-10-24"
+      "lastSeen": "2026-11-12"
     },
     {
       "id": "TX-use_case-content_creation",

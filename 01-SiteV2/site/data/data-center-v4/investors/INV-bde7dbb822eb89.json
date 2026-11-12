@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-10",
-    "currentDate": "2026-11-10",
-    "eventCount": 4419,
+    "latestDataDate": "2026-11-12",
+    "currentDate": "2026-11-12",
+    "eventCount": 4436,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-12",
-    "latest_disclosed_at": "2026-05-28",
+    "latest_disclosed_at": "2026-11-11",
     "role_counts": {
       "co_lead": 1,
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "series_c",
       "series_f",
       "series_g",
       "series_h"
@@ -88,12 +89,57 @@
         "name": "Anthropic"
       },
       {
+        "entity_id": "EN-8da5eafb322ee86e",
+        "canonical_entity_id": "",
+        "name": "Fractile"
+      },
+      {
         "entity_id": "EN-7d3194f79e645c42",
         "canonical_entity_id": "EN-7d3194f79e645c42",
         "name": "OpenAI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-0d973ea3267cff47",
+        "funding_insight_id": "FI-70d164861fee0af8",
+        "event_ids": [
+          "EV-c3fdd52a255c0770"
+        ],
+        "company_entity_id": "EN-8da5eafb322ee86e",
+        "company_canonical_entity_id": "",
+        "company_name": "Fractile",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$720 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 720000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7.2 亿美元"
+        },
+        "announced_at": "2026-11-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-59233bfbeb9628bf",
+            "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+            "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+            "source_content_hash": "97c1f5cc5dda1d68",
+            "quote": "New investors include CapitalG, Dragoneer, DST Global, BlackRock and T. Rowe Price",
+            "quote_hash": "82b669877030389946f1936bd42e4a16b823664f3b7bd6e7f8a2592e5e4b3d2b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-fdc59f1a8bd461ae",
         "funding_insight_id": "FI-ef9bfb1255d96618",
@@ -217,6 +263,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-59233bfbeb9628bf",
+        "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+        "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+        "source_content_hash": "97c1f5cc5dda1d68",
+        "quote": "New investors include CapitalG, Dragoneer, DST Global, BlackRock and T. Rowe Price",
+        "quote_hash": "82b669877030389946f1936bd42e4a16b823664f3b7bd6e7f8a2592e5e4b3d2b"
+      },
+      {
         "source_id": "FISRC-b5e22ae086a6b353",
         "source_url": "https://www.anthropic.com/news/series-h",
         "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
@@ -270,16 +324,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮参投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-59233bfbeb9628bf"
+        },
+        {
           "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮领投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b5e22ae086a6b353"
         },
         {
           "description": "融资来源记录：OpenAI · F轮 · 2026-03-31 · 本轮参投 · $1220亿。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b86e0fbe62dfd3dc"
-        },
-        {
-          "description": "融资来源记录：Anthropic · G轮 · 2026-02-12 · 本轮联合领投 · $30 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b58bb99dfec2e318"
         }
       ],
       "contacts": [],
@@ -309,6 +363,14 @@
           "quote_hash": "70532fd58332728e073b2a1552338ecd45e28d7d7d8ba528fff43d52d88800ff"
         },
         {
+          "source_id": "FISRC-59233bfbeb9628bf",
+          "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+          "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+          "source_content_hash": "97c1f5cc5dda1d68",
+          "quote": "New investors include CapitalG, Dragoneer, DST Global, BlackRock and T. Rowe Price",
+          "quote_hash": "82b669877030389946f1936bd42e4a16b823664f3b7bd6e7f8a2592e5e4b3d2b"
+        },
+        {
           "source_id": "FISRC-b5e22ae086a6b353",
           "source_url": "https://www.anthropic.com/news/series-h",
           "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
@@ -323,14 +385,6 @@
           "source_content_hash": "4e51c91e5fc7160c",
           "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
           "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
-        },
-        {
-          "source_id": "FISRC-b58bb99dfec2e318",
-          "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
-          "source_title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation \\ Anthropic",
-          "source_content_hash": "c231466686007dd5",
-          "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX",
-          "quote_hash": "6019b747ab0685aaf7a1a94e528c3bf9e16d73fee9f4b55ee910413ab94d63a7"
         }
       ],
       "last_verified_at": "2026-10-04",
