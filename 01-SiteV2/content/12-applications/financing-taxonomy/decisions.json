@@ -37846,8 +37846,8 @@
         2,
         3
       ],
-      "rationale": "主营激光雷达SPAD接收芯片及机器视觉芯片，属芯片设计，非机器人本体或核心执行部件。",
-      "input_hash": "a8a004184329439952d7de3cfed82ffea03ade8f1961f35f9f789cee704bfbb2",
+      "rationale": "原文明确已商业化主营为面阵SPAD激光雷达芯片及通用机器视觉：车规级芯片已在主流车企前装量产、累计出货逾百万颗。RGBD新芯片面向智能汽车、具身智能及工业智能三类场景，计划2027年产业化；没有证据显示机器人本体、机器人专用核心部件或自主物理系统平台为主营。不能仅凭具身客户场景排除通用视觉芯片业务；按主营产品归入AI芯片，企业客户。该判断并非将机器人核心部件限缩为执行器。",
+      "input_hash": "27d0a18cf3bb701294c6907c0dc729315d90fdac695b0a477b0ed680df4220bc",
       "evidence_refs": [
         {
           "source_id": "FISRC-5c9f6bb8f512b556",
@@ -37862,9 +37862,48 @@
           "quote": "阜时科技依托自主研发的SPAD（单光子雪崩二极管）芯片与全固态光扫描技术，布局单芯片RGBD技术，致力于在单颗芯片上实现彩色图像与深度信息的原生融合"
         }
       ],
-      "provider": "deepseek",
-      "model": "deepseek-flash",
-      "generated_at": "2026-11-13T04:39:57.727Z"
+      "provider": "responsible_original_review",
+      "model": "Codex",
+      "generated_at": "2026-11-13T04:57:15.762Z",
+      "reviewed_at": "2026-11-13T04:57:15.762Z",
+      "reviewed_by": "Codex responsible financing review",
+      "review_history": [
+        {
+          "reviewed_at": "2026-11-13T04:57:15.762Z",
+          "previous_provider": "deepseek",
+          "previous_model": "deepseek-flash",
+          "previous_rationale": "主营激光雷达SPAD接收芯片及机器视觉芯片，属芯片设计，非机器人本体或核心执行部件。",
+          "previous_input_hash": "a8a004184329439952d7de3cfed82ffea03ade8f1961f35f9f789cee704bfbb2",
+          "reason": "Address exact-head original review scope and company-identity hold without new discovery."
+        }
+      ],
+      "responsible_review": {
+        "source_url": "https://news.pedaily.cn/202611/571736.shtml",
+        "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+        "identity_evidence": {
+          "source_url": "https://news.pedaily.cn/202611/571736.shtml",
+          "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+          "quote": "阜时科技有限公司（下称“阜时科技”）致力于激光雷达核心芯片及多种机器视觉解决方案研发，行业首家发布及量产面阵SPAD激光雷达接收芯片及解决方案。",
+          "quote_hash": "f2b1e9c6fa6139d2ee7ef71684b116fd2f899c88cd58d55b35c00920d47f43b5"
+        },
+        "scope_evidence": [
+          {
+            "source_url": "https://news.pedaily.cn/202611/571736.shtml",
+            "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+            "quote": "目前，公司全固态激光雷达SPAD芯片已实现主流车企车规级前装量产，累计出货突破百万颗。",
+            "quote_hash": "f96f8ee102c1164dffa3d249978694096aaa094c3f49472cef771c20822cb9e0"
+          },
+          {
+            "source_url": "https://news.pedaily.cn/202611/571736.shtml",
+            "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+            "quote": "为智能汽车、具身智能及工业智能提供新一代空间感知核心部件，计划于2027年推进产业化。",
+            "quote_hash": "1a8afe699d5251ca8433f517358138de189643f126b8a6d8e8c3c32581946b91"
+          }
+        ],
+        "identity_resolution": "FICID-FUSHI-20261113; same application EN-8285065e2176cc74; no global entity merge",
+        "disposition": "included_general_ai_chips",
+        "rationale": "原文明确已商业化主营为面阵SPAD激光雷达芯片及通用机器视觉：车规级芯片已在主流车企前装量产、累计出货逾百万颗。RGBD新芯片面向智能汽车、具身智能及工业智能三类场景，计划2027年产业化；没有证据显示机器人本体、机器人专用核心部件或自主物理系统平台为主营。不能仅凭具身客户场景排除通用视觉芯片业务；按主营产品归入AI芯片，企业客户。该判断并非将机器人核心部件限缩为执行器。"
+      }
     },
     "EV-85108d804ef3b160": {
       "id": "EV-85108d804ef3b160",
