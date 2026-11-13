@@ -37720,7 +37720,190 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-11-12T03:49:59.608Z"
+    },
+    "EV-28354a9359e59d75": {
+      "id": "EV-28354a9359e59d75",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "specialist-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        1,
+        4,
+        6,
+        7
+      ],
+      "rationale": "公司自研并后训练编码专用基础模型Mirendil-Base与Fern，属专用模型。",
+      "input_hash": "fb680da748734bcc4556688f5b652ff7f297b959f424d26dda28ca7637facc12",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d1e26c6da46f9703",
+          "quote": "We are a frontier lab building systems that excel at AI R&D."
+        },
+        {
+          "source_id": "FISRC-5d5042b2dbd57003",
+          "quote": "Mirendil subsequently post-trained Mirendil-Base into Fern 0.1, its first model."
+        },
+        {
+          "source_id": "FISRC-d295a6810fe1d505",
+          "quote": "Mirendil-Base is the first in a series of coding-specialized models"
+        },
+        {
+          "source_id": "FISRC-d295a6810fe1d505",
+          "quote": "Mirendil-Base is in the 100B–500B parameter range"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-13T03:51:12.968Z"
+    },
+    "EV-873fbd8a72c75fab": {
+      "id": "EV-873fbd8a72c75fab",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "主营支持AGI算法的高性价比推理芯片，属AI芯片而非机器人本体。",
+      "input_hash": "2d6c8d7b53de296a0fa93647560e84c4fa945c84671f3886dab7a876fbb76d42",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f940c9c397ad0707",
+          "quote": "首款产品定位于支持AGI算法的高性价比推理芯片，面向大模型、世界模型、通用智能体及机器人等应用，在兼容主流模型的同时，为逻辑、因果与价值推理增加专用硬件支持。"
+        },
+        {
+          "source_id": "FISRC-c83e93672458afd1",
+          "quote": "通芯智能以自研的Vector+Tensor+AGI Core三单元架构为基础，打造既支持向量、张量计算，又为物理、社交智能等提供原生支持的高性价比芯片。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-13T03:51:12.968Z"
+    },
+    "EV-5f1dc5e6af486dfe": {
+      "id": "EV-5f1dc5e6af486dfe",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "manufacturing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "面向工厂产线提供AI视觉质检与检测系统，属工业制造软件。",
+      "input_hash": "e84cd5903efee621fea6773145c16781627de7cf974bd6807c911f10bfb89df6",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-2e57818eaf8972a7",
+          "quote": "Tristar AI, the real-time intelligence layer for the factory floor"
+        },
+        {
+          "source_id": "FISRC-54f750fa6867cd9e",
+          "quote": "Tristar uses AI-powered computer vision to detect quality issues in real time"
+        },
+        {
+          "source_id": "FISRC-2e57818eaf8972a7",
+          "quote": "Tristar uses AI-powered visual inspection to identify defects as materials move through manufacturing lines."
+        },
+        {
+          "source_id": "FISRC-2e57818eaf8972a7",
+          "quote": "The platform integrates with the cameras, PLCs, sensors, MES, ERP and maintenance systems manufacturers already use, so there's no need to replace existing technology."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-13T03:51:12.968Z"
+    },
+    "EV-5bf5873e79f6a3c8": {
+      "id": "EV-5bf5873e79f6a3c8",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "主营激光雷达SPAD接收芯片与机器视觉芯片，属芯片设计而非机器人本体。",
+      "input_hash": "a8a004184329439952d7de3cfed82ffea03ade8f1961f35f9f789cee704bfbb2",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5c9f6bb8f512b556",
+          "quote": "阜时科技有限公司（下称“阜时科技”）致力于激光雷达核心芯片及多种机器视觉解决方案研发，行业首家发布及量产面阵SPAD激光雷达接收芯片及解决方案。"
+        },
+        {
+          "source_id": "FISRC-5c9f6bb8f512b556",
+          "quote": "目前，公司全固态激光雷达SPAD芯片已实现主流车企车规级前装量产，累计出货突破百万颗。"
+        },
+        {
+          "source_id": "FISRC-5c9f6bb8f512b556",
+          "quote": "阜时科技依托自主研发的SPAD（单光子雪崩二极管）芯片与全固态光扫描技术，布局单芯片RGBD技术，致力于在单颗芯片上实现彩色图像与深度信息的原生融合"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-13T03:51:12.968Z"
+    },
+    "EV-85108d804ef3b160": {
+      "id": "EV-85108d804ef3b160",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "home-devices",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "软硬件一体的家庭客厅AI互动娱乐硬件，属消费AI家庭设备。",
+      "input_hash": "1f3a6dad168e0057697136de21041875a856f8a6cf446b211afdca27a23b4b10",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d972a22e56f20646",
+          "quote": "深圳市飞拓星驰科技有限公司（下称“飞拓星驰”）是一家AI互动娱乐公司，围绕AI游戏引擎、AI端侧模型和家庭娱乐硬件同步布局"
+        },
+        {
+          "source_id": "FISRC-eacc5c04a38650b6",
+          "quote": "飞拓星驰定位AI互动娱乐，主张软硬件一体"
+        },
+        {
+          "source_id": "FISRC-d972a22e56f20646",
+          "quote": "公司希望打造一套全家可用、轻松参与的客厅互动娱乐系统"
+        },
+        {
+          "source_id": "FISRC-eacc5c04a38650b6",
+          "quote": "首款硬件产品计划于2027年CES首次亮相，首期面向北美家庭市场"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-13T03:51:12.968Z"
     }
   },
-  "generated_at": "2026-11-12T03:49:59.608Z"
+  "generated_at": "2026-11-13T03:51:12.968Z"
 }

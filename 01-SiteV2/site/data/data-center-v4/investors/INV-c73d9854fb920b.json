@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-12",
-    "currentDate": "2026-11-12",
-    "eventCount": 4436,
+    "latestDataDate": "2026-11-13",
+    "currentDate": "2026-11-13",
+    "eventCount": 4448,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,9 +54,9 @@
   },
   "institution": {
     "id": "INV-c73d9854fb920b",
-    "name": "Nvidia",
+    "name": "NVIDIA",
     "aliases": [
-      "NVIDIA"
+      "Nvidia"
     ],
     "canonical_entity_id": "EN-8d4321d936320802",
     "investor_kind": "corporate_investor",
@@ -64,7 +64,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 32,
-    "historical_or_ambiguous_count": 9,
+    "historical_or_ambiguous_count": 10,
     "portfolio_company_count": 28,
     "market_regions": [
       "GLOBAL"
@@ -74,7 +74,7 @@
     "first_disclosed_at": "2025-09-09",
     "latest_disclosed_at": "2026-11-03",
     "role_counts": {
-      "historical_or_ambiguous": 9,
+      "historical_or_ambiguous": 10,
       "lead": 3,
       "participant": 29
     },
@@ -1757,6 +1757,38 @@
         ]
       },
       {
+        "activity_id": "IA-343c059bfe2ac4f2",
+        "funding_insight_id": "FI-03bb0617eea57ed6",
+        "event_ids": [
+          "EV-28354a9359e59d75"
+        ],
+        "company_entity_id": "EN-b81b59c4259c46d6",
+        "company_canonical_entity_id": "",
+        "company_name": "Mirendil",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮后投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5d5042b2dbd57003",
+            "source_url": "https://www.unite.ai/mirendil-raises-1b-series-a-to-bring-frontier-ai-r-and-d-to-more-teams/",
+            "source_title": "Mirendil Raises $1B Series A to Bring Frontier AI R&D to More Teams",
+            "source_content_hash": "4ca2252747181568",
+            "quote": "followed by investment from NVIDIA and others",
+            "quote_hash": "c1b338ee7a7b1f893f0e93f48027fc0785abdad93e497070321112b70be4cf31"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-53ab60e24b83a8d1",
         "funding_insight_id": "FI-b5ab66641aebf069",
         "event_ids": [
@@ -2189,6 +2221,14 @@
         "source_content_hash": "52d288f9f7f1c202",
         "quote": "Valor, Atreides, Kleiner Perkins, A*, and Nvidia are also investors in the company.",
         "quote_hash": "293bdd5b29bf754d6d6eb03c30823da7a8b3aacca83c06c9d2e70bcf88a2f919"
+      },
+      {
+        "source_id": "FISRC-5d5042b2dbd57003",
+        "source_url": "https://www.unite.ai/mirendil-raises-1b-series-a-to-bring-frontier-ai-r-and-d-to-more-teams/",
+        "source_title": "Mirendil Raises $1B Series A to Bring Frontier AI R&D to More Teams",
+        "source_content_hash": "4ca2252747181568",
+        "quote": "followed by investment from NVIDIA and others",
+        "quote_hash": "c1b338ee7a7b1f893f0e93f48027fc0785abdad93e497070321112b70be4cf31"
       },
       {
         "source_id": "FISRC-85e83dc29afc39fd",

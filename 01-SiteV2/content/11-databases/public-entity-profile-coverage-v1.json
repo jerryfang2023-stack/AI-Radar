@@ -1983,16 +1983,16 @@
           "source_id": "kp_about"
         },
         {
+          "description": "融资来源记录：Mirendil · A轮 · 2026-11-12 · 本轮领投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-91b5c399f66248bf"
+        },
+        {
           "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d40817bd8696706a"
         },
         {
           "description": "融资来源记录：Modal · D轮 · 2026-10-14 · 本轮参投 · $750 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b54b83abf2f3608c"
-        },
-        {
-          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dc8fb918b056c843"
         }
       ],
       "contacts": [
@@ -2014,6 +2014,14 @@
           "quote_hash": "ef9f5d49eeaa7661a644ec18334f865187a5bd9565cfd4e41c5149c6687ae704"
         },
         {
+          "source_id": "FISRC-91b5c399f66248bf",
+          "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+          "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+          "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+          "quote": "we've raised $1B in a Series A, led by Kleiner Perkins and Clearlake Capital",
+          "quote_hash": "d905bce0e2c6176188704005b260f64dd8c80eef2f58262dddc988ee3a366009"
+        },
+        {
           "source_id": "FISRC-d40817bd8696706a",
           "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
           "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
@@ -2028,14 +2036,6 @@
           "source_content_hash": "ef996bef620416ce",
           "quote": "Kleiner Perkins joined, and all of our existing investors participated",
           "quote_hash": "4c38dd29c6b26da641a4ef8bdc693c390bb1c74ce55ef43dfadd3cef58cf0568"
-        },
-        {
-          "source_id": "FISRC-dc8fb918b056c843",
-          "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
-          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
-          "source_content_hash": "0b4ca5291b20197e1a333b32e3a6fd462793e5829ad8645ade5f6e59221e163d",
-          "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
-          "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -6175,6 +6175,174 @@
       "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
+    "INV-c9acfb4744dbfa": {
+      "summary": "Battery Ventures 是一家自 1983 年起全球投资科技公司的投资机构，投资阶段覆盖初创、成长和收购，领域包括应用软件、基础设施软件、消费、工业科技与生命科学工具。官网称其目前投资第十五支旗舰基金 Battery Ventures XV，规模为 32.5 亿美元；投资组合页面列示历史投资超过 450 家公司。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "1983",
+          "source_id": "battery_home"
+        },
+        {
+          "field": "investment_stages",
+          "label": "官网披露投资阶段",
+          "value": [
+            "初创期",
+            "成长期",
+            "收购"
+          ],
+          "source_id": "battery_company"
+        },
+        {
+          "field": "sectors",
+          "label": "官网披露领域",
+          "value": [
+            "应用软件",
+            "基础设施软件",
+            "消费",
+            "工业科技与生命科学工具"
+          ],
+          "source_id": "battery_home"
+        },
+        {
+          "field": "current_fund",
+          "label": "当前旗舰基金",
+          "value": "Battery Ventures XV，32.5 亿美元；官网当前披露",
+          "source_id": "battery_home"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "历史投资组合规模",
+          "value": "超过 450 家公司；官网未给出统计截至日期",
+          "source_id": "battery_company"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1983",
+          "description": "官网记载 Battery Ventures 自 1983 年起投资科技公司。",
+          "source_id": "battery_home"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网公司目录称 Battery 在四十余年历史中投资超过 450 家公司；该数字为机构自述的历史累计值。",
+          "source_id": "battery_company"
+        },
+        {
+          "description": "官网列举投资范围包括应用软件、基础设施软件、消费、工业科技与生命科学工具，并覆盖初创、成长及收购阶段。",
+          "source_id": "battery_company"
+        },
+        {
+          "description": "融资来源记录：Mirendil · A轮 · 2026-11-12 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-91b5c399f66248bf"
+        },
+        {
+          "description": "融资来源记录：Shackleton AI · 种子轮 · 2026-11-05 · 本轮领投 · $5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-48ad2f372a4431f7"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Battery Ventures",
+          "url": "https://www.battery.com/",
+          "source_id": "battery_home"
+        },
+        {
+          "kind": "address",
+          "label": "波士顿办公室",
+          "value": "One Marina Park Drive, Suite 1100, Boston, MA 02210",
+          "url": "https://www.battery.com/contact/",
+          "source_id": "battery_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "波士顿办公室电话",
+          "value": "+1 617-948-3600",
+          "url": "https://www.battery.com/contact/",
+          "source_id": "battery_contact"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "140 New Montgomery Street, Suite 1200, San Francisco, CA 94105",
+          "url": "https://www.battery.com/contact/",
+          "source_id": "battery_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "旧金山办公室电话",
+          "value": "+1 415-426-5900",
+          "url": "https://www.battery.com/contact/",
+          "source_id": "battery_contact"
+        },
+        {
+          "kind": "email",
+          "label": "合规联系（非融资申请渠道）",
+          "value": "compliance@battery.com",
+          "url": "https://www.battery.com/company/",
+          "source_id": "battery_company"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "battery_home",
+          "source_url": "https://www.battery.com/",
+          "source_title": "Battery Ventures",
+          "source_content_hash": "7c5f4799a5a9cedb93e7a936267ff38af82c058122bc3f6a154002b9e1f98bfc",
+          "quote": "Investing in technology companies globally since 1983. We are currently investing from our 15th flagship fund, Battery Ventures XV, which is capitalized at $3.25 billion.",
+          "quote_hash": "6b8c3ff426970577e74fab79676ec6bc0b2c9be8c6747ee950efbffdcb509abd"
+        },
+        {
+          "source_id": "battery_company",
+          "source_url": "https://www.battery.com/company/",
+          "source_title": "Companies - Battery Ventures",
+          "source_content_hash": "fd68f87dcacdc0c05f33c20848afffa839bd295f25169b02448040571de28a43",
+          "quote": "Battery has invested in more than 450 companies over our 40-year history. Sectors: Application Software, Infrastructure Software, Consumer, Industrial Tech + Life Science Tools. Stages: Early, Growth, Buyout.",
+          "quote_hash": "bffb619a6a11c75c8ddb05f0492adea2d91c26147d182abf96b1b797b3979d68"
+        },
+        {
+          "source_id": "battery_contact",
+          "source_url": "https://www.battery.com/contact/",
+          "source_title": "Contact - Battery Ventures",
+          "source_content_hash": "62f89013a02cfdedbeb7ae1c19d0c52240ecba452254aeb08733614e466c6431",
+          "quote": "Boston: One Marina Park Drive, Suite 1100, Boston, MA 02210; p: (617) 948-3600. San Francisco: 140 New Montgomery Street, Suite 1200, San Francisco, CA 94105; p: (415) 426-5900.",
+          "quote_hash": "abc8cfd33806d0c91159718c14f7544ac05f817502f2f099f26552079ec3f602"
+        },
+        {
+          "source_id": "FISRC-91b5c399f66248bf",
+          "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+          "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+          "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+          "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+          "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+        },
+        {
+          "source_id": "FISRC-48ad2f372a4431f7",
+          "source_url": "https://www.prnewswire.com/news-releases/shackleton-ai-unveils-agentic-operating-system-for-construction-raises-5-million-led-by-battery-ventures-302928375.html",
+          "source_title": "更正 - Shackleton AI",
+          "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
+          "quote": "The company also announced it raised $5 million in seed funding led by Battery Ventures",
+          "quote_hash": "f47089f1e9d419f3632f06ef4ee12820cec8be5192e926b76e155a56819ed370"
+        },
+        {
+          "source_id": "FISRC-2e400276ae80a5d2",
+          "source_url": "https://www.thesaasnews.com/news/shackleton-ai-raises-5m-seed/",
+          "source_title": "Shackleton AI Raises $5M Seed",
+          "source_content_hash": "e5092eb9abc80d55",
+          "quote": "The funding round was led by Battery Ventures",
+          "quote_hash": "d91c567371e190d98dfc9d31223d2d3a5cdae9ca68b8a2a59c34231e46bae0dd"
+        }
+      ],
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
     "INV-816cc0bec9ef97": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -8614,174 +8782,6 @@
         }
       ],
       "last_verified_at": "2026-10-03",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
-    },
-    "INV-c9acfb4744dbfa": {
-      "summary": "Battery Ventures 是一家自 1983 年起全球投资科技公司的投资机构，投资阶段覆盖初创、成长和收购，领域包括应用软件、基础设施软件、消费、工业科技与生命科学工具。官网称其目前投资第十五支旗舰基金 Battery Ventures XV，规模为 32.5 亿美元；投资组合页面列示历史投资超过 450 家公司。",
-      "facts": [
-        {
-          "field": "founded_year",
-          "label": "成立年份",
-          "value": "1983",
-          "source_id": "battery_home"
-        },
-        {
-          "field": "investment_stages",
-          "label": "官网披露投资阶段",
-          "value": [
-            "初创期",
-            "成长期",
-            "收购"
-          ],
-          "source_id": "battery_company"
-        },
-        {
-          "field": "sectors",
-          "label": "官网披露领域",
-          "value": [
-            "应用软件",
-            "基础设施软件",
-            "消费",
-            "工业科技与生命科学工具"
-          ],
-          "source_id": "battery_home"
-        },
-        {
-          "field": "current_fund",
-          "label": "当前旗舰基金",
-          "value": "Battery Ventures XV，32.5 亿美元；官网当前披露",
-          "source_id": "battery_home"
-        },
-        {
-          "field": "portfolio_count",
-          "label": "历史投资组合规模",
-          "value": "超过 450 家公司；官网未给出统计截至日期",
-          "source_id": "battery_company"
-        }
-      ],
-      "milestones": [
-        {
-          "date": "1983",
-          "description": "官网记载 Battery Ventures 自 1983 年起投资科技公司。",
-          "source_id": "battery_home"
-        }
-      ],
-      "track_record": [
-        {
-          "description": "官网公司目录称 Battery 在四十余年历史中投资超过 450 家公司；该数字为机构自述的历史累计值。",
-          "source_id": "battery_company"
-        },
-        {
-          "description": "官网列举投资范围包括应用软件、基础设施软件、消费、工业科技与生命科学工具，并覆盖初创、成长及收购阶段。",
-          "source_id": "battery_company"
-        },
-        {
-          "description": "融资来源记录：Shackleton AI · 种子轮 · 2026-11-05 · 本轮领投 · $5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-48ad2f372a4431f7"
-        },
-        {
-          "description": "融资来源记录：Miter · B轮 · 2026-09-30 · 本轮领投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-8b2ed67c1554bee8"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官方网站",
-          "value": "Battery Ventures",
-          "url": "https://www.battery.com/",
-          "source_id": "battery_home"
-        },
-        {
-          "kind": "address",
-          "label": "波士顿办公室",
-          "value": "One Marina Park Drive, Suite 1100, Boston, MA 02210",
-          "url": "https://www.battery.com/contact/",
-          "source_id": "battery_contact"
-        },
-        {
-          "kind": "phone",
-          "label": "波士顿办公室电话",
-          "value": "+1 617-948-3600",
-          "url": "https://www.battery.com/contact/",
-          "source_id": "battery_contact"
-        },
-        {
-          "kind": "address",
-          "label": "旧金山办公室",
-          "value": "140 New Montgomery Street, Suite 1200, San Francisco, CA 94105",
-          "url": "https://www.battery.com/contact/",
-          "source_id": "battery_contact"
-        },
-        {
-          "kind": "phone",
-          "label": "旧金山办公室电话",
-          "value": "+1 415-426-5900",
-          "url": "https://www.battery.com/contact/",
-          "source_id": "battery_contact"
-        },
-        {
-          "kind": "email",
-          "label": "合规联系（非融资申请渠道）",
-          "value": "compliance@battery.com",
-          "url": "https://www.battery.com/company/",
-          "source_id": "battery_company"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "battery_home",
-          "source_url": "https://www.battery.com/",
-          "source_title": "Battery Ventures",
-          "source_content_hash": "7c5f4799a5a9cedb93e7a936267ff38af82c058122bc3f6a154002b9e1f98bfc",
-          "quote": "Investing in technology companies globally since 1983. We are currently investing from our 15th flagship fund, Battery Ventures XV, which is capitalized at $3.25 billion.",
-          "quote_hash": "6b8c3ff426970577e74fab79676ec6bc0b2c9be8c6747ee950efbffdcb509abd"
-        },
-        {
-          "source_id": "battery_company",
-          "source_url": "https://www.battery.com/company/",
-          "source_title": "Companies - Battery Ventures",
-          "source_content_hash": "fd68f87dcacdc0c05f33c20848afffa839bd295f25169b02448040571de28a43",
-          "quote": "Battery has invested in more than 450 companies over our 40-year history. Sectors: Application Software, Infrastructure Software, Consumer, Industrial Tech + Life Science Tools. Stages: Early, Growth, Buyout.",
-          "quote_hash": "bffb619a6a11c75c8ddb05f0492adea2d91c26147d182abf96b1b797b3979d68"
-        },
-        {
-          "source_id": "battery_contact",
-          "source_url": "https://www.battery.com/contact/",
-          "source_title": "Contact - Battery Ventures",
-          "source_content_hash": "62f89013a02cfdedbeb7ae1c19d0c52240ecba452254aeb08733614e466c6431",
-          "quote": "Boston: One Marina Park Drive, Suite 1100, Boston, MA 02210; p: (617) 948-3600. San Francisco: 140 New Montgomery Street, Suite 1200, San Francisco, CA 94105; p: (415) 426-5900.",
-          "quote_hash": "abc8cfd33806d0c91159718c14f7544ac05f817502f2f099f26552079ec3f602"
-        },
-        {
-          "source_id": "FISRC-48ad2f372a4431f7",
-          "source_url": "https://www.prnewswire.com/news-releases/shackleton-ai-unveils-agentic-operating-system-for-construction-raises-5-million-led-by-battery-ventures-302928375.html",
-          "source_title": "更正 - Shackleton AI",
-          "source_content_hash": "d0ceafd547981f79a4f887d4277f2a5f22d08f9467173a4cbb8cf8d24f96e372",
-          "quote": "The company also announced it raised $5 million in seed funding led by Battery Ventures",
-          "quote_hash": "f47089f1e9d419f3632f06ef4ee12820cec8be5192e926b76e155a56819ed370"
-        },
-        {
-          "source_id": "FISRC-2e400276ae80a5d2",
-          "source_url": "https://www.thesaasnews.com/news/shackleton-ai-raises-5m-seed/",
-          "source_title": "Shackleton AI Raises $5M Seed",
-          "source_content_hash": "e5092eb9abc80d55",
-          "quote": "The funding round was led by Battery Ventures",
-          "quote_hash": "d91c567371e190d98dfc9d31223d2d3a5cdae9ca68b8a2a59c34231e46bae0dd"
-        },
-        {
-          "source_id": "FISRC-8b2ed67c1554bee8",
-          "source_url": "https://www.prnewswire.com/news-releases/miter-the-ai-platform-for-construction-raises-40-million-for-the-built-world-302893778.html",
-          "source_title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
-          "source_content_hash": "c5cd447d1a48bf94d4477d990914f688e2af5271a7ec78a65a70efa9ff0cb39e",
-          "quote": "announced it has raised a $40 million Series B round of financing led by Battery Ventures",
-          "quote_hash": "ca82f8aa5527e256ec0d7ca0f34529e46c9d2af892b2cf73c468385cd644fc7e"
-        }
-      ],
-      "last_verified_at": "2026-09-26",
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "INV-5ffcc966eedf1c": {
@@ -15961,6 +15961,98 @@
       "coverage_status": "researched",
       "coverage_note": "公司背景来自 AMD 官网；融资活动原文明确指向 AMD 的风险投资部门，投资部门与母公司分别建档。此项披露确认参投主体范围，不披露 AMD Ventures 的单笔出资额。"
     },
+    "INV-9fb28d3b18eea0": {
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "创立时间",
+          "value": "2013 年",
+          "source_id": "pear_foundation"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资阶段",
+          "value": "Pre-Seed 和 Seed 阶段。",
+          "source_id": "pear_stage"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Mirendil · A轮 · 2026-11-12 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-91b5c399f66248bf"
+        },
+        {
+          "description": "融资来源记录：Vals · A轮 · 2026-09-19 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-404aba285b240b86"
+        },
+        {
+          "description": "融资来源记录：Listen Labs · B轮 · 2026-01-14 · 本轮参投 · $69 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-dcf11a862138a06d"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Pear VC 官网",
+          "value": "Pear VC",
+          "url": "https://pear.vc/",
+          "source_id": "pear_foundation"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "last_verified_at": "2026-10-02",
+      "profile_type": "organization",
+      "coverage_note": "Pear VC 官网核实机构起源、早期投资阶段及创始人支持方式；未补录未核实的基金规模。",
+      "summary": "Pear VC 是一家以创始人为中心的早期投资机构。官网称其于 2013 年创立，主要投资 Pre-Seed 和 Seed 阶段，并通过创始人服务支持早期团队。",
+      "sources": [
+        {
+          "source_id": "pear_foundation",
+          "source_url": "https://pear.vc/our-story/",
+          "source_title": "Our Story - Pear VC",
+          "source_content_hash": "b49483bc61dffca341408beebb59398059ee2101bfca748babded2ecf5cc235c",
+          "quote": "Pear VC was founded in 2013 with a simple goal: to build a venture firm that truly puts founders first.",
+          "quote_hash": "b22e53c500eb4ead347cb0513fdaa29193340acbf8ea0ed67699fec6436ab92c"
+        },
+        {
+          "source_id": "pear_stage",
+          "source_url": "https://pear.vc/our-story/",
+          "source_title": "Our Story - Pear VC",
+          "source_content_hash": "b49483bc61dffca341408beebb59398059ee2101bfca748babded2ecf5cc235c",
+          "quote": "Over the past decade, we’ve invested in hundreds of companies at the pre-seed and seed stages.",
+          "quote_hash": "45166dc75be3c5cb02a083ffc500fa6654edbeb472b6d2da181d79dfbca55556"
+        },
+        {
+          "source_id": "FISRC-91b5c399f66248bf",
+          "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+          "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+          "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+          "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+          "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+        },
+        {
+          "source_id": "FISRC-404aba285b240b86",
+          "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-vals-ai-on-dollar40-million-series-a-led-by-andreessen-horowitz.html",
+          "source_title": "Wilson Sonsini Advises Vals AI on $40 Million Series A led by Andreessen Horowitz",
+          "source_content_hash": "5d9a4e3004c9d318",
+          "quote": "Andreessen Horowitz led the round, with participation from existing investors 8VC, Pear VC, and Bloomberg, and new investors Hudson River Trading and NextLadder Ventures.",
+          "quote_hash": "bc9a92a99d5d786538d8359e73dcfccf869dae88e81dba5fa977b6618c97e34c"
+        },
+        {
+          "source_id": "FISRC-dcf11a862138a06d",
+          "source_url": "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html",
+          "source_title": "Listen Labs 融资 6900 万美元 B 轮，将客户声音带入每一项决策",
+          "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
+          "quote": "with participation from Evantic and existing investors Sequoia Capital, Conviction, and Pear VC",
+          "quote_hash": "464c957a685e8515d4b8d6a692d0a2cb65cf1a3e413c838428dc8826314d2e5d"
+        }
+      ]
+    },
     "INV-526f4a58cf3ce6": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -22642,6 +22734,186 @@
       "education": [],
       "experience_summary": ""
     },
+    "INV-6c33bfacdc7f7a": {
+      "summary": "中国证券投资基金业协会公示的关联管理人信息列出浙江华睿控股有限公司，登记编号P1001662，机构类型为私募股权、创业投资基金管理人。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "协会公示的管理人名称",
+          "value": "浙江华睿控股有限公司。",
+          "source_id": "PROFILE-INV-6c33bfacdc7f7a-1"
+        },
+        {
+          "field": "manager_registration",
+          "label": "协会公示的登记编号",
+          "value": "P1001662。",
+          "source_id": "PROFILE-INV-6c33bfacdc7f7a-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "协会公示的机构类型",
+          "value": "私募股权、创业投资基金管理人。",
+          "source_id": "PROFILE-INV-6c33bfacdc7f7a-1"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：阜时科技 · C4轮 · 2026-11-12 · 本轮参投 · 超4亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5c9f6bb8f512b556"
+        },
+        {
+          "description": "融资来源记录：因克斯 · B轮 · 2026-09-15 · 本轮参投 · 超3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d0c3dca85d845330"
+        },
+        {
+          "description": "融资来源记录：智诊科技 · 天使轮 · 2026-05-06 · 本轮参投 · 6500万元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-de96c365c469f319"
+        }
+      ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "候选简称“华睿投资”按协会公示的登记主体浙江华睿控股有限公司识别；本来源是关联管理人公示，档案仅记录可核实的登记身份。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金业协会管理人公示",
+          "value": "浙江华睿控股有限公司",
+          "url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000052031.html?source_capture=2026-10-03&cycle=10",
+          "source_id": "PROFILE-INV-6c33bfacdc7f7a-1"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "PROFILE-INV-6c33bfacdc7f7a-1",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000052031.html?source_capture=2026-10-03&cycle=10",
+          "source_title": "私募基金管理人公示 - 中国基金业协会",
+          "source_content_hash": "0fc2d3b8b93fc8c40195a061817eb3c36d2e63d0b0658d9115d355767019712c",
+          "quote": "1 私募股权、创业投资基金管理人 浙江华睿控股有限公司 P1001662 74201664-2",
+          "quote_hash": "2e34e5be5cc3f3489e009ae9768b562e8462617e472c8d0f6bce02b872d38648"
+        },
+        {
+          "source_id": "FISRC-5c9f6bb8f512b556",
+          "source_url": "https://news.pedaily.cn/202611/571736.shtml",
+          "source_title": "阜时科技完成超4亿元C4轮融资，加速物理AI空间感知芯片布局",
+          "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+          "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+          "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
+        },
+        {
+          "source_id": "FISRC-d0c3dca85d845330",
+          "source_url": "https://news.pedaily.cn/202609/569015.shtml",
+          "source_title": "「因克斯ENCOS」完成3亿元B轮融资，深耕具身智能关节模组",
+          "source_content_hash": "e86bd6fffaf894b4",
+          "quote": "本轮投资方包括中信金石、纳爱斯、苏创投、华睿投资、南京交控、华瑞创投。",
+          "quote_hash": "6c4c7e786af8f1c6a645b416c03de78fe56dc7c68a3fec952cdda6d739fdd0b4"
+        },
+        {
+          "source_id": "FISRC-de96c365c469f319",
+          "source_url": "https://news.pedaily.cn/202605/563449.shtml",
+          "source_title": "聚焦医疗AI agent，智诊科技完成6500万元融资",
+          "source_content_hash": "628dd8d95dc91442",
+          "quote": "本轮融资由 杭州千遇智汇、无锡元启联合领投，华睿投资、上海珺灏筠、嘉兴青于蓝新聚能 及多位投资方跟投。",
+          "quote_hash": "20be3caeb65867c0751ee2791686399a069bc57eb1dc23b1a8d559e4d64a44df"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
+    },
+    "INV-9f75b44276f08e": {
+      "summary": "S32 官网称其创始人 Bill Maris 创立了这家风险投资机构，并将投资方向描述为创新前沿。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网团队页",
+          "value": "风险投资机构。",
+          "source_id": "PROFILE-INV-9f75b44276f08e-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网团队页",
+          "value": "创新前沿领域。",
+          "source_id": "PROFILE-INV-9f75b44276f08e-1"
+        },
+        {
+          "field": "founder",
+          "label": "官网团队页",
+          "value": "Bill Maris 创立 S32。",
+          "source_id": "PROFILE-INV-9f75b44276f08e-1"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Mirendil · A轮 · 2026-11-12 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-91b5c399f66248bf"
+        },
+        {
+          "description": "融资来源记录：Basecamp Research · C轮 · 2026-09-24 · 本轮领投 · $140M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ecd2ea74974f4ff3"
+        },
+        {
+          "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮领投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-16afc5791c45315a"
+        }
+      ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "档案按 S32 官网团队页的机构与创始人自述建立，不扩展未核实的基金数据。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "S32",
+          "url": "https://www.s32.com/team?source_capture=2026-10-03&cycle=15",
+          "source_id": "PROFILE-INV-9f75b44276f08e-1"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "PROFILE-INV-9f75b44276f08e-1",
+          "source_url": "https://www.s32.com/team?source_capture=2026-10-03&cycle=15",
+          "source_title": "S32 | Team",
+          "source_content_hash": "84d68faa50bb1c7fc5ed1b63af2557297ccf540c67367b15cae64f2f50d19811",
+          "quote": "He is the founder of S32, a venture capital firm investing at the frontiers of innovation.",
+          "quote_hash": "827459c1ca126c2fa1ea3e9aa305258e318e0f4c62eef625c1e393caf5e6a83e"
+        },
+        {
+          "source_id": "FISRC-91b5c399f66248bf",
+          "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+          "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+          "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+          "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+          "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+        },
+        {
+          "source_id": "FISRC-ecd2ea74974f4ff3",
+          "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
+          "source_title": "更正 -- Basecamp Research",
+          "source_content_hash": "e53f1e2c96a09a59b3d2c0250baa37098aa57f90132cd42ed81a40d86422cf50",
+          "quote": "The oversubscribed round was led by S32",
+          "quote_hash": "373cc132f8e9f98ac798d6003cf4d568541cda97709e7137841943f7493e6b58"
+        },
+        {
+          "source_id": "FISRC-16afc5791c45315a",
+          "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
+          "source_title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
+          "source_content_hash": "ad04baf1994708d0",
+          "quote": "The new round, which was led by Insight Partners and S32, valued the seven-year-old startup at nearly triple the $1.3 billion valuation it garnered when it raised $100 million in a Series D 17 months ago.",
+          "quote_hash": "570f3d38da98c770ed63b46c303f26eed84498a651974861af1f95116d94e3a2"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
+    },
     "INV-5dc722a0170437": {
       "profile_type": "person",
       "coverage_status": "researched",
@@ -28970,98 +29242,6 @@
         }
       ],
       "last_verified_at": "2026-10-04"
-    },
-    "INV-9fb28d3b18eea0": {
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "facts": [
-        {
-          "field": "founded",
-          "label": "创立时间",
-          "value": "2013 年",
-          "source_id": "pear_foundation"
-        },
-        {
-          "field": "investment_focus",
-          "label": "投资阶段",
-          "value": "Pre-Seed 和 Seed 阶段。",
-          "source_id": "pear_stage"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Vals · A轮 · 2026-09-19 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-404aba285b240b86"
-        },
-        {
-          "description": "融资来源记录：Listen Labs · B轮 · 2026-01-14 · 本轮参投 · $69 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dcf11a862138a06d"
-        },
-        {
-          "description": "融资来源记录：Quadric · C轮 · 2026-01-14 · 本轮参投 · $30M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b3973965c733b20b"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "Pear VC 官网",
-          "value": "Pear VC",
-          "url": "https://pear.vc/",
-          "source_id": "pear_foundation"
-        }
-      ],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
-      "last_verified_at": "2026-10-02",
-      "profile_type": "organization",
-      "coverage_note": "Pear VC 官网核实机构起源、早期投资阶段及创始人支持方式；未补录未核实的基金规模。",
-      "summary": "Pear VC 是一家以创始人为中心的早期投资机构。官网称其于 2013 年创立，主要投资 Pre-Seed 和 Seed 阶段，并通过创始人服务支持早期团队。",
-      "sources": [
-        {
-          "source_id": "pear_foundation",
-          "source_url": "https://pear.vc/our-story/",
-          "source_title": "Our Story - Pear VC",
-          "source_content_hash": "b49483bc61dffca341408beebb59398059ee2101bfca748babded2ecf5cc235c",
-          "quote": "Pear VC was founded in 2013 with a simple goal: to build a venture firm that truly puts founders first.",
-          "quote_hash": "b22e53c500eb4ead347cb0513fdaa29193340acbf8ea0ed67699fec6436ab92c"
-        },
-        {
-          "source_id": "pear_stage",
-          "source_url": "https://pear.vc/our-story/",
-          "source_title": "Our Story - Pear VC",
-          "source_content_hash": "b49483bc61dffca341408beebb59398059ee2101bfca748babded2ecf5cc235c",
-          "quote": "Over the past decade, we’ve invested in hundreds of companies at the pre-seed and seed stages.",
-          "quote_hash": "45166dc75be3c5cb02a083ffc500fa6654edbeb472b6d2da181d79dfbca55556"
-        },
-        {
-          "source_id": "FISRC-404aba285b240b86",
-          "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-vals-ai-on-dollar40-million-series-a-led-by-andreessen-horowitz.html",
-          "source_title": "Wilson Sonsini Advises Vals AI on $40 Million Series A led by Andreessen Horowitz",
-          "source_content_hash": "5d9a4e3004c9d318",
-          "quote": "Andreessen Horowitz led the round, with participation from existing investors 8VC, Pear VC, and Bloomberg, and new investors Hudson River Trading and NextLadder Ventures.",
-          "quote_hash": "bc9a92a99d5d786538d8359e73dcfccf869dae88e81dba5fa977b6618c97e34c"
-        },
-        {
-          "source_id": "FISRC-dcf11a862138a06d",
-          "source_url": "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html",
-          "source_title": "Listen Labs 融资 6900 万美元 B 轮，将客户声音带入每一项决策",
-          "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
-          "quote": "with participation from Evantic and existing investors Sequoia Capital, Conviction, and Pear VC",
-          "quote_hash": "464c957a685e8515d4b8d6a692d0a2cb65cf1a3e413c838428dc8826314d2e5d"
-        },
-        {
-          "source_id": "FISRC-b3973965c733b20b",
-          "source_url": "https://www.prnewswire.com/news-releases/quadric-extends-series-c-to-46m-with-second-close-led-by-world-banks-ifc-302823301.html",
-          "source_title": "Quadric Extends Series C to $46M with Second Close led by World Bank's IFC",
-          "source_content_hash": "c8cfa51187a025ba",
-          "quote": "Existing investors increased their investment in this close: Pear VC, which led Quadric's seed round; Uncork Capital; and BEENEXT, which led the round's first close.",
-          "quote_hash": "e1dee92756885acd207de0ae662095ae3d04441a3d5d8e12dff5439507d09a5c"
-        }
-      ]
     },
     "INV-0758315314873f": {
       "identity_status": "verified",
@@ -35657,6 +35837,364 @@
         }
       ],
       "last_verified_at": "2026-09-25"
+    },
+    "INV-f4276dc832f139": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "锋领资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：飞拓星驰 · 天使轮 · 2026-11-12 · 本轮参投 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d972a22e56f20646"
+        },
+        {
+          "description": "融资来源记录：AIVELA · 其他融资 · 2026-06-29 · 本轮参投 · 数百万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-205a3b05b631cdd8"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-d972a22e56f20646",
+          "source_url": "https://news.pedaily.cn/202611/571751.shtml",
+          "source_title": "飞拓星驰完成数千万美元天使轮融资，打造家庭AI互动娱乐入口",
+          "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+          "quote": "老股东日初资本、锋领资本等机构持续跟投",
+          "quote_hash": "11ae6790fc96376f40a913d54ea950369ad82e8d322e3b6983f42b029ccebf38"
+        },
+        {
+          "source_id": "FISRC-205a3b05b631cdd8",
+          "source_url": "https://www.36kr.com/p/3873710996902912",
+          "source_title": "36氪首发 | URTOPIA联创做了款智能指环，众筹已破千万元",
+          "source_content_hash": "1f912cd1459add0cac2e940678a7df24cc373fd4c437f06b45b8c95de7bfa419",
+          "quote": "本轮融资由线性资本领投，锋领资本跟投，智能电助力自行车品牌URTOPIA等产业方共同加注。",
+          "quote_hash": "d9d06a09432716bfde519da6d835cb713c48a69c136741a483fdddb2da1e9334"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-88d7f2820a1024": {
+      "summary": "日初资本官网称其由 Allen Chen 于 2020 年创立，专注消费品细分领域投资，并披露一期美元基金。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "专注消费品细分领域的投资机构。",
+          "source_id": "PROFILE-INV-88d7f2820a1024-1"
+        },
+        {
+          "field": "founded",
+          "label": "官网披露成立时间",
+          "value": "2020年。",
+          "source_id": "PROFILE-INV-88d7f2820a1024-1"
+        },
+        {
+          "field": "founder",
+          "label": "官网披露创始人",
+          "value": "Allen Chen（陈峰）。",
+          "source_id": "PROFILE-INV-88d7f2820a1024-1"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：飞拓星驰 · 天使轮 · 2026-11-12 · 本轮参投 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d972a22e56f20646"
+        },
+        {
+          "description": "融资来源记录：飞拓星驰（FitX AI） · A轮 · 2026-05-11 · 本轮领投 · 数百万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-867a0916b6d45f09"
+        }
+      ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据管理团队官网的机构介绍和投资方向建档；未补入组合企业的未经逐项核验信息。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Dayone Capital / 日初资本",
+          "url": "https://www.dayonecap.com/?source_capture=2026-10-03&cycle=13",
+          "source_id": "PROFILE-INV-88d7f2820a1024-1"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "PROFILE-INV-88d7f2820a1024-1",
+          "source_url": "https://www.dayonecap.com/?source_capture=2026-10-03&cycle=13",
+          "source_title": "日初资本 Dayone Capital",
+          "source_content_hash": "0ef7b3769c43da5bd0a3e958c0c4b2553bf400e74fa9ffee1fd162df890062b9",
+          "quote": "Founded in 2020 by Allen Chen, a proven entrepreneur and experienced investor, Dayone Capital is committed to becoming a value-creation driven investor in selective verticals of consumer goods.",
+          "quote_hash": "27fb30ad8afe455b0b734ebdd59f2995bceab411f539669c25968f5a5be928e1"
+        },
+        {
+          "source_id": "FISRC-d972a22e56f20646",
+          "source_url": "https://news.pedaily.cn/202611/571751.shtml",
+          "source_title": "飞拓星驰完成数千万美元天使轮融资，打造家庭AI互动娱乐入口",
+          "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+          "quote": "老股东日初资本、锋领资本等机构持续跟投",
+          "quote_hash": "11ae6790fc96376f40a913d54ea950369ad82e8d322e3b6983f42b029ccebf38"
+        },
+        {
+          "source_id": "FISRC-867a0916b6d45f09",
+          "source_url": "https://news.qq.com/rain/a/20260511A031PC00",
+          "source_title": "独家｜ 95后港中文博士融资数百万美金，打造全球首个AI Native家庭娱乐入口_腾讯新闻",
+          "source_content_hash": "2287fe55b5088a36d4415f4626500b8697cb517aa9371cd701c8adaaab97e52d",
+          "quote": "飞拓星驰（FitX AI）宣布完成数百万美金融资，由日初资本领投，光点资本跟投。",
+          "quote_hash": "a01a47d29a132533613120a8d2a72eec7f736eebf2c08fae6a403cbf8462ff3a"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
+    },
+    "INV-3e3282aa6edde0": {
+      "summary": "元生创投官网将苏州工业园区元生创业投资管理有限公司称为元生创投，并定位为专注早期和成长期医疗健康领域的投资机构。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网标题主体",
+          "value": "苏州工业园区元生创业投资管理有限公司。",
+          "source_id": "PROFILE-INV-3e3282aa6edde0-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "医疗健康领域。",
+          "source_id": "PROFILE-INV-3e3282aa6edde0-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期和成长期。",
+          "source_id": "PROFILE-INV-3e3282aa6edde0-1"
+        },
+        {
+          "field": "geography",
+          "label": "官网所述地域",
+          "value": "立足苏州bioBAY，辐射全球。",
+          "source_id": "PROFILE-INV-3e3282aa6edde0-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2013",
+          "description": "官网列示的成立年份。",
+          "source_id": "PROFILE-INV-3e3282aa6edde0-1"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "融资来源记录：飞拓星驰 · 天使轮 · 2026-11-12 · 本轮领投 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d972a22e56f20646"
+        },
+        {
+          "description": "融资来源记录：Violoop · 多轮融资 · 2026-09-02 · 本轮参投 · 亿级。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4ce1b109c402e02b"
+        },
+        {
+          "description": "融资来源记录：三启万物 · 历史轮次未披露 · 老股东持续追投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a4dbd49c64cb5834"
+        }
+      ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "队列别名“元生资本”按官网品牌和管理公司名称映射至“元生创投”；不纳入官网披露的易变组合数量、上市数或回报数据。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "元生创投官网",
+          "url": "https://www.bioventure.com.cn/",
+          "source_id": "PROFILE-INV-3e3282aa6edde0-1"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "PROFILE-INV-3e3282aa6edde0-1",
+          "source_url": "https://www.bioventure.com.cn/",
+          "source_title": "苏州工业园区元生创业投资管理有限公司",
+          "source_content_hash": "5e3a59f4a787ab33ee7999c0fdedde4e0f0269376f113936d9834cd9399b0a98",
+          "quote": "元生创投是一家专注于早期和成长期医疗健康领域的投资机构，立足苏州bioBAY，辐射全球。",
+          "quote_hash": "31b8d93bb5216f6fc161b79c6b73ee1b798ac38c70a87726f122c49545ccdf48"
+        },
+        {
+          "source_id": "FISRC-d972a22e56f20646",
+          "source_url": "https://news.pedaily.cn/202611/571751.shtml",
+          "source_title": "飞拓星驰完成数千万美元天使轮融资，打造家庭AI互动娱乐入口",
+          "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+          "quote": "本轮领投方分别是元生资本、江远投资",
+          "quote_hash": "52e8d9a9a4d1f0b9c47b7328f16ad92c1d95906fa27dab55d796686cdd8a9d34"
+        },
+        {
+          "source_id": "FISRC-4ce1b109c402e02b",
+          "source_url": "https://i.ifeng.com/c/8w5nAa2tSBS",
+          "source_title": "DEMO|对话Violoop：谁不想有个自己的模型，在真实工作里长出来那种",
+          "source_content_hash": "d2514a816bb64a43",
+          "quote": "投资方汇聚了VC及知名产投：联想创投、中金保时捷、蓝驰创投、元生资本、启赋资本、zero2ipo ventures联合出资",
+          "quote_hash": "ae33d8aaa0d81919796e4f82ef2f77d2f6b325deab1cc71ff9122e5fdec30426"
+        },
+        {
+          "source_id": "FISRC-a4dbd49c64cb5834",
+          "source_url": "https://news.pedaily.cn/202607/565779.shtml",
+          "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
+          "source_content_hash": "3e7e05417d6a96b1",
+          "quote": "老股东 渶策资本、元生资本 持续追投。",
+          "quote_hash": "08ef92f098bf62a5aa936148c107ee1fa09fdbc1ff090e097b919bdd522b3dec"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
+    },
+    "INV-b7683f1acbf4fb": {
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "以 ISAI 与 Capgemini 的官方公告记录 ISAI Cap Venture II；Liquid AI 官方投资者说明确认 ISAI Cap Venture 的投资者关系。公告中的 €80M 为 II 期规模。",
+      "summary": "ISAI Cap Venture 是 ISAI 与 Capgemini 合作的企业风险投资基金系列，面向全球 B2B 初创企业和成长期公司。官方公告称 II 期于 2025 年推出，规模为 €80 million；Liquid AI 官方投资者说明将 ISAI Cap Venture 列为投资者之一。",
+      "facts": [
+        {
+          "field": "fund_type",
+          "label": "基金类型",
+          "value": "企业风险投资基金（与 Capgemini 合作）",
+          "source_id": "isai_launch_ii"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "全球高潜力 B2B 初创企业与成长期公司。",
+          "source_id": "isai_launch_ii"
+        },
+        {
+          "field": "fund_size",
+          "label": "基金规模",
+          "value": "ISAI Cap Venture II：€80 million。",
+          "source_id": "isai_launch_ii"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-04-10",
+          "description": "ISAI 与 Capgemini 宣布推出 ISAI Cap Venture II，基金规模为 €80 million。",
+          "source_id": "isai_launch_ii"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "Liquid AI 官方投资者说明将 ISAI Cap Venture 列入其投资者名单。",
+          "source_id": "liquid_investors"
+        },
+        {
+          "description": "融资来源记录：Tristar AI · A轮 · 2026-11-12 · 本轮参投 · $12.4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2e57818eaf8972a7"
+        },
+        {
+          "description": "融资来源记录：Liquid AI · 种子轮 · 2023-12-06 · 本轮参投 · 3750万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d1080395d67df2c7"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "ISAI Cap Venture",
+          "value": "ISAI Cap Venture",
+          "url": "https://www.isai.fr/isai-cap-venture",
+          "source_id": "isai_launch_ii"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "isai_launch_ii",
+          "source_url": "https://www.isai.fr/news/capgemini-et-isai-lancent-isai-cap-venture-ii",
+          "source_title": "CAPGEMINI ET ISAI LANCENT ISAI CAP VENTURE II &mdash; isai",
+          "source_content_hash": "c1ddb9ec79ef48da737974c9e1af7a594a5170afdb7649d4eac473ff4b140942",
+          "quote": "Paris, le 10 avril 2025 – A la suite du succès d'ISAI Cap Venture I, ISAI et Capgemini annoncent le lancement d'ISAI Cap Venture II, un nouveau véhicule d'investissement dédié à soutenir des startups et scale-ups B2B à fort potentiel dans le monde entier.",
+          "quote_hash": "94e5352131248c1f618cbb5617da649ff9ff2874a1404fc89a0c25947ccfb533"
+        },
+        {
+          "source_id": "isai_fund_size",
+          "source_url": "https://www.isai.fr/news/capgemini-et-isai-lancent-isai-cap-venture-ii",
+          "source_title": "CAPGEMINI ET ISAI LANCENT ISAI CAP VENTURE II &mdash; isai",
+          "source_content_hash": "c1ddb9ec79ef48da737974c9e1af7a594a5170afdb7649d4eac473ff4b140942",
+          "quote": "Cette deuxième édition du fonds, dotée de 80 millions d'euros",
+          "quote_hash": "f3e3aba3faf8615452f983854fa85292025a858929723d755e0b89367f89cb91"
+        },
+        {
+          "source_id": "liquid_investors",
+          "source_url": "https://www.liquid.ai/blog/new-generation-of-ai-models-from-first-principles",
+          "source_title": "Liquid AI: A New Generation of AI Models from First Principles | Blog | Liquid AI",
+          "source_content_hash": "8df0fab4548b6d02e671b4d036747b2c7a650625e653137c214d7abadcd3dffa",
+          "quote": "ISAI Cap Venture (Capgemini’s VC Fund managed by ISAI)",
+          "quote_hash": "c80c91c224e6842409dd125186d7950a24ff4bde3147ff77c4dffa73ec82bf64"
+        },
+        {
+          "source_id": "FISRC-2e57818eaf8972a7",
+          "source_url": "https://www.prnewswire.com/news-releases/tristar-ai-raises-12-4m-series-a-to-give-manufacturers-a-quality-inspector-that-never-blinks-302937353.html",
+          "source_title": "Tristar AI 完成 1240 万美元 A 轮融资，为制造商提供永不眨眼的质检员",
+          "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+          "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+          "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+        },
+        {
+          "source_id": "FISRC-d1080395d67df2c7",
+          "source_url": "https://techcrunch.com/2023/12/06/liquid-ai-a-new-mit-spinoff-wants-to-build-an-entirely-new-type-of-ai/",
+          "source_title": "MIT 衍生公司 Liquid AI 希望构建一种全新类型的 AI",
+          "source_content_hash": "42d5867eaff12416",
+          "quote": "ISAI Cap Venture",
+          "quote_hash": "ac475b04df8a6955aaec8bcb4cc432547454b79f534e7aa964edfba25b8b0b99"
+        }
+      ],
+      "last_verified_at": "2026-10-02"
+    },
+    "INV-0a5afde0849cd3": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "M13 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Mirendil · A轮 · 2026-11-12 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-91b5c399f66248bf"
+        },
+        {
+          "description": "融资来源记录：Nominal · C轮 · 2026-11-09 · 本轮参投 · $240 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3491226e16a1391a"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-91b5c399f66248bf",
+          "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+          "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+          "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+          "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+          "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+        },
+        {
+          "source_id": "FISRC-3491226e16a1391a",
+          "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
+          "source_title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
+          "source_content_hash": "661a69b2d4192044",
+          "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
+          "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
     },
     "INV-d5eac13c9cddb8": {
       "profile_type": "organization",
@@ -48564,84 +49102,6 @@
       ],
       "last_verified_at": "2026-10-03"
     },
-    "INV-9f75b44276f08e": {
-      "summary": "S32 官网称其创始人 Bill Maris 创立了这家风险投资机构，并将投资方向描述为创新前沿。",
-      "facts": [
-        {
-          "field": "organization_type",
-          "label": "官网团队页",
-          "value": "风险投资机构。",
-          "source_id": "PROFILE-INV-9f75b44276f08e-1"
-        },
-        {
-          "field": "investment_focus",
-          "label": "官网团队页",
-          "value": "创新前沿领域。",
-          "source_id": "PROFILE-INV-9f75b44276f08e-1"
-        },
-        {
-          "field": "founder",
-          "label": "官网团队页",
-          "value": "Bill Maris 创立 S32。",
-          "source_id": "PROFILE-INV-9f75b44276f08e-1"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Basecamp Research · C轮 · 2026-09-24 · 本轮领投 · $140M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ecd2ea74974f4ff3"
-        },
-        {
-          "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮领投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-16afc5791c45315a"
-        }
-      ],
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "档案按 S32 官网团队页的机构与创始人自述建立，不扩展未核实的基金数据。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官网",
-          "value": "S32",
-          "url": "https://www.s32.com/team?source_capture=2026-10-03&cycle=15",
-          "source_id": "PROFILE-INV-9f75b44276f08e-1"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "PROFILE-INV-9f75b44276f08e-1",
-          "source_url": "https://www.s32.com/team?source_capture=2026-10-03&cycle=15",
-          "source_title": "S32 | Team",
-          "source_content_hash": "84d68faa50bb1c7fc5ed1b63af2557297ccf540c67367b15cae64f2f50d19811",
-          "quote": "He is the founder of S32, a venture capital firm investing at the frontiers of innovation.",
-          "quote_hash": "827459c1ca126c2fa1ea3e9aa305258e318e0f4c62eef625c1e393caf5e6a83e"
-        },
-        {
-          "source_id": "FISRC-ecd2ea74974f4ff3",
-          "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
-          "source_title": "更正 -- Basecamp Research",
-          "source_content_hash": "e53f1e2c96a09a59b3d2c0250baa37098aa57f90132cd42ed81a40d86422cf50",
-          "quote": "The oversubscribed round was led by S32",
-          "quote_hash": "373cc132f8e9f98ac798d6003cf4d568541cda97709e7137841943f7493e6b58"
-        },
-        {
-          "source_id": "FISRC-16afc5791c45315a",
-          "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
-          "source_title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
-          "source_content_hash": "ad04baf1994708d0",
-          "quote": "The new round, which was led by Insight Partners and S32, valued the seven-year-old startup at nearly triple the $1.3 billion valuation it garnered when it raised $100 million in a Series D 17 months ago.",
-          "quote_hash": "570f3d38da98c770ed63b46c303f26eed84498a651974861af1f95116d94e3a2"
-        }
-      ],
-      "last_verified_at": "2026-10-03"
-    },
     "INV-01407f8f346314": {
       "identity_status": "verified",
       "coverage_status": "researched",
@@ -50495,84 +50955,6 @@
           "source_content_hash": "8bc2969271617468",
           "quote": "本轮融资由德同资本领投，某产业资本方跟投",
           "quote_hash": "b27af5c0f40a6fb3443dbd6b0b82956b10e7e9f339f39e3fae2664c42bc8d229"
-        }
-      ],
-      "last_verified_at": "2026-10-03"
-    },
-    "INV-6c33bfacdc7f7a": {
-      "summary": "中国证券投资基金业协会公示的关联管理人信息列出浙江华睿控股有限公司，登记编号P1001662，机构类型为私募股权、创业投资基金管理人。",
-      "facts": [
-        {
-          "field": "legal_name",
-          "label": "协会公示的管理人名称",
-          "value": "浙江华睿控股有限公司。",
-          "source_id": "PROFILE-INV-6c33bfacdc7f7a-1"
-        },
-        {
-          "field": "manager_registration",
-          "label": "协会公示的登记编号",
-          "value": "P1001662。",
-          "source_id": "PROFILE-INV-6c33bfacdc7f7a-1"
-        },
-        {
-          "field": "organization_type",
-          "label": "协会公示的机构类型",
-          "value": "私募股权、创业投资基金管理人。",
-          "source_id": "PROFILE-INV-6c33bfacdc7f7a-1"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：因克斯 · B轮 · 2026-09-15 · 本轮参投 · 超3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d0c3dca85d845330"
-        },
-        {
-          "description": "融资来源记录：智诊科技 · 天使轮 · 2026-05-06 · 本轮参投 · 6500万元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-de96c365c469f319"
-        }
-      ],
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "候选简称“华睿投资”按协会公示的登记主体浙江华睿控股有限公司识别；本来源是关联管理人公示，档案仅记录可核实的登记身份。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "基金业协会管理人公示",
-          "value": "浙江华睿控股有限公司",
-          "url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000052031.html?source_capture=2026-10-03&cycle=10",
-          "source_id": "PROFILE-INV-6c33bfacdc7f7a-1"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "PROFILE-INV-6c33bfacdc7f7a-1",
-          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000052031.html?source_capture=2026-10-03&cycle=10",
-          "source_title": "私募基金管理人公示 - 中国基金业协会",
-          "source_content_hash": "0fc2d3b8b93fc8c40195a061817eb3c36d2e63d0b0658d9115d355767019712c",
-          "quote": "1 私募股权、创业投资基金管理人 浙江华睿控股有限公司 P1001662 74201664-2",
-          "quote_hash": "2e34e5be5cc3f3489e009ae9768b562e8462617e472c8d0f6bce02b872d38648"
-        },
-        {
-          "source_id": "FISRC-d0c3dca85d845330",
-          "source_url": "https://news.pedaily.cn/202609/569015.shtml",
-          "source_title": "「因克斯ENCOS」完成3亿元B轮融资，深耕具身智能关节模组",
-          "source_content_hash": "e86bd6fffaf894b4",
-          "quote": "本轮投资方包括中信金石、纳爱斯、苏创投、华睿投资、南京交控、华瑞创投。",
-          "quote_hash": "6c4c7e786af8f1c6a645b416c03de78fe56dc7c68a3fec952cdda6d739fdd0b4"
-        },
-        {
-          "source_id": "FISRC-de96c365c469f319",
-          "source_url": "https://news.pedaily.cn/202605/563449.shtml",
-          "source_title": "聚焦医疗AI agent，智诊科技完成6500万元融资",
-          "source_content_hash": "628dd8d95dc91442",
-          "quote": "本轮融资由 杭州千遇智汇、无锡元启联合领投，华睿投资、上海珺灏筠、嘉兴青于蓝新聚能 及多位投资方跟投。",
-          "quote_hash": "20be3caeb65867c0751ee2791686399a069bc57eb1dc23b1a8d559e4d64a44df"
         }
       ],
       "last_verified_at": "2026-10-03"
@@ -68978,6 +69360,821 @@
       "coverage_note": "职位、学历和过往任职以Tracxn公司官网及年报为准；投资案例来自公司年报或融资来源记录，不能据此推断完整个人投资组合。",
       "last_verified_at": "2026-09-26"
     },
+    "INV-6c377f53217385": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "暗物智能 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：通芯智能 · 多轮融资 · 2026-11-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c83e93672458afd1"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-c83e93672458afd1",
+          "source_url": "https://www.36kr.com/p/4066136377873286",
+          "source_title": "36氪首发丨海光创始核心技术团队创业AGI架构芯片，获清华系等基金数亿投资-36氪",
+          "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+          "quote": "融资由清华校友种子基金、北京通用人工智能研究院、松霖科技、平治信息、暗物智能以及豫资涨泉、普超资本、青创伯乐等财务投资人共同参与，集聚产业资本、头部科技VC和财务资本。",
+          "quote_hash": "9ed55f08f8bd8254f1d9f0401425d0952b053ef74d399ec234545d99d484974c"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-c88976fa267944": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "北京通用人工智能研究院 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：通芯智能 · 多轮融资 · 2026-11-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c83e93672458afd1"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-c83e93672458afd1",
+          "source_url": "https://www.36kr.com/p/4066136377873286",
+          "source_title": "36氪首发丨海光创始核心技术团队创业AGI架构芯片，获清华系等基金数亿投资-36氪",
+          "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+          "quote": "融资由清华校友种子基金、北京通用人工智能研究院、松霖科技、平治信息、暗物智能以及豫资涨泉、普超资本、青创伯乐等财务投资人共同参与，集聚产业资本、头部科技VC和财务资本。",
+          "quote_hash": "9ed55f08f8bd8254f1d9f0401425d0952b053ef74d399ec234545d99d484974c"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-fa5a04311e9f24": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "平治信息 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：通芯智能 · 多轮融资 · 2026-11-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c83e93672458afd1"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-c83e93672458afd1",
+          "source_url": "https://www.36kr.com/p/4066136377873286",
+          "source_title": "36氪首发丨海光创始核心技术团队创业AGI架构芯片，获清华系等基金数亿投资-36氪",
+          "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+          "quote": "融资由清华校友种子基金、北京通用人工智能研究院、松霖科技、平治信息、暗物智能以及豫资涨泉、普超资本、青创伯乐等财务投资人共同参与，集聚产业资本、头部科技VC和财务资本。",
+          "quote_hash": "9ed55f08f8bd8254f1d9f0401425d0952b053ef74d399ec234545d99d484974c"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-20b3729091e451": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "普超资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：通芯智能 · 多轮融资 · 2026-11-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c83e93672458afd1"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-c83e93672458afd1",
+          "source_url": "https://www.36kr.com/p/4066136377873286",
+          "source_title": "36氪首发丨海光创始核心技术团队创业AGI架构芯片，获清华系等基金数亿投资-36氪",
+          "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+          "quote": "融资由清华校友种子基金、北京通用人工智能研究院、松霖科技、平治信息、暗物智能以及豫资涨泉、普超资本、青创伯乐等财务投资人共同参与，集聚产业资本、头部科技VC和财务资本。",
+          "quote_hash": "9ed55f08f8bd8254f1d9f0401425d0952b053ef74d399ec234545d99d484974c"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-775241fe1cf1c4": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "青创伯乐 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：通芯智能 · 多轮融资 · 2026-11-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c83e93672458afd1"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-c83e93672458afd1",
+          "source_url": "https://www.36kr.com/p/4066136377873286",
+          "source_title": "36氪首发丨海光创始核心技术团队创业AGI架构芯片，获清华系等基金数亿投资-36氪",
+          "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+          "quote": "融资由清华校友种子基金、北京通用人工智能研究院、松霖科技、平治信息、暗物智能以及豫资涨泉、普超资本、青创伯乐等财务投资人共同参与，集聚产业资本、头部科技VC和财务资本。",
+          "quote_hash": "9ed55f08f8bd8254f1d9f0401425d0952b053ef74d399ec234545d99d484974c"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-35c65de34bb27d": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "清华校友种子基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：通芯智能 · 多轮融资 · 2026-11-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c83e93672458afd1"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-c83e93672458afd1",
+          "source_url": "https://www.36kr.com/p/4066136377873286",
+          "source_title": "36氪首发丨海光创始核心技术团队创业AGI架构芯片，获清华系等基金数亿投资-36氪",
+          "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+          "quote": "融资由清华校友种子基金、北京通用人工智能研究院、松霖科技、平治信息、暗物智能以及豫资涨泉、普超资本、青创伯乐等财务投资人共同参与，集聚产业资本、头部科技VC和财务资本。",
+          "quote_hash": "9ed55f08f8bd8254f1d9f0401425d0952b053ef74d399ec234545d99d484974c"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-4a0c10376773ed": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "松霖科技 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：通芯智能 · 多轮融资 · 2026-11-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c83e93672458afd1"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-c83e93672458afd1",
+          "source_url": "https://www.36kr.com/p/4066136377873286",
+          "source_title": "36氪首发丨海光创始核心技术团队创业AGI架构芯片，获清华系等基金数亿投资-36氪",
+          "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+          "quote": "融资由清华校友种子基金、北京通用人工智能研究院、松霖科技、平治信息、暗物智能以及豫资涨泉、普超资本、青创伯乐等财务投资人共同参与，集聚产业资本、头部科技VC和财务资本。",
+          "quote_hash": "9ed55f08f8bd8254f1d9f0401425d0952b053ef74d399ec234545d99d484974c"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-5a09bb78c549f1": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "豫资涨泉 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：通芯智能 · 多轮融资 · 2026-11-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c83e93672458afd1"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-c83e93672458afd1",
+          "source_url": "https://www.36kr.com/p/4066136377873286",
+          "source_title": "36氪首发丨海光创始核心技术团队创业AGI架构芯片，获清华系等基金数亿投资-36氪",
+          "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+          "quote": "融资由清华校友种子基金、北京通用人工智能研究院、松霖科技、平治信息、暗物智能以及豫资涨泉、普超资本、青创伯乐等财务投资人共同参与，集聚产业资本、头部科技VC和财务资本。",
+          "quote_hash": "9ed55f08f8bd8254f1d9f0401425d0952b053ef74d399ec234545d99d484974c"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-f5762e4fec96e2": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "汇宁投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：阜时科技 · C4轮 · 2026-11-12 · 本轮参投 · 超4亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5c9f6bb8f512b556"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-5c9f6bb8f512b556",
+          "source_url": "https://news.pedaily.cn/202611/571736.shtml",
+          "source_title": "阜时科技完成超4亿元C4轮融资，加速物理AI空间感知芯片布局",
+          "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+          "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+          "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-fc4f4c161e1561": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "江远投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：飞拓星驰 · 天使轮 · 2026-11-12 · 本轮领投 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d972a22e56f20646"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-d972a22e56f20646",
+          "source_url": "https://news.pedaily.cn/202611/571751.shtml",
+          "source_title": "飞拓星驰完成数千万美元天使轮融资，打造家庭AI互动娱乐入口",
+          "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+          "quote": "本轮领投方分别是元生资本、江远投资",
+          "quote_hash": "52e8d9a9a4d1f0b9c47b7328f16ad92c1d95906fa27dab55d796686cdd8a9d34"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-84af6de1ec34f9": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "精测电子 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：阜时科技 · C4轮 · 2026-11-12 · 本轮参投 · 超4亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5c9f6bb8f512b556"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-5c9f6bb8f512b556",
+          "source_url": "https://news.pedaily.cn/202611/571736.shtml",
+          "source_title": "阜时科技完成超4亿元C4轮融资，加速物理AI空间感知芯片布局",
+          "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+          "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+          "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-7ed9b0462b0a60": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "青稞资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：阜时科技 · C4轮 · 2026-11-12 · 本轮参投 · 超4亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5c9f6bb8f512b556"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-5c9f6bb8f512b556",
+          "source_url": "https://news.pedaily.cn/202611/571736.shtml",
+          "source_title": "阜时科技完成超4亿元C4轮融资，加速物理AI空间感知芯片布局",
+          "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+          "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+          "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-d5cd54fff0feba": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "信通电子 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：阜时科技 · C4轮 · 2026-11-12 · 本轮参投 · 超4亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5c9f6bb8f512b556"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-5c9f6bb8f512b556",
+          "source_url": "https://news.pedaily.cn/202611/571736.shtml",
+          "source_title": "阜时科技完成超4亿元C4轮融资，加速物理AI空间感知芯片布局",
+          "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+          "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+          "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-30f8b724251860": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "兴银资产 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：阜时科技 · C4轮 · 2026-11-12 · 本轮参投 · 超4亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5c9f6bb8f512b556"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-5c9f6bb8f512b556",
+          "source_url": "https://news.pedaily.cn/202611/571736.shtml",
+          "source_title": "阜时科技完成超4亿元C4轮融资，加速物理AI空间感知芯片布局",
+          "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+          "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+          "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-e0191d33c6c67d": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "中欧新能源汽车基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：阜时科技 · C4轮 · 2026-11-12 · 本轮参投 · 超4亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5c9f6bb8f512b556"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-5c9f6bb8f512b556",
+          "source_url": "https://news.pedaily.cn/202611/571736.shtml",
+          "source_title": "阜时科技完成超4亿元C4轮融资，加速物理AI空间感知芯片布局",
+          "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+          "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+          "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-63a23ec8ceeda3": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Blackhorn Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Tristar AI · A轮 · 2026-11-12 · 本轮参投 · $12.4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2e57818eaf8972a7"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-2e57818eaf8972a7",
+          "source_url": "https://www.prnewswire.com/news-releases/tristar-ai-raises-12-4m-series-a-to-give-manufacturers-a-quality-inspector-that-never-blinks-302937353.html",
+          "source_title": "Tristar AI 完成 1240 万美元 A 轮融资，为制造商提供永不眨眼的质检员",
+          "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+          "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+          "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-ec40696020e3bd": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Capgemini's VC Fund managed by ISAI 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Tristar AI · A轮 · 2026-11-12 · 本轮参投 · $12.4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2e57818eaf8972a7"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-2e57818eaf8972a7",
+          "source_url": "https://www.prnewswire.com/news-releases/tristar-ai-raises-12-4m-series-a-to-give-manufacturers-a-quality-inspector-that-never-blinks-302937353.html",
+          "source_title": "Tristar AI 完成 1240 万美元 A 轮融资，为制造商提供永不眨眼的质检员",
+          "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+          "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+          "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-828fb68310b73e": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Clearlake Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Mirendil · A轮 · 2026-11-12 · 本轮领投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-91b5c399f66248bf"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-91b5c399f66248bf",
+          "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+          "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+          "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+          "quote": "we've raised $1B in a Series A, led by Kleiner Perkins and Clearlake Capital",
+          "quote_hash": "d905bce0e2c6176188704005b260f64dd8c80eef2f58262dddc988ee3a366009"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-7ef35c91fc55a2": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Doerr Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Mirendil · A轮 · 2026-11-12 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-91b5c399f66248bf"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-91b5c399f66248bf",
+          "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+          "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+          "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+          "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+          "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-56693337c7343c": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Ford Street Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Tristar AI · A轮 · 2026-11-12 · 本轮参投 · $12.4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2e57818eaf8972a7"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-2e57818eaf8972a7",
+          "source_url": "https://www.prnewswire.com/news-releases/tristar-ai-raises-12-4m-series-a-to-give-manufacturers-a-quality-inspector-that-never-blinks-302937353.html",
+          "source_title": "Tristar AI 完成 1240 万美元 A 轮融资，为制造商提供永不眨眼的质检员",
+          "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+          "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+          "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-e015389d5fe2b6": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Gil & Co 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Mirendil · A轮 · 2026-11-12 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-91b5c399f66248bf"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-91b5c399f66248bf",
+          "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+          "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+          "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+          "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+          "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-801c95327b9194": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "Google 官网提供企业使命信息；TechCrunch 于 2025-01-22 报道 Google 向 Anthropic 追加投资约 10 亿美元，文章将其表述为“reportedly”，且注明源自 Financial Times，未在本次缓存中找到 Google 官方确认。",
+      "summary": "Google 是 Alphabet 旗下科技公司，官网称其工作包括推进 AI 领域并解决复杂挑战。TechCrunch 于 2025 年 1 月报道 Google 据称向 Anthropic 追加约 10 亿美元投资；该融资消息在本档案中保留为媒体报道，未作为 Google 官方确认事实。",
+      "facts": [
+        {
+          "field": "company_mission",
+          "label": "官网说明的工作方向",
+          "value": "推进 AI 领域并帮助解决复杂挑战。",
+          "source_id": "PFSRC-INV-801c95327b9194-1"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "TechCrunch 于 2025 年 1 月 22 日报道 Anthropic 据称又从 Google 获得约 10 亿美元投资，并说明该消息最初由 Financial Times 报道；Google 官方页面未在本次缓存中确认这笔交易。",
+          "source_id": "PFSRC-INV-801c95327b9194-2"
+        },
+        {
+          "description": "融资来源记录：Mirendil · A轮 · 2026-11-12 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-91b5c399f66248bf"
+        },
+        {
+          "description": "融资来源记录：Anthropic · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a69f4d2abe539628"
+        },
+        {
+          "description": "融资来源记录：Anthropic PBC · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ef9fd29dc050f7ca"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Google 公司信息",
+          "value": "https://about.google/intl/en_ALL/company-info/",
+          "url": "https://about.google/intl/en_ALL/company-info/",
+          "source_id": "PFSRC-INV-801c95327b9194-1"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "PFSRC-INV-801c95327b9194-1",
+          "source_url": "https://about.google/intl/en_ALL/company-info/",
+          "source_title": "About Google company information",
+          "source_content_hash": "21c2c56a4c2d5cec6115b00f7cd185306b1ec7e0d0c5ac22f3ddb953ef8772f9",
+          "quote": "Our teams are working to solve complex challenges, advance the field of AI and help as many people as possible.",
+          "quote_hash": "b4ce2ab6eeafc98f7eb8cccba5d8d2c3d262fa28ab6541d1a876b4732dad00d2"
+        },
+        {
+          "source_id": "PFSRC-INV-801c95327b9194-2",
+          "source_url": "https://techcrunch.com/2025/01/22/anthropic-reportedly-secures-an-additional-1b-from-google/",
+          "source_title": "Anthropic reportedly secures an additional $1B from Google | TechCrunch",
+          "source_content_hash": "686c0ea2f10d1d26313c21b6dfe195765cf8dfa92927f0eb221bf1bdd89c43b5",
+          "quote": "Anthropic has reportedly raised around $1 billion from Google as the AI company looks to deliver a number of major product updates this year.",
+          "quote_hash": "ce795612942541bc993c725417df2f84b6350c0beadc16953854843a51fe7151"
+        },
+        {
+          "source_id": "FISRC-91b5c399f66248bf",
+          "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+          "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+          "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+          "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+          "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+        },
+        {
+          "source_id": "FISRC-a69f4d2abe539628",
+          "source_url": "https://tracxn.com/d/companies/anthropic/__SzoxXDMin-NK5tKB7ks8yHr6S9Mz68pjVCzFEcGFZ08/funding-and-investors",
+          "source_title": "Anthropic",
+          "source_content_hash": "0e21dc8c5bf73e44",
+          "quote": "Google, located in Mountain View (United States), made their first investment in Anthropic on May 16, 2023 in its Series C round.",
+          "quote_hash": "8c4af9a98d703a94e97ef31b65a4a10ce8d1f0a28ecff123c535ababca52f91f"
+        },
+        {
+          "source_id": "FISRC-ef9fd29dc050f7ca",
+          "source_url": "https://siliconangle.com/2025/03/03/anthropic-raises-3-5b-61-5b-valuation-advance-ai-research/",
+          "source_title": "Anthropic raises $3.5B at $61.5B valuation to advance its AI research - SiliconANGLE",
+          "source_content_hash": "3484405d65f54368",
+          "quote": "The Series E deal comes less than two months after the company raised $1 billion from Google LLC.",
+          "quote_hash": "1e13409ae0b41dc474d131020206f63c8afd4bc0e232d9ac8416b5cb48f25ee8"
+        }
+      ],
+      "last_verified_at": "2026-10-02"
+    },
+    "INV-63258113e04663": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Isogon Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Tristar AI · A轮 · 2026-11-12 · 本轮领投 · $12.4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2e57818eaf8972a7"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-2e57818eaf8972a7",
+          "source_url": "https://www.prnewswire.com/news-releases/tristar-ai-raises-12-4m-series-a-to-give-manufacturers-a-quality-inspector-that-never-blinks-302937353.html",
+          "source_title": "Tristar AI 完成 1240 万美元 A 轮融资，为制造商提供永不眨眼的质检员",
+          "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+          "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+          "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-981261ef407928": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Las Olas VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Tristar AI · A轮 · 2026-11-12 · 本轮参投 · $12.4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2e57818eaf8972a7"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-2e57818eaf8972a7",
+          "source_url": "https://www.prnewswire.com/news-releases/tristar-ai-raises-12-4m-series-a-to-give-manufacturers-a-quality-inspector-that-never-blinks-302937353.html",
+          "source_title": "Tristar AI 完成 1240 万美元 A 轮融资，为制造商提供永不眨眼的质检员",
+          "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+          "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+          "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-cf3d8988e57965": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "NextView Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Tristar AI · A轮 · 2026-11-12 · 本轮参投 · $12.4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2e57818eaf8972a7"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-2e57818eaf8972a7",
+          "source_url": "https://www.prnewswire.com/news-releases/tristar-ai-raises-12-4m-series-a-to-give-manufacturers-a-quality-inspector-that-never-blinks-302937353.html",
+          "source_title": "Tristar AI 完成 1240 万美元 A 轮融资，为制造商提供永不眨眼的质检员",
+          "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+          "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+          "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-03958576d9e059": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Seraph Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Tristar AI · A轮 · 2026-11-12 · 本轮参投 · $12.4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2e57818eaf8972a7"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-2e57818eaf8972a7",
+          "source_url": "https://www.prnewswire.com/news-releases/tristar-ai-raises-12-4m-series-a-to-give-manufacturers-a-quality-inspector-that-never-blinks-302937353.html",
+          "source_title": "Tristar AI 完成 1240 万美元 A 轮融资，为制造商提供永不眨眼的质检员",
+          "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+          "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+          "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-3a2110ba6e3a99": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "SNR Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Tristar AI · A轮 · 2026-11-12 · 本轮参投 · $12.4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2e57818eaf8972a7"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-2e57818eaf8972a7",
+          "source_url": "https://www.prnewswire.com/news-releases/tristar-ai-raises-12-4m-series-a-to-give-manufacturers-a-quality-inspector-that-never-blinks-302937353.html",
+          "source_title": "Tristar AI 完成 1240 万美元 A 轮融资，为制造商提供永不眨眼的质检员",
+          "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+          "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+          "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-7aa785057f9bb3": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "TenOneTen 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Tristar AI · A轮 · 2026-11-12 · 本轮参投 · $12.4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2e57818eaf8972a7"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-2e57818eaf8972a7",
+          "source_url": "https://www.prnewswire.com/news-releases/tristar-ai-raises-12-4m-series-a-to-give-manufacturers-a-quality-inspector-that-never-blinks-302937353.html",
+          "source_title": "Tristar AI 完成 1240 万美元 A 轮融资，为制造商提供永不眨眼的质检员",
+          "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+          "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+          "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-437fb819f60a09": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -69497,33 +70694,6 @@
           "source_content_hash": "1930e3f43369be6c",
           "quote": "The round was led by Lightspeed Venture Partners and Insight Partners, with participation from existing investors including Lux Capital, Sequoia Capital and strategic backer Lockheed Martin Ventures.",
           "quote_hash": "850df8796e7d3962aa0dbccf6389b0810da45907c95956ec4b36cd9736e29804"
-        }
-      ],
-      "last_verified_at": "2026-10-06"
-    },
-    "INV-0a5afde0849cd3": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "M13 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Nominal · C轮 · 2026-11-09 · 本轮参投 · $240 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3491226e16a1391a"
-        }
-      ],
-      "contacts": [],
-      "sources": [
-        {
-          "source_id": "FISRC-3491226e16a1391a",
-          "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
-          "source_title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
-          "source_content_hash": "661a69b2d4192044",
-          "quote": "Other major investors include Lux Capital, Sequoia, General Catalyst, Founders Fund, Avenir, Salesforce Ventures, M13, Lockheed Martin Ventures, Red Glass Ventures, PSP Growth, and Deployment Capital.",
-          "quote_hash": "1842d3b44f66bd838961f42a21921aa1e8703bf5bbe896228e91787e10d8a96a"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -107433,108 +108603,6 @@
       ],
       "last_verified_at": "2026-10-03"
     },
-    "INV-3e3282aa6edde0": {
-      "summary": "元生创投官网将苏州工业园区元生创业投资管理有限公司称为元生创投，并定位为专注早期和成长期医疗健康领域的投资机构。",
-      "facts": [
-        {
-          "field": "legal_name",
-          "label": "官网标题主体",
-          "value": "苏州工业园区元生创业投资管理有限公司。",
-          "source_id": "PROFILE-INV-3e3282aa6edde0-1"
-        },
-        {
-          "field": "investment_focus",
-          "label": "投资方向",
-          "value": "医疗健康领域。",
-          "source_id": "PROFILE-INV-3e3282aa6edde0-1"
-        },
-        {
-          "field": "investment_stage",
-          "label": "投资阶段",
-          "value": "早期和成长期。",
-          "source_id": "PROFILE-INV-3e3282aa6edde0-1"
-        },
-        {
-          "field": "geography",
-          "label": "官网所述地域",
-          "value": "立足苏州bioBAY，辐射全球。",
-          "source_id": "PROFILE-INV-3e3282aa6edde0-1"
-        }
-      ],
-      "milestones": [
-        {
-          "date": "2013",
-          "description": "官网列示的成立年份。",
-          "source_id": "PROFILE-INV-3e3282aa6edde0-1"
-        }
-      ],
-      "track_record": [
-        {
-          "description": "融资来源记录：Violoop · 多轮融资 · 2026-09-02 · 本轮参投 · 亿级。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4ce1b109c402e02b"
-        },
-        {
-          "description": "融资来源记录：三启万物 · 历史轮次未披露 · 老股东持续追投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a4dbd49c64cb5834"
-        },
-        {
-          "description": "融资来源记录：上海宇道生物技术有限公司 · 历史轮次未披露 · A+轮领投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-163d5b5325339f27"
-        }
-      ],
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "队列别名“元生资本”按官网品牌和管理公司名称映射至“元生创投”；不纳入官网披露的易变组合数量、上市数或回报数据。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官网",
-          "value": "元生创投官网",
-          "url": "https://www.bioventure.com.cn/",
-          "source_id": "PROFILE-INV-3e3282aa6edde0-1"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "PROFILE-INV-3e3282aa6edde0-1",
-          "source_url": "https://www.bioventure.com.cn/",
-          "source_title": "苏州工业园区元生创业投资管理有限公司",
-          "source_content_hash": "5e3a59f4a787ab33ee7999c0fdedde4e0f0269376f113936d9834cd9399b0a98",
-          "quote": "元生创投是一家专注于早期和成长期医疗健康领域的投资机构，立足苏州bioBAY，辐射全球。",
-          "quote_hash": "31b8d93bb5216f6fc161b79c6b73ee1b798ac38c70a87726f122c49545ccdf48"
-        },
-        {
-          "source_id": "FISRC-4ce1b109c402e02b",
-          "source_url": "https://i.ifeng.com/c/8w5nAa2tSBS",
-          "source_title": "DEMO|对话Violoop：谁不想有个自己的模型，在真实工作里长出来那种",
-          "source_content_hash": "d2514a816bb64a43",
-          "quote": "投资方汇聚了VC及知名产投：联想创投、中金保时捷、蓝驰创投、元生资本、启赋资本、zero2ipo ventures联合出资",
-          "quote_hash": "ae33d8aaa0d81919796e4f82ef2f77d2f6b325deab1cc71ff9122e5fdec30426"
-        },
-        {
-          "source_id": "FISRC-a4dbd49c64cb5834",
-          "source_url": "https://news.pedaily.cn/202607/565779.shtml",
-          "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
-          "source_content_hash": "3e7e05417d6a96b1",
-          "quote": "老股东 渶策资本、元生资本 持续追投。",
-          "quote_hash": "08ef92f098bf62a5aa936148c107ee1fa09fdbc1ff090e097b919bdd522b3dec"
-        },
-        {
-          "source_id": "FISRC-163d5b5325339f27",
-          "source_url": "https://www.vbdata.cn/54325",
-          "source_title": "【首发】宇道生物宣布完成4000万美金A+轮融资，全面推进基于蛋白构象调节的药物研发平台及创新管线-动脉网",
-          "source_content_hash": "cd3cadd497747101",
-          "quote": "本次融资由元生资本领投，恒旭资本联合领投",
-          "quote_hash": "108c49894d6894d18fd21e5eeedef2fa9356c08e018d82520ac6d3fefa966987"
-        }
-      ],
-      "last_verified_at": "2026-10-03"
-    },
     "INV-b7321e021da7d2": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -143081,33 +144149,6 @@
       "last_verified_at": "2026-09-26",
       "identity_status": "verified"
     },
-    "INV-f4276dc832f139": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "锋领资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：AIVELA · 其他融资 · 2026-06-29 · 本轮参投 · 数百万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-205a3b05b631cdd8"
-        }
-      ],
-      "contacts": [],
-      "sources": [
-        {
-          "source_id": "FISRC-205a3b05b631cdd8",
-          "source_url": "https://www.36kr.com/p/3873710996902912",
-          "source_title": "36氪首发 | URTOPIA联创做了款智能指环，众筹已破千万元",
-          "source_content_hash": "1f912cd1459add0cac2e940678a7df24cc373fd4c437f06b45b8c95de7bfa419",
-          "quote": "本轮融资由线性资本领投，锋领资本跟投，智能电助力自行车品牌URTOPIA等产业方共同加注。",
-          "quote_hash": "d9d06a09432716bfde519da6d835cb713c48a69c136741a483fdddb2da1e9334"
-        }
-      ],
-      "last_verified_at": "2026-10-06"
-    },
     "INV-2926e658a412ec": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -161391,72 +162432,6 @@
           "source_content_hash": "6b9b4b3d8f2ec2127c9d4c9714aa61ba5c907ea6683f12e27bca9a594eec6bcf",
           "quote": "光点资本是中国最具成长力的私募股权投资机构之一，重点投资消费科技领域的成长期企业。",
           "quote_hash": "04f94b9a5355cbbfa1bd316878c44f86d250aae1f1e4536f9529600c6e098921"
-        },
-        {
-          "source_id": "FISRC-867a0916b6d45f09",
-          "source_url": "https://news.qq.com/rain/a/20260511A031PC00",
-          "source_title": "独家｜ 95后港中文博士融资数百万美金，打造全球首个AI Native家庭娱乐入口_腾讯新闻",
-          "source_content_hash": "2287fe55b5088a36d4415f4626500b8697cb517aa9371cd701c8adaaab97e52d",
-          "quote": "飞拓星驰（FitX AI）宣布完成数百万美金融资，由日初资本领投，光点资本跟投。",
-          "quote_hash": "a01a47d29a132533613120a8d2a72eec7f736eebf2c08fae6a403cbf8462ff3a"
-        }
-      ],
-      "last_verified_at": "2026-10-03"
-    },
-    "INV-88d7f2820a1024": {
-      "summary": "日初资本官网称其由 Allen Chen 于 2020 年创立，专注消费品细分领域投资，并披露一期美元基金。",
-      "facts": [
-        {
-          "field": "organization_type",
-          "label": "官网定位",
-          "value": "专注消费品细分领域的投资机构。",
-          "source_id": "PROFILE-INV-88d7f2820a1024-1"
-        },
-        {
-          "field": "founded",
-          "label": "官网披露成立时间",
-          "value": "2020年。",
-          "source_id": "PROFILE-INV-88d7f2820a1024-1"
-        },
-        {
-          "field": "founder",
-          "label": "官网披露创始人",
-          "value": "Allen Chen（陈峰）。",
-          "source_id": "PROFILE-INV-88d7f2820a1024-1"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：飞拓星驰（FitX AI） · A轮 · 2026-05-11 · 本轮领投 · 数百万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-867a0916b6d45f09"
-        }
-      ],
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "依据管理团队官网的机构介绍和投资方向建档；未补入组合企业的未经逐项核验信息。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官网",
-          "value": "Dayone Capital / 日初资本",
-          "url": "https://www.dayonecap.com/?source_capture=2026-10-03&cycle=13",
-          "source_id": "PROFILE-INV-88d7f2820a1024-1"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "PROFILE-INV-88d7f2820a1024-1",
-          "source_url": "https://www.dayonecap.com/?source_capture=2026-10-03&cycle=13",
-          "source_title": "日初资本 Dayone Capital",
-          "source_content_hash": "0ef7b3769c43da5bd0a3e958c0c4b2553bf400e74fa9ffee1fd162df890062b9",
-          "quote": "Founded in 2020 by Allen Chen, a proven entrepreneur and experienced investor, Dayone Capital is committed to becoming a value-creation driven investor in selective verticals of consumer goods.",
-          "quote_hash": "27fb30ad8afe455b0b734ebdd59f2995bceab411f539669c25968f5a5be928e1"
         },
         {
           "source_id": "FISRC-867a0916b6d45f09",
@@ -183929,6 +184904,10 @@
           "source_id": "FISRC-2707f48aa6e437b7"
         },
         {
+          "description": "融资来源记录：阜时科技 · 历史轮次未披露 · D++轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-312e71a0a1bcc428"
+        },
+        {
           "description": "融资来源记录：星海图 · 历史轮次未披露 · B轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7a614400d44a7041"
         }
@@ -183974,6 +184953,14 @@
           "source_content_hash": "85e4d40faa23c515",
           "quote": "星海图宣布完成10亿元B轮融资，投资方阵容豪华——包括金鼎资本、北汽产投、碧鸿投资等一线产业资本",
           "quote_hash": "535ecab1b0eaadc537213a68849defa3cbc6d153ce94c714a49d02fa4808ed1d"
+        },
+        {
+          "source_id": "FISRC-312e71a0a1bcc428",
+          "source_url": "https://vc.pedaily.cn/company/12843.html",
+          "source_title": "「 阜时科技」智能传感器处理器芯片研发商_投资界",
+          "source_content_hash": "06d493f53678103a",
+          "quote": "D++轮：2026-01-05，超2亿元人民币，投资方为谷雨嘉禾、福田引导基金、金鼎资本",
+          "quote_hash": "5255ecc7330b8672256a402c703d0007f19fdba6db1d5bc4acbaf9f1af76a2a1"
         },
         {
           "source_id": "FISRC-7a614400d44a7041",
@@ -195451,94 +196438,6 @@
       ],
       "last_verified_at": "2026-09-28"
     },
-    "INV-b7683f1acbf4fb": {
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "profile_type": "organization",
-      "coverage_note": "以 ISAI 与 Capgemini 的官方公告记录 ISAI Cap Venture II；Liquid AI 官方投资者说明确认 ISAI Cap Venture 的投资者关系。公告中的 €80M 为 II 期规模。",
-      "summary": "ISAI Cap Venture 是 ISAI 与 Capgemini 合作的企业风险投资基金系列，面向全球 B2B 初创企业和成长期公司。官方公告称 II 期于 2025 年推出，规模为 €80 million；Liquid AI 官方投资者说明将 ISAI Cap Venture 列为投资者之一。",
-      "facts": [
-        {
-          "field": "fund_type",
-          "label": "基金类型",
-          "value": "企业风险投资基金（与 Capgemini 合作）",
-          "source_id": "isai_launch_ii"
-        },
-        {
-          "field": "investment_focus",
-          "label": "投资方向",
-          "value": "全球高潜力 B2B 初创企业与成长期公司。",
-          "source_id": "isai_launch_ii"
-        },
-        {
-          "field": "fund_size",
-          "label": "基金规模",
-          "value": "ISAI Cap Venture II：€80 million。",
-          "source_id": "isai_launch_ii"
-        }
-      ],
-      "milestones": [
-        {
-          "date": "2025-04-10",
-          "description": "ISAI 与 Capgemini 宣布推出 ISAI Cap Venture II，基金规模为 €80 million。",
-          "source_id": "isai_launch_ii"
-        }
-      ],
-      "track_record": [
-        {
-          "description": "Liquid AI 官方投资者说明将 ISAI Cap Venture 列入其投资者名单。",
-          "source_id": "liquid_investors"
-        },
-        {
-          "description": "融资来源记录：Liquid AI · 种子轮 · 2023-12-06 · 本轮参投 · 3750万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d1080395d67df2c7"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "ISAI Cap Venture",
-          "value": "ISAI Cap Venture",
-          "url": "https://www.isai.fr/isai-cap-venture",
-          "source_id": "isai_launch_ii"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "isai_launch_ii",
-          "source_url": "https://www.isai.fr/news/capgemini-et-isai-lancent-isai-cap-venture-ii",
-          "source_title": "CAPGEMINI ET ISAI LANCENT ISAI CAP VENTURE II &mdash; isai",
-          "source_content_hash": "c1ddb9ec79ef48da737974c9e1af7a594a5170afdb7649d4eac473ff4b140942",
-          "quote": "Paris, le 10 avril 2025 – A la suite du succès d'ISAI Cap Venture I, ISAI et Capgemini annoncent le lancement d'ISAI Cap Venture II, un nouveau véhicule d'investissement dédié à soutenir des startups et scale-ups B2B à fort potentiel dans le monde entier.",
-          "quote_hash": "94e5352131248c1f618cbb5617da649ff9ff2874a1404fc89a0c25947ccfb533"
-        },
-        {
-          "source_id": "isai_fund_size",
-          "source_url": "https://www.isai.fr/news/capgemini-et-isai-lancent-isai-cap-venture-ii",
-          "source_title": "CAPGEMINI ET ISAI LANCENT ISAI CAP VENTURE II &mdash; isai",
-          "source_content_hash": "c1ddb9ec79ef48da737974c9e1af7a594a5170afdb7649d4eac473ff4b140942",
-          "quote": "Cette deuxième édition du fonds, dotée de 80 millions d'euros",
-          "quote_hash": "f3e3aba3faf8615452f983854fa85292025a858929723d755e0b89367f89cb91"
-        },
-        {
-          "source_id": "liquid_investors",
-          "source_url": "https://www.liquid.ai/blog/new-generation-of-ai-models-from-first-principles",
-          "source_title": "Liquid AI: A New Generation of AI Models from First Principles | Blog | Liquid AI",
-          "source_content_hash": "8df0fab4548b6d02e671b4d036747b2c7a650625e653137c214d7abadcd3dffa",
-          "quote": "ISAI Cap Venture (Capgemini’s VC Fund managed by ISAI)",
-          "quote_hash": "c80c91c224e6842409dd125186d7950a24ff4bde3147ff77c4dffa73ec82bf64"
-        },
-        {
-          "source_id": "FISRC-d1080395d67df2c7",
-          "source_url": "https://techcrunch.com/2023/12/06/liquid-ai-a-new-mit-spinoff-wants-to-build-an-entirely-new-type-of-ai/",
-          "source_title": "MIT 衍生公司 Liquid AI 希望构建一种全新类型的 AI",
-          "source_content_hash": "42d5867eaff12416",
-          "quote": "ISAI Cap Venture",
-          "quote_hash": "ac475b04df8a6955aaec8bcb4cc432547454b79f534e7aa964edfba25b8b0b99"
-        }
-      ],
-      "last_verified_at": "2026-10-02"
-    },
     "INV-a36e955bd9d9da": {
       "summary": "Marc N. Casper 是 Thermo Fisher Scientific 的董事长兼首席执行官，2026年3月前亦任总裁。他于2001年加入前身 Thermo Electron，曾任 Kendro Laboratory Products 首席执行官、Dade Behring 美洲区总裁，并有 Bain & Company 与 Bain Capital 经历。Thermo Fisher 官方履历列出其哈佛商学院MBA及 Wesleyan University 经济学学士学位；Liquid AI 2023年种子轮公告将其列为个人投资者。",
       "facts": [],
@@ -204553,6 +205452,33 @@
       ],
       "last_verified_at": "2026-10-03"
     },
+    "INV-9db8f9c6657264": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "东城集团 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：阜时科技 · 历史轮次未披露 · E轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-312e71a0a1bcc428"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-312e71a0a1bcc428",
+          "source_url": "https://vc.pedaily.cn/company/12843.html",
+          "source_title": "「 阜时科技」智能传感器处理器芯片研发商_投资界",
+          "source_content_hash": "06d493f53678103a",
+          "quote": "E轮：2026-09-30，金额未披露，投资方为兴银投资、青稞资本、华睿投资、精测电子、东城集团。",
+          "quote_hash": "b16c0724b677b6b218caa58a43f7a36dead37e958084eac8edebb3104af9207e"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
     "INV-2604a4de0f6639": {
       "summary": "东方明珠新媒体官网将公司描述为上海广播电视台旗下产业平台和资本平台。",
       "facts": [
@@ -204970,6 +205896,33 @@
         }
       ],
       "last_verified_at": "2026-10-05"
+    },
+    "INV-e79554017c1456": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "福田引导基金 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：阜时科技 · 历史轮次未披露 · D++轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-312e71a0a1bcc428"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-312e71a0a1bcc428",
+          "source_url": "https://vc.pedaily.cn/company/12843.html",
+          "source_title": "「 阜时科技」智能传感器处理器芯片研发商_投资界",
+          "source_content_hash": "06d493f53678103a",
+          "quote": "D++轮：2026-01-05，超2亿元人民币，投资方为谷雨嘉禾、福田引导基金、金鼎资本",
+          "quote_hash": "5255ecc7330b8672256a402c703d0007f19fdba6db1d5bc4acbaf9f1af76a2a1"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
     },
     "INV-0a9ec520981d54": {
       "identity_status": "verified",
@@ -205454,6 +206407,33 @@
           "source_content_hash": "7196cfd22bae066b49d9616a33d81dc0aa57057e10c11718ca4b266bf40235e1",
           "quote": "之前的投资者包括红杉资本、谷歌风险投资公司、英伟达、凯鹏华盈、黑石、Henry Kravis、Coatue、Thrive Capital、Conviction、ICONIQ、Greycroft、Breyer Capital、BOND、Craft Ventures、Goanna、Meritech、Alkeon和Mayo Clinic等。",
           "quote_hash": "cb9f28050b0a66987d6938cae09d456814d4d27a81fd367ed9eac889ccdc81fa"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
+    },
+    "INV-acefc0f7da1bd9": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "谷雨嘉禾 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：阜时科技 · 历史轮次未披露 · D++轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-312e71a0a1bcc428"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-312e71a0a1bcc428",
+          "source_url": "https://vc.pedaily.cn/company/12843.html",
+          "source_title": "「 阜时科技」智能传感器处理器芯片研发商_投资界",
+          "source_content_hash": "06d493f53678103a",
+          "quote": "D++轮：2026-01-05，超2亿元人民币，投资方为谷雨嘉禾、福田引导基金、金鼎资本",
+          "quote_hash": "5255ecc7330b8672256a402c703d0007f19fdba6db1d5bc4acbaf9f1af76a2a1"
         }
       ],
       "last_verified_at": "2026-10-06"
@@ -218146,6 +219126,33 @@
       "career": [],
       "education": [],
       "experience_summary": ""
+    },
+    "INV-13d565a737d438": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "兴银投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：阜时科技 · 历史轮次未披露 · E轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-312e71a0a1bcc428"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-312e71a0a1bcc428",
+          "source_url": "https://vc.pedaily.cn/company/12843.html",
+          "source_title": "「 阜时科技」智能传感器处理器芯片研发商_投资界",
+          "source_content_hash": "06d493f53678103a",
+          "quote": "E轮：2026-09-30，金额未披露，投资方为兴银投资、青稞资本、华睿投资、精测电子、东城集团。",
+          "quote_hash": "b16c0724b677b6b218caa58a43f7a36dead37e958084eac8edebb3104af9207e"
+        }
+      ],
+      "last_verified_at": "2026-10-06"
     },
     "INV-379dcc34db6ee2": {
       "profile_type": "organization",
@@ -231233,80 +232240,6 @@
         }
       ],
       "last_verified_at": "2026-09-28"
-    },
-    "INV-801c95327b9194": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "Google 官网提供企业使命信息；TechCrunch 于 2025-01-22 报道 Google 向 Anthropic 追加投资约 10 亿美元，文章将其表述为“reportedly”，且注明源自 Financial Times，未在本次缓存中找到 Google 官方确认。",
-      "summary": "Google 是 Alphabet 旗下科技公司，官网称其工作包括推进 AI 领域并解决复杂挑战。TechCrunch 于 2025 年 1 月报道 Google 据称向 Anthropic 追加约 10 亿美元投资；该融资消息在本档案中保留为媒体报道，未作为 Google 官方确认事实。",
-      "facts": [
-        {
-          "field": "company_mission",
-          "label": "官网说明的工作方向",
-          "value": "推进 AI 领域并帮助解决复杂挑战。",
-          "source_id": "PFSRC-INV-801c95327b9194-1"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "TechCrunch 于 2025 年 1 月 22 日报道 Anthropic 据称又从 Google 获得约 10 亿美元投资，并说明该消息最初由 Financial Times 报道；Google 官方页面未在本次缓存中确认这笔交易。",
-          "source_id": "PFSRC-INV-801c95327b9194-2"
-        },
-        {
-          "description": "融资来源记录：Anthropic · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a69f4d2abe539628"
-        },
-        {
-          "description": "融资来源记录：Anthropic PBC · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ef9fd29dc050f7ca"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "Google 公司信息",
-          "value": "https://about.google/intl/en_ALL/company-info/",
-          "url": "https://about.google/intl/en_ALL/company-info/",
-          "source_id": "PFSRC-INV-801c95327b9194-1"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "PFSRC-INV-801c95327b9194-1",
-          "source_url": "https://about.google/intl/en_ALL/company-info/",
-          "source_title": "About Google company information",
-          "source_content_hash": "21c2c56a4c2d5cec6115b00f7cd185306b1ec7e0d0c5ac22f3ddb953ef8772f9",
-          "quote": "Our teams are working to solve complex challenges, advance the field of AI and help as many people as possible.",
-          "quote_hash": "b4ce2ab6eeafc98f7eb8cccba5d8d2c3d262fa28ab6541d1a876b4732dad00d2"
-        },
-        {
-          "source_id": "PFSRC-INV-801c95327b9194-2",
-          "source_url": "https://techcrunch.com/2025/01/22/anthropic-reportedly-secures-an-additional-1b-from-google/",
-          "source_title": "Anthropic reportedly secures an additional $1B from Google | TechCrunch",
-          "source_content_hash": "686c0ea2f10d1d26313c21b6dfe195765cf8dfa92927f0eb221bf1bdd89c43b5",
-          "quote": "Anthropic has reportedly raised around $1 billion from Google as the AI company looks to deliver a number of major product updates this year.",
-          "quote_hash": "ce795612942541bc993c725417df2f84b6350c0beadc16953854843a51fe7151"
-        },
-        {
-          "source_id": "FISRC-a69f4d2abe539628",
-          "source_url": "https://tracxn.com/d/companies/anthropic/__SzoxXDMin-NK5tKB7ks8yHr6S9Mz68pjVCzFEcGFZ08/funding-and-investors",
-          "source_title": "Anthropic",
-          "source_content_hash": "0e21dc8c5bf73e44",
-          "quote": "Google, located in Mountain View (United States), made their first investment in Anthropic on May 16, 2023 in its Series C round.",
-          "quote_hash": "8c4af9a98d703a94e97ef31b65a4a10ce8d1f0a28ecff123c535ababca52f91f"
-        },
-        {
-          "source_id": "FISRC-ef9fd29dc050f7ca",
-          "source_url": "https://siliconangle.com/2025/03/03/anthropic-raises-3-5b-61-5b-valuation-advance-ai-research/",
-          "source_title": "Anthropic raises $3.5B at $61.5B valuation to advance its AI research - SiliconANGLE",
-          "source_content_hash": "3484405d65f54368",
-          "quote": "The Series E deal comes less than two months after the company raised $1 billion from Google LLC.",
-          "quote_hash": "1e13409ae0b41dc474d131020206f63c8afd4bc0e232d9ac8416b5cb48f25ee8"
-        }
-      ],
-      "last_verified_at": "2026-10-02"
     },
     "INV-042468a8416e87": {
       "summary": "GV（Google Ventures）是Alphabet旗下风险投资机构，2009年以Google Ventures名称成立，官网称Alphabet为唯一有限合伙人。其投资覆盖科技与生命科学，从种子轮到成长期，并为创业团队提供运营支持。官网披露资产管理规模超过130亿美元及400家活跃组合公司。",

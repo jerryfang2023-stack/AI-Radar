@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-12",
-    "currentDate": "2026-11-12",
-    "eventCount": 4436,
+    "latestDataDate": "2026-11-13",
+    "currentDate": "2026-11-13",
+    "eventCount": 4448,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 14,
-    "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 13,
+    "current_round_count": 15,
+    "historical_or_ambiguous_count": 6,
+    "portfolio_company_count": 14,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-31",
-    "latest_disclosed_at": "2026-10-21",
+    "latest_disclosed_at": "2026-11-12",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 5,
-      "lead": 3,
+      "historical_or_ambiguous": 6,
+      "lead": 4,
       "participant": 10
     },
     "round_codes": [
@@ -123,6 +123,11 @@
         "name": "Flapping Airplanes"
       },
       {
+        "entity_id": "EN-b81b59c4259c46d6",
+        "canonical_entity_id": "",
+        "name": "Mirendil"
+      },
+      {
         "entity_id": "EN-c5803a6e4daa6af4",
         "canonical_entity_id": "",
         "name": "Modal"
@@ -154,6 +159,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-6348d08a6a314cef",
+        "funding_insight_id": "FI-03bb0617eea57ed6",
+        "event_ids": [
+          "EV-28354a9359e59d75"
+        ],
+        "company_entity_id": "EN-b81b59c4259c46d6",
+        "company_canonical_entity_id": "",
+        "company_name": "Mirendil",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$1B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-11-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-91b5c399f66248bf",
+            "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+            "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+            "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+            "quote": "we've raised $1B in a Series A, led by Kleiner Perkins and Clearlake Capital",
+            "quote_hash": "d905bce0e2c6176188704005b260f64dd8c80eef2f58262dddc988ee3a366009"
+          }
+        ]
+      },
       {
         "activity_id": "IA-432df358dac10e66",
         "funding_insight_id": "FI-f6024633a1bff4e3",
@@ -849,6 +894,38 @@
         ]
       },
       {
+        "activity_id": "IA-7063fb20d12c59bc",
+        "funding_insight_id": "FI-03bb0617eea57ed6",
+        "event_ids": [
+          "EV-28354a9359e59d75"
+        ],
+        "company_entity_id": "EN-b81b59c4259c46d6",
+        "company_canonical_entity_id": "",
+        "company_name": "Mirendil",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5d5042b2dbd57003",
+            "source_url": "https://www.unite.ai/mirendil-raises-1b-series-a-to-bring-frontier-ai-r-and-d-to-more-teams/",
+            "source_title": "Mirendil Raises $1B Series A to Bring Frontier AI R&D to More Teams",
+            "source_content_hash": "4ca2252747181568",
+            "quote": "a $200 million seed round led by Andreessen Horowitz and Kleiner Perkins",
+            "quote_hash": "df1e21c667801fbd9f8828f9a321ca916dae3a8b4438ca25d86ca164c9e2119f"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-268381c0a1139e2b",
         "funding_insight_id": "FI-b1c547937abcaf77",
         "event_ids": [
@@ -883,6 +960,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-91b5c399f66248bf",
+        "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+        "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+        "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+        "quote": "we've raised $1B in a Series A, led by Kleiner Perkins and Clearlake Capital",
+        "quote_hash": "d905bce0e2c6176188704005b260f64dd8c80eef2f58262dddc988ee3a366009"
+      },
       {
         "source_id": "FISRC-d40817bd8696706a",
         "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
@@ -1028,6 +1113,14 @@
         "quote_hash": "f2360aaa4549f987e713fb36b41769c61a6dcbe7f02af6e67e0abac2b8179115"
       },
       {
+        "source_id": "FISRC-5d5042b2dbd57003",
+        "source_url": "https://www.unite.ai/mirendil-raises-1b-series-a-to-bring-frontier-ai-r-and-d-to-more-teams/",
+        "source_title": "Mirendil Raises $1B Series A to Bring Frontier AI R&D to More Teams",
+        "source_content_hash": "4ca2252747181568",
+        "quote": "a $200 million seed round led by Andreessen Horowitz and Kleiner Perkins",
+        "quote_hash": "df1e21c667801fbd9f8828f9a321ca916dae3a8b4438ca25d86ca164c9e2119f"
+      },
+      {
         "source_id": "FISRC-6f0f12fb121fbd88",
         "source_url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
         "source_title": "Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元",
@@ -1062,16 +1155,16 @@
           "source_id": "kp_about"
         },
         {
+          "description": "融资来源记录：Mirendil · A轮 · 2026-11-12 · 本轮领投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-91b5c399f66248bf"
+        },
+        {
           "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d40817bd8696706a"
         },
         {
           "description": "融资来源记录：Modal · D轮 · 2026-10-14 · 本轮参投 · $750 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b54b83abf2f3608c"
-        },
-        {
-          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dc8fb918b056c843"
         }
       ],
       "contacts": [
@@ -1093,6 +1186,14 @@
           "quote_hash": "ef9f5d49eeaa7661a644ec18334f865187a5bd9565cfd4e41c5149c6687ae704"
         },
         {
+          "source_id": "FISRC-91b5c399f66248bf",
+          "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+          "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+          "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+          "quote": "we've raised $1B in a Series A, led by Kleiner Perkins and Clearlake Capital",
+          "quote_hash": "d905bce0e2c6176188704005b260f64dd8c80eef2f58262dddc988ee3a366009"
+        },
+        {
           "source_id": "FISRC-d40817bd8696706a",
           "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
           "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
@@ -1107,14 +1208,6 @@
           "source_content_hash": "ef996bef620416ce",
           "quote": "Kleiner Perkins joined, and all of our existing investors participated",
           "quote_hash": "4c38dd29c6b26da641a4ef8bdc693c390bb1c74ce55ef43dfadd3cef58cf0568"
-        },
-        {
-          "source_id": "FISRC-dc8fb918b056c843",
-          "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
-          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
-          "source_content_hash": "0b4ca5291b20197e1a333b32e3a6fd462793e5829ad8645ade5f6e59221e163d",
-          "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
-          "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1125,7 +1218,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[14].role": {
+        "activities[15].role": {
           "text": "Seed 参投",
           "source_hash": "5a82b6b5ec5714f4399d33f301da7f41a22fc3218a4bca553666f08acc0877ac",
           "provider": "deepseek",
