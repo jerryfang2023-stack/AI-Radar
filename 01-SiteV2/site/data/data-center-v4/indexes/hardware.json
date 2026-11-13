@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-12",
-    "currentDate": "2026-11-12",
-    "eventCount": 4436,
+    "latestDataDate": "2026-11-13",
+    "currentDate": "2026-11-13",
+    "eventCount": 4448,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -3654,6 +3654,71 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-55a80fa1defbe78b",
+      "snapshotKey": "55a80fa1defbe78b",
+      "snapshotId": "HWS-f28e08c5fdbeb042",
+      "eventId": "EV-6460ad65cd850154",
+      "eventIds": [
+        "EV-6460ad65cd850154"
+      ],
+      "dataDate": "2026-11-13",
+      "date": "2026-11-13",
+      "title": "Microsoft",
+      "subject": "Microsoft",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "capex"
+      ],
+      "latestValues": {
+        "capex": {
+          "metric_value": "9320",
+          "unit": "亿",
+          "fact_ref": "HWF-c8a653bf7b91e414"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [],
+      "capexFacts": [
+        {
+          "data_date": "2026-11-13",
+          "hardware_fact_id": "HWF-c8a653bf7b91e414",
+          "fact_type": "capex",
+          "observed_at": "2026-11-11",
+          "subject_entity_id": "EN-9fbf261b62c1d7c0",
+          "subject_name": "Microsoft",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "9320",
+          "unit": "亿",
+          "source_quote": "荣鼎集团报告覆盖13家企业，估算2026年中国AI基础设施资本开支达9320亿元，同比增长103%，2027年可能超过1.2万亿元。",
+          "event_refs": [
+            "EV-6460ad65cd850154"
+          ],
+          "claim_ref": "CL-1daa319359a0f545",
+          "source_refs": [
+            "SA-6bd6f26fed583da0"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-11-13/hardware-facts.json"
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://www.huxiu.com/article/4904714.html",
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-bbdefa2950f49882",
+        "EN-ea3bd73e2b506e00",
+        "EN-047364b9be67f665",
+        "EN-9c8ae69b84f21a2e",
+        "EN-a89151ba4b5ac0f2"
+      ]
+    },
     {
       "id": "HWC-3a39107d5615bce4",
       "snapshotKey": "3a39107d5615bce4",
@@ -22200,29 +22265,27 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-11-12",
-      "funnel_id": "LF-c0f4970582bda327",
+      "data_date": "2026-11-13",
+      "funnel_id": "LF-13f6f7e77a4834a8",
       "lens": "hardware",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "monitoring_paths": [],
-      "raw_documents": 14,
-      "original_sources": 14,
-      "valid_claims": 7,
-      "observations": 0,
-      "canonical_events": 4,
+      "raw_documents": 12,
+      "original_sources": 12,
+      "valid_claims": 14,
+      "observations": 1,
+      "canonical_events": 7,
       "blocker_counts": {
-        "event_not_ai_relevant": 6,
-        "no_source_bounded_event": 1,
-        "rumor_requires_primary_confirmation": 1,
-        "multi_event_roundup_not_single_event_source": 2
+        "event_not_ai_relevant": 4,
+        "rumor_requires_primary_confirmation": 1
       },
       "rates": {
         "original_source_rate": 1,
-        "valid_claim_rate": 0.5,
-        "observation_rate": 0,
-        "event_conversion_rate": 0.5714285714285714
+        "valid_claim_rate": 1,
+        "observation_rate": 0.07142857142857142,
+        "event_conversion_rate": 0.5
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-11-12/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-11-13/monitoring-funnel.json"
     }
   ]
 }

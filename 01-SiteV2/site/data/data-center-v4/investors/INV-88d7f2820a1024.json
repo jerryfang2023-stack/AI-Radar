@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-12",
-    "currentDate": "2026-11-12",
-    "eventCount": 4436,
+    "latestDataDate": "2026-11-13",
+    "currentDate": "2026-11-13",
+    "eventCount": 4448,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 1,
     "market_regions": [
+      "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2026-05-11",
-    "latest_disclosed_at": "2026-05-11",
+    "latest_disclosed_at": "2026-11-12",
     "role_counts": {
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
+      "angel",
       "series_a"
     ],
     "portfolio_companies": [
@@ -85,6 +88,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-279e1551e4dfb048",
+        "funding_insight_id": "FI-9409bc662eb189c0",
+        "event_ids": [
+          "EV-85108d804ef3b160"
+        ],
+        "company_entity_id": "EN-f388a6cbaebeec5f",
+        "company_canonical_entity_id": "",
+        "company_name": "飞拓星驰",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数千万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "数千万美元"
+        },
+        "announced_at": "2026-11-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d972a22e56f20646",
+            "source_url": "https://news.pedaily.cn/202611/571751.shtml",
+            "source_title": "飞拓星驰完成数千万美元天使轮融资，打造家庭AI互动娱乐入口",
+            "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+            "quote": "老股东日初资本、锋领资本等机构持续跟投",
+            "quote_hash": "11ae6790fc96376f40a913d54ea950369ad82e8d322e3b6983f42b029ccebf38"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d8f77551dcc54d51",
         "funding_insight_id": "FI-ee03878e699295b9",
@@ -128,6 +171,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-d972a22e56f20646",
+        "source_url": "https://news.pedaily.cn/202611/571751.shtml",
+        "source_title": "飞拓星驰完成数千万美元天使轮融资，打造家庭AI互动娱乐入口",
+        "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+        "quote": "老股东日初资本、锋领资本等机构持续跟投",
+        "quote_hash": "11ae6790fc96376f40a913d54ea950369ad82e8d322e3b6983f42b029ccebf38"
+      },
+      {
         "source_id": "FISRC-867a0916b6d45f09",
         "source_url": "https://news.qq.com/rain/a/20260511A031PC00",
         "source_title": "独家｜ 95后港中文博士融资数百万美金，打造全球首个AI Native家庭娱乐入口_腾讯新闻",
@@ -161,6 +212,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：飞拓星驰 · 天使轮 · 2026-11-12 · 本轮参投 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d972a22e56f20646"
+        },
+        {
           "description": "融资来源记录：飞拓星驰（FitX AI） · A轮 · 2026-05-11 · 本轮领投 · 数百万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-867a0916b6d45f09"
         }
@@ -190,6 +245,14 @@
           "source_content_hash": "0ef7b3769c43da5bd0a3e958c0c4b2553bf400e74fa9ffee1fd162df890062b9",
           "quote": "Founded in 2020 by Allen Chen, a proven entrepreneur and experienced investor, Dayone Capital is committed to becoming a value-creation driven investor in selective verticals of consumer goods.",
           "quote_hash": "27fb30ad8afe455b0b734ebdd59f2995bceab411f539669c25968f5a5be928e1"
+        },
+        {
+          "source_id": "FISRC-d972a22e56f20646",
+          "source_url": "https://news.pedaily.cn/202611/571751.shtml",
+          "source_title": "飞拓星驰完成数千万美元天使轮融资，打造家庭AI互动娱乐入口",
+          "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+          "quote": "老股东日初资本、锋领资本等机构持续跟投",
+          "quote_hash": "11ae6790fc96376f40a913d54ea950369ad82e8d322e3b6983f42b029ccebf38"
         },
         {
           "source_id": "FISRC-867a0916b6d45f09",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-12",
-    "currentDate": "2026-11-12",
-    "eventCount": 4436,
+    "latestDataDate": "2026-11-13",
+    "currentDate": "2026-11-13",
+    "eventCount": 4448,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,30 +61,76 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-12-06",
-    "latest_disclosed_at": "2023-12-06",
+    "latest_disclosed_at": "2026-11-12",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_a"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-88ab1e5d793701f9",
         "canonical_entity_id": "",
         "name": "Liquid AI"
+      },
+      {
+        "entity_id": "EN-90cc54eafe13a36b",
+        "canonical_entity_id": "",
+        "name": "Tristar AI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e3c11759464e4555",
+        "funding_insight_id": "FI-fa01bf1d0308a943",
+        "event_ids": [
+          "EV-5f1dc5e6af486dfe"
+        ],
+        "company_entity_id": "EN-90cc54eafe13a36b",
+        "company_canonical_entity_id": "",
+        "company_name": "Tristar AI",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$12.4 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12400000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1240 万美元"
+        },
+        "announced_at": "2026-11-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2e57818eaf8972a7",
+            "source_url": "https://www.prnewswire.com/news-releases/tristar-ai-raises-12-4m-series-a-to-give-manufacturers-a-quality-inspector-that-never-blinks-302937353.html",
+            "source_title": "Tristar AI 完成 1240 万美元 A 轮融资，为制造商提供永不眨眼的质检员",
+            "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+            "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+            "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ecf487dcf1bdeca4",
         "funding_insight_id": "FI-1d51a25d67b90d0d",
@@ -127,6 +173,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-2e57818eaf8972a7",
+        "source_url": "https://www.prnewswire.com/news-releases/tristar-ai-raises-12-4m-series-a-to-give-manufacturers-a-quality-inspector-that-never-blinks-302937353.html",
+        "source_title": "Tristar AI 完成 1240 万美元 A 轮融资，为制造商提供永不眨眼的质检员",
+        "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+        "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+        "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+      },
       {
         "source_id": "FISRC-d1080395d67df2c7",
         "source_url": "https://techcrunch.com/2023/12/06/liquid-ai-a-new-mit-spinoff-wants-to-build-an-entirely-new-type-of-ai/",
@@ -175,6 +229,10 @@
           "source_id": "liquid_investors"
         },
         {
+          "description": "融资来源记录：Tristar AI · A轮 · 2026-11-12 · 本轮参投 · $12.4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2e57818eaf8972a7"
+        },
+        {
           "description": "融资来源记录：Liquid AI · 种子轮 · 2023-12-06 · 本轮参投 · 3750万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d1080395d67df2c7"
         }
@@ -212,6 +270,14 @@
           "source_content_hash": "8df0fab4548b6d02e671b4d036747b2c7a650625e653137c214d7abadcd3dffa",
           "quote": "ISAI Cap Venture (Capgemini’s VC Fund managed by ISAI)",
           "quote_hash": "c80c91c224e6842409dd125186d7950a24ff4bde3147ff77c4dffa73ec82bf64"
+        },
+        {
+          "source_id": "FISRC-2e57818eaf8972a7",
+          "source_url": "https://www.prnewswire.com/news-releases/tristar-ai-raises-12-4m-series-a-to-give-manufacturers-a-quality-inspector-that-never-blinks-302937353.html",
+          "source_title": "Tristar AI 完成 1240 万美元 A 轮融资，为制造商提供永不眨眼的质检员",
+          "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+          "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+          "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
         },
         {
           "source_id": "FISRC-d1080395d67df2c7",

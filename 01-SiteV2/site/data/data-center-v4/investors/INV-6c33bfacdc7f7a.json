@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-12",
-    "currentDate": "2026-11-12",
-    "eventCount": 4436,
+    "latestDataDate": "2026-11-13",
+    "currentDate": "2026-11-13",
+    "eventCount": 4448,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-05-06",
-    "latest_disclosed_at": "2026-09-15",
+    "latest_disclosed_at": "2026-11-12",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "angel",
-      "series_b"
+      "series_b",
+      "series_c4"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-8285065e2176cc74",
+        "canonical_entity_id": "",
+        "name": "阜时科技"
+      },
       {
         "entity_id": "EN-24dd6fa3e1cbba97",
         "canonical_entity_id": "",
@@ -91,6 +97,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-7b3a3594f77daa9e",
+        "funding_insight_id": "FI-7bc26c50c6fd9bc3",
+        "event_ids": [
+          "EV-5bf5873e79f6a3c8"
+        ],
+        "company_entity_id": "EN-8285065e2176cc74",
+        "company_canonical_entity_id": "",
+        "company_name": "阜时科技",
+        "round": "C4轮",
+        "round_code": "series_c4",
+        "round_original": "C4轮",
+        "amount_original": "超4亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 400000000,
+          "min_value": 400000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 4 亿元"
+        },
+        "announced_at": "2026-11-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5c9f6bb8f512b556",
+            "source_url": "https://news.pedaily.cn/202611/571736.shtml",
+            "source_title": "阜时科技完成超4亿元C4轮融资，加速物理AI空间感知芯片布局",
+            "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+            "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+            "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
+          }
+        ]
+      },
       {
         "activity_id": "IA-0e186a158f16d8c5",
         "funding_insight_id": "FI-8acd5314a46c6068",
@@ -174,6 +220,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-5c9f6bb8f512b556",
+        "source_url": "https://news.pedaily.cn/202611/571736.shtml",
+        "source_title": "阜时科技完成超4亿元C4轮融资，加速物理AI空间感知芯片布局",
+        "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+        "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+        "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
+      },
+      {
         "source_id": "FISRC-d0c3dca85d845330",
         "source_url": "https://news.pedaily.cn/202609/569015.shtml",
         "source_title": "「因克斯ENCOS」完成3亿元B轮融资，深耕具身智能关节模组",
@@ -215,6 +269,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：阜时科技 · C4轮 · 2026-11-12 · 本轮参投 · 超4亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5c9f6bb8f512b556"
+        },
+        {
           "description": "融资来源记录：因克斯 · B轮 · 2026-09-15 · 本轮参投 · 超3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d0c3dca85d845330"
         },
@@ -248,6 +306,14 @@
           "source_content_hash": "0fc2d3b8b93fc8c40195a061817eb3c36d2e63d0b0658d9115d355767019712c",
           "quote": "1 私募股权、创业投资基金管理人 浙江华睿控股有限公司 P1001662 74201664-2",
           "quote_hash": "2e34e5be5cc3f3489e009ae9768b562e8462617e472c8d0f6bce02b872d38648"
+        },
+        {
+          "source_id": "FISRC-5c9f6bb8f512b556",
+          "source_url": "https://news.pedaily.cn/202611/571736.shtml",
+          "source_title": "阜时科技完成超4亿元C4轮融资，加速物理AI空间感知芯片布局",
+          "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+          "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+          "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
         },
         {
           "source_id": "FISRC-d0c3dca85d845330",
