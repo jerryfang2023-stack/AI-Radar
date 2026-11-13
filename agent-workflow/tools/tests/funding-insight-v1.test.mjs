@@ -3785,3 +3785,34 @@ test("investment vehicle capital raises are not company financing cards", () => 
   const mixed = {...event,object:startup.object,display_title_zh:"Fund AI获种子轮融资",claim_refs:["CL-FUND","CL-STARTUP"]};
   assert.equal(isEligibleFundingInsightEvent(mixed,[claim,{...startup,claim_id:"CL-STARTUP"}]),true);
 });
+
+
+test("unqualified monetary fund targets remain distinct from startup proceeds", () => {
+ const event={event_id:"EV-PLAIN-FUND",event_type:"funding",event_status:"announced",publication_status:"verified",display_title_zh:"Norwest新设40亿美元基金",object:"$4 billion fund",metrics:["$4 billion"],claim_refs:["CL-FUND"]};
+ const claim={claim_id:"CL-FUND",claim_type:"funding",verification_status:"accepted",subject:"Norwest",object:"$4 billion fund",source_quote:"Norwest, a firm backed solely by Wells Fargo, has raised a $4 billion fund as it sets out to invest more in AI."};
+ assert.equal(isEligibleFundingInsightEvent(event,[claim]),false);
+ assert.deepEqual(verifiedFundingEventCardCoverageProblems([event],[],[],[claim]),[]);
+ const startup={...claim,object:"$4 billion Series C",source_quote:"Fund AI raised $4 billion in Series C funding from a new VC fund."};
+ assert.equal(isEligibleFundingInsightEvent({...event,object:startup.object},[startup]),true);
+ const mismatch={...claim,source_quote:"The manager raised a $400 million fund."};
+ assert.equal(isEligibleFundingInsightEvent(event,[mismatch]),true);
+});
+
+test("first-person wire announcements require a unique same-document issuer", () => {
+ const quote="SAN FRANCISCO, Nov. 12, 2026 /PRNewswire/ -- Today, we're announcing that we've raised $1B in a Series A, led by Kleiner Perkins, with participation from Google.";
+ const body=quote+"\nWe're building AI research tools. Mirendil runs on Lor every day.\nSOURCE Mirendil\n ×\n Modal title";
+ const event={event_id:"EV-ISSUER",entities:["EN-PLACE","EN-COMPANY","EN-INVESTOR"],claim_refs:["CL-ISSUER"],source_refs:["SA-ISSUER"],object:"$1B",metrics:["$1B"]};
+ const claim={claim_id:"CL-ISSUER",raw_id:"RAW-ISSUER",claim_type:"funding",verification_status:"accepted",subject:"Mirendil",object:"$1B",source_quote:quote};
+ const entities=[{entity_id:"EN-PLACE",entity_type:"organization_candidate",canonical_name:"SAN FRANCISCO"},{entity_id:"EN-COMPANY",entity_type:"organization_candidate",canonical_name:"Mirendil"},{entity_id:"EN-INVESTOR",entity_type:"organization_candidate",canonical_name:"Google"}];
+ const bundle={claims:[claim],sourceArtifacts:[{source_artifact_id:"SA-ISSUER",source_url:"https://www.prnewswire.com/issuer"}],rawDocuments:[{raw_id:"RAW-ISSUER",source_artifact_id:"SA-ISSUER",body_clean:body}]};
+ const sources=canonicalSourceQuoteBodies(bundle,event);
+ assert.ok(sources.includes(body));
+ assert.equal(subjectCompanyForEvent(event,entities,{},[claim],sources)?.entity_id,"EN-COMPANY");
+ for(const invalid of [body.replace("SOURCE Mirendil","SOURCE Google"),body.replace("SOURCE Mirendil",""),body+"\nSOURCE Google",body.replace("we've raised $1B","we've raised $2B")])assert.equal(subjectCompanyForEvent(event,entities,{},[claim],[invalid]),null);
+ assert.equal(subjectCompanyForEvent(event,entities,{},[{...claim,subject:"Google"}],sources),null);
+ assert.equal(subjectCompanyForEvent(event,entities,{},[{...claim,subject:"SAN FRANCISCO"}],sources),null);
+ assert.equal(subjectCompanyForEvent(event,entities,{},[claim],[quote,"SOURCE Mirendil"]),null);
+ assert.equal(subjectCompanyForEvent({...event,entities:[...event.entities,"EN-DUP"]},[...entities,{...entities[1],entity_id:"EN-DUP"}],{},[claim],sources),null);
+ assert.equal(subjectCompanyForEvent(event,entities,{},[claim],[body,body.replace("SOURCE Mirendil","SOURCE Google")]),null);
+ assert.equal(subjectCompanyForEvent(event,entities,{},[{...claim,verification_status:"rejected"}],sources),null);
+});

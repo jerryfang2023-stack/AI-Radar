@@ -362,6 +362,8 @@ export function canonicalSourceQuoteBodies(bundle, event, acceptedIntakeDocument
   return [...new Set([
     ...canonicalSources(bundle, event).map((source) => clean(source.body_clean)),
     ...rawQuotes.map(clean),
+    // Retain issuer line boundaries for first-person wire announcements.
+    ...rawQuotes.map(value => String(value || "").trim()).filter(value => /[\r\n]/u.test(value)),
   ].filter(Boolean))];
 }
 
