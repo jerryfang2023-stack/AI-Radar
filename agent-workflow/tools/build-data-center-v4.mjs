@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { publisherHeaderDate } from "./lib/source-publication-date.mjs";
 import { isMainModule } from "./lib/module-entry.mjs";
 import { isCompanyProfileUrl } from "./lib/source-page-kind.mjs";
 
@@ -2079,7 +2080,10 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
   }
 
   const uniqueEntries = new Map();
-  for (const { raw, file, intake_document: intakeDocument } of rawEntries) {
+  for (const { raw: inputRaw, file, intake_document: intakeDocument } of rawEntries) {
+    // Reuse frozen evidence without mutating its accepted capture receipt.
+    const headerDate = publisherHeaderDate(inputRaw);
+    const raw = headerDate ? { ...inputRaw, published_at: headerDate.date } : inputRaw;
     const artifact = sourceArtifact(raw, file, intakeDocument);
     const existing = uniqueEntries.get(artifact.source_artifact_id);
     if (!existing) {

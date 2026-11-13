@@ -154,3 +154,7 @@ VPS 本地运行盘约 69 GiB；`/lhcos-data` 的对象存储挂载不增加 `/s
 已接受融资等待Pages时，主控核对指定workflow、主仓main和接受提交（手动部署按标题绑定source SHA）。只有失败步骤仅为Deploy to GitHub Pages，且日志仅出现syncing_files阶段的Timeout reached，才自动重跑同一运行的失败作业；不会重新采集融资。每个接受提交最多两次自动恢复，GitHub运行总attempt达到3时停止。意图先写入私有运行回执，响应未知时不重放同一attempt，等待API观察或人工处理。构建/事实失败、权限错误、取消及其他未知失败明确进入needs_attention，不再伪装为无限等待Pages。成功后继续原Portal/小程序发布及线上验收，不绕过CI、审核或发布锁。
 
 Pages上传和部署均使用 `github-pages-${{ github.run_id }}-${{ github.run_attempt }}`，避免同一运行重试留下同名产物。部署参数依据 [deploy-pages官方artifact_name输入](https://github.com/actions/deploy-pages/blob/v5/action.yml)。自动恢复先核对运行对应workflow确有这套唯一命名；旧版本固定名称不自动重跑，需经新版本部署恢复。保留旧产物，不通过删除接受产物掩盖重名。
+
+### 2026-11-13：披露日期与采集日期
+
+36氪 `/p/<数字>` 原文只有在首行标题与当前来源标题一致、紧邻唯一作者署名日期且日期合法时，才优先使用该公开署名栏日期，避免次日抓取元数据覆盖实际披露日。HTTP、reader 和已接受 intake 的 V4 恢复复用同一规则；恢复只派生校正事实日期，不改写原采集回执、正文 hash 或原文。缺少绑定证据时保留原日期规则，不从叙事或页脚猜日期。
