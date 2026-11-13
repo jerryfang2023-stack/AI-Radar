@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-12",
-    "currentDate": "2026-11-12",
-    "eventCount": 4436,
+    "latestDataDate": "2026-11-13",
+    "currentDate": "2026-11-13",
+    "eventCount": 4448,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-11-05",
-    "latest_disclosed_at": "2026-11-05",
+    "latest_disclosed_at": "2026-11-12",
     "role_counts": {
       "lead": 3,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
@@ -87,6 +87,11 @@
         "entity_id": "EN-57b8b5990c299db8",
         "canonical_entity_id": "",
         "name": "AegisAI"
+      },
+      {
+        "entity_id": "EN-b81b59c4259c46d6",
+        "canonical_entity_id": "",
+        "name": "Mirendil"
       },
       {
         "entity_id": "EN-e3baa3a2daee23ae",
@@ -115,6 +120,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-cf8bda0aa41a9adb",
+        "funding_insight_id": "FI-03bb0617eea57ed6",
+        "event_ids": [
+          "EV-28354a9359e59d75"
+        ],
+        "company_entity_id": "EN-b81b59c4259c46d6",
+        "company_canonical_entity_id": "",
+        "company_name": "Mirendil",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$1B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-11-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-91b5c399f66248bf",
+            "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+            "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+            "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+            "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+            "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3a4dd26ae04f096f",
         "funding_insight_id": "FI-da05c9524392e372",
@@ -382,6 +427,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-91b5c399f66248bf",
+        "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+        "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+        "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+        "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+        "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+      },
+      {
         "source_id": "FISRC-48ad2f372a4431f7",
         "source_url": "https://www.prnewswire.com/news-releases/shackleton-ai-unveils-agentic-operating-system-for-construction-raises-5-million-led-by-battery-ventures-302928375.html",
         "source_title": "更正 - Shackleton AI",
@@ -514,12 +567,12 @@
           "source_id": "battery_company"
         },
         {
-          "description": "融资来源记录：Shackleton AI · 种子轮 · 2026-11-05 · 本轮领投 · $5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-48ad2f372a4431f7"
+          "description": "融资来源记录：Mirendil · A轮 · 2026-11-12 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-91b5c399f66248bf"
         },
         {
-          "description": "融资来源记录：Miter · B轮 · 2026-09-30 · 本轮领投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-8b2ed67c1554bee8"
+          "description": "融资来源记录：Shackleton AI · 种子轮 · 2026-11-05 · 本轮领投 · $5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-48ad2f372a4431f7"
         }
       ],
       "contacts": [
@@ -592,6 +645,14 @@
           "quote_hash": "abc8cfd33806d0c91159718c14f7544ac05f817502f2f099f26552079ec3f602"
         },
         {
+          "source_id": "FISRC-91b5c399f66248bf",
+          "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+          "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+          "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+          "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+          "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+        },
+        {
           "source_id": "FISRC-48ad2f372a4431f7",
           "source_url": "https://www.prnewswire.com/news-releases/shackleton-ai-unveils-agentic-operating-system-for-construction-raises-5-million-led-by-battery-ventures-302928375.html",
           "source_title": "更正 - Shackleton AI",
@@ -606,14 +667,6 @@
           "source_content_hash": "e5092eb9abc80d55",
           "quote": "The funding round was led by Battery Ventures",
           "quote_hash": "d91c567371e190d98dfc9d31223d2d3a5cdae9ca68b8a2a59c34231e46bae0dd"
-        },
-        {
-          "source_id": "FISRC-8b2ed67c1554bee8",
-          "source_url": "https://www.prnewswire.com/news-releases/miter-the-ai-platform-for-construction-raises-40-million-for-the-built-world-302893778.html",
-          "source_title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
-          "source_content_hash": "c5cd447d1a48bf94d4477d990914f688e2af5271a7ec78a65a70efa9ff0cb39e",
-          "quote": "announced it has raised a $40 million Series B round of financing led by Battery Ventures",
-          "quote_hash": "ca82f8aa5527e256ec0d7ca0f34529e46c9d2af892b2cf73c468385cd644fc7e"
         }
       ],
       "last_verified_at": "2026-09-26",

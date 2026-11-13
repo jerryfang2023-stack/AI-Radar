@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-12",
-    "currentDate": "2026-11-12",
-    "eventCount": 4436,
+    "latestDataDate": "2026-11-13",
+    "currentDate": "2026-11-13",
+    "eventCount": 4448,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,25 +61,32 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2026-09-02",
-    "latest_disclosed_at": "2026-09-02",
+    "latest_disclosed_at": "2026-11-12",
     "role_counts": {
       "historical_or_ambiguous": 2,
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
+      "angel",
       "multi_round"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-f388a6cbaebeec5f",
+        "canonical_entity_id": "",
+        "name": "飞拓星驰"
+      },
       {
         "entity_id": "EN-2a92da4bc5db543c",
         "canonical_entity_id": "",
@@ -87,6 +94,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c2b4689166ea3044",
+        "funding_insight_id": "FI-9409bc662eb189c0",
+        "event_ids": [
+          "EV-85108d804ef3b160"
+        ],
+        "company_entity_id": "EN-f388a6cbaebeec5f",
+        "company_canonical_entity_id": "",
+        "company_name": "飞拓星驰",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数千万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "数千万美元"
+        },
+        "announced_at": "2026-11-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-d972a22e56f20646",
+            "source_url": "https://news.pedaily.cn/202611/571751.shtml",
+            "source_title": "飞拓星驰完成数千万美元天使轮融资，打造家庭AI互动娱乐入口",
+            "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+            "quote": "本轮领投方分别是元生资本、江远投资",
+            "quote_hash": "52e8d9a9a4d1f0b9c47b7328f16ad92c1d95906fa27dab55d796686cdd8a9d34"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9029595542c13a23",
         "funding_insight_id": "FI-29f297142676a40b",
@@ -194,6 +241,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-d972a22e56f20646",
+        "source_url": "https://news.pedaily.cn/202611/571751.shtml",
+        "source_title": "飞拓星驰完成数千万美元天使轮融资，打造家庭AI互动娱乐入口",
+        "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+        "quote": "本轮领投方分别是元生资本、江远投资",
+        "quote_hash": "52e8d9a9a4d1f0b9c47b7328f16ad92c1d95906fa27dab55d796686cdd8a9d34"
+      },
+      {
         "source_id": "FISRC-4ce1b109c402e02b",
         "source_url": "https://i.ifeng.com/c/8w5nAa2tSBS",
         "source_title": "DEMO|对话Violoop：谁不想有个自己的模型，在真实工作里长出来那种",
@@ -255,16 +310,16 @@
       ],
       "track_record": [
         {
+          "description": "融资来源记录：飞拓星驰 · 天使轮 · 2026-11-12 · 本轮领投 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d972a22e56f20646"
+        },
+        {
           "description": "融资来源记录：Violoop · 多轮融资 · 2026-09-02 · 本轮参投 · 亿级。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4ce1b109c402e02b"
         },
         {
           "description": "融资来源记录：三启万物 · 历史轮次未披露 · 老股东持续追投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a4dbd49c64cb5834"
-        },
-        {
-          "description": "融资来源记录：上海宇道生物技术有限公司 · 历史轮次未披露 · A+轮领投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-163d5b5325339f27"
         }
       ],
       "profile_type": "organization",
@@ -294,6 +349,14 @@
           "quote_hash": "31b8d93bb5216f6fc161b79c6b73ee1b798ac38c70a87726f122c49545ccdf48"
         },
         {
+          "source_id": "FISRC-d972a22e56f20646",
+          "source_url": "https://news.pedaily.cn/202611/571751.shtml",
+          "source_title": "飞拓星驰完成数千万美元天使轮融资，打造家庭AI互动娱乐入口",
+          "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+          "quote": "本轮领投方分别是元生资本、江远投资",
+          "quote_hash": "52e8d9a9a4d1f0b9c47b7328f16ad92c1d95906fa27dab55d796686cdd8a9d34"
+        },
+        {
           "source_id": "FISRC-4ce1b109c402e02b",
           "source_url": "https://i.ifeng.com/c/8w5nAa2tSBS",
           "source_title": "DEMO|对话Violoop：谁不想有个自己的模型，在真实工作里长出来那种",
@@ -308,14 +371,6 @@
           "source_content_hash": "3e7e05417d6a96b1",
           "quote": "老股东 渶策资本、元生资本 持续追投。",
           "quote_hash": "08ef92f098bf62a5aa936148c107ee1fa09fdbc1ff090e097b919bdd522b3dec"
-        },
-        {
-          "source_id": "FISRC-163d5b5325339f27",
-          "source_url": "https://www.vbdata.cn/54325",
-          "source_title": "【首发】宇道生物宣布完成4000万美金A+轮融资，全面推进基于蛋白构象调节的药物研发平台及创新管线-动脉网",
-          "source_content_hash": "cd3cadd497747101",
-          "quote": "本次融资由元生资本领投，恒旭资本联合领投",
-          "quote_hash": "108c49894d6894d18fd21e5eeedef2fa9356c08e018d82520ac6d3fefa966987"
         }
       ],
       "last_verified_at": "2026-10-03"

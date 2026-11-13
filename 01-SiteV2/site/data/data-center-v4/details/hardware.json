@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-12",
-    "currentDate": "2026-11-12",
-    "eventCount": 4436,
+    "latestDataDate": "2026-11-13",
+    "currentDate": "2026-11-13",
+    "eventCount": 4448,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -3654,6 +3654,71 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-55a80fa1defbe78b",
+      "snapshotKey": "55a80fa1defbe78b",
+      "snapshotId": "HWS-f28e08c5fdbeb042",
+      "eventId": "EV-6460ad65cd850154",
+      "eventIds": [
+        "EV-6460ad65cd850154"
+      ],
+      "dataDate": "2026-11-13",
+      "date": "2026-11-13",
+      "title": "Microsoft",
+      "subject": "Microsoft",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "capex"
+      ],
+      "latestValues": {
+        "capex": {
+          "metric_value": "9320",
+          "unit": "亿",
+          "fact_ref": "HWF-c8a653bf7b91e414"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [],
+      "capexFacts": [
+        {
+          "data_date": "2026-11-13",
+          "hardware_fact_id": "HWF-c8a653bf7b91e414",
+          "fact_type": "capex",
+          "observed_at": "2026-11-11",
+          "subject_entity_id": "EN-9fbf261b62c1d7c0",
+          "subject_name": "Microsoft",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "9320",
+          "unit": "亿",
+          "source_quote": "荣鼎集团报告覆盖13家企业，估算2026年中国AI基础设施资本开支达9320亿元，同比增长103%，2027年可能超过1.2万亿元。",
+          "event_refs": [
+            "EV-6460ad65cd850154"
+          ],
+          "claim_ref": "CL-1daa319359a0f545",
+          "source_refs": [
+            "SA-6bd6f26fed583da0"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-11-13/hardware-facts.json"
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://www.huxiu.com/article/4904714.html",
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-bbdefa2950f49882",
+        "EN-ea3bd73e2b506e00",
+        "EN-047364b9be67f665",
+        "EN-9c8ae69b84f21a2e",
+        "EN-a89151ba4b5ac0f2"
+      ]
+    },
     {
       "id": "HWC-3a39107d5615bce4",
       "snapshotKey": "3a39107d5615bce4",
@@ -22200,6 +22265,380 @@
   ],
   "events": [
     {
+      "id": "EV-28354a9359e59d75",
+      "dataDate": "2026-11-13",
+      "date": "2026-11-12",
+      "updatedDate": "2026-11-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+      "originalTitle": "Mirendil Raises $1B to Democratize Frontier AI R&D",
+      "subject": "Mirendil",
+      "action": "Raises",
+      "object": "$1B to Democratize Frontier AI R&D",
+      "metrics": [
+        "$1B"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-1a2290470e0aa754",
+        "EN-b81b59c4259c46d6",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "SAN FRANCISCO",
+        "Mirendil",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+      "publisher": "www.prnewswire.com"
+    },
+    {
+      "id": "EV-5bf5873e79f6a3c8",
+      "dataDate": "2026-11-13",
+      "date": "2026-11-12",
+      "updatedDate": "2026-11-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "阜时科技完成超4亿元C4轮融资，加速物理AI空间感知芯片布局",
+      "originalTitle": "",
+      "subject": "阜时科技",
+      "action": "完成超4亿元C4轮融资",
+      "object": "，加速物理AI空间感知芯片布局",
+      "metrics": [
+        "4亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8285065e2176cc74"
+      ],
+      "entityNames": [
+        "阜时科技"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202611/571736.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-5d3da505edb7ef83",
+      "dataDate": "2026-11-13",
+      "date": "2026-11-12",
+      "updatedDate": "2026-11-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "英 AI 芯片初创企业 Fractile 获该国政府资金支持，估值达 70 亿美元",
+      "originalTitle": "",
+      "subject": "Fractile",
+      "action": "funding",
+      "object": "超7.2亿美元的C轮融资",
+      "metrics": [
+        "7.2 亿",
+        "48.14 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8da5eafb322ee86e"
+      ],
+      "entityNames": [
+        "Fractile"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/025/927.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
+      "id": "EV-5f1dc5e6af486dfe",
+      "dataDate": "2026-11-13",
+      "date": "2026-11-12",
+      "updatedDate": "2026-11-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Tristar AI 完成 1240 万美元 A 轮融资，为制造商提供永不眨眼的质检员",
+      "originalTitle": "Tristar AI Raises $12.4M Series A to Give Manufacturers a Quality Inspector That Never Blinks",
+      "subject": "Tristar AI",
+      "action": "Raises",
+      "object": "$12.4M Series A to Give Manufacturers a Quality Inspector That Never Blinks",
+      "metrics": [
+        "$12.4 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-90cc54eafe13a36b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-90cc54eafe13a36b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-90cc54eafe13a36b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-546f729f98eb03a0",
+        "EN-90cc54eafe13a36b"
+      ],
+      "entityNames": [
+        "CAMBRIDGE",
+        "Tristar AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/tristar-ai-raises-12-4m-series-a-to-give-manufacturers-a-quality-inspector-that-never-blinks-302937353.html",
+      "publisher": "www.prnewswire.com"
+    },
+    {
+      "id": "EV-85108d804ef3b160",
+      "dataDate": "2026-11-13",
+      "date": "2026-11-12",
+      "updatedDate": "2026-11-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "飞拓星驰完成数千万美元天使轮融资，打造家庭AI互动娱乐入口",
+      "originalTitle": "",
+      "subject": "飞拓星驰",
+      "action": "完成数千万美元天使轮融资",
+      "object": "，打造家庭AI互动娱乐入口",
+      "metrics": [
+        "数千万美元"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-f388a6cbaebeec5f"
+      ],
+      "entityNames": [
+        "飞拓星驰"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202611/571751.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-873fbd8a72c75fab",
+      "dataDate": "2026-11-13",
+      "date": "2026-11-12",
+      "updatedDate": "2026-11-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "36氪首发丨海光创始核心技术团队创业AGI架构芯片，获清华系等基金数亿投资-36氪",
+      "originalTitle": "",
+      "subject": "通芯人工智能科技（北京）有限公司",
+      "action": "funding",
+      "object": "数亿元种子轮及天使轮融资",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-3720efc6ffb5d358"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-5d97abdbb6bc542c"
+      ],
+      "entityNames": [
+        "通芯人工智能科技（北京）有限公司"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.36kr.com/p/4066136377873286",
+      "publisher": "www.36kr.com"
+    },
+    {
+      "id": "EV-ae749a93407891c4",
+      "dataDate": "2026-11-13",
+      "date": "2026-11-12",
+      "updatedDate": "2026-11-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Norwest 以新设 40 亿美元基金进一步深入 AI 领域",
+      "originalTitle": "Norwest pushes deeper into AI with new $4B fund",
+      "subject": "Norwest",
+      "action": "funding",
+      "object": "$4 billion fund",
+      "metrics": [
+        "$4 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-de4402be9620dcbc"
+      ],
+      "entityNames": [
+        "Norwest"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/11/12/norwest-pushes-deeper-into-ai-with-new-4b-fund/",
+      "publisher": "techcrunch.com"
+    },
+    {
       "id": "EV-41508040354226c9",
       "dataDate": "2026-11-12",
       "date": "2026-11-11",
@@ -22247,7 +22686,7 @@
     },
     {
       "id": "EV-59048c1178252d9a",
-      "dataDate": "2026-11-12",
+      "dataDate": "2026-11-13",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "funding",
@@ -22293,7 +22732,7 @@
     },
     {
       "id": "EV-937b99126cc4df09",
-      "dataDate": "2026-11-12",
+      "dataDate": "2026-11-13",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "acquisition",
@@ -22388,7 +22827,7 @@
     },
     {
       "id": "EV-99e376ee2aa07168",
-      "dataDate": "2026-11-12",
+      "dataDate": "2026-11-13",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "funding",
@@ -22436,7 +22875,7 @@
     },
     {
       "id": "EV-c3fdd52a255c0770",
-      "dataDate": "2026-11-12",
+      "dataDate": "2026-11-13",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "funding",
@@ -22530,7 +22969,7 @@
     },
     {
       "id": "EV-33a842c331d69819",
-      "dataDate": "2026-11-12",
+      "dataDate": "2026-11-13",
       "date": "2026-11-10",
       "updatedDate": "2026-11-10",
       "eventType": "funding",
@@ -22576,7 +23015,7 @@
     },
     {
       "id": "EV-36fdf3e0f3a097c8",
-      "dataDate": "2026-11-12",
+      "dataDate": "2026-11-13",
       "date": "2026-11-10",
       "updatedDate": "2026-11-10",
       "eventType": "funding",
@@ -22892,7 +23331,7 @@
     },
     {
       "id": "EV-24beda194f77994e",
-      "dataDate": "2026-11-10",
+      "dataDate": "2026-11-13",
       "date": "2026-11-09",
       "updatedDate": "2026-11-09",
       "eventType": "funding",
@@ -23173,7 +23612,7 @@
     },
     {
       "id": "EV-cb688236861394f2",
-      "dataDate": "2026-11-12",
+      "dataDate": "2026-11-13",
       "date": "2026-11-09",
       "updatedDate": "2026-11-09",
       "eventType": "funding",
@@ -23269,8 +23708,101 @@
       "publisher": "www.pedaily.cn"
     },
     {
+      "id": "EV-f7fbc6c2b1d2d5a9",
+      "dataDate": "2026-11-13",
+      "date": "2026-11-09",
+      "updatedDate": "2026-11-09",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "途深智合融资数亿！2026年AI制药赛道杀出‘蛋白质超智能体’黑马",
+      "originalTitle": "",
+      "subject": "途深智合",
+      "action": "融资",
+      "object": "数亿！2026年AI制药赛道杀出‘蛋白质超智能体’黑马",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-85d70434c2698d0d"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-53aeee52214b4a13"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-53aeee52214b4a13"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-53aeee52214b4a13"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-53aeee52214b4a13",
+        "EN-9fc56a9b4a5b8b27"
+      ],
+      "entityNames": [
+        "途深智合",
+        "无锡途深智合人工智能科技有限公司"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://m.sohu.com/a/1099170715_122066679?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+      "publisher": "m.sohu.com"
+    },
+    {
       "id": "EV-34b8ae2aea003084",
-      "dataDate": "2026-11-12",
+      "dataDate": "2026-11-13",
       "date": "2026-11-07",
       "updatedDate": "2026-11-07",
       "eventType": "acquisition",
@@ -23350,7 +23882,7 @@
     },
     {
       "id": "EV-3bc1af8409d16f9b",
-      "dataDate": "2026-11-12",
+      "dataDate": "2026-11-13",
       "date": "2026-11-07",
       "updatedDate": "2026-11-07",
       "eventType": "funding",
@@ -23504,7 +24036,7 @@
     },
     {
       "id": "EV-aaf041c83cebba9a",
-      "dataDate": "2026-11-12",
+      "dataDate": "2026-11-13",
       "date": "2026-11-07",
       "updatedDate": "2026-11-07",
       "eventType": "funding",
@@ -23519,7 +24051,10 @@
       "action": "funding round",
       "object": ", but has to court dentists for more capital",
       "metrics": [
-        "$11 billion"
+        "$11 billion",
+        "$1.25 trillion",
+        "$122 billion",
+        "$852 billion"
       ],
       "locations": [],
       "missingFields": [],
@@ -288194,7 +288729,7 @@
     },
     {
       "id": "EV-fcaf084ec5c515b0",
-      "dataDate": "2026-11-12",
+      "dataDate": "2026-11-13",
       "date": "2026-11-08",
       "updatedDate": "2026-11-08",
       "eventType": "procurement_contract",
@@ -316643,7 +317178,7 @@
     },
     {
       "id": "EV-195a496342e785af",
-      "dataDate": "2026-11-12",
+      "dataDate": "2026-11-13",
       "date": "2026-11-09",
       "updatedDate": "2026-11-09",
       "eventType": "partnership",
@@ -332615,8 +333150,64 @@
       "publisher": "markets.ft.com"
     },
     {
+      "id": "EV-6d4311291e4a0956",
+      "dataDate": "2026-11-13",
+      "date": "2026-11-12",
+      "updatedDate": "2026-11-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "黄仁勋的离职令英伟达对开源的支持存疑",
+      "originalTitle": "Jensen Huang’s exit puts Nvidia’s support for open source in question",
+      "subject": "Jensen Huang’s exit puts Nvidia’s support for",
+      "action": "open source",
+      "object": "in question",
+      "metrics": [
+        "$13 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-bae7f705e7d03e0e"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Jensen Huang"
+      ],
+      "productName": "Jensen Huang",
+      "products": [
+        {
+          "name": "Jensen Huang",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
+      "publisher": "techcrunch.com"
+    },
+    {
       "id": "EV-be0ef85ed5f05179",
-      "dataDate": "2026-11-12",
+      "dataDate": "2026-11-13",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "product_release",
@@ -332698,7 +333289,7 @@
     },
     {
       "id": "EV-c75feed1a832645e",
-      "dataDate": "2026-11-12",
+      "dataDate": "2026-11-13",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "product_release",
@@ -478671,8 +479262,216 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-8bba88d507b8dc62",
+      "dataDate": "2026-11-13",
+      "date": "2026-11-12",
+      "updatedDate": "2026-11-12",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "黄仁勋辞任英伟达 CEO 重创全球 AI 概念股，AMD、博通逆势上涨",
+      "originalTitle": "",
+      "subject": "黄仁勋",
+      "action": "辞任",
+      "object": "英伟达 CEO 重创全球 AI 概念股，AMD、博通逆势上涨",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/026/437.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
+      "id": "EV-6460ad65cd850154",
+      "dataDate": "2026-11-13",
+      "date": "2026-11-11",
+      "updatedDate": "2026-11-11",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "中国AI基础设施投资加速：阿里、腾讯、百度2026上半年资本开支合计2080亿元",
+      "originalTitle": "",
+      "subject": "中国AI基础设施投资加速：阿里、腾讯、百度2026上半年",
+      "action": "资本开支",
+      "object": "合计2080亿元",
+      "metrics": [
+        "240亿",
+        "9320亿",
+        "103%",
+        "1.2万",
+        "2080亿",
+        "160亿",
+        "510亿",
+        "590亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-02c3fcbfc7af8a0e",
+          "CL-1daa319359a0f545",
+          "CL-f8a02d868fcca522",
+          "CL-fe26a61c68edfe8e"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-bbdefa2950f49882",
+        "EN-ea3bd73e2b506e00",
+        "EN-047364b9be67f665",
+        "EN-9c8ae69b84f21a2e",
+        "EN-a89151ba4b5ac0f2"
+      ],
+      "entityNames": [
+        "Microsoft",
+        "Google",
+        "Meta",
+        "Alibaba",
+        "Tencent",
+        "Baidu"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.huxiu.com/article/4904714.html",
+      "publisher": "www.huxiu.com"
+    },
+    {
+      "id": "EV-2406bc3d29c09326",
+      "dataDate": "2026-11-13",
+      "date": "2026-11-10",
+      "updatedDate": "2026-11-10",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "曝 Anthropic 拟通过 IPO 筹集最多 644 亿美元，上市推介启动在即",
+      "originalTitle": "",
+      "subject": "曝 Anthropic 拟通过",
+      "action": "IPO",
+      "object": "筹集最多 644 亿美元，上市推介启动在即",
+      "metrics": [
+        "644 亿",
+        "4,306.16 亿",
+        "693 亿",
+        "4,633.8 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-dff37aaec8fa23f4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-dff37aaec8fa23f4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-dff37aaec8fa23f4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-dff37aaec8fa23f4",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "曝 Anthropic 拟通过",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/025/127.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
       "id": "EV-27d9a40d0446e770",
-      "dataDate": "2026-11-12",
+      "dataDate": "2026-11-13",
       "date": "2026-11-10",
       "updatedDate": "2026-11-10",
       "eventType": "ipo_listing",
@@ -478687,10 +479486,7 @@
       "action": "ipo_listing",
       "object": "planned IPO and concurrent private placement seeking up to $88.5 billion",
       "metrics": [
-        "$88.5 billion",
-        "800 million",
-        "$70 t",
-        "$78 "
+        "$88.5 billion"
       ],
       "locations": [],
       "missingFields": [],
@@ -478721,7 +479517,7 @@
     },
     {
       "id": "EV-4fc82b5985acc6c8",
-      "dataDate": "2026-11-12",
+      "dataDate": "2026-11-13",
       "date": "2026-11-10",
       "updatedDate": "2026-11-10",
       "eventType": "ipo_listing",
@@ -478879,7 +479675,7 @@
     },
     {
       "id": "EV-57717e60d7a07800",
-      "dataDate": "2026-11-12",
+      "dataDate": "2026-11-13",
       "date": "2026-11-06",
       "updatedDate": "2026-11-06",
       "eventType": "ipo_listing",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-12",
-    "currentDate": "2026-11-12",
-    "eventCount": 4436,
+    "latestDataDate": "2026-11-13",
+    "currentDate": "2026-11-13",
+    "eventCount": 4448,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -145,6 +145,7 @@
       "EV-c11ee0da38376254",
       "EV-6a6ff349579765ad",
       "EV-7ff24ae733821395",
+      "EV-6460ad65cd850154",
       "EV-10ce9a2cc2400e4f",
       "EV-d219dec3f1fcefc1",
       "EV-86537be17d50ff20",
@@ -170,7 +171,7 @@
       "EN-30a63b26b06e096e"
     ],
     "firstSeen": "2026-01-26",
-    "lastSeen": "2026-10-31",
+    "lastSeen": "2026-11-13",
     "relationIds": [
       "REL2-40a53a0ef359ae41",
       "REL2-5f0d9f90c84e1075",
@@ -229,6 +230,7 @@
         "EV-8b4f7844af234ed8"
       ],
       "deployments": [
+        "EV-6460ad65cd850154",
         "EV-da9bb2c98c1ce8cd",
         "EV-afcd5426f5c01dc7",
         "EV-619e33abf3f9bfbf",
@@ -281,6 +283,26 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-6460ad65cd850154",
+        "dataDate": "2026-11-13",
+        "date": "2026-11-11",
+        "eventType": "capital_investment",
+        "eventTypeLabel": "资本性投资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "中国AI基础设施投资加速：阿里、腾讯、百度2026上半年资本开支合计2080亿元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9fbf261b62c1d7c0",
+          "EN-bbdefa2950f49882",
+          "EN-ea3bd73e2b506e00",
+          "EN-047364b9be67f665",
+          "EN-9c8ae69b84f21a2e",
+          "EN-a89151ba4b5ac0f2"
+        ]
+      },
       {
         "id": "EV-ac30333388e0d00a",
         "dataDate": "2026-10-31",
@@ -3384,6 +3406,7 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
+        "EV-6460ad65cd850154",
         "EV-a06c44e0213f01b9",
         "EV-51f7b14d193a3ffc",
         "EV-d037228f0b35c1cb",
@@ -3413,13 +3436,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
         "TX-industry-media_entertainment",
         "TX-product_form-end_user_application",
         "TX-product_form-chip_accelerator",
-        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
@@ -3453,7 +3476,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "EN-be1a3c9420d88ea5",
@@ -5843,7 +5866,7 @@
         "HW-073f0034b9be13b2"
       ],
       "firstSeen": "2025-09-16",
-      "lastSeen": "2026-11-12"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "TX-use_case-content_creation",
@@ -6052,6 +6075,71 @@
   "fde": [],
   "hardware": [],
   "hardwareCatalog": [
+    {
+      "id": "HWC-55a80fa1defbe78b",
+      "snapshotKey": "55a80fa1defbe78b",
+      "snapshotId": "HWS-f28e08c5fdbeb042",
+      "eventId": "EV-6460ad65cd850154",
+      "eventIds": [
+        "EV-6460ad65cd850154"
+      ],
+      "dataDate": "2026-11-13",
+      "date": "2026-11-13",
+      "title": "Microsoft",
+      "subject": "Microsoft",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "capex"
+      ],
+      "latestValues": {
+        "capex": {
+          "metric_value": "9320",
+          "unit": "亿",
+          "fact_ref": "HWF-c8a653bf7b91e414"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [],
+      "capexFacts": [
+        {
+          "data_date": "2026-11-13",
+          "hardware_fact_id": "HWF-c8a653bf7b91e414",
+          "fact_type": "capex",
+          "observed_at": "2026-11-11",
+          "subject_entity_id": "EN-9fbf261b62c1d7c0",
+          "subject_name": "Microsoft",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "9320",
+          "unit": "亿",
+          "source_quote": "荣鼎集团报告覆盖13家企业，估算2026年中国AI基础设施资本开支达9320亿元，同比增长103%，2027年可能超过1.2万亿元。",
+          "event_refs": [
+            "EV-6460ad65cd850154"
+          ],
+          "claim_ref": "CL-1daa319359a0f545",
+          "source_refs": [
+            "SA-6bd6f26fed583da0"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-11-13/hardware-facts.json"
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://www.huxiu.com/article/4904714.html",
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-bbdefa2950f49882",
+        "EN-ea3bd73e2b506e00",
+        "EN-047364b9be67f665",
+        "EN-9c8ae69b84f21a2e",
+        "EN-a89151ba4b5ac0f2"
+      ]
+    },
     {
       "id": "HWC-3c2faedee816ba7e",
       "snapshotKey": "3c2faedee816ba7e",

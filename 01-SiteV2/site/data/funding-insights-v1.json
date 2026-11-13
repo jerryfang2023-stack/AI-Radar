@@ -5,17 +5,17 @@
     "site_version": "SITE-V4.6.1-research-retirement",
     "column_version": "FUNDING-INSIGHT-V1.5.0-china-market",
     "taxonomy_version": "TAG-V4.1",
-    "latest_date": "2026-11-12",
-    "last_checked_date": "2026-11-12",
-    "latest_financing_date": "2026-11-11",
-    "generated_at": "2026-11-12T03:47:36.151Z",
-    "card_count": 905,
-    "china_market_card_count": 256,
+    "latest_date": "2026-11-13",
+    "last_checked_date": "2026-11-13",
+    "latest_financing_date": "2026-11-12",
+    "generated_at": "2026-11-13T04:38:11.002Z",
+    "card_count": 910,
+    "china_market_card_count": 259,
     "duplicate_rounds_removed": 88,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-11-12T03:48:48.599Z"
+      "generated_at": "2026-11-13T04:39:04.641Z"
     },
     "market_category_framework": {
       "name": "CB Insights AI 100 2026",
@@ -57,6 +57,7 @@
       "C1轮",
       "C3轮",
       "C3轮扩展",
+      "C4轮",
       "C轮",
       "C轮扩展",
       "D+轮",
@@ -338,6 +339,4378 @@
   "cards": [
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-03bb0617eea57ed6",
+      "triggered_by_event_id": "EV-28354a9359e59d75",
+      "as_of_date": "2026-11-13",
+      "company": {
+        "entity_id": "EN-b81b59c4259c46d6",
+        "name": "Mirendil",
+        "full_name": "Mirendil",
+        "website": "https://mirendil.com",
+        "summary": "Mirendil 是一家前沿实验室，致力于让前沿 AI 研发更易获得，训练擅长 AI 研发的前沿模型，并围绕这些模型重构整个实验室流程。",
+        "headquarters": "旧金山",
+        "founders": [
+          {
+            "name": "Behnam",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3d619e2ee23bf1e4",
+                "quote": "Behnam was the co-inventer of the SAM optimizer",
+                "source_content_hash": "7b8afff876b48d2e",
+                "quote_hash": "7e29f648cdfaed1f2180999fb33d40df15310ef6e8ee880288ca226f5ce8a95f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Harsh",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3d619e2ee23bf1e4",
+                "quote": "Behnam and Harsh met for the first time in Google through a cold email 7 years ago",
+                "source_content_hash": "7b8afff876b48d2e",
+                "quote_hash": "7f5d5df1dbc699ba59fedde89c6186e0280753929b9b509f56bbb80e36636e2b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Shayan Salehian",
+            "role": "早期工程师/构建者",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3d619e2ee23bf1e4",
+                "quote": "Shayan Salehian was an early engineer at xAI",
+                "source_content_hash": "7b8afff876b48d2e",
+                "quote_hash": "20b88838b5a4862afe2e19583e54242948d7164b6f45e607605ef3966e66af48"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tara Rezaei",
+            "role": "构建者",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3d619e2ee23bf1e4",
+                "quote": "Tara Rezaei is a 23-year old MIT graduate",
+                "source_content_hash": "7b8afff876b48d2e",
+                "quote_hash": "7bb9216d7e3acf20468129b1561fa220ea7ef9fbe4b871a0fa57ec77dcdda08e"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "20",
+          "observed_at": "2026-06-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d5042b2dbd57003",
+              "quote": "a founding team of 20 researchers and engineers",
+              "source_content_hash": "4ca2252747181568",
+              "quote_hash": "9211c45e2079d91424f2ee892c89f86c69b6f5c895b75ce0dd4bd8317cc71762"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-91b5c399f66248bf",
+            "quote": "We're building tools to democratize frontier AI R&D and help put it within reach of every scientist and engineer.",
+            "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+            "quote_hash": "a2a1ec991817fd210c624267eaa2343d2f93c1f07ab93b882abbb197c9bb148c"
+          },
+          {
+            "source_id": "FISRC-d1e26c6da46f9703",
+            "quote": "We are a frontier lab building systems that excel at AI R&D.",
+            "source_content_hash": "803be20bbba6ffd8",
+            "quote_hash": "5d5a6c2afc5f49c3e4182ad8b668841b9eb2cbac104a0674ed06ca6a601894c4"
+          }
+        ],
+        "application_entity_id": "EN-b81b59c4259c46d6",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "$1B",
+        "total_raised": "",
+        "announced_at": "2026-11-12",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Kleiner Perkins",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-91b5c399f66248bf",
+                "quote": "we've raised $1B in a Series A, led by Kleiner Perkins and Clearlake Capital",
+                "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+                "quote_hash": "d905bce0e2c6176188704005b260f64dd8c80eef2f58262dddc988ee3a366009"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-9eb2439d21a914"
+          },
+          {
+            "name": "Clearlake Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-91b5c399f66248bf",
+                "quote": "we've raised $1B in a Series A, led by Kleiner Perkins and Clearlake Capital",
+                "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+                "quote_hash": "d905bce0e2c6176188704005b260f64dd8c80eef2f58262dddc988ee3a366009"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-828fb68310b73e"
+          },
+          {
+            "name": "Battery Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-91b5c399f66248bf",
+                "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+                "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+                "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-c9acfb4744dbfa"
+          },
+          {
+            "name": "Doerr Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-91b5c399f66248bf",
+                "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+                "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+                "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-7ef35c91fc55a2"
+          },
+          {
+            "name": "Gil & Co",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-91b5c399f66248bf",
+                "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+                "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+                "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-e015389d5fe2b6"
+          },
+          {
+            "name": "Google",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-91b5c399f66248bf",
+                "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+                "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+                "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+              }
+            ],
+            "entity_id": "EN-bbdefa2950f49882",
+            "institution_id": "INV-801c95327b9194"
+          },
+          {
+            "name": "M13",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-91b5c399f66248bf",
+                "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+                "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+                "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-0a5afde0849cd3"
+          },
+          {
+            "name": "Pear VC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-91b5c399f66248bf",
+                "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+                "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+                "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-9fb28d3b18eea0"
+          },
+          {
+            "name": "S32",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-91b5c399f66248bf",
+                "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+                "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+                "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-9f75b44276f08e"
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Andreessen Horowitz",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d5042b2dbd57003",
+                "quote": "a $200 million seed round led by Andreessen Horowitz and Kleiner Perkins",
+                "source_content_hash": "4ca2252747181568",
+                "quote_hash": "df1e21c667801fbd9f8828f9a321ca916dae3a8b4438ca25d86ca164c9e2119f"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b8a0e793124952"
+          },
+          {
+            "name": "Kleiner Perkins",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d5042b2dbd57003",
+                "quote": "a $200 million seed round led by Andreessen Horowitz and Kleiner Perkins",
+                "source_content_hash": "4ca2252747181568",
+                "quote_hash": "df1e21c667801fbd9f8828f9a321ca916dae3a8b4438ca25d86ca164c9e2119f"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-9eb2439d21a914"
+          },
+          {
+            "name": "NVIDIA",
+            "role": "种子轮后投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d5042b2dbd57003",
+                "quote": "followed by investment from NVIDIA and others",
+                "source_content_hash": "4ca2252747181568",
+                "quote_hash": "c1b338ee7a7b1f893f0e93f48027fc0785abdad93e497070321112b70be4cf31"
+              }
+            ],
+            "entity_id": "EN-8d4321d936320802",
+            "institution_id": "INV-c73d9854fb920b"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-91b5c399f66248bf",
+            "quote": "SAN FRANCISCO, Nov. 12, 2026 /PRNewswire/ -- Today, we're announcing that we've raised $1B in a Series A, led by Kleiner Perkins and Clearlake Capital, with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32, among other new and existing investors.",
+            "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+            "quote_hash": "ca743bdcaf8aa1f793bed98ef8651be75bbdec45e0727c13099c4b55676a793f"
+          },
+          {
+            "source_id": "FISRC-91b5c399f66248bf",
+            "quote": "Today, we're announcing that we've raised $1B in a Series A, led by Kleiner Perkins and Clearlake Capital, with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32, among other new and existing investors.",
+            "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+            "quote_hash": "c571465c415121ffd9bb7fdb10ba80f3d40bcfbc742c5a03b61128f7184cef04"
+          },
+          {
+            "source_id": "FISRC-5d5042b2dbd57003",
+            "quote": "Mirendil announced on November 12, 2026 that it had raised $1 billion in a Series A led by Kleiner Perkins and Clearlake Capital",
+            "source_content_hash": "4ca2252747181568",
+            "quote_hash": "be04bad2d2fbf36913feb74828034543e983cd548b545644fc897eea27b5e056"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$1B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-28354a9359e59d75",
+            "round_original": "A轮",
+            "amount": "$1B",
+            "announced_at": "2026-11-12",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-91b5c399f66248bf",
+                "quote": "SAN FRANCISCO, Nov. 12, 2026 /PRNewswire/ -- Today, we're announcing that we've raised $1B in a Series A, led by Kleiner Perkins and Clearlake Capital, with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32, among other new and existing investors.",
+                "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+                "quote_hash": "ca743bdcaf8aa1f793bed98ef8651be75bbdec45e0727c13099c4b55676a793f"
+              },
+              {
+                "source_id": "FISRC-91b5c399f66248bf",
+                "quote": "Today, we're announcing that we've raised $1B in a Series A, led by Kleiner Perkins and Clearlake Capital, with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32, among other new and existing investors.",
+                "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+                "quote_hash": "c571465c415121ffd9bb7fdb10ba80f3d40bcfbc742c5a03b61128f7184cef04"
+              },
+              {
+                "source_id": "FISRC-5d5042b2dbd57003",
+                "quote": "Mirendil announced on November 12, 2026 that it had raised $1 billion in a Series A led by Kleiner Perkins and Clearlake Capital",
+                "source_content_hash": "4ca2252747181568",
+                "quote_hash": "be04bad2d2fbf36913feb74828034543e983cd548b545644fc897eea27b5e056"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 1000000000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "10 亿美元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-91b5c399f66248bf",
+          "FISRC-5d5042b2dbd57003"
+        ]
+      },
+      "products": [
+        {
+          "name": "Lor",
+          "description": "基于云的智能体平台，智能体可编写代码、运行实验、配置算力并在用户选择的机器上操作，任务可跨数十个智能体拆分、持续数天或数周。",
+          "target_customers": "科学家、工程师及希望委派 AI 研发工作的团队",
+          "features": [
+            "智能体编写代码、运行实验、配置算力",
+            "任务可拆分给数十个智能体",
+            "智能体可连续运行数天或数周并在出错时自行解除阻塞",
+            "支持 macOS、Linux 和网页端，Windows、iOS、Android 即将推出"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d5042b2dbd57003",
+              "quote": "Lor is the platform for delegating that kind of work.",
+              "source_content_hash": "4ca2252747181568",
+              "quote_hash": "cdc4c7ce95ec81a8628afc55c13e69902a427dfcc0a6b0b3d7bed45f17dee93b"
+            },
+            {
+              "source_id": "FISRC-91b5c399f66248bf",
+              "quote": "Lor, now in private beta, brings this way of working to everyone else: hundreds of agents writing code and running experiments for days at a time.",
+              "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+              "quote_hash": "c8c4fbeeb959e33c2ed3722815c45d57d5bad50446c9219896bba06f2345f902"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Fern",
+          "description": "Mirendil 的首个模型，由 Mirendil-Base 后训练而来，支持最高 1000 万 token 上下文，面向高频智能体工作。",
+          "target_customers": "需要处理长周期智能体工作的研究人员与工程师",
+          "features": [
+            "最高 1000 万 token 上下文窗口",
+            "面向调试训练运行、阅读完整智能体轨迹、审计训练数据等高频智能体工作",
+            "访问状态为即将推出"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d5042b2dbd57003",
+              "quote": "Mirendil subsequently post-trained Mirendil-Base into Fern 0.1, its first model.",
+              "source_content_hash": "4ca2252747181568",
+              "quote_hash": "c14dac6b45d7c7fecebf53a27621d71a4a1508d04a94eb8795f78c9afd51b40f"
+            },
+            {
+              "source_id": "FISRC-91b5c399f66248bf",
+              "quote": "Fern, which holds up to 10M tokens of context, enough for days of an agent's work.",
+              "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+              "quote_hash": "1fe0f773f4eaa1c1f30f5661af30de66489f1186977d0af612c6a3c5433154fc"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Mirendil-Base",
+          "description": "从零预训练的编码专用基础模型，参数规模在 1000 亿至 5000 亿之间，由一名研究员配合智能体在 3.5 个月内完成预训练。",
+          "target_customers": "前沿 AI 实验室内部的编码与研发工作",
+          "features": [
+            "从零构建，仅基于 PyTorch、JAX 等通用库",
+            "仅使用公开数据训练，无蒸馏或合成数据",
+            "参数规模 100B–500B"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d295a6810fe1d505",
+              "quote": "Mirendil-Base is the first in a series of coding-specialized models",
+              "source_content_hash": "cc44a76a1b327965",
+              "quote_hash": "1a1898a5ce0225000336a46782fd6d606e881e8a15f9e2c47ed1fd30752938c0"
+            },
+            {
+              "source_id": "FISRC-d295a6810fe1d505",
+              "quote": "Mirendil-Base is in the 100B–500B parameter range",
+              "source_content_hash": "cc44a76a1b327965",
+              "quote_hash": "c58f6592111ff3f37a8690b970b6f994e82afa1ee6edee52a0c2827334391f66"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Kimi-K3",
+          "product": "Kimi-K3",
+          "scenario": "在留出代码上的交叉熵预测",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "在七个外部仓库的平均 bits per byte 为 0.193，优于 Mirendil-Base 的 0.222；Kimi-K3 为后训练模型，参数规模 2.8T/104B。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d295a6810fe1d505",
+              "quote": "Kimi-K3 2.8T / 104B",
+              "source_content_hash": "cc44a76a1b327965",
+              "quote_hash": "c74f5d41b3117295dff1ea39f18f1f51d83bc7a45780281670f9dc0036752061"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "GLM-5.3",
+          "product": "GLM-5.3",
+          "scenario": "在留出代码上的交叉熵预测",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "在七个外部仓库的平均 bits per byte 为 0.242，Mirendil-Base 为 0.222；GLM-5.3 为后训练模型，参数规模 753B/40B。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d295a6810fe1d505",
+              "quote": "GLM-5.3 753B / 40B",
+              "source_content_hash": "cc44a76a1b327965",
+              "quote_hash": "926b1feb49435d7269dda9f0f595ab7eee4525e0a434e304259cc79a9cbe175e"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Nemotron-550B-Base",
+          "product": "Nemotron-550B-Base",
+          "scenario": "在留出代码上的交叉熵预测",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "在七个外部仓库的平均 bits per byte 为 0.247，Mirendil-Base 为 0.222；参数规模 550B/55B。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d295a6810fe1d505",
+              "quote": "Nemotron-550B-Base 550B / 55B",
+              "source_content_hash": "cc44a76a1b327965",
+              "quote_hash": "2e9577a5e2a5586f81d9e2730b1f2393f34a7fb9cec646cdaab9055701a8317f"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "DeepSeek-V4-Pro-Base",
+          "product": "DeepSeek-V4-Pro-Base",
+          "scenario": "在留出代码上的交叉熵预测",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "在七个外部仓库的平均 bits per byte 为 0.243，Mirendil-Base 为 0.222；参数规模 1.6T/49B。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d295a6810fe1d505",
+              "quote": "DeepSeek-V4-Pro-Base 1.6T / 49B",
+              "source_content_hash": "cc44a76a1b327965",
+              "quote_hash": "90506dd3f17269090c27f332f1ba1befcc0a8bcc3e63c82d92a3eca2cd18c57e"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Inkling",
+          "product": "Inkling",
+          "scenario": "在留出代码上的交叉熵预测",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "在七个外部仓库的平均 bits per byte 为 0.243，Mirendil-Base 为 0.222；参数规模 975B/41B。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d295a6810fe1d505",
+              "quote": "Inkling 975B / 41B",
+              "source_content_hash": "cc44a76a1b327965",
+              "quote_hash": "5978288e7780ceb07a084f338fbf083d3d58270f9a8498e307d845ddce80e850"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "10亿美元",
+          "observed_at": "2026-11-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-91b5c399f66248bf",
+              "quote": "we've raised $1B in a Series A",
+              "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+              "quote_hash": "c8b978d331ff0d2d8eb9411a456753b0559a2e7c3ac7ef80b3957b77c9367259"
+            }
+          ]
+        },
+        {
+          "label": "Mirendil-Base 预训练算力成本",
+          "value": "低于1000万美元",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d295a6810fe1d505",
+              "quote": "with less than $10M in compute",
+              "source_content_hash": "cc44a76a1b327965",
+              "quote_hash": "12a1a0d0d186be81aefa80d24b7c6251f1a5fd5c5d623927353def6a2e321270"
+            }
+          ]
+        },
+        {
+          "label": "智能体编写代码占比",
+          "value": "超过99%",
+          "observed_at": "2026-10-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d295a6810fe1d505",
+              "quote": "AI agents wrote over 99% of the code",
+              "source_content_hash": "cc44a76a1b327965",
+              "quote_hash": "16a1888d549672f7f3a61b174853075b4fd36d216f4413688410a141070891b6"
+            }
+          ]
+        },
+        {
+          "label": "Fern 上下文窗口",
+          "value": "最高1000万token",
+          "observed_at": "2026-11-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-91b5c399f66248bf",
+              "quote": "Fern, which holds up to 10M tokens of context",
+              "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+              "quote_hash": "130e4448b8c5b2ae1a89e278f993a469a076c55bc94c7ea80f87f0ce3fb0989a"
+            }
+          ]
+        },
+        {
+          "label": "种子轮金额",
+          "value": "2亿美元",
+          "observed_at": "2026-06-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d5042b2dbd57003",
+              "quote": "a $200 million seed round",
+              "source_content_hash": "4ca2252747181568",
+              "quote_hash": "995b1deda202b35dc7ebffe771291762f38714b51dcfde3a2324e58d2ade3da9"
+            }
+          ]
+        },
+        {
+          "label": "创始团队规模",
+          "value": "20名研究人员和工程师",
+          "observed_at": "2026-06-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d5042b2dbd57003",
+              "quote": "a founding team of 20 researchers and engineers",
+              "source_content_hash": "4ca2252747181568",
+              "quote_hash": "9211c45e2079d91424f2ee892c89f86c69b6f5c895b75ce0dd4bd8317cc71762"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Mirendil",
+          "quote": "We're building tools to democratize frontier AI R&D and help put it within reach of every scientist and engineer.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-91b5c399f66248bf",
+              "quote": "We're building tools to democratize frontier AI R&D and help put it within reach of every scientist and engineer.",
+              "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+              "quote_hash": "a2a1ec991817fd210c624267eaa2343d2f93c1f07ab93b882abbb197c9bb148c"
+            }
+          ]
+        },
+        {
+          "speaker": "Mirendil",
+          "quote": "One researcher, working with agents, pretrained Mirendil-Base, a competitive coding model, from scratch in 3.5 months with less than $10M in compute.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-91b5c399f66248bf",
+              "quote": "One researcher, working with agents, pretrained Mirendil-Base, a competitive coding model, from scratch in 3.5 months with less than $10M in compute.",
+              "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+              "quote_hash": "91112c6a2c2cd1190333af9703777db4be57f42409ddddf76b76fc898a4bc2f1"
+            }
+          ]
+        },
+        {
+          "speaker": "Mamoon Hamid",
+          "quote": "We couldn’t be more excited to be working with @bneyshabur @HarshMeh1a @shayan_ @tararezaeikh and the superstar team @mirendil to be pushing the frontier of AI R&D.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-932ab331a7523db4",
+              "quote": "We couldn’t be more excited to be working with @bneyshabur @HarshMeh1a @shayan_ @tararezaeikh and the superstar team @mirendil to be pushing the frontier of AI R&D.",
+              "source_content_hash": "a2ec8099513bfb7b",
+              "quote_hash": "29ab134921fe008895bf0c6dc8e85c4347b5f52ac19a7c4786dc018767728205"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Kleiner Perkins",
+            "speaker": "Mamoon Hamid",
+            "speaker_role": "Kleiner Perkins 投资人",
+            "rationale": "看好 Mirendil 团队推动前沿 AI 研发，并期待与其继续推进这一方向。",
+            "quote": "We couldn’t be more excited to be working with @bneyshabur @HarshMeh1a @shayan_ @tararezaeikh and the superstar team @mirendil to be pushing the frontier of AI R&D.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-932ab331a7523db4",
+                "quote": "We couldn’t be more excited to be working with @bneyshabur @HarshMeh1a @shayan_ @tararezaeikh and the superstar team @mirendil to be pushing the frontier of AI R&D.",
+                "source_content_hash": "a2ec8099513bfb7b",
+                "quote_hash": "29ab134921fe008895bf0c6dc8e85c4347b5f52ac19a7c4786dc018767728205"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是：智能体辅助的 AI 研发能否从公司内部的一次性成果，变成外部科学家和工程师可重复使用的工作流。当前融资所依赖的已验证信号包括：一名研究员配合智能体在 3.5 个月内、以低于 1000 万美元算力从零预训练出 Mirendil-Base，且智能体编写了超过 99% 的代码；Fern 支持最高 1000 万 token 上下文；Lor 已进入私测。证据边界在于：上述结果来自公司自述，外部复现与规模化商业采用尚未披露，Lor 仍为邀请制私测，Fern 访问状态为即将推出。",
+        "validated_signals": [
+          "一名研究员配合智能体在 3.5 个月内、以低于 1000 万美元算力从零预训练出 Mirendil-Base",
+          "智能体编写了超过 99% 的代码，并运行实验、诊断失败",
+          "Fern 支持最高 1000 万 token 上下文",
+          "Lor 已进入私测，智能体可连续数天编写代码和运行实验"
+        ],
+        "risks": [
+          "内部单研究员成果能否成为外部可重复工作流尚未验证",
+          "Lor 仍为邀请制私测，Fern 访问状态为即将推出，商业化采用数据缺失",
+          "模型对比结果来自公司自述的留出代码交叉熵，外部独立复现未披露"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "ai_development_orchestration",
+        "use_case_ids": [
+          "software_development",
+          "research_discovery"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "researcher"
+        ],
+        "sector": "前沿 AI 研发智能体平台与编码模型",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：智能体辅助的 AI 研发能否从公司内部的一次性成果，变成外部科学家和工程师可重复使用的工作流。当前融资所依赖的已验证信号包括：一名研究员配合智能体在 3.5 个月内、以低于 1000 万美元算力从零预训练出 Mirendil-Base，且智能体编写了超过 99% 的代码；Fern 支持最高 1000 万 token 上下文；Lor 已进入私测。证据边界在于：上述结果来自公司自述，外部复现与规模化商业采用尚未披露，Lor 仍为邀请制私测，Fern 访问状态为即将推出。",
+          "evidence_signals": [
+            "一名研究员配合智能体在 3.5 个月内、以低于 1000 万美元算力从零预训练出 Mirendil-Base",
+            "智能体编写了超过 99% 的代码，并运行实验、诊断失败",
+            "Fern 支持最高 1000 万 token 上下文",
+            "Lor 已进入私测，智能体可连续数天编写代码和运行实验"
+          ],
+          "risks": [
+            "内部单研究员成果能否成为外部可重复工作流尚未验证",
+            "Lor 仍为邀请制私测，Fern 访问状态为即将推出，商业化采用数据缺失",
+            "模型对比结果来自公司自述的留出代码交叉熵，外部独立复现未披露"
+          ],
+          "institutional_rationale_status": "disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Lor",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Fern",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Mirendil-Base",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Behnam",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Harsh",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Shayan Salehian",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Tara Rezaei",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kleiner Perkins",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Clearlake Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Battery Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Doerr Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Gil & Co",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Google",
+          "canonical_entity_id": "EN-bbdefa2950f49882",
+          "canonical_name": "Google"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "M13",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Pear VC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "S32",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Andreessen Horowitz",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Kleiner Perkins",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "NVIDIA",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Kimi-K3",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "GLM-5.3",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Nemotron-550B-Base",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "DeepSeek-V4-Pro-Base",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Inkling",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-91b5c399f66248bf",
+          "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+          "title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+          "publisher": "www.prnewswire.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-13T00:19:34.030Z",
+          "content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+          "source_artifact_id": "SA-9af5188d3ffe2446",
+          "raw_id": "RAW-b0b78d69df94ac1c",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-5d5042b2dbd57003",
+          "source_url": "https://www.unite.ai/mirendil-raises-1b-series-a-to-bring-frontier-ai-r-and-d-to-more-teams/",
+          "title": "Mirendil Raises $1B Series A to Bring Frontier AI R&D to More Teams",
+          "publisher": "unite.ai",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-13T03:48:52.823Z",
+          "content_hash": "4ca2252747181568",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-d295a6810fe1d505",
+          "source_url": "https://mirendil.com/news/pretraining-at-scale-without-a-pretraining-team/",
+          "title": "Pretraining at scale without a pretraining team",
+          "publisher": "mirendil.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-13T03:48:55.354Z",
+          "content_hash": "cc44a76a1b327965",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-d1e26c6da46f9703",
+          "source_url": "https://mirendil.com/about/",
+          "title": "About us — Mirendil",
+          "publisher": "mirendil.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-13T03:48:55.462Z",
+          "content_hash": "803be20bbba6ffd8",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-932ab331a7523db4",
+          "source_url": "https://teapawt.org/wilsonkriegel",
+          "title": "wilson k (@wilsonkriegel)",
+          "publisher": "teapawt.org",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-13T03:48:57.956Z",
+          "content_hash": "a2ec8099513bfb7b",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-3d619e2ee23bf1e4",
+          "source_url": "https://www.kleinerperkins.com/perspectives/mirendil-building-the-system-that-builds-systems/",
+          "title": "Mirendil: Building the system that builds systems",
+          "publisher": "kleinerperkins.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-13T03:48:59.881Z",
+          "content_hash": "7b8afff876b48d2e",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-13T03:49:14.106Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-13T03:49:14.106Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Fern",
+            "Lor",
+            "Mirendil-Base"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 4,
+          "unresolved_names": [
+            "Behnam",
+            "Harsh",
+            "Shayan Salehian",
+            "Tara Rezaei"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-28354a9359e59d75"
+      ],
+      "aggregation": {
+        "key": "EN-b81b59c4259c46d6|series_a|USD:exact:1000000000:::|2026-11-12",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-03bb0617eea57ed6",
+          "event_ids": [
+            "EV-28354a9359e59d75"
+          ],
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$1B",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿美元"
+          },
+          "announced_at": "2026-11-12",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "ai_infrastructure_software",
+        "name": "AI 基础设施软件",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "development_deployment",
+        "name": "开发与部署",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "ai_development_orchestration",
+        "name": "AI 开发与编排",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-28354a9359e59d75",
+        "direction": ""
+      },
+      "translations": {
+        "zh-CN": {
+          "products[0].features[3]": {
+            "text": "支持 macOS、Linux 和网页端，Windows、iOS、Android 即将推出",
+            "source_hash": "0d6e8bb1da47ec1ce2868b9447daa70df1429a99cddf360038bc82d956202cfd",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-13T04:39:04.641Z",
+            "status": "translated"
+          },
+          "metrics[1].label": {
+            "text": "Mirendil-Base 预训练算力成本",
+            "source_hash": "e4213c34aeb2f1b81a1fdb250ba287f119df27ccab54ffdc0c73c3ca6039a1b3",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-13T04:39:04.641Z",
+            "status": "translated"
+          }
+        }
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-b996750fe1d9fff8",
+      "triggered_by_event_id": "EV-873fbd8a72c75fab",
+      "as_of_date": "2026-11-13",
+      "company": {
+        "entity_id": "EN-5d97abdbb6bc542c",
+        "name": "通芯智能",
+        "full_name": "通芯人工智能科技（北京）有限公司",
+        "website": "",
+        "summary": "原生通用人工智能（AGI）架构芯片研发商，由朱松纯发起、依托北京通用人工智能研究院孵化，首代产品定位为支持AGI算法的高性价比推理芯片。",
+        "headquarters": "北京市海淀区颐和园路2号未来科技大厦",
+        "founders": [
+          {
+            "name": "朱松纯",
+            "role": "发起人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c83e93672458afd1",
+                "quote": "通芯智能成立于2026年4月，由人工智能科学家、通研院院长、北大和清华讲席教授朱松纯发起，依托北京通用人工智能研究院（通研院）孵化。",
+                "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+                "quote_hash": "d5a438200e721db126892ca2ede49334dbcd5580ab7e79b0da9631705fcecff4"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "王海洋",
+            "role": "创始人、董事长兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21642e831473f743",
+                "quote": "该公司董事长兼CEO王海洋师从中国计算机事业的奠基人之一夏培肃院士，是龙芯CPU创始成员，曾任海光四代芯片架构负责人、GPU独角兽联合创始人。",
+                "source_content_hash": "b3a8bcbc9e96eb5f",
+                "quote_hash": "a8383a68b7d5193253245a374df6e63d353115ecbc5c157336a80ee970472db1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "史峰",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-21642e831473f743",
+                "quote": "另一位公司创始人史峰师从朱松纯教授，博士毕业于UCLA，曾参与龙芯3研发，担任通研院AGI芯片中心主任。",
+                "source_content_hash": "b3a8bcbc9e96eb5f",
+                "quote_hash": "1079544a25af53b82b992c2680da48191a160b8296d4fc162957d430973bddca"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c83e93672458afd1",
+            "quote": "通芯智能成立于2026年4月，由人工智能科学家、通研院院长、北大和清华讲席教授朱松纯发起，依托北京通用人工智能研究院（通研院）孵化。",
+            "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+            "quote_hash": "d5a438200e721db126892ca2ede49334dbcd5580ab7e79b0da9631705fcecff4"
+          },
+          {
+            "source_id": "FISRC-f940c9c397ad0707",
+            "quote": "通芯智能成立于2026年4月，依托北京通用人工智能研究院孵化，由北京通用人工智能研究院院长朱松纯发起。",
+            "source_content_hash": "c5080dddafd82ffa",
+            "quote_hash": "35ec8b16bc10a521d5185c367d2f97bfdcf5c60f1dc45228d9b47973e7deab4a"
+          }
+        ],
+        "application_entity_id": "EN-5d97abdbb6bc542c",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "多轮融资",
+        "amount": "数亿元",
+        "total_raised": "",
+        "announced_at": "2026-11-12",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "清华校友种子基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c83e93672458afd1",
+                "quote": "融资由清华校友种子基金、北京通用人工智能研究院、松霖科技、平治信息、暗物智能以及豫资涨泉、普超资本、青创伯乐等财务投资人共同参与，集聚产业资本、头部科技VC和财务资本。",
+                "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+                "quote_hash": "9ed55f08f8bd8254f1d9f0401425d0952b053ef74d399ec234545d99d484974c"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-35c65de34bb27d"
+          },
+          {
+            "name": "北京通用人工智能研究院",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c83e93672458afd1",
+                "quote": "融资由清华校友种子基金、北京通用人工智能研究院、松霖科技、平治信息、暗物智能以及豫资涨泉、普超资本、青创伯乐等财务投资人共同参与，集聚产业资本、头部科技VC和财务资本。",
+                "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+                "quote_hash": "9ed55f08f8bd8254f1d9f0401425d0952b053ef74d399ec234545d99d484974c"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-c88976fa267944"
+          },
+          {
+            "name": "松霖科技",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c83e93672458afd1",
+                "quote": "融资由清华校友种子基金、北京通用人工智能研究院、松霖科技、平治信息、暗物智能以及豫资涨泉、普超资本、青创伯乐等财务投资人共同参与，集聚产业资本、头部科技VC和财务资本。",
+                "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+                "quote_hash": "9ed55f08f8bd8254f1d9f0401425d0952b053ef74d399ec234545d99d484974c"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-4a0c10376773ed"
+          },
+          {
+            "name": "平治信息",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c83e93672458afd1",
+                "quote": "融资由清华校友种子基金、北京通用人工智能研究院、松霖科技、平治信息、暗物智能以及豫资涨泉、普超资本、青创伯乐等财务投资人共同参与，集聚产业资本、头部科技VC和财务资本。",
+                "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+                "quote_hash": "9ed55f08f8bd8254f1d9f0401425d0952b053ef74d399ec234545d99d484974c"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-fa5a04311e9f24"
+          },
+          {
+            "name": "暗物智能",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c83e93672458afd1",
+                "quote": "融资由清华校友种子基金、北京通用人工智能研究院、松霖科技、平治信息、暗物智能以及豫资涨泉、普超资本、青创伯乐等财务投资人共同参与，集聚产业资本、头部科技VC和财务资本。",
+                "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+                "quote_hash": "9ed55f08f8bd8254f1d9f0401425d0952b053ef74d399ec234545d99d484974c"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-6c377f53217385"
+          },
+          {
+            "name": "豫资涨泉",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c83e93672458afd1",
+                "quote": "融资由清华校友种子基金、北京通用人工智能研究院、松霖科技、平治信息、暗物智能以及豫资涨泉、普超资本、青创伯乐等财务投资人共同参与，集聚产业资本、头部科技VC和财务资本。",
+                "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+                "quote_hash": "9ed55f08f8bd8254f1d9f0401425d0952b053ef74d399ec234545d99d484974c"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-5a09bb78c549f1"
+          },
+          {
+            "name": "普超资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c83e93672458afd1",
+                "quote": "融资由清华校友种子基金、北京通用人工智能研究院、松霖科技、平治信息、暗物智能以及豫资涨泉、普超资本、青创伯乐等财务投资人共同参与，集聚产业资本、头部科技VC和财务资本。",
+                "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+                "quote_hash": "9ed55f08f8bd8254f1d9f0401425d0952b053ef74d399ec234545d99d484974c"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-20b3729091e451"
+          },
+          {
+            "name": "青创伯乐",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c83e93672458afd1",
+                "quote": "融资由清华校友种子基金、北京通用人工智能研究院、松霖科技、平治信息、暗物智能以及豫资涨泉、普超资本、青创伯乐等财务投资人共同参与，集聚产业资本、头部科技VC和财务资本。",
+                "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+                "quote_hash": "9ed55f08f8bd8254f1d9f0401425d0952b053ef74d399ec234545d99d484974c"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-775241fe1cf1c4"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c83e93672458afd1",
+            "quote": "通芯人工智能科技（北京）有限公司（下称“通芯智能”）成立半年已连续完成数亿元种子轮及天使轮融资。",
+            "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+            "quote_hash": "39c3b3572e3e441a49e528436ce5f411b3c305babf3f877f0ec0d9bcfab67a5d"
+          },
+          {
+            "source_id": "FISRC-f940c9c397ad0707",
+            "quote": "通芯人工智能科技（北京）有限公司（以下简称“通芯智能”）完成数亿元种子轮及天使轮融资。投资方包括清华校友种子基金、北京通用人工智能研究院、松霖科技、平治信息、暗物智能及豫资涨泉等，资金将主要用于芯片流片前的核心架构设计与研发。",
+            "source_content_hash": "c5080dddafd82ffa",
+            "quote_hash": "a36fc70e18c177581c6a4418595e6c6a65f59dfd86ff17f991fb2a8a216654ed"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-873fbd8a72c75fab",
+            "round_original": "多轮融资",
+            "amount": "数亿元",
+            "announced_at": "2026-11-12",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c83e93672458afd1",
+                "quote": "通芯人工智能科技（北京）有限公司（下称“通芯智能”）成立半年已连续完成数亿元种子轮及天使轮融资。",
+                "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+                "quote_hash": "39c3b3572e3e441a49e528436ce5f411b3c305babf3f877f0ec0d9bcfab67a5d"
+              },
+              {
+                "source_id": "FISRC-f940c9c397ad0707",
+                "quote": "通芯人工智能科技（北京）有限公司（以下简称“通芯智能”）完成数亿元种子轮及天使轮融资。投资方包括清华校友种子基金、北京通用人工智能研究院、松霖科技、平治信息、暗物智能及豫资涨泉等，资金将主要用于芯片流片前的核心架构设计与研发。",
+                "source_content_hash": "c5080dddafd82ffa",
+                "quote_hash": "a36fc70e18c177581c6a4418595e6c6a65f59dfd86ff17f991fb2a8a216654ed"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-c83e93672458afd1",
+          "FISRC-f940c9c397ad0707"
+        ]
+      },
+      "products": [
+        {
+          "name": "原生AGI架构推理芯片",
+          "description": "首代产品定位为支持AGI算法的高性价比推理芯片，采用自研Vector、Tensor和AGI Core三单元架构，兼容主流模型并为逻辑、因果与价值推理增加专用硬件支持。",
+          "target_customers": "大模型智算集群、Token工厂、整机厂商、地方智算中心、具身机器人企业",
+          "features": [
+            "Vector+Tensor+AGI Core三单元架构",
+            "混合存算一体缓解内存墙",
+            "Chiplet芯粒设计覆盖云边端",
+            "支持CNN、Transformer等主流模型"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f940c9c397ad0707",
+              "quote": "首款产品定位于支持AGI算法的高性价比推理芯片，面向大模型、世界模型、通用智能体及机器人等应用，在兼容主流模型的同时，为逻辑、因果与价值推理增加专用硬件支持。",
+              "source_content_hash": "c5080dddafd82ffa",
+              "quote_hash": "358f1b2067f183bce62b657022972155b8c47ae518b12ac80fb6c79c2f812faf"
+            },
+            {
+              "source_id": "FISRC-c83e93672458afd1",
+              "quote": "通芯智能以自研的Vector+Tensor+AGI Core三单元架构为基础，打造既支持向量、张量计算，又为物理、社交智能等提供原生支持的高性价比芯片。",
+              "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+              "quote_hash": "8f91806e0998a135d36f6961daf508ae1329f1b6057cd573af82e67802fb5eba"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "英伟达Thor系列",
+          "product": "Thor系列端侧计算平台",
+          "scenario": "端侧物理智能与具身智能计算",
+          "target_customer": "具身机器人企业",
+          "funding_summary": "",
+          "core_difference": "通芯智能首代芯片端侧产品对标Thor系列，强调面向AGI算法的原生架构与混合存算一体；来源未披露Thor系列的具体架构与价格对比。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c83e93672458afd1",
+              "quote": "公司第一代芯片定位为高性价比的推理芯片，同时支持云端模型工厂和端侧物理智能，端侧对标英伟达的Thor系列，云端对标英伟达B300系列。",
+              "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+              "quote_hash": "e89721cc819126130d2f2b5b5e8c90f95e0a2ea768092f1575e7415ba8d3fdef"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "英伟达B300系列",
+          "product": "B300系列云端GPU",
+          "scenario": "云端大模型与智算集群推理",
+          "target_customer": "大模型公司与智算中心",
+          "funding_summary": "",
+          "core_difference": "通芯智能云端产品对标B300系列，主打面向AGI认知架构的推理性价比；来源未披露B300系列的具体规格与价格对比。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f6b44fde81b7873b",
+              "quote": "其中，云端产品定位对标英伟达B300系列，端侧产品则对标Thor系列。",
+              "source_content_hash": "695512b2753cf4a5",
+              "quote_hash": "727302addc919b31b88a0375493d9f2ee63a83f9b97fb1e1d6ab352bf3f25d46"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "成立至完成架构设计和立项用时",
+          "value": "3个月",
+          "observed_at": "2026-11-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c83e93672458afd1",
+              "quote": "公司成立三个月即完成架构设计和立项，现已进入芯片设计阶段，计划12月初展开FPGA原型验证工作，届时将展示阶段性成果。",
+              "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+              "quote_hash": "8881a203343c1694e4bc961d7263a6212f39f87798f2292b6cc8b67b562ef5f4"
+            }
+          ]
+        },
+        {
+          "label": "创始核心团队平均芯片从业经验",
+          "value": "超过20年",
+          "observed_at": "2026-11-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c83e93672458afd1",
+              "quote": "公司创始核心团队的平均芯片从业经验超过20年，骨干来自海光、百度、字节、阿里等头部芯片与AI团队",
+              "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+              "quote_hash": "5fab4196b604b5ea2a8487e60d125166c8c2d036e9ac2b6991f748995cedea35"
+            }
+          ]
+        },
+        {
+          "label": "创始人王海洋芯片研发经历",
+          "value": "25年",
+          "observed_at": "2026-11-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c83e93672458afd1",
+              "quote": "拥有25年芯片研发及15年SoC架构设计经历，累计持有近百项国内外发明专利",
+              "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+              "quote_hash": "889a3267faf421d570dcadfcb5f9ae02db7119b41c38f733477420894c6cbd0c"
+            }
+          ]
+        },
+        {
+          "label": "芯片立项到量产所需时间",
+          "value": "至少20个月",
+          "observed_at": "2026-11-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c83e93672458afd1",
+              "quote": "芯片研发从立项到量产至少需要20个月，我们现在来做恰逢其时。",
+              "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+              "quote_hash": "e75a0dcbf198d428db50a19611a3ad8f42d3a0b5dbf513bc2b91a4aeaca90f81"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "朱松纯",
+          "quote": "通用人工智能的竞争，本质是架构之争。通芯要做的是把这条路落到硅上：以芯片适配AGI的认知架构，与‘通通’等智能体和大模型协同，构成端到端解决方案。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c83e93672458afd1",
+              "quote": "通用人工智能的竞争，本质是架构之争。通芯要做的是把这条路落到硅上：以芯片适配AGI的认知架构，与‘通通’等智能体和大模型协同，构成端到端解决方案。",
+              "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+              "quote_hash": "df39a49a54c871ed3cd66ccec50404e8b8770462f23e8ca3d1637f8df6f7b4ac"
+            }
+          ]
+        },
+        {
+          "speaker": "王海洋",
+          "quote": "随着大模型能力增强，AI正从训练时代走向推理时代。训练模型的需求在下降，而推理需求将占据绝对大头，用户对Token性价比的追求不断提高。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c83e93672458afd1",
+              "quote": "随着大模型能力增强，AI正从训练时代走向推理时代。训练模型的需求在下降，而推理需求将占据绝对大头，用户对Token性价比的追求不断提高。",
+              "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+              "quote_hash": "d07139f9c724a2081f0ffa53cec5bd32d76ce486823d3929ac68c14279244392"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "豫资涨泉",
+            "speaker": "刘啸东",
+            "speaker_role": "豫资涨泉资本创始人",
+            "rationale": "看好训推分离后推理侧算力的长期机会，看重公司面向AGI时代提前布局的芯片底层架构，以及兼具科研与量产经验的团队结构。",
+            "quote": "投资通芯智能，是看好训推分离之后推理侧算力的长期机会，也看重公司面向AGI时代提前布局的芯片底层架构。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c83e93672458afd1",
+                "quote": "投资通芯智能，是看好训推分离之后推理侧算力的长期机会，也看重公司面向AGI时代提前布局的芯片底层架构。",
+                "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+                "quote_hash": "b718d6eff1b2496fecc7b77f68f06e72dc017c7215f585daf37844dd35aa3b8d"
+              }
+            ]
+          },
+          {
+            "institution": "松霖科技",
+            "speaker": "韩宗谕",
+            "speaker_role": "松霖科技战投负责人",
+            "rationale": "看好AGI芯片与原生模型一体化技术及量产经验团队，作为产业型战略布局与松霖在医养、后勤及家庭场景形成协同。",
+            "quote": "我们看好通芯在AGI芯片与原生模型一体化的核心技术以及具备丰富量产经验的创始团队。本次投资是产业型战略布局，依托松霖在医养、后勤以及家庭场景的全球化产业基础，与通芯形成深度协同，加强具身智能底层算力能力。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c83e93672458afd1",
+                "quote": "我们看好通芯在AGI芯片与原生模型一体化的核心技术以及具备丰富量产经验的创始团队。本次投资是产业型战略布局，依托松霖在医养、后勤以及家庭场景的全球化产业基础，与通芯形成深度协同，加强具身智能底层算力能力。",
+                "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+                "quote_hash": "ff7bd9c1236adc11df6a04690c1a1a05f63d7b8efe27059d39af03dca6444a5f"
+              }
+            ]
+          },
+          {
+            "institution": "普超资本",
+            "speaker": "李立伟",
+            "speaker_role": "普超资本创始合伙人",
+            "rationale": "专注算力基础设施产业链，认可公司打通AGI理论到芯片架构的技术链路及团队全周期量产经验。",
+            "quote": "通芯智能打通AGI理论到芯片架构的技术链路，团队兼具前沿AGI科研积淀与长期算力大芯片全周期量产经验，以差异化架构适配因果关系、多物理场计算需求。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c83e93672458afd1",
+                "quote": "通芯智能打通AGI理论到芯片架构的技术链路，团队兼具前沿AGI科研积淀与长期算力大芯片全周期量产经验，以差异化架构适配因果关系、多物理场计算需求。",
+                "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+                "quote_hash": "5f059b355bdda64edf0d3d8bb8feed5b09109f330c84b451e22a91ae5a38da74"
+              }
+            ]
+          },
+          {
+            "institution": "青创伯乐",
+            "speaker": "赖光宁",
+            "speaker_role": "青创伯乐创始合伙人兼董事长",
+            "rationale": "认为AGI产业化关键在于让智能算得更省，认可公司在架构上的原创判断与落地工作。",
+            "quote": "AGI走到今天，谁能让智能算得更省，谁就掌握了下一阶段产业化的关键。通芯智能选择做AGI芯片，本质上是在参与定义这个时代的算力底座。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c83e93672458afd1",
+                "quote": "AGI走到今天，谁能让智能算得更省，谁就掌握了下一阶段产业化的关键。通芯智能选择做AGI芯片，本质上是在参与定义这个时代的算力底座。",
+                "source_content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+                "quote_hash": "4a5ff5c6967ea059542e7694dae7740134578ccb286f15e6826137332f7b6e48"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是：在推理需求占比提升的预期下，通芯智能能否以面向AGI认知架构的原生芯片设计，在云端与端侧推理场景做出可量产的性价比优势。当前融资所依赖的已验证信号主要是团队履历（核心团队平均芯片从业经验超过20年、完整走过架构定义到量产交付全链路）与研发进度（成立三个月完成架构设计和立项、已进入芯片设计阶段、计划12月初开展FPGA原型验证），而非流片或量产结果。证据边界在于：首代芯片尚未流片，商业化仅为初步规模合作意向，来源未披露任何客户合同、收入或性能实测数据。",
+        "validated_signals": [
+          "成立三个月即完成架构设计和立项，已进入芯片设计阶段",
+          "计划于2026年12月初开展FPGA原型验证",
+          "创始核心团队平均芯片从业经验超过20年，骨干来自海光、百度、字节、阿里等团队",
+          "商业化布局覆盖云端推理、通用智能体和端侧物理智能三个方向，已初步形成规模合作意向"
+        ],
+        "risks": [
+          "首代芯片尚未流片，架构设计与性能优势仍待FPGA原型验证和流片结果检验",
+          "来源仅称已初步形成规模合作意向，未披露具体客户合同、订单或收入",
+          "芯片研发从立项到量产至少需要20个月，研发与量产周期存在不确定性",
+          "对标英伟达Thor与B300系列的性价比定位尚无实测数据支撑"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "use_case_ids": [
+          "physical_automation",
+          "data_analysis"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "原生AGI架构推理芯片研发",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：在推理需求占比提升的预期下，通芯智能能否以面向AGI认知架构的原生芯片设计，在云端与端侧推理场景做出可量产的性价比优势。当前融资所依赖的已验证信号主要是团队履历（核心团队平均芯片从业经验超过20年、完整走过架构定义到量产交付全链路）与研发进度（成立三个月完成架构设计和立项、已进入芯片设计阶段、计划12月初开展FPGA原型验证），而非流片或量产结果。证据边界在于：首代芯片尚未流片，商业化仅为初步规模合作意向，来源未披露任何客户合同、收入或性能实测数据。",
+          "evidence_signals": [
+            "成立三个月即完成架构设计和立项，已进入芯片设计阶段",
+            "计划于2026年12月初开展FPGA原型验证",
+            "创始核心团队平均芯片从业经验超过20年，骨干来自海光、百度、字节、阿里等团队",
+            "商业化布局覆盖云端推理、通用智能体和端侧物理智能三个方向，已初步形成规模合作意向"
+          ],
+          "risks": [
+            "首代芯片尚未流片，架构设计与性能优势仍待FPGA原型验证和流片结果检验",
+            "来源仅称已初步形成规模合作意向，未披露具体客户合同、订单或收入",
+            "芯片研发从立项到量产至少需要20个月，研发与量产周期存在不确定性",
+            "对标英伟达Thor与B300系列的性价比定位尚无实测数据支撑"
+          ],
+          "institutional_rationale_status": "disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "原生AGI架构推理芯片",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "朱松纯",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "王海洋",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "史峰",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "清华校友种子基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "北京通用人工智能研究院",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "松霖科技",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "平治信息",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "暗物智能",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "豫资涨泉",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "普超资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "青创伯乐",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "英伟达Thor系列",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "英伟达B300系列",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-873fbd8a72c75fab",
+          "date": "2026-11-13",
+          "title": "36氪首发丨海光创始核心技术团队创业AGI架构芯片，获清华系等基金数亿投资-36氪",
+          "amount": "数亿元",
+          "source_refs": [
+            "SA-c99b656124250581"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-c83e93672458afd1",
+          "source_url": "https://www.36kr.com/p/4066136377873286",
+          "title": "36氪首发丨海光创始核心技术团队创业AGI架构芯片，获清华系等基金数亿投资-36氪",
+          "publisher": "www.36kr.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-13T00:19:48.268Z",
+          "content_hash": "541e5d9e1f93112c528c64361e2ca4d077871be340f0971b8f4a2d90dca5aff6",
+          "source_artifact_id": "SA-c99b656124250581",
+          "raw_id": "RAW-e53ff6c5530266e9",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-f940c9c397ad0707",
+          "source_url": "http://jjckb.xinhuanet.com/20261112/5812f92afc2e4b50b0a8fcdcb0f41590/c.html",
+          "title": "通芯智能完成数亿元融资 研发原生AGI架构芯片-经济参考网 _ 新华社《经济参考报》官方网站",
+          "publisher": "jjckb.xinhuanet.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-13T00:53:54.362Z",
+          "content_hash": "c5080dddafd82ffa",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-f6b44fde81b7873b",
+          "source_url": "https://www.bjnews.com.cn/detail/1794473938129841.html",
+          "title": "通芯智能完成数亿元融资，公司发起人为朱松纯",
+          "publisher": "bjnews.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-13T00:53:57.999Z",
+          "content_hash": "695512b2753cf4a5",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-21642e831473f743",
+          "source_url": "https://news.bjd.com.cn/2026/11/12/12027743.shtml",
+          "title": "通芯智能完成数亿元融资，将自研原生AGI架构芯片",
+          "publisher": "news.bjd.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-13T00:54:00.253Z",
+          "content_hash": "b3a8bcbc9e96eb5f",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-13T00:54:18.681Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-13T00:54:18.681Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "原生AGI架构推理芯片"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "史峰",
+            "朱松纯",
+            "王海洋"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-873fbd8a72c75fab"
+      ],
+      "aggregation": {
+        "key": "EN-5d97abdbb6bc542c|multi_round|CNY:range::200000000:900000000:|2026-11-12",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-b996750fe1d9fff8",
+          "event_ids": [
+            "EV-873fbd8a72c75fab"
+          ],
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-11-12",
+          "disclosure_status": "disclosed",
+          "is_summary": true,
+          "counts_toward_known_total": false,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "chip_accelerator",
+        "name": "芯片与加速器",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "hardware_computing",
+        "name": "硬件与算力",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "chips",
+        "name": "芯片",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-873fbd8a72c75fab",
+        "direction": ""
+      },
+      "translations": {
+        "zh-CN": {
+          "products[0].features[0]": {
+            "text": "Vector+Tensor+AGI Core三单元架构",
+            "source_hash": "d1d690735e60ca40409fa47c465d5fa2679deb7e469d0eaa3826e701859ebc58",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-13T04:39:04.641Z",
+            "status": "translated"
+          },
+          "products[0].features[3]": {
+            "text": "支持CNN、Transformer等主流模型",
+            "source_hash": "3b07e51ff280ac814e47cc1f1c671a87a366dc5239b7b85790c70526fd6fb460",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-13T04:39:04.641Z",
+            "status": "translated"
+          }
+        }
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-fa01bf1d0308a943",
+      "triggered_by_event_id": "EV-5f1dc5e6af486dfe",
+      "as_of_date": "2026-11-13",
+      "company": {
+        "entity_id": "EN-90cc54eafe13a36b",
+        "name": "Tristar AI",
+        "full_name": "Tristar AI",
+        "website": "https://www.tristar.ai/",
+        "summary": "Tristar AI 为制造商提供基于 AI 计算机视觉的实时质检与产线运营智能平台，在材料流经产线时识别缺陷并向操作员即时反馈。",
+        "headquarters": "美国马萨诸塞州剑桥市",
+        "founders": [
+          {
+            "name": "Salem Karani",
+            "role": "CEO兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e57818eaf8972a7",
+                "quote": "said Salem Karani, CEO and co-founder of Tristar AI",
+                "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+                "quote_hash": "89a336a1a7896025f7387f980d3b02bfaa322cf1512abf2ada8b858e44757b56"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "34",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-578c037908772b7c",
+              "quote": "Employees\n34",
+              "source_content_hash": "1b176fd0a59060d9",
+              "quote_hash": "91d5cf15cb2074af893bb64f7420cc69d084ccf80f3d96fae1b31b8f32e4f28d"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2e57818eaf8972a7",
+            "quote": "Tristar AI, the real-time intelligence layer for the factory floor",
+            "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+            "quote_hash": "fef74f7148c69d3f8d6c49341209f258122917426cd971f7a8481db0b471c564"
+          },
+          {
+            "source_id": "FISRC-54f750fa6867cd9e",
+            "quote": "Tristar uses AI-powered computer vision to detect quality issues in real time",
+            "source_content_hash": "651ab860801f382a",
+            "quote_hash": "00fa946b4b25e94764cf5a201b69416d8eb1641668f952ab779465244e33e100"
+          }
+        ],
+        "application_entity_id": "EN-90cc54eafe13a36b",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "$12.4 million",
+        "total_raised": "",
+        "announced_at": "2026-11-12",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Isogon Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e57818eaf8972a7",
+                "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+                "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+                "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-63258113e04663"
+          },
+          {
+            "name": "Blackhorn Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e57818eaf8972a7",
+                "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+                "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+                "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-63a23ec8ceeda3"
+          },
+          {
+            "name": "Ford Street Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e57818eaf8972a7",
+                "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+                "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+                "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-56693337c7343c"
+          },
+          {
+            "name": "ISAI Cap Venture",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e57818eaf8972a7",
+                "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+                "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+                "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b7683f1acbf4fb"
+          },
+          {
+            "name": "Capgemini's VC Fund managed by ISAI",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e57818eaf8972a7",
+                "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+                "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+                "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-ec40696020e3bd"
+          },
+          {
+            "name": "Las Olas VC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e57818eaf8972a7",
+                "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+                "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+                "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-981261ef407928"
+          },
+          {
+            "name": "NextView Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e57818eaf8972a7",
+                "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+                "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+                "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-cf3d8988e57965"
+          },
+          {
+            "name": "Seraph Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e57818eaf8972a7",
+                "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+                "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+                "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-03958576d9e059"
+          },
+          {
+            "name": "SNR Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e57818eaf8972a7",
+                "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+                "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+                "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-3a2110ba6e3a99"
+          },
+          {
+            "name": "TenOneTen",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e57818eaf8972a7",
+                "quote": "The round was led by Isogon Ventures, with participation from Blackhorn Ventures, Ford Street Ventures, ISAI Cap Venture, Capgemini's VC Fund managed by ISAI, Las Olas VC, NextView Ventures, Seraph Partners, SNR Ventures and TenOneTen.",
+                "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+                "quote_hash": "4d00721ae60f5e20032408163283d270c3c4646751d8f7a43c6cf8f7b93f2621"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-7aa785057f9bb3"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2e57818eaf8972a7",
+            "quote": "CAMBRIDGE, Mass., Nov. 12, 2026 /PRNewswire/ -- Tristar AI, the real-time intelligence layer for the factory floor, today announced $12.4 million in Series A funding.",
+            "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+            "quote_hash": "f203b78f83e0ec525559fcf1e5303193e76c92314cd4900c02fbf8181d716073"
+          },
+          {
+            "source_id": "FISRC-2e57818eaf8972a7",
+            "quote": "today announced $12.4 million in Series A funding",
+            "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+            "quote_hash": "c5a4d42a36ca188aefc44646144e4bb9e66f283e2e0061cfa6115f80f07bd8df"
+          },
+          {
+            "source_id": "FISRC-3bc716f99618aae9",
+            "quote": "Tristar AI raises $12.4 million in Series A funding led by Isogon Ventures",
+            "source_content_hash": "0b155e3de1657b65",
+            "quote_hash": "5867c91c46df0d4fed4034da397177650906de48e2bb190528f5dbc9a5178ff5"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$12.4 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12400000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1240 万美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-5f1dc5e6af486dfe",
+            "round_original": "A轮",
+            "amount": "$12.4 million",
+            "announced_at": "2026-11-12",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e57818eaf8972a7",
+                "quote": "CAMBRIDGE, Mass., Nov. 12, 2026 /PRNewswire/ -- Tristar AI, the real-time intelligence layer for the factory floor, today announced $12.4 million in Series A funding.",
+                "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+                "quote_hash": "f203b78f83e0ec525559fcf1e5303193e76c92314cd4900c02fbf8181d716073"
+              },
+              {
+                "source_id": "FISRC-2e57818eaf8972a7",
+                "quote": "today announced $12.4 million in Series A funding",
+                "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+                "quote_hash": "c5a4d42a36ca188aefc44646144e4bb9e66f283e2e0061cfa6115f80f07bd8df"
+              },
+              {
+                "source_id": "FISRC-3bc716f99618aae9",
+                "quote": "Tristar AI raises $12.4 million in Series A funding led by Isogon Ventures",
+                "source_content_hash": "0b155e3de1657b65",
+                "quote_hash": "5867c91c46df0d4fed4034da397177650906de48e2bb190528f5dbc9a5178ff5"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 12400000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "1240 万美元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-2e57818eaf8972a7",
+          "FISRC-3bc716f99618aae9"
+        ]
+      },
+      "products": [
+        {
+          "name": "AI Advanced Quality Monitoring System",
+          "description": "基于 AI 计算机视觉的实时质检平台，在材料流经产线时识别缺陷，向操作员即时反馈，并向主管和厂级管理者提供跨产线、跨工厂的趋势与 ROI 视图。",
+          "target_customers": "汽车、塑料薄膜、注塑和包装等制造商的产线与质量团队",
+          "features": [
+            "AI 视觉实时缺陷检测",
+            "跨产品、缺陷类型和生产条件自适应",
+            "整合机器性能、产品质量与操作员活动",
+            "与现有摄像头、PLC、传感器、MES、ERP 和维护系统集成"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2e57818eaf8972a7",
+              "quote": "Tristar uses AI-powered visual inspection to identify defects as materials move through manufacturing lines.",
+              "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+              "quote_hash": "bf0131e9a78c0b78b160e23bafefb513f52d2e4e21117dc7580657835ccb593b"
+            },
+            {
+              "source_id": "FISRC-2e57818eaf8972a7",
+              "quote": "The platform integrates with the cameras, PLCs, sensors, MES, ERP and maintenance systems manufacturers already use, so there's no need to replace existing technology.",
+              "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+              "quote_hash": "7a40de0317d53ba36bbad044e1b4c2719528f207fa9cf1fe87c108f449b91da5"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Inline inspection systems and automated inspection stations",
+          "description": "直接部署在工厂产线上的在线检测系统，以及围绕客户产品、工艺和生产要求构建的完整自动化检测站。",
+          "target_customers": "需要产线在线质检与定制检测站的制造商",
+          "features": [
+            "产线在线部署",
+            "按产品与工艺定制检测站"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-54f750fa6867cd9e",
+              "quote": "We deploy inline inspection systems and build complete automated inspection stations designed around your products, processes, and production requirements.",
+              "source_content_hash": "651ab860801f382a",
+              "quote_hash": "cf3ffdb5585ee04d314c2e0188f7d7b2667844df0cca6ad18c11f53022695179"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Amcor",
+          "industry": "包装",
+          "use_case": "产线实时缺陷检测",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2e57818eaf8972a7",
+              "quote": "major manufacturers including Amcor, Consolidated Industries, Klöckner Pentaplast and DuPont",
+              "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+              "quote_hash": "3f058183df84d0dbc50feaaa01910d1ad5edd3b3af87c7dd76e885a2a0a9a6a4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Consolidated Industries",
+          "industry": "",
+          "use_case": "产线实时缺陷检测",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2e57818eaf8972a7",
+              "quote": "major manufacturers including Amcor, Consolidated Industries, Klöckner Pentaplast and DuPont",
+              "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+              "quote_hash": "3f058183df84d0dbc50feaaa01910d1ad5edd3b3af87c7dd76e885a2a0a9a6a4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Klöckner Pentaplast",
+          "industry": "塑料薄膜",
+          "use_case": "产线实时缺陷检测",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2e57818eaf8972a7",
+              "quote": "major manufacturers including Amcor, Consolidated Industries, Klöckner Pentaplast and DuPont",
+              "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+              "quote_hash": "3f058183df84d0dbc50feaaa01910d1ad5edd3b3af87c7dd76e885a2a0a9a6a4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "DuPont",
+          "industry": "",
+          "use_case": "产线实时缺陷检测",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2e57818eaf8972a7",
+              "quote": "major manufacturers including Amcor, Consolidated Industries, Klöckner Pentaplast and DuPont",
+              "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+              "quote_hash": "3f058183df84d0dbc50feaaa01910d1ad5edd3b3af87c7dd76e885a2a0a9a6a4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Aisin",
+          "industry": "汽车零部件",
+          "use_case": "高速高精度冲压传动部件检测",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-54f750fa6867cd9e",
+              "quote": "Tristar's solution was key in producing repeatable high-speed, high-precision stamped transmission components for the first time.",
+              "source_content_hash": "651ab860801f382a",
+              "quote_hash": "78e8d63252444ce4b2578744ada835fe0723cc5155d332fe04c4ded95abf21ac"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$12.4 million",
+          "observed_at": "2026-11-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2e57818eaf8972a7",
+              "quote": "today announced $12.4 million in Series A funding",
+              "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+              "quote_hash": "c5a4d42a36ca188aefc44646144e4bb9e66f283e2e0061cfa6115f80f07bd8df"
+            }
+          ]
+        },
+        {
+          "label": "覆盖产线数",
+          "value": "more than 500 production lines",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2e57818eaf8972a7",
+              "quote": "across more than 500 production lines in North America and Europe",
+              "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+              "quote_hash": "f4aadaab8218cb6704336fa44db8099fb4ad8f8ba0bf1c0c31b306b2b4fac7ca"
+            }
+          ]
+        },
+        {
+          "label": "缺陷检测准确率",
+          "value": "95–99%",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2e57818eaf8972a7",
+              "quote": "Live deployments report 95–99% defect-detection accuracy",
+              "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+              "quote_hash": "890283e5826dcffe1c8aa8a0427ca65c42e31c7853b20d6b0af1d92b05831cce"
+            }
+          ]
+        },
+        {
+          "label": "平台回本周期",
+          "value": "about four months",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2e57818eaf8972a7",
+              "quote": "the platform typically pays for itself in about four months",
+              "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+              "quote_hash": "b54b35fb9b34b9fda074cfe6fd47ee2c113200407b696a47a65ba9a9785e5dae"
+            }
+          ]
+        },
+        {
+          "label": "过去一年增长",
+          "value": "more than fourfold",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2e57818eaf8972a7",
+              "quote": "Tristar expanding more than fourfold over the past year",
+              "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+              "quote_hash": "13e1651e744968731c64ad11a3359856c335412954d249d40123065ac711ecc0"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Salem Karani",
+          "quote": "The problem was never that people didn't care about quality. It's that people catch problems after the fact, once they've already cost time, materials and customers.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2e57818eaf8972a7",
+              "quote": "The problem was never that people didn't care about quality. It's that people catch problems after the fact, once they've already cost time, materials and customers.",
+              "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+              "quote_hash": "7698d8a6f425ee82d5e2ccf5ba17f4e339cafb89a8a79790a42203075b503b99"
+            }
+          ]
+        },
+        {
+          "speaker": "Paco Riberas",
+          "quote": "its AI vision catches defects in real time, directly on existing lines.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2e57818eaf8972a7",
+              "quote": "its AI vision catches defects in real time, directly on existing lines.",
+              "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+              "quote_hash": "ccff6ce9010ea84f876e6631c1dc663d27be7ab70df3c124c33506db4fe85016"
+            }
+          ]
+        },
+        {
+          "speaker": "Matthieu Eyriès",
+          "quote": "Tristar combines advanced AI capabilities with a strong understanding of industrial environments, addressing concrete manufacturing challenges with measurable impact.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2e57818eaf8972a7",
+              "quote": "Tristar combines advanced AI capabilities with a strong understanding of industrial environments, addressing concrete manufacturing challenges with measurable impact.",
+              "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+              "quote_hash": "a1cd6485d9448dc45ea02b262d067f7ef418be5fb68f785efbe469903abe06ce"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Isogon Ventures",
+            "speaker": "Paco Riberas",
+            "speaker_role": "General Partner of Isogon Ventures",
+            "rationale": "认为制造商因缺陷和延误出货而损失资金，Tristar 的 AI 视觉能在现有产线上实时检出缺陷，并相信团队在建立现代制造的质量标准。",
+            "quote": "We've seen too many manufacturers lose money to defects, or delay a shipment that ends up stopping a customer's plant",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e57818eaf8972a7",
+                "quote": "We've seen too many manufacturers lose money to defects, or delay a shipment that ends up stopping a customer's plant",
+                "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+                "quote_hash": "93c820c39b3a89a38e38ca1da282f85f0a6fd6d9f0529ea0de38cce62069909f"
+              }
+            ]
+          },
+          {
+            "institution": "Capgemini's VC Fund managed by ISAI",
+            "speaker": "Matthieu Eyriès",
+            "speaker_role": "Managing Director, Capgemini Ventures",
+            "rationale": "相信物理 AI 将在制造业未来发挥关键作用，Tristar 将先进 AI 能力与对工业环境的理解结合，解决具体制造问题并有可衡量影响。",
+            "quote": "This investment reflects our strong conviction that physical AI will play a critical role in the future of manufacturing",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2e57818eaf8972a7",
+                "quote": "This investment reflects our strong conviction that physical AI will play a critical role in the future of manufacturing",
+                "source_content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+                "quote_hash": "2b8695c6037918a03b2978fa2068470e9ab7f56acd9c848efc105b5cefebe5e7"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是 AI 视觉质检能否在既有产线上规模化复制并带来可量化的材料与质量收益。已验证信号包括：平台已覆盖北美和欧洲 500 多条产线，客户从单线扩展到整厂和多地点，现场部署报告 95–99% 缺陷检测准确率，平台通常约四个月回本，过去一年增长超过四倍。判断边界：累计融资额在来源间存在冲突（$13.0M、$17.4M、$18.85M），本轮金额仅以官方新闻稿的 $12.4M 为准；回本周期与准确率为公司披露，未经独立审计。",
+        "validated_signals": [
+          "平台已覆盖北美和欧洲 500 多条产线",
+          "客户从单线扩展到整厂并跨地点部署",
+          "现场部署报告 95–99% 缺陷检测准确率",
+          "过去一年增长超过四倍"
+        ],
+        "risks": [
+          "累计融资额在第三方来源间不一致，历史融资口径待核实",
+          "95–99% 检测准确率与约四个月回本周期为公司自述，缺少独立验证",
+          "制造业客户的多工厂推广节奏与续约情况未披露，规模化收入仍待验证"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "industrials",
+        "market_application_id": "",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "manufacturing",
+          "automotive_transportation"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "制造业 AI 视觉质检与产线运营智能平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 AI 视觉质检能否在既有产线上规模化复制并带来可量化的材料与质量收益。已验证信号包括：平台已覆盖北美和欧洲 500 多条产线，客户从单线扩展到整厂和多地点，现场部署报告 95–99% 缺陷检测准确率，平台通常约四个月回本，过去一年增长超过四倍。判断边界：累计融资额在来源间存在冲突（$13.0M、$17.4M、$18.85M），本轮金额仅以官方新闻稿的 $12.4M 为准；回本周期与准确率为公司披露，未经独立审计。",
+          "evidence_signals": [
+            "平台已覆盖北美和欧洲 500 多条产线",
+            "客户从单线扩展到整厂并跨地点部署",
+            "现场部署报告 95–99% 缺陷检测准确率",
+            "过去一年增长超过四倍"
+          ],
+          "risks": [
+            "累计融资额在第三方来源间不一致，历史融资口径待核实",
+            "95–99% 检测准确率与约四个月回本周期为公司自述，缺少独立验证",
+            "制造业客户的多工厂推广节奏与续约情况未披露，规模化收入仍待验证"
+          ],
+          "institutional_rationale_status": "disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI Advanced Quality Monitoring System",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Inline inspection systems and automated inspection stations",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Salem Karani",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Isogon Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Blackhorn Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Ford Street Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "ISAI Cap Venture",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Capgemini's VC Fund managed by ISAI",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Las Olas VC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "NextView Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Seraph Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "SNR Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "TenOneTen",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Amcor",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Consolidated Industries",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Klöckner Pentaplast",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "DuPont",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Aisin",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-5f1dc5e6af486dfe",
+          "date": "2026-11-12",
+          "title": "Tristar AI 完成 1240 万美元 A 轮融资，为制造商提供永不眨眼的质检员",
+          "amount": "$12.4 million",
+          "source_refs": [
+            "SA-bf2159a48adbd6e5"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-2e57818eaf8972a7",
+          "source_url": "https://www.prnewswire.com/news-releases/tristar-ai-raises-12-4m-series-a-to-give-manufacturers-a-quality-inspector-that-never-blinks-302937353.html",
+          "title": "Tristar AI 完成 1240 万美元 A 轮融资，为制造商提供永不眨眼的质检员",
+          "publisher": "www.prnewswire.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-13T00:19:34.053Z",
+          "content_hash": "ba462832b3a8ae13c6ce313f488431b2973b62987099a80573a4ef803e090a7c",
+          "source_artifact_id": "SA-bf2159a48adbd6e5",
+          "raw_id": "RAW-300d7602101863e0",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-3bc716f99618aae9",
+          "source_url": "https://app.fundz.net/fundings/tristar-ai-funding-round-series-a-0dbc32",
+          "title": "Tristar AI raises $12.4 million in Series A funding led by Isogon Ventures to enhance its AI vision platform f",
+          "publisher": "app.fundz.net",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-13T00:53:31.900Z",
+          "content_hash": "0b155e3de1657b65",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-578c037908772b7c",
+          "source_url": "https://www.inven.ai/data/companies/tristar-ai",
+          "title": "Tristar AI — company profile",
+          "publisher": "inven.ai",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-13T00:53:35.747Z",
+          "content_hash": "1b176fd0a59060d9",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-54f750fa6867cd9e",
+          "source_url": "https://www.tristar.ai/",
+          "title": "Tristar AI | Catch defects before they cost you.",
+          "publisher": "tristar.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-13T00:53:37.196Z",
+          "content_hash": "651ab860801f382a",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-13T00:53:49.586Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-13T00:53:49.586Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "AI Advanced Quality Monitoring System",
+            "Inline inspection systems and automated inspection stations"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Salem Karani"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-5f1dc5e6af486dfe"
+      ],
+      "aggregation": {
+        "key": "EN-90cc54eafe13a36b|series_a|USD:exact:12400000:::|2026-11-12",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-fa01bf1d0308a943",
+          "event_ids": [
+            "EV-5f1dc5e6af486dfe"
+          ],
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "$12.4 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 12400000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1240 万美元"
+          },
+          "announced_at": "2026-11-12",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "enterprise_software_platform",
+        "name": "企业软件平台",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "industry_applications",
+        "name": "行业应用",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "industrials",
+        "name": "工业",
+        "method": "card_explicit"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-5f1dc5e6af486dfe",
+        "direction": ""
+      },
+      "translations": {
+        "zh-CN": {
+          "company.headquarters": {
+            "text": "美国马萨诸塞州剑桥市",
+            "source_hash": "6c2dd509616591371cfcaeffd97fe741995d875b504323f7312d18c9d3013719",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-13T04:39:04.641Z",
+            "status": "translated"
+          },
+          "company.founders[0].role": {
+            "text": "CEO兼联合创始人",
+            "source_hash": "643450adfb2f70504069225a5f37f34f82d5c523becfb2062bf4d3ad0b5b91ff",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-14T07:17:24.870Z",
+            "status": "translated"
+          }
+        }
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-7bc26c50c6fd9bc3",
+      "triggered_by_event_id": "EV-5bf5873e79f6a3c8",
+      "as_of_date": "2026-11-13",
+      "company": {
+        "entity_id": "EN-8285065e2176cc74",
+        "name": "阜时科技",
+        "full_name": "阜时科技有限公司",
+        "website": "",
+        "summary": "阜时科技致力于激光雷达核心芯片及多种机器视觉解决方案研发，是行业首家发布及量产面阵SPAD激光雷达接收芯片及解决方案的公司。",
+        "headquarters": "深圳",
+        "founders": [
+          {
+            "name": "莫良华",
+            "role": "法定代表人、核心创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-312e71a0a1bcc428",
+                "quote": "核心创始人：莫良华，法定代表人，深圳市地方级领军人才",
+                "source_content_hash": "06d493f53678103a",
+                "quote_hash": "5414195cd3cdc596b0c7bd0539e320d9fcf30783f4e9482dc3fbdf1ffe83f457"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "小于50人",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-312e71a0a1bcc428",
+              "quote": "公司人数小于50人",
+              "source_content_hash": "06d493f53678103a",
+              "quote_hash": "9ff953eeb9d32b57d9cc98b3077aa31d1eeb1017caa6cbc31dbd3ed0d4682439"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5c9f6bb8f512b556",
+            "quote": "阜时科技有限公司（下称“阜时科技”）致力于激光雷达核心芯片及多种机器视觉解决方案研发，行业首家发布及量产面阵SPAD激光雷达接收芯片及解决方案。",
+            "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+            "quote_hash": "f2b1e9c6fa6139d2ee7ef71684b116fd2f899c88cd58d55b35c00920d47f43b5"
+          },
+          {
+            "source_id": "FISRC-312e71a0a1bcc428",
+            "quote": "阜时科技总部位于中国深圳，集成电路设计企业，国家高新技术企业",
+            "source_content_hash": "06d493f53678103a",
+            "quote_hash": "52efee7889af29655d86cbbff6c76e7f038178683f1290bcc6c6e38a50efd096"
+          }
+        ],
+        "application_entity_id": "EN-8285065e2176cc74",
+        "canonical_entity_consistent": true
+      },
+      "financing": {
+        "round": "C4轮",
+        "amount": "超4亿元",
+        "total_raised": "",
+        "announced_at": "2026-11-12",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "信通电子",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c9f6bb8f512b556",
+                "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+                "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+                "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-d5cd54fff0feba"
+          },
+          {
+            "name": "精测电子",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c9f6bb8f512b556",
+                "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+                "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+                "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-84af6de1ec34f9"
+          },
+          {
+            "name": "华睿投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c9f6bb8f512b556",
+                "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+                "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+                "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-6c33bfacdc7f7a"
+          },
+          {
+            "name": "汇宁投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c9f6bb8f512b556",
+                "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+                "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+                "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-f5762e4fec96e2"
+          },
+          {
+            "name": "兴银资产",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c9f6bb8f512b556",
+                "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+                "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+                "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-30f8b724251860"
+          },
+          {
+            "name": "青稞资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c9f6bb8f512b556",
+                "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+                "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+                "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-7ed9b0462b0a60"
+          },
+          {
+            "name": "中欧新能源汽车基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c9f6bb8f512b556",
+                "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+                "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+                "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-e0191d33c6c67d"
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "兴银投资",
+            "role": "E轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-312e71a0a1bcc428",
+                "quote": "E轮：2026-09-30，金额未披露，投资方为兴银投资、青稞资本、华睿投资、精测电子、东城集团。",
+                "source_content_hash": "06d493f53678103a",
+                "quote_hash": "b16c0724b677b6b218caa58a43f7a36dead37e958084eac8edebb3104af9207e"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-13d565a737d438"
+          },
+          {
+            "name": "东城集团",
+            "role": "E轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-312e71a0a1bcc428",
+                "quote": "E轮：2026-09-30，金额未披露，投资方为兴银投资、青稞资本、华睿投资、精测电子、东城集团。",
+                "source_content_hash": "06d493f53678103a",
+                "quote_hash": "b16c0724b677b6b218caa58a43f7a36dead37e958084eac8edebb3104af9207e"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-9db8f9c6657264"
+          },
+          {
+            "name": "谷雨嘉禾",
+            "role": "D++轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-312e71a0a1bcc428",
+                "quote": "D++轮：2026-01-05，超2亿元人民币，投资方为谷雨嘉禾、福田引导基金、金鼎资本",
+                "source_content_hash": "06d493f53678103a",
+                "quote_hash": "5255ecc7330b8672256a402c703d0007f19fdba6db1d5bc4acbaf9f1af76a2a1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-acefc0f7da1bd9"
+          },
+          {
+            "name": "福田引导基金",
+            "role": "D++轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-312e71a0a1bcc428",
+                "quote": "D++轮：2026-01-05，超2亿元人民币，投资方为谷雨嘉禾、福田引导基金、金鼎资本",
+                "source_content_hash": "06d493f53678103a",
+                "quote_hash": "5255ecc7330b8672256a402c703d0007f19fdba6db1d5bc4acbaf9f1af76a2a1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-e79554017c1456"
+          },
+          {
+            "name": "金鼎资本",
+            "role": "D++轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-312e71a0a1bcc428",
+                "quote": "D++轮：2026-01-05，超2亿元人民币，投资方为谷雨嘉禾、福田引导基金、金鼎资本",
+                "source_content_hash": "06d493f53678103a",
+                "quote_hash": "5255ecc7330b8672256a402c703d0007f19fdba6db1d5bc4acbaf9f1af76a2a1"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-4045e85160650f"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5c9f6bb8f512b556",
+            "quote": "投资界（ID：pedaily2012）11月12日消息，阜时科技近日正式完成超4亿元C4轮融资交割。",
+            "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+            "quote_hash": "67224dbea891334eeab7f2a7bf467604edb6a1090a621248462a92ba3f8b4fdd"
+          },
+          {
+            "source_id": "FISRC-5c9f6bb8f512b556",
+            "quote": "阜时科技近日正式完成超4亿元C4轮融资交割。",
+            "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+            "quote_hash": "6896fc35325ee864e6da97cef9452f3c5177c406e8569ad5640ec7a8a178ec34"
+          },
+          {
+            "source_id": "FISRC-5c9f6bb8f512b556",
+            "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+            "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+            "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
+          }
+        ],
+        "round_code": "series_c4",
+        "round_original": "C4轮",
+        "amount_original": "超4亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 400000000,
+          "min_value": 400000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 4 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-5bf5873e79f6a3c8",
+            "round_original": "C4轮",
+            "amount": "超4亿元",
+            "announced_at": "2026-11-12",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c9f6bb8f512b556",
+                "quote": "投资界（ID：pedaily2012）11月12日消息，阜时科技近日正式完成超4亿元C4轮融资交割。",
+                "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+                "quote_hash": "67224dbea891334eeab7f2a7bf467604edb6a1090a621248462a92ba3f8b4fdd"
+              },
+              {
+                "source_id": "FISRC-5c9f6bb8f512b556",
+                "quote": "阜时科技近日正式完成超4亿元C4轮融资交割。",
+                "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+                "quote_hash": "6896fc35325ee864e6da97cef9452f3c5177c406e8569ad5640ec7a8a178ec34"
+              },
+              {
+                "source_id": "FISRC-5c9f6bb8f512b556",
+                "quote": "本轮投资方包括信通电子（001388.SZ）、精测电子（300567.SZ）、华睿投资、汇宁投资、兴银资产、青稞资本及中欧新能源汽车基金等上市公司、产业资本及专业投资机构。",
+                "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+                "quote_hash": "9a42ab8fdafb1e92b33bcbe2c4bef8c5a83c90412556ddf91b683d1f73db31b8"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "CNY",
+              "value": null,
+              "min_value": 400000000,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "lower_bound",
+              "display_zh": "超过 4 亿元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-5c9f6bb8f512b556"
+        ]
+      },
+      "products": [
+        {
+          "name": "全固态激光雷达SPAD芯片",
+          "description": "基于自主研发的SPAD芯片与全固态光扫描技术，为激光雷达提供接收芯片及解决方案，已实现主流车企车规级前装量产。",
+          "target_customers": "主流车企、激光雷达厂商",
+          "features": [
+            "面阵SPAD激光雷达接收芯片",
+            "全固态光扫描技术",
+            "车规级前装量产"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5c9f6bb8f512b556",
+              "quote": "目前，公司全固态激光雷达SPAD芯片已实现主流车企车规级前装量产，累计出货突破百万颗。",
+              "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+              "quote_hash": "f96f8ee102c1164dffa3d249978694096aaa094c3f49472cef771c20822cb9e0"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "单芯片RGBD技术",
+          "description": "布局单芯片RGBD技术，致力于在单颗芯片上实现彩色图像与深度信息的原生融合，让每个像素同时具备“色彩”与“深度”。",
+          "target_customers": "智能汽车、具身智能及工业智能领域客户",
+          "features": [
+            "彩色图像与深度信息原生融合",
+            "消除多传感器融合误差盲区",
+            "计划于2027年推进产业化"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5c9f6bb8f512b556",
+              "quote": "阜时科技依托自主研发的SPAD（单光子雪崩二极管）芯片与全固态光扫描技术，布局单芯片RGBD技术，致力于在单颗芯片上实现彩色图像与深度信息的原生融合",
+              "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+              "quote_hash": "b9043efdcf317e047c5a97c553b1fb261d191463e040691dbb6e9e441b38e79a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "超4亿元",
+          "observed_at": "2026-11-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5c9f6bb8f512b556",
+              "quote": "阜时科技近日正式完成超4亿元C4轮融资交割。",
+              "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+              "quote_hash": "6896fc35325ee864e6da97cef9452f3c5177c406e8569ad5640ec7a8a178ec34"
+            }
+          ]
+        },
+        {
+          "label": "全固态激光雷达SPAD芯片累计出货量",
+          "value": "突破百万颗",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5c9f6bb8f512b556",
+              "quote": "累计出货突破百万颗",
+              "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+              "quote_hash": "e98213c877b7306c6edcbf7c663bea2d205b0217ba42ebb1a33ecc2c253606d3"
+            }
+          ]
+        },
+        {
+          "label": "累计披露融资金额",
+          "value": "6.40亿元",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-312e71a0a1bcc428",
+              "quote": "累计披露融资金额6.40亿元，融资11次",
+              "source_content_hash": "06d493f53678103a",
+              "quote_hash": "a2ef463ec53602d120932d69a2ecc126423efe1aa9545a04b3cf1c98b6a33448"
+            }
+          ]
+        },
+        {
+          "label": "融资次数",
+          "value": "11次",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-312e71a0a1bcc428",
+              "quote": "累计披露融资金额6.40亿元，融资11次",
+              "source_content_hash": "06d493f53678103a",
+              "quote_hash": "a2ef463ec53602d120932d69a2ecc126423efe1aa9545a04b3cf1c98b6a33448"
+            }
+          ]
+        },
+        {
+          "label": "公司人数",
+          "value": "小于50人",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-312e71a0a1bcc428",
+              "quote": "公司人数小于50人",
+              "source_content_hash": "06d493f53678103a",
+              "quote_hash": "9ff953eeb9d32b57d9cc98b3077aa31d1eeb1017caa6cbc31dbd3ed0d4682439"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "信通电子项目负责人",
+          "quote": "阜时科技在全固态激光雷达SPAD芯片领域已经取得了突出的产业化成果，相关技术在智能感知领域具有广阔的应用前景。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5c9f6bb8f512b556",
+              "quote": "阜时科技在全固态激光雷达SPAD芯片领域已经取得了突出的产业化成果，相关技术在智能感知领域具有广阔的应用前景。",
+              "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+              "quote_hash": "e33c6c50f4fd55ad56179f55e049fc7a4e7dfae5332646b6695dd1368884e517"
+            }
+          ]
+        },
+        {
+          "speaker": "华睿投资项目负责人",
+          "quote": "阜时科技是国内SPAD芯片领域具有代表性的创新企业，经过多年的持续研发投入，已经在核心技术、产品量产和客户应用等方面建立了扎实的竞争优势。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5c9f6bb8f512b556",
+              "quote": "阜时科技是国内SPAD芯片领域具有代表性的创新企业，经过多年的持续研发投入，已经在核心技术、产品量产和客户应用等方面建立了扎实的竞争优势。",
+              "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+              "quote_hash": "be68fe114209925a8325beb2a5c37a51202e34f8f63123795f39fcc2ffbd7447"
+            }
+          ]
+        },
+        {
+          "speaker": "汇宁投资项目负责人",
+          "quote": "阜时科技在SPAD等核心光电技术领域具有领 先的研发实力，车规级产品已实现规模化应用，并持续向新一代空间感知技术延伸。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5c9f6bb8f512b556",
+              "quote": "阜时科技在SPAD等核心光电技术领域具有领 先的研发实力，车规级产品已实现规模化应用，并持续向新一代空间感知技术延伸。",
+              "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+              "quote_hash": "e75bc14e21468be4a87acfe097d0eaf0699fe57316e30c6e70072e632fbb867c"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "信通电子",
+            "speaker": "信通电子项目负责人",
+            "speaker_role": "投资方项目负责人",
+            "rationale": "信通电子看好阜时科技在全固态激光雷达SPAD芯片领域的产业化成果，并计划结合自身在电力、通信及新能源领域的市场与场景优势，推动新一代智能感知技术落地。",
+            "quote": "阜时科技在全固态激光雷达SPAD芯片领域已经取得了突出的产业化成果，相关技术在智能感知领域具有广阔的应用前景。此次战略投资及合作协议的签署，是双方深化产业合作的重要一步。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c9f6bb8f512b556",
+                "quote": "阜时科技在全固态激光雷达SPAD芯片领域已经取得了突出的产业化成果，相关技术在智能感知领域具有广阔的应用前景。此次战略投资及合作协议的签署，是双方深化产业合作的重要一步。",
+                "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+                "quote_hash": "04a3aa83f9b80a956751ff0d534a9441cb1fc1388a1a5f6c0fac37d829be9532"
+              }
+            ]
+          },
+          {
+            "institution": "华睿投资",
+            "speaker": "华睿投资项目负责人",
+            "speaker_role": "投资方项目负责人",
+            "rationale": "华睿投资认为阜时科技在SPAD芯片核心技术、产品量产和客户应用方面已建立竞争优势，并看好其向RGBD单芯片等新一代空间感知技术拓展的能力。",
+            "quote": "阜时科技是国内SPAD芯片领域具有代表性的创新企业，经过多年的持续研发投入，已经在核心技术、产品量产和客户应用等方面建立了扎实的竞争优势。我们尤其看好公司从全固态激光雷达SPAD芯片向RGBD单芯片等新一代空间感知技术持续拓展的能力。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c9f6bb8f512b556",
+                "quote": "阜时科技是国内SPAD芯片领域具有代表性的创新企业，经过多年的持续研发投入，已经在核心技术、产品量产和客户应用等方面建立了扎实的竞争优势。我们尤其看好公司从全固态激光雷达SPAD芯片向RGBD单芯片等新一代空间感知技术持续拓展的能力。",
+                "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+                "quote_hash": "a1ff3338a72705469e25c9803afbd4f521c4c7a5b669771b37967d4798529ce4"
+              }
+            ]
+          },
+          {
+            "institution": "汇宁投资",
+            "speaker": "汇宁投资项目负责人",
+            "speaker_role": "投资方项目负责人",
+            "rationale": "汇宁投资长期看好光电技术前景，认可阜时科技在SPAD等核心光电技术领域的研发实力及车规级产品的规模化应用，并看好其向新一代空间感知技术延伸的潜力。",
+            "quote": "我们长期看好光电技术的发展前景。随着光通信、智能汽车及人工智能等产业持续发展，光电芯片的技术创新和应用空间正在不断拓展。阜时科技在SPAD等核心光电技术领域具有领 先的研发实力，车规级产品已实现规模化应用，并持续向新一代空间感知技术延伸。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c9f6bb8f512b556",
+                "quote": "我们长期看好光电技术的发展前景。随着光通信、智能汽车及人工智能等产业持续发展，光电芯片的技术创新和应用空间正在不断拓展。阜时科技在SPAD等核心光电技术领域具有领 先的研发实力，车规级产品已实现规模化应用，并持续向新一代空间感知技术延伸。",
+                "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+                "quote_hash": "7980b54856da00be8707ef1af22dca49eada66d93f609aac5bf0b994b7e35e49"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "本轮资本押注的核心变量是阜时科技能否将已实现车规级前装量产的全固态激光雷达SPAD芯片的出货优势，延续到单芯片RGBD等新一代空间感知技术上。当前融资所依赖的已验证信号包括：全固态激光雷达SPAD芯片已实现主流车企车规级前装量产、累计出货突破百万颗，以及投资方在公开表态中对其核心技术、产品量产和客户应用的认可。证据边界在于：单芯片RGBD技术计划于2027年推进产业化，尚未形成收入或量产验证；来源未披露本轮估值、营收及盈利数据，资本判断不能外推至未披露的经营实绩。",
+        "validated_signals": [
+          "全固态激光雷达SPAD芯片已实现主流车企车规级前装量产",
+          "全固态激光雷达SPAD芯片累计出货突破百万颗",
+          "公司为行业首家发布及量产面阵SPAD激光雷达接收芯片及解决方案的企业"
+        ],
+        "risks": [
+          "单芯片RGBD技术计划于2027年推进产业化，尚未量产，技术落地与市场接受度仍待验证",
+          "车规级芯片客户验证周期较长，且需要持续投入以推进规模化上车",
+          "来源未披露公司营收、盈利及本轮估值，资本判断缺乏财务数据支撑",
+          "来源未披露具体客户名称及合同金额，客户集中度与订单可见度不明"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "automotive_transportation"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "激光雷达核心芯片及机器视觉解决方案",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是阜时科技能否将已实现车规级前装量产的全固态激光雷达SPAD芯片的出货优势，延续到单芯片RGBD等新一代空间感知技术上。当前融资所依赖的已验证信号包括：全固态激光雷达SPAD芯片已实现主流车企车规级前装量产、累计出货突破百万颗，以及投资方在公开表态中对其核心技术、产品量产和客户应用的认可。证据边界在于：单芯片RGBD技术计划于2027年推进产业化，尚未形成收入或量产验证；来源未披露本轮估值、营收及盈利数据，资本判断不能外推至未披露的经营实绩。",
+          "evidence_signals": [
+            "全固态激光雷达SPAD芯片已实现主流车企车规级前装量产",
+            "全固态激光雷达SPAD芯片累计出货突破百万颗",
+            "公司为行业首家发布及量产面阵SPAD激光雷达接收芯片及解决方案的企业"
+          ],
+          "risks": [
+            "单芯片RGBD技术计划于2027年推进产业化，尚未量产，技术落地与市场接受度仍待验证",
+            "车规级芯片客户验证周期较长，且需要持续投入以推进规模化上车",
+            "来源未披露公司营收、盈利及本轮估值，资本判断缺乏财务数据支撑",
+            "来源未披露具体客户名称及合同金额，客户集中度与订单可见度不明"
+          ],
+          "institutional_rationale_status": "disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "全固态激光雷达SPAD芯片",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "单芯片RGBD技术",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "莫良华",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "信通电子",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "精测电子",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "华睿投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "汇宁投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "兴银资产",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "青稞资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中欧新能源汽车基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "兴银投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "东城集团",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "谷雨嘉禾",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "福田引导基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "金鼎资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-5bf5873e79f6a3c8",
+          "date": "2026-11-12",
+          "title": "阜时科技完成超4亿元C4轮融资，加速物理AI空间感知芯片布局",
+          "amount": "超4亿元",
+          "source_refs": [
+            "SA-370d52b47f63bf93"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-5c9f6bb8f512b556",
+          "source_url": "https://news.pedaily.cn/202611/571736.shtml",
+          "title": "阜时科技完成超4亿元C4轮融资，加速物理AI空间感知芯片布局",
+          "publisher": "news.pedaily.cn",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-13T00:18:32.728Z",
+          "content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+          "source_artifact_id": "SA-370d52b47f63bf93",
+          "raw_id": "RAW-c9cdec7ee9a15f9f",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-312e71a0a1bcc428",
+          "source_url": "https://vc.pedaily.cn/company/12843.html",
+          "title": "「 阜时科技」智能传感器处理器芯片研发商_投资界",
+          "publisher": "vc.pedaily.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-13T00:53:03.009Z",
+          "content_hash": "06d493f53678103a",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "historical_round"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-13T00:53:28.800Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-13T00:53:28.800Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "全固态激光雷达SPAD芯片",
+            "单芯片RGBD技术"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "莫良华"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-5bf5873e79f6a3c8"
+      ],
+      "aggregation": {
+        "key": "EN-8285065e2176cc74|series_c4|CNY:lower_bound:400000000:400000000::|2026-11-12",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-7bc26c50c6fd9bc3",
+          "event_ids": [
+            "EV-5bf5873e79f6a3c8"
+          ],
+          "round": "C4轮",
+          "round_code": "series_c4",
+          "round_original": "C4轮",
+          "amount_original": "超4亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 400000000,
+            "min_value": 400000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 4 亿元"
+          },
+          "announced_at": "2026-11-12",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        }
+      ],
+      "market_scope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "funding_company_evidence:china_legal_entity:阜时科技有限公司"
+        ],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "chip_accelerator",
+        "name": "芯片与加速器",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "infrastructure_compute",
+        "name": "基础设施与算力",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "hardware_computing",
+        "name": "硬件与算力",
+        "method": "card_explicit"
+      },
+      "market_application": {
+        "dimension": "ai_market_application",
+        "id": "chips",
+        "name": "芯片",
+        "method": "card_explicit"
+      },
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-5bf5873e79f6a3c8",
+        "direction": ""
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-9409bc662eb189c0",
+      "triggered_by_event_id": "EV-85108d804ef3b160",
+      "as_of_date": "2026-11-13",
+      "company": {
+        "entity_id": "EN-f388a6cbaebeec5f",
+        "name": "飞拓星驰",
+        "full_name": "深圳市飞拓星驰科技有限公司",
+        "website": "",
+        "summary": "飞拓星驰是一家AI互动娱乐公司，围绕AI游戏引擎、AI端侧模型和家庭娱乐硬件同步布局，希望打造能理解玩家、支持内容创作和多人互动的下一代家庭AI娱乐入口。",
+        "headquarters": "深圳市",
+        "founders": [
+          {
+            "name": "Jeremy",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d972a22e56f20646",
+                "quote": "更打动我们的是创始人Jeremy对这个行业的热爱以及团队对用户体验的坚持",
+                "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+                "quote_hash": "c3c94a524d211a2335b0df6029b28233186f90e71963a5af55a75e3a486a2c56"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d972a22e56f20646",
+            "quote": "深圳市飞拓星驰科技有限公司（下称“飞拓星驰”）是一家AI互动娱乐公司，围绕AI游戏引擎、AI端侧模型和家庭娱乐硬件同步布局",
+            "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+            "quote_hash": "5b27c8bc56b4c899e26709e2083d2fe32cebcf1b8598b540cbedd93fd57b39f2"
+          },
+          {
+            "source_id": "FISRC-eacc5c04a38650b6",
+            "quote": "飞拓星驰定位AI互动娱乐，主张软硬件一体",
+            "source_content_hash": "aeaf72fc54e1e954",
+            "quote_hash": "db0ece8349009163f10d76c8cffd77117e6d69dda339ee29fa98f828e3eb3ae0"
+          }
+        ],
+        "application_entity_id": "EN-f388a6cbaebeec5f",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "天使轮",
+        "amount": "数千万美元",
+        "total_raised": "",
+        "announced_at": "2026-11-12",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "元生资本",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d972a22e56f20646",
+                "quote": "本轮领投方分别是元生资本、江远投资",
+                "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+                "quote_hash": "52e8d9a9a4d1f0b9c47b7328f16ad92c1d95906fa27dab55d796686cdd8a9d34"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-3e3282aa6edde0"
+          },
+          {
+            "name": "江远投资",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d972a22e56f20646",
+                "quote": "本轮领投方分别是元生资本、江远投资",
+                "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+                "quote_hash": "52e8d9a9a4d1f0b9c47b7328f16ad92c1d95906fa27dab55d796686cdd8a9d34"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-fc4f4c161e1561"
+          },
+          {
+            "name": "日初资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d972a22e56f20646",
+                "quote": "老股东日初资本、锋领资本等机构持续跟投",
+                "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+                "quote_hash": "11ae6790fc96376f40a913d54ea950369ad82e8d322e3b6983f42b029ccebf38"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-88d7f2820a1024"
+          },
+          {
+            "name": "锋领资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d972a22e56f20646",
+                "quote": "老股东日初资本、锋领资本等机构持续跟投",
+                "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+                "quote_hash": "11ae6790fc96376f40a913d54ea950369ad82e8d322e3b6983f42b029ccebf38"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-f4276dc832f139"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d972a22e56f20646",
+            "quote": "投资界（ID：pedaily2012）11月12日消息，飞拓星驰近日完成数千万美元天使轮融资，本轮领投方分别是元生资本、江远投资，老股东日初资本、锋领资本等机构持续跟投。",
+            "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+            "quote_hash": "d57c7bcbdb19a8c6c26b2754909ecd7fcbbf99a043af25da147e056b54a41c40"
+          },
+          {
+            "source_id": "FISRC-d972a22e56f20646",
+            "quote": "飞拓星驰近日完成数千万美元天使轮融资，本轮领投方分别是元生资本、江远投资，老股东日初资本、锋领资本等机构持续跟投",
+            "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+            "quote_hash": "fa7d020a95dd99dca9e06928314d8fcf653b5c7e179a4f2fca0145956440c2a1"
+          },
+          {
+            "source_id": "FISRC-eacc5c04a38650b6",
+            "quote": "飞拓星驰完成数千万美元天使轮融资，元生资本、江远投资领投，日初资本、锋领资本跟投",
+            "source_content_hash": "aeaf72fc54e1e954",
+            "quote_hash": "32a35d204b504c2c28d2ef24f81bb003252790167a09b147a7524d5484dffdba"
+          }
+        ],
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数千万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "数千万美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-85108d804ef3b160",
+            "round_original": "天使轮",
+            "amount": "数千万美元",
+            "announced_at": "2026-11-12",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d972a22e56f20646",
+                "quote": "投资界（ID：pedaily2012）11月12日消息，飞拓星驰近日完成数千万美元天使轮融资，本轮领投方分别是元生资本、江远投资，老股东日初资本、锋领资本等机构持续跟投。",
+                "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+                "quote_hash": "d57c7bcbdb19a8c6c26b2754909ecd7fcbbf99a043af25da147e056b54a41c40"
+              },
+              {
+                "source_id": "FISRC-d972a22e56f20646",
+                "quote": "飞拓星驰近日完成数千万美元天使轮融资，本轮领投方分别是元生资本、江远投资，老股东日初资本、锋领资本等机构持续跟投",
+                "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+                "quote_hash": "fa7d020a95dd99dca9e06928314d8fcf653b5c7e179a4f2fca0145956440c2a1"
+              },
+              {
+                "source_id": "FISRC-eacc5c04a38650b6",
+                "quote": "飞拓星驰完成数千万美元天使轮融资，元生资本、江远投资领投，日初资本、锋领资本跟投",
+                "source_content_hash": "aeaf72fc54e1e954",
+                "quote_hash": "32a35d204b504c2c28d2ef24f81bb003252790167a09b147a7524d5484dffdba"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": null,
+              "min_value": 22000000,
+              "max_value": 99000000,
+              "unit": "base",
+              "round_count": 2,
+              "status": "range",
+              "display_zh": "2200 万美元–9900 万美元"
+            }
+          ],
+          "historical_round_count": 2
+        },
+        "current_source_ids": [
+          "FISRC-d972a22e56f20646",
+          "FISRC-eacc5c04a38650b6"
+        ]
+      },
+      "products": [
+        {
+          "name": "家庭AI娱乐硬件（AI游戏机）",
+          "description": "软硬件一体的家庭客厅互动娱乐系统，结合AI端侧模型实现无需手柄和VR外设的体感交互，计划于CES 2027首次公开展示。",
+          "target_customers": "北美家庭用户",
+          "features": [
+            "无需手柄和VR等外设的体感交互",
+            "高于120fps、小于3cm误差的人体3D姿态映射",
+            "覆盖单人游玩、同屏互动与线上联机"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d972a22e56f20646",
+              "quote": "公司希望打造一套全家可用、轻松参与的客厅互动娱乐系统",
+              "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+              "quote_hash": "cd1aacf05533e6d5afa5fb1071e0e6f36af0706860c3e880c63833ef9aa74f64"
+            },
+            {
+              "source_id": "FISRC-eacc5c04a38650b6",
+              "quote": "首款硬件产品计划于2027年CES首次亮相，首期面向北美家庭市场",
+              "source_content_hash": "aeaf72fc54e1e954",
+              "quote_hash": "a5c7a9a7d2f82de476ac6fa09130c58559c3fe3d9a68fa5b16c3c7b7080b6f8d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AI游戏引擎与AI管线",
+          "description": "通过AI管线辅助原型、资产、场景与交互逻辑制作，缩短从创意到可玩版本的验证周期。",
+          "target_customers": "公司内部游戏制作团队",
+          "features": [
+            "AI辅助原型与资产制作",
+            "缩短验证周期"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d972a22e56f20646",
+              "quote": "公司通过AI管线辅助原型、资产、场景与交互逻辑制作，缩短从创意到可玩版本的验证周期",
+              "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+              "quote_hash": "5b92e0a92e90d48a79fa16f4c265aa215a3b047369329708318a9ebfce69acbf"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "数千万美元",
+          "observed_at": "2026-11-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d972a22e56f20646",
+              "quote": "飞拓星驰近日完成数千万美元天使轮融资",
+              "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+              "quote_hash": "df1ad276db066f8c2acc060aa6ab1a044999d09ec06c64230a58d7513d3f6e8d"
+            }
+          ]
+        },
+        {
+          "label": "人体3D姿态映射帧率",
+          "value": "高于120fps",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d972a22e56f20646",
+              "quote": "能够将高于120fps、小于3cm误差的人体3D姿态映射到游戏世界内",
+              "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+              "quote_hash": "94e2f8e6b072d2d39ae177c93e907a238cfe3f1b57fb78c52d389d1089491107"
+            }
+          ]
+        },
+        {
+          "label": "人体3D姿态映射误差",
+          "value": "小于3cm",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d972a22e56f20646",
+              "quote": "能够将高于120fps、小于3cm误差的人体3D姿态映射到游戏世界内",
+              "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+              "quote_hash": "94e2f8e6b072d2d39ae177c93e907a238cfe3f1b57fb78c52d389d1089491107"
+            }
+          ]
+        },
+        {
+          "label": "团队顶会论文累计",
+          "value": "上百篇",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d972a22e56f20646",
+              "quote": "团队累计发表顶会论文上百篇",
+              "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+              "quote_hash": "7eea5c1a73f238d8a5c11bc943b5b3c482b7b16efe48480229cfb0bea31f68d8"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "李凌霄",
+          "quote": "AI与家庭互动娱乐的交汇处，需求已被反复验证，但体验长期受制于技术，这正是重新定义品类的窗口。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d972a22e56f20646",
+              "quote": "AI与家庭互动娱乐的交汇处，需求已被反复验证，但体验长期受制于技术，这正是重新定义品类的窗口。",
+              "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+              "quote_hash": "636dd14ddd4381ce7ca8357fe98435ba1280af0807f0246faee1a0518e6214e4"
+            }
+          ]
+        },
+        {
+          "speaker": "周晖",
+          "quote": "我们看好娱乐成为物理AI率先实现规模化应用的场景之一。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d972a22e56f20646",
+              "quote": "我们看好娱乐成为物理AI率先实现规模化应用的场景之一。",
+              "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+              "quote_hash": "a622f0eb51f67b4843d59941dc871674a8edae9b357a92837ed629a2136bcffb"
+            }
+          ]
+        },
+        {
+          "speaker": "阮飞",
+          "quote": "家庭体感游戏机具有明确的应用场景。在硬件、AI与内容三层能力中，我们尤其看重AI所构成的核心技术壁垒。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d972a22e56f20646",
+              "quote": "家庭体感游戏机具有明确的应用场景。在硬件、AI与内容三层能力中，我们尤其看重AI所构成的核心技术壁垒。",
+              "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+              "quote_hash": "9c8f0e6f628abe4f7f2aabfc1f9ee648a0061f825adb968d6dd66b4a75f2a597"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "元生资本",
+            "speaker": "李凌霄",
+            "speaker_role": "元生资本合伙人",
+            "rationale": "认为AI与家庭互动娱乐需求已被验证但体验受技术制约，飞拓星驰团队在3D动捕领域积累深厚，有望重新定义品类并成为AI时代家庭互动娱乐入口。",
+            "quote": "AI与家庭互动娱乐的交汇处，需求已被反复验证，但体验长期受制于技术，这正是重新定义品类的窗口。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d972a22e56f20646",
+                "quote": "AI与家庭互动娱乐的交汇处，需求已被反复验证，但体验长期受制于技术，这正是重新定义品类的窗口。",
+                "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+                "quote_hash": "636dd14ddd4381ce7ca8357fe98435ba1280af0807f0246faee1a0518e6214e4"
+              }
+            ]
+          },
+          {
+            "institution": "江远投资",
+            "speaker": "周晖",
+            "speaker_role": "江远投资合伙人",
+            "rationale": "看好娱乐成为物理AI规模化应用场景，认可飞拓星驰将前沿AI技术转化为消费体验的能力及团队自动驾驶与具身智能背景。",
+            "quote": "我们看好娱乐成为物理AI率先实现规模化应用的场景之一。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d972a22e56f20646",
+                "quote": "我们看好娱乐成为物理AI率先实现规模化应用的场景之一。",
+                "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+                "quote_hash": "a622f0eb51f67b4843d59941dc871674a8edae9b357a92837ed629a2136bcffb"
+              }
+            ]
+          },
+          {
+            "institution": "锋领资本",
+            "speaker": "阮飞",
+            "speaker_role": "锋领资本创始人",
+            "rationale": "认为家庭体感游戏机应用场景明确，看重AI构成的核心技术壁垒及团队硬件研发与游戏内容能力，且与基金出海投资方向契合。",
+            "quote": "家庭体感游戏机具有明确的应用场景。在硬件、AI与内容三层能力中，我们尤其看重AI所构成的核心技术壁垒。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d972a22e56f20646",
+                "quote": "家庭体感游戏机具有明确的应用场景。在硬件、AI与内容三层能力中，我们尤其看重AI所构成的核心技术壁垒。",
+                "source_content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+                "quote_hash": "9c8f0e6f628abe4f7f2aabfc1f9ee648a0061f825adb968d6dd66b4a75f2a597"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是飞拓星驰能否以AI端侧模型与AI游戏引擎把家庭体感互动体验做到低门槛、自然沉浸，并借此成为家庭AI互动娱乐入口。当前融资所依赖的已验证信号包括：团队在3D动捕与AI研究上的积累、端侧模型实现高于120fps且小于3cm误差的人体3D姿态映射、以及软硬件一体的产品路径。证据边界在于：首款硬件计划于CES 2027才首次亮相，首期面向北美家庭市场，尚无销售、用户或收入数据披露，商业化仍待验证。",
+        "validated_signals": [
+          "AI端侧模型可将高于120fps、小于3cm误差的人体3D姿态映射到游戏世界内",
+          "团队累计发表顶会论文上百篇",
+          "核心成员博士毕业于香港中文大学，曾在亚马逊、腾讯、华为、商汤从事研究与产品落地"
+        ],
+        "risks": [
+          "首款硬件产品计划于2027年CES才首次亮相，产品尚未上市，商业化与用户接受度待验证",
+          "首期面向北美家庭市场，面临海外市场竞争与本地化运营不确定性",
+          "AI端侧模型与体感交互体验能否在量产硬件上稳定达到披露指标仍待验证"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_device",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "content_creation"
+        ],
+        "industry_ids": [
+          "media_entertainment"
+        ],
+        "target_user_ids": [
+          "consumer"
+        ],
+        "sector": "家庭AI互动娱乐硬件与体感游戏系统",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是飞拓星驰能否以AI端侧模型与AI游戏引擎把家庭体感互动体验做到低门槛、自然沉浸，并借此成为家庭AI互动娱乐入口。当前融资所依赖的已验证信号包括：团队在3D动捕与AI研究上的积累、端侧模型实现高于120fps且小于3cm误差的人体3D姿态映射、以及软硬件一体的产品路径。证据边界在于：首款硬件计划于CES 2027才首次亮相，首期面向北美家庭市场，尚无销售、用户或收入数据披露，商业化仍待验证。",
+          "evidence_signals": [
+            "AI端侧模型可将高于120fps、小于3cm误差的人体3D姿态映射到游戏世界内",
+            "团队累计发表顶会论文上百篇",
+            "核心成员博士毕业于香港中文大学，曾在亚马逊、腾讯、华为、商汤从事研究与产品落地"
+          ],
+          "risks": [
+            "首款硬件产品计划于2027年CES才首次亮相，产品尚未上市，商业化与用户接受度待验证",
+            "首期面向北美家庭市场，面临海外市场竞争与本地化运营不确定性",
+            "AI端侧模型与体感交互体验能否在量产硬件上稳定达到披露指标仍待验证"
+          ],
+          "institutional_rationale_status": "disclosed"
+        },
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "家庭AI娱乐硬件（AI游戏机）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI游戏引擎与AI管线",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jeremy",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "元生资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "江远投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "日初资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "锋领资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-85108d804ef3b160",
+          "date": "2026-11-12",
+          "title": "飞拓星驰完成数千万美元天使轮融资，打造家庭AI互动娱乐入口",
+          "amount": "数千万美元",
+          "source_refs": [
+            "SA-a38e149bd27855ba"
+          ]
+        },
+        {
+          "event_id": "EV-d96123480b112099",
+          "date": "2026-05-11",
+          "title": "独家｜ 95后港中文博士融资数百万美金，打造全球首个AI Native家庭娱乐入口_腾讯新闻",
+          "amount": "数百万美元",
+          "source_refs": [
+            "SA-96361210e27074e1"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-d972a22e56f20646",
+          "source_url": "https://news.pedaily.cn/202611/571751.shtml",
+          "title": "飞拓星驰完成数千万美元天使轮融资，打造家庭AI互动娱乐入口",
+          "publisher": "news.pedaily.cn",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-13T00:18:32.748Z",
+          "content_hash": "a4040767c10b765e36dc1f9e71dcca78f5c10b098d5595658da840da71fd3215",
+          "source_artifact_id": "SA-a38e149bd27855ba",
+          "raw_id": "RAW-56067a1396c12ab6",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-eacc5c04a38650b6",
+          "source_url": "https://www.zhitongcaijing.com/content/detail/1522278.html",
+          "title": "飞拓星驰获数千万美元天使轮融资 聚焦家庭AI娱乐",
+          "publisher": "zhitongcaijing.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-13T00:52:55.491Z",
+          "content_hash": "aeaf72fc54e1e954",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-13T00:53:22.456Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-13T00:53:22.456Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "AI游戏引擎与AI管线",
+            "家庭AI娱乐硬件（AI游戏机）"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Jeremy"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-85108d804ef3b160"
+      ],
+      "aggregation": {
+        "key": "EN-f388a6cbaebeec5f|angel|USD:range::20000000:90000000:|2026-11-12",
+        "event_count": 1,
+        "strategy": "reviewed_company_round_date_and_normalized_amount"
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-9409bc662eb189c0",
+          "event_ids": [
+            "EV-85108d804ef3b160"
+          ],
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "数千万美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": null,
+            "min_value": 20000000,
+            "max_value": 90000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "数千万美元"
+          },
+          "announced_at": "2026-11-12",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true
+        },
+        {
+          "funding_insight_id": "FI-ee03878e699295b9",
+          "event_ids": [
+            "EV-d96123480b112099"
+          ],
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "数百万美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": null,
+            "min_value": 2000000,
+            "max_value": 9000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "数百万美元"
+          },
+          "announced_at": "2026-05-11",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": false
+        }
+      ],
+      "market_scope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "funding_company_evidence:china_legal_entity:深圳市飞拓星驰科技有限公司"
+        ],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "dimension": "product_form",
+        "id": "ai_device",
+        "name": "AI 设备",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_category": {
+        "dimension": "ai_market_category",
+        "id": "enterprise_applications",
+        "name": "企业级应用",
+        "method": "card_explicit",
+        "decision_id": ""
+      },
+      "market_subcategory": {
+        "dimension": "ai_market_subcategory",
+        "id": "productivity_enterprise_workflows",
+        "name": "生产力与企业工作流",
+        "method": "card_explicit"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-85108d804ef3b160",
+        "direction": ""
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-7cc504bfbad2008a",
       "triggered_by_event_id": "EV-99e376ee2aa07168",
       "as_of_date": "2026-11-12",
@@ -430,7 +4803,8 @@
                 "quote_hash": "b86bd0f38d4b410a1e9f2cb4668e2c6b17f757ff452f4f7addf759afead450d7"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-074c82aa895bfd"
           },
           {
             "name": "上海科创集团",
@@ -457,7 +4831,8 @@
                 "quote_hash": "b86bd0f38d4b410a1e9f2cb4668e2c6b17f757ff452f4f7addf759afead450d7"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-437fb819f60a09"
           },
           {
             "name": "徐汇资本",
@@ -1257,7 +5632,8 @@
                 "quote_hash": "e9db982d513b1cd27f178a534f1782c1e76cf753006bd1e4dac0abd0915713d3"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-c5dca05134ed6f"
           },
           {
             "name": "Velocity",
@@ -1270,7 +5646,8 @@
                 "quote_hash": "e9db982d513b1cd27f178a534f1782c1e76cf753006bd1e4dac0abd0915713d3"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-72ccccc809cd82"
           },
           {
             "name": "Mercer",
@@ -1283,7 +5660,8 @@
                 "quote_hash": "e9db982d513b1cd27f178a534f1782c1e76cf753006bd1e4dac0abd0915713d3"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-84cd7668455c24"
           }
         ],
         "other_round_investors": [],
@@ -2367,7 +6745,8 @@
                 "quote_hash": "d6815603f40ff173008fb682219c21f18b3981f5af0a1f231df3287bedead2c2"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-8a2fb448a46c60"
           },
           {
             "name": "Balderton",
@@ -2422,7 +6801,8 @@
                 "quote_hash": "37b78ea3b64fdc0a9ca613b50fd3c06cf458702c94e659c78bd3324d1dbc5048"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-86e8b630a9291c"
           },
           {
             "name": "British Business Bank",
@@ -3316,7 +7696,8 @@
                 "quote_hash": "b60a47706a76628419a7ecd5c7cd0562db4db6fc054eacec48549400d5f81d43"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-d0e12ea38160ad"
           },
           {
             "name": "Insight Partners",
@@ -3387,7 +7768,8 @@
                 "quote_hash": "1e976ee8c358cbc4df44ff23be557b96ca459ccda1196f377085ff465391325b"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-c197e4c657b429"
           }
         ],
         "evidence_refs": [
@@ -4310,7 +8692,8 @@
                 "quote_hash": "76c5b86e6178c0240884564b97d739616deb28262e70c47b285d0886553a91ef"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-1d96ecf9bae110"
           },
           {
             "name": "South Park Commons",
@@ -5093,7 +9476,8 @@
                 "quote_hash": "bf7d92ecf80f026f4ab682d8e62e620e1cfdc7c6f3c272cf511a3cb35fcc658d"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-f72de3d7db6f81"
           },
           {
             "name": "Infinity Ventures",
@@ -5885,7 +10269,8 @@
                 "quote_hash": "c2d5d058155e7f2ab2e61df35934623ac00b14906c99cb0ac4630302239762ec"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-a7274bbae3398d"
           },
           {
             "name": "Crew Capital",
@@ -5898,7 +10283,8 @@
                 "quote_hash": "c2d5d058155e7f2ab2e61df35934623ac00b14906c99cb0ac4630302239762ec"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-5246aedee1bce1"
           },
           {
             "name": "Sprout & Oak",
@@ -5911,7 +10297,8 @@
                 "quote_hash": "c2d5d058155e7f2ab2e61df35934623ac00b14906c99cb0ac4630302239762ec"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-22c63eb0e06183"
           }
         ],
         "other_round_investors": [],
@@ -304958,15 +309345,15 @@
             {
               "currency": "USD",
               "value": null,
-              "min_value": 2000000,
-              "max_value": 9000000,
+              "min_value": 22000000,
+              "max_value": 99000000,
               "unit": "base",
-              "round_count": 1,
+              "round_count": 2,
               "status": "range",
-              "display_zh": "200 万美元–900 万美元"
+              "display_zh": "2200 万美元–9900 万美元"
             }
           ],
-          "historical_round_count": 1
+          "historical_round_count": 2
         },
         "current_source_ids": [
           "FISRC-867a0916b6d45f09",
@@ -305265,6 +309652,15 @@
       ],
       "funding_history": [
         {
+          "event_id": "EV-85108d804ef3b160",
+          "date": "2026-11-12",
+          "title": "飞拓星驰完成数千万美元天使轮融资，打造家庭AI互动娱乐入口",
+          "amount": "数千万美元",
+          "source_refs": [
+            "SA-a38e149bd27855ba"
+          ]
+        },
+        {
           "event_id": "EV-d96123480b112099",
           "date": "2026-05-11",
           "title": "独家｜ 95后港中文博士融资数百万美金，打造全球首个AI Native家庭娱乐入口_腾讯新闻",
@@ -305360,6 +309756,30 @@
         "strategy": "reviewed_company_round_date_and_normalized_amount"
       },
       "historical_rounds": [
+        {
+          "funding_insight_id": "FI-9409bc662eb189c0",
+          "event_ids": [
+            "EV-85108d804ef3b160"
+          ],
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "数千万美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": null,
+            "min_value": 20000000,
+            "max_value": 90000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "数千万美元"
+          },
+          "announced_at": "2026-11-12",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": false
+        },
         {
           "funding_insight_id": "FI-ee03878e699295b9",
           "event_ids": [

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-12",
-    "currentDate": "2026-11-12",
-    "eventCount": 4436,
+    "latestDataDate": "2026-11-13",
+    "currentDate": "2026-11-13",
+    "eventCount": 4448,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -422,6 +422,7 @@
       "EV-8115dd18f2812a29",
       "EV-cf496e0f8a56ca97",
       "EV-8cb5b0ed18c7cdd8",
+      "EV-2406bc3d29c09326",
       "EV-27d9a40d0446e770",
       "EV-4fc82b5985acc6c8",
       "EV-57717e60d7a07800",
@@ -634,7 +635,7 @@
       "EN-da20c5952dba19d8"
     ],
     "firstSeen": "2025-09-04",
-    "lastSeen": "2026-11-12",
+    "lastSeen": "2026-11-13",
     "relationIds": [
       "REL2-6460871b6d621283",
       "REL2-02bdd133e9353ff7",
@@ -695,10 +696,11 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
-        "EV-cd20a6ff672972eb",
+        "EV-2406bc3d29c09326",
         "EV-27d9a40d0446e770",
         "EV-4fc82b5985acc6c8",
         "EV-57717e60d7a07800",
+        "EV-cd20a6ff672972eb",
         "EV-3cc8e7ce0143047a",
         "EV-000a2cf24e205f93",
         "EV-797921067ae4af17",
@@ -1212,6 +1214,101 @@
     },
     "timeline": [
       {
+        "id": "EV-fcaf084ec5c515b0",
+        "dataDate": "2026-11-13",
+        "date": "2026-11-08",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 公司迄今最大发电设备采购订单：曝 Anthropic 砸 34 亿美元买燃气发电机",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f2e085cca8d5beef",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-2406bc3d29c09326",
+        "dataDate": "2026-11-13",
+        "date": "2026-11-10",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "曝 Anthropic 拟通过 IPO 筹集最多 644 亿美元，上市推介启动在即",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-dff37aaec8fa23f4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-dff37aaec8fa23f4",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-27d9a40d0446e770",
+        "dataDate": "2026-11-13",
+        "date": "2026-11-10",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "Anthropic 寻求创纪录的 885 亿美元，与公开市场首秀挂钩",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-4fc82b5985acc6c8",
+        "dataDate": "2026-11-13",
+        "date": "2026-11-10",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "Anthropic 将 IPO 发行价区间定为每股 $70 至 $78，以实现 $1.404 万亿的隐含估值",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2c8c4c6b77cb9233",
+          "EN-c70eca6b0f88f44d",
+          "EN-373ac021a2c0bb2c",
+          "EN-bbdefa2950f49882",
+          "EN-9fbf261b62c1d7c0",
+          "EN-8d4321d936320802"
+        ]
+      },
+      {
+        "id": "EV-57717e60d7a07800",
+        "dataDate": "2026-11-13",
+        "date": "2026-11-06",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 估值达 1.25 万亿美元，竞争对手 Anthropic 临近 IPO",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
         "id": "EV-cd20a6ff672972eb",
         "dataDate": "2026-11-12",
         "date": "2026-11-05",
@@ -1236,73 +1333,6 @@
           "EN-5e20292808d5084b",
           "EN-c9fa56e37b477e8f",
           "EN-980df443f66c16d5",
-          "EN-c70eca6b0f88f44d"
-        ]
-      },
-      {
-        "id": "EV-fcaf084ec5c515b0",
-        "dataDate": "2026-11-12",
-        "date": "2026-11-08",
-        "eventType": "procurement_contract",
-        "eventTypeLabel": "采购合同",
-        "eventGroup": "商业合作",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "AI 公司迄今最大发电设备采购订单：曝 Anthropic 砸 34 亿美元买燃气发电机",
-        "displayTags": [],
-        "entityIds": [
-          "EN-f2e085cca8d5beef",
-          "EN-c70eca6b0f88f44d"
-        ]
-      },
-      {
-        "id": "EV-27d9a40d0446e770",
-        "dataDate": "2026-11-12",
-        "date": "2026-11-10",
-        "eventType": "ipo_listing",
-        "eventTypeLabel": "IPO 与上市",
-        "eventGroup": "融资与并购",
-        "status": "rumored",
-        "statusLabel": "rumored",
-        "title": "Anthropic 寻求创纪录的 885 亿美元，与公开市场首秀挂钩",
-        "displayTags": [],
-        "entityIds": [
-          "EN-c70eca6b0f88f44d"
-        ]
-      },
-      {
-        "id": "EV-4fc82b5985acc6c8",
-        "dataDate": "2026-11-12",
-        "date": "2026-11-10",
-        "eventType": "ipo_listing",
-        "eventTypeLabel": "IPO 与上市",
-        "eventGroup": "融资与并购",
-        "status": "rumored",
-        "statusLabel": "rumored",
-        "title": "Anthropic 将 IPO 发行价区间定为每股 $70 至 $78，以实现 $1.404 万亿的隐含估值",
-        "displayTags": [],
-        "entityIds": [
-          "EN-2c8c4c6b77cb9233",
-          "EN-c70eca6b0f88f44d",
-          "EN-373ac021a2c0bb2c",
-          "EN-bbdefa2950f49882",
-          "EN-9fbf261b62c1d7c0",
-          "EN-8d4321d936320802"
-        ]
-      },
-      {
-        "id": "EV-57717e60d7a07800",
-        "dataDate": "2026-11-12",
-        "date": "2026-11-06",
-        "eventType": "ipo_listing",
-        "eventTypeLabel": "IPO 与上市",
-        "eventGroup": "融资与并购",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "OpenAI 估值达 1.25 万亿美元，竞争对手 Anthropic 临近 IPO",
-        "displayTags": [],
-        "entityIds": [
-          "EN-7d3194f79e645c42",
           "EN-c70eca6b0f88f44d"
         ]
       },
@@ -14923,11 +14953,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-product_form-chip_accelerator",
-        "TX-industry-manufacturing",
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-robotic_system",
@@ -15341,6 +15371,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-6d4311291e4a0956",
         "EV-20063f151f5c9892",
         "EV-6f6d5ec3dab0651c",
         "EV-72a9b0250c1c9435",
@@ -15469,6 +15500,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-8bba88d507b8dc62",
         "EV-4fc82b5985acc6c8",
         "EV-009a882943028d97",
         "EV-d381d15f8f9045e0",
@@ -15514,6 +15546,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
         "TX-industry-healthcare_life_sciences",
@@ -15527,7 +15560,6 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-automotive_transportation",
-        "TX-industry-manufacturing",
         "TX-industry-telecommunications",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -15597,7 +15629,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-12"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -16255,7 +16287,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-12"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "EN-729324072d368379",
@@ -19203,6 +19235,7 @@
       "valueId": "healthcare_life_sciences",
       "eventIds": [
         "EV-6963c418c3512cb8",
+        "EV-f7fbc6c2b1d2d5a9",
         "EV-5affa046ed76d30e",
         "EV-63e454277381c4b3",
         "EV-7ae56347720accfa",
@@ -19340,6 +19373,7 @@
       ],
       "entityIds": [
         "EN-250d7fcba902495a",
+        "EN-53aeee52214b4a13",
         "EN-696d8adf27c998c9",
         "EN-2af17ddc761538ab",
         "EN-0d4cd9aa3a416d5a",
@@ -19474,7 +19508,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "TX-technology-embodied_ai",
@@ -19746,7 +19780,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-11-12"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "TX-product_form-model",
@@ -20570,6 +20604,7 @@
         "EV-3dc8d5c373ddd1f3",
         "EV-9cd1cb31e2adf5dc",
         "EV-5caf7f83664b1a2c",
+        "EV-2406bc3d29c09326",
         "EV-7a3a3754522828e1",
         "EV-8b36007d0b5f377f",
         "EV-4b44f5eafecf4922",
@@ -20677,6 +20712,7 @@
         "EN-74be4cbf48e647b2",
         "EN-0078ec52880eaa14",
         "EN-4e721fae5963494d",
+        "EN-dff37aaec8fa23f4",
         "EN-f90aec90acf3dc85",
         "EN-18b4bbfd60f4137e",
         "EN-6eedfb906b1652fb",
@@ -20699,7 +20735,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-11-12"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "TX-use_case-security_operations",
@@ -25953,7 +25989,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-11-12"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "TX-technology-open_weights",

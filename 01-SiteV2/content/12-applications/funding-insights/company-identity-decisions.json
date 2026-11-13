@@ -4346,6 +4346,35 @@
         "corroborating_content_hash": "a7ea64e33f25a6c36527a2c83315f1291ec757e22baa320f9ceaa38eaf0a93ff"
       },
       "rationale": "两份接受原文指向 Zach Yadegari 创立的 Persona、同一笔1000万美元融资和相同投资方。历史应用卡错误借用了创始人规范实体ID；仅纠正 Persona 公司卡的应用身份，不合并或修改创始人的历史规范事实，保留原来源事件、金额、轮次和日期。"
+    },
+    {
+      "decision_id": "FICID-FUSHI-20261113",
+      "entity_id": "EN-8285065e2176cc74",
+      "application_entity_id": "EN-8285065e2176cc74",
+      "current": {
+        "name": "阜时科技有限公司",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "阜时科技有限公司",
+        "阜时科技"
+      ],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "阜时科技",
+        "catalog_type": "company"
+      },
+      "review_status": "accepted",
+      "reviewed_at": "2026-11-13T04:56:22.511580+00:00",
+      "reviewed_by": "Codex responsible financing original review",
+      "evidence": {
+        "source_url": "https://news.pedaily.cn/202611/571736.shtml",
+        "source_content_hash": "02310b35422c14267b73ed4d95e7755f70ea02a6926110933fa6d6ec6e15ac9b",
+        "quote": "阜时科技有限公司（下称“阜时科技”）致力于激光雷达核心芯片及多种机器视觉解决方案研发，行业首家发布及量产面阵SPAD激光雷达接收芯片及解决方案。",
+        "quote_hash": "f2b1e9c6fa6139d2ee7ef71684b116fd2f899c88cd58d55b35c00920d47f43b5"
+      },
+      "rationale": "同一篇融资原文首句明确法定全称与下称关系，后文同一主体完成超4亿元C4轮；V4事件实体与融资应用实体均为EN-8285065e2176cc74。仅登记融资应用层全称/简称绑定并消除未解析标记，不创建或合并规范实体，不改变轮次、金额、日期、来源及旧轮。"
     }
   ]
 }

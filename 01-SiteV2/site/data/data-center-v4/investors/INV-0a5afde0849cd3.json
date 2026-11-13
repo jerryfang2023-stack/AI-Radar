@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-12",
-    "currentDate": "2026-11-12",
-    "eventCount": 4436,
+    "latestDataDate": "2026-11-13",
+    "currentDate": "2026-11-13",
+    "eventCount": 4448,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-11-09",
-    "latest_disclosed_at": "2026-11-09",
+    "latest_disclosed_at": "2026-11-12",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "series_a",
       "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-b81b59c4259c46d6",
+        "canonical_entity_id": "",
+        "name": "Mirendil"
+      },
       {
         "entity_id": "EN-d58999507a10460c",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e59ff31cc788f76e",
+        "funding_insight_id": "FI-03bb0617eea57ed6",
+        "event_ids": [
+          "EV-28354a9359e59d75"
+        ],
+        "company_entity_id": "EN-b81b59c4259c46d6",
+        "company_canonical_entity_id": "",
+        "company_name": "Mirendil",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$1B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-11-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-91b5c399f66248bf",
+            "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+            "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+            "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+            "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+            "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-190ff005da611f53",
         "funding_insight_id": "FI-94eaf09d128c6f03",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-91b5c399f66248bf",
+        "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+        "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+        "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+        "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+        "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+      },
+      {
         "source_id": "FISRC-3491226e16a1391a",
         "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
         "source_title": "Nominal Raises $240M at a $3B Valuation to Build the Intelligence Platform for Hardware Engineering",
@@ -141,10 +195,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "M13 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "M13 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Mirendil · A轮 · 2026-11-12 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-91b5c399f66248bf"
+        },
         {
           "description": "融资来源记录：Nominal · C轮 · 2026-11-09 · 本轮参投 · $240 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3491226e16a1391a"
@@ -152,6 +210,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-91b5c399f66248bf",
+          "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
+          "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
+          "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
+          "quote": "with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32",
+          "quote_hash": "7be8f56a6119d09b7e402db0a72479f1902342332062dd6251595be332a3fe2a"
+        },
         {
           "source_id": "FISRC-3491226e16a1391a",
           "source_url": "https://www.globenewswire.com/news-release/2026/11/09/3398456/0/en/nominal-raises-240m-at-a-3b-valuation-to-build-the-intelligence-platform-for-hardware-engineering.html",
