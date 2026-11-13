@@ -1494,6 +1494,29 @@ function linkedCompanyAnchoredInFundingQuote(event, entities, claims) {
   return matches.size === 1 ? [...matches.values()][0] : null;
 }
 
+function firstPersonWireRecipient(event, entities, claims, sourceQuotes) {
+  const firstPerson = claim => /\/PRNewswire\/\s*--/iu.test(claim.source_quote || "")
+    && /\bwe(?:['’]ve|\s+have)\s+(?:raised|secured|closed)\b/iu.test(claim.source_quote || "")
+    && clauseHasEventFundingAmount(claim.source_quote, claim, event);
+  if (!sourceQuotes.length || !claims.length || !claims.every(firstPerson)) return { applicable: false };
+  const candidates = entities.filter(entity => (event.entities || []).includes(entity.entity_id)
+    && entity.entity_type === "organization_candidate"
+    && claims.every(claim => [entity.canonical_name, ...(entity.aliases || [])]
+      .some(name => normalizedName(name) === normalizedName(claim.subject))));
+  if (candidates.length !== 1) return { applicable: true, company: null };
+  const issuers = new Set();
+  for (const source of sourceQuotes) {
+    const normalized = clean(source);
+    if (!claims.some(claim => normalized.includes(clean(claim.source_quote))
+      && normalized.indexOf(clean(claim.source_quote)) === normalized.lastIndexOf(clean(claim.source_quote)))) continue;
+    const lines = [...String(source).matchAll(/^[\t ]*SOURCE[\t ]+([^\r\n]+?)[\t ]*$/gmu)];
+    if (lines.length > 1) return { applicable: true, company: null };
+    if (lines.length === 1) issuers.add(normalizedName(lines[0][1]));
+  }
+  const names = [candidates[0].canonical_name, ...(candidates[0].aliases || [])].map(normalizedName);
+  return { applicable: true, company: issuers.size === 1 && names.includes([...issuers][0]) ? candidates[0] : null };
+}
+
 function anaphoricFundingRecipient(event, entities, claims, sourceQuotes) {
   const linked = entities.filter(entity => (event.entities || []).includes(entity.entity_id)
     && entity.entity_type === "organization_candidate");
@@ -1564,6 +1587,8 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
   const eventClaims = (event.claim_refs || []).map((id) => claimById.get(id)).filter(Boolean);
   const acceptedFundingClaims = eventClaims
     .filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted");
+  const issuer = firstPersonWireRecipient(event, entities, acceptedFundingClaims, sourceQuotes);
+  if (issuer.applicable) return issuer.company;
   // Prefer a uniquely linked company co-mentioned with this round's amount over a headline-only Claim subject.
   const quoteAnchoredCompany = canonicalSourceRecipient(
     event, entities, entityIndex, acceptedFundingClaims, sourceQuotes,
@@ -1734,13 +1759,23 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
   return candidates[0].entity;
 }
 
+function fundVehicleTargetAmounts(value = "") {
+  const text = clean(value).normalize("NFKC");
+  const target = String.raw`\s+(?:for\s+(?:(?:his|her|its|their|a|the)\s+)?)?(?:(?:first|second|third|new|debut|solo|VC|venture|capital|investment|growth|private|equity|seed)\s+){0,5}fund\b`;
+  return fundingAmountMentions(text).filter(mention => {
+    const amount = mention.raw.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+    return new RegExp(`${amount}${target}`, "iu").test(text);
+  }).map(mention => mention.raw);
+}
+
 function fundingVehicleCapitalRaise(event = {}, claims = []) {
-  const fund = /\b(?:debut|first|second|third|new|solo|VC|venture(?:\s+capital)?|investment)\s+(?:(?:solo|VC|venture|capital|investment)\s+){0,3}fund\b/iu;
-  if (!fund.test(clean(event.object))) return false;
+  const eventAmounts = fundVehicleTargetAmounts(event.object);
+  if (!eventAmounts.length) return false;
   return claims.some(claim => (event.claim_refs || []).includes(claim.claim_id)
     && claim.claim_type === "funding" && claim.verification_status === "accepted"
-    && fund.test(clean(claim.object)) && fund.test(clean(claim.source_quote))
-    && /\b(?:rais(?:e[sd]?|ing)|clos(?:e[sd]?|ing))\b/iu.test(claim.source_quote));
+    && /\b(?:rais(?:e[sd]?|ing)|clos(?:e[sd]?|ing))\b/iu.test(claim.source_quote)
+    && fundVehicleTargetAmounts(claim.object).some(amount => eventAmounts.some(eventAmount => fundingAmountsEquivalent(amount, eventAmount))
+      && fundVehicleTargetAmounts(claim.source_quote).some(sourceAmount => fundingAmountsEquivalent(amount, sourceAmount))));
 }
 
 export function isEligibleFundingInsightEvent(event = {}, claims = []) {
