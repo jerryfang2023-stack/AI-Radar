@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
-import {publicationReviewDelta,writePublicationReviewContext,originalLocators,publicationQuoteAudit} from '../review-context.mjs';
+import {publicationReviewDelta,writePublicationReviewContext,originalLocators,publicationQuoteAudit,publicationProjectionAudit} from '../review-context.mjs';
 const card=(id,amount=10)=>({funding_insight_id:id,company:{name:id},financing:{amount},financing_tags:{sector:'ai'},products:[]});
 test('private original hints bind the exact captured hash and omit stale research cache',()=>{
  const root=fs.mkdtempSync(path.join(os.tmpdir(),'financing-original-hints-'));
@@ -36,6 +36,8 @@ test('review context reads immutable baseline and exposes new cards despite zero
   const report=path.join(root,'agent-workflow/reports/financing/2026-10-16/publication.json');fs.mkdirSync(path.dirname(report),{recursive:true});fs.writeFileSync(report,JSON.stringify({verification:{counts:{verified:0}}}));
   const directory=path.join(root,'review'),summary=writePublicationReviewContext({checkout:root,directory,base,head:'reviewed-head',date:'2026-10-16'});
   assert.equal(summary.delta.subjects.added,1);assert.equal(summary.verification_queue_counts.verified,0);
+  assert.equal(summary.projection_audit.counts.public_subjects,2);
+  assert.equal(summary.projection_audit.lineage[0].public_event_card_id,'FI-new');
   assert.equal(summary.pending_publication.length,1);assert.equal(summary.files.length,2);
   assert.ok(fs.existsSync(path.join(directory,'publication-delta/subjects-added-FI-new.json')));
   assert.equal(JSON.parse(fs.readFileSync(path.join(directory,'base-financing-catalog.json'))).cards.length,1);
@@ -57,4 +59,31 @@ test('quote audit binds each citation to its own captured source without approvi
   assert.equal(audit[0].quote_sha256.length,64);assert.ok(audit.every(row=>!Object.hasOwn(row,'fact_approval')));
   assert.equal(publicationQuoteAudit({research_sources:sources,evidence_refs:[refs[0]]},root,[{...locators[0],content_hash:'stale'}])[0].matched,false);
  } finally {fs.rmSync(root,{recursive:true,force:true});}
+});
+
+
+test('review projection audit distinguishes research, public events, subjects and person candidates',()=>{
+ const raw={funding_insight_id:'FI-research',triggered_by_event_id:'EV-new',company:{name:'Alpha AI',entity_id:'EN-alpha',application_entity_id:'EN-alpha'},financing:{announced_at:'2026-11-12',round:'A',amount_original:'$1B'}};
+ const published={...raw,funding_insight_id:'FI-event',subject_card_id:'FI-event'};
+ const before={cards:[],event_cards:[]},after={cards:[published],event_cards:[published]};
+ const research={meta:{counts:{funding_events:3,auto_published:1,pending:1,deduplicated:1}},cards:[raw]};
+ const audit=publicationProjectionAudit(before,after,{research,candidates:[{candidate_id:'person',candidate_kind:'person',research_name:'Behnam',funding_insight_ids:['FI-research'],company_entity_ids:['EN-alpha'],status:'pending_canonical_review'}]});
+ assert.equal(audit.counts.research_stored_cards,1);assert.equal(audit.counts.research_selected_events,3);
+ assert.equal(audit.lineage[0].research_cards[0].research_card_id,'FI-research');
+ assert.equal(audit.lineage[0].public_event_card_id,'FI-event');assert.equal(audit.lineage[0].public_subject_card_ids.length,1);
+ assert.equal(audit.lineage[0].pending_identity_candidates[0].candidate_kind,'person');
+ assert.deepEqual(audit.duplicate_public_subject_applications,[]);assert.deepEqual(audit.duplicate_public_funding_events,[]);
+ assert.equal(Object.hasOwn(audit,'approved'),false);
+});
+test('review projection audit exposes actual public duplicates and lost or changed historical events',()=>{
+ const company={name:'Alpha AI',application_entity_id:'EN-alpha'};
+ const old={funding_insight_id:'FI-old',triggered_by_event_id:'EV-old',company,financing:{amount:1}};
+ const current={funding_insight_id:'FI-new',triggered_by_event_id:'EV-new',company,financing:{amount:2}};
+ const dup={...current,funding_insight_id:'FI-duplicate'};
+ const audit=publicationProjectionAudit({cards:[old],event_cards:[old]},{cards:[current,dup],event_cards:[current,dup]});
+ assert.equal(audit.duplicate_public_subject_applications[0].application_entity_id,'EN-alpha');
+ assert.equal(audit.duplicate_public_funding_events[0].event_id,'EV-new');
+ assert.deepEqual(audit.missing_historical_event_cards,['FI-old']);
+ const changed=publicationProjectionAudit({cards:[old],event_cards:[old]},{cards:[old],event_cards:[{...old,financing:{amount:999}}]});
+ assert.deepEqual(changed.changed_historical_event_cards,['FI-old']);
 });

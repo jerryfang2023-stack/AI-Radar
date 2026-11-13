@@ -15,6 +15,57 @@ export function publicationReviewDelta(before,after) {
   return {subjects:compare(before.cards,after.cards),events:compare(before.event_cards,after.event_cards)};
 }
 
+// Layer identity and complete-array counts are mechanical audit evidence, not approval.
+export function publicationProjectionAudit(before, after, {research = {}, candidates = []} = {}) {
+  const applicationId = card => card.company?.application_entity_id || card.company?.entity_id || '';
+  const duplicates = (rows, key, field) => {
+    const groups = new Map();
+    for (const card of rows) {
+      const id = key(card); if (!id) continue;
+      if (!groups.has(id)) groups.set(id, []);
+      groups.get(id).push(card.funding_insight_id);
+    }
+    return [...groups].filter(([,ids])=>ids.length>1).map(([id,ids])=>({[field]:id,public_card_ids:ids}));
+  };
+  const currentSubjectIds = new Set(after.cards.map(card=>card.funding_insight_id));
+  const oldEvents = new Map(before.event_cards.map(card=>[card.funding_insight_id,card]));
+  const currentEvents = new Map(after.event_cards.map(card=>[card.funding_insight_id,card]));
+  const changed = after.event_cards.filter(card=>oldEvents.has(card.funding_insight_id)
+    && hash(facts(card))!==hash(facts(oldEvents.get(card.funding_insight_id))));
+  const changedIds = new Set(changed.map(card=>card.funding_insight_id));
+  const admitted = after.event_cards.filter(card=>!oldEvents.has(card.funding_insight_id) || changedIds.has(card.funding_insight_id));
+  const researchCards = research.cards || [];
+  return {
+    counts: {public_subjects:after.cards.length,public_event_cards:after.event_cards.length,
+      research_stored_cards:researchCards.length,research_selected_events:research.meta?.counts?.funding_events ?? null,
+      research_stage_outcomes:research.meta?.counts || null},
+    duplicate_public_subject_applications:duplicates(after.cards,applicationId,'application_entity_id'),
+    duplicate_public_funding_events:duplicates(after.event_cards,card=>card.triggered_by_event_id,'event_id'),
+    missing_historical_event_cards:before.event_cards.filter(card=>!currentEvents.has(card.funding_insight_id)).map(card=>card.funding_insight_id),
+    changed_historical_event_cards:changed.map(card=>card.funding_insight_id),
+    retained_historical_event_count:before.event_cards.filter(card=>currentEvents.has(card.funding_insight_id)).length,
+    replaced_subjects:before.cards.filter(old=>!currentSubjectIds.has(old.funding_insight_id)).map(old=>{
+      const event=currentEvents.get(old.funding_insight_id);
+      return {prior_subject_card_id:old.funding_insight_id,retained_as_event:Boolean(event),
+        current_subject_card_id:event?.subject_card_id || null};
+    }),
+    lineage:admitted.map(card=>{
+      const sourceIds=new Set([card.triggered_by_event_id,...(card.source_event_ids || [])].filter(Boolean));
+      const rows=researchCards.filter(row=>sourceIds.has(row.triggered_by_event_id));
+      const ids=new Set(rows.map(row=>row.funding_insight_id));
+      return {event_id:card.triggered_by_event_id,application_entity_id:applicationId(card),public_event_card_id:card.funding_insight_id,
+        public_subject_card_ids:after.cards.filter(subject=>applicationId(card) && applicationId(subject)===applicationId(card)).map(subject=>subject.funding_insight_id),
+        research_cards:rows.map(row=>({research_card_id:row.funding_insight_id,event_id:row.triggered_by_event_id,
+          application_entity_id:applicationId(row),company:row.company?.name,announced_at:row.financing?.announced_at,
+          amount_original:row.financing?.amount_original || row.financing?.amount,round:row.financing?.round})),
+        pending_identity_candidates:candidates.filter(row=>(row.funding_insight_ids || []).some(id=>ids.has(id)))
+          .map(row=>({candidate_id:row.candidate_id,candidate_kind:row.candidate_kind,research_name:row.research_name,
+            status:row.status,company_entity_ids:row.company_entity_ids || []}))};
+    }),
+    contract:'Research cards and cached research receipts are intermediate records. Public subjects are catalog.cards; public financing events are catalog.event_cards. Different IDs across these layers and source_card_ids lineage are expected, not additional public cards. Pending person/product canonical candidates do not alone imply pending company identity. Research selected-event outcomes include pending/deduplicated cases; inspect complete arrays instead of a read excerpt. All semantic facts still require original review.'
+  };
+}
+
 export function originalLocators(card,evidenceRoot,catalog) {
   const locators=[];
   const inside=relative=>{const resolved=path.resolve(evidenceRoot,relative);return !path.relative(evidenceRoot,resolved).startsWith('..')&&fs.existsSync(resolved);};
@@ -86,7 +137,12 @@ export function writePublicationReviewContext({checkout,directory,base,head,date
       quote_audit[card.funding_insight_id]=publicationQuoteAudit(card,evidenceRoot,locators);
     }
   }
-  const summary={version:'FINANCING-PUBLICATION-REVIEW-CONTEXT-1',date,base_commit:base,head_commit:head,
+  const optionalJson=(file,fallback)=>fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')):fallback;
+  const funding=path.join(checkout,'01-SiteV2/content/12-applications/funding-insights');
+  const projection_audit=publicationProjectionAudit(before,after,{
+    research:optionalJson(path.join(funding,`${date}.json`),{}),
+    candidates:optionalJson(path.join(funding,'entity-review-queue.json'),{}).candidates || []});
+  const summary={version:'FINANCING-PUBLICATION-REVIEW-CONTEXT-1',date,base_commit:base,head_commit:head,projection_audit,
     before:{subjects:before.cards.length,events:before.event_cards.length},after:{subjects:after.cards.length,events:after.event_cards.length},
     delta:Object.fromEntries(Object.entries(delta).map(([kind,rows])=>[kind,Object.fromEntries(Object.entries(rows).map(([status,items])=>[status,items.length]))])),
     files,required_originals,quote_audit,verification_queue_counts:publication.verification?.counts,
