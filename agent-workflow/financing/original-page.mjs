@@ -1,3 +1,4 @@
+import { publisherHeaderDate } from '../tools/lib/source-publication-date.mjs';
 import { load } from 'cheerio';
 import { isCompanyProfileUrl } from '../tools/lib/source-page-kind.mjs';
 
@@ -79,7 +80,7 @@ export function parseOriginal(html, { url = '', rules = pageRules } = {}) {
   const bodyCandidates = [rule?.body, 'article', 'main', '[itemprop="articleBody"]', '.entry-content', '.article-content', '#article-content', '#content'].filter(Boolean)
     .flatMap(selector=>$(selector).map((_,el)=>tidy($(el).text())).get()).filter(t=>t.length>=300);
   const body = article?.articleBody ? tidy(load(article.articleBody).text()) : bodyCandidates.sort((a,b)=>b.length-a.length)[0] || tidy($('body').text());
-  const dateEvidence = isCompanyProfileUrl(url) ? null : candidates[0] || null;
+  const dateEvidence = isCompanyProfileUrl(url) ? null : publisherHeaderDate({url,title,body}) || candidates[0] || null;
   return {title,body,date:dateEvidence?.date||'',date_evidence:dateEvidence,links,article_like:articleLike};
 }
 
@@ -126,6 +127,8 @@ export async function readOriginalPage(url, {fetcher=fetch,reader=null,...option
   const recovered=await reader(publicHttpUrl(url));
   if(recovered?.body?.length<300 || !recovered?.body || /\ufffd/u.test(recovered.body) || /just a moment|access denied|verify you are human|captcha/iu.test(recovered.title||'')) throw new Error('reader_unreadable');
   if(!recovered.url || publicHttpUrl(recovered.url)!==publicHttpUrl(url))throw new Error('reader_source_mismatch');
-  const companyProfile=isCompanyProfileUrl(url),date=companyProfile?'':originalDate(recovered.published_at);
-  return {...recovered,url,article_like:!isListingUrl(url)&&!companyProfile,method:'original_reader',date,date_evidence:date?{date,method:'reader:original_publication',value:String(recovered.published_at)}:null,attempts:[...attempts,{method:'original_reader',status:'success'}]};
+  const companyProfile=isCompanyProfileUrl(url);
+  const headerDate=companyProfile?null:publisherHeaderDate({...recovered,url});
+  const date=companyProfile?'':headerDate?.date||originalDate(recovered.published_at);
+  return {...recovered,url,article_like:!isListingUrl(url)&&!companyProfile,method:'original_reader',date,date_evidence:headerDate||(date?{date,method:'reader:original_publication',value:String(recovered.published_at)}:null),attempts:[...attempts,{method:'original_reader',status:'success'}]};
 }

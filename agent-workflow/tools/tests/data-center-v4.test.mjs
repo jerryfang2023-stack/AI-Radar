@@ -3194,3 +3194,16 @@ test('Chinese product and conference reports cannot date a retrospective round b
  for(const body of ['2026年11月，Aippy完成数千万美元融资。','2026年13月，Aippy完成数千万美元融资。','2026年6月，Aippy完成首轮融资。\nAippy今日宣布完成新一轮融资。','2026年6月，Aippy发布AI游戏社区。今日完成数千万美元融资。']) assert.notEqual(check(body).reason,'historical_funding_reference_requires_original_date',body);
  assert.equal(check('2026年6月，Aippy完成首轮融资。','Aippy宣布完成新一轮融资').accepted,true);
 });
+
+
+test('frozen 36kr inputs recover the visible publication day without changing their receipt', () => {
+ const title='36氪首发丨AI芯片公司通芯智能完成1亿元种子轮融资';
+ const body=title+'\n欧雪·2026年11月12日 10:08\n通芯智能完成1亿元种子轮融资，由星河资本投资。公司研发通用人工智能推理芯片。'+'这款芯片面向云端和边缘人工智能推理应用。'.repeat(20);
+ const url='https://www.36kr.com/p/4066136377873286';
+ const source=entry('visible-publication',title,body,{original_url:url,canonical_url:url,published_at:'2026-11-13',collected_at:'2026-11-13T00:19:48Z',language:'zh'});
+ const b=buildBundle([source],taxonomy,'2026-11-13','2026-11-13T00:00:00Z');
+ assert.equal(b.raw_documents[0].published_at,'2026-11-12');
+ const e=b.canonical_events.find(e=>e.event_type==='funding');assert.ok(e);
+ assert.equal(e.event_time,'2026-11-12');assert.equal(e.disclosed_at,'2026-11-12');
+ assert.equal(source.raw.published_at,'2026-11-13');
+});

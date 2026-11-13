@@ -193,3 +193,36 @@ test('legacy cached company profiles remain background even when their old artic
  assert.equal(captureParsedOriginal({url:'https://example.com/disclosure'},cached,{date:'2026-11-06'}).reason,'original_article_required');
  assert.equal(captureParsedOriginal({url:'https://example.com/disclosure'},{...cached,url:'https://example.com/disclosure'},{date:'2026-11-06'}).status,'accepted');
 });
+
+
+test('36kr author publication header wins over conflicting page metadata', () => {
+ const url='https://www.36kr.com/p/4066136377873286';
+ const title='36氪首发丨通芯智能完成融资';
+ const body=title+'\n欧雪·2026年11月12日 10:08\n'+('通芯智能完成1亿元种子轮融资，研发通用AI推理芯片。'.repeat(20));
+ const html='<html><head><meta property="article:published_time" content="2026-11-13" /></head><body><article><h1>'+title+'</h1><p>欧雪·2026年11月12日 10:08</p><p>'+body.split('\n').slice(2).join('\n')+'</p></article></body></html>';
+ const parsed=parseOriginal(html,{url});
+ assert.equal(parsed.date,'2026-11-12');
+ assert.equal(parsed.date_evidence.method,'publisher_header:36kr_author_date');
+});
+
+import { publisherHeaderDate } from '../../tools/lib/source-publication-date.mjs';
+test('publisher header dates reject unrelated, ambiguous and invalid evidence', () => {
+ const source={url:'https://www.36kr.com/p/123456',title:'通芯智能完成融资-36氪',body:'通芯智能完成融资\n欧雪·2026年11月12日 10:08\n融资正文'};
+ assert.equal(publisherHeaderDate(source).date,'2026-11-12');
+ for (const patch of [
+  {url:'https://36kr.com.evil.test/p/123456'}, {url:'https://www.36kr.com/news/123456'},
+  {title:'另一篇文章'}, {body:source.body.replace('11月12日','02月30日')},
+  {body:source.body.replace('10:08','24:08')}, {body:source.body.replace('10:08','10:60')},
+  {body:'通芯智能完成融资\n融资正文\n欧雪·2026年11月12日 10:08'},
+  {body:source.body+'\n另一作者·2026年11月13日 10:08'},
+  {body:'通芯智能完成融资\n2026年11月12日完成融资'},
+ ]) assert.equal(publisherHeaderDate({...source,...patch}),null,JSON.stringify(patch));
+});
+test('reader recovery honors the current article author header over a capture-day timestamp',async()=>{
+ const url='https://www.36kr.com/p/123456';
+ const title='通芯智能完成融资';
+ const body=title+'\n欧雪·2026年11月12日 10:08\n'+'通芯智能完成融资。'.repeat(50);
+ const result=await readOriginalPage(url,{fetcher:async()=>{throw new Error('offline')},reader:async()=>({url,title,body,published_at:'2026-11-13'})});
+ assert.equal(result.date,'2026-11-12');
+ assert.equal(result.date_evidence.method,'publisher_header:36kr_author_date');
+});
