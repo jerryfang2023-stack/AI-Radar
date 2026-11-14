@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-13",
-    "currentDate": "2026-11-13",
-    "eventCount": 4448,
+    "latestDataDate": "2026-11-14",
+    "currentDate": "2026-11-14",
+    "eventCount": 4461,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -22265,8 +22265,365 @@
   ],
   "events": [
     {
+      "id": "EV-150794ef70b90141",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-13",
+      "updatedDate": "2026-11-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "“青葵智造”完成亿元A轮融资-36氪",
+      "originalTitle": "",
+      "subject": "“青葵智造”",
+      "action": "完成亿元A轮融资",
+      "object": "-36氪",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-94c0a71bd3497326",
+        "EN-5029a2c69d76bef9"
+      ],
+      "entityNames": [
+        "青葵智造",
+        "“青葵智造”"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.36kr.com/newsflashes/4067555949319041",
+      "publisher": "www.36kr.com"
+    },
+    {
+      "id": "EV-1df5624821fce3f9",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-13",
+      "updatedDate": "2026-11-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 智能体初创公司 LangChain 估值达 $3B",
+      "originalTitle": "AI agent startup LangChain hits $3B valuation",
+      "subject": "LangChain",
+      "action": "funding",
+      "object": "$300 million Series C at a $3 billion valuation",
+      "metrics": [
+        "$300 million",
+        "$3 billion"
+      ],
+      "locations": [
+        "Singapore"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-f3f2184b56f946c6"
+      ],
+      "entityNames": [
+        "LangChain"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-2da36f5f434ec04d",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-13",
+      "updatedDate": "2026-11-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Kutlerri.ai 从 Narahari Investments 融资 400 万美元，以扩展面向餐厅的 AI 解决方案",
+      "originalTitle": "Kutlerri.ai raises $4 Mn from Narahari Investments to expand AI solutions for restaurants",
+      "subject": "Kutlerri.ai",
+      "action": "raises",
+      "object": "$4 Mn from Narahari Investments to expand AI solutions for restaurants",
+      "metrics": [
+        "$4 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-545b22d84a1f540f"
+      ],
+      "entityNames": [
+        "Kutlerri.ai"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://entrackr.com/snippets/kutlerriai-raises-4-mn-from-narahari-investments-to-expand-ai-solutions-for-restaurants-12806062",
+      "publisher": "entrackr.com"
+    },
+    {
+      "id": "EV-71994dadaf12fd5d",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-13",
+      "updatedDate": "2026-11-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Desible.ai 完成由 Prime Venture Partners 领投的 32 Cr 卢比融资",
+      "originalTitle": "Desible.ai raises Rs 32 Cr led by Prime Venture Partners",
+      "subject": "Desible.ai",
+      "action": "funding",
+      "object": "Rs 32 crore funding round led by Prime Venture Partners with participation from Invention Engine",
+      "metrics": [
+        "Rs 32 crore"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-20109d8d00635e1a"
+      ],
+      "entityNames": [
+        "Desible.ai"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://entrackr.com/snippets/desibleai-raises-rs-32-cr-led-by-prime-venture-partners-12805523",
+      "publisher": "entrackr.com"
+    },
+    {
+      "id": "EV-a691420f309b3d29",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-13",
+      "updatedDate": "2026-11-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI智能体基础设施公司「以太之心」完成数千万种子轮融资",
+      "originalTitle": "",
+      "subject": "AI智能体基础设施公司「以太之心」",
+      "action": "完成数千万种子轮融资",
+      "object": "AI智能体基础设施公司「以太之心」完成数千万种子轮融资",
+      "metrics": [
+        "数千万"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-7954bf4787e87bc0"
+        ]
+      },
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-f1358032635b4c8f"
+      ],
+      "entityNames": [
+        "以太之心"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202611/571842.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-e2f52dc69efbbe91",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-13",
+      "updatedDate": "2026-11-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "36氪首发丨北航博士做AI4S，获亿元融资，要造自驱动实验室-36氪",
+      "originalTitle": "",
+      "subject": "36氪首发丨北航博士做AI4S，获亿元",
+      "action": "融资",
+      "object": "，要造自驱动实验室-36氪",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "regulatory_jurisdiction"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-24cdc4f4a436ce84",
+          "CL-5ce45a5788a1c031"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d76c23e00662958a"
+      ],
+      "entityNames": [
+        "36氪首发丨北航博士做AI4S，获亿元"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.36kr.com/p/4067548192576389",
+      "publisher": "www.36kr.com"
+    },
+    {
+      "id": "EV-f3f0e0675232e0d4",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-13",
+      "updatedDate": "2026-11-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "灵睿智芯完成数亿元Pre-A+轮融资，押注RISC-V智能体CPU",
+      "originalTitle": "",
+      "subject": "灵睿智芯",
+      "action": "完成数亿元Pre-A+轮融资",
+      "object": "，押注RISC-V智能体CPU",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-7da359d788ad5a86"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7f505bc9744206fd"
+      ],
+      "entityNames": [
+        "灵睿智芯"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202611/571794.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
       "id": "EV-28354a9359e59d75",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "funding",
@@ -22362,7 +22719,7 @@
     },
     {
       "id": "EV-5d3da505edb7ef83",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "funding",
@@ -22409,7 +22766,7 @@
     },
     {
       "id": "EV-5f1dc5e6af486dfe",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "funding",
@@ -22593,8 +22950,56 @@
       "publisher": "www.36kr.com"
     },
     {
+      "id": "EV-8f9e9c92246b3afe",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-12",
+      "updatedDate": "2026-11-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Hatz AI 完成 2400 万美元 A 轮融资，巩固其作为托管服务提供商及中小型企业 AI 平台的地位",
+      "originalTitle": "Hatz AI Raises $24M Series A to Solidify Position as the AI Platform for Managed Service Providers and Small and Medium-Sized Businesses",
+      "subject": "Hatz AI",
+      "action": "Raises",
+      "object": "$24M Series A to Solidify Position as the AI Platform for Managed Service Providers and Small and Medium-Sized Businesses",
+      "metrics": [
+        "$24 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bd732730bd39834d",
+        "EN-0dae85368ecd75ad"
+      ],
+      "entityNames": [
+        "NEW YORK",
+        "Hatz AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/hatz-ai-raises-24m-series-a-to-solidify-position-as-the-ai-platform-for-managed-service-providers-and-small-and-medium-sized-businesses-302936133.html",
+      "publisher": "www.prnewswire.com"
+    },
+    {
       "id": "EV-ae749a93407891c4",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "funding",
@@ -22686,7 +23091,7 @@
     },
     {
       "id": "EV-59048c1178252d9a",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "funding",
@@ -22732,7 +23137,7 @@
     },
     {
       "id": "EV-937b99126cc4df09",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "acquisition",
@@ -22827,7 +23232,7 @@
     },
     {
       "id": "EV-99e376ee2aa07168",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "funding",
@@ -22875,7 +23280,7 @@
     },
     {
       "id": "EV-c3fdd52a255c0770",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "funding",
@@ -23246,6 +23651,52 @@
       "products": [],
       "sourceUrl": "https://www.prnewswire.com/news-releases/whitematter-raises-20m-series-a-to-close-the-growing-gap-between-ai-autonomy-and-enterprise-governance-302934477.html",
       "publisher": "www.prnewswire.com"
+    },
+    {
+      "id": "EV-e82c33c7ed81bce5",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-10",
+      "updatedDate": "2026-11-10",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Proximal Ventures 募集首期基金，支持将 AI 引入药物研发的初创企业",
+      "originalTitle": "Proximal Ventures raises debut fund to back startups bringing AI to drug development",
+      "subject": "Roche",
+      "action": "acquisition",
+      "object": "Flatiron Health for $1.9 billion in 2018",
+      "metrics": [
+        "$1.9 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-132ee7fe2adcc48f"
+      ],
+      "entityNames": [
+        "Roche"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/11/10/proximal-ventures-raises-debut-fund-to-back-startups-bringing-ai-to-drug-development/",
+      "publisher": "techcrunch.com"
     },
     {
       "id": "EV-098a73f4d042bdb5",
@@ -23802,7 +24253,7 @@
     },
     {
       "id": "EV-34b8ae2aea003084",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-07",
       "updatedDate": "2026-11-07",
       "eventType": "acquisition",
@@ -23882,7 +24333,7 @@
     },
     {
       "id": "EV-3bc1af8409d16f9b",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-07",
       "updatedDate": "2026-11-07",
       "eventType": "funding",
@@ -24036,7 +24487,7 @@
     },
     {
       "id": "EV-aaf041c83cebba9a",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-07",
       "updatedDate": "2026-11-07",
       "eventType": "funding",
@@ -24051,10 +24502,7 @@
       "action": "funding round",
       "object": ", but has to court dentists for more capital",
       "metrics": [
-        "$11 billion",
-        "$1.25 trillion",
-        "$122 billion",
-        "$852 billion"
+        "$11 billion"
       ],
       "locations": [],
       "missingFields": [],
@@ -24328,6 +24776,54 @@
       "products": [],
       "sourceUrl": "https://news.pedaily.cn/202611/571452.shtml",
       "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-374527abd076ac77",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-05",
+      "updatedDate": "2026-11-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "摩根大通和万事达卡支持西雅图初创公司Firmly对AI购物智能体的押注",
+      "originalTitle": "JPMorgan and Mastercard back Seattle startup Firmly&#8217;s bet on AI shopping agents",
+      "subject": "Firmly",
+      "action": "funding",
+      "object": "$15 million Series A round led by Squarepoint Capital, with participation from J.P. Morgan Payments, Mastercard, Samsung Next and others",
+      "metrics": [
+        "$15 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-82d88cebead743ad",
+        "EN-968e2d5b08687bf4"
+      ],
+      "entityNames": [
+        "Firmly",
+        "Samsung"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.geekwire.com/2026/jpmorgan-and-mastercard-back-seattle-startup-firmlys-bet-on-ai-shopping-agents/",
+      "publisher": "www.geekwire.com"
     },
     {
       "id": "EV-0497bbc98355d8dc",
@@ -288729,7 +289225,7 @@
     },
     {
       "id": "EV-fcaf084ec5c515b0",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-08",
       "updatedDate": "2026-11-08",
       "eventType": "procurement_contract",
@@ -317178,7 +317674,7 @@
     },
     {
       "id": "EV-195a496342e785af",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-09",
       "updatedDate": "2026-11-09",
       "eventType": "partnership",
@@ -333151,7 +333647,7 @@
     },
     {
       "id": "EV-6d4311291e4a0956",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "product_release",
@@ -333207,7 +333703,7 @@
     },
     {
       "id": "EV-be0ef85ed5f05179",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "product_release",
@@ -333289,7 +333785,7 @@
     },
     {
       "id": "EV-c75feed1a832645e",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "product_release",
@@ -479262,8 +479758,108 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-d4e72cbad81641c6",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-13",
+      "updatedDate": "2026-11-13",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大 IPO”添变数",
+      "originalTitle": "",
+      "subject": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大",
+      "action": "IPO",
+      "object": "”添变数",
+      "metrics": [
+        "260 亿",
+        "100 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-47e18c0aa4f8e878",
+        "EN-8d4321d936320802",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "黄仁勋辞任英伟达",
+        "NVIDIA",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/026/965.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
+      "id": "EV-4eee0f4b9779977a",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-12",
+      "updatedDate": "2026-11-12",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "思科上调销售预期，因AI需求提振网络设备销售",
+      "originalTitle": "Cisco Raises Sales Forecast as AI Demand Boosts Networking Equipment Sales",
+      "subject": "Cisco Systems Inc.",
+      "action": "financial_performance",
+      "object": "fiscal second quarter sales forecast of about $18.1 billion",
+      "metrics": [
+        "$18.1 billion",
+        "$74.8 billion",
+        "$75.8 billion",
+        "$73.4 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-48feb046acae42c7"
+      ],
+      "entityNames": [
+        "Cisco Systems Inc."
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-11-12/cisco-raises-sales-guidance-in-sign-of-ai-fueled-momentum",
+      "publisher": "www.bloomberg.com"
+    },
+    {
       "id": "EV-8bba88d507b8dc62",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "organization_people",
@@ -479471,7 +480067,7 @@
     },
     {
       "id": "EV-27d9a40d0446e770",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-10",
       "updatedDate": "2026-11-10",
       "eventType": "ipo_listing",
@@ -479517,7 +480113,7 @@
     },
     {
       "id": "EV-4fc82b5985acc6c8",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-10",
       "updatedDate": "2026-11-10",
       "eventType": "ipo_listing",
@@ -479672,6 +480268,90 @@
       "products": [],
       "sourceUrl": "https://entrackr.com/snippets/sarvam-appoints-former-google-cloud-india-md-sashikumar-sreedharan-as-president-and-cbo-12798366",
       "publisher": "entrackr.com"
+    },
+    {
+      "id": "EV-e197177f2547fff3",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-07",
+      "updatedDate": "2026-11-07",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 安全倡导者在 1.1 亿美元中期选举之争后取得进展",
+      "originalTitle": "AI Safety Advocates Make Gains After $110 Million Midterm Fight",
+      "subject": "Public First",
+      "action": "capital_investment",
+      "object": "midterms",
+      "metrics": [
+        "$63 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [
+            "EN-396f3f190a868b19"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [
+            "EN-396f3f190a868b19"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [
+            "EN-396f3f190a868b19"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-396f3f190a868b19",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Public First",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-11-07/ai-safety-advocates-make-gains-after-110-million-midterm-fight",
+      "publisher": "www.bloomberg.com"
     },
     {
       "id": "EV-57717e60d7a07800",

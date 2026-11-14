@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-13",
-    "currentDate": "2026-11-13",
-    "eventCount": 4448,
+    "latestDataDate": "2026-11-14",
+    "currentDate": "2026-11-14",
+    "eventCount": 4461,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "current_round_count": 6,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-10-29",
+    "latest_disclosed_at": "2026-11-13",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "lead": 1,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "series_b",
@@ -84,6 +84,11 @@
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-f3f2184b56f946c6",
+        "canonical_entity_id": "",
+        "name": "LangChain"
+      },
       {
         "entity_id": "EN-7c6eefba80293ea4",
         "canonical_entity_id": "",
@@ -106,6 +111,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b4b51f5be2c3353e",
+        "funding_insight_id": "FI-f2518c11e9cf385e",
+        "event_ids": [
+          "EV-1df5624821fce3f9"
+        ],
+        "company_entity_id": "EN-f3f2184b56f946c6",
+        "company_canonical_entity_id": "",
+        "company_name": "LangChain",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$300 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿美元"
+        },
+        "announced_at": "2026-11-13",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b96c8f1ce3eaba55",
+            "source_url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+            "source_title": "AI 智能体初创公司 LangChain 估值达 $3B",
+            "source_content_hash": "00ef7d62dbe695886728380ea03789cc769d555a4578000e86caaf374645f9ea",
+            "quote": "with participation from investors, including Singapore’s GIC, DFJ Growth, IVP, and Sapphire Ventures",
+            "quote_hash": "074af116ed5cadce704d96015afc98a71a3a109e0a6ad7e665f59812a675fdfd"
+          }
+        ]
+      },
       {
         "activity_id": "IA-4f3c982fee035d92",
         "funding_insight_id": "FI-85c91dbd238af2fb",
@@ -340,9 +385,49 @@
             "quote_hash": "ff0138672275123ca5e4132b494ff782e6dce6649f431b5a1bba124e442a720c"
           }
         ]
+      },
+      {
+        "activity_id": "IA-2de8087a2ec270be",
+        "funding_insight_id": "FI-f2518c11e9cf385e",
+        "event_ids": [
+          "EV-1df5624821fce3f9"
+        ],
+        "company_entity_id": "EN-f3f2184b56f946c6",
+        "company_canonical_entity_id": "",
+        "company_name": "LangChain",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "上一轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b96c8f1ce3eaba55",
+            "source_url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+            "source_title": "AI 智能体初创公司 LangChain 估值达 $3B",
+            "source_content_hash": "00ef7d62dbe695886728380ea03789cc769d555a4578000e86caaf374645f9ea",
+            "quote": "when it raised $125 million about a year ago, led by IVP",
+            "quote_hash": "278be84b4fb2e5dfd8dd0cb7b36299fedde8d93260f6f510733f518f8669c525"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-b96c8f1ce3eaba55",
+        "source_url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+        "source_title": "AI 智能体初创公司 LangChain 估值达 $3B",
+        "source_content_hash": "00ef7d62dbe695886728380ea03789cc769d555a4578000e86caaf374645f9ea",
+        "quote": "with participation from investors, including Singapore’s GIC, DFJ Growth, IVP, and Sapphire Ventures",
+        "quote_hash": "074af116ed5cadce704d96015afc98a71a3a109e0a6ad7e665f59812a675fdfd"
+      },
       {
         "source_id": "FISRC-bc01622ffa1cd4de",
         "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
@@ -390,6 +475,14 @@
         "source_content_hash": "d841a55a66370963",
         "quote": "Dec 1, 2016$60M Series C—Accel, Cota Capital, Factor Capital, FPV Fund, IVP, Long Journey Ventures, Matrix, PS Investments, ThirdLove, UpHonest Capital, Y Combinator, Joshua Schachter, Scott Banister, Tikhon BernstamAnnounced",
         "quote_hash": "ff0138672275123ca5e4132b494ff782e6dce6649f431b5a1bba124e442a720c"
+      },
+      {
+        "source_id": "FISRC-b96c8f1ce3eaba55",
+        "source_url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+        "source_title": "AI 智能体初创公司 LangChain 估值达 $3B",
+        "source_content_hash": "00ef7d62dbe695886728380ea03789cc769d555a4578000e86caaf374645f9ea",
+        "quote": "when it raised $125 million about a year ago, led by IVP",
+        "quote_hash": "278be84b4fb2e5dfd8dd0cb7b36299fedde8d93260f6f510733f518f8669c525"
       }
     ],
     "public_profile": {
@@ -429,16 +522,16 @@
           "source_id": "ivp_portfolio"
         },
         {
+          "description": "融资来源记录：LangChain · C轮 · 2026-11-13 · 本轮参投 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b96c8f1ce3eaba55"
+        },
+        {
           "description": "融资来源记录：Wabi · 轮次未披露 · 2026-10-29 · 本轮领投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-bc01622ffa1cd4de"
         },
         {
           "description": "融资来源记录：Pigment · E轮 · 2026-10-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6737e55341eb5266"
-        },
-        {
-          "description": "融资来源记录：Wonderful · C轮 · 2026-09-02 · 本轮参投 · $550 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3bc5a4e973b035eb"
         }
       ],
       "contacts": [
@@ -512,6 +605,14 @@
           "quote_hash": "45c6d385cafc2c7c1cd89245ec618c98351dfe56932b158584276b61a1209828"
         },
         {
+          "source_id": "FISRC-b96c8f1ce3eaba55",
+          "source_url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+          "source_title": "AI 智能体初创公司 LangChain 估值达 $3B",
+          "source_content_hash": "00ef7d62dbe695886728380ea03789cc769d555a4578000e86caaf374645f9ea",
+          "quote": "with participation from investors, including Singapore’s GIC, DFJ Growth, IVP, and Sapphire Ventures",
+          "quote_hash": "074af116ed5cadce704d96015afc98a71a3a109e0a6ad7e665f59812a675fdfd"
+        },
+        {
           "source_id": "FISRC-bc01622ffa1cd4de",
           "source_url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
           "source_title": "构建迷你应用的 AI 智能体 Wabi 最新一轮融资后估值达 $1.25B",
@@ -526,14 +627,6 @@
           "source_content_hash": "c89d948f6967209dd9f412812caed7f01db5cb24023fb6724f700674d6b1bffd",
           "quote": "The round was led by Scaleup Europe Fund, managed by EQT, with participation from WIL (World Innovation Lab), existing investors including Greenoaks, ICONIQ, IVP, and Meritech, and a planned investment from NVIDIA.",
           "quote_hash": "484e57fd99114a3f22f54cb6728e31aa83b727cf034795ed781df97d2494ef75"
-        },
-        {
-          "source_id": "FISRC-3bc5a4e973b035eb",
-          "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
-          "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
-          "source_content_hash": "290d66b36443e7c5",
-          "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
-          "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
         }
       ],
       "identity_status": "verified",
@@ -543,7 +636,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[5].role": {
+        "activities[6].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

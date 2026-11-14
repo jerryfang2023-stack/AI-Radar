@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-13",
-    "currentDate": "2026-11-13",
-    "eventCount": 4448,
+    "latestDataDate": "2026-11-14",
+    "currentDate": "2026-11-14",
+    "eventCount": 4461,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,7 +64,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 35,
-    "historical_or_ambiguous_count": 14,
+    "historical_or_ambiguous_count": 15,
     "portfolio_company_count": 29,
     "market_regions": [
       "GLOBAL"
@@ -75,7 +75,7 @@
     "latest_disclosed_at": "2026-11-09",
     "role_counts": {
       "co_lead": 3,
-      "historical_or_ambiguous": 14,
+      "historical_or_ambiguous": 15,
       "lead": 14,
       "other_current_round": 1,
       "participant": 17
@@ -1894,6 +1894,38 @@
         ]
       },
       {
+        "activity_id": "IA-aa978faf6b169a4c",
+        "funding_insight_id": "FI-f2518c11e9cf385e",
+        "event_ids": [
+          "EV-1df5624821fce3f9"
+        ],
+        "company_entity_id": "EN-f3f2184b56f946c6",
+        "company_canonical_entity_id": "",
+        "company_name": "LangChain",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-0a3a63f1065197eb",
+            "source_url": "https://www.linkedin.com/posts/finextprivate_exclusive-langchain-is-about-to-become-a-activity-7348607583898791936-3tq8",
+            "source_title": "LangChain, an AI infrastructure startup providing tools to build and monitor LLM-powered applications, is raising a new round of funding at an approximate $1 billion valuation led by IVP, according to three sources with knowledge of the deal.",
+            "source_content_hash": "dfbf141bd03fca68",
+            "quote": "a $25 million Series A led by Sequoia",
+            "quote_hash": "607f83ed482383a089f5d561bb5b38dc44e24110f26c89b6ea04e375dacc0a27"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-26bbc7097963f053",
         "funding_insight_id": "FI-5826d8691460f196",
         "event_ids": [
@@ -2480,6 +2512,14 @@
         "quote_hash": "0db743559ffbdcee82409055d113f1214af7a14f117686b47504c37db0cc02d0"
       },
       {
+        "source_id": "FISRC-0a3a63f1065197eb",
+        "source_url": "https://www.linkedin.com/posts/finextprivate_exclusive-langchain-is-about-to-become-a-activity-7348607583898791936-3tq8",
+        "source_title": "LangChain, an AI infrastructure startup providing tools to build and monitor LLM-powered applications, is raising a new round of funding at an approximate $1 billion valuation led by IVP, according to three sources with knowledge of the deal.",
+        "source_content_hash": "dfbf141bd03fca68",
+        "quote": "a $25 million Series A led by Sequoia",
+        "quote_hash": "607f83ed482383a089f5d561bb5b38dc44e24110f26c89b6ea04e375dacc0a27"
+      },
+      {
         "source_id": "FISRC-5579fe42c2aff5ea",
         "source_url": "https://pear.vc/partnering-with-listen-labs-automating-customer-research-to-create-a-human-insights-layer/",
         "source_title": "Partnering with Listen Labs: Automating customer research to create a human insights layer",
@@ -2674,7 +2714,7 @@
           "translated_at": "2026-11-04T00:53:48.846Z",
           "status": "translated"
         },
-        "activities[42].role": {
+        "activities[43].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",

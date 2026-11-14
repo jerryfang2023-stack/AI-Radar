@@ -37944,7 +37944,349 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-11-13T04:39:57.727Z"
+    },
+    "EV-a691420f309b3d29": {
+      "id": "EV-a691420f309b3d29",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "以太之心以 Aeloon 智能体平台及边缘一体机为企业提供岗位协作智能体，属企业业务流程智能体。",
+      "input_hash": "73bcdba08d36d11e562b75166e418e9295ee8a4761df2081e9bbf2f33dd802df",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-7a044cba9e1f0377",
+          "quote": "上海以太之心科技有限公司（下称“以太之心”）成立于2026年，是国内 AI 智能体全栈技术研发企业。"
+        },
+        {
+          "source_id": "FISRC-7a044cba9e1f0377",
+          "quote": "Aeloon 是面向企业与个人的智能体，以轻量化智能体平台 Aeloon Core 为核心，把岗位方法沉淀为可复用能力，让团队成员与多个 Agent 共享上下文、分工协作"
+        },
+        {
+          "source_id": "FISRC-7a044cba9e1f0377",
+          "quote": "AetherStation 是承载上述能力的边缘一体机，提供 Standard 版与国产信创版，本地部署、开箱交付。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-14T00:57:30.151Z"
+    },
+    "EV-1df5624821fce3f9": {
+      "id": "EV-1df5624821fce3f9",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "agent-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "rationale": "LangChain 提供开源智能体编排框架与 LangSmith 开发管理平台，明确面向开发者构建和管控智能体。",
+      "input_hash": "25525219fd5a78d2f6f763ae851425c731bb1e10a19f762319c589df98e0b943",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-132f62e5e651bfec",
+          "quote": "LangChain provides the open agent engineering platform and open source frameworks teams need to build, control, and own their agent intelligence."
+        },
+        {
+          "source_id": "FISRC-b96c8f1ce3eaba55",
+          "quote": "its agent creation and management software, LangSmith, is not trying to lock users into any particular model, cloud, or ecosystem"
+        },
+        {
+          "source_id": "FISRC-86f201fa4e11f8a7",
+          "quote": "LangChain is an open-source orchestration framework for the development of AI applications using LLMs."
+        },
+        {
+          "source_id": "FISRC-132f62e5e651bfec",
+          "quote": "We develop open source projects to stay ahead of the best patterns for building agents."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-14T00:57:30.151Z"
+    },
+    "EV-2da36f5f434ec04d": {
+      "id": "EV-2da36f5f434ec04d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "commerce",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "为餐厅提供AI餐饮销售智能体，属餐饮零售行业工作流软件。",
+      "input_hash": "4ecb139c9b13cf2418c2ed7931719a6ba9e58ecf45d338e3c8df0162b0c1b05f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5598c47b1f45be47",
+          "quote": "Kutlerri.ai, based in Stafford, Texas, is a company that develops AI-powered agents designed to help restaurants increase revenue and reduce operating costs."
+        },
+        {
+          "source_id": "FISRC-5686cbf7b1fa8448",
+          "quote": "Its first commercial product, the AI Catering Sales Agent, identifies potential catering customers within a 30-mile radius, contacts them through emails, texts and calls, and helps restaurants convert enquiries into orders."
+        },
+        {
+          "source_id": "FISRC-5686cbf7b1fa8448",
+          "quote": "develop a mobile-first self-service application for restaurant operators"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-14T00:57:31.095Z"
+    },
+    "EV-374527abd076ac77": {
+      "id": "EV-374527abd076ac77",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "commerce",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "帮助零售商接入AI购物渠道的智能体商务平台，属电商零售行业软件。",
+      "input_hash": "58ff6d1009abd0e084ee748d2397052cae8b85c3cc1ca4ff52ccbe94609b3be8",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-dff507a56e5020e9",
+          "quote": "Firmly, a Seattle-area startup that helps online retailers sell through AI shopping assistants"
+        },
+        {
+          "source_id": "FISRC-1e1df966e2ed502f",
+          "quote": "firmly.ai is the agentic commerce platform that makes it easy for merchants and new AI shopping channels to create native shopping experiences"
+        },
+        {
+          "source_id": "FISRC-dff507a56e5020e9",
+          "quote": "connects retailers’ existing online stores to AI assistants, marketplaces and other shopping channels"
+        },
+        {
+          "source_id": "FISRC-dff507a56e5020e9",
+          "quote": "launched Ask Agent, an AI shopping assistant for retailers’ own websites"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-14T00:57:31.095Z"
+    },
+    "EV-71994dadaf12fd5d": {
+      "id": "EV-71994dadaf12fd5d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "面向银行保险的语音智能体与工作流编排平台，属金融行业AI。",
+      "input_hash": "5ed31adaccd0ca999b102a191bc6a4bb26ca62af1d52d4b3ec3c1083fef5f8d1",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c8bd4803ec5c361b",
+          "quote": "building an AI-powered workflow orchestration platform for banks, non-banking financial companies (NBFCs) and insurance providers"
+        },
+        {
+          "source_id": "FISRC-c8bd4803ec5c361b",
+          "quote": "The compliance framework is aligned with requirements from IRDAI, RBI, TRAI and the Digital Personal Data Protection Act."
+        },
+        {
+          "source_id": "FISRC-ab98e7ec83897c73",
+          "quote": "Desible is building voice agents that go beyond conversations - helping enterprises execute real workflows"
+        },
+        {
+          "source_id": "FISRC-ab98e7ec83897c73",
+          "quote": "combining voice AI with workflow orchestration, enterprise integrations, guardrails and observability"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-14T00:57:31.095Z"
+    },
+    "EV-e2f52dc69efbbe91": {
+      "id": "EV-e2f52dc69efbbe91",
+      "scope": "review",
+      "exclusion_reason": "",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "自称Physical AI并含自动化实验硬件，主营边界是否属具身/机器人需复核。",
+      "input_hash": "76c0584c1c80a8b4a91b1142324724c1d33e887d58b5fa87d85bef39f58017ba",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e262549974b8b5e2",
+          "quote": "青葵智造成立于2021年，核心业务是面向生物医药、化学工业、先进材料、新能源等领域，提供“AI设计—自动化执行—多模态数据回流—模型自适应迭代”的干湿实验闭环解决方案。"
+        },
+        {
+          "source_id": "FISRC-bf7cfd8391612168",
+          "quote": "面向科学研发的Physical AI公司——青葵智造近日宣布完成亿元A轮融资"
+        },
+        {
+          "source_id": "FISRC-e262549974b8b5e2",
+          "quote": "在硬件层，NexoLab将经典化学实验动作和流程进行了标准化、数字化和模块化"
+        },
+        {
+          "source_id": "FISRC-e262549974b8b5e2",
+          "quote": "在管理调度层，AI-LabOS将物理设备抽象为可调用的智能体"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-14T00:57:31.095Z"
+    },
+    "EV-8f9e9c92246b3afe": {
+      "id": "EV-8f9e9c92246b3afe",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "通过MSP渠道交付的企业AI控制平面与自定义智能体，属企业业务流程平台。",
+      "input_hash": "d021ea09e488f889f0a4e6301dbe93c4738d443b24825c95dbf09b8073fe01db",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-bbabe8869ccbeccd",
+          "quote": "Hatz AI, the essential AI operating system for small and medium-sized businesses delivered through Managed Service Providers (MSPs)"
+        },
+        {
+          "source_id": "FISRC-bbabe8869ccbeccd",
+          "quote": "Hatz provides an essential AI control plane designed specifically for the MSP channel. By equipping managed service providers with multi-tenant AI governance, custom workflows, and automated routing across leading foundation models, Hatz allows MSPs to package and deliver AI-as-a-Service seamlessly under their own brand."
+        },
+        {
+          "source_id": "FISRC-bbabe8869ccbeccd",
+          "quote": "Hatz provides an MSP-grade control plane, auto-model routing, collaborative workspaces, and custom AI agents—enabling IT service providers to build, deploy, and scale profitable AI practices with complete control over data, security, and spend."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-14T00:57:31.095Z"
+    },
+    "EV-4af131f039cc7cc9": {
+      "id": "EV-4af131f039cc7cc9",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "自研智能体原生RISC-V服务器级CPU内核，属AI芯片。",
+      "input_hash": "74f92c9760f292e52be9e77ed7a88374024c56c5d119bc00f3a2bb70865a5117",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a916db75f8d2559b",
+          "quote": "上海灵睿智芯计算技术有限公司（以下简称“灵睿智芯”）是全栈自研高端RISC-V CPU内核、智能体CPU及领域增强处理器产品研发企业。"
+        },
+        {
+          "source_id": "FISRC-ec5f3470e236a735",
+          "quote": "2026年初，灵睿智芯发布了国内首款智能体原生、服务器级高性能RISC-V CPU内核——P100 v1。"
+        },
+        {
+          "source_id": "FISRC-a916db75f8d2559b",
+          "quote": "其服务器级、智能体CPU内核P100拥有国内唯 一的动态同时多线程（SMT4）技术，单核最高支持4线程，并可在SMT1至SMT4之间动态切换，将I/O等待间隙转化为有效算力"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-14T00:57:31.095Z"
+    },
+    "EV-f3f0e0675232e0d4": {
+      "id": "EV-f3f0e0675232e0d4",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "自研智能体原生RISC-V服务器级CPU内核，属AI芯片。",
+      "input_hash": "aef3d766da1f68755e3369b9488dcedd84562cc0a958347565c37bf320e54088",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a916db75f8d2559b",
+          "quote": "上海灵睿智芯计算技术有限公司（以下简称“灵睿智芯”）是全栈自研高端RISC-V CPU内核、智能体CPU及领域增强处理器产品研发企业。"
+        },
+        {
+          "source_id": "FISRC-ec5f3470e236a735",
+          "quote": "2026年初，灵睿智芯发布了国内首款智能体原生、服务器级高性能RISC-V CPU内核——P100 v1。"
+        },
+        {
+          "source_id": "FISRC-a916db75f8d2559b",
+          "quote": "其服务器级、智能体CPU内核P100拥有国内唯 一的动态同时多线程（SMT4）技术，单核最高支持4线程，并可在SMT1至SMT4之间动态切换，将I/O等待间隙转化为有效算力"
+        }
+      ],
+      "provider": "responsible_source_review",
+      "model": "",
+      "generated_at": "2026-11-14T05:34:57.609Z",
+      "source_resolution_review": {
+        "reviewed_by": "Codex responsible source review",
+        "reviewed_at": "2026-11-14T05:34:57.609Z",
+        "reason": "Captured full Pedaily article and independent Wallstreetcn/Sohu agree Pre-A+; newsflash body omits +. Existing product and company research reused without a new provider call.",
+        "superseded_unpublished_event": "EV-4af131f039cc7cc9",
+        "canonical_event": "EV-f3f0e0675232e0d4",
+        "source_url": "https://news.pedaily.cn/202611/571794.shtml",
+        "content_hash": "23d22e01ed75c4174c218460db96bc676e859f3cb4ca58ec35667a764c634aec"
+      }
     }
   },
-  "generated_at": "2026-11-13T04:39:57.727Z"
+  "generated_at": "2026-11-14T00:57:31.095Z"
 }

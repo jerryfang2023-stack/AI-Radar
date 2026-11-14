@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-13",
-    "currentDate": "2026-11-13",
-    "eventCount": 4448,
+    "latestDataDate": "2026-11-14",
+    "currentDate": "2026-11-14",
+    "eventCount": 4461,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-17",
-    "latest_disclosed_at": "2026-09-29",
+    "latest_disclosed_at": "2026-11-13",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
+      "series_c",
       "series_d",
       "series_f",
       "undisclosed"
@@ -87,12 +88,57 @@
         "name": "EliseAI"
       },
       {
+        "entity_id": "EN-f3f2184b56f946c6",
+        "canonical_entity_id": "",
+        "name": "LangChain"
+      },
+      {
         "entity_id": "EN-e4540a7c8404b1be",
         "canonical_entity_id": "",
         "name": "Temporal Technologies"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ab7669c0811b8b9d",
+        "funding_insight_id": "FI-f2518c11e9cf385e",
+        "event_ids": [
+          "EV-1df5624821fce3f9"
+        ],
+        "company_entity_id": "EN-f3f2184b56f946c6",
+        "company_canonical_entity_id": "",
+        "company_name": "LangChain",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$300 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿美元"
+        },
+        "announced_at": "2026-11-13",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b96c8f1ce3eaba55",
+            "source_url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+            "source_title": "AI 智能体初创公司 LangChain 估值达 $3B",
+            "source_content_hash": "00ef7d62dbe695886728380ea03789cc769d555a4578000e86caaf374645f9ea",
+            "quote": "with participation from investors, including Singapore’s GIC, DFJ Growth, IVP, and Sapphire Ventures",
+            "quote_hash": "074af116ed5cadce704d96015afc98a71a3a109e0a6ad7e665f59812a675fdfd"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9c26afdd758522db",
         "funding_insight_id": "FI-8e89642c05a4fbe4",
@@ -248,6 +294,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-b96c8f1ce3eaba55",
+        "source_url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+        "source_title": "AI 智能体初创公司 LangChain 估值达 $3B",
+        "source_content_hash": "00ef7d62dbe695886728380ea03789cc769d555a4578000e86caaf374645f9ea",
+        "quote": "with participation from investors, including Singapore’s GIC, DFJ Growth, IVP, and Sapphire Ventures",
+        "quote_hash": "074af116ed5cadce704d96015afc98a71a3a109e0a6ad7e665f59812a675fdfd"
+      },
+      {
         "source_id": "FISRC-aae3c02b03fe09c9",
         "source_url": "https://fortune.com/2026/09/29/elise-ai-4-billion-valuation-funding-round-housing-unicorn-andreessen-bessemer/",
         "source_title": "Exclusive: AI housing unicorn EliseAI hits $4 billion valuation in new funding round led by a16z and Bessemer",
@@ -342,6 +396,10 @@
           "source_id": "FISRC-1f69885afd5fc439"
         },
         {
+          "description": "融资来源记录：LangChain · C轮 · 2026-11-13 · 本轮参投 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b96c8f1ce3eaba55"
+        },
+        {
           "description": "融资来源记录：EliseAI · F轮 · 2026-09-29 · 本轮参投 · $350M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-aae3c02b03fe09c9"
         },
@@ -419,6 +477,14 @@
           "source_content_hash": "74cb86598e6c9021",
           "quote": "joined by Lightspeed Venture Partners and Sapphire Ventures",
           "quote_hash": "f8895a4709c47713dd1fc7e34361c9667b799054daba0bdb9f754386e07608f7"
+        },
+        {
+          "source_id": "FISRC-b96c8f1ce3eaba55",
+          "source_url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+          "source_title": "AI 智能体初创公司 LangChain 估值达 $3B",
+          "source_content_hash": "00ef7d62dbe695886728380ea03789cc769d555a4578000e86caaf374645f9ea",
+          "quote": "with participation from investors, including Singapore’s GIC, DFJ Growth, IVP, and Sapphire Ventures",
+          "quote_hash": "074af116ed5cadce704d96015afc98a71a3a109e0a6ad7e665f59812a675fdfd"
         },
         {
           "source_id": "FISRC-aae3c02b03fe09c9",

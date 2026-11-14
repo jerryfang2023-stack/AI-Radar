@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-13",
-    "currentDate": "2026-11-13",
-    "eventCount": 4448,
+    "latestDataDate": "2026-11-14",
+    "currentDate": "2026-11-14",
+    "eventCount": 4461,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,16 +63,19 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-1df5624821fce3f9",
       "EV-45f4197c8d92bc4c"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-22",
-    "lastSeen": "2026-08-23",
+    "lastSeen": "2026-11-14",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-1df5624821fce3f9"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [],
@@ -83,6 +86,21 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-1df5624821fce3f9",
+        "dataDate": "2026-11-14",
+        "date": "2026-11-13",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 智能体初创公司 LangChain 估值达 $3B",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f3f2184b56f946c6"
+        ]
+      },
       {
         "id": "EV-45f4197c8d92bc4c",
         "dataDate": "2026-08-23",

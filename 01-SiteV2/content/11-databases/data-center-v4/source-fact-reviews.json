@@ -1,0 +1,36 @@
+{
+  "schema_version": "SOURCE-FACT-REVIEW-1",
+  "date": "2026-11-14",
+  "sources": {
+    "SA-2cd686a2fdc2bbd4": {
+      "disposition": "lead_only",
+      "reviewed_by": "Codex responsible original-source review",
+      "reviewed_at": "2026-11-14T05:19:51.637Z",
+      "source_url": "https://www.pedaily.cn/first/192126.shtml",
+      "content_hash": "1540d3a71b378d8ccbf3c8f9b81770f8ed171ca28a285a3d8b89807f1d00c205",
+      "source_quote": "上海灵睿智芯计算技术有限公司11月13日宣布完成数亿元Pre-A 轮融资，美团战投领投，多家头部产业资本及老股东跟投。",
+      "quote_sha256": "3e4e522a076429eb404b793dc51980296342200dfc265dbc9eac04f9c9af7002",
+      "reason": "The brief summary omits the + suffix while its original page title, captured detailed article and independently captured Sohu/Wallstreetcn report agree on Pre-A+. Preserve the brief as a lead; use the reviewed complete article for financing facts.",
+      "accepted_original": {
+        "source_url": "https://news.pedaily.cn/202611/571794.shtml",
+        "content_hash": "23d22e01ed75c4174c218460db96bc676e859f3cb4ca58ec35667a764c634aec",
+        "source_artifact_id": "SA-095668cf1c0c4389",
+        "source_quote": "灵睿智芯宣布完成数亿元Pre-A+轮融资。",
+        "quote_sha256": "84ec2fa61e83f361d6e81b47bf503a3b0a5967de9b458484eacc6da8f2110ed8",
+        "cache_source_id": "FISRC-a916db75f8d2559b",
+        "original_captured_at": "2026-11-14T00:54:02.274Z",
+        "corroborating_cache_source_id": "FISRC-9b51ad6352525390"
+      }
+    },
+    "SA-01377cdb9b15d605": {
+      "disposition": "lead_only",
+      "reviewed_by": "Codex responsible source review",
+      "reviewed_at": "2026-11-14T06:01:55.684Z",
+      "reason": "Company announcement is same-round supporting evidence for date and quote binding; retain the existing accepted GeekWire financing Claim rather than creating a second first-person event.",
+      "source_url": "https://www.firmly.ai/blog/series-a",
+      "content_hash": "349ff5c644eb7ff7c43d1e14ca4e72e7f8ef58c2d2a5de018b46ac5d41a39b78",
+      "source_quote": "Blog · Company · November 5, 2026\n Building the infrastructure for commerce's next chapter\n We've raised $15 million in Series A funding and launched Ask Agent, accelerating our mission to make every merchant ready for agentic commerce.\n KS\n Kumar Senthil\nCo-founder and CEO, firmly",
+      "quote_sha256": "e7e22306311e41e943ce359b870bbc72f3fb199a09711599e0bbbe1748ec2ae1"
+    }
+  }
+}
