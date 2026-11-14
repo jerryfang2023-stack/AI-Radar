@@ -141,3 +141,14 @@ test('changed current product assertions keep current evidence and preserve prio
  review.subjects.Acme.product_evidence_reviews[0].assertion_sha256='unrelated';
  assert.throws(()=>buildFundingSubjects([old,latest],review),/current_product_evidence_review_mismatch/);
 });
+
+
+test('current subject source snapshots win over older captures of the same source ID',()=>{
+ const old=card('old-source','Acme','2026-07-01','seed',10),latest=card('new-source','Acme','2026-11-13','series_a',20);
+ old.research_sources=[{source_id:'shared-url',content_hash:'older-body',captured_at:'2026-07-01T00:00:00Z'}];
+ latest.research_sources=[{source_id:'shared-url',content_hash:'current-body',captured_at:'2026-11-13T00:00:00Z'}];
+ const snapshot=structuredClone([old,latest]),out=buildFundingSubjects([old,latest]);
+ assert.equal(out.cards[0].research_sources[0].content_hash,'current-body');
+ assert.equal(out.event_cards.find(c=>c.triggered_by_event_id==='EV-old-source').research_sources[0].content_hash,'older-body');
+ assert.deepEqual([old,latest],snapshot);
+});

@@ -116,7 +116,9 @@ export function buildFundingSubjects(input, review = {}) {
     card.company.application_entity_id=key;
     card.source_event_ids=[...new Set(group.flatMap(c=>[c.triggered_by_event_id,...c.source_event_ids||[]]).filter(Boolean))];
     card.source_card_ids=[...new Set(group.flatMap(c=>[c.funding_insight_id,...c.source_card_ids||[]]))];
-    card.research_sources=unique(group.flatMap(c=>c.research_sources||[]),s=>s.source_id);
+    // The latest accepted round owns current source metadata; an older capture
+    // of the same URL must not rebind current quotes to an unavailable old body.
+    card.research_sources=unique([...group].reverse().flatMap(c=>c.research_sources||[]),s=>s.source_id);
     card.historical_rounds=group.map(c=>({funding_insight_id:c.funding_insight_id,event_ids:[...new Set([c.triggered_by_event_id,...c.source_event_ids||[]].filter(Boolean))],round:c.financing.round,round_code:c.financing.round_code,round_original:c.financing.round_original,amount_original:c.financing.amount_original,amount_normalized:c.financing.amount_normalized,announced_at:c.financing.announced_at,disclosure_status:c.financing.disclosure_status,is_summary:c.financing.round_code==='multi_round',counts_toward_known_total:c.financing.round_code!=='multi_round',is_current:c.funding_insight_id===card.funding_insight_id,investors:c.financing.investors||[],evidence_refs:c.financing.evidence_refs||[]}));
     card.aggregation={...card.aggregation,strategy:'reviewed_funding_subject',subject_id:key,event_count:group.length,source_card_count:card.source_card_ids.length};
     for(const event of group){
