@@ -1,7 +1,7 @@
 {
   "schema_version": "SOURCE-INTAKE-V1.1",
   "data_date": "2026-11-14",
-  "generated_at": "2026-11-14T05:19:51.626Z",
+  "generated_at": "2026-11-14T06:01:57.176Z",
   "collection_batches": [
     {
       "raw_ids": [
@@ -279,6 +279,14 @@
       ],
       "eligible_raw_ids": [
         "RAW-abf79b214c949fda"
+      ]
+    },
+    {
+      "raw_ids": [
+        "RAW-8962d77e26015d3c"
+      ],
+      "eligible_raw_ids": [
+        "RAW-8962d77e26015d3c"
       ]
     }
   ],
@@ -1518,6 +1526,18 @@
         "evidence://23d22e01ed75c4174c218460db96bc676e859f3cb4ca58ec35667a764c634aec"
       ],
       "content_hash": "23d22e01ed75c4174c218460db96bc676e859f3cb4ca58ec35667a764c634aec"
+    },
+    {
+      "source_artifact_id": "SA-01377cdb9b15d605",
+      "source_url": "https://www.firmly.ai/blog/series-a",
+      "canonical_url": "https://www.firmly.ai/blog/series-a",
+      "publisher": "firmly.ai",
+      "capture_method": "original_http",
+      "captured_at": "2026-11-14T05:58:32.415Z",
+      "snapshot_refs": [
+        "evidence://349ff5c644eb7ff7c43d1e14ca4e72e7f8ef58c2d2a5de018b46ac5d41a39b78"
+      ],
+      "content_hash": "349ff5c644eb7ff7c43d1e14ca4e72e7f8ef58c2d2a5de018b46ac5d41a39b78"
     }
   ],
   "raw_documents": [
@@ -5743,11 +5763,52 @@
         "key_excerpts": [],
         "eligible_for_v4_extraction": true
       }
+    },
+    {
+      "schema_version": "RAW-V4.0",
+      "raw_id": "RAW-8962d77e26015d3c",
+      "source_artifact_id": "SA-01377cdb9b15d605",
+      "source_url": "https://www.firmly.ai/blog/series-a",
+      "canonical_url": "https://www.firmly.ai/blog/series-a",
+      "publisher": "firmly.ai",
+      "author": "",
+      "published_at": "2026-11-05",
+      "captured_at": "2026-11-14T05:58:32.415Z",
+      "language": "en",
+      "document_type": "article",
+      "title_original": "Building the infrastructure for commerce's next chapter",
+      "title_zh": "",
+      "body_ref": "evidence://349ff5c644eb7ff7c43d1e14ca4e72e7f8ef58c2d2a5de018b46ac5d41a39b78",
+      "content_hash": "349ff5c644eb7ff7c43d1e14ca4e72e7f8ef58c2d2a5de018b46ac5d41a39b78",
+      "capture_method": "original_http",
+      "extraction_status": "accepted",
+      "market_scope": {
+        "source_registry_id": "",
+        "source_region": "",
+        "market_region": "",
+        "china_market_match": false,
+        "china_market_match_basis": ""
+      },
+      "intake_diagnostics": {
+        "acquisition_channel": "financing",
+        "search_path": "",
+        "evidence_object_type": "original_full_text",
+        "evidence_object_usable": true,
+        "evidence_strength": "",
+        "raw_qc_decision": "accepted",
+        "raw_qc_downstream_use": "v4_claim_extraction",
+        "extraction_quality": "medium",
+        "readability_score": 0,
+        "has_full_text": true,
+        "origin_fetch_status": "success",
+        "key_excerpts": [],
+        "eligible_for_v4_extraction": true
+      }
     }
   ],
   "counts": {
-    "source_artifacts": 103,
-    "raw_documents": 103,
-    "eligible_documents": 103
+    "source_artifacts": 104,
+    "raw_documents": 104,
+    "eligible_documents": 104
   }
 }

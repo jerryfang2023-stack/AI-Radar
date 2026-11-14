@@ -778,6 +778,59 @@
       "reviewed_at": "2026-11-12T03:26:05.679450+00:00",
       "reviewed_by": "Codex original-source review",
       "reason": "责任审核核对完整原文：195万美元以上仅为累计融资，不能认定本轮金额；原文没有独立融资公告日。既有研究还混入Vertafore同名保险产品引文。暂缓该未发布事件，待取得对应企业及本轮原文并核正日期/金额后再审；保留原文和11月11日hold回执，不重采放行。"
+    },
+    {
+      "event_id": "EV-a691420f309b3d29",
+      "company_name": "以太之心",
+      "status": "pending",
+      "source_url": "https://news.pedaily.cn/202611/571842.shtml",
+      "source_id": "FISRC-7a044cba9e1f0377",
+      "source_content_hash": "abbc73a039e18815f633c5c715d06fea7dc364e789d0bb8007f7f39c6a9f03f4",
+      "quote": "投资界（ID：pedaily2012）消息，近日，以太之心宣布完成数千万种子轮融资。",
+      "quote_hash": "38916bcf69a02d0973038d6037d7828c1991d2b8c38b5d8ca78aecad69eae041",
+      "reviewed_by": "Codex responsible original-source review",
+      "reviewed_at": "2026-11-14T05:51:42.446713+00:00",
+      "reason": "11月13日报道所述数千万种子轮与已发布8月31日轮次的主体、金额、轮次和投资方高度重合；其独立研究来源明确为8月30日原报道，不能据晚到报道认定新一轮融资。暂缓本次未发布候选，保留全部历史融资与原文，待原始公告证明独立新轮次或确认同轮后处理。",
+      "prior_published_event_id": "EV-89ec502a1340079a",
+      "prior_published_card_id": "FI-88ed5f2ad4bd8ab7",
+      "corroborating_source": {
+        "source_url": "https://finance.sina.com.cn/roll/2026-08-30/doc-iniqcfmi8137798.shtml",
+        "source_id": "FISRC-ce841249f25752ee",
+        "source_content_hash": "a79ca28d9006ea79",
+        "body_sha256": "a79ca28d9006ea7953cc7a4e85d88161326a85bb922f45f7bc00e13930431c7b",
+        "quote": "上证报中国证券网讯（记者 邓贞）8月30日，上证报记者从华民投获悉，近日，上海以太之心科技有限公司（简称“以太之心”）宣布完成数千万种子轮融资，投资方包括上海天使会、浦东创投、高信资本及天使清芬。",
+        "quote_hash": "3407da505858c41e1b868bc27f94b6f980258d39bfd01ab21d7bfe6d97973e9c"
+      },
+      "next_action": "verify_original_financing_announcement_and_same_round_identity_before_release"
+    },
+    {
+      "event_id": "EV-71994dadaf12fd5d",
+      "status": "pending",
+      "source_url": "https://entrackr.com/snippets/desibleai-raises-rs-32-cr-led-by-prime-venture-partners-12805523",
+      "source_content_hash": "085ec63e0bd19465189c5d791265bb252616cd6aa7c0e7546eec7cb09bd7cf88",
+      "quote": "Bengaluru-based AI startup Desible.ai has raised Rs 32 crore in a funding round led by Prime Venture Partners, with participation from existing investor Invention Engine.",
+      "quote_hash": "26250ea8f0100333a966dd559de52b64ec5c8a612dd48bf479d6ca1b32ef7ffe",
+      "reason": "10月已发布轮次的接受引文明确写 nearly $3.3 million (Rs 32 crore) in a seed plus round，领投和老股东也相同；11月报道及官网未证明独立新轮次。暂缓当前候选，保留旧卡与原金额，不按不同币种或晚报道重复计入。",
+      "reviewed_by": "Codex responsible original-source review",
+      "reviewed_at": "2026-11-14T06:01:55.684Z",
+      "company_name": "Desible.ai",
+      "prior_published_event_id": "EV-115f9901176fd251",
+      "prior_published_card_id": "FI-2da2ced038e94ba6",
+      "next_action": "verify_same_round_and_original_announcement_before_release"
+    },
+    {
+      "event_id": "EV-2da36f5f434ec04d",
+      "status": "pending",
+      "source_url": "https://entrackr.com/snippets/kutlerriai-raises-4-mn-from-narahari-investments-to-expand-ai-solutions-for-restaurants-12806062",
+      "source_content_hash": "53244f25b4cbaf9c33058f4c22fde7f401f9ae4522976fdb2b7559fef0be53d9",
+      "quote": "Houston and Bhubaneswar-based startup Kutlerri.ai has raised $4 million from Houston-based Narahari Investments.",
+      "quote_hash": "226176f61e01c39e667417824a8d6c845e1973a4f4905d7eae9feb222a76ff2b",
+      "reason": "已捕获独立融资正文明确Funding Date: September 30, 2026，且10月已有同金额同投资方报道，11月13日Entrackr文章日不能当作新融资日。保留本轮金额、公司研究与原文，待原始公告日期核实后恢复，不据人物/产品规范化队列否定公司身份。",
+      "reviewed_by": "Codex responsible original-source review",
+      "reviewed_at": "2026-11-14T06:01:55.684Z",
+      "company_name": "Kutlerri.ai",
+      "corroborating_source_id": "FISRC-5598c47b1f45be47",
+      "next_action": "verify_original_announcement_date_before_release"
     }
   ],
   "resolutions": [

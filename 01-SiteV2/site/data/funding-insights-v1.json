@@ -15,7 +15,7 @@
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-11-14T05:37:28.139Z"
+      "generated_at": "2026-11-14T06:06:53.313Z"
     },
     "market_category_framework": {
       "name": "CB Insights AI 100 2026",
@@ -5016,7 +5016,7 @@
     },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-6a612f7eec11e8c8",
+      "funding_insight_id": "FI-41196b6e56075832",
       "triggered_by_event_id": "EV-374527abd076ac77",
       "as_of_date": "2026-11-14",
       "company": {
@@ -5093,7 +5093,7 @@
         "round": "A轮",
         "amount": "$15 million",
         "total_raised": "约2000万美元",
-        "announced_at": "2026-11-07",
+        "announced_at": "2026-11-05",
         "investor_disclosure_status": "disclosed",
         "investors": [
           {
@@ -5270,6 +5270,12 @@
             "quote": "The round brings Firmly’s total funding to about $20 million.",
             "source_content_hash": "19ac4c788c5ef12f846153d74e90704c683aaa778bd0fbf3b55b1ab743e16e28",
             "quote_hash": "74e45b31362303b5a52b9d557a7b908430f8245b13581f55843f13d2cf75862a"
+          },
+          {
+            "source_id": "FISRC-44be59bba74e5d8c",
+            "quote": "We've raised $15 million in Series A funding and launched Ask Agent, accelerating our mission to make every merchant ready for agentic commerce.",
+            "source_content_hash": "349ff5c644eb7ff7c43d1e14ca4e72e7f8ef58c2d2a5de018b46ac5d41a39b78",
+            "quote_hash": "e527b265559b6df0f8b207668cc6aa533365a2da1e7651eb71b642bd56ddce54"
           }
         ],
         "round_code": "series_a",
@@ -5300,7 +5306,7 @@
             "event_id": "EV-374527abd076ac77",
             "round_original": "A轮",
             "amount": "$15 million",
-            "announced_at": "2026-11-07",
+            "announced_at": "2026-11-05",
             "evidence_refs": [
               {
                 "source_id": "FISRC-dff507a56e5020e9",
@@ -5319,6 +5325,12 @@
                 "quote": "The round brings Firmly’s total funding to about $20 million.",
                 "source_content_hash": "19ac4c788c5ef12f846153d74e90704c683aaa778bd0fbf3b55b1ab743e16e28",
                 "quote_hash": "74e45b31362303b5a52b9d557a7b908430f8245b13581f55843f13d2cf75862a"
+              },
+              {
+                "source_id": "FISRC-44be59bba74e5d8c",
+                "quote": "We've raised $15 million in Series A funding and launched Ask Agent, accelerating our mission to make every merchant ready for agentic commerce.",
+                "source_content_hash": "349ff5c644eb7ff7c43d1e14ca4e72e7f8ef58c2d2a5de018b46ac5d41a39b78",
+                "quote_hash": "e527b265559b6df0f8b207668cc6aa533365a2da1e7651eb71b642bd56ddce54"
               }
             ]
           }
@@ -5351,7 +5363,8 @@
           "historical_round_count": 1
         },
         "current_source_ids": [
-          "FISRC-dff507a56e5020e9"
+          "FISRC-dff507a56e5020e9",
+          "FISRC-44be59bba74e5d8c"
         ]
       },
       "products": [
@@ -5873,7 +5886,7 @@
       "funding_history": [
         {
           "event_id": "EV-374527abd076ac77",
-          "date": "2026-11-07",
+          "date": "2026-11-05",
           "title": "摩根大通和万事达卡支持西雅图初创公司Firmly对AI购物智能体的押注",
           "amount": "$15 million",
           "source_refs": [
@@ -5933,6 +5946,19 @@
           "source_artifact_id": null,
           "raw_id": null,
           "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-44be59bba74e5d8c",
+          "source_url": "https://www.firmly.ai/blog/series-a",
+          "title": "Building the infrastructure for commerce's next chapter",
+          "publisher": "firmly.ai",
+          "capture_method": "original_http",
+          "captured_at": "2026-11-14T05:58:32.415Z",
+          "content_hash": "349ff5c644eb7ff7c43d1e14ca4e72e7f8ef58c2d2a5de018b46ac5d41a39b78",
+          "source_class": "official_candidate",
+          "source_artifact_id": "SA-01377cdb9b15d605",
+          "raw_id": "RAW-8962d77e26015d3c",
+          "purpose": "current_round"
         }
       ],
       "model_provenance": {
@@ -5952,7 +5978,7 @@
       "customer_research": {
         "status": "verified_customers_found",
         "verified_customer_count": 5,
-        "searched_source_count": 4
+        "searched_source_count": 5
       },
       "entity_link_coverage": {
         "products": {
@@ -5977,13 +6003,13 @@
         "EV-374527abd076ac77"
       ],
       "aggregation": {
-        "key": "EN-82d88cebead743ad|series_a|USD:exact:15000000:::|2026-11-07",
+        "key": "EN-82d88cebead743ad|series_a|USD:exact:15000000:::|2026-11-05",
         "event_count": 1,
         "strategy": "reviewed_company_round_date_and_normalized_amount"
       },
       "historical_rounds": [
         {
-          "funding_insight_id": "FI-6a612f7eec11e8c8",
+          "funding_insight_id": "FI-41196b6e56075832",
           "event_ids": [
             "EV-374527abd076ac77"
           ],
@@ -6000,7 +6026,7 @@
             "status": "exact",
             "display_zh": "1500 万美元"
           },
-          "announced_at": "2026-11-07",
+          "announced_at": "2026-11-05",
           "disclosure_status": "disclosed",
           "is_summary": false,
           "counts_toward_known_total": true,
