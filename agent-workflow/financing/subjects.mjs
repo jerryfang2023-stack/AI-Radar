@@ -20,6 +20,7 @@ const latestFirst = (a,b) => String(b.financing?.announced_at || '').localeCompa
 
 export function buildFundingSubjects(input, review = {}) {
   if (review.version && review.version !== 'FINANCING-CARD-REVIEW-1') throw new Error('invalid_financing_card_review');
+  if(review.source_snapshot_preference_from && !/^\d{4}-\d{2}-\d{2}$/u.test(review.source_snapshot_preference_from))throw new Error('invalid_source_snapshot_preference_date');
   const originals = new Map(input.map(c => [c.funding_insight_id, c]));
   const duplicateIds = new Set();
   const events = new Map(input.map(c => [c.funding_insight_id, structuredClone(c)]));
@@ -118,10 +119,12 @@ export function buildFundingSubjects(input, review = {}) {
     card.source_card_ids=[...new Set(group.flatMap(c=>[c.funding_insight_id,...c.source_card_ids||[]]))];
     // The latest accepted round owns current source metadata; an older capture
     // of the same URL must not rebind current quotes to an unavailable old body.
-    const sourceIds=new Set();
-    card.research_sources=group.flatMap(c=>c.research_sources||[]).filter(source=>{
-      if(sourceIds.has(source.source_id))return false;sourceIds.add(source.source_id);return true;
-    });
+    const sources=group.flatMap(c=>c.research_sources||[]),sourceIds=new Set();
+    // A declared rollout boundary preserves legacy published snapshots until
+    // that subject receives a newly accepted round; it never approves evidence.
+    card.research_sources=review.source_snapshot_preference_from && String(group[0].as_of_date || '')<review.source_snapshot_preference_from
+      ? unique(sources,s=>s.source_id)
+      : sources.filter(source=>{if(sourceIds.has(source.source_id))return false;sourceIds.add(source.source_id);return true;});
     card.historical_rounds=group.map(c=>({funding_insight_id:c.funding_insight_id,event_ids:[...new Set([c.triggered_by_event_id,...c.source_event_ids||[]].filter(Boolean))],round:c.financing.round,round_code:c.financing.round_code,round_original:c.financing.round_original,amount_original:c.financing.amount_original,amount_normalized:c.financing.amount_normalized,announced_at:c.financing.announced_at,disclosure_status:c.financing.disclosure_status,is_summary:c.financing.round_code==='multi_round',counts_toward_known_total:c.financing.round_code!=='multi_round',is_current:c.funding_insight_id===card.funding_insight_id,investors:c.financing.investors||[],evidence_refs:c.financing.evidence_refs||[]}));
     card.aggregation={...card.aggregation,strategy:'reviewed_funding_subject',subject_id:key,event_count:group.length,source_card_count:card.source_card_ids.length};
     for(const event of group){

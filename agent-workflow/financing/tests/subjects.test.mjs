@@ -147,9 +147,12 @@ test('current subject source snapshots win over older captures of the same sourc
  const old=card('old-source','Acme','2026-07-01','seed',10),latest=card('new-source','Acme','2026-11-13','series_a',20);
  old.research_sources=[{source_id:'shared-url',content_hash:'older-body',captured_at:'2026-07-01T00:00:00Z'}];
  latest.research_sources=[{source_id:'shared-url',content_hash:'current-body',captured_at:'2026-11-13T00:00:00Z'},{source_id:'current-only',content_hash:'current-independent-body'}];
- const snapshot=structuredClone([old,latest]),out=buildFundingSubjects([old,latest]);
+ latest.as_of_date='2026-11-14';
+ const snapshot=structuredClone([old,latest]),out=buildFundingSubjects([old,latest],{source_snapshot_preference_from:'2026-11-14'});
  assert.equal(out.cards[0].research_sources[0].content_hash,'current-body');
  assert.deepEqual(out.cards[0].research_sources.map(s=>s.source_id),['shared-url','current-only']);
  assert.equal(out.event_cards.find(c=>c.triggered_by_event_id==='EV-old-source').research_sources[0].content_hash,'older-body');
+ assert.equal(buildFundingSubjects([old,latest],{source_snapshot_preference_from:'2026-11-15'}).cards[0].research_sources[0].content_hash,'older-body');
+ assert.throws(()=>buildFundingSubjects([old,latest],{source_snapshot_preference_from:'unknown'}),/invalid_source_snapshot_preference_date/);
  assert.deepEqual([old,latest],snapshot);
 });
