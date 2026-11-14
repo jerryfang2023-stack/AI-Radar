@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import crypto from 'node:crypto';
-import {buildFundingSubjects} from '../subjects.mjs';
+import {buildFundingSubjects,productAssertionHash} from '../subjects.mjs';
 test('reviewed product alias excerpts retain matching quote hashes',()=>{
  const review=JSON.parse(fs.readFileSync(new URL('../../../01-SiteV2/content/12-applications/funding-insights/card-review.json',import.meta.url)));
  for(const subject of Object.values(review.subjects))for(const product of subject.product_alias_evidence||[])for(const ref of product.evidence_refs||[]){
@@ -124,4 +124,20 @@ test('subject histories preserve distinct event provenance exactly once without 
  assert.deepEqual(out.cards[0].historical_rounds[0].event_ids,['EV-bound','EV-other']);
  assert.equal(out.cards[0].aggregation.event_count,1);
  assert.deepEqual(item,before);
+});
+
+
+test('changed current product assertions keep current evidence and preserve prior round records',()=>{
+ const old=card('old-product','Acme','2026-07-01','pre_series_a',10),latest=card('new-product','Acme','2026-11-13','pre_series_a_plus',20);
+ old.products[0].description='Legacy CPU with RVA23';latest.products[0].description='Current CPU with SMT4';
+ const snapshot=structuredClone([old,latest]);
+ const review={subjects:{Acme:{product_evidence_reviews:[{product_name:'Product',source_event_id:'EV-new-product',review_status:'accepted',disposition:'current_product_evidence_only',reviewed_by:'responsible reviewer',reviewed_at:'2026-11-14T00:00:00Z',reason:'current source supports changed current product assertion',assertion_sha256:productAssertionHash(latest.products[0])}]}}};
+ const result=buildFundingSubjects([old,latest],review);
+ assert.equal(result.cards.length,1);assert.equal(result.event_cards.length,2);
+ assert.deepEqual(result.cards[0].products[0].evidence_refs,latest.products[0].evidence_refs);
+ assert.equal(result.cards[0].products[0].description,'Current CPU with SMT4');
+ assert.equal(result.cards[0].historical_rounds.length,2);assert.deepEqual([old,latest],snapshot);
+ assert.equal(buildFundingSubjects([old,latest]).cards[0].products[0].evidence_refs.length,2);
+ review.subjects.Acme.product_evidence_reviews[0].assertion_sha256='unrelated';
+ assert.throws(()=>buildFundingSubjects([old,latest],review),/current_product_evidence_review_mismatch/);
 });
