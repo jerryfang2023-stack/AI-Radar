@@ -194,3 +194,15 @@ test('newer main retains reviewed same-day evidence and research while adding ch
   assert.equal(read(path.join(root,research)).queue.find(row=>row.event_id==='old').status,'deduplicated');
   assert.deepEqual(read(path.join(root,facts)),['accepted-facts']);
 });
+
+
+test('source fact review recovery preserves newer dispositions and restores checkpoint-only sources',t=>{
+  const root=temporary(t),artifact=temporary(t),file='01-SiteV2/content/11-databases/data-center-v4/source-fact-reviews.json';
+  write(path.join(root,file),{schema_version:'SOURCE-FACT-REVIEW-1',sources:{shared:{reason:'newer accepted review'},later:{reason:'accepted later'}}});
+  write(path.join(artifact,'files',file),{schema_version:'SOURCE-FACT-REVIEW-1',sources:{shared:{reason:'stale review'},prepared:{reason:'resumed original review'}}});
+  write(path.join(artifact,'manifest.json'),{version:'FINANCING-CHECKPOINT-1',date,base_commit:'old',entries:[{file,hash:digest(fs.readFileSync(path.join(artifact,'files',file),'utf8'))}]});
+  restore(root,artifact,date);
+  assert.deepEqual(read(path.join(root,file)).sources,{shared:{reason:'newer accepted review'},later:{reason:'accepted later'},prepared:{reason:'resumed original review'}});
+  write(path.join(root,file),{schema_version:'unsupported',sources:{}});
+  assert.throws(()=>restore(root,artifact,date),/source_fact_review_schema_mismatch/u);
+});

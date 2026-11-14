@@ -3207,3 +3207,23 @@ test('frozen 36kr inputs recover the visible publication day without changing th
  assert.equal(e.event_time,'2026-11-12');assert.equal(e.disclosed_at,'2026-11-12');
  assert.equal(source.raw.published_at,'2026-11-13');
 });
+
+
+test('source-bound lead-only review preserves accepted intake and removes disputed facts',()=>{
+ const quote='AI芯片公司Acme完成数亿元Pre-A轮融资，用于研发AI推理芯片。';
+ const source=entry('reviewed-summary','AI芯片公司Acme完成数亿元Pre-A轮融资',quote.repeat(20),{language:'zh'});
+ source.intake_document={intake_diagnostics:{eligible_for_v4_extraction:false,raw_qc_downstream_use:'lead_only'}};
+ const original=structuredClone(source),baseline=buildBundle([source],taxonomy,date,'2026-07-16T00:00:00Z');
+ // Legacy pooled/eligibility booleans alone are not financing fact dispositions.
+ assert.ok(baseline.canonical_events.some(e=>e.event_type==='funding'));
+ const sourceId=baseline.source_artifacts[0].source_artifact_id;
+ const review={disposition:'lead_only',reviewed_by:'responsible reviewer',reviewed_at:'2026-07-16T00:00:00Z',reason:'summary round conflicts with captured full original',source_url:source.raw.original_url,content_hash:source.raw.content_hash,source_quote:quote,quote_sha256:crypto.createHash('sha256').update(quote).digest('hex')};
+ const options={sourceFactReviews:{schema_version:'SOURCE-FACT-REVIEW-1',sources:{[sourceId]:review}}};
+ const b=buildBundle([source],taxonomy,date,'2026-07-16T00:00:00Z',options);
+ assert.equal(b.raw_documents.length,1);assert.equal(b.raw_documents[0].content_hash,source.raw.content_hash);
+ assert.equal(b.claims.length,0);assert.equal(b.canonical_events.length,0);
+ assert.ok(b.qa_queue.some(r=>r.reason==='reviewed_source_lead_only'));
+ assert.deepEqual(source,original);
+ review.content_hash='unrelated-body';
+ assert.throws(()=>buildBundle([source],taxonomy,date,'2026-07-16T00:00:00Z',options),/source_fact_review_binding_mismatch/);
+});

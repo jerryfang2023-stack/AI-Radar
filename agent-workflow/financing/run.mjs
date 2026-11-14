@@ -119,6 +119,7 @@ async function main() {
     const plans = productionPlan(date, directory, { extract: extractionScope.source_refs.length > 0 });
     const codeVersion = digest([intake, extractionScope]);
     const reviewedClaims = path.join(root, `01-SiteV2/content/11-databases/model-assist-v1/${date}.json`);
+    const sourceFactReviews = path.join(root, '01-SiteV2/content/11-databases/data-center-v4/source-fact-reviews.json');
     const dependencyText = (file, seen = new Set()) => {
       if (seen.has(file) || !fs.existsSync(file)) return ''; seen.add(file);
       const body = fs.readFileSync(file, 'utf8');
@@ -127,7 +128,7 @@ async function main() {
     const previous = read(path.join(root,'01-SiteV2/site/data/data-center-v4-frontstage.json'));
     if (previous?.meta?.generatedAt) process.env.WAVESIGHT_FRONTSTAGE_GENERATED_AT = previous.meta.generatedAt;
     if (previous?.entityHistoryManifest?.generatedAt) process.env.WAVESIGHT_ENTITY_HISTORY_GENERATED_AT = previous.entityHistoryManifest.generatedAt;
-    const stages = plans.map(stage => ({ ...stage, version: digest(stage.commands.map(command => dependencyText(path.join(root,command[0]))).join('') + (stage.id === 'financing_tags' ? fs.readFileSync(new URL('./taxonomy.json', import.meta.url),'utf8') : '')), inputVersion: stage.id === 'facts' ? () => fs.existsSync(reviewedClaims) ? digest(fs.readFileSync(reviewedClaims,'utf8')) : 'missing_reviewed_claims' : undefined, valid: () => stage.outputs.every(file => fs.existsSync(path.join(root, file))) }));
+    const stages = plans.map(stage => ({ ...stage, version: digest(stage.commands.map(command => dependencyText(path.join(root,command[0]))).join('') + (stage.id === 'financing_tags' ? fs.readFileSync(new URL('./taxonomy.json', import.meta.url),'utf8') : '')), inputVersion: stage.id === 'facts' ? () => fs.existsSync(reviewedClaims) ? digest([fs.readFileSync(reviewedClaims,'utf8'),fs.existsSync(sourceFactReviews)?fs.readFileSync(sourceFactReviews,'utf8'):'']) : 'missing_reviewed_claims' : undefined, valid: () => stage.outputs.every(file => fs.existsSync(path.join(root, file))) }));
     await runStages({ date, codeVersion, file: path.join(directory, 'stages.json'), stages, execute: async stage => {
       const fd = fs.openSync(path.join(directory, `${stage.id}.log`), 'a');
       try {
