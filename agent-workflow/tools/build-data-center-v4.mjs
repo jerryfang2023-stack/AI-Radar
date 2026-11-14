@@ -2035,6 +2035,9 @@ export function reviewedFundingDate(review, { subject, amount, publishedAt, sour
 }
 
 export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date().toISOString(), options = {}) {
+  const sourceFactReviews = options.sourceFactReviews
+    || readJson(path.join(outputRoot, "source-fact-reviews.json"), { schema_version: "SOURCE-FACT-REVIEW-1", sources: {} });
+  if (sourceFactReviews.schema_version !== "SOURCE-FACT-REVIEW-1") throw new Error("invalid_source_fact_review_schema");
   const targetedFundingPolicy = options.targetedFundingPolicy
     || readJson(path.join(outputRoot, date, "targeted-funding-authorization.json"), {});
   const historicalFundingPolicy = options.historicalFundingPolicy
@@ -2136,7 +2139,18 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       && targetedFundingPolicy.source_refs?.includes(artifact.source_artifact_id)
       && cleanString(raw.published_at).slice(0, 10) >= targetedFundingPolicy.from
       && cleanString(raw.published_at).slice(0, 10) <= targetedFundingPolicy.to;
-    const sourceEligibility = eventSourceEligibility(raw, artifact, title, date, {
+    const factReview = sourceFactReviews.sources?.[artifact.source_artifact_id];
+    const reviewedLeadOnly = factReview?.disposition === "lead_only";
+    if (reviewedLeadOnly && (
+      !cleanString(factReview.reviewed_by) || !Number.isFinite(Date.parse(factReview.reviewed_at || ""))
+      || !cleanString(factReview.reason) || factReview.source_url !== artifact.source_url
+      || factReview.content_hash !== artifact.content_hash || !cleanString(factReview.source_quote)
+      || !bodyOriginal.includes(factReview.source_quote)
+      || crypto.createHash("sha256").update(factReview.source_quote).digest("hex") !== factReview.quote_sha256
+    )) throw new Error(`source_fact_review_binding_mismatch:${artifact.source_artifact_id}`);
+    const sourceEligibility = reviewedLeadOnly
+      ? { accepted: false, reason: "reviewed_source_lead_only" }
+      : eventSourceEligibility(raw, artifact, title, date, {
       eventType: (targetedFundingAllowed || newHistoricalSources.has(artifact.source_artifact_id)) ? "funding" : (reviewedRepair ? proposedModelClaim?.event_type : candidateDeterministicRule?.eventType) || proposedModelClaim?.event_type || "",
       allowHistoricalFunding: options.allowHistoricalFunding === true || targetedFundingAllowed || historicalFundingAuthorized(raw, artifact, historicalFundingPolicy),
     });

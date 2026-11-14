@@ -48,13 +48,14 @@ export function restore(root, directory, date) {
   const intakePath = `01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`;
   const researchPath = `01-SiteV2/content/12-applications/funding-insights/${date}.json`;
   const modelPath = `01-SiteV2/content/11-databases/model-assist-v1/${date}.json`;
+  const sourceReviewsPath = '01-SiteV2/content/11-databases/data-center-v4/source-fact-reviews.json';
   const supplementalPath = `agent-workflow/reports/financing/${date}/supplemental.json`;
   const union = (older, newer, key) => [...new Map([...(older || []), ...(newer || [])].map(row => [row[key], row])).values()];
   for (const entry of manifest.entries) {
     // On a newer main, reuse only this run's inputs/results. Old global indexes
     // and registries must never overwrite financing accepted after the artifact.
     if(changedBase && !entry.file.startsWith(`agent-workflow/reports/financing/${date}/`)
-      && ![intakePath, researchPath, modelPath].includes(entry.file)) continue;
+      && ![intakePath, researchPath, modelPath, sourceReviewsPath].includes(entry.file)) continue;
     const file = path.join(root,entry.file), source = path.join(directory,'files',entry.file);
     // Accepted main owns responsible dispositions. An older artifact must not
     // restore an exclusion over a newer pending review on the same run date.
@@ -63,6 +64,12 @@ export function restore(root, directory, date) {
     fs.mkdirSync(path.dirname(file),{recursive:true});
     if (entry.file === intakePath && fs.existsSync(file)) {
       write(file, changedBase ? mergeSourceIntakes(read(source),read(file)) : mergeSourceIntakes(read(file),read(source)));
+    } else if (changedBase && fs.existsSync(file) && entry.file === sourceReviewsPath) {
+      const current=read(file), incoming=read(source);
+      if(current.schema_version!=='SOURCE-FACT-REVIEW-1' || incoming.schema_version!=='SOURCE-FACT-REVIEW-1')throw new Error('checkpoint_source_fact_review_schema_mismatch');
+      // Preserve main's later accepted per-body dispositions while adding
+      // non-conflicting reviewed sources prepared by the resumed artifact.
+      write(file,{...incoming,...current,sources:{...incoming.sources,...current.sources}});
     } else if (changedBase && fs.existsSync(file) && entry.file === researchPath) {
       const current=read(file), incoming=read(source);
       const eventIds=card=>[card.triggered_by_event_id,...(card.source_event_ids || [])].filter(Boolean);

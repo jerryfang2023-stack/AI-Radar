@@ -1,9 +1,15 @@
+import {createHash} from 'node:crypto';
 import { enrichFundingHistory } from '../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs';
 import {crossCurrencyRoundEvidence} from './cross-currency-round.mjs';
 // The public list is one card per reviewed funding subject. Event records remain
 // independent inputs for histories and capital-flow statistics.
 const normalized = value => String(value || '').normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
 const unique = (rows, key) => [...new Map(rows.map(row => [key(row), row])).values()];
+export function productAssertionHash(product) {
+  return createHash('sha256').update(JSON.stringify([product.name,product.description || product.summary || '',
+    product.target_customers || '',product.features || [],
+    (product.evidence_refs || []).map(ref=>[ref.source_id,ref.quote,ref.source_content_hash || ''])])).digest('hex');
+}
 export function fundingSubjectKey(card, review = {}) {
   const id = card.company?.application_entity_id || card.company?.entity_id;
   const match = Object.entries(review.subjects || {}).find(([,row]) => row.application_ids?.includes(id));
@@ -86,14 +92,26 @@ export function buildFundingSubjects(input, review = {}) {
     group.sort(latestFirst);const card=structuredClone(enrichFundingHistory(group)[0]);
     const decision=review.subjects?.[key]||{};
     const productAliases=decision.product_aliases||{};
-    const products=new Map();
-    for(const product of group.flatMap(c=>c.products||[])){
+    const products=new Map(),currentEvidenceKeys=new Set();
+    const productReviews=(decision.product_evidence_reviews || []).filter(row=>row.review_status==='accepted'
+      && row.source_event_id===group[0].triggered_by_event_id);
+    for(const owner of group)for(const product of owner.products||[]){
       const name=productAliases[product.name]||product.name,k=normalized(name);
       if(!k)continue;
+      const productReview=owner===group[0] && productReviews.find(row=>normalized(row.product_name)===k);
+      if(productReview){
+        if(productReview.disposition!=='current_product_evidence_only' || !productReview.reviewed_by || !productReview.reason
+          || !Number.isFinite(Date.parse(productReview.reviewed_at || '')) || !product.evidence_refs?.length
+          || productReview.assertion_sha256!==productAssertionHash(product))throw new Error(`current_product_evidence_review_mismatch:${name}`);
+        currentEvidenceKeys.add(k);
+      }
       const previous=products.get(k);
       if(!previous)products.set(k,{...structuredClone(product),name});
-      else previous.evidence_refs=unique([...previous.evidence_refs||[],...product.evidence_refs||[]],r=>`${r.source_id}:${r.quote}`);
+      // Explicit current-assertion review keeps historical quotations on their
+      // historical inputs instead of attaching them to changed current facts.
+      else if(!currentEvidenceKeys.has(k))previous.evidence_refs=unique([...previous.evidence_refs||[],...product.evidence_refs||[]],r=>`${r.source_id}:${r.quote}`);
     }
+    if(productReviews.some(row=>!currentEvidenceKeys.has(normalized(row.product_name))))throw new Error('current_product_evidence_review_target_missing');
     card.products=[...products.values()];
     card.company.application_entity_id=key;
     card.source_event_ids=[...new Set(group.flatMap(c=>[c.triggered_by_event_id,...c.source_event_ids||[]]).filter(Boolean))];
