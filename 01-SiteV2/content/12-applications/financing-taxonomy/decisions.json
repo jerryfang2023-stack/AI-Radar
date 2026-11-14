@@ -38242,6 +38242,50 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-11-14T00:57:31.095Z"
+    },
+    "EV-f3f0e0675232e0d4": {
+      "id": "EV-f3f0e0675232e0d4",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "自研智能体原生RISC-V服务器级CPU内核，属AI芯片。",
+      "input_hash": "aef3d766da1f68755e3369b9488dcedd84562cc0a958347565c37bf320e54088",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a916db75f8d2559b",
+          "quote": "上海灵睿智芯计算技术有限公司（以下简称“灵睿智芯”）是全栈自研高端RISC-V CPU内核、智能体CPU及领域增强处理器产品研发企业。"
+        },
+        {
+          "source_id": "FISRC-ec5f3470e236a735",
+          "quote": "2026年初，灵睿智芯发布了国内首款智能体原生、服务器级高性能RISC-V CPU内核——P100 v1。"
+        },
+        {
+          "source_id": "FISRC-a916db75f8d2559b",
+          "quote": "其服务器级、智能体CPU内核P100拥有国内唯 一的动态同时多线程（SMT4）技术，单核最高支持4线程，并可在SMT1至SMT4之间动态切换，将I/O等待间隙转化为有效算力"
+        }
+      ],
+      "provider": "responsible_source_review",
+      "model": "",
+      "generated_at": "2026-11-14T05:34:57.609Z",
+      "source_resolution_review": {
+        "reviewed_by": "Codex responsible source review",
+        "reviewed_at": "2026-11-14T05:34:57.609Z",
+        "reason": "Captured full Pedaily article and independent Wallstreetcn/Sohu agree Pre-A+; newsflash body omits +. Existing product and company research reused without a new provider call.",
+        "superseded_unpublished_event": "EV-4af131f039cc7cc9",
+        "canonical_event": "EV-f3f0e0675232e0d4",
+        "source_url": "https://news.pedaily.cn/202611/571794.shtml",
+        "content_hash": "23d22e01ed75c4174c218460db96bc676e859f3cb4ca58ec35667a764c634aec"
+      }
     }
   },
   "generated_at": "2026-11-14T00:57:31.095Z"

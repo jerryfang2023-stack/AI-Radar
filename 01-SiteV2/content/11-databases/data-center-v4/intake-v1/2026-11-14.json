@@ -1,7 +1,7 @@
 {
   "schema_version": "SOURCE-INTAKE-V1.1",
   "data_date": "2026-11-14",
-  "generated_at": "2026-11-14T00:51:56.899Z",
+  "generated_at": "2026-11-14T05:19:51.626Z",
   "collection_batches": [
     {
       "raw_ids": [
@@ -271,6 +271,14 @@
       ],
       "eligible_raw_ids": [
         "RAW-923c8fdcb9af9fdb"
+      ]
+    },
+    {
+      "raw_ids": [
+        "RAW-abf79b214c949fda"
+      ],
+      "eligible_raw_ids": [
+        "RAW-abf79b214c949fda"
       ]
     }
   ],
@@ -1498,6 +1506,18 @@
         "evidence://2f2a4b3b095175ebcf67a7ff31f0220cdb60c045677261828f9b6f27a94279ec"
       ],
       "content_hash": "2f2a4b3b095175ebcf67a7ff31f0220cdb60c045677261828f9b6f27a94279ec"
+    },
+    {
+      "source_artifact_id": "SA-095668cf1c0c4389",
+      "source_url": "https://news.pedaily.cn/202611/571794.shtml",
+      "canonical_url": "https://news.pedaily.cn/202611/571794.shtml",
+      "publisher": "news.pedaily.cn",
+      "capture_method": "reused_accepted_research_original",
+      "captured_at": "2026-11-14T00:54:02.274Z",
+      "snapshot_refs": [
+        "evidence://23d22e01ed75c4174c218460db96bc676e859f3cb4ca58ec35667a764c634aec"
+      ],
+      "content_hash": "23d22e01ed75c4174c218460db96bc676e859f3cb4ca58ec35667a764c634aec"
     }
   ],
   "raw_documents": [
@@ -5682,11 +5702,52 @@
         "key_excerpts": [],
         "eligible_for_v4_extraction": true
       }
+    },
+    {
+      "schema_version": "RAW-V4.0",
+      "raw_id": "RAW-abf79b214c949fda",
+      "source_artifact_id": "SA-095668cf1c0c4389",
+      "source_url": "https://news.pedaily.cn/202611/571794.shtml",
+      "canonical_url": "https://news.pedaily.cn/202611/571794.shtml",
+      "publisher": "news.pedaily.cn",
+      "author": "",
+      "published_at": "2026-11-13",
+      "captured_at": "2026-11-14T00:54:02.274Z",
+      "language": "zh",
+      "document_type": "article",
+      "title_original": "灵睿智芯完成数亿元Pre-A+轮融资，押注RISC-V智能体CPU",
+      "title_zh": "",
+      "body_ref": "evidence://23d22e01ed75c4174c218460db96bc676e859f3cb4ca58ec35667a764c634aec",
+      "content_hash": "23d22e01ed75c4174c218460db96bc676e859f3cb4ca58ec35667a764c634aec",
+      "capture_method": "reused_accepted_research_original",
+      "extraction_status": "accepted",
+      "market_scope": {
+        "source_registry_id": "",
+        "source_region": "",
+        "market_region": "",
+        "china_market_match": false,
+        "china_market_match_basis": ""
+      },
+      "intake_diagnostics": {
+        "acquisition_channel": "financing",
+        "search_path": "",
+        "evidence_object_type": "original_full_text",
+        "evidence_object_usable": true,
+        "evidence_strength": "",
+        "raw_qc_decision": "accepted",
+        "raw_qc_downstream_use": "v4_claim_extraction",
+        "extraction_quality": "medium",
+        "readability_score": 0,
+        "has_full_text": true,
+        "origin_fetch_status": "success",
+        "key_excerpts": [],
+        "eligible_for_v4_extraction": true
+      }
     }
   ],
   "counts": {
-    "source_artifacts": 102,
-    "raw_documents": 102,
-    "eligible_documents": 102
+    "source_artifacts": 103,
+    "raw_documents": 103,
+    "eligible_documents": 103
   }
 }

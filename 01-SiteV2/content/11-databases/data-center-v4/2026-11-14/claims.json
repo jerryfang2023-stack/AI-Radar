@@ -297,27 +297,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-c0be290c5e323a41",
-    "raw_id": "RAW-3dd896c2affa8b08",
-    "claim_type": "funding",
-    "subject": "灵睿智芯",
-    "predicate": "funding",
-    "object": "，押注RISC-V智能体CPU",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-3dd896c2affa8b08",
-      "start": 0,
-      "end": 59
-    },
-    "source_quote": "上海灵睿智芯计算技术有限公司11月13日宣布完成数亿元Pre-A 轮融资，美团战投领投，多家头部产业资本及老股东跟投。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-249a5f8b59c36d7f",
     "raw_id": "RAW-bb4b9ac09f1c24d0",
     "claim_type": "funding",
@@ -1315,6 +1294,27 @@
     "source_quote": "Anthropic 提交的文件显示，英伟达同意在与 IPO 同步进行的 260 亿美元私募配售中认购约 100 亿美元股份。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7da359d788ad5a86",
+    "raw_id": "RAW-abf79b214c949fda",
+    "claim_type": "funding",
+    "subject": "灵睿智芯",
+    "predicate": "funding",
+    "object": "，押注RISC-V智能体CPU",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-abf79b214c949fda",
+      "start": 67,
+      "end": 116
+    },
+    "source_quote": "投资界（ID：pedaily2012）11月13日消息，灵睿智芯宣布完成数亿元Pre-A+轮融资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
     "verification_status": "accepted"
   }
 ]
