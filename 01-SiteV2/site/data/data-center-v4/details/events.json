@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-13",
-    "currentDate": "2026-11-13",
-    "eventCount": 4448,
+    "latestDataDate": "2026-11-14",
+    "currentDate": "2026-11-14",
+    "eventCount": 4461,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,8 +54,487 @@
   },
   "events": [
     {
+      "id": "EV-150794ef70b90141",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-13",
+      "updatedDate": "2026-11-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "“青葵智造”完成亿元A轮融资-36氪",
+      "originalTitle": "",
+      "subject": "“青葵智造”",
+      "action": "完成亿元A轮融资",
+      "object": "-36氪",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-94c0a71bd3497326",
+        "EN-5029a2c69d76bef9"
+      ],
+      "entityNames": [
+        "青葵智造",
+        "“青葵智造”"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-c7e8f616262d979e",
+          "subject": "“青葵智造”",
+          "object": "-36氪",
+          "quote": "36氪获悉，面向科学研发的Physical AI公司“青葵智造”近日宣布完成亿元A轮融资，由创东方投资、飞荣达股份及金辉大数据共同参与。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-d3f751a9c29f55fa",
+          "publisher": "www.36kr.com",
+          "url": "https://www.36kr.com/newsflashes/4067555949319041"
+        }
+      ],
+      "sourceUrl": "https://www.36kr.com/newsflashes/4067555949319041",
+      "publisher": "www.36kr.com",
+      "sourceExcerpt": "36氪获悉，面向科学研发的Physical AI公司“青葵智造”近日宣布完成亿元A轮融资，由创东方投资、飞荣达股份及金辉大数据共同参与。"
+    },
+    {
+      "id": "EV-1df5624821fce3f9",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-13",
+      "updatedDate": "2026-11-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 智能体初创公司 LangChain 估值达 $3B",
+      "originalTitle": "AI agent startup LangChain hits $3B valuation",
+      "subject": "LangChain",
+      "action": "funding",
+      "object": "$300 million Series C at a $3 billion valuation",
+      "metrics": [
+        "$300 million",
+        "$3 billion"
+      ],
+      "locations": [
+        "Singapore"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-f3f2184b56f946c6"
+      ],
+      "entityNames": [
+        "LangChain"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-a9e3960ddd92ea61",
+          "subject": "LangChain",
+          "object": "$300 million Series C at a $3 billion valuation",
+          "quote": "Agent management startup LangChain has raised a $300 million Series C at a $3 billion valuation led by CapitalG, with participation from investors, including Singapore’s GIC, DFJ Growth, IVP, and Sapphire Ventures, the company announced on Friday."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-af831e5f09db403a",
+          "publisher": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+      "publisher": "techcrunch.com",
+      "sourceExcerpt": "Agent management startup LangChain has raised a $300 million Series C at a $3 billion valuation led by CapitalG, with participation from investors, including Singapore’s GIC, DFJ Growth, IVP, and Sapphire Ventures, the company announced on Friday."
+    },
+    {
+      "id": "EV-2da36f5f434ec04d",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-13",
+      "updatedDate": "2026-11-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Kutlerri.ai 从 Narahari Investments 融资 400 万美元，以扩展面向餐厅的 AI 解决方案",
+      "originalTitle": "Kutlerri.ai raises $4 Mn from Narahari Investments to expand AI solutions for restaurants",
+      "subject": "Kutlerri.ai",
+      "action": "raises",
+      "object": "$4 Mn from Narahari Investments to expand AI solutions for restaurants",
+      "metrics": [
+        "$4 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-545b22d84a1f540f"
+      ],
+      "entityNames": [
+        "Kutlerri.ai"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-20862ce2b7e25624",
+          "subject": "Kutlerri.ai",
+          "object": "$4 Mn from Narahari Investments to expand AI solutions for restaurants",
+          "quote": "Houston and Bhubaneswar-based startup Kutlerri.ai has raised $4 million from Houston-based Narahari Investments."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-4c485820c7f26f0f",
+          "publisher": "entrackr.com",
+          "url": "https://entrackr.com/snippets/kutlerriai-raises-4-mn-from-narahari-investments-to-expand-ai-solutions-for-restaurants-12806062"
+        }
+      ],
+      "sourceUrl": "https://entrackr.com/snippets/kutlerriai-raises-4-mn-from-narahari-investments-to-expand-ai-solutions-for-restaurants-12806062",
+      "publisher": "entrackr.com",
+      "sourceExcerpt": "Houston and Bhubaneswar-based startup Kutlerri.ai has raised $4 million from Houston-based Narahari Investments."
+    },
+    {
+      "id": "EV-4af131f039cc7cc9",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-13",
+      "updatedDate": "2026-11-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "灵睿智芯完成数亿元Pre-A+轮融资，押注RISC-V智能体CPU",
+      "originalTitle": "",
+      "subject": "灵睿智芯",
+      "action": "完成数亿元Pre-A+轮融资",
+      "object": "，押注RISC-V智能体CPU",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-c0be290c5e323a41"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-eacc78bf8236df4f",
+        "EN-7f505bc9744206fd",
+        "EN-db36e7bd45191ce4"
+      ],
+      "entityNames": [
+        "上海灵睿智芯计算技术有限公司11月13日",
+        "灵睿智芯",
+        "Meituan"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-c0be290c5e323a41",
+          "subject": "灵睿智芯",
+          "object": "，押注RISC-V智能体CPU",
+          "quote": "上海灵睿智芯计算技术有限公司11月13日宣布完成数亿元Pre-A 轮融资，美团战投领投，多家头部产业资本及老股东跟投。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-2cd686a2fdc2bbd4",
+          "publisher": "www.pedaily.cn",
+          "url": "https://www.pedaily.cn/first/192126.shtml"
+        }
+      ],
+      "sourceUrl": "https://www.pedaily.cn/first/192126.shtml",
+      "publisher": "www.pedaily.cn",
+      "sourceExcerpt": "上海灵睿智芯计算技术有限公司11月13日宣布完成数亿元Pre-A 轮融资，美团战投领投，多家头部产业资本及老股东跟投。"
+    },
+    {
+      "id": "EV-71994dadaf12fd5d",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-13",
+      "updatedDate": "2026-11-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Desible.ai 完成由 Prime Venture Partners 领投的 32 Cr 卢比融资",
+      "originalTitle": "Desible.ai raises Rs 32 Cr led by Prime Venture Partners",
+      "subject": "Desible.ai",
+      "action": "funding",
+      "object": "Rs 32 crore funding round led by Prime Venture Partners with participation from Invention Engine",
+      "metrics": [
+        "Rs 32 crore"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-20109d8d00635e1a"
+      ],
+      "entityNames": [
+        "Desible.ai"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-a9b8f578d2a3a3f1",
+          "subject": "Desible.ai",
+          "object": "Rs 32 crore funding round led by Prime Venture Partners with participation from Invention Engine",
+          "quote": "Bengaluru-based AI startup Desible.ai has raised Rs 32 crore in a funding round led by Prime Venture Partners, with participation from existing investor Invention Engine."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-ffaadb07b8f743f9",
+          "publisher": "entrackr.com",
+          "url": "https://entrackr.com/snippets/desibleai-raises-rs-32-cr-led-by-prime-venture-partners-12805523"
+        }
+      ],
+      "sourceUrl": "https://entrackr.com/snippets/desibleai-raises-rs-32-cr-led-by-prime-venture-partners-12805523",
+      "publisher": "entrackr.com",
+      "sourceExcerpt": "Bengaluru-based AI startup Desible.ai has raised Rs 32 crore in a funding round led by Prime Venture Partners, with participation from existing investor Invention Engine."
+    },
+    {
+      "id": "EV-a691420f309b3d29",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-13",
+      "updatedDate": "2026-11-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI智能体基础设施公司「以太之心」完成数千万种子轮融资",
+      "originalTitle": "",
+      "subject": "AI智能体基础设施公司「以太之心」",
+      "action": "完成数千万种子轮融资",
+      "object": "AI智能体基础设施公司「以太之心」完成数千万种子轮融资",
+      "metrics": [
+        "数千万"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-7954bf4787e87bc0"
+        ]
+      },
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-f1358032635b4c8f"
+      ],
+      "entityNames": [
+        "以太之心"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-7954bf4787e87bc0",
+          "subject": "AI智能体基础设施公司「以太之心」",
+          "object": "投资界（ID：pedaily2012）消息，近日，以太之心宣布完成数千万种子轮融资。",
+          "quote": "投资界（ID：pedaily2012）消息，近日，以太之心宣布完成数千万种子轮融资。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-872cebe58e175081",
+          "publisher": "news.pedaily.cn",
+          "url": "https://news.pedaily.cn/202611/571842.shtml"
+        }
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202611/571842.shtml",
+      "publisher": "news.pedaily.cn",
+      "sourceExcerpt": "投资界（ID：pedaily2012）消息，近日，以太之心宣布完成数千万种子轮融资。"
+    },
+    {
+      "id": "EV-e2f52dc69efbbe91",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-13",
+      "updatedDate": "2026-11-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "36氪首发丨北航博士做AI4S，获亿元融资，要造自驱动实验室-36氪",
+      "originalTitle": "",
+      "subject": "36氪首发丨北航博士做AI4S，获亿元",
+      "action": "融资",
+      "object": "，要造自驱动实验室-36氪",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "regulatory_jurisdiction"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-24cdc4f4a436ce84",
+          "CL-5ce45a5788a1c031"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d76c23e00662958a"
+      ],
+      "entityNames": [
+        "36氪首发丨北航博士做AI4S，获亿元"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-24cdc4f4a436ce84",
+          "subject": "36氪首发丨北航博士做AI4S，获亿元",
+          "object": "，要造自驱动实验室-36氪",
+          "quote": "36氪首发丨北航博士做AI4S，获亿元融资，要造自驱动实验室"
+        },
+        {
+          "id": "CL-5ce45a5788a1c031",
+          "subject": "36氪首发丨北航博士做AI4S，获亿元",
+          "object": "，要造自驱动实验室-36氪",
+          "quote": "硬氪获悉，面向科学研发的Physical AI公司——青葵智造近日宣布完成亿元A轮融资，由创东方投资、飞荣达股份及金辉大数据共同参与。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-45416bf7d4a4ccd9",
+          "publisher": "www.36kr.com",
+          "url": "https://www.36kr.com/p/4067548192576389"
+        }
+      ],
+      "sourceUrl": "https://www.36kr.com/p/4067548192576389",
+      "publisher": "www.36kr.com",
+      "sourceExcerpt": "36氪首发丨北航博士做AI4S，获亿元融资，要造自驱动实验室"
+    },
+    {
       "id": "EV-28354a9359e59d75",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "funding",
@@ -102,7 +581,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-380170c6633f24b6",
+          "id": "CL-61ae63ff2b9c2ce2",
           "subject": "Mirendil",
           "object": "$1B to Democratize Frontier AI R&D",
           "quote": "SAN FRANCISCO, Nov. 12, 2026 /PRNewswire/ -- Today, we're announcing that we've raised $1B in a Series A, led by Kleiner Perkins and Clearlake Capital, with participation from Battery Ventures, Doerr Capital, Gil & Co, Google, M13, Pear VC, and S32, among other new and existing investors."
@@ -183,7 +662,7 @@
     },
     {
       "id": "EV-5d3da505edb7ef83",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "funding",
@@ -227,7 +706,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-11f2fee41ba63e91",
+          "id": "CL-5feb68dbcf784f1b",
           "subject": "Fractile",
           "object": "超7.2亿美元的C轮融资",
           "quote": "英国人工智能芯片初创企业 Fractile 当地时间昨日宣布完成了超 7.2 亿美元（IT之家注：现汇率约合 48.14 亿元人民币）的 C 轮融资。"
@@ -246,7 +725,7 @@
     },
     {
       "id": "EV-5f1dc5e6af486dfe",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "funding",
@@ -327,7 +806,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-5263d2b34b927c77",
+          "id": "CL-5a4124587a2afa3c",
           "subject": "Tristar AI",
           "object": "$12.4M Series A to Give Manufacturers a Quality Inspector That Never Blinks",
           "quote": "CAMBRIDGE, Mass., Nov. 12, 2026 /PRNewswire/ -- Tristar AI, the real-time intelligence layer for the factory floor, today announced $12.4 million in Series A funding."
@@ -478,8 +957,72 @@
       "sourceExcerpt": "通芯人工智能科技（北京）有限公司（下称“通芯智能”）成立半年已连续完成数亿元种子轮及天使轮融资。"
     },
     {
+      "id": "EV-8f9e9c92246b3afe",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-12",
+      "updatedDate": "2026-11-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Hatz AI 完成 2400 万美元 A 轮融资，巩固其作为托管服务提供商及中小型企业 AI 平台的地位",
+      "originalTitle": "Hatz AI Raises $24M Series A to Solidify Position as the AI Platform for Managed Service Providers and Small and Medium-Sized Businesses",
+      "subject": "Hatz AI",
+      "action": "Raises",
+      "object": "$24M Series A to Solidify Position as the AI Platform for Managed Service Providers and Small and Medium-Sized Businesses",
+      "metrics": [
+        "$24 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bd732730bd39834d",
+        "EN-0dae85368ecd75ad"
+      ],
+      "entityNames": [
+        "NEW YORK",
+        "Hatz AI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-77d770a2da177d03",
+          "subject": "Hatz AI",
+          "object": "$24M Series A to Solidify Position as the AI Platform for Managed Service Providers and Small and Medium-Sized Businesses",
+          "quote": "NEW YORK, Nov. 12, 2026 /PRNewswire/ -- Hatz AI, the essential AI operating system for small and medium-sized businesses delivered through Managed Service Providers (MSPs), today announced it has raised $24 million in Series A funding, backed by Nadia Partners, Vestigo Ventures, and The Private Shares Fund."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-28837eab862ab6af",
+          "publisher": "www.prnewswire.com",
+          "url": "https://www.prnewswire.com/news-releases/hatz-ai-raises-24m-series-a-to-solidify-position-as-the-ai-platform-for-managed-service-providers-and-small-and-medium-sized-businesses-302936133.html"
+        }
+      ],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/hatz-ai-raises-24m-series-a-to-solidify-position-as-the-ai-platform-for-managed-service-providers-and-small-and-medium-sized-businesses-302936133.html",
+      "publisher": "www.prnewswire.com",
+      "sourceExcerpt": "NEW YORK, Nov. 12, 2026 /PRNewswire/ -- Hatz AI, the essential AI operating system for small and medium-sized businesses delivered through Managed Service Providers (MSPs), today announced it has raised $24 million in Series A funding, backed by Nadia Partners, Vestigo Ventures, and The Private Shares Fund."
+    },
+    {
       "id": "EV-ae749a93407891c4",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "funding",
@@ -522,7 +1065,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-c6f9dfd6039e249d",
+          "id": "CL-249a5f8b59c36d7f",
           "subject": "Norwest",
           "object": "$4 billion fund",
           "quote": "Norwest, a firm backed solely by Wells Fargo, has raised a $4 billion fund as it sets out to invest more in AI."
@@ -530,7 +1073,7 @@
       ],
       "sources": [
         {
-          "id": "SA-425114a76dd730f3",
+          "id": "SA-d2db577f3521476f",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/11/12/norwest-pushes-deeper-into-ai-with-new-4b-fund/"
         }
@@ -603,7 +1146,7 @@
     },
     {
       "id": "EV-59048c1178252d9a",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "funding",
@@ -646,19 +1189,19 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-3b6b415c6c2fa525",
+          "id": "CL-329edae7565ed59e",
           "subject": "利普思",
           "object": "近亿元B轮",
           "quote": "投资界（ID：pedaily2012）11月11日消息，利普思上周完成近亿元B轮融资，新投资方为上海新微资本。"
         },
         {
-          "id": "CL-10119e03e77713d3",
+          "id": "CL-8efaed0f2fecb918",
           "subject": "利普思",
           "object": "近亿元B轮",
           "quote": "这是继今年上半年完成PreB+轮融资后的第二轮融资，标志着利普思的发展正在全面加速。"
         },
         {
-          "id": "CL-1ea7d54042cd89b4",
+          "id": "CL-14b5f818a0521017",
           "subject": "利普思",
           "object": "近亿元B轮",
           "quote": "投融资功率半导体低空经济无锡利普思上海新微资本SiC模块"
@@ -677,7 +1220,7 @@
     },
     {
       "id": "EV-937b99126cc4df09",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "acquisition",
@@ -769,25 +1312,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-8b78646e9c08f984",
+          "id": "CL-56e2f0e022b202ee",
           "subject": "OpenAI",
           "object": "旅游初创公司 Odessia，探索 AI 旅行智能体业务",
           "quote": "IT之家 11 月 11 日消息，Odessia 创始人弗朗西斯 · 戴维森（Francis Davidson）今天宣布，OpenAI 已收购 AI 旅行智能体公司 Odessia，他本人也已经加入 OpenAI，帮助这家 AI 初创公司探索旅游业务发展方向。"
         },
         {
-          "id": "CL-352cf3bdb94af0da",
+          "id": "CL-18934d78e2c52647",
           "subject": "OpenAI",
           "object": "旅游初创公司 Odessia，探索 AI 旅行智能体业务",
           "quote": "OpenAI 收购 Odessia 还有另一个值得关注的原因：戴维森在旅游行业颇有名气。"
         },
         {
-          "id": "CL-3ba9e0368e6fe00b",
+          "id": "CL-657966cb23483565",
           "subject": "OpenAI",
           "object": "旅游初创公司 Odessia，探索 AI 旅行智能体业务",
           "quote": "据悉，Odessia 成立仅一年，就拿到了红杉资本领投的 600 万美元（IT之家注：现汇率约合 4,011.9 万元人民币）种子前融资，并在大约 5 个月前推出了 AI 旅游智能体服务，帮助早期用户规划价值数百万美元的旅行行程。"
         },
         {
-          "id": "CL-506ec45302d72dc3",
+          "id": "CL-394531abbc3014bb",
           "subject": "OpenAI",
           "object": "旅游初创公司 Odessia，探索 AI 旅行智能体业务",
           "quote": "OpenAI 发言人证实了上述信息，并表示：“我们非常欢迎戴维森加入 OpenAI，他是一名经验丰富的从业者，曾创办多家帮助人们旅行的企业。"
@@ -806,7 +1349,7 @@
     },
     {
       "id": "EV-99e376ee2aa07168",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "funding",
@@ -851,13 +1394,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-11f5d1b56dfe1482",
+          "id": "CL-85210014aa4c43e5",
           "subject": "AI原生芯片设计公司「泛函数」",
           "object": "投资界（ID：pedaily2012）11月11日消息，AI原生芯片设计公司泛函数近日完成近亿元天使轮融资，由上海未来产业基金领投，上海信投、上海科创集团、富海重产基金、徐汇资本、宽桥恒松、无限基金联合投资。",
           "quote": "投资界（ID：pedaily2012）11月11日消息，AI原生芯片设计公司泛函数近日完成近亿元天使轮融资，由上海未来产业基金领投，上海信投、上海科创集团、富海重产基金、徐汇资本、宽桥恒松、无限基金联合投资。"
         },
         {
-          "id": "CL-5f88aa6d818d8234",
+          "id": "CL-7d4037013063c73a",
           "subject": "AI原生芯片设计公司「泛函数」",
           "object": "自2026年3月成立以来，泛函数在短短7个月内已经完成多轮融资。",
           "quote": "自2026年3月成立以来，泛函数在短短7个月内已经完成多轮融资。"
@@ -876,7 +1419,7 @@
     },
     {
       "id": "EV-c3fdd52a255c0770",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "funding",
@@ -919,7 +1462,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-aca28bf16a0d3725",
+          "id": "CL-d44119c74de41bdd",
           "subject": "Fractile",
           "object": "$720 million Series C",
           "quote": "Fractile, a British startup developing AI chips, has raised a $720 million Series C backed by Britain’s Sovereign AI Fund"
@@ -927,7 +1470,7 @@
       ],
       "sources": [
         {
-          "id": "SA-6e81228fefc1c9f9",
+          "id": "SA-94d0311e2e9e33b4",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/"
         }
@@ -1399,6 +1942,68 @@
       "sourceUrl": "https://www.prnewswire.com/news-releases/whitematter-raises-20m-series-a-to-close-the-growing-gap-between-ai-autonomy-and-enterprise-governance-302934477.html",
       "publisher": "www.prnewswire.com",
       "sourceExcerpt": "WhiteMatter, which quietly built its platform under the name QuilrAI, has raised $20M in Series A funding to secure and operationalize every agent, model, and AI interaction across the enterprise from pre-production governance and validation to securing every action at runtime."
+    },
+    {
+      "id": "EV-e82c33c7ed81bce5",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-10",
+      "updatedDate": "2026-11-10",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Proximal Ventures 募集首期基金，支持将 AI 引入药物研发的初创企业",
+      "originalTitle": "Proximal Ventures raises debut fund to back startups bringing AI to drug development",
+      "subject": "Roche",
+      "action": "acquisition",
+      "object": "Flatiron Health for $1.9 billion in 2018",
+      "metrics": [
+        "$1.9 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-132ee7fe2adcc48f"
+      ],
+      "entityNames": [
+        "Roche"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-2e2e844fcbf60d2c",
+          "subject": "Roche",
+          "object": "Flatiron Health for $1.9 billion in 2018",
+          "quote": "Flatiron Health, an oncology data company acquired by Roche for $1.9 billion in 2018"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-df9d0a882fcbb450",
+          "publisher": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/11/10/proximal-ventures-raises-debut-fund-to-back-startups-bringing-ai-to-drug-development/"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/11/10/proximal-ventures-raises-debut-fund-to-back-startups-bringing-ai-to-drug-development/",
+      "publisher": "techcrunch.com",
+      "sourceExcerpt": "Flatiron Health, an oncology data company acquired by Roche for $1.9 billion in 2018"
     },
     {
       "id": "EV-098a73f4d042bdb5",
@@ -2107,7 +2712,7 @@
     },
     {
       "id": "EV-34b8ae2aea003084",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-07",
       "updatedDate": "2026-11-07",
       "eventType": "acquisition",
@@ -2184,7 +2789,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-c4b6e6be1d9ee75a",
+          "id": "CL-ab4d59e488a714a0",
           "subject": "Provision Labs",
           "object": "Basilisk Industries",
           "quote": "Pronto founder Anjali Sardana's physical AI venture Provision Labs has acquired Mumbai-based hardware startup Basilisk Industries for an undisclosed sum"
@@ -2202,8 +2807,72 @@
       "sourceExcerpt": "Pronto founder Anjali Sardana's physical AI venture Provision Labs has acquired Mumbai-based hardware startup Basilisk Industries for an undisclosed sum"
     },
     {
+      "id": "EV-374527abd076ac77",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-07",
+      "updatedDate": "2026-11-07",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "摩根大通和万事达卡支持西雅图初创公司Firmly对AI购物智能体的押注",
+      "originalTitle": "JPMorgan and Mastercard back Seattle startup Firmly&#8217;s bet on AI shopping agents",
+      "subject": "Firmly",
+      "action": "funding",
+      "object": "$15 million Series A round led by Squarepoint Capital, with participation from J.P. Morgan Payments, Mastercard, Samsung Next and others",
+      "metrics": [
+        "$15 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-82d88cebead743ad",
+        "EN-968e2d5b08687bf4"
+      ],
+      "entityNames": [
+        "Firmly",
+        "Samsung"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-80cab3cfa1638c9a",
+          "subject": "Firmly",
+          "object": "$15 million Series A round led by Squarepoint Capital, with participation from J.P. Morgan Payments, Mastercard, Samsung Next and others",
+          "quote": "Firmly, a Seattle-area startup that helps online retailers sell through AI shopping assistants, raised a $15 million Series A round led by Squarepoint Capital, with participation from J.P. Morgan Payments, Mastercard, Samsung Next and others."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-45e199e5228ae536",
+          "publisher": "www.geekwire.com",
+          "url": "https://www.geekwire.com/2026/jpmorgan-and-mastercard-back-seattle-startup-firmlys-bet-on-ai-shopping-agents/"
+        }
+      ],
+      "sourceUrl": "https://www.geekwire.com/2026/jpmorgan-and-mastercard-back-seattle-startup-firmlys-bet-on-ai-shopping-agents/",
+      "publisher": "www.geekwire.com",
+      "sourceExcerpt": "Firmly, a Seattle-area startup that helps online retailers sell through AI shopping assistants, raised a $15 million Series A round led by Squarepoint Capital, with participation from J.P. Morgan Payments, Mastercard, Samsung Next and others."
+    },
+    {
       "id": "EV-3bc1af8409d16f9b",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-07",
       "updatedDate": "2026-11-07",
       "eventType": "funding",
@@ -2249,7 +2918,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-e819cc2cc46208bf",
+          "id": "CL-542b12e59cfb79d1",
           "subject": "OpenAI",
           "object": "约110亿美元首批融资交割",
           "quote": "OpenAI 已完成新一轮融资的首批交割，规模约 110 亿美元，本轮融资对应的公司估值为 1.25 万亿美元。"
@@ -2405,7 +3074,7 @@
     },
     {
       "id": "EV-aaf041c83cebba9a",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-07",
       "updatedDate": "2026-11-07",
       "eventType": "funding",
@@ -2420,10 +3089,7 @@
       "action": "funding round",
       "object": ", but has to court dentists for more capital",
       "metrics": [
-        "$11 billion",
-        "$1.25 trillion",
-        "$122 billion",
-        "$852 billion"
+        "$11 billion"
       ],
       "locations": [],
       "missingFields": [],
@@ -2453,22 +3119,10 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-31967411dea04d31",
+          "id": "CL-652a8997e6c0f677",
           "subject": "OpenAI lands an $11 billion",
           "object": ", but has to court dentists for more capital",
           "quote": "OpenAI lands an $11 billion funding round, but has to court dentists for more capital"
-        },
-        {
-          "id": "CL-11eb2c9f00531fc0",
-          "subject": "OpenAI",
-          "object": "roughly $11 billion initial funding close at $1.25 trillion valuation",
-          "quote": "OpenAI has closed on new funding of roughly $11 billion, the initial part of a round that values the company at $1.25 trillion, according to people familiar with the matter."
-        },
-        {
-          "id": "CL-2bfb5128146ddfd0",
-          "subject": "OpenAI",
-          "object": "$122 billion funding round at $852 billion valuation",
-          "quote": "OpenAI most recently raised $122 billion in a March funding round at an $852 billion valuation."
         }
       ],
       "sources": [
@@ -2476,11 +3130,6 @@
           "id": "SA-fc0f4c2f904f6d83",
           "publisher": "the-decoder.com",
           "url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/"
-        },
-        {
-          "id": "SA-a8531f73d3b86540",
-          "publisher": "www.bloomberg.com",
-          "url": "https://www.bloomberg.com/news/articles/2026-11-06/openai-completes-11-billion-portion-of-funding-at-1-25-trillion-value"
         }
       ],
       "sourceUrl": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
@@ -304810,7 +305459,7 @@
     },
     {
       "id": "EV-fcaf084ec5c515b0",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-08",
       "updatedDate": "2026-11-08",
       "eventType": "procurement_contract",
@@ -304853,25 +305502,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-c9f49189aa61aa69",
+          "id": "CL-1947bea8e3426a3c",
           "subject": "AI 公司迄今最大发电设备",
           "object": "订单：曝 Anthropic 砸 34 亿美元买燃气发电机",
           "quote": "IT之家 11 月 8 日消息，据英国《金融时报》今天（8 日）晚间报道，Anthropic 签下了一份大额数据中心燃气发电机组采购订单。"
         },
         {
-          "id": "CL-86cc8f796af33359",
+          "id": "CL-caa8efab957ccc2b",
           "subject": "AI 公司迄今最大发电设备",
           "object": "订单：曝 Anthropic 砸 34 亿美元买燃气发电机",
           "quote": "随着发电设备供应日趋紧张，AI 公司开始绕过中间商直接采购，进一步涉足能源行业。"
         },
         {
-          "id": "CL-9a11d3905ba88675",
+          "id": "CL-c78c10943bb68da3",
           "subject": "AI 公司迄今最大发电设备",
           "object": "订单：曝 Anthropic 砸 34 亿美元买燃气发电机",
           "quote": "按照已知交易记录，这是 AI 公司迄今规模最大的一笔发电设备采购订单，也反映出科技企业为争夺电力供应，正不断向能源行业延伸。"
         },
         {
-          "id": "CL-9f1ed7fc4c7f1a42",
+          "id": "CL-65ab6d5c51528f0f",
           "subject": "AI 公司迄今最大发电设备",
           "object": "订单：曝 Anthropic 砸 34 亿美元买燃气发电机",
           "quote": "据知情人士透露，OnePWR 两年前就向卡特彼勒订购了发电机组，仍需融资才能完成采购。"
@@ -343125,7 +343774,7 @@
     },
     {
       "id": "EV-195a496342e785af",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-09",
       "updatedDate": "2026-11-09",
       "eventType": "partnership",
@@ -343204,25 +343853,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-ba6e8f8a531f6ffb",
+          "id": "CL-ae59d2cb3911cc5a",
           "subject": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup",
           "object": "Forum",
           "quote": "Korea’s Ministry of Science and ICT and NVIDIA hosted the MSIT-NVIDIA AI Startup Partnership Forum at COEX."
         },
         {
-          "id": "CL-e61a52ccbf048f87",
+          "id": "CL-3f2286ca084ab9d8",
           "subject": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup",
           "object": "Forum",
           "quote": "Representatives from the Ministry of Science and ICT and NVIDIA met with over 20 Korean startups across foundation models, physical AI, AI infrastructure and AI semiconductors."
         },
         {
-          "id": "CL-2657c43348295067",
+          "id": "CL-1b422249935a8614",
           "subject": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup",
           "object": "Forum",
           "quote": "NVIDIA also announced an investment in Korean startup Point2, with additional investments planned in Motif Technologies, RLWRLD and Upstage."
         },
         {
-          "id": "CL-5c20ceeef19de9c3",
+          "id": "CL-670d5df54d2446c5",
           "subject": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup",
           "object": "Forum",
           "quote": "The planned investments build on NVIDIA’s work with Korea’s startup and venture community, including more than 1,000 Korea-based members of NVIDIA Inception, a program that helps startups grow with access to preferred pricing, technical expertise and opportunities for investor introductions."
@@ -343230,7 +343879,7 @@
       ],
       "sources": [
         {
-          "id": "SA-fbb23041c8bb8763",
+          "id": "SA-dac8151fd20a34b0",
           "publisher": "blogs.nvidia.com",
           "url": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/"
         }
@@ -364305,7 +364954,7 @@
     },
     {
       "id": "EV-6d4311291e4a0956",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "product_release",
@@ -364358,25 +365007,25 @@
       ],
       "claims": [
         {
-          "id": "CL-01399530a8b3b23f",
+          "id": "CL-3a4a9090661e3a1b",
           "subject": "Jensen Huang’s exit puts Nvidia’s support for",
           "object": "in question",
           "quote": "The open source community just lost one of its strongest advocates."
         },
         {
-          "id": "CL-d716329c7c7c09a0",
+          "id": "CL-a22f36e99fc8d899",
           "subject": "Jensen Huang’s exit puts Nvidia’s support for",
           "object": "in question",
           "quote": "Huang has been a staunch supporter of open source AI, framing the ecosystem as good for safety, innovation, diffusion, and sovereignty."
         },
         {
-          "id": "CL-56cbab8483016dcc",
+          "id": "CL-4cc27d0c5074c435",
           "subject": "Jensen Huang’s exit puts Nvidia’s support for",
           "object": "in question",
           "quote": "And as frontier AI labs increasingly move to reduce their reliance on Nvidia and build their own chips, supporting open source is also a good way for the company to diversify its customer base by selling chips to nation-states, enterprises, and any organization that wants to own its own models."
         },
         {
-          "id": "CL-dcfad86fa71c9eef",
+          "id": "CL-fb9e77d3b3a37baf",
           "subject": "Jensen Huang’s exit puts Nvidia’s support for",
           "object": "in question",
           "quote": "Huang’s departure also comes as Nvidia has yet to finalize a deal to acquire open source platform Hugging Face for $13 billion."
@@ -364384,7 +365033,7 @@
       ],
       "sources": [
         {
-          "id": "SA-65a615d30a9ac4a2",
+          "id": "SA-b5efadb39b9618ee",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/"
         }
@@ -364395,7 +365044,7 @@
     },
     {
       "id": "EV-be0ef85ed5f05179",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "product_release",
@@ -364474,25 +365123,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-93e2a471aba49c66",
+          "id": "CL-f91e6f1f7a1f3486",
           "subject": "undisclosed_subject",
           "object": "全球最大 AI 聚合平台 OpenRouter 正式并入 Stripe：将优化词元路由和用量",
           "quote": "IT之家 11 月 12 日消息，Stripe 昨日（11 月 11 日）发布博文，宣布全球最大 AI 模型 API 聚合平台 OpenRouter 已正式并入旗下，并共同携手帮助企业探索新的商业模式，并优化词元（Token）路由和用量。"
         },
         {
-          "id": "CL-47d1711737de8112",
+          "id": "CL-2100910503b4a361",
           "subject": "undisclosed_subject",
           "object": "全球最大 AI 聚合平台 OpenRouter 正式并入 Stripe：将优化词元路由和用量",
           "quote": "Stripe 对 AI 领域的布局，正在进一步延伸至企业如何选择和使用模型。"
         },
         {
-          "id": "CL-3c80498127a5e793",
+          "id": "CL-073e04398c87c615",
           "subject": "undisclosed_subject",
           "object": "全球最大 AI 聚合平台 OpenRouter 正式并入 Stripe：将优化词元路由和用量",
           "quote": "双方提出的方向不仅包括探索新模型，也涉及如何分配模型调用、优化词元使用，让企业更有效地使用 AI 资源。"
         },
         {
-          "id": "CL-def68a0ad115020f",
+          "id": "CL-870b3c70b28e3724",
           "subject": "undisclosed_subject",
           "object": "全球最大 AI 聚合平台 OpenRouter 正式并入 Stripe：将优化词元路由和用量",
           "quote": "交易金额方面，《纽约时报》今年 8 月报道称，援引一位了解协议的匿名人士透露，Stripe 收购 OpenRouter 的价格为 75 亿美元。"
@@ -364511,7 +365160,7 @@
     },
     {
       "id": "EV-c75feed1a832645e",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "product_release",
@@ -364588,19 +365237,19 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-d41ac19cf7551738",
+          "id": "CL-e6f992a0717ed19c",
           "subject": "Nothing",
           "object": "Nothing CEO 裴宇展示公司首款 AI 设备，预计采用无屏幕设计",
           "quote": "裴宇此前预告，Nothing 的首款 AI 原生产品将于下月（2026 年 12 月）发布。"
         },
         {
-          "id": "CL-1698fed43495a1eb",
+          "id": "CL-272e7d3c546dbc04",
           "subject": "Nothing",
           "object": "Nothing CEO 裴宇展示公司首款 AI 设备，预计采用无屏幕设计",
           "quote": "“它是一种工具，但却带有定义‘Nothing’产品的个性和用心。"
         },
         {
-          "id": "CL-70fa361cdccafc40",
+          "id": "CL-a4c1979cca278d0e",
           "subject": "Nothing",
           "object": "Nothing CEO 裴宇展示公司首款 AI 设备，预计采用无屏幕设计",
           "quote": "IT之家 11 月 12 日消息，Nothing CEO 裴宇前天在 X 平台发文，展示公司首款 AI 设备的外观。"
@@ -557005,8 +557654,164 @@
       "sourceExcerpt": "one thing we’d like to do soon is to create a language model with the approximate capability of GPT-3 that can run locally on consumer hardware and release that."
     },
     {
+      "id": "EV-d4e72cbad81641c6",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-13",
+      "updatedDate": "2026-11-13",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大 IPO”添变数",
+      "originalTitle": "",
+      "subject": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大",
+      "action": "IPO",
+      "object": "”添变数",
+      "metrics": [
+        "260 亿",
+        "100 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-47e18c0aa4f8e878",
+        "EN-8d4321d936320802",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "黄仁勋辞任英伟达",
+        "NVIDIA",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-5d7872c4718f460f",
+          "subject": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大",
+          "object": "”添变数",
+          "quote": "IT之家 11 月 13 日消息，当地时间 12 日，据《财富》杂志报道，AI 初创企业 Anthropic 即将迎来史上最受瞩目的 IPO 之一。"
+        },
+        {
+          "id": "CL-488eb651fe98333a",
+          "subject": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大",
+          "object": "”添变数",
+          "quote": "此次 IPO 原本就被视为检验投资者对 AI 投资热情的重要考验。"
+        },
+        {
+          "id": "CL-e08cf14c0cca0c15",
+          "subject": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大",
+          "object": "”添变数",
+          "quote": "英伟达不仅是 Anthropic 的重要合作伙伴，也深度参与此次 IPO。"
+        },
+        {
+          "id": "CL-0160af044ea5429c",
+          "subject": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大",
+          "object": "”添变数",
+          "quote": "Anthropic 提交的文件显示，英伟达同意在与 IPO 同步进行的 260 亿美元私募配售中认购约 100 亿美元股份。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-85bb7155773fd36d",
+          "publisher": "www.ithome.com",
+          "url": "https://www.ithome.com/1/026/965.htm"
+        }
+      ],
+      "sourceUrl": "https://www.ithome.com/1/026/965.htm",
+      "publisher": "www.ithome.com",
+      "sourceExcerpt": "IT之家 11 月 13 日消息，当地时间 12 日，据《财富》杂志报道，AI 初创企业 Anthropic 即将迎来史上最受瞩目的 IPO 之一。"
+    },
+    {
+      "id": "EV-4eee0f4b9779977a",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-12",
+      "updatedDate": "2026-11-12",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "思科上调销售预期，因AI需求提振网络设备销售",
+      "originalTitle": "Cisco Raises Sales Forecast as AI Demand Boosts Networking Equipment Sales",
+      "subject": "Cisco Systems Inc.",
+      "action": "financial_performance",
+      "object": "fiscal second quarter sales forecast of about $18.1 billion",
+      "metrics": [
+        "$18.1 billion",
+        "$74.8 billion",
+        "$75.8 billion",
+        "$73.4 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-48feb046acae42c7"
+      ],
+      "entityNames": [
+        "Cisco Systems Inc."
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-0c18455bc4075af5",
+          "subject": "Cisco Systems Inc.",
+          "object": "fiscal second quarter sales forecast of about $18.1 billion",
+          "quote": "Sales will be about $18.1 billion in the fiscal second quarter, which ends in January, the company said Thursday in a statement."
+        },
+        {
+          "id": "CL-85b3836f194c1995",
+          "subject": "Cisco Systems Inc.",
+          "object": "raised fiscal year revenue guidance to $74.8 billion to $75.8 billion",
+          "quote": "Cisco raised its fiscal year revenue guidance to $74.8 billion to $75.8 billion, compared with an earlier outlook of as much as $73.4 billion."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-dba491628fed3b5c",
+          "publisher": "www.bloomberg.com",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-12/cisco-raises-sales-guidance-in-sign-of-ai-fueled-momentum"
+        }
+      ],
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-11-12/cisco-raises-sales-guidance-in-sign-of-ai-fueled-momentum",
+      "publisher": "www.bloomberg.com",
+      "sourceExcerpt": "Sales will be about $18.1 billion in the fiscal second quarter, which ends in January, the company said Thursday in a statement."
+    },
+    {
       "id": "EV-8bba88d507b8dc62",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "organization_people",
@@ -557047,16 +557852,16 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-dabf86e2b8883e75",
+          "id": "CL-6f93c298912e3bd9",
           "subject": "黄仁勋",
           "object": "英伟达 CEO",
           "quote": "黄仁勋因婚外情丑闻持续发酵而辞去英伟达 CEO"
         },
         {
-          "id": "CL-fe96515730a8b04d",
+          "id": "CL-ee6ff14ae19a444b",
           "subject": "科莱特 · 克雷斯",
           "object": "英伟达暂任 CEO",
-          "quote": "CFO 科莱特 · 克雷斯将暂任 CEO，公司同时寻找正式接班人"
+          "quote": "英伟达宣布，CFO 科莱特 · 克雷斯将暂任 CEO，公司同时寻找正式接班人。"
         }
       ],
       "sources": [
@@ -557304,7 +558109,7 @@
     },
     {
       "id": "EV-27d9a40d0446e770",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-10",
       "updatedDate": "2026-11-10",
       "eventType": "ipo_listing",
@@ -557347,15 +558152,21 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-ae880699f4b0f263",
+          "id": "CL-b340e3fb6603d469",
           "subject": "Anthropic",
           "object": "planned IPO and concurrent private placement seeking up to $88.5 billion",
           "quote": "Anthropic is seeking to secure up to $88.5 billion in its planned IPO and a concurrent private placement, potentially making it the largest-ever fundraise tied to a public market debut."
+        },
+        {
+          "id": "CL-8986c45989d34042",
+          "subject": "Anthropic",
+          "object": "updated S-1 filing for upcoming public offering",
+          "quote": "On Tuesday, the AI giant submitted an updated S-1 filing for its upcoming public offering, unveiling new details including a proposed share price range offering size."
         }
       ],
       "sources": [
         {
-          "id": "SA-1d98e7a5bc484b95",
+          "id": "SA-80c86f187e7aea96",
           "publisher": "news.crunchbase.com",
           "url": "https://news.crunchbase.com/ai/anthropic-record-ipo-ant-public-market-debut-spcx/"
         }
@@ -557366,7 +558177,7 @@
     },
     {
       "id": "EV-4fc82b5985acc6c8",
-      "dataDate": "2026-11-13",
+      "dataDate": "2026-11-14",
       "date": "2026-11-10",
       "updatedDate": "2026-11-10",
       "eventType": "ipo_listing",
@@ -557425,25 +558236,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-c04e1d285f804f5e",
+          "id": "CL-823c6e4e6b9c98fa",
           "subject": "Anthropic sets",
           "object": "price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
           "quote": "Anthropic intends to push ahead with its IPO despite shakier markets and the broader pullback from AI investing."
         },
         {
-          "id": "CL-c57bef9bf6f160e4",
+          "id": "CL-6a6b82dde78bb20f",
           "subject": "Anthropic sets",
           "object": "price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
           "quote": "The Claude-maker said in an updated IPO filing on Tuesday that it would be offering a total of 825 million Class A shares at an estimated price range of $70 to $78 per share."
         },
         {
-          "id": "CL-253538630eeab80b",
+          "id": "CL-a4c7d40a485317b1",
           "subject": "Anthropic sets",
           "object": "price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
           "quote": "Separately, Anthropic said it had struck a deal to privately sell $26 billion of non-voting Class N stock at the IPO price to AMD, Broadcom, Google, Micron, Microsoft, Nvidia, and TSMC. Google and Nvidia are investing $10 billion apiece."
         },
         {
-          "id": "CL-feac01bb648003a8",
+          "id": "CL-92d7f4a0e702a00e",
           "subject": "Anthropic sets",
           "object": "price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
           "quote": "All up, Anthropic estimates net proceeds to reach somewhere between $84.6 billion and $93.7 billion (the latter if the IPO underwriters exercise their option to buy additional shares)."
@@ -557451,7 +558262,7 @@
       ],
       "sources": [
         {
-          "id": "SA-e1ebf9beef184b3e",
+          "id": "SA-2550542d0d55105c",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/"
         }
@@ -557605,6 +558416,106 @@
       "sourceUrl": "https://entrackr.com/snippets/sarvam-appoints-former-google-cloud-india-md-sashikumar-sreedharan-as-president-and-cbo-12798366",
       "publisher": "entrackr.com",
       "sourceExcerpt": "AI startup Sarvam has appointed former Google Cloud India Managing Director Sashikumar Sreedharan as its President and Chief Business Officer (CBO). In his new role, Sreedharan will lead the company's enterprise and government operations and oversee marketing, finance, forward-deployed engineering, service delivery and commercial operations."
+    },
+    {
+      "id": "EV-e197177f2547fff3",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-07",
+      "updatedDate": "2026-11-07",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 安全倡导者在 1.1 亿美元中期选举之争后取得进展",
+      "originalTitle": "AI Safety Advocates Make Gains After $110 Million Midterm Fight",
+      "subject": "Public First",
+      "action": "capital_investment",
+      "object": "midterms",
+      "metrics": [
+        "$63 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [
+            "EN-396f3f190a868b19"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [
+            "EN-396f3f190a868b19"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [
+            "EN-396f3f190a868b19"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-396f3f190a868b19",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Public First",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-3a8dba196826868f",
+          "subject": "Public First",
+          "object": "midterms",
+          "quote": "Public First, funded by Anthropic co-founder Dario Amodei and other AI safety advocates, poured more than $63 million into the midterms to promote candidates aligned with its goal of stricter regulation, according to the group’s numbers."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-9183be2b0b577525",
+          "publisher": "www.bloomberg.com",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-07/ai-safety-advocates-make-gains-after-110-million-midterm-fight"
+        }
+      ],
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-11-07/ai-safety-advocates-make-gains-after-110-million-midterm-fight",
+      "publisher": "www.bloomberg.com",
+      "sourceExcerpt": "Public First, funded by Anthropic co-founder Dario Amodei and other AI safety advocates, poured more than $63 million into the midterms to promote candidates aligned with its goal of stricter regulation, according to the group’s numbers."
     },
     {
       "id": "EV-57717e60d7a07800",

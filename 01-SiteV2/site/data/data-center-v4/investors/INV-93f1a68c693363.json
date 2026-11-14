@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-13",
-    "currentDate": "2026-11-13",
-    "eventCount": 4448,
+    "latestDataDate": "2026-11-14",
+    "currentDate": "2026-11-14",
+    "eventCount": 4461,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 5,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 3,
+    "china_market_activity_count": 4,
     "china_market_company_count": 3,
     "first_disclosed_at": "2026-03-31",
-    "latest_disclosed_at": "2026-09-23",
+    "latest_disclosed_at": "2026-11-13",
     "role_counts": {
       "other_current_round": 1,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "multi_round",
@@ -110,6 +110,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-05eb9b86b53ba993",
+        "funding_insight_id": "FI-897482b4d579f4af",
+        "event_ids": [
+          "EV-a691420f309b3d29"
+        ],
+        "company_entity_id": "EN-447a48e5d0951831",
+        "company_canonical_entity_id": "EN-447a48e5d0951831",
+        "company_name": "以太之心",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-11-13",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7a044cba9e1f0377",
+            "source_url": "https://news.pedaily.cn/202611/571842.shtml",
+            "source_title": "AI智能体基础设施公司「以太之心」完成数千万种子轮融资",
+            "source_content_hash": "abbc73a039e18815f633c5c715d06fea7dc364e789d0bb8007f7f39c6a9f03f4",
+            "quote": "本轮融资由上海天使会、浦东创投、高信资本共同参与。",
+            "quote_hash": "2bc426cc48478a16d623004a426bc983d522ed560d0d78ba359e3ae8e11ae037"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2522c637408d1a0b",
         "funding_insight_id": "FI-a2fd2365924904e7",
@@ -314,6 +354,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-7a044cba9e1f0377",
+        "source_url": "https://news.pedaily.cn/202611/571842.shtml",
+        "source_title": "AI智能体基础设施公司「以太之心」完成数千万种子轮融资",
+        "source_content_hash": "abbc73a039e18815f633c5c715d06fea7dc364e789d0bb8007f7f39c6a9f03f4",
+        "quote": "本轮融资由上海天使会、浦东创投、高信资本共同参与。",
+        "quote_hash": "2bc426cc48478a16d623004a426bc983d522ed560d0d78ba359e3ae8e11ae037"
+      },
+      {
         "source_id": "FISRC-41f074703465b30a",
         "source_url": "https://m.pedaily.cn/news/569562",
         "source_title": "Physical AI创业公司息壤开物连获数亿元融资 AI 2026-09-23 16:38",
@@ -383,16 +431,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：以太之心 · 种子轮 · 2026-11-13 · 本轮参投 · 数千万。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7a044cba9e1f0377"
+        },
+        {
           "description": "融资来源记录：息壤开物 · 多轮融资 · 2026-09-23 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-41f074703465b30a"
         },
         {
           "description": "融资来源记录：松应科技 · 多轮融资 · 2026-08-31 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1ae72db61aa80327"
-        },
-        {
-          "description": "融资来源记录：以太之心 · 种子轮 · 2026-08-31 · 本轮参投 · 数千万。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1a358dfcb10fed1c"
         }
       ],
       "contacts": [],
@@ -422,6 +470,14 @@
           "quote_hash": "e8bccd8ae27c26e0aecf025ca71473e649002cbefc5d0929c8dbba77a7d2ecdf"
         },
         {
+          "source_id": "FISRC-7a044cba9e1f0377",
+          "source_url": "https://news.pedaily.cn/202611/571842.shtml",
+          "source_title": "AI智能体基础设施公司「以太之心」完成数千万种子轮融资",
+          "source_content_hash": "abbc73a039e18815f633c5c715d06fea7dc364e789d0bb8007f7f39c6a9f03f4",
+          "quote": "本轮融资由上海天使会、浦东创投、高信资本共同参与。",
+          "quote_hash": "2bc426cc48478a16d623004a426bc983d522ed560d0d78ba359e3ae8e11ae037"
+        },
+        {
           "source_id": "FISRC-41f074703465b30a",
           "source_url": "https://m.pedaily.cn/news/569562",
           "source_title": "Physical AI创业公司息壤开物连获数亿元融资 AI 2026-09-23 16:38",
@@ -436,14 +492,6 @@
           "source_content_hash": "74d6b0dda1bd2148",
           "quote": "尚融资本、澳盛科技、高信资本、上海天使会、风语筑、乔贝资本等知名财务和产业机构跟投",
           "quote_hash": "cfb09d31f4e2f345e414820b4806243896f0671821613a5ee1f48e5dfbed164a"
-        },
-        {
-          "source_id": "FISRC-1a358dfcb10fed1c",
-          "source_url": "https://www.stcn.com/article/detail/4165239.html",
-          "source_title": "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
-          "source_content_hash": "d05d4ca6f929c2cb",
-          "quote": "本轮融资由著名天使机构“上海天使会”、国资创投公司“浦东创投”、张雪机车的天使投资人“高信资本”以及知名投资公司天使清芬等共同参与。",
-          "quote_hash": "208aaf6d57296d70409e01ce934811120c1593208ea1b6e6d46ebd1333700f44"
         }
       ],
       "last_verified_at": "2026-10-04",

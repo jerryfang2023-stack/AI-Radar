@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-13",
-    "currentDate": "2026-11-13",
-    "eventCount": 4448,
+    "latestDataDate": "2026-11-14",
+    "currentDate": "2026-11-14",
+    "eventCount": 4461,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-07-31",
-    "latest_disclosed_at": "2026-10-28",
+    "latest_disclosed_at": "2026-11-13",
     "role_counts": {
       "other_current_round": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "angel",
+      "pre_series_a",
       "seed"
     ],
     "portfolio_companies": [
@@ -89,9 +90,54 @@
         "entity_id": "EN-f1de3226b9e510ac",
         "canonical_entity_id": "EN-f1de3226b9e510ac",
         "name": "昆腾动力"
+      },
+      {
+        "entity_id": "EN-7f505bc9744206fd",
+        "canonical_entity_id": "EN-7f505bc9744206fd",
+        "name": "灵睿智芯"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-626b16ddd566453b",
+        "funding_insight_id": "FI-840305122c2bb834",
+        "event_ids": [
+          "EV-4af131f039cc7cc9"
+        ],
+        "company_entity_id": "EN-7f505bc9744206fd",
+        "company_canonical_entity_id": "EN-7f505bc9744206fd",
+        "company_name": "灵睿智芯",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-11-13",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a916db75f8d2559b",
+            "source_url": "https://news.pedaily.cn/202611/571794.shtml",
+            "source_title": "灵睿智芯完成数亿元Pre-A+轮融资，押注RISC-V智能体CPU",
+            "source_content_hash": "23d22e01ed75c417",
+            "quote": "本轮融资由美团战投领投，京东关联基金、干杯基金、力合算芯基金（东方算芯CVC）、钧犀资本、商汤国香资本、尚颀资本（上汽CVC）、深信服科技的产业投资基金琥珀资本等头部产业资本和众多老股东跟投。",
+            "quote_hash": "24607acb19e4da21215ad9b6c3fef060dca659f6b844389fe2849e408275c319"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9ca2c69e80496b6f",
         "funding_insight_id": "FI-16e7789991a5af66",
@@ -175,6 +221,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-a916db75f8d2559b",
+        "source_url": "https://news.pedaily.cn/202611/571794.shtml",
+        "source_title": "灵睿智芯完成数亿元Pre-A+轮融资，押注RISC-V智能体CPU",
+        "source_content_hash": "23d22e01ed75c417",
+        "quote": "本轮融资由美团战投领投，京东关联基金、干杯基金、力合算芯基金（东方算芯CVC）、钧犀资本、商汤国香资本、尚颀资本（上汽CVC）、深信服科技的产业投资基金琥珀资本等头部产业资本和众多老股东跟投。",
+        "quote_hash": "24607acb19e4da21215ad9b6c3fef060dca659f6b844389fe2849e408275c319"
+      },
+      {
         "source_id": "FISRC-570d8c761dfb8abb",
         "source_url": "https://news.pedaily.cn/202610/570975.shtml",
         "source_title": "超进化智能完成数亿元天使轮融资，以万卡训练经验打造研究基础模型",
@@ -218,6 +272,10 @@
           "source_id": "B31-SENSE-KUNTENG"
         },
         {
+          "description": "融资来源记录：灵睿智芯 · Pre-A轮 · 2026-11-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a916db75f8d2559b"
+        },
+        {
           "description": "融资来源记录：超进化 · 天使轮 · 2026-10-28 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-570d8c761dfb8abb"
         },
@@ -243,6 +301,14 @@
           "source_content_hash": "b8d1d03aa098d770baceb45ec93074643aa86a77a5694190f0f4e159b2e7c830",
           "quote": "本轮由 云启资本、商汤 国香资本 联合投资",
           "quote_hash": "9cdf8a1c482655f96ad28fb1bf2775445568c7073ce541cdbd9c5e795140e01d"
+        },
+        {
+          "source_id": "FISRC-a916db75f8d2559b",
+          "source_url": "https://news.pedaily.cn/202611/571794.shtml",
+          "source_title": "灵睿智芯完成数亿元Pre-A+轮融资，押注RISC-V智能体CPU",
+          "source_content_hash": "23d22e01ed75c417",
+          "quote": "本轮融资由美团战投领投，京东关联基金、干杯基金、力合算芯基金（东方算芯CVC）、钧犀资本、商汤国香资本、尚颀资本（上汽CVC）、深信服科技的产业投资基金琥珀资本等头部产业资本和众多老股东跟投。",
+          "quote_hash": "24607acb19e4da21215ad9b6c3fef060dca659f6b844389fe2849e408275c319"
         },
         {
           "source_id": "FISRC-570d8c761dfb8abb",

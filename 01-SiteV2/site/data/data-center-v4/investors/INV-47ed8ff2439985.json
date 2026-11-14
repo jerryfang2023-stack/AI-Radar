@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-13",
-    "currentDate": "2026-11-13",
-    "eventCount": 4448,
+    "latestDataDate": "2026-11-14",
+    "currentDate": "2026-11-14",
+    "eventCount": 4461,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,22 +63,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-12-06",
-    "latest_disclosed_at": "2026-10-20",
+    "latest_disclosed_at": "2026-11-07",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "seed",
+      "series_a",
       "series_b"
     ],
     "portfolio_companies": [
@@ -86,6 +87,11 @@
         "entity_id": "EN-ffad923c7afc100d",
         "canonical_entity_id": "",
         "name": "Daytona"
+      },
+      {
+        "entity_id": "EN-82d88cebead743ad",
+        "canonical_entity_id": "",
+        "name": "Firmly"
       },
       {
         "entity_id": "EN-67e05af6c6502566",
@@ -109,6 +115,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e8f4d0177a1c86d3",
+        "funding_insight_id": "FI-6a612f7eec11e8c8",
+        "event_ids": [
+          "EV-374527abd076ac77"
+        ],
+        "company_entity_id": "EN-82d88cebead743ad",
+        "company_canonical_entity_id": "",
+        "company_name": "Firmly",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$15 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-11-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dff507a56e5020e9",
+            "source_url": "https://www.geekwire.com/2026/jpmorgan-and-mastercard-back-seattle-startup-firmlys-bet-on-ai-shopping-agents/",
+            "source_title": "摩根大通和万事达卡支持西雅图初创公司Firmly对AI购物智能体的押注",
+            "source_content_hash": "19ac4c788c5ef12f846153d74e90704c683aaa778bd0fbf3b55b1ab743e16e28",
+            "quote": "with participation from J.P. Morgan Payments, Mastercard, Samsung Next and others",
+            "quote_hash": "144ce3918aad203e54c2b1defbafbde2ba2d8bbb5f20421a7cc29c9a95a934b3"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8a44faefa1b43615",
         "funding_insight_id": "FI-8e1f21a79a3f480d",
@@ -376,6 +422,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-dff507a56e5020e9",
+        "source_url": "https://www.geekwire.com/2026/jpmorgan-and-mastercard-back-seattle-startup-firmlys-bet-on-ai-shopping-agents/",
+        "source_title": "摩根大通和万事达卡支持西雅图初创公司Firmly对AI购物智能体的押注",
+        "source_content_hash": "19ac4c788c5ef12f846153d74e90704c683aaa778bd0fbf3b55b1ab743e16e28",
+        "quote": "with participation from J.P. Morgan Payments, Mastercard, Samsung Next and others",
+        "quote_hash": "144ce3918aad203e54c2b1defbafbde2ba2d8bbb5f20421a7cc29c9a95a934b3"
+      },
+      {
         "source_id": "FISRC-c5dadf72976d5866",
         "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
         "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
@@ -457,16 +511,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Firmly · A轮 · 2026-11-07 · 本轮参投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-dff507a56e5020e9"
+        },
+        {
           "description": "融资来源记录：Daytona · B轮 · 2026-10-20 · 本轮参投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c5dadf72976d5866"
         },
         {
           "description": "融资来源记录：Synthefy · 种子轮 · 2026-08-18 · 本轮参投 · $6.5M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7cafec2373293af1"
-        },
-        {
-          "description": "融资来源记录：Xpander · 种子轮 · 2026-08-17 · 本轮参投 · $7.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b58915641f762a44"
         }
       ],
       "profile_type": "organization",
@@ -528,6 +582,14 @@
           "quote_hash": "54fc0bd8a9e97beaa861f1d10e309e8b05342cb7dbce44b6de71f7cc7e71b508"
         },
         {
+          "source_id": "FISRC-dff507a56e5020e9",
+          "source_url": "https://www.geekwire.com/2026/jpmorgan-and-mastercard-back-seattle-startup-firmlys-bet-on-ai-shopping-agents/",
+          "source_title": "摩根大通和万事达卡支持西雅图初创公司Firmly对AI购物智能体的押注",
+          "source_content_hash": "19ac4c788c5ef12f846153d74e90704c683aaa778bd0fbf3b55b1ab743e16e28",
+          "quote": "with participation from J.P. Morgan Payments, Mastercard, Samsung Next and others",
+          "quote_hash": "144ce3918aad203e54c2b1defbafbde2ba2d8bbb5f20421a7cc29c9a95a934b3"
+        },
+        {
           "source_id": "FISRC-c5dadf72976d5866",
           "source_url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents/",
           "source_title": "Daytona 以 $1B 估值融资 $60M，用于构建面向 AI 智能体的云平台",
@@ -542,14 +604,6 @@
           "source_content_hash": "613cce3b5c1e64d961a77840f2d688926de0f954fcc27059e3d24a65f8b0ee52",
           "quote": "Wing Venture Capital led our $6.5M seed round, with Haystack, Samsung Next, Canonical, and Lightscape joining.",
           "quote_hash": "2e8a4f8e24f840d26fc60d6dd7dbc9224ed86f10ac0b2e7a62fd136da1f2ed28"
-        },
-        {
-          "source_id": "FISRC-b58915641f762a44",
-          "source_url": "https://www.prnewswire.com/news-releases/xpander-raises-7-5m-seed-to-unleash-ai-for-enterprises-302852698.html",
-          "source_title": "Xpander 获 750 万美元种子轮融资，为企业释放 AI 潜能",
-          "source_content_hash": "50cfddf83c4d2ddc2d52d1ee484eee826ecffd6d396dc17103ca4bed20d177e8",
-          "quote": "Xpander today announced a $7.5 million Seed round led by Pico Venture Partners with participation from Emerge Ventures, Samsung Next, and SeedIL.",
-          "quote_hash": "a78ed035c5da0c7f827e96d9a06c29e26212e7cc0d0b2fd3f8f2ef5ed4a6ab87"
         }
       ],
       "last_verified_at": "2026-10-03"

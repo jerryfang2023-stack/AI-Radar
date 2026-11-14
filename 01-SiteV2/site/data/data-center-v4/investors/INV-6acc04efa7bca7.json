@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-13",
-    "currentDate": "2026-11-13",
-    "eventCount": 4448,
+    "latestDataDate": "2026-11-14",
+    "currentDate": "2026-11-14",
+    "eventCount": 4461,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,7 +61,7 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 2,
     "market_regions": [
@@ -70,9 +70,9 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-06-18",
-    "latest_disclosed_at": "2026-10-07",
+    "latest_disclosed_at": "2026-11-13",
     "role_counts": {
-      "lead": 2
+      "lead": 3
     },
     "round_codes": [
       "seed"
@@ -90,6 +90,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-765db44f2692497c",
+        "funding_insight_id": "FI-384f31ed31e73857",
+        "event_ids": [
+          "EV-71994dadaf12fd5d"
+        ],
+        "company_entity_id": "EN-20109d8d00635e1a",
+        "company_canonical_entity_id": "",
+        "company_name": "Desible.ai",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed Plus",
+        "amount_original": "Rs 32 crore",
+        "amount_normalized": {
+          "currency": "INR",
+          "value": 320000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.2 亿印度卢比"
+        },
+        "announced_at": "2026-11-13",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c8bd4803ec5c361b",
+            "source_url": "https://entrackr.com/snippets/desibleai-raises-rs-32-cr-led-by-prime-venture-partners-12805523",
+            "source_title": "Desible.ai 完成由 Prime Venture Partners 领投的 32 Cr 卢比融资",
+            "source_content_hash": "085ec63e0bd19465189c5d791265bb252616cd6aa7c0e7546eec7cb09bd7cf88",
+            "quote": "has raised Rs 32 crore in a funding round led by Prime Venture Partners",
+            "quote_hash": "0070ddc9172b4255d87dd93ff5ce3f9f6bfe7972e0af54199240770373cbd848"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7ab865f7311b7040",
         "funding_insight_id": "FI-2da2ced038e94ba6",
@@ -189,6 +229,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c8bd4803ec5c361b",
+        "source_url": "https://entrackr.com/snippets/desibleai-raises-rs-32-cr-led-by-prime-venture-partners-12805523",
+        "source_title": "Desible.ai 完成由 Prime Venture Partners 领投的 32 Cr 卢比融资",
+        "source_content_hash": "085ec63e0bd19465189c5d791265bb252616cd6aa7c0e7546eec7cb09bd7cf88",
+        "quote": "has raised Rs 32 crore in a funding round led by Prime Venture Partners",
+        "quote_hash": "0070ddc9172b4255d87dd93ff5ce3f9f6bfe7972e0af54199240770373cbd848"
+      },
+      {
         "source_id": "FISRC-fb5290f3b5c9d736",
         "source_url": "https://dealroom.co/news/160545-desible-ai-raises-3-31m-seed-to-automate-bfsi-workflows-with-ai-agents/",
         "source_title": "Desible.ai 融资 331 万美元种子轮，用 AI 智能体自动化 BFSI 工作流",
@@ -252,12 +300,12 @@
           "source_id": "PFSRC-INV-6acc04efa7bca7-2"
         },
         {
-          "description": "融资来源记录：Desible.ai · 种子轮 · 2026-10-07 · 本轮领投 · $3.31M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fb5290f3b5c9d736"
+          "description": "融资来源记录：Desible.ai · 种子轮 · 2026-11-13 · 本轮领投 · Rs 32 crore。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c8bd4803ec5c361b"
         },
         {
-          "description": "融资来源记录：Illumine · 种子轮 · 2025-06-18 · 本轮领投 · $2.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-16e0be8104cbcbf7"
+          "description": "融资来源记录：Desible.ai · 种子轮 · 2026-10-07 · 本轮领投 · $3.31M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-fb5290f3b5c9d736"
         }
       ],
       "contacts": [
@@ -287,6 +335,14 @@
           "quote_hash": "ab5d51e83d10585e90f64598dc7688d9789e03c7e847171982bae866a4d8371c"
         },
         {
+          "source_id": "FISRC-c8bd4803ec5c361b",
+          "source_url": "https://entrackr.com/snippets/desibleai-raises-rs-32-cr-led-by-prime-venture-partners-12805523",
+          "source_title": "Desible.ai 完成由 Prime Venture Partners 领投的 32 Cr 卢比融资",
+          "source_content_hash": "085ec63e0bd19465189c5d791265bb252616cd6aa7c0e7546eec7cb09bd7cf88",
+          "quote": "has raised Rs 32 crore in a funding round led by Prime Venture Partners",
+          "quote_hash": "0070ddc9172b4255d87dd93ff5ce3f9f6bfe7972e0af54199240770373cbd848"
+        },
+        {
           "source_id": "FISRC-fb5290f3b5c9d736",
           "source_url": "https://dealroom.co/news/160545-desible-ai-raises-3-31m-seed-to-automate-bfsi-workflows-with-ai-agents/",
           "source_title": "Desible.ai 融资 331 万美元种子轮，用 AI 智能体自动化 BFSI 工作流",
@@ -301,14 +357,6 @@
           "source_content_hash": "208918cd4616a1c4",
           "quote": "has raised nearly $3.3 million (Rs 32 crore) in a seed plus round led by Prime Venture Partners.",
           "quote_hash": "703a535f4c903f29dde28a65a00a4dc85f193ece2629fd50dabec3f8e5fee2d8"
-        },
-        {
-          "source_id": "FISRC-16e0be8104cbcbf7",
-          "source_url": "https://startuprise.org/illumine-raises-2-5-million-in-seed-funding-led-by-prime-venture-partners",
-          "source_title": "Illumine 获 Prime Venture Partners 领投的 250 万美元种子轮融资 - Startup Rise Asia",
-          "source_content_hash": "571bdfa5b561f937",
-          "quote": "Illumine, a startup using AI to improve childcare has raised $2.5 million in seed funding from Prime Venture Partners.",
-          "quote_hash": "ae082d50db1f97064e527ee247ea3778e7ffd3c8f5a61b01d1ce59e538292a1c"
         }
       ],
       "last_verified_at": "2026-10-02"

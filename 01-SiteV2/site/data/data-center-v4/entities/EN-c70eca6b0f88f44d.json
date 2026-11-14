@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-13",
-    "currentDate": "2026-11-13",
-    "eventCount": 4448,
+    "latestDataDate": "2026-11-14",
+    "currentDate": "2026-11-14",
+    "eventCount": 4461,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -422,9 +422,11 @@
       "EV-8115dd18f2812a29",
       "EV-cf496e0f8a56ca97",
       "EV-8cb5b0ed18c7cdd8",
+      "EV-d4e72cbad81641c6",
       "EV-2406bc3d29c09326",
       "EV-27d9a40d0446e770",
       "EV-4fc82b5985acc6c8",
+      "EV-e197177f2547fff3",
       "EV-57717e60d7a07800",
       "EV-3cc8e7ce0143047a",
       "EV-000a2cf24e205f93",
@@ -635,7 +637,7 @@
       "EN-da20c5952dba19d8"
     ],
     "firstSeen": "2025-09-04",
-    "lastSeen": "2026-11-13",
+    "lastSeen": "2026-11-14",
     "relationIds": [
       "REL2-6460871b6d621283",
       "REL2-02bdd133e9353ff7",
@@ -696,9 +698,10 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
-        "EV-2406bc3d29c09326",
+        "EV-d4e72cbad81641c6",
         "EV-27d9a40d0446e770",
         "EV-4fc82b5985acc6c8",
+        "EV-2406bc3d29c09326",
         "EV-57717e60d7a07800",
         "EV-cd20a6ff672972eb",
         "EV-3cc8e7ce0143047a",
@@ -797,6 +800,7 @@
       ],
       "deployments": [
         "EV-fcaf084ec5c515b0",
+        "EV-e197177f2547fff3",
         "EV-d35419bc2f596bce",
         "EV-67fd80c953bff90d",
         "EV-78758ccb5d45f4f9",
@@ -1215,7 +1219,7 @@
     "timeline": [
       {
         "id": "EV-fcaf084ec5c515b0",
-        "dataDate": "2026-11-13",
+        "dataDate": "2026-11-14",
         "date": "2026-11-08",
         "eventType": "procurement_contract",
         "eventTypeLabel": "采购合同",
@@ -1226,6 +1230,86 @@
         "displayTags": [],
         "entityIds": [
           "EN-f2e085cca8d5beef",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-d4e72cbad81641c6",
+        "dataDate": "2026-11-14",
+        "date": "2026-11-13",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大 IPO”添变数",
+        "displayTags": [],
+        "entityIds": [
+          "EN-47e18c0aa4f8e878",
+          "EN-8d4321d936320802",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-27d9a40d0446e770",
+        "dataDate": "2026-11-14",
+        "date": "2026-11-10",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "Anthropic 寻求创纪录的 885 亿美元，与公开市场首秀挂钩",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-4fc82b5985acc6c8",
+        "dataDate": "2026-11-14",
+        "date": "2026-11-10",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "Anthropic 将 IPO 发行价区间定为每股 $70 至 $78，以实现 $1.404 万亿的隐含估值",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2c8c4c6b77cb9233",
+          "EN-c70eca6b0f88f44d",
+          "EN-373ac021a2c0bb2c",
+          "EN-bbdefa2950f49882",
+          "EN-9fbf261b62c1d7c0",
+          "EN-8d4321d936320802"
+        ]
+      },
+      {
+        "id": "EV-e197177f2547fff3",
+        "dataDate": "2026-11-14",
+        "date": "2026-11-07",
+        "eventType": "capital_investment",
+        "eventTypeLabel": "资本性投资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 安全倡导者在 1.1 亿美元中期选举之争后取得进展",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "guardrails_safety",
+            "name": "安全护栏",
+            "entityIds": [
+              "EN-396f3f190a868b19"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-396f3f190a868b19",
           "EN-c70eca6b0f88f44d"
         ]
       },
@@ -1255,41 +1339,6 @@
         "entityIds": [
           "EN-dff37aaec8fa23f4",
           "EN-c70eca6b0f88f44d"
-        ]
-      },
-      {
-        "id": "EV-27d9a40d0446e770",
-        "dataDate": "2026-11-13",
-        "date": "2026-11-10",
-        "eventType": "ipo_listing",
-        "eventTypeLabel": "IPO 与上市",
-        "eventGroup": "融资与并购",
-        "status": "rumored",
-        "statusLabel": "rumored",
-        "title": "Anthropic 寻求创纪录的 885 亿美元，与公开市场首秀挂钩",
-        "displayTags": [],
-        "entityIds": [
-          "EN-c70eca6b0f88f44d"
-        ]
-      },
-      {
-        "id": "EV-4fc82b5985acc6c8",
-        "dataDate": "2026-11-13",
-        "date": "2026-11-10",
-        "eventType": "ipo_listing",
-        "eventTypeLabel": "IPO 与上市",
-        "eventGroup": "融资与并购",
-        "status": "rumored",
-        "statusLabel": "rumored",
-        "title": "Anthropic 将 IPO 发行价区间定为每股 $70 至 $78，以实现 $1.404 万亿的隐含估值",
-        "displayTags": [],
-        "entityIds": [
-          "EN-2c8c4c6b77cb9233",
-          "EN-c70eca6b0f88f44d",
-          "EN-373ac021a2c0bb2c",
-          "EN-bbdefa2950f49882",
-          "EN-9fbf261b62c1d7c0",
-          "EN-8d4321d936320802"
         ]
       },
       {
@@ -15500,6 +15549,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-d4e72cbad81641c6",
         "EV-8bba88d507b8dc62",
         "EV-4fc82b5985acc6c8",
         "EV-009a882943028d97",
@@ -15629,7 +15679,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-13"
+      "lastSeen": "2026-11-14"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -16287,7 +16337,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-13"
+      "lastSeen": "2026-11-14"
     },
     {
       "id": "EN-729324072d368379",
@@ -16424,6 +16474,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-374527abd076ac77",
         "EV-b9619bdde0bdc311",
         "EV-375d04f7cc9746c6",
         "EV-5ea74d357e73366b",
@@ -16487,7 +16538,7 @@
         "EN-d84c1d1c315bc2f8"
       ],
       "firstSeen": "2026-01-28",
-      "lastSeen": "2026-10-05"
+      "lastSeen": "2026-11-14"
     },
     {
       "id": "EN-2c063f604e634100",
@@ -19780,7 +19831,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-11-13"
+      "lastSeen": "2026-11-14"
     },
     {
       "id": "TX-product_form-model",
@@ -25989,7 +26040,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-02-08",
-      "lastSeen": "2026-11-13"
+      "lastSeen": "2026-11-14"
     },
     {
       "id": "TX-technology-open_weights",
@@ -26378,6 +26429,7 @@
         "EV-9c0552732b34f278",
         "EV-3ff2a155035d01e7",
         "EV-66338f5fb682617e",
+        "EV-e197177f2547fff3",
         "EV-fece8aa7a115c364",
         "EV-917966af8545a380"
       ],
@@ -26390,7 +26442,8 @@
         "EN-efa98ef1e586ac73",
         "EN-ae31f30d39374a8b",
         "EN-c857d09db23e6822",
-        "EN-4e7e886400fe6a83"
+        "EN-4e7e886400fe6a83",
+        "EN-396f3f190a868b19"
       ],
       "fdeIds": [
         "FDE-5ca4d6b1a0aff93c",
@@ -26399,7 +26452,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-06-11",
-      "lastSeen": "2026-09-22"
+      "lastSeen": "2026-11-14"
     },
     {
       "id": "TX-technology-human_in_loop",

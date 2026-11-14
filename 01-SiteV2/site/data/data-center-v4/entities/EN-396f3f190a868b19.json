@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-25T02:10:15.815Z",
+    "latestDataDate": "2026-11-14",
+    "currentDate": "2026-11-14",
+    "eventCount": 4461,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-38588f56157b5c3e",
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-396f3f190a868b19",
+    "name": "Public First",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-e197177f2547fff3"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-guardrails_safety"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-11-07",
+    "lastSeen": "2026-11-14",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-e197177f2547fff3"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-e197177f2547fff3",
+        "dataDate": "2026-11-14",
+        "date": "2026-11-07",
+        "eventType": "capital_investment",
+        "eventTypeLabel": "资本性投资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 安全倡导者在 1.1 亿美元中期选举之争后取得进展",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "guardrails_safety",
+            "name": "安全护栏",
+            "entityIds": [
+              "EN-396f3f190a868b19"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-396f3f190a868b19",
+          "EN-c70eca6b0f88f44d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-guardrails_safety",
+      "name": "安全护栏",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "guardrails_safety",
+      "eventIds": [
+        "EV-ee40b65cc5f85c36",
+        "EV-729a0261934b73d9",
+        "EV-d1e2a7c6d314612c",
+        "EV-b240fb11e65b018e",
+        "EV-fe63a869fe4cee45",
+        "EV-49577d438cb6624b",
+        "EV-92634b09de96ca83",
+        "EV-39d56d5cef4cea80",
+        "EV-db304937ceac95d2",
+        "EV-5ec22cf9a1fb59d4",
+        "EV-3b7b9040dd2c2a89",
+        "EV-cf176636839e45be",
+        "EV-9c0552732b34f278",
+        "EV-3ff2a155035d01e7",
+        "EV-66338f5fb682617e",
+        "EV-e197177f2547fff3",
+        "EV-fece8aa7a115c364",
+        "EV-917966af8545a380"
+      ],
+      "entityIds": [
+        "EN-ddadc7e89f7cd629",
+        "EN-c70eca6b0f88f44d",
+        "EN-373ac021a2c0bb2c",
+        "EN-7d3194f79e645c42",
+        "EN-920510199770f4d6",
+        "EN-efa98ef1e586ac73",
+        "EN-ae31f30d39374a8b",
+        "EN-c857d09db23e6822",
+        "EN-4e7e886400fe6a83",
+        "EN-396f3f190a868b19"
+      ],
+      "fdeIds": [
+        "FDE-5ca4d6b1a0aff93c",
+        "FDE-0ee0fe3baa3f1364",
+        "FDE-8cc818b0e819b217"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-11-14"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

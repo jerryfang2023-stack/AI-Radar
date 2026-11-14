@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-13",
-    "currentDate": "2026-11-13",
-    "eventCount": 4448,
+    "latestDataDate": "2026-11-14",
+    "currentDate": "2026-11-14",
+    "eventCount": 4461,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -74,6 +74,7 @@
       "EV-9c0552732b34f278",
       "EV-3ff2a155035d01e7",
       "EV-66338f5fb682617e",
+      "EV-e197177f2547fff3",
       "EV-fece8aa7a115c364",
       "EV-917966af8545a380"
     ],
@@ -86,7 +87,8 @@
       "EN-efa98ef1e586ac73",
       "EN-ae31f30d39374a8b",
       "EN-c857d09db23e6822",
-      "EN-4e7e886400fe6a83"
+      "EN-4e7e886400fe6a83",
+      "EN-396f3f190a868b19"
     ],
     "fdeIds": [
       "FDE-5ca4d6b1a0aff93c",
@@ -95,7 +97,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2026-06-11",
-    "lastSeen": "2026-09-22"
+    "lastSeen": "2026-11-14"
   },
   "events": [
     {
@@ -2324,6 +2326,90 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-e197177f2547fff3",
+      "dataDate": "2026-11-14",
+      "date": "2026-11-07",
+      "updatedDate": "2026-11-07",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 安全倡导者在 1.1 亿美元中期选举之争后取得进展",
+      "originalTitle": "AI Safety Advocates Make Gains After $110 Million Midterm Fight",
+      "subject": "Public First",
+      "action": "capital_investment",
+      "object": "midterms",
+      "metrics": [
+        "$63 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [
+            "EN-396f3f190a868b19"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [
+            "EN-396f3f190a868b19"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [
+            "EN-396f3f190a868b19"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-396f3f190a868b19",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Public First",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-11-07/ai-safety-advocates-make-gains-after-110-million-midterm-fight",
+      "publisher": "www.bloomberg.com"
+    },
+    {
       "id": "EV-fece8aa7a115c364",
       "dataDate": "2026-09-16",
       "date": "2026-09-15",
@@ -2875,9 +2961,11 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-d4e72cbad81641c6",
         "EV-2406bc3d29c09326",
         "EV-27d9a40d0446e770",
         "EV-4fc82b5985acc6c8",
+        "EV-e197177f2547fff3",
         "EV-57717e60d7a07800",
         "EV-3cc8e7ce0143047a",
         "EV-000a2cf24e205f93",
@@ -3088,7 +3176,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-11-13"
+      "lastSeen": "2026-11-14"
     },
     {
       "id": "EN-373ac021a2c0bb2c",
@@ -3131,7 +3219,7 @@
         "EN-7d3194f79e645c42"
       ],
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-11-13"
+      "lastSeen": "2026-11-14"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -3789,7 +3877,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-13"
+      "lastSeen": "2026-11-14"
     },
     {
       "id": "EN-efa98ef1e586ac73",
@@ -3894,6 +3982,27 @@
       ],
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-06-23"
+    },
+    {
+      "id": "EN-396f3f190a868b19",
+      "name": "Public First",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e197177f2547fff3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-guardrails_safety"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-14"
     }
   ],
   "fde": [

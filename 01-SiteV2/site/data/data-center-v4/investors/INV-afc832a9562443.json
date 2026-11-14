@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-13",
-    "currentDate": "2026-11-13",
-    "eventCount": 4448,
+    "latestDataDate": "2026-11-14",
+    "currentDate": "2026-11-14",
+    "eventCount": 4461,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-12",
-    "latest_disclosed_at": "2026-11-11",
+    "latest_disclosed_at": "2026-11-13",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 1,
+      "lead": 2,
       "participant": 4
     },
     "round_codes": [
@@ -98,6 +98,11 @@
         "name": "Isomorphic Labs"
       },
       {
+        "entity_id": "EN-f3f2184b56f946c6",
+        "canonical_entity_id": "",
+        "name": "LangChain"
+      },
+      {
         "entity_id": "EN-7f871cbf905f6e0c",
         "canonical_entity_id": "EN-7f871cbf905f6e0c",
         "name": "OpenRouter"
@@ -109,6 +114,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-54415e96f38ad450",
+        "funding_insight_id": "FI-f2518c11e9cf385e",
+        "event_ids": [
+          "EV-1df5624821fce3f9"
+        ],
+        "company_entity_id": "EN-f3f2184b56f946c6",
+        "company_canonical_entity_id": "",
+        "company_name": "LangChain",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$300 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿美元"
+        },
+        "announced_at": "2026-11-13",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b96c8f1ce3eaba55",
+            "source_url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+            "source_title": "AI 智能体初创公司 LangChain 估值达 $3B",
+            "source_content_hash": "00ef7d62dbe695886728380ea03789cc769d555a4578000e86caaf374645f9ea",
+            "quote": "raised a $300 million Series C at a $3 billion valuation led by CapitalG",
+            "quote_hash": "82e0ab360239cfe8e483e05f23f5d2f6dc472d551c618d4ac38390353d04d3fb"
+          }
+        ]
+      },
       {
         "activity_id": "IA-174af004478eb3d4",
         "funding_insight_id": "FI-70d164861fee0af8",
@@ -352,6 +397,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-b96c8f1ce3eaba55",
+        "source_url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+        "source_title": "AI 智能体初创公司 LangChain 估值达 $3B",
+        "source_content_hash": "00ef7d62dbe695886728380ea03789cc769d555a4578000e86caaf374645f9ea",
+        "quote": "raised a $300 million Series C at a $3 billion valuation led by CapitalG",
+        "quote_hash": "82e0ab360239cfe8e483e05f23f5d2f6dc472d551c618d4ac38390353d04d3fb"
+      },
+      {
         "source_id": "FISRC-59233bfbeb9628bf",
         "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
         "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
@@ -423,16 +476,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：LangChain · C轮 · 2026-11-13 · 本轮领投 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b96c8f1ce3eaba55"
+        },
+        {
           "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮参投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-59233bfbeb9628bf"
         },
         {
           "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-10-04 · 本轮参投 · 21亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-82c9573ed9c6ba66"
-        },
-        {
-          "description": "融资来源记录：Supabase · 轮次未披露 · 2026-10-02 · 本轮参投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-06b7dbbc3fab6c09"
         }
       ],
       "contacts": [],
@@ -454,6 +507,14 @@
           "quote_hash": "d1f01c08b7bf92e45da97c19404e3963c55dc4d82e1e95345cbe00aecb33ade6"
         },
         {
+          "source_id": "FISRC-b96c8f1ce3eaba55",
+          "source_url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+          "source_title": "AI 智能体初创公司 LangChain 估值达 $3B",
+          "source_content_hash": "00ef7d62dbe695886728380ea03789cc769d555a4578000e86caaf374645f9ea",
+          "quote": "raised a $300 million Series C at a $3 billion valuation led by CapitalG",
+          "quote_hash": "82e0ab360239cfe8e483e05f23f5d2f6dc472d551c618d4ac38390353d04d3fb"
+        },
+        {
           "source_id": "FISRC-59233bfbeb9628bf",
           "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
           "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
@@ -468,14 +529,6 @@
           "source_content_hash": "e6bdf28f1eee82d0",
           "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
           "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
-        },
-        {
-          "source_id": "FISRC-06b7dbbc3fab6c09",
-          "source_url": "https://www.prnewswire.com/news-releases/supabase-announces-150m-in-new-funding-and-turso-acquisition-302896752.html",
-          "source_title": "Supabase 宣布获得 1.5 亿美元新融资并收购 Turso",
-          "source_content_hash": "15b4fc697a8917ac6a6fd81eb2fab30c97274ac06ffa37275cc8080eadd5fd4f",
-          "quote": "with Alphabet's independent growth fund CapitalG, IronArc, and SquarePeg also participating",
-          "quote_hash": "5cf6863ddbb79899792560130fa701a15baeb6ca479c35e3d6f6f768ddbe6c40"
         }
       ],
       "last_verified_at": "2026-10-04",

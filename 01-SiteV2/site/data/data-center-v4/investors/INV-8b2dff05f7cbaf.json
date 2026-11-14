@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-13",
-    "currentDate": "2026-11-13",
-    "eventCount": 4448,
+    "latestDataDate": "2026-11-14",
+    "currentDate": "2026-11-14",
+    "eventCount": 4461,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
+    "china_market_activity_count": 3,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-08-31",
-    "latest_disclosed_at": "2026-08-31",
+    "latest_disclosed_at": "2026-11-13",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "multi_round",
@@ -91,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-05314a333f8ad258",
+        "funding_insight_id": "FI-897482b4d579f4af",
+        "event_ids": [
+          "EV-a691420f309b3d29"
+        ],
+        "company_entity_id": "EN-447a48e5d0951831",
+        "company_canonical_entity_id": "EN-447a48e5d0951831",
+        "company_name": "以太之心",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-11-13",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7a044cba9e1f0377",
+            "source_url": "https://news.pedaily.cn/202611/571842.shtml",
+            "source_title": "AI智能体基础设施公司「以太之心」完成数千万种子轮融资",
+            "source_content_hash": "abbc73a039e18815f633c5c715d06fea7dc364e789d0bb8007f7f39c6a9f03f4",
+            "quote": "本轮融资由上海天使会、浦东创投、高信资本共同参与。",
+            "quote_hash": "2bc426cc48478a16d623004a426bc983d522ed560d0d78ba359e3ae8e11ae037"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ecbc00f83db302da",
         "funding_insight_id": "FI-0393a877e1b99840",
@@ -174,6 +214,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-7a044cba9e1f0377",
+        "source_url": "https://news.pedaily.cn/202611/571842.shtml",
+        "source_title": "AI智能体基础设施公司「以太之心」完成数千万种子轮融资",
+        "source_content_hash": "abbc73a039e18815f633c5c715d06fea7dc364e789d0bb8007f7f39c6a9f03f4",
+        "quote": "本轮融资由上海天使会、浦东创投、高信资本共同参与。",
+        "quote_hash": "2bc426cc48478a16d623004a426bc983d522ed560d0d78ba359e3ae8e11ae037"
+      },
+      {
         "source_id": "FISRC-1ae72db61aa80327",
         "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
         "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
@@ -215,6 +263,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：以太之心 · 种子轮 · 2026-11-13 · 本轮参投 · 数千万。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7a044cba9e1f0377"
+        },
+        {
           "description": "融资来源记录：松应科技 · 多轮融资 · 2026-08-31 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1ae72db61aa80327"
         },
@@ -248,6 +300,14 @@
           "source_content_hash": "e59ffa2a5d1890dd2891da990fcbbd4c65b9dd2b5c7f821d759f3d08c9e914e1",
           "quote": "高信资本 Focus Capital（上海高信私募基金管理有限公司；基金业协会登记编号：P1072179）是一家专注于硬科技领域投资的创投机构，聚焦于半导体、先进制造、新能源及新材料等国家重点支持的战略新兴产业方向。",
           "quote_hash": "c252f811efbb4a6f60513317fe4233dc90f75d54a7f9c78ae6a9fb3e5edff235"
+        },
+        {
+          "source_id": "FISRC-7a044cba9e1f0377",
+          "source_url": "https://news.pedaily.cn/202611/571842.shtml",
+          "source_title": "AI智能体基础设施公司「以太之心」完成数千万种子轮融资",
+          "source_content_hash": "abbc73a039e18815f633c5c715d06fea7dc364e789d0bb8007f7f39c6a9f03f4",
+          "quote": "本轮融资由上海天使会、浦东创投、高信资本共同参与。",
+          "quote_hash": "2bc426cc48478a16d623004a426bc983d522ed560d0d78ba359e3ae8e11ae037"
         },
         {
           "source_id": "FISRC-1ae72db61aa80327",
