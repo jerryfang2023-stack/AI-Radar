@@ -3227,3 +3227,16 @@ test('source-bound lead-only review preserves accepted intake and removes disput
  review.content_hash='unrelated-body';
  assert.throws(()=>buildBundle([source],taxonomy,date,'2026-07-16T00:00:00Z',options),/source_fact_review_binding_mismatch/);
 });
+
+
+test('36kr publisher suffix is presentation metadata, not the funding object',async()=>{
+ const title='“青葵智造”完成亿元A轮融资-36氪',body='AI软件公司青葵智造近日宣布完成亿元A轮融资，由甲投资参投。青葵智造提供AI科学研发软件。';
+ const input=entry('publisher-suffix',title,body.repeat(10),{language:'zh'}),snapshot=structuredClone(input);
+ const b=buildBundle([input],taxonomy,date,'2026-07-16T00:00:00Z'),event=b.canonical_events.find(e=>e.event_type==='funding');
+ assert.ok(event);assert.doesNotMatch(event.object,/-36氪/u);assert.ok(b.claims.every(c=>c.object!=='-36氪'));
+ assert.equal(normalizeEventTitle(title),'“青葵智造”完成亿元A轮融资');
+ assert.equal(normalizeEventTitle('36氪完成A轮融资'),'36氪完成A轮融资');
+ assert.equal(normalizeEventTitle('Acme完成融资，投资方为36氪基金'),'Acme完成融资，投资方为36氪基金');
+ const {canonicalFundingEventAmount}=await import('../funding-insight-v1-utils.mjs');assert.equal(canonicalFundingEventAmount(event,b.claims),'亿元');
+ assert.deepEqual(input,snapshot);
+});
