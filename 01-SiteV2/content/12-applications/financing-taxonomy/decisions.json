@@ -38319,6 +38319,39 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-11-15T00:52:28.276Z"
+    },
+    "EV-72d76cf0ec3b22f3": {
+      "id": "EV-72d76cf0ec3b22f3",
+      "scope": "review",
+      "exclusion_reason": "",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "该公司自称面向科学研发的Physical AI公司，以自驱动实验室结合物理执行系统重构研发，其核心业务是否属于具身智能/机器人本体边界不清，需人工复核。",
+      "input_hash": "d7706b2f9e0de636b8ed871aedbdc0a9f0f3e5d57d6a705c5bf9ac98e590d2b5",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-391872e9c07d3d0a",
+          "quote": "面向科学研发的Physical AI公司“青葵智造”近日宣布完成亿元A轮融资"
+        },
+        {
+          "source_id": "FISRC-fbb1da44d8a3742a",
+          "quote": "青葵智造（北京）科技有限公司（下称“青葵智造”）致力于以自驱动实验室重构科学研发"
+        },
+        {
+          "source_id": "FISRC-fbb1da44d8a3742a",
+          "quote": "以MoleMind智能决策、AI-LabOS中枢调度、NexoLab物理执行的自驱动实验体系"
+        }
+      ],
+      "provider": "responsible_source_replay",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-15T10:55:06.938Z"
     }
   },
   "generated_at": "2026-11-15T00:52:28.276Z"
