@@ -39,6 +39,12 @@ export function publicationProjectionAudit(before, after, {research = {}, candid
     counts: {public_subjects:after.cards.length,public_event_cards:after.event_cards.length,
       research_stored_cards:researchCards.length,research_selected_events:research.meta?.counts?.funding_events ?? null,
       research_stage_outcomes:research.meta?.counts || null},
+    non_admitted_research:researchCards.filter(row=>!after.event_cards.some(card=>[card.triggered_by_event_id,...(card.source_event_ids || [])].includes(row.triggered_by_event_id))).map(row=>{
+      const id=row.triggered_by_event_id;
+      const pending=after.review?.pending?.find(item=>item.event_id===id),held=after.review?.publication_pending?.find(item=>item.event_id===id),excluded=after.review?.excluded?.find(item=>item.event_id===id);
+      return {event_id:id,research_card_id:row.funding_insight_id,company:row.company?.name,application_entity_id:applicationId(row),research_result_status:row.publication_status || '',
+        is_publicly_admitted:false,publication_disposition:pending?'pending_classification':held?'publication_hold':excluded?'excluded_scope':'not_in_public_catalog',reason:pending?.reason || held?.reason || excluded?.reason || ''};
+    }),
     duplicate_public_subject_applications:duplicates(after.cards,applicationId,'application_entity_id'),
     duplicate_public_funding_events:duplicates(after.event_cards,card=>card.triggered_by_event_id,'event_id'),
     missing_historical_event_cards:before.event_cards.filter(card=>!currentEvents.has(card.funding_insight_id)).map(card=>card.funding_insight_id),
@@ -62,7 +68,7 @@ export function publicationProjectionAudit(before, after, {research = {}, candid
           .map(row=>({candidate_id:row.candidate_id,candidate_kind:row.candidate_kind,research_name:row.research_name,
             status:row.status,company_entity_ids:row.company_entity_ids || []}))};
     }),
-    contract:'Research cards and cached research receipts are intermediate records. Public subjects are catalog.cards; public financing events are catalog.event_cards. Different IDs across these layers and source_card_ids lineage are expected, not additional public cards. Pending person/product canonical candidates do not alone imply pending company identity. Research selected-event outcomes include pending/deduplicated cases; inspect complete arrays instead of a read excerpt. All semantic facts still require original review.'
+    contract:'Research cards and cached research receipts are intermediate records; their legacy auto_published status means research generation completed, never public financing admission. A card in catalog.review.pending is correctly withheld, not a classification bypass. Zero public delta does not mean zero raw/canonical changes. Public subjects are catalog.cards; public financing events are catalog.event_cards. Different IDs across these layers and source_card_ids lineage are expected, not additional public cards. Pending person/product canonical candidates do not alone imply pending company identity. Research selected-event outcomes include pending/deduplicated cases; inspect complete arrays instead of a read excerpt. All semantic facts still require original review.'
   };
 }
 
@@ -128,8 +134,10 @@ export function writePublicationReviewContext({checkout,directory,base,head,date
   }
   const publication=JSON.parse(fs.readFileSync(path.join(checkout,`agent-workflow/reports/financing/${date}/publication.json`),'utf8'));
   const required_originals={},quote_audit={};
+  let privateCatalog=[];
   if(evidenceRoot) {
     const catalog=fs.readFileSync(path.join(evidenceRoot,'catalog.jsonl'),'utf8').split(/\r?\n/u).filter(Boolean).map(line=>JSON.parse(line));
+    privateCatalog=catalog;
     for(const card of [...delta.subjects.added,...delta.subjects.changed.map(row=>row.after)]) {
       const locators=originalLocators(card,evidenceRoot,catalog);
       if(!locators.length)throw new Error(`review_private_original_missing:${card.funding_insight_id}`);
@@ -142,10 +150,34 @@ export function writePublicationReviewContext({checkout,directory,base,head,date
   const projection_audit=publicationProjectionAudit(before,after,{
     research:optionalJson(path.join(funding,`${date}.json`),{}),
     candidates:optionalJson(path.join(funding,'entity-review-queue.json'),{}).candidates || []});
+  const dailyPath=`01-SiteV2/content/11-databases/data-center-v4/${date}/canonical-events.json`;
+  const listed=spawnSync('git',['ls-tree','--name-only',base,'--',dailyPath],{cwd:checkout,encoding:'utf8'});
+  if(listed.status!==0)throw new Error('review_base_facts_unavailable');
+  let oldFacts=[];
+  if(listed.stdout.trim()){
+    const result=spawnSync('git',['show',`${base}:${dailyPath}`],{cwd:checkout,encoding:'utf8',maxBuffer:32*1024*1024});
+    if(result.status!==0)throw new Error('review_base_facts_unavailable');oldFacts=JSON.parse(result.stdout);
+  }
+  const currentFacts=optionalJson(path.join(checkout,dailyPath),[]),oldById=new Map(oldFacts.map(row=>[row.event_id,row])),currentById=new Map(currentFacts.map(row=>[row.event_id,row]));
+  const addedFacts=currentFacts.filter(row=>!oldById.has(row.event_id)),changedFacts=currentFacts.filter(row=>oldById.has(row.event_id)&&hash(oldById.get(row.event_id))!==hash(row));
+  for(const event of [...addedFacts,...changedFacts]){
+    if(!/^EV-[a-zA-Z0-9-]+$/u.test(event.event_id))throw new Error('review_event_id_invalid');
+    emit(`factual-delta/${event.event_id}.json`,event);
+  }
+  const non_admitted_originals={};
+  const research=optionalJson(path.join(funding,`${date}.json`),{});
+  for(const row of projection_audit.non_admitted_research){
+    const card=research.cards.find(card=>card.triggered_by_event_id===row.event_id);
+    const originals=evidenceRoot?originalLocators(card,evidenceRoot,privateCatalog):[];
+    non_admitted_originals[row.event_id]=originals;
+    if(!/^FI-[a-zA-Z0-9-]+$/u.test(row.research_card_id))throw new Error('review_card_id_invalid');
+    emit(`non-admitted-research/${row.research_card_id}.json`,{disposition:row,research_card:card,available_originals:originals});
+  }
+  const factual_layer_delta={file:dailyPath,added:addedFacts.map(row=>row.event_id),changed:changedFacts.map(row=>row.event_id),removed:oldFacts.filter(row=>!currentById.has(row.event_id)).map(row=>row.event_id),contract:'Raw/Claim/canonical changes are distinct from public financing admissions. Inspect factual-delta and non-admitted-research packets even with zero public delta. A withheld candidate is not an approved financing fact; any defect affecting public outputs or history still blocks.'};
   const summary={version:'FINANCING-PUBLICATION-REVIEW-CONTEXT-1',date,base_commit:base,head_commit:head,projection_audit,
     before:{subjects:before.cards.length,events:before.event_cards.length},after:{subjects:after.cards.length,events:after.event_cards.length},
     delta:Object.fromEntries(Object.entries(delta).map(([kind,rows])=>[kind,Object.fromEntries(Object.entries(rows).map(([status,items])=>[status,items.length]))])),
-    files,required_originals,quote_audit,verification_queue_counts:publication.verification?.counts,
+    files,required_originals,quote_audit,non_admitted_originals,factual_layer_delta,verification_queue_counts:publication.verification?.counts,
     boundary:'Queue verification counts are not publication delta counts. Monitoring date is not financing announcement date. This packet is navigation and comparison metadata, not factual approval. Read captured originals and claims for every admitted addition or factual change. Catalog review exclusions/holds must remain excluded. Raw canonical verified status does not itself establish financing publication eligibility.',
     pending_publication:after.review?.publication_pending || [],excluded_count:after.review?.excluded?.length,pending_classification_count:after.review?.pending?.length};
   fs.writeFileSync(path.join(directory,'publication-review-context.json'),JSON.stringify(summary,null,2)+'\n',{mode:0o600});
