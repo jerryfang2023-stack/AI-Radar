@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-14",
-    "currentDate": "2026-11-14",
-    "eventCount": 4461,
+    "latestDataDate": "2026-11-15",
+    "currentDate": "2026-11-15",
+    "eventCount": 4464,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,16 +63,19 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-aa7f1c2c6933fdb1"
+      "EV-aa7f1c2c6933fdb1",
+      "EV-3b4ddffc45dd7e87"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-26",
-    "lastSeen": "2026-08-27",
+    "lastSeen": "2026-11-15",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-3b4ddffc45dd7e87"
+      ],
       "deployments": [
         "EV-aa7f1c2c6933fdb1"
       ],
@@ -83,6 +86,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-3b4ddffc45dd7e87",
+        "dataDate": "2026-11-15",
+        "date": "2026-11-11",
+        "eventType": "financial_performance",
+        "eventTypeLabel": "财务表现",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "CoreWeave转向客户预付款和更短合同，为AI增长提供资金",
+        "displayTags": [],
+        "entityIds": [
+          "EN-8348e0915fc78ec2"
+        ]
+      },
       {
         "id": "EV-aa7f1c2c6933fdb1",
         "dataDate": "2026-08-27",

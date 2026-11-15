@@ -1,0 +1,86 @@
+{
+  "verification": {
+    "version": "FINANCING-VERIFICATION-1",
+    "status": "completed",
+    "counts": {
+      "total": 974,
+      "verified": 0,
+      "excluded": 81,
+      "reviewed": 0,
+      "pending": 893
+    },
+    "ledger": "verification.json",
+    "deferred_research": []
+  },
+  "version": "FINANCING-MONITOR-1",
+  "date": "2026-11-15",
+  "status": "ready_for_review",
+  "counts": {
+    "leads": 531,
+    "accepted_originals": 76,
+    "pending": 266,
+    "excluded": 189
+  },
+  "next": "merge_pages_portal_and_live_parity",
+  "generated_at": "2026-11-15T00:54:14.354Z",
+  "responsible_recovery": {
+    "code_pr": "https://github.com/jerryfang2023-stack/AI-Radar/pull/1356",
+    "base_main": "26a7e4d647d6b0fa27e8be1c95a9578aff4de914",
+    "public_subjects": 714,
+    "public_events": 765,
+    "new_public_events": 0,
+    "non_admitted_research": [
+      {
+        "event_id": "EV-72d76cf0ec3b22f3",
+        "company": "青葵智造（北京）科技有限公司",
+        "scope": "review",
+        "research_status": "auto_published",
+        "publicly_admitted": false,
+        "reason": "该公司自称面向科学研发的Physical AI公司，以自驱动实验室结合物理执行系统重构研发，其核心业务是否属于具身智能/机器人本体边界不清，需人工复核。"
+      }
+    ],
+    "input_hashes": {
+      "collection.json": {
+        "sha256": "58b7b42fdf4fe2f40a38dff37482f5c4d7946bde1c1d529afaa9655e9b59bfea",
+        "counts": {
+          "leads": 531,
+          "accepted_originals": 76,
+          "pending": 266,
+          "excluded": 189
+        }
+      },
+      "verification.json": {
+        "sha256": "f6285c96efca2c13b1368b0fbbb2099381062adf9cfffafae043bc5b5383aca4",
+        "counts": {
+          "total": 974,
+          "verified": 0,
+          "excluded": 81,
+          "reviewed": 0,
+          "pending": 893
+        }
+      },
+      "publication.json": {
+        "sha256": "47f4833a19bf49bbdb957d197bc0559a758b3320230f5fe302f8c8af90ca2b49",
+        "counts": {
+          "leads": 531,
+          "accepted_originals": 76,
+          "pending": 266,
+          "excluded": 189
+        }
+      },
+      "intake": {
+        "sha256": "3e0d17982a87ad39306105252ec8aef4338ff5dcd12f77818e7d5237e41b9ba3"
+      }
+    },
+    "validated_stages": [
+      "facts",
+      "research",
+      "projections",
+      "financing_tags",
+      "release_gate"
+    ],
+    "production_receipt_sha256": "b5c01036f88b6aa2b6040b88914f11baf980fdc888bc062b16b5f16abbd026cd",
+    "review_guidance": "Legacy research auto_published means research generation completed, not public admission. Qingkui remains scope=review and is absent from catalog.cards/event_cards. New canonical packets and pending originals are separate from zero public delta. Read actual originals; do not approve scope or entity merges to clear this hold.",
+    "new_capture_or_provider_requests": 0
+  }
+}
