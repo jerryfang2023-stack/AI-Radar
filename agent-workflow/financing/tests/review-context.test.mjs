@@ -87,3 +87,30 @@ test('review projection audit exposes actual public duplicates and lost or chang
  const changed=publicationProjectionAudit({cards:[old],event_cards:[old]},{cards:[old],event_cards:[{...old,financing:{amount:999}}]});
  assert.deepEqual(changed.changed_historical_event_cards,['FI-old']);
 });
+
+
+test('research result marked auto_published remains visibly unadmitted when classification is pending',()=>{
+ const raw={...card('FI-research'),triggered_by_event_id:'EV-pending',publication_status:'auto_published',company:{name:'Lab AI',application_entity_id:'EN-lab'}};
+ const audit=publicationProjectionAudit({cards:[],event_cards:[]},{cards:[],event_cards:[],review:{pending:[{event_id:'EV-pending',reason:'robotics boundary unclear'}]}},{research:{cards:[raw]}});
+ assert.equal(audit.non_admitted_research.length,1);assert.equal(audit.non_admitted_research[0].publication_disposition,'pending_classification');
+ assert.equal(audit.non_admitted_research[0].is_publicly_admitted,false);assert.equal(audit.non_admitted_research[0].research_result_status,'auto_published');
+ assert.equal(audit.counts.public_event_cards,0);assert.deepEqual(audit.lineage,[]);
+});
+
+
+test('zero public delta still supplies canonical candidates and originals for withheld research',()=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'financing-pending-context-'));
+ const put=(file,data)=>{const p=path.join(root,file);fs.mkdirSync(path.dirname(p),{recursive:true});fs.writeFileSync(p,typeof data==='string'?data:JSON.stringify(data));};
+ try{
+  execFileSync('git',['init','--quiet',root]);const file='01-SiteV2/site/data/financing-catalog-v1.json',catalog={cards:[],event_cards:[]};put(file,catalog);execFileSync('git',['add',file],{cwd:root});const base=execFileSync('git',['write-tree'],{cwd:root,encoding:'utf8'}).trim();
+  const date='2026-11-15';put(file,{...catalog,review:{pending:[{event_id:'EV-pending',reason:'scope unclear'}]}});
+  put(`agent-workflow/reports/financing/${date}/publication.json`,{verification:{counts:{pending:99}}});
+  put(`01-SiteV2/content/11-databases/data-center-v4/${date}/canonical-events.json`,[{event_id:'EV-pending',event_type:'funding'}]);
+  put(`01-SiteV2/content/12-applications/funding-insights/${date}.json`,{cards:[{...card('FI-research'),triggered_by_event_id:'EV-pending',publication_status:'auto_published',research_sources:[{source_id:'FISRC-abc',content_hash:'body-hash',source_url:'https://example.org/story'}]}]});
+  put('evidence/catalog.jsonl','');put('evidence/funding-research/FISRC-abc.json',{content_hash:'body-hash',body_clean:'Original financing article'});
+  const out=writePublicationReviewContext({checkout:root,directory:path.join(root,'review'),base,head:'head',date,evidenceRoot:path.join(root,'evidence')});
+  assert.equal(out.delta.events.added,0);assert.deepEqual(out.required_originals,{});assert.deepEqual(out.factual_layer_delta.added,['EV-pending']);
+  assert.equal(out.non_admitted_originals['EV-pending'][0].path,'funding-research/FISRC-abc.json');assert.equal(out.projection_audit.non_admitted_research[0].is_publicly_admitted,false);
+  assert.ok(out.files.includes('factual-delta/EV-pending.json'));assert.ok(out.files.includes('non-admitted-research/FI-research.json'));
+ }finally{fs.rmSync(root,{recursive:true,force:true});}
+});
