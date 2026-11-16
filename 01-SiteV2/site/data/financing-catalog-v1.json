@@ -8,14 +8,14 @@
     "latest_date": "2026-11-16",
     "last_checked_date": "2026-11-16",
     "latest_financing_date": "2026-11-15",
-    "generated_at": "2026-11-16T03:29:24.739Z",
+    "generated_at": "2026-11-16T03:52:10.049Z",
     "card_count": 720,
     "china_market_card_count": 156,
     "duplicate_rounds_removed": 26,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-11-16T03:30:36.229Z"
+      "generated_at": "2026-11-16T03:54:05.861Z"
     },
     "market_category_framework": {
       "name": "观澜 AI 融资分类",
@@ -35,7 +35,7 @@
         }
       ]
     },
-    "event_count": 772,
+    "event_count": 771,
     "aggregation_strategy": "reviewed_funding_subject",
     "scope": "all_ai_financing_except_embodied_and_robotics",
     "excluded_count": 99,
@@ -397,7 +397,6 @@
       "D轮",
       "E轮",
       "F轮",
-      "G轮",
       "H轮",
       "IPO",
       "Pre-A++轮",
@@ -2771,763 +2770,6 @@
       "source_card_ids": [
         "FI-c3ea4385d0dfc608",
         "FI-3923d1a4fc2b8a40"
-      ]
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-ee3e219e230bb204",
-      "triggered_by_event_id": "EV-afbf21a381d1fa5d",
-      "as_of_date": "2026-11-16",
-      "company": {
-        "entity_id": "EN-8d4321d936320802",
-        "name": "NVIDIA",
-        "full_name": "NVIDIA",
-        "website": "",
-        "summary": "NVIDIA 是芯片制造商，并通过其 NVentures 投资部门参与初创企业融资；据 Crunchbase 数据，2026 年其参与初创融资交易已超过 120 笔。",
-        "headquarters": "",
-        "founders": [
-          {
-            "name": "Jensen Huang",
-            "role": "联合创始人、CEO",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-205e3be06863ae1e",
-                "quote": "With co-founder Jensen Huang’s sudden departure this week",
-                "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-                "quote_hash": "95683b1ef4a20b3dd5ac70e3091b6050637e9470605e6cc1bf4ef3aa7e5d51dd"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-205e3be06863ae1e",
-            "quote": "The chipmaker and its NVentures arm have participated in more than 120 startup funding deals so far this year",
-            "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-            "quote_hash": "0cd5b8bd98f11537685a8b5458b7019420c66d2bfe1aff20fe66de1bb10bc560"
-          },
-          {
-            "source_id": "FISRC-0122ec2217c08ff3",
-            "quote": "NVIDIA (NASDAQ: NVDA) is the world leader in AI and accelerated computing.",
-            "source_content_hash": "6e84a14cc6606c4f",
-            "quote_hash": "42304990977c6f1001a304c2539bed4320e84dcc7592cb6a96b243d7605b6f6b"
-          }
-        ],
-        "application_entity_id": "EN-8d4321d936320802",
-        "canonical_entity_consistent": true
-      },
-      "financing": {
-        "round": "G轮",
-        "amount": "$122 billion",
-        "total_raised": "",
-        "announced_at": "2026-11-13",
-        "investor_disclosure_status": "not_disclosed",
-        "investors": [],
-        "other_round_investors": [],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-205e3be06863ae1e",
-            "quote": "The largest Nvidia-backed deals in 2026 include OpenAI’s Series G, which closed at $122 billion in March",
-            "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-            "quote_hash": "c274fcd56dad92bb8939576366d44a61d73ba17cd822133651c2b1651f660d91"
-          },
-          {
-            "source_id": "FISRC-205e3be06863ae1e",
-            "quote": "The chipmaker and its NVentures arm have participated in more than 120 startup funding deals so far this year, according to Crunchbase data",
-            "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-            "quote_hash": "d0e3c847668d3aed3d898cf3098f1c33e99836daa67f77c35c494d56374e3b82"
-          }
-        ],
-        "round_code": "series_g",
-        "round_original": "G轮",
-        "amount_original": "$122 billion",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 122000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "1220 亿美元"
-        },
-        "total_raised_original": "",
-        "total_raised_normalized": {
-          "currency": "",
-          "value": null,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "undisclosed",
-          "display_zh": ""
-        },
-        "risk_markers": [
-          "investors_missing"
-        ],
-        "disclosures": [
-          {
-            "event_id": "EV-afbf21a381d1fa5d",
-            "round_original": "G轮",
-            "amount": "$122 billion",
-            "announced_at": "2026-11-13",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-205e3be06863ae1e",
-                "quote": "The largest Nvidia-backed deals in 2026 include OpenAI’s Series G, which closed at $122 billion in March",
-                "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-                "quote_hash": "c274fcd56dad92bb8939576366d44a61d73ba17cd822133651c2b1651f660d91"
-              },
-              {
-                "source_id": "FISRC-205e3be06863ae1e",
-                "quote": "The chipmaker and its NVentures arm have participated in more than 120 startup funding deals so far this year, according to Crunchbase data",
-                "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-                "quote_hash": "d0e3c847668d3aed3d898cf3098f1c33e99836daa67f77c35c494d56374e3b82"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "partially_disclosed",
-        "cumulative_amount": {
-          "original": "",
-          "normalized": {
-            "currency": "",
-            "value": null,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "undisclosed",
-            "display_zh": ""
-          },
-          "basis": "known_rounds_only",
-          "known_round_totals": [
-            {
-              "currency": "USD",
-              "value": null,
-              "min_value": 622000000000,
-              "max_value": null,
-              "unit": "base",
-              "round_count": 2,
-              "status": "lower_bound",
-              "display_zh": "超过 6220 亿美元"
-            }
-          ],
-          "historical_round_count": 2
-        },
-        "current_source_ids": [
-          "FISRC-205e3be06863ae1e"
-        ]
-      },
-      "products": [
-        {
-          "name": "NVIDIA 加速计算平台",
-          "description": "NVIDIA 提供加速计算与全栈 AI 基础设施，其 CUDA 平台构成开发者与客户生态基础。",
-          "target_customers": "前沿 AI 实验室、企业与 AI 云服务商",
-          "features": [
-            "CUDA 软件生态",
-            "全栈 AI 基础设施"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0122ec2217c08ff3",
-              "quote": "NVIDIA compute is an investable asset — one which provides the lowest token cost, highest revenue and longest life along with a rich ecosystem of offtakers built upon NVIDIA’s CUDA platform.",
-              "source_content_hash": "6e84a14cc6606c4f",
-              "quote_hash": "3c751188f66b6fbd1493a93515ed7645c75ec33556178e37debbf5b76695670a"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "DSX AI factories",
-          "description": "面向客户的 AI 工厂基础设施方案，用于承载 AI 计算负载。",
-          "target_customers": "需要大规模算力的客户",
-          "features": [
-            "AI 工厂"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0122ec2217c08ff3",
-              "quote": "These financing platforms will help customers access scarce compute at scale and build the DSX AI factories that will power every industry and country in the age of AI.",
-              "source_content_hash": "6e84a14cc6606c4f",
-              "quote_hash": "fd08426e6ef96cf87860e230c521c3ccdced06a1845852fc4a48f8c75c03b677"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "AI 工厂",
-          "description": "英伟达所称的 AI 工厂不仅包括 GPU，还包括高速网络、系统软件、AI 框架以及 CUDA 开发生态，可运行语言、视觉、语音、生物、机器人等不同类型的 AI 工作负载。",
-          "target_customers": "符合条件的 AI 实验室、企业和 AI 云服务商",
-          "features": [
-            "GPU",
-            "高速网络",
-            "系统软件",
-            "AI 框架",
-            "CUDA 开发生态"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cf38c3524690b402",
-              "quote": "公司所称的“AI 工厂”并不只是 GPU，还包括高速网络、系统软件、AI 框架以及 CUDA 开发生态，可以运行语言、视觉、语音、生物、机器人等不同类型的 AI 工作负载。",
-              "source_content_hash": "f3b5b91d9d6cd338",
-              "quote_hash": "5be2ecc4cdd0a3a6b9a2d410e0f09a143dab55bf5dfa25c7faa3e5e3f9d3cd54"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [],
-      "comparisons": [],
-      "metrics": [
-        {
-          "label": "2026 年参与初创融资交易数",
-          "value": "121",
-          "observed_at": "2026-11-13",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-205e3be06863ae1e",
-              "quote": "Nvidia’s startup investments this year total 121",
-              "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-              "quote_hash": "74725eb5fc42cd86d1e4d45fc535a0f7225f32f501e46f3efd97fc5b7b914903"
-            }
-          ]
-        },
-        {
-          "label": "2025 年参与初创融资交易数",
-          "value": "91",
-          "observed_at": "2026-11-13",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-205e3be06863ae1e",
-              "quote": "the company and its venture arm participated in 91 known startup financings",
-              "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-              "quote_hash": "a9a2e57db4690a0c6b2a96eb909e347574bd00b3f1ecbd471767a5b310f9db02"
-            }
-          ]
-        },
-        {
-          "label": "2024 年参与初创融资交易数",
-          "value": "54",
-          "observed_at": "2026-11-13",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-205e3be06863ae1e",
-              "quote": "up from 54 the year prior",
-              "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-              "quote_hash": "b158fd2b5f3a3f9ea11842cb6814eb5f65b6a7654a68543fdc5c8bbf4c31bc59"
-            }
-          ]
-        },
-        {
-          "label": "OpenAI G 轮融资规模",
-          "value": "$122 billion",
-          "observed_at": "2026-11-13",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-205e3be06863ae1e",
-              "quote": "OpenAI’s Series G, which closed at $122 billion in March",
-              "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-              "quote_hash": "3b093d7e3682937f70c2e41f7a2270b2b8942d7bd41dd8b5034903af4b2bfc74"
-            }
-          ]
-        },
-        {
-          "label": "Anthropic G 轮融资规模",
-          "value": "$30 billion",
-          "observed_at": "2026-11-13",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-205e3be06863ae1e",
-              "quote": "Anthropic’s $30 billion Series G in February",
-              "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-              "quote_hash": "d7182b4befe056d88ddc938e0138cd9dc5de154513ce60cc498ab955a1f6fca3"
-            }
-          ]
-        },
-        {
-          "label": "Crusoe F 轮融资规模",
-          "value": "$3.9 billion",
-          "observed_at": "2026-11-13",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-205e3be06863ae1e",
-              "quote": "a $3.9 billion September Series F for AI infrastructure provider Crusoe",
-              "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-              "quote_hash": "ea8006d4064fcf6c3bf11f0f894d2d49a9ee567f7bb7c3dbe121e8db96d96c61"
-            }
-          ]
-        },
-        {
-          "label": "NVIDIA 市值",
-          "value": "接近 $4 trillion",
-          "observed_at": "2026-11-13",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-205e3be06863ae1e",
-              "quote": "Nvidia’s valuation remains close to $4 trillion",
-              "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-              "quote_hash": "053a09587a7677a3efdf50c633142aa85ca46b495acb183fd89072e815c1fa47"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "Jensen Huang",
-          "quote": "In AI, compute is revenue. NVIDIA compute is uniquely suited for this role.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0122ec2217c08ff3",
-              "quote": "In AI, compute is revenue. NVIDIA compute is uniquely suited for this role.",
-              "source_content_hash": "6e84a14cc6606c4f",
-              "quote_hash": "24e8130c8bf467a1933f1701e2fbbaa3f8e1fb0bda61afce562dddcd260cef25"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [],
-        "capital_judgment": "本事件并非 NVIDIA 自身融资，而是 Crunchbase 对 NVIDIA 作为初创投资方的记录性报道；可验证信号是 2026 年参与 121 笔初创融资交易、超过 2025 年的 91 笔，并参与 OpenAI、Anthropic、Crusoe 等大额轮次。资本判断的边界在于：这些轮次金额为整轮规模，并非 NVIDIA 单独出资额；来源未披露 NVIDIA 本轮自身融资的金额、轮次或估值。",
-        "validated_signals": [
-          "2026 年 NVIDIA 及 NVentures 参与初创融资交易 121 笔",
-          "2025 年参与 91 笔已知初创融资，2024 年为 54 笔",
-          "参与 OpenAI 1220 亿美元 Series G、Anthropic 300 亿美元 Series G 等大额轮次"
-        ],
-        "risks": [
-          "来源明确说明 OpenAI、Anthropic 等轮次金额为整轮总额，包含其他投资方出资，不能视为 NVIDIA 单独投资额",
-          "来源未披露 NVIDIA 自身本轮融资的轮次、金额与估值，融资信息存在缺口",
-          "报道提及黄仁勋离职及管理层变动，未来投资节奏存在不确定性",
-          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
-        ],
-        "sector": "AI 芯片与加速器",
-        "investment_thesis": {
-          "statement": "本事件并非 NVIDIA 自身融资，而是 Crunchbase 对 NVIDIA 作为初创投资方的记录性报道；可验证信号是 2026 年参与 121 笔初创融资交易、超过 2025 年的 91 笔，并参与 OpenAI、Anthropic、Crusoe 等大额轮次。资本判断的边界在于：这些轮次金额为整轮规模，并非 NVIDIA 单独出资额；来源未披露 NVIDIA 本轮自身融资的金额、轮次或估值。",
-          "evidence_signals": [
-            "2026 年 NVIDIA 及 NVentures 参与初创融资交易 121 笔",
-            "2025 年参与 91 笔已知初创融资，2024 年为 54 笔",
-            "参与 OpenAI 1220 亿美元 Series G、Anthropic 300 亿美元 Series G 等大额轮次"
-          ],
-          "risks": [
-            "来源明确说明 OpenAI、Anthropic 等轮次金额为整轮总额，包含其他投资方出资，不能视为 NVIDIA 单独投资额",
-            "来源未披露 NVIDIA 自身本轮融资的轮次、金额与估值，融资信息存在缺口",
-            "报道提及黄仁勋离职及管理层变动，未来投资节奏存在不确定性",
-            "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
-          ],
-          "institutional_rationale_status": "not_disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "NVIDIA 加速计算平台",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "DSX AI factories",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Jensen Huang",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [
-        {
-          "event_id": "EV-afbf21a381d1fa5d",
-          "date": "2026-11-13",
-          "title": "Crunchbase 数据：Nvidia 的初创企业融资交易创下纪录。黄仁勋之后会怎样？",
-          "amount": "$122 billion",
-          "source_refs": [
-            "SA-d8d9863101717770"
-          ]
-        },
-        {
-          "event_id": "EV-e70a48e36e99d57a",
-          "date": "2026-08-15",
-          "title": "英伟达联手六大金融机构建立 5000 亿美元 AI 融资平台，黄仁勋称部分项目可获最高 25% 残值支持",
-          "amount": "5000 亿",
-          "source_refs": [
-            "SA-54124eaa5767aaca"
-          ]
-        }
-      ],
-      "research_sources": [
-        {
-          "source_id": "FISRC-205e3be06863ae1e",
-          "source_url": "https://news.crunchbase.com/venture/huang-nvda-ai-startup-funding-record-2026/",
-          "title": "Crunchbase 数据：Nvidia 的初创企业融资交易创下纪录。黄仁勋之后会怎样？",
-          "publisher": "news.crunchbase.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-11-16T00:21:33.478Z",
-          "content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-          "source_artifact_id": "SA-d8d9863101717770",
-          "raw_id": "RAW-546a1c1212412646",
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-0122ec2217c08ff3",
-          "source_url": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
-          "title": "NVIDIA Partners With Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms to Mobilize Over $500 Billion of Third-Party Capital",
-          "publisher": "nvidianews.nvidia.com",
-          "source_class": "official_candidate",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-16T03:28:53.016Z",
-          "content_hash": "6e84a14cc6606c4f",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        },
-        {
-          "source_id": "FISRC-cf38c3524690b402",
-          "source_url": "https://www.ithome.com/0/990/154.htm",
-          "title": "英伟达联手六大金融机构建立 5000 亿美元 AI 融资平台，黄仁勋称部分项目可获最高 25% 残值支持",
-          "publisher": "IT之家（RSS）",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-08-16T00:21:44.093Z",
-          "content_hash": "f3b5b91d9d6cd338",
-          "source_artifact_id": "SA-54124eaa5767aaca",
-          "raw_id": "RAW-7c457bf5afd88be8",
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-5514041be03e64ae",
-          "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Partners-With-Apollo-BlackRock-Blackstone-Brookfield-Goldman-Sachs-and-KKR-to-Establish-AI-Compute-Infrastructure-Financing-Platforms-to-Mobilize-Over-500-Billion-of-Third-Party-Capital/default.aspx",
-          "title": "NVIDIA Corporation - NVIDIA Partners With Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms to Mobilize Over $500 Billion of Third-Party Capital",
-          "publisher": "investor.nvidia.com",
-          "source_class": "official_candidate",
-          "capture_method": "exa_captured_content",
-          "captured_at": "2026-08-16T00:25:02.499Z",
-          "content_hash": "281ec3c5199ae992",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-flash",
-        "attempts": 2,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-11-16T03:29:24.030Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-11-16T03:29:24.030Z",
-      "customer_research": {
-        "status": "no_verified_customer_found",
-        "verified_customer_count": 0,
-        "searched_source_count": 2
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 2,
-          "unresolved_names": [
-            "DSX AI factories",
-            "NVIDIA 加速计算平台"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "Jensen Huang"
-          ]
-        }
-      },
-      "source_event_ids": [
-        "EV-afbf21a381d1fa5d",
-        "EV-e70a48e36e99d57a"
-      ],
-      "aggregation": {
-        "key": "EN-8d4321d936320802|series_g|USD:exact:122000000000:::|2026-11-13",
-        "event_count": 2,
-        "strategy": "reviewed_funding_subject",
-        "subject_id": "EN-8d4321d936320802",
-        "source_card_count": 2
-      },
-      "historical_rounds": [
-        {
-          "funding_insight_id": "FI-ee3e219e230bb204",
-          "event_ids": [
-            "EV-afbf21a381d1fa5d"
-          ],
-          "round": "G轮",
-          "round_code": "series_g",
-          "round_original": "G轮",
-          "amount_original": "$122 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 122000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1220 亿美元"
-          },
-          "announced_at": "2026-11-13",
-          "disclosure_status": "partially_disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": true,
-          "investors": [],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-205e3be06863ae1e",
-              "quote": "The largest Nvidia-backed deals in 2026 include OpenAI’s Series G, which closed at $122 billion in March",
-              "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-              "quote_hash": "c274fcd56dad92bb8939576366d44a61d73ba17cd822133651c2b1651f660d91"
-            },
-            {
-              "source_id": "FISRC-205e3be06863ae1e",
-              "quote": "The chipmaker and its NVentures arm have participated in more than 120 startup funding deals so far this year, according to Crunchbase data",
-              "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-              "quote_hash": "d0e3c847668d3aed3d898cf3098f1c33e99836daa67f77c35c494d56374e3b82"
-            }
-          ]
-        },
-        {
-          "funding_insight_id": "FI-ed1d2ba02f527a10",
-          "event_ids": [
-            "EV-e70a48e36e99d57a"
-          ],
-          "round": "基础设施融资",
-          "round_code": "infrastructure",
-          "round_original": "基础设施融资",
-          "amount_original": "超过 5000 亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 500000000000,
-            "min_value": 500000000000,
-            "max_value": null,
-            "unit": "base",
-            "status": "lower_bound",
-            "display_zh": "超过 5000 亿美元"
-          },
-          "announced_at": "2026-08-15",
-          "disclosure_status": "disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": false,
-          "investors": [
-            {
-              "name": "Apollo",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-5514041be03e64ae",
-                  "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
-                  "source_content_hash": "281ec3c5199ae992",
-                  "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-ffb6d28673644f"
-            },
-            {
-              "name": "BlackRock",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-5514041be03e64ae",
-                  "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
-                  "source_content_hash": "281ec3c5199ae992",
-                  "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-a83f8b9c272b41"
-            },
-            {
-              "name": "Blackstone",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-5514041be03e64ae",
-                  "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
-                  "source_content_hash": "281ec3c5199ae992",
-                  "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-1493e20e99083e"
-            },
-            {
-              "name": "Brookfield",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-5514041be03e64ae",
-                  "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
-                  "source_content_hash": "281ec3c5199ae992",
-                  "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-86402224b56edd"
-            },
-            {
-              "name": "Goldman Sachs",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-5514041be03e64ae",
-                  "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
-                  "source_content_hash": "281ec3c5199ae992",
-                  "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-b7ae05f40c20c5"
-            },
-            {
-              "name": "KKR",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-5514041be03e64ae",
-                  "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
-                  "source_content_hash": "281ec3c5199ae992",
-                  "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-7a1970a91bd68a"
-            }
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cf38c3524690b402",
-              "quote": "IT之家 8 月 15 日消息，英伟达 8 月 11 日宣布与阿波罗、贝莱德、黑石、布鲁克菲尔德、高盛和 KKR 合作，建立独立融资平台，计划随着时间推移调动超过 5000 亿美元的第三方资本，用于 AI 基础设施建设。",
-              "source_content_hash": "f3b5b91d9d6cd338",
-              "quote_hash": "e2c48e34e9c32b45320bb2ed1d2a6e28130aca1987874842a9760068688aea71"
-            },
-            {
-              "source_id": "FISRC-cf38c3524690b402",
-              "quote": "英伟达 8 月 11 日宣布与阿波罗、贝莱德、黑石、布鲁克菲尔德、高盛和 KKR 合作，建立独立融资平台，计划随着时间推移调动超过 5000 亿美元的第三方资本，用于 AI 基础设施建设。",
-              "source_content_hash": "f3b5b91d9d6cd338",
-              "quote_hash": "a12cd473bd2651c5ba24322f81c1a9db2d4a3ebc42678f8e04a3e8a5fb8862c7"
-            }
-          ]
-        }
-      ],
-      "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
-        "source_registry_ids": []
-      },
-      "product_form": {
-        "id": "chip-system",
-        "name": "芯片与计算系统",
-        "dimension": "financing_product_form"
-      },
-      "market_category": {
-        "id": "compute",
-        "name": "AI 算力与芯片",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "ai-chips",
-        "name": "AI 芯片与加速器",
-        "dimension": "financing_subsector"
-      },
-      "market_application": null,
-      "links": {
-        "company": "data-center.html?view=index&detail=entity&id=EN-8d4321d936320802",
-        "relation_map": "data-center.html?view=relations&entity=EN-8d4321d936320802",
-        "funding_event": "data-center.html?view=events&detail=event&id=EV-afbf21a381d1fa5d"
-      },
-      "translations": {
-        "zh-CN": {
-          "metrics[3].label": {
-            "text": "OpenAI G 轮融资规模",
-            "source_hash": "921239cf51827fcd0aeefa4dac1bd2d7a5a62acbde0086940e172a053d48a3e1",
-            "provider": "deepseek",
-            "model": "deepseek-flash",
-            "translated_at": "2026-11-16T03:30:36.229Z",
-            "status": "translated"
-          },
-          "metrics[4].label": {
-            "text": "Anthropic G 轮融资规模",
-            "source_hash": "384abe6d05b5919413957adc6617da5c101b011ed95ed379a65bba059c59ac1e",
-            "provider": "deepseek",
-            "model": "deepseek-flash",
-            "translated_at": "2026-11-16T03:30:36.229Z",
-            "status": "translated"
-          },
-          "metrics[5].label": {
-            "text": "Crusoe F 轮融资规模",
-            "source_hash": "1fa71fa10d2a66c904561bb85141f3e0351457f092839d2c9a591bff75e714a5",
-            "provider": "deepseek",
-            "model": "deepseek-flash",
-            "translated_at": "2026-11-16T03:30:36.229Z",
-            "status": "translated"
-          },
-          "metrics[6].label": {
-            "text": "NVIDIA 市值",
-            "source_hash": "b2a6fadd2b6046d50774c787672945e40d5f3a70b8c7a664a5c82cbd21a89423",
-            "provider": "deepseek",
-            "model": "deepseek-flash",
-            "translated_at": "2026-11-16T03:30:36.229Z",
-            "status": "translated"
-          }
-        }
-      },
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "compute",
-          "name": "AI 算力与芯片"
-        },
-        "subsector": {
-          "id": "ai-chips",
-          "name": "AI 芯片与加速器"
-        },
-        "product_form": {
-          "id": "chip-system",
-          "name": "芯片与计算系统"
-        },
-        "customers": [],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-0122ec2217c08ff3",
-            "quote": "NVIDIA (NASDAQ: NVDA) is the world leader in AI and accelerated computing."
-          },
-          {
-            "source_id": "FISRC-0122ec2217c08ff3",
-            "quote": "NVIDIA compute is an investable asset — one which provides the lowest token cost, highest revenue and longest life along with a rich ecosystem of offtakers built upon NVIDIA’s CUDA platform."
-          },
-          {
-            "source_id": "FISRC-0122ec2217c08ff3",
-            "quote": "These financing platforms will help customers access scarce compute at scale and build the DSX AI factories that will power every industry and country in the age of AI."
-          }
-        ],
-        "rationale": "NVIDIA 以加速计算平台与 AI 芯片为核心业务，属于 AI 算力与芯片。"
-      },
-      "source_card_ids": [
-        "FI-ee3e219e230bb204",
-        "FI-ed1d2ba02f527a10"
       ]
     },
     {
@@ -345706,6 +344948,718 @@
     },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-ed1d2ba02f527a10",
+      "triggered_by_event_id": "EV-e70a48e36e99d57a",
+      "as_of_date": "2026-08-16",
+      "company": {
+        "entity_id": "EN-8d4321d936320802",
+        "name": "NVIDIA",
+        "full_name": "NVIDIA",
+        "website": "https://www.nvidia.com",
+        "summary": "英伟达宣布与阿波罗、贝莱德、黑石、布鲁克菲尔德、高盛和 KKR 建立独立融资平台，计划随时间推移调动超过 5000 亿美元第三方资本用于 AI 基础设施建设，并可能为部分项目提供最高 25% 的残值支持。",
+        "headquarters": "加利福尼亚州圣克拉拉",
+        "founders": [
+          {
+            "name": "Jensen Huang",
+            "role": "创始人兼首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5514041be03e64ae",
+                "quote": "said Jensen Huang, founder and CEO of NVIDIA",
+                "source_content_hash": "281ec3c5199ae992",
+                "quote_hash": "444afdd5eb13eee37d5a40fcccfdae6f3572ab7063f91d7fc0c665b4a47d3b7f"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf38c3524690b402",
+            "quote": "英伟达 8 月 11 日宣布与阿波罗、贝莱德、黑石、布鲁克菲尔德、高盛和 KKR 合作，建立独立融资平台，计划随着时间推移调动超过 5000 亿美元的第三方资本，用于 AI 基础设施建设。",
+            "source_content_hash": "f3b5b91d9d6cd338",
+            "quote_hash": "a12cd473bd2651c5ba24322f81c1a9db2d4a3ebc42678f8e04a3e8a5fb8862c7"
+          }
+        ],
+        "application_entity_id": "EN-8d4321d936320802",
+        "canonical_entity_consistent": true
+      },
+      "financing": {
+        "round": "基础设施融资",
+        "amount": "超过 5000 亿美元",
+        "total_raised": "超过 5000 亿美元",
+        "announced_at": "2026-08-15",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Apollo",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5514041be03e64ae",
+                "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
+                "source_content_hash": "281ec3c5199ae992",
+                "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-ffb6d28673644f"
+          },
+          {
+            "name": "BlackRock",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5514041be03e64ae",
+                "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
+                "source_content_hash": "281ec3c5199ae992",
+                "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-a83f8b9c272b41"
+          },
+          {
+            "name": "Blackstone",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5514041be03e64ae",
+                "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
+                "source_content_hash": "281ec3c5199ae992",
+                "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-1493e20e99083e"
+          },
+          {
+            "name": "Brookfield",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5514041be03e64ae",
+                "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
+                "source_content_hash": "281ec3c5199ae992",
+                "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-86402224b56edd"
+          },
+          {
+            "name": "Goldman Sachs",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5514041be03e64ae",
+                "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
+                "source_content_hash": "281ec3c5199ae992",
+                "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b7ae05f40c20c5"
+          },
+          {
+            "name": "KKR",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5514041be03e64ae",
+                "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
+                "source_content_hash": "281ec3c5199ae992",
+                "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-7a1970a91bd68a"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf38c3524690b402",
+            "quote": "IT之家 8 月 15 日消息，英伟达 8 月 11 日宣布与阿波罗、贝莱德、黑石、布鲁克菲尔德、高盛和 KKR 合作，建立独立融资平台，计划随着时间推移调动超过 5000 亿美元的第三方资本，用于 AI 基础设施建设。",
+            "source_content_hash": "f3b5b91d9d6cd338",
+            "quote_hash": "e2c48e34e9c32b45320bb2ed1d2a6e28130aca1987874842a9760068688aea71"
+          },
+          {
+            "source_id": "FISRC-cf38c3524690b402",
+            "quote": "英伟达 8 月 11 日宣布与阿波罗、贝莱德、黑石、布鲁克菲尔德、高盛和 KKR 合作，建立独立融资平台，计划随着时间推移调动超过 5000 亿美元的第三方资本，用于 AI 基础设施建设。",
+            "source_content_hash": "f3b5b91d9d6cd338",
+            "quote_hash": "a12cd473bd2651c5ba24322f81c1a9db2d4a3ebc42678f8e04a3e8a5fb8862c7"
+          }
+        ],
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "超过 5000 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000000,
+          "min_value": 500000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 5000 亿美元"
+        },
+        "total_raised_original": "超过 5000 亿美元",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 500000000000,
+          "min_value": 500000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 5000 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-e70a48e36e99d57a",
+            "round_original": "基础设施融资",
+            "amount": "超过 5000 亿美元",
+            "announced_at": "2026-08-15",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cf38c3524690b402",
+                "quote": "IT之家 8 月 15 日消息，英伟达 8 月 11 日宣布与阿波罗、贝莱德、黑石、布鲁克菲尔德、高盛和 KKR 合作，建立独立融资平台，计划随着时间推移调动超过 5000 亿美元的第三方资本，用于 AI 基础设施建设。",
+                "source_content_hash": "f3b5b91d9d6cd338",
+                "quote_hash": "e2c48e34e9c32b45320bb2ed1d2a6e28130aca1987874842a9760068688aea71"
+              },
+              {
+                "source_id": "FISRC-cf38c3524690b402",
+                "quote": "英伟达 8 月 11 日宣布与阿波罗、贝莱德、黑石、布鲁克菲尔德、高盛和 KKR 合作，建立独立融资平台，计划随着时间推移调动超过 5000 亿美元的第三方资本，用于 AI 基础设施建设。",
+                "source_content_hash": "f3b5b91d9d6cd338",
+                "quote_hash": "a12cd473bd2651c5ba24322f81c1a9db2d4a3ebc42678f8e04a3e8a5fb8862c7"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "超过 5000 亿美元",
+          "normalized": {
+            "currency": "USD",
+            "value": 500000000000,
+            "min_value": 500000000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 5000 亿美元"
+          },
+          "basis": "source_disclosed",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": null,
+              "min_value": 500000000000,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "lower_bound",
+              "display_zh": "超过 5000 亿美元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-cf38c3524690b402"
+        ]
+      },
+      "products": [
+        {
+          "name": "AI 工厂",
+          "description": "英伟达所称的 AI 工厂不仅包括 GPU，还包括高速网络、系统软件、AI 框架以及 CUDA 开发生态，可运行语言、视觉、语音、生物、机器人等不同类型的 AI 工作负载。",
+          "target_customers": "符合条件的 AI 实验室、企业和 AI 云服务商",
+          "features": [
+            "GPU",
+            "高速网络",
+            "系统软件",
+            "AI 框架",
+            "CUDA 开发生态"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf38c3524690b402",
+              "quote": "公司所称的“AI 工厂”并不只是 GPU，还包括高速网络、系统软件、AI 框架以及 CUDA 开发生态，可以运行语言、视觉、语音、生物、机器人等不同类型的 AI 工作负载。",
+              "source_content_hash": "f3b5b91d9d6cd338",
+              "quote_hash": "5be2ecc4cdd0a3a6b9a2d410e0f09a143dab55bf5dfa25c7faa3e5e3f9d3cd54"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "计划调动第三方资本规模",
+          "value": "超过 5000 亿美元",
+          "observed_at": "2026-08-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5514041be03e64ae",
+              "quote": "mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time",
+              "source_content_hash": "281ec3c5199ae992",
+              "quote_hash": "bb502a370f004f7687a673d738e38610d930bdc12b333ecd2f20c76241aec718"
+            }
+          ]
+        },
+        {
+          "label": "部分项目最高残值支持比例",
+          "value": "25%",
+          "observed_at": "2026-08-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf38c3524690b402",
+              "quote": "公司可能会在某个时候针对部分 AI 基础设施投资项目提供最高 25% 的残值支持",
+              "source_content_hash": "f3b5b91d9d6cd338",
+              "quote_hash": "24989d587550ea250f095f8466100836cac2f2acbea4658e9564ba39603e26f0"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Jensen Huang",
+          "quote": "In AI, compute is revenue. NVIDIA compute is uniquely suited for this role. It is broadly adopted, flexible across models and workloads, fungible and transferable across customers and operators, and continuously improved through CUDA software — extending its useful life and improving its economics over time.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5514041be03e64ae",
+              "quote": "In AI, compute is revenue. NVIDIA compute is uniquely suited for this role. It is broadly adopted, flexible across models and workloads, fungible and transferable across customers and operators, and continuously improved through CUDA software — extending its useful life and improving its economics over time.",
+              "source_content_hash": "281ec3c5199ae992",
+              "quote_hash": "f336bc419272a4e9895cb1c868f4e777c2c6a0361506a1e2cf0f1fc916e5e005"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "BlackRock",
+            "speaker": "Larry Fink",
+            "speaker_role": "Chairman and CEO of BlackRock",
+            "rationale": "认为 AI 建设需要前所未有的投资，英伟达加速计算领导力与 BlackRock 长期资本连接能力结合，可提供企业所需算力并创造长期投资机会。",
+            "quote": "This partnership deepens our relationship with NVIDIA, including through the AI Infrastructure Partnership, and brings together NVIDIA’s leadership in accelerated computing with BlackRock’s ability to connect long-term capital to essential infrastructure.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5514041be03e64ae",
+                "quote": "This partnership deepens our relationship with NVIDIA, including through the AI Infrastructure Partnership, and brings together NVIDIA’s leadership in accelerated computing with BlackRock’s ability to connect long-term capital to essential infrastructure.",
+                "source_content_hash": "281ec3c5199ae992",
+                "quote_hash": "ca8cbbdb77a2a46c8dcf0021660a8f0df7602eda9404b0c939b9858e872a07e8"
+              }
+            ]
+          },
+          {
+            "institution": "KKR",
+            "speaker": "Joe Bae and Scott Nuttall",
+            "speaker_role": "Co-Chief Executive Officers of KKR",
+            "rationale": "认为算力已成为关键基础设施资产，结合英伟达加速计算平台与 KKR 长期资本和基础设施能力，可将增长需求转化为实际容量。",
+            "quote": "Compute has become a critical infrastructure asset.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5514041be03e64ae",
+                "quote": "Compute has become a critical infrastructure asset.",
+                "source_content_hash": "281ec3c5199ae992",
+                "quote_hash": "ac25eb6f150ab51124ae5eaf2d7770131d1c7a9d653e293772e1e4d0cf066e80"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是英伟达算力能否从企业自购 GPU 的一次性资本开支，转变为可由长期机构资本独立评估、融资和持有的可投资资产类别。已验证信号包括：英伟达 CUDA 生态的广泛采用、算力可跨客户和运营商重新部署的资产流动性，以及 A100 等硬件通过软件升级延长经济使用周期。证据边界在于：5000 亿美元是平台计划随时间调动的第三方资本总规模，并非英伟达收入或单一基金规模；最终协议尚未签署，融资平台仍受制于最终协议执行。",
+        "validated_signals": [
+          "英伟达 CUDA 平台拥有广泛的开发者、客户和承购方生态",
+          "英伟达算力可跨模型、工作负载、客户和运营商灵活部署",
+          "A100 自 2020 年推出后到 2026 年仍用于 AI 训练、微调、推理和高性能计算"
+        ],
+        "risks": [
+          "融资平台仍受制于最终协议执行，尚未形成具有约束力的融资承诺",
+          "残值支持机制以资产残值为基础，仅覆盖部分风险，不意味着英伟达承担整个项目的融资责任"
+        ],
+        "sector": "数据中心与算力基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是英伟达算力能否从企业自购 GPU 的一次性资本开支，转变为可由长期机构资本独立评估、融资和持有的可投资资产类别。已验证信号包括：英伟达 CUDA 生态的广泛采用、算力可跨客户和运营商重新部署的资产流动性，以及 A100 等硬件通过软件升级延长经济使用周期。证据边界在于：5000 亿美元是平台计划随时间调动的第三方资本总规模，并非英伟达收入或单一基金规模；最终协议尚未签署，融资平台仍受制于最终协议执行。",
+          "evidence_signals": [
+            "英伟达 CUDA 平台拥有广泛的开发者、客户和承购方生态",
+            "英伟达算力可跨模型、工作负载、客户和运营商灵活部署",
+            "A100 自 2020 年推出后到 2026 年仍用于 AI 训练、微调、推理和高性能计算"
+          ],
+          "risks": [
+            "融资平台仍受制于最终协议执行，尚未形成具有约束力的融资承诺",
+            "残值支持机制以资产残值为基础，仅覆盖部分风险，不意味着英伟达承担整个项目的融资责任"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI 工厂",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jensen Huang",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Apollo",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "BlackRock",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Blackstone",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Brookfield",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Goldman Sachs",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "KKR",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-e70a48e36e99d57a",
+          "date": "2026-08-15",
+          "title": "英伟达联手六大金融机构建立 5000 亿美元 AI 融资平台，黄仁勋称部分项目可获最高 25% 残值支持",
+          "amount": "5000 亿",
+          "source_refs": [
+            "SA-54124eaa5767aaca"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-cf38c3524690b402",
+          "source_url": "https://www.ithome.com/0/990/154.htm",
+          "title": "英伟达联手六大金融机构建立 5000 亿美元 AI 融资平台，黄仁勋称部分项目可获最高 25% 残值支持",
+          "publisher": "IT之家（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-16T00:21:44.093Z",
+          "content_hash": "f3b5b91d9d6cd338",
+          "source_artifact_id": "SA-54124eaa5767aaca",
+          "raw_id": "RAW-7c457bf5afd88be8",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-5514041be03e64ae",
+          "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Partners-With-Apollo-BlackRock-Blackstone-Brookfield-Goldman-Sachs-and-KKR-to-Establish-AI-Compute-Infrastructure-Financing-Platforms-to-Mobilize-Over-500-Billion-of-Third-Party-Capital/default.aspx",
+          "title": "NVIDIA Corporation - NVIDIA Partners With Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms to Mobilize Over $500 Billion of Third-Party Capital",
+          "publisher": "investor.nvidia.com",
+          "source_class": "official_candidate",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-16T00:25:02.499Z",
+          "content_hash": "281ec3c5199ae992",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-08-16T00:25:27.977Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-e70a48e36e99d57a",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-16T00:25:27.977Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "AI 工厂"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Jensen Huang"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-e70a48e36e99d57a"
+      ],
+      "aggregation": {
+        "key": "EN-8d4321d936320802|infrastructure|USD:lower_bound:500000000000:500000000000::|2026-08-15",
+        "event_count": 1,
+        "strategy": "reviewed_funding_subject",
+        "subject_id": "EN-8d4321d936320802",
+        "source_card_count": 1
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-ed1d2ba02f527a10",
+          "event_ids": [
+            "EV-e70a48e36e99d57a"
+          ],
+          "round": "基础设施融资",
+          "round_code": "infrastructure",
+          "round_original": "基础设施融资",
+          "amount_original": "超过 5000 亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 500000000000,
+            "min_value": 500000000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 5000 亿美元"
+          },
+          "announced_at": "2026-08-15",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true,
+          "investors": [
+            {
+              "name": "Apollo",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-5514041be03e64ae",
+                  "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
+                  "source_content_hash": "281ec3c5199ae992",
+                  "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-ffb6d28673644f"
+            },
+            {
+              "name": "BlackRock",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-5514041be03e64ae",
+                  "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
+                  "source_content_hash": "281ec3c5199ae992",
+                  "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-a83f8b9c272b41"
+            },
+            {
+              "name": "Blackstone",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-5514041be03e64ae",
+                  "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
+                  "source_content_hash": "281ec3c5199ae992",
+                  "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-1493e20e99083e"
+            },
+            {
+              "name": "Brookfield",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-5514041be03e64ae",
+                  "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
+                  "source_content_hash": "281ec3c5199ae992",
+                  "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-86402224b56edd"
+            },
+            {
+              "name": "Goldman Sachs",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-5514041be03e64ae",
+                  "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
+                  "source_content_hash": "281ec3c5199ae992",
+                  "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-b7ae05f40c20c5"
+            },
+            {
+              "name": "KKR",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-5514041be03e64ae",
+                  "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
+                  "source_content_hash": "281ec3c5199ae992",
+                  "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-7a1970a91bd68a"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cf38c3524690b402",
+              "quote": "IT之家 8 月 15 日消息，英伟达 8 月 11 日宣布与阿波罗、贝莱德、黑石、布鲁克菲尔德、高盛和 KKR 合作，建立独立融资平台，计划随着时间推移调动超过 5000 亿美元的第三方资本，用于 AI 基础设施建设。",
+              "source_content_hash": "f3b5b91d9d6cd338",
+              "quote_hash": "e2c48e34e9c32b45320bb2ed1d2a6e28130aca1987874842a9760068688aea71"
+            },
+            {
+              "source_id": "FISRC-cf38c3524690b402",
+              "quote": "英伟达 8 月 11 日宣布与阿波罗、贝莱德、黑石、布鲁克菲尔德、高盛和 KKR 合作，建立独立融资平台，计划随着时间推移调动超过 5000 亿美元的第三方资本，用于 AI 基础设施建设。",
+              "source_content_hash": "f3b5b91d9d6cd338",
+              "quote_hash": "a12cd473bd2651c5ba24322f81c1a9db2d4a3ebc42678f8e04a3e8a5fb8862c7"
+            }
+          ]
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "id": "compute",
+        "name": "算力服务",
+        "dimension": "financing_product_form"
+      },
+      "market_category": {
+        "id": "compute",
+        "name": "AI 算力与芯片",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "compute-infrastructure",
+        "name": "数据中心与算力基础设施",
+        "dimension": "financing_subsector"
+      },
+      "market_application": null,
+      "links": {
+        "company": "data-center.html?view=index&detail=entity&id=EN-8d4321d936320802",
+        "relation_map": "data-center.html?view=relations&entity=EN-8d4321d936320802",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-e70a48e36e99d57a"
+      },
+      "translations": {
+        "zh-CN": {
+          "company.headquarters": {
+            "text": "加利福尼亚州圣克拉拉",
+            "source_hash": "85b80febff8f542cbad1d33edfd5ee3be83903d35ab3167cb09e6edd2acee374",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-16T00:25:40.363Z",
+            "status": "translated"
+          },
+          "company.founders[0].role": {
+            "text": "创始人兼首席执行官",
+            "source_hash": "be07a2f2c31945f5b3ae42acecac7528c58b7f5e9ebb3ede8ccbe8c7039d172b",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-16T00:25:40.363Z",
+            "status": "translated"
+          }
+        }
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "compute",
+          "name": "AI 算力与芯片"
+        },
+        "subsector": {
+          "id": "compute-infrastructure",
+          "name": "数据中心与算力基础设施"
+        },
+        "product_form": {
+          "id": "compute",
+          "name": "算力服务"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-cf38c3524690b402",
+            "quote": "英伟达 8 月 11 日宣布与阿波罗、贝莱德、黑石、布鲁克菲尔德、高盛和 KKR 合作，建立独立融资平台，计划随着时间推移调动超过 5000 亿美元的第三方资本，用于 AI 基础设施建设。"
+          },
+          {
+            "source_id": "FISRC-cf38c3524690b402",
+            "quote": "公司所称的“AI 工厂”并不只是 GPU，还包括高速网络、系统软件、AI 框架以及 CUDA 开发生态，可以运行语言、视觉、语音、生物、机器人等不同类型的 AI 工作负载。"
+          }
+        ],
+        "rationale": "英伟达通过融资平台调动资本建设 AI 工厂，提供 GPU、网络、软件及 CUDA 生态等算力基础设施。"
+      },
+      "source_card_ids": [
+        "FI-ed1d2ba02f527a10"
+      ]
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-aff7d85b56aff6b0",
       "triggered_by_event_id": "EV-1bc31f98fa3e34cc",
       "as_of_date": "2026-08-22",
@@ -675154,166 +675108,6 @@
       ]
     },
     {
-      "funding_insight_id": "FI-ee3e219e230bb204",
-      "triggered_by_event_id": "EV-afbf21a381d1fa5d",
-      "source_event_ids": [
-        "EV-afbf21a381d1fa5d"
-      ],
-      "subject_card_id": "FI-ee3e219e230bb204",
-      "as_of_date": "2026-11-16",
-      "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
-        "source_registry_ids": []
-      },
-      "company": {
-        "entity_id": "EN-8d4321d936320802",
-        "application_entity_id": "EN-8d4321d936320802",
-        "name": "NVIDIA",
-        "full_name": "NVIDIA",
-        "summary": "NVIDIA 是芯片制造商，并通过其 NVentures 投资部门参与初创企业融资；据 Crunchbase 数据，2026 年其参与初创融资交易已超过 120 笔。",
-        "website": "",
-        "headquarters": "",
-        "founders": [
-          {
-            "name": "Jensen Huang",
-            "role": "联合创始人、CEO",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-205e3be06863ae1e",
-                "quote": "With co-founder Jensen Huang’s sudden departure this week",
-                "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-                "quote_hash": "95683b1ef4a20b3dd5ac70e3091b6050637e9470605e6cc1bf4ef3aa7e5d51dd"
-              }
-            ],
-            "entity_id": null
-          }
-        ]
-      },
-      "financing": {
-        "round": "G轮",
-        "round_code": "series_g",
-        "round_original": "G轮",
-        "amount": "$122 billion",
-        "amount_original": "$122 billion",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 122000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "1220 亿美元"
-        },
-        "announced_at": "2026-11-13",
-        "disclosure_status": "partially_disclosed",
-        "investor_disclosure_status": "not_disclosed",
-        "investors": [],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-205e3be06863ae1e",
-            "quote": "The largest Nvidia-backed deals in 2026 include OpenAI’s Series G, which closed at $122 billion in March",
-            "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-            "quote_hash": "c274fcd56dad92bb8939576366d44a61d73ba17cd822133651c2b1651f660d91"
-          },
-          {
-            "source_id": "FISRC-205e3be06863ae1e",
-            "quote": "The chipmaker and its NVentures arm have participated in more than 120 startup funding deals so far this year, according to Crunchbase data",
-            "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-            "quote_hash": "d0e3c847668d3aed3d898cf3098f1c33e99836daa67f77c35c494d56374e3b82"
-          }
-        ],
-        "current_source_ids": [
-          "FISRC-205e3be06863ae1e"
-        ]
-      },
-      "research_sources": [
-        {
-          "source_id": "FISRC-205e3be06863ae1e",
-          "source_url": "https://news.crunchbase.com/venture/huang-nvda-ai-startup-funding-record-2026/",
-          "title": "Crunchbase 数据：Nvidia 的初创企业融资交易创下纪录。黄仁勋之后会怎样？",
-          "publisher": "news.crunchbase.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-11-16T00:21:33.478Z",
-          "content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-          "source_artifact_id": "SA-d8d9863101717770",
-          "raw_id": "RAW-546a1c1212412646",
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-0122ec2217c08ff3",
-          "source_url": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
-          "title": "NVIDIA Partners With Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms to Mobilize Over $500 Billion of Third-Party Capital",
-          "publisher": "nvidianews.nvidia.com",
-          "source_class": "official_candidate",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-16T03:28:53.016Z",
-          "content_hash": "6e84a14cc6606c4f",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        }
-      ],
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "compute",
-          "name": "AI 算力与芯片"
-        },
-        "subsector": {
-          "id": "ai-chips",
-          "name": "AI 芯片与加速器"
-        },
-        "product_form": {
-          "id": "chip-system",
-          "name": "芯片与计算系统"
-        },
-        "customers": [],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-0122ec2217c08ff3",
-            "quote": "NVIDIA (NASDAQ: NVDA) is the world leader in AI and accelerated computing."
-          },
-          {
-            "source_id": "FISRC-0122ec2217c08ff3",
-            "quote": "NVIDIA compute is an investable asset — one which provides the lowest token cost, highest revenue and longest life along with a rich ecosystem of offtakers built upon NVIDIA’s CUDA platform."
-          },
-          {
-            "source_id": "FISRC-0122ec2217c08ff3",
-            "quote": "These financing platforms will help customers access scarce compute at scale and build the DSX AI factories that will power every industry and country in the age of AI."
-          }
-        ],
-        "rationale": "NVIDIA 以加速计算平台与 AI 芯片为核心业务，属于 AI 算力与芯片。"
-      },
-      "market_category": {
-        "id": "compute",
-        "name": "AI 算力与芯片",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "ai-chips",
-        "name": "AI 芯片与加速器",
-        "dimension": "financing_subsector"
-      },
-      "product_form": {
-        "id": "chip-system",
-        "name": "芯片与计算系统",
-        "dimension": "financing_product_form"
-      },
-      "products": [
-        {
-          "name": "NVIDIA 加速计算平台"
-        },
-        {
-          "name": "DSX AI factories"
-        }
-      ]
-    },
-    {
       "funding_insight_id": "FI-f2518c11e9cf385e",
       "triggered_by_event_id": "EV-1df5624821fce3f9",
       "source_event_ids": [
@@ -777367,7 +777161,7 @@
       "source_event_ids": [
         "EV-e70a48e36e99d57a"
       ],
-      "subject_card_id": "FI-ee3e219e230bb204",
+      "subject_card_id": "FI-ed1d2ba02f527a10",
       "as_of_date": "2026-08-16",
       "market_scope": {
         "market_region": "GLOBAL",
@@ -889131,7 +888925,6 @@
   ],
   "card_aliases": {
     "FI-3923d1a4fc2b8a40": "FI-c3ea4385d0dfc608",
-    "FI-ed1d2ba02f527a10": "FI-ee3e219e230bb204",
     "FI-ee03878e699295b9": "FI-9409bc662eb189c0",
     "FI-27c50f0e1e7dd316": "FI-70d164861fee0af8",
     "FI-f617b97f0b35118f": "FI-65757c535b592aae",

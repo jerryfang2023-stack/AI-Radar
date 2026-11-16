@@ -8,14 +8,14 @@
     "latest_date": "2026-11-16",
     "last_checked_date": "2026-11-16",
     "latest_financing_date": "2026-11-15",
-    "generated_at": "2026-11-16T03:29:24.739Z",
-    "card_count": 924,
+    "generated_at": "2026-11-16T03:52:10.049Z",
+    "card_count": 923,
     "china_market_card_count": 261,
     "duplicate_rounds_removed": 88,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-11-16T03:30:36.229Z"
+      "generated_at": "2026-11-16T03:54:05.861Z"
     },
     "market_category_framework": {
       "name": "CB Insights AI 100 2026",
@@ -424,7 +424,8 @@
                 "quote_hash": "4c892a67e120b6a25de2b98b84751ce0cc3264445645bf28443e005692a09154"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-3db359d76bb32a"
           },
           {
             "name": "South Park Commons",
@@ -451,7 +452,8 @@
                 "quote_hash": "4c892a67e120b6a25de2b98b84751ce0cc3264445645bf28443e005692a09154"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-048ff6e877ef80"
           },
           {
             "name": "Valour Capital",
@@ -464,7 +466,8 @@
                 "quote_hash": "4c892a67e120b6a25de2b98b84751ce0cc3264445645bf28443e005692a09154"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-9a1fcb8b03102c"
           },
           {
             "name": "Micromax",
@@ -1047,618 +1050,6 @@
     },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-ee3e219e230bb204",
-      "triggered_by_event_id": "EV-afbf21a381d1fa5d",
-      "as_of_date": "2026-11-16",
-      "company": {
-        "entity_id": "EN-8d4321d936320802",
-        "name": "NVIDIA",
-        "full_name": "NVIDIA",
-        "website": "",
-        "summary": "NVIDIA 是芯片制造商，并通过其 NVentures 投资部门参与初创企业融资；据 Crunchbase 数据，2026 年其参与初创融资交易已超过 120 笔。",
-        "headquarters": "",
-        "founders": [
-          {
-            "name": "Jensen Huang",
-            "role": "联合创始人、CEO",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-205e3be06863ae1e",
-                "quote": "With co-founder Jensen Huang’s sudden departure this week",
-                "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-                "quote_hash": "95683b1ef4a20b3dd5ac70e3091b6050637e9470605e6cc1bf4ef3aa7e5d51dd"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-205e3be06863ae1e",
-            "quote": "The chipmaker and its NVentures arm have participated in more than 120 startup funding deals so far this year",
-            "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-            "quote_hash": "0cd5b8bd98f11537685a8b5458b7019420c66d2bfe1aff20fe66de1bb10bc560"
-          },
-          {
-            "source_id": "FISRC-0122ec2217c08ff3",
-            "quote": "NVIDIA (NASDAQ: NVDA) is the world leader in AI and accelerated computing.",
-            "source_content_hash": "6e84a14cc6606c4f",
-            "quote_hash": "42304990977c6f1001a304c2539bed4320e84dcc7592cb6a96b243d7605b6f6b"
-          }
-        ],
-        "application_entity_id": "EN-8d4321d936320802",
-        "canonical_entity_consistent": true
-      },
-      "financing": {
-        "round": "G轮",
-        "amount": "$122 billion",
-        "total_raised": "",
-        "announced_at": "2026-11-13",
-        "investor_disclosure_status": "not_disclosed",
-        "investors": [],
-        "other_round_investors": [],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-205e3be06863ae1e",
-            "quote": "The largest Nvidia-backed deals in 2026 include OpenAI’s Series G, which closed at $122 billion in March",
-            "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-            "quote_hash": "c274fcd56dad92bb8939576366d44a61d73ba17cd822133651c2b1651f660d91"
-          },
-          {
-            "source_id": "FISRC-205e3be06863ae1e",
-            "quote": "The chipmaker and its NVentures arm have participated in more than 120 startup funding deals so far this year, according to Crunchbase data",
-            "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-            "quote_hash": "d0e3c847668d3aed3d898cf3098f1c33e99836daa67f77c35c494d56374e3b82"
-          }
-        ],
-        "round_code": "series_g",
-        "round_original": "G轮",
-        "amount_original": "$122 billion",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 122000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "1220 亿美元"
-        },
-        "total_raised_original": "",
-        "total_raised_normalized": {
-          "currency": "",
-          "value": null,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "undisclosed",
-          "display_zh": ""
-        },
-        "risk_markers": [
-          "investors_missing"
-        ],
-        "disclosures": [
-          {
-            "event_id": "EV-afbf21a381d1fa5d",
-            "round_original": "G轮",
-            "amount": "$122 billion",
-            "announced_at": "2026-11-13",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-205e3be06863ae1e",
-                "quote": "The largest Nvidia-backed deals in 2026 include OpenAI’s Series G, which closed at $122 billion in March",
-                "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-                "quote_hash": "c274fcd56dad92bb8939576366d44a61d73ba17cd822133651c2b1651f660d91"
-              },
-              {
-                "source_id": "FISRC-205e3be06863ae1e",
-                "quote": "The chipmaker and its NVentures arm have participated in more than 120 startup funding deals so far this year, according to Crunchbase data",
-                "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-                "quote_hash": "d0e3c847668d3aed3d898cf3098f1c33e99836daa67f77c35c494d56374e3b82"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "partially_disclosed",
-        "cumulative_amount": {
-          "original": "",
-          "normalized": {
-            "currency": "",
-            "value": null,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "undisclosed",
-            "display_zh": ""
-          },
-          "basis": "known_rounds_only",
-          "known_round_totals": [
-            {
-              "currency": "USD",
-              "value": null,
-              "min_value": 642000000000,
-              "max_value": null,
-              "unit": "base",
-              "round_count": 3,
-              "status": "lower_bound",
-              "display_zh": "超过 6420 亿美元"
-            }
-          ],
-          "historical_round_count": 3
-        },
-        "current_source_ids": [
-          "FISRC-205e3be06863ae1e"
-        ]
-      },
-      "products": [
-        {
-          "name": "NVIDIA 加速计算平台",
-          "description": "NVIDIA 提供加速计算与全栈 AI 基础设施，其 CUDA 平台构成开发者与客户生态基础。",
-          "target_customers": "前沿 AI 实验室、企业与 AI 云服务商",
-          "features": [
-            "CUDA 软件生态",
-            "全栈 AI 基础设施"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0122ec2217c08ff3",
-              "quote": "NVIDIA compute is an investable asset — one which provides the lowest token cost, highest revenue and longest life along with a rich ecosystem of offtakers built upon NVIDIA’s CUDA platform.",
-              "source_content_hash": "6e84a14cc6606c4f",
-              "quote_hash": "3c751188f66b6fbd1493a93515ed7645c75ec33556178e37debbf5b76695670a"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "DSX AI factories",
-          "description": "面向客户的 AI 工厂基础设施方案，用于承载 AI 计算负载。",
-          "target_customers": "需要大规模算力的客户",
-          "features": [
-            "AI 工厂"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0122ec2217c08ff3",
-              "quote": "These financing platforms will help customers access scarce compute at scale and build the DSX AI factories that will power every industry and country in the age of AI.",
-              "source_content_hash": "6e84a14cc6606c4f",
-              "quote_hash": "fd08426e6ef96cf87860e230c521c3ccdced06a1845852fc4a48f8c75c03b677"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [],
-      "comparisons": [],
-      "metrics": [
-        {
-          "label": "2026 年参与初创融资交易数",
-          "value": "121",
-          "observed_at": "2026-11-13",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-205e3be06863ae1e",
-              "quote": "Nvidia’s startup investments this year total 121",
-              "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-              "quote_hash": "74725eb5fc42cd86d1e4d45fc535a0f7225f32f501e46f3efd97fc5b7b914903"
-            }
-          ]
-        },
-        {
-          "label": "2025 年参与初创融资交易数",
-          "value": "91",
-          "observed_at": "2026-11-13",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-205e3be06863ae1e",
-              "quote": "the company and its venture arm participated in 91 known startup financings",
-              "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-              "quote_hash": "a9a2e57db4690a0c6b2a96eb909e347574bd00b3f1ecbd471767a5b310f9db02"
-            }
-          ]
-        },
-        {
-          "label": "2024 年参与初创融资交易数",
-          "value": "54",
-          "observed_at": "2026-11-13",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-205e3be06863ae1e",
-              "quote": "up from 54 the year prior",
-              "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-              "quote_hash": "b158fd2b5f3a3f9ea11842cb6814eb5f65b6a7654a68543fdc5c8bbf4c31bc59"
-            }
-          ]
-        },
-        {
-          "label": "OpenAI G 轮融资规模",
-          "value": "$122 billion",
-          "observed_at": "2026-11-13",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-205e3be06863ae1e",
-              "quote": "OpenAI’s Series G, which closed at $122 billion in March",
-              "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-              "quote_hash": "3b093d7e3682937f70c2e41f7a2270b2b8942d7bd41dd8b5034903af4b2bfc74"
-            }
-          ]
-        },
-        {
-          "label": "Anthropic G 轮融资规模",
-          "value": "$30 billion",
-          "observed_at": "2026-11-13",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-205e3be06863ae1e",
-              "quote": "Anthropic’s $30 billion Series G in February",
-              "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-              "quote_hash": "d7182b4befe056d88ddc938e0138cd9dc5de154513ce60cc498ab955a1f6fca3"
-            }
-          ]
-        },
-        {
-          "label": "Crusoe F 轮融资规模",
-          "value": "$3.9 billion",
-          "observed_at": "2026-11-13",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-205e3be06863ae1e",
-              "quote": "a $3.9 billion September Series F for AI infrastructure provider Crusoe",
-              "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-              "quote_hash": "ea8006d4064fcf6c3bf11f0f894d2d49a9ee567f7bb7c3dbe121e8db96d96c61"
-            }
-          ]
-        },
-        {
-          "label": "NVIDIA 市值",
-          "value": "接近 $4 trillion",
-          "observed_at": "2026-11-13",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-205e3be06863ae1e",
-              "quote": "Nvidia’s valuation remains close to $4 trillion",
-              "source_content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-              "quote_hash": "053a09587a7677a3efdf50c633142aa85ca46b495acb183fd89072e815c1fa47"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "Jensen Huang",
-          "quote": "In AI, compute is revenue. NVIDIA compute is uniquely suited for this role.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0122ec2217c08ff3",
-              "quote": "In AI, compute is revenue. NVIDIA compute is uniquely suited for this role.",
-              "source_content_hash": "6e84a14cc6606c4f",
-              "quote_hash": "24e8130c8bf467a1933f1701e2fbbaa3f8e1fb0bda61afce562dddcd260cef25"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [],
-        "capital_judgment": "本事件并非 NVIDIA 自身融资，而是 Crunchbase 对 NVIDIA 作为初创投资方的记录性报道；可验证信号是 2026 年参与 121 笔初创融资交易、超过 2025 年的 91 笔，并参与 OpenAI、Anthropic、Crusoe 等大额轮次。资本判断的边界在于：这些轮次金额为整轮规模，并非 NVIDIA 单独出资额；来源未披露 NVIDIA 本轮自身融资的金额、轮次或估值。",
-        "validated_signals": [
-          "2026 年 NVIDIA 及 NVentures 参与初创融资交易 121 笔",
-          "2025 年参与 91 笔已知初创融资，2024 年为 54 笔",
-          "参与 OpenAI 1220 亿美元 Series G、Anthropic 300 亿美元 Series G 等大额轮次"
-        ],
-        "risks": [
-          "来源明确说明 OpenAI、Anthropic 等轮次金额为整轮总额，包含其他投资方出资，不能视为 NVIDIA 单独投资额",
-          "来源未披露 NVIDIA 自身本轮融资的轮次、金额与估值，融资信息存在缺口",
-          "报道提及黄仁勋离职及管理层变动，未来投资节奏存在不确定性",
-          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
-        ],
-        "related_direction_id": "",
-        "taxonomy_version": "TAG-V4.1",
-        "product_form_id": "ai_compute_system",
-        "market_category_id": "infrastructure_compute",
-        "market_subcategory_id": "hardware_computing",
-        "market_application_id": "computing_infrastructure",
-        "use_case_ids": [],
-        "industry_ids": [],
-        "target_user_ids": [
-          "developer",
-          "business_user"
-        ],
-        "sector": "加速计算与全栈 AI 基础设施",
-        "investment_thesis": {
-          "statement": "本事件并非 NVIDIA 自身融资，而是 Crunchbase 对 NVIDIA 作为初创投资方的记录性报道；可验证信号是 2026 年参与 121 笔初创融资交易、超过 2025 年的 91 笔，并参与 OpenAI、Anthropic、Crusoe 等大额轮次。资本判断的边界在于：这些轮次金额为整轮规模，并非 NVIDIA 单独出资额；来源未披露 NVIDIA 本轮自身融资的金额、轮次或估值。",
-          "evidence_signals": [
-            "2026 年 NVIDIA 及 NVentures 参与初创融资交易 121 笔",
-            "2025 年参与 91 笔已知初创融资，2024 年为 54 笔",
-            "参与 OpenAI 1220 亿美元 Series G、Anthropic 300 亿美元 Series G 等大额轮次"
-          ],
-          "risks": [
-            "来源明确说明 OpenAI、Anthropic 等轮次金额为整轮总额，包含其他投资方出资，不能视为 NVIDIA 单独投资额",
-            "来源未披露 NVIDIA 自身本轮融资的轮次、金额与估值，融资信息存在缺口",
-            "报道提及黄仁勋离职及管理层变动，未来投资节奏存在不确定性",
-            "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
-          ],
-          "institutional_rationale_status": "not_disclosed"
-        },
-        "related_direction": null
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "NVIDIA 加速计算平台",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "DSX AI factories",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Jensen Huang",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [
-        {
-          "event_id": "EV-afbf21a381d1fa5d",
-          "date": "2026-11-13",
-          "title": "Crunchbase 数据：Nvidia 的初创企业融资交易创下纪录。黄仁勋之后会怎样？",
-          "amount": "$122 billion",
-          "source_refs": [
-            "SA-d8d9863101717770"
-          ]
-        },
-        {
-          "event_id": "EV-838707b8974c3dde",
-          "date": "2026-06-15",
-          "title": "英伟达加入AI债务热潮，发行200亿美元债券",
-          "amount": "at least $20 billion",
-          "source_refs": [
-            "SA-8feeb5da9c95e849"
-          ]
-        },
-        {
-          "event_id": "EV-e70a48e36e99d57a",
-          "date": "2026-08-15",
-          "title": "英伟达联手六大金融机构建立 5000 亿美元 AI 融资平台，黄仁勋称部分项目可获最高 25% 残值支持",
-          "amount": "5000 亿",
-          "source_refs": [
-            "SA-54124eaa5767aaca"
-          ]
-        }
-      ],
-      "research_sources": [
-        {
-          "source_id": "FISRC-205e3be06863ae1e",
-          "source_url": "https://news.crunchbase.com/venture/huang-nvda-ai-startup-funding-record-2026/",
-          "title": "Crunchbase 数据：Nvidia 的初创企业融资交易创下纪录。黄仁勋之后会怎样？",
-          "publisher": "news.crunchbase.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-11-16T00:21:33.478Z",
-          "content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
-          "source_artifact_id": "SA-d8d9863101717770",
-          "raw_id": "RAW-546a1c1212412646",
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-0122ec2217c08ff3",
-          "source_url": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
-          "title": "NVIDIA Partners With Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms to Mobilize Over $500 Billion of Third-Party Capital",
-          "publisher": "nvidianews.nvidia.com",
-          "source_class": "official_candidate",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-16T03:28:53.016Z",
-          "content_hash": "6e84a14cc6606c4f",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-flash",
-        "attempts": 2,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-11-16T03:29:24.030Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-11-16T03:29:24.030Z",
-      "customer_research": {
-        "status": "no_verified_customer_found",
-        "verified_customer_count": 0,
-        "searched_source_count": 2
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 2,
-          "unresolved_names": [
-            "DSX AI factories",
-            "NVIDIA 加速计算平台"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "Jensen Huang"
-          ]
-        }
-      },
-      "source_event_ids": [
-        "EV-afbf21a381d1fa5d"
-      ],
-      "aggregation": {
-        "key": "EN-8d4321d936320802|series_g|USD:exact:122000000000:::|2026-11-13",
-        "event_count": 1,
-        "strategy": "reviewed_company_round_date_and_normalized_amount"
-      },
-      "historical_rounds": [
-        {
-          "funding_insight_id": "FI-ee3e219e230bb204",
-          "event_ids": [
-            "EV-afbf21a381d1fa5d"
-          ],
-          "round": "G轮",
-          "round_code": "series_g",
-          "round_original": "G轮",
-          "amount_original": "$122 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 122000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1220 亿美元"
-          },
-          "announced_at": "2026-11-13",
-          "disclosure_status": "partially_disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": true
-        },
-        {
-          "funding_insight_id": "FI-ed1d2ba02f527a10",
-          "event_ids": [
-            "EV-e70a48e36e99d57a"
-          ],
-          "round": "基础设施融资",
-          "round_code": "infrastructure",
-          "round_original": "基础设施融资",
-          "amount_original": "超过 5000 亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 500000000000,
-            "min_value": 500000000000,
-            "max_value": null,
-            "unit": "base",
-            "status": "lower_bound",
-            "display_zh": "超过 5000 亿美元"
-          },
-          "announced_at": "2026-08-15",
-          "disclosure_status": "disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": false
-        },
-        {
-          "funding_insight_id": "FI-c1e9b4928d8c8358",
-          "event_ids": [
-            "EV-838707b8974c3dde"
-          ],
-          "round": "债务融资",
-          "round_code": "debt",
-          "round_original": "债务融资",
-          "amount_original": "at least $20 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 20000000000,
-            "min_value": 20000000000,
-            "max_value": null,
-            "unit": "base",
-            "status": "lower_bound",
-            "display_zh": "超过 200 亿美元"
-          },
-          "announced_at": "2026-06-15",
-          "disclosure_status": "partially_disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": false
-        }
-      ],
-      "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
-        "source_registry_ids": []
-      },
-      "product_form": {
-        "dimension": "product_form",
-        "id": "ai_compute_system",
-        "name": "AI 计算系统",
-        "method": "card_explicit",
-        "decision_id": ""
-      },
-      "market_category": {
-        "dimension": "ai_market_category",
-        "id": "infrastructure_compute",
-        "name": "基础设施与算力",
-        "method": "card_explicit",
-        "decision_id": ""
-      },
-      "market_subcategory": {
-        "dimension": "ai_market_subcategory",
-        "id": "hardware_computing",
-        "name": "硬件与算力",
-        "method": "card_explicit"
-      },
-      "market_application": {
-        "dimension": "ai_market_application",
-        "id": "computing_infrastructure",
-        "name": "计算基础设施",
-        "method": "card_explicit"
-      },
-      "links": {
-        "company": "data-center.html?view=index&detail=entity&id=EN-8d4321d936320802",
-        "relation_map": "data-center.html?view=relations&entity=EN-8d4321d936320802",
-        "funding_event": "data-center.html?view=events&detail=event&id=EV-afbf21a381d1fa5d",
-        "direction": ""
-      },
-      "translations": {
-        "zh-CN": {
-          "metrics[3].label": {
-            "text": "OpenAI G 轮融资规模",
-            "source_hash": "921239cf51827fcd0aeefa4dac1bd2d7a5a62acbde0086940e172a053d48a3e1",
-            "provider": "deepseek",
-            "model": "deepseek-flash",
-            "translated_at": "2026-11-16T03:30:36.229Z",
-            "status": "translated"
-          },
-          "metrics[4].label": {
-            "text": "Anthropic G 轮融资规模",
-            "source_hash": "384abe6d05b5919413957adc6617da5c101b011ed95ed379a65bba059c59ac1e",
-            "provider": "deepseek",
-            "model": "deepseek-flash",
-            "translated_at": "2026-11-16T03:30:36.229Z",
-            "status": "translated"
-          },
-          "metrics[5].label": {
-            "text": "Crusoe F 轮融资规模",
-            "source_hash": "1fa71fa10d2a66c904561bb85141f3e0351457f092839d2c9a591bff75e714a5",
-            "provider": "deepseek",
-            "model": "deepseek-flash",
-            "translated_at": "2026-11-16T03:30:36.229Z",
-            "status": "translated"
-          },
-          "metrics[6].label": {
-            "text": "NVIDIA 市值",
-            "source_hash": "b2a6fadd2b6046d50774c787672945e40d5f3a70b8c7a664a5c82cbd21a89423",
-            "provider": "deepseek",
-            "model": "deepseek-flash",
-            "translated_at": "2026-11-16T03:30:36.229Z",
-            "status": "translated"
-          }
-        }
-      }
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-e27faa9cfac2c2a9",
       "triggered_by_event_id": "EV-03e34979859b12d9",
       "as_of_date": "2026-11-16",
@@ -1783,7 +1174,8 @@
                 "quote_hash": "c142314b43652b56e2aaf81b42aee17df9911e6ee683da40aeeddd36a5d579fd"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-27ca6171e3148c"
           },
           {
             "name": "Tenacity Capital",
@@ -1822,7 +1214,8 @@
                 "quote_hash": "c142314b43652b56e2aaf81b42aee17df9911e6ee683da40aeeddd36a5d579fd"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-f22f7ef4e1863d"
           },
           {
             "name": "Fastweb+Vodafone（通过 Founders Factory）",
@@ -1841,7 +1234,8 @@
                 "quote_hash": "c142314b43652b56e2aaf81b42aee17df9911e6ee683da40aeeddd36a5d579fd"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-c86f1d74c7e911"
           },
           {
             "name": "CDP Venture Capital SGR",
@@ -1860,7 +1254,8 @@
                 "quote_hash": "000b7ed597edb2cf7d1bba684d01e14d4a6c4ec5b2c474ac52314326157bac03"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-907891c2f99b16"
           }
         ],
         "other_round_investors": [],
@@ -2647,7 +2042,8 @@
                 "quote_hash": "dc33f13fd6c758c3b56fef4d97413753f21084a02a883d74cbdbbd0b560f5449"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-20c8c57fe7d0b7"
           },
           {
             "name": "UVC Partners",
@@ -3606,7 +3002,8 @@
                 "quote_hash": "f3bc7ce07839b1ba60ab5037833d8c5ae2a628db963c3e064bb8789d786eeedc"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-48fac933ead982"
           },
           {
             "name": "Hersir Ventures",
@@ -3625,7 +3022,8 @@
                 "quote_hash": "f3bc7ce07839b1ba60ab5037833d8c5ae2a628db963c3e064bb8789d786eeedc"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-4a4ae6b1efa611"
           },
           {
             "name": "Cambrena Capital",
@@ -3644,7 +3042,8 @@
                 "quote_hash": "f3bc7ce07839b1ba60ab5037833d8c5ae2a628db963c3e064bb8789d786eeedc"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-858b3c51d3b414"
           },
           {
             "name": "Momo VC",
@@ -3663,7 +3062,8 @@
                 "quote_hash": "f3bc7ce07839b1ba60ab5037833d8c5ae2a628db963c3e064bb8789d786eeedc"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-8d5cdb29a70def"
           }
         ],
         "other_round_investors": [],
@@ -4254,7 +3654,8 @@
                 "quote_hash": "9dcd095e1b743a76c8a67bc90bde04eb4399ab556e7338183dc4dbee78980b3e"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-14ac26e0b4bb21"
           },
           {
             "name": "Tiny.vc",
@@ -4908,7 +4309,8 @@
                 "quote_hash": "20a0c006c21d8cf6945b0f1e4e88f9aa485fec0e55da5332b6a7d4dcc191f03e"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-02fe0d60fc9654"
           },
           {
             "name": "MTG",
@@ -4921,7 +4323,8 @@
                 "quote_hash": "20a0c006c21d8cf6945b0f1e4e88f9aa485fec0e55da5332b6a7d4dcc191f03e"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "institution_id": "INV-afd2f39f9e858f"
           }
         ],
         "other_round_investors": [],
@@ -302372,15 +301775,15 @@
             {
               "currency": "USD",
               "value": null,
-              "min_value": 642000000000,
+              "min_value": 520000000000,
               "max_value": null,
               "unit": "base",
-              "round_count": 3,
+              "round_count": 2,
               "status": "lower_bound",
-              "display_zh": "超过 6420 亿美元"
+              "display_zh": "超过 5200 亿美元"
             }
           ],
-          "historical_round_count": 3
+          "historical_round_count": 2
         },
         "current_source_ids": [
           "FISRC-081d8fda5173dab0"
@@ -302613,15 +302016,6 @@
       ],
       "funding_history": [
         {
-          "event_id": "EV-afbf21a381d1fa5d",
-          "date": "2026-11-13",
-          "title": "Crunchbase 数据：Nvidia 的初创企业融资交易创下纪录。黄仁勋之后会怎样？",
-          "amount": "$122 billion",
-          "source_refs": [
-            "SA-d8d9863101717770"
-          ]
-        },
-        {
           "event_id": "EV-838707b8974c3dde",
           "date": "2026-06-15",
           "title": "英伟达加入AI债务热潮，发行200亿美元债券",
@@ -302710,30 +302104,6 @@
         "strategy": "reviewed_company_round_date_and_normalized_amount"
       },
       "historical_rounds": [
-        {
-          "funding_insight_id": "FI-ee3e219e230bb204",
-          "event_ids": [
-            "EV-afbf21a381d1fa5d"
-          ],
-          "round": "G轮",
-          "round_code": "series_g",
-          "round_original": "G轮",
-          "amount_original": "$122 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 122000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1220 亿美元"
-          },
-          "announced_at": "2026-11-13",
-          "disclosure_status": "partially_disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": false
-        },
         {
           "funding_insight_id": "FI-ed1d2ba02f527a10",
           "event_ids": [
@@ -553182,15 +552552,15 @@
             {
               "currency": "USD",
               "value": null,
-              "min_value": 642000000000,
+              "min_value": 520000000000,
               "max_value": null,
               "unit": "base",
-              "round_count": 3,
+              "round_count": 2,
               "status": "lower_bound",
-              "display_zh": "超过 6420 亿美元"
+              "display_zh": "超过 5200 亿美元"
             }
           ],
-          "historical_round_count": 3
+          "historical_round_count": 2
         },
         "current_source_ids": [
           "FISRC-cf38c3524690b402"
@@ -553417,15 +552787,6 @@
       ],
       "funding_history": [
         {
-          "event_id": "EV-afbf21a381d1fa5d",
-          "date": "2026-11-13",
-          "title": "Crunchbase 数据：Nvidia 的初创企业融资交易创下纪录。黄仁勋之后会怎样？",
-          "amount": "$122 billion",
-          "source_refs": [
-            "SA-d8d9863101717770"
-          ]
-        },
-        {
           "event_id": "EV-838707b8974c3dde",
           "date": "2026-06-15",
           "title": "英伟达加入AI债务热潮，发行200亿美元债券",
@@ -553524,30 +552885,6 @@
         "strategy": "reviewed_company_round_date_and_normalized_amount"
       },
       "historical_rounds": [
-        {
-          "funding_insight_id": "FI-ee3e219e230bb204",
-          "event_ids": [
-            "EV-afbf21a381d1fa5d"
-          ],
-          "round": "G轮",
-          "round_code": "series_g",
-          "round_original": "G轮",
-          "amount_original": "$122 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 122000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1220 亿美元"
-          },
-          "announced_at": "2026-11-13",
-          "disclosure_status": "partially_disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": false
-        },
         {
           "funding_insight_id": "FI-ed1d2ba02f527a10",
           "event_ids": [
