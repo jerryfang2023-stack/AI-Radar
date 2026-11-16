@@ -3240,3 +3240,19 @@ test('36kr publisher suffix is presentation metadata, not the funding object',as
  const {canonicalFundingEventAmount}=await import('../funding-insight-v1-utils.mjs');assert.equal(canonicalFundingEventAmount(event,b.claims),'亿元');
  assert.deepEqual(input,snapshot);
 });
+
+
+test('investor activity reports cannot turn portfolio rounds into financing of the investor', () => {
+  const body='Acme and its venture arm have participated in more than 120 startup funding deals this year as a corporate investor. The largest portfolio deal was PortfolioCo Series G, which closed at $12 billion in March.';
+  for (const title of ['Market Data: Acme’s Startup Funding Deals Hit A Record', 'Acme venture investments hit a record']) {
+    const source=entry('investor-activity',title,body,{published_at:'2026-11-13'});
+    const decision=eventSourceEligibility(source.raw,{source_url:source.raw.original_url},title,'2026-11-16',{eventType:'funding'});
+    assert.equal(decision.reason,'investor_activity_not_company_funding_source',title);
+    const bundle=buildBundle([source],taxonomy,'2026-11-16','2026-11-16T00:00:00Z');
+    assert.equal(bundle.canonical_events.filter(e=>e.event_type==='funding').length,0,title);
+  }
+  for (const title of ['Acme raises $12 million for AI products', 'Acme raises $12 million after a record year for startup funding deals']) {
+    assert.equal(eventSourceEligibility({published_at:'2026-11-13',clean_text:body},{source_url:'https://example.com/acme'},title,'2026-11-16',{eventType:'funding'}).accepted,true,title);
+  }
+  assert.equal(eventSourceEligibility({published_at:'2026-11-13',clean_text:'Acme has raised $12 million to expand its AI startup investment analytics product.'},{source_url:'https://example.com/acme'},'Acme startup funding deals platform secures $12 million','2026-11-16',{eventType:'funding'}).accepted,true);
+});
