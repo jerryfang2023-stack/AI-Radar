@@ -333,6 +333,16 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
       && /\b(?:venture capital|VC|investment)\s+(?:firm|fund|manager)\b[^.!?]{0,100}\b(?:has\s+)?(?:closed|raised|secured|launched)\b[^.!?]{0,100}\bfund\b/iu.test(sourceLead)) {
     return { accepted: false, reason: "investment_fund_not_company_financing_source" };
   }
+  // Portfolio activity counts describe an investor's deployments, not its raise.
+  // Require both the report title and a counted investing span in the lead;
+  // an explicit company financing headline remains independently eligible.
+  const investorActivityTitle = /\b(?:startup\s+(?:funding\s+)?deals|venture\s+investments)\b/iu.test(title);
+  const countedInvesting = /\bparticipated\s+in\s+(?:more\s+than\s+|over\s+)?\d+\s+(?:startup\s+)?funding\s+deals\b/iu.test(sourceLead)
+    && /\b(?:corporate|private-company|startup)\s+investors?\b/iu.test(sourceLead);
+  if (options.eventType === "funding" && investorActivityTitle && countedInvesting
+      && !/\b(?:raises?|raised|secures?|secured|closes?|closed)\b/iu.test(title)) {
+    return { accepted: false, reason: "investor_activity_not_company_funding_source" };
+  }
   // Periodic market totals describe many transactions, even when a company
   // leads the headline. Require both the report label and aggregate source span;
   // a company named 月报科技 or 月之暗面 is not itself a report container.
