@@ -57,6 +57,7 @@ test("title translation survives four transient timeouts, but stops on auth or i
   assert.equal(rejected.status,'needs_ingestion_translation');assert.equal(calls,2);
 });
 import {
+  extractMoneyAmounts,
   generateSourceTitleTranslation,
   generatedTitleTranslationLooksUsable,
   sourceTitleFactsPreserved,
@@ -277,4 +278,21 @@ test('FuriosaAI quadrupled valuation preserves Chinese compounded doublings',()=
   assert.equal(sourceTitleFactsPreserved(source,target),false);
  assert.equal(sourceTitleFactsPreserved('Acme doubles valuation to $1 billion','Acme估值翻一番至10亿美元'),true);
  assert.equal(sourceTitleFactsPreserved('Acme triples valuation to $1 billion','Acme估值翻两番至10亿美元'),false);
+});
+
+
+test("money extraction does not turn digits inside business or model identifiers into funding", () => {
+  const source = "Mondrio secures $3.75M to rethink B2B pricing with AI agents";
+  const target = "Mondrio 获 375 万美元融资，用 AI 智能体重塑 B2B 定价";
+  assert.equal(generatedTitleTranslationLooksUsable(source, target), true);
+  assert.deepEqual(extractMoneyAmounts(target).map(({currency,value}) => ({currency,value})), [{currency:"USD",value:3750000}]);
+  for (const identifier of ["B2B", "B2C", "B2G", "Llama70B", "model_8B"]) {
+    assert.equal(extractMoneyAmounts(`${identifier} startup raises $3.75M`).length, 1, identifier);
+    assert.equal(extractMoneyAmounts(`公司融资375万美元，开发 ${identifier}`).length, 1, identifier);
+  }
+  for (const wrong of [target.replace("375", "3750"), target.replace("美元", "欧元"), target.replace("375 万", "375 亿")]) {
+    assert.equal(sourceTitleFactsPreserved(source, wrong), false, wrong);
+  }
+  assert.equal(sourceTitleFactsPreserved(source, target.replace("B2B", "B3B")), false);
+  assert.equal(generatedTitleTranslationLooksUsable("Acme raises 3.75M for AI agents", "Acme为AI智能体融资375万美元"), true);
 });
