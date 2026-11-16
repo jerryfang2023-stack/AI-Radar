@@ -1,0 +1,41 @@
+[
+  {
+    "funnel_id": "LF-9685e1fec6779106",
+    "lens": "fde",
+    "date": "2026-11-16",
+    "monitoring_paths": [],
+    "raw_documents": 0,
+    "original_sources": 0,
+    "valid_claims": 0,
+    "observations": 0,
+    "canonical_events": 0,
+    "blocker_counts": {},
+    "rates": {
+      "original_source_rate": 1,
+      "valid_claim_rate": 1,
+      "observation_rate": 1,
+      "event_conversion_rate": 1
+    }
+  },
+  {
+    "funnel_id": "LF-139ae8d1beaab31b",
+    "lens": "hardware",
+    "date": "2026-11-16",
+    "monitoring_paths": [],
+    "raw_documents": 10,
+    "original_sources": 10,
+    "valid_claims": 6,
+    "observations": 0,
+    "canonical_events": 3,
+    "blocker_counts": {
+      "event_not_ai_relevant": 6,
+      "no_source_bounded_event": 1
+    },
+    "rates": {
+      "original_source_rate": 1,
+      "valid_claim_rate": 0.6,
+      "observation_rate": 0,
+      "event_conversion_rate": 0.5
+    }
+  }
+]

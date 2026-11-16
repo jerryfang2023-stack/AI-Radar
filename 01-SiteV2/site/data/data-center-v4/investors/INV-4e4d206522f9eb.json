@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-15",
-    "currentDate": "2026-11-15",
-    "eventCount": 4464,
+    "latestDataDate": "2026-11-16",
+    "currentDate": "2026-11-16",
+    "eventCount": 4470,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-20",
-    "latest_disclosed_at": "2026-06-02",
+    "latest_disclosed_at": "2026-11-12",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "seed",
@@ -85,12 +85,65 @@
         "name": "Archestra"
       },
       {
+        "entity_id": "EN-a6936f276185fd8f",
+        "canonical_entity_id": "",
+        "name": "Nebuly"
+      },
+      {
         "entity_id": "EN-ce65fa41b16c33ff",
         "canonical_entity_id": "",
         "name": "Viktor"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-8e0ec417ac669155",
+        "funding_insight_id": "FI-e27faa9cfac2c2a9",
+        "event_ids": [
+          "EV-03e34979859b12d9"
+        ],
+        "company_entity_id": "EN-a6936f276185fd8f",
+        "company_canonical_entity_id": "",
+        "company_name": "Nebuly",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$21 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 21000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2100 万美元"
+        },
+        "announced_at": "2026-11-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9a9cdaf895663c5d",
+            "source_url": "https://tech.eu/2026/11/12/nebuly-raises-21m-series-a-to-turn-ai-investments-into-measurable-results/",
+            "source_title": "Nebuly 完成 2100 万美元 A 轮融资，将 AI 投资转化为可衡量成果",
+            "source_content_hash": "7c8505ca231a9886cd777fbf7509efd6828588bfb6fd5fe2c9aa47a250512c26",
+            "quote": "The round included participation from Exor Ventures, Tenacity Capital, TGVG Capital and Fastweb+Vodafone (via Founders Factory), alongside returning investors and angel investors.",
+            "quote_hash": "38a138d017f47e095b751272b38396f6bfccdfa869c053ce79c3e44d2bf4171d"
+          },
+          {
+            "source_id": "FISRC-a6794f376969c20a",
+            "source_url": "https://www.nebuly.com/blog/nebuly-raises-21m-series-a",
+            "source_title": "Nebuly raises $21 million Series A to help enterprises measure the ROI of their AI initiatives - Nebuly - The ROI platform for Enterprise AI",
+            "source_content_hash": "5ca76d37a202d850",
+            "quote": "The round includes participation from Exor Ventures, Tenacity Capital, TGVG Capital and Fastweb+Vodafone (via Founders Factory), alongside returning investors and angels.",
+            "quote_hash": "c142314b43652b56e2aaf81b42aee17df9911e6ee683da40aeeddd36a5d579fd"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7372f694612822c8",
         "funding_insight_id": "FI-fe82f871887d3c1f",
@@ -175,6 +228,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-9a9cdaf895663c5d",
+        "source_url": "https://tech.eu/2026/11/12/nebuly-raises-21m-series-a-to-turn-ai-investments-into-measurable-results/",
+        "source_title": "Nebuly 完成 2100 万美元 A 轮融资，将 AI 投资转化为可衡量成果",
+        "source_content_hash": "7c8505ca231a9886cd777fbf7509efd6828588bfb6fd5fe2c9aa47a250512c26",
+        "quote": "The round included participation from Exor Ventures, Tenacity Capital, TGVG Capital and Fastweb+Vodafone (via Founders Factory), alongside returning investors and angel investors.",
+        "quote_hash": "38a138d017f47e095b751272b38396f6bfccdfa869c053ce79c3e44d2bf4171d"
+      },
+      {
+        "source_id": "FISRC-a6794f376969c20a",
+        "source_url": "https://www.nebuly.com/blog/nebuly-raises-21m-series-a",
+        "source_title": "Nebuly raises $21 million Series A to help enterprises measure the ROI of their AI initiatives - Nebuly - The ROI platform for Enterprise AI",
+        "source_content_hash": "5ca76d37a202d850",
+        "quote": "The round includes participation from Exor Ventures, Tenacity Capital, TGVG Capital and Fastweb+Vodafone (via Founders Factory), alongside returning investors and angels.",
+        "quote_hash": "c142314b43652b56e2aaf81b42aee17df9911e6ee683da40aeeddd36a5d579fd"
+      },
+      {
         "source_id": "FISRC-08f2020b7eca8380",
         "source_url": "https://tech.eu/2026/06/02/archestraai-raises-10m-to-unlock-next-gen-agentic-use-case/",
         "source_title": "Archestra.AI 获1000万美元融资，解锁下一代自主代理应用场景 - Tech.eu",
@@ -238,6 +307,10 @@
         {
           "description": "融资来源记录：Viktor · A轮 · 2026-05-20 · 本轮参投 · €64.7 million ($75 million)。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce83b857608dabeb"
+        },
+        {
+          "description": "融资来源记录：Nebuly · A轮 · 2026-11-12 · 本轮参投 · $21 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9a9cdaf895663c5d"
         }
       ],
       "contacts": [
@@ -285,6 +358,22 @@
           "quote": "We invest at the inflection point when product-market fit is emerging and back AI-native, visionary founders.",
           "source_content_hash": "bcbf9e7aeed3929d86e3aefc92f1c18653c14135979ce6f2c807bc17cee7ddef",
           "quote_hash": "3899d10641d430f99d0908dc7246f91cbc3a8bd2f66e583b3fc565ad1f6a7a9d"
+        },
+        {
+          "source_id": "FISRC-9a9cdaf895663c5d",
+          "source_url": "https://tech.eu/2026/11/12/nebuly-raises-21m-series-a-to-turn-ai-investments-into-measurable-results/",
+          "source_title": "Nebuly 完成 2100 万美元 A 轮融资，将 AI 投资转化为可衡量成果",
+          "source_content_hash": "7c8505ca231a9886cd777fbf7509efd6828588bfb6fd5fe2c9aa47a250512c26",
+          "quote": "The round included participation from Exor Ventures, Tenacity Capital, TGVG Capital and Fastweb+Vodafone (via Founders Factory), alongside returning investors and angel investors.",
+          "quote_hash": "38a138d017f47e095b751272b38396f6bfccdfa869c053ce79c3e44d2bf4171d"
+        },
+        {
+          "source_id": "FISRC-a6794f376969c20a",
+          "source_url": "https://www.nebuly.com/blog/nebuly-raises-21m-series-a",
+          "source_title": "Nebuly raises $21 million Series A to help enterprises measure the ROI of their AI initiatives - Nebuly - The ROI platform for Enterprise AI",
+          "source_content_hash": "5ca76d37a202d850",
+          "quote": "The round includes participation from Exor Ventures, Tenacity Capital, TGVG Capital and Fastweb+Vodafone (via Founders Factory), alongside returning investors and angels.",
+          "quote_hash": "c142314b43652b56e2aaf81b42aee17df9911e6ee683da40aeeddd36a5d579fd"
         }
       ],
       "last_verified_at": "2026-09-26"

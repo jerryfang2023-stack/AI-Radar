@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-15",
-    "currentDate": "2026-11-15",
-    "eventCount": 4464,
+    "latestDataDate": "2026-11-16",
+    "currentDate": "2026-11-16",
+    "eventCount": 4470,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,19 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-15",
-    "latest_disclosed_at": "2026-11-10",
+    "latest_disclosed_at": "2026-11-15",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 3
     },
     "round_codes": [
@@ -83,6 +84,11 @@
       "series_d"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-4c323f9c08569906",
+        "canonical_entity_id": "",
+        "name": "Bharat Semi"
+      },
       {
         "entity_id": "EN-4af7f3527d7863e0",
         "canonical_entity_id": "",
@@ -105,6 +111,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-07428ab9498168ab",
+        "funding_insight_id": "FI-0f8acbc7b961f248",
+        "event_ids": [
+          "EV-c7f02c82dcf2cea9"
+        ],
+        "company_entity_id": "EN-4c323f9c08569906",
+        "company_canonical_entity_id": "",
+        "company_name": "Bharat Semi",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$24 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 24000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2400 万美元"
+        },
+        "announced_at": "2026-11-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-04196bef9b67627d",
+            "source_url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+            "source_title": "印度芯片初创公司Bharat Semi完成2400万美元种子轮融资，瞄准全球AI传感器市场",
+            "source_content_hash": "fe0a09d8d397e3457da5415e30df981daa38a0f335e5a20368e2eceb95fe3c2b",
+            "quote": "The all-equity seed round was led by Info Edge Group, South Park Commons, and Indus Bridge Ventures, with participation from Valour Capital, Micromax, Gaingels, and individual investors.",
+            "quote_hash": "4c892a67e120b6a25de2b98b84751ce0cc3264445645bf28443e005692a09154"
+          }
+        ]
+      },
       {
         "activity_id": "IA-932d0dfc074bbc9a",
         "funding_insight_id": "FI-4df12f9d73d6a9a3",
@@ -300,6 +346,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-04196bef9b67627d",
+        "source_url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+        "source_title": "印度芯片初创公司Bharat Semi完成2400万美元种子轮融资，瞄准全球AI传感器市场",
+        "source_content_hash": "fe0a09d8d397e3457da5415e30df981daa38a0f335e5a20368e2eceb95fe3c2b",
+        "quote": "The all-equity seed round was led by Info Edge Group, South Park Commons, and Indus Bridge Ventures, with participation from Valour Capital, Micromax, Gaingels, and individual investors.",
+        "quote_hash": "4c892a67e120b6a25de2b98b84751ce0cc3264445645bf28443e005692a09154"
+      },
+      {
         "source_id": "FISRC-e5678cb427ad6e69",
         "source_url": "https://www.prnewswire.com/news-releases/charta-health-raises-55-million-series-b-to-establish-a-shared-standard-of-accuracy-in-healthcare-billing-302934401.html",
         "source_title": "Charta Health 完成 5500 万美元 B 轮融资，旨在建立医疗账单准确性的共享标准",
@@ -373,16 +427,16 @@
           "source_id": "FISRC-bed55d4f5e02a374"
         },
         {
+          "description": "融资来源记录：Bharat Semi · 种子轮 · 2026-11-15 · 本轮领投 · $24 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-04196bef9b67627d"
+        },
+        {
           "description": "融资来源记录：Charta Health · B轮 · 2026-11-10 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e5678cb427ad6e69"
         },
         {
           "description": "融资来源记录：Venomics AI · 预种子轮 · 2026-11-05 · 本轮联合领投 · $2.7 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6cba22194a39c15c"
-        },
-        {
-          "description": "融资来源记录：Maxinsights · 种子轮 · 2026-10-22 · 本轮参投 · $30 Million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e3b2631226765a7a"
         }
       ],
       "contacts": [],
@@ -428,6 +482,14 @@
           "quote_hash": "3b5515abce21495e875b3cb4b4a497b985fcf2e7d739596715f52289eb74b393"
         },
         {
+          "source_id": "FISRC-04196bef9b67627d",
+          "source_url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+          "source_title": "印度芯片初创公司Bharat Semi完成2400万美元种子轮融资，瞄准全球AI传感器市场",
+          "source_content_hash": "fe0a09d8d397e3457da5415e30df981daa38a0f335e5a20368e2eceb95fe3c2b",
+          "quote": "The all-equity seed round was led by Info Edge Group, South Park Commons, and Indus Bridge Ventures, with participation from Valour Capital, Micromax, Gaingels, and individual investors.",
+          "quote_hash": "4c892a67e120b6a25de2b98b84751ce0cc3264445645bf28443e005692a09154"
+        },
+        {
           "source_id": "FISRC-e5678cb427ad6e69",
           "source_url": "https://www.prnewswire.com/news-releases/charta-health-raises-55-million-series-b-to-establish-a-shared-standard-of-accuracy-in-healthcare-billing-302934401.html",
           "source_title": "Charta Health 完成 5500 万美元 B 轮融资，旨在建立医疗账单准确性的共享标准",
@@ -442,14 +504,6 @@
           "source_content_hash": "60829cacf3128a52f93c2e18db5105011ce0766383754c5c7553a552d7ef4c36",
           "quote": "The pre-seed round was co-led by Speciale Invest and South Park Commons, with participation from Operators Studio.",
           "quote_hash": "faf4422e59d2d5507ca0d3f518396b2a80461c94ac30ff965116356342b3373d"
-        },
-        {
-          "source_id": "FISRC-e3b2631226765a7a",
-          "source_url": "https://pulse2.com/maxinsights-raises-30-million-in-seed-funding-led-by-peak-xv-to-build-physical-ai-data-platform-for-robotics/",
-          "source_title": "Maxinsights 完成由 Peak XV 领投的 3000 万美元种子轮融资，用于构建面向机器人技术的物理 AI 数据平台",
-          "source_content_hash": "0270055137f6a8dd09b11bb35472f95fc125d6ac73f8625c52544fe93d1f2e4d",
-          "quote": "The financing included participation from Tola Capital, South Park Commons, INCE Capital, and Alumni Ventures.",
-          "quote_hash": "8f1be0bf5397a4a7dc3bc22a8b292e88f961c3634b498d32af019df360878b24"
         }
       ],
       "last_verified_at": "2026-10-04",

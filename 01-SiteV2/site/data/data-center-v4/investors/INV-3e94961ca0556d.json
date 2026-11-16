@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-15",
-    "currentDate": "2026-11-15",
-    "eventCount": 4464,
+    "latestDataDate": "2026-11-16",
+    "currentDate": "2026-11-16",
+    "eventCount": 4470,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-30",
-    "latest_disclosed_at": "2026-09-30",
+    "latest_disclosed_at": "2026-11-11",
     "role_counts": {
+      "co_lead": 1,
       "lead": 1
     },
     "round_codes": [
+      "pre_seed",
       "seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-4f8c05bb47dc840b",
+        "canonical_entity_id": "",
+        "name": "Anorak"
+      },
       {
         "entity_id": "EN-4332124bdf7da478",
         "canonical_entity_id": "",
@@ -85,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-898010e859c95aec",
+        "funding_insight_id": "FI-0550e3134be72c56",
+        "event_ids": [
+          "EV-fb1e2e2d2c9f83d8"
+        ],
+        "company_entity_id": "EN-4f8c05bb47dc840b",
+        "company_canonical_entity_id": "",
+        "company_name": "Anorak",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "pre-seed",
+        "amount_original": "$5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "500 万美元"
+        },
+        "announced_at": "2026-11-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-cc817ad28c790d60",
+            "source_url": "https://tech.eu/2026/11/11/anorak-secures-5m-to-let-anyone-create-their-own-ai-powered-games/",
+            "source_title": "Anorak 获得 500 万美元融资，让任何人都能创建自己的 AI 驱动游戏",
+            "source_content_hash": "81c799ab7c6ad8f9a42e066d97437d05eb81f7d719b13fcbaefee95184a20f26",
+            "quote": "$5 million pre-seed round co-led by Play Ventures and Backed VC",
+            "quote_hash": "2c80c2524183989526e78d59d152865592f13949dd65b7203a9530e1d05a16ff"
+          }
+        ]
+      },
       {
         "activity_id": "IA-0f99fd9f5acc8a4a",
         "funding_insight_id": "FI-91bf8b7cc61d35df",
@@ -127,6 +174,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-cc817ad28c790d60",
+        "source_url": "https://tech.eu/2026/11/11/anorak-secures-5m-to-let-anyone-create-their-own-ai-powered-games/",
+        "source_title": "Anorak 获得 500 万美元融资，让任何人都能创建自己的 AI 驱动游戏",
+        "source_content_hash": "81c799ab7c6ad8f9a42e066d97437d05eb81f7d719b13fcbaefee95184a20f26",
+        "quote": "$5 million pre-seed round co-led by Play Ventures and Backed VC",
+        "quote_hash": "2c80c2524183989526e78d59d152865592f13949dd65b7203a9530e1d05a16ff"
+      },
       {
         "source_id": "FISRC-51e4efce7466f2fd",
         "source_url": "https://seraphim.vc/news/zenithon-raises-10m-ai-world-models-engineering-physics/",
@@ -185,6 +240,10 @@
           "source_id": "backed_zenithon_portfolio"
         },
         {
+          "description": "融资来源记录：Anorak · 预种子轮 · 2026-11-11 · 本轮联合领投 · $5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cc817ad28c790d60"
+        },
+        {
           "description": "融资来源记录：Zenithon · 种子轮 · 2026-09-30 · 本轮领投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-51e4efce7466f2fd"
         }
@@ -222,6 +281,14 @@
           "source_content_hash": "3b9e47f9376b40707339f5ac0b038a2624c0b79c5dc51d37dbf334ad75fd7a5b",
           "quote": "Zenithon AI, a UK-based company developing AI world models for extreme physics has raised $10 million in initial funding. The round was led by Backed VC with participation from Seraphim, Lunar Ventures, MMC, SOSV and more.",
           "quote_hash": "c768cd7de5e297ace014613c4f9d609ef43af4930e73a6b360f3c7f5d1dbb85a"
+        },
+        {
+          "source_id": "FISRC-cc817ad28c790d60",
+          "source_url": "https://tech.eu/2026/11/11/anorak-secures-5m-to-let-anyone-create-their-own-ai-powered-games/",
+          "source_title": "Anorak 获得 500 万美元融资，让任何人都能创建自己的 AI 驱动游戏",
+          "source_content_hash": "81c799ab7c6ad8f9a42e066d97437d05eb81f7d719b13fcbaefee95184a20f26",
+          "quote": "$5 million pre-seed round co-led by Play Ventures and Backed VC",
+          "quote_hash": "2c80c2524183989526e78d59d152865592f13949dd65b7203a9530e1d05a16ff"
         },
         {
           "source_id": "FISRC-51e4efce7466f2fd",

@@ -1,0 +1,42 @@
+{
+  "verification": {
+    "version": "FINANCING-VERIFICATION-1",
+    "status": "completed",
+    "counts": {
+      "total": 968,
+      "verified": 4,
+      "excluded": 74,
+      "reviewed": 0,
+      "pending": 890
+    },
+    "ledger": "verification.json",
+    "deferred_research": []
+  },
+  "version": "FINANCING-MONITOR-1",
+  "date": "2026-11-16",
+  "status": "ready_for_review",
+  "counts": {
+    "leads": 531,
+    "accepted_originals": 82,
+    "pending": 266,
+    "excluded": 183
+  },
+  "next": "merge_pages_portal_and_live_parity",
+  "generated_at": "2026-11-16T03:58:56.255Z",
+  "responsible_recovery": {
+    "code_prs": [
+      1358,
+      1360
+    ],
+    "source_disposition": "01-SiteV2/content/11-databases/data-center-v4/source-fact-reviews.json#SA-d8d9863101717770",
+    "new_public_subjects": 6,
+    "new_public_events": 6,
+    "public_subjects": 720,
+    "public_events": 771,
+    "unsupported_nvidia_round_not_admitted": true,
+    "historical_event_rows_exactly_preserved": 765,
+    "issuer_review": "issuer-identity-review.json",
+    "entity_merges_approved": false,
+    "review_notes": "The initial Nvidia 122B Series G came from a portfolio activity report and is removed before publication. All old public rows and subject links are unchanged. Opdo is explicitly named in Tech.eu and its own official release; a descriptive canonical label is not a separate legal issuer or an approved entity merge. Its pre-seed round and Nov12 date are in the originals. Existing Nvidia financing-platform history is preserved, not re-certified as new financing."
+  }
+}

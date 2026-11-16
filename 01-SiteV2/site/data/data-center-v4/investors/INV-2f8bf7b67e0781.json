@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-15",
-    "currentDate": "2026-11-15",
-    "eventCount": 4464,
+    "latestDataDate": "2026-11-16",
+    "currentDate": "2026-11-16",
+    "eventCount": 4470,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-29",
-    "latest_disclosed_at": "2026-07-29",
+    "latest_disclosed_at": "2026-11-12",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
       "series_a"
@@ -82,9 +82,62 @@
         "entity_id": "EN-556c337c4f0b031e",
         "canonical_entity_id": "",
         "name": "Encore AI"
+      },
+      {
+        "entity_id": "EN-a6936f276185fd8f",
+        "canonical_entity_id": "",
+        "name": "Nebuly"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-4329db33ab722c07",
+        "funding_insight_id": "FI-e27faa9cfac2c2a9",
+        "event_ids": [
+          "EV-03e34979859b12d9"
+        ],
+        "company_entity_id": "EN-a6936f276185fd8f",
+        "company_canonical_entity_id": "",
+        "company_name": "Nebuly",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$21 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 21000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2100 万美元"
+        },
+        "announced_at": "2026-11-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-9a9cdaf895663c5d",
+            "source_url": "https://tech.eu/2026/11/12/nebuly-raises-21m-series-a-to-turn-ai-investments-into-measurable-results/",
+            "source_title": "Nebuly 完成 2100 万美元 A 轮融资，将 AI 投资转化为可衡量成果",
+            "source_content_hash": "7c8505ca231a9886cd777fbf7509efd6828588bfb6fd5fe2c9aa47a250512c26",
+            "quote": "has raised $21 million in a Series A funding round led by Planven",
+            "quote_hash": "a757440914f1559a6e129dd6966e4312d0675758b367a95625f06fa12ffbe338"
+          },
+          {
+            "source_id": "FISRC-a6794f376969c20a",
+            "source_url": "https://www.nebuly.com/blog/nebuly-raises-21m-series-a",
+            "source_title": "Nebuly raises $21 million Series A to help enterprises measure the ROI of their AI initiatives - Nebuly - The ROI platform for Enterprise AI",
+            "source_content_hash": "5ca76d37a202d850",
+            "quote": "today announced a $21 million Series A led by Planven",
+            "quote_hash": "f6225cf127030bf45b2b8e08c167b2756c44c9c4dc716c49f38f217e240b0cd1"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2c5e6892f92532a5",
         "funding_insight_id": "FI-2c5da45c0aa2e03a",
@@ -128,6 +181,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-9a9cdaf895663c5d",
+        "source_url": "https://tech.eu/2026/11/12/nebuly-raises-21m-series-a-to-turn-ai-investments-into-measurable-results/",
+        "source_title": "Nebuly 完成 2100 万美元 A 轮融资，将 AI 投资转化为可衡量成果",
+        "source_content_hash": "7c8505ca231a9886cd777fbf7509efd6828588bfb6fd5fe2c9aa47a250512c26",
+        "quote": "has raised $21 million in a Series A funding round led by Planven",
+        "quote_hash": "a757440914f1559a6e129dd6966e4312d0675758b367a95625f06fa12ffbe338"
+      },
+      {
+        "source_id": "FISRC-a6794f376969c20a",
+        "source_url": "https://www.nebuly.com/blog/nebuly-raises-21m-series-a",
+        "source_title": "Nebuly raises $21 million Series A to help enterprises measure the ROI of their AI initiatives - Nebuly - The ROI platform for Enterprise AI",
+        "source_content_hash": "5ca76d37a202d850",
+        "quote": "today announced a $21 million Series A led by Planven",
+        "quote_hash": "f6225cf127030bf45b2b8e08c167b2756c44c9c4dc716c49f38f217e240b0cd1"
+      },
+      {
         "source_id": "FISRC-6734ffb9c928450a",
         "source_url": "https://www.prnewswire.com/news-releases/encore-ai-raises-30m-to-deploy-the-only-enterprise-ai-platform-built-to-generate-revenue-from-customer-interactions-302837694.html",
         "source_title": "Encore AI Raises $30M to Deploy the Only Enterprise AI Platform Built to Generate Revenue from Customer Interactions",
@@ -165,6 +234,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Nebuly · A轮 · 2026-11-12 · 本轮领投 · $21 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9a9cdaf895663c5d"
+        },
+        {
           "description": "融资来源记录：Encore AI · A轮 · 2026-07-29 · 本轮领投 · 3000万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6734ffb9c928450a"
         }
@@ -198,6 +271,22 @@
           "source_content_hash": "e5dbb16a96083c93ca5365ff766541094fbe2814d09b992e0b2b768d4846ed75",
           "quote": "Geographical Focus Europe Israel",
           "quote_hash": "717493ec061c7cb8e6a7a471791870750c674d03019b3e955a12ef3cf93f66bb"
+        },
+        {
+          "source_id": "FISRC-9a9cdaf895663c5d",
+          "source_url": "https://tech.eu/2026/11/12/nebuly-raises-21m-series-a-to-turn-ai-investments-into-measurable-results/",
+          "source_title": "Nebuly 完成 2100 万美元 A 轮融资，将 AI 投资转化为可衡量成果",
+          "source_content_hash": "7c8505ca231a9886cd777fbf7509efd6828588bfb6fd5fe2c9aa47a250512c26",
+          "quote": "has raised $21 million in a Series A funding round led by Planven",
+          "quote_hash": "a757440914f1559a6e129dd6966e4312d0675758b367a95625f06fa12ffbe338"
+        },
+        {
+          "source_id": "FISRC-a6794f376969c20a",
+          "source_url": "https://www.nebuly.com/blog/nebuly-raises-21m-series-a",
+          "source_title": "Nebuly raises $21 million Series A to help enterprises measure the ROI of their AI initiatives - Nebuly - The ROI platform for Enterprise AI",
+          "source_content_hash": "5ca76d37a202d850",
+          "quote": "today announced a $21 million Series A led by Planven",
+          "quote_hash": "f6225cf127030bf45b2b8e08c167b2756c44c9c4dc716c49f38f217e240b0cd1"
         },
         {
           "source_id": "FISRC-6734ffb9c928450a",

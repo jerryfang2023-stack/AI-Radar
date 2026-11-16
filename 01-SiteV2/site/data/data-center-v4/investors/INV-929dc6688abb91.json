@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-15",
-    "currentDate": "2026-11-15",
-    "eventCount": 4464,
+    "latestDataDate": "2026-11-16",
+    "currentDate": "2026-11-16",
+    "eventCount": 4470,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-11-02",
     "latest_disclosed_at": "2026-11-02",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "lead": 1
     },
     "round_codes": [
@@ -124,6 +125,38 @@
             "quote_hash": "27e039ea565a667bd251531fbe31fe992b0279693895f2c86da3f456215689cc"
           }
         ]
+      },
+      {
+        "activity_id": "IA-aece3b693eb5d364",
+        "funding_insight_id": "FI-890bb8478ae51a1f",
+        "event_ids": [
+          "EV-123b3ef83e8306a3"
+        ],
+        "company_entity_id": "EN-d750363b61815762",
+        "company_canonical_entity_id": "",
+        "company_name": "Biomatter",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-245d9966638bb8d9",
+            "source_url": "https://practica.vc/en/news/biomatter-raises-a-eur65-million-seed-round-to-unlock-the-power-of-generative-ai-for-enzyme-design",
+            "source_title": "Biomatter raises a €6.5 million seed round to unlock the power of generative AI for enzyme design",
+            "source_content_hash": "7ba890ef416e3fa9",
+            "quote": "The round was joined by existing investors, Practica Capital and Metaplanet",
+            "quote_hash": "1d8b23066725f33089762a0ddc3def48c716bfd4fdfe542c7d4a5a4ac7bf18f8"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "edbc788fcd8dd594515287d3255271334895da316fa44f553e8a5c4e59a3c509",
         "quote": "The round was led by the Baltic venture capital firm Practica Capital and included participation from Nordic VC Inventure.",
         "quote_hash": "27e039ea565a667bd251531fbe31fe992b0279693895f2c86da3f456215689cc"
+      },
+      {
+        "source_id": "FISRC-245d9966638bb8d9",
+        "source_url": "https://practica.vc/en/news/biomatter-raises-a-eur65-million-seed-round-to-unlock-the-power-of-generative-ai-for-enzyme-design",
+        "source_title": "Biomatter raises a €6.5 million seed round to unlock the power of generative AI for enzyme design",
+        "source_content_hash": "7ba890ef416e3fa9",
+        "quote": "The round was joined by existing investors, Practica Capital and Metaplanet",
+        "quote_hash": "1d8b23066725f33089762a0ddc3def48c716bfd4fdfe542c7d4a5a4ac7bf18f8"
       }
     ],
     "public_profile": {
@@ -148,6 +189,10 @@
         {
           "description": "融资来源记录：Roleo · 轮次未披露 · 2026-11-02 · 本轮领投 · €2.9 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-43c75c59c0aa74fe"
+        },
+        {
+          "description": "融资来源记录：Biomatter · 历史轮次未披露 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-245d9966638bb8d9"
         }
       ],
       "contacts": [],
@@ -159,6 +204,14 @@
           "source_content_hash": "edbc788fcd8dd594515287d3255271334895da316fa44f553e8a5c4e59a3c509",
           "quote": "The round was led by the Baltic venture capital firm Practica Capital and included participation from Nordic VC Inventure.",
           "quote_hash": "27e039ea565a667bd251531fbe31fe992b0279693895f2c86da3f456215689cc"
+        },
+        {
+          "source_id": "FISRC-245d9966638bb8d9",
+          "source_url": "https://practica.vc/en/news/biomatter-raises-a-eur65-million-seed-round-to-unlock-the-power-of-generative-ai-for-enzyme-design",
+          "source_title": "Biomatter raises a €6.5 million seed round to unlock the power of generative AI for enzyme design",
+          "source_content_hash": "7ba890ef416e3fa9",
+          "quote": "The round was joined by existing investors, Practica Capital and Metaplanet",
+          "quote_hash": "1d8b23066725f33089762a0ddc3def48c716bfd4fdfe542c7d4a5a4ac7bf18f8"
         }
       ],
       "last_verified_at": "2026-10-06"
