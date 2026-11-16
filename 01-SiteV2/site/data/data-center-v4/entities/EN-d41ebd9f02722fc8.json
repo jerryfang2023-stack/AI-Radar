@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-15",
-    "currentDate": "2026-11-15",
-    "eventCount": 4464,
+    "latestDataDate": "2026-11-16",
+    "currentDate": "2026-11-16",
+    "eventCount": 4471,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-afbf21a381d1fa5d",
       "EV-40d4ce6d936d4d49",
       "EV-26a5749d8604455a",
       "EV-f2c93c155070cd35",
@@ -85,12 +86,13 @@
       "EN-10556ee2cee94c72"
     ],
     "firstSeen": "2026-07-07",
-    "lastSeen": "2026-09-28",
+    "lastSeen": "2026-11-16",
     "relationIds": [
       "REL2-0290625c26082cef"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-afbf21a381d1fa5d",
         "EV-40d4ce6d936d4d49",
         "EV-26a5749d8604455a",
         "EV-f2c93c155070cd35"
@@ -109,6 +111,24 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-afbf21a381d1fa5d",
+        "dataDate": "2026-11-16",
+        "date": "2026-11-13",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Crunchbase 数据：Nvidia 的初创企业融资交易创下纪录。黄仁勋之后会怎样？",
+        "displayTags": [],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d",
+          "EN-d41ebd9f02722fc8"
+        ]
+      },
       {
         "id": "EV-7d186033b26431e7",
         "dataDate": "2026-09-28",
@@ -867,7 +887,7 @@
         "HW-ef547aa78d8d0ade"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-11-15"
+      "lastSeen": "2026-11-16"
     },
     {
       "id": "TX-product_form-compute_cloud_service",

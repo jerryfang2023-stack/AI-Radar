@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-15",
-    "currentDate": "2026-11-15",
-    "eventCount": 4464,
+    "latestDataDate": "2026-11-16",
+    "currentDate": "2026-11-16",
+    "eventCount": 4471,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-23",
-    "latest_disclosed_at": "2026-08-23",
+    "latest_disclosed_at": "2026-11-12",
     "role_counts": {
-      "participant": 1
+      "historical_or_ambiguous": 1,
+      "participant": 2
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-d750363b61815762",
+        "canonical_entity_id": "",
+        "name": "Biomatter"
+      },
       {
         "entity_id": "EN-96c842ee0d60fa41",
         "canonical_entity_id": "",
@@ -85,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e3b4e01f96feae8b",
+        "funding_insight_id": "FI-890bb8478ae51a1f",
+        "event_ids": [
+          "EV-123b3ef83e8306a3"
+        ],
+        "company_entity_id": "EN-d750363b61815762",
+        "company_canonical_entity_id": "",
+        "company_name": "Biomatter",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$18 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 18000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1800 万美元"
+        },
+        "announced_at": "2026-11-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5d8f6f4023f3737c",
+            "source_url": "https://tech.eu/2026/11/12/biomatter-lands-18m-to-speed-up-enzyme-development-with-ai/",
+            "source_title": "Biomatter 获 1800 万美元融资，利用 AI 加速酶开发",
+            "source_content_hash": "aadbedb9854d4595b4718dff480b9d6c821a002d780780a0e688cd6c654d0160",
+            "quote": "with participation from existing investors UVC Partners, Inventure and Metaplanet",
+            "quote_hash": "f4406cfbd9db818040a8d3a2ccae2122e5a629839f90a5609a7ff2a05b339087"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1b0bbabb88fdef64",
         "funding_insight_id": "FI-b17b7b5dbec12f71",
@@ -124,9 +171,49 @@
             "quote_hash": "3eaf37137bbf2e93fe23706845f4924135ac9dbedaa8912cdb760d52c8be7c19"
           }
         ]
+      },
+      {
+        "activity_id": "IA-9bd4368143cfd4a3",
+        "funding_insight_id": "FI-890bb8478ae51a1f",
+        "event_ids": [
+          "EV-123b3ef83e8306a3"
+        ],
+        "company_entity_id": "EN-d750363b61815762",
+        "company_canonical_entity_id": "",
+        "company_name": "Biomatter",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-245d9966638bb8d9",
+            "source_url": "https://practica.vc/en/news/biomatter-raises-a-eur65-million-seed-round-to-unlock-the-power-of-generative-ai-for-enzyme-design",
+            "source_title": "Biomatter raises a €6.5 million seed round to unlock the power of generative AI for enzyme design",
+            "source_content_hash": "7ba890ef416e3fa9",
+            "quote": "The round was joined by existing investors, Practica Capital and Metaplanet",
+            "quote_hash": "1d8b23066725f33089762a0ddc3def48c716bfd4fdfe542c7d4a5a4ac7bf18f8"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-5d8f6f4023f3737c",
+        "source_url": "https://tech.eu/2026/11/12/biomatter-lands-18m-to-speed-up-enzyme-development-with-ai/",
+        "source_title": "Biomatter 获 1800 万美元融资，利用 AI 加速酶开发",
+        "source_content_hash": "aadbedb9854d4595b4718dff480b9d6c821a002d780780a0e688cd6c654d0160",
+        "quote": "with participation from existing investors UVC Partners, Inventure and Metaplanet",
+        "quote_hash": "f4406cfbd9db818040a8d3a2ccae2122e5a629839f90a5609a7ff2a05b339087"
+      },
       {
         "source_id": "FISRC-ed8df2c3d21fb938",
         "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-inherent-on-dollar50-million-seed-round-as-company-emerges-from-stealth.html?ref=thesaasnews.com",
@@ -134,6 +221,14 @@
         "source_content_hash": "d71416937629ad73",
         "quote": "with participation from investors including NVentures (NVIDIA's venture capital arm), Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures",
         "quote_hash": "3eaf37137bbf2e93fe23706845f4924135ac9dbedaa8912cdb760d52c8be7c19"
+      },
+      {
+        "source_id": "FISRC-245d9966638bb8d9",
+        "source_url": "https://practica.vc/en/news/biomatter-raises-a-eur65-million-seed-round-to-unlock-the-power-of-generative-ai-for-enzyme-design",
+        "source_title": "Biomatter raises a €6.5 million seed round to unlock the power of generative AI for enzyme design",
+        "source_content_hash": "7ba890ef416e3fa9",
+        "quote": "The round was joined by existing investors, Practica Capital and Metaplanet",
+        "quote_hash": "1d8b23066725f33089762a0ddc3def48c716bfd4fdfe542c7d4a5a4ac7bf18f8"
       }
     ],
     "public_profile": {
@@ -171,8 +266,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Biomatter · A轮 · 2026-11-12 · 本轮参投 · $18 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5d8f6f4023f3737c"
+        },
+        {
           "description": "融资来源记录：Inherent · 种子轮 · 2026-08-23 · 本轮参投 · 5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ed8df2c3d21fb938"
+        },
+        {
+          "description": "融资来源记录：Biomatter · 历史轮次未披露 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-245d9966638bb8d9"
         }
       ],
       "contacts": [
@@ -194,12 +297,28 @@
           "quote_hash": "e753031a7eebd16630e270fcbbd8f000576d67dd33eb7402de2d7b9168a6fab7"
         },
         {
+          "source_id": "FISRC-5d8f6f4023f3737c",
+          "source_url": "https://tech.eu/2026/11/12/biomatter-lands-18m-to-speed-up-enzyme-development-with-ai/",
+          "source_title": "Biomatter 获 1800 万美元融资，利用 AI 加速酶开发",
+          "source_content_hash": "aadbedb9854d4595b4718dff480b9d6c821a002d780780a0e688cd6c654d0160",
+          "quote": "with participation from existing investors UVC Partners, Inventure and Metaplanet",
+          "quote_hash": "f4406cfbd9db818040a8d3a2ccae2122e5a629839f90a5609a7ff2a05b339087"
+        },
+        {
           "source_id": "FISRC-ed8df2c3d21fb938",
           "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-inherent-on-dollar50-million-seed-round-as-company-emerges-from-stealth.html?ref=thesaasnews.com",
           "source_title": "Wilson Sonsini Advises Inherent on $50 Million Seed Round as Company Emerges from Stealth",
           "source_content_hash": "d71416937629ad73",
           "quote": "with participation from investors including NVentures (NVIDIA's venture capital arm), Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures",
           "quote_hash": "3eaf37137bbf2e93fe23706845f4924135ac9dbedaa8912cdb760d52c8be7c19"
+        },
+        {
+          "source_id": "FISRC-245d9966638bb8d9",
+          "source_url": "https://practica.vc/en/news/biomatter-raises-a-eur65-million-seed-round-to-unlock-the-power-of-generative-ai-for-enzyme-design",
+          "source_title": "Biomatter raises a €6.5 million seed round to unlock the power of generative AI for enzyme design",
+          "source_content_hash": "7ba890ef416e3fa9",
+          "quote": "The round was joined by existing investors, Practica Capital and Metaplanet",
+          "quote_hash": "1d8b23066725f33089762a0ddc3def48c716bfd4fdfe542c7d4a5a4ac7bf18f8"
         }
       ],
       "last_verified_at": "2026-10-05"

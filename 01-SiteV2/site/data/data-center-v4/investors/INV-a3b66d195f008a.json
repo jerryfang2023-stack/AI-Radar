@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-15",
-    "currentDate": "2026-11-15",
-    "eventCount": 4464,
+    "latestDataDate": "2026-11-16",
+    "currentDate": "2026-11-16",
+    "eventCount": 4471,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-08",
-    "latest_disclosed_at": "2026-10-08",
+    "latest_disclosed_at": "2026-11-12",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
+      "pre_seed",
       "seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-9563db674f7a5d45",
+        "canonical_entity_id": "",
+        "name": "Opdo"
+      },
       {
         "entity_id": "EN-ee11373e48530800",
         "canonical_entity_id": "",
@@ -86,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f1a60c82d68f14b3",
+        "funding_insight_id": "FI-f49ed33f35fa29aa",
+        "event_ids": [
+          "EV-a9a2cac6468c5160"
+        ],
+        "company_entity_id": "EN-9563db674f7a5d45",
+        "company_canonical_entity_id": "",
+        "company_name": "Opdo",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "$2.3 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "230 万美元"
+        },
+        "announced_at": "2026-11-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-5496c5aae84ccac7",
+            "source_url": "https://opdo.ai/insights/opdo-raises-2-3m-ai-optical-engineering",
+            "source_title": "Opdo raises $2.3M to bring AI into optical engineering",
+            "source_content_hash": "1f5f1c5e8f34f2b0",
+            "quote": "The $2.3 million pre-seed round was led by Angular Ventures, with participation from Inflection and Tiny.vc.",
+            "quote_hash": "9dcd095e1b743a76c8a67bc90bde04eb4399ab556e7338183dc4dbee78980b3e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-49310376f1d8f92a",
         "funding_insight_id": "FI-85bd50a60143ff0c",
@@ -162,6 +208,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-5496c5aae84ccac7",
+        "source_url": "https://opdo.ai/insights/opdo-raises-2-3m-ai-optical-engineering",
+        "source_title": "Opdo raises $2.3M to bring AI into optical engineering",
+        "source_content_hash": "1f5f1c5e8f34f2b0",
+        "quote": "The $2.3 million pre-seed round was led by Angular Ventures, with participation from Inflection and Tiny.vc.",
+        "quote_hash": "9dcd095e1b743a76c8a67bc90bde04eb4399ab556e7338183dc4dbee78980b3e"
+      },
+      {
         "source_id": "FISRC-9b9b2bb6ee44018e",
         "source_url": "https://tech.eu/2026/10/08/verso-raises-6m-to-bring-consumer-intelligence-into-business-decision-making/",
         "source_title": "Verso 融资 600 万美元，将消费者智能引入商业决策",
@@ -209,6 +263,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Opdo · 预种子轮 · 2026-11-12 · 本轮领投 · $2.3 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5496c5aae84ccac7"
+        },
+        {
           "description": "融资来源记录：Verso · 种子轮 · 2026-10-08 · 本轮领投 · $6 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9b9b2bb6ee44018e"
         },
@@ -234,6 +292,14 @@
           "source_content_hash": "bc22b8ea2903e7e0e294f71f45638a915ed622a0b49f1c2e321700f433fd9e95",
           "quote": "Angular is an inception-stage fund. We prefer to invest in the first institutional round. We are often the first investor a company has. Our first check is usually between $500K and $5M. We are set up to follow on throughout the life of a company. We are focused on companies/founders that originate from Europe or Israel, but with a planned US GTM focus.",
           "quote_hash": "bc22b8ea2903e7e0e294f71f45638a915ed622a0b49f1c2e321700f433fd9e95"
+        },
+        {
+          "source_id": "FISRC-5496c5aae84ccac7",
+          "source_url": "https://opdo.ai/insights/opdo-raises-2-3m-ai-optical-engineering",
+          "source_title": "Opdo raises $2.3M to bring AI into optical engineering",
+          "source_content_hash": "1f5f1c5e8f34f2b0",
+          "quote": "The $2.3 million pre-seed round was led by Angular Ventures, with participation from Inflection and Tiny.vc.",
+          "quote_hash": "9dcd095e1b743a76c8a67bc90bde04eb4399ab556e7338183dc4dbee78980b3e"
         },
         {
           "source_id": "FISRC-9b9b2bb6ee44018e",

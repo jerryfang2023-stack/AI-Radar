@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-15",
-    "currentDate": "2026-11-15",
-    "eventCount": 4464,
+    "latestDataDate": "2026-11-16",
+    "currentDate": "2026-11-16",
+    "eventCount": 4471,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -59,6 +59,7 @@
     "typeLabel": "技术",
     "valueId": "agentic_execution",
     "eventIds": [
+      "EV-03e34979859b12d9",
       "EV-937b99126cc4df09",
       "EV-12e63ddc1a14574e",
       "EV-07d7ee423289a804",
@@ -756,6 +757,7 @@
       "EV-c17f5a364ed6a3ac"
     ],
     "entityIds": [
+      "EN-a6936f276185fd8f",
       "EN-7d3194f79e645c42",
       "EN-45524c831447998f",
       "EN-38efea68165714db",
@@ -1261,8 +1263,90 @@
   },
   "events": [
     {
+      "id": "EV-03e34979859b12d9",
+      "dataDate": "2026-11-16",
+      "date": "2026-11-12",
+      "updatedDate": "2026-11-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Nebuly 完成 2100 万美元 A 轮融资，将 AI 投资转化为可衡量成果",
+      "originalTitle": "Nebuly raises $21M Series A to turn AI investments into measurable results",
+      "subject": "Nebuly",
+      "action": "raises",
+      "object": "$21M Series A to turn AI investments into measurable results",
+      "metrics": [
+        "$21 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-a6936f276185fd8f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-a6936f276185fd8f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-a6936f276185fd8f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a6936f276185fd8f"
+      ],
+      "entityNames": [
+        "Nebuly"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.eu/2026/11/12/nebuly-raises-21m-series-a-to-turn-ai-investments-into-measurable-results/",
+      "publisher": "tech.eu"
+    },
+    {
       "id": "EV-937b99126cc4df09",
-      "dataDate": "2026-11-15",
+      "dataDate": "2026-11-16",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "acquisition",
@@ -110279,6 +110363,27 @@
   ],
   "entities": [
     {
+      "id": "EN-a6936f276185fd8f",
+      "name": "Nebuly",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-03e34979859b12d9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-11-12",
+      "lastSeen": "2026-11-16"
+    },
+    {
       "id": "EN-7d3194f79e645c42",
       "name": "OpenAI",
       "entityType": "organization_candidate",
@@ -110289,6 +110394,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-afbf21a381d1fa5d",
         "EV-937b99126cc4df09",
         "EV-3bc1af8409d16f9b",
         "EV-aaf041c83cebba9a",
@@ -110934,7 +111040,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-15"
+      "lastSeen": "2026-11-16"
     },
     {
       "id": "EN-45524c831447998f",
@@ -111803,8 +111909,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-product_form-model",
         "TX-use_case-security_operations",
         "TX-target_user-business_user",
@@ -111832,7 +111938,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-01-14",
-      "lastSeen": "2026-11-15"
+      "lastSeen": "2026-11-16"
     },
     {
       "id": "EN-e66d5fd225ed6b0a",
@@ -112371,8 +112477,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-embodied_ai",
         "TX-product_form-model",
@@ -112430,7 +112536,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-11-15"
+      "lastSeen": "2026-11-16"
     },
     {
       "id": "EN-8bacc14fb816a980",
@@ -112685,8 +112791,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
@@ -112803,8 +112909,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-product_form-model",
         "TX-industry-media_entertainment",
         "TX-product_form-enterprise_software_platform"
@@ -112893,8 +112999,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-aerospace_defense"
       ],
       "relatedEntityIds": [],
@@ -113263,8 +113369,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-product_form-chip_accelerator",
@@ -113555,8 +113661,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform"
       ],
       "relatedEntityIds": [],
@@ -113787,8 +113893,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-design_engineering",
@@ -114294,8 +114400,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-business_user",
         "TX-target_user-developer",
@@ -114460,8 +114566,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-ai_market_category-infrastructure_compute",
@@ -114545,8 +114651,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-use_case-security_operations",
@@ -114642,8 +114748,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-use_case-security_operations",
@@ -114715,8 +114821,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-25",
@@ -114940,8 +115046,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-financial_services",
         "TX-target_user-business_user",
         "TX-product_form-enterprise_software_platform",
@@ -115320,8 +115426,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-productivity_enterprise_workflows",
@@ -115783,8 +115889,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-industry-media_entertainment",
@@ -115828,8 +115934,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-target_user-business_user",
@@ -115865,8 +115971,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
         "TX-industry-media_entertainment",
@@ -116004,8 +116110,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-27",
@@ -116102,8 +116208,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-product_form-enterprise_software_platform"
       ],
@@ -116425,8 +116531,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-industry-retail_ecommerce"
       ],
@@ -116568,8 +116674,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-product_form-model",
         "TX-product_form-compute_cloud_service",
         "TX-product_form-chip_accelerator",
@@ -117328,8 +117434,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
         "TX-industry-media_entertainment",
@@ -117467,8 +117573,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-22",
@@ -117760,6 +117866,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-afbf21a381d1fa5d",
         "EV-0a0d2b11832f0be5",
         "EV-81eaad496911181e",
         "EV-b34cc7c6ca51ad7a",
@@ -118090,8 +118197,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-embodied_ai",
@@ -118173,7 +118280,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-15"
+      "lastSeen": "2026-11-16"
     },
     {
       "id": "EN-28d0bd981118a907",
@@ -118991,6 +119098,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-afbf21a381d1fa5d",
         "EV-cd20a6ff672972eb",
         "EV-53dad7c8f530b480",
         "EV-7684bfb9b954c1fd",
@@ -119566,7 +119674,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-11-15"
+      "lastSeen": "2026-11-16"
     },
     {
       "id": "EN-6fcba5d96a4fadfd",
@@ -120224,8 +120332,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-product_form-compute_cloud_service",
         "TX-target_user-business_user",
         "TX-technology-guardrails_safety"
@@ -120235,7 +120343,7 @@
         "EN-7d3194f79e645c42"
       ],
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-11-15"
+      "lastSeen": "2026-11-16"
     },
     {
       "id": "EN-0d47d3f0783749a8",
@@ -121804,8 +121912,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-use_case-data_analysis",
         "TX-technology-tool_use"
       ],
@@ -123583,8 +123691,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
@@ -123896,8 +124004,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
         "TX-product_form-chip_accelerator",

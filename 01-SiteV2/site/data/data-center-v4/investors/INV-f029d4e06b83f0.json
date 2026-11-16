@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-15",
-    "currentDate": "2026-11-15",
-    "eventCount": 4464,
+    "latestDataDate": "2026-11-16",
+    "currentDate": "2026-11-16",
+    "eventCount": 4471,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-01-22",
-    "latest_disclosed_at": "2026-10-15",
+    "latest_disclosed_at": "2026-11-15",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
+      "seed",
       "series_a",
       "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-4c323f9c08569906",
+        "canonical_entity_id": "",
+        "name": "Bharat Semi"
+      },
       {
         "entity_id": "EN-bac6d661867571f7",
         "canonical_entity_id": "",
@@ -91,6 +97,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-18768872852758ad",
+        "funding_insight_id": "FI-0f8acbc7b961f248",
+        "event_ids": [
+          "EV-c7f02c82dcf2cea9"
+        ],
+        "company_entity_id": "EN-4c323f9c08569906",
+        "company_canonical_entity_id": "",
+        "company_name": "Bharat Semi",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$24 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 24000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2400 万美元"
+        },
+        "announced_at": "2026-11-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-04196bef9b67627d",
+            "source_url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+            "source_title": "印度芯片初创公司Bharat Semi完成2400万美元种子轮融资，瞄准全球AI传感器市场",
+            "source_content_hash": "fe0a09d8d397e3457da5415e30df981daa38a0f335e5a20368e2eceb95fe3c2b",
+            "quote": "The all-equity seed round was led by Info Edge Group, South Park Commons, and Indus Bridge Ventures, with participation from Valour Capital, Micromax, Gaingels, and individual investors.",
+            "quote_hash": "4c892a67e120b6a25de2b98b84751ce0cc3264445645bf28443e005692a09154"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a85d6abb565e7a7c",
         "funding_insight_id": "FI-c22ff1ce73d25632",
@@ -174,6 +220,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-04196bef9b67627d",
+        "source_url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+        "source_title": "印度芯片初创公司Bharat Semi完成2400万美元种子轮融资，瞄准全球AI传感器市场",
+        "source_content_hash": "fe0a09d8d397e3457da5415e30df981daa38a0f335e5a20368e2eceb95fe3c2b",
+        "quote": "The all-equity seed round was led by Info Edge Group, South Park Commons, and Indus Bridge Ventures, with participation from Valour Capital, Micromax, Gaingels, and individual investors.",
+        "quote_hash": "4c892a67e120b6a25de2b98b84751ce0cc3264445645bf28443e005692a09154"
+      },
+      {
         "source_id": "FISRC-d44602a17801a99d",
         "source_url": "https://www.prnewswire.com/news-releases/northcloud-raises-60m-series-b-to-unify-spend-intelligence-and-enable-full-automation-across-cloud-ai-and-data-302909322.html",
         "source_title": "North.cloud 完成 6000 万美元 B 轮融资，统一支出智能并实现跨云、AI 和数据的全面自动化",
@@ -202,6 +256,10 @@
         {
           "description": "Duke Capital Partners 对 Neurophos A 轮的公告列出 Gaingels 为投资方之一；未披露其单独出资额。",
           "source_id": "gaingels-neurophos-seriesa-2026"
+        },
+        {
+          "description": "融资来源记录：Bharat Semi · 种子轮 · 2026-11-15 · 本轮参投 · $24 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-04196bef9b67627d"
         },
         {
           "description": "融资来源记录：North.cloud · B轮 · 2026-10-15 · 本轮参投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -233,6 +291,14 @@
           "source_content_hash": "2ef854100339a7cf6d8c7cd5df93231d267025e99c4bbb3a138eeb35aa6cce35",
           "quote": "Gaingels, and others",
           "quote_hash": "b247979e6ee5912d81f1e9e29fbd0217ab670cae8e7db795be1bd4875716c9ad"
+        },
+        {
+          "source_id": "FISRC-04196bef9b67627d",
+          "source_url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+          "source_title": "印度芯片初创公司Bharat Semi完成2400万美元种子轮融资，瞄准全球AI传感器市场",
+          "source_content_hash": "fe0a09d8d397e3457da5415e30df981daa38a0f335e5a20368e2eceb95fe3c2b",
+          "quote": "The all-equity seed round was led by Info Edge Group, South Park Commons, and Indus Bridge Ventures, with participation from Valour Capital, Micromax, Gaingels, and individual investors.",
+          "quote_hash": "4c892a67e120b6a25de2b98b84751ce0cc3264445645bf28443e005692a09154"
         },
         {
           "source_id": "FISRC-d44602a17801a99d",

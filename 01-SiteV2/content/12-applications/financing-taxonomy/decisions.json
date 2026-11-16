@@ -38352,7 +38352,268 @@
       "provider": "responsible_source_replay",
       "model": "deepseek-flash",
       "generated_at": "2026-11-15T10:55:06.938Z"
+    },
+    "EV-a9a2cac6468c5160": {
+      "id": "EV-a9a2cac6468c5160",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "manufacturing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "Opdo 提供 AI 原生光学设计与工程服务，属于面向制造/工程流程的行业 AI 软件。",
+      "input_hash": "e98a46209bd70cc648de36a277c969bc07e681aaac6d2ec461dcf614409bd949",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-284962818887a1a0",
+          "quote": "Opdo, an AI-native optical engineering company, has raised $2.3 million in pre-seed funding"
+        },
+        {
+          "source_id": "FISRC-5496c5aae84ccac7",
+          "quote": "Opdo is an AI-native optical engineering company headquartered in Los Angeles."
+        },
+        {
+          "source_id": "FISRC-5496c5aae84ccac7",
+          "quote": "Its technology operates within established optical design software, including Zemax and CODE V"
+        },
+        {
+          "source_id": "FISRC-5496c5aae84ccac7",
+          "quote": "Opdo’s own engineers provide additional design expertise, and customers can also source prototypes and finished components through the company."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-16T03:31:43.159Z"
+    },
+    "EV-afbf21a381d1fa5d": {
+      "id": "EV-afbf21a381d1fa5d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "NVIDIA 以加速计算平台与 AI 芯片为核心业务，属于 AI 算力与芯片。",
+      "input_hash": "490ff4edd1f464fa9bccf7907d1464ac429e3b6c637bc01bd84f958b606240df",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0122ec2217c08ff3",
+          "quote": "NVIDIA (NASDAQ: NVDA) is the world leader in AI and accelerated computing."
+        },
+        {
+          "source_id": "FISRC-0122ec2217c08ff3",
+          "quote": "NVIDIA compute is an investable asset — one which provides the lowest token cost, highest revenue and longest life along with a rich ecosystem of offtakers built upon NVIDIA’s CUDA platform."
+        },
+        {
+          "source_id": "FISRC-0122ec2217c08ff3",
+          "quote": "These financing platforms will help customers access scarce compute at scale and build the DSX AI factories that will power every industry and country in the age of AI."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-16T03:31:44.652Z"
+    },
+    "EV-fb1e2e2d2c9f83d8": {
+      "id": "EV-fb1e2e2d2c9f83d8",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "entertainment",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "Anorak 面向玩家交付交互式生成视频娱乐产品，属消费娱乐应用。",
+      "input_hash": "6aaea0b4f09b314e6577794b9008ee9b66264c4ad4b5da264a119f937c4bc43f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3d107cb71168469a",
+          "quote": "The product is generative video that responds to the player’s choices as they make them."
+        },
+        {
+          "source_id": "FISRC-3d107cb71168469a",
+          "quote": "Anorak builds its own inference technology to make that video faster, cheaper and more controllable"
+        },
+        {
+          "source_id": "FISRC-3d107cb71168469a",
+          "quote": "The next step is a creator platform where communities built around fishing, sneakers, birdwatching or padel make playable content about the thing they already care about"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-16T03:31:44.652Z"
+    },
+    "EV-03e34979859b12d9": {
+      "id": "EV-03e34979859b12d9",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "analytics",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "rationale": "Nebuly 为企业衡量 AI 智能体业务价值与采用情况，属企业数据分析。",
+      "input_hash": "482a80873bc1abb771ceb7b1fb6da7ef49a6df990fb60f891340fd7af07140eb",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9a9cdaf895663c5d",
+          "quote": "Nebuly, a platform that helps enterprises measure the business value of their AI agents, has raised $21 million in a Series A funding round led by Planven."
+        },
+        {
+          "source_id": "FISRC-a6794f376969c20a",
+          "quote": "Nebuly measures what AI is really worth to a business. It analyzes what AI agents actually do inside an organization, across internal employee tools and customer-facing assistants, and brings the results into a single view."
+        },
+        {
+          "source_id": "FISRC-a6794f376969c20a",
+          "quote": "For employee-facing AI, it measures two kinds of value: the efficiency AI creates, in hours saved and capacity freed up, and the new tasks it unlocks that teams could not take on before."
+        },
+        {
+          "source_id": "FISRC-a40aab4b707738c0",
+          "quote": "AI Proficiency scores how well each team uses AI."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-16T03:31:44.652Z"
+    },
+    "EV-123b3ef83e8306a3": {
+      "id": "EV-123b3ef83e8306a3",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "ai-service",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Biomatter 以平台设计定制酶并交付客户，属生命科学行业 AI。",
+      "input_hash": "78fb1705e427c5369b22b67ad553a107743d007cd74abc407b9a84a8ce27001d",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5d8f6f4023f3737c",
+          "quote": "Biomatter, a company specialising in custom enzyme design, has raised $18 million in an oversubscribed Series A funding round led by Astanor"
+        },
+        {
+          "source_id": "FISRC-245d9966638bb8d9",
+          "quote": "Biomatter’s Intelligent Architecture™ platform allows building new enzymes “bottom-up”, without the traditional constraints of natural enzymes"
+        },
+        {
+          "source_id": "FISRC-45563abfba7534f0",
+          "quote": "Biomatter’s process starts with the chemistry a customer’s product needs, rather than with a natural enzyme and the data surrounding it."
+        },
+        {
+          "source_id": "FISRC-5798b04ced8251d3",
+          "quote": "deliver validated candidates for customer qualification and manufacturing"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-16T03:31:44.652Z"
+    },
+    "EV-4fed1a2667fd7af4": {
+      "id": "EV-4fed1a2667fd7af4",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "sales-marketing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        8
+      ],
+      "rationale": "Mondrio 为 B2B 企业提供 AI 定价与报价谈判平台，属企业销售营销。",
+      "input_hash": "b250c916c6c831e1ced47ef80c24a9c1fd27727629ec52fab700da9fcaae19d3",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-703febe75ee64246",
+          "quote": "AI-powered B2B pricing platform Mondrio has raised a $3.75 million funding round"
+        },
+        {
+          "source_id": "FISRC-abb93ad4518d5843",
+          "quote": "Mondrio, a company with operations in San Francisco and Amsterdam that provides an agentic pricing management platform for B2B enterprises"
+        },
+        {
+          "source_id": "FISRC-a7e73bfcfd710211",
+          "quote": "Price designPricing Studio"
+        },
+        {
+          "source_id": "FISRC-abb93ad4518d5843",
+          "quote": "automate quoting and negotiations through AI-driven insights"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-16T03:31:44.652Z"
+    },
+    "EV-c7f02c82dcf2cea9": {
+      "id": "EV-c7f02c82dcf2cea9",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Bharat Semi 研发集成 AI 的可编程图像传感器芯片，属 AI 芯片。",
+      "input_hash": "0c70bda30943697a761cf56c45f4e945a2778c752492e1c3b34738e88842f002",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-04196bef9b67627d",
+          "quote": "Bharat Semi, an Indian semiconductor startup, has raised $24 million in seed funding to develop AI-enabled image sensors"
+        },
+        {
+          "source_id": "FISRC-999d04669fd3a258",
+          "quote": "Programmable smart sensors that bring sensing and AI together, so devices can perceive, infer and act at the point of capture."
+        },
+        {
+          "source_id": "FISRC-04196bef9b67627d",
+          "quote": "The New Delhi-based startup is developing programmable image sensors that combine image capture, processing, and AI capabilities on a single chip, reducing the need to send visual data to separate processors."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-16T03:31:44.652Z"
     }
   },
-  "generated_at": "2026-11-15T00:52:28.276Z"
+  "generated_at": "2026-11-16T03:31:44.652Z"
 }
