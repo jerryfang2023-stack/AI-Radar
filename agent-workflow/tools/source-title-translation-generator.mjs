@@ -139,6 +139,10 @@ export function extractMoneyAmounts(value = "") {
   const results = [];
   for (const match of text.matchAll(pattern)) {
     const raw = match[0];
+    // A numeric suffix inside B2B, Llama70B or model_8B is an identifier,
+    // even when a nearby Chinese financing verb provides monetary context.
+    // Leave it for the separate non-money numeric-fact comparison.
+    if (/^\d/u.test(raw) && /[A-Za-z0-9_]/u.test(text[(match.index || 0) - 1] || "")) continue;
     const unit = String(match[2] || "").toLowerCase();
     const currency = moneyCurrency(raw);
     const context = text.slice(Math.max(0, (match.index || 0) - 40), (match.index || 0) + raw.length + 40);
