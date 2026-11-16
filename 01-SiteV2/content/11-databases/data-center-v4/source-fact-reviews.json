@@ -1,6 +1,6 @@
 {
   "schema_version": "SOURCE-FACT-REVIEW-1",
-  "date": "2026-11-14",
+  "date": "2026-11-16",
   "sources": {
     "SA-2cd686a2fdc2bbd4": {
       "disposition": "lead_only",
@@ -31,6 +31,16 @@
       "content_hash": "349ff5c644eb7ff7c43d1e14ca4e72e7f8ef58c2d2a5de018b46ac5d41a39b78",
       "source_quote": "Blog · Company · November 5, 2026\n Building the infrastructure for commerce's next chapter\n We've raised $15 million in Series A funding and launched Ask Agent, accelerating our mission to make every merchant ready for agentic commerce.\n KS\n Kumar Senthil\nCo-founder and CEO, firmly",
       "quote_sha256": "e7e22306311e41e943ce359b870bbc72f3fb199a09711599e0bbbe1748ec2ae1"
+    },
+    "SA-d8d9863101717770": {
+      "disposition": "lead_only",
+      "reviewed_by": "Codex responsible original-source review",
+      "reviewed_at": "2026-11-16T03:43:36.118799+00:00",
+      "source_url": "https://news.crunchbase.com/venture/huang-nvda-ai-startup-funding-record-2026/",
+      "content_hash": "741e148123715ee8e7713ae9788190018f002fe008015a61264506679f0b41a4",
+      "source_quote": "OpenAI’s Series G, which closed at $122 billion in March",
+      "quote_sha256": "3b093d7e3682937f70c2e41f7a2270b2b8942d7bd41dd8b5034903af4b2bfc74",
+      "reason": "Investment-activity overview of Nvidia and NVentures. The quoted 122B Series G belongs to OpenAI and closed in March, not Nvidia and not the November report date. Retain this source as a lead; do not synthesize a new financing event for the investor. Existing published Nvidia and OpenAI history remains unchanged."
     }
   }
 }
