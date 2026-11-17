@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-16",
-    "currentDate": "2026-11-16",
-    "eventCount": 4470,
+    "latestDataDate": "2026-11-17",
+    "currentDate": "2026-11-17",
+    "eventCount": 4474,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,20 +63,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2022-04-12",
-    "latest_disclosed_at": "2026-10-05",
+    "latest_disclosed_at": "2026-11-16",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
-      "lead": 2,
+      "lead": 3,
       "participant": 4
     },
     "round_codes": [
@@ -92,6 +92,11 @@
         "entity_id": "EN-dc483de2bd50b2f4",
         "canonical_entity_id": "",
         "name": "Clockwork.io"
+      },
+      {
+        "entity_id": "EN-63482586c768cea7",
+        "canonical_entity_id": "",
+        "name": "Corma"
       },
       {
         "entity_id": "EN-06c8aaa93d80a768",
@@ -120,6 +125,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-659befb5faa5a9bb",
+        "funding_insight_id": "FI-0437f90099ed8828",
+        "event_ids": [
+          "EV-fa34f7342de666dd"
+        ],
+        "company_entity_id": "EN-63482586c768cea7",
+        "company_canonical_entity_id": "",
+        "company_name": "Corma",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$125 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 125000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.25 亿美元"
+        },
+        "announced_at": "2026-11-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-24baf68da2c147d6",
+            "source_url": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
+            "source_title": "网络安全 AI 初创公司 Corma 约 3 个月内估值达 $1B",
+            "source_content_hash": "3528120c072564505d4f49ec4976d8b041972f75c1675308747974fc6d799406",
+            "quote": "has raised a $125 million Series A round at a $1 billion valuation led by NEA",
+            "quote_hash": "78d4dc7c9af5c75d5cdc66fa6d7b783749fabee21e3cc7509dc4ea3472e088f0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-4b5cde12f11f727a",
         "funding_insight_id": "FI-4e41cf72b50bafd3",
@@ -451,6 +496,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-24baf68da2c147d6",
+        "source_url": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
+        "source_title": "网络安全 AI 初创公司 Corma 约 3 个月内估值达 $1B",
+        "source_content_hash": "3528120c072564505d4f49ec4976d8b041972f75c1675308747974fc6d799406",
+        "quote": "has raised a $125 million Series A round at a $1 billion valuation led by NEA",
+        "quote_hash": "78d4dc7c9af5c75d5cdc66fa6d7b783749fabee21e3cc7509dc4ea3472e088f0"
+      },
+      {
         "source_id": "FISRC-bffca0091f22129f",
         "source_url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
         "source_title": "Clockwork.io 融资 3100 万美元，LinkedIn、Together AI 和 WhiteFiber 采用其韧性软件以停止浪费 GPU 小时",
@@ -584,16 +637,16 @@
           "source_id": "nea_about"
         },
         {
+          "description": "融资来源记录：Corma · A轮 · 2026-11-16 · 本轮领投 · $125 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-24baf68da2c147d6"
+        },
+        {
           "description": "融资来源记录：Clockwork.io · 轮次未披露 · 2026-10-05 · 本轮参投 · $31M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-bffca0091f22129f"
         },
         {
           "description": "融资来源记录：Factory · 其他融资 · 2026-09-15 · 本轮参投 · $200M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1c7459d2ce055880"
-        },
-        {
-          "description": "融资来源记录：Positron AI · C轮 · 2026-09-10 · C轮联合领投 · $375 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3947ce709f26c22a"
         }
       ],
       "contacts": [
@@ -668,6 +721,14 @@
           "quote_hash": "b657f17ea54811c9e0d34913681f9e271da506b4610184ed87b3242622786271"
         },
         {
+          "source_id": "FISRC-24baf68da2c147d6",
+          "source_url": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
+          "source_title": "网络安全 AI 初创公司 Corma 约 3 个月内估值达 $1B",
+          "source_content_hash": "3528120c072564505d4f49ec4976d8b041972f75c1675308747974fc6d799406",
+          "quote": "has raised a $125 million Series A round at a $1 billion valuation led by NEA",
+          "quote_hash": "78d4dc7c9af5c75d5cdc66fa6d7b783749fabee21e3cc7509dc4ea3472e088f0"
+        },
+        {
           "source_id": "FISRC-bffca0091f22129f",
           "source_url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
           "source_title": "Clockwork.io 融资 3100 万美元，LinkedIn、Together AI 和 WhiteFiber 采用其韧性软件以停止浪费 GPU 小时",
@@ -682,14 +743,6 @@
           "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
           "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
           "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
-        },
-        {
-          "source_id": "FISRC-3947ce709f26c22a",
-          "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
-          "source_title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
-          "source_content_hash": "6fba1e5175dc31c470a941be5c7c5d5c6b11416aa4fb9195aa3578c9afe99fdb",
-          "quote": "The Series C, $375 million at a $3.5 billion pre-money valuation, was co-led by NEA, Andra Capital, Atreides Management, Valor Equity Partners, and Dylan Patel's SemiAnalysis Capital.",
-          "quote_hash": "4a268ef2dc6771c1b3575196421137a2e838d9a10dd583cd9ff1e57e059abe05"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -698,7 +751,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[7].role": {
+        "activities[8].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

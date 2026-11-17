@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-16",
-    "currentDate": "2026-11-16",
-    "eventCount": 4470,
+    "latestDataDate": "2026-11-17",
+    "currentDate": "2026-11-17",
+    "eventCount": 4474,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,31 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-17",
-    "latest_disclosed_at": "2026-10-20",
+    "latest_disclosed_at": "2026-11-16",
     "role_counts": {
+      "lead": 1,
       "participant": 3
     },
     "round_codes": [
+      "multi_round",
       "series_a",
       "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-84fe14dac01da952",
+        "canonical_entity_id": "",
+        "name": "Dreamteam"
+      },
       {
         "entity_id": "EN-e6a1f05cbb826b2c",
         "canonical_entity_id": "",
@@ -96,6 +103,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a1ecdca51e3b10a4",
+        "funding_insight_id": "FI-1034f9dbe9a2f438",
+        "event_ids": [
+          "EV-e4e1d8cd826a402a"
+        ],
+        "company_entity_id": "EN-84fe14dac01da952",
+        "company_canonical_entity_id": "",
+        "company_name": "Dreamteam",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "种子轮和A轮",
+        "amount_original": "$53 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 53000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5300 万美元"
+        },
+        "announced_at": "2026-11-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-67067103992ebfe0",
+            "source_url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+            "source_title": "Freshworks校友筹集5300万美元，以AI原生CRM挑战Salesforce和HubSpot",
+            "source_content_hash": "d28adbe2957be9222baa64bfec86d74c3d67baaf04baaeab71773c49ae877d89",
+            "quote": "The funding comprises seed and Series A rounds, led by Together Fund and Accel respectively, with participation from Premji Invest.",
+            "quote_hash": "c81fc8a90f6bf710a40892523ff7682e4c7a23001cc84c0395b5f31397c99946"
+          }
+        ]
+      },
       {
         "activity_id": "IA-faef56912761034f",
         "funding_insight_id": "FI-d337c9f930edf4af",
@@ -219,6 +266,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-67067103992ebfe0",
+        "source_url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+        "source_title": "Freshworks校友筹集5300万美元，以AI原生CRM挑战Salesforce和HubSpot",
+        "source_content_hash": "d28adbe2957be9222baa64bfec86d74c3d67baaf04baaeab71773c49ae877d89",
+        "quote": "The funding comprises seed and Series A rounds, led by Together Fund and Accel respectively, with participation from Premji Invest.",
+        "quote_hash": "c81fc8a90f6bf710a40892523ff7682e4c7a23001cc84c0395b5f31397c99946"
+      },
+      {
         "source_id": "FISRC-21f1e0578f986661",
         "source_url": "https://yourstory.com/2026/10/hunarai-raises-rs-40-crore-in-series-a-led-by-blume-ventures",
         "source_title": "Hunar.AI 在由 Blume Ventures 领投的 A 轮融资中筹集了 40 Cr 卢比",
@@ -316,6 +371,10 @@
           "source_id": "FISRC-2e7a3713da8f3e54"
         },
         {
+          "description": "融资来源记录：Dreamteam · 多轮融资 · 2026-11-16 · 本轮领投 · $53 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-67067103992ebfe0"
+        },
+        {
           "description": "融资来源记录：Hunar.AI · A轮 · 2026-10-20 · 本轮参投 · Rs 40 crore。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-21f1e0578f986661"
         }
@@ -392,6 +451,14 @@
           "source_content_hash": "0e886018284869b47fb4c39b39962118ee8afbecdf7b3d64149c95632696a073",
           "quote": "Girish Mathrubootham — Co-founder & Managing Partner; Manav Garg — Co-founder & Managing Partner.",
           "quote_hash": "01b71c40141b333fd274530f8608cde411f6386d8637f29f10292e74f2824600"
+        },
+        {
+          "source_id": "FISRC-67067103992ebfe0",
+          "source_url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+          "source_title": "Freshworks校友筹集5300万美元，以AI原生CRM挑战Salesforce和HubSpot",
+          "source_content_hash": "d28adbe2957be9222baa64bfec86d74c3d67baaf04baaeab71773c49ae877d89",
+          "quote": "The funding comprises seed and Series A rounds, led by Together Fund and Accel respectively, with participation from Premji Invest.",
+          "quote_hash": "c81fc8a90f6bf710a40892523ff7682e4c7a23001cc84c0395b5f31397c99946"
         },
         {
           "source_id": "FISRC-21f1e0578f986661",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-16",
-    "currentDate": "2026-11-16",
-    "eventCount": 4470,
+    "latestDataDate": "2026-11-17",
+    "currentDate": "2026-11-17",
+    "eventCount": 4474,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -22265,8 +22265,191 @@
   ],
   "events": [
     {
+      "id": "EV-03676f6d56167104",
+      "dataDate": "2026-11-17",
+      "date": "2026-11-17",
+      "updatedDate": "2026-11-17",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "OpenAI 与 Goodfire 达成 AI 安全合作，此前曾探讨超 50 亿美元收购",
+      "originalTitle": "",
+      "subject": "OpenAI 与 Goodfire 达成 AI 安全合作，此前曾探讨超 50 亿美元",
+      "action": "收购",
+      "object": "OpenAI 与 Goodfire 达成 AI 安全合作，此前曾探讨超 50 亿美元收购",
+      "metrics": [
+        "50 亿",
+        "333.92 亿",
+        "12.5 亿"
+      ],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/028/024.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
+      "id": "EV-e4e1d8cd826a402a",
+      "dataDate": "2026-11-17",
+      "date": "2026-11-16",
+      "updatedDate": "2026-11-16",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Freshworks校友筹集5300万美元，以AI原生CRM挑战Salesforce和HubSpot",
+      "originalTitle": "Freshworks alums raise $53M to take on Salesforce, HubSpot with AI-native CRM",
+      "subject": "Freshworks alums",
+      "action": "raise",
+      "object": "$53M to take on Salesforce, HubSpot with AI-native CRM",
+      "metrics": [
+        "$53 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-4fd40be531e05244",
+        "EN-84fe14dac01da952",
+        "EN-3ccbd9105a45d8fc"
+      ],
+      "entityNames": [
+        "Freshworks alums",
+        "Dreamteam",
+        "Salesforce"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-fa34f7342de666dd",
+      "dataDate": "2026-11-17",
+      "date": "2026-11-16",
+      "updatedDate": "2026-11-16",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "网络安全 AI 初创公司 Corma 约 3 个月内估值达 $1B",
+      "originalTitle": "Cybersecurity AI startup Corma reaches $1B valuation in about 3 months",
+      "subject": "Corma",
+      "action": "funding",
+      "object": "$125 million Series A round at a $1 billion valuation led by NEA",
+      "metrics": [
+        "$125 million",
+        "$1 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-63482586c768cea7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-63482586c768cea7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-63482586c768cea7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-63482586c768cea7"
+      ],
+      "entityNames": [
+        "Corma"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
+      "publisher": "techcrunch.com"
+    },
+    {
       "id": "EV-c7f02c82dcf2cea9",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-15",
       "updatedDate": "2026-11-15",
       "eventType": "funding",
@@ -22360,7 +22543,7 @@
     },
     {
       "id": "EV-1df5624821fce3f9",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-13",
       "updatedDate": "2026-11-13",
       "eventType": "funding",
@@ -22597,7 +22780,7 @@
     },
     {
       "id": "EV-a691420f309b3d29",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-13",
       "updatedDate": "2026-11-13",
       "eventType": "funding",
@@ -22623,7 +22806,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-b6b1f678d8e018c0"
+          "CL-ada94cfc189c41d8"
         ]
       },
       "missingFields": [
@@ -22991,7 +23174,7 @@
     },
     {
       "id": "EV-5d3da505edb7ef83",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "funding",
@@ -23004,7 +23187,7 @@
       "originalTitle": "",
       "subject": "Fractile",
       "action": "funding",
-      "object": "超 7.2 亿美元的 C 轮融资",
+      "object": "超7.2亿美元的C轮融资",
       "metrics": [
         "7.2 亿",
         "48.14 亿"
@@ -23411,7 +23594,7 @@
     },
     {
       "id": "EV-59048c1178252d9a",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "funding",
@@ -23457,7 +23640,7 @@
     },
     {
       "id": "EV-937b99126cc4df09",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "acquisition",
@@ -23552,7 +23735,7 @@
     },
     {
       "id": "EV-99e376ee2aa07168",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "funding",
@@ -23600,7 +23783,7 @@
     },
     {
       "id": "EV-c3fdd52a255c0770",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "funding",
@@ -334012,8 +334195,73 @@
       "publisher": "markets.ft.com"
     },
     {
+      "id": "EV-1c4939371a435f9f",
+      "dataDate": "2026-11-17",
+      "date": "2026-11-17",
+      "updatedDate": "2026-11-17",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "徐直军：分布式基站和 SingleRAN 两个开创性方案，确立了华为在移动通信领域全球领先地位",
+      "originalTitle": "",
+      "subject": "华为",
+      "action": "product_release",
+      "object": "SingleRAN 22.1 软件版本",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-4f6626201b1b1dd8"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-b81c8201acfc7639",
+        "EN-cf84fcbf801e652e"
+      ],
+      "entityNames": [
+        "Huawei",
+        "SingleRAN 22.1"
+      ],
+      "productName": "SingleRAN 22.1",
+      "products": [
+        {
+          "name": "SingleRAN 22.1",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Huawei"
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.ithome.com/1/028/004.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
       "id": "EV-6d4311291e4a0956",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "product_release",
@@ -334069,7 +334317,7 @@
     },
     {
       "id": "EV-be0ef85ed5f05179",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "product_release",
@@ -334151,7 +334399,7 @@
     },
     {
       "id": "EV-c75feed1a832645e",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "product_release",
@@ -480125,7 +480373,7 @@
     },
     {
       "id": "EV-d4e72cbad81641c6",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-13",
       "updatedDate": "2026-11-13",
       "eventType": "ipo_listing",
@@ -480225,7 +480473,7 @@
     },
     {
       "id": "EV-8bba88d507b8dc62",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "organization_people",
@@ -480482,7 +480730,7 @@
     },
     {
       "id": "EV-27d9a40d0446e770",
-      "dataDate": "2026-11-14",
+      "dataDate": "2026-11-17",
       "date": "2026-11-10",
       "updatedDate": "2026-11-10",
       "eventType": "ipo_listing",
@@ -480528,7 +480776,7 @@
     },
     {
       "id": "EV-4fc82b5985acc6c8",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-10",
       "updatedDate": "2026-11-10",
       "eventType": "ipo_listing",

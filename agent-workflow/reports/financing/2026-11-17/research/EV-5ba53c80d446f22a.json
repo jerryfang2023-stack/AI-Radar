@@ -1,0 +1,113 @@
+{
+  "event_id": "EV-5ba53c80d446f22a",
+  "company_name": "国际货币基金组织总裁警告",
+  "status": "blocked",
+  "problems": [
+    "deepseek_json_quality_failed:products_missing|product_form_id_missing|market_category_id_missing|market_subcategory_id_missing|market_subcategory_parent_mismatch:analysis.market_subcategory_id must use an exact key in {\"data\":\"infrastructure_compute\",\"development_deployment\":\"infrastructure_compute\",\"hardware_computing\":\"infrastructure_compute\",\"observability_evaluation\":\"infrastructure_compute\",\"customer_support\":\"enterprise_applications\",\"cyber_physical_security\":\"enterprise_applications\",\"hr\":\"enterprise_applications\",\"marketing\":\"enterprise_applications\",\"productivity_enterprise_workflows\":\"enterprise_applications\",\"sales\":\"enterprise_applications\",\"software_development_coding\":\"enterprise_applications\",\"financial_services\":\"industry_applications\",\"healthcare_life_sciences\":\"industry_applications\",\"industrials\":\"industry_applications\",\"legal\":\"industry_applications\",\"consumer_retail\":\"industry_applications\",\"education\":\"industry_applications\"}; the value is its required market_category_id. Do not copy industry_ids such as legal_services or use_case_ids such as legal_compliance into this field."
+  ],
+  "queries": [
+    "\"国际货币基金组织总裁警告\" 2026 融资 投资方",
+    "\"国际货币基金组织总裁警告\" 超过 1 万亿美元 融资 领投 跟投",
+    "\"国际货币基金组织总裁警告\" 官网 产品 服务",
+    "\"国际货币基金组织总裁警告\" 投资机构 融资用途",
+    "\"国际货币基金组织总裁警告\" 客户 创始人 总部"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"国际货币基金组织总裁警告\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"国际货币基金组织总裁警告\" 超过 1 万亿美元 融资 领投 跟投",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.aizws.net/news/detail/14493",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://m.cj.sina.cn/page/aHR0cDovL2ZpbmFuY2Uuc2luYS5jb20uY24vb2xkbmV3cy8yMDA4LTA5LTE4Lmh0bWw?from=redirect",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"国际货币基金组织总裁警告\" 官网 产品 服务",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "http://news.10jqka.com.cn/fortune_list/index_3.shtml",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.sina.cn/news/detail/5351572860307506.html",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"国际货币基金组织总裁警告\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://newsbot.justinyan.app/flow",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.aizws.net/news/detail/4673",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.pietingzhairubijiecenglou.shop/qkud/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://top-compute.com/news.html",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.zechuzhoumengshuncaobei.shop/m7gpn/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://1848.cc/",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "planner",
+      "query": "\"国际货币基金组织总裁警告\" 2026 本轮融资 公告",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"国际货币基金组织总裁警告\" 客户 创始人 总部",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}

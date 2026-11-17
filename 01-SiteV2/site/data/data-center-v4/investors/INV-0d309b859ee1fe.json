@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-16",
-    "currentDate": "2026-11-16",
-    "eventCount": 4470,
+    "latestDataDate": "2026-11-17",
+    "currentDate": "2026-11-17",
+    "eventCount": 4474,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,21 +63,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 17,
+    "current_round_count": 18,
     "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 12,
+    "portfolio_company_count": 13,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-11-07",
+    "latest_disclosed_at": "2026-11-16",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 5,
       "lead": 4,
-      "participant": 11
+      "participant": 12
     },
     "round_codes": [
       "seed",
@@ -102,6 +102,11 @@
         "entity_id": "EN-2f4436342c46decc",
         "canonical_entity_id": "",
         "name": "Cerebras Systems"
+      },
+      {
+        "entity_id": "EN-63482586c768cea7",
+        "canonical_entity_id": "",
+        "name": "Corma"
       },
       {
         "entity_id": "EN-2dc010636b9dce91",
@@ -155,6 +160,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-8f91f0b7e4df2617",
+        "funding_insight_id": "FI-0437f90099ed8828",
+        "event_ids": [
+          "EV-fa34f7342de666dd"
+        ],
+        "company_entity_id": "EN-63482586c768cea7",
+        "company_canonical_entity_id": "",
+        "company_name": "Corma",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$125 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 125000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.25 亿美元"
+        },
+        "announced_at": "2026-11-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-22718666b95dac32",
+            "source_url": "https://dealroom.co/news/173034-israel-s-corma-hits-1b-valuation-with-125m-series-a-three-months-after-l/",
+            "source_title": "Israel's Corma hits $1B valuation with $125M Series A, three months after launch",
+            "source_content_hash": "73f907a0c9e5cd24",
+            "quote": "NEA led the financing, with existing investors Sequoia Capital, Khosla Ventures, and Coatue participating.",
+            "quote_hash": "142ae296f2844290e1d4f9d595ca6d9d3405abeff6fa91ba27b6c60ad9b27272"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f9d8be6ab35b696b",
         "funding_insight_id": "FI-7183666b813db13e",
@@ -1012,6 +1057,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-22718666b95dac32",
+        "source_url": "https://dealroom.co/news/173034-israel-s-corma-hits-1b-valuation-with-125m-series-a-three-months-after-l/",
+        "source_title": "Israel's Corma hits $1B valuation with $125M Series A, three months after launch",
+        "source_content_hash": "73f907a0c9e5cd24",
+        "quote": "NEA led the financing, with existing investors Sequoia Capital, Khosla Ventures, and Coatue participating.",
+        "quote_hash": "142ae296f2844290e1d4f9d595ca6d9d3405abeff6fa91ba27b6c60ad9b27272"
+      },
+      {
         "source_id": "FISRC-3952ae60d488ad95",
         "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
         "source_title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
@@ -1243,16 +1296,16 @@
           "source_id": "coatue_home"
         },
         {
+          "description": "融资来源记录：Corma · A轮 · 2026-11-16 · 本轮参投 · $125 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-22718666b95dac32"
+        },
+        {
           "description": "融资来源记录：OpenAI · 轮次未披露 · 2026-11-07 · 本轮参投 · $11 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3952ae60d488ad95"
         },
         {
           "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮参投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f581afce52cf5bef"
-        },
-        {
-          "description": "融资来源记录：Miter · B轮 · 2026-09-30 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-8b2ed67c1554bee8"
         }
       ],
       "contacts": [
@@ -1302,6 +1355,14 @@
           "quote_hash": "7d269a691e28d24667fba1220aa52921d36a066250ef7a113f3e6bfee4795916"
         },
         {
+          "source_id": "FISRC-22718666b95dac32",
+          "source_url": "https://dealroom.co/news/173034-israel-s-corma-hits-1b-valuation-with-125m-series-a-three-months-after-l/",
+          "source_title": "Israel's Corma hits $1B valuation with $125M Series A, three months after launch",
+          "source_content_hash": "73f907a0c9e5cd24",
+          "quote": "NEA led the financing, with existing investors Sequoia Capital, Khosla Ventures, and Coatue participating.",
+          "quote_hash": "142ae296f2844290e1d4f9d595ca6d9d3405abeff6fa91ba27b6c60ad9b27272"
+        },
+        {
           "source_id": "FISRC-3952ae60d488ad95",
           "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
           "source_title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
@@ -1316,14 +1377,6 @@
           "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
           "quote": "Other investors in the round include Capital International, Fidelity Management & Research Company, T. Rowe Price, D1 Capital Partners, Greenoaks, ICONIQ, GIC, 8VC, 1789 Capital, Alpha Wave Global, Ontario Teachers’ Pension Plan, Coatue, D.E. Shaw, Definition Capital, FirstMark, General Catalyst, Generation Investment Management, Glade Brook Capital Partners, Khosla Ventures, Lightspeed Venture Partners, Pinegrove Opportunity Partners, Soma Capital, and Stripes.",
           "quote_hash": "b68105429220d6a5637ef68eab183ae87bacc1514a0160e45ce40e87c7f47248"
-        },
-        {
-          "source_id": "FISRC-8b2ed67c1554bee8",
-          "source_url": "https://www.prnewswire.com/news-releases/miter-the-ai-platform-for-construction-raises-40-million-for-the-built-world-302893778.html",
-          "source_title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
-          "source_content_hash": "c5cd447d1a48bf94d4477d990914f688e2af5271a7ec78a65a70efa9ff0cb39e",
-          "quote": "Existing investors Bessemer Venture Partners and Coatue also participated.",
-          "quote_hash": "8713cebee26bd9c6917c795b13a4f2d624f7dc4a428239f803c1d96a5380a3ee"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1334,7 +1387,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[18].role": {
+        "activities[19].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",

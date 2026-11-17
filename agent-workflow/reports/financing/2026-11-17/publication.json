@@ -1,0 +1,110 @@
+{
+  "verification": {
+    "version": "FINANCING-VERIFICATION-1",
+    "status": "completed",
+    "counts": {
+      "total": 967,
+      "verified": 0,
+      "excluded": 71,
+      "reviewed": 0,
+      "pending": 896
+    },
+    "ledger": "verification.json",
+    "deferred_research": []
+  },
+  "version": "FINANCING-MONITOR-1",
+  "date": "2026-11-17",
+  "status": "ready_for_review",
+  "counts": {
+    "leads": 462,
+    "accepted_originals": 66,
+    "pending": 219,
+    "excluded": 177
+  },
+  "next": "merge_pages_portal_and_live_parity",
+  "generated_at": "2026-11-17T01:55:53.271Z",
+  "responsible_recovery": {
+    "original_run": 43985492607,
+    "checkpoint_audit": "All 37 accepted files and 70 raw references verified. Accepted intake and collection unchanged.",
+    "excluded_non_company_source": {
+      "disposition": "lead_only",
+      "reviewed_by": "Codex responsible original-source review",
+      "reviewed_at": "2026-11-17T01:39:33.779623+00:00",
+      "source_url": "https://www.ithome.com/1/027/861.htm",
+      "content_hash": "cec3c5dc904d3cc9ee00c32ffc7dc2a944c37aae4d91cb952ce8a491ab79210c",
+      "source_quote": "IMF 估计，AI 企业之间的循环融资规模已经超过 1 万亿美元",
+      "quote_sha256": "d27072ad3d241417463f078f94526bd3b6b73a28cccb930b23d1b94c964bac4b",
+      "reason": "Sector-wide circular financing estimate and macroeconomic warning. No individual issuer, completed round or proceeds are announced; the IMF spokesperson is not a company receiving this trillion-dollar aggregate. Preserve the original and diagnostics as a lead, do not fabricate company products or relax the research gate."
+    },
+    "disclosure_scope": {
+      "date": "2026-11-17",
+      "reviewed_at": "2026-11-17T01:51:04.289264+00:00",
+      "no_entity_merge_approved": true,
+      "items": [
+        {
+          "event_id": "EV-fa34f7342de666dd",
+          "company": "Corma",
+          "url": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
+          "body_sha256": "3528120c072564505d4f49ec4976d8b041972f75c1675308747974fc6d799406",
+          "amount_usd": 125000000,
+          "round": "series_a",
+          "date": "2026-11-16",
+          "scope": "Company round proceeds; $1B valuation and $185M cumulative funding are separate metrics. Defensive cybersecurity AI is the business; official domain corma.ai.",
+          "quote": "Corma has raised a $125 million Series A round",
+          "quote_sha256": "2b212196e0bd4384c24a926bfc034fa69baf679cd1b068ba9dfe64c386dfe04c",
+          "responsible_review": "Source read; new disclosure scope checked. Does not replace formal review or approve entity merge.",
+          "participating_investors_source": {
+            "url": "https://dealroom.co/news/173034-israel-s-corma-hits-1b-valuation-with-125m-series-a-three-months-after-l/",
+            "body_sha256": "73f907a0c9e5cd2433f36e0406fa1c8f6af526731f8fdb1cf400c8ace37717f6",
+            "quote": "NEA led the financing, with existing investors Sequoia Capital, Khosla Ventures, and Coatue participating.",
+            "quote_sha256": "142ae296f2844290e1d4f9d595ca6d9d3405abeff6fa91ba27b6c60ad9b27272"
+          }
+        },
+        {
+          "event_id": "EV-e4e1d8cd826a402a",
+          "company": "Dreamteam",
+          "url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+          "body_sha256": "d28adbe2957be9222baa64bfec86d74c3d67baaf04baaeab71773c49ae877d89",
+          "amount_usd": 53000000,
+          "round": "multi_round",
+          "date": "2026-11-16",
+          "scope": "One combined disclosure covering seed and Series A; separate round sizes/dates and valuation undisclosed. No duplicate $53M A-round/seed rows. AI-native CRM company; Freshworks alums is a founder description.",
+          "quote": "The funding comprises seed and Series A rounds, led by Together Fund and Accel respectively, with participation from Premji Invest.",
+          "quote_sha256": "c81fc8a90f6bf710a40892523ff7682e4c7a23001cc84c0395b5f31397c99946",
+          "responsible_review": "Source read; new disclosure scope checked. Does not replace formal review or approve entity merge."
+        }
+      ]
+    },
+    "preservation": {
+      "status": "passed",
+      "base_main": "ead9da40c60c195713507c927670948a0c516087",
+      "subjects": 722,
+      "events": 773,
+      "old_subject_ids_preserved": true,
+      "old_event_rows_exactly_preserved": 771,
+      "removed_events": [],
+      "changed_historical_events": [],
+      "new_financing": [
+        {
+          "company": "Corma",
+          "id": "FI-0437f90099ed8828",
+          "event_id": "EV-fa34f7342de666dd",
+          "date": "2026-11-16",
+          "round": "A轮",
+          "amount": "$125 million"
+        },
+        {
+          "company": "Dreamteam",
+          "id": "FI-1034f9dbe9a2f438",
+          "event_id": "EV-e4e1d8cd826a402a",
+          "date": "2026-11-16",
+          "round": "多轮融资",
+          "amount": "$53 million"
+        }
+      ],
+      "verified_at": "2026-11-17T01:58:23.529153+00:00"
+    },
+    "formal_review_required": true,
+    "no_entity_merge_approved": true
+  }
+}

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-16",
-    "currentDate": "2026-11-16",
-    "eventCount": 4470,
+    "latestDataDate": "2026-11-17",
+    "currentDate": "2026-11-17",
+    "eventCount": 4474,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,8 +54,263 @@
   },
   "events": [
     {
+      "id": "EV-03676f6d56167104",
+      "dataDate": "2026-11-17",
+      "date": "2026-11-17",
+      "updatedDate": "2026-11-17",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "OpenAI 与 Goodfire 达成 AI 安全合作，此前曾探讨超 50 亿美元收购",
+      "originalTitle": "",
+      "subject": "OpenAI 与 Goodfire 达成 AI 安全合作，此前曾探讨超 50 亿美元",
+      "action": "收购",
+      "object": "OpenAI 与 Goodfire 达成 AI 安全合作，此前曾探讨超 50 亿美元收购",
+      "metrics": [
+        "50 亿",
+        "333.92 亿",
+        "12.5 亿"
+      ],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-8ba800459957bd99",
+          "subject": "OpenAI 与 Goodfire 达成 AI 安全合作，此前曾探讨超 50 亿美元",
+          "object": "与此同时，据《The Information》今日报道，OpenAI 此前曾探讨以超过 50 亿美元（IT之家注：现汇率约合 333.92 亿元人民币）收购 Goodfire 的方案，但双方最终未能达成收购协议。",
+          "quote": "与此同时，据《The Information》今日报道，OpenAI 此前曾探讨以超过 50 亿美元（IT之家注：现汇率约合 333.92 亿元人民币）收购 Goodfire 的方案，但双方最终未能达成收购协议。"
+        },
+        {
+          "id": "CL-f0f8da3319c1cd3f",
+          "subject": "OpenAI 与 Goodfire 达成 AI 安全合作，此前曾探讨超 50 亿美元",
+          "object": "知情人士称，OpenAI 一名高级管理人员曾提出以超过 50 亿美元收购 Goodfire，或采取其他形式的商业合作。",
+          "quote": "知情人士称，OpenAI 一名高级管理人员曾提出以超过 50 亿美元收购 Goodfire，或采取其他形式的商业合作。"
+        },
+        {
+          "id": "CL-315d75bf67e6bfb7",
+          "subject": "OpenAI 与 Goodfire 达成 AI 安全合作，此前曾探讨超 50 亿美元",
+          "object": "若按收购报价计算，其估值将超过 Goodfire 今年 2 月融资时公布的 12.5 亿美元估值的四倍。",
+          "quote": "若按收购报价计算，其估值将超过 Goodfire 今年 2 月融资时公布的 12.5 亿美元估值的四倍。"
+        },
+        {
+          "id": "CL-c511b7ea1c699508",
+          "subject": "OpenAI 与 Goodfire 达成 AI 安全合作，此前曾探讨超 50 亿美元",
+          "object": "IT之家 11 月 17 日消息，今日，OpenAI 宣布与 Apollo Research、METR、Transluce 和 Goodfire 达成合作，将启动首阶段嵌入式评估项目（Embedded Assessments），共同开展模型可解释性与安全评估工作。",
+          "quote": "IT之家 11 月 17 日消息，今日，OpenAI 宣布与 Apollo Research、METR、Transluce 和 Goodfire 达成合作，将启动首阶段嵌入式评估项目（Embedded Assessments），共同开展模型可解释性与安全评估工作。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-d087671148cddf4d",
+          "publisher": "www.ithome.com",
+          "url": "https://www.ithome.com/1/028/024.htm"
+        }
+      ],
+      "sourceUrl": "https://www.ithome.com/1/028/024.htm",
+      "publisher": "www.ithome.com",
+      "sourceExcerpt": "与此同时，据《The Information》今日报道，OpenAI 此前曾探讨以超过 50 亿美元（IT之家注：现汇率约合 333.92 亿元人民币）收购 Goodfire 的方案，但双方最终未能达成收购协议。"
+    },
+    {
+      "id": "EV-e4e1d8cd826a402a",
+      "dataDate": "2026-11-17",
+      "date": "2026-11-16",
+      "updatedDate": "2026-11-16",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Freshworks校友筹集5300万美元，以AI原生CRM挑战Salesforce和HubSpot",
+      "originalTitle": "Freshworks alums raise $53M to take on Salesforce, HubSpot with AI-native CRM",
+      "subject": "Freshworks alums",
+      "action": "raise",
+      "object": "$53M to take on Salesforce, HubSpot with AI-native CRM",
+      "metrics": [
+        "$53 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-4fd40be531e05244",
+        "EN-84fe14dac01da952",
+        "EN-3ccbd9105a45d8fc"
+      ],
+      "entityNames": [
+        "Freshworks alums",
+        "Dreamteam",
+        "Salesforce"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-01cde78770cf2f69",
+          "subject": "Freshworks alums",
+          "object": "$53M to take on Salesforce, HubSpot with AI-native CRM",
+          "quote": "Dreamteam, a startup founded by former Freshworks executives, has raised $53 million to challenge Salesforce and HubSpot with its AI-native CRM, betting that AI can finally shake up a market where established players have so far proved difficult to dislodge."
+        },
+        {
+          "id": "CL-d5408a945dcf82f2",
+          "subject": "Freshworks alums",
+          "object": "$53M to take on Salesforce, HubSpot with AI-native CRM",
+          "quote": "The funding comprises seed and Series A rounds, led by Together Fund and Accel respectively, with participation from Premji Invest."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-5cd4c240fb6e58d7",
+          "publisher": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+      "publisher": "techcrunch.com",
+      "sourceExcerpt": "Dreamteam, a startup founded by former Freshworks executives, has raised $53 million to challenge Salesforce and HubSpot with its AI-native CRM, betting that AI can finally shake up a market where established players have so far proved difficult to dislodge."
+    },
+    {
+      "id": "EV-fa34f7342de666dd",
+      "dataDate": "2026-11-17",
+      "date": "2026-11-16",
+      "updatedDate": "2026-11-16",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "网络安全 AI 初创公司 Corma 约 3 个月内估值达 $1B",
+      "originalTitle": "Cybersecurity AI startup Corma reaches $1B valuation in about 3 months",
+      "subject": "Corma",
+      "action": "funding",
+      "object": "$125 million Series A round at a $1 billion valuation led by NEA",
+      "metrics": [
+        "$125 million",
+        "$1 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-63482586c768cea7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-63482586c768cea7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-63482586c768cea7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-63482586c768cea7"
+      ],
+      "entityNames": [
+        "Corma"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-1c59c1e808b8a122",
+          "subject": "Corma",
+          "object": "$125 million Series A round at a $1 billion valuation led by NEA",
+          "quote": "AI cybersecurity startup Corma has raised a $125 million Series A round at a $1 billion valuation led by NEA, the company said."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7c99ec2a538beb73",
+          "publisher": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
+      "publisher": "techcrunch.com",
+      "sourceExcerpt": "AI cybersecurity startup Corma has raised a $125 million Series A round at a $1 billion valuation led by NEA, the company said."
+    },
+    {
       "id": "EV-c7f02c82dcf2cea9",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-15",
       "updatedDate": "2026-11-15",
       "eventType": "funding",
@@ -100,7 +355,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-5bbf0a8015da2f0e",
+          "id": "CL-7dfe61080d6faaf0",
           "subject": "Bharat Semi",
           "object": "$24 million seed funding",
           "quote": "Bharat Semi, an Indian semiconductor startup, has raised $24 million in seed funding to develop AI-enabled image sensors, as it seeks to win customers in the United States and elsewhere."
@@ -108,7 +363,7 @@
       ],
       "sources": [
         {
-          "id": "SA-0ab00fe9408d8111",
+          "id": "SA-0a025c7ac44c4b8d",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/"
         }
@@ -181,7 +436,7 @@
     },
     {
       "id": "EV-1df5624821fce3f9",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-13",
       "updatedDate": "2026-11-13",
       "eventType": "funding",
@@ -227,7 +482,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-9b11624cae12d0e1",
+          "id": "CL-8f8b8ebdd541fc7e",
           "subject": "LangChain",
           "object": "$300 million Series C at a $3 billion valuation",
           "quote": "Agent management startup LangChain has raised a $300 million Series C at a $3 billion valuation led by CapitalG, with participation from investors, including Singapore’s GIC, DFJ Growth, IVP, and Sapphire Ventures, the company announced on Friday."
@@ -235,7 +490,7 @@
       ],
       "sources": [
         {
-          "id": "SA-a499fed3c92cf799",
+          "id": "SA-8543bacc06df7d45",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/"
         }
@@ -504,7 +759,7 @@
     },
     {
       "id": "EV-a691420f309b3d29",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-13",
       "updatedDate": "2026-11-13",
       "eventType": "funding",
@@ -530,7 +785,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-b6b1f678d8e018c0"
+          "CL-ada94cfc189c41d8"
         ]
       },
       "missingFields": [
@@ -560,7 +815,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-b6b1f678d8e018c0",
+          "id": "CL-ada94cfc189c41d8",
           "subject": "AI智能体基础设施公司「以太之心」",
           "object": "投资界（ID：pedaily2012）消息，近日，以太之心宣布完成数千万种子轮融资。",
           "quote": "投资界（ID：pedaily2012）消息，近日，以太之心宣布完成数千万种子轮融资。"
@@ -1016,7 +1271,7 @@
     },
     {
       "id": "EV-5d3da505edb7ef83",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "funding",
@@ -1029,7 +1284,7 @@
       "originalTitle": "",
       "subject": "Fractile",
       "action": "funding",
-      "object": "超 7.2 亿美元的 C 轮融资",
+      "object": "超7.2亿美元的C轮融资",
       "metrics": [
         "7.2 亿",
         "48.14 亿"
@@ -1060,9 +1315,9 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-71684d5b333c9014",
+          "id": "CL-85ca0dc291bb1d49",
           "subject": "Fractile",
-          "object": "超 7.2 亿美元的 C 轮融资",
+          "object": "超7.2亿美元的C轮融资",
           "quote": "英国人工智能芯片初创企业 Fractile 当地时间昨日宣布完成了超 7.2 亿美元（IT之家注：现汇率约合 48.14 亿元人民币）的 C 轮融资。"
         }
       ],
@@ -1564,7 +1819,7 @@
     },
     {
       "id": "EV-59048c1178252d9a",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "funding",
@@ -1607,19 +1862,19 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-c1e04b37f85c8350",
+          "id": "CL-e73c0f92f1795a5e",
           "subject": "利普思",
           "object": "近亿元B轮",
           "quote": "投资界（ID：pedaily2012）11月11日消息，利普思上周完成近亿元B轮融资，新投资方为上海新微资本。"
         },
         {
-          "id": "CL-d89cc1880afe50c4",
+          "id": "CL-0d42b18128061dfc",
           "subject": "利普思",
           "object": "近亿元B轮",
           "quote": "这是继今年上半年完成PreB+轮融资后的第二轮融资，标志着利普思的发展正在全面加速。"
         },
         {
-          "id": "CL-0b9b0a4073eb1bf7",
+          "id": "CL-3a95c000c7217c0b",
           "subject": "利普思",
           "object": "近亿元B轮",
           "quote": "投融资功率半导体低空经济无锡利普思上海新微资本SiC模块"
@@ -1638,7 +1893,7 @@
     },
     {
       "id": "EV-937b99126cc4df09",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "acquisition",
@@ -1730,25 +1985,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-a3e38ebb889c9519",
+          "id": "CL-c540425809cd3641",
           "subject": "OpenAI",
           "object": "旅游初创公司 Odessia，探索 AI 旅行智能体业务",
           "quote": "IT之家 11 月 11 日消息，Odessia 创始人弗朗西斯 · 戴维森（Francis Davidson）今天宣布，OpenAI 已收购 AI 旅行智能体公司 Odessia，他本人也已经加入 OpenAI，帮助这家 AI 初创公司探索旅游业务发展方向。"
         },
         {
-          "id": "CL-a6fe263f59699639",
+          "id": "CL-14080d773da79dd4",
           "subject": "OpenAI",
           "object": "旅游初创公司 Odessia，探索 AI 旅行智能体业务",
           "quote": "OpenAI 收购 Odessia 还有另一个值得关注的原因：戴维森在旅游行业颇有名气。"
         },
         {
-          "id": "CL-87595b5f86f40b4f",
+          "id": "CL-0d92a5f9547fc65e",
           "subject": "OpenAI",
           "object": "旅游初创公司 Odessia，探索 AI 旅行智能体业务",
           "quote": "据悉，Odessia 成立仅一年，就拿到了红杉资本领投的 600 万美元（IT之家注：现汇率约合 4,011.9 万元人民币）种子前融资，并在大约 5 个月前推出了 AI 旅游智能体服务，帮助早期用户规划价值数百万美元的旅行行程。"
         },
         {
-          "id": "CL-b9f1f0d8c3e0fb85",
+          "id": "CL-d024dc644e6638f4",
           "subject": "OpenAI",
           "object": "旅游初创公司 Odessia，探索 AI 旅行智能体业务",
           "quote": "OpenAI 发言人证实了上述信息，并表示：“我们非常欢迎戴维森加入 OpenAI，他是一名经验丰富的从业者，曾创办多家帮助人们旅行的企业。"
@@ -1767,7 +2022,7 @@
     },
     {
       "id": "EV-99e376ee2aa07168",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "funding",
@@ -1812,13 +2067,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-252b741195c8596b",
+          "id": "CL-6b3a9b9c9b9d0fac",
           "subject": "AI原生芯片设计公司「泛函数」",
           "object": "投资界（ID：pedaily2012）11月11日消息，AI原生芯片设计公司泛函数近日完成近亿元天使轮融资，由上海未来产业基金领投，上海信投、上海科创集团、富海重产基金、徐汇资本、宽桥恒松、无限基金联合投资。",
           "quote": "投资界（ID：pedaily2012）11月11日消息，AI原生芯片设计公司泛函数近日完成近亿元天使轮融资，由上海未来产业基金领投，上海信投、上海科创集团、富海重产基金、徐汇资本、宽桥恒松、无限基金联合投资。"
         },
         {
-          "id": "CL-5e427f02e2ed3dfb",
+          "id": "CL-ca805c76c0c05203",
           "subject": "AI原生芯片设计公司「泛函数」",
           "object": "自2026年3月成立以来，泛函数在短短7个月内已经完成多轮融资。",
           "quote": "自2026年3月成立以来，泛函数在短短7个月内已经完成多轮融资。"
@@ -1837,7 +2092,7 @@
     },
     {
       "id": "EV-c3fdd52a255c0770",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-11",
       "updatedDate": "2026-11-11",
       "eventType": "funding",
@@ -1880,7 +2135,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-5932f0459393e4ed",
+          "id": "CL-931f9b433cc4207d",
           "subject": "Fractile",
           "object": "$720 million Series C",
           "quote": "Fractile, a British startup developing AI chips, has raised a $720 million Series C backed by Britain’s Sovereign AI Fund"
@@ -1888,7 +2143,7 @@
       ],
       "sources": [
         {
-          "id": "SA-3f051c1e24611e81",
+          "id": "SA-f2d3730cc9cabd42",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/"
         }
@@ -365433,8 +365688,89 @@
       "sourceExcerpt": "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption"
     },
     {
+      "id": "EV-1c4939371a435f9f",
+      "dataDate": "2026-11-17",
+      "date": "2026-11-17",
+      "updatedDate": "2026-11-17",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "徐直军：分布式基站和 SingleRAN 两个开创性方案，确立了华为在移动通信领域全球领先地位",
+      "originalTitle": "",
+      "subject": "华为",
+      "action": "product_release",
+      "object": "SingleRAN 22.1 软件版本",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-4f6626201b1b1dd8"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-b81c8201acfc7639",
+        "EN-cf84fcbf801e652e"
+      ],
+      "entityNames": [
+        "Huawei",
+        "SingleRAN 22.1"
+      ],
+      "productName": "SingleRAN 22.1",
+      "products": [
+        {
+          "name": "SingleRAN 22.1",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Huawei"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-4f6626201b1b1dd8",
+          "subject": "华为",
+          "object": "SingleRAN 22.1 软件版本",
+          "quote": "今年 8 月，华为还发布移动 AI 时代首个商用版本 —— SingleRAN 22.1 软件版本"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-ea5d45d24bf47cea",
+          "publisher": "www.ithome.com",
+          "url": "https://www.ithome.com/1/028/004.htm"
+        }
+      ],
+      "sourceUrl": "https://www.ithome.com/1/028/004.htm",
+      "publisher": "www.ithome.com",
+      "sourceExcerpt": "今年 8 月，华为还发布移动 AI 时代首个商用版本 —— SingleRAN 22.1 软件版本"
+    },
+    {
       "id": "EV-6d4311291e4a0956",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "product_release",
@@ -365487,25 +365823,25 @@
       ],
       "claims": [
         {
-          "id": "CL-e4b174e4f631abcc",
+          "id": "CL-05af20725edcae6a",
           "subject": "Jensen Huang’s exit puts Nvidia’s support for",
           "object": "in question",
           "quote": "The open source community just lost one of its strongest advocates."
         },
         {
-          "id": "CL-ad3912b2683abfd3",
+          "id": "CL-ef42461a9df55585",
           "subject": "Jensen Huang’s exit puts Nvidia’s support for",
           "object": "in question",
           "quote": "Huang has been a staunch supporter of open source AI, framing the ecosystem as good for safety, innovation, diffusion, and sovereignty."
         },
         {
-          "id": "CL-a15d816ca4dd10a7",
+          "id": "CL-ffe260dd8db81f6d",
           "subject": "Jensen Huang’s exit puts Nvidia’s support for",
           "object": "in question",
           "quote": "And as frontier AI labs increasingly move to reduce their reliance on Nvidia and build their own chips, supporting open source is also a good way for the company to diversify its customer base by selling chips to nation-states, enterprises, and any organization that wants to own its own models."
         },
         {
-          "id": "CL-2f3297d4203fd70c",
+          "id": "CL-384400a8e64a2a5c",
           "subject": "Jensen Huang’s exit puts Nvidia’s support for",
           "object": "in question",
           "quote": "Huang’s departure also comes as Nvidia has yet to finalize a deal to acquire open source platform Hugging Face for $13 billion."
@@ -365513,7 +365849,7 @@
       ],
       "sources": [
         {
-          "id": "SA-a3282ba15169d622",
+          "id": "SA-c6e81536b9f8fbd8",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/"
         }
@@ -365524,7 +365860,7 @@
     },
     {
       "id": "EV-be0ef85ed5f05179",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "product_release",
@@ -365603,25 +365939,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-be64ef2d3b8aff6d",
+          "id": "CL-c8570b29c828351c",
           "subject": "undisclosed_subject",
           "object": "全球最大 AI 聚合平台 OpenRouter 正式并入 Stripe：将优化词元路由和用量",
           "quote": "IT之家 11 月 12 日消息，Stripe 昨日（11 月 11 日）发布博文，宣布全球最大 AI 模型 API 聚合平台 OpenRouter 已正式并入旗下，并共同携手帮助企业探索新的商业模式，并优化词元（Token）路由和用量。"
         },
         {
-          "id": "CL-f1a7c5e6bfacf773",
+          "id": "CL-5eb4bedb233ae4f5",
           "subject": "undisclosed_subject",
           "object": "全球最大 AI 聚合平台 OpenRouter 正式并入 Stripe：将优化词元路由和用量",
           "quote": "Stripe 对 AI 领域的布局，正在进一步延伸至企业如何选择和使用模型。"
         },
         {
-          "id": "CL-c06d949d7b1f26ae",
+          "id": "CL-abb8b13d05757147",
           "subject": "undisclosed_subject",
           "object": "全球最大 AI 聚合平台 OpenRouter 正式并入 Stripe：将优化词元路由和用量",
           "quote": "双方提出的方向不仅包括探索新模型，也涉及如何分配模型调用、优化词元使用，让企业更有效地使用 AI 资源。"
         },
         {
-          "id": "CL-0dc73b20d866b559",
+          "id": "CL-234929d89938cb46",
           "subject": "undisclosed_subject",
           "object": "全球最大 AI 聚合平台 OpenRouter 正式并入 Stripe：将优化词元路由和用量",
           "quote": "交易金额方面，《纽约时报》今年 8 月报道称，援引一位了解协议的匿名人士透露，Stripe 收购 OpenRouter 的价格为 75 亿美元。"
@@ -365640,7 +365976,7 @@
     },
     {
       "id": "EV-c75feed1a832645e",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "product_release",
@@ -365717,19 +366053,19 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-4a7fe885ac164f43",
+          "id": "CL-6d120c2193eca81f",
           "subject": "Nothing",
           "object": "Nothing CEO 裴宇展示公司首款 AI 设备，预计采用无屏幕设计",
           "quote": "裴宇此前预告，Nothing 的首款 AI 原生产品将于下月（2026 年 12 月）发布。"
         },
         {
-          "id": "CL-a7b3624042cd130d",
+          "id": "CL-8f448687fe7a0d43",
           "subject": "Nothing",
           "object": "Nothing CEO 裴宇展示公司首款 AI 设备，预计采用无屏幕设计",
           "quote": "“它是一种工具，但却带有定义‘Nothing’产品的个性和用心。"
         },
         {
-          "id": "CL-5386b85dbc82b4ce",
+          "id": "CL-bea0a156fe9a8c37",
           "subject": "Nothing",
           "object": "Nothing CEO 裴宇展示公司首款 AI 设备，预计采用无屏幕设计",
           "quote": "IT之家 11 月 12 日消息，Nothing CEO 裴宇前天在 X 平台发文，展示公司首款 AI 设备的外观。"
@@ -558135,7 +558471,7 @@
     },
     {
       "id": "EV-d4e72cbad81641c6",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-13",
       "updatedDate": "2026-11-13",
       "eventType": "ipo_listing",
@@ -558183,25 +558519,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-b2ea3b8c37486f99",
+          "id": "CL-da27539275746a8f",
           "subject": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大",
           "object": "”添变数",
           "quote": "IT之家 11 月 13 日消息，当地时间 12 日，据《财富》杂志报道，AI 初创企业 Anthropic 即将迎来史上最受瞩目的 IPO 之一。"
         },
         {
-          "id": "CL-6269ae0613f9131d",
+          "id": "CL-8478f4c0452fb45d",
           "subject": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大",
           "object": "”添变数",
           "quote": "此次 IPO 原本就被视为检验投资者对 AI 投资热情的重要考验。"
         },
         {
-          "id": "CL-4c2dcdec266e99be",
+          "id": "CL-fe794502b6c733f6",
           "subject": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大",
           "object": "”添变数",
           "quote": "英伟达不仅是 Anthropic 的重要合作伙伴，也深度参与此次 IPO。"
         },
         {
-          "id": "CL-d78fe309ee5466b4",
+          "id": "CL-085ad946c90263d5",
           "subject": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大",
           "object": "”添变数",
           "quote": "Anthropic 提交的文件显示，英伟达同意在与 IPO 同步进行的 260 亿美元私募配售中认购约 100 亿美元股份。"
@@ -558291,7 +558627,7 @@
     },
     {
       "id": "EV-8bba88d507b8dc62",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "organization_people",
@@ -558332,16 +558668,16 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-49e68d9811c8629e",
+          "id": "CL-07f8a14507f710d2",
           "subject": "黄仁勋",
           "object": "英伟达 CEO",
           "quote": "黄仁勋因婚外情丑闻持续发酵而辞去英伟达 CEO"
         },
         {
-          "id": "CL-c4d8f8e47bb5ebe8",
+          "id": "CL-b438ab16cb610252",
           "subject": "科莱特 · 克雷斯",
           "object": "英伟达暂任 CEO",
-          "quote": "英伟达宣布，CFO 科莱特 · 克雷斯将暂任 CEO，公司同时寻找正式接班人。"
+          "quote": "CFO 科莱特 · 克雷斯将暂任 CEO，公司同时寻找正式接班人"
         }
       ],
       "sources": [
@@ -558654,7 +558990,7 @@
     },
     {
       "id": "EV-27d9a40d0446e770",
-      "dataDate": "2026-11-14",
+      "dataDate": "2026-11-17",
       "date": "2026-11-10",
       "updatedDate": "2026-11-10",
       "eventType": "ipo_listing",
@@ -558697,21 +559033,15 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-b340e3fb6603d469",
+          "id": "CL-998679f5c4ee9a13",
           "subject": "Anthropic",
           "object": "planned IPO and concurrent private placement seeking up to $88.5 billion",
           "quote": "Anthropic is seeking to secure up to $88.5 billion in its planned IPO and a concurrent private placement, potentially making it the largest-ever fundraise tied to a public market debut."
-        },
-        {
-          "id": "CL-8986c45989d34042",
-          "subject": "Anthropic",
-          "object": "updated S-1 filing for upcoming public offering",
-          "quote": "On Tuesday, the AI giant submitted an updated S-1 filing for its upcoming public offering, unveiling new details including a proposed share price range offering size."
         }
       ],
       "sources": [
         {
-          "id": "SA-80c86f187e7aea96",
+          "id": "SA-30f79819337ce8cf",
           "publisher": "news.crunchbase.com",
           "url": "https://news.crunchbase.com/ai/anthropic-record-ipo-ant-public-market-debut-spcx/"
         }
@@ -558722,7 +559052,7 @@
     },
     {
       "id": "EV-4fc82b5985acc6c8",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-17",
       "date": "2026-11-10",
       "updatedDate": "2026-11-10",
       "eventType": "ipo_listing",
@@ -558781,25 +559111,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-2dee59aa3d090915",
+          "id": "CL-846ddf5f0d2f340f",
           "subject": "Anthropic sets",
           "object": "price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
           "quote": "Anthropic intends to push ahead with its IPO despite shakier markets and the broader pullback from AI investing."
         },
         {
-          "id": "CL-0369f757dc1afc27",
+          "id": "CL-eff1291438c9ea1b",
           "subject": "Anthropic sets",
           "object": "price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
           "quote": "The Claude-maker said in an updated IPO filing on Tuesday that it would be offering a total of 825 million Class A shares at an estimated price range of $70 to $78 per share."
         },
         {
-          "id": "CL-f4ce6fb9898b10b7",
+          "id": "CL-00035458a47c38d5",
           "subject": "Anthropic sets",
           "object": "price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
           "quote": "Separately, Anthropic said it had struck a deal to privately sell $26 billion of non-voting Class N stock at the IPO price to AMD, Broadcom, Google, Micron, Microsoft, Nvidia, and TSMC. Google and Nvidia are investing $10 billion apiece."
         },
         {
-          "id": "CL-111690d70f190797",
+          "id": "CL-35d22170cefe2d40",
           "subject": "Anthropic sets",
           "object": "price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
           "quote": "All up, Anthropic estimates net proceeds to reach somewhere between $84.6 billion and $93.7 billion (the latter if the IPO underwriters exercise their option to buy additional shares)."
@@ -558807,7 +559137,7 @@
       ],
       "sources": [
         {
-          "id": "SA-25c4350420ab2650",
+          "id": "SA-51d78032dfe7fc27",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/"
         }
