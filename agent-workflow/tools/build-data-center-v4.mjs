@@ -333,6 +333,17 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
       && /\b(?:venture capital|VC|investment)\s+(?:firm|fund|manager)\b[^.!?]{0,100}\b(?:has\s+)?(?:closed|raised|secured|launched)\b[^.!?]{0,100}\bfund\b/iu.test(sourceLead)) {
     return { accepted: false, reason: "investment_fund_not_company_financing_source" };
   }
+  // An estimated circular-financing total across companies is a sector
+  // statistic. Require the aggregate title and an explicit cross-company
+  // estimate, while retaining independently announced company rounds.
+  const circularScaleTitle = /循环(?:融资|投资)(?:总?规模|总额)|\bcircular\s+(?:financing|funding|investment)\b/iu.test(title);
+  const crossCompanyEstimate = /(?:估计|估算|测算|统计)[^。！？!?\n]{0,100}(?:企业|公司)之间[^。！？!?\n]{0,20}循环(?:融资|投资)/u.test(sourceLead)
+    || (/\b(?:estimates?|estimated|calculates?|calculated)\b[^.!?\n]{0,180}\bcircular\s+(?:financing|funding|investment)\b/iu.test(sourceLead)
+      && /\b(?:among|between)\s+(?:AI|artificial intelligence)\s+companies\b/iu.test(sourceLead));
+  const explicitCompanyRaise = /(?:完成|获得|获|筹集|募集).{0,40}融资|\b(?:raises?|raised|secures?|secured|closes?|closed)\b/iu.test(title);
+  if (options.eventType === "funding" && circularScaleTitle && crossCompanyEstimate && !explicitCompanyRaise) {
+    return { accepted: false, reason: "market_overview_not_company_funding_source" };
+  }
   // Portfolio activity counts describe an investor's deployments, not its raise.
   // Require both the report title and a counted investing span in the lead;
   // an explicit company financing headline remains independently eligible.
