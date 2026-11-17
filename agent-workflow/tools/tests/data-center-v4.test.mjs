@@ -3256,3 +3256,18 @@ test('investor activity reports cannot turn portfolio rounds into financing of t
   }
   assert.equal(eventSourceEligibility({published_at:'2026-11-13',clean_text:'Acme has raised $12 million to expand its AI startup investment analytics product.'},{source_url:'https://example.com/acme'},'Acme startup funding deals platform secures $12 million','2026-11-16',{eventType:'funding'}).accepted,true);
 });
+
+
+test('sector-wide circular-financing estimates are not an issuer funding round', () => {
+  const body='研究机构估计，AI 企业之间的循环融资规模已经超过1万亿美元。这是行业投资与采购回流的整体规模，不是机构融资公告。';
+  const cases=[['研究机构警告：AI行业循环融资规模超1万亿美元',body,'zh'],['Report: AI circular financing totals $1 trillion','The bureau estimates circular financing among AI companies exceeds $1 trillion. This is a sector-wide estimate, not a company raise.','en']];
+  for(const [title,lead,language] of cases) {
+    const source=entry('sector-circular-estimate',title,lead,{published_at:'2026-11-16',language});
+    const decision=eventSourceEligibility(source.raw,{source_url:source.raw.original_url},title,'2026-11-17',{eventType:'funding'});
+    assert.equal(decision.reason,'market_overview_not_company_funding_source',title);
+    const b=buildBundle([source],taxonomy,'2026-11-17','2026-11-17T00:00:00Z');
+    assert.equal(b.canonical_events.filter(e=>e.event_type==='funding').length,0,title);
+  }
+  for(const title of ['循环科技完成1000万元A轮融资','循环融资科技完成1000万元融资','Acme raises $10 million for circular financing analytics'])
+    assert.equal(eventSourceEligibility({published_at:'2026-11-16',clean_text:body},{source_url:'https://example.com/company'},title,'2026-11-17',{eventType:'funding'}).accepted,true,title);
+});
