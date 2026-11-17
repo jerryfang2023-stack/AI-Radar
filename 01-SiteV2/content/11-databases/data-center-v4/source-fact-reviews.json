@@ -1,6 +1,6 @@
 {
   "schema_version": "SOURCE-FACT-REVIEW-1",
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "sources": {
     "SA-2cd686a2fdc2bbd4": {
       "disposition": "lead_only",
@@ -41,6 +41,16 @@
       "source_quote": "OpenAI’s Series G, which closed at $122 billion in March",
       "quote_sha256": "3b093d7e3682937f70c2e41f7a2270b2b8942d7bd41dd8b5034903af4b2bfc74",
       "reason": "Investment-activity overview of Nvidia and NVentures. The quoted 122B Series G belongs to OpenAI and closed in March, not Nvidia and not the November report date. Retain this source as a lead; do not synthesize a new financing event for the investor. Existing published Nvidia and OpenAI history remains unchanged."
+    },
+    "SA-8fff55f7dce98121": {
+      "disposition": "lead_only",
+      "reviewed_by": "Codex responsible original-source review",
+      "reviewed_at": "2026-11-17T01:39:33.779623+00:00",
+      "source_url": "https://www.ithome.com/1/027/861.htm",
+      "content_hash": "cec3c5dc904d3cc9ee00c32ffc7dc2a944c37aae4d91cb952ce8a491ab79210c",
+      "source_quote": "IMF 估计，AI 企业之间的循环融资规模已经超过 1 万亿美元",
+      "quote_sha256": "d27072ad3d241417463f078f94526bd3b6b73a28cccb930b23d1b94c964bac4b",
+      "reason": "Sector-wide circular financing estimate and macroeconomic warning. No individual issuer, completed round or proceeds are announced; the IMF spokesperson is not a company receiving this trillion-dollar aggregate. Preserve the original and diagnostics as a lead, do not fabricate company products or relax the research gate."
     }
   }
 }

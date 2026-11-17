@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-16",
-    "currentDate": "2026-11-16",
-    "eventCount": 4470,
+    "latestDataDate": "2026-11-17",
+    "currentDate": "2026-11-17",
+    "eventCount": 4474,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 28,
+    "current_round_count": 29,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 26,
+    "portfolio_company_count": 27,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-03-12",
-    "latest_disclosed_at": "2026-11-11",
+    "latest_disclosed_at": "2026-11-16",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 4,
-      "lead": 13,
+      "lead": 14,
       "participant": 13
     },
     "round_codes": [
@@ -129,6 +129,11 @@
         "entity_id": "EN-4b6cef91ffb05303",
         "canonical_entity_id": "",
         "name": "Cognition AI"
+      },
+      {
+        "entity_id": "EN-84fe14dac01da952",
+        "canonical_entity_id": "",
+        "name": "Dreamteam"
       },
       {
         "entity_id": "EN-8c15a763882d4862",
@@ -222,6 +227,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-3204211b20521b0c",
+        "funding_insight_id": "FI-1034f9dbe9a2f438",
+        "event_ids": [
+          "EV-e4e1d8cd826a402a"
+        ],
+        "company_entity_id": "EN-84fe14dac01da952",
+        "company_canonical_entity_id": "",
+        "company_name": "Dreamteam",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "种子轮和A轮",
+        "amount_original": "$53 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 53000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5300 万美元"
+        },
+        "announced_at": "2026-11-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-67067103992ebfe0",
+            "source_url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+            "source_title": "Freshworks校友筹集5300万美元，以AI原生CRM挑战Salesforce和HubSpot",
+            "source_content_hash": "d28adbe2957be9222baa64bfec86d74c3d67baaf04baaeab71773c49ae877d89",
+            "quote": "The funding comprises seed and Series A rounds, led by Together Fund and Accel respectively, with participation from Premji Invest.",
+            "quote_hash": "c81fc8a90f6bf710a40892523ff7682e4c7a23001cc84c0395b5f31397c99946"
+          }
+        ]
+      },
       {
         "activity_id": "IA-43736ab5a59285ba",
         "funding_insight_id": "FI-70d164861fee0af8",
@@ -1486,6 +1531,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-67067103992ebfe0",
+        "source_url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+        "source_title": "Freshworks校友筹集5300万美元，以AI原生CRM挑战Salesforce和HubSpot",
+        "source_content_hash": "d28adbe2957be9222baa64bfec86d74c3d67baaf04baaeab71773c49ae877d89",
+        "quote": "The funding comprises seed and Series A rounds, led by Together Fund and Accel respectively, with participation from Premji Invest.",
+        "quote_hash": "c81fc8a90f6bf710a40892523ff7682e4c7a23001cc84c0395b5f31397c99946"
+      },
+      {
         "source_id": "FISRC-59233bfbeb9628bf",
         "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
         "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
@@ -1784,16 +1837,16 @@
           "source_id": "accel_europe"
         },
         {
+          "description": "融资来源记录：Dreamteam · 多轮融资 · 2026-11-16 · 本轮领投 · $53 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-67067103992ebfe0"
+        },
+        {
           "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮参投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-59233bfbeb9628bf"
         },
         {
           "description": "融资来源记录：Simplismart · B轮 · 2026-10-27 · 本轮参投 · $14 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1a26335ff9013735"
-        },
-        {
-          "description": "融资来源记录：Arda · 轮次未披露 · 2026-10-21 · 本轮领投 · 2.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-78b2fb4f563409a9"
         }
       ],
       "contacts": [
@@ -1866,6 +1919,14 @@
           "quote_hash": "596b1ee652763f3ce41bb638fabd7df2a7d7c189a53631ad6dd499bf0d48e2bc"
         },
         {
+          "source_id": "FISRC-67067103992ebfe0",
+          "source_url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+          "source_title": "Freshworks校友筹集5300万美元，以AI原生CRM挑战Salesforce和HubSpot",
+          "source_content_hash": "d28adbe2957be9222baa64bfec86d74c3d67baaf04baaeab71773c49ae877d89",
+          "quote": "The funding comprises seed and Series A rounds, led by Together Fund and Accel respectively, with participation from Premji Invest.",
+          "quote_hash": "c81fc8a90f6bf710a40892523ff7682e4c7a23001cc84c0395b5f31397c99946"
+        },
+        {
           "source_id": "FISRC-59233bfbeb9628bf",
           "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
           "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
@@ -1880,14 +1941,6 @@
           "source_content_hash": "404d88ff840f005ca2cfc6b5710f57793c704b4d1f839e3ffb3dbdf063966c6f",
           "quote": "除英伟达外，Accel、Shastra VC 和 Micromax 也参与了投资",
           "quote_hash": "69eb650b766e80b83c31eff16d249ddc4375bffb539144aed60dd9c8599b3539"
-        },
-        {
-          "source_id": "FISRC-78b2fb4f563409a9",
-          "source_url": "https://es.tradingview.com/news/panews:dcdaf9329acdf:0/",
-          "source_title": "前OpenAI研究主管Bob McGrew创办的AI制造软件公司Arda完成2.3亿美元融资，估值15亿美元",
-          "source_content_hash": "80d6052be0efbbc20b4e703d264e0a9420c65f5cbac35663185e475d8f9e0b0c",
-          "quote": "本轮由Altimeter Capital、Accel和Khosla Ventures领投",
-          "quote_hash": "0d5e7d69122998b870fac5ec7fde8c424eaccc4cc8fe9b5678925917f3e6df36"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1898,7 +1951,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[29].role": {
+        "activities[30].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

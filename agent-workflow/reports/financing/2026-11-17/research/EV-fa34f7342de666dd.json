@@ -1,0 +1,575 @@
+{
+  "event_id": "EV-fa34f7342de666dd",
+  "company_name": "Corma",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-ab27487322b3f696",
+    "triggered_by_event_id": "EV-fa34f7342de666dd",
+    "as_of_date": "2026-11-17",
+    "company": {
+      "entity_id": "EN-63482586c768cea7",
+      "name": "Corma",
+      "full_name": "Corma",
+      "website": "https://www.corma.ai/",
+      "summary": "Corma 是一家网络安全 AI 初创公司，训练面向防御性网络安全的基座模型，并以“AI 安全劳动力”的形式与安全团队协同工作。",
+      "headquarters": "",
+      "founders": [
+        {
+          "name": "Alon Pluda",
+          "role": "联合创始人兼首席执行官",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-22718666b95dac32",
+              "quote": "co-founder and chief executive officer Alon Pluda",
+              "source_content_hash": "73f907a0c9e5cd24",
+              "quote_hash": "a022f5b65e22b8aea6ea07fb44cf158338d34884c7f788e30f6d73c843c60c73"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "team_size": {
+        "value": "约25人",
+        "observed_at": "2026-11-16",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-22718666b95dac32",
+            "quote": "Corma employs about 25 people.",
+            "source_content_hash": "73f907a0c9e5cd24",
+            "quote_hash": "d2cf3517cfc6ac88802effa74c78d3b25d00872c0b8d63c045206bd2c7f2ff8b"
+          }
+        ]
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-24baf68da2c147d6",
+          "quote": "Corma offers AI models and agents trained for cybersecurity defense.",
+          "source_content_hash": "3528120c072564505d4f49ec4976d8b041972f75c1675308747974fc6d799406",
+          "quote_hash": "9542a3cb54fc53a87b87b429bd1bd39c934d6db0715c3bbc12a1310ab3ca7dcc"
+        },
+        {
+          "source_id": "FISRC-22718666b95dac32",
+          "quote": "Corma is building an autonomous AI workforce for defensive cybersecurity, powered by a proprietary foundation model.",
+          "source_content_hash": "73f907a0c9e5cd24",
+          "quote_hash": "1b77ea3cd23f728c02fc5a646d7c4ffdf74cc8eb598e00073b0beed7c9af5d2c"
+        }
+      ],
+      "application_entity_id": "EN-63482586c768cea7",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "A轮",
+      "amount": "$125 million",
+      "total_raised": "$185 million",
+      "announced_at": "2026-11-16",
+      "investor_disclosure_status": "disclosed",
+      "investors": [
+        {
+          "name": "NEA",
+          "role": "本轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-24baf68da2c147d6",
+              "quote": "has raised a $125 million Series A round at a $1 billion valuation led by NEA",
+              "source_content_hash": "3528120c072564505d4f49ec4976d8b041972f75c1675308747974fc6d799406",
+              "quote_hash": "78d4dc7c9af5c75d5cdc66fa6d7b783749fabee21e3cc7509dc4ea3472e088f0"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Sequoia Capital",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-22718666b95dac32",
+              "quote": "NEA led the financing, with existing investors Sequoia Capital, Khosla Ventures, and Coatue participating.",
+              "source_content_hash": "73f907a0c9e5cd24",
+              "quote_hash": "142ae296f2844290e1d4f9d595ca6d9d3405abeff6fa91ba27b6c60ad9b27272"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Khosla Ventures",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-22718666b95dac32",
+              "quote": "NEA led the financing, with existing investors Sequoia Capital, Khosla Ventures, and Coatue participating.",
+              "source_content_hash": "73f907a0c9e5cd24",
+              "quote_hash": "142ae296f2844290e1d4f9d595ca6d9d3405abeff6fa91ba27b6c60ad9b27272"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Coatue",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-22718666b95dac32",
+              "quote": "NEA led the financing, with existing investors Sequoia Capital, Khosla Ventures, and Coatue participating.",
+              "source_content_hash": "73f907a0c9e5cd24",
+              "quote_hash": "142ae296f2844290e1d4f9d595ca6d9d3405abeff6fa91ba27b6c60ad9b27272"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "other_round_investors": [],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-24baf68da2c147d6",
+          "quote": "AI cybersecurity startup Corma has raised a $125 million Series A round at a $1 billion valuation led by NEA, the company said.",
+          "source_content_hash": "3528120c072564505d4f49ec4976d8b041972f75c1675308747974fc6d799406",
+          "quote_hash": "6490980568bbb01bd9110a8919866dcbcfdaa94956a62e1ae2fd64724fc703f7"
+        },
+        {
+          "source_id": "FISRC-24baf68da2c147d6",
+          "quote": "has raised a $125 million Series A round at a $1 billion valuation led by NEA",
+          "source_content_hash": "3528120c072564505d4f49ec4976d8b041972f75c1675308747974fc6d799406",
+          "quote_hash": "78d4dc7c9af5c75d5cdc66fa6d7b783749fabee21e3cc7509dc4ea3472e088f0"
+        },
+        {
+          "source_id": "FISRC-22718666b95dac32",
+          "quote": "bringing total funding to $185 million",
+          "source_content_hash": "73f907a0c9e5cd24",
+          "quote_hash": "853be51e0ea08e85c8b316b1a5d25dc363c84cacfa4f7ce76458cae37c018e28"
+        }
+      ],
+      "round_code": "series_a",
+      "round_original": "A轮",
+      "amount_original": "$125 million",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 125000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "1.25 亿美元"
+      },
+      "total_raised_original": "$185 million",
+      "total_raised_normalized": {
+        "currency": "USD",
+        "value": 185000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "1.85 亿美元"
+      },
+      "risk_markers": [],
+      "disclosures": [
+        {
+          "event_id": "EV-fa34f7342de666dd",
+          "round_original": "A轮",
+          "amount": "$125 million",
+          "announced_at": "2026-11-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-24baf68da2c147d6",
+              "quote": "AI cybersecurity startup Corma has raised a $125 million Series A round at a $1 billion valuation led by NEA, the company said.",
+              "source_content_hash": "3528120c072564505d4f49ec4976d8b041972f75c1675308747974fc6d799406",
+              "quote_hash": "6490980568bbb01bd9110a8919866dcbcfdaa94956a62e1ae2fd64724fc703f7"
+            },
+            {
+              "source_id": "FISRC-24baf68da2c147d6",
+              "quote": "has raised a $125 million Series A round at a $1 billion valuation led by NEA",
+              "source_content_hash": "3528120c072564505d4f49ec4976d8b041972f75c1675308747974fc6d799406",
+              "quote_hash": "78d4dc7c9af5c75d5cdc66fa6d7b783749fabee21e3cc7509dc4ea3472e088f0"
+            },
+            {
+              "source_id": "FISRC-22718666b95dac32",
+              "quote": "bringing total funding to $185 million",
+              "source_content_hash": "73f907a0c9e5cd24",
+              "quote_hash": "853be51e0ea08e85c8b316b1a5d25dc363c84cacfa4f7ce76458cae37c018e28"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "disclosed"
+    },
+    "products": [
+      {
+        "name": "Corma AI 安全劳动力",
+        "description": "由 Corma 自研基座模型驱动，可自主完成端到端安全任务，并使用企业现有安全工具。",
+        "target_customers": "大型企业安全团队",
+        "features": [
+          "自主完成安全任务",
+          "接入现有安全与 IT 工具栈",
+          "通过 Slack、Teams 等协同"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-22718666b95dac32",
+            "quote": "Its agents investigate threats and handle defensive tasks using an organization's existing tools, with no human intervention.",
+            "source_content_hash": "73f907a0c9e5cd24",
+            "quote_hash": "dc637e30d3d4621a4f309a4ffc86cff3bf80b2c7993283e37edcb579f146cb7c"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [],
+    "comparisons": [],
+    "metrics": [
+      {
+        "label": "本轮融资金额",
+        "value": "$125 million",
+        "observed_at": "2026-11-16",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-24baf68da2c147d6",
+            "quote": "$125 million Series A round",
+            "source_content_hash": "3528120c072564505d4f49ec4976d8b041972f75c1675308747974fc6d799406",
+            "quote_hash": "3da4600020d3998ee43431cbabefd96dc00a1b15841d3852d61d23d3255bf854"
+          }
+        ]
+      },
+      {
+        "label": "本轮估值",
+        "value": "$1 billion",
+        "observed_at": "2026-11-16",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-24baf68da2c147d6",
+            "quote": "at a $1 billion valuation",
+            "source_content_hash": "3528120c072564505d4f49ec4976d8b041972f75c1675308747974fc6d799406",
+            "quote_hash": "249123c1c008cd8726cb8b407a3c5066b62ea1cd45d31793e35a0d9d532a8bbd"
+          }
+        ]
+      },
+      {
+        "label": "累计融资额",
+        "value": "$185 million",
+        "observed_at": "2026-11-16",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-22718666b95dac32",
+            "quote": "bringing total funding to $185 million",
+            "source_content_hash": "73f907a0c9e5cd24",
+            "quote_hash": "853be51e0ea08e85c8b316b1a5d25dc363c84cacfa4f7ce76458cae37c018e28"
+          }
+        ]
+      },
+      {
+        "label": "服务器容量扩张",
+        "value": "24倍",
+        "observed_at": "2026-11-16",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-22718666b95dac32",
+            "quote": "prompting a 24-fold expansion of its server capacity",
+            "source_content_hash": "73f907a0c9e5cd24",
+            "quote_hash": "b0ae8245f86a340e97fc24a216ce49c622fda4bdcd0546c46eaa029a6c0be240"
+          }
+        ]
+      },
+      {
+        "label": "员工人数",
+        "value": "约25人",
+        "observed_at": "2026-11-16",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-22718666b95dac32",
+            "quote": "Corma employs about 25 people.",
+            "source_content_hash": "73f907a0c9e5cd24",
+            "quote_hash": "d2cf3517cfc6ac88802effa74c78d3b25d00872c0b8d63c045206bd2c7f2ff8b"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Alon Pluda",
+        "quote": "No existing model was built for defense",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-22718666b95dac32",
+            "quote": "No existing model was built for defense",
+            "source_content_hash": "73f907a0c9e5cd24",
+            "quote_hash": "97606999b4677bd781ea02299be819d7cf44401e6c51979c992d0ae13df4f0c2"
+          }
+        ]
+      },
+      {
+        "speaker": "Alon Pluda",
+        "quote": "We provide an AI-powered workforce, driven by our foundation model, capable of handling security tasks across the entire spectrum while integrating with a company's existing security stack.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-22718666b95dac32",
+            "quote": "We provide an AI-powered workforce, driven by our foundation model, capable of handling security tasks across the entire spectrum while integrating with a company's existing security stack.",
+            "source_content_hash": "73f907a0c9e5cd24",
+            "quote_hash": "970eacc749d5f4e4fef38649113c98ba0baaba216043b6348e07ecd554d588c0"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "资本押注的核心变量是：Corma 能否以自研防御基座模型支撑可自主执行端到端安全任务的“AI 安全劳动力”，并在大型企业现有安全栈中落地。已验证信号包括：产品发布约三个月后完成 1.25 亿美元 A 轮、估值 10 亿美元，累计融资 1.85 亿美元；来源称出 stealth 后 Fortune 100/500 需求上升并带来服务器容量 24 倍扩张。证据边界在于：客户名单、合同金额、收入与留存均未披露，官网的自主完成率与降本数字属于公司自述，尚不能视为独立验证的经营实绩。",
+      "validated_signals": [
+        "完成 1.25 亿美元 Series A，估值 10 亿美元",
+        "累计融资 1.85 亿美元",
+        "出 stealth 后服务器容量扩张 24 倍",
+        "公司称 Fortune 100 和 Fortune 500 企业需求上升"
+      ],
+      "risks": [
+        "来源未披露客户合同金额、收入或留存数据，商业化质量待验证",
+        "官网宣称的 99% 自主完成率、95% 降本等指标为公司自述，缺少独立验证",
+        "网络安全 AI 防御赛道参与者众多，包括 Anthropic、OpenAI、Microsoft 等成熟厂商及大量初创公司，竞争激烈",
+        "公司约 25 人，团队规模与快速扩张的服务器容量、企业级交付需求之间可能存在执行压力"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "model",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "use_case_ids": [
+        "security_operations"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "sector": "防御性网络安全基座模型与自主安全任务智能体",
+      "investment_thesis": {
+        "statement": "资本押注的核心变量是：Corma 能否以自研防御基座模型支撑可自主执行端到端安全任务的“AI 安全劳动力”，并在大型企业现有安全栈中落地。已验证信号包括：产品发布约三个月后完成 1.25 亿美元 A 轮、估值 10 亿美元，累计融资 1.85 亿美元；来源称出 stealth 后 Fortune 100/500 需求上升并带来服务器容量 24 倍扩张。证据边界在于：客户名单、合同金额、收入与留存均未披露，官网的自主完成率与降本数字属于公司自述，尚不能视为独立验证的经营实绩。",
+        "evidence_signals": [
+          "完成 1.25 亿美元 Series A，估值 10 亿美元",
+          "累计融资 1.85 亿美元",
+          "出 stealth 后服务器容量扩张 24 倍",
+          "公司称 Fortune 100 和 Fortune 500 企业需求上升"
+        ],
+        "risks": [
+          "来源未披露客户合同金额、收入或留存数据，商业化质量待验证",
+          "官网宣称的 99% 自主完成率、95% 降本等指标为公司自述，缺少独立验证",
+          "网络安全 AI 防御赛道参与者众多，包括 Anthropic、OpenAI、Microsoft 等成熟厂商及大量初创公司，竞争激烈",
+          "公司约 25 人，团队规模与快速扩张的服务器容量、企业级交付需求之间可能存在执行压力"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Corma AI 安全劳动力",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Alon Pluda",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "NEA",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Sequoia Capital",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Khosla Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Coatue",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-fa34f7342de666dd",
+        "date": "2026-11-16",
+        "title": "网络安全 AI 初创公司 Corma 约 3 个月内估值达 $1B",
+        "amount": "$125 million",
+        "source_refs": [
+          "SA-7c99ec2a538beb73"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-24baf68da2c147d6",
+        "source_url": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
+        "title": "网络安全 AI 初创公司 Corma 约 3 个月内估值达 $1B",
+        "publisher": "techcrunch.com",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-11-17T00:26:29.250Z",
+        "content_hash": "3528120c072564505d4f49ec4976d8b041972f75c1675308747974fc6d799406",
+        "source_artifact_id": "SA-7c99ec2a538beb73",
+        "raw_id": "RAW-271904025c676939"
+      },
+      {
+        "source_id": "FISRC-22718666b95dac32",
+        "source_url": "https://dealroom.co/news/173034-israel-s-corma-hits-1b-valuation-with-125m-series-a-three-months-after-l/",
+        "title": "Israel's Corma hits $1B valuation with $125M Series A, three months after launch",
+        "publisher": "dealroom.co",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-11-17T01:29:05.130Z",
+        "content_hash": "73f907a0c9e5cd24",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-11-17T01:29:23.096Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-11-17T01:29:23.096Z",
+    "customer_research": {
+      "status": "no_verified_customer_found",
+      "verified_customer_count": 0,
+      "searched_source_count": 2
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 1,
+        "unresolved_names": [
+          "Corma AI 安全劳动力"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 1,
+        "unresolved_names": [
+          "Alon Pluda"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-fa34f7342de666dd"
+    ],
+    "aggregation": {
+      "key": "EN-63482586c768cea7|series_a",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"Corma\" 2026 funding round investors",
+    "\"Corma\" official product customers",
+    "\"Corma\" \"why we invested\""
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Corma\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.wsj.com/pro/cybersecurity/cyber-startup-corma-raises-125-million-for-defensive-ai-agents-f30a4387",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://tracxn.com/d/companies/corma/__OS9LI5do0PGUsbNji71cLIc4mR0vfC7iA63n5aULePA",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://pitchbook.com/profiles/company/1478683-36",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Corma\" $125 million funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Corma\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://corma.com/customer-benefit/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Corma\" \"why we invested\"",
+      "status": "empty",
+      "count": 0
+    },
+    {
+      "provider": "tavily",
+      "query": "\"Corma\" \"why we invested\"",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "exa",
+      "query": "\"Corma\" \"why we invested\"",
+      "status": "quota_exhausted",
+      "http_status": 402,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"Corma\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://corma.com/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Corma\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Corma\" founders headquarters product",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    }
+  ]
+}
