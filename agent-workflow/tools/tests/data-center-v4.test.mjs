@@ -3276,3 +3276,15 @@ test('sector-wide circular-financing estimates are not an issuer funding round',
   for(const title of ['循环科技完成1000万元A轮融资','循环融资科技完成1000万元融资','Acme raises $10 million for circular financing analytics'])
     assert.equal(eventSourceEligibility({published_at:'2026-11-16',clean_text:body},{source_url:'https://example.com/company'},title,'2026-11-17',{eventType:'funding'}).accepted,true,title);
 });
+
+
+test("source translation cache and public display share the minimum title length", () => {
+  const source = "The Lakehouse for AI";
+  for (const short of ["AI湖仓", "AI 湖仓"]) {
+    assert.equal(titleTranslationLooksUsable(source, short), false);
+    assert.equal(buildEventDisplayTitle({rawDocument:{title_original:source,title_zh:short}}), "");
+  }
+  const title = "面向AI的湖仓";
+  assert.equal(titleTranslationLooksUsable(source, title), true);
+  assert.equal(buildEventDisplayTitle({rawDocument:{title_original:source,title_zh:title}}), title);
+});

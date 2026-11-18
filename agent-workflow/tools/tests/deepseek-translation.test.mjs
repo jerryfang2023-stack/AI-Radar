@@ -319,7 +319,7 @@ test("category title retries retain rejected model passes and remain bounded", a
   context.mock.method(globalThis, "fetch", async (_url, options) => {
     const body = JSON.parse(options.body); requests.push(body);
     if (timeoutOnRetry && requests.length === 2) throw new DOMException("request timed out", "TimeoutError");
-    const content = alwaysBad || requests.length === 1 ? "AI 的 Lakehouse" : "面向 AI 的湖仓";
+    const content = alwaysBad || requests.length === 1 ? "AI 湖仓" : "面向 AI 的湖仓";
     return Response.json({choices:[{message:{content}}]});
   });
   const result = await generateSourceTitleTranslation("The Lakehouse for AI", {provider:"deepseek"});
@@ -328,7 +328,7 @@ test("category title retries retain rejected model passes and remain bounded", a
   assert.equal(requests.length, 2);
   assert.equal(result.failures.length, 1);
   assert.equal(result.failures[0].model_pass, 1);
-  assert.equal(result.failures[0].translated_title, "AI 的 Lakehouse");
+  assert.equal(result.failures[0].translated_title, "AI 湖仓");
   assert.match(requests[0].messages[0].content, /lakehouse.*湖仓/iu);
   assert.match(requests[1].messages[1].content, /complete Simplified Chinese title/iu);
   alwaysBad = true; requests.length = 0;
@@ -341,6 +341,6 @@ test("category title retries retain rejected model passes and remain bounded", a
   const resumed = await generateSourceTitleTranslation("The Lakehouse for AI", {provider:"deepseek", wait:async () => {}});
   assert.equal(resumed.status, "translated");
   assert.equal(requests.length, 3);
-  assert.equal(resumed.failures[0].translated_title, "AI 的 Lakehouse");
+  assert.equal(resumed.failures[0].translated_title, "AI 湖仓");
   assert.ok(resumed.failures.some(failure => failure.reason === "TimeoutError"));
 });

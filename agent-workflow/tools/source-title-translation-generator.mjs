@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { MIN_PUBLIC_EVENT_TITLE_LENGTH } from "./event-public-title.mjs";
 import { deepSeekChatCompletion, deepSeekModels, retryableDeepSeekFailure } from "./deepseek-translation-client.mjs";
 
 export function hasCjk(value = "") {
@@ -302,7 +303,7 @@ function looksGarbled(value = "") {
 export function titleTranslationLooksUsable(sourceTitle = "", translation = "") {
   const source = stripGeneratorNoise(sourceTitle);
   const value = stripGeneratorNoise(translation);
-  if (!source || !value || !hasCjk(value) || looksGarbled(value)) return false;
+  if (!source || value.length < MIN_PUBLIC_EVENT_TITLE_LENGTH || !hasCjk(value) || looksGarbled(value)) return false;
   if (/needs_ingestion_translation|missing_translation_db|pending translation/iu.test(value)) return false;
   if (value.toLowerCase() === source.toLowerCase()) return false;
   const cjkCount = (value.match(/[\u3400-\u9fff]/gu) || []).length;
@@ -439,7 +440,7 @@ async function translateTitleWithDeepSeek(sourceTitle = "", {
         "Never calculate, round, change, omit, or add any number or monetary amount.",
         "Keep numbered phrases such as Day 1, Q1, and model versions with their original digits; do not rewrite Day 1 as 首日.",
         "Translate AI agent as AI 智能体. Remove publisher and website suffixes such as Company Announcement, FT.com, TechCrunch, or PYMNTS.com.",
-        "Translate generic product-category words even when the title is mostly brand names; for example, translate Marketplace as 市场 and lakehouse as 湖仓 for the generic data architecture, while preserving protected product names such as NVIDIA AI Enterprise exactly. Return a complete Simplified Chinese title with at least two Chinese characters.",
+        "Translate generic product-category words even when the title is mostly brand names; for example, translate Marketplace as 市场 and lakehouse as 湖仓 for the generic data architecture, while preserving protected product names such as NVIDIA AI Enterprise exactly. Return a complete Simplified Chinese title with at least six characters and two Chinese characters.",
         "For a repository-only title such as owner/repository, preserve the exact path and translate it as GitHub 仓库：owner/repository.",
         "Do not add facts that are not present in the source title. Return only the translated title.",
       ].join(" "),
@@ -479,7 +480,7 @@ async function translateTitleWithDeepSeek(sourceTitle = "", {
       model: retryModel,
       timeoutMs: Math.max(timeoutMs, 30000),
       maxTokens: 800,
-      messages: messages("A previous translation was rejected. Return a complete Simplified Chinese title with at least two Chinese characters; translate generic category words such as lakehouse as 湖仓 rather than leaving only an AI modifier in Chinese. Preserve every amount, date, quarter, version, and count. If an amount such as $12.5 has no unit, keep the literal $12.5 and never infer million or billion. Keep tokens such as Q1 and model versions semantically exact."),
+      messages: messages("A previous translation was rejected. Return a complete Simplified Chinese title with at least six characters and two Chinese characters; translate generic category words such as lakehouse as 湖仓 rather than leaving only an AI modifier in Chinese. Preserve every amount, date, quarter, version, and count. If an amount such as $12.5 has no unit, keep the literal $12.5 and never infer million or billion. Keep tokens such as Q1 and model versions semantically exact."),
     })));
   } catch (error) {
     error.titleTranslationFailures = [rejection];
