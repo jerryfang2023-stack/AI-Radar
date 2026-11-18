@@ -322,7 +322,7 @@ test("category title retries retain rejected model passes and remain bounded", a
     const content = alwaysBad || requests.length === 1 ? "AI 湖仓" : "面向 AI 的湖仓";
     return Response.json({choices:[{message:{content}}]});
   });
-  const result = await generateSourceTitleTranslation("The Lakehouse for AI", {provider:"deepseek"});
+  const result = await generateSourceTitleTranslation("The Lakehouse for AI", {provider:"deepseek",requirePublicTitle:true});
   assert.equal(result.status, "translated");
   assert.equal(result.titleZh, "面向 AI 的湖仓");
   assert.equal(requests.length, 2);
@@ -332,13 +332,13 @@ test("category title retries retain rejected model passes and remain bounded", a
   assert.match(requests[0].messages[0].content, /lakehouse.*湖仓/iu);
   assert.match(requests[1].messages[1].content, /complete Simplified Chinese title/iu);
   alwaysBad = true; requests.length = 0;
-  const blocked = await generateSourceTitleTranslation("The Lakehouse for AI", {provider:"deepseek"});
+  const blocked = await generateSourceTitleTranslation("The Lakehouse for AI", {provider:"deepseek",requirePublicTitle:true});
   assert.equal(blocked.status, "needs_ingestion_translation");
   assert.equal(blocked.titleZh, "");
   assert.equal(requests.length, 2);
   assert.equal(blocked.failures.length, 2);
   alwaysBad = false; timeoutOnRetry = true; requests.length = 0;
-  const resumed = await generateSourceTitleTranslation("The Lakehouse for AI", {provider:"deepseek", wait:async () => {}});
+  const resumed = await generateSourceTitleTranslation("The Lakehouse for AI", {provider:"deepseek",requirePublicTitle:true, wait:async () => {}});
   assert.equal(resumed.status, "translated");
   assert.equal(requests.length, 3);
   assert.equal(resumed.failures[0].translated_title, "AI 湖仓");

@@ -13,7 +13,7 @@ import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventSta
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
 import { buildEventDisplayTitle } from "../event-public-title.mjs";
 import { coreRawQcViolationCounts, isCoreV4EvidenceItem, isRoutedV4EvidenceItem, isUsableCoreEvidenceItem, normalizedOriginFetchStatus, reconcileSourceFailureRecovery } from "../guanlan-monitor-quality-gate.mjs";
-import { generateSourceTitleTranslation, isApprovedSourceTitleTranslation, normalizeSourceTitleTranslation, sourceTitleFactsPreserved, sourceTitleFromCapturedPayload, sourceTitleNeedsChineseTranslation, titleTranslationLooksUsable } from "../source-title-translation-generator.mjs";
+import { generateSourceTitleTranslation, generatedTitleTranslationLooksUsable, isApprovedSourceTitleTranslation, normalizeSourceTitleTranslation, sourceTitleFactsPreserved, sourceTitleFromCapturedPayload, sourceTitleNeedsChineseTranslation, titleTranslationLooksUsable } from "../source-title-translation-generator.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "../../..");
@@ -3281,9 +3281,12 @@ test('sector-wide circular-financing estimates are not an issuer funding round',
 test("source translation cache and public display share the minimum title length", () => {
   const source = "The Lakehouse for AI";
   for (const short of ["AI湖仓", "AI 湖仓"]) {
-    assert.equal(titleTranslationLooksUsable(source, short), false);
+    assert.equal(titleTranslationLooksUsable(source, short), true); // valid Raw label, not a public event title
+    assert.equal(generatedTitleTranslationLooksUsable(source, short, {requirePublicTitle:true}), false);
     assert.equal(buildEventDisplayTitle({rawDocument:{title_original:source,title_zh:short}}), "");
   }
+  assert.equal(generatedTitleTranslationLooksUsable("News Archive", "新闻存档"), true);
+  assert.equal(generatedTitleTranslationLooksUsable("News Archive", "新闻存档", {requirePublicTitle:true}), false);
   const title = "面向AI的湖仓";
   assert.equal(titleTranslationLooksUsable(source, title), true);
   assert.equal(buildEventDisplayTitle({rawDocument:{title_original:source,title_zh:title}}), title);

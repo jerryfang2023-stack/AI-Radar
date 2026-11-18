@@ -1,5 +1,3 @@
-export const MIN_PUBLIC_EVENT_TITLE_LENGTH = 6;
-
 function text(value = "") {
   return String(value || "").replace(/\s+/gu, " ").trim();
 }
@@ -29,7 +27,7 @@ export function buildEventDisplayTitle({ rawDocument = null } = {}) {
 
 export function isCompletePublicEventTitle(value = "") {
   const title = text(value);
-  return title.length >= MIN_PUBLIC_EVENT_TITLE_LENGTH
+  return title.length >= 6
     && (containsChinese(title) || VERSIONED_TECHNICAL_SOURCE_TITLE.test(title))
     && englishConnectorCount(title) < 2
     && !/(?:…|\.\.\.|&(?:#\d+|[a-z]+);)/iu.test(title)
