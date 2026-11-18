@@ -210,7 +210,12 @@ function normalizeChineseQuantifiers(value) {
 
 function normalizeEnglishQuantifiers(value) {
   const numbers = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10 };
+  const roundOrdinals = { first: 1, second: 2, third: 3, fourth: 4, fifth: 5, sixth: 6, seventh: 7, eighth: 8, ninth: 9, tenth: 10 };
   return String(value || "")
+    // Explicitly qualified round counts include words, unlike company names
+    // such as First Round Capital. Preserve them in the non-money fact gate.
+    .replace(/\b(first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth)(?=[-‑–—\s]+(?:mega|funding|financing)[-‑–—\s]+rounds?\b)/giu,
+      (_, number) => String(roundOrdinals[number.toLowerCase()]))
     // Headline-leading singular age compounds omit the article: "Year-old"
     // still means one year. Keep explicit ages and unrelated nouns unchanged.
     .replace(/^\s*(year|month|week|day|hour)[-‑–—]old\b/giu, "1 $1 old")
@@ -434,7 +439,7 @@ async function translateTitleWithDeepSeek(sourceTitle = "", {
         "Never calculate, round, change, omit, or add any number or monetary amount.",
         "Keep numbered phrases such as Day 1, Q1, and model versions with their original digits; do not rewrite Day 1 as 首日.",
         "Translate AI agent as AI 智能体. Remove publisher and website suffixes such as Company Announcement, FT.com, TechCrunch, or PYMNTS.com.",
-        "Translate generic product-category words even when the title is mostly brand names; for example, translate Marketplace as 市场 while preserving NVIDIA AI Enterprise exactly.",
+        "Translate generic product-category words even when the title is mostly brand names; for example, translate Marketplace as 市场 and lakehouse as 湖仓 for the generic data architecture, while preserving protected product names such as NVIDIA AI Enterprise exactly. Return a complete Simplified Chinese title with at least two Chinese characters.",
         "For a repository-only title such as owner/repository, preserve the exact path and translate it as GitHub 仓库：owner/repository.",
         "Do not add facts that are not present in the source title. Return only the translated title.",
       ].join(" "),
@@ -463,17 +468,24 @@ async function translateTitleWithDeepSeek(sourceTitle = "", {
     messages: messages(),
   })));
   if (generatedTitleTranslationLooksUsable(sourceTitle, first)) return { text: first, model };
+  const rejection = { provider: "deepseek", reason: "title_facts_or_quality_rejected", model, model_pass: 1, translated_title: first.slice(0, 1000) };
   const retryModel = deepSeekModels().pro;
-  const retry = repairProtectedTerms(stripGeneratorNoise(await deepSeekChatCompletion({
-    throwOnHttpError: true,
-    apiKey,
-    baseUrl,
-    model: retryModel,
-    timeoutMs: Math.max(timeoutMs, 30000),
-    maxTokens: 800,
-    messages: messages("A previous translation was rejected. Preserve every amount, date, quarter, version, and count. If an amount such as $12.5 has no unit, keep the literal $12.5 and never infer million or billion. Keep tokens such as Q1 and model versions semantically exact."),
-  })));
-  return { text: retry, model: retryModel };
+  let retry;
+  try {
+    retry = repairProtectedTerms(stripGeneratorNoise(await deepSeekChatCompletion({
+      throwOnHttpError: true,
+      apiKey,
+      baseUrl,
+      model: retryModel,
+      timeoutMs: Math.max(timeoutMs, 30000),
+      maxTokens: 800,
+      messages: messages("A previous translation was rejected. Return a complete Simplified Chinese title with at least two Chinese characters; translate generic category words such as lakehouse as 湖仓 rather than leaving only an AI modifier in Chinese. Preserve every amount, date, quarter, version, and count. If an amount such as $12.5 has no unit, keep the literal $12.5 and never infer million or billion. Keep tokens such as Q1 and model versions semantically exact."),
+    })));
+  } catch (error) {
+    error.titleTranslationFailures = [rejection];
+    throw error;
+  }
+  return { text: retry, model: retryModel, failures: [rejection] };
 }
 
 function translateMoneyAmount(value = "") {
@@ -738,17 +750,20 @@ export async function generateSourceTitleTranslation(sourceTitle = "", {
         ? await translateTitleWithDeepSeek(title, { timeoutMs })
         : "";
       const translated = typeof generated === "object" ? generated.text : generated;
+      failures.push(...(generated.failures || []).map(failure => ({...failure, attempt:attempt+1})));
       if (generatedTitleTranslationLooksUsable(title, translated)) {
         return {
           titleZh: stripGeneratorNoise(translated),
           status: "translated",
           method: `${item}_title_translation`,
           model: typeof generated === "object" ? generated.model || "" : "",
+          ...(failures.length ? { failures } : {}),
         };
       }
-      failures.push({provider:item,reason:'title_facts_or_quality_rejected',attempt:attempt+1,translated_title:stripGeneratorNoise(translated).slice(0,1000)});
+      failures.push({provider:item,reason:'title_facts_or_quality_rejected',attempt:attempt+1,model:generated.model || '',model_pass:generated.failures?.length?2:1,translated_title:stripGeneratorNoise(translated).slice(0,1000)});
       break;
     } catch(error) {
+      failures.push(...(error.titleTranslationFailures || []).map(failure => ({...failure, attempt:attempt+1})));
       failures.push({provider:item,reason:/^deepseek_http_\d{3}$/u.test(error.message || '')?error.message:error.name,attempt:attempt+1});
       if(attempt===4 || !retryableDeepSeekFailure(error))break;
       await wait(Math.min(4000,1000*2**attempt));

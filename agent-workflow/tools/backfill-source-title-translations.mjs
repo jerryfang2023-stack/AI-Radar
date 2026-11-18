@@ -233,6 +233,8 @@ async function main() {
     blocking_unresolved: blockingFailures.length,
     deferred_non_event: deferredFailures.length,
     failures,
+    recovered_failures: generated.flatMap(({job, result}) => result.status === "translated" && result.failures?.length
+      ? [{raw_id:job.rawId, title:job.sourceTitle, failures:result.failures}] : []),
   };
 
   fs.mkdirSync(reportRoot, { recursive: true });

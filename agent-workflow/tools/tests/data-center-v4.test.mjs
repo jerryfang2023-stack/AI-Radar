@@ -360,12 +360,13 @@ test("DeepSeek translations with changed monetary facts are rejected", async (t)
   });
 
   process.env.DEEPSEEK_API_KEY = "test-key";
-  globalThis.fetch = async () => ({
-    ok: true,
-    async json() {
+  const usedModels = [];
+  globalThis.fetch = async (_url, options) => {
+    usedModels.push(JSON.parse(options.body).model);
+    return { ok: true, async json() {
       return { choices: [{ message: { content: "Aina 获 Info Edge 等投资 450 万美元，打造 AI 硬件接口" } }] };
-    },
-  });
+    } };
+  };
 
   const result = await generateSourceTitleTranslation(
     "Aina Raises $5.5 Mn From Info Edge, Others To Build AI Hardware Interface",
@@ -375,8 +376,12 @@ test("DeepSeek translations with changed monetary facts are rejected", async (t)
     titleZh: "",
     status: "needs_ingestion_translation",
     method: "title_translation_generator_failed",
-    failures: [{ provider: "deepseek", reason: "title_facts_or_quality_rejected", attempt: 1, translated_title: "Aina 获 Info Edge 等投资 450 万美元，打造 AI 硬件接口" }],
+    failures: [
+      { provider: "deepseek", reason: "title_facts_or_quality_rejected", attempt: 1, model: usedModels[0], model_pass: 1, translated_title: "Aina 获 Info Edge 等投资 450 万美元，打造 AI 硬件接口" },
+      { provider: "deepseek", reason: "title_facts_or_quality_rejected", attempt: 1, model: usedModels[1], model_pass: 2, translated_title: "Aina 获 Info Edge 等投资 450 万美元，打造 AI 硬件接口" },
+    ],
   });
+  assert.equal(usedModels.length, 2);
 });
 
 test("product-name-only mixed titles do not require artificial translation", () => {

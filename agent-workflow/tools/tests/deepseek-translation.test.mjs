@@ -296,3 +296,51 @@ test("money extraction does not turn digits inside business or model identifiers
   assert.equal(sourceTitleFactsPreserved(source, target.replace("B2B", "B3B")), false);
   assert.equal(generatedTitleTranslationLooksUsable("Acme raises 3.75M for AI agents", "Acme为AI智能体融资375万美元"), true);
 });
+
+
+test("qualified funding-round ordinals retain amount, sequence and duration", () => {
+  const source = "Isomorphic Labs raises $5 billion in its second mega-round within six months";
+  const target = "Isomorphic Labs在六个月内完成第二轮大规模融资，募资50亿美元";
+  assert.equal(generatedTitleTranslationLooksUsable(source, target), true);
+  for (const wrong of [target.replace("第二轮", "第三轮"), target.replace("第二轮", ""), target.replace("六个月", "五个月"), target.replace("50亿美元", "5亿美元"), target.replace("美元", "欧元")]) {
+    assert.equal(sourceTitleFactsPreserved(source, wrong), false, wrong);
+  }
+  assert.equal(sourceTitleFactsPreserved("Acme closes its first funding round", "Acme完成第一轮融资"), true);
+  assert.equal(sourceTitleFactsPreserved("Acme closes its tenth financing round", "Acme完成第十轮融资"), true);
+  assert.equal(sourceTitleFactsPreserved("First Round Capital backs Acme", "First Round Capital投资Acme"), true);
+});
+
+test("category title retries retain rejected model passes and remain bounded", async context => {
+  const previousKey = process.env.DEEPSEEK_API_KEY;
+  process.env.DEEPSEEK_API_KEY = "test-key";
+  context.after(() => { if (previousKey === undefined) delete process.env.DEEPSEEK_API_KEY; else process.env.DEEPSEEK_API_KEY = previousKey; });
+  const requests = [];
+  let alwaysBad = false, timeoutOnRetry = false;
+  context.mock.method(globalThis, "fetch", async (_url, options) => {
+    const body = JSON.parse(options.body); requests.push(body);
+    if (timeoutOnRetry && requests.length === 2) throw new DOMException("request timed out", "TimeoutError");
+    const content = alwaysBad || requests.length === 1 ? "AI 的 Lakehouse" : "面向 AI 的湖仓";
+    return Response.json({choices:[{message:{content}}]});
+  });
+  const result = await generateSourceTitleTranslation("The Lakehouse for AI", {provider:"deepseek"});
+  assert.equal(result.status, "translated");
+  assert.equal(result.titleZh, "面向 AI 的湖仓");
+  assert.equal(requests.length, 2);
+  assert.equal(result.failures.length, 1);
+  assert.equal(result.failures[0].model_pass, 1);
+  assert.equal(result.failures[0].translated_title, "AI 的 Lakehouse");
+  assert.match(requests[0].messages[0].content, /lakehouse.*湖仓/iu);
+  assert.match(requests[1].messages[1].content, /complete Simplified Chinese title/iu);
+  alwaysBad = true; requests.length = 0;
+  const blocked = await generateSourceTitleTranslation("The Lakehouse for AI", {provider:"deepseek"});
+  assert.equal(blocked.status, "needs_ingestion_translation");
+  assert.equal(blocked.titleZh, "");
+  assert.equal(requests.length, 2);
+  assert.equal(blocked.failures.length, 2);
+  alwaysBad = false; timeoutOnRetry = true; requests.length = 0;
+  const resumed = await generateSourceTitleTranslation("The Lakehouse for AI", {provider:"deepseek", wait:async () => {}});
+  assert.equal(resumed.status, "translated");
+  assert.equal(requests.length, 3);
+  assert.equal(resumed.failures[0].translated_title, "AI 的 Lakehouse");
+  assert.ok(resumed.failures.some(failure => failure.reason === "TimeoutError"));
+});
