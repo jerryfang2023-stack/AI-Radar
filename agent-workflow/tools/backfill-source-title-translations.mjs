@@ -142,6 +142,7 @@ async function main() {
     if (eventTargetRawIds.has(rawId)) requiredTitleKeys.add(titleTranslationKey(sourceTitle));
     jobsByPath.set(`${relativePath}|${context.date}|${sourceTitle}`, {
       rawId,
+      requirePublicTitle: eventTargetRawIds.has(rawId),
       relativePath,
       file,
       payload,
@@ -167,7 +168,8 @@ async function main() {
       continue;
     }
     const cached = cachedTranslations.get(key) || "";
-    if (titleTranslationLooksUsable(job.sourceTitle, cached)) {
+    if (titleTranslationLooksUsable(job.sourceTitle, cached)
+      && (!job.requirePublicTitle || generatedTitleTranslationLooksUsable(job.sourceTitle, cached, {requirePublicTitle:true}))) {
       translationResults.set(key, { titleZh: cached, status: "translated", method: "source_title_translation_db", model: "" });
     } else {
       missingJobs.push(job);
@@ -184,8 +186,9 @@ async function main() {
         provider: "deepseek",
         timeoutMs: Number(process.env.TITLE_TRANSLATION_TIMEOUT_MS || 30000),
         allowNetwork: true,
+        requirePublicTitle: job.requirePublicTitle,
       });
-      if(result.status==='translated' && generatedTitleTranslationLooksUsable(job.sourceTitle,result.titleZh)) {
+      if(result.status==='translated' && generatedTitleTranslationLooksUsable(job.sourceTitle,result.titleZh,{requirePublicTitle:job.requirePublicTitle})) {
         upsertSourceTitleTranslations(translationFile,[{sourceTitle:job.sourceTitle,zhTitle:result.titleZh,
           method:result.method,model:result.model || '',sourceUrl:job.sourceUrl}]);
       }
@@ -195,7 +198,7 @@ async function main() {
 
   const failures = [];
   for (const { job, result } of generated) {
-    if (result.status !== "translated" || !generatedTitleTranslationLooksUsable(job.sourceTitle, result.titleZh)) {
+    if (result.status !== "translated" || !generatedTitleTranslationLooksUsable(job.sourceTitle, result.titleZh, {requirePublicTitle:job.requirePublicTitle})) {
       failures.push({ raw_id: job.rawId, path: job.relativePath, title: job.sourceTitle, method: result.method, failures:result.failures || [{reason:'title_facts_or_quality_rejected'}] });
       continue;
     }
@@ -206,7 +209,7 @@ async function main() {
 
   if (write) {
     const updates = generated.flatMap(({ job, result }) => {
-      if (result.status !== "translated" || !generatedTitleTranslationLooksUsable(job.sourceTitle, result.titleZh)) return [];
+      if (result.status !== "translated" || !generatedTitleTranslationLooksUsable(job.sourceTitle, result.titleZh, {requirePublicTitle:job.requirePublicTitle})) return [];
       return [{
         sourceTitle: job.sourceTitle,
         zhTitle: result.titleZh,

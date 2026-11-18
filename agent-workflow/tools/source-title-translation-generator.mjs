@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { isCompletePublicEventTitle } from "./event-public-title.mjs";
 import { deepSeekChatCompletion, deepSeekModels, retryableDeepSeekFailure } from "./deepseek-translation-client.mjs";
 
 export function hasCjk(value = "") {
@@ -327,8 +328,9 @@ export function titleTranslationLooksUsable(sourceTitle = "", translation = "") 
   return true;
 }
 
-export function generatedTitleTranslationLooksUsable(sourceTitle = "", translation = "") {
+export function generatedTitleTranslationLooksUsable(sourceTitle = "", translation = "", { requirePublicTitle = false } = {}) {
   if (!titleTranslationLooksUsable(sourceTitle, translation)) return false;
+  if (requirePublicTitle && !isCompletePublicEventTitle(stripGeneratorNoise(translation))) return false;
   if (!sourceTitleFactsPreserved(sourceTitle, translation)) return false;
   const residualConnectors = stripGeneratorNoise(translation)
     .match(/\b(?:the|and|to|for|with|from|into|across|after|before|as|at|by|is|are|of)\b/giu) || [];
@@ -411,6 +413,7 @@ async function translateTitleWithDeepSeek(sourceTitle = "", {
   baseUrl = process.env.DEEPSEEK_BASE_URL || "https://api.deepseek.com",
   model = process.env.DEEPSEEK_TITLE_TRANSLATION_MODEL || deepSeekModels().flash,
   timeoutMs = 12000,
+  requirePublicTitle = false,
 } = {}) {
   // Indian monetary units are copied, not recalculated by the model. Restoring
   // the captured span still has to pass the original-title protected-fact gate.
@@ -441,6 +444,7 @@ async function translateTitleWithDeepSeek(sourceTitle = "", {
         "Translate AI agent as AI 智能体. Remove publisher and website suffixes such as Company Announcement, FT.com, TechCrunch, or PYMNTS.com.",
         "Translate generic product-category words even when the title is mostly brand names; for example, translate Marketplace as 市场 and lakehouse as 湖仓 for the generic data architecture, while preserving protected product names such as NVIDIA AI Enterprise exactly. Return a complete Simplified Chinese title with at least two Chinese characters.",
         "For a repository-only title such as owner/repository, preserve the exact path and translate it as GitHub 仓库：owner/repository.",
+        ...(requirePublicTitle ? ["This title is required for public event display: use at least six characters, a complete Chinese phrase, and no publisher suffix or unfinished English clause. Do not add facts to meet the length."] : []),
         "Do not add facts that are not present in the source title. Return only the translated title.",
       ].join(" "),
     },
@@ -467,7 +471,7 @@ async function translateTitleWithDeepSeek(sourceTitle = "", {
     maxTokens: 600,
     messages: messages(),
   })));
-  if (generatedTitleTranslationLooksUsable(sourceTitle, first)) return { text: first, model };
+  if (generatedTitleTranslationLooksUsable(sourceTitle, first, { requirePublicTitle })) return { text: first, model };
   const rejection = { provider: "deepseek", reason: "title_facts_or_quality_rejected", model, model_pass: 1, translated_title: first.slice(0, 1000) };
   const retryModel = deepSeekModels().pro;
   let retry;
@@ -729,6 +733,7 @@ export async function generateSourceTitleTranslation(sourceTitle = "", {
   provider = process.env.TITLE_TRANSLATION_PROVIDER || "auto",
   timeoutMs = Number(process.env.TITLE_TRANSLATION_TIMEOUT_MS || 12000),
   allowNetwork = true,
+  requirePublicTitle = false,
   wait = ms => new Promise(resolve => setTimeout(resolve, ms)),
 } = {}) {
   const title = decodeHtmlEntities(sourceTitle).replace(/\s+/gu, " ").trim();
@@ -747,11 +752,11 @@ export async function generateSourceTitleTranslation(sourceTitle = "", {
     for(let attempt=0;attempt<5;attempt++) {
     try {
       const generated = item === "deepseek"
-        ? await translateTitleWithDeepSeek(title, { timeoutMs })
+        ? await translateTitleWithDeepSeek(title, { timeoutMs, requirePublicTitle })
         : "";
       const translated = typeof generated === "object" ? generated.text : generated;
       failures.push(...(generated.failures || []).map(failure => ({...failure, attempt:attempt+1})));
-      if (generatedTitleTranslationLooksUsable(title, translated)) {
+      if (generatedTitleTranslationLooksUsable(title, translated, { requirePublicTitle })) {
         return {
           titleZh: stripGeneratorNoise(translated),
           status: "translated",
