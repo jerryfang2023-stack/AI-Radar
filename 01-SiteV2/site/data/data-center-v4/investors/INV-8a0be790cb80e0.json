@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-17",
-    "currentDate": "2026-11-17",
-    "eventCount": 4474,
+    "latestDataDate": "2026-11-18",
+    "currentDate": "2026-11-18",
+    "eventCount": 4486,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,24 +64,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-06",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-11-16",
     "role_counts": {
       "historical_or_ambiguous": 3,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "seed",
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-7a61d6fcd1c55451",
+        "canonical_entity_id": "",
+        "name": "Alecto"
+      },
       {
         "entity_id": "EN-be5329425800b5cc",
         "canonical_entity_id": "",
@@ -89,6 +95,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-321b2b856e19a557",
+        "funding_insight_id": "FI-ad6591d548b068cb",
+        "event_ids": [
+          "EV-1d425fbf0768f5a9"
+        ],
+        "company_entity_id": "EN-7a61d6fcd1c55451",
+        "company_canonical_entity_id": "",
+        "company_name": "Alecto",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "€18 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 18000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1800 万欧元"
+        },
+        "announced_at": "2026-11-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4e9ab0fad1358cd1",
+            "source_url": "https://www.eu-startups.com/2026/11/alecto-lands-e18-million-to-scale-its-ai-powered-law-firm-beyond-property-transactions/",
+            "source_title": "Alecto 获 €18 million，以将其 AI 驱动的律师事务所业务扩展至房地产交易之外",
+            "source_content_hash": "5aaad66ff952122cd2e6f6fbfae0ea01a710845bb8203d41058532f2b039e796",
+            "quote": "with participation from Firstminute Capital, Blue Lion Global, Andrena Ventures, FJ Labs, Antiportfolio Ventures, the Rigby Group, and Mischon de Reya LLP",
+            "quote_hash": "9f56cfd7dbb3507ca717c1a009b9b2c760456cf7afe71ec1cb2a79e32e01088c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-96e70405b39ec3de",
         "funding_insight_id": "FI-2ea747bd5cbf1b16",
@@ -227,6 +273,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-4e9ab0fad1358cd1",
+        "source_url": "https://www.eu-startups.com/2026/11/alecto-lands-e18-million-to-scale-its-ai-powered-law-firm-beyond-property-transactions/",
+        "source_title": "Alecto 获 €18 million，以将其 AI 驱动的律师事务所业务扩展至房地产交易之外",
+        "source_content_hash": "5aaad66ff952122cd2e6f6fbfae0ea01a710845bb8203d41058532f2b039e796",
+        "quote": "with participation from Firstminute Capital, Blue Lion Global, Andrena Ventures, FJ Labs, Antiportfolio Ventures, the Rigby Group, and Mischon de Reya LLP",
+        "quote_hash": "9f56cfd7dbb3507ca717c1a009b9b2c760456cf7afe71ec1cb2a79e32e01088c"
+      },
       {
         "source_id": "FISRC-c4b2501946675440",
         "source_url": "https://www.prnewswire.com/news-releases/vocca-raises-20m-after-growing-from-2-000-to-15-000-medical-practitioners-in-a-year-302902414.html",
@@ -386,12 +440,12 @@
           "source_id": "FISRC-f6319614d583c9a4"
         },
         {
-          "description": "融资来源记录：Vocca · A轮 · 2026-10-06 · 本轮参投 · $20M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c4b2501946675440"
+          "description": "融资来源记录：Alecto · 种子轮 · 2026-11-16 · 本轮参投 · €18 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4e9ab0fad1358cd1"
         },
         {
-          "description": "融资来源记录：Restate · 历史轮次未披露 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-897ee0f062e50b23"
+          "description": "融资来源记录：Vocca · A轮 · 2026-10-06 · 本轮参投 · $20M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4b2501946675440"
         }
       ],
       "profile_type": "organization",
@@ -550,20 +604,20 @@
           "quote_hash": "46a337a4e47d8bd49cc54f0fd74332f7b6d9468c090ca0fa9b32c397e1cc94a3"
         },
         {
+          "source_id": "FISRC-4e9ab0fad1358cd1",
+          "source_url": "https://www.eu-startups.com/2026/11/alecto-lands-e18-million-to-scale-its-ai-powered-law-firm-beyond-property-transactions/",
+          "source_title": "Alecto 获 €18 million，以将其 AI 驱动的律师事务所业务扩展至房地产交易之外",
+          "source_content_hash": "5aaad66ff952122cd2e6f6fbfae0ea01a710845bb8203d41058532f2b039e796",
+          "quote": "with participation from Firstminute Capital, Blue Lion Global, Andrena Ventures, FJ Labs, Antiportfolio Ventures, the Rigby Group, and Mischon de Reya LLP",
+          "quote_hash": "9f56cfd7dbb3507ca717c1a009b9b2c760456cf7afe71ec1cb2a79e32e01088c"
+        },
+        {
           "source_id": "FISRC-c4b2501946675440",
           "source_url": "https://www.prnewswire.com/news-releases/vocca-raises-20m-after-growing-from-2-000-to-15-000-medical-practitioners-in-a-year-302902414.html",
           "source_title": "Vocca 在一年内从 2,000 名医疗从业者增长至 15,000 名后融资 2000 万美元",
           "source_content_hash": "832b44487090846987c7638ef575fbcf07d85ab7b61a962dfd33cda6a41925a5",
           "quote": "Vocca announced a $20M Series A led by Norrsken VC, with participation from Heal Capital, Speedinvest and Firstminute Capital.",
           "quote_hash": "e44afcf666d53786b1232f3725cb8a818db8cbe87ce13276089b8125828e634b"
-        },
-        {
-          "source_id": "FISRC-897ee0f062e50b23",
-          "source_url": "https://restate.dev/blog/announcing-restate-1.0-restate-cloud-and-our-seed-funding-round",
-          "source_title": "Announcing Restate 1.0, Restate Cloud, and our Seed Funding Round | Restate",
-          "source_content_hash": "01508a456a92b8fc",
-          "quote": "we have raised $7 million in seed funding from Redpoint Ventures , with participation from Essence VC and firstminute.capital",
-          "quote_hash": "205728ef0b28a82bd1ce20fb6e70ad2cfb3d6f7ed443c42c9442b40b6588900a"
         }
       ],
       "last_verified_at": "2026-09-28"

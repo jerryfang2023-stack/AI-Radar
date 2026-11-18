@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-17",
-    "currentDate": "2026-11-17",
-    "eventCount": 4474,
+    "latestDataDate": "2026-11-18",
+    "currentDate": "2026-11-18",
+    "eventCount": 4486,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,17 +61,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-14",
-    "latest_disclosed_at": "2026-09-14",
+    "latest_disclosed_at": "2026-11-17",
     "role_counts": {
+      "co_lead": 1,
       "lead": 1
     },
     "round_codes": [
@@ -82,9 +83,62 @@
         "entity_id": "EN-1ae1dd29593288ec",
         "canonical_entity_id": "",
         "name": "Flam"
+      },
+      {
+        "entity_id": "EN-cb3a9e70e51c2f47",
+        "canonical_entity_id": "",
+        "name": "Model ML"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d97eeeb91f838391",
+        "funding_insight_id": "FI-ae275335df51578a",
+        "event_ids": [
+          "EV-27b9c5896b1b9c27"
+        ],
+        "company_entity_id": "EN-cb3a9e70e51c2f47",
+        "company_canonical_entity_id": "",
+        "company_name": "Model ML",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$250M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-73109463bc1bff33",
+            "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
+            "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
+            "source_content_hash": "ef0f704125514383",
+            "quote": "The round was co-led by General Atlantic, a leading global investor, and QED Investors",
+            "quote_hash": "7bb26aa2aaf35886c179be0e2cc710e18f4bb6e7f7d3bf3c9d180036bf60a9b9"
+          },
+          {
+            "source_id": "FISRC-372bb734ba1d0b31",
+            "source_url": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/",
+            "source_title": "Model ML 融资 2.5 亿美元，用于自动化投资银行的繁琐基础工作",
+            "source_content_hash": "e0c7c10a8fd59d89a91c57dbd385930e7730e0536d422dd4e29292037f2d8955",
+            "quote": "was co-led by General Atlantic and earlier backer QED Investors",
+            "quote_hash": "92dd7ec051c219e15294f69470a4ac34fc68a8cdfa1daccdb2df0457e948ccfb"
+          }
+        ]
+      },
       {
         "activity_id": "IA-cfd051271e22c0cb",
         "funding_insight_id": "FI-ab5f000cdfdb1a10",
@@ -128,6 +182,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-73109463bc1bff33",
+        "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
+        "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
+        "source_content_hash": "ef0f704125514383",
+        "quote": "The round was co-led by General Atlantic, a leading global investor, and QED Investors",
+        "quote_hash": "7bb26aa2aaf35886c179be0e2cc710e18f4bb6e7f7d3bf3c9d180036bf60a9b9"
+      },
+      {
+        "source_id": "FISRC-372bb734ba1d0b31",
+        "source_url": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/",
+        "source_title": "Model ML 融资 2.5 亿美元，用于自动化投资银行的繁琐基础工作",
+        "source_content_hash": "e0c7c10a8fd59d89a91c57dbd385930e7730e0536d422dd4e29292037f2d8955",
+        "quote": "was co-led by General Atlantic and earlier backer QED Investors",
+        "quote_hash": "92dd7ec051c219e15294f69470a4ac34fc68a8cdfa1daccdb2df0457e948ccfb"
+      },
+      {
         "source_id": "FISRC-83ab416cf84d3f07",
         "source_url": "https://siliconangle.com/2026/09/14/flam-raises-40m-in-funding-to-make-ai-enabled-interactive-content-a-reality/",
         "source_title": "Flam 融资 4000 万美元，让 AI 驱动的互动内容成为现实",
@@ -154,6 +224,10 @@
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Model ML · B轮 · 2026-11-17 · 本轮联合领投 · $250M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-73109463bc1bff33"
+        },
         {
           "description": "融资来源记录：Flam · B轮 · 2026-09-14 · 本轮领投 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-83ab416cf84d3f07"
@@ -192,6 +266,22 @@
           "source_content_hash": "f6873c04be86248566a3191b0724c1dab47b1397b5002795728becf18321f3ee",
           "quote": "We invest in pragmatic disruptors who are the future of finance.",
           "quote_hash": "6e2767b1ce567b042bbd845e5630957344ab6c809629cacabc3168415e70848a"
+        },
+        {
+          "source_id": "FISRC-73109463bc1bff33",
+          "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
+          "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
+          "source_content_hash": "ef0f704125514383",
+          "quote": "The round was co-led by General Atlantic, a leading global investor, and QED Investors",
+          "quote_hash": "7bb26aa2aaf35886c179be0e2cc710e18f4bb6e7f7d3bf3c9d180036bf60a9b9"
+        },
+        {
+          "source_id": "FISRC-372bb734ba1d0b31",
+          "source_url": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/",
+          "source_title": "Model ML 融资 2.5 亿美元，用于自动化投资银行的繁琐基础工作",
+          "source_content_hash": "e0c7c10a8fd59d89a91c57dbd385930e7730e0536d422dd4e29292037f2d8955",
+          "quote": "was co-led by General Atlantic and earlier backer QED Investors",
+          "quote_hash": "92dd7ec051c219e15294f69470a4ac34fc68a8cdfa1daccdb2df0457e948ccfb"
         },
         {
           "source_id": "FISRC-83ab416cf84d3f07",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-17",
-    "currentDate": "2026-11-17",
-    "eventCount": 4474,
+    "latestDataDate": "2026-11-18",
+    "currentDate": "2026-11-18",
+    "eventCount": 4486,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-09",
-    "latest_disclosed_at": "2026-07-09",
+    "latest_disclosed_at": "2026-11-17",
     "role_counts": {
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
       "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-57feacd12af9d043",
+        "canonical_entity_id": "",
+        "name": "LanceDB"
+      },
       {
         "entity_id": "EN-be8ac88a28bc647b",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2fed694fc7f3372d",
+        "funding_insight_id": "FI-9c0d79cb9d5c371d",
+        "event_ids": [
+          "EV-272eb63ab316040f"
+        ],
+        "company_entity_id": "EN-57feacd12af9d043",
+        "company_canonical_entity_id": "",
+        "company_name": "LanceDB",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$57.5m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 57500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5750 万美元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0552c4db6b7fbb24",
+            "source_url": "https://www.lancedb.com/blog/lancedb-series-b-funding",
+            "source_title": "LanceDB Raises $57.5M as AI Research Outgrows the Modern Data Stack",
+            "source_content_hash": "14eff5c4826ab01e",
+            "quote": "Our Series B is led by Bessemer Venture Partners and Innovation Endeavors with participation from Theory Ventures, Dimension, Swift Ventures, CRV, and Y Combinator",
+            "quote_hash": "ab8945000890056892e6b331541cfbf4d7c28ff7fb4bfa59739b9f984a856888"
+          }
+        ]
+      },
       {
         "activity_id": "IA-78afde2ab90f3109",
         "funding_insight_id": "FI-e0b44178c017043f",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-0552c4db6b7fbb24",
+        "source_url": "https://www.lancedb.com/blog/lancedb-series-b-funding",
+        "source_title": "LanceDB Raises $57.5M as AI Research Outgrows the Modern Data Stack",
+        "source_content_hash": "14eff5c4826ab01e",
+        "quote": "Our Series B is led by Bessemer Venture Partners and Innovation Endeavors with participation from Theory Ventures, Dimension, Swift Ventures, CRV, and Y Combinator",
+        "quote_hash": "ab8945000890056892e6b331541cfbf4d7c28ff7fb4bfa59739b9f984a856888"
+      },
+      {
         "source_id": "FISRC-674392f5f750c88f",
         "source_url": "https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users",
         "source_title": "热门开源 AI 开发者工具 Ollama 融资 6500 万美元，用户规模增长至近 900 万",
@@ -163,6 +217,10 @@
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：LanceDB · B轮 · 2026-11-17 · 本轮参投 · $57.5m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0552c4db6b7fbb24"
+        },
         {
           "description": "融资来源记录：Ollama · B轮 · 2026-07-09 · 本轮领投 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-674392f5f750c88f"
@@ -207,6 +265,14 @@
           "source_content_hash": "d19ff8218633029a7d98e45138fc733eb7b663cda7cbda644b63d143fa7c5b24",
           "quote": "We invest $1-40m in software companies that leverage technology discontinuities into go-to-market advantages.",
           "quote_hash": "c245e16a58b41ae75571cab168002e37d5c05162e5823bfe264ba7927b90ca78"
+        },
+        {
+          "source_id": "FISRC-0552c4db6b7fbb24",
+          "source_url": "https://www.lancedb.com/blog/lancedb-series-b-funding",
+          "source_title": "LanceDB Raises $57.5M as AI Research Outgrows the Modern Data Stack",
+          "source_content_hash": "14eff5c4826ab01e",
+          "quote": "Our Series B is led by Bessemer Venture Partners and Innovation Endeavors with participation from Theory Ventures, Dimension, Swift Ventures, CRV, and Y Combinator",
+          "quote_hash": "ab8945000890056892e6b331541cfbf4d7c28ff7fb4bfa59739b9f984a856888"
         },
         {
           "source_id": "FISRC-674392f5f750c88f",

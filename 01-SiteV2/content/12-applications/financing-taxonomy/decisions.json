@@ -38693,7 +38693,345 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-11-17T01:52:48.383Z"
+    },
+    "EV-86165eebaf4622fd": {
+      "id": "EV-86165eebaf4622fd",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "Isomorphic Labs 以 AI 药物发现平台 IsoDDE 为核心产品，属于生命科学行业 AI。",
+      "input_hash": "cfe0685c207f7246d9801bc2e711e91d39cfc8cb036daed2d70fb3b3c7b16762",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c4b7e80cb7863d47",
+          "quote": "Isomorphic Labs, the AI drug-discovery platform that was spun out of Google’s DeepMind in 2021"
+        },
+        {
+          "source_id": "FISRC-e166994b43b2e418",
+          "quote": "Alphabet's AI drug discovery company Isomorphic Labs"
+        },
+        {
+          "source_id": "FISRC-e166994b43b2e418",
+          "quote": "advancing its in-house platform IsoDDE (Isomorphic Drug Design Engine)"
+        },
+        {
+          "source_id": "FISRC-c4b7e80cb7863d47",
+          "quote": "uses a slew of simulation AI models that explore various areas of chemistry to help the company design drugs"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-18T07:17:40.400Z"
+    },
+    "EV-27b9c5896b1b9c27": {
+      "id": "EV-27b9c5896b1b9c27",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "finance-hr",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        5,
+        6
+      ],
+      "rationale": "Model ML 为投行、咨询与投资机构提供集成 Excel/PowerPoint 的个人 AI 代理，属企业职能应用。",
+      "input_hash": "80803ca0d8fd2f2d53eed371f52c1c0ab567562e56db38bef0d81d0130fdd0c8",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-372bb734ba1d0b31",
+          "quote": "Model ML, a London-based startup that uses AI to automate work traditionally performed by junior bankers and consultants"
+        },
+        {
+          "source_id": "FISRC-372bb734ba1d0b31",
+          "quote": "Model ML develops AI agents that integrate with clients’ systems, data, and tools, including Excel and PowerPoint"
+        },
+        {
+          "source_id": "FISRC-73109463bc1bff33",
+          "quote": "Model ML gives every banker, consultant and investor their own personal AI agent"
+        },
+        {
+          "source_id": "FISRC-f2847e1b202326bc",
+          "quote": "AutoCheck: AI Review for Pitch Decks and Presentations"
+        },
+        {
+          "source_id": "FISRC-f2847e1b202326bc",
+          "quote": "Notetaker: AI Meeting Notes for Banking, PE and Consulting"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-18T08:12:54.754Z"
+    },
+    "EV-0d27ea6892225510": {
+      "id": "EV-0d27ea6892225510",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "assistants",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "Voyage Labs 的 Atlas 是面向个人消费者、通过 iMessage 与网页端完成旅行预订的私人 AI 助手。",
+      "input_hash": "abe6f45b4ae22342ef226dd4bee96f2ab13451d64f001f8c5fd27a9fca5c827f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9aa7e0bbc5d3e7a1",
+          "quote": "Atlas is a personal AI agent that handles travel and local plans end to end."
+        },
+        {
+          "source_id": "FISRC-9aa7e0bbc5d3e7a1",
+          "quote": "It books flights, hotels, and experiences through supplier partnerships rather than handing back links"
+        },
+        {
+          "source_id": "FISRC-9aa7e0bbc5d3e7a1",
+          "quote": "Atlas lives in iMessage and on the web."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-18T08:12:54.754Z"
+    },
+    "EV-272eb63ab316040f": {
+      "id": "EV-272eb63ab316040f",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "data-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "LanceDB 提供面向模型训练与推理的多模态数据湖仓，属于 AI 数据平台。",
+      "input_hash": "57a6daae999bfe83cc065b6f4a3249f7662ecf366fd4421f91c78142728f095c",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0552c4db6b7fbb24",
+          "quote": "we’ve raised $57.5M in our Series B funding to bring the LanceDB multimodal lakehouse to the researchers, model builders, and platform teams working at the frontier."
+        },
+        {
+          "source_id": "FISRC-63bd6e9f3e1bf07c",
+          "quote": "a lakehouse that stores data for training & inference called Lance"
+        },
+        {
+          "source_id": "FISRC-63bd6e9f3e1bf07c",
+          "quote": "Lance allows companies to manipulate massive collections of files in the most efficient way possible for AI."
+        },
+        {
+          "source_id": "FISRC-0552c4db6b7fbb24",
+          "quote": "it was the only option that handled unstructured data, column appends, distributed reads, and ad-hoc SQL all at once"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-18T08:12:55.760Z"
+    },
+    "EV-6693c4f59a1110df": {
+      "id": "EV-6693c4f59a1110df",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "audio-wearables",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "乎零AI语音健康戒指是可录音转写的消费级可穿戴终端。",
+      "input_hash": "2a7fac5a71e5153e9b4778767015685507a0c5d621a393f7c5a0af1629b12763",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-cbad7b26722521c1",
+          "quote": "官方正式发布公司首款重磅产品——乎零AI语音健康戒指"
+        },
+        {
+          "source_id": "FISRC-cbad7b26722521c1",
+          "quote": "产品支持双击实体按键快速录音，自动完成语音实时转写、待办事项智能提取、日程自动识别梳理"
+        },
+        {
+          "source_id": "FISRC-7b0e0e071a6ae311",
+          "quote": "首款产品乎零AI语音健康戒指搭载阿波罗3芯片，整机重量不足5克，通过IPX8级防水认证，标准续航约7天"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-18T08:12:55.760Z"
+    },
+    "EV-1d425fbf0768f5a9": {
+      "id": "EV-1d425fbf0768f5a9",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "legal",
+      "product_form_id": "ai-service",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Alecto 以 AI 原生律所形式交付住宅产权转让法律服务。",
+      "input_hash": "d4af11babe55975b7f9be48237860a92991666a8dd9804cf8ccc13f5d55822e8",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4e9ab0fad1358cd1",
+          "quote": "Alecto, a British AI-native law firm"
+        },
+        {
+          "source_id": "FISRC-ace187259e248200",
+          "quote": "Alecto, headquartered in London, is building a service that moves matters forward proactively and explains legal issues in plain language"
+        },
+        {
+          "source_id": "FISRC-b823d75a121c9d20",
+          "quote": "Conveyancing that never sits still. Our technology reads, checks and chases every part of your move around the clock, and your own conveyancer makes every decision that matters."
+        },
+        {
+          "source_id": "FISRC-b823d75a121c9d20",
+          "quote": "What we quote is what you pay"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-18T08:12:55.760Z"
+    },
+    "EV-60e9751ddf436c14": {
+      "id": "EV-60e9751ddf436c14",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "assistants",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Lucie 是面向个人消费者的隐私优先个人 AI 助手。",
+      "input_hash": "c586eaf1cb161b7954b44fe16e5a6ba067609548d93f126ab2a511d4031c2a4f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3e6fa4223efef8d4",
+          "quote": "RHISE AI Technologies, the Munich-based startup behind Lucie, a personal AI designed for Europe"
+        },
+        {
+          "source_id": "FISRC-c09aee2abef0ddaa",
+          "quote": "RHISE AI builds Lucie in Europe: hosted in the EU, with no ads, your data used only for you, and no training on your conversations."
+        },
+        {
+          "source_id": "FISRC-3e6fa4223efef8d4",
+          "quote": "Designed for Europe, Lucie connects health, work, and personal data from wearables to calendars and inboxes and uses an in-house multi-agent system called Heartbeat to surface what needs attention without waiting to be asked."
+        },
+        {
+          "source_id": "FISRC-3e6fa4223efef8d4",
+          "quote": "The company stores personal data on sovereign European cloud infrastructure in Germany, operates under GDPR from day one, runs no advertising, and does not sell user data."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-18T08:12:55.760Z"
+    },
+    "EV-3774a546c9f135e0": {
+      "id": "EV-3774a546c9f135e0",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "Treat 提供面向患者的 AI 问诊分诊与就医入口平台。",
+      "input_hash": "2c493588d695b4aa5ea2a4304a54e8e52eea41db96e8d487d43e7a7b29ea69c3",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-180216a91853098c",
+          "quote": "The platform acts as a gateway to care, with patients first describing their symptoms in their own words via a chat interface, and an AI-powered intake tool structures the information into a detailed brief."
+        },
+        {
+          "source_id": "FISRC-d89293b452c4945b",
+          "quote": "Patients can type or verbally state their symptoms, and the AI then poses a series of follow-up questions to gather the information the doctor needs. Treat’s system also checks their insurance and employer coverage so they don’t have to choose between a nurse, a doctor, or a specialist."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-18T08:12:55.760Z"
+    },
+    "EV-12f5404b5c1882ec": {
+      "id": "EV-12f5404b5c1882ec",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Pedestal AI 的 Logistics Coworker 编排 ERP、订单与排班等企业运营流程。",
+      "input_hash": "9616a45517f7f7f448d9a42a1972520fbd4a2d72d16ea442cd674354b1a8e57b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-943584e624ed9d40",
+          "quote": "AI for complex operations"
+        },
+        {
+          "source_id": "FISRC-943584e624ed9d40",
+          "quote": "Reads your ERP, TMS and email, and asks your experts the rest"
+        },
+        {
+          "source_id": "FISRC-943584e624ed9d40",
+          "quote": "It also calls your customers, plans your labor, processes orders and shipments, predicts failures, and much more."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-18T08:12:55.760Z"
     }
   },
-  "generated_at": "2026-11-17T01:52:48.383Z"
+  "generated_at": "2026-11-18T08:12:55.760Z"
 }

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-17",
-    "currentDate": "2026-11-17",
-    "eventCount": 4474,
+    "latestDataDate": "2026-11-18",
+    "currentDate": "2026-11-18",
+    "eventCount": 4486,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,30 +61,77 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-01",
-    "latest_disclosed_at": "2026-10-01",
+    "latest_disclosed_at": "2026-11-17",
     "role_counts": {
-      "participant": 1
+      "historical_or_ambiguous": 1,
+      "participant": 2
     },
     "round_codes": [
-      "series_a"
+      "series_a",
+      "series_b"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-72cf2441fa286574",
         "canonical_entity_id": "",
         "name": "Halluminate"
+      },
+      {
+        "entity_id": "EN-cb3a9e70e51c2f47",
+        "canonical_entity_id": "",
+        "name": "Model ML"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-4c23db526a318ef9",
+        "funding_insight_id": "FI-ae275335df51578a",
+        "event_ids": [
+          "EV-27b9c5896b1b9c27"
+        ],
+        "company_entity_id": "EN-cb3a9e70e51c2f47",
+        "company_canonical_entity_id": "",
+        "company_name": "Model ML",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$250M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-73109463bc1bff33",
+            "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
+            "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
+            "source_content_hash": "ef0f704125514383",
+            "quote": "with participation from Evolution Equity Partners, Airtree, Forestay Capital, Y Combinator, FT Partners, Latitude, Inception Fund and 13Books Capital",
+            "quote_hash": "e4fcd36e75bff0391e75db813e1a0a2495fd201d8ee50144b6eef3263a013969"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3141525e69597058",
         "funding_insight_id": "FI-5df4f9c7d5d359fa",
@@ -124,9 +171,49 @@
             "quote_hash": "9bf96bfe7f060e80a1ce3cca441c98ec5266a2934d32ceba64d63d2f5c25735a"
           }
         ]
+      },
+      {
+        "activity_id": "IA-6a4cb0752d1ba452",
+        "funding_insight_id": "FI-ae275335df51578a",
+        "event_ids": [
+          "EV-27b9c5896b1b9c27"
+        ],
+        "company_entity_id": "EN-cb3a9e70e51c2f47",
+        "company_canonical_entity_id": "",
+        "company_name": "Model ML",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-73109463bc1bff33",
+            "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
+            "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
+            "source_content_hash": "ef0f704125514383",
+            "quote": "The fundraise follows a $75 million Series A led by FT Partners in November 2025",
+            "quote_hash": "4278bd877e5f7e38e55cef3ce9df2831b44d942a89778d6acc5ff77c908bc2bc"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-73109463bc1bff33",
+        "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
+        "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
+        "source_content_hash": "ef0f704125514383",
+        "quote": "with participation from Evolution Equity Partners, Airtree, Forestay Capital, Y Combinator, FT Partners, Latitude, Inception Fund and 13Books Capital",
+        "quote_hash": "e4fcd36e75bff0391e75db813e1a0a2495fd201d8ee50144b6eef3263a013969"
+      },
       {
         "source_id": "FISRC-4799c620c14fef7b",
         "source_url": "https://www.halluminate.ai/blog/series-a",
@@ -134,6 +221,14 @@
         "source_content_hash": "d6cd6d2cc6fbb3d215d709d3b622c3a54794cdc369d5b3d82a9e948c3a1a3ed4",
         "quote": "we've raised $30 million in Series A funding led by Oak HC/FT with participation from YCombinator, Orange Collective, FT Partners, and Heavybit.",
         "quote_hash": "9bf96bfe7f060e80a1ce3cca441c98ec5266a2934d32ceba64d63d2f5c25735a"
+      },
+      {
+        "source_id": "FISRC-73109463bc1bff33",
+        "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
+        "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
+        "source_content_hash": "ef0f704125514383",
+        "quote": "The fundraise follows a $75 million Series A led by FT Partners in November 2025",
+        "quote_hash": "4278bd877e5f7e38e55cef3ce9df2831b44d942a89778d6acc5ff77c908bc2bc"
       }
     ],
     "public_profile": {
@@ -159,6 +254,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Model ML · B轮 · 2026-11-17 · 本轮参投 · $250M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-73109463bc1bff33"
+        },
+        {
           "description": "融资来源记录：Halluminate · A轮 · 2026-10-01 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4799c620c14fef7b"
         }
@@ -180,6 +279,14 @@
           "source_content_hash": "9e19fbd5f0d45bd2629b5987676c43f082ff9abcc89801f02da5fcf87f6d6f07",
           "quote": "The Only Investment Bank Focused Exclusively on FinTech San Francisco New York Miami London Subscribe to our Newsletter About FT Partners News & Media Advisory Services Why FT Partners?",
           "quote_hash": "21a9341430c5b9a135062f29bc9051215962988f6486f141c6db52ef55fcc809"
+        },
+        {
+          "source_id": "FISRC-73109463bc1bff33",
+          "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
+          "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
+          "source_content_hash": "ef0f704125514383",
+          "quote": "with participation from Evolution Equity Partners, Airtree, Forestay Capital, Y Combinator, FT Partners, Latitude, Inception Fund and 13Books Capital",
+          "quote_hash": "e4fcd36e75bff0391e75db813e1a0a2495fd201d8ee50144b6eef3263a013969"
         },
         {
           "source_id": "FISRC-4799c620c14fef7b",

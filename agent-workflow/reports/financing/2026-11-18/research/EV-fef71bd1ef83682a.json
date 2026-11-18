@@ -1,0 +1,94 @@
+{
+  "event_id": "EV-fef71bd1ef83682a",
+  "company_name": "Genesis AI",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "Genesis AI 以 35 亿美元估值融资 5 亿美元，将其机器人引入工厂和仓库",
+    "event_source_refs": [
+      "SA-a1bb6fe68e1b55b3"
+    ],
+    "event_claim_refs": [
+      "CL-6e817b1c8b564ede",
+      "CL-d9bfb771937f3104"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-101728598901182a",
+        "canonical_name": "Genesis AI"
+      }
+    ],
+    "event_metrics": [
+      "$500 million",
+      "$3.5 billion",
+      "$105 million"
+    ],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-6e817b1c8b564ede",
+        "raw_id": "RAW-770f6ef3222b8014",
+        "subject": "Genesis AI",
+        "object": "$500M At $3.5B Valuation To Bring Its Robots To Factories And Warehouses",
+        "source_quote_length": 155
+      },
+      {
+        "claim_id": "CL-d9bfb771937f3104",
+        "raw_id": "RAW-770f6ef3222b8014",
+        "subject": "Genesis AI",
+        "object": "$500M At $3.5B Valuation To Bring Its Robots To Factories And Warehouses",
+        "source_quote_length": 60
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 2,
+    "resolved_company": "Genesis AI"
+  },
+  "queries": [
+    "\"Genesis AI\" 2026 funding round investors",
+    "\"Genesis AI\" $500 million funding announcement",
+    "\"Genesis AI\" official product customers",
+    "\"Genesis AI\" \"why we invested\"",
+    "\"Genesis AI\" 2026 raises led by",
+    "\"Genesis AI\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "bing_rss",
+      "query": "\"Genesis AI\" 2026 funding round investors",
+      "status": "completed",
+      "count": 7
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"Genesis AI\" $500 million funding announcement",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"Genesis AI\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"Genesis AI\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"Genesis AI\" 2026 raises led by",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"Genesis AI\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}

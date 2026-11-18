@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-17",
-    "currentDate": "2026-11-17",
-    "eventCount": 4474,
+    "latestDataDate": "2026-11-18",
+    "currentDate": "2026-11-18",
+    "eventCount": 4486,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-21",
-    "latest_disclosed_at": "2026-05-21",
+    "latest_disclosed_at": "2026-11-17",
     "role_counts": {
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
       "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-cb3a9e70e51c2f47",
+        "canonical_entity_id": "",
+        "name": "Model ML"
+      },
       {
         "entity_id": "EN-d6386c59a6bcfcb1",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-99e60b34f9fcba0b",
+        "funding_insight_id": "FI-ae275335df51578a",
+        "event_ids": [
+          "EV-27b9c5896b1b9c27"
+        ],
+        "company_entity_id": "EN-cb3a9e70e51c2f47",
+        "company_canonical_entity_id": "",
+        "company_name": "Model ML",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$250M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-73109463bc1bff33",
+            "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
+            "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
+            "source_content_hash": "ef0f704125514383",
+            "quote": "with participation from Evolution Equity Partners, Airtree, Forestay Capital, Y Combinator, FT Partners, Latitude, Inception Fund and 13Books Capital",
+            "quote_hash": "e4fcd36e75bff0391e75db813e1a0a2495fd201d8ee50144b6eef3263a013969"
+          }
+        ]
+      },
       {
         "activity_id": "IA-66a853ec9f0d53f3",
         "funding_insight_id": "FI-d3ef6c0ebcd62288",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-73109463bc1bff33",
+        "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
+        "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
+        "source_content_hash": "ef0f704125514383",
+        "quote": "with participation from Evolution Equity Partners, Airtree, Forestay Capital, Y Combinator, FT Partners, Latitude, Inception Fund and 13Books Capital",
+        "quote_hash": "e4fcd36e75bff0391e75db813e1a0a2495fd201d8ee50144b6eef3263a013969"
+      },
+      {
         "source_id": "FISRC-58b2708f2adcb70e",
         "source_url": "https://thenextweb.com/news/pivot-40m-series-b-agentic-ai-procurement-operating-system",
         "source_title": "Pivot 获4000万美元B轮融资，推企业级AI代理采购操作系统，解决遗留软件未修复的问题",
@@ -155,6 +209,10 @@
           "source_id": "pivot_official_round"
         },
         {
+          "description": "融资来源记录：Model ML · B轮 · 2026-11-17 · 本轮参投 · $250M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-73109463bc1bff33"
+        },
+        {
           "description": "融资来源记录：Pivot · B轮 · 2026-05-21 · 本轮领投 · $40m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-58b2708f2adcb70e"
         }
@@ -175,6 +233,14 @@
           "source_content_hash": "4f71a3cc4003ad4882a843ebaf26ba0f3c3fb27f3d18b933cc7d450285466929",
           "quote": "The oversubscribed round was led by Forestay Capital and Notion Capital, with participation from Greyhound and procurement industry veterans",
           "quote_hash": "d3371a52f4eb75141e11d8d62c09db27c67078a7eefd0dfe00afb9ff8a3bc19c"
+        },
+        {
+          "source_id": "FISRC-73109463bc1bff33",
+          "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
+          "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
+          "source_content_hash": "ef0f704125514383",
+          "quote": "with participation from Evolution Equity Partners, Airtree, Forestay Capital, Y Combinator, FT Partners, Latitude, Inception Fund and 13Books Capital",
+          "quote_hash": "e4fcd36e75bff0391e75db813e1a0a2495fd201d8ee50144b6eef3263a013969"
         },
         {
           "source_id": "FISRC-58b2708f2adcb70e",

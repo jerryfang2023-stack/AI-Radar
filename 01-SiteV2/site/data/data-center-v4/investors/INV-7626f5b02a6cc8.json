@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-17",
-    "currentDate": "2026-11-17",
-    "eventCount": 4474,
+    "latestDataDate": "2026-11-18",
+    "currentDate": "2026-11-18",
+    "eventCount": 4486,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,24 +63,25 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 18,
+    "current_round_count": 19,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 16,
+    "portfolio_company_count": 17,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-05-06",
-    "latest_disclosed_at": "2026-11-10",
+    "latest_disclosed_at": "2026-11-16",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 4,
-      "lead": 7,
+      "lead": 8,
       "participant": 9
     },
     "round_codes": [
       "other",
+      "seed",
       "series_a",
       "series_b",
       "series_c",
@@ -90,6 +91,11 @@
       "series_h"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-7a61d6fcd1c55451",
+        "canonical_entity_id": "",
+        "name": "Alecto"
+      },
       {
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
@@ -172,6 +178,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1f41844ba92def14",
+        "funding_insight_id": "FI-ad6591d548b068cb",
+        "event_ids": [
+          "EV-1d425fbf0768f5a9"
+        ],
+        "company_entity_id": "EN-7a61d6fcd1c55451",
+        "company_canonical_entity_id": "",
+        "company_name": "Alecto",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "€18 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 18000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1800 万欧元"
+        },
+        "announced_at": "2026-11-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-4e9ab0fad1358cd1",
+            "source_url": "https://www.eu-startups.com/2026/11/alecto-lands-e18-million-to-scale-its-ai-powered-law-firm-beyond-property-transactions/",
+            "source_title": "Alecto 获 €18 million，以将其 AI 驱动的律师事务所业务扩展至房地产交易之外",
+            "source_content_hash": "5aaad66ff952122cd2e6f6fbfae0ea01a710845bb8203d41058532f2b039e796",
+            "quote": "The round was led by Insight Partners",
+            "quote_hash": "a0ee69b6f7e5d0d2608893d3ab3943f2770e3b6cd099e21bb7c816650c5aaa01"
+          }
+        ]
+      },
       {
         "activity_id": "IA-cb1833608cbc7354",
         "funding_insight_id": "FI-4df12f9d73d6a9a3",
@@ -1034,6 +1080,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-4e9ab0fad1358cd1",
+        "source_url": "https://www.eu-startups.com/2026/11/alecto-lands-e18-million-to-scale-its-ai-powered-law-firm-beyond-property-transactions/",
+        "source_title": "Alecto 获 €18 million，以将其 AI 驱动的律师事务所业务扩展至房地产交易之外",
+        "source_content_hash": "5aaad66ff952122cd2e6f6fbfae0ea01a710845bb8203d41058532f2b039e796",
+        "quote": "The round was led by Insight Partners",
+        "quote_hash": "a0ee69b6f7e5d0d2608893d3ab3943f2770e3b6cd099e21bb7c816650c5aaa01"
+      },
+      {
         "source_id": "FISRC-e5678cb427ad6e69",
         "source_url": "https://www.prnewswire.com/news-releases/charta-health-raises-55-million-series-b-to-establish-a-shared-standard-of-accuracy-in-healthcare-billing-302934401.html",
         "source_title": "Charta Health 完成 5500 万美元 B 轮融资，旨在建立医疗账单准确性的共享标准",
@@ -1259,16 +1313,16 @@
           "source_id": "insight_media"
         },
         {
+          "description": "融资来源记录：Alecto · 种子轮 · 2026-11-16 · 本轮领投 · €18 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4e9ab0fad1358cd1"
+        },
+        {
           "description": "融资来源记录：Charta Health · B轮 · 2026-11-10 · 本轮领投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e5678cb427ad6e69"
         },
         {
           "description": "融资来源记录：SPARETECH · B轮 · 2026-11-10 · 本轮联合领投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-124895804c23694c"
-        },
-        {
-          "description": "融资来源记录：Nominal · C轮 · 2026-11-09 · 本轮联合领投 · $240 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-320dc636ecb880b5"
         }
       ],
       "contacts": [
@@ -1326,6 +1380,14 @@
           "quote_hash": "5384858027688c8f977287dfc08a527d40044033e1bf6d0114bdb609ec48472a"
         },
         {
+          "source_id": "FISRC-4e9ab0fad1358cd1",
+          "source_url": "https://www.eu-startups.com/2026/11/alecto-lands-e18-million-to-scale-its-ai-powered-law-firm-beyond-property-transactions/",
+          "source_title": "Alecto 获 €18 million，以将其 AI 驱动的律师事务所业务扩展至房地产交易之外",
+          "source_content_hash": "5aaad66ff952122cd2e6f6fbfae0ea01a710845bb8203d41058532f2b039e796",
+          "quote": "The round was led by Insight Partners",
+          "quote_hash": "a0ee69b6f7e5d0d2608893d3ab3943f2770e3b6cd099e21bb7c816650c5aaa01"
+        },
+        {
           "source_id": "FISRC-e5678cb427ad6e69",
           "source_url": "https://www.prnewswire.com/news-releases/charta-health-raises-55-million-series-b-to-establish-a-shared-standard-of-accuracy-in-healthcare-billing-302934401.html",
           "source_title": "Charta Health 完成 5500 万美元 B 轮融资，旨在建立医疗账单准确性的共享标准",
@@ -1340,14 +1402,6 @@
           "source_content_hash": "f0a2a16668cb5e63863e666e10fecc43c9e7ec2cded5ba06cd1d846ca372bf09",
           "quote": "Blume Equity and Insight Partners co-led the round, with participation from Headline.",
           "quote_hash": "b60a47706a76628419a7ecd5c7cd0562db4db6fc054eacec48549400d5f81d43"
-        },
-        {
-          "source_id": "FISRC-320dc636ecb880b5",
-          "source_url": "https://techcrunch.com/2026/11/09/ai-hardware-startup-nominal-triples-valuation-to-3b-in-8-months",
-          "source_title": "AI硬件初创公司Nominal在8个月内估值翻三倍至$3B",
-          "source_content_hash": "395f515bfc146588ed95dda61bb9b08e352097ec46d713248bcd91ff20c4a3c2",
-          "quote": "a $240 million Series C at a $3 billion valuation led by Lightspeed Venture Partners and co-led by Insight Partners.",
-          "quote_hash": "a66e9c1b5c766bb0b7208c185cc6fd577939d39fcae65e2411372ca398aef9f4"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1358,7 +1412,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[18].role": {
+        "activities[19].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

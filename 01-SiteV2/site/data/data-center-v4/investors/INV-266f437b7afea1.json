@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-17",
-    "currentDate": "2026-11-17",
-    "eventCount": 4474,
+    "latestDataDate": "2026-11-18",
+    "currentDate": "2026-11-18",
+    "eventCount": 4486,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,14 +54,16 @@
   },
   "institution": {
     "id": "INV-266f437b7afea1",
-    "name": "UK Sovereign AI Fund",
-    "aliases": [],
+    "name": "U.K. Sovereign AI Fund",
+    "aliases": [
+      "UK Sovereign AI Fund"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "government_fund",
     "investor_kind_label": "政府或主权基金",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 2,
     "market_regions": [
@@ -70,12 +72,13 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-12",
-    "latest_disclosed_at": "2026-10-04",
+    "latest_disclosed_at": "2026-11-17",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
-      "series_b"
+      "series_b",
+      "series_c"
     ],
     "portfolio_companies": [
       {
@@ -90,6 +93,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a4a8fc8ccea5d71a",
+        "funding_insight_id": "FI-9647078abba53f06",
+        "event_ids": [
+          "EV-86165eebaf4622fd"
+        ],
+        "company_entity_id": "EN-37799d436602eaf1",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$5 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿美元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c4b7e80cb7863d47",
+            "source_url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
+            "source_title": "Isomorphic Labs 融资 50 亿美元，拟将候选药物推进临床试验",
+            "source_content_hash": "69ca96b09e5f9b3698e78f74bf202e70c1f5d21f791557981cbae6115c03e7c9",
+            "quote": "All of the company’s existing backers, including Alphabet’s venture divisions GV and Capita G, Thrive Capital, MGX, Temasek, and the U.K. Sovereign AI Fund, also invested.",
+            "quote_hash": "e93dc23553205c624e3a7bd8a92d4938c04a0f7a947088fa657614dd6b883065"
+          }
+        ]
+      },
       {
         "activity_id": "IA-be5e5c91275568cf",
         "funding_insight_id": "FI-8650a7a5be9be749",
@@ -181,6 +224,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c4b7e80cb7863d47",
+        "source_url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
+        "source_title": "Isomorphic Labs 融资 50 亿美元，拟将候选药物推进临床试验",
+        "source_content_hash": "69ca96b09e5f9b3698e78f74bf202e70c1f5d21f791557981cbae6115c03e7c9",
+        "quote": "All of the company’s existing backers, including Alphabet’s venture divisions GV and Capita G, Thrive Capital, MGX, Temasek, and the U.K. Sovereign AI Fund, also invested.",
+        "quote_hash": "e93dc23553205c624e3a7bd8a92d4938c04a0f7a947088fa657614dd6b883065"
+      },
+      {
         "source_id": "FISRC-82c9573ed9c6ba66",
         "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
         "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
@@ -236,6 +287,10 @@
           "source_id": "isomorphic"
         },
         {
+          "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮参投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4b7e80cb7863d47"
+        },
+        {
           "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-10-04 · 本轮参投 · 21亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-82c9573ed9c6ba66"
         },
@@ -269,6 +324,14 @@
           "source_content_hash": "a07df13d4da3856b30e323f1634988ea0b4839b1a4c16d2132d48a43ac3296ab",
           "quote": "ackers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund, significantly expanding Isomorphic Labs&#x27; global capital base. The new capital will be used for the continued development and deployment of Isomorphic Labs&#x27; AI drug design engine (IsoDDE), accelerating and expanding its pipe",
           "quote_hash": "b4b9f501a7c68f81a135c1c6f35920b2231d47d223d0b0b89e80d7557581a76e"
+        },
+        {
+          "source_id": "FISRC-c4b7e80cb7863d47",
+          "source_url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
+          "source_title": "Isomorphic Labs 融资 50 亿美元，拟将候选药物推进临床试验",
+          "source_content_hash": "69ca96b09e5f9b3698e78f74bf202e70c1f5d21f791557981cbae6115c03e7c9",
+          "quote": "All of the company’s existing backers, including Alphabet’s venture divisions GV and Capita G, Thrive Capital, MGX, Temasek, and the U.K. Sovereign AI Fund, also invested.",
+          "quote_hash": "e93dc23553205c624e3a7bd8a92d4938c04a0f7a947088fa657614dd6b883065"
         },
         {
           "source_id": "FISRC-82c9573ed9c6ba66",

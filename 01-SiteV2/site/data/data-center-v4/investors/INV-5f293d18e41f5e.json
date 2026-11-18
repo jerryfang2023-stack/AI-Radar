@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-17",
-    "currentDate": "2026-11-17",
-    "eventCount": 4474,
+    "latestDataDate": "2026-11-18",
+    "currentDate": "2026-11-18",
+    "eventCount": 4486,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,7 +61,7 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 9,
+    "current_round_count": 10,
     "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 9,
     "market_regions": [
@@ -70,12 +70,12 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-06-28",
-    "latest_disclosed_at": "2026-11-11",
+    "latest_disclosed_at": "2026-11-17",
     "role_counts": {
       "co_lead": 3,
       "historical_or_ambiguous": 1,
       "lead": 3,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
@@ -134,6 +134,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b0633934b859663f",
+        "funding_insight_id": "FI-9647078abba53f06",
+        "event_ids": [
+          "EV-86165eebaf4622fd"
+        ],
+        "company_entity_id": "EN-37799d436602eaf1",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$5 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿美元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c4b7e80cb7863d47",
+            "source_url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
+            "source_title": "Isomorphic Labs 融资 50 亿美元，拟将候选药物推进临床试验",
+            "source_content_hash": "69ca96b09e5f9b3698e78f74bf202e70c1f5d21f791557981cbae6115c03e7c9",
+            "quote": "All of the company’s existing backers, including Alphabet’s venture divisions GV and Capita G, Thrive Capital, MGX, Temasek, and the U.K. Sovereign AI Fund, also invested.",
+            "quote_hash": "e93dc23553205c624e3a7bd8a92d4938c04a0f7a947088fa657614dd6b883065"
+          }
+        ]
+      },
       {
         "activity_id": "IA-69d187695a3f52e2",
         "funding_insight_id": "FI-70d164861fee0af8",
@@ -553,6 +593,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c4b7e80cb7863d47",
+        "source_url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
+        "source_title": "Isomorphic Labs 融资 50 亿美元，拟将候选药物推进临床试验",
+        "source_content_hash": "69ca96b09e5f9b3698e78f74bf202e70c1f5d21f791557981cbae6115c03e7c9",
+        "quote": "All of the company’s existing backers, including Alphabet’s venture divisions GV and Capita G, Thrive Capital, MGX, Temasek, and the U.K. Sovereign AI Fund, also invested.",
+        "quote_hash": "e93dc23553205c624e3a7bd8a92d4938c04a0f7a947088fa657614dd6b883065"
+      },
+      {
         "source_id": "FISRC-038f46a4355e8569",
         "source_url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips",
         "source_title": "英国 Fractile 完成 7.2 亿美元融资，在 AI 芯片竞赛中占据优势",
@@ -681,12 +729,12 @@
       "experience_summary": "官网公开内容支持其为科技领域投资机构，并提供一般联络渠道；未从第三方报道推断未披露的基金规模、个人履历或回报表现。",
       "track_record": [
         {
-          "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮联合领投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-038f46a4355e8569"
+          "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮参投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4b7e80cb7863d47"
         },
         {
-          "description": "融资来源记录：Ramp · 轮次未披露 · 2026-10-15 · 本轮联合领投 · $1.85 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f581afce52cf5bef"
+          "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮联合领投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-038f46a4355e8569"
         }
       ],
       "contacts": [
@@ -730,6 +778,14 @@
           "quote_hash": "bf8f75c2a6fb056494a728ec92284b1773f900b34abf39f6e24f5a9f07235291"
         },
         {
+          "source_id": "FISRC-c4b7e80cb7863d47",
+          "source_url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
+          "source_title": "Isomorphic Labs 融资 50 亿美元，拟将候选药物推进临床试验",
+          "source_content_hash": "69ca96b09e5f9b3698e78f74bf202e70c1f5d21f791557981cbae6115c03e7c9",
+          "quote": "All of the company’s existing backers, including Alphabet’s venture divisions GV and Capita G, Thrive Capital, MGX, Temasek, and the U.K. Sovereign AI Fund, also invested.",
+          "quote_hash": "e93dc23553205c624e3a7bd8a92d4938c04a0f7a947088fa657614dd6b883065"
+        },
+        {
           "source_id": "FISRC-038f46a4355e8569",
           "source_url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips",
           "source_title": "英国 Fractile 完成 7.2 亿美元融资，在 AI 芯片竞赛中占据优势",
@@ -744,14 +800,6 @@
           "source_content_hash": "97c1f5cc5dda1d68",
           "quote": "Thrive Capital, Founders Fund, Lightspeed and Redpoint co-led the round.",
           "quote_hash": "ea6bb384a47cf21cbbbf5c4cf629c2d466cddb2aeb73964f923340e31bba8081"
-        },
-        {
-          "source_id": "FISRC-f581afce52cf5bef",
-          "source_url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
-          "source_title": "Ramp估值达600亿美元，深入布局AI",
-          "source_content_hash": "61976b793d3a1971357eaeee08901098f4e7dfaa71e53b3e434bfe9d31aeb80e",
-          "quote": "The financing was co-led by Dragoneer Investment Group, Thrive Capital, Founders Fund, Sands Capital, and Avenir Growth.",
-          "quote_hash": "f51f43c20ed94c008d5eb4b1abbcb23d26adeb696bc7b69f874cef8d31d80d73"
         }
       ],
       "last_verified_at": "2026-09-26",

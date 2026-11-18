@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-17",
-    "currentDate": "2026-11-17",
-    "eventCount": 4474,
+    "latestDataDate": "2026-11-18",
+    "currentDate": "2026-11-18",
+    "eventCount": 4486,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-11-17",
+    "latest_disclosed_at": "2026-11-17",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-cb3a9e70e51c2f47",
+        "canonical_entity_id": "",
+        "name": "Model ML"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-ab74f806cd638c6f",
+        "funding_insight_id": "FI-ae275335df51578a",
+        "event_ids": [
+          "EV-27b9c5896b1b9c27"
+        ],
+        "company_entity_id": "EN-cb3a9e70e51c2f47",
+        "company_canonical_entity_id": "",
+        "company_name": "Model ML",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$250M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-73109463bc1bff33",
+            "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
+            "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
+            "source_content_hash": "ef0f704125514383",
+            "quote": "with participation from Evolution Equity Partners, Airtree, Forestay Capital, Y Combinator, FT Partners, Latitude, Inception Fund and 13Books Capital",
+            "quote_hash": "e4fcd36e75bff0391e75db813e1a0a2495fd201d8ee50144b6eef3263a013969"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b83e39ab79db13af",
         "funding_insight_id": "FI-b875723282f11479",
@@ -112,6 +161,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-73109463bc1bff33",
+        "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
+        "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
+        "source_content_hash": "ef0f704125514383",
+        "quote": "with participation from Evolution Equity Partners, Airtree, Forestay Capital, Y Combinator, FT Partners, Latitude, Inception Fund and 13Books Capital",
+        "quote_hash": "e4fcd36e75bff0391e75db813e1a0a2495fd201d8ee50144b6eef3263a013969"
+      },
+      {
         "source_id": "FISRC-7e527e219a6701a1",
         "source_url": "https://sacra.com/c/legora/",
         "source_title": "Legora revenue, valuation & funding",
@@ -122,7 +179,7 @@
     ],
     "translations": {
       "zh-CN": {
-        "activities[0].role": {
+        "activities[1].role": {
           "text": "Series D extension 参投",
           "source_hash": "e20b9a76b81491aa8ba2e1f48187b5351fcc3ee1ce70129ab6056f9739c85b03",
           "provider": "deepseek",
@@ -137,10 +194,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Airtree 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Airtree 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Model ML · B轮 · 2026-11-17 · 本轮参投 · $250M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-73109463bc1bff33"
+        },
         {
           "description": "融资来源记录：Legora · 历史轮次未披露 · Series D extension 参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7e527e219a6701a1"
@@ -148,6 +209,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-73109463bc1bff33",
+          "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
+          "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
+          "source_content_hash": "ef0f704125514383",
+          "quote": "with participation from Evolution Equity Partners, Airtree, Forestay Capital, Y Combinator, FT Partners, Latitude, Inception Fund and 13Books Capital",
+          "quote_hash": "e4fcd36e75bff0391e75db813e1a0a2495fd201d8ee50144b6eef3263a013969"
+        },
         {
           "source_id": "FISRC-7e527e219a6701a1",
           "source_url": "https://sacra.com/c/legora/",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-17",
-    "currentDate": "2026-11-17",
-    "eventCount": 4474,
+    "latestDataDate": "2026-11-18",
+    "currentDate": "2026-11-18",
+    "eventCount": 4486,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -59,6 +59,7 @@
     "typeLabel": "行业",
     "valueId": "legal_services",
     "eventIds": [
+      "EV-1d425fbf0768f5a9",
       "EV-e124ba0fc4fef3c0",
       "EV-ef669a52c9a3f94f",
       "EV-ab839326ca9597d8",
@@ -85,6 +86,7 @@
       "EV-22c88b4ff8c7d8d8"
     ],
     "entityIds": [
+      "EN-7a61d6fcd1c55451",
       "EN-8bacc14fb816a980",
       "EN-1d79127e9d90e89b",
       "EN-05bb7905b99d8025",
@@ -113,9 +115,92 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2026-05-22",
-    "lastSeen": "2026-10-02"
+    "lastSeen": "2026-11-18"
   },
   "events": [
+    {
+      "id": "EV-1d425fbf0768f5a9",
+      "dataDate": "2026-11-18",
+      "date": "2026-11-16",
+      "updatedDate": "2026-11-16",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Alecto 获 €18 million，以将其 AI 驱动的律师事务所业务扩展至房地产交易之外",
+      "originalTitle": "Alecto lands €18 million to scale its AI-powered law firm beyond property transactions",
+      "subject": "Alecto",
+      "action": "funding",
+      "object": "€18 million Seed round",
+      "metrics": [
+        "€18 million",
+        "$20 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "legal_services",
+            "name": "法律服务",
+            "entityIds": [
+              "EN-7a61d6fcd1c55451"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "legal_services",
+          "name": "法律服务",
+          "entityIds": [
+            "EN-7a61d6fcd1c55451"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "legal_services",
+          "name": "法律服务",
+          "entityIds": [
+            "EN-7a61d6fcd1c55451"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7a61d6fcd1c55451"
+      ],
+      "entityNames": [
+        "Alecto"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/11/alecto-lands-e18-million-to-scale-its-ai-powered-law-firm-beyond-property-transactions/",
+      "publisher": "www.eu-startups.com"
+    },
     {
       "id": "EV-e124ba0fc4fef3c0",
       "dataDate": "2026-10-02",
@@ -13747,6 +13832,27 @@
   ],
   "entities": [
     {
+      "id": "EN-7a61d6fcd1c55451",
+      "name": "Alecto",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-1d425fbf0768f5a9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-legal_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-11-16",
+      "lastSeen": "2026-11-18"
+    },
+    {
       "id": "EN-8bacc14fb816a980",
       "name": "Arceus Legal",
       "entityType": "organization_candidate",
@@ -13761,8 +13867,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-legal_services",
+        "TX-technology-agentic_execution",
         "TX-use_case-legal_compliance"
       ],
       "relatedEntityIds": [],
@@ -13809,12 +13915,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-research_discovery",
+        "TX-industry-legal_services",
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-education_learning",
         "TX-product_form-model",
-        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-automotive_transportation",
@@ -13823,7 +13931,6 @@
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-target_user-researcher",
-        "TX-use_case-research_discovery",
         "TX-use_case-content_creation",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
@@ -13831,7 +13938,6 @@
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-consumer",
-        "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
@@ -13868,10 +13974,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-legal_services",
         "TX-technology-agentic_execution",
         "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
-        "TX-industry-legal_services",
         "TX-use_case-legal_compliance",
         "TX-use_case-data_analysis",
         "TX-use_case-knowledge_search",
@@ -14225,14 +14331,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-research_discovery",
+        "TX-industry-legal_services",
         "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-embodied_ai",
         "TX-product_form-model",
-        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips",
@@ -14248,14 +14356,12 @@
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-target_user-researcher",
-        "TX-use_case-research_discovery",
         "TX-technology-speech_audio",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-technology-code_generation",
-        "TX-industry-legal_services",
         "TX-deployment_model-cloud",
         "TX-industry-aerospace_defense",
         "TX-industry-retail_ecommerce",
@@ -14308,7 +14414,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-17"
+      "lastSeen": "2026-11-18"
     },
     {
       "id": "EN-6fae0bc5a895aab8",
@@ -14325,9 +14431,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-legal_services",
+        "TX-industry-manufacturing",
         "TX-industry-media_entertainment",
         "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
@@ -14338,7 +14445,6 @@
         "TX-target_user-developer",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
@@ -14369,10 +14475,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-legal_services",
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-automotive_transportation",
@@ -14382,7 +14489,6 @@
         "TX-product_form-enterprise_software_platform",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
@@ -14414,9 +14520,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-legal_services",
+        "TX-industry-manufacturing",
         "TX-industry-media_entertainment",
         "TX-industry-automotive_transportation",
         "TX-industry-telecommunications",
@@ -14424,7 +14531,6 @@
         "TX-product_form-enterprise_software_platform",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
@@ -14456,11 +14562,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-legal_services",
         "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-industry_applications",
-        "TX-industry-legal_services",
         "TX-use_case-legal_compliance",
         "TX-industry-government_public_sector",
         "TX-use_case-procurement_supply_chain",
@@ -14485,11 +14591,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-legal_services",
         "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
         "TX-use_case-content_creation",
-        "TX-industry-legal_services",
         "TX-use_case-legal_compliance",
         "TX-ai_market_subcategory-legal"
       ],
@@ -14512,12 +14618,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
+        "TX-industry-legal_services",
+        "TX-technology-agentic_execution",
         "TX-target_user-business_user",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-industry_applications",
-        "TX-industry-legal_services",
         "TX-use_case-legal_compliance",
         "TX-ai_market_subcategory-legal"
       ],
@@ -14540,12 +14646,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
+        "TX-industry-legal_services",
+        "TX-technology-agentic_execution",
         "TX-target_user-business_user",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-industry_applications",
-        "TX-industry-legal_services",
         "TX-use_case-legal_compliance",
         "TX-ai_market_subcategory-legal"
       ],
@@ -14571,11 +14677,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-legal_services",
         "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-automotive_transportation",
@@ -14585,7 +14692,6 @@
         "TX-product_form-enterprise_software_platform",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
@@ -14617,11 +14723,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-legal_services",
         "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-automotive_transportation",
@@ -14632,7 +14739,6 @@
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-industry-retail_ecommerce",
         "TX-industry-energy_utilities",
@@ -14663,10 +14769,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
-        "TX-product_form-model",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-legal_services",
+        "TX-industry-manufacturing",
+        "TX-product_form-model",
         "TX-industry-media_entertainment",
         "TX-product_form-end_user_application",
         "TX-industry-automotive_transportation",
@@ -14675,7 +14782,6 @@
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
         "TX-use_case-sales",
-        "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-enterprise_applications",
@@ -14707,9 +14813,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-legal_services",
+        "TX-industry-manufacturing",
         "TX-industry-media_entertainment",
         "TX-product_form-end_user_application",
         "TX-industry-automotive_transportation",
@@ -14718,7 +14825,6 @@
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
         "TX-use_case-sales",
-        "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-enterprise_applications",
@@ -14751,11 +14857,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-legal_services",
         "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
         "TX-target_user-public_sector_user",
-        "TX-industry-legal_services",
         "TX-use_case-legal_compliance",
         "TX-industry-government_public_sector",
         "TX-use_case-procurement_supply_chain",
@@ -14781,10 +14887,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-legal_services",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-automotive_transportation",
@@ -14794,7 +14901,6 @@
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-industry-retail_ecommerce",
         "TX-industry-energy_utilities",
@@ -14825,10 +14931,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-legal_services",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-product_form-end_user_application",
         "TX-industry-automotive_transportation",
@@ -14836,7 +14943,6 @@
         "TX-target_user-business_user",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
@@ -14896,9 +15002,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-legal_services",
         "TX-product_form-model",
         "TX-product_form-chip_accelerator",
-        "TX-industry-legal_services",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
@@ -14922,8 +15028,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-consumer",
-        "TX-industry-legal_services"
+        "TX-industry-legal_services",
+        "TX-target_user-consumer"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-11",
@@ -15518,11 +15624,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-research_discovery",
+        "TX-industry-legal_services",
         "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
-        "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
-        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-product_form-end_user_application",
         "TX-product_form-chip_accelerator",
@@ -15531,12 +15639,10 @@
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-researcher",
-        "TX-use_case-research_discovery",
         "TX-technology-speech_audio",
         "TX-use_case-content_creation",
         "TX-target_user-consumer",
         "TX-technology-code_generation",
-        "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
@@ -15586,7 +15692,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-17"
+      "lastSeen": "2026-11-18"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -16107,12 +16213,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-research_discovery",
+        "TX-industry-legal_services",
         "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-embodied_ai",
         "TX-product_form-model",
-        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-product_form-compute_cloud_service",
         "TX-product_form-chip_accelerator",
@@ -16122,11 +16230,9 @@
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-researcher",
-        "TX-use_case-research_discovery",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-consumer",
-        "TX-industry-legal_services",
         "TX-industry-aerospace_defense",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
@@ -16174,7 +16280,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-11-17"
+      "lastSeen": "2026-11-18"
     }
   ],
   "fde": [

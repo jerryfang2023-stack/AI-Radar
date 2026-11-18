@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-17",
-    "currentDate": "2026-11-17",
-    "eventCount": 4474,
+    "latestDataDate": "2026-11-18",
+    "currentDate": "2026-11-18",
+    "eventCount": 4486,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-16",
-    "latest_disclosed_at": "2026-11-10",
+    "latest_disclosed_at": "2026-11-16",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "seed",
       "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-7a61d6fcd1c55451",
+        "canonical_entity_id": "",
+        "name": "Alecto"
+      },
       {
         "entity_id": "EN-21b747de22dbb757",
         "canonical_entity_id": "",
@@ -91,6 +96,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b71f04893d9e33fc",
+        "funding_insight_id": "FI-ad6591d548b068cb",
+        "event_ids": [
+          "EV-1d425fbf0768f5a9"
+        ],
+        "company_entity_id": "EN-7a61d6fcd1c55451",
+        "company_canonical_entity_id": "",
+        "company_name": "Alecto",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "€18 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 18000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1800 万欧元"
+        },
+        "announced_at": "2026-11-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4e9ab0fad1358cd1",
+            "source_url": "https://www.eu-startups.com/2026/11/alecto-lands-e18-million-to-scale-its-ai-powered-law-firm-beyond-property-transactions/",
+            "source_title": "Alecto 获 €18 million，以将其 AI 驱动的律师事务所业务扩展至房地产交易之外",
+            "source_content_hash": "5aaad66ff952122cd2e6f6fbfae0ea01a710845bb8203d41058532f2b039e796",
+            "quote": "with participation from Firstminute Capital, Blue Lion Global, Andrena Ventures, FJ Labs, Antiportfolio Ventures, the Rigby Group, and Mischon de Reya LLP",
+            "quote_hash": "9f56cfd7dbb3507ca717c1a009b9b2c760456cf7afe71ec1cb2a79e32e01088c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f4bc64a892d06c94",
         "funding_insight_id": "FI-839be02747dd5944",
@@ -174,6 +219,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-4e9ab0fad1358cd1",
+        "source_url": "https://www.eu-startups.com/2026/11/alecto-lands-e18-million-to-scale-its-ai-powered-law-firm-beyond-property-transactions/",
+        "source_title": "Alecto 获 €18 million，以将其 AI 驱动的律师事务所业务扩展至房地产交易之外",
+        "source_content_hash": "5aaad66ff952122cd2e6f6fbfae0ea01a710845bb8203d41058532f2b039e796",
+        "quote": "with participation from Firstminute Capital, Blue Lion Global, Andrena Ventures, FJ Labs, Antiportfolio Ventures, the Rigby Group, and Mischon de Reya LLP",
+        "quote_hash": "9f56cfd7dbb3507ca717c1a009b9b2c760456cf7afe71ec1cb2a79e32e01088c"
+      },
+      {
         "source_id": "FISRC-49f6d3c8199f72d9",
         "source_url": "https://www.prnewswire.com/news-releases/garage-raises-41m-series-b-to-scale-ai-powered-marketplace-for-americas-essential-equipment-surpassing-100m-in-annual-platform-sales-302935598.html",
         "source_title": "Garage 完成 4100 万美元 B 轮融资，以扩展面向美国基础设备的 AI 驱动市场，平台年销售额突破 1 亿美元",
@@ -195,10 +248,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "FJ Labs 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "FJ Labs 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Alecto · 种子轮 · 2026-11-16 · 本轮参投 · €18 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4e9ab0fad1358cd1"
+        },
         {
           "description": "融资来源记录：Garage · B轮 · 2026-11-10 · 本轮参投 · $41 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-49f6d3c8199f72d9"
@@ -210,6 +267,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-4e9ab0fad1358cd1",
+          "source_url": "https://www.eu-startups.com/2026/11/alecto-lands-e18-million-to-scale-its-ai-powered-law-firm-beyond-property-transactions/",
+          "source_title": "Alecto 获 €18 million，以将其 AI 驱动的律师事务所业务扩展至房地产交易之外",
+          "source_content_hash": "5aaad66ff952122cd2e6f6fbfae0ea01a710845bb8203d41058532f2b039e796",
+          "quote": "with participation from Firstminute Capital, Blue Lion Global, Andrena Ventures, FJ Labs, Antiportfolio Ventures, the Rigby Group, and Mischon de Reya LLP",
+          "quote_hash": "9f56cfd7dbb3507ca717c1a009b9b2c760456cf7afe71ec1cb2a79e32e01088c"
+        },
         {
           "source_id": "FISRC-49f6d3c8199f72d9",
           "source_url": "https://www.prnewswire.com/news-releases/garage-raises-41m-series-b-to-scale-ai-powered-marketplace-for-americas-essential-equipment-surpassing-100m-in-annual-platform-sales-302935598.html",

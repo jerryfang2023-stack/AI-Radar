@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-18",
+  "stage": "facts",
+  "command": "backfill-source-title-translations.mjs",
+  "exit_status": 1,
+  "error_code": null,
+  "failure_kind": "execution",
+  "problems": [],
+  "model": {
+    "selected_jobs": 71,
+    "completed": 71,
+    "failures": []
+  },
+  "translation": {
+    "unresolved": 2,
+    "blocking_unresolved": 2,
+    "failures": [
+      {
+        "raw_id": "RAW-de0a87842485a951",
+        "title": "The Lakehouse for AI",
+        "method": "title_translation_generator_failed",
+        "failures": [
+          {
+            "provider": "deepseek",
+            "reason": "title_facts_or_quality_rejected",
+            "attempt": 1,
+            "translated_title": "AI 的 Lakehouse"
+          }
+        ]
+      },
+      {
+        "raw_id": "RAW-3719ef32ffc63ff1",
+        "title": "Isomorphic Labs raises $5 billion in its second mega-round within six months",
+        "method": "title_translation_generator_failed",
+        "failures": [
+          {
+            "provider": "deepseek",
+            "reason": "title_facts_or_quality_rejected",
+            "attempt": 1,
+            "translated_title": "Isomorphic Labs在六个月内完成第二轮大规模融资，募资50亿美元"
+          }
+        ]
+      }
+    ]
+  }
+}
