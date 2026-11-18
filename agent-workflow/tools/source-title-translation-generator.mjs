@@ -370,15 +370,15 @@ export function upsertSourceTitleTranslations(file, updates = []) {
   if (Array.isArray(payload)) payload = { version: "source-title-translations-v1", translations: payload };
   if (!Array.isArray(payload.translations)) payload.translations = [];
   let changed = 0;
-  for (const { sourceTitle = "", zhTitle = "", method = "", model = "", sourceUrl = "" } of updates) {
+  for (const { sourceTitle = "", zhTitle = "", method = "", model = "", sourceUrl = "", requirePublicTitle = false } of updates) {
     const cleanSourceTitle = decodeHtmlEntities(sourceTitle).replace(/\s+/gu, " ").trim();
     const cleanZhTitle = stripGeneratorNoise(zhTitle);
-    if (!generatedTitleTranslationLooksUsable(cleanSourceTitle, cleanZhTitle)) continue;
+    if (!generatedTitleTranslationLooksUsable(cleanSourceTitle, cleanZhTitle, {requirePublicTitle})) continue;
     const key = titleTranslationKey(cleanSourceTitle);
     const existing = payload.translations.find((entry) => titleTranslationKey(entry?.sourceTitle || "") === key);
     if (existing) {
       const existingZh = String(existing.zhTitle || existing.translation || "").trim();
-      if (isApprovedSourceTitleTranslation(existing) && generatedTitleTranslationLooksUsable(cleanSourceTitle, existingZh)) continue;
+      if (isApprovedSourceTitleTranslation(existing) && generatedTitleTranslationLooksUsable(cleanSourceTitle, existingZh, {requirePublicTitle})) continue;
       existing.sourceTitle = cleanSourceTitle;
       existing.zhTitle = cleanZhTitle;
       existing.generatedBy = method || "source_title_translation_generator";

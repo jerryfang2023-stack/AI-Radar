@@ -190,7 +190,7 @@ async function main() {
       });
       if(result.status==='translated' && generatedTitleTranslationLooksUsable(job.sourceTitle,result.titleZh,{requirePublicTitle:job.requirePublicTitle})) {
         upsertSourceTitleTranslations(translationFile,[{sourceTitle:job.sourceTitle,zhTitle:result.titleZh,
-          method:result.method,model:result.model || '',sourceUrl:job.sourceUrl}]);
+          method:result.method,model:result.model || '',sourceUrl:job.sourceUrl,requirePublicTitle:job.requirePublicTitle}]);
       }
       return { job, result };
     }, concurrency)
