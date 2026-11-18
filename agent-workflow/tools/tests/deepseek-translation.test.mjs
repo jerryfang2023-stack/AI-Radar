@@ -344,3 +344,23 @@ test("category title retries retain rejected model passes and remain bounded", a
   assert.equal(resumed.failures[0].translated_title, "AI 湖仓");
   assert.ok(resumed.failures.some(failure => failure.reason === "TimeoutError"));
 });
+
+
+test("event-title upgrades replace a generic-only cache entry without changing Raw cache behavior", async () => {
+  const fs = await import('node:fs');
+  const os = await import('node:os');
+  const path = await import('node:path');
+  const {upsertSourceTitleTranslations} = await import('../source-title-translation-generator.mjs');
+  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'wavesight-title-cache-'));
+  try {
+    const file=path.join(dir,'translations.json');
+    const sourceTitle='The Lakehouse for AI';
+    assert.equal(upsertSourceTitleTranslations(file,[{sourceTitle,zhTitle:'AI 湖仓',method:'deepseek_title_translation'}]),1);
+    assert.equal(upsertSourceTitleTranslations(file,[{sourceTitle,zhTitle:'面向AI的湖仓',method:'deepseek_title_translation'}]),0);
+    assert.equal(upsertSourceTitleTranslations(file,[{sourceTitle,zhTitle:'AI 湖仓',requirePublicTitle:true}]),0);
+    assert.equal(upsertSourceTitleTranslations(file,[{sourceTitle,zhTitle:'面向AI的湖仓',method:'deepseek_title_translation',requirePublicTitle:true}]),1);
+    assert.equal(JSON.parse(fs.readFileSync(file)).translations[0].zhTitle,'面向AI的湖仓');
+    assert.equal(upsertSourceTitleTranslations(file,[{sourceTitle,zhTitle:'AI 数据湖仓',requirePublicTitle:true}]),0);
+    assert.equal(upsertSourceTitleTranslations(file,[{sourceTitle:'News archive',zhTitle:'新闻存档',method:'deepseek_title_translation'}]),1);
+  } finally {fs.rmSync(dir,{recursive:true,force:true});}
+});
