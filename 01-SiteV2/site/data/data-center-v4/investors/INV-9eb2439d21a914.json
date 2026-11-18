@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-17",
-    "currentDate": "2026-11-17",
-    "eventCount": 4474,
+    "latestDataDate": "2026-11-18",
+    "currentDate": "2026-11-18",
+    "eventCount": 4486,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 15,
+    "current_round_count": 16,
     "historical_or_ambiguous_count": 6,
-    "portfolio_company_count": 14,
+    "portfolio_company_count": 15,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-31",
-    "latest_disclosed_at": "2026-11-12",
+    "latest_disclosed_at": "2026-11-17",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 6,
-      "lead": 4,
+      "lead": 5,
       "participant": 10
     },
     "round_codes": [
@@ -156,9 +156,62 @@
         "entity_id": "EN-29e1a488361f12d3",
         "canonical_entity_id": "",
         "name": "Vapi Inc."
+      },
+      {
+        "entity_id": "EN-bca719e04262bbb1",
+        "canonical_entity_id": "",
+        "name": "Voyage Labs"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-02a95d41e28ae507",
+        "funding_insight_id": "FI-25caa12378b2b243",
+        "event_ids": [
+          "EV-0d27ea6892225510"
+        ],
+        "company_entity_id": "EN-bca719e04262bbb1",
+        "company_canonical_entity_id": "",
+        "company_name": "Voyage Labs",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$12 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1200 万美元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-4ec6ed4a69656601",
+            "source_url": "https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant/",
+            "source_title": "Voyage Labs 融资 1200 万美元，用于开发专业 AI 旅行助手",
+            "source_content_hash": "0beb9045d104b2aba43b3330b0a1eb2af397cf85f3c4b9383b93dd424fc4ba13",
+            "quote": "announced $12 million in seed funding led by Kleiner Perkins, with participation from SignalFire and SV Angel",
+            "quote_hash": "4c7ade77ae334d3121a8a7a64686dff2c6eb9df9ad93a4c20f672cbdc31faefb"
+          },
+          {
+            "source_id": "FISRC-9aa7e0bbc5d3e7a1",
+            "source_url": "https://www.prnewswire.com/news-releases/voyage-labs-raises-12m-to-build-atlas-a-personal-ai-agent-that-helps-people-experience-more-of-the-world-302941872.html",
+            "source_title": "Voyage Labs Raises $12M to Build Atlas, a Personal AI Agent That Helps People Experience More of the World",
+            "source_content_hash": "9aa4fd32cfa8aad0",
+            "quote": "raised $12 million in seed funding led by Kleiner Perkins, with participation from SignalFire, SV Angel and several prominent angel investors",
+            "quote_hash": "f275497432650b4bc34b246ef8f6a82b77c19c47a1c1f4d3b7b686f11f62bf03"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6348d08a6a314cef",
         "funding_insight_id": "FI-03bb0617eea57ed6",
@@ -961,6 +1014,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-4ec6ed4a69656601",
+        "source_url": "https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant/",
+        "source_title": "Voyage Labs 融资 1200 万美元，用于开发专业 AI 旅行助手",
+        "source_content_hash": "0beb9045d104b2aba43b3330b0a1eb2af397cf85f3c4b9383b93dd424fc4ba13",
+        "quote": "announced $12 million in seed funding led by Kleiner Perkins, with participation from SignalFire and SV Angel",
+        "quote_hash": "4c7ade77ae334d3121a8a7a64686dff2c6eb9df9ad93a4c20f672cbdc31faefb"
+      },
+      {
+        "source_id": "FISRC-9aa7e0bbc5d3e7a1",
+        "source_url": "https://www.prnewswire.com/news-releases/voyage-labs-raises-12m-to-build-atlas-a-personal-ai-agent-that-helps-people-experience-more-of-the-world-302941872.html",
+        "source_title": "Voyage Labs Raises $12M to Build Atlas, a Personal AI Agent That Helps People Experience More of the World",
+        "source_content_hash": "9aa4fd32cfa8aad0",
+        "quote": "raised $12 million in seed funding led by Kleiner Perkins, with participation from SignalFire, SV Angel and several prominent angel investors",
+        "quote_hash": "f275497432650b4bc34b246ef8f6a82b77c19c47a1c1f4d3b7b686f11f62bf03"
+      },
+      {
         "source_id": "FISRC-91b5c399f66248bf",
         "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
         "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
@@ -1155,16 +1224,12 @@
           "source_id": "kp_about"
         },
         {
+          "description": "融资来源记录：Voyage Labs · 种子轮 · 2026-11-17 · 本轮领投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4ec6ed4a69656601"
+        },
+        {
           "description": "融资来源记录：Mirendil · A轮 · 2026-11-12 · 本轮领投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-91b5c399f66248bf"
-        },
-        {
-          "description": "融资来源记录：Flapping Airplanes · A轮 · 2026-10-21 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d40817bd8696706a"
-        },
-        {
-          "description": "融资来源记录：Modal · D轮 · 2026-10-14 · 本轮参投 · $750 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b54b83abf2f3608c"
         }
       ],
       "contacts": [
@@ -1186,28 +1251,28 @@
           "quote_hash": "ef9f5d49eeaa7661a644ec18334f865187a5bd9565cfd4e41c5149c6687ae704"
         },
         {
+          "source_id": "FISRC-4ec6ed4a69656601",
+          "source_url": "https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant/",
+          "source_title": "Voyage Labs 融资 1200 万美元，用于开发专业 AI 旅行助手",
+          "source_content_hash": "0beb9045d104b2aba43b3330b0a1eb2af397cf85f3c4b9383b93dd424fc4ba13",
+          "quote": "announced $12 million in seed funding led by Kleiner Perkins, with participation from SignalFire and SV Angel",
+          "quote_hash": "4c7ade77ae334d3121a8a7a64686dff2c6eb9df9ad93a4c20f672cbdc31faefb"
+        },
+        {
+          "source_id": "FISRC-9aa7e0bbc5d3e7a1",
+          "source_url": "https://www.prnewswire.com/news-releases/voyage-labs-raises-12m-to-build-atlas-a-personal-ai-agent-that-helps-people-experience-more-of-the-world-302941872.html",
+          "source_title": "Voyage Labs Raises $12M to Build Atlas, a Personal AI Agent That Helps People Experience More of the World",
+          "source_content_hash": "9aa4fd32cfa8aad0",
+          "quote": "raised $12 million in seed funding led by Kleiner Perkins, with participation from SignalFire, SV Angel and several prominent angel investors",
+          "quote_hash": "f275497432650b4bc34b246ef8f6a82b77c19c47a1c1f4d3b7b686f11f62bf03"
+        },
+        {
           "source_id": "FISRC-91b5c399f66248bf",
           "source_url": "https://www.prnewswire.com/news-releases/mirendil-raises-1b-to-democratize-frontier-ai-rd-302937248.html",
           "source_title": "Mirendil 融资 10 亿美元，推动前沿 AI 研发民主化",
           "source_content_hash": "3a507d989858111854c9d6d67f86dec8ab20ab80df74730ee7e6e2d1d313eb67",
           "quote": "we've raised $1B in a Series A, led by Kleiner Perkins and Clearlake Capital",
           "quote_hash": "d905bce0e2c6176188704005b260f64dd8c80eef2f58262dddc988ee3a366009"
-        },
-        {
-          "source_id": "FISRC-d40817bd8696706a",
-          "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
-          "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
-          "source_content_hash": "52d288f9f7f1c202",
-          "quote": "Other participants in the new round included earlier backers Sequoia, GV, and Kleiner Perkins.",
-          "quote_hash": "7cd08033c748194750d851104567a0f7f2723955079dcda7e05f9131dae3bc43"
-        },
-        {
-          "source_id": "FISRC-b54b83abf2f3608c",
-          "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
-          "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
-          "source_content_hash": "ef996bef620416ce",
-          "quote": "Kleiner Perkins joined, and all of our existing investors participated",
-          "quote_hash": "4c38dd29c6b26da641a4ef8bdc693c390bb1c74ce55ef43dfadd3cef58cf0568"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1218,7 +1283,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[15].role": {
+        "activities[16].role": {
           "text": "Seed 参投",
           "source_hash": "5a82b6b5ec5714f4399d33f301da7f41a22fc3218a4bca553666f08acc0877ac",
           "provider": "deepseek",

@@ -1,0 +1,763 @@
+{
+  "event_id": "EV-272eb63ab316040f",
+  "company_name": "LanceDB",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-b1a552d6d4ab018e",
+    "triggered_by_event_id": "EV-272eb63ab316040f",
+    "as_of_date": "2026-11-18",
+    "company": {
+      "entity_id": "EN-57feacd12af9d043",
+      "name": "LanceDB",
+      "full_name": "LanceDB",
+      "website": "https://www.lancedb.com",
+      "summary": "LanceDB 提供面向 AI 的多模态湖仓（multimodal lakehouse），用于训练数据的存储、整理、检索与特征工程，服务前沿模型、世界模型、物理 AI 及企业场景的模型构建者。",
+      "headquarters": "",
+      "founders": [
+        {
+          "name": "Lei Xu",
+          "role": "联合创始人",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-63bd6e9f3e1bf07c",
+              "quote": "Theory partnered with Chang She & Lei Xu at Seed & led their $30m Series A.",
+              "source_content_hash": "f6a14d53d9906413d8bf2a8bcf3ace32e2f7b6a9d0f4851241c137dbbafee991",
+              "quote_hash": "ba59fb70db3253016dd108bff22bb9410a2562c6a31868b98db82355fa2e226e"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "team_size": {
+        "value": "",
+        "observed_at": "",
+        "evidence_refs": []
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0552c4db6b7fbb24",
+          "quote": "we’ve raised $57.5M in our Series B funding to bring the LanceDB multimodal lakehouse to the researchers, model builders, and platform teams working at the frontier.",
+          "source_content_hash": "14eff5c4826ab01e",
+          "quote_hash": "c324be27ab1f721d3f996becf5b38f9cb602fe05df00418475947053660dda95"
+        },
+        {
+          "source_id": "FISRC-63bd6e9f3e1bf07c",
+          "quote": "a lakehouse that stores data for training & inference called Lance",
+          "source_content_hash": "f6a14d53d9906413d8bf2a8bcf3ace32e2f7b6a9d0f4851241c137dbbafee991",
+          "quote_hash": "1c45e9b8b5a1e8fff08c54d046f14eda343e42127aa9659921114e8d3052c35b"
+        }
+      ],
+      "application_entity_id": "EN-57feacd12af9d043",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "B轮",
+      "amount": "$57.5m",
+      "total_raised": "$98.5M",
+      "announced_at": "2026-11-17",
+      "investor_disclosure_status": "disclosed",
+      "investors": [
+        {
+          "name": "Bessemer Venture Partners",
+          "role": "本轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0552c4db6b7fbb24",
+              "quote": "Our Series B is led by Bessemer Venture Partners and Innovation Endeavors with participation from Theory Ventures, Dimension, Swift Ventures, CRV, and Y Combinator",
+              "source_content_hash": "14eff5c4826ab01e",
+              "quote_hash": "ab8945000890056892e6b331541cfbf4d7c28ff7fb4bfa59739b9f984a856888"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Innovation Endeavors",
+          "role": "本轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0552c4db6b7fbb24",
+              "quote": "Our Series B is led by Bessemer Venture Partners and Innovation Endeavors with participation from Theory Ventures, Dimension, Swift Ventures, CRV, and Y Combinator",
+              "source_content_hash": "14eff5c4826ab01e",
+              "quote_hash": "ab8945000890056892e6b331541cfbf4d7c28ff7fb4bfa59739b9f984a856888"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Theory Ventures",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0552c4db6b7fbb24",
+              "quote": "Our Series B is led by Bessemer Venture Partners and Innovation Endeavors with participation from Theory Ventures, Dimension, Swift Ventures, CRV, and Y Combinator",
+              "source_content_hash": "14eff5c4826ab01e",
+              "quote_hash": "ab8945000890056892e6b331541cfbf4d7c28ff7fb4bfa59739b9f984a856888"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Dimension",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0552c4db6b7fbb24",
+              "quote": "Our Series B is led by Bessemer Venture Partners and Innovation Endeavors with participation from Theory Ventures, Dimension, Swift Ventures, CRV, and Y Combinator",
+              "source_content_hash": "14eff5c4826ab01e",
+              "quote_hash": "ab8945000890056892e6b331541cfbf4d7c28ff7fb4bfa59739b9f984a856888"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Swift Ventures",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0552c4db6b7fbb24",
+              "quote": "Our Series B is led by Bessemer Venture Partners and Innovation Endeavors with participation from Theory Ventures, Dimension, Swift Ventures, CRV, and Y Combinator",
+              "source_content_hash": "14eff5c4826ab01e",
+              "quote_hash": "ab8945000890056892e6b331541cfbf4d7c28ff7fb4bfa59739b9f984a856888"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "CRV",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0552c4db6b7fbb24",
+              "quote": "Our Series B is led by Bessemer Venture Partners and Innovation Endeavors with participation from Theory Ventures, Dimension, Swift Ventures, CRV, and Y Combinator",
+              "source_content_hash": "14eff5c4826ab01e",
+              "quote_hash": "ab8945000890056892e6b331541cfbf4d7c28ff7fb4bfa59739b9f984a856888"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Y Combinator",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0552c4db6b7fbb24",
+              "quote": "Our Series B is led by Bessemer Venture Partners and Innovation Endeavors with participation from Theory Ventures, Dimension, Swift Ventures, CRV, and Y Combinator",
+              "source_content_hash": "14eff5c4826ab01e",
+              "quote_hash": "ab8945000890056892e6b331541cfbf4d7c28ff7fb4bfa59739b9f984a856888"
+            }
+          ],
+          "entity_id": "EN-275b0f4a4023d91c"
+        }
+      ],
+      "other_round_investors": [
+        {
+          "name": "Theory",
+          "role": "Series A 领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-63bd6e9f3e1bf07c",
+              "quote": "Theory partnered with Chang She & Lei Xu at Seed & led their $30m Series A.",
+              "source_content_hash": "f6a14d53d9906413d8bf2a8bcf3ace32e2f7b6a9d0f4851241c137dbbafee991",
+              "quote_hash": "ba59fb70db3253016dd108bff22bb9410a2562c6a31868b98db82355fa2e226e"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-63bd6e9f3e1bf07c",
+          "quote": "Today we are thrilled to join Bessemer Venture Partners & Innovation Endeavors, alongside Dimension, Swift Ventures, CRV & Y Combinator, in LanceDB’s $57.5m Series B.",
+          "source_content_hash": "f6a14d53d9906413d8bf2a8bcf3ace32e2f7b6a9d0f4851241c137dbbafee991",
+          "quote_hash": "91fb2e515016a74ec3192a75246408f3cee4bb2d943279b3ecf6f884e0bf8e0c"
+        },
+        {
+          "source_id": "FISRC-0552c4db6b7fbb24",
+          "quote": "Today, we’re pleased to announce that we’ve raised $57.5M in our Series B funding",
+          "source_content_hash": "14eff5c4826ab01e",
+          "quote_hash": "e9b14e2eb543f6b802fb8488f5d55aadb0150cf8077108f98829973eb213f110"
+        },
+        {
+          "source_id": "FISRC-0552c4db6b7fbb24",
+          "quote": "brings our total funding to date to $98.5M",
+          "source_content_hash": "14eff5c4826ab01e",
+          "quote_hash": "2e40fe5e48096bb55a18bff5cc3a7868dc73e231c2f2c791d626fc47792846f1"
+        }
+      ],
+      "round_code": "series_b",
+      "round_original": "B轮",
+      "amount_original": "$57.5m",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 57500000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "5750 万美元"
+      },
+      "total_raised_original": "$98.5M",
+      "total_raised_normalized": {
+        "currency": "USD",
+        "value": 98500000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "9850 万美元"
+      },
+      "risk_markers": [],
+      "disclosures": [
+        {
+          "event_id": "EV-272eb63ab316040f",
+          "round_original": "B轮",
+          "amount": "$57.5m",
+          "announced_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-63bd6e9f3e1bf07c",
+              "quote": "Today we are thrilled to join Bessemer Venture Partners & Innovation Endeavors, alongside Dimension, Swift Ventures, CRV & Y Combinator, in LanceDB’s $57.5m Series B.",
+              "source_content_hash": "f6a14d53d9906413d8bf2a8bcf3ace32e2f7b6a9d0f4851241c137dbbafee991",
+              "quote_hash": "91fb2e515016a74ec3192a75246408f3cee4bb2d943279b3ecf6f884e0bf8e0c"
+            },
+            {
+              "source_id": "FISRC-0552c4db6b7fbb24",
+              "quote": "Today, we’re pleased to announce that we’ve raised $57.5M in our Series B funding",
+              "source_content_hash": "14eff5c4826ab01e",
+              "quote_hash": "e9b14e2eb543f6b802fb8488f5d55aadb0150cf8077108f98829973eb213f110"
+            },
+            {
+              "source_id": "FISRC-0552c4db6b7fbb24",
+              "quote": "brings our total funding to date to $98.5M",
+              "source_content_hash": "14eff5c4826ab01e",
+              "quote_hash": "2e40fe5e48096bb55a18bff5cc3a7868dc73e231c2f2c791d626fc47792846f1"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "disclosed"
+    },
+    "products": [
+      {
+        "name": "Lance 表格式",
+        "description": "面向 AI 训练与推理的开源数据表格式，用于高效操作海量文件集合，支持非结构化数据、列追加、分布式读取与即席 SQL。",
+        "target_customers": "AI 实验室与模型构建者",
+        "features": [
+          "handled unstructured data, column appends, distributed reads, and ad-hoc SQL all at once",
+          "object-storage-native architecture"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-63bd6e9f3e1bf07c",
+            "quote": "Lance allows companies to manipulate massive collections of files in the most efficient way possible for AI.",
+            "source_content_hash": "f6a14d53d9906413d8bf2a8bcf3ace32e2f7b6a9d0f4851241c137dbbafee991",
+            "quote_hash": "a2ee5e71756831ab7320391a0767aac575199c24f7595259af9e0d465063c9f0"
+          },
+          {
+            "source_id": "FISRC-0552c4db6b7fbb24",
+            "quote": "it was the only option that handled unstructured data, column appends, distributed reads, and ad-hoc SQL all at once",
+            "source_content_hash": "14eff5c4826ab01e",
+            "quote_hash": "675bf3f243f080976e1dbb319ff139b4efd6c19eeb1cfaa00a9c680f9eedb965"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [
+      {
+        "name": "Netflix",
+        "industry": "",
+        "use_case": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0552c4db6b7fbb24",
+            "quote": "Our customers include Netflix, Microsoft AI, Runway, Luma AI, and Midjourney.",
+            "source_content_hash": "14eff5c4826ab01e",
+            "quote_hash": "dd04ef7bfff6a6adab2f120b109b2303df7146875b9ab1ca765c0d6231289a8f"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Microsoft AI",
+        "industry": "",
+        "use_case": "以 LanceDB 作为训练数据层，在自有租户与安全策略下对数十亿行图像与代码数据进行训练，分布式推理直接读取该格式。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0552c4db6b7fbb24",
+            "quote": "We rely on LanceDB as the data layer for training across billions of rows of image and code data, with distributed inference reading the format directly across thousands of nodes",
+            "source_content_hash": "14eff5c4826ab01e",
+            "quote_hash": "0cf05d11ef4cf7433e0600bafe38c9cdb967e28cd98eae9d88b7f678e9188ecd"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Runway",
+        "industry": "",
+        "use_case": "在视频生成技术栈中使用 Lance 与 LanceDB Enterprise，让研究人员更快探索训练数据。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0552c4db6b7fbb24",
+            "quote": "We use both Lance and LanceDB Enterprise to provide our researchers a faster way to explore that data at scale.",
+            "source_content_hash": "14eff5c4826ab01e",
+            "quote_hash": "3f402941dfb80dc980a4d3639606201da6bef6e3eeaf6f93ebbd2885fd989f33"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Luma AI",
+        "industry": "",
+        "use_case": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0552c4db6b7fbb24",
+            "quote": "Our customers include Netflix, Microsoft AI, Runway, Luma AI, and Midjourney.",
+            "source_content_hash": "14eff5c4826ab01e",
+            "quote_hash": "dd04ef7bfff6a6adab2f120b109b2303df7146875b9ab1ca765c0d6231289a8f"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Midjourney",
+        "industry": "",
+        "use_case": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0552c4db6b7fbb24",
+            "quote": "Our customers include Netflix, Microsoft AI, Runway, Luma AI, and Midjourney.",
+            "source_content_hash": "14eff5c4826ab01e",
+            "quote_hash": "dd04ef7bfff6a6adab2f120b109b2303df7146875b9ab1ca765c0d6231289a8f"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "comparisons": [],
+    "metrics": [
+      {
+        "label": "本轮融资金额",
+        "value": "$57.5M",
+        "observed_at": "2026-11-17",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0552c4db6b7fbb24",
+            "quote": "we’ve raised $57.5M in our Series B funding",
+            "source_content_hash": "14eff5c4826ab01e",
+            "quote_hash": "d79514583cb2e9c2717d25936e8736db4b0ec91af3c6090cc521925137756355"
+          }
+        ]
+      },
+      {
+        "label": "累计融资额",
+        "value": "$98.5M",
+        "observed_at": "2026-11-17",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0552c4db6b7fbb24",
+            "quote": "brings our total funding to date to $98.5M",
+            "source_content_hash": "14eff5c4826ab01e",
+            "quote_hash": "2e40fe5e48096bb55a18bff5cc3a7868dc73e231c2f2c791d626fc47792846f1"
+          }
+        ]
+      },
+      {
+        "label": "营收同比增长",
+        "value": "more than 10x year over year",
+        "observed_at": "2026-11-17",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0552c4db6b7fbb24",
+            "quote": "Since our Series A last June, revenue has grown by more than 10x year over year.",
+            "source_content_hash": "14eff5c4826ab01e",
+            "quote_hash": "fe81f9a1602d2d0090d5433fd783a1e2fd8dc1203019e3c76d9889334dc67917"
+          }
+        ]
+      },
+      {
+        "label": "开源库累计下载量",
+        "value": "over 120 million",
+        "observed_at": "2026-11-17",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0552c4db6b7fbb24",
+            "quote": "the open source library having been downloaded over 120 million times",
+            "source_content_hash": "14eff5c4826ab01e",
+            "quote_hash": "72e3b046b33f2846d8f80b3237956ca9f0b9a4a14266c1067a0668e6a2f48b6b"
+          }
+        ]
+      },
+      {
+        "label": "开源下载量同比增长",
+        "value": "6x",
+        "observed_at": "2026-11-17",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0552c4db6b7fbb24",
+            "quote": "a 6x growth in total downloads compared to this time last year",
+            "source_content_hash": "14eff5c4826ab01e",
+            "quote_hash": "6d05de419b486f6e44650ee81268ca5c976f2b6586400d63d4bc2b442e35bb68"
+          }
+        ]
+      },
+      {
+        "label": "请求吞吐",
+        "value": "130K+ requests per second",
+        "observed_at": "2026-11-17",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0552c4db6b7fbb24",
+            "quote": "130K+ requests per second, under 210ms P95 latency",
+            "source_content_hash": "14eff5c4826ab01e",
+            "quote_hash": "b7b9916dc40876623b6dcd19793cbc921a9ff38167f39f2ff81d181fac8e84a6"
+          }
+        ]
+      },
+      {
+        "label": "单表向量规模",
+        "value": "Over 40 billion vectors in a single table",
+        "observed_at": "2026-11-17",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0552c4db6b7fbb24",
+            "quote": "Over 40 billion vectors in a single table",
+            "source_content_hash": "14eff5c4826ab01e",
+            "quote_hash": "59e3c90c6ebb49fc7ff7de63d7df72c640c0c177c04c52192477740fd6ef928c"
+          }
+        ]
+      },
+      {
+        "label": "并行训练 GPU 规模",
+        "value": "8K GPUs training in parallel",
+        "observed_at": "2026-11-17",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0552c4db6b7fbb24",
+            "quote": "8K GPUs training in parallel",
+            "source_content_hash": "14eff5c4826ab01e",
+            "quote_hash": "c2efbfb530408b7e292ae1fa7fec85a391ccf10c3f3a6c97d76098c34f3d3417"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Mike Droesch",
+        "quote": "Chang and Lei have spent nearly two decades building core infrastructure that powers many of the world's data platforms, and with LanceDB they're leading one of the most important infrastructure shifts in AI: the move to training models on multimodal data at massive scale",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0552c4db6b7fbb24",
+            "quote": "Chang and Lei have spent nearly two decades building core infrastructure that powers many of the world's data platforms, and with LanceDB they're leading one of the most important infrastructure shifts in AI: the move to training models on multimodal data at massive scale",
+            "source_content_hash": "14eff5c4826ab01e",
+            "quote_hash": "f44354ff281a4983937fbb05f70612bac9aaa3aead63cd14cbb387823815dfd9"
+          }
+        ]
+      },
+      {
+        "speaker": "Kamil Sindi",
+        "quote": "We first started using the Lance format in 2024 because it was the only option that handled unstructured data, column appends, distributed reads, and ad-hoc SQL all at once.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-63bd6e9f3e1bf07c",
+            "quote": "We first started using the Lance format in 2024 because it was the only option that handled unstructured data, column appends, distributed reads & ad-hoc SQL all at once.",
+            "source_content_hash": "f6a14d53d9906413d8bf2a8bcf3ace32e2f7b6a9d0f4851241c137dbbafee991",
+            "quote_hash": "688dfecefccd2e52731d9b2a8dafef1cbf2d03a7f04cbd26c2c006d91456a1e9"
+          }
+        ]
+      },
+      {
+        "speaker": "Suqiang “Jack” Song",
+        "quote": "We rely on LanceDB as the data layer for training across billions of rows of image & code data, with distributed inference reading the format directly across thousands of nodes.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-63bd6e9f3e1bf07c",
+            "quote": "We rely on LanceDB as the data layer for training across billions of rows of image & code data, with distributed inference reading the format directly across thousands of nodes.",
+            "source_content_hash": "f6a14d53d9906413d8bf2a8bcf3ace32e2f7b6a9d0f4851241c137dbbafee991",
+            "quote_hash": "2ae6b4b3e15e9cb9d7cd16c5fe8ef9b0583a699cb0857e8ca8aee58b70bd92d4"
+          }
+        ]
+      },
+      {
+        "speaker": "Max Li",
+        "quote": "With Cosmos 3, we curated roughly a million hours of video using Lance; now we’re taking the next step and training directly from Lance.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0552c4db6b7fbb24",
+            "quote": "With Cosmos 3, we curated roughly a million hours of video using Lance; now we’re taking the next step and training directly from Lance.",
+            "source_content_hash": "14eff5c4826ab01e",
+            "quote_hash": "821d1ff2bddb00140a043095becf07fd05e5d1684b7ff2b7ad0a05ea6f516d2c"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [
+        {
+          "institution": "Bessemer Venture Partners",
+          "speaker": "Mike Droesch",
+          "speaker_role": "Partner at Bessemer Venture Partners",
+          "rationale": "Bessemer 认为 LanceDB 正推动 AI 基础设施向大规模多模态数据训练迁移，且已从广泛采用的开源技术成长为受顶尖 AI 实验室信任的企业平台。",
+          "quote": "Chang and Lei have spent nearly two decades building core infrastructure that powers many of the world's data platforms, and with LanceDB they're leading one of the most important infrastructure shifts in AI: the move to training models on multimodal data at massive scale",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0552c4db6b7fbb24",
+              "quote": "Chang and Lei have spent nearly two decades building core infrastructure that powers many of the world's data platforms, and with LanceDB they're leading one of the most important infrastructure shifts in AI: the move to training models on multimodal data at massive scale",
+              "source_content_hash": "14eff5c4826ab01e",
+              "quote_hash": "f44354ff281a4983937fbb05f70612bac9aaa3aead63cd14cbb387823815dfd9"
+            }
+          ]
+        }
+      ],
+      "capital_judgment": "本轮 $57.5M Series B 由 Bessemer Venture Partners 与 Innovation Endeavors 领投，资本押注的核心变量是：AI 训练与推理的数据层正从传统数据栈转向面向多模态数据的湖仓，而 LanceDB 已具备可验证的规模化信号——营收同比增长超过 10 倍、开源下载量超 1.2 亿次、单表支持超 400 亿向量与 8K GPU 并行训练，并获 Netflix、Microsoft AI、Runway、Luma AI、Midjourney 等客户采用。判断的证据边界在于：来源未披露本轮估值、具体营收金额与客户合同金额，营收增长与下载量均为公司自述口径，尚缺独立审计或第三方验证。",
+      "validated_signals": [
+        "营收自 Series A 以来同比增长超过 10 倍",
+        "开源库累计下载量超过 1.2 亿次，同比增长 6 倍",
+        "单表支持超 400 亿向量、数百 PB 数据",
+        "支持 8K GPU 并行训练",
+        "客户包括 Netflix、Microsoft AI、Runway、Luma AI、Midjourney"
+      ],
+      "risks": [
+        "来源未披露本轮估值与具体营收金额，10 倍增长为公司自述口径，缺乏独立验证",
+        "客户名单仅确认采用关系，未披露合同金额或收入贡献，商业化深度待验证",
+        "130K+ 请求/秒、210ms P95 延迟等性能指标为公司自述，缺少第三方基准对比",
+        "多模态湖仓赛道竞争与数据栈替代周期存在不确定性，来源未提供竞品对比数据"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "ai_infrastructure_software",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "use_case_ids": [
+        "data_analysis",
+        "research_discovery"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "researcher",
+        "business_user"
+      ],
+      "sector": "面向 AI 的多模态湖仓与训练数据基础设施",
+      "investment_thesis": {
+        "statement": "本轮 $57.5M Series B 由 Bessemer Venture Partners 与 Innovation Endeavors 领投，资本押注的核心变量是：AI 训练与推理的数据层正从传统数据栈转向面向多模态数据的湖仓，而 LanceDB 已具备可验证的规模化信号——营收同比增长超过 10 倍、开源下载量超 1.2 亿次、单表支持超 400 亿向量与 8K GPU 并行训练，并获 Netflix、Microsoft AI、Runway、Luma AI、Midjourney 等客户采用。判断的证据边界在于：来源未披露本轮估值、具体营收金额与客户合同金额，营收增长与下载量均为公司自述口径，尚缺独立审计或第三方验证。",
+        "evidence_signals": [
+          "营收自 Series A 以来同比增长超过 10 倍",
+          "开源库累计下载量超过 1.2 亿次，同比增长 6 倍",
+          "单表支持超 400 亿向量、数百 PB 数据",
+          "支持 8K GPU 并行训练",
+          "客户包括 Netflix、Microsoft AI、Runway、Luma AI、Midjourney"
+        ],
+        "risks": [
+          "来源未披露本轮估值与具体营收金额，10 倍增长为公司自述口径，缺乏独立验证",
+          "客户名单仅确认采用关系，未披露合同金额或收入贡献，商业化深度待验证",
+          "130K+ 请求/秒、210ms P95 延迟等性能指标为公司自述，缺少第三方基准对比",
+          "多模态湖仓赛道竞争与数据栈替代周期存在不确定性，来源未提供竞品对比数据"
+        ],
+        "institutional_rationale_status": "disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Lance 表格式",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Lei Xu",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Bessemer Venture Partners",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Innovation Endeavors",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Theory Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Dimension",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Swift Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "CRV",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Y Combinator",
+        "canonical_entity_id": "EN-275b0f4a4023d91c",
+        "canonical_name": "Y Combinator"
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Theory",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Netflix",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Microsoft AI",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Runway",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Luma AI",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Midjourney",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-272eb63ab316040f",
+        "date": "2026-11-17",
+        "title": "面向 AI 的湖仓",
+        "amount": "$57.5m",
+        "source_refs": [
+          "SA-8790abe70fd79692"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-63bd6e9f3e1bf07c",
+        "source_url": "https://tomtunguz.com/the-lakehouse-for-ai/",
+        "title": "面向 AI 的湖仓",
+        "publisher": "tomtunguz.com",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-11-18T00:25:11.772Z",
+        "content_hash": "f6a14d53d9906413d8bf2a8bcf3ace32e2f7b6a9d0f4851241c137dbbafee991",
+        "source_artifact_id": "SA-8790abe70fd79692",
+        "raw_id": "RAW-de0a87842485a951"
+      },
+      {
+        "source_id": "FISRC-0552c4db6b7fbb24",
+        "source_url": "https://www.lancedb.com/blog/lancedb-series-b-funding",
+        "title": "LanceDB Raises $57.5M as AI Research Outgrows the Modern Data Stack",
+        "publisher": "lancedb.com",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-11-18T08:08:38.128Z",
+        "content_hash": "14eff5c4826ab01e",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-11-18T08:08:50.947Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-11-18T08:08:50.947Z",
+    "customer_research": {
+      "status": "verified_customers_found",
+      "verified_customer_count": 5,
+      "searched_source_count": 2
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 1,
+        "unresolved_names": [
+          "Lance 表格式"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 1,
+        "unresolved_names": [
+          "Lei Xu"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-272eb63ab316040f"
+    ],
+    "aggregation": {
+      "key": "EN-57feacd12af9d043|series_b",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "LanceDB Series B 57.5 million November 17 2026"
+  ],
+  "attempts": [
+    {
+      "provider": "codex_public_search",
+      "query": "LanceDB Series B 57.5 million November 17 2026",
+      "url": "https://www.lancedb.com/blog/lancedb-series-b-funding",
+      "status": "completed",
+      "error": ""
+    }
+  ]
+}

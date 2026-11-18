@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-17",
-    "currentDate": "2026-11-17",
-    "eventCount": 4474,
+    "latestDataDate": "2026-11-18",
+    "currentDate": "2026-11-18",
+    "eventCount": 4486,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-25",
-    "latest_disclosed_at": "2026-09-25",
+    "latest_disclosed_at": "2026-11-17",
     "role_counts": {
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
+      "seed",
       "series_b"
     ],
     "portfolio_companies": [
@@ -82,9 +84,62 @@
         "entity_id": "EN-f395aeb2c6e6abc8",
         "canonical_entity_id": "",
         "name": "Outmarket AI"
+      },
+      {
+        "entity_id": "EN-bca719e04262bbb1",
+        "canonical_entity_id": "",
+        "name": "Voyage Labs"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e04bfee2a7c49d3b",
+        "funding_insight_id": "FI-25caa12378b2b243",
+        "event_ids": [
+          "EV-0d27ea6892225510"
+        ],
+        "company_entity_id": "EN-bca719e04262bbb1",
+        "company_canonical_entity_id": "",
+        "company_name": "Voyage Labs",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$12 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1200 万美元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4ec6ed4a69656601",
+            "source_url": "https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant/",
+            "source_title": "Voyage Labs 融资 1200 万美元，用于开发专业 AI 旅行助手",
+            "source_content_hash": "0beb9045d104b2aba43b3330b0a1eb2af397cf85f3c4b9383b93dd424fc4ba13",
+            "quote": "with participation from SignalFire and SV Angel",
+            "quote_hash": "ba0965e966c04d120d1fad46061c9e6293e21e20d341bb74da10ab4cbb5c8106"
+          },
+          {
+            "source_id": "FISRC-9aa7e0bbc5d3e7a1",
+            "source_url": "https://www.prnewswire.com/news-releases/voyage-labs-raises-12m-to-build-atlas-a-personal-ai-agent-that-helps-people-experience-more-of-the-world-302941872.html",
+            "source_title": "Voyage Labs Raises $12M to Build Atlas, a Personal AI Agent That Helps People Experience More of the World",
+            "source_content_hash": "9aa4fd32cfa8aad0",
+            "quote": "with participation from SignalFire, SV Angel and several prominent angel investors",
+            "quote_hash": "683e744c44a37c49367bd947481f10ab170e57cd8698d9d42bdbdbc8db66f77a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-0e8e3c603977ab46",
         "funding_insight_id": "FI-b32b6b9a4c5aed53",
@@ -128,6 +183,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-4ec6ed4a69656601",
+        "source_url": "https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant/",
+        "source_title": "Voyage Labs 融资 1200 万美元，用于开发专业 AI 旅行助手",
+        "source_content_hash": "0beb9045d104b2aba43b3330b0a1eb2af397cf85f3c4b9383b93dd424fc4ba13",
+        "quote": "with participation from SignalFire and SV Angel",
+        "quote_hash": "ba0965e966c04d120d1fad46061c9e6293e21e20d341bb74da10ab4cbb5c8106"
+      },
+      {
+        "source_id": "FISRC-9aa7e0bbc5d3e7a1",
+        "source_url": "https://www.prnewswire.com/news-releases/voyage-labs-raises-12m-to-build-atlas-a-personal-ai-agent-that-helps-people-experience-more-of-the-world-302941872.html",
+        "source_title": "Voyage Labs Raises $12M to Build Atlas, a Personal AI Agent That Helps People Experience More of the World",
+        "source_content_hash": "9aa4fd32cfa8aad0",
+        "quote": "with participation from SignalFire, SV Angel and several prominent angel investors",
+        "quote_hash": "683e744c44a37c49367bd947481f10ab170e57cd8698d9d42bdbdbc8db66f77a"
+      },
+      {
         "source_id": "FISRC-1a2ad9b1108e3f59",
         "source_url": "https://www.prnewswire.com/news-releases/outmarket-ai-raises-34-5m-series-b-to-solidify-position-as-the-1-ai-platform-for-insurance-302891583.html",
         "source_title": "Outmarket AI 完成 3450 万美元 B 轮融资，以巩固其作为保险业排名第 1 的 AI 平台地位",
@@ -158,6 +229,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Voyage Labs · 种子轮 · 2026-11-17 · 本轮参投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4ec6ed4a69656601"
+        },
+        {
           "description": "融资来源记录：Outmarket AI · B轮 · 2026-09-25 · 本轮领投 · $34.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1a2ad9b1108e3f59"
         }
@@ -179,6 +254,22 @@
           "source_content_hash": "1c8455fc382da43a3e38c91f9c619d397a92f5192010e78033ea74c2fe7f7c58",
           "quote": "We started in 2013 as a bootstrapped startup with one goal: disrupt venture capital",
           "quote_hash": "d720d8cf34f84258328e733025fe52869cb239d494f91b20f2eed8856e956969"
+        },
+        {
+          "source_id": "FISRC-4ec6ed4a69656601",
+          "source_url": "https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant/",
+          "source_title": "Voyage Labs 融资 1200 万美元，用于开发专业 AI 旅行助手",
+          "source_content_hash": "0beb9045d104b2aba43b3330b0a1eb2af397cf85f3c4b9383b93dd424fc4ba13",
+          "quote": "with participation from SignalFire and SV Angel",
+          "quote_hash": "ba0965e966c04d120d1fad46061c9e6293e21e20d341bb74da10ab4cbb5c8106"
+        },
+        {
+          "source_id": "FISRC-9aa7e0bbc5d3e7a1",
+          "source_url": "https://www.prnewswire.com/news-releases/voyage-labs-raises-12m-to-build-atlas-a-personal-ai-agent-that-helps-people-experience-more-of-the-world-302941872.html",
+          "source_title": "Voyage Labs Raises $12M to Build Atlas, a Personal AI Agent That Helps People Experience More of the World",
+          "source_content_hash": "9aa4fd32cfa8aad0",
+          "quote": "with participation from SignalFire, SV Angel and several prominent angel investors",
+          "quote_hash": "683e744c44a37c49367bd947481f10ab170e57cd8698d9d42bdbdbc8db66f77a"
         },
         {
           "source_id": "FISRC-1a2ad9b1108e3f59",

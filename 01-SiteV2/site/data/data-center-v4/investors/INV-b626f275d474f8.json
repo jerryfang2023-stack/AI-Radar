@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-17",
-    "currentDate": "2026-11-17",
-    "eventCount": 4474,
+    "latestDataDate": "2026-11-18",
+    "currentDate": "2026-11-18",
+    "eventCount": 4486,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 10,
+    "current_round_count": 11,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 10,
+    "portfolio_company_count": 11,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-11-11",
+    "latest_disclosed_at": "2026-11-17",
     "role_counts": {
       "historical_or_ambiguous": 4,
-      "participant": 10
+      "participant": 11
     },
     "round_codes": [
       "seed",
@@ -133,9 +133,62 @@
         "entity_id": "EN-e4540a7c8404b1be",
         "canonical_entity_id": "",
         "name": "Temporal"
+      },
+      {
+        "entity_id": "EN-bca719e04262bbb1",
+        "canonical_entity_id": "",
+        "name": "Voyage Labs"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-6592ef5d0442c5fb",
+        "funding_insight_id": "FI-25caa12378b2b243",
+        "event_ids": [
+          "EV-0d27ea6892225510"
+        ],
+        "company_entity_id": "EN-bca719e04262bbb1",
+        "company_canonical_entity_id": "",
+        "company_name": "Voyage Labs",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$12 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1200 万美元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4ec6ed4a69656601",
+            "source_url": "https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant/",
+            "source_title": "Voyage Labs 融资 1200 万美元，用于开发专业 AI 旅行助手",
+            "source_content_hash": "0beb9045d104b2aba43b3330b0a1eb2af397cf85f3c4b9383b93dd424fc4ba13",
+            "quote": "with participation from SignalFire and SV Angel",
+            "quote_hash": "ba0965e966c04d120d1fad46061c9e6293e21e20d341bb74da10ab4cbb5c8106"
+          },
+          {
+            "source_id": "FISRC-9aa7e0bbc5d3e7a1",
+            "source_url": "https://www.prnewswire.com/news-releases/voyage-labs-raises-12m-to-build-atlas-a-personal-ai-agent-that-helps-people-experience-more-of-the-world-302941872.html",
+            "source_title": "Voyage Labs Raises $12M to Build Atlas, a Personal AI Agent That Helps People Experience More of the World",
+            "source_content_hash": "9aa4fd32cfa8aad0",
+            "quote": "with participation from SignalFire, SV Angel and several prominent angel investors",
+            "quote_hash": "683e744c44a37c49367bd947481f10ab170e57cd8698d9d42bdbdbc8db66f77a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2c5bc8e218df7b36",
         "funding_insight_id": "FI-70d164861fee0af8",
@@ -667,6 +720,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-4ec6ed4a69656601",
+        "source_url": "https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant/",
+        "source_title": "Voyage Labs 融资 1200 万美元，用于开发专业 AI 旅行助手",
+        "source_content_hash": "0beb9045d104b2aba43b3330b0a1eb2af397cf85f3c4b9383b93dd424fc4ba13",
+        "quote": "with participation from SignalFire and SV Angel",
+        "quote_hash": "ba0965e966c04d120d1fad46061c9e6293e21e20d341bb74da10ab4cbb5c8106"
+      },
+      {
+        "source_id": "FISRC-9aa7e0bbc5d3e7a1",
+        "source_url": "https://www.prnewswire.com/news-releases/voyage-labs-raises-12m-to-build-atlas-a-personal-ai-agent-that-helps-people-experience-more-of-the-world-302941872.html",
+        "source_title": "Voyage Labs Raises $12M to Build Atlas, a Personal AI Agent That Helps People Experience More of the World",
+        "source_content_hash": "9aa4fd32cfa8aad0",
+        "quote": "with participation from SignalFire, SV Angel and several prominent angel investors",
+        "quote_hash": "683e744c44a37c49367bd947481f10ab170e57cd8698d9d42bdbdbc8db66f77a"
+      },
+      {
         "source_id": "FISRC-59233bfbeb9628bf",
         "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
         "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
@@ -823,16 +892,12 @@
           "source_id": "svangel_home"
         },
         {
+          "description": "融资来源记录：Voyage Labs · 种子轮 · 2026-11-17 · 本轮参投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4ec6ed4a69656601"
+        },
+        {
           "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮参投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-59233bfbeb9628bf"
-        },
-        {
-          "description": "融资来源记录：SafeWorld · 种子轮 · 2026-10-06 · 本轮参投 · 超1200万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-98f77610cfcfab94"
-        },
-        {
-          "description": "融资来源记录：Flow Engineering · B轮 · 2026-09-30 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3511f7baf76701e3"
         }
       ],
       "contacts": [
@@ -864,28 +929,28 @@
           "quote_hash": "73957877fab4dd01fd47d32133c70e4996d7e433bbf8dc9f1111438ed6dbcf07"
         },
         {
+          "source_id": "FISRC-4ec6ed4a69656601",
+          "source_url": "https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant/",
+          "source_title": "Voyage Labs 融资 1200 万美元，用于开发专业 AI 旅行助手",
+          "source_content_hash": "0beb9045d104b2aba43b3330b0a1eb2af397cf85f3c4b9383b93dd424fc4ba13",
+          "quote": "with participation from SignalFire and SV Angel",
+          "quote_hash": "ba0965e966c04d120d1fad46061c9e6293e21e20d341bb74da10ab4cbb5c8106"
+        },
+        {
+          "source_id": "FISRC-9aa7e0bbc5d3e7a1",
+          "source_url": "https://www.prnewswire.com/news-releases/voyage-labs-raises-12m-to-build-atlas-a-personal-ai-agent-that-helps-people-experience-more-of-the-world-302941872.html",
+          "source_title": "Voyage Labs Raises $12M to Build Atlas, a Personal AI Agent That Helps People Experience More of the World",
+          "source_content_hash": "9aa4fd32cfa8aad0",
+          "quote": "with participation from SignalFire, SV Angel and several prominent angel investors",
+          "quote_hash": "683e744c44a37c49367bd947481f10ab170e57cd8698d9d42bdbdbc8db66f77a"
+        },
+        {
           "source_id": "FISRC-59233bfbeb9628bf",
           "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
           "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
           "source_content_hash": "97c1f5cc5dda1d68",
           "quote": "Bain Capital Ventures, Shopify Ventures, Balderton, Elad Gil and SV Angel also took part.",
           "quote_hash": "d6815603f40ff173008fb682219c21f18b3981f5af0a1f231df3287bedead2c2"
-        },
-        {
-          "source_id": "FISRC-98f77610cfcfab94",
-          "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
-          "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
-          "source_content_hash": "58fca4c121c8b3b4",
-          "quote": "with participation from Box Group, the Carnegie Mellon University Endowment, Innovation Endeavors, SV Angel and other investors",
-          "quote_hash": "7ba959a00a48a9fab08858152a8a655158589e16881c8596707ebdb569c9351f"
-        },
-        {
-          "source_id": "FISRC-3511f7baf76701e3",
-          "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
-          "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
-          "source_content_hash": "1ada124c6217cee1",
-          "quote": "Sequoia Capital, which led Flow’s Series A, also participated in the round alongside Human Capital, Evantic, SV Angel, Odyssey, EQT",
-          "quote_hash": "b09c8e30d2f6b9988f8b162a75392caf33d384cac041658c4f5189b98b0f4ba0"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -894,7 +959,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[9].role": {
+        "activities[10].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",

@@ -1,6 +1,6 @@
 {
   "version": "FINANCING-PUBLICATION-REVIEW-1",
-  "reviewed_at": "2026-11-12T03:26:05.679450+00:00",
+  "reviewed_at": "2026-11-18T07:56:43.595Z",
   "market_corrections": [
     {
       "event_id": "EV-65154e5eb49c218b",
@@ -831,6 +831,34 @@
       "company_name": "Kutlerri.ai",
       "corroborating_source_id": "FISRC-5598c47b1f45be47",
       "next_action": "verify_original_announcement_date_before_release"
+    },
+    {
+      "event_id": "EV-fef71bd1ef83682a",
+      "status": "pending",
+      "source_url": "https://news.crunchbase.com/venture/robot-factory-workers-genesis-ai-fundraise/",
+      "source_content_hash": "ab68f20bdb2d59683c54ad3c245289b6cae3c787b5b60acde21851c0d8d6271e",
+      "quote": "The company is developing both robots and the AI software that controls them.",
+      "quote_hash": "e7a2c2057928d586a73c25f48c459307e45c902ad4ada0cb8a66e38e088ed6a5",
+      "reason": "主营通用机器人本体及其控制软件，属于机器人本体/具身智能排除范围；并非仅向机器人客户提供一般软件。",
+      "reviewed_by": "codex_public_source_review",
+      "reviewed_at": "2026-11-18T07:56:42.262Z",
+      "company_name": "Genesis AI",
+      "corroborating_source_id": "FISRC-9c5287b5621dfafb",
+      "next_action": "retain_scope_exclusion; reconsider only if primary business changes"
+    },
+    {
+      "event_id": "EV-096d98d489abb245",
+      "status": "pending",
+      "source_url": "https://xilect.com/news/angel-round-financing/",
+      "source_content_hash": "bd203c95b03a217fda623b9e100b3240df6bc061e55677a74a44cbefc1bdca19",
+      "quote": "聚焦具身智能端侧芯片与计算平台",
+      "quote_hash": "37dbee60a8f0b8b419664b49e1c468e47457e3002ed9d87e029fcace147ef11f",
+      "reason": "公司自述主营具身智能端侧芯片、机器人大小脑一体 SoC 与计算平台，属于机器人核心部件排除范围。按事件暂缓，不排除包含其他公司的新浪整篇汇总。",
+      "reviewed_by": "codex_public_source_review",
+      "reviewed_at": "2026-11-18T07:56:43.595Z",
+      "company_name": "曦选创智",
+      "corroborating_source_id": "FISRC-db9dcc33fee3847e",
+      "next_action": "retain_scope_exclusion; reconsider only if primary business changes"
     }
   ],
   "resolutions": [

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-17",
-    "currentDate": "2026-11-17",
-    "eventCount": 4474,
+    "latestDataDate": "2026-11-18",
+    "currentDate": "2026-11-18",
+    "eventCount": 4486,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,25 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-25",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-11-17",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 1,
+      "lead": 2,
       "participant": 2
     },
     "round_codes": [
       "seed",
-      "series_a"
+      "series_a",
+      "series_b"
     ],
     "portfolio_companies": [
       {
@@ -92,12 +93,57 @@
         "name": "General Intuition"
       },
       {
+        "entity_id": "EN-57feacd12af9d043",
+        "canonical_entity_id": "",
+        "name": "LanceDB"
+      },
+      {
         "entity_id": "EN-40cd17bb16c8fec1",
         "canonical_entity_id": "",
         "name": "SafeWorld"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-621f46968635c49f",
+        "funding_insight_id": "FI-9c0d79cb9d5c371d",
+        "event_ids": [
+          "EV-272eb63ab316040f"
+        ],
+        "company_entity_id": "EN-57feacd12af9d043",
+        "company_canonical_entity_id": "",
+        "company_name": "LanceDB",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$57.5m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 57500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5750 万美元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-0552c4db6b7fbb24",
+            "source_url": "https://www.lancedb.com/blog/lancedb-series-b-funding",
+            "source_title": "LanceDB Raises $57.5M as AI Research Outgrows the Modern Data Stack",
+            "source_content_hash": "14eff5c4826ab01e",
+            "quote": "Our Series B is led by Bessemer Venture Partners and Innovation Endeavors with participation from Theory Ventures, Dimension, Swift Ventures, CRV, and Y Combinator",
+            "quote_hash": "ab8945000890056892e6b331541cfbf4d7c28ff7fb4bfa59739b9f984a856888"
+          }
+        ]
+      },
       {
         "activity_id": "IA-22d24ee537a39661",
         "funding_insight_id": "FI-5fd5533b14de7850",
@@ -253,6 +299,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-0552c4db6b7fbb24",
+        "source_url": "https://www.lancedb.com/blog/lancedb-series-b-funding",
+        "source_title": "LanceDB Raises $57.5M as AI Research Outgrows the Modern Data Stack",
+        "source_content_hash": "14eff5c4826ab01e",
+        "quote": "Our Series B is led by Bessemer Venture Partners and Innovation Endeavors with participation from Theory Ventures, Dimension, Swift Ventures, CRV, and Y Combinator",
+        "quote_hash": "ab8945000890056892e6b331541cfbf4d7c28ff7fb4bfa59739b9f984a856888"
+      },
+      {
         "source_id": "FISRC-98f77610cfcfab94",
         "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
         "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
@@ -308,16 +362,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：LanceDB · B轮 · 2026-11-17 · 本轮领投 · $57.5m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0552c4db6b7fbb24"
+        },
+        {
           "description": "融资来源记录：SafeWorld · 种子轮 · 2026-10-06 · 本轮参投 · 超1200万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-98f77610cfcfab94"
         },
         {
           "description": "融资来源记录：Autoheal · 种子轮 · 2026-09-28 · 本轮领投 · $7.9M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-212b01f9c4f8d05c"
-        },
-        {
-          "description": "融资来源记录：General Intuition · A轮 · 2026-06-25 · 本轮参投 · $320 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fb702d5abe54d323"
         }
       ],
       "contacts": [],
@@ -339,6 +393,14 @@
           "quote_hash": "db6de4832c3a8d3fa0590a060ca20976b1ad11d98c19a30b38a74dfb367e2b56"
         },
         {
+          "source_id": "FISRC-0552c4db6b7fbb24",
+          "source_url": "https://www.lancedb.com/blog/lancedb-series-b-funding",
+          "source_title": "LanceDB Raises $57.5M as AI Research Outgrows the Modern Data Stack",
+          "source_content_hash": "14eff5c4826ab01e",
+          "quote": "Our Series B is led by Bessemer Venture Partners and Innovation Endeavors with participation from Theory Ventures, Dimension, Swift Ventures, CRV, and Y Combinator",
+          "quote_hash": "ab8945000890056892e6b331541cfbf4d7c28ff7fb4bfa59739b9f984a856888"
+        },
+        {
           "source_id": "FISRC-98f77610cfcfab94",
           "source_url": "https://theaiinsider.tech/2026/10/07/safeworld-emerges-from-stealth-with-12-2m-in-funding-to-build-robot-safety-simulation-software/",
           "source_title": "SafeWorld Emerges From Stealth With $12.2M in Funding to Build Robot-Safety Simulation Software",
@@ -353,14 +415,6 @@
           "source_content_hash": "db9fc8dd24df889f563eb8b09a5c63dfa0a5b96918734e65c10e95c659e10e53",
           "quote": "Today, we are announcing our $7.9M seed round, led by Harpinder Singh at Innovation Endeavors, with participation from Emergent Ventures, U&I Ventures, Darkmode Ventures, Batch Ventures (CTO Fund) and Param Hansa Values.",
           "quote_hash": "59506ba0808ee0c2c8d9ac25f14f284dee11383679000e5830940658d2c79dd4"
-        },
-        {
-          "source_id": "FISRC-fb702d5abe54d323",
-          "source_url": "https://theoutpost.ai/news-story/general-intuition-raises-320-million-to-build-ai-models-that-act-in-the-physical-world-27932/",
-          "source_title": "General Intuition Raises $320M AI Funding Round",
-          "source_content_hash": "fd28378604fe6512",
-          "quote": "joined by General Catalyst, Hedosophia, Bezos Expeditions, Innovation Endeavors, and Nico Rosberg.",
-          "quote_hash": "994ced7253c5833b999940bc6771bc4a6d4bcd7f0e246daaa3cbad655e0e3365"
         }
       ],
       "last_verified_at": "2026-10-04",

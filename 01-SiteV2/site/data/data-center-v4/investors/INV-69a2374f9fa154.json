@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-17",
-    "currentDate": "2026-11-17",
-    "eventCount": 4474,
+    "latestDataDate": "2026-11-18",
+    "currentDate": "2026-11-18",
+    "eventCount": 4486,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-24",
-    "latest_disclosed_at": "2026-10-19",
+    "latest_disclosed_at": "2026-11-17",
     "role_counts": {
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "pre_seed",
+      "series_b",
       "series_c"
     ],
     "portfolio_companies": [
@@ -83,6 +84,11 @@
         "entity_id": "EN-6ecf7f43c6c5a2b0",
         "canonical_entity_id": "",
         "name": "Basecamp Research"
+      },
+      {
+        "entity_id": "EN-cb3a9e70e51c2f47",
+        "canonical_entity_id": "",
+        "name": "Model ML"
       },
       {
         "entity_id": "EN-26e35b6423a9c420",
@@ -101,6 +107,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-7daa9aa83216b593",
+        "funding_insight_id": "FI-ae275335df51578a",
+        "event_ids": [
+          "EV-27b9c5896b1b9c27"
+        ],
+        "company_entity_id": "EN-cb3a9e70e51c2f47",
+        "company_canonical_entity_id": "",
+        "company_name": "Model ML",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$250M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-73109463bc1bff33",
+            "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
+            "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
+            "source_content_hash": "ef0f704125514383",
+            "quote": "with participation from Evolution Equity Partners, Airtree, Forestay Capital, Y Combinator, FT Partners, Latitude, Inception Fund and 13Books Capital",
+            "quote_hash": "e4fcd36e75bff0391e75db813e1a0a2495fd201d8ee50144b6eef3263a013969"
+          }
+        ]
+      },
       {
         "activity_id": "IA-5ea503e44fb75c7c",
         "funding_insight_id": "FI-b0bdfe9f65e2108a",
@@ -304,6 +350,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-73109463bc1bff33",
+        "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
+        "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
+        "source_content_hash": "ef0f704125514383",
+        "quote": "with participation from Evolution Equity Partners, Airtree, Forestay Capital, Y Combinator, FT Partners, Latitude, Inception Fund and 13Books Capital",
+        "quote_hash": "e4fcd36e75bff0391e75db813e1a0a2495fd201d8ee50144b6eef3263a013969"
+      },
+      {
         "source_id": "FISRC-333dfdc93dda00c9",
         "source_url": "https://tech.eu/2026/10/19/vessla-exits-stealth-with-33m-to-bring-ai-agents-to-property-management/",
         "source_title": "Vessla结束隐身模式，获330万美元融资，将AI智能体引入物业管理",
@@ -371,16 +425,16 @@
           "source_id": "FISRC-ecd2ea74974f4ff3"
         },
         {
+          "description": "融资来源记录：Model ML · B轮 · 2026-11-17 · 本轮参投 · $250M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-73109463bc1bff33"
+        },
+        {
           "description": "融资来源记录：Vessla · 预种子轮 · 2026-10-19 · 本轮参投 · $3.3 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-333dfdc93dda00c9"
         },
         {
           "description": "融资来源记录：Vessla · 预种子轮 · 2026-10-19 · 本轮参投 · €2.94 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-03408b6d796d3c48"
-        },
-        {
-          "description": "融资来源记录：Solvera · 预种子轮 · 2026-10-15 · 本轮参投 · €5.62 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-cb72aaeb2be8d4ae"
         }
       ],
       "contacts": [
@@ -410,6 +464,14 @@
           "quote_hash": "c3c8251039a0e0ec146a946ff8ffb69b9a5a4d9a40a8875183c076ef9284e671"
         },
         {
+          "source_id": "FISRC-73109463bc1bff33",
+          "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
+          "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
+          "source_content_hash": "ef0f704125514383",
+          "quote": "with participation from Evolution Equity Partners, Airtree, Forestay Capital, Y Combinator, FT Partners, Latitude, Inception Fund and 13Books Capital",
+          "quote_hash": "e4fcd36e75bff0391e75db813e1a0a2495fd201d8ee50144b6eef3263a013969"
+        },
+        {
           "source_id": "FISRC-333dfdc93dda00c9",
           "source_url": "https://tech.eu/2026/10/19/vessla-exits-stealth-with-33m-to-bring-ai-agents-to-property-management/",
           "source_title": "Vessla结束隐身模式，获330万美元融资，将AI智能体引入物业管理",
@@ -424,14 +486,6 @@
           "source_content_hash": "26d128952369a51ff8ea80cf41b04bb3bcca39a639bb2a0a43bd58d4071584a9",
           "quote": "Other investors joining the round include Inception Fund, Tiny VC, operators from Lovable and OpenAI",
           "quote_hash": "ba963a0f2e08182c2a0b0de97ece7a03f8d847d290998ce9b0c87bed3973c38a"
-        },
-        {
-          "source_id": "FISRC-cb72aaeb2be8d4ae",
-          "source_url": "https://www.eu-startups.com/2026/10/oslo-based-ai-native-engineering-firm-solvera-raises-e5-62-million-pre-seed-after-july-2026-launch/",
-          "source_title": "奥斯陆 AI 原生工程公司 Solvera 在 2026 年 7 月成立后完成 562 万欧元 pre-Seed 轮融资",
-          "source_content_hash": "42416a1b210c0a2b36635c440cb3296b6317d3e9cc83426dcf19b4feab0279a4",
-          "quote": "The round was led by Seedcamp, with participation from Construct Venture, Inception Fund, Momentum, Obos Ventures, PSV Tech, Sondo, and The Nordic Web Ventures",
-          "quote_hash": "1051394e86c7f6047f44988bf049ad2633b024d2d4a7897cbd68e15440f11e52"
         }
       ],
       "last_verified_at": "2026-10-03"
