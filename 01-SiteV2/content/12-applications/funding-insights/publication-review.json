@@ -1,6 +1,6 @@
 {
   "version": "FINANCING-PUBLICATION-REVIEW-1",
-  "reviewed_at": "2026-11-19T06:05:11.622Z",
+  "reviewed_at": "2026-11-19T06:52:42.168Z",
   "market_corrections": [
     {
       "event_id": "EV-65154e5eb49c218b",
@@ -861,32 +861,6 @@
       "next_action": "retain_scope_exclusion; reconsider only if primary business changes"
     },
     {
-      "event_id": "EV-5c7525642d1189d6",
-      "status": "pending",
-      "source_url": "https://news.pedaily.cn/202611/572047.shtml",
-      "source_content_hash": "57d7937995f280e10deb39cd026ca612364303409f3885a4bb7219cf0f5c3c68",
-      "quote": "聚焦以具身智能为主的物理AI应用领域",
-      "quote_hash": "663084d4a8674e7618f445752071829894e0b1d1b0ceb08b9d235a418b05d09c",
-      "reason": "当前融资主营交付是具身智能物理AI数据基座，资金明确用于具身算法与特殊场景机器人研发，属于具身智能主营排除范围。",
-      "reviewed_by": "codex_source_review",
-      "reviewed_at": "2026-11-19T06:05:11.622Z",
-      "company_name": "柏川数据",
-      "next_action": "retain_scope_exclusion"
-    },
-    {
-      "event_id": "EV-1bfa49b4ab9e1ac2",
-      "status": "pending",
-      "source_url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
-      "source_content_hash": "27c86290a3f380a965792a6fbaa0c8872969ff2305ea554b0e335ed9e1ec161b",
-      "quote": "real-world data to train robots",
-      "quote_hash": "1fa2e52996aef4a0c89b74b7b01a4007abf9fe6430c57eb152dc7f484d454793",
-      "reason": "本轮主要交付物理AI/机器人训练数据和专用采集硬件，尚不足以按一般模型或软件服务机器人客户的例外准入；保留原文和研究为范围待核验，不作本批准入。",
-      "reviewed_by": "codex_source_review",
-      "reviewed_at": "2026-11-19T06:05:11.622Z",
-      "company_name": "Humyn Labs",
-      "next_action": "retain_for_bound_source_review"
-    },
-    {
       "event_id": "EV-2e761601c7f04a46",
       "status": "pending",
       "source_url": "https://www.eu-startups.com/2026/11/bulgarias-first-unicorn-payhawk-raises-e255-14-million-at-e1-82-billion-valuation-to-build-a-global-finance-os-for-the-ai-era/",
@@ -943,6 +917,50 @@
         "round": "PE",
         "amount": "$1.5 billion",
         "reason": "9月5日为最早已验证披露，9月27日为同轮后续报道；仅Jane Street Capital为本轮投资方。公开上传与部署已获用户明确授权。"
+      }
+    },
+    {
+      "event_id": "EV-5c7525642d1189d6",
+      "status": "resolved",
+      "source_url": "https://news.pedaily.cn/202611/572047.shtml",
+      "source_content_hash": "57d7937995f280e10deb39cd026ca612364303409f3885a4bb7219cf0f5c3c68",
+      "quote": "聚焦以具身智能为主的物理AI应用领域",
+      "quote_hash": "663084d4a8674e7618f445752071829894e0b1d1b0ceb08b9d235a418b05d09c",
+      "reason": "当前融资主营交付是具身智能物理AI数据基座，资金明确用于具身算法与特殊场景机器人研发，属于具身智能主营排除范围。",
+      "reviewed_by": "codex_source_review",
+      "reviewed_at": "2026-11-19T06:05:11.622Z",
+      "company_name": "柏川数据",
+      "next_action": "retain_scope_exclusion",
+      "resolution": {
+        "reviewer": "codex_source_review",
+        "date": "2026-11-19",
+        "source_ref": "SA-a4ac5d41867d2aab",
+        "source_content_hash": "57d7937995f280e10deb39cd026ca612364303409f3885a4bb7219cf0f5c3c68",
+        "quote": "自研的山海数据管理平台支持标注、质检、管理、评测、仿真等关键环节",
+        "quote_hash": "29c4728f4b81954b1660861e3de1c0da43627cbc3639a5c27a7f061dfc40026c",
+        "reason": "撤回仅凭服务具身智能客户及未来机器人资金用途作出的范围排除。当前已验证交付为数据服务和数据管理软件平台；仍须经既有事实、研究及分类门禁，不能把未来研发计划等同当前机器人本体主营。"
+      }
+    },
+    {
+      "event_id": "EV-1bfa49b4ab9e1ac2",
+      "status": "resolved",
+      "source_url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+      "source_content_hash": "27c86290a3f380a965792a6fbaa0c8872969ff2305ea554b0e335ed9e1ec161b",
+      "quote": "real-world data to train robots",
+      "quote_hash": "1fa2e52996aef4a0c89b74b7b01a4007abf9fe6430c57eb152dc7f484d454793",
+      "reason": "本轮主要交付物理AI/机器人训练数据和专用采集硬件，尚不足以按一般模型或软件服务机器人客户的例外准入；保留原文和研究为范围待核验，不作本批准入。",
+      "reviewed_by": "codex_source_review",
+      "reviewed_at": "2026-11-19T06:05:11.622Z",
+      "company_name": "Humyn Labs",
+      "next_action": "retain_for_bound_source_review",
+      "resolution": {
+        "reviewer": "codex_source_review",
+        "date": "2026-11-19",
+        "source_ref": "SA-75c32c1e6bb0091e",
+        "source_content_hash": "27c86290a3f380a965792a6fbaa0c8872969ff2305ea554b0e335ed9e1ec161b",
+        "quote": "AI labs",
+        "quote_hash": "1ed1fd1f8eef2cf6dabab071489b8e4304aed6db12cbc6c87637a0903c22ed35",
+        "reason": "撤回仅凭机器人客户作出的范围排除；不批准融资事实。既有research_sources_insufficient及绑定原文的研究暂缓继续有效，须独立补齐产品和融资构成，当前不入公开融资目录。"
       }
     }
   ]
