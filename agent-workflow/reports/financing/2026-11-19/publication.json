@@ -1,0 +1,37 @@
+{
+  "verification": {
+    "version": "FINANCING-VERIFICATION-1",
+    "status": "completed",
+    "counts": {
+      "total": 968,
+      "verified": 5,
+      "excluded": 49,
+      "reviewed": 0,
+      "pending": 914
+    },
+    "ledger": "verification.json",
+    "deferred_research": [
+      {
+        "event_id": "EV-1bfa49b4ab9e1ac2",
+        "reason": "research_sources_insufficient",
+        "input_hash": "e5cc91b3fa772649cc5717c304b0c897040364def0fff4e9ba6dababfe2f7e2f"
+      },
+      {
+        "event_id": "EV-88837f7f7d187d2b",
+        "reason": "subject_company_unresolved",
+        "input_hash": "42fb8a7a50fc48898d11d665b27997b50df61b3e1eca2ffe4c041a3fbd5ccc2b"
+      }
+    ]
+  },
+  "version": "FINANCING-MONITOR-1",
+  "date": "2026-11-19",
+  "status": "ready_for_review",
+  "counts": {
+    "leads": 528,
+    "accepted_originals": 105,
+    "pending": 264,
+    "excluded": 159
+  },
+  "next": "merge_pages_portal_and_live_parity",
+  "generated_at": "2026-11-19T01:21:34.171Z"
+}

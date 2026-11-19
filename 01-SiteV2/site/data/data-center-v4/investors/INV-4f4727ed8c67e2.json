@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-18",
-    "currentDate": "2026-11-18",
-    "eventCount": 4486,
+    "latestDataDate": "2026-11-19",
+    "currentDate": "2026-11-19",
+    "eventCount": 4506,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 17,
+    "current_round_count": 18,
     "historical_or_ambiguous_count": 6,
-    "portfolio_company_count": 15,
+    "portfolio_company_count": 16,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-09-05",
-    "latest_disclosed_at": "2026-10-21",
+    "latest_disclosed_at": "2026-11-16",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 6,
-      "lead": 5,
+      "lead": 6,
       "participant": 11
     },
     "round_codes": [
@@ -83,7 +83,8 @@
       "series_b",
       "series_c",
       "series_d",
-      "series_e"
+      "series_e",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -147,6 +148,11 @@
         "name": "Modal"
       },
       {
+        "entity_id": "EN-6036cca70e21ac3a",
+        "canonical_entity_id": "",
+        "name": "Noeri"
+      },
+      {
         "entity_id": "EN-3eee4f30151db45a",
         "canonical_entity_id": "EN-3eee4f30151db45a",
         "name": "Nous Research"
@@ -163,6 +169,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-bcb34277cf1a0925",
+        "funding_insight_id": "FI-bba3909d662ded6a",
+        "event_ids": [
+          "EV-ca34f51e33c81a68"
+        ],
+        "company_entity_id": "EN-6036cca70e21ac3a",
+        "company_canonical_entity_id": "",
+        "company_name": "Noeri",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "$110 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 110000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.1 亿美元"
+        },
+        "announced_at": "2026-11-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-ea7b0f44d05b19b1",
+            "source_url": "https://www.geekwire.com/2026/former-uw-ai-researchers-yejin-choi-and-carlos-guestrin-raise-110m-for-ai-startup-noeri/",
+            "source_title": "前华盛顿大学AI研究员Yejin Choi与Carlos Guestrin为AI初创公司Noeri融资1.1亿美元",
+            "source_content_hash": "29e10db17f2da1980446cbe8ece4fa842305c02feaabceaf6788d1805843b34d",
+            "quote": "Menlo Ventures led the round, with participation from Seattle-based Madrona, Kindred Ventures, Wing Venture Capital and NEA.",
+            "quote_hash": "9555545b6fa225a52eabadfa7ffb693fdb90f5586c15fa9fbe87893e329591be"
+          }
+        ]
+      },
       {
         "activity_id": "IA-201bef50bfc732e6",
         "funding_insight_id": "FI-b875723282f11479",
@@ -1057,6 +1103,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ea7b0f44d05b19b1",
+        "source_url": "https://www.geekwire.com/2026/former-uw-ai-researchers-yejin-choi-and-carlos-guestrin-raise-110m-for-ai-startup-noeri/",
+        "source_title": "前华盛顿大学AI研究员Yejin Choi与Carlos Guestrin为AI初创公司Noeri融资1.1亿美元",
+        "source_content_hash": "29e10db17f2da1980446cbe8ece4fa842305c02feaabceaf6788d1805843b34d",
+        "quote": "Menlo Ventures led the round, with participation from Seattle-based Madrona, Kindred Ventures, Wing Venture Capital and NEA.",
+        "quote_hash": "9555545b6fa225a52eabadfa7ffb693fdb90f5586c15fa9fbe87893e329591be"
+      },
+      {
         "source_id": "FISRC-c4c53e6f607010be",
         "source_url": "https://legora.com/blog/series-e",
         "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
@@ -1300,16 +1354,16 @@
           "source_id": "menlo_about"
         },
         {
+          "description": "融资来源记录：Noeri · 轮次未披露 · 2026-11-16 · 本轮领投 · $110 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ea7b0f44d05b19b1"
+        },
+        {
           "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c4c53e6f607010be"
         },
         {
           "description": "融资来源记录：Modal · D轮 · 2026-10-14 · 本轮参投 · $750 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b54b83abf2f3608c"
-        },
-        {
-          "description": "融资来源记录：Nous Research · B轮 · 2026-10-13 · 本轮参投 · 9000万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c0e764cbefe9c1e7"
         }
       ],
       "contacts": [
@@ -1360,6 +1414,14 @@
           "quote_hash": "6b65a50b891d8c111e5bfd530d4bc9eb08bdefcd9718bf4b8706cad0502cd1ab"
         },
         {
+          "source_id": "FISRC-ea7b0f44d05b19b1",
+          "source_url": "https://www.geekwire.com/2026/former-uw-ai-researchers-yejin-choi-and-carlos-guestrin-raise-110m-for-ai-startup-noeri/",
+          "source_title": "前华盛顿大学AI研究员Yejin Choi与Carlos Guestrin为AI初创公司Noeri融资1.1亿美元",
+          "source_content_hash": "29e10db17f2da1980446cbe8ece4fa842305c02feaabceaf6788d1805843b34d",
+          "quote": "Menlo Ventures led the round, with participation from Seattle-based Madrona, Kindred Ventures, Wing Venture Capital and NEA.",
+          "quote_hash": "9555545b6fa225a52eabadfa7ffb693fdb90f5586c15fa9fbe87893e329591be"
+        },
+        {
           "source_id": "FISRC-c4c53e6f607010be",
           "source_url": "https://legora.com/blog/series-e",
           "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
@@ -1374,14 +1436,6 @@
           "source_content_hash": "ef996bef620416ce",
           "quote": "including Menlo Ventures, General Catalyst, Redpoint, Lux Capital, Amplify Partners, and Bain Capital Ventures.",
           "quote_hash": "70643ce7995b337732d2320fe1a0146d9b001afb6cf48b6fd70308dddf300333"
-        },
-        {
-          "source_id": "FISRC-c0e764cbefe9c1e7",
-          "source_url": "https://www.163.com/dy/article/L95FTJ3L05118UGF.html",
-          "source_title": "Nous Research确认完成15亿估值融资，推出企业级AI智能体",
-          "source_content_hash": "5bce55f4335c9e878a7140a3eefc85fd8a46640458fce92d7fbd91811c2dedec",
-          "quote": "本轮融资由Robot Ventures领投，其他参与方包括英伟达、Union Square Ventures、Menlo Ventures、三星，以及唐纳德·特朗普之子担任合伙人的1789 Capital。",
-          "quote_hash": "cfb5cb15e98862c041ccf451333927feb71aa81f07568b16e955d0a503d1b300"
         }
       ],
       "last_verified_at": "2026-09-25",

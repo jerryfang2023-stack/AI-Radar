@@ -39031,7 +39031,478 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-11-18T08:12:55.760Z"
+    },
+    "EV-ca34f51e33c81a68": {
+      "id": "EV-ca34f51e33c81a68",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Noeri 为企业提供研究其数据与工作流并持续优化任务系统的企业级 AI 软件。",
+      "input_hash": "596d301fe50788883e95c6abb9d2201dabeef08dc62c929b540eb1bfa9d5c108",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ea7b0f44d05b19b1",
+          "quote": "Yejin Choi and Carlos Guestrin, two prominent AI researchers who spent years at the University of Washington before moving to Stanford, have raised $110 million for Noeri, a startup building AI systems that keep improving on a company’s own work."
+        },
+        {
+          "source_id": "FISRC-ea7b0f44d05b19b1",
+          "quote": "Noeri’s software studies a company’s data and workflows, then proposes changes to the system around a specific task: the instructions, the tools, which model handles each step and, in some cases, the models themselves."
+        },
+        {
+          "source_id": "FISRC-d234bdf83871392e",
+          "quote": "The system works with both closed and open-weight models and is designed to keep adapting as new models are released."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-19T01:20:09.382Z"
+    },
+    "EV-1f29782fd30ac7e4": {
+      "id": "EV-1f29782fd30ac7e4",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Previsia 是保险科技公司，用 AI 生成风险评分并覆盖风险预防全流程。",
+      "input_hash": "710090eade6f87a5dadc68aefe3fd997fb783cb0e14f1119a228dad01c6730c2",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6360d0632d6b298f",
+          "quote": "Previsia, a Toulouse-based insurtech startup that develops an AI-powered risk prevention platform, has secured EUR3.8 million in a seed funding round."
+        },
+        {
+          "source_id": "FISRC-ad268ace6b41036b",
+          "quote": "The platform covers the full chain, from setup through site surveys, reports, action plans, follow-ups, and portfolio analysis."
+        },
+        {
+          "source_id": "FISRC-6360d0632d6b298f",
+          "quote": "The company uses AI to generate risk scores and streamline site surveys to make prevention accessible to a broader range of businesses."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-19T01:20:09.382Z"
+    },
+    "EV-0d4f7ad1fe080686": {
+      "id": "EV-0d4f7ad1fe080686",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "commerce",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Fermat 面向时尚行业提供将设计稿转为渲染图与工厂规格的 AI 平台。",
+      "input_hash": "754ba694b1fffdcd45bc75240a8327fdc050ced23e3756fb24becd4714b5bf7c",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-02fbe34439ee6fc4",
+          "quote": "Fermat, the Barcelona-based AI platform for the fashion industry, has raised $8 million in seed funding"
+        },
+        {
+          "source_id": "FISRC-460f085bcd2dd220",
+          "quote": "Its platform helps fashion teams turn sketches and moodboards into realistic renders and experiment with materials, colours, and garment variations."
+        },
+        {
+          "source_id": "FISRC-460f085bcd2dd220",
+          "quote": "Techpacks creates technical flats, construction details, measurements, bills of materials, and colourways."
+        },
+        {
+          "source_id": "FISRC-02fbe34439ee6fc4",
+          "quote": "Fermat is launching Techpacks, a tool which turns designs into factory-ready specifications."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-19T01:20:09.382Z"
+    },
+    "EV-79984024e8768a96": {
+      "id": "EV-79984024e8768a96",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "ai-service",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1
+      ],
+      "rationale": "Isomorphic Labs 利用 AI 推动新一代药物研发，属生命科学行业 AI。",
+      "input_hash": "4928bb2ac1fabbcf55d1de6f80db4a2dd5a91727886e2eac83bd1c82531b201d",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ac36b1c1817ebdc8",
+          "quote": "Demis Hassabis’'s Isomorphic Labs has raised a massive $5bn Series C funding round"
+        },
+        {
+          "source_id": "FISRC-ac36b1c1817ebdc8",
+          "quote": "as it looks to leverage AI to power a new generation of medicines"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-19T01:20:09.382Z"
+    },
+    "EV-788e4fe44885fd36": {
+      "id": "EV-788e4fe44885fd36",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "legal",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Perry AI 为基金与律所提供审阅文件、识别问题并起草的 AI 法律操作系统。",
+      "input_hash": "43f49d40f087d0f262559a1bc5b68aea5c1aa7a366d760631678372eef002f9f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6997ec563f09c1fe",
+          "quote": "Perry AI, a London-based legaltech startup, has raised $2.2 million in an oversubscribed seed funding round to support the expansion of its AI-powered legal operating system for private capital funds and law firms."
+        },
+        {
+          "source_id": "FISRC-6997ec563f09c1fe",
+          "quote": "Perry AI provides an AI-powered legal operating system designed to streamline workflows for private equity and venture capital funds. The platform centralizes legal rights, obligations, and transaction data, enabling AI agents to review documents, identify issues, and prepare drafts within a shared, updated record."
+        },
+        {
+          "source_id": "FISRC-b1ffa28e273f7f26",
+          "quote": "Its AI agents review legal documents, flag issues, and prepare drafts while keeping a persistent record of every right, obligation, and commitment across a fund's investments."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-19T01:20:09.382Z"
+    },
+    "EV-bead3c949a623488": {
+      "id": "EV-bead3c949a623488",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "finance-hr",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Payhawk 以 AI 智能体构建财务操作系统，覆盖财务控制、采购、差旅与报告。",
+      "input_hash": "a05d136af87a1818471f1304b2abf03ee69452ceb4cb060756a1c4699118d557",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6bccc8bb9fd78277",
+          "quote": "Payhawk, the Bulgaria-founded spend management platform"
+        },
+        {
+          "source_id": "FISRC-52ddbf8367aa7b8c",
+          "quote": "Payhawk is building its Finance Operating System around three interconnected layers: AI agents that perform financial work; payments infrastructure that allows agents to safely interact with money; and enterprise controls that determine what agents are allowed to do and when a person needs to make the decision."
+        },
+        {
+          "source_id": "FISRC-52ddbf8367aa7b8c",
+          "quote": "In the US, for example, its Financial Controller Agent works with customers’ existing business cards, eliminating the need to switch providers or reissue cards."
+        },
+        {
+          "source_id": "FISRC-52ddbf8367aa7b8c",
+          "quote": "77% of our customers use our agents daily across financial control, procurement, travel and reporting to save time and money for their businesses."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-19T01:20:09.382Z"
+    },
+    "EV-2e761601c7f04a46": {
+      "id": "EV-2e761601c7f04a46",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "finance-hr",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "rationale": "Payhawk 是面向企业的 AI 原生支出与财务管理平台，以智能体执行财务工作流。",
+      "input_hash": "55962ac2acf21d8b63c564c4192734f34d4bc56ecb662cd4fa72faac093d0759",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-81d4aea873fc9f86",
+          "quote": "Payhawk, a London-based AI-native spend management platform"
+        },
+        {
+          "source_id": "FISRC-81d4aea873fc9f86",
+          "quote": "Payhawk is an AI-native spend management platform that orchestrates global money across Bills, Cards, Expenses, Travel, and Procurement for maximum control, automation and savings."
+        },
+        {
+          "source_id": "FISRC-81d4aea873fc9f86",
+          "quote": "The company is building its finance OS around three interconnected layers: AI agents that perform financial work; payments infrastructure that lets agents safely interact with money; and enterprise controls that determine what agents can do and when human intervention is required."
+        },
+        {
+          "source_id": "FISRC-88f9ddf455d3a012",
+          "quote": "Its platform is designed to let agents execute financial workflows while operating within company policies, budgets and approval structures."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-19T01:20:09.403Z"
+    },
+    "EV-8f4b818b8746d539": {
+      "id": "EV-8f4b818b8746d539",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "evaluation",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Disseqt 提供智能体上线前测试、运行监控与合规审计的 AI 保障层。",
+      "input_hash": "0d78ee0500ef944235017f1ec1998e8ea1ed6333315e932eb93f78cfe61ef9ed",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-7d29c53fb0419b3d",
+          "quote": "Disseqt AI, a Dublin-based AI assurance platform, has raised €7.3 million ($8 million) to help enterprises deploy AI agents safely, at scale and enable them to meet regulatory requirements."
+        },
+        {
+          "source_id": "FISRC-480989b61df2ed17",
+          "quote": "Disseqt is the AI Assurance Layer between your agents and your risk function: tested, monitored and audit-ready."
+        },
+        {
+          "source_id": "FISRC-4088723affa8fa8b",
+          "quote": "Disseqt enables enterprises to test applications and agents before launch, enforce company policies once live and monitor their behaviour continuously, blocking outputs that breach those policies while maintaining evidence for audit and oversight."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-19T01:20:09.403Z"
+    },
+    "EV-dc8755b16a5344ed": {
+      "id": "EV-dc8755b16a5344ed",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "specialist-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "research"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "观壹智能以生命科学基础模型为核心，提供分子与疾病预测的通用基础能力。",
+      "input_hash": "f86565e06ddab17a33cf4963fccc5d48982b379ff35947635f4eca26c5a0d79e",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-67d4fce9cfc7ae67",
+          "quote": "上海观壹智能科技有限公司（简称：观壹智能，OneX Intelligence）是一家以生命科学基础模型（Foundation Model For Life Science）为核心的生命智能公司。"
+        },
+        {
+          "source_id": "FISRC-67d4fce9cfc7ae67",
+          "quote": "观壹智能致力于构建能够理解生命系统、预测干预响应的通用基础模型，连接分子、细胞、组织及疾病表型等多层级信息，为机制研究、靶点发现、药物研发和实验设计提供可复用的基础能力。"
+        },
+        {
+          "source_id": "FISRC-67d4fce9cfc7ae67",
+          "quote": "观壹智能计划建设自有湿实验平台，将模型研发、生物观测与实验验证纳入同一研发闭环。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-19T01:20:09.403Z"
+    },
+    "EV-5c7525642d1189d6": {
+      "id": "EV-5c7525642d1189d6",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "data-services",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "柏川数据提供数据采集、标注、质检与仿真的全栈数据基座服务，属数据标注与合成。",
+      "input_hash": "b02805886a224796267cb362156a4e14cb086d07a20f2226df0ddd464db9cf30",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-32a5a306971bc571",
+          "quote": "苏州柏川数据科技有限公司（简称：柏川数据）是一家物理AI数据基座服务"
+        },
+        {
+          "source_id": "FISRC-32a5a306971bc571",
+          "quote": "柏川数据提供全栈数据基座解决方案，构建起「数据采集—山海数据管理平台—真实场景开发验证—高质量数据集」的完整业务闭环"
+        },
+        {
+          "source_id": "FISRC-025adb9813ad67f9",
+          "quote": "自研山海数据管理平台，覆盖标注、质检、管理及仿真环节"
+        },
+        {
+          "source_id": "FISRC-32a5a306971bc571",
+          "quote": "自研的山海数据管理平台支持标注、质检、管理、评测、仿真等关键环节"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-19T01:20:09.403Z"
+    },
+    "EV-312f25d8ec1f14b4": {
+      "id": "EV-312f25d8ec1f14b4",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "business",
+        "research"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Isomorphic Labs 以 AI 优先方式做药物发现，交付结构预测与亲和力预测能力。",
+      "input_hash": "ba0c85a082e01af815aa55357cec964802be145088900c6f13fff3c4dc7c51b9",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-466fd3473b30b1f3",
+          "quote": "这家Alphabet旗下公司的目标，是以AI优先的方式重新思考药物发现。"
+        },
+        {
+          "source_id": "FISRC-24892cd5735a05d5",
+          "quote": "Isomorphic Labs is using our latest models to accelerate drug discovery, identifying novel compounds for previously untreatable diseases in a fraction of the time."
+        },
+        {
+          "source_id": "FISRC-466fd3473b30b1f3",
+          "quote": "2026年2月，Isomorphic发布IsoDDE技术报告，重点展示了结构预测、结合口袋发现和亲和力预测三类能力"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-19T01:20:09.403Z"
+    },
+    "EV-fdda8197c66ebabf": {
+      "id": "EV-fdda8197c66ebabf",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "audio-wearables",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "乎零研发 AI 语音健康戒指，支持录音转写与待办提取，属消费 AI 穿戴终端。",
+      "input_hash": "03cdc3948f319ebcb62b021c9821ad13dac4b8354c82e04033433c991d7aa1e8",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6851c097f817c307",
+          "quote": "乎灵科技成立于2026年4月28日，是一家专注于AI语音健康戒指研发的高科技企业"
+        },
+        {
+          "source_id": "FISRC-cbad7b26722521c1",
+          "quote": "产品支持双击实体按键快速录音，自动完成语音实时转写、待办事项智能提取、日程自动识别梳理"
+        },
+        {
+          "source_id": "FISRC-cbad7b26722521c1",
+          "quote": "乎零AI语音健康戒指搭载阿波罗3芯片，极致轻量化设计让整机重量不足5克"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-19T01:20:09.403Z"
+    },
+    "EV-5be10c6214adaf19": {
+      "id": "EV-5be10c6214adaf19",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "audio-wearables",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "乎零主营面向消费者的AI语音健康戒指，具备录音转写与健康功能，属消费AI穿戴终端。",
+      "input_hash": "16ea8a0d2de7044a431b879f197b9bb2a3957e5d7898d8652c6dd204a542ec07",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ca0ce3116aabdc26",
+          "quote": "乎灵科技(北京)有限公司(品牌名：乎零Huling)完成千万级人民币种子轮融资"
+        },
+        {
+          "source_id": "FISRC-5b94f73630bcdcf3",
+          "quote": "产品支持双击实体按键快速录音，自动完成语音实时转写、待办事项智能提取、日程自动识别梳理"
+        },
+        {
+          "source_id": "FISRC-ca0ce3116aabdc26",
+          "quote": "首款产品乎零AI语音健康戒指搭载阿波罗3芯片，整机重量不足5克，通过IPX8级防水认证，标准续航约7天"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-19T01:20:11.130Z"
     }
   },
-  "generated_at": "2026-11-18T08:12:55.760Z"
+  "generated_at": "2026-11-19T01:20:11.130Z"
 }

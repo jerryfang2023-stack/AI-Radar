@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-18",
-    "currentDate": "2026-11-18",
-    "eventCount": 4486,
+    "latestDataDate": "2026-11-19",
+    "currentDate": "2026-11-19",
+    "eventCount": 4506,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,8 +54,783 @@
   },
   "events": [
     {
+      "id": "EV-dc10752743c440d9",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-19",
+      "updatedDate": "2026-11-19",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "史上最大 IPO：Anthropic 每股定价 83 美元，预计募资 944 亿美元超 SpaceX",
+      "originalTitle": "",
+      "subject": "史上最大 IPO：Anthropic 每股定价 83 美元，预计",
+      "action": "募资",
+      "object": "944 亿美元超 SpaceX",
+      "metrics": [
+        "1.5 万",
+        "1.77 万",
+        "944 亿",
+        "6,305.79 亿",
+        "750 亿",
+        "862 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d51456e488ff4d17",
+        "EN-c70eca6b0f88f44d",
+        "EN-e78bdebae031095b"
+      ],
+      "entityNames": [
+        "史上最大 IPO",
+        "Anthropic",
+        "SpaceX"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-fee9e0a4d198559a",
+          "subject": "史上最大 IPO：Anthropic 每股定价 83 美元，预计",
+          "object": "944 亿美元超 SpaceX",
+          "quote": "以此计算，Anthropic 完全稀释估值约 1.5 万亿美元，仅次于 SpaceX（1.77 万亿美元），但融资规模超越 SpaceX 成为全球史上最大 IPO。"
+        },
+        {
+          "id": "CL-7468297c816b0fda",
+          "subject": "史上最大 IPO：Anthropic 每股定价 83 美元，预计",
+          "object": "944 亿美元超 SpaceX",
+          "quote": "两部分合计融资规模将超过 944 亿美元（现汇率约合 6,305.79 亿元人民币）。"
+        },
+        {
+          "id": "CL-8e9c86be05e8e2fc",
+          "subject": "史上最大 IPO：Anthropic 每股定价 83 美元，预计",
+          "object": "944 亿美元超 SpaceX",
+          "quote": "作为对比，SpaceX 于今年 6 月通过基础 IPO 发行募集了 750 亿美元，行使超额配售权后，融资总额增至 862 亿美元。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-67a536b528d2c220",
+          "publisher": "www.ithome.com",
+          "url": "https://www.ithome.com/1/029/132.htm"
+        }
+      ],
+      "sourceUrl": "https://www.ithome.com/1/029/132.htm",
+      "publisher": "www.ithome.com",
+      "sourceExcerpt": "以此计算，Anthropic 完全稀释估值约 1.5 万亿美元，仅次于 SpaceX（1.77 万亿美元），但融资规模超越 SpaceX 成为全球史上最大 IPO。"
+    },
+    {
+      "id": "EV-1bfa49b4ab9e1ac2",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-18",
+      "updatedDate": "2026-11-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "completed",
+      "researchDeferral": "research_sources_insufficient",
+      "title": "印度 Humyn Labs 融资 4700 万美元，为美国机器人公司提供所需数据",
+      "originalTitle": "India’s Humyn Labs raises $47M to feed US robotics companies the data they need",
+      "subject": "India’s Humyn Labs",
+      "action": "raises",
+      "object": "$47M to feed US robotics companies the data they need",
+      "metrics": [
+        "$47 million"
+      ],
+      "locations": [
+        "U.S.",
+        "India"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-2ebfb37b3d52054c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-2ebfb37b3d52054c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-2ebfb37b3d52054c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2ebfb37b3d52054c"
+      ],
+      "entityNames": [
+        "India’s Humyn Labs"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-8dccc7a629228206",
+          "subject": "India’s Humyn Labs",
+          "object": "$47M to feed US robotics companies the data they need",
+          "quote": "As demand grows for real-world data to train robots, India’s Humyn Labs has raised $47 million in Series A financing to help U.S. AI and robotics companies build models that can operate in physical environments."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-75c32c1e6bb0091e",
+          "publisher": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+      "publisher": "techcrunch.com",
+      "sourceExcerpt": "As demand grows for real-world data to train robots, India’s Humyn Labs has raised $47 million in Series A financing to help U.S. AI and robotics companies build models that can operate in physical environments."
+    },
+    {
+      "id": "EV-2e761601c7f04a46",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-18",
+      "updatedDate": "2026-11-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "保加利亚首家独角兽Payhawk在Goldman Sachs领投的C轮融资中按€1.82 billion估值融资€255.14 million",
+      "originalTitle": "Bulgaria’s first unicorn Payhawk raises €255.14 million at €1.82 billion valuation in Goldman Sachs-led Series C round",
+      "subject": "Bulgaria’s first unicorn Payhawk",
+      "action": "raises",
+      "object": "€255.14 million at €1.82 billion valuation in Goldman Sachs-led Series C round",
+      "metrics": [
+        "€255.14 million",
+        "€1.82 billion",
+        "$280 million",
+        "$2 billion",
+        "70%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-068dbf31f93c05a9",
+        "EN-2278ee04cbb062e3"
+      ],
+      "entityNames": [
+        "Payhawk",
+        "Bulgaria’s first unicorn Payhawk"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-4a6140c2d49d72c9",
+          "subject": "Bulgaria’s first unicorn Payhawk",
+          "object": "€255.14 million at €1.82 billion valuation in Goldman Sachs-led Series C round",
+          "quote": "HomeUK-StartupsBulgaria’s first unicorn Payhawk raises €255.14 million at €1.82 billion valuation in..."
+        },
+        {
+          "id": "CL-5d5f92416f0a1328",
+          "subject": "Bulgaria’s first unicorn Payhawk",
+          "object": "€255.14 million at €1.82 billion valuation in Goldman Sachs-led Series C round",
+          "quote": "Bulgaria’s first unicorn Payhawk raises €255.14 million at €1.82 billion valuation in Goldman Sachs-led Series C round"
+        },
+        {
+          "id": "CL-31e23dd8f4b2a535",
+          "subject": "Bulgaria’s first unicorn Payhawk",
+          "object": "€255.14 million at €1.82 billion valuation in Goldman Sachs-led Series C round",
+          "quote": "Payhawk, a London-based AI-native spend management platform, today announced a €255.14 million ($280 million) Series C round, valuing the business at €1.82 billion ($2 billion) as it builds the global finance operating system (OS) for the AI era."
+        },
+        {
+          "id": "CL-5426ebcda394aa64",
+          "subject": "Bulgaria’s first unicorn Payhawk",
+          "object": "€255.14 million at €1.82 billion valuation in Goldman Sachs-led Series C round",
+          "quote": "Payhawk reports it achieved positive cash flow in Q3 and still holds 70% of the capital it raised in its 2022 funding round."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7fc589d2633c74e4",
+          "publisher": "www.eu-startups.com",
+          "url": "https://www.eu-startups.com/2026/11/bulgarias-first-unicorn-payhawk-raises-e255-14-million-at-e1-82-billion-valuation-to-build-a-global-finance-os-for-the-ai-era/"
+        }
+      ],
+      "sourceUrl": "https://www.eu-startups.com/2026/11/bulgarias-first-unicorn-payhawk-raises-e255-14-million-at-e1-82-billion-valuation-to-build-a-global-finance-os-for-the-ai-era/",
+      "publisher": "www.eu-startups.com",
+      "sourceExcerpt": "HomeUK-StartupsBulgaria’s first unicorn Payhawk raises €255.14 million at €1.82 billion valuation in..."
+    },
+    {
+      "id": "EV-312f25d8ec1f14b4",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-18",
+      "updatedDate": "2026-11-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "谷歌AI制药完成50亿美元融资：大厂AI制药进入军备竞赛阶段",
+      "originalTitle": "",
+      "subject": "谷歌AI制药",
+      "action": "完成50亿美元融资",
+      "object": "：大厂AI制药进入军备竞赛阶段",
+      "metrics": [
+        "50亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d187f7c05cef3eac",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "谷歌AI制药",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-aae5b2bb7822b54f",
+          "subject": "谷歌AI制药",
+          "object": "：大厂AI制药进入军备竞赛阶段",
+          "quote": "11月17日，Isomorphic Labs宣布完成50亿美元C轮融资，由Greenoaks和Sequoia Capital共同领投，a16z等机构参与，Alphabet继续追加投资。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-c761a33facdd0817",
+          "publisher": "news.pedaily.cn",
+          "url": "https://news.pedaily.cn/202611/572062.shtml"
+        }
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202611/572062.shtml",
+      "publisher": "news.pedaily.cn",
+      "sourceExcerpt": "11月17日，Isomorphic Labs宣布完成50亿美元C轮融资，由Greenoaks和Sequoia Capital共同领投，a16z等机构参与，Alphabet继续追加投资。"
+    },
+    {
+      "id": "EV-5c7525642d1189d6",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-18",
+      "updatedDate": "2026-11-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "柏川数据完成5000万元Pre-A轮融资，打造物理AI全栈数据基座",
+      "originalTitle": "",
+      "subject": "柏川数据",
+      "action": "完成5000万元Pre-A轮融资",
+      "object": "，打造物理AI全栈数据基座",
+      "metrics": [
+        "5000万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-1292f4f8df3af298"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-1292f4f8df3af298"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-1292f4f8df3af298"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-1292f4f8df3af298",
+        "EN-a6e5382c05dd0d16"
+      ],
+      "entityNames": [
+        "柏川数据",
+        "星海图"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-e3758306df4496ee",
+          "subject": "柏川数据",
+          "object": "，打造物理AI全栈数据基座",
+          "quote": "投资界（ID：pedaily2012）11月18日消息，商柏川数据（ByteTree）宣布完成5000万元Pre-A轮融资，投资方包含元禾厚望、毅峰资本、星海图在内的2家顶 级具身智能产业方等机构。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a4ac5d41867d2aab",
+          "publisher": "news.pedaily.cn",
+          "url": "https://news.pedaily.cn/202611/572047.shtml"
+        }
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202611/572047.shtml",
+      "publisher": "news.pedaily.cn",
+      "sourceExcerpt": "投资界（ID：pedaily2012）11月18日消息，商柏川数据（ByteTree）宣布完成5000万元Pre-A轮融资，投资方包含元禾厚望、毅峰资本、星海图在内的2家顶 级具身智能产业方等机构。"
+    },
+    {
+      "id": "EV-788e4fe44885fd36",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-18",
+      "updatedDate": "2026-11-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Perry AI 获 220 万美元融资，用于在私募资本领域实现法律工作自动化",
+      "originalTitle": "Perry AI secures $2.2M to automate legal work across private capital",
+      "subject": "Perry AI",
+      "action": "secures",
+      "object": "$2.2M to automate legal work across private capital",
+      "metrics": [
+        "$2.2 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-be9188611b6952ad"
+      ],
+      "entityNames": [
+        "Perry AI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-10991af883aa1dda",
+          "subject": "Perry AI",
+          "object": "$2.2M to automate legal work across private capital",
+          "quote": "legaltech startup Perry AI has raised $2.2 million in an oversubscribed seed"
+        },
+        {
+          "id": "CL-02ff1d6a3ca0f010",
+          "subject": "Perry AI",
+          "object": "$2.2M to automate legal work across private capital",
+          "quote": "funding round led by Haatch, with participation from Antler, Syncorp Ventures,"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-697f48dd023f70eb",
+          "publisher": "tech.eu",
+          "url": "https://tech.eu/2026/11/18/perry-ai-secures-22m-to-automate-legal-work-across-private-capital/"
+        }
+      ],
+      "sourceUrl": "https://tech.eu/2026/11/18/perry-ai-secures-22m-to-automate-legal-work-across-private-capital/",
+      "publisher": "tech.eu",
+      "sourceExcerpt": "legaltech startup Perry AI has raised $2.2 million in an oversubscribed seed"
+    },
+    {
+      "id": "EV-8f4b818b8746d539",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-18",
+      "updatedDate": "2026-11-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "爱尔兰 Disseqt AI 融资 730 万欧元，用于安全部署 AI 智能体",
+      "originalTitle": "Ireland&#8217;s Disseqt AI raises €7.3 million to safely deploy AI agents",
+      "subject": "Disseqt AI",
+      "action": "raises",
+      "object": "€7.3 million to safely deploy AI agents",
+      "metrics": [
+        "€7.3 million",
+        "$8 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-46c6311bd2de6d11"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-46c6311bd2de6d11"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-46c6311bd2de6d11"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-46c6311bd2de6d11"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-46c6311bd2de6d11"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d35a6827606048a",
+        "EN-46c6311bd2de6d11"
+      ],
+      "entityNames": [
+        "HomeFundingIreland's Disseqt AI",
+        "Disseqt AI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-6996facedb80fb2e",
+          "subject": "Disseqt AI",
+          "object": "€7.3 million to safely deploy AI agents",
+          "quote": "HomeFundingIreland's Disseqt AI raises €7.3 million to safely deploy AI agents"
+        },
+        {
+          "id": "CL-772d06fe0e476782",
+          "subject": "Disseqt AI",
+          "object": "€7.3 million to safely deploy AI agents",
+          "quote": "Ireland’s Disseqt AI raises €7.3 million to safely deploy AI agents"
+        },
+        {
+          "id": "CL-d8f00bbd2858b854",
+          "subject": "Disseqt AI",
+          "object": "€7.3 million to safely deploy AI agents",
+          "quote": "Disseqt AI, a Dublin-based AI assurance platform, has raised €7.3 million ($8 million) to help enterprises deploy AI agents safely, at scale and enable them to meet regulatory requirements."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-fe62f74a70dd1335",
+          "publisher": "www.eu-startups.com",
+          "url": "https://www.eu-startups.com/2026/11/irelands-disseqt-ai-raises-e7-3-million-to-safely-deploy-ai-agents/"
+        }
+      ],
+      "sourceUrl": "https://www.eu-startups.com/2026/11/irelands-disseqt-ai-raises-e7-3-million-to-safely-deploy-ai-agents/",
+      "publisher": "www.eu-startups.com",
+      "sourceExcerpt": "HomeFundingIreland's Disseqt AI raises €7.3 million to safely deploy AI agents"
+    },
+    {
+      "id": "EV-bead3c949a623488",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-18",
+      "updatedDate": "2026-11-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "高盛领投Payhawk 2.8亿美元融资轮",
+      "originalTitle": "Goldman Sachs leads $280M funding round in Payhawk",
+      "subject": "Goldman Sachs leads $280M",
+      "action": "funding round",
+      "object": "in Payhawk",
+      "metrics": [
+        "$280m",
+        "$2b",
+        "$215m"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-068dbf31f93c05a9"
+      ],
+      "entityNames": [
+        "Payhawk"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-3006abd704f95fce",
+          "subject": "Goldman Sachs leads $280M",
+          "object": "in Payhawk",
+          "quote": "Payhawk, the Bulgaria-founded spend management platform, has raised a $280m Series C funding round, led by new investor Goldman Sachs, as it looks to build the finance operating system for the AI era."
+        },
+        {
+          "id": "CL-58035f2eab65cb3d",
+          "subject": "Goldman Sachs leads $280M",
+          "object": "in Payhawk",
+          "quote": "The funding round values London-headquartered Payhawk at $2bn, doubling its valuation from its last public funding round in 2022 when it raised $215m and became a unicorn."
+        },
+        {
+          "id": "CL-eb6419f36d02ba14",
+          "subject": "Goldman Sachs leads $280M",
+          "object": "in Payhawk",
+          "quote": "The funding round features existing investors including QED, Greenoaks, Lightspeed, Hedosophia and Bek Ventures, alongside new investors…"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-e0ff5c6c3e5406a9",
+          "publisher": "tech.eu",
+          "url": "https://tech.eu/2026/11/18/goldman-sachs-leads-280m-funding-round-in-payhawk/"
+        }
+      ],
+      "sourceUrl": "https://tech.eu/2026/11/18/goldman-sachs-leads-280m-funding-round-in-payhawk/",
+      "publisher": "tech.eu",
+      "sourceExcerpt": "Payhawk, the Bulgaria-founded spend management platform, has raised a $280m Series C funding round, led by new investor Goldman Sachs, as it looks to build the finance operating system for the AI era."
+    },
+    {
+      "id": "EV-dc8755b16a5344ed",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-18",
+      "updatedDate": "2026-11-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "观壹智能完成数亿元融资，加速生命智能基础模型研发",
+      "originalTitle": "",
+      "subject": "观壹智能",
+      "action": "完成数亿元融资",
+      "object": "，加速生命智能基础模型研发",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9016c2842633a955"
+      ],
+      "entityNames": [
+        "观壹智能"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-58ae6ad5ef7cda00",
+          "subject": "观壹智能",
+          "object": "，加速生命智能基础模型研发",
+          "quote": "投资界（ID：pedaily2012）11月18日消息，观壹智能（OneX Intelligence）宣布完成首轮数亿元融资，由IDG资本领投，创世伙伴创投(CCV)、沄柏资本、交大菡源资产、云启资本跟投，财务顾问为棕榈资本。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-ea218fdf4ad56137",
+          "publisher": "news.pedaily.cn",
+          "url": "https://news.pedaily.cn/202611/572052.shtml"
+        }
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202611/572052.shtml",
+      "publisher": "news.pedaily.cn",
+      "sourceExcerpt": "投资界（ID：pedaily2012）11月18日消息，观壹智能（OneX Intelligence）宣布完成首轮数亿元融资，由IDG资本领投，创世伙伴创投(CCV)、沄柏资本、交大菡源资产、云启资本跟投，财务顾问为棕榈资本。"
+    },
+    {
       "id": "EV-03676f6d56167104",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "acquisition",
@@ -102,25 +877,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-5efeec5250b2e94a",
+          "id": "CL-cbc466c5584ce217",
           "subject": "OpenAI 与 Goodfire 达成 AI 安全合作，此前曾探讨超 50 亿美元",
           "object": "与此同时，据《The Information》今日报道，OpenAI 此前曾探讨以超过 50 亿美元（IT之家注：现汇率约合 333.92 亿元人民币）收购 Goodfire 的方案，但双方最终未能达成收购协议。",
           "quote": "与此同时，据《The Information》今日报道，OpenAI 此前曾探讨以超过 50 亿美元（IT之家注：现汇率约合 333.92 亿元人民币）收购 Goodfire 的方案，但双方最终未能达成收购协议。"
         },
         {
-          "id": "CL-691eaea67e1f52b1",
+          "id": "CL-3b09a498e48a4ae5",
           "subject": "OpenAI 与 Goodfire 达成 AI 安全合作，此前曾探讨超 50 亿美元",
           "object": "知情人士称，OpenAI 一名高级管理人员曾提出以超过 50 亿美元收购 Goodfire，或采取其他形式的商业合作。",
           "quote": "知情人士称，OpenAI 一名高级管理人员曾提出以超过 50 亿美元收购 Goodfire，或采取其他形式的商业合作。"
         },
         {
-          "id": "CL-b09ea76e92cb76fd",
+          "id": "CL-147d97d71e0c6a74",
           "subject": "OpenAI 与 Goodfire 达成 AI 安全合作，此前曾探讨超 50 亿美元",
           "object": "若按收购报价计算，其估值将超过 Goodfire 今年 2 月融资时公布的 12.5 亿美元估值的四倍。",
           "quote": "若按收购报价计算，其估值将超过 Goodfire 今年 2 月融资时公布的 12.5 亿美元估值的四倍。"
         },
         {
-          "id": "CL-37d7c46552249b68",
+          "id": "CL-cbd8e41037d53242",
           "subject": "OpenAI 与 Goodfire 达成 AI 安全合作，此前曾探讨超 50 亿美元",
           "object": "IT之家 11 月 17 日消息，今日，OpenAI 宣布与 Apollo Research、METR、Transluce 和 Goodfire 达成合作，将启动首阶段嵌入式评估项目（Embedded Assessments），共同开展模型可解释性与安全评估工作。",
           "quote": "IT之家 11 月 17 日消息，今日，OpenAI 宣布与 Apollo Research、METR、Transluce 和 Goodfire 达成合作，将启动首阶段嵌入式评估项目（Embedded Assessments），共同开展模型可解释性与安全评估工作。"
@@ -139,7 +914,7 @@
     },
     {
       "id": "EV-0d27ea6892225510",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "funding",
@@ -182,7 +957,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-97a132bda7a72f8a",
+          "id": "CL-c77baad789f48872",
           "subject": "Voyage Labs",
           "object": "$12 million in seed funding led by Kleiner Perkins, with participation from SignalFire and SV Angel",
           "quote": "on Tuesday it announced $12 million in seed funding led by Kleiner Perkins, with participation from SignalFire and SV Angel"
@@ -200,8 +975,106 @@
       "sourceExcerpt": "on Tuesday it announced $12 million in seed funding led by Kleiner Perkins, with participation from SignalFire and SV Angel"
     },
     {
+      "id": "EV-0d4f7ad1fe080686",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-17",
+      "updatedDate": "2026-11-17",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Fermat 融资 800 万美元，弥合时装设计师与制造商之间的差距",
+      "originalTitle": "Fermat raises $8M to bridge the gap between fashion designers and manufacturers",
+      "subject": "Fermat",
+      "action": "raises",
+      "object": "$8M to bridge the gap between fashion designers and manufacturers",
+      "metrics": [
+        "$8 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-5e494e695571ede1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-5e494e695571ede1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-5e494e695571ede1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5e494e695571ede1"
+      ],
+      "entityNames": [
+        "Fermat"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-10280e8bff8625d7",
+          "subject": "Fermat",
+          "object": "$8M to bridge the gap between fashion designers and manufacturers",
+          "quote": "Fermat, the Barcelona-based AI platform for the fashion industry, has raised $8 million in seed funding to open a New York office and expand its software from a design tool to full garment production."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-9a5101c7e8c9b702",
+          "publisher": "tech.eu",
+          "url": "https://tech.eu/2026/11/17/fermat-raises-8m-to-bridge-the-gap-between-fashion-designers-and-manufacturers/"
+        }
+      ],
+      "sourceUrl": "https://tech.eu/2026/11/17/fermat-raises-8m-to-bridge-the-gap-between-fashion-designers-and-manufacturers/",
+      "publisher": "tech.eu",
+      "sourceExcerpt": "Fermat, the Barcelona-based AI platform for the fashion industry, has raised $8 million in seed funding to open a New York office and expand its software from a design tool to full garment production."
+    },
+    {
       "id": "EV-12f5404b5c1882ec",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "funding",
@@ -246,7 +1119,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-7469123e6acd8f25",
+          "id": "CL-9db40ba26b221aa9",
           "subject": "Pedestal AI",
           "object": "$4.7 million seed funding",
           "quote": "On Tuesday, Pedestal AI emerged from stealth with $4.7 million in seed funding."
@@ -264,8 +1137,132 @@
       "sourceExcerpt": "On Tuesday, Pedestal AI emerged from stealth with $4.7 million in seed funding."
     },
     {
+      "id": "EV-1f29782fd30ac7e4",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-17",
+      "updatedDate": "2026-11-17",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Previsia 融资 €3.8M，将 AI 驱动的风险预防带给欧洲各地企业",
+      "originalTitle": "Previsia raises €3.8M to bring AI-powered risk prevention to businesses across Europe",
+      "subject": "Previsia",
+      "action": "raises",
+      "object": "€3.8M to bring AI-powered risk prevention to businesses across Europe",
+      "metrics": [
+        "€3.8 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e80e837d8cdf136a"
+      ],
+      "entityNames": [
+        "Previsia"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-10b7bdd74e32ac56",
+          "subject": "Previsia",
+          "object": "€3.8M to bring AI-powered risk prevention to businesses across Europe",
+          "quote": "€3.8 million in a seed funding round backed by French investment funds IRDI and"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-bffd5090f41419e8",
+          "publisher": "tech.eu",
+          "url": "https://tech.eu/2026/11/17/previsia-raises-eur38m-to-bring-ai-powered-risk-prevention-to-businesses-across-europe/"
+        }
+      ],
+      "sourceUrl": "https://tech.eu/2026/11/17/previsia-raises-eur38m-to-bring-ai-powered-risk-prevention-to-businesses-across-europe/",
+      "publisher": "tech.eu",
+      "sourceExcerpt": "€3.8 million in a seed funding round backed by French investment funds IRDI and"
+    },
+    {
+      "id": "EV-209ca1e91172b225",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-17",
+      "updatedDate": "2026-11-17",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "前美团高管为AI语音戒指融资数千万元人民币",
+      "originalTitle": "Ex-Meituan executive raises tens of millions in yuan for AI voice ring",
+      "subject": "Huling",
+      "action": "funding",
+      "object": "tens of millions of yuan seed round",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-203958b7df14b08d",
+        "EN-db36e7bd45191ce4"
+      ],
+      "entityNames": [
+        "Huling",
+        "Meituan"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-38ecabd8714fc43b",
+          "subject": "Huling",
+          "object": "tens of millions of yuan seed round",
+          "quote": "Huling, a Chinese smart wearables startup founded in 2026, has raised tens of millions of yuan in a seed round, with no investor or valuation disclosed."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-29c5abe4c028715d",
+          "publisher": "dealroom.co",
+          "url": "https://dealroom.co/news/173553-ex-meituan-executive-raises-tens-of-millions-in-yuan-for-ai-voice-ring/"
+        }
+      ],
+      "sourceUrl": "https://dealroom.co/news/173553-ex-meituan-executive-raises-tens-of-millions-in-yuan-for-ai-voice-ring/",
+      "publisher": "dealroom.co",
+      "sourceExcerpt": "Huling, a Chinese smart wearables startup founded in 2026, has raised tens of millions of yuan in a seed round, with no investor or valuation disclosed."
+    },
+    {
       "id": "EV-272eb63ab316040f",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "funding",
@@ -309,13 +1306,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-f8d742b711999fab",
+          "id": "CL-009aef585fb4bfae",
           "subject": "LanceDB",
           "object": "$57.5m Series B",
           "quote": "Today we are thrilled to join Bessemer Venture Partners & Innovation Endeavors, alongside Dimension, Swift Ventures, CRV & Y Combinator, in LanceDB’s $57.5m Series B."
         },
         {
-          "id": "CL-52f614ac9688f80a",
+          "id": "CL-5a44c33e0f0a26c7",
           "subject": "LanceDB",
           "object": "$30m Series A",
           "quote": "Theory partnered with Chang She & Lei Xu at Seed & led their $30m Series A."
@@ -334,7 +1331,7 @@
     },
     {
       "id": "EV-27b9c5896b1b9c27",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "funding",
@@ -352,7 +1349,8 @@
         "$250M",
         "$250 million",
         "$1.5 billion",
-        "$75 million"
+        "$75 million",
+        "$250\nmillion"
       ],
       "locations": [],
       "missingFields": [],
@@ -362,7 +1360,19 @@
         "ai_market_category": [],
         "ai_market_subcategory": [],
         "ai_market_application": [],
-        "product_form": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-cb3a9e70e51c2f47"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
         "use_case": [],
         "industry": [
           {
@@ -391,9 +1401,31 @@
           ],
           "provenance": "claim_assertion",
           "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-cb3a9e70e51c2f47"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-cb3a9e70e51c2f47"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
         {
           "dimensionId": "industry",
           "dimensionName": "行业",
@@ -416,29 +1448,40 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-debafce6f1935e54",
+          "id": "CL-6531de6339dc0b00",
           "subject": "Model ML",
           "object": "$250M to automate investment banking grunt work",
           "quote": "Model ML raises $250M to automate investment banking grunt work"
         },
         {
-          "id": "CL-1bf5550e948afc69",
+          "id": "CL-ee6c54c8e108e0c8",
           "subject": "Model ML",
           "object": "$250M to automate investment banking grunt work",
           "quote": "Model ML, a London-based startup that uses AI to automate work traditionally performed by junior bankers and consultants, including building financial models, preparing pitch decks, and writing due diligence reports, has raised $250 million in Series B funding at a $1.5 billion valuation."
         },
         {
-          "id": "CL-d60dce4a66c92dde",
+          "id": "CL-3f5360f471edb789",
           "subject": "Model ML",
           "object": "$250M to automate investment banking grunt work",
           "quote": "The new round, which comes a year after its $75 million Series A round was announced, was co-led by General Atlantic and earlier backer QED Investors."
+        },
+        {
+          "id": "CL-c7a3b88eda928633",
+          "subject": "Model ML",
+          "object": "$250 million Series B funding round at a valuation of $1.5 billion",
+          "quote": "Model ML, an AI platform for financial and professional services, has raised $250 million in a Series B funding round at a valuation of $1.5 billion."
         }
       ],
       "sources": [
         {
-          "id": "SA-e1cebd759b36e8c4",
+          "id": "SA-ae6129977bc5416f",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/"
+        },
+        {
+          "id": "SA-9594d2665e030ef9",
+          "publisher": "tech.eu",
+          "url": "https://tech.eu/2026/11/17/model-ml-hits-15b-valuation-with-250m-raise-just-18-months-after-emerging-from-stealth/"
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/",
@@ -567,6 +1610,79 @@
       "sourceUrl": "https://www.eu-startups.com/2026/11/swappie-co-founders-ai-healthtech-startup-treat-raises-e3-million-to-streamline-private-healthcare/",
       "publisher": "www.eu-startups.com",
       "sourceExcerpt": "HomeFinland-StartupsSwappie co-founder’s AI HealthTech startup Treat raises €3 million to streamline private..."
+    },
+    {
+      "id": "EV-5be10c6214adaf19",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-17",
+      "updatedDate": "2026-11-17",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "乎灵科技获千万级种子轮融资 聚焦AI语音健康戒指_大风号",
+      "originalTitle": "",
+      "subject": "乎灵科技获千万级种子轮",
+      "action": "融资",
+      "object": "聚焦AI语音健康戒指",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-c86336c5bd1f3b19"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-3acff7dbc37d8b23",
+        "EN-865ff7d9f6c4e6a2"
+      ],
+      "entityNames": [
+        "乎灵科技获千万级种子轮",
+        "乎灵科技"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-c86336c5bd1f3b19",
+          "subject": "乎灵科技获千万级种子轮",
+          "object": "聚焦AI语音健康戒指",
+          "quote": "智通财经APP获悉，乎灵科技(北京)有限公司(品牌名：乎零Huling)完成千万级人民币种子轮融资，具体投资方未披露，天使轮融资即将启动。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-65ce6d1d45c3409c",
+          "publisher": "feng.ifeng.com",
+          "url": "https://feng.ifeng.com/c/8y84ibFj50a"
+        }
+      ],
+      "sourceUrl": "https://feng.ifeng.com/c/8y84ibFj50a",
+      "publisher": "feng.ifeng.com",
+      "sourceExcerpt": "智通财经APP获悉，乎灵科技(北京)有限公司(品牌名：乎零Huling)完成千万级人民币种子轮融资，具体投资方未披露，天使轮融资即将启动。"
     },
     {
       "id": "EV-60e9751ddf436c14",
@@ -724,8 +1840,77 @@
       "sourceExcerpt": "乎灵科技（北京）有限公司（品牌名：乎零Huling）对外官宣已完成千万级人民币种子轮融资"
     },
     {
+      "id": "EV-79984024e8768a96",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-17",
+      "updatedDate": "2026-11-17",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "红杉资本与Greenoaks领投Isomorphic Labs 50亿美元C轮融资",
+      "originalTitle": "Sequoia and Greenoaks lead massive $5BN Series C funding round in Isomorphic Labs",
+      "subject": "Sequoia and Greenoaks lead massive $5BN",
+      "action": "Series C",
+      "object": "funding round in Isomorphic Labs",
+      "metrics": [
+        "$5b",
+        "$2.1b"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-478d3cdc1ceaae6b"
+      ],
+      "entityNames": [
+        "Sequoia"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-00b273ed78fb98ca",
+          "subject": "Sequoia and Greenoaks lead massive $5BN",
+          "object": "funding round in Isomorphic Labs",
+          "quote": "Demis Hassabis’'s Isomorphic Labs has raised a massive $5bn Series C funding round, just six months after raising $2.1bn in a Series B funding, as it looks to leverage AI to power a new generation of medicines."
+        },
+        {
+          "id": "CL-21aa0a8e2becc079",
+          "subject": "Sequoia and Greenoaks lead massive $5BN",
+          "object": "funding round in Isomorphic Labs",
+          "quote": "The new funding round was co-led by California-based VCs Greenoaks and Sequoia, with Andreessen Horowitz, Thrive Capital, Alphabet, Alphabet’s GV and CapitalG, Temasek, and the Sovereign AI fund also participating."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-27e5e394df70f441",
+          "publisher": "tech.eu",
+          "url": "https://tech.eu/2026/11/17/sequoia-and-greenoaks-lead-massive-5bn-series-c-funding-round-in-isomorphic-labs/"
+        }
+      ],
+      "sourceUrl": "https://tech.eu/2026/11/17/sequoia-and-greenoaks-lead-massive-5bn-series-c-funding-round-in-isomorphic-labs/",
+      "publisher": "tech.eu",
+      "sourceExcerpt": "Demis Hassabis’'s Isomorphic Labs has raised a massive $5bn Series C funding round, just six months after raising $2.1bn in a Series B funding, as it looks to leverage AI to power a new generation of medicines."
+    },
+    {
       "id": "EV-86165eebaf4622fd",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "funding",
@@ -844,37 +2029,37 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-c4306817b157f102",
+          "id": "CL-1d74a46d8d636d4f",
           "subject": "Isomorphic Labs",
           "object": "$5 billion in its second mega-round within six months",
           "quote": "Isomorphic Labs raises $5 billion in its second mega-round within six months"
         },
         {
-          "id": "CL-344e03bda78acb99",
+          "id": "CL-fa9850c8a660811c",
           "subject": "Isomorphic Labs",
           "object": "$5 billion in its second mega-round within six months",
           "quote": "Alphabet's AI drug discovery company Isomorphic Labs has raised $5 billion, its second billion-dollar round in six months."
         },
         {
-          "id": "CL-a2e5f52ce1a516f8",
+          "id": "CL-4a5acbd570693f8f",
           "subject": "Isomorphic Labs",
           "object": "$5 billion in its second mega-round within six months",
           "quote": "The company had already raised $2.1 billion back in May 2026."
         },
         {
-          "id": "CL-acb361bed9e0cf65",
+          "id": "CL-ff17955808aa6dc6",
           "subject": "Isomorphic Labs",
           "object": "$5B as it looks to take drug candidates to clinical trials",
           "quote": "Isomorphic Labs raises $5B as it looks to take drug candidates to clinical trials"
         },
         {
-          "id": "CL-a645426509d0d7d8",
+          "id": "CL-c55fbcc14772e388",
           "subject": "Isomorphic Labs",
           "object": "$5B as it looks to take drug candidates to clinical trials",
           "quote": "Isomorphic Labs, the AI drug-discovery platform that was spun out of Google’s DeepMind in 2021, has raised $5 billion in a Series C funding round as it seeks to take its drug candidates to clinical trials."
         },
         {
-          "id": "CL-2468370e06ce92f7",
+          "id": "CL-1ae27a6a72d8c86b",
           "subject": "Isomorphic Labs",
           "object": "$5B as it looks to take drug candidates to clinical trials",
           "quote": "The Series C is Isomorphic’s first fundraise since its founder and CEO, Demis Hassabis, left his position as head of DeepMind to focus on drug discovery, which also saw him moving into a chairman role at DeepMind."
@@ -887,7 +2072,7 @@
           "url": "https://the-decoder.com/isomorphic-labs-raises-5-billion-in-its-second-mega-round-within-six-months/"
         },
         {
-          "id": "SA-1fd6ebabe196952d",
+          "id": "SA-65ba660aecfff33e",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/"
         }
@@ -897,8 +2082,136 @@
       "sourceExcerpt": "Isomorphic Labs raises $5 billion in its second mega-round within six months"
     },
     {
+      "id": "EV-88837f7f7d187d2b",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-17",
+      "updatedDate": "2026-11-17",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "pending_verification",
+      "statusLabel": "待核验",
+      "publicationStatus": "pending_verification",
+      "reportedStatus": "announced",
+      "researchDeferral": "subject_company_unresolved",
+      "title": "Synthesia与Datadog CEO支持AI初创公司Remanence完成3000万美元融资",
+      "originalTitle": "Synthesia and Datadog CEOs back AI startup Remanence in $30M funding round",
+      "subject": "Synthesia and Datadog CEOs back AI startup Remanence in $30M",
+      "action": "funding round",
+      "object": "Synthesia and Datadog CEOs back AI startup Remanence in $30M funding round",
+      "metrics": [
+        "$30m"
+      ],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-064831e9def59f5f",
+        "EN-fa6d7e7ab893803f",
+        "EN-4d8bd97f03109ac1"
+      ],
+      "entityNames": [
+        "Synthesia and Datadog",
+        "Synthesia",
+        "Datadog"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-1e3561d8ac303f2b",
+          "subject": "Synthesia and Datadog CEOs back AI startup Remanence in $30M",
+          "object": "A Paris-based startup which uses open-weight AI models to help businesses develop their own specialised AI models has raised $30m in seed funding, it said today.",
+          "quote": "A Paris-based startup which uses open-weight AI models to help businesses develop their own specialised AI models has raised $30m in seed funding, it said today."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-8a7c13480888813c",
+          "publisher": "tech.eu",
+          "url": "https://tech.eu/2026/11/17/synthesia-and-datadog-ceos-back-french-ai-startup-remanence/"
+        }
+      ],
+      "sourceUrl": "https://tech.eu/2026/11/17/synthesia-and-datadog-ceos-back-french-ai-startup-remanence/",
+      "publisher": "tech.eu",
+      "sourceExcerpt": "A Paris-based startup which uses open-weight AI models to help businesses develop their own specialised AI models has raised $30m in seed funding, it said today."
+    },
+    {
       "id": "EV-a9c1c24f9712e563",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "funding",
@@ -941,7 +2254,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-5426c075a11bfe89",
+          "id": "CL-b7eb4c22cc3f0f56",
           "subject": "首发|酉术量子",
           "object": "，上海交大团队破解量子计算“翻译”难题",
           "quote": "投资界AI获悉，今日（11月17日），上海酉术量子科技有限公司（下称“酉术量子”）宣布完成天使轮融资，投资方包括云启资本、嘉铭浩春，老股东菡源资产、小苗朗程、启高资本持续加注。"
@@ -959,18 +2272,164 @@
       "sourceExcerpt": "投资界AI获悉，今日（11月17日），上海酉术量子科技有限公司（下称“酉术量子”）宣布完成天使轮融资，投资方包括云启资本、嘉铭浩春，老股东菡源资产、小苗朗程、启高资本持续加注。"
     },
     {
-      "id": "EV-fef71bd1ef83682a",
-      "dataDate": "2026-11-18",
+      "id": "EV-c4baf05b2acd2a2e",
+      "dataDate": "2026-11-19",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "pending_verification",
-      "statusLabel": "待核验",
-      "publicationStatus": "pending_verification",
-      "reportedStatus": "completed",
-      "researchDeferral": "research_sources_insufficient",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI蛋白质设计开始比谁的分子能用：这家AI制药公司拿到数亿元融资",
+      "originalTitle": "",
+      "subject": "无锡途深智合人工智能科技有限公司",
+      "action": "融资",
+      "object": "AI蛋白质设计开始比谁的分子能用：这家AI制药公司拿到数亿元融资",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-5f4c491732c632b8"
+        ]
+      },
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e95fdb002f706a9f",
+        "EN-9fc56a9b4a5b8b27"
+      ],
+      "entityNames": [
+        "AI蛋白质设计开始比谁的分子能用",
+        "无锡途深智合人工智能科技有限公司"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-5f4c491732c632b8",
+          "subject": "无锡途深智合人工智能科技有限公司",
+          "object": "连续完成两轮合计数亿元Pre-A轮及Pre-A+轮融资",
+          "quote": "近日，无锡途深智合人工智能科技有限公司（以下简称 “途深智合”）连续完成两轮合计数亿元 Pre-A 轮及 Pre-A+ 轮融资。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-f1a21b24748b15e0",
+          "publisher": "finance.sina.com.cn",
+          "url": "https://finance.sina.com.cn/tech/roll/2026-11-17/doc-iniyzhhm7702258.shtml?froms=ggmp"
+        }
+      ],
+      "sourceUrl": "https://finance.sina.com.cn/tech/roll/2026-11-17/doc-iniyzhhm7702258.shtml?froms=ggmp",
+      "publisher": "finance.sina.com.cn",
+      "sourceExcerpt": "近日，无锡途深智合人工智能科技有限公司（以下简称 “途深智合”）连续完成两轮合计数亿元 Pre-A 轮及 Pre-A+ 轮融资。"
+    },
+    {
+      "id": "EV-fdda8197c66ebabf",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-17",
+      "updatedDate": "2026-11-17",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "乎灵科技获千万级种子轮融资，发布首款产品「乎零AI语音健康戒指」",
+      "originalTitle": "",
+      "subject": "乎灵科技获千万级种子轮",
+      "action": "融资",
+      "object": "，发布首款产品「乎零AI语音健康戒指」",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-757a1b56f3cfb9b1"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-3acff7dbc37d8b23",
+        "EN-865ff7d9f6c4e6a2"
+      ],
+      "entityNames": [
+        "乎灵科技获千万级种子轮",
+        "乎灵科技"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-757a1b56f3cfb9b1",
+          "subject": "乎灵科技获千万级种子轮",
+          "object": "，发布首款产品「乎零AI语音健康戒指」",
+          "quote": "投资界（ID：pedaily2012）11月17日消息，乎灵科技（北京）有限公司（品牌名：乎零Huling）对外官宣已完成千万级人民币种子轮融资，天使轮融资工作即将启动。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-9601b6aa23df7ff0",
+          "publisher": "news.pedaily.cn",
+          "url": "https://news.pedaily.cn/202611/571958.shtml"
+        }
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202611/571958.shtml",
+      "publisher": "news.pedaily.cn",
+      "sourceExcerpt": "投资界（ID：pedaily2012）11月17日消息，乎灵科技（北京）有限公司（品牌名：乎零Huling）对外官宣已完成千万级人民币种子轮融资，天使轮融资工作即将启动。"
+    },
+    {
+      "id": "EV-fef71bd1ef83682a",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-17",
+      "updatedDate": "2026-11-17",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
       "title": "Genesis AI 以 35 亿美元估值融资 5 亿美元，将其机器人引入工厂和仓库",
       "originalTitle": "Genesis AI Raises $500M At $3.5B Valuation To Bring Its Robots To Factories And Warehouses",
       "subject": "Genesis AI",
@@ -1007,13 +2466,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-6e817b1c8b564ede",
+          "id": "CL-7a0ba74e0aebe085",
           "subject": "Genesis AI",
           "object": "$500M At $3.5B Valuation To Bring Its Robots To Factories And Warehouses",
           "quote": "Genesis AI, a startup teaching robots to perform physical tasks by learning from human movements, announced Tuesday it has raised $500 million in Series A funding at a $3.5 billion valuation."
         },
         {
-          "id": "CL-d9bfb771937f3104",
+          "id": "CL-5928e83af5a181d1",
           "subject": "Genesis AI",
           "object": "$500M At $3.5B Valuation To Bring Its Robots To Factories And Warehouses",
           "quote": "Genesis previously raised $105 million in a round announced in July 2025."
@@ -1021,7 +2480,7 @@
       ],
       "sources": [
         {
-          "id": "SA-a1bb6fe68e1b55b3",
+          "id": "SA-86ae4efaa5671455",
           "publisher": "news.crunchbase.com",
           "url": "https://news.crunchbase.com/venture/robot-factory-workers-genesis-ai-fundraise/"
         }
@@ -1032,7 +2491,7 @@
     },
     {
       "id": "EV-1d425fbf0768f5a9",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-16",
       "updatedDate": "2026-11-16",
       "eventType": "funding",
@@ -1112,7 +2571,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-579e396c65d5e613",
+          "id": "CL-a4071ed6cb424601",
           "subject": "Alecto",
           "object": "€18 million Seed round",
           "quote": "Alecto, a British AI-native law firm, has raised a €18 million ($20 million) Seed round, to support the company’s expansion into additional areas of consumer law and new geographies, with its first international launch planned for 2027."
@@ -1120,7 +2579,7 @@
       ],
       "sources": [
         {
-          "id": "SA-12a19f300f839859",
+          "id": "SA-bda0d0f9abbd6a9a",
           "publisher": "www.eu-startups.com",
           "url": "https://www.eu-startups.com/2026/11/alecto-lands-e18-million-to-scale-its-ai-powered-law-firm-beyond-property-transactions/"
         }
@@ -1130,8 +2589,70 @@
       "sourceExcerpt": "Alecto, a British AI-native law firm, has raised a €18 million ($20 million) Seed round, to support the company’s expansion into additional areas of consumer law and new geographies, with its first international launch planned for 2027."
     },
     {
+      "id": "EV-ca34f51e33c81a68",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-16",
+      "updatedDate": "2026-11-16",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "前华盛顿大学AI研究员Yejin Choi与Carlos Guestrin为AI初创公司Noeri融资1.1亿美元",
+      "originalTitle": "Former UW AI researchers Yejin Choi and Carlos Guestrin raise $110M for AI startup Noeri",
+      "subject": "Former UW AI researchers Yejin Choi and Carlos Guestrin",
+      "action": "raise",
+      "object": "$110M for AI startup Noeri",
+      "metrics": [
+        "$110 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-6036cca70e21ac3a"
+      ],
+      "entityNames": [
+        "Carlos Guestrin"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-5e6de917370a9d6b",
+          "subject": "Former UW AI researchers Yejin Choi and Carlos Guestrin",
+          "object": "$110M for AI startup Noeri",
+          "quote": "Yejin Choi and Carlos Guestrin, two prominent AI researchers who spent years at the University of Washington before moving to Stanford, have raised $110 million for Noeri, a startup building AI systems that keep improving on a company’s own work."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-d2dd8679b5d9f31e",
+          "publisher": "www.geekwire.com",
+          "url": "https://www.geekwire.com/2026/former-uw-ai-researchers-yejin-choi-and-carlos-guestrin-raise-110m-for-ai-startup-noeri/"
+        }
+      ],
+      "sourceUrl": "https://www.geekwire.com/2026/former-uw-ai-researchers-yejin-choi-and-carlos-guestrin-raise-110m-for-ai-startup-noeri/",
+      "publisher": "www.geekwire.com",
+      "sourceExcerpt": "Yejin Choi and Carlos Guestrin, two prominent AI researchers who spent years at the University of Washington before moving to Stanford, have raised $110 million for Noeri, a startup building AI systems that keep improving on a company’s own work."
+    },
+    {
       "id": "EV-e4e1d8cd826a402a",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-16",
       "updatedDate": "2026-11-16",
       "eventType": "funding",
@@ -1178,13 +2699,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-a05cd789acdce93b",
+          "id": "CL-ad89a293030e0f6f",
           "subject": "Freshworks alums",
           "object": "$53M to take on Salesforce, HubSpot with AI-native CRM",
           "quote": "Dreamteam, a startup founded by former Freshworks executives, has raised $53 million to challenge Salesforce and HubSpot with its AI-native CRM, betting that AI can finally shake up a market where established players have so far proved difficult to dislodge."
         },
         {
-          "id": "CL-79fd509ccf0b9d20",
+          "id": "CL-ab93f697f856b8a4",
           "subject": "Freshworks alums",
           "object": "$53M to take on Salesforce, HubSpot with AI-native CRM",
           "quote": "The funding comprises seed and Series A rounds, led by Together Fund and Accel respectively, with participation from Premji Invest."
@@ -1203,7 +2724,7 @@
     },
     {
       "id": "EV-fa34f7342de666dd",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-16",
       "updatedDate": "2026-11-16",
       "eventType": "funding",
@@ -1283,7 +2804,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-a8b9e7802ef785f8",
+          "id": "CL-9576f000b7117531",
           "subject": "Corma",
           "object": "$125 million Series A round at a $1 billion valuation led by NEA",
           "quote": "AI cybersecurity startup Corma has raised a $125 million Series A round at a $1 billion valuation led by NEA, the company said."
@@ -1291,7 +2812,7 @@
       ],
       "sources": [
         {
-          "id": "SA-e1421b5cf21eeb05",
+          "id": "SA-d27cc0585d2cc83d",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/"
         }
@@ -1302,17 +2823,15 @@
     },
     {
       "id": "EV-096d98d489abb245",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-15",
       "updatedDate": "2026-11-15",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "pending_verification",
-      "statusLabel": "待核验",
-      "publicationStatus": "pending_verification",
-      "reportedStatus": "announced",
-      "researchDeferral": "research_sources_insufficient",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
       "title": "新浪AI热点小时报丨2026年11月15日13时_今日实时AI热点速递",
       "originalTitle": "",
       "subject": "曦选创智",
@@ -1330,7 +2849,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-6d1a478d919d6eb6"
+          "CL-0cb51090e52784e3"
         ]
       },
       "missingFields": [],
@@ -1360,7 +2879,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-6d1a478d919d6eb6",
+          "id": "CL-0cb51090e52784e3",
           "subject": "曦选创智",
           "object": "5亿元天使轮融资",
           "quote": "11月12日，沐曦与优必选共同发起的曦选创智宣布完成5亿元天使轮融资。"
@@ -1368,7 +2887,7 @@
       ],
       "sources": [
         {
-          "id": "SA-b1842bb0876a212c",
+          "id": "SA-a8b20f99180fb5fa",
           "publisher": "k.sina.com.cn",
           "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908uwkm.html?from=tech"
         }
@@ -1379,7 +2898,7 @@
     },
     {
       "id": "EV-c7f02c82dcf2cea9",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-15",
       "updatedDate": "2026-11-15",
       "eventType": "funding",
@@ -1424,7 +2943,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-a2f9d35208c9aea7",
+          "id": "CL-fbe5bbb8371a81fd",
           "subject": "Bharat Semi",
           "object": "$24 million seed funding",
           "quote": "Bharat Semi, an Indian semiconductor startup, has raised $24 million in seed funding to develop AI-enabled image sensors, as it seeks to win customers in the United States and elsewhere."
@@ -1432,7 +2951,7 @@
       ],
       "sources": [
         {
-          "id": "SA-c91ec34d4c50cf08",
+          "id": "SA-548d6c720cb7fd1b",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/"
         }
@@ -1505,7 +3024,7 @@
     },
     {
       "id": "EV-1df5624821fce3f9",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-13",
       "updatedDate": "2026-11-13",
       "eventType": "funding",
@@ -1518,7 +3037,7 @@
       "originalTitle": "AI agent startup LangChain hits $3B valuation",
       "subject": "LangChain",
       "action": "funding",
-      "object": "$300 million Series C at a $3 billion valuation",
+      "object": "$300 million Series C at a $3 billion valuation led by CapitalG",
       "metrics": [
         "$300 million",
         "$3 billion"
@@ -1551,15 +3070,15 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-bd084c0991d37e5f",
+          "id": "CL-dcf407a594219877",
           "subject": "LangChain",
-          "object": "$300 million Series C at a $3 billion valuation",
+          "object": "$300 million Series C at a $3 billion valuation led by CapitalG",
           "quote": "Agent management startup LangChain has raised a $300 million Series C at a $3 billion valuation led by CapitalG, with participation from investors, including Singapore’s GIC, DFJ Growth, IVP, and Sapphire Ventures, the company announced on Friday."
         }
       ],
       "sources": [
         {
-          "id": "SA-adc1498fe1acfaee",
+          "id": "SA-5b97bd390b442ceb",
           "publisher": "techcrunch.com",
           "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/"
         }
@@ -1828,7 +3347,7 @@
     },
     {
       "id": "EV-a691420f309b3d29",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-13",
       "updatedDate": "2026-11-13",
       "eventType": "funding",
@@ -1854,7 +3373,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-7be540230102b4d2"
+          "CL-cbeaca0019cd5654"
         ]
       },
       "missingFields": [
@@ -1884,7 +3403,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-7be540230102b4d2",
+          "id": "CL-cbeaca0019cd5654",
           "subject": "AI智能体基础设施公司「以太之心」",
           "object": "投资界（ID：pedaily2012）消息，近日，以太之心宣布完成数千万种子轮融资。",
           "quote": "投资界（ID：pedaily2012）消息，近日，以太之心宣布完成数千万种子轮融资。"
@@ -2052,7 +3571,7 @@
     },
     {
       "id": "EV-03e34979859b12d9",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-19",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "funding",
@@ -2131,7 +3650,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-acb46aabd69fc4aa",
+          "id": "CL-4638ef0a260e19d9",
           "subject": "Nebuly",
           "object": "$21M Series A to turn AI investments into measurable results",
           "quote": "business value of their AI agents, has raised $21 million in a Series A funding"
@@ -2150,7 +3669,7 @@
     },
     {
       "id": "EV-123b3ef83e8306a3",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-19",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "funding",
@@ -2193,7 +3712,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-1d0016dfd84e697b",
+          "id": "CL-c0a3884efc27be22",
           "subject": "Biomatter",
           "object": "$18 million Series A funding round",
           "quote": "Biomatter, a company specialising in custom enzyme design, has raised $18 million in an oversubscribed Series A funding round led by Astanor, with participation from existing investors UVC Partners, Inventure and Metaplanet."
@@ -2278,7 +3797,7 @@
     },
     {
       "id": "EV-4fed1a2667fd7af4",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-19",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "funding",
@@ -2321,7 +3840,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-9ea6556df65177ff",
+          "id": "CL-ee722c7b0c233a49",
           "subject": "Mondrio",
           "object": "$3.75M to rethink B2B pricing with AI agents",
           "quote": "raised a $3.75 million funding round led by Heartcore Capital, with participation"
@@ -2340,7 +3859,7 @@
     },
     {
       "id": "EV-5d3da505edb7ef83",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "funding",
@@ -2384,7 +3903,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-461070f443ba82e7",
+          "id": "CL-254febb1c1fd7f8a",
           "subject": "Fractile",
           "object": "超7.2亿美元的C轮融资",
           "quote": "英国人工智能芯片初创企业 Fractile 当地时间昨日宣布完成了超 7.2 亿美元（IT之家注：现汇率约合 48.14 亿元人民币）的 C 轮融资。"
@@ -2700,7 +4219,7 @@
     },
     {
       "id": "EV-a9a2cac6468c5160",
-      "dataDate": "2026-11-16",
+      "dataDate": "2026-11-19",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "funding",
@@ -2745,7 +4264,7 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-0b683993e3d5ae06",
+          "id": "CL-d8a1239f6fe4de9f",
           "subject": "Berlin-LA startup Opdo",
           "object": "$2.3M to automate optical engineering with AI",
           "quote": "Opdo, an AI-native optical engineering company, has raised $2.3 million in pre-seed funding to accelerate its ambition of automating optical engineering, from initial design to finished components."
@@ -366758,7 +368277,7 @@
     },
     {
       "id": "EV-1c4939371a435f9f",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "product_release",
@@ -366782,7 +368301,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-fcd623519f98e053"
+          "CL-d982fb2c408274a3"
         ]
       },
       "missingFields": [],
@@ -366820,7 +368339,7 @@
       ],
       "claims": [
         {
-          "id": "CL-fcd623519f98e053",
+          "id": "CL-d982fb2c408274a3",
           "subject": "华为",
           "object": "SingleRAN 22.1 软件版本",
           "quote": "今年 8 月，华为还发布移动 AI 时代首个商用版本 —— SingleRAN 22.1 软件版本"
@@ -366838,8 +368357,83 @@
       "sourceExcerpt": "今年 8 月，华为还发布移动 AI 时代首个商用版本 —— SingleRAN 22.1 软件版本"
     },
     {
+      "id": "EV-9eaa0fb6398cb15d",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-16",
+      "updatedDate": "2026-11-16",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "AI 新闻日报 – 2026年11月16日",
+      "originalTitle": "",
+      "subject": "Anthropic",
+      "action": "product_release",
+      "object": "AI 新闻日报 – 2026年11月16日",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-dd76ac0ad00b3fb6"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-32e83e92d45d71f6",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "AI",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-dd76ac0ad00b3fb6",
+          "subject": "Anthropic",
+          "object": "Claude for Manufacturing",
+          "quote": "Anthropic 推出面向制造业的 Claude 行业方案，提供 17 项专用技能与 4 类企业连接器，覆盖 Autodesk Fusion、Infor、微软 365 与 Oracle NetSuite，可在任意 Claude 企业套餐中免费使用。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-c0245c683f4bbf6c",
+          "publisher": "mrfig.org",
+          "url": "https://mrfig.org/4790"
+        }
+      ],
+      "sourceUrl": "https://mrfig.org/4790",
+      "publisher": "mrfig.org",
+      "sourceExcerpt": "Anthropic 推出面向制造业的 Claude 行业方案，提供 17 项专用技能与 4 类企业连接器，覆盖 Autodesk Fusion、Infor、微软 365 与 Oracle NetSuite，可在任意 Claude 企业套餐中免费使用。"
+    },
+    {
       "id": "EV-6d4311291e4a0956",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "product_release",
@@ -366892,25 +368486,25 @@
       ],
       "claims": [
         {
-          "id": "CL-d0a69eeca0b4e203",
+          "id": "CL-220e85e9b7bb78c7",
           "subject": "Jensen Huang’s exit puts Nvidia’s support for",
           "object": "in question",
           "quote": "The open source community just lost one of its strongest advocates."
         },
         {
-          "id": "CL-a559dcd73eda3a19",
+          "id": "CL-f51d6fc1eb2610a0",
           "subject": "Jensen Huang’s exit puts Nvidia’s support for",
           "object": "in question",
           "quote": "Huang has been a staunch supporter of open source AI, framing the ecosystem as good for safety, innovation, diffusion, and sovereignty."
         },
         {
-          "id": "CL-a45ce9909ec99724",
+          "id": "CL-b54b1541eed48da4",
           "subject": "Jensen Huang’s exit puts Nvidia’s support for",
           "object": "in question",
           "quote": "And as frontier AI labs increasingly move to reduce their reliance on Nvidia and build their own chips, supporting open source is also a good way for the company to diversify its customer base by selling chips to nation-states, enterprises, and any organization that wants to own its own models."
         },
         {
-          "id": "CL-f06e4019a3191a01",
+          "id": "CL-f47e3b2842b258f5",
           "subject": "Jensen Huang’s exit puts Nvidia’s support for",
           "object": "in question",
           "quote": "Huang’s departure also comes as Nvidia has yet to finalize a deal to acquire open source platform Hugging Face for $13 billion."
@@ -559539,8 +561133,68 @@
       "sourceExcerpt": "one thing we’d like to do soon is to create a language model with the approximate capability of GPT-3 that can run locally on consumer hardware and release that."
     },
     {
+      "id": "EV-2578e341b50cdd09",
+      "dataDate": "2026-11-19",
+      "date": "2026-11-18",
+      "updatedDate": "2026-11-18",
+      "eventType": "organization_restructuring",
+      "eventTypeLabel": "组织重组",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "哈啰调整 Robotaxi 组织架构：整合成立“模型开发与数据闭环部”，由 CEO 杨磊直接负责",
+      "originalTitle": "",
+      "subject": "哈啰 Robotaxi",
+      "action": "organization_restructuring",
+      "object": "模型开发与数据闭环部",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-6ab82a545022a4f9"
+      ],
+      "entityNames": [
+        "哈啰 Robotaxi"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-dc8cdf51d05da2ff",
+          "subject": "哈啰 Robotaxi",
+          "object": "模型开发与数据闭环部",
+          "quote": "原智能车-模型开发、系统方案与评测以及 AI Infra-数据平台等相关团队被整合成立“模型开发与数据闭环部”，由哈啰 CEO 杨磊直接负责。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7a77e4a7e247b4a8",
+          "publisher": "www.ithome.com",
+          "url": "https://www.ithome.com/1/029/117.htm"
+        }
+      ],
+      "sourceUrl": "https://www.ithome.com/1/029/117.htm",
+      "publisher": "www.ithome.com",
+      "sourceExcerpt": "原智能车-模型开发、系统方案与评测以及 AI Infra-数据平台等相关团队被整合成立“模型开发与数据闭环部”，由哈啰 CEO 杨磊直接负责。"
+    },
+    {
       "id": "EV-d4e72cbad81641c6",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-13",
       "updatedDate": "2026-11-13",
       "eventType": "ipo_listing",
@@ -559588,25 +561242,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-2c6f8d64e1e28471",
+          "id": "CL-2f7fdc1a4dfd1ba0",
           "subject": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大",
           "object": "”添变数",
           "quote": "IT之家 11 月 13 日消息，当地时间 12 日，据《财富》杂志报道，AI 初创企业 Anthropic 即将迎来史上最受瞩目的 IPO 之一。"
         },
         {
-          "id": "CL-e767211e837272d7",
+          "id": "CL-1cbd98f4db868358",
           "subject": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大",
           "object": "”添变数",
           "quote": "此次 IPO 原本就被视为检验投资者对 AI 投资热情的重要考验。"
         },
         {
-          "id": "CL-c526e20400ec78a1",
+          "id": "CL-cd5d2a45c395cf1c",
           "subject": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大",
           "object": "”添变数",
           "quote": "英伟达不仅是 Anthropic 的重要合作伙伴，也深度参与此次 IPO。"
         },
         {
-          "id": "CL-d90d96897587a6d5",
+          "id": "CL-98da4ba3c08a8729",
           "subject": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大",
           "object": "”添变数",
           "quote": "Anthropic 提交的文件显示，英伟达同意在与 IPO 同步进行的 260 亿美元私募配售中认购约 100 亿美元股份。"
@@ -559696,7 +561350,7 @@
     },
     {
       "id": "EV-8bba88d507b8dc62",
-      "dataDate": "2026-11-18",
+      "dataDate": "2026-11-19",
       "date": "2026-11-12",
       "updatedDate": "2026-11-12",
       "eventType": "organization_people",
@@ -559737,15 +561391,15 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-26de0fddf05a09b5",
+          "id": "CL-1a90735ce44b3970",
           "subject": "黄仁勋",
-          "object": "辞去英伟达 CEO",
+          "object": "英伟达 CEO",
           "quote": "黄仁勋因婚外情丑闻持续发酵而辞去英伟达 CEO"
         },
         {
-          "id": "CL-7fa8d8715255354b",
+          "id": "CL-f8d5cc549c55f5ca",
           "subject": "科莱特 · 克雷斯",
-          "object": "暂任英伟达 CEO",
+          "object": "英伟达暂任 CEO",
           "quote": "CFO 科莱特 · 克雷斯将暂任 CEO，公司同时寻找正式接班人"
         }
       ],

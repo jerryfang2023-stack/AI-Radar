@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-18",
-    "currentDate": "2026-11-18",
-    "eventCount": 4486,
+    "latestDataDate": "2026-11-19",
+    "currentDate": "2026-11-19",
+    "eventCount": 4506,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,23 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-01-06",
+    "latest_disclosed_at": "2026-11-16",
     "role_counts": {
       "historical_or_ambiguous": 4,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
-      "series_e"
+      "series_e",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -85,12 +86,57 @@
         "name": "Anthropic PBC"
       },
       {
+        "entity_id": "EN-6036cca70e21ac3a",
+        "canonical_entity_id": "",
+        "name": "Noeri"
+      },
+      {
         "entity_id": "EN-6fcba5d96a4fadfd",
         "canonical_entity_id": "EN-6fcba5d96a4fadfd",
         "name": "xAI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e4ff009036a5e208",
+        "funding_insight_id": "FI-bba3909d662ded6a",
+        "event_ids": [
+          "EV-ca34f51e33c81a68"
+        ],
+        "company_entity_id": "EN-6036cca70e21ac3a",
+        "company_canonical_entity_id": "",
+        "company_name": "Noeri",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "$110 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 110000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.1 亿美元"
+        },
+        "announced_at": "2026-11-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ea7b0f44d05b19b1",
+            "source_url": "https://www.geekwire.com/2026/former-uw-ai-researchers-yejin-choi-and-carlos-guestrin-raise-110m-for-ai-startup-noeri/",
+            "source_title": "前华盛顿大学AI研究员Yejin Choi与Carlos Guestrin为AI初创公司Noeri融资1.1亿美元",
+            "source_content_hash": "29e10db17f2da1980446cbe8ece4fa842305c02feaabceaf6788d1805843b34d",
+            "quote": "Cisco Investments, Nvidia and Snowflake also invested.",
+            "quote_hash": "b8d0df2d93bba55306b9dd715e8e39faa93484065fe9b19a94612dfc960a579d"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d2c37d4f0d8397c8",
         "funding_insight_id": "FI-4909d937138bd129",
@@ -303,6 +349,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ea7b0f44d05b19b1",
+        "source_url": "https://www.geekwire.com/2026/former-uw-ai-researchers-yejin-choi-and-carlos-guestrin-raise-110m-for-ai-startup-noeri/",
+        "source_title": "前华盛顿大学AI研究员Yejin Choi与Carlos Guestrin为AI初创公司Noeri融资1.1亿美元",
+        "source_content_hash": "29e10db17f2da1980446cbe8ece4fa842305c02feaabceaf6788d1805843b34d",
+        "quote": "Cisco Investments, Nvidia and Snowflake also invested.",
+        "quote_hash": "b8d0df2d93bba55306b9dd715e8e39faa93484065fe9b19a94612dfc960a579d"
+      },
+      {
         "source_id": "FISRC-23bba75e0baa6d39",
         "source_url": "https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html",
         "source_title": "埃隆·马斯克的xAI从包括英伟达、思科、富达在内的投资者处融资200亿美元",
@@ -385,16 +439,16 @@
       ],
       "track_record": [
         {
+          "description": "融资来源记录：Noeri · 轮次未披露 · 2026-11-16 · 本轮参投 · $110 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ea7b0f44d05b19b1"
+        },
+        {
           "description": "融资来源记录：xAI · E轮 · 2026-01-06 · 本轮参投 · $20 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-23bba75e0baa6d39"
         },
         {
           "description": "融资来源记录：Anthropic PBC · E轮 · 2025-03-03 · 本轮参投 · $3.5B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ef9fd29dc050f7ca"
-        },
-        {
-          "description": "融资来源记录：Eliyan Corporation · 历史轮次未披露 · Series C 参投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-474b4b7e510758ec"
         }
       ],
       "contacts": [
@@ -424,6 +478,14 @@
           "quote_hash": "357d5b29db19fb8c8c313c43dc226a7834d394a796fec4c83bc76a51bc3efbf6"
         },
         {
+          "source_id": "FISRC-ea7b0f44d05b19b1",
+          "source_url": "https://www.geekwire.com/2026/former-uw-ai-researchers-yejin-choi-and-carlos-guestrin-raise-110m-for-ai-startup-noeri/",
+          "source_title": "前华盛顿大学AI研究员Yejin Choi与Carlos Guestrin为AI初创公司Noeri融资1.1亿美元",
+          "source_content_hash": "29e10db17f2da1980446cbe8ece4fa842305c02feaabceaf6788d1805843b34d",
+          "quote": "Cisco Investments, Nvidia and Snowflake also invested.",
+          "quote_hash": "b8d0df2d93bba55306b9dd715e8e39faa93484065fe9b19a94612dfc960a579d"
+        },
+        {
           "source_id": "FISRC-23bba75e0baa6d39",
           "source_url": "https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html",
           "source_title": "埃隆·马斯克的xAI从包括英伟达、思科、富达在内的投资者处融资200亿美元",
@@ -438,14 +500,6 @@
           "source_content_hash": "3484405d65f54368",
           "quote": "Lightspeed Venture Partners led Anthropic’s latest funding round. It was joined by Cisco Investments, Salesforce Ventures and more than a half-dozen other backers.",
           "quote_hash": "f73de7a5c871cffe4272d9fa877b395f947a09f20b13cbc6da9c3bcc446c2a47"
-        },
-        {
-          "source_id": "FISRC-474b4b7e510758ec",
-          "source_url": "https://eliyan.com/news/eliyan-achieves-unicorn-status-with-145-million-series-c/",
-          "source_title": "Eliyan Achieves Unicorn Status with $145 Million Series C to Advance Electro-optical Interconnects for AI",
-          "source_content_hash": "aa46329e58562db5",
-          "quote": "including two new strategic investors: Cisco Investments and Lumentum",
-          "quote_hash": "b991bb35077ee1ba04f4782e7bac9534fa855b2625f5d267c9f05eb8f14bdbc9"
         }
       ],
       "last_verified_at": "2026-09-26",
@@ -456,7 +510,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[2].role": {
+        "activities[3].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

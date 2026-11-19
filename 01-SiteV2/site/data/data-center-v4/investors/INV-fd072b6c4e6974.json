@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-18",
-    "currentDate": "2026-11-18",
-    "eventCount": 4486,
+    "latestDataDate": "2026-11-19",
+    "currentDate": "2026-11-19",
+    "eventCount": 4506,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,30 +54,38 @@
   },
   "institution": {
     "id": "INV-fd072b6c4e6974",
-    "name": "创世伙伴创投CCV",
-    "aliases": [],
+    "name": "创世伙伴创投(CCV)",
+    "aliases": [
+      "创世伙伴创投CCV"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "investment_institution",
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-08-14",
-    "latest_disclosed_at": "2026-08-14",
+    "latest_disclosed_at": "2026-11-18",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "multi_round"
+      "multi_round",
+      "other"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-9016c2842633a955",
+        "canonical_entity_id": "",
+        "name": "上海观壹智能科技有限公司"
+      },
       {
         "entity_id": "EN-b59ef7313eebea39",
         "canonical_entity_id": "EN-b59ef7313eebea39",
@@ -85,6 +93,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d188b1be25751ef4",
+        "funding_insight_id": "FI-1e4c259da33fb931",
+        "event_ids": [
+          "EV-dc8755b16a5344ed"
+        ],
+        "company_entity_id": "EN-9016c2842633a955",
+        "company_canonical_entity_id": "",
+        "company_name": "上海观壹智能科技有限公司",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "首轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-11-18",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-67d4fce9cfc7ae67",
+            "source_url": "https://news.pedaily.cn/202611/572052.shtml",
+            "source_title": "观壹智能完成数亿元融资，加速生命智能基础模型研发",
+            "source_content_hash": "ea86a311a0f3b6910de6d2f2582e4884feb8550cb1151b30cd8d746f417364b3",
+            "quote": "由IDG资本领投，创世伙伴创投(CCV)、沄柏资本、交大菡源资产、云启资本跟投",
+            "quote_hash": "f8ba5d42360c7f864babf87804fadad4e2d49ae2ac7c689e30f26facab639025"
+          }
+        ]
+      },
       {
         "activity_id": "IA-51dc0d3367f6d0b6",
         "funding_insight_id": "FI-348de8d897f7b7a5",
@@ -127,6 +175,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-67d4fce9cfc7ae67",
+        "source_url": "https://news.pedaily.cn/202611/572052.shtml",
+        "source_title": "观壹智能完成数亿元融资，加速生命智能基础模型研发",
+        "source_content_hash": "ea86a311a0f3b6910de6d2f2582e4884feb8550cb1151b30cd8d746f417364b3",
+        "quote": "由IDG资本领投，创世伙伴创投(CCV)、沄柏资本、交大菡源资产、云启资本跟投",
+        "quote_hash": "f8ba5d42360c7f864babf87804fadad4e2d49ae2ac7c689e30f26facab639025"
+      },
       {
         "source_id": "FISRC-9a9fc48b4bf6ac86",
         "source_url": "https://news.pedaily.cn/202608/567693.shtml",
@@ -190,6 +246,10 @@
         {
           "description": "官网展示京东、喜马拉雅、探探等组合及上市、并购案例，并称核心管理团队曾有35%+独角兽命中率；相关统计为机构自述，不代表基金净回报。",
           "source_id": "ccv_investment"
+        },
+        {
+          "description": "融资来源记录：上海观壹智能科技有限公司 · 其他融资 · 2026-11-18 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-67d4fce9cfc7ae67"
         },
         {
           "description": "融资来源记录：原力无限 · 多轮融资 · 2026-08-14 · 本轮参投 · 10亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
@@ -257,6 +317,14 @@
           "source_content_hash": "c41d4c429bc0258b47cc6e32dce745d6ff90ce42a42c9a490c0ca2af3b358bb5",
           "quote": "BP直通：bp@ccvcap.com；加入我们：hr@ccvcap.com；电话：+86 10 84722390。",
           "quote_hash": "0b2ab519ef14d65db1597873696587ada370c035f3734b33b099714e48f16a2c"
+        },
+        {
+          "source_id": "FISRC-67d4fce9cfc7ae67",
+          "source_url": "https://news.pedaily.cn/202611/572052.shtml",
+          "source_title": "观壹智能完成数亿元融资，加速生命智能基础模型研发",
+          "source_content_hash": "ea86a311a0f3b6910de6d2f2582e4884feb8550cb1151b30cd8d746f417364b3",
+          "quote": "由IDG资本领投，创世伙伴创投(CCV)、沄柏资本、交大菡源资产、云启资本跟投",
+          "quote_hash": "f8ba5d42360c7f864babf87804fadad4e2d49ae2ac7c689e30f26facab639025"
         },
         {
           "source_id": "FISRC-9a9fc48b4bf6ac86",

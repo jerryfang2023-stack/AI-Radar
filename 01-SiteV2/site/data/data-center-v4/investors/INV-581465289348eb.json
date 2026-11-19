@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-18",
-    "currentDate": "2026-11-18",
-    "eventCount": 4486,
+    "latestDataDate": "2026-11-19",
+    "currentDate": "2026-11-19",
+    "eventCount": 4506,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,29 +54,29 @@
   },
   "institution": {
     "id": "INV-581465289348eb",
-    "name": "IDG 资本",
+    "name": "IDG资本",
     "aliases": [
-      "IDG资本"
+      "IDG 资本"
     ],
     "canonical_entity_id": null,
     "investor_kind": "unverified_investor",
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 10,
+    "current_round_count": 11,
     "historical_or_ambiguous_count": 9,
-    "portfolio_company_count": 8,
+    "portfolio_company_count": 9,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 9,
-    "china_market_company_count": 7,
+    "china_market_activity_count": 10,
+    "china_market_company_count": 8,
     "first_disclosed_at": "2026-03-24",
-    "latest_disclosed_at": "2026-10-08",
+    "latest_disclosed_at": "2026-11-18",
     "role_counts": {
       "historical_or_ambiguous": 9,
-      "lead": 4,
+      "lead": 5,
       "participant": 6
     },
     "round_codes": [
@@ -98,6 +98,11 @@
         "entity_id": "EN-a43f157d208b2a63",
         "canonical_entity_id": "EN-a43f157d208b2a63",
         "name": "开物纪"
+      },
+      {
+        "entity_id": "EN-9016c2842633a955",
+        "canonical_entity_id": "",
+        "name": "上海观壹智能科技有限公司"
       },
       {
         "entity_id": "EN-34069c35fbafefc6",
@@ -131,6 +136,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2c39bbdd69071401",
+        "funding_insight_id": "FI-1e4c259da33fb931",
+        "event_ids": [
+          "EV-dc8755b16a5344ed"
+        ],
+        "company_entity_id": "EN-9016c2842633a955",
+        "company_canonical_entity_id": "",
+        "company_name": "上海观壹智能科技有限公司",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "首轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-11-18",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-67d4fce9cfc7ae67",
+            "source_url": "https://news.pedaily.cn/202611/572052.shtml",
+            "source_title": "观壹智能完成数亿元融资，加速生命智能基础模型研发",
+            "source_content_hash": "ea86a311a0f3b6910de6d2f2582e4884feb8550cb1151b30cd8d746f417364b3",
+            "quote": "由IDG资本领投，创世伙伴创投(CCV)、沄柏资本、交大菡源资产、云启资本跟投",
+            "quote_hash": "f8ba5d42360c7f864babf87804fadad4e2d49ae2ac7c689e30f26facab639025"
+          }
+        ]
+      },
       {
         "activity_id": "IA-541d5d7a746ec3b8",
         "funding_insight_id": "FI-b54885fdab524aa5",
@@ -830,6 +875,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-67d4fce9cfc7ae67",
+        "source_url": "https://news.pedaily.cn/202611/572052.shtml",
+        "source_title": "观壹智能完成数亿元融资，加速生命智能基础模型研发",
+        "source_content_hash": "ea86a311a0f3b6910de6d2f2582e4884feb8550cb1151b30cd8d746f417364b3",
+        "quote": "由IDG资本领投，创世伙伴创投(CCV)、沄柏资本、交大菡源资产、云启资本跟投",
+        "quote_hash": "f8ba5d42360c7f864babf87804fadad4e2d49ae2ac7c689e30f26facab639025"
+      },
+      {
         "source_id": "FISRC-b143f42cd2d50743",
         "source_url": "https://www.rfi.fr/cn/%E4%BA%9A%E6%B4%B2/20261008-manus-%E6%AF%8D%E5%85%AC%E5%8F%B8%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94%E5%AE%A3%E5%B8%83%E8%9E%8D%E8%B5%84%E8%B6%85%E8%BF%875-%E4%BA%BF%E7%BE%8E%E5%85%83",
         "source_title": "Manus 母公司蝴蝶效应宣布融资超过5 亿美元",
@@ -1007,16 +1060,16 @@
       ],
       "track_record": [
         {
+          "description": "融资来源记录：上海观壹智能科技有限公司 · 其他融资 · 2026-11-18 · 本轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-67d4fce9cfc7ae67"
+        },
+        {
           "description": "融资来源记录：蝴蝶效应（Butterfly Effect） · B+轮 · 2026-10-08 · 本轮领投 · 超过5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b143f42cd2d50743"
         },
         {
           "description": "融资来源记录：Anew Labs（新生实验室） · 其他融资 · 2026-09-16 · 本轮参投 · 2.9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a2c9854f5230d423"
-        },
-        {
-          "description": "融资来源记录：威邦震电 · B轮 · 2026-09-14 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f9c8fdd671d3e193"
         }
       ],
       "contacts": [
@@ -1067,6 +1120,14 @@
           "quote_hash": "55dbc765f313dcb1df7f0247e84a136cb6ba8b4e79eec87c4364570aa9ecee7a"
         },
         {
+          "source_id": "FISRC-67d4fce9cfc7ae67",
+          "source_url": "https://news.pedaily.cn/202611/572052.shtml",
+          "source_title": "观壹智能完成数亿元融资，加速生命智能基础模型研发",
+          "source_content_hash": "ea86a311a0f3b6910de6d2f2582e4884feb8550cb1151b30cd8d746f417364b3",
+          "quote": "由IDG资本领投，创世伙伴创投(CCV)、沄柏资本、交大菡源资产、云启资本跟投",
+          "quote_hash": "f8ba5d42360c7f864babf87804fadad4e2d49ae2ac7c689e30f26facab639025"
+        },
+        {
           "source_id": "FISRC-b143f42cd2d50743",
           "source_url": "https://www.rfi.fr/cn/%E4%BA%9A%E6%B4%B2/20261008-manus-%E6%AF%8D%E5%85%AC%E5%8F%B8%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94%E5%AE%A3%E5%B8%83%E8%9E%8D%E8%B5%84%E8%B6%85%E8%BF%875-%E4%BA%BF%E7%BE%8E%E5%85%83",
           "source_title": "Manus 母公司蝴蝶效应宣布融资超过5 亿美元",
@@ -1081,14 +1142,6 @@
           "source_content_hash": "2bb10add5e428ec5",
           "quote": "涵盖了红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投等头部投资机构",
           "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
-        },
-        {
-          "source_id": "FISRC-f9c8fdd671d3e193",
-          "source_url": "https://elsewhere.news/zh/daltonventure/bai-for-sciencenews",
-          "source_title": "威邦震电完成近亿元B轮融资，道彤投资领投，推进工业检测、临床及AI for Science商业化进程｜道彤News",
-          "source_content_hash": "b77e2b4e3f147ce2a11962774d610e4452e112a260a22904f82729e47b346c49",
-          "quote": "本轮融资由道彤投资领投，IDG资本共同参与。",
-          "quote_hash": "54b911518820bd90fc70f3f722879f5450857f2a1a38681d085498cd2a20573f"
         }
       ],
       "last_verified_at": "2026-09-25",

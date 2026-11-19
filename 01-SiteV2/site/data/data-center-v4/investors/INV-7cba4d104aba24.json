@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-18",
-    "currentDate": "2026-11-18",
-    "eventCount": 4486,
+    "latestDataDate": "2026-11-19",
+    "currentDate": "2026-11-19",
+    "eventCount": 4506,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,25 +61,37 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-04",
-    "latest_disclosed_at": "2026-11-17",
+    "latest_disclosed_at": "2026-11-18",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 3
+      "participant": 5
     },
     "round_codes": [
+      "multi_round",
       "series_b",
-      "series_c"
+      "series_c",
+      "series_c_extension"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "FICO-79c0b01d7258dd9a",
+        "canonical_entity_id": "",
+        "name": "Isomorphic Labs"
+      },
+      {
+        "entity_id": "EN-478d3cdc1ceaae6b",
+        "canonical_entity_id": "",
+        "name": "Isomorphic Labs"
+      },
       {
         "entity_id": "EN-37799d436602eaf1",
         "canonical_entity_id": "",
@@ -92,6 +104,86 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-27c324ad82069ff7",
+        "funding_insight_id": "FI-77922959e08e2ecd",
+        "event_ids": [
+          "EV-312f25d8ec1f14b4"
+        ],
+        "company_entity_id": "FICO-79c0b01d7258dd9a",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "C轮扩展",
+        "round_code": "series_c_extension",
+        "round_original": "C轮扩展",
+        "amount_original": "50亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿美元"
+        },
+        "announced_at": "2026-11-18",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-466fd3473b30b1f3",
+            "source_url": "https://news.pedaily.cn/202611/572062.shtml",
+            "source_title": "谷歌AI制药完成50亿美元融资：大厂AI制药进入军备竞赛阶段",
+            "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
+            "quote": "Alphabet继续追加投资",
+            "quote_hash": "00f6264e515f63a078c8bc217a487afdd91b4a60dc569d4b43c3d60558283fad"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-eddf44ebaf32d724",
+        "funding_insight_id": "FI-83e6a08e46797234",
+        "event_ids": [
+          "EV-79984024e8768a96"
+        ],
+        "company_entity_id": "EN-478d3cdc1ceaae6b",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$5b",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿美元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ac36b1c1817ebdc8",
+            "source_url": "https://tech.eu/2026/11/17/sequoia-and-greenoaks-lead-massive-5bn-series-c-funding-round-in-isomorphic-labs/",
+            "source_title": "红杉资本与Greenoaks领投Isomorphic Labs 50亿美元C轮融资",
+            "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
+            "quote": "with Andreessen Horowitz, Thrive Capital, Alphabet, Alphabet’s GV and CapitalG, Temasek, and the Sovereign AI fund also participating",
+            "quote_hash": "78b3fd3cfcc92c7f3a8450c898687a5dd69fbe035e00a7a904564613b157a892"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8b127e4409f5d635",
         "funding_insight_id": "FI-9647078abba53f06",
@@ -255,6 +347,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-466fd3473b30b1f3",
+        "source_url": "https://news.pedaily.cn/202611/572062.shtml",
+        "source_title": "谷歌AI制药完成50亿美元融资：大厂AI制药进入军备竞赛阶段",
+        "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
+        "quote": "Alphabet继续追加投资",
+        "quote_hash": "00f6264e515f63a078c8bc217a487afdd91b4a60dc569d4b43c3d60558283fad"
+      },
+      {
+        "source_id": "FISRC-ac36b1c1817ebdc8",
+        "source_url": "https://tech.eu/2026/11/17/sequoia-and-greenoaks-lead-massive-5bn-series-c-funding-round-in-isomorphic-labs/",
+        "source_title": "红杉资本与Greenoaks领投Isomorphic Labs 50亿美元C轮融资",
+        "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
+        "quote": "with Andreessen Horowitz, Thrive Capital, Alphabet, Alphabet’s GV and CapitalG, Temasek, and the Sovereign AI fund also participating",
+        "quote_hash": "78b3fd3cfcc92c7f3a8450c898687a5dd69fbe035e00a7a904564613b157a892"
+      },
+      {
         "source_id": "FISRC-e166994b43b2e418",
         "source_url": "https://the-decoder.com/isomorphic-labs-raises-5-billion-in-its-second-mega-round-within-six-months/",
         "source_title": "Isomorphic Labs在六个月内完成第二轮大规模融资，募资50亿美元",
@@ -304,16 +412,16 @@
           "source_id": "PROFILE-B4-INV-7cba4d104aba24-1"
         },
         {
+          "description": "融资来源记录：Isomorphic Labs · C轮扩展 · 2026-11-18 · 本轮参投 · 50亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-466fd3473b30b1f3"
+        },
+        {
+          "description": "融资来源记录：Isomorphic Labs · 多轮融资 · 2026-11-17 · 本轮参投 · $5b。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ac36b1c1817ebdc8"
+        },
+        {
           "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮参投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e166994b43b2e418"
-        },
-        {
-          "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-10-04 · 本轮参投 · 21亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-82c9573ed9c6ba66"
-        },
-        {
-          "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-05-12 · 本轮参投 · $2.1 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-618d95b339c7b308"
         }
       ],
       "profile_type": "organization",
@@ -343,35 +451,35 @@
           "quote_hash": "429f139a82e542ba1d06d6996563fd77881a09be573974405de9191973b59da6"
         },
         {
+          "source_id": "FISRC-466fd3473b30b1f3",
+          "source_url": "https://news.pedaily.cn/202611/572062.shtml",
+          "source_title": "谷歌AI制药完成50亿美元融资：大厂AI制药进入军备竞赛阶段",
+          "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
+          "quote": "Alphabet继续追加投资",
+          "quote_hash": "00f6264e515f63a078c8bc217a487afdd91b4a60dc569d4b43c3d60558283fad"
+        },
+        {
+          "source_id": "FISRC-ac36b1c1817ebdc8",
+          "source_url": "https://tech.eu/2026/11/17/sequoia-and-greenoaks-lead-massive-5bn-series-c-funding-round-in-isomorphic-labs/",
+          "source_title": "红杉资本与Greenoaks领投Isomorphic Labs 50亿美元C轮融资",
+          "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
+          "quote": "with Andreessen Horowitz, Thrive Capital, Alphabet, Alphabet’s GV and CapitalG, Temasek, and the Sovereign AI fund also participating",
+          "quote_hash": "78b3fd3cfcc92c7f3a8450c898687a5dd69fbe035e00a7a904564613b157a892"
+        },
+        {
           "source_id": "FISRC-e166994b43b2e418",
           "source_url": "https://the-decoder.com/isomorphic-labs-raises-5-billion-in-its-second-mega-round-within-six-months/",
           "source_title": "Isomorphic Labs在六个月内完成第二轮大规模融资，募资50亿美元",
           "source_content_hash": "0d7c04571477bfba758869a7f19138576a259a59db0caef98f510505bbbec95f",
           "quote": "joined by new backer Andreessen Horowitz along with Alphabet and all existing investors",
           "quote_hash": "fe4805eebb78b78d5bfc99eb148178bdc81cbad6bf85ed37295f7521d874b858"
-        },
-        {
-          "source_id": "FISRC-82c9573ed9c6ba66",
-          "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
-          "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
-          "source_content_hash": "e6bdf28f1eee82d0",
-          "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
-          "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
-        },
-        {
-          "source_id": "FISRC-618d95b339c7b308",
-          "source_url": "https://the-decoder.com/alphabets-isomorphic-labs-raises-2-1-billion-to-scale-ai-drug-discovery-toward-clinical-trials",
-          "source_title": "Alphabet 旗下 Isomorphic Labs 融资 21 亿美元，推动 AI 药物发现规模化迈向临床试验",
-          "source_content_hash": "3f607094cf4bb5e846f46ad12d0a7bbf61cf45c0861dc19dc2ff6c5683b3673a",
-          "quote": "Thrive Capital led the round, with participation from Alphabet, GV, MGX, Temasek, CapitalG, and the UK Sovereign AI Fund.",
-          "quote_hash": "76b893d89910d96edfe5f9b458a86db5947938044a963d91b3bf24ed979ad1f9"
         }
       ],
       "last_verified_at": "2026-10-04"
     },
     "translations": {
       "zh-CN": {
-        "activities[3].role": {
+        "activities[5].role": {
           "text": "Series B 参投（2025年4月）",
           "source_hash": "4170bf75c97ec9f7cd65f42d8ca30a3c3546dd4ade04c117870543b20203c333",
           "provider": "deepseek",

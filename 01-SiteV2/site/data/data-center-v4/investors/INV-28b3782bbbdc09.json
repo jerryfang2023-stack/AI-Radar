@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-18",
-    "currentDate": "2026-11-18",
-    "eventCount": 4486,
+    "latestDataDate": "2026-11-19",
+    "currentDate": "2026-11-19",
+    "eventCount": 4506,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-18",
-    "latest_disclosed_at": "2026-10-05",
+    "latest_disclosed_at": "2026-11-16",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
       "seed",
@@ -87,12 +88,57 @@
         "name": "Clockwork.io"
       },
       {
+        "entity_id": "EN-6036cca70e21ac3a",
+        "canonical_entity_id": "",
+        "name": "Noeri"
+      },
+      {
         "entity_id": "EN-586466805b277098",
         "canonical_entity_id": "",
         "name": "Synthefy"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-6c6ded1b9eb26c24",
+        "funding_insight_id": "FI-bba3909d662ded6a",
+        "event_ids": [
+          "EV-ca34f51e33c81a68"
+        ],
+        "company_entity_id": "EN-6036cca70e21ac3a",
+        "company_canonical_entity_id": "",
+        "company_name": "Noeri",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "$110 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 110000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.1 亿美元"
+        },
+        "announced_at": "2026-11-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ea7b0f44d05b19b1",
+            "source_url": "https://www.geekwire.com/2026/former-uw-ai-researchers-yejin-choi-and-carlos-guestrin-raise-110m-for-ai-startup-noeri/",
+            "source_title": "前华盛顿大学AI研究员Yejin Choi与Carlos Guestrin为AI初创公司Noeri融资1.1亿美元",
+            "source_content_hash": "29e10db17f2da1980446cbe8ece4fa842305c02feaabceaf6788d1805843b34d",
+            "quote": "Menlo Ventures led the round, with participation from Seattle-based Madrona, Kindred Ventures, Wing Venture Capital and NEA.",
+            "quote_hash": "9555545b6fa225a52eabadfa7ffb693fdb90f5586c15fa9fbe87893e329591be"
+          }
+        ]
+      },
       {
         "activity_id": "IA-c242e17e3ac8041c",
         "funding_insight_id": "FI-4e41cf72b50bafd3",
@@ -208,6 +254,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ea7b0f44d05b19b1",
+        "source_url": "https://www.geekwire.com/2026/former-uw-ai-researchers-yejin-choi-and-carlos-guestrin-raise-110m-for-ai-startup-noeri/",
+        "source_title": "前华盛顿大学AI研究员Yejin Choi与Carlos Guestrin为AI初创公司Noeri融资1.1亿美元",
+        "source_content_hash": "29e10db17f2da1980446cbe8ece4fa842305c02feaabceaf6788d1805843b34d",
+        "quote": "Menlo Ventures led the round, with participation from Seattle-based Madrona, Kindred Ventures, Wing Venture Capital and NEA.",
+        "quote_hash": "9555545b6fa225a52eabadfa7ffb693fdb90f5586c15fa9fbe87893e329591be"
+      },
+      {
         "source_id": "FISRC-bffca0091f22129f",
         "source_url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
         "source_title": "Clockwork.io 融资 3100 万美元，LinkedIn、Together AI 和 WhiteFiber 采用其韧性软件以停止浪费 GPU 小时",
@@ -260,16 +314,16 @@
       ],
       "track_record": [
         {
+          "description": "融资来源记录：Noeri · 轮次未披露 · 2026-11-16 · 本轮参投 · $110 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ea7b0f44d05b19b1"
+        },
+        {
           "description": "融资来源记录：Clockwork.io · 轮次未披露 · 2026-10-05 · 本轮联合领投 · $31M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-bffca0091f22129f"
         },
         {
           "description": "融资来源记录：Synthefy · 种子轮 · 2026-08-18 · 本轮领投 · $6.5M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7cafec2373293af1"
-        },
-        {
-          "description": "融资来源记录：Lightfield · 历史轮次未披露 · B轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-151268915a1d6942"
         }
       ],
       "contacts": [
@@ -307,6 +361,14 @@
           "quote_hash": "4c3394cbd0c419b294434ae290ee6e49351300ef9d30595072a8e1ab2b03ec04"
         },
         {
+          "source_id": "FISRC-ea7b0f44d05b19b1",
+          "source_url": "https://www.geekwire.com/2026/former-uw-ai-researchers-yejin-choi-and-carlos-guestrin-raise-110m-for-ai-startup-noeri/",
+          "source_title": "前华盛顿大学AI研究员Yejin Choi与Carlos Guestrin为AI初创公司Noeri融资1.1亿美元",
+          "source_content_hash": "29e10db17f2da1980446cbe8ece4fa842305c02feaabceaf6788d1805843b34d",
+          "quote": "Menlo Ventures led the round, with participation from Seattle-based Madrona, Kindred Ventures, Wing Venture Capital and NEA.",
+          "quote_hash": "9555545b6fa225a52eabadfa7ffb693fdb90f5586c15fa9fbe87893e329591be"
+        },
+        {
           "source_id": "FISRC-bffca0091f22129f",
           "source_url": "https://www.prnewswire.com/news-releases/clockworkio-raises-31m-as-linkedin-together-ai-and-whitefiber-adopt-its-resilience-software-to-stop-wasting-gpu-hours-302897588.html",
           "source_title": "Clockwork.io 融资 3100 万美元，LinkedIn、Together AI 和 WhiteFiber 采用其韧性软件以停止浪费 GPU 小时",
@@ -321,14 +383,6 @@
           "source_content_hash": "613cce3b5c1e64d961a77840f2d688926de0f954fcc27059e3d24a65f8b0ee52",
           "quote": "Wing Venture Capital led our $6.5M seed round, with Haystack, Samsung Next, Canonical, and Lightscape joining.",
           "quote_hash": "2e8a4f8e24f840d26fc60d6dd7dbc9224ed86f10ac0b2e7a62fd136da1f2ed28"
-        },
-        {
-          "source_id": "FISRC-151268915a1d6942",
-          "source_url": "https://www.caplight.com/company/lightfield",
-          "source_title": "Lightfield Valuation & Funding History | Caplight",
-          "source_content_hash": "d7270101bd4359fc",
-          "quote": "Wing Venture CapitalSeries B",
-          "quote_hash": "2397896249a53c0a05d88c5af2e95c70b31fe19f0af9b5e1037f43cfb49e7144"
         }
       ],
       "last_verified_at": "2026-10-02",

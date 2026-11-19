@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-18",
-    "currentDate": "2026-11-18",
-    "eventCount": 4486,
+    "latestDataDate": "2026-11-19",
+    "currentDate": "2026-11-19",
+    "eventCount": 4506,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,9 +63,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 13,
+    "current_round_count": 14,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 12,
+    "portfolio_company_count": 13,
     "market_regions": [
       "GLOBAL"
     ],
@@ -76,9 +76,10 @@
     "role_counts": {
       "historical_or_ambiguous": 3,
       "lead": 2,
-      "participant": 11
+      "participant": 12
     },
     "round_codes": [
+      "multi_round",
       "seed",
       "series_a",
       "series_b",
@@ -111,6 +112,11 @@
         "entity_id": "EN-c9bd40e58364720b",
         "canonical_entity_id": "",
         "name": "Flapping Airplanes"
+      },
+      {
+        "entity_id": "EN-478d3cdc1ceaae6b",
+        "canonical_entity_id": "",
+        "name": "Isomorphic Labs"
       },
       {
         "entity_id": "EN-37799d436602eaf1",
@@ -149,6 +155,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ddd86ad84b986ece",
+        "funding_insight_id": "FI-83e6a08e46797234",
+        "event_ids": [
+          "EV-79984024e8768a96"
+        ],
+        "company_entity_id": "EN-478d3cdc1ceaae6b",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$5b",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿美元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ac36b1c1817ebdc8",
+            "source_url": "https://tech.eu/2026/11/17/sequoia-and-greenoaks-lead-massive-5bn-series-c-funding-round-in-isomorphic-labs/",
+            "source_title": "红杉资本与Greenoaks领投Isomorphic Labs 50亿美元C轮融资",
+            "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
+            "quote": "with Andreessen Horowitz, Thrive Capital, Alphabet, Alphabet’s GV and CapitalG, Temasek, and the Sovereign AI fund also participating",
+            "quote_hash": "78b3fd3cfcc92c7f3a8450c898687a5dd69fbe035e00a7a904564613b157a892"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7cd8a7ec24c5f247",
         "funding_insight_id": "FI-9647078abba53f06",
@@ -778,6 +824,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ac36b1c1817ebdc8",
+        "source_url": "https://tech.eu/2026/11/17/sequoia-and-greenoaks-lead-massive-5bn-series-c-funding-round-in-isomorphic-labs/",
+        "source_title": "红杉资本与Greenoaks领投Isomorphic Labs 50亿美元C轮融资",
+        "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
+        "quote": "with Andreessen Horowitz, Thrive Capital, Alphabet, Alphabet’s GV and CapitalG, Temasek, and the Sovereign AI fund also participating",
+        "quote_hash": "78b3fd3cfcc92c7f3a8450c898687a5dd69fbe035e00a7a904564613b157a892"
+      },
+      {
         "source_id": "FISRC-c4b7e80cb7863d47",
         "source_url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
         "source_title": "Isomorphic Labs 融资 50 亿美元，拟将候选药物推进临床试验",
@@ -986,16 +1040,16 @@
           "source_id": "gv_about"
         },
         {
+          "description": "融资来源记录：Isomorphic Labs · 多轮融资 · 2026-11-17 · 本轮参投 · $5b。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ac36b1c1817ebdc8"
+        },
+        {
           "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮参投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c4b7e80cb7863d47"
         },
         {
           "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-49f5b4d8c68adbdc"
-        },
-        {
-          "description": "融资来源记录：Blacksmith · C轮 · 2026-10-21 · 本轮参投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0b9a2de412bfecea"
         }
       ],
       "contacts": [
@@ -1019,6 +1073,14 @@
           "quote_hash": "90cbdf37bd32985fe0287193ec4b8eaee618ac9632610f1ef38fb1e68a388701"
         },
         {
+          "source_id": "FISRC-ac36b1c1817ebdc8",
+          "source_url": "https://tech.eu/2026/11/17/sequoia-and-greenoaks-lead-massive-5bn-series-c-funding-round-in-isomorphic-labs/",
+          "source_title": "红杉资本与Greenoaks领投Isomorphic Labs 50亿美元C轮融资",
+          "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
+          "quote": "with Andreessen Horowitz, Thrive Capital, Alphabet, Alphabet’s GV and CapitalG, Temasek, and the Sovereign AI fund also participating",
+          "quote_hash": "78b3fd3cfcc92c7f3a8450c898687a5dd69fbe035e00a7a904564613b157a892"
+        },
+        {
           "source_id": "FISRC-c4b7e80cb7863d47",
           "source_url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
           "source_title": "Isomorphic Labs 融资 50 亿美元，拟将候选药物推进临床试验",
@@ -1033,14 +1095,6 @@
           "source_content_hash": "d2b8724679f6e2481b7506586ab82ef5b689f36fb358ae6dd772501f6a15c9b1",
           "quote": "with participation from Premji Invest and existing investors Peak XV Partners, GV and Y Combinator",
           "quote_hash": "9b54792364834709aa73e68cb771e1d30ff9666f4447c3f73feae6c1bda816c9"
-        },
-        {
-          "source_id": "FISRC-0b9a2de412bfecea",
-          "source_url": "https://ecosistemastartup.com/blacksmith-tests-de-codigo-con-ia-levanta-us66m/",
-          "source_title": "Blacksmith, tests de código con IA, levanta US$66M &#8211; El Ecosistema Startup",
-          "source_content_hash": "b097b8e1cde199ce",
-          "quote": "además de Sequoia, entraron Premji Invest y los inversores existentes Peak XV Partners, GV y Y Combinator",
-          "quote_hash": "c935e791adecded967dc116227b3cb93bc633c31504b7e73b8857c7bb8d58ecb"
         }
       ],
       "last_verified_at": "2026-09-25",

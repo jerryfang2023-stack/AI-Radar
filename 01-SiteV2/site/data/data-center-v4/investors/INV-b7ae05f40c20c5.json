@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-18",
-    "currentDate": "2026-11-18",
-    "eventCount": 4486,
+    "latestDataDate": "2026-11-19",
+    "currentDate": "2026-11-19",
+    "eventCount": 4506,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,25 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-11",
-    "latest_disclosed_at": "2026-08-15",
+    "latest_disclosed_at": "2026-11-18",
     "role_counts": {
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 2
     },
     "round_codes": [
       "infrastructure",
-      "series_b"
+      "series_b",
+      "series_c"
     ],
     "portfolio_companies": [
       {
@@ -86,12 +88,65 @@
         "name": "NVIDIA"
       },
       {
+        "entity_id": "EN-068dbf31f93c05a9",
+        "canonical_entity_id": "",
+        "name": "Payhawk"
+      },
+      {
         "entity_id": "EN-1809f7cd0c75acf3",
         "canonical_entity_id": "",
         "name": "Prometheus"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-7d50e5d5012ded89",
+        "funding_insight_id": "FI-bfa979b6f9858e60",
+        "event_ids": [
+          "EV-bead3c949a623488"
+        ],
+        "company_entity_id": "EN-068dbf31f93c05a9",
+        "company_canonical_entity_id": "",
+        "company_name": "Payhawk",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$280m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 280000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.8 亿美元"
+        },
+        "announced_at": "2026-11-18",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-6bccc8bb9fd78277",
+            "source_url": "https://tech.eu/2026/11/18/goldman-sachs-leads-280m-funding-round-in-payhawk/",
+            "source_title": "高盛领投Payhawk 2.8亿美元融资轮",
+            "source_content_hash": "4a2c02d9859c39677e5de1bac882ddaf1afff47577e2283a7efa6d97f6970c81",
+            "quote": "has raised a $280m Series C funding round, led by new investor Goldman Sachs",
+            "quote_hash": "aeee05742a78b08457cdbb3709b8ec742c872ef75d09c9c23e2aa84c3121e823"
+          },
+          {
+            "source_id": "FISRC-52ddbf8367aa7b8c",
+            "source_url": "https://payhawk.com/en-us/blog/payhawk-series-c-280m-funding",
+            "source_title": "Payhawk raises $280M Series C at a $2B valuation | Payhawk",
+            "source_content_hash": "32c25b242387a108",
+            "quote": "a $280 million Series C round led by Growth Equity at Goldman Sachs Alternatives",
+            "quote_hash": "d015e9554cc86db5f62a711e31c6b6ce81b335bf4a9849c1b34375cb2fb5ba52"
+          }
+        ]
+      },
       {
         "activity_id": "IA-82e2a62e4ab48938",
         "funding_insight_id": "FI-ed1d2ba02f527a10",
@@ -207,6 +262,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-6bccc8bb9fd78277",
+        "source_url": "https://tech.eu/2026/11/18/goldman-sachs-leads-280m-funding-round-in-payhawk/",
+        "source_title": "高盛领投Payhawk 2.8亿美元融资轮",
+        "source_content_hash": "4a2c02d9859c39677e5de1bac882ddaf1afff47577e2283a7efa6d97f6970c81",
+        "quote": "has raised a $280m Series C funding round, led by new investor Goldman Sachs",
+        "quote_hash": "aeee05742a78b08457cdbb3709b8ec742c872ef75d09c9c23e2aa84c3121e823"
+      },
+      {
+        "source_id": "FISRC-52ddbf8367aa7b8c",
+        "source_url": "https://payhawk.com/en-us/blog/payhawk-series-c-280m-funding",
+        "source_title": "Payhawk raises $280M Series C at a $2B valuation | Payhawk",
+        "source_content_hash": "32c25b242387a108",
+        "quote": "a $280 million Series C round led by Growth Equity at Goldman Sachs Alternatives",
+        "quote_hash": "d015e9554cc86db5f62a711e31c6b6ce81b335bf4a9849c1b34375cb2fb5ba52"
+      },
+      {
         "source_id": "FISRC-5514041be03e64ae",
         "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Partners-With-Apollo-BlackRock-Blackstone-Brookfield-Goldman-Sachs-and-KKR-to-Establish-AI-Compute-Infrastructure-Financing-Platforms-to-Mobilize-Over-500-Billion-of-Third-Party-Capital/default.aspx",
         "source_title": "NVIDIA Corporation - NVIDIA Partners With Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms to Mobilize Over $500 Billion of Third-Party Capital",
@@ -260,16 +331,12 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Payhawk · C轮 · 2026-11-18 · 本轮领投 · $280m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6bccc8bb9fd78277"
+        },
+        {
           "description": "融资来源记录：NVIDIA · 基础设施融资 · 2026-08-15 · 本轮参投 · 超过 5000 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5514041be03e64ae"
-        },
-        {
-          "description": "融资来源记录：Prometheus · B轮 · 2026-06-11 · 本轮参投 · $12 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0c708eb8dc3d758b"
-        },
-        {
-          "description": "融资来源记录：NVIDIA · 历史轮次未披露 · 承销行。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-081d8fda5173dab0"
         }
       ],
       "contacts": [],
@@ -299,28 +366,28 @@
           "quote_hash": "f955eb6a5a53d57b5a1080996b15baa997781d8d98f5cecb4acb1d8813a7ecc1"
         },
         {
+          "source_id": "FISRC-6bccc8bb9fd78277",
+          "source_url": "https://tech.eu/2026/11/18/goldman-sachs-leads-280m-funding-round-in-payhawk/",
+          "source_title": "高盛领投Payhawk 2.8亿美元融资轮",
+          "source_content_hash": "4a2c02d9859c39677e5de1bac882ddaf1afff47577e2283a7efa6d97f6970c81",
+          "quote": "has raised a $280m Series C funding round, led by new investor Goldman Sachs",
+          "quote_hash": "aeee05742a78b08457cdbb3709b8ec742c872ef75d09c9c23e2aa84c3121e823"
+        },
+        {
+          "source_id": "FISRC-52ddbf8367aa7b8c",
+          "source_url": "https://payhawk.com/en-us/blog/payhawk-series-c-280m-funding",
+          "source_title": "Payhawk raises $280M Series C at a $2B valuation | Payhawk",
+          "source_content_hash": "32c25b242387a108",
+          "quote": "a $280 million Series C round led by Growth Equity at Goldman Sachs Alternatives",
+          "quote_hash": "d015e9554cc86db5f62a711e31c6b6ce81b335bf4a9849c1b34375cb2fb5ba52"
+        },
+        {
           "source_id": "FISRC-5514041be03e64ae",
           "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Partners-With-Apollo-BlackRock-Blackstone-Brookfield-Goldman-Sachs-and-KKR-to-Establish-AI-Compute-Infrastructure-Financing-Platforms-to-Mobilize-Over-500-Billion-of-Third-Party-Capital/default.aspx",
           "source_title": "NVIDIA Corporation - NVIDIA Partners With Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms to Mobilize Over $500 Billion of Third-Party Capital",
           "source_content_hash": "281ec3c5199ae992",
           "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
           "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
-        },
-        {
-          "source_id": "FISRC-0c708eb8dc3d758b",
-          "source_url": "https://multiples.vc/private-comps/prometheus",
-          "source_title": "Prometheus Valuation, Funding & Investors | Multiples",
-          "source_content_hash": "646b9259f23a27ec",
-          "quote": "The $12B round included Jeff Bezos, Goldman Sachs, BlackRock, JPMorgan Chase, DST Global and 1 other investor.",
-          "quote_hash": "e6c850cf7ceea5003c148380cbbffa2eb2c4f3f62c18b1026a296578a0f41f71"
-        },
-        {
-          "source_id": "FISRC-081d8fda5173dab0",
-          "source_url": "https://the-decoder.com/nvidia-joins-ai-debt-boom-with-20-billion-bond-sale",
-          "source_title": "英伟达加入AI债务热潮，发行200亿美元债券",
-          "source_content_hash": "7ac0dc93c7c2cb692b0da2f0526ef98ce3230492dc0ce32a65833af3005ddee6",
-          "quote": "JPMorgan Chase, Morgan Stanley, and Goldman Sachs are among the banks managing the sale.",
-          "quote_hash": "bedca6a5faa504970ac18d04c5590f3931153bc7e8cf49cb3dcaf62052477c13"
         }
       ],
       "last_verified_at": "2026-10-04",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-18",
-    "currentDate": "2026-11-18",
-    "eventCount": 4486,
+    "latestDataDate": "2026-11-19",
+    "currentDate": "2026-11-19",
+    "eventCount": 4506,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
@@ -73,6 +73,7 @@
     "latest_disclosed_at": "2026-11-17",
     "role_counts": {
       "co_lead": 1,
+      "historical_or_ambiguous": 1,
       "lead": 1
     },
     "round_codes": [
@@ -178,6 +179,38 @@
             "quote_hash": "b9a9ad6ecbba1cae102dfa4a21e254ad8324e00cfd0e512c4798ec22bfa4b7c4"
           }
         ]
+      },
+      {
+        "activity_id": "IA-fe6f72e3cdd09f76",
+        "funding_insight_id": "FI-bfa979b6f9858e60",
+        "event_ids": [
+          "EV-bead3c949a623488"
+        ],
+        "company_entity_id": "EN-068dbf31f93c05a9",
+        "company_canonical_entity_id": "",
+        "company_name": "Payhawk",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2021年A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7d06c2c0d61f746b",
+            "source_url": "https://accountio.co.uk/vendors/payhawk/funding/",
+            "source_title": "Payhawk investors, funding rounds and valuation",
+            "source_content_hash": "9807dbc85d0797ca",
+            "quote": "QED Investors3 roundsLed 1Mar 2022",
+            "quote_hash": "924ffcd9186edf9f1a2a579bd45be02f056e53edb2221dc2879620a9d7f75dd4"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -204,6 +237,14 @@
         "source_content_hash": "ea0a07ec6b5bcc758a53526933b06ed9cdc0625470f1876cb084309d46f1a06b",
         "quote": "The round was led by QED Investors",
         "quote_hash": "b9a9ad6ecbba1cae102dfa4a21e254ad8324e00cfd0e512c4798ec22bfa4b7c4"
+      },
+      {
+        "source_id": "FISRC-7d06c2c0d61f746b",
+        "source_url": "https://accountio.co.uk/vendors/payhawk/funding/",
+        "source_title": "Payhawk investors, funding rounds and valuation",
+        "source_content_hash": "9807dbc85d0797ca",
+        "quote": "QED Investors3 roundsLed 1Mar 2022",
+        "quote_hash": "924ffcd9186edf9f1a2a579bd45be02f056e53edb2221dc2879620a9d7f75dd4"
       }
     ],
     "public_profile": {
