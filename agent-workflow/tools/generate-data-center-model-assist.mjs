@@ -12,6 +12,7 @@ import {
   withGateResult,
   writeJson,
 } from "./model-assist-v1.mjs";
+import { reusableAcceptedSourceRepairs } from "./lib/accepted-source-repairs.mjs";
 import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
 import { codexExtractionCompletion, TERRA_EXTRACTION_MODEL } from "./codex-extraction-client.mjs";
 
@@ -263,6 +264,21 @@ async function mapConcurrent(items, worker, size) {
 
 async function main() {
   const dates = selectedDates();
+  let reusedSourceRepairs=0;
+  if(write && reuseExisting && requestedTasks.has('qa_repair') && !requestedAssets.size){
+    const sourceScope=process.env.MODEL_ASSIST_SOURCE_REFS_FILE
+      ? new Set(readJson(process.env.MODEL_ASSIST_SOURCE_REFS_FILE,{}).source_refs || []) : null;
+    for(const date of dates){
+      const file=path.join(outputRoot,`${date}.json`),store=readJson(file,candidateStore(date));
+      const cutoff=new Date(Date.parse(date+'T00:00:00Z')-7*86400000).toISOString().slice(0,10);
+      const raws=bundle(date,'raw-documents').filter(raw=>!sourceScope || sourceScope.has(raw.source_artifact_id))
+        .map(raw=>hydrateRawDocument(root,raw,{required:false}));
+      const history=availableDates().filter(day=>day>=cutoff && day<date).map(day=>({date:day,
+        raws:bundle(day,'raw-documents'),candidates:readJson(path.join(outputRoot,`${day}.json`),{}).candidates || []}));
+      const adopted=reusableAcceptedSourceRepairs({date,raws,currentCandidates:store.candidates || [],history});
+      if(adopted.length){writeJson(file,{...store,candidates:[...(store.candidates || []),...adopted]});reusedSourceRepairs+=adopted.length;}
+    }
+  }
   const rawDocumentsScanned = dates.reduce((sum, item) => sum + bundle(item, "raw-documents").length, 0);
   let jobs = dates.flatMap(buildJobs).sort((a, b) => jobKey(a).localeCompare(jobKey(b)));
   if (process.env.MODEL_ASSIST_SOURCE_REFS_FILE) {
@@ -340,6 +356,7 @@ async function main() {
     reuse_existing: reuseExisting,
     reused_jobs: reusedJobs,
     regated_existing: regatedExisting,
+    reused_source_repairs: reusedSourceRepairs,
     offset,
     selected_jobs: jobs.length,
     completed: results.length - failures.length,
