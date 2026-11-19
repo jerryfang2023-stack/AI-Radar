@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-18",
-    "currentDate": "2026-11-18",
-    "eventCount": 4486,
+    "latestDataDate": "2026-11-19",
+    "currentDate": "2026-11-19",
+    "eventCount": 4503,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-02-11",
-    "latest_disclosed_at": "2026-02-11",
+    "latest_disclosed_at": "2026-11-18",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "pre_series_a",
       "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-1292f4f8df3af298",
+        "canonical_entity_id": "",
+        "name": "柏川数据"
+      },
       {
         "entity_id": "EN-a6e5382c05dd0d16",
         "canonical_entity_id": "EN-a6e5382c05dd0d16",
@@ -86,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a94188cdc891ed4a",
+        "funding_insight_id": "FI-b2fc612ecfa8b4a7",
+        "event_ids": [
+          "EV-5c7525642d1189d6"
+        ],
+        "company_entity_id": "EN-1292f4f8df3af298",
+        "company_canonical_entity_id": "",
+        "company_name": "柏川数据",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "5000万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万元"
+        },
+        "announced_at": "2026-11-18",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-32a5a306971bc571",
+            "source_url": "https://news.pedaily.cn/202611/572047.shtml",
+            "source_title": "柏川数据完成5000万元Pre-A轮融资，打造物理AI全栈数据基座",
+            "source_content_hash": "57d7937995f280e10deb39cd026ca612364303409f3885a4bb7219cf0f5c3c68",
+            "quote": "投资方包含元禾厚望、毅峰资本、星海图在内的2家顶 级具身智能产业方等机构",
+            "quote_hash": "45f2748803ff8c60a3eb80be421798336ade8d9833a78c302e90656fa5bda2c9"
+          }
+        ]
+      },
       {
         "activity_id": "IA-cf6f8e9bb5704fe0",
         "funding_insight_id": "FI-d5293ab06cfaa935",
@@ -162,6 +208,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-32a5a306971bc571",
+        "source_url": "https://news.pedaily.cn/202611/572047.shtml",
+        "source_title": "柏川数据完成5000万元Pre-A轮融资，打造物理AI全栈数据基座",
+        "source_content_hash": "57d7937995f280e10deb39cd026ca612364303409f3885a4bb7219cf0f5c3c68",
+        "quote": "投资方包含元禾厚望、毅峰资本、星海图在内的2家顶 级具身智能产业方等机构",
+        "quote_hash": "45f2748803ff8c60a3eb80be421798336ade8d9833a78c302e90656fa5bda2c9"
+      },
+      {
         "source_id": "FISRC-2707f48aa6e437b7",
         "source_url": "https://news.pedaily.cn/202602/560956.shtml",
         "source_title": "清华90后带队，刚刚星海图又融10亿",
@@ -201,6 +255,10 @@
         {
           "description": "公开融资来源将其列为 星海图 B轮投资方。",
           "source_id": "FISRC-7a614400d44a7041"
+        },
+        {
+          "description": "融资来源记录：柏川数据 · Pre-A轮 · 2026-11-18 · 本轮参投 · 5000万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-32a5a306971bc571"
         }
       ],
       "contacts": [],
@@ -228,6 +286,14 @@
           "source_content_hash": "4974786c629010f1aac6b2541ea77c2640e8b0297d650758f6ca4f8c21e012e6",
           "quote": "InnoVen Capital（毅峰资本）是由星伟诺Seviora（淡马锡集团全资子公司）与大华银行（United Overseas Bank）联合发起的亚洲领先的创业信用投资机构",
           "quote_hash": "991b1990f6b3a467196d583900daa366c7f1fd0579595ebc40a70ec4739797ab"
+        },
+        {
+          "source_id": "FISRC-32a5a306971bc571",
+          "source_url": "https://news.pedaily.cn/202611/572047.shtml",
+          "source_title": "柏川数据完成5000万元Pre-A轮融资，打造物理AI全栈数据基座",
+          "source_content_hash": "57d7937995f280e10deb39cd026ca612364303409f3885a4bb7219cf0f5c3c68",
+          "quote": "投资方包含元禾厚望、毅峰资本、星海图在内的2家顶 级具身智能产业方等机构",
+          "quote_hash": "45f2748803ff8c60a3eb80be421798336ade8d9833a78c302e90656fa5bda2c9"
         }
       ],
       "last_verified_at": "2026-10-03",

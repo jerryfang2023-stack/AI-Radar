@@ -1,6 +1,6 @@
 {
   "schema_version": "SOURCE-FACT-REVIEW-1",
-  "date": "2026-11-17",
+  "date": "2026-11-19",
   "sources": {
     "SA-2cd686a2fdc2bbd4": {
       "disposition": "lead_only",
@@ -51,6 +51,74 @@
       "source_quote": "IMF 估计，AI 企业之间的循环融资规模已经超过 1 万亿美元",
       "quote_sha256": "d27072ad3d241417463f078f94526bd3b6b73a28cccb930b23d1b94c964bac4b",
       "reason": "Sector-wide circular financing estimate and macroeconomic warning. No individual issuer, completed round or proceeds are announced; the IMF spokesperson is not a company receiving this trillion-dollar aggregate. Preserve the original and diagnostics as a lead, do not fabricate company products or relax the research gate."
+    },
+    "SA-c761a33facdd0817": {
+      "disposition": "lead_only",
+      "source_url": "https://news.pedaily.cn/202611/572062.shtml",
+      "content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
+      "source_quote": "11月17日，Isomorphic Labs宣布完成50亿美元C轮融资",
+      "quote_sha256": "cfda212a94b9a8a88c1e9d8af17aa7b438688e356b71c7e1ff3ff32f987590df",
+      "reviewed_by": "codex_source_review",
+      "reviewed_at": "2026-11-19T06:05:11.622Z",
+      "reason": "同一已公开的2026-11-17 Isomorphic Labs 50亿美元C轮；保留为背景及同轮来源线索，不将转载日期、历史B轮或叙述性标题另作新融资。其他公司背景缺原始日期仍只作线索。",
+      "event_binding": {
+        "card_id": "FI-9647078abba53f06",
+        "event_id": "EV-86165eebaf4622fd",
+        "company": "Isomorphic Labs",
+        "announced_at": "2026-11-17",
+        "round": "C轮",
+        "currency": "USD",
+        "value": 5000000000
+      }
+    },
+    "SA-27e5e394df70f441": {
+      "disposition": "lead_only",
+      "source_url": "https://tech.eu/2026/11/17/sequoia-and-greenoaks-lead-massive-5bn-series-c-funding-round-in-isomorphic-labs/",
+      "content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
+      "source_quote": "$5bn Series C funding round",
+      "quote_sha256": "b9198b4681184953f25ca5c0854cf08c1a7470bc59325c04984ab8f521c50617",
+      "reviewed_by": "codex_source_review",
+      "reviewed_at": "2026-11-19T06:05:11.622Z",
+      "reason": "同一已公开的2026-11-17 Isomorphic Labs 50亿美元C轮；保留为背景及同轮来源线索，不将转载日期、历史B轮或叙述性标题另作新融资。其他公司背景缺原始日期仍只作线索。",
+      "event_binding": {
+        "card_id": "FI-9647078abba53f06",
+        "event_id": "EV-86165eebaf4622fd",
+        "company": "Isomorphic Labs",
+        "announced_at": "2026-11-17",
+        "round": "C轮",
+        "currency": "USD",
+        "value": 5000000000
+      }
+    },
+    "SA-9601b6aa23df7ff0": {
+      "disposition": "lead_only",
+      "source_url": "https://news.pedaily.cn/202611/571958.shtml",
+      "content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
+      "source_quote": "对外官宣已完成千万级人民币种子轮融资",
+      "quote_sha256": "f7ce0ceaf23e71d99f361d756e85900204009dc05f3ee2a38a26e10f60ab5e99",
+      "reviewed_by": "codex_source_review",
+      "reviewed_at": "2026-11-19T06:25:57.714Z",
+      "reason": "与2026-11-17已发布的乎灵科技千万级人民币种子轮相同原文及正文hash；未来天使轮仅拟启动，不另计多轮或新增融资。保留原来源与责任审核，不批准跨实体合并。",
+      "event_binding": {
+        "card_id": "FI-02a12b52ba81f601",
+        "event_id": "EV-6693c4f59a1110df",
+        "company": "乎灵科技",
+        "announced_at": "2026-11-17",
+        "round": "种子轮",
+        "currency": "CNY",
+        "min_value": 10000000,
+        "max_value": 100000000
+      }
+    },
+    "SA-21d74ca02e577efc": {
+      "disposition": "lead_only",
+      "source_url": "https://www.ithome.com/1/026/437.htm",
+      "content_hash": "2afa617bbe1e433e75ddafd91ca4012f916b8341aafae83904cbca1e274b9e6f",
+      "source_quote": "英伟达领导层突遭变动",
+      "quote_sha256": "637419a31ca9fbabbc7aa02496fb3d6c41110617b63d3207e81c2094862f38f9",
+      "reviewed_by": "codex_source_review",
+      "reviewed_at": "2026-11-19T06:52:42.168Z",
+      "reason": "本文为人事及股市新闻，不是企业融资披露；本任务暂停非融资监测，保留原文线索，不准入本批事实及公开投影。未核准新闻中的人事断言。"
     }
   }
 }

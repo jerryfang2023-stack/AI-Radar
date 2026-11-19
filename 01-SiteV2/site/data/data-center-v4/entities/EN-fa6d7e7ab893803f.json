@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-18",
-    "currentDate": "2026-11-18",
-    "eventCount": 4486,
+    "latestDataDate": "2026-11-19",
+    "currentDate": "2026-11-19",
+    "eventCount": 4503,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,16 +63,19 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-88837f7f7d187d2b",
       "EV-1ba939d8baf43207"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-22",
-    "lastSeen": "2026-07-23",
+    "lastSeen": "2026-11-19",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-88837f7f7d187d2b"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
@@ -83,6 +86,42 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-88837f7f7d187d2b",
+        "dataDate": "2026-11-19",
+        "date": "2026-11-17",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "pending_verification",
+        "statusLabel": "待核验",
+        "title": "Synthesia与Datadog CEO支持AI初创公司Remanence完成3000万美元融资",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-064831e9def59f5f",
+          "EN-fa6d7e7ab893803f",
+          "EN-4d8bd97f03109ac1"
+        ]
+      },
       {
         "id": "EV-1ba939d8baf43207",
         "dataDate": "2026-07-23",

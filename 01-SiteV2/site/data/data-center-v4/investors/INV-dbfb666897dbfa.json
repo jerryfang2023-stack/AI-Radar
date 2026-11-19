@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-18",
-    "currentDate": "2026-11-18",
-    "eventCount": 4486,
+    "latestDataDate": "2026-11-19",
+    "currentDate": "2026-11-19",
+    "eventCount": 4503,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,17 +61,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-30",
-    "latest_disclosed_at": "2026-09-30",
+    "latest_disclosed_at": "2026-11-17",
     "role_counts": {
+      "co_lead": 1,
       "participant": 1
     },
     "round_codes": [
@@ -79,12 +80,65 @@
     ],
     "portfolio_companies": [
       {
+        "entity_id": "EN-5e494e695571ede1",
+        "canonical_entity_id": "",
+        "name": "Fermat"
+      },
+      {
         "entity_id": "EN-4332124bdf7da478",
         "canonical_entity_id": "",
         "name": "Zenithon"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e7380ca09ace8894",
+        "funding_insight_id": "FI-84e2fa85ad9e573d",
+        "event_ids": [
+          "EV-0d4f7ad1fe080686"
+        ],
+        "company_entity_id": "EN-5e494e695571ede1",
+        "company_canonical_entity_id": "",
+        "company_name": "Fermat",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$8 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 8000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "800 万美元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-02fbe34439ee6fc4",
+            "source_url": "https://tech.eu/2026/11/17/fermat-raises-8m-to-bridge-the-gap-between-fashion-designers-and-manufacturers/",
+            "source_title": "Fermat 融资 800 万美元，弥合时装设计师与制造商之间的差距",
+            "source_content_hash": "0c40097e6621fee9acdd5a753f0f09c85b678ea086ff17205140c27fa767aaf3",
+            "quote": "Kibo Ventures and Lunar Ventures lead the seed round",
+            "quote_hash": "dcc37591138a92fac02d376793e47e813db5bead585e245f7ff74ed7b11a1944"
+          },
+          {
+            "source_id": "FISRC-747020393b26e67b",
+            "source_url": "https://www.sesamers.com/funding/fermat-raises-8m-seed-ai-fashion-sketch-to-factory/",
+            "source_title": "Fermat raises $8M seed to take AI from fashion sketch to factory",
+            "source_content_hash": "f40626e49a56d6c9",
+            "quote": "Kibo Ventures and Lunar Ventures co-led the seed.",
+            "quote_hash": "10b721aa8ee1177eec4d4bcce55c0a760f450c8f00cac24c99a6f9be7abe8b62"
+          }
+        ]
+      },
       {
         "activity_id": "IA-31ee21042bb6b0a3",
         "funding_insight_id": "FI-91bf8b7cc61d35df",
@@ -128,6 +182,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-02fbe34439ee6fc4",
+        "source_url": "https://tech.eu/2026/11/17/fermat-raises-8m-to-bridge-the-gap-between-fashion-designers-and-manufacturers/",
+        "source_title": "Fermat 融资 800 万美元，弥合时装设计师与制造商之间的差距",
+        "source_content_hash": "0c40097e6621fee9acdd5a753f0f09c85b678ea086ff17205140c27fa767aaf3",
+        "quote": "Kibo Ventures and Lunar Ventures lead the seed round",
+        "quote_hash": "dcc37591138a92fac02d376793e47e813db5bead585e245f7ff74ed7b11a1944"
+      },
+      {
+        "source_id": "FISRC-747020393b26e67b",
+        "source_url": "https://www.sesamers.com/funding/fermat-raises-8m-seed-ai-fashion-sketch-to-factory/",
+        "source_title": "Fermat raises $8M seed to take AI from fashion sketch to factory",
+        "source_content_hash": "f40626e49a56d6c9",
+        "quote": "Kibo Ventures and Lunar Ventures co-led the seed.",
+        "quote_hash": "10b721aa8ee1177eec4d4bcce55c0a760f450c8f00cac24c99a6f9be7abe8b62"
+      },
+      {
         "source_id": "FISRC-51e4efce7466f2fd",
         "source_url": "https://seraphim.vc/news/zenithon-raises-10m-ai-world-models-engineering-physics/",
         "source_title": "Zenithon Raises $10M For AI Engineering Models",
@@ -155,6 +225,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Fermat · 种子轮 · 2026-11-17 · 本轮联合领投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-02fbe34439ee6fc4"
+        },
+        {
           "description": "融资来源记录：Zenithon · 种子轮 · 2026-09-30 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-51e4efce7466f2fd"
         }
@@ -176,6 +250,22 @@
           "source_content_hash": "2a27623a9e1c10d9c034cfdfb896775a3f8a9038562b3b6b4fd549f294d46ac4",
           "quote": "We invest pre-revenue & help turn science fiction into reality. How we partner with you Zero BS. Standard terms. Clear feedback. The whole Lunar team at your side as you build a great business. We lead rounds with checks from 500K to 2M",
           "quote_hash": "c38cdd56a955cb92d779d8a4d485b3d20b147f6bbeb10c38e8881e891f0960a8"
+        },
+        {
+          "source_id": "FISRC-02fbe34439ee6fc4",
+          "source_url": "https://tech.eu/2026/11/17/fermat-raises-8m-to-bridge-the-gap-between-fashion-designers-and-manufacturers/",
+          "source_title": "Fermat 融资 800 万美元，弥合时装设计师与制造商之间的差距",
+          "source_content_hash": "0c40097e6621fee9acdd5a753f0f09c85b678ea086ff17205140c27fa767aaf3",
+          "quote": "Kibo Ventures and Lunar Ventures lead the seed round",
+          "quote_hash": "dcc37591138a92fac02d376793e47e813db5bead585e245f7ff74ed7b11a1944"
+        },
+        {
+          "source_id": "FISRC-747020393b26e67b",
+          "source_url": "https://www.sesamers.com/funding/fermat-raises-8m-seed-ai-fashion-sketch-to-factory/",
+          "source_title": "Fermat raises $8M seed to take AI from fashion sketch to factory",
+          "source_content_hash": "f40626e49a56d6c9",
+          "quote": "Kibo Ventures and Lunar Ventures co-led the seed.",
+          "quote_hash": "10b721aa8ee1177eec4d4bcce55c0a760f450c8f00cac24c99a6f9be7abe8b62"
         },
         {
           "source_id": "FISRC-51e4efce7466f2fd",

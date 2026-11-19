@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-18",
-    "currentDate": "2026-11-18",
-    "eventCount": 4486,
+    "latestDataDate": "2026-11-19",
+    "currentDate": "2026-11-19",
+    "eventCount": 4503,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,26 +61,32 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 4,
-    "china_market_company_count": 3,
+    "china_market_activity_count": 5,
+    "china_market_company_count": 4,
     "first_disclosed_at": "2026-02-23",
-    "latest_disclosed_at": "2026-07-01",
+    "latest_disclosed_at": "2026-11-18",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "angel",
       "series_a_plus",
-      "series_b"
+      "series_b",
+      "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-9016c2842633a955",
+        "canonical_entity_id": "",
+        "name": "观壹智能"
+      },
       {
         "entity_id": "EN-ada6f7916f22af98",
         "canonical_entity_id": "EN-ada6f7916f22af98",
@@ -98,6 +104,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-4b95b6beac507460",
+        "funding_insight_id": "FI-7c9d6b176d1ad54e",
+        "event_ids": [
+          "EV-dc8755b16a5344ed"
+        ],
+        "company_entity_id": "EN-9016c2842633a955",
+        "company_canonical_entity_id": "",
+        "company_name": "观壹智能",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-11-18",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-67d4fce9cfc7ae67",
+            "source_url": "https://news.pedaily.cn/202611/572052.shtml",
+            "source_title": "观壹智能完成数亿元融资，加速生命智能基础模型研发",
+            "source_content_hash": "ea86a311a0f3b6910de6d2f2582e4884feb8550cb1151b30cd8d746f417364b3",
+            "quote": "由IDG资本领投，创世伙伴创投(CCV)、沄柏资本、交大菡源资产、云启资本跟投",
+            "quote_hash": "f8ba5d42360c7f864babf87804fadad4e2d49ae2ac7c689e30f26facab639025"
+          }
+        ]
+      },
       {
         "activity_id": "IA-00cb73338626dfea",
         "funding_insight_id": "FI-6adc0d7bfd441daa",
@@ -294,6 +340,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-67d4fce9cfc7ae67",
+        "source_url": "https://news.pedaily.cn/202611/572052.shtml",
+        "source_title": "观壹智能完成数亿元融资，加速生命智能基础模型研发",
+        "source_content_hash": "ea86a311a0f3b6910de6d2f2582e4884feb8550cb1151b30cd8d746f417364b3",
+        "quote": "由IDG资本领投，创世伙伴创投(CCV)、沄柏资本、交大菡源资产、云启资本跟投",
+        "quote_hash": "f8ba5d42360c7f864babf87804fadad4e2d49ae2ac7c689e30f26facab639025"
+      },
+      {
         "source_id": "FISRC-d45f7a4d8fd76b88",
         "source_url": "https://www.sohu.com/a/1044130792_120109837",
         "source_title": "求之科技完成超1亿美元天使轮融资",
@@ -331,10 +385,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "沄柏资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "沄柏资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：观壹智能 · 轮次未披露 · 2026-11-18 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-67d4fce9cfc7ae67"
+        },
         {
           "description": "融资来源记录：求之科技 · 天使轮 · 2026-07-01 · 本轮参投 · 1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d45f7a4d8fd76b88"
@@ -342,14 +400,18 @@
         {
           "description": "融资来源记录：耀速科技 · A+轮 · 2026-06-30 · 本轮参投 · 近2亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-137a48f19e1119b4"
-        },
-        {
-          "description": "融资来源记录：智平方 · B轮 · 2026-04-11 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-16a5b9f7da3616f3"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-67d4fce9cfc7ae67",
+          "source_url": "https://news.pedaily.cn/202611/572052.shtml",
+          "source_title": "观壹智能完成数亿元融资，加速生命智能基础模型研发",
+          "source_content_hash": "ea86a311a0f3b6910de6d2f2582e4884feb8550cb1151b30cd8d746f417364b3",
+          "quote": "由IDG资本领投，创世伙伴创投(CCV)、沄柏资本、交大菡源资产、云启资本跟投",
+          "quote_hash": "f8ba5d42360c7f864babf87804fadad4e2d49ae2ac7c689e30f26facab639025"
+        },
         {
           "source_id": "FISRC-d45f7a4d8fd76b88",
           "source_url": "https://www.sohu.com/a/1044130792_120109837",
@@ -365,14 +427,6 @@
           "source_content_hash": "4bba0dc5a705af7dff42b2ed2c3c95952ac77f1e01bf26b97db868814cefef84",
           "quote": "本轮融资由国方创投、清松资本、广发信德、东方富海、沄柏资本共同参与，老股东雅亿资本持续加码支持。",
           "quote_hash": "111c7bf80859d44488a2240e897f0420bf3b7640f8de10b52238a050ef419a5e"
-        },
-        {
-          "source_id": "FISRC-16a5b9f7da3616f3",
-          "source_url": "https://www.robothub.app/zh/companies/zhipingfang",
-          "source_title": "智平方 - 人形机器人公司资料、融资、产品与估值 | RobotHub",
-          "source_content_hash": "52cc6aa7a44aacaf",
-          "quote": "B轮 ¥10.0亿 ¥96.6亿 2026年2月 百度战投、中车资本、宇信科技、森麒麟、沄柏资本、国泰海通基金",
-          "quote_hash": "d8f95d0e975a73eea9bd213facbdb3cf36b652d63a09a1eecfba2973b029d3ba"
         }
       ],
       "last_verified_at": "2026-09-25"

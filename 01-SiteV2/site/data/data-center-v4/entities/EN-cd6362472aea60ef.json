@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-18",
-    "currentDate": "2026-11-18",
-    "eventCount": 4486,
+    "latestDataDate": "2026-11-19",
+    "currentDate": "2026-11-19",
+    "eventCount": 4503,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -65,6 +65,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-209ca1e91172b225",
       "EV-4c2e1fc3b5434884",
       "EV-439079c4d9694407",
       "EV-f5a5d68ac60d2565",
@@ -87,12 +88,13 @@
       "EN-8992f4a61a19a74b"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-10-28",
+    "lastSeen": "2026-11-19",
     "relationIds": [
       "REL2-a95d865ecb2fbc95"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-209ca1e91172b225",
         "EV-4c2e1fc3b5434884",
         "EV-439079c4d9694407",
         "EV-00305df9d37dd714",
@@ -115,6 +117,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-209ca1e91172b225",
+        "dataDate": "2026-11-19",
+        "date": "2026-11-17",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "前美团高管为AI语音戒指融资数千万元人民币",
+        "displayTags": [],
+        "entityIds": [
+          "EN-203958b7df14b08d",
+          "EN-cd6362472aea60ef"
+        ]
+      },
       {
         "id": "EV-4c2e1fc3b5434884",
         "dataDate": "2026-10-28",
@@ -757,6 +775,7 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-8f4b818b8746d539",
         "EV-03e34979859b12d9",
         "EV-937b99126cc4df09",
         "EV-12e63ddc1a14574e",
@@ -1455,6 +1474,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-46c6311bd2de6d11",
         "EN-a6936f276185fd8f",
         "EN-7d3194f79e645c42",
         "EN-45524c831447998f",
@@ -1966,6 +1986,7 @@
       "typeLabel": "产品形态",
       "valueId": "model",
       "eventIds": [
+        "EV-88837f7f7d187d2b",
         "EV-4ce6b9d2f519e224",
         "EV-7c081abc44cacd7d",
         "EV-bab10c5a5d002472",
@@ -2657,7 +2678,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-12"
+      "lastSeen": "2026-11-19"
     }
   ],
   "fde": [],

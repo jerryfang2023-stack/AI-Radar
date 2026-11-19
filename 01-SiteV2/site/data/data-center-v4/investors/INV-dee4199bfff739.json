@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-18",
-    "currentDate": "2026-11-18",
-    "eventCount": 4486,
+    "latestDataDate": "2026-11-19",
+    "currentDate": "2026-11-19",
+    "eventCount": 4503,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-06",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-11-18",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-46c6311bd2de6d11",
+        "canonical_entity_id": "",
+        "name": "Disseqt AI"
+      },
       {
         "entity_id": "EN-58f71bec3ce7d747",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-4617aa0ed2e0e7fd",
+        "funding_insight_id": "FI-35202eb3393f6730",
+        "event_ids": [
+          "EV-8f4b818b8746d539"
+        ],
+        "company_entity_id": "EN-46c6311bd2de6d11",
+        "company_canonical_entity_id": "",
+        "company_name": "Disseqt AI",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "€7.3 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 7300000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "730 万欧元"
+        },
+        "announced_at": "2026-11-18",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7d29c53fb0419b3d",
+            "source_url": "https://www.eu-startups.com/2026/11/irelands-disseqt-ai-raises-e7-3-million-to-safely-deploy-ai-agents/",
+            "source_title": "爱尔兰 Disseqt AI 融资 730 万欧元，用于安全部署 AI 智能体",
+            "source_content_hash": "1b744610aca8aeb130b6aad7482979838c3cee159eccfaedc8eda3381b41d227",
+            "quote": "Gresham House Ventures led the round, with participation from Sure Valley Ventures (SVV), Delta Partners and Enterprise Ireland, alongside angels including senior leaders from OpenAI, Palo Alto Networks, Salesforce and Meta, and cricket legend Rahul Dravid.",
+            "quote_hash": "a86b6e57672d1c133f7bc34a0fee6987584ea169874c9f501779c506b73003cd"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ef909a9db723ea59",
         "funding_insight_id": "FI-154de0889f1fcad2",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-7d29c53fb0419b3d",
+        "source_url": "https://www.eu-startups.com/2026/11/irelands-disseqt-ai-raises-e7-3-million-to-safely-deploy-ai-agents/",
+        "source_title": "爱尔兰 Disseqt AI 融资 730 万欧元，用于安全部署 AI 智能体",
+        "source_content_hash": "1b744610aca8aeb130b6aad7482979838c3cee159eccfaedc8eda3381b41d227",
+        "quote": "Gresham House Ventures led the round, with participation from Sure Valley Ventures (SVV), Delta Partners and Enterprise Ireland, alongside angels including senior leaders from OpenAI, Palo Alto Networks, Salesforce and Meta, and cricket legend Rahul Dravid.",
+        "quote_hash": "a86b6e57672d1c133f7bc34a0fee6987584ea169874c9f501779c506b73003cd"
+      },
+      {
         "source_id": "FISRC-1b63578e82da8f27",
         "source_url": "https://tech.eu/2026/10/06/nettle-raises-48m-to-expand-its-ai-workspace-for-insurers/",
         "source_title": "Nettle 融资 480 万美元，为保险公司扩展其 AI 工作空间",
@@ -141,10 +195,14 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Sure Valley Ventures (SVV) 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Sure Valley Ventures (SVV) 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Disseqt AI · 轮次未披露 · 2026-11-18 · 本轮参投 · €7.3 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7d29c53fb0419b3d"
+        },
         {
           "description": "融资来源记录：Nettle · 种子轮 · 2026-10-06 · 本轮参投 · $4.8 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1b63578e82da8f27"
@@ -152,6 +210,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-7d29c53fb0419b3d",
+          "source_url": "https://www.eu-startups.com/2026/11/irelands-disseqt-ai-raises-e7-3-million-to-safely-deploy-ai-agents/",
+          "source_title": "爱尔兰 Disseqt AI 融资 730 万欧元，用于安全部署 AI 智能体",
+          "source_content_hash": "1b744610aca8aeb130b6aad7482979838c3cee159eccfaedc8eda3381b41d227",
+          "quote": "Gresham House Ventures led the round, with participation from Sure Valley Ventures (SVV), Delta Partners and Enterprise Ireland, alongside angels including senior leaders from OpenAI, Palo Alto Networks, Salesforce and Meta, and cricket legend Rahul Dravid.",
+          "quote_hash": "a86b6e57672d1c133f7bc34a0fee6987584ea169874c9f501779c506b73003cd"
+        },
         {
           "source_id": "FISRC-1b63578e82da8f27",
           "source_url": "https://tech.eu/2026/10/06/nettle-raises-48m-to-expand-its-ai-workspace-for-insurers/",

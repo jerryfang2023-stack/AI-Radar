@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-18",
-    "currentDate": "2026-11-18",
-    "eventCount": 4486,
+    "latestDataDate": "2026-11-19",
+    "currentDate": "2026-11-19",
+    "eventCount": 4503,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-17",
-    "latest_disclosed_at": "2026-09-14",
+    "latest_disclosed_at": "2026-11-18",
     "role_counts": {
+      "lead": 1,
       "participant": 2
     },
     "round_codes": [
       "series_b",
+      "series_c",
       "series_e"
     ],
     "portfolio_companies": [
@@ -85,12 +87,57 @@
         "name": "Higgsfield"
       },
       {
+        "entity_id": "EN-2278ee04cbb062e3",
+        "canonical_entity_id": "",
+        "name": "Payhawk"
+      },
+      {
         "entity_id": "EN-e4540a7c8404b1be",
         "canonical_entity_id": "",
         "name": "Temporal"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1f0ff23cc8fea133",
+        "funding_insight_id": "FI-1d7695a824dc978d",
+        "event_ids": [
+          "EV-2e761601c7f04a46"
+        ],
+        "company_entity_id": "EN-2278ee04cbb062e3",
+        "company_canonical_entity_id": "",
+        "company_name": "Payhawk",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "€255.14 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 255140000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5514 亿欧元"
+        },
+        "announced_at": "2026-11-18",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-81d4aea873fc9f86",
+            "source_url": "https://www.eu-startups.com/2026/11/bulgarias-first-unicorn-payhawk-raises-e255-14-million-at-e1-82-billion-valuation-to-build-a-global-finance-os-for-the-ai-era/",
+            "source_title": "保加利亚首家独角兽Payhawk在Goldman Sachs领投的C轮融资中按€1.82 billion估值融资€255.14 million",
+            "source_content_hash": "b283b9b5508ce3732eecacaa1c117fb8238dbe0f373a1b179ffd7586995e5e08",
+            "quote": "The round was led by Growth Equity at Goldman Sachs Alternatives.",
+            "quote_hash": "c03f9c716318788abd051cd6e8ed17fdf9bc200c2b8606438c9ad5c361bb1cc5"
+          }
+        ]
+      },
       {
         "activity_id": "IA-5a6775d6697eaa84",
         "funding_insight_id": "FI-898cddb74dcff413",
@@ -174,6 +221,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-81d4aea873fc9f86",
+        "source_url": "https://www.eu-startups.com/2026/11/bulgarias-first-unicorn-payhawk-raises-e255-14-million-at-e1-82-billion-valuation-to-build-a-global-finance-os-for-the-ai-era/",
+        "source_title": "保加利亚首家独角兽Payhawk在Goldman Sachs领投的C轮融资中按€1.82 billion估值融资€255.14 million",
+        "source_content_hash": "b283b9b5508ce3732eecacaa1c117fb8238dbe0f373a1b179ffd7586995e5e08",
+        "quote": "The round was led by Growth Equity at Goldman Sachs Alternatives.",
+        "quote_hash": "c03f9c716318788abd051cd6e8ed17fdf9bc200c2b8606438c9ad5c361bb1cc5"
+      },
+      {
         "source_id": "FISRC-cf83d78a216a5edf",
         "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
         "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
@@ -220,6 +275,14 @@
           "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
         },
         {
+          "source_id": "FISRC-81d4aea873fc9f86",
+          "source_url": "https://www.eu-startups.com/2026/11/bulgarias-first-unicorn-payhawk-raises-e255-14-million-at-e1-82-billion-valuation-to-build-a-global-finance-os-for-the-ai-era/",
+          "source_title": "保加利亚首家独角兽Payhawk在Goldman Sachs领投的C轮融资中按€1.82 billion估值融资€255.14 million",
+          "source_content_hash": "b283b9b5508ce3732eecacaa1c117fb8238dbe0f373a1b179ffd7586995e5e08",
+          "quote": "The round was led by Growth Equity at Goldman Sachs Alternatives.",
+          "quote_hash": "c03f9c716318788abd051cd6e8ed17fdf9bc200c2b8606438c9ad5c361bb1cc5"
+        },
+        {
           "source_id": "FISRC-cf83d78a216a5edf",
           "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
           "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
@@ -256,6 +319,10 @@
         {
           "description": "Higgsfield named this institution among participants in its $400 million Series B announced on 2026-08-17. The $400 million is the total round size; the institution's individual investment amount was not disclosed.",
           "source_id": "FISRC-b235ace767812393"
+        },
+        {
+          "description": "融资来源记录：Payhawk · C轮 · 2026-11-18 · 本轮领投 · €255.14 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-81d4aea873fc9f86"
         },
         {
           "description": "融资来源记录：Temporal · E轮 · 2026-09-14 · 本轮参投 · $550M。这是本库收录的披露案例，不代表完整投资组合。",
