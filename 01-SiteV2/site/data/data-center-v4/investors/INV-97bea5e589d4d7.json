@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-25T02:10:15.815Z",
     "latestDataDate": "2026-11-19",
     "currentDate": "2026-11-19",
-    "eventCount": 4506,
+    "eventCount": 4503,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 10,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 10,
+    "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,17 +72,15 @@
     "first_disclosed_at": "2026-05-28",
     "latest_disclosed_at": "2026-11-18",
     "role_counts": {
-      "co_lead": 3,
+      "co_lead": 1,
       "historical_or_ambiguous": 2,
       "lead": 3,
       "participant": 4
     },
     "round_codes": [
-      "multi_round",
       "seed",
       "series_a",
       "series_c",
-      "series_c_extension",
       "series_e",
       "series_h",
       "undisclosed"
@@ -102,16 +100,6 @@
         "entity_id": "EN-d27608cca9b65f91",
         "canonical_entity_id": "",
         "name": "Glow"
-      },
-      {
-        "entity_id": "FICO-79c0b01d7258dd9a",
-        "canonical_entity_id": "",
-        "name": "Isomorphic Labs"
-      },
-      {
-        "entity_id": "EN-478d3cdc1ceaae6b",
-        "canonical_entity_id": "",
-        "name": "Isomorphic Labs"
       },
       {
         "entity_id": "EN-37799d436602eaf1",
@@ -140,46 +128,6 @@
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-ae2526fe0b2deec1",
-        "funding_insight_id": "FI-77922959e08e2ecd",
-        "event_ids": [
-          "EV-312f25d8ec1f14b4"
-        ],
-        "company_entity_id": "FICO-79c0b01d7258dd9a",
-        "company_canonical_entity_id": "",
-        "company_name": "Isomorphic Labs",
-        "round": "C轮扩展",
-        "round_code": "series_c_extension",
-        "round_original": "C轮扩展",
-        "amount_original": "50亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 5000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "50 亿美元"
-        },
-        "announced_at": "2026-11-18",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮联合领投",
-        "role_code": "co_lead",
-        "evidence": [
-          {
-            "source_id": "FISRC-466fd3473b30b1f3",
-            "source_url": "https://news.pedaily.cn/202611/572062.shtml",
-            "source_title": "谷歌AI制药完成50亿美元融资：大厂AI制药进入军备竞赛阶段",
-            "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
-            "quote": "由Greenoaks和Sequoia Capital共同领投",
-            "quote_hash": "0eb53a6bae5b931d8535ca4cce0f5af34fa39fd1e84830bc9468b4824d6ef69b"
-          }
-        ]
-      },
       {
         "activity_id": "IA-9614cba1ead10e35",
         "funding_insight_id": "FI-bfa979b6f9858e60",
@@ -257,46 +205,6 @@
             "source_content_hash": "b283b9b5508ce3732eecacaa1c117fb8238dbe0f373a1b179ffd7586995e5e08",
             "quote": "All existing investors, including QED, Greenoaks, Lightspeed, Hedosophia and Bek Ventures, participated in the round, alongside new investors Galdana Ventures, Cogito Capital, Inveready and Invus, and leading European entrepreneurs Tomas Okmanas and Didac Lee.",
             "quote_hash": "671da4cce69d3026b6152a72ff5ef7138d14fac6be610bb925a7eba41aa22fad"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-ff218617b18e45e9",
-        "funding_insight_id": "FI-83e6a08e46797234",
-        "event_ids": [
-          "EV-79984024e8768a96"
-        ],
-        "company_entity_id": "EN-478d3cdc1ceaae6b",
-        "company_canonical_entity_id": "",
-        "company_name": "Isomorphic Labs",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
-        "amount_original": "$5b",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 5000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "50 亿美元"
-        },
-        "announced_at": "2026-11-17",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮联合领投",
-        "role_code": "co_lead",
-        "evidence": [
-          {
-            "source_id": "FISRC-ac36b1c1817ebdc8",
-            "source_url": "https://tech.eu/2026/11/17/sequoia-and-greenoaks-lead-massive-5bn-series-c-funding-round-in-isomorphic-labs/",
-            "source_title": "红杉资本与Greenoaks领投Isomorphic Labs 50亿美元C轮融资",
-            "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-            "quote": "The new funding round was co-led by California-based VCs Greenoaks and Sequoia",
-            "quote_hash": "2de32d1de1749419890442b90a9b0422bfeed2167bc71f881ab7df0b5428885e"
           }
         ]
       },
@@ -617,14 +525,6 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-466fd3473b30b1f3",
-        "source_url": "https://news.pedaily.cn/202611/572062.shtml",
-        "source_title": "谷歌AI制药完成50亿美元融资：大厂AI制药进入军备竞赛阶段",
-        "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
-        "quote": "由Greenoaks和Sequoia Capital共同领投",
-        "quote_hash": "0eb53a6bae5b931d8535ca4cce0f5af34fa39fd1e84830bc9468b4824d6ef69b"
-      },
-      {
         "source_id": "FISRC-52ddbf8367aa7b8c",
         "source_url": "https://payhawk.com/en-us/blog/payhawk-series-c-280m-funding",
         "source_title": "Payhawk raises $280M Series C at a $2B valuation | Payhawk",
@@ -639,14 +539,6 @@
         "source_content_hash": "b283b9b5508ce3732eecacaa1c117fb8238dbe0f373a1b179ffd7586995e5e08",
         "quote": "All existing investors, including QED, Greenoaks, Lightspeed, Hedosophia and Bek Ventures, participated in the round, alongside new investors Galdana Ventures, Cogito Capital, Inveready and Invus, and leading European entrepreneurs Tomas Okmanas and Didac Lee.",
         "quote_hash": "671da4cce69d3026b6152a72ff5ef7138d14fac6be610bb925a7eba41aa22fad"
-      },
-      {
-        "source_id": "FISRC-ac36b1c1817ebdc8",
-        "source_url": "https://tech.eu/2026/11/17/sequoia-and-greenoaks-lead-massive-5bn-series-c-funding-round-in-isomorphic-labs/",
-        "source_title": "红杉资本与Greenoaks领投Isomorphic Labs 50亿美元C轮融资",
-        "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-        "quote": "The new funding round was co-led by California-based VCs Greenoaks and Sequoia",
-        "quote_hash": "2de32d1de1749419890442b90a9b0422bfeed2167bc71f881ab7df0b5428885e"
       },
       {
         "source_id": "FISRC-c4b7e80cb7863d47",
@@ -744,16 +636,16 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Isomorphic Labs · C轮扩展 · 2026-11-18 · 本轮联合领投 · 50亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-466fd3473b30b1f3"
-        },
-        {
           "description": "融资来源记录：Payhawk · C轮 · 2026-11-18 · 本轮参投 · $280m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-52ddbf8367aa7b8c"
         },
         {
           "description": "融资来源记录：Payhawk · C轮 · 2026-11-18 · 本轮参投 · €255.14 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-81d4aea873fc9f86"
+        },
+        {
+          "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮联合领投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4b7e80cb7863d47"
         }
       ],
       "contacts": [],
@@ -775,14 +667,6 @@
           "quote_hash": "fa24778cfd7c2d26c7f8ebda518fb1810040fd01beae0ea7f072d6d62cf75856"
         },
         {
-          "source_id": "FISRC-466fd3473b30b1f3",
-          "source_url": "https://news.pedaily.cn/202611/572062.shtml",
-          "source_title": "谷歌AI制药完成50亿美元融资：大厂AI制药进入军备竞赛阶段",
-          "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
-          "quote": "由Greenoaks和Sequoia Capital共同领投",
-          "quote_hash": "0eb53a6bae5b931d8535ca4cce0f5af34fa39fd1e84830bc9468b4824d6ef69b"
-        },
-        {
           "source_id": "FISRC-52ddbf8367aa7b8c",
           "source_url": "https://payhawk.com/en-us/blog/payhawk-series-c-280m-funding",
           "source_title": "Payhawk raises $280M Series C at a $2B valuation | Payhawk",
@@ -797,6 +681,14 @@
           "source_content_hash": "b283b9b5508ce3732eecacaa1c117fb8238dbe0f373a1b179ffd7586995e5e08",
           "quote": "All existing investors, including QED, Greenoaks, Lightspeed, Hedosophia and Bek Ventures, participated in the round, alongside new investors Galdana Ventures, Cogito Capital, Inveready and Invus, and leading European entrepreneurs Tomas Okmanas and Didac Lee.",
           "quote_hash": "671da4cce69d3026b6152a72ff5ef7138d14fac6be610bb925a7eba41aa22fad"
+        },
+        {
+          "source_id": "FISRC-c4b7e80cb7863d47",
+          "source_url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
+          "source_title": "Isomorphic Labs 融资 50 亿美元，拟将候选药物推进临床试验",
+          "source_content_hash": "69ca96b09e5f9b3698e78f74bf202e70c1f5d21f791557981cbae6115c03e7c9",
+          "quote": "The funding was co-led by Greenoaks and Sequoia Capital",
+          "quote_hash": "ccc48491bfcfebf53e0c6ec451e4d189736090aee8bd64375bc68449a8aaf0ee"
         }
       ],
       "last_verified_at": "2026-10-04",

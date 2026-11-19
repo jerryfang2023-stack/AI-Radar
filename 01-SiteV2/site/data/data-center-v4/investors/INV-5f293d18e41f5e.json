@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-25T02:10:15.815Z",
     "latestDataDate": "2026-11-19",
     "currentDate": "2026-11-19",
-    "eventCount": 4506,
+    "eventCount": 4503,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 11,
+    "current_round_count": 10,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 10,
+    "portfolio_company_count": 9,
     "market_regions": [
       "GLOBAL"
     ],
@@ -75,10 +75,9 @@
       "co_lead": 3,
       "historical_or_ambiguous": 1,
       "lead": 3,
-      "participant": 5
+      "participant": 4
     },
     "round_codes": [
-      "multi_round",
       "seed",
       "series_a",
       "series_b",
@@ -97,11 +96,6 @@
         "entity_id": "EN-8da5eafb322ee86e",
         "canonical_entity_id": "",
         "name": "Fractile"
-      },
-      {
-        "entity_id": "EN-478d3cdc1ceaae6b",
-        "canonical_entity_id": "",
-        "name": "Isomorphic Labs"
       },
       {
         "entity_id": "EN-37799d436602eaf1",
@@ -140,46 +134,6 @@
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-4d944acf793b86da",
-        "funding_insight_id": "FI-83e6a08e46797234",
-        "event_ids": [
-          "EV-79984024e8768a96"
-        ],
-        "company_entity_id": "EN-478d3cdc1ceaae6b",
-        "company_canonical_entity_id": "",
-        "company_name": "Isomorphic Labs",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
-        "amount_original": "$5b",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 5000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "50 亿美元"
-        },
-        "announced_at": "2026-11-17",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-ac36b1c1817ebdc8",
-            "source_url": "https://tech.eu/2026/11/17/sequoia-and-greenoaks-lead-massive-5bn-series-c-funding-round-in-isomorphic-labs/",
-            "source_title": "红杉资本与Greenoaks领投Isomorphic Labs 50亿美元C轮融资",
-            "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-            "quote": "with Andreessen Horowitz, Thrive Capital, Alphabet, Alphabet’s GV and CapitalG, Temasek, and the Sovereign AI fund also participating",
-            "quote_hash": "78b3fd3cfcc92c7f3a8450c898687a5dd69fbe035e00a7a904564613b157a892"
-          }
-        ]
-      },
       {
         "activity_id": "IA-b0633934b859663f",
         "funding_insight_id": "FI-9647078abba53f06",
@@ -639,14 +593,6 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-ac36b1c1817ebdc8",
-        "source_url": "https://tech.eu/2026/11/17/sequoia-and-greenoaks-lead-massive-5bn-series-c-funding-round-in-isomorphic-labs/",
-        "source_title": "红杉资本与Greenoaks领投Isomorphic Labs 50亿美元C轮融资",
-        "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-        "quote": "with Andreessen Horowitz, Thrive Capital, Alphabet, Alphabet’s GV and CapitalG, Temasek, and the Sovereign AI fund also participating",
-        "quote_hash": "78b3fd3cfcc92c7f3a8450c898687a5dd69fbe035e00a7a904564613b157a892"
-      },
-      {
         "source_id": "FISRC-c4b7e80cb7863d47",
         "source_url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
         "source_title": "Isomorphic Labs 融资 50 亿美元，拟将候选药物推进临床试验",
@@ -783,10 +729,6 @@
       "experience_summary": "官网公开内容支持其为科技领域投资机构，并提供一般联络渠道；未从第三方报道推断未披露的基金规模、个人履历或回报表现。",
       "track_record": [
         {
-          "description": "融资来源记录：Isomorphic Labs · 多轮融资 · 2026-11-17 · 本轮参投 · $5b。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ac36b1c1817ebdc8"
-        },
-        {
           "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮参投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c4b7e80cb7863d47"
         },
@@ -836,14 +778,6 @@
           "quote_hash": "bf8f75c2a6fb056494a728ec92284b1773f900b34abf39f6e24f5a9f07235291"
         },
         {
-          "source_id": "FISRC-ac36b1c1817ebdc8",
-          "source_url": "https://tech.eu/2026/11/17/sequoia-and-greenoaks-lead-massive-5bn-series-c-funding-round-in-isomorphic-labs/",
-          "source_title": "红杉资本与Greenoaks领投Isomorphic Labs 50亿美元C轮融资",
-          "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-          "quote": "with Andreessen Horowitz, Thrive Capital, Alphabet, Alphabet’s GV and CapitalG, Temasek, and the Sovereign AI fund also participating",
-          "quote_hash": "78b3fd3cfcc92c7f3a8450c898687a5dd69fbe035e00a7a904564613b157a892"
-        },
-        {
           "source_id": "FISRC-c4b7e80cb7863d47",
           "source_url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
           "source_title": "Isomorphic Labs 融资 50 亿美元，拟将候选药物推进临床试验",
@@ -858,6 +792,14 @@
           "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
           "quote": "its latest round led by Thrive Capital, Founders Fund, Lightspeed Venture Partners, and Redpoint",
           "quote_hash": "69677c9cff11085d84c536d1d997465dcc1993802f7000b442656da6b4011cf8"
+        },
+        {
+          "source_id": "FISRC-59233bfbeb9628bf",
+          "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
+          "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
+          "source_content_hash": "97c1f5cc5dda1d68",
+          "quote": "Thrive Capital, Founders Fund, Lightspeed and Redpoint co-led the round.",
+          "quote_hash": "ea6bb384a47cf21cbbbf5c4cf629c2d466cddb2aeb73964f923340e31bba8081"
         }
       ],
       "last_verified_at": "2026-09-26",

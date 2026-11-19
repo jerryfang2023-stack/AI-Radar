@@ -2,15 +2,15 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-11-19",
-    "generated_at": "2026-11-19T01:18:17.776Z",
+    "generated_at": "2026-11-19T06:26:18.322Z",
     "trigger": "accepted_financing_event_research",
     "research_provider": "search-gateway+direct-original+deepseek",
     "model": "deepseek-flash",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
-      "funding_events": 33,
-      "auto_published": 13,
+      "funding_events": 30,
+      "auto_published": 10,
       "blocked": 3,
       "pending": 3,
       "deduplicated": 14,
@@ -2173,491 +2173,6 @@
       ],
       "aggregation": {
         "key": "EN-5e494e695571ede1|seed",
-        "event_count": 1,
-        "strategy": "company_and_normalized_round"
-      }
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-f474015771db9dc5",
-      "triggered_by_event_id": "EV-79984024e8768a96",
-      "as_of_date": "2026-11-19",
-      "company": {
-        "entity_id": "EN-478d3cdc1ceaae6b",
-        "name": "Isomorphic Labs",
-        "full_name": "Isomorphic Labs",
-        "website": "",
-        "summary": "总部位于伦敦的AI药物研发公司，由Demis Hassabis创立，从Google分拆而来，利用AI推动新一代药物研发。",
-        "headquarters": "伦敦",
-        "founders": [
-          {
-            "name": "Demis Hassabis",
-            "role": "创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ac36b1c1817ebdc8",
-                "quote": "Founded by Hassabis, London-headquartered Isomorphic was spun out of Google",
-                "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-                "quote_hash": "3c78a33fad100b4e294ad83a1edc6dded8d73800ab0a6a0b71c34df4909ccebb"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-ac36b1c1817ebdc8",
-            "quote": "Demis Hassabis’'s Isomorphic Labs has raised a massive $5bn Series C funding round",
-            "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-            "quote_hash": "afe6dfa538900da1b6ece244ef1a0cbcbacf1269b6105b0ca4a05a93350cfc82"
-          }
-        ],
-        "application_entity_id": "EN-478d3cdc1ceaae6b",
-        "canonical_entity_consistent": false
-      },
-      "financing": {
-        "round": "多轮融资",
-        "amount": "$5b",
-        "total_raised": "",
-        "announced_at": "2026-11-17",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "Greenoaks",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ac36b1c1817ebdc8",
-                "quote": "The new funding round was co-led by California-based VCs Greenoaks and Sequoia",
-                "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-                "quote_hash": "2de32d1de1749419890442b90a9b0422bfeed2167bc71f881ab7df0b5428885e"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Sequoia",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ac36b1c1817ebdc8",
-                "quote": "The new funding round was co-led by California-based VCs Greenoaks and Sequoia",
-                "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-                "quote_hash": "2de32d1de1749419890442b90a9b0422bfeed2167bc71f881ab7df0b5428885e"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Andreessen Horowitz",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ac36b1c1817ebdc8",
-                "quote": "with Andreessen Horowitz, Thrive Capital, Alphabet, Alphabet’s GV and CapitalG, Temasek, and the Sovereign AI fund also participating",
-                "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-                "quote_hash": "78b3fd3cfcc92c7f3a8450c898687a5dd69fbe035e00a7a904564613b157a892"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Thrive Capital",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ac36b1c1817ebdc8",
-                "quote": "with Andreessen Horowitz, Thrive Capital, Alphabet, Alphabet’s GV and CapitalG, Temasek, and the Sovereign AI fund also participating",
-                "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-                "quote_hash": "78b3fd3cfcc92c7f3a8450c898687a5dd69fbe035e00a7a904564613b157a892"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Alphabet",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ac36b1c1817ebdc8",
-                "quote": "with Andreessen Horowitz, Thrive Capital, Alphabet, Alphabet’s GV and CapitalG, Temasek, and the Sovereign AI fund also participating",
-                "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-                "quote_hash": "78b3fd3cfcc92c7f3a8450c898687a5dd69fbe035e00a7a904564613b157a892"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "GV",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ac36b1c1817ebdc8",
-                "quote": "with Andreessen Horowitz, Thrive Capital, Alphabet, Alphabet’s GV and CapitalG, Temasek, and the Sovereign AI fund also participating",
-                "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-                "quote_hash": "78b3fd3cfcc92c7f3a8450c898687a5dd69fbe035e00a7a904564613b157a892"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "CapitalG",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ac36b1c1817ebdc8",
-                "quote": "with Andreessen Horowitz, Thrive Capital, Alphabet, Alphabet’s GV and CapitalG, Temasek, and the Sovereign AI fund also participating",
-                "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-                "quote_hash": "78b3fd3cfcc92c7f3a8450c898687a5dd69fbe035e00a7a904564613b157a892"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Temasek",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ac36b1c1817ebdc8",
-                "quote": "with Andreessen Horowitz, Thrive Capital, Alphabet, Alphabet’s GV and CapitalG, Temasek, and the Sovereign AI fund also participating",
-                "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-                "quote_hash": "78b3fd3cfcc92c7f3a8450c898687a5dd69fbe035e00a7a904564613b157a892"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Sovereign AI fund",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ac36b1c1817ebdc8",
-                "quote": "with Andreessen Horowitz, Thrive Capital, Alphabet, Alphabet’s GV and CapitalG, Temasek, and the Sovereign AI fund also participating",
-                "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-                "quote_hash": "78b3fd3cfcc92c7f3a8450c898687a5dd69fbe035e00a7a904564613b157a892"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "other_round_investors": [],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-ac36b1c1817ebdc8",
-            "quote": "Demis Hassabis’'s Isomorphic Labs has raised a massive $5bn Series C funding round, just six months after raising $2.1bn in a Series B funding, as it looks to leverage AI to power a new generation of medicines.",
-            "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-            "quote_hash": "97270ab96ff3f14b1b5033ff474bf9dee3c30bc78042ea53a682d4cbdd369bf6"
-          },
-          {
-            "source_id": "FISRC-ac36b1c1817ebdc8",
-            "quote": "has raised a massive $5bn Series C funding round, just six months after raising $2.1bn in a Series B funding",
-            "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-            "quote_hash": "39eee7f2d6e52f8f929748663ca938de04d5ab48e0d888f2c38f2961620b98e6"
-          }
-        ],
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
-        "amount_original": "$5b",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 5000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "50 亿美元"
-        },
-        "total_raised_original": "",
-        "total_raised_normalized": {
-          "currency": "",
-          "value": null,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "undisclosed",
-          "display_zh": ""
-        },
-        "risk_markers": [],
-        "disclosures": [
-          {
-            "event_id": "EV-79984024e8768a96",
-            "round_original": "多轮融资",
-            "amount": "$5b",
-            "announced_at": "2026-11-17",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ac36b1c1817ebdc8",
-                "quote": "Demis Hassabis’'s Isomorphic Labs has raised a massive $5bn Series C funding round, just six months after raising $2.1bn in a Series B funding, as it looks to leverage AI to power a new generation of medicines.",
-                "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-                "quote_hash": "97270ab96ff3f14b1b5033ff474bf9dee3c30bc78042ea53a682d4cbdd369bf6"
-              },
-              {
-                "source_id": "FISRC-ac36b1c1817ebdc8",
-                "quote": "has raised a massive $5bn Series C funding round, just six months after raising $2.1bn in a Series B funding",
-                "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-                "quote_hash": "39eee7f2d6e52f8f929748663ca938de04d5ab48e0d888f2c38f2961620b98e6"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "disclosed"
-      },
-      "products": [
-        {
-          "name": "AI药物研发平台",
-          "description": "利用AI推动新一代药物研发。",
-          "target_customers": "",
-          "features": [],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ac36b1c1817ebdc8",
-              "quote": "as it looks to leverage AI to power a new generation of medicines",
-              "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-              "quote_hash": "e266746e08103b5f6bc98841968406adf4b61fe1657673e686a41df536bbb390"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [],
-      "comparisons": [],
-      "metrics": [
-        {
-          "label": "C轮融资金额",
-          "value": "50亿美元",
-          "observed_at": "2026-11-17",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ac36b1c1817ebdc8",
-              "quote": "has raised a massive $5bn Series C funding round",
-              "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-              "quote_hash": "6aa66e9d06ee4835895915196edf74115612e8fd74d4ed777872d117982ab69c"
-            }
-          ]
-        },
-        {
-          "label": "B轮融资金额",
-          "value": "21亿美元",
-          "observed_at": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ac36b1c1817ebdc8",
-              "quote": "just six months after raising $2.1bn in a Series B funding",
-              "source_content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-              "quote_hash": "07f31112943ce266222672ffc5e9cfd5cb57f7cd6f20c8e68be760a01f5ff514"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "leadmagic.io",
-          "quote": "17 Sequoia Capital Backed Startups That Raised $2.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-178d441ba11dd6fd",
-              "quote": "17 Sequoia Capital Backed Startups That Raised $2.",
-              "source_content_hash": "c8f293523afdfd88",
-              "quote_hash": "001ebcbf9a39d81ed62ee34e01e9bb5f910ddfa4cb14bed15944ce4c7935567f"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [],
-        "capital_judgment": "本轮50亿美元C轮由Greenoaks与Sequoia联合领投，距上一轮21亿美元B轮仅六个月，资本押注的核心变量是AI驱动药物研发能否形成新一代药物管线。来源仅验证了融资规模、领投方与参投方名单，以及公司以AI赋能药物研发的定位；尚无管线进展、临床数据或收入信号，因此无法判断估值所依赖的业务验证程度。",
-        "validated_signals": [
-          "完成50亿美元C轮融资，由Greenoaks与Sequoia联合领投",
-          "距21亿美元B轮融资仅六个月",
-          "公司定位为利用AI推动新一代药物研发"
-        ],
-        "risks": [
-          "来源未披露任何管线、临床或商业化进展，AI药物研发的实际产出仍待验证",
-          "50亿美元大额融资与六个月内的连续融资节奏，其估值依据未在来源中说明",
-          "除融资与定位外，缺少客户、合作或收入等可归属业务数据"
-        ],
-        "related_direction_id": "",
-        "taxonomy_version": "TAG-V4.1",
-        "product_form_id": "end_user_application",
-        "market_category_id": "industry_applications",
-        "market_subcategory_id": "healthcare_life_sciences",
-        "market_application_id": "",
-        "use_case_ids": [
-          "research_discovery"
-        ],
-        "industry_ids": [
-          "healthcare_life_sciences"
-        ],
-        "target_user_ids": [
-          "researcher"
-        ],
-        "sector": "AI药物研发",
-        "investment_thesis": {
-          "statement": "本轮50亿美元C轮由Greenoaks与Sequoia联合领投，距上一轮21亿美元B轮仅六个月，资本押注的核心变量是AI驱动药物研发能否形成新一代药物管线。来源仅验证了融资规模、领投方与参投方名单，以及公司以AI赋能药物研发的定位；尚无管线进展、临床数据或收入信号，因此无法判断估值所依赖的业务验证程度。",
-          "evidence_signals": [
-            "完成50亿美元C轮融资，由Greenoaks与Sequoia联合领投",
-            "距21亿美元B轮融资仅六个月",
-            "公司定位为利用AI推动新一代药物研发"
-          ],
-          "risks": [
-            "来源未披露任何管线、临床或商业化进展，AI药物研发的实际产出仍待验证",
-            "50亿美元大额融资与六个月内的连续融资节奏，其估值依据未在来源中说明",
-            "除融资与定位外，缺少客户、合作或收入等可归属业务数据"
-          ],
-          "institutional_rationale_status": "not_disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "AI药物研发平台",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Demis Hassabis",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Greenoaks",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Sequoia",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Andreessen Horowitz",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Thrive Capital",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Alphabet",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "GV",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "CapitalG",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Temasek",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Sovereign AI fund",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [],
-      "research_sources": [
-        {
-          "source_id": "FISRC-ac36b1c1817ebdc8",
-          "source_url": "https://tech.eu/2026/11/17/sequoia-and-greenoaks-lead-massive-5bn-series-c-funding-round-in-isomorphic-labs/",
-          "title": "红杉资本与Greenoaks领投Isomorphic Labs 50亿美元C轮融资",
-          "publisher": "tech.eu",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-11-19T00:26:36.901Z",
-          "content_hash": "8a20a1e602a11ce9242c2993387f3fe41957c15fce22935959e5fbaf84de10fa",
-          "source_artifact_id": "SA-27e5e394df70f441",
-          "raw_id": "RAW-9c0ce6027c9eefe3"
-        },
-        {
-          "source_id": "FISRC-178d441ba11dd6fd",
-          "source_url": "https://leadmagic.io/funded-startups/sequoia-backed",
-          "title": "17+ Sequoia-Backed Portfolio Startups (2026)",
-          "publisher": "leadmagic.io",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-19T01:16:59.569Z",
-          "content_hash": "c8f293523afdfd88",
-          "source_artifact_id": null,
-          "raw_id": null
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-flash",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-11-19T01:17:14.185Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-11-19T01:17:14.185Z",
-      "customer_research": {
-        "status": "no_verified_customer_found",
-        "verified_customer_count": 0,
-        "searched_source_count": 2
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "AI药物研发平台"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "Demis Hassabis"
-          ]
-        }
-      },
-      "source_event_ids": [
-        "EV-79984024e8768a96"
-      ],
-      "aggregation": {
-        "key": "EN-478d3cdc1ceaae6b|multi_round",
         "event_count": 1,
         "strategy": "company_and_normalized_round"
       }
@@ -5700,7 +5215,7 @@
         "canonical_entity_consistent": false
       },
       "financing": {
-        "round": "其他融资",
+        "round": "轮次未披露",
         "amount": "数亿元",
         "total_raised": "",
         "announced_at": "2026-11-18",
@@ -5793,8 +5308,8 @@
             "quote_hash": "6a154ebf2ff9f4061bdbc7211cb7507ff5e7280bd64e1d7815a6e28196006ded"
           }
         ],
-        "round_code": "other",
-        "round_original": "首轮",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
         "amount_original": "数亿元",
         "amount_normalized": {
           "currency": "CNY",
@@ -5844,7 +5359,7 @@
             ]
           }
         ],
-        "disclosure_status": "disclosed"
+        "disclosure_status": "partially_disclosed"
       },
       "products": [
         {
@@ -6991,851 +6506,6 @@
     },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-8a42acf8aebdd8da",
-      "triggered_by_event_id": "EV-312f25d8ec1f14b4",
-      "as_of_date": "2026-11-19",
-      "company": {
-        "entity_id": "EN-bbdefa2950f49882",
-        "name": "Isomorphic Labs",
-        "full_name": "Isomorphic Labs",
-        "website": "",
-        "summary": "从Google DeepMind体系走出的AI制药公司，以AI优先方式重新思考药物发现，开发前沿模型并自研药物管线、推进药企合作。",
-        "headquarters": "",
-        "founders": [
-          {
-            "name": "Demis Hassabis",
-            "role": "",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-466fd3473b30b1f3",
-                "quote": "当年，Demis Hassabis宣布成立Isomorphic Labs。",
-                "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
-                "quote_hash": "2f993edfa37878c235726d0fbc4bb3be1e89d357cf084b2615f4c51f9f4d4cab"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-466fd3473b30b1f3",
-            "quote": "这家Alphabet旗下公司的目标，是以AI优先的方式重新思考药物发现。",
-            "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
-            "quote_hash": "5e8c446a44e9acacb32239f9f08c8fc0373b3f2e17b94c7c575f06863bada527"
-          },
-          {
-            "source_id": "FISRC-24892cd5735a05d5",
-            "quote": "Isomorphic Labs is using our latest models to accelerate drug discovery, identifying novel compounds for previously untreatable diseases in a fraction of the time.",
-            "source_content_hash": "25785577a035555e",
-            "quote_hash": "a17f3a3346322abab2b7339288c6f004ecc4b477f3e78aa260551bf7c66460b2"
-          }
-        ],
-        "application_entity_id": "FICO-79c0b01d7258dd9a",
-        "canonical_entity_consistent": false
-      },
-      "financing": {
-        "round": "C轮扩展",
-        "amount": "50亿美元",
-        "total_raised": "",
-        "announced_at": "2026-11-18",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "Greenoaks",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-466fd3473b30b1f3",
-                "quote": "由Greenoaks和Sequoia Capital共同领投",
-                "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
-                "quote_hash": "0eb53a6bae5b931d8535ca4cce0f5af34fa39fd1e84830bc9468b4824d6ef69b"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Sequoia Capital",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-466fd3473b30b1f3",
-                "quote": "由Greenoaks和Sequoia Capital共同领投",
-                "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
-                "quote_hash": "0eb53a6bae5b931d8535ca4cce0f5af34fa39fd1e84830bc9468b4824d6ef69b"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "a16z",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-466fd3473b30b1f3",
-                "quote": "a16z等机构参与",
-                "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
-                "quote_hash": "4f96a00c968e85bb157b91b5a54d7ecfd2c6df388e44b5e84b696d2790340a45"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Alphabet",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-466fd3473b30b1f3",
-                "quote": "Alphabet继续追加投资",
-                "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
-                "quote_hash": "00f6264e515f63a078c8bc217a487afdd91b4a60dc569d4b43c3d60558283fad"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "other_round_investors": [],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-466fd3473b30b1f3",
-            "quote": "11月17日，Isomorphic Labs宣布完成50亿美元C轮融资，由Greenoaks和Sequoia Capital共同领投，a16z等机构参与，Alphabet继续追加投资。",
-            "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
-            "quote_hash": "02a5740dfa4d9a5162a5e39201c42ab2dbbef5ab0985cb8b040cb88459bc3a1d"
-          },
-          {
-            "source_id": "FISRC-466fd3473b30b1f3",
-            "quote": "11月17日，Isomorphic Labs宣布完成50亿美元C轮融资",
-            "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
-            "quote_hash": "cfda212a94b9a8a88c1e9d8af17aa7b438688e356b71c7e1ff3ff32f987590df"
-          }
-        ],
-        "round_code": "series_c_extension",
-        "round_original": "C轮扩展",
-        "amount_original": "50亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 5000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "50 亿美元"
-        },
-        "total_raised_original": "",
-        "total_raised_normalized": {
-          "currency": "",
-          "value": null,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "undisclosed",
-          "display_zh": ""
-        },
-        "risk_markers": [],
-        "disclosures": [
-          {
-            "event_id": "EV-312f25d8ec1f14b4",
-            "round_original": "C轮扩展",
-            "amount": "50亿美元",
-            "announced_at": "2026-11-18",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-466fd3473b30b1f3",
-                "quote": "11月17日，Isomorphic Labs宣布完成50亿美元C轮融资，由Greenoaks和Sequoia Capital共同领投，a16z等机构参与，Alphabet继续追加投资。",
-                "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
-                "quote_hash": "02a5740dfa4d9a5162a5e39201c42ab2dbbef5ab0985cb8b040cb88459bc3a1d"
-              },
-              {
-                "source_id": "FISRC-466fd3473b30b1f3",
-                "quote": "11月17日，Isomorphic Labs宣布完成50亿美元C轮融资",
-                "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
-                "quote_hash": "cfda212a94b9a8a88c1e9d8af17aa7b438688e356b71c7e1ff3ff32f987590df"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "disclosed"
-      },
-      "products": [
-        {
-          "name": "IsoDDE",
-          "description": "AI药物设计引擎，展示结构预测、结合口袋发现和亲和力预测三类能力，推动AI从理解分子结构走向药物设计。",
-          "target_customers": "",
-          "features": [
-            "结构预测",
-            "结合口袋发现",
-            "亲和力预测"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-466fd3473b30b1f3",
-              "quote": "2026年2月，Isomorphic发布IsoDDE技术报告，重点展示了结构预测、结合口袋发现和亲和力预测三类能力",
-              "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
-              "quote_hash": "0ff65978c9f1c378db83ecb8d2cd60e7d18146d2a854dca0032b878bd86a90a1"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [],
-      "comparisons": [
-        {
-          "name": "Anew Labs（新生实验室）",
-          "product": "AnewDDE、AnewMind及自研药物管线",
-          "scenario": "蛋白质结构预测、分子生成与药物研发决策",
-          "target_customer": "",
-          "funding_summary": "20亿人民币",
-          "core_difference": "Anew Labs从字节跳动分拆，自研药物管线并开源蛋白质结构预测与分子生成模型；在FoldBench基准测试上，AnewFold在蛋白质—小分子和抗体—抗原两类结构预测任务中的成功率均超过IsoDDE。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-466fd3473b30b1f3",
-              "quote": "AnewFold在蛋白质—小分子和抗体—抗原两类结构预测任务中的成功率，均超过IsoDDE。",
-              "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
-              "quote_hash": "18a765a7ef25c3e7149e2307ec4174af133864b9ff682154b010c305c3c82bdc"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "metrics": [
-        {
-          "label": "本轮融资金额",
-          "value": "50亿美元",
-          "observed_at": "2026-11-17",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-466fd3473b30b1f3",
-              "quote": "Isomorphic Labs宣布完成50亿美元C轮融资",
-              "source_content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
-              "quote_hash": "1da0a433e670e980f615808886ebb2d0bf0fae2af99cf20501a1f2bb896b8a6b"
-            }
-          ]
-        }
-      ],
-      "quotes": [],
-      "analysis": {
-        "investment_rationale": [],
-        "capital_judgment": "资本押注的核心变量是AI能否从蛋白质结构预测进一步走向原创药物设计，并最终产出具体药物成果。当前已验证信号包括：Isomorphic Labs完成50亿美元C轮融资，由Greenoaks和Sequoia Capital共同领投，Alphabet继续追加投资；公司已发布IsoDDE技术报告，展示结构预测、结合口袋发现和亲和力预测能力。证据边界在于：来源未披露本轮估值、累计融资额、管线临床进展或收入数据，融资规模本身不构成对药物研发成功率的验证。",
-        "validated_signals": [
-          "Isomorphic Labs完成50亿美元C轮融资",
-          "Greenoaks和Sequoia Capital共同领投，a16z等机构参与，Alphabet继续追加投资",
-          "2026年2月发布IsoDDE技术报告，展示结构预测、结合口袋发现和亲和力预测三类能力"
-        ],
-        "risks": [
-          "AI制药研发周期长、不确定性高，来源未披露Isomorphic Labs自研管线的临床阶段与成功率",
-          "来源未披露本轮估值与累计融资额，无法判断融资规模对应的估值水平",
-          "全球AI制药赛道竞争日趋激烈，来源提及Anew Labs等竞争者"
-        ],
-        "related_direction_id": "",
-        "taxonomy_version": "TAG-V4.1",
-        "product_form_id": "ai_infrastructure_software",
-        "market_category_id": "industry_applications",
-        "market_subcategory_id": "healthcare_life_sciences",
-        "market_application_id": "",
-        "use_case_ids": [
-          "research_discovery"
-        ],
-        "industry_ids": [
-          "healthcare_life_sciences"
-        ],
-        "target_user_ids": [
-          "researcher"
-        ],
-        "sector": "AI药物发现与药物设计",
-        "investment_thesis": {
-          "statement": "资本押注的核心变量是AI能否从蛋白质结构预测进一步走向原创药物设计，并最终产出具体药物成果。当前已验证信号包括：Isomorphic Labs完成50亿美元C轮融资，由Greenoaks和Sequoia Capital共同领投，Alphabet继续追加投资；公司已发布IsoDDE技术报告，展示结构预测、结合口袋发现和亲和力预测能力。证据边界在于：来源未披露本轮估值、累计融资额、管线临床进展或收入数据，融资规模本身不构成对药物研发成功率的验证。",
-          "evidence_signals": [
-            "Isomorphic Labs完成50亿美元C轮融资",
-            "Greenoaks和Sequoia Capital共同领投，a16z等机构参与，Alphabet继续追加投资",
-            "2026年2月发布IsoDDE技术报告，展示结构预测、结合口袋发现和亲和力预测三类能力"
-          ],
-          "risks": [
-            "AI制药研发周期长、不确定性高，来源未披露Isomorphic Labs自研管线的临床阶段与成功率",
-            "来源未披露本轮估值与累计融资额，无法判断融资规模对应的估值水平",
-            "全球AI制药赛道竞争日趋激烈，来源提及Anew Labs等竞争者"
-          ],
-          "institutional_rationale_status": "not_disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "IsoDDE",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Demis Hassabis",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Greenoaks",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Sequoia Capital",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "a16z",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Alphabet",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Anew Labs（新生实验室）",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [],
-      "research_sources": [
-        {
-          "source_id": "FISRC-466fd3473b30b1f3",
-          "source_url": "https://news.pedaily.cn/202611/572062.shtml",
-          "title": "谷歌AI制药完成50亿美元融资：大厂AI制药进入军备竞赛阶段",
-          "publisher": "news.pedaily.cn",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-11-19T00:26:00.254Z",
-          "content_hash": "1bf4f1d11e23dc1ccac19b58f8c70a37dced4712f55021c404377d4a946ff4c3",
-          "source_artifact_id": "SA-c761a33facdd0817",
-          "raw_id": "RAW-84fa214da11bfa46"
-        },
-        {
-          "source_id": "FISRC-24892cd5735a05d5",
-          "source_url": "https://blog.google/alphabet/investor-presentation-june-2026/",
-          "title": "Alphabet investor presentation: June 2026",
-          "publisher": "blog.google",
-          "source_class": "official_candidate",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-19T01:14:34.793Z",
-          "content_hash": "25785577a035555e",
-          "source_artifact_id": null,
-          "raw_id": null
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-flash",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-11-19T01:14:49.592Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-11-19T01:14:49.592Z",
-      "customer_research": {
-        "status": "no_verified_customer_found",
-        "verified_customer_count": 0,
-        "searched_source_count": 2
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "IsoDDE"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "Demis Hassabis"
-          ]
-        }
-      },
-      "source_event_ids": [
-        "EV-312f25d8ec1f14b4"
-      ],
-      "aggregation": {
-        "key": "EN-bbdefa2950f49882|series_c_extension",
-        "event_count": 1,
-        "strategy": "company_and_normalized_round"
-      }
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-be4ad2126ac19a87",
-      "triggered_by_event_id": "EV-fdda8197c66ebabf",
-      "as_of_date": "2026-11-19",
-      "company": {
-        "entity_id": "EN-865ff7d9f6c4e6a2",
-        "name": "乎灵科技（北京）有限公司",
-        "full_name": "乎灵科技（北京）有限公司",
-        "website": "",
-        "summary": "成立于2026年的智能可穿戴公司，品牌名“乎零Huling”，由原美团门票度假和交通事业部总经理刘燕翔与原飞书国际化运营负责人Garin联合创立，首款产品为乎零AI语音健康戒指，以AI语音记录为核心切入点，面向高认知人群打造个人AI随身助手。",
-        "headquarters": "北京",
-        "founders": [
-          {
-            "name": "刘燕翔",
-            "role": "创始人、CEO",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-cbad7b26722521c1",
-                "quote": "公司由原美团门票度假和交通事业部总经理刘燕翔、原飞书国际化运营负责人Garin联合创立",
-                "source_content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
-                "quote_hash": "7a22c03d4922d628e684778d762155afc9472ba22409b3e13e24bd03ee165a41"
-              },
-              {
-                "source_id": "FISRC-cbad7b26722521c1",
-                "quote": "刘燕翔全面出任公司CEO，统筹负责公司软硬件整体研发落地、品牌市场推广及资本战略布局",
-                "source_content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
-                "quote_hash": "cf1eb8ab9b9c8a1639f1ce847c38721936a58dd0f828d0e289fe7a452d4c57f0"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Garin",
-            "role": "联合创始人，负责产品与算法",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-cbad7b26722521c1",
-                "quote": "原飞书国际化运营负责人Garin联合创立",
-                "source_content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
-                "quote_hash": "f8d76e76a6613929838d9780301b6e9466999acebb824abb0832bc5abedc88aa"
-              },
-              {
-                "source_id": "FISRC-ca0ce3116aabdc26",
-                "quote": "刘燕翔任CEO，Garin负责产品与算法",
-                "source_content_hash": "b668dd234de0e77e",
-                "quote_hash": "e492712b4ce801a000fd04eccd8acbe33564b0d7aaed3a927d6d57e414fe2678"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-cbad7b26722521c1",
-            "quote": "乎灵科技（北京）有限公司（品牌名：乎零Huling）成立于2026年",
-            "source_content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
-            "quote_hash": "ece425fbe0cfcfd4aafd8d3c5e1b85c1789115714ac3773594a4bf5dae6df5a7"
-          },
-          {
-            "source_id": "FISRC-6851c097f817c307",
-            "quote": "乎灵科技成立于2026年4月28日，是一家专注于AI语音健康戒指研发的高科技企业",
-            "source_content_hash": "7b74ef2e11e01ae5",
-            "quote_hash": "6222854f4d0f074b71d4935b1f4371676c7a4d3e0ed00258da8d8a779b771471"
-          }
-        ],
-        "application_entity_id": "EN-865ff7d9f6c4e6a2",
-        "canonical_entity_consistent": false
-      },
-      "financing": {
-        "round": "多轮融资",
-        "amount": "千万级人民币",
-        "total_raised": "",
-        "announced_at": "2026-11-17",
-        "investor_disclosure_status": "not_disclosed",
-        "investors": [],
-        "other_round_investors": [],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-cbad7b26722521c1",
-            "quote": "投资界（ID：pedaily2012）11月17日消息，乎灵科技（北京）有限公司（品牌名：乎零Huling）对外官宣已完成千万级人民币种子轮融资，天使轮融资工作即将启动。",
-            "source_content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
-            "quote_hash": "8f6049ecad5243eae5cc32239c4a629c9a1226476062458b26d31e6e147711cf"
-          },
-          {
-            "source_id": "FISRC-cbad7b26722521c1",
-            "quote": "对外官宣已完成千万级人民币种子轮融资，天使轮融资工作即将启动",
-            "source_content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
-            "quote_hash": "de4da050bdc56bba6cf4c17033e29346362f4b09eef8f21c3ba43bb93147c5e7"
-          },
-          {
-            "source_id": "FISRC-ca0ce3116aabdc26",
-            "quote": "完成千万级人民币种子轮融资，具体投资方未披露，天使轮融资即将启动",
-            "source_content_hash": "b668dd234de0e77e",
-            "quote_hash": "c42b5a80f0a34df007e1acd2609adb8a74bad016ba516cbca871fddb49105c5c"
-          }
-        ],
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
-        "amount_original": "千万级人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 10000000,
-          "max_value": 100000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "1000 万元–1 亿元"
-        },
-        "total_raised_original": "",
-        "total_raised_normalized": {
-          "currency": "",
-          "value": null,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "undisclosed",
-          "display_zh": ""
-        },
-        "risk_markers": [
-          "investors_missing"
-        ],
-        "disclosures": [
-          {
-            "event_id": "EV-fdda8197c66ebabf",
-            "round_original": "多轮融资",
-            "amount": "千万级人民币",
-            "announced_at": "2026-11-17",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-cbad7b26722521c1",
-                "quote": "投资界（ID：pedaily2012）11月17日消息，乎灵科技（北京）有限公司（品牌名：乎零Huling）对外官宣已完成千万级人民币种子轮融资，天使轮融资工作即将启动。",
-                "source_content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
-                "quote_hash": "8f6049ecad5243eae5cc32239c4a629c9a1226476062458b26d31e6e147711cf"
-              },
-              {
-                "source_id": "FISRC-cbad7b26722521c1",
-                "quote": "对外官宣已完成千万级人民币种子轮融资，天使轮融资工作即将启动",
-                "source_content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
-                "quote_hash": "de4da050bdc56bba6cf4c17033e29346362f4b09eef8f21c3ba43bb93147c5e7"
-              },
-              {
-                "source_id": "FISRC-ca0ce3116aabdc26",
-                "quote": "完成千万级人民币种子轮融资，具体投资方未披露，天使轮融资即将启动",
-                "source_content_hash": "b668dd234de0e77e",
-                "quote_hash": "c42b5a80f0a34df007e1acd2609adb8a74bad016ba516cbca871fddb49105c5c"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "partially_disclosed"
-      },
-      "products": [
-        {
-          "name": "乎零AI语音健康戒指",
-          "description": "搭载阿波罗3芯片的智能戒指，整机重量不足5克，支持双击实体按键快速录音，自动完成语音实时转写、待办事项智能提取与日程自动识别梳理，官方标准续航约7天，搭配专属电池仓可支持两三周无需插线充电。",
-          "target_customers": "管理者、知识工作者、自媒体从业者等高认知人群",
-          "features": [
-            "双击实体按键快速录音",
-            "语音实时转写",
-            "待办事项智能提取",
-            "日程自动识别梳理",
-            "华测IPX8级防水",
-            "整机重量不足5克"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cbad7b26722521c1",
-              "quote": "产品支持双击实体按键快速录音，自动完成语音实时转写、待办事项智能提取、日程自动识别梳理",
-              "source_content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
-              "quote_hash": "6acf30cd48cf27a265bdec2db626337c05c1bf0da145107af7b9a4d05f000291"
-            },
-            {
-              "source_id": "FISRC-cbad7b26722521c1",
-              "quote": "乎零AI语音健康戒指搭载阿波罗3芯片，极致轻量化设计让整机重量不足5克",
-              "source_content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
-              "quote_hash": "96037c7a992ea19ed5956655276499e0221d2e532e0aebad2c4a4da1b38e57db"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [],
-      "comparisons": [
-        {
-          "name": "Oura",
-          "product": "海外高端智能戒指",
-          "scenario": "智能戒指健康监测",
-          "target_customer": "",
-          "funding_summary": "",
-          "core_difference": "乎零以AI语音记录为核心切入点，定价介于大众平价穿戴设备与Oura之间，主打高性价比与高阶AI体验；来源未披露Oura的具体功能与融资信息。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cbad7b26722521c1",
-              "quote": "产品定价精准卡位市场空白，介于大众平价穿戴设备与海外高端智能戒指Oura之间，主打高性价比与高阶AI体验",
-              "source_content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
-              "quote_hash": "e75e6cd9436c50a9594c04b763960f5c00dcda2df04503014fa9fd0460369f24"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "metrics": [
-        {
-          "label": "本轮融资金额",
-          "value": "千万级人民币",
-          "observed_at": "2026-11-17",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cbad7b26722521c1",
-              "quote": "已完成千万级人民币种子轮融资",
-              "source_content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
-              "quote_hash": "a1d4891a27e6b568260a3a04fd424d17286375585d647882743d4d690a4a1498"
-            }
-          ]
-        },
-        {
-          "label": "整机重量",
-          "value": "不足5克",
-          "observed_at": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cbad7b26722521c1",
-              "quote": "整机重量不足5克",
-              "source_content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
-              "quote_hash": "497ce2a1c9d6bbfeb89aa35787f0e24fad6889590d6ded9cc9d15e21bc5bc66e"
-            }
-          ]
-        },
-        {
-          "label": "官方标准续航",
-          "value": "7天",
-          "observed_at": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cbad7b26722521c1",
-              "quote": "官方标准续航可达7天",
-              "source_content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
-              "quote_hash": "9409623667672c45acd0ba51479ca75640260e55049dd301bf608b14be201275"
-            }
-          ]
-        },
-        {
-          "label": "防水等级",
-          "value": "华测IPX8级",
-          "observed_at": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cbad7b26722521c1",
-              "quote": "产品通过华测IPX8级专业防水认证",
-              "source_content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
-              "quote_hash": "819271a0555774170da387a9166a0d3444ed8ec353c609a1c5400ac12be3eb85"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "刘燕翔",
-          "quote": "当前智能戒指行业普遍聚焦健康监测精度比拼，单一的数据监测功能极易给用户带来健康焦虑，无法真正解决用户核心痛点、实现健康改善。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cbad7b26722521c1",
-              "quote": "当前智能戒指行业普遍聚焦健康监测精度比拼，单一的数据监测功能极易给用户带来健康焦虑，无法真正解决用户核心痛点、实现健康改善。",
-              "source_content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
-              "quote_hash": "c076f9c21e70f998ef86bebab1ce2f70ddea8022890af4fc5e39f698f43cba61"
-            }
-          ]
-        },
-        {
-          "speaker": "刘燕翔",
-          "quote": "乎零科技不止于打造单一智能硬件产品，未来将以AI戒指为核心随身入口，持续迭代技术与产品体验，逐步演进为轻量化、全天候的Personal Agent个人AI助手",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cbad7b26722521c1",
-              "quote": "乎零科技不止于打造单一智能硬件产品，未来将以AI戒指为核心随身入口，持续迭代技术与产品体验，逐步演进为轻量化、全天候的Personal Agent个人AI助手",
-              "source_content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
-              "quote_hash": "88f1fe63b1c4196e15948f11b32060bc60c34fb3894e248003e8094a4bc975de"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [],
-        "capital_judgment": "本轮为千万级人民币种子轮，来源未披露具体投资方，无法判断资本方押注的核心变量；可验证信号限于产品参数与发售节奏：阿波罗3芯片、不足5克、IPX8防水、约7天续航，以及11月下旬内测、11月底预售、12月上旬发货且大货生产筹备完成。融资用途与估值均未披露，资本判断的证据边界在于尚无销量、收入或用户数据，产品差异化能否转化为付费需求仍待验证。",
-        "validated_signals": [
-          "公司已完成千万级人民币种子轮融资",
-          "首款产品乎零AI语音健康戒指已正式发布",
-          "产品大货生产筹备工作已全部完成，备货充足",
-          "官方公布11月下旬内测、11月底预售、12月上旬发货的节奏"
-        ],
-        "risks": [
-          "来源未披露本轮具体投资方，资本背书无法核实",
-          "产品尚未发货，销量、收入与用户留存均无数据",
-          "智能戒指行业竞争激烈，新品牌获客与市场拓展存在压力",
-          "定价介于平价穿戴设备与Oura之间，价格带接受度待市场验证",
-          "长期Personal Agent定位属于未来规划，尚未形成已验证业务",
-          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
-        ],
-        "related_direction_id": "",
-        "taxonomy_version": "TAG-V4.1",
-        "product_form_id": "ai_device",
-        "market_category_id": "enterprise_applications",
-        "market_subcategory_id": "productivity_enterprise_workflows",
-        "market_application_id": "",
-        "use_case_ids": [
-          "productivity_enterprise_workflows",
-          "knowledge_search"
-        ],
-        "industry_ids": [],
-        "target_user_ids": [
-          "business_user"
-        ],
-        "sector": "AI语音记录与健康监测智能戒指",
-        "investment_thesis": {
-          "statement": "本轮为千万级人民币种子轮，来源未披露具体投资方，无法判断资本方押注的核心变量；可验证信号限于产品参数与发售节奏：阿波罗3芯片、不足5克、IPX8防水、约7天续航，以及11月下旬内测、11月底预售、12月上旬发货且大货生产筹备完成。融资用途与估值均未披露，资本判断的证据边界在于尚无销量、收入或用户数据，产品差异化能否转化为付费需求仍待验证。",
-          "evidence_signals": [
-            "公司已完成千万级人民币种子轮融资",
-            "首款产品乎零AI语音健康戒指已正式发布",
-            "产品大货生产筹备工作已全部完成，备货充足",
-            "官方公布11月下旬内测、11月底预售、12月上旬发货的节奏"
-          ],
-          "risks": [
-            "来源未披露本轮具体投资方，资本背书无法核实",
-            "产品尚未发货，销量、收入与用户留存均无数据",
-            "智能戒指行业竞争激烈，新品牌获客与市场拓展存在压力",
-            "定价介于平价穿戴设备与Oura之间，价格带接受度待市场验证",
-            "长期Personal Agent定位属于未来规划，尚未形成已验证业务"
-          ],
-          "institutional_rationale_status": "not_disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "乎零AI语音健康戒指",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "刘燕翔",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Garin",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Oura",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [],
-      "research_sources": [
-        {
-          "source_id": "FISRC-cbad7b26722521c1",
-          "source_url": "https://news.pedaily.cn/202611/571958.shtml",
-          "title": "乎灵科技获千万级种子轮融资，发布首款产品「乎零AI语音健康戒指」",
-          "publisher": "news.pedaily.cn",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-11-19T00:25:59.632Z",
-          "content_hash": "d779604993d4f6009b42f5b0f536110c739e6575ceb6d1bffdbca90e54217a7f",
-          "source_artifact_id": "SA-9601b6aa23df7ff0",
-          "raw_id": "RAW-ce9f543a66ee00ab"
-        },
-        {
-          "source_id": "FISRC-ca0ce3116aabdc26",
-          "source_url": "https://feng.ifeng.com/c/8y84ibFj50a",
-          "title": "乎灵科技获千万级种子轮融资 聚焦AI语音健康戒指_大风号",
-          "publisher": "feng.ifeng.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-19T01:14:07.791Z",
-          "content_hash": "b668dd234de0e77e",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-6851c097f817c307",
-          "source_url": "https://m.sohu.com/a/1102953804_115035?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-          "title": "乎灵科技完成种子轮融资",
-          "publisher": "m.sohu.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-19T01:13:39.322Z",
-          "content_hash": "7b74ef2e11e01ae5",
-          "source_artifact_id": null,
-          "raw_id": null
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-flash",
-        "attempts": 2,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-11-19T01:14:38.735Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-11-19T01:14:38.735Z",
-      "customer_research": {
-        "status": "no_verified_customer_found",
-        "verified_customer_count": 0,
-        "searched_source_count": 3
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "乎零AI语音健康戒指"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 2,
-          "unresolved_names": [
-            "Garin",
-            "刘燕翔"
-          ]
-        }
-      },
-      "source_event_ids": [
-        "EV-fdda8197c66ebabf"
-      ],
-      "aggregation": {
-        "key": "EN-865ff7d9f6c4e6a2|multi_round",
-        "event_count": 1,
-        "strategy": "company_and_normalized_round"
-      }
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-cf665c103f67ffaa",
       "triggered_by_event_id": "EV-5be10c6214adaf19",
       "as_of_date": "2026-11-19",
@@ -8184,7 +6854,8 @@
             "具体投资方未披露，无法核验资本背书与投资条款",
             "累计融资额、估值及预售/收入数据均未披露，商业化验证不足",
             "产品尚处内测与预售前阶段，实际语音识别效果与用户留存待验证",
-            "智能戒指赛道已有健康监测类产品，差异化定位能否转化为销量待观察"
+            "智能戒指赛道已有健康监测类产品，差异化定位能否转化为销量待观察",
+            "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
           ],
           "institutional_rationale_status": "not_disclosed"
         }
@@ -8372,7 +7043,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-272eb63ab316040f",
@@ -8381,7 +7052,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-0d27ea6892225510",
@@ -8390,7 +7061,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-86165eebaf4622fd",
@@ -8399,7 +7070,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-fa34f7342de666dd",
@@ -8408,7 +7079,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-e4e1d8cd826a402a",
@@ -8417,7 +7088,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-1df5624821fce3f9",
@@ -8426,7 +7097,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-096d98d489abb245",
@@ -8439,7 +7110,7 @@
     },
     {
       "event_id": "EV-5be10c6214adaf19",
-      "company_name": "乎灵科技",
+      "company_name": "乎灵科技（北京）有限公司",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -8572,7 +7243,7 @@
           "reason": "company_not_in_original"
         }
       ],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-a691420f309b3d29",
@@ -8584,219 +7255,8 @@
       "updated_at": ""
     },
     {
-      "event_id": "EV-fdda8197c66ebabf",
-      "company_name": "乎灵科技",
-      "status": "auto_published",
-      "problems": [],
-      "queries": [
-        "\"乎灵科技\" 2026 融资 投资方",
-        "\"乎灵科技\" 官网 产品 服务",
-        "\"乎灵科技\" 投资机构 融资用途",
-        "\"乎灵科技\" 客户 创始人 总部"
-      ],
-      "attempts": [
-        {
-          "provider": "anysearch",
-          "query": "\"乎灵科技\" 2026 融资 投资方",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "planner",
-          "query": "\"乎灵科技\" 千万级人民币 融资 领投 跟投",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"乎灵科技\" 官网 产品 服务",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "original",
-          "url": "https://www.iyiou.com/consumer-life",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "original",
-          "url": "https://www.pedaily.cn/first/",
-          "status": "excluded",
-          "reason": "company_not_in_original"
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"乎灵科技\" 投资机构 融资用途",
-          "status": "completed",
-          "count": 7
-        },
-        {
-          "provider": "tavily",
-          "query": "\"乎灵科技\" 投资机构 融资用途",
-          "status": "failed",
-          "http_status": 432,
-          "retry_after": ""
-        },
-        {
-          "provider": "exa",
-          "query": "\"乎灵科技\" 投资机构 融资用途",
-          "status": "quota_exhausted",
-          "http_status": 402,
-          "retry_after": ""
-        },
-        {
-          "provider": "bing_rss",
-          "query": "\"乎灵科技\" 投资机构 融资用途",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "original",
-          "url": "https://finance.ifeng.com/c/8vqcfZ8tATX",
-          "status": "excluded",
-          "reason": "company_not_in_original"
-        },
-        {
-          "provider": "original",
-          "url": "http://news.10jqka.com.cn/today_list/index_20.shtml",
-          "status": "excluded",
-          "reason": "company_not_in_original"
-        },
-        {
-          "provider": "original",
-          "url": "http://goodsfu.10jqka.com.cn/xhsc_list/",
-          "status": "excluded",
-          "reason": "company_not_in_original"
-        },
-        {
-          "provider": "original",
-          "url": "https://i.ifeng.com/c/8r8Q2Y1p9SV",
-          "status": "excluded",
-          "reason": "company_not_in_original"
-        },
-        {
-          "provider": "original",
-          "url": "https://finance.ifeng.com/c/8t6XZehU7jX",
-          "status": "excluded",
-          "reason": "company_not_in_original"
-        },
-        {
-          "provider": "original",
-          "url": "https://finance.ifeng.com/c/8vqcgBPc8lR",
-          "status": "excluded",
-          "reason": "company_not_in_original"
-        },
-        {
-          "provider": "original",
-          "url": "https://finance.ifeng.com/c/8t4DYs3Ow2E",
-          "status": "excluded",
-          "reason": "company_not_in_original"
-        },
-        {
-          "provider": "planner",
-          "query": "\"乎灵科技\" 2026 本轮融资 公告",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"乎灵科技\" 客户 创始人 总部",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "original",
-          "url": "https://finance.ifeng.com/c/8r7fLQf7xh0",
-          "status": "excluded",
-          "reason": "company_not_in_original"
-        },
-        {
-          "provider": "original",
-          "url": "https://www.pai.com.cn/news?_rsc=3rcxi",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "original",
-          "url": "https://feng.ifeng.com/c/8y6Qv38x2cF",
-          "status": "excluded",
-          "reason": "company_not_in_original"
-        },
-        {
-          "provider": "original",
-          "url": "https://www.iyiou.com/data/202506161100798",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        }
-      ],
-      "updated_at": "2026-11-19T01:18:17.591Z"
-    },
-    {
-      "event_id": "EV-312f25d8ec1f14b4",
-      "company_name": "Google",
-      "status": "auto_published",
-      "problems": [],
-      "queries": [
-        "\"Google\" 2026 funding round investors",
-        "\"Google\" official product customers",
-        "\"Google\" \"why we invested\""
-      ],
-      "attempts": [
-        {
-          "provider": "anysearch",
-          "query": "\"Google\" 2026 funding round investors",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "planner",
-          "query": "\"谷歌\" 50亿美元 funding announcement",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"Google\" official product customers",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"Google\" \"why we invested\"",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "original",
-          "url": "https://www.youtube.com/user/GoogleVentures/videos",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "original",
-          "url": "https://www.youtube.com/watch?v=WdAaNryK8sY",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "planner",
-          "query": "\"谷歌\" 2026 raises led by",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        },
-        {
-          "provider": "planner",
-          "query": "\"Google\" founders headquarters product",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        }
-      ],
-      "updated_at": "2026-11-19T01:18:17.591Z"
-    },
-    {
       "event_id": "EV-dc8755b16a5344ed",
-      "company_name": "观壹智能",
+      "company_name": "上海观壹智能科技有限公司",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -8885,7 +7345,7 @@
           "reason": "original_capture_failed"
         }
       ],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-5c7525642d1189d6",
@@ -8999,7 +7459,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-12f5404b5c1882ec",
@@ -9008,7 +7468,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-1d425fbf0768f5a9",
@@ -9017,7 +7477,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-8f4b818b8746d539",
@@ -9073,7 +7533,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-2e761601c7f04a46",
@@ -9178,7 +7638,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-4fed1a2667fd7af4",
@@ -9187,7 +7647,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-123b3ef83e8306a3",
@@ -9196,7 +7656,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-03e34979859b12d9",
@@ -9205,7 +7665,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-bead3c949a623488",
@@ -9302,7 +7762,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-788e4fe44885fd36",
@@ -9409,75 +7869,7 @@
           "count": 8
         }
       ],
-      "updated_at": "2026-11-19T01:18:17.591Z"
-    },
-    {
-      "event_id": "EV-79984024e8768a96",
-      "company_name": "Sequoia",
-      "status": "auto_published",
-      "problems": [],
-      "queries": [
-        "\"Sequoia\" 2026 funding round investors",
-        "\"Sequoia\" official product customers",
-        "\"Sequoia\" \"why we invested\""
-      ],
-      "attempts": [
-        {
-          "provider": "anysearch",
-          "query": "\"Sequoia\" 2026 funding round investors",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "original",
-          "url": "https://startupfundraising.com/research/firm/sequoia-capital/portfolio-co-investors-2026",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "planner",
-          "query": "\"Sequoia\" $5b funding announcement",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"Sequoia\" official product customers",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"Sequoia\" \"why we invested\"",
-          "status": "completed",
-          "count": 8
-        },
-        {
-          "provider": "original",
-          "url": "https://medium.com/dmg-ventures/sequoia-eat-your-heart-out-why-we-invested-in-a-real-urban-legend-491ace0ae686",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "original",
-          "url": "https://www.youtube.com/watch?v=aGoUu5VLvLY",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "planner",
-          "query": "\"Sequoia\" 2026 raises led by",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        },
-        {
-          "provider": "planner",
-          "query": "\"Sequoia\" founders headquarters product",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        }
-      ],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-88837f7f7d187d2b",
@@ -9488,7 +7880,7 @@
       ],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-11-19T01:18:17.591Z",
+      "updated_at": "2026-11-19T06:26:17.885Z",
       "deferral": {
         "version": "FINANCING-RESEARCH-DEFERRAL-1",
         "event_id": "EV-88837f7f7d187d2b",
@@ -9574,7 +7966,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-1f29782fd30ac7e4",
@@ -9631,7 +8023,7 @@
           "count": 8
         }
       ],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-fef71bd1ef83682a",
@@ -9644,7 +8036,7 @@
     },
     {
       "event_id": "EV-ca34f51e33c81a68",
-      "company_name": "Carlos Guestrin",
+      "company_name": "Noeri",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -9690,7 +8082,7 @@
           "reason": "accepted_originals_cover_gap"
         }
       ],
-      "updated_at": "2026-11-19T01:18:17.591Z"
+      "updated_at": "2026-11-19T06:26:17.885Z"
     },
     {
       "event_id": "EV-c4baf05b2acd2a2e",

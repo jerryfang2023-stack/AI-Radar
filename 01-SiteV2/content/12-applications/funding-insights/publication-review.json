@@ -1,6 +1,6 @@
 {
   "version": "FINANCING-PUBLICATION-REVIEW-1",
-  "reviewed_at": "2026-11-18T07:56:43.595Z",
+  "reviewed_at": "2026-11-19T06:05:11.622Z",
   "market_corrections": [
     {
       "event_id": "EV-65154e5eb49c218b",
@@ -859,6 +859,58 @@
       "company_name": "曦选创智",
       "corroborating_source_id": "FISRC-db9dcc33fee3847e",
       "next_action": "retain_scope_exclusion; reconsider only if primary business changes"
+    },
+    {
+      "event_id": "EV-5c7525642d1189d6",
+      "status": "pending",
+      "source_url": "https://news.pedaily.cn/202611/572047.shtml",
+      "source_content_hash": "57d7937995f280e10deb39cd026ca612364303409f3885a4bb7219cf0f5c3c68",
+      "quote": "聚焦以具身智能为主的物理AI应用领域",
+      "quote_hash": "663084d4a8674e7618f445752071829894e0b1d1b0ceb08b9d235a418b05d09c",
+      "reason": "当前融资主营交付是具身智能物理AI数据基座，资金明确用于具身算法与特殊场景机器人研发，属于具身智能主营排除范围。",
+      "reviewed_by": "codex_source_review",
+      "reviewed_at": "2026-11-19T06:05:11.622Z",
+      "company_name": "柏川数据",
+      "next_action": "retain_scope_exclusion"
+    },
+    {
+      "event_id": "EV-1bfa49b4ab9e1ac2",
+      "status": "pending",
+      "source_url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+      "source_content_hash": "27c86290a3f380a965792a6fbaa0c8872969ff2305ea554b0e335ed9e1ec161b",
+      "quote": "real-world data to train robots",
+      "quote_hash": "1fa2e52996aef4a0c89b74b7b01a4007abf9fe6430c57eb152dc7f484d454793",
+      "reason": "本轮主要交付物理AI/机器人训练数据和专用采集硬件，尚不足以按一般模型或软件服务机器人客户的例外准入；保留原文和研究为范围待核验，不作本批准入。",
+      "reviewed_by": "codex_source_review",
+      "reviewed_at": "2026-11-19T06:05:11.622Z",
+      "company_name": "Humyn Labs",
+      "next_action": "retain_for_bound_source_review"
+    },
+    {
+      "event_id": "EV-2e761601c7f04a46",
+      "status": "pending",
+      "source_url": "https://www.eu-startups.com/2026/11/bulgarias-first-unicorn-payhawk-raises-e255-14-million-at-e1-82-billion-valuation-to-build-a-global-finance-os-for-the-ai-era/",
+      "source_content_hash": "2ecca16bf315a5aa1ad4badf04ea4c8c663d2918e6d41290b9c98f841b248471",
+      "quote": "Payhawk",
+      "quote_hash": "bed0d3c16010139cbe19cb537dffb0849fe404e01a0479e2655442a41dd9a708",
+      "reason": "欧元候选与同日美元C轮公告重叠且主体编号未对齐；未取得严格跨币种同轮对应原文绑定前不合并、不另计第二笔。保留两种报道及研究，美元公告单独核验准入。",
+      "reviewed_by": "codex_source_review",
+      "reviewed_at": "2026-11-19T06:05:11.622Z",
+      "company_name": "Payhawk",
+      "next_action": "retain_for_bound_source_review"
+    },
+    {
+      "event_id": "EV-5be10c6214adaf19",
+      "status": "pending",
+      "source_url": "https://feng.ifeng.com/c/8y84ibFj50a",
+      "source_content_hash": "b668dd234de0e77e562a4ba1d30b9e16c4e1cac5ed3a180f735022bb48bcc328",
+      "quote": "完成千万级人民币种子轮融资",
+      "quote_hash": "7f5e174f7b2093f2fbc03ac3fb5825d608adfa4b002d06f3065fbabe5d635b8c",
+      "reviewed_by": "codex_source_review",
+      "reviewed_at": "2026-11-19T06:34:28.249Z",
+      "company_name": "乎灵科技",
+      "reason": "另一转载把已完成种子轮与拟启动天使轮混成多轮，且主体编号未对齐。已发布2026-11-17种子轮完整保留；本候选暂缓，不能因同名直接批准跨实体合并或把计划轮次视为完成。",
+      "next_action": "retain_duplicate_and_identity_review"
     }
   ],
   "resolutions": [
