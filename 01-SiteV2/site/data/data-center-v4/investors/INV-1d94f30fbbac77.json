@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-19",
-    "currentDate": "2026-11-19",
-    "eventCount": 4503,
+    "latestDataDate": "2026-11-20",
+    "currentDate": "2026-11-20",
+    "eventCount": 4516,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-04",
-    "latest_disclosed_at": "2026-06-30",
+    "latest_disclosed_at": "2026-11-18",
     "role_counts": {
       "co_lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "multi_round",
+      "series_a",
       "series_b"
     ],
     "portfolio_companies": [
@@ -86,12 +87,57 @@
         "name": "Etched"
       },
       {
+        "entity_id": "EN-2ebfb37b3d52054c",
+        "canonical_entity_id": "",
+        "name": "Humyn Labs"
+      },
+      {
         "entity_id": "EN-0995103010d39563",
         "canonical_entity_id": "",
         "name": "Positron AI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-29b5a567b8d2516e",
+        "funding_insight_id": "FI-88161972c1280eb5",
+        "event_ids": [
+          "EV-1bfa49b4ab9e1ac2"
+        ],
+        "company_entity_id": "EN-2ebfb37b3d52054c",
+        "company_canonical_entity_id": "",
+        "company_name": "Humyn Labs",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$47 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 47000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4700 万美元"
+        },
+        "announced_at": "2026-11-18",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7910f56b348bc37f",
+            "source_url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+            "source_title": "印度 Humyn Labs 融资 4700 万美元，为美国机器人公司提供所需数据",
+            "source_content_hash": "a19d0a3921c300396d657136f9a9e5eafdf5c6cf83b5eea2bf3eb6f76515c1ef",
+            "quote": "The funding comprises $26 million in equity led by Accel, with participation from Prosus Ventures, BeeGlobal, Bajaj Finance’s Finserv Intelligence and Bajaj Alts AI Opportunities Fund, Dallas Venture Capital, Lighthouse Canton, and Jump Trading.",
+            "quote_hash": "31084b03eba3b4e14dc3675656b585f03b5a5a8c8dce3ecd6143bbc2a79bba94"
+          }
+        ]
+      },
       {
         "activity_id": "IA-0c2b2811ff1925ce",
         "funding_insight_id": "FI-d24e79349c1e9713",
@@ -176,6 +222,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-7910f56b348bc37f",
+        "source_url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+        "source_title": "印度 Humyn Labs 融资 4700 万美元，为美国机器人公司提供所需数据",
+        "source_content_hash": "a19d0a3921c300396d657136f9a9e5eafdf5c6cf83b5eea2bf3eb6f76515c1ef",
+        "quote": "The funding comprises $26 million in equity led by Accel, with participation from Prosus Ventures, BeeGlobal, Bajaj Finance’s Finserv Intelligence and Bajaj Alts AI Opportunities Fund, Dallas Venture Capital, Lighthouse Canton, and Jump Trading.",
+        "quote_hash": "31084b03eba3b4e14dc3675656b585f03b5a5a8c8dce3ecd6143bbc2a79bba94"
+      },
+      {
         "source_id": "FISRC-41379635293a6bc8",
         "source_url": "https://www.mitsloanme.com/article/nvidia-rival-etched-steps-out-of-stealth-with-5b-valuation/",
         "source_title": "Nvidia Rival Etched Steps Out of Stealth With $5B Valuation - MIT Sloan Management Review Middle East",
@@ -209,6 +263,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Humyn Labs · A轮 · 2026-11-18 · 本轮参投 · $47 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7910f56b348bc37f"
+        },
+        {
           "description": "融资来源记录：Etched · 多轮融资 · 2026-06-30 · 本轮参投 · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-41379635293a6bc8"
         },
@@ -230,6 +288,14 @@
           "source_content_hash": "37f15ccfcbdc20f3b34e9505c5aa084f753c29da2451180c8bcbc710826c3e62",
           "quote": "Jump Trading is a global trading firm where smart people build remarkable things.",
           "quote_hash": "f09203723431aca13e964ae0a26b64dc4ecadfdc24fb3031094e4c594e941206"
+        },
+        {
+          "source_id": "FISRC-7910f56b348bc37f",
+          "source_url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+          "source_title": "印度 Humyn Labs 融资 4700 万美元，为美国机器人公司提供所需数据",
+          "source_content_hash": "a19d0a3921c300396d657136f9a9e5eafdf5c6cf83b5eea2bf3eb6f76515c1ef",
+          "quote": "The funding comprises $26 million in equity led by Accel, with participation from Prosus Ventures, BeeGlobal, Bajaj Finance’s Finserv Intelligence and Bajaj Alts AI Opportunities Fund, Dallas Venture Capital, Lighthouse Canton, and Jump Trading.",
+          "quote_hash": "31084b03eba3b4e14dc3675656b585f03b5a5a8c8dce3ecd6143bbc2a79bba94"
         },
         {
           "source_id": "FISRC-41379635293a6bc8",

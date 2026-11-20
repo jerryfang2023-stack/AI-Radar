@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-19",
-    "currentDate": "2026-11-19",
-    "eventCount": 4503,
+    "latestDataDate": "2026-11-20",
+    "currentDate": "2026-11-20",
+    "eventCount": 4516,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -8332,6 +8332,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-6b34d2e2a2aea1b9",
+        "EV-9b4e5cabf5bb77dc",
         "EV-d4e72cbad81641c6",
         "EV-8bba88d507b8dc62",
         "EV-4fc82b5985acc6c8",
@@ -8379,6 +8381,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-food_hospitality",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
@@ -8392,6 +8395,7 @@
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
         "TX-industry-media_entertainment",
+        "TX-product_form-compute_cloud_service",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips",
         "TX-ai_market_category-infrastructure_compute",
@@ -8424,7 +8428,6 @@
         "TX-ai_market_application-computing_infrastructure",
         "TX-industry-professional_services",
         "TX-industry-construction_real_estate",
-        "TX-industry-food_hospitality",
         "TX-product_form-model_api_service",
         "TX-technology-long_context",
         "TX-use_case-customer_support",
@@ -8462,7 +8465,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "EN-0995103010d39563",
@@ -8809,6 +8812,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-6b34d2e2a2aea1b9",
         "EV-6460ad65cd850154",
         "EV-4fc82b5985acc6c8",
         "EV-a8edaa14ede956fa",
@@ -8917,7 +8921,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "EN-cecdd8369134f75e",
@@ -10168,6 +10172,102 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-329fcf3475ab6d1b",
+      "snapshotKey": "329fcf3475ab6d1b",
+      "snapshotId": "HWS-7b0d860084872f44",
+      "eventId": "EV-9b4e5cabf5bb77dc",
+      "eventIds": [
+        "EV-9b4e5cabf5bb77dc",
+        "EV-36a9af9b98a66be3"
+      ],
+      "dataDate": "2026-11-20",
+      "date": "2026-11-20",
+      "title": "NVIDIA",
+      "subject": "NVIDIA",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment",
+        "product"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-b8bb67ae936d9bd5"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-11-20",
+          "previousDate": "2026-09-04",
+          "snapshotId": "HWS-7b0d860084872f44",
+          "previousSnapshotId": "HWS-b1a0f456ed87f78a",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-11-20",
+          "hardware_fact_id": "HWF-b8bb67ae936d9bd5",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-11-19",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "英伟达临时首席执行官科莱特 · 克雷斯（Colette Kress）明确会筛选合作方，对新云（neocloud，为 AI 训练和推理而建的云计算公司）厂商的采购担保，只有在对方完成融资、建成数据中心、部署算力并通过英伟达验收后才生效；若建设延期或受阻，担保即不再存在。",
+          "event_refs": [
+            "EV-9b4e5cabf5bb77dc"
+          ],
+          "claim_ref": "CL-2846d1f52dd2bfd2",
+          "source_refs": [
+            "SA-0005090cc16f67d0"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-11-20/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://www.ithome.com/1/029/268.htm",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-3a7bd3e2360a3d29"
+      ]
+    },
+    {
       "id": "HWC-8b9ef9650b200871",
       "snapshotKey": "8b9ef9650b200871",
       "snapshotId": "HWS-52de8e67f01679f7",
@@ -10391,112 +10491,6 @@
       "sourceUrl": "https://ithome.com/0/998/810.htm",
       "entityIds": [
         "EN-e1680f5d27ebecb8"
-      ]
-    },
-    {
-      "id": "HWC-329fcf3475ab6d1b",
-      "snapshotKey": "329fcf3475ab6d1b",
-      "snapshotId": "HWS-b1a0f456ed87f78a",
-      "eventId": "EV-36a9af9b98a66be3",
-      "eventIds": [
-        "EV-36a9af9b98a66be3"
-      ],
-      "dataDate": "2026-09-04",
-      "date": "2026-09-04",
-      "title": "NVIDIA",
-      "subject": "NVIDIA",
-      "productNames": [],
-      "hardwareType": "data_center",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-0f53a533dbc33367"
-        }
-      },
-      "factCount": 2,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-09-04",
-          "hardware_fact_id": "HWF-29edce348848317c",
-          "fact_type": "product",
-          "observed_at": "2026-09-03T16:00:00.000Z",
-          "subject_entity_id": "EN-8d4321d936320802",
-          "subject_name": "NVIDIA",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "data_center",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "Nvidia launches free tool that links idle computers into a personal AI data center",
-          "event_refs": [
-            "EV-36a9af9b98a66be3"
-          ],
-          "claim_ref": "CL-c28d68cb98ab01c0",
-          "source_refs": [
-            "SA-e71dd56ec7e3b365"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-04/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-09-04",
-          "hardware_fact_id": "HWF-0f53a533dbc33367",
-          "fact_type": "product",
-          "observed_at": "2026-09-03T16:00:00.000Z",
-          "subject_entity_id": "EN-8d4321d936320802",
-          "subject_name": "NVIDIA",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "data_center",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "Nvidia launches free tool that links idle computers into a personal AI data center",
-          "event_refs": [
-            "EV-36a9af9b98a66be3"
-          ],
-          "claim_ref": "CL-a1623bd36780a8c7",
-          "source_refs": [
-            "SA-e71dd56ec7e3b365"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-04/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-8d4321d936320802"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-8d4321d936320802"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/989435/nvidia-pair-personal-ai-router-home-local-llm-compute-tool-rtx-macbook",
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-3a7bd3e2360a3d29"
       ]
     },
     {

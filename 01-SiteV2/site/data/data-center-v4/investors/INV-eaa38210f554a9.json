@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-19",
-    "currentDate": "2026-11-19",
-    "eventCount": 4503,
+    "latestDataDate": "2026-11-20",
+    "currentDate": "2026-11-20",
+    "eventCount": 4516,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-04-29",
-    "latest_disclosed_at": "2026-04-29",
+    "latest_disclosed_at": "2026-11-19",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
-      "pre_seed"
+      "pre_seed",
+      "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-68227a66e51a4668",
+        "canonical_entity_id": "",
+        "name": "Everful"
+      },
       {
         "entity_id": "EN-749f7b0c42646853",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-15af05c3cf8ac28e",
+        "funding_insight_id": "FI-183448a43c9bcb8d",
+        "event_ids": [
+          "EV-4ed0d4054e9a6f07"
+        ],
+        "company_entity_id": "EN-68227a66e51a4668",
+        "company_canonical_entity_id": "",
+        "company_name": "Everful",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$48.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 48500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4850 万美元"
+        },
+        "announced_at": "2026-11-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-8bc2fdc1aef603b8",
+            "source_url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
+            "source_title": "前阿里巴巴高管创立的Everful融资4850万美元，连接零售商与中国工厂",
+            "source_content_hash": "87e37b935e841730c8fa78ae270d0b3146ecb86669a1fe919fa1bfcf1fb0fe48",
+            "quote": "The round was led by Vertex Ventures Southeast Asia & India and January Capital, with participation from existing investors Square Peg and Lightspeed.",
+            "quote_hash": "4ec8808f91d5e26b0a7fa4dbadc8f479fdc7d58d1cc2c45f497037a9c005169c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-29461e30a34da010",
         "funding_insight_id": "FI-b8e7031d66aa329b",
@@ -127,6 +173,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-8bc2fdc1aef603b8",
+        "source_url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
+        "source_title": "前阿里巴巴高管创立的Everful融资4850万美元，连接零售商与中国工厂",
+        "source_content_hash": "87e37b935e841730c8fa78ae270d0b3146ecb86669a1fe919fa1bfcf1fb0fe48",
+        "quote": "The round was led by Vertex Ventures Southeast Asia & India and January Capital, with participation from existing investors Square Peg and Lightspeed.",
+        "quote_hash": "4ec8808f91d5e26b0a7fa4dbadc8f479fdc7d58d1cc2c45f497037a9c005169c"
+      },
       {
         "source_id": "FISRC-dc1378b0805f976c",
         "source_url": "https://www.vertexventures.sg/news/formas-ai-raises-us-3-98-million-in-oversubscribed-pre-seed-round-to-build-the-ai-native-design-workspace-for-architecture/",
@@ -192,6 +246,10 @@
         {
           "description": "FORMAS.AI 于 2026-04-29 公布 398 万美元超额认购预种子轮，官方公告称由 Vertex Ventures Southeast Asia & India 领投；此金额是本轮公司融资额，未披露机构单家出资。",
           "source_id": "FISRC-dc1378b0805f976c"
+        },
+        {
+          "description": "融资来源记录：Everful · A轮 · 2026-11-19 · 本轮领投 · $48.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8bc2fdc1aef603b8"
         }
       ],
       "current_roles": [],
@@ -249,6 +307,14 @@
           "source_content_hash": "13b618d131a8d1bb",
           "quote": "led by Vertex Ventures Southeast Asia & India",
           "quote_hash": "69f8e713391b1d26d48b33dd8227cef58247fced37b2fe76dbafda5fd409253e"
+        },
+        {
+          "source_id": "FISRC-8bc2fdc1aef603b8",
+          "source_url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
+          "source_title": "前阿里巴巴高管创立的Everful融资4850万美元，连接零售商与中国工厂",
+          "source_content_hash": "87e37b935e841730c8fa78ae270d0b3146ecb86669a1fe919fa1bfcf1fb0fe48",
+          "quote": "The round was led by Vertex Ventures Southeast Asia & India and January Capital, with participation from existing investors Square Peg and Lightspeed.",
+          "quote_hash": "4ec8808f91d5e26b0a7fa4dbadc8f479fdc7d58d1cc2c45f497037a9c005169c"
         }
       ],
       "last_verified_at": "2026-09-28"

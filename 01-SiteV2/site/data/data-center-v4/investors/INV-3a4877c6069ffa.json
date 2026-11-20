@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-19",
-    "currentDate": "2026-11-19",
-    "eventCount": 4503,
+    "latestDataDate": "2026-11-20",
+    "currentDate": "2026-11-20",
+    "eventCount": 4516,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 7,
+    "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-10",
-    "latest_disclosed_at": "2026-11-16",
+    "latest_disclosed_at": "2026-11-17",
     "role_counts": {
       "historical_or_ambiguous": 2,
       "lead": 2,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "seed",
@@ -83,6 +83,11 @@
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-3c74cd87e529ece6",
+        "canonical_entity_id": "",
+        "name": "Aarden AI"
+      },
       {
         "entity_id": "EN-fd43322a4da6f0e9",
         "canonical_entity_id": "",
@@ -120,6 +125,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-dd6ce3201c3ba5a7",
+        "funding_insight_id": "FI-6fb7f9e1f1c3d8bf",
+        "event_ids": [
+          "EV-8cb327ac867e5fae"
+        ],
+        "company_entity_id": "EN-3c74cd87e529ece6",
+        "company_canonical_entity_id": "",
+        "company_name": "Aarden AI",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "$4 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "400 万美元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5a7eb17ce8e16707",
+            "source_url": "https://www.geekwire.com/2026/seattle-startup-aarden-raises-8m-to-help-landowners-navigate-the-ai-and-energy-building-boom/",
+            "source_title": "西雅图初创公司Aarden融资800万美元，助土地所有者应对AI与能源建设热潮",
+            "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+            "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
+            "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
+          }
+        ]
+      },
       {
         "activity_id": "IA-c0af573e3f1e96e2",
         "funding_insight_id": "FI-bba3909d662ded6a",
@@ -467,6 +512,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-5a7eb17ce8e16707",
+        "source_url": "https://www.geekwire.com/2026/seattle-startup-aarden-raises-8m-to-help-landowners-navigate-the-ai-and-energy-building-boom/",
+        "source_title": "西雅图初创公司Aarden融资800万美元，助土地所有者应对AI与能源建设热潮",
+        "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+        "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
+        "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
+      },
+      {
         "source_id": "FISRC-ea7b0f44d05b19b1",
         "source_url": "https://www.geekwire.com/2026/former-uw-ai-researchers-yejin-choi-and-carlos-guestrin-raise-110m-for-ai-startup-noeri/",
         "source_title": "前华盛顿大学AI研究员Yejin Choi与Carlos Guestrin为AI初创公司Noeri融资1.1亿美元",
@@ -555,16 +608,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Aarden AI · 轮次未披露 · 2026-11-17 · 本轮参投 · $4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5a7eb17ce8e16707"
+        },
+        {
           "description": "融资来源记录：Noeri · 轮次未披露 · 2026-11-16 · 本轮参投 · $110 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ea7b0f44d05b19b1"
         },
         {
           "description": "融资来源记录：Charta Health · B轮 · 2026-11-10 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e5678cb427ad6e69"
-        },
-        {
-          "description": "融资来源记录：Finpilot · A轮 · 2026-11-04 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6e0cc8a5dd051546"
         }
       ],
       "contacts": [
@@ -586,6 +639,14 @@
           "quote_hash": "2f65188598201ce8275e672648d6244b3d42b098f38746c7487603e97d44144f"
         },
         {
+          "source_id": "FISRC-5a7eb17ce8e16707",
+          "source_url": "https://www.geekwire.com/2026/seattle-startup-aarden-raises-8m-to-help-landowners-navigate-the-ai-and-energy-building-boom/",
+          "source_title": "西雅图初创公司Aarden融资800万美元，助土地所有者应对AI与能源建设热潮",
+          "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+          "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
+          "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
+        },
+        {
           "source_id": "FISRC-ea7b0f44d05b19b1",
           "source_url": "https://www.geekwire.com/2026/former-uw-ai-researchers-yejin-choi-and-carlos-guestrin-raise-110m-for-ai-startup-noeri/",
           "source_title": "前华盛顿大学AI研究员Yejin Choi与Carlos Guestrin为AI初创公司Noeri融资1.1亿美元",
@@ -600,14 +661,6 @@
           "source_content_hash": "745052fe5fb1b81cc50c9c8709f4d34889d365592744683070a0e85a65cf7f3d",
           "quote": "Existing investors Madrona, Bain Capital Ventures, and South Park Commons also participated, alongside QuantumLight.",
           "quote_hash": "5ae9bf3feaac941e73806185ccc31d1968dd05322dcc1a502ccb60c4fd53d831"
-        },
-        {
-          "source_id": "FISRC-6e0cc8a5dd051546",
-          "source_url": "https://www.geekwire.com/2026/finpilot-raises-10m-for-ai-agents-that-handle-the-grunt-work-for-institutional-investors/",
-          "source_title": "Finpilot 融资 1000 万美元，用于为机构投资者处理繁琐工作的 AI 智能体",
-          "source_content_hash": "29850c8142ef2e46ade0320eb9ea2246751f7266231d77ada18c7a4c07ff36ed",
-          "quote": "The round was led by Bay Area venture firm Lobby Capital, with participation from Madrona, which led Finpilot’s $4 million seed round in 2024.",
-          "quote_hash": "782ad485829b460471b334a4c4c30496f5ba0db3b09dd311df26cbbda3647026"
         }
       ],
       "last_verified_at": "2026-10-03",

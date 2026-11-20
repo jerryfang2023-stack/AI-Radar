@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-19",
-    "currentDate": "2026-11-19",
-    "eventCount": 4503,
+    "latestDataDate": "2026-11-20",
+    "currentDate": "2026-11-20",
+    "eventCount": 4516,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -112,6 +112,7 @@
       "EV-7f9631d793292d07",
       "EV-8993e021ac17df4a",
       "EV-67a69ab5b20da3c1",
+      "EV-6b34d2e2a2aea1b9",
       "EV-00e6152baff47d4d",
       "EV-649481503cdb7736",
       "EV-75b1a6a12ce2f03f",
@@ -138,12 +139,13 @@
       "EN-7d1507284a5757ca"
     ],
     "firstSeen": "2023-11-28",
-    "lastSeen": "2026-10-05",
+    "lastSeen": "2026-11-20",
     "relationIds": [
       "REL2-4c6be3fd3d25d6c2"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-6b34d2e2a2aea1b9",
         "EV-a3de7b1a00fbf8a9",
         "EV-a1addb827a7ac17c",
         "EV-5eb9944487368ea0",
@@ -215,6 +217,26 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-6b34d2e2a2aea1b9",
+        "dataDate": "2026-11-20",
+        "date": "2026-11-19",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic 的 IPO 考验 AI 循环融资热潮",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-cbc62794911ff31b",
+          "EN-bbdefa2950f49882",
+          "EN-8d4321d936320802",
+          "EN-9fbf261b62c1d7c0",
+          "EN-373ac021a2c0bb2c"
+        ]
+      },
       {
         "id": "EV-4bc2b0f8a1ca9e66",
         "dataDate": "2026-10-05",
@@ -2227,7 +2249,7 @@
         "HW-7889eb510b9d4210"
       ],
       "firstSeen": "2026-02-18",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "TX-product_form-model",

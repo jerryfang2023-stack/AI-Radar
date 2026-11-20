@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-19",
-    "currentDate": "2026-11-19",
-    "eventCount": 4503,
+    "latestDataDate": "2026-11-20",
+    "currentDate": "2026-11-20",
+    "eventCount": 4516,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -220,6 +220,7 @@
       "EV-d596f111808bd55b",
       "EV-a4f052325d0ef230",
       "EV-6ce6b9c9780b97d9",
+      "EV-6b34d2e2a2aea1b9",
       "EV-6460ad65cd850154",
       "EV-4fc82b5985acc6c8",
       "EV-a8edaa14ede956fa",
@@ -287,7 +288,7 @@
       "EN-10fce287b4b1464c"
     ],
     "firstSeen": "2026-01-14",
-    "lastSeen": "2026-11-19",
+    "lastSeen": "2026-11-20",
     "relationIds": [
       "REL2-ee25fecc7314abd4",
       "REL2-62f415d53b9e1307",
@@ -306,6 +307,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-6b34d2e2a2aea1b9",
         "EV-4fc82b5985acc6c8",
         "EV-c0b3ec3c5e9ee0bd",
         "EV-b84f9955d0e55497",
@@ -511,6 +513,26 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-6b34d2e2a2aea1b9",
+        "dataDate": "2026-11-20",
+        "date": "2026-11-19",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic 的 IPO 考验 AI 循环融资热潮",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-cbc62794911ff31b",
+          "EN-bbdefa2950f49882",
+          "EN-8d4321d936320802",
+          "EN-9fbf261b62c1d7c0",
+          "EN-373ac021a2c0bb2c"
+        ]
+      },
       {
         "id": "EV-9eaa0fb6398cb15d",
         "dataDate": "2026-11-19",
@@ -6430,6 +6452,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-6b34d2e2a2aea1b9",
+        "EV-9b4e5cabf5bb77dc",
         "EV-d4e72cbad81641c6",
         "EV-8bba88d507b8dc62",
         "EV-4fc82b5985acc6c8",
@@ -6477,6 +6501,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-food_hospitality",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
@@ -6490,6 +6515,7 @@
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
         "TX-industry-media_entertainment",
+        "TX-product_form-compute_cloud_service",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips",
         "TX-ai_market_category-infrastructure_compute",
@@ -6522,7 +6548,6 @@
         "TX-ai_market_application-computing_infrastructure",
         "TX-industry-professional_services",
         "TX-industry-construction_real_estate",
-        "TX-industry-food_hospitality",
         "TX-product_form-model_api_service",
         "TX-technology-long_context",
         "TX-use_case-customer_support",
@@ -6560,7 +6585,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "EN-688f8db7018da7d4",
@@ -7351,7 +7376,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "EN-38945a66b4806b11",
@@ -9841,7 +9866,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-29",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "TX-industry-manufacturing",

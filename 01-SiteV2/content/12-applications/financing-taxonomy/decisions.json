@@ -39502,7 +39502,180 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-11-19T01:20:11.130Z"
+    },
+    "EV-b37c29a324a5dc4e": {
+      "id": "EV-b37c29a324a5dc4e",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "property",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Fairly为度假租赁业主提供AI定价、预订与消息管理软件，属房地产行业AI。",
+      "input_hash": "c8e55a4c734ffd7e603b1f6ce73bf9ef1291e0eb6784e6cea47a2af488be46f1",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-af94d5a75d980eef",
+          "quote": "Portland-based Fairly has raised $22.4 million in Series A funding to expand its vacation rental management marketplace, which pairs homeowners with dedicated local caretakers and equips them with AI-powered operating tools."
+        },
+        {
+          "source_id": "FISRC-646d5346067a2ff2",
+          "quote": "Its software handles pricing, bookings and scheduling, and uses AI to draft routine guest messages and flag maintenance problems."
+        },
+        {
+          "source_id": "FISRC-af94d5a75d980eef",
+          "quote": "Its software supports dynamic pricing, listing distribution across booking channels, guest messaging, scheduling and owner reporting."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-20T00:39:56.711Z"
+    },
+    "EV-8cb327ac867e5fae": {
+      "id": "EV-8cb327ac867e5fae",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "property",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Aarden用模型与智能体评估土地开发适宜性，属土地与房地产行业AI。",
+      "input_hash": "69d79baf50c8b8e7722ae7f1d7cc6b5b4941b87b6f09b770ef516011c4707c7e",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1affbabc693922f7",
+          "quote": "Aarden's AI-native stack of tools and services helps landowners, developers, and investors understand what land can be used for in the energy and AI buildout"
+        },
+        {
+          "source_id": "FISRC-5a7eb17ce8e16707",
+          "quote": "The company combines data on hundreds of land attributes with historical market data and proprietary models to assess development suitability, valuation trends, ownership and community sentiment."
+        },
+        {
+          "source_id": "FISRC-effe21ab8b7f134e",
+          "quote": "Aarden builds models, agents, and tools for land decisions."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-20T00:39:56.711Z"
+    },
+    "EV-a151aeb22a93c5ee": {
+      "id": "EV-a151aeb22a93c5ee",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "无涯智远自研大模型参数持续学习与超网络技术，属基础模型层。",
+      "input_hash": "f17a712fb484584ed39305065f8898fb02a55acdea3907d0cbddb5b053b1de91",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-386a3e96d1dd9d03",
+          "quote": "北京无涯智远科技有限公司（以下简称“无涯智远”，英文名 Norizon AI）是全球领 先的大模型参数持续学习践行者。"
+        },
+        {
+          "source_id": "FISRC-386a3e96d1dd9d03",
+          "quote": "无涯智远聚焦 Real-Time RSI（实时自进化），以参数持续学习为核心技术路径，致力于让大模型在部署后仍能持续吸收知识、内化经验，获得新能力。"
+        },
+        {
+          "source_id": "FISRC-c4080f9aa8823275",
+          "quote": "该公司自研RSI模型技术，其核心技术之一是SHINE超网络"
+        },
+        {
+          "source_id": "FISRC-c4080f9aa8823275",
+          "quote": "该公司研发了SHINE超网络技术。简单来说，超网络是一种能够生成另一个神经网络部分或全部参数的网络，它可以根据输入的信息，生成目标模型所需的参数更新。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-20T00:39:56.711Z"
+    },
+    "EV-4ed0d4054e9a6f07": {
+      "id": "EV-4ed0d4054e9a6f07",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "commerce",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        5,
+        6
+      ],
+      "rationale": "Everful以AI智能体连接零售商与中国工厂并管理采购物流，属电商供应链AI。",
+      "input_hash": "7714cb2d31951a4352c4462330d7df699cf42e2b7851e8339e668cd2284f9e2b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-8bc2fdc1aef603b8",
+          "quote": "Everful, a San Francisco- and Singapore-based startup that connects smaller retailers and brands with Chinese factories and manages the process from order to delivery, has raised $48.5 million in Series A funding."
+        },
+        {
+          "source_id": "FISRC-8bc2fdc1aef603b8",
+          "quote": "Han added that Everful uses AI agents to automate labor-intensive sourcing tasks, including tracking consumer trends, identifying suppliers, coordinating orders across factories, and managing logistics."
+        },
+        {
+          "source_id": "FISRC-44c28463d0395072",
+          "quote": "Its AI agents use that model to identify trending products, find and vet factories, and manage communications throughout each order."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-20T00:39:56.711Z"
+    },
+    "EV-1bfa49b4ab9e1ac2": {
+      "id": "EV-1bfa49b4ab9e1ac2",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "data-services",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "Humyn Labs用自研双摄像头硬件采集人体动作数据并提供标注处理，属数据标注与合成服务。",
+      "input_hash": "c83736ca341f6938cad7bf6942fa699a1fcd17ae7cdef0e61f4ffb0cc864031a",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-7910f56b348bc37f",
+          "quote": "Humyn Labs has developed its own two-camera hardware to record people performing everyday tasks. It then uses its software to process and label the footage"
+        },
+        {
+          "source_id": "FISRC-1c1b7f6a830668ee",
+          "quote": "we built a research and data engine, from validation to labelling, that turns human activity into signal primitives across sight, sound, motion and touch"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-20T00:39:56.711Z"
     }
   },
-  "generated_at": "2026-11-19T01:20:11.130Z"
+  "generated_at": "2026-11-20T00:39:56.711Z"
 }

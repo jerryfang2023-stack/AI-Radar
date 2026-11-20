@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-19",
-    "currentDate": "2026-11-19",
-    "eventCount": 4503,
+    "latestDataDate": "2026-11-20",
+    "currentDate": "2026-11-20",
+    "eventCount": 4516,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -348,6 +348,8 @@
       "EV-02b19ffbe883ee2e",
       "EV-8993e021ac17df4a",
       "EV-34929bdd016dc8d6",
+      "EV-6b34d2e2a2aea1b9",
+      "EV-9b4e5cabf5bb77dc",
       "EV-d4e72cbad81641c6",
       "EV-8bba88d507b8dc62",
       "EV-4fc82b5985acc6c8",
@@ -395,6 +397,7 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
+      "TX-industry-food_hospitality",
       "TX-use_case-physical_automation",
       "TX-technology-embodied_ai",
       "TX-technology-agentic_execution",
@@ -408,6 +411,7 @@
       "TX-use_case-security_operations",
       "TX-industry-manufacturing",
       "TX-industry-media_entertainment",
+      "TX-product_form-compute_cloud_service",
       "TX-product_form-chip_accelerator",
       "TX-ai_market_application-chips",
       "TX-ai_market_category-infrastructure_compute",
@@ -440,7 +444,6 @@
       "TX-ai_market_application-computing_infrastructure",
       "TX-industry-professional_services",
       "TX-industry-construction_real_estate",
-      "TX-industry-food_hospitality",
       "TX-product_form-model_api_service",
       "TX-technology-long_context",
       "TX-use_case-customer_support",
@@ -478,7 +481,7 @@
       "EN-171fa23d27b5894b"
     ],
     "firstSeen": "2025-03-18",
-    "lastSeen": "2026-11-19",
+    "lastSeen": "2026-11-20",
     "relationIds": [
       "REL2-4d903d795699d1b0",
       "REL2-ee25fecc7314abd4",
@@ -522,6 +525,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-6b34d2e2a2aea1b9",
         "EV-d4e72cbad81641c6",
         "EV-4fc82b5985acc6c8",
         "EV-0a0d2b11832f0be5",
@@ -854,6 +858,7 @@
         "EV-0b49d637d7c07ce0"
       ],
       "other": [
+        "EV-9b4e5cabf5bb77dc",
         "EV-2610d8aa3ff494b8",
         "EV-884ee276b1160545",
         "EV-6d282114be5eef4f",
@@ -864,6 +869,70 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-6b34d2e2a2aea1b9",
+        "dataDate": "2026-11-20",
+        "date": "2026-11-19",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic 的 IPO 考验 AI 循环融资热潮",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-cbc62794911ff31b",
+          "EN-bbdefa2950f49882",
+          "EN-8d4321d936320802",
+          "EN-9fbf261b62c1d7c0",
+          "EN-373ac021a2c0bb2c"
+        ]
+      },
+      {
+        "id": "EV-9b4e5cabf5bb77dc",
+        "dataDate": "2026-11-20",
+        "date": "2026-11-19",
+        "eventType": "policy_regulation",
+        "eventTypeLabel": "政策监管",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "黄仁勋离开后，英伟达开始和 AI 云厂商讲担保条件了",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-8d4321d936320802"
+        ]
+      },
+      {
+        "id": "EV-d4e72cbad81641c6",
+        "dataDate": "2026-11-20",
+        "date": "2026-11-13",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大 IPO”添变数",
+        "displayTags": [],
+        "entityIds": [
+          "EN-47e18c0aa4f8e878",
+          "EN-8d4321d936320802",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
       {
         "id": "EV-6d4311291e4a0956",
         "dataDate": "2026-11-19",
@@ -878,23 +947,6 @@
         "entityIds": [
           "EN-8d4321d936320802",
           "EN-bae7f705e7d03e0e"
-        ]
-      },
-      {
-        "id": "EV-d4e72cbad81641c6",
-        "dataDate": "2026-11-19",
-        "date": "2026-11-13",
-        "eventType": "ipo_listing",
-        "eventTypeLabel": "IPO 与上市",
-        "eventGroup": "融资与并购",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "黄仁勋辞任英伟达 CEO，或给 Anthropic 下周“史上最大 IPO”添变数",
-        "displayTags": [],
-        "entityIds": [
-          "EN-47e18c0aa4f8e878",
-          "EN-8d4321d936320802",
-          "EN-c70eca6b0f88f44d"
         ]
       },
       {
@@ -13306,6 +13358,7 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
+        "EV-6b34d2e2a2aea1b9",
         "EV-6460ad65cd850154",
         "EV-4fc82b5985acc6c8",
         "EV-a8edaa14ede956fa",
@@ -13373,7 +13426,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-01-14",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "EN-7d1507284a5757ca",
@@ -14072,7 +14125,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "EN-9bc22dcabf7f45b3",
@@ -14471,6 +14524,11 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-afb294eb4d9baf2d",
+        "EV-08f7b2f72a5da891",
+        "EV-14051f3d4f43c4a7",
+        "EV-6b34d2e2a2aea1b9",
+        "EV-de8886a2222f5cd0",
         "EV-d4e72cbad81641c6",
         "EV-2406bc3d29c09326",
         "EV-27d9a40d0446e770",
@@ -14687,7 +14745,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "EN-7dfafb44ee67bcd8",
@@ -16005,6 +16063,66 @@
   ],
   "taxonomyNodes": [
     {
+      "id": "TX-industry-food_hospitality",
+      "name": "餐饮与酒店",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "food_hospitality",
+      "eventIds": [
+        "EV-0a0b4e592c70cd80",
+        "EV-ef669a52c9a3f94f",
+        "EV-cbec329253108e80",
+        "EV-e70a48e36e99d57a",
+        "EV-2dea56b0e97c1685",
+        "EV-4d2183d4275ea9cf",
+        "EV-f6a72cddbda748b3",
+        "EV-e31a6bf3c0a979f8",
+        "EV-e85e6fc6d630d56c",
+        "EV-0a62954694db4143",
+        "EV-7817dc69d5228cbb",
+        "EV-696ff69f11f66191",
+        "EV-765185b9e33dde47",
+        "EV-561e2028a6212b99",
+        "EV-9fc8916c19c19f99",
+        "EV-b0ed8d5a37784214",
+        "EV-3b40ec144e5db22c",
+        "EV-c46e427fedbf518d",
+        "EV-876baa523eb93c4f",
+        "EV-4242ed9f08123c32",
+        "EV-f5a50f1fed72fec3",
+        "EV-f17aeb4a86a6387c",
+        "EV-d7652e5b3dbe4620"
+      ],
+      "entityIds": [
+        "EN-f8849d864257947c",
+        "EN-1d79127e9d90e89b",
+        "EN-ee2dce6ecf9a1bab",
+        "EN-8d4321d936320802",
+        "EN-6fae0bc5a895aab8",
+        "EN-e22daec9e0564fba",
+        "EN-a5d2ae286d0d9e45",
+        "EN-2dcd958b2064843f",
+        "EN-a3802b1f5a583189",
+        "EN-c71a83adf3de3f40",
+        "EN-e69f64149edae6b1",
+        "EN-4eec97c17bca1de2",
+        "EN-19a5848a577315c5",
+        "EN-f96246b78ef26d59",
+        "EN-7ea76c82c786a5e1",
+        "EN-e4540a7c8404b1be",
+        "EN-eafe895eb8119e6e",
+        "EN-4731aa5b66658c7f",
+        "EN-0a5667ab6d63725e",
+        "EN-3a7bd3e2360a3d29",
+        "EN-c27dc0124e23e7fe",
+        "EN-f1d93bd549f52aeb"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-01-29",
+      "lastSeen": "2026-11-20"
+    },
+    {
       "id": "TX-use_case-physical_automation",
       "name": "物理自动化",
       "nodeType": "use_case",
@@ -16467,7 +16585,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "TX-technology-embodied_ai",
@@ -16741,7 +16859,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -17962,7 +18080,6 @@
       "valueId": "enterprise_software_platform",
       "eventIds": [
         "EV-0d4f7ad1fe080686",
-        "EV-27b9c5896b1b9c27",
         "EV-8de1001fde6993a5",
         "EV-fef4dfd8fed00cfe",
         "EV-1043d78cc040ab30",
@@ -18187,7 +18304,6 @@
       ],
       "entityIds": [
         "EN-5e494e695571ede1",
-        "EN-cb3a9e70e51c2f47",
         "EN-858837c33d111717",
         "EN-835429c59eea025b",
         "EN-295219ea74639f0b",
@@ -18644,7 +18760,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -18930,7 +19046,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "TX-use_case-research_discovery",
@@ -19063,7 +19179,7 @@
         "HW-7889eb510b9d4210"
       ],
       "firstSeen": "2026-02-18",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "TX-technology-open_weights",
@@ -20161,7 +20277,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-29",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -20774,6 +20890,87 @@
       ],
       "firstSeen": "2026-01-05",
       "lastSeen": "2026-11-10"
+    },
+    {
+      "id": "TX-product_form-compute_cloud_service",
+      "name": "算力云服务",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "compute_cloud_service",
+      "eventIds": [
+        "EV-f9c4e7e58dbb152f",
+        "EV-95ba9cc4f4d52ea4",
+        "EV-f53bfa2bb0275904",
+        "EV-40d4ce6d936d4d49",
+        "EV-26a5749d8604455a",
+        "EV-181cd28d97c4e61d",
+        "EV-2dea56b0e97c1685",
+        "EV-e3792591090281c6",
+        "EV-4eaf3aabecae6016",
+        "EV-6e516b6e68def9cf",
+        "EV-13ec78dfdbca678b",
+        "EV-7b1c734882fa1ea6",
+        "EV-327ba605bd9e8307",
+        "EV-24265c0f0fa45343",
+        "EV-4118202ed0f91895",
+        "EV-29eea3f4a8fcd6f5",
+        "EV-1abf0d076d30ec6d",
+        "EV-6011ab83ebd290bd",
+        "EV-bd5b6110559f2fda",
+        "EV-9fe6938336dea2a2",
+        "EV-70fd5918095d6ab8",
+        "EV-0121f0a9e9a975ec",
+        "EV-a86b04e679044c45",
+        "EV-f2750a3d66e06fe7",
+        "EV-49577d438cb6624b",
+        "EV-826c8088c4adf591",
+        "EV-0ec219a94317215f",
+        "EV-5493c61bcbe58aa2",
+        "EV-9b4e5cabf5bb77dc",
+        "EV-1d592d9d6ed402c9",
+        "EV-4b44f5eafecf4922",
+        "EV-a67071a8550cb1be"
+      ],
+      "entityIds": [
+        "EN-2ef32a75a8969e02",
+        "EN-fc261198a189a8eb",
+        "EN-eb6cf0bb179ca6ed",
+        "EN-d41ebd9f02722fc8",
+        "EN-0b79cf2de0ee6b8e",
+        "EN-6fae0bc5a895aab8",
+        "EN-fdecfc27f301da9c",
+        "EN-0caee180da9d0f3f",
+        "EN-3c1ae4e6276005e7",
+        "EN-816bab802b34b308",
+        "EN-830cefea8ed73a00",
+        "EN-d1a61df8d3146e48",
+        "EN-c04bd5ebd10ab696",
+        "EN-07c370b082ffd370",
+        "EN-ce31f92c521b7b08",
+        "EN-c70eca6b0f88f44d",
+        "EN-8f5ef31ed5125786",
+        "EN-3c7a24d85b4a5835",
+        "EN-29b9f0cae32e7a8a",
+        "EN-7640da40298286a6",
+        "EN-373ac021a2c0bb2c",
+        "EN-ebf9032e4009b3d9",
+        "EN-042e9398f2cc8902",
+        "EN-9d07f526fab9cfe9",
+        "EN-8d4321d936320802",
+        "EN-e78bdebae031095b",
+        "EN-18b4bbfd60f4137e",
+        "EN-a89a94ff38d4dc95"
+      ],
+      "fdeIds": [
+        "FDE-3c16927208b7ac37",
+        "FDE-5ea7f3d69a03d417"
+      ],
+      "hardwareIds": [
+        "HW-304c6370cc157449",
+        "HW-9a39a7f449362f96"
+      ],
+      "firstSeen": "2026-04-30",
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -26234,64 +26431,6 @@
       "lastSeen": "2026-10-02"
     },
     {
-      "id": "TX-industry-food_hospitality",
-      "name": "餐饮与酒店",
-      "nodeType": "industry",
-      "typeLabel": "行业",
-      "valueId": "food_hospitality",
-      "eventIds": [
-        "EV-ef669a52c9a3f94f",
-        "EV-cbec329253108e80",
-        "EV-e70a48e36e99d57a",
-        "EV-2dea56b0e97c1685",
-        "EV-4d2183d4275ea9cf",
-        "EV-f6a72cddbda748b3",
-        "EV-e31a6bf3c0a979f8",
-        "EV-e85e6fc6d630d56c",
-        "EV-0a62954694db4143",
-        "EV-7817dc69d5228cbb",
-        "EV-696ff69f11f66191",
-        "EV-765185b9e33dde47",
-        "EV-561e2028a6212b99",
-        "EV-9fc8916c19c19f99",
-        "EV-b0ed8d5a37784214",
-        "EV-3b40ec144e5db22c",
-        "EV-c46e427fedbf518d",
-        "EV-876baa523eb93c4f",
-        "EV-4242ed9f08123c32",
-        "EV-f5a50f1fed72fec3",
-        "EV-f17aeb4a86a6387c",
-        "EV-d7652e5b3dbe4620"
-      ],
-      "entityIds": [
-        "EN-1d79127e9d90e89b",
-        "EN-ee2dce6ecf9a1bab",
-        "EN-8d4321d936320802",
-        "EN-6fae0bc5a895aab8",
-        "EN-e22daec9e0564fba",
-        "EN-a5d2ae286d0d9e45",
-        "EN-2dcd958b2064843f",
-        "EN-a3802b1f5a583189",
-        "EN-c71a83adf3de3f40",
-        "EN-e69f64149edae6b1",
-        "EN-4eec97c17bca1de2",
-        "EN-19a5848a577315c5",
-        "EN-f96246b78ef26d59",
-        "EN-7ea76c82c786a5e1",
-        "EN-e4540a7c8404b1be",
-        "EN-eafe895eb8119e6e",
-        "EN-4731aa5b66658c7f",
-        "EN-0a5667ab6d63725e",
-        "EN-3a7bd3e2360a3d29",
-        "EN-c27dc0124e23e7fe",
-        "EN-f1d93bd549f52aeb"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-01-29",
-      "lastSeen": "2026-10-02"
-    },
-    {
       "id": "TX-product_form-model_api_service",
       "name": "模型 API 服务",
       "nodeType": "product_form",
@@ -29189,6 +29328,102 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-329fcf3475ab6d1b",
+      "snapshotKey": "329fcf3475ab6d1b",
+      "snapshotId": "HWS-7b0d860084872f44",
+      "eventId": "EV-9b4e5cabf5bb77dc",
+      "eventIds": [
+        "EV-9b4e5cabf5bb77dc",
+        "EV-36a9af9b98a66be3"
+      ],
+      "dataDate": "2026-11-20",
+      "date": "2026-11-20",
+      "title": "NVIDIA",
+      "subject": "NVIDIA",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment",
+        "product"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-b8bb67ae936d9bd5"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-11-20",
+          "previousDate": "2026-09-04",
+          "snapshotId": "HWS-7b0d860084872f44",
+          "previousSnapshotId": "HWS-b1a0f456ed87f78a",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-11-20",
+          "hardware_fact_id": "HWF-b8bb67ae936d9bd5",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-11-19",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "英伟达临时首席执行官科莱特 · 克雷斯（Colette Kress）明确会筛选合作方，对新云（neocloud，为 AI 训练和推理而建的云计算公司）厂商的采购担保，只有在对方完成融资、建成数据中心、部署算力并通过英伟达验收后才生效；若建设延期或受阻，担保即不再存在。",
+          "event_refs": [
+            "EV-9b4e5cabf5bb77dc"
+          ],
+          "claim_ref": "CL-2846d1f52dd2bfd2",
+          "source_refs": [
+            "SA-0005090cc16f67d0"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-11-20/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://www.ithome.com/1/029/268.htm",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-3a7bd3e2360a3d29"
+      ]
+    },
+    {
       "id": "HWC-3c2faedee816ba7e",
       "snapshotKey": "3c2faedee816ba7e",
       "snapshotId": "HWS-585f3b56d791a273",
@@ -30334,112 +30569,6 @@
         "EN-889393fb69a5b305",
         "EN-86d0c85aec3ff6a7",
         "EN-8d4321d936320802"
-      ]
-    },
-    {
-      "id": "HWC-329fcf3475ab6d1b",
-      "snapshotKey": "329fcf3475ab6d1b",
-      "snapshotId": "HWS-b1a0f456ed87f78a",
-      "eventId": "EV-36a9af9b98a66be3",
-      "eventIds": [
-        "EV-36a9af9b98a66be3"
-      ],
-      "dataDate": "2026-09-04",
-      "date": "2026-09-04",
-      "title": "NVIDIA",
-      "subject": "NVIDIA",
-      "productNames": [],
-      "hardwareType": "data_center",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-0f53a533dbc33367"
-        }
-      },
-      "factCount": 2,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-09-04",
-          "hardware_fact_id": "HWF-29edce348848317c",
-          "fact_type": "product",
-          "observed_at": "2026-09-03T16:00:00.000Z",
-          "subject_entity_id": "EN-8d4321d936320802",
-          "subject_name": "NVIDIA",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "data_center",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "Nvidia launches free tool that links idle computers into a personal AI data center",
-          "event_refs": [
-            "EV-36a9af9b98a66be3"
-          ],
-          "claim_ref": "CL-c28d68cb98ab01c0",
-          "source_refs": [
-            "SA-e71dd56ec7e3b365"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-04/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-09-04",
-          "hardware_fact_id": "HWF-0f53a533dbc33367",
-          "fact_type": "product",
-          "observed_at": "2026-09-03T16:00:00.000Z",
-          "subject_entity_id": "EN-8d4321d936320802",
-          "subject_name": "NVIDIA",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "data_center",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "Nvidia launches free tool that links idle computers into a personal AI data center",
-          "event_refs": [
-            "EV-36a9af9b98a66be3"
-          ],
-          "claim_ref": "CL-a1623bd36780a8c7",
-          "source_refs": [
-            "SA-e71dd56ec7e3b365"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-04/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-8d4321d936320802"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-8d4321d936320802"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/989435/nvidia-pair-personal-ai-router-home-local-llm-compute-tool-rtx-macbook",
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-3a7bd3e2360a3d29"
       ]
     },
     {

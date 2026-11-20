@@ -1,0 +1,128 @@
+{
+  "event_id": "EV-e05916db68f6d0ab",
+  "company_name": "智动未来正式官宣",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "source_resolution": {
+    "event_title": "【机器人】曾亮相AIZQ大会的智动未来获亿元Pre-A+轮融资，具身模型落地可变形物体操作",
+    "event_source_refs": [
+      "SA-07268fa5661136a1"
+    ],
+    "event_claim_refs": [
+      "CL-7f9b61f551b8788e"
+    ],
+    "event_entities": [
+      {
+        "entity_id": "EN-ad94ff32b6f40bc0",
+        "canonical_name": "智动未来正式官宣"
+      }
+    ],
+    "event_metrics": [],
+    "accepted_funding_claims": [
+      {
+        "claim_id": "CL-7f9b61f551b8788e",
+        "raw_id": "RAW-52858c867bd0e810",
+        "subject": "智动未来",
+        "object": "Pre-A+轮亿元级融资",
+        "source_quote_length": 46
+      }
+    ],
+    "intake_documents": [],
+    "source_quote_count": 2,
+    "resolved_company": "智动未来正式官宣"
+  },
+  "queries": [
+    "\"智动未来正式官宣\" 2026 融资 投资方",
+    "\"智动未来正式官宣\" 亿元级 融资 领投 跟投",
+    "\"智动未来正式官宣\" 官网 产品 服务",
+    "\"智动未来正式官宣\" 投资机构 融资用途",
+    "\"智动未来正式官宣\" 2026 本轮融资 公告",
+    "\"智动未来正式官宣\" 客户 创始人 总部"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"智动未来正式官宣\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 1
+    },
+    {
+      "provider": "tavily",
+      "query": "\"智动未来正式官宣\" 2026 融资 投资方",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "exa",
+      "query": "\"智动未来正式官宣\" 2026 融资 投资方",
+      "status": "quota_exhausted",
+      "http_status": 402,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"智动未来正式官宣\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"智动未来正式官宣\" 亿元级 融资 领投 跟投",
+      "status": "completed",
+      "count": 1
+    },
+    {
+      "provider": "tavily",
+      "query": "\"智动未来正式官宣\" 亿元级 融资 领投 跟投",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"智动未来正式官宣\" 亿元级 融资 领投 跟投",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"智动未来正式官宣\" 官网 产品 服务",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"智动未来正式官宣\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"智动未来正式官宣\" 2026 本轮融资 公告",
+      "status": "completed",
+      "count": 1
+    },
+    {
+      "provider": "tavily",
+      "query": "\"智动未来正式官宣\" 2026 本轮融资 公告",
+      "status": "failed",
+      "http_status": 432,
+      "retry_after": ""
+    },
+    {
+      "provider": "bing_rss",
+      "query": "\"智动未来正式官宣\" 2026 本轮融资 公告",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"智动未来正式官宣\" 客户 创始人 总部",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}

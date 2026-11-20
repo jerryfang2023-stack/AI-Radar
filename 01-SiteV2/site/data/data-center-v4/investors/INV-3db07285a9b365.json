@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-19",
-    "currentDate": "2026-11-19",
-    "eventCount": 4503,
+    "latestDataDate": "2026-11-20",
+    "currentDate": "2026-11-20",
+    "eventCount": 4516,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-10-28",
-    "latest_disclosed_at": "2026-10-28",
+    "latest_disclosed_at": "2026-11-19",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "angel"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-393c9ade80b59991",
+        "canonical_entity_id": "",
+        "name": "北京无涯智远科技有限公司"
+      },
       {
         "entity_id": "EN-d89fa694501806e0",
         "canonical_entity_id": "",
@@ -86,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2bd9bccbe4a69e5b",
+        "funding_insight_id": "FI-e9d743c0f18ba997",
+        "event_ids": [
+          "EV-a151aeb22a93c5ee"
+        ],
+        "company_entity_id": "EN-393c9ade80b59991",
+        "company_canonical_entity_id": "",
+        "company_name": "北京无涯智远科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-11-19",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-386a3e96d1dd9d03",
+            "source_url": "https://news.pedaily.cn/202611/572108.shtml",
+            "source_title": "无涯智远（Norizon AI）完成数亿元天使轮、天使加轮融资，开创大模型参数持续学习新范式",
+            "source_content_hash": "2d0f08a254efe618e6c06106033fbf641e189f3706766778d7c850edf9c064be",
+            "quote": "投资方包括五源资本、红杉中国、联想之星、中关村科学城基金及戈壁创投等多家知名投资机构。",
+            "quote_hash": "857d8fda098cd95dde34df2f2d53042f9499719fbf19b1350677a5b3589d6913"
+          }
+        ]
+      },
       {
         "activity_id": "IA-585dc5f15a9484d0",
         "funding_insight_id": "FI-16e7789991a5af66",
@@ -161,6 +206,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-386a3e96d1dd9d03",
+        "source_url": "https://news.pedaily.cn/202611/572108.shtml",
+        "source_title": "无涯智远（Norizon AI）完成数亿元天使轮、天使加轮融资，开创大模型参数持续学习新范式",
+        "source_content_hash": "2d0f08a254efe618e6c06106033fbf641e189f3706766778d7c850edf9c064be",
+        "quote": "投资方包括五源资本、红杉中国、联想之星、中关村科学城基金及戈壁创投等多家知名投资机构。",
+        "quote_hash": "857d8fda098cd95dde34df2f2d53042f9499719fbf19b1350677a5b3589d6913"
+      },
+      {
         "source_id": "FISRC-570d8c761dfb8abb",
         "source_url": "https://news.pedaily.cn/202610/570975.shtml",
         "source_title": "超进化智能完成数亿元天使轮融资，以万卡训练经验打造研究基础模型",
@@ -182,10 +235,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "联想之星 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "联想之星 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：北京无涯智远科技有限公司 · 天使轮 · 2026-11-19 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-386a3e96d1dd9d03"
+        },
         {
           "description": "融资来源记录：超进化 · 天使轮 · 2026-10-28 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-570d8c761dfb8abb"
@@ -193,6 +250,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-386a3e96d1dd9d03",
+          "source_url": "https://news.pedaily.cn/202611/572108.shtml",
+          "source_title": "无涯智远（Norizon AI）完成数亿元天使轮、天使加轮融资，开创大模型参数持续学习新范式",
+          "source_content_hash": "2d0f08a254efe618e6c06106033fbf641e189f3706766778d7c850edf9c064be",
+          "quote": "投资方包括五源资本、红杉中国、联想之星、中关村科学城基金及戈壁创投等多家知名投资机构。",
+          "quote_hash": "857d8fda098cd95dde34df2f2d53042f9499719fbf19b1350677a5b3589d6913"
+        },
         {
           "source_id": "FISRC-570d8c761dfb8abb",
           "source_url": "https://news.pedaily.cn/202610/570975.shtml",

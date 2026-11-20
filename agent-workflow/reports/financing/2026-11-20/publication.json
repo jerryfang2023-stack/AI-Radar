@@ -1,0 +1,32 @@
+{
+  "verification": {
+    "version": "FINANCING-VERIFICATION-1",
+    "status": "completed",
+    "counts": {
+      "total": 993,
+      "verified": 3,
+      "excluded": 46,
+      "reviewed": 0,
+      "pending": 944
+    },
+    "ledger": "verification.json",
+    "deferred_research": [
+      {
+        "event_id": "EV-e05916db68f6d0ab",
+        "reason": "research_sources_insufficient",
+        "input_hash": "8400e0fe6dc6b5f88807af06947da1e5634e572c5541d3ad2e60c555ce76fa82"
+      }
+    ]
+  },
+  "version": "FINANCING-MONITOR-1",
+  "date": "2026-11-20",
+  "status": "ready_for_review",
+  "counts": {
+    "leads": 517,
+    "accepted_originals": 93,
+    "pending": 270,
+    "excluded": 154
+  },
+  "next": "merge_pages_portal_and_live_parity",
+  "generated_at": "2026-11-20T00:41:07.889Z"
+}

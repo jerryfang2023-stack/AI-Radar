@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-19",
-    "currentDate": "2026-11-19",
-    "eventCount": 4503,
+    "latestDataDate": "2026-11-20",
+    "currentDate": "2026-11-20",
+    "eventCount": 4516,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -3654,6 +3654,102 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-329fcf3475ab6d1b",
+      "snapshotKey": "329fcf3475ab6d1b",
+      "snapshotId": "HWS-7b0d860084872f44",
+      "eventId": "EV-9b4e5cabf5bb77dc",
+      "eventIds": [
+        "EV-9b4e5cabf5bb77dc",
+        "EV-36a9af9b98a66be3"
+      ],
+      "dataDate": "2026-11-20",
+      "date": "2026-11-20",
+      "title": "NVIDIA",
+      "subject": "NVIDIA",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment",
+        "product"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-b8bb67ae936d9bd5"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-11-20",
+          "previousDate": "2026-09-04",
+          "snapshotId": "HWS-7b0d860084872f44",
+          "previousSnapshotId": "HWS-b1a0f456ed87f78a",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-11-20",
+          "hardware_fact_id": "HWF-b8bb67ae936d9bd5",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-11-19",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "英伟达临时首席执行官科莱特 · 克雷斯（Colette Kress）明确会筛选合作方，对新云（neocloud，为 AI 训练和推理而建的云计算公司）厂商的采购担保，只有在对方完成融资、建成数据中心、部署算力并通过英伟达验收后才生效；若建设延期或受阻，担保即不再存在。",
+          "event_refs": [
+            "EV-9b4e5cabf5bb77dc"
+          ],
+          "claim_ref": "CL-2846d1f52dd2bfd2",
+          "source_refs": [
+            "SA-0005090cc16f67d0"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-11-20/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://www.ithome.com/1/029/268.htm",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-3a7bd3e2360a3d29"
+      ]
+    },
     {
       "id": "HWC-55a80fa1defbe78b",
       "snapshotKey": "55a80fa1defbe78b",
@@ -12081,112 +12177,6 @@
         "EN-7d3194f79e645c42",
         "EN-c70eca6b0f88f44d",
         "EN-45ea02f28f8d8e50"
-      ]
-    },
-    {
-      "id": "HWC-329fcf3475ab6d1b",
-      "snapshotKey": "329fcf3475ab6d1b",
-      "snapshotId": "HWS-b1a0f456ed87f78a",
-      "eventId": "EV-36a9af9b98a66be3",
-      "eventIds": [
-        "EV-36a9af9b98a66be3"
-      ],
-      "dataDate": "2026-09-04",
-      "date": "2026-09-04",
-      "title": "NVIDIA",
-      "subject": "NVIDIA",
-      "productNames": [],
-      "hardwareType": "data_center",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-0f53a533dbc33367"
-        }
-      },
-      "factCount": 2,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-09-04",
-          "hardware_fact_id": "HWF-29edce348848317c",
-          "fact_type": "product",
-          "observed_at": "2026-09-03T16:00:00.000Z",
-          "subject_entity_id": "EN-8d4321d936320802",
-          "subject_name": "NVIDIA",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "data_center",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "Nvidia launches free tool that links idle computers into a personal AI data center",
-          "event_refs": [
-            "EV-36a9af9b98a66be3"
-          ],
-          "claim_ref": "CL-c28d68cb98ab01c0",
-          "source_refs": [
-            "SA-e71dd56ec7e3b365"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-04/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-09-04",
-          "hardware_fact_id": "HWF-0f53a533dbc33367",
-          "fact_type": "product",
-          "observed_at": "2026-09-03T16:00:00.000Z",
-          "subject_entity_id": "EN-8d4321d936320802",
-          "subject_name": "NVIDIA",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "data_center",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "Nvidia launches free tool that links idle computers into a personal AI data center",
-          "event_refs": [
-            "EV-36a9af9b98a66be3"
-          ],
-          "claim_ref": "CL-a1623bd36780a8c7",
-          "source_refs": [
-            "SA-e71dd56ec7e3b365"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-04/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-8d4321d936320802"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-8d4321d936320802"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/989435/nvidia-pair-personal-ai-router-home-local-llm-compute-tool-rtx-macbook",
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-3a7bd3e2360a3d29"
       ]
     },
     {
@@ -22265,30 +22255,27 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-11-19",
-      "funnel_id": "LF-1db615a4d0b42450",
+      "data_date": "2026-11-20",
+      "funnel_id": "LF-1d3465f2a9e95ccd",
       "lens": "hardware",
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "monitoring_paths": [],
-      "raw_documents": 12,
-      "original_sources": 12,
-      "valid_claims": 2,
-      "observations": 0,
-      "canonical_events": 2,
+      "raw_documents": 11,
+      "original_sources": 11,
+      "valid_claims": 7,
+      "observations": 1,
+      "canonical_events": 4,
       "blocker_counts": {
-        "no_source_bounded_claim": 1,
-        "rumor_requires_primary_confirmation": 1,
-        "event_not_ai_relevant": 5,
-        "reviewed_source_lead_only": 1,
+        "event_not_ai_relevant": 6,
         "no_source_bounded_event": 1
       },
       "rates": {
         "original_source_rate": 1,
-        "valid_claim_rate": 0.16666666666666666,
-        "observation_rate": 0,
-        "event_conversion_rate": 1
+        "valid_claim_rate": 0.6363636363636364,
+        "observation_rate": 0.14285714285714285,
+        "event_conversion_rate": 0.5714285714285714
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-11-19/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-11-20/monitoring-funnel.json"
     }
   ]
 }

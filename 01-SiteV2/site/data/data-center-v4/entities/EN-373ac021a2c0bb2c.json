@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-19",
-    "currentDate": "2026-11-19",
-    "eventCount": 4503,
+    "latestDataDate": "2026-11-20",
+    "currentDate": "2026-11-20",
+    "eventCount": 4516,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -76,6 +76,7 @@
       "EV-37cdd2fae39aaa2e",
       "EV-3d1c01d3d1b0bba4",
       "EV-ad1444d8653b37ae",
+      "EV-6b34d2e2a2aea1b9",
       "EV-4fc82b5985acc6c8",
       "EV-3b30eda1326a6fb1",
       "EV-89bdda008227fb6b"
@@ -93,13 +94,14 @@
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-05-27",
-    "lastSeen": "2026-11-17",
+    "lastSeen": "2026-11-20",
     "relationIds": [
       "REL2-f8319ba3694b2987",
       "REL2-59ab2863fcb1e150"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-6b34d2e2a2aea1b9",
         "EV-4fc82b5985acc6c8",
         "EV-53dad7c8f530b480",
         "EV-39247400114d59dd",
@@ -129,6 +131,26 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-6b34d2e2a2aea1b9",
+        "dataDate": "2026-11-20",
+        "date": "2026-11-19",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic 的 IPO 考验 AI 循环融资热潮",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-cbc62794911ff31b",
+          "EN-bbdefa2950f49882",
+          "EN-8d4321d936320802",
+          "EN-9fbf261b62c1d7c0",
+          "EN-373ac021a2c0bb2c"
+        ]
+      },
       {
         "id": "EV-4fc82b5985acc6c8",
         "dataDate": "2026-11-17",
@@ -1311,7 +1333,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     }
   ],
   "relationships": [
@@ -3061,6 +3083,7 @@
         "EV-826c8088c4adf591",
         "EV-0ec219a94317215f",
         "EV-5493c61bcbe58aa2",
+        "EV-9b4e5cabf5bb77dc",
         "EV-1d592d9d6ed402c9",
         "EV-4b44f5eafecf4922",
         "EV-a67071a8550cb1be"
@@ -3090,6 +3113,7 @@
         "EN-ebf9032e4009b3d9",
         "EN-042e9398f2cc8902",
         "EN-9d07f526fab9cfe9",
+        "EN-8d4321d936320802",
         "EN-e78bdebae031095b",
         "EN-18b4bbfd60f4137e",
         "EN-a89a94ff38d4dc95"
@@ -3103,7 +3127,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-04-30",
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "TX-target_user-business_user",
