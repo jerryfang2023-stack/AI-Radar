@@ -210,3 +210,5 @@ Financing amount selection binds the verified canonical action together with its
 
 2026-11-21：恢复旧日期时，若私有队列 last_processed_date 晚于该日期，verify 与 finish 两阶段均保留后来状态及尝试账本，不允许旧采集排除覆盖新队列；旧日报仅记录待核验。
 恢复旧 followup 时，尝试/回执数组按完整记录身份合并保留，不以旧快照覆盖后来请求。
+
+2026-11-21：融资金额校验把市值/market capitalization与估值一并排除，已接受原文引文优先于标题动作；seeks加金额及拟筹集/拟募资仍为未完成状态，已完成融资的资金拟用途不受影响。

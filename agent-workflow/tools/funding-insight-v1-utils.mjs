@@ -276,9 +276,9 @@ function fundingAmountMentions(value = "") {
   return [...text.matchAll(pattern), ...text.matchAll(rupees), ...text.matchAll(explicitCurrency)].sort((a,b)=>a.index-b.index).map((match) => {
     const before = text.slice(Math.max(0, match.index - 56), match.index);
     const after = text.slice(match.index + match[0].length, match.index + match[0].length + 56);
-    const valuation = /(?:pre[-\s]?money|post[-\s]?money|valuation(?:\s+(?:of|at))?(?:\s+(?:above|over|more\s+than|at\s+least|approximately|about))?|valu(?:ed|ing)\s+(?:(?:it|the\s+company|the\s+startup)\s+)?at|估值(?:达到|达|为|约|超过|高达|逾|超|推高至|提升至|升至|增至)?)\s*$/iu.test(before)
+    const valuation = /(?:pre[-\s]?money|post[-\s]?money|valuation(?:\s+(?:of|at))?(?:\s+(?:above|over|more\s+than|at\s+least|approximately|about))?|valu(?:ed|ing)\s+(?:(?:it|the\s+company|the\s+startup)\s+)?at|market[\s-]+(?:cap|capitali[sz]ation)(?:\s+(?:of|at|is))?(?:\s+(?:above|over|approximately|about))?|市值(?:达到|达|约为|为|约|超过|高达|逾|超|升至|增至)?|估值(?:达到|达|为|约|超过|高达|逾|超|推高至|提升至|升至|增至)?)\s*$/iu.test(before)
       || /^\s*(?:pre[-\s]?money|post[-\s]?money)?\s*valuation\b/iu.test(after)
-      || /^\s*估值/iu.test(after);
+      || /^\s*(?:估值|市值)/iu.test(after);
     const cumulative = /(?:累计|总计|合计)[^，,；;。！？]{0,24}$/u.test(before)
       || /(?:[A-Z](?:\+|\d+)?|天使|种子)轮系列融资[^，,；;。！？]{0,12}$/iu.test(before)
       || /^\s*(?:[A-Z](?:\+|\d+)?|天使|种子)轮系列融资/iu.test(after)
@@ -379,7 +379,7 @@ function fundingEventAmountSemantics(event = {}, claims = []) {
   const currentDisclosure = [event.action, event.object].map(clean).filter(Boolean).join(" ");
   const texts = [currentDisclosure, ...claimTexts, ...(!claimTexts.length ? [event.display_title_zh] : [])].map(clean).filter(Boolean);
   const preliminary = texts.some((text) => (
-    /\bin talks\b|\btalking to\b|\b(?:seeking to|plans? to|aims? to|looking to|would)\s+(?:raise|secure)\b|\b(?:close to|nearing|on the verge of)\s+(?:raising|securing|closing)\b|拟融资|计划融资|寻求融资|融资洽谈|正在洽谈|正在谈判|即将融资|接近完成融资/iu.test(text)
+    /\bin talks\b|\bseeks?\s+(?:(?:to\s+)?(?:raise|secure)\s+)?[$€£¥￥]\s*\d|\bseeks?\s+(?:(?:new|additional)\s+)?(?:funding|financing|capital|investment)\b|拟筹集|计划筹集|拟筹资|计划筹资|拟募资|计划募资|\btalking to\b|\b(?:seeking to|plans? to|aims? to|looking to|would)\s+(?:raise|secure)\b|\b(?:close to|nearing|on the verge of)\s+(?:raising|securing|closing)\b|拟融资|计划融资|寻求融资|融资洽谈|正在洽谈|正在谈判|即将融资|接近完成融资/iu.test(text)
   ));
   const mentions = texts.flatMap(fundingAmountMentions);
   const acceptedFundingClaims = claims.filter(claim => claimIds.has(claim.claim_id)
@@ -1243,6 +1243,10 @@ export function fundingEventCardConsistencyProblems(card = {}, event = {}, claim
   if (acceptedClaims.some((claim) => /\bseries\s+[a-z](?![a-z])\s+\d+\s*(?:hours?|days?|weeks?|months?|years?)\b/iu.test(claim.source_quote || ""))
     && normalizeFundingRound(card.financing?.round).code !== canonicalFundingEventRound(event, claims).code) {
     return ["funding_current_round_label_mismatch"];
+  }
+  // Accepted original spans outrank compressed event titles and objects.
+  if (fundingAmountUsesValuation(card.financing?.amount, acceptedClaims.map(claim => claim.source_quote))) {
+    return ["funding_amount_is_valuation"];
   }
   if (fundingAmountUsesValuation(card.financing?.amount, [
     event.display_title_zh, event.object,
