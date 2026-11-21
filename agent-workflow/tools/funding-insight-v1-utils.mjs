@@ -345,6 +345,27 @@ function currentRoundBesideHistoricalDisclosure(event = {}, claims = []) {
   return rounds.size === 1 ? [...rounds.values()][0] : null;
 }
 
+// A source may disclose decimal proceeds while its headline rounds to a whole
+// unit. Refine only an accepted current-round quote that rounds to that headline;
+// unrelated, past, cumulative and valuation amounts never qualify.
+function originalRoundPrecision(headline, acceptedClaims) {
+  const coarse = normalizeFundingAmount(headline?.raw || "");
+  const match = String(headline?.raw || "").match(/(?<![\d.])(\d+)\s*(万亿|千万|亿|万|trillion|billion|million|thousand|[TBMK])\s*$/iu);
+  if (!match || !coarse.currency || coarse.status !== "exact") return null;
+  const step = amountMultiplier(match[2]);
+  return acceptedClaims.flatMap(claim => {
+    const quote = clean(claim.source_quote);
+    if (/\b(?:previously|prior|last year|historically)\b|此前|去年|上轮|历史融资/iu.test(quote)) return [];
+    return fundingAmountMentions(quote);
+  }).find(mention => {
+    const precise = normalizeFundingAmount(mention.raw);
+    return mention.round && !mention.cumulative && !mention.valuation
+      && /\d\.\d/u.test(mention.raw) && precise.status === "exact"
+      && precise.currency === coarse.currency && precise.value !== coarse.value
+      && Math.round(precise.value / step) === coarse.value / step;
+  }) || null;
+}
+
 function fundingEventAmountSemantics(event = {}, claims = []) {
   const claimIds = new Set(event.claim_refs || []);
   const claimTexts = claims
@@ -361,7 +382,11 @@ function fundingEventAmountSemantics(event = {}, claims = []) {
     /\bin talks\b|\btalking to\b|\b(?:seeking to|plans? to|aims? to|looking to|would)\s+(?:raise|secure)\b|\b(?:close to|nearing|on the verge of)\s+(?:raising|securing|closing)\b|拟融资|计划融资|寻求融资|融资洽谈|正在洽谈|正在谈判|即将融资|接近完成融资/iu.test(text)
   ));
   const mentions = texts.flatMap(fundingAmountMentions);
-  const roundMention = mentions.find((mention) => mention.round);
+  const acceptedFundingClaims = claims.filter(claim => claimIds.has(claim.claim_id)
+    && claim.claim_type === "funding" && claim.verification_status === "accepted");
+  const headlineRound = fundingAmountMentions(currentDisclosure).find(mention => mention.round);
+  const roundMention = originalRoundPrecision(headlineRound, acceptedFundingClaims)
+    || mentions.find((mention) => mention.round);
   const metrics = (event.metrics || []).map(clean).filter(Boolean);
   const roundAmount = roundMention
     ? metrics.find((metric) => fundingAmountsEquivalent(metric, roundMention.raw)
@@ -1224,7 +1249,7 @@ export function fundingEventCardConsistencyProblems(card = {}, event = {}, claim
     ...acceptedClaims.flatMap((claim) => [claim.object, claim.source_quote]),
   ])) return ["funding_amount_is_valuation"];
   const proceeds = fundingAmountMentions([event.action, event.object].map(clean).filter(Boolean).join(" ")).find(mention => mention.round);
-  const observed = normalizeFundingAmount(proceeds?.raw || ""), researchAmount = normalizeFundingAmount(card.financing?.amount || "");
+  const observed = normalizeFundingAmount(proceeds ? fundingEventAmountSemantics(event, claims).roundAmount || proceeds.raw : ""), researchAmount = normalizeFundingAmount(card.financing?.amount || "");
   if (observed.currency && observed.currency === researchAmount.currency && Number.isFinite(observed.value) && Number.isFinite(researchAmount.value)
     && observed.value !== researchAmount.value) return ["funding_current_round_amount_mismatch"];
   if (canonicalFundingEventRound(event, claims).code === "multi_round" && normalizeFundingRound(card.financing?.round).code !== "multi_round") {
