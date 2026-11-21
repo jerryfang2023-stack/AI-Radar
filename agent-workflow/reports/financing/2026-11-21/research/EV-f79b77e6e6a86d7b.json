@@ -1,0 +1,70 @@
+{
+  "event_id": "EV-f79b77e6e6a86d7b",
+  "company_name": "半导体",
+  "status": "blocked",
+  "problems": [
+    "deepseek_json_quality_failed:company_full_name_missing|company_summary_missing|products_missing|product_form_id_missing|market_category_id_missing|market_subcategory_id_missing|market_subcategory_parent_mismatch:analysis.market_subcategory_id must use an exact key in {\"data\":\"infrastructure_compute\",\"development_deployment\":\"infrastructure_compute\",\"hardware_computing\":\"infrastructure_compute\",\"observability_evaluation\":\"infrastructure_compute\",\"customer_support\":\"enterprise_applications\",\"cyber_physical_security\":\"enterprise_applications\",\"hr\":\"enterprise_applications\",\"marketing\":\"enterprise_applications\",\"productivity_enterprise_workflows\":\"enterprise_applications\",\"sales\":\"enterprise_applications\",\"software_development_coding\":\"enterprise_applications\",\"financial_services\":\"industry_applications\",\"healthcare_life_sciences\":\"industry_applications\",\"industrials\":\"industry_applications\",\"legal\":\"industry_applications\",\"consumer_retail\":\"industry_applications\",\"education\":\"industry_applications\"}; the value is its required market_category_id. Do not copy industry_ids such as legal_services or use_case_ids such as legal_compliance into this field.|target_user_ids_empty"
+  ],
+  "queries": [
+    "\"半导体\" 2026 融资 投资方",
+    "\"半导体\" 官网 产品 服务",
+    "\"半导体\" 投资机构 融资用途",
+    "\"半导体\" 客户 创始人 总部"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"半导体\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://zhuanlan.zhihu.com/p/2023382726170932811",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"半导体\" 1092.43亿元 融资 领投 跟投",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"半导体\" 官网 产品 服务",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"半导体\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://zhuanlan.zhihu.com/p/53885274",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.lexology.com/library/detail.aspx?g=3a009818-cac0-4f64-9c49-dc86d7a34d58",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"半导体\" 2026 本轮融资 公告",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"半导体\" 客户 创始人 总部",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}

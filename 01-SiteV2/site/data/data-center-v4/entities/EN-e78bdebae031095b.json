@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-21",
+    "currentDate": "2026-11-21",
+    "eventCount": 4524,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -102,6 +102,7 @@
       "EV-3c51bcb5e99d2b68",
       "EV-afb294eb4d9baf2d",
       "EV-14051f3d4f43c4a7",
+      "EV-57b1043727f95137",
       "EV-3b80351ff05f68a1",
       "EV-1d592d9d6ed402c9",
       "EV-e100f5876a4f8e36",
@@ -134,15 +135,16 @@
       "EN-6fcba5d96a4fadfd"
     ],
     "firstSeen": "2026-02-17",
-    "lastSeen": "2026-11-20",
+    "lastSeen": "2026-11-21",
     "relationIds": [
       "REL2-30051dc5d7668662"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-dc10752743c440d9",
         "EV-afb294eb4d9baf2d",
         "EV-14051f3d4f43c4a7",
-        "EV-dc10752743c440d9",
+        "EV-57b1043727f95137",
         "EV-c5984dabb5a697b9",
         "EV-64ce72bdf3514b8e",
         "EV-d80c8dee36bd767a",
@@ -203,8 +205,25 @@
     },
     "timeline": [
       {
+        "id": "EV-dc10752743c440d9",
+        "dataDate": "2026-11-21",
+        "date": "2026-11-19",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "史上最大 IPO：Anthropic 每股定价 83 美元，预计募资 944 亿美元超 SpaceX",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d51456e488ff4d17",
+          "EN-c70eca6b0f88f44d",
+          "EN-e78bdebae031095b"
+        ]
+      },
+      {
         "id": "EV-afb294eb4d9baf2d",
-        "dataDate": "2026-11-20",
+        "dataDate": "2026-11-21",
         "date": "2026-11-20",
         "eventType": "ipo_listing",
         "eventTypeLabel": "IPO 与上市",
@@ -221,7 +240,7 @@
       },
       {
         "id": "EV-14051f3d4f43c4a7",
-        "dataDate": "2026-11-20",
+        "dataDate": "2026-11-21",
         "date": "2026-11-19",
         "eventType": "ipo_listing",
         "eventTypeLabel": "IPO 与上市",
@@ -236,18 +255,18 @@
         ]
       },
       {
-        "id": "EV-dc10752743c440d9",
-        "dataDate": "2026-11-19",
+        "id": "EV-57b1043727f95137",
+        "dataDate": "2026-11-21",
         "date": "2026-11-19",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
         "eventGroup": "融资与并购",
-        "status": "planned",
-        "statusLabel": "计划中",
-        "title": "史上最大 IPO：Anthropic 每股定价 83 美元，预计募资 944 亿美元超 SpaceX",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic 成功完成史上最大 IPO，估值达 $1.5T",
         "displayTags": [],
         "entityIds": [
-          "EN-d51456e488ff4d17",
+          "EN-2afc11a6ed346da3",
           "EN-c70eca6b0f88f44d",
           "EN-e78bdebae031095b"
         ]
@@ -1971,7 +1990,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-11-20"
+      "lastSeen": "2026-11-21"
     },
     {
       "id": "TX-technology-agentic_execution",

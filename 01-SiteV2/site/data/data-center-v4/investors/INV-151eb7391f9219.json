@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-21",
+    "currentDate": "2026-11-21",
+    "eventCount": 4524,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,25 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-06-02",
-    "latest_disclosed_at": "2026-09-17",
+    "latest_disclosed_at": "2026-11-20",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "other",
       "pre_series_b",
       "series_a",
       "series_c"
@@ -88,6 +89,11 @@
         "entity_id": "EN-c5146e8a5659ab7e",
         "canonical_entity_id": "",
         "name": "地瓜机器人"
+      },
+      {
+        "entity_id": "EN-6f7ac1823da81d2e",
+        "canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "name": "DeepSeek"
       },
       {
         "entity_id": "EN-aa949c066d46acbf",
@@ -101,6 +107,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-79640e3e4c0d98d2",
+        "funding_insight_id": "FI-faf8764cd64d29f0",
+        "event_ids": [
+          "EV-aab8ed97f5bf814a"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "第二轮融资",
+        "amount_original": "1000 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 亿元"
+        },
+        "announced_at": "2026-11-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-281ba3f1b7759a6c",
+            "source_url": "https://es.tradingview.com/news/panews:e41a6a7a3acdf:0/",
+            "source_title": "DeepSeek融资1055亿元细节曝光：估值约6155亿元，近30家投资者参与",
+            "source_content_hash": "0a50d01c35cb4c56",
+            "quote": "长鑫存储、中芯国际、vivo、美团、吉利汽车、美的集团、立讯精密、携程和小红书等产业资本也参与其中",
+            "quote_hash": "e3ce121b57232b038148a53553fe641fa49aacfd6b25340b9ae420372587c9f0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-56fee44e25a628e3",
         "funding_insight_id": "FI-e9d633fa8c039673",
@@ -256,6 +302,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-281ba3f1b7759a6c",
+        "source_url": "https://es.tradingview.com/news/panews:e41a6a7a3acdf:0/",
+        "source_title": "DeepSeek融资1055亿元细节曝光：估值约6155亿元，近30家投资者参与",
+        "source_content_hash": "0a50d01c35cb4c56",
+        "quote": "长鑫存储、中芯国际、vivo、美团、吉利汽车、美的集团、立讯精密、携程和小红书等产业资本也参与其中",
+        "quote_hash": "e3ce121b57232b038148a53553fe641fa49aacfd6b25340b9ae420372587c9f0"
+      },
+      {
         "source_id": "FISRC-517ef1b31eac6dd3",
         "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
         "source_title": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
@@ -307,16 +361,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：DeepSeek · 其他融资 · 2026-11-20 · 本轮参投 · 1000 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-281ba3f1b7759a6c"
+        },
+        {
           "description": "融资来源记录：地瓜机器人 · C轮 · 2026-09-17 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-517ef1b31eac6dd3"
         },
         {
           "description": "融资来源记录：Even Realities Technology · Pre-B轮 · 2026-07-07 · 本轮联合领投 · 1.5亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-340182e8dcb597a3"
-        },
-        {
-          "description": "融资来源记录：Mindverse（心洲科技） · A轮 · 2026-06-02 · 本轮领投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-db62e2a369722db7"
         }
       ],
       "contacts": [
@@ -338,6 +392,14 @@
           "quote_hash": "bc7ef03fe79c917492b715b5af6dab82820dd67443525188633df41e55417ebc"
         },
         {
+          "source_id": "FISRC-281ba3f1b7759a6c",
+          "source_url": "https://es.tradingview.com/news/panews:e41a6a7a3acdf:0/",
+          "source_title": "DeepSeek融资1055亿元细节曝光：估值约6155亿元，近30家投资者参与",
+          "source_content_hash": "0a50d01c35cb4c56",
+          "quote": "长鑫存储、中芯国际、vivo、美团、吉利汽车、美的集团、立讯精密、携程和小红书等产业资本也参与其中",
+          "quote_hash": "e3ce121b57232b038148a53553fe641fa49aacfd6b25340b9ae420372587c9f0"
+        },
+        {
           "source_id": "FISRC-517ef1b31eac6dd3",
           "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
           "source_title": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
@@ -352,14 +414,6 @@
           "source_content_hash": "5e7f9a9c8a73026b",
           "quote": "The round, which was led by Meituan and Tencent",
           "quote_hash": "afbd81cb4fab2cf31f179d101afd4269ff50e40ba9fb921b87dd229c9f2b52a6"
-        },
-        {
-          "source_id": "FISRC-db62e2a369722db7",
-          "source_url": "https://www.sohu.com/a/1031200047_355029",
-          "source_title": "真格天使项目「Mindverse」完成 5000 万美元 A 轮融资，打造持续学习的 Agent 模型",
-          "source_content_hash": "c1ba8ac91f9f03beb3b5c8e80b3d8b1ddbfe6a48107eb03308cfb8d103ec59d9",
-          "quote": "近日，Mindverse（心洲科技）完成由美团领投的 A 轮融资，元禾璞华、韶音、变量资本和老股东追加跟投，总融资额近 5000 万美元。",
-          "quote_hash": "a6a9b7839a4e41a59bd732ad9f849de7b19875cb9e38da7080f4ee3b6c3e6ec6"
         }
       ],
       "last_verified_at": "2026-09-26",
