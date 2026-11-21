@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {canonicalFundingEventAmount,normalizeFundingRound,fundingEventCardConsistencyProblems} from '../funding-insight-v1-utils.mjs';
+const event={event_id:'EV-current',event_type:'funding',event_status:'completed',publication_status:'verified',display_title_zh:'某AI企业完成新一轮融资',action:'raises',object:'$8M to expand its AI platform',metrics:['$4 million'],entities:['EN-acme'],claim_refs:['CL-current']};
+const claim={claim_id:'CL-current',claim_type:'funding',verification_status:'accepted',subject:'Acme',object:'new funding',source_quote:'Acme announced $8 million in new funding. It previously raised $4 million in 2025.'};
+const card=amount=>({company:{entity_id:'EN-acme',name:'Acme'},financing:{amount,round:'轮次未披露',investors:[]}});
+test('current structured financing action binds proceeds before a stale metric',()=>{assert.equal(canonicalFundingEventAmount(event,[claim]),'$8M');});
+test('an old round amount cannot pass as current proceeds',()=>{assert.ok(fundingEventCardConsistencyProblems(card('$4 million'),event,[claim],[]).includes('funding_current_round_amount_mismatch'));assert.deepEqual(fundingEventCardConsistencyProblems(card('$8 million'),event,[claim],[]),[]);});
+test('postfixed total funding remains cumulative and current original proceeds win',()=>{const e={...event,object:'$12M in total funding',metrics:['$12 million']};assert.equal(canonicalFundingEventAmount(e,[claim]),'$8 million');const only={...claim,source_quote:'Acme has raised $12 million in total funding.'};assert.equal(canonicalFundingEventAmount(e,[only]),'');});
+test('valuation still cannot become round proceeds after joining the action',()=>{const e={...event,object:'$2 billion valuation',metrics:['$2 billion']};assert.equal(canonicalFundingEventAmount(e,[claim]),'$8 million');});
+test('Chinese plus-round prose preserves combined angel rounds and original label',()=>{assert.equal(normalizeFundingRound('天使加轮').code,'angel_plus');const value='完成数亿元天使轮、天使加轮融资';assert.equal(normalizeFundingRound(value).code,'multi_round');assert.equal(normalizeFundingRound(value).original,value);assert.notEqual(normalizeFundingRound('天使加速器投资').code,'angel_plus');});

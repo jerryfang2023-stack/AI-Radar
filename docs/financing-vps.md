@@ -201,3 +201,7 @@ VPS手工恢复若搜索提供方均未配置，不复制其他窗口的密钥�
 
 
 2026-11-19：正式模型辅助在 --write=true --reuse-existing=true 且包含 qa_repair 时，复用最近七天已接受的责任人工修订。仅同源ID、相同URL/原始发布日期/正文hash及逐字证据全部一致时，登记到当天Raw ID；原审核人和审核时间保持，记录原候选定位，不调用模型。当前责任审核或较新拒绝优先；新正文、隔离Raw、实体合并候选和未审核模型建议不继承。仍经过现有事实、融资研究、分类及发布门禁，不能以跨日登记当作新事实批准或增加实质复核轮次。
+
+### 2026-11-21 current financing disclosure binding
+
+Financing amount selection binds the verified canonical action together with its object before considering sparse metrics or older-round mentions. Explicit total/cumulative funding remains separate from current proceeds. A same-currency point amount or multi-round label that contradicts the current disclosure fails the existing consistency gate and requires responsible repair. Chinese 天使加轮 is normalized as angel-plus, retaining the original text and combined-round meaning. Restore accepted inputs and resume production; these repairs never require rediscovery.

@@ -283,11 +283,14 @@ function fundingAmountMentions(value = "") {
       || /(?:[A-Z](?:\+|\d+)?|天使|种子)轮系列融资[^，,；;。！？]{0,12}$/iu.test(before)
       || /^\s*(?:[A-Z](?:\+|\d+)?|天使|种子)轮系列融资/iu.test(after)
       || /(?:total (?:funding|raised)|funding total)\s*(?:to|of|at)?\s*$/iu.test(before)
-      || /\btotal\s+(?:amount\s+)?raised\b[^.!?;:]{0,64}\bto\s*$/iu.test(before);
+      || /\btotal\s+(?:amount\s+)?raised\b[^.!?;:]{0,64}\bto\s*$/iu.test(before)
+      || /^\s+(?:in\s+)?(?:total|cumulative)\s+(?:funding|financing|capital|raised)\b/iu.test(after);
     const historical = /\bpreviously\s+(?:closed|raised|secured)\b[^.!?;]{0,40}$/iu.test(before);
     const round = !valuation && !cumulative && !historical && (
       // A financing verb in an earlier clause must not own a later valuation.
       /(?:完成|获得|获)[^，,：:；;。！？.!?]{0,32}$/u.test(before) && /^[^，,：:；;。！？.!?]{0,24}融资/u.test(after)
+      ||
+      /^\s+in\s+(?:new\s+)?(?:funding|financing)\b/iu.test(after)
       ||
       /^\s+in\s+(?:(?:pre[-\s]?)?series\s+[a-z](?![a-z])(?:\+|\d)?|(?:pre[-\s]?)?seed)\s+(?:round|funding|financing)\b/iu.test(after)
       ||
@@ -352,7 +355,8 @@ function fundingEventAmountSemantics(event = {}, claims = []) {
     .filter(Boolean);
   // Accepted original claims take precedence over compressed headlines, which
   // can present cumulative proceeds as though they belong to this round.
-  const texts = [event.object, ...claimTexts, ...(!claimTexts.length ? [event.display_title_zh] : [])].map(clean).filter(Boolean);
+  const currentDisclosure = [event.action, event.object].map(clean).filter(Boolean).join(" ");
+  const texts = [currentDisclosure, ...claimTexts, ...(!claimTexts.length ? [event.display_title_zh] : [])].map(clean).filter(Boolean);
   const preliminary = texts.some((text) => (
     /\bin talks\b|\btalking to\b|\b(?:seeking to|plans? to|aims? to|looking to|would)\s+(?:raise|secure)\b|\b(?:close to|nearing|on the verge of)\s+(?:raising|securing|closing)\b|拟融资|计划融资|寻求融资|融资洽谈|正在洽谈|正在谈判|即将融资|接近完成融资/iu.test(text)
   ));
@@ -458,7 +462,7 @@ export function normalizeFundingRound(value = "") {
     return { code: "undisclosed", label: FUNDING_ROUND_LABELS.undisclosed, original };
   }
   // A duration after the series letter is prose, not a numbered sub-round.
-  const text = original.normalize("NFKC").toLowerCase().replace(
+  const text = original.normalize("NFKC").replace(/天使\s*加(?=\s*(?:轮|融资))/gu, "天使+").toLowerCase().replace(
     /(\b(?:pre[-\s]*)?series\s*[a-z](?![a-z]))\s+(?=\d+(?:\.\d+)?\s*(?:hours?|days?|weeks?|months?|years?)\b)/giu,
     "$1, ",
   );
@@ -1219,6 +1223,13 @@ export function fundingEventCardConsistencyProblems(card = {}, event = {}, claim
     event.display_title_zh, event.object,
     ...acceptedClaims.flatMap((claim) => [claim.object, claim.source_quote]),
   ])) return ["funding_amount_is_valuation"];
+  const proceeds = fundingAmountMentions([event.action, event.object].map(clean).filter(Boolean).join(" ")).find(mention => mention.round);
+  const observed = normalizeFundingAmount(proceeds?.raw || ""), researchAmount = normalizeFundingAmount(card.financing?.amount || "");
+  if (observed.currency && observed.currency === researchAmount.currency && Number.isFinite(observed.value) && Number.isFinite(researchAmount.value)
+    && observed.value !== researchAmount.value) return ["funding_current_round_amount_mismatch"];
+  if (canonicalFundingEventRound(event, claims).code === "multi_round" && normalizeFundingRound(card.financing?.round).code !== "multi_round") {
+    return ["funding_current_round_label_mismatch"];
+  }
   const currentRound = currentRoundBesideHistoricalDisclosure(event, claims);
   if (currentRound) {
     if (!fundingAmountsEquivalent(card.financing?.amount, currentRound.amount)) return ["funding_current_round_amount_mismatch"];
