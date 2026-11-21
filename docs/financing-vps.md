@@ -212,3 +212,6 @@ Financing amount selection binds the verified canonical action together with its
 恢复旧 followup 时，尝试/回执数组按完整记录身份合并保留，不以旧快照覆盖后来请求。
 
 2026-11-21：融资金额校验把市值/market capitalization与估值一并排除，已接受原文引文优先于标题动作；seeks加金额及拟筹集/拟募资仍为未完成状态，已完成融资的资金拟用途不受影响。
+
+2026-11-21：在已核对的最新 origin/main 恢复旧产物时，已准入目录拥有相同事件、相同已定实体ID且 canonical 原文四项绑定完全一致的前日研究；旧研究草稿及其逐事件缓存不重新带回。原 artifact 保留、先校验全部 hash；不同正文或非 main 分支继续普通复核，不自动合并实体。
+隔离目录处于 detached HEAD 时，首次推送日期分支使用完整目标引用（HEAD:refs/heads/automation/financing-YYYY-MM-DD）；推送失败后保留并复用已验证提交，不重做采集或强推。

@@ -33,6 +33,24 @@ export function snapshot(root, directory, date) {
   write(path.join(directory,'manifest.json'), { version: 'FINANCING-CHECKPOINT-1', date, base_commit:head.stdout.trim(), entries });
   return entries;
 }
+function acceptedMainResearch(root, date, head) {
+  const main=spawnSync('git',['rev-parse','refs/remotes/origin/main'],{cwd:root,encoding:'utf8'});
+  if(main.status!==0 || main.stdout.trim()!==head)return new Map();
+  const result=spawnSync('git',['show',`${head}:01-SiteV2/site/data/financing-catalog-v1.json`],{cwd:root,encoding:'utf8',maxBuffer:64*1024*1024});
+  if(result.status!==0)return new Map();
+  const accepted=new Map();
+  for(const card of JSON.parse(result.stdout).event_cards || []) {
+    if(!/^\d{4}-\d{2}-\d{2}$/u.test(card.as_of_date || '') || card.as_of_date>=date)continue;
+    for(const id of [card.triggered_by_event_id,...(card.source_event_ids || [])].filter(Boolean))accepted.set(id,card);
+  }
+  return accepted;
+}
+function canonicalResearchBinding(card) {
+  return [...new Set((card?.research_sources || []).filter(source=>source.source_class==='canonical_event_source'
+    && source.source_id && source.source_artifact_id && source.source_url && source.content_hash)
+    .map(source=>JSON.stringify([source.source_id,source.source_artifact_id,source.source_url,source.content_hash])))].sort();
+}
+
 export function restore(root, directory, date) {
   const manifest = read(path.join(directory,'manifest.json'));
   if (manifest?.version !== 'FINANCING-CHECKPOINT-1' || manifest.date !== date) throw new Error('invalid_checkpoint_identity');
@@ -50,6 +68,12 @@ export function restore(root, directory, date) {
   const modelPath = `01-SiteV2/content/11-databases/model-assist-v1/${date}.json`;
   const sourceReviewsPath = '01-SiteV2/content/11-databases/data-center-v4/source-fact-reviews.json';
   const supplementalPath = `agent-workflow/reports/financing/${date}/supplemental.json`;
+  const acceptedMain=changedBase ? acceptedMainResearch(root,date,head.stdout?.trim()) : new Map();
+  const superseded=card=>{
+    const accepted=acceptedMain.get(card?.triggered_by_event_id),binding=canonicalResearchBinding(card);
+    return accepted?.company?.entity_id && accepted.company.entity_id===card?.company?.entity_id
+      && binding.length && JSON.stringify(binding)===JSON.stringify(canonicalResearchBinding(accepted)) ? accepted : null;
+  };
   const union = (older, newer, key) => [...new Map([...(older || []), ...(newer || [])].map(row => [row[key], row])).values()];
   for (const entry of manifest.entries) {
     // On a newer main, reuse only this run's inputs/results. Old global indexes
@@ -57,6 +81,18 @@ export function restore(root, directory, date) {
     if(changedBase && !entry.file.startsWith(`agent-workflow/reports/financing/${date}/`)
       && ![intakePath, researchPath, modelPath, sourceReviewsPath].includes(entry.file)) continue;
     const file = path.join(root,entry.file), source = path.join(directory,'files',entry.file);
+    // A later accepted main owns the same original event, including research.
+    // The artifact stays intact; omit both stale drafts and their replay cache.
+    if(changedBase && entry.file.startsWith(`agent-workflow/reports/financing/${date}/research/`)
+      && superseded(read(source)?.card))continue;
+    const incomingResearch=changedBase && entry.file===researchPath ? read(source) : null;
+    if(incomingResearch) {
+      const omitted=new Map((incomingResearch.cards || []).map(card=>[card.triggered_by_event_id,superseded(card)]).filter(([,accepted])=>accepted));
+      incomingResearch.cards=(incomingResearch.cards || []).filter(card=>!omitted.has(card.triggered_by_event_id));
+      incomingResearch.queue=(incomingResearch.queue || []).map(row=>omitted.has(row.event_id)
+        ? {...row,status:'deduplicated',reason:'accepted_main_same_event_and_original_preserved',duplicate_of_funding_insight_id:omitted.get(row.event_id).funding_insight_id} : row);
+    }
+
     // Accepted main owns responsible dispositions. An older artifact must not
     // restore an exclusion over a newer pending review on the same run date.
     if(changedBase && fs.existsSync(file) && ['pending247-review.json','lead-review.json','disposition-review.json']
@@ -71,7 +107,7 @@ export function restore(root, directory, date) {
       // non-conflicting reviewed sources prepared by the resumed artifact.
       write(file,{...incoming,...current,sources:{...incoming.sources,...current.sources}});
     } else if (changedBase && fs.existsSync(file) && entry.file === researchPath) {
-      const current=read(file), incoming=read(source);
+      const current=read(file), incoming=incomingResearch;
       const eventIds=card=>[card.triggered_by_event_id,...(card.source_event_ids || [])].filter(Boolean);
       const acceptedEvents=new Set((current.cards || []).flatMap(eventIds));
       const additions=(incoming.cards || []).filter(card=>!eventIds(card).some(id=>acceptedEvents.has(id)));
@@ -90,6 +126,7 @@ export function restore(root, directory, date) {
       // the raw IDs needed to process evidence added after that run began.
       write(file,{...incoming,...current,raw_ids:[...new Set([...(incoming.raw_ids || []),...(current.raw_ids || [])])]});
     }
+    else if(incomingResearch)write(file,incomingResearch);
     else fs.copyFileSync(source,file);
   }
   if(changedBase) {
