@@ -73,6 +73,14 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
   const resolveTriage=valueTriageResolver({backupRoot,date});
   const processLead = async ([url, receipt]) => {
     const queued = queue.entries[url];
+    // Replaying an older accepted day cannot adjudicate a later queue update.
+    if (queued?.last_processed_date > date) {
+      processed.add(url);
+      state.entries[url]={...state.entries[url],source_url:url,origin_date:queued.origin_date || date,
+        status:'pending',reason:queued.reason,checks:pendingChecks(),fact_review_completed:queued.fact_review_completed,
+        followup:queued,disposition:{action:'retain',reason:'newer_private_review_preserved'}};
+      write(file,state);return;
+    }
     const disposition=resolveDisposition(url,receipt,queued);
     const triage=resolveTriage(url,receipt,queued);
     const dispositionTime=disposition.pending_review?.reviewed_at || disposition.proof?.reviewed_at;
@@ -385,7 +393,7 @@ export function finishVerification({ root, directory, date, backupRoot }) {
         && priorEvidence.source_binding?.content_hash===priorEvidence.content_hash
         && priorEvidence.source_binding?.reviewed_by
         && priorEvidence.review_stage && priorEvidence.review_stage!=='needs_original';
-      if (preserveBoundEvidence || (latestDisposition?.action==='retain'
+      if (priorEvidence?.last_processed_date > date || preserveBoundEvidence || (latestDisposition?.action==='retain'
           && ['newer_private_review_preserved','private_evidence_conflicts_with_collection'].includes(latestDisposition.reason)
           && privateQueue.entries[row.source_url])) {
         row.status='pending';row.reason=privateQueue.entries[row.source_url].reason;
