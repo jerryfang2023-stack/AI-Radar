@@ -209,3 +209,4 @@ Financing amount selection binds the verified canonical action together with its
 2026-11-21：标题把融资额取整时，仅允许来源绑定且已接受的本轮正文小数金额恢复精度；其金额须能按标题单位四舍五入回原数。历史轮次、累计融资、估值及冲突金额不得借此通过。
 
 2026-11-21：恢复旧日期时，若私有队列 last_processed_date 晚于该日期，verify 与 finish 两阶段均保留后来状态及尝试账本，不允许旧采集排除覆盖新队列；旧日报仅记录待核验。
+恢复旧 followup 时，尝试/回执数组按完整记录身份合并保留，不以旧快照覆盖后来请求。
