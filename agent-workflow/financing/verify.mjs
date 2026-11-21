@@ -26,6 +26,23 @@ const pendingChecks = () => Object.fromEntries(dimensions.map(key => [key, 'pend
 
 // This is a bounded follow-up of the existing queue, never discovery. The caller
 // holds the daily run lock; the owning workflow holds the global publication slot.
+function preserveAttemptReceipts(previous = {}, next = {}) {
+  const result=structuredClone(next);
+  const preserve=(value,parts=[])=>{
+    if(Array.isArray(value)) {
+      if(!parts.some(key=>/attempt|receipt/iu.test(key)))return;
+      let target=result;
+      for(const key of parts.slice(0,-1)) {
+        if(!target[key] || typeof target[key]!=='object' || Array.isArray(target[key]))target[key]={};
+        target=target[key];
+      }
+      const key=parts.at(-1),current=Array.isArray(target[key])?target[key]:[];
+      target[key]=[...new Map([...value,...current].map(item=>[digest(item),item])).values()];
+    } else if(value && typeof value==='object')for(const[key,item]of Object.entries(value))preserve(item,[...parts,key]);
+  };
+  preserve(previous);return result;
+}
+
 export async function verifyPending({ root, directory, backupRoot, date, capture = captureOriginal, search, resume = false }) {
   const collection = read(path.join(directory, 'collection.json'));
   if (!collection?.accepted || collection.date !== date) throw new Error('accepted_financing_collection_required');
@@ -73,6 +90,14 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
   const resolveTriage=valueTriageResolver({backupRoot,date});
   const processLead = async ([url, receipt]) => {
     const queued = queue.entries[url];
+    // Replaying an older accepted day cannot adjudicate a later queue update.
+    if (queued?.last_processed_date > date) {
+      processed.add(url);
+      state.entries[url]={...state.entries[url],source_url:url,origin_date:queued.origin_date || date,
+        status:'pending',reason:queued.reason,checks:pendingChecks(),fact_review_completed:queued.fact_review_completed,
+        followup:queued,disposition:{action:'retain',reason:'newer_private_review_preserved'}};
+      write(file,state);return;
+    }
     const disposition=resolveDisposition(url,receipt,queued);
     const triage=resolveTriage(url,receipt,queued);
     const dispositionTime=disposition.pending_review?.reviewed_at || disposition.proof?.reviewed_at;
@@ -313,7 +338,8 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
         {attempted:false,reason:row.reason});
     }
     if(!preservedFollowup)row.followup.review_stage=reviewStage(row);
-    queue.entries[url]=row.followup;
+    queue.entries[url]=preserveAttemptReceipts(queue.entries[url],row.followup);
+    row.followup=queue.entries[url];
   }
   state.followup_queue={pending:Object.values(queue.entries).filter(item=>item.status==='pending').length,needs_attention:Object.values(queue.entries).filter(item=>item.status==='needs_attention').length};
   state.review_budget=budget.summary();
@@ -385,7 +411,7 @@ export function finishVerification({ root, directory, date, backupRoot }) {
         && priorEvidence.source_binding?.content_hash===priorEvidence.content_hash
         && priorEvidence.source_binding?.reviewed_by
         && priorEvidence.review_stage && priorEvidence.review_stage!=='needs_original';
-      if (preserveBoundEvidence || (latestDisposition?.action==='retain'
+      if (priorEvidence?.last_processed_date > date || preserveBoundEvidence || (latestDisposition?.action==='retain'
           && ['newer_private_review_preserved','private_evidence_conflicts_with_collection'].includes(latestDisposition.reason)
           && privateQueue.entries[row.source_url])) {
         row.status='pending';row.reason=privateQueue.entries[row.source_url].reason;
