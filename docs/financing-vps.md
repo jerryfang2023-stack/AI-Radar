@@ -205,3 +205,5 @@ VPS手工恢复若搜索提供方均未配置，不复制其他窗口的密钥�
 ### 2026-11-21 current financing disclosure binding
 
 Financing amount selection binds the verified canonical action together with its object before considering sparse metrics or older-round mentions. Explicit total/cumulative funding remains separate from current proceeds. A same-currency point amount or multi-round label that contradicts the current disclosure fails the existing consistency gate and requires responsible repair. Chinese 天使加轮 is normalized as angel-plus, retaining the original text and combined-round meaning. Restore accepted inputs and resume production; these repairs never require rediscovery.
+
+2026-11-21：标题把融资额取整时，仅允许来源绑定且已接受的本轮正文小数金额恢复精度；其金额须能按标题单位四舍五入回原数。历史轮次、累计融资、估值及冲突金额不得借此通过。
