@@ -5,17 +5,17 @@
     "site_version": "SITE-V4.6.1-research-retirement",
     "column_version": "FUNDING-INSIGHT-V1.5.0-china-market",
     "taxonomy_version": "AI-FUNDING-TAGS-1.0",
-    "latest_date": "2026-11-20",
-    "last_checked_date": "2026-11-20",
-    "latest_financing_date": "2026-11-19",
-    "generated_at": "2026-11-21T05:00:43.728Z",
-    "card_count": 742,
-    "china_market_card_count": 159,
+    "latest_date": "2026-11-21",
+    "last_checked_date": "2026-11-21",
+    "latest_financing_date": "2026-11-20",
+    "generated_at": "2026-11-21T06:28:49.280Z",
+    "card_count": 744,
+    "china_market_card_count": 161,
     "duplicate_rounds_removed": 26,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-11-21T05:02:46.365Z"
+      "generated_at": "2026-11-21T06:30:43.615Z"
     },
     "market_category_framework": {
       "name": "观澜 AI 融资分类",
@@ -35,12 +35,12 @@
         }
       ]
     },
-    "event_count": 794,
+    "event_count": 796,
     "aggregation_strategy": "reviewed_funding_subject",
     "scope": "all_ai_financing_except_embodied_and_robotics",
     "excluded_count": 99,
     "pending_classification_count": 22,
-    "pending_publication_count": 49
+    "pending_publication_count": 51
   },
   "taxonomy": {
     "version": "AI-FUNDING-TAGS-1.0",
@@ -738,6 +738,828 @@
     ]
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-774d78aac219c4a8",
+      "triggered_by_event_id": "EV-d84355ecbf21be85",
+      "as_of_date": "2026-11-21",
+      "company": {
+        "entity_id": "EN-6c72a44dd49f926c",
+        "name": "诚恒微",
+        "full_name": "无锡诚恒微电子有限公司",
+        "website": "https://chenghengmicro.com/",
+        "summary": "诚恒微专注于边端侧AI SoC及解决方案的创新研发与产业应用，产品面向算力需求较高的具身智能与边缘计算等通用市场，覆盖机器人、无人机、边缘计算终端、智能交互终端等。",
+        "headquarters": "无锡",
+        "founders": [],
+        "team_size": {
+          "value": "约70人",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-981acf4cf4576c9b",
+              "quote": "目前团队约 70 人，在北京、上海、长沙、深圳均设有研发站点。",
+              "source_content_hash": "e6feb566e471475e",
+              "quote_hash": "6487d0cb3f7a179601e8c1bcafc5ddbfa3ad9a4aca12c07af2b21a72ea4c4d54"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "quote": "无锡诚恒微电子有限公司（简称“诚恒微”）专注于边端侧AI SoC及解决方案的创新研发与产业应用",
+            "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+            "quote_hash": "bb553b0056b608f70df009c8a16b19f1f4be9957e3c7ad8feb887166bf8a5db8"
+          },
+          {
+            "source_id": "FISRC-43992a92d9874bc7",
+            "quote": "诚恒微成立于2023年6月，总部位于无锡",
+            "source_content_hash": "e103726c7f092781",
+            "quote_hash": "705786501d9d92ff8549d3f56627d9ca1c892a2dfc6d4bee97fa581f12e1d9d8"
+          }
+        ],
+        "application_entity_id": "EN-6c72a44dd49f926c",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "近2亿元",
+        "total_raised": "",
+        "announced_at": "2026-11-20",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "中金资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-8de42d41a48949"
+          },
+          {
+            "name": "中车资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-511b22acdf58b3"
+          },
+          {
+            "name": "毅达资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-dd009483843627"
+          },
+          {
+            "name": "锡创兴吴",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-26a082dfa77e8a"
+          },
+          {
+            "name": "奇安投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-1d5dd3e84f3c07"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "quote": "投资界（ID：pedaily2012）11月20日消息，诚恒微完成近2亿元人民币A轮融资。",
+            "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+            "quote_hash": "3f86a8dcc6e9372d3e0a2ab87f8ed120dc5f1c645fa8f92fccdec81ab873baf0"
+          },
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "quote": "诚恒微完成近2亿元人民币A轮融资。本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+            "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+            "quote_hash": "2b06d21083c1cf71be3b1db5098683d4717283b3672c6d00e67ed1667d1ecf14"
+          },
+          {
+            "source_id": "FISRC-43992a92d9874bc7",
+            "quote": "近日，无锡诚恒微电子有限公司（以下简称“诚恒微”）完成近2亿元人民币A轮融资。本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+            "source_content_hash": "e103726c7f092781",
+            "quote_hash": "721a907e94caea05530c3c83c2d3d7fbffb483bd1cdeb51225b800b139fe68e2"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "近2亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 2 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-d84355ecbf21be85",
+            "round_original": "A轮",
+            "amount": "近2亿元",
+            "announced_at": "2026-11-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "投资界（ID：pedaily2012）11月20日消息，诚恒微完成近2亿元人民币A轮融资。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "3f86a8dcc6e9372d3e0a2ab87f8ed120dc5f1c645fa8f92fccdec81ab873baf0"
+              },
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "诚恒微完成近2亿元人民币A轮融资。本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "2b06d21083c1cf71be3b1db5098683d4717283b3672c6d00e67ed1667d1ecf14"
+              },
+              {
+                "source_id": "FISRC-43992a92d9874bc7",
+                "quote": "近日，无锡诚恒微电子有限公司（以下简称“诚恒微”）完成近2亿元人民币A轮融资。本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                "source_content_hash": "e103726c7f092781",
+                "quote_hash": "721a907e94caea05530c3c83c2d3d7fbffb483bd1cdeb51225b800b139fe68e2"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "CNY",
+              "value": 200000000,
+              "min_value": 200000000,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "approximate",
+              "display_zh": "约 2 亿元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-ad4bbd905a940afc",
+          "FISRC-43992a92d9874bc7"
+        ]
+      },
+      "products": [
+        {
+          "name": "CH37系列边端侧AI SoC",
+          "description": "采用异构计算架构，将CPU、GPU、NPU、GPGPU、ISP等核心模块高度集成，面向算力需求较高的具身智能与边缘计算等通用市场，可提供64TOPS@INT8的峰值AI算力，支持FP16/FP32/FP64混合精度计算，具备强实时多传感器数据处理能力，可实现低时延多模态融合感知。",
+          "target_customers": "机器人、无人机、边缘计算终端、智能交互终端等应用方向",
+          "features": [
+            "异构集成CPU、GPU、NPU、GPGPU、ISP等模块",
+            "峰值算力达64TOPS@INT8",
+            "支持FP16/FP32/FP64混合精度计算",
+            "强实时多传感器数据处理能力",
+            "低时延多模态融合感知"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-43992a92d9874bc7",
+              "quote": "自研旗舰产品CH37系列异构集成CPU、GPU、NPU、GPGPU、ISP等模块，峰值算力达64TOPS@INT8，支持FP16/FP32/FP64混合精度计算，具备强实时多传感器数据处理能力，可实现低时延多模态融合感知。",
+              "source_content_hash": "e103726c7f092781",
+              "quote_hash": "d93a389fbfd0d41864ee1b527a026fafbf4e74e1e44e5846574306e4eaf2d935"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "英伟达",
+          "product": "Jetson、Thor",
+          "scenario": "机器人开发套件、高端终端",
+          "target_customer": "机器人开发套件、高端终端厂商",
+          "funding_summary": "",
+          "core_difference": "英伟达Jetson、Thor占据机器人开发套件、高端终端主流市场；诚恒微CH37系列为国产边端侧AI SoC，主打单芯片高集成方案替代传统多芯片分工协作架构。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-981acf4cf4576c9b",
+              "quote": "英伟达 Jetson、Thor，高通端侧算力平台占据机器人开发套件、高端终端主流市场",
+              "source_content_hash": "e6feb566e471475e",
+              "quote_hash": "79b0618710ad8d5958aa6d491ca4d751a6e934f90dd8dc569c40765a44a82c33"
+            }
+          ],
+          "entity_id": "EN-8d4321d936320802"
+        },
+        {
+          "name": "高通",
+          "product": "端侧算力平台",
+          "scenario": "机器人开发套件、高端终端",
+          "target_customer": "机器人开发套件、高端终端厂商",
+          "funding_summary": "",
+          "core_difference": "高通端侧算力平台占据机器人开发套件、高端终端主流市场；诚恒微CH37系列为国产边端侧AI SoC，主打单芯片高集成方案替代传统多芯片分工协作架构。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-981acf4cf4576c9b",
+              "quote": "英伟达 Jetson、Thor，高通端侧算力平台占据机器人开发套件、高端终端主流市场",
+              "source_content_hash": "e6feb566e471475e",
+              "quote_hash": "79b0618710ad8d5958aa6d491ca4d751a6e934f90dd8dc569c40765a44a82c33"
+            }
+          ],
+          "entity_id": "EN-42a64c68a4a98ad5"
+        },
+        {
+          "name": "地平线",
+          "product": "边端AI芯片",
+          "scenario": "边端AI芯片",
+          "target_customer": "边端AI芯片客户",
+          "funding_summary": "",
+          "core_difference": "地平线已有成熟量产方案；诚恒微CH37系列已进入小批量交付阶段，主打单芯片高集成方案替代传统多芯片分工协作架构。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-981acf4cf4576c9b",
+              "quote": "国内地平线、爱芯元智、瑞芯微等厂商已有成熟量产方案",
+              "source_content_hash": "e6feb566e471475e",
+              "quote_hash": "81d823d3909b57e82b3977a0b83c6e14c3b620d873ff468dbeaa0fc663c287b2"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "爱芯元智",
+          "product": "边端AI芯片",
+          "scenario": "边端AI芯片",
+          "target_customer": "边端AI芯片客户",
+          "funding_summary": "",
+          "core_difference": "爱芯元智已有成熟量产方案；诚恒微CH37系列已进入小批量交付阶段，主打单芯片高集成方案替代传统多芯片分工协作架构。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-981acf4cf4576c9b",
+              "quote": "国内地平线、爱芯元智、瑞芯微等厂商已有成熟量产方案",
+              "source_content_hash": "e6feb566e471475e",
+              "quote_hash": "81d823d3909b57e82b3977a0b83c6e14c3b620d873ff468dbeaa0fc663c287b2"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "瑞芯微",
+          "product": "边端AI芯片",
+          "scenario": "边端AI芯片",
+          "target_customer": "边端AI芯片客户",
+          "funding_summary": "",
+          "core_difference": "瑞芯微已有成熟量产方案；诚恒微CH37系列已进入小批量交付阶段，主打单芯片高集成方案替代传统多芯片分工协作架构。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-981acf4cf4576c9b",
+              "quote": "国内地平线、爱芯元智、瑞芯微等厂商已有成熟量产方案",
+              "source_content_hash": "e6feb566e471475e",
+              "quote_hash": "81d823d3909b57e82b3977a0b83c6e14c3b620d873ff468dbeaa0fc663c287b2"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "近2亿元人民币",
+          "observed_at": "2026-11-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ad4bbd905a940afc",
+              "quote": "诚恒微完成近2亿元人民币A轮融资。",
+              "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+              "quote_hash": "b1642198324c824072020cf14945f9d3cb1228b29389fca05cbd70968d2a4c64"
+            }
+          ]
+        },
+        {
+          "label": "CH37系列峰值算力",
+          "value": "64TOPS@INT8",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-43992a92d9874bc7",
+              "quote": "峰值算力达64TOPS@INT8",
+              "source_content_hash": "e103726c7f092781",
+              "quote_hash": "7ed9034f4228cc5cd7ae2788399013f2ae52d9b3d5c77233f651afe061136379"
+            }
+          ]
+        },
+        {
+          "label": "团队规模",
+          "value": "约70人",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-981acf4cf4576c9b",
+              "quote": "目前团队约 70 人",
+              "source_content_hash": "e6feb566e471475e",
+              "quote_hash": "5560a4a2660b859b075267a350accc7a765ecaeb3984c04f78cc039b8a0d5c50"
+            }
+          ]
+        },
+        {
+          "label": "成立时间",
+          "value": "2023年6月",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-43992a92d9874bc7",
+              "quote": "诚恒微成立于2023年6月",
+              "source_content_hash": "e103726c7f092781",
+              "quote_hash": "44e128bbdf8e5691b92a30279321cbc5a51ac171495c52de54177b660362a5df"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "投资界",
+          "quote": "诚恒微完成近2亿元人民币A轮融资。本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ad4bbd905a940afc",
+              "quote": "诚恒微完成近2亿元人民币A轮融资。本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+              "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+              "quote_hash": "2b06d21083c1cf71be3b1db5098683d4717283b3672c6d00e67ed1667d1ecf14"
+            }
+          ]
+        },
+        {
+          "speaker": "诚恒微",
+          "quote": "融资资金将主要用于公司日常经营与业务拓展，支撑边端侧AI SoC芯片的规模化量产与市场交付。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-43992a92d9874bc7",
+              "quote": "融资资金将主要用于公司日常经营与业务拓展，支撑边端侧AI SoC芯片的规模化量产与市场交付。",
+              "source_content_hash": "e103726c7f092781",
+              "quote_hash": "0bc19b95025fb0dbbbe9dfbf0ceee342fd22daf60a394efc28a3f4cc5ab2a832"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是诚恒微CH37系列边端侧AI SoC能否从当前小批量交付阶段推进至规模化量产与市场交付，并在具身智能与边缘计算两大增量市场中建立先发位置。当前融资所依赖的已验证信号包括：CH37系列已进入小批量交付阶段、峰值算力64TOPS@INT8、异构集成CPU/GPU/NPU/GPGPU/ISP等模块，以及本轮投资方覆盖大型国有PE、大型国有产业资本、地方资本与民营产业资本。证据边界在于：来源未披露本轮具体估值、累计融资额、客户订单金额或收入数据，CH37系列量产良率、客户定点进展与出货节奏仍待后续验证。",
+        "validated_signals": [
+          "CH37系列已进入小批量交付阶段",
+          "CH37系列峰值算力达64TOPS@INT8，支持FP16/FP32/FP64混合精度计算",
+          "CH37系列异构集成CPU、GPU、NPU、GPGPU、ISP等模块",
+          "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与"
+        ],
+        "risks": [
+          "来源未披露本轮具体估值与累计融资额，资本判断缺少估值锚点",
+          "CH37系列量产良率、客户定点进展与出货节奏尚未在来源中披露，规模化交付仍待验证",
+          "边端AI芯片赛道竞争激烈，英伟达、高通等海外方案主导，国内地平线、爱芯元智、瑞芯微等已有成熟量产方案",
+          "来源未披露具体客户订单金额或收入数据，商业化进展缺少量化验证"
+        ],
+        "sector": "AI 芯片与加速器",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是诚恒微CH37系列边端侧AI SoC能否从当前小批量交付阶段推进至规模化量产与市场交付，并在具身智能与边缘计算两大增量市场中建立先发位置。当前融资所依赖的已验证信号包括：CH37系列已进入小批量交付阶段、峰值算力64TOPS@INT8、异构集成CPU/GPU/NPU/GPGPU/ISP等模块，以及本轮投资方覆盖大型国有PE、大型国有产业资本、地方资本与民营产业资本。证据边界在于：来源未披露本轮具体估值、累计融资额、客户订单金额或收入数据，CH37系列量产良率、客户定点进展与出货节奏仍待后续验证。",
+          "evidence_signals": [
+            "CH37系列已进入小批量交付阶段",
+            "CH37系列峰值算力达64TOPS@INT8，支持FP16/FP32/FP64混合精度计算",
+            "CH37系列异构集成CPU、GPU、NPU、GPGPU、ISP等模块",
+            "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与"
+          ],
+          "risks": [
+            "来源未披露本轮具体估值与累计融资额，资本判断缺少估值锚点",
+            "CH37系列量产良率、客户定点进展与出货节奏尚未在来源中披露，规模化交付仍待验证",
+            "边端AI芯片赛道竞争激烈，英伟达、高通等海外方案主导，国内地平线、爱芯元智、瑞芯微等已有成熟量产方案",
+            "来源未披露具体客户订单金额或收入数据，商业化进展缺少量化验证"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "CH37系列边端侧AI SoC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中金资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中车资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "毅达资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "锡创兴吴",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "奇安投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "英伟达",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "高通",
+          "canonical_entity_id": "EN-42a64c68a4a98ad5",
+          "canonical_name": "高通"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "地平线",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "爱芯元智",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "瑞芯微",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-d84355ecbf21be85",
+          "date": "2026-11-20",
+          "title": "诚恒微完成近2亿元A轮融资，加速边端侧AI SoC规模化落地",
+          "amount": "近2亿元人民币",
+          "source_refs": [
+            "SA-01e8778e481baf08"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-ad4bbd905a940afc",
+          "source_url": "https://news.pedaily.cn/202611/572144.shtml",
+          "title": "诚恒微完成近2亿元A轮融资，加速边端侧AI SoC规模化落地",
+          "publisher": "news.pedaily.cn",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-21T00:38:38.301Z",
+          "content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+          "source_artifact_id": "SA-01e8778e481baf08",
+          "raw_id": "RAW-0c03554984474213",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-43992a92d9874bc7",
+          "source_url": "https://chenghengmicro.com/news/37.html",
+          "title": "诚恒微完成近2亿元A轮融资，加速边端侧AI SoC规模化落地 - 新闻动态 - 无锡诚恒微电子有限公司 - 专注于边端侧 AI 与高性能视觉处理 | 诚恒微 | 无锡诚恒微 | 诚恒微电子",
+          "publisher": "chenghengmicro.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-21T00:41:50.682Z",
+          "content_hash": "e103726c7f092781",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-981acf4cf4576c9b",
+          "source_url": "https://m.sohu.com/a/1104160998_121405769?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "title": "端侧AI芯片公司诚恒微融资2亿A轮，投后估值近12亿元",
+          "publisher": "m.sohu.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-21T00:41:51.036Z",
+          "content_hash": "e6feb566e471475e",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-21T00:42:22.103Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-21T00:42:22.103Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "CH37系列边端侧AI SoC"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-d84355ecbf21be85"
+      ],
+      "aggregation": {
+        "key": "EN-6c72a44dd49f926c|series_a|CNY:approximate:200000000:::|2026-11-20",
+        "event_count": 1,
+        "strategy": "reviewed_funding_subject",
+        "subject_id": "EN-6c72a44dd49f926c",
+        "source_card_count": 1
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-774d78aac219c4a8",
+          "event_ids": [
+            "EV-d84355ecbf21be85"
+          ],
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "近2亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 200000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 2 亿元"
+          },
+          "announced_at": "2026-11-20",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true,
+          "investors": [
+            {
+              "name": "中金资本",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-ad4bbd905a940afc",
+                  "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                  "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                  "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-8de42d41a48949"
+            },
+            {
+              "name": "中车资本",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-ad4bbd905a940afc",
+                  "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                  "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                  "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-511b22acdf58b3"
+            },
+            {
+              "name": "毅达资本",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-ad4bbd905a940afc",
+                  "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                  "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                  "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-dd009483843627"
+            },
+            {
+              "name": "锡创兴吴",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-ad4bbd905a940afc",
+                  "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                  "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                  "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-26a082dfa77e8a"
+            },
+            {
+              "name": "奇安投资",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-ad4bbd905a940afc",
+                  "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                  "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                  "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-1d5dd3e84f3c07"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ad4bbd905a940afc",
+              "quote": "投资界（ID：pedaily2012）11月20日消息，诚恒微完成近2亿元人民币A轮融资。",
+              "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+              "quote_hash": "3f86a8dcc6e9372d3e0a2ab87f8ed120dc5f1c645fa8f92fccdec81ab873baf0"
+            },
+            {
+              "source_id": "FISRC-ad4bbd905a940afc",
+              "quote": "诚恒微完成近2亿元人民币A轮融资。本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+              "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+              "quote_hash": "2b06d21083c1cf71be3b1db5098683d4717283b3672c6d00e67ed1667d1ecf14"
+            },
+            {
+              "source_id": "FISRC-43992a92d9874bc7",
+              "quote": "近日，无锡诚恒微电子有限公司（以下简称“诚恒微”）完成近2亿元人民币A轮融资。本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+              "source_content_hash": "e103726c7f092781",
+              "quote_hash": "721a907e94caea05530c3c83c2d3d7fbffb483bd1cdeb51225b800b139fe68e2"
+            }
+          ]
+        }
+      ],
+      "market_scope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "funding_company_evidence:china_legal_entity:无锡诚恒微电子有限公司"
+        ],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "id": "chip-system",
+        "name": "芯片与计算系统",
+        "dimension": "financing_product_form"
+      },
+      "market_category": {
+        "id": "compute",
+        "name": "AI 算力与芯片",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "ai-chips",
+        "name": "AI 芯片与加速器",
+        "dimension": "financing_subsector"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-d84355ecbf21be85"
+      },
+      "translations": {
+        "zh-CN": {
+          "products[0].features[0]": {
+            "text": "异构集成CPU、GPU、NPU、GPGPU、ISP等模块",
+            "source_hash": "532a71a4388c5b5878ebe77451f7c3d0975f2ede5e16ff5734b58daf42e59af3",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-21T05:41:34.199Z",
+            "status": "translated"
+          },
+          "products[0].features[1]": {
+            "text": "峰值算力达64TOPS@INT8",
+            "source_hash": "7ed9034f4228cc5cd7ae2788399013f2ae52d9b3d5c77233f651afe061136379",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-21T05:41:34.199Z",
+            "status": "translated"
+          }
+        }
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "compute",
+          "name": "AI 算力与芯片"
+        },
+        "subsector": {
+          "id": "ai-chips",
+          "name": "AI 芯片与加速器"
+        },
+        "product_form": {
+          "id": "chip-system",
+          "name": "芯片与计算系统"
+        },
+        "customers": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "quote": "无锡诚恒微电子有限公司（简称“诚恒微”）专注于边端侧AI SoC及解决方案的创新研发与产业应用"
+          },
+          {
+            "source_id": "FISRC-43992a92d9874bc7",
+            "quote": "自研旗舰产品CH37系列异构集成CPU、GPU、NPU、GPGPU、ISP等模块，峰值算力达64TOPS@INT8，支持FP16/FP32/FP64混合精度计算，具备强实时多传感器数据处理能力，可实现低时延多模态融合感知。"
+          }
+        ],
+        "rationale": "自研边端侧AI SoC芯片，集成NPU等模块提供算力。"
+      },
+      "source_card_ids": [
+        "FI-774d78aac219c4a8"
+      ]
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-183448a43c9bcb8d",
@@ -2272,6 +3094,7 @@
         "market_region": "CN",
         "china_market_match": true,
         "china_market_basis": [
+          "actor_origin",
           "china_entity_alias:无涯智远",
           "funding_company_evidence:china_legal_entity:北京无涯智远科技有限公司"
         ],
@@ -8403,6 +9226,950 @@
       },
       "source_card_ids": [
         "FI-0bfa60b9e5f0b086"
+      ]
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-2314c7e986050f44",
+      "triggered_by_event_id": "EV-efa6687b5276a437",
+      "as_of_date": "2026-11-21",
+      "company": {
+        "entity_id": "EN-4ee3af3ba716dc0b",
+        "name": "芯星元",
+        "full_name": "上海芯星元智能科技有限公司",
+        "website": "",
+        "summary": "NovaSilicon（上海芯星元智能科技有限公司）是一家AI-native芯片设计平台公司，提出CDK（电路设计套件）概念，把芯片设计经验与Agent封装成系统，由工程师用它完成从芯片规格到GDS版图之间需要反复迭代的实现环节。",
+        "headquarters": "上海张江",
+        "founders": [
+          {
+            "name": "李林阳",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9ff90f6a29a31170",
+                "quote": "创始人兼CEO李林阳为博士，师从复旦大学邱锡鹏教授、香港中文大学林达华教授",
+                "source_content_hash": "6625579eb0ea2a9b",
+                "quote_hash": "710080a89b32b70191f96da83fba2e63be67eb092126d66b7e41a3a5fac05d2e"
+              },
+              {
+                "source_id": "FISRC-b8977ee98bdd4ae9",
+                "quote": "创始人兼CEO李林阳博士毕业于复旦大学，具有上海人工智能实验室的大模型研发经历",
+                "source_content_hash": "400e294e6a0bd90f",
+                "quote_hash": "85ad27d202b1659581e24240d362ed03cd33071aeb0403ebc51b0896022fe265"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "薛建喜",
+            "role": "联合创始人，负责数字方向",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9ff90f6a29a31170",
+                "quote": "联合创始人薛建喜负责数字方向，有二十年以上芯片设计与管理经验",
+                "source_content_hash": "6625579eb0ea2a9b",
+                "quote_hash": "9c5b9ecea5fbe6407c86811b641b9cc0cac61c6079cf3e335ead055ef7dd8d69"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "陈建球",
+            "role": "联合创始人，负责模拟方向",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9ff90f6a29a31170",
+                "quote": "联合创始人陈建球负责模拟方向，有深入的研发与流片经验",
+                "source_content_hash": "6625579eb0ea2a9b",
+                "quote_hash": "5f93a22b828b0a8786169dadadb9e417dd2f7aad234f8ccecedc6a895f97ffd8"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-859ae42de73461d5",
+            "quote": "上海芯星元智能科技有限公司(NovaSilicon)完成近亿元Pre-A+轮融资",
+            "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+            "quote_hash": "bfe857bfda3effa3c40f1a7cc6dfe26c948d56a3103cc5403d9cb5ee32100665"
+          },
+          {
+            "source_id": "FISRC-288ab3952018ee22",
+            "quote": "AI-native芯片设计平台NovaSilicon（上海芯星元智能科技有限公司，简称“NovaSilicon”）完成近亿元Pre-A+轮融资",
+            "source_content_hash": "c94480bb83de1231",
+            "quote_hash": "72a9833414a0712fa157b11e1aa30922c4cbe3a3ed520d927c3a8d93ec5bb97e"
+          }
+        ],
+        "application_entity_id": "EN-4ee3af3ba716dc0b",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "Pre-A+轮",
+        "amount": "近亿元",
+        "total_raised": "",
+        "announced_at": "2026-11-17",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "顺为资本",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-859ae42de73461d5",
+                "quote": "由顺为资本领投，纪源资本、经纬创投跟投",
+                "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+                "quote_hash": "ed35812e46cfb79e7b9cb3daec41c548eac894acc956aaff00acd9c295dbb8f6"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-2f697f3372f62e"
+          },
+          {
+            "name": "纪源资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-859ae42de73461d5",
+                "quote": "由顺为资本领投，纪源资本、经纬创投跟投",
+                "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+                "quote_hash": "ed35812e46cfb79e7b9cb3daec41c548eac894acc956aaff00acd9c295dbb8f6"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-f51fc3d0171465"
+          },
+          {
+            "name": "经纬创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-859ae42de73461d5",
+                "quote": "由顺为资本领投，纪源资本、经纬创投跟投",
+                "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+                "quote_hash": "ed35812e46cfb79e7b9cb3daec41c548eac894acc956aaff00acd9c295dbb8f6"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-a18a062ab79d0f"
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "五源资本",
+            "role": "天使轮独家投资方，并参与Pre-A轮",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-288ab3952018ee22",
+                "quote": "五源资本是NovaSilicon天使轮的独家投资方，并参与了其Pre-A轮融资",
+                "source_content_hash": "c94480bb83de1231",
+                "quote_hash": "d2dee2f63cae69787612baf4b25305e31f43d8e7c81bda92334e57b965a453e4"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-824ff6f71c152b"
+          },
+          {
+            "name": "商汤国香资本",
+            "role": "Pre-A轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-288ab3952018ee22",
+                "quote": "此前的投资方还包括商汤国香资本、上海未来产业基金、上海科创等机构",
+                "source_content_hash": "c94480bb83de1231",
+                "quote_hash": "1ca80766e02065ba4eda203e2d20b0693d80a8acedb85c6bcaf5d959f518228c"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-e4720fc62aa200"
+          },
+          {
+            "name": "上海未来产业基金",
+            "role": "Pre-A轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-288ab3952018ee22",
+                "quote": "此前的投资方还包括商汤国香资本、上海未来产业基金、上海科创等机构",
+                "source_content_hash": "c94480bb83de1231",
+                "quote_hash": "1ca80766e02065ba4eda203e2d20b0693d80a8acedb85c6bcaf5d959f518228c"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-7b3da7177723b4"
+          },
+          {
+            "name": "上海科创集团",
+            "role": "Pre-A轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9ff90f6a29a31170",
+                "quote": "Pre-A轮由上海国投旗下上海科创集团与上海未来产业基金、商汤国香资本、五源资本共同投资",
+                "source_content_hash": "6625579eb0ea2a9b",
+                "quote_hash": "d5674edc2eb0dc0873a08cedb21327e94afee496b6d253093a4014d42a5c633f"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-526f4a58cf3ce6"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-859ae42de73461d5",
+            "quote": "智通财经APP获悉，上海芯星元智能科技有限公司(NovaSilicon)完成近亿元Pre-A+轮融资，由顺为资本领投，纪源资本、经纬创投跟投，光源资本担任本轮融资独家财务顾问。",
+            "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+            "quote_hash": "02c1d060f967f61b99e14dbed393516e89a1c546e8b152cfb9783a83841bfd0e"
+          },
+          {
+            "source_id": "FISRC-859ae42de73461d5",
+            "quote": "完成近亿元Pre-A+轮融资，由顺为资本领投，纪源资本、经纬创投跟投，光源资本担任本轮融资独家财务顾问",
+            "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+            "quote_hash": "2e98eba3a92d2d2f0f209e433d6cf9a8f864df0cd3dc960fc128054d526bc769"
+          },
+          {
+            "source_id": "FISRC-288ab3952018ee22",
+            "quote": "本轮资金将主要用于NovaSilicon提出的CDK的研发、首批IP的流片和交付、研发团队的扩充",
+            "source_content_hash": "c94480bb83de1231",
+            "quote_hash": "72d12ae48f0c30091c775f0b9876872e121f1e46fb77ccdf30a7863fb3029663"
+          }
+        ],
+        "round_code": "pre_series_a_plus",
+        "round_original": "Pre-A+轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-efa6687b5276a437",
+            "round_original": "Pre-A+轮",
+            "amount": "近亿元",
+            "announced_at": "2026-11-17",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-859ae42de73461d5",
+                "quote": "智通财经APP获悉，上海芯星元智能科技有限公司(NovaSilicon)完成近亿元Pre-A+轮融资，由顺为资本领投，纪源资本、经纬创投跟投，光源资本担任本轮融资独家财务顾问。",
+                "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+                "quote_hash": "02c1d060f967f61b99e14dbed393516e89a1c546e8b152cfb9783a83841bfd0e"
+              },
+              {
+                "source_id": "FISRC-859ae42de73461d5",
+                "quote": "完成近亿元Pre-A+轮融资，由顺为资本领投，纪源资本、经纬创投跟投，光源资本担任本轮融资独家财务顾问",
+                "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+                "quote_hash": "2e98eba3a92d2d2f0f209e433d6cf9a8f864df0cd3dc960fc128054d526bc769"
+              },
+              {
+                "source_id": "FISRC-288ab3952018ee22",
+                "quote": "本轮资金将主要用于NovaSilicon提出的CDK的研发、首批IP的流片和交付、研发团队的扩充",
+                "source_content_hash": "c94480bb83de1231",
+                "quote_hash": "72d12ae48f0c30091c775f0b9876872e121f1e46fb77ccdf30a7863fb3029663"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "CNY",
+              "value": 100000000,
+              "min_value": 100000000,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "approximate",
+              "display_zh": "约 1 亿元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-859ae42de73461d5",
+          "FISRC-288ab3952018ee22"
+        ]
+      },
+      "products": [
+        {
+          "name": "CDK（电路设计套件）",
+          "description": "把芯片设计的经验和Agent封装成一套系统，由工程师用它完成从芯片规格到GDS版图之间需要反复迭代的实现环节。",
+          "target_customers": "芯片设计公司和有IP需求的客户",
+          "features": [
+            "覆盖从规格到版图文件之间反复迭代的实现环节",
+            "对外交付采用本地部署，客户设计数据不经过第三方模型服务"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-288ab3952018ee22",
+              "quote": "CDK把芯片设计的经验和Agent封装成一套系统，由工程师用它完成从芯片规格到GDS版图之间需要反复迭代的实现环节",
+              "source_content_hash": "c94480bb83de1231",
+              "quote_hash": "e8cdc1e70eae7467b479124deb8cab8c135b343c8759bb66042d7fa07aaef236"
+            },
+            {
+              "source_id": "FISRC-9ff90f6a29a31170",
+              "quote": "对外交付采用本地部署，客户设计数据不经过第三方模型服务",
+              "source_content_hash": "6625579eb0ea2a9b",
+              "quote_hash": "0666e8e6360b52ebf16e19d513a29d4d2eccae25953eae7cb61abef68b3d3862"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Vega（模拟方向产品线）",
+          "description": "模拟方向产品线，覆盖电路拓扑选择、原理图、器件尺寸、仿真和版图。",
+          "target_customers": "芯片设计公司",
+          "features": [
+            "运算跨导放大器、低压差线性稳压器等电路可以自动生成",
+            "锁相环设计周期从数月缩短到数周",
+            "版图已覆盖比较器、运算跨导放大器、低压差线性稳压器、带隙基准等五类电路"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ff90f6a29a31170",
+              "quote": "Vega覆盖电路拓扑选择、原理图、器件尺寸、仿真和版图",
+              "source_content_hash": "6625579eb0ea2a9b",
+              "quote_hash": "ec0c02954e6713ddd4f6c6744aeaa648c940e043464b4c18e24414c2a7c108e4"
+            },
+            {
+              "source_id": "FISRC-9ff90f6a29a31170",
+              "quote": "使用Vega后，运算跨导放大器、低压差线性稳压器等电路可以自动生成；锁相环设计周期从数月缩短到数周",
+              "source_content_hash": "6625579eb0ea2a9b",
+              "quote_hash": "0e5e6d3d2ae2a263ea4139699b1b372f20582598f11bf2dbbae6dc43e44e5f4d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Sirius（数字方向产品线）",
+          "description": "数字方向产品线，覆盖规格理解、建模、逻辑实现与验证，以及布图规划、布局布线、时钟、物理验证和时序分析。",
+          "target_customers": "芯片设计公司",
+          "features": [
+            "已用于3D存算一体芯片设计服务并产生营收"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ff90f6a29a31170",
+              "quote": "Sirius覆盖规格理解、建模、逻辑实现与验证，以及布图规划、布局布线、时钟、物理验证和时序分析",
+              "source_content_hash": "6625579eb0ea2a9b",
+              "quote_hash": "b91513d91524546e6a3740291ee9717fd40021b83b22520245cf8bb196e7180e"
+            },
+            {
+              "source_id": "FISRC-b8977ee98bdd4ae9",
+              "quote": "Sirius已用于3D存算一体芯片设计服务，并产生营收",
+              "source_content_hash": "400e294e6a0bd90f",
+              "quote_hash": "effeb8b3e06aa12bf3b2d685b5f5442eb9a65b51fc272d2a3df7ca7c49685fbc"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "泛函数智能",
+          "product": "AI设计芯片",
+          "scenario": "",
+          "target_customer": "",
+          "funding_summary": "近亿元天使轮融资，上海未来产业基金领投，上海科创集团、上海信投、徐汇资本等参与",
+          "core_difference": "来源仅披露泛函数智能完成近亿元天使轮融资及投资方，未披露其具体产品、应用场景或目标客户，无法与芯星元的CDK产品线逐项比较。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b8977ee98bdd4ae9",
+              "quote": "11月11日，另一家用AI设计芯片的创业公司泛函数智能披露完成近亿元天使轮融资，上海未来产业基金领投，上海科创集团、上海信投、徐汇资本等多个上海国资投资平台参与其中",
+              "source_content_hash": "400e294e6a0bd90f",
+              "quote_hash": "88261bd2c750bc3a2407b6984a0b31b5ee67523289a92e44c3cfa1c7ca6c7200"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "观复芯",
+          "product": "AI设计芯片",
+          "scenario": "",
+          "target_customer": "",
+          "funding_summary": "种子轮融资，高瓴创投、力合算芯联合领投，恒旭资本、金雨茂物跟投",
+          "core_difference": "来源仅披露观复芯完成种子轮融资及投资方，未披露其具体产品、应用场景或目标客户，无法与芯星元的CDK产品线逐项比较。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b8977ee98bdd4ae9",
+              "quote": "南京观复芯在10月下旬宣布完成种子轮融资，由高瓴创投、力合算芯联合领投，恒旭资本、金雨茂物跟投",
+              "source_content_hash": "400e294e6a0bd90f",
+              "quote_hash": "dbf88e715faad5d1b32fd0539f7fedd2c165576d1b6a469576468e584a92d65b"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "成立至本轮披露时长",
+          "value": "约五个月",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ff90f6a29a31170",
+              "quote": "从成立到本轮披露约五个月，公司称这是天使轮、Pre-A轮之后的第三轮融资",
+              "source_content_hash": "6625579eb0ea2a9b",
+              "quote_hash": "3088ae490252fbd0e28f9b74f66651de03c62e6474a83746097e1c4d91fcc0e2"
+            }
+          ]
+        },
+        {
+          "label": "连续完成融资轮数",
+          "value": "三轮",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-859ae42de73461d5",
+              "quote": "自成立起已连续完成三轮融资",
+              "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+              "quote_hash": "a446d5e91f2ba0b32ce27e8e69c76197ba6e407178ab030b63964c21fe2c7063"
+            }
+          ]
+        },
+        {
+          "label": "Pre-A轮与本轮合计融资规模",
+          "value": "超亿元",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ff90f6a29a31170",
+              "quote": "Pre-A轮与本轮合计融资规模超亿元；那是两轮相加，不是单轮金额",
+              "source_content_hash": "6625579eb0ea2a9b",
+              "quote_hash": "fe2f39f49afb064f7b378b1b154b4c869aaf0cda1f7fd417b010022cf130504f"
+            }
+          ]
+        },
+        {
+          "label": "Vega版图覆盖电路类型数",
+          "value": "五类",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ff90f6a29a31170",
+              "quote": "版图已覆盖比较器、运算跨导放大器、低压差线性稳压器、带隙基准等五类电路",
+              "source_content_hash": "6625579eb0ea2a9b",
+              "quote_hash": "ae58484fb0b3956ae6213118b2d597675cdb635aefd310575f05936dee6e49b7"
+            }
+          ]
+        },
+        {
+          "label": "论文评测单个工业设计硬宏数量",
+          "value": "99个",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ff90f6a29a31170",
+              "quote": "评测落在单个工业设计上，该设计含99个硬宏，约占固定L形版图区域的71%",
+              "source_content_hash": "6625579eb0ea2a9b",
+              "quote_hash": "a8b32065026c0ddd096a3973267df6eb7b84240a43f201ed98947af28df2a6df"
+            }
+          ]
+        },
+        {
+          "label": "Nova-SI布图规划评测均分",
+          "value": "57.97",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ff90f6a29a31170",
+              "quote": "专用系统Nova-SI在不调用规定电源地与布局评估做在线反馈的条件下，均分为57.97",
+              "source_content_hash": "6625579eb0ea2a9b",
+              "quote_hash": "729b8831462464bc16614ab1142c91b4ecae22e933151d35b79bd867878477bf"
+            }
+          ]
+        },
+        {
+          "label": "GPT-6 Astra布图规划评测均分",
+          "value": "31.17",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ff90f6a29a31170",
+              "quote": "最强通用配置GPT-6 Astra均分为31.17",
+              "source_content_hash": "6625579eb0ea2a9b",
+              "quote_hash": "a6b1d41419194d7b7f982cbf5df06a9b3d4a4b722547a23455f17349e6687ec5"
+            }
+          ]
+        },
+        {
+          "label": "历史人工布图参考分",
+          "value": "91.88",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ff90f6a29a31170",
+              "quote": "论文同时给出历史人工布图参考分91.88，并写明这是既有放置结果，不是同等条件下的重测",
+              "source_content_hash": "6625579eb0ea2a9b",
+              "quote_hash": "7cea3374497e01ae5c006a2d2242ccf01273d279a1145337c591f5c06623c66e"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "李林阳",
+          "quote": "小批量、多品类、快速迭代的芯片需求，给AI参与设计带来了机会。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b8977ee98bdd4ae9",
+              "quote": "李林阳此前接受采访时表示，小批量、多品类、快速迭代的芯片需求，给AI参与设计带来了机会",
+              "source_content_hash": "400e294e6a0bd90f",
+              "quote_hash": "966330cfb3db9dcdeaf21d2243542d9d2c58f89548be6a0001f8fe5e11d626cd"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是：芯星元能否用CDK把芯片设计服务中重复的工程劳动沉淀为可复用能力，使后续项目在同等质量下减少人天、算力与EDA工具开销及返工轮次。当前已验证的信号包括：公司成立约五个月连续完成三轮融资，Pre-A+轮由顺为资本领投、纪源资本与经纬创投跟投；Sirius已用于3D存算一体芯片设计服务并产生营收；Vega在论文中展示单个工业设计上的布图规划评测分数高于通用模型配置。但证据边界明确：估值、稀释比例、累计融资精确总额和单笔合同金额均未披露；首批IP的流片和交付仍在推进；论文评测为局部任务自评，不是签核级PPA，也未证明客户芯片已量产达标；工具能否降低单位项目成本尚无经营数据验证。",
+        "validated_signals": [
+          "完成近亿元Pre-A+轮融资，顺为资本领投，纪源资本、经纬创投跟投",
+          "自2026年6月成立以来连续完成三轮融资",
+          "Sirius已用于3D存算一体芯片设计服务并产生营收",
+          "Vega在论文展示的单个工业设计布图规划评测中，Nova-SI均分57.97，高于GPT-6 Astra的31.17"
+        ],
+        "risks": [
+          "首批IP的流片和交付仍在推进，能否通过流片测试尚未验证",
+          "论文评测为单个工业设计的局部任务自评，不是签核级PPA，也未证明客户芯片已量产达标",
+          "公司未披露估值、稀释比例、累计融资精确总额和单笔合同金额，资本判断缺少定价锚点",
+          "工具能否在同等质量下降低后续项目的人工人天、算力与EDA开销及返工轮次，尚无经营数据披露",
+          "客户数量增长后是否仍需同步增加大量工程师，决定其模式能否从项目服务走向平台化"
+        ],
+        "sector": "AI 编程与软件研发",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：芯星元能否用CDK把芯片设计服务中重复的工程劳动沉淀为可复用能力，使后续项目在同等质量下减少人天、算力与EDA工具开销及返工轮次。当前已验证的信号包括：公司成立约五个月连续完成三轮融资，Pre-A+轮由顺为资本领投、纪源资本与经纬创投跟投；Sirius已用于3D存算一体芯片设计服务并产生营收；Vega在论文中展示单个工业设计上的布图规划评测分数高于通用模型配置。但证据边界明确：估值、稀释比例、累计融资精确总额和单笔合同金额均未披露；首批IP的流片和交付仍在推进；论文评测为局部任务自评，不是签核级PPA，也未证明客户芯片已量产达标；工具能否降低单位项目成本尚无经营数据验证。",
+          "evidence_signals": [
+            "完成近亿元Pre-A+轮融资，顺为资本领投，纪源资本、经纬创投跟投",
+            "自2026年6月成立以来连续完成三轮融资",
+            "Sirius已用于3D存算一体芯片设计服务并产生营收",
+            "Vega在论文展示的单个工业设计布图规划评测中，Nova-SI均分57.97，高于GPT-6 Astra的31.17"
+          ],
+          "risks": [
+            "首批IP的流片和交付仍在推进，能否通过流片测试尚未验证",
+            "论文评测为单个工业设计的局部任务自评，不是签核级PPA，也未证明客户芯片已量产达标",
+            "公司未披露估值、稀释比例、累计融资精确总额和单笔合同金额，资本判断缺少定价锚点",
+            "工具能否在同等质量下降低后续项目的人工人天、算力与EDA开销及返工轮次，尚无经营数据披露",
+            "客户数量增长后是否仍需同步增加大量工程师，决定其模式能否从项目服务走向平台化"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "CDK（电路设计套件）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Vega（模拟方向产品线）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Sirius（数字方向产品线）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "李林阳",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "薛建喜",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "陈建球",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "顺为资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "纪源资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "经纬创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "五源资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "商汤国香资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "上海未来产业基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "上海科创集团",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "泛函数智能",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "观复芯",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-859ae42de73461d5",
+          "source_url": "https://feng.ifeng.com/c/8y84oPYeiYq",
+          "title": "芯星元获近亿元Pre-A+轮融资 聚焦AI原生芯片设计_大风号",
+          "publisher": "feng.ifeng.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-21T00:18:33.727Z",
+          "content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+          "source_artifact_id": "SA-025a5f605031daf4",
+          "raw_id": "RAW-3add5bb4150551b0",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-288ab3952018ee22",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-11-17/doc-iniyyzyp2330772.shtml",
+          "title": "NovaSilicon完成近亿元Pre-A+轮融资",
+          "publisher": "finance.sina.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-21T00:40:29.076Z",
+          "content_hash": "c94480bb83de1231",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-9ff90f6a29a31170",
+          "source_url": "https://m.sohu.com/a/1103096072_121468994",
+          "title": "五个月完成三轮融资，芯星元要让设计经验降低交付成本",
+          "publisher": "m.sohu.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-21T00:40:29.863Z",
+          "content_hash": "6625579eb0ea2a9b",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "historical_round"
+        },
+        {
+          "source_id": "FISRC-b8977ee98bdd4ae9",
+          "source_url": "https://wap.eastmoney.com/a/202611173933160266.html",
+          "title": "用AI设计芯片，芯星元成立5个月连融三轮",
+          "publisher": "wap.eastmoney.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-21T00:40:44.274Z",
+          "content_hash": "400e294e6a0bd90f",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-21T00:40:59.485Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-21T00:40:59.485Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "CDK（电路设计套件）",
+            "Sirius（数字方向产品线）",
+            "Vega（模拟方向产品线）"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "李林阳",
+            "薛建喜",
+            "陈建球"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-efa6687b5276a437"
+      ],
+      "aggregation": {
+        "key": "EN-4ee3af3ba716dc0b|pre_series_a_plus|CNY:approximate:100000000:::|2026-11-17",
+        "event_count": 1,
+        "strategy": "reviewed_funding_subject",
+        "subject_id": "EN-4ee3af3ba716dc0b",
+        "source_card_count": 1
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-2314c7e986050f44",
+          "event_ids": [
+            "EV-efa6687b5276a437"
+          ],
+          "round": "Pre-A+轮",
+          "round_code": "pre_series_a_plus",
+          "round_original": "Pre-A+轮",
+          "amount_original": "近亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 1 亿元"
+          },
+          "announced_at": "2026-11-17",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true,
+          "investors": [
+            {
+              "name": "顺为资本",
+              "role": "本轮领投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-859ae42de73461d5",
+                  "quote": "由顺为资本领投，纪源资本、经纬创投跟投",
+                  "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+                  "quote_hash": "ed35812e46cfb79e7b9cb3daec41c548eac894acc956aaff00acd9c295dbb8f6"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-2f697f3372f62e"
+            },
+            {
+              "name": "纪源资本",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-859ae42de73461d5",
+                  "quote": "由顺为资本领投，纪源资本、经纬创投跟投",
+                  "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+                  "quote_hash": "ed35812e46cfb79e7b9cb3daec41c548eac894acc956aaff00acd9c295dbb8f6"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-f51fc3d0171465"
+            },
+            {
+              "name": "经纬创投",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-859ae42de73461d5",
+                  "quote": "由顺为资本领投，纪源资本、经纬创投跟投",
+                  "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+                  "quote_hash": "ed35812e46cfb79e7b9cb3daec41c548eac894acc956aaff00acd9c295dbb8f6"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-a18a062ab79d0f"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-859ae42de73461d5",
+              "quote": "智通财经APP获悉，上海芯星元智能科技有限公司(NovaSilicon)完成近亿元Pre-A+轮融资，由顺为资本领投，纪源资本、经纬创投跟投，光源资本担任本轮融资独家财务顾问。",
+              "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+              "quote_hash": "02c1d060f967f61b99e14dbed393516e89a1c546e8b152cfb9783a83841bfd0e"
+            },
+            {
+              "source_id": "FISRC-859ae42de73461d5",
+              "quote": "完成近亿元Pre-A+轮融资，由顺为资本领投，纪源资本、经纬创投跟投，光源资本担任本轮融资独家财务顾问",
+              "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+              "quote_hash": "2e98eba3a92d2d2f0f209e433d6cf9a8f864df0cd3dc960fc128054d526bc769"
+            },
+            {
+              "source_id": "FISRC-288ab3952018ee22",
+              "quote": "本轮资金将主要用于NovaSilicon提出的CDK的研发、首批IP的流片和交付、研发团队的扩充",
+              "source_content_hash": "c94480bb83de1231",
+              "quote_hash": "72d12ae48f0c30091c775f0b9876872e121f1e46fb77ccdf30a7863fb3029663"
+            }
+          ]
+        }
+      ],
+      "market_scope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin",
+          "china_entity_alias:芯星元",
+          "funding_company_evidence:china_legal_entity:上海芯星元智能科技有限公司"
+        ],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "id": "developer-platform",
+        "name": "开发与数据平台",
+        "dimension": "financing_product_form"
+      },
+      "market_category": {
+        "id": "developer-data",
+        "name": "AI 开发与数据",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "ai-coding",
+        "name": "AI 编程与软件研发",
+        "dimension": "financing_subsector"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-efa6687b5276a437"
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "developer-data",
+          "name": "AI 开发与数据"
+        },
+        "subsector": {
+          "id": "ai-coding",
+          "name": "AI 编程与软件研发"
+        },
+        "product_form": {
+          "id": "developer-platform",
+          "name": "开发与数据平台"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-288ab3952018ee22",
+            "quote": "AI-native芯片设计平台NovaSilicon（上海芯星元智能科技有限公司，简称“NovaSilicon”）完成近亿元Pre-A+轮融资"
+          },
+          {
+            "source_id": "FISRC-288ab3952018ee22",
+            "quote": "CDK把芯片设计的经验和Agent封装成一套系统，由工程师用它完成从芯片规格到GDS版图之间需要反复迭代的实现环节"
+          },
+          {
+            "source_id": "FISRC-9ff90f6a29a31170",
+            "quote": "Vega覆盖电路拓扑选择、原理图、器件尺寸、仿真和版图"
+          },
+          {
+            "source_id": "FISRC-9ff90f6a29a31170",
+            "quote": "使用Vega后，运算跨导放大器、低压差线性稳压器等电路可以自动生成；锁相环设计周期从数月缩短到数周"
+          },
+          {
+            "source_id": "FISRC-9ff90f6a29a31170",
+            "quote": "Sirius覆盖规格理解、建模、逻辑实现与验证，以及布图规划、布局布线、时钟、物理验证和时序分析"
+          },
+          {
+            "source_id": "FISRC-b8977ee98bdd4ae9",
+            "quote": "Sirius已用于3D存算一体芯片设计服务，并产生营收"
+          }
+        ],
+        "rationale": "该公司以AI-native芯片设计平台CDK及Vega、Sirius产品线，面向芯片设计工程师交付设计自动化开发平台。"
+      },
+      "source_card_ids": [
+        "FI-2314c7e986050f44"
       ]
     },
     {
@@ -694363,6 +696130,238 @@
   ],
   "event_cards": [
     {
+      "funding_insight_id": "FI-774d78aac219c4a8",
+      "triggered_by_event_id": "EV-d84355ecbf21be85",
+      "source_event_ids": [
+        "EV-d84355ecbf21be85"
+      ],
+      "subject_card_id": "FI-774d78aac219c4a8",
+      "as_of_date": "2026-11-21",
+      "market_scope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "funding_company_evidence:china_legal_entity:无锡诚恒微电子有限公司"
+        ],
+        "source_registry_ids": []
+      },
+      "company": {
+        "entity_id": "EN-6c72a44dd49f926c",
+        "application_entity_id": "EN-6c72a44dd49f926c",
+        "name": "诚恒微",
+        "full_name": "无锡诚恒微电子有限公司",
+        "summary": "诚恒微专注于边端侧AI SoC及解决方案的创新研发与产业应用，产品面向算力需求较高的具身智能与边缘计算等通用市场，覆盖机器人、无人机、边缘计算终端、智能交互终端等。",
+        "website": "https://chenghengmicro.com/",
+        "headquarters": "无锡",
+        "founders": []
+      },
+      "financing": {
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount": "近2亿元",
+        "amount_original": "近2亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 2 亿元"
+        },
+        "announced_at": "2026-11-20",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "中金资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-8de42d41a48949"
+          },
+          {
+            "name": "中车资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-511b22acdf58b3"
+          },
+          {
+            "name": "毅达资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-dd009483843627"
+          },
+          {
+            "name": "锡创兴吴",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-26a082dfa77e8a"
+          },
+          {
+            "name": "奇安投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-1d5dd3e84f3c07"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "quote": "投资界（ID：pedaily2012）11月20日消息，诚恒微完成近2亿元人民币A轮融资。",
+            "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+            "quote_hash": "3f86a8dcc6e9372d3e0a2ab87f8ed120dc5f1c645fa8f92fccdec81ab873baf0"
+          },
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "quote": "诚恒微完成近2亿元人民币A轮融资。本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+            "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+            "quote_hash": "2b06d21083c1cf71be3b1db5098683d4717283b3672c6d00e67ed1667d1ecf14"
+          },
+          {
+            "source_id": "FISRC-43992a92d9874bc7",
+            "quote": "近日，无锡诚恒微电子有限公司（以下简称“诚恒微”）完成近2亿元人民币A轮融资。本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+            "source_content_hash": "e103726c7f092781",
+            "quote_hash": "721a907e94caea05530c3c83c2d3d7fbffb483bd1cdeb51225b800b139fe68e2"
+          }
+        ],
+        "current_source_ids": [
+          "FISRC-ad4bbd905a940afc",
+          "FISRC-43992a92d9874bc7"
+        ]
+      },
+      "research_sources": [
+        {
+          "source_id": "FISRC-ad4bbd905a940afc",
+          "source_url": "https://news.pedaily.cn/202611/572144.shtml",
+          "title": "诚恒微完成近2亿元A轮融资，加速边端侧AI SoC规模化落地",
+          "publisher": "news.pedaily.cn",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-21T00:38:38.301Z",
+          "content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+          "source_artifact_id": "SA-01e8778e481baf08",
+          "raw_id": "RAW-0c03554984474213",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-43992a92d9874bc7",
+          "source_url": "https://chenghengmicro.com/news/37.html",
+          "title": "诚恒微完成近2亿元A轮融资，加速边端侧AI SoC规模化落地 - 新闻动态 - 无锡诚恒微电子有限公司 - 专注于边端侧 AI 与高性能视觉处理 | 诚恒微 | 无锡诚恒微 | 诚恒微电子",
+          "publisher": "chenghengmicro.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-21T00:41:50.682Z",
+          "content_hash": "e103726c7f092781",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-981acf4cf4576c9b",
+          "source_url": "https://m.sohu.com/a/1104160998_121405769?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "title": "端侧AI芯片公司诚恒微融资2亿A轮，投后估值近12亿元",
+          "publisher": "m.sohu.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-21T00:41:51.036Z",
+          "content_hash": "e6feb566e471475e",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "compute",
+          "name": "AI 算力与芯片"
+        },
+        "subsector": {
+          "id": "ai-chips",
+          "name": "AI 芯片与加速器"
+        },
+        "product_form": {
+          "id": "chip-system",
+          "name": "芯片与计算系统"
+        },
+        "customers": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "quote": "无锡诚恒微电子有限公司（简称“诚恒微”）专注于边端侧AI SoC及解决方案的创新研发与产业应用"
+          },
+          {
+            "source_id": "FISRC-43992a92d9874bc7",
+            "quote": "自研旗舰产品CH37系列异构集成CPU、GPU、NPU、GPGPU、ISP等模块，峰值算力达64TOPS@INT8，支持FP16/FP32/FP64混合精度计算，具备强实时多传感器数据处理能力，可实现低时延多模态融合感知。"
+          }
+        ],
+        "rationale": "自研边端侧AI SoC芯片，集成NPU等模块提供算力。"
+      },
+      "market_category": {
+        "id": "compute",
+        "name": "AI 算力与芯片",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "ai-chips",
+        "name": "AI 芯片与加速器",
+        "dimension": "financing_subsector"
+      },
+      "product_form": {
+        "id": "chip-system",
+        "name": "芯片与计算系统",
+        "dimension": "financing_product_form"
+      },
+      "products": [
+        {
+          "name": "CH37系列边端侧AI SoC"
+        }
+      ]
+    },
+    {
       "funding_insight_id": "FI-183448a43c9bcb8d",
       "triggered_by_event_id": "EV-4ed0d4054e9a6f07",
       "source_event_ids": [
@@ -694654,6 +696653,7 @@
         "market_region": "CN",
         "china_market_match": true,
         "china_market_basis": [
+          "actor_origin",
           "china_entity_alias:无涯智远",
           "funding_company_evidence:china_legal_entity:北京无涯智远科技有限公司"
         ],
@@ -696849,6 +698849,298 @@
       "products": [
         {
           "name": "Aarden 土地智能平台"
+        }
+      ]
+    },
+    {
+      "funding_insight_id": "FI-2314c7e986050f44",
+      "triggered_by_event_id": "EV-efa6687b5276a437",
+      "source_event_ids": [
+        "EV-efa6687b5276a437"
+      ],
+      "subject_card_id": "FI-2314c7e986050f44",
+      "as_of_date": "2026-11-21",
+      "market_scope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin",
+          "china_entity_alias:芯星元",
+          "funding_company_evidence:china_legal_entity:上海芯星元智能科技有限公司"
+        ],
+        "source_registry_ids": []
+      },
+      "company": {
+        "entity_id": "EN-4ee3af3ba716dc0b",
+        "application_entity_id": "EN-4ee3af3ba716dc0b",
+        "name": "芯星元",
+        "full_name": "上海芯星元智能科技有限公司",
+        "summary": "NovaSilicon（上海芯星元智能科技有限公司）是一家AI-native芯片设计平台公司，提出CDK（电路设计套件）概念，把芯片设计经验与Agent封装成系统，由工程师用它完成从芯片规格到GDS版图之间需要反复迭代的实现环节。",
+        "website": "",
+        "headquarters": "上海张江",
+        "founders": [
+          {
+            "name": "李林阳",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9ff90f6a29a31170",
+                "quote": "创始人兼CEO李林阳为博士，师从复旦大学邱锡鹏教授、香港中文大学林达华教授",
+                "source_content_hash": "6625579eb0ea2a9b",
+                "quote_hash": "710080a89b32b70191f96da83fba2e63be67eb092126d66b7e41a3a5fac05d2e"
+              },
+              {
+                "source_id": "FISRC-b8977ee98bdd4ae9",
+                "quote": "创始人兼CEO李林阳博士毕业于复旦大学，具有上海人工智能实验室的大模型研发经历",
+                "source_content_hash": "400e294e6a0bd90f",
+                "quote_hash": "85ad27d202b1659581e24240d362ed03cd33071aeb0403ebc51b0896022fe265"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "薛建喜",
+            "role": "联合创始人，负责数字方向",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9ff90f6a29a31170",
+                "quote": "联合创始人薛建喜负责数字方向，有二十年以上芯片设计与管理经验",
+                "source_content_hash": "6625579eb0ea2a9b",
+                "quote_hash": "9c5b9ecea5fbe6407c86811b641b9cc0cac61c6079cf3e335ead055ef7dd8d69"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "陈建球",
+            "role": "联合创始人，负责模拟方向",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9ff90f6a29a31170",
+                "quote": "联合创始人陈建球负责模拟方向，有深入的研发与流片经验",
+                "source_content_hash": "6625579eb0ea2a9b",
+                "quote_hash": "5f93a22b828b0a8786169dadadb9e417dd2f7aad234f8ccecedc6a895f97ffd8"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "Pre-A+轮",
+        "round_code": "pre_series_a_plus",
+        "round_original": "Pre-A+轮",
+        "amount": "近亿元",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-11-17",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "顺为资本",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-859ae42de73461d5",
+                "quote": "由顺为资本领投，纪源资本、经纬创投跟投",
+                "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+                "quote_hash": "ed35812e46cfb79e7b9cb3daec41c548eac894acc956aaff00acd9c295dbb8f6"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-2f697f3372f62e"
+          },
+          {
+            "name": "纪源资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-859ae42de73461d5",
+                "quote": "由顺为资本领投，纪源资本、经纬创投跟投",
+                "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+                "quote_hash": "ed35812e46cfb79e7b9cb3daec41c548eac894acc956aaff00acd9c295dbb8f6"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-f51fc3d0171465"
+          },
+          {
+            "name": "经纬创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-859ae42de73461d5",
+                "quote": "由顺为资本领投，纪源资本、经纬创投跟投",
+                "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+                "quote_hash": "ed35812e46cfb79e7b9cb3daec41c548eac894acc956aaff00acd9c295dbb8f6"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-a18a062ab79d0f"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-859ae42de73461d5",
+            "quote": "智通财经APP获悉，上海芯星元智能科技有限公司(NovaSilicon)完成近亿元Pre-A+轮融资，由顺为资本领投，纪源资本、经纬创投跟投，光源资本担任本轮融资独家财务顾问。",
+            "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+            "quote_hash": "02c1d060f967f61b99e14dbed393516e89a1c546e8b152cfb9783a83841bfd0e"
+          },
+          {
+            "source_id": "FISRC-859ae42de73461d5",
+            "quote": "完成近亿元Pre-A+轮融资，由顺为资本领投，纪源资本、经纬创投跟投，光源资本担任本轮融资独家财务顾问",
+            "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+            "quote_hash": "2e98eba3a92d2d2f0f209e433d6cf9a8f864df0cd3dc960fc128054d526bc769"
+          },
+          {
+            "source_id": "FISRC-288ab3952018ee22",
+            "quote": "本轮资金将主要用于NovaSilicon提出的CDK的研发、首批IP的流片和交付、研发团队的扩充",
+            "source_content_hash": "c94480bb83de1231",
+            "quote_hash": "72d12ae48f0c30091c775f0b9876872e121f1e46fb77ccdf30a7863fb3029663"
+          }
+        ],
+        "current_source_ids": [
+          "FISRC-859ae42de73461d5",
+          "FISRC-288ab3952018ee22"
+        ]
+      },
+      "research_sources": [
+        {
+          "source_id": "FISRC-859ae42de73461d5",
+          "source_url": "https://feng.ifeng.com/c/8y84oPYeiYq",
+          "title": "芯星元获近亿元Pre-A+轮融资 聚焦AI原生芯片设计_大风号",
+          "publisher": "feng.ifeng.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-21T00:18:33.727Z",
+          "content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+          "source_artifact_id": "SA-025a5f605031daf4",
+          "raw_id": "RAW-3add5bb4150551b0",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-288ab3952018ee22",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-11-17/doc-iniyyzyp2330772.shtml",
+          "title": "NovaSilicon完成近亿元Pre-A+轮融资",
+          "publisher": "finance.sina.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-21T00:40:29.076Z",
+          "content_hash": "c94480bb83de1231",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-9ff90f6a29a31170",
+          "source_url": "https://m.sohu.com/a/1103096072_121468994",
+          "title": "五个月完成三轮融资，芯星元要让设计经验降低交付成本",
+          "publisher": "m.sohu.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-21T00:40:29.863Z",
+          "content_hash": "6625579eb0ea2a9b",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "historical_round"
+        },
+        {
+          "source_id": "FISRC-b8977ee98bdd4ae9",
+          "source_url": "https://wap.eastmoney.com/a/202611173933160266.html",
+          "title": "用AI设计芯片，芯星元成立5个月连融三轮",
+          "publisher": "wap.eastmoney.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-21T00:40:44.274Z",
+          "content_hash": "400e294e6a0bd90f",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "developer-data",
+          "name": "AI 开发与数据"
+        },
+        "subsector": {
+          "id": "ai-coding",
+          "name": "AI 编程与软件研发"
+        },
+        "product_form": {
+          "id": "developer-platform",
+          "name": "开发与数据平台"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-288ab3952018ee22",
+            "quote": "AI-native芯片设计平台NovaSilicon（上海芯星元智能科技有限公司，简称“NovaSilicon”）完成近亿元Pre-A+轮融资"
+          },
+          {
+            "source_id": "FISRC-288ab3952018ee22",
+            "quote": "CDK把芯片设计的经验和Agent封装成一套系统，由工程师用它完成从芯片规格到GDS版图之间需要反复迭代的实现环节"
+          },
+          {
+            "source_id": "FISRC-9ff90f6a29a31170",
+            "quote": "Vega覆盖电路拓扑选择、原理图、器件尺寸、仿真和版图"
+          },
+          {
+            "source_id": "FISRC-9ff90f6a29a31170",
+            "quote": "使用Vega后，运算跨导放大器、低压差线性稳压器等电路可以自动生成；锁相环设计周期从数月缩短到数周"
+          },
+          {
+            "source_id": "FISRC-9ff90f6a29a31170",
+            "quote": "Sirius覆盖规格理解、建模、逻辑实现与验证，以及布图规划、布局布线、时钟、物理验证和时序分析"
+          },
+          {
+            "source_id": "FISRC-b8977ee98bdd4ae9",
+            "quote": "Sirius已用于3D存算一体芯片设计服务，并产生营收"
+          }
+        ],
+        "rationale": "该公司以AI-native芯片设计平台CDK及Vega、Sirius产品线，面向芯片设计工程师交付设计自动化开发平台。"
+      },
+      "market_category": {
+        "id": "developer-data",
+        "name": "AI 开发与数据",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "ai-coding",
+        "name": "AI 编程与软件研发",
+        "dimension": "financing_subsector"
+      },
+      "product_form": {
+        "id": "developer-platform",
+        "name": "开发与数据平台",
+        "dimension": "financing_product_form"
+      },
+      "products": [
+        {
+          "name": "CDK（电路设计套件）"
+        },
+        {
+          "name": "Vega（模拟方向产品线）"
+        },
+        {
+          "name": "Sirius（数字方向产品线）"
         }
       ]
     },
@@ -915921,6 +918213,18 @@
       }
     ],
     "publication_pending": [
+      {
+        "event_id": "EV-aab8ed97f5bf814a",
+        "company": "DeepSeek",
+        "reason": "本次工商变更与10月已报道的千亿融资是否同轮、首次披露日期和资金区间需核对，不能直接按11月20日新增轮次记卡。",
+        "source_url": "https://www.ithome.com/1/030/199.htm"
+      },
+      {
+        "event_id": "EV-a54d9f479d4eb060",
+        "company": "腾讯控股有限公司",
+        "reason": "当前5450亿美元金额无可核查的本轮融资条款支持；二次来源为10月债券计划，11月19日新融资的金额、完成日期及AI主营范围待确认。",
+        "source_url": "https://tidenews.com.cn/tmh_news.html?id=6afe6f1c61fcb50001547492"
+      },
       {
         "event_id": "EV-2e761601c7f04a46",
         "company": "Payhawk",

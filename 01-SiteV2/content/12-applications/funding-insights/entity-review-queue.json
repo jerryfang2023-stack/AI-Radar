@@ -2,12 +2,12 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.3",
-    "candidate_count": 3083,
-    "product_candidates": 1716,
-    "person_candidates": 1367,
-    "china_market_candidates": 727,
-    "china_market_product_candidates": 581,
-    "china_market_person_candidates": 146,
+    "candidate_count": 3093,
+    "product_candidates": 1723,
+    "person_candidates": 1370,
+    "china_market_candidates": 737,
+    "china_market_product_candidates": 588,
+    "china_market_person_candidates": 149,
     "rule": "Application evidence never mutates canonical V4 entities automatically."
   },
   "candidates": [
@@ -38632,6 +38632,40 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-b1d33b239bf99a26",
+      "candidate_kind": "person",
+      "research_name": "李林阳",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4ee3af3ba716dc0b"
+      ],
+      "funding_insight_ids": [
+        "FI-502a401aea9fdd95"
+      ],
+      "source_event_ids": [
+        "EV-efa6687b5276a437"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9ff90f6a29a31170",
+          "quote": "创始人兼CEO李林阳为博士，师从复旦大学邱锡鹏教授、香港中文大学林达华教授",
+          "source_content_hash": "6625579eb0ea2a9b",
+          "quote_hash": "710080a89b32b70191f96da83fba2e63be67eb092126d66b7e41a3a5fac05d2e"
+        },
+        {
+          "source_id": "FISRC-b8977ee98bdd4ae9",
+          "quote": "创始人兼CEO李林阳博士毕业于复旦大学，具有上海人工智能实验室的大模型研发经历",
+          "source_content_hash": "400e294e6a0bd90f",
+          "quote_hash": "85ad27d202b1659581e24240d362ed03cd33071aeb0403ebc51b0896022fe265"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-098c90275d7d0510",
       "candidate_kind": "person",
       "research_name": "李笛",
@@ -40337,6 +40371,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-a0a789e6d3ca05e2",
+      "candidate_kind": "person",
+      "research_name": "薛建喜",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4ee3af3ba716dc0b"
+      ],
+      "funding_insight_ids": [
+        "FI-502a401aea9fdd95"
+      ],
+      "source_event_ids": [
+        "EV-efa6687b5276a437"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9ff90f6a29a31170",
+          "quote": "联合创始人薛建喜负责数字方向，有二十年以上芯片设计与管理经验",
+          "source_content_hash": "6625579eb0ea2a9b",
+          "quote_hash": "9c5b9ecea5fbe6407c86811b641b9cc0cac61c6079cf3e335ead055ef7dd8d69"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-c54b7b877dc4580a",
       "candidate_kind": "person",
       "research_name": "蚂蚁集团",
@@ -40942,6 +41004,34 @@
         "GLOBAL"
       ],
       "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-67fc5a33d0a2fa4f",
+      "candidate_kind": "person",
+      "research_name": "陈建球",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4ee3af3ba716dc0b"
+      ],
+      "funding_insight_ids": [
+        "FI-502a401aea9fdd95"
+      ],
+      "source_event_ids": [
+        "EV-efa6687b5276a437"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9ff90f6a29a31170",
+          "quote": "联合创始人陈建球负责模拟方向，有深入的研发与流片经验",
+          "source_content_hash": "6625579eb0ea2a9b",
+          "quote_hash": "5f93a22b828b0a8786169dadadb9e417dd2f7aad234f8ccecedc6a895f97ffd8"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
     },
     {
       "candidate_id": "FIER-b19f187bb916ffb8",
@@ -51537,6 +51627,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-f420e5180acbfde7",
+      "candidate_kind": "product",
+      "research_name": "CDK（电路设计套件）",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4ee3af3ba716dc0b"
+      ],
+      "funding_insight_ids": [
+        "FI-502a401aea9fdd95"
+      ],
+      "source_event_ids": [
+        "EV-efa6687b5276a437"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-288ab3952018ee22",
+          "quote": "CDK把芯片设计的经验和Agent封装成一套系统，由工程师用它完成从芯片规格到GDS版图之间需要反复迭代的实现环节",
+          "source_content_hash": "c94480bb83de1231",
+          "quote_hash": "e8cdc1e70eae7467b479124deb8cab8c135b343c8759bb66042d7fa07aaef236"
+        },
+        {
+          "source_id": "FISRC-9ff90f6a29a31170",
+          "quote": "对外交付采用本地部署，客户设计数据不经过第三方模型服务",
+          "source_content_hash": "6625579eb0ea2a9b",
+          "quote_hash": "0666e8e6360b52ebf16e19d513a29d4d2eccae25953eae7cb61abef68b3d3862"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-83cf2edfd07a0e28",
       "candidate_kind": "product",
       "research_name": "Centralize",
@@ -51575,6 +51699,34 @@
         "GLOBAL"
       ],
       "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-7335c24381eb8adb",
+      "candidate_kind": "product",
+      "research_name": "CH37系列边端侧AI SoC",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-6c72a44dd49f926c"
+      ],
+      "funding_insight_ids": [
+        "FI-b0ee468e1be9bb4d"
+      ],
+      "source_event_ids": [
+        "EV-d84355ecbf21be85"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-43992a92d9874bc7",
+          "quote": "自研旗舰产品CH37系列异构集成CPU、GPU、NPU、GPGPU、ISP等模块，峰值算力达64TOPS@INT8，支持FP16/FP32/FP64混合精度计算，具备强实时多传感器数据处理能力，可实现低时延多模态融合感知。",
+          "source_content_hash": "e103726c7f092781",
+          "quote_hash": "d93a389fbfd0d41864ee1b527a026fafbf4e74e1e44e5846574306e4eaf2d935"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
     },
     {
       "candidate_id": "FIER-786519a364b89ba5",
@@ -54764,11 +54916,13 @@
       ],
       "funding_insight_ids": [
         "FI-b6e1b859a4afd55e",
-        "FI-e93f57282fa3212b"
+        "FI-e93f57282fa3212b",
+        "FI-f024bb5857482961"
       ],
       "source_event_ids": [
         "EV-3a7e1e2c46daaa76",
-        "EV-8ea9e79f7edcb94f"
+        "EV-8ea9e79f7edcb94f",
+        "EV-aab8ed97f5bf814a"
       ],
       "evidence_refs": [
         {
@@ -54839,9 +54993,11 @@
         "EN-6f7ac1823da81d2e"
       ],
       "funding_insight_ids": [
-        "FI-3ce25105d38a8df5"
+        "FI-3ce25105d38a8df5",
+        "FI-f024bb5857482961"
       ],
       "source_event_ids": [
+        "EV-aab8ed97f5bf814a",
         "EV-c964f7646ad88c1e"
       ],
       "evidence_refs": [
@@ -54850,6 +55006,12 @@
           "quote": "我们的产品及服务包括我们以网页、应用程序（可能含不同版本）、小程序、供第三方网站和应用程序使用软件开发工具包（SDK）、应用程序编程接口（API）以及随技术发展出现的创新形态方式向您提供的产品与服务",
           "source_content_hash": "fb98220de242907f",
           "quote_hash": "1f803fb6e23922148705499dda47f7186816d46c375accb385f2fbea8b32ecff"
+        },
+        {
+          "source_id": "FISRC-e3bfaa90c6529a58",
+          "quote": "我们提供了“联网搜索”功能，开启该功能后，产品将按照输入信息和指令先检索互联网的公开信息，并根据检索的公开信息生成内容",
+          "source_content_hash": "fb98220de242907f",
+          "quote_hash": "ebf620548c23ec412f4988cdcb614ea779c842d12a4fe0c742ab3c3b95328e27"
         }
       ],
       "market_regions": [
@@ -62253,6 +62415,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-a50ef9352a2aac60",
+      "candidate_kind": "product",
+      "research_name": "Hy4",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "funding_insight_ids": [
+        "FI-1ef3e9c3bc6ec14a"
+      ],
+      "source_event_ids": [
+        "EV-a54d9f479d4eb060"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b87ecd9e97ce2ca3",
+          "quote": "Tencent Launches Hy4 flash to Power High-Speed, Cost-Efficient AI Deployment for Everyday Workflows",
+          "source_content_hash": "38a35ba389dae6bd",
+          "quote_hash": "347aa493b9d9f09241fd632d9cce947060eb554d800d9c24a5aee77c9c78285e"
+        },
+        {
+          "source_id": "FISRC-b87ecd9e97ce2ca3",
+          "quote": "Tencent Launches Hy4, Joining the Ranks of the World’s Leading Open-Source AI Models",
+          "source_content_hash": "38a35ba389dae6bd",
+          "quote_hash": "1847a9348975e67ebf6e1175c9af2b620d4dd6b35463823b9543dff9d13d6581"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-c057a30aa4bdaac3",
       "candidate_kind": "product",
       "research_name": "Hydra",
@@ -65831,6 +66027,34 @@
         "GLOBAL"
       ],
       "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-73be91499aa055df",
+      "candidate_kind": "product",
+      "research_name": "MaaS",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "funding_insight_ids": [
+        "FI-1ef3e9c3bc6ec14a"
+      ],
+      "source_event_ids": [
+        "EV-a54d9f479d4eb060"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ec6819d9f2fecdbb",
+          "quote": "WorkBuddy、MaaS等业务收入大幅增长",
+          "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+          "quote_hash": "27a06ff8de6443f62790cfcb09d64d5e3b6b9c7a583c51458c46de40a501bcba"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
     },
     {
       "candidate_id": "FIER-fe644b5f163af5ff",
@@ -77627,6 +77851,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-ae5235e23cf44827",
+      "candidate_kind": "product",
+      "research_name": "Sirius（数字方向产品线）",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4ee3af3ba716dc0b"
+      ],
+      "funding_insight_ids": [
+        "FI-502a401aea9fdd95"
+      ],
+      "source_event_ids": [
+        "EV-efa6687b5276a437"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9ff90f6a29a31170",
+          "quote": "Sirius覆盖规格理解、建模、逻辑实现与验证，以及布图规划、布局布线、时钟、物理验证和时序分析",
+          "source_content_hash": "6625579eb0ea2a9b",
+          "quote_hash": "b91513d91524546e6a3740291ee9717fd40021b83b22520245cf8bb196e7180e"
+        },
+        {
+          "source_id": "FISRC-b8977ee98bdd4ae9",
+          "quote": "Sirius已用于3D存算一体芯片设计服务，并产生营收",
+          "source_content_hash": "400e294e6a0bd90f",
+          "quote_hash": "effeb8b3e06aa12bf3b2d685b5f5442eb9a65b51fc272d2a3df7ca7c49685fbc"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-dbac863ccb14b5cf",
       "candidate_kind": "product",
       "research_name": "SkyHammer",
@@ -82353,6 +82611,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-6658de5f23fd4f92",
+      "candidate_kind": "product",
+      "research_name": "Vega（模拟方向产品线）",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4ee3af3ba716dc0b"
+      ],
+      "funding_insight_ids": [
+        "FI-502a401aea9fdd95"
+      ],
+      "source_event_ids": [
+        "EV-efa6687b5276a437"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9ff90f6a29a31170",
+          "quote": "Vega覆盖电路拓扑选择、原理图、器件尺寸、仿真和版图",
+          "source_content_hash": "6625579eb0ea2a9b",
+          "quote_hash": "ec0c02954e6713ddd4f6c6744aeaa648c940e043464b4c18e24414c2a7c108e4"
+        },
+        {
+          "source_id": "FISRC-9ff90f6a29a31170",
+          "quote": "使用Vega后，运算跨导放大器、低压差线性稳压器等电路可以自动生成；锁相环设计周期从数月缩短到数周",
+          "source_content_hash": "6625579eb0ea2a9b",
+          "quote_hash": "0e5e6d3d2ae2a263ea4139699b1b372f20582598f11bf2dbbae6dc43e44e5f4d"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-a97e8f450473ec75",
       "candidate_kind": "product",
       "research_name": "Velogent",
@@ -84217,6 +84509,40 @@
         "GLOBAL"
       ],
       "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-c0fced8f2483e9f5",
+      "candidate_kind": "product",
+      "research_name": "WorkBuddy",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "funding_insight_ids": [
+        "FI-1ef3e9c3bc6ec14a"
+      ],
+      "source_event_ids": [
+        "EV-a54d9f479d4eb060"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b87ecd9e97ce2ca3",
+          "quote": "Go From Brief to Draft Report with WorkBuddy",
+          "source_content_hash": "38a35ba389dae6bd",
+          "quote_hash": "f80f465cabe5df64278ac17b0d449eca337d275c25f402add3a8b6f05534cbd9"
+        },
+        {
+          "source_id": "FISRC-ec6819d9f2fecdbb",
+          "quote": "WorkBuddy、MaaS等业务收入大幅增长",
+          "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+          "quote_hash": "27a06ff8de6443f62790cfcb09d64d5e3b6b9c7a583c51458c46de40a501bcba"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
     },
     {
       "candidate_id": "FIER-76d5c4bc18a8cf9c",
