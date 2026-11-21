@@ -8,14 +8,14 @@
     "latest_date": "2026-11-20",
     "last_checked_date": "2026-11-20",
     "latest_financing_date": "2026-11-19",
-    "generated_at": "2026-11-20T00:38:20.488Z",
+    "generated_at": "2026-11-21T05:00:43.728Z",
     "card_count": 742,
     "china_market_card_count": 159,
     "duplicate_rounds_removed": 26,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-11-20T00:39:08.271Z"
+      "generated_at": "2026-11-21T05:02:46.365Z"
     },
     "market_category_framework": {
       "name": "观澜 AI 融资分类",
@@ -1653,12 +1653,12 @@
     },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-e9d743c0f18ba997",
+      "funding_insight_id": "FI-aac4ece28b7640a6",
       "triggered_by_event_id": "EV-a151aeb22a93c5ee",
       "as_of_date": "2026-11-20",
       "company": {
         "entity_id": "EN-393c9ade80b59991",
-        "name": "北京无涯智远科技有限公司",
+        "name": "无涯智远",
         "full_name": "北京无涯智远科技有限公司",
         "website": "",
         "summary": "无涯智远（Norizon AI）聚焦Real-Time RSI（实时自进化），以参数持续学习为核心技术路径，致力于让大模型在部署后仍能持续吸收知识、内化经验，获得新能力。",
@@ -1708,7 +1708,7 @@
         "canonical_entity_consistent": false
       },
       "financing": {
-        "round": "天使轮",
+        "round": "多轮融资",
         "amount": "数亿元",
         "total_raised": "",
         "announced_at": "2026-11-19",
@@ -1789,15 +1789,9 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-386a3e96d1dd9d03",
-            "quote": "投资界（ID：pedaily2012）11月19日消息，无涯智远宣布完成数亿元天使轮和天使加轮融资，投资方包括五源资本、红杉中国、联想之星、中关村科学城基金及戈壁创投等多家知名投资机构。",
+            "quote": "完成数亿元天使轮和天使加轮融资",
             "source_content_hash": "2d0f08a254efe618e6c06106033fbf641e189f3706766778d7c850edf9c064be",
-            "quote_hash": "ab5a8e91a9cfd9a6cedc741224eb18db0c1bebf045088d5e60f05169373bd1e6"
-          },
-          {
-            "source_id": "FISRC-386a3e96d1dd9d03",
-            "quote": "无涯智远宣布完成数亿元天使轮和天使加轮融资，投资方包括五源资本、红杉中国、联想之星、中关村科学城基金及戈壁创投等多家知名投资机构。",
-            "source_content_hash": "2d0f08a254efe618e6c06106033fbf641e189f3706766778d7c850edf9c064be",
-            "quote_hash": "b108ef7a24385cb15d77ba1152013c602fa011c454096d2804acef3512b3f9b8"
+            "quote_hash": "4baa43e7ee4903ce14f55798bef04ce386c23e11d7034dd5d41b6d05bb45824a"
           },
           {
             "source_id": "FISRC-56b438e8b2d4f967",
@@ -1806,8 +1800,8 @@
             "quote_hash": "5e245ff6448dd0a46a6c66a129b4a49ca62e2c38022ce9dba3e8b0114917e140"
           }
         ],
-        "round_code": "angel",
-        "round_original": "天使轮",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
         "amount_original": "数亿元",
         "amount_normalized": {
           "currency": "CNY",
@@ -1832,21 +1826,15 @@
         "disclosures": [
           {
             "event_id": "EV-a151aeb22a93c5ee",
-            "round_original": "天使轮",
+            "round_original": "多轮融资",
             "amount": "数亿元",
             "announced_at": "2026-11-19",
             "evidence_refs": [
               {
                 "source_id": "FISRC-386a3e96d1dd9d03",
-                "quote": "投资界（ID：pedaily2012）11月19日消息，无涯智远宣布完成数亿元天使轮和天使加轮融资，投资方包括五源资本、红杉中国、联想之星、中关村科学城基金及戈壁创投等多家知名投资机构。",
+                "quote": "完成数亿元天使轮和天使加轮融资",
                 "source_content_hash": "2d0f08a254efe618e6c06106033fbf641e189f3706766778d7c850edf9c064be",
-                "quote_hash": "ab5a8e91a9cfd9a6cedc741224eb18db0c1bebf045088d5e60f05169373bd1e6"
-              },
-              {
-                "source_id": "FISRC-386a3e96d1dd9d03",
-                "quote": "无涯智远宣布完成数亿元天使轮和天使加轮融资，投资方包括五源资本、红杉中国、联想之星、中关村科学城基金及戈壁创投等多家知名投资机构。",
-                "source_content_hash": "2d0f08a254efe618e6c06106033fbf641e189f3706766778d7c850edf9c064be",
-                "quote_hash": "b108ef7a24385cb15d77ba1152013c602fa011c454096d2804acef3512b3f9b8"
+                "quote_hash": "4baa43e7ee4903ce14f55798bef04ce386c23e11d7034dd5d41b6d05bb45824a"
               },
               {
                 "source_id": "FISRC-56b438e8b2d4f967",
@@ -1870,18 +1858,7 @@
             "display_zh": ""
           },
           "basis": "known_rounds_only",
-          "known_round_totals": [
-            {
-              "currency": "CNY",
-              "value": null,
-              "min_value": 200000000,
-              "max_value": 900000000,
-              "unit": "base",
-              "round_count": 1,
-              "status": "range",
-              "display_zh": "2 亿元–9 亿元"
-            }
-          ],
+          "known_round_totals": [],
           "historical_round_count": 1
         },
         "current_source_ids": [
@@ -1987,7 +1964,7 @@
       ],
       "analysis": {
         "investment_rationale": [],
-        "capital_judgment": "资本押注的核心变量是无涯智远能否将超网络驱动的参数持续学习从实验验证推进到可商业化的产品形态。当前已验证信号包括：团队在内化新资料任务上通过一次前向计算生成轻量参数更新，适配后模型无需读取原文即可回答相关问题；在缓解灾难性遗忘方面，超网络方案在新知识学习效果与通用任务表现上优于微调对照。但公司产品形态与商业价值仍处于探索阶段，交付方式尚未确定，长期更新稳定性与真实业务落地效果有待验证。",
+        "capital_judgment": "本次同时披露天使轮及天使加轮，数亿元按同次披露记录，未分摊各轮金额。",
         "validated_signals": [
           "团队早前已在内化新资料任务上验证了超网络路径：通过一次前向计算生成轻量参数更新，适配后的模型无需直接读取原文，即可回答相关问题。",
           "在缓解灾难性遗忘方面，相较于微调对照，超网络在新知识学习效果与通用任务表现上均取得了更好的结果。"
@@ -1998,7 +1975,7 @@
         ],
         "sector": "通用与多模态模型",
         "investment_thesis": {
-          "statement": "资本押注的核心变量是无涯智远能否将超网络驱动的参数持续学习从实验验证推进到可商业化的产品形态。当前已验证信号包括：团队在内化新资料任务上通过一次前向计算生成轻量参数更新，适配后模型无需读取原文即可回答相关问题；在缓解灾难性遗忘方面，超网络方案在新知识学习效果与通用任务表现上优于微调对照。但公司产品形态与商业价值仍处于探索阶段，交付方式尚未确定，长期更新稳定性与真实业务落地效果有待验证。",
+          "statement": "本次同时披露天使轮及天使加轮，数亿元按同次披露记录，未分摊各轮金额。",
           "evidence_signals": [
             "团队早前已在内化新资料任务上验证了超网络路径：通过一次前向计算生成轻量参数更新，适配后的模型无需直接读取原文，即可回答相关问题。",
             "在缓解灾难性遗忘方面，相较于微调对照，超网络在新知识学习效果与通用任务表现上均取得了更好的结果。"
@@ -2173,7 +2150,7 @@
         "EV-a151aeb22a93c5ee"
       ],
       "aggregation": {
-        "key": "EN-393c9ade80b59991|angel|CNY:range::200000000:900000000:|2026-11-19",
+        "key": "EN-393c9ade80b59991|multi_round|CNY:range::200000000:900000000:|2026-11-19",
         "event_count": 1,
         "strategy": "reviewed_funding_subject",
         "subject_id": "EN-393c9ade80b59991",
@@ -2181,13 +2158,13 @@
       },
       "historical_rounds": [
         {
-          "funding_insight_id": "FI-e9d743c0f18ba997",
+          "funding_insight_id": "FI-aac4ece28b7640a6",
           "event_ids": [
             "EV-a151aeb22a93c5ee"
           ],
-          "round": "天使轮",
-          "round_code": "angel",
-          "round_original": "天使轮",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
           "amount_original": "数亿元",
           "amount_normalized": {
             "currency": "CNY",
@@ -2200,8 +2177,8 @@
           },
           "announced_at": "2026-11-19",
           "disclosure_status": "disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
+          "is_summary": true,
+          "counts_toward_known_total": false,
           "is_current": true,
           "investors": [
             {
@@ -2278,15 +2255,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-386a3e96d1dd9d03",
-              "quote": "投资界（ID：pedaily2012）11月19日消息，无涯智远宣布完成数亿元天使轮和天使加轮融资，投资方包括五源资本、红杉中国、联想之星、中关村科学城基金及戈壁创投等多家知名投资机构。",
+              "quote": "完成数亿元天使轮和天使加轮融资",
               "source_content_hash": "2d0f08a254efe618e6c06106033fbf641e189f3706766778d7c850edf9c064be",
-              "quote_hash": "ab5a8e91a9cfd9a6cedc741224eb18db0c1bebf045088d5e60f05169373bd1e6"
-            },
-            {
-              "source_id": "FISRC-386a3e96d1dd9d03",
-              "quote": "无涯智远宣布完成数亿元天使轮和天使加轮融资，投资方包括五源资本、红杉中国、联想之星、中关村科学城基金及戈壁创投等多家知名投资机构。",
-              "source_content_hash": "2d0f08a254efe618e6c06106033fbf641e189f3706766778d7c850edf9c064be",
-              "quote_hash": "b108ef7a24385cb15d77ba1152013c602fa011c454096d2804acef3512b3f9b8"
+              "quote_hash": "4baa43e7ee4903ce14f55798bef04ce386c23e11d7034dd5d41b6d05bb45824a"
             },
             {
               "source_id": "FISRC-56b438e8b2d4f967",
@@ -2301,6 +2272,7 @@
         "market_region": "CN",
         "china_market_match": true,
         "china_market_basis": [
+          "china_entity_alias:无涯智远",
           "funding_company_evidence:china_legal_entity:北京无涯智远科技有限公司"
         ],
         "source_registry_ids": []
@@ -2364,7 +2336,7 @@
         "rationale": "无涯智远自研大模型参数持续学习与超网络技术，属基础模型层。"
       },
       "source_card_ids": [
-        "FI-e9d743c0f18ba997"
+        "FI-aac4ece28b7640a6"
       ]
     },
     {
@@ -4968,7 +4940,7 @@
         "investors": [
           {
             "name": "Accel",
-            "role": "本轮领投",
+            "role": "本轮股权领投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-7910f56b348bc37f",
@@ -4982,7 +4954,7 @@
           },
           {
             "name": "Prosus Ventures",
-            "role": "本轮参投",
+            "role": "本轮股权参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-7910f56b348bc37f",
@@ -4996,7 +4968,7 @@
           },
           {
             "name": "BeeGlobal",
-            "role": "本轮参投",
+            "role": "本轮股权参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-7910f56b348bc37f",
@@ -5010,7 +4982,7 @@
           },
           {
             "name": "Bajaj Finance’s Finserv Intelligence",
-            "role": "本轮参投",
+            "role": "本轮股权参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-7910f56b348bc37f",
@@ -5024,7 +4996,7 @@
           },
           {
             "name": "Bajaj Alts AI Opportunities Fund",
-            "role": "本轮参投",
+            "role": "本轮股权参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-7910f56b348bc37f",
@@ -5038,7 +5010,7 @@
           },
           {
             "name": "Dallas Venture Capital",
-            "role": "本轮参投",
+            "role": "本轮股权参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-7910f56b348bc37f",
@@ -5052,7 +5024,7 @@
           },
           {
             "name": "Lighthouse Canton",
-            "role": "本轮领投",
+            "role": "本轮债务领投、股权参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-7910f56b348bc37f",
@@ -5066,7 +5038,7 @@
           },
           {
             "name": "Jump Trading",
-            "role": "本轮参投",
+            "role": "本轮股权参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-7910f56b348bc37f",
@@ -5080,7 +5052,7 @@
           },
           {
             "name": "Trifecta Capital",
-            "role": "本轮参投",
+            "role": "本轮债务参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-7910f56b348bc37f",
@@ -5459,7 +5431,7 @@
       ],
       "analysis": {
         "investment_rationale": [],
-        "capital_judgment": "资本押注的核心变量是：能否以规模化、多样化且高质量的真实世界人类活动数据，持续供给美国前沿AI实验室、机器人公司及世界模型开发者。当前融资所依赖的已验证信号包括：12家付费客户、2026年4月至10月1000万美元营收、另有2000万美元已签约合同，以及约90%收入来自美国。证据边界在于：来源未披露具体客户名称、未披露累计融资额，另有2000万美元交易尚未最终敲定，且数据采集涉及隐私与知情同意问题，这些均限制了对增长确定性的判断。",
+        "capital_judgment": "4700万美元为2600万美元股权与2100万美元风险债务合计，未将债务出资方归作股权领投。",
         "validated_signals": [
           "12家付费客户，包括前沿AI实验室、机器人公司和世界模型开发者",
           "2026年4月至10月实现1000万美元营收",
@@ -5476,7 +5448,7 @@
         ],
         "sector": "数据标注与合成",
         "investment_thesis": {
-          "statement": "资本押注的核心变量是：能否以规模化、多样化且高质量的真实世界人类活动数据，持续供给美国前沿AI实验室、机器人公司及世界模型开发者。当前融资所依赖的已验证信号包括：12家付费客户、2026年4月至10月1000万美元营收、另有2000万美元已签约合同，以及约90%收入来自美国。证据边界在于：来源未披露具体客户名称、未披露累计融资额，另有2000万美元交易尚未最终敲定，且数据采集涉及隐私与知情同意问题，这些均限制了对增长确定性的判断。",
+          "statement": "4700万美元为2600万美元股权与2100万美元风险债务合计，未将债务出资方归作股权领投。",
           "evidence_signals": [
             "12家付费客户，包括前沿AI实验室、机器人公司和世界模型开发者",
             "2026年4月至10月实现1000万美元营收",
@@ -5727,7 +5699,7 @@
           "investors": [
             {
               "name": "Accel",
-              "role": "本轮领投",
+              "role": "本轮股权领投",
               "evidence_refs": [
                 {
                   "source_id": "FISRC-7910f56b348bc37f",
@@ -5741,7 +5713,7 @@
             },
             {
               "name": "Prosus Ventures",
-              "role": "本轮参投",
+              "role": "本轮股权参投",
               "evidence_refs": [
                 {
                   "source_id": "FISRC-7910f56b348bc37f",
@@ -5755,7 +5727,7 @@
             },
             {
               "name": "BeeGlobal",
-              "role": "本轮参投",
+              "role": "本轮股权参投",
               "evidence_refs": [
                 {
                   "source_id": "FISRC-7910f56b348bc37f",
@@ -5769,7 +5741,7 @@
             },
             {
               "name": "Bajaj Finance’s Finserv Intelligence",
-              "role": "本轮参投",
+              "role": "本轮股权参投",
               "evidence_refs": [
                 {
                   "source_id": "FISRC-7910f56b348bc37f",
@@ -5783,7 +5755,7 @@
             },
             {
               "name": "Bajaj Alts AI Opportunities Fund",
-              "role": "本轮参投",
+              "role": "本轮股权参投",
               "evidence_refs": [
                 {
                   "source_id": "FISRC-7910f56b348bc37f",
@@ -5797,7 +5769,7 @@
             },
             {
               "name": "Dallas Venture Capital",
-              "role": "本轮参投",
+              "role": "本轮股权参投",
               "evidence_refs": [
                 {
                   "source_id": "FISRC-7910f56b348bc37f",
@@ -5811,7 +5783,7 @@
             },
             {
               "name": "Lighthouse Canton",
-              "role": "本轮领投",
+              "role": "本轮债务领投、股权参投",
               "evidence_refs": [
                 {
                   "source_id": "FISRC-7910f56b348bc37f",
@@ -5825,7 +5797,7 @@
             },
             {
               "name": "Jump Trading",
-              "role": "本轮参投",
+              "role": "本轮股权参投",
               "evidence_refs": [
                 {
                   "source_id": "FISRC-7910f56b348bc37f",
@@ -5839,7 +5811,7 @@
             },
             {
               "name": "Trifecta Capital",
-              "role": "本轮参投",
+              "role": "本轮债务参投",
               "evidence_refs": [
                 {
                   "source_id": "FISRC-7910f56b348bc37f",
@@ -7706,6 +7678,731 @@
       },
       "source_card_ids": [
         "FI-02a12b52ba81f601"
+      ]
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-0bfa60b9e5f0b086",
+      "triggered_by_event_id": "EV-8cb327ac867e5fae",
+      "as_of_date": "2026-11-20",
+      "company": {
+        "entity_id": "EN-3c74cd87e529ece6",
+        "name": "Aarden AI",
+        "full_name": "Aarden AI",
+        "website": "https://www.aarden.ai/",
+        "summary": "Aarden AI 是一家总部位于西雅图的土地智能平台公司，通过 AI 原生数据、模型和投资工具，帮助土地所有者、开发商和投资者评估土地用途、估值趋势、所有权与社区情绪，并撮合土地交易。",
+        "headquarters": "华盛顿州西雅图",
+        "founders": [
+          {
+            "name": "Danan Margason",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5a7eb17ce8e16707",
+                "quote": "founder and CEO Danan Margason said in a statement.",
+                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+                "quote_hash": "80befc97156c767a2af5fc3d0fd00163c5bfe37d900e0d91ce9bb530a708aafc"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "13",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5a7eb17ce8e16707",
+              "quote": "The company has 13 employees and plans to nearly double in size over the next 12 months.",
+              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+              "quote_hash": "f5ca9e2919478145ff257478880a2c1c454529b00fe0d28a132488b1144418e9"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5a7eb17ce8e16707",
+            "quote": "Seattle startup Aarden AI on Tuesday announced $8 million in new funding",
+            "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+            "quote_hash": "e8898e9c3b5606dc800ba0f120f40c8e9d693f47ce8f4696c0e02329b7b42806"
+          },
+          {
+            "source_id": "FISRC-1affbabc693922f7",
+            "quote": "Aarden's AI-native stack of tools and services helps landowners, developers, and investors understand what land can be used for in the energy and AI buildout",
+            "source_content_hash": "a8519a2535659353",
+            "quote_hash": "e5b19e6a1c67b90a06f4c69c52f68223a7656656c896fb0816863d6585ba9b20"
+          }
+        ],
+        "application_entity_id": "EN-3c74cd87e529ece6",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "轮次未披露",
+        "amount": "$8M",
+        "total_raised": "$12 million",
+        "announced_at": "2026-11-17",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Overture Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5a7eb17ce8e16707",
+                "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
+                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+                "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-720c2e2a7950c4"
+          },
+          {
+            "name": "Madrona",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5a7eb17ce8e16707",
+                "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
+                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+                "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-3a4877c6069ffa"
+          },
+          {
+            "name": "Propeller Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5a7eb17ce8e16707",
+                "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
+                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+                "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-9ca01265405fde"
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Planeteer",
+            "role": "2025年6月400万美元轮次领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5a7eb17ce8e16707",
+                "quote": "The startup previously raised $4 million in a round led by Planeteer in June 2025.",
+                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+                "quote_hash": "65c965f379c988675d86e03feaad077a1e5360936bfc7f7f7cc5ff461b0c9bc9"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-9308c1f54f4be7"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5a7eb17ce8e16707",
+            "quote": "announced $8 million in new funding",
+            "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+            "quote_hash": "e73d3fbf47bc62082654f39a0095d573ca35d650bd9d5c98e35ea1860450be7f"
+          },
+          {
+            "source_id": "FISRC-1c02775c73c9c358",
+            "quote": "Today, Aarden announced it has raised $8 million led by Overture Ventures, with participation from Madrona and Propeller Ventures.",
+            "source_content_hash": "ad45cb84c426c4a4",
+            "quote_hash": "7f1b7fc8b6ca36f2921b4fc6d491dc57df8c17207cb37abb793445c78ea45427"
+          }
+        ],
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "$8M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 8000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "800 万美元"
+        },
+        "total_raised_original": "$12 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1200 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-8cb327ac867e5fae",
+            "round_original": "轮次未披露",
+            "amount": "$8M",
+            "announced_at": "2026-11-17",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5a7eb17ce8e16707",
+                "quote": "announced $8 million in new funding",
+                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+                "quote_hash": "e73d3fbf47bc62082654f39a0095d573ca35d650bd9d5c98e35ea1860450be7f"
+              },
+              {
+                "source_id": "FISRC-1c02775c73c9c358",
+                "quote": "Today, Aarden announced it has raised $8 million led by Overture Ventures, with participation from Madrona and Propeller Ventures.",
+                "source_content_hash": "ad45cb84c426c4a4",
+                "quote_hash": "7f1b7fc8b6ca36f2921b4fc6d491dc57df8c17207cb37abb793445c78ea45427"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed",
+        "cumulative_amount": {
+          "original": "$12 million",
+          "normalized": {
+            "currency": "USD",
+            "value": 12000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1200 万美元"
+          },
+          "basis": "source_disclosed",
+          "known_round_totals": [
+            {
+              "currency": "USD",
+              "value": 8000000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "800 万美元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-5a7eb17ce8e16707",
+          "FISRC-1c02775c73c9c358"
+        ]
+      },
+      "products": [
+        {
+          "name": "Aarden 土地智能平台",
+          "description": "结合数百项土地属性、历史市场数据和专有模型，评估开发适宜性、估值趋势、实体所有权和社区情绪，并提供投资级研究与交易撮合服务。",
+          "target_customers": "土地所有者、土地管理者、开发商和投资者",
+          "features": [
+            "开发适宜性评估",
+            "估值趋势分析",
+            "所有权与社区情绪数据",
+            "自然语言地理空间分析",
+            "土地交易撮合"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5a7eb17ce8e16707",
+              "quote": "The company combines data on hundreds of land attributes with historical market data and proprietary models to assess development suitability, valuation trends, ownership and community sentiment.",
+              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+              "quote_hash": "18ad77c30cabcf26a9a958369528f118c1f8faab632fe80762753b1aa3ff8f22"
+            },
+            {
+              "source_id": "FISRC-effe21ab8b7f134e",
+              "quote": "Aarden builds models, agents, and tools for land decisions.",
+              "source_content_hash": "d5103e5fc17e9dad",
+              "quote_hash": "a5dcacdea861e9a68f3fd3fbec200ec0749ab8806b59a397f02bb2544cef44ba"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Resource Management Service",
+          "industry": "林业与土地投资管理",
+          "use_case": "评估地块最适合继续木材生产、保护、太阳能开发还是其他用途",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5a7eb17ce8e16707",
+              "quote": "One customer, timberland investment manager Resource Management Service, uses Aarden to evaluate whether tracts are best suited for continued timber production, conservation, solar development or other uses.",
+              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+              "quote_hash": "200a20e833c84ceb4205f07c390dee473917389b4a4576aee4041bfde83f18cb"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Acres",
+          "product": "土地数据、估值与尽职调查工具",
+          "scenario": "土地研究与分析",
+          "target_customer": "土地所有者与投资者",
+          "funding_summary": "",
+          "core_difference": "Aarden 强调 AI 原生模型、社区情绪与交易撮合网络；Acres 被描述为提供土地数据、估值和尽职调查工具。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5a7eb17ce8e16707",
+              "quote": "Other companies offering property research and analysis tools include Acres, which provides land data, valuations and due diligence tools",
+              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+              "quote_hash": "022e12a7498d73fc57e9d9db5b3d341427e9ccd29a61e76a054af2e855228235"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Land id",
+          "product": "地产洞察与地图工具",
+          "scenario": "土地研究与分析",
+          "target_customer": "土地所有者与投资者",
+          "funding_summary": "",
+          "core_difference": "Aarden 强调 AI 原生模型、社区情绪与交易撮合网络；Land id 被描述为提供地产洞察和地图工具。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5a7eb17ce8e16707",
+              "quote": "Land id, which offers property insights and mapping tools",
+              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+              "quote_hash": "e55e2e07a499beb2e952878e75eb123a6c2c4333675a256fb1161c35db4c5663"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "客户合计拥有或管理土地面积",
+          "value": "约1400万英亩",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5a7eb17ce8e16707",
+              "quote": "its clients collectively own or manage approximately 14 million acres worldwide",
+              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+              "quote_hash": "a400ef2dfe948a88fbaefb80c74ce6e90b66047e8d1081d58f545f5f27820a16"
+            }
+          ]
+        },
+        {
+          "label": "已评估土地交易价值",
+          "value": "超过5亿美元",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5a7eb17ce8e16707",
+              "quote": "it has evaluated more than $500 million worth of land deals",
+              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+              "quote_hash": "1842a9353d59e14982104cd91871e879cc20bd3d7c8f3bb0991c64b12ed82d55"
+            }
+          ]
+        },
+        {
+          "label": "员工人数",
+          "value": "13",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5a7eb17ce8e16707",
+              "quote": "The company has 13 employees",
+              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+              "quote_hash": "b9db8d09bec3f6525391ff7581f037209f28b813dbf934482e796edaadd30732"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "1200万美元",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5a7eb17ce8e16707",
+              "quote": "The new round brings Aarden’s total funding to $12 million.",
+              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+              "quote_hash": "9cd4e11b12d106e7323306e792de0952054c1bb956914b291a99d18d79be3654"
+            }
+          ]
+        },
+        {
+          "label": "已优化的大型土地组合",
+          "value": "5个跨国土地所有者、超过100万英亩组合的部分区域",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1affbabc693922f7",
+              "quote": "Optimized parts of 1 million-plus-acre portfolios for five multinational landowners",
+              "source_content_hash": "a8519a2535659353",
+              "quote_hash": "c5be5c2f6ec45a625a202d69de0207e8c4289045b8781cb44804e543faafeefd"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "本轮披露800万美元，累计融资1200万美元；2025年的400万美元属于历史轮次。",
+        "validated_signals": [
+          "客户合计拥有或管理约1400万英亩土地",
+          "已评估超过5亿美元的土地交易",
+          "服务5个跨国土地所有者并优化超100万英亩组合的部分区域",
+          "本轮800万美元由 Overture Ventures 领投，Madrona 和 Propeller Ventures 参投",
+          "累计融资达1200万美元"
+        ],
+        "risks": [
+          "来源未披露本轮轮次名称、收入规模与客户留存数据，商业化质量仍待验证",
+          "土地交易撮合与投资级研究依赖关系网络和模型准确性，来源未提供模型准确率的量化指标",
+          "公司计划12个月内接近翻倍扩员，团队扩张执行风险尚待观察"
+        ],
+        "sector": "建筑与房地产",
+        "investment_thesis": {
+          "statement": "本轮披露800万美元，累计融资1200万美元；2025年的400万美元属于历史轮次。",
+          "evidence_signals": [
+            "客户合计拥有或管理约1400万英亩土地",
+            "已评估超过5亿美元的土地交易",
+            "服务5个跨国土地所有者并优化超100万英亩组合的部分区域",
+            "本轮800万美元由 Overture Ventures 领投，Madrona 和 Propeller Ventures 参投",
+            "累计融资达1200万美元"
+          ],
+          "risks": [
+            "来源未披露本轮轮次名称、收入规模与客户留存数据，商业化质量仍待验证",
+            "土地交易撮合与投资级研究依赖关系网络和模型准确性，来源未提供模型准确率的量化指标",
+            "公司计划12个月内接近翻倍扩员，团队扩张执行风险尚待观察"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Aarden 土地智能平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Danan Margason",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Overture Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Madrona",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Propeller Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Planeteer",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Resource Management Service",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Acres",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Land id",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-5a7eb17ce8e16707",
+          "source_url": "https://www.geekwire.com/2026/seattle-startup-aarden-raises-8m-to-help-landowners-navigate-the-ai-and-energy-building-boom/",
+          "title": "西雅图初创公司Aarden融资800万美元，助土地所有者应对AI与能源建设热潮",
+          "publisher": "www.geekwire.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-20T00:17:38.954Z",
+          "content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+          "source_artifact_id": "SA-2b636d3cf3f82d2c",
+          "raw_id": "RAW-62e601f1f7b88058",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-1c02775c73c9c358",
+          "source_url": "https://vcnewsdaily.com/aarden/venture-capital-funding/zldzlvnzgw",
+          "title": "Aarden Receives $8M Financing Round",
+          "publisher": "vcnewsdaily.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-20T00:37:47.507Z",
+          "content_hash": "ad45cb84c426c4a4",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-1affbabc693922f7",
+          "source_url": "https://www.morningstar.com/news/business-wire/20261117120808/aarden-raises-8m-to-build-smarter-and-more-efficient-land-markets",
+          "title": "Aarden Raises $8M to Build Smarter and More Efficient Land Markets",
+          "publisher": "morningstar.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-20T00:37:49.162Z",
+          "content_hash": "a8519a2535659353",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-effe21ab8b7f134e",
+          "source_url": "https://www.aarden.ai/",
+          "title": "Aarden",
+          "publisher": "aarden.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-20T00:37:53.327Z",
+          "content_hash": "d5103e5fc17e9dad",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-20T00:38:02.685Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-20T00:38:02.685Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Aarden 土地智能平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Danan Margason"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-8cb327ac867e5fae"
+      ],
+      "aggregation": {
+        "key": "EN-3c74cd87e529ece6|undisclosed|USD:exact:8000000:::|2026-11-17",
+        "event_count": 1,
+        "strategy": "reviewed_funding_subject",
+        "subject_id": "EN-3c74cd87e529ece6",
+        "source_card_count": 1
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-0bfa60b9e5f0b086",
+          "event_ids": [
+            "EV-8cb327ac867e5fae"
+          ],
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "轮次未披露",
+          "amount_original": "$8M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 8000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "800 万美元"
+          },
+          "announced_at": "2026-11-17",
+          "disclosure_status": "partially_disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true,
+          "investors": [
+            {
+              "name": "Overture Ventures",
+              "role": "本轮领投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-5a7eb17ce8e16707",
+                  "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
+                  "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+                  "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-720c2e2a7950c4"
+            },
+            {
+              "name": "Madrona",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-5a7eb17ce8e16707",
+                  "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
+                  "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+                  "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-3a4877c6069ffa"
+            },
+            {
+              "name": "Propeller Ventures",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-5a7eb17ce8e16707",
+                  "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
+                  "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+                  "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-9ca01265405fde"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5a7eb17ce8e16707",
+              "quote": "announced $8 million in new funding",
+              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+              "quote_hash": "e73d3fbf47bc62082654f39a0095d573ca35d650bd9d5c98e35ea1860450be7f"
+            },
+            {
+              "source_id": "FISRC-1c02775c73c9c358",
+              "quote": "Today, Aarden announced it has raised $8 million led by Overture Ventures, with participation from Madrona and Propeller Ventures.",
+              "source_content_hash": "ad45cb84c426c4a4",
+              "quote_hash": "7f1b7fc8b6ca36f2921b4fc6d491dc57df8c17207cb37abb793445c78ea45427"
+            }
+          ]
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "id": "enterprise-software",
+        "name": "企业软件",
+        "dimension": "financing_product_form"
+      },
+      "market_category": {
+        "id": "industry",
+        "name": "行业 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "property",
+        "name": "建筑与房地产",
+        "dimension": "financing_subsector"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-8cb327ac867e5fae"
+      },
+      "translations": {
+        "zh-CN": {
+          "company.headquarters": {
+            "text": "华盛顿州西雅图",
+            "source_hash": "28b8027177e8f9593f0fb1fd8b0ee338484fe976415bb91353239f37269fc7a4",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-20T00:39:08.271Z",
+            "status": "translated"
+          }
+        }
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "industry",
+          "name": "行业 AI"
+        },
+        "subsector": {
+          "id": "property",
+          "name": "建筑与房地产"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1affbabc693922f7",
+            "quote": "Aarden's AI-native stack of tools and services helps landowners, developers, and investors understand what land can be used for in the energy and AI buildout"
+          },
+          {
+            "source_id": "FISRC-5a7eb17ce8e16707",
+            "quote": "The company combines data on hundreds of land attributes with historical market data and proprietary models to assess development suitability, valuation trends, ownership and community sentiment."
+          },
+          {
+            "source_id": "FISRC-effe21ab8b7f134e",
+            "quote": "Aarden builds models, agents, and tools for land decisions."
+          }
+        ],
+        "rationale": "Aarden用模型与智能体评估土地开发适宜性，属土地与房地产行业AI。"
+      },
+      "source_card_ids": [
+        "FI-0bfa60b9e5f0b086"
       ]
     },
     {
@@ -11185,749 +11882,6 @@
       },
       "source_card_ids": [
         "FI-671e0bd7684e9883"
-      ]
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-6fb7f9e1f1c3d8bf",
-      "triggered_by_event_id": "EV-8cb327ac867e5fae",
-      "as_of_date": "2026-11-20",
-      "company": {
-        "entity_id": "EN-3c74cd87e529ece6",
-        "name": "Aarden AI",
-        "full_name": "Aarden AI",
-        "website": "https://www.aarden.ai/",
-        "summary": "Aarden AI 是一家总部位于西雅图的土地智能平台公司，通过 AI 原生数据、模型和投资工具，帮助土地所有者、开发商和投资者评估土地用途、估值趋势、所有权与社区情绪，并撮合土地交易。",
-        "headquarters": "华盛顿州西雅图",
-        "founders": [
-          {
-            "name": "Danan Margason",
-            "role": "创始人兼CEO",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-5a7eb17ce8e16707",
-                "quote": "founder and CEO Danan Margason said in a statement.",
-                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-                "quote_hash": "80befc97156c767a2af5fc3d0fd00163c5bfe37d900e0d91ce9bb530a708aafc"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "team_size": {
-          "value": "13",
-          "observed_at": "2026-11-17",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5a7eb17ce8e16707",
-              "quote": "The company has 13 employees and plans to nearly double in size over the next 12 months.",
-              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-              "quote_hash": "f5ca9e2919478145ff257478880a2c1c454529b00fe0d28a132488b1144418e9"
-            }
-          ]
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-5a7eb17ce8e16707",
-            "quote": "Seattle startup Aarden AI on Tuesday announced $8 million in new funding",
-            "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-            "quote_hash": "e8898e9c3b5606dc800ba0f120f40c8e9d693f47ce8f4696c0e02329b7b42806"
-          },
-          {
-            "source_id": "FISRC-1affbabc693922f7",
-            "quote": "Aarden's AI-native stack of tools and services helps landowners, developers, and investors understand what land can be used for in the energy and AI buildout",
-            "source_content_hash": "a8519a2535659353",
-            "quote_hash": "e5b19e6a1c67b90a06f4c69c52f68223a7656656c896fb0816863d6585ba9b20"
-          }
-        ],
-        "application_entity_id": "EN-3c74cd87e529ece6",
-        "canonical_entity_consistent": false
-      },
-      "financing": {
-        "round": "轮次未披露",
-        "amount": "$4 million",
-        "total_raised": "$12 million",
-        "announced_at": "2026-11-17",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "Overture Ventures",
-            "role": "本轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-5a7eb17ce8e16707",
-                "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
-                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-                "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-720c2e2a7950c4"
-          },
-          {
-            "name": "Madrona",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-5a7eb17ce8e16707",
-                "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
-                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-                "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-3a4877c6069ffa"
-          },
-          {
-            "name": "Propeller Ventures",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-5a7eb17ce8e16707",
-                "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
-                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-                "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-9ca01265405fde"
-          }
-        ],
-        "other_round_investors": [
-          {
-            "name": "Planeteer",
-            "role": "2025年6月400万美元轮次领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-5a7eb17ce8e16707",
-                "quote": "The startup previously raised $4 million in a round led by Planeteer in June 2025.",
-                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-                "quote_hash": "65c965f379c988675d86e03feaad077a1e5360936bfc7f7f7cc5ff461b0c9bc9"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-9308c1f54f4be7"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-5a7eb17ce8e16707",
-            "quote": "The startup previously raised $4 million in a round led by Planeteer in June 2025.",
-            "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-            "quote_hash": "65c965f379c988675d86e03feaad077a1e5360936bfc7f7f7cc5ff461b0c9bc9"
-          },
-          {
-            "source_id": "FISRC-5a7eb17ce8e16707",
-            "quote": "The new round brings Aarden’s total funding to $12 million.",
-            "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-            "quote_hash": "9cd4e11b12d106e7323306e792de0952054c1bb956914b291a99d18d79be3654"
-          },
-          {
-            "source_id": "FISRC-1c02775c73c9c358",
-            "quote": "Today, Aarden announced it has raised $8 million led by Overture Ventures, with participation from Madrona and Propeller Ventures.",
-            "source_content_hash": "ad45cb84c426c4a4",
-            "quote_hash": "7f1b7fc8b6ca36f2921b4fc6d491dc57df8c17207cb37abb793445c78ea45427"
-          }
-        ],
-        "round_code": "undisclosed",
-        "round_original": "轮次未披露",
-        "amount_original": "$4 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 4000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "400 万美元"
-        },
-        "total_raised_original": "$12 million",
-        "total_raised_normalized": {
-          "currency": "USD",
-          "value": 12000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "1200 万美元"
-        },
-        "risk_markers": [],
-        "disclosures": [
-          {
-            "event_id": "EV-8cb327ac867e5fae",
-            "round_original": "轮次未披露",
-            "amount": "$4 million",
-            "announced_at": "2026-11-17",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-5a7eb17ce8e16707",
-                "quote": "The startup previously raised $4 million in a round led by Planeteer in June 2025.",
-                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-                "quote_hash": "65c965f379c988675d86e03feaad077a1e5360936bfc7f7f7cc5ff461b0c9bc9"
-              },
-              {
-                "source_id": "FISRC-5a7eb17ce8e16707",
-                "quote": "The new round brings Aarden’s total funding to $12 million.",
-                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-                "quote_hash": "9cd4e11b12d106e7323306e792de0952054c1bb956914b291a99d18d79be3654"
-              },
-              {
-                "source_id": "FISRC-1c02775c73c9c358",
-                "quote": "Today, Aarden announced it has raised $8 million led by Overture Ventures, with participation from Madrona and Propeller Ventures.",
-                "source_content_hash": "ad45cb84c426c4a4",
-                "quote_hash": "7f1b7fc8b6ca36f2921b4fc6d491dc57df8c17207cb37abb793445c78ea45427"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "partially_disclosed",
-        "cumulative_amount": {
-          "original": "$12 million",
-          "normalized": {
-            "currency": "USD",
-            "value": 12000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "1200 万美元"
-          },
-          "basis": "source_disclosed",
-          "known_round_totals": [
-            {
-              "currency": "USD",
-              "value": 4000000,
-              "min_value": null,
-              "max_value": null,
-              "unit": "base",
-              "round_count": 1,
-              "status": "exact",
-              "display_zh": "400 万美元"
-            }
-          ],
-          "historical_round_count": 1
-        },
-        "current_source_ids": [
-          "FISRC-5a7eb17ce8e16707",
-          "FISRC-1c02775c73c9c358"
-        ]
-      },
-      "products": [
-        {
-          "name": "Aarden 土地智能平台",
-          "description": "结合数百项土地属性、历史市场数据和专有模型，评估开发适宜性、估值趋势、实体所有权和社区情绪，并提供投资级研究与交易撮合服务。",
-          "target_customers": "土地所有者、土地管理者、开发商和投资者",
-          "features": [
-            "开发适宜性评估",
-            "估值趋势分析",
-            "所有权与社区情绪数据",
-            "自然语言地理空间分析",
-            "土地交易撮合"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5a7eb17ce8e16707",
-              "quote": "The company combines data on hundreds of land attributes with historical market data and proprietary models to assess development suitability, valuation trends, ownership and community sentiment.",
-              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-              "quote_hash": "18ad77c30cabcf26a9a958369528f118c1f8faab632fe80762753b1aa3ff8f22"
-            },
-            {
-              "source_id": "FISRC-effe21ab8b7f134e",
-              "quote": "Aarden builds models, agents, and tools for land decisions.",
-              "source_content_hash": "d5103e5fc17e9dad",
-              "quote_hash": "a5dcacdea861e9a68f3fd3fbec200ec0749ab8806b59a397f02bb2544cef44ba"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [
-        {
-          "name": "Resource Management Service",
-          "industry": "林业与土地投资管理",
-          "use_case": "评估地块最适合继续木材生产、保护、太阳能开发还是其他用途",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5a7eb17ce8e16707",
-              "quote": "One customer, timberland investment manager Resource Management Service, uses Aarden to evaluate whether tracts are best suited for continued timber production, conservation, solar development or other uses.",
-              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-              "quote_hash": "200a20e833c84ceb4205f07c390dee473917389b4a4576aee4041bfde83f18cb"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "comparisons": [
-        {
-          "name": "Acres",
-          "product": "土地数据、估值与尽职调查工具",
-          "scenario": "土地研究与分析",
-          "target_customer": "土地所有者与投资者",
-          "funding_summary": "",
-          "core_difference": "Aarden 强调 AI 原生模型、社区情绪与交易撮合网络；Acres 被描述为提供土地数据、估值和尽职调查工具。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5a7eb17ce8e16707",
-              "quote": "Other companies offering property research and analysis tools include Acres, which provides land data, valuations and due diligence tools",
-              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-              "quote_hash": "022e12a7498d73fc57e9d9db5b3d341427e9ccd29a61e76a054af2e855228235"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Land id",
-          "product": "地产洞察与地图工具",
-          "scenario": "土地研究与分析",
-          "target_customer": "土地所有者与投资者",
-          "funding_summary": "",
-          "core_difference": "Aarden 强调 AI 原生模型、社区情绪与交易撮合网络；Land id 被描述为提供地产洞察和地图工具。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5a7eb17ce8e16707",
-              "quote": "Land id, which offers property insights and mapping tools",
-              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-              "quote_hash": "e55e2e07a499beb2e952878e75eb123a6c2c4333675a256fb1161c35db4c5663"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "metrics": [
-        {
-          "label": "客户合计拥有或管理土地面积",
-          "value": "约1400万英亩",
-          "observed_at": "2026-11-17",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5a7eb17ce8e16707",
-              "quote": "its clients collectively own or manage approximately 14 million acres worldwide",
-              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-              "quote_hash": "a400ef2dfe948a88fbaefb80c74ce6e90b66047e8d1081d58f545f5f27820a16"
-            }
-          ]
-        },
-        {
-          "label": "已评估土地交易价值",
-          "value": "超过5亿美元",
-          "observed_at": "2026-11-17",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5a7eb17ce8e16707",
-              "quote": "it has evaluated more than $500 million worth of land deals",
-              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-              "quote_hash": "1842a9353d59e14982104cd91871e879cc20bd3d7c8f3bb0991c64b12ed82d55"
-            }
-          ]
-        },
-        {
-          "label": "员工人数",
-          "value": "13",
-          "observed_at": "2026-11-17",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5a7eb17ce8e16707",
-              "quote": "The company has 13 employees",
-              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-              "quote_hash": "b9db8d09bec3f6525391ff7581f037209f28b813dbf934482e796edaadd30732"
-            }
-          ]
-        },
-        {
-          "label": "累计融资额",
-          "value": "1200万美元",
-          "observed_at": "2026-11-17",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5a7eb17ce8e16707",
-              "quote": "The new round brings Aarden’s total funding to $12 million.",
-              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-              "quote_hash": "9cd4e11b12d106e7323306e792de0952054c1bb956914b291a99d18d79be3654"
-            }
-          ]
-        },
-        {
-          "label": "已优化的大型土地组合",
-          "value": "5个跨国土地所有者、超过100万英亩组合的部分区域",
-          "observed_at": "2026-11-17",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1affbabc693922f7",
-              "quote": "Optimized parts of 1 million-plus-acre portfolios for five multinational landowners",
-              "source_content_hash": "a8519a2535659353",
-              "quote_hash": "c5be5c2f6ec45a625a202d69de0207e8c4289045b8781cb44804e543faafeefd"
-            }
-          ]
-        }
-      ],
-      "quotes": [],
-      "analysis": {
-        "investment_rationale": [],
-        "capital_judgment": "资本押注的核心变量是：AI 与能源基础设施建设带来的土地需求能否被 Aarden 的 AI 原生土地情报与交易网络高效承接。已验证信号包括：客户合计管理约1400万英亩土地、已评估超5亿美元土地交易、服务5个跨国土地所有者并优化超100万英亩组合部分区域、以及本轮800万美元由 Overture 领投且累计融资达1200万美元。证据边界在于：来源未披露本轮轮次名称、收入规模、客户留存或模型准确率的量化指标，因此无法判断其商业化质量与增长可持续性。",
-        "validated_signals": [
-          "客户合计拥有或管理约1400万英亩土地",
-          "已评估超过5亿美元的土地交易",
-          "服务5个跨国土地所有者并优化超100万英亩组合的部分区域",
-          "本轮800万美元由 Overture Ventures 领投，Madrona 和 Propeller Ventures 参投",
-          "累计融资达1200万美元"
-        ],
-        "risks": [
-          "来源未披露本轮轮次名称、收入规模与客户留存数据，商业化质量仍待验证",
-          "土地交易撮合与投资级研究依赖关系网络和模型准确性，来源未提供模型准确率的量化指标",
-          "公司计划12个月内接近翻倍扩员，团队扩张执行风险尚待观察"
-        ],
-        "sector": "建筑与房地产",
-        "investment_thesis": {
-          "statement": "资本押注的核心变量是：AI 与能源基础设施建设带来的土地需求能否被 Aarden 的 AI 原生土地情报与交易网络高效承接。已验证信号包括：客户合计管理约1400万英亩土地、已评估超5亿美元土地交易、服务5个跨国土地所有者并优化超100万英亩组合部分区域、以及本轮800万美元由 Overture 领投且累计融资达1200万美元。证据边界在于：来源未披露本轮轮次名称、收入规模、客户留存或模型准确率的量化指标，因此无法判断其商业化质量与增长可持续性。",
-          "evidence_signals": [
-            "客户合计拥有或管理约1400万英亩土地",
-            "已评估超过5亿美元的土地交易",
-            "服务5个跨国土地所有者并优化超100万英亩组合的部分区域",
-            "本轮800万美元由 Overture Ventures 领投，Madrona 和 Propeller Ventures 参投",
-            "累计融资达1200万美元"
-          ],
-          "risks": [
-            "来源未披露本轮轮次名称、收入规模与客户留存数据，商业化质量仍待验证",
-            "土地交易撮合与投资级研究依赖关系网络和模型准确性，来源未提供模型准确率的量化指标",
-            "公司计划12个月内接近翻倍扩员，团队扩张执行风险尚待观察"
-          ],
-          "institutional_rationale_status": "not_disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Aarden 土地智能平台",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Danan Margason",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Overture Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Madrona",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Propeller Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "Planeteer",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "Resource Management Service",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Acres",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Land id",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [],
-      "research_sources": [
-        {
-          "source_id": "FISRC-5a7eb17ce8e16707",
-          "source_url": "https://www.geekwire.com/2026/seattle-startup-aarden-raises-8m-to-help-landowners-navigate-the-ai-and-energy-building-boom/",
-          "title": "西雅图初创公司Aarden融资800万美元，助土地所有者应对AI与能源建设热潮",
-          "publisher": "www.geekwire.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-11-20T00:17:38.954Z",
-          "content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-          "source_artifact_id": "SA-2b636d3cf3f82d2c",
-          "raw_id": "RAW-62e601f1f7b88058",
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-1c02775c73c9c358",
-          "source_url": "https://vcnewsdaily.com/aarden/venture-capital-funding/zldzlvnzgw",
-          "title": "Aarden Receives $8M Financing Round",
-          "publisher": "vcnewsdaily.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-20T00:37:47.507Z",
-          "content_hash": "ad45cb84c426c4a4",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-1affbabc693922f7",
-          "source_url": "https://www.morningstar.com/news/business-wire/20261117120808/aarden-raises-8m-to-build-smarter-and-more-efficient-land-markets",
-          "title": "Aarden Raises $8M to Build Smarter and More Efficient Land Markets",
-          "publisher": "morningstar.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-20T00:37:49.162Z",
-          "content_hash": "a8519a2535659353",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        },
-        {
-          "source_id": "FISRC-effe21ab8b7f134e",
-          "source_url": "https://www.aarden.ai/",
-          "title": "Aarden",
-          "publisher": "aarden.ai",
-          "source_class": "official_candidate",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-20T00:37:53.327Z",
-          "content_hash": "d5103e5fc17e9dad",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-flash",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-11-20T00:38:02.685Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-11-20T00:38:02.685Z",
-      "customer_research": {
-        "status": "verified_customers_found",
-        "verified_customer_count": 1,
-        "searched_source_count": 4
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "Aarden 土地智能平台"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "Danan Margason"
-          ]
-        }
-      },
-      "source_event_ids": [
-        "EV-8cb327ac867e5fae"
-      ],
-      "aggregation": {
-        "key": "EN-3c74cd87e529ece6|undisclosed|USD:exact:4000000:::|2026-11-17",
-        "event_count": 1,
-        "strategy": "reviewed_funding_subject",
-        "subject_id": "EN-3c74cd87e529ece6",
-        "source_card_count": 1
-      },
-      "historical_rounds": [
-        {
-          "funding_insight_id": "FI-6fb7f9e1f1c3d8bf",
-          "event_ids": [
-            "EV-8cb327ac867e5fae"
-          ],
-          "round": "轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "轮次未披露",
-          "amount_original": "$4 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 4000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "400 万美元"
-          },
-          "announced_at": "2026-11-17",
-          "disclosure_status": "partially_disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": true,
-          "investors": [
-            {
-              "name": "Overture Ventures",
-              "role": "本轮领投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-5a7eb17ce8e16707",
-                  "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
-                  "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-                  "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-720c2e2a7950c4"
-            },
-            {
-              "name": "Madrona",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-5a7eb17ce8e16707",
-                  "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
-                  "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-                  "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-3a4877c6069ffa"
-            },
-            {
-              "name": "Propeller Ventures",
-              "role": "本轮参投",
-              "evidence_refs": [
-                {
-                  "source_id": "FISRC-5a7eb17ce8e16707",
-                  "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
-                  "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-                  "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
-                }
-              ],
-              "entity_id": null,
-              "institution_id": "INV-9ca01265405fde"
-            }
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5a7eb17ce8e16707",
-              "quote": "The startup previously raised $4 million in a round led by Planeteer in June 2025.",
-              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-              "quote_hash": "65c965f379c988675d86e03feaad077a1e5360936bfc7f7f7cc5ff461b0c9bc9"
-            },
-            {
-              "source_id": "FISRC-5a7eb17ce8e16707",
-              "quote": "The new round brings Aarden’s total funding to $12 million.",
-              "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-              "quote_hash": "9cd4e11b12d106e7323306e792de0952054c1bb956914b291a99d18d79be3654"
-            },
-            {
-              "source_id": "FISRC-1c02775c73c9c358",
-              "quote": "Today, Aarden announced it has raised $8 million led by Overture Ventures, with participation from Madrona and Propeller Ventures.",
-              "source_content_hash": "ad45cb84c426c4a4",
-              "quote_hash": "7f1b7fc8b6ca36f2921b4fc6d491dc57df8c17207cb37abb793445c78ea45427"
-            }
-          ]
-        }
-      ],
-      "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
-        "source_registry_ids": []
-      },
-      "product_form": {
-        "id": "enterprise-software",
-        "name": "企业软件",
-        "dimension": "financing_product_form"
-      },
-      "market_category": {
-        "id": "industry",
-        "name": "行业 AI",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "property",
-        "name": "建筑与房地产",
-        "dimension": "financing_subsector"
-      },
-      "market_application": null,
-      "links": {
-        "company": "",
-        "relation_map": "",
-        "funding_event": "data-center.html?view=events&detail=event&id=EV-8cb327ac867e5fae"
-      },
-      "translations": {
-        "zh-CN": {
-          "company.headquarters": {
-            "text": "华盛顿州西雅图",
-            "source_hash": "28b8027177e8f9593f0fb1fd8b0ee338484fe976415bb91353239f37269fc7a4",
-            "provider": "deepseek",
-            "model": "deepseek-flash",
-            "translated_at": "2026-11-20T00:39:08.271Z",
-            "status": "translated"
-          }
-        }
-      },
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "industry",
-          "name": "行业 AI"
-        },
-        "subsector": {
-          "id": "property",
-          "name": "建筑与房地产"
-        },
-        "product_form": {
-          "id": "enterprise-software",
-          "name": "企业软件"
-        },
-        "customers": [
-          {
-            "id": "business",
-            "name": "企业"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-1affbabc693922f7",
-            "quote": "Aarden's AI-native stack of tools and services helps landowners, developers, and investors understand what land can be used for in the energy and AI buildout"
-          },
-          {
-            "source_id": "FISRC-5a7eb17ce8e16707",
-            "quote": "The company combines data on hundreds of land attributes with historical market data and proprietary models to assess development suitability, valuation trends, ownership and community sentiment."
-          },
-          {
-            "source_id": "FISRC-effe21ab8b7f134e",
-            "quote": "Aarden builds models, agents, and tools for land decisions."
-          }
-        ],
-        "rationale": "Aarden用模型与智能体评估土地开发适宜性，属土地与房地产行业AI。"
-      },
-      "source_card_ids": [
-        "FI-6fb7f9e1f1c3d8bf"
       ]
     },
     {
@@ -694689,17 +694643,18 @@
       ]
     },
     {
-      "funding_insight_id": "FI-e9d743c0f18ba997",
+      "funding_insight_id": "FI-aac4ece28b7640a6",
       "triggered_by_event_id": "EV-a151aeb22a93c5ee",
       "source_event_ids": [
         "EV-a151aeb22a93c5ee"
       ],
-      "subject_card_id": "FI-e9d743c0f18ba997",
+      "subject_card_id": "FI-aac4ece28b7640a6",
       "as_of_date": "2026-11-20",
       "market_scope": {
         "market_region": "CN",
         "china_market_match": true,
         "china_market_basis": [
+          "china_entity_alias:无涯智远",
           "funding_company_evidence:china_legal_entity:北京无涯智远科技有限公司"
         ],
         "source_registry_ids": []
@@ -694707,7 +694662,7 @@
       "company": {
         "entity_id": "EN-393c9ade80b59991",
         "application_entity_id": "EN-393c9ade80b59991",
-        "name": "北京无涯智远科技有限公司",
+        "name": "无涯智远",
         "full_name": "北京无涯智远科技有限公司",
         "summary": "无涯智远（Norizon AI）聚焦Real-Time RSI（实时自进化），以参数持续学习为核心技术路径，致力于让大模型在部署后仍能持续吸收知识、内化经验，获得新能力。",
         "website": "",
@@ -694729,9 +694684,9 @@
         ]
       },
       "financing": {
-        "round": "天使轮",
-        "round_code": "angel",
-        "round_original": "天使轮",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
         "amount": "数亿元",
         "amount_original": "数亿元",
         "amount_normalized": {
@@ -694821,15 +694776,9 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-386a3e96d1dd9d03",
-            "quote": "投资界（ID：pedaily2012）11月19日消息，无涯智远宣布完成数亿元天使轮和天使加轮融资，投资方包括五源资本、红杉中国、联想之星、中关村科学城基金及戈壁创投等多家知名投资机构。",
+            "quote": "完成数亿元天使轮和天使加轮融资",
             "source_content_hash": "2d0f08a254efe618e6c06106033fbf641e189f3706766778d7c850edf9c064be",
-            "quote_hash": "ab5a8e91a9cfd9a6cedc741224eb18db0c1bebf045088d5e60f05169373bd1e6"
-          },
-          {
-            "source_id": "FISRC-386a3e96d1dd9d03",
-            "quote": "无涯智远宣布完成数亿元天使轮和天使加轮融资，投资方包括五源资本、红杉中国、联想之星、中关村科学城基金及戈壁创投等多家知名投资机构。",
-            "source_content_hash": "2d0f08a254efe618e6c06106033fbf641e189f3706766778d7c850edf9c064be",
-            "quote_hash": "b108ef7a24385cb15d77ba1152013c602fa011c454096d2804acef3512b3f9b8"
+            "quote_hash": "4baa43e7ee4903ce14f55798bef04ce386c23e11d7034dd5d41b6d05bb45824a"
           },
           {
             "source_id": "FISRC-56b438e8b2d4f967",
@@ -695873,7 +695822,7 @@
         "investors": [
           {
             "name": "Accel",
-            "role": "本轮领投",
+            "role": "本轮股权领投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-7910f56b348bc37f",
@@ -695887,7 +695836,7 @@
           },
           {
             "name": "Prosus Ventures",
-            "role": "本轮参投",
+            "role": "本轮股权参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-7910f56b348bc37f",
@@ -695901,7 +695850,7 @@
           },
           {
             "name": "BeeGlobal",
-            "role": "本轮参投",
+            "role": "本轮股权参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-7910f56b348bc37f",
@@ -695915,7 +695864,7 @@
           },
           {
             "name": "Bajaj Finance’s Finserv Intelligence",
-            "role": "本轮参投",
+            "role": "本轮股权参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-7910f56b348bc37f",
@@ -695929,7 +695878,7 @@
           },
           {
             "name": "Bajaj Alts AI Opportunities Fund",
-            "role": "本轮参投",
+            "role": "本轮股权参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-7910f56b348bc37f",
@@ -695943,7 +695892,7 @@
           },
           {
             "name": "Dallas Venture Capital",
-            "role": "本轮参投",
+            "role": "本轮股权参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-7910f56b348bc37f",
@@ -695957,7 +695906,7 @@
           },
           {
             "name": "Lighthouse Canton",
-            "role": "本轮领投",
+            "role": "本轮债务领投、股权参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-7910f56b348bc37f",
@@ -695971,7 +695920,7 @@
           },
           {
             "name": "Jump Trading",
-            "role": "本轮参投",
+            "role": "本轮股权参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-7910f56b348bc37f",
@@ -695985,7 +695934,7 @@
           },
           {
             "name": "Trifecta Capital",
-            "role": "本轮参投",
+            "role": "本轮债务参投",
             "evidence_refs": [
               {
                 "source_id": "FISRC-7910f56b348bc37f",
@@ -696668,6 +696617,238 @@
       "products": [
         {
           "name": "乎零AI语音健康戒指"
+        }
+      ]
+    },
+    {
+      "funding_insight_id": "FI-0bfa60b9e5f0b086",
+      "triggered_by_event_id": "EV-8cb327ac867e5fae",
+      "source_event_ids": [
+        "EV-8cb327ac867e5fae"
+      ],
+      "subject_card_id": "FI-0bfa60b9e5f0b086",
+      "as_of_date": "2026-11-20",
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "company": {
+        "entity_id": "EN-3c74cd87e529ece6",
+        "application_entity_id": "EN-3c74cd87e529ece6",
+        "name": "Aarden AI",
+        "full_name": "Aarden AI",
+        "summary": "Aarden AI 是一家总部位于西雅图的土地智能平台公司，通过 AI 原生数据、模型和投资工具，帮助土地所有者、开发商和投资者评估土地用途、估值趋势、所有权与社区情绪，并撮合土地交易。",
+        "website": "https://www.aarden.ai/",
+        "headquarters": "华盛顿州西雅图",
+        "founders": [
+          {
+            "name": "Danan Margason",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5a7eb17ce8e16707",
+                "quote": "founder and CEO Danan Margason said in a statement.",
+                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+                "quote_hash": "80befc97156c767a2af5fc3d0fd00163c5bfe37d900e0d91ce9bb530a708aafc"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount": "$8M",
+        "amount_original": "$8M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 8000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "800 万美元"
+        },
+        "announced_at": "2026-11-17",
+        "disclosure_status": "partially_disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Overture Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5a7eb17ce8e16707",
+                "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
+                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+                "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-720c2e2a7950c4"
+          },
+          {
+            "name": "Madrona",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5a7eb17ce8e16707",
+                "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
+                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+                "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-3a4877c6069ffa"
+          },
+          {
+            "name": "Propeller Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5a7eb17ce8e16707",
+                "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
+                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+                "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-9ca01265405fde"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5a7eb17ce8e16707",
+            "quote": "announced $8 million in new funding",
+            "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+            "quote_hash": "e73d3fbf47bc62082654f39a0095d573ca35d650bd9d5c98e35ea1860450be7f"
+          },
+          {
+            "source_id": "FISRC-1c02775c73c9c358",
+            "quote": "Today, Aarden announced it has raised $8 million led by Overture Ventures, with participation from Madrona and Propeller Ventures.",
+            "source_content_hash": "ad45cb84c426c4a4",
+            "quote_hash": "7f1b7fc8b6ca36f2921b4fc6d491dc57df8c17207cb37abb793445c78ea45427"
+          }
+        ],
+        "current_source_ids": [
+          "FISRC-5a7eb17ce8e16707",
+          "FISRC-1c02775c73c9c358"
+        ]
+      },
+      "research_sources": [
+        {
+          "source_id": "FISRC-5a7eb17ce8e16707",
+          "source_url": "https://www.geekwire.com/2026/seattle-startup-aarden-raises-8m-to-help-landowners-navigate-the-ai-and-energy-building-boom/",
+          "title": "西雅图初创公司Aarden融资800万美元，助土地所有者应对AI与能源建设热潮",
+          "publisher": "www.geekwire.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-20T00:17:38.954Z",
+          "content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
+          "source_artifact_id": "SA-2b636d3cf3f82d2c",
+          "raw_id": "RAW-62e601f1f7b88058",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-1c02775c73c9c358",
+          "source_url": "https://vcnewsdaily.com/aarden/venture-capital-funding/zldzlvnzgw",
+          "title": "Aarden Receives $8M Financing Round",
+          "publisher": "vcnewsdaily.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-20T00:37:47.507Z",
+          "content_hash": "ad45cb84c426c4a4",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-1affbabc693922f7",
+          "source_url": "https://www.morningstar.com/news/business-wire/20261117120808/aarden-raises-8m-to-build-smarter-and-more-efficient-land-markets",
+          "title": "Aarden Raises $8M to Build Smarter and More Efficient Land Markets",
+          "publisher": "morningstar.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-20T00:37:49.162Z",
+          "content_hash": "a8519a2535659353",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-effe21ab8b7f134e",
+          "source_url": "https://www.aarden.ai/",
+          "title": "Aarden",
+          "publisher": "aarden.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-20T00:37:53.327Z",
+          "content_hash": "d5103e5fc17e9dad",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "industry",
+          "name": "行业 AI"
+        },
+        "subsector": {
+          "id": "property",
+          "name": "建筑与房地产"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1affbabc693922f7",
+            "quote": "Aarden's AI-native stack of tools and services helps landowners, developers, and investors understand what land can be used for in the energy and AI buildout"
+          },
+          {
+            "source_id": "FISRC-5a7eb17ce8e16707",
+            "quote": "The company combines data on hundreds of land attributes with historical market data and proprietary models to assess development suitability, valuation trends, ownership and community sentiment."
+          },
+          {
+            "source_id": "FISRC-effe21ab8b7f134e",
+            "quote": "Aarden builds models, agents, and tools for land decisions."
+          }
+        ],
+        "rationale": "Aarden用模型与智能体评估土地开发适宜性，属土地与房地产行业AI。"
+      },
+      "market_category": {
+        "id": "industry",
+        "name": "行业 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "property",
+        "name": "建筑与房地产",
+        "dimension": "financing_subsector"
+      },
+      "product_form": {
+        "id": "enterprise-software",
+        "name": "企业软件",
+        "dimension": "financing_product_form"
+      },
+      "products": [
+        {
+          "name": "Aarden 土地智能平台"
         }
       ]
     },
@@ -697753,244 +697934,6 @@
       "products": [
         {
           "name": "Treat AI原生医疗入口平台"
-        }
-      ]
-    },
-    {
-      "funding_insight_id": "FI-6fb7f9e1f1c3d8bf",
-      "triggered_by_event_id": "EV-8cb327ac867e5fae",
-      "source_event_ids": [
-        "EV-8cb327ac867e5fae"
-      ],
-      "subject_card_id": "FI-6fb7f9e1f1c3d8bf",
-      "as_of_date": "2026-11-20",
-      "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
-        "source_registry_ids": []
-      },
-      "company": {
-        "entity_id": "EN-3c74cd87e529ece6",
-        "application_entity_id": "EN-3c74cd87e529ece6",
-        "name": "Aarden AI",
-        "full_name": "Aarden AI",
-        "summary": "Aarden AI 是一家总部位于西雅图的土地智能平台公司，通过 AI 原生数据、模型和投资工具，帮助土地所有者、开发商和投资者评估土地用途、估值趋势、所有权与社区情绪，并撮合土地交易。",
-        "website": "https://www.aarden.ai/",
-        "headquarters": "华盛顿州西雅图",
-        "founders": [
-          {
-            "name": "Danan Margason",
-            "role": "创始人兼CEO",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-5a7eb17ce8e16707",
-                "quote": "founder and CEO Danan Margason said in a statement.",
-                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-                "quote_hash": "80befc97156c767a2af5fc3d0fd00163c5bfe37d900e0d91ce9bb530a708aafc"
-              }
-            ],
-            "entity_id": null
-          }
-        ]
-      },
-      "financing": {
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "轮次未披露",
-        "amount": "$4 million",
-        "amount_original": "$4 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 4000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "400 万美元"
-        },
-        "announced_at": "2026-11-17",
-        "disclosure_status": "partially_disclosed",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "Overture Ventures",
-            "role": "本轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-5a7eb17ce8e16707",
-                "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
-                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-                "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-720c2e2a7950c4"
-          },
-          {
-            "name": "Madrona",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-5a7eb17ce8e16707",
-                "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
-                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-                "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-3a4877c6069ffa"
-          },
-          {
-            "name": "Propeller Ventures",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-5a7eb17ce8e16707",
-                "quote": "Overture Ventures led the round, with participation from Madrona and Propeller Ventures.",
-                "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-                "quote_hash": "0cc3212b9427f7cdb52079a46b5636fe208828b85bda0badcd63a1133465ce32"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-9ca01265405fde"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-5a7eb17ce8e16707",
-            "quote": "The startup previously raised $4 million in a round led by Planeteer in June 2025.",
-            "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-            "quote_hash": "65c965f379c988675d86e03feaad077a1e5360936bfc7f7f7cc5ff461b0c9bc9"
-          },
-          {
-            "source_id": "FISRC-5a7eb17ce8e16707",
-            "quote": "The new round brings Aarden’s total funding to $12 million.",
-            "source_content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-            "quote_hash": "9cd4e11b12d106e7323306e792de0952054c1bb956914b291a99d18d79be3654"
-          },
-          {
-            "source_id": "FISRC-1c02775c73c9c358",
-            "quote": "Today, Aarden announced it has raised $8 million led by Overture Ventures, with participation from Madrona and Propeller Ventures.",
-            "source_content_hash": "ad45cb84c426c4a4",
-            "quote_hash": "7f1b7fc8b6ca36f2921b4fc6d491dc57df8c17207cb37abb793445c78ea45427"
-          }
-        ],
-        "current_source_ids": [
-          "FISRC-5a7eb17ce8e16707",
-          "FISRC-1c02775c73c9c358"
-        ]
-      },
-      "research_sources": [
-        {
-          "source_id": "FISRC-5a7eb17ce8e16707",
-          "source_url": "https://www.geekwire.com/2026/seattle-startup-aarden-raises-8m-to-help-landowners-navigate-the-ai-and-energy-building-boom/",
-          "title": "西雅图初创公司Aarden融资800万美元，助土地所有者应对AI与能源建设热潮",
-          "publisher": "www.geekwire.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-11-20T00:17:38.954Z",
-          "content_hash": "c359e0ff85b23bb8bb8f320a84c6d1e9b496b9b21d395cccfbaccc2f94615a11",
-          "source_artifact_id": "SA-2b636d3cf3f82d2c",
-          "raw_id": "RAW-62e601f1f7b88058",
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-1c02775c73c9c358",
-          "source_url": "https://vcnewsdaily.com/aarden/venture-capital-funding/zldzlvnzgw",
-          "title": "Aarden Receives $8M Financing Round",
-          "publisher": "vcnewsdaily.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-20T00:37:47.507Z",
-          "content_hash": "ad45cb84c426c4a4",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "current_round"
-        },
-        {
-          "source_id": "FISRC-1affbabc693922f7",
-          "source_url": "https://www.morningstar.com/news/business-wire/20261117120808/aarden-raises-8m-to-build-smarter-and-more-efficient-land-markets",
-          "title": "Aarden Raises $8M to Build Smarter and More Efficient Land Markets",
-          "publisher": "morningstar.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-20T00:37:49.162Z",
-          "content_hash": "a8519a2535659353",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        },
-        {
-          "source_id": "FISRC-effe21ab8b7f134e",
-          "source_url": "https://www.aarden.ai/",
-          "title": "Aarden",
-          "publisher": "aarden.ai",
-          "source_class": "official_candidate",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-11-20T00:37:53.327Z",
-          "content_hash": "d5103e5fc17e9dad",
-          "source_artifact_id": null,
-          "raw_id": null,
-          "purpose": "unverified"
-        }
-      ],
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "industry",
-          "name": "行业 AI"
-        },
-        "subsector": {
-          "id": "property",
-          "name": "建筑与房地产"
-        },
-        "product_form": {
-          "id": "enterprise-software",
-          "name": "企业软件"
-        },
-        "customers": [
-          {
-            "id": "business",
-            "name": "企业"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-1affbabc693922f7",
-            "quote": "Aarden's AI-native stack of tools and services helps landowners, developers, and investors understand what land can be used for in the energy and AI buildout"
-          },
-          {
-            "source_id": "FISRC-5a7eb17ce8e16707",
-            "quote": "The company combines data on hundreds of land attributes with historical market data and proprietary models to assess development suitability, valuation trends, ownership and community sentiment."
-          },
-          {
-            "source_id": "FISRC-effe21ab8b7f134e",
-            "quote": "Aarden builds models, agents, and tools for land decisions."
-          }
-        ],
-        "rationale": "Aarden用模型与智能体评估土地开发适宜性，属土地与房地产行业AI。"
-      },
-      "market_category": {
-        "id": "industry",
-        "name": "行业 AI",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "property",
-        "name": "建筑与房地产",
-        "dimension": "financing_subsector"
-      },
-      "product_form": {
-        "id": "enterprise-software",
-        "name": "企业软件",
-        "dimension": "financing_product_form"
-      },
-      "products": [
-        {
-          "name": "Aarden 土地智能平台"
         }
       ]
     },
