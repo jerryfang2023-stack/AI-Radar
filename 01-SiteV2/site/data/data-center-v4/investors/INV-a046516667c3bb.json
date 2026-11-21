@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-19",
-    "currentDate": "2026-11-19",
-    "eventCount": 4503,
+    "latestDataDate": "2026-11-20",
+    "currentDate": "2026-11-20",
+    "eventCount": 4516,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 29,
+    "current_round_count": 30,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 27,
+    "portfolio_company_count": 28,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-03-12",
-    "latest_disclosed_at": "2026-11-16",
+    "latest_disclosed_at": "2026-11-18",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 4,
-      "lead": 14,
+      "lead": 15,
       "participant": 13
     },
     "round_codes": [
@@ -149,6 +149,11 @@
         "entity_id": "EN-50b2676afbe30c83",
         "canonical_entity_id": "EN-50b2676afbe30c83",
         "name": "Higgsfield"
+      },
+      {
+        "entity_id": "EN-2ebfb37b3d52054c",
+        "canonical_entity_id": "",
+        "name": "Humyn Labs"
       },
       {
         "entity_id": "EN-02d6646fb8486fbd",
@@ -227,6 +232,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-43193219ae3b7fe9",
+        "funding_insight_id": "FI-88161972c1280eb5",
+        "event_ids": [
+          "EV-1bfa49b4ab9e1ac2"
+        ],
+        "company_entity_id": "EN-2ebfb37b3d52054c",
+        "company_canonical_entity_id": "",
+        "company_name": "Humyn Labs",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$47 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 47000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4700 万美元"
+        },
+        "announced_at": "2026-11-18",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮股权领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7910f56b348bc37f",
+            "source_url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+            "source_title": "印度 Humyn Labs 融资 4700 万美元，为美国机器人公司提供所需数据",
+            "source_content_hash": "a19d0a3921c300396d657136f9a9e5eafdf5c6cf83b5eea2bf3eb6f76515c1ef",
+            "quote": "The funding comprises $26 million in equity led by Accel, with participation from Prosus Ventures, BeeGlobal, Bajaj Finance’s Finserv Intelligence and Bajaj Alts AI Opportunities Fund, Dallas Venture Capital, Lighthouse Canton, and Jump Trading.",
+            "quote_hash": "31084b03eba3b4e14dc3675656b585f03b5a5a8c8dce3ecd6143bbc2a79bba94"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3204211b20521b0c",
         "funding_insight_id": "FI-1034f9dbe9a2f438",
@@ -1531,6 +1576,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-7910f56b348bc37f",
+        "source_url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+        "source_title": "印度 Humyn Labs 融资 4700 万美元，为美国机器人公司提供所需数据",
+        "source_content_hash": "a19d0a3921c300396d657136f9a9e5eafdf5c6cf83b5eea2bf3eb6f76515c1ef",
+        "quote": "The funding comprises $26 million in equity led by Accel, with participation from Prosus Ventures, BeeGlobal, Bajaj Finance’s Finserv Intelligence and Bajaj Alts AI Opportunities Fund, Dallas Venture Capital, Lighthouse Canton, and Jump Trading.",
+        "quote_hash": "31084b03eba3b4e14dc3675656b585f03b5a5a8c8dce3ecd6143bbc2a79bba94"
+      },
+      {
         "source_id": "FISRC-67067103992ebfe0",
         "source_url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
         "source_title": "Freshworks校友筹集5300万美元，以AI原生CRM挑战Salesforce和HubSpot",
@@ -1837,16 +1890,16 @@
           "source_id": "accel_europe"
         },
         {
+          "description": "融资来源记录：Humyn Labs · A轮 · 2026-11-18 · 本轮股权领投 · $47 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7910f56b348bc37f"
+        },
+        {
           "description": "融资来源记录：Dreamteam · 多轮融资 · 2026-11-16 · 本轮领投 · $53 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-67067103992ebfe0"
         },
         {
           "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮参投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-59233bfbeb9628bf"
-        },
-        {
-          "description": "融资来源记录：Simplismart · B轮 · 2026-10-27 · 本轮参投 · $14 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1a26335ff9013735"
         }
       ],
       "contacts": [
@@ -1919,6 +1972,14 @@
           "quote_hash": "596b1ee652763f3ce41bb638fabd7df2a7d7c189a53631ad6dd499bf0d48e2bc"
         },
         {
+          "source_id": "FISRC-7910f56b348bc37f",
+          "source_url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+          "source_title": "印度 Humyn Labs 融资 4700 万美元，为美国机器人公司提供所需数据",
+          "source_content_hash": "a19d0a3921c300396d657136f9a9e5eafdf5c6cf83b5eea2bf3eb6f76515c1ef",
+          "quote": "The funding comprises $26 million in equity led by Accel, with participation from Prosus Ventures, BeeGlobal, Bajaj Finance’s Finserv Intelligence and Bajaj Alts AI Opportunities Fund, Dallas Venture Capital, Lighthouse Canton, and Jump Trading.",
+          "quote_hash": "31084b03eba3b4e14dc3675656b585f03b5a5a8c8dce3ecd6143bbc2a79bba94"
+        },
+        {
           "source_id": "FISRC-67067103992ebfe0",
           "source_url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
           "source_title": "Freshworks校友筹集5300万美元，以AI原生CRM挑战Salesforce和HubSpot",
@@ -1933,14 +1994,6 @@
           "source_content_hash": "97c1f5cc5dda1d68",
           "quote": "with Accel, Conviction and Felicis returning",
           "quote_hash": "00c80464ae9c0c8df38260964628ecf789550dec5a6366ef053e66c8cfc3061e"
-        },
-        {
-          "source_id": "FISRC-1a26335ff9013735",
-          "source_url": "https://www.ithome.com/1/018/726.htm",
-          "source_title": "英伟达投资印度初创公司 Simplismart，助力企业用更少 GPU 运行 AI 模型",
-          "source_content_hash": "404d88ff840f005ca2cfc6b5710f57793c704b4d1f839e3ffb3dbdf063966c6f",
-          "quote": "除英伟达外，Accel、Shastra VC 和 Micromax 也参与了投资",
-          "quote_hash": "69eb650b766e80b83c31eff16d249ddc4375bffb539144aed60dd9c8599b3539"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1951,7 +2004,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[30].role": {
+        "activities[31].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

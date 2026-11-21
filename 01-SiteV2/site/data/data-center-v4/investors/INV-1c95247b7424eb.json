@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-19",
-    "currentDate": "2026-11-19",
-    "eventCount": 4503,
+    "latestDataDate": "2026-11-20",
+    "currentDate": "2026-11-20",
+    "eventCount": 4516,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,34 +54,40 @@
   },
   "institution": {
     "id": "INV-1c95247b7424eb",
-    "name": "SquarePeg",
+    "name": "Square Peg",
     "aliases": [
-      "Square Peg"
+      "SquarePeg"
     ],
     "canonical_entity_id": null,
     "investor_kind": "unverified_investor",
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-30",
-    "latest_disclosed_at": "2026-10-02",
+    "latest_disclosed_at": "2026-11-19",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
+      "series_a",
       "series_b",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-68227a66e51a4668",
+        "canonical_entity_id": "",
+        "name": "Everful"
+      },
       {
         "entity_id": "EN-5b3767eb23d5e4ed",
         "canonical_entity_id": "",
@@ -94,6 +100,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-873a6bdcbc5485a4",
+        "funding_insight_id": "FI-183448a43c9bcb8d",
+        "event_ids": [
+          "EV-4ed0d4054e9a6f07"
+        ],
+        "company_entity_id": "EN-68227a66e51a4668",
+        "company_canonical_entity_id": "",
+        "company_name": "Everful",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$48.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 48500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4850 万美元"
+        },
+        "announced_at": "2026-11-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8bc2fdc1aef603b8",
+            "source_url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
+            "source_title": "前阿里巴巴高管创立的Everful融资4850万美元，连接零售商与中国工厂",
+            "source_content_hash": "87e37b935e841730c8fa78ae270d0b3146ecb86669a1fe919fa1bfcf1fb0fe48",
+            "quote": "The round was led by Vertex Ventures Southeast Asia & India and January Capital, with participation from existing investors Square Peg and Lightspeed.",
+            "quote_hash": "4ec8808f91d5e26b0a7fa4dbadc8f479fdc7d58d1cc2c45f497037a9c005169c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-bd26b5976be778cc",
         "funding_insight_id": "FI-847970f93a915359",
@@ -209,6 +255,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-8bc2fdc1aef603b8",
+        "source_url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
+        "source_title": "前阿里巴巴高管创立的Everful融资4850万美元，连接零售商与中国工厂",
+        "source_content_hash": "87e37b935e841730c8fa78ae270d0b3146ecb86669a1fe919fa1bfcf1fb0fe48",
+        "quote": "The round was led by Vertex Ventures Southeast Asia & India and January Capital, with participation from existing investors Square Peg and Lightspeed.",
+        "quote_hash": "4ec8808f91d5e26b0a7fa4dbadc8f479fdc7d58d1cc2c45f497037a9c005169c"
+      },
+      {
         "source_id": "FISRC-06b7dbbc3fab6c09",
         "source_url": "https://www.prnewswire.com/news-releases/supabase-announces-150m-in-new-funding-and-turso-acquisition-302896752.html",
         "source_title": "Supabase 宣布获得 1.5 亿美元新融资并收购 Turso",
@@ -250,16 +304,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Everful · A轮 · 2026-11-19 · 本轮参投 · $48.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8bc2fdc1aef603b8"
+        },
+        {
           "description": "融资来源记录：Supabase · 轮次未披露 · 2026-10-02 · 本轮参投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-06b7dbbc3fab6c09"
         },
         {
           "description": "融资来源记录：Qodo · B轮 · 2026-03-30 · 本轮参投 · $70 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f001682a294672d5"
-        },
-        {
-          "description": "融资来源记录：Supabase · 历史轮次未披露 · E轮参投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-82ffe0698cc49d27"
         }
       ],
       "contacts": [],
@@ -277,6 +331,14 @@
           "quote_hash": "b3a1908fa2c4859551cefc8f754f277ee2fbdf50e264b2b0167eedf9a0fe6c21"
         },
         {
+          "source_id": "FISRC-8bc2fdc1aef603b8",
+          "source_url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
+          "source_title": "前阿里巴巴高管创立的Everful融资4850万美元，连接零售商与中国工厂",
+          "source_content_hash": "87e37b935e841730c8fa78ae270d0b3146ecb86669a1fe919fa1bfcf1fb0fe48",
+          "quote": "The round was led by Vertex Ventures Southeast Asia & India and January Capital, with participation from existing investors Square Peg and Lightspeed.",
+          "quote_hash": "4ec8808f91d5e26b0a7fa4dbadc8f479fdc7d58d1cc2c45f497037a9c005169c"
+        },
+        {
           "source_id": "FISRC-06b7dbbc3fab6c09",
           "source_url": "https://www.prnewswire.com/news-releases/supabase-announces-150m-in-new-funding-and-turso-acquisition-302896752.html",
           "source_title": "Supabase 宣布获得 1.5 亿美元新融资并收购 Turso",
@@ -291,14 +353,6 @@
           "source_content_hash": "043dbfa14e6bef8c",
           "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
           "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
-        },
-        {
-          "source_id": "FISRC-82ffe0698cc49d27",
-          "source_url": "https://supabase.com/blog/supabase-series-e",
-          "source_title": "Supabase Series E",
-          "source_content_hash": "760a84e1e432ce87",
-          "quote": "Figma has joined the round with all of existing investors: YC, Coatue, Felicis, Craft, and Square Peg.",
-          "quote_hash": "3a3f7fb72db8bf0228d4e857855c638723d1b26bedb01003ec45269de18744b6"
         }
       ],
       "last_verified_at": "2026-10-02"

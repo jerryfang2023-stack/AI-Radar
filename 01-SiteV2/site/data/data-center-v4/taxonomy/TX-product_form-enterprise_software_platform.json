@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-19",
-    "currentDate": "2026-11-19",
-    "eventCount": 4503,
+    "latestDataDate": "2026-11-20",
+    "currentDate": "2026-11-20",
+    "eventCount": 4516,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -60,7 +60,6 @@
     "valueId": "enterprise_software_platform",
     "eventIds": [
       "EV-0d4f7ad1fe080686",
-      "EV-27b9c5896b1b9c27",
       "EV-8de1001fde6993a5",
       "EV-fef4dfd8fed00cfe",
       "EV-1043d78cc040ab30",
@@ -285,7 +284,6 @@
     ],
     "entityIds": [
       "EN-5e494e695571ede1",
-      "EN-cb3a9e70e51c2f47",
       "EN-858837c33d111717",
       "EN-835429c59eea025b",
       "EN-295219ea74639f0b",
@@ -569,126 +567,6 @@
       "products": [],
       "sourceUrl": "https://tech.eu/2026/11/17/fermat-raises-8m-to-bridge-the-gap-between-fashion-designers-and-manufacturers/",
       "publisher": "tech.eu"
-    },
-    {
-      "id": "EV-27b9c5896b1b9c27",
-      "dataDate": "2026-11-19",
-      "date": "2026-11-17",
-      "updatedDate": "2026-11-17",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Model ML 融资 2.5 亿美元，用于自动化投资银行的繁琐基础工作",
-      "originalTitle": "Model ML raises $250M to automate investment banking grunt work",
-      "subject": "Model ML",
-      "action": "raises",
-      "object": "$250M to automate investment banking grunt work",
-      "metrics": [
-        "$250M",
-        "$250 million",
-        "$1.5 billion",
-        "$75 million",
-        "$250\nmillion"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "enterprise_software_platform",
-            "name": "企业软件平台",
-            "entityIds": [
-              "EN-cb3a9e70e51c2f47"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "financial_services",
-            "name": "金融服务",
-            "entityIds": [
-              "EN-cb3a9e70e51c2f47"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "financial_services",
-          "name": "金融服务",
-          "entityIds": [
-            "EN-cb3a9e70e51c2f47"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "enterprise_software_platform",
-          "name": "企业软件平台",
-          "entityIds": [
-            "EN-cb3a9e70e51c2f47"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "enterprise_software_platform",
-          "name": "企业软件平台",
-          "entityIds": [
-            "EN-cb3a9e70e51c2f47"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "financial_services",
-          "name": "金融服务",
-          "entityIds": [
-            "EN-cb3a9e70e51c2f47"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-cb3a9e70e51c2f47"
-      ],
-      "entityNames": [
-        "Model ML"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/",
-      "publisher": "techcrunch.com"
     },
     {
       "id": "EV-8de1001fde6993a5",
@@ -60676,28 +60554,6 @@
       "lastSeen": "2026-11-19"
     },
     {
-      "id": "EN-cb3a9e70e51c2f47",
-      "name": "Model ML",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-27b9c5896b1b9c27"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-product_form-enterprise_software_platform",
-        "TX-industry-financial_services"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-11-17",
-      "lastSeen": "2026-11-19"
-    },
-    {
       "id": "EN-858837c33d111717",
       "name": "Omnichat",
       "entityType": "organization_candidate",
@@ -62113,6 +61969,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-6b34d2e2a2aea1b9",
+        "EV-9b4e5cabf5bb77dc",
         "EV-d4e72cbad81641c6",
         "EV-8bba88d507b8dc62",
         "EV-4fc82b5985acc6c8",
@@ -62160,6 +62018,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-food_hospitality",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
@@ -62173,6 +62032,7 @@
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
         "TX-industry-media_entertainment",
+        "TX-product_form-compute_cloud_service",
         "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips",
         "TX-ai_market_category-infrastructure_compute",
@@ -62205,7 +62065,6 @@
         "TX-ai_market_application-computing_infrastructure",
         "TX-industry-professional_services",
         "TX-industry-construction_real_estate",
-        "TX-industry-food_hospitality",
         "TX-product_form-model_api_service",
         "TX-technology-long_context",
         "TX-use_case-customer_support",
@@ -62243,7 +62102,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "EN-3b3ed571bbb19504",
@@ -62550,6 +62409,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-food_hospitality",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
@@ -62573,8 +62433,7 @@
         "TX-industry-professional_services",
         "TX-ai_market_subcategory-observability_evaluation",
         "TX-ai_market_application-ai_observability_governance",
-        "TX-industry-construction_real_estate",
-        "TX-industry-food_hospitality"
+        "TX-industry-construction_real_estate"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
@@ -63262,6 +63121,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-food_hospitality",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-financial_services",
         "TX-product_form-model",
@@ -63274,8 +63134,7 @@
         "TX-ai_market_category-enterprise_applications",
         "TX-use_case-data_analysis",
         "TX-ai_market_subcategory-marketing",
-        "TX-use_case-marketing",
-        "TX-industry-food_hospitality"
+        "TX-use_case-marketing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-16",
@@ -63372,6 +63231,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-food_hospitality",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
@@ -63392,8 +63252,7 @@
         "TX-industry-education",
         "TX-industry-government_public_sector",
         "TX-industry-professional_services",
-        "TX-industry-construction_real_estate",
-        "TX-industry-food_hospitality"
+        "TX-industry-construction_real_estate"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-14",
@@ -64018,6 +63877,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-food_hospitality",
         "TX-technology-agentic_execution",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-financial_services",
@@ -64042,8 +63902,7 @@
         "TX-industry-professional_services",
         "TX-ai_market_subcategory-observability_evaluation",
         "TX-ai_market_application-ai_observability_governance",
-        "TX-industry-construction_real_estate",
-        "TX-industry-food_hospitality"
+        "TX-industry-construction_real_estate"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2025-11-17",
@@ -64094,12 +63953,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-food_hospitality",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-industry-retail_ecommerce",
         "TX-ai_market_category-enterprise_applications",
         "TX-use_case-hr_workforce",
-        "TX-industry-food_hospitality",
         "TX-ai_market_subcategory-hr"
       ],
       "relatedEntityIds": [],
@@ -66296,7 +66155,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "EN-c890cfa67d1da908",
@@ -66692,6 +66551,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-6b34d2e2a2aea1b9",
         "EV-6460ad65cd850154",
         "EV-4fc82b5985acc6c8",
         "EV-a8edaa14ede956fa",
@@ -66800,7 +66660,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "EN-54a01b7dfd15ceb4",
@@ -66936,7 +66796,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "EN-96a4bc2602655473",
@@ -67587,6 +67447,11 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-afb294eb4d9baf2d",
+        "EV-08f7b2f72a5da891",
+        "EV-14051f3d4f43c4a7",
+        "EV-6b34d2e2a2aea1b9",
+        "EV-de8886a2222f5cd0",
         "EV-d4e72cbad81641c6",
         "EV-2406bc3d29c09326",
         "EV-27d9a40d0446e770",
@@ -67803,7 +67668,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-20"
     },
     {
       "id": "EN-1da46c494dfdd8d3",

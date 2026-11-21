@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-19",
-    "currentDate": "2026-11-19",
-    "eventCount": 4503,
+    "latestDataDate": "2026-11-20",
+    "currentDate": "2026-11-20",
+    "eventCount": 4516,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,31 +61,77 @@
     "investor_kind_label": "政府或主权基金",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2024-01",
-    "latest_disclosed_at": "2026-07-01",
+    "latest_disclosed_at": "2026-11-19",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "infrastructure"
+      "infrastructure",
+      "multi_round"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-8b332ded81dc8d3a",
         "canonical_entity_id": "EN-8b332ded81dc8d3a",
         "name": "光轮智能"
+      },
+      {
+        "entity_id": "EN-393c9ade80b59991",
+        "canonical_entity_id": "",
+        "name": "无涯智远"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c284a51201814824",
+        "funding_insight_id": "FI-aac4ece28b7640a6",
+        "event_ids": [
+          "EV-a151aeb22a93c5ee"
+        ],
+        "company_entity_id": "EN-393c9ade80b59991",
+        "company_canonical_entity_id": "",
+        "company_name": "无涯智远",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-11-19",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-386a3e96d1dd9d03",
+            "source_url": "https://news.pedaily.cn/202611/572108.shtml",
+            "source_title": "无涯智远（Norizon AI）完成数亿元天使轮、天使加轮融资，开创大模型参数持续学习新范式",
+            "source_content_hash": "2d0f08a254efe618e6c06106033fbf641e189f3706766778d7c850edf9c064be",
+            "quote": "投资方包括五源资本、红杉中国、联想之星、中关村科学城基金及戈壁创投等多家知名投资机构。",
+            "quote_hash": "857d8fda098cd95dde34df2f2d53042f9499719fbf19b1350677a5b3589d6913"
+          }
+        ]
+      },
       {
         "activity_id": "IA-056aef5abc377d88",
         "funding_insight_id": "FI-d94dd0bea44a17d1",
@@ -193,6 +239,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-386a3e96d1dd9d03",
+        "source_url": "https://news.pedaily.cn/202611/572108.shtml",
+        "source_title": "无涯智远（Norizon AI）完成数亿元天使轮、天使加轮融资，开创大模型参数持续学习新范式",
+        "source_content_hash": "2d0f08a254efe618e6c06106033fbf641e189f3706766778d7c850edf9c064be",
+        "quote": "投资方包括五源资本、红杉中国、联想之星、中关村科学城基金及戈壁创投等多家知名投资机构。",
+        "quote_hash": "857d8fda098cd95dde34df2f2d53042f9499719fbf19b1350677a5b3589d6913"
+      },
+      {
         "source_id": "FISRC-8787a3d3602feb17",
         "source_url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260701_250581.html",
         "source_title": "光轮智能完成新一轮10亿元融资，加速物理AI数据与评测基础设施",
@@ -246,16 +300,16 @@
           "source_id": "zgccity_english"
         },
         {
+          "description": "融资来源记录：无涯智远 · 多轮融资 · 2026-11-19 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-386a3e96d1dd9d03"
+        },
+        {
           "description": "融资来源记录：光轮智能 · 基础设施融资 · 2026-07-01 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8787a3d3602feb17"
         },
         {
           "description": "融资来源记录：北京面壁智能科技股份有限公司 · 历史轮次未披露 · 2024-01 · 2024年12月融资联合领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ca5c9f62e4d3f2f3"
-        },
-        {
-          "description": "融资来源记录：面壁智能 · 历史轮次未披露 · 北京国资持续加注。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5e868b9dacd5325c"
         }
       ],
       "profile_type": "organization",
@@ -289,6 +343,14 @@
           "quote_hash": "85cc9de1c0ad22c088fc6e6eabf1687998d505d73516fe87e6c5851e1fdd15af"
         },
         {
+          "source_id": "FISRC-386a3e96d1dd9d03",
+          "source_url": "https://news.pedaily.cn/202611/572108.shtml",
+          "source_title": "无涯智远（Norizon AI）完成数亿元天使轮、天使加轮融资，开创大模型参数持续学习新范式",
+          "source_content_hash": "2d0f08a254efe618e6c06106033fbf641e189f3706766778d7c850edf9c064be",
+          "quote": "投资方包括五源资本、红杉中国、联想之星、中关村科学城基金及戈壁创投等多家知名投资机构。",
+          "quote_hash": "857d8fda098cd95dde34df2f2d53042f9499719fbf19b1350677a5b3589d6913"
+        },
+        {
           "source_id": "FISRC-8787a3d3602feb17",
           "source_url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260701_250581.html",
           "source_title": "光轮智能完成新一轮10亿元融资，加速物理AI数据与评测基础设施",
@@ -303,14 +365,6 @@
           "source_content_hash": "a1bc38c4c0a90cbafbaa7b31c70c8bde825b8401c8f2881b61267ea8c0b505ce",
           "quote": "2024年12月，面壁智能完成新一轮数亿元融资，由龙芯创投、鼎晖百孚、中关村科学城基金和赛富基金联合领投",
           "quote_hash": "63a980f1ba127733849c97a30d0874700bd03202657aec194d72afc7a3a64b3d"
-        },
-        {
-          "source_id": "FISRC-5e868b9dacd5325c",
-          "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
-          "source_title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
-          "source_content_hash": "21fcbff02b369abf",
-          "quote": "再到北京市人工智能产业投资基金、 中关村 科学城基金等北京国资的持续加注",
-          "quote_hash": "3d1ad25dab38fa3f8fee9061a0aadd35ab84e65bb95f9666e4edb543a608ce43"
         }
       ],
       "last_verified_at": "2026-09-26"

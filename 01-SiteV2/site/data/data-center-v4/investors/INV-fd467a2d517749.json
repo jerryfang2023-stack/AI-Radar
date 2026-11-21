@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-19",
-    "currentDate": "2026-11-19",
-    "eventCount": 4503,
+    "latestDataDate": "2026-11-20",
+    "currentDate": "2026-11-20",
+    "eventCount": 4516,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-01",
-    "latest_disclosed_at": "2026-10-16",
+    "latest_disclosed_at": "2026-11-17",
     "role_counts": {
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
@@ -80,12 +81,57 @@
     ],
     "portfolio_companies": [
       {
+        "entity_id": "EN-cdbb10488cec6e73",
+        "canonical_entity_id": "",
+        "name": "Fairly"
+      },
+      {
         "entity_id": "EN-0c0602512d9cddaa",
         "canonical_entity_id": "",
         "name": "Mueon Corp."
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-87319bd9b8d9691b",
+        "funding_insight_id": "FI-d649a9b10b211d66",
+        "event_ids": [
+          "EV-b37c29a324a5dc4e"
+        ],
+        "company_entity_id": "EN-cdbb10488cec6e73",
+        "company_canonical_entity_id": "",
+        "company_name": "Fairly",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$22.4 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 22400000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2240 万美元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-646d5346067a2ff2",
+            "source_url": "https://www.geekwire.com/2026/portland-startup-fairly-raises-22m-to-pair-local-caretakers-with-ai-for-vacation-rentals/",
+            "source_title": "波特兰初创公司Fairly融资2200万美元，将本地看护人员与AI结合用于度假租赁",
+            "source_content_hash": "b8cf8630aa2e7ccde07dbd61ee8469016c84bba50c15d60cc422cd8056a74b48",
+            "quote": "Oregon Venture Fund led the round, with participation from Elevate Capital and Breon.",
+            "quote_hash": "60b35e1f63f2a057e1c495209281f396afc538d2e9fa0cdeead6334e0f456419"
+          }
+        ]
+      },
       {
         "activity_id": "IA-949a897bc5f45bb9",
         "funding_insight_id": "FI-5138928a5c38a2d0",
@@ -161,6 +207,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-646d5346067a2ff2",
+        "source_url": "https://www.geekwire.com/2026/portland-startup-fairly-raises-22m-to-pair-local-caretakers-with-ai-for-vacation-rentals/",
+        "source_title": "波特兰初创公司Fairly融资2200万美元，将本地看护人员与AI结合用于度假租赁",
+        "source_content_hash": "b8cf8630aa2e7ccde07dbd61ee8469016c84bba50c15d60cc422cd8056a74b48",
+        "quote": "Oregon Venture Fund led the round, with participation from Elevate Capital and Breon.",
+        "quote_hash": "60b35e1f63f2a057e1c495209281f396afc538d2e9fa0cdeead6334e0f456419"
+      },
+      {
         "source_id": "FISRC-9f86360bad5cbe27",
         "source_url": "https://aipressroom.com/mueon-65m-ai-semiconductors/",
         "source_title": "Mueon完成6500万美元融资，用于优化AI半导体",
@@ -179,7 +233,7 @@
     ],
     "translations": {
       "zh-CN": {
-        "activities[1].role": {
+        "activities[2].role": {
           "text": "2025-09-17 Seed 参投",
           "source_hash": "a385fc81f8f59f577963453835e46651e70eefca80618e4ffa6308051774cb17",
           "provider": "deepseek",
@@ -194,10 +248,14 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Oregon Venture Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Oregon Venture Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Fairly · A轮 · 2026-11-17 · 本轮领投 · $22.4 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-646d5346067a2ff2"
+        },
         {
           "description": "融资来源记录：Mueon Corp. · A轮 · 2026-10-16 · 本轮参投 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9f86360bad5cbe27"
@@ -209,6 +267,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-646d5346067a2ff2",
+          "source_url": "https://www.geekwire.com/2026/portland-startup-fairly-raises-22m-to-pair-local-caretakers-with-ai-for-vacation-rentals/",
+          "source_title": "波特兰初创公司Fairly融资2200万美元，将本地看护人员与AI结合用于度假租赁",
+          "source_content_hash": "b8cf8630aa2e7ccde07dbd61ee8469016c84bba50c15d60cc422cd8056a74b48",
+          "quote": "Oregon Venture Fund led the round, with participation from Elevate Capital and Breon.",
+          "quote_hash": "60b35e1f63f2a057e1c495209281f396afc538d2e9fa0cdeead6334e0f456419"
+        },
         {
           "source_id": "FISRC-9f86360bad5cbe27",
           "source_url": "https://aipressroom.com/mueon-65m-ai-semiconductors/",
