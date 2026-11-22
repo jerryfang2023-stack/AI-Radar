@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4527,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,25 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 6,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 3,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
     "first_disclosed_at": "2026-02-11",
-    "latest_disclosed_at": "2026-08-20",
+    "latest_disclosed_at": "2026-11-20",
     "role_counts": {
       "historical_or_ambiguous": 6,
       "lead": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "multi_round",
+      "other",
       "pre_series_a",
       "series_b",
       "undisclosed"
@@ -100,12 +101,57 @@
         "name": "星海图"
       },
       {
+        "entity_id": "EN-6f7ac1823da81d2e",
+        "canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "name": "DeepSeek"
+      },
+      {
         "entity_id": "EN-b5251b35f15bedc4",
         "canonical_entity_id": "EN-b5251b35f15bedc4",
         "name": "Moonshot AI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ca281c6e46121858",
+        "funding_insight_id": "FI-faf8764cd64d29f0",
+        "event_ids": [
+          "EV-aab8ed97f5bf814a"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "第二轮",
+        "amount_original": "1000 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 亿元"
+        },
+        "announced_at": "2026-11-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-953d16ef145a7cc3",
+            "source_url": "https://www.ithome.com/1/030/199.htm",
+            "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+            "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+            "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+            "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3f89bc3b991fae05",
         "funding_insight_id": "FI-2e0a12585d18ffca",
@@ -473,6 +519,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-953d16ef145a7cc3",
+        "source_url": "https://www.ithome.com/1/030/199.htm",
+        "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+        "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+        "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+        "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+      },
+      {
         "source_id": "FISRC-0dd42e7d7de8bcd9",
         "source_url": "https://rccaijing.com/news-7496079406088779054.html",
         "source_title": "原字节PICO副总裁任利锋再创业，数美万物完成A+轮融资、红杉和美团都投了 - 瑞财经",
@@ -611,6 +665,10 @@
           "source_id": "dragonball_profile"
         },
         {
+          "description": "融资来源记录：DeepSeek · 其他融资 · 2026-11-20 · 本轮参投 · 1000 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-953d16ef145a7cc3"
+        },
+        {
           "description": "融资来源记录：数美万物 · 多轮融资 · 2026-08-20 · 本轮参投 · 近5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0dd42e7d7de8bcd9"
         },
@@ -640,6 +698,14 @@
           "quote_hash": "49a01cb1a1136125fbe7ded04a706db70da8685015abcb0ab75ca2bc37179ebc"
         },
         {
+          "source_id": "FISRC-953d16ef145a7cc3",
+          "source_url": "https://www.ithome.com/1/030/199.htm",
+          "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+          "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+          "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+          "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+        },
+        {
           "source_id": "FISRC-0dd42e7d7de8bcd9",
           "source_url": "https://rccaijing.com/news-7496079406088779054.html",
           "source_title": "原字节PICO副总裁任利锋再创业，数美万物完成A+轮融资、红杉和美团都投了 - 瑞财经",
@@ -654,14 +720,6 @@
           "source_content_hash": "507968dd939d15c9e72b909ed7776ff0f48463fc1f6fbc9ce4b06d5da7eee3b2",
           "quote": "本轮由美团龙珠领投",
           "quote_hash": "7e8f472fc47ff75966a038ad7dcc234d2a190d4375571ba61157c41ce4464be2"
-        },
-        {
-          "source_id": "FISRC-5d82f5dc9fc96ce5",
-          "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
-          "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
-          "source_content_hash": "eeb091dd8db852e6",
-          "quote": "2023年7月A轮，美团龙珠、襄禾资本、蓝驰创投",
-          "quote_hash": "ce983bb92940dbb6f14d4981d97fbc6b7a87dc7e3c877c0706e8b68444455643"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -670,7 +728,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[6].role": {
+        "activities[7].role": {
           "text": "Pre-A轮领投",
           "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
           "provider": "deepseek",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4527,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2026-02",
-    "latest_disclosed_at": "2026-02",
+    "latest_disclosed_at": "2026-11-20",
     "role_counts": {
-      "historical_or_ambiguous": 2
+      "historical_or_ambiguous": 2,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "other"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-6f7ac1823da81d2e",
+        "canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "name": "DeepSeek"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-40afb4ff635c1c90",
+        "funding_insight_id": "FI-faf8764cd64d29f0",
+        "event_ids": [
+          "EV-aab8ed97f5bf814a"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "第二轮",
+        "amount_original": "1000 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 亿元"
+        },
+        "announced_at": "2026-11-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-953d16ef145a7cc3",
+            "source_url": "https://www.ithome.com/1/030/199.htm",
+            "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+            "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+            "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+            "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e9814c2875884064",
         "funding_insight_id": "FI-dc68253303dac9b5",
@@ -144,6 +193,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-953d16ef145a7cc3",
+        "source_url": "https://www.ithome.com/1/030/199.htm",
+        "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+        "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+        "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+        "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+      },
+      {
         "source_id": "FISRC-ca5c9f62e4d3f2f3",
         "source_url": "https://news.pedaily.cn/202607/566303.shtml",
         "source_title": "首发| 面壁智能融资超50亿，估值超200亿",
@@ -165,10 +222,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "中国电信 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "中国电信 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：DeepSeek · 其他融资 · 2026-11-20 · 本轮参投 · 1000 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-953d16ef145a7cc3"
+        },
         {
           "description": "融资来源记录：北京面壁智能科技股份有限公司 · 历史轮次未披露 · 2026-02 · 2026年2月D轮领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ca5c9f62e4d3f2f3"
@@ -180,6 +241,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-953d16ef145a7cc3",
+          "source_url": "https://www.ithome.com/1/030/199.htm",
+          "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+          "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+          "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+          "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+        },
         {
           "source_id": "FISRC-ca5c9f62e4d3f2f3",
           "source_url": "https://news.pedaily.cn/202607/566303.shtml",

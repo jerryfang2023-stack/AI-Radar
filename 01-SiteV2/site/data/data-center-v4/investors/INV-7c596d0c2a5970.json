@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4527,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-01-26",
-    "latest_disclosed_at": "2026-04-02",
+    "latest_disclosed_at": "2026-11-20",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "other",
       "series_a",
       "series_b_plus"
     ],
@@ -87,12 +88,57 @@
         "name": "耀速科技（Xellar Biosystems）"
       },
       {
+        "entity_id": "EN-6f7ac1823da81d2e",
+        "canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "name": "DeepSeek"
+      },
+      {
         "entity_id": "EN-2c348893efb2316e",
         "canonical_entity_id": "EN-2c348893efb2316e",
         "name": "StepFun"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ea14272dfb5ba3ff",
+        "funding_insight_id": "FI-faf8764cd64d29f0",
+        "event_ids": [
+          "EV-aab8ed97f5bf814a"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "第二轮",
+        "amount_original": "1000 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 亿元"
+        },
+        "announced_at": "2026-11-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-953d16ef145a7cc3",
+            "source_url": "https://www.ithome.com/1/030/199.htm",
+            "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+            "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+            "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+            "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b0cc8f9adcba6670",
         "funding_insight_id": "FI-8e7436171d45ed58",
@@ -209,6 +255,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-953d16ef145a7cc3",
+        "source_url": "https://www.ithome.com/1/030/199.htm",
+        "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+        "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+        "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+        "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
+      },
+      {
         "source_id": "FISRC-5dbca4d3b6550c7f",
         "source_url": "https://www.xtalpi.com/%E6%99%B6%E6%B3%B0%E7%A7%91%E6%8A%80%E5%8F%82%E4%B8%8E%E8%80%80%E9%80%9F%E7%A7%91%E6%8A%80%E8%B6%852%E4%BA%BF%E5%85%83a%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8Cai%E5%99%A8%E5%AE%98%E8%8A%AF%E7%89%87/",
         "source_title": "晶泰科技参与耀速科技超2亿元A轮融资，AI+器官芯片+自动化构建下一代药物研发基础设施",
@@ -264,16 +318,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：DeepSeek · 其他融资 · 2026-11-20 · 本轮参投 · 1000 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-953d16ef145a7cc3"
+        },
+        {
           "description": "融资来源记录：耀速科技（Xellar Biosystems） · A轮 · 2026-04-02 · 本轮领投 · 超2亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5dbca4d3b6550c7f"
         },
         {
           "description": "融资来源记录：StepFun · B+轮 · 2026-01-26 · 本轮参投 · 50 亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-de3bb93d57d25bdf"
-        },
-        {
-          "description": "融资来源记录：耀速科技 · 历史轮次未披露 · A轮领投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-137a48f19e1119b4"
         }
       ],
       "profile_type": "organization",
@@ -311,6 +365,14 @@
           "quote_hash": "4f83b00234034e31f6691fed97d01507312ef33950f155e0a73a4529d26dddc9"
         },
         {
+          "source_id": "FISRC-953d16ef145a7cc3",
+          "source_url": "https://www.ithome.com/1/030/199.htm",
+          "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+          "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+          "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+          "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
+        },
+        {
           "source_id": "FISRC-5dbca4d3b6550c7f",
           "source_url": "https://www.xtalpi.com/%E6%99%B6%E6%B3%B0%E7%A7%91%E6%8A%80%E5%8F%82%E4%B8%8E%E8%80%80%E9%80%9F%E7%A7%91%E6%8A%80%E8%B6%852%E4%BA%BF%E5%85%83a%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8Cai%E5%99%A8%E5%AE%98%E8%8A%AF%E7%89%87/",
           "source_title": "晶泰科技参与耀速科技超2亿元A轮融资，AI+器官芯片+自动化构建下一代药物研发基础设施",
@@ -325,14 +387,6 @@
           "source_content_hash": "3cd27a7369aa4df5",
           "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
           "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
-        },
-        {
-          "source_id": "FISRC-137a48f19e1119b4",
-          "source_url": "https://news.pedaily.cn/202606/565703.shtml",
-          "source_title": "耀速科技完成近2亿元A+轮融资，打造下一代生物医药研发平台",
-          "source_content_hash": "4bba0dc5a705af7dff42b2ed2c3c95952ac77f1e01bf26b97db868814cefef84",
-          "quote": "这是继今年年初完成由国寿股权领投的超2亿元A轮融资后，耀速科技再次完成一轮重大融资。",
-          "quote_hash": "dfb02baffe73759e76aa1351faf57ba4806f2f75ff5d6849ec6b8bdaaf6789b1"
         }
       ],
       "last_verified_at": "2026-10-03"

@@ -1,0 +1,528 @@
+{
+  "event_id": "EV-a54d9f479d4eb060",
+  "company_name": "Tencent",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-1ef3e9c3bc6ec14a",
+    "triggered_by_event_id": "EV-a54d9f479d4eb060",
+    "as_of_date": "2026-11-22",
+    "company": {
+      "entity_id": "EN-9c8ae69b84f21a2e",
+      "name": "腾讯控股有限公司",
+      "full_name": "腾讯控股有限公司",
+      "website": "https://www.tencent.com/",
+      "summary": "腾讯是一家以社交、游戏、广告、金融科技与企业服务为主的科技公司，当前正持续加码AI基础设施和模型研发，并推出WorkBuddy、MaaS、Hy4等AI产品与模型。",
+      "headquarters": "深圳",
+      "founders": [],
+      "team_size": {
+        "value": "",
+        "observed_at": "",
+        "evidence_refs": []
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ec6819d9f2fecdbb",
+          "quote": "11月18日，腾讯发布第三季度财报。第三季度，腾讯云收入同比增长35%，WorkBuddy、MaaS等业务收入大幅增长；持续加码AI基础设施和模型研发",
+          "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+          "quote_hash": "561c276d051b7622817a4c5d94b23ec22848d570de894845e90078d2269dcf4a"
+        },
+        {
+          "source_id": "FISRC-b87ecd9e97ce2ca3",
+          "quote": "Tencent Launches Hy4, Joining the Ranks of the World’s Leading Open-Source AI Models",
+          "source_content_hash": "38a35ba389dae6bd",
+          "quote_hash": "1847a9348975e67ebf6e1175c9af2b620d4dd6b35463823b9543dff9d13d6581"
+        }
+      ],
+      "application_entity_id": "FICO-c0b8a4c1e0cd5407",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "轮次未披露",
+      "amount": "5450亿美元",
+      "total_raised": "",
+      "announced_at": "2026-11-19",
+      "investor_disclosure_status": "not_disclosed",
+      "investors": [],
+      "other_round_investors": [],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ec6819d9f2fecdbb",
+          "quote": "高盛周二发布报告，把2027年全球AI项目融资规模预期从3000亿美元上调至5450亿美元。",
+          "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+          "quote_hash": "39344516fcb9e1edcd3bade366c15dd470a1e787ac79a2a929974a4dd6d6e378"
+        }
+      ],
+      "round_code": "undisclosed",
+      "round_original": "轮次未披露",
+      "amount_original": "5450亿美元",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 545000000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "5450 亿美元"
+      },
+      "total_raised_original": "",
+      "total_raised_normalized": {
+        "currency": "",
+        "value": null,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "undisclosed",
+        "display_zh": ""
+      },
+      "risk_markers": [
+        "investors_missing"
+      ],
+      "disclosures": [
+        {
+          "event_id": "EV-a54d9f479d4eb060",
+          "round_original": "轮次未披露",
+          "amount": "5450亿美元",
+          "announced_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec6819d9f2fecdbb",
+              "quote": "高盛周二发布报告，把2027年全球AI项目融资规模预期从3000亿美元上调至5450亿美元。",
+              "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+              "quote_hash": "39344516fcb9e1edcd3bade366c15dd470a1e787ac79a2a929974a4dd6d6e378"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "partially_disclosed"
+    },
+    "products": [
+      {
+        "name": "WorkBuddy",
+        "description": "腾讯推出的AI办公产品，可将简报转化为报告草稿。",
+        "target_customers": "企业办公用户",
+        "features": [
+          "从简报生成报告草稿"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b87ecd9e97ce2ca3",
+            "quote": "Go From Brief to Draft Report with WorkBuddy",
+            "source_content_hash": "38a35ba389dae6bd",
+            "quote_hash": "f80f465cabe5df64278ac17b0d449eca337d275c25f402add3a8b6f05534cbd9"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "MaaS",
+        "description": "腾讯云模型即服务业务，第三季度收入大幅增长。",
+        "target_customers": "企业客户与开发者",
+        "features": [
+          "模型即服务"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ec6819d9f2fecdbb",
+            "quote": "WorkBuddy、MaaS等业务收入大幅增长",
+            "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+            "quote_hash": "27a06ff8de6443f62790cfcb09d64d5e3b6b9c7a583c51458c46de40a501bcba"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Hy4",
+        "description": "腾讯发布的开源AI模型，用于高速、低成本的AI部署。",
+        "target_customers": "开发者与企业",
+        "features": [
+          "开源",
+          "高速低成本AI部署"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b87ecd9e97ce2ca3",
+            "quote": "Tencent Launches Hy4 flash to Power High-Speed, Cost-Efficient AI Deployment for Everyday Workflows",
+            "source_content_hash": "38a35ba389dae6bd",
+            "quote_hash": "347aa493b9d9f09241fd632d9cce947060eb554d800d9c24a5aee77c9c78285e"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [],
+    "comparisons": [
+      {
+        "name": "阿里巴巴",
+        "product": "Qwen模型系列与云平台",
+        "scenario": "企业通过云平台使用模型与基础设施",
+        "target_customer": "企业客户",
+        "funding_summary": "",
+        "core_difference": "阿里巴巴将Qwen模型系列与中国最大的云平台之一结合，形成从模型开发到企业使用的直接路径；腾讯则通过微信等分发渠道和游戏、广告等成熟业务部署AI。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-8fad0a338899811c",
+            "quote": "Alibaba 将其 Qwen 模型系列与中国最大的云平台之一结合起来。",
+            "source_content_hash": "dc6f93c3f8b95706",
+            "quote_hash": "16cccab38ea0b3f8187f1d6858458364234897744daf8c61dfa7c71b31beea30"
+          }
+        ],
+        "entity_id": "EN-047364b9be67f665"
+      },
+      {
+        "name": "字节跳动",
+        "product": "面向消费者的内容平台与推荐技术",
+        "scenario": "AI用户参与度与内容创作",
+        "target_customer": "消费者",
+        "funding_summary": "",
+        "core_difference": "字节跳动将模型与内容创作和受众发现相连接，使用户增长与推理支出相互强化；腾讯则依托微信14.39亿月活用户和游戏业务进行AI部署。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-8fad0a338899811c",
+            "quote": "ByteDance 可以将模型与内容创作和受众发现相连接。",
+            "source_content_hash": "dc6f93c3f8b95706",
+            "quote_hash": "9df63d648a9d70c2a4e21039b2d4f08bc5423624f7649c029d72a6b6b065fe6b"
+          }
+        ],
+        "entity_id": "EN-5388bc10736a0eff"
+      }
+    ],
+    "metrics": [
+      {
+        "label": "第三季度资本开支",
+        "value": "814.33亿元",
+        "observed_at": "2026-11-18",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ec6819d9f2fecdbb",
+            "quote": "第三季度，腾讯资本开支达到814.33亿元，同比增长527%",
+            "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+            "quote_hash": "d42eb2abbb95dcd59862efde0d35ffa02885dd331e710466716ed77e2830e0ed"
+          }
+        ]
+      },
+      {
+        "label": "前三季度资本开支累计",
+        "value": "1661.53亿元",
+        "observed_at": "2026-11-18",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ec6819d9f2fecdbb",
+            "quote": "前三季度资本开支累计达到1661.53亿元，同比增长179%",
+            "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+            "quote_hash": "35dedc3dcd8830be8456cf931485fbbc658bd24a2223fc48a10dce15dc7d4579"
+          }
+        ]
+      },
+      {
+        "label": "腾讯云收入同比增速",
+        "value": "35%",
+        "observed_at": "2026-11-18",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ec6819d9f2fecdbb",
+            "quote": "第三季度，腾讯云收入同比增长35%",
+            "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+            "quote_hash": "53a7ef132e08225f60c460ff97d3a121fb104f4f41fe27bd97a0e9f0a463b6fd"
+          }
+        ]
+      },
+      {
+        "label": "2026年上半年资本支出",
+        "value": "963亿元人民币",
+        "observed_at": "2026-11-19",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-8fad0a338899811c",
+            "quote": "Tencent 在 2026 年上半年的资本支出达到 963 亿元人民币，较一年前的 459 亿元人民币增长逾一倍。",
+            "source_content_hash": "dc6f93c3f8b95706",
+            "quote_hash": "bd2579ce64467829a20c1272f3de969ae82099fd4ffe61bf3531a62a179911d4"
+          }
+        ]
+      },
+      {
+        "label": "2026年6月季度资本项目支出",
+        "value": "528亿元人民币",
+        "observed_at": "2026-11-19",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-8fad0a338899811c",
+            "quote": "Tencent 在资本项目上支出 528 亿元人民币，较一年前增长 176%。",
+            "source_content_hash": "dc6f93c3f8b95706",
+            "quote_hash": "230c1acb7dfbf0cfe733c49b23adfd24fcc2c0ff9603ee326ec592c93b50decf"
+          }
+        ]
+      },
+      {
+        "label": "2026年6月季度自由现金流流出",
+        "value": "138亿元人民币",
+        "observed_at": "2026-11-19",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-8fad0a338899811c",
+            "quote": "这一节奏导致该季度出现 138 亿元人民币的自由现金流流出。",
+            "source_content_hash": "dc6f93c3f8b95706",
+            "quote_hash": "ba012351136644d0fe586d3414c9c6fe8566c518a1dccabaf2a9894c9b6ef40a"
+          }
+        ]
+      },
+      {
+        "label": "微信及WeChat合并月活跃用户数",
+        "value": "14.39亿",
+        "observed_at": "2026-06-30",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-8fad0a338899811c",
+            "quote": "截至 2026 年 6 月底，Weixin 和 WeChat 的合计月活跃用户数达到 14.39 亿。",
+            "source_content_hash": "dc6f93c3f8b95706",
+            "quote_hash": "403eaed73dbfdd89ce3c5d5df8cc7ee49e80ea173ab3bcdb3f30d1130348b0d6"
+          }
+        ]
+      },
+      {
+        "label": "2026年上半年收入",
+        "value": "4012亿元人民币",
+        "observed_at": "2026-11-19",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-8fad0a338899811c",
+            "quote": "Tencent 10 月的文件披露，2026 年上半年收入为 4,012 亿元人民币。",
+            "source_content_hash": "dc6f93c3f8b95706",
+            "quote_hash": "646b6e36c5d6f615daeeb234be6b74a7ef409b06562e0bd528641f56e160a3c4"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "高盛",
+        "quote": "高盛周二发布报告，把2027年全球AI项目融资规模预期从3000亿美元上调至5450亿美元。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ec6819d9f2fecdbb",
+            "quote": "高盛周二发布报告，把2027年全球AI项目融资规模预期从3000亿美元上调至5450亿美元。",
+            "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+            "quote_hash": "39344516fcb9e1edcd3bade366c15dd470a1e787ac79a2a929974a4dd6d6e378"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "资本押注的核心变量是腾讯能否将大规模AI基础设施投入转化为可持续的AI收入与利润。已验证信号包括：第三季度资本开支814.33亿元、同比增长527%，前三季度累计1661.53亿元、同比增长179%；腾讯云收入同比增长35%，WorkBuddy、MaaS等业务收入大幅增长；2026年上半年资本支出963亿元，6月季度自由现金流流出138亿元。这些信号表明投入强度已显著提升，但最新AI产品尚未披露独立利润来源，AI投资回报仍待验证。",
+      "validated_signals": [
+        "第三季度资本开支814.33亿元，同比增长527%",
+        "前三季度资本开支累计1661.53亿元，同比增长179%",
+        "腾讯云收入同比增长35%，WorkBuddy、MaaS等业务收入大幅增长",
+        "2026年上半年资本支出963亿元，较一年前459亿元增长逾一倍",
+        "2026年6月季度资本项目支出528亿元，同比增长176%",
+        "2026年6月季度自由现金流流出138亿元"
+      ],
+      "risks": [
+        "最新AI产品尚未带来已披露的利润来源，AI投资回报仍待验证",
+        "高额资本支出已导致季度自由现金流流出，若持续将加大财务压力",
+        "计算硬件可能快速过时，存在资本锁定在快速老化设备上的风险",
+        "中国科技公司在获取先进半导体和制造产能方面持续面临不确定性",
+        "AI相关债券发行尚未完成，最终规模、定价和条款仍受市场状况影响",
+        "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "compute_cloud_service",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "sector": "云计算与AI基础设施服务",
+      "investment_thesis": {
+        "statement": "资本押注的核心变量是腾讯能否将大规模AI基础设施投入转化为可持续的AI收入与利润。已验证信号包括：第三季度资本开支814.33亿元、同比增长527%，前三季度累计1661.53亿元、同比增长179%；腾讯云收入同比增长35%，WorkBuddy、MaaS等业务收入大幅增长；2026年上半年资本支出963亿元，6月季度自由现金流流出138亿元。这些信号表明投入强度已显著提升，但最新AI产品尚未披露独立利润来源，AI投资回报仍待验证。",
+        "evidence_signals": [
+          "第三季度资本开支814.33亿元，同比增长527%",
+          "前三季度资本开支累计1661.53亿元，同比增长179%",
+          "腾讯云收入同比增长35%，WorkBuddy、MaaS等业务收入大幅增长",
+          "2026年上半年资本支出963亿元，较一年前459亿元增长逾一倍",
+          "2026年6月季度资本项目支出528亿元，同比增长176%",
+          "2026年6月季度自由现金流流出138亿元"
+        ],
+        "risks": [
+          "最新AI产品尚未带来已披露的利润来源，AI投资回报仍待验证",
+          "高额资本支出已导致季度自由现金流流出，若持续将加大财务压力",
+          "计算硬件可能快速过时，存在资本锁定在快速老化设备上的风险",
+          "中国科技公司在获取先进半导体和制造产能方面持续面临不确定性",
+          "AI相关债券发行尚未完成，最终规模、定价和条款仍受市场状况影响"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "WorkBuddy",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "MaaS",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Hy4",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "阿里巴巴",
+        "canonical_entity_id": "EN-047364b9be67f665",
+        "canonical_name": "阿里巴巴"
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "字节跳动",
+        "canonical_entity_id": "EN-5388bc10736a0eff",
+        "canonical_name": "ByteDance"
+      }
+    ],
+    "funding_history": [],
+    "research_sources": [
+      {
+        "source_id": "FISRC-ec6819d9f2fecdbb",
+        "source_url": "https://tidenews.com.cn/tmh_news.html?id=6afe6f1c61fcb50001547492",
+        "title": "腾讯814亿加码AI，高盛上调27年全球AI项目融资规模至5450亿美元，关注云计算50ETF东方红（562110）",
+        "publisher": "tidenews.com.cn",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-11-22T00:17:02.848Z",
+        "content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+        "source_artifact_id": "SA-4bcc7f7fc09b5bee",
+        "raw_id": "RAW-f054f04a52836c71"
+      },
+      {
+        "source_id": "FISRC-b87ecd9e97ce2ca3",
+        "source_url": "https://www.tencent.com/",
+        "title": "All news",
+        "publisher": "tencent.com",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-11-21T00:40:12.304Z",
+        "content_hash": "38a35ba389dae6bd",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-8fad0a338899811c",
+        "source_url": "https://www.remio.ai/zh/post/tencent-ai-bond-plan-turns-a-5-billion-deal-into-a-test-of-ai-returns-zh",
+        "title": "Tencent AI 发债计划将 50 亿美元交易变成对 AI 回报的考验",
+        "publisher": "remio.ai",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-11-21T00:40:17.705Z",
+        "content_hash": "dc6f93c3f8b95706",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-11-22T00:38:56.342Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-11-22T00:38:56.342Z",
+    "customer_research": {
+      "status": "no_verified_customer_found",
+      "verified_customer_count": 0,
+      "searched_source_count": 3
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 3,
+        "unresolved_names": [
+          "Hy4",
+          "MaaS",
+          "WorkBuddy"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 0,
+        "unresolved_names": []
+      }
+    },
+    "source_event_ids": [
+      "EV-a54d9f479d4eb060"
+    ],
+    "aggregation": {
+      "key": "EN-9c8ae69b84f21a2e|undisclosed",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"Tencent\" 2026 融资 投资方",
+    "\"Tencent\" 官网 产品 服务",
+    "\"Tencent\" 投资机构 融资用途"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Tencent\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"腾讯\" 5450亿美元 融资 领投 跟投",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Tencent\" 官网 产品 服务",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Tencent\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"腾讯\" 2026 本轮融资 公告",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Tencent\" 客户 创始人 总部",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    }
+  ]
+}

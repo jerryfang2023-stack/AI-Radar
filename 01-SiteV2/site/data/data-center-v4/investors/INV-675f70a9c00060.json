@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4527,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 12,
+    "current_round_count": 13,
     "historical_or_ambiguous_count": 5,
     "portfolio_company_count": 8,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 12,
+    "china_market_activity_count": 13,
     "china_market_company_count": 8,
     "first_disclosed_at": "2026-01-26",
-    "latest_disclosed_at": "2026-10-26",
+    "latest_disclosed_at": "2026-11-20",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 5,
-      "participant": 10
+      "participant": 11
     },
     "round_codes": [
       "angel",
@@ -128,6 +128,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1aecc11214d31a36",
+        "funding_insight_id": "FI-faf8764cd64d29f0",
+        "event_ids": [
+          "EV-aab8ed97f5bf814a"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "第二轮",
+        "amount_original": "1000 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 亿元"
+        },
+        "announced_at": "2026-11-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-953d16ef145a7cc3",
+            "source_url": "https://www.ithome.com/1/030/199.htm",
+            "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+            "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+            "quote": "腾讯旗下上海珩岫商业管理有限公司出资比例 9.5653%，为第一大出资人",
+            "quote_hash": "622663fae311ec2cd1edc1598667c8497bb3915b49053b73e9a521a0a2581e76"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f3398e7d6c64b19b",
         "funding_insight_id": "FI-46e39faf9187783d",
@@ -790,6 +830,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-953d16ef145a7cc3",
+        "source_url": "https://www.ithome.com/1/030/199.htm",
+        "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+        "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+        "quote": "腾讯旗下上海珩岫商业管理有限公司出资比例 9.5653%，为第一大出资人",
+        "quote_hash": "622663fae311ec2cd1edc1598667c8497bb3915b49053b73e9a521a0a2581e76"
+      },
+      {
         "source_id": "FISRC-03184bd4c71f3982",
         "source_url": "https://finance.sina.com.cn/jjxw/2026-10-26/doc-iniwnuwc9407368.shtml?cre=tianyi&mod=pchp&loc=23&r=0&rfunc=64&tj=cxvertical_pc_hp&tr=12",
         "source_title": "经济日报：千亿元融资展现中国AI进取心",
@@ -993,16 +1041,16 @@
           "source_id": "tencent_investment_strategy_2020"
         },
         {
+          "description": "融资来源记录：DeepSeek · 其他融资 · 2026-11-20 · 本轮参投 · 1000 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-953d16ef145a7cc3"
+        },
+        {
           "description": "融资来源记录：DeepSeek · 轮次未披露 · 2026-10-26 · 本轮参投 · 约1000亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-03184bd4c71f3982"
         },
         {
           "description": "融资来源记录：DeepSeek · 轮次未披露 · 2026-10-22 · 本轮参投 · $15 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2346329522885331"
-        },
-        {
-          "description": "融资来源记录：鲲为科技 · 轮次未披露 · 2026-10-09 · 本轮参投 · 4 亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a60cc435d9a05afa"
         }
       ],
       "contacts": [
@@ -1070,6 +1118,14 @@
           "quote_hash": "de3feafcd81368d41be78c53253a89b9ddd2c9c32424cf40089015550080528c"
         },
         {
+          "source_id": "FISRC-953d16ef145a7cc3",
+          "source_url": "https://www.ithome.com/1/030/199.htm",
+          "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+          "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+          "quote": "腾讯旗下上海珩岫商业管理有限公司出资比例 9.5653%，为第一大出资人",
+          "quote_hash": "622663fae311ec2cd1edc1598667c8497bb3915b49053b73e9a521a0a2581e76"
+        },
+        {
           "source_id": "FISRC-03184bd4c71f3982",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-10-26/doc-iniwnuwc9407368.shtml?cre=tianyi&mod=pchp&loc=23&r=0&rfunc=64&tj=cxvertical_pc_hp&tr=12",
           "source_title": "经济日报：千亿元融资展现中国AI进取心",
@@ -1084,14 +1140,6 @@
           "source_content_hash": "e85e5d970af235d183bcf54e03c8ba88851ce996abdae1d62194fd473f9b6914",
           "quote": "Battery pioneer Contemporary Amperex Technology Co. Ltd. and WeChat-operator Tencent Holdings Ltd. were among the biggest investors in the round",
           "quote_hash": "cda5d96cbdc5e3426f54b22b9a8ab6f0353079dc52e896f1e767f50f46c312df"
-        },
-        {
-          "source_id": "FISRC-a60cc435d9a05afa",
-          "source_url": "https://finance.sina.com.cn/stock/t/2026-10-09/doc-iniuqywq1127772.shtml",
-          "source_title": "攻克超声穿颅读脑，拿下 4 亿元新融资，他们要做脑科学的「英伟达」",
-          "source_content_hash": "055ec97a57c5a5c2cc04b1f21f35d6d65aa66daf51ea86d8e69c0ec17436eb68",
-          "quote": "新增股东包括 XVC、红杉中国，老股东夏尔巴、腾讯进一步加仓",
-          "quote_hash": "954502a15ae1260ff16f8e6d5d1e6f7f890e5f94b7757d266a568bef0d11140c"
         }
       ],
       "last_verified_at": "2026-09-25",

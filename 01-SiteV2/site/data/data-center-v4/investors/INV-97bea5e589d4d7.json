@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4527,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
+    "current_round_count": 9,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 8,
+    "portfolio_company_count": 9,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-05-28",
     "latest_disclosed_at": "2026-11-18",
     "role_counts": {
-      "co_lead": 1,
+      "co_lead": 2,
       "historical_or_ambiguous": 2,
       "lead": 3,
       "participant": 4
@@ -100,6 +100,11 @@
         "entity_id": "EN-d27608cca9b65f91",
         "canonical_entity_id": "",
         "name": "Glow"
+      },
+      {
+        "entity_id": "EN-a2039b2db07c1ad6",
+        "canonical_entity_id": "",
+        "name": "Isomorphic Labs"
       },
       {
         "entity_id": "EN-37799d436602eaf1",
@@ -205,6 +210,46 @@
             "source_content_hash": "b283b9b5508ce3732eecacaa1c117fb8238dbe0f373a1b179ffd7586995e5e08",
             "quote": "All existing investors, including QED, Greenoaks, Lightspeed, Hedosophia and Bek Ventures, participated in the round, alongside new investors Galdana Ventures, Cogito Capital, Inveready and Invus, and leading European entrepreneurs Tomas Okmanas and Didac Lee.",
             "quote_hash": "671da4cce69d3026b6152a72ff5ef7138d14fac6be610bb925a7eba41aa22fad"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-69f2e142ec1b6488",
+        "funding_insight_id": "FI-1c7a6290f4a522a8",
+        "event_ids": [
+          "EV-104419284ab31dea"
+        ],
+        "company_entity_id": "EN-a2039b2db07c1ad6",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "€4.5 billion",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 4500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "45 亿欧元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
+            "source_title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
+            "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+            "quote": "The round was co-led by Greenoaks and Sequoia Capital",
+            "quote_hash": "d6154167c0a299c06b42e1f595574692b8c169e0ff817e7698c090af66bbce67"
           }
         ]
       },
@@ -541,6 +586,14 @@
         "quote_hash": "671da4cce69d3026b6152a72ff5ef7138d14fac6be610bb925a7eba41aa22fad"
       },
       {
+        "source_id": "FISRC-172c6eda5dfd3979",
+        "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
+        "source_title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
+        "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+        "quote": "The round was co-led by Greenoaks and Sequoia Capital",
+        "quote_hash": "d6154167c0a299c06b42e1f595574692b8c169e0ff817e7698c090af66bbce67"
+      },
+      {
         "source_id": "FISRC-c4b7e80cb7863d47",
         "source_url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
         "source_title": "Isomorphic Labs 融资 50 亿美元，拟将候选药物推进临床试验",
@@ -644,8 +697,8 @@
           "source_id": "FISRC-81d4aea873fc9f86"
         },
         {
-          "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮联合领投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c4b7e80cb7863d47"
+          "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮联合领投 · €4.5 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-172c6eda5dfd3979"
         }
       ],
       "contacts": [],
@@ -683,12 +736,12 @@
           "quote_hash": "671da4cce69d3026b6152a72ff5ef7138d14fac6be610bb925a7eba41aa22fad"
         },
         {
-          "source_id": "FISRC-c4b7e80cb7863d47",
-          "source_url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
-          "source_title": "Isomorphic Labs 融资 50 亿美元，拟将候选药物推进临床试验",
-          "source_content_hash": "69ca96b09e5f9b3698e78f74bf202e70c1f5d21f791557981cbae6115c03e7c9",
-          "quote": "The funding was co-led by Greenoaks and Sequoia Capital",
-          "quote_hash": "ccc48491bfcfebf53e0c6ec451e4d189736090aee8bd64375bc68449a8aaf0ee"
+          "source_id": "FISRC-172c6eda5dfd3979",
+          "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
+          "source_title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
+          "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+          "quote": "The round was co-led by Greenoaks and Sequoia Capital",
+          "quote_hash": "d6154167c0a299c06b42e1f595574692b8c169e0ff817e7698c090af66bbce67"
         }
       ],
       "last_verified_at": "2026-10-04",

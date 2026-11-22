@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4527,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-11-20",
+    "latest_disclosed_at": "2026-11-20",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "other"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-6f7ac1823da81d2e",
+        "canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "name": "DeepSeek"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-7c5255c328a7a2f6",
+        "funding_insight_id": "FI-faf8764cd64d29f0",
+        "event_ids": [
+          "EV-aab8ed97f5bf814a"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "第二轮",
+        "amount_original": "1000 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 亿元"
+        },
+        "announced_at": "2026-11-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-953d16ef145a7cc3",
+            "source_url": "https://www.ithome.com/1/030/199.htm",
+            "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+            "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+            "quote": "砺思资本相关主体出资 7.1740%，进入前五。",
+            "quote_hash": "3fd666fdb0520f93852f902d1e9e448bdee3d2cf2f733d47bf88ba1ea4289683"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3e66d932c77cdacf",
         "funding_insight_id": "FI-f5103149f04ea6ed",
@@ -120,6 +169,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-953d16ef145a7cc3",
+        "source_url": "https://www.ithome.com/1/030/199.htm",
+        "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+        "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+        "quote": "砺思资本相关主体出资 7.1740%，进入前五。",
+        "quote_hash": "3fd666fdb0520f93852f902d1e9e448bdee3d2cf2f733d47bf88ba1ea4289683"
+      },
+      {
         "source_id": "FISRC-5d82f5dc9fc96ce5",
         "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
         "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
@@ -155,6 +212,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：DeepSeek · 其他融资 · 2026-11-20 · 本轮参投 · 1000 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-953d16ef145a7cc3"
+        },
+        {
           "description": "融资来源记录：Moonshot AI · 天使轮 · 天使轮参投；A+轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5d82f5dc9fc96ce5"
         }
@@ -184,6 +245,14 @@
           "source_content_hash": "25fc901135906804ccac74c699aeeb4189f069b5f3326096276180bc04b6e241",
           "quote": "砺思资本的VC基金，关注技术驱动的各类商业创新，将以研究驱动的主题式投资思路，投资革命性的创新创业机会。",
           "quote_hash": "7381a65c861032e06ce686326497891ac2cf8e9268d6a4c74af08d07d406133f"
+        },
+        {
+          "source_id": "FISRC-953d16ef145a7cc3",
+          "source_url": "https://www.ithome.com/1/030/199.htm",
+          "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+          "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+          "quote": "砺思资本相关主体出资 7.1740%，进入前五。",
+          "quote_hash": "3fd666fdb0520f93852f902d1e9e448bdee3d2cf2f733d47bf88ba1ea4289683"
         },
         {
           "source_id": "FISRC-5d82f5dc9fc96ce5",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4527,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -94,7 +94,7 @@
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-05-27",
-    "lastSeen": "2026-11-20",
+    "lastSeen": "2026-11-22",
     "relationIds": [
       "REL2-f8319ba3694b2987",
       "REL2-59ab2863fcb1e150"
@@ -133,7 +133,7 @@
     "timeline": [
       {
         "id": "EV-6b34d2e2a2aea1b9",
-        "dataDate": "2026-11-20",
+        "dataDate": "2026-11-22",
         "date": "2026-11-19",
         "eventType": "ipo_listing",
         "eventTypeLabel": "IPO 与上市",
@@ -1266,10 +1266,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-technology-speech_audio",
+        "TX-use_case-content_creation",
         "TX-product_form-enterprise_software_platform",
-        "TX-industry-financial_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-research_discovery",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services",
         "TX-technology-open_weights",
         "TX-product_form-model",
         "TX-industry-legal_services",
@@ -1281,8 +1283,6 @@
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-target_user-researcher",
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation",
         "TX-target_user-consumer",
         "TX-technology-code_generation",
         "TX-industry-aerospace_defense",
@@ -1333,7 +1333,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-20"
+      "lastSeen": "2026-11-22"
     }
   ],
   "relationships": [
@@ -1393,6 +1393,7 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-51b6c750134929d8",
         "EV-8f4b818b8746d539",
         "EV-03e34979859b12d9",
         "EV-937b99126cc4df09",
@@ -2092,6 +2093,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-1bef6f23243ae96f",
         "EN-46c6311bd2de6d11",
         "EN-a6936f276185fd8f",
         "EN-7d3194f79e645c42",
@@ -2604,6 +2606,7 @@
       "typeLabel": "行业",
       "valueId": "manufacturing",
       "eventIds": [
+        "EV-dc09c82dcc6d5e13",
         "EV-5f1dc5e6af486dfe",
         "EV-e0a31302688c81ec",
         "EV-1d91ef6afd9a6290",
@@ -2842,6 +2845,7 @@
         "EV-2c7d13d234147817"
       ],
       "entityIds": [
+        "EN-e7cff3bfc36dcad1",
         "EN-90cc54eafe13a36b",
         "EN-a5e5f031b6f878cf",
         "EN-e6547107446655e8",
@@ -3046,7 +3050,7 @@
         "HW-ef547aa78d8d0ade"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-11-16"
+      "lastSeen": "2026-11-22"
     },
     {
       "id": "TX-product_form-compute_cloud_service",

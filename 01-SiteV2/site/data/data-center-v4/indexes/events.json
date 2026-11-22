@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4527,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -156,8 +156,206 @@
   },
   "events": [
     {
+      "id": "EV-51b6c750134929d8",
+      "dataDate": "2026-11-22",
+      "date": "2026-11-20",
+      "updatedDate": "2026-11-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "伦敦Archer融资910万欧元，为雇主和求职者部署AI招聘智能体",
+      "originalTitle": "London-based Archer raises €9.1 million to deploy AI recruiting agents for employers and job seekers",
+      "subject": "London-based Archer",
+      "action": "raises",
+      "object": "€9.1 million to deploy AI recruiting agents for employers and job seekers",
+      "metrics": [
+        "€9.1 million",
+        "$10 million",
+        "€34.68 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-1bef6f23243ae96f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-1bef6f23243ae96f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-1bef6f23243ae96f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-dd6f7c8ff3f1e516",
+        "EN-1bef6f23243ae96f",
+        "EN-47951833ecf62117"
+      ],
+      "entityNames": [
+        "HomeUK-StartupsLondon-based Archer",
+        "London-based Archer",
+        "However"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
+      "id": "EV-aab8ed97f5bf814a",
+      "dataDate": "2026-11-22",
+      "date": "2026-11-20",
+      "updatedDate": "2026-11-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+      "originalTitle": "",
+      "subject": "DeepSeek 新一轮千亿级",
+      "action": "融资",
+      "object": "落地，梁文锋保留绝对控制权",
+      "metrics": [
+        "1000 亿",
+        "1055 亿",
+        "6155 亿",
+        "510 亿",
+        "1500 亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-b2ba78a4922a6b14",
+          "CL-695324c919de8ff7"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-85964dfe9c006cc9",
+        "EN-6f7ac1823da81d2e"
+      ],
+      "entityNames": [
+        "DeepSeek 新一轮千亿级",
+        "DeepSeek"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/030/199.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
+      "id": "EV-d84355ecbf21be85",
+      "dataDate": "2026-11-22",
+      "date": "2026-11-20",
+      "updatedDate": "2026-11-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "诚恒微完成近2亿元A轮融资，加速边端侧AI SoC规模化落地",
+      "originalTitle": "",
+      "subject": "诚恒微",
+      "action": "完成近2亿元A轮融资",
+      "object": "，加速边端侧AI SoC规模化落地",
+      "metrics": [
+        "2亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-6c72a44dd49f926c"
+      ],
+      "entityNames": [
+        "诚恒微"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202611/572144.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
       "id": "EV-4ed0d4054e9a6f07",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-19",
       "updatedDate": "2026-11-19",
       "eventType": "funding",
@@ -209,7 +407,7 @@
     },
     {
       "id": "EV-a151aeb22a93c5ee",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-19",
       "updatedDate": "2026-11-19",
       "eventType": "funding",
@@ -227,6 +425,17 @@
       "locations": [
         "中国"
       ],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-bb3a3900f651c38d"
+        ]
+      },
       "missingFields": [],
       "conflicts": [],
       "tags": [],
@@ -243,15 +452,255 @@
       "classifications": [],
       "displayTags": [],
       "entityIds": [
-        "EN-393c9ade80b59991"
+        "EN-393c9ade80b59991",
+        "EN-8eae24628d514379"
       ],
       "entityNames": [
-        "无涯智远（Norizon AI）"
+        "无涯智远（Norizon AI）",
+        "无涯智远"
       ],
       "productName": "",
       "products": [],
       "sourceUrl": "https://news.pedaily.cn/202611/572108.shtml",
       "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-a54d9f479d4eb060",
+      "dataDate": "2026-11-22",
+      "date": "2026-11-19",
+      "updatedDate": "2026-11-19",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "腾讯814亿加码AI，高盛上调27年全球AI项目融资规模至5450亿美元，关注云计算50ETF东方红（562110）",
+      "originalTitle": "",
+      "subject": "腾讯814亿加码AI，高盛上调27年全球AI项目",
+      "action": "融资",
+      "object": "规模至5450亿美元，关注云计算50ETF东方红（562110）",
+      "metrics": [
+        "3000亿",
+        "5450亿",
+        "2250亿",
+        "3200亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-dec0d50893512c79",
+          "CL-0764bcd281446cd6"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "entityNames": [
+        "Tencent"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tidenews.com.cn/tmh_news.html?id=6afe6f1c61fcb50001547492",
+      "publisher": "tidenews.com.cn"
+    },
+    {
+      "id": "EV-b5b93d1b6f0bce86",
+      "dataDate": "2026-11-22",
+      "date": "2026-11-19",
+      "updatedDate": "2026-11-19",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "知业科技获数千万元A轮融资 聚焦工业AI规模化应用_大风号",
+      "originalTitle": "",
+      "subject": "知业科技",
+      "action": "获",
+      "object": "数千万元A轮",
+      "metrics": [
+        "数千万元"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-239a2f2e99b64b36"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-b52bd1429cae45a9",
+        "EN-4f52302c928b8d84"
+      ],
+      "entityNames": [
+        "智通财经APP",
+        "知业科技"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://feng.ifeng.com/c/8yBMtGJ5DEO",
+      "publisher": "feng.ifeng.com"
+    },
+    {
+      "id": "EV-dc09c82dcc6d5e13",
+      "dataDate": "2026-11-22",
+      "date": "2026-11-19",
+      "updatedDate": "2026-11-19",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "慕尼黑Vetaion获570万欧元融资，利用AI与机器人实现控制柜制造自动化",
+      "originalTitle": "Munich-based Vetaion raises €5.7 million to automate control cabinet manufacturing with AI and robotics",
+      "subject": "Munich-based Vetaion",
+      "action": "raises",
+      "object": "€5.7 million to automate control cabinet manufacturing with AI and robotics",
+      "metrics": [
+        "€5.7 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-e7cff3bfc36dcad1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-e7cff3bfc36dcad1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-e7cff3bfc36dcad1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-e7cff3bfc36dcad1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-e7cff3bfc36dcad1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-e7cff3bfc36dcad1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5026c7d941bd3da4",
+        "EN-e7cff3bfc36dcad1"
+      ],
+      "entityNames": [
+        "HomeGermany-StartupsMunich-based Vetaion",
+        "Munich-based Vetaion"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/11/munich-based-vetaion-raises-e5-7-million-to-automate-control-cabinet-manufacturing-with-ai-and-robotics/",
+      "publisher": "www.eu-startups.com"
     },
     {
       "id": "EV-dc10752743c440d9",
@@ -310,7 +759,7 @@
     },
     {
       "id": "EV-0a0b4e592c70cd80",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-18",
       "updatedDate": "2026-11-18",
       "eventType": "acquisition",
@@ -390,7 +839,7 @@
     },
     {
       "id": "EV-1bfa49b4ab9e1ac2",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-18",
       "updatedDate": "2026-11-18",
       "eventType": "funding",
@@ -475,7 +924,7 @@
     },
     {
       "id": "EV-2e761601c7f04a46",
-      "dataDate": "2026-11-19",
+      "dataDate": "2026-11-22",
       "date": "2026-11-18",
       "updatedDate": "2026-11-18",
       "eventType": "funding",
@@ -527,7 +976,7 @@
     },
     {
       "id": "EV-5c7525642d1189d6",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-18",
       "updatedDate": "2026-11-18",
       "eventType": "funding",
@@ -553,7 +1002,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-6a5cf587fefde2a6"
+          "CL-d30f5939898ff4dd"
         ]
       },
       "missingFields": [],
@@ -621,6 +1070,122 @@
       "publisher": "news.pedaily.cn"
     },
     {
+      "id": "EV-6b76983df1c13857",
+      "dataDate": "2026-11-22",
+      "date": "2026-11-18",
+      "updatedDate": "2026-11-18",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "谷歌收购西雅图初创公司Howie及其AI日程安排助手",
+      "originalTitle": "Google acquires Seattle startup Howie and its AI scheduling assistant",
+      "subject": "Google",
+      "action": "acquires",
+      "object": "Seattle startup Howie and its AI scheduling assistant",
+      "metrics": [],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.geekwire.com/2026/google-acquires-seattle-startup-howie-and-its-ai-scheduling-assistant/",
+      "publisher": "www.geekwire.com"
+    },
+    {
       "id": "EV-788e4fe44885fd36",
       "dataDate": "2026-11-19",
       "date": "2026-11-18",
@@ -668,7 +1233,7 @@
     },
     {
       "id": "EV-8f4b818b8746d539",
-      "dataDate": "2026-11-19",
+      "dataDate": "2026-11-22",
       "date": "2026-11-18",
       "updatedDate": "2026-11-18",
       "eventType": "funding",
@@ -823,7 +1388,7 @@
     },
     {
       "id": "EV-dc8755b16a5344ed",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-18",
       "updatedDate": "2026-11-18",
       "eventType": "funding",
@@ -847,7 +1412,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-2a57bdfcf7a96d2e"
+          "CL-d62ff11136ac1d6b"
         ]
       },
       "missingFields": [],
@@ -878,7 +1443,7 @@
     },
     {
       "id": "EV-03676f6d56167104",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "acquisition",
@@ -928,7 +1493,7 @@
     },
     {
       "id": "EV-0d27ea6892225510",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "funding",
@@ -1055,8 +1620,130 @@
       "publisher": "tech.eu"
     },
     {
+      "id": "EV-104419284ab31dea",
+      "dataDate": "2026-11-22",
+      "date": "2026-11-17",
+      "updatedDate": "2026-11-17",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
+      "originalTitle": "AI drug discovery giant Isomorphic Labs raises €4.5 billion in blockbuster funding round",
+      "subject": "AI drug discovery giant Isomorphic Labs",
+      "action": "raises",
+      "object": "€4.5 billion in blockbuster funding round",
+      "metrics": [
+        "€4.5 billion",
+        "$5 billion",
+        "€8.4 million",
+        "€4.1 million",
+        "€3.15 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "research_discovery",
+            "name": "科研与发现",
+            "entityIds": [
+              "EN-a2039b2db07c1ad6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-a2039b2db07c1ad6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "research_discovery",
+          "name": "科研与发现",
+          "entityIds": [
+            "EN-a2039b2db07c1ad6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-a2039b2db07c1ad6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "research_discovery",
+          "name": "科研与发现",
+          "entityIds": [
+            "EN-a2039b2db07c1ad6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-a2039b2db07c1ad6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-37799d436602eaf1",
+        "EN-a2039b2db07c1ad6"
+      ],
+      "entityNames": [
+        "Isomorphic Labs",
+        "AI drug discovery giant Isomorphic Labs"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
       "id": "EV-12f5404b5c1882ec",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "funding",
@@ -1196,7 +1883,7 @@
     },
     {
       "id": "EV-272eb63ab316040f",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "funding",
@@ -1243,7 +1930,7 @@
     },
     {
       "id": "EV-27b9c5896b1b9c27",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "funding",
@@ -1463,7 +2150,7 @@
     },
     {
       "id": "EV-5be10c6214adaf19",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "funding",
@@ -1487,7 +2174,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-9337490334034b9c"
+          "CL-d66d19205aee8dfd"
         ]
       },
       "missingFields": [],
@@ -1519,8 +2206,8 @@
       "publisher": "feng.ifeng.com"
     },
     {
-      "id": "EV-60e9751ddf436c14",
-      "dataDate": "2026-11-18",
+      "id": "EV-609bed23b2e9a178",
+      "dataDate": "2026-11-22",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "funding",
@@ -1529,18 +2216,17 @@
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "独家：获谷歌首位投资者支持，RHISE AI 融资 266 万欧元，打造欧洲主权个人 AI",
-      "originalTitle": "EXCLUSIVE: Backed by Google’s first investor, RHISE AI raises €2.66 million to build Europe’s sovereign personal AI",
-      "subject": "EXCLUSIVE: Backed by Google’s first investor, RHISE AI",
+      "title": "前 Anker 首席营销官的 AI 可穿戴初创公司 Memoket 完成 450 万美元 Pre-A 轮融资",
+      "originalTitle": "Ex-Anker CMO's AI wearable startup Memoket raises $4.5M Pre-A",
+      "subject": "Ex-Anker CMO's AI wearable startup Memoket",
       "action": "raises",
-      "object": "€2.66 million to build Europe’s sovereign personal AI",
+      "object": "$4.5M Pre-A",
       "metrics": [
-        "€2.66 million",
-        "$3 million",
-        "$2.925 million"
+        "$4.5M",
+        "$4.13M"
       ],
       "locations": [
-        "Europe"
+        "US"
       ],
       "missingFields": [],
       "conflicts": [],
@@ -1557,6 +2243,93 @@
       },
       "classifications": [],
       "displayTags": [],
+      "entityIds": [
+        "EN-12a8f827c180f2cc"
+      ],
+      "entityNames": [
+        "Ex-Anker CMO's AI wearable startup Memoket"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://dealroom.co/news/173270-ex-anker-cmo-s-ai-wearable-startup-memoket-raises-4-5m-pre-a/",
+      "publisher": "dealroom.co"
+    },
+    {
+      "id": "EV-60e9751ddf436c14",
+      "dataDate": "2026-11-22",
+      "date": "2026-11-17",
+      "updatedDate": "2026-11-17",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "独家：获谷歌首位投资者支持，RHISE AI 融资 266 万欧元，打造欧洲主权个人 AI",
+      "originalTitle": "EXCLUSIVE: Backed by Google’s first investor, RHISE AI raises €2.66 million to build Europe’s sovereign personal AI",
+      "subject": "EXCLUSIVE: Backed by Google’s first investor, RHISE AI",
+      "action": "raises",
+      "object": "€2.66 million to build Europe’s sovereign personal AI",
+      "metrics": [
+        "€2.66 million",
+        "$3 million",
+        "$2.925 million",
+        "€3 million"
+      ],
+      "locations": [
+        "Europe"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-20f841db9068a65e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-20f841db9068a65e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-20f841db9068a65e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
       "entityIds": [
         "EN-032c0a7993dc54f8",
         "EN-bbdefa2950f49882",
@@ -1631,7 +2404,7 @@
     },
     {
       "id": "EV-86165eebaf4622fd",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "funding",
@@ -1738,11 +2511,13 @@
       ],
       "entityIds": [
         "EN-37799d436602eaf1",
+        "EN-37f52323f7361ee9",
         "EN-bbdefa2950f49882",
         "EN-2b6e51bec93e86c1"
       ],
       "entityNames": [
         "Isomorphic Labs",
+        "Alphabet's Isomorphic Labs",
         "Google",
         "Google DeepMind"
       ],
@@ -1865,7 +2640,7 @@
     },
     {
       "id": "EV-8cb327ac867e5fae",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "funding",
@@ -1913,7 +2688,7 @@
     },
     {
       "id": "EV-a9c1c24f9712e563",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "funding",
@@ -1959,7 +2734,7 @@
     },
     {
       "id": "EV-b37c29a324a5dc4e",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "funding",
@@ -2110,7 +2885,7 @@
     },
     {
       "id": "EV-fef71bd1ef83682a",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "funding",
@@ -2158,7 +2933,7 @@
     },
     {
       "id": "EV-1d425fbf0768f5a9",
-      "dataDate": "2026-11-19",
+      "dataDate": "2026-11-22",
       "date": "2026-11-16",
       "updatedDate": "2026-11-16",
       "eventType": "funding",
@@ -2171,7 +2946,7 @@
       "originalTitle": "Alecto lands €18 million to scale its AI-powered law firm beyond property transactions",
       "subject": "Alecto",
       "action": "funding",
-      "object": "€18 million Seed round",
+      "object": "€18 million ($20 million) Seed round",
       "metrics": [
         "€18 million",
         "$20 million"
@@ -2287,7 +3062,7 @@
     },
     {
       "id": "EV-e4e1d8cd826a402a",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-16",
       "updatedDate": "2026-11-16",
       "eventType": "funding",
@@ -2337,7 +3112,7 @@
     },
     {
       "id": "EV-fa34f7342de666dd",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-16",
       "updatedDate": "2026-11-16",
       "eventType": "funding",
@@ -2479,7 +3254,7 @@
     },
     {
       "id": "EV-c7f02c82dcf2cea9",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-15",
       "updatedDate": "2026-11-15",
       "eventType": "funding",
@@ -314226,7 +315001,7 @@
     },
     {
       "id": "EV-1c4939371a435f9f",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-17",
       "updatedDate": "2026-11-17",
       "eventType": "product_release",
@@ -314250,7 +315025,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-620eb6b908df5510"
+          "CL-392bb0e5e468612b"
         ]
       },
       "missingFields": [],
@@ -319305,7 +320080,7 @@
           "name": "WorkBuddy",
           "type": "产品/服务",
           "ownerNames": [
-            "Tencent"
+            "Salesforce"
           ]
         }
       ],
@@ -324910,9 +325685,7 @@
         {
           "name": "Gander",
           "type": "模型",
-          "ownerNames": [
-            "Tencent"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/tencents-gander-aims-to-keep-talking-while-it-works-in-the-background",
@@ -336769,9 +337542,7 @@
         {
           "name": "Hy4",
           "type": "产品/服务",
-          "ownerNames": [
-            "Tencent"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/999/369.htm",
@@ -347487,14 +348258,14 @@
           "name": "Hy4",
           "type": "产品/服务",
           "ownerNames": [
-            "Tencent"
+            "Tencent Cloud"
           ]
         },
         {
           "name": "Hy4 Preview",
           "type": "产品/服务",
           "ownerNames": [
-            "Tencent"
+            "Tencent Cloud"
           ]
         }
       ],
@@ -370989,9 +371760,7 @@
         {
           "name": "WorkBuddy",
           "type": "产品/服务",
-          "ownerNames": [
-            "Tencent"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/987/446.htm",
@@ -373493,16 +374262,12 @@
         {
           "name": "Hy3",
           "type": "产品/服务",
-          "ownerNames": [
-            "Tencent"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Hy3 Now Available",
           "type": "产品/服务",
-          "ownerNames": [
-            "Tencent"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://tencent.com/tencent-hy3-now-available-globally-extending-practical-ai-across-products-workflows-and-cloud-services",
@@ -379968,9 +380733,7 @@
         {
           "name": "AngelSpec",
           "type": "模型",
-          "ownerNames": [
-            "Tencent"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/30/tencent-open-sources-angelspec-a-unified-training-framework-for-mtp-and-block-parallel-speculative-decoding-on-hy3-models",
@@ -385622,14 +386385,14 @@
           "name": "WorkBuddy",
           "type": "产品/服务",
           "ownerNames": [
-            "Tencent"
+            "Huawei"
           ]
         },
         {
           "name": "App Gallery",
           "type": "产品/服务",
           "ownerNames": [
-            "Tencent"
+            "Huawei"
           ]
         }
       ],
@@ -389031,9 +389794,7 @@
         {
           "name": "CodeBuddy NPC",
           "type": "产品/服务",
-          "ownerNames": [
-            "Tencent"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/980/633.htm",
@@ -394784,9 +395545,7 @@
         {
           "name": "Hyra-1.0",
           "type": "产品/服务",
-          "ownerNames": [
-            "Tencent"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/979/440.htm",
@@ -402157,9 +402916,7 @@
         {
           "name": "Hy-Embodied-VLM-1.0",
           "type": "模型",
-          "ownerNames": [
-            "Tencent"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/978/080.htm",
@@ -415342,9 +416099,7 @@
         {
           "name": "Agent Bucket",
           "type": "产品/服务",
-          "ownerNames": [
-            "Tencent"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/974/504.htm",
@@ -419234,9 +419989,7 @@
         {
           "name": "Hy3",
           "type": "模型",
-          "ownerNames": [
-            "Tencent"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/973/106.htm",
@@ -431267,9 +432020,7 @@
         {
           "name": "Agently Mail",
           "type": "产品/服务",
-          "ownerNames": [
-            "Tencent"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/967/614.htm",
@@ -460387,8 +461138,58 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-97ede78f689bd26c",
+      "dataDate": "2026-11-22",
+      "date": "2026-11-20",
+      "updatedDate": "2026-11-20",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic的7位创始人在这宗创纪录IPO中套现近$2B",
+      "originalTitle": "Anthropic&#8217;s 7 founders cashed out nearly $2B in record-breaking IPO",
+      "subject": "Anthropic&#8217;s 7 founders cashed out nearly $2B in record-breaking",
+      "action": "IPO",
+      "object": "Anthropic&#8217;s 7 founders cashed out nearly $2B in record-breaking IPO",
+      "metrics": [
+        "3.4 million",
+        "$83 ",
+        "$280 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+      "publisher": "techcrunch.com"
+    },
+    {
       "id": "EV-afb294eb4d9baf2d",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-20",
       "updatedDate": "2026-11-20",
       "eventType": "ipo_listing",
@@ -460447,7 +461248,7 @@
     },
     {
       "id": "EV-08f7b2f72a5da891",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-19",
       "updatedDate": "2026-11-19",
       "eventType": "ipo_listing",
@@ -460498,7 +461299,7 @@
     },
     {
       "id": "EV-14051f3d4f43c4a7",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-19",
       "updatedDate": "2026-11-19",
       "eventType": "ipo_listing",
@@ -460549,8 +461350,68 @@
       "publisher": "www.ithome.com"
     },
     {
+      "id": "EV-57b1043727f95137",
+      "dataDate": "2026-11-22",
+      "date": "2026-11-19",
+      "updatedDate": "2026-11-19",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic 成功完成史上最大规模 IPO，估值达 1.5 万亿美元",
+      "originalTitle": "Anthropic successfully completes largest IPO in history, valued at $1.5T",
+      "subject": "Anthropic successfully completes largest",
+      "action": "IPO",
+      "object": "in history, valued at $1.5T",
+      "metrics": [
+        "$1.5T",
+        "$83 ",
+        "$97.17, ",
+        "17%",
+        "5%",
+        "$92.60 ",
+        "$81.3B",
+        "$75B",
+        "$2.5B"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2afc11a6ed346da3",
+        "EN-c70eca6b0f88f44d",
+        "EN-e78bdebae031095b"
+      ],
+      "entityNames": [
+        "Anthropic successfully completes largest",
+        "Anthropic",
+        "SpaceX"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://latent.space/p/ainews-anthropic-successfully-completes-largest-ipo-in-history-valued-at-1-5t/",
+      "publisher": "latent.space"
+    },
+    {
       "id": "EV-6b34d2e2a2aea1b9",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-19",
       "updatedDate": "2026-11-19",
       "eventType": "ipo_listing",
@@ -460693,7 +461554,7 @@
     },
     {
       "id": "EV-de8886a2222f5cd0",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-19",
       "updatedDate": "2026-11-19",
       "eventType": "ipo_listing",
@@ -460742,7 +461603,7 @@
     },
     {
       "id": "EV-2578e341b50cdd09",
-      "dataDate": "2026-11-20",
+      "dataDate": "2026-11-22",
       "date": "2026-11-18",
       "updatedDate": "2026-11-18",
       "eventType": "organization_restructuring",

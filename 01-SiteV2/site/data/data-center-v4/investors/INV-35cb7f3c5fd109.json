@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4527,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,30 +61,76 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-09-21",
-    "latest_disclosed_at": "2026-09-21",
+    "latest_disclosed_at": "2026-11-20",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "multi_round"
+      "multi_round",
+      "other"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-e7d56af70143fcd7",
         "canonical_entity_id": "",
         "name": "数巅智能"
+      },
+      {
+        "entity_id": "EN-6f7ac1823da81d2e",
+        "canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "name": "DeepSeek"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-547866412450cb4f",
+        "funding_insight_id": "FI-faf8764cd64d29f0",
+        "event_ids": [
+          "EV-aab8ed97f5bf814a"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "第二轮",
+        "amount_original": "1000 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 亿元"
+        },
+        "announced_at": "2026-11-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-953d16ef145a7cc3",
+            "source_url": "https://www.ithome.com/1/030/199.htm",
+            "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+            "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+            "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+            "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-935626b28d01768c",
         "funding_insight_id": "FI-1c45f6b3bea32aad",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-953d16ef145a7cc3",
+        "source_url": "https://www.ithome.com/1/030/199.htm",
+        "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+        "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+        "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+        "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
+      },
+      {
         "source_id": "FISRC-f5fa738edf400dda",
         "source_url": "https://news.pedaily.cn/202609/569430.shtml",
         "source_title": "数巅智能再获数亿元融资，以数据智能体推动企业业务流程全面智能化",
@@ -165,6 +219,10 @@
           "source_id": "shudian-seed"
         },
         {
+          "description": "融资来源记录：DeepSeek · 其他融资 · 2026-11-20 · 本轮参投 · 1000 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-953d16ef145a7cc3"
+        },
+        {
           "description": "融资来源记录：数巅智能 · 多轮融资 · 2026-09-21 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f5fa738edf400dda"
         }
@@ -194,6 +252,14 @@
           "source_content_hash": "5c08fcfb1f5906a7c7729e2f8705d520f0bd87f37250532172e0ad40ca4280c9",
           "quote": "数巅科技完成数亿元天使轮融资，君联资本联合领投",
           "quote_hash": "e2c4fcd7b8651a99815b47b40b3bca40581b60828132debf5baca1120458ed69"
+        },
+        {
+          "source_id": "FISRC-953d16ef145a7cc3",
+          "source_url": "https://www.ithome.com/1/030/199.htm",
+          "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+          "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+          "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+          "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
         },
         {
           "source_id": "FISRC-f5fa738edf400dda",

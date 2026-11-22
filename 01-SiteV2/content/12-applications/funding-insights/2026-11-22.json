@@ -1,0 +1,5055 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-11-22",
+    "generated_at": "2026-11-22T00:40:21.652Z",
+    "trigger": "accepted_financing_event_research",
+    "research_provider": "search-gateway+direct-original+deepseek",
+    "model": "deepseek-flash",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 28,
+      "auto_published": 7,
+      "blocked": 0,
+      "pending": 4,
+      "deduplicated": 17,
+      "deferred_for_evidence": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-30ac1b4cf838bbf6",
+      "triggered_by_event_id": "EV-609bed23b2e9a178",
+      "as_of_date": "2026-11-22",
+      "company": {
+        "entity_id": "EN-12a8f827c180f2cc",
+        "name": "Memoket",
+        "full_name": "Memoket",
+        "website": "",
+        "summary": "Memoket 是一家成立于 2025 年的 AI 可穿戴硬件公司，由前 Anker 全球首席营销官王世元创办，开发可穿戴“个人智能体”设备 Gem，用于被动记录现实对话并支持后续检索。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Wang Shiyuan",
+            "role": "创始人，前 Anker 全球首席营销官兼中国区负责人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fd462de3c8158bd1",
+                "quote": "Founder Wang Shiyuan is the former global chief marketing officer and China head of Anker Innovations",
+                "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+                "quote_hash": "0b776c3e330241349d05e0ad9347b5871d42ebc730563aa892376f8dee4b6b10"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-fd462de3c8158bd1",
+            "quote": "Founded in 2025, Memoket builds a wearable \"Personal Agent\" that understands a user's past context and interacts proactively.",
+            "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+            "quote_hash": "65c0bc3b240f2c11040fbaa8def6e55541c5ef1ebdcc1474763ec3ba48c741c0"
+          }
+        ],
+        "application_entity_id": "EN-12a8f827c180f2cc",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "Pre-A轮",
+        "amount": "$4.5M",
+        "total_raised": "",
+        "announced_at": "2026-11-17",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "NexTide Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fd462de3c8158bd1",
+                "quote": "NexTide Capital, Alpha StartupsDealroom has a profile for this one. Try Dealroom →, and 阿尔法公社 backed the round.",
+                "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+                "quote_hash": "c899ed5bc6c5aa6ea09e1bef838022094d9aa3e4cfdddcf7a723297ce93ff906"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Alpha Startups",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fd462de3c8158bd1",
+                "quote": "NexTide Capital, Alpha StartupsDealroom has a profile for this one. Try Dealroom →, and 阿尔法公社 backed the round.",
+                "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+                "quote_hash": "c899ed5bc6c5aa6ea09e1bef838022094d9aa3e4cfdddcf7a723297ce93ff906"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "阿尔法公社",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fd462de3c8158bd1",
+                "quote": "NexTide Capital, Alpha StartupsDealroom has a profile for this one. Try Dealroom →, and 阿尔法公社 backed the round.",
+                "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+                "quote_hash": "c899ed5bc6c5aa6ea09e1bef838022094d9aa3e4cfdddcf7a723297ce93ff906"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-fd462de3c8158bd1",
+            "quote": "News › Ex-Anker CMO's AI wearable startup Memoket raises $4.5M Pre-…",
+            "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+            "quote_hash": "3412926c4fb35e3d2d1fc1d23b10756b84a5cdc3370e92f8770e12de261a295d"
+          },
+          {
+            "source_id": "FISRC-fd462de3c8158bd1",
+            "quote": "the maker of an AI \"memory\" wearable, has raised US$4.13M in an early-stage Pre-A round, the company told 36Kr.",
+            "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+            "quote_hash": "526dd26731197094a3700a9d31a9525c8804d8547efade9059eb47f15d97978d"
+          }
+        ],
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "$4.5M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "450 万美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-609bed23b2e9a178",
+            "round_original": "Pre-A轮",
+            "amount": "$4.5M",
+            "announced_at": "2026-11-17",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fd462de3c8158bd1",
+                "quote": "News › Ex-Anker CMO's AI wearable startup Memoket raises $4.5M Pre-…",
+                "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+                "quote_hash": "3412926c4fb35e3d2d1fc1d23b10756b84a5cdc3370e92f8770e12de261a295d"
+              },
+              {
+                "source_id": "FISRC-fd462de3c8158bd1",
+                "quote": "the maker of an AI \"memory\" wearable, has raised US$4.13M in an early-stage Pre-A round, the company told 36Kr.",
+                "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+                "quote_hash": "526dd26731197094a3700a9d31a9525c8804d8547efade9059eb47f15d97978d"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Gem",
+          "description": "重 11 克、可夹在现有表带上的 AI 可穿戴设备，被动记录现实对话，并可在应用和桌面端检索。",
+          "target_customers": "小企业主等早期用户",
+          "features": [
+            "重 11 克",
+            "夹在现有表带上",
+            "被动记录现实对话",
+            "跨应用和桌面检索"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd462de3c8158bd1",
+              "quote": "Its first device, Gem, weighs 11 grams, clips onto an existing watch strap, and passively records real-world conversations for later search across app and desktop.",
+              "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+              "quote_hash": "8205487a8de61ef1049936805eed82144d9cd42bfd59ef1e68f15feb525c5472"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "KITE 引擎",
+          "description": "自研长期记忆引擎，跨对话关联上下文，而非只在单次会话内关联。",
+          "target_customers": "",
+          "features": [
+            "跨对话关联上下文",
+            "LoCoMo 准确率 93.51%",
+            "LongMemEval-S 准确率 85.60%"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd462de3c8158bd1",
+              "quote": "Memoket's in-house KITE engine links context across conversations rather than within a single session.",
+              "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+              "quote_hash": "da2feb028e48643a104feb3887d4a68d18af848a239d30acd95c3aa987abe3ac"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Personal Agent beta",
+          "description": "Gem 应用本月将加入的测试功能，可在对话中实时弹窗提醒未确认的承诺。",
+          "target_customers": "",
+          "features": [
+            "实时弹窗提醒",
+            "标记未确认承诺"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd462de3c8158bd1",
+              "quote": "This month, Gem's app will add a Personal Agent beta with real-time pop-up reminders that flag unconfirmed commitments mid-conversation.",
+              "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+              "quote_hash": "ce0b089bf02353f764f2b50dc244bfda612246a5938d97f778aef158b74ad9de"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Plaud",
+          "product": "",
+          "scenario": "AI 硬件记录与理解",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "来源仅将 Plaud 列为该赛道的竞争者，未披露其产品细节或融资信息。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd462de3c8158bd1",
+              "quote": "AI hardware is shifting from recording to understanding, with PlaudDealroom has a profile for this one. Try Dealroom → and Anker's soundcore already competing in the space.",
+              "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+              "quote_hash": "aa3048e9b9e4563b7018c691e497a40283bff8a89b0b5fb2ce8a8a84d73b6ef9"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Anker soundcore",
+          "product": "",
+          "scenario": "AI 硬件记录与理解",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "来源仅将 Anker 的 soundcore 列为该赛道的竞争者，未披露其产品细节或融资信息。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd462de3c8158bd1",
+              "quote": "AI hardware is shifting from recording to understanding, with PlaudDealroom has a profile for this one. Try Dealroom → and Anker's soundcore already competing in the space.",
+              "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+              "quote_hash": "aa3048e9b9e4563b7018c691e497a40283bff8a89b0b5fb2ce8a8a84d73b6ef9"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Omi AI",
+          "product": "可穿戴 AI 记事器",
+          "scenario": "记录对话、使对话可检索并提取任务",
+          "target_customer": "佩戴者",
+          "funding_summary": "",
+          "core_difference": "来源称 Omi AI 是可穿戴 AI 记事器，可记录对话、使其可检索并提取任务；未披露其融资信息，也未与 Memoket 做逐项对比。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8bd9e4c0fa32e466",
+              "quote": "Omi AI is a wearable AI notetaker that records conversations, makes them searchable and extracts tasks for the wearer.",
+              "source_content_hash": "9f2dd77f2a44b159",
+              "quote_hash": "b733e4813a0851659f625330587e05b69037ef7f7b68e9f0717e6a822d3c935e"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Pre-A 轮融资额",
+          "value": "US$4.13M",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd462de3c8158bd1",
+              "quote": "has raised US$4.13M in an early-stage Pre-A round",
+              "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+              "quote_hash": "e14aea9c25bfdea55efde5b62945ca43effdaabc101f221d899494513be29f4d"
+            }
+          ]
+        },
+        {
+          "label": "Gem 重量",
+          "value": "11 克",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd462de3c8158bd1",
+              "quote": "Its first device, Gem, weighs 11 grams",
+              "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+              "quote_hash": "e041f260daf5fa2c30d585aff4d329bb47ff78e07764599ecc9622980478d557"
+            }
+          ]
+        },
+        {
+          "label": "LoCoMo 长期对话记忆基准准确率",
+          "value": "93.51%",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd462de3c8158bd1",
+              "quote": "The company reports accuracy of 93.51% and 85.60% on the LoCoMo and LongMemEval-S long-conversation memory benchmarks.",
+              "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+              "quote_hash": "28929fa8af9cb3ee7015d4a6bb3d51a4377ca7d8278fb2658850445b46ac159e"
+            }
+          ]
+        },
+        {
+          "label": "LongMemEval-S 长期对话记忆基准准确率",
+          "value": "85.60%",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd462de3c8158bd1",
+              "quote": "The company reports accuracy of 93.51% and 85.60% on the LoCoMo and LongMemEval-S long-conversation memory benchmarks.",
+              "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+              "quote_hash": "28929fa8af9cb3ee7015d4a6bb3d51a4377ca7d8278fb2658850445b46ac159e"
+            }
+          ]
+        },
+        {
+          "label": "Gem 量产时间",
+          "value": "2026 年 9 月",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd462de3c8158bd1",
+              "quote": "Gem entered mass production in September 2026",
+              "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+              "quote_hash": "8729dddb630b402462524cec5e0d7d2fa4cae4792c885f581d6725565e86287c"
+            }
+          ]
+        },
+        {
+          "label": "早期用户规模",
+          "value": "仅数千名",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd462de3c8158bd1",
+              "quote": "Memoket reports only a few thousand early users, concentrated among small-business owners.",
+              "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+              "quote_hash": "68be952d6a0c6554d139f2df7e4c4c5e1bf73d762506065a836f0fc6593eab9a"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Wang Shiyuan",
+          "quote": "Traditional AI products record slices, but people's work and life are continuous",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd462de3c8158bd1",
+              "quote": "\"Traditional AI products record slices, but people's work and life are continuous,\" Wang said (translated from Chinese).",
+              "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+              "quote_hash": "1fefd2d93ddbb80b809bf80709ef8be6434e7fe8ad93b307452d187d41d05ec5"
+            }
+          ]
+        },
+        {
+          "speaker": "Wang Shiyuan",
+          "quote": "If AI cannot understand what happened to you before, it will always be a passive tool.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd462de3c8158bd1",
+              "quote": "\"If AI cannot understand what happened to you before, it will always be a passive tool.\"",
+              "source_content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+              "quote_hash": "4c2e51b083ae8856d7d3af9c31da8ed270672598a1d16721760a6bbeef8f840c"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "本轮资本押注的核心变量是：AI 可穿戴设备能否从“记录”升级为“理解”，即通过 KITE 长期记忆引擎和 Personal Agent 形成持续使用与订阅留存。当前可验证信号包括 Gem 已于 2026 年 9 月量产、在美国亚马逊和品牌官网发售并于 10 月进入日本，以及公司自报的 LoCoMo 93.51% 与 LongMemEval-S 85.60% 基准成绩；但硬件销量与软件订阅收入翻倍仅为公司自报，早期用户仅数千且集中在小企业主，复购与订阅留存尚未验证，因此融资所依赖的商业化信号仍有限。",
+        "validated_signals": [
+          "Gem 于 2026 年 9 月进入量产",
+          "Gem 在美国亚马逊和品牌官网发售，并于 2026 年 10 月进入日本",
+          "公司自报 KITE 引擎在 LoCoMo 和 LongMemEval-S 基准上的准确率分别为 93.51% 和 85.60%"
+        ],
+        "risks": [
+          "常开录音带来隐私与用户接受度问题",
+          "独立 AI 硬件存在留存风险，公司仅报告数千名早期用户且集中在小企业主",
+          "硬件销量与软件订阅收入翻倍为公司自报数据，尚未经独立验证",
+          "复购与订阅留存仍是关键考验，融资和热度不保证长期存续"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_device",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "computing_infrastructure",
+        "use_case_ids": [
+          "knowledge_search",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "consumer",
+          "business_user"
+        ],
+        "sector": "AI 可穿戴记忆设备与个人智能体",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是：AI 可穿戴设备能否从“记录”升级为“理解”，即通过 KITE 长期记忆引擎和 Personal Agent 形成持续使用与订阅留存。当前可验证信号包括 Gem 已于 2026 年 9 月量产、在美国亚马逊和品牌官网发售并于 10 月进入日本，以及公司自报的 LoCoMo 93.51% 与 LongMemEval-S 85.60% 基准成绩；但硬件销量与软件订阅收入翻倍仅为公司自报，早期用户仅数千且集中在小企业主，复购与订阅留存尚未验证，因此融资所依赖的商业化信号仍有限。",
+          "evidence_signals": [
+            "Gem 于 2026 年 9 月进入量产",
+            "Gem 在美国亚马逊和品牌官网发售，并于 2026 年 10 月进入日本",
+            "公司自报 KITE 引擎在 LoCoMo 和 LongMemEval-S 基准上的准确率分别为 93.51% 和 85.60%"
+          ],
+          "risks": [
+            "常开录音带来隐私与用户接受度问题",
+            "独立 AI 硬件存在留存风险，公司仅报告数千名早期用户且集中在小企业主",
+            "硬件销量与软件订阅收入翻倍为公司自报数据，尚未经独立验证",
+            "复购与订阅留存仍是关键考验，融资和热度不保证长期存续"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Gem",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "KITE 引擎",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Personal Agent beta",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Wang Shiyuan",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "NexTide Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Alpha Startups",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "阿尔法公社",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Plaud",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Anker soundcore",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Omi AI",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-609bed23b2e9a178",
+          "date": "2026-11-17",
+          "title": "前 Anker 首席营销官的 AI 可穿戴初创公司 Memoket 完成 450 万美元 Pre-A 轮融资",
+          "amount": "$4.5M",
+          "source_refs": [
+            "SA-5d5402391992862e"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-fd462de3c8158bd1",
+          "source_url": "https://dealroom.co/news/173270-ex-anker-cmo-s-ai-wearable-startup-memoket-raises-4-5m-pre-a/",
+          "title": "前 Anker 首席营销官的 AI 可穿戴初创公司 Memoket 完成 450 万美元 Pre-A 轮融资",
+          "publisher": "dealroom.co",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-22T00:28:06.907Z",
+          "content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1",
+          "source_artifact_id": "SA-5d5402391992862e",
+          "raw_id": "RAW-0a8522baffeaacab"
+        },
+        {
+          "source_id": "FISRC-8bd9e4c0fa32e466",
+          "source_url": "https://zlio.com/devices/",
+          "title": "AI Devices news | Zlio",
+          "publisher": "zlio.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-22T00:39:47.285Z",
+          "content_hash": "9f2dd77f2a44b159",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-22T00:40:21.228Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-22T00:40:21.228Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Gem",
+            "KITE 引擎",
+            "Personal Agent beta"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Wang Shiyuan"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-609bed23b2e9a178"
+      ],
+      "aggregation": {
+        "key": "EN-12a8f827c180f2cc|pre_series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-b0ee468e1be9bb4d",
+      "triggered_by_event_id": "EV-d84355ecbf21be85",
+      "as_of_date": "2026-11-22",
+      "company": {
+        "entity_id": "EN-6c72a44dd49f926c",
+        "name": "无锡诚恒微电子有限公司",
+        "full_name": "无锡诚恒微电子有限公司",
+        "website": "https://chenghengmicro.com/",
+        "summary": "诚恒微专注于边端侧AI SoC及解决方案的创新研发与产业应用，产品面向算力需求较高的具身智能与边缘计算等通用市场，覆盖机器人、无人机、边缘计算终端、智能交互终端等。",
+        "headquarters": "无锡",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "quote": "无锡诚恒微电子有限公司（简称“诚恒微”）专注于边端侧AI SoC及解决方案的创新研发与产业应用",
+            "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+            "quote_hash": "bb553b0056b608f70df009c8a16b19f1f4be9957e3c7ad8feb887166bf8a5db8"
+          },
+          {
+            "source_id": "FISRC-43992a92d9874bc7",
+            "quote": "诚恒微成立于2023年6月，总部位于无锡",
+            "source_content_hash": "e103726c7f092781",
+            "quote_hash": "705786501d9d92ff8549d3f56627d9ca1c892a2dfc6d4bee97fa581f12e1d9d8"
+          }
+        ],
+        "application_entity_id": "EN-6c72a44dd49f926c",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "近2亿元",
+        "total_raised": "",
+        "announced_at": "2026-11-20",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "中金资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "中车资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "毅达资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "锡创兴吴",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "奇安投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "quote": "投资界（ID：pedaily2012）11月20日消息，诚恒微完成近2亿元人民币A轮融资。",
+            "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+            "quote_hash": "3f86a8dcc6e9372d3e0a2ab87f8ed120dc5f1c645fa8f92fccdec81ab873baf0"
+          },
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "quote": "诚恒微完成近2亿元人民币A轮融资。本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+            "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+            "quote_hash": "2b06d21083c1cf71be3b1db5098683d4717283b3672c6d00e67ed1667d1ecf14"
+          },
+          {
+            "source_id": "FISRC-43992a92d9874bc7",
+            "quote": "近日，无锡诚恒微电子有限公司（以下简称“诚恒微”）完成近2亿元人民币A轮融资。",
+            "source_content_hash": "e103726c7f092781",
+            "quote_hash": "a2d28d97587bc8490baf623e5bd6c059c8230f6a26d2d17efbc64d650d82d9d2"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "近2亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 2 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-d84355ecbf21be85",
+            "round_original": "A轮",
+            "amount": "近2亿元",
+            "announced_at": "2026-11-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "投资界（ID：pedaily2012）11月20日消息，诚恒微完成近2亿元人民币A轮融资。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "3f86a8dcc6e9372d3e0a2ab87f8ed120dc5f1c645fa8f92fccdec81ab873baf0"
+              },
+              {
+                "source_id": "FISRC-ad4bbd905a940afc",
+                "quote": "诚恒微完成近2亿元人民币A轮融资。本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+                "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+                "quote_hash": "2b06d21083c1cf71be3b1db5098683d4717283b3672c6d00e67ed1667d1ecf14"
+              },
+              {
+                "source_id": "FISRC-43992a92d9874bc7",
+                "quote": "近日，无锡诚恒微电子有限公司（以下简称“诚恒微”）完成近2亿元人民币A轮融资。",
+                "source_content_hash": "e103726c7f092781",
+                "quote_hash": "a2d28d97587bc8490baf623e5bd6c059c8230f6a26d2d17efbc64d650d82d9d2"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "CH37系列边端侧AI SoC",
+          "description": "采用异构计算架构，将CPU、GPU、NPU、GPGPU、ISP等核心模块高度集成，面向算力需求较高的具身智能与边缘计算等通用市场。",
+          "target_customers": "机器人、无人机、边缘计算终端、智能交互终端等设备厂商",
+          "features": [
+            "峰值算力达64TOPS@INT8",
+            "支持FP16/FP32/FP64混合精度计算",
+            "强实时多传感器数据处理能力",
+            "低时延多模态融合感知"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-43992a92d9874bc7",
+              "quote": "自研旗舰产品CH37系列异构集成CPU、GPU、NPU、GPGPU、ISP等模块，峰值算力达64TOPS@INT8，支持FP16/FP32/FP64混合精度计算，具备强实时多传感器数据处理能力，可实现低时延多模态融合感知。",
+              "source_content_hash": "e103726c7f092781",
+              "quote_hash": "d93a389fbfd0d41864ee1b527a026fafbf4e74e1e44e5846574306e4eaf2d935"
+            },
+            {
+              "source_id": "FISRC-99bbb698d3af3777",
+              "quote": "采用异构计算架构，将CPU、GPU、NPU、GPGPU、ISP等核心模块高度集成，面向算力需求较高的具身智能与边缘计算等通用市场，可提供64TOPS@INT8的峰值AI算力",
+              "source_content_hash": "949b499b4c75632c",
+              "quote_hash": "6e1e6b6d9099fffb4031762d574fb775fc781bad484d246dd18aed0ee689b6d7"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "近2亿元人民币",
+          "observed_at": "2026-11-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ad4bbd905a940afc",
+              "quote": "诚恒微完成近2亿元人民币A轮融资",
+              "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+              "quote_hash": "2dc03108469d8abc6c83fa07c4e841c702c67eef9b7a16a1a5bed431c89c1687"
+            }
+          ]
+        },
+        {
+          "label": "CH37峰值AI算力",
+          "value": "64TOPS@INT8",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-43992a92d9874bc7",
+              "quote": "峰值算力达64TOPS@INT8",
+              "source_content_hash": "e103726c7f092781",
+              "quote_hash": "7ed9034f4228cc5cd7ae2788399013f2ae52d9b3d5c77233f651afe061136379"
+            }
+          ]
+        },
+        {
+          "label": "公司成立时间",
+          "value": "2023年6月",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-43992a92d9874bc7",
+              "quote": "诚恒微成立于2023年6月",
+              "source_content_hash": "e103726c7f092781",
+              "quote_hash": "44e128bbdf8e5691b92a30279321cbc5a51ac171495c52de54177b660362a5df"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "本轮资本押注的核心变量是CH37系列边端侧AI SoC能否从当前小批量交付推进到规模化量产与市场交付。来源已验证的信号包括：CH37系列已进入小批量交付阶段，峰值算力64TOPS@INT8，异构集成CPU、GPU、NPU、GPGPU、ISP等模块，并已获得中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与的本轮融资。证据边界在于：来源未披露本轮估值、累计融资额、量产良率、实际出货量或已签约客户收入，因此资本判断只能建立在产品定义与量产进展的定性描述上，不能外推为已实现的商业规模。",
+        "validated_signals": [
+          "CH37系列已进入小批量交付阶段",
+          "CH37峰值算力达64TOPS@INT8，支持FP16/FP32/FP64混合精度计算",
+          "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与"
+        ],
+        "risks": [
+          "来源未披露CH37系列量产良率与规模化交付的实际进度，量产爬坡仍待验证",
+          "来源未披露本轮估值、累计融资额及客户订单收入，商业化规模缺乏量化证据",
+          "来源提及技术迭代速度与市场竞争格局变化需关注，但未给出具体竞争数据"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "边端侧AI SoC芯片设计",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是CH37系列边端侧AI SoC能否从当前小批量交付推进到规模化量产与市场交付。来源已验证的信号包括：CH37系列已进入小批量交付阶段，峰值算力64TOPS@INT8，异构集成CPU、GPU、NPU、GPGPU、ISP等模块，并已获得中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与的本轮融资。证据边界在于：来源未披露本轮估值、累计融资额、量产良率、实际出货量或已签约客户收入，因此资本判断只能建立在产品定义与量产进展的定性描述上，不能外推为已实现的商业规模。",
+          "evidence_signals": [
+            "CH37系列已进入小批量交付阶段",
+            "CH37峰值算力达64TOPS@INT8，支持FP16/FP32/FP64混合精度计算",
+            "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与"
+          ],
+          "risks": [
+            "来源未披露CH37系列量产良率与规模化交付的实际进度，量产爬坡仍待验证",
+            "来源未披露本轮估值、累计融资额及客户订单收入，商业化规模缺乏量化证据",
+            "来源提及技术迭代速度与市场竞争格局变化需关注，但未给出具体竞争数据"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "CH37系列边端侧AI SoC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中金资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中车资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "毅达资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "锡创兴吴",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "奇安投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-d84355ecbf21be85",
+          "date": "2026-11-20",
+          "title": "诚恒微完成近2亿元A轮融资，加速边端侧AI SoC规模化落地",
+          "amount": "近2亿元",
+          "source_refs": [
+            "SA-01e8778e481baf08"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-ad4bbd905a940afc",
+          "source_url": "https://news.pedaily.cn/202611/572144.shtml",
+          "title": "诚恒微完成近2亿元A轮融资，加速边端侧AI SoC规模化落地",
+          "publisher": "news.pedaily.cn",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-22T00:28:08.518Z",
+          "content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+          "source_artifact_id": "SA-01e8778e481baf08",
+          "raw_id": "RAW-2936ff427ae13c27"
+        },
+        {
+          "source_id": "FISRC-43992a92d9874bc7",
+          "source_url": "https://chenghengmicro.com/news/37.html",
+          "title": "诚恒微完成近2亿元A轮融资，加速边端侧AI SoC规模化落地 - 新闻动态 - 无锡诚恒微电子有限公司 - 专注于边端侧 AI 与高性能视觉处理 | 诚恒微 | 无锡诚恒微 | 诚恒微电子",
+          "publisher": "chenghengmicro.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-21T00:41:50.682Z",
+          "content_hash": "e103726c7f092781",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-99bbb698d3af3777",
+          "source_url": "https://chenghengmicro.com/",
+          "title": "无锡诚恒微电子有限公司 - 专注于边端侧 AI 与高性能视觉处理 | 诚恒微 | 无锡诚恒微 | 诚恒微电子",
+          "publisher": "chenghengmicro.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-21T00:41:52.240Z",
+          "content_hash": "949b499b4c75632c",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-22T00:40:10.964Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-22T00:40:10.964Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "CH37系列边端侧AI SoC"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-d84355ecbf21be85"
+      ],
+      "aggregation": {
+        "key": "EN-6c72a44dd49f926c|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-f024bb5857482961",
+      "triggered_by_event_id": "EV-aab8ed97f5bf814a",
+      "as_of_date": "2026-11-22",
+      "company": {
+        "entity_id": "EN-6f7ac1823da81d2e",
+        "name": "DeepSeek",
+        "full_name": "杭州深度求索人工智能基础技术研究有限公司",
+        "website": "",
+        "summary": "DeepSeek 的运营主体，以 DeepSeek Chat 大语言模型为基础提供生成式人工智能产品与服务，并通过 API 向第三方提供模型调用能力。",
+        "headquarters": "杭州",
+        "founders": [
+          {
+            "name": "梁文锋",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8a2b68e4d86dcde4",
+                "quote": "DeepSeek的创始人梁文锋也是量化对冲基金幻方量化的创始人",
+                "source_content_hash": "c353c18e04a1bf07",
+                "quote_hash": "8ba5f8878cd9de58693954c7762631ced0ee2c726b21910f400c66a7fd023599"
+              }
+            ],
+            "entity_id": "EN-dfe2d38b46c80bc1"
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-953d16ef145a7cc3",
+            "quote": "DeepSeek 运营主体杭州深度求索人工智能基础技术研究有限公司近日完成工商变更",
+            "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+            "quote_hash": "2debab47510ee572a047415bc8bcfd8493b9a3601e0f4d02ecec89ad02e32af3"
+          },
+          {
+            "source_id": "FISRC-e3bfaa90c6529a58",
+            "quote": "DeepSeek产品及服务由杭州深度求索人工智能基础技术研究有限公司及其关联公司（以下简称“我们”或“深度求索”）共同所有和负责运营。",
+            "source_content_hash": "fb98220de242907f",
+            "quote_hash": "fe5fe3d14962cd7aaed00b743b99fd72441303955e26878e0b81d15a44e73b4b"
+          }
+        ],
+        "application_entity_id": "EN-6f7ac1823da81d2e",
+        "canonical_entity_consistent": true
+      },
+      "financing": {
+        "round": "其他融资",
+        "amount": "1000 亿元",
+        "total_raised": "",
+        "announced_at": "2026-11-20",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "腾讯",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "腾讯旗下上海珩岫商业管理有限公司出资比例 9.5653%，为第一大出资人",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "622663fae311ec2cd1edc1598667c8497bb3915b49053b73e9a521a0a2581e76"
+              }
+            ],
+            "entity_id": "EN-9c8ae69b84f21a2e"
+          },
+          {
+            "name": "宁德时代",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "宁德时代通过厦门时代怡远（4.9198%）、厦门时代深远（4.4410%）、福建时代泽远（0.2045%）三只基金合计出资同样为 9.5653%，与腾讯并列居前。",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "5b2cd1665af19e22ed15f30f0c202f31ea9d4b7e4a39ee0a7b067193b739fc58"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "中移投资控股",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "紧随其后的是中移投资控股与中信证券投资，各出资 7.6522%",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "ca56854d20074df673b6627cb4631951ee1f9f06fd572a3bd3b7645afd33844e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "中信证券投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "紧随其后的是中移投资控股与中信证券投资，各出资 7.6522%",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "ca56854d20074df673b6627cb4631951ee1f9f06fd572a3bd3b7645afd33844e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "砺思资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "砺思资本相关主体出资 7.1740%，进入前五。",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "3fd666fdb0520f93852f902d1e9e448bdee3d2cf2f733d47bf88ba1ea4289683"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "中国移动",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "中国电信",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "美团龙珠",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "网易雷火",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "小红书",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "携程系",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "vivo",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+              }
+            ],
+            "entity_id": "EN-69337578b2468a88"
+          },
+          {
+            "name": "美的",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "立讯体系（立臻精密）",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "吉利产投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "兆易创新",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "中芯聚源",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "横店资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "博裕",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "IDG",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "高榕",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "君联",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "正心谷",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "CPE 源峰",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "拾象",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "石溪资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "国寿股权",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "中金系",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-953d16ef145a7cc3",
+            "quote": "据证券时报援引知情交易人士消息，DeepSeek 本轮融资募资规模区间在 1000 亿元至 1055 亿元，投后估值约 6155 亿元。",
+            "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+            "quote_hash": "a757dc976be50e55da78d8d263999050992aeb99aea4efdb836ae24e40c6f014"
+          },
+          {
+            "source_id": "FISRC-281ba3f1b7759a6c",
+            "quote": "本轮融资规模达1055亿元人民币（约158亿美元），吸引近30家投资者参与，对应公司估值约6155亿元。",
+            "source_content_hash": "0a50d01c35cb4c56",
+            "quote_hash": "a9c0838daff8da9339b2c7cc7c2e5a705630557dbcdabb5c3c8279af6346af9d"
+          }
+        ],
+        "round_code": "other",
+        "round_original": "第二轮",
+        "amount_original": "1000 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-aab8ed97f5bf814a",
+            "round_original": "第二轮",
+            "amount": "1000 亿元",
+            "announced_at": "2026-11-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-953d16ef145a7cc3",
+                "quote": "据证券时报援引知情交易人士消息，DeepSeek 本轮融资募资规模区间在 1000 亿元至 1055 亿元，投后估值约 6155 亿元。",
+                "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+                "quote_hash": "a757dc976be50e55da78d8d263999050992aeb99aea4efdb836ae24e40c6f014"
+              },
+              {
+                "source_id": "FISRC-281ba3f1b7759a6c",
+                "quote": "本轮融资规模达1055亿元人民币（约158亿美元），吸引近30家投资者参与，对应公司估值约6155亿元。",
+                "source_content_hash": "0a50d01c35cb4c56",
+                "quote_hash": "a9c0838daff8da9339b2c7cc7c2e5a705630557dbcdabb5c3c8279af6346af9d"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "DeepSeek Chat",
+          "description": "以 DeepSeek Chat 大语言模型为基础的生成式人工智能产品与服务，可通过网页、应用程序、小程序、SDK、API 等形态提供文本生成和对话等能力。",
+          "target_customers": "成年人用户及第三方开发者",
+          "features": [
+            "文本生成和对话",
+            "联网搜索",
+            "支持文本、图片、文件等输入"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e3bfaa90c6529a58",
+              "quote": "我们的产品及服务包括我们以网页、应用程序（可能含不同版本）、小程序、供第三方网站和应用程序使用软件开发工具包（SDK）、应用程序编程接口（API）以及随技术发展出现的创新形态方式向您提供的产品与服务",
+              "source_content_hash": "fb98220de242907f",
+              "quote_hash": "1f803fb6e23922148705499dda47f7186816d46c375accb385f2fbea8b32ecff"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "DeepSeek API",
+          "description": "面向开发者的模型调用接口，提供 deepseek-flash 与 deepseek-v4-pro 等模型，按百万 tokens 计费，支持 JSON Output、Tool Calls、Responses API、Anthropic API 等功能。",
+          "target_customers": "开发者",
+          "features": [
+            "OpenAI 格式与 Anthropic 格式 BASE URL",
+            "支持非思考与思考模式",
+            "上下文长度 1M",
+            "输出长度最大 384K",
+            "Json Output、Tool Calls、Responses API"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fa1f87c1d59d2670",
+              "quote": "下表所列模型价格以“百万 tokens”为单位。",
+              "source_content_hash": "3d5f3725f1ffab4f",
+              "quote_hash": "95781a1d0d035244d3a267df1ca66c1c24a59696746913782aad263737120a08"
+            },
+            {
+              "source_id": "FISRC-fa1f87c1d59d2670",
+              "quote": "模型deepseek-flash(1)deepseek-v4-proBASE URL (OpenAI 格式)https://api.deepseek.comBASE URL (Anthropic 格式)https://api.deepseek.com/anthropic",
+              "source_content_hash": "3d5f3725f1ffab4f",
+              "quote_hash": "0e73b692a3a90274c28ebe4c1f962d9d5ec4849c3668bbd251f18c3e9f9afa22"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资规模区间",
+          "value": "1000 亿元至 1055 亿元",
+          "observed_at": "2026-11-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-953d16ef145a7cc3",
+              "quote": "DeepSeek 本轮融资募资规模区间在 1000 亿元至 1055 亿元",
+              "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+              "quote_hash": "faf607d32466047bfb50aa5a12b38847901368849f50f019da240bb0888a9395"
+            }
+          ]
+        },
+        {
+          "label": "投后估值",
+          "value": "约 6155 亿元",
+          "observed_at": "2026-11-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-953d16ef145a7cc3",
+              "quote": "投后估值约 6155 亿元",
+              "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+              "quote_hash": "f05814184cc709c6195c6e091fb094fc508b916c52571ad6827b7f12548d402c"
+            }
+          ]
+        },
+        {
+          "label": "注册资本",
+          "value": "由 1644.7496 万元增至 1991.8707 万元",
+          "observed_at": "2026-11-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-953d16ef145a7cc3",
+              "quote": "杭州深度求索注册资本由 1644.7496 万元增至 1991.8707 万元，增加 347.1211 万元，增幅约 21.1%。",
+              "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+              "quote_hash": "c7a79fd1eed8183dd37e2de23a43a33de243bbc261ae42673a45307f54d49c1c"
+            }
+          ]
+        },
+        {
+          "label": "梁文锋直接及间接持股比例",
+          "value": "约 67.42%",
+          "observed_at": "2026-11-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-953d16ef145a7cc3",
+              "quote": "据测算，梁文锋直接及间接持股比例合计约 67.42%",
+              "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+              "quote_hash": "c650eb459fbf3257a78eeddac6a9011d452a91bc472865dccac619698c74b114"
+            }
+          ]
+        },
+        {
+          "label": "杭州程砚合伙人数量",
+          "value": "32 名",
+          "observed_at": "2026-11-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-953d16ef145a7cc3",
+              "quote": "目前，杭州程砚合计拥有 32 名合伙人",
+              "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+              "quote_hash": "777920de7a3fa18d7b44adc64b157bca823153e0271e8c69591e797733bcd7b5"
+            }
+          ]
+        },
+        {
+          "label": "首轮融资规模",
+          "value": "约 510 亿元",
+          "observed_at": "2026-11-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-953d16ef145a7cc3",
+              "quote": "叠加 2026 年 6 月首轮约 510 亿元融资",
+              "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+              "quote_hash": "1ccf43efa78c7d002cc13e84732d0480f0c22bb5f5641b5be4ae75e151deb13f"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "证券时报援引知情交易人士",
+          "quote": "DeepSeek 本轮融资募资规模区间在 1000 亿元至 1055 亿元，投后估值约 6155 亿元。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-953d16ef145a7cc3",
+              "quote": "据证券时报援引知情交易人士消息，DeepSeek 本轮融资募资规模区间在 1000 亿元至 1055 亿元，投后估值约 6155 亿元。",
+              "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+              "quote_hash": "a757dc976be50e55da78d8d263999050992aeb99aea4efdb836ae24e40c6f014"
+            }
+          ]
+        },
+        {
+          "speaker": "IT之家",
+          "quote": "梁文锋直接及间接持股比例合计约 67.42%，千亿资本入场并未改变控制权归属。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-953d16ef145a7cc3",
+              "quote": "据测算，梁文锋直接及间接持股比例合计约 67.42%，千亿资本入场并未改变控制权归属。",
+              "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+              "quote_hash": "85789c9ad2838ea8d93d9349efa1cef5214e22cdb7ee32de78b2a71e0d5a6ba7"
+            }
+          ]
+        },
+        {
+          "speaker": "PANews",
+          "quote": "本轮融资规模达1055亿元人民币（约158亿美元），吸引近30家投资者参与，对应公司估值约6155亿元。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-281ba3f1b7759a6c",
+              "quote": "本轮融资规模达1055亿元人民币（约158亿美元），吸引近30家投资者参与，对应公司估值约6155亿元。",
+              "source_content_hash": "0a50d01c35cb4c56",
+              "quote_hash": "a9c0838daff8da9339b2c7cc7c2e5a705630557dbcdabb5c3c8279af6346af9d"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 DeepSeek 在大模型技术能力、商业化进展与上市预期上的组合。本轮融资规模区间为 1000 亿元至 1055 亿元，投后估值约 6155 亿元，且梁文锋直接及间接持股比例合计约 67.42%，控制权未因千亿资本入场而改变。已验证信号包括：工商信息显示新增股东杭州程砚并完成注册资本变更；首轮约 510 亿元融资已于 2026 年 6 月完成；有媒体于 9 月报道年化营收运行率已达到 10 亿美元。证据边界在于：本轮具体投资方名单及出资额来自工商信息与媒体报道，部分金额为知情人士口径；累计融资额超 1500 亿元为市场测算，并非公司披露的精确累计融资额；上市计划仍处于筹备阶段，尚未完成。",
+        "validated_signals": [
+          "工商信息显示 DeepSeek 运营主体完成工商变更，新增股东杭州程砚企业管理咨询合伙企业（有限合伙），注册资本由 1644.7496 万元增至 1991.8707 万元。",
+          "首轮约 510 亿元融资已于 2026 年 6 月完成交割。",
+          "有媒体于 9 月报道 DeepSeek 年化营收运行率已达到 10 亿美元。",
+          "DeepSeek API 文档显示已提供 deepseek-flash 与 deepseek-v4-pro 等模型及按 tokens 计费的 API 服务。"
+        ],
+        "risks": [
+          "本轮融资规模区间及投后估值来自知情交易人士与媒体报道，公司尚未公开披露具体财务条款及投资方名单，最终金额与名单仍可能变化。",
+          "市场测算两轮累计吸纳资金将超 1500 亿元，但公司未披露精确累计融资额，该数字不能视为公司确认的累计融资实绩。",
+          "上市筹备仍处于推进阶段，最快上市时间来自媒体报道与知情人士预期，尚未完成。",
+          "年化营收运行率 10 亿美元来自媒体此前报道，公司未公开确认该商业化数据。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "use_case_ids": [
+          "knowledge_search",
+          "content_creation",
+          "software_development"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user",
+          "consumer"
+        ],
+        "sector": "大语言模型与生成式人工智能API服务",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 DeepSeek 在大模型技术能力、商业化进展与上市预期上的组合。本轮融资规模区间为 1000 亿元至 1055 亿元，投后估值约 6155 亿元，且梁文锋直接及间接持股比例合计约 67.42%，控制权未因千亿资本入场而改变。已验证信号包括：工商信息显示新增股东杭州程砚并完成注册资本变更；首轮约 510 亿元融资已于 2026 年 6 月完成；有媒体于 9 月报道年化营收运行率已达到 10 亿美元。证据边界在于：本轮具体投资方名单及出资额来自工商信息与媒体报道，部分金额为知情人士口径；累计融资额超 1500 亿元为市场测算，并非公司披露的精确累计融资额；上市计划仍处于筹备阶段，尚未完成。",
+          "evidence_signals": [
+            "工商信息显示 DeepSeek 运营主体完成工商变更，新增股东杭州程砚企业管理咨询合伙企业（有限合伙），注册资本由 1644.7496 万元增至 1991.8707 万元。",
+            "首轮约 510 亿元融资已于 2026 年 6 月完成交割。",
+            "有媒体于 9 月报道 DeepSeek 年化营收运行率已达到 10 亿美元。",
+            "DeepSeek API 文档显示已提供 deepseek-flash 与 deepseek-v4-pro 等模型及按 tokens 计费的 API 服务。"
+          ],
+          "risks": [
+            "本轮融资规模区间及投后估值来自知情交易人士与媒体报道，公司尚未公开披露具体财务条款及投资方名单，最终金额与名单仍可能变化。",
+            "市场测算两轮累计吸纳资金将超 1500 亿元，但公司未披露精确累计融资额，该数字不能视为公司确认的累计融资实绩。",
+            "上市筹备仍处于推进阶段，最快上市时间来自媒体报道与知情人士预期，尚未完成。",
+            "年化营收运行率 10 亿美元来自媒体此前报道，公司未公开确认该商业化数据。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "DeepSeek Chat",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "DeepSeek API",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "梁文锋",
+          "canonical_entity_id": "EN-dfe2d38b46c80bc1",
+          "canonical_name": "梁文锋"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "腾讯",
+          "canonical_entity_id": "EN-9c8ae69b84f21a2e",
+          "canonical_name": "腾讯"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "宁德时代",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中移投资控股",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中信证券投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "砺思资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中国移动",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中国电信",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "美团龙珠",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "网易雷火",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "小红书",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "携程系",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "vivo",
+          "canonical_entity_id": "EN-69337578b2468a88",
+          "canonical_name": "vivo"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "美的",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "立讯体系（立臻精密）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "吉利产投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "兆易创新",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中芯聚源",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "横店资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "博裕",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "IDG",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "高榕",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "君联",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "正心谷",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "CPE 源峰",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "拾象",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "石溪资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "国寿股权",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中金系",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-ac30333388e0d00a",
+          "date": "2026-10-26",
+          "title": "经济日报：千亿元融资展现中国AI进取心",
+          "amount": "约1000亿元人民币",
+          "source_refs": [
+            "SA-5bde2e7d69e1241d"
+          ]
+        },
+        {
+          "event_id": "EV-c964f7646ad88c1e",
+          "date": "2026-10-22",
+          "title": "DeepSeek 融资 150 亿美元，挑战美国领先实验室",
+          "amount": "$15 billion",
+          "source_refs": [
+            "SA-ee42f42fdd247449"
+          ]
+        },
+        {
+          "event_id": "EV-ed65f3187aa6aa40",
+          "date": "2026-07-14",
+          "title": "DeepSeek 在完成首轮 70 亿美元融资仅数周后就需要更多现金",
+          "amount": "$7 billion",
+          "source_refs": [
+            "SA-2fa4b62a68708662"
+          ]
+        },
+        {
+          "event_id": "EV-f8c3a83d883c9b22",
+          "date": "2026-06-16",
+          "title": "DeepSeek 完成首轮外部融资，估值超 500 亿美元",
+          "amount": "about $7.4 billion",
+          "source_refs": [
+            "SA-8a94a189bf763b0b"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-953d16ef145a7cc3",
+          "source_url": "https://www.ithome.com/1/030/199.htm",
+          "title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+          "publisher": "www.ithome.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-22T00:19:21.042Z",
+          "content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+          "source_artifact_id": "SA-621934bf52005da6",
+          "raw_id": "RAW-9144e5138bb2552c"
+        },
+        {
+          "source_id": "FISRC-281ba3f1b7759a6c",
+          "source_url": "https://es.tradingview.com/news/panews:e41a6a7a3acdf:0/",
+          "title": "DeepSeek融资1055亿元细节曝光：估值约6155亿元，近30家投资者参与",
+          "publisher": "es.tradingview.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-21T00:41:38.621Z",
+          "content_hash": "0a50d01c35cb4c56",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-8a2b68e4d86dcde4",
+          "source_url": "https://news.sciencenet.cn/htmlnews/2025/2/538572.shtm",
+          "title": "DeepSeek这么火，为何从未拿过风投机构一分钱？—新闻—科学网",
+          "publisher": "news.sciencenet.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-22T00:39:22.564Z",
+          "content_hash": "c353c18e04a1bf07",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-fa1f87c1d59d2670",
+          "source_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+          "title": "模型 & 价格 | DeepSeek API Docs",
+          "publisher": "api-docs.deepseek.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-23T00:46:02.108Z",
+          "content_hash": "3d5f3725f1ffab4f",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-e3bfaa90c6529a58",
+          "source_url": "https://cdn.deepseek.com/policies/zh-CN/deepseek-terms-of-use.html",
+          "title": "DeepSeek 用户协议",
+          "publisher": "cdn.deepseek.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-23T00:46:03.014Z",
+          "content_hash": "fb98220de242907f",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-22T00:39:43.175Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-22T00:39:43.175Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "DeepSeek API",
+            "DeepSeek Chat"
+          ]
+        },
+        "founders": {
+          "linked": 1,
+          "total": 1,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-aab8ed97f5bf814a"
+      ],
+      "aggregation": {
+        "key": "EN-6f7ac1823da81d2e|other",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-f7c8d30a6397cf74",
+      "triggered_by_event_id": "EV-dc09c82dcc6d5e13",
+      "as_of_date": "2026-11-22",
+      "company": {
+        "entity_id": "EN-e7cff3bfc36dcad1",
+        "name": "Vetaion",
+        "full_name": "Vetaion",
+        "website": "",
+        "summary": "Vetaion是一家总部位于慕尼黑的AI原生制造商，专注于自动化定制电气控制柜的生产。公司通过将2D电路图转换为3D模型，并利用机器人完成组件放置和布线，实现从批量1开始的自动化生产。",
+        "headquarters": "Munich, Germany",
+        "founders": [
+          {
+            "name": "Nikolaus von Bary",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "said founder Nikolaus von Bary",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "515c04368dd06947005f46a5f570bd11889a69455eceb6234e76fcf1488fc83b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Benedikt Hohmann",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-725a2f6dc99df16b",
+                "quote": "Founders Nikolaus von Bary and Benedikt Hohmann bring more than 20 years of combined manufacturing experience",
+                "source_content_hash": "63d6e78a977ef60b",
+                "quote_hash": "05339b956211e5167499d0ecda6bc6fdb90d1bd60ac7d4f4bc90cbf520b2e627"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-23028648dbd2a819",
+            "quote": "Vetaion, a Munich-based company that automates the manufacturing of custom electrical control cabinets",
+            "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+            "quote_hash": "80bae16d68d71494509533d8823869f3606b64a5c424c3dd2ac9f5f08d160d26"
+          },
+          {
+            "source_id": "FISRC-e230f947b0274607",
+            "quote": "The company describes itself as an AI-native manufacturer serving the Mittelstand mechanical and plant engineering sector.",
+            "source_content_hash": "7ecafb66d0539a68",
+            "quote_hash": "7d975dc69790f3a36894bfb2d8d369c74871cb81750ac7e5415e3f4bb22afe46"
+          }
+        ],
+        "application_entity_id": "EN-e7cff3bfc36dcad1",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "预种子轮",
+        "amount": "€5.7 million",
+        "total_raised": "",
+        "announced_at": "2026-11-19",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Visionaries Tomorrow",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "The round was co-led by Visionaries Tomorrow and UVC Partners",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "4ddadcf5f3d78fb49d4f9051bc2cb6936c805845e5fecfe9f1db21ee408c93b0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "UVC Partners",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "The round was co-led by Visionaries Tomorrow and UVC Partners",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "4ddadcf5f3d78fb49d4f9051bc2cb6936c805845e5fecfe9f1db21ee408c93b0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "2100 Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "with participation from 2100 Ventures and leading industrial companies such as Viessmann Generations Group",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "3734c0e5bd6467c92281bccefd08c1d7b70324204f3dfec626091024e25bda71"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Viessmann Generations Group",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "with participation from 2100 Ventures and leading industrial companies such as Viessmann Generations Group",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "3734c0e5bd6467c92281bccefd08c1d7b70324204f3dfec626091024e25bda71"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-23028648dbd2a819",
+            "quote": "HomeGermany-StartupsMunich-based Vetaion raises €5.7 million to automate control cabinet manufacturing with AI...",
+            "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+            "quote_hash": "46d25b166901cc787afedb4ccdb7c4dd32840559c592d0a5a67bbf7545c1908c"
+          },
+          {
+            "source_id": "FISRC-23028648dbd2a819",
+            "quote": "has closed a €5.7 million pre-Seed financing round",
+            "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+            "quote_hash": "c0dd7a20472a3108900f56071f951a5efa8d3b7d2b03ed57d5d70f404b482aa0"
+          },
+          {
+            "source_id": "FISRC-e230f947b0274607",
+            "quote": "Vetaion has raised €5.7 million in pre-seed funding",
+            "source_content_hash": "7ecafb66d0539a68",
+            "quote_hash": "9029a51f4439de211a352fa82565e6231b12f0fae6af0cb36ccef17bb607a70b"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "pre-Seed",
+        "amount_original": "€5.7 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 5700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "570 万欧元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-dc09c82dcc6d5e13",
+            "round_original": "pre-Seed",
+            "amount": "€5.7 million",
+            "announced_at": "2026-11-19",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "HomeGermany-StartupsMunich-based Vetaion raises €5.7 million to automate control cabinet manufacturing with AI...",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "46d25b166901cc787afedb4ccdb7c4dd32840559c592d0a5a67bbf7545c1908c"
+              },
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "has closed a €5.7 million pre-Seed financing round",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "c0dd7a20472a3108900f56071f951a5efa8d3b7d2b03ed57d5d70f404b482aa0"
+              },
+              {
+                "source_id": "FISRC-e230f947b0274607",
+                "quote": "Vetaion has raised €5.7 million in pre-seed funding",
+                "source_content_hash": "7ecafb66d0539a68",
+                "quote_hash": "9029a51f4439de211a352fa82565e6231b12f0fae6af0cb36ccef17bb607a70b"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "VetaionOS",
+          "description": "Vetaion自研的操作系统，用于自动化一次性产品制造，协调生产和管理任务，并监控从组装到测试和质量检查的制造过程。",
+          "target_customers": "Mittelstand机械和工厂工程行业",
+          "features": [
+            "将2D电路图转换为3D模型",
+            "协调生产和管理工作",
+            "监控制造过程"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "With VetaionOS, the German startup is building its own operating system to automate one-off product manufacturing.",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "2a7dd092dc072873bd33881d569512061cbe2d201484432024f4bd4a7a3a1149"
+            },
+            {
+              "source_id": "FISRC-e230f947b0274607",
+              "quote": "Vetaion’s operating system coordinates production and administrative work, and monitors manufacturing from assembly through testing and quality checks.",
+              "source_content_hash": "7ecafb66d0539a68",
+              "quote_hash": "7e770fae334b0a82a52fa7a8a09a486e4f4ab7dafbb9fb7bc80d7be3d07210b2"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "自动化控制柜制造服务",
+          "description": "利用软件和机器人自动化生产定制电气控制柜，将2D电路图转换为3D模型，由机器人完成组件放置和布线。",
+          "target_customers": "需要控制柜的工厂、风电场、数据中心等",
+          "features": [
+            "从批量1开始自动化生产",
+            "交付时间从数月缩短至不到四周",
+            "人工工作量降至十分之一"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "Instead of printed schematics, tape measures, and hand drills, its cabinets are guided by software and built by robots, saving time and reducing costs.",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "1f2786b726b096aaea4fe8ea0a2dca36a5123dbce16be6525585b27de813f590"
+            },
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "the lead times for a control cabinet fall from several months to under four weeks, and the manual work involved drops to a tenth.",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "a7fb809c1a0682035a0eb1f38a38e8792f10da54f6741fea8dd0a05afb3627e4"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "融资额",
+          "value": "€5.7 million",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "has closed a €5.7 million pre-Seed financing round",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "c0dd7a20472a3108900f56071f951a5efa8d3b7d2b03ed57d5d70f404b482aa0"
+            }
+          ]
+        },
+        {
+          "label": "欧洲每年控制柜需求估计",
+          "value": "超过500万台",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "The company estimates that Europe needs more than five million control cabinets every year.",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "6bbeba5bc8e282f9408e0571f2843c61f7c799c55f5367e97cec481d37117a4b"
+            }
+          ]
+        },
+        {
+          "label": "交付时间缩短",
+          "value": "从数月降至不到四周",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "the lead times for a control cabinet fall from several months to under four weeks",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "f62c5b861d33db9a660762c3ec613a3994c6ba26401e8782660aa3d3092c2423"
+            }
+          ]
+        },
+        {
+          "label": "人工工作量减少",
+          "value": "降至十分之一",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "the manual work involved drops to a tenth",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "f174602f93caec59908883ca911fd6976e2ff3ca6719efef94919bbdf479a818"
+            }
+          ]
+        },
+        {
+          "label": "报价响应时间",
+          "value": "24小时内",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "Vetaion responds to project inquiries with a firm quote within 24 hours",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "f2d1eda049599931eb50268eac8718601023a3b9accf27d0d5999f7f9dfb4265"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Johannes von Borries",
+          "quote": "Many people see control cabinets as a craft, not a case for venture capital. We see a problem that AI and automation can solve. What convinced us above all was the team and its pace: I visited Vetaion on site twice within just a few weeks. The progress between my visits was astonishing – one of the highest execution speeds I have seen",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "Many people see control cabinets as a craft, not a case for venture capital. We see a problem that AI and automation can solve. What convinced us above all was the team and its pace: I visited Vetaion on site twice within just a few weeks. The progress between my visits was astonishing – one of the highest execution speeds I have seen",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "d47c13e87a60b4e6da15ced03ee56c06defc8fc3a7e72a8d014f89c1fd09e912"
+            }
+          ]
+        },
+        {
+          "speaker": "Nikolaus von Bary",
+          "quote": "Europe’s share of global manufacturing has fallen from 25 to 16% in recent years. We have forgotten how to make things and have preferred to rely on suppliers abroad. If we do not bring that capability back, it will be lost for good, and we will not be able to deliver the infrastructure build-out that the megatrends of AI, robotics, and the energy transition require",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "Europe’s share of global manufacturing has fallen from 25 to 16% in recent years. We have forgotten how to make things and have preferred to rely on suppliers abroad. If we do not bring that capability back, it will be lost for good, and we will not be able to deliver the infrastructure build-out that the megatrends of AI, robotics, and the energy transition require",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "b46266ba8befb3f7bcfbf573a3797f941a34dd3a84d2a310e908bd4e62f81af2"
+            }
+          ]
+        },
+        {
+          "speaker": "Anna Wahl",
+          "quote": "We want to make Europe's industry fit for the future and strengthen our technological sovereignty",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-725a2f6dc99df16b",
+              "quote": "We want to make Europe's industry fit for the future and strengthen our technological sovereignty",
+              "source_content_hash": "63d6e78a977ef60b",
+              "quote_hash": "2bfcc5602517ecf30f3ed4f07e9521b2dda89a356bb6ab934f64bbf47299a868"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "UVC Partners",
+            "speaker": "Johannes von Borries",
+            "speaker_role": "Managing Partner",
+            "rationale": "认为控制柜制造是AI和自动化可以解决的问题，团队执行速度极快。",
+            "quote": "Many people see control cabinets as a craft, not a case for venture capital. We see a problem that AI and automation can solve. What convinced us above all was the team and its pace: I visited Vetaion on site twice within just a few weeks. The progress between my visits was astonishing – one of the highest execution speeds I have seen",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "Many people see control cabinets as a craft, not a case for venture capital. We see a problem that AI and automation can solve. What convinced us above all was the team and its pace: I visited Vetaion on site twice within just a few weeks. The progress between my visits was astonishing – one of the highest execution speeds I have seen",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "d47c13e87a60b4e6da15ced03ee56c06defc8fc3a7e72a8d014f89c1fd09e912"
+              }
+            ]
+          },
+          {
+            "institution": "Viessmann Generations Group",
+            "speaker": "Anna Wahl",
+            "speaker_role": "managing director of venture capital",
+            "rationale": "旨在使欧洲工业适应未来并加强技术主权。",
+            "quote": "We want to make Europe's industry fit for the future and strengthen our technological sovereignty",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-725a2f6dc99df16b",
+                "quote": "We want to make Europe's industry fit for the future and strengthen our technological sovereignty",
+                "source_content_hash": "63d6e78a977ef60b",
+                "quote_hash": "2bfcc5602517ecf30f3ed4f07e9521b2dda89a356bb6ab934f64bbf47299a868"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是Vetaion能否将控制柜制造从手工定制转化为软件驱动的机器人自动化，并实现批量1的经济性。已验证信号包括：交付时间从数月缩短至不到四周、人工工作量降至十分之一、24小时内提供报价，以及团队在短期内展现的高执行速度。当前融资依赖这些早期运营指标，但尚未披露客户合同、收入或产能数据，判断边界在于这些效率提升能否在规模化生产中持续并转化为商业订单。",
+        "validated_signals": [
+          "交付时间从数月缩短至不到四周",
+          "人工工作量降至十分之一",
+          "24小时内提供报价",
+          "团队在数周内展现显著进展"
+        ],
+        "risks": [
+          "效率提升数据来自公司自述，尚未经独立验证或大规模生产检验",
+          "客户合同、收入及产能等商业化指标未披露",
+          "控制柜定制化程度高，自动化方案在更广泛订单中的可扩展性待验证"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai",
+        "market_subcategory_id": "",
+        "market_application_id": "",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "工业自动化与机器人控制柜制造",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Vetaion能否将控制柜制造从手工定制转化为软件驱动的机器人自动化，并实现批量1的经济性。已验证信号包括：交付时间从数月缩短至不到四周、人工工作量降至十分之一、24小时内提供报价，以及团队在短期内展现的高执行速度。当前融资依赖这些早期运营指标，但尚未披露客户合同、收入或产能数据，判断边界在于这些效率提升能否在规模化生产中持续并转化为商业订单。",
+          "evidence_signals": [
+            "交付时间从数月缩短至不到四周",
+            "人工工作量降至十分之一",
+            "24小时内提供报价",
+            "团队在数周内展现显著进展"
+          ],
+          "risks": [
+            "效率提升数据来自公司自述，尚未经独立验证或大规模生产检验",
+            "客户合同、收入及产能等商业化指标未披露",
+            "控制柜定制化程度高，自动化方案在更广泛订单中的可扩展性待验证"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "VetaionOS",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "自动化控制柜制造服务",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Nikolaus von Bary",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Benedikt Hohmann",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Visionaries Tomorrow",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "UVC Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "2100 Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Viessmann Generations Group",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-dc09c82dcc6d5e13",
+          "date": "2026-11-19",
+          "title": "慕尼黑Vetaion获570万欧元融资，利用AI与机器人实现控制柜制造自动化",
+          "amount": "€5.7 million",
+          "source_refs": [
+            "SA-9f842c8b68fc08f3"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-23028648dbd2a819",
+          "source_url": "https://www.eu-startups.com/2026/11/munich-based-vetaion-raises-e5-7-million-to-automate-control-cabinet-manufacturing-with-ai-and-robotics/",
+          "title": "慕尼黑Vetaion获570万欧元融资，利用AI与机器人实现控制柜制造自动化",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-22T00:18:30.829Z",
+          "content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+          "source_artifact_id": "SA-9f842c8b68fc08f3",
+          "raw_id": "RAW-a7a7984bd655dacb"
+        },
+        {
+          "source_id": "FISRC-e230f947b0274607",
+          "source_url": "https://www.startup.eu/investments/vetaion-5-7-m-pre-seed-11-2026",
+          "title": "Munich-based Vetaion raises €5.7 million pre-seed to automate control cabinet manufacturing",
+          "publisher": "startup.eu",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-22T00:39:18.130Z",
+          "content_hash": "7ecafb66d0539a68",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-725a2f6dc99df16b",
+          "source_url": "https://dealroom.co/news/174315-vetaion-raises-5-7m-to-automate-control-cabinet-production/",
+          "title": "Vetaion raises €5.7M to automate control cabinet production",
+          "publisher": "dealroom.co",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-22T00:39:19.935Z",
+          "content_hash": "63d6e78a977ef60b",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-22T00:39:42.638Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-22T00:39:42.638Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "VetaionOS",
+            "自动化控制柜制造服务"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Benedikt Hohmann",
+            "Nikolaus von Bary"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-dc09c82dcc6d5e13"
+      ],
+      "aggregation": {
+        "key": "EN-e7cff3bfc36dcad1|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-26116b47c5b50f81",
+      "triggered_by_event_id": "EV-b5b93d1b6f0bce86",
+      "as_of_date": "2026-11-22",
+      "company": {
+        "entity_id": "EN-4f52302c928b8d84",
+        "name": "广东知业科技有限公司",
+        "full_name": "广东知业科技有限公司",
+        "website": "https://www.zacye.com/",
+        "summary": "工业互联网平台服务商，以一体两翼业务模型打造精益化智能制造平台、智能化装备售后平台与精益人工智能平台，服务40多个细分行业、超500家制造企业。",
+        "headquarters": "珠海高新区",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-97ea0233a06dbd19",
+            "quote": "知业科技成立于2018年，总部位于珠海高新区，是工业互联网平台服务商，以一体两翼业务模型打造精益化智能制造平台、智能化装备售后平台与精益人工智能平台，产品服务40多个细分行业、超500家制造企业",
+            "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+            "quote_hash": "63afe10c6c9ac280fcc5ad641fac2eda9ca19b0cc5ddb4021b76177e19ac09be"
+          },
+          {
+            "source_id": "FISRC-304a6c406c01caf5",
+            "quote": "广东知业科技有限公司（简称知业科技）成立于2018年，专注于面向工业4.0平台技术与产品研发",
+            "source_content_hash": "4f9a61a026c507af",
+            "quote_hash": "43f12ecccf60623b6af9beea03f85920f87397570e08d035323b2a45e1d3c81d"
+          }
+        ],
+        "application_entity_id": "EN-4f52302c928b8d84",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "数千万元",
+        "total_raised": "",
+        "announced_at": "2026-11-19",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "高科金投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-97ea0233a06dbd19",
+                "quote": "投资机构为高科金投、泰亚投资",
+                "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+                "quote_hash": "03ed427859e43b6039ca82a4e49c9414869b5741c8a453b6994717823a92fe7d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "泰亚投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-97ea0233a06dbd19",
+                "quote": "投资机构为高科金投、泰亚投资",
+                "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+                "quote_hash": "03ed427859e43b6039ca82a4e49c9414869b5741c8a453b6994717823a92fe7d"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "泰亚投资",
+            "role": "Pre-A轮联合投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-be5a00e9fa15ff4f",
+                "quote": "由高科创投、泰亚投资联合投资",
+                "source_content_hash": "571569e4fe30c6a5",
+                "quote_hash": "15638fe1818d62066ce2792e111d7b5d4d20bce765e42a80f97c936c0bc2cd02"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-97ea0233a06dbd19",
+            "quote": "智通财经APP获悉，广东知业科技有限公司完成数千万元A轮融资，投资机构为高科金投、泰亚投资。",
+            "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+            "quote_hash": "7c1ffbb1bdf577eaeb0d7bc806fe6042ceeef9141dfeec547d86dd35b4f297a5"
+          },
+          {
+            "source_id": "FISRC-97ea0233a06dbd19",
+            "quote": "广东知业科技有限公司完成数千万元A轮融资，投资机构为高科金投、泰亚投资",
+            "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+            "quote_hash": "e82c641fad7c18e3c3cf82285a520fb7fc691fd7103b67517c6322cdd343a4ae"
+          },
+          {
+            "source_id": "FISRC-304a6c406c01caf5",
+            "quote": "知业科技完成数千万元A轮融资，投资机构为高科金投、泰亚投资",
+            "source_content_hash": "4f9a61a026c507af",
+            "quote_hash": "b1ce933d902630cf62185b49eecc75f7a78b611b5e41c6e981ed2db2d8a70ce5"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-b5b93d1b6f0bce86",
+            "round_original": "A轮",
+            "amount": "数千万元",
+            "announced_at": "2026-11-19",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-97ea0233a06dbd19",
+                "quote": "智通财经APP获悉，广东知业科技有限公司完成数千万元A轮融资，投资机构为高科金投、泰亚投资。",
+                "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+                "quote_hash": "7c1ffbb1bdf577eaeb0d7bc806fe6042ceeef9141dfeec547d86dd35b4f297a5"
+              },
+              {
+                "source_id": "FISRC-97ea0233a06dbd19",
+                "quote": "广东知业科技有限公司完成数千万元A轮融资，投资机构为高科金投、泰亚投资",
+                "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+                "quote_hash": "e82c641fad7c18e3c3cf82285a520fb7fc691fd7103b67517c6322cdd343a4ae"
+              },
+              {
+                "source_id": "FISRC-304a6c406c01caf5",
+                "quote": "知业科技完成数千万元A轮融资，投资机构为高科金投、泰亚投资",
+                "source_content_hash": "4f9a61a026c507af",
+                "quote_hash": "b1ce933d902630cf62185b49eecc75f7a78b611b5e41c6e981ed2db2d8a70ce5"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "精益大模型平台（LPAI）",
+          "description": "制造业垂域大模型平台，采用基础大模型、行业模型、场景模型三级架构，融合工业知识图谱、检索增强生成与多约束推理，面向中大型制造企业提供整体解决方案。",
+          "target_customers": "中大型制造企业",
+          "features": [
+            "基础大模型—行业模型—场景模型三级架构",
+            "工业多模态解析与跨源数据对齐",
+            "融合工业知识图谱、RAG与多约束推理",
+            "工程师修正意见与生产验证结果沉淀为案例和评测样本"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-304a6c406c01caf5",
+              "quote": "知业科技自主研发的精益大模型（LPAI）采用“基础大模型—行业模型—场景模型”三级架构",
+              "source_content_hash": "4f9a61a026c507af",
+              "quote_hash": "5ff4d1daa155ab666095fa3d54d9d628e91f4f893101d4a149cd146e91f7f5e1"
+            },
+            {
+              "source_id": "FISRC-304a6c406c01caf5",
+              "quote": "精益大模型（LPAI）融合工业知识图谱、检索增强生成（RAG）与多约束推理",
+              "source_content_hash": "4f9a61a026c507af",
+              "quote_hash": "384dc48cccca7e4b8072f1bfddc7c7f05d94ede3a828a4173d51672d86e8844a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "物理端AI一体机（塑易通、板易通、机易通）",
+          "description": "面向中小制造企业的物理AI操作系统，集成工业边缘接入、智能体工作流编排和专业工具调用能力，以MaaS方式按智能体执行任务实际消耗的词元计费。",
+          "target_customers": "中小制造企业",
+          "features": [
+            "工业智能体集成于一体机",
+            "按实际消耗的Token支付模型服务费用",
+            "将机台规格、材料牌号、工艺阈值等现场条件转化为智能体可读取的约束"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-304a6c406c01caf5",
+              "quote": "面向中小制造企业，通过物理端AI一体机提供MaaS（模型即服务），企业通过工业智能体，按照实际消耗的Token（词元）支付模型服务费用",
+              "source_content_hash": "4f9a61a026c507af",
+              "quote_hash": "6917682ed2e429ad046a33cf78479a218cb5cdd42ec5d398ca5a4c491d0e5a71"
+            },
+            {
+              "source_id": "FISRC-304a6c406c01caf5",
+              "quote": "知业科技将工业智能体集成到塑易通、板易通、机易通等一体机中，将其定位为中小制造企业的物理AI操作系统",
+              "source_content_hash": "4f9a61a026c507af",
+              "quote_hash": "664773cdc719f4457a11c176d482ef788cba426e61b3c575b5a5e359f8d66d4f"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "分寸云（精益化智能制造平台）",
+          "description": "精益化智能制造平台，覆盖设备物联、设备管理、工艺管理、程序管理、精益生产、生产溯源、工业组态、智慧运营等模块。",
+          "target_customers": "制造企业",
+          "features": [
+            "设备物联与边缘计算",
+            "工艺资产化与专家工艺知识库",
+            "生产制造运营管理",
+            "数字孪生与智慧运营中心"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-304a6c406c01caf5",
+              "quote": "以一体两翼业务模型打造自主可控的分寸云(精益化智能制造平台）、随机云(智能化装备售后平台)、精益大模型平台(LPAI)",
+              "source_content_hash": "4f9a61a026c507af",
+              "quote_hash": "0d4a21f336f78ecfa9bfcd868a0c0e2027c3f460bac3b3a5a9083a723fe7c42e"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "服务细分行业数",
+          "value": "40多个",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-97ea0233a06dbd19",
+              "quote": "产品服务40多个细分行业、超500家制造企业",
+              "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+              "quote_hash": "96322924c77afac9b698464b4013ffe4d4990ae5db4375acb150623b571c1de8"
+            }
+          ]
+        },
+        {
+          "label": "服务制造企业数",
+          "value": "超500家",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-97ea0233a06dbd19",
+              "quote": "产品服务40多个细分行业、超500家制造企业",
+              "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+              "quote_hash": "96322924c77afac9b698464b4013ffe4d4990ae5db4375acb150623b571c1de8"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "周星宇",
+          "quote": "我们看好人工智能与制造业深度融合带来的长期产业机会。随着制造业向高端化、智能化迈进，工业AI有望从单点应用走向企业核心业务，成为制造企业提升生产效率、产品质量和创新能力的重要支撑。知业科技长期深耕制造业，在工业大模型研发和产业应用方面形成了积累。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-304a6c406c01caf5",
+              "quote": "我们看好人工智能与制造业深度融合带来的长期产业机会。随着制造业向高端化、智能化迈进，工业AI有望从单点应用走向企业核心业务，成为制造企业提升生产效率、产品质量和创新能力的重要支撑。知业科技长期深耕制造业，在工业大模型研发和产业应用方面形成了积累。",
+              "source_content_hash": "4f9a61a026c507af",
+              "quote_hash": "74db38f49770c62fd414ce85cf1f26d8d55743034a997c48a05ad2fbbcd2ad88"
+            }
+          ]
+        },
+        {
+          "speaker": "秦伟",
+          "quote": "我们看好工业AI在制造业的长期发展空间。随着技术逐步成熟，行业的机会在于把已经验证的能力转化为可规模化交付、可持续使用的产品和服务。知业科技深耕制造业，正在把对工业场景的理解转化为标准化的产品和服务，让更多中小制造企业能够以可控的成本导入AI，并根据实际成效逐步扩大应用。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-304a6c406c01caf5",
+              "quote": "我们看好工业AI在制造业的长期发展空间。随着技术逐步成熟，行业的机会在于把已经验证的能力转化为可规模化交付、可持续使用的产品和服务。知业科技深耕制造业，正在把对工业场景的理解转化为标准化的产品和服务，让更多中小制造企业能够以可控的成本导入AI，并根据实际成效逐步扩大应用。",
+              "source_content_hash": "4f9a61a026c507af",
+              "quote_hash": "1b4961a98ca20fa8ceb4d77ec9897bc63ff43ce4ba7c8cd8d03c421195b40bbc"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "高科金投",
+            "speaker": "周星宇",
+            "speaker_role": "高科金投",
+            "rationale": "看好人工智能与制造业深度融合的长期产业机会，认为工业AI有望从单点应用走向企业核心业务，并认可知业科技在工业大模型研发和产业应用方面的积累。",
+            "quote": "我们看好人工智能与制造业深度融合带来的长期产业机会。随着制造业向高端化、智能化迈进，工业AI有望从单点应用走向企业核心业务，成为制造企业提升生产效率、产品质量和创新能力的重要支撑。知业科技长期深耕制造业，在工业大模型研发和产业应用方面形成了积累。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-304a6c406c01caf5",
+                "quote": "我们看好人工智能与制造业深度融合带来的长期产业机会。随着制造业向高端化、智能化迈进，工业AI有望从单点应用走向企业核心业务，成为制造企业提升生产效率、产品质量和创新能力的重要支撑。知业科技长期深耕制造业，在工业大模型研发和产业应用方面形成了积累。",
+                "source_content_hash": "4f9a61a026c507af",
+                "quote_hash": "74db38f49770c62fd414ce85cf1f26d8d55743034a997c48a05ad2fbbcd2ad88"
+              }
+            ]
+          },
+          {
+            "institution": "泰亚投资",
+            "speaker": "秦伟",
+            "speaker_role": "泰亚投资",
+            "rationale": "看好工业AI在制造业的长期发展空间，认为机会在于把已验证能力转化为可规模化交付、可持续使用的产品和服务，认可知业科技将工业场景理解转化为标准化产品、让中小制造企业以可控成本导入AI的路径。",
+            "quote": "我们看好工业AI在制造业的长期发展空间。随着技术逐步成熟，行业的机会在于把已经验证的能力转化为可规模化交付、可持续使用的产品和服务。知业科技深耕制造业，正在把对工业场景的理解转化为标准化的产品和服务，让更多中小制造企业能够以可控的成本导入AI，并根据实际成效逐步扩大应用。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-304a6c406c01caf5",
+                "quote": "我们看好工业AI在制造业的长期发展空间。随着技术逐步成熟，行业的机会在于把已经验证的能力转化为可规模化交付、可持续使用的产品和服务。知业科技深耕制造业，正在把对工业场景的理解转化为标准化的产品和服务，让更多中小制造企业能够以可控的成本导入AI，并根据实际成效逐步扩大应用。",
+                "source_content_hash": "4f9a61a026c507af",
+                "quote_hash": "1b4961a98ca20fa8ceb4d77ec9897bc63ff43ce4ba7c8cd8d03c421195b40bbc"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "本轮资本押注的核心变量是工业AI能否从标杆项目走向可规模化交付：一方面以精益大模型（LPAI）三级架构服务中大型制造企业的多工序、多产线复用，另一方面以物理端AI一体机加按Token计费的MaaS模式降低中小制造企业导入门槛。已验证信号包括产品服务40多个细分行业、超500家制造企业，客户含中国中车、比亚迪、格力电器，以及泰亚投资在2022年Pre-A轮后本轮继续加注。证据边界在于：本轮金额仅披露为“数千万元”，未披露累计融资额、估值、收入或订单数据；按Token计费模式的付费规模与留存尚无披露，资本判断依赖上述客户覆盖与产品架构的公开陈述。",
+        "validated_signals": [
+          "产品服务40多个细分行业、超500家制造企业",
+          "客户包括中国中车、比亚迪、格力电器",
+          "精益大模型（LPAI）采用基础大模型、行业模型、场景模型三级架构",
+          "面向中小制造企业以物理端AI一体机提供模型即服务，按智能体执行任务实际消耗的词元计费",
+          "泰亚投资曾在2022年Pre-A轮投资公司，本轮继续加注"
+        ],
+        "risks": [
+          "本轮仅披露“数千万元”，未披露累计融资额、估值及收入、订单数据，商业化规模仍待验证",
+          "按Token计费的MaaS模式对中小制造企业的实际付费规模与续费情况未披露",
+          "工业AI从标杆项目复制到多产线、多工厂的可规模化交付能力仍需后续验证",
+          "来源未披露公司创始团队与团队规模，治理与组织信息存在缺口"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "industrials",
+        "market_application_id": "",
+        "use_case_ids": [
+          "design_engineering",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "工业互联网与制造业垂域大模型平台",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是工业AI能否从标杆项目走向可规模化交付：一方面以精益大模型（LPAI）三级架构服务中大型制造企业的多工序、多产线复用，另一方面以物理端AI一体机加按Token计费的MaaS模式降低中小制造企业导入门槛。已验证信号包括产品服务40多个细分行业、超500家制造企业，客户含中国中车、比亚迪、格力电器，以及泰亚投资在2022年Pre-A轮后本轮继续加注。证据边界在于：本轮金额仅披露为“数千万元”，未披露累计融资额、估值、收入或订单数据；按Token计费模式的付费规模与留存尚无披露，资本判断依赖上述客户覆盖与产品架构的公开陈述。",
+          "evidence_signals": [
+            "产品服务40多个细分行业、超500家制造企业",
+            "客户包括中国中车、比亚迪、格力电器",
+            "精益大模型（LPAI）采用基础大模型、行业模型、场景模型三级架构",
+            "面向中小制造企业以物理端AI一体机提供模型即服务，按智能体执行任务实际消耗的词元计费",
+            "泰亚投资曾在2022年Pre-A轮投资公司，本轮继续加注"
+          ],
+          "risks": [
+            "本轮仅披露“数千万元”，未披露累计融资额、估值及收入、订单数据，商业化规模仍待验证",
+            "按Token计费的MaaS模式对中小制造企业的实际付费规模与续费情况未披露",
+            "工业AI从标杆项目复制到多产线、多工厂的可规模化交付能力仍需后续验证",
+            "来源未披露公司创始团队与团队规模，治理与组织信息存在缺口"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "精益大模型平台（LPAI）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "物理端AI一体机（塑易通、板易通、机易通）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "分寸云（精益化智能制造平台）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "高科金投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "泰亚投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "泰亚投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-b5b93d1b6f0bce86",
+          "date": "2026-11-19",
+          "title": "知业科技获数千万元A轮融资 聚焦工业AI规模化应用_大风号",
+          "amount": "数千万元",
+          "source_refs": [
+            "SA-54a6a259f64813a8"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-97ea0233a06dbd19",
+          "source_url": "https://feng.ifeng.com/c/8yBMtGJ5DEO",
+          "title": "知业科技获数千万元A轮融资 聚焦工业AI规模化应用_大风号",
+          "publisher": "feng.ifeng.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-22T00:17:20.641Z",
+          "content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+          "source_artifact_id": "SA-54a6a259f64813a8",
+          "raw_id": "RAW-9d672554c09c0745"
+        },
+        {
+          "source_id": "FISRC-304a6c406c01caf5",
+          "source_url": "https://m.pedaily.cn/news/572088",
+          "title": "知业科技完成数千万元A轮融资，聚焦工业AI规模化应用",
+          "publisher": "m.pedaily.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-22T00:38:49.506Z",
+          "content_hash": "4f9a61a026c507af",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-be5a00e9fa15ff4f",
+          "source_url": "https://m.cls.cn/detail/1132561",
+          "title": "硬科技投向标|多部门印发原材料工业“三品”实施方案 C919将于9月19日拿适航证",
+          "publisher": "m.cls.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-22T00:39:05.081Z",
+          "content_hash": "571569e4fe30c6a5",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-22T00:39:19.651Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-22T00:39:19.651Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "分寸云（精益化智能制造平台）",
+            "物理端AI一体机（塑易通、板易通、机易通）",
+            "精益大模型平台（LPAI）"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-b5b93d1b6f0bce86"
+      ],
+      "aggregation": {
+        "key": "EN-4f52302c928b8d84|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-b93255d8ec94fbc3",
+      "triggered_by_event_id": "EV-104419284ab31dea",
+      "as_of_date": "2026-11-22",
+      "company": {
+        "entity_id": "EN-a2039b2db07c1ad6",
+        "name": "Isomorphic Labs",
+        "full_name": "Isomorphic Labs",
+        "website": "",
+        "summary": "一家专注于设计和开发新药的AI公司，总部位于伦敦，2021年成立，构建了可跨多种治疗领域和药物模态工作的AI药物设计引擎IsoDDE。",
+        "headquarters": "伦敦",
+        "founders": [
+          {
+            "name": "Sir Demis Hassabis",
+            "role": "创始人兼首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "says Sir Demis Hassabis, founder and CEO of Isomorphic Labs",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "4deb6f4f1dab6ce0d200cde1d7fb07ae3271dfcf1cc03c074c4db873d7814dcc"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "quote": "Isomorphic Labs, an AI company focussed on designing and developing new medicines",
+            "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+            "quote_hash": "0d85bd160e7d526a2826a3a2898b1e26bde15776a6c35d933149e78fd80c93f3"
+          },
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "quote": "Isomorphic Labs was founded in 2021",
+            "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+            "quote_hash": "1c5b4db4864e4cc5245b80a36254804b08918e5ac8b53f90a07b82fc9e33c032"
+          }
+        ],
+        "application_entity_id": "EN-a2039b2db07c1ad6",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "C轮",
+        "amount": "€4.5 billion",
+        "total_raised": "",
+        "announced_at": "2026-11-17",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Greenoaks",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round was co-led by Greenoaks and Sequoia Capital",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "d6154167c0a299c06b42e1f595574692b8c169e0ff817e7698c090af66bbce67"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sequoia Capital",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round was co-led by Greenoaks and Sequoia Capital",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "d6154167c0a299c06b42e1f595574692b8c169e0ff817e7698c090af66bbce67"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Andreessen Horowitz",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "alongside Andreessen Horowitz, with continued significant investment from Alphabet",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "75e4df5da97582a6d0dcb53c2b4f195d27d2994ecbb4a033be6deb07b17428c2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Alphabet",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "alongside Andreessen Horowitz, with continued significant investment from Alphabet",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "75e4df5da97582a6d0dcb53c2b4f195d27d2994ecbb4a033be6deb07b17428c2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Thrive Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "MGX",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "GV",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "CapitalG",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Temasek",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "UK Sovereign AI Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "quote": "HomeFundingAI drug discovery giant Isomorphic Labs raises €4.5 billion in blockbuster funding...",
+            "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+            "quote_hash": "e3f8dcf21f80acb02e91df994593acc33130fdbce6818102352c99d51e0856ef"
+          },
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "quote": "today announced a €4.5 billion ($5 billion) Series C financing round",
+            "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+            "quote_hash": "e7e38661605f3e27b9ff84546bb92c68e34a53f00c796869094f484f85cb524d"
+          },
+          {
+            "source_id": "FISRC-63882214ca8d243f",
+            "quote": "Alphabet-backed Isomorphic Labs has raised $5 billion in a Series C funding round, co-led by Greenoaks and Sequoia Capital.",
+            "source_content_hash": "75252b6ba4e7eace",
+            "quote_hash": "45c2c83ae88519bbc0e3da9f01e219f344ff23d4894955b4b2aee792488f67d0"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "€4.5 billion",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 4500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "45 亿欧元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-104419284ab31dea",
+            "round_original": "C轮",
+            "amount": "€4.5 billion",
+            "announced_at": "2026-11-17",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "HomeFundingAI drug discovery giant Isomorphic Labs raises €4.5 billion in blockbuster funding...",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "e3f8dcf21f80acb02e91df994593acc33130fdbce6818102352c99d51e0856ef"
+              },
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "today announced a €4.5 billion ($5 billion) Series C financing round",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "e7e38661605f3e27b9ff84546bb92c68e34a53f00c796869094f484f85cb524d"
+              },
+              {
+                "source_id": "FISRC-63882214ca8d243f",
+                "quote": "Alphabet-backed Isomorphic Labs has raised $5 billion in a Series C funding round, co-led by Greenoaks and Sequoia Capital.",
+                "source_content_hash": "75252b6ba4e7eace",
+                "quote_hash": "45c2c83ae88519bbc0e3da9f01e219f344ff23d4894955b4b2aee792488f67d0"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "IsoDDE",
+          "description": "专有的AI药物设计引擎，统一一套基础模拟AI模型，可跨多种治疗领域和药物模态工作，探索广阔化学空间以设计、优化并交付具有理想成药性质的工程化分子。",
+          "target_customers": "内部药物研发管线及合作生态伙伴",
+          "features": [
+            "跨多种治疗领域和药物模态的基础模拟AI模型",
+            "探索广阔化学空间设计分子",
+            "专有智能体在复杂生物系统上推理"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-172c6eda5dfd3979",
+              "quote": "Isomorphic is scaling its proprietary drug design engine (IsoDDE) and therapeutic candidate pipeline designed with AI to deliver the next generation of medicines.",
+              "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+              "quote_hash": "7618349893d2fce5ceeb4e03c167de188bc39ff3e88bb52ec57ce75508d51713"
+            },
+            {
+              "source_id": "FISRC-172c6eda5dfd3979",
+              "quote": "IsoDDE unifies a suite of foundational simulation AI models that natively work across multiple therapeutic areas and drug modalities.",
+              "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+              "quote_hash": "0a848e43368baeec2c04bb7ab70402b2c993027a5b3ff513bf0a796bbeef0a40"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "€4.5 billion（$5 billion）",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-172c6eda5dfd3979",
+              "quote": "today announced a €4.5 billion ($5 billion) Series C financing round",
+              "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+              "quote_hash": "e7e38661605f3e27b9ff84546bb92c68e34a53f00c796869094f484f85cb524d"
+            }
+          ]
+        },
+        {
+          "label": "历史B轮融资额",
+          "value": "€1.8 billion",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-172c6eda5dfd3979",
+              "quote": "EU-Startups also previously covered Isomorphic Labs’ €1.8 billion Series B among the major UK technology financings of the first half of 2026.",
+              "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+              "quote_hash": "ba494db3075fb7e7ed8887fc9e84340b94571befb9275e6fabe8117c6877564c"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Sir Demis Hassabis",
+          "quote": "Our drug design engine is generating molecules with unprecedented precision and speed.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-172c6eda5dfd3979",
+              "quote": "Our drug design engine is generating molecules with unprecedented precision and speed.",
+              "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+              "quote_hash": "9faea43c06ffef7ef5f58223f994df12623d5b4250d9740f656e83419f314abc"
+            }
+          ]
+        },
+        {
+          "speaker": "Max Jaderberg",
+          "quote": "Every week we are making repeatable scientific advancements enabled by our models",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-172c6eda5dfd3979",
+              "quote": "Every week we are making repeatable scientific advancements enabled by our models",
+              "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+              "quote_hash": "90a77266664f8fec887dc3154e11ce846715ad9379c0d66891be3d7532f9419e"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Sequoia Capital",
+            "speaker": "Konstantine Buhler",
+            "speaker_role": "合伙人",
+            "rationale": "认为Isomorphic正在构建未来医学的基础技术，其团队将先进AI转化为不断增长的候选药物组合，因此联合领投本轮以推动医学科学发现。",
+            "quote": "Isomorphic Labs is building foundational technology for the future of medicine",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "Isomorphic Labs is building foundational technology for the future of medicine",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "d83eddb3286d819b49b565feaf04c7d8a8429f74bc1d6080f1ad0ce9db2c8e57"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是IsoDDE能否把模拟AI模型与专有智能体转化为可进入临床试验的候选药物。当前融资依赖的已验证信号包括：公司称其药物设计引擎正以更高精度和速度生成分子、每周取得可重复的科学进展，以及本轮由Greenoaks与Sequoia Capital联合领投、Alphabet等继续投资。证据边界在于：来源未披露估值、累计融资额、临床阶段数据或合作收入，因此无法验证管线成功概率与商业化兑现节奏。",
+        "validated_signals": [
+          "完成€4.5 billion（$5 billion）C轮融资",
+          "IsoDDE统一一套可跨多种治疗领域和药物模态工作的基础模拟AI模型",
+          "公司称其模型每周带来可重复的科学进展"
+        ],
+        "risks": [
+          "来源未披露估值与累计融资额，资本判断缺少定价锚点",
+          "候选药物尚在推进至临床试验阶段，临床与商业化结果仍待验证",
+          "来源未披露合作收入或客户合同，商业模式兑现程度不明"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "healthcare_life_sciences",
+        "market_application_id": "",
+        "use_case_ids": [
+          "research_discovery"
+        ],
+        "industry_ids": [
+          "healthcare_life_sciences"
+        ],
+        "target_user_ids": [
+          "researcher"
+        ],
+        "sector": "AI药物设计与发现",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是IsoDDE能否把模拟AI模型与专有智能体转化为可进入临床试验的候选药物。当前融资依赖的已验证信号包括：公司称其药物设计引擎正以更高精度和速度生成分子、每周取得可重复的科学进展，以及本轮由Greenoaks与Sequoia Capital联合领投、Alphabet等继续投资。证据边界在于：来源未披露估值、累计融资额、临床阶段数据或合作收入，因此无法验证管线成功概率与商业化兑现节奏。",
+          "evidence_signals": [
+            "完成€4.5 billion（$5 billion）C轮融资",
+            "IsoDDE统一一套可跨多种治疗领域和药物模态工作的基础模拟AI模型",
+            "公司称其模型每周带来可重复的科学进展"
+          ],
+          "risks": [
+            "来源未披露估值与累计融资额，资本判断缺少定价锚点",
+            "候选药物尚在推进至临床试验阶段，临床与商业化结果仍待验证",
+            "来源未披露合作收入或客户合同，商业模式兑现程度不明"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "IsoDDE",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Sir Demis Hassabis",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Greenoaks",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sequoia Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andreessen Horowitz",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Alphabet",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Thrive Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "MGX",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "GV",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "CapitalG",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Temasek",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "UK Sovereign AI Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-104419284ab31dea",
+          "date": "2026-11-17",
+          "title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
+          "amount": "€4.5 billion",
+          "source_refs": [
+            "SA-449d129af536293e"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-172c6eda5dfd3979",
+          "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
+          "title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-22T00:18:28.023Z",
+          "content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+          "source_artifact_id": "SA-449d129af536293e",
+          "raw_id": "RAW-b543490392a7a0c0"
+        },
+        {
+          "source_id": "FISRC-63882214ca8d243f",
+          "source_url": "https://www.ambitionbox.com/overview/sequoia-capital-overview",
+          "title": "Life at Sequoia Capital: Culture, Salary, Reviews, Interviews & more",
+          "publisher": "ambitionbox.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-22T00:39:07.509Z",
+          "content_hash": "75252b6ba4e7eace",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-22T00:39:15.549Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-22T00:39:15.549Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "IsoDDE"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Sir Demis Hassabis"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-104419284ab31dea"
+      ],
+      "aggregation": {
+        "key": "EN-a2039b2db07c1ad6|series_c",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-1ef3e9c3bc6ec14a",
+      "triggered_by_event_id": "EV-a54d9f479d4eb060",
+      "as_of_date": "2026-11-22",
+      "company": {
+        "entity_id": "EN-9c8ae69b84f21a2e",
+        "name": "腾讯控股有限公司",
+        "full_name": "腾讯控股有限公司",
+        "website": "https://www.tencent.com/",
+        "summary": "腾讯是一家以社交、游戏、广告、金融科技与企业服务为主的科技公司，当前正持续加码AI基础设施和模型研发，并推出WorkBuddy、MaaS、Hy4等AI产品与模型。",
+        "headquarters": "深圳",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ec6819d9f2fecdbb",
+            "quote": "11月18日，腾讯发布第三季度财报。第三季度，腾讯云收入同比增长35%，WorkBuddy、MaaS等业务收入大幅增长；持续加码AI基础设施和模型研发",
+            "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+            "quote_hash": "561c276d051b7622817a4c5d94b23ec22848d570de894845e90078d2269dcf4a"
+          },
+          {
+            "source_id": "FISRC-b87ecd9e97ce2ca3",
+            "quote": "Tencent Launches Hy4, Joining the Ranks of the World’s Leading Open-Source AI Models",
+            "source_content_hash": "38a35ba389dae6bd",
+            "quote_hash": "1847a9348975e67ebf6e1175c9af2b620d4dd6b35463823b9543dff9d13d6581"
+          }
+        ],
+        "application_entity_id": "FICO-c0b8a4c1e0cd5407",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "轮次未披露",
+        "amount": "5450亿美元",
+        "total_raised": "",
+        "announced_at": "2026-11-19",
+        "investor_disclosure_status": "not_disclosed",
+        "investors": [],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ec6819d9f2fecdbb",
+            "quote": "高盛周二发布报告，把2027年全球AI项目融资规模预期从3000亿美元上调至5450亿美元。",
+            "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+            "quote_hash": "39344516fcb9e1edcd3bade366c15dd470a1e787ac79a2a929974a4dd6d6e378"
+          }
+        ],
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "5450亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 545000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5450 亿美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [
+          "investors_missing"
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-a54d9f479d4eb060",
+            "round_original": "轮次未披露",
+            "amount": "5450亿美元",
+            "announced_at": "2026-11-19",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec6819d9f2fecdbb",
+                "quote": "高盛周二发布报告，把2027年全球AI项目融资规模预期从3000亿美元上调至5450亿美元。",
+                "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+                "quote_hash": "39344516fcb9e1edcd3bade366c15dd470a1e787ac79a2a929974a4dd6d6e378"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "WorkBuddy",
+          "description": "腾讯推出的AI办公产品，可将简报转化为报告草稿。",
+          "target_customers": "企业办公用户",
+          "features": [
+            "从简报生成报告草稿"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b87ecd9e97ce2ca3",
+              "quote": "Go From Brief to Draft Report with WorkBuddy",
+              "source_content_hash": "38a35ba389dae6bd",
+              "quote_hash": "f80f465cabe5df64278ac17b0d449eca337d275c25f402add3a8b6f05534cbd9"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "MaaS",
+          "description": "腾讯云模型即服务业务，第三季度收入大幅增长。",
+          "target_customers": "企业客户与开发者",
+          "features": [
+            "模型即服务"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec6819d9f2fecdbb",
+              "quote": "WorkBuddy、MaaS等业务收入大幅增长",
+              "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+              "quote_hash": "27a06ff8de6443f62790cfcb09d64d5e3b6b9c7a583c51458c46de40a501bcba"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Hy4",
+          "description": "腾讯发布的开源AI模型，用于高速、低成本的AI部署。",
+          "target_customers": "开发者与企业",
+          "features": [
+            "开源",
+            "高速低成本AI部署"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b87ecd9e97ce2ca3",
+              "quote": "Tencent Launches Hy4 flash to Power High-Speed, Cost-Efficient AI Deployment for Everyday Workflows",
+              "source_content_hash": "38a35ba389dae6bd",
+              "quote_hash": "347aa493b9d9f09241fd632d9cce947060eb554d800d9c24a5aee77c9c78285e"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "阿里巴巴",
+          "product": "Qwen模型系列与云平台",
+          "scenario": "企业通过云平台使用模型与基础设施",
+          "target_customer": "企业客户",
+          "funding_summary": "",
+          "core_difference": "阿里巴巴将Qwen模型系列与中国最大的云平台之一结合，形成从模型开发到企业使用的直接路径；腾讯则通过微信等分发渠道和游戏、广告等成熟业务部署AI。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8fad0a338899811c",
+              "quote": "Alibaba 将其 Qwen 模型系列与中国最大的云平台之一结合起来。",
+              "source_content_hash": "dc6f93c3f8b95706",
+              "quote_hash": "16cccab38ea0b3f8187f1d6858458364234897744daf8c61dfa7c71b31beea30"
+            }
+          ],
+          "entity_id": "EN-047364b9be67f665"
+        },
+        {
+          "name": "字节跳动",
+          "product": "面向消费者的内容平台与推荐技术",
+          "scenario": "AI用户参与度与内容创作",
+          "target_customer": "消费者",
+          "funding_summary": "",
+          "core_difference": "字节跳动将模型与内容创作和受众发现相连接，使用户增长与推理支出相互强化；腾讯则依托微信14.39亿月活用户和游戏业务进行AI部署。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8fad0a338899811c",
+              "quote": "ByteDance 可以将模型与内容创作和受众发现相连接。",
+              "source_content_hash": "dc6f93c3f8b95706",
+              "quote_hash": "9df63d648a9d70c2a4e21039b2d4f08bc5423624f7649c029d72a6b6b065fe6b"
+            }
+          ],
+          "entity_id": "EN-5388bc10736a0eff"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "第三季度资本开支",
+          "value": "814.33亿元",
+          "observed_at": "2026-11-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec6819d9f2fecdbb",
+              "quote": "第三季度，腾讯资本开支达到814.33亿元，同比增长527%",
+              "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+              "quote_hash": "d42eb2abbb95dcd59862efde0d35ffa02885dd331e710466716ed77e2830e0ed"
+            }
+          ]
+        },
+        {
+          "label": "前三季度资本开支累计",
+          "value": "1661.53亿元",
+          "observed_at": "2026-11-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec6819d9f2fecdbb",
+              "quote": "前三季度资本开支累计达到1661.53亿元，同比增长179%",
+              "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+              "quote_hash": "35dedc3dcd8830be8456cf931485fbbc658bd24a2223fc48a10dce15dc7d4579"
+            }
+          ]
+        },
+        {
+          "label": "腾讯云收入同比增速",
+          "value": "35%",
+          "observed_at": "2026-11-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec6819d9f2fecdbb",
+              "quote": "第三季度，腾讯云收入同比增长35%",
+              "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+              "quote_hash": "53a7ef132e08225f60c460ff97d3a121fb104f4f41fe27bd97a0e9f0a463b6fd"
+            }
+          ]
+        },
+        {
+          "label": "2026年上半年资本支出",
+          "value": "963亿元人民币",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8fad0a338899811c",
+              "quote": "Tencent 在 2026 年上半年的资本支出达到 963 亿元人民币，较一年前的 459 亿元人民币增长逾一倍。",
+              "source_content_hash": "dc6f93c3f8b95706",
+              "quote_hash": "bd2579ce64467829a20c1272f3de969ae82099fd4ffe61bf3531a62a179911d4"
+            }
+          ]
+        },
+        {
+          "label": "2026年6月季度资本项目支出",
+          "value": "528亿元人民币",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8fad0a338899811c",
+              "quote": "Tencent 在资本项目上支出 528 亿元人民币，较一年前增长 176%。",
+              "source_content_hash": "dc6f93c3f8b95706",
+              "quote_hash": "230c1acb7dfbf0cfe733c49b23adfd24fcc2c0ff9603ee326ec592c93b50decf"
+            }
+          ]
+        },
+        {
+          "label": "2026年6月季度自由现金流流出",
+          "value": "138亿元人民币",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8fad0a338899811c",
+              "quote": "这一节奏导致该季度出现 138 亿元人民币的自由现金流流出。",
+              "source_content_hash": "dc6f93c3f8b95706",
+              "quote_hash": "ba012351136644d0fe586d3414c9c6fe8566c518a1dccabaf2a9894c9b6ef40a"
+            }
+          ]
+        },
+        {
+          "label": "微信及WeChat合并月活跃用户数",
+          "value": "14.39亿",
+          "observed_at": "2026-06-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8fad0a338899811c",
+              "quote": "截至 2026 年 6 月底，Weixin 和 WeChat 的合计月活跃用户数达到 14.39 亿。",
+              "source_content_hash": "dc6f93c3f8b95706",
+              "quote_hash": "403eaed73dbfdd89ce3c5d5df8cc7ee49e80ea173ab3bcdb3f30d1130348b0d6"
+            }
+          ]
+        },
+        {
+          "label": "2026年上半年收入",
+          "value": "4012亿元人民币",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8fad0a338899811c",
+              "quote": "Tencent 10 月的文件披露，2026 年上半年收入为 4,012 亿元人民币。",
+              "source_content_hash": "dc6f93c3f8b95706",
+              "quote_hash": "646b6e36c5d6f615daeeb234be6b74a7ef409b06562e0bd528641f56e160a3c4"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "高盛",
+          "quote": "高盛周二发布报告，把2027年全球AI项目融资规模预期从3000亿美元上调至5450亿美元。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec6819d9f2fecdbb",
+              "quote": "高盛周二发布报告，把2027年全球AI项目融资规模预期从3000亿美元上调至5450亿美元。",
+              "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+              "quote_hash": "39344516fcb9e1edcd3bade366c15dd470a1e787ac79a2a929974a4dd6d6e378"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是腾讯能否将大规模AI基础设施投入转化为可持续的AI收入与利润。已验证信号包括：第三季度资本开支814.33亿元、同比增长527%，前三季度累计1661.53亿元、同比增长179%；腾讯云收入同比增长35%，WorkBuddy、MaaS等业务收入大幅增长；2026年上半年资本支出963亿元，6月季度自由现金流流出138亿元。这些信号表明投入强度已显著提升，但最新AI产品尚未披露独立利润来源，AI投资回报仍待验证。",
+        "validated_signals": [
+          "第三季度资本开支814.33亿元，同比增长527%",
+          "前三季度资本开支累计1661.53亿元，同比增长179%",
+          "腾讯云收入同比增长35%，WorkBuddy、MaaS等业务收入大幅增长",
+          "2026年上半年资本支出963亿元，较一年前459亿元增长逾一倍",
+          "2026年6月季度资本项目支出528亿元，同比增长176%",
+          "2026年6月季度自由现金流流出138亿元"
+        ],
+        "risks": [
+          "最新AI产品尚未带来已披露的利润来源，AI投资回报仍待验证",
+          "高额资本支出已导致季度自由现金流流出，若持续将加大财务压力",
+          "计算硬件可能快速过时，存在资本锁定在快速老化设备上的风险",
+          "中国科技公司在获取先进半导体和制造产能方面持续面临不确定性",
+          "AI相关债券发行尚未完成，最终规模、定价和条款仍受市场状况影响",
+          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "compute_cloud_service",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "computing_infrastructure",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "software_development"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "云计算与AI基础设施服务",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是腾讯能否将大规模AI基础设施投入转化为可持续的AI收入与利润。已验证信号包括：第三季度资本开支814.33亿元、同比增长527%，前三季度累计1661.53亿元、同比增长179%；腾讯云收入同比增长35%，WorkBuddy、MaaS等业务收入大幅增长；2026年上半年资本支出963亿元，6月季度自由现金流流出138亿元。这些信号表明投入强度已显著提升，但最新AI产品尚未披露独立利润来源，AI投资回报仍待验证。",
+          "evidence_signals": [
+            "第三季度资本开支814.33亿元，同比增长527%",
+            "前三季度资本开支累计1661.53亿元，同比增长179%",
+            "腾讯云收入同比增长35%，WorkBuddy、MaaS等业务收入大幅增长",
+            "2026年上半年资本支出963亿元，较一年前459亿元增长逾一倍",
+            "2026年6月季度资本项目支出528亿元，同比增长176%",
+            "2026年6月季度自由现金流流出138亿元"
+          ],
+          "risks": [
+            "最新AI产品尚未带来已披露的利润来源，AI投资回报仍待验证",
+            "高额资本支出已导致季度自由现金流流出，若持续将加大财务压力",
+            "计算硬件可能快速过时，存在资本锁定在快速老化设备上的风险",
+            "中国科技公司在获取先进半导体和制造产能方面持续面临不确定性",
+            "AI相关债券发行尚未完成，最终规模、定价和条款仍受市场状况影响"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "WorkBuddy",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "MaaS",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Hy4",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "阿里巴巴",
+          "canonical_entity_id": "EN-047364b9be67f665",
+          "canonical_name": "阿里巴巴"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "字节跳动",
+          "canonical_entity_id": "EN-5388bc10736a0eff",
+          "canonical_name": "ByteDance"
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-ec6819d9f2fecdbb",
+          "source_url": "https://tidenews.com.cn/tmh_news.html?id=6afe6f1c61fcb50001547492",
+          "title": "腾讯814亿加码AI，高盛上调27年全球AI项目融资规模至5450亿美元，关注云计算50ETF东方红（562110）",
+          "publisher": "tidenews.com.cn",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-22T00:17:02.848Z",
+          "content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+          "source_artifact_id": "SA-4bcc7f7fc09b5bee",
+          "raw_id": "RAW-f054f04a52836c71"
+        },
+        {
+          "source_id": "FISRC-b87ecd9e97ce2ca3",
+          "source_url": "https://www.tencent.com/",
+          "title": "All news",
+          "publisher": "tencent.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-21T00:40:12.304Z",
+          "content_hash": "38a35ba389dae6bd",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-8fad0a338899811c",
+          "source_url": "https://www.remio.ai/zh/post/tencent-ai-bond-plan-turns-a-5-billion-deal-into-a-test-of-ai-returns-zh",
+          "title": "Tencent AI 发债计划将 50 亿美元交易变成对 AI 回报的考验",
+          "publisher": "remio.ai",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-21T00:40:17.705Z",
+          "content_hash": "dc6f93c3f8b95706",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-22T00:38:56.342Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-22T00:38:56.342Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Hy4",
+            "MaaS",
+            "WorkBuddy"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-a54d9f479d4eb060"
+      ],
+      "aggregation": {
+        "key": "EN-9c8ae69b84f21a2e|undisclosed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-4ed0d4054e9a6f07",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-1bfa49b4ab9e1ac2",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-27b9c5896b1b9c27",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-272eb63ab316040f",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-0d27ea6892225510",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-86165eebaf4622fd",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-fa34f7342de666dd",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-e4e1d8cd826a402a",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-a54d9f479d4eb060",
+      "company_name": "Tencent",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Tencent\" 2026 融资 投资方",
+        "\"Tencent\" 官网 产品 服务",
+        "\"Tencent\" 投资机构 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Tencent\" 2026 融资 投资方",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"腾讯\" 5450亿美元 融资 领投 跟投",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Tencent\" 官网 产品 服务",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Tencent\" 投资机构 融资用途",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"腾讯\" 2026 本轮融资 公告",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Tencent\" 客户 创始人 总部",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-b5b93d1b6f0bce86",
+      "company_name": "知业科技",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"知业科技\" 2026 融资 投资方",
+        "\"知业科技\" 官网 产品 服务",
+        "\"知业科技\" 投资机构 融资用途",
+        "\"知业科技\" 客户 创始人 总部"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"知业科技\" 2026 融资 投资方",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"知业科技\" 数千万元 融资 领投 跟投",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"知业科技\" 官网 产品 服务",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"知业科技\" 投资机构 融资用途",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://m.pedaily.cn/vc/invest",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://zhsme.org.cn/eWebEditor/downFile?actionType=downFile&fileName=%E7%8F%A0%E6%B5%B7%E5%B8%82%E7%9C%81%E7%BA%A7%E4%B8%AD%E5%B0%8F%E4%BC%81%E4%B8%9A%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B%E5%9F%8E%E5%B8%82%E8%AF%95%E7%82%B9%E6%95%B0%E5%AD%97%E5%8C%96%E4%BA%A7%E5%93%81%E6%B8%85%E5%8D%95%EF%BC%88%E7%AC%AC%E4%B8%80%E6%89%B9%EF%BC%89.pdf&filePath=/zhzqy/ueditor/upload/file/20241115/1731634706659010369.pdf",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"知业科技\" 2026 本轮融资 公告",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"知业科技\" 客户 创始人 总部",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://data.iyiou.com/company/details/96ee8f967a7e2f2ed57b5a699e9aa2ba/profile",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        }
+      ],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-5be10c6214adaf19",
+      "company_name": "",
+      "status": "pending",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": ""
+    },
+    {
+      "event_id": "EV-dc8755b16a5344ed",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-5c7525642d1189d6",
+      "company_name": "",
+      "status": "pending",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": ""
+    },
+    {
+      "event_id": "EV-a151aeb22a93c5ee",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-c7f02c82dcf2cea9",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-12f5404b5c1882ec",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-60e9751ddf436c14",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-1d425fbf0768f5a9",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-8f4b818b8746d539",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-2e761601c7f04a46",
+      "company_name": "",
+      "status": "pending",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": ""
+    },
+    {
+      "event_id": "EV-104419284ab31dea",
+      "company_name": "AI drug discovery giant Isomorphic Labs",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"AI drug discovery giant Isomorphic Labs\" 2026 funding round investors",
+        "\"AI drug discovery giant Isomorphic Labs\" €4.5 billion funding announcement",
+        "\"AI drug discovery giant Isomorphic Labs\" official product customers",
+        "\"AI drug discovery giant Isomorphic Labs\" \"why we invested\"",
+        "\"AI drug discovery giant Isomorphic Labs\" founders headquarters product"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"AI drug discovery giant Isomorphic Labs\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"AI drug discovery giant Isomorphic Labs\" €4.5 billion funding announcement",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"AI drug discovery giant Isomorphic Labs\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.eu-startups.com/2023/06/london-based-elevenlabs-secures-e17-3-million-series-a-round-to-voice-ai-content-for-multiple-industries/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://siliconvalleyinvestclub.com/companies/discoveryloop/tear-sheet.pdf",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.ambitionbox.com/overview/alphabet-overview",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.eu-startups.com/directory/molecu/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.eu-startups.com/2024/09/london-based-capsa-ai-gets-e2-million-to-delegate-the-manual-low-skill-pe-due-diligence-tasks/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"AI drug discovery giant Isomorphic Labs\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"AI drug discovery giant Isomorphic Labs\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"AI drug discovery giant Isomorphic Labs\" founders headquarters product",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://africa-benefit-roundclock.66ghz.com/article/191751",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.eu-startups.com/2024/01/london-based-elevenlabs-bags-e73-million-series-b-to-strengthen-its-position-as-a-voice-ai-leader/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.eu-startups.com/2024/11/barcelona-based-acai-travel-raises-e3-7-million-aiming-to-reinvent-travel-operations-using-ai/",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        }
+      ],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-dc09c82dcc6d5e13",
+      "company_name": "Munich-based Vetaion",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Munich-based Vetaion\" 2026 funding round investors",
+        "\"Munich-based Vetaion\" official product customers",
+        "\"Munich-based Vetaion\" \"why we invested\"",
+        "\"Munich-based Vetaion\" founders headquarters product"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Munich-based Vetaion\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.facebook.com/EUStartups/posts/vetaion-a-munich-based-company-that-automates-the-manufacturing-of-custom-electr/1570223928465544/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.instagram.com/p/Df6zla7DBMK/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://seedtable.com/companies/vetaion/funding-rounds/pre-seed-2026-11",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Munich-based Vetaion\" €5.7 million funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Munich-based Vetaion\" official product customers",
+          "status": "completed",
+          "count": 7
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Munich-based Vetaion\" official product customers",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Munich-based Vetaion\" official product customers",
+          "status": "quota_exhausted",
+          "http_status": 402,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"Munich-based Vetaion\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.vetaion.com/about",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.vetaion.com/",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.konsulteer.com/article/munich-based-vetaion-raises-5-7-million-pre-seed-round-to-automate-control-cabinet-manufacturing",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Munich-based Vetaion\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Munich-based Vetaion\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Munich-based Vetaion\" founders headquarters product",
+          "status": "completed",
+          "count": 8
+        }
+      ],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-fef71bd1ef83682a",
+      "company_name": "",
+      "status": "pending",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": ""
+    },
+    {
+      "event_id": "EV-8cb327ac867e5fae",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-b37c29a324a5dc4e",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-aab8ed97f5bf814a",
+      "company_name": "DeepSeek",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"DeepSeek\" 2026 融资 投资方",
+        "\"DeepSeek\" 官网 产品 服务",
+        "\"DeepSeek\" 投资机构 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"DeepSeek\" 2026 融资 投资方",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"DeepSeek\" 1000 亿元 融资 领投 跟投",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"DeepSeek\" 官网 产品 服务",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.deepseek.com/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"DeepSeek\" 投资机构 融资用途",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"DeepSeek\" 2026 本轮融资 公告",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "planner",
+          "query": "\"DeepSeek\" 客户 创始人 总部",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        }
+      ],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-609bed23b2e9a178",
+      "company_name": "Ex-Anker CMO's AI wearable startup Memoket",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Ex-Anker CMO's AI wearable startup Memoket\" 2026 funding round investors",
+        "\"Ex-Anker CMO's AI wearable startup Memoket\" $4.5M funding announcement",
+        "\"Ex-Anker CMO's AI wearable startup Memoket\" official product customers",
+        "\"Ex-Anker CMO's AI wearable startup Memoket\" \"why we invested\"",
+        "\"Ex-Anker CMO's AI wearable startup Memoket\" founders headquarters product"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Ex-Anker CMO's AI wearable startup Memoket\" 2026 funding round investors",
+          "status": "completed",
+          "count": 7
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Ex-Anker CMO's AI wearable startup Memoket\" 2026 funding round investors",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Ex-Anker CMO's AI wearable startup Memoket\" 2026 funding round investors",
+          "status": "quota_exhausted",
+          "http_status": 402,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"Ex-Anker CMO's AI wearable startup Memoket\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://app.dealroom.co/companies/memoket_ai",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://app.dealroom.co/sector/tag/wearable/overview",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://app.dealroom.co/news/note/bootstrapping-fleet-to-30m-and-becoming-a-european-super-angel-alexandre-berriche-on-scarcity-pre-seed-investing-and-backing-breakout-winners-like-lovable",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://app.dealroom.co/news/note/galleon-gold-raises-14-2m-for-ontario-project-with-pan-american-silver-back-in",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://open.spotify.com/show/39T0DdoYZ4axpTMSppsFYN",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://app.dealroom.co/news/note/carlyle-led-investors-put-210m-into-india-s-nido-home-finance-for-majority-stake",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Ex-Anker CMO's AI wearable startup Memoket\" $4.5M funding announcement",
+          "status": "completed",
+          "count": 2
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Ex-Anker CMO's AI wearable startup Memoket\" $4.5M funding announcement",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"Ex-Anker CMO's AI wearable startup Memoket\" $4.5M funding announcement",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Ex-Anker CMO's AI wearable startup Memoket\" official product customers",
+          "status": "completed",
+          "count": 7
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Ex-Anker CMO's AI wearable startup Memoket\" official product customers",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"Ex-Anker CMO's AI wearable startup Memoket\" official product customers",
+          "status": "completed",
+          "count": 7
+        },
+        {
+          "provider": "original",
+          "url": "https://memoket.ai/pages/about-us",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://memoket.ai/",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Ex-Anker CMO's AI wearable startup Memoket\" \"why we invested\"",
+          "status": "empty",
+          "count": 0
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Ex-Anker CMO's AI wearable startup Memoket\" \"why we invested\"",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"Ex-Anker CMO's AI wearable startup Memoket\" \"why we invested\"",
+          "status": "completed",
+          "count": 7
+        },
+        {
+          "provider": "planner",
+          "query": "\"Ex-Anker CMO's AI wearable startup Memoket\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Ex-Anker CMO's AI wearable startup Memoket\" founders headquarters product",
+          "status": "completed",
+          "count": 7
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Ex-Anker CMO's AI wearable startup Memoket\" founders headquarters product",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"Ex-Anker CMO's AI wearable startup Memoket\" founders headquarters product",
+          "status": "completed",
+          "count": 8
+        }
+      ],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    },
+    {
+      "event_id": "EV-d84355ecbf21be85",
+      "company_name": "诚恒微",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"诚恒微\" 2026 融资 投资方",
+        "\"诚恒微\" 官网 产品 服务",
+        "\"诚恒微\" 投资机构 融资用途",
+        "\"诚恒微\" 客户 创始人 总部"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"诚恒微\" 2026 融资 投资方",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"诚恒微\" 近2亿元 融资 领投 跟投",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"诚恒微\" 官网 产品 服务",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://m.zhipin.com/companys/57bb565b2f7d49c403B_2dW8EFs~.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://m.qcc.com/firm/7cfa14fe1e629fd8f28183f4888912f4.html",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://aiqicha.baidu.com/m/detail?pid=45351161268292",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"诚恒微\" 投资机构 融资用途",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "http://static.cninfo.com.cn/finalpage/2025-08-19/1224504547.pdf",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://xueqiu.com/S/SZ300474/time?page=16",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "planner",
+          "query": "\"诚恒微\" 2026 本轮融资 公告",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"诚恒微\" 客户 创始人 总部",
+          "status": "completed",
+          "count": 8
+        }
+      ],
+      "updated_at": "2026-11-22T00:40:21.374Z"
+    }
+  ]
+}

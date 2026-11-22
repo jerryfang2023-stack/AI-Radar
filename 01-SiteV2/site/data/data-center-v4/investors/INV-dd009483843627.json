@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4527,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,28 +61,34 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 5,
-    "china_market_company_count": 4,
+    "china_market_activity_count": 6,
+    "china_market_company_count": 5,
     "first_disclosed_at": "2026-04-16",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-11-20",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "multi_round",
       "other",
+      "series_a",
       "series_b1",
       "strategic",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-6c72a44dd49f926c",
+        "canonical_entity_id": "",
+        "name": "诚恒微"
+      },
       {
         "entity_id": "EN-e7492db096492304",
         "canonical_entity_id": "EN-e7492db096492304",
@@ -105,6 +111,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e1a86f781b43a102",
+        "funding_insight_id": "FI-774d78aac219c4a8",
+        "event_ids": [
+          "EV-d84355ecbf21be85"
+        ],
+        "company_entity_id": "EN-6c72a44dd49f926c",
+        "company_canonical_entity_id": "",
+        "company_name": "诚恒微",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "近2亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 2 亿元"
+        },
+        "announced_at": "2026-11-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "source_url": "https://news.pedaily.cn/202611/572144.shtml",
+            "source_title": "诚恒微完成近2亿元A轮融资，加速边端侧AI SoC规模化落地",
+            "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+            "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+            "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+          }
+        ]
+      },
       {
         "activity_id": "IA-18ea969dd2d984b6",
         "funding_insight_id": "FI-322a9e8ea81884e5",
@@ -372,6 +418,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ad4bbd905a940afc",
+        "source_url": "https://news.pedaily.cn/202611/572144.shtml",
+        "source_title": "诚恒微完成近2亿元A轮融资，加速边端侧AI SoC规模化落地",
+        "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+        "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+        "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+      },
+      {
         "source_id": "FISRC-c61be84890c6eecc",
         "source_url": "https://news.pedaily.cn/202609/568683.shtml",
         "source_title": "紫创智械完成数千万融资，专注于工程机械行业模型应用落地",
@@ -488,16 +542,16 @@
           "source_id": "addor_report"
         },
         {
+          "description": "融资来源记录：诚恒微 · A轮 · 2026-11-20 · 本轮参投 · 近2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ad4bbd905a940afc"
+        },
+        {
           "description": "融资来源记录：紫创智械 · 其他融资 · 2026-09-08 · 本轮参投 · 数千万。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c61be84890c6eecc"
         },
         {
           "description": "融资来源记录：曦望 · 轮次未披露 · 2026-08-28 · 本轮参投 · 20亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-85ff43aa8c582e53"
-        },
-        {
-          "description": "融资来源记录：三启万物 · 战略融资 · 2026-07-02 · 本轮参投 · 10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a4dbd49c64cb5834"
         }
       ],
       "contacts": [
@@ -550,6 +604,14 @@
           "quote_hash": "220d1e41f83ac9bc9385cf8c9def733f87af3093e6506609b1021ec1d30d1262"
         },
         {
+          "source_id": "FISRC-ad4bbd905a940afc",
+          "source_url": "https://news.pedaily.cn/202611/572144.shtml",
+          "source_title": "诚恒微完成近2亿元A轮融资，加速边端侧AI SoC规模化落地",
+          "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+          "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+          "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+        },
+        {
           "source_id": "FISRC-c61be84890c6eecc",
           "source_url": "https://news.pedaily.cn/202609/568683.shtml",
           "source_title": "紫创智械完成数千万融资，专注于工程机械行业模型应用落地",
@@ -564,14 +626,6 @@
           "source_content_hash": "650e3db5a6cf8753",
           "quote": "曦望本轮投资方包括人保股权、建信股权、东方国际资产、Janchor Partners、中科创星、同创伟业、进化论资本、临芯投资、毅达资本、湖畔基金、弘晖基金等投资机构，以及正大集团、九安医疗、盈峰环境、三七互娱、同程旅行等产业资本",
           "quote_hash": "d5bf26ee91dab87ba845a747848b2023427f1e5129abb0c30b8d9b8ebdd4bbec"
-        },
-        {
-          "source_id": "FISRC-a4dbd49c64cb5834",
-          "source_url": "https://news.pedaily.cn/202607/565779.shtml",
-          "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
-          "source_content_hash": "3e7e05417d6a96b1",
-          "quote": "本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。",
-          "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
         }
       ],
       "last_verified_at": "2026-09-25",

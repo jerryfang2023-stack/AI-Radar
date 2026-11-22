@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4527,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 3,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
     "first_disclosed_at": "2026-03-02",
-    "latest_disclosed_at": "2026-09-18",
+    "latest_disclosed_at": "2026-11-20",
     "role_counts": {
       "historical_or_ambiguous": 5,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
+      "other",
       "pre_series_b",
       "undisclosed"
     ],
@@ -94,9 +95,54 @@
         "entity_id": "EN-c5456c9421743002",
         "canonical_entity_id": "EN-c5456c9421743002",
         "name": "银河通用"
+      },
+      {
+        "entity_id": "EN-6f7ac1823da81d2e",
+        "canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "name": "DeepSeek"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-59ad230b109f4120",
+        "funding_insight_id": "FI-faf8764cd64d29f0",
+        "event_ids": [
+          "EV-aab8ed97f5bf814a"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "第二轮",
+        "amount_original": "1000 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 亿元"
+        },
+        "announced_at": "2026-11-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-953d16ef145a7cc3",
+            "source_url": "https://www.ithome.com/1/030/199.htm",
+            "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+            "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+            "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+            "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+          }
+        ]
+      },
       {
         "activity_id": "IA-fcbbfe3e3d2d66ae",
         "funding_insight_id": "FI-77950002d539c290",
@@ -383,6 +429,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-953d16ef145a7cc3",
+        "source_url": "https://www.ithome.com/1/030/199.htm",
+        "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+        "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+        "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+        "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+      },
+      {
         "source_id": "FISRC-ed0092859381f876",
         "source_url": "https://news.pedaily.cn/202609/569236.shtml",
         "source_title": "首发| 奕行智能完成新一轮20亿元融资，投后估值近150亿",
@@ -482,16 +536,16 @@
           "source_id": "cft_about"
         },
         {
+          "description": "融资来源记录：DeepSeek · 其他融资 · 2026-11-20 · 本轮参投 · 1000 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-953d16ef145a7cc3"
+        },
+        {
           "description": "融资来源记录：奕行智能 · 轮次未披露 · 2026-09-18 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ed0092859381f876"
         },
         {
           "description": "融资来源记录：极佳视界 · Pre-B轮 · 2026-03-05 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fdfe58e2e68c7e9e"
-        },
-        {
-          "description": "融资来源记录：银河通用 · 轮次未披露 · 2026-03-02 · 本轮参投 · 25亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-adaac360139469bd"
         }
       ],
       "contacts": [
@@ -515,6 +569,14 @@
           "quote_hash": "160431cc8d11e08e06772703fe9681c33161b1ad072dd86c060cab5a199dcdb6"
         },
         {
+          "source_id": "FISRC-953d16ef145a7cc3",
+          "source_url": "https://www.ithome.com/1/030/199.htm",
+          "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+          "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+          "quote": "除此之外，合伙人还囊括了中国移动、中国电信、美团龙珠、网易雷火、小红书、携程系、vivo、美的、立讯体系（立臻精密）、吉利产投、兆易创新、中芯聚源、横店资本等",
+          "quote_hash": "46de4f3cfa5b3b986bd85b12440a29de6a1e0b1a45bd3e936701e3f08d2a412d"
+        },
+        {
           "source_id": "FISRC-ed0092859381f876",
           "source_url": "https://news.pedaily.cn/202609/569236.shtml",
           "source_title": "首发| 奕行智能完成新一轮20亿元融资，投后估值近150亿",
@@ -529,14 +591,6 @@
           "source_content_hash": "7d9409a9ba1e94fc",
           "quote": "投资方阵容颇为豪华：包括中芯聚源、浦科投资、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本，中金资本、苏创投、华强资本、长江资本、光谷产投、锡山国投、金雨茂物、新鼎资本、领阳投资、财鑫资本、张科垚坤、诚筑投资等重磅国资平台和知名财务机构。",
           "quote_hash": "196c406b831d5518f67d8356458e255cad46250d147bf207e51f26e2eb2037f6"
-        },
-        {
-          "source_id": "FISRC-adaac360139469bd",
-          "source_url": "https://www.cls.cn/detail/2300238",
-          "source_title": "开年最大融资诞生！银河通用再融25亿 国家大基金首投具身智能",
-          "source_content_hash": "b2eacae148179fb9ea2302fcd22d73b4b29b0f56ffb1c8400c5764c9a8cdbdcd",
-          "quote": "由国家人工智能产业基金（大基金三期全资基金）、中国石化、中信集团投资控股、中国银行、上汽集团金控、中芯聚源、亦庄国投、未来产业投资、鲲鹏基金、无锡创投、福建产投联合投资",
-          "quote_hash": "96a3aef27d592b0706f6bf7a6b0f44a71d2e784c11c23523af9bf03b4f18a45d"
         }
       ],
       "last_verified_at": "2026-09-25",

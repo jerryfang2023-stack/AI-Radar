@@ -39675,7 +39675,255 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-11-20T00:39:56.711Z"
+    },
+    "EV-a54d9f479d4eb060": {
+      "id": "EV-a54d9f479d4eb060",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [],
+      "evidence_indices": [
+        1,
+        4
+      ],
+      "rationale": "腾讯发布开源大模型Hy4并对外提供模型能力，主营基础模型。",
+      "input_hash": "b440255de7b443df95c86e263c9b63b4f71b33515afa7f00abfce592f60d674d",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b87ecd9e97ce2ca3",
+          "quote": "Tencent Launches Hy4, Joining the Ranks of the World’s Leading Open-Source AI Models"
+        },
+        {
+          "source_id": "FISRC-b87ecd9e97ce2ca3",
+          "quote": "Tencent Launches Hy4 flash to Power High-Speed, Cost-Efficient AI Deployment for Everyday Workflows"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-22T00:42:43.630Z"
+    },
+    "EV-609bed23b2e9a178": {
+      "id": "EV-609bed23b2e9a178",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "pendants",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Memoket 主营可穿戴个人智能体设备 Gem，属消费 AI 随身终端。",
+      "input_hash": "00f06b8c7a737659a23b02b11f4734bb7b714d57428646b6b393b14331316787",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fd462de3c8158bd1",
+          "quote": "Founded in 2025, Memoket builds a wearable \"Personal Agent\" that understands a user's past context and interacts proactively."
+        },
+        {
+          "source_id": "FISRC-fd462de3c8158bd1",
+          "quote": "Its first device, Gem, weighs 11 grams, clips onto an existing watch strap, and passively records real-world conversations for later search across app and desktop."
+        },
+        {
+          "source_id": "FISRC-fd462de3c8158bd1",
+          "quote": "Memoket's in-house KITE engine links context across conversations rather than within a single session."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-22T00:42:45.522Z"
+    },
+    "EV-d84355ecbf21be85": {
+      "id": "EV-d84355ecbf21be85",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "诚恒微主营边端侧 AI SoC 芯片，虽提及具身智能市场但核心为通用 AI 芯片。",
+      "input_hash": "a72f6d9bbf0b21eeb9595c1dc06a38236779e98fb8ae806ec5cff3448a5bc37d",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ad4bbd905a940afc",
+          "quote": "无锡诚恒微电子有限公司（简称“诚恒微”）专注于边端侧AI SoC及解决方案的创新研发与产业应用"
+        },
+        {
+          "source_id": "FISRC-43992a92d9874bc7",
+          "quote": "自研旗舰产品CH37系列异构集成CPU、GPU、NPU、GPGPU、ISP等模块，峰值算力达64TOPS@INT8，支持FP16/FP32/FP64混合精度计算，具备强实时多传感器数据处理能力，可实现低时延多模态融合感知。"
+        },
+        {
+          "source_id": "FISRC-99bbb698d3af3777",
+          "quote": "采用异构计算架构，将CPU、GPU、NPU、GPGPU、ISP等核心模块高度集成，面向算力需求较高的具身智能与边缘计算等通用市场，可提供64TOPS@INT8的峰值AI算力"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-22T00:42:45.522Z"
+    },
+    "EV-aab8ed97f5bf814a": {
+      "id": "EV-aab8ed97f5bf814a",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "DeepSeek 自研并提供通用大模型及 API 服务，属基础模型。",
+      "input_hash": "e0123215ad246717756aca1bf1a9649efd4b4f553bd33a44b7e3ea5995f1c08f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e3bfaa90c6529a58",
+          "quote": "我们的产品及服务包括我们以网页、应用程序（可能含不同版本）、小程序、供第三方网站和应用程序使用软件开发工具包（SDK）、应用程序编程接口（API）以及随技术发展出现的创新形态方式向您提供的产品与服务"
+        },
+        {
+          "source_id": "FISRC-fa1f87c1d59d2670",
+          "quote": "下表所列模型价格以“百万 tokens”为单位。"
+        },
+        {
+          "source_id": "FISRC-fa1f87c1d59d2670",
+          "quote": "模型deepseek-flash(1)deepseek-v4-proBASE URL (OpenAI 格式)https://api.deepseek.comBASE URL (Anthropic 格式)https://api.deepseek.com/anthropic"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-22T00:42:45.522Z"
+    },
+    "EV-dc09c82dcc6d5e13": {
+      "id": "EV-dc09c82dcc6d5e13",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "manufacturing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Vetaion 以 VetaionOS 自动化定制控制柜制造，属工业制造软件。",
+      "input_hash": "f6a38f9d6a99fb9b85d374412ae75720609a12344f2070ddc6f17d72a6c84f84",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-23028648dbd2a819",
+          "quote": "Vetaion, a Munich-based company that automates the manufacturing of custom electrical control cabinets"
+        },
+        {
+          "source_id": "FISRC-e230f947b0274607",
+          "quote": "The company describes itself as an AI-native manufacturer serving the Mittelstand mechanical and plant engineering sector."
+        },
+        {
+          "source_id": "FISRC-23028648dbd2a819",
+          "quote": "With VetaionOS, the German startup is building its own operating system to automate one-off product manufacturing."
+        },
+        {
+          "source_id": "FISRC-e230f947b0274607",
+          "quote": "Vetaion’s operating system coordinates production and administrative work, and monitors manufacturing from assembly through testing and quality checks."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-22T00:42:45.522Z"
+    },
+    "EV-b5b93d1b6f0bce86": {
+      "id": "EV-b5b93d1b6f0bce86",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "manufacturing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "rationale": "知业科技面向制造企业提供精益大模型与智能制造平台，属工业软件。",
+      "input_hash": "af05e882f5b449a05c135e9a74823dbb7c55275f13bebb64511bf5a70218101a",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-97ea0233a06dbd19",
+          "quote": "知业科技成立于2018年，总部位于珠海高新区，是工业互联网平台服务商，以一体两翼业务模型打造精益化智能制造平台、智能化装备售后平台与精益人工智能平台，产品服务40多个细分行业、超500家制造企业"
+        },
+        {
+          "source_id": "FISRC-304a6c406c01caf5",
+          "quote": "知业科技自主研发的精益大模型（LPAI）采用“基础大模型—行业模型—场景模型”三级架构"
+        },
+        {
+          "source_id": "FISRC-304a6c406c01caf5",
+          "quote": "面向中小制造企业，通过物理端AI一体机提供MaaS（模型即服务），企业通过工业智能体，按照实际消耗的Token（词元）支付模型服务费用"
+        },
+        {
+          "source_id": "FISRC-304a6c406c01caf5",
+          "quote": "知业科技将工业智能体集成到塑易通、板易通、机易通等一体机中，将其定位为中小制造企业的物理AI操作系统"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-22T00:42:45.522Z"
+    },
+    "EV-104419284ab31dea": {
+      "id": "EV-104419284ab31dea",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Isomorphic Labs 以 AI 药物设计引擎 IsoDDE 从事药物研发，属生命科学 AI。",
+      "input_hash": "e74a4f9d555be1e2634246cf16c72aaf5e7b056b93e094abd9ee62a629a47bef",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-172c6eda5dfd3979",
+          "quote": "Isomorphic Labs, an AI company focussed on designing and developing new medicines"
+        },
+        {
+          "source_id": "FISRC-172c6eda5dfd3979",
+          "quote": "Isomorphic is scaling its proprietary drug design engine (IsoDDE) and therapeutic candidate pipeline designed with AI to deliver the next generation of medicines."
+        },
+        {
+          "source_id": "FISRC-172c6eda5dfd3979",
+          "quote": "IsoDDE unifies a suite of foundational simulation AI models that natively work across multiple therapeutic areas and drug modalities."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-22T00:42:45.522Z"
     }
   },
-  "generated_at": "2026-11-20T00:39:56.711Z"
+  "generated_at": "2026-11-22T00:42:45.522Z"
 }

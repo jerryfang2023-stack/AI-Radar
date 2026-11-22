@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4527,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-07",
-    "latest_disclosed_at": "2026-07-13",
+    "latest_disclosed_at": "2026-11-20",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "other",
       "pre_series_a"
     ],
     "portfolio_companies": [
@@ -83,9 +84,54 @@
         "entity_id": "EN-7f505bc9744206fd",
         "canonical_entity_id": "EN-7f505bc9744206fd",
         "name": "灵睿智芯"
+      },
+      {
+        "entity_id": "EN-6f7ac1823da81d2e",
+        "canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "name": "DeepSeek"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c90f814499bd0c7f",
+        "funding_insight_id": "FI-faf8764cd64d29f0",
+        "event_ids": [
+          "EV-aab8ed97f5bf814a"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "第二轮",
+        "amount_original": "1000 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 亿元"
+        },
+        "announced_at": "2026-11-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-953d16ef145a7cc3",
+            "source_url": "https://www.ithome.com/1/030/199.htm",
+            "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+            "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+            "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+            "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-65e6ad9470e8d053",
         "funding_insight_id": "FI-3923d1a4fc2b8a40",
@@ -193,6 +239,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-953d16ef145a7cc3",
+        "source_url": "https://www.ithome.com/1/030/199.htm",
+        "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+        "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+        "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+        "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
+      },
+      {
         "source_id": "FISRC-760e793448781182",
         "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",
         "source_title": "灵睿智芯完成数亿元Pre-A轮融资，推进高端RISC-V内核P100流片落地",
@@ -222,10 +276,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "石溪资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "石溪资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：DeepSeek · 其他融资 · 2026-11-20 · 本轮参投 · 1000 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-953d16ef145a7cc3"
+        },
         {
           "description": "融资来源记录：灵睿智芯 · Pre-A轮 · 2026-07-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-760e793448781182"
@@ -233,14 +291,18 @@
         {
           "description": "融资来源记录：灵睿智芯 · 历史轮次未披露 · 2026-07 · 2026年7月轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9b51ad6352525390"
-        },
-        {
-          "description": "融资来源记录：DeepSeek · 历史轮次未披露 · 历史轮次新进投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9990b623f525d10c"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-953d16ef145a7cc3",
+          "source_url": "https://www.ithome.com/1/030/199.htm",
+          "source_title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+          "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+          "quote": "投资机构一端则聚集了博裕、IDG、高榕、君联、正心谷、CPE 源峰、拾象、石溪资本、国寿股权、中金系等。",
+          "quote_hash": "f8da1a471ad10369727b7b7c2c0bf362ecc3591a1443fc7a16a4d5384abe32c0"
+        },
         {
           "source_id": "FISRC-760e793448781182",
           "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",
@@ -256,14 +318,6 @@
           "source_content_hash": "00eb3796b01bc869",
           "quote": "灵睿智芯今年7月完成数亿元融资，投资方包括张江高科、中科创星、东方富海、成为资本、石溪资本及GPU企业壁仞科技。",
           "quote_hash": "6d88d54df8331d46b6caf55c436e7b7d5f31d6bfd0748ed51a1e256a9e83c812"
-        },
-        {
-          "source_id": "FISRC-9990b623f525d10c",
-          "source_url": "https://es.tradingview.com/news/panews:246b17cffe3f9:0/",
-          "source_title": "DeepSeek将完成1000亿元融资",
-          "source_content_hash": "d65431c8435b48c0",
-          "quote": "本轮新进投资方包括石溪资本、中芯聚源、CPE源峰、君联资本、吉利等，以产业投资方为主。",
-          "quote_hash": "a68fb0daabf1e8a583a59059a977ca12b0d3fd4e0c5ec0d0158996723a57ca71"
         }
       ],
       "last_verified_at": "2026-09-25"
