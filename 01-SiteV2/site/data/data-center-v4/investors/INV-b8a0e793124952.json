@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-21",
-    "currentDate": "2026-11-21",
-    "eventCount": 4524,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,9 +64,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 42,
+    "current_round_count": 43,
     "historical_or_ambiguous_count": 10,
-    "portfolio_company_count": 37,
+    "portfolio_company_count": 38,
     "market_regions": [
       "GLOBAL"
     ],
@@ -78,7 +78,7 @@
       "co_lead": 6,
       "historical_or_ambiguous": 10,
       "lead": 21,
-      "participant": 15
+      "participant": 16
     },
     "round_codes": [
       "multi_round",
@@ -148,6 +148,11 @@
         "entity_id": "EN-0830e0bf8e8fa471",
         "canonical_entity_id": "",
         "name": "Horowitz Andreessen Academy"
+      },
+      {
+        "entity_id": "EN-a2039b2db07c1ad6",
+        "canonical_entity_id": "",
+        "name": "Isomorphic Labs"
       },
       {
         "entity_id": "EN-37799d436602eaf1",
@@ -281,6 +286,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2da0b784c3bbd8de",
+        "funding_insight_id": "FI-1c7a6290f4a522a8",
+        "event_ids": [
+          "EV-104419284ab31dea"
+        ],
+        "company_entity_id": "EN-a2039b2db07c1ad6",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "€4.5 billion",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 4500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "45 亿欧元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
+            "source_title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
+            "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+            "quote": "alongside Andreessen Horowitz, with continued significant investment from Alphabet",
+            "quote_hash": "75e4df5da97582a6d0dcb53c2b4f195d27d2994ecbb4a033be6deb07b17428c2"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a9a4186c2adfa775",
         "funding_insight_id": "FI-9647078abba53f06",
@@ -2356,6 +2401,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-172c6eda5dfd3979",
+        "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
+        "source_title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
+        "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+        "quote": "alongside Andreessen Horowitz, with continued significant investment from Alphabet",
+        "quote_hash": "75e4df5da97582a6d0dcb53c2b4f195d27d2994ecbb4a033be6deb07b17428c2"
+      },
+      {
         "source_id": "FISRC-c4b7e80cb7863d47",
         "source_url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
         "source_title": "Isomorphic Labs 融资 50 亿美元，拟将候选药物推进临床试验",
@@ -2885,12 +2938,12 @@
           "source_id": "a16z_about"
         },
         {
-          "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮参投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c4b7e80cb7863d47"
+          "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮参投 · €4.5 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-172c6eda5dfd3979"
         },
         {
-          "description": "融资来源记录：OpenAI · 轮次未披露 · 2026-11-07 · 本轮参投 · $11 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3952ae60d488ad95"
+          "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮参投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c4b7e80cb7863d47"
         }
       ],
       "contacts": [
@@ -2998,6 +3051,14 @@
           "quote_hash": "e99e0a75d100056586e1a241fc521ff6d9da626d9a7fcf9ab6dd36440c63b9bb"
         },
         {
+          "source_id": "FISRC-172c6eda5dfd3979",
+          "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
+          "source_title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
+          "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+          "quote": "alongside Andreessen Horowitz, with continued significant investment from Alphabet",
+          "quote_hash": "75e4df5da97582a6d0dcb53c2b4f195d27d2994ecbb4a033be6deb07b17428c2"
+        },
+        {
           "source_id": "FISRC-c4b7e80cb7863d47",
           "source_url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
           "source_title": "Isomorphic Labs 融资 50 亿美元，拟将候选药物推进临床试验",
@@ -3012,14 +3073,6 @@
           "source_content_hash": "0d7c04571477bfba758869a7f19138576a259a59db0caef98f510505bbbec95f",
           "quote": "joined by new backer Andreessen Horowitz along with Alphabet and all existing investors",
           "quote_hash": "fe4805eebb78b78d5bfc99eb148178bdc81cbad6bf85ed37295f7521d874b858"
-        },
-        {
-          "source_id": "FISRC-3952ae60d488ad95",
-          "source_url": "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/",
-          "source_title": "OpenAI 获得 110 亿美元融资，但不得不争取牙医提供更多资金",
-          "source_content_hash": "a751ffa70bcd34506eb341c7bc3b1a0b1208e3e958d1d04a99d4d778c6b0ac57",
-          "quote": "Investors include Coatue Management, T. Rowe Price, SoftBank, Sequoia Capital, Founders Fund, Andreessen Horowitz, and a consortium from the United Arab Emirates.",
-          "quote_hash": "01b47bbf806f698f9bca58a0ccb6958118d16b4bb951a0a2fe9d7b785c1e9b5e"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -3030,7 +3083,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[41].role": {
+        "activities[42].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",
@@ -3038,7 +3091,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[44].role": {
+        "activities[45].role": {
           "text": "Series D 参投",
           "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
           "provider": "deepseek",

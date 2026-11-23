@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-21",
-    "currentDate": "2026-11-21",
-    "eventCount": 4524,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -69,7 +69,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-18",
+    "lastSeen": "2026-11-22",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -85,7 +85,7 @@
     "timeline": [
       {
         "id": "EV-60e9751ddf436c14",
-        "dataDate": "2026-11-18",
+        "dataDate": "2026-11-22",
         "date": "2026-11-17",
         "eventType": "funding",
         "eventTypeLabel": "融资",
@@ -93,7 +93,19 @@
         "status": "completed",
         "statusLabel": "已完成",
         "title": "独家：获谷歌首位投资者支持，RHISE AI 融资 266 万欧元，打造欧洲主权个人 AI",
-        "displayTags": [],
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-20f841db9068a65e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
         "entityIds": [
           "EN-032c0a7993dc54f8",
           "EN-bbdefa2950f49882",

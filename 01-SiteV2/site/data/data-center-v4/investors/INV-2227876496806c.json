@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-21",
-    "currentDate": "2026-11-21",
-    "eventCount": 4524,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,72 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
-    "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 0,
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 4,
+    "portfolio_company_count": 1,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2025-07",
-    "latest_disclosed_at": "2025-07",
+    "latest_disclosed_at": "2026-11-19",
     "role_counts": {
-      "historical_or_ambiguous": 3
+      "historical_or_ambiguous": 4,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-4f52302c928b8d84",
+        "canonical_entity_id": "",
+        "name": "知业科技"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-e66609f68af1f2fa",
+        "funding_insight_id": "FI-223dbf7ad48a6c82",
+        "event_ids": [
+          "EV-b5b93d1b6f0bce86"
+        ],
+        "company_entity_id": "EN-4f52302c928b8d84",
+        "company_canonical_entity_id": "",
+        "company_name": "知业科技",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-11-19",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-97ea0233a06dbd19",
+            "source_url": "https://feng.ifeng.com/c/8yBMtGJ5DEO",
+            "source_title": "知业科技获数千万元A轮融资 聚焦工业AI规模化应用_大风号",
+            "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+            "quote": "投资机构为高科金投、泰亚投资",
+            "quote_hash": "03ed427859e43b6039ca82a4e49c9414869b5741c8a453b6994717823a92fe7d"
+          }
+        ]
+      },
       {
         "activity_id": "IA-79b749bb59fb5a04",
         "funding_insight_id": "FI-f0e7ae76f6d51eac",
@@ -107,6 +156,38 @@
             "source_content_hash": "9491841eabf55f1c",
             "quote": "2025年7月，中数睿智完成2亿元A+轮融资，由鼎晖VGC、北京市AI基金联合领投，泰亚投资、相城金控、四川文投等跟投",
             "quote_hash": "840d17d170fdecea23cdc2ba674c6744b4378982010197f4b78232634fa16b3e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c78470b7916c66ed",
+        "funding_insight_id": "FI-223dbf7ad48a6c82",
+        "event_ids": [
+          "EV-b5b93d1b6f0bce86"
+        ],
+        "company_entity_id": "EN-4f52302c928b8d84",
+        "company_canonical_entity_id": "",
+        "company_name": "知业科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮联合投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-be5a00e9fa15ff4f",
+            "source_url": "https://m.cls.cn/detail/1132561",
+            "source_title": "硬科技投向标|多部门印发原材料工业“三品”实施方案 C919将于9月19日拿适航证",
+            "source_content_hash": "571569e4fe30c6a5",
+            "quote": "由高科创投、泰亚投资联合投资",
+            "quote_hash": "15638fe1818d62066ce2792e111d7b5d4d20bce765e42a80f97c936c0bc2cd02"
           }
         ]
       },
@@ -177,12 +258,28 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-97ea0233a06dbd19",
+        "source_url": "https://feng.ifeng.com/c/8yBMtGJ5DEO",
+        "source_title": "知业科技获数千万元A轮融资 聚焦工业AI规模化应用_大风号",
+        "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+        "quote": "投资机构为高科金投、泰亚投资",
+        "quote_hash": "03ed427859e43b6039ca82a4e49c9414869b5741c8a453b6994717823a92fe7d"
+      },
+      {
         "source_id": "FISRC-a57106724774253f",
         "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-27/doc-inhvwwmk9150394.shtml",
         "source_title": "首发| 清华女博士带队，中数睿智又融资数亿",
         "source_content_hash": "9491841eabf55f1c",
         "quote": "2025年7月，中数睿智完成2亿元A+轮融资，由鼎晖VGC、北京市AI基金联合领投，泰亚投资、相城金控、四川文投等跟投",
         "quote_hash": "840d17d170fdecea23cdc2ba674c6744b4378982010197f4b78232634fa16b3e"
+      },
+      {
+        "source_id": "FISRC-be5a00e9fa15ff4f",
+        "source_url": "https://m.cls.cn/detail/1132561",
+        "source_title": "硬科技投向标|多部门印发原材料工业“三品”实施方案 C919将于9月19日拿适航证",
+        "source_content_hash": "571569e4fe30c6a5",
+        "quote": "由高科创投、泰亚投资联合投资",
+        "quote_hash": "15638fe1818d62066ce2792e111d7b5d4d20bce765e42a80f97c936c0bc2cd02"
       },
       {
         "source_id": "FISRC-106f72a415fbb41c",
@@ -206,25 +303,33 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "泰亚投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "泰亚投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：知业科技 · A轮 · 2026-11-19 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-97ea0233a06dbd19"
+        },
         {
           "description": "融资来源记录：中数睿智 · 历史轮次未披露 · 2025-07 · 2025年7月A+轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a57106724774253f"
         },
         {
-          "description": "融资来源记录：致敬未知 · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-106f72a415fbb41c"
-        },
-        {
-          "description": "融资来源记录：中数睿智 · 历史轮次未披露 · A+轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9d2d4022c60030f2"
+          "description": "融资来源记录：知业科技 · 历史轮次未披露 · Pre-A轮联合投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-be5a00e9fa15ff4f"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-97ea0233a06dbd19",
+          "source_url": "https://feng.ifeng.com/c/8yBMtGJ5DEO",
+          "source_title": "知业科技获数千万元A轮融资 聚焦工业AI规模化应用_大风号",
+          "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+          "quote": "投资机构为高科金投、泰亚投资",
+          "quote_hash": "03ed427859e43b6039ca82a4e49c9414869b5741c8a453b6994717823a92fe7d"
+        },
         {
           "source_id": "FISRC-a57106724774253f",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-27/doc-inhvwwmk9150394.shtml",
@@ -234,20 +339,12 @@
           "quote_hash": "840d17d170fdecea23cdc2ba674c6744b4378982010197f4b78232634fa16b3e"
         },
         {
-          "source_id": "FISRC-106f72a415fbb41c",
-          "source_url": "https://www.tmtpost.com/7892206.html",
-          "source_title": "阿里之后再获创维、博裕等加注，致敬未知获亿元PreA轮融资｜独家-钛媒体官方网站",
-          "source_content_hash": "47e93b5404ceb604",
-          "quote": "在本轮融资之前，致敬未知已获得阿里创投、合肥北城资本、泥藕资本NEEO、泰亚投资、泰岳梧桐资本等机构的投资。",
-          "quote_hash": "eda8a96d050bd51da0403263b46a562720e0070f058b7ac0032f927d74f3f62f"
-        },
-        {
-          "source_id": "FISRC-9d2d4022c60030f2",
-          "source_url": "https://news.pedaily.cn/202608/568010.shtml",
-          "source_title": "首发| 中数睿智三个月融资两轮，中国版Palantir火了",
-          "source_content_hash": "fd43c36630768ac3",
-          "quote": "2025年，中数睿智完成2亿元A+轮融资，由鼎晖VGC、北京市AI基金联合领投，泰亚投资、相城金控、四川文投等跟投",
-          "quote_hash": "ce00fdb7ec135ede2663793c8b77c571b190f97a67145c1d8017b995a29dc1f8"
+          "source_id": "FISRC-be5a00e9fa15ff4f",
+          "source_url": "https://m.cls.cn/detail/1132561",
+          "source_title": "硬科技投向标|多部门印发原材料工业“三品”实施方案 C919将于9月19日拿适航证",
+          "source_content_hash": "571569e4fe30c6a5",
+          "quote": "由高科创投、泰亚投资联合投资",
+          "quote_hash": "15638fe1818d62066ce2792e111d7b5d4d20bce765e42a80f97c936c0bc2cd02"
         }
       ],
       "last_verified_at": "2026-09-25"
