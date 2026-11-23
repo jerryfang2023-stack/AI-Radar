@@ -304,7 +304,7 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
     queue.entries[url] ? {...receipt,prior_review:queue.entries[url].prior_review,backlog:true} : receipt]);
   const currentUrls = new Set(leads.map(([url])=>url));
   for(const [url,item] of Object.entries(queue.entries)) {
-    if(item.status==='pending' && item.stop_after_date < date)queue.entries[url]=deferredFollowup(item,date,{reason:item.reason});
+    if(item.status==='pending' && !(item.last_processed_date>date) && item.stop_after_date < date)queue.entries[url]=deferredFollowup(item,date,{reason:item.reason});
     if(!currentUrls.has(url) && (followupDue(item,date) || (resume && item.last_processed_date===date && item.fact_review_completed!==true))) leads.push([url,{status:'pending',reason:item.reason,title:item.title,prior_review:item.prior_review,backlog:true}]);
   }
   leads.sort(([a],[b]) => {
@@ -320,7 +320,7 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
   for(const [url,row] of Object.entries(state.entries)) {
     // Restored public checkpoints may predate a successful private fact review.
     // Only this invocation's changed rows may replace the latest queue state.
-    if (!processed.has(url) && queue.entries[url]?.last_processed_date >= date) {
+    if (queue.entries[url]?.last_processed_date > date || (!processed.has(url) && queue.entries[url]?.last_processed_date >= date)) {
       row.followup=queue.entries[url];
       row.reason=queue.entries[url].reason;
       row.fact_review_completed=queue.entries[url].fact_review_completed;

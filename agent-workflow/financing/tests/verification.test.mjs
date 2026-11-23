@@ -399,3 +399,13 @@ test('published research status is not an unresolved verification reason',async 
   write(researchFile,{cards:[card],queue:[{event_id:'EV-published',status:'pending',problems:['body_amount_conflict']}]});finishVerification(options);
   assert.deepEqual(read(path.join(options.directory,'verification.json')).entries[url].pending_reasons,['body_amount_conflict']);
 });
+
+test('older recovery cannot expire or close later pending queue state even when its old stop date passed',async t=>{
+  for(const status of ['pending','accepted','excluded']){
+    const options=fixture(t);seed(options,{[url]:{status,reason:status==='excluded'?'outside_daily_window':'original_unreadable'}});
+    const newer=due({last_processed_date:'2026-10-07',next_due_date:'2026-10-08',stop_after_date:'2026-10-05',status:'pending',reason:'later_responsible_review_pending',capture_attempts:[{request_id:'retain-later-request'}]});
+    write(queuePath(options),{entries:{[url]:newer}});
+    await verifyPending({...options,capture:forbidden,search:forbidden});assert.deepEqual(read(queuePath(options)).entries[url],newer);
+    finishVerification(options);assert.deepEqual(read(queuePath(options)).entries[url],newer);
+  }
+});
