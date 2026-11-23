@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-10",
-    "latest_disclosed_at": "2026-10-21",
+    "latest_disclosed_at": "2026-11-19",
     "role_counts": {
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "pre_seed",
@@ -105,9 +105,54 @@
         "entity_id": "EN-6e4e67be7246602a",
         "canonical_entity_id": "",
         "name": "Throne Science"
+      },
+      {
+        "entity_id": "EN-7c07b41ab2100d94",
+        "canonical_entity_id": "",
+        "name": "Wilgot"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e84199cb86551dd2",
+        "funding_insight_id": "FI-1647b830adc5d671",
+        "event_ids": [
+          "EV-ac28091b9e390c7e"
+        ],
+        "company_entity_id": "EN-7c07b41ab2100d94",
+        "company_canonical_entity_id": "",
+        "company_name": "Wilgot",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$3 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 万美元"
+        },
+        "announced_at": "2026-11-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-259d24b62357e890",
+            "source_url": "https://tech.eu/2026/11/19/wilgot-raises-3m-in-seed-funding-to-help-brands-get-recommended-by-ai/",
+            "source_title": "Wilgot 完成 300 万美元种子轮融资，助力品牌获得 AI 推荐",
+            "source_content_hash": "6ac0868fa0179c92e87fe854629a6d24af4926597fc555f9426385f755585782",
+            "quote": "The round also included participation from Luminar Ventures, Foundry Ventures, Ventures Together and Inovexus",
+            "quote_hash": "290947f4e969083df3a267fe4b4ac514e65000dcac48ccef0539311f4a322538"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d90b04d5d2a403f6",
         "funding_insight_id": "FI-383f48fca9f19694",
@@ -311,6 +356,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-259d24b62357e890",
+        "source_url": "https://tech.eu/2026/11/19/wilgot-raises-3m-in-seed-funding-to-help-brands-get-recommended-by-ai/",
+        "source_title": "Wilgot 完成 300 万美元种子轮融资，助力品牌获得 AI 推荐",
+        "source_content_hash": "6ac0868fa0179c92e87fe854629a6d24af4926597fc555f9426385f755585782",
+        "quote": "The round also included participation from Luminar Ventures, Foundry Ventures, Ventures Together and Inovexus",
+        "quote_hash": "290947f4e969083df3a267fe4b4ac514e65000dcac48ccef0539311f4a322538"
+      },
+      {
         "source_id": "FISRC-2ca21eb263dc4078",
         "source_url": "https://tech.eu/2026/10/21/opply-raises-75m-to-expand-its-agentic-ai-platform-for-cpg-brands/",
         "source_title": "Opply 融资 750 万美元，以扩展面向 CPG 品牌的 AI 智能体平台",
@@ -378,16 +431,16 @@
           "source_id": "throne"
         },
         {
+          "description": "融资来源记录：Wilgot · 种子轮 · 2026-11-19 · 本轮参投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-259d24b62357e890"
+        },
+        {
           "description": "融资来源记录：Opply · 轮次未披露 · 2026-10-21 · 本轮参投 · $7.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2ca21eb263dc4078"
         },
         {
           "description": "融资来源记录：Neela Biotech · 预种子轮 · 2026-10-08 · 本轮参投 · £2.1 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-47cad557558a6a09"
-        },
-        {
-          "description": "融资来源记录：Neela Biotech · 预种子轮 · 2026-10-08 · 本轮参投 · £2.1m。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d4882614e143350f"
         }
       ],
       "contacts": [
@@ -417,6 +470,14 @@
           "quote_hash": "e3722ecc019e1f1b6c2b2dd1e5b45b0882e0a9c384e79e11872ce47e7d19568a"
         },
         {
+          "source_id": "FISRC-259d24b62357e890",
+          "source_url": "https://tech.eu/2026/11/19/wilgot-raises-3m-in-seed-funding-to-help-brands-get-recommended-by-ai/",
+          "source_title": "Wilgot 完成 300 万美元种子轮融资，助力品牌获得 AI 推荐",
+          "source_content_hash": "6ac0868fa0179c92e87fe854629a6d24af4926597fc555f9426385f755585782",
+          "quote": "The round also included participation from Luminar Ventures, Foundry Ventures, Ventures Together and Inovexus",
+          "quote_hash": "290947f4e969083df3a267fe4b4ac514e65000dcac48ccef0539311f4a322538"
+        },
+        {
           "source_id": "FISRC-2ca21eb263dc4078",
           "source_url": "https://tech.eu/2026/10/21/opply-raises-75m-to-expand-its-agentic-ai-platform-for-cpg-brands/",
           "source_title": "Opply 融资 750 万美元，以扩展面向 CPG 品牌的 AI 智能体平台",
@@ -431,14 +492,6 @@
           "source_content_hash": "a901c2cce189322cf422767ae5e7feaafad44e9840faa8893f36bdb26aa5e424",
           "quote": "The total £2.1 million round investment includes participation from Ascension, Cambridge Enterprise Ventures, Ventures Together and strategic angel investors",
           "quote_hash": "9b2a1a36fb1ab8212eb4ef6878ce28bc8793851e0b272234b7892072d2b84019"
-        },
-        {
-          "source_id": "FISRC-d4882614e143350f",
-          "source_url": "https://www.uktech.news/biotech/cambridge-biotech-startup-neela-raises-2-1m-to-turn-waste-into-aviation-fuel-20261008",
-          "source_title": "剑桥生物技术初创公司Neela融资210万英镑，将废弃物转化为航空燃料",
-          "source_content_hash": "d00757ae0cb1ee65a0d004562b0c216c37cda223494a5d49bf2ecc6cf4641053",
-          "quote": "with participation from Ascension, Cambridge Enterprise, Ventures Together and strategic angel investors",
-          "quote_hash": "b6d65d7f726147fc9b833783502a1d5a2891e636cc7017d208431d0e00852257"
         }
       ],
       "last_verified_at": "2026-10-03"

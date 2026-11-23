@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 26,
+    "current_round_count": 27,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 23,
+    "portfolio_company_count": 24,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-11-17",
+    "latest_disclosed_at": "2026-11-19",
     "role_counts": {
       "co_lead": 5,
       "historical_or_ambiguous": 3,
-      "lead": 8,
+      "lead": 9,
       "participant": 13
     },
     "round_codes": [
@@ -105,6 +105,11 @@
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic PBC"
+      },
+      {
+        "entity_id": "EN-caace168219ba2e2",
+        "canonical_entity_id": "",
+        "name": "Boltz"
       },
       {
         "entity_id": "EN-1b636bc7ad667158",
@@ -208,6 +213,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-716b6ab4520347e2",
+        "funding_insight_id": "FI-ea107fa7dfd1f452",
+        "event_ids": [
+          "EV-588d12fcfaaf7527"
+        ],
+        "company_entity_id": "EN-caace168219ba2e2",
+        "company_canonical_entity_id": "",
+        "company_name": "Boltz",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$110m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 110000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.1 亿美元"
+        },
+        "announced_at": "2026-11-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-01cd349698d99374",
+            "source_url": "https://tech.eu/2026/11/19/london-based-boltz-raises-110m-series-a/",
+            "source_title": "伦敦的Boltz完成1.1亿美元A轮融资",
+            "source_content_hash": "391f9944eb680fae25ea4413e6eed9356b75535138fc29990195aa85332e8110",
+            "quote": "Bessemer Venture Partners led the round",
+            "quote_hash": "e90f275559adfb1dc37d3ec98a0982f4887752d2233a73178380b4c277fc32e7"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2f7c11c41edb6fd6",
         "funding_insight_id": "FI-9c0d79cb9d5c371d",
@@ -1357,6 +1402,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-01cd349698d99374",
+        "source_url": "https://tech.eu/2026/11/19/london-based-boltz-raises-110m-series-a/",
+        "source_title": "伦敦的Boltz完成1.1亿美元A轮融资",
+        "source_content_hash": "391f9944eb680fae25ea4413e6eed9356b75535138fc29990195aa85332e8110",
+        "quote": "Bessemer Venture Partners led the round",
+        "quote_hash": "e90f275559adfb1dc37d3ec98a0982f4887752d2233a73178380b4c277fc32e7"
+      },
+      {
         "source_id": "FISRC-0552c4db6b7fbb24",
         "source_url": "https://www.lancedb.com/blog/lancedb-series-b-funding",
         "source_title": "LanceDB Raises $57.5M as AI Research Outgrows the Modern Data Stack",
@@ -1640,16 +1693,16 @@
           "source_id": "bvp_about"
         },
         {
+          "description": "融资来源记录：Boltz · A轮 · 2026-11-19 · 本轮领投 · $110m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-01cd349698d99374"
+        },
+        {
           "description": "融资来源记录：LanceDB · B轮 · 2026-11-17 · 本轮领投 · $57.5m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0552c4db6b7fbb24"
         },
         {
           "description": "融资来源记录：Fal · F轮 · 2026-11-03 · 本轮领投 · $1.3 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-05d1a3678a8eb502"
-        },
-        {
-          "description": "融资来源记录：Legora · E轮 · 2026-10-21 · 本轮参投 · €489 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c4c53e6f607010be"
         }
       ],
       "contacts": [
@@ -1784,6 +1837,14 @@
           "quote_hash": "ddf8fda04aac1704b9a947e177ed87e25c98846999bbc4fd079ff577261d7391"
         },
         {
+          "source_id": "FISRC-01cd349698d99374",
+          "source_url": "https://tech.eu/2026/11/19/london-based-boltz-raises-110m-series-a/",
+          "source_title": "伦敦的Boltz完成1.1亿美元A轮融资",
+          "source_content_hash": "391f9944eb680fae25ea4413e6eed9356b75535138fc29990195aa85332e8110",
+          "quote": "Bessemer Venture Partners led the round",
+          "quote_hash": "e90f275559adfb1dc37d3ec98a0982f4887752d2233a73178380b4c277fc32e7"
+        },
+        {
           "source_id": "FISRC-0552c4db6b7fbb24",
           "source_url": "https://www.lancedb.com/blog/lancedb-series-b-funding",
           "source_title": "LanceDB Raises $57.5M as AI Research Outgrows the Modern Data Stack",
@@ -1798,14 +1859,6 @@
           "source_content_hash": "619f662b2bc706a305ff822133dffd3beef6778aff3e85d67eaad24f1d73986a",
           "quote": "has raised $1.3 billion in its latest funding round led by Bessemer Venture Partners, with participation from Nvidia, Sound Ventures, and T. Rowe Price.",
           "quote_hash": "af3f70ce5a2969a9c1751d6c974edf782b58afed8bb97c3f5a9c07d9c1b71580"
-        },
-        {
-          "source_id": "FISRC-c4c53e6f607010be",
-          "source_url": "https://legora.com/blog/series-e",
-          "source_title": "Legora raises $550 million Series E at $8.8 billion valuation to accelerate growth",
-          "source_content_hash": "f3c7efce8da1beb6",
-          "quote": "Every major existing investor, including Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Insight Venture Partners, Menlo Ventures, Redpoint Ventures, Salesforce Ventures, and Sands Capital, is also participating",
-          "quote_hash": "2f6d772d35f2702816ad0190c53952960cc76aa1765f93cd55d48d250b6d8080"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1816,7 +1869,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[28].role": {
+        "activities[29].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",

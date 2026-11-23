@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-24",
-    "latest_disclosed_at": "2026-11-17",
+    "latest_disclosed_at": "2026-11-19",
     "role_counts": {
-      "participant": 6
+      "participant": 7
     },
     "round_codes": [
       "pre_seed",
+      "seed",
       "series_b",
       "series_c"
     ],
@@ -84,6 +85,11 @@
         "entity_id": "EN-6ecf7f43c6c5a2b0",
         "canonical_entity_id": "",
         "name": "Basecamp Research"
+      },
+      {
+        "entity_id": "EN-4acb5d021cd5eed4",
+        "canonical_entity_id": "",
+        "name": "LATO"
       },
       {
         "entity_id": "EN-cb3a9e70e51c2f47",
@@ -107,6 +113,54 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-73e3503e6b887c1f",
+        "funding_insight_id": "FI-61142ae0e9616dc5",
+        "event_ids": [
+          "EV-fa5950b871b08d52"
+        ],
+        "company_entity_id": "EN-4acb5d021cd5eed4",
+        "company_canonical_entity_id": "",
+        "company_name": "LATO",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$4.7 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "470 万美元"
+        },
+        "announced_at": "2026-11-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2c6ef9e7725b0d1d",
+            "source_url": "https://tech.eu/2026/11/19/lato-secures-47m-to-automate-customer-and-expert-interviews-with-ai/",
+            "source_title": "LATO 获 470 万美元融资，用 AI 自动化客户与专家访谈",
+            "source_content_hash": "2ed497ba4bd1b8ff143444a5428e57c1aaed402a683607035203b043988251e2",
+            "quote": "Its backers also include Y Combinator, Montis VC and Inception Fund, alongside angel investors including Paul Graham and co-founders of ElevenLabs, Vercel, Snowflake and Rogo.",
+            "quote_hash": "48dd15f4a7418d5ec7ff8ad9df3b163f0b3d772b3052a92ef1040e87bf110d31"
+          },
+          {
+            "source_id": "FISRC-9ce5c4314dbde151",
+            "source_url": "https://techfundingnews.com/yc-backed-lato-raises-4-7m-seed-to-put-ai-agents-on-private-equitys-due-diligence-calls/",
+            "source_title": "YC-backed LATO raises $4.7M seed to put AI agents on private equity’s due diligence calls",
+            "source_content_hash": "2f3705b84fffb136",
+            "quote": "The round also includes Y Combinator, Montis VC and Inception Fund, alongside angel investors including Paul Graham and co-founders of ElevenLabs, Vercel, Snowflake, and Rogo.",
+            "quote_hash": "b563116a29014cac1a4c1074093e265dd04dd91e9103f6e4815bea571d07d0d0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7daa9aa83216b593",
         "funding_insight_id": "FI-ae275335df51578a",
@@ -350,6 +404,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-2c6ef9e7725b0d1d",
+        "source_url": "https://tech.eu/2026/11/19/lato-secures-47m-to-automate-customer-and-expert-interviews-with-ai/",
+        "source_title": "LATO 获 470 万美元融资，用 AI 自动化客户与专家访谈",
+        "source_content_hash": "2ed497ba4bd1b8ff143444a5428e57c1aaed402a683607035203b043988251e2",
+        "quote": "Its backers also include Y Combinator, Montis VC and Inception Fund, alongside angel investors including Paul Graham and co-founders of ElevenLabs, Vercel, Snowflake and Rogo.",
+        "quote_hash": "48dd15f4a7418d5ec7ff8ad9df3b163f0b3d772b3052a92ef1040e87bf110d31"
+      },
+      {
+        "source_id": "FISRC-9ce5c4314dbde151",
+        "source_url": "https://techfundingnews.com/yc-backed-lato-raises-4-7m-seed-to-put-ai-agents-on-private-equitys-due-diligence-calls/",
+        "source_title": "YC-backed LATO raises $4.7M seed to put AI agents on private equity’s due diligence calls",
+        "source_content_hash": "2f3705b84fffb136",
+        "quote": "The round also includes Y Combinator, Montis VC and Inception Fund, alongside angel investors including Paul Graham and co-founders of ElevenLabs, Vercel, Snowflake, and Rogo.",
+        "quote_hash": "b563116a29014cac1a4c1074093e265dd04dd91e9103f6e4815bea571d07d0d0"
+      },
+      {
         "source_id": "FISRC-73109463bc1bff33",
         "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
         "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
@@ -425,16 +495,12 @@
           "source_id": "FISRC-ecd2ea74974f4ff3"
         },
         {
+          "description": "融资来源记录：LATO · 种子轮 · 2026-11-19 · 本轮参投 · $4.7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2c6ef9e7725b0d1d"
+        },
+        {
           "description": "融资来源记录：Model ML · B轮 · 2026-11-17 · 本轮参投 · $250M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-73109463bc1bff33"
-        },
-        {
-          "description": "融资来源记录：Vessla · 预种子轮 · 2026-10-19 · 本轮参投 · $3.3 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-333dfdc93dda00c9"
-        },
-        {
-          "description": "融资来源记录：Vessla · 预种子轮 · 2026-10-19 · 本轮参投 · €2.94 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-03408b6d796d3c48"
         }
       ],
       "contacts": [
@@ -464,28 +530,28 @@
           "quote_hash": "c3c8251039a0e0ec146a946ff8ffb69b9a5a4d9a40a8875183c076ef9284e671"
         },
         {
+          "source_id": "FISRC-2c6ef9e7725b0d1d",
+          "source_url": "https://tech.eu/2026/11/19/lato-secures-47m-to-automate-customer-and-expert-interviews-with-ai/",
+          "source_title": "LATO 获 470 万美元融资，用 AI 自动化客户与专家访谈",
+          "source_content_hash": "2ed497ba4bd1b8ff143444a5428e57c1aaed402a683607035203b043988251e2",
+          "quote": "Its backers also include Y Combinator, Montis VC and Inception Fund, alongside angel investors including Paul Graham and co-founders of ElevenLabs, Vercel, Snowflake and Rogo.",
+          "quote_hash": "48dd15f4a7418d5ec7ff8ad9df3b163f0b3d772b3052a92ef1040e87bf110d31"
+        },
+        {
+          "source_id": "FISRC-9ce5c4314dbde151",
+          "source_url": "https://techfundingnews.com/yc-backed-lato-raises-4-7m-seed-to-put-ai-agents-on-private-equitys-due-diligence-calls/",
+          "source_title": "YC-backed LATO raises $4.7M seed to put AI agents on private equity’s due diligence calls",
+          "source_content_hash": "2f3705b84fffb136",
+          "quote": "The round also includes Y Combinator, Montis VC and Inception Fund, alongside angel investors including Paul Graham and co-founders of ElevenLabs, Vercel, Snowflake, and Rogo.",
+          "quote_hash": "b563116a29014cac1a4c1074093e265dd04dd91e9103f6e4815bea571d07d0d0"
+        },
+        {
           "source_id": "FISRC-73109463bc1bff33",
           "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
           "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
           "source_content_hash": "ef0f704125514383",
           "quote": "with participation from Evolution Equity Partners, Airtree, Forestay Capital, Y Combinator, FT Partners, Latitude, Inception Fund and 13Books Capital",
           "quote_hash": "e4fcd36e75bff0391e75db813e1a0a2495fd201d8ee50144b6eef3263a013969"
-        },
-        {
-          "source_id": "FISRC-333dfdc93dda00c9",
-          "source_url": "https://tech.eu/2026/10/19/vessla-exits-stealth-with-33m-to-bring-ai-agents-to-property-management/",
-          "source_title": "Vessla结束隐身模式，获330万美元融资，将AI智能体引入物业管理",
-          "source_content_hash": "abd37369bdf8c091c19022e76e2a9ffb71cf5b766d1298f2fa05b8f9c5d0f3f4",
-          "quote": "Other participants included Inception Fund, Tiny VC, operators from Lovable and OpenAI, founders Lukas Saari (Tandem Health) and Fredrik Hjelm (Voi, Pit), and several angel investors.",
-          "quote_hash": "a139bfdb6260ed7f091816e38ae148c0e446e24ef1f7c82d79164115a408b5c7"
-        },
-        {
-          "source_id": "FISRC-03408b6d796d3c48",
-          "source_url": "https://www.eu-startups.com/2026/10/stockholms-vessla-exits-stealth-with-e2-94-million-to-bring-ai-agents-to-property-management/",
-          "source_title": "斯德哥尔摩的Vessla结束隐身模式，获294万欧元，将AI智能体引入物业管理",
-          "source_content_hash": "26d128952369a51ff8ea80cf41b04bb3bcca39a639bb2a0a43bd58d4071584a9",
-          "quote": "Other investors joining the round include Inception Fund, Tiny VC, operators from Lovable and OpenAI",
-          "quote_hash": "ba963a0f2e08182c2a0b0de97ece7a03f8d847d290998ce9b0c87bed3973c38a"
         }
       ],
       "last_verified_at": "2026-10-03"

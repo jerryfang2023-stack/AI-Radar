@@ -1,0 +1,661 @@
+{
+  "event_id": "EV-86f4e971f63b6cf2",
+  "company_name": "Anthropic",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-663e6337d92e0f21",
+    "triggered_by_event_id": "EV-86f4e971f63b6cf2",
+    "as_of_date": "2026-11-23",
+    "company": {
+      "entity_id": "EN-c70eca6b0f88f44d",
+      "name": "Anthropic PBC",
+      "full_name": "Anthropic PBC",
+      "website": "",
+      "summary": "Anthropic 是一家前沿 AI 实验室，开发 Claude 系列模型及 Claude Code、Cowork 等产品，面向全球企业和个人用户提供 AI 服务。",
+      "headquarters": "",
+      "founders": [
+        {
+          "name": "Dario Amodei",
+          "role": "联合创始人、CEO",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-691ef2972c6cf646",
+              "quote": "It included Dario Amodei, who had led research at OpenAI and helped drive the work behind GPT-2 and GPT-3, and his sister Daniela Amodei, who had led safety and policy at OpenAI before co-founding Anthropic.",
+              "source_content_hash": "1783c4b2b05798cb",
+              "quote_hash": "be690a6439b54cd8102f1d1cd83db8af35c79845b145addd8e7b3e9acb82e316"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Daniela Amodei",
+          "role": "联合创始人",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-691ef2972c6cf646",
+              "quote": "Daniela, Anthropic’s President, previously helped scale Stripe in its early years and built the safety, policy, and people functions at OpenAI.",
+              "source_content_hash": "1783c4b2b05798cb",
+              "quote_hash": "6f72112ae36f3f48caa0f795b825f76991e573190fcc790df5706690bc559708"
+            }
+          ],
+          "entity_id": "EN-d17e509d9e3fe2ea"
+        }
+      ],
+      "team_size": {
+        "value": "",
+        "observed_at": "",
+        "evidence_refs": []
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ae1418f223a3bc98",
+          "quote": "Anthropic PBC and its seven co-founders raised a record $107.3 billion in an upsized IPO and private placement, becoming the first frontier AI lab to tap public markets for the development of thinking machines.",
+          "source_content_hash": "0f38ee781a80c7a29c13e628edc4e8b5902e3f50c8494ba54aa661c24227291a",
+          "quote_hash": "c4c6975c1133fd2c986a613fbc73717d8a832dd388c311bb4291fdb5fc6a1b03"
+        },
+        {
+          "source_id": "FISRC-b5e22ae086a6b353",
+          "quote": "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital, valuing the company at $965 billion post-money.",
+          "source_content_hash": "4fc3b58ff2bd91b8",
+          "quote_hash": "55425a86bcc5eefce0f24a7a04be20d9cae5f8670c10823f90ec6db210caf073"
+        }
+      ],
+      "application_entity_id": "EN-c70eca6b0f88f44d",
+      "canonical_entity_consistent": true
+    },
+    "financing": {
+      "round": "IPO",
+      "amount": "$107.3 billion",
+      "total_raised": "",
+      "announced_at": "2026-11-18",
+      "investor_disclosure_status": "not_disclosed",
+      "investors": [],
+      "other_round_investors": [],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ae1418f223a3bc98",
+          "quote": "WATCH: Anthropic raised a record $107.3 billion in a watershed moment for both AI and global financial markets.",
+          "source_content_hash": "0f38ee781a80c7a29c13e628edc4e8b5902e3f50c8494ba54aa661c24227291a",
+          "quote_hash": "249dd7df12eb780916e60d46e5396edb8f9ba6a1e42b4b0f777e98a93d977c63"
+        },
+        {
+          "source_id": "FISRC-ae1418f223a3bc98",
+          "quote": "Anthropic PBC and its seven co-founders raised a record $107.3 billion in an upsized IPO and private placement, becoming the first frontier AI lab to tap public markets for the development of thinking machines.",
+          "source_content_hash": "0f38ee781a80c7a29c13e628edc4e8b5902e3f50c8494ba54aa661c24227291a",
+          "quote_hash": "c4c6975c1133fd2c986a613fbc73717d8a832dd388c311bb4291fdb5fc6a1b03"
+        }
+      ],
+      "round_code": "ipo",
+      "round_original": "IPO及私募配售",
+      "amount_original": "$107.3 billion",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 107300000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "1073 亿美元"
+      },
+      "total_raised_original": "",
+      "total_raised_normalized": {
+        "currency": "",
+        "value": null,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "undisclosed",
+        "display_zh": ""
+      },
+      "risk_markers": [
+        "investors_missing"
+      ],
+      "disclosures": [
+        {
+          "event_id": "EV-86f4e971f63b6cf2",
+          "round_original": "IPO及私募配售",
+          "amount": "$107.3 billion",
+          "announced_at": "2026-11-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ae1418f223a3bc98",
+              "quote": "WATCH: Anthropic raised a record $107.3 billion in a watershed moment for both AI and global financial markets.",
+              "source_content_hash": "0f38ee781a80c7a29c13e628edc4e8b5902e3f50c8494ba54aa661c24227291a",
+              "quote_hash": "249dd7df12eb780916e60d46e5396edb8f9ba6a1e42b4b0f777e98a93d977c63"
+            },
+            {
+              "source_id": "FISRC-ae1418f223a3bc98",
+              "quote": "Anthropic PBC and its seven co-founders raised a record $107.3 billion in an upsized IPO and private placement, becoming the first frontier AI lab to tap public markets for the development of thinking machines.",
+              "source_content_hash": "0f38ee781a80c7a29c13e628edc4e8b5902e3f50c8494ba54aa661c24227291a",
+              "quote_hash": "c4c6975c1133fd2c986a613fbc73717d8a832dd388c311bb4291fdb5fc6a1b03"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "partially_disclosed"
+    },
+    "products": [
+      {
+        "name": "Claude",
+        "description": "Anthropic 开发的前沿大语言模型系列，可通过 API、Claude Code、Claude for Work 等产品形态供企业和开发者使用。",
+        "target_customers": "全球企业、开发者及个人用户",
+        "features": [
+          "前沿模型能力",
+          "企业级 AI 系统",
+          "可通过三大云平台使用"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "quote": "Global enterprises across industries are deploying Claude in their core operations, and a growing number of people around the world use it for their everyday work.",
+            "source_content_hash": "4fc3b58ff2bd91b8",
+            "quote_hash": "7dc8fe05d8c9c23dfe7ea8afab67c5f460948bb8d0b86fa00291e62c4ec77307"
+          },
+          {
+            "source_id": "FISRC-b58bb99dfec2e318",
+            "quote": "Claude remains the only frontier AI model available to customers on all three of the world's largest cloud platforms: Amazon Web Services (Bedrock), Google Cloud (Vertex AI), and Microsoft Azure (Foundry).",
+            "source_content_hash": "2cafb4244b43dbcb",
+            "quote_hash": "b465112b4423d49be65d9fa306ad47b67f36eae92fe2cb29962c4f5db0ac43d4"
+          }
+        ],
+        "entity_id": "EN-729324072d368379"
+      },
+      {
+        "name": "Claude Code",
+        "description": "面向软件开发的智能体编程工具，支持团队构建软件，并已扩展至金融数据分析、销售、网络安全、科学发现等工作场景。",
+        "target_customers": "开发者、企业工程团队",
+        "features": [
+          "智能体编程",
+          "企业级采用",
+          "开源插件扩展"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b58bb99dfec2e318",
+            "quote": "Claude Code represents a new era of agentic coding, fundamentally changing how teams build software.",
+            "source_content_hash": "2cafb4244b43dbcb",
+            "quote_hash": "8f90e60ee07e578f5c47ae361c61b2ba19b392d71cc2ba528d0806e36fccc245"
+          },
+          {
+            "source_id": "FISRC-b58bb99dfec2e318",
+            "quote": "The same capabilities that make Claude exceptional for coding are also unlocking other new categories of work: financial and data analysis, sales, cybersecurity, scientific discovery, and beyond.",
+            "source_content_hash": "2cafb4244b43dbcb",
+            "quote_hash": "e59a739e20fcf9141413e0df0f27cdf5bb7a30ee84fbd3af12b89b1cc480f8cc"
+          }
+        ],
+        "entity_id": "EN-cb4754c48f8023d0"
+      },
+      {
+        "name": "Cowork",
+        "description": "将 Claude Code 的工程能力扩展至更广泛知识工作任务的协作产品，包含十一个开源插件，可让客户将 Claude 定制为销售、法律、财务等角色的专家。",
+        "target_customers": "企业知识工作者",
+        "features": [
+          "开源插件",
+          "角色定制",
+          "知识工作任务"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b58bb99dfec2e318",
+            "quote": "In January alone, we launched more than thirty products and features, including Cowork, which brings Claude Code’s powerful engineering capabilities to a broader scope of knowledge work tasks.",
+            "source_content_hash": "2cafb4244b43dbcb",
+            "quote_hash": "37c5cf6e70b8308fefe8c22a867fb22ed028cb9070fa8b90adab5b8a24ea0ba8"
+          },
+          {
+            "source_id": "FISRC-b58bb99dfec2e318",
+            "quote": "Cowork includes eleven open-source plugins that let customers turn Claude into a specialist for specific roles or teams, like sales, legal, or finance.",
+            "source_content_hash": "2cafb4244b43dbcb",
+            "quote_hash": "2f1458e22f96abf7b371318768d89938660301dec3db0f6e53737fe89e19ecfe"
+          }
+        ],
+        "entity_id": "EN-5a4c2be958c0af72"
+      }
+    ],
+    "customers": [],
+    "comparisons": [],
+    "metrics": [
+      {
+        "label": "IPO及私募配售融资额",
+        "value": "$107.3 billion",
+        "observed_at": "2026-11-18",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ae1418f223a3bc98",
+            "quote": "Anthropic PBC and its seven co-founders raised a record $107.3 billion in an upsized IPO and private placement",
+            "source_content_hash": "0f38ee781a80c7a29c13e628edc4e8b5902e3f50c8494ba54aa661c24227291a",
+            "quote_hash": "554b0a32220b1a523e236b19c9d18efb3b521bb92337ca59c0c5ade34ba325d3"
+          }
+        ]
+      },
+      {
+        "label": "发行股份数",
+        "value": "956.4 million shares",
+        "observed_at": "2026-11-18",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ae1418f223a3bc98",
+            "quote": "The artificial intelligence firm sold 956.4 million shares and the co-founders sold 23.6 million shares for $83 each",
+            "source_content_hash": "0f38ee781a80c7a29c13e628edc4e8b5902e3f50c8494ba54aa661c24227291a",
+            "quote_hash": "58b50e2b7a87f137d65fcb3e6623020a9568015c5fd0b890c7c38ba2844d3c19"
+          }
+        ]
+      },
+      {
+        "label": "发行价",
+        "value": "$83 per share",
+        "observed_at": "2026-11-18",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ae1418f223a3bc98",
+            "quote": "The artificial intelligence firm sold 956.4 million shares and the co-founders sold 23.6 million shares for $83 each",
+            "source_content_hash": "0f38ee781a80c7a29c13e628edc4e8b5902e3f50c8494ba54aa661c24227291a",
+            "quote_hash": "58b50e2b7a87f137d65fcb3e6623020a9568015c5fd0b890c7c38ba2844d3c19"
+          }
+        ]
+      },
+      {
+        "label": "年化收入",
+        "value": "$47 billion",
+        "observed_at": "2026-11",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "quote": "Since our Series G in February, adoption has continued to grow across global enterprise customers, and our run-rate revenue crossed $47 billion earlier this month.",
+            "source_content_hash": "4fc3b58ff2bd91b8",
+            "quote_hash": "c90ff005fd41e5d87ea1c2a1d020966d5d4b8a879595af83c721517b4dd699a5"
+          }
+        ]
+      },
+      {
+        "label": "Claude Code 年化收入",
+        "value": "over $2.5 billion",
+        "observed_at": "2026-02",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b58bb99dfec2e318",
+            "quote": "Today, Claude Code’s run-rate revenue has grown to over $2.5 billion; this figure has more than doubled since the beginning of 2026.",
+            "source_content_hash": "2cafb4244b43dbcb",
+            "quote_hash": "82b739289b19bb6d254c293b130f11f0beba5b5f16eb09380e127d5bde1f11f1"
+          }
+        ]
+      },
+      {
+        "label": "年支出超10万美元的客户数增长",
+        "value": "7x in the past year",
+        "observed_at": "2026-02",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b58bb99dfec2e318",
+            "quote": "The number of customers spending over $100,000 annually on Claude (as represented by run-rate revenue) has grown 7x in the past year.",
+            "source_content_hash": "2cafb4244b43dbcb",
+            "quote_hash": "87969786c638c9c575b58f72630b427f46dc72d436ade373af005712af2a9c28"
+          }
+        ]
+      },
+      {
+        "label": "年支出超100万美元的客户数",
+        "value": "exceeds 500",
+        "observed_at": "2026-02",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b58bb99dfec2e318",
+            "quote": "Two years ago, a dozen customers spent over $1 million with us on an annualized basis. Today that number exceeds 500.",
+            "source_content_hash": "2cafb4244b43dbcb",
+            "quote_hash": "3bb1848c59efb377f81e8721fa578de7026e7a13d879e4cc68c26ac7a15cd4de"
+          }
+        ]
+      },
+      {
+        "label": "财富10强客户数",
+        "value": "8 of the Fortune 10",
+        "observed_at": "2026-02",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b58bb99dfec2e318",
+            "quote": "Eight of the Fortune 10 are now Claude customers.",
+            "source_content_hash": "2cafb4244b43dbcb",
+            "quote_hash": "baed38e60c6bf4a2a651b32a06248d47b57f37673f5f81ce8f2b5f2701ff1702"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Krishna Rao",
+        "quote": "Claude is increasingly indispensable to our growing global community of customers, and we work tirelessly to make tools like Claude Code and Cowork more helpful, more powerful, and more adaptable to their needs",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "quote": "“Claude is increasingly indispensable to our growing global community of customers, and we work tirelessly to make tools like Claude Code and Cowork more helpful, more powerful, and more adaptable to their needs,” said Krishna Rao, Chief Financial Officer of Anthropic.",
+            "source_content_hash": "4fc3b58ff2bd91b8",
+            "quote_hash": "d1e85180af00989b1e0c149db124ca12e785d1f76622d1b7bb0c14b7f78ea6bd"
+          }
+        ]
+      },
+      {
+        "speaker": "Brad Gerstner",
+        "quote": "Claude’s latest advancements have driven large-scale adoption among the world’s most demanding organizations. This momentum positions Anthropic to lead the next phase of AI innovation and capture the enormous opportunity ahead",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "quote": "“Claude’s latest advancements have driven large-scale adoption among the world’s most demanding organizations. This momentum positions Anthropic to lead the next phase of AI innovation and capture the enormous opportunity ahead,” said Brad Gerstner, Founder and CEO of Altimeter Capital.",
+            "source_content_hash": "4fc3b58ff2bd91b8",
+            "quote_hash": "f478679eafa456e09b7ea1105cd64e086b5bcf55b5ef37d74f5cfd30c5ee5af0"
+          }
+        ]
+      },
+      {
+        "speaker": "Marc Stad",
+        "quote": "Anthropic is helping pull forward this future, as intelligence becomes an increasingly critical ingredient to the way businesses operate and how their products show up in the world",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "quote": "“Dragoneer has long partnered with companies building the technology that will shape our future. Anthropic is helping pull forward this future, as intelligence becomes an increasingly critical ingredient to the way businesses operate and how their products show up in the world,” said Marc Stad, Managing Partner at Dragoneer.",
+            "source_content_hash": "4fc3b58ff2bd91b8",
+            "quote_hash": "97a6b2df9388ad3676f3a6d0f29b5e52d9dc96b61ac4148df7e8bc538aa9711d"
+          }
+        ]
+      },
+      {
+        "speaker": "Neil Mehta",
+        "quote": "Anthropic has built an organization in which the world’s best researchers and engineers operate with unmatched clarity of purpose, because they believe this is the most important work they will ever do",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "quote": "“Anthropic has built an organization in which the world’s best researchers and engineers operate with unmatched clarity of purpose, because they believe this is the most important work they will ever do,” said Neil Mehta, Founder and Managing Partner at Greenoaks.",
+            "source_content_hash": "4fc3b58ff2bd91b8",
+            "quote_hash": "d3bd1a927a9330c26c0519ce7416c927cb0c75caac2f554f7ac27adc68894306"
+          }
+        ]
+      },
+      {
+        "speaker": "Alfred Lin",
+        "quote": "Startups and Global 5000 companies alike are deploying Claude to handle complex workflows, and in doing so, Claude is learning how businesses actually operate: the context, the processes, the judgment",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "quote": "“Startups and Global 5000 companies alike are deploying Claude to handle complex workflows, and in doing so, Claude is learning how businesses actually operate: the context, the processes, the judgment,” said Alfred Lin, Partner at Sequoia Capital.",
+            "source_content_hash": "4fc3b58ff2bd91b8",
+            "quote_hash": "2485c34fc1127093d107ce9c085459c65e08db6a51bd0598f7fffd984efd4758"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "本次 IPO 及私募配售以创纪录的 1073 亿美元融资额验证了 Anthropic 作为前沿 AI 实验室登陆公开市场的资本号召力。资本押注的核心变量是 Claude 在企业核心运营中的持续渗透与收入规模化能力：来源已验证其年化收入在 2026 年 11 月超过 470 亿美元，Claude Code 年化收入超过 25 亿美元，年支出超 100 万美元的客户超过 500 家。但本轮 IPO 的投资者名单未在来源中披露，无法判断具体资本构成；且高估值所依赖的收入增长能否持续、算力投入与安全研究之间的平衡仍待观察。",
+      "validated_signals": [
+        "年化收入在 2026 年 11 月超过 470 亿美元",
+        "Claude Code 年化收入超过 25 亿美元",
+        "年支出超 100 万美元的客户超过 500 家",
+        "财富 10 强中有 8 家是 Claude 客户",
+        "Claude 是唯一在亚马逊云科技、谷歌云和微软 Azure 三大云平台均可使用的前沿模型"
+      ],
+      "risks": [
+        "本轮 IPO 及私募配售的具体投资者名单未在来源中披露，资本构成不透明。",
+        "高估值依赖收入持续高速增长，若企业采用放缓或竞争加剧，收入增速可能不及预期。",
+        "大规模算力扩张需要持续资本投入，可能对利润率形成压力。",
+        "前沿 AI 模型面临安全、监管与版权等不确定性，可能影响商业化节奏。",
+        "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "model_api_service",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "use_case_ids": [
+        "software_development",
+        "data_analysis",
+        "sales",
+        "security_operations",
+        "research_discovery",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "sector": "前沿大语言模型与企业级AI平台",
+      "investment_thesis": {
+        "statement": "本次 IPO 及私募配售以创纪录的 1073 亿美元融资额验证了 Anthropic 作为前沿 AI 实验室登陆公开市场的资本号召力。资本押注的核心变量是 Claude 在企业核心运营中的持续渗透与收入规模化能力：来源已验证其年化收入在 2026 年 11 月超过 470 亿美元，Claude Code 年化收入超过 25 亿美元，年支出超 100 万美元的客户超过 500 家。但本轮 IPO 的投资者名单未在来源中披露，无法判断具体资本构成；且高估值所依赖的收入增长能否持续、算力投入与安全研究之间的平衡仍待观察。",
+        "evidence_signals": [
+          "年化收入在 2026 年 11 月超过 470 亿美元",
+          "Claude Code 年化收入超过 25 亿美元",
+          "年支出超 100 万美元的客户超过 500 家",
+          "财富 10 强中有 8 家是 Claude 客户",
+          "Claude 是唯一在亚马逊云科技、谷歌云和微软 Azure 三大云平台均可使用的前沿模型"
+        ],
+        "risks": [
+          "本轮 IPO 及私募配售的具体投资者名单未在来源中披露，资本构成不透明。",
+          "高估值依赖收入持续高速增长，若企业采用放缓或竞争加剧，收入增速可能不及预期。",
+          "大规模算力扩张需要持续资本投入，可能对利润率形成压力。",
+          "前沿 AI 模型面临安全、监管与版权等不确定性，可能影响商业化节奏。"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Claude",
+        "canonical_entity_id": "EN-729324072d368379",
+        "canonical_name": "Claude"
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Claude Code",
+        "canonical_entity_id": "EN-cb4754c48f8023d0",
+        "canonical_name": "Claude Code"
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Cowork",
+        "canonical_entity_id": "EN-5a4c2be958c0af72",
+        "canonical_name": "Cowork"
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Dario Amodei",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Daniela Amodei",
+        "canonical_entity_id": "EN-d17e509d9e3fe2ea",
+        "canonical_name": "Daniela Amodei"
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-638209012a462005",
+        "date": "2026-11-19",
+        "title": "Anthropic 从日本投资者处筹集 30 亿美元，作为大规模 IPO 轮次的一部分",
+        "amount": "$3 billion",
+        "source_refs": [
+          "SA-728e5f957725f0cf"
+        ]
+      },
+      {
+        "event_id": "EV-86f4e971f63b6cf2",
+        "date": "2026-11-18",
+        "title": "Anthropic 融资 1073 亿美元，超越 SpaceX 的纪录性上市",
+        "amount": "$107.3 billion",
+        "source_refs": [
+          "SA-d294327d6202b8e0"
+        ]
+      },
+      {
+        "event_id": "EV-823ca893b550b2f4",
+        "date": "2026-05-28",
+        "title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+        "amount": "$65 billion",
+        "source_refs": [
+          "SA-63034ac777904a9e"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-ae1418f223a3bc98",
+        "source_url": "https://www.bloomberg.com/news/articles/2026-11-18/anthropic-is-said-to-price-ipo-at-83-per-share",
+        "title": "Anthropic 融资 1073 亿美元，超越 SpaceX 的纪录性上市",
+        "publisher": "www.bloomberg.com",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-11-23T00:25:02.335Z",
+        "content_hash": "0f38ee781a80c7a29c13e628edc4e8b5902e3f50c8494ba54aa661c24227291a",
+        "source_artifact_id": "SA-d294327d6202b8e0",
+        "raw_id": "RAW-740433e92b3bd704"
+      },
+      {
+        "source_id": "FISRC-b5e22ae086a6b353",
+        "source_url": "https://www.anthropic.com/news/series-h",
+        "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+        "publisher": "anthropic.com",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-11-23T00:37:32.115Z",
+        "content_hash": "4fc3b58ff2bd91b8",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-b58bb99dfec2e318",
+        "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+        "title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation",
+        "publisher": "anthropic.com",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-11-23T00:37:32.221Z",
+        "content_hash": "2cafb4244b43dbcb",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-691ef2972c6cf646",
+        "source_url": "https://hofcapital.substack.com/p/why-we-invested-in-anthropic",
+        "title": "Why We Invested in Anthropic",
+        "publisher": "hofcapital.substack.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-11-23T00:37:33.297Z",
+        "content_hash": "1783c4b2b05798cb",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-11-23T00:37:47.442Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-11-23T00:37:47.442Z",
+    "customer_research": {
+      "status": "no_verified_customer_found",
+      "verified_customer_count": 0,
+      "searched_source_count": 4
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 3,
+        "total": 3,
+        "unresolved_names": []
+      },
+      "founders": {
+        "linked": 1,
+        "total": 2,
+        "unresolved_names": [
+          "Dario Amodei"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-86f4e971f63b6cf2"
+    ],
+    "aggregation": {
+      "key": "EN-c70eca6b0f88f44d|ipo",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"Anthropic\" 2026 funding round investors",
+    "\"Anthropic\" \"why we invested\""
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Anthropic\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"Anthropic\" $107.3 billion funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Anthropic\" official product customers",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Anthropic\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://medium.com/point-nine-news/why-we-invested-in-anthropic-88f504a65d2a",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.adamsstreetpartners.com/wp-content/uploads/2025/09/2025-09-04-Why-We-Invested-in-Anthropic_P.pdf",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.techflowpost.com/en-US/article/35544",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Anthropic\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Anthropic\" founders headquarters product",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    }
+  ]
+}

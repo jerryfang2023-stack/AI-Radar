@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -59,6 +59,7 @@
     "typeLabel": "技术",
     "valueId": "speech_audio",
     "eventIds": [
+      "EV-6b76983df1c13857",
       "EV-5c218a168bdb6617",
       "EV-9ea3912efd857ad8",
       "EV-3e92fba5502f1aba",
@@ -86,11 +87,11 @@
       "EV-631dce4dc135d01b"
     ],
     "entityIds": [
+      "EN-bbdefa2950f49882",
       "EN-fcddc483974db2b1",
       "EN-40a9543b0f7b0cf9",
       "EN-586937124e151c46",
       "EN-ec68d09e3a81e0ae",
-      "EN-bbdefa2950f49882",
       "EN-047364b9be67f665",
       "EN-e853b4e183ed0870",
       "EN-c608c4787821de1b",
@@ -109,9 +110,125 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-05-25",
-    "lastSeen": "2026-10-17"
+    "lastSeen": "2026-11-23"
   },
   "events": [
+    {
+      "id": "EV-6b76983df1c13857",
+      "dataDate": "2026-11-23",
+      "date": "2026-11-18",
+      "updatedDate": "2026-11-18",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "谷歌收购西雅图初创公司Howie及其AI日程安排助手",
+      "originalTitle": "Google acquires Seattle startup Howie and its AI scheduling assistant",
+      "subject": "Google",
+      "action": "acquires",
+      "object": "Seattle startup Howie and its AI scheduling assistant",
+      "metrics": [],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.geekwire.com/2026/google-acquires-seattle-startup-howie-and-its-ai-scheduling-assistant/",
+      "publisher": "www.geekwire.com"
+    },
     {
       "id": "EV-5c218a168bdb6617",
       "dataDate": "2026-10-17",
@@ -3129,100 +3246,6 @@
   ],
   "entities": [
     {
-      "id": "EN-fcddc483974db2b1",
-      "name": "SUAVE",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-5c218a168bdb6617"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-17"
-    },
-    {
-      "id": "EN-40a9543b0f7b0cf9",
-      "name": "Modulate",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-9ea3912efd857ad8"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-09-28",
-      "lastSeen": "2026-10-05"
-    },
-    {
-      "id": "EN-586937124e151c46",
-      "name": "Suno",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-3e92fba5502f1aba",
-        "EV-31579660b945ef01",
-        "EV-e857f9d1c1478c70",
-        "EV-47ff6ec7310fcb25",
-        "EV-333ce1a5838ced85"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
-      ],
-      "relatedEntityIds": [
-        "EN-39a37ee3a2b2c3c0"
-      ],
-      "firstSeen": "2026-06-03",
-      "lastSeen": "2026-10-02"
-    },
-    {
-      "id": "EN-ec68d09e3a81e0ae",
-      "name": "Universal Music Group",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-7f4e56e09d2328bb",
-        "EV-18d6eb742931df7b"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-09-10",
-      "lastSeen": "2026-09-12"
-    },
-    {
       "id": "EN-bbdefa2950f49882",
       "name": "Google",
       "entityType": "organization_candidate",
@@ -3235,6 +3258,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-6b76983df1c13857",
         "EV-3774a546c9f135e0",
         "EV-60e9751ddf436c14",
         "EV-86165eebaf4622fd",
@@ -3559,12 +3583,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-research_discovery",
+        "TX-industry-healthcare_life_sciences",
         "TX-technology-embodied_ai",
+        "TX-technology-speech_audio",
+        "TX-use_case-content_creation",
         "TX-technology-agentic_execution",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-financial_services",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-research_discovery",
         "TX-technology-open_weights",
         "TX-product_form-model",
         "TX-use_case-security_operations",
@@ -3578,7 +3604,6 @@
         "TX-use_case-software_development",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-speech_audio",
         "TX-target_user-consumer",
         "TX-technology-code_generation",
         "TX-use_case-sales",
@@ -3618,7 +3643,101 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-11-20"
+      "lastSeen": "2026-11-23"
+    },
+    {
+      "id": "EN-fcddc483974db2b1",
+      "name": "SUAVE",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5c218a168bdb6617"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-speech_audio",
+        "TX-use_case-content_creation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-17"
+    },
+    {
+      "id": "EN-40a9543b0f7b0cf9",
+      "name": "Modulate",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9ea3912efd857ad8"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-28",
+      "lastSeen": "2026-10-05"
+    },
+    {
+      "id": "EN-586937124e151c46",
+      "name": "Suno",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3e92fba5502f1aba",
+        "EV-31579660b945ef01",
+        "EV-e857f9d1c1478c70",
+        "EV-47ff6ec7310fcb25",
+        "EV-333ce1a5838ced85"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-speech_audio",
+        "TX-use_case-content_creation"
+      ],
+      "relatedEntityIds": [
+        "EN-39a37ee3a2b2c3c0"
+      ],
+      "firstSeen": "2026-06-03",
+      "lastSeen": "2026-10-02"
+    },
+    {
+      "id": "EN-ec68d09e3a81e0ae",
+      "name": "Universal Music Group",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7f4e56e09d2328bb",
+        "EV-18d6eb742931df7b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-speech_audio",
+        "TX-use_case-content_creation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-12"
     },
     {
       "id": "EN-047364b9be67f665",
@@ -3753,11 +3872,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-speech_audio",
         "TX-technology-agentic_execution",
         "TX-product_form-model",
         "TX-target_user-business_user",
         "TX-product_form-ai_device",
-        "TX-technology-speech_audio",
         "TX-technology-code_generation",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-data_analysis",
@@ -3776,7 +3895,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-11-20",
+      "lastSeen": "2026-11-23",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -3853,8 +3972,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-technology-speech_audio",
+        "TX-product_form-model",
         "TX-technology-code_generation"
       ],
       "relatedEntityIds": [
@@ -3900,6 +4019,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-speech_audio",
         "TX-technology-agentic_execution",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-financial_services",
@@ -3907,7 +4027,6 @@
         "TX-use_case-security_operations",
         "TX-industry-telecommunications",
         "TX-use_case-software_development",
-        "TX-technology-speech_audio",
         "TX-industry-retail_ecommerce",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
@@ -3964,8 +4083,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-technology-speech_audio",
+        "TX-product_form-model",
         "TX-technology-vision_language",
         "TX-technology-image_generation"
       ],
@@ -3988,9 +4107,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-technology-speech_audio",
         "TX-use_case-content_creation",
+        "TX-product_form-model",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
@@ -4342,14 +4461,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-research_discovery",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-food_hospitality",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
+        "TX-technology-speech_audio",
         "TX-technology-agentic_execution",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-financial_services",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-research_discovery",
         "TX-technology-open_weights",
         "TX-product_form-model",
         "TX-industry-legal_services",
@@ -4370,7 +4490,6 @@
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-target_user-researcher",
-        "TX-technology-speech_audio",
         "TX-industry-agriculture",
         "TX-industry-logistics_supply_chain",
         "TX-ai_market_application-models",
@@ -4426,7 +4545,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-20"
+      "lastSeen": "2026-11-23"
     },
     {
       "id": "EN-2b6e51bec93e86c1",
@@ -4512,11 +4631,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-research_discovery",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
+        "TX-technology-speech_audio",
         "TX-technology-agentic_execution",
         "TX-product_form-enterprise_software_platform",
-        "TX-use_case-research_discovery",
         "TX-product_form-model",
         "TX-use_case-security_operations",
         "TX-industry-media_entertainment",
@@ -4524,7 +4644,6 @@
         "TX-use_case-software_development",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-speech_audio",
         "TX-technology-code_generation",
         "TX-industry-aerospace_defense",
         "TX-technology-multimodal",
@@ -4541,7 +4660,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-11-20"
+      "lastSeen": "2026-11-23"
     },
     {
       "id": "EN-ed501d3e2d977553",
@@ -5155,11 +5274,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-research_discovery",
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-speech_audio",
+        "TX-use_case-content_creation",
         "TX-technology-agentic_execution",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-financial_services",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-research_discovery",
         "TX-technology-open_weights",
         "TX-product_form-model",
         "TX-industry-legal_services",
@@ -5171,8 +5292,6 @@
         "TX-target_user-developer",
         "TX-use_case-software_development",
         "TX-target_user-researcher",
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation",
         "TX-target_user-consumer",
         "TX-technology-code_generation",
         "TX-industry-aerospace_defense",
@@ -5223,7 +5342,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-20"
+      "lastSeen": "2026-11-23"
     },
     {
       "id": "EN-c8d65b5463695c98",

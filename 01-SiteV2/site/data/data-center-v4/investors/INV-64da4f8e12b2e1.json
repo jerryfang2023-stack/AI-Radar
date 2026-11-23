@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 5,
-    "historical_or_ambiguous_count": 4,
+    "historical_or_ambiguous_count": 5,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-06-03",
     "latest_disclosed_at": "2026-10-26",
     "role_counts": {
-      "historical_or_ambiguous": 4,
+      "historical_or_ambiguous": 5,
       "lead": 1,
       "participant": 4
     },
@@ -368,6 +368,38 @@
         ]
       },
       {
+        "activity_id": "IA-9be052ce8451bf6e",
+        "funding_insight_id": "FI-5ad216355273b280",
+        "event_ids": [
+          "EV-aab8ed97f5bf814a"
+        ],
+        "company_entity_id": "EN-85964dfe9c006cc9",
+        "company_canonical_entity_id": "",
+        "company_name": "深度求索",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "通过杭州程砚间接参与本轮",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9a4b55d98c86db98",
+            "source_url": "https://www.sohu.com/a/1104313751_180220?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "DeepSeek新一轮千亿级融资落地，31家出资人曝光",
+            "source_content_hash": "225252f31fe3ddc0",
+            "quote": "腾讯、宁德时代、中国移动等企业的关联方，均通过杭州程砚参与了DeepSeek第二轮融资。",
+            "quote_hash": "6697df8794349d4280c6f6eca32bddc9b92f91e4020a8e1e3f2dce57e23b8440"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-67891dce4fac088c",
         "funding_insight_id": "FI-23cabede97d0111d",
         "event_ids": [
@@ -496,6 +528,14 @@
         "source_content_hash": "b652dc815aea1925",
         "quote": "目前，达卯科技股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业",
         "quote_hash": "3ea31f36954c8902959b2b0d0e7a4636bb9a7524cc8abfbcde3f12b5937a02e9"
+      },
+      {
+        "source_id": "FISRC-9a4b55d98c86db98",
+        "source_url": "https://www.sohu.com/a/1104313751_180220?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "DeepSeek新一轮千亿级融资落地，31家出资人曝光",
+        "source_content_hash": "225252f31fe3ddc0",
+        "quote": "腾讯、宁德时代、中国移动等企业的关联方，均通过杭州程砚参与了DeepSeek第二轮融资。",
+        "quote_hash": "6697df8794349d4280c6f6eca32bddc9b92f91e4020a8e1e3f2dce57e23b8440"
       },
       {
         "source_id": "FISRC-67ccadc4294defd6",

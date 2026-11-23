@@ -1,0 +1,432 @@
+{
+  "event_id": "EV-638209012a462005",
+  "company_name": "Anthropic",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-649898e8dab981a6",
+    "triggered_by_event_id": "EV-638209012a462005",
+    "as_of_date": "2026-11-23",
+    "company": {
+      "entity_id": "EN-c70eca6b0f88f44d",
+      "name": "Anthropic PBC",
+      "full_name": "Anthropic PBC",
+      "website": "",
+      "summary": "Anthropic PBC 是 Claude 聊天机器人的开发商，正在推进首次公开募股。",
+      "headquarters": "",
+      "founders": [],
+      "team_size": {
+        "value": "",
+        "observed_at": "",
+        "evidence_refs": []
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-81eb2d733824ba63",
+          "quote": "Anthropic PBC raised about $3 billion from Japanese investors as part of its initial public offering",
+          "source_content_hash": "6cdd6007f7fb8b1c0e832acfbde72726448497177bbe66b4ccda18e39a81f1e9",
+          "quote_hash": "c78f14506bafa50b8a2cc0f13c2ca290d0f30cb3bef201bbec0e0a9df8c1150e"
+        },
+        {
+          "source_id": "FISRC-81eb2d733824ba63",
+          "quote": "The Claude chatbot maker sold 36.1 million Class A shares in the Japanese tranche",
+          "source_content_hash": "6cdd6007f7fb8b1c0e832acfbde72726448497177bbe66b4ccda18e39a81f1e9",
+          "quote_hash": "3e12aa4f8d307116789e18ff117377080eb63c1f46e68664205b2ee8a8140e33"
+        }
+      ],
+      "application_entity_id": "EN-c70eca6b0f88f44d",
+      "canonical_entity_consistent": true
+    },
+    "financing": {
+      "round": "IPO",
+      "amount": "$3 billion",
+      "total_raised": "",
+      "announced_at": "2026-11-19",
+      "investor_disclosure_status": "not_disclosed",
+      "investors": [],
+      "other_round_investors": [],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-81eb2d733824ba63",
+          "quote": "Anthropic PBC raised about $3 billion from Japanese investors as part of its initial public offering, the lower end of its planned range, according to a regulatory filing on Thursday.",
+          "source_content_hash": "6cdd6007f7fb8b1c0e832acfbde72726448497177bbe66b4ccda18e39a81f1e9",
+          "quote_hash": "0dd35d0c6db71ff1c294a580c60903949250fcaf38d835d45f853b855f21f44b"
+        },
+        {
+          "source_id": "FISRC-81eb2d733824ba63",
+          "quote": "The Claude chatbot maker sold 36.1 million Class A shares in the Japanese tranche after pricing its IPO at $83 per share, above the marketed range.",
+          "source_content_hash": "6cdd6007f7fb8b1c0e832acfbde72726448497177bbe66b4ccda18e39a81f1e9",
+          "quote_hash": "0e40ad93be8fb52fdb516844a020493d4d93bdaa1e793619baf566fde30c1d51"
+        }
+      ],
+      "round_code": "ipo",
+      "round_original": "IPO",
+      "amount_original": "$3 billion",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 3000000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "30 亿美元"
+      },
+      "total_raised_original": "",
+      "total_raised_normalized": {
+        "currency": "",
+        "value": null,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "undisclosed",
+        "display_zh": ""
+      },
+      "risk_markers": [
+        "investors_missing"
+      ],
+      "disclosures": [
+        {
+          "event_id": "EV-638209012a462005",
+          "round_original": "IPO",
+          "amount": "$3 billion",
+          "announced_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-81eb2d733824ba63",
+              "quote": "Anthropic PBC raised about $3 billion from Japanese investors as part of its initial public offering, the lower end of its planned range, according to a regulatory filing on Thursday.",
+              "source_content_hash": "6cdd6007f7fb8b1c0e832acfbde72726448497177bbe66b4ccda18e39a81f1e9",
+              "quote_hash": "0dd35d0c6db71ff1c294a580c60903949250fcaf38d835d45f853b855f21f44b"
+            },
+            {
+              "source_id": "FISRC-81eb2d733824ba63",
+              "quote": "The Claude chatbot maker sold 36.1 million Class A shares in the Japanese tranche after pricing its IPO at $83 per share, above the marketed range.",
+              "source_content_hash": "6cdd6007f7fb8b1c0e832acfbde72726448497177bbe66b4ccda18e39a81f1e9",
+              "quote_hash": "0e40ad93be8fb52fdb516844a020493d4d93bdaa1e793619baf566fde30c1d51"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "partially_disclosed"
+    },
+    "products": [
+      {
+        "name": "Claude",
+        "description": "Claude 是 Anthropic 的聊天机器人产品。",
+        "target_customers": "",
+        "features": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-81eb2d733824ba63",
+            "quote": "The Claude chatbot maker",
+            "source_content_hash": "6cdd6007f7fb8b1c0e832acfbde72726448497177bbe66b4ccda18e39a81f1e9",
+            "quote_hash": "1683c6bde99e8bf2a9f2ed82064fdb90c57a955e31cf62cdb49f2d780371ed52"
+          }
+        ],
+        "entity_id": "EN-729324072d368379"
+      }
+    ],
+    "customers": [],
+    "comparisons": [],
+    "metrics": [
+      {
+        "label": "日本部分IPO募资额",
+        "value": "$3 billion",
+        "observed_at": "2026-11-19",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-81eb2d733824ba63",
+            "quote": "Anthropic PBC raised about $3 billion from Japanese investors",
+            "source_content_hash": "6cdd6007f7fb8b1c0e832acfbde72726448497177bbe66b4ccda18e39a81f1e9",
+            "quote_hash": "41d35a4ba1418ddc29a481a23b8c342c364edc54919716019a527d7a3af4363a"
+          }
+        ]
+      },
+      {
+        "label": "日本部分售出Class A股数",
+        "value": "36.1 million",
+        "observed_at": "2026-11-19",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-81eb2d733824ba63",
+            "quote": "sold 36.1 million Class A shares in the Japanese tranche",
+            "source_content_hash": "6cdd6007f7fb8b1c0e832acfbde72726448497177bbe66b4ccda18e39a81f1e9",
+            "quote_hash": "c6559046b920f122da4508682b0ed60b967aa7bbfc96b892e84810d595e17fec"
+          }
+        ]
+      },
+      {
+        "label": "IPO发行价",
+        "value": "$83 per share",
+        "observed_at": "2026-11-19",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-81eb2d733824ba63",
+            "quote": "pricing its IPO at $83 per share",
+            "source_content_hash": "6cdd6007f7fb8b1c0e832acfbde72726448497177bbe66b4ccda18e39a81f1e9",
+            "quote_hash": "f39d612ae2ff94293298649a3de657b65d1040935321fcb22e5c78c6a41bd2ac"
+          }
+        ]
+      },
+      {
+        "label": "原计划日本部分售股区间下限",
+        "value": "38.5 million shares",
+        "observed_at": "2026-11-19",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-81eb2d733824ba63",
+            "quote": "below the 38.5 million to 50 million shares it had planned to sell",
+            "source_content_hash": "6cdd6007f7fb8b1c0e832acfbde72726448497177bbe66b4ccda18e39a81f1e9",
+            "quote_hash": "7ebeb5be0b7a2cb30d55efae566a15bb4e62777953dbf2aa465bbc480c1a688d"
+          }
+        ]
+      },
+      {
+        "label": "原计划日本部分售股区间上限",
+        "value": "50 million shares",
+        "observed_at": "2026-11-19",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-81eb2d733824ba63",
+            "quote": "below the 38.5 million to 50 million shares it had planned to sell",
+            "source_content_hash": "6cdd6007f7fb8b1c0e832acfbde72726448497177bbe66b4ccda18e39a81f1e9",
+            "quote_hash": "7ebeb5be0b7a2cb30d55efae566a15bb4e62777953dbf2aa465bbc480c1a688d"
+          }
+        ]
+      },
+      {
+        "label": "日本部分原预期募资区间下限",
+        "value": "$3 billion",
+        "observed_at": "2026-11-19",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-81eb2d733824ba63",
+            "quote": "with the Japan portion initially expected to raise $3 billion to $3.5 billion",
+            "source_content_hash": "6cdd6007f7fb8b1c0e832acfbde72726448497177bbe66b4ccda18e39a81f1e9",
+            "quote_hash": "8d34dfbe590a361ecef94f1cdb0879bca9a96eb2710faf74f6f9ff83d0b71598"
+          }
+        ]
+      },
+      {
+        "label": "日本部分原预期募资区间上限",
+        "value": "$3.5 billion",
+        "observed_at": "2026-11-19",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-81eb2d733824ba63",
+            "quote": "with the Japan portion initially expected to raise $3 billion to $3.5 billion",
+            "source_content_hash": "6cdd6007f7fb8b1c0e832acfbde72726448497177bbe66b4ccda18e39a81f1e9",
+            "quote_hash": "8d34dfbe590a361ecef94f1cdb0879bca9a96eb2710faf74f6f9ff83d0b71598"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "anthropic.com",
+        "quote": "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital, valuing the company at $965 billion post-money.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "quote": "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital, valuing the company at $965 billion post-money.",
+            "source_content_hash": "4fc3b58ff2bd91b8",
+            "quote_hash": "55425a86bcc5eefce0f24a7a04be20d9cae5f8670c10823f90ec6db210caf073"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "本次资本事件的核心变量是 Anthropic 的 IPO 日本部分定价与认购需求：公司以每股83美元售出3610万股Class A股，募资约30亿美元，处于原计划30亿至35亿美元区间的低端，且售股数量低于原计划的3850万至5000万股。已验证信号是发行价高于营销区间、日本部分成为2018年软银以来该国最大IPO；证据边界在于来源未披露具体日本投资方名称、累计融资额及估值，因此无法判断资本对长期增长的具体定价。",
+      "validated_signals": [
+        "IPO定价为每股83美元，高于营销区间",
+        "日本部分售出3610万股Class A股，募资约30亿美元",
+        "日本部分是2018年软银公司IPO以来该国最大首次公开发行"
+      ],
+      "risks": [
+        "日本部分募资额处于原计划区间低端，且售股数量低于原计划，显示需求或发行规模不及预期",
+        "来源未披露具体日本投资方名称，投资方结构不透明",
+        "来源未披露本次IPO整体估值或累计融资额，资本判断缺少估值锚点",
+        "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "end_user_application",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "sector": "AI聊天机器人与企业生产力工具",
+      "investment_thesis": {
+        "statement": "本次资本事件的核心变量是 Anthropic 的 IPO 日本部分定价与认购需求：公司以每股83美元售出3610万股Class A股，募资约30亿美元，处于原计划30亿至35亿美元区间的低端，且售股数量低于原计划的3850万至5000万股。已验证信号是发行价高于营销区间、日本部分成为2018年软银以来该国最大IPO；证据边界在于来源未披露具体日本投资方名称、累计融资额及估值，因此无法判断资本对长期增长的具体定价。",
+        "evidence_signals": [
+          "IPO定价为每股83美元，高于营销区间",
+          "日本部分售出3610万股Class A股，募资约30亿美元",
+          "日本部分是2018年软银公司IPO以来该国最大首次公开发行"
+        ],
+        "risks": [
+          "日本部分募资额处于原计划区间低端，且售股数量低于原计划，显示需求或发行规模不及预期",
+          "来源未披露具体日本投资方名称，投资方结构不透明",
+          "来源未披露本次IPO整体估值或累计融资额，资本判断缺少估值锚点"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Claude",
+        "canonical_entity_id": "EN-729324072d368379",
+        "canonical_name": "Claude"
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-638209012a462005",
+        "date": "2026-11-19",
+        "title": "Anthropic 从日本投资者处筹集 30 亿美元，作为大规模 IPO 轮次的一部分",
+        "amount": "$3 billion",
+        "source_refs": [
+          "SA-728e5f957725f0cf"
+        ]
+      },
+      {
+        "event_id": "EV-86f4e971f63b6cf2",
+        "date": "2026-11-18",
+        "title": "Anthropic 融资 1073 亿美元，超越 SpaceX 的纪录性上市",
+        "amount": "$107.3 billion",
+        "source_refs": [
+          "SA-d294327d6202b8e0"
+        ]
+      },
+      {
+        "event_id": "EV-823ca893b550b2f4",
+        "date": "2026-05-28",
+        "title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+        "amount": "$65 billion",
+        "source_refs": [
+          "SA-63034ac777904a9e"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-81eb2d733824ba63",
+        "source_url": "https://www.bloomberg.com/news/articles/2026-11-19/anthropic-raises-3-billion-in-japan-tranche-of-us-mega-ipo",
+        "title": "Anthropic 从日本投资者处筹集 30 亿美元，作为大规模 IPO 轮次的一部分",
+        "publisher": "www.bloomberg.com",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-11-23T00:25:01.684Z",
+        "content_hash": "6cdd6007f7fb8b1c0e832acfbde72726448497177bbe66b4ccda18e39a81f1e9",
+        "source_artifact_id": "SA-728e5f957725f0cf",
+        "raw_id": "RAW-8b12fad1e7743722"
+      },
+      {
+        "source_id": "FISRC-b5e22ae086a6b353",
+        "source_url": "https://www.anthropic.com/news/series-h",
+        "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+        "publisher": "anthropic.com",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-11-23T00:37:32.115Z",
+        "content_hash": "4fc3b58ff2bd91b8",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-11-23T00:37:59.216Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-11-23T00:37:59.216Z",
+    "customer_research": {
+      "status": "no_verified_customer_found",
+      "verified_customer_count": 0,
+      "searched_source_count": 2
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 1,
+        "total": 1,
+        "unresolved_names": []
+      },
+      "founders": {
+        "linked": 0,
+        "total": 0,
+        "unresolved_names": []
+      }
+    },
+    "source_event_ids": [
+      "EV-638209012a462005"
+    ],
+    "aggregation": {
+      "key": "EN-c70eca6b0f88f44d|ipo",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"Anthropic\" 2026 funding round investors",
+    "\"Anthropic\" \"why we invested\""
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Anthropic\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"Anthropic\" $3 billion funding announcement",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Anthropic\" official product customers",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Anthropic\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.adamsstreetpartners.com/wp-content/uploads/2025/09/2025-09-04-Why-We-Invested-in-Anthropic_P.pdf",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Anthropic\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Anthropic\" founders headquarters product",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    }
+  ]
+}

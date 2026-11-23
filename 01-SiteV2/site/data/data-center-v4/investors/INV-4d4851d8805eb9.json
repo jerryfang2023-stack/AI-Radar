@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,25 +61,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-01-29",
-    "latest_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-11-20",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "first_external",
       "other"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-85964dfe9c006cc9",
+        "canonical_entity_id": "",
+        "name": "深度求索"
+      },
       {
         "entity_id": "EN-c5896393cf4ac788",
         "canonical_entity_id": "EN-c5896393cf4ac788",
@@ -92,6 +97,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-4543271f09ded2ad",
+        "funding_insight_id": "FI-5ad216355273b280",
+        "event_ids": [
+          "EV-aab8ed97f5bf814a"
+        ],
+        "company_entity_id": "EN-85964dfe9c006cc9",
+        "company_canonical_entity_id": "",
+        "company_name": "深度求索",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "第二轮融资",
+        "amount_original": "1000 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 亿元"
+        },
+        "announced_at": "2026-11-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9a4b55d98c86db98",
+            "source_url": "https://www.sohu.com/a/1104313751_180220?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "DeepSeek新一轮千亿级融资落地，31家出资人曝光",
+            "source_content_hash": "225252f31fe3ddc0",
+            "quote": "DeepSeek原有的四名股东中，国家人工智能产业投资基金在本轮增持。",
+            "quote_hash": "50a45ead97e97461ae5a25a7c35ccb973212987f02b0217a1bde2cb67638b508"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3a64567e9f165d4b",
         "funding_insight_id": "FI-71c58a10a93101c8",
@@ -240,6 +285,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-9a4b55d98c86db98",
+        "source_url": "https://www.sohu.com/a/1104313751_180220?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "DeepSeek新一轮千亿级融资落地，31家出资人曝光",
+        "source_content_hash": "225252f31fe3ddc0",
+        "quote": "DeepSeek原有的四名股东中，国家人工智能产业投资基金在本轮增持。",
+        "quote_hash": "50a45ead97e97461ae5a25a7c35ccb973212987f02b0217a1bde2cb67638b508"
+      },
+      {
         "source_id": "FISRC-d2c8c841370ed82a",
         "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
         "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
@@ -316,16 +369,16 @@
           "source_id": "national_ai_fund_2026_shareholder"
         },
         {
+          "description": "融资来源记录：深度求索 · 其他融资 · 2026-11-20 · 本轮参投 · 1000 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9a4b55d98c86db98"
+        },
+        {
           "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投（唯一拥有直接投票权的投资方） · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d2c8c841370ed82a"
         },
         {
           "description": "融资来源记录：长亭科技 · 其他融资 · 2026-01-29 · 本轮参投 · 5亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4fe23845696fb5f2"
-        },
-        {
-          "description": "融资来源记录：DeepSeek · 历史轮次未披露 · 首轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-947d23e1d1abb833"
         }
       ],
       "profile_type": "organization",
@@ -351,6 +404,14 @@
           "quote_hash": "23bae83eca5c1fe681e9f1e041f6c3c1c06adea2ada2894336acd4aafacc1a9d"
         },
         {
+          "source_id": "FISRC-9a4b55d98c86db98",
+          "source_url": "https://www.sohu.com/a/1104313751_180220?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "source_title": "DeepSeek新一轮千亿级融资落地，31家出资人曝光",
+          "source_content_hash": "225252f31fe3ddc0",
+          "quote": "DeepSeek原有的四名股东中，国家人工智能产业投资基金在本轮增持。",
+          "quote_hash": "50a45ead97e97461ae5a25a7c35ccb973212987f02b0217a1bde2cb67638b508"
+        },
+        {
           "source_id": "FISRC-d2c8c841370ed82a",
           "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
           "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
@@ -365,14 +426,6 @@
           "source_content_hash": "b764c6638c521cc9",
           "quote": "投资人包括国家人工智能产业投资基金，上海国际集团旗下国方创新，北京市人工智能产业投资基金。",
           "quote_hash": "d4e8f7444a626c3a00cf012a0115c7c61c1fe62a41056d12dba1084ec55a7289"
-        },
-        {
-          "source_id": "FISRC-947d23e1d1abb833",
-          "source_url": "https://aitop.news/item/11276",
-          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资，510 亿元到账",
-          "source_content_hash": "d57814649739d8b7",
-          "quote": "投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金",
-          "quote_hash": "4663bf475b46d04402f8eb35adfe5bdc4e4c7a4e38e3ca05ac8bf8b016ae90a3"
         }
       ],
       "last_verified_at": "2026-09-26"

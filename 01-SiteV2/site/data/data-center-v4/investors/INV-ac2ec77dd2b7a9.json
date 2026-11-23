@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-10-01",
+    "latest_disclosed_at": "2026-11-19",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
       "lead": 2,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
@@ -92,6 +92,11 @@
         "entity_id": "EN-8bacc14fb816a980",
         "canonical_entity_id": "",
         "name": "Arceus Legal"
+      },
+      {
+        "entity_id": "EN-caace168219ba2e2",
+        "canonical_entity_id": "",
+        "name": "Boltz"
       },
       {
         "entity_id": "EN-e88ecf834fa37e5a",
@@ -115,6 +120,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-509f3590c4dd9dfc",
+        "funding_insight_id": "FI-ea107fa7dfd1f452",
+        "event_ids": [
+          "EV-588d12fcfaaf7527"
+        ],
+        "company_entity_id": "EN-caace168219ba2e2",
+        "company_canonical_entity_id": "",
+        "company_name": "Boltz",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$110m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 110000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.1 亿美元"
+        },
+        "announced_at": "2026-11-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ece11f408f6f43fa",
+            "source_url": "https://dealroom.co/news/174542-london-s-boltz-raises-110m-series-a-led-by-bessemer-to-scale-its-ai-mode/",
+            "source_title": "London's Boltz raises $110M Series A led by Bessemer to scale its AI models for drug discovery",
+            "source_content_hash": "4d4ce7485589656c",
+            "quote": "Existing backers Andreessen Horowitz, Amplify Partners, Zetta Venture Partners and Obvious Ventures all invested again, joined by new investors Greycroft, F-Prime Capital, Hummingbird and Benchling.",
+            "quote_hash": "4b28dd02a98f9f115f803e30da9d2ec984ae0c711524bb8f91646d38a888440f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-0aa30147042a1f82",
         "funding_insight_id": "FI-f39e8c7f4d280bac",
@@ -399,6 +444,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ece11f408f6f43fa",
+        "source_url": "https://dealroom.co/news/174542-london-s-boltz-raises-110m-series-a-led-by-bessemer-to-scale-its-ai-mode/",
+        "source_title": "London's Boltz raises $110M Series A led by Bessemer to scale its AI models for drug discovery",
+        "source_content_hash": "4d4ce7485589656c",
+        "quote": "Existing backers Andreessen Horowitz, Amplify Partners, Zetta Venture Partners and Obvious Ventures all invested again, joined by new investors Greycroft, F-Prime Capital, Hummingbird and Benchling.",
+        "quote_hash": "4b28dd02a98f9f115f803e30da9d2ec984ae0c711524bb8f91646d38a888440f"
+      },
+      {
         "source_id": "FISRC-54220f8d78441b23",
         "source_url": "https://www.artificiallawyer.com/2026/10/01/new-model-law-firm-arceus-raises-17m/",
         "source_title": "新模型律所Arceus融资1700万美元",
@@ -508,12 +561,12 @@
           "source_id": "greycroft_investments"
         },
         {
-          "description": "融资来源记录：Arceus Legal · 轮次未披露 · 2026-10-01 · 本轮领投 · $17 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-54220f8d78441b23"
+          "description": "融资来源记录：Boltz · A轮 · 2026-11-19 · 本轮参投 · $110m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ece11f408f6f43fa"
         },
         {
-          "description": "融资来源记录：Dazzle · 种子轮 · 2026-09-29 · 本轮参投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-39cbb5f315cdae11"
+          "description": "融资来源记录：Arceus Legal · 轮次未披露 · 2026-10-01 · 本轮领投 · $17 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-54220f8d78441b23"
         }
       ],
       "contacts": [
@@ -579,6 +632,14 @@
           "quote_hash": "c60ac9f3d066b42d62971147c4f89974f4412cded8d0edeeef8024a3caf034e6"
         },
         {
+          "source_id": "FISRC-ece11f408f6f43fa",
+          "source_url": "https://dealroom.co/news/174542-london-s-boltz-raises-110m-series-a-led-by-bessemer-to-scale-its-ai-mode/",
+          "source_title": "London's Boltz raises $110M Series A led by Bessemer to scale its AI models for drug discovery",
+          "source_content_hash": "4d4ce7485589656c",
+          "quote": "Existing backers Andreessen Horowitz, Amplify Partners, Zetta Venture Partners and Obvious Ventures all invested again, joined by new investors Greycroft, F-Prime Capital, Hummingbird and Benchling.",
+          "quote_hash": "4b28dd02a98f9f115f803e30da9d2ec984ae0c711524bb8f91646d38a888440f"
+        },
+        {
           "source_id": "FISRC-54220f8d78441b23",
           "source_url": "https://www.artificiallawyer.com/2026/10/01/new-model-law-firm-arceus-raises-17m/",
           "source_title": "新模型律所Arceus融资1700万美元",
@@ -593,14 +654,6 @@
           "source_content_hash": "f430492d981a90c520ea713271818099a7fc71620f0a2bccc8a967aed486c7c1",
           "quote": "Greycroft LP led the round, with participation from Craft Ventures Management, South Park Commons Management and other investors.",
           "quote_hash": "16e82e23b4fe6222edf4f1fa3be8ff168135fa6e47540af34ed00b3390db238e"
-        },
-        {
-          "source_id": "FISRC-39cbb5f315cdae11",
-          "source_url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/marissa-mayers-new-startup-dazzle-ai-raises-8-million-seed-round",
-          "source_title": "Marissa Mayer's New Startup Dazzle AI Raises $8 Million Seed Round | Financial Post",
-          "source_content_hash": "0d32e048dc28b8dd",
-          "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
-          "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
         }
       ],
       "last_verified_at": "2026-09-25",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,31 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-02",
-    "latest_disclosed_at": "2026-10-06",
+    "latest_disclosed_at": "2026-11-20",
     "role_counts": {
-      "lead": 2
+      "lead": 2,
+      "participant": 1
     },
     "round_codes": [
       "series_a",
-      "series_b"
+      "series_b",
+      "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-e226306f3f87b8f3",
+        "canonical_entity_id": "",
+        "name": "Archer (formerly hackajob)"
+      },
       {
         "entity_id": "EN-5a291fd1ab842f58",
         "canonical_entity_id": "",
@@ -91,6 +98,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-81b96c84adba6442",
+        "funding_insight_id": "FI-90a8c5ae6bf9badf",
+        "event_ids": [
+          "EV-046c930606b5976d"
+        ],
+        "company_entity_id": "EN-e226306f3f87b8f3",
+        "company_canonical_entity_id": "",
+        "company_name": "Archer (formerly hackajob)",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-11-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7d9d9511f44cb118",
+            "source_url": "https://tech.eu/2026/11/20/archer-raises-10m-to-connect-recruiters-and-job-seekers-with-ai/",
+            "source_title": "Archer 融资 1000 万美元，用 AI 连接招聘人员与求职者",
+            "source_content_hash": "25455a85e38a3f74a0893b8080aa1efa7501f3a3ba5efac69d534a01bb3974c2",
+            "quote": "with participation from existing investor AVP",
+            "quote_hash": "ce1e725d0d8cec49191db23a567105623ef1a3420b9f0af448e226d5f494fa7f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-41d6bd5f48ea79ea",
         "funding_insight_id": "FI-392a13f7be831601",
@@ -174,6 +221,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-7d9d9511f44cb118",
+        "source_url": "https://tech.eu/2026/11/20/archer-raises-10m-to-connect-recruiters-and-job-seekers-with-ai/",
+        "source_title": "Archer 融资 1000 万美元，用 AI 连接招聘人员与求职者",
+        "source_content_hash": "25455a85e38a3f74a0893b8080aa1efa7501f3a3ba5efac69d534a01bb3974c2",
+        "quote": "with participation from existing investor AVP",
+        "quote_hash": "ce1e725d0d8cec49191db23a567105623ef1a3420b9f0af448e226d5f494fa7f"
+      },
+      {
         "source_id": "FISRC-208499227defc99f",
         "source_url": "https://www.eu-startups.com/2026/10/paris-based-whitelab-genomics-raises-e23-2-million-to-accelerate-ai-driven-genomic-medicine-development/",
         "source_title": "总部位于巴黎的WhiteLab Genomics融资2320万欧元，以加速AI驱动的基因组药物开发",
@@ -195,10 +250,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "AVP 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "AVP 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Archer (formerly hackajob) · 轮次未披露 · 2026-11-20 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7d9d9511f44cb118"
+        },
         {
           "description": "融资来源记录：WhiteLab Genomics · B轮 · 2026-10-06 · 本轮领投 · €23.2 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-208499227defc99f"
@@ -210,6 +269,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-7d9d9511f44cb118",
+          "source_url": "https://tech.eu/2026/11/20/archer-raises-10m-to-connect-recruiters-and-job-seekers-with-ai/",
+          "source_title": "Archer 融资 1000 万美元，用 AI 连接招聘人员与求职者",
+          "source_content_hash": "25455a85e38a3f74a0893b8080aa1efa7501f3a3ba5efac69d534a01bb3974c2",
+          "quote": "with participation from existing investor AVP",
+          "quote_hash": "ce1e725d0d8cec49191db23a567105623ef1a3420b9f0af448e226d5f494fa7f"
+        },
         {
           "source_id": "FISRC-208499227defc99f",
           "source_url": "https://www.eu-startups.com/2026/10/paris-based-whitelab-genomics-raises-e23-2-million-to-accelerate-ai-driven-genomic-medicine-development/",

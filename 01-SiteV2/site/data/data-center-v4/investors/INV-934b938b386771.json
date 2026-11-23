@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-10-14",
-    "latest_disclosed_at": "2026-10-14",
+    "latest_disclosed_at": "2026-11-20",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
-      "other"
+      "other",
+      "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-e226306f3f87b8f3",
+        "canonical_entity_id": "",
+        "name": "Archer (formerly hackajob)"
+      },
       {
         "entity_id": "EN-7c0378479c6745b0",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-eb2d60836e149755",
+        "funding_insight_id": "FI-90a8c5ae6bf9badf",
+        "event_ids": [
+          "EV-046c930606b5976d"
+        ],
+        "company_entity_id": "EN-e226306f3f87b8f3",
+        "company_canonical_entity_id": "",
+        "company_name": "Archer (formerly hackajob)",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "轮次未披露",
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-11-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7d9d9511f44cb118",
+            "source_url": "https://tech.eu/2026/11/20/archer-raises-10m-to-connect-recruiters-and-job-seekers-with-ai/",
+            "source_title": "Archer 融资 1000 万美元，用 AI 连接招聘人员与求职者",
+            "source_content_hash": "25455a85e38a3f74a0893b8080aa1efa7501f3a3ba5efac69d534a01bb3974c2",
+            "quote": "a round led by Volition Capital",
+            "quote_hash": "1e73b305b174fd2174980f1e4d384090798a5d9399ee2eef98d2f8371136be21"
+          }
+        ]
+      },
       {
         "activity_id": "IA-35481e807fcf10bf",
         "funding_insight_id": "FI-cc2acd63ebb21b03",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-7d9d9511f44cb118",
+        "source_url": "https://tech.eu/2026/11/20/archer-raises-10m-to-connect-recruiters-and-job-seekers-with-ai/",
+        "source_title": "Archer 融资 1000 万美元，用 AI 连接招聘人员与求职者",
+        "source_content_hash": "25455a85e38a3f74a0893b8080aa1efa7501f3a3ba5efac69d534a01bb3974c2",
+        "quote": "a round led by Volition Capital",
+        "quote_hash": "1e73b305b174fd2174980f1e4d384090798a5d9399ee2eef98d2f8371136be21"
+      },
+      {
         "source_id": "FISRC-37e19e2fe69b962c",
         "source_url": "https://dealroom.co/news/162505-tamr-raises-21m-to-build-ai-native-data-management/",
         "source_title": "Tamr 融资 2100 万美元，构建 AI 原生数据管理",
@@ -141,10 +195,14 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Volition Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Volition Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Archer (formerly hackajob) · 轮次未披露 · 2026-11-20 · 本轮领投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7d9d9511f44cb118"
+        },
         {
           "description": "融资来源记录：Tamr · 其他融资 · 2026-10-14 · 本轮领投 · $21M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-37e19e2fe69b962c"
@@ -152,6 +210,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-7d9d9511f44cb118",
+          "source_url": "https://tech.eu/2026/11/20/archer-raises-10m-to-connect-recruiters-and-job-seekers-with-ai/",
+          "source_title": "Archer 融资 1000 万美元，用 AI 连接招聘人员与求职者",
+          "source_content_hash": "25455a85e38a3f74a0893b8080aa1efa7501f3a3ba5efac69d534a01bb3974c2",
+          "quote": "a round led by Volition Capital",
+          "quote_hash": "1e73b305b174fd2174980f1e4d384090798a5d9399ee2eef98d2f8371136be21"
+        },
         {
           "source_id": "FISRC-37e19e2fe69b962c",
           "source_url": "https://dealroom.co/news/162505-tamr-raises-21m-to-build-ai-native-data-management/",

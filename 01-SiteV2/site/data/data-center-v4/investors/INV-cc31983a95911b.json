@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,79 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-11-19",
+    "latest_disclosed_at": "2026-11-19",
     "role_counts": {
+      "co_lead": 1,
       "historical_or_ambiguous": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-4acb5d021cd5eed4",
+        "canonical_entity_id": "",
+        "name": "LATO"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-d3ccba03a8ad9d8a",
+        "funding_insight_id": "FI-61142ae0e9616dc5",
+        "event_ids": [
+          "EV-fa5950b871b08d52"
+        ],
+        "company_entity_id": "EN-4acb5d021cd5eed4",
+        "company_canonical_entity_id": "",
+        "company_name": "LATO",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$4.7 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "470 万美元"
+        },
+        "announced_at": "2026-11-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-2c6ef9e7725b0d1d",
+            "source_url": "https://tech.eu/2026/11/19/lato-secures-47m-to-automate-customer-and-expert-interviews-with-ai/",
+            "source_title": "LATO 获 470 万美元融资，用 AI 自动化客户与专家访谈",
+            "source_content_hash": "2ed497ba4bd1b8ff143444a5428e57c1aaed402a683607035203b043988251e2",
+            "quote": "AI-powered market research platform LATO has raised $4.7 million in a seed funding round co-led by Air Street Capital and Axiom Partners.",
+            "quote_hash": "0007c5f852ab878db166cc2edce3530eb91d514f4a347f5b291bad256af2c9db"
+          },
+          {
+            "source_id": "FISRC-9ce5c4314dbde151",
+            "source_url": "https://techfundingnews.com/yc-backed-lato-raises-4-7m-seed-to-put-ai-agents-on-private-equitys-due-diligence-calls/",
+            "source_title": "YC-backed LATO raises $4.7M seed to put AI agents on private equity’s due diligence calls",
+            "source_content_hash": "2f3705b84fffb136",
+            "quote": "Air Street Capital and Axiom Partners co-led LATO’s $4.7M seed round.",
+            "quote_hash": "0b354cbba679d831c1ff7ccda3cef0ae22e66d9e1bea2e412c7dc5816869540d"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e4ba3a74baec58b0",
         "funding_insight_id": "FI-479f9d5c1123dba2",
@@ -111,6 +168,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-2c6ef9e7725b0d1d",
+        "source_url": "https://tech.eu/2026/11/19/lato-secures-47m-to-automate-customer-and-expert-interviews-with-ai/",
+        "source_title": "LATO 获 470 万美元融资，用 AI 自动化客户与专家访谈",
+        "source_content_hash": "2ed497ba4bd1b8ff143444a5428e57c1aaed402a683607035203b043988251e2",
+        "quote": "AI-powered market research platform LATO has raised $4.7 million in a seed funding round co-led by Air Street Capital and Axiom Partners.",
+        "quote_hash": "0007c5f852ab878db166cc2edce3530eb91d514f4a347f5b291bad256af2c9db"
+      },
+      {
+        "source_id": "FISRC-9ce5c4314dbde151",
+        "source_url": "https://techfundingnews.com/yc-backed-lato-raises-4-7m-seed-to-put-ai-agents-on-private-equitys-due-diligence-calls/",
+        "source_title": "YC-backed LATO raises $4.7M seed to put AI agents on private equity’s due diligence calls",
+        "source_content_hash": "2f3705b84fffb136",
+        "quote": "Air Street Capital and Axiom Partners co-led LATO’s $4.7M seed round.",
+        "quote_hash": "0b354cbba679d831c1ff7ccda3cef0ae22e66d9e1bea2e412c7dc5816869540d"
+      },
       {
         "source_id": "FISRC-413e994d081f8e0f",
         "source_url": "https://awesomeagents.ai/news/odyssey-amazon-310m-world-models/",
@@ -178,6 +251,10 @@
         {
           "description": "A report about Odyssey ML’s Series B lists Air Street Capital as an investor in an earlier seed round.",
           "source_id": "FISRC-413e994d081f8e0f"
+        },
+        {
+          "description": "融资来源记录：LATO · 种子轮 · 2026-11-19 · 本轮联合领投 · $4.7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2c6ef9e7725b0d1d"
         }
       ],
       "contacts": [
@@ -228,6 +305,22 @@
           "source_content_hash": "37401997b6a46d75",
           "quote": "Seed $9M undisclosed Google Ventures, DCVC, Air Street Capital 2024",
           "quote_hash": "c72c02150af958eba4fc5f78b4a6886cfc8ef25883e8c439f9b74e131010d193"
+        },
+        {
+          "source_id": "FISRC-2c6ef9e7725b0d1d",
+          "source_url": "https://tech.eu/2026/11/19/lato-secures-47m-to-automate-customer-and-expert-interviews-with-ai/",
+          "source_title": "LATO 获 470 万美元融资，用 AI 自动化客户与专家访谈",
+          "source_content_hash": "2ed497ba4bd1b8ff143444a5428e57c1aaed402a683607035203b043988251e2",
+          "quote": "AI-powered market research platform LATO has raised $4.7 million in a seed funding round co-led by Air Street Capital and Axiom Partners.",
+          "quote_hash": "0007c5f852ab878db166cc2edce3530eb91d514f4a347f5b291bad256af2c9db"
+        },
+        {
+          "source_id": "FISRC-9ce5c4314dbde151",
+          "source_url": "https://techfundingnews.com/yc-backed-lato-raises-4-7m-seed-to-put-ai-agents-on-private-equitys-due-diligence-calls/",
+          "source_title": "YC-backed LATO raises $4.7M seed to put AI agents on private equity’s due diligence calls",
+          "source_content_hash": "2f3705b84fffb136",
+          "quote": "Air Street Capital and Axiom Partners co-led LATO’s $4.7M seed round.",
+          "quote_hash": "0b354cbba679d831c1ff7ccda3cef0ae22e66d9e1bea2e412c7dc5816869540d"
         }
       ],
       "last_verified_at": "2026-09-27"

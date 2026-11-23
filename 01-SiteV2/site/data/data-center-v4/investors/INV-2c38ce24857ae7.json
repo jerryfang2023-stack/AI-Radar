@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,26 +61,32 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-17",
-    "latest_disclosed_at": "2026-10-14",
+    "latest_disclosed_at": "2026-11-19",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "seed",
+      "series_a",
       "series_d",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-caace168219ba2e2",
+        "canonical_entity_id": "",
+        "name": "Boltz"
+      },
       {
         "entity_id": "EN-450dcf23e621ff10",
         "canonical_entity_id": "",
@@ -103,6 +109,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2325a7721186650d",
+        "funding_insight_id": "FI-ea107fa7dfd1f452",
+        "event_ids": [
+          "EV-588d12fcfaaf7527"
+        ],
+        "company_entity_id": "EN-caace168219ba2e2",
+        "company_canonical_entity_id": "",
+        "company_name": "Boltz",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$110m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 110000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.1 亿美元"
+        },
+        "announced_at": "2026-11-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ece11f408f6f43fa",
+            "source_url": "https://dealroom.co/news/174542-london-s-boltz-raises-110m-series-a-led-by-bessemer-to-scale-its-ai-mode/",
+            "source_title": "London's Boltz raises $110M Series A led by Bessemer to scale its AI models for drug discovery",
+            "source_content_hash": "4d4ce7485589656c",
+            "quote": "Existing backers Andreessen Horowitz, Amplify Partners, Zetta Venture Partners and Obvious Ventures all invested again, joined by new investors Greycroft, F-Prime Capital, Hummingbird and Benchling.",
+            "quote_hash": "4b28dd02a98f9f115f803e30da9d2ec984ae0c711524bb8f91646d38a888440f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-97f7f3a824d85821",
         "funding_insight_id": "FI-7feeaf543574b27d",
@@ -370,6 +416,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ece11f408f6f43fa",
+        "source_url": "https://dealroom.co/news/174542-london-s-boltz-raises-110m-series-a-led-by-bessemer-to-scale-its-ai-mode/",
+        "source_title": "London's Boltz raises $110M Series A led by Bessemer to scale its AI models for drug discovery",
+        "source_content_hash": "4d4ce7485589656c",
+        "quote": "Existing backers Andreessen Horowitz, Amplify Partners, Zetta Venture Partners and Obvious Ventures all invested again, joined by new investors Greycroft, F-Prime Capital, Hummingbird and Benchling.",
+        "quote_hash": "4b28dd02a98f9f115f803e30da9d2ec984ae0c711524bb8f91646d38a888440f"
+      },
+      {
         "source_id": "FISRC-b54b83abf2f3608c",
         "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
         "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
@@ -489,16 +543,16 @@
           "source_id": "amplify_official_portfolio"
         },
         {
+          "description": "融资来源记录：Boltz · A轮 · 2026-11-19 · 本轮参投 · $110m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ece11f408f6f43fa"
+        },
+        {
           "description": "融资来源记录：Modal · D轮 · 2026-10-14 · 本轮参投 · $750 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b54b83abf2f3608c"
         },
         {
           "description": "融资来源记录：Engram · 轮次未披露 · 2026-06-23 · 本轮参投 · $98 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8f5a35fa6bbc977d"
-        },
-        {
-          "description": "融资来源记录：Engram · 种子轮 · 2026-06-23 · 本轮参投 · $98M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-39d911c5038cb1c0"
         }
       ],
       "contacts": [
@@ -536,6 +590,14 @@
           "quote_hash": "20f0fa198f9c751f7ee613e09acba365fc863b690c585e23cbea389adce9d1f8"
         },
         {
+          "source_id": "FISRC-ece11f408f6f43fa",
+          "source_url": "https://dealroom.co/news/174542-london-s-boltz-raises-110m-series-a-led-by-bessemer-to-scale-its-ai-mode/",
+          "source_title": "London's Boltz raises $110M Series A led by Bessemer to scale its AI models for drug discovery",
+          "source_content_hash": "4d4ce7485589656c",
+          "quote": "Existing backers Andreessen Horowitz, Amplify Partners, Zetta Venture Partners and Obvious Ventures all invested again, joined by new investors Greycroft, F-Prime Capital, Hummingbird and Benchling.",
+          "quote_hash": "4b28dd02a98f9f115f803e30da9d2ec984ae0c711524bb8f91646d38a888440f"
+        },
+        {
           "source_id": "FISRC-b54b83abf2f3608c",
           "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
           "source_title": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
@@ -550,14 +612,6 @@
           "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
           "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab.",
           "quote_hash": "42b1511883b23468e7b7d7735d0907aa3cd55bf26be07ab642ceca70cd1a4958"
-        },
-        {
-          "source_id": "FISRC-39d911c5038cb1c0",
-          "source_url": "https://theaiinsider.tech/2026/07/01/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization/",
-          "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
-          "source_content_hash": "f7105d727554bb38",
-          "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo",
-          "quote_hash": "d6d2e6175424260b5170a8e5367eac93875a636a037b0e4d21c7a38705fd06e4"
         }
       ],
       "last_verified_at": "2026-09-25",

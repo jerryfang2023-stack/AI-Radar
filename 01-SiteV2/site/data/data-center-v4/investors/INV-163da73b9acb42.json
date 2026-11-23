@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-07",
-    "latest_disclosed_at": "2026-05-07",
+    "latest_disclosed_at": "2026-11-19",
     "role_counts": {
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-caace168219ba2e2",
+        "canonical_entity_id": "",
+        "name": "Boltz"
+      },
       {
         "entity_id": "EN-8dab79468baaa8b0",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-59a5b3a727393bf5",
+        "funding_insight_id": "FI-ea107fa7dfd1f452",
+        "event_ids": [
+          "EV-588d12fcfaaf7527"
+        ],
+        "company_entity_id": "EN-caace168219ba2e2",
+        "company_canonical_entity_id": "",
+        "company_name": "Boltz",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$110m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 110000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.1 亿美元"
+        },
+        "announced_at": "2026-11-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ece11f408f6f43fa",
+            "source_url": "https://dealroom.co/news/174542-london-s-boltz-raises-110m-series-a-led-by-bessemer-to-scale-its-ai-mode/",
+            "source_title": "London's Boltz raises $110M Series A led by Bessemer to scale its AI models for drug discovery",
+            "source_content_hash": "4d4ce7485589656c",
+            "quote": "Existing backers Andreessen Horowitz, Amplify Partners, Zetta Venture Partners and Obvious Ventures all invested again, joined by new investors Greycroft, F-Prime Capital, Hummingbird and Benchling.",
+            "quote_hash": "4b28dd02a98f9f115f803e30da9d2ec984ae0c711524bb8f91646d38a888440f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-055eb32dcaa18fc8",
         "funding_insight_id": "FI-24925ce28eee3cab",
@@ -127,6 +173,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-ece11f408f6f43fa",
+        "source_url": "https://dealroom.co/news/174542-london-s-boltz-raises-110m-series-a-led-by-bessemer-to-scale-its-ai-mode/",
+        "source_title": "London's Boltz raises $110M Series A led by Bessemer to scale its AI models for drug discovery",
+        "source_content_hash": "4d4ce7485589656c",
+        "quote": "Existing backers Andreessen Horowitz, Amplify Partners, Zetta Venture Partners and Obvious Ventures all invested again, joined by new investors Greycroft, F-Prime Capital, Hummingbird and Benchling.",
+        "quote_hash": "4b28dd02a98f9f115f803e30da9d2ec984ae0c711524bb8f91646d38a888440f"
+      },
       {
         "source_id": "FISRC-37925b95fc58982a",
         "source_url": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/",
@@ -215,6 +269,10 @@
         {
           "description": "融资活动库也记录 F-Prime 领投 Fazeshift A 轮；此处金额指全轮融资，不能视为机构单家支票。",
           "source_id": "FISRC-37925b95fc58982a"
+        },
+        {
+          "description": "融资来源记录：Boltz · A轮 · 2026-11-19 · 本轮参投 · $110m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ece11f408f6f43fa"
         }
       ],
       "current_roles": [],
@@ -291,6 +349,14 @@
           "source_content_hash": "9fc07709e89b11cc",
           "quote": "F-Prime Capital led the financing",
           "quote_hash": "cc7e2367c2c9f1491737795ad8550088ac401bec459ad2b263aea7203fba5584"
+        },
+        {
+          "source_id": "FISRC-ece11f408f6f43fa",
+          "source_url": "https://dealroom.co/news/174542-london-s-boltz-raises-110m-series-a-led-by-bessemer-to-scale-its-ai-mode/",
+          "source_title": "London's Boltz raises $110M Series A led by Bessemer to scale its AI models for drug discovery",
+          "source_content_hash": "4d4ce7485589656c",
+          "quote": "Existing backers Andreessen Horowitz, Amplify Partners, Zetta Venture Partners and Obvious Ventures all invested again, joined by new investors Greycroft, F-Prime Capital, Hummingbird and Benchling.",
+          "quote_hash": "4b28dd02a98f9f115f803e30da9d2ec984ae0c711524bb8f91646d38a888440f"
         }
       ],
       "last_verified_at": "2026-09-28"

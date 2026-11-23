@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,30 +61,77 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-23",
-    "latest_disclosed_at": "2026-06-23",
+    "latest_disclosed_at": "2026-11-19",
     "role_counts": {
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
-      "pre_seed"
+      "pre_seed",
+      "seed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-7739ab95840a9771",
         "canonical_entity_id": "",
         "name": "Fika Jobs"
+      },
+      {
+        "entity_id": "EN-7c07b41ab2100d94",
+        "canonical_entity_id": "",
+        "name": "Wilgot"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ad6d5604db3f46d6",
+        "funding_insight_id": "FI-1647b830adc5d671",
+        "event_ids": [
+          "EV-ac28091b9e390c7e"
+        ],
+        "company_entity_id": "EN-7c07b41ab2100d94",
+        "company_canonical_entity_id": "",
+        "company_name": "Wilgot",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$3 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 万美元"
+        },
+        "announced_at": "2026-11-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-259d24b62357e890",
+            "source_url": "https://tech.eu/2026/11/19/wilgot-raises-3m-in-seed-funding-to-help-brands-get-recommended-by-ai/",
+            "source_title": "Wilgot 完成 300 万美元种子轮融资，助力品牌获得 AI 推荐",
+            "source_content_hash": "6ac0868fa0179c92e87fe854629a6d24af4926597fc555f9426385f755585782",
+            "quote": "The round also included participation from Luminar Ventures, Foundry Ventures, Ventures Together and Inovexus",
+            "quote_hash": "290947f4e969083df3a267fe4b4ac514e65000dcac48ccef0539311f4a322538"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6fe2a3ec7cc257ea",
         "funding_insight_id": "FI-d3860d0e25fdc9de",
@@ -128,6 +175,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-259d24b62357e890",
+        "source_url": "https://tech.eu/2026/11/19/wilgot-raises-3m-in-seed-funding-to-help-brands-get-recommended-by-ai/",
+        "source_title": "Wilgot 完成 300 万美元种子轮融资，助力品牌获得 AI 推荐",
+        "source_content_hash": "6ac0868fa0179c92e87fe854629a6d24af4926597fc555f9426385f755585782",
+        "quote": "The round also included participation from Luminar Ventures, Foundry Ventures, Ventures Together and Inovexus",
+        "quote_hash": "290947f4e969083df3a267fe4b4ac514e65000dcac48ccef0539311f4a322538"
+      },
+      {
         "source_id": "FISRC-5228f73ab8dc8458",
         "source_url": "https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates",
         "source_title": "Fika Jobs 融资 400 万美元，打造视频优先招聘平台，由 AI 智能体面试候选人",
@@ -167,6 +222,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Wilgot · 种子轮 · 2026-11-19 · 本轮参投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-259d24b62357e890"
+        },
+        {
           "description": "融资来源记录：Fika Jobs · 预种子轮 · 2026-06-23 · 本轮领投 · $4 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5228f73ab8dc8458"
         }
@@ -188,6 +247,14 @@
           "source_content_hash": "007da4b0852565532dceb6d260ebf9b6cea1065aa59e817b679250c14c6814f7",
           "quote": "Stage Pre-Seed & Seed Sector Generalist Geo Nordics Submit Your Pitch → Luminar in numbers 45 PORTFOLIO COMPANIES 90 % PRE-SEED FUND I INVESTMENTS RAISED SEED ROUNDS 2022 LATEST FUND VINTAGE € 125 AUM (in millions) As former founders and angel investors, we&#x27;ve now built the most active seed-stage VC fund in the Nordics.",
           "quote_hash": "3134390e29f6b8cc7a946ca0db666f3c4baf1421754d1b6feeea8f5e15e85e8d"
+        },
+        {
+          "source_id": "FISRC-259d24b62357e890",
+          "source_url": "https://tech.eu/2026/11/19/wilgot-raises-3m-in-seed-funding-to-help-brands-get-recommended-by-ai/",
+          "source_title": "Wilgot 完成 300 万美元种子轮融资，助力品牌获得 AI 推荐",
+          "source_content_hash": "6ac0868fa0179c92e87fe854629a6d24af4926597fc555f9426385f755585782",
+          "quote": "The round also included participation from Luminar Ventures, Foundry Ventures, Ventures Together and Inovexus",
+          "quote_hash": "290947f4e969083df3a267fe4b4ac514e65000dcac48ccef0539311f4a322538"
         },
         {
           "source_id": "FISRC-5228f73ab8dc8458",
