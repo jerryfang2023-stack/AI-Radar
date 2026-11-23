@@ -326,7 +326,11 @@ export async function verifyPending({ root, directory, backupRoot, date, capture
       row.fact_review_completed=queue.entries[url].fact_review_completed;
       continue;
     }
-    if(row.status === 'reviewed' || row.status === 'excluded' || row.status === 'verified') { delete queue.entries[url];continue; }
+    // Cached financing approval is provisional until current facts, holds and taxonomy
+    // have been reconciled by finishVerification. A failed production pass must
+    // not remove its queued evidence and request receipts.
+    if(row.status === 'verified')continue;
+    if(row.status === 'reviewed' || row.status === 'excluded') { delete queue.entries[url];continue; }
     const preservedFollowup=Boolean(row.followup);
     if(row.reason==='alternate_original_requires_identity_review') {
       row.followup={...row,status:'needs_attention',next_due_date:null,last_processed_date:date,
