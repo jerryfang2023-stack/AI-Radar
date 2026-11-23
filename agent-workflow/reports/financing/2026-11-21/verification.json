@@ -24397,7 +24397,7 @@
       "used_existing_original": true,
       "alternate_source": false,
       "resumed_fact_review": false,
-      "source_identity_reviewed": false,
+      "source_identity_reviewed": true,
       "raw_ids": [
         "RAW-0c03554984474213"
       ],
@@ -24439,9 +24439,7 @@
       "fact_review_completed": true,
       "unresolved_event_ids": [],
       "qa_hints": [],
-      "pending_reasons": [
-        "research_auto_published"
-      ],
+      "pending_reasons": [],
       "results": [
         {
           "card_id": "FI-b0ee468e1be9bb4d",
@@ -24481,7 +24479,62 @@
       "review_refs": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-11-21/qa-queue.json",
         "01-SiteV2/content/12-applications/funding-insights/2026-11-21.json"
-      ]
+      ],
+      "source_binding": {
+        "source_url": "https://news.pedaily.cn/202611/572144.shtml",
+        "content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-11-23T05:29:56.230Z",
+        "company": "无锡诚恒微电子有限公司",
+        "event_id": "EV-d84355ecbf21be85",
+        "announced_at": "2026-11-20",
+        "round": "A轮",
+        "amount": "近2亿元",
+        "reason": "通用边端AI SoC与边缘计算为主营，明确同时交付边缘计算与智能交互终端；机器人/无人机是应用客户，未见机器人本体、执行部件或仅机器人专用部件主营证据。融资主体、当轮近2亿元A轮与11月20日披露均由同篇原文绑定。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "quote_hash": "bb553b0056b608f70df009c8a16b19f1f4be9957e3c7ad8feb887166bf8a5db8"
+          },
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "quote_hash": "3f86a8dcc6e9372d3e0a2ab87f8ed120dc5f1c645fa8f92fccdec81ab873baf0"
+          },
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "quote_hash": "2b06d21083c1cf71be3b1db5098683d4717283b3672c6d00e67ed1667d1ecf14"
+          }
+        ]
+      },
+      "resolved_original_reason": {
+        "reason": "embodied_or_robotics_core_business_review",
+        "resolution": "included_general_edge_ai_soc",
+        "reviewed_at": "2026-11-23T05:29:56.230Z",
+        "review_ref": "agent-workflow/reports/financing/2026-11-21/responsible-source-review.json#EV-d84355ecbf21be85"
+      },
+      "responsible_fact_review": {
+        "event_id": "EV-d84355ecbf21be85",
+        "content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+        "source_url": "https://news.pedaily.cn/202611/572144.shtml",
+        "reviewed_by": "Codex responsible financing reviewer",
+        "reviewed_at": "2026-11-23T05:29:56.230Z",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "quote_hash": "bb553b0056b608f70df009c8a16b19f1f4be9957e3c7ad8feb887166bf8a5db8"
+          },
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "quote_hash": "3f86a8dcc6e9372d3e0a2ab87f8ed120dc5f1c645fa8f92fccdec81ab873baf0"
+          },
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "quote_hash": "2b06d21083c1cf71be3b1db5098683d4717283b3672c6d00e67ed1667d1ecf14"
+          }
+        ],
+        "original_financing_confirmed": true,
+        "scope": "included"
+      }
     },
     "https://www.prnewswire.com/news-releases/avenir-announces-additional-investment-in-grid-metals-corp-302947164.html": {
       "source_url": "https://www.prnewswire.com/news-releases/avenir-announces-additional-investment-in-grid-metals-corp-302947164.html",

@@ -9767,7 +9767,7 @@
           "工具能否在同等质量下降低后续项目的人工人天、算力与EDA开销及返工轮次，尚无经营数据披露",
           "客户数量增长后是否仍需同步增加大量工程师，决定其模式能否从项目服务走向平台化"
         ],
-        "sector": "AI 编程与软件研发",
+        "sector": "工业软件与制造",
         "investment_thesis": {
           "statement": "资本押注的核心变量是：芯星元能否用CDK把芯片设计服务中重复的工程劳动沉淀为可复用能力，使后续项目在同等质量下减少人天、算力与EDA工具开销及返工轮次。当前已验证的信号包括：公司成立约五个月连续完成三轮融资，Pre-A+轮由顺为资本领投、纪源资本与经纬创投跟投；Sirius已用于3D存算一体芯片设计服务并产生营收；Vega在论文中展示单个工业设计上的布图规划评测分数高于通用模型配置。但证据边界明确：估值、稀释比例、累计融资精确总额和单笔合同金额均未披露；首批IP的流片和交付仍在推进；论文评测为局部任务自评，不是签核级PPA，也未证明客户芯片已量产达标；工具能否降低单位项目成本尚无经营数据验证。",
           "evidence_signals": [
@@ -10098,18 +10098,18 @@
         "source_registry_ids": []
       },
       "product_form": {
-        "id": "developer-platform",
-        "name": "开发与数据平台",
+        "id": "enterprise-software",
+        "name": "企业软件",
         "dimension": "financing_product_form"
       },
       "market_category": {
-        "id": "developer-data",
-        "name": "AI 开发与数据",
+        "id": "industry",
+        "name": "行业 AI",
         "dimension": "financing_sector"
       },
       "market_subcategory": {
-        "id": "ai-coding",
-        "name": "AI 编程与软件研发",
+        "id": "manufacturing",
+        "name": "工业软件与制造",
         "dimension": "financing_subsector"
       },
       "market_application": null,
@@ -10123,16 +10123,16 @@
         "scope": "included",
         "status": "classified",
         "sector": {
-          "id": "developer-data",
-          "name": "AI 开发与数据"
+          "id": "industry",
+          "name": "行业 AI"
         },
         "subsector": {
-          "id": "ai-coding",
-          "name": "AI 编程与软件研发"
+          "id": "manufacturing",
+          "name": "工业软件与制造"
         },
         "product_form": {
-          "id": "developer-platform",
-          "name": "开发与数据平台"
+          "id": "enterprise-software",
+          "name": "企业软件"
         },
         "customers": [
           {
@@ -10166,7 +10166,7 @@
             "quote": "Sirius已用于3D存算一体芯片设计服务，并产生营收"
           }
         ],
-        "rationale": "该公司以AI-native芯片设计平台CDK及Vega、Sirius产品线，面向芯片设计工程师交付设计自动化开发平台。"
+        "rationale": "主营交付面向芯片企业的AI电路设计套件、设计文件与芯片IP，覆盖规格到GDS的半导体设计流程，归行业AI的工业软件与制造；不是提供AI训练算力的芯片厂商，也不是通用软件编程工具。"
       },
       "source_card_ids": [
         "FI-2314c7e986050f44"
@@ -699072,16 +699072,16 @@
         "scope": "included",
         "status": "classified",
         "sector": {
-          "id": "developer-data",
-          "name": "AI 开发与数据"
+          "id": "industry",
+          "name": "行业 AI"
         },
         "subsector": {
-          "id": "ai-coding",
-          "name": "AI 编程与软件研发"
+          "id": "manufacturing",
+          "name": "工业软件与制造"
         },
         "product_form": {
-          "id": "developer-platform",
-          "name": "开发与数据平台"
+          "id": "enterprise-software",
+          "name": "企业软件"
         },
         "customers": [
           {
@@ -699115,21 +699115,21 @@
             "quote": "Sirius已用于3D存算一体芯片设计服务，并产生营收"
           }
         ],
-        "rationale": "该公司以AI-native芯片设计平台CDK及Vega、Sirius产品线，面向芯片设计工程师交付设计自动化开发平台。"
+        "rationale": "主营交付面向芯片企业的AI电路设计套件、设计文件与芯片IP，覆盖规格到GDS的半导体设计流程，归行业AI的工业软件与制造；不是提供AI训练算力的芯片厂商，也不是通用软件编程工具。"
       },
       "market_category": {
-        "id": "developer-data",
-        "name": "AI 开发与数据",
+        "id": "industry",
+        "name": "行业 AI",
         "dimension": "financing_sector"
       },
       "market_subcategory": {
-        "id": "ai-coding",
-        "name": "AI 编程与软件研发",
+        "id": "manufacturing",
+        "name": "工业软件与制造",
         "dimension": "financing_subsector"
       },
       "product_form": {
-        "id": "developer-platform",
-        "name": "开发与数据平台",
+        "id": "enterprise-software",
+        "name": "企业软件",
         "dimension": "financing_product_form"
       },
       "products": [
