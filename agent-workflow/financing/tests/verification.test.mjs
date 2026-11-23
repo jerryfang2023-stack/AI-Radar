@@ -409,3 +409,13 @@ test('older recovery cannot expire or close later pending queue state even when 
     finishVerification(options);assert.deepEqual(read(queuePath(options)).entries[url],newer);
   }
 });
+
+test('cached financing approval retains queued originals until final current-gate reconciliation',async t=>{
+  const options=fixture(t);seed(options);
+  const queued=due({last_processed_date:'2026-10-05',reason:'awaiting_responsible_review',capture_attempts:[{request_id:'keep-cached-original'}]});
+  write(queuePath(options),{entries:{[url]:queued}});
+  const collection=read(path.join(options.directory,'collection.json'));
+  write(path.join(options.directory,'verification.json'),{version:'FINANCING-VERIFICATION-1',date,collection_hash:digest(collection),prepared:true,entries:{[url]:{source_url:url,status:'verified',reason:'existing_gates_reconciled',fact_review_completed:true}}});
+  await verifyPending({...options,capture:forbidden,search:forbidden});
+  assert.deepEqual(read(queuePath(options)).entries[url],queued);
+});

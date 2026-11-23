@@ -225,3 +225,5 @@ Financing amount selection binds the verified canonical action together with its
 当前Codex聊天每天10:30检查、修复和收尾同一云端流程，VPS保留08:10主运行与10:30幂等兜底；不新建重复采集或日内复核。定时聊天依赖本机应用运行。
 
 旧日恢复时，队列到期续排和最终回写都必须先保护last_processed_date晚于监测日的记录；过期stop_after_date不能把后来审核的处理日期回退，也不能据旧接受/排除回执关闭它。原始请求和事实复核账本继续保留。
+
+恢复接受产物时，缓存中的融资 `verified` 仅代表旧门禁结果；准备阶段保留对应私有队列与请求回执，待 `finishVerification` 按当前事实、publication hold 和分类重新核验后关闭。生产中断不能提前丢掉这些记录。
