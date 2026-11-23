@@ -1,0 +1,137 @@
+{
+  "version": "FINANCING-RESPONSIBLE-SOURCE-REVIEW-1",
+  "monitor_date": "2026-11-22",
+  "reviewed_at": "2026-11-23T05:51:31.241Z",
+  "reviewer": "Codex responsible financing reviewer",
+  "source_dispositions": [
+    {
+      "source_artifact_id": "SA-4bcc7f7fc09b5bee",
+      "content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+      "reason": "原文是高盛对全球AI项目融资规模的预测，不是腾讯融资；仅保留背景线索和原文，不批准企业融资事实。"
+    },
+    {
+      "source_artifact_id": "SA-621934bf52005da6",
+      "content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+      "reason": "工商登记更新与第二轮融资的历史报道、金额区间尚需核对首次披露及同轮重复；不据此批准11月20日一笔新的确额融资，既有六月融资保留。"
+    }
+  ],
+  "amount_conflict_hold": {
+    "event_id": "EV-609bed23b2e9a178",
+    "company": "Memoket",
+    "status": "pending",
+    "reviewed_by": "Codex responsible financing reviewer",
+    "reviewed_at": "2026-11-23T05:51:31.241Z",
+    "reason": "正文写US$4.13M，标题写$4.5M，当前接受Claim仍依标题构建；金额口径冲突未结清，不批准确额融资卡，保留原文待核验原始披露与Claim修复。",
+    "source_id": "FISRC-fd462de3c8158bd1",
+    "source_url": "https://dealroom.co/news/173270-ex-anker-cmo-s-ai-wearable-startup-memoket-raises-4-5m-pre-a/",
+    "content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1"
+  },
+  "prior_accepted_history_preserved": true,
+  "does_not_replace_formal_publication_review": true,
+  "admitted_source_reviews": [
+    {
+      "source_url": "https://feng.ifeng.com/c/8yBMtGJ5DEO",
+      "content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+      "event_id": "EV-b5b93d1b6f0bce86",
+      "company": "广东知业科技有限公司",
+      "amount": "数千万元",
+      "round": "A轮",
+      "announced_at": "2026-11-19",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-11-23T06:07:39.652Z",
+      "reason": "同篇原文确认企业主体、已披露本轮融资金额与轮次，主营AI交付有公司和产品引文；投资者客户及地区另按既有门禁核对。",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-97ea0233a06dbd19",
+          "quote_hash": "63afe10c6c9ac280fcc5ad641fac2eda9ca19b0cc5ddb4021b76177e19ac09be"
+        },
+        {
+          "source_id": "FISRC-97ea0233a06dbd19",
+          "quote_hash": "7c1ffbb1bdf577eaeb0d7bc806fe6042ceeef9141dfeec547d86dd35b4f297a5"
+        },
+        {
+          "source_id": "FISRC-97ea0233a06dbd19",
+          "quote_hash": "e82c641fad7c18e3c3cf82285a520fb7fc691fd7103b67517c6322cdd343a4ae"
+        }
+      ]
+    },
+    {
+      "source_url": "https://www.eu-startups.com/2026/11/munich-based-vetaion-raises-e5-7-million-to-automate-control-cabinet-manufacturing-with-ai-and-robotics/",
+      "content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+      "event_id": "EV-dc09c82dcc6d5e13",
+      "company": "Vetaion",
+      "amount": "€5.7 million",
+      "round": "预种子轮",
+      "announced_at": "2026-11-19",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-11-23T06:07:39.652Z",
+      "reason": "交付AI原生控制柜制造及VetaionOS制造软件，机器人用于生产控制柜，未见以机器人本体或机器人核心部件为主营的证据；金额与预种子轮由同篇原文绑定。",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-23028648dbd2a819",
+          "quote_hash": "80bae16d68d71494509533d8823869f3606b64a5c424c3dd2ac9f5f08d160d26"
+        },
+        {
+          "source_id": "FISRC-23028648dbd2a819",
+          "quote_hash": "46d25b166901cc787afedb4ccdb7c4dd32840559c592d0a5a67bbf7545c1908c"
+        },
+        {
+          "source_id": "FISRC-23028648dbd2a819",
+          "quote_hash": "c0dd7a20472a3108900f56071f951a5efa8d3b7d2b03ed57d5d70f404b482aa0"
+        },
+        {
+          "source_id": "FISRC-23028648dbd2a819",
+          "quote_hash": "2a7dd092dc072873bd33881d569512061cbe2d201484432024f4bd4a7a3a1149"
+        },
+        {
+          "source_id": "FISRC-23028648dbd2a819",
+          "quote_hash": "1f2786b726b096aaea4fe8ea0a2dca36a5123dbce16be6525585b27de813f590"
+        },
+        {
+          "source_id": "FISRC-23028648dbd2a819",
+          "quote_hash": "a7fb809c1a0682035a0eb1f38a38e8792f10da54f6741fea8dd0a05afb3627e4"
+        }
+      ]
+    },
+    {
+      "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
+      "content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+      "event_id": "EV-104419284ab31dea",
+      "company": "Isomorphic Labs",
+      "amount": "€4.5 billion",
+      "round": "C轮",
+      "announced_at": "2026-11-17",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-11-23T06:07:39.652Z",
+      "reason": "同篇原文确认企业主体、已披露本轮融资金额与轮次，主营AI交付有公司和产品引文；投资者客户及地区另按既有门禁核对。",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-172c6eda5dfd3979",
+          "quote_hash": "0d85bd160e7d526a2826a3a2898b1e26bde15776a6c35d933149e78fd80c93f3"
+        },
+        {
+          "source_id": "FISRC-172c6eda5dfd3979",
+          "quote_hash": "1c5b4db4864e4cc5245b80a36254804b08918e5ac8b53f90a07b82fc9e33c032"
+        },
+        {
+          "source_id": "FISRC-172c6eda5dfd3979",
+          "quote_hash": "e3f8dcf21f80acb02e91df994593acc33130fdbce6818102352c99d51e0856ef"
+        },
+        {
+          "source_id": "FISRC-172c6eda5dfd3979",
+          "quote_hash": "e7e38661605f3e27b9ff84546bb92c68e34a53f00c796869094f484f85cb524d"
+        },
+        {
+          "source_id": "FISRC-172c6eda5dfd3979",
+          "quote_hash": "7618349893d2fce5ceeb4e03c167de188bc39ff3e88bb52ec57ce75508d51713"
+        },
+        {
+          "source_id": "FISRC-172c6eda5dfd3979",
+          "quote_hash": "0a848e43368baeec2c04bb7ab70402b2c993027a5b3ff513bf0a796bbeef0a40"
+        }
+      ]
+    }
+  ],
+  "preserved_later_private_queue": true,
+  "formal_publication_review_required": true
+}

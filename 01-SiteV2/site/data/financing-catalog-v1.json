@@ -5,17 +5,17 @@
     "site_version": "SITE-V4.6.1-research-retirement",
     "column_version": "FUNDING-INSIGHT-V1.5.0-china-market",
     "taxonomy_version": "AI-FUNDING-TAGS-1.0",
-    "latest_date": "2026-11-21",
-    "last_checked_date": "2026-11-21",
+    "latest_date": "2026-11-22",
+    "last_checked_date": "2026-11-22",
     "latest_financing_date": "2026-11-20",
-    "generated_at": "2026-11-21T06:28:49.280Z",
-    "card_count": 744,
-    "china_market_card_count": 161,
+    "generated_at": "2026-11-23T05:53:14.287Z",
+    "card_count": 747,
+    "china_market_card_count": 162,
     "duplicate_rounds_removed": 26,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-11-21T06:30:43.615Z"
+      "generated_at": "2026-11-23T05:55:15.293Z"
     },
     "market_category_framework": {
       "name": "观澜 AI 融资分类",
@@ -35,12 +35,12 @@
         }
       ]
     },
-    "event_count": 796,
+    "event_count": 799,
     "aggregation_strategy": "reviewed_funding_subject",
     "scope": "all_ai_financing_except_embodied_and_robotics",
     "excluded_count": 99,
     "pending_classification_count": 22,
-    "pending_publication_count": 51
+    "pending_publication_count": 52
   },
   "taxonomy": {
     "version": "AI-FUNDING-TAGS-1.0",
@@ -2471,6 +2471,1489 @@
       },
       "source_card_ids": [
         "FI-183448a43c9bcb8d"
+      ]
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-223dbf7ad48a6c82",
+      "triggered_by_event_id": "EV-b5b93d1b6f0bce86",
+      "as_of_date": "2026-11-22",
+      "company": {
+        "entity_id": "EN-4f52302c928b8d84",
+        "name": "知业科技",
+        "full_name": "广东知业科技有限公司",
+        "website": "https://www.zacye.com/",
+        "summary": "工业互联网平台服务商，以一体两翼业务模型打造精益化智能制造平台、智能化装备售后平台与精益人工智能平台，服务40多个细分行业、超500家制造企业。",
+        "headquarters": "珠海高新区",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-97ea0233a06dbd19",
+            "quote": "知业科技成立于2018年，总部位于珠海高新区，是工业互联网平台服务商，以一体两翼业务模型打造精益化智能制造平台、智能化装备售后平台与精益人工智能平台，产品服务40多个细分行业、超500家制造企业",
+            "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+            "quote_hash": "63afe10c6c9ac280fcc5ad641fac2eda9ca19b0cc5ddb4021b76177e19ac09be"
+          },
+          {
+            "source_id": "FISRC-304a6c406c01caf5",
+            "quote": "广东知业科技有限公司（简称知业科技）成立于2018年，专注于面向工业4.0平台技术与产品研发",
+            "source_content_hash": "4f9a61a026c507af",
+            "quote_hash": "43f12ecccf60623b6af9beea03f85920f87397570e08d035323b2a45e1d3c81d"
+          }
+        ],
+        "application_entity_id": "EN-4f52302c928b8d84",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "数千万元",
+        "total_raised": "",
+        "announced_at": "2026-11-19",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "高科金投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-97ea0233a06dbd19",
+                "quote": "投资机构为高科金投、泰亚投资",
+                "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+                "quote_hash": "03ed427859e43b6039ca82a4e49c9414869b5741c8a453b6994717823a92fe7d"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-2403d44d78b4d4"
+          },
+          {
+            "name": "泰亚投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-97ea0233a06dbd19",
+                "quote": "投资机构为高科金投、泰亚投资",
+                "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+                "quote_hash": "03ed427859e43b6039ca82a4e49c9414869b5741c8a453b6994717823a92fe7d"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-2227876496806c"
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "泰亚投资",
+            "role": "Pre-A轮联合投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-be5a00e9fa15ff4f",
+                "quote": "由高科创投、泰亚投资联合投资",
+                "source_content_hash": "571569e4fe30c6a5",
+                "quote_hash": "15638fe1818d62066ce2792e111d7b5d4d20bce765e42a80f97c936c0bc2cd02"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-2227876496806c"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-97ea0233a06dbd19",
+            "quote": "智通财经APP获悉，广东知业科技有限公司完成数千万元A轮融资，投资机构为高科金投、泰亚投资。",
+            "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+            "quote_hash": "7c1ffbb1bdf577eaeb0d7bc806fe6042ceeef9141dfeec547d86dd35b4f297a5"
+          },
+          {
+            "source_id": "FISRC-97ea0233a06dbd19",
+            "quote": "广东知业科技有限公司完成数千万元A轮融资，投资机构为高科金投、泰亚投资",
+            "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+            "quote_hash": "e82c641fad7c18e3c3cf82285a520fb7fc691fd7103b67517c6322cdd343a4ae"
+          },
+          {
+            "source_id": "FISRC-304a6c406c01caf5",
+            "quote": "知业科技完成数千万元A轮融资，投资机构为高科金投、泰亚投资",
+            "source_content_hash": "4f9a61a026c507af",
+            "quote_hash": "b1ce933d902630cf62185b49eecc75f7a78b611b5e41c6e981ed2db2d8a70ce5"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-b5b93d1b6f0bce86",
+            "round_original": "A轮",
+            "amount": "数千万元",
+            "announced_at": "2026-11-19",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-97ea0233a06dbd19",
+                "quote": "智通财经APP获悉，广东知业科技有限公司完成数千万元A轮融资，投资机构为高科金投、泰亚投资。",
+                "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+                "quote_hash": "7c1ffbb1bdf577eaeb0d7bc806fe6042ceeef9141dfeec547d86dd35b4f297a5"
+              },
+              {
+                "source_id": "FISRC-97ea0233a06dbd19",
+                "quote": "广东知业科技有限公司完成数千万元A轮融资，投资机构为高科金投、泰亚投资",
+                "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+                "quote_hash": "e82c641fad7c18e3c3cf82285a520fb7fc691fd7103b67517c6322cdd343a4ae"
+              },
+              {
+                "source_id": "FISRC-304a6c406c01caf5",
+                "quote": "知业科技完成数千万元A轮融资，投资机构为高科金投、泰亚投资",
+                "source_content_hash": "4f9a61a026c507af",
+                "quote_hash": "b1ce933d902630cf62185b49eecc75f7a78b611b5e41c6e981ed2db2d8a70ce5"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "CNY",
+              "value": null,
+              "min_value": 20000000,
+              "max_value": 90000000,
+              "unit": "base",
+              "round_count": 1,
+              "status": "range",
+              "display_zh": "2000 万元–9000 万元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-97ea0233a06dbd19",
+          "FISRC-304a6c406c01caf5"
+        ]
+      },
+      "products": [
+        {
+          "name": "精益大模型平台（LPAI）",
+          "description": "制造业垂域大模型平台，采用基础大模型、行业模型、场景模型三级架构，融合工业知识图谱、检索增强生成与多约束推理，面向中大型制造企业提供整体解决方案。",
+          "target_customers": "中大型制造企业",
+          "features": [
+            "基础大模型—行业模型—场景模型三级架构",
+            "工业多模态解析与跨源数据对齐",
+            "融合工业知识图谱、RAG与多约束推理",
+            "工程师修正意见与生产验证结果沉淀为案例和评测样本"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-304a6c406c01caf5",
+              "quote": "知业科技自主研发的精益大模型（LPAI）采用“基础大模型—行业模型—场景模型”三级架构",
+              "source_content_hash": "4f9a61a026c507af",
+              "quote_hash": "5ff4d1daa155ab666095fa3d54d9d628e91f4f893101d4a149cd146e91f7f5e1"
+            },
+            {
+              "source_id": "FISRC-304a6c406c01caf5",
+              "quote": "精益大模型（LPAI）融合工业知识图谱、检索增强生成（RAG）与多约束推理",
+              "source_content_hash": "4f9a61a026c507af",
+              "quote_hash": "384dc48cccca7e4b8072f1bfddc7c7f05d94ede3a828a4173d51672d86e8844a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "物理端AI一体机（塑易通、板易通、机易通）",
+          "description": "面向中小制造企业的物理AI操作系统，集成工业边缘接入、智能体工作流编排和专业工具调用能力，以MaaS方式按智能体执行任务实际消耗的词元计费。",
+          "target_customers": "中小制造企业",
+          "features": [
+            "工业智能体集成于一体机",
+            "按实际消耗的Token支付模型服务费用",
+            "将机台规格、材料牌号、工艺阈值等现场条件转化为智能体可读取的约束"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-304a6c406c01caf5",
+              "quote": "面向中小制造企业，通过物理端AI一体机提供MaaS（模型即服务），企业通过工业智能体，按照实际消耗的Token（词元）支付模型服务费用",
+              "source_content_hash": "4f9a61a026c507af",
+              "quote_hash": "6917682ed2e429ad046a33cf78479a218cb5cdd42ec5d398ca5a4c491d0e5a71"
+            },
+            {
+              "source_id": "FISRC-304a6c406c01caf5",
+              "quote": "知业科技将工业智能体集成到塑易通、板易通、机易通等一体机中，将其定位为中小制造企业的物理AI操作系统",
+              "source_content_hash": "4f9a61a026c507af",
+              "quote_hash": "664773cdc719f4457a11c176d482ef788cba426e61b3c575b5a5e359f8d66d4f"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "分寸云（精益化智能制造平台）",
+          "description": "精益化智能制造平台，覆盖设备物联、设备管理、工艺管理、程序管理、精益生产、生产溯源、工业组态、智慧运营等模块。",
+          "target_customers": "制造企业",
+          "features": [
+            "设备物联与边缘计算",
+            "工艺资产化与专家工艺知识库",
+            "生产制造运营管理",
+            "数字孪生与智慧运营中心"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-304a6c406c01caf5",
+              "quote": "以一体两翼业务模型打造自主可控的分寸云(精益化智能制造平台）、随机云(智能化装备售后平台)、精益大模型平台(LPAI)",
+              "source_content_hash": "4f9a61a026c507af",
+              "quote_hash": "0d4a21f336f78ecfa9bfcd868a0c0e2027c3f460bac3b3a5a9083a723fe7c42e"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "服务细分行业数",
+          "value": "40多个",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-97ea0233a06dbd19",
+              "quote": "产品服务40多个细分行业、超500家制造企业",
+              "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+              "quote_hash": "96322924c77afac9b698464b4013ffe4d4990ae5db4375acb150623b571c1de8"
+            }
+          ]
+        },
+        {
+          "label": "服务制造企业数",
+          "value": "超500家",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-97ea0233a06dbd19",
+              "quote": "产品服务40多个细分行业、超500家制造企业",
+              "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+              "quote_hash": "96322924c77afac9b698464b4013ffe4d4990ae5db4375acb150623b571c1de8"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "周星宇",
+          "quote": "我们看好人工智能与制造业深度融合带来的长期产业机会。随着制造业向高端化、智能化迈进，工业AI有望从单点应用走向企业核心业务，成为制造企业提升生产效率、产品质量和创新能力的重要支撑。知业科技长期深耕制造业，在工业大模型研发和产业应用方面形成了积累。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-304a6c406c01caf5",
+              "quote": "我们看好人工智能与制造业深度融合带来的长期产业机会。随着制造业向高端化、智能化迈进，工业AI有望从单点应用走向企业核心业务，成为制造企业提升生产效率、产品质量和创新能力的重要支撑。知业科技长期深耕制造业，在工业大模型研发和产业应用方面形成了积累。",
+              "source_content_hash": "4f9a61a026c507af",
+              "quote_hash": "74db38f49770c62fd414ce85cf1f26d8d55743034a997c48a05ad2fbbcd2ad88"
+            }
+          ]
+        },
+        {
+          "speaker": "秦伟",
+          "quote": "我们看好工业AI在制造业的长期发展空间。随着技术逐步成熟，行业的机会在于把已经验证的能力转化为可规模化交付、可持续使用的产品和服务。知业科技深耕制造业，正在把对工业场景的理解转化为标准化的产品和服务，让更多中小制造企业能够以可控的成本导入AI，并根据实际成效逐步扩大应用。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-304a6c406c01caf5",
+              "quote": "我们看好工业AI在制造业的长期发展空间。随着技术逐步成熟，行业的机会在于把已经验证的能力转化为可规模化交付、可持续使用的产品和服务。知业科技深耕制造业，正在把对工业场景的理解转化为标准化的产品和服务，让更多中小制造企业能够以可控的成本导入AI，并根据实际成效逐步扩大应用。",
+              "source_content_hash": "4f9a61a026c507af",
+              "quote_hash": "1b4961a98ca20fa8ceb4d77ec9897bc63ff43ce4ba7c8cd8d03c421195b40bbc"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "高科金投",
+            "speaker": "周星宇",
+            "speaker_role": "高科金投",
+            "rationale": "看好人工智能与制造业深度融合的长期产业机会，认为工业AI有望从单点应用走向企业核心业务，并认可知业科技在工业大模型研发和产业应用方面的积累。",
+            "quote": "我们看好人工智能与制造业深度融合带来的长期产业机会。随着制造业向高端化、智能化迈进，工业AI有望从单点应用走向企业核心业务，成为制造企业提升生产效率、产品质量和创新能力的重要支撑。知业科技长期深耕制造业，在工业大模型研发和产业应用方面形成了积累。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-304a6c406c01caf5",
+                "quote": "我们看好人工智能与制造业深度融合带来的长期产业机会。随着制造业向高端化、智能化迈进，工业AI有望从单点应用走向企业核心业务，成为制造企业提升生产效率、产品质量和创新能力的重要支撑。知业科技长期深耕制造业，在工业大模型研发和产业应用方面形成了积累。",
+                "source_content_hash": "4f9a61a026c507af",
+                "quote_hash": "74db38f49770c62fd414ce85cf1f26d8d55743034a997c48a05ad2fbbcd2ad88"
+              }
+            ]
+          },
+          {
+            "institution": "泰亚投资",
+            "speaker": "秦伟",
+            "speaker_role": "泰亚投资",
+            "rationale": "看好工业AI在制造业的长期发展空间，认为机会在于把已验证能力转化为可规模化交付、可持续使用的产品和服务，认可知业科技将工业场景理解转化为标准化产品、让中小制造企业以可控成本导入AI的路径。",
+            "quote": "我们看好工业AI在制造业的长期发展空间。随着技术逐步成熟，行业的机会在于把已经验证的能力转化为可规模化交付、可持续使用的产品和服务。知业科技深耕制造业，正在把对工业场景的理解转化为标准化的产品和服务，让更多中小制造企业能够以可控的成本导入AI，并根据实际成效逐步扩大应用。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-304a6c406c01caf5",
+                "quote": "我们看好工业AI在制造业的长期发展空间。随着技术逐步成熟，行业的机会在于把已经验证的能力转化为可规模化交付、可持续使用的产品和服务。知业科技深耕制造业，正在把对工业场景的理解转化为标准化的产品和服务，让更多中小制造企业能够以可控的成本导入AI，并根据实际成效逐步扩大应用。",
+                "source_content_hash": "4f9a61a026c507af",
+                "quote_hash": "1b4961a98ca20fa8ceb4d77ec9897bc63ff43ce4ba7c8cd8d03c421195b40bbc"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "本轮资本押注的核心变量是工业AI能否从标杆项目走向可规模化交付：一方面以精益大模型（LPAI）三级架构服务中大型制造企业的多工序、多产线复用，另一方面以物理端AI一体机加按Token计费的MaaS模式降低中小制造企业导入门槛。已验证信号包括产品服务40多个细分行业、超500家制造企业，客户含中国中车、比亚迪、格力电器，以及泰亚投资在2022年Pre-A轮后本轮继续加注。证据边界在于：本轮金额仅披露为“数千万元”，未披露累计融资额、估值、收入或订单数据；按Token计费模式的付费规模与留存尚无披露，资本判断依赖上述客户覆盖与产品架构的公开陈述。",
+        "validated_signals": [
+          "产品服务40多个细分行业、超500家制造企业",
+          "客户包括中国中车、比亚迪、格力电器",
+          "精益大模型（LPAI）采用基础大模型、行业模型、场景模型三级架构",
+          "面向中小制造企业以物理端AI一体机提供模型即服务，按智能体执行任务实际消耗的词元计费",
+          "泰亚投资曾在2022年Pre-A轮投资公司，本轮继续加注"
+        ],
+        "risks": [
+          "本轮仅披露“数千万元”，未披露累计融资额、估值及收入、订单数据，商业化规模仍待验证",
+          "按Token计费的MaaS模式对中小制造企业的实际付费规模与续费情况未披露",
+          "工业AI从标杆项目复制到多产线、多工厂的可规模化交付能力仍需后续验证",
+          "来源未披露公司创始团队与团队规模，治理与组织信息存在缺口"
+        ],
+        "sector": "工业软件与制造",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是工业AI能否从标杆项目走向可规模化交付：一方面以精益大模型（LPAI）三级架构服务中大型制造企业的多工序、多产线复用，另一方面以物理端AI一体机加按Token计费的MaaS模式降低中小制造企业导入门槛。已验证信号包括产品服务40多个细分行业、超500家制造企业，客户含中国中车、比亚迪、格力电器，以及泰亚投资在2022年Pre-A轮后本轮继续加注。证据边界在于：本轮金额仅披露为“数千万元”，未披露累计融资额、估值、收入或订单数据；按Token计费模式的付费规模与留存尚无披露，资本判断依赖上述客户覆盖与产品架构的公开陈述。",
+          "evidence_signals": [
+            "产品服务40多个细分行业、超500家制造企业",
+            "客户包括中国中车、比亚迪、格力电器",
+            "精益大模型（LPAI）采用基础大模型、行业模型、场景模型三级架构",
+            "面向中小制造企业以物理端AI一体机提供模型即服务，按智能体执行任务实际消耗的词元计费",
+            "泰亚投资曾在2022年Pre-A轮投资公司，本轮继续加注"
+          ],
+          "risks": [
+            "本轮仅披露“数千万元”，未披露累计融资额、估值及收入、订单数据，商业化规模仍待验证",
+            "按Token计费的MaaS模式对中小制造企业的实际付费规模与续费情况未披露",
+            "工业AI从标杆项目复制到多产线、多工厂的可规模化交付能力仍需后续验证",
+            "来源未披露公司创始团队与团队规模，治理与组织信息存在缺口"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "精益大模型平台（LPAI）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "物理端AI一体机（塑易通、板易通、机易通）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "分寸云（精益化智能制造平台）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "高科金投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "泰亚投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "泰亚投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-b5b93d1b6f0bce86",
+          "date": "2026-11-19",
+          "title": "知业科技获数千万元A轮融资 聚焦工业AI规模化应用_大风号",
+          "amount": "数千万元",
+          "source_refs": [
+            "SA-54a6a259f64813a8"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-97ea0233a06dbd19",
+          "source_url": "https://feng.ifeng.com/c/8yBMtGJ5DEO",
+          "title": "知业科技获数千万元A轮融资 聚焦工业AI规模化应用_大风号",
+          "publisher": "feng.ifeng.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-22T00:17:20.641Z",
+          "content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+          "source_artifact_id": "SA-54a6a259f64813a8",
+          "raw_id": "RAW-9d672554c09c0745",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-304a6c406c01caf5",
+          "source_url": "https://m.pedaily.cn/news/572088",
+          "title": "知业科技完成数千万元A轮融资，聚焦工业AI规模化应用",
+          "publisher": "m.pedaily.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-22T00:38:49.506Z",
+          "content_hash": "4f9a61a026c507af",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-be5a00e9fa15ff4f",
+          "source_url": "https://m.cls.cn/detail/1132561",
+          "title": "硬科技投向标|多部门印发原材料工业“三品”实施方案 C919将于9月19日拿适航证",
+          "publisher": "m.cls.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-22T00:39:05.081Z",
+          "content_hash": "571569e4fe30c6a5",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "historical_round"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-22T00:39:19.651Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-22T00:39:19.651Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "分寸云（精益化智能制造平台）",
+            "物理端AI一体机（塑易通、板易通、机易通）",
+            "精益大模型平台（LPAI）"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-b5b93d1b6f0bce86"
+      ],
+      "aggregation": {
+        "key": "EN-4f52302c928b8d84|series_a|CNY:range::20000000:90000000:|2026-11-19",
+        "event_count": 1,
+        "strategy": "reviewed_funding_subject",
+        "subject_id": "EN-4f52302c928b8d84",
+        "source_card_count": 1
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-223dbf7ad48a6c82",
+          "event_ids": [
+            "EV-b5b93d1b6f0bce86"
+          ],
+          "round": "A轮",
+          "round_code": "series_a",
+          "round_original": "A轮",
+          "amount_original": "数千万元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 20000000,
+            "max_value": 90000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2000 万元–9000 万元"
+          },
+          "announced_at": "2026-11-19",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true,
+          "investors": [
+            {
+              "name": "高科金投",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-97ea0233a06dbd19",
+                  "quote": "投资机构为高科金投、泰亚投资",
+                  "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+                  "quote_hash": "03ed427859e43b6039ca82a4e49c9414869b5741c8a453b6994717823a92fe7d"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-2403d44d78b4d4"
+            },
+            {
+              "name": "泰亚投资",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-97ea0233a06dbd19",
+                  "quote": "投资机构为高科金投、泰亚投资",
+                  "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+                  "quote_hash": "03ed427859e43b6039ca82a4e49c9414869b5741c8a453b6994717823a92fe7d"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-2227876496806c"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-97ea0233a06dbd19",
+              "quote": "智通财经APP获悉，广东知业科技有限公司完成数千万元A轮融资，投资机构为高科金投、泰亚投资。",
+              "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+              "quote_hash": "7c1ffbb1bdf577eaeb0d7bc806fe6042ceeef9141dfeec547d86dd35b4f297a5"
+            },
+            {
+              "source_id": "FISRC-97ea0233a06dbd19",
+              "quote": "广东知业科技有限公司完成数千万元A轮融资，投资机构为高科金投、泰亚投资",
+              "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+              "quote_hash": "e82c641fad7c18e3c3cf82285a520fb7fc691fd7103b67517c6322cdd343a4ae"
+            },
+            {
+              "source_id": "FISRC-304a6c406c01caf5",
+              "quote": "知业科技完成数千万元A轮融资，投资机构为高科金投、泰亚投资",
+              "source_content_hash": "4f9a61a026c507af",
+              "quote_hash": "b1ce933d902630cf62185b49eecc75f7a78b611b5e41c6e981ed2db2d8a70ce5"
+            }
+          ]
+        }
+      ],
+      "market_scope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin",
+          "funding_company_evidence:china_legal_entity:广东知业科技有限公司"
+        ],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "id": "enterprise-software",
+        "name": "企业软件",
+        "dimension": "financing_product_form"
+      },
+      "market_category": {
+        "id": "industry",
+        "name": "行业 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "manufacturing",
+        "name": "工业软件与制造",
+        "dimension": "financing_subsector"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-b5b93d1b6f0bce86"
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "industry",
+          "name": "行业 AI"
+        },
+        "subsector": {
+          "id": "manufacturing",
+          "name": "工业软件与制造"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-97ea0233a06dbd19",
+            "quote": "知业科技成立于2018年，总部位于珠海高新区，是工业互联网平台服务商，以一体两翼业务模型打造精益化智能制造平台、智能化装备售后平台与精益人工智能平台，产品服务40多个细分行业、超500家制造企业"
+          },
+          {
+            "source_id": "FISRC-304a6c406c01caf5",
+            "quote": "知业科技自主研发的精益大模型（LPAI）采用“基础大模型—行业模型—场景模型”三级架构"
+          },
+          {
+            "source_id": "FISRC-304a6c406c01caf5",
+            "quote": "精益大模型（LPAI）融合工业知识图谱、检索增强生成（RAG）与多约束推理"
+          },
+          {
+            "source_id": "FISRC-304a6c406c01caf5",
+            "quote": "知业科技将工业智能体集成到塑易通、板易通、机易通等一体机中，将其定位为中小制造企业的物理AI操作系统"
+          }
+        ],
+        "rationale": "知业科技面向制造企业提供精益大模型与智能制造平台，属工业软件。"
+      },
+      "source_card_ids": [
+        "FI-223dbf7ad48a6c82"
+      ]
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-66d2e7a7f6d4f687",
+      "triggered_by_event_id": "EV-dc09c82dcc6d5e13",
+      "as_of_date": "2026-11-22",
+      "company": {
+        "entity_id": "EN-e7cff3bfc36dcad1",
+        "name": "Vetaion",
+        "full_name": "Vetaion",
+        "website": "",
+        "summary": "Vetaion是一家总部位于慕尼黑的AI原生制造商，专注于自动化定制电气控制柜的生产。公司通过将2D电路图转换为3D模型，并利用机器人完成组件放置和布线，实现从批量1开始的自动化生产。",
+        "headquarters": "德国慕尼黑",
+        "founders": [
+          {
+            "name": "Nikolaus von Bary",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "said founder Nikolaus von Bary",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "515c04368dd06947005f46a5f570bd11889a69455eceb6234e76fcf1488fc83b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Benedikt Hohmann",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-725a2f6dc99df16b",
+                "quote": "Founders Nikolaus von Bary and Benedikt Hohmann bring more than 20 years of combined manufacturing experience",
+                "source_content_hash": "63d6e78a977ef60b",
+                "quote_hash": "05339b956211e5167499d0ecda6bc6fdb90d1bd60ac7d4f4bc90cbf520b2e627"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-23028648dbd2a819",
+            "quote": "Vetaion, a Munich-based company that automates the manufacturing of custom electrical control cabinets",
+            "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+            "quote_hash": "80bae16d68d71494509533d8823869f3606b64a5c424c3dd2ac9f5f08d160d26"
+          },
+          {
+            "source_id": "FISRC-e230f947b0274607",
+            "quote": "The company describes itself as an AI-native manufacturer serving the Mittelstand mechanical and plant engineering sector.",
+            "source_content_hash": "7ecafb66d0539a68",
+            "quote_hash": "7d975dc69790f3a36894bfb2d8d369c74871cb81750ac7e5415e3f4bb22afe46"
+          }
+        ],
+        "application_entity_id": "EN-e7cff3bfc36dcad1",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "预种子轮",
+        "amount": "€5.7 million",
+        "total_raised": "",
+        "announced_at": "2026-11-19",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Visionaries Tomorrow",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "The round was co-led by Visionaries Tomorrow and UVC Partners",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "4ddadcf5f3d78fb49d4f9051bc2cb6936c805845e5fecfe9f1db21ee408c93b0"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-e27dc45c4cfca3"
+          },
+          {
+            "name": "UVC Partners",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "The round was co-led by Visionaries Tomorrow and UVC Partners",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "4ddadcf5f3d78fb49d4f9051bc2cb6936c805845e5fecfe9f1db21ee408c93b0"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-777c853f04f599"
+          },
+          {
+            "name": "2100 Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "with participation from 2100 Ventures and leading industrial companies such as Viessmann Generations Group",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "3734c0e5bd6467c92281bccefd08c1d7b70324204f3dfec626091024e25bda71"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-6bacce9073820b"
+          },
+          {
+            "name": "Viessmann Generations Group",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "with participation from 2100 Ventures and leading industrial companies such as Viessmann Generations Group",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "3734c0e5bd6467c92281bccefd08c1d7b70324204f3dfec626091024e25bda71"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-4617100ed11dee"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-23028648dbd2a819",
+            "quote": "HomeGermany-StartupsMunich-based Vetaion raises €5.7 million to automate control cabinet manufacturing with AI...",
+            "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+            "quote_hash": "46d25b166901cc787afedb4ccdb7c4dd32840559c592d0a5a67bbf7545c1908c"
+          },
+          {
+            "source_id": "FISRC-23028648dbd2a819",
+            "quote": "has closed a €5.7 million pre-Seed financing round",
+            "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+            "quote_hash": "c0dd7a20472a3108900f56071f951a5efa8d3b7d2b03ed57d5d70f404b482aa0"
+          },
+          {
+            "source_id": "FISRC-e230f947b0274607",
+            "quote": "Vetaion has raised €5.7 million in pre-seed funding",
+            "source_content_hash": "7ecafb66d0539a68",
+            "quote_hash": "9029a51f4439de211a352fa82565e6231b12f0fae6af0cb36ccef17bb607a70b"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "pre-Seed",
+        "amount_original": "€5.7 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 5700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "570 万欧元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-dc09c82dcc6d5e13",
+            "round_original": "pre-Seed",
+            "amount": "€5.7 million",
+            "announced_at": "2026-11-19",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "HomeGermany-StartupsMunich-based Vetaion raises €5.7 million to automate control cabinet manufacturing with AI...",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "46d25b166901cc787afedb4ccdb7c4dd32840559c592d0a5a67bbf7545c1908c"
+              },
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "has closed a €5.7 million pre-Seed financing round",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "c0dd7a20472a3108900f56071f951a5efa8d3b7d2b03ed57d5d70f404b482aa0"
+              },
+              {
+                "source_id": "FISRC-e230f947b0274607",
+                "quote": "Vetaion has raised €5.7 million in pre-seed funding",
+                "source_content_hash": "7ecafb66d0539a68",
+                "quote_hash": "9029a51f4439de211a352fa82565e6231b12f0fae6af0cb36ccef17bb607a70b"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "EUR",
+              "value": 5700000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "570 万欧元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-23028648dbd2a819",
+          "FISRC-e230f947b0274607"
+        ]
+      },
+      "products": [
+        {
+          "name": "VetaionOS",
+          "description": "Vetaion自研的操作系统，用于自动化一次性产品制造，协调生产和管理任务，并监控从组装到测试和质量检查的制造过程。",
+          "target_customers": "Mittelstand机械和工厂工程行业",
+          "features": [
+            "将2D电路图转换为3D模型",
+            "协调生产和管理工作",
+            "监控制造过程"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "With VetaionOS, the German startup is building its own operating system to automate one-off product manufacturing.",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "2a7dd092dc072873bd33881d569512061cbe2d201484432024f4bd4a7a3a1149"
+            },
+            {
+              "source_id": "FISRC-e230f947b0274607",
+              "quote": "Vetaion’s operating system coordinates production and administrative work, and monitors manufacturing from assembly through testing and quality checks.",
+              "source_content_hash": "7ecafb66d0539a68",
+              "quote_hash": "7e770fae334b0a82a52fa7a8a09a486e4f4ab7dafbb9fb7bc80d7be3d07210b2"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "自动化控制柜制造服务",
+          "description": "利用软件和机器人自动化生产定制电气控制柜，将2D电路图转换为3D模型，由机器人完成组件放置和布线。",
+          "target_customers": "需要控制柜的工厂、风电场、数据中心等",
+          "features": [
+            "从批量1开始自动化生产",
+            "交付时间从数月缩短至不到四周",
+            "人工工作量降至十分之一"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "Instead of printed schematics, tape measures, and hand drills, its cabinets are guided by software and built by robots, saving time and reducing costs.",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "1f2786b726b096aaea4fe8ea0a2dca36a5123dbce16be6525585b27de813f590"
+            },
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "the lead times for a control cabinet fall from several months to under four weeks, and the manual work involved drops to a tenth.",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "a7fb809c1a0682035a0eb1f38a38e8792f10da54f6741fea8dd0a05afb3627e4"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "融资额",
+          "value": "€5.7 million",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "has closed a €5.7 million pre-Seed financing round",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "c0dd7a20472a3108900f56071f951a5efa8d3b7d2b03ed57d5d70f404b482aa0"
+            }
+          ]
+        },
+        {
+          "label": "欧洲每年控制柜需求估计",
+          "value": "超过500万台",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "The company estimates that Europe needs more than five million control cabinets every year.",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "6bbeba5bc8e282f9408e0571f2843c61f7c799c55f5367e97cec481d37117a4b"
+            }
+          ]
+        },
+        {
+          "label": "交付时间缩短",
+          "value": "从数月降至不到四周",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "the lead times for a control cabinet fall from several months to under four weeks",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "f62c5b861d33db9a660762c3ec613a3994c6ba26401e8782660aa3d3092c2423"
+            }
+          ]
+        },
+        {
+          "label": "人工工作量减少",
+          "value": "降至十分之一",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "the manual work involved drops to a tenth",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "f174602f93caec59908883ca911fd6976e2ff3ca6719efef94919bbdf479a818"
+            }
+          ]
+        },
+        {
+          "label": "报价响应时间",
+          "value": "24小时内",
+          "observed_at": "2026-11-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "Vetaion responds to project inquiries with a firm quote within 24 hours",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "f2d1eda049599931eb50268eac8718601023a3b9accf27d0d5999f7f9dfb4265"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Johannes von Borries",
+          "quote": "Many people see control cabinets as a craft, not a case for venture capital. We see a problem that AI and automation can solve. What convinced us above all was the team and its pace: I visited Vetaion on site twice within just a few weeks. The progress between my visits was astonishing – one of the highest execution speeds I have seen",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "Many people see control cabinets as a craft, not a case for venture capital. We see a problem that AI and automation can solve. What convinced us above all was the team and its pace: I visited Vetaion on site twice within just a few weeks. The progress between my visits was astonishing – one of the highest execution speeds I have seen",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "d47c13e87a60b4e6da15ced03ee56c06defc8fc3a7e72a8d014f89c1fd09e912"
+            }
+          ]
+        },
+        {
+          "speaker": "Nikolaus von Bary",
+          "quote": "Europe’s share of global manufacturing has fallen from 25 to 16% in recent years. We have forgotten how to make things and have preferred to rely on suppliers abroad. If we do not bring that capability back, it will be lost for good, and we will not be able to deliver the infrastructure build-out that the megatrends of AI, robotics, and the energy transition require",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "Europe’s share of global manufacturing has fallen from 25 to 16% in recent years. We have forgotten how to make things and have preferred to rely on suppliers abroad. If we do not bring that capability back, it will be lost for good, and we will not be able to deliver the infrastructure build-out that the megatrends of AI, robotics, and the energy transition require",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "b46266ba8befb3f7bcfbf573a3797f941a34dd3a84d2a310e908bd4e62f81af2"
+            }
+          ]
+        },
+        {
+          "speaker": "Anna Wahl",
+          "quote": "We want to make Europe's industry fit for the future and strengthen our technological sovereignty",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-725a2f6dc99df16b",
+              "quote": "We want to make Europe's industry fit for the future and strengthen our technological sovereignty",
+              "source_content_hash": "63d6e78a977ef60b",
+              "quote_hash": "2bfcc5602517ecf30f3ed4f07e9521b2dda89a356bb6ab934f64bbf47299a868"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "UVC Partners",
+            "speaker": "Johannes von Borries",
+            "speaker_role": "Managing Partner",
+            "rationale": "认为控制柜制造是AI和自动化可以解决的问题，团队执行速度极快。",
+            "quote": "Many people see control cabinets as a craft, not a case for venture capital. We see a problem that AI and automation can solve. What convinced us above all was the team and its pace: I visited Vetaion on site twice within just a few weeks. The progress between my visits was astonishing – one of the highest execution speeds I have seen",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "Many people see control cabinets as a craft, not a case for venture capital. We see a problem that AI and automation can solve. What convinced us above all was the team and its pace: I visited Vetaion on site twice within just a few weeks. The progress between my visits was astonishing – one of the highest execution speeds I have seen",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "d47c13e87a60b4e6da15ced03ee56c06defc8fc3a7e72a8d014f89c1fd09e912"
+              }
+            ]
+          },
+          {
+            "institution": "Viessmann Generations Group",
+            "speaker": "Anna Wahl",
+            "speaker_role": "managing director of venture capital",
+            "rationale": "旨在使欧洲工业适应未来并加强技术主权。",
+            "quote": "We want to make Europe's industry fit for the future and strengthen our technological sovereignty",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-725a2f6dc99df16b",
+                "quote": "We want to make Europe's industry fit for the future and strengthen our technological sovereignty",
+                "source_content_hash": "63d6e78a977ef60b",
+                "quote_hash": "2bfcc5602517ecf30f3ed4f07e9521b2dda89a356bb6ab934f64bbf47299a868"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是Vetaion能否将控制柜制造从手工定制转化为软件驱动的机器人自动化，并实现批量1的经济性。已验证信号包括：交付时间从数月缩短至不到四周、人工工作量降至十分之一、24小时内提供报价，以及团队在短期内展现的高执行速度。当前融资依赖这些早期运营指标，但尚未披露客户合同、收入或产能数据，判断边界在于这些效率提升能否在规模化生产中持续并转化为商业订单。",
+        "validated_signals": [
+          "交付时间从数月缩短至不到四周",
+          "人工工作量降至十分之一",
+          "24小时内提供报价",
+          "团队在数周内展现显著进展"
+        ],
+        "risks": [
+          "效率提升数据来自公司自述，尚未经独立验证或大规模生产检验",
+          "客户合同、收入及产能等商业化指标未披露",
+          "控制柜定制化程度高，自动化方案在更广泛订单中的可扩展性待验证"
+        ],
+        "sector": "工业软件与制造",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Vetaion能否将控制柜制造从手工定制转化为软件驱动的机器人自动化，并实现批量1的经济性。已验证信号包括：交付时间从数月缩短至不到四周、人工工作量降至十分之一、24小时内提供报价，以及团队在短期内展现的高执行速度。当前融资依赖这些早期运营指标，但尚未披露客户合同、收入或产能数据，判断边界在于这些效率提升能否在规模化生产中持续并转化为商业订单。",
+          "evidence_signals": [
+            "交付时间从数月缩短至不到四周",
+            "人工工作量降至十分之一",
+            "24小时内提供报价",
+            "团队在数周内展现显著进展"
+          ],
+          "risks": [
+            "效率提升数据来自公司自述，尚未经独立验证或大规模生产检验",
+            "客户合同、收入及产能等商业化指标未披露",
+            "控制柜定制化程度高，自动化方案在更广泛订单中的可扩展性待验证"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "VetaionOS",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "自动化控制柜制造服务",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Nikolaus von Bary",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Benedikt Hohmann",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Visionaries Tomorrow",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "UVC Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "2100 Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Viessmann Generations Group",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-dc09c82dcc6d5e13",
+          "date": "2026-11-19",
+          "title": "慕尼黑Vetaion获570万欧元融资，利用AI与机器人实现控制柜制造自动化",
+          "amount": "€5.7 million",
+          "source_refs": [
+            "SA-9f842c8b68fc08f3"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-23028648dbd2a819",
+          "source_url": "https://www.eu-startups.com/2026/11/munich-based-vetaion-raises-e5-7-million-to-automate-control-cabinet-manufacturing-with-ai-and-robotics/",
+          "title": "慕尼黑Vetaion获570万欧元融资，利用AI与机器人实现控制柜制造自动化",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-22T00:18:30.829Z",
+          "content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+          "source_artifact_id": "SA-9f842c8b68fc08f3",
+          "raw_id": "RAW-a7a7984bd655dacb",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-e230f947b0274607",
+          "source_url": "https://www.startup.eu/investments/vetaion-5-7-m-pre-seed-11-2026",
+          "title": "Munich-based Vetaion raises €5.7 million pre-seed to automate control cabinet manufacturing",
+          "publisher": "startup.eu",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-22T00:39:18.130Z",
+          "content_hash": "7ecafb66d0539a68",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-725a2f6dc99df16b",
+          "source_url": "https://dealroom.co/news/174315-vetaion-raises-5-7m-to-automate-control-cabinet-production/",
+          "title": "Vetaion raises €5.7M to automate control cabinet production",
+          "publisher": "dealroom.co",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-22T00:39:19.935Z",
+          "content_hash": "63d6e78a977ef60b",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-22T00:39:42.638Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-22T00:39:42.638Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "VetaionOS",
+            "自动化控制柜制造服务"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Benedikt Hohmann",
+            "Nikolaus von Bary"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-dc09c82dcc6d5e13"
+      ],
+      "aggregation": {
+        "key": "EN-e7cff3bfc36dcad1|pre_seed|EUR:exact:5700000:::|2026-11-19",
+        "event_count": 1,
+        "strategy": "reviewed_funding_subject",
+        "subject_id": "EN-e7cff3bfc36dcad1",
+        "source_card_count": 1
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-66d2e7a7f6d4f687",
+          "event_ids": [
+            "EV-dc09c82dcc6d5e13"
+          ],
+          "round": "预种子轮",
+          "round_code": "pre_seed",
+          "round_original": "pre-Seed",
+          "amount_original": "€5.7 million",
+          "amount_normalized": {
+            "currency": "EUR",
+            "value": 5700000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "570 万欧元"
+          },
+          "announced_at": "2026-11-19",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true,
+          "investors": [
+            {
+              "name": "Visionaries Tomorrow",
+              "role": "本轮联合领投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-23028648dbd2a819",
+                  "quote": "The round was co-led by Visionaries Tomorrow and UVC Partners",
+                  "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                  "quote_hash": "4ddadcf5f3d78fb49d4f9051bc2cb6936c805845e5fecfe9f1db21ee408c93b0"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-e27dc45c4cfca3"
+            },
+            {
+              "name": "UVC Partners",
+              "role": "本轮联合领投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-23028648dbd2a819",
+                  "quote": "The round was co-led by Visionaries Tomorrow and UVC Partners",
+                  "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                  "quote_hash": "4ddadcf5f3d78fb49d4f9051bc2cb6936c805845e5fecfe9f1db21ee408c93b0"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-777c853f04f599"
+            },
+            {
+              "name": "2100 Ventures",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-23028648dbd2a819",
+                  "quote": "with participation from 2100 Ventures and leading industrial companies such as Viessmann Generations Group",
+                  "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                  "quote_hash": "3734c0e5bd6467c92281bccefd08c1d7b70324204f3dfec626091024e25bda71"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-6bacce9073820b"
+            },
+            {
+              "name": "Viessmann Generations Group",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-23028648dbd2a819",
+                  "quote": "with participation from 2100 Ventures and leading industrial companies such as Viessmann Generations Group",
+                  "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                  "quote_hash": "3734c0e5bd6467c92281bccefd08c1d7b70324204f3dfec626091024e25bda71"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-4617100ed11dee"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "HomeGermany-StartupsMunich-based Vetaion raises €5.7 million to automate control cabinet manufacturing with AI...",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "46d25b166901cc787afedb4ccdb7c4dd32840559c592d0a5a67bbf7545c1908c"
+            },
+            {
+              "source_id": "FISRC-23028648dbd2a819",
+              "quote": "has closed a €5.7 million pre-Seed financing round",
+              "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+              "quote_hash": "c0dd7a20472a3108900f56071f951a5efa8d3b7d2b03ed57d5d70f404b482aa0"
+            },
+            {
+              "source_id": "FISRC-e230f947b0274607",
+              "quote": "Vetaion has raised €5.7 million in pre-seed funding",
+              "source_content_hash": "7ecafb66d0539a68",
+              "quote_hash": "9029a51f4439de211a352fa82565e6231b12f0fae6af0cb36ccef17bb607a70b"
+            }
+          ]
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "id": "enterprise-software",
+        "name": "企业软件",
+        "dimension": "financing_product_form"
+      },
+      "market_category": {
+        "id": "industry",
+        "name": "行业 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "manufacturing",
+        "name": "工业软件与制造",
+        "dimension": "financing_subsector"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-dc09c82dcc6d5e13"
+      },
+      "translations": {
+        "zh-CN": {
+          "company.headquarters": {
+            "text": "德国慕尼黑",
+            "source_hash": "e41d34b4e1af9d7633051971df8056d12b489e61d2af0e1b6e241140f08ff1bf",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-14T08:40:13.395Z",
+            "status": "translated"
+          },
+          "products[0].target_customers": {
+            "text": "Mittelstand机械和工厂工程行业",
+            "source_hash": "199efbdd8eca018a9ca838054d0a7ef63474240812bf510bc1c409a4967a17b6",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-23T05:55:15.293Z",
+            "status": "translated"
+          }
+        }
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "industry",
+          "name": "行业 AI"
+        },
+        "subsector": {
+          "id": "manufacturing",
+          "name": "工业软件与制造"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-23028648dbd2a819",
+            "quote": "Vetaion, a Munich-based company that automates the manufacturing of custom electrical control cabinets"
+          },
+          {
+            "source_id": "FISRC-e230f947b0274607",
+            "quote": "The company describes itself as an AI-native manufacturer serving the Mittelstand mechanical and plant engineering sector."
+          },
+          {
+            "source_id": "FISRC-23028648dbd2a819",
+            "quote": "With VetaionOS, the German startup is building its own operating system to automate one-off product manufacturing."
+          },
+          {
+            "source_id": "FISRC-e230f947b0274607",
+            "quote": "Vetaion’s operating system coordinates production and administrative work, and monitors manufacturing from assembly through testing and quality checks."
+          }
+        ],
+        "rationale": "Vetaion 以 VetaionOS 自动化定制控制柜制造，属工业制造软件。"
+      },
+      "source_card_ids": [
+        "FI-66d2e7a7f6d4f687"
       ]
     },
     {
@@ -9226,6 +10709,866 @@
       },
       "source_card_ids": [
         "FI-0bfa60b9e5f0b086"
+      ]
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-1c7a6290f4a522a8",
+      "triggered_by_event_id": "EV-104419284ab31dea",
+      "as_of_date": "2026-11-22",
+      "company": {
+        "entity_id": "EN-a2039b2db07c1ad6",
+        "name": "Isomorphic Labs",
+        "full_name": "Isomorphic Labs",
+        "website": "",
+        "summary": "一家专注于设计和开发新药的AI公司，总部位于伦敦，2021年成立，构建了可跨多种治疗领域和药物模态工作的AI药物设计引擎IsoDDE。",
+        "headquarters": "伦敦",
+        "founders": [
+          {
+            "name": "Sir Demis Hassabis",
+            "role": "创始人兼首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "says Sir Demis Hassabis, founder and CEO of Isomorphic Labs",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "4deb6f4f1dab6ce0d200cde1d7fb07ae3271dfcf1cc03c074c4db873d7814dcc"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "quote": "Isomorphic Labs, an AI company focussed on designing and developing new medicines",
+            "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+            "quote_hash": "0d85bd160e7d526a2826a3a2898b1e26bde15776a6c35d933149e78fd80c93f3"
+          },
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "quote": "Isomorphic Labs was founded in 2021",
+            "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+            "quote_hash": "1c5b4db4864e4cc5245b80a36254804b08918e5ac8b53f90a07b82fc9e33c032"
+          }
+        ],
+        "application_entity_id": "EN-a2039b2db07c1ad6",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "C轮",
+        "amount": "€4.5 billion",
+        "total_raised": "",
+        "announced_at": "2026-11-17",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Greenoaks",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round was co-led by Greenoaks and Sequoia Capital",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "d6154167c0a299c06b42e1f595574692b8c169e0ff817e7698c090af66bbce67"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-97bea5e589d4d7"
+          },
+          {
+            "name": "Sequoia Capital",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round was co-led by Greenoaks and Sequoia Capital",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "d6154167c0a299c06b42e1f595574692b8c169e0ff817e7698c090af66bbce67"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-862e0e7d2ba5cf"
+          },
+          {
+            "name": "Andreessen Horowitz",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "alongside Andreessen Horowitz, with continued significant investment from Alphabet",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "75e4df5da97582a6d0dcb53c2b4f195d27d2994ecbb4a033be6deb07b17428c2"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b8a0e793124952"
+          },
+          {
+            "name": "Alphabet",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "alongside Andreessen Horowitz, with continued significant investment from Alphabet",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "75e4df5da97582a6d0dcb53c2b4f195d27d2994ecbb4a033be6deb07b17428c2"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-7cba4d104aba24"
+          },
+          {
+            "name": "Thrive Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-5f293d18e41f5e"
+          },
+          {
+            "name": "MGX",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-e32837677acc56"
+          },
+          {
+            "name": "GV",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-90d5bb78e64004"
+          },
+          {
+            "name": "CapitalG",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-afc832a9562443"
+          },
+          {
+            "name": "Temasek",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-91885d8d9e5635"
+          },
+          {
+            "name": "UK Sovereign AI Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-266f437b7afea1"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "quote": "HomeFundingAI drug discovery giant Isomorphic Labs raises €4.5 billion in blockbuster funding...",
+            "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+            "quote_hash": "e3f8dcf21f80acb02e91df994593acc33130fdbce6818102352c99d51e0856ef"
+          },
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "quote": "today announced a €4.5 billion ($5 billion) Series C financing round",
+            "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+            "quote_hash": "e7e38661605f3e27b9ff84546bb92c68e34a53f00c796869094f484f85cb524d"
+          },
+          {
+            "source_id": "FISRC-63882214ca8d243f",
+            "quote": "Alphabet-backed Isomorphic Labs has raised $5 billion in a Series C funding round, co-led by Greenoaks and Sequoia Capital.",
+            "source_content_hash": "75252b6ba4e7eace",
+            "quote_hash": "45c2c83ae88519bbc0e3da9f01e219f344ff23d4894955b4b2aee792488f67d0"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "€4.5 billion",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 4500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "45 亿欧元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-104419284ab31dea",
+            "round_original": "C轮",
+            "amount": "€4.5 billion",
+            "announced_at": "2026-11-17",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "HomeFundingAI drug discovery giant Isomorphic Labs raises €4.5 billion in blockbuster funding...",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "e3f8dcf21f80acb02e91df994593acc33130fdbce6818102352c99d51e0856ef"
+              },
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "today announced a €4.5 billion ($5 billion) Series C financing round",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "e7e38661605f3e27b9ff84546bb92c68e34a53f00c796869094f484f85cb524d"
+              },
+              {
+                "source_id": "FISRC-63882214ca8d243f",
+                "quote": "Alphabet-backed Isomorphic Labs has raised $5 billion in a Series C funding round, co-led by Greenoaks and Sequoia Capital.",
+                "source_content_hash": "75252b6ba4e7eace",
+                "quote_hash": "45c2c83ae88519bbc0e3da9f01e219f344ff23d4894955b4b2aee792488f67d0"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "EUR",
+              "value": 4500000000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "45 亿欧元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-172c6eda5dfd3979",
+          "FISRC-63882214ca8d243f"
+        ]
+      },
+      "products": [
+        {
+          "name": "IsoDDE",
+          "description": "专有的AI药物设计引擎，统一一套基础模拟AI模型，可跨多种治疗领域和药物模态工作，探索广阔化学空间以设计、优化并交付具有理想成药性质的工程化分子。",
+          "target_customers": "内部药物研发管线及合作生态伙伴",
+          "features": [
+            "跨多种治疗领域和药物模态的基础模拟AI模型",
+            "探索广阔化学空间设计分子",
+            "专有智能体在复杂生物系统上推理"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-172c6eda5dfd3979",
+              "quote": "Isomorphic is scaling its proprietary drug design engine (IsoDDE) and therapeutic candidate pipeline designed with AI to deliver the next generation of medicines.",
+              "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+              "quote_hash": "7618349893d2fce5ceeb4e03c167de188bc39ff3e88bb52ec57ce75508d51713"
+            },
+            {
+              "source_id": "FISRC-172c6eda5dfd3979",
+              "quote": "IsoDDE unifies a suite of foundational simulation AI models that natively work across multiple therapeutic areas and drug modalities.",
+              "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+              "quote_hash": "0a848e43368baeec2c04bb7ab70402b2c993027a5b3ff513bf0a796bbeef0a40"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "€4.5 billion（$5 billion）",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-172c6eda5dfd3979",
+              "quote": "today announced a €4.5 billion ($5 billion) Series C financing round",
+              "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+              "quote_hash": "e7e38661605f3e27b9ff84546bb92c68e34a53f00c796869094f484f85cb524d"
+            }
+          ]
+        },
+        {
+          "label": "历史B轮融资额",
+          "value": "€1.8 billion",
+          "observed_at": "2026-11-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-172c6eda5dfd3979",
+              "quote": "EU-Startups also previously covered Isomorphic Labs’ €1.8 billion Series B among the major UK technology financings of the first half of 2026.",
+              "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+              "quote_hash": "ba494db3075fb7e7ed8887fc9e84340b94571befb9275e6fabe8117c6877564c"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Sir Demis Hassabis",
+          "quote": "Our drug design engine is generating molecules with unprecedented precision and speed.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-172c6eda5dfd3979",
+              "quote": "Our drug design engine is generating molecules with unprecedented precision and speed.",
+              "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+              "quote_hash": "9faea43c06ffef7ef5f58223f994df12623d5b4250d9740f656e83419f314abc"
+            }
+          ]
+        },
+        {
+          "speaker": "Max Jaderberg",
+          "quote": "Every week we are making repeatable scientific advancements enabled by our models",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-172c6eda5dfd3979",
+              "quote": "Every week we are making repeatable scientific advancements enabled by our models",
+              "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+              "quote_hash": "90a77266664f8fec887dc3154e11ce846715ad9379c0d66891be3d7532f9419e"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Sequoia Capital",
+            "speaker": "Konstantine Buhler",
+            "speaker_role": "合伙人",
+            "rationale": "认为Isomorphic正在构建未来医学的基础技术，其团队将先进AI转化为不断增长的候选药物组合，因此联合领投本轮以推动医学科学发现。",
+            "quote": "Isomorphic Labs is building foundational technology for the future of medicine",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "Isomorphic Labs is building foundational technology for the future of medicine",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "d83eddb3286d819b49b565feaf04c7d8a8429f74bc1d6080f1ad0ce9db2c8e57"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是IsoDDE能否把模拟AI模型与专有智能体转化为可进入临床试验的候选药物。当前融资依赖的已验证信号包括：公司称其药物设计引擎正以更高精度和速度生成分子、每周取得可重复的科学进展，以及本轮由Greenoaks与Sequoia Capital联合领投、Alphabet等继续投资。证据边界在于：来源未披露估值、累计融资额、临床阶段数据或合作收入，因此无法验证管线成功概率与商业化兑现节奏。",
+        "validated_signals": [
+          "完成€4.5 billion（$5 billion）C轮融资",
+          "IsoDDE统一一套可跨多种治疗领域和药物模态工作的基础模拟AI模型",
+          "公司称其模型每周带来可重复的科学进展"
+        ],
+        "risks": [
+          "来源未披露估值与累计融资额，资本判断缺少定价锚点",
+          "候选药物尚在推进至临床试验阶段，临床与商业化结果仍待验证",
+          "来源未披露合作收入或客户合同，商业模式兑现程度不明"
+        ],
+        "sector": "药物研发与生命科学",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是IsoDDE能否把模拟AI模型与专有智能体转化为可进入临床试验的候选药物。当前融资依赖的已验证信号包括：公司称其药物设计引擎正以更高精度和速度生成分子、每周取得可重复的科学进展，以及本轮由Greenoaks与Sequoia Capital联合领投、Alphabet等继续投资。证据边界在于：来源未披露估值、累计融资额、临床阶段数据或合作收入，因此无法验证管线成功概率与商业化兑现节奏。",
+          "evidence_signals": [
+            "完成€4.5 billion（$5 billion）C轮融资",
+            "IsoDDE统一一套可跨多种治疗领域和药物模态工作的基础模拟AI模型",
+            "公司称其模型每周带来可重复的科学进展"
+          ],
+          "risks": [
+            "来源未披露估值与累计融资额，资本判断缺少定价锚点",
+            "候选药物尚在推进至临床试验阶段，临床与商业化结果仍待验证",
+            "来源未披露合作收入或客户合同，商业模式兑现程度不明"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "IsoDDE",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Sir Demis Hassabis",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Greenoaks",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sequoia Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andreessen Horowitz",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Alphabet",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Thrive Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "MGX",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "GV",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "CapitalG",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Temasek",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "UK Sovereign AI Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-104419284ab31dea",
+          "date": "2026-11-17",
+          "title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
+          "amount": "€4.5 billion",
+          "source_refs": [
+            "SA-449d129af536293e"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-172c6eda5dfd3979",
+          "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
+          "title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-22T00:18:28.023Z",
+          "content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+          "source_artifact_id": "SA-449d129af536293e",
+          "raw_id": "RAW-b543490392a7a0c0",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-63882214ca8d243f",
+          "source_url": "https://www.ambitionbox.com/overview/sequoia-capital-overview",
+          "title": "Life at Sequoia Capital: Culture, Salary, Reviews, Interviews & more",
+          "publisher": "ambitionbox.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-22T00:39:07.509Z",
+          "content_hash": "75252b6ba4e7eace",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-22T00:39:15.549Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-22T00:39:15.549Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "IsoDDE"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Sir Demis Hassabis"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-104419284ab31dea"
+      ],
+      "aggregation": {
+        "key": "EN-a2039b2db07c1ad6|series_c|EUR:exact:4500000000:::|2026-11-17",
+        "event_count": 1,
+        "strategy": "reviewed_funding_subject",
+        "subject_id": "EN-a2039b2db07c1ad6",
+        "source_card_count": 1
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-1c7a6290f4a522a8",
+          "event_ids": [
+            "EV-104419284ab31dea"
+          ],
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "€4.5 billion",
+          "amount_normalized": {
+            "currency": "EUR",
+            "value": 4500000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "45 亿欧元"
+          },
+          "announced_at": "2026-11-17",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true,
+          "investors": [
+            {
+              "name": "Greenoaks",
+              "role": "本轮联合领投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-172c6eda5dfd3979",
+                  "quote": "The round was co-led by Greenoaks and Sequoia Capital",
+                  "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                  "quote_hash": "d6154167c0a299c06b42e1f595574692b8c169e0ff817e7698c090af66bbce67"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-97bea5e589d4d7"
+            },
+            {
+              "name": "Sequoia Capital",
+              "role": "本轮联合领投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-172c6eda5dfd3979",
+                  "quote": "The round was co-led by Greenoaks and Sequoia Capital",
+                  "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                  "quote_hash": "d6154167c0a299c06b42e1f595574692b8c169e0ff817e7698c090af66bbce67"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-862e0e7d2ba5cf"
+            },
+            {
+              "name": "Andreessen Horowitz",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-172c6eda5dfd3979",
+                  "quote": "alongside Andreessen Horowitz, with continued significant investment from Alphabet",
+                  "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                  "quote_hash": "75e4df5da97582a6d0dcb53c2b4f195d27d2994ecbb4a033be6deb07b17428c2"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-b8a0e793124952"
+            },
+            {
+              "name": "Alphabet",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-172c6eda5dfd3979",
+                  "quote": "alongside Andreessen Horowitz, with continued significant investment from Alphabet",
+                  "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                  "quote_hash": "75e4df5da97582a6d0dcb53c2b4f195d27d2994ecbb4a033be6deb07b17428c2"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-7cba4d104aba24"
+            },
+            {
+              "name": "Thrive Capital",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-172c6eda5dfd3979",
+                  "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                  "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                  "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-5f293d18e41f5e"
+            },
+            {
+              "name": "MGX",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-172c6eda5dfd3979",
+                  "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                  "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                  "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-e32837677acc56"
+            },
+            {
+              "name": "GV",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-172c6eda5dfd3979",
+                  "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                  "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                  "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-90d5bb78e64004"
+            },
+            {
+              "name": "CapitalG",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-172c6eda5dfd3979",
+                  "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                  "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                  "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-afc832a9562443"
+            },
+            {
+              "name": "Temasek",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-172c6eda5dfd3979",
+                  "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                  "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                  "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-91885d8d9e5635"
+            },
+            {
+              "name": "UK Sovereign AI Fund",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-172c6eda5dfd3979",
+                  "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                  "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                  "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-266f437b7afea1"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-172c6eda5dfd3979",
+              "quote": "HomeFundingAI drug discovery giant Isomorphic Labs raises €4.5 billion in blockbuster funding...",
+              "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+              "quote_hash": "e3f8dcf21f80acb02e91df994593acc33130fdbce6818102352c99d51e0856ef"
+            },
+            {
+              "source_id": "FISRC-172c6eda5dfd3979",
+              "quote": "today announced a €4.5 billion ($5 billion) Series C financing round",
+              "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+              "quote_hash": "e7e38661605f3e27b9ff84546bb92c68e34a53f00c796869094f484f85cb524d"
+            },
+            {
+              "source_id": "FISRC-63882214ca8d243f",
+              "quote": "Alphabet-backed Isomorphic Labs has raised $5 billion in a Series C funding round, co-led by Greenoaks and Sequoia Capital.",
+              "source_content_hash": "75252b6ba4e7eace",
+              "quote_hash": "45c2c83ae88519bbc0e3da9f01e219f344ff23d4894955b4b2aee792488f67d0"
+            }
+          ]
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "id": "model-api",
+        "name": "模型与 API",
+        "dimension": "financing_product_form"
+      },
+      "market_category": {
+        "id": "industry",
+        "name": "行业 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "life-sciences",
+        "name": "药物研发与生命科学",
+        "dimension": "financing_subsector"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-104419284ab31dea"
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "industry",
+          "name": "行业 AI"
+        },
+        "subsector": {
+          "id": "life-sciences",
+          "name": "药物研发与生命科学"
+        },
+        "product_form": {
+          "id": "model-api",
+          "name": "模型与 API"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          },
+          {
+            "id": "research",
+            "name": "科研机构"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "quote": "Isomorphic Labs, an AI company focussed on designing and developing new medicines"
+          },
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "quote": "Isomorphic is scaling its proprietary drug design engine (IsoDDE) and therapeutic candidate pipeline designed with AI to deliver the next generation of medicines."
+          },
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "quote": "IsoDDE unifies a suite of foundational simulation AI models that natively work across multiple therapeutic areas and drug modalities."
+          }
+        ],
+        "rationale": "Isomorphic Labs 以 AI 药物设计引擎 IsoDDE 研发新药，属生命科学 AI。"
+      },
+      "source_card_ids": [
+        "FI-1c7a6290f4a522a8"
       ]
     },
     {
@@ -696642,6 +698985,475 @@
       ]
     },
     {
+      "funding_insight_id": "FI-223dbf7ad48a6c82",
+      "triggered_by_event_id": "EV-b5b93d1b6f0bce86",
+      "source_event_ids": [
+        "EV-b5b93d1b6f0bce86"
+      ],
+      "subject_card_id": "FI-223dbf7ad48a6c82",
+      "as_of_date": "2026-11-22",
+      "market_scope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin",
+          "funding_company_evidence:china_legal_entity:广东知业科技有限公司"
+        ],
+        "source_registry_ids": []
+      },
+      "company": {
+        "entity_id": "EN-4f52302c928b8d84",
+        "application_entity_id": "EN-4f52302c928b8d84",
+        "name": "知业科技",
+        "full_name": "广东知业科技有限公司",
+        "summary": "工业互联网平台服务商，以一体两翼业务模型打造精益化智能制造平台、智能化装备售后平台与精益人工智能平台，服务40多个细分行业、超500家制造企业。",
+        "website": "https://www.zacye.com/",
+        "headquarters": "珠海高新区",
+        "founders": []
+      },
+      "financing": {
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount": "数千万元",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-11-19",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "高科金投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-97ea0233a06dbd19",
+                "quote": "投资机构为高科金投、泰亚投资",
+                "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+                "quote_hash": "03ed427859e43b6039ca82a4e49c9414869b5741c8a453b6994717823a92fe7d"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-2403d44d78b4d4"
+          },
+          {
+            "name": "泰亚投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-97ea0233a06dbd19",
+                "quote": "投资机构为高科金投、泰亚投资",
+                "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+                "quote_hash": "03ed427859e43b6039ca82a4e49c9414869b5741c8a453b6994717823a92fe7d"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-2227876496806c"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-97ea0233a06dbd19",
+            "quote": "智通财经APP获悉，广东知业科技有限公司完成数千万元A轮融资，投资机构为高科金投、泰亚投资。",
+            "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+            "quote_hash": "7c1ffbb1bdf577eaeb0d7bc806fe6042ceeef9141dfeec547d86dd35b4f297a5"
+          },
+          {
+            "source_id": "FISRC-97ea0233a06dbd19",
+            "quote": "广东知业科技有限公司完成数千万元A轮融资，投资机构为高科金投、泰亚投资",
+            "source_content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+            "quote_hash": "e82c641fad7c18e3c3cf82285a520fb7fc691fd7103b67517c6322cdd343a4ae"
+          },
+          {
+            "source_id": "FISRC-304a6c406c01caf5",
+            "quote": "知业科技完成数千万元A轮融资，投资机构为高科金投、泰亚投资",
+            "source_content_hash": "4f9a61a026c507af",
+            "quote_hash": "b1ce933d902630cf62185b49eecc75f7a78b611b5e41c6e981ed2db2d8a70ce5"
+          }
+        ],
+        "current_source_ids": [
+          "FISRC-97ea0233a06dbd19",
+          "FISRC-304a6c406c01caf5"
+        ]
+      },
+      "research_sources": [
+        {
+          "source_id": "FISRC-97ea0233a06dbd19",
+          "source_url": "https://feng.ifeng.com/c/8yBMtGJ5DEO",
+          "title": "知业科技获数千万元A轮融资 聚焦工业AI规模化应用_大风号",
+          "publisher": "feng.ifeng.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-22T00:17:20.641Z",
+          "content_hash": "86475b0b6d05505e83e8ef229387a4a27ed5381dc8ddc0a1f27ef3328e890756",
+          "source_artifact_id": "SA-54a6a259f64813a8",
+          "raw_id": "RAW-9d672554c09c0745",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-304a6c406c01caf5",
+          "source_url": "https://m.pedaily.cn/news/572088",
+          "title": "知业科技完成数千万元A轮融资，聚焦工业AI规模化应用",
+          "publisher": "m.pedaily.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-22T00:38:49.506Z",
+          "content_hash": "4f9a61a026c507af",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-be5a00e9fa15ff4f",
+          "source_url": "https://m.cls.cn/detail/1132561",
+          "title": "硬科技投向标|多部门印发原材料工业“三品”实施方案 C919将于9月19日拿适航证",
+          "publisher": "m.cls.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-22T00:39:05.081Z",
+          "content_hash": "571569e4fe30c6a5",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "historical_round"
+        }
+      ],
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "industry",
+          "name": "行业 AI"
+        },
+        "subsector": {
+          "id": "manufacturing",
+          "name": "工业软件与制造"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-97ea0233a06dbd19",
+            "quote": "知业科技成立于2018年，总部位于珠海高新区，是工业互联网平台服务商，以一体两翼业务模型打造精益化智能制造平台、智能化装备售后平台与精益人工智能平台，产品服务40多个细分行业、超500家制造企业"
+          },
+          {
+            "source_id": "FISRC-304a6c406c01caf5",
+            "quote": "知业科技自主研发的精益大模型（LPAI）采用“基础大模型—行业模型—场景模型”三级架构"
+          },
+          {
+            "source_id": "FISRC-304a6c406c01caf5",
+            "quote": "精益大模型（LPAI）融合工业知识图谱、检索增强生成（RAG）与多约束推理"
+          },
+          {
+            "source_id": "FISRC-304a6c406c01caf5",
+            "quote": "知业科技将工业智能体集成到塑易通、板易通、机易通等一体机中，将其定位为中小制造企业的物理AI操作系统"
+          }
+        ],
+        "rationale": "知业科技面向制造企业提供精益大模型与智能制造平台，属工业软件。"
+      },
+      "market_category": {
+        "id": "industry",
+        "name": "行业 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "manufacturing",
+        "name": "工业软件与制造",
+        "dimension": "financing_subsector"
+      },
+      "product_form": {
+        "id": "enterprise-software",
+        "name": "企业软件",
+        "dimension": "financing_product_form"
+      },
+      "products": [
+        {
+          "name": "精益大模型平台（LPAI）"
+        },
+        {
+          "name": "物理端AI一体机（塑易通、板易通、机易通）"
+        },
+        {
+          "name": "分寸云（精益化智能制造平台）"
+        }
+      ]
+    },
+    {
+      "funding_insight_id": "FI-66d2e7a7f6d4f687",
+      "triggered_by_event_id": "EV-dc09c82dcc6d5e13",
+      "source_event_ids": [
+        "EV-dc09c82dcc6d5e13"
+      ],
+      "subject_card_id": "FI-66d2e7a7f6d4f687",
+      "as_of_date": "2026-11-22",
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "company": {
+        "entity_id": "EN-e7cff3bfc36dcad1",
+        "application_entity_id": "EN-e7cff3bfc36dcad1",
+        "name": "Vetaion",
+        "full_name": "Vetaion",
+        "summary": "Vetaion是一家总部位于慕尼黑的AI原生制造商，专注于自动化定制电气控制柜的生产。公司通过将2D电路图转换为3D模型，并利用机器人完成组件放置和布线，实现从批量1开始的自动化生产。",
+        "website": "",
+        "headquarters": "德国慕尼黑",
+        "founders": [
+          {
+            "name": "Nikolaus von Bary",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "said founder Nikolaus von Bary",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "515c04368dd06947005f46a5f570bd11889a69455eceb6234e76fcf1488fc83b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Benedikt Hohmann",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-725a2f6dc99df16b",
+                "quote": "Founders Nikolaus von Bary and Benedikt Hohmann bring more than 20 years of combined manufacturing experience",
+                "source_content_hash": "63d6e78a977ef60b",
+                "quote_hash": "05339b956211e5167499d0ecda6bc6fdb90d1bd60ac7d4f4bc90cbf520b2e627"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "pre-Seed",
+        "amount": "€5.7 million",
+        "amount_original": "€5.7 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 5700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "570 万欧元"
+        },
+        "announced_at": "2026-11-19",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Visionaries Tomorrow",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "The round was co-led by Visionaries Tomorrow and UVC Partners",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "4ddadcf5f3d78fb49d4f9051bc2cb6936c805845e5fecfe9f1db21ee408c93b0"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-e27dc45c4cfca3"
+          },
+          {
+            "name": "UVC Partners",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "The round was co-led by Visionaries Tomorrow and UVC Partners",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "4ddadcf5f3d78fb49d4f9051bc2cb6936c805845e5fecfe9f1db21ee408c93b0"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-777c853f04f599"
+          },
+          {
+            "name": "2100 Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "with participation from 2100 Ventures and leading industrial companies such as Viessmann Generations Group",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "3734c0e5bd6467c92281bccefd08c1d7b70324204f3dfec626091024e25bda71"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-6bacce9073820b"
+          },
+          {
+            "name": "Viessmann Generations Group",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23028648dbd2a819",
+                "quote": "with participation from 2100 Ventures and leading industrial companies such as Viessmann Generations Group",
+                "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+                "quote_hash": "3734c0e5bd6467c92281bccefd08c1d7b70324204f3dfec626091024e25bda71"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-4617100ed11dee"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-23028648dbd2a819",
+            "quote": "HomeGermany-StartupsMunich-based Vetaion raises €5.7 million to automate control cabinet manufacturing with AI...",
+            "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+            "quote_hash": "46d25b166901cc787afedb4ccdb7c4dd32840559c592d0a5a67bbf7545c1908c"
+          },
+          {
+            "source_id": "FISRC-23028648dbd2a819",
+            "quote": "has closed a €5.7 million pre-Seed financing round",
+            "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+            "quote_hash": "c0dd7a20472a3108900f56071f951a5efa8d3b7d2b03ed57d5d70f404b482aa0"
+          },
+          {
+            "source_id": "FISRC-e230f947b0274607",
+            "quote": "Vetaion has raised €5.7 million in pre-seed funding",
+            "source_content_hash": "7ecafb66d0539a68",
+            "quote_hash": "9029a51f4439de211a352fa82565e6231b12f0fae6af0cb36ccef17bb607a70b"
+          }
+        ],
+        "current_source_ids": [
+          "FISRC-23028648dbd2a819",
+          "FISRC-e230f947b0274607"
+        ]
+      },
+      "research_sources": [
+        {
+          "source_id": "FISRC-23028648dbd2a819",
+          "source_url": "https://www.eu-startups.com/2026/11/munich-based-vetaion-raises-e5-7-million-to-automate-control-cabinet-manufacturing-with-ai-and-robotics/",
+          "title": "慕尼黑Vetaion获570万欧元融资，利用AI与机器人实现控制柜制造自动化",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-22T00:18:30.829Z",
+          "content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+          "source_artifact_id": "SA-9f842c8b68fc08f3",
+          "raw_id": "RAW-a7a7984bd655dacb",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-e230f947b0274607",
+          "source_url": "https://www.startup.eu/investments/vetaion-5-7-m-pre-seed-11-2026",
+          "title": "Munich-based Vetaion raises €5.7 million pre-seed to automate control cabinet manufacturing",
+          "publisher": "startup.eu",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-22T00:39:18.130Z",
+          "content_hash": "7ecafb66d0539a68",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-725a2f6dc99df16b",
+          "source_url": "https://dealroom.co/news/174315-vetaion-raises-5-7m-to-automate-control-cabinet-production/",
+          "title": "Vetaion raises €5.7M to automate control cabinet production",
+          "publisher": "dealroom.co",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-22T00:39:19.935Z",
+          "content_hash": "63d6e78a977ef60b",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "industry",
+          "name": "行业 AI"
+        },
+        "subsector": {
+          "id": "manufacturing",
+          "name": "工业软件与制造"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-23028648dbd2a819",
+            "quote": "Vetaion, a Munich-based company that automates the manufacturing of custom electrical control cabinets"
+          },
+          {
+            "source_id": "FISRC-e230f947b0274607",
+            "quote": "The company describes itself as an AI-native manufacturer serving the Mittelstand mechanical and plant engineering sector."
+          },
+          {
+            "source_id": "FISRC-23028648dbd2a819",
+            "quote": "With VetaionOS, the German startup is building its own operating system to automate one-off product manufacturing."
+          },
+          {
+            "source_id": "FISRC-e230f947b0274607",
+            "quote": "Vetaion’s operating system coordinates production and administrative work, and monitors manufacturing from assembly through testing and quality checks."
+          }
+        ],
+        "rationale": "Vetaion 以 VetaionOS 自动化定制控制柜制造，属工业制造软件。"
+      },
+      "market_category": {
+        "id": "industry",
+        "name": "行业 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "manufacturing",
+        "name": "工业软件与制造",
+        "dimension": "financing_subsector"
+      },
+      "product_form": {
+        "id": "enterprise-software",
+        "name": "企业软件",
+        "dimension": "financing_product_form"
+      },
+      "products": [
+        {
+          "name": "VetaionOS"
+        },
+        {
+          "name": "自动化控制柜制造服务"
+        }
+      ]
+    },
+    {
       "funding_insight_id": "FI-aac4ece28b7640a6",
       "triggered_by_event_id": "EV-a151aeb22a93c5ee",
       "source_event_ids": [
@@ -698849,6 +701661,320 @@
       "products": [
         {
           "name": "Aarden 土地智能平台"
+        }
+      ]
+    },
+    {
+      "funding_insight_id": "FI-1c7a6290f4a522a8",
+      "triggered_by_event_id": "EV-104419284ab31dea",
+      "source_event_ids": [
+        "EV-104419284ab31dea"
+      ],
+      "subject_card_id": "FI-1c7a6290f4a522a8",
+      "as_of_date": "2026-11-22",
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "company": {
+        "entity_id": "EN-a2039b2db07c1ad6",
+        "application_entity_id": "EN-a2039b2db07c1ad6",
+        "name": "Isomorphic Labs",
+        "full_name": "Isomorphic Labs",
+        "summary": "一家专注于设计和开发新药的AI公司，总部位于伦敦，2021年成立，构建了可跨多种治疗领域和药物模态工作的AI药物设计引擎IsoDDE。",
+        "website": "",
+        "headquarters": "伦敦",
+        "founders": [
+          {
+            "name": "Sir Demis Hassabis",
+            "role": "创始人兼首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "says Sir Demis Hassabis, founder and CEO of Isomorphic Labs",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "4deb6f4f1dab6ce0d200cde1d7fb07ae3271dfcf1cc03c074c4db873d7814dcc"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount": "€4.5 billion",
+        "amount_original": "€4.5 billion",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 4500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "45 亿欧元"
+        },
+        "announced_at": "2026-11-17",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Greenoaks",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round was co-led by Greenoaks and Sequoia Capital",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "d6154167c0a299c06b42e1f595574692b8c169e0ff817e7698c090af66bbce67"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-97bea5e589d4d7"
+          },
+          {
+            "name": "Sequoia Capital",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round was co-led by Greenoaks and Sequoia Capital",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "d6154167c0a299c06b42e1f595574692b8c169e0ff817e7698c090af66bbce67"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-862e0e7d2ba5cf"
+          },
+          {
+            "name": "Andreessen Horowitz",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "alongside Andreessen Horowitz, with continued significant investment from Alphabet",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "75e4df5da97582a6d0dcb53c2b4f195d27d2994ecbb4a033be6deb07b17428c2"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-b8a0e793124952"
+          },
+          {
+            "name": "Alphabet",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "alongside Andreessen Horowitz, with continued significant investment from Alphabet",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "75e4df5da97582a6d0dcb53c2b4f195d27d2994ecbb4a033be6deb07b17428c2"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-7cba4d104aba24"
+          },
+          {
+            "name": "Thrive Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-5f293d18e41f5e"
+          },
+          {
+            "name": "MGX",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-e32837677acc56"
+          },
+          {
+            "name": "GV",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-90d5bb78e64004"
+          },
+          {
+            "name": "CapitalG",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-afc832a9562443"
+          },
+          {
+            "name": "Temasek",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-91885d8d9e5635"
+          },
+          {
+            "name": "UK Sovereign AI Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-172c6eda5dfd3979",
+                "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+                "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+                "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-266f437b7afea1"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "quote": "HomeFundingAI drug discovery giant Isomorphic Labs raises €4.5 billion in blockbuster funding...",
+            "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+            "quote_hash": "e3f8dcf21f80acb02e91df994593acc33130fdbce6818102352c99d51e0856ef"
+          },
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "quote": "today announced a €4.5 billion ($5 billion) Series C financing round",
+            "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+            "quote_hash": "e7e38661605f3e27b9ff84546bb92c68e34a53f00c796869094f484f85cb524d"
+          },
+          {
+            "source_id": "FISRC-63882214ca8d243f",
+            "quote": "Alphabet-backed Isomorphic Labs has raised $5 billion in a Series C funding round, co-led by Greenoaks and Sequoia Capital.",
+            "source_content_hash": "75252b6ba4e7eace",
+            "quote_hash": "45c2c83ae88519bbc0e3da9f01e219f344ff23d4894955b4b2aee792488f67d0"
+          }
+        ],
+        "current_source_ids": [
+          "FISRC-172c6eda5dfd3979",
+          "FISRC-63882214ca8d243f"
+        ]
+      },
+      "research_sources": [
+        {
+          "source_id": "FISRC-172c6eda5dfd3979",
+          "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
+          "title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-22T00:18:28.023Z",
+          "content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+          "source_artifact_id": "SA-449d129af536293e",
+          "raw_id": "RAW-b543490392a7a0c0",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-63882214ca8d243f",
+          "source_url": "https://www.ambitionbox.com/overview/sequoia-capital-overview",
+          "title": "Life at Sequoia Capital: Culture, Salary, Reviews, Interviews & more",
+          "publisher": "ambitionbox.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-22T00:39:07.509Z",
+          "content_hash": "75252b6ba4e7eace",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        }
+      ],
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "industry",
+          "name": "行业 AI"
+        },
+        "subsector": {
+          "id": "life-sciences",
+          "name": "药物研发与生命科学"
+        },
+        "product_form": {
+          "id": "model-api",
+          "name": "模型与 API"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          },
+          {
+            "id": "research",
+            "name": "科研机构"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "quote": "Isomorphic Labs, an AI company focussed on designing and developing new medicines"
+          },
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "quote": "Isomorphic is scaling its proprietary drug design engine (IsoDDE) and therapeutic candidate pipeline designed with AI to deliver the next generation of medicines."
+          },
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "quote": "IsoDDE unifies a suite of foundational simulation AI models that natively work across multiple therapeutic areas and drug modalities."
+          }
+        ],
+        "rationale": "Isomorphic Labs 以 AI 药物设计引擎 IsoDDE 研发新药，属生命科学 AI。"
+      },
+      "market_category": {
+        "id": "industry",
+        "name": "行业 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "life-sciences",
+        "name": "药物研发与生命科学",
+        "dimension": "financing_subsector"
+      },
+      "product_form": {
+        "id": "model-api",
+        "name": "模型与 API",
+        "dimension": "financing_product_form"
+      },
+      "products": [
+        {
+          "name": "IsoDDE"
         }
       ]
     },
@@ -918213,6 +921339,12 @@
       }
     ],
     "publication_pending": [
+      {
+        "event_id": "EV-609bed23b2e9a178",
+        "company": "Memoket",
+        "reason": "正文写US$4.13M，标题写$4.5M，当前接受Claim仍依标题构建；金额口径冲突未结清，不批准确额融资卡，保留原文待核验原始披露与Claim修复。",
+        "source_url": "https://dealroom.co/news/173270-ex-anker-cmo-s-ai-wearable-startup-memoket-raises-4-5m-pre-a/"
+      },
       {
         "event_id": "EV-aab8ed97f5bf814a",
         "company": "DeepSeek",

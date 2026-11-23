@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-21",
-    "currentDate": "2026-11-21",
-    "eventCount": 4524,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,25 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-03",
-    "latest_disclosed_at": "2026-11-12",
+    "latest_disclosed_at": "2026-11-19",
     "role_counts": {
+      "co_lead": 1,
       "historical_or_ambiguous": 1,
       "lead": 1,
       "participant": 2
     },
     "round_codes": [
       "early_stage",
+      "pre_seed",
       "seed",
       "series_a"
     ],
@@ -96,9 +98,54 @@
         "entity_id": "EN-bcdcf577ca136895",
         "canonical_entity_id": "",
         "name": "Kuro Technology"
+      },
+      {
+        "entity_id": "EN-e7cff3bfc36dcad1",
+        "canonical_entity_id": "",
+        "name": "Vetaion"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f4c5a7a9730a81cb",
+        "funding_insight_id": "FI-66d2e7a7f6d4f687",
+        "event_ids": [
+          "EV-dc09c82dcc6d5e13"
+        ],
+        "company_entity_id": "EN-e7cff3bfc36dcad1",
+        "company_canonical_entity_id": "",
+        "company_name": "Vetaion",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "pre-Seed",
+        "amount_original": "€5.7 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 5700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "570 万欧元"
+        },
+        "announced_at": "2026-11-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-23028648dbd2a819",
+            "source_url": "https://www.eu-startups.com/2026/11/munich-based-vetaion-raises-e5-7-million-to-automate-control-cabinet-manufacturing-with-ai-and-robotics/",
+            "source_title": "慕尼黑Vetaion获570万欧元融资，利用AI与机器人实现控制柜制造自动化",
+            "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+            "quote": "The round was co-led by Visionaries Tomorrow and UVC Partners",
+            "quote_hash": "4ddadcf5f3d78fb49d4f9051bc2cb6936c805845e5fecfe9f1db21ee408c93b0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9bd0349e21bade59",
         "funding_insight_id": "FI-890bb8478ae51a1f",
@@ -254,6 +301,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-23028648dbd2a819",
+        "source_url": "https://www.eu-startups.com/2026/11/munich-based-vetaion-raises-e5-7-million-to-automate-control-cabinet-manufacturing-with-ai-and-robotics/",
+        "source_title": "慕尼黑Vetaion获570万欧元融资，利用AI与机器人实现控制柜制造自动化",
+        "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+        "quote": "The round was co-led by Visionaries Tomorrow and UVC Partners",
+        "quote_hash": "4ddadcf5f3d78fb49d4f9051bc2cb6936c805845e5fecfe9f1db21ee408c93b0"
+      },
+      {
         "source_id": "FISRC-5d8f6f4023f3737c",
         "source_url": "https://tech.eu/2026/11/12/biomatter-lands-18m-to-speed-up-enzyme-development-with-ai/",
         "source_title": "Biomatter 获 1800 万美元融资，利用 AI 加速酶开发",
@@ -373,6 +428,10 @@
         {
           "description": "Atira (September 2026): UVC says it first invested in the company’s $2.5 million pre-seed round and increased its commitment in the later seed round; no individual check size was disclosed.",
           "source_id": "uvc_atira_2026"
+        },
+        {
+          "description": "融资来源记录：Vetaion · 预种子轮 · 2026-11-19 · 本轮联合领投 · €5.7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-23028648dbd2a819"
         },
         {
           "description": "融资来源记录：Biomatter · A轮 · 2026-11-12 · 本轮参投 · $18 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -526,6 +585,14 @@
           "source_content_hash": "2c19612efff8843e",
           "quote": "UVC Partners, Fortino, and BOOOM also invested, alongside individual investors that included, among others, Whirlpool chairman and CEO Marc Bitzer and Bastian Nominacher, co-founder and co-CEO of process-mining company Celonis.",
           "quote_hash": "a7350adc3548469bf9854d18554f075c91786719e60015be6c0830e47f511e8d"
+        },
+        {
+          "source_id": "FISRC-23028648dbd2a819",
+          "source_url": "https://www.eu-startups.com/2026/11/munich-based-vetaion-raises-e5-7-million-to-automate-control-cabinet-manufacturing-with-ai-and-robotics/",
+          "source_title": "慕尼黑Vetaion获570万欧元融资，利用AI与机器人实现控制柜制造自动化",
+          "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+          "quote": "The round was co-led by Visionaries Tomorrow and UVC Partners",
+          "quote_hash": "4ddadcf5f3d78fb49d4f9051bc2cb6936c805845e5fecfe9f1db21ee408c93b0"
         },
         {
           "source_id": "FISRC-5d8f6f4023f3737c",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-21",
-    "currentDate": "2026-11-21",
-    "eventCount": 4524,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -57,22 +57,26 @@
     "name": "芯星元",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [],
-    "verificationStatus": "candidate",
+    "aliases": [
+      "NovaSilicon"
+    ],
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
+      "EV-29f377e1ad4b6ff5",
       "EV-efa6687b5276a437"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-21",
+    "lastSeen": "2026-11-22",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-29f377e1ad4b6ff5",
         "EV-efa6687b5276a437"
       ],
       "deployments": [],
@@ -83,6 +87,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-29f377e1ad4b6ff5",
+        "dataDate": "2026-11-22",
+        "date": "2026-11-17",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "AI-native 芯片设计平台「NovaSilicon」完成近亿元Pre-A+轮融资",
+        "displayTags": [],
+        "entityIds": [
+          "EN-4ee3af3ba716dc0b"
+        ]
+      },
       {
         "id": "EV-efa6687b5276a437",
         "dataDate": "2026-11-21",

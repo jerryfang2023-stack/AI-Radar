@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-21",
-    "currentDate": "2026-11-21",
-    "eventCount": 4524,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-12",
-    "latest_disclosed_at": "2026-11-13",
+    "latest_disclosed_at": "2026-11-17",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 2,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "series_b",
@@ -86,6 +86,11 @@
         "entity_id": "EN-8da5eafb322ee86e",
         "canonical_entity_id": "",
         "name": "Fractile"
+      },
+      {
+        "entity_id": "EN-a2039b2db07c1ad6",
+        "canonical_entity_id": "",
+        "name": "Isomorphic Labs"
       },
       {
         "entity_id": "EN-37799d436602eaf1",
@@ -114,6 +119,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5c227139bbe48e32",
+        "funding_insight_id": "FI-1c7a6290f4a522a8",
+        "event_ids": [
+          "EV-104419284ab31dea"
+        ],
+        "company_entity_id": "EN-a2039b2db07c1ad6",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "€4.5 billion",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 4500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "45 亿欧元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-172c6eda5dfd3979",
+            "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
+            "source_title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
+            "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+            "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+            "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+          }
+        ]
+      },
       {
         "activity_id": "IA-54415e96f38ad450",
         "funding_insight_id": "FI-f2518c11e9cf385e",
@@ -397,6 +442,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-172c6eda5dfd3979",
+        "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
+        "source_title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
+        "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+        "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+        "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+      },
+      {
         "source_id": "FISRC-b96c8f1ce3eaba55",
         "source_url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
         "source_title": "AI 智能体初创公司 LangChain 估值达 $3B",
@@ -476,16 +529,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮参投 · €4.5 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-172c6eda5dfd3979"
+        },
+        {
           "description": "融资来源记录：LangChain · C轮 · 2026-11-13 · 本轮领投 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b96c8f1ce3eaba55"
         },
         {
           "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮参投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-59233bfbeb9628bf"
-        },
-        {
-          "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-10-04 · 本轮参投 · 21亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-82c9573ed9c6ba66"
         }
       ],
       "contacts": [],
@@ -507,6 +560,14 @@
           "quote_hash": "d1f01c08b7bf92e45da97c19404e3963c55dc4d82e1e95345cbe00aecb33ade6"
         },
         {
+          "source_id": "FISRC-172c6eda5dfd3979",
+          "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
+          "source_title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
+          "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
+          "quote": "The round also included participation from all existing investors: Thrive Capital, MGX, GV, CapitalG, Temasek and the UK Sovereign AI Fund.",
+          "quote_hash": "a587973c243d6d58ec236df056a681899ec1eb72cf439cc0d260403a233abde3"
+        },
+        {
           "source_id": "FISRC-b96c8f1ce3eaba55",
           "source_url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
           "source_title": "AI 智能体初创公司 LangChain 估值达 $3B",
@@ -521,14 +582,6 @@
           "source_content_hash": "97c1f5cc5dda1d68",
           "quote": "New investors include CapitalG, Dragoneer, DST Global, BlackRock and T. Rowe Price",
           "quote_hash": "82b669877030389946f1936bd42e4a16b823664f3b7bd6e7f8a2592e5e4b3d2b"
-        },
-        {
-          "source_id": "FISRC-82c9573ed9c6ba66",
-          "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
-          "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
-          "source_content_hash": "e6bdf28f1eee82d0",
-          "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
-          "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
         }
       ],
       "last_verified_at": "2026-10-04",

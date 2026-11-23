@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-21",
-    "currentDate": "2026-11-21",
-    "eventCount": 4524,
+    "latestDataDate": "2026-11-22",
+    "currentDate": "2026-11-22",
+    "eventCount": 4530,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-24",
-    "latest_disclosed_at": "2026-06-24",
+    "latest_disclosed_at": "2026-11-19",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "pre_seed",
       "seed"
     ],
     "portfolio_companies": [
@@ -82,9 +83,54 @@
         "entity_id": "EN-e23228440ca5340f",
         "canonical_entity_id": "",
         "name": "Seltz"
+      },
+      {
+        "entity_id": "EN-e7cff3bfc36dcad1",
+        "canonical_entity_id": "",
+        "name": "Vetaion"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-404981dd8d97fd40",
+        "funding_insight_id": "FI-66d2e7a7f6d4f687",
+        "event_ids": [
+          "EV-dc09c82dcc6d5e13"
+        ],
+        "company_entity_id": "EN-e7cff3bfc36dcad1",
+        "company_canonical_entity_id": "",
+        "company_name": "Vetaion",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "pre-Seed",
+        "amount_original": "€5.7 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 5700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "570 万欧元"
+        },
+        "announced_at": "2026-11-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-23028648dbd2a819",
+            "source_url": "https://www.eu-startups.com/2026/11/munich-based-vetaion-raises-e5-7-million-to-automate-control-cabinet-manufacturing-with-ai-and-robotics/",
+            "source_title": "慕尼黑Vetaion获570万欧元融资，利用AI与机器人实现控制柜制造自动化",
+            "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+            "quote": "with participation from 2100 Ventures and leading industrial companies such as Viessmann Generations Group",
+            "quote_hash": "3734c0e5bd6467c92281bccefd08c1d7b70324204f3dfec626091024e25bda71"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1174b668f8ca966d",
         "funding_insight_id": "FI-180a459d0573eb2a",
@@ -129,6 +175,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-23028648dbd2a819",
+        "source_url": "https://www.eu-startups.com/2026/11/munich-based-vetaion-raises-e5-7-million-to-automate-control-cabinet-manufacturing-with-ai-and-robotics/",
+        "source_title": "慕尼黑Vetaion获570万欧元融资，利用AI与机器人实现控制柜制造自动化",
+        "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+        "quote": "with participation from 2100 Ventures and leading industrial companies such as Viessmann Generations Group",
+        "quote_hash": "3734c0e5bd6467c92281bccefd08c1d7b70324204f3dfec626091024e25bda71"
+      },
+      {
         "source_id": "FISRC-05007e2b6b43ffda",
         "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
         "source_title": "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE",
@@ -165,6 +219,10 @@
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Vetaion · 预种子轮 · 2026-11-19 · 本轮参投 · €5.7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-23028648dbd2a819"
+        },
         {
           "description": "融资来源记录：Seltz · 种子轮 · 2026-06-24 · 本轮参投 · $12.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-05007e2b6b43ffda"
@@ -209,6 +267,14 @@
           "source_content_hash": "f29c5ed12dc71fee5e2129cc2befb8b921f93edd9d3826089a0f661a21bdbbe9",
           "quote": "Owner contact email: hello@2100.vc. 2100 Ventures, Via Giuseppe Mazzini 9, 20123 Milano MI, Italy.",
           "quote_hash": "7ddc65cd96a46316ebe2e716a37f07bd5d926b4a8b2f840b88b33b00c691e283"
+        },
+        {
+          "source_id": "FISRC-23028648dbd2a819",
+          "source_url": "https://www.eu-startups.com/2026/11/munich-based-vetaion-raises-e5-7-million-to-automate-control-cabinet-manufacturing-with-ai-and-robotics/",
+          "source_title": "慕尼黑Vetaion获570万欧元融资，利用AI与机器人实现控制柜制造自动化",
+          "source_content_hash": "5feaccd688cddfd87099e0328bcb8457ee5bec76f185b955b81e004aa1b22d7c",
+          "quote": "with participation from 2100 Ventures and leading industrial companies such as Viessmann Generations Group",
+          "quote_hash": "3734c0e5bd6467c92281bccefd08c1d7b70324204f3dfec626091024e25bda71"
         },
         {
           "source_id": "FISRC-05007e2b6b43ffda",
