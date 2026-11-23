@@ -223,3 +223,5 @@ Financing amount selection binds the verified canonical action together with its
 研究queue中的auto_published是已完成研究发布门禁的状态，不作为research_auto_published待核验原因；真正的pending/problem保留。原始范围问题须用责任审核记录显式结清，不能删除问题或篡改最终审核结论。回归位于funding-source-roles.test.mjs与verification.test.mjs。
 
 当前Codex聊天每天10:30检查、修复和收尾同一云端流程，VPS保留08:10主运行与10:30幂等兜底；不新建重复采集或日内复核。定时聊天依赖本机应用运行。
+
+旧日恢复时，队列到期续排和最终回写都必须先保护last_processed_date晚于监测日的记录；过期stop_after_date不能把后来审核的处理日期回退，也不能据旧接受/排除回执关闭它。原始请求和事实复核账本继续保留。
