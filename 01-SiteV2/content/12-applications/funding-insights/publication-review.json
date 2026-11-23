@@ -1,6 +1,6 @@
 {
   "version": "FINANCING-PUBLICATION-REVIEW-1",
-  "reviewed_at": "2026-11-23T05:51:31.241Z",
+  "reviewed_at": "2026-11-23T06:41:14.287Z",
   "market_corrections": [
     {
       "event_id": "EV-65154e5eb49c218b",
@@ -950,6 +950,35 @@
       "source_id": "FISRC-fd462de3c8158bd1",
       "source_url": "https://dealroom.co/news/173270-ex-anker-cmo-s-ai-wearable-startup-memoket-raises-4-5m-pre-a/",
       "content_hash": "242ec6db773d093f13e4f46b5b4cdce7e461f4c29e54700da37844c64de4a5c1"
+    },
+    {
+      "event_id": "EV-86f4e971f63b6cf2",
+      "company": "Anthropic",
+      "status": "pending",
+      "source_id": "FISRC-ae1418f223a3bc98",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-11-18/anthropic-is-said-to-price-ipo-at-83-per-share",
+      "source_content_hash": "0f38ee781a80c7a29c13e628edc4e8b5902e3f50c8494ba54aa661c24227291a",
+      "source_quote": "\nWATCH: Anthropic raised a record $107.3 billion in a watershed moment for both AI and global financial market",
+      "quote_hash": "f535c99bdd87579948301328898b89033dc2cce9b307f28332f7275b9506fa11",
+      "reason": "原文1073亿美元为公司及创始股东在IPO与私募配售中的合计交易额，非单独公司新增融资；发行人所得未独立确认，不能用合计确额新建融资卡。",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-11-23T06:41:14.287Z",
+      "next_action": "reconcile_issuer_proceeds_and_same_ipo_before_release"
+    },
+    {
+      "event_id": "EV-638209012a462005",
+      "company": "Anthropic",
+      "status": "pending",
+      "source_id": "FISRC-81eb2d733824ba63",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-11-19/anthropic-raises-3-billion-in-japan-tranche-of-us-mega-ipo",
+      "source_content_hash": "6cdd6007f7fb8b1c0e832acfbde72726448497177bbe66b4ccda18e39a81f1e9",
+      "source_quote": "c PBC raised about $3 billion from Japanese investors as part of its initial public offering, the lower end of",
+      "quote_hash": "b0bc220db5ac9c40bd2260466e1b976fefc9bcb7f87fde29c020ebcb912f2dcd",
+      "reason": "日本配售是同一次IPO的地区份额，不另计独立公司新融资；与整体交易事件保留关联待核对，避免重复累计。",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-11-23T06:41:14.287Z",
+      "next_action": "reconcile_issuer_proceeds_and_same_ipo_before_release",
+      "related_event_id": "EV-86f4e971f63b6cf2"
     }
   ],
   "resolutions": [

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-22",
-    "currentDate": "2026-11-22",
-    "eventCount": 4530,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4539,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -133,6 +133,7 @@
       "EV-4dfd7233c8c69b0b",
       "EV-657837763764c869",
       "EV-388a53fe918389b0",
+      "EV-46395af28fc6189e",
       "EV-8fdae692cc4fb28b",
       "EV-8082f31e5b1fabc6",
       "EV-770a599defdaf792",
@@ -163,7 +164,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-04-24",
-    "lastSeen": "2026-11-21",
+    "lastSeen": "2026-11-23",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -253,6 +254,7 @@
         "EV-8082f31e5b1fabc6"
       ],
       "other": [
+        "EV-46395af28fc6189e",
         "EV-59b7ba3d079ad09a",
         "EV-3aefbdfa5df2fd6a",
         "EV-c14e5185fd6bbe30",
@@ -261,6 +263,23 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-46395af28fc6189e",
+        "dataDate": "2026-11-23",
+        "date": "2026-11-22",
+        "eventType": "policy_regulation",
+        "eventTypeLabel": "政策监管",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "新芯片限制、DeepSeek 的融资所有权，以及腾讯 AI 推进的成本",
+        "displayTags": [],
+        "entityIds": [
+          "EN-a58230dfd34e6d70",
+          "EN-6f7ac1823da81d2e",
+          "EN-9c8ae69b84f21a2e"
+        ]
+      },
       {
         "id": "EV-aab8ed97f5bf814a",
         "dataDate": "2026-11-21",
@@ -3810,6 +3829,7 @@
       "typeLabel": "应用场景",
       "valueId": "research_discovery",
       "eventIds": [
+        "EV-588d12fcfaaf7527",
         "EV-104419284ab31dea",
         "EV-86165eebaf4622fd",
         "EV-1043d78cc040ab30",
@@ -3877,6 +3897,7 @@
         "EV-14b44a40808340f5"
       ],
       "entityIds": [
+        "EN-b1931783b7e0bd06",
         "EN-a2039b2db07c1ad6",
         "EN-37799d436602eaf1",
         "EN-295219ea74639f0b",
@@ -3936,7 +3957,7 @@
         "HW-7889eb510b9d4210"
       ],
       "firstSeen": "2026-02-18",
-      "lastSeen": "2026-11-22"
+      "lastSeen": "2026-11-23"
     },
     {
       "id": "TX-product_form-model",
@@ -4637,7 +4658,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-23"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",

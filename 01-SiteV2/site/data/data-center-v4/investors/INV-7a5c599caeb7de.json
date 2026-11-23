@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-22",
-    "currentDate": "2026-11-22",
-    "eventCount": 4530,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4539,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,20 +64,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 41,
+    "current_round_count": 42,
     "historical_or_ambiguous_count": 10,
-    "portfolio_company_count": 40,
+    "portfolio_company_count": 41,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2016-03",
-    "latest_disclosed_at": "2026-11-17",
+    "latest_disclosed_at": "2026-11-19",
     "role_counts": {
       "historical_or_ambiguous": 10,
       "lead": 4,
-      "participant": 37
+      "participant": 38
     },
     "round_codes": [
       "multi_round",
@@ -171,6 +171,11 @@
         "entity_id": "EN-57feacd12af9d043",
         "canonical_entity_id": "",
         "name": "LanceDB"
+      },
+      {
+        "entity_id": "EN-4acb5d021cd5eed4",
+        "canonical_entity_id": "",
+        "name": "LATO"
       },
       {
         "entity_id": "EN-249fdefbb63fa7b3",
@@ -294,6 +299,54 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-648a8e2e540a9cc3",
+        "funding_insight_id": "FI-61142ae0e9616dc5",
+        "event_ids": [
+          "EV-fa5950b871b08d52"
+        ],
+        "company_entity_id": "EN-4acb5d021cd5eed4",
+        "company_canonical_entity_id": "",
+        "company_name": "LATO",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$4.7 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "470 万美元"
+        },
+        "announced_at": "2026-11-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2c6ef9e7725b0d1d",
+            "source_url": "https://tech.eu/2026/11/19/lato-secures-47m-to-automate-customer-and-expert-interviews-with-ai/",
+            "source_title": "LATO 获 470 万美元融资，用 AI 自动化客户与专家访谈",
+            "source_content_hash": "2ed497ba4bd1b8ff143444a5428e57c1aaed402a683607035203b043988251e2",
+            "quote": "Its backers also include Y Combinator, Montis VC and Inception Fund, alongside angel investors including Paul Graham and co-founders of ElevenLabs, Vercel, Snowflake and Rogo.",
+            "quote_hash": "48dd15f4a7418d5ec7ff8ad9df3b163f0b3d772b3052a92ef1040e87bf110d31"
+          },
+          {
+            "source_id": "FISRC-9ce5c4314dbde151",
+            "source_url": "https://techfundingnews.com/yc-backed-lato-raises-4-7m-seed-to-put-ai-agents-on-private-equitys-due-diligence-calls/",
+            "source_title": "YC-backed LATO raises $4.7M seed to put AI agents on private equity’s due diligence calls",
+            "source_content_hash": "2f3705b84fffb136",
+            "quote": "The round also includes Y Combinator, Montis VC and Inception Fund, alongside angel investors including Paul Graham and co-founders of ElevenLabs, Vercel, Snowflake, and Rogo.",
+            "quote_hash": "b563116a29014cac1a4c1074093e265dd04dd91e9103f6e4815bea571d07d0d0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2e277c2dcd6cc617",
         "funding_insight_id": "FI-9c0d79cb9d5c371d",
@@ -2281,6 +2334,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-2c6ef9e7725b0d1d",
+        "source_url": "https://tech.eu/2026/11/19/lato-secures-47m-to-automate-customer-and-expert-interviews-with-ai/",
+        "source_title": "LATO 获 470 万美元融资，用 AI 自动化客户与专家访谈",
+        "source_content_hash": "2ed497ba4bd1b8ff143444a5428e57c1aaed402a683607035203b043988251e2",
+        "quote": "Its backers also include Y Combinator, Montis VC and Inception Fund, alongside angel investors including Paul Graham and co-founders of ElevenLabs, Vercel, Snowflake and Rogo.",
+        "quote_hash": "48dd15f4a7418d5ec7ff8ad9df3b163f0b3d772b3052a92ef1040e87bf110d31"
+      },
+      {
+        "source_id": "FISRC-9ce5c4314dbde151",
+        "source_url": "https://techfundingnews.com/yc-backed-lato-raises-4-7m-seed-to-put-ai-agents-on-private-equitys-due-diligence-calls/",
+        "source_title": "YC-backed LATO raises $4.7M seed to put AI agents on private equity’s due diligence calls",
+        "source_content_hash": "2f3705b84fffb136",
+        "quote": "The round also includes Y Combinator, Montis VC and Inception Fund, alongside angel investors including Paul Graham and co-founders of ElevenLabs, Vercel, Snowflake, and Rogo.",
+        "quote_hash": "b563116a29014cac1a4c1074093e265dd04dd91e9103f6e4815bea571d07d0d0"
+      },
+      {
         "source_id": "FISRC-0552c4db6b7fbb24",
         "source_url": "https://www.lancedb.com/blog/lancedb-series-b-funding",
         "source_title": "LanceDB Raises $57.5M as AI Research Outgrows the Modern Data Stack",
@@ -2750,16 +2819,12 @@
           "source_id": "yc_press"
         },
         {
+          "description": "融资来源记录：LATO · 种子轮 · 2026-11-19 · 本轮参投 · $4.7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2c6ef9e7725b0d1d"
+        },
+        {
           "description": "融资来源记录：LanceDB · B轮 · 2026-11-17 · 本轮参投 · $57.5m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0552c4db6b7fbb24"
-        },
-        {
-          "description": "融资来源记录：Model ML · B轮 · 2026-11-17 · 本轮参投 · $250M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-73109463bc1bff33"
-        },
-        {
-          "description": "融资来源记录：Garage · B轮 · 2026-11-10 · 本轮参投 · $41 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-49f6d3c8199f72d9"
         }
       ],
       "contacts": [
@@ -2803,28 +2868,28 @@
           "quote_hash": "4ed4875e0047c94acb0efae75ec6e5f47b2b446f507a0d444211c08edd926a82"
         },
         {
+          "source_id": "FISRC-2c6ef9e7725b0d1d",
+          "source_url": "https://tech.eu/2026/11/19/lato-secures-47m-to-automate-customer-and-expert-interviews-with-ai/",
+          "source_title": "LATO 获 470 万美元融资，用 AI 自动化客户与专家访谈",
+          "source_content_hash": "2ed497ba4bd1b8ff143444a5428e57c1aaed402a683607035203b043988251e2",
+          "quote": "Its backers also include Y Combinator, Montis VC and Inception Fund, alongside angel investors including Paul Graham and co-founders of ElevenLabs, Vercel, Snowflake and Rogo.",
+          "quote_hash": "48dd15f4a7418d5ec7ff8ad9df3b163f0b3d772b3052a92ef1040e87bf110d31"
+        },
+        {
+          "source_id": "FISRC-9ce5c4314dbde151",
+          "source_url": "https://techfundingnews.com/yc-backed-lato-raises-4-7m-seed-to-put-ai-agents-on-private-equitys-due-diligence-calls/",
+          "source_title": "YC-backed LATO raises $4.7M seed to put AI agents on private equity’s due diligence calls",
+          "source_content_hash": "2f3705b84fffb136",
+          "quote": "The round also includes Y Combinator, Montis VC and Inception Fund, alongside angel investors including Paul Graham and co-founders of ElevenLabs, Vercel, Snowflake, and Rogo.",
+          "quote_hash": "b563116a29014cac1a4c1074093e265dd04dd91e9103f6e4815bea571d07d0d0"
+        },
+        {
           "source_id": "FISRC-0552c4db6b7fbb24",
           "source_url": "https://www.lancedb.com/blog/lancedb-series-b-funding",
           "source_title": "LanceDB Raises $57.5M as AI Research Outgrows the Modern Data Stack",
           "source_content_hash": "14eff5c4826ab01e",
           "quote": "Our Series B is led by Bessemer Venture Partners and Innovation Endeavors with participation from Theory Ventures, Dimension, Swift Ventures, CRV, and Y Combinator",
           "quote_hash": "ab8945000890056892e6b331541cfbf4d7c28ff7fb4bfa59739b9f984a856888"
-        },
-        {
-          "source_id": "FISRC-73109463bc1bff33",
-          "source_url": "https://www.generalatlantic.com/media-article/model-ml-raises-250-million-at-1-5-billion-valuation-18-months-after-launching-from-stealth/",
-          "source_title": "Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth | General",
-          "source_content_hash": "ef0f704125514383",
-          "quote": "with participation from Evolution Equity Partners, Airtree, Forestay Capital, Y Combinator, FT Partners, Latitude, Inception Fund and 13Books Capital",
-          "quote_hash": "e4fcd36e75bff0391e75db813e1a0a2495fd201d8ee50144b6eef3263a013969"
-        },
-        {
-          "source_id": "FISRC-49f6d3c8199f72d9",
-          "source_url": "https://www.prnewswire.com/news-releases/garage-raises-41m-series-b-to-scale-ai-powered-marketplace-for-americas-essential-equipment-surpassing-100m-in-annual-platform-sales-302935598.html",
-          "source_title": "Garage 完成 4100 万美元 B 轮融资，以扩展面向美国基础设备的 AI 驱动市场，平台年销售额突破 1 亿美元",
-          "source_content_hash": "fdc11b6f3162a7164ff38084278314d7c84eec79d5cd426f59def463882b4ee3",
-          "quote": "today announced $41 million in Series B funding led by Invus Opportunities, along with Infinity Ventures, Initialized Capital, Y Combinator, Benchstrength, and FJ Labs.",
-          "quote_hash": "bf7d92ecf80f026f4ab682d8e62e620e1cfdc7c6f3c272cf511a3cb35fcc658d"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2835,7 +2900,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[44].role": {
+        "activities[45].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

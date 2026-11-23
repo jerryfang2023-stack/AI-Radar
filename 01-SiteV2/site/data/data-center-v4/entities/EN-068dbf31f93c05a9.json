@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-22",
-    "currentDate": "2026-11-22",
-    "eventCount": 4530,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4539,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -70,12 +70,12 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-11-18",
-    "lastSeen": "2026-11-22",
+    "lastSeen": "2026-11-23",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
-        "EV-2e761601c7f04a46",
-        "EV-bead3c949a623488"
+        "EV-bead3c949a623488",
+        "EV-2e761601c7f04a46"
       ],
       "deployments": [],
       "partnerships": [],
@@ -85,6 +85,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-bead3c949a623488",
+        "dataDate": "2026-11-23",
+        "date": "2026-11-18",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "高盛领投Payhawk 2.8亿美元融资轮",
+        "displayTags": [],
+        "entityIds": [
+          "EN-068dbf31f93c05a9"
+        ]
+      },
       {
         "id": "EV-2e761601c7f04a46",
         "dataDate": "2026-11-22",
@@ -99,21 +114,6 @@
         "entityIds": [
           "EN-068dbf31f93c05a9",
           "EN-2278ee04cbb062e3"
-        ]
-      },
-      {
-        "id": "EV-bead3c949a623488",
-        "dataDate": "2026-11-19",
-        "date": "2026-11-18",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "高盛领投Payhawk 2.8亿美元融资轮",
-        "displayTags": [],
-        "entityIds": [
-          "EN-068dbf31f93c05a9"
         ]
       }
     ],

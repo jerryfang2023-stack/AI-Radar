@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-22",
-    "currentDate": "2026-11-22",
-    "eventCount": 4530,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4539,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,21 +64,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 43,
+    "current_round_count": 44,
     "historical_or_ambiguous_count": 10,
-    "portfolio_company_count": 38,
+    "portfolio_company_count": 39,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-11-17",
+    "latest_disclosed_at": "2026-11-19",
     "role_counts": {
       "co_lead": 6,
       "historical_or_ambiguous": 10,
       "lead": 21,
-      "participant": 16
+      "participant": 17
     },
     "round_codes": [
       "multi_round",
@@ -108,6 +108,11 @@
         "entity_id": "EN-6d478f33a9e3cba3",
         "canonical_entity_id": "",
         "name": "BigHat Biosciences"
+      },
+      {
+        "entity_id": "EN-caace168219ba2e2",
+        "canonical_entity_id": "",
+        "name": "Boltz"
       },
       {
         "entity_id": "EN-4b6cef91ffb05303",
@@ -286,6 +291,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-0a5b7e281c59e764",
+        "funding_insight_id": "FI-ea107fa7dfd1f452",
+        "event_ids": [
+          "EV-588d12fcfaaf7527"
+        ],
+        "company_entity_id": "EN-caace168219ba2e2",
+        "company_canonical_entity_id": "",
+        "company_name": "Boltz",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$110m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 110000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.1 亿美元"
+        },
+        "announced_at": "2026-11-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ece11f408f6f43fa",
+            "source_url": "https://dealroom.co/news/174542-london-s-boltz-raises-110m-series-a-led-by-bessemer-to-scale-its-ai-mode/",
+            "source_title": "London's Boltz raises $110M Series A led by Bessemer to scale its AI models for drug discovery",
+            "source_content_hash": "4d4ce7485589656c",
+            "quote": "Existing backers Andreessen Horowitz, Amplify Partners, Zetta Venture Partners and Obvious Ventures all invested again, joined by new investors Greycroft, F-Prime Capital, Hummingbird and Benchling.",
+            "quote_hash": "4b28dd02a98f9f115f803e30da9d2ec984ae0c711524bb8f91646d38a888440f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2da0b784c3bbd8de",
         "funding_insight_id": "FI-1c7a6290f4a522a8",
@@ -2401,6 +2446,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ece11f408f6f43fa",
+        "source_url": "https://dealroom.co/news/174542-london-s-boltz-raises-110m-series-a-led-by-bessemer-to-scale-its-ai-mode/",
+        "source_title": "London's Boltz raises $110M Series A led by Bessemer to scale its AI models for drug discovery",
+        "source_content_hash": "4d4ce7485589656c",
+        "quote": "Existing backers Andreessen Horowitz, Amplify Partners, Zetta Venture Partners and Obvious Ventures all invested again, joined by new investors Greycroft, F-Prime Capital, Hummingbird and Benchling.",
+        "quote_hash": "4b28dd02a98f9f115f803e30da9d2ec984ae0c711524bb8f91646d38a888440f"
+      },
+      {
         "source_id": "FISRC-172c6eda5dfd3979",
         "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
         "source_title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
@@ -2938,6 +2991,10 @@
           "source_id": "a16z_about"
         },
         {
+          "description": "融资来源记录：Boltz · A轮 · 2026-11-19 · 本轮参投 · $110m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ece11f408f6f43fa"
+        },
+        {
           "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮参投 · €4.5 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-172c6eda5dfd3979"
         },
@@ -3051,6 +3108,14 @@
           "quote_hash": "e99e0a75d100056586e1a241fc521ff6d9da626d9a7fcf9ab6dd36440c63b9bb"
         },
         {
+          "source_id": "FISRC-ece11f408f6f43fa",
+          "source_url": "https://dealroom.co/news/174542-london-s-boltz-raises-110m-series-a-led-by-bessemer-to-scale-its-ai-mode/",
+          "source_title": "London's Boltz raises $110M Series A led by Bessemer to scale its AI models for drug discovery",
+          "source_content_hash": "4d4ce7485589656c",
+          "quote": "Existing backers Andreessen Horowitz, Amplify Partners, Zetta Venture Partners and Obvious Ventures all invested again, joined by new investors Greycroft, F-Prime Capital, Hummingbird and Benchling.",
+          "quote_hash": "4b28dd02a98f9f115f803e30da9d2ec984ae0c711524bb8f91646d38a888440f"
+        },
+        {
           "source_id": "FISRC-172c6eda5dfd3979",
           "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
           "source_title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
@@ -3065,14 +3130,6 @@
           "source_content_hash": "69ca96b09e5f9b3698e78f74bf202e70c1f5d21f791557981cbae6115c03e7c9",
           "quote": "with new investor Andreessen Horowitz and other investors also participating",
           "quote_hash": "71403d21d95238d9c3ce6211d8de3b1d801518d463bf39e0c889dd0241dc44b8"
-        },
-        {
-          "source_id": "FISRC-e166994b43b2e418",
-          "source_url": "https://the-decoder.com/isomorphic-labs-raises-5-billion-in-its-second-mega-round-within-six-months/",
-          "source_title": "Isomorphic Labs在六个月内完成第二轮大规模融资，募资50亿美元",
-          "source_content_hash": "0d7c04571477bfba758869a7f19138576a259a59db0caef98f510505bbbec95f",
-          "quote": "joined by new backer Andreessen Horowitz along with Alphabet and all existing investors",
-          "quote_hash": "fe4805eebb78b78d5bfc99eb148178bdc81cbad6bf85ed37295f7521d874b858"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -3083,7 +3140,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[42].role": {
+        "activities[43].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",
@@ -3091,7 +3148,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[45].role": {
+        "activities[46].role": {
           "text": "Series D 参投",
           "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
           "provider": "deepseek",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-22",
-    "currentDate": "2026-11-22",
-    "eventCount": 4530,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4539,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,6 +64,7 @@
     ],
     "eventIds": [
       "EV-dc10752743c440d9",
+      "EV-86f4e971f63b6cf2",
       "EV-0613dcfb1a61d27a",
       "EV-64ce72bdf3514b8e",
       "EV-c5984dabb5a697b9",
@@ -135,12 +136,13 @@
       "EN-6fcba5d96a4fadfd"
     ],
     "firstSeen": "2026-02-17",
-    "lastSeen": "2026-11-22",
+    "lastSeen": "2026-11-23",
     "relationIds": [
       "REL2-30051dc5d7668662"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-86f4e971f63b6cf2",
         "EV-afb294eb4d9baf2d",
         "EV-14051f3d4f43c4a7",
         "EV-57b1043727f95137",
@@ -205,8 +207,24 @@
     },
     "timeline": [
       {
+        "id": "EV-86f4e971f63b6cf2",
+        "dataDate": "2026-11-23",
+        "date": "2026-11-18",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 融资 1073 亿美元，超越 SpaceX 的纪录性上市",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-e78bdebae031095b"
+        ]
+      },
+      {
         "id": "EV-afb294eb4d9baf2d",
-        "dataDate": "2026-11-22",
+        "dataDate": "2026-11-23",
         "date": "2026-11-20",
         "eventType": "ipo_listing",
         "eventTypeLabel": "IPO 与上市",
@@ -223,7 +241,7 @@
       },
       {
         "id": "EV-14051f3d4f43c4a7",
-        "dataDate": "2026-11-22",
+        "dataDate": "2026-11-23",
         "date": "2026-11-19",
         "eventType": "ipo_listing",
         "eventTypeLabel": "IPO 与上市",
@@ -239,7 +257,7 @@
       },
       {
         "id": "EV-57b1043727f95137",
-        "dataDate": "2026-11-22",
+        "dataDate": "2026-11-23",
         "date": "2026-11-19",
         "eventType": "ipo_listing",
         "eventTypeLabel": "IPO 与上市",
@@ -3205,7 +3223,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-11-22"
+      "lastSeen": "2026-11-23"
     },
     {
       "id": "TX-product_form-model",
@@ -3906,7 +3924,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-23"
     },
     {
       "id": "TX-product_form-compute_cloud_service",

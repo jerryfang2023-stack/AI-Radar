@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-22",
-    "currentDate": "2026-11-22",
-    "eventCount": 4530,
+    "latestDataDate": "2026-11-23",
+    "currentDate": "2026-11-23",
+    "eventCount": 4539,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -146,6 +146,7 @@
       "EV-c11ee0da38376254",
       "EV-6a6ff349579765ad",
       "EV-7ff24ae733821395",
+      "EV-46395af28fc6189e",
       "EV-6460ad65cd850154",
       "EV-10ce9a2cc2400e4f",
       "EV-d219dec3f1fcefc1",
@@ -172,7 +173,7 @@
       "EN-30a63b26b06e096e"
     ],
     "firstSeen": "2026-01-26",
-    "lastSeen": "2026-11-21",
+    "lastSeen": "2026-11-23",
     "relationIds": [
       "REL2-40a53a0ef359ae41",
       "REL2-5f0d9f90c84e1075",
@@ -280,11 +281,29 @@
         "EV-6b7917bd7edd4bde"
       ],
       "other": [
+        "EV-46395af28fc6189e",
         "EV-86537be17d50ff20",
         "EV-e70b2c66b996d138"
       ]
     },
     "timeline": [
+      {
+        "id": "EV-46395af28fc6189e",
+        "dataDate": "2026-11-23",
+        "date": "2026-11-22",
+        "eventType": "policy_regulation",
+        "eventTypeLabel": "政策监管",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "新芯片限制、DeepSeek 的融资所有权，以及腾讯 AI 推进的成本",
+        "displayTags": [],
+        "entityIds": [
+          "EN-a58230dfd34e6d70",
+          "EN-6f7ac1823da81d2e",
+          "EN-9c8ae69b84f21a2e"
+        ]
+      },
       {
         "id": "EV-a54d9f479d4eb060",
         "dataDate": "2026-11-21",
@@ -3454,10 +3473,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-use_case-content_creation",
         "TX-product_form-enterprise_software_platform",
-        "TX-industry-healthcare_life_sciences",
         "TX-technology-open_weights",
         "TX-product_form-model",
         "TX-industry-media_entertainment",
@@ -4994,7 +5013,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2025-09-16",
-      "lastSeen": "2026-11-22"
+      "lastSeen": "2026-11-23"
     },
     {
       "id": "TX-product_form-model",
@@ -5695,7 +5714,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-11-19"
+      "lastSeen": "2026-11-23"
     },
     {
       "id": "TX-product_form-end_user_application",
