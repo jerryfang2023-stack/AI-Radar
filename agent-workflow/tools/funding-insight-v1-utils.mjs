@@ -184,6 +184,13 @@ export function normalizeFundingAmount(value = "") {
   if (!original || /未披露|未公布|undisclosed|not disclosed/iu.test(original)) return empty;
 
   const compact = original.replace(/,/gu, "").replace(/级别/gu, "级");
+  const numericCnyRange = compact.match(/^(?:人民币\s*)?(\d+(?:\.\d+)?)\s*(万亿|千万|亿|万)?\s*元?\s*(?:至|到|[-–—~～])\s*(\d+(?:\.\d+)?)\s*(万亿|千万|亿|万)\s*元(?:人民币)?$/u);
+  if (numericCnyRange) {
+    const minValue = roundAmountNumber(Number(numericCnyRange[1]) * amountMultiplier(numericCnyRange[2] || numericCnyRange[4]));
+    const maxValue = roundAmountNumber(Number(numericCnyRange[3]) * amountMultiplier(numericCnyRange[4]));
+    if (minValue > maxValue) return empty;
+    return {currency:'CNY',value:null,min_value:minValue,max_value:maxValue,unit:'base',status:'range',display_zh:`${fundingAmountDisplay('CNY',minValue,'exact')}–${fundingAmountDisplay('CNY',maxValue,'exact')}`};
+  }
   const rupees = compact.match(/(?:₹|\bINR\s*|\bRs\.?\s+)(\d+(?:\.\d+)?)\s*(crores?|cr\b|lakhs?|lacs?|million|billion|thousand|[MBK]\b)?/iu);
   if (rupees) {
     const unit = (rupees[2] || '').toLowerCase();
@@ -273,7 +280,9 @@ function fundingAmountMentions(value = "") {
   const pattern = /(?:(?<![\d.一二三四五六七八九十百千万数])(?:数)?(?:千万|亿)美元|(?<![\d.一二三四五六七八九十百千万数])(?:数)?(?:千万元|亿元|千万|亿)(?:级别|级)?(?:人民币)?|(?:超过|超|逾|至少|接近|将近|近|约)(?:千万元|亿元|千万|亿)(?:美元|美金|欧元|英镑|日元|人民币|元)?|[$€£¥￥]\s*\d[\d,]*(?:\.\d+)?\s*(?:万亿|千万|亿|万|trillion|billion|million|thousand|[TBMK])?|\d[\d,]*(?:\.\d+)?\s*(?:万亿|千万|亿|万|trillion|billion|million|thousand|[TBMK])?\s*(?:美元|美金|人民币|元人民币|欧元|英镑|日元|元|USD|CNY|RMB|EUR|GBP|JPY))/giu;
   const rupees = /(?:₹|\bINR\s*|\bRs\.?\s+)\d[\d,]*(?:\.\d+)?\s*(?:crores?|cr\b|lakhs?|lacs?|million|billion|thousand|[MBK]\b)?/giu;
   const explicitCurrency = /\b(?:USD|EUR|GBP|CNY|RMB|JPY)\s*\d[\d,]*(?:\.\d+)?\s*(?:billion|million|thousand|[BMK])?|数(?:十|百)万(?:美元|美金)/giu;
-  return [...text.matchAll(pattern), ...text.matchAll(rupees), ...text.matchAll(explicitCurrency)].sort((a,b)=>a.index-b.index).map((match) => {
+  const ranges = [...text.matchAll(/(?<![\d.])\d[\d,]*(?:\.\d+)?\s*(?:万亿|千万|亿|万)?\s*元?\s*(?:至|到|[-–—~～])\s*\d[\d,]*(?:\.\d+)?\s*(?:万亿|千万|亿|万)\s*元(?:人民币)?/gu)];
+  const singles = [...text.matchAll(pattern), ...text.matchAll(rupees), ...text.matchAll(explicitCurrency)].filter(match=>!ranges.some(range=>match.index>=range.index && match.index<range.index+range[0].length));
+  return [...ranges, ...singles].sort((a,b)=>a.index-b.index).map((match) => {
     const before = text.slice(Math.max(0, match.index - 56), match.index);
     const after = text.slice(match.index + match[0].length, match.index + match[0].length + 56);
     const valuation = /(?:pre[-\s]?money|post[-\s]?money|valuation(?:\s+(?:of|at))?(?:\s+(?:above|over|more\s+than|at\s+least|approximately|about))?|valu(?:ed|ing)\s+(?:(?:it|the\s+company|the\s+startup)\s+)?at|market[\s-]+(?:cap|capitali[sz]ation)(?:\s+(?:of|at|is))?(?:\s+(?:above|over|approximately|about))?|市值(?:达到|达|约为|为|约|超过|高达|逾|超|升至|增至)?|估值(?:达到|达|为|约|超过|高达|逾|超|推高至|提升至|升至|增至)?)\s*$/iu.test(before)
@@ -385,7 +394,12 @@ function fundingEventAmountSemantics(event = {}, claims = []) {
   const acceptedFundingClaims = claims.filter(claim => claimIds.has(claim.claim_id)
     && claim.claim_type === "funding" && claim.verification_status === "accepted");
   const headlineRound = fundingAmountMentions(currentDisclosure).find(mention => mention.round);
-  const roundMention = originalRoundPrecision(headlineRound, acceptedFundingClaims)
+  const sourceRange = acceptedFundingClaims.flatMap(claim=>fundingAmountMentions(claim.source_quote)).find(mention=>{
+    const range=normalizeFundingAmount(mention.raw),coarse=normalizeFundingAmount(headlineRound?.raw || '');
+    return mention.round && range.status==='range' && /\d.*(?:至|到|[-–—~～]).*\d/u.test(mention.raw)
+      && (!headlineRound || coarse.currency===range.currency && [range.min_value,range.max_value].includes(coarse.value));
+  });
+  const roundMention = sourceRange || originalRoundPrecision(headlineRound, acceptedFundingClaims)
     || mentions.find((mention) => mention.round);
   const metrics = (event.metrics || []).map(clean).filter(Boolean);
   const roundAmount = roundMention
@@ -1236,6 +1250,20 @@ export function fundingEventCardConsistencyProblems(card = {}, event = {}, claim
   if (fundingEventAmountSemantics(event, claims).preliminary) return ["funding_event_not_completed"];
   const acceptedClaims = claims.filter((claim) => (event.claim_refs || []).includes(claim.claim_id)
     && claim.claim_type === "funding" && claim.verification_status === "accepted");
+  const marketForecastClause=clause=>/(?:全球|全行业|行业|市场|\bglobal\b|\bindustry\b|\bmarket\b)/iu.test(clause)
+    && /(?:预计|预期|预测|\bforecast\w*\b|\bproject(?:s|ed|ion)?\b)/iu.test(clause)
+    && /(?:融资|募资|\bfunding\b|\bfinancing\b)/iu.test(clause);
+  const onlyMarketForecast = acceptedClaims.length && acceptedClaims.every(claim=>{
+    const clauses=quoteClauses(claim.source_quote).flatMap(part=>part.split(/(?<=[.!?])\s+(?=[A-Z])/u));
+    return clauses.some(marketForecastClause)
+      && !clauses.filter(clause=>!marketForecastClause(clause)).some(clause=>/(?:完成|获得|获|筹集)|\b(?:raised|secured|closed)\b/iu.test(clause)
+        && fundingAmountMentions(clause).some(mention=>mention.round));
+  });
+  if (onlyMarketForecast) return ['funding_event_is_market_forecast'];
+  const sourceRanges=acceptedClaims.flatMap(claim=>fundingAmountMentions(claim.source_quote)).filter(mention=>mention.round && /\d.*(?:至|到|[-–—~～]).*\d/u.test(mention.raw)).map(mention=>normalizeFundingAmount(mention.raw));
+  const publishedAmount=normalizeFundingAmount(card.financing?.amount || '');
+  if(sourceRanges.some(range=>range.status==='range' && range.currency===publishedAmount.currency
+    && (publishedAmount.status!=='range' || publishedAmount.min_value!==range.min_value || publishedAmount.max_value!==range.max_value))) return ['funding_current_round_amount_mismatch'];
   if (!canonicalFundingEventAmount(event, claims) && normalizeFundingAmount(card.financing?.amount).currency
     && acceptedClaims.some((claim) => fundingAmountMentions(claim.source_quote).some((mention) => mention.cumulative))) {
     return ["funding_cumulative_amount_used_as_round"];

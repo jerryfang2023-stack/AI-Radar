@@ -446,7 +446,7 @@ export function finishVerification({ root, directory, date, backupRoot }) {
     row.qa_hints = [...new Set(matchingQa.filter(item => item.status === 'review_optional').map(item => item.reason))];
     row.pending_reasons = [...new Set([
       ...matchingQa.filter(item => item.status !== 'review_optional').map(item => item.reason),
-      ...(research.queue || []).filter(item => eventIds.has(item.event_id) && item.status !== 'deduplicated').flatMap(item => item.problems?.length ? item.problems : [`research_${item.status}`]),
+      ...(research.queue || []).filter(item => eventIds.has(item.event_id) && !['deduplicated','auto_published'].includes(item.status)).flatMap(item => item.problems?.length ? item.problems : [`research_${item.status}`]),
     ])];
     row.results = cards.map(card => {
       const input = classificationInput(card), decision = decisions[input.id];

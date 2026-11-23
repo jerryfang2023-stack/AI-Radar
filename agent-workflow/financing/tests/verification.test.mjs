@@ -384,3 +384,18 @@ test('older accepted collection cannot close a queue entry processed on a later 
 test('older final reconciliation preserves later private queue state without a manual source binding',t=>{const options=fixture(t);seed(options);const newer=due({last_processed_date:'2026-10-07',reason:'later_accepted_queue_state',rounds:2});write(queuePath(options),{entries:{[url]:newer}});write(path.join(options.directory,'verification.json'),{prepared:true,date,entries:{[url]:{source_url:url,status:'excluded',reason:'old_collection_exclusion'}}});const result=finishVerification(options);assert.equal(result.counts.excluded,0);assert.equal(result.counts.pending,1);assert.deepEqual(read(queuePath(options)).entries[url],newer);});
 
 test('cached followup cannot drop request receipts added in the latest private queue',async t=>{const options=fixture(t);seed(options);const first={url:'https://original.example/1',status:'pending'},later={url:'https://original.example/2',status:'started'},cached=due({last_processed_date:'2026-10-05',capture_attempts:[first]});write(queuePath(options),{entries:{[url]:{...cached,capture_attempts:[first,later]}}});const collection=read(path.join(options.directory,'collection.json'));write(path.join(options.directory,'verification.json'),{version:'FINANCING-VERIFICATION-1',date,collection_hash:digest(collection),prepared:true,entries:{[url]:{source_url:url,status:'pending',reason:'waiting_for_original',followup:cached}}});await verifyPending({...options,capture:forbidden,search:forbidden});assert.deepEqual(read(queuePath(options)).entries[url].capture_attempts,[first,later]);});
+
+test('published research status is not an unresolved verification reason',async t=>{
+  const options=fixture(t);seed(options);const state=await verifyPending({...options,capture});const row=state.entries[url];
+  const factDir=path.join(options.root,`01-SiteV2/content/11-databases/data-center-v4/${date}`);
+  write(path.join(factDir,'raw-documents.json'),[{raw_id:row.raw_ids[0],content_hash:row.content_hash,source_artifact_id:'S-published'}]);
+  write(path.join(factDir,'event-sources.json'),[{source_artifact_id:'S-published',event_id:'EV-published'}]);
+  const card={funding_insight_id:'FI-published',triggered_by_event_id:'EV-published',company:{name:'Acme',evidence_refs:[{source_id:'S-published',quote:'AI software for enterprises',quote_hash:'quote'}]},financing:{round:'Seed',amount:'$5 million',announced_at:'2026-10-05'},auto_publish_gate:{passed:true}};
+  const researchFile=path.join(options.root,`01-SiteV2/content/12-applications/funding-insights/${date}.json`);
+  write(researchFile,{cards:[card],queue:[{event_id:'EV-published',status:'auto_published'}]});
+  write(path.join(options.root,'01-SiteV2/content/12-applications/financing-taxonomy/decisions.json'),{decisions:{'EV-published':{id:'EV-published',input_hash:classificationInput(card).input_hash,scope:'included',sector_id:'enterprise',subsector_id:'operations',customer_ids:['business'],evidence_indices:[0],rationale:'enterprise software'}}});
+  assert.equal(finishVerification(options).counts.verified,1);
+  assert.deepEqual(read(path.join(options.directory,'verification.json')).entries[url].pending_reasons,[]);
+  write(researchFile,{cards:[card],queue:[{event_id:'EV-published',status:'pending',problems:['body_amount_conflict']}]});finishVerification(options);
+  assert.deepEqual(read(path.join(options.directory,'verification.json')).entries[url].pending_reasons,['body_amount_conflict']);
+});

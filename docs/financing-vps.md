@@ -215,3 +215,11 @@ Financing amount selection binds the verified canonical action together with its
 
 2026-11-21：在已核对的最新 origin/main 恢复旧产物时，已准入目录拥有相同事件、相同已定实体ID且 canonical 原文四项绑定完全一致的前日研究；旧研究草稿及其逐事件缓存不重新带回。原 artifact 保留、先校验全部 hash；不同正文或非 main 分支继续普通复核，不自动合并实体。
 隔离目录处于 detached HEAD 时，首次推送日期分支使用完整目标引用（HEAD:refs/heads/automation/financing-YYYY-MM-DD）；推送失败后保留并复用已验证提交，不重做采集或强推。
+
+## 原文金额角色与复核状态
+
+机构对全球或行业融资规模的预测不是某家企业的融资；同一原文另有明确企业已完成融资时，预测句不能误伤真实轮次。正文给出明确人民币数值区间时保留上下限与range状态，不以标题中的区间端点发布确额。来源、主体、短引、hash与轮次仍须通过既有事实门禁。
+
+研究queue中的auto_published是已完成研究发布门禁的状态，不作为research_auto_published待核验原因；真正的pending/problem保留。原始范围问题须用责任审核记录显式结清，不能删除问题或篡改最终审核结论。回归位于funding-source-roles.test.mjs与verification.test.mjs。
+
+当前Codex聊天每天10:30检查、修复和收尾同一云端流程，VPS保留08:10主运行与10:30幂等兜底；不新建重复采集或日内复核。定时聊天依赖本机应用运行。
