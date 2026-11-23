@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "generatedAt": "2026-11-23T05:32:48.334Z",
+    "latestDataDate": "2026-11-21",
+    "currentDate": "2026-11-21",
+    "eventCount": 4524,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 4,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 4,
     "market_regions": [
       "CN",
@@ -74,7 +74,7 @@
     "latest_disclosed_at": "2026-11-11",
     "role_counts": {
       "co_lead": 2,
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "lead": 1,
       "participant": 1
     },
@@ -333,6 +333,38 @@
             "quote_hash": "628b21d90a2a2601b5c0f60c12a4d3d6b9876338391c8d283efd6067d543edd7"
           }
         ]
+      },
+      {
+        "activity_id": "IA-6c3f8d8f495e788a",
+        "funding_insight_id": "FI-2314c7e986050f44",
+        "event_ids": [
+          "EV-efa6687b5276a437"
+        ],
+        "company_entity_id": "EN-4ee3af3ba716dc0b",
+        "company_canonical_entity_id": "",
+        "company_name": "芯星元",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-288ab3952018ee22",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-11-17/doc-iniyyzyp2330772.shtml",
+            "source_title": "NovaSilicon完成近亿元Pre-A+轮融资",
+            "source_content_hash": "c94480bb83de1231",
+            "quote": "此前的投资方还包括商汤国香资本、上海未来产业基金、上海科创等机构",
+            "quote_hash": "1ca80766e02065ba4eda203e2d20b0693d80a8acedb85c6bcaf5d959f518228c"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -383,6 +415,14 @@
         "source_content_hash": "6c261236c11c6464f74ef22dabf2ee2c0984cf3b85ad5a21effae07f6459f78e",
         "quote": "元禾控股、上海国投旗下上海科创及上海未来产业基金、奇绩创坛、智谱系基金星连资本及某头部产业投资方联合投资",
         "quote_hash": "628b21d90a2a2601b5c0f60c12a4d3d6b9876338391c8d283efd6067d543edd7"
+      },
+      {
+        "source_id": "FISRC-288ab3952018ee22",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-11-17/doc-iniyyzyp2330772.shtml",
+        "source_title": "NovaSilicon完成近亿元Pre-A+轮融资",
+        "source_content_hash": "c94480bb83de1231",
+        "quote": "此前的投资方还包括商汤国香资本、上海未来产业基金、上海科创等机构",
+        "quote_hash": "1ca80766e02065ba4eda203e2d20b0693d80a8acedb85c6bcaf5d959f518228c"
       }
     ],
     "public_profile": {

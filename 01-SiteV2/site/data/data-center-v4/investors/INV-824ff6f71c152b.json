@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "generatedAt": "2026-11-23T05:32:48.334Z",
+    "latestDataDate": "2026-11-21",
+    "currentDate": "2026-11-21",
+    "eventCount": 4524,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 7,
+    "historical_or_ambiguous_count": 8,
     "portfolio_company_count": 3,
     "market_regions": [
       "CN",
@@ -73,7 +73,7 @@
     "first_disclosed_at": "2026-09-16",
     "latest_disclosed_at": "2026-11-19",
     "role_counts": {
-      "historical_or_ambiguous": 7,
+      "historical_or_ambiguous": 8,
       "participant": 3
     },
     "round_codes": [
@@ -351,6 +351,38 @@
         ]
       },
       {
+        "activity_id": "IA-3337a1c604cc5d6d",
+        "funding_insight_id": "FI-2314c7e986050f44",
+        "event_ids": [
+          "EV-efa6687b5276a437"
+        ],
+        "company_entity_id": "EN-4ee3af3ba716dc0b",
+        "company_canonical_entity_id": "",
+        "company_name": "芯星元",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮独家投资方，并参与Pre-A轮",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-288ab3952018ee22",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-11-17/doc-iniyyzyp2330772.shtml",
+            "source_title": "NovaSilicon完成近亿元Pre-A+轮融资",
+            "source_content_hash": "c94480bb83de1231",
+            "quote": "五源资本是NovaSilicon天使轮的独家投资方，并参与了其Pre-A轮融资",
+            "quote_hash": "d2dee2f63cae69787612baf4b25305e31f43d8e7c81bda92334e57b965a453e4"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-8718fffbf6189ad1",
         "funding_insight_id": "FI-53612bad1f698300",
         "event_ids": [
@@ -504,6 +536,14 @@
         "source_content_hash": "2af3607d3a79e574",
         "quote": "这是欧拉万象继获得招商局创投、高瓴创投、五源资本等机构密集加持后，再次迎来市场化与产业资本的重磅加注。",
         "quote_hash": "8edd3a415182b0bb5eb87fd118477bebb65363f5f2881869f694d2ce5cdfd1b0"
+      },
+      {
+        "source_id": "FISRC-288ab3952018ee22",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-11-17/doc-iniyyzyp2330772.shtml",
+        "source_title": "NovaSilicon完成近亿元Pre-A+轮融资",
+        "source_content_hash": "c94480bb83de1231",
+        "quote": "五源资本是NovaSilicon天使轮的独家投资方，并参与了其Pre-A轮融资",
+        "quote_hash": "d2dee2f63cae69787612baf4b25305e31f43d8e7c81bda92334e57b965a453e4"
       },
       {
         "source_id": "FISRC-773362f4e07cd598",

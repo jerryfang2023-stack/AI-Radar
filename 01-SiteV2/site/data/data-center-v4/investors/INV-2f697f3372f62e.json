@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "generatedAt": "2026-11-23T05:32:48.334Z",
+    "latestDataDate": "2026-11-21",
+    "currentDate": "2026-11-21",
+    "eventCount": 4524,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,27 +61,28 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-02-24",
-    "latest_disclosed_at": "2026-09-15",
+    "latest_disclosed_at": "2026-11-17",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 3,
-      "lead": 1,
+      "lead": 2,
       "other_current_round": 1,
       "participant": 1
     },
     "round_codes": [
       "angel",
       "other",
+      "pre_series_a_plus",
       "seed",
       "series_a_plus"
     ],
@@ -97,12 +98,57 @@
         "name": "深度内核（DeepKernel）"
       },
       {
+        "entity_id": "EN-4ee3af3ba716dc0b",
+        "canonical_entity_id": "",
+        "name": "芯星元"
+      },
+      {
         "entity_id": "EN-3c52384d8749fcb4",
         "canonical_entity_id": "",
         "name": "OJO"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5637b46b38e91573",
+        "funding_insight_id": "FI-2314c7e986050f44",
+        "event_ids": [
+          "EV-efa6687b5276a437"
+        ],
+        "company_entity_id": "EN-4ee3af3ba716dc0b",
+        "company_canonical_entity_id": "",
+        "company_name": "芯星元",
+        "round": "Pre-A+轮",
+        "round_code": "pre_series_a_plus",
+        "round_original": "Pre-A+轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-859ae42de73461d5",
+            "source_url": "https://feng.ifeng.com/c/8y84oPYeiYq",
+            "source_title": "芯星元获近亿元Pre-A+轮融资 聚焦AI原生芯片设计_大风号",
+            "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+            "quote": "由顺为资本领投，纪源资本、经纬创投跟投",
+            "quote_hash": "ed35812e46cfb79e7b9cb3daec41c548eac894acc956aaff00acd9c295dbb8f6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6706fb935faf0f1c",
         "funding_insight_id": "FI-3d4b9799d799d54b",
@@ -371,6 +417,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-859ae42de73461d5",
+        "source_url": "https://feng.ifeng.com/c/8y84oPYeiYq",
+        "source_title": "芯星元获近亿元Pre-A+轮融资 聚焦AI原生芯片设计_大风号",
+        "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+        "quote": "由顺为资本领投，纪源资本、经纬创投跟投",
+        "quote_hash": "ed35812e46cfb79e7b9cb3daec41c548eac894acc956aaff00acd9c295dbb8f6"
+      },
+      {
         "source_id": "FISRC-9eb697a746e19a88",
         "source_url": "https://news.pedaily.cn/202609/568997.shtml",
         "source_title": "首发|深度内核（DeepKernel）完成数千万元种子轮融资，定义AI时代的主权智能",
@@ -470,6 +524,10 @@
           "source_id": "shunwei_home"
         },
         {
+          "description": "融资来源记录：芯星元 · Pre-A+轮 · 2026-11-17 · 本轮领投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-859ae42de73461d5"
+        },
+        {
           "description": "融资来源记录：深度内核（DeepKernel） · 种子轮 · 2026-09-15 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9eb697a746e19a88"
         },
@@ -513,6 +571,14 @@
           "quote_hash": "fcf0dc61af5fdd22c9bfdc17f5ce101be6fc220a5306dc37087afcb4376c8380"
         },
         {
+          "source_id": "FISRC-859ae42de73461d5",
+          "source_url": "https://feng.ifeng.com/c/8y84oPYeiYq",
+          "source_title": "芯星元获近亿元Pre-A+轮融资 聚焦AI原生芯片设计_大风号",
+          "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+          "quote": "由顺为资本领投，纪源资本、经纬创投跟投",
+          "quote_hash": "ed35812e46cfb79e7b9cb3daec41c548eac894acc956aaff00acd9c295dbb8f6"
+        },
+        {
           "source_id": "FISRC-9eb697a746e19a88",
           "source_url": "https://news.pedaily.cn/202609/568997.shtml",
           "source_title": "首发|深度内核（DeepKernel）完成数千万元种子轮融资，定义AI时代的主权智能",
@@ -527,14 +593,6 @@
           "source_content_hash": "e4cb3dc7917d61581edcebcf0cb6eb908e6524fe298803d3a870516407b51f3c",
           "quote": "本轮融资由顺为资本和联想创投联合投资",
           "quote_hash": "5a9bed8876b3e64961269e666925f476cfa6e447aec2e950e7ff609127bd098b"
-        },
-        {
-          "source_id": "FISRC-59edf924430b552c",
-          "source_url": "https://finance.sina.com.cn/stock/t/2026-08-26/doc-iniprqcq0953033.shtml",
-          "source_title": "前剪映负责人张琪智创业，OJO拿下顺为、联想创投近亿元天使轮",
-          "source_content_hash": "a27136b4c0213556",
-          "quote": "投资方是顺为资本和联想创投",
-          "quote_hash": "646ef31d02989d4fa6de6ebfb2ac7e0b6a3ad639ac31d3bdbe8f6ba7e15b635c"
         }
       ],
       "last_verified_at": "2026-09-25",

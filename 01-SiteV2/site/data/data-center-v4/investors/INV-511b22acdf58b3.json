@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "generatedAt": "2026-11-23T05:32:48.334Z",
+    "latestDataDate": "2026-11-21",
+    "currentDate": "2026-11-21",
+    "eventCount": 4524,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,25 +61,31 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-02-23",
-    "latest_disclosed_at": "2026-09-07",
+    "latest_disclosed_at": "2026-11-20",
     "role_counts": {
       "lead": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
+      "series_a",
       "series_b",
       "series_b_plus"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-6c72a44dd49f926c",
+        "canonical_entity_id": "",
+        "name": "诚恒微"
+      },
       {
         "entity_id": "EN-ce22f929f4a17467",
         "canonical_entity_id": "EN-ce22f929f4a17467",
@@ -92,6 +98,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-63e0eb6d96c5e116",
+        "funding_insight_id": "FI-774d78aac219c4a8",
+        "event_ids": [
+          "EV-d84355ecbf21be85"
+        ],
+        "company_entity_id": "EN-6c72a44dd49f926c",
+        "company_canonical_entity_id": "",
+        "company_name": "诚恒微",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "近2亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 2 亿元"
+        },
+        "announced_at": "2026-11-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "source_url": "https://news.pedaily.cn/202611/572144.shtml",
+            "source_title": "诚恒微完成近2亿元A轮融资，加速边端侧AI SoC规模化落地",
+            "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+            "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+            "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+          }
+        ]
+      },
       {
         "activity_id": "IA-0c23721b56f352f8",
         "funding_insight_id": "FI-2f0db3ea179be704",
@@ -216,6 +262,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ad4bbd905a940afc",
+        "source_url": "https://news.pedaily.cn/202611/572144.shtml",
+        "source_title": "诚恒微完成近2亿元A轮融资，加速边端侧AI SoC规模化落地",
+        "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+        "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+        "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+      },
+      {
         "source_id": "FISRC-1ccc6923f9f7ac18",
         "source_url": "https://news.pedaily.cn/202609/568582.shtml",
         "source_title": "中科类脑完成数亿元B+轮战略融资，助力产业数智升级",
@@ -269,16 +323,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：诚恒微 · A轮 · 2026-11-20 · 本轮参投 · 近2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ad4bbd905a940afc"
+        },
+        {
           "description": "融资来源记录：中科类脑 · B+轮 · 2026-09-07 · 本轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1ccc6923f9f7ac18"
         },
         {
           "description": "融资来源记录：智平方 · B轮 · 2026-04-11 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-16a5b9f7da3616f3"
-        },
-        {
-          "description": "融资来源记录：智平方 · B轮 · 2026-02-23 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b78c44b13620e61a"
         }
       ],
       "contacts": [],
@@ -290,6 +344,14 @@
           "source_content_hash": "21173e78763353a0519818bdfbbeff9d27122de16d6720db0653f254579d9708",
           "quote": "中车资本控股有限公司是中国中车集团公司在北京设立的全资一级子公司，注册资本人民币20亿元。主要经营范围：项目投资、投资管理、股权投资、资产管理、投资咨询等。",
           "quote_hash": "21173e78763353a0519818bdfbbeff9d27122de16d6720db0653f254579d9708"
+        },
+        {
+          "source_id": "FISRC-ad4bbd905a940afc",
+          "source_url": "https://news.pedaily.cn/202611/572144.shtml",
+          "source_title": "诚恒微完成近2亿元A轮融资，加速边端侧AI SoC规模化落地",
+          "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+          "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+          "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
         },
         {
           "source_id": "FISRC-1ccc6923f9f7ac18",
@@ -306,14 +368,6 @@
           "source_content_hash": "52cc6aa7a44aacaf",
           "quote": "B轮 ¥10.0亿 ¥96.6亿 2026年2月 百度战投、中车资本、宇信科技、森麒麟、沄柏资本、国泰海通基金",
           "quote_hash": "d8f95d0e975a73eea9bd213facbdb3cf36b652d63a09a1eecfba2973b029d3ba"
-        },
-        {
-          "source_id": "FISRC-b78c44b13620e61a",
-          "source_url": "https://news.pedaily.cn/202602/561111.shtml",
-          "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
-          "source_content_hash": "36eeadfe3f6c3f89",
-          "quote": "投资方颇为豪华：中车资本、百度战投、沄柏资本、国泰海通、多家特斯拉生态链龙头企业及地方基金等。",
-          "quote_hash": "b7bfc4b1670290ef7843f08b9b77bb137831c80b06e105818fc5e8434c25b2da"
         }
       ],
       "last_verified_at": "2026-10-05"

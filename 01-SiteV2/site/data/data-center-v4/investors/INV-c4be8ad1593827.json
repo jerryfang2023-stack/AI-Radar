@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "generatedAt": "2026-11-23T05:32:48.334Z",
+    "latestDataDate": "2026-11-21",
+    "currentDate": "2026-11-21",
+    "eventCount": 4524,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-11-20",
+    "latest_disclosed_at": "2026-11-20",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "other"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-6f7ac1823da81d2e",
+        "canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "name": "DeepSeek"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-1d6a78d6f39c465f",
+        "funding_insight_id": "FI-faf8764cd64d29f0",
+        "event_ids": [
+          "EV-aab8ed97f5bf814a"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "第二轮融资",
+        "amount_original": "1000 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 亿元"
+        },
+        "announced_at": "2026-11-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-281ba3f1b7759a6c",
+            "source_url": "https://es.tradingview.com/news/panews:e41a6a7a3acdf:0/",
+            "source_title": "DeepSeek融资1055亿元细节曝光：估值约6155亿元，近30家投资者参与",
+            "source_content_hash": "0a50d01c35cb4c56",
+            "quote": "长鑫存储、中芯国际、vivo、美团、吉利汽车、美的集团、立讯精密、携程和小红书等产业资本也参与其中",
+            "quote_hash": "e3ce121b57232b038148a53553fe641fa49aacfd6b25340b9ae420372587c9f0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-caecf7c4ecbe3c04",
         "funding_insight_id": "FI-f5103149f04ea6ed",
@@ -112,6 +161,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-281ba3f1b7759a6c",
+        "source_url": "https://es.tradingview.com/news/panews:e41a6a7a3acdf:0/",
+        "source_title": "DeepSeek融资1055亿元细节曝光：估值约6155亿元，近30家投资者参与",
+        "source_content_hash": "0a50d01c35cb4c56",
+        "quote": "长鑫存储、中芯国际、vivo、美团、吉利汽车、美的集团、立讯精密、携程和小红书等产业资本也参与其中",
+        "quote_hash": "e3ce121b57232b038148a53553fe641fa49aacfd6b25340b9ae420372587c9f0"
+      },
+      {
         "source_id": "FISRC-5d82f5dc9fc96ce5",
         "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
         "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
@@ -139,6 +196,10 @@
         {
           "description": "每日经济新闻援引36氪报道称，小红书是月之暗面2024年2月超10亿美元融资的投资方之一；整轮金额不代表小红书单独出资额。",
           "source_id": "xhs_moonshot_round"
+        },
+        {
+          "description": "融资来源记录：DeepSeek · 其他融资 · 2026-11-20 · 本轮参投 · 1000 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-281ba3f1b7759a6c"
         },
         {
           "description": "融资来源记录：Moonshot AI · A+轮 · A+轮参投。这是本库收录的披露案例，不代表完整投资组合。",
@@ -174,6 +235,14 @@
           "source_content_hash": "a2cdf3774e740a4f6377ab4d82fda5147e11f4a82266e0930e52b05076b47feb",
           "quote": "投资方包括红杉中国、小红书、美团、阿里",
           "quote_hash": "00dd305834883676e0d17042ab8139254a40ec598adbcfeec182a66552dbb97a"
+        },
+        {
+          "source_id": "FISRC-281ba3f1b7759a6c",
+          "source_url": "https://es.tradingview.com/news/panews:e41a6a7a3acdf:0/",
+          "source_title": "DeepSeek融资1055亿元细节曝光：估值约6155亿元，近30家投资者参与",
+          "source_content_hash": "0a50d01c35cb4c56",
+          "quote": "长鑫存储、中芯国际、vivo、美团、吉利汽车、美的集团、立讯精密、携程和小红书等产业资本也参与其中",
+          "quote_hash": "e3ce121b57232b038148a53553fe641fa49aacfd6b25340b9ae420372587c9f0"
         },
         {
           "source_id": "FISRC-5d82f5dc9fc96ce5",

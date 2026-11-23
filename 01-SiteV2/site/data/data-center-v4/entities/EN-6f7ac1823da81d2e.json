@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "generatedAt": "2026-11-23T05:32:48.334Z",
+    "latestDataDate": "2026-11-21",
+    "currentDate": "2026-11-21",
+    "eventCount": 4524,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -65,6 +65,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-aab8ed97f5bf814a",
       "EV-4ce6b9d2f519e224",
       "EV-ac30333388e0d00a",
       "EV-b25b5c902c92a0b2",
@@ -162,10 +163,11 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-04-24",
-    "lastSeen": "2026-11-10",
+    "lastSeen": "2026-11-21",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-aab8ed97f5bf814a",
         "EV-4ce6b9d2f519e224",
         "EV-ac30333388e0d00a",
         "EV-b25b5c902c92a0b2",
@@ -259,6 +261,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-aab8ed97f5bf814a",
+        "dataDate": "2026-11-21",
+        "date": "2026-11-20",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权",
+        "displayTags": [],
+        "entityIds": [
+          "EN-85964dfe9c006cc9",
+          "EN-6f7ac1823da81d2e"
+        ]
+      },
       {
         "id": "EV-4ce6b9d2f519e224",
         "dataDate": "2026-11-10",
@@ -3914,7 +3932,7 @@
         "HW-7889eb510b9d4210"
       ],
       "firstSeen": "2026-02-18",
-      "lastSeen": "2026-11-20"
+      "lastSeen": "2026-11-21"
     },
     {
       "id": "TX-product_form-model",

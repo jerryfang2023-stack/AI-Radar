@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "generatedAt": "2026-11-23T05:32:48.334Z",
+    "latestDataDate": "2026-11-21",
+    "currentDate": "2026-11-21",
+    "eventCount": 4524,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 7,
+    "portfolio_company_count": 8,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 7,
-    "china_market_company_count": 7,
+    "china_market_activity_count": 8,
+    "china_market_company_count": 8,
     "first_disclosed_at": "2026-03-05",
-    "latest_disclosed_at": "2026-09-25",
+    "latest_disclosed_at": "2026-11-20",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 3,
       "lead": 1,
       "other_current_round": 1,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "angel_plus",
@@ -92,6 +92,11 @@
         "entity_id": "EN-e3a0a86bbd35dc79",
         "canonical_entity_id": "",
         "name": "北京新烛时代科技有限公司"
+      },
+      {
+        "entity_id": "EN-6c72a44dd49f926c",
+        "canonical_entity_id": "",
+        "name": "诚恒微"
       },
       {
         "entity_id": "EN-e7492db096492304",
@@ -125,6 +130,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-825d3bf0c067aeb8",
+        "funding_insight_id": "FI-774d78aac219c4a8",
+        "event_ids": [
+          "EV-d84355ecbf21be85"
+        ],
+        "company_entity_id": "EN-6c72a44dd49f926c",
+        "company_canonical_entity_id": "",
+        "company_name": "诚恒微",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "近2亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 2 亿元"
+        },
+        "announced_at": "2026-11-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ad4bbd905a940afc",
+            "source_url": "https://news.pedaily.cn/202611/572144.shtml",
+            "source_title": "诚恒微完成近2亿元A轮融资，加速边端侧AI SoC规模化落地",
+            "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+            "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+            "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+          }
+        ]
+      },
       {
         "activity_id": "IA-181ddc048bcf0cfc",
         "funding_insight_id": "FI-fe50512419bbefbd",
@@ -516,6 +561,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ad4bbd905a940afc",
+        "source_url": "https://news.pedaily.cn/202611/572144.shtml",
+        "source_title": "诚恒微完成近2亿元A轮融资，加速边端侧AI SoC规模化落地",
+        "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+        "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+        "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+      },
+      {
         "source_id": "FISRC-0992c85652bbaa98",
         "source_url": "https://m.sohu.com/a/1080637979_114984?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
         "source_title": "新烛时代获超4000万元天使+轮融资，中金资本等共同出资",
@@ -675,16 +728,16 @@
           "source_id": "ccicapital_home"
         },
         {
+          "description": "融资来源记录：诚恒微 · A轮 · 2026-11-20 · 本轮参投 · 近2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ad4bbd905a940afc"
+        },
+        {
           "description": "融资来源记录：北京新烛时代科技有限公司 · 天使+轮 · 2026-09-25 · 本轮联合投资 · 超过4000万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0992c85652bbaa98"
         },
         {
           "description": "融资来源记录：松应科技 · 多轮融资 · 2026-08-31 · 本轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1ae72db61aa80327"
-        },
-        {
-          "description": "融资来源记录：MemoraX AI · 种子轮 · 2026-05-20 · 本轮联合领投 · 数千万人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-924702999fc88d2f"
         }
       ],
       "contacts": [
@@ -720,6 +773,14 @@
           "quote_hash": "9eaacaf7782097da4e80fd6fac1856de57326c203c62a83814eeab3d3d1d8738"
         },
         {
+          "source_id": "FISRC-ad4bbd905a940afc",
+          "source_url": "https://news.pedaily.cn/202611/572144.shtml",
+          "source_title": "诚恒微完成近2亿元A轮融资，加速边端侧AI SoC规模化落地",
+          "source_content_hash": "cb261e314defd1001c842a539ef71a244d59bba20eb4a131d660c7b6ebd1f886",
+          "quote": "本轮融资由中金资本、中车资本、毅达资本、锡创兴吴、奇安投资共同参与。",
+          "quote_hash": "67b2bb7ba780c84cf4475da638b715a45adef816dd79ee04cb3a2b65277fe735"
+        },
+        {
           "source_id": "FISRC-0992c85652bbaa98",
           "source_url": "https://m.sohu.com/a/1080637979_114984?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
           "source_title": "新烛时代获超4000万元天使+轮融资，中金资本等共同出资",
@@ -734,14 +795,6 @@
           "source_content_hash": "74d6b0dda1bd2148",
           "quote": "本轮由中金资本、武汉洪山资本领投",
           "quote_hash": "dd9d75ad7cd01080ce06111b58af4c07b7a99db8d909dcc19dc94980c7f5c7d6"
-        },
-        {
-          "source_id": "FISRC-924702999fc88d2f",
-          "source_url": "https://www.chinaventure.com.cn/news/116-20260520-391447.html",
-          "source_title": "「MemoraX AI」完成数千万人民币种子+轮融资",
-          "source_content_hash": "76bcd79d46511d45",
-          "quote": "本轮由中金资本、达泰资本、华业天成联合领投",
-          "quote_hash": "87dab2266ac0906c976ca534acc2aadbd10203242f22a09e359ab687abc46980"
         }
       ],
       "coverage_status": "researched",
@@ -752,7 +805,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[7].role": {
+        "activities[8].role": {
           "text": "Pre-A+轮及Pre-B轮投资方",
           "source_hash": "835c2f14217bdc7f4dc70b73a9dc6d6fa0ef29f3df00cd31ad15041aaa55a817",
           "provider": "deepseek",

@@ -1,6 +1,6 @@
 {
   "version": "FINANCING-PUBLICATION-REVIEW-1",
-  "reviewed_at": "2026-11-19T06:52:42.168Z",
+  "reviewed_at": "2026-11-21T06:20:59.411379+00:00",
   "market_corrections": [
     {
       "event_id": "EV-65154e5eb49c218b",
@@ -898,6 +898,47 @@
       "company_name": "柏川数据",
       "reason": "现有证据同时指向数据管理软件与专用具身数据产线，是否满足一般AI软件例外仍有范围分歧；本卡准入引文支持也须进一步责任复核。暂缓发布并保留研究、分类和原文，不据机器人客户直接作永久排除，不批准实体或融资事实变更。",
       "next_action": "responsible_review_of_core_product_boundary_and_admission_quotes"
+    },
+    {
+      "event_id": "EV-f79b77e6e6a86d7b",
+      "status": "pending",
+      "source_url": "https://www.huxiu.com/article/4905665.html",
+      "source_artifact_id": "SA-e5e35955f25775e8",
+      "source_content_hash": "8455fdec1b0a818fdd3f4999d9b0c09f21e1416196d6d88b542155280f104747",
+      "reason": "行业融资汇总被提取为单个公司融资；统计金额和比例尚未绑定到可核验的企业本轮融资主体。暂缓该候选，保留原文及其中背景线索，不按行业总额生成公司融资卡，不宣称已有单笔融资获得批准。",
+      "next_action": "responsible_review_of_individual_company_and_round",
+      "reviewed_by": "codex_prepublication_source_check",
+      "reviewed_at": "2026-11-21T04:39:36.500Z"
+    },
+    {
+      "event_id": "EV-aab8ed97f5bf814a",
+      "status": "pending",
+      "source_url": "https://www.ithome.com/1/030/199.htm",
+      "source_artifact_id": "SA-621934bf52005da6",
+      "source_content_hash": "f17e1bb1d162075d00abd8a6e12021e1ffc500d55b7e3ac29a600996e85bb664",
+      "reason": "本次工商变更与10月已报道的千亿融资是否同轮、首次披露日期和资金区间需核对，不能直接按11月20日新增轮次记卡。",
+      "supporting_source_urls": [
+        "https://www.ithome.com/1/030/199.htm",
+        "https://finance.eastmoney.com/a/202610233906581945.html"
+      ],
+      "reviewed_by": "codex_responsible_public_source_review",
+      "reviewed_at": "2026-11-21T06:20:59.411379+00:00",
+      "next_action": "review_existing_original_funding_amount_date_and_same_round_before_release"
+    },
+    {
+      "event_id": "EV-a54d9f479d4eb060",
+      "status": "pending",
+      "source_url": "https://tidenews.com.cn/tmh_news.html?id=6afe6f1c61fcb50001547492",
+      "source_artifact_id": "SA-4bcc7f7fc09b5bee",
+      "source_content_hash": "69c2bf56c663112f3f82b935bfb29011582f0a8d61d4fa03a8f81e8114595298",
+      "reason": "当前5450亿美元金额无可核查的本轮融资条款支持；二次来源为10月债券计划，11月19日新融资的金额、完成日期及AI主营范围待确认。",
+      "supporting_source_urls": [
+        "https://www.tikr.com/zh/blog/tencent-seeks-4-5-billion-for-ai-despite-a-67-6-billion-cash-pile-heres-why",
+        "https://www.tencent.com/zh-cn/investors/"
+      ],
+      "reviewed_by": "codex_responsible_public_source_review",
+      "reviewed_at": "2026-11-21T06:20:59.411379+00:00",
+      "next_action": "review_existing_original_funding_amount_date_and_same_round_before_release"
     }
   ],
   "resolutions": [

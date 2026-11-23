@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "generatedAt": "2026-11-23T05:32:48.334Z",
+    "latestDataDate": "2026-11-21",
+    "currentDate": "2026-11-21",
+    "eventCount": 4524,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "CN"
@@ -72,11 +72,43 @@
     "first_disclosed_at": "",
     "latest_disclosed_at": "",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-c4c52f4fad7201c4",
+        "funding_insight_id": "FI-faf8764cd64d29f0",
+        "event_ids": [
+          "EV-aab8ed97f5bf814a"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "首轮老股东，本轮继续参与",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c19c4789c1fd814b",
+            "source_url": "https://timeline.sohu.com/news/AIsbgFFhxm",
+            "source_title": "DeepSeek千亿融资新进展：机构在争最后入场券，最快明年上市",
+            "source_content_hash": "8c3e1a0494eb8e0f",
+            "quote": "首轮老股东IDG资本、砺思资本、拾象资本也继续参与",
+            "quote_hash": "9ce30fb3656e0bf513eeb53aca2113e27b04f550a2cf47679fd97c2ba3efe46a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3e66d932c77cdacf",
         "funding_insight_id": "FI-f5103149f04ea6ed",
@@ -120,6 +152,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-c19c4789c1fd814b",
+        "source_url": "https://timeline.sohu.com/news/AIsbgFFhxm",
+        "source_title": "DeepSeek千亿融资新进展：机构在争最后入场券，最快明年上市",
+        "source_content_hash": "8c3e1a0494eb8e0f",
+        "quote": "首轮老股东IDG资本、砺思资本、拾象资本也继续参与",
+        "quote_hash": "9ce30fb3656e0bf513eeb53aca2113e27b04f550a2cf47679fd97c2ba3efe46a"
+      },
+      {
         "source_id": "FISRC-5d82f5dc9fc96ce5",
         "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
         "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
@@ -155,6 +195,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：DeepSeek · 历史轮次未披露 · 首轮老股东，本轮继续参与。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c19c4789c1fd814b"
+        },
+        {
           "description": "融资来源记录：Moonshot AI · 天使轮 · 天使轮参投；A+轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5d82f5dc9fc96ce5"
         }
@@ -184,6 +228,14 @@
           "source_content_hash": "25fc901135906804ccac74c699aeeb4189f069b5f3326096276180bc04b6e241",
           "quote": "砺思资本的VC基金，关注技术驱动的各类商业创新，将以研究驱动的主题式投资思路，投资革命性的创新创业机会。",
           "quote_hash": "7381a65c861032e06ce686326497891ac2cf8e9268d6a4c74af08d07d406133f"
+        },
+        {
+          "source_id": "FISRC-c19c4789c1fd814b",
+          "source_url": "https://timeline.sohu.com/news/AIsbgFFhxm",
+          "source_title": "DeepSeek千亿融资新进展：机构在争最后入场券，最快明年上市",
+          "source_content_hash": "8c3e1a0494eb8e0f",
+          "quote": "首轮老股东IDG资本、砺思资本、拾象资本也继续参与",
+          "quote_hash": "9ce30fb3656e0bf513eeb53aca2113e27b04f550a2cf47679fd97c2ba3efe46a"
         },
         {
           "source_id": "FISRC-5d82f5dc9fc96ce5",

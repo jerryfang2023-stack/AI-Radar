@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "generatedAt": "2026-11-23T05:32:48.334Z",
+    "latestDataDate": "2026-11-21",
+    "currentDate": "2026-11-21",
+    "eventCount": 4524,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,24 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 5,
+    "china_market_activity_count": 6,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-06-03",
-    "latest_disclosed_at": "2026-10-26",
+    "latest_disclosed_at": "2026-11-20",
     "role_counts": {
       "historical_or_ambiguous": 4,
       "lead": 1,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "first_external",
+      "other",
       "series_b_plus",
       "undisclosed"
     ],
@@ -94,6 +95,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-21ef98e5952ae1c0",
+        "funding_insight_id": "FI-faf8764cd64d29f0",
+        "event_ids": [
+          "EV-aab8ed97f5bf814a"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "第二轮融资",
+        "amount_original": "1000 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 亿元"
+        },
+        "announced_at": "2026-11-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-281ba3f1b7759a6c",
+            "source_url": "https://es.tradingview.com/news/panews:e41a6a7a3acdf:0/",
+            "source_title": "DeepSeek融资1055亿元细节曝光：估值约6155亿元，近30家投资者参与",
+            "source_content_hash": "0a50d01c35cb4c56",
+            "quote": "宁德时代及其董事长曾毓群两轮分别出资50亿元和100亿元",
+            "quote_hash": "6480c4e3b606727873fa99f558126c0c81ab3922c1b91ba94b51ec04f44b5070"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3544a634c508c3e6",
         "funding_insight_id": "FI-46e39faf9187783d",
@@ -434,6 +475,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-281ba3f1b7759a6c",
+        "source_url": "https://es.tradingview.com/news/panews:e41a6a7a3acdf:0/",
+        "source_title": "DeepSeek融资1055亿元细节曝光：估值约6155亿元，近30家投资者参与",
+        "source_content_hash": "0a50d01c35cb4c56",
+        "quote": "宁德时代及其董事长曾毓群两轮分别出资50亿元和100亿元",
+        "quote_hash": "6480c4e3b606727873fa99f558126c0c81ab3922c1b91ba94b51ec04f44b5070"
+      },
+      {
         "source_id": "FISRC-03184bd4c71f3982",
         "source_url": "https://finance.sina.com.cn/jjxw/2026-10-26/doc-iniwnuwc9407368.shtml?cre=tianyi&mod=pchp&loc=23&r=0&rfunc=64&tj=cxvertical_pc_hp&tr=12",
         "source_title": "经济日报：千亿元融资展现中国AI进取心",
@@ -551,6 +600,10 @@
           "source_id": "FISRC-e0178cb313198d39"
         },
         {
+          "description": "融资来源记录：DeepSeek · 其他融资 · 2026-11-20 · 本轮参投 · 1000 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-281ba3f1b7759a6c"
+        },
+        {
           "description": "融资来源记录：DeepSeek · 轮次未披露 · 2026-10-26 · 本轮参投 · 约1000亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-03184bd4c71f3982"
         },
@@ -592,6 +645,14 @@
           "source_content_hash": "82230e72a4d4630681721f425352cc0f5c2bc05d32e9716a3591c10e0a5a01f4",
           "quote": "2011 创始团队二次创业, 创立宁德时代(CATL)",
           "quote_hash": "bb678c6c49f251f19f81c68002037a382f0123e53a454058a85f81d0ec692638"
+        },
+        {
+          "source_id": "FISRC-281ba3f1b7759a6c",
+          "source_url": "https://es.tradingview.com/news/panews:e41a6a7a3acdf:0/",
+          "source_title": "DeepSeek融资1055亿元细节曝光：估值约6155亿元，近30家投资者参与",
+          "source_content_hash": "0a50d01c35cb4c56",
+          "quote": "宁德时代及其董事长曾毓群两轮分别出资50亿元和100亿元",
+          "quote_hash": "6480c4e3b606727873fa99f558126c0c81ab3922c1b91ba94b51ec04f44b5070"
         },
         {
           "source_id": "FISRC-03184bd4c71f3982",

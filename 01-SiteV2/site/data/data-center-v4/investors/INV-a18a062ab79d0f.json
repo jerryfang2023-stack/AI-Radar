@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "generatedAt": "2026-11-23T05:32:48.334Z",
+    "latestDataDate": "2026-11-21",
+    "currentDate": "2026-11-21",
+    "eventCount": 4524,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,24 +61,25 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-06-09",
-    "latest_disclosed_at": "2026-08-27",
+    "latest_disclosed_at": "2026-11-17",
     "role_counts": {
       "historical_or_ambiguous": 3,
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "angel",
-      "multi_round"
+      "multi_round",
+      "pre_series_a_plus"
     ],
     "portfolio_companies": [
       {
@@ -90,9 +91,54 @@
         "entity_id": "EN-f78336305b0bc8bc",
         "canonical_entity_id": "",
         "name": "晰见科技"
+      },
+      {
+        "entity_id": "EN-4ee3af3ba716dc0b",
+        "canonical_entity_id": "",
+        "name": "芯星元"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-46b86e7b93cf928d",
+        "funding_insight_id": "FI-2314c7e986050f44",
+        "event_ids": [
+          "EV-efa6687b5276a437"
+        ],
+        "company_entity_id": "EN-4ee3af3ba716dc0b",
+        "company_canonical_entity_id": "",
+        "company_name": "芯星元",
+        "round": "Pre-A+轮",
+        "round_code": "pre_series_a_plus",
+        "round_original": "Pre-A+轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-859ae42de73461d5",
+            "source_url": "https://feng.ifeng.com/c/8y84oPYeiYq",
+            "source_title": "芯星元获近亿元Pre-A+轮融资 聚焦AI原生芯片设计_大风号",
+            "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+            "quote": "由顺为资本领投，纪源资本、经纬创投跟投",
+            "quote_hash": "ed35812e46cfb79e7b9cb3daec41c548eac894acc956aaff00acd9c295dbb8f6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e7f13b17718baf3d",
         "funding_insight_id": "FI-cb3399f8c90eec40",
@@ -281,6 +327,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-859ae42de73461d5",
+        "source_url": "https://feng.ifeng.com/c/8y84oPYeiYq",
+        "source_title": "芯星元获近亿元Pre-A+轮融资 聚焦AI原生芯片设计_大风号",
+        "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+        "quote": "由顺为资本领投，纪源资本、经纬创投跟投",
+        "quote_hash": "ed35812e46cfb79e7b9cb3daec41c548eac894acc956aaff00acd9c295dbb8f6"
+      },
+      {
         "source_id": "FISRC-7ae3651fb91fc1f1",
         "source_url": "https://news.pedaily.cn/202608/568184.shtml",
         "source_title": "晰见科技连续完成近5亿元融资，清华类脑视觉芯片加速驶入物理AI时代",
@@ -365,12 +419,12 @@
       "experience_summary": "官网介绍其在中国聚焦早期投资，并设有覆盖战略、运营和人才等职能的投后服务团队。公开页面未提供可独立比较的基金净回报或退出率。",
       "track_record": [
         {
-          "description": "融资来源记录：晰见科技 · 多轮融资 · 2026-08-27 · 本轮参投 · 近5亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7ae3651fb91fc1f1"
+          "description": "融资来源记录：芯星元 · Pre-A+轮 · 2026-11-17 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-859ae42de73461d5"
         },
         {
-          "description": "融资来源记录：华超神控 · 天使轮 · 2026-06-09 · 本轮领投 · 亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-cb7eea4a6bd98034"
+          "description": "融资来源记录：晰见科技 · 多轮融资 · 2026-08-27 · 本轮参投 · 近5亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7ae3651fb91fc1f1"
         }
       ],
       "contacts": [
@@ -450,6 +504,14 @@
           "quote_hash": "32767d22e4e00b33c6594d020b0f092d13288de9be1493e7d7a3ee6ea6d2a7df"
         },
         {
+          "source_id": "FISRC-859ae42de73461d5",
+          "source_url": "https://feng.ifeng.com/c/8y84oPYeiYq",
+          "source_title": "芯星元获近亿元Pre-A+轮融资 聚焦AI原生芯片设计_大风号",
+          "source_content_hash": "ba3a591973cb4c81f66c5b0738af568a01f44b6e98271d2f316d7d20ab047d44",
+          "quote": "由顺为资本领投，纪源资本、经纬创投跟投",
+          "quote_hash": "ed35812e46cfb79e7b9cb3daec41c548eac894acc956aaff00acd9c295dbb8f6"
+        },
+        {
           "source_id": "FISRC-7ae3651fb91fc1f1",
           "source_url": "https://news.pedaily.cn/202608/568184.shtml",
           "source_title": "晰见科技连续完成近5亿元融资，清华类脑视觉芯片加速驶入物理AI时代",
@@ -464,14 +526,6 @@
           "source_content_hash": "40247b7fa2a95085",
           "quote": "本轮投资方包括徐汇资本、华映资本、经纬创投、英诺基金、水木清华以及具身智能、汽车产业链龙头企业等",
           "quote_hash": "6d388993cbd027b7a3a371e0e0aed525d4b34d06924c1849205f475ca8beb78c"
-        },
-        {
-          "source_id": "FISRC-cb7eea4a6bd98034",
-          "source_url": "https://news.pedaily.cn/202606/565032.shtml",
-          "source_title": "华超神控完成亿元天使系列融资，加速打造新一代AI超声脑机接口平台",
-          "source_content_hash": "6d658d71e68a7dd4",
-          "quote": "天使轮融资由经纬创投领投，天使+轮由德联资本、道远资本联合领投",
-          "quote_hash": "2542036de1821f5046832f7c50bbdf2a03dabd50f99e97d9183ee496859af3f8"
         }
       ],
       "last_verified_at": "2026-09-26",
@@ -481,7 +535,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[2].role": {
+        "activities[3].role": {
           "text": "Pre-A轮领投",
           "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
           "provider": "deepseek",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-10-25T02:10:15.815Z",
-    "latestDataDate": "2026-11-20",
-    "currentDate": "2026-11-20",
-    "eventCount": 4516,
+    "generatedAt": "2026-11-23T05:32:48.334Z",
+    "latestDataDate": "2026-11-21",
+    "currentDate": "2026-11-21",
+    "eventCount": 4524,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 5,
+    "historical_or_ambiguous_count": 6,
     "portfolio_company_count": 3,
     "market_regions": [
       "CN"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-03-02",
     "latest_disclosed_at": "2026-09-18",
     "role_counts": {
-      "historical_or_ambiguous": 5,
+      "historical_or_ambiguous": 6,
       "participant": 3
     },
     "round_codes": [
@@ -349,6 +349,38 @@
         ]
       },
       {
+        "activity_id": "IA-08194c4c3e4cceda",
+        "funding_insight_id": "FI-faf8764cd64d29f0",
+        "event_ids": [
+          "EV-aab8ed97f5bf814a"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "本轮新进投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c19c4789c1fd814b",
+            "source_url": "https://timeline.sohu.com/news/AIsbgFFhxm",
+            "source_title": "DeepSeek千亿融资新进展：机构在争最后入场券，最快明年上市",
+            "source_content_hash": "8c3e1a0494eb8e0f",
+            "quote": "新进投资方不仅包括石溪资本、中芯聚源、CPE源峰、君联资本、吉利等",
+            "quote_hash": "4eda0fdcec23ef6a3b6d8edd20e0af2093b1d0ebadb3c48c47ba17938ba70c26"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-5b373e4d62b804aa",
         "funding_insight_id": "FI-da29060a41575ad7",
         "event_ids": [
@@ -437,6 +469,14 @@
         "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
         "quote": "中芯聚源、毅达资本、蓝驰创投、东方嘉富及 立讯精密 产投等老股东继续加持",
         "quote_hash": "756b351a9fa6aa2ab3dfc4a87d296aea555b2d57dc75b235aa853a15a06db3cc"
+      },
+      {
+        "source_id": "FISRC-c19c4789c1fd814b",
+        "source_url": "https://timeline.sohu.com/news/AIsbgFFhxm",
+        "source_title": "DeepSeek千亿融资新进展：机构在争最后入场券，最快明年上市",
+        "source_content_hash": "8c3e1a0494eb8e0f",
+        "quote": "新进投资方不仅包括石溪资本、中芯聚源、CPE源峰、君联资本、吉利等",
+        "quote_hash": "4eda0fdcec23ef6a3b6d8edd20e0af2093b1d0ebadb3c48c47ba17938ba70c26"
       },
       {
         "source_id": "FISRC-9990b623f525d10c",
