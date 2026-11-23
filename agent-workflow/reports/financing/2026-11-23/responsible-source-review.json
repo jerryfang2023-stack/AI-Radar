@@ -1,0 +1,237 @@
+{
+  "version": "FINANCING-RESPONSIBLE-SOURCE-REVIEW-1",
+  "monitor_date": "2026-11-23",
+  "reviewed_at": "2026-11-23T06:41:14.287Z",
+  "reviewer": "Codex responsible financing reviewer",
+  "research_identity_correction": {
+    "event_id": "EV-18c6c6b91be8aee7",
+    "company": "Noah",
+    "reviewed_at": "2026-11-23T06:41:14.287Z",
+    "reviewed_by": "Codex responsible financing reviewer",
+    "removed_mismatched_source_id": "FISRC-b49fc33a3e657be2",
+    "removed_source_url": "https://www.caplight.com/company/noah-bio",
+    "reason": "该来源是新加坡同名生物企业，不能佐证安特卫普企业AI工作流平台；正确官网由融资原文与官方LinkedIn公司页交叉链接确认。官网仅补证公司产品，不代替融资金额原文。",
+    "replacement": {
+      "source_id": "FISRC-0056909c00f4972d",
+      "source_url": "https://noah.support/",
+      "content_hash": "8801748234d2e41704dd4b63f113ec848a6deb82583cdffe5ed0ee6cd726817d",
+      "snapshot_ref": "funding-research/FISRC-0056909c00f4972d.json",
+      "title": "Noah",
+      "source_class": "official_candidate",
+      "captured_at": "2026-11-23T06:28:35.489Z",
+      "observed_at": "2026-11-23",
+      "published_at": "",
+      "method": "original_http",
+      "attempts": [
+        {
+          "method": "original_http",
+          "status": "success"
+        }
+      ],
+      "quote": "Noah interviews your teams to identify pain points",
+      "quote_hash": "716443170705b05ad57326322ba9bb3d834f6bd7d4e270bd3af9e575bea25af7"
+    }
+  },
+  "non_admitted_ipo_holds": [
+    {
+      "event_id": "EV-86f4e971f63b6cf2",
+      "company": "Anthropic",
+      "status": "pending",
+      "source_id": "FISRC-ae1418f223a3bc98",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-11-18/anthropic-is-said-to-price-ipo-at-83-per-share",
+      "source_content_hash": "0f38ee781a80c7a29c13e628edc4e8b5902e3f50c8494ba54aa661c24227291a",
+      "source_quote": "\nWATCH: Anthropic raised a record $107.3 billion in a watershed moment for both AI and global financial market",
+      "quote_hash": "f535c99bdd87579948301328898b89033dc2cce9b307f28332f7275b9506fa11",
+      "reason": "原文1073亿美元为公司及创始股东在IPO与私募配售中的合计交易额，非单独公司新增融资；发行人所得未独立确认，不能用合计确额新建融资卡。",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-11-23T06:41:14.287Z",
+      "next_action": "reconcile_issuer_proceeds_and_same_ipo_before_release"
+    },
+    {
+      "event_id": "EV-638209012a462005",
+      "company": "Anthropic",
+      "status": "pending",
+      "source_id": "FISRC-81eb2d733824ba63",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-11-19/anthropic-raises-3-billion-in-japan-tranche-of-us-mega-ipo",
+      "source_content_hash": "6cdd6007f7fb8b1c0e832acfbde72726448497177bbe66b4ccda18e39a81f1e9",
+      "source_quote": "c PBC raised about $3 billion from Japanese investors as part of its initial public offering, the lower end of",
+      "quote_hash": "b0bc220db5ac9c40bd2260466e1b976fefc9bcb7f87fde29c020ebcb912f2dcd",
+      "reason": "日本配售是同一次IPO的地区份额，不另计独立公司新融资；与整体交易事件保留关联待核对，避免重复累计。",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-11-23T06:41:14.287Z",
+      "next_action": "reconcile_issuer_proceeds_and_same_ipo_before_release",
+      "related_event_id": "EV-86f4e971f63b6cf2"
+    }
+  ],
+  "prior_accepted_history_preserved": true,
+  "does_not_replace_formal_publication_review": true,
+  "admitted_source_reviews": [
+    {
+      "source_url": "https://tech.eu/2026/11/20/archer-raises-10m-to-connect-recruiters-and-job-seekers-with-ai/",
+      "content_hash": "25455a85e38a3f74a0893b8080aa1efa7501f3a3ba5efac69d534a01bb3974c2",
+      "event_id": "EV-046c930606b5976d",
+      "company": "Archer (formerly hackajob)",
+      "amount": "$10 million",
+      "round": "轮次未披露",
+      "announced_at": "2026-11-20",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-11-23T06:52:22.072Z",
+      "reason": "同篇原文绑定公司主营AI产品、已披露融资金额与轮次；未披露轮次保持未披露，不把天使投资人等同天使轮，不将补贴、贷款或外币折算另行累计。",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-7d9d9511f44cb118",
+          "quote_hash": "e9cf9fc0e1492e7aa42a80a2f568ecf1cf5682393830d09a2ec0aa88752faa73"
+        },
+        {
+          "source_id": "FISRC-7d9d9511f44cb118",
+          "quote_hash": "70165f7764788d9735523108482e0303b2d7d0e992e656e7465a9d68385cde8c"
+        },
+        {
+          "source_id": "FISRC-7d9d9511f44cb118",
+          "quote_hash": "1ad5eae506a2c26c456634b57bb0495bdaef609ea1dda45647b2fc05a8f4ae78"
+        }
+      ]
+    },
+    {
+      "source_url": "https://tech.eu/2026/11/19/wilgot-raises-3m-in-seed-funding-to-help-brands-get-recommended-by-ai/",
+      "content_hash": "6ac0868fa0179c92e87fe854629a6d24af4926597fc555f9426385f755585782",
+      "event_id": "EV-ac28091b9e390c7e",
+      "company": "Wilgot",
+      "amount": "$3 million",
+      "round": "种子轮",
+      "announced_at": "2026-11-19",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-11-23T06:52:22.072Z",
+      "reason": "同篇原文绑定公司主营AI产品、已披露融资金额与轮次；未披露轮次保持未披露，不把天使投资人等同天使轮，不将补贴、贷款或外币折算另行累计。",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-259d24b62357e890",
+          "quote_hash": "494de09d53144fd92aaf7342ac7517993677bb6edc1425f3eea69a156f7669e8"
+        },
+        {
+          "source_id": "FISRC-259d24b62357e890",
+          "quote_hash": "4c7a614089c0b8891142536713198c4cf070cfa671bc908c035b4243347c66b0"
+        },
+        {
+          "source_id": "FISRC-259d24b62357e890",
+          "quote_hash": "759baca38aa24ca35530b2b88c5fe524df7786b251882ac62e289c629dc906c2"
+        }
+      ]
+    },
+    {
+      "source_url": "https://tech.eu/2026/11/19/noah-raises-eur800k-to-help-companies-unlock-their-ai-potential/",
+      "content_hash": "220587fddeee205a3c47d13ff27c0b2bfb39487ea60e64db8c936ea410f33922",
+      "event_id": "EV-18c6c6b91be8aee7",
+      "company": "Noah",
+      "amount": "€800,000",
+      "round": "轮次未披露",
+      "announced_at": "2026-11-19",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-11-23T06:52:22.072Z",
+      "reason": "同篇原文绑定公司主营AI产品、已披露融资金额与轮次；未披露轮次保持未披露，不把天使投资人等同天使轮，不将补贴、贷款或外币折算另行累计。",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3080b23dde03e3e9",
+          "quote_hash": "4f443bd3d67c79a1f8fbff916684eed8d1810e46e830b2ffb5115e00c06db08c"
+        },
+        {
+          "source_id": "FISRC-3080b23dde03e3e9",
+          "quote_hash": "696ed31bea19ee57dd8c68a5b31d8dfa7eb0c1144ed4b595695c993b3ca55c9a"
+        },
+        {
+          "source_id": "FISRC-3080b23dde03e3e9",
+          "quote_hash": "646c5073f70306a6e3b31867344a1da7ebd3905ebb384be800fcbadd3c2088fe"
+        },
+        {
+          "source_id": "FISRC-3080b23dde03e3e9",
+          "quote_hash": "28b0b886d72a40dfc25693a45a7ed2087ad5431cefbf1f238172c9db76f88764"
+        }
+      ]
+    },
+    {
+      "source_url": "https://tech.eu/2026/11/19/lato-secures-47m-to-automate-customer-and-expert-interviews-with-ai/",
+      "content_hash": "2ed497ba4bd1b8ff143444a5428e57c1aaed402a683607035203b043988251e2",
+      "event_id": "EV-fa5950b871b08d52",
+      "company": "LATO",
+      "amount": "$4.7 million",
+      "round": "种子轮",
+      "announced_at": "2026-11-19",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-11-23T06:52:22.072Z",
+      "reason": "同篇原文绑定公司主营AI产品、已披露融资金额与轮次；未披露轮次保持未披露，不把天使投资人等同天使轮，不将补贴、贷款或外币折算另行累计。",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-2c6ef9e7725b0d1d",
+          "quote_hash": "0007c5f852ab878db166cc2edce3530eb91d514f4a347f5b291bad256af2c9db"
+        },
+        {
+          "source_id": "FISRC-2c6ef9e7725b0d1d",
+          "quote_hash": "2b1e744d4d600ff4abf90f67391bf8f41b74927902318d4ea0f9af572d46e24b"
+        },
+        {
+          "source_id": "FISRC-2c6ef9e7725b0d1d",
+          "quote_hash": "0007c5f852ab878db166cc2edce3530eb91d514f4a347f5b291bad256af2c9db"
+        }
+      ]
+    },
+    {
+      "source_url": "https://tech.eu/2026/11/19/london-based-boltz-raises-110m-series-a/",
+      "content_hash": "391f9944eb680fae25ea4413e6eed9356b75535138fc29990195aa85332e8110",
+      "event_id": "EV-588d12fcfaaf7527",
+      "company": "Boltz",
+      "amount": "$110m",
+      "round": "A轮",
+      "announced_at": "2026-11-19",
+      "reviewed_by": "Codex responsible financing reviewer",
+      "reviewed_at": "2026-11-23T06:52:22.072Z",
+      "reason": "同篇原文绑定公司主营AI产品、已披露融资金额与轮次；未披露轮次保持未披露，不把天使投资人等同天使轮，不将补贴、贷款或外币折算另行累计。",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-01cd349698d99374",
+          "quote_hash": "a6de941ef99004d595d5c1b05b086c9db889930be7ca1fca831869d9941eddc9"
+        },
+        {
+          "source_id": "FISRC-01cd349698d99374",
+          "quote_hash": "0ff4cb1e2eac1241ad8cc548e922cb2b16fece8d221688d11f395926f91d4101"
+        },
+        {
+          "source_id": "FISRC-01cd349698d99374",
+          "quote_hash": "a6de941ef99004d595d5c1b05b086c9db889930be7ca1fca831869d9941eddc9"
+        }
+      ]
+    }
+  ],
+  "queue_closures": [
+    {
+      "source_url": "https://tech.eu/2026/11/18/goldman-sachs-leads-280m-funding-round-in-payhawk/",
+      "status": "verified",
+      "reason": "existing_gates_reconciled"
+    },
+    {
+      "source_url": "https://tech.eu/2026/11/18/perry-ai-secures-22m-to-automate-legal-work-across-private-capital/",
+      "status": "verified",
+      "reason": "existing_gates_reconciled"
+    },
+    {
+      "source_url": "https://tech.eu/2026/11/17/model-ml-hits-15b-valuation-with-250m-raise-just-18-months-after-emerging-from-stealth/",
+      "status": "verified",
+      "reason": "existing_gates_reconciled"
+    },
+    {
+      "source_url": "https://tech.eu/2026/11/17/fermat-raises-8m-to-bridge-the-gap-between-fashion-designers-and-manufacturers/",
+      "status": "verified",
+      "reason": "existing_gates_reconciled"
+    },
+    {
+      "source_url": "https://tech.eu/2026/11/17/previsia-raises-eur38m-to-bring-ai-powered-risk-prevention-to-businesses-across-europe/",
+      "status": "verified",
+      "reason": "existing_gates_reconciled"
+    },
+    {
+      "source_url": "https://www.geekwire.com/2026/former-uw-ai-researchers-yejin-choi-and-carlos-guestrin-raise-110m-for-ai-startup-noeri/",
+      "status": "verified",
+      "reason": "existing_gates_reconciled"
+    }
+  ],
+  "unproved_exclusions_retained": 2
+}
