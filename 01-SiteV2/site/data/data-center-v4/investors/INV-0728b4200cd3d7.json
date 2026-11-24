@@ -57,55 +57,71 @@
     "name": "Nikita Bier",
     "aliases": [],
     "canonical_entity_id": null,
-    "investor_kind": "individual",
-    "investor_kind_label": "个人投资者",
-    "classification_confidence": "evidence_bounded",
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-11-23",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-d0c8b2d87ecbfd3f",
+        "canonical_entity_id": "",
+        "name": "Supertake"
+      }
+    ],
     "activities": [
       {
-        "activity_id": "IA-5c9a481eae69170e",
-        "funding_insight_id": "FI-0cd32810bd73c1d5",
+        "activity_id": "IA-154be318f3f8818f",
+        "funding_insight_id": "FI-2bb6fbca7ddb4ea3",
         "event_ids": [
           "EV-72f7f97d9e977246"
         ],
-        "company_entity_id": "EN-ed5eb9a37e2d8231",
+        "company_entity_id": "EN-d0c8b2d87ecbfd3f",
         "company_canonical_entity_id": "",
         "company_name": "Supertake",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$20 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2026-11-23",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "天使投资人",
-        "role_code": "historical_or_ambiguous",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
             "source_id": "FISRC-eea6d4f773cb5b5a",
             "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
             "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
             "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
-            "quote": "renowned product manager Nikita Bier",
-            "quote_hash": "e34d2fc9e1aae4d687dd6c8e0e6e7a7f11357891b8bc3f7b51bc1098fb24117b"
+            "quote": "Numerous angel investors also joined, including Nat Friedman, who’s currently head of product at Meta Superintelligence Labs; Vercel CEO Guillermo Rauch; renowned product manager Nikita Bier; investor Scott Belsky; and Nemil Dalal, a former Coinbase exec who is now a visiting partner at Y Combinator.",
+            "quote_hash": "4c8589c6452df8d509ffa4546a1664ec657031c8f5f685c4e9f14d36fa37c88e"
           }
         ]
       }
@@ -116,21 +132,21 @@
         "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
         "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
         "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
-        "quote": "renowned product manager Nikita Bier",
-        "quote_hash": "e34d2fc9e1aae4d687dd6c8e0e6e7a7f11357891b8bc3f7b51bc1098fb24117b"
+        "quote": "Numerous angel investors also joined, including Nat Friedman, who’s currently head of product at Meta Superintelligence Labs; Vercel CEO Guillermo Rauch; renowned product manager Nikita Bier; investor Scott Belsky; and Nemil Dalal, a former Coinbase exec who is now a visiting partner at Y Combinator.",
+        "quote_hash": "4c8589c6452df8d509ffa4546a1664ec657031c8f5f685c4e9f14d36fa37c88e"
       }
     ],
     "public_profile": {
-      "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Nikita Bier 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Nikita Bier 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Supertake · 历史轮次未披露 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：Supertake · 种子轮 · 2026-11-23 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-eea6d4f773cb5b5a"
         }
       ],
@@ -141,8 +157,8 @@
           "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
           "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
           "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
-          "quote": "renowned product manager Nikita Bier",
-          "quote_hash": "e34d2fc9e1aae4d687dd6c8e0e6e7a7f11357891b8bc3f7b51bc1098fb24117b"
+          "quote": "Numerous angel investors also joined, including Nat Friedman, who’s currently head of product at Meta Superintelligence Labs; Vercel CEO Guillermo Rauch; renowned product manager Nikita Bier; investor Scott Belsky; and Nemil Dalal, a former Coinbase exec who is now a visiting partner at Y Combinator.",
+          "quote_hash": "4c8589c6452df8d509ffa4546a1664ec657031c8f5f685c4e9f14d36fa37c88e"
         }
       ],
       "last_verified_at": "2026-10-06"

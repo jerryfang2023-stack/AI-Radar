@@ -61,21 +61,23 @@
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 2,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-20",
-    "latest_disclosed_at": "2026-06-17",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
-      "historical_or_ambiguous": 3,
-      "other_current_round": 2
+      "historical_or_ambiguous": 2,
+      "other_current_round": 2,
+      "participant": 1
     },
     "round_codes": [
+      "seed",
       "series_a",
       "series_b"
     ],
@@ -86,12 +88,57 @@
         "name": "Odyssey ML"
       },
       {
+        "entity_id": "EN-d0c8b2d87ecbfd3f",
+        "canonical_entity_id": "",
+        "name": "Supertake"
+      },
+      {
         "entity_id": "EN-ce65fa41b16c33ff",
         "canonical_entity_id": "",
         "name": "Viktor"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f852fb7af58d8286",
+        "funding_insight_id": "FI-2bb6fbca7ddb4ea3",
+        "event_ids": [
+          "EV-72f7f97d9e977246"
+        ],
+        "company_entity_id": "EN-d0c8b2d87ecbfd3f",
+        "company_canonical_entity_id": "",
+        "company_name": "Supertake",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$20 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-eea6d4f773cb5b5a",
+            "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+            "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+            "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+            "quote": "Numerous angel investors also joined, including Nat Friedman, who’s currently head of product at Meta Superintelligence Labs; Vercel CEO Guillermo Rauch; renowned product manager Nikita Bier; investor Scott Belsky; and Nemil Dalal, a former Coinbase exec who is now a visiting partner at Y Combinator.",
+            "quote_hash": "4c8589c6452df8d509ffa4546a1664ec657031c8f5f685c4e9f14d36fa37c88e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-50a6ba92c2508266",
         "funding_insight_id": "FI-479f9d5c1123dba2",
@@ -236,41 +283,17 @@
             "quote_hash": "457edd3696a1e864e33f740e3b8c838e58446d016979a808af94b99edabef957"
           }
         ]
-      },
-      {
-        "activity_id": "IA-55268015c40a1cc1",
-        "funding_insight_id": "FI-0cd32810bd73c1d5",
-        "event_ids": [
-          "EV-72f7f97d9e977246"
-        ],
-        "company_entity_id": "EN-ed5eb9a37e2d8231",
-        "company_canonical_entity_id": "",
-        "company_name": "Supertake",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "天使投资人",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-eea6d4f773cb5b5a",
-            "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
-            "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
-            "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
-            "quote": "Vercel CEO Guillermo Rauch",
-            "quote_hash": "34af9d6ee8ffc137c22b5f38fb29c89d1d42a93748594caee459a3c0b6239c06"
-          }
-        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-eea6d4f773cb5b5a",
+        "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+        "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+        "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+        "quote": "Numerous angel investors also joined, including Nat Friedman, who’s currently head of product at Meta Superintelligence Labs; Vercel CEO Guillermo Rauch; renowned product manager Nikita Bier; investor Scott Belsky; and Nemil Dalal, a former Coinbase exec who is now a visiting partner at Y Combinator.",
+        "quote_hash": "4c8589c6452df8d509ffa4546a1664ec657031c8f5f685c4e9f14d36fa37c88e"
+      },
       {
         "source_id": "FISRC-e94365d0212a78f3",
         "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
@@ -302,14 +325,6 @@
         "source_content_hash": "914fbe85560ee8b3",
         "quote": "plus angels including GitHub co-founder Tom Preston-Werner, Vercel CEO Guillermo Rauch, Spencer Kimball, Olivier Pomel, and Jori Lallo",
         "quote_hash": "457edd3696a1e864e33f740e3b8c838e58446d016979a808af94b99edabef957"
-      },
-      {
-        "source_id": "FISRC-eea6d4f773cb5b5a",
-        "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
-        "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
-        "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
-        "quote": "Vercel CEO Guillermo Rauch",
-        "quote_hash": "34af9d6ee8ffc137c22b5f38fb29c89d1d42a93748594caee459a3c0b6239c06"
       }
     ],
     "public_profile": {
@@ -355,16 +370,16 @@
           "source_id": "rauch_about"
         },
         {
+          "description": "融资来源记录：Supertake · 种子轮 · 2026-11-23 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-eea6d4f773cb5b5a"
+        },
+        {
           "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮天使投资人 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e94365d0212a78f3"
         },
         {
           "description": "融资来源记录：Viktor · A轮 · 2026-05-20 · 本轮天使投资人 · €64.7 million ($75 million)。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce83b857608dabeb"
-        },
-        {
-          "description": "融资来源记录：Paper · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-23493910baa1c861"
         }
       ],
       "contacts": [],
@@ -376,6 +391,14 @@
           "source_content_hash": "7e6f396830e994163179edc11be9ace14209bb7a2097d5a36a72dea4193332b7",
           "quote": "I’m a software engineer and CEO of Vercel. I started my first company Cloudup in SF which was later acquired by Automattic. After being involved in creating numerous influential open source projects like Socket.IO and Mongoose, I saw the opportunity in creating tooling and cloud infrastructure to make the Web faster. Next.js and Vercel were born.",
           "quote_hash": "174fffc4e94c3f180dc30793d1400423e831df0724b3ef3b96544f416160cbd5"
+        },
+        {
+          "source_id": "FISRC-eea6d4f773cb5b5a",
+          "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+          "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+          "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+          "quote": "Numerous angel investors also joined, including Nat Friedman, who’s currently head of product at Meta Superintelligence Labs; Vercel CEO Guillermo Rauch; renowned product manager Nikita Bier; investor Scott Belsky; and Nemil Dalal, a former Coinbase exec who is now a visiting partner at Y Combinator.",
+          "quote_hash": "4c8589c6452df8d509ffa4546a1664ec657031c8f5f685c4e9f14d36fa37c88e"
         },
         {
           "source_id": "FISRC-e94365d0212a78f3",
@@ -392,14 +415,6 @@
           "source_content_hash": "bc6dd70ea1b6ac85",
           "quote": "Guillermo Rauch, founder and CEO of Vercel",
           "quote_hash": "6b965a8613678fcfe409fce17923820138ced0bd91dcf84eb0de87c55a4df31c"
-        },
-        {
-          "source_id": "FISRC-23493910baa1c861",
-          "source_url": "https://paper.design/blog/series-a",
-          "source_title": "Paper raises $34M to build the next great design platform",
-          "source_content_hash": "6bc97de07bc79d43",
-          "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch",
-          "quote_hash": "1baed8cd191b5a894d6d20133e4b48def378dd66b46ca8e4318e83e5d532187e"
         }
       ],
       "last_verified_at": "2026-09-25",

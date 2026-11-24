@@ -52,7 +52,7 @@
       "quote_hash": "8dc900ac378b63778ee4b3d345ec5e4c96abe5617f5c207b37864d3c00cc942f",
       "reason": "主原文及标题为is raising/to raise、董事会拟发行股份；二次来源却称closed，且标题115Cr与主原文110Cr不一致。完成状态及金额口径均待原始披露确认，不据二次复述批准已完成融资。",
       "reviewed_by": "Codex responsible original-source reviewer",
-      "reviewed_at": "2026-11-24T03:30:51.369Z",
+      "reviewed_at": "2026-11-24T04:06:01.958Z",
       "next_action": "responsible_review_of_round_completion_or_issuer_proceeds_before_release",
       "conflicting_source_id": "FISRC-f8b7812aa865a57d",
       "supporting_source_urls": [
@@ -91,7 +91,7 @@
       "announced_at": "2026-11-23",
       "amount": "$20 million",
       "round": "种子轮",
-      "reviewed_at": "2026-11-24T03:30:51.369Z",
+      "reviewed_at": "2026-11-24T04:06:01.958Z",
       "reviewed_by": "Codex responsible original-source reviewer",
       "reason": "同一原文明确公司主营AI产品、本轮融资金额、轮次和披露日期，旧轮次与估值不混入本轮；仍须最终正式原文审核。",
       "evidence_refs": [
@@ -105,15 +105,7 @@
         },
         {
           "source_id": "FISRC-eea6d4f773cb5b5a",
-          "quote_hash": "e410a5448ddec49cf716fa05951ba4b7d4d5f2c5c10f027ab195f9a11aed9887"
-        },
-        {
-          "source_id": "FISRC-eea6d4f773cb5b5a",
           "quote_hash": "f7dc49003b2156235fb2174ac7df6c60de6ae88b851bb854495f73b19ca8a4bd"
-        },
-        {
-          "source_id": "FISRC-eea6d4f773cb5b5a",
-          "quote_hash": "6f11566f3783d9a8d1cecc86fbfaad2302ad16d7d76312ab1a980d1c22f8a025"
         }
       ]
     },
@@ -125,7 +117,7 @@
       "announced_at": "2026-11-23",
       "amount": "$277M",
       "round": "种子轮",
-      "reviewed_at": "2026-11-24T03:30:51.369Z",
+      "reviewed_at": "2026-11-24T04:06:01.958Z",
       "reviewed_by": "Codex responsible original-source reviewer",
       "reason": "投资方原文明确本次披露277M seed round及Accel领投，按披露种子轮整体金额记一笔；较早初期出资已包含，不另计、不声称全为当次新增现金，亦不批准实体合并。",
       "evidence_refs": [
@@ -151,7 +143,7 @@
       "announced_at": "2026-11-23",
       "amount": "$1.75 billion",
       "round": "F轮",
-      "reviewed_at": "2026-11-24T03:30:51.369Z",
+      "reviewed_at": "2026-11-24T04:06:01.958Z",
       "reviewed_by": "Codex responsible original-source reviewer",
       "reason": "同一原文明确公司主营AI产品、本轮融资金额、轮次和披露日期，旧轮次与估值不混入本轮；仍须最终正式原文审核。",
       "evidence_refs": [
@@ -173,7 +165,7 @@
       "announced_at": "2026-11-17",
       "amount": "数千万元",
       "round": "Pre-A轮",
-      "reviewed_at": "2026-11-24T03:30:51.369Z",
+      "reviewed_at": "2026-11-24T04:06:01.958Z",
       "reviewed_by": "Codex responsible original-source reviewer",
       "reason": "同一原文明确公司主营AI产品、本轮融资金额、轮次和披露日期，旧轮次与估值不混入本轮；仍须最终正式原文审核。",
       "evidence_refs": [
@@ -200,5 +192,30 @@
     "closed": 2,
     "unproved_closures_restored": 0
   },
-  "formal_final_review_required": true
+  "formal_final_review_required": true,
+  "supertake_research_repair": {
+    "event_id": "EV-72f7f97d9e977246",
+    "reviewed_at": "2026-11-24T04:06:00.916Z",
+    "reviewed_by": "Codex responsible original-source reviewer",
+    "company_name_before": "Now",
+    "company_name_after": "Supertake",
+    "company_entity_id": "EN-d0c8b2d87ecbfd3f",
+    "removed_unrelated_source": {
+      "source_id": "FISRC-6e0af675cf49493f",
+      "url": "https://alleywatch.com/2026/06/us-startup-funding-top-largest-may-2026-vc/",
+      "body_sha256": "75a0fc262488e264edcf28ae9bcaf7a6fae8fe718dba30d21074f99919a5f6bf",
+      "reason": "融资盘点中的其他交易投资方名单；原研究以话语词Now为企业检索，不能用于Supertake本轮融资或凑足来源。原缓存和完整回执保留。"
+    },
+    "replacement": {
+      "source_id": "FISRC-48ebed4834f851ba",
+      "url": "https://supertake.com/vision",
+      "body_sha256": "df8fba4b84b085be01eb735aecd2fa0483d369a4071f62fa1307ff1507efee88",
+      "supports": "company_product_and_seed_amount_and_investors; dated event remains bound to canonical TechCrunch original"
+    },
+    "previous_result_ref": "financing-monitor-state/research-history/2026-11-24/496b9c52f2d5ae15fa3bca59471535d3dd89fcafa986162babb6c0beea23dc5c.json",
+    "previous_result_sha256": "496b9c52f2d5ae15fa3bca59471535d3dd89fcafa986162babb6c0beea23dc5c",
+    "prior_hold_retained": true,
+    "no_attempt_ledger_reset": true,
+    "no_entity_merge_approval": true
+  }
 }

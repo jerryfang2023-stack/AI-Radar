@@ -61,22 +61,23 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-18",
-    "latest_disclosed_at": "2026-11-05",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
-      "participant": 7
+      "participant": 8
     },
     "round_codes": [
       "multi_round",
       "pre_seed",
+      "seed",
       "series_a",
       "series_b",
       "series_d",
@@ -109,12 +110,57 @@
         "name": "Suno"
       },
       {
+        "entity_id": "EN-d0c8b2d87ecbfd3f",
+        "canonical_entity_id": "",
+        "name": "Supertake"
+      },
+      {
         "entity_id": "EN-35f90e87170a43fa",
         "canonical_entity_id": "",
         "name": "Tolan"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-0f79fcd1c01fa73d",
+        "funding_insight_id": "FI-2bb6fbca7ddb4ea3",
+        "event_ids": [
+          "EV-72f7f97d9e977246"
+        ],
+        "company_entity_id": "EN-d0c8b2d87ecbfd3f",
+        "company_canonical_entity_id": "",
+        "company_name": "Supertake",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$20 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-eea6d4f773cb5b5a",
+            "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+            "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+            "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+            "quote": "The round was led by venture firm Adjacent (Nico Wittenborn), with participation from Coinbase Ventures and Union Square Ventures (USV).",
+            "quote_hash": "f7f2909700f613119cf63790bbb61adb99b2f317cd5529e20fdd179517839df8"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d4a6b70d564901d3",
         "funding_insight_id": "FI-ff15cd4645eee4a5",
@@ -399,6 +445,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-eea6d4f773cb5b5a",
+        "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+        "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+        "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+        "quote": "The round was led by venture firm Adjacent (Nico Wittenborn), with participation from Coinbase Ventures and Union Square Ventures (USV).",
+        "quote_hash": "f7f2909700f613119cf63790bbb61adb99b2f317cd5529e20fdd179517839df8"
+      },
+      {
         "source_id": "FISRC-98dccdb46867778c",
         "source_url": "https://news.crunchbase.com/venture/nurx-journey-clinical-founders-raise-mental-health-startup-siggy/",
         "source_title": "独家：Nurx与Journey Clinical联合创始人筹集600万美元，用于心理健康初创公司Siggy",
@@ -488,16 +542,16 @@
           "source_id": "usv_gritt"
         },
         {
+          "description": "融资来源记录：Supertake · 种子轮 · 2026-11-23 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-eea6d4f773cb5b5a"
+        },
+        {
           "description": "融资来源记录：Siggy · 预种子轮 · 2026-11-05 · 本轮参投 · $6 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-98dccdb46867778c"
         },
         {
           "description": "融资来源记录：Tolan · 轮次未披露 · 2026-10-19 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7ab42e04cf3b71a3"
-        },
-        {
-          "description": "融资来源记录：Nous Research · B轮 · 2026-10-13 · 本轮参投 · 9000万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c0e764cbefe9c1e7"
         }
       ],
       "contacts": [
@@ -547,6 +601,14 @@
           "quote_hash": "a4b9c0f51fa506e4ef9c423bda19e1291bec5effb29d1286cafcb6a4d440443a"
         },
         {
+          "source_id": "FISRC-eea6d4f773cb5b5a",
+          "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+          "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+          "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+          "quote": "The round was led by venture firm Adjacent (Nico Wittenborn), with participation from Coinbase Ventures and Union Square Ventures (USV).",
+          "quote_hash": "f7f2909700f613119cf63790bbb61adb99b2f317cd5529e20fdd179517839df8"
+        },
+        {
           "source_id": "FISRC-98dccdb46867778c",
           "source_url": "https://news.crunchbase.com/venture/nurx-journey-clinical-founders-raise-mental-health-startup-siggy/",
           "source_title": "独家：Nurx与Journey Clinical联合创始人筹集600万美元，用于心理健康初创公司Siggy",
@@ -561,14 +623,6 @@
           "source_content_hash": "42420c588d2d21785e373ae44c4331815f10a5240a04a5ed0e21bb89da8522d3",
           "quote": "The startup’s investors in the latest round include Union Square Ventures, Khosla Ventures, and Homebrew",
           "quote_hash": "a22ee115b953819aae95bd7256069f8f43d48c5729cb906fd96f23e37c07b88e"
-        },
-        {
-          "source_id": "FISRC-c0e764cbefe9c1e7",
-          "source_url": "https://www.163.com/dy/article/L95FTJ3L05118UGF.html",
-          "source_title": "Nous Research确认完成15亿估值融资，推出企业级AI智能体",
-          "source_content_hash": "5bce55f4335c9e878a7140a3eefc85fd8a46640458fce92d7fbd91811c2dedec",
-          "quote": "本轮融资由Robot Ventures领投，其他参与方包括英伟达、Union Square Ventures、Menlo Ventures、三星，以及唐纳德·特朗普之子担任合伙人的1789 Capital。",
-          "quote_hash": "cfb5cb15e98862c041ccf451333927feb71aa81f07568b16e955d0a503d1b300"
         }
       ],
       "last_verified_at": "2026-10-02"

@@ -61,21 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-13",
-    "latest_disclosed_at": "2026-11-23",
+    "latest_disclosed_at": "2026-07-13",
     "role_counts": {
-      "participant": 2
+      "participant": 1
     },
     "round_codes": [
-      "seed",
       "series_b"
     ],
     "portfolio_companies": [
@@ -83,54 +82,9 @@
         "entity_id": "EN-3eee4f30151db45a",
         "canonical_entity_id": "EN-3eee4f30151db45a",
         "name": "Nous Research"
-      },
-      {
-        "entity_id": "EN-ed5eb9a37e2d8231",
-        "canonical_entity_id": "",
-        "name": "Supertake"
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-31e26774580e203a",
-        "funding_insight_id": "FI-0cd32810bd73c1d5",
-        "event_ids": [
-          "EV-72f7f97d9e977246"
-        ],
-        "company_entity_id": "EN-ed5eb9a37e2d8231",
-        "company_canonical_entity_id": "",
-        "company_name": "Supertake",
-        "round": "种子轮",
-        "round_code": "seed",
-        "round_original": "种子轮",
-        "amount_original": "$20 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 20000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "2000 万美元"
-        },
-        "announced_at": "2026-11-23",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-eea6d4f773cb5b5a",
-            "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
-            "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
-            "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
-            "quote": "The round was led by venture firm Adjacent (Nico Wittenborn), with participation from Coinbase Ventures and Union Square Ventures (USV).",
-            "quote_hash": "f7f2909700f613119cf63790bbb61adb99b2f317cd5529e20fdd179517839df8"
-          }
-        ]
-      },
       {
         "activity_id": "IA-0e12953243220c54",
         "funding_insight_id": "FI-606789526a3f4ec7",
@@ -174,14 +128,6 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-eea6d4f773cb5b5a",
-        "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
-        "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
-        "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
-        "quote": "The round was led by venture firm Adjacent (Nico Wittenborn), with participation from Coinbase Ventures and Union Square Ventures (USV).",
-        "quote_hash": "f7f2909700f613119cf63790bbb61adb99b2f317cd5529e20fdd179517839df8"
-      },
-      {
         "source_id": "FISRC-74000160f5a289fa",
         "source_url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation",
         "source_title": "Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资",
@@ -219,10 +165,6 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Supertake · 种子轮 · 2026-11-23 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-eea6d4f773cb5b5a"
-        },
-        {
           "description": "融资来源记录：Nous Research · B轮 · 2026-07-13 · 本轮参投 · 至少 7500 万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-74000160f5a289fa"
         }
@@ -252,14 +194,6 @@
           "source_content_hash": "37aea0da19888f61100b9456c304bd02e3d165dcdb5790334bbbdeb8c8899028",
           "quote": "with significant participation from USV",
           "quote_hash": "edfa21cfb1d10cbc61dc6a166d7b5e48684fbe7bff17b85ac95ed04e272e5238"
-        },
-        {
-          "source_id": "FISRC-eea6d4f773cb5b5a",
-          "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
-          "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
-          "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
-          "quote": "The round was led by venture firm Adjacent (Nico Wittenborn), with participation from Coinbase Ventures and Union Square Ventures (USV).",
-          "quote_hash": "f7f2909700f613119cf63790bbb61adb99b2f317cd5529e20fdd179517839df8"
         },
         {
           "source_id": "FISRC-74000160f5a289fa",
