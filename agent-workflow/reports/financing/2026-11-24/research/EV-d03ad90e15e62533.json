@@ -1,0 +1,679 @@
+{
+  "event_id": "EV-d03ad90e15e62533",
+  "company_name": "Simplexity Robotics",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-81360c43e7ae2315",
+    "triggered_by_event_id": "EV-d03ad90e15e62533",
+    "as_of_date": "2026-11-24",
+    "company": {
+      "entity_id": "EN-8729c58fc661e5db",
+      "name": "Simplexity Robotics",
+      "full_name": "Simplexity Robotics",
+      "website": "",
+      "summary": "中国人形机器人初创公司，采用全栈自研路线，提出“模型定义本体、软件定义硬件”的技术理念，已发布LaST₀基础模型、ManualVLA长程任务模型和TwinRL强化学习框架，并完成两代机器人硬件的小批量生产与概念验证。",
+      "headquarters": "苏州",
+      "founders": [
+        {
+          "name": "Wang Kai",
+          "role": "董事长兼联合创始人",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f45ec8210280caf8",
+              "quote": "chairman and co-founder Wang Kai told Bloomberg News",
+              "source_content_hash": "20e5dbfbe15679edcc39a5186dc9a8ee9590fac8aa0988098b5924324c9a5e13",
+              "quote_hash": "0eef28974b58fc55fa7dd7939a43105c06765a5f7c1170f6c6ac026c8d331796"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Jia Peng",
+          "role": "法定代表人兼CEO",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4a56ea2dc80f578f",
+              "quote": "Jia Peng is the legal representative and CEO",
+              "source_content_hash": "b1f8053545d1489b",
+              "quote_hash": "f9eda7582591193f2fdbddc2d4ba4cd5acd8c9a0b266e2e0c4e700e7d4ca78b2"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Wang Jiajia",
+          "role": "COO",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4a56ea2dc80f578f",
+              "quote": "Wang Jiajia is COO",
+              "source_content_hash": "b1f8053545d1489b",
+              "quote_hash": "e4094d4c4bd137b1c73aface23ebe2151b1c77a7fcf71838d3d238e0f3c1e369"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "team_size": {
+        "value": "",
+        "observed_at": "",
+        "evidence_refs": []
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f45ec8210280caf8",
+          "quote": "Chinese physical AI startup Simplexity Robotics received $100 million in a funding round led by Jack Ma-backed Ant Group Co.",
+          "source_content_hash": "20e5dbfbe15679edcc39a5186dc9a8ee9590fac8aa0988098b5924324c9a5e13",
+          "quote_hash": "9e1458af5dc87da58d4175de34af1053b9defd0e8c32ca3c2a67a723c52d336e"
+        },
+        {
+          "source_id": "FISRC-4a56ea2dc80f578f",
+          "quote": "Simplexity aims to build embodied intelligence products using a unified model, efficient data loop, and reliable hardware.",
+          "source_content_hash": "b1f8053545d1489b",
+          "quote_hash": "940ff020908ec3a450906d57f179de2f959c791630ee321f451f9b1932562215"
+        }
+      ],
+      "application_entity_id": "EN-8729c58fc661e5db",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "Pre-A轮",
+      "amount": "$100 million",
+      "total_raised": "",
+      "announced_at": "2026-11-22",
+      "investor_disclosure_status": "disclosed",
+      "investors": [
+        {
+          "name": "Ant Group Co.",
+          "role": "本轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f45ec8210280caf8",
+              "quote": "received $100 million in a funding round led by Jack Ma-backed Ant Group Co.",
+              "source_content_hash": "20e5dbfbe15679edcc39a5186dc9a8ee9590fac8aa0988098b5924324c9a5e13",
+              "quote_hash": "46cc5b95a8c40fd175831f02aa93a260193510a494d578dee703db12558decd1"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Tencent Holdings Ltd.",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f45ec8210280caf8",
+              "quote": "was joined by existing investors including Tencent Holdings Ltd., HSG and Lanchi Ventures",
+              "source_content_hash": "20e5dbfbe15679edcc39a5186dc9a8ee9590fac8aa0988098b5924324c9a5e13",
+              "quote_hash": "808711bd677d66fc9cbbc26f8118674cb081f1d50e46f437a883847b3c100827"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "HSG",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f45ec8210280caf8",
+              "quote": "was joined by existing investors including Tencent Holdings Ltd., HSG and Lanchi Ventures",
+              "source_content_hash": "20e5dbfbe15679edcc39a5186dc9a8ee9590fac8aa0988098b5924324c9a5e13",
+              "quote_hash": "808711bd677d66fc9cbbc26f8118674cb081f1d50e46f437a883847b3c100827"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Lanchi Ventures",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f45ec8210280caf8",
+              "quote": "was joined by existing investors including Tencent Holdings Ltd., HSG and Lanchi Ventures",
+              "source_content_hash": "20e5dbfbe15679edcc39a5186dc9a8ee9590fac8aa0988098b5924324c9a5e13",
+              "quote_hash": "808711bd677d66fc9cbbc26f8118674cb081f1d50e46f437a883847b3c100827"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "other_round_investors": [
+        {
+          "name": "Sequoia China",
+          "role": "历史轮次投资方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4a56ea2dc80f578f",
+              "quote": "Participation by firms like Sequoia China and Legend Capital suggests the team passed due diligence.",
+              "source_content_hash": "b1f8053545d1489b",
+              "quote_hash": "b1e3cced8528f4c775a02353c540ba74fae9c69c7dd679f4602d4fb6eb8905cd"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Legend Capital",
+          "role": "历史轮次投资方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4a56ea2dc80f578f",
+              "quote": "Participation by firms like Sequoia China and Legend Capital suggests the team passed due diligence.",
+              "source_content_hash": "b1f8053545d1489b",
+              "quote_hash": "b1e3cced8528f4c775a02353c540ba74fae9c69c7dd679f4602d4fb6eb8905cd"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Alibaba",
+          "role": "历史轮次投资方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4a56ea2dc80f578f",
+              "quote": "Backers also include a leading internet giant and Alibaba.",
+              "source_content_hash": "b1f8053545d1489b",
+              "quote_hash": "8dcedf986e52bd8f885c9b3b160d79d7e8c0d954dcf23263e5d73475bca745a5"
+            }
+          ],
+          "entity_id": "EN-047364b9be67f665"
+        }
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f45ec8210280caf8",
+          "quote": "Chinese physical AI startup Simplexity Robotics received $100 million in a funding round led by Jack Ma-backed Ant Group Co.",
+          "source_content_hash": "20e5dbfbe15679edcc39a5186dc9a8ee9590fac8aa0988098b5924324c9a5e13",
+          "quote_hash": "9e1458af5dc87da58d4175de34af1053b9defd0e8c32ca3c2a67a723c52d336e"
+        },
+        {
+          "source_id": "FISRC-f45ec8210280caf8",
+          "quote": "Simplexity’s pre-Series A funding round valued the company at $1.6 billion and was joined by existing investors including Tencent Holdings Ltd., HSG and Lanchi Ventures",
+          "source_content_hash": "20e5dbfbe15679edcc39a5186dc9a8ee9590fac8aa0988098b5924324c9a5e13",
+          "quote_hash": "233d1e45ba1eb61e288ad8c502d14ce33973084459b4c6f0d2f4edfbeeb8443a"
+        },
+        {
+          "source_id": "FISRC-90d574c0adba3a9a",
+          "quote": "Chinese physical AI startup Simplexity Robotics has raised $100 million in an early-stage, pre-Series A round led by Jack Ma-backed Ant Group.",
+          "source_content_hash": "4aae3dbb52c2f2ac",
+          "quote_hash": "34a786a8254b7bdbd6e0b6522e61688c044d374c54bec62ca6d35ca22c5e60e8"
+        }
+      ],
+      "round_code": "pre_series_a",
+      "round_original": "Pre-A轮",
+      "amount_original": "$100 million",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 100000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "1 亿美元"
+      },
+      "total_raised_original": "",
+      "total_raised_normalized": {
+        "currency": "",
+        "value": null,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "undisclosed",
+        "display_zh": ""
+      },
+      "risk_markers": [],
+      "disclosures": [
+        {
+          "event_id": "EV-d03ad90e15e62533",
+          "round_original": "Pre-A轮",
+          "amount": "$100 million",
+          "announced_at": "2026-11-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f45ec8210280caf8",
+              "quote": "Chinese physical AI startup Simplexity Robotics received $100 million in a funding round led by Jack Ma-backed Ant Group Co.",
+              "source_content_hash": "20e5dbfbe15679edcc39a5186dc9a8ee9590fac8aa0988098b5924324c9a5e13",
+              "quote_hash": "9e1458af5dc87da58d4175de34af1053b9defd0e8c32ca3c2a67a723c52d336e"
+            },
+            {
+              "source_id": "FISRC-f45ec8210280caf8",
+              "quote": "Simplexity’s pre-Series A funding round valued the company at $1.6 billion and was joined by existing investors including Tencent Holdings Ltd., HSG and Lanchi Ventures",
+              "source_content_hash": "20e5dbfbe15679edcc39a5186dc9a8ee9590fac8aa0988098b5924324c9a5e13",
+              "quote_hash": "233d1e45ba1eb61e288ad8c502d14ce33973084459b4c6f0d2f4edfbeeb8443a"
+            },
+            {
+              "source_id": "FISRC-90d574c0adba3a9a",
+              "quote": "Chinese physical AI startup Simplexity Robotics has raised $100 million in an early-stage, pre-Series A round led by Jack Ma-backed Ant Group.",
+              "source_content_hash": "4aae3dbb52c2f2ac",
+              "quote_hash": "34a786a8254b7bdbd6e0b6522e61688c044d374c54bec62ca6d35ca22c5e60e8"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "disclosed"
+    },
+    "products": [
+      {
+        "name": "I-Series人形机器人",
+        "description": "Simplexity Robotics的人形机器人平台，旨在将感知、推理和物理交互结合于真实环境，定位为通用型机器人而非单一任务专用机器。",
+        "target_customers": "AI研究、工业自动化、物流、零售",
+        "features": [
+          "20个整体自由度，手部10个自由度",
+          "身高175厘米，最大速度3公里/小时，负载5公斤，整机60公斤",
+          "单次充电续航2小时",
+          "支持LLM集成",
+          "采用带力矩控制的电驱动执行器和谐波/减速齿轮",
+          "可处理视觉、空间和上下文信号以导航复杂空间"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6cde3423b4ef9764",
+            "quote": "The I-Series by Simplexity Robotics is a humanoid robot platform designed to combine perception, reasoning, and physical interaction in real-world environments.",
+            "source_content_hash": "aa9bba4583c216df",
+            "quote_hash": "dd3208a657942e6c3f7c86a95756d9a13a433e1221fad559f00fe91c93c31e4d"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "LaST₀基础模型",
+        "description": "将物理理解与VLA处理相结合的基础模型，使机器人能够同时思考和移动。",
+        "target_customers": "",
+        "features": [
+          "融合物理理解与VLA处理",
+          "支持边思考边运动"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-4a56ea2dc80f578f",
+            "quote": "LaST₀ integrates physics understanding with VLA processing to enable simultaneous thinking and movement.",
+            "source_content_hash": "b1f8053545d1489b",
+            "quote_hash": "d079226cd25fe932a7a41278b3d6f252cfedf0813fc7f3be7ebbffff36f3bfb8"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "ManualVLA长程任务模型",
+        "description": "面向长程任务的VLA模型，用于处理需要多步骤规划与执行的复杂操作。",
+        "target_customers": "",
+        "features": [
+          "处理长程任务"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-4a56ea2dc80f578f",
+            "quote": "ManualVLA handles long-horizon tasks.",
+            "source_content_hash": "b1f8053545d1489b",
+            "quote_hash": "390b115bbcdbaba95a753479edbc007e755dc915d190633b8c4299e2de33fc86"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [],
+    "comparisons": [],
+    "metrics": [
+      {
+        "label": "本轮融资金额",
+        "value": "$100 million",
+        "observed_at": "2026-11-22",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f45ec8210280caf8",
+            "quote": "received $100 million in a funding round",
+            "source_content_hash": "20e5dbfbe15679edcc39a5186dc9a8ee9590fac8aa0988098b5924324c9a5e13",
+            "quote_hash": "24dab507eba9fcb6accac302556780b4a337f0f3683f5c4853fd24ac26859c12"
+          }
+        ]
+      },
+      {
+        "label": "本轮投后估值",
+        "value": "$1.6 billion",
+        "observed_at": "2026-11-22",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f45ec8210280caf8",
+            "quote": "pre-Series A funding round valued the company at $1.6 billion",
+            "source_content_hash": "20e5dbfbe15679edcc39a5186dc9a8ee9590fac8aa0988098b5924324c9a5e13",
+            "quote_hash": "034cd4a3a754653185fe9d3c03813a3e827a8ba58a2d16b5804b71c9ec50c79f"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Wang Kai",
+        "quote": "Simplexity’s pre-Series A funding round valued the company at $1.6 billion and was joined by existing investors including Tencent Holdings Ltd., HSG and Lanchi Ventures",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f45ec8210280caf8",
+            "quote": "Simplexity’s pre-Series A funding round valued the company at $1.6 billion and was joined by existing investors including Tencent Holdings Ltd., HSG and Lanchi Ventures",
+            "source_content_hash": "20e5dbfbe15679edcc39a5186dc9a8ee9590fac8aa0988098b5924324c9a5e13",
+            "quote_hash": "233d1e45ba1eb61e288ad8c502d14ce33973084459b4c6f0d2f4edfbeeb8443a"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "资本押注的核心变量是Simplexity能否以全栈自研的模型与硬件体系，在工厂、零售等封闭场景中跑通从数据采集、模型训练到部署验证的闭环。当前$1.6 billion估值所依赖的已验证信号包括：公司已完成两代机器人硬件的小批量生产与概念验证，并发布了LaST₀、ManualVLA和TwinRL三项核心技术。但证据边界同样明确：来源未披露任何收入、订单或客户合同，本轮资金用途亦未详细说明，估值更多反映团队背景与技术叙事，而非商业化实绩。",
+      "validated_signals": [
+        "已完成两代机器人硬件的小批量生产与概念验证",
+        "已发布LaST₀基础模型、ManualVLA长程任务模型和TwinRL强化学习框架",
+        "首个原型在首位员工入职后45天内亮相",
+        "已在北京、上海、苏州建立业务存在，全球创新中心位于苏州"
+      ],
+      "risks": [
+        "来源未披露任何收入、订单或客户合同，商业化验证仍处早期",
+        "本轮资金具体用途未详细说明，模型训练与硬件研发的投入产出节奏不明",
+        "中国人形机器人赛道资本集中度上升，来源提及过去一年有超过20家机器人公司破产或裁员，竞争与淘汰压力显著",
+        "I-Series仍标注为原型阶段，量产一致性与场景可靠性有待验证"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "robotic_system",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "retail_ecommerce",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "researcher",
+        "business_user"
+      ],
+      "sector": "人形机器人整机与具身智能模型",
+      "investment_thesis": {
+        "statement": "资本押注的核心变量是Simplexity能否以全栈自研的模型与硬件体系，在工厂、零售等封闭场景中跑通从数据采集、模型训练到部署验证的闭环。当前$1.6 billion估值所依赖的已验证信号包括：公司已完成两代机器人硬件的小批量生产与概念验证，并发布了LaST₀、ManualVLA和TwinRL三项核心技术。但证据边界同样明确：来源未披露任何收入、订单或客户合同，本轮资金用途亦未详细说明，估值更多反映团队背景与技术叙事，而非商业化实绩。",
+        "evidence_signals": [
+          "已完成两代机器人硬件的小批量生产与概念验证",
+          "已发布LaST₀基础模型、ManualVLA长程任务模型和TwinRL强化学习框架",
+          "首个原型在首位员工入职后45天内亮相",
+          "已在北京、上海、苏州建立业务存在，全球创新中心位于苏州"
+        ],
+        "risks": [
+          "来源未披露任何收入、订单或客户合同，商业化验证仍处早期",
+          "本轮资金具体用途未详细说明，模型训练与硬件研发的投入产出节奏不明",
+          "中国人形机器人赛道资本集中度上升，来源提及过去一年有超过20家机器人公司破产或裁员，竞争与淘汰压力显著",
+          "I-Series仍标注为原型阶段，量产一致性与场景可靠性有待验证"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "I-Series人形机器人",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "LaST₀基础模型",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "ManualVLA长程任务模型",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Wang Kai",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Jia Peng",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Wang Jiajia",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Ant Group Co.",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Tencent Holdings Ltd.",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "HSG",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Lanchi Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Sequoia China",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Legend Capital",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Alibaba",
+        "canonical_entity_id": "EN-047364b9be67f665",
+        "canonical_name": "阿里巴巴"
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-d03ad90e15e62533",
+        "date": "2026-11-22",
+        "title": "蚂蚁集团押注Simplexity，布局中国人形机器人竞赛",
+        "amount": "$100 million",
+        "source_refs": [
+          "SA-9ca9b69b6ef7f315"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-f45ec8210280caf8",
+        "source_url": "https://www.bloomberg.com/news/articles/2026-11-22/ant-group-bets-on-simplexity-to-thrive-in-china-s-humanoid-race",
+        "title": "蚂蚁集团押注Simplexity，布局中国人形机器人竞赛",
+        "publisher": "www.bloomberg.com",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-11-24T00:32:53.866Z",
+        "content_hash": "20e5dbfbe15679edcc39a5186dc9a8ee9590fac8aa0988098b5924324c9a5e13",
+        "source_artifact_id": "SA-9ca9b69b6ef7f315",
+        "raw_id": "RAW-9b62c4b4e2105f63"
+      },
+      {
+        "source_id": "FISRC-6cde3423b4ef9764",
+        "source_url": "https://humanoid.guide/product/simplexity-robotics-i-series/",
+        "title": "Simplexity Robotics I-Series Specs & Price | Humanoid.guide",
+        "publisher": "humanoid.guide",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-11-24T00:36:40.878Z",
+        "content_hash": "aa9bba4583c216df",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-4a56ea2dc80f578f",
+        "source_url": "https://autonews.gasgoo.com/articles/icv/simplexity-robotics-secures-rmb-2-billion-in-cumulative-funding-2031658037364764673",
+        "title": "Simplexity Robotics Secures RMB 2 Billion in Cumulative Funding",
+        "publisher": "autonews.gasgoo.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-11-24T00:36:46.145Z",
+        "content_hash": "b1f8053545d1489b",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-90d574c0adba3a9a",
+        "source_url": "https://dealroom.co/news/174841-ant-group-leads-100m-round-in-china-s-simplexity-robotics/",
+        "title": "Ant Group leads $100M round in China's Simplexity Robotics",
+        "publisher": "dealroom.co",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-11-24T00:37:06.063Z",
+        "content_hash": "4aae3dbb52c2f2ac",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-11-24T00:37:20.453Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-11-24T00:37:20.453Z",
+    "customer_research": {
+      "status": "no_verified_customer_found",
+      "verified_customer_count": 0,
+      "searched_source_count": 4
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 3,
+        "unresolved_names": [
+          "I-Series人形机器人",
+          "LaST₀基础模型",
+          "ManualVLA长程任务模型"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 3,
+        "unresolved_names": [
+          "Jia Peng",
+          "Wang Jiajia",
+          "Wang Kai"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-d03ad90e15e62533"
+    ],
+    "aggregation": {
+      "key": "EN-8729c58fc661e5db|pre_series_a",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"Simplexity Robotics\" 2026 funding round investors",
+    "\"Simplexity Robotics\" $100 million funding announcement",
+    "\"Simplexity Robotics\" official product customers",
+    "\"Simplexity Robotics\" \"why we invested\"",
+    "\"Simplexity Robotics\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Simplexity Robotics\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Simplexity Robotics\" $100 million funding announcement",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Simplexity Robotics\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.simplexityrobotics.com/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.robothub.app/en/companies/simplexity-robotics",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://emergent.sh/news/simplexity-robotics-hits-1-6b-valuation-pre",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Simplexity Robotics\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "planner",
+      "query": "\"Simplexity Robotics\" 2026 raises led by",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Simplexity Robotics\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.facebook.com/89lab/videos/simplexity-robotics-raises-100-million/1658113019051153/?locale=nn_NO",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    }
+  ]
+}

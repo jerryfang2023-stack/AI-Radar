@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,24 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-25",
-    "latest_disclosed_at": "2026-07-01",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 2,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "multi_round",
+      "seed",
       "series_c"
     ],
     "portfolio_companies": [
@@ -92,12 +93,57 @@
         "name": "Harper"
       },
       {
+        "entity_id": "EN-475f9fd3d326cd09",
+        "canonical_entity_id": "",
+        "name": "Marlowe"
+      },
+      {
         "entity_id": "EN-29a3723ce5ee3350",
         "canonical_entity_id": "",
         "name": "Together AI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-93065c12d03b8f20",
+        "funding_insight_id": "FI-998965868b46a9e3",
+        "event_ids": [
+          "EV-c0096e363d19588f"
+        ],
+        "company_entity_id": "EN-475f9fd3d326cd09",
+        "company_canonical_entity_id": "",
+        "company_name": "Marlowe",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$277M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 277000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.77 亿美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2ce9b79cd8fc09bc",
+            "source_url": "https://marlowe.ai/introducing-marlowe.html",
+            "source_title": "Introducing Marlowe: The Multi-Silicon AI Factory",
+            "source_content_hash": "0a981df1567b23e4",
+            "quote": "This year we raised $277M in seed funding from major investors Accel, Bessemer, Altimeter, Atreides, Eclipse, Journey, Valor, Scribble, Emergence Capital, Ritual, Pitango, Neo, Village Global, Banter, and many incredible angel investors",
+            "quote_hash": "7d6cee389d8cd6d80b940e3e3d9bc8d9af4a870709acd536533c47c9c45dd64a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9e1468d2a8c79023",
         "funding_insight_id": "FI-b1c547937abcaf77",
@@ -254,6 +300,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-2ce9b79cd8fc09bc",
+        "source_url": "https://marlowe.ai/introducing-marlowe.html",
+        "source_title": "Introducing Marlowe: The Multi-Silicon AI Factory",
+        "source_content_hash": "0a981df1567b23e4",
+        "quote": "This year we raised $277M in seed funding from major investors Accel, Bessemer, Altimeter, Atreides, Eclipse, Journey, Valor, Scribble, Emergence Capital, Ritual, Pitango, Neo, Village Global, Banter, and many incredible angel investors",
+        "quote_hash": "7d6cee389d8cd6d80b940e3e3d9bc8d9af4a870709acd536533c47c9c45dd64a"
+      },
+      {
         "source_id": "FISRC-b7537d2258bce6eb",
         "source_url": "https://stackmaven.io/news/together-ai-800m-series-c/",
         "source_title": "Together AI raises $800M at a reported $8.3B valuation as open-model inference demand compounds",
@@ -322,16 +376,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Marlowe · 种子轮 · 2026-11-23 · 本轮参投 · $277M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2ce9b79cd8fc09bc"
+        },
+        {
           "description": "融资来源记录：Together AI · C轮 · 2026-07-01 · 本轮领投 · $800M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b7537d2258bce6eb"
         },
         {
           "description": "融资来源记录：Bland · C轮 · 2026-06-16 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a6233a9ab76850de"
-        },
-        {
-          "description": "融资来源记录：Harper · 多轮融资 · 2026-02-25 · A轮领投 · $46.8 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7f1c22fc0cc9f63f"
         }
       ],
       "contacts": [
@@ -379,6 +433,14 @@
           "quote_hash": "ff38a0733b8a4a824b0bb246dd0f8e8855bdf1444f593140261744552f2e537d"
         },
         {
+          "source_id": "FISRC-2ce9b79cd8fc09bc",
+          "source_url": "https://marlowe.ai/introducing-marlowe.html",
+          "source_title": "Introducing Marlowe: The Multi-Silicon AI Factory",
+          "source_content_hash": "0a981df1567b23e4",
+          "quote": "This year we raised $277M in seed funding from major investors Accel, Bessemer, Altimeter, Atreides, Eclipse, Journey, Valor, Scribble, Emergence Capital, Ritual, Pitango, Neo, Village Global, Banter, and many incredible angel investors",
+          "quote_hash": "7d6cee389d8cd6d80b940e3e3d9bc8d9af4a870709acd536533c47c9c45dd64a"
+        },
+        {
           "source_id": "FISRC-b7537d2258bce6eb",
           "source_url": "https://stackmaven.io/news/together-ai-800m-series-c/",
           "source_title": "Together AI raises $800M at a reported $8.3B valuation as open-model inference demand compounds",
@@ -393,14 +455,6 @@
           "source_content_hash": "61e54f8481bb7570",
           "quote": "All existing investors, including Emergence Capital, Upfront Ventures, Scale Venture Partners, Y Combinator, Max Levchin, Piotr Dąbkowski, and Jeff Lawson, also participated.",
           "quote_hash": "f95896f249945e60f276144d3c7e8fd95ced5417c65e48f78848e9689de9e4d9"
-        },
-        {
-          "source_id": "FISRC-7f1c22fc0cc9f63f",
-          "source_url": "https://techcrunch.com/2026/02/25/ai-insurance-brokerage-harper-raises-45m-series-a-and-seed/",
-          "source_title": "Y Combinator毕业生、AI保险经纪公司Harper获4700万美元融资",
-          "source_content_hash": "88e3ca9ed4470da9",
-          "quote": "its Series A round was led by Emergence Capital.",
-          "quote_hash": "d3e1b77ed0fade26a6381708730595f6191b00a0f54c6425c255e8bbd6cb97ed"
         }
       ],
       "identity_status": "verified",
@@ -410,7 +464,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[3].role": {
+        "activities[4].role": {
           "text": "Series B 领投",
           "source_hash": "c0369efbbec304e2393dfa7c92af040f8e3a41190a3fb71b346dc0ff3f230193",
           "provider": "deepseek",

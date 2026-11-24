@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-08-27",
-    "latest_disclosed_at": "2026-11-05",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 3,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "pre_seed",
@@ -93,6 +93,11 @@
         "name": "Maisa AI"
       },
       {
+        "entity_id": "EN-475f9fd3d326cd09",
+        "canonical_entity_id": "",
+        "name": "Marlowe"
+      },
+      {
         "entity_id": "EN-7692c3ad3540bb80",
         "canonical_entity_id": "",
         "name": "One"
@@ -109,6 +114,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a921c757efec00e3",
+        "funding_insight_id": "FI-998965868b46a9e3",
+        "event_ids": [
+          "EV-c0096e363d19588f"
+        ],
+        "company_entity_id": "EN-475f9fd3d326cd09",
+        "company_canonical_entity_id": "",
+        "company_name": "Marlowe",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$277M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 277000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.77 亿美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2ce9b79cd8fc09bc",
+            "source_url": "https://marlowe.ai/introducing-marlowe.html",
+            "source_title": "Introducing Marlowe: The Multi-Silicon AI Factory",
+            "source_content_hash": "0a981df1567b23e4",
+            "quote": "This year we raised $277M in seed funding from major investors Accel, Bessemer, Altimeter, Atreides, Eclipse, Journey, Valor, Scribble, Emergence Capital, Ritual, Pitango, Neo, Village Global, Banter, and many incredible angel investors",
+            "quote_hash": "7d6cee389d8cd6d80b940e3e3d9bc8d9af4a870709acd536533c47c9c45dd64a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-5a673103cb75581b",
         "funding_insight_id": "FI-ff15cd4645eee4a5",
@@ -344,6 +389,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-2ce9b79cd8fc09bc",
+        "source_url": "https://marlowe.ai/introducing-marlowe.html",
+        "source_title": "Introducing Marlowe: The Multi-Silicon AI Factory",
+        "source_content_hash": "0a981df1567b23e4",
+        "quote": "This year we raised $277M in seed funding from major investors Accel, Bessemer, Altimeter, Atreides, Eclipse, Journey, Valor, Scribble, Emergence Capital, Ritual, Pitango, Neo, Village Global, Banter, and many incredible angel investors",
+        "quote_hash": "7d6cee389d8cd6d80b940e3e3d9bc8d9af4a870709acd536533c47c9c45dd64a"
+      },
+      {
         "source_id": "FISRC-98dccdb46867778c",
         "source_url": "https://news.crunchbase.com/venture/nurx-journey-clinical-founders-raise-mental-health-startup-siggy/",
         "source_title": "独家：Nurx与Journey Clinical联合创始人筹集600万美元，用于心理健康初创公司Siggy",
@@ -415,16 +468,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Marlowe · 种子轮 · 2026-11-23 · 本轮参投 · $277M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2ce9b79cd8fc09bc"
+        },
+        {
           "description": "融资来源记录：Siggy · 预种子轮 · 2026-11-05 · 本轮领投 · $6 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-98dccdb46867778c"
         },
         {
           "description": "融资来源记录：Legato · 轮次未披露 · 2026-08-26 · 本轮参投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7a7bcfb1a7209676"
-        },
-        {
-          "description": "融资来源记录：One · 种子轮 · 2026-07-06 · 本轮参投 · $4 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d74899360f0bc388"
         }
       ],
       "contacts": [],
@@ -446,6 +499,14 @@
           "quote_hash": "d85925f604bf4bd74e45cfe353dcb1252b9161d4e660e763d653c6dd212ce2af"
         },
         {
+          "source_id": "FISRC-2ce9b79cd8fc09bc",
+          "source_url": "https://marlowe.ai/introducing-marlowe.html",
+          "source_title": "Introducing Marlowe: The Multi-Silicon AI Factory",
+          "source_content_hash": "0a981df1567b23e4",
+          "quote": "This year we raised $277M in seed funding from major investors Accel, Bessemer, Altimeter, Atreides, Eclipse, Journey, Valor, Scribble, Emergence Capital, Ritual, Pitango, Neo, Village Global, Banter, and many incredible angel investors",
+          "quote_hash": "7d6cee389d8cd6d80b940e3e3d9bc8d9af4a870709acd536533c47c9c45dd64a"
+        },
+        {
           "source_id": "FISRC-98dccdb46867778c",
           "source_url": "https://news.crunchbase.com/venture/nurx-journey-clinical-founders-raise-mental-health-startup-siggy/",
           "source_title": "独家：Nurx与Journey Clinical联合创始人筹集600万美元，用于心理健康初创公司Siggy",
@@ -460,14 +521,6 @@
           "source_content_hash": "ee31f942397e1de2295d1acc38413e133d72d1ac12d4414155bb5587bfb4ad8b",
           "quote": "The company’s funding, which is from Neotribe Ventures, Listen, and Village Global, has largely gone toward product development, along with marketing efforts.",
           "quote_hash": "068e407153c0ee66fc1c27e152aa5c92b47d9f150426b70b3b9449b8699da6fa"
-        },
-        {
-          "source_id": "FISRC-d74899360f0bc388",
-          "source_url": "https://withone.ai/blog/one-raises-4m-trust-layer-ai-agents",
-          "source_title": "One 获 400 万美元融资，为 AI 智能体构建信任层",
-          "source_content_hash": "0c7fbe9f92a357573e8504c0ca2bf95f7f7148cf35e247a66a821ceb5b2e9617",
-          "quote": "Our investors, Four Rivers , Ripple Ventures , Golden Ventures , Village Global , and the Hyatt family, share a conviction that the next decade of software will be built by agents",
-          "quote_hash": "39a77db1547c5a7fe9577e66750d8ffd960f820ec8854add98ca4124ab68b3ef"
         }
       ],
       "last_verified_at": "2026-10-03",

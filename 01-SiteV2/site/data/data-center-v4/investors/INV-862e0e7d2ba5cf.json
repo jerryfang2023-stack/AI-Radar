@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -63,22 +63,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 38,
+    "current_round_count": 39,
     "historical_or_ambiguous_count": 15,
-    "portfolio_company_count": 32,
+    "portfolio_company_count": 33,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-09",
-    "latest_disclosed_at": "2026-11-17",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
       "co_lead": 5,
       "historical_or_ambiguous": 15,
       "lead": 14,
       "other_current_round": 1,
-      "participant": 18
+      "participant": 19
     },
     "round_codes": [
       "multi_round",
@@ -245,6 +245,11 @@
         "name": "Sail Research"
       },
       {
+        "entity_id": "EN-dca6ec9510fc0176",
+        "canonical_entity_id": "EN-dca6ec9510fc0176",
+        "name": "Sierra"
+      },
+      {
         "entity_id": "EN-e4540a7c8404b1be",
         "canonical_entity_id": "",
         "name": "Temporal Technologies"
@@ -256,6 +261,54 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a5c9088de33ef936",
+        "funding_insight_id": "FI-a4c54e0a0719d2bf",
+        "event_ids": [
+          "EV-394bc5ac70f3d714"
+        ],
+        "company_entity_id": "EN-dca6ec9510fc0176",
+        "company_canonical_entity_id": "EN-dca6ec9510fc0176",
+        "company_name": "Sierra",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "F轮",
+        "amount_original": "$1.75 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1750000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "17.5 亿美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-10ed8c9647ecbbfb",
+            "source_url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+            "source_title": "Sierra估值六个月内翻倍至300亿美元，CX领域AI需求激增",
+            "source_content_hash": "a9b6da66e5a7960a722fb3401c5946f7fec1a80a95a68511b0104c5dd75656b7",
+            "quote": "with participation from existing investors who have led previous rounds, including Benchmark, Sequoia, Greenoaks, GV, and Tiger Global",
+            "quote_hash": "0fbc2c10112dcac602d49cb090d7b608cc16470eeb6bd393f6eec7b76ed28f98"
+          },
+          {
+            "source_id": "FISRC-95ff370bf7bf1e30",
+            "source_url": "https://sierra.ai/blog/series-f-30b",
+            "source_title": "Building the digital front door",
+            "source_content_hash": "203b319d8f4eb3d0",
+            "quote": "all our previous lead investors — Benchmark, Sequoia, Greenoaks, GV, and Tiger Global — are doubling down on Sierra",
+            "quote_hash": "8ca5e383cb7eb85ba54eb7eb04e3ea5dd99c46f9fdd7043260d8a8704b16ce32"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6bbbae8d19eda871",
         "funding_insight_id": "FI-1c7a6290f4a522a8",
@@ -2295,6 +2348,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-10ed8c9647ecbbfb",
+        "source_url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+        "source_title": "Sierra估值六个月内翻倍至300亿美元，CX领域AI需求激增",
+        "source_content_hash": "a9b6da66e5a7960a722fb3401c5946f7fec1a80a95a68511b0104c5dd75656b7",
+        "quote": "with participation from existing investors who have led previous rounds, including Benchmark, Sequoia, Greenoaks, GV, and Tiger Global",
+        "quote_hash": "0fbc2c10112dcac602d49cb090d7b608cc16470eeb6bd393f6eec7b76ed28f98"
+      },
+      {
+        "source_id": "FISRC-95ff370bf7bf1e30",
+        "source_url": "https://sierra.ai/blog/series-f-30b",
+        "source_title": "Building the digital front door",
+        "source_content_hash": "203b319d8f4eb3d0",
+        "quote": "all our previous lead investors — Benchmark, Sequoia, Greenoaks, GV, and Tiger Global — are doubling down on Sierra",
+        "quote_hash": "8ca5e383cb7eb85ba54eb7eb04e3ea5dd99c46f9fdd7043260d8a8704b16ce32"
+      },
+      {
         "source_id": "FISRC-172c6eda5dfd3979",
         "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
         "source_title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
@@ -2786,12 +2855,12 @@
           "source_id": "sequoia_history"
         },
         {
-          "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮联合领投 · €4.5 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-172c6eda5dfd3979"
+          "description": "融资来源记录：Sierra · F轮 · 2026-11-23 · 本轮参投 · $1.75 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-10ed8c9647ecbbfb"
         },
         {
-          "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮联合领投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c4b7e80cb7863d47"
+          "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮联合领投 · €4.5 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-172c6eda5dfd3979"
         }
       ],
       "contacts": [
@@ -2821,28 +2890,28 @@
           "quote_hash": "4a2f68c042b10690a950656cdd8c8d78ddbacadab8cdf2e8a4566b83347cc5ac"
         },
         {
+          "source_id": "FISRC-10ed8c9647ecbbfb",
+          "source_url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+          "source_title": "Sierra估值六个月内翻倍至300亿美元，CX领域AI需求激增",
+          "source_content_hash": "a9b6da66e5a7960a722fb3401c5946f7fec1a80a95a68511b0104c5dd75656b7",
+          "quote": "with participation from existing investors who have led previous rounds, including Benchmark, Sequoia, Greenoaks, GV, and Tiger Global",
+          "quote_hash": "0fbc2c10112dcac602d49cb090d7b608cc16470eeb6bd393f6eec7b76ed28f98"
+        },
+        {
+          "source_id": "FISRC-95ff370bf7bf1e30",
+          "source_url": "https://sierra.ai/blog/series-f-30b",
+          "source_title": "Building the digital front door",
+          "source_content_hash": "203b319d8f4eb3d0",
+          "quote": "all our previous lead investors — Benchmark, Sequoia, Greenoaks, GV, and Tiger Global — are doubling down on Sierra",
+          "quote_hash": "8ca5e383cb7eb85ba54eb7eb04e3ea5dd99c46f9fdd7043260d8a8704b16ce32"
+        },
+        {
           "source_id": "FISRC-172c6eda5dfd3979",
           "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
           "source_title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
           "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
           "quote": "The round was co-led by Greenoaks and Sequoia Capital",
           "quote_hash": "d6154167c0a299c06b42e1f595574692b8c169e0ff817e7698c090af66bbce67"
-        },
-        {
-          "source_id": "FISRC-c4b7e80cb7863d47",
-          "source_url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
-          "source_title": "Isomorphic Labs 融资 50 亿美元，拟将候选药物推进临床试验",
-          "source_content_hash": "69ca96b09e5f9b3698e78f74bf202e70c1f5d21f791557981cbae6115c03e7c9",
-          "quote": "The funding was co-led by Greenoaks and Sequoia Capital",
-          "quote_hash": "ccc48491bfcfebf53e0c6ec451e4d189736090aee8bd64375bc68449a8aaf0ee"
-        },
-        {
-          "source_id": "FISRC-e166994b43b2e418",
-          "source_url": "https://the-decoder.com/isomorphic-labs-raises-5-billion-in-its-second-mega-round-within-six-months/",
-          "source_title": "Isomorphic Labs在六个月内完成第二轮大规模融资，募资50亿美元",
-          "source_content_hash": "0d7c04571477bfba758869a7f19138576a259a59db0caef98f510505bbbec95f",
-          "quote": "Greenoaks and Sequoia Capital co-led the round",
-          "quote_hash": "6b9770447bc45ee024b9bab51854b8c3ad86c822e543e6d0f6399209af6ec80f"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2853,7 +2922,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[38].role": {
+        "activities[39].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",
@@ -2861,7 +2930,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[40].role": {
+        "activities[41].role": {
           "text": "Series D 领投",
           "source_hash": "b1ad54c261addee1c044320cc302024b488ee22b0810e11ab5f9b281dda6d2b7",
           "provider": "deepseek",
@@ -2869,7 +2938,7 @@
           "translated_at": "2026-10-03T00:37:44.351Z",
           "status": "translated"
         },
-        "activities[42].role": {
+        "activities[43].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",
@@ -2877,7 +2946,7 @@
           "translated_at": "2026-10-01T19:38:36.584Z",
           "status": "translated"
         },
-        "activities[43].role": {
+        "activities[44].role": {
           "text": "Series E 领投",
           "source_hash": "690f798efb7982fbdc4a1f48772d7084ecdb7c19aa13a5ca0c6a2b5ade634927",
           "provider": "deepseek",
@@ -2885,7 +2954,7 @@
           "translated_at": "2026-11-04T00:53:48.846Z",
           "status": "translated"
         },
-        "activities[46].role": {
+        "activities[47].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",

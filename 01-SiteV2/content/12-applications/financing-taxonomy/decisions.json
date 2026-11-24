@@ -40219,7 +40219,251 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-11-23T06:48:07.671Z"
+    },
+    "EV-d03ad90e15e62533": {
+      "id": "EV-d03ad90e15e62533",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "公司主营具身智能与人形机器人平台，属于机器人本体排除范围。",
+      "input_hash": "d9cf7e8eeacd4bb869be050caec76fed296278c87ea495da2eaeedf43748efa5",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4a56ea2dc80f578f",
+          "quote": "Simplexity aims to build embodied intelligence products using a unified model, efficient data loop, and reliable hardware."
+        },
+        {
+          "source_id": "FISRC-6cde3423b4ef9764",
+          "quote": "The I-Series by Simplexity Robotics is a humanoid robot platform designed to combine perception, reasoning, and physical interaction in real-world environments."
+        },
+        {
+          "source_id": "FISRC-4a56ea2dc80f578f",
+          "quote": "LaST₀ integrates physics understanding with VLA processing to enable simultaneous thinking and movement."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-24T02:50:15.301Z"
+    },
+    "EV-56f2faecaf36452a": {
+      "id": "EV-56f2faecaf36452a",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-security",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        3
+      ],
+      "rationale": "面向企业提供 AI 原生数据安全与治理平台，属模型与智能体安全。",
+      "input_hash": "2ed1ab2b7f6a87cc56475077668528975aafe9b69e08717233c206a96d16d526",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-81a4e6fbb984a005",
+          "quote": "Founded in 2024 by Keshava Murthy and Harsh Sahu, Matters.AI offers a data security platform that helps enterprises track, monitor and govern how their data is accessed and used."
+        },
+        {
+          "source_id": "FISRC-f8b7812aa865a57d",
+          "quote": "Bengaluru-based Matters.AI, an AI-native data security platform"
+        },
+        {
+          "source_id": "FISRC-1d1f372899870d59",
+          "quote": "Matters.AI develops an AI Security Engineer for Data, designed to help organisations discover and classify sensitive data, trace its lineage, identify insider and compliance risks, and investigate and remediate potential threats."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-24T02:50:15.301Z"
+    },
+    "EV-259448f146c975a7": {
+      "id": "EV-259448f146c975a7",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "pendants",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "以可穿戴记忆硬件 Gem 为入口交付个人 AI 助手，属消费 AI 随身终端。",
+      "input_hash": "f94dd7e58f4e1b95915c13a8a8ea5f2eb40e8c70733bb0288160d9ce55c21cfd",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-aade956aaf51c092",
+          "quote": "穗升科技成立于2025年，旗下品牌Memoket以可穿戴硬件为入口，结合自研底层长记忆引擎，提供能够理解用户前情、主动与用户交互的Personal Agent。"
+        },
+        {
+          "source_id": "FISRC-aade956aaf51c092",
+          "quote": "首款硬件Gem贴合用户现有佩戴习惯，可单独佩戴，也可以配件形式与智能手表搭配使用，无感收录现实对话，并支持在App、桌面端跨会话回溯、检索和调用信息。"
+        },
+        {
+          "source_id": "FISRC-a786dcda767e7d9a",
+          "quote": "首款硬件Gem可单独佩戴，也可作为配件与智能手表搭配。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-24T02:50:15.301Z"
+    },
+    "EV-471935cae3200f2c": {
+      "id": "EV-471935cae3200f2c",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "主营 Claude 系列通用大模型，属基础模型赛道。",
+      "input_hash": "4dfeed46cd4798fa5301e01f23915510f2613a8b36ef5a991e2d4dd671942fec",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-77691b5cb28a102f",
+          "quote": "总部位于旧金山的人工智能公司 Anthropic 因其开发的 Claude 系列大型语言模型和企业软件工具而备受关注"
+        },
+        {
+          "source_id": "FISRC-afe2508ac4caf5ee",
+          "quote": "Our most capable models for daunting technical work, setting a new bar in coding, finance, and the sciences."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-24T02:50:15.301Z"
+    },
+    "EV-72f7f97d9e977246": {
+      "id": "EV-72f7f97d9e977246",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Supertake 用前沿 AI 模型与交易智能体将用户观点转化为可跟投的投资组合，主营金融投资 AI 产品。",
+      "input_hash": "b4963ff4315b9c7d4b719679f63d01721718d2f56f1e66cedc92845cafada9c0",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-eea6d4f773cb5b5a",
+          "quote": "AI investing startup Supertake has an interesting premise: What if your “takes” on the market could make you money without you having to pick stocks yourself?"
+        },
+        {
+          "source_id": "FISRC-eea6d4f773cb5b5a",
+          "quote": "The service lets people turn their ideas into real investment portfolios, using frontier AI models and trading agents."
+        },
+        {
+          "source_id": "FISRC-48ebed4834f851ba",
+          "quote": "Tell Supertake what you believe in natural language (“Everyone will be on peptides”), and it turns it into an investment strategy – managed by frontier AI agents – that anyone in the world can follow and share."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-24T04:02:21.122Z"
+    },
+    "EV-394bc5ac70f3d714": {
+      "id": "EV-394bc5ac70f3d714",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "customer-service",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        3
+      ],
+      "rationale": "面向企业交付 AI 客服智能体平台，属客服与客户体验。",
+      "input_hash": "29319c60294cc6a52a2b13a1370f29620940fd9ba3b4a36e7b3d2d752b12fd0a",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-10ed8c9647ecbbfb",
+          "quote": "Enterprise customer experience company Sierra, co-founded by former Salesforce co-CEO Bret Taylor"
+        },
+        {
+          "source_id": "FISRC-95ff370bf7bf1e30",
+          "quote": "We founded Sierra in the belief that AI agents would become the digital front door for every company"
+        },
+        {
+          "source_id": "FISRC-95ff370bf7bf1e30",
+          "quote": "Ghostwriter (our AI to build AI) will build, test, and deploy your agents"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-24T02:50:15.301Z"
+    },
+    "EV-c0096e363d19588f": {
+      "id": "EV-c0096e363d19588f",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "compute",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Marlowe 设计、建设并运营面向推理负载的多芯片 AI 工厂与数据中心全栈算力基础设施。",
+      "input_hash": "7e29a4045c49910baced3a6e6c67614214632763e2f26f4d88d88c26e15e952e",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-82180269ecea6321",
+          "quote": "Marlowe is building the multi-silicon AI factory: compute purpose-built for critical inference workloads."
+        },
+        {
+          "source_id": "FISRC-2ce9b79cd8fc09bc",
+          "quote": "We design, build, and operate compute that is purpose-built for critical inference workloads"
+        },
+        {
+          "source_id": "FISRC-82180269ecea6321",
+          "quote": "Marlowe designs, builds, and operates that system, matching the right chips to the right workload, and engineering the hardware, software, and data center all together."
+        },
+        {
+          "source_id": "FISRC-2ce9b79cd8fc09bc",
+          "quote": "Marlowe optimizes the full stack, from the choice of chips, through data center, network and cloud infrastructure, all the way to the workload layer."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-24T03:07:27.914Z"
     }
   },
-  "generated_at": "2026-11-23T06:48:07.671Z"
+  "generated_at": "2026-11-24T04:02:21.122Z"
 }

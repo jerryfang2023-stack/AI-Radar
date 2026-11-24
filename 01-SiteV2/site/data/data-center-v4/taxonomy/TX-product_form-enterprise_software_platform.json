@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -60,7 +60,6 @@
     "valueId": "enterprise_software_platform",
     "eventIds": [
       "EV-0d4f7ad1fe080686",
-      "EV-27b9c5896b1b9c27",
       "EV-8de1001fde6993a5",
       "EV-fef4dfd8fed00cfe",
       "EV-1043d78cc040ab30",
@@ -285,7 +284,6 @@
     ],
     "entityIds": [
       "EN-5e494e695571ede1",
-      "EN-cb3a9e70e51c2f47",
       "EN-858837c33d111717",
       "EN-835429c59eea025b",
       "EN-295219ea74639f0b",
@@ -569,126 +567,6 @@
       "products": [],
       "sourceUrl": "https://tech.eu/2026/11/17/fermat-raises-8m-to-bridge-the-gap-between-fashion-designers-and-manufacturers/",
       "publisher": "tech.eu"
-    },
-    {
-      "id": "EV-27b9c5896b1b9c27",
-      "dataDate": "2026-11-23",
-      "date": "2026-11-17",
-      "updatedDate": "2026-11-17",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Model ML 融资 2.5 亿美元，用于自动化投资银行的繁琐基础工作",
-      "originalTitle": "Model ML raises $250M to automate investment banking grunt work",
-      "subject": "Model ML",
-      "action": "raises",
-      "object": "$250M to automate investment banking grunt work",
-      "metrics": [
-        "$250M",
-        "$250 million",
-        "$1.5 billion",
-        "$75 million",
-        "$250\nmillion"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "enterprise_software_platform",
-            "name": "企业软件平台",
-            "entityIds": [
-              "EN-cb3a9e70e51c2f47"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "financial_services",
-            "name": "金融服务",
-            "entityIds": [
-              "EN-cb3a9e70e51c2f47"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "financial_services",
-          "name": "金融服务",
-          "entityIds": [
-            "EN-cb3a9e70e51c2f47"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "enterprise_software_platform",
-          "name": "企业软件平台",
-          "entityIds": [
-            "EN-cb3a9e70e51c2f47"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "enterprise_software_platform",
-          "name": "企业软件平台",
-          "entityIds": [
-            "EN-cb3a9e70e51c2f47"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "financial_services",
-          "name": "金融服务",
-          "entityIds": [
-            "EN-cb3a9e70e51c2f47"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-cb3a9e70e51c2f47"
-      ],
-      "entityNames": [
-        "Model ML"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/",
-      "publisher": "techcrunch.com"
     },
     {
       "id": "EV-8de1001fde6993a5",
@@ -60676,28 +60554,6 @@
       "lastSeen": "2026-11-23"
     },
     {
-      "id": "EN-cb3a9e70e51c2f47",
-      "name": "Model ML",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-27b9c5896b1b9c27"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-product_form-enterprise_software_platform",
-        "TX-industry-financial_services"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-11-17",
-      "lastSeen": "2026-11-23"
-    },
-    {
       "id": "EN-858837c33d111717",
       "name": "Omnichat",
       "entityType": "organization_candidate",
@@ -61500,8 +61356,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
+        "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
@@ -61621,8 +61477,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
+        "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
@@ -61710,8 +61566,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
+        "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
@@ -62162,13 +62018,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
+        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-use_case-research_discovery",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
-        "TX-use_case-physical_automation",
         "TX-industry-food_hospitality",
-        "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-financial_services",
@@ -62246,7 +62102,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-23"
+      "lastSeen": "2026-11-24"
     },
     {
       "id": "EN-3b3ed571bbb19504",
@@ -62326,8 +62182,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
+        "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
@@ -64124,8 +63980,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-productivity_enterprise_workflows"
       ],
@@ -64819,8 +64675,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-physical_automation",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
@@ -65121,9 +64977,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-use_case-research_discovery",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-physical_automation",
         "TX-product_form-enterprise_software_platform",
         "TX-technology-multimodal"
       ],
@@ -66746,11 +66602,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-research_discovery",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
-        "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
         "TX-use_case-content_creation",
         "TX-product_form-enterprise_software_platform",
@@ -66806,7 +66662,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-11-23"
+      "lastSeen": "2026-11-24"
     },
     {
       "id": "EN-54a01b7dfd15ceb4",
@@ -66913,10 +66769,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
+        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-use_case-research_discovery",
-        "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-model",
@@ -66942,7 +66798,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-11-23"
+      "lastSeen": "2026-11-24"
     },
     {
       "id": "EN-96a4bc2602655473",
@@ -67020,10 +66876,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
+        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
         "TX-use_case-content_creation",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-chip_accelerator",
@@ -67232,6 +67088,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-471935cae3200f2c",
         "EV-638209012a462005",
         "EV-dc10752743c440d9",
         "EV-86f4e971f63b6cf2",
@@ -67751,10 +67608,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-research_discovery",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-embodied_ai",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-financial_services",
         "TX-technology-open_weights",
@@ -67818,7 +67675,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-11-23"
+      "lastSeen": "2026-11-24"
     },
     {
       "id": "EN-1da46c494dfdd8d3",

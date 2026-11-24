@@ -1,6 +1,6 @@
 {
   "version": "FINANCING-PUBLICATION-REVIEW-1",
-  "reviewed_at": "2026-11-23T06:41:14.287Z",
+  "reviewed_at": "2026-11-24T02:54:15.561Z",
   "market_corrections": [
     {
       "event_id": "EV-65154e5eb49c218b",
@@ -979,6 +979,39 @@
       "reviewed_at": "2026-11-23T06:41:14.287Z",
       "next_action": "reconcile_issuer_proceeds_and_same_ipo_before_release",
       "related_event_id": "EV-86f4e971f63b6cf2"
+    },
+    {
+      "event_id": "EV-56f2faecaf36452a",
+      "company_name": "Matters.AI",
+      "status": "pending",
+      "source_id": "FISRC-81a4e6fbb984a005",
+      "source_url": "https://entrackr.com/exclusive/exclusive-mattersai-to-raise-rs-110-cr-in-pre-series-a-led-by-tanglin-ventures-12833226",
+      "source_content_hash": "1225220ac7e0dc03ce54b321aca47e2f697c498ad479f8909b70c987f668feb2",
+      "quote": "urity startup Matters.AI is raising Rs 110 crore ($11.5 million) in its pre-Series A funding round led by Tanglin Vent",
+      "quote_hash": "8dc900ac378b63778ee4b3d345ec5e4c96abe5617f5c207b37864d3c00cc942f",
+      "reason": "主原文及标题为is raising/to raise、董事会拟发行股份；二次来源却称closed，且标题115Cr与主原文110Cr不一致。完成状态及金额口径均待原始披露确认，不据二次复述批准已完成融资。",
+      "reviewed_by": "Codex responsible original-source reviewer",
+      "reviewed_at": "2026-11-24T04:06:01.958Z",
+      "next_action": "responsible_review_of_round_completion_or_issuer_proceeds_before_release",
+      "conflicting_source_id": "FISRC-f8b7812aa865a57d",
+      "supporting_source_urls": [
+        "https://entrackr.com/exclusive/exclusive-mattersai-to-raise-rs-110-cr-in-pre-series-a-led-by-tanglin-ventures-12833226",
+        "https://shattered.io/matters-ai-raises-115-crore-pre-series-a-tanglin-venture-partners-data-security/"
+      ]
+    },
+    {
+      "event_id": "EV-471935cae3200f2c",
+      "company_name": "Anthropic PBC",
+      "status": "pending",
+      "source_id": "FISRC-133b1c65c2d51689",
+      "source_url": "https://www.163.com/dy/article/LC45OAAE0519QIKK.html",
+      "source_content_hash": "5f76c6a612ddc6e21fe44514d16ef463089f6839360436639393e08ed7cb2599",
+      "quote": "PO融资813亿美元，打破SpaceX创造的纪录\nAnthropic PBC及其七位联合创始人已通过最终有所扩大的IPO筹得813亿美元，成为首个利用公开市场资助思考机器开发的前沿AI实验室。Anthropic周三发布公告称，该公司出",
+      "quote_hash": "baa905b7045c03800fff72c25807b36efa7021526c94483c0fc69984dccf77f1",
+      "reason": "813亿美元明确包含公司与七位创始股东售股，且是此前两条已hold的同次IPO口径；发行人净新增资金未独立披露，不按单独公司新融资累计，保留同轮/金额构成待核验。",
+      "reviewed_by": "Codex responsible original-source reviewer",
+      "reviewed_at": "2026-11-24T02:54:15.561Z",
+      "next_action": "responsible_review_of_round_completion_or_issuer_proceeds_before_release"
     }
   ],
   "resolutions": [

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-16",
-    "latest_disclosed_at": "2026-09-14",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
       "historical_or_ambiguous": 3,
       "lead": 3,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "multi_round",
@@ -82,6 +82,7 @@
       "series_c",
       "series_d",
       "series_e",
+      "series_f",
       "series_h"
     ],
     "portfolio_companies": [
@@ -101,6 +102,11 @@
         "name": "Nothing"
       },
       {
+        "entity_id": "EN-dca6ec9510fc0176",
+        "canonical_entity_id": "EN-dca6ec9510fc0176",
+        "name": "Sierra"
+      },
+      {
         "entity_id": "EN-e4540a7c8404b1be",
         "canonical_entity_id": "",
         "name": "Temporal Technologies"
@@ -117,6 +123,54 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b70278b10d51178b",
+        "funding_insight_id": "FI-a4c54e0a0719d2bf",
+        "event_ids": [
+          "EV-394bc5ac70f3d714"
+        ],
+        "company_entity_id": "EN-dca6ec9510fc0176",
+        "company_canonical_entity_id": "EN-dca6ec9510fc0176",
+        "company_name": "Sierra",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "F轮",
+        "amount_original": "$1.75 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1750000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "17.5 亿美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-10ed8c9647ecbbfb",
+            "source_url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+            "source_title": "Sierra估值六个月内翻倍至300亿美元，CX领域AI需求激增",
+            "source_content_hash": "a9b6da66e5a7960a722fb3401c5946f7fec1a80a95a68511b0104c5dd75656b7",
+            "quote": "with participation from existing investors who have led previous rounds, including Benchmark, Sequoia, Greenoaks, GV, and Tiger Global",
+            "quote_hash": "0fbc2c10112dcac602d49cb090d7b608cc16470eeb6bd393f6eec7b76ed28f98"
+          },
+          {
+            "source_id": "FISRC-95ff370bf7bf1e30",
+            "source_url": "https://sierra.ai/blog/series-f-30b",
+            "source_title": "Building the digital front door",
+            "source_content_hash": "203b319d8f4eb3d0",
+            "quote": "all our previous lead investors — Benchmark, Sequoia, Greenoaks, GV, and Tiger Global — are doubling down on Sierra",
+            "quote_hash": "8ca5e383cb7eb85ba54eb7eb04e3ea5dd99c46f9fdd7043260d8a8704b16ce32"
+          }
+        ]
+      },
       {
         "activity_id": "IA-78761b75e3a3e379",
         "funding_insight_id": "FI-898cddb74dcff413",
@@ -498,6 +552,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-10ed8c9647ecbbfb",
+        "source_url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+        "source_title": "Sierra估值六个月内翻倍至300亿美元，CX领域AI需求激增",
+        "source_content_hash": "a9b6da66e5a7960a722fb3401c5946f7fec1a80a95a68511b0104c5dd75656b7",
+        "quote": "with participation from existing investors who have led previous rounds, including Benchmark, Sequoia, Greenoaks, GV, and Tiger Global",
+        "quote_hash": "0fbc2c10112dcac602d49cb090d7b608cc16470eeb6bd393f6eec7b76ed28f98"
+      },
+      {
+        "source_id": "FISRC-95ff370bf7bf1e30",
+        "source_url": "https://sierra.ai/blog/series-f-30b",
+        "source_title": "Building the digital front door",
+        "source_content_hash": "203b319d8f4eb3d0",
+        "quote": "all our previous lead investors — Benchmark, Sequoia, Greenoaks, GV, and Tiger Global — are doubling down on Sierra",
+        "quote_hash": "8ca5e383cb7eb85ba54eb7eb04e3ea5dd99c46f9fdd7043260d8a8704b16ce32"
+      },
+      {
         "source_id": "FISRC-cf83d78a216a5edf",
         "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
         "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
@@ -610,16 +680,12 @@
           "source_id": "tiger_edge"
         },
         {
+          "description": "融资来源记录：Sierra · F轮 · 2026-11-23 · 本轮参投 · $1.75 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-10ed8c9647ecbbfb"
+        },
+        {
           "description": "融资来源记录：Temporal · E轮 · 2026-09-14 · 本轮参投 · $550M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cf83d78a216a5edf"
-        },
-        {
-          "description": "融资来源记录：Etched · D轮 · 2026-08-19 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-134a8e8124653c90"
-        },
-        {
-          "description": "融资来源记录：Upscale AI · 多轮融资 · 2026-06-22 · 既有投资方（本轮参投） · $190 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7dcdc22c0b1702bf"
         }
       ],
       "contacts": [
@@ -663,28 +729,28 @@
           "quote_hash": "c1993b4525cabc40054293c1a5e2bb8a8067d972eff38d6341634b905fd026a5"
         },
         {
+          "source_id": "FISRC-10ed8c9647ecbbfb",
+          "source_url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+          "source_title": "Sierra估值六个月内翻倍至300亿美元，CX领域AI需求激增",
+          "source_content_hash": "a9b6da66e5a7960a722fb3401c5946f7fec1a80a95a68511b0104c5dd75656b7",
+          "quote": "with participation from existing investors who have led previous rounds, including Benchmark, Sequoia, Greenoaks, GV, and Tiger Global",
+          "quote_hash": "0fbc2c10112dcac602d49cb090d7b608cc16470eeb6bd393f6eec7b76ed28f98"
+        },
+        {
+          "source_id": "FISRC-95ff370bf7bf1e30",
+          "source_url": "https://sierra.ai/blog/series-f-30b",
+          "source_title": "Building the digital front door",
+          "source_content_hash": "203b319d8f4eb3d0",
+          "quote": "all our previous lead investors — Benchmark, Sequoia, Greenoaks, GV, and Tiger Global — are doubling down on Sierra",
+          "quote_hash": "8ca5e383cb7eb85ba54eb7eb04e3ea5dd99c46f9fdd7043260d8a8704b16ce32"
+        },
+        {
           "source_id": "FISRC-cf83d78a216a5edf",
           "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
           "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
           "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
           "quote": "co-led by Lightspeed, with Wellington Management, Growth Equity at Goldman Sachs Alternatives, and Tiger Global, with strong participation from T. Rowe Price and SV Angel",
           "quote_hash": "980328993f2a7bbb1914dc31bd9e8d1fcafa28f0cb9b2e3d257995aac7ca4c80"
-        },
-        {
-          "source_id": "FISRC-134a8e8124653c90",
-          "source_url": "https://www.verdict.co.uk/etched-bags-700m/",
-          "source_title": "Etched 以210亿美元估值融资7亿美元，向Jane Street交付首台机架",
-          "source_content_hash": "e0e9398bf1a24e32",
-          "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
-          "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
-        },
-        {
-          "source_id": "FISRC-7dcdc22c0b1702bf",
-          "source_url": "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1",
-          "source_title": "Upscale AI 完成1.9亿美元A轮扩展融资，总融资额达5亿美元",
-          "source_content_hash": "23145edb5fdd8d69",
-          "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global",
-          "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -692,7 +758,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[7].role": {
+        "activities[8].role": {
           "text": "Series G 参投",
           "source_hash": "f55d0290b338dc301d7655ccb2e65e9c4e1f2abca1b8e5e6d65f68a9664f1861",
           "provider": "deepseek",
@@ -700,7 +766,7 @@
           "translated_at": "2026-10-02T06:25:20.177Z",
           "status": "translated"
         },
-        "activities[8].role": {
+        "activities[9].role": {
           "text": "Series E 参投方",
           "source_hash": "4c5721848f6406bd6f2e84ed29d011b6af208116ac9cea44324fd35d85384690",
           "provider": "deepseek",
@@ -708,7 +774,7 @@
           "translated_at": "2026-09-18T02:49:06.821Z",
           "status": "translated"
         },
-        "activities[9].role": {
+        "activities[10].role": {
           "text": "Series B 领投",
           "source_hash": "c0369efbbec304e2393dfa7c92af040f8e3a41190a3fb71b346dc0ff3f230193",
           "provider": "deepseek",

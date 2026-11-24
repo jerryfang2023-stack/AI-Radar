@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,31 +61,78 @@
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-10-28",
-    "latest_disclosed_at": "2025-10-28",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "other_current_round": 1
+      "other_current_round": 1,
+      "participant": 1
     },
     "round_codes": [
-      "multi_round"
+      "multi_round",
+      "seed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-a9aff9e0737a5d4a",
         "canonical_entity_id": "",
         "name": "Mem0"
+      },
+      {
+        "entity_id": "EN-d0c8b2d87ecbfd3f",
+        "canonical_entity_id": "",
+        "name": "Supertake"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-56ddf4a1f2e246fc",
+        "funding_insight_id": "FI-2bb6fbca7ddb4ea3",
+        "event_ids": [
+          "EV-72f7f97d9e977246"
+        ],
+        "company_entity_id": "EN-d0c8b2d87ecbfd3f",
+        "company_canonical_entity_id": "",
+        "company_name": "Supertake",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$20 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-eea6d4f773cb5b5a",
+            "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+            "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+            "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+            "quote": "Numerous angel investors also joined, including Nat Friedman, who’s currently head of product at Meta Superintelligence Labs; Vercel CEO Guillermo Rauch; renowned product manager Nikita Bier; investor Scott Belsky; and Nemil Dalal, a former Coinbase exec who is now a visiting partner at Y Combinator.",
+            "quote_hash": "4c8589c6452df8d509ffa4546a1664ec657031c8f5f685c4e9f14d36fa37c88e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6acd774d8b63b884",
         "funding_insight_id": "FI-128eef4a492e718e",
@@ -160,6 +207,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-eea6d4f773cb5b5a",
+        "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+        "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+        "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+        "quote": "Numerous angel investors also joined, including Nat Friedman, who’s currently head of product at Meta Superintelligence Labs; Vercel CEO Guillermo Rauch; renowned product manager Nikita Bier; investor Scott Belsky; and Nemil Dalal, a former Coinbase exec who is now a visiting partner at Y Combinator.",
+        "quote_hash": "4c8589c6452df8d509ffa4546a1664ec657031c8f5f685c4e9f14d36fa37c88e"
+      },
       {
         "source_id": "FISRC-f3e9aa548f7703f9",
         "source_url": "https://www.prnewswire.com/news-releases/mem0-raises-24m-series-a-to-build-memory-layer-for-ai-agents-302597157.html",
@@ -259,6 +314,10 @@
           "source_id": "FISRC-f3e9aa548f7703f9"
         },
         {
+          "description": "融资来源记录：Supertake · 种子轮 · 2026-11-23 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-eea6d4f773cb5b5a"
+        },
+        {
           "description": "融资来源记录：Mach9 · 历史轮次未披露 · 2024 年种子轮投资方（个人）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d35ae298104a6f5f"
         }
@@ -287,6 +346,14 @@
           "source_content_hash": "052a20f5aa557858",
           "quote": "strategic investments from technology leaders Scott Belsky and Dharmesh Shah",
           "quote_hash": "31111dd27ef4102fcc66cb90aa96a08bd262c68af185af33979667bbef9f30c8"
+        },
+        {
+          "source_id": "FISRC-eea6d4f773cb5b5a",
+          "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+          "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+          "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+          "quote": "Numerous angel investors also joined, including Nat Friedman, who’s currently head of product at Meta Superintelligence Labs; Vercel CEO Guillermo Rauch; renowned product manager Nikita Bier; investor Scott Belsky; and Nemil Dalal, a former Coinbase exec who is now a visiting partner at Y Combinator.",
+          "quote_hash": "4c8589c6452df8d509ffa4546a1664ec657031c8f5f685c4e9f14d36fa37c88e"
         },
         {
           "source_id": "FISRC-d35ae298104a6f5f",

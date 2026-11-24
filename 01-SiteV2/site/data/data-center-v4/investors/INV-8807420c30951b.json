@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "CN"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "",
     "latest_disclosed_at": "",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
@@ -108,6 +108,38 @@
             "quote_hash": "c67153b487a2e277a234ccde38c7d6e2f8c54c26c076f2df3329056d74d7d1fd"
           }
         ]
+      },
+      {
+        "activity_id": "IA-6ef461267bc6bb74",
+        "funding_insight_id": "FI-c6a9e53e63cda080",
+        "event_ids": [
+          "EV-259448f146c975a7"
+        ],
+        "company_entity_id": "EN-0ab7efd54665c15e",
+        "company_canonical_entity_id": "",
+        "company_name": "穗升科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d587901ae2588b67",
+            "source_url": "https://finance.sina.com.cn/stock/hkstock/hkzmt/2025-12-04/doc-infzrrce8583261.shtml",
+            "source_title": "前安克全球CMO创办的穗升科技获数百万美元天使轮融资，聚焦AI记忆赛道",
+            "source_content_hash": "2a98e061c083f479",
+            "quote": "「穗升科技」日前完成数百万美元天使轮融资，由红杉中国种子基金领投",
+            "quote_hash": "43fe6d6ea5fa72bd8657a46f341c9106a576d8134b2c9cb364d9d58446586126"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -118,6 +150,14 @@
         "source_content_hash": "ed75aafa3d8feb1d",
         "quote": "Pre-A+轮 2022-03 未透露 源码资本 ， 红杉中国种子基金",
         "quote_hash": "c67153b487a2e277a234ccde38c7d6e2f8c54c26c076f2df3329056d74d7d1fd"
+      },
+      {
+        "source_id": "FISRC-d587901ae2588b67",
+        "source_url": "https://finance.sina.com.cn/stock/hkstock/hkzmt/2025-12-04/doc-infzrrce8583261.shtml",
+        "source_title": "前安克全球CMO创办的穗升科技获数百万美元天使轮融资，聚焦AI记忆赛道",
+        "source_content_hash": "2a98e061c083f479",
+        "quote": "「穗升科技」日前完成数百万美元天使轮融资，由红杉中国种子基金领投",
+        "quote_hash": "43fe6d6ea5fa72bd8657a46f341c9106a576d8134b2c9cb364d9d58446586126"
       }
     ],
     "public_profile": {
@@ -174,6 +214,10 @@
         {
           "description": "融资来源记录：深度智控 · 历史轮次未披露 · Pre-A+轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-67ccadc4294defd6"
+        },
+        {
+          "description": "融资来源记录：穗升科技 · 历史轮次未披露 · 天使轮领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d587901ae2588b67"
         }
       ],
       "current_roles": [
@@ -300,6 +344,14 @@
           "source_content_hash": "ed75aafa3d8feb1d",
           "quote": "Pre-A+轮 2022-03 未透露 源码资本 ， 红杉中国种子基金",
           "quote_hash": "c67153b487a2e277a234ccde38c7d6e2f8c54c26c076f2df3329056d74d7d1fd"
+        },
+        {
+          "source_id": "FISRC-d587901ae2588b67",
+          "source_url": "https://finance.sina.com.cn/stock/hkstock/hkzmt/2025-12-04/doc-infzrrce8583261.shtml",
+          "source_title": "前安克全球CMO创办的穗升科技获数百万美元天使轮融资，聚焦AI记忆赛道",
+          "source_content_hash": "2a98e061c083f479",
+          "quote": "「穗升科技」日前完成数百万美元天使轮融资，由红杉中国种子基金领投",
+          "quote_hash": "43fe6d6ea5fa72bd8657a46f341c9106a576d8134b2c9cb364d9d58446586126"
         }
       ],
       "last_verified_at": "2026-09-26"

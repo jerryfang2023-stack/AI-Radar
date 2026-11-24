@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 9,
+    "current_round_count": 10,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 9,
+    "portfolio_company_count": 10,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-28",
-    "latest_disclosed_at": "2026-11-18",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 2,
-      "lead": 3,
+      "lead": 4,
       "participant": 4
     },
     "round_codes": [
@@ -82,6 +82,7 @@
       "series_a",
       "series_c",
       "series_e",
+      "series_f",
       "series_h",
       "undisclosed"
     ],
@@ -130,9 +131,62 @@
         "entity_id": "EN-f7d9f5a90479d632",
         "canonical_entity_id": "",
         "name": "Ramp"
+      },
+      {
+        "entity_id": "EN-dca6ec9510fc0176",
+        "canonical_entity_id": "EN-dca6ec9510fc0176",
+        "name": "Sierra"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-94cb934b28a18ad0",
+        "funding_insight_id": "FI-a4c54e0a0719d2bf",
+        "event_ids": [
+          "EV-394bc5ac70f3d714"
+        ],
+        "company_entity_id": "EN-dca6ec9510fc0176",
+        "company_canonical_entity_id": "EN-dca6ec9510fc0176",
+        "company_name": "Sierra",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "F轮",
+        "amount_original": "$1.75 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1750000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "17.5 亿美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-10ed8c9647ecbbfb",
+            "source_url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+            "source_title": "Sierra估值六个月内翻倍至300亿美元，CX领域AI需求激增",
+            "source_content_hash": "a9b6da66e5a7960a722fb3401c5946f7fec1a80a95a68511b0104c5dd75656b7",
+            "quote": "The new round was led by Greenoaks and Lightspeed Venture Partners",
+            "quote_hash": "3893a4935a6efc2afce54b4314e610944807ad0877ac8080f89344c349b46c15"
+          },
+          {
+            "source_id": "FISRC-95ff370bf7bf1e30",
+            "source_url": "https://sierra.ai/blog/series-f-30b",
+            "source_title": "Building the digital front door",
+            "source_content_hash": "203b319d8f4eb3d0",
+            "quote": "led by Greenoaks and Lightspeed Venture Partners",
+            "quote_hash": "62a5a9693e10308fb23fac8baeffc38b181df54e00df80a3acd7c4ccb75df926"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9614cba1ead10e35",
         "funding_insight_id": "FI-bfa979b6f9858e60",
@@ -570,6 +624,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-10ed8c9647ecbbfb",
+        "source_url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+        "source_title": "Sierra估值六个月内翻倍至300亿美元，CX领域AI需求激增",
+        "source_content_hash": "a9b6da66e5a7960a722fb3401c5946f7fec1a80a95a68511b0104c5dd75656b7",
+        "quote": "The new round was led by Greenoaks and Lightspeed Venture Partners",
+        "quote_hash": "3893a4935a6efc2afce54b4314e610944807ad0877ac8080f89344c349b46c15"
+      },
+      {
+        "source_id": "FISRC-95ff370bf7bf1e30",
+        "source_url": "https://sierra.ai/blog/series-f-30b",
+        "source_title": "Building the digital front door",
+        "source_content_hash": "203b319d8f4eb3d0",
+        "quote": "led by Greenoaks and Lightspeed Venture Partners",
+        "quote_hash": "62a5a9693e10308fb23fac8baeffc38b181df54e00df80a3acd7c4ccb75df926"
+      },
+      {
         "source_id": "FISRC-52ddbf8367aa7b8c",
         "source_url": "https://payhawk.com/en-us/blog/payhawk-series-c-280m-funding",
         "source_title": "Payhawk raises $280M Series C at a $2B valuation | Payhawk",
@@ -689,16 +759,12 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Sierra · F轮 · 2026-11-23 · 本轮领投 · $1.75 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-10ed8c9647ecbbfb"
+        },
+        {
           "description": "融资来源记录：Payhawk · C轮 · 2026-11-18 · 本轮参投 · $280m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-52ddbf8367aa7b8c"
-        },
-        {
-          "description": "融资来源记录：Payhawk · C轮 · 2026-11-18 · 本轮参投 · €255.14 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-81d4aea873fc9f86"
-        },
-        {
-          "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮联合领投 · €4.5 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-172c6eda5dfd3979"
         }
       ],
       "contacts": [],
@@ -720,28 +786,28 @@
           "quote_hash": "fa24778cfd7c2d26c7f8ebda518fb1810040fd01beae0ea7f072d6d62cf75856"
         },
         {
+          "source_id": "FISRC-10ed8c9647ecbbfb",
+          "source_url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+          "source_title": "Sierra估值六个月内翻倍至300亿美元，CX领域AI需求激增",
+          "source_content_hash": "a9b6da66e5a7960a722fb3401c5946f7fec1a80a95a68511b0104c5dd75656b7",
+          "quote": "The new round was led by Greenoaks and Lightspeed Venture Partners",
+          "quote_hash": "3893a4935a6efc2afce54b4314e610944807ad0877ac8080f89344c349b46c15"
+        },
+        {
+          "source_id": "FISRC-95ff370bf7bf1e30",
+          "source_url": "https://sierra.ai/blog/series-f-30b",
+          "source_title": "Building the digital front door",
+          "source_content_hash": "203b319d8f4eb3d0",
+          "quote": "led by Greenoaks and Lightspeed Venture Partners",
+          "quote_hash": "62a5a9693e10308fb23fac8baeffc38b181df54e00df80a3acd7c4ccb75df926"
+        },
+        {
           "source_id": "FISRC-52ddbf8367aa7b8c",
           "source_url": "https://payhawk.com/en-us/blog/payhawk-series-c-280m-funding",
           "source_title": "Payhawk raises $280M Series C at a $2B valuation | Payhawk",
           "source_content_hash": "32c25b242387a108",
           "quote": "All existing investors, including QED, Greenoaks, Lightspeed, Hedosophia and Bek Ventures, participated in the round",
           "quote_hash": "5cc700099461971fc83d5ad7c9994344d382eac7aed9019c42367298a662f31d"
-        },
-        {
-          "source_id": "FISRC-81d4aea873fc9f86",
-          "source_url": "https://www.eu-startups.com/2026/11/bulgarias-first-unicorn-payhawk-raises-e255-14-million-at-e1-82-billion-valuation-to-build-a-global-finance-os-for-the-ai-era/",
-          "source_title": "保加利亚首家独角兽Payhawk在Goldman Sachs领投的C轮融资中按€1.82 billion估值融资€255.14 million",
-          "source_content_hash": "b283b9b5508ce3732eecacaa1c117fb8238dbe0f373a1b179ffd7586995e5e08",
-          "quote": "All existing investors, including QED, Greenoaks, Lightspeed, Hedosophia and Bek Ventures, participated in the round, alongside new investors Galdana Ventures, Cogito Capital, Inveready and Invus, and leading European entrepreneurs Tomas Okmanas and Didac Lee.",
-          "quote_hash": "671da4cce69d3026b6152a72ff5ef7138d14fac6be610bb925a7eba41aa22fad"
-        },
-        {
-          "source_id": "FISRC-172c6eda5dfd3979",
-          "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
-          "source_title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
-          "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
-          "quote": "The round was co-led by Greenoaks and Sequoia Capital",
-          "quote_hash": "d6154167c0a299c06b42e1f595574692b8c169e0ff817e7698c090af66bbce67"
         }
       ],
       "last_verified_at": "2026-10-04",

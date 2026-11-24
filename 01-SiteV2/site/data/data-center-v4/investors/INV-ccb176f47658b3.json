@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-13",
-    "latest_disclosed_at": "2026-08-13",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
+      "seed",
       "series_a"
     ],
     "portfolio_companies": [
@@ -83,9 +85,54 @@
         "entity_id": "EN-607a596a603dd679",
         "canonical_entity_id": "",
         "name": "Starcloud"
+      },
+      {
+        "entity_id": "EN-d0c8b2d87ecbfd3f",
+        "canonical_entity_id": "",
+        "name": "Supertake"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d1f2ee311a677642",
+        "funding_insight_id": "FI-2bb6fbca7ddb4ea3",
+        "event_ids": [
+          "EV-72f7f97d9e977246"
+        ],
+        "company_entity_id": "EN-d0c8b2d87ecbfd3f",
+        "company_canonical_entity_id": "",
+        "company_name": "Supertake",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$20 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-eea6d4f773cb5b5a",
+            "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+            "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+            "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+            "quote": "The round was led by venture firm Adjacent (Nico Wittenborn), with participation from Coinbase Ventures and Union Square Ventures (USV).",
+            "quote_hash": "f7f2909700f613119cf63790bbb61adb99b2f317cd5529e20fdd179517839df8"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9eac3dcfdb268c3e",
         "funding_insight_id": "FI-43e6948d7884584e",
@@ -161,6 +208,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-eea6d4f773cb5b5a",
+        "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+        "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+        "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+        "quote": "The round was led by venture firm Adjacent (Nico Wittenborn), with participation from Coinbase Ventures and Union Square Ventures (USV).",
+        "quote_hash": "f7f2909700f613119cf63790bbb61adb99b2f317cd5529e20fdd179517839df8"
+      },
+      {
         "source_id": "FISRC-f80a0b6f2f7f63f8",
         "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
         "source_title": "Starcloud Raises $170M to Fund Orbital Data Center Plans",
@@ -198,6 +253,10 @@
           "source_id": "FISRC-f80a0b6f2f7f63f8"
         },
         {
+          "description": "融资来源记录：Supertake · 种子轮 · 2026-11-23 · 本轮领投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-eea6d4f773cb5b5a"
+        },
+        {
           "description": "融资来源记录：Starcloud · 历史轮次未披露 · 历史轮次参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-64c63dc926fc8a24"
         }
@@ -219,6 +278,14 @@
           "source_content_hash": "703335f100c87043aeddea0daf5c5b989ca09154ae7c662889074e565eb3d36d",
           "quote": "Industry: Venture Capital and Private Equity Principals\nCompany size: 1 employee\nType: Privately Held\nFounded: 2019",
           "quote_hash": "6c0c259dd2198f3660b8d9db719780e600aeb5e012204cce5c3ef31e3871c9b1"
+        },
+        {
+          "source_id": "FISRC-eea6d4f773cb5b5a",
+          "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+          "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+          "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+          "quote": "The round was led by venture firm Adjacent (Nico Wittenborn), with participation from Coinbase Ventures and Union Square Ventures (USV).",
+          "quote_hash": "f7f2909700f613119cf63790bbb61adb99b2f317cd5529e20fdd179517839df8"
         },
         {
           "source_id": "FISRC-64c63dc926fc8a24",

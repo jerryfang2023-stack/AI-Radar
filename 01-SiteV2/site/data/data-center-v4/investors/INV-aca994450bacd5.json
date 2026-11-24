@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-06-27",
-    "latest_disclosed_at": "2026-08-06",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
       "historical_or_ambiguous": 4,
       "other_current_round": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "seed",
@@ -90,9 +90,54 @@
         "entity_id": "EN-7209ec6f68ac0bcd",
         "canonical_entity_id": "",
         "name": "Reka"
+      },
+      {
+        "entity_id": "EN-d0c8b2d87ecbfd3f",
+        "canonical_entity_id": "",
+        "name": "Supertake"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-7f16e60d105f5ee1",
+        "funding_insight_id": "FI-2bb6fbca7ddb4ea3",
+        "event_ids": [
+          "EV-72f7f97d9e977246"
+        ],
+        "company_entity_id": "EN-d0c8b2d87ecbfd3f",
+        "company_canonical_entity_id": "",
+        "company_name": "Supertake",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$20 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-eea6d4f773cb5b5a",
+            "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+            "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+            "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+            "quote": "Numerous angel investors also joined, including Nat Friedman, who’s currently head of product at Meta Superintelligence Labs; Vercel CEO Guillermo Rauch; renowned product manager Nikita Bier; investor Scott Belsky; and Nemil Dalal, a former Coinbase exec who is now a visiting partner at Y Combinator.",
+            "quote_hash": "4c8589c6452df8d509ffa4546a1664ec657031c8f5f685c4e9f14d36fa37c88e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a30c892f36cfd129",
         "funding_insight_id": "FI-ad56bb800ab98d44",
@@ -313,6 +358,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-eea6d4f773cb5b5a",
+        "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+        "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+        "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+        "quote": "Numerous angel investors also joined, including Nat Friedman, who’s currently head of product at Meta Superintelligence Labs; Vercel CEO Guillermo Rauch; renowned product manager Nikita Bier; investor Scott Belsky; and Nemil Dalal, a former Coinbase exec who is now a visiting partner at Y Combinator.",
+        "quote_hash": "4c8589c6452df8d509ffa4546a1664ec657031c8f5f685c4e9f14d36fa37c88e"
+      },
+      {
         "source_id": "FISRC-9bd81942662ab7e7",
         "source_url": "https://dealroom.co/news/143496-google-eyes-1-5b-for-mechanize-a-startup-that-raised-9-1m-seed-103-days/",
         "source_title": "谷歌瞄准Mechanize的15亿美元投资，这家初创公司103天前刚筹集了910万美元种子轮",
@@ -395,6 +448,10 @@
       "experience_summary": "可核验的本人简介包含创业经历及 GitHub CEO 任期；未披露学位、任职时间以外的具体职业履历。",
       "track_record": [
         {
+          "description": "融资来源记录：Supertake · 种子轮 · 2026-11-23 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-eea6d4f773cb5b5a"
+        },
+        {
           "description": "融资来源记录：Mechanize · 种子轮 · 2026-08-06 · 本轮参投 · $1.5B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9bd81942662ab7e7"
         },
@@ -414,6 +471,14 @@
           "quote_hash": "93db840de02eae873084f61380388a1e4ead12ea31fd4e9239ab53334700db06"
         },
         {
+          "source_id": "FISRC-eea6d4f773cb5b5a",
+          "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+          "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+          "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+          "quote": "Numerous angel investors also joined, including Nat Friedman, who’s currently head of product at Meta Superintelligence Labs; Vercel CEO Guillermo Rauch; renowned product manager Nikita Bier; investor Scott Belsky; and Nemil Dalal, a former Coinbase exec who is now a visiting partner at Y Combinator.",
+          "quote_hash": "4c8589c6452df8d509ffa4546a1664ec657031c8f5f685c4e9f14d36fa37c88e"
+        },
+        {
           "source_id": "FISRC-9bd81942662ab7e7",
           "source_url": "https://dealroom.co/news/143496-google-eyes-1-5b-for-mechanize-a-startup-that-raised-9-1m-seed-103-days/",
           "source_title": "谷歌瞄准Mechanize的15亿美元投资，这家初创公司103天前刚筹集了910万美元种子轮",
@@ -428,14 +493,6 @@
           "source_content_hash": "b0bfe562440f841d",
           "quote": "alongside a cohort of angel investors that included former GitHub CEO Nat Friedman",
           "quote_hash": "1fe487c3fbe257a231c8d402abe0cd8ee8336aec2bdcc91df903773b67494bde"
-        },
-        {
-          "source_id": "FISRC-3857ec64255b238a",
-          "source_url": "https://www.gaebler.com/VC-Funding-27D9E8DE-B2F9-4ED4-BADA-2D757FCF7E65-Reka-06-28-2023",
-          "source_title": "Reka 6/28/2023 Capital Raise - Gaebler.com Venture Capital Database",
-          "source_content_hash": "b41fbd4490777f66",
-          "quote": "private investors (Nat Friedman)",
-          "quote_hash": "1601affa35c16899a25009f8622d330bfdc26eaa26aa635d92636c5f3f970047"
         }
       ],
       "last_verified_at": "2026-09-25",
