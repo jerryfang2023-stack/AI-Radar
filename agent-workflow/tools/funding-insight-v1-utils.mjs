@@ -1545,6 +1545,9 @@ function linkedCompanyAnchoredInFundingQuote(event, entities, claims) {
         || !/(?:融资|募资|筹集|完成|获得|获|raised|funding|financing|round|\bseries\s+[a-h]\b)/iu.test(clause)) continue;
       for (const entity of linked) {
         for (const name of [entity.canonical_name, ...(entity.aliases || [])].filter(Boolean)) {
+          // Discourse "Now, the company..." does not name the funding recipient.
+          // A company literally named Now remains eligible in "Now has raised...".
+          if (/^now$/iu.test(clean(name)) && /^Now,\s+the\s+(?:company|startup)\b/iu.test(clause)) continue;
           const escaped = clean(name).replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
           const mention = new RegExp(escaped, "iu").exec(clause);
           if (!mention) continue;
