@@ -3816,3 +3816,18 @@ test("first-person wire announcements require a unique same-document issuer", ()
  assert.equal(subjectCompanyForEvent(event,entities,{},[claim],[body,body.replace("SOURCE Mirendil","SOURCE Google")]),null);
  assert.equal(subjectCompanyForEvent(event,entities,{},[{...claim,verification_status:"rejected"}],sources),null);
 });
+
+test("a discourse Now cannot override the named funding recipient", () => {
+  const entities = [
+    {entity_id:"EN-supertake",canonical_name:"Supertake",entity_type:"organization_candidate"},
+    {entity_id:"EN-now",canonical_name:"Now",entity_type:"organization_candidate"},
+  ];
+  const claims=[{claim_id:"CL-now",claim_type:"funding",verification_status:"accepted",
+    subject:"Supertake",object:"$20 million",
+    source_quote:"Now, the company has raised $20 million in seed funding to grow its business."}];
+  const event={event_id:"EV-now",display_title_zh:"Supertake raises $20 million in seed funding",
+    entities:entities.map(e=>e.entity_id),claim_refs:["CL-now"],metrics:["$20 million"],object:"$20 million",action:"raises"};
+  assert.equal(subjectCompanyForEvent(event,entities,{},claims).canonical_name,"Supertake");
+  const named=[{...claims[0],subject:"Now",source_quote:"Now has raised $20 million in seed funding."}];
+  assert.equal(subjectCompanyForEvent({...event,display_title_zh:"Now raises $20 million"},entities,{},named).canonical_name,"Now");
+});
