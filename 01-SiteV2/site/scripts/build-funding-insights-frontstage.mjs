@@ -41,10 +41,14 @@ export function fundingCompanyChinaEvidence(card, acceptedSubjectNames = []) {
   return { matched: false, basis: "" };
 }
 
-export function inheritConfirmedCompanyMarkets(cards) {
+export function inheritConfirmedCompanyMarkets(cards, review = {}) {
+  const heldEvents = new Set((review.holds || [])
+    .filter(row => row.status === "pending").map(row => row.event_id));
   // Only reviewed canonical identity can carry geography across financing rounds.
   // Equal display names and unreviewed application IDs are not identity proof.
-  const confirmed = new Map(cards.filter(card => card.company?.canonical_entity_consistent
+  const confirmed = new Map(cards.filter(card =>
+    ![card.triggered_by_event_id, ...(card.source_event_ids || [])].some(id => heldEvents.has(id))
+    && card.company?.canonical_entity_consistent
     && card.company.entity_id && card.market_scope?.market_region === "CN")
     .map(card => [card.company.entity_id, card.funding_insight_id]));
   return cards.map(card => {
@@ -631,7 +635,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root, { publicScope
     "01-SiteV2/content/12-applications/funding-insights/publication-review.json"), {});
   const evidenceReview = readJson(path.join(projectRoot,
     "01-SiteV2/content/12-applications/funding-insights/evidence-review.json"), {version:'FINANCING-EVIDENCE-REVIEW-1',entries:[]});
-  const reviewedCards = applyFinancingEvidenceReview(applyReviewedFundingMarkets(inheritConfirmedCompanyMarkets(rawCards), publicationReview), evidenceReview).cards;
+  const reviewedCards = applyFinancingEvidenceReview(applyReviewedFundingMarkets(inheritConfirmedCompanyMarkets(rawCards, publicationReview), publicationReview), evidenceReview).cards;
   const cards = reviewedCards.map((card) => applyPublicZhTranslations(card, translationRegistry, {
     entityType: "funding_card",
   }));

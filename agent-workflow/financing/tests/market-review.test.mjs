@@ -34,3 +34,16 @@ test('MOSI Pre-A evidence cannot publish as Zhipu; correct MOSI and separate Zhi
   assert.equal(publicationHold({ triggered_by_event_id: 'EV-64d88a6be3258064' }, review), null);
   assert.equal(publicationHold({ triggered_by_event_id: 'EV-7eead74c2baae511' }, review), null);
 });
+
+test('a held financing candidate cannot reclassify earlier rounds of the same company', () => {
+  const held = { ...iambic, funding_insight_id: 'FI-held', triggered_by_event_id: 'EV-held' };
+  const prior = { ...iambic, funding_insight_id: 'FI-prior', triggered_by_event_id: 'EV-prior',
+    market_scope: { market_region: 'GLOBAL', china_market_match: false, china_market_basis: [] } };
+  const review = { holds: [{ event_id: 'EV-held', status: 'pending' }] };
+  assert.equal(inheritConfirmedCompanyMarkets([held, prior], review)[1], prior);
+  const aggregate = { ...held, triggered_by_event_id: 'EV-other', source_event_ids: ['EV-held', 'EV-other'] };
+  assert.equal(inheritConfirmedCompanyMarkets([aggregate, prior], review)[1], prior);
+  assert.equal(inheritConfirmedCompanyMarkets([held, prior], { holds: [] })[1].market_scope.market_region, 'CN');
+  assert.equal(inheritConfirmedCompanyMarkets([held, prior],
+    { holds: [{ event_id: 'EV-held', status: 'resolved' }] })[1].market_scope.market_region, 'CN');
+});
