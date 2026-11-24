@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-03",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
+      "seed",
       "series_b",
       "series_e",
       "series_f",
@@ -93,6 +94,11 @@
         "name": "Cognition AI"
       },
       {
+        "entity_id": "EN-475f9fd3d326cd09",
+        "canonical_entity_id": "",
+        "name": "Marlowe"
+      },
+      {
         "entity_id": "EN-974371852171d0ea",
         "canonical_entity_id": "",
         "name": "Nexthop AI"
@@ -104,6 +110,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-8a348ea9a31500e2",
+        "funding_insight_id": "FI-998965868b46a9e3",
+        "event_ids": [
+          "EV-c0096e363d19588f"
+        ],
+        "company_entity_id": "EN-475f9fd3d326cd09",
+        "company_canonical_entity_id": "",
+        "company_name": "Marlowe",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$277M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 277000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.77 亿美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2ce9b79cd8fc09bc",
+            "source_url": "https://marlowe.ai/introducing-marlowe.html",
+            "source_title": "Introducing Marlowe: The Multi-Silicon AI Factory",
+            "source_content_hash": "0a981df1567b23e4",
+            "quote": "This year we raised $277M in seed funding from major investors Accel, Bessemer, Altimeter, Atreides, Eclipse, Journey, Valor, Scribble, Emergence Capital, Ritual, Pitango, Neo, Village Global, Banter, and many incredible angel investors",
+            "quote_hash": "7d6cee389d8cd6d80b940e3e3d9bc8d9af4a870709acd536533c47c9c45dd64a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-85131c3d024f5c8c",
         "funding_insight_id": "FI-d9fc0a409d33d577",
@@ -332,6 +378,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-2ce9b79cd8fc09bc",
+        "source_url": "https://marlowe.ai/introducing-marlowe.html",
+        "source_title": "Introducing Marlowe: The Multi-Silicon AI Factory",
+        "source_content_hash": "0a981df1567b23e4",
+        "quote": "This year we raised $277M in seed funding from major investors Accel, Bessemer, Altimeter, Atreides, Eclipse, Journey, Valor, Scribble, Emergence Capital, Ritual, Pitango, Neo, Village Global, Banter, and many incredible angel investors",
+        "quote_hash": "7d6cee389d8cd6d80b940e3e3d9bc8d9af4a870709acd536533c47c9c45dd64a"
+      },
+      {
         "source_id": "FISRC-61aa8db010b34dfa",
         "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
         "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
@@ -401,16 +455,16 @@
           "source_id": "cerebras-series-h-altimeter"
         },
         {
+          "description": "融资来源记录：Marlowe · 种子轮 · 2026-11-23 · 本轮参投 · $277M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2ce9b79cd8fc09bc"
+        },
+        {
           "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-61aa8db010b34dfa"
         },
         {
           "description": "融资来源记录：OpenAI · F轮 · 2026-03-31 · 本轮参投 · $1220亿。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b86e0fbe62dfd3dc"
-        },
-        {
-          "description": "融资来源记录：Nexthop AI · B轮 · 2026-03-10 · 本轮参投 · $500 Million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-084074056d609e70"
         }
       ],
       "contacts": [],
@@ -436,6 +490,14 @@
           "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
         },
         {
+          "source_id": "FISRC-2ce9b79cd8fc09bc",
+          "source_url": "https://marlowe.ai/introducing-marlowe.html",
+          "source_title": "Introducing Marlowe: The Multi-Silicon AI Factory",
+          "source_content_hash": "0a981df1567b23e4",
+          "quote": "This year we raised $277M in seed funding from major investors Accel, Bessemer, Altimeter, Atreides, Eclipse, Journey, Valor, Scribble, Emergence Capital, Ritual, Pitango, Neo, Village Global, Banter, and many incredible angel investors",
+          "quote_hash": "7d6cee389d8cd6d80b940e3e3d9bc8d9af4a870709acd536533c47c9c45dd64a"
+        },
+        {
           "source_id": "FISRC-61aa8db010b34dfa",
           "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
           "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
@@ -450,14 +512,6 @@
           "source_content_hash": "4e51c91e5fc7160c",
           "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
           "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
-        },
-        {
-          "source_id": "FISRC-084074056d609e70",
-          "source_url": "https://nexthop.ai/news-and-event/nexthop-ai-accelerates-into-hypergrowth-with-oversubscribed-500m-series-b-funding-catapulting-the-companys-valuation-to-4-2-billion/",
-          "source_title": "Nexthop AI 以超额认购的 5 亿美元 B 轮融资加速进入超高速增长，推动公司估值达到 42 亿美元",
-          "source_content_hash": "307dc477cd5582205a3df2e93432a43a4c0a350604b4a7873cbdb658455d7759",
-          "quote": "This round was spearheaded by Lightspeed Venture Partners, with Andreessen Horowitz joining as a major investor, and participation from Altimeter and all existing investors.",
-          "quote_hash": "498e40ef1d04bcf5884269ed9ab8b7b7e9a59e02db58ebf2fa6a8c9889cf4c7c"
         }
       ],
       "last_verified_at": "2026-10-04"

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-23",
-    "latest_disclosed_at": "2026-08-19",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
@@ -90,9 +90,54 @@
         "entity_id": "FICO-etched",
         "canonical_entity_id": "",
         "name": "Etched"
+      },
+      {
+        "entity_id": "EN-475f9fd3d326cd09",
+        "canonical_entity_id": "",
+        "name": "Marlowe"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-aced678f7a6c280b",
+        "funding_insight_id": "FI-998965868b46a9e3",
+        "event_ids": [
+          "EV-c0096e363d19588f"
+        ],
+        "company_entity_id": "EN-475f9fd3d326cd09",
+        "company_canonical_entity_id": "",
+        "company_name": "Marlowe",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$277M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 277000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.77 亿美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2ce9b79cd8fc09bc",
+            "source_url": "https://marlowe.ai/introducing-marlowe.html",
+            "source_title": "Introducing Marlowe: The Multi-Silicon AI Factory",
+            "source_content_hash": "0a981df1567b23e4",
+            "quote": "This year we raised $277M in seed funding from major investors Accel, Bessemer, Altimeter, Atreides, Eclipse, Journey, Valor, Scribble, Emergence Capital, Ritual, Pitango, Neo, Village Global, Banter, and many incredible angel investors",
+            "quote_hash": "7d6cee389d8cd6d80b940e3e3d9bc8d9af4a870709acd536533c47c9c45dd64a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7ced53b024755925",
         "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
@@ -249,6 +294,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-2ce9b79cd8fc09bc",
+        "source_url": "https://marlowe.ai/introducing-marlowe.html",
+        "source_title": "Introducing Marlowe: The Multi-Silicon AI Factory",
+        "source_content_hash": "0a981df1567b23e4",
+        "quote": "This year we raised $277M in seed funding from major investors Accel, Bessemer, Altimeter, Atreides, Eclipse, Journey, Valor, Scribble, Emergence Capital, Ritual, Pitango, Neo, Village Global, Banter, and many incredible angel investors",
+        "quote_hash": "7d6cee389d8cd6d80b940e3e3d9bc8d9af4a870709acd536533c47c9c45dd64a"
+      },
+      {
         "source_id": "FISRC-134a8e8124653c90",
         "source_url": "https://www.verdict.co.uk/etched-bags-700m/",
         "source_title": "Etched 以210亿美元估值融资7亿美元，向Jane Street交付首台机架",
@@ -312,16 +365,16 @@
           "description": "Silicon Legal 表示曾代表 Neo 加入 Engram 9800 万美元融资，为对该投资关系的独立交叉核验。"
         },
         {
+          "description": "融资来源记录：Marlowe · 种子轮 · 2026-11-23 · 本轮参投 · $277M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2ce9b79cd8fc09bc"
+        },
+        {
           "description": "融资来源记录：Etched · D轮 · 2026-08-19 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-134a8e8124653c90"
         },
         {
           "description": "融资来源记录：Engram · 轮次未披露 · 2026-06-23 · 本轮参投 · $98 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8f5a35fa6bbc977d"
-        },
-        {
-          "description": "融资来源记录：Engram · 种子轮 · 2026-06-23 · 本轮参投 · $98M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-39d911c5038cb1c0"
         }
       ],
       "contacts": [
@@ -375,6 +428,14 @@
           "quote": "Silicon Legal represented Neo as they joined Engram"
         },
         {
+          "source_id": "FISRC-2ce9b79cd8fc09bc",
+          "source_url": "https://marlowe.ai/introducing-marlowe.html",
+          "source_title": "Introducing Marlowe: The Multi-Silicon AI Factory",
+          "source_content_hash": "0a981df1567b23e4",
+          "quote": "This year we raised $277M in seed funding from major investors Accel, Bessemer, Altimeter, Atreides, Eclipse, Journey, Valor, Scribble, Emergence Capital, Ritual, Pitango, Neo, Village Global, Banter, and many incredible angel investors",
+          "quote_hash": "7d6cee389d8cd6d80b940e3e3d9bc8d9af4a870709acd536533c47c9c45dd64a"
+        },
+        {
           "source_id": "FISRC-134a8e8124653c90",
           "source_url": "https://www.verdict.co.uk/etched-bags-700m/",
           "source_title": "Etched 以210亿美元估值融资7亿美元，向Jane Street交付首台机架",
@@ -389,14 +450,6 @@
           "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
           "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab.",
           "quote_hash": "42b1511883b23468e7b7d7735d0907aa3cd55bf26be07ab642ceca70cd1a4958"
-        },
-        {
-          "source_id": "FISRC-39d911c5038cb1c0",
-          "source_url": "https://theaiinsider.tech/2026/07/01/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization/",
-          "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
-          "source_content_hash": "f7105d727554bb38",
-          "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo",
-          "quote_hash": "d6d2e6175424260b5170a8e5367eac93875a636a037b0e4d21c7a38705fd06e4"
         }
       ],
       "last_verified_at": "2026-10-06"

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-05-20",
     "latest_disclosed_at": "2026-06-17",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "other_current_round": 2
     },
     "round_codes": [
@@ -236,6 +236,38 @@
             "quote_hash": "457edd3696a1e864e33f740e3b8c838e58446d016979a808af94b99edabef957"
           }
         ]
+      },
+      {
+        "activity_id": "IA-55268015c40a1cc1",
+        "funding_insight_id": "FI-0cd32810bd73c1d5",
+        "event_ids": [
+          "EV-72f7f97d9e977246"
+        ],
+        "company_entity_id": "EN-ed5eb9a37e2d8231",
+        "company_canonical_entity_id": "",
+        "company_name": "Supertake",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-eea6d4f773cb5b5a",
+            "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+            "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+            "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+            "quote": "Vercel CEO Guillermo Rauch",
+            "quote_hash": "34af9d6ee8ffc137c22b5f38fb29c89d1d42a93748594caee459a3c0b6239c06"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -270,6 +302,14 @@
         "source_content_hash": "914fbe85560ee8b3",
         "quote": "plus angels including GitHub co-founder Tom Preston-Werner, Vercel CEO Guillermo Rauch, Spencer Kimball, Olivier Pomel, and Jori Lallo",
         "quote_hash": "457edd3696a1e864e33f740e3b8c838e58446d016979a808af94b99edabef957"
+      },
+      {
+        "source_id": "FISRC-eea6d4f773cb5b5a",
+        "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+        "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+        "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+        "quote": "Vercel CEO Guillermo Rauch",
+        "quote_hash": "34af9d6ee8ffc137c22b5f38fb29c89d1d42a93748594caee459a3c0b6239c06"
       }
     ],
     "public_profile": {

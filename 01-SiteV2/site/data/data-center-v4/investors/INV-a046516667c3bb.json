@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 30,
+    "current_round_count": 31,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 28,
+    "portfolio_company_count": 29,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-03-12",
-    "latest_disclosed_at": "2026-11-18",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 4,
-      "lead": 15,
+      "lead": 16,
       "participant": 13
     },
     "round_codes": [
@@ -171,6 +171,11 @@
         "name": "Legora"
       },
       {
+        "entity_id": "EN-475f9fd3d326cd09",
+        "canonical_entity_id": "",
+        "name": "Marlowe"
+      },
+      {
         "entity_id": "EN-c5803a6e4daa6af4",
         "canonical_entity_id": "",
         "name": "Modal"
@@ -232,6 +237,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-82b85943649b8df2",
+        "funding_insight_id": "FI-998965868b46a9e3",
+        "event_ids": [
+          "EV-c0096e363d19588f"
+        ],
+        "company_entity_id": "EN-475f9fd3d326cd09",
+        "company_canonical_entity_id": "",
+        "company_name": "Marlowe",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$277M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 277000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.77 亿美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-82180269ecea6321",
+            "source_url": "https://www.accel.com/news/our-investment-in-marlowe-the-multi-silicon-ai-factory",
+            "source_title": "我们对Marlowe的投资：多芯片AI工厂",
+            "source_content_hash": "5a48b7c6d1f52d738cbe6e8a717270321e9047d18cfcb6741962797cc0d46ada",
+            "quote": "Today, Marlowe is announcing its $277M seed round, led by Accel.",
+            "quote_hash": "df9d0e0fd3b23f1b22b8ccfeb40e08d8f142fb60c312f44e1af52951311b9885"
+          }
+        ]
+      },
       {
         "activity_id": "IA-43193219ae3b7fe9",
         "funding_insight_id": "FI-88161972c1280eb5",
@@ -1576,6 +1621,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-82180269ecea6321",
+        "source_url": "https://www.accel.com/news/our-investment-in-marlowe-the-multi-silicon-ai-factory",
+        "source_title": "我们对Marlowe的投资：多芯片AI工厂",
+        "source_content_hash": "5a48b7c6d1f52d738cbe6e8a717270321e9047d18cfcb6741962797cc0d46ada",
+        "quote": "Today, Marlowe is announcing its $277M seed round, led by Accel.",
+        "quote_hash": "df9d0e0fd3b23f1b22b8ccfeb40e08d8f142fb60c312f44e1af52951311b9885"
+      },
+      {
         "source_id": "FISRC-7910f56b348bc37f",
         "source_url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
         "source_title": "印度 Humyn Labs 融资 4700 万美元，为美国机器人公司提供所需数据",
@@ -1890,16 +1943,16 @@
           "source_id": "accel_europe"
         },
         {
+          "description": "融资来源记录：Marlowe · 种子轮 · 2026-11-23 · 本轮领投 · $277M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-82180269ecea6321"
+        },
+        {
           "description": "融资来源记录：Humyn Labs · A轮 · 2026-11-18 · 本轮股权领投 · $47 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7910f56b348bc37f"
         },
         {
           "description": "融资来源记录：Dreamteam · 多轮融资 · 2026-11-16 · 本轮领投 · $53 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-67067103992ebfe0"
-        },
-        {
-          "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮参投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-59233bfbeb9628bf"
         }
       ],
       "contacts": [
@@ -1972,6 +2025,14 @@
           "quote_hash": "596b1ee652763f3ce41bb638fabd7df2a7d7c189a53631ad6dd499bf0d48e2bc"
         },
         {
+          "source_id": "FISRC-82180269ecea6321",
+          "source_url": "https://www.accel.com/news/our-investment-in-marlowe-the-multi-silicon-ai-factory",
+          "source_title": "我们对Marlowe的投资：多芯片AI工厂",
+          "source_content_hash": "5a48b7c6d1f52d738cbe6e8a717270321e9047d18cfcb6741962797cc0d46ada",
+          "quote": "Today, Marlowe is announcing its $277M seed round, led by Accel.",
+          "quote_hash": "df9d0e0fd3b23f1b22b8ccfeb40e08d8f142fb60c312f44e1af52951311b9885"
+        },
+        {
           "source_id": "FISRC-7910f56b348bc37f",
           "source_url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
           "source_title": "印度 Humyn Labs 融资 4700 万美元，为美国机器人公司提供所需数据",
@@ -1986,14 +2047,6 @@
           "source_content_hash": "d28adbe2957be9222baa64bfec86d74c3d67baaf04baaeab71773c49ae877d89",
           "quote": "The funding comprises seed and Series A rounds, led by Together Fund and Accel respectively, with participation from Premji Invest.",
           "quote_hash": "c81fc8a90f6bf710a40892523ff7682e4c7a23001cc84c0395b5f31397c99946"
-        },
-        {
-          "source_id": "FISRC-59233bfbeb9628bf",
-          "source_url": "https://dealroom.co/news/171711-fractile-raises-720m-series-c-at-6-5b-to-challenge-nvidia-on-ai-chips/",
-          "source_title": "Fractile raises $720M at a $7B valuation as Britain backs its bid to take on Nvidia in AI inference chips",
-          "source_content_hash": "97c1f5cc5dda1d68",
-          "quote": "with Accel, Conviction and Felicis returning",
-          "quote_hash": "00c80464ae9c0c8df38260964628ecf789550dec5a6366ef053e66c8cfc3061e"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -2004,7 +2057,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[31].role": {
+        "activities[32].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

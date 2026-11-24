@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -54,7 +54,7 @@
   },
   "entity": {
     "id": "EN-e0f4f767ac88a930",
-    "name": "TODAY",
+    "name": "Today",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-c0096e363d19588f",
       "EV-60beaa2e14a34fc9",
       "EV-2ab7252166b42c03",
       "EV-343f568b0e02c478",
@@ -76,10 +77,11 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-03-12",
-    "lastSeen": "2026-10-15",
+    "lastSeen": "2026-11-24",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-c0096e363d19588f",
         "EV-60beaa2e14a34fc9",
         "EV-2ab7252166b42c03",
         "EV-4a73829a143cf3fc",
@@ -95,6 +97,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-c0096e363d19588f",
+        "dataDate": "2026-11-24",
+        "date": "2026-11-23",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "我们对Marlowe的投资：多芯片AI工厂",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e0f4f767ac88a930",
+          "EN-475f9fd3d326cd09"
+        ]
+      },
       {
         "id": "EV-60beaa2e14a34fc9",
         "dataDate": "2026-10-15",
@@ -468,7 +486,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-11-23"
+      "lastSeen": "2026-11-24"
     }
   ],
   "fde": [],

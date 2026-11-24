@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -65,6 +65,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-d03ad90e15e62533",
       "EV-c4491ccfef9e3d73",
       "EV-ebc7cbce77c27a1d",
       "EV-a777bac46535a344",
@@ -92,13 +93,14 @@
       "EN-8989aada6eb4a4c3"
     ],
     "firstSeen": "2026-01-20",
-    "lastSeen": "2026-10-26",
+    "lastSeen": "2026-11-24",
     "relationIds": [
       "REL2-dcc3f6e959d6073a",
       "REL2-e1d65aab90a4ab28"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-d03ad90e15e62533",
         "EV-ebc7cbce77c27a1d",
         "EV-a777bac46535a344",
         "EV-c4491ccfef9e3d73",
@@ -127,6 +129,47 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-d03ad90e15e62533",
+        "dataDate": "2026-11-24",
+        "date": "2026-11-22",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "蚂蚁集团押注Simplexity，布局中国人形机器人竞赛",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-8729c58fc661e5db"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-8729c58fc661e5db"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-d30e5ffc0ba9150b",
+          "EN-8729c58fc661e5db",
+          "EN-86de7bf78fbe1995",
+          "EN-9c8ae69b84f21a2e"
+        ]
+      },
       {
         "id": "EV-ebc7cbce77c27a1d",
         "dataDate": "2026-10-26",

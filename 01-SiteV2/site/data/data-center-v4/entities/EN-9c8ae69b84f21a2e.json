@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -65,6 +65,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-d03ad90e15e62533",
       "EV-a54d9f479d4eb060",
       "EV-ac30333388e0d00a",
       "EV-04fb7521fa0fe4a9",
@@ -173,7 +174,7 @@
       "EN-30a63b26b06e096e"
     ],
     "firstSeen": "2026-01-26",
-    "lastSeen": "2026-11-23",
+    "lastSeen": "2026-11-24",
     "relationIds": [
       "REL2-40a53a0ef359ae41",
       "REL2-5f0d9f90c84e1075",
@@ -183,6 +184,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-d03ad90e15e62533",
         "EV-a54d9f479d4eb060",
         "EV-ac30333388e0d00a",
         "EV-04fb7521fa0fe4a9",
@@ -288,8 +290,49 @@
     },
     "timeline": [
       {
+        "id": "EV-d03ad90e15e62533",
+        "dataDate": "2026-11-24",
+        "date": "2026-11-22",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "蚂蚁集团押注Simplexity，布局中国人形机器人竞赛",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-8729c58fc661e5db"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-8729c58fc661e5db"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-d30e5ffc0ba9150b",
+          "EN-8729c58fc661e5db",
+          "EN-86de7bf78fbe1995",
+          "EN-9c8ae69b84f21a2e"
+        ]
+      },
+      {
         "id": "EV-46395af28fc6189e",
-        "dataDate": "2026-11-23",
+        "dataDate": "2026-11-24",
         "date": "2026-11-22",
         "eventType": "policy_regulation",
         "eventTypeLabel": "政策监管",
@@ -5013,7 +5056,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2025-09-16",
-      "lastSeen": "2026-11-23"
+      "lastSeen": "2026-11-24"
     },
     {
       "id": "TX-product_form-model",

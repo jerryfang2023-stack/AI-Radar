@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-01",
-    "latest_disclosed_at": "2026-08-05",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "multi_round",
+      "seed",
       "series_a"
     ],
     "portfolio_companies": [
@@ -85,12 +86,57 @@
         "name": "Sapiom"
       },
       {
+        "entity_id": "EN-ed5eb9a37e2d8231",
+        "canonical_entity_id": "",
+        "name": "Supertake"
+      },
+      {
         "entity_id": "EN-858b4458c482f7d2",
         "canonical_entity_id": "",
         "name": "Venice AI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-752202e61f269d66",
+        "funding_insight_id": "FI-0cd32810bd73c1d5",
+        "event_ids": [
+          "EV-72f7f97d9e977246"
+        ],
+        "company_entity_id": "EN-ed5eb9a37e2d8231",
+        "company_canonical_entity_id": "",
+        "company_name": "Supertake",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$20 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-eea6d4f773cb5b5a",
+            "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+            "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+            "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+            "quote": "The round was led by venture firm Adjacent (Nico Wittenborn), with participation from Coinbase Ventures and Union Square Ventures (USV).",
+            "quote_hash": "f7f2909700f613119cf63790bbb61adb99b2f317cd5529e20fdd179517839df8"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8f5cdb00c65ad2db",
         "funding_insight_id": "FI-9255d12e7d1cdf9a",
@@ -182,6 +228,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-eea6d4f773cb5b5a",
+        "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+        "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+        "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+        "quote": "The round was led by venture firm Adjacent (Nico Wittenborn), with participation from Coinbase Ventures and Union Square Ventures (USV).",
+        "quote_hash": "f7f2909700f613119cf63790bbb61adb99b2f317cd5529e20fdd179517839df8"
+      },
+      {
         "source_id": "FISRC-df6a9c9a32146320",
         "source_url": "https://www.sapiom.ai/resources/blog/series-a/",
         "source_title": "Sapiom 融资 3500 万美元 A 轮，为下一个万亿级 AI 智能体提供动力",
@@ -252,6 +306,10 @@
           "source_id": "FISRC-831c2961f3373587"
         },
         {
+          "description": "融资来源记录：Supertake · 种子轮 · 2026-11-23 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-eea6d4f773cb5b5a"
+        },
+        {
           "description": "融资来源记录：Sapiom · 多轮融资 · 2026-08-05 · 本轮参投 · $35 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-df6a9c9a32146320"
         }
@@ -290,6 +348,14 @@
           "source_content_hash": "0dacb24c9b80532d",
           "quote": "with participation from North Island Ventures, Coinbase Ventures, F-Prime, Archetype, Liquid2 Ventures, Morgan Creek and others",
           "quote_hash": "606ae176a98dac29403f2468e0a552b3194ed382fa3cff615ae2ad537efc9d44"
+        },
+        {
+          "source_id": "FISRC-eea6d4f773cb5b5a",
+          "source_url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+          "source_title": "Supertake 融资 2000 万美元，让 AI 智能体将你的市场预测转化为股票投资组合",
+          "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
+          "quote": "The round was led by venture firm Adjacent (Nico Wittenborn), with participation from Coinbase Ventures and Union Square Ventures (USV).",
+          "quote_hash": "f7f2909700f613119cf63790bbb61adb99b2f317cd5529e20fdd179517839df8"
         },
         {
           "source_id": "FISRC-df6a9c9a32146320",

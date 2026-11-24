@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -53,6 +53,33 @@
     ]
   },
   "hardware": [
+    {
+      "id": "HW-8e3f64354ff30375",
+      "eventId": "EV-5ed60b6f14a05b3e",
+      "dataDate": "2026-11-24",
+      "date": "2026-11-24",
+      "title": "马斯克承认 AI 研发落后对手：出租 SpaceXSI 算力比自研 Grok 更赚钱",
+      "hardwareType": "data_center",
+      "eventType": "hardware_capacity",
+      "eventTypeLabel": "硬件产能",
+      "computeLayer": "data_center",
+      "supplier": "SpaceX",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "美国",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://www.ithome.com/1/031/246.htm",
+      "sourceName": "www.ithome.com",
+      "sourceDate": "2026-11-24",
+      "entityIds": [
+        "EN-e78bdebae031095b"
+      ]
+    },
     {
       "id": "HW-7b1c7c01bd63559d",
       "eventId": "EV-be28f5b571b80f7c",
@@ -22255,28 +22282,30 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-11-23",
-      "funnel_id": "LF-8a98adb99f94fef3",
+      "data_date": "2026-11-24",
+      "funnel_id": "LF-7a1a65de8428978b",
       "lens": "hardware",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "monitoring_paths": [],
-      "raw_documents": 8,
-      "original_sources": 8,
-      "valid_claims": 5,
+      "raw_documents": 12,
+      "original_sources": 12,
+      "valid_claims": 7,
       "observations": 0,
-      "canonical_events": 2,
+      "canonical_events": 3,
       "blocker_counts": {
         "no_source_bounded_event": 1,
-        "event_not_ai_relevant": 4,
+        "event_entity_unresolved": 1,
+        "proposed_financing_not_completed": 1,
+        "event_not_ai_relevant": 5,
         "reviewed_source_lead_only": 1
       },
       "rates": {
         "original_source_rate": 1,
-        "valid_claim_rate": 0.625,
+        "valid_claim_rate": 0.5833333333333334,
         "observation_rate": 0,
-        "event_conversion_rate": 0.4
+        "event_conversion_rate": 0.42857142857142855
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-11-23/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-11-24/monitoring-funnel.json"
     }
   ]
 }

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-05-07",
     "latest_disclosed_at": "2026-11-17",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "pre_series_a"
@@ -86,12 +86,57 @@
         "name": "共绩科技"
       },
       {
+        "entity_id": "EN-0ab7efd54665c15e",
+        "canonical_entity_id": "",
+        "name": "穗升科技"
+      },
+      {
         "entity_id": "EN-12a8f827c180f2cc",
         "canonical_entity_id": "",
         "name": "Memoket"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f5731d454056101e",
+        "funding_insight_id": "FI-c6a9e53e63cda080",
+        "event_ids": [
+          "EV-259448f146c975a7"
+        ],
+        "company_entity_id": "EN-0ab7efd54665c15e",
+        "company_canonical_entity_id": "",
+        "company_name": "穗升科技",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-11-17",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a786dcda767e7d9a",
+            "source_url": "https://feng.ifeng.com/c/8y859GeJlOC",
+            "source_title": "穗升科技获数千万元Pre-A轮融资 聚焦AI长期记忆硬件_大风号",
+            "source_content_hash": "c9e80303f1f3634330aa4782121114f89bbb694e1d48a9dae42e35db73d68554",
+            "quote": "本轮由NexTide Capital、阿尔法公社投资。",
+            "quote_hash": "02bd86dea2866bbb1a5bf650375b651bff7086bf9a09ac6ccb2d2eac73a06a3c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-fdd9ef401c63fc30",
         "funding_insight_id": "FI-30e2d58989293b1c",
@@ -206,6 +251,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-a786dcda767e7d9a",
+        "source_url": "https://feng.ifeng.com/c/8y859GeJlOC",
+        "source_title": "穗升科技获数千万元Pre-A轮融资 聚焦AI长期记忆硬件_大风号",
+        "source_content_hash": "c9e80303f1f3634330aa4782121114f89bbb694e1d48a9dae42e35db73d68554",
+        "quote": "本轮由NexTide Capital、阿尔法公社投资。",
+        "quote_hash": "02bd86dea2866bbb1a5bf650375b651bff7086bf9a09ac6ccb2d2eac73a06a3c"
+      },
       {
         "source_id": "FISRC-fd462de3c8158bd1",
         "source_url": "https://dealroom.co/news/173270-ex-anker-cmo-s-ai-wearable-startup-memoket-raises-4-5m-pre-a/",
@@ -359,6 +412,10 @@
         {
           "description": "官网组合页称自 2015 年以来投资了 100 余家科技公司，并展示部分案例；该自报数量不代表完整组合或回报表现。",
           "source_id": "alpha_portfolio_2026"
+        },
+        {
+          "description": "融资来源记录：穗升科技 · Pre-A轮 · 2026-11-17 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a786dcda767e7d9a"
         },
         {
           "description": "融资来源记录：Memoket · Pre-A轮 · 2026-11-17 · 本轮参投 · $4.5M。这是本库收录的披露案例，不代表完整投资组合。",
@@ -540,6 +597,14 @@
           "source_content_hash": "6a8fdb96c619978b2a697aea9d8915c430a533b3aa0a6af61e5f451f31518a3a",
           "quote": "we help portfolio companies forge business partnerships",
           "quote_hash": "50873ff2340ee136e2081fb1efb959250f298f9e0f7fdbd70426c404f161ddc1"
+        },
+        {
+          "source_id": "FISRC-a786dcda767e7d9a",
+          "source_url": "https://feng.ifeng.com/c/8y859GeJlOC",
+          "source_title": "穗升科技获数千万元Pre-A轮融资 聚焦AI长期记忆硬件_大风号",
+          "source_content_hash": "c9e80303f1f3634330aa4782121114f89bbb694e1d48a9dae42e35db73d68554",
+          "quote": "本轮由NexTide Capital、阿尔法公社投资。",
+          "quote_hash": "02bd86dea2866bbb1a5bf650375b651bff7086bf9a09ac6ccb2d2eac73a06a3c"
         },
         {
           "source_id": "FISRC-fd462de3c8158bd1",

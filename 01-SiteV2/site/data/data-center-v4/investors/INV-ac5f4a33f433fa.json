@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-23",
-    "currentDate": "2026-11-23",
-    "eventCount": 4539,
+    "latestDataDate": "2026-11-24",
+    "currentDate": "2026-11-24",
+    "eventCount": 4549,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-11-23",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-475f9fd3d326cd09",
+        "canonical_entity_id": "",
+        "name": "Marlowe"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-b73beca074684bf0",
+        "funding_insight_id": "FI-998965868b46a9e3",
+        "event_ids": [
+          "EV-c0096e363d19588f"
+        ],
+        "company_entity_id": "EN-475f9fd3d326cd09",
+        "company_canonical_entity_id": "",
+        "company_name": "Marlowe",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$277M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 277000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.77 亿美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2ce9b79cd8fc09bc",
+            "source_url": "https://marlowe.ai/introducing-marlowe.html",
+            "source_title": "Introducing Marlowe: The Multi-Silicon AI Factory",
+            "source_content_hash": "0a981df1567b23e4",
+            "quote": "This year we raised $277M in seed funding from major investors Accel, Bessemer, Altimeter, Atreides, Eclipse, Journey, Valor, Scribble, Emergence Capital, Ritual, Pitango, Neo, Village Global, Banter, and many incredible angel investors",
+            "quote_hash": "7d6cee389d8cd6d80b940e3e3d9bc8d9af4a870709acd536533c47c9c45dd64a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ce20792670ba5bac",
         "funding_insight_id": "FI-f6024633a1bff4e3",
@@ -112,6 +161,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-2ce9b79cd8fc09bc",
+        "source_url": "https://marlowe.ai/introducing-marlowe.html",
+        "source_title": "Introducing Marlowe: The Multi-Silicon AI Factory",
+        "source_content_hash": "0a981df1567b23e4",
+        "quote": "This year we raised $277M in seed funding from major investors Accel, Bessemer, Altimeter, Atreides, Eclipse, Journey, Valor, Scribble, Emergence Capital, Ritual, Pitango, Neo, Village Global, Banter, and many incredible angel investors",
+        "quote_hash": "7d6cee389d8cd6d80b940e3e3d9bc8d9af4a870709acd536533c47c9c45dd64a"
+      },
+      {
         "source_id": "FISRC-d40817bd8696706a",
         "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
         "source_title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
@@ -125,10 +182,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Valor 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Valor 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Marlowe · 种子轮 · 2026-11-23 · 本轮参投 · $277M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2ce9b79cd8fc09bc"
+        },
         {
           "description": "融资来源记录：Flapping Airplanes · 历史轮次未披露 · 既有投资方（本轮参与未披露）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d40817bd8696706a"
@@ -136,6 +197,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-2ce9b79cd8fc09bc",
+          "source_url": "https://marlowe.ai/introducing-marlowe.html",
+          "source_title": "Introducing Marlowe: The Multi-Silicon AI Factory",
+          "source_content_hash": "0a981df1567b23e4",
+          "quote": "This year we raised $277M in seed funding from major investors Accel, Bessemer, Altimeter, Atreides, Eclipse, Journey, Valor, Scribble, Emergence Capital, Ritual, Pitango, Neo, Village Global, Banter, and many incredible angel investors",
+          "quote_hash": "7d6cee389d8cd6d80b940e3e3d9bc8d9af4a870709acd536533c47c9c45dd64a"
+        },
         {
           "source_id": "FISRC-d40817bd8696706a",
           "source_url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
