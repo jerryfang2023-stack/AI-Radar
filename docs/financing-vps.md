@@ -4,7 +4,7 @@
 
 ## 当前调度
 
-- 本机 Codex 自动化 `ai` 保留配置并暂停，作为人工恢复入口。原 runner、SSH 入口和本机知识库保留；VPS 的 Vault 更新不会自动写入关机电脑。
+- 本机现有 Codex 自动化 `automation` 每天北京时间 10:30 检查云端、修复已授权故障、审批发布并整理工作区；旧 `ai` 任务已删除。原 runner、SSH 入口和本机知识库保留；本机定时检查需要应用运行，VPS 的 Vault 更新不会自动写入关机电脑。
 - VPS `guanlan-financing.timer` 在北京时间 08:10 主启动、10:30 幂等兜底，`Persistent=true`。同一服务通过 `--watch=true` 每两分钟跟进本日 GitHub、审核、CI、Pages 和发布状态，最长四小时；不增加发现或待核验队列批次。
 - `/etc/guanlan-financing/runtime.env` 配置 `GUANLAN_VPS_MODE=active`。`standby` 可用于回退，仅调用融资派发器的 `--dry-run=true`，保存观察回执。
 - `active` 模式复用同一 GitHub 融资生产工作流及恢复检查点，Hermes 审核开放的融资 PR，检查精确提交与 CI 后合并，再等 Pages 和 VPS 发布。模型 API ID 固定 `deepseek-flash`（DeepSeek V4.1 Flash）。每日期最多三次不同提交/基线的模型审核；同一提交/基线的临时审核失败保留独立尝试目录，并在本次运行内有界重试。
@@ -14,6 +14,8 @@
 ## 故障接续
 
 2026-11-15：公开融资增量为零仍须审核当天原始事实变化。审核包独立列出 canonical 新增/变更、未准入研究的真实处分及可用原文；研究回执沿用的 `auto_published` 仅表示研究生成完成，不代表已进入 `catalog.cards/event_cards`。`catalog.review.pending` 的分类疑义是正确隔离，不能当作分类绕过，也不能为了通过审核批准该候选。原文仍须逐项阅读；影响公开结果或历史的真实缺陷继续阻断。36氪标题末尾带分隔符的站点署名只在解析标题时去除，保留原始标题、正文与接受输入，不能作为事件宾语或融资金额。
+
+2026-11-24：出版审核仍为 pending hold 的候选及包含该事件的聚合候选，不得向同一规范公司的历史轮次传播中国区归类。原研究和暂缓回执保留；其余已核验候选仍按原有规范身份规则继承地区。发布保全检查继续核对全部历史事件的公司、金额、分类及地区，发现改变先核验，不直接沿用新值。
 
 2026-11-14：已接受快讯与完整原文的融资轮次冲突时，保留快讯及原始 intake，责任人可在 `data-center-v4/source-fact-reviews.json` 记录仅作线索的处分；必须绑定 source artifact、URL、正文 hash、原文短引及其 SHA256，并注明审核人与原因。绑定不符停止事实生成，不能用旧 pooled/eligibility 标记代替事实审核。完整原文需经现有私有归档、事实、研究与分类门禁；恢复只重建受影响阶段，不重新采集。此全局审核文件参与事实阶段依赖 hash；跨 main 恢复检查点时，当前 main 的同源处分优先，新增来源按身份合入。
 
@@ -115,9 +117,9 @@ sudo -u guanlan-financing sudo /usr/local/libexec/guanlan-financing-publish YYYY
 
 ## 切换顺序与回退
 
-本机 `ai` 保留为暂停的备用任务，VPS 作为正式主控。切换验收包括定时器、依赖、当天派发预览、已接受日期的真实 VPS 发布和线上回读；没有把这些检查描述为未来新日期的全流程结果。含新融资的次日 Hermes 自动审核与 CI 审批仍须按实际运行回执判断，hold 或持续失败保留现场待责任人处理。
+VPS 作为正式主控；本机现有 `automation` 每天 10:30 执行检查与已授权恢复，旧 `ai` 任务已删除。切换验收包括定时器、依赖、当天派发预览、已接受日期的真实 VPS 发布和线上回读；没有把这些检查描述为未来新日期的全流程结果。含新融资的次日 Hermes 自动审核与 CI 审批仍须按实际运行回执判断，hold 或持续失败保留现场待责任人处理。
 
-VPS 有问题时，停用 `guanlan-financing.timer` 或恢复 `GUANLAN_VPS_MODE=standby`；本机 runner 与 `ai` 均已保留。若本机未来被暂停，通过 Codex automation 工具恢复原配置；不要新建重复的每日任务。恢复从未发布的接受日期和失败阶段开始。
+VPS 有问题时，停用 `guanlan-financing.timer` 或恢复 `GUANLAN_VPS_MODE=standby`；本机 runner 与现有 10:30 Codex 检查任务 `automation` 保留；旧 `ai` 已删除。若需切回本机执行，通过正式 Codex automation 工具调整现有任务并核验；不要新建重复的每日采集任务。恢复从未发布的接受日期和失败阶段开始。
 
 本机知识库继续由接受 main 的生成入口更新；VPS Vault 物理独立。需要拉回 VPS 状态时仅取 body-free 回执，不将私有原文整库复制到知识库。部署脚本、迁移前源码和自动化配置备份位于本机 `90-工作区/每日监测整合/2026-10-03-VPS迁移`。
 
