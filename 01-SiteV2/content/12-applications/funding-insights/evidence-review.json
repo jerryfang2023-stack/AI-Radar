@@ -287,6 +287,132 @@
           "verification_ref": "evidence://2645a02f84b1ee7ab2d6f6bc3594979bb39bb1b9679b997a2e0c4f1c7a59adc3"
         }
       ]
+    },
+    {
+      "id": "FER-20261125-perry-source-provenance",
+      "event_id": "EV-788e4fe44885fd36",
+      "card_id": "FI-7a2ce5c154897e4a",
+      "reviewed_at": "2026-11-25T03:09:35.619148+00:00",
+      "reviewer": "Codex responsible original-source reviewer",
+      "reason": "逐字核对已保存的11月18日The SaaS News、Dealroom及EU-Startups完整正文，确认法律AI产品背景、同一seed轮、Haatch领投及原文明确€2M等值$2.2M。补充完整原文支持和背景来源用途，保留原发布融资主体、美元金额、日期、轮次与投资方；不批准实体合并。",
+      "public_note": "2026-11-25 核验：补充完整融资原文及产品背景来源；原220万美元种子轮、日期和投资方记录保持。",
+      "public_note_en": "Verified on 2026-11-25: complete financing and product-background sources added; the existing USD 2.2 million seed round, date and investor roles remain unchanged.",
+      "financing_changes": {},
+      "sources": [
+        {
+          "previous": {
+            "source_id": "FISRC-6997ec563f09c1fe",
+            "source_url": "https://www.thesaasnews.com/news/perry-ai-raises-2-2m-seed/",
+            "title": "Perry AI Raises $2.2M Seed",
+            "publisher": "thesaasnews.com",
+            "source_class": "independent",
+            "capture_method": "direct_fetch",
+            "captured_at": "2026-11-19T01:16:42.174Z",
+            "content_hash": "738471a282ea0a9f",
+            "source_artifact_id": null,
+            "raw_id": null
+          },
+          "source_id": "FISRC-6997ec563f09c1fe",
+          "source_url": "https://www.thesaasnews.com/news/perry-ai-raises-2-2m-seed/",
+          "title": "Perry AI Raises $2.2M Seed",
+          "publisher": "thesaasnews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-19T01:16:42.174Z",
+          "content_hash": "738471a282ea0a9f",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "published_at": "2026-11-18T10:12:14.000Z",
+          "verified_at": "2026-11-25T03:09:35.619148+00:00",
+          "purpose": "current_round",
+          "supports_fields": [
+            "amount",
+            "currency",
+            "round",
+            "investors",
+            "investor_roles",
+            "announced_at"
+          ],
+          "verification_hash": "738471a282ea0a9faa6fc990257ea18860efe9091dfb40f4da7b0812930a573f",
+          "verification_ref": "funding-research/FISRC-6997ec563f09c1fe.json#body_clean"
+        },
+        {
+          "previous": {
+            "source_id": "FISRC-b1ffa28e273f7f26",
+            "source_url": "https://dealroom.co/news/173754-perry-ai-raises-2-2m-seed-to-give-private-capital-a-legal-memory/",
+            "title": "Perry AI raises $2.2M seed to give private capital a legal memory",
+            "publisher": "dealroom.co",
+            "source_class": "independent",
+            "capture_method": "direct_fetch",
+            "captured_at": "2026-11-19T01:16:44.172Z",
+            "content_hash": "f92ee74b9430edb2",
+            "source_artifact_id": null,
+            "raw_id": null
+          },
+          "source_id": "FISRC-b1ffa28e273f7f26",
+          "source_url": "https://dealroom.co/news/173754-perry-ai-raises-2-2m-seed-to-give-private-capital-a-legal-memory/",
+          "title": "Perry AI raises $2.2M seed to give private capital a legal memory",
+          "publisher": "dealroom.co",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-19T01:16:44.172Z",
+          "content_hash": "f92ee74b9430edb2",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "published_at": "2026-11-18T05:30:38.000Z",
+          "verified_at": "2026-11-25T03:09:35.619148+00:00",
+          "purpose": "company_background",
+          "supports_fields": [],
+          "verification_hash": "f92ee74b9430edb2f4c34444ad3ff116861653a9eef720c7cc10dbb4ae92b473",
+          "verification_ref": "funding-research/FISRC-b1ffa28e273f7f26.json#body_clean"
+        },
+        {
+          "previous": {
+            "source_id": "FISRC-11faac8c8448faa7",
+            "source_url": "https://www.eu-startups.com/2026/11/londons-perry-ai-raises-e2-million-to-bring-ai-powered-legal-intelligence-to-private-capital-funds/",
+            "title": "伦敦 Perry AI 融资 200 万欧元，为私募资本基金带来 AI 驱动的法律智能",
+            "publisher": "www.eu-startups.com",
+            "source_class": "canonical_event_source",
+            "capture_method": "data_center_v4_source_artifact",
+            "captured_at": "2026-11-25T00:19:07.740Z",
+            "content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+            "source_artifact_id": "SA-2cfb3418a8f1dcfa",
+            "raw_id": "RAW-3f032a7ec73bf61a"
+          },
+          "source_id": "FISRC-11faac8c8448faa7",
+          "source_url": "https://www.eu-startups.com/2026/11/londons-perry-ai-raises-e2-million-to-bring-ai-powered-legal-intelligence-to-private-capital-funds/",
+          "title": "伦敦 Perry AI 融资 200 万欧元，为私募资本基金带来 AI 驱动的法律智能",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-25T00:19:07.740Z",
+          "content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+          "source_artifact_id": "SA-2cfb3418a8f1dcfa",
+          "raw_id": "RAW-3f032a7ec73bf61a",
+          "published_at": "2026-11-18",
+          "verified_at": "2026-11-25T03:09:35.619148+00:00",
+          "purpose": "current_round",
+          "supports_fields": [
+            "amount",
+            "currency",
+            "round",
+            "investors",
+            "investor_roles",
+            "announced_at"
+          ],
+          "verification_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+          "verification_ref": "evidence://1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+          "added": true
+        }
+      ],
+      "financing_evidence": [
+        {
+          "source_id": "FISRC-11faac8c8448faa7",
+          "quote": "Perry AI, the London-based startup building an AI-powered legal operating system for private equity and venture capital funds, has raised €2 million ($2.2 million) in a Seed funding round.",
+          "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+          "quote_hash": "7e7515016f428647690e0457efeab43d8c5f83b19b9138f5674519ab65a45a6c"
+        }
+      ]
     }
   ]
 }
