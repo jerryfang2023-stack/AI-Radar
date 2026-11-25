@@ -138,3 +138,21 @@ test('canonical replay replaces cached truncated references only for the bound c
  }
  assert.equal(payload.financing.evidence_refs.some(r=>r.source_id==='FISRC-historical'),true);
 });
+
+test('cached research restores only source metadata matching the current raw hash and event',async()=>{
+ const {ensureCanonicalFundingEvidence}=await import('../funding-insight-v1-utils.mjs');
+ const header='HomeUK-StartupsPerry AI raises €2 million...';
+ const complete='Perry AI raised €2 million ($2.2 million) in a Seed funding round.';
+ const event={event_id:'EV-current',object:'€2 million seed funding',claim_refs:['C'],source_refs:['SA-current'],event_time:'2026-11-18'};
+ const bundle={claims:[{claim_id:'C',claim_type:'funding',verification_status:'accepted',raw_id:'RAW-current',source_quote:complete,object:event.object}],
+  rawDocuments:[{raw_id:'RAW-current',source_artifact_id:'SA-current',content_hash:'a'.repeat(64)}]};
+ const make=hash=>({research_sources:[{raw_id:'RAW-current',source_id:'FISRC-current',content_hash:hash}],
+  financing:{evidence_refs:[{source_id:'FISRC-current',quote:header}]}});
+ const cached=make('a'.repeat(64));ensureCanonicalFundingEvidence(cached,bundle,event,[]);
+ assert.deepEqual(cached.financing.evidence_refs,[{source_id:'FISRC-current',quote:complete}]);
+ for(const other of [make('b'.repeat(64)),make('a'.repeat(64))]){
+  const actualEvent=other.research_sources[0].content_hash==='b'.repeat(64)?event:{...event,source_refs:['SA-other']};
+  ensureCanonicalFundingEvidence(other,bundle,actualEvent,[]);
+  assert.equal(other.financing.evidence_refs[0].quote,header);
+ }
+});

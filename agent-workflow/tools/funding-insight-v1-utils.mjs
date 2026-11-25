@@ -2047,7 +2047,13 @@ export function sanitizeResearchPayload(payload = {}, sources = []) {
 export function ensureCanonicalFundingEvidence(payload = {}, bundle = {}, event = {}, sources = []) {
   payload.financing = payload.financing || {};
   const claimById = new Map((bundle.claims || []).map((claim) => [claim.claim_id, claim]));
-  const sourceByRawId = new Map(sources
+  const currentRaw = new Map((bundle.rawDocuments || []).map(raw=>[raw.raw_id,raw]));
+  const boundSources = sources.length ? sources : (payload.research_sources || []).filter(source=>{
+    const raw=currentRaw.get(source.raw_id);
+    return raw && raw.content_hash && raw.content_hash===source.content_hash
+      && (event.source_refs || []).includes(raw.source_artifact_id);
+  });
+  const sourceByRawId = new Map(boundSources
     .filter((source) => source.raw_id)
     .map((source) => [source.raw_id, source]));
   for (const claimId of event.claim_refs || []) {

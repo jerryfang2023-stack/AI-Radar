@@ -1105,7 +1105,9 @@ async function main() {
     if (!card || !event || card.triggered_by_event_id !== event.event_id
       || !checkpointCardMatchesSelection(event.event_id, eventIds)
       || existingByEvent.has(event.event_id)) continue;
-    const normalized = normalizeFundingInsightCard(card, entityIndex, entityDecisions, companyIdentityReview);
+    const repaired=structuredClone(card);
+    ensureCanonicalFundingEvidence(repaired,bundle,event,[]);
+    const normalized = normalizeFundingInsightCard(repaired, entityIndex, entityDecisions, companyIdentityReview);
     if (!fundingInsightProblems(normalized).length && !fundingEventCardConsistencyProblems(normalized, event, bundle.claims, bundle.entities).length) existingByEvent.set(event.event_id, normalized);
   }
   // Keep eligibility in lockstep with the inspector: a verified announced
