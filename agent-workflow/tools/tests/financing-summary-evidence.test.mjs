@@ -94,3 +94,19 @@ test('canonical replay preserves distinct angel and angel-plus rounds and their 
  assert.equal(normalizeFundingRound('种子轮及种子+轮').code,'multi_round');
  assert.equal(normalizeFundingRound('种子+轮').code,'seed_plus');
 });
+
+test('financing decision content excludes concatenated publisher navigation without changing original spans',()=>{
+ const article='Acorda has raised €2.15 million in a pre-Seed funding round.';
+ for(const footer of [
+  'Previous articleSwiss startup coprod raises €5.45 million for robotics hardware',
+  'Next articleLondon startup raises €9 million',
+  'Previous article Swiss startup raises €5.45 million',
+  'Related Articles\nAnother startup raises €8 million',
+ ]){
+  const original=article+'\n'+footer;
+  assert.equal(financingDecisionText(original),article);
+  assert.equal(original.slice(0,financingDecisionText(original).length),article);
+  assert.match(original,/article|Articles/);
+ }
+ assert.equal(financingDecisionText('Acorda raised funding. Its previous article discussed research.'),'Acorda raised funding. Its previous article discussed research.');
+});

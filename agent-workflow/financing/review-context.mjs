@@ -48,6 +48,14 @@ export function publicationProjectionAudit(before, after, {research = {}, candid
     duplicate_public_subject_applications:duplicates(after.cards,applicationId,'application_entity_id'),
     duplicate_public_funding_events:duplicates(after.event_cards,card=>card.triggered_by_event_id,'event_id'),
     missing_historical_event_cards:before.event_cards.filter(card=>!currentEvents.has(card.funding_insight_id)).map(card=>card.funding_insight_id),
+    same_round_currency_lineage:(after.review?.cross_currency_duplicates || []).map(row=>{
+      const canonical=after.event_cards.find(card=>card.funding_insight_id===row.canonical_id);
+      const eventIds=new Set(canonical ? [canonical.triggered_by_event_id,...(canonical.source_event_ids || [])] : []);
+      return {...row,canonical_event_id:canonical?.triggered_by_event_id || null,
+        public_event_card_ids:after.event_cards.filter(card=>[card.triggered_by_event_id,...(card.source_event_ids || [])].some(id=>eventIds.has(id))).map(card=>card.funding_insight_id),
+        historical_round_count:canonical?.financing?.cumulative_amount?.historical_round_count ?? null,
+        disclosures:(canonical?.financing?.disclosures || []).map(({event_id,amount,announced_at})=>({event_id,amount,announced_at}))};
+    }),
     changed_historical_event_cards:changed.map(card=>card.funding_insight_id),
     retained_historical_event_count:before.event_cards.filter(card=>currentEvents.has(card.funding_insight_id)).length,
     replaced_subjects:before.cards.filter(old=>!currentSubjectIds.has(old.funding_insight_id)).map(old=>{
@@ -68,7 +76,7 @@ export function publicationProjectionAudit(before, after, {research = {}, candid
           .map(row=>({candidate_id:row.candidate_id,candidate_kind:row.candidate_kind,research_name:row.research_name,
             status:row.status,company_entity_ids:row.company_entity_ids || []}))};
     }),
-    contract:'Research cards and cached research receipts are intermediate records; their legacy auto_published status means research generation completed, never public financing admission. A card in catalog.review.pending is correctly withheld, not a classification bypass. Zero public delta does not mean zero raw/canonical changes. Public subjects are catalog.cards; public financing events are catalog.event_cards. Different IDs across these layers and source_card_ids lineage are expected, not additional public cards. Pending person/product canonical candidates do not alone imply pending company identity. Research selected-event outcomes include pending/deduplicated cases; inspect complete arrays instead of a read excerpt. All semantic facts still require original review.'
+    contract:'Research cards and cached research receipts are intermediate records; their legacy auto_published status means research generation completed, never public financing admission. A card in catalog.review.pending is correctly withheld, not a classification bypass. Zero public delta does not mean zero raw/canonical changes. Public subjects are catalog.cards; public financing events are catalog.event_cards. Different IDs across these layers and source_card_ids lineage are expected, not additional public cards. Pending person/product canonical candidates do not alone imply pending company identity. Research selected-event outcomes include pending/deduplicated cases; inspect complete arrays instead of a read excerpt. financing.disclosures retains source disclosures, including equivalent currencies for a single round; it is not a round counter. Check same_round_currency_lineage, historical_rounds, cumulative_amount and actual event_cards, and verify the captured equivalence and company/date/round/investors before accepting a merge. All semantic facts still require original review.'
   };
 }
 
