@@ -3291,3 +3291,21 @@ test("source translation cache and public display share the minimum title length
   assert.equal(titleTranslationLooksUsable(source, title), true);
   assert.equal(buildEventDisplayTitle({rawDocument:{title_original:source,title_zh:title}}), title);
 });
+
+test('location possessive funding headlines bind the recipient and exclude navigation and industry totals',()=>{
+ const title='London’s Perry AI raises €2 million to bring AI-powered legal intelligence to private capital funds';
+ const body=[
+  'HomeUK-StartupsLondon’s Perry AI raises €2 million to bring AI-powered legal intelligence to...',
+  title,
+  'Perry AI, the London-based startup building an AI-powered legal operating system for private equity and venture capital funds, has raised €2 million ($2.2 million) in a Seed funding round.',
+  'The round was led by Haatch, with participation from Antler.',
+  'The company says the Seed funding round was oversubscribed, driven by strong interest in the LegalTech space, with funding surpassing €2.09 billion ($2.3 billion) in the first quarter of 2026 alone.',
+  'Previous articleSwiss robotics company raises €9 million',
+ ].join('\n');
+ const bundle=buildBundle([entry('perry-complete-article',title,body,{title_zh:'伦敦Perry AI融资200万欧元，拓展法律AI平台'})],taxonomy,date,'2026-07-16T00:00:00.000Z');
+ assert.equal(bundle.canonical_events.length,1);
+ assert.equal(bundle.claims.every(c=>c.subject==='Perry AI'),true);
+ assert.equal(bundle.claims.some(c=>/HomeUK|billion|Previous article|\.\.\.$/u.test(c.source_quote)),false);
+ assert.deepEqual(bundle.canonical_events[0].metrics,['€2 million','$2.2 million']);
+ assert.equal(bundle.entities.some(e=>e.canonical_name==='Perry AI'),true);
+});
