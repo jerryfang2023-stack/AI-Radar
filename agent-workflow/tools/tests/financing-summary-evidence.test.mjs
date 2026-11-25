@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {financingDecisionText,fundingClaimGroupingProblem,eventSourceEligibility,reviewedFundingDate} from '../build-data-center-v4.mjs';
+import {fundingClaimQuoteUsable,fundingClaimCandidateRelevant,financingDecisionText,fundingClaimGroupingProblem,eventSourceEligibility,reviewedFundingDate} from '../build-data-center-v4.mjs';
 import {canonicalFundingEventAmount,isEligibleFundingInsightEvent,normalizeFundingAmount,subjectCompanyForEvent} from '../funding-insight-v1-utils.mjs';
 import {isPendingFundingTitle,isWithdrawnFundingTitle} from '../lib/funding-transaction-status.mjs';
 const event={event_type:'funding',event_status:'completed',publication_status:'verified',display_title_zh:'某AI企业完成融资',claim_refs:['C'],metrics:['1.45 million']};
@@ -109,4 +109,16 @@ test('financing decision content excludes concatenated publisher navigation with
   assert.match(original,/article|Articles/);
  }
  assert.equal(financingDecisionText('Acorda raised funding. Its previous article discussed research.'),'Acorda raised funding. Its previous article discussed research.');
+});
+
+test('truncated breadcrumb text cannot become funding evidence while complete article quotes remain usable',()=>{
+ const header='HomeUK-StartupsLondon’s Perry AI raises €2 million to bring AI-powered legal intelligence to...';
+ const complete='Perry AI has raised €2 million ($2.2 million) in a Seed funding round.';
+ for(const quote of [header,'Perry AI raises €2 million…','HomeUK-StartupsPerry AI raises €2 million']){
+  assert.equal(fundingClaimQuoteUsable(quote),false);
+  assert.equal(fundingClaimCandidateRelevant({start:0,quote},quote,'Perry AI'),false);
+ }
+ assert.equal(fundingClaimQuoteUsable(complete),true);
+ assert.equal(fundingClaimCandidateRelevant({start:700,quote:complete},'Perry AI raises €2 million','Perry AI'),true);
+ assert.equal(fundingClaimQuoteUsable('Home AI raised $2 million to build software.'),true);
 });

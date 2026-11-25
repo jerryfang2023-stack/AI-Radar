@@ -5,6 +5,16 @@ import {crossCurrencyRoundEvidence} from './cross-currency-round.mjs';
 // independent inputs for histories and capital-flow statistics.
 const normalized = value => String(value || '').normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
 const unique = (rows, key) => [...new Map(rows.map(row => [key(row), row])).values()];
+function mergeRoundProducts(canonical = [], duplicate = []) {
+  const products = new Map();
+  for (const product of [...canonical,...duplicate]) {
+    const key=normalized(product.name),prior=products.get(key);
+    if (!key) continue;
+    if (!prior) products.set(key,structuredClone(product));
+    else prior.evidence_refs=unique([...(prior.evidence_refs || []),...(product.evidence_refs || [])],ref=>ref.source_id+':'+ref.quote);
+  }
+  return [...products.values()];
+}
 export function productAssertionHash(product) {
   return createHash('sha256').update(JSON.stringify([product.name,product.description || product.summary || '',
     product.target_customers || '',product.features || [],
@@ -45,7 +55,7 @@ export function buildFundingSubjects(input, review = {}) {
       canonical.source_event_ids = [...new Set([canonical.triggered_by_event_id,...canonical.source_event_ids||[],duplicate.triggered_by_event_id,...duplicate.source_event_ids||[]])];
       canonical.source_card_ids = [...new Set([canonical.funding_insight_id,...canonical.source_card_ids||[],id])];
       canonical.research_sources = unique([...canonical.research_sources||[],...duplicate.research_sources||[]],s=>s.source_id);
-      canonical.products = [...canonical.products||[],...duplicate.products||[]];
+      canonical.products = mergeRoundProducts(canonical.products,duplicate.products);
       canonical.financing.disclosures = unique([...canonical.financing.disclosures||[],...duplicate.financing.disclosures||[]],r=>r.event_id);
       canonical.financing.evidence_refs = unique([...canonical.financing.evidence_refs||[],...duplicate.financing.evidence_refs||[]],r=>`${r.source_id}:${r.quote}`);
       duplicateIds.add(id);
@@ -68,7 +78,7 @@ export function buildFundingSubjects(input, review = {}) {
       canonical.source_event_ids=[...new Set([canonical.triggered_by_event_id,...canonical.source_event_ids || [],duplicate.triggered_by_event_id,...duplicate.source_event_ids || []])];
       canonical.source_card_ids=[...new Set([canonical.funding_insight_id,...canonical.source_card_ids || [],duplicate.funding_insight_id,...duplicate.source_card_ids || []])];
       canonical.research_sources=unique([...canonical.research_sources || [],...duplicate.research_sources || []],row=>row.source_id);
-      canonical.products=[...canonical.products || [],...duplicate.products || []];
+      canonical.products=mergeRoundProducts(canonical.products,duplicate.products);
       canonical.financing.evidence_refs=unique([...canonical.financing.evidence_refs || [],...duplicate.financing.evidence_refs || []],row=>`${row.source_id}:${row.quote}`);
       duplicateIds.add(duplicate.funding_insight_id);
       currencyDuplicates.push({canonical_id:canonical.funding_insight_id,duplicate_id:duplicate.funding_insight_id,

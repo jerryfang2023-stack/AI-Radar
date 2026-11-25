@@ -16,7 +16,7 @@ export function publicationReviewDelta(before,after) {
 }
 
 // Layer identity and complete-array counts are mechanical audit evidence, not approval.
-export function publicationProjectionAudit(before, after, {research = {}, candidates = []} = {}) {
+export function publicationProjectionAudit(before, after, {research = {}, candidates = [], institutions = []} = {}) {
   const applicationId = card => card.company?.application_entity_id || card.company?.entity_id || '';
   const duplicates = (rows, key, field) => {
     const groups = new Map();
@@ -48,6 +48,11 @@ export function publicationProjectionAudit(before, after, {research = {}, candid
     duplicate_public_subject_applications:duplicates(after.cards,applicationId,'application_entity_id'),
     duplicate_public_funding_events:duplicates(after.event_cards,card=>card.triggered_by_event_id,'event_id'),
     missing_historical_event_cards:before.event_cards.filter(card=>!currentEvents.has(card.funding_insight_id)).map(card=>card.funding_insight_id),
+    investment_activity_lineage:institutions.flatMap(institution=>(institution.activities || [])
+      .filter(activity=>admitted.some(card=>[card.triggered_by_event_id,...(card.source_event_ids || [])].some(id=>(activity.event_ids || []).includes(id))))
+      .map(activity=>({activity_id:activity.activity_id,investing_institution:{id:institution.id,name:institution.name},
+        recipient_company:{id:activity.company_entity_id,name:activity.company_name},role:activity.role,role_code:activity.role_code,
+        event_ids:activity.event_ids,funding_insight_id:activity.funding_insight_id,evidence:activity.evidence || []}))),
     same_round_currency_lineage:(after.review?.cross_currency_duplicates || []).map(row=>{
       const canonical=after.event_cards.find(card=>card.funding_insight_id===row.canonical_id);
       const eventIds=new Set(canonical ? [canonical.triggered_by_event_id,...(canonical.source_event_ids || [])] : []);
@@ -157,7 +162,8 @@ export function writePublicationReviewContext({checkout,directory,base,head,date
   const funding=path.join(checkout,'01-SiteV2/content/12-applications/funding-insights');
   const projection_audit=publicationProjectionAudit(before,after,{
     research:optionalJson(path.join(funding,`${date}.json`),{}),
-    candidates:optionalJson(path.join(funding,'entity-review-queue.json'),{}).candidates || []});
+    candidates:optionalJson(path.join(funding,'entity-review-queue.json'),{}).candidates || [],
+    institutions:optionalJson(path.join(checkout,'01-SiteV2/content/11-databases/investment-institutions-v1.json'),{}).institutions || []});
   const dailyPath=`01-SiteV2/content/11-databases/data-center-v4/${date}/canonical-events.json`;
   const listed=spawnSync('git',['ls-tree','--name-only',base,'--',dailyPath],{cwd:checkout,encoding:'utf8'});
   if(listed.status!==0)throw new Error('review_base_facts_unavailable');
