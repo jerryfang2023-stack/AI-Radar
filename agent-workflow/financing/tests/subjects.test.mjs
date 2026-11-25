@@ -20,6 +20,9 @@ test('same round in two currencies requires exact captured equivalence and retai
  const snapshot=structuredClone([eur,usd]),out=buildFundingSubjects([eur,usd]);
  assert.equal(out.cards.length,1);assert.equal(out.event_cards.length,1);
  assert.equal(out.cards[0].financing.disclosures.length,2);
+ assert.equal(out.event_cards[0].products.length,1);
+ assert.equal(out.cards[0].products[0].evidence_refs.length,2);
+ assert.deepEqual(out.event_cards[0].products,[{name:'Product'}]);
  assert.equal(out.cards[0].financing.amount_original,'€2.94 million');
  assert.equal(out.aliases['b-usd'],'a-eur');assert.equal(out.cross_currency_duplicates.length,1);
  assert.deepEqual([eur,usd],snapshot);

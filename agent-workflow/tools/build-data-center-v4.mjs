@@ -1326,7 +1326,14 @@ export function repairFundingHeadlineIdentity(title, body, parsed) {
   return unique.length===1?unique[0]:null;
 }
 
+export function fundingClaimQuoteUsable(quote = "") {
+  const text = normalizeSpace(quote);
+  return Boolean(text) && !/(?:\.{3}|…)\s*$/u.test(text)
+    && !/^Home[A-Z]{2}[- ]?Startups/u.test(text);
+}
+
 export function fundingClaimCandidateRelevant({ start = 0, quote = "" } = {}, title = "", subject = "") {
+  if (!fundingClaimQuoteUsable(quote)) return false;
   const normalizedQuote = normalizeSpace(quote).toLocaleLowerCase();
   if (!normalizedQuote) return false;
   if (start === 0 && normalizedQuote.includes(normalizeSpace(title).toLocaleLowerCase())) return true;
@@ -2295,7 +2302,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       }
       eventClaimRows = [...new Map(eventClaimRows
         .filter((claim) => !BOILERPLATE_TEXT.test(claim.source_quote))
-        .filter((claim) => rule.eventType !== "funding" || claim.source_span.end <= financingDecisionText(bodyClean).length)
+        .filter((claim) => rule.eventType !== "funding" || (fundingClaimQuoteUsable(claim.source_quote) && claim.source_span.end <= financingDecisionText(bodyClean).length))
         .map((claim) => [claim.claim_id, claim])).values()];
       if (!eventClaimRows.length) {
         qaQueue.push({
