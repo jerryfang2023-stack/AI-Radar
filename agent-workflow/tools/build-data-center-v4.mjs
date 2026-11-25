@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+import { fundingClaimQuoteUsable } from "./lib/funding-quote-quality.mjs";
+export { fundingClaimQuoteUsable };
 import { publisherHeaderDate } from "./lib/source-publication-date.mjs";
 import { isMainModule } from "./lib/module-entry.mjs";
 import { isCompanyProfileUrl } from "./lib/source-page-kind.mjs";
@@ -1327,6 +1329,7 @@ export function repairFundingHeadlineIdentity(title, body, parsed) {
 }
 
 export function fundingClaimCandidateRelevant({ start = 0, quote = "" } = {}, title = "", subject = "") {
+  if (!fundingClaimQuoteUsable(quote)) return false;
   const normalizedQuote = normalizeSpace(quote).toLocaleLowerCase();
   if (!normalizedQuote) return false;
   if (start === 0 && normalizedQuote.includes(normalizeSpace(title).toLocaleLowerCase())) return true;
@@ -1372,7 +1375,7 @@ function claimCandidates(body, title, rule, subject = "") {
     : [];
   const merged = [...direct, ...supporting, ...related]
     .filter((span, index, list) => list.findIndex((item) => item.start === span.start) === index)
-    .filter((span) => rule.eventType !== "funding" || rule.pattern.test(span.quote));
+    .filter((span) => rule.eventType !== "funding" || (rule.pattern.test(span.quote) && fundingClaimCandidateRelevant(span, title, subject)));
   return merged.slice(0, 4);
 }
 
@@ -2261,7 +2264,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
         const tail = parsed.subject.match(/(?:&#8217;|’|')s\s+([A-Z][A-Za-z0-9.&'-]*(?:\s+[A-Z][A-Za-z0-9.&'-]*){0,3})$/u)?.[1];
         if (tail) {
           const escaped = tail.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
-          const recipient = new RegExp(`(?:^|\\n)${escaped},\\s+(?:a|an)\\s+[^.\\n]{0,160}?\\bhas raised\\s+([^\\n]{1,100})`, "u").exec(bodyClean);
+          const recipient = new RegExp(`(?:^|\\n)${escaped},\\s+(?:a|an|the)\\s+[^.\\n]{0,160}?\\bhas raised\\s+([^\\n]{1,100})`, "u").exec(bodyClean);
           const expected = metricValues(parsed.object).map(normalizedFundingMetric);
           if (recipient && expected.length && metricValues(recipient[1]).map(normalizedFundingMetric).some(amount => expected.includes(amount))) parsed.subject = tail;
         }
@@ -2295,7 +2298,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       }
       eventClaimRows = [...new Map(eventClaimRows
         .filter((claim) => !BOILERPLATE_TEXT.test(claim.source_quote))
-        .filter((claim) => rule.eventType !== "funding" || claim.source_span.end <= financingDecisionText(bodyClean).length)
+        .filter((claim) => rule.eventType !== "funding" || (fundingClaimQuoteUsable(claim.source_quote) && claim.source_span.end <= financingDecisionText(bodyClean).length))
         .map((claim) => [claim.claim_id, claim])).values()];
       if (!eventClaimRows.length) {
         qaQueue.push({

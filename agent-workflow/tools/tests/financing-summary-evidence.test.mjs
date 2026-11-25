@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {financingDecisionText,fundingClaimGroupingProblem,eventSourceEligibility,reviewedFundingDate} from '../build-data-center-v4.mjs';
+import {fundingClaimQuoteUsable,fundingClaimCandidateRelevant,financingDecisionText,fundingClaimGroupingProblem,eventSourceEligibility,reviewedFundingDate} from '../build-data-center-v4.mjs';
 import {canonicalFundingEventAmount,isEligibleFundingInsightEvent,normalizeFundingAmount,subjectCompanyForEvent} from '../funding-insight-v1-utils.mjs';
 import {isPendingFundingTitle,isWithdrawnFundingTitle} from '../lib/funding-transaction-status.mjs';
 const event={event_type:'funding',event_status:'completed',publication_status:'verified',display_title_zh:'某AI企业完成融资',claim_refs:['C'],metrics:['1.45 million']};
@@ -109,4 +109,50 @@ test('financing decision content excludes concatenated publisher navigation with
   assert.match(original,/article|Articles/);
  }
  assert.equal(financingDecisionText('Acorda raised funding. Its previous article discussed research.'),'Acorda raised funding. Its previous article discussed research.');
+});
+
+test('truncated breadcrumb text cannot become funding evidence while complete article quotes remain usable',()=>{
+ const header='HomeUK-StartupsLondon’s Perry AI raises €2 million to bring AI-powered legal intelligence to...';
+ const complete='Perry AI has raised €2 million ($2.2 million) in a Seed funding round.';
+ for(const quote of [header,'Perry AI raises €2 million…','HomeUK-StartupsPerry AI raises €2 million']){
+  assert.equal(fundingClaimQuoteUsable(quote),false);
+  assert.equal(fundingClaimCandidateRelevant({start:0,quote},quote,'Perry AI'),false);
+ }
+ assert.equal(fundingClaimQuoteUsable(complete),true);
+ assert.equal(fundingClaimCandidateRelevant({start:700,quote:complete},'Perry AI raises €2 million','Perry AI'),true);
+ assert.equal(fundingClaimQuoteUsable('Home AI raised $2 million to build software.'),true);
+});
+
+test('canonical replay replaces cached truncated references only for the bound current source',async()=>{
+ const {ensureCanonicalFundingEvidence}=await import('../funding-insight-v1-utils.mjs');
+ const header='HomeUK-StartupsPerry AI raises €2 million for legal AI...';
+ const complete='Perry AI raised €2 million ($2.2 million) in a Seed funding round.';
+ const refs=[{source_id:'FISRC-primary',quote:header},{source_id:'FISRC-historical',quote:'Archived historical excerpt...'}];
+ const payload={company:{evidence_refs:[refs[0]]},financing:{evidence_refs:structuredClone(refs),disclosures:[{event_id:'EV-current',evidence_refs:[refs[0]]}]}};
+ const claim=(id,quote)=>({claim_id:id,claim_type:'funding',verification_status:'accepted',raw_id:'RAW-current',source_quote:quote,object:'€2 million seed funding'});
+ const event={event_id:'EV-current',object:'€2 million seed funding',claim_refs:['bad','full'],event_time:'2026-11-18',metrics:['€2 million']};
+ ensureCanonicalFundingEvidence(payload,{claims:[claim('bad',header),claim('full',complete)]},event,[{raw_id:'RAW-current',source_id:'FISRC-primary'}]);
+ for(const rows of [payload.financing.evidence_refs,payload.company.evidence_refs,payload.financing.disclosures[0].evidence_refs]){
+  assert.equal(rows.some(r=>r.source_id==='FISRC-primary' && r.quote===header),false);
+  assert.equal(rows.some(r=>r.source_id==='FISRC-primary' && r.quote===complete),true);
+ }
+ assert.equal(payload.financing.evidence_refs.some(r=>r.source_id==='FISRC-historical'),true);
+});
+
+test('cached research restores only source metadata matching the current raw hash and event',async()=>{
+ const {ensureCanonicalFundingEvidence}=await import('../funding-insight-v1-utils.mjs');
+ const header='HomeUK-StartupsPerry AI raises €2 million...';
+ const complete='Perry AI raised €2 million ($2.2 million) in a Seed funding round.';
+ const event={event_id:'EV-current',object:'€2 million seed funding',claim_refs:['C'],source_refs:['SA-current'],event_time:'2026-11-18'};
+ const bundle={claims:[{claim_id:'C',claim_type:'funding',verification_status:'accepted',raw_id:'RAW-current',source_quote:complete,object:event.object}],
+  rawDocuments:[{raw_id:'RAW-current',source_artifact_id:'SA-current',content_hash:'a'.repeat(64)}]};
+ const make=hash=>({research_sources:[{raw_id:'RAW-current',source_id:'FISRC-current',content_hash:hash}],
+  financing:{evidence_refs:[{source_id:'FISRC-current',quote:header}]}});
+ const cached=make('a'.repeat(64));ensureCanonicalFundingEvidence(cached,bundle,event,[]);
+ assert.deepEqual(cached.financing.evidence_refs,[{source_id:'FISRC-current',quote:complete}]);
+ for(const other of [make('b'.repeat(64)),make('a'.repeat(64))]){
+  const actualEvent=other.research_sources[0].content_hash==='b'.repeat(64)?event:{...event,source_refs:['SA-other']};
+  ensureCanonicalFundingEvidence(other,bundle,actualEvent,[]);
+  assert.equal(other.financing.evidence_refs[0].quote,header);
+ }
 });

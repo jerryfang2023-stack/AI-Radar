@@ -1,3 +1,4 @@
+import { fundingClaimQuoteUsable } from "./lib/funding-quote-quality.mjs";
 import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
@@ -2046,7 +2047,13 @@ export function sanitizeResearchPayload(payload = {}, sources = []) {
 export function ensureCanonicalFundingEvidence(payload = {}, bundle = {}, event = {}, sources = []) {
   payload.financing = payload.financing || {};
   const claimById = new Map((bundle.claims || []).map((claim) => [claim.claim_id, claim]));
-  const sourceByRawId = new Map(sources
+  const currentRaw = new Map((bundle.rawDocuments || []).map(raw=>[raw.raw_id,raw]));
+  const boundSources = sources.length ? sources : (payload.research_sources || []).filter(source=>{
+    const raw=currentRaw.get(source.raw_id);
+    return raw && raw.content_hash && raw.content_hash===source.content_hash
+      && (event.source_refs || []).includes(raw.source_artifact_id);
+  });
+  const sourceByRawId = new Map(boundSources
     .filter((source) => source.raw_id)
     .map((source) => [source.raw_id, source]));
   for (const claimId of event.claim_refs || []) {
@@ -2057,15 +2064,22 @@ export function ensureCanonicalFundingEvidence(payload = {}, bundle = {}, event 
       claim?.claim_type === "funding"
       && claim?.verification_status === "accepted"
       && source
-      && quote
+      && fundingClaimQuoteUsable(quote)
     ) {
       // The accepted V4 claim was extracted from this raw document and keeps
       // the authoritative source span even when later body normalization
       // changes punctuation or whitespace.
-      payload.financing.evidence_refs = [...new Map([
-        { source_id: source.source_id, quote },
-        ...(payload.financing.evidence_refs || []),
-      ].map((item) => [`${item.source_id}|${item.quote}`, item])).values()];
+      const currentEvidence = (rows = []) => [...new Map([
+        { source_id: source.source_id, quote }, ...rows,
+      ].filter(item => item.source_id !== source.source_id || fundingClaimQuoteUsable(item.quote))
+        .map(item => [item.source_id+'|'+item.quote, item])).values()];
+      payload.financing.evidence_refs = currentEvidence(payload.financing.evidence_refs);
+      for (const disclosure of payload.financing.disclosures || []) if (disclosure.event_id === event.event_id) {
+        disclosure.evidence_refs = currentEvidence(disclosure.evidence_refs);
+      }
+      if (payload.company?.evidence_refs?.some(ref => ref.source_id === source.source_id && !fundingClaimQuoteUsable(ref.quote))) {
+        payload.company.evidence_refs = currentEvidence(payload.company.evidence_refs);
+      }
       break;
     }
   }

@@ -129,3 +129,14 @@ test('currency lineage exposes source disclosures and actual public events witho
  const duplicated={...after,event_cards:[canonical,{...card('FI-equivalent'),triggered_by_event_id:'EV-equivalent'}]};
  assert.deepEqual(publicationProjectionAudit(before,duplicated).same_round_currency_lineage[0].public_event_card_ids,['FI-existing','FI-equivalent']);
 });
+
+test('investment role audit keeps investor container separate from recipient company',()=>{
+ const before={cards:[card('FI-perry')],event_cards:[card('FI-perry')]};
+ const after={cards:[card('FI-perry',20)],event_cards:[{...card('FI-perry',20),triggered_by_event_id:'EV-perry'}]};
+ const institutions=[{id:'INV-antler',name:'Antler',activities:[{activity_id:'IA-participant',company_entity_id:'EN-perry',company_name:'Perry AI',role:'本轮参投',role_code:'participant',event_ids:['EV-perry'],funding_insight_id:'FI-source',evidence:[{quote:'Haatch led, with participation from Antler.'}]}]}];
+ const audit=publicationProjectionAudit(before,after,{institutions});
+ assert.equal(audit.investment_activity_lineage[0].investing_institution.name,'Antler');
+ assert.equal(audit.investment_activity_lineage[0].recipient_company.name,'Perry AI');
+ assert.equal(audit.investment_activity_lineage[0].role_code,'participant');
+ assert.equal(Object.hasOwn(audit.investment_activity_lineage[0],'fact_approval'),false);
+});
