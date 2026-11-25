@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+import { fundingClaimQuoteUsable } from "./lib/funding-quote-quality.mjs";
+export { fundingClaimQuoteUsable };
 import { publisherHeaderDate } from "./lib/source-publication-date.mjs";
 import { isMainModule } from "./lib/module-entry.mjs";
 import { isCompanyProfileUrl } from "./lib/source-page-kind.mjs";
@@ -1324,12 +1326,6 @@ export function repairFundingHeadlineIdentity(title, body, parsed) {
   }
   const unique=[...new Map(candidates.map(row=>[JSON.stringify(row),row])).values()];
   return unique.length===1?unique[0]:null;
-}
-
-export function fundingClaimQuoteUsable(quote = "") {
-  const text = normalizeSpace(quote);
-  return Boolean(text) && !/(?:\.{3}|…)\s*$/u.test(text)
-    && !/^Home[A-Z]{2}[- ]?Startups/u.test(text);
 }
 
 export function fundingClaimCandidateRelevant({ start = 0, quote = "" } = {}, title = "", subject = "") {

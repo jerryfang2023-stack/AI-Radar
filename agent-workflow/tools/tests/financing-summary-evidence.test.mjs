@@ -122,3 +122,19 @@ test('truncated breadcrumb text cannot become funding evidence while complete ar
  assert.equal(fundingClaimCandidateRelevant({start:700,quote:complete},'Perry AI raises €2 million','Perry AI'),true);
  assert.equal(fundingClaimQuoteUsable('Home AI raised $2 million to build software.'),true);
 });
+
+test('canonical replay replaces cached truncated references only for the bound current source',async()=>{
+ const {ensureCanonicalFundingEvidence}=await import('../funding-insight-v1-utils.mjs');
+ const header='HomeUK-StartupsPerry AI raises €2 million for legal AI...';
+ const complete='Perry AI raised €2 million ($2.2 million) in a Seed funding round.';
+ const refs=[{source_id:'FISRC-primary',quote:header},{source_id:'FISRC-historical',quote:'Archived historical excerpt...'}];
+ const payload={company:{evidence_refs:[refs[0]]},financing:{evidence_refs:structuredClone(refs),disclosures:[{event_id:'EV-current',evidence_refs:[refs[0]]}]}};
+ const claim=(id,quote)=>({claim_id:id,claim_type:'funding',verification_status:'accepted',raw_id:'RAW-current',source_quote:quote,object:'€2 million seed funding'});
+ const event={event_id:'EV-current',object:'€2 million seed funding',claim_refs:['bad','full'],event_time:'2026-11-18',metrics:['€2 million']};
+ ensureCanonicalFundingEvidence(payload,{claims:[claim('bad',header),claim('full',complete)]},event,[{raw_id:'RAW-current',source_id:'FISRC-primary'}]);
+ for(const rows of [payload.financing.evidence_refs,payload.company.evidence_refs,payload.financing.disclosures[0].evidence_refs]){
+  assert.equal(rows.some(r=>r.source_id==='FISRC-primary' && r.quote===header),false);
+  assert.equal(rows.some(r=>r.source_id==='FISRC-primary' && r.quote===complete),true);
+ }
+ assert.equal(payload.financing.evidence_refs.some(r=>r.source_id==='FISRC-historical'),true);
+});
