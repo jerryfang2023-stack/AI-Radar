@@ -1,11 +1,11 @@
 {
   "meta": {
     "schema_version": "INVESTMENT-INSTITUTION-V1.0",
-    "generated_at": "2026-11-25T00:42:35.001Z",
+    "generated_at": "2026-11-25T02:43:05.319Z",
     "source_contract": "FUNDING-INSIGHT-V1.3",
-    "institution_count": 3699,
-    "evidence_backed_count": 3699,
-    "current_round_activity_count": 4968,
+    "institution_count": 3698,
+    "evidence_backed_count": 3698,
+    "current_round_activity_count": 4966,
     "individual_investor_count": 222,
     "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
   },
@@ -282284,265 +282284,6 @@
       }
     },
     {
-      "id": "INV-d41970e9b87686",
-      "name": "Concept Ventures",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "GLOBAL"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2026-11-23",
-      "latest_disclosed_at": "2026-11-23",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "lead": 1
-      },
-      "round_codes": [
-        "pre_seed"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-46e3d635c7538e1c",
-          "canonical_entity_id": "",
-          "name": "Acorda"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-ccb024902e6c912e",
-          "funding_insight_id": "FI-b6368f4fabd2ba9e",
-          "event_ids": [
-            "EV-f46e4e1b37bb1b75"
-          ],
-          "company_entity_id": "EN-46e3d635c7538e1c",
-          "company_canonical_entity_id": "",
-          "company_name": "Acorda",
-          "round": "预种子轮",
-          "round_code": "pre_seed",
-          "round_original": "pre-Seed",
-          "amount_original": "€2.15 million",
-          "amount_normalized": {
-            "currency": "EUR",
-            "value": 2150000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "215 万欧元"
-          },
-          "announced_at": "2026-11-23",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-a6cec2f0e56a996d",
-              "source_url": "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
-              "source_title": "伦敦Acorda融资215万欧元，助银行在资金转移前识别支付诈骗",
-              "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
-              "quote": "The round was led by Concept Ventures, the first venture capital firm to back AI unicorn Eleven Labs, with participation from NFG Ventures",
-              "quote_hash": "b41425e39a6fb6b555553278266f4cbdfcf34c40194978d46163d15142147351"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-6637a05e2f96268c",
-          "funding_insight_id": "FI-fe82f871887d3c1f",
-          "event_ids": [
-            "EV-f1a605a25af30dc5",
-            "EV-6ae3594aadfcd3d8"
-          ],
-          "company_entity_id": "EN-58b507456c52c9b3",
-          "company_canonical_entity_id": "EN-58b507456c52c9b3",
-          "company_name": "Archestra",
-          "round": "轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "既有投资方（种子前轮）",
-          "amount_original": "",
-          "amount_normalized": null,
-          "announced_at": "",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "unknown",
-          "scope": "historical_or_ambiguous",
-          "role": "既有投资方（种子前轮）",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-50130a45d72291a2",
-              "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
-              "source_title": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
-              "source_content_hash": "65e55f883bf21e63",
-              "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in.",
-              "quote_hash": "2f653aa9e0a1b1cead77e89e9a782db3c2fc2e35ebb2e67dc763689267e7fc34"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-a6cec2f0e56a996d",
-          "source_url": "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
-          "source_title": "伦敦Acorda融资215万欧元，助银行在资金转移前识别支付诈骗",
-          "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
-          "quote": "The round was led by Concept Ventures, the first venture capital firm to back AI unicorn Eleven Labs, with participation from NFG Ventures",
-          "quote_hash": "b41425e39a6fb6b555553278266f4cbdfcf34c40194978d46163d15142147351"
-        },
-        {
-          "source_id": "FISRC-50130a45d72291a2",
-          "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
-          "source_title": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
-          "source_content_hash": "65e55f883bf21e63",
-          "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in.",
-          "quote_hash": "2f653aa9e0a1b1cead77e89e9a782db3c2fc2e35ebb2e67dc763689267e7fc34"
-        }
-      ],
-      "public_profile": {
-        "summary": "Concept Ventures 是专注 pre-seed 阶段的早期风险投资机构。当前官网称其首轮投资最高可达 150 万美元；机构历史页称其于 2018 年启动，前身为 RLC Ventures。创始合伙人 Reece Chowdhry 曾在 EY 工作并运营过三家软件创业公司。Archestra Seed 记录只确认 Concept 是返投的既有 pre-seed 投资方，不披露其本轮支票金额。",
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "researched",
-        "coverage_note": "官网现行页面披露首轮投资最高额 150 万美元；Archestra 来源只说其既有 pre-seed 投资人回到新一轮，未披露 Concept 的新一轮出资额。",
-        "facts": [
-          {
-            "field": "stage",
-            "label": "投资阶段",
-            "value": "专注 pre-seed 阶段",
-            "source_id": "concept_home"
-          },
-          {
-            "field": "check_size",
-            "label": "官网披露的首轮投资上限",
-            "value": "最高 150 万美元；截至 2026-09-28 核验页面",
-            "source_id": "concept_home"
-          },
-          {
-            "field": "history",
-            "label": "机构沿革",
-            "value": "官方历史介绍称其于 2018 年启动，前身为 RLC Ventures",
-            "source_id": "concept_history"
-          },
-          {
-            "field": "founder_background",
-            "label": "创始合伙人经历",
-            "value": "Reece Chowdhry 曾在 EY 工作，之后孵化和运营三家软件创业公司；官网称其中一家退出、一家失败、一家仍在运营。",
-            "source_id": "concept_leader_career"
-          }
-        ],
-        "milestones": [
-          {
-            "date": "2018",
-            "description": "官方历史介绍称 Concept Ventures 于 2018 年启动。",
-            "source_id": "concept_history"
-          }
-        ],
-        "current_roles": [
-          {
-            "title": "创始合伙人、普通合伙人",
-            "organization": "Concept Ventures · Reece Chowdhry",
-            "source_id": "concept_leader"
-          }
-        ],
-        "career": [
-          {
-            "organization": "Reece Chowdhry · EY / 软件创业公司",
-            "title": "顾问及创业者",
-            "period": "日期未披露",
-            "description": "曾在 EY 工作，之后运营三家软件创业公司。",
-            "source_id": "concept_leader_career"
-          }
-        ],
-        "track_record": [
-          {
-            "description": "Archestra 融资公告称 Concept Ventures 等既有 pre-seed 投资人再次参与；没有披露 Concept 单家支票金额。",
-            "source_id": "FISRC-50130a45d72291a2"
-          },
-          {
-            "description": "融资来源记录：Acorda · 预种子轮 · 2026-11-23 · 本轮领投 · €2.15 million。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-a6cec2f0e56a996d"
-          }
-        ],
-        "contacts": [
-          {
-            "kind": "website",
-            "label": "Concept Ventures 官网",
-            "value": "Concept Ventures",
-            "url": "https://conceptvc.work/",
-            "source_id": "concept_home"
-          },
-          {
-            "kind": "address",
-            "label": "伦敦办公地址",
-            "value": "40 Grosvenor Garden Mews S, Belgravia, London SW1W 0LD, UK",
-            "source_id": "concept_home"
-          }
-        ],
-        "sources": [
-          {
-            "source_id": "concept_home",
-            "source_url": "https://conceptvc.work/",
-            "source_title": "Concept Ventures | Europe’s Largest Pre-seed Fund",
-            "source_content_hash": "e9bd1b7ed508b8cbd65770cd30df19e881c7b881615981579b27495d11f67ea4",
-            "quote": "We invest up to $1.5m in first rounds, early by nature.",
-            "quote_hash": "a15f242866b438c9cb3165746384b171d522e025e8a58f32740089eccc37a916"
-          },
-          {
-            "source_id": "concept_history",
-            "source_url": "https://concept.vc/news/concept-raises-50m-fund",
-            "source_title": "Concept Closes on New £50m Fund | Concept Ventures",
-            "source_content_hash": "11367bd369ba4d1d053abd6bfd3ff06eefcbb356bd7849efe307cf7cbd413904",
-            "quote": "Launched in 2018, Concept has recorded a string of impressive early successes.",
-            "quote_hash": "bcde0a9949fa49bd5d9ab6226ac3bdcf7c1318b854fa0e6229e746344fbca7d9"
-          },
-          {
-            "source_id": "concept_leader",
-            "source_url": "https://concept.vc/team-members/reece-chowdhry",
-            "source_title": "Reece Chowdhry | General Partner",
-            "source_content_hash": "b4c10e2a3e3ff540def92d083648a52431a3c972b10f5e90d66fd976a36ad6f4",
-            "quote": "Reece Chowdhry is Founding Partner of Concept Ventures.",
-            "quote_hash": "bfd01db34ee6be3a052e328fe5ed1289d503f6ea9821c4f28fc21b58c65dc5ef"
-          },
-          {
-            "source_id": "concept_leader_career",
-            "source_url": "https://concept.vc/team-members/reece-chowdhry",
-            "source_title": "Reece Chowdhry | General Partner",
-            "source_content_hash": "b4c10e2a3e3ff540def92d083648a52431a3c972b10f5e90d66fd976a36ad6f4",
-            "quote": "He began his career at EY before incubating and operating three software startups; one exited, one failed, and one is still running today.",
-            "quote_hash": "166ec79eb9514da5db14e42334706fbbf444079f71dead52c20a857482d3b46b"
-          },
-          {
-            "source_id": "FISRC-50130a45d72291a2",
-            "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
-            "source_title": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
-            "source_content_hash": "65e55f883bf21e63",
-            "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in.",
-            "quote_hash": "2f653aa9e0a1b1cead77e89e9a782db3c2fc2e35ebb2e67dc763689267e7fc34"
-          },
-          {
-            "source_id": "FISRC-a6cec2f0e56a996d",
-            "source_url": "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
-            "source_title": "伦敦Acorda融资215万欧元，助银行在资金转移前识别支付诈骗",
-            "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
-            "quote": "The round was led by Concept Ventures, the first venture capital firm to back AI unicorn Eleven Labs, with participation from NFG Ventures",
-            "quote_hash": "b41425e39a6fb6b555553278266f4cbdfcf34c40194978d46163d15142147351"
-          }
-        ],
-        "last_verified_at": "2026-09-28"
-      }
-    },
-    {
       "id": "INV-f4647b70daf413",
       "name": "Endiya Ventures",
       "aliases": [],
@@ -283209,118 +282950,6 @@
             "source_content_hash": "506c4f9e732fd2e93331d457374f40c70d14a24219a0ce77c06bbe48c82e25b5",
             "quote": "Numerous angel investors also joined, including Nat Friedman, who’s currently head of product at Meta Superintelligence Labs; Vercel CEO Guillermo Rauch; renowned product manager Nikita Bier; investor Scott Belsky; and Nemil Dalal, a former Coinbase exec who is now a visiting partner at Y Combinator.",
             "quote_hash": "4c8589c6452df8d509ffa4546a1664ec657031c8f5f685c4e9f14d36fa37c88e"
-          }
-        ],
-        "last_verified_at": "2026-10-06"
-      }
-    },
-    {
-      "id": "INV-0bc19a9cafe1fe",
-      "name": "NFG Ventures",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "GLOBAL"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2026-11-23",
-      "latest_disclosed_at": "2026-11-23",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "pre_seed"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-46e3d635c7538e1c",
-          "canonical_entity_id": "",
-          "name": "Acorda"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-0cff5d95fee1fc82",
-          "funding_insight_id": "FI-b6368f4fabd2ba9e",
-          "event_ids": [
-            "EV-f46e4e1b37bb1b75"
-          ],
-          "company_entity_id": "EN-46e3d635c7538e1c",
-          "company_canonical_entity_id": "",
-          "company_name": "Acorda",
-          "round": "预种子轮",
-          "round_code": "pre_seed",
-          "round_original": "pre-Seed",
-          "amount_original": "€2.15 million",
-          "amount_normalized": {
-            "currency": "EUR",
-            "value": 2150000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "215 万欧元"
-          },
-          "announced_at": "2026-11-23",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-a6cec2f0e56a996d",
-              "source_url": "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
-              "source_title": "伦敦Acorda融资215万欧元，助银行在资金转移前识别支付诈骗",
-              "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
-              "quote": "with participation from NFG Ventures, the firm founded by early Monzo investor and non-executive director Eileen Burbridge",
-              "quote_hash": "0ed43a6e3e0b920f387c586acb0153a5d4246ee1cbb8f1fbead211cb34e97b63"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-a6cec2f0e56a996d",
-          "source_url": "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
-          "source_title": "伦敦Acorda融资215万欧元，助银行在资金转移前识别支付诈骗",
-          "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
-          "quote": "with participation from NFG Ventures, the firm founded by early Monzo investor and non-executive director Eileen Burbridge",
-          "quote_hash": "0ed43a6e3e0b920f387c586acb0153a5d4246ee1cbb8f1fbead211cb34e97b63"
-        }
-      ],
-      "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "NFG Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
-          {
-            "description": "融资来源记录：Acorda · 预种子轮 · 2026-11-23 · 本轮参投 · €2.15 million。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-a6cec2f0e56a996d"
-          }
-        ],
-        "contacts": [],
-        "sources": [
-          {
-            "source_id": "FISRC-a6cec2f0e56a996d",
-            "source_url": "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
-            "source_title": "伦敦Acorda融资215万欧元，助银行在资金转移前识别支付诈骗",
-            "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
-            "quote": "with participation from NFG Ventures, the firm founded by early Monzo investor and non-executive director Eileen Burbridge",
-            "quote_hash": "0ed43a6e3e0b920f387c586acb0153a5d4246ee1cbb8f1fbead211cb34e97b63"
           }
         ],
         "last_verified_at": "2026-10-06"
@@ -675065,6 +674694,196 @@
           }
         ],
         "last_verified_at": "2026-10-06"
+      }
+    },
+    {
+      "id": "INV-d41970e9b87686",
+      "name": "Concept Ventures",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 0,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "",
+      "latest_disclosed_at": "",
+      "role_counts": {
+        "historical_or_ambiguous": 1
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-6637a05e2f96268c",
+          "funding_insight_id": "FI-fe82f871887d3c1f",
+          "event_ids": [
+            "EV-f1a605a25af30dc5",
+            "EV-6ae3594aadfcd3d8"
+          ],
+          "company_entity_id": "EN-58b507456c52c9b3",
+          "company_canonical_entity_id": "EN-58b507456c52c9b3",
+          "company_name": "Archestra",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "既有投资方（种子前轮）",
+          "amount_original": "",
+          "amount_normalized": null,
+          "announced_at": "",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "unknown",
+          "scope": "historical_or_ambiguous",
+          "role": "既有投资方（种子前轮）",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
+              "source_title": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
+              "source_content_hash": "65e55f883bf21e63",
+              "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in.",
+              "quote_hash": "2f653aa9e0a1b1cead77e89e9a782db3c2fc2e35ebb2e67dc763689267e7fc34"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-50130a45d72291a2",
+          "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
+          "source_title": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
+          "source_content_hash": "65e55f883bf21e63",
+          "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in.",
+          "quote_hash": "2f653aa9e0a1b1cead77e89e9a782db3c2fc2e35ebb2e67dc763689267e7fc34"
+        }
+      ],
+      "public_profile": {
+        "summary": "Concept Ventures 是专注 pre-seed 阶段的早期风险投资机构。当前官网称其首轮投资最高可达 150 万美元；机构历史页称其于 2018 年启动，前身为 RLC Ventures。创始合伙人 Reece Chowdhry 曾在 EY 工作并运营过三家软件创业公司。Archestra Seed 记录只确认 Concept 是返投的既有 pre-seed 投资方，不披露其本轮支票金额。",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "官网现行页面披露首轮投资最高额 150 万美元；Archestra 来源只说其既有 pre-seed 投资人回到新一轮，未披露 Concept 的新一轮出资额。",
+        "facts": [
+          {
+            "field": "stage",
+            "label": "投资阶段",
+            "value": "专注 pre-seed 阶段",
+            "source_id": "concept_home"
+          },
+          {
+            "field": "check_size",
+            "label": "官网披露的首轮投资上限",
+            "value": "最高 150 万美元；截至 2026-09-28 核验页面",
+            "source_id": "concept_home"
+          },
+          {
+            "field": "history",
+            "label": "机构沿革",
+            "value": "官方历史介绍称其于 2018 年启动，前身为 RLC Ventures",
+            "source_id": "concept_history"
+          },
+          {
+            "field": "founder_background",
+            "label": "创始合伙人经历",
+            "value": "Reece Chowdhry 曾在 EY 工作，之后孵化和运营三家软件创业公司；官网称其中一家退出、一家失败、一家仍在运营。",
+            "source_id": "concept_leader_career"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2018",
+            "description": "官方历史介绍称 Concept Ventures 于 2018 年启动。",
+            "source_id": "concept_history"
+          }
+        ],
+        "current_roles": [
+          {
+            "title": "创始合伙人、普通合伙人",
+            "organization": "Concept Ventures · Reece Chowdhry",
+            "source_id": "concept_leader"
+          }
+        ],
+        "career": [
+          {
+            "organization": "Reece Chowdhry · EY / 软件创业公司",
+            "title": "顾问及创业者",
+            "period": "日期未披露",
+            "description": "曾在 EY 工作，之后运营三家软件创业公司。",
+            "source_id": "concept_leader_career"
+          }
+        ],
+        "track_record": [
+          {
+            "description": "Archestra 融资公告称 Concept Ventures 等既有 pre-seed 投资人再次参与；没有披露 Concept 单家支票金额。",
+            "source_id": "FISRC-50130a45d72291a2"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Concept Ventures 官网",
+            "value": "Concept Ventures",
+            "url": "https://conceptvc.work/",
+            "source_id": "concept_home"
+          },
+          {
+            "kind": "address",
+            "label": "伦敦办公地址",
+            "value": "40 Grosvenor Garden Mews S, Belgravia, London SW1W 0LD, UK",
+            "source_id": "concept_home"
+          }
+        ],
+        "sources": [
+          {
+            "source_id": "concept_home",
+            "source_url": "https://conceptvc.work/",
+            "source_title": "Concept Ventures | Europe’s Largest Pre-seed Fund",
+            "source_content_hash": "e9bd1b7ed508b8cbd65770cd30df19e881c7b881615981579b27495d11f67ea4",
+            "quote": "We invest up to $1.5m in first rounds, early by nature.",
+            "quote_hash": "a15f242866b438c9cb3165746384b171d522e025e8a58f32740089eccc37a916"
+          },
+          {
+            "source_id": "concept_history",
+            "source_url": "https://concept.vc/news/concept-raises-50m-fund",
+            "source_title": "Concept Closes on New £50m Fund | Concept Ventures",
+            "source_content_hash": "11367bd369ba4d1d053abd6bfd3ff06eefcbb356bd7849efe307cf7cbd413904",
+            "quote": "Launched in 2018, Concept has recorded a string of impressive early successes.",
+            "quote_hash": "bcde0a9949fa49bd5d9ab6226ac3bdcf7c1318b854fa0e6229e746344fbca7d9"
+          },
+          {
+            "source_id": "concept_leader",
+            "source_url": "https://concept.vc/team-members/reece-chowdhry",
+            "source_title": "Reece Chowdhry | General Partner",
+            "source_content_hash": "b4c10e2a3e3ff540def92d083648a52431a3c972b10f5e90d66fd976a36ad6f4",
+            "quote": "Reece Chowdhry is Founding Partner of Concept Ventures.",
+            "quote_hash": "bfd01db34ee6be3a052e328fe5ed1289d503f6ea9821c4f28fc21b58c65dc5ef"
+          },
+          {
+            "source_id": "concept_leader_career",
+            "source_url": "https://concept.vc/team-members/reece-chowdhry",
+            "source_title": "Reece Chowdhry | General Partner",
+            "source_content_hash": "b4c10e2a3e3ff540def92d083648a52431a3c972b10f5e90d66fd976a36ad6f4",
+            "quote": "He began his career at EY before incubating and operating three software startups; one exited, one failed, and one is still running today.",
+            "quote_hash": "166ec79eb9514da5db14e42334706fbbf444079f71dead52c20a857482d3b46b"
+          },
+          {
+            "source_id": "FISRC-50130a45d72291a2",
+            "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
+            "source_title": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
+            "source_content_hash": "65e55f883bf21e63",
+            "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in.",
+            "quote_hash": "2f653aa9e0a1b1cead77e89e9a782db3c2fc2e35ebb2e67dc763689267e7fc34"
+          }
+        ],
+        "last_verified_at": "2026-09-28"
       }
     },
     {

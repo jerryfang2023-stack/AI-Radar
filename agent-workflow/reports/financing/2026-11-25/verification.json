@@ -1232,15 +1232,15 @@
       "stop_after_date": "2026-12-01",
       "title": "London-based Acorda raises €2.15 million to help banks detect payment scams before money moves",
       "checks": {
-        "company_identity": "accepted_by_existing_gates_not_full_disclosure",
-        "ai_relevance": "accepted_by_existing_gates_not_full_disclosure",
-        "date": "accepted_by_existing_gates_not_full_disclosure",
-        "amount": "accepted_by_existing_gates_not_full_disclosure",
-        "round": "accepted_by_existing_gates_not_full_disclosure",
-        "deduplication": "accepted_by_existing_gates_not_full_disclosure"
+        "company_identity": "pending",
+        "ai_relevance": "pending",
+        "date": "pending",
+        "amount": "pending",
+        "round": "pending",
+        "deduplication": "pending"
       },
-      "status": "verified",
-      "reason": "existing_gates_reconciled",
+      "status": "pending",
+      "reason": "no_accepted_financing_event_manual_review_required",
       "collection_reconciled": true,
       "collection_date": "2026-11-25",
       "content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
@@ -1252,8 +1252,8 @@
       "resumed_fact_review": true,
       "followup": {
         "source_url": "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
-        "origin_date": "2026-11-24",
-        "rounds": 0,
+        "origin_date": "2026-11-25",
+        "rounds": 1,
         "stop_after_date": "2026-12-01",
         "title": "London-based Acorda raises €2.15 million to help banks detect payment scams before money moves",
         "checks": {
@@ -1265,7 +1265,7 @@
           "deduplication": "pending"
         },
         "status": "pending",
-        "reason": "existing_fact_research_and_taxonomy_gates_required",
+        "reason": "no_accepted_financing_event_manual_review_required",
         "collection_reconciled": true,
         "collection_date": "2026-11-25",
         "content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
@@ -1275,53 +1275,70 @@
         "evidence_source_url": "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
         "alternate_source": false,
         "resumed_fact_review": true,
+        "followup": {
+          "source_url": "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
+          "origin_date": "2026-11-24",
+          "rounds": 0,
+          "stop_after_date": "2026-12-01",
+          "title": "London-based Acorda raises €2.15 million to help banks detect payment scams before money moves",
+          "checks": {
+            "company_identity": "pending",
+            "ai_relevance": "pending",
+            "date": "pending",
+            "amount": "pending",
+            "round": "pending",
+            "deduplication": "pending"
+          },
+          "status": "pending",
+          "reason": "existing_fact_research_and_taxonomy_gates_required",
+          "collection_reconciled": true,
+          "collection_date": "2026-11-25",
+          "content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+          "raw_ids": [
+            "RAW-c195f7f70cf72395"
+          ],
+          "evidence_source_url": "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
+          "alternate_source": false,
+          "resumed_fact_review": true,
+          "last_processed_date": "2026-11-25",
+          "next_due_date": "2026-11-26",
+          "owner": "responsible_financing_reviewer",
+          "next_action": "next_existing_daily_verify",
+          "review_stage": "fact_review",
+          "capture_attempts": []
+        },
+        "fact_review_completed": true,
+        "unresolved_event_ids": [],
+        "qa_hints": [
+          "event_not_ai_relevant"
+        ],
+        "pending_reasons": [],
+        "results": [],
+        "review_refs": [
+          "01-SiteV2/content/11-databases/data-center-v4/2026-11-25/qa-queue.json",
+          "01-SiteV2/content/12-applications/funding-insights/2026-11-25.json"
+        ],
         "last_processed_date": "2026-11-25",
+        "last_fact_review_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+        "source_binding": {
+          "content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+          "reviewed_by": "Codex responsible financing reviewer",
+          "reviewed_at": "2026-11-25T02:52:31.036Z",
+          "review_ref": "supplementary-reviews/2026-11-25/recovery-diagnosis.json",
+          "disposition": "retain_pending_current_ai_product_evidence"
+        },
+        "review_stage": "fact_conflict_review",
         "next_due_date": "2026-11-26",
         "owner": "responsible_financing_reviewer",
-        "next_action": "next_existing_daily_verify",
-        "review_stage": "fact_review",
-        "capture_attempts": []
+        "next_action": "next_existing_daily_verify"
       },
       "fact_review_completed": true,
       "unresolved_event_ids": [],
-      "qa_hints": [],
-      "pending_reasons": [],
-      "results": [
-        {
-          "card_id": "FI-b10f2529bc3a6e67",
-          "event_id": "EV-f46e4e1b37bb1b75",
-          "accepted": true,
-          "scope": "included",
-          "reason": "existing_gates_passed",
-          "company": "Acorda",
-          "announced_at": "2026-11-23",
-          "amount": "€2.15 million",
-          "round": "预种子轮",
-          "disclosure_status": "disclosed",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a6cec2f0e56a996d",
-              "quote_hash": "2e16387a69c2758a7a88e6e55bb56574dc1ea346583f896d70e8bbd6739febcb"
-            },
-            {
-              "source_id": "FISRC-966f44c7ee07620c",
-              "quote_hash": "80689649d6309718891517860f6449b88c845f00e33d012a2b1be0258306b2b1"
-            },
-            {
-              "source_id": "FISRC-a6cec2f0e56a996d",
-              "quote_hash": "0cbf6353c7be91cb37249fb4f4625ad641717b01343e91e4f1bcbe4b1f724332"
-            },
-            {
-              "source_id": "FISRC-a6cec2f0e56a996d",
-              "quote_hash": "562cf526a865d789d9d77c23e479bdff78281a852fc12d81a54f095a7c23b431"
-            },
-            {
-              "source_id": "FISRC-8dfb2c91cc58fdba",
-              "quote_hash": "976828a006eeae85fe3bd24dd87fa8eed9003afa7d31e3d8af30bc0441c532b1"
-            }
-          ]
-        }
+      "qa_hints": [
+        "event_not_ai_relevant"
       ],
+      "pending_reasons": [],
+      "results": [],
       "review_refs": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-11-25/qa-queue.json",
         "01-SiteV2/content/12-applications/funding-insights/2026-11-25.json"
@@ -89273,15 +89290,60 @@
     },
     "https://m.sohu.com/a/1103075704_546816?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334": {
       "source_url": "https://m.sohu.com/a/1103075704_546816?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-      "evidence_source_url": "https://m.sohu.com/a/1103075704_546816?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
       "origin_date": "2026-11-25",
+      "rounds": 0,
       "title": "张江AI芯片设计企业，拿下近亿元融资",
+      "checks": {
+        "company_identity": "pending",
+        "ai_relevance": "pending",
+        "date": "pending",
+        "amount": "pending",
+        "round": "pending",
+        "deduplication": "pending"
+      },
+      "status": "pending",
+      "reason": "no_accepted_financing_event_manual_review_required",
+      "collection_reconciled": true,
+      "collection_date": "2026-11-25",
+      "content_hash": "ded95784469a344ab3105250acabc11fe9d40ad4a698d469b0a01def4a40bf43",
       "raw_ids": [
         "RAW-239d3d83386d1df3"
       ],
-      "content_hash": "ded95784469a344ab3105250acabc11fe9d40ad4a698d469b0a01def4a40bf43",
-      "status": "pending",
-      "reason": "no_accepted_financing_event_manual_review_required",
+      "evidence_source_url": "https://m.sohu.com/a/1103075704_546816?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+      "alternate_source": false,
+      "resumed_fact_review": true,
+      "followup": {
+        "source_url": "https://m.sohu.com/a/1103075704_546816?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "origin_date": "2026-11-25",
+        "rounds": 1,
+        "title": "张江AI芯片设计企业，拿下近亿元融资",
+        "checks": {
+          "company_identity": "pending",
+          "ai_relevance": "pending",
+          "date": "pending",
+          "amount": "pending",
+          "round": "pending",
+          "deduplication": "pending"
+        },
+        "status": "pending",
+        "reason": "no_accepted_financing_event_manual_review_required",
+        "collection_reconciled": true,
+        "collection_date": "2026-11-25",
+        "content_hash": "ded95784469a344ab3105250acabc11fe9d40ad4a698d469b0a01def4a40bf43",
+        "raw_ids": [
+          "RAW-239d3d83386d1df3"
+        ],
+        "evidence_source_url": "https://m.sohu.com/a/1103075704_546816?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "alternate_source": false,
+        "resumed_fact_review": true,
+        "last_processed_date": "2026-11-25",
+        "next_due_date": "2026-11-26",
+        "owner": "responsible_financing_reviewer",
+        "next_action": "next_existing_daily_verify",
+        "review_stage": "fact_conflict_review",
+        "last_fact_review_hash": "ded95784469a344ab3105250acabc11fe9d40ad4a698d469b0a01def4a40bf43",
+        "fact_review_completed": true
+      },
       "research_deferral": {
         "version": "FINANCING-RESEARCH-DEFERRAL-1",
         "event_id": "EV-17d01fa4ed988d23",
@@ -89299,15 +89361,6 @@
         "next_action": "recover_existing_originals_and_complete_independent_research",
         "fact_approval": false
       },
-      "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
-      },
-      "alternate_source": false,
       "fact_review_completed": true,
       "unresolved_event_ids": [
         "EV-17d01fa4ed988d23"
@@ -89324,15 +89377,60 @@
     },
     "https://www.163.com/dy/article/LC4L6CEQ052688NB.html": {
       "source_url": "https://www.163.com/dy/article/LC4L6CEQ052688NB.html",
-      "evidence_source_url": "https://www.163.com/dy/article/LC4L6CEQ052688NB.html",
       "origin_date": "2026-11-25",
+      "rounds": 0,
       "title": "当资本转向AI，2026还有人在投游戏吗？",
+      "checks": {
+        "company_identity": "pending",
+        "ai_relevance": "pending",
+        "date": "pending",
+        "amount": "pending",
+        "round": "pending",
+        "deduplication": "pending"
+      },
+      "status": "pending",
+      "reason": "no_accepted_financing_event_manual_review_required",
+      "collection_reconciled": true,
+      "collection_date": "2026-11-25",
+      "content_hash": "cbd1cffc6b3b5054659bd87eda4f1017f20996fb2538c5b046d4664927996236",
       "raw_ids": [
         "RAW-eec86d1547b09b37"
       ],
-      "content_hash": "cbd1cffc6b3b5054659bd87eda4f1017f20996fb2538c5b046d4664927996236",
-      "status": "pending",
-      "reason": "no_accepted_financing_event_manual_review_required",
+      "evidence_source_url": "https://www.163.com/dy/article/LC4L6CEQ052688NB.html",
+      "alternate_source": false,
+      "resumed_fact_review": true,
+      "followup": {
+        "source_url": "https://www.163.com/dy/article/LC4L6CEQ052688NB.html",
+        "origin_date": "2026-11-25",
+        "rounds": 1,
+        "title": "当资本转向AI，2026还有人在投游戏吗？",
+        "checks": {
+          "company_identity": "pending",
+          "ai_relevance": "pending",
+          "date": "pending",
+          "amount": "pending",
+          "round": "pending",
+          "deduplication": "pending"
+        },
+        "status": "pending",
+        "reason": "no_accepted_financing_event_manual_review_required",
+        "collection_reconciled": true,
+        "collection_date": "2026-11-25",
+        "content_hash": "cbd1cffc6b3b5054659bd87eda4f1017f20996fb2538c5b046d4664927996236",
+        "raw_ids": [
+          "RAW-eec86d1547b09b37"
+        ],
+        "evidence_source_url": "https://www.163.com/dy/article/LC4L6CEQ052688NB.html",
+        "alternate_source": false,
+        "resumed_fact_review": true,
+        "last_processed_date": "2026-11-25",
+        "next_due_date": "2026-11-26",
+        "owner": "responsible_financing_reviewer",
+        "next_action": "next_existing_daily_verify",
+        "review_stage": "fact_conflict_review",
+        "last_fact_review_hash": "cbd1cffc6b3b5054659bd87eda4f1017f20996fb2538c5b046d4664927996236",
+        "fact_review_completed": true
+      },
       "research_deferral": {
         "version": "FINANCING-RESEARCH-DEFERRAL-1",
         "event_id": "EV-ac0867cc7ddb3340",
@@ -89363,15 +89461,6 @@
         "next_action": "responsible_review_of_candidate_identity_amount_and_round",
         "fact_approval": false
       },
-      "checks": {
-        "company_identity": "pending",
-        "ai_relevance": "pending",
-        "date": "pending",
-        "amount": "pending",
-        "round": "pending",
-        "deduplication": "pending"
-      },
-      "alternate_source": false,
       "fact_review_completed": true,
       "unresolved_event_ids": [
         "EV-ac0867cc7ddb3340"
@@ -89393,35 +89482,35 @@
     "responsible_review": 88
   },
   "followup_queue": {
-    "pending": 818,
-    "needs_attention": 1635
+    "pending": 813,
+    "needs_attention": 1638
   },
   "review_budget": {
-    "leads": 2505,
+    "leads": 2507,
     "capture_requests": 1731,
     "search_requests": 715,
     "capacity": {
-      "captures": 18036,
-      "searches": 36072
+      "captures": 18051,
+      "searches": 36101
     }
   },
   "review_queue": {
-    "total": 2453,
+    "total": 2451,
     "stages": {
       "evidence_review": 250,
-      "fact_review": 194,
+      "fact_review": 177,
       "needs_original": 1214,
       "source_identity_review": 748,
-      "fact_conflict_review": 47
+      "fact_conflict_review": 62
     }
   },
   "prepared": true,
   "status": "completed",
   "counts": {
     "total": 1054,
-    "verified": 3,
+    "verified": 2,
     "excluded": 53,
     "reviewed": 0,
-    "pending": 998
+    "pending": 999
   }
 }
