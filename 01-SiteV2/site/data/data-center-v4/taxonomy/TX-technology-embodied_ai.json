@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-24",
-    "currentDate": "2026-11-24",
-    "eventCount": 4549,
+    "latestDataDate": "2026-11-25",
+    "currentDate": "2026-11-25",
+    "eventCount": 4558,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -59,6 +59,7 @@
     "typeLabel": "技术",
     "valueId": "embodied_ai",
     "eventIds": [
+      "EV-e0d0a57df0d64210",
       "EV-d03ad90e15e62533",
       "EV-5c7525642d1189d6",
       "EV-f79b77e6e6a86d7b",
@@ -197,6 +198,7 @@
       "EV-08f736f61f2b46f3"
     ],
     "entityIds": [
+      "EN-5e285f2b2f73ebb8",
       "EN-8729c58fc661e5db",
       "EN-1292f4f8df3af298",
       "EN-dcc56252e4afe380",
@@ -328,12 +330,140 @@
       "HW-1450585d9cd5879f"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-11-24"
+    "lastSeen": "2026-11-25"
   },
   "events": [
     {
+      "id": "EV-e0d0a57df0d64210",
+      "dataDate": "2026-11-25",
+      "date": "2026-11-23",
+      "updatedDate": "2026-11-23",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "瑞士初创公司coprod融资545万欧元，解决机器人与物理AI硬件的“集成地狱”",
+      "originalTitle": "Swiss startup coprod raises €5.45 million to solve “integration hell” in robotics and physical AI hardware",
+      "subject": "Swiss startup coprod",
+      "action": "raises",
+      "object": "€5.45 million to solve “integration hell” in robotics and physical AI hardware",
+      "metrics": [
+        "€5.45 million",
+        "$6 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-5e285f2b2f73ebb8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-5e285f2b2f73ebb8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-5e285f2b2f73ebb8"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-5e285f2b2f73ebb8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-5e285f2b2f73ebb8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-5e285f2b2f73ebb8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-5e285f2b2f73ebb8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5e285f2b2f73ebb8"
+      ],
+      "entityNames": [
+        "Swiss startup coprod"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.eu-startups.com/2026/11/swiss-startup-coprod-raises-e5-45-million-to-solve-integration-hell-in-robotics-and-physical-ai-hardware/",
+      "publisher": "www.eu-startups.com"
+    },
+    {
       "id": "EV-d03ad90e15e62533",
-      "dataDate": "2026-11-24",
+      "dataDate": "2026-11-25",
       "date": "2026-11-22",
       "updatedDate": "2026-11-22",
       "eventType": "funding",
@@ -439,15 +569,11 @@
       ],
       "entityIds": [
         "EN-5a28a1a99a417ba5",
-        "EN-8729c58fc661e5db",
-        "EN-86de7bf78fbe1995",
-        "EN-9c8ae69b84f21a2e"
+        "EN-8729c58fc661e5db"
       ],
       "entityNames": [
         "Ant Group",
-        "Simplexity Robotics",
-        "Tencent Holdings",
-        "Tencent"
+        "Simplexity Robotics"
       ],
       "productName": "",
       "products": [],
@@ -456,7 +582,7 @@
     },
     {
       "id": "EV-5c7525642d1189d6",
-      "dataDate": "2026-11-24",
+      "dataDate": "2026-11-25",
       "date": "2026-11-18",
       "updatedDate": "2026-11-18",
       "eventType": "funding",
@@ -482,7 +608,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-1a47c98959de5b18"
+          "CL-2c2c5622de8fc7cb"
         ]
       },
       "missingFields": [],
@@ -27806,6 +27932,28 @@
   ],
   "entities": [
     {
+      "id": "EN-5e285f2b2f73ebb8",
+      "name": "Swiss startup coprod",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e0d0a57df0d64210"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-embodied_ai",
+        "TX-use_case-physical_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-25"
+    },
+    {
       "id": "EN-8729c58fc661e5db",
       "name": "Simplexity Robotics",
       "entityType": "organization_candidate",
@@ -27825,7 +27973,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-11-22",
-      "lastSeen": "2026-11-24"
+      "lastSeen": "2026-11-25"
     },
     {
       "id": "EN-1292f4f8df3af298",
@@ -27846,7 +27994,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-11-18",
-      "lastSeen": "2026-11-24"
+      "lastSeen": "2026-11-25"
     },
     {
       "id": "EN-dcc56252e4afe380",
@@ -28112,9 +28260,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-use_case-content_creation",
         "TX-product_form-enterprise_software_platform",
@@ -28888,8 +29036,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-technology-multimodal"
@@ -29325,6 +29473,7 @@
       ],
       "eventIds": [
         "EV-6b76983df1c13857",
+        "EV-f8599fbcd337c245",
         "EV-3774a546c9f135e0",
         "EV-60e9751ddf436c14",
         "EV-86165eebaf4622fd",
@@ -29649,8 +29798,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai",
         "TX-use_case-research_discovery",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
@@ -29709,7 +29858,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-11-24"
+      "lastSeen": "2026-11-25"
     },
     {
       "id": "EN-998255d915da8953",
@@ -30631,9 +30780,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
-        "TX-technology-agentic_execution",
         "TX-use_case-research_discovery",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
@@ -30715,7 +30864,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-24"
+      "lastSeen": "2026-11-25"
     },
     {
       "id": "EN-0ad1a6d446cfd5e2",
@@ -31393,8 +31542,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai",
         "TX-use_case-research_discovery",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
@@ -31460,7 +31609,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-11-24"
+      "lastSeen": "2026-11-25"
     },
     {
       "id": "EN-e3ce9cc5efa9354c",
@@ -31481,9 +31630,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
-        "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
@@ -31532,7 +31681,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-11-24"
+      "lastSeen": "2026-11-25"
     },
     {
       "id": "EN-aec12c1b42f6e0b6",
@@ -31666,9 +31815,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
-        "TX-technology-agentic_execution",
         "TX-use_case-research_discovery",
         "TX-technology-speech_audio",
         "TX-product_form-enterprise_software_platform",
@@ -31754,8 +31903,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-18",

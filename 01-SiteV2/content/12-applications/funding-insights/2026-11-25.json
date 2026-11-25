@@ -1,0 +1,1821 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-11-25",
+    "generated_at": "2026-11-25T03:27:41.187Z",
+    "trigger": "accepted_financing_event_research",
+    "research_provider": "search-gateway+direct-original+deepseek",
+    "model": "deepseek-flash",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 19,
+      "auto_published": 2,
+      "blocked": 2,
+      "pending": 4,
+      "deduplicated": 11,
+      "deferred_for_evidence": 2
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-aaf7a2208dfe5bd3",
+      "triggered_by_event_id": "EV-e0d0a57df0d64210",
+      "as_of_date": "2026-11-25",
+      "company": {
+        "entity_id": "EN-5e285f2b2f73ebb8",
+        "name": "coprod",
+        "full_name": "coprod",
+        "website": "",
+        "summary": "瑞士机器人硬件初创公司，开发模块化硬件组件与统一控制平台，用于机器人及物理AI应用，目标是解决不同硬件组件之间的集成难题。",
+        "headquarters": "瑞士",
+        "founders": [
+          {
+            "name": "Loïc Delineau",
+            "role": "CEO兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f68d01d3d793450",
+                "quote": "Founded in late 2024 by EPFL graduates Loïc Delineau, Vincent Nguyen, and Matthias Schuller",
+                "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+                "quote_hash": "61e325c9dc81aebdb181c2c46697a6ba78914a80ac548a7895ee0901d6d521fe"
+              },
+              {
+                "source_id": "FISRC-ef28ac629f9106b3",
+                "quote": "Loïc Delineau, CEO and co-founder of coprod",
+                "source_content_hash": "a5facda0324468d6",
+                "quote_hash": "dd14a5e659014a2d7decd872c522b4b56e083b5e33b8d7cef853f588f4d19af2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Vincent Nguyen",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f68d01d3d793450",
+                "quote": "Founded in late 2024 by EPFL graduates Loïc Delineau, Vincent Nguyen, and Matthias Schuller",
+                "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+                "quote_hash": "61e325c9dc81aebdb181c2c46697a6ba78914a80ac548a7895ee0901d6d521fe"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Matthias Schuller",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f68d01d3d793450",
+                "quote": "Founded in late 2024 by EPFL graduates Loïc Delineau, Vincent Nguyen, and Matthias Schuller",
+                "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+                "quote_hash": "61e325c9dc81aebdb181c2c46697a6ba78914a80ac548a7895ee0901d6d521fe"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-4f68d01d3d793450",
+            "quote": "coprod, a Swiss robotics hardware startup building modular hardware components for robotics and physical AI applications",
+            "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+            "quote_hash": "25ea35e88505c3cec2d570620b8c600193ab1de42a60fd90710b9553275aa7f7"
+          },
+          {
+            "source_id": "FISRC-d6501ff3dde4b7bb",
+            "quote": "The company develops modular hardware components that help build robots and physical AI systems.",
+            "source_content_hash": "842f1a5bba89a53c",
+            "quote_hash": "af51fee13563f58755ad167c1e56194af6251a86665b920524c483d408831da5"
+          }
+        ],
+        "application_entity_id": "EN-5e285f2b2f73ebb8",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "预种子轮",
+        "amount": "€5.45 million",
+        "total_raised": "",
+        "announced_at": "2026-11-23",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Founderful",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f68d01d3d793450",
+                "quote": "The round was co-led by Founderful and PROTOTYPE",
+                "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+                "quote_hash": "e982977bd9fbaaf447280175b1ef7a23a9f3d1dd349ed7766f99d455be3d3721"
+              },
+              {
+                "source_id": "FISRC-ef28ac629f9106b3",
+                "quote": "Founderful and PROTOTYPE, Andreas Klinger’s robotics fund, led the round",
+                "source_content_hash": "a5facda0324468d6",
+                "quote_hash": "8f402c88c81a0b10be18bd54e959f35938c13b986d7df131c682b3d82a0c7ab0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "PROTOTYPE",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f68d01d3d793450",
+                "quote": "The round was co-led by Founderful and PROTOTYPE",
+                "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+                "quote_hash": "e982977bd9fbaaf447280175b1ef7a23a9f3d1dd349ed7766f99d455be3d3721"
+              },
+              {
+                "source_id": "FISRC-ef28ac629f9106b3",
+                "quote": "Founderful and PROTOTYPE, Andreas Klinger’s robotics fund, led the round",
+                "source_content_hash": "a5facda0324468d6",
+                "quote_hash": "8f402c88c81a0b10be18bd54e959f35938c13b986d7df131c682b3d82a0c7ab0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "General Catalyst",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f68d01d3d793450",
+                "quote": "with additional backing from General Catalyst, Pace Ventures, Tiny Supercomputer Investment Company, Kima Ventures, SDAC, Unruly Capital, and Venturekick",
+                "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+                "quote_hash": "5ec9ae4f529e9b1282240cabc418a23d0c3e3bd83384c6975d9c882d69980265"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Pace Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f68d01d3d793450",
+                "quote": "with additional backing from General Catalyst, Pace Ventures, Tiny Supercomputer Investment Company, Kima Ventures, SDAC, Unruly Capital, and Venturekick",
+                "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+                "quote_hash": "5ec9ae4f529e9b1282240cabc418a23d0c3e3bd83384c6975d9c882d69980265"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tiny Supercomputer Investment Company",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f68d01d3d793450",
+                "quote": "with additional backing from General Catalyst, Pace Ventures, Tiny Supercomputer Investment Company, Kima Ventures, SDAC, Unruly Capital, and Venturekick",
+                "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+                "quote_hash": "5ec9ae4f529e9b1282240cabc418a23d0c3e3bd83384c6975d9c882d69980265"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kima Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f68d01d3d793450",
+                "quote": "with additional backing from General Catalyst, Pace Ventures, Tiny Supercomputer Investment Company, Kima Ventures, SDAC, Unruly Capital, and Venturekick",
+                "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+                "quote_hash": "5ec9ae4f529e9b1282240cabc418a23d0c3e3bd83384c6975d9c882d69980265"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "SDAC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f68d01d3d793450",
+                "quote": "with additional backing from General Catalyst, Pace Ventures, Tiny Supercomputer Investment Company, Kima Ventures, SDAC, Unruly Capital, and Venturekick",
+                "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+                "quote_hash": "5ec9ae4f529e9b1282240cabc418a23d0c3e3bd83384c6975d9c882d69980265"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Unruly Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f68d01d3d793450",
+                "quote": "with additional backing from General Catalyst, Pace Ventures, Tiny Supercomputer Investment Company, Kima Ventures, SDAC, Unruly Capital, and Venturekick",
+                "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+                "quote_hash": "5ec9ae4f529e9b1282240cabc418a23d0c3e3bd83384c6975d9c882d69980265"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Venturekick",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f68d01d3d793450",
+                "quote": "with additional backing from General Catalyst, Pace Ventures, Tiny Supercomputer Investment Company, Kima Ventures, SDAC, Unruly Capital, and Venturekick",
+                "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+                "quote_hash": "5ec9ae4f529e9b1282240cabc418a23d0c3e3bd83384c6975d9c882d69980265"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-4f68d01d3d793450",
+            "quote": "Swiss startup coprod raises €5.45 million to solve “integration hell” in robotics and physical AI hardware",
+            "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+            "quote_hash": "7ed1d10d1d8459e07c5dbaf2d365f40ffedc5f9ee52f570bde8fbb4b1ac0d843"
+          },
+          {
+            "source_id": "FISRC-4f68d01d3d793450",
+            "quote": "has raised €5.45 million ($6 million) in a pre-Seed funding round",
+            "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+            "quote_hash": "da96535152c36519774e8aa1de0bd1ae4d054736f0807016c7a8dfdc66499c0d"
+          },
+          {
+            "source_id": "FISRC-d6501ff3dde4b7bb",
+            "quote": "Swiss robotics startup coprod has raised €5.45 million ($6 million) in a pre-seed funding round.",
+            "source_content_hash": "842f1a5bba89a53c",
+            "quote_hash": "1e9ae1695e6130f5df655d926e2a0647c275dbeb7a053dab603e6293040afa9a"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "pre-Seed",
+        "amount_original": "€5.45 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 5450000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "545 万欧元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-e0d0a57df0d64210",
+            "round_original": "pre-Seed",
+            "amount": "€5.45 million",
+            "announced_at": "2026-11-23",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f68d01d3d793450",
+                "quote": "Swiss startup coprod raises €5.45 million to solve “integration hell” in robotics and physical AI hardware",
+                "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+                "quote_hash": "7ed1d10d1d8459e07c5dbaf2d365f40ffedc5f9ee52f570bde8fbb4b1ac0d843"
+              },
+              {
+                "source_id": "FISRC-4f68d01d3d793450",
+                "quote": "has raised €5.45 million ($6 million) in a pre-Seed funding round",
+                "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+                "quote_hash": "da96535152c36519774e8aa1de0bd1ae4d054736f0807016c7a8dfdc66499c0d"
+              },
+              {
+                "source_id": "FISRC-d6501ff3dde4b7bb",
+                "quote": "Swiss robotics startup coprod has raised €5.45 million ($6 million) in a pre-seed funding round.",
+                "source_content_hash": "842f1a5bba89a53c",
+                "quote_hash": "1e9ae1695e6130f5df655d926e2a0647c275dbeb7a053dab603e6293040afa9a"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "co:products 模块化硬件组件",
+          "description": "由co:sense、co:act、co:power和co:battery组成的兼容硬件模块系列，通过co:system平台统一。",
+          "target_customers": "机器人开发者、机器人集成商与实验室",
+          "features": [
+            "兼容的传感、执行、电源与电池模块",
+            "统一接入co:system平台"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f68d01d3d793450",
+              "quote": "Its product portfolio centres on what it calls “co:products,” a family of compatible hardware modules comprising co:sense, co:act, co:power, and co:battery, all unified through the co:system platform.",
+              "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+              "quote_hash": "759485ad0cc1987ce0c9edd5f74467c2896052a334f01fcef9060aa7dacf0625"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "co:system 控制平台",
+          "description": "将全部模块接入单一实时EtherCAT控制平面，通过C++和Python的单一API访问，并提供前端配置工具统一组件通信标准。",
+          "target_customers": "机器人开发者与集成商",
+          "features": [
+            "单一实时EtherCAT控制平面",
+            "C++和Python单一API",
+            "前端配置工具统一通信标准"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f68d01d3d793450",
+              "quote": "The platform combines all modules on a single real-time EtherCAT control plane, accessible via one API in C++ and Python.",
+              "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+              "quote_hash": "f6304f55de47ca8b162ef813b3eea3a0ba8d41e5e48d086a19f19b0d59c59fa4"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "ETH Robotics Club",
+          "industry": "教育科研",
+          "use_case": "学生自建人形机器人采用coprod组件",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f68d01d3d793450",
+              "quote": "most notably the first student-built Swiss humanoid robot, created by the ETH Robotics Club",
+              "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+              "quote_hash": "8831ed5d6720a9cf6a36682f1d26c77907f215da3ae79c2cfc815ba1ce5b9337"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Enact",
+          "product": "带力感知的机器人",
+          "scenario": "机器人本体与力感知",
+          "target_customer": "",
+          "funding_summary": "pre-seed轮3000万美元",
+          "core_difference": "Enact聚焦更高层级的机器人整机与力感知，coprod提供底层模块化硬件组件与统一控制层。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ef28ac629f9106b3",
+              "quote": "Enact in Zurich has raised $30 million in pre-seed funding for robots with force sensing",
+              "source_content_hash": "a5facda0324468d6",
+              "quote_hash": "dda5f5f737beb9170438170a51b07f1cdee37204ef0547cf3c33fee27b54c341"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Mimic",
+          "product": "机器人手及配套AI",
+          "scenario": "机器人手部与AI",
+          "target_customer": "",
+          "funding_summary": "1600万美元",
+          "core_difference": "Mimic聚焦机器人手及配套AI，coprod提供跨组件的模块化硬件与中间件标准。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ef28ac629f9106b3",
+              "quote": "Mimic has secured $16 million for robotic hands and the associated AI",
+              "source_content_hash": "a5facda0324468d6",
+              "quote_hash": "bdbf69f079d4b4563ecb259b09be1ec7f557ab8390e72174b92734db83a42b10"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "€5.45 million ($6 million)",
+          "observed_at": "2026-11-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f68d01d3d793450",
+              "quote": "has raised €5.45 million ($6 million) in a pre-Seed funding round",
+              "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+              "quote_hash": "da96535152c36519774e8aa1de0bd1ae4d054736f0807016c7a8dfdc66499c0d"
+            }
+          ]
+        },
+        {
+          "label": "单次设计迭代成本",
+          "value": "$5,000至$25,000",
+          "observed_at": "2026-11-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f68d01d3d793450",
+              "quote": "at a cost of $5,000 to $25,000 per design iteration",
+              "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+              "quote_hash": "39e92da06d06e6708d394b2af9a21339591adb6605b4e1fd02d9319aab197dc0"
+            }
+          ]
+        },
+        {
+          "label": "传统集成耗时",
+          "value": "2至3年",
+          "observed_at": "2026-11-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f68d01d3d793450",
+              "quote": "which often requires 2 to 3 years of combing through data sheets",
+              "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+              "quote_hash": "4cdc9c96fa431145bdeb8fd700d6124af2fb50a5c00bfe57ede96cbfb49009a6"
+            }
+          ]
+        },
+        {
+          "label": "coprod方案开发耗时",
+          "value": "数月",
+          "observed_at": "2026-11-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f68d01d3d793450",
+              "quote": "coprod claims its stack can accomplish the same development in a matter of months",
+              "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+              "quote_hash": "77a4488ec38d75d3040b3696e8b8d51d632b485a52e2205f769b82b81f1cfd1e"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Andreas Klinger",
+          "quote": "The robotics revolution is real and we will be able to rethink every industry because of it. coprod is fixing the biggest problem in hardware: integration hell.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f68d01d3d793450",
+              "quote": "The robotics revolution is real and we will be able to rethink every industry because of it. coprod is fixing the biggest problem in hardware: integration hell.",
+              "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+              "quote_hash": "17a78984987dc8e16d26f178e0d44b8f08853692df7b5b29db29345d406aba5e"
+            }
+          ]
+        },
+        {
+          "speaker": "Loïc Delineau",
+          "quote": "We believe that a robot with purpose-built hardware designed for a specific task will do that task faster, cheaper and more reliably than any general purpose robot ever could, regardless of which model runs on it.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f68d01d3d793450",
+              "quote": "We believe that a robot with purpose-built hardware designed for a specific task will do that task faster, cheaper and more reliably than any general purpose robot ever could, regardless of which model runs on it.",
+              "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+              "quote_hash": "b43ca5e219f79c2f5e1f26728f8cc3f96ca1b23624129a4da8a8f19e41c19e73"
+            }
+          ]
+        },
+        {
+          "speaker": "Alex Stöckl",
+          "quote": "Backing Loïc, Vincent and Matthias was a no-brainer – the combination of relentless drive, deep technical expertise and global ambition is second to none.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f68d01d3d793450",
+              "quote": "Backing Loïc, Vincent and Matthias was a no-brainer – the combination of relentless drive, deep technical expertise and global ambition is second to none.",
+              "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+              "quote_hash": "d42df169424b100cce34706e73cc28fcfcac6e81fa949acf6e53642ea6823475"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "PROTOTYPE",
+            "speaker": "Andreas Klinger",
+            "speaker_role": "Investor at PROTOTYPE",
+            "rationale": "认为机器人革命真实发生，coprod正在解决硬件领域最大的集成难题，为机器人创始人提供可用的基础组件与中间件标准。",
+            "quote": "The robotics revolution is real and we will be able to rethink every industry because of it. coprod is fixing the biggest problem in hardware: integration hell. Robotics founders need a single standard for basic components and middleware that simply works and allows them to focus on the parts of their product that creates value to their customer as quickly as possible",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f68d01d3d793450",
+                "quote": "The robotics revolution is real and we will be able to rethink every industry because of it. coprod is fixing the biggest problem in hardware: integration hell. Robotics founders need a single standard for basic components and middleware that simply works and allows them to focus on the parts of their product that creates value to their customer as quickly as possible",
+                "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+                "quote_hash": "7e105ecabf0adc4800dbf33381ec184c9b8ea40bcda13758a7947aebb513ad88"
+              }
+            ]
+          },
+          {
+            "institution": "Founderful",
+            "speaker": "Alex Stöckl",
+            "speaker_role": "General Partner at Founderful",
+            "rationale": "看重创始团队的执行力、技术深度与全球雄心，并支持在瑞士打造全球领先的创始团队。",
+            "quote": "Backing Loïc, Vincent and Matthias was a no-brainer – the combination of relentless drive, deep technical expertise and global ambition is second to none. With Founderful we back founder teams building global leaders from Switzerland",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f68d01d3d793450",
+                "quote": "Backing Loïc, Vincent and Matthias was a no-brainer – the combination of relentless drive, deep technical expertise and global ambition is second to none. With Founderful we back founder teams building global leaders from Switzerland",
+                "source_content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+                "quote_hash": "e666fc422df6de9904186b99759cf203d57e903c88954b11dd03102c971ad80b"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "本轮资本押注的核心变量是：coprod能否把机器人硬件集成从2至3年压缩到数月，并以模块化组件加统一控制层成为基础组件的标准。已验证信号包括：组件已用于瑞士生态中的多台机器人，包括ETH Robotics Club的学生人形机器人；公司自述单次设计迭代成本为5000至25000美元。证据边界在于：这些效率与成本数字来自公司自述，商业化产品线尚未发布，首条商业组件线与洛桑原型设施仍待落地，认证与量产计划指向2027年底。",
+        "validated_signals": [
+          "组件已用于瑞士生态中的多台机器人，包括ETH Robotics Club的学生人形机器人",
+          "co:system通过单一实时EtherCAT控制平面和C++/Python单一API连接模块",
+          "本轮完成545万欧元pre-Seed融资"
+        ],
+        "risks": [
+          "效率与成本改善（2至3年缩短至数月、单次迭代5000至25000美元）来自公司自述，尚缺独立验证",
+          "首条商业组件线尚未发布，计划2027年底前完成全线认证并上市",
+          "深圳与得州量产及洛桑原型设施尚在规划中，执行与供应链落地存在不确定性",
+          "来源提出疑问：标准将由pre-seed团队还是现有供应商确立"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "computing_infrastructure",
+        "use_case_ids": [
+          "design_engineering"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "机器人模块化硬件组件与统一控制平台",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是：coprod能否把机器人硬件集成从2至3年压缩到数月，并以模块化组件加统一控制层成为基础组件的标准。已验证信号包括：组件已用于瑞士生态中的多台机器人，包括ETH Robotics Club的学生人形机器人；公司自述单次设计迭代成本为5000至25000美元。证据边界在于：这些效率与成本数字来自公司自述，商业化产品线尚未发布，首条商业组件线与洛桑原型设施仍待落地，认证与量产计划指向2027年底。",
+          "evidence_signals": [
+            "组件已用于瑞士生态中的多台机器人，包括ETH Robotics Club的学生人形机器人",
+            "co:system通过单一实时EtherCAT控制平面和C++/Python单一API连接模块",
+            "本轮完成545万欧元pre-Seed融资"
+          ],
+          "risks": [
+            "效率与成本改善（2至3年缩短至数月、单次迭代5000至25000美元）来自公司自述，尚缺独立验证",
+            "首条商业组件线尚未发布，计划2027年底前完成全线认证并上市",
+            "深圳与得州量产及洛桑原型设施尚在规划中，执行与供应链落地存在不确定性",
+            "来源提出疑问：标准将由pre-seed团队还是现有供应商确立"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "co:products 模块化硬件组件",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "co:system 控制平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Loïc Delineau",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Vincent Nguyen",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Matthias Schuller",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Founderful",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "PROTOTYPE",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "General Catalyst",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Pace Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Tiny Supercomputer Investment Company",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kima Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "SDAC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Unruly Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Venturekick",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "ETH Robotics Club",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Enact",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Mimic",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-e0d0a57df0d64210",
+          "date": "2026-11-23",
+          "title": "瑞士初创公司coprod融资545万欧元，解决机器人与物理AI硬件的“集成地狱”",
+          "amount": "€5.45 million",
+          "source_refs": [
+            "SA-c6524817b1e8d7cd"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-4f68d01d3d793450",
+          "source_url": "https://www.eu-startups.com/2026/11/swiss-startup-coprod-raises-e5-45-million-to-solve-integration-hell-in-robotics-and-physical-ai-hardware/",
+          "title": "瑞士初创公司coprod融资545万欧元，解决机器人与物理AI硬件的“集成地狱”",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-25T00:19:08.710Z",
+          "content_hash": "a8d973743dccb34b9638a134226fd0d86f096ab5f562002f00b304d4477262b8",
+          "source_artifact_id": "SA-c6524817b1e8d7cd",
+          "raw_id": "RAW-04a1f98332a8283e"
+        },
+        {
+          "source_id": "FISRC-d6501ff3dde4b7bb",
+          "source_url": "https://www.globalstartupsinsights.com/funding/switzerland/coprod-secures-6-million-to-build-modular-robotics-components/",
+          "title": "Swiss Startup coprod Secures $6 Million to Build Modular Robotics Components",
+          "publisher": "globalstartupsinsights.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-25T00:42:05.323Z",
+          "content_hash": "842f1a5bba89a53c",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-ef28ac629f9106b3",
+          "source_url": "https://techfundingnews.com/coprod-raises-6m-robot-integration-hell/",
+          "title": "EPFL founders who built a robot in a garage raise $6M from Founderful and PROTOTYPE",
+          "publisher": "techfundingnews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-25T00:42:11.722Z",
+          "content_hash": "a5facda0324468d6",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-25T00:42:34.541Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-25T00:42:34.541Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "co:products 模块化硬件组件",
+            "co:system 控制平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Loïc Delineau",
+            "Matthias Schuller",
+            "Vincent Nguyen"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-e0d0a57df0d64210"
+      ],
+      "aggregation": {
+        "key": "EN-5e285f2b2f73ebb8|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-9e6fdc55aa1dacd1",
+      "triggered_by_event_id": "EV-7c471b8f44c897be",
+      "as_of_date": "2026-11-25",
+      "company": {
+        "entity_id": "EN-be9188611b6952ad",
+        "name": "Perry AI",
+        "full_name": "Perry AI",
+        "website": "https://useperry.com",
+        "summary": "Perry AI 是一家总部位于伦敦的初创公司，为私募股权、风险投资及其他私募资本基金及其法律顾问构建 AI 驱动的法律操作系统。",
+        "headquarters": "伦敦，英国",
+        "founders": [
+          {
+            "name": "Shashwat Patel",
+            "role": "联合创始人兼首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f0dd3f2843897be1",
+                "quote": "Co-founders Shashwat Patel (CEO) and Vaneesa Agrawal (CPO)",
+                "source_content_hash": "7de5f7db8052c656",
+                "quote_hash": "aa1c7c20567ffe31aa145c5a45a09920c38a3dd3f1b6f796c5f97ba0b267aa6e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Vaneesa Agrawal",
+            "role": "联合创始人兼首席产品官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f0dd3f2843897be1",
+                "quote": "Co-founders Shashwat Patel (CEO) and Vaneesa Agrawal (CPO)",
+                "source_content_hash": "7de5f7db8052c656",
+                "quote_hash": "aa1c7c20567ffe31aa145c5a45a09920c38a3dd3f1b6f796c5f97ba0b267aa6e"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-11faac8c8448faa7",
+            "quote": "Perry AI, the London-based startup building an AI-powered legal operating system for private equity and venture capital funds",
+            "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+            "quote_hash": "436eb65b86903271269a9fea932f59bb9d5f8701530577629901d3901e30dd0e"
+          },
+          {
+            "source_id": "FISRC-f0dd3f2843897be1",
+            "quote": "Perry AI is the legal operating system for private capital. Founded in London by former corporate and funds lawyers Shashwat Patel and Vaneesa Agrawal",
+            "source_content_hash": "7de5f7db8052c656",
+            "quote_hash": "fd33b692e4b7f8f20846e9b0d65f07589565b13b89f8da8c70ffc2e316ef915c"
+          }
+        ],
+        "application_entity_id": "EN-be9188611b6952ad",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "€2 million",
+        "total_raised": "",
+        "announced_at": "2026-11-18",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Haatch",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-11faac8c8448faa7",
+                "quote": "The round was led by Haatch, with participation from Antler, Syncorp Ventures, Araya Ventures, US super angel Kelsey Chase, and a cohort of strategic angel investors.",
+                "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+                "quote_hash": "ef0a372a86aab02de76e0474ffb8a5b174f303cfdb8a0ac5720328d01ea59513"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Antler",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-11faac8c8448faa7",
+                "quote": "The round was led by Haatch, with participation from Antler, Syncorp Ventures, Araya Ventures, US super angel Kelsey Chase, and a cohort of strategic angel investors.",
+                "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+                "quote_hash": "ef0a372a86aab02de76e0474ffb8a5b174f303cfdb8a0ac5720328d01ea59513"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Syncorp Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-11faac8c8448faa7",
+                "quote": "The round was led by Haatch, with participation from Antler, Syncorp Ventures, Araya Ventures, US super angel Kelsey Chase, and a cohort of strategic angel investors.",
+                "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+                "quote_hash": "ef0a372a86aab02de76e0474ffb8a5b174f303cfdb8a0ac5720328d01ea59513"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Araya Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-11faac8c8448faa7",
+                "quote": "The round was led by Haatch, with participation from Antler, Syncorp Ventures, Araya Ventures, US super angel Kelsey Chase, and a cohort of strategic angel investors.",
+                "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+                "quote_hash": "ef0a372a86aab02de76e0474ffb8a5b174f303cfdb8a0ac5720328d01ea59513"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kelsey Chase",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-11faac8c8448faa7",
+                "quote": "The round was led by Haatch, with participation from Antler, Syncorp Ventures, Araya Ventures, US super angel Kelsey Chase, and a cohort of strategic angel investors.",
+                "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+                "quote_hash": "ef0a372a86aab02de76e0474ffb8a5b174f303cfdb8a0ac5720328d01ea59513"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-11faac8c8448faa7",
+            "quote": "London’s Perry AI raises €2 million to bring AI-powered legal intelligence to private capital funds",
+            "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+            "quote_hash": "773da99ea506d0145f31ec8e1d29355124635a4791888b6557f5812c10d0cb9f"
+          },
+          {
+            "source_id": "FISRC-11faac8c8448faa7",
+            "quote": "Perry AI, the London-based startup building an AI-powered legal operating system for private equity and venture capital funds, has raised €2 million ($2.2 million) in a Seed funding round.",
+            "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+            "quote_hash": "7e7515016f428647690e0457efeab43d8c5f83b19b9138f5674519ab65a45a6c"
+          },
+          {
+            "source_id": "FISRC-f0dd3f2843897be1",
+            "quote": "London, UK, 18 November 2026: Perry AI, the London-based startup building the AI legal operating system for private capital, has today announced an oversubscribed $2.2 million seed funding round",
+            "source_content_hash": "7de5f7db8052c656",
+            "quote_hash": "3ab695826fb2d512609e56f979e23c918dfebd697adff696a806b686515e64e4"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "€2 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 2000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "200 万欧元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-7c471b8f44c897be",
+            "round_original": "种子轮",
+            "amount": "€2 million",
+            "announced_at": "2026-11-18",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-11faac8c8448faa7",
+                "quote": "London’s Perry AI raises €2 million to bring AI-powered legal intelligence to private capital funds",
+                "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+                "quote_hash": "773da99ea506d0145f31ec8e1d29355124635a4791888b6557f5812c10d0cb9f"
+              },
+              {
+                "source_id": "FISRC-11faac8c8448faa7",
+                "quote": "Perry AI, the London-based startup building an AI-powered legal operating system for private equity and venture capital funds, has raised €2 million ($2.2 million) in a Seed funding round.",
+                "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+                "quote_hash": "7e7515016f428647690e0457efeab43d8c5f83b19b9138f5674519ab65a45a6c"
+              },
+              {
+                "source_id": "FISRC-f0dd3f2843897be1",
+                "quote": "London, UK, 18 November 2026: Perry AI, the London-based startup building the AI legal operating system for private capital, has today announced an oversubscribed $2.2 million seed funding round",
+                "source_content_hash": "7de5f7db8052c656",
+                "quote_hash": "3ab695826fb2d512609e56f979e23c918dfebd697adff696a806b686515e64e4"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Perry AI 法律操作系统",
+          "description": "面向私募资本基金的 AI 法律操作系统，通过 AI 智能体审查文件、标记问题、准备草稿，并维护基金所有权利、义务和承诺的实时记录。",
+          "target_customers": "私募股权、风险投资及其他私募资本基金，以及为其提供咨询的律师事务所。",
+          "features": [
+            "AI 智能体审查文件、标记问题并准备草稿",
+            "跨交易追踪基金的权利、义务和承诺",
+            "内部法务团队与外部律师共享实时记录",
+            "覆盖基金全生命周期：基金设立、资本部署、投资组合管理和退出",
+            "律师事务所可白标平台"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-11faac8c8448faa7",
+              "quote": "AI agents then act on that record, reviewing documents, flagging issues, preparing drafts, and coordinating in-house teams with external counsel through one shared, live workspace.",
+              "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+              "quote_hash": "d4bad6cb335703b9cb45e5e33ac0a5341281514487aff7399d8764d1d706839f"
+            },
+            {
+              "source_id": "FISRC-f0dd3f2843897be1",
+              "quote": "Perry AI automates complex legal work for the private capital ecosystem using sophisticated AI agents, and tracks every right, obligation and promise across every deal",
+              "source_content_hash": "7de5f7db8052c656",
+              "quote_hash": "efbab98ddd699941642c8b85ac41cf49f7e1c522aeeba223ab659acf9501dcb6"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Antler",
+          "industry": "风险投资",
+          "use_case": "使用 Perry AI 平台管理基金法律工作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d667c16891c7eec0",
+              "quote": "The company lists Antler, Stakeboat Capital, Kae Capital and ETP as customers on its website",
+              "source_content_hash": "d01d8a6794d3097d",
+              "quote_hash": "78d7d4ef60d9f53adfd3e5ceb5ed4f1e019ede263146cb4c3f8556d63d82eba8"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Stakeboat Capital",
+          "industry": "私募资本",
+          "use_case": "使用 Perry AI 平台管理基金法律工作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d667c16891c7eec0",
+              "quote": "The company lists Antler, Stakeboat Capital, Kae Capital and ETP as customers on its website",
+              "source_content_hash": "d01d8a6794d3097d",
+              "quote_hash": "78d7d4ef60d9f53adfd3e5ceb5ed4f1e019ede263146cb4c3f8556d63d82eba8"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Kae Capital",
+          "industry": "风险投资",
+          "use_case": "使用 Perry AI 平台管理基金法律工作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d667c16891c7eec0",
+              "quote": "The company lists Antler, Stakeboat Capital, Kae Capital and ETP as customers on its website",
+              "source_content_hash": "d01d8a6794d3097d",
+              "quote_hash": "78d7d4ef60d9f53adfd3e5ceb5ed4f1e019ede263146cb4c3f8556d63d82eba8"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "ETP",
+          "industry": "私募资本",
+          "use_case": "使用 Perry AI 平台管理基金法律工作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d667c16891c7eec0",
+              "quote": "The company lists Antler, Stakeboat Capital, Kae Capital and ETP as customers on its website",
+              "source_content_hash": "d01d8a6794d3097d",
+              "quote_hash": "78d7d4ef60d9f53adfd3e5ceb5ed4f1e019ede263146cb4c3f8556d63d82eba8"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "€2 million ($2.2 million)",
+          "observed_at": "2026-11-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-11faac8c8448faa7",
+              "quote": "has raised €2 million ($2.2 million) in a Seed funding round",
+              "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+              "quote_hash": "87cb50736e3fe0fafca4aa1cf0354fea19c628380d439ec78fe91b77b790fb09"
+            }
+          ]
+        },
+        {
+          "label": "平台管理资产规模",
+          "value": "超过 $1.5 billion",
+          "observed_at": "2026-11-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0dd3f2843897be1",
+              "quote": "Funds already using Perry AI manage over $1.5 billion in AUM across more than 1,000 portfolio companies.",
+              "source_content_hash": "7de5f7db8052c656",
+              "quote_hash": "51309c6e88b3b486983feab907bd5b51d8d7bfe4285228a720086678aeb07af3"
+            }
+          ]
+        },
+        {
+          "label": "平台覆盖投资组合公司数量",
+          "value": "超过 1,000 家",
+          "observed_at": "2026-11-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0dd3f2843897be1",
+              "quote": "Funds already using Perry AI manage over $1.5 billion in AUM across more than 1,000 portfolio companies.",
+              "source_content_hash": "7de5f7db8052c656",
+              "quote_hash": "51309c6e88b3b486983feab907bd5b51d8d7bfe4285228a720086678aeb07af3"
+            }
+          ]
+        },
+        {
+          "label": "客户工作效率提升",
+          "value": "90%",
+          "observed_at": "2026-11-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0dd3f2843897be1",
+              "quote": "Customers report working 90% faster, with deal signing times on live transactions cut from 84 days to 13 days.",
+              "source_content_hash": "7de5f7db8052c656",
+              "quote_hash": "10924aece444aaf85061e64e2e447ba4a1a15e84ccfdc43b77ff34965a331979"
+            }
+          ]
+        },
+        {
+          "label": "交易签署时间缩短",
+          "value": "从 84 天降至 13 天",
+          "observed_at": "2026-11-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0dd3f2843897be1",
+              "quote": "Customers report working 90% faster, with deal signing times on live transactions cut from 84 days to 13 days.",
+              "source_content_hash": "7de5f7db8052c656",
+              "quote_hash": "10924aece444aaf85061e64e2e447ba4a1a15e84ccfdc43b77ff34965a331979"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Shashwat Patel",
+          "quote": "Generic AI can't take that fear away, because it doesn't know the fund. Perry AI does. It remembers every position a fund has taken and acts on it, so legal teams can move fast and still sleep at night.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0dd3f2843897be1",
+              "quote": "“Generic AI can't take that fear away, because it doesn't know the fund. Perry AI does. It remembers every position a fund has taken and acts on it, so legal teams can move fast and still sleep at night.”",
+              "source_content_hash": "7de5f7db8052c656",
+              "quote_hash": "f3204fc1d6b7d8faa00b2d0aaa709be57ea1d074863a8c0024edada7a503298a"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Haatch",
+            "speaker": "Fred Soneya",
+            "speaker_role": "联合创始人兼普通合伙人",
+            "rationale": "Haatch 认为 AI 的最大赢家将属于在高风险、通用工具不足的市场中深耕的公司，私募资本法律工作正是典型例子；Perry AI 不仅审查文件，还构建基金所有承诺的活记忆并据此行动，早期客户结果出色。",
+            "quote": "The biggest wins in AI will go to companies that go deep in markets where the stakes are high and generalist tools fall short. Private capital legal work is a textbook example. Shashwat and Vaneesa have spent nearly three decades between them doing this work, and it shows in the product: Perry AI doesn’t just review documents, it builds a living memory of every commitment a fund has made and acts on it. The early customer results are exceptional, and we’re delighted to lead this round as Perry takes its platform to the next level",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-11faac8c8448faa7",
+                "quote": "The biggest wins in AI will go to companies that go deep in markets where the stakes are high and generalist tools fall short. Private capital legal work is a textbook example. Shashwat and Vaneesa have spent nearly three decades between them doing this work, and it shows in the product: Perry AI doesn’t just review documents, it builds a living memory of every commitment a fund has made and acts on it. The early customer results are exceptional, and we’re delighted to lead this round as Perry takes its platform to the next level",
+                "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+                "quote_hash": "b19f3942d395b37eacaf1bb7a6fc8c7e1b8adfa76749c430caefaf7af2134bf0"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是 Perry AI 能否将“基金级法律记忆”这一垂直深度产品转化为跨司法辖区的可复制采用，尤其是在美国与亚洲市场。当前融资依赖的已验证信号包括：平台已服务管理超 15 亿美元资产的基金、覆盖超 1000 家投资组合公司，以及客户自报的 90% 效率提升和交易签署时间从 84 天降至 13 天。这些均为公司自述数据，未经独立验证；本轮未披露估值，且金额较小，判断边界在于早期客户结果能否在陌生法律市场复现。",
+        "validated_signals": [
+          "平台已服务管理超过 15 亿美元资产的基金，覆盖超过 1000 家投资组合公司（公司自述）",
+          "客户报告工作效率提升 90%，交易签署时间从 84 天降至 13 天（公司自述）",
+          "本轮种子融资超额认购，由 Haatch 领投，Antler、Syncorp Ventures、Araya Ventures 及天使投资人 Kelsey Chase 参投"
+        ],
+        "risks": [
+          "客户效率提升和交易时间缩短数据均为公司自述，未经独立验证，可能受样本选择或报告偏差影响",
+          "公司未披露估值或资金分配细节，本轮金额较小，能否支撑美国与亚洲扩张存在执行风险",
+          "法律 AI 市场竞争激烈，通用工具和大型法律 AI 平台可能挤压垂直产品的采用空间",
+          "跨司法辖区（美国、亚洲）的法律文档习惯和监管差异可能影响产品复制效果"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "legal",
+        "market_application_id": "",
+        "use_case_ids": [
+          "legal_compliance",
+          "knowledge_search",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "legal_services"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "私募资本法律 AI 操作系统",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Perry AI 能否将“基金级法律记忆”这一垂直深度产品转化为跨司法辖区的可复制采用，尤其是在美国与亚洲市场。当前融资依赖的已验证信号包括：平台已服务管理超 15 亿美元资产的基金、覆盖超 1000 家投资组合公司，以及客户自报的 90% 效率提升和交易签署时间从 84 天降至 13 天。这些均为公司自述数据，未经独立验证；本轮未披露估值，且金额较小，判断边界在于早期客户结果能否在陌生法律市场复现。",
+          "evidence_signals": [
+            "平台已服务管理超过 15 亿美元资产的基金，覆盖超过 1000 家投资组合公司（公司自述）",
+            "客户报告工作效率提升 90%，交易签署时间从 84 天降至 13 天（公司自述）",
+            "本轮种子融资超额认购，由 Haatch 领投，Antler、Syncorp Ventures、Araya Ventures 及天使投资人 Kelsey Chase 参投"
+          ],
+          "risks": [
+            "客户效率提升和交易时间缩短数据均为公司自述，未经独立验证，可能受样本选择或报告偏差影响",
+            "公司未披露估值或资金分配细节，本轮金额较小，能否支撑美国与亚洲扩张存在执行风险",
+            "法律 AI 市场竞争激烈，通用工具和大型法律 AI 平台可能挤压垂直产品的采用空间",
+            "跨司法辖区（美国、亚洲）的法律文档习惯和监管差异可能影响产品复制效果"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Perry AI 法律操作系统",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Shashwat Patel",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Vaneesa Agrawal",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Haatch",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Antler",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Syncorp Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Araya Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kelsey Chase",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Antler",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Stakeboat Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Kae Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "ETP",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-788e4fe44885fd36",
+          "date": "2026-11-18",
+          "title": "Perry AI 获 220 万美元融资，用于在私募资本领域实现法律工作自动化",
+          "amount": "$2.2 million",
+          "source_refs": [
+            "SA-697f48dd023f70eb"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-11faac8c8448faa7",
+          "source_url": "https://www.eu-startups.com/2026/11/londons-perry-ai-raises-e2-million-to-bring-ai-powered-legal-intelligence-to-private-capital-funds/",
+          "title": "伦敦 Perry AI 融资 200 万欧元，为私募资本基金带来 AI 驱动的法律智能",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-25T00:19:07.740Z",
+          "content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+          "source_artifact_id": "SA-2cfb3418a8f1dcfa",
+          "raw_id": "RAW-3f032a7ec73bf61a"
+        },
+        {
+          "source_id": "FISRC-d667c16891c7eec0",
+          "source_url": "https://www.sesamers.com/funding/perry-ai-raises-2-2m-seed-private-capital-legal-work/",
+          "title": "Perry AI raises $2.2M seed to automate private capital legal work",
+          "publisher": "sesamers.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-25T00:41:35.244Z",
+          "content_hash": "d01d8a6794d3097d",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-f0dd3f2843897be1",
+          "source_url": "https://useperry.com/news/seed-round/",
+          "title": "Perry AI raises $2.2M seed funding to build the AI legal operating system for private capital",
+          "publisher": "useperry.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-25T00:41:35.401Z",
+          "content_hash": "7de5f7db8052c656",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-25T00:42:03.346Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-25T00:42:03.346Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Perry AI 法律操作系统"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Shashwat Patel",
+            "Vaneesa Agrawal"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-7c471b8f44c897be"
+      ],
+      "aggregation": {
+        "key": "EN-be9188611b6952ad|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-72f7f97d9e977246",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-25T03:27:40.751Z"
+    },
+    {
+      "event_id": "EV-394bc5ac70f3d714",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-25T03:27:40.751Z"
+    },
+    {
+      "event_id": "EV-4ed0d4054e9a6f07",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-25T03:27:40.751Z"
+    },
+    {
+      "event_id": "EV-1bfa49b4ab9e1ac2",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-25T03:27:40.751Z"
+    },
+    {
+      "event_id": "EV-17d01fa4ed988d23",
+      "company_name": "AI-native芯片设计平台上海芯星元智能科技有限公司",
+      "status": "blocked",
+      "problems": [
+        "research_sources_insufficient"
+      ],
+      "queries": [
+        "\"AI-native芯片设计平台上海芯星元智能科技有限公司\" 2026 融资 投资方",
+        "\"AI-native芯片设计平台上海芯星元智能\" 近亿元 融资 领投 跟投",
+        "\"AI-native芯片设计平台上海芯星元智能科技有限公司\" 官网 产品 服务",
+        "\"AI-native芯片设计平台上海芯星元智能科技有限公司\" 投资机构 融资用途",
+        "\"AI-native芯片设计平台上海芯星元智能\" 2026 本轮融资 公告",
+        "\"AI-native芯片设计平台上海芯星元智能科技有限公司\" 客户 创始人 总部"
+      ],
+      "attempts": [
+        {
+          "provider": "cache",
+          "query": "\"AI-native芯片设计平台上海芯星元智能科技有限公司\" 2026 融资 投资方",
+          "status": "cached",
+          "count": 8
+        },
+        {
+          "provider": "cache",
+          "query": "\"AI-native芯片设计平台上海芯星元智能\" 近亿元 融资 领投 跟投",
+          "status": "cached",
+          "count": 8
+        },
+        {
+          "provider": "cache",
+          "query": "\"AI-native芯片设计平台上海芯星元智能科技有限公司\" 官网 产品 服务",
+          "status": "cached",
+          "count": 8
+        },
+        {
+          "provider": "cache",
+          "query": "\"AI-native芯片设计平台上海芯星元智能科技有限公司\" 投资机构 融资用途",
+          "status": "cached",
+          "count": 7
+        },
+        {
+          "provider": "cache",
+          "query": "\"AI-native芯片设计平台上海芯星元智能\" 2026 本轮融资 公告",
+          "status": "cached",
+          "count": 8
+        },
+        {
+          "provider": "cache",
+          "query": "\"AI-native芯片设计平台上海芯星元智能科技有限公司\" 客户 创始人 总部",
+          "status": "cached",
+          "count": 8
+        }
+      ],
+      "updated_at": "2026-11-25T03:27:40.751Z",
+      "deferral": {
+        "version": "FINANCING-RESEARCH-DEFERRAL-1",
+        "event_id": "EV-17d01fa4ed988d23",
+        "status": "pending_verification",
+        "reason": "research_sources_insufficient",
+        "sources": [
+          {
+            "raw_id": "RAW-239d3d83386d1df3",
+            "source_ref": "SA-0504eaeae27637ce",
+            "content_hash": "ded95784469a344ab3105250acabc11fe9d40ad4a698d469b0a01def4a40bf43",
+            "source_url": "https://m.sohu.com/a/1103075704_546816?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334"
+          }
+        ],
+        "input_hash": "97062c556a575facfdad8eecc272d02cea0e563289258dbd239f576f38a8fe8f",
+        "next_action": "recover_existing_originals_and_complete_independent_research",
+        "fact_approval": false
+      }
+    },
+    {
+      "event_id": "EV-f8599fbcd337c245",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-25T03:27:40.751Z"
+    },
+    {
+      "event_id": "EV-d5c7adf8334ff403",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-25T03:27:40.751Z"
+    },
+    {
+      "event_id": "EV-ac0867cc7ddb3340",
+      "company_name": "",
+      "status": "blocked",
+      "problems": [
+        "subject_company_unresolved"
+      ],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-25T03:27:40.751Z",
+      "deferral": {
+        "version": "FINANCING-RESEARCH-DEFERRAL-1",
+        "event_id": "EV-ac0867cc7ddb3340",
+        "status": "pending_verification",
+        "reason": "subject_company_unresolved",
+        "sources": [
+          {
+            "raw_id": "RAW-eec86d1547b09b37",
+            "source_ref": "SA-bb92b1e2372bb945",
+            "content_hash": "cbd1cffc6b3b5054659bd87eda4f1017f20996fb2538c5b046d4664927996236",
+            "source_url": "https://www.163.com/dy/article/LC4L6CEQ052688NB.html"
+          }
+        ],
+        "input_hash": "1ee2ed71ee63c114a8b6fd342373e12d5b35e9c6119f4e1f682e4f4cc378b46a",
+        "isolation": "new_candidate_only",
+        "entity_binding": "5c84de01a045e17ef14b88cde36981f30488774e79f6597e7690c4d042a11fe1",
+        "claim_refs": [
+          "CL-30d706a008f3f0be"
+        ],
+        "evidence_quotes": [
+          {
+            "claim_id": "CL-30d706a008f3f0be",
+            "raw_id": "RAW-eec86d1547b09b37",
+            "quote": "其完成两轮约千万美元融资，少云、袁菁参与了天使轮跟投，两轮领投分别是云九资本、锦秋基金。",
+            "quote_hash": "ed4f6e74a39b1b4cba886408da3883ed87de19400bf8a5686306ccda4099c5d6"
+          }
+        ],
+        "next_action": "responsible_review_of_candidate_identity_amount_and_round",
+        "fact_approval": false
+      }
+    },
+    {
+      "event_id": "EV-dc8755b16a5344ed",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-25T03:27:40.751Z"
+    },
+    {
+      "event_id": "EV-5c7525642d1189d6",
+      "company_name": "",
+      "status": "pending",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": ""
+    },
+    {
+      "event_id": "EV-a151aeb22a93c5ee",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-25T03:27:40.751Z"
+    },
+    {
+      "event_id": "EV-7c471b8f44c897be",
+      "company_name": "Perry AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-25T03:27:40.751Z"
+    },
+    {
+      "event_id": "EV-e0d0a57df0d64210",
+      "company_name": "coprod",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Swiss startup coprod\" 2026 funding round investors",
+        "\"Swiss startup coprod\" official product customers",
+        "\"Swiss startup coprod\" \"why we invested\"",
+        "\"Swiss startup coprod\" founders headquarters product"
+      ],
+      "attempts": [
+        {
+          "provider": "anysearch",
+          "query": "\"Swiss startup coprod\" 2026 funding round investors",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "planner",
+          "query": "\"Swiss startup coprod\" €5.45 million funding announcement",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Swiss startup coprod\" official product customers",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.facebook.com/ctorobotics/videos/what-if-building-robot-hardware-became-as-easy-as-building-software-swiss-startu/2236528637260466/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.facebook.com/ctorobotics/posts/what-if-building-robot-hardware-became-as-easy-as-building-software-swiss-startu/1172722709027332/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.linkedin.com/posts/eu-startups-menlo-media_swiss-startup-coprod-raises-545-million-activity-7530563625854615552-gL5E",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.startup.ch/coprod",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://dealroom.co/news/174910-swiss-robotics-startup-coprod-raises-6m-to-fix-hardware-s-integration-he/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.facebook.com/EUStartups/posts/coprod-a-swiss-robotics-hardware-startup-building-modular-hardware-components-fo/1574428411378429/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Swiss startup coprod\" \"why we invested\"",
+          "status": "empty",
+          "count": 0
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Swiss startup coprod\" \"why we invested\"",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Swiss startup coprod\" \"why we invested\"",
+          "status": "quota_exhausted",
+          "http_status": 402,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"Swiss startup coprod\" \"why we invested\"",
+          "status": "completed",
+          "count": 8
+        },
+        {
+          "provider": "original",
+          "url": "https://www.swiss.com/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.swiss.com/ch/de/homepage",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "planner",
+          "query": "\"Swiss startup coprod\" 2026 raises led by",
+          "status": "skipped",
+          "reason": "accepted_originals_cover_gap"
+        },
+        {
+          "provider": "anysearch",
+          "query": "\"Swiss startup coprod\" founders headquarters product",
+          "status": "completed",
+          "count": 7
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Swiss startup coprod\" founders headquarters product",
+          "status": "failed",
+          "http_status": 432,
+          "retry_after": ""
+        },
+        {
+          "provider": "bing_rss",
+          "query": "\"Swiss startup coprod\" founders headquarters product",
+          "status": "completed",
+          "count": 7
+        },
+        {
+          "provider": "original",
+          "url": "https://tech.eu/2026/11/23/swiss-startup-coprod-raises-6m-to-make-building-robot-hardware-as-simple-as-developing-software/",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://coprod.co/",
+          "status": "excluded",
+          "reason": "company_not_in_original"
+        },
+        {
+          "provider": "original",
+          "url": "https://www.konsulteer.com/article/swiss-startup-coprod-raises-6-million-pre-seed-to-simplify-building-robot-hardware",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        }
+      ],
+      "updated_at": "2026-11-25T03:27:40.751Z"
+    },
+    {
+      "event_id": "EV-86f4e971f63b6cf2",
+      "company_name": "",
+      "status": "pending",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": ""
+    },
+    {
+      "event_id": "EV-638209012a462005",
+      "company_name": "",
+      "status": "pending",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": ""
+    },
+    {
+      "event_id": "EV-c0096e363d19588f",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-25T03:27:40.751Z"
+    },
+    {
+      "event_id": "EV-56f2faecaf36452a",
+      "company_name": "",
+      "status": "pending",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": ""
+    },
+    {
+      "event_id": "EV-d84355ecbf21be85",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-25T03:27:40.751Z"
+    },
+    {
+      "event_id": "EV-d03ad90e15e62533",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-11-25T03:27:40.751Z"
+    }
+  ]
+}
