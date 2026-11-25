@@ -697,9 +697,15 @@ function trimBoilerplate(text) {
   return normalizeEvidenceBody(text);
 }
 
+// Publishers sometimes concatenate the navigation label with the next title.
+// Match the label at a line boundary, without requiring whitespace after it.
+const ARTICLE_NAVIGATION_START = /(?:^|\n)\s*(?:Related (?:Stories|Articles)\b|(?:Previous|Next) article)/iu;
+
 // Use only article content for financing status; preserve original evidence spans.
 export function financingDecisionText(text = "") {
-  return text.split(/\n\s*(?:海量资讯、精准解读|新浪科技公众号|【本文根据公开消息发布|Read Next推荐阅读|AI Assistant\s*AI 阅读助手|AI 阅读助手|投稿爆料[：:]|联系我们\s*(?:\n|$))/u)[0];
+  const article = text.split(/\n\s*(?:海量资讯、精准解读|新浪科技公众号|【本文根据公开消息发布|Read Next推荐阅读|AI Assistant\s*AI 阅读助手|AI 阅读助手|投稿爆料[：:]|联系我们\s*(?:\n|$))/u)[0];
+  const navigationStart = article.search(ARTICLE_NAVIGATION_START);
+  return navigationStart < 0 ? article : article.slice(0, navigationStart);
 }
 
 function sourceArtifact(raw, file, intakeDocument = null) {
@@ -1345,7 +1351,7 @@ export function fundingClaimCandidateRelevant({ start = 0, quote = "" } = {}, ti
 function claimCandidates(body, title, rule, subject = "") {
   // Keep the immutable evidence body and its offsets, but never extract a
   // financing amount from the publisher's recommendations after the article.
-  const relatedStart = body.search(/(?:^|\n)\s*(?:Related (?:Stories|Articles)|Previous article|Next article)\b/iu);
+  const relatedStart = body.search(ARTICLE_NAVIGATION_START);
   const article = rule.eventType === "funding" ? financingDecisionText(body) : body;
   const all = sentenceSpans(relatedStart < 0 ? article : article.slice(0, relatedStart));
   const titleTokens = normalizeSpace(title).toLowerCase().split(/[^\p{L}\p{N}]+/u).filter((value) => value.length >= 3).slice(0, 8);
