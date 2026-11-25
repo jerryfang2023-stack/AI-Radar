@@ -114,3 +114,18 @@ test('zero public delta still supplies canonical candidates and originals for wi
   assert.ok(out.files.includes('factual-delta/EV-pending.json'));assert.ok(out.files.includes('non-admitted-research/FI-research.json'));
  }finally{fs.rmSync(root,{recursive:true,force:true});}
 });
+
+test('currency lineage exposes source disclosures and actual public events without granting approval',()=>{
+ const canonical={...card('FI-existing'),triggered_by_event_id:'EV-existing',source_event_ids:['EV-existing','EV-equivalent'],
+  financing:{amount:'$2.2 million',cumulative_amount:{historical_round_count:1},
+   disclosures:[{event_id:'EV-existing',amount:'$2.2 million',announced_at:'2026-11-18'},{event_id:'EV-equivalent',amount:'€2 million',announced_at:'2026-11-18'}]}};
+ const before={cards:[canonical],event_cards:[canonical]};
+ const after={cards:[canonical],event_cards:[canonical],review:{cross_currency_duplicates:[{canonical_id:'FI-existing',duplicate_id:'FI-equivalent',reason:'same_round_explicit_source_currency_equivalence',evidence:{quote:'Company raised €2 million ($2.2 million) in seed funding.'}}]}};
+ const audit=publicationProjectionAudit(before,after);
+ assert.equal(audit.same_round_currency_lineage[0].disclosures.length,2);
+ assert.deepEqual(audit.same_round_currency_lineage[0].public_event_card_ids,['FI-existing']);
+ assert.equal(audit.same_round_currency_lineage[0].historical_round_count,1);
+ assert.equal(Object.hasOwn(audit.same_round_currency_lineage[0],'fact_approval'),false);
+ const duplicated={...after,event_cards:[canonical,{...card('FI-equivalent'),triggered_by_event_id:'EV-equivalent'}]};
+ assert.deepEqual(publicationProjectionAudit(before,duplicated).same_round_currency_lineage[0].public_event_card_ids,['FI-existing','FI-equivalent']);
+});
