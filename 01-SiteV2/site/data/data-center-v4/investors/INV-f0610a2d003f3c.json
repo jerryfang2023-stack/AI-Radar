@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-24",
-    "currentDate": "2026-11-24",
-    "eventCount": 4549,
+    "latestDataDate": "2026-11-25",
+    "currentDate": "2026-11-25",
+    "eventCount": 4558,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,7 +61,7 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
+    "current_round_count": 9,
     "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 8,
     "market_regions": [
@@ -75,7 +75,7 @@
     "role_counts": {
       "historical_or_ambiguous": 3,
       "lead": 1,
-      "participant": 7
+      "participant": 8
     },
     "round_codes": [
       "pre_seed",
@@ -124,6 +124,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-9dfb7b1eff589477",
+        "funding_insight_id": "FI-cf9db9c73bdb7163",
+        "event_ids": [
+          "EV-7c471b8f44c897be"
+        ],
+        "company_entity_id": "EN-be9188611b6952ad",
+        "company_canonical_entity_id": "",
+        "company_name": "Perry AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "€2 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 2000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "200 万欧元"
+        },
+        "announced_at": "2026-11-18",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-11faac8c8448faa7",
+            "source_url": "https://www.eu-startups.com/2026/11/londons-perry-ai-raises-e2-million-to-bring-ai-powered-legal-intelligence-to-private-capital-funds/",
+            "source_title": "伦敦 Perry AI 融资 200 万欧元，为私募资本基金带来 AI 驱动的法律智能",
+            "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+            "quote": "The round was led by Haatch, with participation from Antler, Syncorp Ventures, Araya Ventures, US super angel Kelsey Chase, and a cohort of strategic angel investors.",
+            "quote_hash": "ef0a372a86aab02de76e0474ffb8a5b174f303cfdb8a0ac5720328d01ea59513"
+          }
+        ]
+      },
       {
         "activity_id": "IA-234d671960eb951d",
         "funding_insight_id": "FI-7a2ce5c154897e4a",
@@ -551,6 +591,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-11faac8c8448faa7",
+        "source_url": "https://www.eu-startups.com/2026/11/londons-perry-ai-raises-e2-million-to-bring-ai-powered-legal-intelligence-to-private-capital-funds/",
+        "source_title": "伦敦 Perry AI 融资 200 万欧元，为私募资本基金带来 AI 驱动的法律智能",
+        "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+        "quote": "The round was led by Haatch, with participation from Antler, Syncorp Ventures, Araya Ventures, US super angel Kelsey Chase, and a cohort of strategic angel investors.",
+        "quote_hash": "ef0a372a86aab02de76e0474ffb8a5b174f303cfdb8a0ac5720328d01ea59513"
+      },
+      {
         "source_id": "FISRC-f9e088b21c3de630",
         "source_url": "https://tech.eu/2026/11/18/perry-ai-secures-22m-to-automate-legal-work-across-private-capital/",
         "source_title": "Perry AI 获 220 万美元融资，用于在私募资本领域实现法律工作自动化",
@@ -661,16 +709,16 @@
           "source_id": "antler-lovable-seriesc-2026"
         },
         {
+          "description": "融资来源记录：Perry AI · 种子轮 · 2026-11-18 · 本轮参投 · €2 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-11faac8c8448faa7"
+        },
+        {
           "description": "融资来源记录：Perry AI · 种子轮 · 2026-11-18 · 本轮参投 · $2.2 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f9e088b21c3de630"
         },
         {
           "description": "融资来源记录：Jenz · 预种子轮 · 2026-10-21 · 本轮参投 · €540,000。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-63ad1f6801409355"
-        },
-        {
-          "description": "融资来源记录：Affinity Labs · 预种子轮 · 2026-10-14 · 本轮参投 · $2 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bb091527618bffba"
         }
       ],
       "contacts": [],
@@ -696,6 +744,14 @@
           "quote_hash": "17dae6719011a6837f9411f516e259e06bc7e2d00a2aee6b64889f1afaf81e59"
         },
         {
+          "source_id": "FISRC-11faac8c8448faa7",
+          "source_url": "https://www.eu-startups.com/2026/11/londons-perry-ai-raises-e2-million-to-bring-ai-powered-legal-intelligence-to-private-capital-funds/",
+          "source_title": "伦敦 Perry AI 融资 200 万欧元，为私募资本基金带来 AI 驱动的法律智能",
+          "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+          "quote": "The round was led by Haatch, with participation from Antler, Syncorp Ventures, Araya Ventures, US super angel Kelsey Chase, and a cohort of strategic angel investors.",
+          "quote_hash": "ef0a372a86aab02de76e0474ffb8a5b174f303cfdb8a0ac5720328d01ea59513"
+        },
+        {
           "source_id": "FISRC-f9e088b21c3de630",
           "source_url": "https://tech.eu/2026/11/18/perry-ai-secures-22m-to-automate-legal-work-across-private-capital/",
           "source_title": "Perry AI 获 220 万美元融资，用于在私募资本领域实现法律工作自动化",
@@ -710,14 +766,6 @@
           "source_content_hash": "ce46f406d8a72f2fe3bf1fe704f2e93c29c820c28ee937bf39f38d2ea17bf4b5",
           "quote": "Norwegian AI startup Jenz has raised €540,000 in pre-seed funding from Antler and Ada Ventures.",
           "quote_hash": "045967cd1abc5863a616452123b6fff2e8114ebbc49017a64e39f1325cd884e5"
-        },
-        {
-          "source_id": "FISRC-bb091527618bffba",
-          "source_url": "https://tech.eu/2026/10/14/affinity-labs-raises-2m-to-build-ai-powered-software-brands-with-creators/",
-          "source_title": "Affinity Labs 融资 200 万美元，与创作者共同打造 AI 驱动的软件品牌",
-          "source_content_hash": "acd82196db8fdfeadf473bd5d9ae34427653aa9647ef26fb642a2b85d43cd24c",
-          "quote": "The round was led by Fuel Ventures, alongside Antler, and includes a £497,787 grant from Innovate UK, part of UK Research and Innovation (UKRI).",
-          "quote_hash": "cc3ccd54a9f2ec6c62e9e1d33340febbba63ce971b2f9657daa51cd70c580319"
         }
       ],
       "last_verified_at": "2026-10-03"

@@ -40463,7 +40463,125 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-11-24T03:07:27.914Z"
+    },
+    "EV-e0d0a57df0d64210": {
+      "id": "EV-e0d0a57df0d64210",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "公司主营面向机器人与物理AI的模块化硬件组件及控制平台，属机器人核心部件。",
+      "input_hash": "c3282f44001139f011a71a8ab793c5014997d3f29b78c190e17d246a79b11b3f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4f68d01d3d793450",
+          "quote": "coprod, a Swiss robotics hardware startup building modular hardware components for robotics and physical AI applications"
+        },
+        {
+          "source_id": "FISRC-d6501ff3dde4b7bb",
+          "quote": "The company develops modular hardware components that help build robots and physical AI systems."
+        },
+        {
+          "source_id": "FISRC-4f68d01d3d793450",
+          "quote": "Its product portfolio centres on what it calls “co:products,” a family of compatible hardware modules comprising co:sense, co:act, co:power, and co:battery, all unified through the co:system platform."
+        },
+        {
+          "source_id": "FISRC-4f68d01d3d793450",
+          "quote": "The platform combines all modules on a single real-time EtherCAT control plane, accessible via one API in C++ and Python."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-25T00:45:04.342Z"
+    },
+    "EV-f46e4e1b37bb1b75": {
+      "id": "EV-f46e4e1b37bb1b75",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "为支付机构提供共享风险数据以识别金融诈骗，属金融行业AI软件。",
+      "input_hash": "1d1346bfdd8ccf5fdbf3f1c1d68b1e6d97d00c3c77b220bf3efbdb9e5e1b1d0d",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a6cec2f0e56a996d",
+          "quote": "Acorda, a London-based FinTech startup helping payment providers stop financial scams through shared risk data"
+        },
+        {
+          "source_id": "FISRC-966f44c7ee07620c",
+          "quote": "London-based Acorda has raised £1.8 million in pre-seed funding to help banks and other payment providers identify scams"
+        },
+        {
+          "source_id": "FISRC-a6cec2f0e56a996d",
+          "quote": "Acorda addresses this by acting as a single integration point for payment companies."
+        },
+        {
+          "source_id": "FISRC-966f44c7ee07620c",
+          "quote": "Acorda enables banks and other payment providers to securely share scam signals from both the sender and recipient sides of a payment, helping detect and prevent scams before money is sent."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-25T00:45:04.342Z"
+    },
+    "EV-7c471b8f44c897be": {
+      "id": "EV-7c471b8f44c897be",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "legal",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "面向私募与风投基金的AI法律操作系统，属法律行业AI产品。",
+      "input_hash": "e284eb740b1481f35b3fdfe7d8c7ce1c926f495cca3ae067616f29a6491f572b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-11faac8c8448faa7",
+          "quote": "Perry AI, the London-based startup building an AI-powered legal operating system for private equity and venture capital funds"
+        },
+        {
+          "source_id": "FISRC-f0dd3f2843897be1",
+          "quote": "Perry AI is the legal operating system for private capital. Founded in London by former corporate and funds lawyers Shashwat Patel and Vaneesa Agrawal"
+        },
+        {
+          "source_id": "FISRC-11faac8c8448faa7",
+          "quote": "AI agents then act on that record, reviewing documents, flagging issues, preparing drafts, and coordinating in-house teams with external counsel through one shared, live workspace."
+        },
+        {
+          "source_id": "FISRC-f0dd3f2843897be1",
+          "quote": "Perry AI automates complex legal work for the private capital ecosystem using sophisticated AI agents, and tracks every right, obligation and promise across every deal"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-25T00:45:04.342Z"
     }
   },
-  "generated_at": "2026-11-24T04:02:21.122Z"
+  "generated_at": "2026-11-25T00:45:04.343Z"
 }

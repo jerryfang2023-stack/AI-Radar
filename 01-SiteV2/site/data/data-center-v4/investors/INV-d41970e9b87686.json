@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-24",
-    "currentDate": "2026-11-24",
-    "eventCount": 4549,
+    "latestDataDate": "2026-11-25",
+    "currentDate": "2026-11-25",
+    "eventCount": 4558,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-11-23",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "lead": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "pre_seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-46e3d635c7538e1c",
+        "canonical_entity_id": "",
+        "name": "Acorda"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-ccb024902e6c912e",
+        "funding_insight_id": "FI-b6368f4fabd2ba9e",
+        "event_ids": [
+          "EV-f46e4e1b37bb1b75"
+        ],
+        "company_entity_id": "EN-46e3d635c7538e1c",
+        "company_canonical_entity_id": "",
+        "company_name": "Acorda",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "pre-Seed",
+        "amount_original": "€2.15 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 2150000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "215 万欧元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-a6cec2f0e56a996d",
+            "source_url": "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
+            "source_title": "伦敦Acorda融资215万欧元，助银行在资金转移前识别支付诈骗",
+            "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+            "quote": "The round was led by Concept Ventures, the first venture capital firm to back AI unicorn Eleven Labs, with participation from NFG Ventures",
+            "quote_hash": "b41425e39a6fb6b555553278266f4cbdfcf34c40194978d46163d15142147351"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6637a05e2f96268c",
         "funding_insight_id": "FI-fe82f871887d3c1f",
@@ -112,6 +161,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-a6cec2f0e56a996d",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
+        "source_title": "伦敦Acorda融资215万欧元，助银行在资金转移前识别支付诈骗",
+        "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+        "quote": "The round was led by Concept Ventures, the first venture capital firm to back AI unicorn Eleven Labs, with participation from NFG Ventures",
+        "quote_hash": "b41425e39a6fb6b555553278266f4cbdfcf34c40194978d46163d15142147351"
+      },
       {
         "source_id": "FISRC-50130a45d72291a2",
         "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
@@ -180,6 +237,10 @@
         {
           "description": "Archestra 融资公告称 Concept Ventures 等既有 pre-seed 投资人再次参与；没有披露 Concept 单家支票金额。",
           "source_id": "FISRC-50130a45d72291a2"
+        },
+        {
+          "description": "融资来源记录：Acorda · 预种子轮 · 2026-11-23 · 本轮领投 · €2.15 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a6cec2f0e56a996d"
         }
       ],
       "contacts": [
@@ -237,6 +298,14 @@
           "source_content_hash": "65e55f883bf21e63",
           "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in.",
           "quote_hash": "2f653aa9e0a1b1cead77e89e9a782db3c2fc2e35ebb2e67dc763689267e7fc34"
+        },
+        {
+          "source_id": "FISRC-a6cec2f0e56a996d",
+          "source_url": "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
+          "source_title": "伦敦Acorda融资215万欧元，助银行在资金转移前识别支付诈骗",
+          "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+          "quote": "The round was led by Concept Ventures, the first venture capital firm to back AI unicorn Eleven Labs, with participation from NFG Ventures",
+          "quote_hash": "b41425e39a6fb6b555553278266f4cbdfcf34c40194978d46163d15142147351"
         }
       ],
       "last_verified_at": "2026-09-28"

@@ -5,17 +5,17 @@
     "site_version": "SITE-V4.6.1-research-retirement",
     "column_version": "FUNDING-INSIGHT-V1.5.0-china-market",
     "taxonomy_version": "AI-FUNDING-TAGS-1.0",
-    "latest_date": "2026-11-24",
-    "last_checked_date": "2026-11-24",
+    "latest_date": "2026-11-25",
+    "last_checked_date": "2026-11-25",
     "latest_financing_date": "2026-11-23",
-    "generated_at": "2026-11-24T03:58:21.115Z",
-    "card_count": 756,
+    "generated_at": "2026-11-25T00:42:35.001Z",
+    "card_count": 757,
     "china_market_card_count": 163,
-    "duplicate_rounds_removed": 26,
+    "duplicate_rounds_removed": 27,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-11-24T04:00:28.621Z"
+      "generated_at": "2026-11-25T00:43:51.369Z"
     },
     "market_category_framework": {
       "name": "观澜 AI 融资分类",
@@ -35,10 +35,10 @@
         }
       ]
     },
-    "event_count": 808,
+    "event_count": 809,
     "aggregation_strategy": "reviewed_funding_subject",
     "scope": "all_ai_financing_except_embodied_and_robotics",
-    "excluded_count": 100,
+    "excluded_count": 101,
     "pending_classification_count": 22,
     "pending_publication_count": 56
   },
@@ -3795,6 +3795,707 @@
       },
       "source_card_ids": [
         "FI-a4c54e0a0719d2bf"
+      ]
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-b6368f4fabd2ba9e",
+      "triggered_by_event_id": "EV-f46e4e1b37bb1b75",
+      "as_of_date": "2026-11-25",
+      "company": {
+        "entity_id": "EN-46e3d635c7538e1c",
+        "name": "Acorda",
+        "full_name": "Acorda",
+        "website": "acorda.com",
+        "summary": "伦敦金融科技初创公司，为支付机构提供共享风险数据平台，帮助银行和支付服务商在资金转出前识别支付诈骗。",
+        "headquarters": "英国伦敦",
+        "founders": [
+          {
+            "name": "Jhamat Mahbubani",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a6cec2f0e56a996d",
+                "quote": "Founded in October 2026 by Jhamat Mahbubani, Sam Kelsey, and Robert Parrish",
+                "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+                "quote_hash": "8e6d995c1ae476afdcf6e2d3c43309347bb8e7260b86372620d550c3dbb72475"
+              },
+              {
+                "source_id": "FISRC-495396449544e3fd",
+                "quote": "Mahbubani is chief executive.",
+                "source_content_hash": "6261ac68e5adfea7",
+                "quote_hash": "7f89d41abf7268ec1d7b903a959b2cfab1f165dc0bd329326f50262fbede4bbf"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sam Kelsey",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a6cec2f0e56a996d",
+                "quote": "Founded in October 2026 by Jhamat Mahbubani, Sam Kelsey, and Robert Parrish",
+                "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+                "quote_hash": "8e6d995c1ae476afdcf6e2d3c43309347bb8e7260b86372620d550c3dbb72475"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Robert Parrish",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a6cec2f0e56a996d",
+                "quote": "Founded in October 2026 by Jhamat Mahbubani, Sam Kelsey, and Robert Parrish",
+                "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+                "quote_hash": "8e6d995c1ae476afdcf6e2d3c43309347bb8e7260b86372620d550c3dbb72475"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a6cec2f0e56a996d",
+            "quote": "Acorda, a London-based FinTech startup helping payment providers stop financial scams through shared risk data",
+            "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+            "quote_hash": "2e16387a69c2758a7a88e6e55bb56574dc1ea346583f896d70e8bbd6739febcb"
+          },
+          {
+            "source_id": "FISRC-966f44c7ee07620c",
+            "quote": "London-based Acorda has raised £1.8 million in pre-seed funding to help banks and other payment providers identify scams",
+            "source_content_hash": "26701603e608e51b",
+            "quote_hash": "80689649d6309718891517860f6449b88c845f00e33d012a2b1be0258306b2b1"
+          }
+        ],
+        "application_entity_id": "EN-46e3d635c7538e1c",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "预种子轮",
+        "amount": "€2.15 million",
+        "total_raised": "",
+        "announced_at": "2026-11-23",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Concept Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a6cec2f0e56a996d",
+                "quote": "The round was led by Concept Ventures, the first venture capital firm to back AI unicorn Eleven Labs, with participation from NFG Ventures",
+                "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+                "quote_hash": "b41425e39a6fb6b555553278266f4cbdfcf34c40194978d46163d15142147351"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-d41970e9b87686"
+          },
+          {
+            "name": "NFG Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a6cec2f0e56a996d",
+                "quote": "with participation from NFG Ventures, the firm founded by early Monzo investor and non-executive director Eileen Burbridge",
+                "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+                "quote_hash": "0ed43a6e3e0b920f387c586acb0153a5d4246ee1cbb8f1fbead211cb34e97b63"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-0bc19a9cafe1fe"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a6cec2f0e56a996d",
+            "quote": "HomeUK-StartupsLondon-based Acorda raises €2.15 million to help banks detect payment scams before...",
+            "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+            "quote_hash": "0cbf6353c7be91cb37249fb4f4625ad641717b01343e91e4f1bcbe4b1f724332"
+          },
+          {
+            "source_id": "FISRC-a6cec2f0e56a996d",
+            "quote": "has raised €2.15 million (£1.8 million) in a pre-Seed funding round",
+            "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+            "quote_hash": "562cf526a865d789d9d77c23e479bdff78281a852fc12d81a54f095a7c23b431"
+          },
+          {
+            "source_id": "FISRC-8dfb2c91cc58fdba",
+            "quote": "London-based Acorda raises £1.8m pre-seed to help payment providers detect scams",
+            "source_content_hash": "f735d5f9da74bd3b",
+            "quote_hash": "976828a006eeae85fe3bd24dd87fa8eed9003afa7d31e3d8af30bc0441c532b1"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "pre-Seed",
+        "amount_original": "€2.15 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 2150000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "215 万欧元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-f46e4e1b37bb1b75",
+            "round_original": "pre-Seed",
+            "amount": "€2.15 million",
+            "announced_at": "2026-11-23",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a6cec2f0e56a996d",
+                "quote": "HomeUK-StartupsLondon-based Acorda raises €2.15 million to help banks detect payment scams before...",
+                "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+                "quote_hash": "0cbf6353c7be91cb37249fb4f4625ad641717b01343e91e4f1bcbe4b1f724332"
+              },
+              {
+                "source_id": "FISRC-a6cec2f0e56a996d",
+                "quote": "has raised €2.15 million (£1.8 million) in a pre-Seed funding round",
+                "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+                "quote_hash": "562cf526a865d789d9d77c23e479bdff78281a852fc12d81a54f095a7c23b431"
+              },
+              {
+                "source_id": "FISRC-8dfb2c91cc58fdba",
+                "quote": "London-based Acorda raises £1.8m pre-seed to help payment providers detect scams",
+                "source_content_hash": "f735d5f9da74bd3b",
+                "quote_hash": "976828a006eeae85fe3bd24dd87fa8eed9003afa7d31e3d8af30bc0441c532b1"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "EUR",
+              "value": 2150000,
+              "min_value": null,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "exact",
+              "display_zh": "215 万欧元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-a6cec2f0e56a996d",
+          "FISRC-8dfb2c91cc58fdba"
+        ]
+      },
+      "products": [
+        {
+          "name": "共享风险数据平台",
+          "description": "作为支付机构的单一集成点，连接各支付公司，在付款双方之间共享风险信号，通常在资金转出前完成风险识别。",
+          "target_customers": "银行、支付服务商和加密货币交易所",
+          "features": [
+            "单一集成点替代双边数据共享协议",
+            "在付款发送方与接收方之间共享风险信号",
+            "在资金转出前识别诈骗"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6cec2f0e56a996d",
+              "quote": "Acorda addresses this by acting as a single integration point for payment companies.",
+              "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+              "quote_hash": "d34afc47bdd1c17f1b4bd085a4e898bfc57aa6a11470f0701b75a012711f9647"
+            },
+            {
+              "source_id": "FISRC-966f44c7ee07620c",
+              "quote": "Acorda enables banks and other payment providers to securely share scam signals from both the sender and recipient sides of a payment, helping detect and prevent scams before money is sent.",
+              "source_content_hash": "26701603e608e51b",
+              "quote_hash": "7ba23db4e552caa678cc15a0331e6318c65e0b6c7839ae48f634a6d8309d3e80"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "三家全球支付公司（未具名）",
+          "industry": "",
+          "use_case": "支付诈骗风险信号共享试点",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6cec2f0e56a996d",
+              "quote": "The company says it is already running trials with three major global payment companies, and targets banks and cryptocurrency exchanges alike.",
+              "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+              "quote_hash": "4c4ee56a7fc9bce86927fd545007e50dbce43a5a8ea5fa166c2c90afd6dd136d"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "€2.15 million（£1.8 million）",
+          "observed_at": "2026-11-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6cec2f0e56a996d",
+              "quote": "has raised €2.15 million (£1.8 million) in a pre-Seed funding round",
+              "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+              "quote_hash": "562cf526a865d789d9d77c23e479bdff78281a852fc12d81a54f095a7c23b431"
+            }
+          ]
+        },
+        {
+          "label": "试点中的全球支付公司数量",
+          "value": "3",
+          "observed_at": "2026-11-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6cec2f0e56a996d",
+              "quote": "already running trials with three major global payment companies",
+              "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+              "quote_hash": "97e3fd4d4b8930f54d0fbc3e74f74d971f062e11a04914d3349c6d44c5b835a7"
+            }
+          ]
+        },
+        {
+          "label": "创始团队在Monzo从事诈骗预防的年限",
+          "value": "3年",
+          "observed_at": "2026-11-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6cec2f0e56a996d",
+              "quote": "They spent three years at Monzo building machine-learning models that monitored payments from customer accounts to prevent scams",
+              "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+              "quote_hash": "ae9ba45d4c4be84663a25f0546dc5e1ec04b5392360dcd7430c8d1f79d6b1668"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Jhamat Mahbubani",
+          "quote": "Banks have talented engineers and data scientists who are motivated to stop scams, but are missing the data they need. We want to provide better data in a way that they genuinely love to use.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6cec2f0e56a996d",
+              "quote": "Banks have talented engineers and data scientists who are motivated to stop scams, but are missing the data they need. We want to provide better data in a way that they genuinely love to use.",
+              "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+              "quote_hash": "eb690f4f43e9ecdb4eaf6e5f85eb0ef683e79dbce1de3c6621d9abaf6a858022"
+            }
+          ]
+        },
+        {
+          "speaker": "Oliver Kicks",
+          "quote": "The best founders are the ones who have lived the problem, and Jhamat, Sam and Rob have spent years on the front line of scam prevention at Monzo, building the models that protected customers and saved millions of pounds.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6cec2f0e56a996d",
+              "quote": "The best founders are the ones who have lived the problem, and Jhamat, Sam and Rob have spent years on the front line of scam prevention at Monzo, building the models that protected customers and saved millions of pounds.",
+              "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+              "quote_hash": "f512ae4996e4d625f42af71225ae7fe6c2492ac30c345ac241c5ad1326c1b051"
+            }
+          ]
+        },
+        {
+          "speaker": "Eileen Burbidge",
+          "quote": "Scam prevention is becoming an increasingly expensive problem for all banks and payment providers. Very few, if any, teams will have more experience addressing this challenge than the Acorda team",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6cec2f0e56a996d",
+              "quote": "Scam prevention is becoming an increasingly expensive problem for all banks and payment providers. Very few, if any, teams will have more experience addressing this challenge than the Acorda team",
+              "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+              "quote_hash": "bcb1cd3e2da4606f081215430cd4ccfd6d1e3d1538002c293a2eb181b44bf499"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是：共享风险数据网络能否在银行与支付机构之间形成足够参与度，从而在资金转出前有效识别诈骗。当前已验证的信号主要是创始团队在Monzo三年构建反诈骗机器学习模型的经历，以及公司自称正与三家全球支付公司进行试点；但试点客户未具名、尚无产品效果数据，本轮资金用途也明确是先在首批合作方中证明结果，因此融资依赖的是团队履历与问题定义，而非已验证的商业化表现。来源未披露估值。",
+        "validated_signals": [
+          "创始团队三人均为Monzo前诈骗预防负责人，在Monzo工作三年构建监控付款的机器学习模型",
+          "公司称已与三家全球支付公司开展试点",
+          "本轮融资用于在首批支付公司合作方中展示结果，再扩大覆盖范围"
+        ],
+        "risks": [
+          "公司成立于2026年10月，融资时仅数周，产品性能尚无公开验证",
+          "三家试点支付公司未具名，试点结果与转化情况未知",
+          "共享风险数据网络依赖足够多参与方，冷启动与网络效应尚未验证",
+          "来源未说明跨境共享收款方数据时如何满足数据保护与竞争法要求",
+          "全球欺诈支付规模€537 billion为媒体引用的行业估计，非公司实绩"
+        ],
+        "sector": "金融与保险",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：共享风险数据网络能否在银行与支付机构之间形成足够参与度，从而在资金转出前有效识别诈骗。当前已验证的信号主要是创始团队在Monzo三年构建反诈骗机器学习模型的经历，以及公司自称正与三家全球支付公司进行试点；但试点客户未具名、尚无产品效果数据，本轮资金用途也明确是先在首批合作方中证明结果，因此融资依赖的是团队履历与问题定义，而非已验证的商业化表现。来源未披露估值。",
+          "evidence_signals": [
+            "创始团队三人均为Monzo前诈骗预防负责人，在Monzo工作三年构建监控付款的机器学习模型",
+            "公司称已与三家全球支付公司开展试点",
+            "本轮融资用于在首批支付公司合作方中展示结果，再扩大覆盖范围"
+          ],
+          "risks": [
+            "公司成立于2026年10月，融资时仅数周，产品性能尚无公开验证",
+            "三家试点支付公司未具名，试点结果与转化情况未知",
+            "共享风险数据网络依赖足够多参与方，冷启动与网络效应尚未验证",
+            "来源未说明跨境共享收款方数据时如何满足数据保护与竞争法要求",
+            "全球欺诈支付规模€537 billion为媒体引用的行业估计，非公司实绩"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "共享风险数据平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jhamat Mahbubani",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Sam Kelsey",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Robert Parrish",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Concept Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "NFG Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "三家全球支付公司（未具名）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-f46e4e1b37bb1b75",
+          "date": "2026-11-23",
+          "title": "伦敦Acorda融资215万欧元，助银行在资金转移前识别支付诈骗",
+          "amount": "€2.15 million",
+          "source_refs": [
+            "SA-77acfdf7cc960d71"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-a6cec2f0e56a996d",
+          "source_url": "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
+          "title": "伦敦Acorda融资215万欧元，助银行在资金转移前识别支付诈骗",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-25T00:19:08.815Z",
+          "content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+          "source_artifact_id": "SA-77acfdf7cc960d71",
+          "raw_id": "RAW-c195f7f70cf72395",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-8dfb2c91cc58fdba",
+          "source_url": "https://www.linkedin.com/posts/wrahim_at-least-23m-raised-yesterday-7-rounds-activity-7530878865552990208-RN0B",
+          "title": "At least €23M raised yesterday: 7 rounds and 1 open startup | 24 Nov 2026",
+          "publisher": "linkedin.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-25T00:41:52.833Z",
+          "content_hash": "f735d5f9da74bd3b",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-966f44c7ee07620c",
+          "source_url": "https://www.startup.eu/investments/acorda-1-8-m-pre-seed-11-2026",
+          "title": "London-based Acorda raises £1.8m pre-seed to help payment providers detect scams",
+          "publisher": "startup.eu",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-25T00:41:59.572Z",
+          "content_hash": "26701603e608e51b",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-495396449544e3fd",
+          "source_url": "https://i4unews.com/en/acorda-raises-1-8m-pre-seed-scam-prevention-former-monzo/",
+          "title": "Acorda raises £1.8m pre-seed led by Concept Ventures to fight scams",
+          "publisher": "i4unews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-25T00:41:59.913Z",
+          "content_hash": "6261ac68e5adfea7",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-25T00:42:08.822Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-25T00:42:08.822Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "共享风险数据平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Jhamat Mahbubani",
+            "Robert Parrish",
+            "Sam Kelsey"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-f46e4e1b37bb1b75"
+      ],
+      "aggregation": {
+        "key": "EN-46e3d635c7538e1c|pre_seed|EUR:exact:2150000:::|2026-11-23",
+        "event_count": 1,
+        "strategy": "reviewed_funding_subject",
+        "subject_id": "EN-46e3d635c7538e1c",
+        "source_card_count": 1
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-b6368f4fabd2ba9e",
+          "event_ids": [
+            "EV-f46e4e1b37bb1b75"
+          ],
+          "round": "预种子轮",
+          "round_code": "pre_seed",
+          "round_original": "pre-Seed",
+          "amount_original": "€2.15 million",
+          "amount_normalized": {
+            "currency": "EUR",
+            "value": 2150000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "215 万欧元"
+          },
+          "announced_at": "2026-11-23",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true,
+          "investors": [
+            {
+              "name": "Concept Ventures",
+              "role": "本轮领投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-a6cec2f0e56a996d",
+                  "quote": "The round was led by Concept Ventures, the first venture capital firm to back AI unicorn Eleven Labs, with participation from NFG Ventures",
+                  "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+                  "quote_hash": "b41425e39a6fb6b555553278266f4cbdfcf34c40194978d46163d15142147351"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-d41970e9b87686"
+            },
+            {
+              "name": "NFG Ventures",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-a6cec2f0e56a996d",
+                  "quote": "with participation from NFG Ventures, the firm founded by early Monzo investor and non-executive director Eileen Burbridge",
+                  "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+                  "quote_hash": "0ed43a6e3e0b920f387c586acb0153a5d4246ee1cbb8f1fbead211cb34e97b63"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-0bc19a9cafe1fe"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a6cec2f0e56a996d",
+              "quote": "HomeUK-StartupsLondon-based Acorda raises €2.15 million to help banks detect payment scams before...",
+              "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+              "quote_hash": "0cbf6353c7be91cb37249fb4f4625ad641717b01343e91e4f1bcbe4b1f724332"
+            },
+            {
+              "source_id": "FISRC-a6cec2f0e56a996d",
+              "quote": "has raised €2.15 million (£1.8 million) in a pre-Seed funding round",
+              "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+              "quote_hash": "562cf526a865d789d9d77c23e479bdff78281a852fc12d81a54f095a7c23b431"
+            },
+            {
+              "source_id": "FISRC-8dfb2c91cc58fdba",
+              "quote": "London-based Acorda raises £1.8m pre-seed to help payment providers detect scams",
+              "source_content_hash": "f735d5f9da74bd3b",
+              "quote_hash": "976828a006eeae85fe3bd24dd87fa8eed9003afa7d31e3d8af30bc0441c532b1"
+            }
+          ]
+        }
+      ],
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "id": "enterprise-software",
+        "name": "企业软件",
+        "dimension": "financing_product_form"
+      },
+      "market_category": {
+        "id": "industry",
+        "name": "行业 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "financial-services",
+        "name": "金融与保险",
+        "dimension": "financing_subsector"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-f46e4e1b37bb1b75"
+      },
+      "translations": {
+        "zh-CN": {
+          "company.headquarters": {
+            "text": "英国伦敦",
+            "source_hash": "1c743d3d6222589557015d0cc6b1f4b5e47ad3d2bbcd4d9f4d2dcef83648aea5",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-08-14T07:17:44.313Z",
+            "status": "translated"
+          }
+        }
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "industry",
+          "name": "行业 AI"
+        },
+        "subsector": {
+          "id": "financial-services",
+          "name": "金融与保险"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a6cec2f0e56a996d",
+            "quote": "Acorda, a London-based FinTech startup helping payment providers stop financial scams through shared risk data"
+          },
+          {
+            "source_id": "FISRC-966f44c7ee07620c",
+            "quote": "London-based Acorda has raised £1.8 million in pre-seed funding to help banks and other payment providers identify scams"
+          },
+          {
+            "source_id": "FISRC-a6cec2f0e56a996d",
+            "quote": "Acorda addresses this by acting as a single integration point for payment companies."
+          },
+          {
+            "source_id": "FISRC-966f44c7ee07620c",
+            "quote": "Acorda enables banks and other payment providers to securely share scam signals from both the sender and recipient sides of a payment, helping detect and prevent scams before money is sent."
+          }
+        ],
+        "rationale": "为支付机构提供共享风险数据以识别金融诈骗，属金融行业AI软件。"
+      },
+      "source_card_ids": [
+        "FI-b6368f4fabd2ba9e"
       ]
     },
     {
@@ -13525,6 +14226,24 @@
             "quote": "The round was led by Haatch, with additional participation from Antler, Syncorp Ventures, Araya Ventures, and US-based angel investors including Kelsey Chase.",
             "source_content_hash": "738471a282ea0a9f",
             "quote_hash": "20e5580a38bf57ca4f5adc30a14c7577b4046be9b6aa390d809686aba9a9604f"
+          },
+          {
+            "source_id": "FISRC-11faac8c8448faa7",
+            "quote": "HomeUK-StartupsLondon’s Perry AI raises €2 million to bring AI-powered legal intelligence to...",
+            "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+            "quote_hash": "92a9adc25c50d43f6f45e5e7222d3e1fe0bac45f933d8f2ba8726d54f56cc083"
+          },
+          {
+            "source_id": "FISRC-11faac8c8448faa7",
+            "quote": "Perry AI, the London-based startup building an AI-powered legal operating system for private equity and venture capital funds, has raised €2 million ($2.2 million) in a Seed funding round.",
+            "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+            "quote_hash": "7e7515016f428647690e0457efeab43d8c5f83b19b9138f5674519ab65a45a6c"
+          },
+          {
+            "source_id": "FISRC-f0dd3f2843897be1",
+            "quote": "London, UK, 18 November 2026: Perry AI, the London-based startup building the AI legal operating system for private capital, has today announced an oversubscribed $2.2 million seed funding round",
+            "source_content_hash": "7de5f7db8052c656",
+            "quote_hash": "3ab695826fb2d512609e56f979e23c918dfebd697adff696a806b686515e64e4"
           }
         ],
         "round_code": "seed",
@@ -13576,6 +14295,32 @@
                 "quote_hash": "20e5580a38bf57ca4f5adc30a14c7577b4046be9b6aa390d809686aba9a9604f"
               }
             ]
+          },
+          {
+            "event_id": "EV-7c471b8f44c897be",
+            "round_original": "种子轮",
+            "amount": "€2 million",
+            "announced_at": "2026-11-18",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-11faac8c8448faa7",
+                "quote": "HomeUK-StartupsLondon’s Perry AI raises €2 million to bring AI-powered legal intelligence to...",
+                "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+                "quote_hash": "92a9adc25c50d43f6f45e5e7222d3e1fe0bac45f933d8f2ba8726d54f56cc083"
+              },
+              {
+                "source_id": "FISRC-11faac8c8448faa7",
+                "quote": "Perry AI, the London-based startup building an AI-powered legal operating system for private equity and venture capital funds, has raised €2 million ($2.2 million) in a Seed funding round.",
+                "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+                "quote_hash": "7e7515016f428647690e0457efeab43d8c5f83b19b9138f5674519ab65a45a6c"
+              },
+              {
+                "source_id": "FISRC-f0dd3f2843897be1",
+                "quote": "London, UK, 18 November 2026: Perry AI, the London-based startup building the AI legal operating system for private capital, has today announced an oversubscribed $2.2 million seed funding round",
+                "source_content_hash": "7de5f7db8052c656",
+                "quote_hash": "3ab695826fb2d512609e56f979e23c918dfebd697adff696a806b686515e64e4"
+              }
+            ]
           }
         ],
         "disclosure_status": "disclosed",
@@ -13607,7 +14352,9 @@
         },
         "current_source_ids": [
           "FISRC-f9e088b21c3de630",
-          "FISRC-6997ec563f09c1fe"
+          "FISRC-6997ec563f09c1fe",
+          "FISRC-11faac8c8448faa7",
+          "FISRC-f0dd3f2843897be1"
         ]
       },
       "products": [
@@ -13633,6 +14380,18 @@
               "quote": "Its AI agents review legal documents, flag issues, and prepare drafts while keeping a persistent record of every right, obligation, and commitment across a fund's investments.",
               "source_content_hash": "f92ee74b9430edb2",
               "quote_hash": "11c93b9599352575eee475e532b9ee677094310c004ef358008a35c371ab6bb2"
+            },
+            {
+              "source_id": "FISRC-11faac8c8448faa7",
+              "quote": "AI agents then act on that record, reviewing documents, flagging issues, preparing drafts, and coordinating in-house teams with external counsel through one shared, live workspace.",
+              "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+              "quote_hash": "d4bad6cb335703b9cb45e5e33ac0a5341281514487aff7399d8764d1d706839f"
+            },
+            {
+              "source_id": "FISRC-f0dd3f2843897be1",
+              "quote": "Perry AI automates complex legal work for the private capital ecosystem using sophisticated AI agents, and tracks every right, obligation and promise across every deal",
+              "source_content_hash": "7de5f7db8052c656",
+              "quote_hash": "efbab98ddd699941642c8b85ac41cf49f7e1c522aeeba223ab659acf9501dcb6"
             }
           ],
           "entity_id": null
@@ -14025,6 +14784,45 @@
           "source_artifact_id": null,
           "raw_id": null,
           "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-11faac8c8448faa7",
+          "source_url": "https://www.eu-startups.com/2026/11/londons-perry-ai-raises-e2-million-to-bring-ai-powered-legal-intelligence-to-private-capital-funds/",
+          "title": "伦敦 Perry AI 融资 200 万欧元，为私募资本基金带来 AI 驱动的法律智能",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-25T00:19:07.740Z",
+          "content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+          "source_artifact_id": "SA-2cfb3418a8f1dcfa",
+          "raw_id": "RAW-3f032a7ec73bf61a",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-d667c16891c7eec0",
+          "source_url": "https://www.sesamers.com/funding/perry-ai-raises-2-2m-seed-private-capital-legal-work/",
+          "title": "Perry AI raises $2.2M seed to automate private capital legal work",
+          "publisher": "sesamers.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-25T00:41:35.244Z",
+          "content_hash": "d01d8a6794d3097d",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-f0dd3f2843897be1",
+          "source_url": "https://useperry.com/news/seed-round/",
+          "title": "Perry AI raises $2.2M seed funding to build the AI legal operating system for private capital",
+          "publisher": "useperry.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-25T00:41:35.401Z",
+          "content_hash": "7de5f7db8052c656",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
         }
       ],
       "model_provenance": {
@@ -14064,20 +14862,22 @@
         }
       },
       "source_event_ids": [
-        "EV-788e4fe44885fd36"
+        "EV-788e4fe44885fd36",
+        "EV-7c471b8f44c897be"
       ],
       "aggregation": {
         "key": "EN-be9188611b6952ad|seed|USD:exact:2200000:::|2026-11-18",
         "event_count": 1,
         "strategy": "reviewed_funding_subject",
         "subject_id": "EN-be9188611b6952ad",
-        "source_card_count": 1
+        "source_card_count": 2
       },
       "historical_rounds": [
         {
           "funding_insight_id": "FI-7a2ce5c154897e4a",
           "event_ids": [
-            "EV-788e4fe44885fd36"
+            "EV-788e4fe44885fd36",
+            "EV-7c471b8f44c897be"
           ],
           "round": "种子轮",
           "round_code": "seed",
@@ -14187,6 +14987,24 @@
               "quote": "The round was led by Haatch, with additional participation from Antler, Syncorp Ventures, Araya Ventures, and US-based angel investors including Kelsey Chase.",
               "source_content_hash": "738471a282ea0a9f",
               "quote_hash": "20e5580a38bf57ca4f5adc30a14c7577b4046be9b6aa390d809686aba9a9604f"
+            },
+            {
+              "source_id": "FISRC-11faac8c8448faa7",
+              "quote": "HomeUK-StartupsLondon’s Perry AI raises €2 million to bring AI-powered legal intelligence to...",
+              "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+              "quote_hash": "92a9adc25c50d43f6f45e5e7222d3e1fe0bac45f933d8f2ba8726d54f56cc083"
+            },
+            {
+              "source_id": "FISRC-11faac8c8448faa7",
+              "quote": "Perry AI, the London-based startup building an AI-powered legal operating system for private equity and venture capital funds, has raised €2 million ($2.2 million) in a Seed funding round.",
+              "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+              "quote_hash": "7e7515016f428647690e0457efeab43d8c5f83b19b9138f5674519ab65a45a6c"
+            },
+            {
+              "source_id": "FISRC-f0dd3f2843897be1",
+              "quote": "London, UK, 18 November 2026: Perry AI, the London-based startup building the AI legal operating system for private capital, has today announced an oversubscribed $2.2 million seed funding round",
+              "source_content_hash": "7de5f7db8052c656",
+              "quote_hash": "3ab695826fb2d512609e56f979e23c918dfebd697adff696a806b686515e64e4"
             }
           ]
         }
@@ -14285,7 +15103,8 @@
         "rationale": "Perry AI 为基金与律所提供审阅文件、识别问题并起草的 AI 法律操作系统。"
       },
       "source_card_ids": [
-        "FI-7a2ce5c154897e4a"
+        "FI-7a2ce5c154897e4a",
+        "FI-cf9db9c73bdb7163"
       ]
     },
     {
@@ -708252,6 +709071,266 @@
       ]
     },
     {
+      "funding_insight_id": "FI-b6368f4fabd2ba9e",
+      "triggered_by_event_id": "EV-f46e4e1b37bb1b75",
+      "source_event_ids": [
+        "EV-f46e4e1b37bb1b75"
+      ],
+      "subject_card_id": "FI-b6368f4fabd2ba9e",
+      "as_of_date": "2026-11-25",
+      "market_scope": {
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "china_market_basis": [],
+        "source_registry_ids": []
+      },
+      "company": {
+        "entity_id": "EN-46e3d635c7538e1c",
+        "application_entity_id": "EN-46e3d635c7538e1c",
+        "name": "Acorda",
+        "full_name": "Acorda",
+        "summary": "伦敦金融科技初创公司，为支付机构提供共享风险数据平台，帮助银行和支付服务商在资金转出前识别支付诈骗。",
+        "website": "acorda.com",
+        "headquarters": "英国伦敦",
+        "founders": [
+          {
+            "name": "Jhamat Mahbubani",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a6cec2f0e56a996d",
+                "quote": "Founded in October 2026 by Jhamat Mahbubani, Sam Kelsey, and Robert Parrish",
+                "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+                "quote_hash": "8e6d995c1ae476afdcf6e2d3c43309347bb8e7260b86372620d550c3dbb72475"
+              },
+              {
+                "source_id": "FISRC-495396449544e3fd",
+                "quote": "Mahbubani is chief executive.",
+                "source_content_hash": "6261ac68e5adfea7",
+                "quote_hash": "7f89d41abf7268ec1d7b903a959b2cfab1f165dc0bd329326f50262fbede4bbf"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sam Kelsey",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a6cec2f0e56a996d",
+                "quote": "Founded in October 2026 by Jhamat Mahbubani, Sam Kelsey, and Robert Parrish",
+                "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+                "quote_hash": "8e6d995c1ae476afdcf6e2d3c43309347bb8e7260b86372620d550c3dbb72475"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Robert Parrish",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a6cec2f0e56a996d",
+                "quote": "Founded in October 2026 by Jhamat Mahbubani, Sam Kelsey, and Robert Parrish",
+                "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+                "quote_hash": "8e6d995c1ae476afdcf6e2d3c43309347bb8e7260b86372620d550c3dbb72475"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "pre-Seed",
+        "amount": "€2.15 million",
+        "amount_original": "€2.15 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 2150000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "215 万欧元"
+        },
+        "announced_at": "2026-11-23",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Concept Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a6cec2f0e56a996d",
+                "quote": "The round was led by Concept Ventures, the first venture capital firm to back AI unicorn Eleven Labs, with participation from NFG Ventures",
+                "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+                "quote_hash": "b41425e39a6fb6b555553278266f4cbdfcf34c40194978d46163d15142147351"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-d41970e9b87686"
+          },
+          {
+            "name": "NFG Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a6cec2f0e56a996d",
+                "quote": "with participation from NFG Ventures, the firm founded by early Monzo investor and non-executive director Eileen Burbridge",
+                "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+                "quote_hash": "0ed43a6e3e0b920f387c586acb0153a5d4246ee1cbb8f1fbead211cb34e97b63"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-0bc19a9cafe1fe"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a6cec2f0e56a996d",
+            "quote": "HomeUK-StartupsLondon-based Acorda raises €2.15 million to help banks detect payment scams before...",
+            "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+            "quote_hash": "0cbf6353c7be91cb37249fb4f4625ad641717b01343e91e4f1bcbe4b1f724332"
+          },
+          {
+            "source_id": "FISRC-a6cec2f0e56a996d",
+            "quote": "has raised €2.15 million (£1.8 million) in a pre-Seed funding round",
+            "source_content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+            "quote_hash": "562cf526a865d789d9d77c23e479bdff78281a852fc12d81a54f095a7c23b431"
+          },
+          {
+            "source_id": "FISRC-8dfb2c91cc58fdba",
+            "quote": "London-based Acorda raises £1.8m pre-seed to help payment providers detect scams",
+            "source_content_hash": "f735d5f9da74bd3b",
+            "quote_hash": "976828a006eeae85fe3bd24dd87fa8eed9003afa7d31e3d8af30bc0441c532b1"
+          }
+        ],
+        "current_source_ids": [
+          "FISRC-a6cec2f0e56a996d",
+          "FISRC-8dfb2c91cc58fdba"
+        ]
+      },
+      "research_sources": [
+        {
+          "source_id": "FISRC-a6cec2f0e56a996d",
+          "source_url": "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
+          "title": "伦敦Acorda融资215万欧元，助银行在资金转移前识别支付诈骗",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-25T00:19:08.815Z",
+          "content_hash": "7dd1a2a4c34fc9a424594524cbd01de2d872d946245936139013e083677080fe",
+          "source_artifact_id": "SA-77acfdf7cc960d71",
+          "raw_id": "RAW-c195f7f70cf72395",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-8dfb2c91cc58fdba",
+          "source_url": "https://www.linkedin.com/posts/wrahim_at-least-23m-raised-yesterday-7-rounds-activity-7530878865552990208-RN0B",
+          "title": "At least €23M raised yesterday: 7 rounds and 1 open startup | 24 Nov 2026",
+          "publisher": "linkedin.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-25T00:41:52.833Z",
+          "content_hash": "f735d5f9da74bd3b",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-966f44c7ee07620c",
+          "source_url": "https://www.startup.eu/investments/acorda-1-8-m-pre-seed-11-2026",
+          "title": "London-based Acorda raises £1.8m pre-seed to help payment providers detect scams",
+          "publisher": "startup.eu",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-25T00:41:59.572Z",
+          "content_hash": "26701603e608e51b",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-495396449544e3fd",
+          "source_url": "https://i4unews.com/en/acorda-raises-1-8m-pre-seed-scam-prevention-former-monzo/",
+          "title": "Acorda raises £1.8m pre-seed led by Concept Ventures to fight scams",
+          "publisher": "i4unews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-25T00:41:59.913Z",
+          "content_hash": "6261ac68e5adfea7",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "industry",
+          "name": "行业 AI"
+        },
+        "subsector": {
+          "id": "financial-services",
+          "name": "金融与保险"
+        },
+        "product_form": {
+          "id": "enterprise-software",
+          "name": "企业软件"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a6cec2f0e56a996d",
+            "quote": "Acorda, a London-based FinTech startup helping payment providers stop financial scams through shared risk data"
+          },
+          {
+            "source_id": "FISRC-966f44c7ee07620c",
+            "quote": "London-based Acorda has raised £1.8 million in pre-seed funding to help banks and other payment providers identify scams"
+          },
+          {
+            "source_id": "FISRC-a6cec2f0e56a996d",
+            "quote": "Acorda addresses this by acting as a single integration point for payment companies."
+          },
+          {
+            "source_id": "FISRC-966f44c7ee07620c",
+            "quote": "Acorda enables banks and other payment providers to securely share scam signals from both the sender and recipient sides of a payment, helping detect and prevent scams before money is sent."
+          }
+        ],
+        "rationale": "为支付机构提供共享风险数据以识别金融诈骗，属金融行业AI软件。"
+      },
+      "market_category": {
+        "id": "industry",
+        "name": "行业 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "financial-services",
+        "name": "金融与保险",
+        "dimension": "financing_subsector"
+      },
+      "product_form": {
+        "id": "enterprise-software",
+        "name": "企业软件",
+        "dimension": "financing_product_form"
+      },
+      "products": [
+        {
+          "name": "共享风险数据平台"
+        }
+      ]
+    },
+    {
       "funding_insight_id": "FI-774d78aac219c4a8",
       "triggered_by_event_id": "EV-d84355ecbf21be85",
       "source_event_ids": [
@@ -711290,7 +712369,8 @@
       "funding_insight_id": "FI-7a2ce5c154897e4a",
       "triggered_by_event_id": "EV-788e4fe44885fd36",
       "source_event_ids": [
-        "EV-788e4fe44885fd36"
+        "EV-788e4fe44885fd36",
+        "EV-7c471b8f44c897be"
       ],
       "subject_card_id": "FI-7a2ce5c154897e4a",
       "as_of_date": "2026-11-19",
@@ -711445,11 +712525,31 @@
             "quote": "The round was led by Haatch, with additional participation from Antler, Syncorp Ventures, Araya Ventures, and US-based angel investors including Kelsey Chase.",
             "source_content_hash": "738471a282ea0a9f",
             "quote_hash": "20e5580a38bf57ca4f5adc30a14c7577b4046be9b6aa390d809686aba9a9604f"
+          },
+          {
+            "source_id": "FISRC-11faac8c8448faa7",
+            "quote": "HomeUK-StartupsLondon’s Perry AI raises €2 million to bring AI-powered legal intelligence to...",
+            "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+            "quote_hash": "92a9adc25c50d43f6f45e5e7222d3e1fe0bac45f933d8f2ba8726d54f56cc083"
+          },
+          {
+            "source_id": "FISRC-11faac8c8448faa7",
+            "quote": "Perry AI, the London-based startup building an AI-powered legal operating system for private equity and venture capital funds, has raised €2 million ($2.2 million) in a Seed funding round.",
+            "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+            "quote_hash": "7e7515016f428647690e0457efeab43d8c5f83b19b9138f5674519ab65a45a6c"
+          },
+          {
+            "source_id": "FISRC-f0dd3f2843897be1",
+            "quote": "London, UK, 18 November 2026: Perry AI, the London-based startup building the AI legal operating system for private capital, has today announced an oversubscribed $2.2 million seed funding round",
+            "source_content_hash": "7de5f7db8052c656",
+            "quote_hash": "3ab695826fb2d512609e56f979e23c918dfebd697adff696a806b686515e64e4"
           }
         ],
         "current_source_ids": [
           "FISRC-f9e088b21c3de630",
-          "FISRC-6997ec563f09c1fe"
+          "FISRC-6997ec563f09c1fe",
+          "FISRC-11faac8c8448faa7",
+          "FISRC-f0dd3f2843897be1"
         ]
       },
       "research_sources": [
@@ -711504,6 +712604,45 @@
           "source_artifact_id": null,
           "raw_id": null,
           "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-11faac8c8448faa7",
+          "source_url": "https://www.eu-startups.com/2026/11/londons-perry-ai-raises-e2-million-to-bring-ai-powered-legal-intelligence-to-private-capital-funds/",
+          "title": "伦敦 Perry AI 融资 200 万欧元，为私募资本基金带来 AI 驱动的法律智能",
+          "publisher": "www.eu-startups.com",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-25T00:19:07.740Z",
+          "content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+          "source_artifact_id": "SA-2cfb3418a8f1dcfa",
+          "raw_id": "RAW-3f032a7ec73bf61a",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-d667c16891c7eec0",
+          "source_url": "https://www.sesamers.com/funding/perry-ai-raises-2-2m-seed-private-capital-legal-work/",
+          "title": "Perry AI raises $2.2M seed to automate private capital legal work",
+          "publisher": "sesamers.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-25T00:41:35.244Z",
+          "content_hash": "d01d8a6794d3097d",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        },
+        {
+          "source_id": "FISRC-f0dd3f2843897be1",
+          "source_url": "https://useperry.com/news/seed-round/",
+          "title": "Perry AI raises $2.2M seed funding to build the AI legal operating system for private capital",
+          "publisher": "useperry.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-25T00:41:35.401Z",
+          "content_hash": "7de5f7db8052c656",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "current_round"
         }
       ],
       "financing_tags": {
@@ -711560,6 +712699,9 @@
         "dimension": "financing_product_form"
       },
       "products": [
+        {
+          "name": "Perry AI 法律操作系统"
+        },
         {
           "name": "Perry AI 法律操作系统"
         }
@@ -932123,6 +933265,7 @@
     }
   ],
   "card_aliases": {
+    "FI-cf9db9c73bdb7163": "FI-7a2ce5c154897e4a",
     "FI-fd9ef3cc8a9f2a95": "FI-9647078abba53f06",
     "FI-8650a7a5be9be749": "FI-9647078abba53f06",
     "FI-3923d1a4fc2b8a40": "FI-c3ea4385d0dfc608",
@@ -932257,6 +933400,11 @@
   },
   "review": {
     "excluded": [
+      {
+        "event_id": "EV-e0d0a57df0d64210",
+        "company": "coprod",
+        "reason": "embodied_robotics"
+      },
       {
         "event_id": "EV-d03ad90e15e62533",
         "company": "Simplexity Robotics",
@@ -933209,6 +934357,18 @@
       }
     ],
     "cross_currency_duplicates": [
+      {
+        "canonical_id": "FI-7a2ce5c154897e4a",
+        "duplicate_id": "FI-cf9db9c73bdb7163",
+        "reason": "same_round_explicit_source_currency_equivalence",
+        "evidence": {
+          "source_id": "FISRC-11faac8c8448faa7",
+          "quote": "Perry AI, the London-based startup building an AI-powered legal operating system for private equity and venture capital funds, has raised €2 million ($2.2 million) in a Seed funding round.",
+          "source_content_hash": "1e19a2ea10bf8d222f91168b5a488ed56674641f36bc810745f560f43f2cd249",
+          "quote_hash": "7e7515016f428647690e0457efeab43d8c5f83b19b9138f5674519ab65a45a6c",
+          "source_url": "https://www.eu-startups.com/2026/11/londons-perry-ai-raises-e2-million-to-bring-ai-powered-legal-intelligence-to-private-capital-funds/"
+        }
+      },
       {
         "canonical_id": "FI-2a19fdf0e999a70c",
         "duplicate_id": "FI-b0bdfe9f65e2108a",

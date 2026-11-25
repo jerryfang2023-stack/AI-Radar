@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-24",
-    "currentDate": "2026-11-24",
-    "eventCount": 4549,
+    "latestDataDate": "2026-11-25",
+    "currentDate": "2026-11-25",
+    "eventCount": 4558,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -59,6 +59,7 @@
     "typeLabel": "技术",
     "valueId": "agentic_execution",
     "eventIds": [
+      "EV-6d824b029e0bb29f",
       "EV-51b6c750134929d8",
       "EV-8f4b818b8746d539",
       "EV-03e34979859b12d9",
@@ -759,6 +760,7 @@
       "EV-c17f5a364ed6a3ac"
     ],
     "entityIds": [
+      "EN-6f81eab84822abc6",
       "EN-1bef6f23243ae96f",
       "EN-46c6311bd2de6d11",
       "EN-a6936f276185fd8f",
@@ -1267,8 +1269,93 @@
   },
   "events": [
     {
+      "id": "EV-6d824b029e0bb29f",
+      "dataDate": "2026-11-25",
+      "date": "2026-11-24",
+      "updatedDate": "2026-11-24",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "in_progress",
+      "statusLabel": "进行中",
+      "publicationStatus": "partial",
+      "title": "独家：AI 搜索平台 Exa 正洽谈以约 70 亿美元估值筹集新资金",
+      "originalTitle": "SCOOP: AI Search Platform Exa in Talks to Raise Fresh Funds at Around a $7 Billion Valuation",
+      "subject": "SCOOP: AI Search Platform Exa",
+      "action": "Raise",
+      "object": "Fresh Funds at Around a $7 Billion Valuation",
+      "metrics": [
+        "$7 Billion",
+        "$7 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6f81eab84822abc6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6f81eab84822abc6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6f81eab84822abc6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-6f81eab84822abc6",
+        "EN-739123b666a7b12e"
+      ],
+      "entityNames": [
+        "SCOOP: AI Search Platform Exa",
+        "SCOOP"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.newcomer.co/p/scoop-ai-search-platform-exa-in-talks",
+      "publisher": "www.newcomer.co"
+    },
+    {
       "id": "EV-51b6c750134929d8",
-      "dataDate": "2026-11-22",
+      "dataDate": "2026-11-25",
       "date": "2026-11-20",
       "updatedDate": "2026-11-20",
       "eventType": "funding",
@@ -110536,6 +110623,27 @@
   ],
   "entities": [
     {
+      "id": "EN-6f81eab84822abc6",
+      "name": "SCOOP: AI Search Platform Exa",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6d824b029e0bb29f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-11-24",
+      "lastSeen": "2026-11-25"
+    },
+    {
       "id": "EN-1bef6f23243ae96f",
       "name": "London-based Archer",
       "entityType": "organization_candidate",
@@ -110554,7 +110662,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-11-20",
-      "lastSeen": "2026-11-22"
+      "lastSeen": "2026-11-25"
     },
     {
       "id": "EN-46c6311bd2de6d11",
@@ -112155,7 +112263,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-01-14",
-      "lastSeen": "2026-11-24"
+      "lastSeen": "2026-11-25"
     },
     {
       "id": "EN-e66d5fd225ed6b0a",
@@ -112375,6 +112483,7 @@
       ],
       "eventIds": [
         "EV-6b76983df1c13857",
+        "EV-f8599fbcd337c245",
         "EV-3774a546c9f135e0",
         "EV-60e9751ddf436c14",
         "EV-86165eebaf4622fd",
@@ -112699,8 +112808,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai",
         "TX-use_case-research_discovery",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
@@ -112759,7 +112868,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-11-24"
+      "lastSeen": "2026-11-25"
     },
     {
       "id": "EN-8bacc14fb816a980",
@@ -113592,9 +113701,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-use_case-content_creation",
         "TX-product_form-enterprise_software_platform",
@@ -113700,8 +113809,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
@@ -113936,8 +114045,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-technology-multimodal"
@@ -114943,8 +115052,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
+        "TX-use_case-physical_automation",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-use_case-software_development",
@@ -115087,8 +115196,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
+        "TX-use_case-physical_automation",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-productivity_enterprise_workflows"
       ],
@@ -117183,7 +117292,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-11-24",
+      "lastSeen": "2026-11-25",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -117258,7 +117367,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-d03ad90e15e62533",
         "EV-a54d9f479d4eb060",
         "EV-ac30333388e0d00a",
         "EV-04fb7521fa0fe4a9",
@@ -117367,7 +117475,7 @@
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-01-26",
-      "lastSeen": "2026-11-24"
+      "lastSeen": "2026-11-25"
     },
     {
       "id": "EN-d3565d297d476f10",
@@ -118426,9 +118534,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
-        "TX-technology-agentic_execution",
         "TX-use_case-research_discovery",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
@@ -118510,7 +118618,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-24"
+      "lastSeen": "2026-11-25"
     },
     {
       "id": "EN-28d0bd981118a907",
@@ -119229,7 +119337,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-24",
-      "lastSeen": "2026-11-24"
+      "lastSeen": "2026-11-25"
     },
     {
       "id": "EN-5e668f42eb6cf15d",
@@ -119850,8 +119958,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai",
         "TX-use_case-research_discovery",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
@@ -119917,7 +120025,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-11-24"
+      "lastSeen": "2026-11-25"
     },
     {
       "id": "EN-6fcba5d96a4fadfd",
@@ -120516,9 +120624,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
-        "TX-technology-agentic_execution",
         "TX-use_case-research_discovery",
         "TX-technology-speech_audio",
         "TX-product_form-enterprise_software_platform",
@@ -120589,7 +120697,7 @@
         "EN-7d3194f79e645c42"
       ],
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-11-24"
+      "lastSeen": "2026-11-25"
     },
     {
       "id": "EN-0d47d3f0783749a8",
@@ -120945,9 +121053,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
-        "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
@@ -121129,8 +121237,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
+        "TX-use_case-physical_automation",
         "TX-product_form-model",
         "TX-product_form-compute_cloud_service",
         "TX-industry-telecommunications",
@@ -121149,7 +121257,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-02-17",
-      "lastSeen": "2026-11-24"
+      "lastSeen": "2026-11-25"
     },
     {
       "id": "EN-92df1be3e37c9268",
@@ -121313,7 +121421,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-03-04",
-      "lastSeen": "2026-11-24"
+      "lastSeen": "2026-11-25"
     },
     {
       "id": "EN-842fcb5e60989a03",
@@ -121769,8 +121877,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
+        "TX-use_case-physical_automation",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
@@ -122198,8 +122306,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
+        "TX-use_case-physical_automation",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
@@ -122224,8 +122332,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-18",
