@@ -107,6 +107,14 @@ function hasAttributedInvestorQuote(item, sourceById) {
   });
 }
 
+function isPersonFounder(item) {
+  const name = clean(item.name).normalize("NFKC");
+  const role = clean(item.role);
+  return Boolean(name)
+    && !/(?:有限公司|股份公司|集团公司|合伙企业|研究院|实验室|大学|团队|\b(?:Inc\.?|Ltd\.?|LLC|Corp\.?))$/iu.test(name)
+    && !/组建方|发起机构|创办机构|创立机构/u.test(role);
+}
+
 export function normalizeFounderRole(value = "") {
   const role = clean(value);
   const translations = new Map([
@@ -888,7 +896,7 @@ export function normalizeFundingInsightCard(
     card.financing?.announced_at || "",
   );
   const founders = mergeEquivalentFounders((card.company?.founders || [])
-    .filter((item) => clean(item.name) && (item.evidence_refs || []).length)
+    .filter((item) => isPersonFounder(item) && (item.evidence_refs || []).length)
     .map((item) => {
       const person = resolvePerson(item.name);
       return {
@@ -1981,7 +1989,7 @@ export function sanitizeResearchPayload(payload = {}, sources = []) {
     sanitized.company.evidence_refs = cleanRefs(sanitized.company.evidence_refs);
     sanitized.company.founders = (sanitized.company.founders || [])
       .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
-      .filter((item) => clean(item.name) && item.evidence_refs.length);
+      .filter((item) => isPersonFounder(item) && item.evidence_refs.length);
   }
   if (sanitized.financing) {
     sanitized.financing.evidence_refs = cleanRefs(sanitized.financing.evidence_refs);

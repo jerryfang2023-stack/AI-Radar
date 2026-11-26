@@ -140,6 +140,7 @@ export function buildFundingSubjects(input, review = {}) {
     for(const event of group){
       event.subject_card_id=card.funding_insight_id;
       event.company.name=card.company.name;
+      event.products=(event.products||[]).map(product=>({ ...product, name:productAliases[product.name]||product.name }));
     }
     subjects.push(card);
   }
