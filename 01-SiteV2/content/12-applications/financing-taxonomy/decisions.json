@@ -40581,7 +40581,133 @@
       "provider": "deepseek",
       "model": "deepseek-flash",
       "generated_at": "2026-11-25T00:45:04.342Z"
+    },
+    "EV-23218a138d7c5227": {
+      "id": "EV-23218a138d7c5227",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-cloud",
+      "product_form_id": "compute",
+      "customer_ids": [
+        "business",
+        "public-sector"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "公司聚焦AI基础设施与词元运营，提供多模型统一接入、智能调度与计费结算的算力服务。",
+      "input_hash": "b8ea1d16b5e0af5c16f5c59c2f2497a80d8c95e2e4dea4c2302284e0fdcb53c1",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fd2e3f2031ae6436",
+          "quote": "湖北长江词元科技有限公司（以下简称“长江词元”）是一家聚焦AI基础设施与词元运营服务的科技企业"
+        },
+        {
+          "source_id": "FISRC-fd2e3f2031ae6436",
+          "quote": "持续加强智能路由、多模型协同、计费结算和运营监控等能力"
+        },
+        {
+          "source_id": "FISRC-0fb3c83079649338",
+          "quote": "上线“长江词元”综合服务平台，为全省政企单位提供统一接入、集中采购、智能调度、成本优化一体化服务"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-26T00:44:43.788Z"
+    },
+    "EV-d8cbf20053f2afe5": {
+      "id": "EV-d8cbf20053f2afe5",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2
+      ],
+      "rationale": "其专有药物设计引擎整合基础模拟AI模型，用于分子设计筛选，属药物研发行业AI。",
+      "input_hash": "7f9f39d7d083ad1c8a364b699260b64b9eb234f970d3d49f0b8bc50e48c00a9f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-779dc9483a9866f9",
+          "quote": "Isomorphic Labs的核心能力围绕其专有药物设计引擎IsoDDE展开，该引擎整合了一系列基础模拟AI模型，覆盖多个治疗领域和不同药物类型，目标是探索化学空间，帮助研发团队设计、筛选和优化具有理想成药性质的分子。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-26T00:44:43.788Z"
+    },
+    "EV-c3292f0a8d17ca84": {
+      "id": "EV-c3292f0a8d17ca84",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "productivity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "面向团队提供订阅制写作、软件与培训，帮助将模型能力转化为工作产出，属办公生产力。",
+      "input_hash": "bd6b48537baf4b2327bb7a7b601d7ca6e68f49ab80b6c1afcbeaa72afc93e2c8",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6453236c7a2918ed",
+          "quote": "We raised $17.5 million to build the single subscription you and your team need to keep turning rising model capability into great work: daily writing that tells you what matters on the frontier, software and skills that improve how you work, and training that moves your whole team forward together."
+        },
+        {
+          "source_id": "FISRC-6453236c7a2918ed",
+          "quote": "Every All Access gets you the full membership plus the Builder Pack—$8,000+ in credits for the tools we build with."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-26T00:44:43.788Z"
+    },
+    "EV-81b0b4ba7a31be41": {
+      "id": "EV-81b0b4ba7a31be41",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "productivity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Every 以订阅形式提供面向团队的前沿模型写作、软件工具与培训，属于企业办公与知识管理应用。",
+      "input_hash": "147cb98937cc4a27df1af2b78d8cfe13507376894e0fad170790a0b431a34ebd",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6453236c7a2918ed",
+          "quote": "That is what Every is: a 35-person media and technology company where everyone, in every role, is an AI early adopter, testing new frontier models on real work every day."
+        },
+        {
+          "source_id": "FISRC-6453236c7a2918ed",
+          "quote": "We raised $17.5 million to build the single subscription you and your team need to keep turning rising model capability into great work: daily writing that tells you what matters on the frontier, software and skills that improve how you work, and training that moves your whole team forward together."
+        },
+        {
+          "source_id": "FISRC-6453236c7a2918ed",
+          "quote": "Every All Access gets you the full membership plus the Builder Pack—$8,000+ in credits for the tools we build with."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "generated_at": "2026-11-26T02:50:48.211Z"
     }
   },
-  "generated_at": "2026-11-25T00:45:04.343Z"
+  "generated_at": "2026-11-26T02:50:48.211Z"
 }

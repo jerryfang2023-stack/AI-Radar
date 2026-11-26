@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-25",
-    "currentDate": "2026-11-25",
-    "eventCount": 4558,
+    "latestDataDate": "2026-11-26",
+    "currentDate": "2026-11-26",
+    "eventCount": 4565,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -64,21 +64,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 44,
+    "current_round_count": 45,
     "historical_or_ambiguous_count": 10,
-    "portfolio_company_count": 39,
+    "portfolio_company_count": 40,
     "market_regions": [
+      "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-11-19",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
       "co_lead": 6,
       "historical_or_ambiguous": 10,
       "lead": 21,
-      "participant": 17
+      "participant": 18
     },
     "round_codes": [
       "multi_round",
@@ -153,6 +154,11 @@
         "entity_id": "EN-0830e0bf8e8fa471",
         "canonical_entity_id": "",
         "name": "Horowitz Andreessen Academy"
+      },
+      {
+        "entity_id": "EN-f1c097b0522496da",
+        "canonical_entity_id": "",
+        "name": "Isomorphic Labs"
       },
       {
         "entity_id": "EN-a2039b2db07c1ad6",
@@ -291,6 +297,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-4c98521a334eef16",
+        "funding_insight_id": "FI-d81e7294e3c1af01",
+        "event_ids": [
+          "EV-d8cbf20053f2afe5"
+        ],
+        "company_entity_id": "EN-f1c097b0522496da",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "50亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-69368d0d67198c92",
+            "source_url": "https://m.sohu.com/a/1104649692_532789?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "333亿！全球AI制药最大单笔融资诞生",
+            "source_content_hash": "f1f638563ba34067",
+            "quote": "本轮由Greenoaks与红杉资本联合领投，a16z作为新进投资方参与，Alphabet持续大额加注，Thrive Capital、MGX、GV、CapitalG、淡马锡、英国主权AI基金等老股东全部跟投。",
+            "quote_hash": "38473016ecb0d0d75159d1e2d1ce697b2a83701b83a8e3db9d9ca5db585503c4"
+          }
+        ]
+      },
       {
         "activity_id": "IA-0a5b7e281c59e764",
         "funding_insight_id": "FI-ea107fa7dfd1f452",
@@ -2446,6 +2492,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-69368d0d67198c92",
+        "source_url": "https://m.sohu.com/a/1104649692_532789?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "333亿！全球AI制药最大单笔融资诞生",
+        "source_content_hash": "f1f638563ba34067",
+        "quote": "本轮由Greenoaks与红杉资本联合领投，a16z作为新进投资方参与，Alphabet持续大额加注，Thrive Capital、MGX、GV、CapitalG、淡马锡、英国主权AI基金等老股东全部跟投。",
+        "quote_hash": "38473016ecb0d0d75159d1e2d1ce697b2a83701b83a8e3db9d9ca5db585503c4"
+      },
+      {
         "source_id": "FISRC-ece11f408f6f43fa",
         "source_url": "https://dealroom.co/news/174542-london-s-boltz-raises-110m-series-a-led-by-bessemer-to-scale-its-ai-mode/",
         "source_title": "London's Boltz raises $110M Series A led by Bessemer to scale its AI models for drug discovery",
@@ -2991,16 +3045,16 @@
           "source_id": "a16z_about"
         },
         {
+          "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-23 · 本轮参投 · 50亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-69368d0d67198c92"
+        },
+        {
           "description": "融资来源记录：Boltz · A轮 · 2026-11-19 · 本轮参投 · $110m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ece11f408f6f43fa"
         },
         {
           "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮参投 · €4.5 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-172c6eda5dfd3979"
-        },
-        {
-          "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮参投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c4b7e80cb7863d47"
         }
       ],
       "contacts": [
@@ -3108,6 +3162,14 @@
           "quote_hash": "e99e0a75d100056586e1a241fc521ff6d9da626d9a7fcf9ab6dd36440c63b9bb"
         },
         {
+          "source_id": "FISRC-69368d0d67198c92",
+          "source_url": "https://m.sohu.com/a/1104649692_532789?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "source_title": "333亿！全球AI制药最大单笔融资诞生",
+          "source_content_hash": "f1f638563ba34067",
+          "quote": "本轮由Greenoaks与红杉资本联合领投，a16z作为新进投资方参与，Alphabet持续大额加注，Thrive Capital、MGX、GV、CapitalG、淡马锡、英国主权AI基金等老股东全部跟投。",
+          "quote_hash": "38473016ecb0d0d75159d1e2d1ce697b2a83701b83a8e3db9d9ca5db585503c4"
+        },
+        {
           "source_id": "FISRC-ece11f408f6f43fa",
           "source_url": "https://dealroom.co/news/174542-london-s-boltz-raises-110m-series-a-led-by-bessemer-to-scale-its-ai-mode/",
           "source_title": "London's Boltz raises $110M Series A led by Bessemer to scale its AI models for drug discovery",
@@ -3122,14 +3184,6 @@
           "source_content_hash": "affc7898baa312c39d8222f02042df59a4a4522d6d56eae3ebac64b71609aa3d",
           "quote": "alongside Andreessen Horowitz, with continued significant investment from Alphabet",
           "quote_hash": "75e4df5da97582a6d0dcb53c2b4f195d27d2994ecbb4a033be6deb07b17428c2"
-        },
-        {
-          "source_id": "FISRC-c4b7e80cb7863d47",
-          "source_url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
-          "source_title": "Isomorphic Labs 融资 50 亿美元，拟将候选药物推进临床试验",
-          "source_content_hash": "69ca96b09e5f9b3698e78f74bf202e70c1f5d21f791557981cbae6115c03e7c9",
-          "quote": "with new investor Andreessen Horowitz and other investors also participating",
-          "quote_hash": "71403d21d95238d9c3ce6211d8de3b1d801518d463bf39e0c889dd0241dc44b8"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -3140,7 +3194,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[43].role": {
+        "activities[44].role": {
           "text": "Seed / Series A 参投（2024年9月）",
           "source_hash": "c3411402f1e86d2923c68d0e84abce44f0b95f63b0018ba2043bab5a9d621936",
           "provider": "deepseek",
@@ -3148,7 +3202,7 @@
           "translated_at": "2026-10-06T00:56:36.371Z",
           "status": "translated"
         },
-        "activities[46].role": {
+        "activities[47].role": {
           "text": "Series D 参投",
           "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
           "provider": "deepseek",

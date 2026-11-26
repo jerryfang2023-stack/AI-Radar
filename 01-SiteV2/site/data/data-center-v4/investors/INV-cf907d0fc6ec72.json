@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-25",
-    "currentDate": "2026-11-25",
-    "eventCount": 4558,
+    "latestDataDate": "2026-11-26",
+    "currentDate": "2026-11-26",
+    "eventCount": 4565,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-09-05",
-    "latest_disclosed_at": "2026-11-17",
+    "latest_disclosed_at": "2026-11-25",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_a"
     ],
     "portfolio_companies": [
       {
@@ -84,12 +85,57 @@
         "name": "All Hands AI"
       },
       {
+        "entity_id": "EN-66a424a9a958b152",
+        "canonical_entity_id": "",
+        "name": "Every"
+      },
+      {
         "entity_id": "EN-5e494e695571ede1",
         "canonical_entity_id": "",
         "name": "Fermat"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f6398eaa074abf6c",
+        "funding_insight_id": "FI-1ba6a214a4601f1a",
+        "event_ids": [
+          "EV-81b0b4ba7a31be41"
+        ],
+        "company_entity_id": "EN-66a424a9a958b152",
+        "company_canonical_entity_id": "",
+        "company_name": "Every",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$17.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 17500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1750 万美元"
+        },
+        "announced_at": "2026-11-25",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6453236c7a2918ed",
+            "source_url": "https://every.to/on-every/we-raised-17-5-million-to-make-you-and-your-team-ai-native",
+            "source_title": "我们融资1750万美元，助您和团队成为AI原生",
+            "source_content_hash": "b4311a87d944cb80e912c0d2c8a781fd04ab844b7226ed6dc7b6467b08139cf5",
+            "quote": "The round was led by Jesse Beyroutey from IA Ventures with participation from Nicholas Thompson (CEO of the Atlantic), Alex Rattray (CEO of Stainless, acquired by Anthropic), and Betaworks.",
+            "quote_hash": "89a5a4a45ec79b38ef2f5cbd3382df604c673da6d5982c63de6be2a82e75b568"
+          }
+        ]
+      },
       {
         "activity_id": "IA-bd4a1b817193b071",
         "funding_insight_id": "FI-84e2fa85ad9e573d",
@@ -173,6 +219,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-6453236c7a2918ed",
+        "source_url": "https://every.to/on-every/we-raised-17-5-million-to-make-you-and-your-team-ai-native",
+        "source_title": "我们融资1750万美元，助您和团队成为AI原生",
+        "source_content_hash": "b4311a87d944cb80e912c0d2c8a781fd04ab844b7226ed6dc7b6467b08139cf5",
+        "quote": "The round was led by Jesse Beyroutey from IA Ventures with participation from Nicholas Thompson (CEO of the Atlantic), Alex Rattray (CEO of Stainless, acquired by Anthropic), and Betaworks.",
+        "quote_hash": "89a5a4a45ec79b38ef2f5cbd3382df604c673da6d5982c63de6be2a82e75b568"
+      },
+      {
         "source_id": "FISRC-460f085bcd2dd220",
         "source_url": "https://www.vestbee.com/insights/articles/fermat-raises-8m",
         "source_title": "AI fashion design platform Fermat raises $8m seed round and plans New York office",
@@ -234,6 +288,10 @@
           "source_id": "B23-BETA-TECHCRUNCH"
         },
         {
+          "description": "融资来源记录：Every · A轮 · 2026-11-25 · 本轮参投 · $17.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6453236c7a2918ed"
+        },
+        {
           "description": "融资来源记录：Fermat · 种子轮 · 2026-11-17 · 本轮参投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-460f085bcd2dd220"
         },
@@ -291,6 +349,14 @@
           "source_content_hash": "19c53bdc1c7a5dd5c70b309c17779a81fe448664a3d9bd1b19e126ec16ad755b",
           "quote": "7.22.2025 Announcing Betaworks Fund 3.0 Jordan Crook Today, we’re thrilled to announce that we’ve closed $66 million for Betaworks Fund 3.0 — a pre-seed/seed stage venture fund",
           "quote_hash": "7d00167dbcb21830305c8900ac396f1b54d1a2794a3152f24e98509110274241"
+        },
+        {
+          "source_id": "FISRC-6453236c7a2918ed",
+          "source_url": "https://every.to/on-every/we-raised-17-5-million-to-make-you-and-your-team-ai-native",
+          "source_title": "我们融资1750万美元，助您和团队成为AI原生",
+          "source_content_hash": "b4311a87d944cb80e912c0d2c8a781fd04ab844b7226ed6dc7b6467b08139cf5",
+          "quote": "The round was led by Jesse Beyroutey from IA Ventures with participation from Nicholas Thompson (CEO of the Atlantic), Alex Rattray (CEO of Stainless, acquired by Anthropic), and Betaworks.",
+          "quote_hash": "89a5a4a45ec79b38ef2f5cbd3382df604c673da6d5982c63de6be2a82e75b568"
         },
         {
           "source_id": "FISRC-460f085bcd2dd220",

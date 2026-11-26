@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-25",
-    "currentDate": "2026-11-25",
-    "eventCount": 4558,
+    "latestDataDate": "2026-11-26",
+    "currentDate": "2026-11-26",
+    "eventCount": 4565,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,18 +61,19 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 10,
+    "current_round_count": 11,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 10,
+    "portfolio_company_count": 11,
     "market_regions": [
+      "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2026-05-28",
     "latest_disclosed_at": "2026-11-23",
     "role_counts": {
-      "co_lead": 2,
+      "co_lead": 3,
       "historical_or_ambiguous": 2,
       "lead": 4,
       "participant": 4
@@ -101,6 +102,11 @@
         "entity_id": "EN-d27608cca9b65f91",
         "canonical_entity_id": "",
         "name": "Glow"
+      },
+      {
+        "entity_id": "EN-f1c097b0522496da",
+        "canonical_entity_id": "",
+        "name": "Isomorphic Labs"
       },
       {
         "entity_id": "EN-a2039b2db07c1ad6",
@@ -139,6 +145,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b9474fe6e8564001",
+        "funding_insight_id": "FI-d81e7294e3c1af01",
+        "event_ids": [
+          "EV-d8cbf20053f2afe5"
+        ],
+        "company_entity_id": "EN-f1c097b0522496da",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "50亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-69368d0d67198c92",
+            "source_url": "https://m.sohu.com/a/1104649692_532789?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "333亿！全球AI制药最大单笔融资诞生",
+            "source_content_hash": "f1f638563ba34067",
+            "quote": "本轮由Greenoaks与红杉资本联合领投，a16z作为新进投资方参与，Alphabet持续大额加注，Thrive Capital、MGX、GV、CapitalG、淡马锡、英国主权AI基金等老股东全部跟投。",
+            "quote_hash": "38473016ecb0d0d75159d1e2d1ce697b2a83701b83a8e3db9d9ca5db585503c4"
+          }
+        ]
+      },
       {
         "activity_id": "IA-94cb934b28a18ad0",
         "funding_insight_id": "FI-a4c54e0a0719d2bf",
@@ -624,6 +670,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-69368d0d67198c92",
+        "source_url": "https://m.sohu.com/a/1104649692_532789?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "333亿！全球AI制药最大单笔融资诞生",
+        "source_content_hash": "f1f638563ba34067",
+        "quote": "本轮由Greenoaks与红杉资本联合领投，a16z作为新进投资方参与，Alphabet持续大额加注，Thrive Capital、MGX、GV、CapitalG、淡马锡、英国主权AI基金等老股东全部跟投。",
+        "quote_hash": "38473016ecb0d0d75159d1e2d1ce697b2a83701b83a8e3db9d9ca5db585503c4"
+      },
+      {
         "source_id": "FISRC-10ed8c9647ecbbfb",
         "source_url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
         "source_title": "Sierra估值六个月内翻倍至300亿美元，CX领域AI需求激增",
@@ -759,12 +813,12 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Sierra · F轮 · 2026-11-23 · 本轮领投 · $1.75 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-10ed8c9647ecbbfb"
+          "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-23 · 本轮联合领投 · 50亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-69368d0d67198c92"
         },
         {
-          "description": "融资来源记录：Payhawk · C轮 · 2026-11-18 · 本轮参投 · $280m。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-52ddbf8367aa7b8c"
+          "description": "融资来源记录：Sierra · F轮 · 2026-11-23 · 本轮领投 · $1.75 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-10ed8c9647ecbbfb"
         }
       ],
       "contacts": [],
@@ -786,6 +840,14 @@
           "quote_hash": "fa24778cfd7c2d26c7f8ebda518fb1810040fd01beae0ea7f072d6d62cf75856"
         },
         {
+          "source_id": "FISRC-69368d0d67198c92",
+          "source_url": "https://m.sohu.com/a/1104649692_532789?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "source_title": "333亿！全球AI制药最大单笔融资诞生",
+          "source_content_hash": "f1f638563ba34067",
+          "quote": "本轮由Greenoaks与红杉资本联合领投，a16z作为新进投资方参与，Alphabet持续大额加注，Thrive Capital、MGX、GV、CapitalG、淡马锡、英国主权AI基金等老股东全部跟投。",
+          "quote_hash": "38473016ecb0d0d75159d1e2d1ce697b2a83701b83a8e3db9d9ca5db585503c4"
+        },
+        {
           "source_id": "FISRC-10ed8c9647ecbbfb",
           "source_url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
           "source_title": "Sierra估值六个月内翻倍至300亿美元，CX领域AI需求激增",
@@ -800,14 +862,6 @@
           "source_content_hash": "203b319d8f4eb3d0",
           "quote": "led by Greenoaks and Lightspeed Venture Partners",
           "quote_hash": "62a5a9693e10308fb23fac8baeffc38b181df54e00df80a3acd7c4ccb75df926"
-        },
-        {
-          "source_id": "FISRC-52ddbf8367aa7b8c",
-          "source_url": "https://payhawk.com/en-us/blog/payhawk-series-c-280m-funding",
-          "source_title": "Payhawk raises $280M Series C at a $2B valuation | Payhawk",
-          "source_content_hash": "32c25b242387a108",
-          "quote": "All existing investors, including QED, Greenoaks, Lightspeed, Hedosophia and Bek Ventures, participated in the round",
-          "quote_hash": "5cc700099461971fc83d5ad7c9994344d382eac7aed9019c42367298a662f31d"
         }
       ],
       "last_verified_at": "2026-10-04",

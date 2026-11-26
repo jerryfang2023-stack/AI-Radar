@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-25",
-    "currentDate": "2026-11-25",
-    "eventCount": 4558,
+    "latestDataDate": "2026-11-26",
+    "currentDate": "2026-11-26",
+    "eventCount": 4565,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,72 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-11-23",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
+      "co_lead": 1,
       "historical_or_ambiguous": 2
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_c"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-f1c097b0522496da",
+        "canonical_entity_id": "",
+        "name": "Isomorphic Labs"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-742b6fd428e8994d",
+        "funding_insight_id": "FI-d81e7294e3c1af01",
+        "event_ids": [
+          "EV-d8cbf20053f2afe5"
+        ],
+        "company_entity_id": "EN-f1c097b0522496da",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "50亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-69368d0d67198c92",
+            "source_url": "https://m.sohu.com/a/1104649692_532789?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "333亿！全球AI制药最大单笔融资诞生",
+            "source_content_hash": "f1f638563ba34067",
+            "quote": "本轮由Greenoaks与红杉资本联合领投，a16z作为新进投资方参与，Alphabet持续大额加注，Thrive Capital、MGX、GV、CapitalG、淡马锡、英国主权AI基金等老股东全部跟投。",
+            "quote_hash": "38473016ecb0d0d75159d1e2d1ce697b2a83701b83a8e3db9d9ca5db585503c4"
+          }
+        ]
+      },
       {
         "activity_id": "IA-33dc074f6c231967",
         "funding_insight_id": "FI-ec1ed99dffac2fd0",
@@ -145,6 +194,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-69368d0d67198c92",
+        "source_url": "https://m.sohu.com/a/1104649692_532789?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "333亿！全球AI制药最大单笔融资诞生",
+        "source_content_hash": "f1f638563ba34067",
+        "quote": "本轮由Greenoaks与红杉资本联合领投，a16z作为新进投资方参与，Alphabet持续大额加注，Thrive Capital、MGX、GV、CapitalG、淡马锡、英国主权AI基金等老股东全部跟投。",
+        "quote_hash": "38473016ecb0d0d75159d1e2d1ce697b2a83701b83a8e3db9d9ca5db585503c4"
+      },
+      {
         "source_id": "FISRC-e3b51be471b79167",
         "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
         "source_title": "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道",
@@ -166,10 +223,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "红杉资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "红杉资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-23 · 本轮联合领投 · 50亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-69368d0d67198c92"
+        },
         {
           "description": "融资来源记录：穹彻智能 · 历史轮次未披露 · 历史投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e3b51be471b79167"
@@ -181,6 +242,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-69368d0d67198c92",
+          "source_url": "https://m.sohu.com/a/1104649692_532789?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "source_title": "333亿！全球AI制药最大单笔融资诞生",
+          "source_content_hash": "f1f638563ba34067",
+          "quote": "本轮由Greenoaks与红杉资本联合领投，a16z作为新进投资方参与，Alphabet持续大额加注，Thrive Capital、MGX、GV、CapitalG、淡马锡、英国主权AI基金等老股东全部跟投。",
+          "quote_hash": "38473016ecb0d0d75159d1e2d1ce697b2a83701b83a8e3db9d9ca5db585503c4"
+        },
         {
           "source_id": "FISRC-e3b51be471b79167",
           "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",

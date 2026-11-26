@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-25",
-    "currentDate": "2026-11-25",
-    "eventCount": 4558,
+    "latestDataDate": "2026-11-26",
+    "currentDate": "2026-11-26",
+    "eventCount": 4565,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,21 +61,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 11,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 10,
+    "current_round_count": 12,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 11,
     "market_regions": [
+      "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2023-06-28",
-    "latest_disclosed_at": "2026-11-17",
+    "latest_disclosed_at": "2026-11-23",
     "role_counts": {
       "co_lead": 3,
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "lead": 3,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "seed",
@@ -96,6 +97,11 @@
         "entity_id": "EN-8da5eafb322ee86e",
         "canonical_entity_id": "",
         "name": "Fractile"
+      },
+      {
+        "entity_id": "EN-f1c097b0522496da",
+        "canonical_entity_id": "",
+        "name": "Isomorphic Labs"
       },
       {
         "entity_id": "EN-a2039b2db07c1ad6",
@@ -139,6 +145,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d547ad8e0f95fcef",
+        "funding_insight_id": "FI-d81e7294e3c1af01",
+        "event_ids": [
+          "EV-d8cbf20053f2afe5"
+        ],
+        "company_entity_id": "EN-f1c097b0522496da",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "50亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿美元"
+        },
+        "announced_at": "2026-11-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-69368d0d67198c92",
+            "source_url": "https://m.sohu.com/a/1104649692_532789?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "333亿！全球AI制药最大单笔融资诞生",
+            "source_content_hash": "f1f638563ba34067",
+            "quote": "本轮由Greenoaks与红杉资本联合领投，a16z作为新进投资方参与，Alphabet持续大额加注，Thrive Capital、MGX、GV、CapitalG、淡马锡、英国主权AI基金等老股东全部跟投。",
+            "quote_hash": "38473016ecb0d0d75159d1e2d1ce697b2a83701b83a8e3db9d9ca5db585503c4"
+          }
+        ]
+      },
       {
         "activity_id": "IA-93c78e6dc294d9d7",
         "funding_insight_id": "FI-1c7a6290f4a522a8",
@@ -556,6 +602,38 @@
         ]
       },
       {
+        "activity_id": "IA-01420dc8205e01b0",
+        "funding_insight_id": "FI-d81e7294e3c1af01",
+        "event_ids": [
+          "EV-d8cbf20053f2afe5"
+        ],
+        "company_entity_id": "EN-f1c097b0522496da",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2025-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2025年3月首轮外部融资领投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-8a1734a17fc92194",
+            "source_url": "https://caifuhao.eastmoney.com/news/20261119102336768717990",
+            "source_title": "AI制药史上最大融资来了",
+            "source_content_hash": "879d749b9407dabd",
+            "quote": "2025年3月，Isomorphic Labs首轮外部融资6亿美元，Thrive Capital领投，GV和Alphabet参与。",
+            "quote_hash": "0aa1612886a3a4f290260568a03267447a2a122d729cdb22c1c4f276db1749d8"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-cf86e078cb7d81d8",
         "funding_insight_id": "FI-b76fffbf5d0d91bd",
         "event_ids": [
@@ -637,6 +715,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-69368d0d67198c92",
+        "source_url": "https://m.sohu.com/a/1104649692_532789?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "333亿！全球AI制药最大单笔融资诞生",
+        "source_content_hash": "f1f638563ba34067",
+        "quote": "本轮由Greenoaks与红杉资本联合领投，a16z作为新进投资方参与，Alphabet持续大额加注，Thrive Capital、MGX、GV、CapitalG、淡马锡、英国主权AI基金等老股东全部跟投。",
+        "quote_hash": "38473016ecb0d0d75159d1e2d1ce697b2a83701b83a8e3db9d9ca5db585503c4"
+      },
       {
         "source_id": "FISRC-172c6eda5dfd3979",
         "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
@@ -734,6 +820,14 @@
         "quote_hash": "42ecf700a4e286ce023fa7225b6ccb9d9afebf7d6dfd7ddb39cf19f6bac84a2b"
       },
       {
+        "source_id": "FISRC-8a1734a17fc92194",
+        "source_url": "https://caifuhao.eastmoney.com/news/20261119102336768717990",
+        "source_title": "AI制药史上最大融资来了",
+        "source_content_hash": "879d749b9407dabd",
+        "quote": "2025年3月，Isomorphic Labs首轮外部融资6亿美元，Thrive Capital领投，GV和Alphabet参与。",
+        "quote_hash": "0aa1612886a3a4f290260568a03267447a2a122d729cdb22c1c4f276db1749d8"
+      },
+      {
         "source_id": "FISRC-1e2b3bad243bd066",
         "source_url": "https://yespress.io/openais-122-b-megaround",
         "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
@@ -782,16 +876,16 @@
       "experience_summary": "官网公开内容支持其为科技领域投资机构，并提供一般联络渠道；未从第三方报道推断未披露的基金规模、个人履历或回报表现。",
       "track_record": [
         {
+          "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-23 · 本轮参投 · 50亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-69368d0d67198c92"
+        },
+        {
           "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮参投 · €4.5 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-172c6eda5dfd3979"
         },
         {
           "description": "融资来源记录：Isomorphic Labs · C轮 · 2026-11-17 · 本轮参投 · $5 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c4b7e80cb7863d47"
-        },
-        {
-          "description": "融资来源记录：Fractile · C轮 · 2026-11-11 · 本轮联合领投 · $720 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-038f46a4355e8569"
         }
       ],
       "contacts": [
@@ -835,6 +929,14 @@
           "quote_hash": "bf8f75c2a6fb056494a728ec92284b1773f900b34abf39f6e24f5a9f07235291"
         },
         {
+          "source_id": "FISRC-69368d0d67198c92",
+          "source_url": "https://m.sohu.com/a/1104649692_532789?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "source_title": "333亿！全球AI制药最大单笔融资诞生",
+          "source_content_hash": "f1f638563ba34067",
+          "quote": "本轮由Greenoaks与红杉资本联合领投，a16z作为新进投资方参与，Alphabet持续大额加注，Thrive Capital、MGX、GV、CapitalG、淡马锡、英国主权AI基金等老股东全部跟投。",
+          "quote_hash": "38473016ecb0d0d75159d1e2d1ce697b2a83701b83a8e3db9d9ca5db585503c4"
+        },
+        {
           "source_id": "FISRC-172c6eda5dfd3979",
           "source_url": "https://www.eu-startups.com/2026/11/ai-drug-discovery-giant-isomorphic-labs-raises-e4-5-billion-in-blockbuster-funding-round/",
           "source_title": "AI 药物发现巨头 Isomorphic Labs 完成 45 亿欧元重磅融资",
@@ -849,14 +951,6 @@
           "source_content_hash": "69ca96b09e5f9b3698e78f74bf202e70c1f5d21f791557981cbae6115c03e7c9",
           "quote": "All of the company’s existing backers, including Alphabet’s venture divisions GV and Capita G, Thrive Capital, MGX, Temasek, and the U.K. Sovereign AI Fund, also invested.",
           "quote_hash": "e93dc23553205c624e3a7bd8a92d4938c04a0f7a947088fa657614dd6b883065"
-        },
-        {
-          "source_id": "FISRC-038f46a4355e8569",
-          "source_url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips",
-          "source_title": "英国 Fractile 完成 7.2 亿美元融资，在 AI 芯片竞赛中占据优势",
-          "source_content_hash": "32d649c86ac99f21c27a99164d168c5e9a811c44a16748775b1042a7ee5df4e5",
-          "quote": "its latest round led by Thrive Capital, Founders Fund, Lightspeed Venture Partners, and Redpoint",
-          "quote_hash": "69677c9cff11085d84c536d1d997465dcc1993802f7000b442656da6b4011cf8"
         }
       ],
       "last_verified_at": "2026-09-26",

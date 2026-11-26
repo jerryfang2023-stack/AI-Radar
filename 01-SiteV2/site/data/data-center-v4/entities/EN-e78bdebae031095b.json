@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-25",
-    "currentDate": "2026-11-25",
-    "eventCount": 4558,
+    "latestDataDate": "2026-11-26",
+    "currentDate": "2026-11-26",
+    "eventCount": 4565,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -102,6 +102,7 @@
       "EV-8a91e14f37d32b4d",
       "EV-31782f0824ae1db1",
       "EV-3c51bcb5e99d2b68",
+      "EV-01f2b125844de734",
       "EV-5ed60b6f14a05b3e",
       "EV-afb294eb4d9baf2d",
       "EV-14051f3d4f43c4a7",
@@ -138,17 +139,17 @@
       "EN-6fcba5d96a4fadfd"
     ],
     "firstSeen": "2026-02-17",
-    "lastSeen": "2026-11-25",
+    "lastSeen": "2026-11-26",
     "relationIds": [
       "REL2-30051dc5d7668662"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
-        "EV-86f4e971f63b6cf2",
+        "EV-471935cae3200f2c",
         "EV-afb294eb4d9baf2d",
         "EV-14051f3d4f43c4a7",
         "EV-57b1043727f95137",
-        "EV-471935cae3200f2c",
+        "EV-86f4e971f63b6cf2",
         "EV-dc10752743c440d9",
         "EV-c5984dabb5a697b9",
         "EV-64ce72bdf3514b8e",
@@ -200,6 +201,7 @@
         "EV-3c51bcb5e99d2b68"
       ],
       "hardware": [
+        "EV-01f2b125844de734",
         "EV-5ed60b6f14a05b3e",
         "EV-31782f0824ae1db1"
       ],
@@ -210,6 +212,90 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-471935cae3200f2c",
+        "dataDate": "2026-11-26",
+        "date": "2026-11-19",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "AI算力大事追踪：Anthropic，IPO融资813亿美元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-148111319b6a2e98",
+          "EN-c70eca6b0f88f44d",
+          "EN-e78bdebae031095b"
+        ]
+      },
+      {
+        "id": "EV-01f2b125844de734",
+        "dataDate": "2026-11-26",
+        "date": "2026-11-24",
+        "eventType": "hardware_capacity",
+        "eventTypeLabel": "硬件产能",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "马斯克承认 AI 研发落后对手：出租 SpaceXSI 算力比自研 Grok 更赚钱",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e78bdebae031095b",
+          "EN-c70eca6b0f88f44d",
+          "EN-bbdefa2950f49882"
+        ]
+      },
+      {
+        "id": "EV-afb294eb4d9baf2d",
+        "dataDate": "2026-11-26",
+        "date": "2026-11-20",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "“史上最大 IPO”：Anthropic 上市首日收盘大涨 17%，市值达 1.27 万亿美元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d1e9161dabbfee1b",
+          "EN-c70eca6b0f88f44d",
+          "EN-e78bdebae031095b"
+        ]
+      },
+      {
+        "id": "EV-14051f3d4f43c4a7",
+        "dataDate": "2026-11-26",
+        "date": "2026-11-19",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 完成史上最大规模 IPO，上市估值达 1.5 万亿美元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-e78bdebae031095b"
+        ]
+      },
+      {
+        "id": "EV-57b1043727f95137",
+        "dataDate": "2026-11-26",
+        "date": "2026-11-19",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic 成功完成史上最大 IPO，估值达 $1.5T",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2afc11a6ed346da3",
+          "EN-c70eca6b0f88f44d",
+          "EN-e78bdebae031095b"
+        ]
+      },
       {
         "id": "EV-86f4e971f63b6cf2",
         "dataDate": "2026-11-25",
@@ -238,73 +324,6 @@
         "title": "马斯克承认 AI 研发落后对手：出租 SpaceXSI 算力比自研 Grok 更赚钱",
         "displayTags": [],
         "entityIds": [
-          "EN-e78bdebae031095b"
-        ]
-      },
-      {
-        "id": "EV-afb294eb4d9baf2d",
-        "dataDate": "2026-11-25",
-        "date": "2026-11-20",
-        "eventType": "ipo_listing",
-        "eventTypeLabel": "IPO 与上市",
-        "eventGroup": "融资与并购",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "“史上最大 IPO”：Anthropic 上市首日收盘大涨 17%，市值达 1.27 万亿美元",
-        "displayTags": [],
-        "entityIds": [
-          "EN-d1e9161dabbfee1b",
-          "EN-c70eca6b0f88f44d",
-          "EN-e78bdebae031095b"
-        ]
-      },
-      {
-        "id": "EV-14051f3d4f43c4a7",
-        "dataDate": "2026-11-25",
-        "date": "2026-11-19",
-        "eventType": "ipo_listing",
-        "eventTypeLabel": "IPO 与上市",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "Anthropic 完成史上最大规模 IPO，上市估值达 1.5 万亿美元",
-        "displayTags": [],
-        "entityIds": [
-          "EN-c70eca6b0f88f44d",
-          "EN-e78bdebae031095b"
-        ]
-      },
-      {
-        "id": "EV-57b1043727f95137",
-        "dataDate": "2026-11-25",
-        "date": "2026-11-19",
-        "eventType": "ipo_listing",
-        "eventTypeLabel": "IPO 与上市",
-        "eventGroup": "融资与并购",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "Anthropic 成功完成史上最大 IPO，估值达 $1.5T",
-        "displayTags": [],
-        "entityIds": [
-          "EN-2afc11a6ed346da3",
-          "EN-c70eca6b0f88f44d",
-          "EN-e78bdebae031095b"
-        ]
-      },
-      {
-        "id": "EV-471935cae3200f2c",
-        "dataDate": "2026-11-24",
-        "date": "2026-11-19",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "AI算力大事追踪：Anthropic，IPO融资813亿美元",
-        "displayTags": [],
-        "entityIds": [
-          "EN-148111319b6a2e98",
-          "EN-c70eca6b0f88f44d",
           "EN-e78bdebae031095b"
         ]
       },
@@ -6141,6 +6160,35 @@
   ],
   "fde": [],
   "hardware": [
+    {
+      "id": "HW-f5ced0901715551e",
+      "eventId": "EV-01f2b125844de734",
+      "dataDate": "2026-11-26",
+      "date": "2026-11-24",
+      "title": "马斯克承认 AI 研发落后对手：出租 SpaceXSI 算力比自研 Grok 更赚钱",
+      "hardwareType": "data_center",
+      "eventType": "hardware_capacity",
+      "eventTypeLabel": "硬件产能",
+      "computeLayer": "data_center",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://www.ithome.com/1/031/246.htm",
+      "sourceName": "www.ithome.com",
+      "sourceDate": "2026-11-24",
+      "entityIds": [
+        "EN-e78bdebae031095b",
+        "EN-c70eca6b0f88f44d",
+        "EN-bbdefa2950f49882"
+      ]
+    },
     {
       "id": "HW-8e3f64354ff30375",
       "eventId": "EV-5ed60b6f14a05b3e",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-25",
-    "currentDate": "2026-11-25",
-    "eventCount": 4558,
+    "latestDataDate": "2026-11-26",
+    "currentDate": "2026-11-26",
+    "eventCount": 4565,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -92,6 +92,7 @@
       "EV-1dc482e2fe2f10bc",
       "EV-7bc2e6744a92c81f",
       "EV-5d50eb202b478bd4",
+      "EV-8546d9e5d3f1ce00",
       "EV-e51e65d60541df1b",
       "EV-09029303144c5e67",
       "EV-a67071a8550cb1be"
@@ -122,6 +123,7 @@
       "EN-adb4b0aa1de289f9",
       "EN-d7e81f6e7d39f00f",
       "EN-98502f8f7e5e64cd",
+      "EN-60bc794399b962e3",
       "EN-1f3ae135eaa964e0",
       "EN-070c562765b9ff05",
       "EN-a89a94ff38d4dc95"
@@ -146,7 +148,7 @@
       "HW-9a39a7f449362f96"
     ],
     "firstSeen": "2026-03-11",
-    "lastSeen": "2026-10-05"
+    "lastSeen": "2026-11-26"
   },
   "events": [
     {
@@ -7603,6 +7605,92 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-8546d9e5d3f1ce00",
+      "dataDate": "2026-11-26",
+      "date": "2026-11-24",
+      "updatedDate": "2026-11-24",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "戴尔上调年度销售预期，AI服务器需求激增",
+      "originalTitle": "Dell Raises Annual Sales Outlook as AI Server Demand Surges",
+      "subject": "Dell Technologies Inc.",
+      "action": "financial_performance",
+      "object": "fiscal year revenue sales outlook raised to about $202 billion",
+      "metrics": [
+        "$202 billion",
+        "$78 billion",
+        "$192 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-60bc794399b962e3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-60bc794399b962e3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-60bc794399b962e3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-60bc794399b962e3",
+        "EN-3ec4c7b2f77786e5"
+      ],
+      "entityNames": [
+        "Dell Technologies Inc.",
+        "Dell Technologies"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-11-24/dell-ups-annual-sales-forecast-again-on-rising-ai-server-demand",
+      "publisher": "www.bloomberg.com"
+    },
+    {
       "id": "EV-e51e65d60541df1b",
       "dataDate": "2026-10-05",
       "date": "2026-09-30",
@@ -8049,6 +8137,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e16ea24e86235bcb",
         "EV-0a0d2b11832f0be5",
         "EV-81eaad496911181e",
         "EV-b34cc7c6ca51ad7a",
@@ -8382,10 +8471,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
         "TX-use_case-research_discovery",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-industry-food_hospitality",
         "TX-technology-speech_audio",
@@ -8465,7 +8554,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-11-25"
+      "lastSeen": "2026-11-26"
     },
     {
       "id": "EN-0995103010d39563",
@@ -8814,6 +8903,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-01f2b125844de734",
         "EV-6b34d2e2a2aea1b9",
         "EV-6460ad65cd850154",
         "EV-4fc82b5985acc6c8",
@@ -8865,9 +8955,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-technology-embodied_ai",
         "TX-use_case-research_discovery",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-technology-speech_audio",
         "TX-use_case-content_creation",
@@ -8924,7 +9014,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-11-25"
+      "lastSeen": "2026-11-26"
     },
     {
       "id": "EN-cecdd8369134f75e",
@@ -8942,8 +9032,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-research_discovery",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-research_discovery",
         "TX-industry-manufacturing",
         "TX-industry-financial_services",
         "TX-industry-media_entertainment",
@@ -9361,6 +9451,27 @@
       ],
       "firstSeen": "2026-06-24",
       "lastSeen": "2026-06-25"
+    },
+    {
+      "id": "EN-60bc794399b962e3",
+      "name": "Dell Technologies Inc.",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-8546d9e5d3f1ce00"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-ai_compute_system"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-11-24",
+      "lastSeen": "2026-11-26"
     },
     {
       "id": "EN-1f3ae135eaa964e0",
