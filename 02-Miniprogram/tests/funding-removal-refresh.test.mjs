@@ -42,3 +42,32 @@ test('hidden detail refreshes then returns to funding list', async()=>{
  page.setData=()=>{};page.renderCard({id:'removed',hidden:true});await Promise.resolve();
  assert.equal(refreshes,1);assert.equal(route,'/pages/terminal/index');
 });
+
+test("historical financing previews and shares the requested round with the original company saved key", async () => {
+  let page;
+  const requests = [];
+  const latest = { id: "FI-latest", company: "星河智能", round: "B轮" };
+  const earlier = { ...latest, id: "FI-earlier", subjectCardId: latest.id, round: "A轮", amount: "5000万元", products: ["星河助手"] };
+  const index = { cards: [latest], events: [latest, earlier] };
+  vm.runInNewContext(fs.readFileSync(new URL("../miniprogram/pages/detail/index.js", import.meta.url), "utf8"), {
+    Page: definition => { page = definition; }, wx: {},
+    require: file => ({
+      "company-display.js": { companyDisplayName: name => name },
+      "funding-visibility.js": { isFundingVisible: () => true },
+      "live-data.js": { getFundingData: () => ({ index }) },
+      "storage.js": { isWatched: () => false, isCompared: () => false },
+      "access.js": { getAccessState: () => "unregistered" },
+      "metered-access.js": { resolveDetailAccess: () => ({ contentLocked: true }) },
+      "payment.js": { fetchProtectedContent: async (type, id) => { requests.push([type, id]); return { ...earlier, id: latest.id }; } },
+    })[file.split("/").at(-1)] || {},
+  });
+  page.setData = state => Object.assign(page.data, state);
+  page.onLoad({ id: "round-FI-earlier" });
+  assert.equal(page.data.card.round, "A轮");
+  assert.equal(page.data.card.products[0].name, "星河助手");
+  await Promise.resolve();
+  assert.deepEqual(requests, [["funding", "round-FI-earlier"]]);
+  assert.equal(page.data.card.id, latest.id);
+  assert.match(page.onShareAppMessage().path, /id=round-FI-earlier/u);
+  assert.match(page.onShareTimeline().query, /id=round-FI-earlier/u);
+});

@@ -61,7 +61,7 @@
     </view>
 
     <view wx:if="{{type !== 'companies' && entity.categoriesFullText}}" class="detail-section">
-      <text class="section-title serif">{{type === 'investors' ? '已投赛道' : (type==='products'?'应用场景':'关联领域')}}</text><text class="plain-copy">{{entity.categoriesFullText}}</text>
+      <text class="section-title serif">{{type === 'investors' ? '已投赛道' : (type==='products'?'所属赛道':'关联领域')}}</text><text class="plain-copy">{{entity.categoriesFullText}}</text>
     </view>
 
     <view wx:if="{{type !== 'companies' && entity.companyLinks.length}}" class="detail-section">
@@ -69,9 +69,9 @@
     </view>
 
     <view class="detail-section">
-      <text class="section-title serif">{{type === 'companies' ? '融资历史' : (type === 'investors' ? '最近投资活动' : '关联企业动态')}}</text>
+      <text class="section-title serif">{{type === 'companies' ? '融资历史' : (type === 'investors' ? '最近投资活动' : (type === 'products' ? '收录该产品的融资记录' : '关联企业动态'))}}</text>
       <text wx:if="{{!entity.rounds.length}}" class="plain-copy">暂无已收录记录</text>
-      <button wx:for="{{entity.rounds}}" wx:key="id" class="activity-row" data-id="{{item.id}}" bindtap="openFunding">
+      <button wx:for="{{entity.rounds}}" wx:key="eventId" class="activity-row" data-id="{{item.fundingResourceId || item.id}}" bindtap="openFunding">
         <view><text class="activity-title">{{type === 'companies' ? item.round : item.company}}</text><text class="activity-meta">{{item.date}} · {{item.round}}</text></view><view><strong>{{item.amount}}</strong><text>查看融资 ›</text></view>
       </button>
     </view>

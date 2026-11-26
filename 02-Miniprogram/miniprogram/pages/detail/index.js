@@ -15,7 +15,9 @@ function normalizedCard(card) {
     displayName:companyDisplayName(card.company,card.marketRegion),
     founders: card.founders || [],
     institutionRationales: card.institutionRationales || [],
-    products: (card.products || []).map((item) => ({ ...item, features: item.features || [] })),
+    products: (card.products || []).map((item) => typeof item === "string"
+      ? { name: item, features: [] }
+      : { ...item, features: item.features || [] }),
     customers: card.customers || [],
     metrics: card.metrics || [],
     comparisons: card.comparisons || [],
@@ -32,23 +34,36 @@ Page({
 
   onLoad(options) {
     this.cardId = options.id;
+    const historicalId = this.historicalId = this.cardId?.startsWith("round-") ? this.cardId.slice(6) : "";
     this.setData(resolveDetailAccess(`funding:${this.cardId || "unknown"}`));
     const sharedEntry = options.from === "share";
     this.setData({ sharedEntry });
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
-    const preview = getFundingData().index.cards.find((item) => item.id === this.cardId);
-    if (preview) this.renderCard(normalizedCard(preview));
+    const showPreview = ({ index }) => {
+      if (this.disposed || this.data.card) return;
+      const preview = historicalId
+        ? index.events?.find(item => item.id === historicalId)
+        : index.cards.find(item => item.id === this.cardId);
+      if (preview) this.renderCard(normalizedCard(historicalId
+        ? { ...preview, id: preview.subjectCardId || preview.id, cumulativeAmount: "未披露" }
+        : preview));
+    };
+    showPreview(getFundingData());
+    if (historicalId && !this.data.card) refreshFundingData().then(showPreview);
     this.verifyServerAccess();
   },
+
+  onUnload() { this.disposed = true; },
 
   async verifyServerAccess() {
     if (!this.cardId) return;
     try {
       const detail = await fetchProtectedContent("funding", this.cardId);
+      if (this.disposed) return;
       if (detail) this.renderCard(normalizedCard(detail));
       this.setData({ contentLocked: false, lockReason: "server" });
     } catch (error) {
-      if (error.code === "AUTH_CHANGED") return;
+      if (this.disposed || error.code === "AUTH_CHANGED") return;
       if (error.accessState || error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") {
         this.setData({ contentLocked: true, lockReason: contentLockReason(error) });
       } else if (!this.data.card) {
@@ -170,7 +185,7 @@ Page({
     const card = this.data.card;
     return {
       title: card ? `${card.company} ${card.round}融资｜观澜 AI` : "观澜 AI 融资情报",
-      path: `/pages/detail/index?id=${encodeURIComponent(card?.id || this.cardId || "")}&from=share`,
+      path: `/pages/detail/index?id=${encodeURIComponent(this.historicalId ? this.cardId : card?.id || this.cardId || "")}&from=share`,
     };
   },
 
@@ -178,7 +193,7 @@ Page({
     const card = this.data.card;
     return {
       title: card ? `${card.company} ${card.round}融资｜观澜 AI` : "观澜 AI 融资情报",
-      query: `id=${encodeURIComponent(card?.id || this.cardId || "")}&from=share`,
+      query: `id=${encodeURIComponent(this.historicalId ? this.cardId : card?.id || this.cardId || "")}&from=share`,
     };
   },
 });

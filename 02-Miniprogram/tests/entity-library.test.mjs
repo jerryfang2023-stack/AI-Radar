@@ -54,3 +54,18 @@ test("related-company taps resolve by visible company name instead of protected 
   assert.equal(companyEntityKey("极佳视界"), "极佳视界");
   assert.equal(companyEntityKey("助擎科技"), "助擎科技");
 });
+
+test("products link only to financing events that mention them", () => {
+  const [latest, historical] = cards;
+  const subject = { ...latest, marketRegion: "china", products: ["工业机器人", "具身模型"] };
+  const events = [
+    { ...latest, marketRegion: "china" },
+    { ...historical, marketRegion: "china" },
+    { ...historical, id: "other", company: "另一个公司", marketRegion: "global" },
+  ];
+  const product = buildEntityLibrary([subject], details, events).products.find(item => item.name === "具身模型");
+  assert.deepEqual(product.rounds.map(round => round.id), ["old"]);
+  assert.equal(product.latestDate, historical.date);
+  assert.deepEqual(product.markets, ["china"]);
+  assert.deepEqual(product.categories, ["机器人"]);
+});
