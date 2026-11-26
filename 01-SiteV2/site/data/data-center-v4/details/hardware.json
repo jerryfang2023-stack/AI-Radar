@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-25",
-    "currentDate": "2026-11-25",
-    "eventCount": 4558,
+    "latestDataDate": "2026-11-26",
+    "currentDate": "2026-11-26",
+    "eventCount": 4565,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -53,6 +53,35 @@
     ]
   },
   "hardware": [
+    {
+      "id": "HW-f5ced0901715551e",
+      "eventId": "EV-01f2b125844de734",
+      "dataDate": "2026-11-26",
+      "date": "2026-11-24",
+      "title": "马斯克承认 AI 研发落后对手：出租 SpaceXSI 算力比自研 Grok 更赚钱",
+      "hardwareType": "data_center",
+      "eventType": "hardware_capacity",
+      "eventTypeLabel": "硬件产能",
+      "computeLayer": "data_center",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://www.ithome.com/1/031/246.htm",
+      "sourceName": "www.ithome.com",
+      "sourceDate": "2026-11-24",
+      "entityIds": [
+        "EN-e78bdebae031095b",
+        "EN-c70eca6b0f88f44d",
+        "EN-bbdefa2950f49882"
+      ]
+    },
     {
       "id": "HW-8e3f64354ff30375",
       "eventId": "EV-5ed60b6f14a05b3e",
@@ -22282,8 +22311,149 @@
   ],
   "events": [
     {
+      "id": "EV-23218a138d7c5227",
+      "dataDate": "2026-11-26",
+      "date": "2026-11-25",
+      "updatedDate": "2026-11-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "长江词元完成超3000万元天使轮融资，聚焦AI基础设施与词元运营服务",
+      "originalTitle": "",
+      "subject": "长江词元",
+      "action": "完成超3000万元天使轮融资",
+      "object": "，聚焦AI基础设施与词元运营服务",
+      "metrics": [
+        "3000万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-168b90ba750cb097"
+      ],
+      "entityNames": [
+        "长江词元"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202611/572398.shtml",
+      "publisher": "news.pedaily.cn"
+    },
+    {
+      "id": "EV-c3292f0a8d17ca84",
+      "dataDate": "2026-11-26",
+      "date": "2026-11-25",
+      "updatedDate": "2026-11-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "我们融资1750万美元，助您和团队成为AI原生",
+      "originalTitle": "We Raised $17.5 Million to Make You and Your Team AI-native",
+      "subject": "We",
+      "action": "Raised",
+      "object": "$17.5 Million to Make You and Your Team AI-native",
+      "metrics": [
+        "$17.5 million",
+        "$110 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-dc7c811b9561739d"
+      ],
+      "entityNames": [
+        "We"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://every.to/on-every/we-raised-17-5-million-to-make-you-and-your-team-ai-native",
+      "publisher": "every.to"
+    },
+    {
+      "id": "EV-e16ea24e86235bcb",
+      "dataDate": "2026-11-26",
+      "date": "2026-11-25",
+      "updatedDate": "2026-11-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "风险投资持续流入，Nvidia 剧烈波动与市场震荡笼罩 AI 热潮",
+      "originalTitle": "VC Funding Keeps Flowing as Nvidia Whiplash & Market Gyrations Shadow the AI Boom",
+      "subject": "Sierra",
+      "action": "funding",
+      "object": "$30 billion valuation round",
+      "metrics": [
+        "$30 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-dca6ec9510fc0176",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Sierra",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.newcomer.co/p/vc-funding-keeps-flowing-as-nvidia",
+      "publisher": "www.newcomer.co"
+    },
+    {
       "id": "EV-6d824b029e0bb29f",
-      "dataDate": "2026-11-25",
+      "dataDate": "2026-11-26",
       "date": "2026-11-24",
       "updatedDate": "2026-11-24",
       "eventType": "funding",
@@ -22368,7 +22538,7 @@
     },
     {
       "id": "EV-88b80e09db97f641",
-      "dataDate": "2026-11-25",
+      "dataDate": "2026-11-26",
       "date": "2026-11-24",
       "updatedDate": "2026-11-24",
       "eventType": "funding",
@@ -22412,7 +22582,7 @@
     },
     {
       "id": "EV-394bc5ac70f3d714",
-      "dataDate": "2026-11-25",
+      "dataDate": "2026-11-26",
       "date": "2026-11-23",
       "updatedDate": "2026-11-23",
       "eventType": "funding",
@@ -22459,7 +22629,7 @@
     },
     {
       "id": "EV-5039e66d4be8ff94",
-      "dataDate": "2026-11-24",
+      "dataDate": "2026-11-26",
       "date": "2026-11-23",
       "updatedDate": "2026-11-23",
       "eventType": "funding",
@@ -22552,7 +22722,7 @@
     },
     {
       "id": "EV-72f7f97d9e977246",
-      "dataDate": "2026-11-25",
+      "dataDate": "2026-11-26",
       "date": "2026-11-23",
       "updatedDate": "2026-11-23",
       "eventType": "funding",
@@ -22600,7 +22770,7 @@
     },
     {
       "id": "EV-c0096e363d19588f",
-      "dataDate": "2026-11-25",
+      "dataDate": "2026-11-26",
       "date": "2026-11-23",
       "updatedDate": "2026-11-23",
       "eventType": "funding",
@@ -22645,6 +22815,100 @@
       "products": [],
       "sourceUrl": "https://www.accel.com/news/our-investment-in-marlowe-the-multi-silicon-ai-factory",
       "publisher": "www.accel.com"
+    },
+    {
+      "id": "EV-d8cbf20053f2afe5",
+      "dataDate": "2026-11-26",
+      "date": "2026-11-23",
+      "updatedDate": "2026-11-23",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "全球AI制药融资创新高，港股通医疗ETF易方达（520850）标的指数涨超4%_大风号",
+      "originalTitle": "",
+      "subject": "全球AI制药",
+      "action": "融资",
+      "object": "创新高，港股通医疗ETF易方达（520850）标的指数涨超4%",
+      "metrics": [
+        "50亿",
+        "500亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-d67d6ada2176a332"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-f1c097b0522496da"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-f1c097b0522496da"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-f1c097b0522496da"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-f1c097b0522496da"
+      ],
+      "entityNames": [
+        "全球AI制药"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://feng.ifeng.com/c/8yHo8nXkykp",
+      "publisher": "feng.ifeng.com"
     },
     {
       "id": "EV-e0d0a57df0d64210",
@@ -23029,7 +23293,7 @@
     },
     {
       "id": "EV-842c27e708f60c9a",
-      "dataDate": "2026-11-25",
+      "dataDate": "2026-11-26",
       "date": "2026-11-20",
       "updatedDate": "2026-11-20",
       "eventType": "funding",
@@ -23226,7 +23490,7 @@
     },
     {
       "id": "EV-d84355ecbf21be85",
-      "dataDate": "2026-11-25",
+      "dataDate": "2026-11-26",
       "date": "2026-11-20",
       "updatedDate": "2026-11-20",
       "eventType": "funding",
@@ -23318,7 +23582,7 @@
     },
     {
       "id": "EV-471935cae3200f2c",
-      "dataDate": "2026-11-24",
+      "dataDate": "2026-11-26",
       "date": "2026-11-19",
       "updatedDate": "2026-11-19",
       "eventType": "funding",
@@ -23347,8 +23611,8 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-d30344651ea322f0",
-          "CL-9bd0a4e000c4b505"
+          "CL-0b91d3b396756c46",
+          "CL-b1bb0a69819c3085"
         ]
       },
       "missingFields": [],
@@ -23383,7 +23647,7 @@
     },
     {
       "id": "EV-4ed0d4054e9a6f07",
-      "dataDate": "2026-11-25",
+      "dataDate": "2026-11-26",
       "date": "2026-11-19",
       "updatedDate": "2026-11-19",
       "eventType": "funding",
@@ -23553,7 +23817,7 @@
     },
     {
       "id": "EV-638209012a462005",
-      "dataDate": "2026-11-25",
+      "dataDate": "2026-11-26",
       "date": "2026-11-19",
       "updatedDate": "2026-11-19",
       "eventType": "funding",
@@ -23606,7 +23870,7 @@
     },
     {
       "id": "EV-a151aeb22a93c5ee",
-      "dataDate": "2026-11-25",
+      "dataDate": "2026-11-26",
       "date": "2026-11-19",
       "updatedDate": "2026-11-19",
       "eventType": "funding",
@@ -23632,7 +23896,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-5a926dce9449d602"
+          "CL-106e6e05138fffb0"
         ]
       },
       "missingFields": [],
@@ -338911,6 +339175,71 @@
       "publisher": "markets.ft.com"
     },
     {
+      "id": "EV-c006d06db6838014",
+      "dataDate": "2026-11-26",
+      "date": "2026-11-26",
+      "updatedDate": "2026-11-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "36氪_让一部分人先看到未来",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "36氪_让一部分人先看到未来",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-c44203aa20c6ee5b"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-53ec6e33cca435f0"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "MedChemBench"
+      ],
+      "productName": "MedChemBench",
+      "products": [
+        {
+          "name": "MedChemBench",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.36kr.com/motif/887340443298048",
+      "publisher": "www.36kr.com"
+    },
+    {
       "id": "EV-1c4939371a435f9f",
       "dataDate": "2026-11-23",
       "date": "2026-11-17",
@@ -389632,7 +389961,9 @@
         {
           "name": "Horizon",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Sierra"
+          ]
         }
       ],
       "sourceUrl": "https://sierra.ai/blog/the-follow-up-is-the-sale",
@@ -396689,7 +397020,9 @@
         {
           "name": "Voice Personas",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Sierra"
+          ]
         }
       ],
       "sourceUrl": "https://sierra.ai/blog/introducing-voice-personas",
@@ -452894,21 +453227,21 @@
           "name": "SaaS",
           "type": "产品/服务",
           "ownerNames": [
-            "Salesforce"
+            "Sierra"
           ]
         },
         {
           "name": "AI Agents Are Eating",
           "type": "产品/服务",
           "ownerNames": [
-            "Salesforce"
+            "Sierra"
           ]
         },
         {
           "name": "AI Agents Are",
           "type": "产品/服务",
           "ownerNames": [
-            "Salesforce"
+            "Sierra"
           ]
         }
       ],
@@ -485023,6 +485356,54 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-01f2b125844de734",
+      "dataDate": "2026-11-26",
+      "date": "2026-11-24",
+      "updatedDate": "2026-11-24",
+      "eventType": "hardware_capacity",
+      "eventTypeLabel": "硬件产能",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "马斯克承认 AI 研发落后对手：出租 SpaceXSI 算力比自研 Grok 更赚钱",
+      "originalTitle": "",
+      "subject": "SpaceX",
+      "action": "hardware_capacity",
+      "object": "向Anthropic、谷歌等企业出租数据中心算力",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e78bdebae031095b",
+        "EN-c70eca6b0f88f44d",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "SpaceX",
+        "Anthropic",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ithome.com/1/031/246.htm",
+      "publisher": "www.ithome.com"
+    },
+    {
       "id": "EV-5ed60b6f14a05b3e",
       "dataDate": "2026-11-25",
       "date": "2026-11-24",
@@ -485069,8 +485450,94 @@
       "publisher": "www.ithome.com"
     },
     {
+      "id": "EV-8546d9e5d3f1ce00",
+      "dataDate": "2026-11-26",
+      "date": "2026-11-24",
+      "updatedDate": "2026-11-24",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "戴尔上调年度销售预期，AI服务器需求激增",
+      "originalTitle": "Dell Raises Annual Sales Outlook as AI Server Demand Surges",
+      "subject": "Dell Technologies Inc.",
+      "action": "financial_performance",
+      "object": "fiscal year revenue sales outlook raised to about $202 billion",
+      "metrics": [
+        "$202 billion",
+        "$78 billion",
+        "$192 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-60bc794399b962e3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-60bc794399b962e3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-60bc794399b962e3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-60bc794399b962e3",
+        "EN-3ec4c7b2f77786e5"
+      ],
+      "entityNames": [
+        "Dell Technologies Inc.",
+        "Dell Technologies"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-11-24/dell-ups-annual-sales-forecast-again-on-rising-ai-server-demand",
+      "publisher": "www.bloomberg.com"
+    },
+    {
       "id": "EV-46395af28fc6189e",
-      "dataDate": "2026-11-25",
+      "dataDate": "2026-11-26",
       "date": "2026-11-22",
       "updatedDate": "2026-11-22",
       "eventType": "policy_regulation",
@@ -485120,7 +485587,7 @@
     },
     {
       "id": "EV-97ede78f689bd26c",
-      "dataDate": "2026-11-25",
+      "dataDate": "2026-11-26",
       "date": "2026-11-20",
       "updatedDate": "2026-11-20",
       "eventType": "ipo_listing",
@@ -485170,7 +485637,7 @@
     },
     {
       "id": "EV-afb294eb4d9baf2d",
-      "dataDate": "2026-11-25",
+      "dataDate": "2026-11-26",
       "date": "2026-11-20",
       "updatedDate": "2026-11-20",
       "eventType": "ipo_listing",
@@ -485229,7 +485696,7 @@
     },
     {
       "id": "EV-08f7b2f72a5da891",
-      "dataDate": "2026-11-25",
+      "dataDate": "2026-11-26",
       "date": "2026-11-19",
       "updatedDate": "2026-11-19",
       "eventType": "ipo_listing",
@@ -485280,7 +485747,7 @@
     },
     {
       "id": "EV-14051f3d4f43c4a7",
-      "dataDate": "2026-11-25",
+      "dataDate": "2026-11-26",
       "date": "2026-11-19",
       "updatedDate": "2026-11-19",
       "eventType": "ipo_listing",
@@ -485332,7 +485799,7 @@
     },
     {
       "id": "EV-57b1043727f95137",
-      "dataDate": "2026-11-25",
+      "dataDate": "2026-11-26",
       "date": "2026-11-19",
       "updatedDate": "2026-11-19",
       "eventType": "ipo_listing",
@@ -485392,7 +485859,7 @@
     },
     {
       "id": "EV-6b34d2e2a2aea1b9",
-      "dataDate": "2026-11-25",
+      "dataDate": "2026-11-26",
       "date": "2026-11-19",
       "updatedDate": "2026-11-19",
       "eventType": "ipo_listing",
@@ -485535,7 +486002,7 @@
     },
     {
       "id": "EV-de8886a2222f5cd0",
-      "dataDate": "2026-11-25",
+      "dataDate": "2026-11-26",
       "date": "2026-11-19",
       "updatedDate": "2026-11-19",
       "eventType": "ipo_listing",
