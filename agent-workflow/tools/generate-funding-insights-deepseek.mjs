@@ -580,6 +580,7 @@ export function promptFor(event, company, sources, directions) {
     "financing.round不可为空：已确认本轮融资但来源未披露轮次时填写“轮次未披露”；不得从历史轮次或金额推测轮次。",
     "financing.investors只列本轮明确披露且有具体名称的投资方，role必须用中文标注“本轮领投”“本轮联合领投”或“本轮参投”。历史轮次、既有但未确认本轮继续参与、轮次语境不明的投资方不得混入investors，改放other_round_investors并保留原始轮次语境。若来源确认发生融资但只写基金、产业资本等泛称而未披露具体名称，返回空investors并将investor_disclosure_status设为not_disclosed；不得把泛称伪造成机构名称。若列出具体投资方则设为disclosed。",
     "当规范事件来源使用“投资者包括”“参与投资的机构包括”等措辞列出具体名称时，这些名称属于本轮投资方，必须逐一写入financing.investors并引用该完整原句；不得误放到other_round_investors或遗漏。机构名或个人姓名必须是明确专名；“某集团创始人”等只有职务、未披露自然人姓名的描述不得作为investors.name或投资关系实体，只保留在原文证据引文中，不得推测姓名。",
+    "company.founders 仅收录来源明确关联本融资主体的具名自然人创始成员；企业、机构及团队等组建方仅可作为有来源的公司背景，不能写入人物清单。products 收录来源明确支持的产品、模型或客户服务，区分同一服务的不同档位，功能、套装权益和仍在规划的项目不能当作独立现有产品。",
     "comparisons是应用层比较集合，不代表事实关系。只收录来源明确支持具体产品或方案、应用场景、目标客户、融资信息或商业路径的竞品；如果来源只说“同类公司”或“起点不同”，不要输出该条。product写具体产品或方案，scenario写具体工作流，缺失融资金额时funding_summary留空；core_difference必须逐字段比较已经证实的差异，不得写“起点不同”“各有优势”等机械句式。",
     "analysis.investment_rationale只收录本轮投资机构或其投资人的公开原话。institution必须与financing.investors中的机构名一致；speaker和speaker_role写公开归属；rationale用中文概括机构为何投资；quote逐字复制机构或投资人原文。没有机构原话时返回空数组，不得用公司创始人、媒体或模型判断冒充。",
     "金额和承诺主体必须精确归属：客户的基础设施投资计划、采购预算或建设投入，不得改写为被提及供应商的合同金额、收入、订单或保底现金流；只有来源明确披露交易双方及已签合同/收入时才可这样描述。媒体推断必须标成媒体分析，不得写作投资方或公司公开陈述。",

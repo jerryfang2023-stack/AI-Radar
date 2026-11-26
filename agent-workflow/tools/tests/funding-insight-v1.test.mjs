@@ -47,6 +47,20 @@ import {
   modelCorrectionProblem,
 } from "../generate-funding-insights-deepseek.mjs";
 
+test("organization formation partners cannot enter funding founder links", () => {
+  const quote = "由长江北斗数字产业有限公司牵头，联合浙江百应科技组建，创始人林川负责运营。";
+  const evidence_refs = [{ source_id: "src", quote }];
+  const payload = { company: { name: "长江词元", founders: [
+    { name: "长江北斗数字产业有限公司", role: "联合创始人", evidence_refs },
+    { name: "浙江百应科技", role: "联合组建方", evidence_refs },
+    { name: "林川", role: "创始人", evidence_refs },
+  ] } };
+  assert.deepEqual(sanitizeResearchPayload(payload, [{ source_id: "src", body_clean: quote }]).company.founders.map(row => row.name), ["林川"]);
+  const card = normalizeFundingInsightCard(payload);
+  assert.deepEqual(card.company.founders.map(row => row.name), ["林川"]);
+  assert.deepEqual(buildFundingEntityReviewQueue([card]).candidates.map(row => row.research_name), ["林川"]);
+});
+
 test("research hierarchy retries distinguish industry IDs from market subcategories", () => {
   for (const issue of ["market_subcategory_id_unknown", "market_subcategory_parent_mismatch"]) {
     const guidance = modelCorrectionProblem(issue);
