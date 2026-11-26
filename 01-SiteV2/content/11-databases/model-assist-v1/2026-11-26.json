@@ -3358,6 +3358,76 @@
         }
       ],
       "generated_at": "2026-11-26T00:41:09.915Z"
+    },
+    {
+      "candidate_id": "MAC-af58cc5cab9c7c47",
+      "task_type": "qa_repair",
+      "asset_id": "QA-EVERY-SELF-IDENTIFICATION-20261126",
+      "raw_id": "RAW-143e319ac20183d1",
+      "source_ref": "SA-2372e50dec1e49e7",
+      "source_hash": "e9c9dc69e2703497",
+      "provider": "manual_review",
+      "model": "not_applicable",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "quote": "We raised a $17.5 million Series A at a $110 million post-money valuation.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Every",
+            "object": "$17.5 million Series A",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "quote": "We raised a $17.5 million Series A at a $110 million post-money valuation.",
+          "start": 0,
+          "end": 74
+        },
+        {
+          "quote": "That is what Every is: a 35-person media and technology company where everyone, in every role, is an AI early adopter, testing new frontier models on real work every day.",
+          "start": 2797,
+          "end": 2967
+        },
+        {
+          "quote": "Dan Shipper is the cofounder and CEO of Every",
+          "start": 8008,
+          "end": 8053
+        }
+      ],
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex responsible original-source reviewer",
+        "reviewed_at": "2026-11-26T02:33:53.033Z",
+        "note": "The accepted first-party article explicitly identifies Every and its cofounder/CEO, describes its AI work, and announces the same Series A amount. We is a first-person pronoun, not an entity. Bind this source only; no global alias or entity merge is approved. Retain the original extraction and search attempts as history."
+      },
+      "generated_at": "2026-11-26T02:33:53.033Z",
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
     }
   ]
 }

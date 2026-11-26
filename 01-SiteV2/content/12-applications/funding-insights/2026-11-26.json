@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-11-26",
-    "generated_at": "2026-11-26T00:42:11.635Z",
+    "generated_at": "2026-11-26T02:55:42.358Z",
     "trigger": "accepted_financing_event_research",
     "research_provider": "search-gateway+direct-original+deepseek",
     "model": "deepseek-flash",
@@ -1198,10 +1198,10 @@
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-21b23d7d7069a334",
-      "triggered_by_event_id": "EV-c3292f0a8d17ca84",
+      "triggered_by_event_id": "EV-81b0b4ba7a31be41",
       "as_of_date": "2026-11-26",
       "company": {
-        "entity_id": "EN-dc7c811b9561739d",
+        "entity_id": "EN-66a424a9a958b152",
         "name": "Every",
         "full_name": "Every",
         "website": "https://every.to",
@@ -1242,7 +1242,7 @@
             "quote_hash": "312ba54af8a07fe816202efa37a7fc80de63fbc702acc67d4f7fd9960b4fc73e"
           }
         ],
-        "application_entity_id": "EN-dc7c811b9561739d",
+        "application_entity_id": "EN-66a424a9a958b152",
         "canonical_entity_consistent": false
       },
       "financing": {
@@ -1602,7 +1602,7 @@
       ],
       "funding_history": [
         {
-          "event_id": "EV-c3292f0a8d17ca84",
+          "event_id": "EV-81b0b4ba7a31be41",
           "date": "2026-11-25",
           "title": "我们融资1750万美元，助您和团队成为AI原生",
           "amount": "$17.5 million",
@@ -1674,7 +1674,7 @@
         }
       },
       "source_event_ids": [
-        "EV-c3292f0a8d17ca84"
+        "EV-81b0b4ba7a31be41"
       ],
       "aggregation": {
         "key": "EN-dc7c811b9561739d|series_a",
@@ -1685,73 +1685,84 @@
   ],
   "queue": [
     {
-      "event_id": "EV-c3292f0a8d17ca84",
-      "company_name": "We",
+      "event_id": "EV-81b0b4ba7a31be41",
+      "company_name": "Every",
       "status": "auto_published",
       "problems": [],
       "queries": [
         "\"We\" 2026 funding round investors",
+        "\"We\" $17.5 million funding announcement",
         "\"We\" official product customers",
         "\"We\" \"why we invested\"",
+        "\"We\" 2026 raises led by",
         "\"We\" founders headquarters product"
       ],
       "attempts": [
         {
-          "provider": "anysearch",
+          "provider": "bing_rss",
           "query": "\"We\" 2026 funding round investors",
           "status": "completed",
           "count": 8
         },
         {
-          "provider": "planner",
+          "provider": "bing_rss",
           "query": "\"We\" $17.5 million funding announcement",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
-        },
-        {
-          "provider": "anysearch",
-          "query": "\"We\" official product customers",
           "status": "completed",
-          "count": 8
+          "count": 7
         },
         {
           "provider": "original",
-          "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ",
+          "url": "https://dictionary.cambridge.org/dictionary/english/meet",
           "status": "failed",
           "reason": "original_capture_failed"
         },
         {
-          "provider": "anysearch",
+          "provider": "bing_rss",
+          "query": "\"We\" official product customers",
+          "status": "completed",
+          "count": 7
+        },
+        {
+          "provider": "bing_rss",
           "query": "\"We\" \"why we invested\"",
           "status": "completed",
           "count": 8
         },
         {
-          "provider": "original",
-          "url": "https://medium.com/tag/why-we-invested",
-          "status": "failed",
-          "reason": "original_capture_failed"
-        },
-        {
-          "provider": "planner",
+          "provider": "bing_rss",
           "query": "\"We\" 2026 raises led by",
-          "status": "skipped",
-          "reason": "accepted_originals_cover_gap"
+          "status": "completed",
+          "count": 7
         },
         {
-          "provider": "anysearch",
+          "provider": "bing_rss",
           "query": "\"We\" founders headquarters product",
           "status": "completed",
           "count": 8
         },
         {
           "provider": "original",
-          "url": "https://wefunder.com/jobs/founder-in-residence",
+          "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/test",
+          "status": "failed",
+          "reason": "original_capture_failed"
+        },
+        {
+          "provider": "original",
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/test",
           "status": "failed",
           "reason": "original_capture_failed"
         }
       ],
-      "updated_at": "2026-11-26T00:42:11.345Z"
+      "updated_at": "2026-11-26T02:55:41.935Z",
+      "identity_recovery": {
+        "original_event": "EV-c3292f0a8d17ca84",
+        "corrected_event": "EV-81b0b4ba7a31be41",
+        "source_id": "FISRC-6453236c7a2918ed",
+        "body_sha256": "b4311a87d944cb80e912c0d2c8a781fd04ab844b7226ed6dc7b6467b08139cf5",
+        "qa_repair": "MAC-af58cc5cab9c7c47",
+        "basis": "responsible exact-source identity review; existing research facts and original model provenance retained; old We queries are historical executed requests, not current company identity",
+        "financing_facts_unchanged": true
+      }
     },
     {
       "event_id": "EV-72f7f97d9e977246",
@@ -1791,7 +1802,7 @@
     },
     {
       "event_id": "EV-d8cbf20053f2afe5",
-      "company_name": "全球AI制药",
+      "company_name": "Isomorphic Labs",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -1856,7 +1867,7 @@
           "count": 8
         }
       ],
-      "updated_at": "2026-11-26T00:42:11.345Z"
+      "updated_at": "2026-11-26T02:47:00.116Z"
     },
     {
       "event_id": "EV-a151aeb22a93c5ee",
@@ -1869,7 +1880,7 @@
     },
     {
       "event_id": "EV-23218a138d7c5227",
-      "company_name": "长江词元",
+      "company_name": "湖北长江词元科技有限公司",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -1972,7 +1983,7 @@
           "count": 8
         }
       ],
-      "updated_at": "2026-11-26T00:42:11.345Z"
+      "updated_at": "2026-11-26T02:55:41.936Z"
     },
     {
       "event_id": "EV-638209012a462005",

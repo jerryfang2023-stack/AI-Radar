@@ -1,14 +1,14 @@
 {
-  "event_id": "EV-c3292f0a8d17ca84",
-  "company_name": "We",
+  "event_id": "EV-81b0b4ba7a31be41",
+  "company_name": "Every",
   "status": "auto_published",
   "card": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "funding_insight_id": "FI-21b23d7d7069a334",
-    "triggered_by_event_id": "EV-c3292f0a8d17ca84",
+    "triggered_by_event_id": "EV-81b0b4ba7a31be41",
     "as_of_date": "2026-11-26",
     "company": {
-      "entity_id": "EN-dc7c811b9561739d",
+      "entity_id": "EN-66a424a9a958b152",
       "name": "Every",
       "full_name": "Every",
       "website": "https://every.to",
@@ -49,7 +49,7 @@
           "quote_hash": "312ba54af8a07fe816202efa37a7fc80de63fbc702acc67d4f7fd9960b4fc73e"
         }
       ],
-      "application_entity_id": "EN-dc7c811b9561739d",
+      "application_entity_id": "EN-66a424a9a958b152",
       "canonical_entity_consistent": false
     },
     "financing": {
@@ -409,7 +409,7 @@
     ],
     "funding_history": [
       {
-        "event_id": "EV-c3292f0a8d17ca84",
+        "event_id": "EV-81b0b4ba7a31be41",
         "date": "2026-11-25",
         "title": "我们融资1750万美元，助您和团队成为AI原生",
         "amount": "$17.5 million",
@@ -481,7 +481,7 @@
       }
     },
     "source_event_ids": [
-      "EV-c3292f0a8d17ca84"
+      "EV-81b0b4ba7a31be41"
     ],
     "aggregation": {
       "key": "EN-dc7c811b9561739d|series_a",
@@ -550,5 +550,14 @@
       "status": "failed",
       "reason": "original_capture_failed"
     }
-  ]
+  ],
+  "identity_recovery": {
+    "original_event": "EV-c3292f0a8d17ca84",
+    "corrected_event": "EV-81b0b4ba7a31be41",
+    "source_id": "FISRC-6453236c7a2918ed",
+    "body_sha256": "b4311a87d944cb80e912c0d2c8a781fd04ab844b7226ed6dc7b6467b08139cf5",
+    "qa_repair": "MAC-af58cc5cab9c7c47",
+    "basis": "responsible exact-source identity review; existing research facts and original model provenance retained; old We queries are historical executed requests, not current company identity",
+    "financing_facts_unchanged": true
+  }
 }
