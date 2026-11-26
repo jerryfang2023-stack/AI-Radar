@@ -1589,6 +1589,29 @@ function firstPersonWireRecipient(event, entities, claims, sourceQuotes) {
   return { applicable: true, company: issuers.size === 1 && names.includes([...issuers][0]) ? candidates[0] : null };
 }
 
+
+function firstPersonSelfIdentifiedRecipient(event, entities, claims, sourceQuotes) {
+  const firstPerson = claim => /^We(?:['’]ve| have)?\s+(?:raised|secured|closed)\b/iu.test(clean(claim.source_quote));
+  if (!claims.length || !claims.every(firstPerson)) return { applicable: false };
+  if (!claims.every(claim => clauseHasEventFundingAmount(claim.source_quote, claim, event))) return { applicable: true, company: null };
+  const matches = new Map();
+  for (const entity of entities.filter(entity => (event.entities || []).includes(entity.entity_id) && entity.entity_type === "organization_candidate")) {
+    const names = [entity.canonical_name, ...(entity.aliases || [])].filter(name => !/^(?:we|us|our company)$/iu.test(clean(name)));
+    if (!claims.every(claim => names.some(name => normalizedName(name) === normalizedName(claim.subject)))) continue;
+    for (const source of sourceQuotes.map(clean)) {
+      if (!claims.every(claim => {
+        const quote = clean(claim.source_quote),at = source.indexOf(quote);
+        return at >= 0 && at === source.lastIndexOf(quote);
+      })) continue;
+      if (names.some(name => {
+        const exact = clean(name).replace(/[.*+?^\x24{}()|[\]\\]/gu, "\\$&");
+        return new RegExp("(?:^|[.!?]\\s+)That is what "+exact+" is:\\s+[^.!?]{1,200}\\bcompany\\b", "iu").test(source);
+      })) matches.set(entity.entity_id, entity);
+    }
+  }
+  return { applicable: true, company: matches.size === 1 ? [...matches.values()][0] : null };
+}
+
 function anaphoricFundingRecipient(event, entities, claims, sourceQuotes) {
   const linked = entities.filter(entity => (event.entities || []).includes(entity.entity_id)
     && entity.entity_type === "organization_candidate");
@@ -1661,6 +1684,8 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
     .filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted");
   const issuer = firstPersonWireRecipient(event, entities, acceptedFundingClaims, sourceQuotes);
   if (issuer.applicable) return issuer.company;
+  const selfIdentified = firstPersonSelfIdentifiedRecipient(event, entities, acceptedFundingClaims, sourceQuotes);
+  if (selfIdentified.applicable) return selfIdentified.company;
   // Prefer a uniquely linked company co-mentioned with this round's amount over a headline-only Claim subject.
   const quoteAnchoredCompany = canonicalSourceRecipient(
     event, entities, entityIndex, acceptedFundingClaims, sourceQuotes,

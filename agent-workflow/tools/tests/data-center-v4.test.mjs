@@ -3309,3 +3309,17 @@ test('location possessive funding headlines bind the recipient and exclude navig
  assert.deepEqual(bundle.canonical_events[0].metrics,['€2 million','$2.2 million']);
  assert.equal(bundle.entities.some(e=>e.canonical_name==='Perry AI'),true);
 });
+
+test("reviewed first-person funding repair does not retain the pronoun as a second company",()=>{
+ const funding="We raised a $17.5 million Series A at a $110 million post-money valuation.";
+ const identity="That is what Every is: a 35-person media and technology company building AI tools for teams.";
+ const body=funding+" "+identity,source=entry("every-reviewed-identity","We Raised $17.5 Million to Build AI Tools",body);
+ const candidate={...acceptedModelCandidate(source,[{event_type:"funding",subject:"Every",object:"$17.5 million Series A",evidence_index:0}],
+ [{start:0,end:funding.length,quote:funding},{start:body.indexOf(identity),end:body.length,quote:identity}]),
+ task_type:"qa_repair",source_hash:crypto.createHash("sha256").update(body).digest("hex").slice(0,16),review:{decision:"accept",reviewer:"fixture"}};
+ candidate.proposal.action="extract_claim";
+ const bundle=buildBundle([source],taxonomy,date,"2026-07-16T00:00:00Z",{modelAssist:{candidates:[candidate]}});
+ const event=bundle.canonical_events.find(e=>e.event_type==="funding");assert.ok(event);
+ const names=bundle.entities.filter(e=>event.entities.includes(e.entity_id)).map(e=>e.canonical_name);
+ assert.ok(names.includes("Every"));assert.equal(names.includes("We"),false);
+});

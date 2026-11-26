@@ -3831,3 +3831,17 @@ test("a discourse Now cannot override the named funding recipient", () => {
   const named=[{...claims[0],subject:"Now",source_quote:"Now has raised $20 million in seed funding."}];
   assert.equal(subjectCompanyForEvent({...event,display_title_zh:"Now raises $20 million"},entities,{},named).canonical_name,"Now");
 });
+
+test("first-person funding requires a linked subject and explicit same-document self-identification",()=>{
+ const quote="We raised a $17.5 million Series A at a $110 million post-money valuation.";
+ const identity="That is what Every is: a 35-person media and technology company.";
+ const every={entity_id:"EN-every",canonical_name:"Every",entity_type:"organization_candidate",aliases:[]};
+ const we={entity_id:"EN-we",canonical_name:"We",entity_type:"organization_candidate",aliases:[]};
+ const claim={claim_id:"CL-self",claim_type:"funding",verification_status:"accepted",subject:"Every",object:"$17.5 million Series A",source_quote:quote};
+ const event={event_id:"EV-self",entities:["EN-we","EN-every"],claim_refs:["CL-self"],object:"$17.5 million Series A"};
+ assert.equal(subjectCompanyForEvent(event,[we,every],{},[claim],[quote+"\n"+identity])?.entity_id,"EN-every");
+ assert.equal(subjectCompanyForEvent(event,[we,every],{},[claim],[quote]),null);
+ assert.equal(subjectCompanyForEvent(event,[we,every],{},[claim],[quote+"\n"+identity+"\n"+quote]),null);
+ assert.equal(subjectCompanyForEvent(event,[we,every],{},[{...claim,subject:"We"}],[quote+"\n"+identity]),null);
+ assert.equal(subjectCompanyForEvent(event,[we,every],{},[claim],[quote+"\nThat is what Rival is: a technology company."]),null);
+});

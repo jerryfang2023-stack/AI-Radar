@@ -109,6 +109,7 @@ test('zero public delta still supplies canonical candidates and originals for wi
   put(`01-SiteV2/content/12-applications/funding-insights/${date}.json`,{cards:[{...card('FI-research'),triggered_by_event_id:'EV-pending',publication_status:'auto_published',research_sources:[{source_id:'FISRC-abc',content_hash:'body-hash',source_url:'https://example.org/story'}]}]});
   put('evidence/catalog.jsonl','');put('evidence/funding-research/FISRC-abc.json',{content_hash:'body-hash',body_clean:'Original financing article'});
   const out=writePublicationReviewContext({checkout:root,directory:path.join(root,'review'),base,head:'head',date,evidenceRoot:path.join(root,'evidence')});
+  assert.equal(out.catalog_integrity.parse_status,'valid_json');assert.match(out.catalog_integrity.sha256,/^[a-f0-9]{64}$/u);
   assert.equal(out.delta.events.added,0);assert.deepEqual(out.required_originals,{});assert.deepEqual(out.factual_layer_delta.added,['EV-pending']);
   assert.equal(out.non_admitted_originals['EV-pending'][0].path,'funding-research/FISRC-abc.json');assert.equal(out.projection_audit.non_admitted_research[0].is_publicly_admitted,false);
   assert.ok(out.files.includes('factual-delta/EV-pending.json'));assert.ok(out.files.includes('non-admitted-research/FI-research.json'));
@@ -139,4 +140,17 @@ test('investment role audit keeps investor container separate from recipient com
  assert.equal(audit.investment_activity_lineage[0].recipient_company.name,'Perry AI');
  assert.equal(audit.investment_activity_lineage[0].role_code,'participant');
  assert.equal(Object.hasOwn(audit.investment_activity_lineage[0],'fact_approval'),false);
+});
+
+test('verification queue and selected research counts have explicit independent populations',()=>{
+ const research={cards:[],meta:{counts:{funding_events:11,auto_published:3,pending:2,deduplicated:6}}};
+ const verificationCounts={total:1040,verified:1,excluded:38,reviewed:0,pending:1001};
+ const audit=publicationProjectionAudit({cards:[],event_cards:[]},{cards:[],event_cards:[]},{research,verificationCounts});
+ assert.equal(audit.count_scopes.queue_verification.population,'queued_sources');
+ assert.deepEqual(audit.count_scopes.queue_verification.counts,verificationCounts);
+ assert.equal(audit.count_scopes.research.population,'selected_canonical_funding_events');
+ assert.equal(audit.count_scopes.research.counts.funding_events,11);
+ assert.equal(audit.count_scopes.public_catalog.population,'cumulative_public_subjects_and_rounds');
+ assert.equal(audit.count_scopes.comparable_totals,false);
+ assert.equal(Object.hasOwn(audit,'fact_approval'),false);
 });

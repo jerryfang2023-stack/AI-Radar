@@ -2325,7 +2325,9 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
         eventClaimRows.map((claim) => claim.source_quote).join("\n"),
         eventClaimRows,
         { sourceUrl: artifact.source_url, documentEvidence: bodyClean, repairedFundingIdentity: Boolean(repairedFundingIdentity) }
-      ).map((entityMatch) => {
+      ).filter((entityMatch) => !(reviewedRepair && rule.eventType === "funding"
+        && !/^we$/iu.test(parsed.subject) && /^we$/iu.test(entityMatch.canonicalName)))
+        .map((entityMatch) => {
         const reviewedName = reviewedEntityAliases.get(entityMatch.canonicalName.toLocaleLowerCase());
         return reviewedName ? { ...entityMatch, canonicalName: reviewedName, verified: true } : entityMatch;
       }).map((entityMatch) => [entityMatch.canonicalName.toLocaleLowerCase(), entityMatch])).values()];
