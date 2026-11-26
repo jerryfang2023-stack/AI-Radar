@@ -16,7 +16,7 @@ export function publicationReviewDelta(before,after) {
 }
 
 // Layer identity and complete-array counts are mechanical audit evidence, not approval.
-export function publicationProjectionAudit(before, after, {research = {}, candidates = [], institutions = []} = {}) {
+export function publicationProjectionAudit(before, after, {research = {}, candidates = [], institutions = [], verificationCounts = null} = {}) {
   const applicationId = card => card.company?.application_entity_id || card.company?.entity_id || '';
   const duplicates = (rows, key, field) => {
     const groups = new Map();
@@ -36,6 +36,13 @@ export function publicationProjectionAudit(before, after, {research = {}, candid
   const admitted = after.event_cards.filter(card=>!oldEvents.has(card.funding_insight_id) || changedIds.has(card.funding_insight_id));
   const researchCards = research.cards || [];
   return {
+    count_scopes: {
+      queue_verification: {population:'queued_sources',counts:verificationCounts},
+      research: {population:'selected_canonical_funding_events',counts:research.meta?.counts || null},
+      public_catalog: {population:'cumulative_public_subjects_and_rounds',subjects:after.cards.length,events:after.event_cards.length},
+      comparable_totals:false,
+      contract:'These populations are independently counted; different totals are expected. Reconcile each entry and disposition within its own layer. This is not factual or publication approval.'
+    },
     counts: {public_subjects:after.cards.length,public_event_cards:after.event_cards.length,
       research_stored_cards:researchCards.length,research_selected_events:research.meta?.counts?.funding_events ?? null,
       research_stage_outcomes:research.meta?.counts || null},
@@ -137,7 +144,8 @@ export function writePublicationReviewContext({checkout,directory,base,head,date
   const baseFile=path.join(directory,'base-financing-catalog.json'),fd=fs.openSync(baseFile,'w',0o600);
   let result;try {result=spawnSync('git',['show',`${base}:${catalogPath}`],{cwd:checkout,stdio:['ignore',fd,'pipe'],encoding:'utf8',windowsHide:true});}finally{fs.closeSync(fd);}
   if(result.status!==0)throw new Error('review_base_catalog_unavailable');
-  const before=JSON.parse(fs.readFileSync(baseFile,'utf8')),after=JSON.parse(fs.readFileSync(path.join(checkout,catalogPath),'utf8'));
+  const currentCatalog=fs.readFileSync(path.join(checkout,catalogPath),'utf8');
+  const before=JSON.parse(fs.readFileSync(baseFile,'utf8')),after=JSON.parse(currentCatalog);
   const delta=publicationReviewDelta(before,after),files=[];
   const emit=(name,data)=>{const file=path.join(directory,name);fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,JSON.stringify(data,null,2)+'\n',{mode:0o600});files.push(name);};
   for(const kind of ['subjects','events'])for(const status of ['added','removed','changed'])for(const row of delta[kind][status]){
@@ -162,6 +170,7 @@ export function writePublicationReviewContext({checkout,directory,base,head,date
   const funding=path.join(checkout,'01-SiteV2/content/12-applications/funding-insights');
   const projection_audit=publicationProjectionAudit(before,after,{
     research:optionalJson(path.join(funding,`${date}.json`),{}),
+    verificationCounts:publication.verification?.counts || null,
     candidates:optionalJson(path.join(funding,'entity-review-queue.json'),{}).candidates || [],
     institutions:optionalJson(path.join(checkout,'01-SiteV2/content/11-databases/investment-institutions-v1.json'),{}).institutions || []});
   const dailyPath=`01-SiteV2/content/11-databases/data-center-v4/${date}/canonical-events.json`;
@@ -189,6 +198,7 @@ export function writePublicationReviewContext({checkout,directory,base,head,date
   }
   const factual_layer_delta={file:dailyPath,added:addedFacts.map(row=>row.event_id),changed:changedFacts.map(row=>row.event_id),removed:oldFacts.filter(row=>!currentById.has(row.event_id)).map(row=>row.event_id),contract:'Raw/Claim/canonical changes are distinct from public financing admissions. Inspect factual-delta and non-admitted-research packets even with zero public delta. A withheld candidate is not an approved financing fact; any defect affecting public outputs or history still blocks.'};
   const summary={version:'FINANCING-PUBLICATION-REVIEW-CONTEXT-1',date,base_commit:base,head_commit:head,projection_audit,
+    catalog_integrity:{path:catalogPath,parse_status:'valid_json',sha256:createHash('sha256').update(currentCatalog).digest('hex'),subjects:after.cards.length,events:after.event_cards.length,contract:'The complete committed catalog was parsed; excerpts are not a serialization test. Valid JSON does not approve semantic facts.'},
     before:{subjects:before.cards.length,events:before.event_cards.length},after:{subjects:after.cards.length,events:after.event_cards.length},
     delta:Object.fromEntries(Object.entries(delta).map(([kind,rows])=>[kind,Object.fromEntries(Object.entries(rows).map(([status,items])=>[status,items.length]))])),
     files,required_originals,quote_audit,non_admitted_originals,factual_layer_delta,verification_queue_counts:publication.verification?.counts,
