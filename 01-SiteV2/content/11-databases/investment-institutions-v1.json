@@ -1,11 +1,11 @@
 {
   "meta": {
     "schema_version": "INVESTMENT-INSTITUTION-V1.0",
-    "generated_at": "2026-11-26T02:55:42.358Z",
+    "generated_at": "2026-11-27T00:41:38.550Z",
     "source_contract": "FUNDING-INSIGHT-V1.3",
-    "institution_count": 3706,
-    "evidence_backed_count": 3706,
-    "current_round_activity_count": 4983,
+    "institution_count": 3709,
+    "evidence_backed_count": 3709,
+    "current_round_activity_count": 4991,
     "individual_investor_count": 222,
     "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
   },
@@ -103784,6 +103784,498 @@
       }
     },
     {
+      "id": "INV-d94dcc7f7d25f4",
+      "name": "华映资本",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 4,
+      "historical_or_ambiguous_count": 3,
+      "portfolio_company_count": 4,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 4,
+      "china_market_company_count": 4,
+      "first_disclosed_at": "2026-07-13",
+      "latest_disclosed_at": "2026-11-26",
+      "role_counts": {
+        "co_lead": 1,
+        "historical_or_ambiguous": 3,
+        "participant": 3
+      },
+      "round_codes": [
+        "angel",
+        "multi_round",
+        "pre_series_a"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "FICO-79c0b01d7258dd9a",
+          "canonical_entity_id": "",
+          "name": "华源智因"
+        },
+        {
+          "entity_id": "EN-e22521e7de65d819",
+          "canonical_entity_id": "EN-e22521e7de65d819",
+          "name": "珞博智能"
+        },
+        {
+          "entity_id": "EN-f78336305b0bc8bc",
+          "canonical_entity_id": "",
+          "name": "晰见科技"
+        },
+        {
+          "entity_id": "EN-83dd78f287b80ce3",
+          "canonical_entity_id": "",
+          "name": "芯光界"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-0eaee20ff93fcd3e",
+          "funding_insight_id": "FI-daa4c6164af2bae5",
+          "event_ids": [
+            "EV-73b16181361a7991"
+          ],
+          "company_entity_id": "FICO-79c0b01d7258dd9a",
+          "company_canonical_entity_id": "",
+          "company_name": "华源智因",
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "超亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": 100000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 1 亿元"
+          },
+          "announced_at": "2026-11-26",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+              "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+              "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-6988ab207d5f081e",
+          "funding_insight_id": "FI-219ba35e15dc4fb9",
+          "event_ids": [
+            "EV-eb2796fc4bcc5ac0"
+          ],
+          "company_entity_id": "EN-83dd78f287b80ce3",
+          "company_canonical_entity_id": "",
+          "company_name": "芯光界",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "Pre-A轮及A轮（合并披露）",
+          "amount_original": "近10亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 10 亿元"
+          },
+          "announced_at": "2026-09-30",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-09a0a8d8826c2cfe",
+              "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+              "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+              "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+              "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
+              "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-2258260aab90c79e",
+          "funding_insight_id": "FI-cb3399f8c90eec40",
+          "event_ids": [
+            "EV-d744fd553ce68349"
+          ],
+          "company_entity_id": "EN-f78336305b0bc8bc",
+          "company_canonical_entity_id": "",
+          "company_name": "晰见科技",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "近5亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 500000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 5 亿元"
+          },
+          "announced_at": "2026-08-27",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-7ae3651fb91fc1f1",
+              "source_url": "https://news.pedaily.cn/202608/568184.shtml",
+              "source_title": "晰见科技连续完成近5亿元融资，清华类脑视觉芯片加速驶入物理AI时代",
+              "source_content_hash": "c5b71d91ca82e3f7a35c6ed1119b2c49f2be359e102c13b0b78c4ed76ac706b1",
+              "quote": "投资方包括徐汇资本等政府产业基金、华映资本和经纬创投等头部财务机构、英诺基金与水木清华等清华系资本，以及具身智能、汽车产业链龙头企业等",
+              "quote_hash": "ece0f1d926cedbeba4071e2121c06f1c98a8a61a8f9fbd0ee5f7822d56e4ddac"
+            },
+            {
+              "source_id": "FISRC-410928b8ba42b627",
+              "source_url": "https://www.cls.cn/detail/2466861",
+              "source_title": "晰见科技完成近5亿元天使轮融资",
+              "source_content_hash": "addd4b9820ad617a",
+              "quote": "本轮投资方包括徐汇科创投、经纬创投、华映资本、英诺基金、水木清华校友种子基金。",
+              "quote_hash": "98cd229dc0b6d4958d71cd002b92b03e6c5bdb23ea547745e7367ac89a867230"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-8c25a29db4f42255",
+          "funding_insight_id": "FI-fd1db2608b7fc431",
+          "event_ids": [
+            "EV-b5dd10300e34f2d3"
+          ],
+          "company_entity_id": "EN-e22521e7de65d819",
+          "company_canonical_entity_id": "EN-e22521e7de65d819",
+          "company_name": "珞博智能",
+          "round": "Pre-A轮",
+          "round_code": "pre_series_a",
+          "round_original": "Pre-A轮",
+          "amount_original": "亿元级",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 100000000,
+            "max_value": 1000000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "1 亿元–10 亿元"
+          },
+          "announced_at": "2026-07-13",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-8a995421b25ccbf7",
+              "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
+              "source_title": "珞博智能完成亿元级Pre-A轮融资，加速AI潮玩全球化布局",
+              "source_content_hash": "b3192b7c4dbd09ca7637f881c0267ff2db33b0e18c79b5c129c34233a6ef5443",
+              "quote": "本轮融资由华映资本与广和通联合领投",
+              "quote_hash": "5b4846a5d829bc8e76f19e1887636525b1114feb220e7c1c12fcadd948911d09"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-c0bdd94b0c633278",
+          "funding_insight_id": "FI-a3c129ab8eb46aa4",
+          "event_ids": [
+            "EV-d67dd793fe1f2c04"
+          ],
+          "company_entity_id": "EN-5f03b37d8cca57e1",
+          "company_canonical_entity_id": "EN-5f03b37d8cca57e1",
+          "company_name": "灵御智能",
+          "round": "历史轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "",
+          "amount_original": "",
+          "amount_normalized": null,
+          "announced_at": "",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "unknown",
+          "scope": "historical_or_ambiguous",
+          "role": "过往投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-1ff3ce30945e8f13",
+              "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprivs1014861.shtml",
+              "source_title": "「灵御智能」完成数亿元Pre-A轮融资 - 新浪财经",
+              "source_content_hash": "7d6a41ce0da829ca",
+              "quote": "过往投资方包括英诺基金、华映资本、银河创新资本、福田资本、力合创投、天鹰资本等",
+              "quote_hash": "3c24d6c3b8556c87bf74fabda332ef2b72b1906a983c34fb1b6b0c0d5f73db1d"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-38ebd97375e88665",
+          "funding_insight_id": "FI-9c8b829633ef0aea",
+          "event_ids": [
+            "EV-b0e0458e4ae40f66"
+          ],
+          "company_entity_id": "EN-5f03b37d8cca57e1",
+          "company_canonical_entity_id": "EN-5f03b37d8cca57e1",
+          "company_name": "灵御智能",
+          "round": "历史轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "",
+          "amount_original": "",
+          "amount_normalized": null,
+          "announced_at": "",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "unknown",
+          "scope": "historical_or_ambiguous",
+          "role": "种子+轮领投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-57aa18abc9964b6e",
+              "source_url": "https://www.163.com/dy/article/K8KEAAD105198R3E.html",
+              "source_title": "「灵御智能」获千万元级种子+轮融资，华映资本领投|智元机器人_网易订阅",
+              "source_content_hash": "7fb543b9712ad8c7",
+              "quote": "本轮融资由 华映资本 领投，老股东 英诺天使基金、水木清华校友种子基金、远镜创投 跟投。",
+              "quote_hash": "b17d1dacb1b8aa93de1cdef202377cbffee56a43fe1ad5311b859a8b5c4a2083"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-0de47b46535f5093",
+          "funding_insight_id": "FI-e9bdd4e9374b04ca",
+          "event_ids": [
+            "EV-41c54c428d84cc1e",
+            "EV-26439e34295a0519",
+            "EV-cec68369662236fd"
+          ],
+          "company_entity_id": "EN-8dc72a4672894e0f",
+          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+          "company_name": "自变量机器人",
+          "round": "历史轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "",
+          "amount_original": "",
+          "amount_normalized": null,
+          "announced_at": "",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "unknown",
+          "scope": "historical_or_ambiguous",
+          "role": "Pre-A+++轮领投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-449b969616ed1e95",
+              "source_url": "https://www.36kr.com/p/3636080421586182",
+              "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+              "source_content_hash": "abef77aff9b6b68f",
+              "quote": "在A轮之前，自变量还完成了 数亿元Pre-A+++轮 融资，由华映资本领投，云启资本、广发信德跟投。",
+              "quote_hash": "696d54613d642ed72622bb0ecc6918c4beef4c84998cac17f6b55c54db768c33"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e66ee18a4916bc74",
+          "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+          "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+          "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+          "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+          "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+        },
+        {
+          "source_id": "FISRC-09a0a8d8826c2cfe",
+          "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+          "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+          "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+          "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
+          "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
+        },
+        {
+          "source_id": "FISRC-7ae3651fb91fc1f1",
+          "source_url": "https://news.pedaily.cn/202608/568184.shtml",
+          "source_title": "晰见科技连续完成近5亿元融资，清华类脑视觉芯片加速驶入物理AI时代",
+          "source_content_hash": "c5b71d91ca82e3f7a35c6ed1119b2c49f2be359e102c13b0b78c4ed76ac706b1",
+          "quote": "投资方包括徐汇资本等政府产业基金、华映资本和经纬创投等头部财务机构、英诺基金与水木清华等清华系资本，以及具身智能、汽车产业链龙头企业等",
+          "quote_hash": "ece0f1d926cedbeba4071e2121c06f1c98a8a61a8f9fbd0ee5f7822d56e4ddac"
+        },
+        {
+          "source_id": "FISRC-410928b8ba42b627",
+          "source_url": "https://www.cls.cn/detail/2466861",
+          "source_title": "晰见科技完成近5亿元天使轮融资",
+          "source_content_hash": "addd4b9820ad617a",
+          "quote": "本轮投资方包括徐汇科创投、经纬创投、华映资本、英诺基金、水木清华校友种子基金。",
+          "quote_hash": "98cd229dc0b6d4958d71cd002b92b03e6c5bdb23ea547745e7367ac89a867230"
+        },
+        {
+          "source_id": "FISRC-8a995421b25ccbf7",
+          "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
+          "source_title": "珞博智能完成亿元级Pre-A轮融资，加速AI潮玩全球化布局",
+          "source_content_hash": "b3192b7c4dbd09ca7637f881c0267ff2db33b0e18c79b5c129c34233a6ef5443",
+          "quote": "本轮融资由华映资本与广和通联合领投",
+          "quote_hash": "5b4846a5d829bc8e76f19e1887636525b1114feb220e7c1c12fcadd948911d09"
+        },
+        {
+          "source_id": "FISRC-1ff3ce30945e8f13",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprivs1014861.shtml",
+          "source_title": "「灵御智能」完成数亿元Pre-A轮融资 - 新浪财经",
+          "source_content_hash": "7d6a41ce0da829ca",
+          "quote": "过往投资方包括英诺基金、华映资本、银河创新资本、福田资本、力合创投、天鹰资本等",
+          "quote_hash": "3c24d6c3b8556c87bf74fabda332ef2b72b1906a983c34fb1b6b0c0d5f73db1d"
+        },
+        {
+          "source_id": "FISRC-57aa18abc9964b6e",
+          "source_url": "https://www.163.com/dy/article/K8KEAAD105198R3E.html",
+          "source_title": "「灵御智能」获千万元级种子+轮融资，华映资本领投|智元机器人_网易订阅",
+          "source_content_hash": "7fb543b9712ad8c7",
+          "quote": "本轮融资由 华映资本 领投，老股东 英诺天使基金、水木清华校友种子基金、远镜创投 跟投。",
+          "quote_hash": "b17d1dacb1b8aa93de1cdef202377cbffee56a43fe1ad5311b859a8b5c4a2083"
+        },
+        {
+          "source_id": "FISRC-449b969616ed1e95",
+          "source_url": "https://www.36kr.com/p/3636080421586182",
+          "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+          "source_content_hash": "abef77aff9b6b68f",
+          "quote": "在A轮之前，自变量还完成了 数亿元Pre-A+++轮 融资，由华映资本领投，云启资本、广发信德跟投。",
+          "quote_hash": "696d54613d642ed72622bb0ecc6918c4beef4c84998cac17f6b55c54db768c33"
+        }
+      ],
+      "public_profile": {
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "华映资本的投资披露来自投中网；管理人名称、登记类型和关联管理人来自中国证券投资基金业协会，该页所列机构信息最后更新时间为 2025-03-06。关联管理人信息不能单独证明某次融资由哪一基金或法律实体出资。",
+        "summary": "公开融资披露以“华映资本”名义将其列为机构投资方。中国证券投资基金业协会登记页记录苏州华映资本管理有限公司为私募股权、创业投资基金管理人，并列出华映资本管理有限公司为关联管理人。本档保留披露名称与登记信息，不把某一关联管理实体等同于每次融资的具体出资载体。",
+        "facts": [
+          {
+            "field": "registered_manager",
+            "label": "协会登记主体",
+            "value": "苏州华映资本管理有限公司；协会登记编号 P1005700。",
+            "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-1"
+          },
+          {
+            "field": "manager_type",
+            "label": "协会登记类型",
+            "value": "私募股权、创业投资基金管理人。",
+            "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-2"
+          },
+          {
+            "field": "affiliated_manager",
+            "label": "关联私募管理人",
+            "value": "协会页面将华映资本管理有限公司（P1001311）列为关联私募基金管理人。",
+            "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-3"
+          }
+        ],
+        "milestones": [],
+        "track_record": [
+          {
+            "description": "融资来源记录：华源智因 · 天使轮 · 2026-11-26 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-e66ee18a4916bc74"
+          },
+          {
+            "description": "融资来源记录：芯光界 · 多轮融资 · 2026-09-30 · 本轮参投 · 近10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-09a0a8d8826c2cfe"
+          },
+          {
+            "description": "融资来源记录：晰见科技 · 多轮融资 · 2026-08-27 · 本轮参投 · 近5亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-7ae3651fb91fc1f1"
+          }
+        ],
+        "contacts": [],
+        "sources": [
+          {
+            "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-1",
+            "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000007358.html",
+            "source_title": "私募基金管理人公示 - 中国基金业协会",
+            "source_content_hash": "d611f99964ebdc5d17a5d5494ea24a2fea4250561f3aab8f0d2e1e7ecaecf832",
+            "quote": "基金管理人全称(中文) 苏州华映资本管理有限公司 苏州华映资本管理有限公司 投诉 举报 基金管理人全称(英文) Su Zhou Meridian Capital Managerment Co.,Ltd 登记编号 P1005700",
+            "quote_hash": "5dfb61b2515246dad565a95e14fcc0893bd7ede8b85daaa5c65c3228b531f6c3"
+          },
+          {
+            "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-2",
+            "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000007358.html",
+            "source_title": "私募基金管理人公示 - 中国基金业协会",
+            "source_content_hash": "d611f99964ebdc5d17a5d5494ea24a2fea4250561f3aab8f0d2e1e7ecaecf832",
+            "quote": "机构类型 私募股权、创业投资基金管理人",
+            "quote_hash": "cc3fffa181afbab9a35403aae0116e7fda015b2665e223697474e90cbcb14fb4"
+          },
+          {
+            "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-3",
+            "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000007358.html",
+            "source_title": "私募基金管理人公示 - 中国基金业协会",
+            "source_content_hash": "d611f99964ebdc5d17a5d5494ea24a2fea4250561f3aab8f0d2e1e7ecaecf832",
+            "quote": "3 私募股权、创业投资基金管理人 华映资本管理有限公司 P1001311 91320581072762522J",
+            "quote_hash": "0556d3a49590570c0565776fd14bbb8ed290b69715355095cb6911f656c2ea3a"
+          },
+          {
+            "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-4",
+            "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+            "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿 | 投中网",
+            "source_content_hash": "a1fa7cec1c9f7c2a59cbe5ad258bce1d31de0cea3c1d39874e34347950bbc777",
+            "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本",
+            "quote_hash": "0450d404b7d4986faea8c1e25c09c9c9cae769c488fb05dd3b569c25f40e30b0"
+          },
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+            "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+            "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+            "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+            "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+          },
+          {
+            "source_id": "FISRC-09a0a8d8826c2cfe",
+            "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+            "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+            "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+            "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
+            "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
+          },
+          {
+            "source_id": "FISRC-7ae3651fb91fc1f1",
+            "source_url": "https://news.pedaily.cn/202608/568184.shtml",
+            "source_title": "晰见科技连续完成近5亿元融资，清华类脑视觉芯片加速驶入物理AI时代",
+            "source_content_hash": "c5b71d91ca82e3f7a35c6ed1119b2c49f2be359e102c13b0b78c4ed76ac706b1",
+            "quote": "投资方包括徐汇资本等政府产业基金、华映资本和经纬创投等头部财务机构、英诺基金与水木清华等清华系资本，以及具身智能、汽车产业链龙头企业等",
+            "quote_hash": "ece0f1d926cedbeba4071e2121c06f1c98a8a61a8f9fbd0ee5f7822d56e4ddac"
+          }
+        ],
+        "last_verified_at": "2026-10-04",
+        "current_roles": [],
+        "career": [],
+        "education": [],
+        "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
+      }
+    },
+    {
       "id": "INV-f5ed35eb301852",
       "name": "Emergence Capital",
       "aliases": [],
@@ -155848,440 +156340,6 @@
       }
     },
     {
-      "id": "INV-d94dcc7f7d25f4",
-      "name": "华映资本",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 3,
-      "historical_or_ambiguous_count": 3,
-      "portfolio_company_count": 3,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 3,
-      "china_market_company_count": 3,
-      "first_disclosed_at": "2026-07-13",
-      "latest_disclosed_at": "2026-09-30",
-      "role_counts": {
-        "co_lead": 1,
-        "historical_or_ambiguous": 3,
-        "participant": 2
-      },
-      "round_codes": [
-        "multi_round",
-        "pre_series_a"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-e22521e7de65d819",
-          "canonical_entity_id": "EN-e22521e7de65d819",
-          "name": "珞博智能"
-        },
-        {
-          "entity_id": "EN-f78336305b0bc8bc",
-          "canonical_entity_id": "",
-          "name": "晰见科技"
-        },
-        {
-          "entity_id": "EN-83dd78f287b80ce3",
-          "canonical_entity_id": "",
-          "name": "芯光界"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-6988ab207d5f081e",
-          "funding_insight_id": "FI-219ba35e15dc4fb9",
-          "event_ids": [
-            "EV-eb2796fc4bcc5ac0"
-          ],
-          "company_entity_id": "EN-83dd78f287b80ce3",
-          "company_canonical_entity_id": "",
-          "company_name": "芯光界",
-          "round": "多轮融资",
-          "round_code": "multi_round",
-          "round_original": "Pre-A轮及A轮（合并披露）",
-          "amount_original": "近10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 10 亿元"
-          },
-          "announced_at": "2026-09-30",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-09a0a8d8826c2cfe",
-              "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
-              "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
-              "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
-              "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
-              "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-2258260aab90c79e",
-          "funding_insight_id": "FI-cb3399f8c90eec40",
-          "event_ids": [
-            "EV-d744fd553ce68349"
-          ],
-          "company_entity_id": "EN-f78336305b0bc8bc",
-          "company_canonical_entity_id": "",
-          "company_name": "晰见科技",
-          "round": "多轮融资",
-          "round_code": "multi_round",
-          "round_original": "多轮融资",
-          "amount_original": "近5亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 500000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 5 亿元"
-          },
-          "announced_at": "2026-08-27",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-7ae3651fb91fc1f1",
-              "source_url": "https://news.pedaily.cn/202608/568184.shtml",
-              "source_title": "晰见科技连续完成近5亿元融资，清华类脑视觉芯片加速驶入物理AI时代",
-              "source_content_hash": "c5b71d91ca82e3f7a35c6ed1119b2c49f2be359e102c13b0b78c4ed76ac706b1",
-              "quote": "投资方包括徐汇资本等政府产业基金、华映资本和经纬创投等头部财务机构、英诺基金与水木清华等清华系资本，以及具身智能、汽车产业链龙头企业等",
-              "quote_hash": "ece0f1d926cedbeba4071e2121c06f1c98a8a61a8f9fbd0ee5f7822d56e4ddac"
-            },
-            {
-              "source_id": "FISRC-410928b8ba42b627",
-              "source_url": "https://www.cls.cn/detail/2466861",
-              "source_title": "晰见科技完成近5亿元天使轮融资",
-              "source_content_hash": "addd4b9820ad617a",
-              "quote": "本轮投资方包括徐汇科创投、经纬创投、华映资本、英诺基金、水木清华校友种子基金。",
-              "quote_hash": "98cd229dc0b6d4958d71cd002b92b03e6c5bdb23ea547745e7367ac89a867230"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-8c25a29db4f42255",
-          "funding_insight_id": "FI-fd1db2608b7fc431",
-          "event_ids": [
-            "EV-b5dd10300e34f2d3"
-          ],
-          "company_entity_id": "EN-e22521e7de65d819",
-          "company_canonical_entity_id": "EN-e22521e7de65d819",
-          "company_name": "珞博智能",
-          "round": "Pre-A轮",
-          "round_code": "pre_series_a",
-          "round_original": "Pre-A轮",
-          "amount_original": "亿元级",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 100000000,
-            "max_value": 1000000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "1 亿元–10 亿元"
-          },
-          "announced_at": "2026-07-13",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-8a995421b25ccbf7",
-              "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
-              "source_title": "珞博智能完成亿元级Pre-A轮融资，加速AI潮玩全球化布局",
-              "source_content_hash": "b3192b7c4dbd09ca7637f881c0267ff2db33b0e18c79b5c129c34233a6ef5443",
-              "quote": "本轮融资由华映资本与广和通联合领投",
-              "quote_hash": "5b4846a5d829bc8e76f19e1887636525b1114feb220e7c1c12fcadd948911d09"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-c0bdd94b0c633278",
-          "funding_insight_id": "FI-a3c129ab8eb46aa4",
-          "event_ids": [
-            "EV-d67dd793fe1f2c04"
-          ],
-          "company_entity_id": "EN-5f03b37d8cca57e1",
-          "company_canonical_entity_id": "EN-5f03b37d8cca57e1",
-          "company_name": "灵御智能",
-          "round": "历史轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "",
-          "amount_original": "",
-          "amount_normalized": null,
-          "announced_at": "",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "unknown",
-          "scope": "historical_or_ambiguous",
-          "role": "过往投资方",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-1ff3ce30945e8f13",
-              "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprivs1014861.shtml",
-              "source_title": "「灵御智能」完成数亿元Pre-A轮融资 - 新浪财经",
-              "source_content_hash": "7d6a41ce0da829ca",
-              "quote": "过往投资方包括英诺基金、华映资本、银河创新资本、福田资本、力合创投、天鹰资本等",
-              "quote_hash": "3c24d6c3b8556c87bf74fabda332ef2b72b1906a983c34fb1b6b0c0d5f73db1d"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-38ebd97375e88665",
-          "funding_insight_id": "FI-9c8b829633ef0aea",
-          "event_ids": [
-            "EV-b0e0458e4ae40f66"
-          ],
-          "company_entity_id": "EN-5f03b37d8cca57e1",
-          "company_canonical_entity_id": "EN-5f03b37d8cca57e1",
-          "company_name": "灵御智能",
-          "round": "历史轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "",
-          "amount_original": "",
-          "amount_normalized": null,
-          "announced_at": "",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "unknown",
-          "scope": "historical_or_ambiguous",
-          "role": "种子+轮领投",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-57aa18abc9964b6e",
-              "source_url": "https://www.163.com/dy/article/K8KEAAD105198R3E.html",
-              "source_title": "「灵御智能」获千万元级种子+轮融资，华映资本领投|智元机器人_网易订阅",
-              "source_content_hash": "7fb543b9712ad8c7",
-              "quote": "本轮融资由 华映资本 领投，老股东 英诺天使基金、水木清华校友种子基金、远镜创投 跟投。",
-              "quote_hash": "b17d1dacb1b8aa93de1cdef202377cbffee56a43fe1ad5311b859a8b5c4a2083"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-0de47b46535f5093",
-          "funding_insight_id": "FI-e9bdd4e9374b04ca",
-          "event_ids": [
-            "EV-41c54c428d84cc1e",
-            "EV-26439e34295a0519",
-            "EV-cec68369662236fd"
-          ],
-          "company_entity_id": "EN-8dc72a4672894e0f",
-          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-          "company_name": "自变量机器人",
-          "round": "历史轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "",
-          "amount_original": "",
-          "amount_normalized": null,
-          "announced_at": "",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "unknown",
-          "scope": "historical_or_ambiguous",
-          "role": "Pre-A+++轮领投",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-449b969616ed1e95",
-              "source_url": "https://www.36kr.com/p/3636080421586182",
-              "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
-              "source_content_hash": "abef77aff9b6b68f",
-              "quote": "在A轮之前，自变量还完成了 数亿元Pre-A+++轮 融资，由华映资本领投，云启资本、广发信德跟投。",
-              "quote_hash": "696d54613d642ed72622bb0ecc6918c4beef4c84998cac17f6b55c54db768c33"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-09a0a8d8826c2cfe",
-          "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
-          "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
-          "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
-          "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
-          "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
-        },
-        {
-          "source_id": "FISRC-7ae3651fb91fc1f1",
-          "source_url": "https://news.pedaily.cn/202608/568184.shtml",
-          "source_title": "晰见科技连续完成近5亿元融资，清华类脑视觉芯片加速驶入物理AI时代",
-          "source_content_hash": "c5b71d91ca82e3f7a35c6ed1119b2c49f2be359e102c13b0b78c4ed76ac706b1",
-          "quote": "投资方包括徐汇资本等政府产业基金、华映资本和经纬创投等头部财务机构、英诺基金与水木清华等清华系资本，以及具身智能、汽车产业链龙头企业等",
-          "quote_hash": "ece0f1d926cedbeba4071e2121c06f1c98a8a61a8f9fbd0ee5f7822d56e4ddac"
-        },
-        {
-          "source_id": "FISRC-410928b8ba42b627",
-          "source_url": "https://www.cls.cn/detail/2466861",
-          "source_title": "晰见科技完成近5亿元天使轮融资",
-          "source_content_hash": "addd4b9820ad617a",
-          "quote": "本轮投资方包括徐汇科创投、经纬创投、华映资本、英诺基金、水木清华校友种子基金。",
-          "quote_hash": "98cd229dc0b6d4958d71cd002b92b03e6c5bdb23ea547745e7367ac89a867230"
-        },
-        {
-          "source_id": "FISRC-8a995421b25ccbf7",
-          "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
-          "source_title": "珞博智能完成亿元级Pre-A轮融资，加速AI潮玩全球化布局",
-          "source_content_hash": "b3192b7c4dbd09ca7637f881c0267ff2db33b0e18c79b5c129c34233a6ef5443",
-          "quote": "本轮融资由华映资本与广和通联合领投",
-          "quote_hash": "5b4846a5d829bc8e76f19e1887636525b1114feb220e7c1c12fcadd948911d09"
-        },
-        {
-          "source_id": "FISRC-1ff3ce30945e8f13",
-          "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprivs1014861.shtml",
-          "source_title": "「灵御智能」完成数亿元Pre-A轮融资 - 新浪财经",
-          "source_content_hash": "7d6a41ce0da829ca",
-          "quote": "过往投资方包括英诺基金、华映资本、银河创新资本、福田资本、力合创投、天鹰资本等",
-          "quote_hash": "3c24d6c3b8556c87bf74fabda332ef2b72b1906a983c34fb1b6b0c0d5f73db1d"
-        },
-        {
-          "source_id": "FISRC-57aa18abc9964b6e",
-          "source_url": "https://www.163.com/dy/article/K8KEAAD105198R3E.html",
-          "source_title": "「灵御智能」获千万元级种子+轮融资，华映资本领投|智元机器人_网易订阅",
-          "source_content_hash": "7fb543b9712ad8c7",
-          "quote": "本轮融资由 华映资本 领投，老股东 英诺天使基金、水木清华校友种子基金、远镜创投 跟投。",
-          "quote_hash": "b17d1dacb1b8aa93de1cdef202377cbffee56a43fe1ad5311b859a8b5c4a2083"
-        },
-        {
-          "source_id": "FISRC-449b969616ed1e95",
-          "source_url": "https://www.36kr.com/p/3636080421586182",
-          "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
-          "source_content_hash": "abef77aff9b6b68f",
-          "quote": "在A轮之前，自变量还完成了 数亿元Pre-A+++轮 融资，由华映资本领投，云启资本、广发信德跟投。",
-          "quote_hash": "696d54613d642ed72622bb0ecc6918c4beef4c84998cac17f6b55c54db768c33"
-        }
-      ],
-      "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "researched",
-        "coverage_note": "华映资本的投资披露来自投中网；管理人名称、登记类型和关联管理人来自中国证券投资基金业协会，该页所列机构信息最后更新时间为 2025-03-06。关联管理人信息不能单独证明某次融资由哪一基金或法律实体出资。",
-        "summary": "公开融资披露以“华映资本”名义将其列为机构投资方。中国证券投资基金业协会登记页记录苏州华映资本管理有限公司为私募股权、创业投资基金管理人，并列出华映资本管理有限公司为关联管理人。本档保留披露名称与登记信息，不把某一关联管理实体等同于每次融资的具体出资载体。",
-        "facts": [
-          {
-            "field": "registered_manager",
-            "label": "协会登记主体",
-            "value": "苏州华映资本管理有限公司；协会登记编号 P1005700。",
-            "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-1"
-          },
-          {
-            "field": "manager_type",
-            "label": "协会登记类型",
-            "value": "私募股权、创业投资基金管理人。",
-            "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-2"
-          },
-          {
-            "field": "affiliated_manager",
-            "label": "关联私募管理人",
-            "value": "协会页面将华映资本管理有限公司（P1001311）列为关联私募基金管理人。",
-            "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-3"
-          }
-        ],
-        "milestones": [],
-        "track_record": [
-          {
-            "description": "融资来源记录：芯光界 · 多轮融资 · 2026-09-30 · 本轮参投 · 近10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-09a0a8d8826c2cfe"
-          },
-          {
-            "description": "融资来源记录：晰见科技 · 多轮融资 · 2026-08-27 · 本轮参投 · 近5亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-7ae3651fb91fc1f1"
-          }
-        ],
-        "contacts": [],
-        "sources": [
-          {
-            "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-1",
-            "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000007358.html",
-            "source_title": "私募基金管理人公示 - 中国基金业协会",
-            "source_content_hash": "d611f99964ebdc5d17a5d5494ea24a2fea4250561f3aab8f0d2e1e7ecaecf832",
-            "quote": "基金管理人全称(中文) 苏州华映资本管理有限公司 苏州华映资本管理有限公司 投诉 举报 基金管理人全称(英文) Su Zhou Meridian Capital Managerment Co.,Ltd 登记编号 P1005700",
-            "quote_hash": "5dfb61b2515246dad565a95e14fcc0893bd7ede8b85daaa5c65c3228b531f6c3"
-          },
-          {
-            "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-2",
-            "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000007358.html",
-            "source_title": "私募基金管理人公示 - 中国基金业协会",
-            "source_content_hash": "d611f99964ebdc5d17a5d5494ea24a2fea4250561f3aab8f0d2e1e7ecaecf832",
-            "quote": "机构类型 私募股权、创业投资基金管理人",
-            "quote_hash": "cc3fffa181afbab9a35403aae0116e7fda015b2665e223697474e90cbcb14fb4"
-          },
-          {
-            "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-3",
-            "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000007358.html",
-            "source_title": "私募基金管理人公示 - 中国基金业协会",
-            "source_content_hash": "d611f99964ebdc5d17a5d5494ea24a2fea4250561f3aab8f0d2e1e7ecaecf832",
-            "quote": "3 私募股权、创业投资基金管理人 华映资本管理有限公司 P1001311 91320581072762522J",
-            "quote_hash": "0556d3a49590570c0565776fd14bbb8ed290b69715355095cb6911f656c2ea3a"
-          },
-          {
-            "source_id": "PROFILE-COLLECT-INV-d94dcc7f7d25f4-4",
-            "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
-            "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿 | 投中网",
-            "source_content_hash": "a1fa7cec1c9f7c2a59cbe5ad258bce1d31de0cea3c1d39874e34347950bbc777",
-            "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本",
-            "quote_hash": "0450d404b7d4986faea8c1e25c09c9c9cae769c488fb05dd3b569c25f40e30b0"
-          },
-          {
-            "source_id": "FISRC-09a0a8d8826c2cfe",
-            "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
-            "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
-            "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
-            "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
-            "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
-          },
-          {
-            "source_id": "FISRC-7ae3651fb91fc1f1",
-            "source_url": "https://news.pedaily.cn/202608/568184.shtml",
-            "source_title": "晰见科技连续完成近5亿元融资，清华类脑视觉芯片加速驶入物理AI时代",
-            "source_content_hash": "c5b71d91ca82e3f7a35c6ed1119b2c49f2be359e102c13b0b78c4ed76ac706b1",
-            "quote": "投资方包括徐汇资本等政府产业基金、华映资本和经纬创投等头部财务机构、英诺基金与水木清华等清华系资本，以及具身智能、汽车产业链龙头企业等",
-            "quote_hash": "ece0f1d926cedbeba4071e2121c06f1c98a8a61a8f9fbd0ee5f7822d56e4ddac"
-          },
-          {
-            "source_id": "FISRC-410928b8ba42b627",
-            "source_url": "https://www.cls.cn/detail/2466861",
-            "source_title": "晰见科技完成近5亿元天使轮融资",
-            "source_content_hash": "addd4b9820ad617a",
-            "quote": "本轮投资方包括徐汇科创投、经纬创投、华映资本、英诺基金、水木清华校友种子基金。",
-            "quote_hash": "98cd229dc0b6d4958d71cd002b92b03e6c5bdb23ea547745e7367ac89a867230"
-          }
-        ],
-        "last_verified_at": "2026-10-04",
-        "current_roles": [],
-        "career": [],
-        "education": [],
-        "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
-      }
-    },
-    {
       "id": "INV-cf653bc36bca53",
       "name": "松禾资本",
       "aliases": [],
@@ -181742,6 +181800,762 @@
           }
         ],
         "last_verified_at": "2026-09-25"
+      }
+    },
+    {
+      "id": "INV-4e5810f629f8b6",
+      "name": "梅花创投",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 2,
+      "portfolio_company_count": 2,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 2,
+      "china_market_company_count": 2,
+      "first_disclosed_at": "2026-05-08",
+      "latest_disclosed_at": "2026-11-26",
+      "role_counts": {
+        "historical_or_ambiguous": 2,
+        "participant": 2
+      },
+      "round_codes": [
+        "angel"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "FICO-79c0b01d7258dd9a",
+          "canonical_entity_id": "",
+          "name": "华源智因"
+        },
+        {
+          "entity_id": "EN-cecdd8369134f75e",
+          "canonical_entity_id": "EN-cecdd8369134f75e",
+          "name": "容芯致远"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-e9e96263e769b194",
+          "funding_insight_id": "FI-daa4c6164af2bae5",
+          "event_ids": [
+            "EV-73b16181361a7991"
+          ],
+          "company_entity_id": "FICO-79c0b01d7258dd9a",
+          "company_canonical_entity_id": "",
+          "company_name": "华源智因",
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "超亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": 100000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 1 亿元"
+          },
+          "announced_at": "2026-11-26",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+              "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+              "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-6ace5393952b594f",
+          "funding_insight_id": "FI-f15f358f13811b9e",
+          "event_ids": [
+            "EV-44ec7c229995ca3c"
+          ],
+          "company_entity_id": "EN-cecdd8369134f75e",
+          "company_canonical_entity_id": "EN-cecdd8369134f75e",
+          "company_name": "容芯致远",
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-05-08",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-ceee1629da3e3cce",
+              "source_url": "https://news.pedaily.cn/202605/563553.shtml",
+              "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
+              "source_content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
+              "quote": "顺禧基金、富华资本、万利达集团、长江创新投、水木清华校友基金、梅花创投等跟投",
+              "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-40353ecdb8765ea9",
+          "funding_insight_id": "FI-de5c9a8f3d3cc54a",
+          "event_ids": [
+            "EV-6928501584326746"
+          ],
+          "company_entity_id": "EN-bcfc3b314fa4ede5",
+          "company_canonical_entity_id": "EN-bcfc3b314fa4ede5",
+          "company_name": "华清未央",
+          "round": "历史轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "",
+          "amount_original": "",
+          "amount_normalized": null,
+          "announced_at": "",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "unknown",
+          "scope": "historical_or_ambiguous",
+          "role": "天使轮投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-cab683d0c710d8ea",
+              "source_url": "https://www.163.com/dy/article/JBOG2NHD051984TV.html",
+              "source_title": "华清未央公布天使轮融资，投资方为梅花创投_网易订阅",
+              "source_content_hash": "4b1173ba5b387864",
+              "quote": "华清未央（北京）科技有限公司公布天使轮融资，融资额未披露，参与投资的机构包括梅花创投。",
+              "quote_hash": "5d024da99262ac25c17992bda2aaf82ac1f7c053bba1bf2ec958116d9e9dc696"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-3d5cfb0a66c72d92",
+          "funding_insight_id": "FI-3e97f5e30e99ff0b",
+          "event_ids": [
+            "EV-cbec329253108e80"
+          ],
+          "company_entity_id": "EN-ee2dce6ecf9a1bab",
+          "company_canonical_entity_id": "EN-ee2dce6ecf9a1bab",
+          "company_name": "深朴智能",
+          "round": "历史轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "",
+          "amount_original": "",
+          "amount_normalized": null,
+          "announced_at": "",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "unknown",
+          "scope": "historical_or_ambiguous",
+          "role": "Pre-A轮跟投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-3bc1b2f58c3d4a86",
+              "source_url": "https://news.pedaily.cn/202606/565268.shtml",
+              "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
+              "source_content_hash": "892b3be292e8e3e6",
+              "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
+              "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e66ee18a4916bc74",
+          "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+          "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+          "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+          "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+          "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+        },
+        {
+          "source_id": "FISRC-ceee1629da3e3cce",
+          "source_url": "https://news.pedaily.cn/202605/563553.shtml",
+          "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
+          "source_content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
+          "quote": "顺禧基金、富华资本、万利达集团、长江创新投、水木清华校友基金、梅花创投等跟投",
+          "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
+        },
+        {
+          "source_id": "FISRC-cab683d0c710d8ea",
+          "source_url": "https://www.163.com/dy/article/JBOG2NHD051984TV.html",
+          "source_title": "华清未央公布天使轮融资，投资方为梅花创投_网易订阅",
+          "source_content_hash": "4b1173ba5b387864",
+          "quote": "华清未央（北京）科技有限公司公布天使轮融资，融资额未披露，参与投资的机构包括梅花创投。",
+          "quote_hash": "5d024da99262ac25c17992bda2aaf82ac1f7c053bba1bf2ec958116d9e9dc696"
+        },
+        {
+          "source_id": "FISRC-3bc1b2f58c3d4a86",
+          "source_url": "https://news.pedaily.cn/202606/565268.shtml",
+          "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
+          "source_content_hash": "892b3be292e8e3e6",
+          "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
+          "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
+        }
+      ],
+      "public_profile": {
+        "profile_type": "organization",
+        "summary": "梅花创投是一家2014年成立的早期投资机构。官网披露其重点布局新能源、半导体、军工、数字化、智能制造和商业航天，并公布人民币基金、美元基金、组合企业和上市数量等规模信息；这些为机构自述，未等同于基金回报。",
+        "facts": [
+          {
+            "field": "founded",
+            "label": "成立时间",
+            "value": "2014年。",
+            "source_id": "plum_home"
+          },
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "早期投资。",
+            "source_id": "plum_home"
+          },
+          {
+            "field": "investment_focus",
+            "label": "投资方向",
+            "value": "新能源、半导体、军工、数字化、智能制造、商业航天。",
+            "source_id": "plum_home"
+          },
+          {
+            "field": "reported_fund_size",
+            "label": "官网披露管理基金规模",
+            "value": "约100亿元人民币基金和1亿美元基金；官网未为该规模标注统计日期。",
+            "source_id": "plum_home"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2014",
+            "description": "梅花创投成立。",
+            "source_id": "plum_home"
+          }
+        ],
+        "current_roles": [],
+        "career": [],
+        "education": [],
+        "experience_summary": "官网提供投后融资、媒体、法务财税、招聘和资源对接等服务说明；机构组合数量和上市数为官网自述的业务概况。",
+        "track_record": [
+          {
+            "description": "官网称覆盖企业600余家、携手13家企业完成上市；页面未标统计日期，不能据此推断收益率或完整退出倍数。",
+            "source_id": "plum_home"
+          },
+          {
+            "description": "融资来源记录：华源智因 · 天使轮 · 2026-11-26 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-e66ee18a4916bc74"
+          },
+          {
+            "description": "融资来源记录：容芯致远 · 天使轮 · 2026-05-08 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-ceee1629da3e3cce"
+          },
+          {
+            "description": "融资来源记录：华清未央 · 历史轮次未披露 · 天使轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-cab683d0c710d8ea"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "梅花创投",
+            "url": "https://www.plumventures.cn/",
+            "source_id": "plum_home"
+          },
+          {
+            "kind": "email",
+            "label": "商业计划书投递",
+            "value": "BP@plumventures.cn",
+            "url": "https://www.plumventures.cn/",
+            "source_id": "plum_home"
+          },
+          {
+            "kind": "email",
+            "label": "媒体合作",
+            "value": "hsy@plumventures.cn",
+            "url": "https://www.plumventures.cn/",
+            "source_id": "plum_home"
+          }
+        ],
+        "sources": [
+          {
+            "source_id": "plum_home",
+            "source_url": "https://www.plumventures.cn/",
+            "source_title": "梅花创投 Plum Ventures",
+            "source_content_hash": "229c82c652a26e060b4b54354680ad7717474b41a75e53942335e52e3bdd6f98",
+            "quote": "梅花创投成立于2014年，是国内早期投资机构之一，管理约100亿元人民币基金和1亿美元基金；重点布局新能源、半导体、军工、数字化、智能制造、商业航天，官网称已覆盖企业600余家、携手13家企业完成上市。",
+            "quote_hash": "611acf630fa0db7011434720a395b8ccb6ae095f1349dbe9bd2f3be47938a894"
+          },
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+            "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+            "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+            "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+            "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+          },
+          {
+            "source_id": "FISRC-ceee1629da3e3cce",
+            "source_url": "https://news.pedaily.cn/202605/563553.shtml",
+            "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
+            "source_content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
+            "quote": "顺禧基金、富华资本、万利达集团、长江创新投、水木清华校友基金、梅花创投等跟投",
+            "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
+          },
+          {
+            "source_id": "FISRC-cab683d0c710d8ea",
+            "source_url": "https://www.163.com/dy/article/JBOG2NHD051984TV.html",
+            "source_title": "华清未央公布天使轮融资，投资方为梅花创投_网易订阅",
+            "source_content_hash": "4b1173ba5b387864",
+            "quote": "华清未央（北京）科技有限公司公布天使轮融资，融资额未披露，参与投资的机构包括梅花创投。",
+            "quote_hash": "5d024da99262ac25c17992bda2aaf82ac1f7c053bba1bf2ec958116d9e9dc696"
+          }
+        ],
+        "last_verified_at": "2026-09-26",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+      }
+    },
+    {
+      "id": "INV-6c7bccb8750cde",
+      "name": "启赋资本",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "market_regions": [
+        "CN",
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-09-02",
+      "latest_disclosed_at": "2026-11-26",
+      "role_counts": {
+        "participant": 2
+      },
+      "round_codes": [
+        "angel",
+        "multi_round"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "FICO-79c0b01d7258dd9a",
+          "canonical_entity_id": "",
+          "name": "华源智因"
+        },
+        {
+          "entity_id": "EN-2a92da4bc5db543c",
+          "canonical_entity_id": "",
+          "name": "Violoop"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-35e23a84bca9a708",
+          "funding_insight_id": "FI-daa4c6164af2bae5",
+          "event_ids": [
+            "EV-73b16181361a7991"
+          ],
+          "company_entity_id": "FICO-79c0b01d7258dd9a",
+          "company_canonical_entity_id": "",
+          "company_name": "华源智因",
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "超亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": 100000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 1 亿元"
+          },
+          "announced_at": "2026-11-26",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+              "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+              "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-e84d2161a4927439",
+          "funding_insight_id": "FI-29f297142676a40b",
+          "event_ids": [
+            "EV-04ac681ff8b72e6a"
+          ],
+          "company_entity_id": "EN-2a92da4bc5db543c",
+          "company_canonical_entity_id": "",
+          "company_name": "Violoop",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "亿级",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 100000000,
+            "max_value": 1000000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "1 亿元–10 亿元"
+          },
+          "announced_at": "2026-09-02",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-4ce1b109c402e02b",
+              "source_url": "https://i.ifeng.com/c/8w5nAa2tSBS",
+              "source_title": "DEMO|对话Violoop：谁不想有个自己的模型，在真实工作里长出来那种",
+              "source_content_hash": "d2514a816bb64a43",
+              "quote": "投资方汇聚了VC及知名产投：联想创投、中金保时捷、蓝驰创投、元生资本、启赋资本、zero2ipo ventures联合出资",
+              "quote_hash": "ae33d8aaa0d81919796e4f82ef2f77d2f6b325deab1cc71ff9122e5fdec30426"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e66ee18a4916bc74",
+          "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+          "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+          "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+          "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+          "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+        },
+        {
+          "source_id": "FISRC-4ce1b109c402e02b",
+          "source_url": "https://i.ifeng.com/c/8w5nAa2tSBS",
+          "source_title": "DEMO|对话Violoop：谁不想有个自己的模型，在真实工作里长出来那种",
+          "source_content_hash": "d2514a816bb64a43",
+          "quote": "投资方汇聚了VC及知名产投：联想创投、中金保时捷、蓝驰创投、元生资本、启赋资本、zero2ipo ventures联合出资",
+          "quote_hash": "ae33d8aaa0d81919796e4f82ef2f77d2f6b325deab1cc71ff9122e5fdec30426"
+        }
+      ],
+      "public_profile": {
+        "summary": "啟赋资本官网公告确认，“启赋资本”和“啟赋资本”均指深圳市启赋资本管理有限公司；公告称其成立于2013年10月，专注私募股权投资并管理早期VC及并购基金。",
+        "facts": [
+          {
+            "field": "legal_name",
+            "label": "官网公告所列公司名称",
+            "value": "深圳市启赋资本管理有限公司。",
+            "source_id": "PROFILE-INV-6c7bccb8750cde-1"
+          },
+          {
+            "field": "founded",
+            "label": "官网公告列示成立时间",
+            "value": "2013年10月。",
+            "source_id": "PROFILE-INV-6c7bccb8750cde-1"
+          },
+          {
+            "field": "organization_type",
+            "label": "官网定位",
+            "value": "专注私募股权投资的专业基金管理公司。",
+            "source_id": "PROFILE-INV-6c7bccb8750cde-1"
+          },
+          {
+            "field": "investment_stage",
+            "label": "官网披露的基金阶段",
+            "value": "管理早期VC基金及并购基金。",
+            "source_id": "PROFILE-INV-6c7bccb8750cde-1"
+          },
+          {
+            "field": "brand_alias",
+            "label": "官网公告确认的名称对应关系",
+            "value": "“启赋资本”与“啟赋资本”均代表深圳市启赋资本管理有限公司。",
+            "source_id": "PROFILE-INV-6c7bccb8750cde-2"
+          }
+        ],
+        "milestones": [],
+        "track_record": [
+          {
+            "description": "融资来源记录：华源智因 · 天使轮 · 2026-11-26 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-e66ee18a4916bc74"
+          },
+          {
+            "description": "融资来源记录：Violoop · 多轮融资 · 2026-09-02 · 本轮参投 · 亿级。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-4ce1b109c402e02b"
+          }
+        ],
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "依据机构自有网站的品牌变更及公司介绍；不采用首页未能加载出的动态内容。",
+        "current_roles": [],
+        "career": [],
+        "education": [],
+        "experience_summary": "",
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "品牌变更公告",
+            "value": "啟赋资本",
+            "url": "https://www.qfvc.cn/newsDetail.page?id=218&source_capture=2026-10-03&cycle=10",
+            "source_id": "PROFILE-INV-6c7bccb8750cde-1"
+          }
+        ],
+        "sources": [
+          {
+            "source_id": "PROFILE-INV-6c7bccb8750cde-1",
+            "source_url": "https://www.qfvc.cn/newsDetail.page?id=218&source_capture=2026-10-03&cycle=10",
+            "source_title": "媒体报道",
+            "source_content_hash": "48c31a9b5011c5b35ec20c7829f2f2a4360424fea8b1f1d35f2fccf2fa7f7380",
+            "quote": "成立于2013年10月，是由国内创业投资领域一线品牌机构出来的资深投资人士发起设立，专注于私募股权投资的专业基金管理公司，管理早期VC基金及并购基金为主，聚焦TMT（以产业互联网为主）、新材料两大领域。",
+            "quote_hash": "08475e09747fa4cbe1fa6093eebd293a46e69f543a3fb3a94fdffb261ea5e7a1"
+          },
+          {
+            "source_id": "PROFILE-INV-6c7bccb8750cde-2",
+            "source_url": "https://www.qfvc.cn/newsDetail.page?id=218&source_capture=2026-10-03&cycle=10",
+            "source_title": "媒体报道",
+            "source_content_hash": "48c31a9b5011c5b35ec20c7829f2f2a4360424fea8b1f1d35f2fccf2fa7f7380",
+            "quote": "现使用的徽标“啟赋资本”与原“启赋资本”均代表深圳市启赋资本管理有限公司。",
+            "quote_hash": "960c2c758077fab232ae39416cc81ce0923fa2dc3d1c317b6b8ce26b9519708f"
+          },
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+            "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+            "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+            "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+            "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+          },
+          {
+            "source_id": "FISRC-4ce1b109c402e02b",
+            "source_url": "https://i.ifeng.com/c/8w5nAa2tSBS",
+            "source_title": "DEMO|对话Violoop：谁不想有个自己的模型，在真实工作里长出来那种",
+            "source_content_hash": "d2514a816bb64a43",
+            "quote": "投资方汇聚了VC及知名产投：联想创投、中金保时捷、蓝驰创投、元生资本、启赋资本、zero2ipo ventures联合出资",
+            "quote_hash": "ae33d8aaa0d81919796e4f82ef2f77d2f6b325deab1cc71ff9122e5fdec30426"
+          }
+        ],
+        "last_verified_at": "2026-10-03"
+      }
+    },
+    {
+      "id": "INV-8b7597eee28210",
+      "name": "讯飞创投",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 2,
+      "china_market_company_count": 2,
+      "first_disclosed_at": "2026-10-10",
+      "latest_disclosed_at": "2026-11-26",
+      "role_counts": {
+        "participant": 2
+      },
+      "round_codes": [
+        "angel",
+        "seed"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "FICO-79c0b01d7258dd9a",
+          "canonical_entity_id": "",
+          "name": "华源智因"
+        },
+        {
+          "entity_id": "EN-ffd9c78c15a865c1",
+          "canonical_entity_id": "",
+          "name": "利太智药"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-b0c89463798b2aa0",
+          "funding_insight_id": "FI-daa4c6164af2bae5",
+          "event_ids": [
+            "EV-73b16181361a7991"
+          ],
+          "company_entity_id": "FICO-79c0b01d7258dd9a",
+          "company_canonical_entity_id": "",
+          "company_name": "华源智因",
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "超亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": 100000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 1 亿元"
+          },
+          "announced_at": "2026-11-26",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+              "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+              "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-a8860770c348b0ad",
+          "funding_insight_id": "FI-9f261bd6c61ad1b6",
+          "event_ids": [
+            "EV-d5ee7cb4c076211b",
+            "EV-5654b3c716868ef8"
+          ],
+          "company_entity_id": "EN-ffd9c78c15a865c1",
+          "company_canonical_entity_id": "",
+          "company_name": "利太智药",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "近5000万元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 50000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 5000 万元"
+          },
+          "announced_at": "2026-10-10",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-6c8ebe92385dd5bf",
+              "source_url": "https://news.pedaily.cn/202610/570015.shtml",
+              "source_title": "利太智药完成近5000万元种子轮融资，专注AI原生多肽药物研发",
+              "source_content_hash": "562a6581033d8b1447c60453ba6379700fe08eda4aabdeb62d596f926e7061e7",
+              "quote": "由讯飞创投、L2F 光源创业者基金及知名产业方联合投资",
+              "quote_hash": "d7c4626278b77af2802595383f76c97a7d414e33c09136dfcc96809b21da2dac"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e66ee18a4916bc74",
+          "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+          "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+          "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+          "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+          "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+        },
+        {
+          "source_id": "FISRC-6c8ebe92385dd5bf",
+          "source_url": "https://news.pedaily.cn/202610/570015.shtml",
+          "source_title": "利太智药完成近5000万元种子轮融资，专注AI原生多肽药物研发",
+          "source_content_hash": "562a6581033d8b1447c60453ba6379700fe08eda4aabdeb62d596f926e7061e7",
+          "quote": "由讯飞创投、L2F 光源创业者基金及知名产业方联合投资",
+          "quote_hash": "d7c4626278b77af2802595383f76c97a7d414e33c09136dfcc96809b21da2dac"
+        }
+      ],
+      "public_profile": {
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "activity_only",
+        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+        "summary": "讯飞创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "facts": [],
+        "milestones": [],
+        "track_record": [
+          {
+            "description": "融资来源记录：华源智因 · 天使轮 · 2026-11-26 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-e66ee18a4916bc74"
+          },
+          {
+            "description": "融资来源记录：利太智药 · 种子轮 · 2026-10-10 · 本轮参投 · 近5000万元。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-6c8ebe92385dd5bf"
+          }
+        ],
+        "contacts": [],
+        "sources": [
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+            "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+            "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+            "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+            "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+          },
+          {
+            "source_id": "FISRC-6c8ebe92385dd5bf",
+            "source_url": "https://news.pedaily.cn/202610/570015.shtml",
+            "source_title": "利太智药完成近5000万元种子轮融资，专注AI原生多肽药物研发",
+            "source_content_hash": "562a6581033d8b1447c60453ba6379700fe08eda4aabdeb62d596f926e7061e7",
+            "quote": "由讯飞创投、L2F 光源创业者基金及知名产业方联合投资",
+            "quote_hash": "d7c4626278b77af2802595383f76c97a7d414e33c09136dfcc96809b21da2dac"
+          }
+        ],
+        "last_verified_at": "2026-10-06"
       }
     },
     {
@@ -282624,6 +283438,531 @@
       }
     },
     {
+      "id": "INV-f1cf8163538d7c",
+      "name": "华方资本",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-11-26",
+      "latest_disclosed_at": "2026-11-26",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "angel"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "FICO-79c0b01d7258dd9a",
+          "canonical_entity_id": "",
+          "name": "华源智因"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-346ccb317ac2a4d0",
+          "funding_insight_id": "FI-daa4c6164af2bae5",
+          "event_ids": [
+            "EV-73b16181361a7991"
+          ],
+          "company_entity_id": "FICO-79c0b01d7258dd9a",
+          "company_canonical_entity_id": "",
+          "company_name": "华源智因",
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "超亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": 100000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 1 亿元"
+          },
+          "announced_at": "2026-11-26",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+              "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+              "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e66ee18a4916bc74",
+          "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+          "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+          "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+          "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+          "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+        }
+      ],
+      "public_profile": {
+        "profile_type": "unverified",
+        "identity_status": "pending_verification",
+        "coverage_status": "identity_unverified",
+        "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+        "summary": "华方资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "facts": [],
+        "milestones": [],
+        "track_record": [
+          {
+            "description": "融资来源记录：华源智因 · 天使轮 · 2026-11-26 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-e66ee18a4916bc74"
+          }
+        ],
+        "contacts": [],
+        "sources": [
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+            "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+            "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+            "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+            "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+          }
+        ],
+        "last_verified_at": "2026-10-06"
+      }
+    },
+    {
+      "id": "INV-c45b6ded5e082a",
+      "name": "华盖资本",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-11-26",
+      "latest_disclosed_at": "2026-11-26",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "lead": 1
+      },
+      "round_codes": [
+        "angel"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "FICO-79c0b01d7258dd9a",
+          "canonical_entity_id": "",
+          "name": "华源智因"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-451a5f6e0a3aff51",
+          "funding_insight_id": "FI-daa4c6164af2bae5",
+          "event_ids": [
+            "EV-73b16181361a7991"
+          ],
+          "company_entity_id": "FICO-79c0b01d7258dd9a",
+          "company_canonical_entity_id": "",
+          "company_name": "华源智因",
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "超亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": 100000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 1 亿元"
+          },
+          "announced_at": "2026-11-26",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+              "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+              "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-1a72f716a1b1b556",
+          "funding_insight_id": "FI-3290a302d01a731c",
+          "event_ids": [
+            "EV-a52dd9e9cac23694",
+            "EV-7532c5a950295e97"
+          ],
+          "company_entity_id": "EN-ed8ff30f2dcaf9d6",
+          "company_canonical_entity_id": "EN-ed8ff30f2dcaf9d6",
+          "company_name": "德睿智药",
+          "round": "历史轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "",
+          "amount_original": "",
+          "amount_normalized": null,
+          "announced_at": "",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "unknown",
+          "scope": "historical_or_ambiguous",
+          "role": "A轮联合领投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-c8803e2f7419599f",
+              "source_url": "https://www.vcbeathealth.com/article/59793",
+              "source_title": "MindRank Secures $52M Series B Funding to Advance AI-Driven Oral GLP-1RA into Phase III Clinical Trials-VCBeat",
+              "source_content_hash": "674418393ee4156c",
+              "quote": "in December 2021, it secured a tens-of-millions-of-US-dollars Series A round co-led by Huagai Capital and Sinopharm Capital (Songhe Capital)",
+              "quote_hash": "436917467eb2c63eaa6f8d044a7875eeb2e3fdedd86b477e1a27c054a83cfa13"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e66ee18a4916bc74",
+          "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+          "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+          "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+          "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+          "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+        },
+        {
+          "source_id": "FISRC-c8803e2f7419599f",
+          "source_url": "https://www.vcbeathealth.com/article/59793",
+          "source_title": "MindRank Secures $52M Series B Funding to Advance AI-Driven Oral GLP-1RA into Phase III Clinical Trials-VCBeat",
+          "source_content_hash": "674418393ee4156c",
+          "quote": "in December 2021, it secured a tens-of-millions-of-US-dollars Series A round co-led by Huagai Capital and Sinopharm Capital (Songhe Capital)",
+          "quote_hash": "436917467eb2c63eaa6f8d044a7875eeb2e3fdedd86b477e1a27c054a83cfa13"
+        }
+      ],
+      "public_profile": {
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "主体名称与投资关系由德睿智药官方公告支持；公告同时将相关基金称为“医疗早期基金”。本轮未从可访问的华盖官网取得机构页面，因此不扩写法律实体或完整机构背景。",
+        "summary": "发行人德睿智药在其融资公告中将华盖资本列为A轮联合领投方，并将邓量称为“华盖资本医疗早期基金合伙人”。本档案据此记录发行人使用的机构品牌和该项投资活动，不推断其具体管理法人、完整投资策略或完整组合。",
+        "facts": [
+          {
+            "field": "investment_focus_evidence",
+            "label": "公开交易中的基金描述",
+            "value": "德睿智药官方公告将邓量称为华盖资本医疗早期基金合伙人；该描述仅对应公告提及的基金，不外推为全机构投资策略。",
+            "source_id": "huagai_mindrank_series_a"
+          }
+        ],
+        "milestones": [],
+        "track_record": [
+          {
+            "description": "德睿智药官方公告称其数千万美元A轮由华盖资本与松禾资本联合领投；未披露华盖资本单独出资额。",
+            "source_id": "huagai_mindrank_series_a"
+          },
+          {
+            "description": "融资来源记录：华源智因 · 天使轮 · 2026-11-26 · 本轮领投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-e66ee18a4916bc74"
+          },
+          {
+            "description": "融资来源记录：德睿智药 · 历史轮次未披露 · A轮联合领投。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-c8803e2f7419599f"
+          }
+        ],
+        "contacts": [],
+        "current_roles": [],
+        "career": [],
+        "education": [],
+        "experience_summary": "",
+        "sources": [
+          {
+            "source_id": "huagai_mindrank_series_a",
+            "source_url": "https://www.mindrank.ai/zh-CN/news/detail/9",
+            "source_title": "新闻 - 德睿智药 MindRank",
+            "source_content_hash": "bd9cc2b4e60f523336bc98279ed954f8e968a061aac465e5af9212e59ccce2bd",
+            "quote": "华盖资本、松禾资本联合领投，老股东夏尔巴资本持续加码。本轮融资将支持公司的团队扩张、自研管线研发以及业务扩展。",
+            "quote_hash": "ce3549930cf3a3bc12bb286c7dd05163ad095ddce5d7696f289a65569a444bbc"
+          },
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+            "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+            "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+            "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+            "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+          },
+          {
+            "source_id": "FISRC-c8803e2f7419599f",
+            "source_url": "https://www.vcbeathealth.com/article/59793",
+            "source_title": "MindRank Secures $52M Series B Funding to Advance AI-Driven Oral GLP-1RA into Phase III Clinical Trials-VCBeat",
+            "source_content_hash": "674418393ee4156c",
+            "quote": "in December 2021, it secured a tens-of-millions-of-US-dollars Series A round co-led by Huagai Capital and Sinopharm Capital (Songhe Capital)",
+            "quote_hash": "436917467eb2c63eaa6f8d044a7875eeb2e3fdedd86b477e1a27c054a83cfa13"
+          }
+        ],
+        "last_verified_at": "2026-10-05"
+      }
+    },
+    {
+      "id": "INV-37aa79cabdab82",
+      "name": "同新基金",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-11-26",
+      "latest_disclosed_at": "2026-11-26",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "angel"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "FICO-79c0b01d7258dd9a",
+          "canonical_entity_id": "",
+          "name": "华源智因"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-ee55c4efefbdc8a6",
+          "funding_insight_id": "FI-daa4c6164af2bae5",
+          "event_ids": [
+            "EV-73b16181361a7991"
+          ],
+          "company_entity_id": "FICO-79c0b01d7258dd9a",
+          "company_canonical_entity_id": "",
+          "company_name": "华源智因",
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "超亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": 100000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 1 亿元"
+          },
+          "announced_at": "2026-11-26",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+              "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+              "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e66ee18a4916bc74",
+          "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+          "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+          "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+          "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+          "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+        }
+      ],
+      "public_profile": {
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "activity_only",
+        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+        "summary": "同新基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-11-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "facts": [],
+        "milestones": [],
+        "track_record": [
+          {
+            "description": "融资来源记录：华源智因 · 天使轮 · 2026-11-26 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-e66ee18a4916bc74"
+          }
+        ],
+        "contacts": [],
+        "sources": [
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+            "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+            "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+            "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+            "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+          }
+        ],
+        "last_verified_at": "2026-10-06"
+      }
+    },
+    {
+      "id": "INV-bf89cd8c3212f5",
+      "name": "中珠医疗",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-11-26",
+      "latest_disclosed_at": "2026-11-26",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "angel"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "FICO-79c0b01d7258dd9a",
+          "canonical_entity_id": "",
+          "name": "华源智因"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-0e9588eec7777faf",
+          "funding_insight_id": "FI-daa4c6164af2bae5",
+          "event_ids": [
+            "EV-73b16181361a7991"
+          ],
+          "company_entity_id": "FICO-79c0b01d7258dd9a",
+          "company_canonical_entity_id": "",
+          "company_name": "华源智因",
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "超亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": 100000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 1 亿元"
+          },
+          "announced_at": "2026-11-26",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+              "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+              "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-e66ee18a4916bc74",
+          "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+          "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+          "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+          "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+          "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+        }
+      ],
+      "public_profile": {
+        "profile_type": "unverified",
+        "identity_status": "pending_verification",
+        "coverage_status": "identity_unverified",
+        "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+        "summary": "中珠医疗 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-11-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "facts": [],
+        "milestones": [],
+        "track_record": [
+          {
+            "description": "融资来源记录：华源智因 · 天使轮 · 2026-11-26 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-e66ee18a4916bc74"
+          }
+        ],
+        "contacts": [],
+        "sources": [
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+            "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+            "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+            "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+            "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+          }
+        ],
+        "last_verified_at": "2026-10-06"
+      }
+    },
+    {
       "id": "INV-55a84b2e4adc9a",
       "name": "北京赛微电子股份有限公司",
       "aliases": [],
@@ -339663,119 +341002,6 @@
             "source_content_hash": "0812dfa8fced323674996f6c9d0d75edc60b2d3b90cdea2d8b0c0f395e04f753",
             "quote": "投资方包括博华资本、戈壁创投、元禾璞华、尚势资本等相关投资机构",
             "quote_hash": "340a1609f3e57937d5b21b43509699fe4bd3a4ea8037193e7d84b8084a3098c5"
-          }
-        ],
-        "last_verified_at": "2026-10-06"
-      }
-    },
-    {
-      "id": "INV-8b7597eee28210",
-      "name": "讯飞创投",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-10-10",
-      "latest_disclosed_at": "2026-10-10",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "seed"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-ffd9c78c15a865c1",
-          "canonical_entity_id": "",
-          "name": "利太智药"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-a8860770c348b0ad",
-          "funding_insight_id": "FI-9f261bd6c61ad1b6",
-          "event_ids": [
-            "EV-d5ee7cb4c076211b",
-            "EV-5654b3c716868ef8"
-          ],
-          "company_entity_id": "EN-ffd9c78c15a865c1",
-          "company_canonical_entity_id": "",
-          "company_name": "利太智药",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "近5000万元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 50000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 5000 万元"
-          },
-          "announced_at": "2026-10-10",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-6c8ebe92385dd5bf",
-              "source_url": "https://news.pedaily.cn/202610/570015.shtml",
-              "source_title": "利太智药完成近5000万元种子轮融资，专注AI原生多肽药物研发",
-              "source_content_hash": "562a6581033d8b1447c60453ba6379700fe08eda4aabdeb62d596f926e7061e7",
-              "quote": "由讯飞创投、L2F 光源创业者基金及知名产业方联合投资",
-              "quote_hash": "d7c4626278b77af2802595383f76c97a7d414e33c09136dfcc96809b21da2dac"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-6c8ebe92385dd5bf",
-          "source_url": "https://news.pedaily.cn/202610/570015.shtml",
-          "source_title": "利太智药完成近5000万元种子轮融资，专注AI原生多肽药物研发",
-          "source_content_hash": "562a6581033d8b1447c60453ba6379700fe08eda4aabdeb62d596f926e7061e7",
-          "quote": "由讯飞创投、L2F 光源创业者基金及知名产业方联合投资",
-          "quote_hash": "d7c4626278b77af2802595383f76c97a7d414e33c09136dfcc96809b21da2dac"
-        }
-      ],
-      "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "讯飞创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
-          {
-            "description": "融资来源记录：利太智药 · 种子轮 · 2026-10-10 · 本轮参投 · 近5000万元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-6c8ebe92385dd5bf"
-          }
-        ],
-        "contacts": [],
-        "sources": [
-          {
-            "source_id": "FISRC-6c8ebe92385dd5bf",
-            "source_url": "https://news.pedaily.cn/202610/570015.shtml",
-            "source_title": "利太智药完成近5000万元种子轮融资，专注AI原生多肽药物研发",
-            "source_content_hash": "562a6581033d8b1447c60453ba6379700fe08eda4aabdeb62d596f926e7061e7",
-            "quote": "由讯飞创投、L2F 光源创业者基金及知名产业方联合投资",
-            "quote_hash": "d7c4626278b77af2802595383f76c97a7d414e33c09136dfcc96809b21da2dac"
           }
         ],
         "last_verified_at": "2026-10-06"
@@ -410826,177 +412052,6 @@
             "source_content_hash": "a1bc38c4c0a90cbafbaa7b31c70c8bde825b8401c8f2881b61267ea8c0b505ce",
             "quote": "2024年12月，面壁智能完成新一轮数亿元融资，由龙芯创投、鼎晖百孚、中关村科学城基金和赛富基金联合领投",
             "quote_hash": "63a980f1ba127733849c97a30d0874700bd03202657aec194d72afc7a3a64b3d"
-          }
-        ],
-        "last_verified_at": "2026-10-03"
-      }
-    },
-    {
-      "id": "INV-6c7bccb8750cde",
-      "name": "启赋资本",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "GLOBAL"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2026-09-02",
-      "latest_disclosed_at": "2026-09-02",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "multi_round"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-2a92da4bc5db543c",
-          "canonical_entity_id": "",
-          "name": "Violoop"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-e84d2161a4927439",
-          "funding_insight_id": "FI-29f297142676a40b",
-          "event_ids": [
-            "EV-04ac681ff8b72e6a"
-          ],
-          "company_entity_id": "EN-2a92da4bc5db543c",
-          "company_canonical_entity_id": "",
-          "company_name": "Violoop",
-          "round": "多轮融资",
-          "round_code": "multi_round",
-          "round_original": "多轮融资",
-          "amount_original": "亿级",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 100000000,
-            "max_value": 1000000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "1 亿元–10 亿元"
-          },
-          "announced_at": "2026-09-02",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-4ce1b109c402e02b",
-              "source_url": "https://i.ifeng.com/c/8w5nAa2tSBS",
-              "source_title": "DEMO|对话Violoop：谁不想有个自己的模型，在真实工作里长出来那种",
-              "source_content_hash": "d2514a816bb64a43",
-              "quote": "投资方汇聚了VC及知名产投：联想创投、中金保时捷、蓝驰创投、元生资本、启赋资本、zero2ipo ventures联合出资",
-              "quote_hash": "ae33d8aaa0d81919796e4f82ef2f77d2f6b325deab1cc71ff9122e5fdec30426"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-4ce1b109c402e02b",
-          "source_url": "https://i.ifeng.com/c/8w5nAa2tSBS",
-          "source_title": "DEMO|对话Violoop：谁不想有个自己的模型，在真实工作里长出来那种",
-          "source_content_hash": "d2514a816bb64a43",
-          "quote": "投资方汇聚了VC及知名产投：联想创投、中金保时捷、蓝驰创投、元生资本、启赋资本、zero2ipo ventures联合出资",
-          "quote_hash": "ae33d8aaa0d81919796e4f82ef2f77d2f6b325deab1cc71ff9122e5fdec30426"
-        }
-      ],
-      "public_profile": {
-        "summary": "啟赋资本官网公告确认，“启赋资本”和“啟赋资本”均指深圳市启赋资本管理有限公司；公告称其成立于2013年10月，专注私募股权投资并管理早期VC及并购基金。",
-        "facts": [
-          {
-            "field": "legal_name",
-            "label": "官网公告所列公司名称",
-            "value": "深圳市启赋资本管理有限公司。",
-            "source_id": "PROFILE-INV-6c7bccb8750cde-1"
-          },
-          {
-            "field": "founded",
-            "label": "官网公告列示成立时间",
-            "value": "2013年10月。",
-            "source_id": "PROFILE-INV-6c7bccb8750cde-1"
-          },
-          {
-            "field": "organization_type",
-            "label": "官网定位",
-            "value": "专注私募股权投资的专业基金管理公司。",
-            "source_id": "PROFILE-INV-6c7bccb8750cde-1"
-          },
-          {
-            "field": "investment_stage",
-            "label": "官网披露的基金阶段",
-            "value": "管理早期VC基金及并购基金。",
-            "source_id": "PROFILE-INV-6c7bccb8750cde-1"
-          },
-          {
-            "field": "brand_alias",
-            "label": "官网公告确认的名称对应关系",
-            "value": "“启赋资本”与“啟赋资本”均代表深圳市启赋资本管理有限公司。",
-            "source_id": "PROFILE-INV-6c7bccb8750cde-2"
-          }
-        ],
-        "milestones": [],
-        "track_record": [
-          {
-            "description": "融资来源记录：Violoop · 多轮融资 · 2026-09-02 · 本轮参投 · 亿级。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-4ce1b109c402e02b"
-          }
-        ],
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "researched",
-        "coverage_note": "依据机构自有网站的品牌变更及公司介绍；不采用首页未能加载出的动态内容。",
-        "current_roles": [],
-        "career": [],
-        "education": [],
-        "experience_summary": "",
-        "contacts": [
-          {
-            "kind": "website",
-            "label": "品牌变更公告",
-            "value": "啟赋资本",
-            "url": "https://www.qfvc.cn/newsDetail.page?id=218&source_capture=2026-10-03&cycle=10",
-            "source_id": "PROFILE-INV-6c7bccb8750cde-1"
-          }
-        ],
-        "sources": [
-          {
-            "source_id": "PROFILE-INV-6c7bccb8750cde-1",
-            "source_url": "https://www.qfvc.cn/newsDetail.page?id=218&source_capture=2026-10-03&cycle=10",
-            "source_title": "媒体报道",
-            "source_content_hash": "48c31a9b5011c5b35ec20c7829f2f2a4360424fea8b1f1d35f2fccf2fa7f7380",
-            "quote": "成立于2013年10月，是由国内创业投资领域一线品牌机构出来的资深投资人士发起设立，专注于私募股权投资的专业基金管理公司，管理早期VC基金及并购基金为主，聚焦TMT（以产业互联网为主）、新材料两大领域。",
-            "quote_hash": "08475e09747fa4cbe1fa6093eebd293a46e69f543a3fb3a94fdffb261ea5e7a1"
-          },
-          {
-            "source_id": "PROFILE-INV-6c7bccb8750cde-2",
-            "source_url": "https://www.qfvc.cn/newsDetail.page?id=218&source_capture=2026-10-03&cycle=10",
-            "source_title": "媒体报道",
-            "source_content_hash": "48c31a9b5011c5b35ec20c7829f2f2a4360424fea8b1f1d35f2fccf2fa7f7380",
-            "quote": "现使用的徽标“啟赋资本”与原“启赋资本”均代表深圳市启赋资本管理有限公司。",
-            "quote_hash": "960c2c758077fab232ae39416cc81ce0923fa2dc3d1c317b6b8ce26b9519708f"
-          },
-          {
-            "source_id": "FISRC-4ce1b109c402e02b",
-            "source_url": "https://i.ifeng.com/c/8w5nAa2tSBS",
-            "source_title": "DEMO|对话Violoop：谁不想有个自己的模型，在真实工作里长出来那种",
-            "source_content_hash": "d2514a816bb64a43",
-            "quote": "投资方汇聚了VC及知名产投：联想创投、中金保时捷、蓝驰创投、元生资本、启赋资本、zero2ipo ventures联合出资",
-            "quote_hash": "ae33d8aaa0d81919796e4f82ef2f77d2f6b325deab1cc71ff9122e5fdec30426"
           }
         ],
         "last_verified_at": "2026-10-03"
@@ -534106,292 +535161,6 @@
       }
     },
     {
-      "id": "INV-4e5810f629f8b6",
-      "name": "梅花创投",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 2,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-05-08",
-      "latest_disclosed_at": "2026-05-08",
-      "role_counts": {
-        "historical_or_ambiguous": 2,
-        "participant": 1
-      },
-      "round_codes": [
-        "angel"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-cecdd8369134f75e",
-          "canonical_entity_id": "EN-cecdd8369134f75e",
-          "name": "容芯致远"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-6ace5393952b594f",
-          "funding_insight_id": "FI-f15f358f13811b9e",
-          "event_ids": [
-            "EV-44ec7c229995ca3c"
-          ],
-          "company_entity_id": "EN-cecdd8369134f75e",
-          "company_canonical_entity_id": "EN-cecdd8369134f75e",
-          "company_name": "容芯致远",
-          "round": "天使轮",
-          "round_code": "angel",
-          "round_original": "天使轮",
-          "amount_original": "数亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-05-08",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-ceee1629da3e3cce",
-              "source_url": "https://news.pedaily.cn/202605/563553.shtml",
-              "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
-              "source_content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
-              "quote": "顺禧基金、富华资本、万利达集团、长江创新投、水木清华校友基金、梅花创投等跟投",
-              "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-40353ecdb8765ea9",
-          "funding_insight_id": "FI-de5c9a8f3d3cc54a",
-          "event_ids": [
-            "EV-6928501584326746"
-          ],
-          "company_entity_id": "EN-bcfc3b314fa4ede5",
-          "company_canonical_entity_id": "EN-bcfc3b314fa4ede5",
-          "company_name": "华清未央",
-          "round": "历史轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "",
-          "amount_original": "",
-          "amount_normalized": null,
-          "announced_at": "",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "unknown",
-          "scope": "historical_or_ambiguous",
-          "role": "天使轮投资方",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-cab683d0c710d8ea",
-              "source_url": "https://www.163.com/dy/article/JBOG2NHD051984TV.html",
-              "source_title": "华清未央公布天使轮融资，投资方为梅花创投_网易订阅",
-              "source_content_hash": "4b1173ba5b387864",
-              "quote": "华清未央（北京）科技有限公司公布天使轮融资，融资额未披露，参与投资的机构包括梅花创投。",
-              "quote_hash": "5d024da99262ac25c17992bda2aaf82ac1f7c053bba1bf2ec958116d9e9dc696"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-3d5cfb0a66c72d92",
-          "funding_insight_id": "FI-3e97f5e30e99ff0b",
-          "event_ids": [
-            "EV-cbec329253108e80"
-          ],
-          "company_entity_id": "EN-ee2dce6ecf9a1bab",
-          "company_canonical_entity_id": "EN-ee2dce6ecf9a1bab",
-          "company_name": "深朴智能",
-          "round": "历史轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "",
-          "amount_original": "",
-          "amount_normalized": null,
-          "announced_at": "",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "unknown",
-          "scope": "historical_or_ambiguous",
-          "role": "Pre-A轮跟投",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-3bc1b2f58c3d4a86",
-              "source_url": "https://news.pedaily.cn/202606/565268.shtml",
-              "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
-              "source_content_hash": "892b3be292e8e3e6",
-              "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
-              "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-ceee1629da3e3cce",
-          "source_url": "https://news.pedaily.cn/202605/563553.shtml",
-          "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
-          "source_content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
-          "quote": "顺禧基金、富华资本、万利达集团、长江创新投、水木清华校友基金、梅花创投等跟投",
-          "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
-        },
-        {
-          "source_id": "FISRC-cab683d0c710d8ea",
-          "source_url": "https://www.163.com/dy/article/JBOG2NHD051984TV.html",
-          "source_title": "华清未央公布天使轮融资，投资方为梅花创投_网易订阅",
-          "source_content_hash": "4b1173ba5b387864",
-          "quote": "华清未央（北京）科技有限公司公布天使轮融资，融资额未披露，参与投资的机构包括梅花创投。",
-          "quote_hash": "5d024da99262ac25c17992bda2aaf82ac1f7c053bba1bf2ec958116d9e9dc696"
-        },
-        {
-          "source_id": "FISRC-3bc1b2f58c3d4a86",
-          "source_url": "https://news.pedaily.cn/202606/565268.shtml",
-          "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
-          "source_content_hash": "892b3be292e8e3e6",
-          "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
-          "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
-        }
-      ],
-      "public_profile": {
-        "profile_type": "organization",
-        "summary": "梅花创投是一家2014年成立的早期投资机构。官网披露其重点布局新能源、半导体、军工、数字化、智能制造和商业航天，并公布人民币基金、美元基金、组合企业和上市数量等规模信息；这些为机构自述，未等同于基金回报。",
-        "facts": [
-          {
-            "field": "founded",
-            "label": "成立时间",
-            "value": "2014年。",
-            "source_id": "plum_home"
-          },
-          {
-            "field": "investment_stage",
-            "label": "投资阶段",
-            "value": "早期投资。",
-            "source_id": "plum_home"
-          },
-          {
-            "field": "investment_focus",
-            "label": "投资方向",
-            "value": "新能源、半导体、军工、数字化、智能制造、商业航天。",
-            "source_id": "plum_home"
-          },
-          {
-            "field": "reported_fund_size",
-            "label": "官网披露管理基金规模",
-            "value": "约100亿元人民币基金和1亿美元基金；官网未为该规模标注统计日期。",
-            "source_id": "plum_home"
-          }
-        ],
-        "milestones": [
-          {
-            "date": "2014",
-            "description": "梅花创投成立。",
-            "source_id": "plum_home"
-          }
-        ],
-        "current_roles": [],
-        "career": [],
-        "education": [],
-        "experience_summary": "官网提供投后融资、媒体、法务财税、招聘和资源对接等服务说明；机构组合数量和上市数为官网自述的业务概况。",
-        "track_record": [
-          {
-            "description": "官网称覆盖企业600余家、携手13家企业完成上市；页面未标统计日期，不能据此推断收益率或完整退出倍数。",
-            "source_id": "plum_home"
-          },
-          {
-            "description": "融资来源记录：容芯致远 · 天使轮 · 2026-05-08 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-ceee1629da3e3cce"
-          },
-          {
-            "description": "融资来源记录：华清未央 · 历史轮次未披露 · 天使轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-cab683d0c710d8ea"
-          },
-          {
-            "description": "融资来源记录：深朴智能 · 历史轮次未披露 · Pre-A轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-3bc1b2f58c3d4a86"
-          }
-        ],
-        "contacts": [
-          {
-            "kind": "website",
-            "label": "官方网站",
-            "value": "梅花创投",
-            "url": "https://www.plumventures.cn/",
-            "source_id": "plum_home"
-          },
-          {
-            "kind": "email",
-            "label": "商业计划书投递",
-            "value": "BP@plumventures.cn",
-            "url": "https://www.plumventures.cn/",
-            "source_id": "plum_home"
-          },
-          {
-            "kind": "email",
-            "label": "媒体合作",
-            "value": "hsy@plumventures.cn",
-            "url": "https://www.plumventures.cn/",
-            "source_id": "plum_home"
-          }
-        ],
-        "sources": [
-          {
-            "source_id": "plum_home",
-            "source_url": "https://www.plumventures.cn/",
-            "source_title": "梅花创投 Plum Ventures",
-            "source_content_hash": "229c82c652a26e060b4b54354680ad7717474b41a75e53942335e52e3bdd6f98",
-            "quote": "梅花创投成立于2014年，是国内早期投资机构之一，管理约100亿元人民币基金和1亿美元基金；重点布局新能源、半导体、军工、数字化、智能制造、商业航天，官网称已覆盖企业600余家、携手13家企业完成上市。",
-            "quote_hash": "611acf630fa0db7011434720a395b8ccb6ae095f1349dbe9bd2f3be47938a894"
-          },
-          {
-            "source_id": "FISRC-ceee1629da3e3cce",
-            "source_url": "https://news.pedaily.cn/202605/563553.shtml",
-            "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
-            "source_content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
-            "quote": "顺禧基金、富华资本、万利达集团、长江创新投、水木清华校友基金、梅花创投等跟投",
-            "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
-          },
-          {
-            "source_id": "FISRC-cab683d0c710d8ea",
-            "source_url": "https://www.163.com/dy/article/JBOG2NHD051984TV.html",
-            "source_title": "华清未央公布天使轮融资，投资方为梅花创投_网易订阅",
-            "source_content_hash": "4b1173ba5b387864",
-            "quote": "华清未央（北京）科技有限公司公布天使轮融资，融资额未披露，参与投资的机构包括梅花创投。",
-            "quote_hash": "5d024da99262ac25c17992bda2aaf82ac1f7c053bba1bf2ec958116d9e9dc696"
-          },
-          {
-            "source_id": "FISRC-3bc1b2f58c3d4a86",
-            "source_url": "https://news.pedaily.cn/202606/565268.shtml",
-            "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
-            "source_content_hash": "892b3be292e8e3e6",
-            "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
-            "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
-          }
-        ],
-        "last_verified_at": "2026-09-26",
-        "identity_status": "verified",
-        "coverage_status": "researched",
-        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
-      }
-    },
-    {
       "id": "INV-94579f8834552e",
       "name": "赛富投资基金",
       "aliases": [],
@@ -636227,126 +636996,6 @@
           }
         ],
         "last_verified_at": "2026-09-27"
-      }
-    },
-    {
-      "id": "INV-c45b6ded5e082a",
-      "name": "华盖资本",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 0,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 0,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "",
-      "latest_disclosed_at": "",
-      "role_counts": {
-        "historical_or_ambiguous": 1
-      },
-      "round_codes": [],
-      "portfolio_companies": [],
-      "activities": [
-        {
-          "activity_id": "IA-1a72f716a1b1b556",
-          "funding_insight_id": "FI-3290a302d01a731c",
-          "event_ids": [
-            "EV-a52dd9e9cac23694",
-            "EV-7532c5a950295e97"
-          ],
-          "company_entity_id": "EN-ed8ff30f2dcaf9d6",
-          "company_canonical_entity_id": "EN-ed8ff30f2dcaf9d6",
-          "company_name": "德睿智药",
-          "round": "历史轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "",
-          "amount_original": "",
-          "amount_normalized": null,
-          "announced_at": "",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "unknown",
-          "scope": "historical_or_ambiguous",
-          "role": "A轮联合领投",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-c8803e2f7419599f",
-              "source_url": "https://www.vcbeathealth.com/article/59793",
-              "source_title": "MindRank Secures $52M Series B Funding to Advance AI-Driven Oral GLP-1RA into Phase III Clinical Trials-VCBeat",
-              "source_content_hash": "674418393ee4156c",
-              "quote": "in December 2021, it secured a tens-of-millions-of-US-dollars Series A round co-led by Huagai Capital and Sinopharm Capital (Songhe Capital)",
-              "quote_hash": "436917467eb2c63eaa6f8d044a7875eeb2e3fdedd86b477e1a27c054a83cfa13"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-c8803e2f7419599f",
-          "source_url": "https://www.vcbeathealth.com/article/59793",
-          "source_title": "MindRank Secures $52M Series B Funding to Advance AI-Driven Oral GLP-1RA into Phase III Clinical Trials-VCBeat",
-          "source_content_hash": "674418393ee4156c",
-          "quote": "in December 2021, it secured a tens-of-millions-of-US-dollars Series A round co-led by Huagai Capital and Sinopharm Capital (Songhe Capital)",
-          "quote_hash": "436917467eb2c63eaa6f8d044a7875eeb2e3fdedd86b477e1a27c054a83cfa13"
-        }
-      ],
-      "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "researched",
-        "coverage_note": "主体名称与投资关系由德睿智药官方公告支持；公告同时将相关基金称为“医疗早期基金”。本轮未从可访问的华盖官网取得机构页面，因此不扩写法律实体或完整机构背景。",
-        "summary": "发行人德睿智药在其融资公告中将华盖资本列为A轮联合领投方，并将邓量称为“华盖资本医疗早期基金合伙人”。本档案据此记录发行人使用的机构品牌和该项投资活动，不推断其具体管理法人、完整投资策略或完整组合。",
-        "facts": [
-          {
-            "field": "investment_focus_evidence",
-            "label": "公开交易中的基金描述",
-            "value": "德睿智药官方公告将邓量称为华盖资本医疗早期基金合伙人；该描述仅对应公告提及的基金，不外推为全机构投资策略。",
-            "source_id": "huagai_mindrank_series_a"
-          }
-        ],
-        "milestones": [],
-        "track_record": [
-          {
-            "description": "德睿智药官方公告称其数千万美元A轮由华盖资本与松禾资本联合领投；未披露华盖资本单独出资额。",
-            "source_id": "huagai_mindrank_series_a"
-          },
-          {
-            "description": "融资来源记录：德睿智药 · 历史轮次未披露 · A轮联合领投。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-c8803e2f7419599f"
-          }
-        ],
-        "contacts": [],
-        "current_roles": [],
-        "career": [],
-        "education": [],
-        "experience_summary": "",
-        "sources": [
-          {
-            "source_id": "huagai_mindrank_series_a",
-            "source_url": "https://www.mindrank.ai/zh-CN/news/detail/9",
-            "source_title": "新闻 - 德睿智药 MindRank",
-            "source_content_hash": "bd9cc2b4e60f523336bc98279ed954f8e968a061aac465e5af9212e59ccce2bd",
-            "quote": "华盖资本、松禾资本联合领投，老股东夏尔巴资本持续加码。本轮融资将支持公司的团队扩张、自研管线研发以及业务扩展。",
-            "quote_hash": "ce3549930cf3a3bc12bb286c7dd05163ad095ddce5d7696f289a65569a444bbc"
-          },
-          {
-            "source_id": "FISRC-c8803e2f7419599f",
-            "source_url": "https://www.vcbeathealth.com/article/59793",
-            "source_title": "MindRank Secures $52M Series B Funding to Advance AI-Driven Oral GLP-1RA into Phase III Clinical Trials-VCBeat",
-            "source_content_hash": "674418393ee4156c",
-            "quote": "in December 2021, it secured a tens-of-millions-of-US-dollars Series A round co-led by Huagai Capital and Sinopharm Capital (Songhe Capital)",
-            "quote_hash": "436917467eb2c63eaa6f8d044a7875eeb2e3fdedd86b477e1a27c054a83cfa13"
-          }
-        ],
-        "last_verified_at": "2026-10-05"
       }
     },
     {

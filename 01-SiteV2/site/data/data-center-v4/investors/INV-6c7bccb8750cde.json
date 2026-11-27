@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-26",
-    "currentDate": "2026-11-26",
-    "eventCount": 4565,
+    "latestDataDate": "2026-11-27",
+    "currentDate": "2026-11-27",
+    "eventCount": 4566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,23 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
+      "CN",
       "GLOBAL"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2026-09-02",
-    "latest_disclosed_at": "2026-09-02",
+    "latest_disclosed_at": "2026-11-26",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "angel",
       "multi_round"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "FICO-79c0b01d7258dd9a",
+        "canonical_entity_id": "",
+        "name": "华源智因"
+      },
       {
         "entity_id": "EN-2a92da4bc5db543c",
         "canonical_entity_id": "",
@@ -85,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-35e23a84bca9a708",
+        "funding_insight_id": "FI-daa4c6164af2bae5",
+        "event_ids": [
+          "EV-73b16181361a7991"
+        ],
+        "company_entity_id": "FICO-79c0b01d7258dd9a",
+        "company_canonical_entity_id": "",
+        "company_name": "华源智因",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-11-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+            "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+            "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+            "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+            "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e84d2161a4927439",
         "funding_insight_id": "FI-29f297142676a40b",
@@ -127,6 +174,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-e66ee18a4916bc74",
+        "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+        "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+        "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+        "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+        "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+      },
       {
         "source_id": "FISRC-4ce1b109c402e02b",
         "source_url": "https://i.ifeng.com/c/8w5nAa2tSBS",
@@ -173,6 +228,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：华源智因 · 天使轮 · 2026-11-26 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e66ee18a4916bc74"
+        },
+        {
           "description": "融资来源记录：Violoop · 多轮融资 · 2026-09-02 · 本轮参投 · 亿级。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4ce1b109c402e02b"
         }
@@ -210,6 +269,14 @@
           "source_content_hash": "48c31a9b5011c5b35ec20c7829f2f2a4360424fea8b1f1d35f2fccf2fa7f7380",
           "quote": "现使用的徽标“啟赋资本”与原“启赋资本”均代表深圳市启赋资本管理有限公司。",
           "quote_hash": "960c2c758077fab232ae39416cc81ce0923fa2dc3d1c317b6b8ce26b9519708f"
+        },
+        {
+          "source_id": "FISRC-e66ee18a4916bc74",
+          "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+          "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+          "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+          "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+          "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
         },
         {
           "source_id": "FISRC-4ce1b109c402e02b",

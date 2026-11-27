@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-26",
-    "currentDate": "2026-11-26",
-    "eventCount": 4565,
+    "latestDataDate": "2026-11-27",
+    "currentDate": "2026-11-27",
+    "eventCount": 4566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -139,7 +139,7 @@
       "EN-6fcba5d96a4fadfd"
     ],
     "firstSeen": "2026-02-17",
-    "lastSeen": "2026-11-26",
+    "lastSeen": "2026-11-27",
     "relationIds": [
       "REL2-30051dc5d7668662"
     ],
@@ -201,8 +201,8 @@
         "EV-3c51bcb5e99d2b68"
       ],
       "hardware": [
-        "EV-01f2b125844de734",
         "EV-5ed60b6f14a05b3e",
+        "EV-01f2b125844de734",
         "EV-31782f0824ae1db1"
       ],
       "organizationPeople": [],
@@ -212,6 +212,21 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-5ed60b6f14a05b3e",
+        "dataDate": "2026-11-27",
+        "date": "2026-11-24",
+        "eventType": "hardware_capacity",
+        "eventTypeLabel": "硬件产能",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "马斯克承认 AI 研发落后对手：出租 SpaceXSI 算力比自研 Grok 更赚钱",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e78bdebae031095b"
+        ]
+      },
       {
         "id": "EV-471935cae3200f2c",
         "dataDate": "2026-11-26",
@@ -309,21 +324,6 @@
         "displayTags": [],
         "entityIds": [
           "EN-c70eca6b0f88f44d",
-          "EN-e78bdebae031095b"
-        ]
-      },
-      {
-        "id": "EV-5ed60b6f14a05b3e",
-        "dataDate": "2026-11-25",
-        "date": "2026-11-24",
-        "eventType": "hardware_capacity",
-        "eventTypeLabel": "硬件产能",
-        "eventGroup": "AI 硬件",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "马斯克承认 AI 研发落后对手：出租 SpaceXSI 算力比自研 Grok 更赚钱",
-        "displayTags": [],
-        "entityIds": [
           "EN-e78bdebae031095b"
         ]
       },
@@ -3285,7 +3285,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-11-25"
+      "lastSeen": "2026-11-27"
     },
     {
       "id": "TX-product_form-model",
@@ -6161,6 +6161,33 @@
   "fde": [],
   "hardware": [
     {
+      "id": "HW-8e3f64354ff30375",
+      "eventId": "EV-5ed60b6f14a05b3e",
+      "dataDate": "2026-11-27",
+      "date": "2026-11-24",
+      "title": "马斯克承认 AI 研发落后对手：出租 SpaceXSI 算力比自研 Grok 更赚钱",
+      "hardwareType": "data_center",
+      "eventType": "hardware_capacity",
+      "eventTypeLabel": "硬件产能",
+      "computeLayer": "data_center",
+      "supplier": "SpaceX",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "美国",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://www.ithome.com/1/031/246.htm",
+      "sourceName": "www.ithome.com",
+      "sourceDate": "2026-11-24",
+      "entityIds": [
+        "EN-e78bdebae031095b"
+      ]
+    },
+    {
       "id": "HW-f5ced0901715551e",
       "eventId": "EV-01f2b125844de734",
       "dataDate": "2026-11-26",
@@ -6187,33 +6214,6 @@
         "EN-e78bdebae031095b",
         "EN-c70eca6b0f88f44d",
         "EN-bbdefa2950f49882"
-      ]
-    },
-    {
-      "id": "HW-8e3f64354ff30375",
-      "eventId": "EV-5ed60b6f14a05b3e",
-      "dataDate": "2026-11-25",
-      "date": "2026-11-24",
-      "title": "马斯克承认 AI 研发落后对手：出租 SpaceXSI 算力比自研 Grok 更赚钱",
-      "hardwareType": "data_center",
-      "eventType": "hardware_capacity",
-      "eventTypeLabel": "硬件产能",
-      "computeLayer": "data_center",
-      "supplier": "SpaceX",
-      "customer": "未披露",
-      "processNode": "未披露",
-      "capacity": "未披露",
-      "capacityUnit": "",
-      "site": "未披露",
-      "region": "美国",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [],
-      "sourceUrl": "https://www.ithome.com/1/031/246.htm",
-      "sourceName": "www.ithome.com",
-      "sourceDate": "2026-11-24",
-      "entityIds": [
-        "EN-e78bdebae031095b"
       ]
     },
     {
