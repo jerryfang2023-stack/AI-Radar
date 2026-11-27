@@ -54,7 +54,7 @@ Page({
   },
 
   applyData(state) {
-    const library = buildEntityLibrary(state.index.cards, state.details);
+    const library = buildEntityLibrary(state.index.cards, state.details, state.index.events);
     const entity = findEntity(library, this.type, this.key);
     const profile=getResearchProfiles().find(p=>p.type===this.type&&p.key===this.key);
     if(profile){this.setData({entity:{rounds:[],companyLinks:[],categories:[],...entity,...profile}});return;}
@@ -77,7 +77,7 @@ Page({
 
   openFunding(event) {
     const id = event.currentTarget.dataset.id;
-    if (id) this.openProtectedUrl(`/pages/detail/index?id=${id}`);
+    if (id) this.openProtectedUrl(`/pages/detail/index?id=${encodeURIComponent(id)}`);
   },
 
   openEntity(event) {

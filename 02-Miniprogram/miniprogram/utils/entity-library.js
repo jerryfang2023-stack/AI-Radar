@@ -25,7 +25,7 @@ function personEntityKey(founder, companyName) {
   return id ? `id:${id}` : `${entityKey(founder.name)}|${companyEntityKey(companyName)}`;
 }
 
-function buildEntityLibrary(cards = [], details = {}) {
+function buildEntityLibrary(cards = [], details = {}, events = cards) {
   const companies = new Map();
   const investors = new Map();
   const people = new Map();
@@ -68,11 +68,10 @@ function buildEntityLibrary(cards = [], details = {}) {
       if (!name) return;
       const key = `${companyId}|${entityKey(name)}`;
       const metadata = (detail.products || []).find(item => item.name === name) || {};
-      const item = products.get(key) || { key, type: 'products', name, initial: name.slice(0,1).toUpperCase(), summary: metadata.description || '产品用途暂未披露', website: metadata.website || '', companyLinks: [{name:companyName,key:companyId}], companiesText: companyName, categories: [], rounds: [], latestDate: card.date || '', markets: [] };
+      const item = products.get(key) || { key, type: 'products', name, initial: name.slice(0,1).toUpperCase(), summary: metadata.description || '产品用途暂未披露', website: metadata.website || '', companyLinks: [{name:companyName,key:companyId}], companiesText: companyName, categories: [], rounds: [], latestDate: '', markets: [] };
       if (item.summary === '产品用途暂未披露' && metadata.description) item.summary = metadata.description;
-      appendUnique(item.categories, metadata.scenario || card.marketApplication || card.category);
+      appendUnique(item.categories, card.subcategory || card.category);
       appendUnique(item.markets, card.marketRegion);
-      item.rounds.push({id:card.id,company:companyName,date:card.date,round:card.round,amount:card.amount});
       products.set(key,item);
     });
 
@@ -127,6 +126,15 @@ function buildEntityLibrary(cards = [], details = {}) {
     });
   });
 
+  for (const event of events) {
+    for (const name of new Set((event.products || []).map(entityKey))) {
+      const product = products.get(`${companyEntityKey(event.company)}|${name}`);
+      if (!product) continue;
+      product.rounds.push({ id: event.id, company: event.company, date: event.date, round: event.round, amount: event.amount });
+      if (event.date > product.latestDate) product.latestDate = event.date;
+    }
+  }
+
   const companyItems = Array.from(companies.values()).map((item) => ({
     ...item,
     roundCount: item.rounds.length,
@@ -165,11 +173,19 @@ function buildEntityLibrary(cards = [], details = {}) {
     searchText: normalize([item.name, ...item.roles, ...item.companies, ...item.categories].join(" ")),
   })).sort((left, right) => right.companyCount - left.companyCount || String(right.latestDate).localeCompare(String(left.latestDate)) || left.name.localeCompare(right.name));
 
-  const productItems = [...products.values()].map(item => ({...item,categoriesText:item.categories.join(' · '),categoriesFullText:item.categories.join('、'),companyCount:1,roundCount:item.rounds.length,searchText:normalize([item.name,item.summary,item.companiesText,...item.categories].join(' '))}));
+  const productItems = [...products.values()].map(item => ({
+    ...item,
+    rounds: item.rounds.sort((left, right) => String(right.date || "").localeCompare(String(left.date || ""))),
+    categoriesText: item.categories.join(" · "),
+    categoriesFullText: item.categories.join("、"),
+    companyCount: 1,
+    roundCount: item.rounds.length,
+    searchText: normalize([item.name, item.summary, item.companiesText, ...item.categories].join(" ")),
+  }));
   const library = { companies: companyItems, products: productItems, investors: investorItems, people: peopleItems };
   const byId = new Map(cards.map(card=>[card.id,card]));
   Object.values(library).forEach(items=>items.forEach(item=>{
-    item.markets = [...new Set(item.rounds.map(round=>byId.get(round.id)?.marketRegion).filter(Boolean))];
+    if (item.type !== "products") item.markets = [...new Set(item.rounds.map(round=>byId.get(round.id)?.marketRegion).filter(Boolean))];
     item.typeLabel = {companies:'公司',products:'产品',investors:'投资机构',people:'人物库'}[item.type];
     item.subtitle = item.summary || item.roleText || item.companiesText || '资料暂未披露';
     item.latestEventId = item.rounds[0]?.id || '';

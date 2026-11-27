@@ -17,7 +17,7 @@
     <block wx:else>
     <view class="section-heading"><view><text>按最近融资排序</text><text class="serif">代表公司</text></view><text class="mono">{{snapshot.companyCount}} 家</text></view>
     <view class="company-list">
-      <button wx:for="{{snapshot.companies}}" wx:key="id" class="company-row" data-id="{{item.id}}" bindtap="openFunding"><view class="company-avatar serif">{{item.initial}}</view><view class="company-copy"><text>{{item.company}}</text><text>{{item.productForm || item.category}} · {{item.date}}</text></view><view class="company-amount"><text class="mono">{{item.amount}}</text><text>查看详情 ›</text></view></button>
+      <button wx:for="{{snapshot.companies}}" wx:key="id" class="company-row" data-id="{{item.fundingResourceId || item.id}}" bindtap="openFunding"><view class="company-avatar serif">{{item.initial}}</view><view class="company-copy"><text>{{item.company}}</text><text>{{item.productForm || item.category}} · {{item.date}}</text></view><view class="company-amount"><text class="mono">{{item.amount}}</text><text>查看详情 ›</text></view></button>
     </view>
     <view wx:if="{{snapshot.investors.length}}" class="investor-section"><view class="section-heading"><view><text>近 6 个月</text><text class="serif">活跃机构</text></view><text>参与轮次</text></view><view class="investor-tags"><text wx:for="{{snapshot.investors}}" wx:key="name">{{item.name}} <b class="mono">{{item.count}}</b></text></view></view>
     </block>

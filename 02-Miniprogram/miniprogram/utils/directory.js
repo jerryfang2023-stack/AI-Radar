@@ -2,7 +2,8 @@ const {buildEntityLibrary}=require('./entity-library.js');
 const {getResearchProfiles}=require('./research-profiles.js');
 const TYPES=[{id:'companies',name:'公司',icon:'company'},{id:'products',name:'产品',icon:'product'},{id:'investors',name:'投资机构',icon:'investor'},{id:'people',name:'人物库',icon:'person'}];
 function directory(state,{type='all',market='china',query='',category='全部赛道',limit=20}={}){
- const library=buildEntityLibrary(state.index.cards.filter(card=>market==='all'||card.marketRegion===market),state.details);
+ const inMarket=card=>market==='all'||card.marketRegion===market;
+ const library=buildEntityLibrary(state.index.cards.filter(inMarket),state.details,state.index.events?.filter(inMarket));
  const profiles=getResearchProfiles();
  const aliases=new Set(profiles.map(p=>p.legacyInvestorKey).filter(Boolean));
  const base=TYPES.flatMap(t=>library[t.id]||[]).filter(e=>!(e.type==='investors'&&aliases.has(e.key))&&(market==='all'||e.markets.includes(market))&&(type==='all'||e.type===type));
