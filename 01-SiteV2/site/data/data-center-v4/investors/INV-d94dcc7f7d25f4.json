@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-26",
-    "currentDate": "2026-11-26",
-    "eventCount": 4565,
+    "latestDataDate": "2026-11-27",
+    "currentDate": "2026-11-27",
+    "eventCount": 4566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -61,26 +61,32 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 3,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
     "first_disclosed_at": "2026-07-13",
-    "latest_disclosed_at": "2026-09-30",
+    "latest_disclosed_at": "2026-11-26",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 3,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
+      "angel",
       "multi_round",
       "pre_series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "FICO-79c0b01d7258dd9a",
+        "canonical_entity_id": "",
+        "name": "华源智因"
+      },
       {
         "entity_id": "EN-e22521e7de65d819",
         "canonical_entity_id": "EN-e22521e7de65d819",
@@ -98,6 +104,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-0eaee20ff93fcd3e",
+        "funding_insight_id": "FI-daa4c6164af2bae5",
+        "event_ids": [
+          "EV-73b16181361a7991"
+        ],
+        "company_entity_id": "FICO-79c0b01d7258dd9a",
+        "company_canonical_entity_id": "",
+        "company_name": "华源智因",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-11-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+            "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+            "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+            "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+            "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6988ab207d5f081e",
         "funding_insight_id": "FI-219ba35e15dc4fb9",
@@ -327,6 +373,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-e66ee18a4916bc74",
+        "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+        "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+        "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+        "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+        "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+      },
+      {
         "source_id": "FISRC-09a0a8d8826c2cfe",
         "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
         "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
@@ -412,6 +466,10 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：华源智因 · 天使轮 · 2026-11-26 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e66ee18a4916bc74"
+        },
+        {
           "description": "融资来源记录：芯光界 · 多轮融资 · 2026-09-30 · 本轮参投 · 近10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-09a0a8d8826c2cfe"
         },
@@ -455,6 +513,14 @@
           "quote_hash": "0450d404b7d4986faea8c1e25c09c9c9cae769c488fb05dd3b569c25f40e30b0"
         },
         {
+          "source_id": "FISRC-e66ee18a4916bc74",
+          "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+          "source_title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+          "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+          "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+          "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+        },
+        {
           "source_id": "FISRC-09a0a8d8826c2cfe",
           "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
           "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
@@ -469,14 +535,6 @@
           "source_content_hash": "c5b71d91ca82e3f7a35c6ed1119b2c49f2be359e102c13b0b78c4ed76ac706b1",
           "quote": "投资方包括徐汇资本等政府产业基金、华映资本和经纬创投等头部财务机构、英诺基金与水木清华等清华系资本，以及具身智能、汽车产业链龙头企业等",
           "quote_hash": "ece0f1d926cedbeba4071e2121c06f1c98a8a61a8f9fbd0ee5f7822d56e4ddac"
-        },
-        {
-          "source_id": "FISRC-410928b8ba42b627",
-          "source_url": "https://www.cls.cn/detail/2466861",
-          "source_title": "晰见科技完成近5亿元天使轮融资",
-          "source_content_hash": "addd4b9820ad617a",
-          "quote": "本轮投资方包括徐汇科创投、经纬创投、华映资本、英诺基金、水木清华校友种子基金。",
-          "quote_hash": "98cd229dc0b6d4958d71cd002b92b03e6c5bdb23ea547745e7367ac89a867230"
         }
       ],
       "last_verified_at": "2026-10-04",
@@ -487,7 +545,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[5].role": {
+        "activities[6].role": {
           "text": "Pre-A+++轮领投",
           "source_hash": "2bc4a0506b339486d82e3b953efe6c83dce23da9ab475f137cd102ae5118e3f6",
           "provider": "deepseek",

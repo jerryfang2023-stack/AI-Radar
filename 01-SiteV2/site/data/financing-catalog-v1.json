@@ -5,17 +5,17 @@
     "site_version": "SITE-V4.6.1-research-retirement",
     "column_version": "FUNDING-INSIGHT-V1.5.0-china-market",
     "taxonomy_version": "AI-FUNDING-TAGS-1.0",
-    "latest_date": "2026-11-26",
-    "last_checked_date": "2026-11-26",
-    "latest_financing_date": "2026-11-25",
-    "generated_at": "2026-11-26T02:55:42.358Z",
-    "card_count": 758,
-    "china_market_card_count": 164,
+    "latest_date": "2026-11-27",
+    "last_checked_date": "2026-11-27",
+    "latest_financing_date": "2026-11-26",
+    "generated_at": "2026-11-27T00:41:38.550Z",
+    "card_count": 759,
+    "china_market_card_count": 165,
     "duplicate_rounds_removed": 27,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-11-26T02:57:39.423Z"
+      "generated_at": "2026-11-27T00:42:55.811Z"
     },
     "market_category_framework": {
       "name": "观澜 AI 融资分类",
@@ -35,7 +35,7 @@
         }
       ]
     },
-    "event_count": 810,
+    "event_count": 811,
     "aggregation_strategy": "reviewed_funding_subject",
     "scope": "all_ai_financing_except_embodied_and_robotics",
     "excluded_count": 101,
@@ -740,6 +740,987 @@
   "cards": [
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-daa4c6164af2bae5",
+      "triggered_by_event_id": "EV-73b16181361a7991",
+      "as_of_date": "2026-11-27",
+      "company": {
+        "entity_id": "FICO-79c0b01d7258dd9a",
+        "name": "华源智因",
+        "full_name": "华源智因（北京）生物科技有限公司",
+        "website": "",
+        "summary": "AI虚拟细胞（AIVC）企业，致力于重塑AIVC行业新范式，从临床AIVC切入搭建“生命反应的OS”。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "杜润诗",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "华源智因创始人杜润诗表示",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "9f0e27ce45a5aa07002cf61df2b884c52134b665863758ba6b95e77923e1a431"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "quote": "华源智因（北京）生物科技有限公司（下称“华源智因”）（GeneSight）是一家AI虚拟细胞（AIVC）企业",
+            "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+            "quote_hash": "5d20a45fbadcba95d532203a5ac8b7fde757d366e5eaca6cd00d5a78e2c382a0"
+          }
+        ],
+        "application_entity_id": "FICO-79c0b01d7258dd9a",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "天使轮",
+        "amount": "超亿元",
+        "total_raised": "",
+        "announced_at": "2026-11-26",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "华盖资本",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-c45b6ded5e082a"
+          },
+          {
+            "name": "华方资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-f1cf8163538d7c"
+          },
+          {
+            "name": "华映资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-d94dcc7f7d25f4"
+          },
+          {
+            "name": "梅花创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-4e5810f629f8b6"
+          },
+          {
+            "name": "中珠医疗",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-bf89cd8c3212f5"
+          },
+          {
+            "name": "同新基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-37aa79cabdab82"
+          },
+          {
+            "name": "讯飞创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-8b7597eee28210"
+          },
+          {
+            "name": "启赋资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-6c7bccb8750cde"
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "quote": "投资界（ID：pedaily2012）11月26日消息，华源智因宣布完成超亿元天使轮融资。",
+            "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+            "quote_hash": "7edcbc2b19f44b69bedbf1a8c85fcb9763c243bca7a8265b84d51f035ab7c65d"
+          },
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "quote": "华源智因宣布完成超亿元天使轮融资",
+            "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+            "quote_hash": "8a1e08d727ec28b88d803924480309a65403a9c8a7f47be9fb28c730ea8f8209"
+          },
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投，向阳资本担任长期独 家财务顾问",
+            "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+            "quote_hash": "203448212265411e472cb1b39eb97366615cab75916f7d64dbb0473b3cbd2049"
+          }
+        ],
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-73b16181361a7991",
+            "round_original": "天使轮",
+            "amount": "超亿元",
+            "announced_at": "2026-11-26",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "投资界（ID：pedaily2012）11月26日消息，华源智因宣布完成超亿元天使轮融资。",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "7edcbc2b19f44b69bedbf1a8c85fcb9763c243bca7a8265b84d51f035ab7c65d"
+              },
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "华源智因宣布完成超亿元天使轮融资",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "8a1e08d727ec28b88d803924480309a65403a9c8a7f47be9fb28c730ea8f8209"
+              },
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投，向阳资本担任长期独 家财务顾问",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "203448212265411e472cb1b39eb97366615cab75916f7d64dbb0473b3cbd2049"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed",
+        "cumulative_amount": {
+          "original": "",
+          "normalized": {
+            "currency": "",
+            "value": null,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "undisclosed",
+            "display_zh": ""
+          },
+          "basis": "known_rounds_only",
+          "known_round_totals": [
+            {
+              "currency": "CNY",
+              "value": null,
+              "min_value": 100000000,
+              "max_value": null,
+              "unit": "base",
+              "round_count": 1,
+              "status": "lower_bound",
+              "display_zh": "超过 1 亿元"
+            }
+          ],
+          "historical_round_count": 1
+        },
+        "current_source_ids": [
+          "FISRC-e66ee18a4916bc74"
+        ]
+      },
+      "products": [
+        {
+          "name": "WISE系列基座大模型",
+          "description": "细胞的“世界模型”，从亿级细胞、万级扰动数据中学习各类扰动之下细胞状态如何演化。",
+          "target_customers": "药企、临床机构",
+          "features": [
+            "从亿级细胞、万级扰动数据中学习细胞状态演化",
+            "专病专家模型经人源数据后训练逼近真实药效"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "quote": "核心的WISE系列基座大模型是细胞的\"世界模型\"，从亿级细胞、万级扰动数据中学习各类扰动之下细胞状态如何演化",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote_hash": "ac69ddabda7344a63c0f6b68a8f88cac7fdaee979bd803693b4e37a789bd10c4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "一体化智能Agent平台",
+          "description": "直接服务药物研发决策，沿研发链条覆盖靶点发现与验证、药物筛选与重定位、药效预测、毒性评估、患者分层，机制解析贯穿全程。",
+          "target_customers": "药企、临床机构",
+          "features": [
+            "覆盖靶点发现与验证",
+            "药物筛选与重定位",
+            "药效预测",
+            "毒性评估",
+            "患者分层"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "quote": "华源智因构建了一体化智能Agent平台。它直接服务药物研发决策",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote_hash": "8b12989a6ba9c39c358f557f5abde9273515188ef7727df02d876b852996d1b8"
+            },
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "quote": "平台沿研发链条覆盖靶点发现与验证、药物筛选与重定位、药效预测、毒性评估、患者分层，机制解析贯穿全程",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote_hash": "fdacf9b914ee601e4bcd3e81945ebb753bbd784547406ad2cca8f4e3cb90adc5"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "UniOme单细胞多模态测序平台",
+          "description": "自研测序平台，实现同细胞状态下多模态信息的严格对齐。",
+          "target_customers": "药企、临床机构",
+          "features": [
+            "同细胞状态下多模态信息严格对齐"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "quote": "自研UniOme单细胞多模态测序平台，华源智因实现了同细胞状态下多模态信息的严格对齐",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote_hash": "2ce0bf1deb4278712b2e5449a825407b170618e01d42380d0ee0e1b0737ba41f"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "拥有众多临床管线的上市公司",
+          "industry": "生物医药",
+          "use_case": "以处于临床二期的First in Class小分子药物管线作为试点，共建专属数据集，搭建专属器官的药效模型，同步输出机制解析，已签署里程碑付款协议。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "quote": "华源智因与拥有众多临床管线的上市公司达成合作，以其中一个处于临床二期的First in Class小分子药物管线作为试点",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote_hash": "a018df3b892295b00c5bc9dd311e3229f33e83dd7744934fbc47e9c9dd7ec069"
+            },
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "quote": "双方已签署里程碑付款协议",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote_hash": "99fd8082ccae9d970f4186994ab9deccf10492f102c3eba5924cfb427be78843"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "超亿元",
+          "observed_at": "2026-11-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "quote": "华源智因宣布完成超亿元天使轮融资",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote_hash": "8a1e08d727ec28b88d803924480309a65403a9c8a7f47be9fb28c730ea8f8209"
+            }
+          ]
+        },
+        {
+          "label": "非小细胞肺癌患者临床验证例数",
+          "value": "27例",
+          "observed_at": "2026-11-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "quote": "在超一线城市三甲医院完成的27例非小细胞肺癌患者中",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote_hash": "6b52a98da27dcacc35a3dbc24b4304ac4260c4ba2e45e8eee5b29142e50c0c41"
+            }
+          ]
+        },
+        {
+          "label": "合作头部三甲医院数量",
+          "value": "十余家",
+          "observed_at": "2026-11-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "quote": "联合十余家全国头部三甲医院与头部类器官芯片公司大橡科技建立深度储备合作",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote_hash": "a569bf69aeeec46f37685c6f0f256745deb149357a250bd124b8d63aafb5efa8"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "杜润诗",
+          "quote": "虚拟细胞的赛道非常宽，也很新，要搭建的基础设施也还有很多，但我们认为真正重要的是其能解决什么，应当由最后模型的落地场景出发来进行研发",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "quote": "虚拟细胞的赛道非常宽，也很新，要搭建的基础设施也还有很多，但我们认为真正重要的是其能解决什么，应当由最后模型的落地场景出发来进行研发",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote_hash": "bb7361a7b3ea7adb0f749bd1f6ddcce84673290409de9ccdf7de61c7174c424a"
+            }
+          ]
+        },
+        {
+          "speaker": "华盖资本",
+          "quote": "我们看好华源智因极强的业务落地能力及执行力，公司已于国内头部三甲医院、国内外药企建立合作，实际用AIVC赋能药企，助力生物医药产业发展。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "quote": "我们看好华源智因极强的业务落地能力及执行力，公司已于国内头部三甲医院、国内外药企建立合作，实际用AIVC赋能药企，助力生物医药产业发展。",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote_hash": "a023e65ae80ef40f9217679131f303b6280d0daa1084f00c2b2316af4725a9c2"
+            }
+          ]
+        },
+        {
+          "speaker": "罗王倩",
+          "quote": "我们看好华源智因，正是认可团队敏锐洞察训练数据的核心问题，跳出“公开数据训练模型”的同质化路径，从临床真实问题倒推数据生产标准；同时兼顾技术领 先性与商业价值验证，率先将虚拟细胞模型落地至上市药企临床II期管线",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "quote": "我们看好华源智因，正是认可团队敏锐洞察训练数据的核心问题，跳出“公开数据训练模型”的同质化路径，从临床真实问题倒推数据生产标准；同时兼顾技术领 先性与商业价值验证，率先将虚拟细胞模型落地至上市药企临床II期管线",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote_hash": "882cbaae244f48c92b7233ab5da052d56fd0684106fdbb829c876925b7770bac"
+            }
+          ]
+        },
+        {
+          "speaker": "孙玮",
+          "quote": "相对药物发现等前道环节，临床试验是试错成本更高、TAM更大的链条，其将模型从molecular level提升到cell level、助力药效预测和患者分层，符合AI for Bio的产业发展方向。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "quote": "相对药物发现等前道环节，临床试验是试错成本更高、TAM更大的链条，其将模型从molecular level提升到cell level、助力药效预测和患者分层，符合AI for Bio的产业发展方向。",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote_hash": "738a1c18a77f2bcd951c9f472a076dbe692510e4e2f82676aa3a730e0aaf1d96"
+            }
+          ]
+        },
+        {
+          "speaker": "吴世春",
+          "quote": "华源智因通过同细胞多模态对齐，让模型读到同一个细胞的完整记录，再用患者用药前后的体内配对数据校准预测。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "quote": "华源智因通过同细胞多模态对齐，让模型读到同一个细胞的完整记录，再用患者用药前后的体内配对数据校准预测。",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote_hash": "890ebb247a4df4b1c20f64bd11eef93b0507ab509b0a6a9220252f50f61cd9e0"
+            }
+          ]
+        },
+        {
+          "speaker": "isomorphiclabs.com",
+          "quote": "Isomorphic Labs announces Series C investment round",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2cce17f778912ab3",
+              "quote": "Isomorphic Labs announces Series C investment round",
+              "source_content_hash": "3e7f17016bb74b55",
+              "quote_hash": "0df61d4c57b804ded380df27bbc3ecaadc1ee2ae0d5bf26399a4a0b7fac72c90"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "华盖资本",
+            "speaker": "华盖资本",
+            "speaker_role": "投资方",
+            "rationale": "看好华源智因极强的业务落地能力及执行力，公司已与国内头部三甲医院、国内外药企建立合作，实际用AIVC赋能药企。",
+            "quote": "我们看好华源智因极强的业务落地能力及执行力，公司已于国内头部三甲医院、国内外药企建立合作，实际用AIVC赋能药企，助力生物医药产业发展。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "我们看好华源智因极强的业务落地能力及执行力，公司已于国内头部三甲医院、国内外药企建立合作，实际用AIVC赋能药企，助力生物医药产业发展。",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "a023e65ae80ef40f9217679131f303b6280d0daa1084f00c2b2316af4725a9c2"
+              }
+            ]
+          },
+          {
+            "institution": "华方资本",
+            "speaker": "罗王倩",
+            "speaker_role": "华方资本合伙人",
+            "rationale": "认可团队从临床真实问题倒推数据生产标准，并率先将虚拟细胞模型落地至上市药企临床II期管线，验证了AIVC从技术概念走向产业刚需的可行性。",
+            "quote": "我们看好华源智因，正是认可团队敏锐洞察训练数据的核心问题，跳出“公开数据训练模型”的同质化路径，从临床真实问题倒推数据生产标准；同时兼顾技术领 先性与商业价值验证，率先将虚拟细胞模型落地至上市药企临床II期管线，深度参与药效预测、靶点解析与患者分型全流程，验证了AIVC从技术概念走向产业刚需的可行性。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "我们看好华源智因，正是认可团队敏锐洞察训练数据的核心问题，跳出“公开数据训练模型”的同质化路径，从临床真实问题倒推数据生产标准；同时兼顾技术领 先性与商业价值验证，率先将虚拟细胞模型落地至上市药企临床II期管线，深度参与药效预测、靶点解析与患者分型全流程，验证了AIVC从技术概念走向产业刚需的可行性。",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "825ae6749e8e636013215dc667037ee5d614954cff8e63d10ad7ad5dcdf00f0d"
+              }
+            ]
+          },
+          {
+            "institution": "华映资本",
+            "speaker": "孙玮",
+            "speaker_role": "华映资本合伙人",
+            "rationale": "临床试验是试错成本更高、TAM更大的链条，华源智因将模型从分子层面提升到细胞层面，助力药效预测和患者分层，符合AI for Bio的产业发展方向。",
+            "quote": "相对药物发现等前道环节，临床试验是试错成本更高、TAM更大的链条，其将模型从molecular level提升到cell level、助力药效预测和患者分层，符合AI for Bio的产业发展方向。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "相对药物发现等前道环节，临床试验是试错成本更高、TAM更大的链条，其将模型从molecular level提升到cell level、助力药效预测和患者分层，符合AI for Bio的产业发展方向。",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "738a1c18a77f2bcd951c9f472a076dbe692510e4e2f82676aa3a730e0aaf1d96"
+              }
+            ]
+          },
+          {
+            "institution": "梅花创投",
+            "speaker": "吴世春",
+            "speaker_role": "梅花创投创始合伙人",
+            "rationale": "AIVC是AI for science必须布局的赛道，华源智因通过同细胞多模态对齐让模型读到同一个细胞的完整记录，并用患者体内配对数据校准预测，其价值在于回答药物在人体内是否有效。",
+            "quote": "AIVC 是 AI for science 必须布局的赛道。传统测序只能跨细胞拼接DNA、RNA与蛋白信息，模型学到的是“拼图”，而非真实的细胞状态。华源智因通过同细胞多模态对齐，让模型读到同一个细胞的完整记录，再用患者用药前后的体内配对数据校准预测。在我们看来，AIVC的价值不在于生成更多基因扰动结果，而在于回答药物在人体内是否有效。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "AIVC 是 AI for science 必须布局的赛道。传统测序只能跨细胞拼接DNA、RNA与蛋白信息，模型学到的是“拼图”，而非真实的细胞状态。华源智因通过同细胞多模态对齐，让模型读到同一个细胞的完整记录，再用患者用药前后的体内配对数据校准预测。在我们看来，AIVC的价值不在于生成更多基因扰动结果，而在于回答药物在人体内是否有效。",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "c21786e699d1effbc37996f09ada2ec01aaf2ce6e60f837a3fed2c7f38e808af"
+              }
+            ]
+          },
+          {
+            "institution": "启赋资本",
+            "speaker": "宋昶",
+            "speaker_role": "启赋资本合伙人",
+            "rationale": "华源智因以人类细胞药物响应世界模型兑现愿景，底层自主产生人体样本扰动数据，上层持续进化模型能力，形成数据与模型相互强化的飞轮。",
+            "quote": "华源智因正以人类细胞药物响应世界模型兑现这一愿景：底层是自主产生的人体样本扰动数据，上层是持续进化的模型能力，形成数据与模型相互强化的飞轮。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "华源智因正以人类细胞药物响应世界模型兑现这一愿景：底层是自主产生的人体样本扰动数据，上层是持续进化的模型能力，形成数据与模型相互强化的飞轮。",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "51912c9f756c0c744d6bd78a4f94e62ccb9152674b5df4296e4010b17822e305"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是华源智因能否以同细胞多模态对齐的临床真实数据构建AIVC模型，并在药企临床管线中验证药效预测与患者分层的可迁移性。当前已验证信号包括：27例非小细胞肺癌患者分层预测与临床实际表现一致、首个虚拟细胞商业化订单落地、与上市公司就临床II期管线签署里程碑付款协议。判断边界在于：上述验证仍属小样本与单管线试点，模型跨适应症、跨药企的泛化能力及里程碑付款的实际兑现节奏尚未披露。",
+        "validated_signals": [
+          "27例非小细胞肺癌患者分层预测结果与临床实际表现一致",
+          "已实现首个虚拟细胞商业化订单",
+          "与拥有众多临床管线的上市公司就临床II期First in Class小分子药物管线签署里程碑付款协议",
+          "已跑通首例患者完整数据收集闭环，打通从患者体内到体外验证的数据回流链路"
+        ],
+        "risks": [
+          "高质量、可对齐的人体多组学数据稀缺，可能制约模型训练与泛化",
+          "临床验证仅覆盖27例非小细胞肺癌患者及单一临床II期管线试点，跨适应症与跨药企的可迁移性仍待验证",
+          "里程碑付款协议的实际兑现节奏与金额未披露，商业化收入确定性有限",
+          "AIVC赛道竞争加剧，技术落地进度需持续跟踪"
+        ],
+        "sector": "药物研发与生命科学",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是华源智因能否以同细胞多模态对齐的临床真实数据构建AIVC模型，并在药企临床管线中验证药效预测与患者分层的可迁移性。当前已验证信号包括：27例非小细胞肺癌患者分层预测与临床实际表现一致、首个虚拟细胞商业化订单落地、与上市公司就临床II期管线签署里程碑付款协议。判断边界在于：上述验证仍属小样本与单管线试点，模型跨适应症、跨药企的泛化能力及里程碑付款的实际兑现节奏尚未披露。",
+          "evidence_signals": [
+            "27例非小细胞肺癌患者分层预测结果与临床实际表现一致",
+            "已实现首个虚拟细胞商业化订单",
+            "与拥有众多临床管线的上市公司就临床II期First in Class小分子药物管线签署里程碑付款协议",
+            "已跑通首例患者完整数据收集闭环，打通从患者体内到体外验证的数据回流链路"
+          ],
+          "risks": [
+            "高质量、可对齐的人体多组学数据稀缺，可能制约模型训练与泛化",
+            "临床验证仅覆盖27例非小细胞肺癌患者及单一临床II期管线试点，跨适应症与跨药企的可迁移性仍待验证",
+            "里程碑付款协议的实际兑现节奏与金额未披露，商业化收入确定性有限",
+            "AIVC赛道竞争加剧，技术落地进度需持续跟踪"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "WISE系列基座大模型",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "一体化智能Agent平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "UniOme单细胞多模态测序平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "杜润诗",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "华盖资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "华方资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "华映资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "梅花创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中珠医疗",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "同新基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "讯飞创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "启赋资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "拥有众多临床管线的上市公司",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-e66ee18a4916bc74",
+          "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+          "title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+          "publisher": "news.pedaily.cn",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-27T00:19:45.884Z",
+          "content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+          "source_artifact_id": "SA-39be578ea150ad7e",
+          "raw_id": "RAW-590cc08a53b62a45",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-2cce17f778912ab3",
+          "source_url": "https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-c-investment-round",
+          "title": "Isomorphic Labs announces Series C investment round - Isomorphic Labs",
+          "publisher": "isomorphiclabs.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-27T00:41:17.413Z",
+          "content_hash": "3e7f17016bb74b55",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+        "generated_at": "2026-11-27T00:41:38.116Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-11-27T00:41:38.116Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "UniOme单细胞多模态测序平台",
+            "WISE系列基座大模型",
+            "一体化智能Agent平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "杜润诗"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-73b16181361a7991"
+      ],
+      "aggregation": {
+        "key": "FICO-79c0b01d7258dd9a|angel|CNY:lower_bound:100000000:100000000::|2026-11-26",
+        "event_count": 1,
+        "strategy": "reviewed_funding_subject",
+        "subject_id": "FICO-79c0b01d7258dd9a",
+        "source_card_count": 1
+      },
+      "historical_rounds": [
+        {
+          "funding_insight_id": "FI-daa4c6164af2bae5",
+          "event_ids": [
+            "EV-73b16181361a7991"
+          ],
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "超亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": 100000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 1 亿元"
+          },
+          "announced_at": "2026-11-26",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": true,
+          "investors": [
+            {
+              "name": "华盖资本",
+              "role": "本轮领投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-e66ee18a4916bc74",
+                  "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                  "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                  "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-c45b6ded5e082a"
+            },
+            {
+              "name": "华方资本",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-e66ee18a4916bc74",
+                  "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                  "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                  "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-f1cf8163538d7c"
+            },
+            {
+              "name": "华映资本",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-e66ee18a4916bc74",
+                  "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                  "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                  "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-d94dcc7f7d25f4"
+            },
+            {
+              "name": "梅花创投",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-e66ee18a4916bc74",
+                  "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                  "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                  "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-4e5810f629f8b6"
+            },
+            {
+              "name": "中珠医疗",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-e66ee18a4916bc74",
+                  "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                  "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                  "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-bf89cd8c3212f5"
+            },
+            {
+              "name": "同新基金",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-e66ee18a4916bc74",
+                  "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                  "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                  "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-37aa79cabdab82"
+            },
+            {
+              "name": "讯飞创投",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-e66ee18a4916bc74",
+                  "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                  "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                  "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-8b7597eee28210"
+            },
+            {
+              "name": "启赋资本",
+              "role": "本轮参投",
+              "evidence_refs": [
+                {
+                  "source_id": "FISRC-e66ee18a4916bc74",
+                  "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                  "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                  "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+                }
+              ],
+              "entity_id": null,
+              "institution_id": "INV-6c7bccb8750cde"
+            }
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "quote": "投资界（ID：pedaily2012）11月26日消息，华源智因宣布完成超亿元天使轮融资。",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote_hash": "7edcbc2b19f44b69bedbf1a8c85fcb9763c243bca7a8265b84d51f035ab7c65d"
+            },
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "quote": "华源智因宣布完成超亿元天使轮融资",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote_hash": "8a1e08d727ec28b88d803924480309a65403a9c8a7f47be9fb28c730ea8f8209"
+            },
+            {
+              "source_id": "FISRC-e66ee18a4916bc74",
+              "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投，向阳资本担任长期独 家财务顾问",
+              "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+              "quote_hash": "203448212265411e472cb1b39eb97366615cab75916f7d64dbb0473b3cbd2049"
+            }
+          ]
+        }
+      ],
+      "market_scope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "funding_company_evidence:china_legal_entity:华源智因（北京）生物科技有限公司"
+        ],
+        "source_registry_ids": []
+      },
+      "product_form": {
+        "id": "model-api",
+        "name": "模型与 API",
+        "dimension": "financing_product_form"
+      },
+      "market_category": {
+        "id": "industry",
+        "name": "行业 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "life-sciences",
+        "name": "药物研发与生命科学",
+        "dimension": "financing_subsector"
+      },
+      "market_application": null,
+      "links": {
+        "company": "",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-73b16181361a7991"
+      },
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "industry",
+          "name": "行业 AI"
+        },
+        "subsector": {
+          "id": "life-sciences",
+          "name": "药物研发与生命科学"
+        },
+        "product_form": {
+          "id": "model-api",
+          "name": "模型与 API"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "quote": "华源智因（北京）生物科技有限公司（下称“华源智因”）（GeneSight）是一家AI虚拟细胞（AIVC）企业"
+          },
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "quote": "核心的WISE系列基座大模型是细胞的\"世界模型\"，从亿级细胞、万级扰动数据中学习各类扰动之下细胞状态如何演化"
+          },
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "quote": "华源智因构建了一体化智能Agent平台。它直接服务药物研发决策"
+          },
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "quote": "平台沿研发链条覆盖靶点发现与验证、药物筛选与重定位、药效预测、毒性评估、患者分层，机制解析贯穿全程"
+          }
+        ],
+        "rationale": "该公司以细胞基座大模型和智能体平台服务药物研发决策，主营生命科学行业AI。"
+      },
+      "source_card_ids": [
+        "FI-daa4c6164af2bae5"
+      ]
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-1ba6a214a4601f1a",
       "triggered_by_event_id": "EV-81b0b4ba7a31be41",
       "as_of_date": "2026-11-26",
@@ -1369,6 +2350,18 @@
         "company": "",
         "relation_map": "",
         "funding_event": "data-center.html?view=events&detail=event&id=EV-81b0b4ba7a31be41"
+      },
+      "translations": {
+        "zh-CN": {
+          "products[1].features[1]": {
+            "text": "Builder Pack 工具包",
+            "source_hash": "22918ac42beb1f17333f05921d1c3826fe67b9f9e755dfc37095e0d24299d172",
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "translated_at": "2026-11-27T00:42:55.811Z",
+            "status": "translated"
+          }
+        }
       },
       "financing_tags": {
         "version": "AI-FUNDING-TAGS-1.0",
@@ -708712,6 +709705,299 @@
     }
   ],
   "event_cards": [
+    {
+      "funding_insight_id": "FI-daa4c6164af2bae5",
+      "triggered_by_event_id": "EV-73b16181361a7991",
+      "source_event_ids": [
+        "EV-73b16181361a7991"
+      ],
+      "subject_card_id": "FI-daa4c6164af2bae5",
+      "as_of_date": "2026-11-27",
+      "market_scope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "funding_company_evidence:china_legal_entity:华源智因（北京）生物科技有限公司"
+        ],
+        "source_registry_ids": []
+      },
+      "company": {
+        "entity_id": "FICO-79c0b01d7258dd9a",
+        "application_entity_id": "FICO-79c0b01d7258dd9a",
+        "name": "华源智因",
+        "full_name": "华源智因（北京）生物科技有限公司",
+        "summary": "AI虚拟细胞（AIVC）企业，致力于重塑AIVC行业新范式，从临床AIVC切入搭建“生命反应的OS”。",
+        "website": "",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "杜润诗",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "华源智因创始人杜润诗表示",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "9f0e27ce45a5aa07002cf61df2b884c52134b665863758ba6b95e77923e1a431"
+              }
+            ],
+            "entity_id": null
+          }
+        ]
+      },
+      "financing": {
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount": "超亿元",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-11-26",
+        "disclosure_status": "disclosed",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "华盖资本",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-c45b6ded5e082a"
+          },
+          {
+            "name": "华方资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-f1cf8163538d7c"
+          },
+          {
+            "name": "华映资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-d94dcc7f7d25f4"
+          },
+          {
+            "name": "梅花创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-4e5810f629f8b6"
+          },
+          {
+            "name": "中珠医疗",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-bf89cd8c3212f5"
+          },
+          {
+            "name": "同新基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-37aa79cabdab82"
+          },
+          {
+            "name": "讯飞创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-8b7597eee28210"
+          },
+          {
+            "name": "启赋资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e66ee18a4916bc74",
+                "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投",
+                "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+                "quote_hash": "6d8ab8fe603a47b20742ec91f8d7a82440955112b6d8eb922e25fe257aa1c0cc"
+              }
+            ],
+            "entity_id": null,
+            "institution_id": "INV-6c7bccb8750cde"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "quote": "投资界（ID：pedaily2012）11月26日消息，华源智因宣布完成超亿元天使轮融资。",
+            "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+            "quote_hash": "7edcbc2b19f44b69bedbf1a8c85fcb9763c243bca7a8265b84d51f035ab7c65d"
+          },
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "quote": "华源智因宣布完成超亿元天使轮融资",
+            "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+            "quote_hash": "8a1e08d727ec28b88d803924480309a65403a9c8a7f47be9fb28c730ea8f8209"
+          },
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "quote": "本轮由华盖资本领投，华方资本、华映资本、梅花创投（及中珠医疗）、同新基金、讯飞创投、启赋资本跟投，向阳资本担任长期独 家财务顾问",
+            "source_content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+            "quote_hash": "203448212265411e472cb1b39eb97366615cab75916f7d64dbb0473b3cbd2049"
+          }
+        ],
+        "current_source_ids": [
+          "FISRC-e66ee18a4916bc74"
+        ]
+      },
+      "research_sources": [
+        {
+          "source_id": "FISRC-e66ee18a4916bc74",
+          "source_url": "https://news.pedaily.cn/202611/572441.shtml",
+          "title": "华源智因获超亿元天使轮融资，AIVC在临床管线首个商业化订单落地",
+          "publisher": "news.pedaily.cn",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-11-27T00:19:45.884Z",
+          "content_hash": "33c5e8e9d50291a563c9ff919f298ae278a7a7e3dfdef71b19de29f7540cbd66",
+          "source_artifact_id": "SA-39be578ea150ad7e",
+          "raw_id": "RAW-590cc08a53b62a45",
+          "purpose": "current_round"
+        },
+        {
+          "source_id": "FISRC-2cce17f778912ab3",
+          "source_url": "https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-c-investment-round",
+          "title": "Isomorphic Labs announces Series C investment round - Isomorphic Labs",
+          "publisher": "isomorphiclabs.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-11-27T00:41:17.413Z",
+          "content_hash": "3e7f17016bb74b55",
+          "source_artifact_id": null,
+          "raw_id": null,
+          "purpose": "unverified"
+        }
+      ],
+      "financing_tags": {
+        "version": "AI-FUNDING-TAGS-1.0",
+        "scope": "included",
+        "status": "classified",
+        "sector": {
+          "id": "industry",
+          "name": "行业 AI"
+        },
+        "subsector": {
+          "id": "life-sciences",
+          "name": "药物研发与生命科学"
+        },
+        "product_form": {
+          "id": "model-api",
+          "name": "模型与 API"
+        },
+        "customers": [
+          {
+            "id": "business",
+            "name": "企业"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "quote": "华源智因（北京）生物科技有限公司（下称“华源智因”）（GeneSight）是一家AI虚拟细胞（AIVC）企业"
+          },
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "quote": "核心的WISE系列基座大模型是细胞的\"世界模型\"，从亿级细胞、万级扰动数据中学习各类扰动之下细胞状态如何演化"
+          },
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "quote": "华源智因构建了一体化智能Agent平台。它直接服务药物研发决策"
+          },
+          {
+            "source_id": "FISRC-e66ee18a4916bc74",
+            "quote": "平台沿研发链条覆盖靶点发现与验证、药物筛选与重定位、药效预测、毒性评估、患者分层，机制解析贯穿全程"
+          }
+        ],
+        "rationale": "该公司以细胞基座大模型和智能体平台服务药物研发决策，主营生命科学行业AI。"
+      },
+      "market_category": {
+        "id": "industry",
+        "name": "行业 AI",
+        "dimension": "financing_sector"
+      },
+      "market_subcategory": {
+        "id": "life-sciences",
+        "name": "药物研发与生命科学",
+        "dimension": "financing_subsector"
+      },
+      "product_form": {
+        "id": "model-api",
+        "name": "模型与 API",
+        "dimension": "financing_product_form"
+      },
+      "products": [
+        {
+          "name": "WISE系列基座大模型"
+        },
+        {
+          "name": "一体化智能Agent平台"
+        },
+        {
+          "name": "UniOme单细胞多模态测序平台"
+        }
+      ]
+    },
     {
       "funding_insight_id": "FI-1ba6a214a4601f1a",
       "triggered_by_event_id": "EV-81b0b4ba7a31be41",
