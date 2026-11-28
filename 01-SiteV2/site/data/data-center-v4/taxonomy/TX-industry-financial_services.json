@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-27",
-    "currentDate": "2026-11-27",
-    "eventCount": 4566,
+    "latestDataDate": "2026-11-28",
+    "currentDate": "2026-11-28",
+    "eventCount": 4568,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -175,6 +175,7 @@
       "EV-3dc8d5c373ddd1f3",
       "EV-9cd1cb31e2adf5dc",
       "EV-5caf7f83664b1a2c",
+      "EV-c0b4aadfa9d48427",
       "EV-2406bc3d29c09326",
       "EV-7a3a3754522828e1",
       "EV-8b36007d0b5f377f",
@@ -284,6 +285,7 @@
       "EN-74be4cbf48e647b2",
       "EN-0078ec52880eaa14",
       "EN-4e721fae5963494d",
+      "EN-5b8422ea525b4c47",
       "EN-dff37aaec8fa23f4",
       "EN-f90aec90acf3dc85",
       "EN-18b4bbfd60f4137e",
@@ -307,7 +309,7 @@
       "HW-a033b945449628d5"
     ],
     "firstSeen": "2025-08-27",
-    "lastSeen": "2026-11-24"
+    "lastSeen": "2026-11-28"
   },
   "events": [
     {
@@ -39571,6 +39573,97 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-c0b4aadfa9d48427",
+      "dataDate": "2026-11-28",
+      "date": "2026-11-25",
+      "updatedDate": "2026-11-25",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "ING、汇丰、法兴出售AI数据中心贷款，合计约11亿美元",
+      "originalTitle": "",
+      "subject": "ING",
+      "action": "financial_performance",
+      "object": "约5亿美元数据中心贷款",
+      "metrics": [
+        "5亿",
+        "2500万",
+        "85%",
+        "180亿",
+        "3亿",
+        "90%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-5b8422ea525b4c47"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-5b8422ea525b4c47"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-5b8422ea525b4c47"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-91af7d847f80f22c",
+        "EN-b6aaf4d58914bf5c",
+        "EN-5b8422ea525b4c47"
+      ],
+      "entityNames": [
+        "ING",
+        "汇丰",
+        "法国兴业银行"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://fr.tradingview.com/news/panews:c55583a8cacdf:0/",
+      "publisher": "fr.tradingview.com"
+    },
+    {
       "id": "EV-2406bc3d29c09326",
       "dataDate": "2026-11-13",
       "date": "2026-11-10",
@@ -40353,7 +40446,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-03-12",
-      "lastSeen": "2026-11-27"
+      "lastSeen": "2026-11-28"
     },
     {
       "id": "EN-5d2848e59fa2ae3c",
@@ -41373,6 +41466,7 @@
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
         "EV-01f2b125844de734",
+        "EV-7a1e31407a718ba8",
         "EV-97ede78f689bd26c",
         "EV-afb294eb4d9baf2d",
         "EV-08f7b2f72a5da891",
@@ -41596,7 +41690,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-11-27"
+      "lastSeen": "2026-11-28"
     },
     {
       "id": "EN-8d4321d936320802",
@@ -44983,6 +45077,7 @@
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
         "EV-01f2b125844de734",
+        "EV-7a1e31407a718ba8",
         "EV-6b34d2e2a2aea1b9",
         "EV-6460ad65cd850154",
         "EV-4fc82b5985acc6c8",
@@ -45093,7 +45188,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-11-26"
+      "lastSeen": "2026-11-28"
     },
     {
       "id": "EN-06b5472c16feae4c",
@@ -45237,6 +45332,27 @@
       ],
       "firstSeen": "2026-06-16",
       "lastSeen": "2026-06-16"
+    },
+    {
+      "id": "EN-5b8422ea525b4c47",
+      "name": "法国兴业银行",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-c0b4aadfa9d48427"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-11-25",
+      "lastSeen": "2026-11-28"
     },
     {
       "id": "EN-dff37aaec8fa23f4",
