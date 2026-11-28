@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-27",
-    "currentDate": "2026-11-27",
-    "eventCount": 4566,
+    "latestDataDate": "2026-11-28",
+    "currentDate": "2026-11-28",
+    "eventCount": 4568,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -342,6 +342,7 @@
       "EV-cb3cb11ff13f6069",
       "EV-8115dd18f2812a29",
       "EV-01f2b125844de734",
+      "EV-7a1e31407a718ba8",
       "EV-6b34d2e2a2aea1b9",
       "EV-6460ad65cd850154",
       "EV-4fc82b5985acc6c8",
@@ -452,7 +453,7 @@
       "EN-bdfecbcd7dbf76d2"
     ],
     "firstSeen": "2025-10-09",
-    "lastSeen": "2026-11-26",
+    "lastSeen": "2026-11-28",
     "relationIds": [
       "REL2-047306f993a722b4",
       "REL2-c0c6b4cd2b1abacd",
@@ -789,6 +790,7 @@
         "EV-cb3cb11ff13f6069"
       ],
       "hardware": [
+        "EV-7a1e31407a718ba8",
         "EV-01f2b125844de734",
         "EV-d93dd19a481307ec",
         "EV-3b30eda1326a6fb1",
@@ -831,6 +833,23 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-7a1e31407a718ba8",
+        "dataDate": "2026-11-28",
+        "date": "2026-11-24",
+        "eventType": "hardware_capacity",
+        "eventTypeLabel": "硬件产能",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "马斯克承认 AI 研发落后对手：出租 SpaceXSI 算力比自研 Grok 更赚钱",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e78bdebae031095b",
+          "EN-c70eca6b0f88f44d",
+          "EN-bbdefa2950f49882"
+        ]
+      },
       {
         "id": "EV-01f2b125844de734",
         "dataDate": "2026-11-26",
@@ -14814,6 +14833,7 @@
         "EV-3dc8d5c373ddd1f3",
         "EV-9cd1cb31e2adf5dc",
         "EV-5caf7f83664b1a2c",
+        "EV-c0b4aadfa9d48427",
         "EV-2406bc3d29c09326",
         "EV-7a3a3754522828e1",
         "EV-8b36007d0b5f377f",
@@ -14923,6 +14943,7 @@
         "EN-74be4cbf48e647b2",
         "EN-0078ec52880eaa14",
         "EN-4e721fae5963494d",
+        "EN-5b8422ea525b4c47",
         "EN-dff37aaec8fa23f4",
         "EN-f90aec90acf3dc85",
         "EN-18b4bbfd60f4137e",
@@ -14946,7 +14967,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-11-24"
+      "lastSeen": "2026-11-28"
     },
     {
       "id": "TX-technology-open_weights",
@@ -20109,7 +20130,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-03-11",
-      "lastSeen": "2026-11-27"
+      "lastSeen": "2026-11-28"
     },
     {
       "id": "TX-ai_market_application-computing_infrastructure",
@@ -21137,6 +21158,35 @@
     }
   ],
   "hardware": [
+    {
+      "id": "HW-824adad54ef5ec8b",
+      "eventId": "EV-7a1e31407a718ba8",
+      "dataDate": "2026-11-28",
+      "date": "2026-11-24",
+      "title": "马斯克承认 AI 研发落后对手：出租 SpaceXSI 算力比自研 Grok 更赚钱",
+      "hardwareType": "data_center",
+      "eventType": "hardware_capacity",
+      "eventTypeLabel": "硬件产能",
+      "computeLayer": "data_center",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://www.ithome.com/1/031/246.htm",
+      "sourceName": "www.ithome.com",
+      "sourceDate": "2026-11-24",
+      "entityIds": [
+        "EN-e78bdebae031095b",
+        "EN-c70eca6b0f88f44d",
+        "EN-bbdefa2950f49882"
+      ]
+    },
     {
       "id": "HW-f5ced0901715551e",
       "eventId": "EV-01f2b125844de734",

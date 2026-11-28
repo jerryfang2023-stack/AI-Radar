@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-11-23T05:32:48.334Z",
-    "latestDataDate": "2026-11-27",
-    "currentDate": "2026-11-27",
-    "eventCount": 4566,
+    "latestDataDate": "2026-11-28",
+    "currentDate": "2026-11-28",
+    "eventCount": 4568,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-38588f56157b5c3e",
@@ -104,6 +104,7 @@
       "EV-3c51bcb5e99d2b68",
       "EV-01f2b125844de734",
       "EV-5ed60b6f14a05b3e",
+      "EV-7a1e31407a718ba8",
       "EV-afb294eb4d9baf2d",
       "EV-14051f3d4f43c4a7",
       "EV-57b1043727f95137",
@@ -139,7 +140,7 @@
       "EN-6fcba5d96a4fadfd"
     ],
     "firstSeen": "2026-02-17",
-    "lastSeen": "2026-11-27",
+    "lastSeen": "2026-11-28",
     "relationIds": [
       "REL2-30051dc5d7668662"
     ],
@@ -201,6 +202,7 @@
         "EV-3c51bcb5e99d2b68"
       ],
       "hardware": [
+        "EV-7a1e31407a718ba8",
         "EV-5ed60b6f14a05b3e",
         "EV-01f2b125844de734",
         "EV-31782f0824ae1db1"
@@ -212,6 +214,23 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-7a1e31407a718ba8",
+        "dataDate": "2026-11-28",
+        "date": "2026-11-24",
+        "eventType": "hardware_capacity",
+        "eventTypeLabel": "硬件产能",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "马斯克承认 AI 研发落后对手：出租 SpaceXSI 算力比自研 Grok 更赚钱",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e78bdebae031095b",
+          "EN-c70eca6b0f88f44d",
+          "EN-bbdefa2950f49882"
+        ]
+      },
       {
         "id": "EV-5ed60b6f14a05b3e",
         "dataDate": "2026-11-27",
@@ -6160,6 +6179,35 @@
   ],
   "fde": [],
   "hardware": [
+    {
+      "id": "HW-824adad54ef5ec8b",
+      "eventId": "EV-7a1e31407a718ba8",
+      "dataDate": "2026-11-28",
+      "date": "2026-11-24",
+      "title": "马斯克承认 AI 研发落后对手：出租 SpaceXSI 算力比自研 Grok 更赚钱",
+      "hardwareType": "data_center",
+      "eventType": "hardware_capacity",
+      "eventTypeLabel": "硬件产能",
+      "computeLayer": "data_center",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://www.ithome.com/1/031/246.htm",
+      "sourceName": "www.ithome.com",
+      "sourceDate": "2026-11-24",
+      "entityIds": [
+        "EN-e78bdebae031095b",
+        "EN-c70eca6b0f88f44d",
+        "EN-bbdefa2950f49882"
+      ]
+    },
     {
       "id": "HW-8e3f64354ff30375",
       "eventId": "EV-5ed60b6f14a05b3e",
